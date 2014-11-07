@@ -6,12 +6,12 @@
 							<img src="{$img}/buy_now_img.png" class="visible-lg" height="132" width="467" alt="">
 						</div>
 						<div class="promo-text">
-							TURN ON SPYING SOFTWARE
+							SWITCH YOUR SPYING APP ON 
 							<br>
-							<span>REVEAL THE TRUTH</span>
+							<span>DISCOVER THE TRUTH</span>
 						</div>
 						<div>
-							<button class="btn btn-default">Buy NOW</button>
+							<button class="btn btn-default _forward_pricing">Buy NOW</button>
 						</div>
 					</div>
 				</div>

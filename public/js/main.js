@@ -26,5 +26,8 @@ $(function() {
 		}, 800);
 		return false;
 	});
+	$('._forward_pricing').on("click",function(){
+		document.location = domain + '/pricing.html';	
+	});
 
 });

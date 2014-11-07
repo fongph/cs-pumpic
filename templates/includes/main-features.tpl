@@ -5,33 +5,33 @@
 					<div class="col-sm-4 col-md-4 col-lg-4">
 						<div class="feature">
 							<img src="{$img}/ico-protect.png" alt="">
-							<h3>PROTECT FAMILY</h3>
+							<h3>Keep your family safe</h3>
 							<ul class="feature_list">
-								<li>Get access to Phone call logs</li>
-								<li>Record the inbound/outbound calls</li>
-								<li>Monitor texts, Viber, WhatsApp, Skype activity</li>
+								<li>Read incoming/outgoing texts</li>
+								<li>Track GPS location</li>
+								<li>Monitor Contacts and Calendar</li>
 							</ul>
 						</div>
 					</div>
 					<div class="col-sm-4 col-md-4 col-lg-4">
 						<div class="feature">
 							<img src="{$img}/ico-secure.png" alt="">
-							<h3><a href="#">SECURE YOUR PHONE</a></h3>
+							<h3><a href="#">Secure your business</a></h3>
 							<ul class="feature_list">
-								<li>Lock and Wipe phone remotely</li>
-								<li>Track device location</li>
-								<li>Initiate environmental recordings</li>
+								<li>Monitor corporate emails</li>
+								<li>Track Internet usage</li>
+								<li>Block distracting websites/apps/games</li>
 							</ul>
 						</div>
 					</div>
 					<div class="col-sm-4 col-md-4 col-lg-4">
 						<div class="feature">
 							<img src="{$img}/ico-track.png" alt="">
-							<h3><a href="#">TRACK BUSINESS</a></h3>
+							<h3><a href="#">Protect your cell phone</a></h3>
 							<ul class="feature_list">
-								<li>Monitor cell phone and Internet usage</li>
-								<li>Block incoming calls – get productivity boost!</li>
-								<li>Track corporate e-mails.</li>
+								<li>Wipe out the cell phone remotely</li>
+								<li>Lock the device with a password</li>
+								<li>Use SMS-commands when the Internet is down</li>
 							</ul>
 						</div>
 					</div>

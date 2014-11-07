@@ -1,7 +1,7 @@
 		<div class="dark">
 			<div class="container">
 				<div class="row">
-					<h2 class="big_header">Participate in opportunities to win <strong class="text-success">free PREMIUM pack</strong></h2>
+					<h2 class="big_header">Take a chance to win a <strong class="text-success">free PREMIUM pack!</strong></h2>
 
 					<div class="special-photo">
 						<img src="{$img}/special.png" alt="">
@@ -14,7 +14,7 @@
 								<input type="email" class="form-control" placeholder="Email">
 							</div>
 							<div class="form-group">
-								<button class="btn btn-warning">Register to win <i class="icon-right-open"></i>
+								<button class="btn btn-warning">Submit<i class="icon-right-open"></i>
 								</button>
 							</div>
 						</form>

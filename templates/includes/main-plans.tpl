@@ -12,7 +12,7 @@
 										<div class="price">
 											$18<sup>33</sup>/<sub>month</sub>
 										</div>
-										<button class="btn btn-default">Buy Basic</button>
+										<button class="btn btn-default _forward_pricing">Buy Basic</button>
 									</div>
 								</div>
 							</div>
@@ -25,24 +25,13 @@
 										<div class="price">
 											$18<sup>33</sup>/<sub>month</sub>
 										</div>
-										<button class="btn btn-default">Buy Premium</button>
+										<button class="btn btn-default _forward_pricing">Buy Premium</button>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div class="col-sm-3 col-md-2 col-lg-2 text-center">
-						<ul class="view-links">
-							<li>
-								<a href="#" class="featured-link">View all prices<i class="icon-angle-double-right"></i>
-								</a>
-							</li>
-							<li>
-								<a href="#" class="featured-link link-hl">View demo<i class="icon-angle-double-right"></i>
-								</a>
-							</li>
-						</ul>
-					</div>
+					{include file='../includes/plans-links.tpl'}
 				</div>
 			</div>
 		</div>

@@ -4,7 +4,7 @@ function dispatch($urlParams, $config){
 		include $config['php_compile'][$urlParams['uri']];
 	}else{
 			
-		$path = buildTplPath($urlParams);
+		$path = buildTplPath($urlParams,$config);
 		
 		if($path['answer'] == 404){
 			header404();
@@ -19,6 +19,9 @@ function dispatch($urlParams, $config){
 			$smarty->setTemplateDir($config['smarty']['tpl_path']);
 			$smarty->setCacheDir($config['smarty']['cache_path']);
 			$smarty->setCompileDir($config['smarty']['tpl_path_compile']);
+			
+			$smarty->registerPlugin("function","year_now", "print_current_year");
+			
 			$smarty->assign("domain",$config['domain']);
 			$smarty->assign("domain_http",$config['domain_http']);
 			$smarty->assign("img",$config['path_img']);
@@ -47,17 +50,16 @@ function getURI(){
 	return array('uri' => $uri, 'uriArr' => $get, 'getParams' => $params, 'html' => strpos($get[count($get)-1],'.html') === false? false : true);		
 }
 	
-function buildTplPath($arr){
+function buildTplPath($arr,$config){
 	if(empty($arr['uriArr'][0])){
 		return 	array('answer' => 200, 'tpl' => "index.tpl");
 	}else{
 		$path = implode('/',$arr['uriArr']);
 		if(!$arr['html']){
-			$part_path = '../templates/'.$path.'/index';
+			$part_path = $config['smarty']['tpl_path'].$path.'/index';
 		}else{
-			$part_path = '../templates/'.rtrim($path,".html");
+			$part_path = $config['smarty']['tpl_path'].rtrim($path,".html");
 		}
-		echo $part_path.".tpl";
 		if(file_exists($part_path.".tpl")){
 			return 	array('answer' => 200, 'tpl' => $part_path.".tpl");
 		}else{
@@ -326,5 +328,13 @@ function validate_email($email){
 
 
 	return $email;
+}
+
+function print_current_year($params, $smarty)
+{
+  if(empty($params["format"])) {
+    $format = "%Y";
+  }
+  return strftime($format,time());
 }
 ?>

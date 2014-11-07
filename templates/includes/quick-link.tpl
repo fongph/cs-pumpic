@@ -7,20 +7,20 @@
 							<div class="col-sm-6 col-md-6 col-lg-6">
 								<ul class="list_succes">
 									<li>
-										<a href="#">Checkout all features of CellSpy</a>
+										<a href="/features.html">Major features of Pumpic</a>
 									</li>
 									<li>
-										<a href="#">Find out if your Target Phone is compatible</a>
+										<a href="/compatibility.html">Compatibility of devices</a>
 									</li>
 								</ul>
 							</div>
 							<div class="col-sm-6 col-md-6 col-lg-6">
 								<ul class="list_succes">
 									<li>
-										<a href="#">Checkout all features of CellSpy</a>
+										<a href="/pricing.html">Prices and subscription plans</a>
 									</li>
 									<li>
-										<a href="#">Find out if your Target Phone is compatible</a>
+										<a href="/how-to.html">How Pumpic works</a>
 									</li>
 								</ul>
 							</div>
@@ -30,13 +30,10 @@
 						<h4 class="title_list">Any other questions?</h4>
 						<ul class="list_succes">
 							<li>
-								<a href="#">Contact us</a>
+								<a href="/contact-us.html">Contact us</a>
 							</li>
 							<li>
-								<a href="#">See FAQ</a>
-							</li>
-							<li>
-								<a href="#">Subscribe (News, tips, discounts & free trials)</a>
+								<a href="/faq.html">See FAQ</a>
 							</li>
 						</ul>
 					</div>

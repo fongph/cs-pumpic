@@ -20,12 +20,7 @@ $config = array(
 	'path_css' => '/css',
 		
 	'php_compile' => array(
-		'pricing.html' => 'pricing.inc',
-		'order.html' => 'script.inc',
-		'about-us.html' => 'script.inc',
-		'refund-request.html' => 'script.inc',
-		'help/faq.html' => 'faq.php',
-		'ajax' => 'ajax.inc'		
+		'order.html' => 'script.inc'
 	)
 );
 

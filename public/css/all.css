@@ -2153,7 +2153,7 @@ textarea {
   font-weight: bold;
   display: inline-block;
   font-size: 18px;
-  width: 95px;
+  width: 123px;
   color: #16a89e;
   text-transform: uppercase;
   line-height: 1;
@@ -2199,6 +2199,23 @@ textarea {
   margin: 4px 0;
   font-weight: 600;
   font-size: 14px;
+}
+._limits {
+  color: #868686;
+  text-align: left !important;
+  line-height: 1;
+  font-size: 13px;
+  height: 100px;
+  width: 33px;
+  padding: 5px 20px 10px !important;
+}
+@media only screen and (max-width: 991px) {
+  ._limits {
+  	height: 0px;
+    margin-bottom: 0px;
+    display: table-cell !important;
+    width: 1000px !important;
+  }
 }
 
 .label_radio {

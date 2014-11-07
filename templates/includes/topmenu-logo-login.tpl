@@ -21,9 +21,9 @@
 									<li {if $topmenu_active=='home'} class="active"{/if}>
 										<a href="/">Home</a>
 									</li>
-									<li {if $topmenu_active=='compatibility'} class="active"{/if}>
+									<!--li {if $topmenu_active=='compatibility'} class="active"{/if}>
 										<a href="/compatibility.html">Compatibility</a>
-									</li>
+									</li-->
 									<li {if $topmenu_active=='pricing'} class="active"{/if}>
 										<a href="/pricing.html">Pricing</a>
 									</li>
@@ -36,9 +36,9 @@
 									<li {if $topmenu_active=='faq'} class="active"{/if}>
 										<a href="/faq.html">FAQ</a>
 									</li>
-									<li>
+									<!--li>
 										<a href="http://demo.{$domain}">Demo</a>
-									</li>
+									</li-->
 									<li>
 										<button class="btn btn-sm btn-success hidden-lg"><i class="icon-lock"></i> Log In</button>
 									</li>

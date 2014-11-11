@@ -15,7 +15,7 @@
 	<script src="{$js}/fancy_checkbox.js"></script>
 	<script src="{$js}/main.js"></script>
 {/strip}
-{include file='../includes/analytics_header.tpl'}	
+{include file='../includes/analytics-header.tpl'}	
 {strip}	
 </head>
 {/strip}

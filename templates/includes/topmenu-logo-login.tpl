@@ -11,7 +11,7 @@
 									<span class="icon-bar"></span>
 								</button>
 								<div class="logo">
-									<a href="#">cellspy</a>
+									<a href="{$domain_http}">pumpic</a>
 								</div>
 							</div>
 							<button class="btn btn-sm btn-success pull-right visible-lg"><i class="icon-lock"></i> Log In</button>

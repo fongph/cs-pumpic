@@ -133,7 +133,7 @@
 		{include file='../includes/main-footer-promo.tpl'}
 		{include file='../includes/footer.tpl'}
 	</div>
-	{include file='../includes/analytics_footer.tpl'}
+	{include file='../includes/analytics-footer.tpl'}
 </body>
 </html>
 {/strip}

@@ -2368,7 +2368,7 @@ article p a:hover {
 article img {
   margin-bottom: 20px;
 }
-article img.pull-left {
+article img.pull-left, article .pull-left {
   margin-right: 20px;
 }
 article img.pull-right {
@@ -2758,4 +2758,131 @@ article img.pull-right {
 .bg-danger {
   margin-top: 10px;
   padding: 5px;
+}
+
+
+/* fiz posts title */
+article.post a:hover {
+    text-decoration: none;
+}
+
+article.post a:after {
+    background: none repeat scroll 0 0 #16a89e;
+    content: "";
+    display: block;
+    height: 5px;
+    margin-top: 10px;
+    width: 65px;
+}
+
+article.post a {
+    text-transform: uppercase;
+    color: #4d4f5b;
+    font-family: "Open Sans",Helvetica,Arial,sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+#secondary aside {
+   margin-bottom: 10px;
+}
+
+span.btn {
+    cursor: default !important;
+}
+
+span.btn-banner-red:focus,
+span.btn-banner-red:hover,
+span.btn-banner-red:active {
+    background-color: #cf4757 !important;
+}
+
+span.btn-banner-yellow:focus,
+span.btn-banner-yellow:hover,
+span.btn-banner-yellow:active {
+    background-color: #f0ad4e !important;
+}
+
+/* my add style bootom menu */
+#menu-cellspy-company, 
+#menu-cellspy-our-products {
+  list-style: none;
+  padding: 0;
+}
+#menu-cellspy-company li,
+#menu-cellspy-our-products li{
+  position: relative;
+  padding-left: 15px;
+}
+#menu-cellspy-company li:before,
+#menu-cellspy-our-products li:before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  width: 6px;
+  height: 6px;
+  background: #ddd;
+  border-radius: 50%;
+  margin-left: -15px;
+}
+#menu-cellspy-company li a, 
+#menu-cellspy-our-products li a {
+  color: #7f7f7f;
+  font-size: 16px;
+}
+
+.blog-link {
+    color: #4d4f5b;
+}
+
+.archive,
+.archive .informer,
+.archive span.title {
+    display: inline-block;
+}
+
+.archive {
+    width: 100%;
+    clear: both;
+}
+
+.archive span.title {
+    color: #525252 !important;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    padding-bottom: 12px;
+    font-size: 16px;
+    font-weight: lighter;
+    padding-bottom: 34px;
+}
+
+.left {
+    float: left;
+}
+
+.archive .informer {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 34px;
+    
+    color: #747474;
+    font-weight: bold;
+    position: relative;
+    text-align: left;
+    font-size: 16px;
+}
+
+.archive i {
+    color: #16a89e;
+    font-style: normal !important;
+    font-weight: lighter !important;
+    text-decoration: none;
+}
+
+.archive .informer i {
+    margin-left: 4px;
+    font-size: 12px;
 }

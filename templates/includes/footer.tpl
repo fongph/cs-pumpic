@@ -15,7 +15,7 @@
 								<a href="/contact-us.html">Contacts</a>
 							</li>
 							<li>
-								<a href="#">Blog</a>
+								<a href="/security/">Blog</a>
 							</li>
 						</ul>
 					</div>

@@ -13,8 +13,8 @@ $config = array(
 		'cache_path' => '../cache/'
 	),
 		
-	'domain' => 'cellspy',
-	'domain_http' => 'http://cellspy',
+	'domain' => 'pumpic.com',
+	'domain_http' => 'http://pumpic.com',
 	'path_img' => '/images',
 	'path_js' => '/js',
 	'path_css' => '/css',

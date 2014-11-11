@@ -1,0 +1,357 @@
+{strip}
+{include file='../includes/wrap-title-header.tpl'}
+
+	<title>SEO title for cellspy.org</title>
+	<meta name="description" content="Cellspy.org meta description" />
+	<meta name="keywords" content="parental control, employee monitoring"/>
+
+{include file='../includes/wrap-title-footer.tpl'}
+<body>
+{include file='../includes/button-help.tpl'}
+{include file='../includes/button-goup.tpl'}
+	<div class="wrapper">
+	{include file='../includes/topmenu-logo-login.tpl' topmenu_active='pricing'}
+<div class="no_bg">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-10 col-lg-offset-1">
+						<div class="row">
+							<h2>PRICING & PLANS</h2>
+							<div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1">
+								<table class="table table-bordered">
+									<caption>
+										<div class="table_header">
+											<!-- Block choose currency include -->
+											<div class="pull-right">
+												<span>Payment methods:</span>
+												<a href="#">
+													<i class="ico-cart-visa"></i>
+												</a>
+												<a href="#">
+													<i class="ico-cart-mcart"></i>
+												</a>
+												<a href="#">
+													<i class="ico-cart-maestro"></i>
+												</a>
+												<a href="#">
+													<i class="ico-cart-aexpress"></i>
+												</a>
+												<a href="#">
+													<i class="ico-cart-paypal"></i>
+												</a>
+												<a href="#">
+													<i class="ico-cart-bankwire"></i>
+												</a>
+												<a href="#">
+													<i class="ico-cart-descover"></i>
+												</a>
+												<a href="#">
+													<i class="ico-cart-cad"></i>
+												</a>
+											</div>
+										</div>
+										<div class="table_title">
+											<h3>Free with every plan:</h3>
+											<span><i class="icon-ok"></i>Remote control</span>
+											<span><i class="icon-ok"></i>Software updates</span>
+											<span><i class="icon-ok"></i>Remote Device Lock</span>
+											<span><i class="icon-ok"></i>Instant location </span>
+											<span><i class="icon-ok"></i>SIM card change alert</span>
+										</div>
+									</caption>
+									<thead>
+										<tr>
+											<th>FEATURES:</th>
+											<th>
+												<div class="lg_text_table"><i class="icon-android"></i><span>Android</span></div>
+												<div class="sm_text_table"><span>(2.2 - 4.4)</span></div>
+											</th>
+											<th>
+												<div class="lg_text_table"><i class="icon-apple"></i><span>iOS</span></div>
+												<div class="sm_text_table"><span>(3.1.3 - 7.1.1)<br />jailbreak needed</span></div>
+											</th>
+											<th>
+												<div class="lg_text_table"><i class="icon-blackberry"></i><span class="hidden-xs">BlackBerry</span><span class="visible-xs">BB</span></div>
+												<div class="sm_text_table"><span>(1.0 - 7.1)</span></div>
+											</th>
+										</tr>
+									</thead>
+									<tfoot>
+										<tr>
+											<td colspan="4">
+												<div class="label_inline">
+													<h4>Basic</h4>
+													<label class="label_radio">
+														<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+														<span><strong>3</strong> month</span>
+														<span>$199.99</span>
+													</label>
+													<label class="label_radio">
+														<input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+														<span><strong>6</strong> month</span>
+														<span>$199.99</span>
+													</label>
+													<label class="label_radio">
+														<input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
+														<span><strong>12</strong> month</span>
+														<span>$199.99</span>
+													</label>
+												</div>
+												<div class="select_row">
+													<h4>Basic</h4>
+													<select class="select_inverse">
+														<option value="">3 month $10</option>
+														<option value="">6 month $15</option>
+														<option value="">12 month $20</option>
+													</select>
+												</div>
+												<div class="_limits">
+													<!-- Block block-limits-pricing only for premium include -->
+												</div>
+												<div class="text-center">
+													<button class="btn btn-default">Buy Basic</button>
+												</div>
+											</td>
+										</tr>
+									</tfoot>
+									<tbody>
+										<tr>
+											<td>Calls history</td>
+											<td><b>700</b> calls
+											</td>
+											<td><b>700</b> calls
+											</td>
+											<td><b>700</b> calls
+											</td>
+										</tr>
+										<tr>
+											<td>SMS history</td>
+											<td><b>300</b> SMS
+											</td>
+											<td><b>300</b> SMS
+											</td>
+											<td><b>300</b> SMS
+											</td>
+										</tr>
+										<tr>
+											<td>SMS blocking</td>
+											<td><i class="icon-ok"></i>
+												<br />(except 4.4)</td>
+											<td><i class="icon-ok"></i>
+											</td>
+											<td><i class="icon-cancel"></i>
+											</td>
+										</tr>
+										<tr>
+											<td>Location history</td>
+											<td><i class="icon-ok"></i>
+											</td>
+											<td><i class="icon-ok"></i>
+											</td>
+											<td><i class="icon-ok"></i>
+											</td>
+										</tr>
+										<tr>
+											<td>Contacts</td>
+											<td><i class="icon-ok"></i>
+											</td>
+											<td><i class="icon-ok"></i>
+											</td>
+											<td><i class="icon-cancel"></i>
+											</td>
+										</tr>
+										<tr>
+											<td>Calendar</td>
+											<td><i class="icon-ok"></i>
+											</td>
+											<td><i class="icon-ok"></i>
+											</td>
+											<td><i class="icon-cancel"></i>
+											</td>
+										</tr>
+										<tr>
+											<td>Browsing history</td>
+											<td><i class="icon-ok"></i>
+											</td>
+											<td><i class="icon-ok"></i>
+											</td>
+											<td><i class="icon-cancel"></i>
+											</td>
+										</tr>
+										<tr>
+											<td>Bookmarks</td>
+											<td><i class="icon-ok"></i>
+											</td>
+											<td><i class="icon-ok"></i>
+											</td>
+											<td><i class="icon-cancel"></i>
+											</td>
+										</tr>
+										<tr>
+											<td>Photos</td>
+											<td><i class="icon-ok"></i>
+											</td>
+											<td><i class="icon-ok"></i>
+											</td>
+											<td><i class="icon-cancel"></i>
+											</td>
+										</tr>
+										<tr>
+											<td>Emails</td>
+											<td><i class="icon-ok"></i>
+												<br />(ROOT for all)</td>
+											<td><i class="icon-ok"></i>
+											</td>
+											<td><i class="icon-cancel"></i>
+											</td>
+										</tr>
+										<tr>
+											<td>Applications</td>
+											<td><i class="icon-ok"></i>
+											</td>
+											<td><i class="icon-ok"></i>
+											</td>
+											<td><i class="icon-cancel"></i>
+											</td>
+										</tr>
+										<tr>
+											<td>Websites & Apps blocking</td>
+											<td><i class="icon-ok"></i>
+											</td>
+											<td><i class="icon-ok"></i>
+											</td>
+											<td><i class="icon-cancel"></i>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+								<table class="table table-bordered">
+									<tfoot>
+										<tr>
+											<td colspan="4">
+												<div class="label_inline">
+													<h4>premium</h4>
+													<label class="label_radio">
+														<input type="radio" name="optionsRadios2" id="optionsRadios4" value="option3" checked>
+														<span><strong>3</strong> month</span>
+														<span>$199.99</span>
+													</label>
+													<label class="label_radio">
+														<input type="radio" name="optionsRadios2" id="optionsRadios5" value="option4">
+														<span><strong>6</strong> month</span>
+														<span>$199.99</span>
+													</label>
+													<label class="label_radio">
+														<input type="radio" name="optionsRadios2" id="optionsRadios6" value="option5">
+														<span><strong>12</strong> month</span>
+														<span>$199.99</span>
+													</label>
+												</div>
+												<div class="select_row">
+													<h4>premium</h4>
+													<select class="select_inverse">
+														<option value="">3 month $10</option>
+														<option value="">6 month $15</option>
+														<option value="">12 month $20</option>
+													</select>
+												</div>
+												<div class="_limits">
+													<!-- Block block-limits-pricing only for premium include -->
+												</div>
+												<div class="text-center">
+													<button class="btn btn-default">Buy Premium</button>
+												</div>
+											</td>
+										</tr>
+									</tfoot>
+									<tbody>
+										<tr>
+											<td>Calls history</td>
+											<td><b>Unlimited</b>
+											</td>
+											<td><b>Unlimited</b>
+											</td>
+											<td><b>Unlimited</b>
+											</td>
+										</tr>
+										<tr>
+											<td>SMS history</td>
+											<td><b>Unlimited</b>
+											</td>
+											<td><b>Unlimited</b>
+											</td>
+											<td><b>Unlimited</b>
+											</td>
+										</tr>
+										<tr>
+											<td>Viber/WhatsApp/Skype</td>
+											<td><i class="icon-ok"></i><br />(ROOT for all)
+											</td>
+											<td><i class="icon-ok"></i>
+											</td>
+											<td><i class="icon-cancel"></i>
+											</td>
+										</tr>
+										<tr>
+											<td>View user Videos</td>
+											<td><i class="icon-ok"></i>
+											</td>
+											<td><i class="icon-ok"></i>
+											</td>
+											<td><i class="icon-cancel"></i>
+											</td>
+										</tr>
+										<tr>
+											<td>Facebook Messages</td>
+											<td><i class="icon-ok"></i><br />(ROOT for all)
+											</td>
+											<td><i class="icon-ok"></i>
+											</td>
+											<td><i class="icon-cancel"></i>
+											</td>
+										</tr>
+										<tr>
+											<td>Historical data</td>
+											<td><i class="icon-ok"></i>
+											</td>
+											<td><i class="icon-ok"></i>
+											</td>
+											<td><i class="icon-cancel"></i>
+											</td>
+										</tr>
+										<tr>
+											<td>SMS commands</td>
+											<td><i class="icon-ok"></i><br />(ROOT for all)
+											</td>
+											<td><i class="icon-ok"></i>
+											</td>
+											<td><i class="icon-cancel"></i>
+											</td>
+										</tr>
+										<tr>
+											<td>Keylogger</td>
+											<td><i class="icon-ok"></i>
+											</td>
+											<td><i class="icon-ok"></i>
+											</td>
+											<td><i class="icon-cancel"></i>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+								<div class="link_circle_italic">
+									<a href="#"><span class="circle_ico"><i class="icon-attention"></i></span>you need to have physical access to the phone to install the application</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- block upgrade include-->
+		</div>
+		{include file='../includes/footer.tpl'}
+	</div>
+	{include file='../includes/analytics-footer.tpl'}
+</body>
+</html>
+{/strip}		

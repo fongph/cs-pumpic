@@ -1,0 +1,78 @@
+<?php get_header(); ?>
+
+	<div class="very_easy">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 col-lg-offset-1">
+                <div class="row">
+                    <?php if ( have_posts() ) : ?>
+                    
+                    <h2><a class="blog-link" href="#">BLOG</a></h2>
+                    <div class="archive">
+                        <span class="title"><?php printf( __( "All posts for '<i>%s</i>' category", 'cellspy' ), single_tag_title( '', false ) ); ?></span>
+                    </div>
+                    
+                    <div class="col-lg-8 col-md-8 col-sm-12">
+                        
+                        <?php
+                        
+                            $page = (get_query_var('paged')) ? get_query_var('paged') : 1;
+                            $_cat = (get_query_var('cat')) ? get_category(get_query_var('cat'),false) : false;
+                            
+                            if(!$_cat) {
+                                get_template_part( 'content', 'none' );
+                            } else {    
+                            
+                                //$args = array( 'cat=3&posts_per_page=-1' );
+                                query_posts(  array('cat' => $_cat -> term_id, 'posts_per_page' => -1, 'paged' => $page, 'showposts' => 4));
+
+                                // The Loop
+                                while ( have_posts() ) : the_post();
+                                     get_template_part( 'content', 'post' ); // get_post_format()
+                                endwhile;
+                            }
+                        ?>
+                        
+                        
+                        <?php 
+                        if(function_exists('wp_paginate')) {
+                            wp_paginate( );
+                        } 
+                        ?>
+                        
+                    </div>
+                    
+                    <?php else : ?>
+			<?php get_template_part( 'content', 'none' ); ?>
+                    <?php endif; ?>
+                    
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                        <div class="thumb_sidebar">
+                            <span class="img_thumb"><img src="/images/img_photo.png" height="72" width="138" alt=""></span>
+                            <div class="caption">
+                                <h3>GET IN LINE TO TRY TOPSPY</h3>
+                                <p>We've introduced our new cell phone spying software to help you track you underage kids, 
+                                    and increase your business safety.</p>
+                                <p class="text-center">
+                                    <a href="#" class="btn btn-default" role="button">Buy NOW</a>
+                                    <a href="#" class="btn btn-warning" role="button">View DEMO</a>
+                                </p>
+                            </div> <!-- .caption -->
+                        </div>
+                        <div class="feature_list">
+                            <?php // get_sidebar(); ?>
+                            <?php if ( is_active_sidebar( 'sidebar-7' ) ) : ?>
+                                    <?php dynamic_sidebar( 'sidebar-7' ); ?>
+                            <?php endif; ?>
+                        </div>
+                    </div>
+                </div> <!-- .row -->
+            </div>
+        </div> <!-- .row -->
+    </div> <!-- .container -->
+</div> <!-- .very_easy -->
+
+<?php get_sidebar(); ?>
+
+<?php get_bottom(); ?>
+<?php get_footer(); ?>

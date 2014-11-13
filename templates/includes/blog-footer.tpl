@@ -8,6 +8,23 @@
 					<div class="col-sm-2 col-md-2 col-lg-2 col-sm-offset-1 col-md-offset-1 col-lg-offset-1">
 						<h3>COMPANY</h3>
 						<ul class="list_grey">
+                                                    <li>
+                                                        <a href="#">Terms and conditions</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Privacy Policy</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Refund policy</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Contact us</a>
+                                                    </li>
+                                                     <li>
+                                                        <a href="#">Security</a>
+                                                    </li>
+                                                    
+                                                        <?php /*
 							<li>
 								<a href="<?php echo getStaticUrl();?>/policy.html">Policy</a>
 							</li>
@@ -17,12 +34,41 @@
 							<li>
 								<a href="<?php echo getStaticUrl();?>/security/">Blog</a>
 							</li>
+                                                        */ ?>
+                                                        
 						</ul>
 					</div>
 					<div class="col-sm-3 col-md-3 col-lg-3">
 						<h3>OUR PRODUCTS</h3>
 						<ul class="list_grey">
-							<li>
+							
+                                                        <li>
+								<a href="#">Android software</a>
+							</li>
+                                                        <li>
+								<a href="#">Iphone software</a>
+							</li>
+                                                        <li>
+								<a href="#">Bleckberry software</a>
+							</li>
+                                                        <li>
+								<a href="#">SMS monitoring</a>
+							</li>
+                                                        <li>
+								<a href="#">Call history monitoring</a>
+							</li>
+                                                        <li>
+								<a href="#">Cell phone monitoring</a>
+							</li>
+                                                        <li>
+								<a href="#">Mobile phone monitoring</a>
+							</li>
+                                                        <li>
+								<a href="#">Our features</a>
+							</li>
+                                                    
+                                                        <?php /*
+                                                        <li>
 								<a href="#">Android Spy Software</a>
 							</li>
 							<li>
@@ -40,6 +86,7 @@
 							<li>
 								<a href="#">Mobile Phone Spy</a>
 							</li>
+                                                        */ ?>
 						</ul>
 					</div>
 				</div>

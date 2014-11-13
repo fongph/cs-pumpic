@@ -13,7 +13,15 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script src="{$js}/bootstrap.js"></script>
 	<script src="{$js}/fancy_checkbox.js"></script>
-	<script src="{$js}/main.js"></script>
+        <script src="{$js}/main.js"></script>
+        
+        <!-- jquery plugins -->
+        <script src="{$js}/jquery.cookie.js"></script>
+        <script src="{$js}/jquery.ba-hashchange.min.js"></script>
+        <script src="{$js}/jquery.total-storage.min.js"></script>
+        
+        <!-- init -->
+        <script src="{$js}/init.js"></script>
 {/strip}
 {include file='../includes/analytics-header.tpl'}	
 {strip}	

@@ -1,6 +1,5 @@
 <?php get_header(); ?>
-
-	<div class="very_easy">
+<div class="very_easy">
     <div class="container">
         <div class="row">
             <div class="col-lg-10 col-lg-offset-1">
@@ -49,18 +48,8 @@
                     <?php endif; ?>
                     
                     <div class="col-lg-4 col-md-4 col-sm-12">
-                        <div class="thumb_sidebar">
-                            <span class="img_thumb"><img src="/images/img_photo.png" height="72" width="138" alt=""></span>
-                            <div class="caption">
-                                <h3>GET IN LINE TO TRY TOPSPY</h3>
-                                <p>We've introduced our new cell phone spying software to help you track you underage kids, 
-                                    and increase your business safety.</p>
-                                <p class="text-center">
-                                    <a href="#" class="btn btn-default" role="button">Buy NOW</a>
-                                    <a href="#" class="btn btn-warning" role="button">View DEMO</a>
-                                </p>
-                            </div> <!-- .caption -->
-                        </div>
+                        <?php require_once '../../templates/includes/blog-banner-buy-tag.tpl'; ?>
+                        
                         <div class="feature_list">
                             <?php // get_sidebar(); ?>
                             <?php if ( is_active_sidebar( 'sidebar-7' ) ) : ?>

@@ -13,6 +13,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <title><?php wp_title( '|', true, 'right' ); ?></title>
+    
+    <?php wp_head(); ?>
 
     <!-- Bootstrap -->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,300italic,400italic,600italic,700italic' rel='stylesheet' type='text/css'>
@@ -31,7 +33,7 @@
     <script src="<?php echo getStaticUrl();?>/js/fancy_checkbox.js"></script>
     <script src="<?php echo getStaticUrl();?>/js/main.js"></script>
 
-    <?php wp_head(); ?>
+    <?php require_once '../../templates/includes/blog-analytics-header.tpl'; ?>
     
 <!-- style -->
 <?php /*

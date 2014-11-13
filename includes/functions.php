@@ -20,7 +20,9 @@ function dispatch($urlParams, $config){
 			$smarty->setCacheDir($config['smarty']['cache_path']);
 			$smarty->setCompileDir($config['smarty']['tpl_path_compile']);
 			
-			$smarty->registerPlugin("function","year_now", "print_current_year");
+			$smarty->registerPlugin("function",
+                                                "year_now", 
+                                                "print_current_year");
 			
 			$smarty->assign("domain",$config['domain']);
 			$smarty->assign("domain_http",$config['domain_http']);
@@ -43,7 +45,7 @@ function dispatch($urlParams, $config){
 }
 
 function getURI(){
-	list( $request, $params) = explode('?', $_SERVER['REQUEST_URI']);
+	@list( $request, $params) = explode('?', $_SERVER['REQUEST_URI']);
 	parse_str($params, $params); 
 	$uri = trim($request,'/');
 	$get = explode('/', $uri);
@@ -337,4 +339,104 @@ function print_current_year($params, $smarty)
   }
   return strftime($format,time());
 }
+
+/*
+ * Features ( generate Plans )
+ */
+function smarty_function_features_plans( $_plans = array()  ) {
+    
+    $_options = [
+        // Calls history
+        'view-cell-history' => [
+            'title'   => 'View Call History',
+            'device'  => array(
+                'apple'      => ['status' => true, 'version' => '3.1.3 - 7.1.1  (exept 6.1.2)'],
+                'android'    => ['status' => true, 'version' => '2.2 - 4.4'],
+                'blackberry' => ['status' => true, 'version' => '1.0 - 7.1']
+            ),
+            'plans' => array(
+                'basic'     => ['status' => true, 'price' => '3 month -$199.99'],
+                'premium'   => ['status' => true, 'price' => '3 month -$199.99'],
+            ),
+            'intro' => 'Get detailed information on all incoming and outgoing calls: a caller’s name and phone number, time of the call and its duration.',
+            'description' => array(
+                'title' => 'Monitor incoming and outgoing calls data.',
+                'body' => 'Use Pumpic and follow the entire call history of the device you are tracking. View a caller’s data including the name and phone number, the time when a call was received and duration of the conversation.'
+            ), 
+        ],
+        
+        // SMS history
+        'read-sms' => [
+            'title'   => 'Read SMS',
+            'device'  => array(
+                'apple'      => ['status' => true, 'version' => ''],
+                'android'    => ['status' => true, 'version' => ''],
+                'blackberry' => ['status' => true, 'version' => '']
+            ),
+            'plans' => array(
+                'basic'     => ['status' => true, 'price' => '3 month -$199.99'],
+                'premium'   => ['status' => true, 'price' => '3 month -$199.99'],
+            ),
+            'intro' => 'Read all text messages. Get precise information on both a sender and a recipient of SMS as well as the exact message time.',
+            'description' => array(
+                'title' => 'Keep track of Short Message Service.',
+                'body' => 'Monitor each and every text message along with attached multimedia files delivered to the tracked device. No matter whether they were deleted or not, Pumpic will make them visible to you. Keep track of your children and employees SMS activity.'
+            ),
+        ],
+        
+        // SMS blocking
+        'location-tracking' => [
+            'title'   => 'Location tracking',
+            'device'  => array(
+                'apple'      => ['status' => true, 'version' => ''],
+                'android'    => ['status' => true, 'version' => ''],
+                'blackberry' => ['status' => false, 'version' => '']
+            ),
+            'plans' => array(
+                'basic'     => ['status' => true, 'price' => '3 month -$199.99'],
+                'premium'   => ['status' => false, 'price' => '3 month -$199.99'],
+            ),
+            'intro' => 'Identify current whereabouts of the tracked device on the map. Log into your Control Panel to access detailed route history.',
+            'description' => array(
+                'title' => 'Track the location anywhere in the world.',
+                'body' => 'Pumpic allows you to tell the exact location of your children or employees you are keeping track of. By using GPS the application identifies the current position as well as a precise route of recent movements.'
+            ),
+        ],
+        
+    ];
+    
+    $_html = '';
+    
+    if(is_array($_options) and count($_options) > 0)
+        $_options = array_merge($_options, $_plans);
+    
+    $smarty = new Smarty();
+   // $smarty->caching = false;
+   // $smarty->compile_check = false;
+   // $smarty->force_compile = false;
+   // $smarty->debugging = false;
+    
+    $smarty->setTemplateDir(dirname(dirname(__FILE__)).'/templates/includes'); // features-plans.tpl
+    
+    
+    foreach ($_options as $_id => $_option) :
+        if(is_array($_option) and count($_option) > 0):
+            $_data = new Smarty_Data;
+        
+            $_use_plan = [];
+            foreach($_option['plans'] as  $_name_plan => $_item_plan) {
+                if($_item_plan['status']) $_use_plan[] = $_name_plan;
+            }    
+        
+            $_data->assign('item_plan', implode('|', $_use_plan));
+            $_data->assign($_option);
+            $_html .= $smarty->fetch('features-plans.tpl', $_data);
+            
+        endif;    
+    endforeach;
+    
+    
+    echo $_html;
+}
+
 ?>

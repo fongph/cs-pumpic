@@ -2886,3 +2886,27 @@ span.btn-banner-yellow:active {
     margin-left: 4px;
     font-size: 12px;
 }
+
+.box-plans.active { 
+    color: #4f4e56 !important;
+}
+
+.supported { // , .supported:hover
+    color: #545662 !important;
+}
+
+.box-phone.active {
+    color: #1fab9e !important;
+}
+
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
+.box-phone {
+    cursor: pointer;
+}

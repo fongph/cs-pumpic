@@ -258,11 +258,21 @@ select.form-control option {
 .logo {
   float: left;
   background: url(../images/logo.png) no-repeat;
+  width: 149px;
+  height: 44px;
+  overflow: hidden;
+  text-indent: -9999px;
+}
+/*
+.logo {
+  float: left;
+  background: url(../images/logo.png) no-repeat;
   width: 125px;
   height: 39px;
   overflow: hidden;
   text-indent: -9999px;
-}
+}*/
+
 .logo a {
   display: block;
   height: 100%;
@@ -2909,4 +2919,20 @@ span.btn-banner-yellow:active {
 
 .box-phone {
     cursor: pointer;
+}
+
+#img-support {
+    display: inline-block;
+    width: 149px;
+    height: 14px;
+    background: url('../images/img_support.png') no-repeat;
+}
+
+#emai-support-v2 {
+    position: relative;
+    top: 4px;
+    display: inline-block;
+    width: 169px;
+    height: 16px;
+    background: url('../images/email-support-v2.png') no-repeat;
 }

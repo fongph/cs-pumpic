@@ -1,1 +1,1 @@
-<button class="btn-help">Help</button>
+{* <button class="btn-help">Help</button> *}

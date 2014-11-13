@@ -33,9 +33,9 @@
 											<!-- dtd -->
 											<div class="dth">
 												<span>OS: </span>
-												<i class="icon-android"></i>
-												<i class="icon-apple"></i>
-												<i class="icon-blackberry"></i>
+												<i class="icon-android box-tab"></i>
+												<i class="icon-apple box-tab"></i>
+												<i class="icon-blackberry box-tab"></i>
 											</div>
 											<!-- dtd -->
 										</div>
@@ -49,7 +49,7 @@
 								<div class="dtitle">
 									<div class="row">
 										<div class="col-lg-5 col-md-5">
-											<div class="dtd">Basic</div>
+											<div class="dtd">&nbsp;</div> <!-- Basic -->
 										</div>
 										<div class="col-lg-7 col-md-7">
 											<div class="dtd">
@@ -500,7 +500,7 @@
 								<div class="dtitle">
 									<div class="row">
 										<div class="col-lg-5 col-md-5">
-											<div class="dtd">PRO</div>
+											<div class="dtd">&nbsp;</div> <!-- PRO --> 
 										</div>
 									</div>
 									<!-- row -->
@@ -948,6 +948,52 @@
 						</div>
 			</div>
 		</div>
+
+         {literal}
+         <script type="text/javascript">
+            (function( $ ){
+                  // detected method
+                  var methods = {
+                    init : function( options ) { 
+                        
+                       console.log( options ); 
+                        
+                      // А ВОТ ЭТОТ
+                    },
+                    show : function( ) {
+                      // ПОДХОД
+                    },
+                    hide : function( ) {
+                      // ПРАВИЛЬНЫЙ
+                    },
+                    update : function( content ) {
+                      // !!!
+                    }
+                  };
+
+                  // constructor
+                  $.fn.tabPumpic = function( method ) {
+
+                    // логика вызова метода
+                    if ( methods[method] ) {
+                      return methods[ method ].apply( this, Array.prototype.slice.call( arguments, 1 ));
+                    } else if ( typeof method === 'object' || ! method ) {
+                      return methods.init.apply( this, arguments );
+                    } else {
+                      $.error( 'Метод с именем ' +  method + ' не существует для jQuery.tooltip' );
+                    } 
+                  };
+
+            })( jQuery ); 
+             
+             
+            $(document).ready(function(){ 
+                $('.box-tab').tabPumpic({
+                    'test' : 123
+                });
+            });
+         </script>
+         {/literal}       
 
 	{include file='../includes/footer.tpl'}
 	</div>

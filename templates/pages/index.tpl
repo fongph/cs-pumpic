@@ -1,9 +1,9 @@
 {strip}
 {include file='../includes/wrap-title-header.tpl'}
 
-	<title>SEO title for cellspy.org</title>
-	<meta name="description" content="Cellspy.org meta description" />
-	<meta name="keywords" content="parental control, employee monitoring"/>
+	<title>High-Grade Cell Phone Monitoring App – Pumpic</title>
+	<meta name="description" content="Pumpic is a new multifunction Parental Control and Employee Surveillance Application for your cell phone. Track locations, record environment, follow text messages and call logs remotely." />
+	<meta name="keywords" content="High-Grade Cell Phone Monitoring App – Pumpic"/>
 
 {include file='../includes/wrap-title-footer.tpl'}
 <body>
@@ -58,21 +58,21 @@
 				<h2 class="text-center">CELL PHONE SPYING TESTIMONIALS:</h2>
 				<div class="row">
 					<div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
-						<img src="{$img}/testimonial-photo.jpg" alt="" class="testimonial-photo">
+						<img src="{$img}/testimonial_1.png" alt="" class="testimonial-photo">
 						<div class="testimonial-text">
 							<h4>Jennet H.</h4>
 							<p>“I love my kids more than anything else in this world but I have to admit they can be a big headache, especially at this age. Pumpic allows me to keep an eye on what they are up to. This is a great help!”</p>
 						</div>
 					</div>
 					<div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
-						<img src="{$img}/testimonial-photo.jpg" alt="" class="testimonial-photo">
+						<img src="{$img}/testimonial_3.png" alt="" class="testimonial-photo">
 						<div class="testimonial-text">
 							<h4>Sophia R.</h4>
 							<p>“This is a great app! I use it to keep track of my employees’ cell phone activities. Whenever I check into my cPanel, I get detailed info on their emails and browsing history. I can even block some of it to get more productivity.”</p>
 						</div>
 					</div>
 					<div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
-						<img src="{$img}/testimonial-photo.jpg" alt="" class="testimonial-photo">
+						<img src="{$img}/testimonial_2.png" alt="" class="testimonial-photo">
 						<div class="testimonial-text">
 							<h4>Logan T.</h4>
 							<p>“Many of our managers work with sensitive data of our clients, and it feels safer to know that if something goes wrong we can just delete all of this information from their cell phone remotely! Pumpic is a useful app to have!”</p>
@@ -81,8 +81,10 @@
 				</div>
 			</div>
 		</div>
-		{include file='../includes/main-subscribe.tpl'}
-		<div class="light">
+		
+                {* include file='../includes/main-subscribe.tpl' *}
+                
+		<div class="dark">
 			<div class="container">
 				<h2 class="text-center">HOW it WORKS?</h2>
 				<div class="howitworks-arrows">
@@ -106,11 +108,11 @@
 				</div>
 			</div>
 		</div>
-		<div class="dark">
+		<div class="light">
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-10 col-md-10 col-lg-10 col-sm-offset-1 col-md-offset-1 col-lg-offset-1 gutter-wide">
-						<h2 class="text-center">TITLE</h2>
+						<h2 class="text-center">How to Use</h2>
 						<div class="row">
 							<div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
 								<h3 class="text-center"><img src="{$img}/ico-stealth.png" alt=""> Use easily</h3>

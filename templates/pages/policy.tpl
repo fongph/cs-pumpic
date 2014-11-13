@@ -1,9 +1,9 @@
 {strip}
 {include file='../includes/wrap-title-header.tpl'}
 
-	<title>SEO title for cellspy.org</title>
-	<meta name="description" content="Cellspy.org meta description" />
-	<meta name="keywords" content="parental control, employee monitoring"/>
+	<title>Privacy Policy, Refunds, Terms & Conditions</title>
+	<meta name="description" content="Pumpic is a Mobile Phone Monitoring Application with limitless possibilities. Learn more about the legal policy of the software usage. Pumpic is for legitimate use only." />
+	<meta name="keywords" content="Privacy Policy, Refunds, Terms & Conditions"/>
 
 {include file='../includes/wrap-title-footer.tpl'}
 <body>
@@ -82,7 +82,8 @@ Other personal reasons (“I’ve changed my mind”, “I’ve made a purchase 
 										If you have any questions regarding the aforementioned Refund Policy, Privacy Policy or<br/>any other questions on operation of this Site, please feel free to contact us via
 									</p>
 									<p class="text-center text-success">
-										<a href="mailto:support@pumpic.com">support@pumpic.com</a>
+                                                                                <span id="img-support"></span>
+										{*<a href="mailto:support@pumpic.com">support@pumpic.com</a>*}
 									</p>
 								</div>
 							</div>

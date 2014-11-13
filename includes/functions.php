@@ -1,5 +1,6 @@
 <?php
 function dispatch($urlParams, $config){
+      
 	if(isset($config['php_compile'][$urlParams['uri']])){
 		include $config['php_compile'][$urlParams['uri']];
 	}else{
@@ -20,9 +21,9 @@ function dispatch($urlParams, $config){
 			$smarty->setCacheDir($config['smarty']['cache_path']);
 			$smarty->setCompileDir($config['smarty']['tpl_path_compile']);
 			
-			$smarty->registerPlugin("function",
-                                                "year_now", 
-                                                "print_current_year");
+			$smarty->registerPlugin("function","year_now","print_current_year");
+                        
+                        $smarty->registerPlugin("function","contactusSend","contact_us_send"); // validate form contact_us
 			
 			$smarty->assign("domain",$config['domain']);
 			$smarty->assign("domain_http",$config['domain_http']);
@@ -341,65 +342,397 @@ function print_current_year($params, $smarty)
 }
 
 /*
+ * Contact US (send form and validater)
+ */
+function contact_us_send($params, $smarty) {
+    if(is_array($params['contact_us']) and count($params['contact_us']) > 0) {
+        $_id = rand(0, 9000000);
+        
+        if(!validateEmail($params['contact_us']['email'])) {
+            return "Not validate email address!";
+        }
+        
+        if(empty($params['contact_us']['name']) or strlen( $params['contact_us']['name']) < 3 ) 
+            return "Please enter correct your name!";
+        
+        $title = "Contact US";
+        $_body = "<table>";
+        
+        if(isset($params['contact_us']['name']))
+            $_body .= "<tr><td>Name:</td><td>".$params['contact_us']['name']."</td></tr>";
+        if(isset($params['contact_us']['email']))
+            $_body .= "<tr><td>Email:</td><td>".$params['contact_us']['email']."</td></tr>";
+        if(isset($params['contact_us']['os']))
+            $_body .= "<tr><td>OS:</td><td>".$params['contact_us']['os']."</td></tr>";
+        if(isset($params['contact_us']['description']))
+            $_body .= "<tr><td>Description:</td><td>".$params['contact_us']['description']."</td></tr>";
+        
+        $_body .= "</table>";
+        
+        $_tmp = "<html>
+                    <head>
+                        <title>{title}</title>
+                    </head>
+                    <body>
+                        {body}
+                    </body>
+                </html>";
+        $_params = array("{title}" => $title, "{body}" => $_body);
+        $_text = strtr($_tmp, $_params);
+        
+        sendEmail('support@pumpic.com', 'Contact US #pp '.$_id, $_text);
+        
+        return "You'r e-mail send OK!";
+    }
+}
+
+/*
  * Features ( generate Plans )
  */
 function smarty_function_features_plans( $_plans = array()  ) {
     
     $_options = [
-        // Calls history
-        'view-cell-history' => [
-            'title'   => 'View Call History',
+        // Call History
+        'call-history' => [
+            'title'   => 'Call History',
             'device'  => array(
-                'apple'      => ['status' => true, 'version' => '3.1.3 - 7.1.1  (exept 6.1.2)'],
+                'apple'      => ['status' => true, 'version' => '3.1.3 - 7.1.1'],
                 'android'    => ['status' => true, 'version' => '2.2 - 4.4'],
                 'blackberry' => ['status' => true, 'version' => '1.0 - 7.1']
             ),
             'plans' => array(
-                'basic'     => ['status' => true, 'price' => '3 month -$199.99'],
-                'premium'   => ['status' => true, 'price' => '3 month -$199.99'],
+                'basic'     => ['status' => true, 'price' => '3 month - 3 months - $11.66/month'],
+                'premium'   => ['status' => true, 'price' => '3 months -$33.33/month'],
             ),
             'intro' => 'Get detailed information on all incoming and outgoing calls: a caller’s name and phone number, time of the call and its duration.',
             'description' => array(
-                'title' => 'Monitor incoming and outgoing calls data.',
+                'title' => 'Monitor incoming and outgoing calls data',
                 'body' => 'Use Pumpic and follow the entire call history of the device you are tracking. View a caller’s data including the name and phone number, the time when a call was received and duration of the conversation.'
             ), 
         ],
         
-        // SMS history
-        'read-sms' => [
-            'title'   => 'Read SMS',
+        // SMS History
+        'sms-history' => [
+            'title'   => 'SMS History',
             'device'  => array(
-                'apple'      => ['status' => true, 'version' => ''],
-                'android'    => ['status' => true, 'version' => ''],
-                'blackberry' => ['status' => true, 'version' => '']
+                'apple'      => ['status' => true, 'version' => '3.1.3 - 7.1.1'],
+                'android'    => ['status' => true, 'version' => '2.2 - 4.4'],
+                'blackberry' => ['status' => true, 'version' => '1.0 - 7.1']
             ),
             'plans' => array(
-                'basic'     => ['status' => true, 'price' => '3 month -$199.99'],
-                'premium'   => ['status' => true, 'price' => '3 month -$199.99'],
+                'basic'     => ['status' => true, 'price' => '3 month - 3 months - $11.66/month'],
+                'premium'   => ['status' => true, 'price' => '3 months -$33.33/month'],
             ),
             'intro' => 'Read all text messages. Get precise information on both a sender and a recipient of SMS as well as the exact message time.',
             'description' => array(
-                'title' => 'Keep track of Short Message Service.',
+                'title' => 'Keep track of Short Message Service',
                 'body' => 'Monitor each and every text message along with attached multimedia files delivered to the tracked device. No matter whether they were deleted or not, Pumpic will make them visible to you. Keep track of your children and employees SMS activity.'
             ),
         ],
         
         // SMS blocking
-        'location-tracking' => [
-            'title'   => 'Location tracking',
+        'sms-blocking' => [
+            'title'   => 'SMS blocking',
             'device'  => array(
-                'apple'      => ['status' => true, 'version' => ''],
-                'android'    => ['status' => true, 'version' => ''],
-                'blackberry' => ['status' => false, 'version' => '']
+                'apple'      => ['status' => true, 'version' => '3.1.3 - 7.1.1'],
+                'android'    => ['status' => true, 'version' => '2.2 - 4.4 (except 4.4)'],
+                'blackberry' => ['status' => false, 'version' => '1.0 - 7.1']
             ),
             'plans' => array(
-                'basic'     => ['status' => true, 'price' => '3 month -$199.99'],
-                'premium'   => ['status' => false, 'price' => '3 month -$199.99'],
+                'basic'     => ['status' => true, 'price' => '3 month - 3 months - $11.66/month'],
+                'premium'   => ['status' => false, 'price' => '3 months -$33.33/month'],
+            ),
+            'intro' => 'Block unwanted SMS senders so they will never again be able to reach the target phone user.',
+            'description' => array(
+                'title' => 'Prevent the phone from unwelcome SMS',
+                'body' => 'Use Pumpic and block the cell phone you are monitoring against incoming text messages you wish your children or employees would never receive. Unwanted senders will never get on the phone you are keeping track of.'
+            ),
+        ],
+        
+        // Location History
+        'location-history' => [
+            'title'   => 'Location History',
+            'device'  => array(
+                'apple'      => ['status' => true, 'version' => '3.1.3 - 7.1.1'],
+                'android'    => ['status' => true, 'version' => '2.2 - 4.4'],
+                'blackberry' => ['status' => true, 'version' => '1.0 - 7.1']
+            ),
+            'plans' => array(
+                'basic'     => ['status' => true, 'price' => '3 month - 3 months - $11.66/month'],
+                'premium'   => ['status' => false, 'price' => '3 months -$33.33/month'],
             ),
             'intro' => 'Identify current whereabouts of the tracked device on the map. Log into your Control Panel to access detailed route history.',
             'description' => array(
-                'title' => 'Track the location anywhere in the world.',
+                'title' => 'Track the location anywhere in the world',
                 'body' => 'Pumpic allows you to tell the exact location of your children or employees you are keeping track of. By using GPS the application identifies the current position as well as a precise route of recent movements.'
+            ),
+        ],
+        
+        // Contacts
+        'contacts' => [
+            'title'   => 'Contacts',
+            'device'  => array(
+                'apple'      => ['status' => true, 'version' => '3.1.3 - 7.1.1'],
+                'android'    => ['status' => true, 'version' => '2.2 - 4.4'],
+                'blackberry' => ['status' => false, 'version' => '1.0 - 7.1']
+            ),
+            'plans' => array(
+                'basic'     => ['status' => true, 'price' => '3 month - 3 months - $11.66/month'],
+                'premium'   => ['status' => false, 'price' => '3 months -$33.33/month'],
+            ),
+            'intro' => 'View all contacts within seconds. Access the address book remotely: names, phone numbers, emails etc.',
+            'description' => array(
+                'title' => 'Monitor communications listing and contacts easily',
+                'body' => 'Find out all contact information ever put on the list. Keep track of communications list and prevent your children or employees from unwanted connections and companionship. Receive notifications about recent contacts additions.'
+            ),
+        ],
+        
+        // Calendar
+        'calendar' => [
+            'title'   => 'Calendar',
+            'device'  => array(
+                'apple'      => ['status' => true, 'version' => '3.1.3 - 7.1.1'],
+                'android'    => ['status' => true, 'version' => '2.2 - 4.4'],
+                'blackberry' => ['status' => false, 'version' => '1.0 - 7.1']
+            ),
+            'plans' => array(
+                'basic'     => ['status' => true, 'price' => '3 month - 3 months - $11.66/month'],
+                'premium'   => ['status' => false, 'price' => '3 months -$33.33/month'],
+            ),
+            'intro' => 'Keep track of all events put on the schedule. See what the tracked person plans to do and when. Follow tasks list.',
+            'description' => array(
+                'title' => 'Monitor date, month and year plans in the tracked calendar',
+                'body' => 'Follow each and every scripted event as well as scheduled intentions. Avert possible danger before it has happened. Keep up with recent and future plans of your underage children or employees.'
+            ),
+        ],
+        
+        // Browsing History
+        'browsing-history' => [
+            'title'   => 'Browsing History',
+            'device'  => array(
+                'apple'      => ['status' => true, 'version' => '3.1.3 - 7.1.1'],
+                'android'    => ['status' => true, 'version' => '2.2 - 4.4'],
+                'blackberry' => ['status' => false, 'version' => '1.0 - 7.1']
+            ),
+            'plans' => array(
+                'basic'     => ['status' => true, 'price' => '3 month - 3 months - $11.66/month'],
+                'premium'   => ['status' => false, 'price' => '3 months -$33.33/month'],
+            ),
+            'intro' => 'Go through browsing history of the tracked device. Check which websites were visited and what search engine queries were made.',
+            'description' => array(
+                'title' => 'Monitor online activity by tracking browsing history',
+                'body' => 'Pumpic enables you to follow each link and every website your kid or employee visits. Check search results and most popular requests. Keep the user of the target device away from visiting specific web resources.'
+            ),
+        ],
+        
+        // Bookmarks
+        'bookmarks' => [
+            'title'   => 'Bookmarks',
+            'device'  => array(
+                'apple'      => ['status' => true, 'version' => '3.1.3 - 7.1.1'],
+                'android'    => ['status' => true, 'version' => '2.2 - 4.4'],
+                'blackberry' => ['status' => false, 'version' => '1.0 - 7.1']
+            ),
+            'plans' => array(
+                'basic'     => ['status' => true, 'price' => '3 month - 3 months - $11.66/month'],
+                'premium'   => ['status' => false, 'price' => '3 months -$33.33/month'],
+            ),
+            'intro' => 'Log in to your Control Panel to see which websites were bookmarked. Check at what time the user of the tracked gadget accesses favorite websites.',
+            'description' => array(
+                'title' => 'Look through favorite websites of the tracked user ',
+                'body' => 'Use Pumpic app to find out which among visited websites the user of the monitored gadget bookmarked. Enter you Control Panel to check all bookmarks and prevent your kids or employees from visiting undesirable webpages.'
+            ),
+        ],
+        
+        // Photos
+        'photos' => [
+            'title'   => 'Photos',
+            'device'  => array(
+                'apple'      => ['status' => true, 'version' => '3.1.3 - 7.1.1'],
+                'android'    => ['status' => true, 'version' => '2.2 - 4.4'],
+                'blackberry' => ['status' => false, 'version' => '1.0 - 7.1']
+            ),
+            'plans' => array(
+                'basic'     => ['status' => true, 'price' => '3 month - 3 months - $11.66/month'],
+                'premium'   => ['status' => false, 'price' => '3 months -$33.33/month'],
+            ),
+            'intro' => 'Every taken picture will be available to you. See what photos the tracked gadget user downloads from the Internet.',
+            'description' => array(
+                'title' => 'Monitor each and every photo taken',
+                'body' => 'By using Pumpic software, you can view every single photo shot and each picture downloaded from the Internet. Soon after your kid or employee takes a pic, it will be sent to your personal account for your consideration.'
+            ),
+        ],
+        
+        // Emails
+        'emails' => [
+            'title'   => 'Emails',
+            'device'  => array(
+                'apple'      => ['status' => true, 'version' => '3.1.3 - 7.1.1'],
+                'android'    => ['status' => true, 'version' => '2.2 - 4.4 (ROOT for all)'],
+                'blackberry' => ['status' => false, 'version' => '1.0 - 7.1']
+            ),
+            'plans' => array(
+                'basic'     => ['status' => true, 'price' => '3 month - 3 months - $11.66/month'],
+                'premium'   => ['status' => false, 'price' => '3 months -$33.33/month'],
+            ),
+            'intro' => 'Look through all sent and received emails. Access all available contact info on a sender and the recipient.',
+            'description' => array(
+                'title' => 'Get access to inbox messages and sent mail',
+                'body' => 'Track every single email the user of the tracked gadget sends or receives. Check email correspondence history and prevent you children from ambiguous communication and your employees from wasting their time at work.'
+            ),
+        ],
+        
+        // Applications
+        'applications' => [
+            'title'   => 'Applications',
+            'device'  => array(
+                'apple'      => ['status' => true, 'version' => '3.1.3 - 7.1.1'],
+                'android'    => ['status' => true, 'version' => '2.2 - 4.4'],
+                'blackberry' => ['status' => false, 'version' => '1.0 - 7.1']
+            ),
+            'plans' => array(
+                'basic'     => ['status' => true, 'price' => '3 month - 3 months - $11.66/month'],
+                'premium'   => ['status' => false, 'price' => '3 months -$33.33/month'],
+            ),
+            'intro' => 'Monitor each cell phone application that your children use and play, or your employees are distracted by.',
+            'description' => array(
+                'title' => 'View all applications set up on the target cell phone',
+                'body' => 'By using Pumpic, you can easily track each installation of new applications on the target mobile phone. Prevent your children from ambiguous software usage and your employees distracting from work.'
+            ),
+        ],
+        
+        // Websites & Apps blocking
+        'websites-apps-blocking' => [
+            'title'   => 'Websites & Apps blocking',
+            'device'  => array(
+                'apple'      => ['status' => true, 'version' => '3.1.3 - 7.1.1'],
+                'android'    => ['status' => true, 'version' => '2.2 - 4.4'],
+                'blackberry' => ['status' => false, 'version' => '1.0 - 7.1']
+            ),
+            'plans' => array(
+                'basic'     => ['status' => true, 'price' => '3 month - 3 months - $11.66/month'],
+                'premium'   => ['status' => false, 'price' => '3 months -$33.33/month'],
+            ),
+            'intro' => 'Block any websites and time-wasting applications from running on the target cell phone. Get detailed info on each app installed.',
+            'description' => array(
+                'title' => 'Block distracting websites and applications on the target device',
+                'body' => 'By using Pumpic you can view and control all websites visited and applications installed on the cell phone your children or employees use. Prevent them from wasting time playing games or using other distracting software.'
+            ),
+        ],
+        
+        // Viber/WhatsApp/Skype
+        'viber-whatsapp-skype' => [
+            'title'   => 'Viber/WhatsApp/Skype',
+            'device'  => array(
+                'apple'      => ['status' => true, 'version' => '3.1.3 - 7.1.1'],
+                'android'    => ['status' => true, 'version' => '2.2 - 4.4 (ROOT for all)'],
+                'blackberry' => ['status' => false, 'version' => '1.0 - 7.1']
+            ),
+            'plans' => array(
+                'basic'     => ['status' => false, 'price' => '3 month - 3 months - $11.66/month'],
+                'premium'   => ['status' => true, 'price' => '3 months -$33.33/month'],
+            ),
+            'intro' => 'Keep track of conversations via the most popular communications software including video chats and voice calls.',
+            'description' => array(
+                'title' => 'Monitor Viber, WhatsApp and Skype chats on the target phone',
+                'body' => 'Pumpic allows you to monitor the target cell phone user’s activity in the most widely used communications applications like WhatsApp, Viber and Skype. Prevent your employees or children from undesired conversations.'
+            ),
+        ],
+        
+        
+        // View User Video
+        'view-user-video' => [
+            'title'   => 'View User Video',
+            'device'  => array(
+                'apple'      => ['status' => true, 'version' => '3.1.3 - 7.1.1'],
+                'android'    => ['status' => true, 'version' => '2.2 - 4.4'],
+                'blackberry' => ['status' => false, 'version' => '1.0 - 7.1']
+            ),
+            'plans' => array(
+                'basic'     => ['status' => false, 'price' => '3 month - 3 months - $11.66/month'],
+                'premium'   => ['status' => true, 'price' => '3 months -$33.33/month'],
+            ),
+            'intro' => 'Keep track of each new video the user of the cell phone you are monitoring films. Look through multimedia files.',
+            'description' => array(
+                'title' => 'Monitor videos filmed by the target device',
+                'body' => 'Use Pumpic and monitor all multimedia files downloaded from the Internet or shot by the camera. Track videos that your employees or children film. Prevent your kids from watching restricted videos.'
+            ),
+        ],
+        
+        // Facebook Messages
+        'facebook-messages' => [
+            'title'   => 'Facebook Messages',
+            'device'  => array(
+                'apple'      => ['status' => true, 'version' => '3.1.3 - 7.1.1'],
+                'android'    => ['status' => true, 'version' => '2.2 - 4.4 (ROOT for all)'],
+                'blackberry' => ['status' => false, 'version' => '1.0 - 7.1']
+            ),
+            'plans' => array(
+                'basic'     => ['status' => false, 'price' => '3 month - 3 months - $11.66/month'],
+                'premium'   => ['status' => true, 'price' => '3 months -$33.33/month'],
+            ),
+            'intro' => 'Monitor each and every word sent and received via Facebook. Control your employees’ chats, protect your kids.',
+            'description' => array(
+                'title' => 'Keep track of communications and messages on Facebook',
+                'body' => 'Pumpic enables you to monitor Facebook messages easily and quickly. Do not let your employees waste their time at work chatting online or protect your children from online predators and uncontrolled conversations.'
+            ),
+        ],
+        
+        
+        // Historical Data
+        'historical-data' => [
+            'title'   => 'Historical Data',
+            'device'  => array(
+                'apple'      => ['status' => true, 'version' => '3.1.3 - 7.1.1'],
+                'android'    => ['status' => true, 'version' => '2.2 - 4.4'],
+                'blackberry' => ['status' => false, 'version' => '1.0 - 7.1']
+            ),
+            'plans' => array(
+                'basic'     => ['status' => false, 'price' => '3 month - 3 months - $11.66/month'],
+                'premium'   => ['status' => true, 'price' => '3 months -$33.33/month'],
+            ),
+            'intro' => 'Look through all the information ever stored on the target phone. Keep track of the target device since the day it has been switched on.',
+            'description' => array(
+                'title' => 'Track the entire data history from the very beginning',
+                'body' => 'By using Pumpic Historical Data feature, you can view all the data ever kept on file. This function allows you to keep track of information from the very first day of the target cell power on regardless your subscription plan submission date.'
+            ),
+        ],
+        
+        // SMS Commands
+        'sms-commands' => [
+            'title'   => 'SMS Commands',
+            'device'  => array(
+                'apple'      => ['status' => true, 'version' => '3.1.3 - 7.1.1'],
+                'android'    => ['status' => true, 'version' => '2.2 - 4.4 (ROOT for all)'],
+                'blackberry' => ['status' => false, 'version' => '1.0 - 7.1']
+            ),
+            'plans' => array(
+                'basic'     => ['status' => false, 'price' => '3 month - 3 months - $11.66/month'],
+                'premium'   => ['status' => true, 'price' => '3 months -$33.33/month'],
+            ),
+            'intro' => 'Wipe out or lock the target cell phone remotely by using SMS commands even when the Internet is shot down.',
+            'description' => array(
+                'title' => 'Control the target phone remotely by using SMS commands',
+                'body' => 'Pumpic allows you to lock and wipe the target gadget remotely. Even if there is no network connection, you can easily use SMS commands to control your cell phone functioning: change the password or simply lock it by sending a text message.'
+            ),
+        ],
+        
+        // Keylogger
+        'keylogger' => [
+            'title'   => 'Keylogger',
+            'device'  => array(
+                'apple'      => ['status' => true, 'version' => '3.1.3 - 7.1.1'],
+                'android'    => ['status' => true, 'version' => '2.2 - 4.4'],
+                'blackberry' => ['status' => false, 'version' => '1.0 - 7.1']
+            ),
+            'plans' => array(
+                'basic'     => ['status' => false, 'price' => '3 month - 3 months - $11.66/month'],
+                'premium'   => ['status' => true, 'price' => '3 months -$33.33/month'],
+            ),
+            'intro' => 'Monitor all key strokes on the target cell phone. Prevent your children from viewing inappropriate content, secure confidential business data.',
+            'description' => array(
+                'title' => 'Keep track of each button pressed with keylogger',
+                'body' => 'By Using Pumpic software, you can follow each button your kid or employees press. Keep track of password changes, using the target device for non-work-related purposes, track key words and phrases input associated with commercial secret data.'
             ),
         ],
         

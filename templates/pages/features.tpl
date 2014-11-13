@@ -1,9 +1,9 @@
 {strip}
 {include file='../includes/wrap-title-header.tpl'}
 
-	<title>SEO title for cellspy.org</title>
-	<meta name="description" content="Cellspy.org meta description" />
-	<meta name="keywords" content="parental control, employee monitoring"/>
+	<title>High-grade tracking app with multiple functions</title>
+	<meta name="description" content="Pumpic is an innovative solution, which takes Mobile Phone Monitoring on a reasonably new level. Find out more functions of Pumpic and evaluate the progress it made." />
+	<meta name="keywords" content="High-grade tracking app with multiple functions"/>
 
 {include file='../includes/wrap-title-footer.tpl'}
 <body>

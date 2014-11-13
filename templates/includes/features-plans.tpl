@@ -88,22 +88,21 @@
                                         {/if}        
                                     {/foreach}    
                                     
-                                    {*<p>
-                                        <i class="icon-android"></i><span>2.2 - 4.4</span>
-                                    </p>
-                                    <p>
-                                        <i class="icon-apple"></i><span>3.1.3 - 7.1.1  (exept 6.1.2)</span>
-                                    </p>
-                                    <p>
-                                        <i class="icon-blackberry"></i><span>1.0 - 7.1</span>
-                                    </p>*}
                             </div>
                             <div class="price-box">
-                                    <h3>Basic</h3>
-                                    <div class="price">
-                                            3 month -$199.99
-                                    </div>
-                                    <button class="btn btn-default">Buy Basic</button>
+                                    {if $plans.basic.status == true}
+                                        <h3>Basic</h3>
+                                        <div class="price">
+                                            {$plans.basic.price}
+                                        </div>
+                                        <button class="btn btn-default">Buy Basic</button>
+                                    {else}
+                                        <h3>Premium</h3>
+                                        <div class="price">
+                                            {$plans.premium.price}
+                                        </div>
+                                        <button class="btn btn-default">Buy Premium</button>
+                                    {/if}    
                             </div>
                     </div>
             </div>

@@ -9,6 +9,22 @@
 						<h3>COMPANY</h3>
 						<ul class="list_grey">
 							<li>
+                                                            <a href="#">Terms and conditions</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Privacy Policy</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="/policy.html">Refund policy</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="/contact-us.html">Contact us</a>
+                                                        </li>
+                                                         <li>
+                                                            <a href="/security/">Security</a>
+                                                        </li>
+                                                        {*
+                                                        <li>
 								<a href="/policy.html">Policy</a>
 							</li>
 							<li>
@@ -17,11 +33,38 @@
 							<li>
 								<a href="/security/">Blog</a>
 							</li>
+                                                        *}
 						</ul>
 					</div>
 					<div class="col-sm-3 col-md-3 col-lg-3">
 						<h3>OUR PRODUCTS</h3>
 						<ul class="list_grey">
+                                                        <li>
+								<a href="#">Android software</a>
+							</li>
+                                                        <li>
+								<a href="#">Iphone software</a>
+							</li>
+                                                        <li>
+								<a href="#">Bleckberry software</a>
+							</li>
+                                                        <li>
+								<a href="#">SMS monitoring</a>
+							</li>
+                                                        <li>
+								<a href="#">Call history monitoring</a>
+							</li>
+                                                        <li>
+								<a href="#">Cell phone monitoring</a>
+							</li>
+                                                        <li>
+								<a href="#">Mobile phone monitoring</a>
+							</li>
+                                                        <li>
+								<a href="#">Our features</a>
+							</li>
+                                                    
+                                                        {*
 							<li>
 								<a href="#">Android Spy Software</a>
 							</li>
@@ -40,6 +83,7 @@
 							<li>
 								<a href="#">Mobile Phone Spy</a>
 							</li>
+                                                        *}
 						</ul>
 					</div>
 				</div>

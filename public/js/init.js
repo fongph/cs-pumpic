@@ -93,10 +93,10 @@
              
              methods._plans(); // detected plans
              $_result._plans = methods._cach(false, "_plans"); // get params plans in cache
-             if(!$_result._plans.length) console.log('Not enter plans filters!');
+             if(typeof $_result._plans === "undefined") console.log('Not enter plans filters!');
              methods._mobile(); // detected filters mobile
              $_result._mobile = methods._cach(false, "_mobile"); // get params mobile in cache
-             if(!$_result._mobile.length) console.log('Not enter mobile filter!');
+             if(typeof $_result._mobile === "undefined") console.log('Not enter mobile filter!');
              methods._visible($_result); // show/hide elements
         },
         
@@ -252,6 +252,26 @@ $(document).ready(function(){
         return false;
     });
 
-    
+    // choose categoey
+    $('.list_category li a').on('click', function(event) {
+        event.preventDefault();
+        var _hash = $(this).attr('href').split('#');
+        
+        $.each($('.list_category li a'), function() {
+            if($(this).parent().hasClass('active'))
+                $(this).parent().removeClass('active');
+        }); // clear active
+        
+        $(this).parent().addClass('active');
+        
+        // all category hide;
+        $('.box_category ul li').hide();
+        
+        if(_hash.length > 1) {
+            $('.box_category ul li').find('#'+_hash[1]).parents('li').show();
+        }
+        
+        return true;
+    });
     
 });

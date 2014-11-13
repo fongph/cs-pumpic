@@ -1,9 +1,9 @@
 {strip}
 {include file='../includes/wrap-title-header.tpl'}
 
-	<title>SEO title for cellspy.org</title>
-	<meta name="description" content="Cellspy.org meta description" />
-	<meta name="keywords" content="parental control, employee monitoring"/>
+	<title>Learn how to use Pumpic</title>
+	<meta name="description" content="Pumpic is easy-to-use and quick-to-install Mobile Phone Monitoring Software. It will not take you long to get used to its functions and even much less to run the app. Find out more about how to use Pumpic." />
+	<meta name="keywords" content="Learn how to use Pumpic"/>
 
 {include file='../includes/wrap-title-footer.tpl'}
 <body>
@@ -34,7 +34,7 @@
 						</div>
 						<div class="col-sm-12 col-md-4">
 							<div class="thumbnail">
-								<span class="img_thumb"><img src="images/thumb_2.png" height="206" width="172" alt=""></span>
+								<span class="img_thumb"><img src="images/thumb_2_new.png" height="206" width="172" alt=""></span>
 								<div class="caption">
 									<h3>Install easily</h3>
 									<p>Closely follow the instructions in your account. You need to get ahold of the target cell phone to download and install the app as well. The process is fast and easy. You will need no more than 5 minutes to complete the entire installation. It is very easy-to-understand and does not require any additional skills or knowledge. Meanwhile all major principles are stated in the guidelines you will receive after selecting subscription plan.</p>
@@ -43,7 +43,7 @@
 						</div>
 						<div class="col-sm-12 col-md-4">
 							<div class="thumbnail">
-								<span class="img_thumb"><img src="images/thumb_3.png" height="216" width="360" alt=""></span>
+								<span class="img_thumb"><img src="images/thumb_3_new.png" height="216" width="360" alt=""></span>
 								<div class="caption">
 									<h3>Discover the truth</h3>
 									<p>No matter what is hidden from you, it will be revealed soon after installing the application. Get access to phone call logs, texts, IM chats, emails, location data, and even more. Stay updated on scheduled events, contacts and browsing history. However, do not forget that Pumpic is for legal useage only. Thus, do not try to use it to track any third parties or those you did not give notice about monitoring.</p>

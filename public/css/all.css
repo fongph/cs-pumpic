@@ -2936,3 +2936,18 @@ span.btn-banner-yellow:active {
     height: 16px;
     background: url('../images/email-support-v2.png') no-repeat;
 }
+
+.box-body-filters .box-first .features-title {
+    width: 70px;
+}
+
+.w267 {
+    width: 267px !important;
+}
+
+.w114 {
+    width: 114px !important;
+}
+.w100 {
+    width: 100px !important;
+}

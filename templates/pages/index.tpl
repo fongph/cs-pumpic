@@ -45,7 +45,7 @@
 					<div class="col-sm-5 col-md-5 col-lg-5">
 						<div class="ipad-text">
 							<h2>HOW IT LOOKS?</h2>
-							<a href="http://demo.{$domain}" class="featured-link link-hl">View demo<i class="icon-angle-double-right"></i>
+							 {*http://demo.{$domain}*} <a href="#" class="featured-link link-hl">View demo<i class="icon-angle-double-right"></i>
 							</a>
 							<p>Pumpic has created an interactive demo video of how to install and use the application. For additional information, take a look at FAQ or contact our Customer Support team!</p>
 						</div>

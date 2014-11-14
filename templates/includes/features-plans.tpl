@@ -1,14 +1,14 @@
 <div class="row box-body-filters" attr-use-plan="{$item_plan}">
-    <div class="col-lg-5 col-md-5">
-        <div class="dtd">{$title}</div>
+    <div class="col-lg-5 col-md-5 box-first">
+        <div class="dtd w267">{$title}</div>
         <!-- dtd -->
-        <div class="dtd box-filter-mobile">
+        <div class="dtd box-filter-mobile w114">
             {foreach from=$device key=k item=v}
                 <i class="icon-{$k} {if $v.status == true} supported {/if}"></i>
             {/foreach}    
         </div>
         <!-- dtd -->
-        <div class="dtd">
+        <div class="dtd w100">
             <strong>
                 {foreach from=$plans key=type item=value name=plans}
                     {if $value.status == true}

@@ -442,7 +442,7 @@ function smarty_function_features_plans( $_plans = array()  ) {
                 'basic'     => ['status' => true, 'price' => '3 month - 3 months - $11.66/month'],
                 'premium'   => ['status' => false, 'price' => '3 months -$33.33/month'],
             ),
-            'intro' => 'Block unwanted SMS senders so they will never again be able to reach the target phone user.',
+            'intro' => 'Block unwanted SMS senders so they will never again be able to reach the target phone user.<br />&nbsp;',
             'description' => array(
                 'title' => 'Prevent the phone from unwelcome SMS',
                 'body' => 'Use Pumpic and block the cell phone you are monitoring against incoming text messages you wish your children or employees would never receive. Unwanted senders will never get on the phone you are keeping track of.'

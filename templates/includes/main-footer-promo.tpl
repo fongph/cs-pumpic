@@ -28,9 +28,9 @@
 							<img src="{$img}/image_banners_2.png" class="visible-lg" height="132" width="367" alt="">
 						</div>
 						<div class="promo-text">
-							TURN ON SPYING SOFTWARE 
+                                                        WHATEVER IS HIDDEN
 							<br>
-							<span>REVEAL THE TRUTH</span>
+							<span>APPEARS BY PUMPIC</span>
 						</div>
 						<div>
 							<button class="btn btn-default _forward_pricing">Buy NOW</button>

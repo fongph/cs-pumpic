@@ -84,25 +84,25 @@
 													<label class="label_radio">
 														<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
 														<span><strong>3</strong> month</span>
-														<span>$199.99</span>
+														<span>$34.98</span>
 													</label>
 													<label class="label_radio">
 														<input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
 														<span><strong>6</strong> month</span>
-														<span>$199.99</span>
+														<span>$69.96</span>
 													</label>
 													<label class="label_radio">
 														<input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
 														<span><strong>12</strong> month</span>
-														<span>$199.99</span>
+														<span>$139.92</span>
 													</label>
 												</div>
 												<div class="select_row">
 													<h4>Basic</h4>
 													<select class="select_inverse">
-														<option value="">3 month $10</option>
-														<option value="">6 month $15</option>
-														<option value="">12 month $20</option>
+														<option value="">3 month $34.98</option>
+														<option value="">6 month $69.96</option>
+														<option value="">12 month $139.92</option>
 													</select>
 												</div>
 												<div class="_limits">
@@ -234,25 +234,25 @@
 													<label class="label_radio">
 														<input type="radio" name="optionsRadios2" id="optionsRadios4" value="option3" checked>
 														<span><strong>3</strong> month</span>
-														<span>$199.99</span>
+														<span>$99.99</span>
 													</label>
 													<label class="label_radio">
 														<input type="radio" name="optionsRadios2" id="optionsRadios5" value="option4">
 														<span><strong>6</strong> month</span>
-														<span>$199.99</span>
+														<span>$199.98</span>
 													</label>
 													<label class="label_radio">
 														<input type="radio" name="optionsRadios2" id="optionsRadios6" value="option5">
 														<span><strong>12</strong> month</span>
-														<span>$199.99</span>
+														<span>$399.96</span>
 													</label>
 												</div>
 												<div class="select_row">
 													<h4>premium</h4>
 													<select class="select_inverse">
-														<option value="">3 month $10</option>
-														<option value="">6 month $15</option>
-														<option value="">12 month $20</option>
+														<option value="">3 month $99.99</option>
+														<option value="">6 month $199.98</option>
+														<option value="">12 month $399.96/option>
 													</select>
 												</div>
 												<div class="_limits">

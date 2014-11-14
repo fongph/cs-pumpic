@@ -9,7 +9,7 @@
 									</div>
 									<div class="panel-body text-center">
 										<div class="price">
-											$18<sup>33</sup>/<sub>month</sub>
+											$11<sup>66</sup>/<sub>month</sub>
 										</div>
 										<button class="btn btn-default _forward_pricing">Buy Basic</button>
 									</div>
@@ -22,7 +22,7 @@
 									</div>
 									<div class="panel-body text-center">
 										<div class="price">
-											$18<sup>33</sup>/<sub>month</sub>
+											$33<sup>33</sup>/<sub>month</sub>
 										</div>
 										<button class="btn btn-default _forward_pricing">Buy Premium</button>
 									</div>

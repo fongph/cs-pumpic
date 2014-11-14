@@ -440,7 +440,7 @@ function smarty_function_features_plans( $_plans = array()  ) {
             ),
             'plans' => array(
                 'basic'     => ['status' => true, 'price' => '3 month - 3 months - $11.66/month'],
-                'premium'   => ['status' => false, 'price' => '3 months -$33.33/month'],
+                'premium'   => ['status' => true, 'price' => '3 months -$33.33/month'],
             ),
             'intro' => 'Block unwanted SMS senders so they will never again be able to reach the target phone user.<br />&nbsp;',
             'description' => array(
@@ -459,7 +459,7 @@ function smarty_function_features_plans( $_plans = array()  ) {
             ),
             'plans' => array(
                 'basic'     => ['status' => true, 'price' => '3 month - 3 months - $11.66/month'],
-                'premium'   => ['status' => false, 'price' => '3 months -$33.33/month'],
+                'premium'   => ['status' => true, 'price' => '3 months -$33.33/month'],
             ),
             'intro' => 'Identify current whereabouts of the tracked device on the map. Log into your Control Panel to access detailed route history.',
             'description' => array(
@@ -478,7 +478,7 @@ function smarty_function_features_plans( $_plans = array()  ) {
             ),
             'plans' => array(
                 'basic'     => ['status' => true, 'price' => '3 month - 3 months - $11.66/month'],
-                'premium'   => ['status' => false, 'price' => '3 months -$33.33/month'],
+                'premium'   => ['status' => true, 'price' => '3 months -$33.33/month'],
             ),
             'intro' => 'View all contacts within seconds. Access the address book remotely: names, phone numbers, emails etc.',
             'description' => array(
@@ -497,7 +497,7 @@ function smarty_function_features_plans( $_plans = array()  ) {
             ),
             'plans' => array(
                 'basic'     => ['status' => true, 'price' => '3 month - 3 months - $11.66/month'],
-                'premium'   => ['status' => false, 'price' => '3 months -$33.33/month'],
+                'premium'   => ['status' => true, 'price' => '3 months -$33.33/month'],
             ),
             'intro' => 'Keep track of all events put on the schedule. See what the tracked person plans to do and when. Follow tasks list.',
             'description' => array(
@@ -516,7 +516,7 @@ function smarty_function_features_plans( $_plans = array()  ) {
             ),
             'plans' => array(
                 'basic'     => ['status' => true, 'price' => '3 month - 3 months - $11.66/month'],
-                'premium'   => ['status' => false, 'price' => '3 months -$33.33/month'],
+                'premium'   => ['status' => true, 'price' => '3 months -$33.33/month'],
             ),
             'intro' => 'Go through browsing history of the tracked device. Check which websites were visited and what search engine queries were made.',
             'description' => array(
@@ -535,7 +535,7 @@ function smarty_function_features_plans( $_plans = array()  ) {
             ),
             'plans' => array(
                 'basic'     => ['status' => true, 'price' => '3 month - 3 months - $11.66/month'],
-                'premium'   => ['status' => false, 'price' => '3 months -$33.33/month'],
+                'premium'   => ['status' => true, 'price' => '3 months -$33.33/month'],
             ),
             'intro' => 'Log in to your Control Panel to see which websites were bookmarked. Check at what time the user of the tracked gadget accesses favorite websites.',
             'description' => array(
@@ -554,7 +554,7 @@ function smarty_function_features_plans( $_plans = array()  ) {
             ),
             'plans' => array(
                 'basic'     => ['status' => true, 'price' => '3 month - 3 months - $11.66/month'],
-                'premium'   => ['status' => false, 'price' => '3 months -$33.33/month'],
+                'premium'   => ['status' => true, 'price' => '3 months -$33.33/month'],
             ),
             'intro' => 'Every taken picture will be available to you. See what photos the tracked gadget user downloads from the Internet.',
             'description' => array(
@@ -573,7 +573,7 @@ function smarty_function_features_plans( $_plans = array()  ) {
             ),
             'plans' => array(
                 'basic'     => ['status' => true, 'price' => '3 month - 3 months - $11.66/month'],
-                'premium'   => ['status' => false, 'price' => '3 months -$33.33/month'],
+                'premium'   => ['status' => true, 'price' => '3 months -$33.33/month'],
             ),
             'intro' => 'Look through all sent and received emails. Access all available contact info on a sender and the recipient.',
             'description' => array(
@@ -592,7 +592,7 @@ function smarty_function_features_plans( $_plans = array()  ) {
             ),
             'plans' => array(
                 'basic'     => ['status' => true, 'price' => '3 month - 3 months - $11.66/month'],
-                'premium'   => ['status' => false, 'price' => '3 months -$33.33/month'],
+                'premium'   => ['status' => true, 'price' => '3 months -$33.33/month'],
             ),
             'intro' => 'Monitor each cell phone application that your children use and play, or your employees are distracted by.',
             'description' => array(
@@ -611,7 +611,7 @@ function smarty_function_features_plans( $_plans = array()  ) {
             ),
             'plans' => array(
                 'basic'     => ['status' => true, 'price' => '3 month - 3 months - $11.66/month'],
-                'premium'   => ['status' => false, 'price' => '3 months -$33.33/month'],
+                'premium'   => ['status' => true, 'price' => '3 months -$33.33/month'],
             ),
             'intro' => 'Block any websites and time-wasting applications from running on the target cell phone. Get detailed info on each app installed.',
             'description' => array(

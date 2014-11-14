@@ -9,13 +9,13 @@
 						<h3>COMPANY</h3>
 						<ul class="list_grey">
 							<li>
-                                                            <a href="#">Terms and conditions</a>
+                                                            <a href="/policy.html">Terms and conditions</a>
                                                         </li>
                                                         <li>
-                                                            <a href="#">Privacy Policy</a>
+                                                            <a href="/policy.html#privacy-policy">Privacy Policy</a>
                                                         </li>
                                                         <li>
-                                                            <a href="/policy.html">Refund policy</a>
+                                                            <a href="/policy.html#refund-policy">Refund policy</a>
                                                         </li>
                                                         <li>
                                                             <a href="/contact-us.html">Contact us</a>
@@ -46,7 +46,7 @@
 								<a href="#">Iphone software</a>
 							</li>
                                                         <li>
-								<a href="#">Bleckberry software</a>
+								<a href="#">Blackberry software</a>
 							</li>
                                                         <li>
 								<a href="#">SMS monitoring</a>

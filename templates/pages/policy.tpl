@@ -3,8 +3,7 @@
 
 	<title>Privacy Policy, Refunds, Terms & Conditions</title>
 	<meta name="description" content="Pumpic is a Mobile Phone Monitoring Application with limitless possibilities. Learn more about the legal policy of the software usage. Pumpic is for legitimate use only." />
-	<meta name="keywords" content="Privacy Policy, Refunds, Terms & Conditions"/>
-
+	
 {include file='../includes/wrap-title-footer.tpl'}
 <body>
 {include file='../includes/button-help.tpl'}
@@ -13,11 +12,11 @@
 		{include file='../includes/topmenu-logo-login.tpl' }
 		<div class="very_easy">
 			<div class="container">
-				<div class="row">
+				<div class="row box-anchor">
 					<div class="col-lg-10 col-lg-offset-1">
 						<div class="row">
 							<div class="col-lg-12">
-								<h2>REFUND POLICY</h2>
+								<h2 id="refund-policy">REFUND POLICY</h2>
 								<article>
 									<h3 class="text-center">PUMPIC APPLICATION</h3>
 									<p class="text-justify">Need to make sure your kids don’t mix with the wrong clique? Want to check whether your employees are loyal to their company? Pumpic can do all of this. It is a cross-platform tracking application designed to monitor cell phone and tablet activity of your children and employees. The innovative tracking solution from Pumpic will have all your doubts cleared out within a second.</p>
@@ -63,7 +62,7 @@ Other personal reasons (“I’ve changed my mind”, “I’ve made a purchase 
 									<p class="text-justify">You are required to send your refund request to our support department at support@pumpic.com. We do not accept refund requests made via our Live Chat, or by phone. The refund decision is usually made within one or two business days.</p>
 								</article>
 								<div class="row_top_border">
-									<h2>PRIVACY POLICY</h2>
+									<h2 id="privacy-policy">PRIVACY POLICY</h2>
 									<p class="text-justify text-success">
 										This Privacy Policy shows how Pumpic collects, uses, maintains and discloses all the data collected from all users (hereinafter referred to as “User” or “Users”) of pumpic.com website (hereinafter referred to as “Site”). This Privacy Policy applies to the Site and all the products and services provided and offered by Pumpic.com.
 									</p>

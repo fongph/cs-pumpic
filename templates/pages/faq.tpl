@@ -3,8 +3,7 @@
 
 	<title>Frequently asked questions about Pumpic</title>
 	<meta name="description" content="Pumpic is easy-to-use and user-friendly Cell Phone Tracking App. Learn our FAQ section to find answers to all Pumpic related issues. You can also send your questions to us." />
-	<meta name="keywords" content="Frequently asked questions about Pumpic"/>
-
+	
 {include file='../includes/wrap-title-footer.tpl'}
 <body>
 {include file='../includes/button-help.tpl'}
@@ -188,7 +187,7 @@
 												</div>
 											</li>
 											<li>
-												<a id="compatibility" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse25">Does the app need the Internet?/a>
+												<a id="compatibility" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse25">Does the app need the Internet?</a>
 												<div id="collapse25" class="collapse">
 													<p>The app itself does not need the Internet to do the monitoring. However, to transfer the collected data to your Control Panel, the target device needs to have Internet connection. Usually EDGE/3G Internet is enough, however, to transfer multimedia files you will need Wi-Fi.</p>
 												</div>
@@ -240,7 +239,7 @@
                                                                                         <li>
 												<a id="billing" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse31">What will I see in my bank statement?</a>
 												<div id="collapse31" class="collapse">
-													<p>Pumpic will appear in your bank statement as well as credit card as AVANGATE*MSECURITY</p>
+													<p>Pumpic will appear in your bank statement.</p>
 												</div>
 											</li>
                                                                                         

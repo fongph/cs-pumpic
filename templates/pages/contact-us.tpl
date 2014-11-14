@@ -3,8 +3,7 @@
 
 	<title>Share your thoughts with Pumpic</title>
 	<meta name="description" content="Pumpic is always open for any questions and suggestions, which will help improve the software. Feel free to get in touch via the online application form, email or 24/7 Customer Support Team." />
-	<meta name="keywords" content="Share your thoughts with Pumpic"/>
-
+	
 {include file='../includes/wrap-title-footer.tpl'}
 <body>
 {include file='../includes/button-help.tpl'}

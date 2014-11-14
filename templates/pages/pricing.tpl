@@ -3,8 +3,7 @@
 
 	<title>Pumpic Prices and Subscription Plans</title>
 	<meta name="description" content="Pumpic offers high-quality Cell Phone Tracking Software for a good price. Find out more about a price range and subscription plan types to choose the one suitable for your monitoring needs." />
-	<meta name="keywords" content="Pumpic Prices and Subscription Plans"/>
-
+	
 {include file='../includes/wrap-title-footer.tpl'}
 <body>
 {include file='../includes/button-help.tpl'}

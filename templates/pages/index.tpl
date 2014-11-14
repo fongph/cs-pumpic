@@ -3,8 +3,7 @@
 
 	<title>High-Grade Cell Phone Monitoring App – Pumpic</title>
 	<meta name="description" content="Pumpic is a new multifunction Parental Control and Employee Surveillance Application for your cell phone. Track locations, record environment, follow text messages and call logs remotely." />
-	<meta name="keywords" content="High-Grade Cell Phone Monitoring App – Pumpic"/>
-
+	
 {include file='../includes/wrap-title-footer.tpl'}
 <body>
 {include file='../includes/button-help.tpl'}
@@ -116,11 +115,11 @@
 						<div class="row">
 							<div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
 								<h3 class="text-center"><img src="{$img}/ico-stealth.png" alt=""> Use easily</h3>
-								<p class="text-center">Pumpic app is easy-to-install and use. It will not take you a lot of time to find out how it functions. Meanwhile all major guidelines and requirements are introduced in the installation manual instructions. Pumpic is ready to spy on right after the set-up is completed.</p>
+								<p class="text-center">Pumpic app is easy-to-install and use. It will not take you a lot of time to find out how it functions. Meanwhile all major guidelines and requirements are introduced in the installation manual instructions. Pumpic is ready to monitor on right after the set-up is completed.</p>
 							</div>
 							<div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
 								<h3 class="text-center"><img src="{$img}/ico-onthego.png" alt=""> On the go</h3>
-								<p class="text-center">Follow the guidelines and start cell phone monitoring from your Control Panel. Physical access is a must, meanwhile the installation process will not take you more than 5 minutes. After installation is completed, Pumpic cell phone tracking appl will start working in stealth mode.</p>
+								<p class="text-center">Follow the guidelines and start cell phone monitoring from your Control Panel. Physical access is a must, meanwhile the installation process will not take you more than 5 minutes. After installation is completed, Pumpic cell phone tracking app will start working.</p>
 							</div>
 							<div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
 								<h3 class="text-center"><img src="{$img}/ico-security.png" alt=""> Security</h3>

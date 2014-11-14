@@ -3,8 +3,7 @@
 
 	<title>Learn how to use Pumpic</title>
 	<meta name="description" content="Pumpic is easy-to-use and quick-to-install Mobile Phone Monitoring Software. It will not take you long to get used to its functions and even much less to run the app. Find out more about how to use Pumpic." />
-	<meta name="keywords" content="Learn how to use Pumpic"/>
-
+	
 {include file='../includes/wrap-title-footer.tpl'}
 <body>
 {include file='../includes/button-help.tpl'}

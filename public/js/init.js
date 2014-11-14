@@ -181,6 +181,44 @@
 
 })( jQuery ); 
 
+// anchor
+jQuery(function(){
+    jQuery(window).hashchange(function(){ 
+		if(document.location.hash == '') return;
+                var hash = location.hash.split('#');
+                if(hash.length > 1) {
+                    if($('.box-anchor #'+hash[1]).length)
+                        $('html, body').animate({scrollTop: $('.box-anchor #'+hash[1]).offset().top}, 800);
+                }
+                
+    });
+    jQuery(window).hashchange();
+});
+
+// toggleClicked
+jQuery.fn.clickToggle = function(a,b) {
+  var ab=[b,a];
+  function cb(){ ab[this._tog^=1].call(this); return false; }
+  return this.on("click", cb);
+};
+
+/*
+(function($) {
+    $.fn.clickToggle = function(func1, func2) {
+        var funcs = [func1, func2];
+        this.data('toggleclicked', 0);
+        this.click(function(event) {
+            event.preventDefault();
+            var data = $(this).data();
+            var tc = data.toggleclicked;
+            $.proxy(funcs[tc], this)();
+            data.toggleclicked = (tc + 1) % 2;
+            return false;
+        });
+        return this;
+    };
+}(jQuery));
+*/
 
 /*
  * parce url
@@ -249,29 +287,46 @@ $(document).ready(function(){
             'filters' : filters
         }).tabPumpic('show');
         console.log('end...');
+        
         return false;
     });
 
     // choose categoey
-    $('.list_category li a').on('click', function(event) {
-        event.preventDefault();
-        var _hash = $(this).attr('href').split('#');
-        
-        $.each($('.list_category li a'), function() {
-            if($(this).parent().hasClass('active'))
-                $(this).parent().removeClass('active');
-        }); // clear active
-        
-        $(this).parent().addClass('active');
-        
-        // all category hide;
-        $('.box_category ul li').hide();
-        
-        if(_hash.length > 1) {
-            $('.box_category ul li').find('#'+_hash[1]).parents('li').show();
-        }
-        
-        return true;
-    });
+     $('.list_category li a').on('click', function(event) {
+         event.preventDefault();
+         var _hash = $(this).attr('href').split('#');
+         
+         if($(this).parent().hasClass('active')) {
+             $(this).parent().removeClass('active');
+             $('.box_category ul li').show();
+         } else {
+             $.each($('.list_category li a'), function() {
+                if($(this).parent().hasClass('active'))
+                    $(this).parent().removeClass('active');
+             }); // clear active
+             
+             $(this).parent().addClass('active');
+             $('.box_category ul li').hide();
+             if(_hash.length > 1) {
+                $('.box_category ul li').find('#'+_hash[1]).parents('li').show();
+             }
+         }     
+         
+         return false;
+     });
+    
+    // якори
+    $('a.anchor').on("click", function(e){
+      e.preventDefault();  
+      var anchor = $(this).attr('href').split('#');
+      if(anchor.length > 1) {
+          $('html, body').stop().animate({
+            scrollTop: $('.box-anchor #'+anchor[1]).offset().top
+          }, 1000);
+      }
+      
+      
+      return false;
+   });
     
 });

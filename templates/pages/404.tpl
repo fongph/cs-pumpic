@@ -3,7 +3,6 @@
 
 	<title>SEO title for cellspy.org</title>
 	<meta name="description" content="Cellspy.org meta description" />
-	<meta name="keywords" content="parental control, employee monitoring"/>
 
 {include file='../includes/wrap-title-footer.tpl'}
 <body>

@@ -760,7 +760,7 @@ function smarty_function_features_plans( $_plans = array()  ) {
             foreach($_option['plans'] as  $_name_plan => $_item_plan) {
                 if($_item_plan['status']) $_use_plan[] = $_name_plan;
             }    
-        
+            $_data->assign('_id', $_id);
             $_data->assign('item_plan', implode('|', $_use_plan));
             $_data->assign($_option);
             $_html .= $smarty->fetch('features-plans.tpl', $_data);

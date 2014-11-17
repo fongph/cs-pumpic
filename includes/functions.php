@@ -76,13 +76,13 @@ function header404(){
 }
 
 
-function sendEmail($email, $subject, $text){
+function sendEmail($email, $subject, $text, $from = 'noreply@cellspy.org'){ // support
 	if(strlen($email) && strlen($text)){
 		$subject = "=?UTF-8?B?" . base64_encode($subject) . "?=";
 
 		$headers = 'MIME-Version: 1.0' . "\r\n" .
 		'Content-type: text/html; charset=UTF-8' . "\r\n" .
-		'From: cellspy <noreply@cellspy.org>' . "\r\n" .
+		'From: cellspy <'.$from.'>' . "\r\n" .
 		'X-Mailer: PHP/' . phpversion();
 
 		try{
@@ -380,7 +380,7 @@ function contact_us_send($params, $smarty) {
         $_params = array("{title}" => $title, "{body}" => $_body);
         $_text = strtr($_tmp, $_params);
         
-        sendEmail('support@pumpic.com', 'Contact US #pp '.$_id, $_text);
+        sendEmail('support@pumpic.com', 'Contact US #pp '.$_id, $_text, 'support@pumpic.com');
         
         return "You'r e-mail send OK!";
     }

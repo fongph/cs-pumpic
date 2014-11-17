@@ -45,8 +45,7 @@ Any purchase of Pumpic software at a discount price is non-refundable. No refund
 										<li>The customer does not have physical access to the target phone.</li>
 										<li>The customer didn’t receive previous data from the target device because Pumpic had not been installed at that time.</li>
 										<li>The target device uses Symbian Belle, Windows Phone OS, Bada OS or any other operating system, which is not listed on our Compatibility page.</li>
-										<li>The customer planned to use one Pumpic subscription plan on more than one target device.
-Other personal reasons (“I’ve changed my mind”, “I’ve made a purchase by mistake”, etc.).
+										<li>The customer planned to use one Pumpic subscription plan on more than one target device.<br />Other personal reasons (“I’ve changed my mind”, “I’ve made a purchase by mistake”, etc.).
 </li>
 										<li>The customer is either unable or unwilling to jailbreak the target iPhone. The refund is not issued if the jailbreak version is not yet available for the given iOS version (e.g. 7.1+).</li>
 										<li>The customer is either unable or unwilling to root the target Android device to obtain full functionality of the application, which includes viewing information from Google Chrome, IM activity, or emails.</li>

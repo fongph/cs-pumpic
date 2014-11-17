@@ -79,7 +79,7 @@
 												<a id="install" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse9">How to uninstall Pumpic?</a>
 												<div id="collapse9" class="collapse">
                                                                                                     <b>Uninstall the app on iOS:</b>
-                                                                                                    <p>Go to Cydia > Manage > Sources > Click on repo.gr1m.com (the Developer’s Repo) > Updated > Modify > Uninstall > Uninstall will be completed > Go to the Cydia once again > Manage > Sources > Edit > Click on “remove” Next to the Developer’s Repo.</p>
+                                                                                                    <p>Go to Cydia > Manage > Sources > Click on {*repo.gr1m.com*}apps.pumpic.com (the Developer’s Repo) > Updated > Modify > Uninstall > Uninstall will be completed > Go to the Cydia once again > Manage > Sources > Edit > Click on “remove” Next to the Developer’s Repo.</p>
                                                                                                     <b>Uninstall the app on Android:</b>
                                                                                                     <p>Go to Phone > Settings > Security > Device administrators > Uncheck the box next to the app > Get back to settings > Apps > com.android.system.telethony > Uninstall</p>
 												</div>
@@ -93,12 +93,12 @@
 											<li>
 												<a id="install" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse11">How to update Pumpic?</a>
 												<div id="collapse11" class="collapse">
-                                                                                                    <b>OS:</b>
+                                                                                                    <b>iOS:</b>
                                                                                                     <p>The app is updated automatically on iOS devices.</p>
                                                                                                     <b>BlackBerry and Android:</b>
                                                                                                     <ol>
                                                                                                         <li>Take the target device where the app is installed.</li>
-                                                                                                        <li>Open a web browser on the target phone and proceed to: gr1m.com. The app will start downloading automatically.</li> 
+                                                                                                        <li>Open a web browser on the target phone and proceed to: apps.pumpic.com. The app will start downloading automatically.</li> 
                                                                                                         <li>When it’s downloaded, open the Notification Panel (by swiping your finger from the top of the screen to the bottom) and click on the downloaded .apk file.</li> 
                                                                                                         <li>Agree with everything that pops up on the screen and click Install.</li> 
                                                                                                         <li>When the app is successfully updated, click “Done”.</li> 
@@ -144,12 +144,13 @@
 													<p>Pumpic is supported by the majority of smartphones and tablets. To make sure that your particular device model is compatible with the application, please visit our Compatibility page or contact our Customer Support Team.</p>
 												</div>
 											</li>
+                                                                                        {*
 											<li>
 												<a id="compatibility" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse18">How to jailbreak iOS?</a>
 												<div id="collapse18" class="collapse">
 													<p>Detailed instructions on how to jailbreak an iOS device can be found here. Note that all iOS devices have to be jailbroken before installing Pumpic.</p>
 												</div>
-											</li>
+											</li>*}
 											<li>
 												<a id="compatibility" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse19">Does jailbreak void warranty? Can I delete jailbreak from the target iOS device to restore warranty?</a>
 												<div id="collapse19" class="collapse">

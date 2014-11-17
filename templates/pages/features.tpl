@@ -52,7 +52,7 @@
 										</div>
 										<div class="col-lg-7 col-md-7">
 											<div class="dtd">
-												<h4 class="text-success">Reed the features info and choose a plan you need</h4>
+												<h4 class="text-success">Read short descriptions of each features and choose yhe plan that meets your needs entirely</h4>
 											</div>
 										</div>
 									</div>

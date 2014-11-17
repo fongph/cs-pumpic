@@ -2948,3 +2948,9 @@ span.btn-banner-yellow:active {
 .w16p {
     width: 16.3333% !important; /* 100 */
 }
+
+/* blog fix */
+.post h2 {
+    text-align: left;
+    margin: 0px;
+}

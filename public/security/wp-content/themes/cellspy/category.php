@@ -7,7 +7,7 @@
                 <div class="row">
                     <?php if ( have_posts() ) : ?>
                     
-                    <h2><a class="blog-link" href="#">BLOG</a></h2>
+                    <h2><a class="blog-link" href="/security/">BLOG</a></h2>
                     <div class="archive">
                         <span class="title"><?php printf( __( "All posts for '<i>%s</i>' category", 'cellspy' ), single_tag_title( '', false ) ); ?></span>
                     </div>

@@ -1,6 +1,6 @@
 <div class="row box-body-filters" attr-use-plan="{$item_plan}">
     <div class="col-lg-5 col-md-5 box-first">
-        <div class="dtd w30p">{$title}</div>
+        <div class="dtd w30p" {if $_id == 'viber-whatsapp-skype'} style="width: 16% !important;" {/if} >{$title}</div>
         <!-- dtd -->
         <div class="dtd box-filter-mobile w13p">
             {foreach from=$device key=k item=v}

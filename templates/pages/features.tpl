@@ -39,13 +39,18 @@
 											<!-- dtd -->
 										</div>
 										<div class="col-lg-7 col-md-7">
-											<h3 class="lg_dheader">about</h3>
+                                                                                        <h3>about</h3> <!-- class="lg_dheader" --> 
+                                                                                        <div class="dth h47">
+												<h4 class="text-success">Read a short description of each feature and choose the plan that meets your needs.<br /></h4>
+											</div>
+                                                                                    
+											{*<h3 class="lg_dheader">about</h3>*}
 										</div>
 									</div>
 									<!-- row -->
 								</div>
 								<!-- dhead -->
-								<div class="dtitle">
+								{*<div class="dtitle">
 									<div class="row">
 										<div class="col-lg-5 col-md-5">
 											<div class="dtd">&nbsp;</div> <!-- Basic -->
@@ -57,7 +62,7 @@
 										</div>
 									</div>
 									<!-- row -->
-								</div>
+								</div>*}
 								<div class="dbody">
                                                                     {features_plans}
 								</div>

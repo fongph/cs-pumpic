@@ -2897,8 +2897,12 @@ span.btn-banner-yellow:active {
     font-size: 12px;
 }
 
+.box-plans {
+    color: #4f4e56;
+}
+
 .box-plans.active { 
-    color: #4f4e56 !important;
+    color: #16a89e !important;
 }
 
 .supported { // , .supported:hover
@@ -2953,4 +2957,8 @@ span.btn-banner-yellow:active {
 .post h2 {
     text-align: left;
     margin: 0px;
+}
+
+.h47 {
+    height: 47px !important;
 }

@@ -44,13 +44,13 @@
 												<input name="name" type="text" class="form-control" placeholder="Name*">
 											</div>
 											<div class="form-group">
-												<input name="email" type="email" class="form-control" placeholder="e-mail*">
+												<input name="email" type="email" class="form-control" placeholder="E-mail*">
 											</div>
 											<div class="form-group">
 												<select class="select" name="os">
-													<option value="iOS">iOS</option>
+													<option value="iOS">IOS</option>
 													<option value="Android">Android</option>
-													<option value="blackberry">blackberry</option>
+													<option value="blackberry">BlackBerry</option>
 												</select>
 											</div>
 											<div class="form-group">

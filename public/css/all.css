@@ -2962,3 +2962,8 @@ span.btn-banner-yellow:active {
 .h47 {
     height: 47px !important;
 }
+
+.text-link {
+    font-size: 14px !important;
+    display: inline-block !important;
+} 

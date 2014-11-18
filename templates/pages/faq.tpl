@@ -72,7 +72,7 @@
 											<li>
 												<a id="install" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse8">How to install Pumpic?</a>
 												<div id="collapse8" class="collapse">
-                                                                                                    <p>Installation is very easy and stress-free. Here you will find detailed and stepwise installation instructions. If you run into difficulties, feel free to contact our Customer Support Team for help.</p>
+                                                                                                    <p>Installation is very easy and stress-free. <a class="text-link" href="#">Here</a> you will find detailed and stepwise installation instructions. If you run into difficulties, feel free to contact our Customer Support Team for help.</p>
 												</div>
 											</li>
 											<li>
@@ -126,7 +126,7 @@
 											<li>
 												<a id="install" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse15">How to jailbreak iOS?</a>
 												<div id="collapse15" class="collapse">
-													<p>Detailed instructions on how to jailbreak an iOS device can be found here. Note that all iOS devices have to be jailbroken before installing Pumpic.</p>
+													<p>Detailed instructions on how to jailbreak an iOS device can be found <a class="text-link" href="#">here</a>. Note that all iOS devices have to be jailbroken before installing Pumpic.</p>
 												</div>
 											</li>
 											<li>
@@ -166,7 +166,7 @@
 											<li>
 												<a id="compatibility" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse21">How to root Android?</a>
 												<div id="collapse21" class="collapse">
-                                                                                                    <p>Detailed instructions on how to root an Android device can be found here. Note that Android devices do not require rooting to run Pumpic. However, one should root the target device to get full access to all Pumpic features.</p>
+                                                                                                    <p>Detailed instructions on how to root an Android device can be found <a class="text-link" href="#">here</a>. Note that Android devices do not require rooting to run Pumpic. However, one should root the target device to get full access to all Pumpic features.</p>
 												</div>
 											</li>
 											<li>
@@ -198,7 +198,7 @@
 											<li>
 												<a id="billing" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse26">How much do Pumpic Basic and Pumpic Premium cost?</a>
 												<div id="collapse26" class="collapse">
-													<p>To get current information on prices, please visit our Pricing page or contact our Customer Support Team.</p>
+													<p>To get current information on prices, please visit our <a class="text-link" href="#">Pricing page</a> or contact our Customer Support Team.</p>
 												</div>
 											</li>
 											<li>
@@ -220,7 +220,7 @@
 											<li>
 												<a id="billing" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse28">Is it possible to get a refund?</a>
 												<div id="collapse28" class="collapse">
-													<p>Pumpic users can request a refund, if their reasons for doing so comply with our Refund policy conditions. You can email your refund request to our Customer Support Team and explain in details why, in your opinion, you qualify for a refund. Our Dispute Manager will get back to you in the shortest time possible.</p>
+													<p>Pumpic users can request a refund, if their reasons for doing so comply with our <a class="text-link" href="#">Refund policy conditions</a>. You can email your refund request to our Customer Support Team and explain in details why, in your opinion, you qualify for a refund. Our Dispute Manager will get back to you in the shortest time possible.</p>
 												</div>
 											</li>
 											<li>
@@ -292,7 +292,7 @@
 													<input type="text" class="form-control" placeholder="Name*">
 												</div>
 												<div class="form-group">
-													<input type="email" class="form-control" placeholder="e-mail*">
+													<input type="email" class="form-control" placeholder="E-mail*">
 												</div>
 												<div class="form-group">
 													<textarea rows="10" placeholder="question*"></textarea>

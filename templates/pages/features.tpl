@@ -41,7 +41,7 @@
 										<div class="col-lg-7 col-md-7">
                                                                                         <h3>about</h3> <!-- class="lg_dheader" --> 
                                                                                         <div class="dth h47">
-												<h4 class="text-success">Read a short description of each feature and choose the plan that meets your needs.<br /></h4>
+												<h4 class="text-success">Read a short description of each feature and choose the plan that meets your needs entirely.<br /></h4>
 											</div>
                                                                                     
 											{*<h3 class="lg_dheader">about</h3>*}

@@ -244,6 +244,7 @@ select.form-control option {
 
 .text-success {
   color: #16a89e;
+  font-size: 14px;
 }
 
 .text-danger {

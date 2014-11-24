@@ -251,7 +251,7 @@
 													<select class="select_inverse">
 														<option value="">3 month $99.99</option>
 														<option value="">6 month $199.98</option>
-														<option value="">12 month $399.96/option>
+														<option value="">12 month $399.96</option>
 													</select>
 												</div>
 												<div class="_limits">

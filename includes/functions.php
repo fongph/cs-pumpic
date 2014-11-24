@@ -1,6 +1,14 @@
 <?php
 function dispatch($urlParams, $config){
       
+        // fix url
+        if(is_array($urlParams['uriArr']) 
+                and count($urlParams['uriArr']) > 0
+                and in_array('compatibility', $urlParams['uriArr'])) {
+            $urlParams['uriArr'] = array( array_shift($urlParams['uriArr']) );
+        }
+        
+        
 	if(isset($config['php_compile'][$urlParams['uri']])){
 		include $config['php_compile'][$urlParams['uri']];
 	}else{
@@ -24,12 +32,14 @@ function dispatch($urlParams, $config){
 			$smarty->registerPlugin("function","year_now","print_current_year");
                         
                         $smarty->registerPlugin("function","contactusSend","contact_us_send"); // validate form contact_us
-			
+                        
 			$smarty->assign("domain",$config['domain']);
 			$smarty->assign("domain_http",$config['domain_http']);
 			$smarty->assign("img",$config['path_img']);
 			$smarty->assign("css",$config['path_css']);
-			$smarty->assign("js",$config['path_js']);		
+			$smarty->assign("js",$config['path_js']);
+                        
+                        $smarty ->assign('api_device', $config['api_device']);
 
 			$smarty->display($path['tpl']);
 
@@ -341,6 +351,7 @@ function print_current_year($params, $smarty)
   return strftime($format,time());
 }
 
+
 /*
  * Contact US (send form and validater)
  */
@@ -384,6 +395,73 @@ function contact_us_send($params, $smarty) {
         
         return "You'r e-mail send OK!";
     }
+}
+
+function stdToArray($obj){
+  $rc = (array)$obj;
+  foreach($rc as $key => &$field){
+    if(is_object($field))$field = stdToArray($field);
+  }
+  return $rc;
+}
+
+/*
+ * Compatibility device
+ */
+function smarty_function_compatibilityDevice($params, $template) {
+    require_once 'lib/Curl.php';
+    
+     $_settings = array(
+         'api'          => false,
+        'title'         => 'Title Device',
+        'description'   => 'Descriptions!',
+        '_item'         => false,
+        '_error'        => false, 
+    );
+    
+    $_curl = new Curl();
+    $_post = array(
+        'getModel' => $_GET['model'],
+    );
+    
+    
+    if(isset($params['api']['host']) and !empty($params['api']['host'])) {
+        $_settings['api'] = $params['api'];
+        $_curl-> get($params['api']['host'], $_post);
+    }    
+    
+    $_respons = array();
+    if(is_object($_curl->response))
+        $_respons = stdToArray($_curl->response); 
+    else if(is_array($_curl->response))
+        $_respons = $_curl->response;
+    
+    if(is_array($_respons) and count($_respons) > 0) {
+            // parce path img
+            if(isset($_respons['img']) and !empty($_respons['img'])) {
+                $_img = explode('/',$_respons['img']);
+                $_file_name = explode('.', $_img[count($_img) - 1]);
+                $_respons['img'] = 'middle/'.$_file_name[0].'_medium.'.$_file_name[1];
+            } else 
+                $_respons['img'] = '';
+        
+            $_set = array(
+                'title' => $_respons['name'],
+                'description' => $_respons['name'],
+                '_item' => (array)$_respons
+            );
+            
+            $_settings = array_merge($_settings, $_set);
+                
+    } else {
+        header("Location: /404.html");
+        exit;
+        //$_settings['error'] = ($_curl->error) ? $_curl->error: 'This page is temporarily unavailable!';
+    }
+        
+    
+    // init output params!
+    $template->assign($params['out'], $_settings);
 }
 
 /*

@@ -1290,6 +1290,9 @@ select.form-control option {
 .thumbnail .caption {
   color: #747474;
   background: #ebebeb;
+  
+  height: 100px;
+  overflow: hidden;
 }
 .thumbnail .caption h3 {
   font-size: 16px;
@@ -2426,17 +2429,21 @@ article img.pull-right {
 .pagination li:last-child a {
   border-radius: 50%;
 }
-.pagination li.active a {
+.pagination li.active a,
+.pagination li.active span
+{
   border: none;
   color: #747474;
   background: none;
 }
-.pagination li:hover a {
+.pagination li:hover a,
+.pagination li:hover span{
   border-color: #1baaa0;
   color: #747474;
   background: none !important;
 }
-.pagination li:hover a:hover {
+.pagination li:hover a:hover,
+.pagination li:hover span:hover {
   color: #747474;
   background: none !important;
 }
@@ -2448,7 +2455,9 @@ article img.pull-right {
   background: transparent;
   border-color: #1baaa0;
 }
-.pagination li span {
+.pagination li span,
+.pagination li.disabled span,
+.pagination li.disabled:hover span{
   border: none;
   float: none;
   color: #747474;
@@ -2968,3 +2977,23 @@ span.btn-banner-yellow:active {
     font-size: 14px !important;
     display: inline-block !important;
 } 
+
+.form-search {
+    width: 100%;
+}
+
+/* -------// tooltip ----- */
+.mobile_tooltip {
+    cursor: default;
+}
+#easyTooltip{
+    padding: 10px;
+    border: 1px solid #61636e;
+    background: #4d4f5b;
+        -webkit-box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.75);
+        -moz-box-shadow:    0px 0px 10px 0px rgba(50, 50, 50, 0.75);
+    box-shadow:         0px 0px 10px 0px rgba(50, 50, 50, 0.75);
+    color: #16a89e;
+    font-size: 15px;
+    width: 200px;
+}

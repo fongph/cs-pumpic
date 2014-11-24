@@ -23,6 +23,16 @@
             return $(this);
         }, // set init
         
+        _clearCach: function(key) {
+            if(key) {
+                jQuery.data( window, key, false);
+            } else {
+                jQuery.data( window, '_result', false);
+                jQuery.data( window, '_plans', false);
+                jQuery.data( window, '_mobile', false);
+            }    
+                
+        },
         _cach: function(params, key) {
             key = (!key) ? "_result" : key;
             if(params) {
@@ -45,8 +55,11 @@
                });
                
                methods._cach(_res, "_plans");
-            } else 
+            } else {
+                methods._clearCach('_plans');
                 console.log('Not enter filters Plans (*settings)!');
+            }
+                
            
         }, // set plans filters
         
@@ -80,8 +93,11 @@
                 }
                 
                 methods._cach(_res, "_mobile");
-            } else
+            } else {
+                methods._clearCach('_mobile');
                 console.log('Not enter filters mobile (*settings)!');
+            }
+                
         }, // set mobile filters
         _run : function( obj ) {
              if(!obj.length) {
@@ -93,6 +109,7 @@
              
              methods._plans(); // detected plans
              $_result._plans = methods._cach(false, "_plans"); // get params plans in cache
+             
              if(typeof $_result._plans === "undefined") console.log('Not enter plans filters!');
              methods._mobile(); // detected filters mobile
              $_result._mobile = methods._cach(false, "_mobile"); // get params mobile in cache
@@ -102,20 +119,22 @@
         
         _visible: function( arr_index ) {
             if($this.length > 0) {
-                if(typeof arr_index._plans !== "undefined") {
+                if(typeof arr_index._plans !== "undefined" && arr_index._plans.length > 0) {
                     $.each($this, function(key, item_obj) {
                         var $_item = $(item_obj);
-                        
-                        // set plans
-                        if($.inArray($_item.index(), arr_index._plans) != -1) {
-                            if($_item.hasClass('hide'))
-                                $_item.removeClass('hide');
-                            $_item.addClass('show');
-                        } else {
-                            if($_item.hasClass('show'))
-                                $_item.removeClass('show')
-                            $_item.addClass('hide');
+                        if(arr_index._plans.length > 0) {
+                            // set plans
+                            if($.inArray($_item.index(), arr_index._plans) != -1) {
+                                if($_item.hasClass('hide'))
+                                    $_item.removeClass('hide');
+                                $_item.addClass('show');
+                            } else {
+                                if($_item.hasClass('show'))
+                                    $_item.removeClass('show')
+                                $_item.addClass('hide');
+                            }
                         }
+                        
                     }); // show/hide elements plans
                     
                     // filter mobile in plans
@@ -137,8 +156,10 @@
                     
                 } // filters plans
                 
-                if(!arr_index._plans 
-                        && typeof arr_index._mobile !== "undefined") {
+                else if(!arr_index._plans.length 
+                        && typeof arr_index._mobile !== "undefined"
+                        && arr_index._mobile.length > 0) {
+                    
                     $.each($this, function(key, item_obj) {
                         var $_item = $(item_obj);
                         if($.inArray($_item.index(), arr_index._mobile) != -1) {
@@ -152,6 +173,15 @@
                         }
                     });    
                 } // all mobile filters
+                 else {
+                     
+                      $.each($this, function(key, item_obj) {
+                          var $_item = $(item_obj);
+                          if($_item.hasClass('hide'))
+                                $_item.removeClass('hide');
+                            $_item.addClass('show');
+                      });
+                 }
                 
             }
         },
@@ -187,8 +217,9 @@ jQuery(function(){
 		if(document.location.hash == '') return;
                 var hash = location.hash.split('#');
                 if(hash.length > 1) {
-                    if($('.box-anchor #'+hash[1]).length)
-                        $('html, body').animate({scrollTop: $('.box-anchor #'+hash[1]).offset().top}, 800);
+                    // if($('.box-anchor #'+hash[1]).length)
+                    //if(typeof $('.box-anchor #'+hash[1]) == "object")
+                    //    $('html, body').animate({scrollTop: $('.box-anchor #'+hash[1]).offset().top}, 800);
                 }
                 
     });
@@ -246,6 +277,106 @@ function clickActive(obj, _this) {
     }
 }
 
+/*
+ * parce string serilize
+ **/
+function parseQuery( str ) {
+    var data = {};
+    if(typeof str == 'string') {
+        var pair = (str).split('&');
+        for(var i = 0; i < pair.length; i ++) {
+            var param = pair[i].split('=');
+            data[param[0]] = param[1];
+        }
+    } else if(typeof str == 'object') {
+        $.each(str, function(_k, _val) {
+            if(_val.name)
+                data[ _val.name ] = (_val.value) ? _val.value : null;
+        });
+    }
+    return data;
+}
+
+
+/*
+ * Ajax function.
+ * return json result
+ **/
+function getAjaxForm(path, params, options) {
+  
+    if(!options) options = {};
+    
+    var settings = $.extend( {
+        'dataType': 'json',
+        'async': false,
+        'crossDomain': false,
+        'type': 'POST',
+        'cache': true
+    }, options || {});
+    
+    console.log( settings );
+    
+    if(!path) {
+        console.log('enter url AJAX!');
+        return null;
+    }
+    var res = $.ajax({
+                    url: path,
+                    dataType: settings.dataType,
+                    async: settings.async,
+                    crossDomain: settings.crossDomain,
+                    type: settings.type,
+                    cache: settings.cache,
+                    success: function() {
+                        
+                    },
+                    complete: function(){
+                    },
+                    data: {
+                        params: params 
+                    }
+		}).responseText;
+                
+    console.log(res);            
+                
+    res = eval('['+res+']');
+    obj = res[0];
+    return obj;
+}
+
+/*
+ * 
+ * @param {type} $_msg
+ * @returns {undefined}
+ */
+function getJsonp( _data ) {
+    if(typeof _data != 'object') {
+        die('Data not object!');
+        return;
+    }    
+    var baseUrl = "http://a.pumpic.dev/index.php";
+    return $.ajax({ 
+        type: "GET",
+        async: false,
+        url: baseUrl,
+        data:_data,
+        dataType: "jsonp",
+        jsonp: "callback",
+        crossDomain: true
+    });
+    
+}
+
+
+/*
+ * Display error massenge
+ * @param {type} $_msg
+ * @returns {undefined}
+ */
+function die( $_msg ) {
+    console.log( $_msg );
+}
+
 $(document).ready(function(){ 
     $.data( window, "filters", false); // init clear cache
     
@@ -263,20 +394,32 @@ $(document).ready(function(){
         filters = (!$.data( window, "filters")) ? filters : $.data( window, "filters");
         var _rel  = $(this).attr('rel');
         
-        if($(this).is('.box-plans')) {
-            clickActive('.box-plans', $(this));
-            filters.plans = _rel;
-        } else if( $(this).is('.box-phone') ) {
-            clickActive('.box-phone', $(this));
-            // clear all params (after click in mobile)
-            for(key in filters.mobile) {
-                filters.mobile[key] = false;
+        if($(this).hasClass('active')) {
+            $(this).removeClass('active');
+            
+            if($(this).is('.box-plans')) {
+                filters.plans = false;
+            } else if( $(this).is('.box-phone') ) {
+                for(key in filters.mobile) {
+                    filters.mobile[key] = false;
+                }
             }
             
-            if(typeof filters.mobile[_rel] !== "undefined")
-                filters.mobile[_rel] = true;
+        } else {
+            if($(this).is('.box-plans')) {
+                clickActive('.box-plans', $(this));
+                filters.plans = _rel;
+            } else if( $(this).is('.box-phone') ) {
+                clickActive('.box-phone', $(this));
+                // clear all params (after click in mobile)
+                for(key in filters.mobile) {
+                    filters.mobile[key] = false;
+                }
+
+                if(typeof filters.mobile[_rel] !== "undefined")
+                    filters.mobile[_rel] = true;
+            }
         }
-       
         
         console.log( 'save cashe filter...' );
         $.data( window, "filters", filters); // save in result locale cache
@@ -328,5 +471,92 @@ $(document).ready(function(){
       
       return false;
    });
+   
+   
+   // compatibility_form
+      $('form[name="send_find_phone"]').on('submit', function(event) {
+          event.preventDefault();
+          
+          if($(this).find('.box-error').length)
+            $(this).find('.box-error').html('');// clear all errors
+          
+          var $form = $(this);
+          var _error = {};
+          var _params = parseQuery($form.serializeArray());
+          
+          // console.log( _params );
+          
+          // validate params
+          if($(_params).length) {
+              $.each(_params, function(key, value) {
+                  if(!value) {
+                      _error[key] = 'Please enter at least do not be!';
+                  } 
+                      
+              });
+          } 
+          
+          // go ajax
+          if(Object.keys(_error).length) {
+              $.each(_error, function(name, text) {
+                  var _obj = $form.find('input[name="'+name+'"]');
+                  if(_obj.length) {
+                      _obj.next().append( '<p class="bg-danger">'+ text +'</p>' );
+                  }
+              });
+          } else {
+              var _response = getAjaxForm('/compatibility_send.html', _params);
+              if(_response.result) {
+                  var _res = _response.result;
+                  if(_res.error) {
+                      $.each(_res.error, function(name, text) {
+                          var _obj = $form.find('input[name="'+name+'"]');
+                          if(_obj.length) {
+                              _obj.next().append( '<p class="bg-danger">'+ text +'</p>' );
+                          }
+                      });
+                  } else if(_res.success) {
+                      alert(_res.success);
+                      
+                  } else
+                      console.log('System error!');
+                  
+              } else
+                  console.log('Can not get params in ajax!');
+          }
+          
+          $form.trigger("reset"); // clear form
+          
+          return false;
+      }); 
+  
+  
+   // compatibility search
+   $('.form-search').on('submit', function(e) {
+       e.preventDefault();
+       $(this).PumpicList();
+       return false;
+   });
+   
+   $('.search-category').on('click', function(e) {
+       e.preventDefault();
+       var _os = $(this).attr('attr_os'); 
+       if( _os) {
+           $.fn.PumpicList('search', {
+               'search_method': 'getPhonesByOS',
+               '_method': 'getCountOS',
+               '_query': _os
+           });
+       }
+       
+       return false;
+   });
+   
+   // compatibility tooltip in device
+   if($('.mobile_tooltip').length) {
+       $('.mobile_tooltip').easyTooltip();
+   }
+   
+   
     
 });

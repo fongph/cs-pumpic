@@ -20,7 +20,13 @@
         <script src="{$js}/jquery.ba-hashchange.min.js"></script>
         <script src="{$js}/jquery.total-storage.min.js"></script>
         
+        <!-- tool tip -->
+        <script src="{$js}/easyTooltip.js"></script>
+        <!-- pagination -->
+        <script src="{$js}/jquery.simplePagination.js"></script>
+        
         <!-- init -->
+        <script src="{$js}/search.js"></script>
         <script src="{$js}/init.js"></script>
 {/strip}
 {include file='../includes/analytics-header.tpl'}	

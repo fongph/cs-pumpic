@@ -19,8 +19,14 @@ $config = array(
 	'path_js' => '/js',
 	'path_css' => '/css',
 		
+        'api_device' => array(
+            '_domain' => 'a.pumpic.dev',
+            'path_img' => 'compatibility',
+            'host' => 'http://a.pumpic.dev/index.php'
+         ),
+    
 	'php_compile' => array(
-		'order.html' => 'script.inc'
+		'compatibility_send.html' => 'compatibility_form.php'
 	)
 );
 

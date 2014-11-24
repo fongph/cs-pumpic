@@ -1,12 +1,11 @@
 RewriteEngine on
 RewriteBase /
-RewriteCond %{HTTP_HOST} ^www\.cellspy
-RewriteRule ^(.*)$ http://cellspy/$1 [NC,R=301,L]
+RewriteCond %{HTTP_HOST} ^www\.pumpic\.com
+RewriteRule ^(.*)$ http://pumpic.com/$1 [NC,R=301,L]
+
+RewriteRule ^compatibility/(.+)$ compatibility/?model=$1 [L]
 
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 
 RewriteRule (.*) index.php
-
-
-

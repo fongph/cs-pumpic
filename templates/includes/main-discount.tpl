@@ -11,7 +11,7 @@
                                        </div> 
                                            
                                        <div class="box-disc-item box-form-discount left">
-                                           <form id="form-discount" action="/openig-soon-thanks.html" method="POST" class="form-discount">
+                                           <form id="form-discount" action="/opening-soon-thanks.html" method="POST" class="form-discount">
                                                <input type="text" placeholder="Name*" name="discount[name]" value="" class="text required" id="name" minlength="4" />
                                                <label for="name" class="error">Not enter name</label>
                                                <input id="email" type="email" name="discount[email]" class="text required email" placeholder="e-mail*" value="" />

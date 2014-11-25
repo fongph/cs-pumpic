@@ -9,10 +9,10 @@ class CDb {
 
     # @array,  The database settings
     private $settings = array(
-        'dbname'    => 'pumpic',
-        'host'      => 'localhost',
-        'user'      => 'root',
-        'password'  => 'password'
+        'dbname'    => 'pumpic_blog',
+        'host'      => '188.40.64.2',
+        'user'      => 'pumpic_blog_user',
+        'password'  => '57ge8j9SNg9EkhryWA3KV9ZB9NUue6'
     );
 
     # @bool ,  Connected to the database

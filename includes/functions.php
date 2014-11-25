@@ -480,7 +480,7 @@ function saveDB( $_params ) {
    endforeach;
     
     $_pdo = new CDb();
-    $_res = $_pdo -> query("SELECT `id` FROM `mail` WHERE `to` = '".  mysql_escape_string( trim($_params['to']) )."'");
+    $_res = $_pdo -> query("SELECT `id` FROM `subscription_mail` WHERE `to` = '".  mysql_escape_string( trim($_params['to']) )."'");
 
     
     if(is_array($_res) and count($_res) > 0) {
@@ -490,7 +490,7 @@ function saveDB( $_params ) {
         $_from = ($_setParams['from']) ? $_setParams['from'] : "no-reply@pumpic.com";
         $_subject = ($_setParams['subject']) ? $_setParams['subject'] : "No subject create!";
         
-        $_sql = "INSERT INTO `mail` SET `to` = '".$_setParams['to']."',
+        $_sql = "INSERT INTO `subscription_mail` SET `to` = '".$_setParams['to']."',
                 `from` = '".$_from."',
                 `body` = '".serialize(mysql_escape_string($_setParams['body']))."',
                 `subject` = '".$_subject."',
@@ -551,7 +551,7 @@ function smarty_function_openigsoonSendMail($params, $template) {
 
             if(!saveDB( array('to' => $_form_discount['email'],
                               'from' => false,
-                              'body' => $_text,
+                              'body' => false,
                               'subject' => $title,
                               'name' => $_form_discount['name'])) ) {
                 $_result['_error'] = "Not validate email address!";

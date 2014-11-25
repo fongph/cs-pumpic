@@ -477,6 +477,9 @@ $(document).ready(function(){
       $('form[name="send_find_phone"]').on('submit', function(event) {
           event.preventDefault();
           
+          if($('form[name="send_find_phone"] span.info').length)
+              $('form[name="send_find_phone"] span.info').html( " " );
+          
           if($(this).find('.box-error').length)
             $(this).find('.box-error').html('');// clear all errors
           
@@ -516,7 +519,9 @@ $(document).ready(function(){
                           }
                       });
                   } else if(_res.success) {
-                      alert(_res.success);
+                      $('form[name="send_find_phone"] span.info').html( "Your email has been successfully sent" );
+                      
+                      // alert(_res.success);
                       
                   } else
                       console.log('System error!');

@@ -82,6 +82,7 @@
                                                                                 <legend>
                                                                                     CAN’T FIND YOUR PHONE HERE?<span>LET’S CHECK IF IT IS COMPATIBLE:</span>
                                                                                 </legend>
+                                                                                <span class="info"></span>
                                                                                 <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3">
                                                                                         <div class="form-group">
                                                                                                 <input type="text" 

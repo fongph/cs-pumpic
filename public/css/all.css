@@ -3352,3 +3352,5 @@ span.btn-banner-yellow:active {
     font-size: 17px;
 }
 
+.hide { display: none; }
+.show { display: block; }

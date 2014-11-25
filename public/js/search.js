@@ -304,7 +304,7 @@
                 .done(function(data, textStatus, jqXHR) {
                     if(textStatus == 'success') {
                         if(data.count > 0) {
-                            methods._die( data.count );
+                            // methods._die( data.count );
                             // generate pages
                             methods.pageItems.call(this, {
                                 '_method': 'getPhonesByQuery',
@@ -317,9 +317,10 @@
                             } );
                             
                         } else 
-                            methods._die('Empty result!');
+                            $('#log').html('Sorry, no results found. If you have any questions please contact our support team via <br /> support@pumpic.com');
+                            // methods._die('Empty result!');
                     
-                        methods._die(data.count);
+                        // methods._die(data.count);
                     } else {
                         alert('Error success!')
                     }
@@ -346,7 +347,9 @@
         
         // __destruct
         destroy: function(){
-            
+            // clear log
+            if($('#log').length)
+                $('#log').html('');
             // clear box result
             if($($_settings.boxResult).length)
                 $($_settings.boxResult).html('');

@@ -557,6 +557,16 @@ $(document).ready(function(){
        $('.mobile_tooltip').easyTooltip();
    }
    
+   // scroll (fly-box)
    
+   if($('.fly-box').length) {
+       $('.fly-box').scrollPumpic({ 'start': 1000, 'stop': 0 }); //"coeff":1.15
+   }
+   
+   // validate form
+   if($("#form-discount").length) {
+       $("#form-discount").validate();
+   }
+    
     
 });

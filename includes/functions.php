@@ -9,6 +9,7 @@ function dispatch($urlParams, $config){
         }
         
         
+        
 	if(isset($config['php_compile'][$urlParams['uri']])){
 		include $config['php_compile'][$urlParams['uri']];
 	}else{
@@ -86,13 +87,13 @@ function header404(){
 }
 
 
-function sendEmail($email, $subject, $text, $from = 'noreply@cellspy.org'){ // support
+function sendEmail($email, $subject, $text, $from = 'no-reply@pumpic.com'){ // support
 	if(strlen($email) && strlen($text)){
 		$subject = "=?UTF-8?B?" . base64_encode($subject) . "?=";
 
 		$headers = 'MIME-Version: 1.0' . "\r\n" .
 		'Content-type: text/html; charset=UTF-8' . "\r\n" .
-		'From: cellspy <'.$from.'>' . "\r\n" .
+		'From: pumpic <'.$from.'>' . "\r\n" .
 		'X-Mailer: PHP/' . phpversion();
 
 		try{
@@ -462,6 +463,109 @@ function smarty_function_compatibilityDevice($params, $template) {
     
     // init output params!
     $template->assign($params['out'], $_settings);
+}
+
+/*
+ * openig soon send mail
+ */
+function saveDB( $_params ) {
+    require_once 'lib/CDb.php';
+    $_setParams = array();
+    
+    if(!isset($_params['to']))
+        return false;
+    
+   foreach($_params as $_name => $_value) :
+       $_setParams[ $_name ] = htmlspecialchars( trim($_value) );
+   endforeach;
+    
+    $_pdo = new CDb();
+    $_res = $_pdo -> query("SELECT `id` FROM `mail` WHERE `to` = '".  mysql_escape_string( trim($_params['to']) )."'");
+
+    
+    if(is_array($_res) and count($_res) > 0) {
+        return false;
+    } else {
+        
+        $_from = ($_setParams['from']) ? $_setParams['from'] : "no-reply@pumpic.com";
+        $_subject = ($_setParams['subject']) ? $_setParams['subject'] : "No subject create!";
+        
+        $_sql = "INSERT INTO `mail` SET `to` = '".$_setParams['to']."',
+                `from` = '".$_from."',
+                `body` = '".serialize(mysql_escape_string($_setParams['body']))."',
+                `subject` = '".$_subject."',
+                `name` = '".$_setParams['name']."'";
+        $_pdo -> query($_sql);
+        
+        return true;
+    }
+    
+}
+
+function smarty_function_openigsoonSendMail($params, $template) {
+    $_result = array(
+        '_error' => false,
+        '_success' => false,
+    );
+    
+    $_id = rand(0, 9000000);
+    if(isset($params['post']['discount']) and !empty($params['post']['discount'])) {
+        $_form_discount = $params['post']['discount'];
+        
+        
+        
+        if(!validateEmail($_form_discount['email'])) {
+            $_result['_error'] = "Not validate email address!";
+        } else {
+            
+            
+            $title = "Openig Soon Thanks";
+//        $_body = "<table>";
+//        
+//        if(isset($_form_discount['name']))
+//            $_body .= "<tr><td>Name:</td><td>".$_form_discount['name']."</td></tr>";
+//        if(isset($_form_discount['email']))
+//            $_body .= "<tr><td>Email:</td><td>".$_form_discount['email']."</td></tr>";
+//        
+//        $_body .= "</table>";
+        
+            $_body = "<h2>Greetings!</h2><br />
+                      <p>Thank you for your interest in using pumpic.com products. 
+                      The discount of 50% was sent to your email address. As soon as we launch our product, 
+                      you will <br /> receive the confirmation email, stating that you can use both the product and the discount. 
+                      If you have any further questions, please, contact our customer support<br /> at <a href='mailto:support@pumpic.com'>support@pumpic.com</a>.</p>
+                      <p>Have a great day!</p><br />
+                      <a href='http://pumpic.com/'>pumpic.com</a>";
+
+
+            $_tmp = "<html>
+                        <head>
+                            <title>{title}</title>
+                        </head>
+                        <body>
+                            {body}
+                        </body>
+                    </html>";
+            $_params = array("{title}" => $title, "{body}" => $_body);
+            $_text = strtr($_tmp, $_params);
+
+            if(!saveDB( array('to' => $_form_discount['email'],
+                              'from' => false,
+                              'body' => $_text,
+                              'subject' => $title,
+                              'name' => $_form_discount['name'])) ) {
+                $_result['_error'] = "Not validate email address!";
+            } else {
+                sendEmail($_form_discount['email'], 'Openig Soon Thanks #pp '.$_id, $_text, 'no-reply@pumpic.com');
+                $_result['_success'] = 'Thank you for choosing pumpic.com';
+            }
+        }
+    } else
+        $_result['_error'] = 'Not validate email address!';
+    
+    
+    // init output params!
+    $template->assign($params['out'], $_result);
 }
 
 /*

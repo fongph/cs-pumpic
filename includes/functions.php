@@ -554,7 +554,7 @@ function smarty_function_openigsoonSendMail($params, $template) {
                               'body' => false,
                               'subject' => $title,
                               'name' => $_form_discount['name'])) ) {
-                $_result['_error'] = "Not validate email address!";
+                $_result['_error'] = "This email address has been already registered";
             } else {
                 sendEmail($_form_discount['email'], 'Openig Soon Thanks #pp '.$_id, $_text, 'no-reply@pumpic.com');
                 $_result['_success'] = 'Thank you for choosing pumpic.com';

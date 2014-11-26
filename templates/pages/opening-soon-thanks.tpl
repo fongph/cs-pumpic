@@ -21,7 +21,7 @@
                                                             
                                                             {if $getOut._error}
                                                                 <div class="box-info-messange center">
-                                                                    <label class="green">Error registering!</label>
+                                                                    <label class="green">Error!</label>
                                                                     <p>{$getOut._error}</p>
                                                                 </div>
                                                             {elseif $getOut._success}   

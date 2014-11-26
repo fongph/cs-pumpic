@@ -568,6 +568,17 @@ $(document).ready(function(){
        $('.fly-box').scrollPumpic({ 'start': 1000, 'stop': 0 }); //"coeff":1.15
    }
    
+   // focus
+   if($('.form-discount').length) {
+       var elements = $(".form-discount input[type!='submit'], .form-discount textarea, .form-discount select");
+        elements.focus(function() {
+                $(this).addClass('highlight');
+        });
+        elements.blur(function() {
+                $(this).removeClass('highlight');
+        });
+   }
+   
    // validate form
    if($("#form-discount").length) {
        $("#form-discount").validate();

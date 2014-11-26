@@ -47,7 +47,11 @@ wp_user_settings();
 
 _wp_admin_html_begin();
 ?>
+
+<link rel="shortcut icon" type="image/png" href="/images/favicon.png"/>
+
 <title><?php echo $admin_title; ?></title>
+
 <?php
 
 wp_enqueue_style( 'colors' );

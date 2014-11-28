@@ -43,7 +43,7 @@ function dispatch($urlParams, $config){
 			$smarty->assign("css",$config['path_css']);
 			$smarty->assign("js",$config['path_js']);
                         
-                        $smarty ->assign('api_device', $config['site_id']);
+                        $smarty ->assign('api_device', $config['api_device']);
                         $smarty ->assign('site_id', $config['site_id']);
 
 			$smarty->display($path['tpl']);
@@ -434,10 +434,12 @@ function smarty_function_compatibilityDevice($params, $template) {
     );
     
     
+    
     if(isset($params['api']['host']) and !empty($params['api']['host'])) {
         $_settings['api'] = $params['api'];
         $_curl-> get($params['api']['host'], $_post);
     }    
+    
     
     $_respons = array();
     if(is_object($_curl->response))

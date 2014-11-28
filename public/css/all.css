@@ -3527,3 +3527,43 @@ span.btn-banner-yellow:active {
 .text-center {
     text-align: center;
 } 
+
+.box-socials {
+    margin: 0px;
+    padding: 0px;
+}
+
+.box-socials li {
+    list-style: none;
+    display: block;
+    float: left;
+    margin-right: 7px;
+    
+}
+
+.box-socials li:last-child {
+    margin-right: 0px;
+}
+
+.icons-social {
+    display: block;
+    background: url('../images/icons-social.png') no-repeat;
+    width: 27px;
+    height: 27px;
+}
+
+.i-fb {
+    background-position: 0px 0px;
+}
+
+.i-tw {
+    background-position: -34px 0px;
+}
+
+.i-youtube {
+    background-position: -68px 0px;
+}
+
+.i-google {
+    background-position: -102px 0px;
+}

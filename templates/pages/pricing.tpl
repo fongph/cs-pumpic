@@ -339,7 +339,7 @@
 									</tbody>
 								</table>
 								<div class="link_circle_italic">
-									<a href="#"><span class="circle_ico"><i class="icon-attention"></i></span>you need to have physical access to the phone to install the application</a>
+									<div class="style-links"><span class="circle_ico"><i class="icon-attention"></i></span>you need to have physical access to the phone to install the application</div>
 								</div>
 							</div>
 						</div>

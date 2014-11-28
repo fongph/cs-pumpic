@@ -1,8 +1,8 @@
 {strip}
 {include file='../includes/wrap-title-header.tpl'}
 
-	<title>SEO title for cellspy.org</title>
-	<meta name="description" content="Cellspy.org meta description" />
+	<title>Page not Found</title>
+	{*<meta name="description" content="Cellspy.org meta description" />*}
 
 {include file='../includes/wrap-title-footer.tpl'}
 <body>

@@ -29,11 +29,11 @@
 						<li><i class="icon-apple"></i> (3.1.3 - 7.1.1)</li>
 						<li><i class="icon-blackberry"></i> (1.0 - 7.1)</li>
 						<li>
-							<i class="icon-info-circled"></i> platform compatibility {*<a href="#"></a>*}
+                                                    <i class="icon-info-circled"></i> <a href="/compatibility.html">platform compatibility</a>
 						</li>
 					</ul>
 				</div>
-				<img src="{$img}/visual.png" alt="" class="visual-img">
+				<img src="{$img}/visual-2.png" alt="" class="visual-img">
 			</div>
 		</div>
 		{include file='../includes/main-discount.tpl'}
@@ -45,9 +45,9 @@
 				<div class="row">
 					<div class="col-sm-5 col-md-5 col-lg-5 col-sm-offset-1 col-md-offset-1 col-lg-offset-1">
 						<div class="text-center relative_box">
-							<img src="{$img}/arrows_content.png" class="arrows_img" height="518" width="255" alt="">
+							<img src="{$img}/arrows_content-small.png" class="arrows_img" height="518" width="255" alt="">
 							<img src="{$img}/ipad.jpg" alt="" class="ipad-pic">
-							<button class="btn btn-default _forward_pricing">Buy Premium</button>
+							{*<button class="btn btn-default _forward_pricing">Buy Premium</button>*}
 						</div>
 					</div>
 					<div class="col-sm-5 col-md-5 col-lg-5">

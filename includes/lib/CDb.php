@@ -1,4 +1,5 @@
 <?php
+namespace includes\lib;
 
 class CDb {
     # @object, The PDO object
@@ -8,11 +9,20 @@ class CDb {
     private $sQuery;
 
     # @array,  The database settings
+//    private $settings = array(
+//        'dbname'    => 'pumpic',
+//        'host'      => 'localhost',
+//        'user'      => 'root',
+//        'password'  => 'password'
+//        
+//    );
+    
     private $settings = array(
         'dbname'    => 'pumpic_blog',
         'host'      => '188.40.64.2',
         'user'      => 'pumpic_blog_user',
         'password'  => '57ge8j9SNg9EkhryWA3KV9ZB9NUue6'
+        
     );
 
     # @bool ,  Connected to the database
@@ -36,11 +46,10 @@ class CDb {
             $this->parameters = array();
             if(!empty($_settings))
                 $this ->setSettings($_settings);
+            
+            $this->Connect();
     }
     
-    public static function _run() {
-        $this->Connect();
-    }
     
     public function setSettings( $_settings ) {
         if(!empty($_settings) and is_array($_settings) and count($_settings)) 
@@ -62,7 +71,7 @@ class CDb {
             try 
             {
                     # Read settings from INI file, set UTF8
-                    $this->pdo = new \PDO($dsn, $this->settings["user"], $this->settings["password"], array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
+                    $this->pdo = new \PDO($dsn, $this->settings["user"], $this->settings["password"], array(\PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
 
                     # We can now log any exceptions on Fatal error. 
                     $this->pdo->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);
@@ -78,6 +87,11 @@ class CDb {
                     die();
             }
     }
+    
+    public function getConnected() {
+        return (is_object($this->pdo)) ? $this->pdo : null;
+    }
+    
     /*
      *   You can use this little method if you want to close the PDO connection
      *

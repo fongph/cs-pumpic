@@ -19,6 +19,10 @@ $config = array(
 	'path_js' => '/js',
 	'path_css' => '/css',
 		
+        'site_id' => 1,
+        'session' => array(
+            'rememberMeTime' => 2592000 // 30 days
+        ),
         'api_device' => array(
             '_domain' => 'a.pumpic.dev',
             'path_img' => 'compatibility',

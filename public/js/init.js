@@ -579,9 +579,19 @@ $(document).ready(function(){
         });
    }
    
+   if($('.box-form').length) {
+       var elements = $(".box-form input[type!='submit'], .box-form textarea, .box-form select");
+        elements.focus(function() {
+                $(this).addClass('highlight');
+        });
+        elements.blur(function() {
+                $(this).removeClass('highlight');
+        });
+   }
+   
    // validate form
-   if($("#form-discount").length) {
-       $("#form-discount").validate();
+   if($("#form-discount, .box-form").length) {
+       $("#form-discount, .box-form").validate();
    }
     
     

@@ -1,4 +1,5 @@
-		<div class="header">
+{hasUser out="getUser"}		
+<div class="header">
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-10 col-lg-offset-1">
@@ -14,7 +15,12 @@
 									<a href="{$domain_http}">pumpic</a>
 								</div>
 							</div>
-							<button class="btn btn-sm btn-success pull-right visible-lg"><i class="icon-lock"></i> Log In</button>
+                                                        {if $getUser.success == 'true'} 
+                                                            <a href="#" class="btn btn-sm btn-success pull-right visible-lg"><i class="icon-lock"></i> CP </a>
+                                                        {else}
+                                                            <a href="/login.html" class="btn btn-sm btn-success pull-right visible-lg"><i class="icon-lock"></i> Log In</a>
+                                                        {/if}    
+							
 							<!-- Collect the nav links, forms, and other content for toggling -->
 							<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 								<ul class="nav navbar-nav">
@@ -40,7 +46,7 @@
 										<a href="http://demo.{$domain}">Demo</a>
 									</li-->
 									<li>
-										<button class="btn btn-sm btn-success hidden-lg"><i class="icon-lock"></i> Log In</button>
+										<a href="/login.html" class="btn btn-sm btn-success hidden-lg"><i class="icon-lock"></i> Log In</a>
 									</li>
 								</ul>
 							</div>

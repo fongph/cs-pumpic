@@ -14,7 +14,7 @@
 									<a href="<?php echo getStaticUrl();?>">pumpic</a>
 								</div>
 							</div>
-							<button class="btn btn-sm btn-success pull-right visible-lg"><i class="icon-lock"></i> Log In</button>
+							<a href="<?php echo getStaticUrl();?>/login.html" class="btn btn-sm btn-success pull-right visible-lg"><i class="icon-lock"></i> Log In</a>
 							<!-- Collect the nav links, forms, and other content for toggling -->
 							<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 								<ul class="nav navbar-nav">
@@ -40,7 +40,7 @@
 										<a href="http://demo.{$domain}">Demo</a>
 									</li-->
 									<li>
-										<button class="btn btn-sm btn-success hidden-lg"><i class="icon-lock"></i> Log In</button>
+										<a href="<?php echo getStaticUrl();?>/login.html" class="btn btn-sm btn-success hidden-lg"><i class="icon-lock"></i> Log In</a>
 									</li>
 								</ul>
 							</div>

@@ -472,15 +472,17 @@ select.form-control option {
 }
 
 /*
-Error box
+Error box Form box
 */
-form.form-discount label {
+form.form-discount label, 
+form.box-form label{
     padding:0px 10px;
     width: 200px;
     float: left;
 }
 		
-form.form-discount fieldset fieldset label.error {
+form.form-discount fieldset fieldset label.error,
+form.box-form fieldset fieldset label.error {
     margin-left:0px !important;
     width:220px !important;
 }		
@@ -489,11 +491,13 @@ form .centered{
     width:220px !important;
 }
                 		
-form.form-discount .error{
+form.form-discount .error,
+form.box-form .error {
     color: #b54a58;
 }
 		
-form.form-discount label.error {
+form.form-discount label.error,
+form.box-form label.error {
     color: #b54a58;
 
     font-size: 13px;
@@ -507,7 +511,8 @@ form.form-discount label.error {
     clear:both;
 }
 		
-form.form-discount label.info{
+form.form-discount label.info,
+form.box-form label.info {
     font-size: 13px;
     font-weight: bold;
     font-family: "Open Sans", Helvetica, Arial, sans-serif;
@@ -517,15 +522,18 @@ form.form-discount label.info{
     padding:3px 0px 0px 5px;
 }
 	
-form.form-discount label label.error{
+form.form-discount label label.error,
+form.box-form label label.error {
     margin-left:0px;
 }
 
-form.form-discount .clean {
+form.form-discount .clean,
+form.box-form .clean {
     border:none;
 }
 
-form.form-discount .info{
+form.form-discount .info,
+form.box-form .info {
     padding-top: 0.5em;
     font-size: 13px;
     font-family: "Open Sans", Helvetica, Arial, sans-serif;
@@ -533,18 +541,21 @@ form.form-discount .info{
     color:#aaa;
 }
 
-form.form-discount.indent{
+form.form-discount .indent,
+form.box-form .indent {
     padding:2px 20px; 
     width:auto !important;
     white-space:nowrap;
     padding-left: 25px !important;
 }
 
-form.form-discount label.disabled{
+form.form-discount label.disabled,
+form.box-form label.disabled {
     color:#aaa;
 }
 
-form.form-discount .highlight{  
+form.form-discount .highlight,
+form.box-form .highlight {  
     background-color:#e2e2e2;
 }
 
@@ -574,7 +585,8 @@ form.form-discount .highlight{
     width: 220px;
 }
 
-.form-discount input {
+.form-discount input,
+.box-form input{
     border: none;
     height: 48px;
     width: 220px;
@@ -584,25 +596,33 @@ form.form-discount .highlight{
     color: #444652;
 }
 
-.form-discount input::-moz-placeholder {
+.form-discount input::-moz-placeholder,
+.box-form input::-moz-placeholder {
     color: #444652; /* Цвет подсказывающего текста */
 }
-.form-discount input::-webkit-input-placeholder {
+.form-discount input::-webkit-input-placeholder,
+.box-form input::-webkit-input-placeholder {
     color: #444652;
 }   
 
 .form-discount input:focus, 
-.form-discount input {
+.form-discount input,
+
+.box-form input:focus, 
+.box-form input{
     color: #9599b0;
 }
 
-.form-discount .button-discount {
+.form-discount .button-discount,
+.box-form .button-discount {
     text-align: left;
     
     width: 220px;
     border: none;
     margin-top: 11px;
-    padding: 17px 41px 18px 20px;
+/*    padding: 17px 41px 18px 20px;*/
+    padding: 17px 18px 18px 20px;
+
     background: #f5ac43;
     color: #fff;
     
@@ -616,14 +636,21 @@ form.form-discount .highlight{
 .button-discount:hover {
     opacity: 0.8;
 }
-.button-discount i {
+.button-discount i,
+.box-form i {
     display: inline-block;
-    float: right;
-    height: 19px;
+    
+/*    float: right;
     margin-right: 20px;
     margin-top: 7px;
     position: absolute;
-    margin-left: 18px;
+    margin-left: 18px;*/
+    
+    margin-left: 8px;
+    top: 3px;
+    position: relative;
+
+    height: 19px;
     width: 10px;
     background: url('../images/i-disc-arrows.png') no-repeat;
 }
@@ -3354,3 +3381,118 @@ span.btn-banner-yellow:active {
 
 .hide { display: none; }
 .show { display: block; }
+
+/* -------------// forms --------- */
+.box-form {
+    width: 100%;
+}
+
+.form-login, .form-registration, .form-restore {
+    width: 370px;
+    margin: 0 auto;
+}
+.form-login input,
+.form-registration input,
+.form-restore input {
+    width: 100%;
+    background: #fefefe;
+    
+}
+
+.form-login input::-moz-placeholder,
+.form-registration input::-moz-placeholder,
+.form-restore input::-moz-placeholder {
+    color: #cbcbcb;
+}
+.form-login::-webkit-input-placeholder,
+.form-registration::-webkit-input-placeholder,
+.form-restore::-webkit-input-placeholder {
+    color: #cbcbcb;
+} 
+
+.form-login input,
+.form-registration input,
+.form-restore input {
+    color: #cbcbcb;
+}
+
+.form-login .button-sumbit,
+.form-registration .button-sumbit,
+.form-restore .button-sumbit {
+    margin-top: 22px;
+}
+
+.form-login button,
+.form-registration button, 
+.form-restore button {
+    display: block;
+    position: relative;
+    width: 195px;
+    color: #fff;
+    padding: 13px 20px 13px 20px;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: lighter;
+    height: 51px;
+}
+
+.form-login .box-form i,
+.form-registration .box-form i,
+.form-restore .box-form i {
+    display: none;
+}
+
+.form-login label.error,
+.form-registration label.error,
+.form-restore label.error {
+    text-align: center;
+     margin-top: 10px !important;
+     padding: 5px !important;
+     background-color: #f2dede !important;
+     margin-bottom: 15px !important;
+     color: #7f7f7f !important;
+     font-size: 14px !important;
+     width: 100% !important;
+}
+
+
+.btn-orange {
+    border: medium none;
+    background: #f5ac43;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+}
+
+.box-form .links {
+    padding: 28px 0px 0px 0px;
+    margin: 0px;
+}
+
+.box-form .links li{
+    width: 100%;
+    list-style: none;
+    padding: 0px 0px 10px 0px;
+    margin: 0xp;
+}
+
+.box-form .links li a {
+    display: block;
+    margin:0 auto;
+    text-align: center;
+    text-decoration: underline;
+    color: #16a89e;
+}
+
+.bg-ok {
+    margin-top: 10px;
+    padding: 5px;
+    text-align: center;
+    background: #b1e5d8;
+    width: 100%;
+}
+
+.text-center {
+    text-align: center;
+} 

@@ -1,6 +1,7 @@
 <?php
 function dispatch($urlParams, $config){
-      
+        
+        
         // fix url
         if(is_array($urlParams['uriArr']) 
                 and count($urlParams['uriArr']) > 0
@@ -32,6 +33,8 @@ function dispatch($urlParams, $config){
 			
 			$smarty->registerPlugin("function","year_now","print_current_year");
                         
+                        $smarty->registerPlugin("function","_dev","hasTest");// detected ip hasTest
+                        
                         $smarty->registerPlugin("function","contactusSend","contact_us_send"); // validate form contact_us
                         
 			$smarty->assign("domain",$config['domain']);
@@ -40,7 +43,8 @@ function dispatch($urlParams, $config){
 			$smarty->assign("css",$config['path_css']);
 			$smarty->assign("js",$config['path_js']);
                         
-                        $smarty ->assign('api_device', $config['api_device']);
+                        $smarty ->assign('api_device', $config['site_id']);
+                        $smarty ->assign('site_id', $config['site_id']);
 
 			$smarty->display($path['tpl']);
 
@@ -352,6 +356,10 @@ function print_current_year($params, $smarty)
   return strftime($format,time());
 }
 
+function _redirect( $_url ) {
+    header('Location: '.$_url);
+    die();
+}
 
 /*
  * Contact US (send form and validater)
@@ -479,7 +487,7 @@ function saveDB( $_params ) {
        $_setParams[ $_name ] = htmlspecialchars( trim($_value) );
    endforeach;
     
-    $_pdo = new CDb();
+    $_pdo = new \includes\lib\CDb();
     $_res = $_pdo -> query("SELECT `id` FROM `subscription_mail` WHERE `to` = '".  mysql_escape_string( trim($_params['to']) )."'");
 
     
@@ -952,6 +960,151 @@ function smarty_function_features_plans( $_plans = array()  ) {
     
     
     echo $_html;
+}
+
+
+/*
+ *Авторизация  
+ */
+function smarty_function_authorization($params, $template) {
+    require_once 'lib/users/ManagerUser.php';
+    
+    $_result = array(
+        '_error' => false,
+        '_success' => false,
+    );
+    
+    
+    $_sID = (isset($params['post']['site_id']) and !empty($params['post']['site_id'])) ? $params['post']['site_id'] : false;
+    $_pass = (isset($params['post']['password']) and !empty($params['post']['password'])) ? trim($params['post']['password']) : null;
+    
+    if((isset($params['post']['email']) and!validateEmail($params['post']['email']))) {
+       $_result['_error'] = "Not validate email address!";
+    } else if(isset($params['post']['email']) and !empty($params['post']['email'])) {
+         $_params = array(
+            'siteId' => $_sID,
+            'email' => $params['post']['email'],
+            'password' => $_pass
+        );
+
+        $obj = new includes\lib\users\ManagerUser( $_params );
+        $_respons = $obj -> auth -> respons;
+
+        if(is_array($_respons) and count($_respons) > 0)
+            $_result = array_merge ($_result, $_respons);
+    }
+    
+    if($_result['_success']) {
+        _redirect('/'); // redirect home page!
+    } 
+    
+    // init output params!
+    $template->assign($params['out'], $_result);
+}
+
+// has user
+function smarty_function_hasUser($params, $template) {
+    require_once 'lib/users/ManagerUser.php';
+    $obj = new includes\lib\users\ManagerUser( array() );
+    $_result['success'] = false;
+    
+    if($obj -> getLoginUser()) {
+        $_result['success']= true;
+    }
+    
+    $template->assign($params['out'], $_result);
+}
+
+// clear logout in pumpic
+function getLogOut() {
+    require_once 'lib/users/ManagerUser.php';
+    $obj = new includes\lib\users\ManagerUser( array() );
+    if($obj -> getLoginUser()) {
+        $obj ->logout();
+    }
+    return true;
+}
+
+
+/*
+ * Регистрация 
+ */
+function smarty_function_registration($params, $template) {
+    require_once 'lib/users/ManagerUser.php';
+    
+    $_result = array(
+        '_error' => false,
+        '_success' => false,
+    );
+    
+    
+    $_sID = (isset($params['post']['site_id']) and !empty($params['post']['site_id'])) ? $params['post']['site_id'] : false;
+    
+    if(isset($params['post']['email']) and !validateEmail($params['post']['email'])) {
+       $_result['_error'] = "Not validate email address!";
+    } else if(!empty($params['post']['email']) and $_sID) {
+        $_params = array(
+            'siteId' => $_sID,
+            'email' => $params['post']['email']
+        );
+
+        $obj = new includes\lib\users\ManagerUser( $_params );
+        $_respons = $obj -> registration -> respons;
+
+        if(is_array($_respons) and count($_respons) > 0)
+            $_result = array_merge ($_result, $_respons);
+
+    }
+    
+    // init output params!
+    $template->assign($params['out'], $_result);
+}
+
+/* Restore */
+function smarty_function_restore($params, $template) {
+    require_once 'lib/users/ManagerUser.php';
+    
+    $_result = array(
+        '_error' => false,
+        '_success' => false,
+    );
+    
+    $_sID = (isset($params['post']['site_id']) and !empty($params['post']['site_id'])) ? $params['post']['site_id'] : false;
+    
+    if(isset($params['post']['email']) and !validateEmail($params['post']['email'])) {
+       $_result['_error'] = "Not validate email address!";
+    } else if(!empty($params['post']['email']) and $_sID) {
+         $_params = array(
+            'siteId' => $_sID,
+            'email' => $params['post']['email']
+        );
+
+        $obj = new includes\lib\users\ManagerUser( $_params );
+        $_respons = $obj -> restore -> respons;
+
+        if(is_array($_respons) and count($_respons) > 0)
+            $_result = array_merge ($_result, $_respons);
+    }
+    
+    // init output params!
+    $template->assign($params['out'], $_result);
+}
+
+/*
+ * Detected ip
+ */
+function smarty_function_closeAccess($params, $template) {
+    if (!in_array(@$_SERVER['REMOTE_ADDR'], ['176.38.120.13', '127.0.0.1', '::1'])) {
+        die('You are not allowed to access this file.');
+    }
+}
+
+function hasTest($params, $smarty) {
+    if (!in_array(@$_SERVER['REMOTE_ADDR'], ['176.38.120.13', '127.0.0.1', '::1'])) {
+        return false;
+    } else
+        return true;
+    
 }
 
 ?>

@@ -15,11 +15,11 @@
 									<a href="{$domain_http}">pumpic</a>
 								</div>
 							</div>
-                                                        {*if $getUser.success == 'true'} 
+                                                        {if $getUser.success == 'true'} 
                                                             <a href="#" class="btn btn-sm btn-success pull-right visible-lg"><i class="icon-lock"></i> CP </a>
-                                                        {else*}
-                                                            <a href="/login.html" class="btn btn-sm btn-success pull-right visible-lg"><i class="icon-lock"></i> Log In</a>
-                                                        {*/if*}    
+                                                        {else}
+                                                            <a href="#" class="btn btn-sm btn-success pull-right visible-lg"><i class="icon-lock"></i> Log In</a>
+                                                        {/if}    
 							
 							<!-- Collect the nav links, forms, and other content for toggling -->
 							<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -27,9 +27,9 @@
 									<li {if $topmenu_active=='home'} class="active"{/if}>
 										<a href="/">Home</a>
 									</li>
-									<!-- li {if $topmenu_active=='compatibility'} class="active"{/if}>
+									<li {if $topmenu_active=='compatibility'} class="active"{/if}>
 										<a href="/compatibility.html">Compatibility</a>
-									</li -->
+									</li>
 									<li {if $topmenu_active=='pricing'} class="active"{/if}>
 										<a href="/pricing.html">Pricing</a>
 									</li>

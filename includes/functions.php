@@ -434,7 +434,6 @@ function smarty_function_compatibilityDevice($params, $template) {
     );
     
     
-    
     if(isset($params['api']['host']) and !empty($params['api']['host'])) {
         $_settings['api'] = $params['api'];
         $_curl-> get($params['api']['host'], $_post);
@@ -446,6 +445,7 @@ function smarty_function_compatibilityDevice($params, $template) {
         $_respons = stdToArray($_curl->response); 
     else if(is_array($_curl->response))
         $_respons = $_curl->response;
+    
     
     if(is_array($_respons) and count($_respons) > 0) {
             // parce path img
@@ -465,8 +465,8 @@ function smarty_function_compatibilityDevice($params, $template) {
             $_settings = array_merge($_settings, $_set);
                 
     } else {
-        header("Location: /404.html");
-        exit;
+        //header("Location: /404.html");
+        //exit;
         //$_settings['error'] = ($_curl->error) ? $_curl->error: 'This page is temporarily unavailable!';
     }
         
@@ -1042,6 +1042,7 @@ function validateCapcha($_capcha) {
             return true;
     } else 
         return false;
+    
 }
 
 
@@ -1069,14 +1070,19 @@ function smarty_function_registration($params, $template) {
         );
         
         $obj = new includes\lib\users\ManagerUser( $_params );
-        //$_respons = $obj -> registration -> respons;
-
-        $_respons = array('_error' => false,
-        '_success' => true);
+        $_respons = $obj -> registration -> respons;
+        
+        if($_result['_success']) {
+            $_result['_success'] = 'Successful registration.';
+        } 
         
         if(is_array($_respons) and count($_respons) > 0)
             $_result = array_merge ($_result, $_respons);
 
+    }
+    
+    if($_result['_success']) {
+        _redirect('/'); // redirect home page!
     }
     
     // init output params!
@@ -1107,6 +1113,10 @@ function smarty_function_restore($params, $template) {
 
         if(is_array($_respons) and count($_respons) > 0)
             $_result = array_merge ($_result, $_respons);
+    }
+    
+    if($_result['_success']) {
+        $_result['_success'] = 'Successful restore.';
     }
     
     // init output params!

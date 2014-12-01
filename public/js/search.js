@@ -166,6 +166,22 @@
             
         },
         
+        /* 
+         * generate alies  
+         */
+        _alies: function(str) {
+            var $out;
+            if(str) {
+                $out = $(this).syncTranslit({
+                    type: 'url',
+                    'strtr': true,
+                    '_text': str,
+                });
+                
+            }
+            return $out; 
+        },
+        
         _item: function(params, obj) {
             var html = '';
             if(methods._has(params)) {
@@ -179,12 +195,12 @@
                 
                 html += '<div id="search-result-item" class="col-sm-3 col-md-3 col-xs-6">';
                     html += '<div class="thumbnail">';
-                        html += '<a target="_blank" href="/compatibility/'+params.name+'" class="img_thumb">';
+                        html += '<a target="_blank" href="/compatibility/'+ methods._alies(params.name)+'" class="img_thumb">';
                             html += '<img src="'+$_settings.server_img+middle_img+'" height="202" width="90" title="'+params.name+'" alt="'+params.name+'">';
                         html += '</a>';
                         
                         html += '<div class="caption">';
-                            html += '<h3><a target="_blank" href="/compatibility/'+params.name+'">'+params.name+'</a></h3>';
+                            html += '<h3><a target="_blank" href="/compatibility/'+methods._alies(params.name)+'">'+params.name+'</a></h3>';
                             html += '<span>OS:<strong> '+params.os+'</strong></span>';
                             html += '<span>Versions:<strong> '+params.version+'</strong></span>';
                         html += '</div>';
@@ -317,7 +333,7 @@
                             } );
                             
                         } else 
-                            $('#log').html('Sorry, no results found. If you have any questions please contact our support team via <br /> support@pumpic.com');
+                            $('#log').html('No results were found. In case of any questions, contact us using the form below.');
                             // methods._die('Empty result!');
                     
                         // methods._die(data.count);

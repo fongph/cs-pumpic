@@ -726,7 +726,7 @@ $(document).ready(function(){
         messages: {
             name: "The Name field is empty.",
             description: 'The Question field is empty.',
-            wos: 'The Chose your OS.',
+            wos: 'The field Choose your OS is empty.',
             email: {
                 required: "The Email field is empty.",
                 email: "Invalid email format."

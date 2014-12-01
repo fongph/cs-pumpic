@@ -14,6 +14,7 @@ use CS\Users\UserLockedException as UserLockedException;
 use CS\Users\InvalidSenderObjectException as InvalidSenderObjectException; // exception sender mail
 
 use CS\Mail\MailSender;
+use CS\Mail\Processor\FileProcessor;
 
 use includes\lib\CDb as DB;
 
@@ -34,7 +35,7 @@ class ManagerUser extends Manager {
         '_error' => false,
         '_success' => false
     );
-    
+    /* prod */
     private $_db = array(
         'dbname'    => 'main',
         'host'      => '188.40.64.2',
@@ -42,6 +43,16 @@ class ManagerUser extends Manager {
         'password'  => 'qmsgrSR8qhxeNSC44533hVBqwNajd62z2QtXwN6E'
         
     );
+    
+    
+    /* dev */
+//    private $_db = array(
+//        'dbname'    => 'main',
+//        'host'      => 'localhost',
+//        'user'      => 'root',
+//        'password'  => 'password'
+//        
+//    );
     
     private $_session;
     private $_di;
@@ -59,9 +70,10 @@ class ManagerUser extends Manager {
         parent::__construct($this -> _pdo);
         
         // set sender
-        $this -> _mail_sender = new MailSender();
-        //$this -> _mail_sender->setLocale($di['t']->getLocale())
-        //    ->setSiteId($di['config']['site']);
+        $this -> _mail_sender = new MailSender( new FileProcessor('log.txt') );
+        $this -> _mail_sender
+               ->setLocale('ru-Ru')
+               ->setSiteId(1);
         parent::setSender( $this -> _mail_sender ); // init mail sender
         
         

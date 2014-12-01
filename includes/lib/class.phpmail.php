@@ -214,7 +214,7 @@ class Phpmail {
 	return md5('ah5d7asd' . rand(0, 9000000));
     }
     
-    protected function sendEmail($email, $subject, $text, $from = 'noreply@cellspy.org'){ // support
+    protected function sendEmail($email, $subject, $text, $from = 'no-reply@pumpic.com'){ // support
 	if(strlen($email) && strlen($text)){
 		$subject = "=?UTF-8?B?" . base64_encode($subject) . "?=";
 
@@ -253,9 +253,9 @@ class Phpmail {
             // echo "email = ".$_result['error']['email'];
             
             if(!$this -> validateEmail($params['email'])) {
-                $_result['error']['email'] = "Not validate email address!";
+                $_result['error']['email'] = "Invalid email format.";
             } else if(empty($params['device-model']) or strlen( $params['device-model']) < 3 ) {
-                $_result['error']['device-model'] = "Please enter correct your name!";
+                $_result['error']['device-model'] = "The Device Model field is empty.";
             } else {
                 $title = "Searching phone ".$params['device-model'];
                 $_body = "<table>";
@@ -280,7 +280,98 @@ class Phpmail {
 
                 $this -> sendEmail('support@pumpic.com', 'Contact US #pp '.$_id, $_text, $params['email']);
 
-                $_result['success'] = "You'r e-mail send OK!";
+                $_result['success'] = "Your email was succesfully sent.";
+            }    
+
+            
+        }
+        
+        return $_result;
+        
+    }
+    
+    
+    /* Faq Send mail*/
+    public function _sendFaq($params) {
+        $_result = array('error' => false, 'success' => false);
+        
+        if(is_array($params) and count($params) > 0) {
+            $_id = rand(0, 9000000);
+            
+            if(!$this -> validateEmail($params['email'])) {
+                $_result['error']['email'] = "Invalid email format.";
+            } else {
+                $title = "FAQ ".$params['name'];
+                $_body = "<table>";
+
+                if(isset($params['name']))
+                    $_body .= "<tr><td>Name:</td><td>".$params['name']."</td></tr>";
+                if(isset($params['email']))
+                    $_body .= "<tr><td>Email:</td><td>".$params['email']."</td></tr>";
+
+                $_body .= "</table>";
+
+                $_tmp = "<html>
+                            <head>
+                                <title>{title}</title>
+                            </head>
+                            <body>
+                                {body}
+                            </body>
+                        </html>";
+                $_params = array("{title}" => $title, "{body}" => $_body);
+                $_text = strtr($_tmp, $_params);
+
+                $this -> sendEmail('support@pumpic.com', 'FAQ #pp '.$_id, $_text, $params['email']);
+
+                $_result['success'] = "Your email was succesfully sent.";
+            }    
+
+            
+        }
+        
+        return $_result;
+        
+    }
+    
+    /* Contact US Send mail*/
+    public function _sendContactUs($params) {
+        $_result = array('error' => false, 'success' => false);
+        
+        if(is_array($params) and count($params) > 0) {
+            $_id = rand(0, 9000000);
+            
+            if(!$this -> validateEmail($params['email'])) {
+                $_result['error']['email'] = "Invalid email format.";
+            } else {
+                $title = "Contact US";
+                $_body = "<table>";
+
+                if(isset($params['name']))
+                    $_body .= "<tr><td>Name:</td><td>".$params['name']."</td></tr>";
+                if(isset($params['email']))
+                    $_body .= "<tr><td>Email:</td><td>".$params['email']."</td></tr>";
+                if(isset($params['os']))
+                    $_body .= "<tr><td>OS:</td><td>".$params['os']."</td></tr>";
+                if(isset($params['description']))
+                    $_body .= "<tr><td>Description:</td><td>".$params['description']."</td></tr>";
+
+                $_body .= "</table>";
+
+                $_tmp = "<html>
+                            <head>
+                                <title>{title}</title>
+                            </head>
+                            <body>
+                                {body}
+                            </body>
+                        </html>";
+                $_params = array("{title}" => $title, "{body}" => $_body);
+                $_text = strtr($_tmp, $_params);
+
+                $this -> sendEmail('support@pumpic.com', 'Contact US #pp '.$_id, $_text, 'support@pumpic.com');
+
+                $_result['success'] = "Your email was succesfully sent.";
             }    
 
             

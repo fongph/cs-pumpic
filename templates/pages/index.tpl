@@ -21,7 +21,7 @@
 						<li><i class="icon-apple"></i> (3.1.3 - 7.1.1)</li>
 						<li><i class="icon-blackberry"></i> (1.0 - 7.1)</li>
 						<li>
-							<i class="icon-info-circled"></i> platform compatibility {*<a href="#"></a>*}
+							<i class="icon-info-circled"></i> <a href="/compatibility.html">platform compatibility</a>
 						</li>
 					</ul>
 				</div>

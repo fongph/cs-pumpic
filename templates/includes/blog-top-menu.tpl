@@ -21,9 +21,9 @@
 									<li>
 										<a href="<?php echo getStaticUrl();?>/">Home</a>
 									</li>
-									<!--li {if $topmenu_active=='compatibility'} class="active"{/if}>
-										<a href="/compatibility.html">Compatibility</a>
-									</li-->
+									<li>
+										<a href="<?php echo getStaticUrl();?>/compatibility.html">Compatibility</a>
+									</li>
 									<li>
 										<a href="<?php echo getStaticUrl();?>/pricing.html">Pricing</a>
 									</li>

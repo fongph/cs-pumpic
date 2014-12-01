@@ -981,7 +981,7 @@ function smarty_function_authorization($params, $template) {
     $_pass = (isset($params['post']['password']) and !empty($params['post']['password'])) ? trim($params['post']['password']) : null;
     
     if((isset($params['post']['email']) and!validateEmail($params['post']['email']))) {
-       $_result['_error'] = "Not validate email address!";
+       $_result['_error'] = "Invalid email format.";
     } else if(isset($params['post']['email']) and !empty($params['post']['email'])) {
          $_params = array(
             'siteId' => $_sID,
@@ -1028,31 +1028,52 @@ function getLogOut() {
 }
 
 
+/**
+ * CAPCHA
+ */
+
+function validateCapcha($_capcha) {   
+    @session_start();
+    if(!empty($_capcha)) {
+        if (!isset($_SESSION['captcha']) 
+                and (empty($_SESSION['captcha']) || trim(strtolower($_capcha)) != $_SESSION['captcha'])) {
+            return false;
+        } else
+            return true;
+    } else 
+        return false;
+}
+
+
 /*
  * Регистрация 
  */
 function smarty_function_registration($params, $template) {
-    require_once 'lib/users/ManagerUser.php';
-    
     $_result = array(
         '_error' => false,
         '_success' => false,
     );
     
-    
+    $_capcha = (isset($params['post']['capcha']) and !empty($params['post']['capcha'])) ? $params['post']['capcha'] : false;
     $_sID = (isset($params['post']['site_id']) and !empty($params['post']['site_id'])) ? $params['post']['site_id'] : false;
     
     if(isset($params['post']['email']) and !validateEmail($params['post']['email'])) {
-       $_result['_error'] = "Not validate email address!";
-    } else if(!empty($params['post']['email']) and $_sID) {
+       $_result['_error'] = "Invalid email format.";
+    } else if(isset($params['post']['capcha']) and !validateCapcha( $_capcha )) { 
+        $_result['_error'] = "Invalid CAPTCHA.";
+    } else if(!empty($params['post']['email']) and $_sID and validateCapcha( $_capcha )) {
+        require_once 'lib/users/ManagerUser.php';
         $_params = array(
             'siteId' => $_sID,
             'email' => $params['post']['email']
         );
-
+        
         $obj = new includes\lib\users\ManagerUser( $_params );
-        $_respons = $obj -> registration -> respons;
+        //$_respons = $obj -> registration -> respons;
 
+        $_respons = array('_error' => false,
+        '_success' => true);
+        
         if(is_array($_respons) and count($_respons) > 0)
             $_result = array_merge ($_result, $_respons);
 
@@ -1074,7 +1095,7 @@ function smarty_function_restore($params, $template) {
     $_sID = (isset($params['post']['site_id']) and !empty($params['post']['site_id'])) ? $params['post']['site_id'] : false;
     
     if(isset($params['post']['email']) and !validateEmail($params['post']['email'])) {
-       $_result['_error'] = "Not validate email address!";
+       $_result['_error'] = "Invalid email format.";
     } else if(!empty($params['post']['email']) and $_sID) {
          $_params = array(
             'siteId' => $_sID,

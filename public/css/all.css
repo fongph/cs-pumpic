@@ -388,6 +388,7 @@ select.form-control option {
 .navbar-collapse {
   box-shadow: none;
 }
+
 @media only screen and (min-width: 1200px) {
   .navbar-collapse.collapse {
     display: inline-block !important;
@@ -475,44 +476,79 @@ select.form-control option {
 Error box Form box
 */
 form.form-discount label, 
-form.box-form label{
+form.box-form label {
     padding:0px 10px;
     width: 200px;
     float: left;
-}
+} /* form.form-contact-us label */
 		
-form.form-discount fieldset fieldset label.error,
-form.box-form fieldset fieldset label.error {
-    margin-left:0px !important;
-    width:220px !important;
-}		
-
+		
 form .centered{
     width:220px !important;
 }
                 		
-form.form-discount .error,
-form.box-form .error {
-    color: #b54a58;
+	
+label.invalid {
+    padding: 5px;
+    margin: 10px 0px 15px 0px;
+    clear:both;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    width: 100%;
 }
-		
+
+span.info,
+label.success {
+    display: none;
+    font-size: 14px;
+    background: #b1e5d7;
+    color: #fff;
+    padding: 5px;
+    margin: 10px 0px 15px 0px;
+    clear:both;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    width: 100%;
+}
+
 form.form-discount label.error,
-form.box-form label.error {
+form.box-form label.error,
+.form-contact-us label.error,
+.send_find_phone label.error,
+.fatal-error {
+    
     color: #b54a58;
 
     font-size: 13px;
     font-family: "Open Sans", Helvetica, Arial, sans-serif;
     font-weight: bold;
-
-    width:220px;
+    width: 100%;
     display: none;
-    padding:3px 0px 0px 5px;
-
+    padding: 5px;
+    margin: 10px 0px 15px 0px;
     clear:both;
+}
+
+.form-login label.error,
+.form-registration label.error,
+.form-restore label.error,
+.form-contact-us label.error,
+.send_find_phone label.error,
+label.invalid,
+.fatal-error {
+    text-align: center;
+    background-color: #f2dede;
+    color: #7f7f7f !important;
+    font-size: 14px !important;
+}
+
+.form-contact-us .box-error label {
+    margin-bottom: 0px !important;
 }
 		
 form.form-discount label.info,
-form.box-form label.info {
+form.box-form label.info,
+form.form-contact-us label.info {
     font-size: 13px;
     font-weight: bold;
     font-family: "Open Sans", Helvetica, Arial, sans-serif;
@@ -523,17 +559,20 @@ form.box-form label.info {
 }
 	
 form.form-discount label label.error,
-form.box-form label label.error {
+form.box-form label label.error,
+form.form-contact-us label label.error {
     margin-left:0px;
 }
 
 form.form-discount .clean,
-form.box-form .clean {
+form.box-form .clean,
+form.form-contact-us .clean {
     border:none;
 }
 
 form.form-discount .info,
-form.box-form .info {
+form.box-form .info,
+form.form-contact-us .info {
     padding-top: 0.5em;
     font-size: 13px;
     font-family: "Open Sans", Helvetica, Arial, sans-serif;
@@ -542,7 +581,8 @@ form.box-form .info {
 }
 
 form.form-discount .indent,
-form.box-form .indent {
+form.box-form .indent,
+form.form-contact-us .indent {
     padding:2px 20px; 
     width:auto !important;
     white-space:nowrap;
@@ -550,12 +590,14 @@ form.box-form .indent {
 }
 
 form.form-discount label.disabled,
-form.box-form label.disabled {
+form.box-form label.disabled,
+form.form-contact-us label.disabled {
     color:#aaa;
 }
 
 form.form-discount .highlight,
-form.box-form .highlight {  
+form.box-form .highlight,
+form.form-contact-us .highlight {  
     background-color:#e2e2e2;
 }
 
@@ -2973,7 +3015,7 @@ article img.pull-right {
   color: #fff;
   position: fixed;
   right: 10px;
-  bottom: 10px;
+  bottom: 40px; /* 10 */
   z-index: 10;
   display: none;
 }
@@ -3474,18 +3516,6 @@ span.btn-banner-yellow:active {
     display: none;
 }
 
-.form-login label.error,
-.form-registration label.error,
-.form-restore label.error {
-    text-align: center;
-     margin-top: 10px !important;
-     padding: 5px !important;
-     background-color: #f2dede !important;
-     margin-bottom: 15px !important;
-     color: #7f7f7f !important;
-     font-size: 14px !important;
-     width: 100% !important;
-}
 
 
 .btn-orange {
@@ -3570,4 +3600,39 @@ span.btn-banner-yellow:active {
 
 .style-links {
     color: #16a89e;
+}
+
+#log {
+    color: #4d4f5b;
+    font-family: "Open Sans",Helvetica,Arial,sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.tolowercase {
+    text-transform: lowercase !important;
+}
+
+.box-capcha {
+    width: 370px;
+}
+.box-capcha #img-captcha {
+    width: 317px;
+    height: 48px;
+    border-top: 3px;
+    border-left: 3px;
+    border-bottom: 3px;
+    border-style: solid;
+    border-color: #16a89e;
+    float:left;
+}
+.update-capcha {
+    float: left;
+    display: block;
+    width: 53px;
+    cursor: pointer;
+    height: 48px;
+    background: url('../images/capcha_update.png') no-repeat;
 }

@@ -24,13 +24,16 @@ $config = array(
             'rememberMeTime' => 2592000 // 30 days
         ),
         'api_device' => array(
-            '_domain' => 'a.pumpic.dev',
+            '_domain' => 'a.pumpic.com',
             'path_img' => 'compatibility',
-            'host' => 'http://a.pumpic.dev/index.php'
+            'host' => 'http://a.pumpic.com/index.php'
          ),
     
 	'php_compile' => array(
-		'compatibility_send.html' => 'compatibility_form.php'
+		'compatibility_send.html' => 'compatibility_form.php',
+                'faq_send.html' => 'faq.php',
+                'contact_us_send.html' => 'contact_us.php',
+                'capcha.html'  => 'capcha.php'
 	)
 );
 

@@ -7,7 +7,7 @@
 							<img src="{$img}/ico-protect.png" alt="">
 							<h3>Keep your family safe</h3>
 							<ul class="feature_list">
-								<li>Read incoming/outgoing texts</li>
+								<li>Follow incoming/outgoing messages</li>
 								<li>Track GPS location</li>
 								<li>Monitor Contacts and Calendar</li>
 							</ul>
@@ -20,7 +20,7 @@
 							<ul class="feature_list">
 								<li>Monitor corporate emails</li>
 								<li>Track Internet usage</li>
-								<li>Block distracting websites/apps/games</li>
+								<li>Block distracting web sources</li>
 							</ul>
 						</div>
 					</div>
@@ -30,8 +30,8 @@
 							<h3><a href="#">Protect your cell phone</a></h3>
 							<ul class="feature_list">
 								<li>Wipe out the cell phone remotely</li>
-								<li>Lock the device with a password</li>
-								<li>Use SMS-commands when the Internet is down</li>
+								<li>Record environment</li>
+								<li>Use SMS to control without Internet</li>
 							</ul>
 						</div>
 					</div>

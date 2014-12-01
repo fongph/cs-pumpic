@@ -16,10 +16,7 @@
    {/if}   
     
     <input id="email" type="email" name="email" class="text required email" placeholder="Email*" value="" />
-    <label for="email" class="error">This must be a valid email address</label>
-    
     <input type="text" placeholder="Password*" name="password" value="" class="text required" id="password" />
-    <label for="password" class="error">Not enter name</label>
     
     <div class="button-sumbit clearfix">
         <button class="btn-orange center">Sign in <i></i></button>

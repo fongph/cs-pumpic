@@ -1,6 +1,7 @@
+
 <div class="form-restore">
     
-<form class="box-form" name="form-login" action="" method="POST">
+<form class="box-form" name="form-restore" action="" method="POST">
     <input type="hidden" name="site_id" value="{$site_id}" />
     
    {if $getOut._success}
@@ -16,7 +17,6 @@
    {/if}    
     
     <input id="email" type="email" name="email" class="text required email" placeholder="Email*" value="" />
-    <label for="email" class="error">This must be a valid email address</label>
     
     <div class="button-sumbit clearfix">
         <button class="btn-orange center">Restore <i></i></button>

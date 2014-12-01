@@ -1,6 +1,7 @@
 <div class="form-registration">
+
     
-<form class="box-form" name="form-login" action="" method="POST">
+<form class="box-form" name="form-registration" action="" method="POST">
     <input type="hidden" name="site_id" value="{$site_id}" />
     
     {if $getOut._success}
@@ -16,7 +17,12 @@
    {/if}
    
     <input id="email" type="email" name="email" class="text required email" placeholder="Email*" value="" />
-    <label for="email" class="error">This must be a valid email address</label>
+    <div class="box-capcha">
+        <img src="/capcha.html" id="img-captcha">
+        <span class="update-capcha"></span>
+    </div>
+    
+    <input id="capcha" type="text" name="capcha" autocomplete="off" class="text required capcha" />
     
     <div class="button-sumbit clearfix">
         <button class="btn-orange center">Register <i></i></button>

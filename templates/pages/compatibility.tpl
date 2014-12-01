@@ -9,7 +9,7 @@
 {include file='../includes/button-help.tpl'}
 {include file='../includes/button-goup.tpl'}
 	<div class="wrapper">
-	{include file='../includes/topmenu-logo-login.tpl' topmenu_active="features"}	
+	{include file='../includes/topmenu-logo-login.tpl' topmenu_active="compatibility"}	
 <div class="very_easy">
                 <div class="container">
                         <div class="row">
@@ -77,31 +77,34 @@
                                 <div class="col-lg-10 col-lg-offset-1">
                                         <div class="row">
                                                         <div class="form">
-                                                            <form method="POST" action="" name="send_find_phone">
+                                                            <form class="send_find_phone" method="POST" action="" name="send_find_phone">
                                                                         <fieldset>
                                                                                 <legend>
                                                                                     CAN’T FIND YOUR PHONE HERE?<span>LET’S CHECK IF IT IS COMPATIBLE:</span>
                                                                                 </legend>
-                                                                                <span class="info"></span>
+                                                                                
                                                                                 <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3">
+                                                                                        <span class="info"></span>
+                                                                                    
                                                                                         <div class="form-group">
-                                                                                                <input type="text" 
-                                                                                                       class="form-control" 
+                                                                                                <input id="device-model" type="text" 
+                                                                                                       class="form-control required" 
                                                                                                        name="device-model" 
                                                                                                        value=""
                                                                                                        placeholder="Device model*">
-                                                                                                <div class="box-error"></div>
+                                                                                                
                                                                                                 {*<p class="bg-danger"></p>*}
                                                                                         </div>
                                                                                         <div class="form-group has-error">
-                                                                                                <input type="email" 
-                                                                                                       class="form-control" 
+                                                                                                <input id="email" type="email" 
+                                                                                                       class="form-control required" 
                                                                                                        name="email"
                                                                                                        value=""
                                                                                                        placeholder="Email*">
-                                                                                                <div class="box-error"></div>
+                                                                                                
                                                                                                 {*<p class="bg-danger"></p>*}
                                                                                         </div>
+                                                                                        <div class="fatal-error"></div>
                                                                                         <button class="btn btn-warning">Submit<i class="icon-right-open"></i>
                                                                                         </button>
                                                                                 </div>

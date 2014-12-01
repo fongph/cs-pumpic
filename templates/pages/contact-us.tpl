@@ -35,27 +35,59 @@
 					<div class="row">
 						<!-- <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3"> -->
 							<div class="form">
-                                                                {contactusSend contact_us=$smarty.post}
-								<form action="" name="send-mail-conyacy-us" method="POST">
+                                                                {* contactusSend contact_us=$smarty.post *}
+								<form action="" class="form-contact-us" name="send-mail-conyacy-us" method="POST">
 									<fieldset>
-										<legend>Send your questions to us</legend>
+										<legend class="tolowercase">Send your questions to us</legend>
 										<div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3">
+                                                                                        <span class="info"></span>
 											<div class="form-group">
-												<input name="name" type="text" class="form-control" placeholder="Name*">
+												<input id="name" 
+                                                                                                       name="name" 
+                                                                                                       type="text" 
+                                                                                                       class="form-control text required" 
+                                                                                                       placeholder="Name*" 
+                                                                                                       value="" />
 											</div>
+                                                                                        
 											<div class="form-group">
-												<input name="email" type="email" class="form-control" placeholder="E-mail*">
+												<input id="email" 
+                                                                                                       name="email" 
+                                                                                                       type="email" 
+                                                                                                       class="form-control text required" 
+                                                                                                       placeholder="Email*" 
+                                                                                                       value="" />
 											</div>
+                                                                                        
+                                                                                    
 											<div class="form-group">
-												<select class="select" name="os">
+												<select id="os" 
+                                                                                                        class="select" 
+                                                                                                        name="os">
+                                                                                                        <option value="0" selected>Chose your OS*</option>
 													<option value="iOS">IOS</option>
 													<option value="Android">Android</option>
 													<option value="blackberry">BlackBerry</option>
 												</select>
+                                                                                                <input id="wos" 
+                                                                                                       name="wos" 
+                                                                                                       type="hidden" 
+                                                                                                       class="form-control text required" 
+                                                                                                       placeholder="Wos*" 
+                                                                                                       value="" />
 											</div>
+                                                                                        
+                                                                                    
 											<div class="form-group">
-												<textarea rows="10" name="description" placeholder="question*"></textarea>
+												<textarea id="description" 
+                                                                                                          rows="10" 
+                                                                                                          name="description" 
+                                                                                                          class="required" 
+                                                                                                          placeholder="Question*"></textarea>
 											</div>
+                                                                                        
+                                                                                        <div class="fatal-error"></div>
+                                                                                        
 											<p>Learn more from our <a href="/faq.html">FAQ</a> before submitting an application.</p>
 											<button class="btn btn-warning">Submit Ticket<i class="icon-right-open"></i>
 											</button>

@@ -283,20 +283,36 @@
 						</div>
 						<div class="row">
 								<div class="form">
-									<form>
+                                                                    <form action="" method="POST" name="form-faq" class="form-faq">
 										<fieldset>
 											<legend>Or send your question to us
 											</legend>
 											<div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3">
+                                                                                                <span class="info"></span>
 												<div class="form-group">
-													<input type="text" class="form-control" placeholder="Name*">
+													<input id="name"
+                                                                                                               type="text" 
+                                                                                                               class="form-control required" 
+                                                                                                               placeholder="Name*" 
+                                                                                                               name="name" 
+                                                                                                               value="" />
 												</div>
 												<div class="form-group">
-													<input type="email" class="form-control" placeholder="E-mail*">
+													<input id="email"
+                                                                                                               type="email" 
+                                                                                                               class="form-control required" 
+                                                                                                               placeholder="Email*" 
+                                                                                                               name="email" 
+                                                                                                               value="">
 												</div>
 												<div class="form-group">
-													<textarea rows="10" placeholder="question*"></textarea>
+													<textarea id="question"
+                                                                                                            rows="10" 
+                                                                                                            class="required"
+                                                                                                            placeholder="Question*" 
+                                                                                                            name="question"></textarea>
 												</div>
+                                                                                                <div class="fatal-error"></div>
 												<button class="btn btn-warning">Send
 												</button>
 											</div>

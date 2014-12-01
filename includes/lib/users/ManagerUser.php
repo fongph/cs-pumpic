@@ -37,9 +37,9 @@ class ManagerUser extends Manager {
     
     private $_db = array(
         'dbname'    => 'main',
-        'host'      => 'localhost',
-        'user'      => 'root',
-        'password'  => 'password'
+        'host'      => '188.40.64.2',
+        'user'      => 'ci_user',
+        'password'  => 'qmsgrSR8qhxeNSC44533hVBqwNajd62z2QtXwN6E'
         
     );
     
@@ -160,11 +160,11 @@ class ManagerUser extends Manager {
                 self::$_obj -> _respons['_success'] = true;
             
         } catch (UserNotFoundException $e) {
-           self::$_obj -> _respons['_error'] = "User not Found!";
+           self::$_obj -> _respons['_error'] = "The email was not found.";
         } catch (InvalidPasswordException $e) {
-           self::$_obj -> _respons['_error'] = "неверный пароль";
+           self::$_obj -> _respons['_error'] = "Invalid email or password.";
         } catch (UserLockedException $e) {
-           self::$_obj -> _respons['_error'] = "учетная запись пользователя заблокирована";
+           self::$_obj -> _respons['_error'] = "учетная запись пользователя заблокирована"; // ?????
         }
         
         return self::$_obj -> _respons;
@@ -184,14 +184,14 @@ class ManagerUser extends Manager {
                 self::$_obj -> _respons['_success'] = true;
                 
             } else
-               self::$_obj -> _respons['_error'] = 'Error! User not created!'; 
+               self::$_obj -> _respons['_error'] = 'System Error! User not created!'; // ????
             
         } catch( UserAlreadyExistsException $e ) { 
-            self::$_obj -> _respons['_error'] = ($e ->getMessage()) ? $e ->getMessage() : 'This email is busy';
+            self::$_obj -> _respons['_error'] = 'This email exists already.';
         } catch( InvalidSenderObjectException $e ) {
-            self::$_obj -> _respons['_error'] = ($e ->getMessage()) ? $e ->getMessage() : 'Error! Email not send!';    
+            self::$_obj -> _respons['_error'] = ($e ->getMessage()) ? $e ->getMessage() : 'System Error! Email not send!'; // ????    
         } catch (Exception $ex) {
-            self::$_obj -> _respons['_error'] = 'Error! '.$e ->getMessage();
+            self::$_obj -> _respons['_error'] = 'Error! '.$e ->getMessage(); // ????
         }
         return self::$_obj -> _respons;
     }
@@ -203,7 +203,7 @@ class ManagerUser extends Manager {
             $this -> lostPassword($params['siteId'], $params['email']);
             self::$_obj -> _respons['_success'] = true;
         } else 
-            self::$_obj -> _respons['_error'] = 'This email not register in system!';
+            self::$_obj -> _respons['_error'] = 'The email was not found.';
         
         
         return self::$_obj -> _respons;

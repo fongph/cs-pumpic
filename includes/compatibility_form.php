@@ -32,7 +32,7 @@ $smarty->registerPlugin("modifier",'json', 'json_modifier');
 $smarty->registerPlugin("function",'json', 'json_function');
 
 // generate params
-$smarty->assign('arr', $_mail -> _send($_request) );
+$smarty->assign('arr', $_mail -> _sendCompatibility($_request) );
 
 // init output params
 $smarty->display($b_dir.'/templates/json/compatibility_json.tpl');

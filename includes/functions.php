@@ -525,40 +525,9 @@ function smarty_function_openigsoonSendMail($params, $template) {
         
         
         if(!validateEmail($_form_discount['email'])) {
-            $_result['_error'] = "Not validate email address!";
+            $_result['_error'] = "Invalid email format.";
         } else {
             
-            
-            $title = "Openig Soon Thanks";
-//        $_body = "<table>";
-//        
-//        if(isset($_form_discount['name']))
-//            $_body .= "<tr><td>Name:</td><td>".$_form_discount['name']."</td></tr>";
-//        if(isset($_form_discount['email']))
-//            $_body .= "<tr><td>Email:</td><td>".$_form_discount['email']."</td></tr>";
-//        
-//        $_body .= "</table>";
-        
-            $_body = "<h2>Greetings!</h2><br />
-                      <p>Thank you for your interest in using pumpic.com products. 
-                      The discount of 50% was sent to your email address. As soon as we launch our product, 
-                      you will <br /> receive the confirmation email, stating that you can use both the product and the discount. 
-                      If you have any further questions, please, contact our customer support<br /> at <a href='mailto:support@pumpic.com'>support@pumpic.com</a>.</p>
-                      <p>Have a great day!</p><br />
-                      <a href='http://pumpic.com/'>pumpic.com</a>";
-
-
-            $_tmp = "<html>
-                        <head>
-                            <title>{title}</title>
-                        </head>
-                        <body>
-                            {body}
-                        </body>
-                    </html>";
-            $_params = array("{title}" => $title, "{body}" => $_body);
-            $_text = strtr($_tmp, $_params);
-
             if(!saveDB( array('to' => $_form_discount['email'],
                               'from' => false,
                               'body' => false,
@@ -566,12 +535,28 @@ function smarty_function_openigsoonSendMail($params, $template) {
                               'name' => $_form_discount['name'])) ) {
                 $_result['_error'] = "This email address has been already registered";
             } else {
-                sendEmail($_form_discount['email'], 'Openig Soon Thanks #pp '.$_id, $_text, 'no-reply@pumpic.com');
-                $_result['_success'] = 'Thank you for choosing pumpic.com';
+                require_once 'lib/class.phpmail.php';
+                
+                $_mail = new Phpmail();
+                $_data = $_mail ->send( array(
+                    'from' => 'no-reply@pumpic.com',
+                    'to' => $_form_discount['email'],
+                    'type' =>  'OpenigSoonThanks_pumpic',
+                    'params' => [
+                        'subject' => ['OpenigSoonThanks_pumpic' => 'Openig Soon Thanks'],
+                    ],
+                ) );
+                
+                if($_data['success']) {
+                    $_result['_success'] = 'Thank you for choosing pumpic.com';
+                } else
+                    $_result['_error'] = $_data['error'];
+                
+                
             }
         }
     } else
-        $_result['_error'] = 'Not validate email address!';
+        $_result['_error'] = 'Invalid systems params.';
     
     
     // init output params!
@@ -969,6 +954,8 @@ function smarty_function_features_plans( $_plans = array()  ) {
  *Авторизация  
  */
 function smarty_function_authorization($params, $template) {
+    
+    
     require_once 'lib/users/ManagerUser.php';
     
     $_result = array(

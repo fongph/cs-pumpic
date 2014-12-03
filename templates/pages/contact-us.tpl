@@ -64,7 +64,7 @@
 												<select id="os" 
                                                                                                         class="select" 
                                                                                                         name="os">
-                                                                                                        <option value="0" selected>Chose your OS*</option>
+                                                                                                        <option value="0" selected>Choose your OS*</option>
 													<option value="iOS">IOS</option>
 													<option value="Android">Android</option>
 													<option value="blackberry">BlackBerry</option>

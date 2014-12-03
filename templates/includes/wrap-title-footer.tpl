@@ -26,7 +26,10 @@
         <script src="{$js}/jquery.simplePagination.js"></script>
         
         <!-- jquery validate -->
-        <script src="{$js}/jquery.validate.js"></script>
+        <script src="{$js}/jquery.validate.min.js"></script>
+        
+        <!-- jquery translite -->
+        <script src="{$js}/translite/jquery.synctranslit.js"></script>
         
         <!-- init -->
         <script src="{$js}/scroll.js"></script>

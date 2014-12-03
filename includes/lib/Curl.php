@@ -1,4 +1,5 @@
 <?php
+namespace system;
 
 class Curl {
     
@@ -517,7 +518,7 @@ class Curl {
     }
 }
 
-class CaseInsensitiveArray implements ArrayAccess, Countable, Iterator
+class CaseInsensitiveArray implements \ArrayAccess, \Countable, \Iterator
 {
     private $container = array();
 

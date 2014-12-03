@@ -25,11 +25,17 @@ function json_function($params, &$smarty) {
     return json_encode($params);
 }
 
+// $_request = $_GET['params'];
+
 $_request = (isset($_POST['params']) and !empty($_POST['params'])) ? $_POST['params']: false;
 
 // register function and modifier
 $smarty->registerPlugin("modifier",'json', 'json_modifier');
 $smarty->registerPlugin("function",'json', 'json_function');
+
+//echo "<pre>";
+//var_dump( $_request );
+//echo "</pre>";
 
 // generate params
 $smarty->assign('arr', $_mail -> _sendContactUs($_request) );

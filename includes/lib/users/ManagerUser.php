@@ -36,23 +36,23 @@ class ManagerUser extends Manager {
         '_success' => false
     );
     /* prod */
-    private $_db = array(
-        'dbname'    => 'main',
-        'host'      => '188.40.64.2',
-        'user'      => 'ci_user',
-        'password'  => 'qmsgrSR8qhxeNSC44533hVBqwNajd62z2QtXwN6E'
-        
-    );
+//    private $_db = array(
+//        'dbname'    => 'main',
+//        'host'      => '188.40.64.2',
+//        'user'      => 'ci_user',
+//        'password'  => 'qmsgrSR8qhxeNSC44533hVBqwNajd62z2QtXwN6E'
+//        
+//    );
     
     
     /* dev */
-//    private $_db = array(
-//        'dbname'    => 'main',
-//        'host'      => 'localhost',
-//        'user'      => 'root',
-//        'password'  => 'password'
-//        
-//    );
+    private $_db = array(
+        'dbname'    => 'main',
+        'host'      => 'localhost',
+        'user'      => 'root',
+        'password'  => 'password'
+        
+    );
     
     private $_session;
     private $_di;

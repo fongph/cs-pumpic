@@ -340,7 +340,7 @@ function getAjaxForm(path, params, options) {
     console.log(res);            
                 
     res = eval('['+res+']');
-    obj = res[0];
+    var obj = res[0];
     return obj;
 }
 
@@ -580,17 +580,20 @@ $(document).ready(function(){
                                  $('<label id="'+name+'-error" for="'+name+'" class="invalid">'+text+'</label>').insertAfter(_obj); 
                           }
                       });
+                      return false;
                   } else if(_res.success) {
                       $('form[name="send_find_phone"] span.info').html( "Your email has been successfully sent" ).css({'display':'inline-block'});
 
                   } else {
                       $('form[name="send_find_phone"] .fatal-error').html('Your email was not sent.');
                       console.log('System error!');
+                      return false;
                   }    
 
               } else {
                   $('form[name="send_find_phone"] .fatal-error').html('Your email was not sent.'); 
                   console.log('Can not get params in ajax!');
+                  return false;
               }
                   
 
@@ -664,17 +667,20 @@ $(document).ready(function(){
                                  $('<label id="'+name+'-error" for="'+name+'" class="invalid">'+text+'</label>').insertAfter(_obj); 
                           }
                       });
+                      return false;
                   } else if(_res.success) {
                       $('form.form-faq span.info').html( "Your email was succesfully sent." ).css({'display':'inline-block'});
 
                   } else {
                       $('form.form-faq .fatal-error').html('Your email was not sent.');
                       console.log('System error!');
+                      return false;
                   }    
 
               } else {
                   $('form.form-faq .fatal-error').html('Your email was not sent.'); 
                   console.log('Can not get params in ajax!');
+                  return false;
               }
                   
 
@@ -758,7 +764,7 @@ $(document).ready(function(){
             var _params = parseQuery($form.serializeArray());
 
             console.log( _params );
-
+            
             var _response = getAjaxForm('/contact_us_send.html', _params);
               if(_response.result) {
                   var _res = _response.result;
@@ -772,17 +778,20 @@ $(document).ready(function(){
                                  $('<label id="'+name+'-error" for="'+name+'" class="invalid">'+text+'</label>').insertAfter(_obj); 
                           }
                       });
+                      return false;
                   } else if(_res.success) {
                       $('form.form-contact-us span.info').html( "Your email was succesfully sent." ).css({'display':'inline-block'});
 
                   } else {
                       $('form.form-contact-us .fatal-error').html('Your email was not sent.');
                       console.log('System error!');
+                      return false;
                   }    
 
               } else {
                   $('form.form-contact-us .fatal-error').html('Your email was not sent.'); 
                   console.log('Can not get params in ajax!');
+                  return false;
               }
                   
 

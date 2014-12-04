@@ -451,7 +451,13 @@ $(document).ready(function(){
              $(this).parent().addClass('active');
              $('.box_category ul li').hide();
              if(_hash.length > 1) {
-                $('.box_category ul li').find('#'+_hash[1]).parents('li').show();
+                if(_hash[1] == 'all') {
+                    $('.box_category ul li').show();
+                } else {
+                    $('.box_category ul li').find('#'+_hash[1]).parents('li').show();
+                }
+                 
+                
              }
          }     
          

@@ -1,18 +1,18 @@
 <?php
-//namespace api;
 
-//$apiMailPath = dirname( __FILE__ );
-//$_lib = dirname( $apiMailPath );
+namespace api;
 
-//require_once $_lib.'/Curl.php';
-//require_once $apiMailPath.'/Component.php';
+$apiMailPath = dirname( __FILE__ );
+$_lib = dirname( $apiMailPath );
+
+require_once $_lib.'/Curl.php';
+require_once $apiMailPath.'/Component.php';
 // require_once './Settings.php';
 
-//use system\Component as Component;
-//use system\Curl as Curl;
+use system\Component as Component;
+use system\Curl as Curl;
 
-
-class ApiMail  { // extends Component
+class ApiMail extends Component { 
     const API_URL = 'http://sender-mail.pumpic.com/';
     const LICEN_KEY = '258EAFA5-E914-47DA-95CA-C5AB0DC85B11';
     
@@ -102,19 +102,10 @@ class ApiMail  { // extends Component
                 'response'  => (isset($_params['response'])) ? $_params['response'] : 'json',
             );
             
-            if(!empty(self::LICEN_KEY))
-                $_post = array_merge ($_post, array('_hash' => self::LICEN_KEY));
-            
-            echo "<pre>";
-            var_dump( self::API_URL, $_post );
-            echo "</pre>"; die('stop');
+            if(self::LICEN_KEY)
+                $_post = array_merge ($_post, ['_hash' => self::LICEN_KEY]);
             
             $_curl-> post(self::API_URL, $_post);
-            
-            
-            echo "<pre>";
-            var_dump( $_curl->response );
-            echo "</pre>";
             
             $_respons = json_decode($_curl->response); 
             if(is_object($_respons)

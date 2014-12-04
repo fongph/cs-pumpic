@@ -4,7 +4,7 @@
 {strip}
 {include file='../includes/wrap-title-header.tpl'}
 
-	<title>SEO title for cellspy.org</title>
+	<title>Pumpic.com mobile monitoring software.</title>
 	<meta name="description" content="Cellspy.org meta description" />
 	<meta name="keywords" content="parental control, employee monitoring"/>
 

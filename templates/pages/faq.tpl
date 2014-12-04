@@ -126,7 +126,7 @@
 											<li>
 												<a id="install" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse15">How to jailbreak iOS?</a>
 												<div id="collapse15" class="collapse">
-													<p>Detailed instructions on how to jailbreak an iOS device can be found <a class="text-link" href="#">here</a>. Note that all iOS devices have to be jailbroken before installing Pumpic.</p>
+													<p>Detailed instructions on how to jailbreak an iOS device can be found <a class="text-link" href="http://{$domain}/security/how-to-jailbreak-iphone-4-4s-5-5s-5c-ios-7/">here</a>. Note that all iOS devices have to be jailbroken before installing Pumpic.</p>
 												</div>
 											</li>
 											<li>

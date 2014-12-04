@@ -1,11 +1,12 @@
 <?php
-require_once dirname(__FILE__).'/apiMail/api.php';
-require_once dirname(__FILE__).'/apiMail/Settings.php';
+include dirname(__FILE__).'/apiMail/sendMail.php';
+include dirname(__FILE__).'/apiMail/Settings.php';
+
 
 use api\ApiMail as ApiMail;
 use api\Settings as Settings; 
 
-class Phpmail extends Settings {
+class Phpmail extends Settings {  
     private $_api;
     private $_data;
     
@@ -54,6 +55,7 @@ class Phpmail extends Settings {
     
     public function send( $_params ) {
         
+        
         if(!$this -> validateEmail($_params['to'])) {
             $this -> _messange['error'] = "Invalid email format.";
         } else {
@@ -65,10 +67,13 @@ class Phpmail extends Settings {
                                     $_params['params']) 
                 -> sendMAil();
             
+            
             if($_data === true) {
                 $this -> _messange['success'] = "Your email was succesfully sent.";
             } else
                 $this -> _messange['error'] = "Invalid System Params.";
+            
+            
             
         }   
         

@@ -14,7 +14,8 @@ use CS\Users\UserLockedException as UserLockedException;
 use CS\Users\InvalidSenderObjectException as InvalidSenderObjectException; // exception sender mail
 
 use CS\Mail\MailSender;
-use CS\Mail\Processor\FileProcessor;
+use CS\Settings\GlobalSettings;
+use CS\Mail\Processor\RemoteProcessor;
 
 use includes\lib\CDb as DB;
 
@@ -24,17 +25,21 @@ require_once dirname( PATH ).'/CDb.php';
 $loader = require dirname( dirname( dirname( PATH ) ) ).'/vendor/autoload.php';
 
 class ManagerUser extends Manager {
+    const SITE_ID = 1;
+    const LANG = 'en-GB';
+    
     static $_obj;
     
     private $_pdo;
     private $_params;
     
-    private $_data;
-    
+    private $_data; // cache user
     private $_respons = array(
         '_error' => false,
         '_success' => false
-    );
+    ); // cache messange
+    
+    
     /* prod */
 //    private $_db = array(
 //        'dbname'    => 'main',
@@ -45,14 +50,20 @@ class ManagerUser extends Manager {
 //    );
     
     
-    /* dev */
-    private $_db = array(
-        'dbname'    => 'main',
-        'host'      => 'localhost',
-        'user'      => 'root',
-        'password'  => 'password'
-        
-    );
+    private $_db = [
+        'dev' => array(
+                    'dbname'    => 'main',
+                    'host'      => 'localhost',
+                    'user'      => 'root',
+                    'password'  => 'password'
+                 ),
+        'prod' => array(
+                    'dbname'    => 'main',
+                    'host'      => '188.40.64.2',
+                    'user'      => 'ci_user',
+                    'password'  => 'qmsgrSR8qhxeNSC44533hVBqwNajd62z2QtXwN6E'
+                ),
+    ];
     
     private $_session;
     private $_di;
@@ -65,15 +76,21 @@ class ManagerUser extends Manager {
         $this -> _di -> set('session', $this -> _session);
         $this -> _auth = new Auth($this -> _di);
         
-        $db = new DB($this -> _db);
+        $db = new DB($this -> getSettingsDB());
         $this -> _pdo = $db -> getConnected();
         parent::__construct($this -> _pdo);
         
+        // mailProcessor
+        $mailProcessor = new RemoteProcessor(
+                GlobalSettings::getMailSenderURL(1), 
+                GlobalSettings::getMailSenderSecret(1)
+        );
+        
         // set sender
-        $this -> _mail_sender = new MailSender( new FileProcessor('log.txt') );
+        $this -> _mail_sender = new MailSender( $mailProcessor );
         $this -> _mail_sender
-               ->setLocale('ru-Ru')
-               ->setSiteId(1);
+               ->setLocale( self::LANG )
+               ->setSiteId( self::SITE_ID );
         parent::setSender( $this -> _mail_sender ); // init mail sender
         
         
@@ -82,6 +99,14 @@ class ManagerUser extends Manager {
         
         
         return self::$_obj;
+    }
+    
+    private function getSettingsDB() {
+        $_type = 'prod';
+        if (in_array(@$_SERVER['REMOTE_ADDR'], ['127.0.0.1', '::1'])) {
+            $_type = 'dev';
+        }
+        return $this -> _db[ $_type ];
     }
     
     public static function init(Array $_settings ) {
@@ -188,8 +213,8 @@ class ManagerUser extends Manager {
     private function _registration(\ArrayAccess $params) {
         try {
             $user_id = $this -> createUser($params['siteId'], $params['email']);
-            if($user_id) {
-                $_data = $this->loginById( $user_id );
+            if((int)$user_id) {
+                $_data = $this->getUserDataById( self::SITE_ID, (int)$user_id );
                 $this -> _auth ->setIdentity( $_data );
                 
                 self::$_obj -> _data  = $this -> _auth->getIdentity();
@@ -271,7 +296,7 @@ class ManagerUser extends Manager {
     public function getLoginUser() {
         $data = $this->_auth->getIdentity();
         if(isset($data['id']) and !empty($data['id']))
-            return $this->loginById($data['id']);
+            return $this->getUserDataById(self::SITE_ID, (int)$data['id']);
         else
             return false;
     }

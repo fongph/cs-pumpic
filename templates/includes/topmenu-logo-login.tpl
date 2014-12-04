@@ -1,4 +1,4 @@
-{*hasUser out="getUser"*}		
+{hasUser out="getUser"}		
 <div class="header">
 			<div class="container">
 				<div class="row">
@@ -15,11 +15,11 @@
 									<a href="{$domain_http}">pumpic</a>
 								</div>
 							</div>
-                                                        {*if $getUser.success == 'true'} 
-                                                            <a href="http://cp.pumpic.com/" class="btn btn-sm btn-success pull-right visible-lg"><i class="icon-lock"></i> CP </a>
-                                                        {else*}
+                                                        {if $getUser.success == 'true'} 
+                                                            <a href="http://cp.{$domain}/" class="btn btn-sm btn-success pull-right visible-lg"><i class="icon-lock"></i> CP </a>
+                                                        {else}
                                                             <a href="#" class="btn btn-sm btn-success pull-right visible-lg"><i class="icon-lock"></i> Log In</a>
-                                                        {*/if*}    
+                                                        {/if}    
 							
 							<!-- Collect the nav links, forms, and other content for toggling -->
 							<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">

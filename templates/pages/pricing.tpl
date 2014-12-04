@@ -116,20 +116,20 @@
 									<tbody>
 										<tr>
 											<td>Calls history</td>
-											<td><b>700</b> calls
+											<td><b>700</b> calls<br />monthly
 											</td>
-											<td><b>700</b> calls
+											<td><b>700</b> calls<br />monthly
 											</td>
-											<td><b>700</b> calls
+											<td><b>700</b> calls<br />monthly
 											</td>
 										</tr>
 										<tr>
 											<td>SMS history</td>
-											<td><b>300</b> SMS
+											<td><b>300</b> SMS<br />monthly
 											</td>
-											<td><b>300</b> SMS
+											<td><b>300</b> SMS<br />monthly
 											</td>
-											<td><b>300</b> SMS
+											<td><b>300</b> SMS<br />monthly
 											</td>
 										</tr>
 										<tr>

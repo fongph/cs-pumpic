@@ -513,6 +513,7 @@ function saveDB( $_params ) {
 }
 
 function smarty_function_openigsoonSendMail($params, $template) {
+    
     $_result = array(
         '_error' => false,
         '_success' => false,
@@ -535,17 +536,18 @@ function smarty_function_openigsoonSendMail($params, $template) {
                               'name' => $_form_discount['name'])) ) {
                 $_result['_error'] = "This email address has been already registered";
             } else {
-                require_once 'lib/class.phpmail.php';
+                include dirname(__FILE__).'/lib/class.phpmail.php';
                 
                 $_mail = new Phpmail();
-                $_data = $_mail ->send( array(
-                    'from' => 'no-reply@pumpic.com',
+                $_data = $_mail -> send( array(
+                    'from' => 'noreply@pumpic.com',
                     'to' => $_form_discount['email'],
                     'type' =>  'OpenigSoonThanks_pumpic',
                     'params' => [
                         'subject' => ['OpenigSoonThanks_pumpic' => 'Openig Soon Thanks'],
                     ],
                 ) );
+                
                 
                 if($_data['success']) {
                     $_result['_success'] = 'Thank you for choosing pumpic.com';
@@ -1103,7 +1105,7 @@ function smarty_function_restore($params, $template) {
     }
     
     if($_result['_success']) {
-        $_result['_success'] = 'Successful restore.';
+        $_result['_success'] = 'Your request was successfully sent. Check your inbox and follow the instructions from the received email.';
     }
     
     // init output params!

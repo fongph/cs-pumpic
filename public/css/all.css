@@ -1805,6 +1805,7 @@ textarea {
   }
 }
 .dtable strong {
+  color: #4d4f5b;  
   font-weight: 800;
   text-transform: uppercase;
 }
@@ -1931,6 +1932,7 @@ textarea {
   vertical-align: middle;
 }
 .dbody .row .dtd i {
+  color: #4d4f5b;
   font-size: 18px;
 }
 @media only screen and (max-width: 480px) {
@@ -3139,6 +3141,7 @@ article img.pull-right {
 .bg-danger {
   margin-top: 10px;
   padding: 5px;
+  font-weight: bold;
 }
 
 
@@ -3552,6 +3555,7 @@ span.btn-banner-yellow:active {
     text-align: center;
     background: #b1e5d8;
     width: 100%;
+    font-weight: bold;
 }
 
 .text-center {
@@ -3635,4 +3639,12 @@ span.btn-banner-yellow:active {
     cursor: pointer;
     height: 48px;
     background: url('../images/capcha_update.png') no-repeat;
+}
+
+.mobile-icon-none {
+    display: inline-block;
+    margin-left: 0.2em;
+    margin-right: 0.2em;
+    text-align: center;
+    width: 1em;
 }

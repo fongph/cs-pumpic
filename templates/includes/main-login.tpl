@@ -16,7 +16,7 @@
    {/if}   
     
     <input id="email" type="email" name="email" class="text required email" placeholder="Email*" value="" />
-    <input type="text" placeholder="Password*" name="password" value="" class="text required" id="password" />
+    <input type="password" placeholder="Password*" name="password" value="" class="text required" id="password" />
     
     <div class="button-sumbit clearfix">
         <button class="btn-orange center">Sign in <i></i></button>

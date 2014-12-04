@@ -1,10 +1,14 @@
 <div class="row box-body-filters" attr-use-plan="{$item_plan}">
     <div class="col-lg-5 col-md-5 box-first">
-        <div class="dtd w30p" {if $_id == 'viber-whatsapp-skype'} style="width: 16% !important;" {/if} >{$title}</div>
+        <div class="dtd w30p" {if $_id == 'viber-whatsapp-skype'} style="width: 30.3333% !important;" {/if} >{$title}</div> {* 16% *}
         <!-- dtd -->
         <div class="dtd box-filter-mobile w13p">
             {foreach from=$device key=k item=v}
-                <i class="icon-{$k} {if $v.status == true} supported {/if}"></i>
+                {if $v.status == true}
+                    <i class="icon-{$k} {if $v.status == true} supported {/if}"></i>
+                {else}
+                    <li class="mobile-icon-none">&nbsp;</li>
+                {/if}    
             {/foreach}    
         </div>
         <!-- dtd -->
@@ -29,6 +33,7 @@
                 <div class="col-lg-7">
                     <h3>{$description.title}</h3>
                     <p>{$description.body}</p>
+                    {*
                     <span class="text-screens">Screens:</span>
                     <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
                         <div class="carousel-inner">
@@ -71,6 +76,9 @@
                         <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev"></a>
                         <a class="right carousel-control" href="#carousel-example-generic" data-slide="next"></a>
                     </div>
+                    *}
+                    
+                    
                 </div>
                     <div class="col-lg-5">
                             <div class="list_plans">

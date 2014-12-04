@@ -93,8 +93,16 @@
 				<div class="row">
 					<div class="col-sm-10 col-md-10 col-lg-10 col-sm-offset-1 col-md-offset-1 col-lg-offset-1">
 						<div class="share">
-							Share:
-							<img src="<?php echo getStaticUrl();?>/images/social-buttons.png" alt="">
+							<?php /*Share:
+							<img src="<?php echo getStaticUrl();?>/images/social-buttons.png" alt=""> */ ?>
+                                                        
+                                                        <ul class="box-socials clearfix">
+                                                            <li><a href="https://www.facebook.com/pages/Pumpic/299299196929718?sk=timeline" class="icons-social i-fb"></a></li>
+                                                            <li><a href="https://twitter.com/pumpic_com" class="icons-social i-tw"></a></li>
+                                                            <li><a href="https://www.youtube.com/user/pumpicapp" class="icons-social i-youtube"></a></li>
+                                                            <li><a href="https://plus.google.com/u/2/b/103434324737023434003/103434324737023434003/posts" class="icons-social i-google"></a></li>
+                                                        </ul>
+                                                        
 						</div>
 					</div>
 				</div>

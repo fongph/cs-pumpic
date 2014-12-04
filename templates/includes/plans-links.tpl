@@ -5,7 +5,7 @@
 								</a>
 							</li>
 							<li>
-								{*http://demo.{$domain}*}<span class="featured-link link-hl">View demo<i class="icon-angle-double-right"></i></span>
+								{*http://demo.{$domain}*}<a href="http://demo.{$domain}" class="featured-link link-hl">View demo<i class="icon-angle-double-right"></i></a>
 							</li>
 						</ul>
 </div>

@@ -129,14 +129,14 @@ ol li:before {
   font-weight: bold;
 }
 
-h1 {
+h1, .h1 {
   font-size: 35px;
   font-weight: 300;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   margin-bottom: 5px;
 }
 
-h2 {
+h2, .h2 {
   font-size: 30px;
   font-weight: 300;
   text-align: center;
@@ -161,7 +161,7 @@ h2 {
   font-weight: 500;
 }
 
-h3 {
+h3, .h3 {
   font-size: 20px;
   font-weight: 300;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
@@ -172,6 +172,13 @@ h3 {
 h3.title_list {
   font-size: 22px;
 }
+
+
+.h2, .h1, .h3 {
+    text-align: left;
+}
+
+
 h3 img {
   margin-right: 5px;
 }
@@ -182,7 +189,7 @@ h3 a:hover {
   color: inherit;
 }
 
-h4 {
+h4, .h4 {
   font-size: 16px;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   color: #4d4f5b;
@@ -2721,7 +2728,12 @@ article {
 article.artice_bordered {
   border-bottom: 1px solid #cecece;
 }
-article h3:after {
+
+
+article h3:after,
+article .h1_post:after,
+article .h2_post:after,
+article .h3_post:after{
   content: "";
   display: block;
   width: 65px;
@@ -2729,10 +2741,16 @@ article h3:after {
   margin-top: 10px;
   background: #16a89e;
 }
-article h3.text-center:after {
+article h3.text-center:after,
+article .h3_post.text-center:after,
+article .h2_post.text-center:after,
+article .h1_post.text-center:after{
   margin: auto;
   margin-top: 10px;
 }
+
+
+
 article h4 {
   font-size: 17px;
 }

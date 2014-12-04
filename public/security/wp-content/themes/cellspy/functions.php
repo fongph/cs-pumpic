@@ -32,11 +32,11 @@ if ( !function_exists('cellspy_r_banner_buy_1') ) {
 * Example: echo fb_cat_related_posts();
 */
 if ( !function_exists('fb_get_cat_related_posts') ) {
-    function fb_get_cat_related_posts( $limit = 5, $catName = TRUE, $title = '<h4>Related articles</h4>' ) {
+    function fb_get_cat_related_posts( $limit = 5, $catName = TRUE, $title = '<strong>Related articles</strong>' ) {
 
         if ( !is_single() )
             return;
-
+        $_count = 0;
         $limit = (int) $limit;
         $output = '<div class="related_row">';
         $output .= $title;
@@ -57,14 +57,17 @@ if ( !function_exists('fb_get_cat_related_posts') ) {
 
         $recentposts = get_posts( $args );
         foreach($recentposts as $post) {
-            setup_postdata($post);
-            $output .= '<a href="' . get_permalink($post->ID) . '">' . get_the_title($post->ID) . '</a>';
+            if($post->ID != (int)get_the_ID()) {
+                setup_postdata($post);
+                $output .= '<a href="' . get_permalink($post->ID) . '">' . get_the_title($post->ID) . '</a>';
+                $_count ++;
+            }    
         }
 
         
         $output .= '</div>';
 
-    return $output;
+    return ($_count > 1) ? $output : '';
     }
 }
 

@@ -18,7 +18,7 @@
                                                         {if $getUser.success == 'true'} 
                                                             <a href="http://cp.{$domain}/" class="btn btn-sm btn-success pull-right visible-lg"><i class="icon-lock"></i> CP </a>
                                                         {else}
-                                                            <a href="#" class="btn btn-sm btn-success pull-right visible-lg"><i class="icon-lock"></i> Log In</a>
+                                                            <a href="#" class="btn btn-sm btn-success pull-right visible-lg cp-login"><i class="icon-lock"></i> Log In</a>
                                                         {/if}    
 							
 							<!-- Collect the nav links, forms, and other content for toggling -->
@@ -46,7 +46,12 @@
 										<a href="http://demo.{$domain}">Demo</a>
 									</li-->
 									<li>
-										<a href="/login.html" class="btn btn-sm btn-success hidden-lg"><i class="icon-lock"></i> Log In</a>
+                                                                            {if $getUser.success == 'true'} 
+                                                                                <a href="http://cp.{$domain}/" class="btn btn-sm btn-success hidden-lg cp-login"><i class="icon-lock"></i> CP</a>
+                                                                            {else}
+                                                                                <a href="#" class="btn btn-sm btn-success hidden-lg cp-login"><i class="icon-lock"></i> Log In</a>
+                                                                            {/if}   
+										
 									</li>
 								</ul>
 							</div>

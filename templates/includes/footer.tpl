@@ -113,3 +113,6 @@
 				</div>
 			</div>
 		</div>
+                                        
+<!-- init popUp -->
+{include file='../includes/main-popUp.tpl'}

@@ -15,6 +15,9 @@
 	<script src="{$js}/fancy_checkbox.js"></script>
         <script src="{$js}/main.js"></script>
         
+        <!-- jquery bpopUp -->
+        <script src="{$js}/popup/jquery.bpopup.min.js"></script>
+        
         <!-- jquery plugins -->
         <script src="{$js}/jquery.cookie.js"></script>
         <script src="{$js}/jquery.ba-hashchange.min.js"></script>

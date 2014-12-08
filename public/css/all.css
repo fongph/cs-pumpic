@@ -3727,3 +3727,81 @@ only screen and (max-device-width: 480px) {
         display: block;
     }
 }
+
+/* add button logout */
+.box-cp a {
+    display: block;
+    float: left;
+    margin-right: 10px !important;
+}
+
+.box-cp a:last-child {
+    margin: 0px;
+}
+
+.box-cp .cp-logout {
+    color: #fff;
+    padding-top: 10px;
+    line-height: 20px;
+}
+
+.nav li a.cp-logout {
+    text-align: center;
+}
+
+/* popUP */
+.popUp {
+    background-color: #f3f3f3;
+/*    box-shadow: 0 0 25px 5px #999;*/
+    color: #4d4f5b;
+    display: none;
+    width: 400px;
+}
+
+.popUp .title, .popUp a {
+    color: #16a89e;
+}
+
+.popUp a {
+    text-decoration: underline;
+}
+
+.popUp .title {
+    padding-top: 30px;
+    width: 100%;
+    padding-right: 74px !important;
+}
+
+.popUp .title, .popUp .info {
+    text-align: center;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+}
+.popUp .title {
+    font-size: 24px;
+    line-height: 24px;
+    min-height: 54px;
+}
+
+.popUp .info {
+    font-size: 14px;
+    
+}
+
+.popUp .close {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.popUp .close {
+    background: url('../images/popUp_close.png') no-repeat;
+    width: 54px;
+    height: 54px;
+    opacity: 1;
+}
+
+.popUp div {
+    padding-bottom: 24px;
+}

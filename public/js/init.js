@@ -211,12 +211,18 @@
 
 })( jQuery ); 
 
+// globa variable
+$data_hash = [];
+
 // anchor
 jQuery(function(){
     jQuery(window).hashchange(function(){ 
 		if(document.location.hash == '') return;
                 var hash = location.hash.split('#');
                 if(hash.length > 1) {
+                    $data_hash = hash[1];
+                    hashchange_onLoadInit();
+                    
                     // if($('.box-anchor #'+hash[1]).length)
                     //if(typeof $('.box-anchor #'+hash[1]) == "object")
                     //    $('html, body').animate({scrollTop: $('.box-anchor #'+hash[1]).offset().top}, 800);
@@ -225,6 +231,59 @@ jQuery(function(){
     });
     jQuery(window).hashchange();
 });
+
+// init hashchange ( init bPopUp )
+function hashchange_onLoadInit() {
+    
+}
+
+function hashchange_AfterInit() { 
+    var _data = _parceHash( $data_hash );
+    // init bPopUp
+    if(isset(_data['popUp']) && _data['popUp'] == "true") {
+        // login status ok
+        if(isset($('.box-popUp #login-status-ok'))) {
+            var $this = $('.box-popUp #login-status-ok')
+            , title = $this.find('.title') 
+            , content = $this.find('.info'); 
+            
+            $('.box-popUp #login-status-ok').bPopup({
+                modalClose: true,
+                opacity: 0.6,
+                follow: [false, false], 
+                positionStyle: 'fixed', //'fixed' or 'absolute'
+                onOpen: function() {
+                    //content.html('TEST POPUP element!');
+                },
+                closeClass: 'close',
+                onClose: function() {
+                    //content.empty();
+                },
+                
+            });
+        } 
+    }
+}
+
+function _parceHash( hash ) {
+    var _data = {};
+    if(hash.length) {
+        var pair = (hash).split('&');
+        for(var i = 0; i < pair.length; i ++) {
+            var param = pair[i].split('=');
+           _data[param[0]] = param[1];
+        }
+    }
+    return _data;
+}
+
+
+function isset(element) {
+    if(typeof element != 'undefined') {
+        return element.length > 0;
+    } else
+        return false;
+}
 
 // toggleClicked
 jQuery.fn.clickToggle = function(a,b) {
@@ -880,4 +939,74 @@ $(document).ready(function(){
        });
    }
     
+    
+  /* Pricing */
+  if($('form[name="price_basic"]').length) {
+      var _basic = $('form[name="price_basic"]');
+      var _input_basic = _basic.find('#product_price_basic');
+          
+      // radio
+      _basic.find('.label_radio').on('click', function() {
+          _input_basic.val('');
+          var _val = false;
+          if($(this).is('.r_on')) {
+              _val = $(this).children('input').val();
+          }
+         _input_basic.val(_val);
+      }); 
+      
+      
+      // select 
+      _basic.find('select').change(function () {
+            _input_basic.val('');
+            var _selected = false;
+            
+            $(this).find( "option:selected" ).each(function() {
+                _selected = $( this ).val();
+            });
+            
+            if(_selected && _selected != '0') {
+                _input_basic.val( _selected );
+            }
+        })
+                .change();
+        
+        
+       
+  }
+  
+  
+  if($('form[name="price_premium"]').length) {
+      var _premium = $('form[name="price_premium"]');
+      var _input_premium = _premium.find('#product_price_premium');
+          _input_premium.val('');
+      // radio
+      _premium.find('.label_radio').on('click', function() {
+          _input_premium.val('');
+          var _val = false;
+          if($(this).is('.r_on')) {
+              _val = $(this).children('input').val();
+          }
+         _input_premium.val(_val);
+      }); 
+      
+      // select 
+      _premium.find('select').change(function () {
+          _input_premium.val('');
+            var _selected = false;
+            
+            $(this).find( "option:selected" ).each(function() {
+                _selected = $( this ).val();
+            });
+            
+            if(_selected && _selected != '0') {
+                _input_premium.val( _selected );
+            }
+        })
+                .change();
+       
+  } 
+    
+  /* hashchange_AfterInit */
+  hashchange_AfterInit();
 });

@@ -23,13 +23,26 @@
         {
             "type": "git",
             "url": "git@bitbucket.org:boomersweb/cs-users.git"
+        },
+        
+        {
+            "type": "git",
+            "url": "git@bitbucket.org:boomersweb/cs-billing.git"
+        },
+        
+        {
+            "type": "git",
+            "url": "git@bitbucket.org:boomersweb/seller.git"
         }
     ],
     "require": {
         "php": ">=5.4.0",
-        "rastor/system": "0.5.1",
+        "rastor/system": "~0.5",
+        "predis/predis": "~1.0",
+        "boomers/seller": "dev-master",
         "boomers/ip": "dev-master",
         "boomers/cs-models": "dev-master",
+        "boomers/cs-billing": "dev-master",
         "boomers/cs-mail": "dev-master",
         "boomers/cs-settings": "dev-master",
         "boomers/cs-users": "dev-master"

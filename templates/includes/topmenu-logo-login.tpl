@@ -1,4 +1,4 @@
-{hasUser out="getUser"}		
+{hasUser out="getUser"}	
 <div class="header">
 			<div class="container">
 				<div class="row">
@@ -16,9 +16,12 @@
 								</div>
 							</div>
                                                         {if $getUser.success == 'true'} 
-                                                            <a href="http://cp.{$domain}/" class="btn btn-sm btn-success pull-right visible-lg"><i class="icon-lock"></i> CP </a>
+                                                         <div class='box-cp pull-right'>   
+                                                            <a href="/logout.html" class="pull-right visible-lg cp-logout">Log Out</a>
+                                                            <a href="http://cp.{$domain}/" class="btn btn-sm btn-success visible-lg cp-login"><i class="icon-lock"></i>Control Panel</a>
+                                                         </div>    
                                                         {else}
-                                                            <a href="#" class="btn btn-sm btn-success pull-right visible-lg cp-login"><i class="icon-lock"></i> Log In</a>
+                                                            <a href="{if ''|detectedDev}/login.html{else}#{/if}" class="btn btn-sm btn-success pull-right visible-lg cp-login"><i class="icon-lock"></i> Log In</a>
                                                         {/if}    
 							
 							<!-- Collect the nav links, forms, and other content for toggling -->
@@ -47,12 +50,19 @@
 									</li-->
 									<li>
                                                                             {if $getUser.success == 'true'} 
-                                                                                <a href="http://cp.{$domain}/" class="btn btn-sm btn-success hidden-lg cp-login"><i class="icon-lock"></i> CP</a>
+                                                                                <a href="http://cp.{$domain}/" class="btn btn-sm btn-success hidden-lg cp-login"><i class="icon-lock"></i> Control Panel</a>
                                                                             {else}
-                                                                                <a href="#" class="btn btn-sm btn-success hidden-lg cp-login"><i class="icon-lock"></i> Log In</a>
+                                                                                <a href="{if ''|detectedDev}/login.html{else}#{/if}" class="btn btn-sm btn-success hidden-lg cp-login"><i class="icon-lock"></i> Log In</a>
                                                                             {/if}   
 										
 									</li>
+                                                                        
+                                                                        {if $getUser.success == 'true'}
+                                                                        <li>
+                                                                                <a href="/logout.html" class="hidden-lg cp-logout">Log Out</a>
+                                                                            
+                                                                        </li>
+                                                                        {/if}
 								</ul>
 							</div>
 							<!-- /.navbar-collapse -->

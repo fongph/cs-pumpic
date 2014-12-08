@@ -1,3 +1,7 @@
+{Order out="getProducts"}
+
+{formOrder post=$smarty.post}
+
 {strip}
 {include file='../includes/wrap-title-header.tpl'}
 
@@ -17,6 +21,8 @@
 						<div class="row">
 							<h2>PRICING & PLANS</h2>
 							<div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1">
+                                                            <form name="price_basic" method="POST" action="/pricing.html">
+                                                                <input id='product_price_basic' type='hidden' name='price[productID]' value='0' />
 								<table class="table table-bordered">
 									<caption>
 										<div class="table_header">
@@ -78,14 +84,27 @@
 									<tfoot>
 										<tr>
 											<td colspan="4">
+                                                                                            {if $getProducts.basic}
+                                                                                            
+                                                                                                
 												<div class="label_inline">
 													<h4>Basic</h4>
+                                                                                                        
+                                                                                                        {foreach from=$getProducts.basic key=key item=_item}
+                                                                                                                   
 													<label class="label_radio">
-														<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-														<span><strong>3</strong> month</span>
-														<span>$34.98</span>
+														<input type="radio" 
+                                                                                                                       name="optionsRadios" 
+                                                                                                                       id="optionsRadios{$_item.id}" 
+                                                                                                                       value="{$_item.id}" 
+                                                                                                                       >
+														<span><strong>{$_item.period}</strong> month</span>
+														<span>${$_item.price}</span>
 													</label>
-													<label class="label_radio">
+                                                                                                        {/foreach}
+                                                                                                                    
+                                                                                                                    
+													{*<label class="label_radio">
 														<input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
 														<span><strong>6</strong> month</span>
 														<span>$69.96</span>
@@ -94,22 +113,34 @@
 														<input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
 														<span><strong>12</strong> month</span>
 														<span>$139.92</span>
-													</label>
+													</label>*}
 												</div>
 												<div class="select_row">
 													<h4>Basic</h4>
 													<select class="select_inverse">
-														<option value="">3 month $34.98</option>
+                                                                                                            
+                                                                                                                {foreach from=$getProducts.basic key=key item=_item}
+                                                                                                                    <option value="{$_item.id}">{$_item.period} month ${$_item.price}</option>
+                                                                                                                {/foreach}    
+                                                                                                                
+                                                                                                            
+														{*<option value="">3 month $34.98</option>
 														<option value="">6 month $69.96</option>
-														<option value="">12 month $139.92</option>
+														<option value="">12 month $139.92</option>*}
 													</select>
 												</div>
 												<div class="_limits">
 													<!-- Block block-limits-pricing only for premium include -->
 												</div>
 												<div class="text-center">
-													<button class="btn btn-default">Buy Basic</button>
+													<button name='price[submit]' 
+                                                                                                                type='submit' 
+                                                                                                                value='true'
+                                                                                                                class="btn btn-default">Buy Basic</button>
 												</div>
+                                                                                                  
+                                                                                             
+                                                                                            {/if}             
 											</td>
 										</tr>
 									</tfoot>
@@ -224,13 +255,33 @@
 										</tr>
 									</tbody>
 								</table>
+                                                                                        
+                                                                </form>                         
+                                                                <form name="price_premium" method="POST" action="/pricing.html"> 
+                                                                    
+                                                                <input id='product_price_premium' type='hidden' name='price[productID]' value='' />    
+                                                                    
 								<table class="table table-bordered">
 									<tfoot>
 										<tr>
 											<td colspan="4">
 												<div class="label_inline">
 													<h4>premium</h4>
+                                                                                                        
+                                                                                                        {foreach from=$getProducts.premium key=key item=_item}
+                                                                                                                   
 													<label class="label_radio">
+														<input type="radio" 
+                                                                                                                       name="optionsRadios2" 
+                                                                                                                       id="optionsRadios{$_item.id}" 
+                                                                                                                       value="{$_item.id}" 
+                                                                                                                       >
+														<span><strong>{$_item.period}</strong> month</span>
+														<span>${$_item.price}</span>
+													</label>
+                                                                                                        {/foreach}
+                                                                                                        
+													{*<label class="label_radio">
 														<input type="radio" name="optionsRadios2" id="optionsRadios4" value="option3" checked>
 														<span><strong>3</strong> month</span>
 														<span>$99.99</span>
@@ -244,14 +295,20 @@
 														<input type="radio" name="optionsRadios2" id="optionsRadios6" value="option5">
 														<span><strong>12</strong> month</span>
 														<span>$399.96</span>
-													</label>
+													</label>*}
 												</div>
 												<div class="select_row">
 													<h4>premium</h4>
 													<select class="select_inverse">
-														<option value="">3 month $99.99</option>
+                                                                                                                {if $getProducts.premium}
+                                                                                                                    {foreach from=$getProducts.premium key=key item=_item}
+                                                                                                                        <option value="{$_item.id}">{$_item.period} month ${$_item.price}</option>
+                                                                                                                    {/foreach}    
+                                                                                                                {/if} 
+                                                                                                            
+														{*<option value="">3 month $99.99</option>
 														<option value="">6 month $199.98</option>
-														<option value="">12 month $399.96</option>
+														<option value="">12 month $399.96</option>*}
 													</select>
 												</div>
 												<div class="_limits">
@@ -338,6 +395,7 @@
 										</tr>
 									</tbody>
 								</table>
+                                                                </form>                                        
 								<div class="link_circle_italic">
 									<div class="style-links"><span class="circle_ico"><i class="icon-attention"></i></span>you need to have physical access to the phone to install the application</div>
 								</div>

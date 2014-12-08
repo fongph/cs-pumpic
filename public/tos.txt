@@ -1,0 +1,139 @@
+TERMS OF SERVICE AND USER AGREEMENT
+***********************************
+SOFTWARE AND USER LICENSE AGREEMENT (hereinafter referred to as the "Agreement")
+***********************************
+CAREFULLY READ THE FOLLOWING LICENSE AGREEMENT BEFORE USING OR PURCHASING PUMPIC SOFTWARE FOR MOBILE DEVICES. YOU ACCEPT AND AGREE TO BE BOUND BY THE TERMS AND CONDITIONS OF THIS LICENSE AGREEMENT AS SET FORTH BELOW. IF YOU DO NOT AGREE TO THIS AGREEMENT, YOUR ORDER WILL BE CANCELED, THE SOFTWARE WILL NOT BE DOWNLOADED AND YOU WILL NOT BE CHARGED. 
+This mobile device software and additional components included in this product (hereinafter referred to as the "Software") are the copyrighted property of Pumpic. We hereby grant you a license to use one copy of the Software on any single mobile device, provided the Software is in use on only one mobile phone at any time. Pumpic is the owner of all copyrights, proprietary rights included in the Software. By accepting this Agreement you receive the site license to use the Pumpic application for cell phones. 
+
+Things you may not do
+
+You may not (and may not allow anyone else to): 
+1) copy (other than being in possession of one copy for backup purposes) or use the Software in any manner that is not expressly allowed by the license rights stated above, distribute, rent, lease or sub-license all or any part of this Software; 
+2) change, modify or create a derivative work of any part of this Licensed Product (Software); 
+3) decompile, reverse engineer, or otherwise attempt to derive the source code for any Licensed Product or any underlying algorithms, user interface techniques, or other ideas embodied in a Software;
+4) transmit the Software over a network, by telephone or electronically using any means.
+
+You may transfer all your rights to use the Software to another person or legal entity provided you transfer this Agreement, but only if the recipient agrees to accept the terms and conditions that are put in this License Agreement. In the event that you do transfer of this Software to such person or entity, the Software and Documentation, including all copies, updates and prior versions, which have been installed by you, must be deleted.
+
+Limited Warranty
+
+For a period of 90 days from when Pumpic delivers a Software to you (the "warranty period"), Pumpic warrants that the Software will have no Errors when used on the correct platform and according to the instructions. You acknowledge and agree that the usage of this Software is at your sole risk with the exception of the following 90-day limited. Pumpic agrees to warrant the original purchaser that the Software will be free from defects under normal use for a period of 90 days from the date of purchase. This warranty will be void if you or anyone else other than Pumpic, modifies or attempts to modify the Licensed Product. If the Software proves to be defective, Pumpic will change the defective digital media free of charge to the purchaser, provided that the digital media proves to be defective within the 90-day period following the date of purchase. 
+
+If you have a warranty claim, you must, during the warranty period, notify Pumpic in writing form of the Error or Errors that you have encountered and provide Pumpic with all the information you have, in written or electronic form, about those Errors, so that Pumpic can attempt to reproduce, diagnose, and correct the Errors.
+This License Agreement takes effect upon your use of the software and remains effective until terminated. You may terminate it at any time by destroying all copies of the Software in your possession. It will also automatically terminate if you fail to comply with any term or condition of this License Agreement. You agree on termination of this license to destroy all copies of the Software in your possession. The terms of this Agreement can be changed at any time, and in the event of any changes, the updated version of the License Agreement will appear on this page. 
+
+Pumpic Legal Agreement
+
+It is a considered federal and/or state violation of the law in most cases to install surveillance software onto a mobile phone or other device for which you do not have proper authorization, and in most cases, you are required to notify users of the device that they are being monitored. Failure to do so may result in a violation of federal or state laws, if you install this software onto a device you do not own or if you do not have proper consent to monitor the user of the device. 
+
+We absolutely do not condone the use of our software for illegal purposes.
+
+In order to purchase our software you MUST agree to the following conditions:
+
+1. You acknowledge and agree that you own the mobile phone you will install the software onto or that you have the expressed written consent of the owner to be an authorized administrator of the phone and its users.
+2. You agree that you will check all local, state and federal laws to make sure you are complying with all laws in your region. It may be illegal in your area to monitor other individuals on your own device. You will never monitor any adult without their valid permission.
+3. If you install Pumpic software onto a phone which is not your ownership or have proper consent, we will cooperate with law officials to the fullest extent possible. This includes turning over requested customer data, and any other purchase/product related information.
+4. You agree to the conditions in our License Agreement. This includes the fact that Pumpic is not liable for any type of damage, litigation, or legal predicaments that may arise due to use or abuse of Pumpic or any other product.
+
+
+
+******************
+Pumpic LEGAL INFO
+******************
+
+All users of Pumpic software applications are required to abide by all terms outlined hereunder and to the User Legal Agreement when registering on this website and upon the product purchase.
+
+PRIVACY POLICY
+
+This policy underlined the privacy practices of Pumpic (Pumpic.com) and your privacy rights concerning the usage of your personal information. It can be applied only to accumulated data by the Pumpic website. It consists of the following information:
+The type of identifiable data that is personal collected about you in the website; the way it is used by Pumpic.com; and the sides it may be shared with.
+Your options and variants as to the use of your data.
+
+Security steps that are taken by the Administration of the Website to safeguard the confidentiality of your data and information.
+Data correction options that is available to you.
+
+Retention policy
+
+This policy is aimed at consolidating user data retention rules and applies to all application users of Pumpic service. All above mentioned that is mentioned above is stored by the Pumpic website and gets deleted after 90 days of the user account expiration. All the information, including collected logs, text, and media that are associated with your account will be deleted after 90 days of your account expiration. If it deleted once, it won't be subject to retrieval or recovery by the user that was registered on the Pumpic website. 
+
+Information Collection, Use, and Sharing
+
+We have no right to sell or rent personal data of the user to anyone, although Pumpic owns the data that is stored on our website. To contact you we use your personal information. Pumpic has no right and unable to disclose your data to any third party outside of our company. The only one exception is the reason when we need to satisfy your request, for example, to fill order shipment. In order to buy our digital products, you must give us your email address and credit card details. In case of giving us your contact information, you agree to receive informational emails from the Website Administration of Pumpic. If you do not want us to inform you about the special offers, amendments or news of Pumpic, please let us know about it. 
+
+
+Access to Your Data 
+
+You may refuse from any future contact from Pumpic Website Administration anytime. Please contact us whenever you want to do the following: 
+- View what data and information Website Administration of Pumpic may have about you, if any.
+- Change any information Website Administration of Pumpic may have about you.
+- Ask Pumpic Website Administration to delete any data and information about you.
+- Complain about any inappropriate use of your personal information by the website Administration of Pumpic.
+
+Information Protection
+
+We take all necessary measures to maintain the privacy and security of your data and information. We protect any confidential information submitted by you via the Pumpic website. So there are no reasons to worry about it. We guarantee that any confidential information (e.g. credit card details) you sent us gets dispatched to Pumpic website in a secure way. A closed lock icon at the bottom of your web browser and the letters "https" in the URL address verify that data protection is ensured by Pumpic website. 
+
+We also ensure protection of your information offline, while we use encryption systems to protect the data online. Your personal information can be accessed only by the Pumpic members who need your personal data to perform their specific job (billing or customer support for example). Please contact us immediately at support@pumpic.com, if you think that the website Administration of Pumpic violates the rules of this privacy policy mentioned above.
+
+
+*****************
+* REFUND POLICY *
+*****************
+
+Your purchase of Pumpic software is regulated by this policy. Please read it carefully before completing your order as it delineates your rights with regard to your purchases, including essential restrictions and exclusions. By placing an order, you agree that your order is governed by this policy.
+
+You must jailbreak the iPhone you want to monitor before installing this application. It is impossible to download or install Pumpic if you cannot jailbreak the target iPhone. To get the instructions on jailbreaking, please go here. Please note that Pumpic does not support Windows Phone 7 mobile devices yet.
+
+
+
+General
+
+If you are not fully satisfied with your purchase of Pumpic software, you can be eligible for a full refund according to Refund Conditions outlined below. However, we are convinced that most of refunds can be avoided if you request professional help from our Customer Support.
+
+Refund Conditions
+
+Do you want to check whether your employees are using company phones for job purposes only, while adhering to the ethics code of the company, and acting in accordance with the company confidence policy? Settle your doubts using Pumpic application! Simply download this software and keep track on all activities on their phones.
+
+Pumpic software
+
+Subject to this Refund Policy conditions, you may be eligible to receive a full refund within 15 days following the day of your purchase provided your reasons do not contradict with the Refund Policy conditions.
+No refund will be available after this refund period is over.
+The refund may apply only to the primary (first) Pumpic subscription.
+If you own more than one subscription, no refund will be available.
+Your money may be refunded only once. If you buy another Pumpic subscription at a later time, this will not be subject to a refund request.
+Any purchase of the software at a discount price is non-refundable.
+No refund is due if the customer refuses to upgrade the Pumpic version in the event of performed upgrade on the target phone.
+
+Subscription Prolongation
+
+Your subscription will be prolonged automatically soon after the end of the current subscription term. If you do not want your subscription to be prolonged automatically, please unmark this function in your order cart.
+
+Force majeure  
+
+In case of any force majeure circumstances (e.g. the device was lost), please contact our Customer Support at support@pumpic.com. 
+
+Non-refundable
+
+Everything that falls beyond Refund Conditions is non-refundable. No refund can also be granted to Pumpic customers in case their reasons for a refund are completely beyond our control. They are the following:
+- The target phone does not have Internet access any longer (no money left on the target phone account, temporary service interruption, roaming-related problem etc.). 
+- If the carrier is changed by a target phone user which leads to the loss of internet connectivity and consequently improper functioning of Pumpic application.
+- Update of operational system.
+- Resetting to original factory settings.
+- A customer does not follow the installation guidelines of our customer support team.
+- The customer does not have an access to the target phone.
+- If the customer did not receive the previous data because Pumpic has not been installed onto the target device initially.
+- If the target device is running on iOS 6.1.3, Symbian Belle, Windows Phone OS, Bada OS or any other operating system, which is not listed in Compatibility section
+- If the customer counted on using Pumpic on more than one target device after buying one subscription plan.
+- Personal reasons (I’ve changed my mind, I’ve made a purchase by mistake, etc.).
+- A customer is either unable or unwilling to jailbreak his/her iPhone.
+
+Refund Procedure
+
+You are required to send your refund request to Customer Support at support@pumpic.com. We do not accept refund requests made via a Live Chat, or by phone. The refund decision is generally made within one or two business days.
+
+
+*****************
+* CONTACTING US *
+*****************
+
+If you have any questions about this Privacy Policy, the practices of this site, or your dealings with this site, please contact us at: support@pumpic.com

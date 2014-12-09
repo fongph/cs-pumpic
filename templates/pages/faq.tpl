@@ -1,4 +1,5 @@
 {strip}
+
 {include file='../includes/wrap-title-header.tpl'}
 
 	<title>Frequently asked questions about Pumpic</title>

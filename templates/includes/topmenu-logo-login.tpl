@@ -1,4 +1,3 @@
-{hasUser out="getUser"}	
 <div class="header">
 			<div class="container">
 				<div class="row">
@@ -15,7 +14,7 @@
 									<a href="{$domain_http}">pumpic</a>
 								</div>
 							</div>
-                                                        {if $getUser.success == 'true'} 
+                                                        {if ''|hasUser} 
                                                          <div class='box-cp pull-right'>   
                                                             <a href="/logout.html" class="pull-right visible-lg cp-logout">Log Out</a>
                                                             <a href="http://cp.{$domain}/" class="btn btn-sm btn-success visible-lg cp-login"><i class="icon-lock"></i>Control Panel</a>
@@ -49,7 +48,7 @@
 										<a href="http://demo.{$domain}">Demo</a>
 									</li-->
 									<li>
-                                                                            {if $getUser.success == 'true'} 
+                                                                            {if ''|hasUser} 
                                                                                 <a href="http://cp.{$domain}/" class="btn btn-sm btn-success hidden-lg cp-login"><i class="icon-lock"></i> Control Panel</a>
                                                                             {else}
                                                                                 <a href="{if ''|detectedDev}/login.html{else}#{/if}" class="btn btn-sm btn-success hidden-lg cp-login"><i class="icon-lock"></i> Log In</a>
@@ -57,7 +56,7 @@
 										
 									</li>
                                                                         
-                                                                        {if $getUser.success == 'true'}
+                                                                        {if ''|hasUser}
                                                                         <li>
                                                                                 <a href="/logout.html" class="hidden-lg cp-logout">Log Out</a>
                                                                             

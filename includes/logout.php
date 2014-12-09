@@ -1,44 +1,20 @@
 <?php
-header("Content-Type: application/json");
-header("Cache-Control: no-cache");
-header("Pragma: no-cache");
 
 $_inc = dirname(__FILE__); // includes
 $b_dir = dirname( $_inc ); // folder sites directory
 
-require_once $_inc.'/lib/class.phpmail.php';
+require_once $_inc.'/lib/users/ManagerUser.php';
 
-$_mail = new Phpmail;
-$smarty = new Smarty;
-
-// settings smarty
-$smarty->compile_check = true;
-$smarty->debugging = false;
-$smarty->force_compile = 1;
-
-// init function json
-function json_modifier($value) {
-    return json_encode($value);
+$_managerUser  = new includes\lib\users\ManagerUser;
+if($_managerUser -> getLoginUser()) {
+    $_managerUser -> logout();
 }
 
-function json_function($params, &$smarty) {
-    return json_encode($params);
+// clear cookie
+if(isset($_COOKIE['popUp'])) {
+    setcookie("popUp","", time()-3600, '/');
+    unset ($_COOKIE['popUp']);
 }
 
-// $_request = $_GET['params'];
-
-$_request = (isset($_POST['params']) and !empty($_POST['params'])) ? $_POST['params']: false;
-
-// register function and modifier
-$smarty->registerPlugin("modifier",'json', 'json_modifier');
-$smarty->registerPlugin("function",'json', 'json_function');
-
-//echo "<pre>";
-//var_dump( $_request );
-//echo "</pre>";
-
-// generate params
-$smarty->assign('arr', $_mail -> _sendContactUs($_request) );
-
-// init output params
-$smarty->display($b_dir.'/templates/json/contact_us.tpl');
+header('Location: /');
+die();

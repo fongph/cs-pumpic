@@ -98,7 +98,7 @@ class Phpmail extends Settings {
                 $_data = $this ->setData($params['email'], 'support@pumpic.com', 'Compatibility_pumpic', array(
                    'deviceModel'    => $params['device-model'],
                    'email'          => $params['email'],
-                   'subject'        => [ 'Compatibility_pumpic' => "Compatibility ".$_id], 
+                   // 'subject'        => [ 'Compatibility_pumpic' => "Compatibility ".$_id], 
                 )) -> sendMAil();
                 
                 
@@ -131,7 +131,7 @@ class Phpmail extends Settings {
                 $_data = $this ->setData($params['email'], 'support@pumpic.com', 'FAQ_pumpic', array(
                    'name'           => $params['name'],
                    'email'          => $params['email'],
-                   'subject'        => [ 'FAQ_pumpic' => "FAQ ".$params['name']], 
+                   // 'subject'        => [ 'FAQ_pumpic' => "FAQ ".$params['name']], 
                 )) -> sendMAil();
                 
                 
@@ -166,7 +166,7 @@ class Phpmail extends Settings {
                    'email'          => $params['email'],
                    'os'             => $params['os'],
                    'description'    => $params['description'],
-                   'subject'        => [ 'contactUs_pumpic' => 'Contact US #pp '.$_id], 
+                   // 'subject'        => [ 'contactUs_pumpic' => 'Contact US #pp '.$_id], 
                 )) -> sendMAil();
                 
                 

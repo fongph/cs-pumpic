@@ -1,4 +1,8 @@
 <?php
+include dirname(__FILE__).'/users/ManagerUser.php';
+
+use includes\lib\users\ManagerUser as MU;
+
 /**
  * Captcha class
  */
@@ -107,8 +111,11 @@ class SimpleCaptcha
     protected $gdShadowColor = null;
     protected $textFinalX = null;
 
+    protected $mu;
+    
     public function __construct($config = array())
     {
+        $this -> mu = new MU();
         $this->resourcesPath = __DIR__ . '/' . $this->resourcesPath;
     }
 
@@ -124,8 +131,10 @@ class SimpleCaptcha
         $fontcfg = $this->fonts[array_rand($this->fonts)];
         $this->writeText($text, $fontcfg);
 
-        $_SESSION[$this->sessionVar] = $text;
-
+        // $_SESSION[$this->sessionVar] = $text;
+        
+        $this -> mu ->setSession($this->sessionVar, $text);
+        
         /** Transformations */
         if (!empty($this->lineWidth)) {
             $this->writeLine();

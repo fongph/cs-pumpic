@@ -272,6 +272,8 @@ class CDb {
                     $this->log->write($message);
 
             return $exception;
-    }			
+    }	
+    
+    
 }
 ?>

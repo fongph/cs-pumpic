@@ -2,7 +2,7 @@
 header("Cache-Control: no-cache");
 header("Pragma: no-cache");
 
-session_start();
+// session_start();
 
 $_inc = dirname(__FILE__); // includes
 $b_dir = dirname( $_inc ); // folder sites directory
@@ -18,8 +18,9 @@ $captcha->height = 48;
 // $captcha->wordsFile = dirname(__FILE__). "/resources/words/es.php";
 $captcha->session_var = 'pumpic.com';
 $captcha->imageFormat = 'png';
-$captcha->lineWidth = 3;
-$captcha->scale = 3; $captcha->blur = true;
+$captcha->lineWidth = 0;
+$captcha->scale = 3; 
+$captcha->blur = true;
 
 //$captcha->resourcesPath =  dirname(__FILE__). "/resources";
 

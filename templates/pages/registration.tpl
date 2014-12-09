@@ -1,6 +1,6 @@
 {closeAccess}
 
-{registration out="getOut" post=$smarty.post}
+{*registration out="getOut" post=$smarty.post*}
 {strip}
 {include file='../includes/wrap-title-header.tpl'}
 

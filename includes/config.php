@@ -33,7 +33,19 @@ $config = array(
 		'compatibility_send.html' => 'compatibility_form.php',
                 'faq_send.html' => 'faq.php',
                 'contact_us_send.html' => 'contact_us.php',
-                'capcha.html'  => 'capcha.php'
+                'capcha.html'  => 'capcha.php',
+                // 'order_form.html'  => 'order_form.php',
+                'logout.html' => 'logout.php',
+            
+                'login.html'  => 'login.php', 
+                'registration.html'  => 'registration.php',
+                'restore.html'  => 'restore.php',
+            
+                // pricing
+                'pricing.html'  => 'pricing.php',
+            
+                // opening-soon-thanks.html
+                'opening-soon-thanks.html' => 'opening-soon-thanks.php'
 	)
 );
 

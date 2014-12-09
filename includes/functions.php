@@ -33,9 +33,6 @@ function dispatch($urlParams, $config){
 			
 			$smarty->registerPlugin("function","year_now","print_current_year");
                         
-                        $smarty->registerPlugin("function","_dev","hasTest");// detected ip hasTest
-                        
-                        $smarty->registerPlugin("function","contactusSend","contact_us_send"); // validate form contact_us
                         
 			$smarty->assign("domain",$config['domain']);
 			$smarty->assign("domain_http",$config['domain_http']);
@@ -91,7 +88,7 @@ function header404(){
 }
 
 
-function sendEmail($email, $subject, $text, $from = 'no-reply@pumpic.com'){ // support
+function sendEmail($email, $subject, $text, $from = 'noreply@pumpic.com'){ // support
 	if(strlen($email) && strlen($text)){
 		$subject = "=?UTF-8?B?" . base64_encode($subject) . "?=";
 
@@ -361,50 +358,6 @@ function _redirect( $_url ) {
     die();
 }
 
-/*
- * Contact US (send form and validater)
- */
-function contact_us_send($params, $smarty) {
-    if(is_array($params['contact_us']) and count($params['contact_us']) > 0) {
-        $_id = rand(0, 9000000);
-        
-        if(!validateEmail($params['contact_us']['email'])) {
-            return "Not validate email address!";
-        }
-        
-        if(empty($params['contact_us']['name']) or strlen( $params['contact_us']['name']) < 3 ) 
-            return "Please enter correct your name!";
-        
-        $title = "Contact US";
-        $_body = "<table>";
-        
-        if(isset($params['contact_us']['name']))
-            $_body .= "<tr><td>Name:</td><td>".$params['contact_us']['name']."</td></tr>";
-        if(isset($params['contact_us']['email']))
-            $_body .= "<tr><td>Email:</td><td>".$params['contact_us']['email']."</td></tr>";
-        if(isset($params['contact_us']['os']))
-            $_body .= "<tr><td>OS:</td><td>".$params['contact_us']['os']."</td></tr>";
-        if(isset($params['contact_us']['description']))
-            $_body .= "<tr><td>Description:</td><td>".$params['contact_us']['description']."</td></tr>";
-        
-        $_body .= "</table>";
-        
-        $_tmp = "<html>
-                    <head>
-                        <title>{title}</title>
-                    </head>
-                    <body>
-                        {body}
-                    </body>
-                </html>";
-        $_params = array("{title}" => $title, "{body}" => $_body);
-        $_text = strtr($_tmp, $_params);
-        
-        sendEmail('support@pumpic.com', 'Contact US #pp '.$_id, $_text, 'support@pumpic.com');
-        
-        return "You'r e-mail send OK!";
-    }
-}
 
 function stdToArray($obj){
   $rc = (array)$obj;
@@ -428,7 +381,7 @@ function smarty_function_compatibilityDevice($params, $template) {
         '_error'        => false, 
     );
     
-    $_curl = new Curl();
+    $_curl = new \system\Curl();
     $_post = array(
         'getModel' => $_GET['model'],
     );
@@ -475,95 +428,6 @@ function smarty_function_compatibilityDevice($params, $template) {
     $template->assign($params['out'], $_settings);
 }
 
-/*
- * openig soon send mail
- */
-function saveDB( $_params ) {
-    require_once 'lib/CDb.php';
-    $_setParams = array();
-    
-    if(!isset($_params['to']))
-        return false;
-    
-   foreach($_params as $_name => $_value) :
-       $_setParams[ $_name ] = htmlspecialchars( trim($_value) );
-   endforeach;
-    
-    $_pdo = new \includes\lib\CDb();
-    $_res = $_pdo -> query("SELECT `id` FROM `subscription_mail` WHERE `to` = '".  mysql_escape_string( trim($_params['to']) )."'");
-
-    
-    if(is_array($_res) and count($_res) > 0) {
-        return false;
-    } else {
-        
-        $_from = ($_setParams['from']) ? $_setParams['from'] : "no-reply@pumpic.com";
-        $_subject = ($_setParams['subject']) ? $_setParams['subject'] : "No subject create!";
-        
-        $_sql = "INSERT INTO `subscription_mail` SET `to` = '".$_setParams['to']."',
-                `from` = '".$_from."',
-                `body` = '".serialize(mysql_escape_string($_setParams['body']))."',
-                `subject` = '".$_subject."',
-                `name` = '".$_setParams['name']."'";
-        $_pdo -> query($_sql);
-        
-        return true;
-    }
-    
-}
-
-function smarty_function_openigsoonSendMail($params, $template) {
-    
-    $_result = array(
-        '_error' => false,
-        '_success' => false,
-    );
-    
-    $_id = rand(0, 9000000);
-    if(isset($params['post']['discount']) and !empty($params['post']['discount'])) {
-        $_form_discount = $params['post']['discount'];
-        
-        
-        
-        if(!validateEmail($_form_discount['email'])) {
-            $_result['_error'] = "Invalid email format.";
-        } else {
-            
-            if(!saveDB( array('to' => $_form_discount['email'],
-                              'from' => false,
-                              'body' => false,
-                              'subject' => $title,
-                              'name' => $_form_discount['name'])) ) {
-                $_result['_error'] = "This email address has been already registered";
-            } else {
-                include dirname(__FILE__).'/lib/class.phpmail.php';
-                
-                $_mail = new Phpmail();
-                $_data = $_mail -> send( array(
-                    'from' => 'noreply@pumpic.com',
-                    'to' => $_form_discount['email'],
-                    'type' =>  'OpenigSoonThanks_pumpic',
-                    'params' => [
-                        'subject' => ['OpenigSoonThanks_pumpic' => 'Openig Soon Thanks'],
-                    ],
-                ) );
-                
-                
-                if($_data['success']) {
-                    $_result['_success'] = 'Thank you for choosing pumpic.com';
-                } else
-                    $_result['_error'] = $_data['error'];
-                
-                
-            }
-        }
-    } else
-        $_result['_error'] = 'Invalid systems params.';
-    
-    
-    // init output params!
-    $template->assign($params['out'], $_result);
-}
 
 /*
  * Features ( generate Plans )
@@ -575,8 +439,8 @@ function smarty_function_features_plans( $_plans = array()  ) {
         'call-history' => [
             'title'   => 'Call History',
             'device'  => array(
-                'apple'      => ['status' => true, 'version' => '3.1.3 - 7.1.1'],
-                'android'    => ['status' => true, 'version' => '2.2 - 4.4'],
+                'apple'      => ['status' => true, 'version' => '6.0 - 8.1.1'], // 3.1.3 - 7.1.1
+                'android'    => ['status' => true, 'version' => '2.2 - 5.0'], // 2.2 - 4.4
                 'blackberry' => ['status' => true, 'version' => '1.0 - 7.1']
             ),
             'plans' => array(
@@ -594,8 +458,8 @@ function smarty_function_features_plans( $_plans = array()  ) {
         'sms-history' => [
             'title'   => 'SMS History',
             'device'  => array(
-                'apple'      => ['status' => true, 'version' => '3.1.3 - 7.1.1'],
-                'android'    => ['status' => true, 'version' => '2.2 - 4.4'],
+                'apple'      => ['status' => true, 'version' => '6.0 - 8.1.1'], // 3.1.3 - 7.1.1
+                'android'    => ['status' => true, 'version' => '2.2 - 5.0'], // 2.2 - 4.4
                 'blackberry' => ['status' => true, 'version' => '1.0 - 7.1']
             ),
             'plans' => array(
@@ -613,8 +477,8 @@ function smarty_function_features_plans( $_plans = array()  ) {
         'sms-blocking' => [
             'title'   => 'SMS blocking',
             'device'  => array(
-                'apple'      => ['status' => true, 'version' => '3.1.3 - 7.1.1'],
-                'android'    => ['status' => true, 'version' => '2.2 - 4.4 (except 4.4)'],
+                'apple'      => ['status' => true, 'version' => '6.0 - 8.1.1'], // 3.1.3 - 7.1.1
+                'android'    => ['status' => true, 'version' => '2.2 - 5.0 (except 4.4 and higher)'], // except 4.4
                 'blackberry' => ['status' => false, 'version' => '1.0 - 7.1']
             ),
             'plans' => array(
@@ -632,8 +496,8 @@ function smarty_function_features_plans( $_plans = array()  ) {
         'location-history' => [
             'title'   => 'Location History',
             'device'  => array(
-                'apple'      => ['status' => true, 'version' => '3.1.3 - 7.1.1'],
-                'android'    => ['status' => true, 'version' => '2.2 - 4.4'],
+                'apple'      => ['status' => true, 'version' => '6.0 - 8.1.1'],
+                'android'    => ['status' => true, 'version' => '2.2 - 5.0'],
                 'blackberry' => ['status' => true, 'version' => '1.0 - 7.1']
             ),
             'plans' => array(
@@ -651,8 +515,8 @@ function smarty_function_features_plans( $_plans = array()  ) {
         'contacts' => [
             'title'   => 'Contacts',
             'device'  => array(
-                'apple'      => ['status' => true, 'version' => '3.1.3 - 7.1.1'],
-                'android'    => ['status' => true, 'version' => '2.2 - 4.4'],
+                'apple'      => ['status' => true, 'version' => '6.0 - 8.1.1'],
+                'android'    => ['status' => true, 'version' => '2.2 - 5.0'],
                 'blackberry' => ['status' => false, 'version' => '1.0 - 7.1']
             ),
             'plans' => array(
@@ -670,8 +534,8 @@ function smarty_function_features_plans( $_plans = array()  ) {
         'calendar' => [
             'title'   => 'Calendar',
             'device'  => array(
-                'apple'      => ['status' => true, 'version' => '3.1.3 - 7.1.1'],
-                'android'    => ['status' => true, 'version' => '2.2 - 4.4'],
+                'apple'      => ['status' => true, 'version' => '6.0 - 8.1.1'],
+                'android'    => ['status' => true, 'version' => '2.2 - 5.0'],
                 'blackberry' => ['status' => false, 'version' => '1.0 - 7.1']
             ),
             'plans' => array(
@@ -689,8 +553,8 @@ function smarty_function_features_plans( $_plans = array()  ) {
         'browsing-history' => [
             'title'   => 'Browsing History',
             'device'  => array(
-                'apple'      => ['status' => true, 'version' => '3.1.3 - 7.1.1'],
-                'android'    => ['status' => true, 'version' => '2.2 - 4.4'],
+                'apple'      => ['status' => true, 'version' => '6.0 - 8.1.1'],
+                'android'    => ['status' => true, 'version' => '2.2 - 5.0'],
                 'blackberry' => ['status' => false, 'version' => '1.0 - 7.1']
             ),
             'plans' => array(
@@ -708,8 +572,8 @@ function smarty_function_features_plans( $_plans = array()  ) {
         'bookmarks' => [
             'title'   => 'Bookmarks',
             'device'  => array(
-                'apple'      => ['status' => true, 'version' => '3.1.3 - 7.1.1'],
-                'android'    => ['status' => true, 'version' => '2.2 - 4.4'],
+                'apple'      => ['status' => true, 'version' => '6.0 - 8.1.1'],
+                'android'    => ['status' => true, 'version' => '2.2 - 5.0'],
                 'blackberry' => ['status' => false, 'version' => '1.0 - 7.1']
             ),
             'plans' => array(
@@ -727,8 +591,8 @@ function smarty_function_features_plans( $_plans = array()  ) {
         'photos' => [
             'title'   => 'Photos',
             'device'  => array(
-                'apple'      => ['status' => true, 'version' => '3.1.3 - 7.1.1'],
-                'android'    => ['status' => true, 'version' => '2.2 - 4.4'],
+                'apple'      => ['status' => true, 'version' => '6.0 - 8.1.1'],
+                'android'    => ['status' => true, 'version' => '2.2 - 5.0'],
                 'blackberry' => ['status' => false, 'version' => '1.0 - 7.1']
             ),
             'plans' => array(
@@ -746,8 +610,8 @@ function smarty_function_features_plans( $_plans = array()  ) {
         'emails' => [
             'title'   => 'Emails',
             'device'  => array(
-                'apple'      => ['status' => true, 'version' => '3.1.3 - 7.1.1'],
-                'android'    => ['status' => true, 'version' => '2.2 - 4.4 (ROOT for all)'],
+                'apple'      => ['status' => true, 'version' => '6.0 - 8.1.1'],
+                'android'    => ['status' => true, 'version' => '2.2 - 5.0 (ROOT for all)'],
                 'blackberry' => ['status' => false, 'version' => '1.0 - 7.1']
             ),
             'plans' => array(
@@ -765,8 +629,8 @@ function smarty_function_features_plans( $_plans = array()  ) {
         'applications' => [
             'title'   => 'Applications',
             'device'  => array(
-                'apple'      => ['status' => true, 'version' => '3.1.3 - 7.1.1'],
-                'android'    => ['status' => true, 'version' => '2.2 - 4.4'],
+                'apple'      => ['status' => true, 'version' => '6.0 - 8.1.1'],
+                'android'    => ['status' => true, 'version' => '2.2 - 5.0'],
                 'blackberry' => ['status' => false, 'version' => '1.0 - 7.1']
             ),
             'plans' => array(
@@ -784,8 +648,8 @@ function smarty_function_features_plans( $_plans = array()  ) {
         'websites-apps-blocking' => [
             'title'   => 'Websites & Apps blocking',
             'device'  => array(
-                'apple'      => ['status' => true, 'version' => '3.1.3 - 7.1.1'],
-                'android'    => ['status' => true, 'version' => '2.2 - 4.4'],
+                'apple'      => ['status' => true, 'version' => '6.0 - 8.1.1'],
+                'android'    => ['status' => true, 'version' => '2.2 - 5.0'],
                 'blackberry' => ['status' => false, 'version' => '1.0 - 7.1']
             ),
             'plans' => array(
@@ -803,8 +667,8 @@ function smarty_function_features_plans( $_plans = array()  ) {
         'viber-whatsapp-skype' => [
             'title'   => 'Viber/WhatsApp/Skype',
             'device'  => array(
-                'apple'      => ['status' => true, 'version' => '3.1.3 - 7.1.1'],
-                'android'    => ['status' => true, 'version' => '2.2 - 4.4 (ROOT for all)'],
+                'apple'      => ['status' => true, 'version' => '6.0 - 8.1.1'],
+                'android'    => ['status' => true, 'version' => '2.2 - 5.0 (ROOT for all)'],
                 'blackberry' => ['status' => false, 'version' => '1.0 - 7.1']
             ),
             'plans' => array(
@@ -823,8 +687,8 @@ function smarty_function_features_plans( $_plans = array()  ) {
         'view-user-video' => [
             'title'   => 'View User Video',
             'device'  => array(
-                'apple'      => ['status' => true, 'version' => '3.1.3 - 7.1.1'],
-                'android'    => ['status' => true, 'version' => '2.2 - 4.4'],
+                'apple'      => ['status' => true, 'version' => '6.0 - 8.1.1'],
+                'android'    => ['status' => true, 'version' => '2.2 - 5.0'],
                 'blackberry' => ['status' => false, 'version' => '1.0 - 7.1']
             ),
             'plans' => array(
@@ -842,8 +706,8 @@ function smarty_function_features_plans( $_plans = array()  ) {
         'facebook-messages' => [
             'title'   => 'Facebook Messages',
             'device'  => array(
-                'apple'      => ['status' => true, 'version' => '3.1.3 - 7.1.1'],
-                'android'    => ['status' => true, 'version' => '2.2 - 4.4 (ROOT for all)'],
+                'apple'      => ['status' => true, 'version' => '6.0 - 8.1.1'],
+                'android'    => ['status' => true, 'version' => '2.2 - 5.0 (ROOT for all)'],
                 'blackberry' => ['status' => false, 'version' => '1.0 - 7.1']
             ),
             'plans' => array(
@@ -862,8 +726,8 @@ function smarty_function_features_plans( $_plans = array()  ) {
         'historical-data' => [
             'title'   => 'Historical Data',
             'device'  => array(
-                'apple'      => ['status' => true, 'version' => '3.1.3 - 7.1.1'],
-                'android'    => ['status' => true, 'version' => '2.2 - 4.4'],
+                'apple'      => ['status' => true, 'version' => '6.0 - 8.1.1'],
+                'android'    => ['status' => true, 'version' => '2.2 - 5.0'],
                 'blackberry' => ['status' => false, 'version' => '1.0 - 7.1']
             ),
             'plans' => array(
@@ -881,8 +745,8 @@ function smarty_function_features_plans( $_plans = array()  ) {
         'sms-commands' => [
             'title'   => 'SMS Commands',
             'device'  => array(
-                'apple'      => ['status' => true, 'version' => '3.1.3 - 7.1.1'],
-                'android'    => ['status' => true, 'version' => '2.2 - 4.4 (ROOT for all)'],
+                'apple'      => ['status' => true, 'version' => '6.0 - 8.1.1'],
+                'android'    => ['status' => true, 'version' => '2.2 - 5.0 (ROOT for all)'],
                 'blackberry' => ['status' => false, 'version' => '1.0 - 7.1']
             ),
             'plans' => array(
@@ -900,8 +764,8 @@ function smarty_function_features_plans( $_plans = array()  ) {
         'keylogger' => [
             'title'   => 'Keylogger',
             'device'  => array(
-                'apple'      => ['status' => true, 'version' => '3.1.3 - 7.1.1'],
-                'android'    => ['status' => true, 'version' => '2.2 - 4.4'],
+                'apple'      => ['status' => true, 'version' => '6.0 - 8.1.1'],
+                'android'    => ['status' => true, 'version' => '2.2 - 5.0'],
                 'blackberry' => ['status' => false, 'version' => '1.0 - 7.1']
             ),
             'plans' => array(
@@ -952,181 +816,56 @@ function smarty_function_features_plans( $_plans = array()  ) {
 }
 
 
-/*
- *Авторизация  
- */
-function smarty_function_authorization($params, $template) {
-    
-    
-    require_once 'lib/users/ManagerUser.php';
-    
-    $_result = array(
-        '_error' => false,
-        '_success' => false,
-    );
-    
-    
-    $_sID = (isset($params['post']['site_id']) and !empty($params['post']['site_id'])) ? $params['post']['site_id'] : false;
-    $_pass = (isset($params['post']['password']) and !empty($params['post']['password'])) ? trim($params['post']['password']) : null;
-    
-    if((isset($params['post']['email']) and!validateEmail($params['post']['email']))) {
-       $_result['_error'] = "Invalid email format.";
-    } else if(isset($params['post']['email']) and !empty($params['post']['email'])) {
-         $_params = array(
-            'siteId' => $_sID,
-            'email' => $params['post']['email'],
-            'password' => $_pass
-        );
-
-        $obj = new includes\lib\users\ManagerUser( $_params );
-        $_respons = $obj -> auth -> respons;
-
-        if(is_array($_respons) and count($_respons) > 0)
-            $_result = array_merge ($_result, $_respons);
-    }
-    
-    if($_result['_success']) {
-        _redirect('/'); // redirect home page!
-    } 
-    
-    // init output params!
-    $template->assign($params['out'], $_result);
-}
-
 // has user
-function smarty_function_hasUser($params, $template) {
+function smarty_modifier_hasUser() { // $params, $template
+//  $_result = false;
+    
     require_once 'lib/users/ManagerUser.php';
     $obj = new includes\lib\users\ManagerUser( array() );
-    $_result['success'] = false;
+    $_result = false;
     
     if($obj -> getLoginUser()) {
-        $_result['success']= true;
+        $_result = true;
     }
     
-    $template->assign($params['out'], $_result);
+    return $_result;
 }
 
-// clear logout in pumpic
-function getLogOut() {
-    require_once 'lib/users/ManagerUser.php';
-    $obj = new includes\lib\users\ManagerUser( array() );
-    if($obj -> getLoginUser()) {
-        $obj ->logout();
+// clear cookie popUp
+function _clearCookie() {
+    if(isset($_COOKIE['popUp'])) {
+        setcookie("popUp","", time()-3600, '/');
+        unset ($_COOKIE['popUp']);
     }
-    return true;
-}
-
-
-/**
- * CAPCHA
- */
-
-function validateCapcha($_capcha) {   
-    @session_start();
-    if(!empty($_capcha)) {
-        if (!isset($_SESSION['captcha']) 
-                and (empty($_SESSION['captcha']) || trim(strtolower($_capcha)) != $_SESSION['captcha'])) {
-            return false;
-        } else
-            return true;
-    } else 
-        return false;
     
 }
 
-
-/*
- * Регистрация 
- */
-function smarty_function_registration($params, $template) {
-    $_result = array(
-        '_error' => false,
-        '_success' => false,
-    );
-    
-    $_capcha = (isset($params['post']['capcha']) and !empty($params['post']['capcha'])) ? $params['post']['capcha'] : false;
-    $_sID = (isset($params['post']['site_id']) and !empty($params['post']['site_id'])) ? $params['post']['site_id'] : false;
-    
-    if(isset($params['post']['email']) and !validateEmail($params['post']['email'])) {
-       $_result['_error'] = "Invalid email format.";
-    } else if(isset($params['post']['capcha']) and !validateCapcha( $_capcha )) { 
-        $_result['_error'] = "Invalid CAPTCHA.";
-    } else if(!empty($params['post']['email']) and $_sID and validateCapcha( $_capcha )) {
-        require_once 'lib/users/ManagerUser.php';
-        $_params = array(
-            'siteId' => $_sID,
-            'email' => $params['post']['email']
-        );
-        
-        $obj = new includes\lib\users\ManagerUser( $_params );
-        $_respons = $obj -> registration -> respons;
-        
-        if($_result['_success']) {
-            $_result['_success'] = 'Successful registration.';
-        } 
-        
-        if(is_array($_respons) and count($_respons) > 0)
-            $_result = array_merge ($_result, $_respons);
-
-    }
-    
-    if($_result['_success']) {
-        _redirect('/'); // redirect home page!
-    }
-    
-    // init output params!
-    $template->assign($params['out'], $_result);
-}
-
-/* Restore */
-function smarty_function_restore($params, $template) {
-    require_once 'lib/users/ManagerUser.php';
-    
-    $_result = array(
-        '_error' => false,
-        '_success' => false,
-    );
-    
-    $_sID = (isset($params['post']['site_id']) and !empty($params['post']['site_id'])) ? $params['post']['site_id'] : false;
-    
-    if(isset($params['post']['email']) and !validateEmail($params['post']['email'])) {
-       $_result['_error'] = "Invalid email format.";
-    } else if(!empty($params['post']['email']) and $_sID) {
-         $_params = array(
-            'siteId' => $_sID,
-            'email' => $params['post']['email']
-        );
-
-        $obj = new includes\lib\users\ManagerUser( $_params );
-        $_respons = $obj -> restore -> respons;
-
-        if(is_array($_respons) and count($_respons) > 0)
-            $_result = array_merge ($_result, $_respons);
-    }
-    
-    if($_result['_success']) {
-        $_result['_success'] = 'Your request was successfully sent. Check your inbox and follow the instructions from the received email.';
-    }
-    
-    // init output params!
-    $template->assign($params['out'], $_result);
-}
 
 /*
  * Detected ip
  */
 function smarty_function_closeAccess($params, $template) {
-    if (!in_array(@$_SERVER['REMOTE_ADDR'], ['176.38.120.13', '127.0.0.1', '::1'])) {
+    if (!hasAccess()) {
         die('You are not allowed to access this file.');
     }
 }
 
-function hasTest($params, $smarty) {
-    if (!in_array(@$_SERVER['REMOTE_ADDR'], ['176.38.120.13', '127.0.0.1', '::1'])) {
-        return false;
-    } else
-        return true;
-    
+/**
+ * function detected dev or prod
+ */
+function smarty_modifier_detectedDev() {
+   return hasAccess();
 }
+
+function hasAccess() {
+     if(in_array(@$_SERVER['REMOTE_ADDR'], ['176.38.120.13', '212.90.60.74', '127.0.0.1', '::1'])) {
+        $_result = true;
+    } else
+        $_result = false;
+    
+    // init output params!
+    return $_result;
+}
+
 
 ?>

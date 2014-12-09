@@ -1,6 +1,5 @@
-{Order out="getProducts"}
-
-{formOrder post=$smarty.post}
+{*Order out="getProducts"*}
+{*formOrder post=$smarty.post*}
 
 {strip}
 {include file='../includes/wrap-title-header.tpl'}
@@ -29,7 +28,11 @@
 											<!-- Block choose currency include -->
 											<div class="pull-right">
 												<span>Payment methods:</span>
-												<a href="#">
+                                                                                                
+                                                                                                <i class="ico-cart-visa"></i>
+                                                                                                <i class="ico-cart-mcart"></i>
+                                                                                                
+												{*<a href="#">
 													<i class="ico-cart-visa"></i>
 												</a>
 												<a href="#">
@@ -52,7 +55,7 @@
 												</a>
 												<a href="#">
 													<i class="ico-cart-cad"></i>
-												</a>
+												</a>*}
 											</div>
 										</div>
 										<div class="table_title">
@@ -69,11 +72,11 @@
 											<th>FEATURES:</th>
 											<th>
 												<div class="lg_text_table"><i class="icon-android"></i><span>Android</span></div>
-												<div class="sm_text_table"><span>(2.2 - 4.4)</span></div>
+												<div class="sm_text_table"><span>(2.2 - 5.0)</span></div>
 											</th>
 											<th>
 												<div class="lg_text_table"><i class="icon-apple"></i><span>iOS</span></div>
-												<div class="sm_text_table"><span>(3.1.3 - 7.1.1)<br />jailbreak needed</span></div>
+												<div class="sm_text_table"><span>(6.0 - 8.1.1)<br />jailbreak needed</span></div>
 											</th>
 											<th>
 												<div class="lg_text_table"><i class="icon-blackberry"></i><span class="hidden-xs">BlackBerry</span><span class="visible-xs">BB</span></div>
@@ -97,6 +100,7 @@
                                                                                                                        name="optionsRadios" 
                                                                                                                        id="optionsRadios{$_item.id}" 
                                                                                                                        value="{$_item.id}" 
+                                                                                                                       {if $_item.period == '12'} checked {/if}
                                                                                                                        >
 														<span><strong>{$_item.period}</strong> month</span>
 														<span>${$_item.price}</span>
@@ -120,7 +124,7 @@
 													<select class="select_inverse">
                                                                                                             
                                                                                                                 {foreach from=$getProducts.basic key=key item=_item}
-                                                                                                                    <option value="{$_item.id}">{$_item.period} month ${$_item.price}</option>
+                                                                                                                    <option value="{$_item.id}" {if $_item.period == '12'}selected{/if}>{$_item.period} month ${$_item.price}</option>
                                                                                                                 {/foreach}    
                                                                                                                 
                                                                                                             
@@ -274,7 +278,8 @@
 														<input type="radio" 
                                                                                                                        name="optionsRadios2" 
                                                                                                                        id="optionsRadios{$_item.id}" 
-                                                                                                                       value="{$_item.id}" 
+                                                                                                                       value="{$_item.id}"
+                                                                                                                       {if $_item.period == '12'} checked {/if}
                                                                                                                        >
 														<span><strong>{$_item.period}</strong> month</span>
 														<span>${$_item.price}</span>
@@ -302,7 +307,7 @@
 													<select class="select_inverse">
                                                                                                                 {if $getProducts.premium}
                                                                                                                     {foreach from=$getProducts.premium key=key item=_item}
-                                                                                                                        <option value="{$_item.id}">{$_item.period} month ${$_item.price}</option>
+                                                                                                                        <option value="{$_item.id}" {if $_item.period == '12'} selected {/if}>{$_item.period} month ${$_item.price}</option>
                                                                                                                     {/foreach}    
                                                                                                                 {/if} 
                                                                                                             

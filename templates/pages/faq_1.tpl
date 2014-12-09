@@ -25,13 +25,13 @@
 											<li>
 												<a id="what-is-pumpic-app" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse1">What is Pumpic?</a>
 												<div id="collapse1" class="collapse">
-													<p>Pumpic is a feature-rich parental control and employee tracking application designed to monitor smartphones and tablets activity such as text messages, phone calls, GPS location, IM chats, web browsing history, contacts, calendar, multimedia files etc.</p>
+													<p>Pumpic is a feature-rich parental control and employee tracking application designed to monitor smartphones and tablets activity such as texts, phone calls, GPS location, IM chats, web browsing history, contacts, calendar, multimedia files etc.</p>
 												</div>
 											</li>
 											<li>
 												<a id="what-is-pumpic-app" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse2">Is it legal to use Pumpic?</a>
 												<div id="collapse2" class="collapse">
-													<p>Pumpic is legal to install and use only on the device that you own personally, your underage child’s device or your employee’s company-issued device that you are properly authorized to monitor (usually that means having a written permission of the owner or user to conduct the surveillance). Pumpic does not condone the use of its software for any illegal purposes including but not limited to tracking people’s cell phones without their notice or permission.</p>
+													<p>Pumpic is legal to install and use only on the device that you own personally, your underage child’s device or your employee’s company-issued device that you are properly authorized to monitor (usually that means having a written permission of the owner or user to conduct the surveillance). Pumpic does not condone the use of its software for any illegal purposes including but not limited to tracking people’s cell phones without their knowledge or permission.</p>
 												</div>
 											</li>
 											<li>
@@ -43,9 +43,9 @@
                                                                                         
                                                                                         <!-- #start -->
 											<li>
-												<a id="start" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse4">Where to start?</a>
+												<a id="start" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse4">How to start?</a>
 												<div id="collapse4" class="collapse">
-													<p>First, register your account on the website. Choose the most optimal Pumpic subscription plan that suits your needs and budget. Log in to proceed with the payment and further installation.</p>
+													<p>First, choose the most optimal Pumpic subscription plan that suits your needs and budget. Once the payment process is successfully completed, your personal account is created automatically. Log in to proceed with the installation.</p>
 												</div>
 											</li>
 											<li>
@@ -58,13 +58,13 @@
 												<a id="start" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse6">Do I need to jailbreak/root the target device to install Pumpic?</a>
 												<div id="collapse6" class="collapse">
                                                                                                     <p>To install Pumpic, the target iOS device must be jailbroken.</p>  
-                                                                                                    <p>Android devices require rooting to get access to all the features of the app.</p>
+                                                                                                    <p>Android devices might require rooting to get access to all the features of the app.</p>
                                                                                                 </div>
 											</li>
 											<li>
 												<a id="start" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse7">Is physical access required or can I install the app remotely?</a>
 												<div id="collapse7" class="collapse">
-													<p>To install the application, physical access to the target cell phone or tablet is required. If done properly, the installation process will take no longer than 5 minutes. After that, the app can be controlled remotely from your account.</p>
+													<p>To install the application, physical access to the target cell phone or tablet is necessary. If done properly, the installation process will take no longer than 5 minutes. After that, the app can be controlled remotely from your account.</p>
 												</div>
 											</li>
                                                                                         
@@ -72,16 +72,14 @@
 											<li>
 												<a id="install" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse8">How to install Pumpic?</a>
 												<div id="collapse8" class="collapse">
-                                                                                                    <p>
-                                                                                                        Installation is very easy and stress-free. <a class="text-link" href="#">Here</a> you will find detailed and stepwise installation instructions. If you run into difficulties, feel free to contact our Customer Support Team for help.
-                                                                                                    </p>
+                                                                                                    <p>Installation is very easy and stress-free. <a class="text-link" href="#">Here</a> you will find detailed and stepwise installation instructions. If you run into difficulties, feel free to contact our Customer Support Team for help.</p>
 												</div>
 											</li>
 											<li>
 												<a id="install" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse9">How to uninstall Pumpic?</a>
 												<div id="collapse9" class="collapse">
                                                                                                     <b>Uninstall the app on iOS:</b>
-                                                                                                    <p>Go to Cydia > Manage > Sources > Click on apps.pumpic.com (the Developer’s Repo) > Updated > Modify > Uninstall > Uninstall will be completed > Go to the Cydia once again > Manage > Sources > Edit > Click on “remove” Next to the Developer’s Repo.</p>
+                                                                                                    <p>Go to Cydia > Manage > Sources > Click on {*repo.gr1m.com*}apps.pumpic.com (the Developer’s Repo) > Updated > Modify > Uninstall > Uninstall will be completed > Go to the Cydia once again > Manage > Sources > Edit > Click on “remove” Next to the Developer’s Repo.</p>
                                                                                                     <b>Uninstall the app on Android:</b>
                                                                                                     <p>Go to Phone > Settings > Security > Device administrators > Uncheck the box next to the app > Get back to settings > Apps > com.android.system.telethony > Uninstall</p>
 												</div>
@@ -89,34 +87,34 @@
 											<li>
 												<a id="install" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse10">Can I install/uninstall the application remotely?</a>
 												<div id="collapse10" class="collapse">
-                                                                                                    <p>Installation or removal of Pumpic can be only done manually. Please, make sure you have physical access to the device you plan to monitor before purchasing a subscription.</p>
+                                                                                                    <p>Installation or removal of Pumpic can be done only manually. Please make sure you have physical access to the device you plan to monitor before purchasing a subscription.</p>
 												</div>
 											</li>
 											<li>
 												<a id="install" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse11">How to update Pumpic?</a>
 												<div id="collapse11" class="collapse">
-                                                                                                    <b>iOS and Android:</b>
-                                                                                                    <p>The app is updated automatically on iOS and Android devices.</p>
-                                                                                                    <b>BlackBerry:</b>
+                                                                                                    <b>iOS:</b>
+                                                                                                    <p>The app is updated automatically on iOS devices.</p>
+                                                                                                    <b>BlackBerry and Android:</b>
                                                                                                     <ol>
                                                                                                         <li>Take the target device where the app is installed.</li>
                                                                                                         <li>Open a web browser on the target phone and proceed to: apps.pumpic.com. The app will start downloading automatically.</li> 
-                                                                                                        <li>When it’s downloaded, open the Notification Panel (by swiping your finger from the top of the screen to the bottom) and click on the downloaded apk file.</li> 
+                                                                                                        <li>When it’s downloaded, open the Notification Panel (by swiping your finger from the top of the screen to the bottom) and click on the downloaded .apk file.</li> 
                                                                                                         <li>Agree with everything that pops up on the screen and click Install.</li> 
                                                                                                         <li>When the app is successfully updated, click “Done”.</li> 
                                                                                                     </ol>
 												</div>
 											</li>
 											<li>
-												<a id="install" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse12">How often does information get updated?</a>
+												<a id="install" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse12">How often does Pumpic update?</a>
 												<div id="collapse12" class="collapse">
-													<p>Pumpic transfers new data to your personal account each Updated Period. This interval identifies how often the device with Pumpic set up is connected to our server and sends the information to your Control Panel directly. When you adjust “Update Period” manually from your personal account, please consider that intervals less than 10 min may noticeably reduce battery life.</p>
+													<p>Pumpic transfers new data to your personal account each Update Period. This interval identifies how often the device with Pumpic set up is connected to our server and sends information to your Control Panel directly. When you adjust Update Period manually from your personal account, please consider that intervals less than 10 min long may noticeably reduce battery life.</p>
 												</div>
 											</li>
 											<li>
 												<a id="install" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse13">Is it possible to add more devices to my Control Panel or will I have to set up an account for each new device?</a>
 												<div id="collapse13" class="collapse">
-													<p>Our Control Panel is very flexible and allows adding as many devices as you wish. However, please be informed that only one device can be connected to a specific Pumpic subscription.</p>
+													<p>Our Control Panel is very flexible and allows adding as many devices as you wish. However, please be informed that only one device can be connected to one specific Pumpic subscription.</p>
 												</div>
 											</li>
 											<li>
@@ -128,16 +126,14 @@
 											<li>
 												<a id="install" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse15">How to jailbreak iOS?</a>
 												<div id="collapse15" class="collapse">
-													<p>
-                                                                                                            Detailed instructions on how to jailbreak an iOS device can be found <a class="text-link" href="http://{$domain}/security/how-to-jailbreak-iphone-4-4s-5-5s-5c-ios-7/">here</a>. Note that all iOS devices have to be jailbroken before installing Pumpic.
-                                                                                                        </p>
+													<p>Detailed instructions on how to jailbreak an iOS device can be found <a class="text-link" href="http://{$domain}/security/how-to-jailbreak-iphone-4-4s-5-5s-5c-ios-7/">here</a>. Note that all iOS devices have to be jailbroken before installing Pumpic.</p>
 												</div>
 											</li>
 											<li>
 												<a id="install" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse16">Is there a limit per day? How to find out if I have reached the limit on my plan?</a>
 												<div id="collapse16" class="collapse">
 													<p>There is no daily limit. Depending on how actively you use the app, you can reach it in one day, week or month.</p>
-                                                                                                        <p>If you notice that the data has stopped updating in your Control Panel after a while, that might signal that you have reached the limit. Contact our Customer Support Team to double-check this information. In this case, you can either obtain the same subscription plan or upgrade it.</p>
+                                                                                                        <p>If you notice that the data has stopped updating in your Control Panel after a while, that might signal that you have reached the limit. Contact our Customer Support Team to double-check this information. In this case, you can either obtain the same subscription plan once again or upgrade it.</p>
 												</div>
 											</li>
                                                                                         
@@ -145,7 +141,7 @@
 											<li>
 												<a id="compatibility" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse17">What devices support Pumpic?</a>
 												<div id="collapse17" class="collapse">
-                                                                                                    <p>Pumpic is supported by the majority of smartphones and tablets. To make sure your particular device model is compatible with the application, please visit our <a class="text-link" href="http://{$domain}/compatibility.html">Compatibility page</a> or contact our Customer Support Team.</p>
+													<p>Pumpic is supported by the majority of smartphones and tablets. To make sure that your particular device model is compatible with the application, please visit our Compatibility page or contact our Customer Support Team.</p>
 												</div>
 											</li>
                                                                                         {*
@@ -162,7 +158,7 @@
 												</div>
 											</li>
 											<li>
-												<a id="compatibility" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse20">Is jailbreak visible while connected with iTunes, iCloud?</a>
+												<a id="compatibility" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse20">Is jailbreak visible after the connection with iTunes, iCloud?</a>
 												<div id="collapse20" class="collapse">
 													<p>Jailbreak is not visible while connected with iTunes or iCloud. You will be able to use both in regular mode even after jailbreaking your iOS.</p>
 												</div>
@@ -170,7 +166,7 @@
 											<li>
 												<a id="compatibility" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse21">How to root Android?</a>
 												<div id="collapse21" class="collapse">
-                                                                                                    <p>Detailed instructions on how to root an Android device can be found <a class="text-link" href="#">here</a>. Note that Android devices do not require rooting to run Pumpic. However, one should root the target device to get full access to all Pumpic features.</p>
+                                                                                                    <p>Detailed instructions on how to root an Android device can be found <a class="text-link" href="#">here</a>. Note that Android devices do not require rooting to run Pumpic. However, one should root the target device to get full access to all Pumpic features.</p>
 												</div>
 											</li>
 											<li>
@@ -192,9 +188,9 @@
 												</div>
 											</li>
 											<li>
-												<a id="compatibility" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse25">Does the app require Internet connection to fully function?</a>
+												<a id="compatibility" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse25">Does the app need the Internet?</a>
 												<div id="collapse25" class="collapse">
-													<p>The app itself does not require the Internet connection for monitoring. However, to transfer the collected data to your Control Panel, the target device needs to have Internet connection. Usually EDGE/3G Internet is enough, however, to transfer multimedia files you will need Wi-Fi connection.</p>
+													<p>The app itself does not need the Internet to do the monitoring. However, to transfer the collected data to your Control Panel, the target device needs to have Internet connection. Usually EDGE/3G Internet is enough, however, to transfer multimedia files you will need Wi-Fi.</p>
 												</div>
 											</li>
                                                                                         
@@ -202,7 +198,7 @@
 											<li>
 												<a id="billing" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse26">How much do Pumpic Basic and Pumpic Premium cost?</a>
 												<div id="collapse26" class="collapse">
-                                                                                                    <p>To get current information on prices, please visit our <a class="text-link" href="http://{$domain}/pricing.html">Pricing page</a> or contact our Customer Support Team.</p>
+													<p>To get current information on prices, please visit our <a class="text-link" href="#">Pricing page</a> or contact our Customer Support Team.</p>
 												</div>
 											</li>
 											<li>
@@ -224,9 +220,7 @@
 											<li>
 												<a id="billing" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse28">Is it possible to get a refund?</a>
 												<div id="collapse28" class="collapse">
-													<p>
-                                                                                                            Pumpic users can request a refund, if their reasons for doing so comply with our <a class="text-link" href="http://{$domain}/policy.html#refund-policy">Refund policy</a>. You can email your refund request to our Customer Support Team and explain in details why, in your opinion, you qualify for a refund. Our Dispute Manager will get back to you in the shortest time possible.
-                                                                                                        </p>
+													<p>Pumpic users can request a refund, if their reasons for doing so comply with our <a class="text-link" href="#">Refund policy conditions</a>. You can email your refund request to our Customer Support Team and explain in details why, in your opinion, you qualify for a refund. Our Dispute Manager will get back to you in the shortest time possible.</p>
 												</div>
 											</li>
 											<li>
@@ -237,23 +231,23 @@
 											</li>
                                                                                         
                                                                                         <li>
-												<a id="billing" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse30">How much does it cost to upgrade my plan?</a>
+												<a id="billing" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse30">How much will I be charged, if I choose to upgrade my plan?</a>
 												<div id="collapse30" class="collapse">
-													<p>If you decide to upgrade your subscription plan, you will need to pay the difference in the price of your current subscription and the subscription you want to upgrade to. Please note that you will need to get in touch with our Customer Support Team to have your price recalculated and get step-by-step assistance with upgrading your plan. Once the payment is successfully done, your account will be upgraded within 5 minutes.</p>
+													<p>If you decide to upgrade your subscription plan, you will only need to pay the difference in the price of your current subscription and the subscription you want to upgrade to. Please note that you will need to get in touch with our Customer Support Team to have your price recalculated and get step-by-step assistance with upgrading your plan. Once the payment is successfully done, your account will be upgraded within 5 minutes.</p>
 												</div>
 											</li>
                                                                                         
                                                                                         <li>
 												<a id="billing" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse31">What will I see in my bank statement?</a>
 												<div id="collapse31" class="collapse">
-													<p>The bill for Pumpic services will appear in your bank statement.</p>
+													<p>Pumpic will appear in your bank statement.</p>
 												</div>
 											</li>
                                                                                         
                                                                                         <li>
 												<a id="billing" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse32">What happens after the purchase?</a>
 												<div id="collapse32" class="collapse">
-													<p>Please check your inbox after processing your payment. Consider that sometimes automatically generated emails may be classified as Spam, so please check Spam box as well. You will receive a payment confirmation message from the billing company, and one more email with both a link to your Control Panel and login credentials.</p>
+													<p>Please check your inbox after processing your payment. Consider that sometimes automatically generated emails may be classified as Spam by mistake, so check Spam box as well. You will receive a payment confirmation message from the billing company, and one more email with both a link to your Control Panel and login credentials.</p>
 												</div>
 											</li>
                                                                                         
@@ -279,7 +273,7 @@
                                                                                         <li>
 												<a id="other" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse36">How can I delete information from my Control Panel?</a>
 												<div id="collapse36" class="collapse">
-													<p>Unfortunately, this option is currently unavailable. However, feel certain that we have taken every precaution to ensure your data is safe and protected.</p>
+													<p>Unfortunately, this option is currently unavailable. However, please know that we have taken every precaution to ensure your data is safe and protected.</p>
 												</div>
 											</li>
 										</ul>

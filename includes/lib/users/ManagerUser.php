@@ -4,6 +4,9 @@ namespace includes\lib\users;
 use System\DI;
 use System\Session;
 use System\Auth;
+use System\Session\Handler\RedisSessionHandler as RedisSessionHandler; 
+
+use Predis\Client as RedisClient; // Predis\Client
 
 use CS\Users\UsersManager as Manager;
 use CS\Users\UserAlreadyExistsException as UserAlreadyExistsException;
@@ -30,7 +33,7 @@ class ManagerUser extends Manager {
     
     static $_obj;
     
-    private $_pdo;
+    protected $_pdo;
     private $_params;
     
     private $_data; // cache user
@@ -42,10 +45,10 @@ class ManagerUser extends Manager {
     
     /* prod */
 //    private $_db = array(
-//        'dbname'    => 'main',
+//        'dev' => ['dbname'    => 'main',
 //        'host'      => '188.40.64.2',
 //        'user'      => 'ci_user',
-//        'password'  => 'qmsgrSR8qhxeNSC44533hVBqwNajd62z2QtXwN6E'
+//        'password'  => 'qmsgrSR8qhxeNSC44533hVBqwNajd62z2QtXwN6E']
 //        
 //    );
     
@@ -65,16 +68,35 @@ class ManagerUser extends Manager {
                 ),
     ];
     
-    private $_session;
-    private $_di;
+    protected $_session;
+    protected $_di;
     private $_auth;
     private $_mail_sender;
     
-    public function __construct(Array $_settings ) {
+    public function __construct( $settings = array() ) {
         $this -> _di = new DI();
-        $this -> _session = new Session(array('rememberMeTime' => 5));
+        
+        
+        Session::setConfig(array(
+            'cookieParams' => array(
+                'domain' => GlobalSettings::getCookieDomain(self::SITE_ID),
+                'rememberMeTime' => 2592000
+            )
+        ));
+        $redisConfig = GlobalSettings::getRedisConfig('sessions', self::SITE_ID);
+        $redisClient = new RedisClient($redisConfig);
+        Session::setSessionHandler(new RedisSessionHandler($redisClient));
+        $this -> _session = new Session();
+        
+        
+        
+        
+        // $this -> _session = new Session(array('rememberMeTime' => 5));
+        
+        
         $this -> _di -> set('session', $this -> _session);
         $this -> _auth = new Auth($this -> _di);
+        
         
         $db = new DB($this -> getSettingsDB());
         $this -> _pdo = $db -> getConnected();
@@ -95,8 +117,8 @@ class ManagerUser extends Manager {
         
         
         self::$_obj = $this;
-        self::init($_settings);
         
+        $this -> _initAfter( $settings );
         
         return self::$_obj;
     }
@@ -109,8 +131,12 @@ class ManagerUser extends Manager {
         return $this -> _db[ $_type ];
     }
     
+    public function _initAfter(Array $_settings) {
+        return self::init($_settings);
+    }
+    
     public static function init(Array $_settings ) {
-            self::$_obj -> setParams($_settings);
+           return self::$_obj -> setParams($_settings);
     }
     
     public function __get($name) {
@@ -288,8 +314,7 @@ class ManagerUser extends Manager {
         return $this -> _data;
     }
     
-    public function logout()
-    {
+    public function logout() {
         $this->_auth->clearIdentity();
     }
     
@@ -301,6 +326,51 @@ class ManagerUser extends Manager {
             return false;
     }
     
+    // get UserID
+    public function getUserID() {
+        $user = $this -> getLoginUser();
+        return (isset($user['id'])) ? $user['id'] : false;  
+    }
+    
+    // set Session 
+    public function setSession( $_name, $_data ) {
+        if(!empty($_data))
+            $this -> _session[$_name] = $_data;
+        return $this -> _session;
+    }
+    
+    public function getSession( $_name ) {
+        return (isset($this -> _session[$_name])) ? $this -> _session[$_name] : null; 
+    }
+    
+    public function unsetSession($_name) {
+        if(isset($this -> _session[$_name]))
+            unset($this -> _session[$_name]);
+    }
+    
+    
+    // redirect
+    public function _redirect( $_url ) {
+        header('Location: '.$_url);
+        die();
+    }
+    
+    // validate Capcha
+    public function validateCapcha($_capcha) {
+        if(!empty($_capcha)) {
+            if (!isset($this -> _session['captcha']) 
+                    and (empty($this -> _session['captcha']) || trim(strtolower($_capcha)) != $this -> _session['captcha'])) {
+                return false;
+            } else
+                return true;
+        } else 
+            return false;
+    }
+    
+    // validate Email
+    public function validateEmail($email) {
+        return filter_var($email, FILTER_VALIDATE_EMAIL);
+    }
     
 }
 
@@ -327,3 +397,50 @@ class Params implements \ArrayAccess {
     }
 }
 
+//class Order {
+//    private $di;
+//    private $authKey = null;
+//    private $session = null;
+//
+//    public function __construct(DI $di, $name = 'pumpic_order')
+//    {
+//        $this->di = $di;
+//        $this->authKey = $name;
+//        $this->session = $this->di->get('session');
+//
+//        if (!($this->session instanceof Session)) {
+//            throw new DI\InvalidOffsetException("Session object not defined!");
+//        }
+//    }
+//
+//    /**
+//     * 
+//     * @return DI
+//     */
+//    public function getDI()
+//    {
+//        return $this->di;
+//    }
+//
+//    public function hasIdentity()
+//    {
+//        return isset($this->session[$this->authKey]);
+//    }
+//
+//    public function setIdentity($data)
+//    {
+//        $this->session[$this->authKey] = $data;
+//    }
+//
+//    public function getIdentity()
+//    {
+//        return $this->session[$this->authKey];
+//    }
+//
+//    public function clearIdentity()
+//    {
+//        unset($this->session[$this->authKey]);
+//    }
+//
+//}
+//

@@ -232,6 +232,33 @@ jQuery(function(){
     jQuery(window).hashchange();
 });
 
+// init cookies
+function cookie_init() {
+    if(!getCookie('popUp')) {
+        $.cookie('popUp', false, { 
+                        expires: 7, 
+                        path: '/' 
+                    });
+    }            
+}
+
+function cookie_clear() {
+    if($.cookie('popUp')) {
+        $.removeCookie('popUp', { path: '/' });
+    }
+}
+
+function setCookie(name, value) {
+    $.cookie(name, value, { expires: 7, path: '/' });
+}
+
+function getCookie( name ) {
+    if($.cookie(name)) {
+        return $.cookie(name); 
+    } else
+        return false;
+}
+
 // init hashchange ( init bPopUp )
 function hashchange_onLoadInit() {
     
@@ -239,29 +266,61 @@ function hashchange_onLoadInit() {
 
 function hashchange_AfterInit() { 
     var _data = _parceHash( $data_hash );
+    
     // init bPopUp
-    if(isset(_data['popUp']) && _data['popUp'] == "true") {
-        // login status ok
-        if(isset($('.box-popUp #login-status-ok'))) {
-            var $this = $('.box-popUp #login-status-ok')
-            , title = $this.find('.title') 
-            , content = $this.find('.info'); 
-            
-            $('.box-popUp #login-status-ok').bPopup({
-                modalClose: true,
-                opacity: 0.6,
-                follow: [false, false], 
-                positionStyle: 'fixed', //'fixed' or 'absolute'
-                onOpen: function() {
-                    //content.html('TEST POPUP element!');
-                },
-                closeClass: 'close',
-                onClose: function() {
-                    //content.empty();
-                },
-                
-            });
-        } 
+    if(isset(_data['popUp'])) {
+        
+        if(_data['popUp'] == "auth" && !getCookie('popUp')) {
+            // login status ok
+            if(isset($('.box-popUp #box-status-auth'))) {
+                var $this = $('.box-popUp #box-status-auth')
+                , title = $this.find('.title') 
+                , content = $this.find('.info'); 
+
+                $this.bPopup({
+                    modalClose: true,
+                    opacity: 0.6,
+                    follow: [false, false], 
+                    positionStyle: 'fixed', //'fixed' or 'absolute'
+                    onOpen: function() {
+                        //content.html('TEST POPUP element!');
+                    },
+                    closeClass: 'close',
+                    onClose: function() {
+                        setCookie('popUp', true);
+                        //content.empty();
+                    },
+
+                });
+            } 
+        }
+        
+        if(_data['popUp'] == "registration" && !getCookie('popUp')) {
+            // login status ok
+            if(isset($('.box-popUp #box-status-registration'))) {
+                var $this = $('.box-popUp #box-status-registration')
+                , title = $this.find('.title') 
+                , content = $this.find('.info'); 
+
+                $this.bPopup({
+                    modalClose: true,
+                    opacity: 0.6,
+                    follow: [false, false], 
+                    positionStyle: 'fixed', //'fixed' or 'absolute'
+                    onOpen: function() {
+                        //content.html('TEST POPUP element!');
+                    },
+                    closeClass: 'close',
+                    onClose: function() {
+                        setCookie('popUp', true);
+                        //content.empty();
+                    },
+
+                });
+            } 
+        }
+        
+        
     }
 }
 
@@ -437,6 +496,8 @@ function die( $_msg ) {
 }
 
 $(document).ready(function(){ 
+    cookie_init();
+    
     $.data( window, "filters", false); // init clear cache
     
     var filters = {
@@ -944,33 +1005,55 @@ $(document).ready(function(){
   if($('form[name="price_basic"]').length) {
       var _basic = $('form[name="price_basic"]');
       var _input_basic = _basic.find('#product_price_basic');
+          _input_basic.val(''); 
+         
+        // radio
+          _basic.find('.label_radio').on('click', function() {
+              _input_basic.val('');
+              var _val = false;
+              if($(this).is('.r_on')) {
+                  _val = $(this).children('input').val();
+              }
+             _input_basic.val(_val);
+          }); 
+         
+       // select  
+       _basic.find('select').change(function () {
+                _input_basic.val('');
+                var _selected = false;
+
+                $(this).find( "option:selected" ).each(function() {
+                    _selected = $( this ).val();
+                });
+
+                if(_selected && _selected != '0') {
+                    _input_basic.val( _selected );
+                }
+            })
+                    .change();   
+         
+      if(_basic.find('.label_radio input[type="radio"]:visible')) {
+          // scan all checked
+          _basic.find('.label_radio input[type="radio"]:visible').each(function(k, val) {        
+              if($(val).attr('checked')) {
+                  _input_basic.val( $(val).val() );
+              }
+          });
+
+           
+      } else {
+         
           
-      // radio
-      _basic.find('.label_radio').on('click', function() {
-          _input_basic.val('');
-          var _val = false;
-          if($(this).is('.r_on')) {
-              _val = $(this).children('input').val();
-          }
-         _input_basic.val(_val);
-      }); 
+          _basic.find('select option').each(function(){
+              var _val = $( this ).val();
+              if($(this).attr('selected')) {
+                  _input_basic.val( _val );
+              }
+          });
+          
+         
+      }
       
-      
-      // select 
-      _basic.find('select').change(function () {
-            _input_basic.val('');
-            var _selected = false;
-            
-            $(this).find( "option:selected" ).each(function() {
-                _selected = $( this ).val();
-            });
-            
-            if(_selected && _selected != '0') {
-                _input_basic.val( _selected );
-            }
-        })
-                .change();
-        
         
        
   }
@@ -980,6 +1063,8 @@ $(document).ready(function(){
       var _premium = $('form[name="price_premium"]');
       var _input_premium = _premium.find('#product_price_premium');
           _input_premium.val('');
+             
+             
       // radio
       _premium.find('.label_radio').on('click', function() {
           _input_premium.val('');
@@ -988,22 +1073,45 @@ $(document).ready(function(){
               _val = $(this).children('input').val();
           }
          _input_premium.val(_val);
-      }); 
-      
-      // select 
+        }); 
+        
+        
+       // select 
       _premium.find('select').change(function () {
           _input_premium.val('');
             var _selected = false;
-            
+
             $(this).find( "option:selected" ).each(function() {
                 _selected = $( this ).val();
             });
-            
+
+            console.log( _selected );
+
             if(_selected && _selected != '0') {
                 _input_premium.val( _selected );
             }
         })
-                .change();
+                .change();  
+             
+      if(_premium.find('.label_radio input[type="radio"]:visible')) {
+          // scan all checked
+          _premium.find('.label_radio input[type="radio"]:visible').each(function(k, val) {        
+              if($(val).attr('checked')) {
+                  _input_premium.val( $(val).val() );
+              }
+          });    
+      } else {
+          
+          _premium.find('select option').each(function(){
+              var _val = $( this ).val();
+              if($(this).attr('selected')) {
+                  _input_premium.val( _val );
+              }
+          });
+         
+      }
+      
+      
        
   } 
     

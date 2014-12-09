@@ -17,7 +17,7 @@
 						<div class="row">
 							<div class="col-lg-12">
 								
-                                                            {openigsoonSendMail out="getOut" post=$smarty.post}
+                                                            {*openigsoonSendMail out="getOut" post=$smarty.post*}
                                                             
                                                             {if $getOut._error}
                                                                 <div class="box-info-messange center">

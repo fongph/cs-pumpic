@@ -569,12 +569,12 @@ $(document).ready(function(){
              }); // clear active
              
              $(this).parent().addClass('active');
-             $('.box_category ul li').hide();
+             $('.box_category ul > li').hide();
              if(_hash.length > 1) {
                 if(_hash[1] == 'all') {
-                    $('.box_category ul li').show();
+                    $('.box_category ul > li').show();
                 } else {
-                    $('.box_category ul li').find('#'+_hash[1]).parents('li').show();
+                    $('.box_category ul > li').find('#'+_hash[1]).parents('li').show();
                 }
                  
                 

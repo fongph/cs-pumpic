@@ -10,7 +10,7 @@ $obj = new includes\lib\users\Order;
 $smarty = new Smarty;
 
 // settings smarty
-$smarty->compile_check = true;
+$smarty->compile_check = false;
 $smarty->debugging = false;
 $smarty->force_compile = 1;
 
@@ -44,6 +44,9 @@ if($_result['_success']) {
 // init output params!
 $smarty->assign('getOut', $_result);
 
+$smarty->setTemplateDir($config['smarty']['tpl_path']);
+$smarty->setCacheDir($config['smarty']['cache_path']);
+$smarty->setCompileDir($config['smarty']['tpl_path_compile']);
 
 $smarty->registerPlugin("function","year_now","print_current_year");
 $smarty->assign("domain",$config['domain']);

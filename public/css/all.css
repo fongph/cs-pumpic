@@ -3805,3 +3805,13 @@ only screen and (max-device-width: 480px) {
 .popUp div {
     padding-bottom: 24px;
 }
+
+/* fix FAQ */
+.collapse > p, .collapsing > p {
+    font-style: italic;
+}
+
+.collapse > p a, .collapsing > p a {
+    text-decoration: underline;
+    color: #16a89e !important;
+}

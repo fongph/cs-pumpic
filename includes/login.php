@@ -3,7 +3,6 @@ $_inc = dirname(__FILE__); // includes
 $b_dir = dirname( $_inc ); // folder sites directory
 
 require_once $_inc.'/config.php';
-require_once $_inc.'/functions.php';
 require_once $_inc.'/lib/users/Order.php';
 $obj = new includes\lib\users\Order;
 
@@ -63,6 +62,10 @@ if($_result['_success']) {
 $smarty->assign('getOut', $_result);
 
 $smarty->assign('getUrl', $_url);
+
+$smarty->setTemplateDir($config['smarty']['tpl_path']);
+$smarty->setCacheDir($config['smarty']['cache_path']);
+$smarty->setCompileDir($config['smarty']['tpl_path_compile']);
 
 $smarty->registerPlugin("function","year_now","print_current_year");
 $smarty->assign("domain",$config['domain']);

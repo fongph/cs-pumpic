@@ -68,6 +68,9 @@ if(is_array($_respons) and count($_respons) > 0) {
 // init output params!
 $smarty->assign('getSetting', $_settings);
 
+$smarty->setTemplateDir($config['smarty']['tpl_path']);
+$smarty->setCacheDir($config['smarty']['cache_path']);
+$smarty->setCompileDir($config['smarty']['tpl_path_compile']);
 
 $smarty->registerPlugin("function","year_now","print_current_year");
 $smarty->assign("domain",$config['domain']);

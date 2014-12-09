@@ -73,7 +73,7 @@
 												<a id="install" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse8">How to install Pumpic?</a>
 												<div id="collapse8" class="collapse">
                                                                                                     <p>
-                                                                                                        Installation is very easy and stress-free. <a class="text-link" href="#">Here</a> you will find detailed and stepwise installation instructions. If you run into difficulties, feel free to contact our Customer Support Team for help.
+                                                                                                        Installation is very easy and stress-free. Here you will find detailed and stepwise installation instructions for <a class="text-link" href="http://cp.pumpic.com/how-to-install/android-instructions.html">Android</a> and <a class="text-link" href="http://cp.pumpic.com/how-to-install/ios-instructions.html">iOS</a>. If you run into difficulties, feel free to contact our Customer Support Team for help.
                                                                                                     </p>
 												</div>
 											</li>
@@ -170,7 +170,7 @@
 											<li>
 												<a id="compatibility" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse21">How to root Android?</a>
 												<div id="collapse21" class="collapse">
-                                                                                                    <p>Detailed instructions on how to root an Android device can be found <a class="text-link" href="#">here</a>. Note that Android devices do not require rooting to run Pumpic. However, one should root the target device to get full access to all Pumpic features.</p>
+                                                                                                    <p>Detailed instructions on how to root an Android device can be found <a class="text-link" href="http://www.digitaltrends.com/mobile/how-to-root-android/">here</a>. Note that Android devices do not require rooting to run Pumpic. However, one should root the target device to get full access to all Pumpic features.</p>
 												</div>
 											</li>
 											<li>

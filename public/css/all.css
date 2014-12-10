@@ -3828,7 +3828,11 @@ only screen and (max-device-width: 480px) {
 .banner1 {
 /*    width: 270px; */
     height: 276px;
-    background: url('../images/bg_blog_banner1.png') no-repeat;
+/*    background: #4d4f5b url('../images/bg_blog_banner1.png') no-repeat;*/
+    background-color: #4d4f5b;
+    background-image: url('../images/bg_blog_banner1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .banner1 .caption {

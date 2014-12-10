@@ -859,10 +859,12 @@ function smarty_modifier_detectedDev() {
 }
 
 function hasAccess() {
-     if(in_array(@$_SERVER['REMOTE_ADDR'], ['176.38.120.13', '212.90.60.74', '127.0.0.1', '::1'])) {
-        $_result = true;
-    } else
-        $_result = false;
+//     if(in_array(@$_SERVER['REMOTE_ADDR'], ['176.38.120.13', '212.90.60.74', '127.0.0.1', '::1'])) {
+//        $_result = true;
+//    } else
+//        $_result = false;
+    
+    $_result = true;
     
     // init output params!
     return $_result;

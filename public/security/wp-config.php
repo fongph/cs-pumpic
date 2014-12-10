@@ -25,7 +25,7 @@ define('DB_USER', 'pumpic_blog_user');
 define('DB_PASSWORD', '57ge8j9SNg9EkhryWA3KV9ZB9NUue6');
 
 /** MySQL hostname */
-define('DB_HOST', 'localhost');
+define('DB_HOST', '188.40.64.2');
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');

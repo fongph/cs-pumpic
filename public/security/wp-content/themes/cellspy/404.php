@@ -9,7 +9,24 @@
 
 get_header(); ?>
 
-	<div id="primary" class="site-content">
+<div class="very_easy">
+        <div class="container">
+                <div class="row">
+                        <div class="col-lg-10 col-lg-offset-1">
+                                <div class="row">
+                                        <div class="col-lg-12">
+                                                <h2>404 Page not found</h2>
+                                                <article>
+                                                        <p class="text-justify"></p>
+                                                </article>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+        </div>
+</div>
+
+<!--	<div id="primary" class="site-content">
 		<div id="content" role="main">
 
 			<article id="post-0" class="post error404 no-results not-found">
@@ -20,11 +37,11 @@ get_header(); ?>
 				<div class="entry-content">
 					<p><?php _e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', 'twentytwelve' ); ?></p>
 					<?php get_search_form(); ?>
-				</div><!-- .entry-content -->
-			</article><!-- #post-0 -->
+				</div> .entry-content 
+			</article> #post-0 
 
-		</div><!-- #content -->
-	</div><!-- #primary -->
+		</div> #content 
+	</div> #primary -->
 
 <?php get_footer(); ?>
 

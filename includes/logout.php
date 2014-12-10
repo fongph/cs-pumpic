@@ -11,10 +11,10 @@ if($_managerUser -> getLoginUser()) {
 }
 
 // clear cookie
-if(isset($_COOKIE['popUp'])) {
-    setcookie("popUp","", time()-3600, '/');
-    unset ($_COOKIE['popUp']);
-}
+//if(isset($_COOKIE['popUp'])) {
+//    setcookie("popUp","", time()-3600, '/');
+//    unset ($_COOKIE['popUp']);
+//}
 
 header('Location: /');
 die();

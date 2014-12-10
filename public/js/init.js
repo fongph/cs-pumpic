@@ -234,12 +234,12 @@ jQuery(function(){
 
 // init cookies
 function cookie_init() {
-    if(!getCookie('popUp')) {
-        $.cookie('popUp', false, { 
-                        expires: 7, 
-                        path: '/' 
-                    });
-    }            
+//    if(!getCookie('popUp')) {
+//        $.cookie('popUp', false, { 
+//                        expires: 7, 
+//                        path: '/' 
+//                    });
+//    }            
 }
 
 function cookie_clear() {
@@ -270,7 +270,7 @@ function hashchange_AfterInit() {
     // init bPopUp
     if(isset(_data['popUp'])) {
         
-        if(_data['popUp'] == "auth" && !getCookie('popUp')) {
+        if(_data['popUp'] == "auth") { // && !getCookie('popUp')
             // login status ok
             if(isset($('.box-popUp #box-status-auth'))) {
                 var $this = $('.box-popUp #box-status-auth')
@@ -287,7 +287,7 @@ function hashchange_AfterInit() {
                     },
                     closeClass: 'close',
                     onClose: function() {
-                        setCookie('popUp', true);
+                        // setCookie('popUp', true);
                         //content.empty();
                     },
 
@@ -295,7 +295,7 @@ function hashchange_AfterInit() {
             } 
         }
         
-        if(_data['popUp'] == "registration" && !getCookie('popUp')) {
+        if(_data['popUp'] == "registration") { // && !getCookie('popUp')
             // login status ok
             if(isset($('.box-popUp #box-status-registration'))) {
                 var $this = $('.box-popUp #box-status-registration')
@@ -312,7 +312,7 @@ function hashchange_AfterInit() {
                     },
                     closeClass: 'close',
                     onClose: function() {
-                        setCookie('popUp', true);
+                        // setCookie('popUp', true);
                         //content.empty();
                     },
 

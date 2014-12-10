@@ -1117,4 +1117,13 @@ $(document).ready(function(){
     
   /* hashchange_AfterInit */
   hashchange_AfterInit();
+  
+  /* fix features desine chrome */
+  if($('#viber-whatsapp-skype').length) {
+       if ( $.browser.webkit ) {
+           $('#viber-whatsapp-skype').removeClass('w30p').addClass('w16p');
+            // alert( "This is WebKit!" );
+        } else
+           $('#viber-whatsapp-skype').removeClass('w16p').addClass('w30p'); 
+  }
 });

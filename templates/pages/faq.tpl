@@ -74,7 +74,7 @@
 												<a id="install" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse8">How to install Pumpic?</a>
 												<div id="collapse8" class="collapse">
                                                                                                     <p>
-                                                                                                        Installation is very easy and stress-free. Here you will find detailed and stepwise installation instructions for <a class="text-link" href="http://cp.pumpic.com/how-to-install/android-instructions.html">Android</a> and <a class="text-link" href="http://cp.pumpic.com/how-to-install/ios-instructions.html">iOS</a>. If you run into difficulties, feel free to contact our Customer Support Team for help.
+                                                                                                        Installation is very easy and stress-free. Here you will find detailed and stepwise installation instructions for <a class="text-link" target="_blank" href="http://cp.pumpic.com/how-to-install/android-instructions.html">Android</a> and <a class="text-link" target="_blank" href="http://cp.pumpic.com/how-to-install/ios-instructions.html">iOS</a>. If you run into difficulties, feel free to contact our Customer Support Team for help.
                                                                                                     </p>
 												</div>
 											</li>
@@ -133,7 +133,7 @@
 												<a id="install" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse15">How to jailbreak iOS?</a>
 												<div id="collapse15" class="collapse">
 													<p>
-                                                                                                            Detailed instructions on how to jailbreak an iOS device can be found <a class="text-link" href="http://{$domain}/security/how-to-jailbreak-iphone-4-4s-5-5s-5c-ios-7/">here</a>. Note that all iOS devices have to be jailbroken before installing Pumpic.
+                                                                                                            Detailed instructions on how to jailbreak an iOS device can be found <a class="text-link" target="_blank" href="http://{$domain}/security/how-to-jailbreak-iphone-4-4s-5-5s-5c-ios-7/">here</a>. Note that all iOS devices have to be jailbroken before installing Pumpic.
                                                                                                         </p>
 												</div>
 											</li>
@@ -149,7 +149,7 @@
 											<li>
 												<a id="compatibility" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse17">What devices support Pumpic?</a>
 												<div id="collapse17" class="collapse">
-                                                                                                    <p>Pumpic is supported by the majority of smartphones and tablets. To make sure your particular device model is compatible with the application, please visit our <a class="text-link" href="http://{$domain}/compatibility.html">Compatibility page</a> or contact our Customer Support Team.</p>
+                                                                                                    <p>Pumpic is supported by the majority of smartphones and tablets. To make sure your particular device model is compatible with the application, please visit our <a class="text-link" target="_blank" href="http://{$domain}/compatibility.html">Compatibility page</a> or contact our Customer Support Team.</p>
                                                                                                     <p>BlackBerry devices are not supported at the moment. We work hard to make them compatible in the nearest future.</p>
                                                                                                 </div>
 											</li>
@@ -175,7 +175,7 @@
 											<li>
 												<a id="compatibility" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse21">How to root Android?</a>
 												<div id="collapse21" class="collapse">
-                                                                                                    <p>Detailed instructions on how to root an Android device can be found <a class="text-link" href="http://www.digitaltrends.com/mobile/how-to-root-android/">here</a>. Note that Android devices do not require rooting to run Pumpic. However, one should root the target device to get full access to all Pumpic features.</p>
+                                                                                                    <p>Detailed instructions on how to root an Android device can be found <a class="text-link" target="_blank" href="http://www.digitaltrends.com/mobile/how-to-root-android/">here</a>. Note that Android devices do not require rooting to run Pumpic. However, one should root the target device to get full access to all Pumpic features.</p>
 												</div>
 											</li>
 											<li>
@@ -207,7 +207,7 @@
 											<li>
 												<a id="billing" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse26">How much do Pumpic Basic and Pumpic Premium cost?</a>
 												<div id="collapse26" class="collapse">
-                                                                                                    <p>To get current information on prices, please visit our <a class="text-link" href="http://{$domain}/pricing.html">Pricing page</a> or contact our Customer Support Team.</p>
+                                                                                                    <p>To get current information on prices, please visit our <a class="text-link" target="_blank" href="http://{$domain}/pricing.html">Pricing page</a> or contact our Customer Support Team.</p>
 												</div>
 											</li>
 											<li>
@@ -230,7 +230,7 @@
 												<a id="billing" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse28">Is it possible to get a refund?</a>
 												<div id="collapse28" class="collapse">
 													<p>
-                                                                                                            Pumpic users can request a refund, if their reasons for doing so comply with our <a class="text-link" href="http://{$domain}/policy.html#refund-policy">Refund policy</a>. You can email your refund request to our Customer Support Team and explain in details why, in your opinion, you qualify for a refund. Our Dispute Manager will get back to you in the shortest time possible.
+                                                                                                            Pumpic users can request a refund, if their reasons for doing so comply with our <a class="text-link" target="_blank" href="http://{$domain}/policy.html#refund-policy">Refund policy</a>. You can email your refund request to our Customer Support Team and explain in details why, in your opinion, you qualify for a refund. Our Dispute Manager will get back to you in the shortest time possible.
                                                                                                         </p>
 												</div>
 											</li>

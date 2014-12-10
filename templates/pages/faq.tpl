@@ -84,7 +84,9 @@
                                                                                                     <b>Uninstall the app on iOS:</b>
                                                                                                     <p>Go to Cydia > Manage > Sources > Click on apps.pumpic.com (the Developer’s Repo) > Updated > Modify > Uninstall > Uninstall will be completed > Go to the Cydia once again > Manage > Sources > Edit > Click on “remove” Next to the Developer’s Repo.</p>
                                                                                                     <b>Uninstall the app on Android:</b>
-                                                                                                    <p>Go to Phone > Settings > Security > Device administrators > Uncheck the box next to the app > Get back to settings > Apps > com.android.system.telethony > Uninstall</p>
+                                                                                                    <p>Go to Phone > Settings > Security > Device administrators > Uncheck the box next to the app > Get back to settings > Apps > com.pumpic > Uninstall.</p>
+                                                                                                    <b>Uninstall within the app:</b>
+                                                                                                    <p>Run Pumpic App > Enter your Secret Key to proceed to Settings > Tap button “Delete”. </p>
 												</div>
 											</li>
 											<li>
@@ -99,13 +101,14 @@
                                                                                                     <b>iOS and Android:</b>
                                                                                                     <p>The app is updated automatically on iOS and Android devices.</p>
                                                                                                     <b>BlackBerry:</b>
-                                                                                                    <ol>
+                                                                                                    <p>BlackBerry devices are not supported at the moment. We work hard to make them compatible in the nearest future.</p>
+                                                                                                    {*<ol>
                                                                                                         <li>Take the target device where the app is installed.</li>
                                                                                                         <li>Open a web browser on the target phone and proceed to: apps.pumpic.com. The app will start downloading automatically.</li> 
                                                                                                         <li>When it’s downloaded, open the Notification Panel (by swiping your finger from the top of the screen to the bottom) and click on the downloaded apk file.</li> 
                                                                                                         <li>Agree with everything that pops up on the screen and click Install.</li> 
                                                                                                         <li>When the app is successfully updated, click “Done”.</li> 
-                                                                                                    </ol>
+                                                                                                    </ol>*}
 												</div>
 											</li>
 											<li>
@@ -147,7 +150,8 @@
 												<a id="compatibility" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse17">What devices support Pumpic?</a>
 												<div id="collapse17" class="collapse">
                                                                                                     <p>Pumpic is supported by the majority of smartphones and tablets. To make sure your particular device model is compatible with the application, please visit our <a class="text-link" href="http://{$domain}/compatibility.html">Compatibility page</a> or contact our Customer Support Team.</p>
-												</div>
+                                                                                                    <p>BlackBerry devices are not supported at the moment. We work hard to make them compatible in the nearest future.</p>
+                                                                                                </div>
 											</li>
                                                                                         {*
 											<li>
@@ -237,12 +241,12 @@
 												</div>
 											</li>
                                                                                         
-                                                                                        <li>
+                                                                                        {*<li>
 												<a id="billing" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse30">How much does it cost to upgrade my plan?</a>
 												<div id="collapse30" class="collapse">
 													<p>If you decide to upgrade your subscription plan, you will need to pay the difference in the price of your current subscription and the subscription you want to upgrade to. Please note that you will need to get in touch with our Customer Support Team to have your price recalculated and get step-by-step assistance with upgrading your plan. Once the payment is successfully done, your account will be upgraded within 5 minutes.</p>
 												</div>
-											</li>
+											</li>*}
                                                                                         
                                                                                         <li>
 												<a id="billing" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse31">What will I see in my bank statement?</a>

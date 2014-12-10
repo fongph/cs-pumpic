@@ -793,7 +793,8 @@ function smarty_function_features_plans( $_plans = array()  ) {
    // $smarty->debugging = false;
     
     $smarty->setTemplateDir(dirname(dirname(__FILE__)).'/templates/includes'); // features-plans.tpl
-    
+    $smarty->setCacheDir(dirname(dirname(__FILE__)).'/cache/');
+    $smarty->setCompileDir(dirname(dirname(__FILE__)).'/templates_c/');
     
     foreach ($_options as $_id => $_option) :
         if(is_array($_option) and count($_option) > 0):

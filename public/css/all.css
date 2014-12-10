@@ -2376,6 +2376,14 @@ textarea {
   background-position: -304px -50px;
 }
 
+.ico-cart-paypal-new {
+    background-position: -152px -50px;
+}
+
+.ico-cart-descover-new {
+    background-position: -229px -50px;
+}
+
 .table_title {
   overflow: hidden;
   text-align: center !important;
@@ -3814,4 +3822,21 @@ only screen and (max-device-width: 480px) {
 .collapse > p a, .collapsing > p a {
     text-decoration: underline;
     color: #16a89e !important;
+}
+
+/* banner1 */
+.banner1 {
+    width: 270px;
+    height: 276px;
+    background: url('../images/bg_blog_banner1.png') no-repeat;
+}
+
+.banner1 .caption {
+    height: 100%;
+    position: relative;
+}
+
+.banner1 .buttons {
+    bottom: 0px;
+    position: absolute;
 }

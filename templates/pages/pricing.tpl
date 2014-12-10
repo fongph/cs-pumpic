@@ -31,6 +31,9 @@
                                                                                                 
                                                                                                 <i class="ico-cart-visa"></i>
                                                                                                 <i class="ico-cart-mcart"></i>
+                                                                                                <i class="ico-cart-aexpress"></i>
+                                                                                                <i class="ico-cart-descover-new"></i>
+                                                                                                <i class="ico-cart-paypal-new"></i>
                                                                                                 
 												{*<a href="#">
 													<i class="ico-cart-visa"></i>

@@ -16,13 +16,13 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'blog_pumpic');
+define('DB_NAME', 'pumpic_blog');
 
 /** MySQL database username */
-define('DB_USER', 'root');
+define('DB_USER', 'pumpic_blog_user');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'root');
+define('DB_PASSWORD', '57ge8j9SNg9EkhryWA3KV9ZB9NUue6');
 
 /** MySQL hostname */
 define('DB_HOST', 'localhost');

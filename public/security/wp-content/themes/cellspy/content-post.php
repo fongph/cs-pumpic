@@ -1,5 +1,5 @@
 <article id="post-<?php the_ID(); ?>" class="post artice_bordered">
-    <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+    <h1 class="h2"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
     <div class="list_tags">
         <span class="date"><?= wp_date_format() ?></span>
         <?php /* the_tags(__('<strong>Posted by to</strong>'), '') */ ?>

@@ -3826,7 +3826,7 @@ only screen and (max-device-width: 480px) {
 
 /* banner1 */
 .banner1 {
-    width: 270px;
+/*    width: 270px; */
     height: 276px;
     background: url('../images/bg_blog_banner1.png') no-repeat;
 }

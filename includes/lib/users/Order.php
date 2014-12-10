@@ -59,8 +59,8 @@ class Order extends ManagerUser {
 
         $this -> _gateway->setStoreId( $this -> storeId )
                 ->setProductId($orderProduct->getReferenceNumber())
-                ->setReferenceData($order->getId() . '-' . $order->getHash())
-                ->setTestMode(); // не обязательно
+                ->setReferenceData($order->getId() . '-' . $order->getHash());
+                // ->setTestMode(); // не обязательно
 
         $response =$this -> _gateway->purchaseProduct()->send();
 

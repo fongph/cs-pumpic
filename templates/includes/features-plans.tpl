@@ -103,13 +103,13 @@
                                         <div class="price">
                                             {$plans.basic.price}
                                         </div>
-                                        <button class="btn btn-default">Buy Basic</button>
+                                        <a href="{$plans.basic.url}" class="btn btn-default">Buy Basic</a>
                                     {else}
                                         <h3>Premium</h3>
                                         <div class="price">
                                             {$plans.premium.price}
                                         </div>
-                                        <button class="btn btn-default">Buy Premium</button>
+                                        <a href="{$plans.premium.url}" class="btn btn-default">Buy Premium</a>
                                     {/if}    
                             </div>
                     </div>

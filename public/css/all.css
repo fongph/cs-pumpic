@@ -3844,3 +3844,58 @@ only screen and (max-device-width: 480px) {
     bottom: 0px;
     position: absolute;
 }
+
+/* fix h1...h6 */
+#box-content-post h1,
+#box-content-post h2,
+#box-content-post h3, 
+#box-content-post h4,
+#box-content-post h5,
+#box-content-post h6 {
+    font-family: "Open Sans",Helvetica,Arial,sans-serif;
+    color: #4d4f5b;
+    line-height: 1.1;
+    font-weight: 500;
+}
+
+
+#box-content-post h1 {
+  font-size: 36px;
+}
+#box-content-post h2 {
+  font-size: 30px;
+  text-align: left;
+  text-transform: none;
+  
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+#box-content-post h3 {
+  font-size: 24px;
+}
+#box-content-post h4 {
+  font-size: 18px;
+}
+#box-content-post h5 {
+  font-size: 14px;
+}
+#box-content-post h6 {
+  font-size: 12px;
+}
+
+
+#box-content-post h3:after {
+    margin: 0px;
+    background: none;
+    height: auto;
+    width: auto;
+}
+
+#box-content-post .underline:after {
+    background: none repeat scroll 0 0 #16a89e;
+    content: "";
+    display: block;
+    height: 5px;
+    margin-top: 10px;
+    width: 65px;
+}

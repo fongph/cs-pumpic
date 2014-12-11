@@ -6,7 +6,9 @@
             <span class="date"><?= wp_date_format() ?></span>
             <?php /* the_tags(__('<strong>Posted by to</strong>'), '')*/ ?>
         </div>
-        <?= the_content() ?>
+        <div id="box-content-post">
+            <?= the_content() ?>
+        </div>    
         <?= fb_get_cat_related_posts() ?>
 
     </article>

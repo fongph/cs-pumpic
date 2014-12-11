@@ -49,7 +49,6 @@ if ( !function_exists('fb_get_cat_related_posts') ) {
         // if ( $catName )
             // $output .= __( 'Kategorie: ' ) . get_cat_name($category) . ' ';
 
-
         $args = array(
             'numberposts' => $limit,
             'category' => $category,

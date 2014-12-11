@@ -3853,34 +3853,33 @@ only screen and (max-device-width: 480px) {
 #box-content-post h5,
 #box-content-post h6 {
     font-family: "Open Sans",Helvetica,Arial,sans-serif;
-    color: #4d4f5b;
+    color: #7f7f7f; // #7f7f7f #4d4f5b
     line-height: 1.1;
-    font-weight: 500;
+    font-weight: 300; // 500
+    margin-bottom: 10px;
+    margin-top: 0;
 }
 
 
 #box-content-post h1 {
-  font-size: 36px;
+  font-size: 35px; /* 38 */
 }
 #box-content-post h2 {
-  font-size: 30px;
+  font-size: 32px;
   text-align: left;
   text-transform: none;
-  
-  margin-bottom: 10px;
-  margin-top: 0;
 }
 #box-content-post h3 {
-  font-size: 24px;
+  font-size: 26px;
 }
 #box-content-post h4 {
-  font-size: 18px;
+  font-size: 22px;
 }
 #box-content-post h5 {
-  font-size: 14px;
+  font-size: 18px;
 }
 #box-content-post h6 {
-  font-size: 12px;
+  font-size: 16px;
 }
 
 

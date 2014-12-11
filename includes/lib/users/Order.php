@@ -62,7 +62,7 @@ class Order extends ManagerUser {
                 ->setReferenceData($order->getId() . '-' . $order->getHash());
                 // ->setTestMode(); // не обязательно
 
-        $response =$this -> _gateway->purchaseProduct()->send();
+        $response =$this -> _gateway->purchaseProduct(array('action' => 'adds'))->send();
 
         $redirectUrl = $response->getRedirectUrl();
         

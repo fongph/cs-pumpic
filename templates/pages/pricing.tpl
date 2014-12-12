@@ -22,7 +22,7 @@
 							<div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1">
                                                             <form name="price_basic" method="POST" action="/pricing.html">
                                                                 <input id='product_price_basic' type='hidden' name='price[productID]' value='0' />
-								<table class="table table-bordered">
+								<table class="table table-bordered pricing-first">
 									<caption>
 										<div class="table_header">
 											<!-- Block choose currency include -->
@@ -173,7 +173,7 @@
 										<tr>
 											<td>SMS blocking</td>
 											<td><i class="icon-ok"></i>
-												<br />(except 4.4)</td>
+												<br />(except 4.4 and higher)</td>
 											<td><i class="icon-ok"></i>
 											</td>
 											<td><i class="icon-cancel"></i>
@@ -263,12 +263,12 @@
 									</tbody>
 								</table>
                                                                                         
-                                                                </form>                         
-                                                                <form name="price_premium" method="POST" action="/pricing.html"> 
+                                                            </form>                         
+                                                            <form name="price_premium" method="POST" action="/pricing.html"> 
                                                                     
                                                                 <input id='product_price_premium' type='hidden' name='price[productID]' value='' />    
                                                                     
-								<table class="table table-bordered">
+								<table class="table table-bordered pricing-last">
 									<tfoot>
 										<tr>
 											<td colspan="4">

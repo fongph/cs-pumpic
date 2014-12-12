@@ -2,5 +2,6 @@
 /templates_c/*
 /vendor/*
 /includes/config.php
+/public/security/wp-config.php
 /composer.lock
 /.gitignore~

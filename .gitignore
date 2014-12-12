@@ -1,5 +1,6 @@
 /nbproject/*
-/includes/config.php
 /templates_c/*
 /vendor/*
+/includes/config.php
 /composer.lock
+/.gitignore~

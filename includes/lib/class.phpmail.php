@@ -136,7 +136,7 @@ class Phpmail extends Settings {
                 
                 
                 if($_data === true) {
-                    $this -> _messange['success'] = "Your email was succesfully sent.";
+                    $this -> _messange['success'] = "Your email has been successfully sent.";
                 } else
                     $this -> _messange['error'] = "Invalid System Params.";
                 
@@ -171,7 +171,7 @@ class Phpmail extends Settings {
                 
                 
                 if($_data === true) {
-                    $this -> _messange['success'] = "Your email was succesfully sent.";
+                    $this -> _messange['success'] = "Your email has been successfully sent.";
                 } else
                     $this -> _messange['error'] = "Invalid System Params.";
                 

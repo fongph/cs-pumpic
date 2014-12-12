@@ -598,6 +598,7 @@ $(document).ready(function(){
       return false;
    });
    
+   
    // compatibility search
    $('.form-search').on('submit', function(e) {
        e.preventDefault();
@@ -623,6 +624,7 @@ $(document).ready(function(){
    if($('.mobile_tooltip').length) {
        $('.mobile_tooltip').easyTooltip();
    }
+   
    
    // scroll (fly-box)
    

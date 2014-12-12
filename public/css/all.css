@@ -2420,10 +2420,12 @@ textarea {
   position: relative;
   border-top: 1px solid #16a89e;
 }
-.table:first-child {
+.table:first-child,
+form > table.pricing-first {
   margin: 0;
 }
-.table:first-child:before {
+.table:first-child:before,
+form > table.pricing-first:before {
   content: "";
   display: block;
   position: absolute;
@@ -2434,11 +2436,13 @@ textarea {
   background: url(../images/img_basis_table.png) no-repeat;
 }
 @media only screen and (max-width: 991px) {
-  .table:first-child:before {
+  .table:first-child:before,
+  form > table.pricing-first:before {
     display: none;
   }
 }
-.table:first-child:after {
+.table:first-child:after,
+form > table.pricing-first:after {
   content: "";
   display: block;
   position: absolute;
@@ -2449,7 +2453,8 @@ textarea {
   background: url(../images/img_premium_table.png) no-repeat;
 }
 @media only screen and (max-width: 991px) {
-  .table:first-child:after {
+  .table:first-child:after,
+  form > table.pricing-first:after {
     display: none;
   }
 }

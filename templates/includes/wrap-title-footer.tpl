@@ -3,6 +3,9 @@
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,300italic,400italic,600italic,700italic' rel='stylesheet' type='text/css'>
 	<link href="{$css}/bootstrap.css" rel="stylesheet">
 	<link href="{$css}/fontello.css" rel="stylesheet">
+        <!-- lightbox style -->
+        <link href="{$css}/lightbox.css" rel="stylesheet">
+        
 	<link href="{$css}/all.css" rel="stylesheet">
 	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -15,6 +18,9 @@
 	<script src="{$js}/bootstrap.js"></script>
 	<script src="{$js}/fancy_checkbox.js"></script>
         <script src="{$js}/main.js"></script>
+        
+        <!-- lightbox -->
+        <script src="{$js}/lightbox/lightbox.js"></script>
         
         <!-- jquery bpopUp -->
         <script src="{$js}/popup/jquery.bpopup.min.js"></script>

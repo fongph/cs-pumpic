@@ -57,7 +57,7 @@ class Phpmail extends Settings {
         
         
         if(!$this -> validateEmail($_params['to'])) {
-            $this -> _messange['error'] = "Invalid email format.";
+            $this -> _messange['error'] = "Invalid email format";
         } else {
             
             // sendMail Api
@@ -69,9 +69,9 @@ class Phpmail extends Settings {
             
             
             if($_data === true) {
-                $this -> _messange['success'] = "Your email was succesfully sent.";
+                $this -> _messange['success'] = "Your email was successfully sent";
             } else
-                $this -> _messange['error'] = "Invalid System Params.";
+                $this -> _messange['error'] = "Invalid System Params";
             
             
             
@@ -89,9 +89,9 @@ class Phpmail extends Settings {
             $_id = rand(0, 9000000);
             
             if(!$this -> validateEmail($params['email'])) {
-                $this -> _messange['error']['email'] = "Invalid email format.";
+                $this -> _messange['error']['email'] = "Invalid email format";
             } else if(empty($params['device-model']) or strlen( $params['device-model']) < 3 ) {
-                $this -> _messange['error']['device-model'] = "The Device Model field is empty.";
+                $this -> _messange['error']['device-model'] = "The Device Model field is empty";
             } else {
                 
                 // sendMail Api
@@ -103,9 +103,9 @@ class Phpmail extends Settings {
                 
                 
                 if($_data === true) {
-                    $this -> _messange['success'] = "Your email was succesfully sent.";
+                    $this -> _messange['success'] = "Your email was succesfully sent";
                 } else
-                    $this -> _messange['error'] = "Invalid System Params.";
+                    $this -> _messange['error']['email'] = "Invalid System Params";
                 
                 
             }    
@@ -124,7 +124,7 @@ class Phpmail extends Settings {
         if(is_array($params) and count($params) > 0) {
             
             if(!$this -> validateEmail($params['email'])) {
-                $this -> _messange['error']['email'] = "Invalid email format.";
+                $this -> _messange['error']['email'] = "Invalid email format";
             } else {
                 
                 // sendMail Api
@@ -136,9 +136,9 @@ class Phpmail extends Settings {
                 
                 
                 if($_data === true) {
-                    $this -> _messange['success'] = "Your email has been successfully sent.";
+                    $this -> _messange['success'] = "Your email was successfully sent";
                 } else
-                    $this -> _messange['error'] = "Invalid System Params.";
+                    $this -> _messange['error']['email'] = "Invalid System Params";
                 
                 
             }    
@@ -157,7 +157,7 @@ class Phpmail extends Settings {
             $_id = rand(0, 9000000);
             
             if(!$this -> validateEmail($params['email'])) {
-                $this -> _messange['error']['email'] = "Invalid email format.";
+                $this -> _messange['error']['email'] = "Invalid email format";
             } else {
                 
                 // sendMail Api
@@ -171,9 +171,9 @@ class Phpmail extends Settings {
                 
                 
                 if($_data === true) {
-                    $this -> _messange['success'] = "Your email has been successfully sent.";
+                    $this -> _messange['success'] = "Your email was successfully sent";
                 } else
-                    $this -> _messange['error'] = "Invalid System Params.";
+                    $this -> _messange['error']['email'] = "Invalid System Params";
                 
             }    
 

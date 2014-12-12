@@ -666,10 +666,10 @@ $(document).ready(function(){
             email: true
         },
         messages: {
-            name: "The Device Model field is empty.",
+            name: "The Device Model field is empty",
             email: {
-                required: "The Email field is empty.",
-                email: "Invalid email format."
+                required: "The Email field is empty",
+                email: "Invalid email format"
             }
         },
        
@@ -713,13 +713,13 @@ $(document).ready(function(){
                       $('form[name="send_find_phone"] span.info').html( "Your email has been successfully sent" ).css({'display':'inline-block'});
 
                   } else {
-                      $('form[name="send_find_phone"] .fatal-error').html('Your email was not sent.');
+                      $('form[name="send_find_phone"] .fatal-error').html('Your email was not sent');
                       console.log('System error!');
                       return false;
                   }    
 
               } else {
-                  $('form[name="send_find_phone"] .fatal-error').html('Your email was not sent.'); 
+                  $('form[name="send_find_phone"] .fatal-error').html('Your email was not sent'); 
                   console.log('Can not get params in ajax!');
                   return false;
               }
@@ -752,11 +752,11 @@ $(document).ready(function(){
             email: true
         },
         messages: {
-            name: "The Name field is empty.",
-            question: 'The Question field is empty.',
+            name: "The Name field is empty",
+            question: 'The Question field is empty',
             email: {
-                required: "The Email field is empty.",
-                email: "Invalid email format."
+                required: "The Email field is empty",
+                email: "Invalid email format"
             },
         },
        
@@ -797,16 +797,16 @@ $(document).ready(function(){
                       });
                       return false;
                   } else if(_res.success) {
-                      $('form.form-faq span.info').html( "Your email was succesfully sent." ).css({'display':'inline-block'});
+                      $('form.form-faq span.info').html( "Your email was succesfully sent" ).css({'display':'inline-block'});
 
                   } else {
-                      $('form.form-faq .fatal-error').html('Your email was not sent.');
+                      $('form.form-faq .fatal-error').html('Your email was not sent');
                       console.log('System error!');
                       return false;
                   }    
 
               } else {
-                  $('form.form-faq .fatal-error').html('Your email was not sent.'); 
+                  $('form.form-faq .fatal-error').html('Your email was not sent'); 
                   console.log('Can not get params in ajax!');
                   return false;
               }
@@ -858,12 +858,12 @@ $(document).ready(function(){
             email: true
         },
         messages: {
-            name: "The Name field is empty.",
-            description: 'The Question field is empty.',
-            wos: 'The field Choose your OS is empty.',
+            name: "The Name field is empty",
+            description: 'The Question field is empty',
+            wos: 'The field Choose your OS is empty',
             email: {
-                required: "The Email field is empty.",
-                email: "Invalid email format."
+                required: "The Email field is empty",
+                email: "Invalid email format"
             },
         },
        
@@ -908,16 +908,16 @@ $(document).ready(function(){
                       });
                       return false;
                   } else if(_res.success) {
-                      $('form.form-contact-us span.info').html( "Your email was succesfully sent." ).css({'display':'inline-block'});
+                      $('form.form-contact-us span.info').html( "Your email was succesfully sent" ).css({'display':'inline-block'});
 
                   } else {
-                      $('form.form-contact-us .fatal-error').html('Your email was not sent.');
+                      $('form.form-contact-us .fatal-error').html('Your email was not sent');
                       console.log('System error!');
                       return false;
                   }    
 
               } else {
-                  $('form.form-contact-us .fatal-error').html('Your email was not sent.'); 
+                  $('form.form-contact-us .fatal-error').html('Your email was not sent'); 
                   console.log('Can not get params in ajax!');
                   return false;
               }

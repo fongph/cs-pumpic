@@ -3908,3 +3908,20 @@ only screen and (max-device-width: 480px) {
 .mt10 {
     margin-top: 10px;
 }
+
+/* ========== settings =========== */
+.pt20 {
+    padding-top: 20px;
+}
+
+.pb20 {
+    padding-bottom: 20px;
+}
+
+.mt20 {
+    margin-top: 20px;
+}
+
+.mb20 {
+    margin-bottom: 20px;
+}

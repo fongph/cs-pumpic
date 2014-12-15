@@ -20,7 +20,12 @@
                              <div class="row">
                                 <div class="col-lg-10 col-lg-offset-1">
                                         <div class="row">
-                                                <h2>Register</h2>
+                                                {if $productID}
+                                                    <h2>Please verify your email before submitting your payment</h2>
+                                                {else}
+                                                    <h2>Register</h2>
+                                                {/if}    
+                                                
                                         </div>
                                         <div class="row">
                                                 <div class="col-lg-12">

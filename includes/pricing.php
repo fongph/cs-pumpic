@@ -29,7 +29,7 @@ if($_request['productID']) {
         } 
         // create order
     } else if((int)$_request['productID']) {
-        $obj -> _redirect('/login.html?productID='.$_request['productID']);
+        $obj -> _redirect('/registration.html?productID='.$_request['productID']);
     }
 
 }

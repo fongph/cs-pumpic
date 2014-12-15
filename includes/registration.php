@@ -65,6 +65,7 @@ if($_result['_success']) {
     
 // init output params!
 $smarty->assign('getOut', $_result);
+$smarty->assign('productID', $_productID);
 
 $smarty->setTemplateDir($config['smarty']['tpl_path']);
 $smarty->setCacheDir($config['smarty']['cache_path']);

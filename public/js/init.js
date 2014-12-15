@@ -797,7 +797,7 @@ $(document).ready(function(){
                       });
                       return false;
                   } else if(_res.success) {
-                      $('form.form-faq span.info').html( "Your email was succesfully sent" ).css({'display':'inline-block'});
+                      $('form.form-faq span.info').html( "Your email has been successfully sent" ).css({'display':'inline-block'});
 
                   } else {
                       $('form.form-faq .fatal-error').html('Your email was not sent');
@@ -908,7 +908,7 @@ $(document).ready(function(){
                       });
                       return false;
                   } else if(_res.success) {
-                      $('form.form-contact-us span.info').html( "Your email was succesfully sent" ).css({'display':'inline-block'});
+                      $('form.form-contact-us span.info').html( "Your email has been successfully sent" ).css({'display':'inline-block'});
 
                   } else {
                       $('form.form-contact-us .fatal-error').html('Your email was not sent');

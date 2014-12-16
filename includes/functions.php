@@ -66,6 +66,8 @@ function getURI(){
 }
 	
 function buildTplPath($arr,$config){
+        $_ext = array('.html', '.htm');
+    
 	if(empty($arr['uriArr'][0])){
 		return 	array('answer' => 200, 'tpl' => "index.tpl");
 	}else{
@@ -73,7 +75,8 @@ function buildTplPath($arr,$config){
 		if(!$arr['html']){
 			$part_path = $config['smarty']['tpl_path'].$path.'/index';
 		}else{
-			$part_path = $config['smarty']['tpl_path'].rtrim($path,".html");
+                        $_url = str_replace($_ext, "", $path);
+			$part_path = $config['smarty']['tpl_path'].$_url;
 		}
 		if(file_exists($part_path.".tpl")){
 			return 	array('answer' => 200, 'tpl' => $part_path.".tpl");

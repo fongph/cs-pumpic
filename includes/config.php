@@ -45,7 +45,13 @@ $config = array(
                 'pricing.html'  => 'pricing.php',
             
                 // opening-soon-thanks.html
-                'opening-soon-thanks.html' => 'opening-soon-thanks.php'
+                'opening-soon-thanks.html' => 'opening-soon-thanks.php',
+            
+                // detected rtegion
+                'ipregion.html'            => 'ipregion.php',
+            
+                // currancy
+                'currancy.html'            => 'currancy.php', 
 	)
 );
 

@@ -668,6 +668,18 @@ form.form-contact-us .highlight {
     color: #9599b0;
 }
 
+.btn-yelow {
+    text-align: left;
+    border: none;
+    background: #f5ac43;
+    color: #fff;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    font-size: 20px;
+    font-weight: lighter;
+}
+
 .form-discount .button-discount,
 .box-form .button-discount {
     text-align: left;
@@ -688,11 +700,13 @@ form.form-contact-us .highlight {
     font-size: 20px;
     font-weight: lighter;
 }
-.button-discount:hover {
+.button-discount:hover,
+.discount_50 button.btn-discount-50:hover {
     opacity: 0.8;
 }
 .button-discount i,
-.box-form i {
+.box-form i,
+.btn-yelow i {
     display: inline-block;
     
 /*    float: right;
@@ -3924,4 +3938,48 @@ only screen and (max-device-width: 480px) {
 
 .mb20 {
     margin-bottom: 20px;
+}
+
+/* ============= discount 50 =============== */
+.text-yalow {
+    color: #f5ac43;
+}
+
+.discount_50 #form-discount {
+    padding-top: 16px;
+}
+
+.discount_50 section.info {
+    color: #fff;
+    padding-bottom: 20px;
+    font-size: 17px;
+    line-height: 17px;
+    font-weight: lighter;
+}
+
+.discount_50 section.info .text-yalow {
+    font-family: "Open Sans Semibold";
+    font-size: 27px;
+    line-height: 27px;
+    text-transform: uppercase;
+    
+}
+
+.discount_50 button.btn-discount-50 { 
+    width: 220px;
+    padding: 8px 19px 10px 30px;
+}
+.discount_50 button.btn-discount-50 span {
+    display: block;
+    position: relative;
+    font-family: "Open Sans",Helvetica,Arial,sans-serif;
+    font-size: 17px;
+    line-height: 22px;
+    font-weight: lighter;
+    text-align: center;
+    width: 148px;
+}
+
+.discount_50 button.btn-discount-50 i {
+    margin-top: 9px;
 }

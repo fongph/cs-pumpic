@@ -3665,10 +3665,10 @@ span.btn-banner-yellow:active {
     text-transform: lowercase !important;
 }
 
-.box-capcha {
+.box-captcha {
     width: 370px;
 }
-.box-capcha #img-captcha {
+.box-captcha #img-captcha {
     width: 317px;
     height: 48px;
     border-top: 3px;
@@ -3678,7 +3678,7 @@ span.btn-banner-yellow:active {
     border-color: #16a89e;
     float:left;
 }
-.update-capcha {
+.update-captcha {
     float: left;
     display: block;
     width: 53px;

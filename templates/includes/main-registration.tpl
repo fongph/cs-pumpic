@@ -29,7 +29,7 @@
     </div>
     
     <ul class="links">
-        <li><a href="/login.html{if $smarty.get.productID}?productID={$smarty.get.productID}{/if}">Have account?</a></li>
+        <li><a href="/login.html{if $productID}?productID={$productID}{/if}">Have account?</a></li>
     </ul>
     
 </form> 

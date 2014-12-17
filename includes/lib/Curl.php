@@ -1,7 +1,8 @@
 <?php
 namespace system;
 
-class Curl {
+class Curl 
+{
     
     private static $_obj_curl;
 
@@ -41,7 +42,8 @@ class Curl {
     public $response = null;
     public $raw_response = null;
 
-    public function __construct() {
+    public function __construct() 
+    {
         
         if (!extension_loaded('curl')) {
             throw new Exception('cURL library is not loaded');
@@ -56,7 +58,8 @@ class Curl {
         self::$_obj_curl = $this;
     }
 
-    public function init() {
+    public function init() 
+    {
         return self::$_obj_curl;
     }
     

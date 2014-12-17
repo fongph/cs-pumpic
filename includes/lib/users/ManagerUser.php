@@ -27,7 +27,8 @@ defined('PATH') or define('PATH',dirname(__FILE__));
 require_once dirname( PATH ).'/CDb.php';
 $loader = require dirname( dirname( dirname( PATH ) ) ).'/vendor/autoload.php';
 
-class ManagerUser extends Manager {
+class ManagerUser extends Manager 
+{
     const SITE_ID = 1;
     const LANG = 'en-GB';
     
@@ -41,16 +42,6 @@ class ManagerUser extends Manager {
         '_error' => false,
         '_success' => false
     ); // cache messange
-    
-    
-    /* prod */
-//    private $_db = array(
-//        'dev' => ['dbname'    => 'main',
-//        'host'      => '188.40.64.2',
-//        'user'      => 'ci_user',
-//        'password'  => 'qmsgrSR8qhxeNSC44533hVBqwNajd62z2QtXwN6E']
-//        
-//    );
     
     
     private $_db = [
@@ -73,7 +64,8 @@ class ManagerUser extends Manager {
     private $_auth;
     private $_mail_sender;
     
-    public function __construct( $settings = array() ) {
+    public function __construct( $settings = array() ) 
+    {
         $this -> _di = new DI();
         
         
@@ -88,11 +80,7 @@ class ManagerUser extends Manager {
         Session::setSessionHandler(new RedisSessionHandler($redisClient));
         $this -> _session = new Session();
         
-        
-        
-        
         // $this -> _session = new Session(array('rememberMeTime' => 5));
-        
         
         $this -> _di -> set('session', $this -> _session);
         $this -> _auth = new Auth($this -> _di);
@@ -123,7 +111,8 @@ class ManagerUser extends Manager {
         return self::$_obj;
     }
     
-    private function getSettingsDB() {
+    private function getSettingsDB() 
+    {
         $_type = 'prod';
         if (in_array(@$_SERVER['REMOTE_ADDR'], ['127.0.0.1', '::1'])) {
             $_type = 'dev';
@@ -131,15 +120,18 @@ class ManagerUser extends Manager {
         return $this -> _db[ $_type ];
     }
     
-    public function _initAfter(Array $_settings) {
+    public function _initAfter(Array $_settings) 
+    {
         return self::init($_settings);
     }
     
-    public static function init(Array $_settings ) {
+    public static function init(Array $_settings ) 
+    {
            return self::$_obj -> setParams($_settings);
     }
     
-    public function __get($name) {
+    public function __get($name) 
+    {
         $getter = 'get' . ucfirst($name);
         if (method_exists($this, $getter)) {
             return $this->$getter();
@@ -151,7 +143,8 @@ class ManagerUser extends Manager {
         }
     }
     
-    public function __set($name, $value) {
+    public function __set($name, $value) 
+    {
         $setter = 'set' . ucfirst($name);
         if (method_exists($this, $setter)) {
             // set property
@@ -165,7 +158,8 @@ class ManagerUser extends Manager {
         }
     }
     
-    public function __isset($name) {
+    public function __isset($name) 
+    {
         $getter = 'get' . ucfirst($name);
         if (method_exists($this, $getter)) {
             return $this->$getter() !== null;
@@ -173,7 +167,8 @@ class ManagerUser extends Manager {
         return false;
     }
     
-    public function __unset($name) {
+    public function __unset($name) 
+    {
         $setter = 'set' . ucfirst($name);
         if (method_exists($this, $setter)) {
             $this->$setter(null);
@@ -182,7 +177,8 @@ class ManagerUser extends Manager {
         throw new \Exception('Unsetting an unknown or read-only property: ' . get_class($this) . '::' . $name);
     }
     
-    public function __call($name, $params) {
+    public function __call($name, $params) 
+    {
         
         if ($this->hasMethod($name)) {
             return call_user_func_array([$name], $params);
@@ -191,14 +187,16 @@ class ManagerUser extends Manager {
     }
     
     
-     public function hasMethod($name, $checkBehaviors = true) {
+    public function hasMethod($name, $checkBehaviors = true) 
+    {
         if (method_exists($this, $name)) {
             return true;
         } 
         return false;
     }
     
-    public function __toString() {
+    public function __toString() 
+    {
         ob_start();
         $content = ob_get_contents();
         ob_get_clean();
@@ -207,7 +205,8 @@ class ManagerUser extends Manager {
     }
    
     /* Авторизация */
-    private function _login(\ArrayAccess $params, $remember = false) {
+    private function _login(\ArrayAccess $params, $remember = false) 
+    {
         
         try {
                 $_data = $this->login($params['siteId'], $params['email'], $params['password']);
@@ -236,7 +235,8 @@ class ManagerUser extends Manager {
     
     
     // method registration
-    private function _registration(\ArrayAccess $params) {
+    private function _registration(\ArrayAccess $params) 
+    {
         try {
             $user_id = $this -> createUser($params['siteId'], $params['email']);
             if((int)$user_id) {
@@ -260,7 +260,8 @@ class ManagerUser extends Manager {
     }
     
     // method restore
-    private function _restore(\ArrayAccess $params) {
+    private function _restore(\ArrayAccess $params) 
+    {
         
         if($this -> has()) {
             $this -> lostPassword($params['siteId'], $params['email']);
@@ -273,17 +274,20 @@ class ManagerUser extends Manager {
     }
     
     
-    protected function setParams( $_params ) {
+    protected function setParams( $_params ) 
+    {
         if(is_array($_params))
             $this -> _params = new \includes\lib\users\Params( $_params );
         return $this;
     }
     
-    public function getParams() {
+    public function getParams() 
+    {
         return $this -> _params;
     }
     
-    public function has() {
+    public function has() 
+    {
         
         if(parent::isUser( self::$_obj->getParams()['siteId'], self::$_obj->getParams()['email'])) 
              return true;
@@ -291,34 +295,41 @@ class ManagerUser extends Manager {
             return false;
     }
     
-    public function getAuth() {
+    public function getAuth() 
+    {
         $this -> _login( self::$_obj -> getParams() );
         return $this;
     }
     
-    public function getRegistration() {
+    public function getRegistration() 
+    {
         $this -> _registration( self::$_obj -> getParams() );
         return $this;
     }
     
-    public function getRestore() {
+    public function getRestore() 
+    {
         $this -> _restore( self::$_obj -> getParams() );
         return $this;
     }
     /* return result */
-    public function getRespons() {
+    public function getRespons() 
+    {
         return $this -> _respons;
     }
     
-    public function getData() {
+    public function getData() 
+    {
         return $this -> _data;
     }
     
-    public function logout() {
+    public function logout() 
+    {
         $this->_auth->clearIdentity();
     }
     
-    public function getLoginUser() {
+    public function getLoginUser() 
+    {
         $data = $this->_auth->getIdentity();
         if(isset($data['id']) and !empty($data['id']))
             return $this->getUserDataById(self::SITE_ID, (int)$data['id']);
@@ -327,39 +338,45 @@ class ManagerUser extends Manager {
     }
     
     // get UserID
-    public function getUserID() {
+    public function getUserID() 
+    {
         $user = $this -> getLoginUser();
         return (isset($user['id'])) ? $user['id'] : false;  
     }
     
     // set Session 
-    public function setSession( $_name, $_data ) {
+    public function setSession( $_name, $_data ) 
+    {
         if(!empty($_data))
             $this -> _session[$_name] = $_data;
         return $this -> _session;
     }
     
-    public function getSession( $_name ) {
+    public function getSession( $_name ) 
+    {
         return (isset($this -> _session[$_name])) ? $this -> _session[$_name] : null; 
     }
     
-    public function unsetSession($_name) {
+    public function unsetSession($_name) 
+    {
         if(isset($this -> _session[$_name]))
             unset($this -> _session[$_name]);
     }
     
     
     // redirect
-    public function _redirect( $_url ) {
+    public function _redirect( $_url ) 
+    {
         header('Location: '.$_url);
         die();
     }
     
     // validate Capcha
-    public function validateCapcha($_capcha) {
-        if(!empty($_capcha)) {
+    public function validateCaptcha($_capcha) 
+    {
+        if(!empty($_captcha)) {
             if (!isset($this -> _session['captcha']) 
-                    and (empty($this -> _session['captcha']) || trim(strtolower($_capcha)) != $this -> _session['captcha'])) {
+                    and (empty($this -> _session['captcha']) || trim(strtolower($_captcha)) != $this -> _session['captcha'])) {
                 return false;
             } else
                 return true;
@@ -368,31 +385,38 @@ class ManagerUser extends Manager {
     }
     
     // validate Email
-    public function validateEmail($email) {
+    public function validateEmail($email) 
+    {
         return filter_var($email, FILTER_VALIDATE_EMAIL);
     }
     
 }
 
-class Params implements \ArrayAccess {
+class Params implements \ArrayAccess 
+{
     private $container = array();
-    public function __construct( Array $_params ) {
+    public function __construct( Array $_params ) 
+    {
         $this->container = $_params;
     }
-    public function offsetSet($offset, $value) {
+    public function offsetSet($offset, $value) 
+    {
         if (is_null($offset)) {
             $this->container[] = $value;
         } else {
             $this->container[$offset] = $value;
         }
     }
-    public function offsetExists($offset) {
+    public function offsetExists($offset) 
+    {
         return isset($this->container[$offset]);
     }
-    public function offsetUnset($offset) {
+    public function offsetUnset($offset) 
+    {
         unset($this->container[$offset]);
     }
-    public function offsetGet($offset) {
+    public function offsetGet($offset) 
+    {
         return isset($this->container[$offset]) ? $this->container[$offset] : null;
     }
 }

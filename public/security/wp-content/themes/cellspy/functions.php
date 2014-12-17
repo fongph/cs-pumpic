@@ -44,15 +44,27 @@ if ( !function_exists('fb_get_cat_related_posts') ) {
         $category = get_the_category();
         $category = (int) $category[0]->cat_ID;
 
+        $_tags = '';
+        
+        if($_dataTags = get_the_tags( (int)get_the_ID() ) 
+                and is_array($_dataTags) and count($_dataTags) > 0) {
+            foreach($_dataTags as $_tag) :
+                $_tags .= $_tag -> slug.' ';
+            endforeach;
+            $_tags = trim($_tags, ' ');
+        }
         //$output .= __('<h4>Related articles</h4>');
         
         // if ( $catName )
             // $output .= __( 'Kategorie: ' ) . get_cat_name($category) . ' ';
 
         $args = array(
-            'numberposts' => $limit,
-            'category' => $category,
+            'numberposts'   => $limit,
+            'category'      => $category,
+            'tag'           => $_tags,
+            // 'tag_id'        => get_the_tag_list(),
         );
+        
 
         $recentposts = get_posts( $args );
         foreach($recentposts as $post) {
@@ -66,7 +78,7 @@ if ( !function_exists('fb_get_cat_related_posts') ) {
         
         $output .= '</div>';
 
-    return ($_count > 1) ? $output : '';
+    return ($_count > 0) ? $output : '';
     }
 }
 

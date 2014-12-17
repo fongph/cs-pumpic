@@ -12,7 +12,8 @@ require_once $apiMailPath.'/Component.php';
 use system\Component as Component;
 use system\Curl as Curl;
 
-class ApiMail extends Component { 
+class ApiMail extends Component 
+{ 
     const API_URL = 'http://sender-mail.pumpic.com/';
     const LICEN_KEY = '258EAFA5-E914-47DA-95CA-C5AB0DC85B11';
     
@@ -27,35 +28,41 @@ class ApiMail extends Component {
     
     public $_components;
     
-    public function __construct() {
+    public function __construct() 
+    {
         Component::__construct();
         self::$_api = $this;
         self::$_curl = new Curl();
     }
     
-    public function init() {
+    public function init() 
+    {
         return self::$_api;
     }
     
-    public function __get($name) {
+    public function __get($name) 
+    {
         if($this->has($name))
             return $this->get($name);
         else
             return parent::__get($name);
     }
     
-    public function __isset($name) {
+    public function __isset($name) 
+    {
         if($this->has($name))
             return $this->get($name)!==null;
         else
             return parent::__isset($name);
     }
     
-    public function has($id) {
+    public function has($id) 
+    {
         return isset($this->_components[$id]);
     }
     
-    public function get( $id ) {
+    public function get( $id ) 
+    {
         if(isset($this->_components[$id]) 
                 and !empty($this->_components[$id])
                 and is_object( $this->_components[$id] )) 
@@ -64,7 +71,8 @@ class ApiMail extends Component {
            return null;
     }
     
-    public function set( $components = [] ) {
+    public function set( $components = [] ) 
+    {
         if(is_array($components) and count($components) > 0) {
             foreach( $components as $_id => $class_name ) :
                 if(class_exists($class_name['alies'])) {
@@ -81,7 +89,8 @@ class ApiMail extends Component {
     }
     
     /* http curl */
-    public function run() {
+    public function run() 
+    {
         
         if(is_array($this ->getParams())
                 and count($this ->getParams()) > 0) {
@@ -120,15 +129,18 @@ class ApiMail extends Component {
         
     }
     
-    protected function curl() {
+    protected function curl() 
+    {
         return self::$_curl;
     }
     
-    public function getParams() {
+    public function getParams() 
+    {
         return $this -> _params;
     }
     
-    public function setParams($_data) {
+    public function setParams($_data) 
+    {
         if(!empty($_data))
             $this -> _params = $_data;
         return $this;

@@ -2,24 +2,29 @@
 namespace system;
 
 
-class Component {
+class Component 
+{
     public $content_storage;
     protected $data;
     
     
-    public static function className() {
+    public static function className() 
+    {
         return get_called_class();
     }
     
-    public function __construct() {
+    public function __construct() 
+    {
         $this->init();
     }
     
-    public function init() {
+    public function init() 
+    {
         
     }
     
-    function __call($name, $arguments = array()) {
+    function __call($name, $arguments = array()) 
+    {
         if ($this->hasMethod($name)) {
             return call_user_func_array([$name], $params);
         }
@@ -27,7 +32,8 @@ class Component {
         throw new \Exception('Calling unknown method: ' . get_class($this) . "::$name()");
     }
     
-    function __set($name, $value) {
+    function __set($name, $value) 
+    {
         $setter = 'set' . $name;
         if (method_exists($this, $setter)) {
             // set property
@@ -41,7 +47,8 @@ class Component {
         }
     }
     
-    function __get($name) {
+    function __get($name) 
+    {
         $getter = 'get' . $name;
         
         if (method_exists($this, $getter)) {
@@ -54,7 +61,8 @@ class Component {
         }
     }
     
-    public function __isset($name) {
+    public function __isset($name) 
+    {
          $getter = 'get' . $name;
         if (method_exists($this, $getter)) {
             return $this->$getter() !== null;
@@ -63,7 +71,8 @@ class Component {
     }
 
     /**  Начиная с версии PHP 5.1.0  */
-    public function __unset($name) {
+    public function __unset($name) 
+    {
         $setter = 'set' . $name;
         if (method_exists($this, $setter)) {
             $this->$setter(null);
@@ -72,18 +81,21 @@ class Component {
         throw new \Exception('Unsetting an unknown or read-only property: ' . get_class($this) . '::' . $name);
     }
 
-   public function __clone() {
+    public function __clone() 
+    {
         $this->data = [];
     }
     
-    public function hasMethod($name, $checkBehaviors = true) {
+    public function hasMethod($name, $checkBehaviors = true) 
+    {
         if (method_exists($this, $name)) {
             return true;
         } 
         return false;
     }
     
-    public function __toString() {
+    public function __toString() 
+    {
         ob_start();
         $this ->content_storage = ob_get_contents();
         ob_get_clean();

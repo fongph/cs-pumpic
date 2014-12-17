@@ -24,14 +24,14 @@ if($obj -> getLoginUser()) $obj -> _redirect('/');
     
 // $_session_order = $obj -> getSession('pumpic_order');
 $_productID = (isset($_GET['productID']) and !empty($_GET['productID'])) ? $_GET['productID'] : false;
-$_capcha = (isset($_POST['capcha']) and !empty($_POST['capcha'])) ? $_POST['capcha'] : false;
+$_captcha = (isset($_POST['captcha']) and !empty($_POST['captcha'])) ? $_POST['captcha'] : false;
 $_sID = (isset($_POST['site_id']) and !empty($_POST['site_id'])) ? $_POST['site_id'] : false;
 
 if(isset($_POST['email']) and !$obj -> validateEmail($_POST['email'])) {
    $_result['_error'] = "Invalid email format.";
-} else if(isset($_POST['capcha']) and !$obj -> validateCapcha( $_capcha )) { 
+} else if(isset($_POST['captcha']) and !$obj -> validateCaptcha( $_captcha )) { 
     $_result['_error'] = "Invalid CAPTCHA.";
-} else if(!empty($_POST['email']) and $_sID and $obj -> validateCapcha( $_capcha )) {
+} else if(!empty($_POST['email']) and $_sID and $obj -> validateCaptcha( $_captcha )) {
 
     $_params = array(
         'siteId' => $_sID,

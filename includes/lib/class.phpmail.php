@@ -6,7 +6,8 @@ include dirname(__FILE__).'/apiMail/Settings.php';
 use api\ApiMail as ApiMail;
 use api\Settings as Settings; 
 
-class Phpmail extends Settings {  
+class Phpmail extends Settings 
+{  
     private $_api;
     private $_data;
     
@@ -15,14 +16,16 @@ class Phpmail extends Settings {
         'success' => false
     ];
     
-    public function __construct() {
+    public function __construct() 
+    {
         
         $this -> setLocale('en-En') 
                 ->setSiteId(1)
                 ->setSystem(0);
     }
     
-    private function setData($_from, $_to, $type = 'main', $_params = array()) {
+    private function setData($_from, $_to, $type = 'main', $_params = array()) 
+    {
         $this -> _data = [
             'site_id'   => $this ->getSiteId(), // request ( !systems )
             'locale'    => $this ->getLocale(), // 'locale' => 'ru-RU' (default: false - request FATAL ERROR )
@@ -38,22 +41,26 @@ class Phpmail extends Settings {
         return $this;
     }
     
-    private function validateEmail($email){
+    private function validateEmail($email)
+    {
 	return filter_var($email, FILTER_VALIDATE_EMAIL);
     }
     
-    private function sendMAil() {
+    private function sendMAil() 
+    {
         $_client = new ApiMail();
         return $_client -> setParams($this ->getData()) 
                     -> init() 
                     -> run();
     }
 
-    public function getData() {
+    public function getData() 
+    {
         return $this -> _data;
     }
     
-    public function send( $_params ) {
+    public function send( $_params ) 
+    {
         
         
         if(!$this -> validateEmail($_params['to'])) {
@@ -83,7 +90,8 @@ class Phpmail extends Settings {
     /*
      * Compatibility (send form and validater)
      */
-    public function _sendCompatibility($params) {
+    public function _sendCompatibility($params) 
+    {
         
         if(is_array($params) and count($params) > 0) {
             $_id = rand(0, 9000000);
@@ -119,7 +127,8 @@ class Phpmail extends Settings {
     
     
     /* Faq Send mail*/
-    public function _sendFaq($params) {
+    public function _sendFaq($params) 
+    {
         
         if(is_array($params) and count($params) > 0) {
             
@@ -151,7 +160,8 @@ class Phpmail extends Settings {
     }
     
     /* Contact US Send mail*/
-    public function _sendContactUs($params) {
+    public function _sendContactUs($params) 
+    {
         
         if(is_array($params) and count($params) > 0) {
             $_id = rand(0, 9000000);

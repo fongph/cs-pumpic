@@ -33,7 +33,7 @@ $config = array(
 		'compatibility_send.html' => 'compatibility_form.php',
                 'faq_send.html' => 'faq.php',
                 'contact_us_send.html' => 'contact_us.php',
-                'capcha.html'  => 'capcha.php',
+                'captcha.html'  => 'captcha.php',
                 // 'order_form.html'  => 'order_form.php',
                 'logout.html' => 'logout.php',
             
@@ -51,7 +51,7 @@ $config = array(
                 'ipregion.html'            => 'ipregion.php',
             
                 // currancy
-                'currency.html'            => 'currency.php', 
+                // 'currency.html'            => 'currency.php', 
 	)
 );
 

@@ -44,13 +44,15 @@ class Order extends ManagerUser
         $this -> storeId = $config['storeId'];
     }
     
-    private function _createOrder( $userID, $productId ) 
+    private function _createOrder( $userID = null, $productId ) 
     {
         
         $order = $this -> _billing -> getOrder();
-        $order->setSiteId(self::SITE_ID)
-                ->setUserId($userID)
-                ->setStatus(OrderRecord::STATUS_PENDING) // ->setStatus(CS\Models\Order\OrderRecord::STATUS_PENDING) ::STATUS_CREATED
+        $order->setSiteId(self::SITE_ID);
+        if($userID){
+            $order->setUserId($userID);
+        }
+         $order->setStatus(OrderRecord::STATUS_PENDING) // ->setStatus(CS\Models\Order\OrderRecord::STATUS_PENDING) ::STATUS_CREATED
                 ->setPaymentMethod(OrderRecord::PAYMENT_METHOD_FASTSPRING)
                 ->save();
 
@@ -116,7 +118,8 @@ class Order extends ManagerUser
     
     public function createOrder( $productID ) {
         if($this -> hasOrder($productID)) {
-            return $this -> _createOrder( $this ->getUserID(), $productID );
+            $user_id = $this ->getUserID();
+            return $this -> _createOrder( $user_id ? $user_id : null, $productID );
         } else {
             return false;
         }

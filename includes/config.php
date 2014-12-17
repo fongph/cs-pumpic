@@ -36,6 +36,7 @@ $config = array(
                 'captcha.html'  => 'captcha.php',
                 // 'order_form.html'  => 'order_form.php',
                 'logout.html' => 'logout.php',
+                'buy.html' => 'buy.php',
             
                 'login.html'  => 'login.php', 
                 'registration.html'  => 'registration.php',

@@ -20,7 +20,7 @@
 						<div class="row">
 							<h2>PRICING & PLANS</h2>
 							<div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1">
-                                                            <form name="price_basic" method="POST" action="/pricing.html">
+                                                            <form name="price_basic" method="POST" action="/buy.html">
                                                                 <input id='product_price_basic' type='hidden' name='price[productID]' value='0' />
 								<table class="table table-bordered pricing-first">
 									<caption>
@@ -264,7 +264,7 @@
 								</table>
                                                                                         
                                                             </form>                         
-                                                            <form name="price_premium" method="POST" action="/pricing.html"> 
+                                                            <form name="price_premium" method="POST" action="/buy.html"> 
                                                                     
                                                                 <input id='product_price_premium' type='hidden' name='price[productID]' value='' />    
                                                                     

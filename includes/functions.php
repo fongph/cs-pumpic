@@ -8,19 +8,6 @@ function dispatch($urlParams, $config){
                 and in_array('compatibility', $urlParams['uriArr'])) {
             $urlParams['uriArr'] = array( array_shift($urlParams['uriArr']) );
         }
-        
-        
-        
-	if(isset($config['php_compile'][$urlParams['uri']])){
-		include $config['php_compile'][$urlParams['uri']];
-	}else{
-			
-		$path = buildTplPath($urlParams,$config);
-		
-		if($path['answer'] == 404){
-			header404();
-		}
-		try{
 				
 			$smarty = new Smarty();
 			$smarty->caching = false;
@@ -42,6 +29,17 @@ function dispatch($urlParams, $config){
                         
                         $smarty ->assign('api_device', $config['api_device']);
                         $smarty ->assign('site_id', $config['site_id']);
+	if(isset($config['php_compile'][$urlParams['uri']])){
+		include $config['php_compile'][$urlParams['uri']];
+	}else{
+			
+		$path = buildTplPath($urlParams,$config);
+		
+		if($path['answer'] == 404){
+			header404();
+		}
+		try{
+				
 
 			$smarty->display($path['tpl']);
 

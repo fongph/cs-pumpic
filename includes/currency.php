@@ -7,9 +7,9 @@ $_inc = dirname(__FILE__); // includes
 $b_dir = dirname( $_inc ); // folder sites directory
 
 require_once $_inc.'/config.php';
-require_once $_inc.'/lib/Currancy.php';
+require_once $_inc.'/lib/Currency.php';
 
-$_region = system\Currancy::getInstance();
-$_currancies = $_region -> getCurrancies();
+$_region = system\Currency::getInstance();
+$_currencies = $_region -> getCurrencies();
 
-echo json_encode( $_currancies );
+echo json_encode( $_currencies );

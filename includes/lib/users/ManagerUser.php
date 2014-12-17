@@ -371,8 +371,8 @@ class ManagerUser extends Manager
         die();
     }
     
-    // validate Capcha
-    public function validateCaptcha($_capcha) 
+    // validate Captcha
+    public function validateCaptcha($_captcha) 
     {
         if(!empty($_captcha)) {
             if (!isset($this -> _session['captcha']) 

@@ -17,12 +17,12 @@
    {/if}
    
     <input id="email" type="email" name="email" class="text required email" placeholder="Email*" value="" />
-    <div class="box-capcha">
-        <img src="/capcha.html" id="img-captcha">
-        <span class="update-capcha"></span>
+    <div class="box-captcha">
+        <img src="/captcha.html" id="img-captcha">
+        <span class="update-captcha"></span>
     </div>
     
-    <input id="capcha" type="text" name="capcha" autocomplete="off" class="text required capcha" />
+    <input id="captcha" type="text" name="captcha" autocomplete="off" class="text required captcha" />
     
     <div class="button-sumbit clearfix">
         <button class="btn-orange center">Register <i></i></button>

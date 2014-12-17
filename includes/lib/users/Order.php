@@ -10,7 +10,8 @@ use includes\lib\CDb as DB;
 
 require_once dirname( __FILE__ ).'/ManagerUser.php';
 
-class Order extends ManagerUser {
+class Order extends ManagerUser 
+{
     
     const PRODUCT_TYPE = 'first';
     
@@ -28,7 +29,8 @@ class Order extends ManagerUser {
 //        
 //    );
     
-    function __construct() {
+    function __construct() 
+    {
         parent::__construct();
         
 //        $db = new DB($this -> _db);
@@ -42,7 +44,8 @@ class Order extends ManagerUser {
         $this -> storeId = $config['storeId'];
     }
     
-    private function _createOrder( $userID, $productId ) {
+    private function _createOrder( $userID, $productId ) 
+    {
         
         $order = $this -> _billing -> getOrder();
         $order->setSiteId(self::SITE_ID)
@@ -69,14 +72,8 @@ class Order extends ManagerUser {
         return $redirectUrl;
     }   
     
-    public function setCreateOrder( $userID, $productId ) {
-        if(!empty($userID) and !empty($productId))
-            return $this -> _createOrder((int)$userID, (int)$productId);
-        else
-            return null;
-    }
-    
-    public function getProducts() {
+    public function getProducts() 
+    {
         $_plans = $this -> _billing->getSiteProducts(self::SITE_ID, self::PRODUCT_TYPE);
         if(is_array($_plans) 
                 and count($_plans) > 0) {
@@ -96,7 +93,8 @@ class Order extends ManagerUser {
     }
     
     
-    private function _numbers( $_str ) {
+    private function _numbers( $_str ) 
+    {
         if(!empty($_str)) {
             preg_match_all('/[0-9]*/isu', $_str, $_result);
             foreach($_result[0] as $_item):
@@ -108,18 +106,19 @@ class Order extends ManagerUser {
         
     }
     
-    public function hasOrder($productId) {
+    public function hasOrder($productId) 
+    {
         if(!empty($productId))
-           return $this -> _billing->hasSiteProduct(self::SITE_ID, $productId);
+           return $this -> _billing -> hasSiteProduct(self::SITE_ID, $productId);
         else
             return false;
     }
     
     public function createOrder( $productID ) {
         if($this -> hasOrder($productID)) {
-            return $this -> setCreateOrder( $this ->getUserID(), $productID );
+            return $this -> _createOrder( $this ->getUserID(), $productID );
         } else {
-            return null;
+            return false;
         }
     }
     

@@ -956,7 +956,7 @@ $(document).ready(function(){
    if($('form[name="form-registration"]').length) {
        $('form[name="form-registration"]').validate({ 
              messages: {
-                'capcha': "Invalid CAPTCHA.", // The CAPTCHA field is empty.
+                'captcha': "Invalid CAPTCHA.", // The CAPTCHA field is empty.
                 'email': {
                     required: "The Email field is empty.",
                     email: "Invalid email format."
@@ -993,11 +993,11 @@ $(document).ready(function(){
    /**
     * CAPACHA 
     */
-   if($('.box-capcha').length) {
-       $('.update-capcha').on('click', function(event) {
+   if($('.box-captcha').length) {
+       $('.update-captcha').on('click', function(event) {
            event.preventDefault();
-           $('.box-capcha').find('#img-captcha').attr('src', '/capcha.html?'+Math.random());
-           $('form[name="form-registration"]').find('input[name="capcha"]').focus();
+           $('.box-captcha').find('#img-captcha').attr('src', '/captcha.html?'+Math.random());
+           $('form[name="form-registration"]').find('input[name="captcha"]').focus();
            return false;
        });
    }
@@ -1128,4 +1128,43 @@ $(document).ready(function(){
         } else
            $('#viber-whatsapp-skype').removeClass('w16p').addClass('w30p'); 
   }
+  
+  /*Monay*/
+//  if($('.box-currancies').length) {
+//      // alert('blaaaaa');
+//      $('.box-currancies').currancy({},'run');
+//  }
+    
+  
+  
+//  $.ajax( {
+//      dataType: 'json',
+//      url: 'http://openexchangerates.org/api/latest.json?app_id=aef6d4fe78d94707b26b14e5aaa2a143',
+//      success: function(data) {
+//          
+//      }
+//  } );
+  
+  
+  /*
+  $.ajax({ dataType: 'jsonp', 
+            url: 'http://api.fixer.io/latest', 
+            success: function(data) { 
+                fx.rates = data.rates; 
+                fx.rates = $.extend(fx.rates, {'EUR': 0.125});
+                
+                console.log(fx.rates);
+                
+                demo(); 
+            } 
+   }); 
+   
+    var demo = function() { 
+        var rate = fx(1).from('USD').to('EUR'); 
+        var round = Math.round(rate * 100) / 100; 
+        console.log('USD100 equals EUR' + round); 
+    } 
+    */
+    
+  
 });

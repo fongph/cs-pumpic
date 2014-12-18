@@ -13,5 +13,6 @@
 ?>
 
 	<?php 
+                include('../../templates/includes/blog-analytics-footer.tpl'); 
 		include('../../templates/includes/blog-footer.tpl'); 
 	?>

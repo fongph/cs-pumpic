@@ -64,10 +64,11 @@ class Order extends ManagerUser
 
         $this -> _gateway->setStoreId( $this -> storeId )
                 ->setProductId($orderProduct->getReferenceNumber())
-                ->setReferenceData($order->getId() . '-' . $order->getHash());
+                ->setReferenceData($order->getId() . '-' . $order->getHash())
+                ->setInstant();
                 // ->setTestMode(); // не обязательно
 
-        $response =$this -> _gateway->purchaseProduct(array('action' => 'adds'))->send();
+        $response =$this -> _gateway->purchaseProduct()->send();
 
         $redirectUrl = $response->getRedirectUrl();
         

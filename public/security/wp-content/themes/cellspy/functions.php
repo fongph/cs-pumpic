@@ -60,7 +60,7 @@ if ( !function_exists('fb_get_cat_related_posts') ) {
 
         $args = array(
             'numberposts'   => $limit,
-            'category'      => $category,
+            // 'category'      => $category,
             'tag'           => $_tags,
             // 'tag_id'        => get_the_tag_list(),
         );

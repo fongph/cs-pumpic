@@ -25,6 +25,10 @@
 								<table class="table table-bordered pricing-first">
 									<caption>
 										<div class="table_header">
+                                                                                        {*<div class="pull-left">
+                                                                                        <div class="box-currancies"></div>
+                                                                                    </div>*}
+                                                                                    
 											<!-- Block choose currency include -->
 											<div class="pull-right">
 												<span>Payment methods:</span>

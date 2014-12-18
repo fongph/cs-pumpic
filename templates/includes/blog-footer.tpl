@@ -118,5 +118,8 @@
 			</div>
 		</div>
 	</div>
+        
+        <?php include(dirname(__FILE__).'/blog-analytics-footer.tpl'); ?>
+        
 </body>
 </html>

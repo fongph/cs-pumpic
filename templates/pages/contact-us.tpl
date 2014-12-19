@@ -89,7 +89,7 @@
                                                                                         <div class="fatal-error"></div>
                                                                                         
 											<p>Learn more from our <a href="/faq.html">FAQ</a> before submitting an application.</p>
-											<button class="btn btn-orange">Submit Ticket <!-- btn-warning <i class="icon-right-open"></i>-->
+											<button class="btn btn-orange mod-center">Submit Ticket <!-- btn-warning <i class="icon-right-open"></i>-->
 											</button>
 										</div>
 									</fieldset>

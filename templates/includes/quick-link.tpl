@@ -11,7 +11,7 @@
 									</li>
                                                                         
                                                                         <li>
-										<a href="/pricing.html">Prices and subscription plans</a>
+										<a href="/store.html">Prices and subscription plans</a>
 									</li>
                                                                         
                                                                         {*

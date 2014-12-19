@@ -52,4 +52,4 @@ $smarty ->assign('api_device', $config['api_device']);
 $smarty ->assign('site_id', $config['site_id']);
 
 // init output params
-$smarty->display($b_dir.'/templates/pages/pricing.tpl');
+$smarty->display($b_dir.'/templates/pages/store.tpl');

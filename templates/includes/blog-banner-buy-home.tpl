@@ -17,7 +17,7 @@
 <div class="thumb_sidebar banner1">
     <div class='caption'>
         <p class='buttons'>
-            <a href="http://pumpic.com/pricing.html" class='btn btn-default btn-banner-red'>Buy NOW</a>
+            <a href="http://pumpic.com/store.html" class='btn btn-default btn-banner-red'>Buy NOW</a>
         </p>
     </div> <!-- .caption -->
 </div>  

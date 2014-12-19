@@ -208,7 +208,7 @@
 											<li>
 												<a id="billing" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse26">How much do Pumpic Basic and Pumpic Premium cost?</a>
 												<div id="collapse26" class="collapse">
-                                                                                                    <p>To get current information on prices, please visit our <a class="text-link" target="_blank" href="http://{$domain}/pricing.html">Pricing page</a> or contact our Customer Support Team.</p>
+                                                                                                    <p>To get current information on prices, please visit our <a class="text-link" target="_blank" href="http://{$domain}/store.html">Pricing page</a> or contact our Customer Support Team.</p>
 												</div>
 											</li>
 											<li>

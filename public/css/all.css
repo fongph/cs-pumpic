@@ -3546,7 +3546,9 @@ span.btn-banner-yellow:active {
 
 .form-login button,
 .form-registration button, 
-.form-restore button {
+.form-restore button,
+.form-contact-us button,
+.form-faq button {
     display: block;
     position: relative;
     width: 195px;

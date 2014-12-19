@@ -324,8 +324,8 @@
                                                                                                             name="question"></textarea>
 												</div>
                                                                                                 <div class="fatal-error"></div>
-												<button class="btn btn-warning">Send
-												</button>
+												<button class="btn btn-orange">Send
+												</button> <!-- btn-warning-->
 											</div>
 										</fieldset>
 									</form>

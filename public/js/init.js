@@ -1166,5 +1166,12 @@ $(document).ready(function(){
     } 
     */
     
+    
+  
+  
+//    $width = $('#box-content-post img').width();
+//    $('#content img').css({
+//        'max-width' : $width , 'height' : 'auto'
+//    });
   
 });

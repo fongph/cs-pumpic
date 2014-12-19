@@ -38,7 +38,7 @@
                                                                 {* contactusSend contact_us=$smarty.post *}
 								<form action="" class="form-contact-us" name="send-mail-conyacy-us" method="POST">
 									<fieldset>
-										<legend class="tolowercase">Send your questions to us</legend>
+										<legend class="uppercase">Send your questions to us</legend>
 										<div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3">
                                                                                         <span class="info"></span>
 											<div class="form-group">

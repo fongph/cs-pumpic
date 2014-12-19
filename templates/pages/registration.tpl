@@ -20,7 +20,8 @@
                              <div class="row">
                                 <div class="col-lg-10 col-lg-offset-1">
                                         <div class="row">
-                                                <h2>Register</h2>
+                                                <legend class="text-center uppercase">Register</legend>
+                                                {*<h2>Register</h2>*}
                                                 {if $productID}
                                                     <h3 class="pb20 text-center">Please register your email before proceeding with your payment</h3>
                                                 {/if}    

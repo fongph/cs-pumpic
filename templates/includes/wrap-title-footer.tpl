@@ -41,6 +41,10 @@
         <!-- jquery translite -->
         <script src="{$js}/translite/jquery.synctranslit.js"></script>
         
+        <!-- monay convert-->
+        <script src="{$js}/monay/monay.min.js"></script>
+        <script src="{$js}/currancy.js"></script>
+        
         <!-- init -->
         <script src="{$js}/scroll.js"></script>
         <script src="{$js}/search.js"></script>

@@ -3852,7 +3852,26 @@ only screen and (max-device-width: 480px) {
     background-color: #4d4f5b;
     background-image: url('../images/bg_blog_banner1.png');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%; // cover
+}
+
+@media only screen and (max-width: 991px) {
+    .banner1 {
+        width: 300px;
+        margin: 0 auto;
+    }
+    
+    .feature_list {
+        margin-top: 30px;
+    }
+}   
+
+/* fix banner 1 */
+@media only screen and (max-width: 480px), 
+only screen and (max-device-width: 480px) {
+/*    .banner1 {
+        width: 100%;
+    }*/
 }
 
 .banner1 .caption {
@@ -3982,4 +4001,8 @@ only screen and (max-device-width: 480px) {
 
 .discount_50 button.btn-discount-50 i {
     margin-top: 9px;
+}
+
+.uppercase {
+    text-transform: uppercase;
 }

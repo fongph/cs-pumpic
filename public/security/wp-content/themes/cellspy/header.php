@@ -34,6 +34,8 @@
     <script src="<?php echo getStaticUrl();?>/js/bootstrap.js"></script>
     <script src="<?php echo getStaticUrl();?>/js/fancy_checkbox.js"></script>
     <script src="<?php echo getStaticUrl();?>/js/main.js"></script>
+    
+    <script src="<?php echo getStaticUrl();?>/js/resize_images.js"></script>
 
     <?php require_once '../../templates/includes/blog-analytics-header.tpl'; ?>
     

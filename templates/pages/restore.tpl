@@ -20,7 +20,8 @@
                              <div class="row">
                                 <div class="col-lg-10 col-lg-offset-1">
                                         <div class="row">
-                                                <h2>Restore Password</h2>
+                                                <legend class="text-center uppercase">Restore Password</legend>
+                                                {*<h2>Restore Password</h2>*}
                                         </div>
                                         <div class="row">
                                                 <div class="col-lg-12">

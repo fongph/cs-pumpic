@@ -1,6 +1,6 @@
 		<div class="dark">
 			<div class="container">
-				<div class="row ">
+				<div class="row col-lg-offset-1">
 					<div class="col-sm-8 col-md-8 col-lg-8">
 						<h3 class="title_list">A few quick links:</h3>
 						<div class="row">

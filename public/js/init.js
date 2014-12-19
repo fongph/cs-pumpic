@@ -693,24 +693,29 @@ $(document).ready(function(){
             var $form = $(form);
             var _params = parseQuery($form.serializeArray());
 
-            console.log( _params );
-
             var _response = getAjaxForm('/compatibility_send.html', _params);
               if(_response.result) {
                   var _res = _response.result;
                   if(_res.error) {
-                      $.each(_res.error, function(name, text) {
-                          var _obj = $form.find('input[name="'+name+'"]');
-                          if(_obj.length) {
-                             if(_obj.next('label').length)
-                                _obj.next().html( text ).show();
-                              else
-                                 $('<label id="'+name+'-error" for="'+name+'" class="invalid">'+text+'</label>').insertAfter(_obj); 
-                          }
-                      });
+                      
+                      if(typeof _res.error === 'object') {
+                          $.each(_res.error, function(name, text) {
+                              var _obj = $form.find('input[name="'+name+'"]');
+                              if(_obj.length) {
+                                 if(_obj.next('label').length)
+                                    _obj.next().html( text ).show();
+                                  else
+                                     $('<label id="'+name+'-error" for="'+name+'" class="invalid">'+text+'</label>').insertAfter(_obj); 
+                              }
+                          });
+                      } else {
+                          $('form[name="send_find_phone"] .fatal-error').html( _res.error );
+                      }
+                      
+                      
                       return false;
                   } else if(_res.success) {
-                      $('form[name="send_find_phone"] span.info').html( "Your email has been successfully sent" ).css({'display':'inline-block'});
+                      $('form[name="send_find_phone"] span.info').html( _res.success ).css({'display':'inline-block'});
 
                   } else {
                       $('form[name="send_find_phone"] .fatal-error').html('Your email was not sent');
@@ -780,24 +785,28 @@ $(document).ready(function(){
             var $form = $(form);
             var _params = parseQuery($form.serializeArray());
 
-            console.log( _params );
-
             var _response = getAjaxForm('/faq_send.html', _params);
               if(_response.result) {
                   var _res = _response.result;
                   if(_res.error) {
-                      $.each(_res.error, function(name, text) {
-                          var _obj = $form.find('input[name="'+name+'"]');
-                          if(_obj.length) {
-                              if(_obj.next('label').length)
-                                _obj.next().html( text ).show();
-                              else
-                                 $('<label id="'+name+'-error" for="'+name+'" class="invalid">'+text+'</label>').insertAfter(_obj); 
-                          }
-                      });
+                      if(typeof _res.error === 'object') {
+                          $.each(_res.error, function(name, text) {
+                              var _obj = $form.find('input[name="'+name+'"]');
+                              if(_obj.length) {
+                                  if(_obj.next('label').length)
+                                    _obj.next().html( text ).show();
+                                  else
+                                     $('<label id="'+name+'-error" for="'+name+'" class="invalid">'+text+'</label>').insertAfter(_obj); 
+                              }
+                          });
+                      } else {
+                          $('form.form-faq .fatal-error').html( _res.error );
+                      }
+                      
+                      
                       return false;
                   } else if(_res.success) {
-                      $('form.form-faq span.info').html( "Your email has been successfully sent" ).css({'display':'inline-block'});
+                      $('form.form-faq span.info').html( _res.success ).css({'display':'inline-block'});
 
                   } else {
                       $('form.form-faq .fatal-error').html('Your email was not sent');
@@ -891,24 +900,29 @@ $(document).ready(function(){
             var $form = $(form);
             var _params = parseQuery($form.serializeArray());
 
-            console.log( _params );
-            
             var _response = getAjaxForm('/contact_us_send.html', _params);
               if(_response.result) {
                   var _res = _response.result;
                   if(_res.error) {
-                      $.each(_res.error, function(name, text) {
-                          var _obj = $form.find('input[name="'+name+'"]');
-                          if(_obj.length) {
-                              if(_obj.next('label').length)
-                                _obj.next().html( text ).show();
-                              else
-                                 $('<label id="'+name+'-error" for="'+name+'" class="invalid">'+text+'</label>').insertAfter(_obj); 
-                          }
-                      });
+                      
+                      if(typeof _res.error === 'object') {
+                          $.each(_res.error, function(name, text) {
+                              var _obj = $form.find('input[name="'+name+'"]');
+                              if(_obj.length) {
+                                  if(_obj.next('label').length)
+                                    _obj.next().html( text ).show();
+                                  else
+                                     $('<label id="'+name+'-error" for="'+name+'" class="invalid">'+text+'</label>').insertAfter(_obj); 
+                              }
+                          });
+                      } else {
+                          $('form.form-contact-us .fatal-error').html( _res.error );
+                      }
+                      
+                      
                       return false;
                   } else if(_res.success) {
-                      $('form.form-contact-us span.info').html( "Your email has been successfully sent" ).css({'display':'inline-block'});
+                      $('form.form-contact-us span.info').html( _res.success ).css({'display':'inline-block'});
 
                   } else {
                       $('form.form-contact-us .fatal-error').html('Your email was not sent');

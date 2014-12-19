@@ -17,7 +17,8 @@
 					<div class="col-lg-10 col-lg-offset-1">
 						<div class="row">
 							<div class="col-lg-12">
-								<h2>FREQUENTLY ASKED QUESTIONS</h2>
+                                                                <h2 class="uppercase">Have any other questions?</h2>   
+								{*<h2>FREQUENTLY ASKED QUESTIONS</h2>*}
 								<div class="tab_category">
 									{include file='../includes/faq-category.tpl'}
 									<div class="box_category">

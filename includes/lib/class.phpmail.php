@@ -111,7 +111,7 @@ class Phpmail extends Settings
                 
                 
                 if($_data === true) {
-                    $this -> _messange['success'] = "Your email has been successfully sent";
+                    $this -> _messange['success'] = "Your Request has been sent, our support representative will contact you as soon as possible"; //"Your email has been successfully sent";
                 } else
                     $this -> _messange['error']['email'] = "Invalid email format"; // Invalid System Params
                 
@@ -145,7 +145,7 @@ class Phpmail extends Settings
                 
                 
                 if($_data === true) {
-                    $this -> _messange['success'] = "Your email has been successfully sent";
+                    $this -> _messange['success'] = "Your Request has been sent, our support representative will contact you as soon as possible"; // "Your email has been successfully sent";
                 } else
                     $this -> _messange['error']['email'] = "Invalid email format"; // Invalid System Params
                 
@@ -181,7 +181,7 @@ class Phpmail extends Settings
                 
                 
                 if($_data === true) {
-                    $this -> _messange['success'] = "Your email has been successfully sent";
+                    $this -> _messange['success'] = "Your Request has been sent, our support representative will contact you as soon as possible"; //"Your email has been successfully sent";
                 } else
                     $this -> _messange['error']['email'] = "Invalid email format"; // Invalid System Params
                 

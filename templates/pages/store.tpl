@@ -4,7 +4,7 @@
 {strip}
 {include file='../includes/wrap-title-header.tpl'}
 
-	<title>Pumpic Prices and Subscription Plans</title>
+	<title>Pumpic Subscription Store</title>
 	<meta name="description" content="Pumpic offers high-quality Cell Phone Tracking Software for a good price. Find out more about a price range and subscription plan types to choose the one suitable for your monitoring needs." />
 	
 {include file='../includes/wrap-title-footer.tpl'}
@@ -18,7 +18,8 @@
 				<div class="row">
 					<div class="col-lg-10 col-lg-offset-1">
 						<div class="row">
-							<h2>PRICING & PLANS</h2>
+                                                        <h2 class="uppercase">Pumpic Store</h2>
+							{*<h2>PRICING & PLANS</h2>*}
 							<div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1">
                                                             <form name="price_basic" method="POST" action="/buy.html">
                                                                 <input id='product_price_basic' type='hidden' name='price[productID]' value='0' />

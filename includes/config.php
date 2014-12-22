@@ -44,7 +44,7 @@ $config = array(
             
                 // pricing
                 'store.html'  => 'store.php',
-            
+                'pricing2.html'  => 'pricing2.php', 
                 // opening-soon-thanks.html
                 'opening-soon-thanks.html' => 'opening-soon-thanks.php',
             

@@ -600,11 +600,57 @@ $(document).ready(function(){
    
    
    // compatibility search
-   $('.form-search').on('submit', function(e) {
+   $('.form-search').validate({
+        rules: {
+            'device-model': {
+                required: true,
+                minlength: 3
+            }
+        },
+        errorClass: "invalid",
+        errorLabelContainer: "#compatibility-search-error",
+        messages: {
+            'device-model': {
+                required: "The Device Model field is empty",
+                minlength: "Enter at least 2 symbols to start search"
+            }
+        },
+        
+        invalidHandler: function(form, validator) {
+//            var $form = $(form);
+//            
+//             // 'this' refers to the form
+//            var errors = validator.numberOfInvalids();
+//            if (errors) {
+//            var message = errors == 1
+//            ? 'You missed 1 field. It has been highlighted'
+//            : 'You missed ' + errors + ' fields. They have been highlighted';
+//                $form.find('.fatal-error').html(message);
+//                $form.find('.fatal-error').show();
+//            } else {
+//                $form.find('.fatal-error').hide();
+//            }
+        },
+        submitHandler: function( form ) {
+            var $form = $(form);
+            $form.PumpicList();
+            $form.trigger("reset");
+        }
+    });
+   
+   /*$('.form-search').on('submit', function(e) {
        e.preventDefault();
-       $(this).PumpicList();
+       
+       $(this).validate({
+            onfocusout: false,
+            focusInvalid: false,
+        }); 
+       
+       // $(this).PumpicList();
        return false;
    });
+   */
+   
    
    $('.search-category').on('click', function(e) {
        e.preventDefault();

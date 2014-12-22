@@ -19,12 +19,12 @@
                                         </div>
                                         <div class="row">
                                                 <div class="col-lg-12">
-                                                    <form action="" name="box-search" method="POST" class="form-search">
+                                                    <form action="" name="box-search" method="POST" class="form-search compatibility-search">
                                                         <div class="input-group">
-                                                                <input type="text" class="form-control" name="device-model" value="" placeholder="Enter device model">
+                                                                <input type="text" class="form-control required" name="device-model" value="" placeholder="Enter device model">
                                                                 <span class="input-group-btn"><button class="btn btn-warning" type="submit">Search</button></span>
                                                         </div>
-                                                        
+                                                        <div id="compatibility-search-error" class="fatal-error"></div>
                                                      </form>    
                                                 </div>
                                         </div>

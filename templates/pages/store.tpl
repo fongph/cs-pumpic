@@ -84,7 +84,7 @@
 											</th>
 											<th>
 												<div class="lg_text_table"><i class="icon-apple"></i><span>iOS</span></div>
-												<div class="sm_text_table"><span>(6.0 - 8.1.1)<br />jailbreak needed</span></div>
+												<div class="sm_text_table"><span>(6.0 - 8.1.2)<br />jailbreak needed</span></div>
 											</th>
 											<th>
 												<div class="lg_text_table"><i class="icon-blackberry"></i><span class="hidden-xs">BlackBerry</span><span class="visible-xs">BB</span></div>

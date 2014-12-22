@@ -3918,9 +3918,11 @@ only screen and (max-device-width: 480px) {
 }
 #box-content-post h5 {
   font-size: 18px;
+  font-weight: bold;
 }
 #box-content-post h6 {
   font-size: 16px;
+  font-weight: bold;
 }
 
 

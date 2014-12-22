@@ -4013,3 +4013,8 @@ only screen and (max-device-width: 480px) {
     display: inline-block;
     margin: 0 auto;
 }
+
+/* ------------ compatibilyti error ------------ */
+#compatibility-search-error label {
+    margin: 0px !important;
+}

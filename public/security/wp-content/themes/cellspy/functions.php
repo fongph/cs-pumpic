@@ -65,16 +65,24 @@ if ( !function_exists('fb_get_cat_related_posts') ) {
             // 'tag_id'        => get_the_tag_list(),
         );
         
+        $output .= "<ul>";
 
         $recentposts = get_posts( $args );
         foreach($recentposts as $post) {
             if($post->ID != (int)get_the_ID()) {
+                set_post_thumbnail_size( 50, 50 );
                 setup_postdata($post);
-                $output .= '<a href="' . get_permalink($post->ID) . '">' . get_the_title($post->ID) . '</a>';
+                $output .= '<li>';
+                    $output .= '<div class="left">';
+                        $output .= '<a href="' . get_permalink($post->ID) . '">' .get_the_post_thumbnail($post->ID, array(50, 50)). '</a>';
+                    $output .= '</div>';
+                    $output .= '<a href="' . get_permalink($post->ID) . '">' . get_the_title($post->ID) . '</a>';
+                $output .= '</li>';
                 $_count ++;
             }    
         }
 
+        $output .= "</ul>";
         
         $output .= '</div>';
 

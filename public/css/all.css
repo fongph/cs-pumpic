@@ -2918,12 +2918,36 @@ article img.pull-right {
   font-size: 18px;
   margin-bottom: 15px;
 }
+
+.related_row ul {
+    margin: 0px;
+    padding: 0px;
+}
+.related_row ul li {
+    border-bottom: 1px solid #cecece;
+    display: inline-block;
+    list-style: outside none none;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.related_row ul li > div {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+} 
+
+.related_row img {
+    display: inline-block;
+}
+
+/*
 .related_row a {
   display: block;
   border-bottom: 1px solid #cecece;
   margin-bottom: 10px;
   padding-bottom: 10px;
-}
+}*/
 
 .link_bordered {
   font-size: 16px;

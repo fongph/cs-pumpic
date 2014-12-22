@@ -41,6 +41,7 @@ $(document).ready(function(){
           
           if(parent.length)
               parent.css({
+                  'clear': 'both',
                   'width': 'auto',
               });
           

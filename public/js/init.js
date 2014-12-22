@@ -1063,21 +1063,40 @@ $(document).ready(function(){
    }
     
     
-  /* Pricing */
+   /* Pricing */
   if($('form[name="price_basic"]').length) {
       var _basic = $('form[name="price_basic"]');
       var _input_basic = _basic.find('#product_price_basic');
           _input_basic.val(''); 
-         
-        // radio
-          _basic.find('.label_radio').on('click', function() {
-              _input_basic.val('');
-              var _val = false;
-              if($(this).is('.r_on')) {
-                  _val = $(this).children('input').val();
-              }
-             _input_basic.val(_val);
-          }); 
+ //init
+_basic.find('.label_radio').each(function(){
+    //console.log('asd');
+    var curr  = $(this);
+    if($(this).children('input').attr('checked')){
+       curr.removeClass('r_off'); 
+       curr.addClass('r_on');
+        _input_basic.val($(this).val());
+       //console.log($(this).children('input'));
+   } 
+});         
+          
+           _basic.find('.label_radio').on('click', function() { 
+          //var _val = false;
+          //if($(this).is('.r_on')) {
+            var  _val = $(this).children('input').val();
+          //}
+          var curr = $(this);
+
+          _basic.find('.label_radio').each(function(){
+              $(this).removeClass('r_on'); 
+              $(this).addClass('r_off');
+
+          });
+          curr.removeClass('r_off'); 
+          curr.addClass('r_on');
+          
+         _input_basic.val(_val); 
+           });
          
        // select  
        _basic.find('select').change(function () {
@@ -1125,15 +1144,34 @@ $(document).ready(function(){
       var _premium = $('form[name="price_premium"]');
       var _input_premium = _premium.find('#product_price_premium');
           _input_premium.val('');
-             
+ _premium.find('.label_radio').each(function(){
+    //console.log('asd');
+    var curr  = $(this);
+    if($(this).children('input').attr('checked')){
+       curr.removeClass('r_off'); 
+       curr.addClass('r_on');
+        _input_premium.val($(this).val());
+       //console.log($(this).children('input'));
+   } 
+});             
              
       // radio
       _premium.find('.label_radio').on('click', function() {
           _input_premium.val('');
-          var _val = false;
-          if($(this).is('.r_on')) {
-              _val = $(this).children('input').val();
-          }
+          //var _val = false;
+          //if($(this).is('.r_on')) {
+            var  _val = $(this).children('input').val();
+          //}
+          var curr = $(this);
+
+          _premium.find('.label_radio').each(function(){
+              $(this).removeClass('r_on'); 
+              $(this).addClass('r_off');
+
+          });
+          curr.removeClass('r_off'); 
+          curr.addClass('r_on');
+          
          _input_premium.val(_val);
         }); 
         
@@ -1147,13 +1185,11 @@ $(document).ready(function(){
                 _selected = $( this ).val();
             });
 
-            console.log( _selected );
-
             if(_selected && _selected != '0') {
                 _input_premium.val( _selected );
             }
         })
-                .change();  
+        .change();  
              
       if(_premium.find('.label_radio input[type="radio"]:visible')) {
           // scan all checked
@@ -1176,7 +1212,29 @@ $(document).ready(function(){
       
        
   } 
-    
+  // switch features
+  $('.show_basic_features a').toggle(
+    function(event) {
+        event.preventDefault();
+        $('.basic_fe').css( "margin-top", "10px" );
+        $('.basic_fe').show();
+    }, function(event) {
+        event.preventDefault(); 
+        $('.basic_fe').css( "margin-top", "90px" ); 
+        $('.basic_fe').hide();
+    }
+);
+  $('.show_premium_features a').toggle(
+    function(event) {
+        event.preventDefault();
+        $('.premium_fe').css( "margin-top", "10px" );
+        $('.premium_fe').show();
+    }, function(event) {
+        event.preventDefault();
+        $('.premium_fe').css( "margin-top", "90px" );   
+        $('.premium_fe').hide();
+    }
+);   
   /* hashchange_AfterInit */
   hashchange_AfterInit();
   

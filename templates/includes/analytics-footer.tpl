@@ -16,7 +16,10 @@ ga('require', 'linker');
 // Define which domains to autoLink. 
 ga('linker:autoLink', ['fastspring.com']);
 
-</script>    
+</script>   
+
+<!-- button click -->
+<script src="/js/button.js"></script>
     
 <!-- <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

@@ -75,7 +75,7 @@
                                 </div>
                         </div>
                 </div>
-                {include file='../../includes/main-footer-promo.tpl'}
+                {include file='../../includes/compatibility-footer-promo.tpl' model=$getSetting._item.name}
         </div>
 
 	{include file='../../includes/footer.tpl'}

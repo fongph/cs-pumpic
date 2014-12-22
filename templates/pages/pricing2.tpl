@@ -128,7 +128,7 @@
                                                                 <span>$</span>11.66<span> months</span>
                                                             </div>
                                                             <div class="list_price">
-                                                            <form name="price_basic" method="GET" action="/buy.html">
+                                                            <form name="price_basic" method="POST" action="/buy.html">
                                                                 <input id='product_price_basic' type='hidden' name='price[productID]' value='0' />
                                                                 <ul>
                                                                     {foreach from=$getProducts.basic key=key item=_item}
@@ -184,7 +184,7 @@
                                                         </div>
                                                             <div class="list_price" id="foot_h2">
                                                             <div class="space_line">&nbsp;</div>
-                                                            <form name="price_basic" method="GET" action="/buy.html">
+                                                            <form name="price_basic" method="POST" action="/buy.html">
                                                                 <input id='product_price_basic' type='hidden' name='price[productID]' value='0' />
                                                                 <ul>
                                                                     {foreach from=$getProducts.basic key=key item=_item}
@@ -226,7 +226,7 @@
                                                                 <span>$</span>33.99<span> months</span>
                                                             </div>
                                                             <div class="list_price">
-                                                            <form name="price_premium" method="GET" action="/buy.html">
+                                                            <form name="price_premium" method="POST" action="/buy.html">
                                                                 <input id='product_price_premium' type='hidden' name='price[productID]' value='0' />
                                                                 <ul>
                                                                     {foreach from=$getProducts.premium key=key item=_item}
@@ -282,7 +282,7 @@
                                                         </div>
                                                         <div class="list_price" id="foot_h4">
                                                         <div class="space_line">&nbsp;</div> 
-                                                            <form name="price_premium" method="GET" action="/buy.html">
+                                                            <form name="price_premium" method="POST" action="/buy.html">
                                                                 <input id='product_price_premium' type='hidden' name='price[productID]' value='0' />
                                                                 <ul>
                                                                     {foreach from=$getProducts.premium key=key item=_item}

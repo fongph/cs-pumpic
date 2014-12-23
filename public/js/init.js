@@ -604,7 +604,7 @@ $(document).ready(function(){
         rules: {
             'device-model': {
                 required: true,
-                minlength: 3
+                minlength: 2
             }
         },
         errorClass: "invalid",

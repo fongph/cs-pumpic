@@ -1235,6 +1235,10 @@ _basic.find('.label_radio').each(function(){
         $('.premium_fe').hide();
     }
 );   
+
+$( window ).resize(function() {
+    
+});
   /* hashchange_AfterInit */
   hashchange_AfterInit();
   

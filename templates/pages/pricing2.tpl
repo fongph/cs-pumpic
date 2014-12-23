@@ -125,7 +125,7 @@
                                                                 <img src="{$img}/basic_pack.png">
                                                             </div>
                                                             <div class="wr_price_big">
-                                                                <span>$</span>11.66<span> months</span>
+                                                                <span></span>$11.66<span> / months</span>
                                                             </div>
                                                             <div class="list_price">
                                                             <form name="price_basic" method="POST" action="/buy.html">
@@ -223,7 +223,7 @@
                                                                 <img src="{$img}/premium_pack.png">
                                                             </div>
                                                             <div class="wr_price_big">
-                                                                <span>$</span>33.99<span> months</span>
+                                                                <span></span>$33.99<span>/ months</span>
                                                             </div>
                                                             <div class="list_price">
                                                             <form name="price_premium" method="POST" action="/buy.html">
@@ -316,13 +316,10 @@
                                     </table>
 
                                
-
-                                <div class="link_circle_italic">
-                                    <div class="style-links">
-                                        <span class="circle_ico">
-                                            <i class="icon-attention">
-                                            </i>
-                                        </span>you need to have physical access to the phone to install the application
+                                <div class="space_line">&nbsp;</div>
+                                <div class="link_circle_italic2">
+                                    <div class="style-links2">
+                                        <span class="circle_ico2"></span>you need to have physical access to the phone to install the application
                                     </div>
                                 </div>
                             </div>

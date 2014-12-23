@@ -111,7 +111,7 @@
                                                 </span>
                                             </div>
                                         <div class="refund_10"><div class="wr_refund"><div class="day10">10-DAY <span class="d_green">Refund Policy</span></div></div></div>
-                                        <div class="support_os"><div class="wr_support_os"><i class="icon-android d_green"></i> Android (2.0 - 5.0) <i class="icon-apple d_green"></i> IOS (6.0 - 8.1.1) jailbreak needed </div></div>
+                                        <div class="support_os"><div class="wr_support_os"><i class="icon-android d_green"></i> Android (2.0 - 5.0) <i class="icon-apple d_green"></i> IOS (6.0 - 8.1.2) jailbreak needed </div></div>
                                         </caption>
                                         <thead>
                                             <tr>
@@ -125,7 +125,7 @@
                                                                 <img src="{$img}/basic_pack.png">
                                                             </div>
                                                             <div class="wr_price_big">
-                                                                <span></span>$11.66<span> / months</span>
+                                                                <span></span>$11.66<span> / month</span>
                                                             </div>
                                                             <div class="list_price">
                                                             <form name="price_basic" method="POST" action="/buy.html">
@@ -223,7 +223,7 @@
                                                                 <img src="{$img}/premium_pack.png">
                                                             </div>
                                                             <div class="wr_price_big">
-                                                                <span></span>$33.99<span>/ months</span>
+                                                                <span></span>$33.99<span>/ month</span>
                                                             </div>
                                                             <div class="list_price">
                                                             <form name="price_premium" method="POST" action="/buy.html">

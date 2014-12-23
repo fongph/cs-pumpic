@@ -33,7 +33,7 @@
 										<a href="/compatibility.html">Compatibility</a>
 									</li>
 									<li {if $topmenu_active=='pricing'} class="active"{/if}>
-										<a href="/store.html">Pricing</a>
+										<a href="/store.html">Store</a>
 									</li>
 									<li {if $topmenu_active=='features'} class="active"{/if}>
 										<a href="/features.html">Features</a>

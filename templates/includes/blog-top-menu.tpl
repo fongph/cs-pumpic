@@ -25,7 +25,7 @@
 										<a href="<?php echo getStaticUrl();?>/compatibility.html">Compatibility</a>
 									</li>
 									<li>
-										<a href="<?php echo getStaticUrl();?>/store.html">Pricing</a>
+										<a href="<?php echo getStaticUrl();?>/store.html">Store</a>
 									</li>
 									<li>
 										<a href="<?php echo getStaticUrl();?>/features.html">Features</a>

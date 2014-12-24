@@ -43,8 +43,9 @@ $config = array(
                 'restore.html'  => 'restore.php',
             
                 // pricing
-                'store.html'  => 'store.php',
-                'pricing2.html'  => 'pricing2.php', 
+                'store.html'  => 'pricing2.php',
+                //'store.html'  => 'store.php',
+                //'pricing2.html'  => 'pricing2.php', 
                 // opening-soon-thanks.html
                 'opening-soon-thanks.html' => 'opening-soon-thanks.php',
             

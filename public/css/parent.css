@@ -45,6 +45,10 @@
     font-size: 22px;
 }
 
+.howtouse-pumpic p br {
+    margin-bottom: 5px;
+}
+
 /* --- buttons --- */
 .btn-green, .btn-red {
     font-family: "Open Sans",Helvetica,Arial,sans-serif;
@@ -616,6 +620,14 @@
 
 .left {
     float: left;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.testimonial-title {
+    font-size: 26px;
 }
 
 /* -------------// fix ---------- */

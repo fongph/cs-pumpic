@@ -74,7 +74,40 @@ class Order extends ManagerUser
         
         return $redirectUrl;
     }   
-    
+    public function createOrderByProduct( $userID, $product, $deviceId ) 
+    {
+        
+        $order = $this -> _billing -> getOrder();
+        $order->setSiteId(self::SITE_ID);
+        if($userID){
+            $order->setUserId($userID);
+        }
+         $order->setStatus(OrderRecord::STATUS_PENDING) // ->setStatus(CS\Models\Order\OrderRecord::STATUS_PENDING) ::STATUS_CREATED
+                ->setPaymentMethod(OrderRecord::PAYMENT_METHOD_FASTSPRING)
+                ->save();
+
+        $orderProduct = $this -> _billing -> getOrderProduct();
+        $orderProduct->setOrder($order)
+                ->setProduct($billingManager->getSiteProductByGroup(self::SITE_ID, self::PRODUCT_TYPE, $product))
+                ->loadReferenceNumber();
+        if ($deviceId > 0) {
+            $orderProduct->setInitialDeviceId($deviceId);
+        }
+        $orderProduct->save();
+        
+        $this -> _gateway->setStoreId( $this -> storeId )
+                ->setProductId($orderProduct->getReferenceNumber())
+                ->setReferenceData($order->getId() . '-' . $order->getHash())
+                ->setInstant();
+                // ->setTestMode(); // не обязательно
+
+        $response =$this -> _gateway->purchaseProduct()->send();
+
+        $redirectUrl = $response->getRedirectUrl();
+        
+        return $redirectUrl;
+    }   
+        
     public function getProducts() 
     {
         $_plans = $this -> _billing->getSiteProducts(self::SITE_ID, self::PRODUCT_TYPE);

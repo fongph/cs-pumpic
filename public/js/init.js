@@ -1252,6 +1252,7 @@ $("input[name='optionsRadios']").each(function(){
    
 });   */      
   /* hashchange_AfterInit */
+
   hashchange_AfterInit();
   
   /* fix features desine chrome */

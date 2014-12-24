@@ -335,7 +335,15 @@
         </div>
         {include file='../includes/footer.tpl'}
     </div>
-    {include file='../includes/analytics-footer.tpl'}
+    <script type="text/javascript">
+    $(document).ready(function(){
+        $('form').submit(function(){
+            ga('linker:decorate', this);
+        });
+    });
+    </script>
+    {include fle='../includes/analytics-footer.tpl'}
+    
 </body>
 </html>
 {/strip}

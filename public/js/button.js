@@ -7,9 +7,9 @@ $(function() {
 	});
         
         $('.ga-click').on('click', function(event) {
-            event.preventDefault();
+            //event.preventDefault();
             _ga_generated( $(this) );
-            return true;
+            //return true;
         });
 
 });

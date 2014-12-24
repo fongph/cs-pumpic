@@ -99,7 +99,7 @@
 				</div>
 			</div>
 		</div>
-		{include file='../includes/main-footer-promo.tpl'}
+		{include file='../includes/main-footer-promo.tpl' labelButton="contacts-now"}
 		{include file='../includes/footer.tpl'}
 	</div>
 	{include file='../includes/analytics-footer.tpl'}

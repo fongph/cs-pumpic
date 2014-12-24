@@ -4049,3 +4049,7 @@ only screen and (max-device-width: 480px) {
 #compatibility-search-error label {
     margin: 0px !important;
 }
+
+div[id^="attachment_"], div[id*=" attachment_"] {
+    margin-bottom: 15px;
+}    

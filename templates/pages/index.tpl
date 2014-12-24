@@ -47,7 +47,12 @@
 					<div class="col-sm-5 col-md-5 col-lg-5">
 						<div class="ipad-text">
 							<h2>HOW IT LOOKS?</h2>
-							 {*http://demo.{$domain}*} <a href="http://demo.{$domain}" class="featured-link link-hl">View demo<i class="icon-angle-double-right"></i></a>
+							 {*http://demo.{$domain}*} <a href="http://demo.{$domain}"  
+                                                                                      class="featured-link link-hl ga-click"
+                                                                                        ga-label-button="main-demo-looks"
+                                                                                        ga-type-button="buy button"
+                                                                                        ga-event="click"
+                                                                                      >View demo<i class="icon-angle-double-right"></i></a>
 							<p>Pumpic is a new and reasonably improved solution in the world of remote tracking applications. The software made parental control and employees’ surveillance quick and simple. We have created an interactive demo video about how to install and use the app. For additional information, visit FAQ page on this website or contact our Customer Support Team.</p>
 						</div>
 					</div>
@@ -133,7 +138,7 @@
 			</div>
 		</div>
 		{include file='../includes/quick-link.tpl'}
-		{include file='../includes/main-footer-promo.tpl'}
+		{include file='../includes/main-footer-promo.tpl' labelButton="main-now"}
 		{include file='../includes/footer.tpl'}
 	</div>
 	{include file='../includes/analytics-footer.tpl'}

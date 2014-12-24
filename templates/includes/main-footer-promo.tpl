@@ -34,7 +34,7 @@
 						</div>
 						<div>
 							<button class="btn btn-default _forward_pricing"
-                                                                ga-label-button="main-now"
+                                                                ga-label-button="{if $labelButton}{$labelButton}{else}main-now{/if}"
                                                                 ga-type-button="buy button"
                                                                 ga-event="click">Buy NOW</button>
 						</div>

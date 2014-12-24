@@ -67,8 +67,8 @@
                                     <li><i class="i-features-location"></i> Location Tracking</li>
                                     <li><i class="i-features-keyloger"></i> Keylogger</li>
                                     <li><i class="i-features-sms-commands"></i> SMS Commands</li>
-                                    <li></li>
-                                    <li></li>
+                                    <li class="hidden-mobile"></li>
+                                    <li class="hidden-mobile"></li>
                                 </ul>
                             </div>
                         </section>

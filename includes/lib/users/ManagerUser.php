@@ -115,7 +115,7 @@ class ManagerUser extends Manager
     {
         $_type = 'prod';
         if (in_array(@$_SERVER['REMOTE_ADDR'], ['127.0.0.1', '::1'])) {
-            $_type = 'dev';
+            //$_type = 'dev';
         }
         return $this -> _db[ $_type ];
     }

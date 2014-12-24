@@ -111,7 +111,7 @@
                                                 </span>
                                             </div>
                                         <div class="refund_10"><div class="wr_refund"><div class="day10">10-DAY <span class="d_green">Refund Policy</span></div></div></div>
-                                        <div class="support_os"><div class="wr_support_os"><i class="icon-android d_green"></i> Android (2.0 - 5.0) <i class="icon-apple d_green"></i> IOS (6.0 - 8.1.1) jailbreak needed </div></div>
+                                        <div class="support_os"><div class="wr_support_os"><i class="icon-android d_green"></i> Android (2.0 - 5.0) <i class="icon-apple d_green"></i> IOS (6.0 - 8.1.2) jailbreak needed </div></div>
                                         </caption>
                                         <thead>
                                             <tr>
@@ -125,18 +125,18 @@
                                                                 <img src="{$img}/basic_pack.png">
                                                             </div>
                                                             <div class="wr_price_big">
-                                                                <span>$</span>11.66<span> months</span>
+                                                                <span></span>$11.66<span> / month</span>
                                                             </div>
                                                             <div class="list_price">
                                                             <form name="price_basic" method="POST" action="/buy.html">
-                                                                <input id='product_price_basic' type='hidden' name='price[productID]' value='0' />
+                                                                <input id='product_price_basic' type='hidden' name='price[productID]' value='0' class="product_price" />
                                                                 <ul>
                                                                     {foreach from=$getProducts.basic key=key item=_item}
                                                                     <li class= "">
                                                                         <label class="label_radio hover_label_radio r_off"><input name="optionsRadios" id="optionsRadios{$_item.id}"
                                                                         value="{$_item.id}"
-                                                                        {if $_item.period == '12'} checked {/if}
-                                                                        >
+                                                                        {if $_item.period == '12'} checked="checked" {/if}
+                                                                        />
                                                                         <span class="sp">
                                                                             <strong>
                                                                                 {$_item.period}
@@ -147,6 +147,7 @@
                                                                                 ${$_item.price}
                                                                             </strong>
                                                                         </span>
+                                                                        </label>
                                                                     </li>
                                                                     {/foreach}
                                                                 </ul>
@@ -185,14 +186,14 @@
                                                             <div class="list_price" id="foot_h2">
                                                             <div class="space_line">&nbsp;</div>
                                                             <form name="price_basic" method="POST" action="/buy.html">
-                                                                <input id='product_price_basic' type='hidden' name='price[productID]' value='0' />
+                                                                <input id='product_price_basic' type='hidden' name='price[productID]' value='0' class="product_price" />
                                                                 <ul>
                                                                     {foreach from=$getProducts.basic key=key item=_item}
                                                                     <li class= "">
                                                                         <label class="label_radio hover_label_radio r_off"><input name="optionsRadios" id="optionsRadios{$_item.id}"
                                                                         value="{$_item.id}"
-                                                                        {if $_item.period == '12'} checked {/if}
-                                                                        >
+                                                                        {if $_item.period == '12'} checked="checked" {/if}
+                                                                        />
                                                                         <span class="sp">
                                                                             <strong>
                                                                                 {$_item.period}
@@ -203,6 +204,7 @@
                                                                                 ${$_item.price}
                                                                             </strong>
                                                                         </span>
+                                                                        </label>
                                                                     </li>
                                                                     {/foreach}
                                                                 </ul>
@@ -223,18 +225,18 @@
                                                                 <img src="{$img}/premium_pack.png">
                                                             </div>
                                                             <div class="wr_price_big">
-                                                                <span>$</span>33.99<span> months</span>
+                                                                <span></span>$33.99<span>/ month</span>
                                                             </div>
                                                             <div class="list_price">
                                                             <form name="price_premium" method="POST" action="/buy.html">
-                                                                <input id='product_price_premium' type='hidden' name='price[productID]' value='0' />
+                                                                <input id='product_price_premium' type='hidden' name='price[productID]' value='0' class="product_price"/>
                                                                 <ul>
                                                                     {foreach from=$getProducts.premium key=key item=_item}
                                                                     <li class= "">
                                                                         <label class="label_radio hover_label_radio r_off"><input name="optionsRadios" id="optionsRadios{$_item.id}"
                                                                         value="{$_item.id}"
-                                                                        {if $_item.period == '12'} checked {/if}
-                                                                        >
+                                                                        {if $_item.period == '12'} checked="checked" {/if}
+                                                                        />
                                                                         <span class="sp">
                                                                             <strong>
                                                                                 {$_item.period}
@@ -245,6 +247,7 @@
                                                                                 ${$_item.price}
                                                                             </strong>
                                                                         </span>
+                                                                        </label>
                                                                     </li>
                                                                     {/foreach}
                                                                 </ul>
@@ -283,14 +286,14 @@
                                                         <div class="list_price" id="foot_h4">
                                                         <div class="space_line">&nbsp;</div> 
                                                             <form name="price_premium" method="POST" action="/buy.html">
-                                                                <input id='product_price_premium' type='hidden' name='price[productID]' value='0' />
+                                                                <input id='product_price_premium' type='hidden' name='price[productID]' value='0' class="product_price" />
                                                                 <ul>
                                                                     {foreach from=$getProducts.premium key=key item=_item}
                                                                     <li class= "">
                                                                         <label class="label_radio hover_label_radio r_off"><input name="optionsRadios" id="optionsRadios{$_item.id}"
                                                                         value="{$_item.id}"
-                                                                        {if $_item.period == '12'} checked {/if}
-                                                                        >
+                                                                        {if $_item.period == '12'} checked="checked" {/if}
+                                                                        />
                                                                         <span class="sp">
                                                                             <strong>
                                                                                 {$_item.period}
@@ -301,6 +304,7 @@
                                                                                 ${$_item.price}
                                                                             </strong>
                                                                         </span>
+                                                                        </label>
                                                                     </li>
                                                                     {/foreach}
                                                                 </ul>
@@ -308,7 +312,7 @@
                                                                 </form>
                                                                 <div class="space_line">&nbsp;</div> 
                                                             </div>
-                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </th>
                                             </tr>
@@ -316,13 +320,10 @@
                                     </table>
 
                                
-
-                                <div class="link_circle_italic">
-                                    <div class="style-links">
-                                        <span class="circle_ico">
-                                            <i class="icon-attention">
-                                            </i>
-                                        </span>you need to have physical access to the phone to install the application
+                                <div class="space_line">&nbsp;</div>
+                                <div class="link_circle_italic2">
+                                    <div class="style-links2">
+                                        <span class="circle_ico2"></span>you need to have physical access to the phone to install the application
                                     </div>
                                 </div>
                             </div>

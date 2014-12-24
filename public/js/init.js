@@ -604,7 +604,7 @@ $(document).ready(function(){
         rules: {
             'device-model': {
                 required: true,
-                minlength: 2
+                minlength: 3
             }
         },
         errorClass: "invalid",
@@ -1062,23 +1062,15 @@ $(document).ready(function(){
        });
    }
     
-    
+
    /* Pricing */
   if($('form[name="price_basic"]').length) {
       var _basic = $('form[name="price_basic"]');
       var _input_basic = _basic.find('#product_price_basic');
           _input_basic.val(''); 
  //init
-_basic.find('.label_radio').each(function(){
-    //console.log('asd');
-    var curr  = $(this);
-    if($(this).children('input').attr('checked')){
-       curr.removeClass('r_off'); 
-       curr.addClass('r_on');
-        _input_basic.val($(this).val());
-       //console.log($(this).children('input'));
-   } 
-});         
+ 
+
           
            _basic.find('.label_radio').on('click', function() { 
           //var _val = false;
@@ -1143,17 +1135,18 @@ _basic.find('.label_radio').each(function(){
   if($('form[name="price_premium"]').length) {
       var _premium = $('form[name="price_premium"]');
       var _input_premium = _premium.find('#product_price_premium');
-          _input_premium.val('');
- _premium.find('.label_radio').each(function(){
+          //_input_premium.val('');
+/* _premium.find('.label_radio').each(function(){
     //console.log('asd');
     var curr  = $(this);
     if($(this).children('input').attr('checked')){
        curr.removeClass('r_off'); 
        curr.addClass('r_on');
         _input_premium.val($(this).val());
+        
        //console.log($(this).children('input'));
    } 
-});             
+});         */    
              
       // radio
       _premium.find('.label_radio').on('click', function() {
@@ -1235,6 +1228,29 @@ _basic.find('.label_radio').each(function(){
         $('.premium_fe').hide();
     }
 );   
+$("input[name='optionsRadios']").each(function(){
+    //console.log(this.getAttribute("checked"));
+    if(this.getAttribute("checked")){
+       // alert($(this).val());
+        
+       $(this).parent('.label_radio').addClass('r_on');
+       $(this).parent('.label_radio').removeClass('r_off');
+       $(this).parents('form').children('.product_price').val($(this).val());
+    }
+});
+
+    /*$("input[name='optionsRadios']").filter(':checked').each(function(){
+    
+    var curr  = $(this);
+    
+       
+
+       curr.parent('.label_radio').removeClass('r_off');
+       curr.parent('.label_radio').addClass('r_on');
+       
+       curr.parents('form').children('.product_price').val(curr.val());
+   
+});   */      
   /* hashchange_AfterInit */
   hashchange_AfterInit();
   

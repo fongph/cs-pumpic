@@ -56,7 +56,7 @@ form > table.pricing-second:after {
   }
 }
 .tb_pricing thead tr th:first-child {
-  font-size: 19px;
+  font-size: 21px;
   text-transform: uppercase;
 }
 @media only screen and (max-width: 480px) {
@@ -156,14 +156,14 @@ form > table.pricing-second:after {
 .tb_pricing  .refund_10{
     position: absolute;
     width:100%;
-    top:417px;
+    top:435px;
     height: 36px;
     background-color:#4d4f5b; 
 }
 .tb_pricing .support_os{
     position: absolute;
     width:100%;
-    top:453px;
+    top:471px;
     height: 40px;
     background-color:#f0f0f0; 
 }
@@ -285,7 +285,8 @@ form > table.pricing-second:after {
 }
 .priceb .list_price ul li{
     width: 84%;
-    height:35px;
+    height:38px;
+    line-height: 38px;
 }
 .pricep .list_price ul{
     list-style-type: none;
@@ -293,7 +294,8 @@ form > table.pricing-second:after {
 }
 .pricep .list_price ul li{
     width: 84%;
-    height:35px;
+    height:38px;
+    line-height: 38px;
 }
 
 .label_radio .sp {
@@ -310,7 +312,8 @@ form > table.pricing-second:after {
     border-bottom:1px solid #d8f3f1;
     background: #fdfbf3;
     overflow: hidden;
-    height: 36px;
+    height: 39px;
+    line-height: 36px;
 }
 .label_radio .sp_price{
     display: block;
@@ -325,67 +328,6 @@ form > table.pricing-second:after {
 }
 .label_radio .sp_price strong{
     font-size: 18px;
-}
-.basic_wr .basic_fe{
-    margin-top:80px;
-    width:100%;
-    
-}
-
-.basic_wr .basic_fe ul{
-    list-style-type: none;
-    margin: 5%;
-}
-.basic_wr .basic_fe ul li{
-    list-style-type: none;
-    font-size: 14px;
-    font-weight: normal;
-    text-align: left;
-    text-transform: none;
-    color:#4d4f5b;
-}
-.basic_wr .basic_fe ul li:hover{
-    list-style-type: none;
-    font-size: 14px;
-    font-weight: normal;
-    text-align: left;
-    text-transform: none;
-    color:#2cbdb3;
-    cursor: pointer;
-}
-.basic_wr i{
-    font-size: 14px !important;
-}
-
-.basic_wr .basic_fe{
-    margin-top:80px;
-    width:100%;
-    
-}
-
-.basic_wr .basic_fe ul{
-    list-style-type: none;
-    margin: 5%;
-}
-.basic_wr .basic_fe ul li{
-    list-style-type: none;
-    font-size: 14px;
-    font-weight: normal;
-    text-align: left;
-    text-transform: none;
-    color:#4d4f5b;
-}
-.basic_wr .basic_fe ul li:hover{
-    list-style-type: none;
-    font-size: 14px;
-    font-weight: normal;
-    text-align: left;
-    text-transform: none;
-    color:#2cbdb3;
-    cursor: pointer;
-}
-.basic_wr i{
-    font-size: 14px !important;
 }
 
 .basic_wr .basic_fe{
@@ -405,6 +347,9 @@ form > table.pricing-second:after {
     text-align: left;
     text-transform: none;
     color:#4e4d5b;
+    line-height: 32px;
+    height:32px;
+    overflow: hidden;
 }
 .basic_wr .basic_fe ul li span{
     font-size: 12px;
@@ -421,8 +366,14 @@ form > table.pricing-second:after {
     text-transform: none;
     color:#2cbdb3;
     cursor: pointer;
+    line-height: 32px;
+    height:32px;
+    overflow: hidden;
 }
-.basic_wr i{
+.basic_wr .icon-ok{
+    font-size: 13px !important;
+}
+.basic_wr .icon-cancel{
     font-size: 15px !important;
 }
 
@@ -443,6 +394,9 @@ form > table.pricing-second:after {
     text-align: left;
     text-transform: none;
     color:#4d4f5b;
+    line-height: 32px;
+    height:32px;
+    overflow: hidden;
 }
 .premium_wr .premium_fe ul li span{
     font-size: 12px;
@@ -460,8 +414,14 @@ form > table.pricing-second:after {
     text-transform: none;
     color:#2cbdb3;
     cursor: pointer;
+    line-height: 32px;
+    height:32px;
+    
 }
-.premium_wr i{
+.premium_wr .icon-ok{
+    font-size: 13px !important;
+}
+.premium_wr .icon-cancel{
     font-size: 15px !important;
 }
 
@@ -500,7 +460,27 @@ form > table.pricing-second:after {
     font-weight: normal;
     
 }
-
+.circle_ico2 {
+    background: url(../images/info.png);
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+    line-height: 42px;
+    margin-right: 5px;
+    vertical-align: middle;
+    
+}
+.link_circle_italic2 {
+  padding: 0;
+  width: 100%;
+  overflow: hidden;
+  font-style: italic;
+  text-align: center;
+}
+.style-links2 {
+    color: #16a89e;
+    font-weight: 600;
+}
 @media only screen and (max-width: 1185px) {
 .tb_pricing  .refund_10{
     position: absolute;
@@ -555,33 +535,33 @@ form > table.pricing-second:after {
             
         }
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 710px) {
     .tb_pricing  .refund_10{
         position: absolute;
         width:100%;
-        top:500px;
+        top:477px;
         height: 36px;
         background-color:#4d4f5b; 
     }
     .tb_pricing .support_os{
         position: absolute;
         width:100%;
-        top:536px;
+        top:513px;
         height: 40px;
         background-color:#f0f0f0; 
     }
         .basic_wr .basic_fe{
-            margin-top:100px;
+            margin-top:110px;
             width:100%;
             
         }
         .premium_wr .premium_fe{
-            margin-top:100px;
+            margin-top:110px;
             width:100%;
             
         }
 }
-@media only screen and (max-width: 688px) {
+@media only screen and (max-width: 700px) {
      
     .basic_wr{
         width:100%;
@@ -600,11 +580,21 @@ form > table.pricing-second:after {
     .wr_price_big {
         color: #606060;
         float: left;
-        font-size: 36px;
+        font-size: 30px;
         font-weight: bold;
         height: 79px;
-        margin: 30px 0 0 40%;
+        margin: 25px 0 0 50%;
         position: absolute;
+
+    }
+    .wr_price_big span {
+        display: block;
+        clear: both;
+        font-size: 13px;
+        text-align: right;
+        vertical-align: top;
+        line-height: 15px;
+       
     }
     .tb_pricing  .refund_10{
         display: none;

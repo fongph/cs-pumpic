@@ -37,7 +37,7 @@
 							</div>
 						</div>
 					</div>
-					{include file='../includes/plans-links.tpl'}
+					{include file='../../includes/parental_control/plans-links.tpl'}
 				</div>
 			</div>
 		</div>

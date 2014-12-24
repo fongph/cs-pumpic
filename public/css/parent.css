@@ -45,7 +45,7 @@
     font-size: 22px;
 }
 
-.howtouse-pumpic p br {
+.howtouse-pumpic p br, .br {
     margin-bottom: 5px;
 }
 
@@ -68,7 +68,14 @@
     background: #cf4857;
 }
 
-
+.btn-green:hover, .btn-green:active,
+.btn-red:hover, .btn-red:active {
+    opacity: 0.7;
+    color: white;
+    border-color: #adadad;
+    text-decoration: none;
+    text-shadow: 0 1px 0 rgba(186, 120, 26, 0.4);
+}
 /* --- // style  */
 
 #table-container {
@@ -482,6 +489,7 @@
    text-align: left;
 }
 
+
 #promo-item .text-green span {
     font-size: 33px;
 }
@@ -494,21 +502,39 @@
     display: block;
 }
 
+
+
+
 @media only screen and (max-width: 480px) {
    .visible-mobile-lg {
+       position: relative;
         display: block !important;
-        float: left;
+/*        float: left;*/
+/*        width: 55%;*/
+        left: 50%;
+        margin-left: -88px;
    } 
    
    .visible-parent-control-lg {
         display: none !important;
     }
+    
+    .small-banner {
+        margin: 0 auto;
+/*        width: 80%;*/
+    }
+    
+    .promo-parent-control #promo-item {
+        width: 100%;
+        text-align: center;
+    }
+    
 }
 @media (min-width: 468px) {
     .visible-mobile-lg {
         position: relative;
         display: block !important;
-        float: left;
+/*        float: left;*/
         left: 50%;
         margin-left: -88px;
    }     

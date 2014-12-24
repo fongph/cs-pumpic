@@ -50,7 +50,7 @@
         <div class="container">
                 <div class="row">
                     
-                    <div class="col-lg-offset-1">
+                    <div class="small-banner col-lg-offset-1">
                         <div id="promo-item">
                             <img src="{$img}/parental_control/banner_promo_v3.png" class="visible-parent-control-lg" height="150" width="270" alt="">
                         </div>
@@ -68,7 +68,7 @@
                         </div>
                         <div id="promo-item" class="col-sm-2 col-md-2 col-lg-2">
                             <div class="text-green">
-                                Keep your<br />
+                                Keep your<br class="pc-version"/>
                                 <span>family safe</span>
                             </div>
                             <button class="btn btn-red _forward_pricing"
@@ -78,6 +78,8 @@
                         </div>
                         
                         <img src="{$img}/parental_control/mobile_small_baner.png" class="visible-mobile-lg" height="95" width="166" alt="" />
+                        
+                        
                             
                     </div>
                     

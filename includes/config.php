@@ -44,7 +44,6 @@ $config = array(
             
                 // pricing
                 'store.html'  => 'pricing2.php',
-                'store54321.html'  => 'store.php',
                 //'pricing2.html'  => 'pricing2.php', 
                 // opening-soon-thanks.html
                 'opening-soon-thanks.html' => 'opening-soon-thanks.php',
@@ -53,7 +52,7 @@ $config = array(
                 'ipregion.html'            => 'ipregion.php',
             
                 // currancy
-                'currancy.html'            => 'currency.php', 
+                // 'currency.html'            => 'currency.php', 
 	)
 );
 

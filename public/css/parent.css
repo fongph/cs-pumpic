@@ -532,7 +532,26 @@
 }
 
 @media (min-width: 992px) {
+    .visible-mobile-lg {
+        display: none !important;
+    }
     
+   .promo-parent-control #promo-item {
+       width: auto;
+       text-align: left;
+   }
+   
+   #promo-item .text-green span {
+        font-size: 33px;
+   }
+   
+   #promo-item .text-green {
+       font-size: 21px;
+   }
+   
+   .visible-parent-control-lg {
+        display: block !important;
+    }
 }  
 
 @media (min-width: 1200px) {

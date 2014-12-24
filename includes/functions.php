@@ -850,9 +850,18 @@ function _clearCookie() {
  * Detected ip
  */
 function smarty_function_closeAccess($params, $template) {
-    if (!hasAccess()) {
+    if (!dieAccess()) {
         die('You are not allowed to access this file.');
     }
+}
+
+function dieAccess() {
+    if(in_array(@$_SERVER['REMOTE_ADDR'], ['176.38.120.13', '212.90.60.74', '127.0.0.1', '::1'])) {
+        $_result = true;
+    } else
+        $_result = false;
+    
+    return $_result;
 }
 
 /**

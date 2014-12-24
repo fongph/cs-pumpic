@@ -1,4 +1,5 @@
 $(function() {
+    
 	$('._forward_pricing').on("click",function(){
             
             var _ga_label_button = false,

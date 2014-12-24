@@ -1,4 +1,3 @@
-{closeAccess}
 
 {*authorization out="getOut" post=$smarty.post*}
 {strip}

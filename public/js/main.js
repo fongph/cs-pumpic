@@ -1,5 +1,5 @@
 $(function() {
-	$('.select_inverse, .select').selectpicker();
+        $('.select_inverse, .select').selectpicker();
 
 	$('.dbody > .row > div:first-child').on('click', function(ev) {
 		var $this = $(this);

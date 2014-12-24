@@ -22,10 +22,11 @@ class Currency
 
     private static  $instance; 
     
-    private  $_ip; 
-    private $_currency = 'USD';
     // private $_pdo;
     private $_db;
+    
+    private $_searchCurr = [];
+    private $_base;
     
     public static function getInstance()
     {
@@ -34,11 +35,46 @@ class Currency
         return self::$instance;
     } 
     
+    private function _validateValue( $_val ) {
+        return $this -> _db -> getConnected() -> quote( strtolower( trim($_val) ) );
+    }
+    
+    public function setCurrBase( $_base ) 
+    {
+        if(!empty($_base))
+            return $this -> _base = $_base;
+    }
+    
+    public function setFilter( $_filter ) 
+    {
+        if(!empty($_filter) and is_array($_filter)) {
+            
+            foreach($_filter as $_key => $_value) :
+                if(isset($_filter[ $_key ]))
+                    $this -> _searchCurr[$_key] = array_map(array($this, '_validateValue'), $_value);
+            endforeach;
+            
+            return $this -> _searchCurr;
+        }
+            
+    }
     
     public function getCurrencies() 
     {
-       $_rates = $this -> _db -> query("SELECT currID as id, rates, iso as curr_code FROM currencies WHERE hidden = 0");
-       return (!empty($_rates)) ? $_rates : array();
+        //iso
+        $_filter = '';
+        if(isset($this -> _searchCurr['iso']) 
+                and !empty($this -> _searchCurr['iso'])) 
+        {
+            if(is_array($this -> _searchCurr['iso']))
+                $_filter .= "AND iso IN (".  implode($this -> _searchCurr['iso'], ',') . ")";
+            if(is_string( $this -> _searchCurr['iso'] ))
+                $_filter .= "AND iso = ". $this->_validateValue ( $this -> _searchCurr['iso'] );
+        } 
+        
+        
+        $_rates = $this -> _db -> query("SELECT currID as id, rates, iso FROM `currancies` WHERE hidden = 0 ".$_filter);
+        return (!empty($_rates)) ? $_rates : array();
     }
     
 }

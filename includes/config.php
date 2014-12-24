@@ -53,7 +53,7 @@ $config = array(
                 'ipregion.html'            => 'ipregion.php',
             
                 // currancy
-                // 'currency.html'            => 'currency.php', 
+                'currancy.html'            => 'currency.php', 
 	)
 );
 

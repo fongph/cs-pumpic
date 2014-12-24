@@ -7,7 +7,10 @@
         <link href="{$css}/lightbox.css" rel="stylesheet">
         
 	<link href="{$css}/all.css" rel="stylesheet">
+        <link href="{$css}/parent.css" rel="stylesheet">
+        
 <link href="{$css}/p2.css" rel="stylesheet">
+
 	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 	<!--[if lt IE 9]>
@@ -43,7 +46,7 @@
         <script src="{$js}/translite/jquery.synctranslit.js"></script>
         
         <!-- monay convert-->
-        <script src="{$js}/monay/monay.min.js"></script>
+        <script src="{$js}/money/money.min.js"></script>
         <script src="{$js}/currancy.js"></script>
         
         <!-- init -->

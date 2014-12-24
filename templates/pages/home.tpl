@@ -1,0 +1,173 @@
+{closeAccess}
+
+{strip}
+{include file='../includes/wrap-title-header.tpl'}
+
+	<title>High-Grade Cell Phone Monitoring App – Pumpic</title>
+	<meta name="description" content="Pumpic is a new multifunction Parental Control and Employee Surveillance Application for your cell phone. Track locations, record environment, follow text messages and call logs remotely." />
+	
+{include file='../includes/wrap-title-footer.tpl'}
+<body>
+{include file='../includes/button-help.tpl'}
+{include file='../includes/button-goup.tpl'}
+	<div class="wrapper parent-control">
+	{include file='../includes/topmenu-logo-login.tpl' topmenu_active='home'}	
+		<div class="visual">
+                    
+			<div class="container bg_famaly">
+                            
+                            <div class="row">
+                                
+                                <div class="col-lg-10 col-lg-offset-1">
+                                    
+                                    
+                                    <div class="col-lg-6 box-right-description">
+                                        <div class="visual-text text-center">
+                                            <h1 class="title">CHILDCARE MOBILE <br />MONITORING APP</h1>
+                                            <p>Keep your children safe and secured with Pumpic. <br />
+                                                Track location. View calls and SMS. Follow online activity.</p>
+                                            <ul class="compatibility">
+                                                <li><i class="icon-android"></i> (2.2 - 5.0)</li>
+                                                <li><i class="icon-apple"></i> (6.0 - 8.1.2)</li>
+                                                {*<li><i class="icon-blackberry"></i> (1.0 - 7.1)</li>*}
+                                                <li>
+                                                    <i class="icon-info-circled"></i> <a href="/compatibility.html">platform compatibility</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                                
+                                    <div class="col-lg-6 mobile-version">
+                                        <img src="{$img}/parental_control/bg_famaly_mobile.png" alt="" class="visual-img-pc">
+                                    </div>            
+                                                
+                                </div>
+                            </div> <!-- .row -->
+			</div>
+		</div>
+		{include file='../includes/parental_control/main-plans.tpl'}
+                {include file='../includes/parental_control/main-secures.tpl'}
+		{include file='../includes/parental_control/main-features.tpl'}
+
+		<div class="dark">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-5 col-md-5 col-lg-5 col-sm-offset-1 col-md-offset-1 col-lg-offset-1">
+						<div class="text-center relative_box">
+							{*<img src="{$img}/arrows_content.png" class="arrows_img" height="518" width="255" alt="">*}
+							<img src="{$img}/ipad.jpg" alt="" class="ipad-pic">
+							{*<button class="btn btn-default _forward_pricing"
+                                                                ga-label-button="main-premium"
+                                                                ga-type-button="buy button"
+                                                                ga-event="click">Buy Premium</button>*}
+						</div>
+					</div>
+					<div class="col-sm-5 col-md-5 col-lg-5">
+						<div class="ipad-text">
+							<h2 class="text-left">HOW IT LOOKS?</h2>
+							<p>Pumpic is unique parental control software. Now, you can easily track your children’s location, calls, text messages and internet usage. The team of Pumpic professionals have created an interactive demo video on how to install and use the application. For any additional information, please visit our FAQ page or contact our Customer Support Team at any time.</p>
+                                                        <ul>
+                                                            <li>
+                                                                <a href="http://demo.{$domain}" 
+                                                                   class="featured-link link-hl">View demo<i class="icon-angle-double-right"></i></a>
+                                                            </li>
+                                                            <li>
+                                                                <button class="btn btn-green _forward_pricing"
+                                                                    ga-label-button="main-visit-store"
+                                                                    ga-type-button="buy button"
+                                                                    ga-event="click">Visit Store</button>
+                                                            </li>
+                                                        </ul>
+                                                        
+                                                        
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="light">
+			<div class="container">
+				<h2 class="text-center">PUMPIC TESTIMONIALS:</h2>
+				<div class="row">
+					<div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
+						<img src="{$img}/parental_control/testimonials_new_1.png" alt="" class="testimonial-photo">
+						<div class="testimonial-text">
+							<h4>Jane A.  – mother of twins</h4>
+							<p>“I didn’t know such technology existed. It made my life easier and helped me big time. I can track my kids’ calls, texts messages and social media to save them from online predators and misgiving companies.”</p>
+						</div>
+					</div>
+					<div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
+						<img src="{$img}/parental_control/testimonials_new_2.png" alt="" class="testimonial-photo">
+						<div class="testimonial-text">
+							<h4>Karen and Mike – parents of 12-year-old daughter</h4>
+							<p>“Our daughter was acting weird after we moved to another state, when we installed Pumpic app, we found that she was bullied by her classmate on Facebook. We gathered with teachers and parents and talked the whole thing out. Thank you!”</p>
+						</div>
+					</div>
+					<div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
+						<img src="{$img}/parental_control/testimonials_new_3.png" alt="" class="testimonial-photo">
+						<div class="testimonial-text">
+							<h4>Logan T – father of 14-year-old son</h4>
+							<p> “Pumpic has really made my life easier. Now, I can take care of my kid, even when I’m far from home. I can block 18+ websites and applications. It’s good to know that my son is safe and secured wherever I go.”</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+                {* include file='../includes/main-subscribe.tpl' *}
+                
+		<div class="dark howtouse-pumpic">
+			<div class="container">
+				<h2 class="text-center">HOW TO USE PUMPIC</h2>
+				<div class="howitworks-arrows">
+					<img src="{$img}/howitworks-arrows.png" class="" alt="">
+				</div>
+				<div class="row">
+					<ol class="list_step">
+						<li>
+							<h3>Pick a subscription plan</h3>
+							<p>Visit our Pricing page, check out available subscription plans and choose the one, which meets your expectations and monitoring preferences. Soon after submitting the payment, you will receive an email with setup instructions.</p>
+						</li>
+						<li>
+							<h3>Download and install</h3>
+							<p>The process of Pumpic app installation will take you no longer than 5 minutes. Follow the guidelines pointed in the email to complete the setup. Note that physical access to your kid’s device is required.</p>
+						</li>
+						<li>
+							<h3>Keep your kids safe</h3>
+							<p>Launch Pumpic app to start protecting your children. Use the entire variety of monitoring functions and secure your kids’ happiness. From now on Pumpic will let you view calls and SMS, track location and follow online activity remotely.</p>
+						</li>
+					</ol>
+				</div>
+			</div>
+		</div>
+		<div class="light">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-10 col-md-10 col-lg-10 col-sm-offset-1 col-md-offset-1 col-lg-offset-1 gutter-wide">
+						<h2 class="text-center">HOW PUMPIC WORKS</h2>
+						<div class="row">
+							<div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
+								<h3 class="text-center"><img src="{$img}/parental_control/icon-easy-to-use.png" alt=""> Easy to use</h3>
+								<p class="text-center">Pumpic is a feature-rich childcare software, which will helps you take care of your children remotely. You will not have to spend a lot of time finding out how to use the app. The service is user-friendly and does not require any technical skills.</p>
+							</div>
+							<div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
+								<h3 class="text-center"><img src="{$img}/parental_control/ico-easy-to-install.png" alt=""> Easy to install</h3>
+								<p class="text-center">Follow the guidelines and start remote monitoring from your Control Panel. Get physical access to the target device and install the app. Pumpic childcare tracking app will keep your kids safe soon after the installation is completed.</p>
+							</div>
+							<div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
+								<h3 class="text-center"><img src="{$img}/parental_control/ico-easy-to-contact.png" alt=""> Easy to contact</h3>
+								<p class="text-center">Pumpic application has user-friendly interface, which make monitoring process quick and simple. Enter the Control Panel to see all the data from your kid’s device. In case of any questions, feel free to contact our Customer Support Team at any time, for any reason.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		{include file='../includes/parental_control/quick-link.tpl'}
+		{include file='../includes/parental_control/main-footer-promo.tpl'}
+		{include file='../includes/parental_control/footer.tpl'}
+	</div>
+	{include file='../includes/analytics-footer.tpl'}
+</body>
+</html>
+{/strip}

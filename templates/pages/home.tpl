@@ -64,18 +64,19 @@
 					</div>
 					<div class="col-sm-5 col-md-5 col-lg-5">
 						<div class="ipad-text">
-							<h2 class="text-left">HOW IT LOOKS?</h2>
-							<p>Pumpic is unique parental control software. Now, you can easily track your children’s location, calls, text messages and internet usage. The team of Pumpic professionals have created an interactive demo video on how to install and use the application. For any additional information, please visit our FAQ page or contact our Customer Support Team at any time.</p>
+							<h2 class="text-left">EASY TO USE CONTROL PANEL</h2>
+							<p>Try Control Panel demo to see Pumpic app in use. Buy Pumpic to protect your kids and secure their happiness right now. </p>
                                                         <ul>
                                                             <li>
                                                                 <a href="http://demo.{$domain}" 
                                                                    class="featured-link link-hl">View demo<i class="icon-angle-double-right"></i></a>
                                                             </li>
                                                             <li>
-                                                                <button class="btn btn-green _forward_pricing"
+                                                                <a class="btn btn-green"
+                                                                    href="/store.html"
                                                                     ga-label-button="main-visit-store"
                                                                     ga-type-button="buy button"
-                                                                    ga-event="click">Visit Store</button>
+                                                                    ga-event="click">Visit Store</a>
                                                             </li>
                                                         </ul>
                                                         
@@ -87,7 +88,7 @@
 		</div>
 		<div class="light">
 			<div class="container">
-				<h2 class="text-center">PUMPIC TESTIMONIALS:</h2>
+				<h2 class="text-center testimonial-title">PUMPIC TESTIMONIALS:</h2>
 				<div class="row">
 					<div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
 						<img src="{$img}/parental_control/testimonials_new_1.png" alt="" class="testimonial-photo">
@@ -99,15 +100,15 @@
 					<div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
 						<img src="{$img}/parental_control/testimonials_new_2.png" alt="" class="testimonial-photo">
 						<div class="testimonial-text">
-							<h4>Karen and Mike – parents of 12-year-old daughter</h4>
+							<h4>Karen and Mike – parents of a 12-year-old daughter</h4>
 							<p>“Our daughter was acting weird after we moved to another state, when we installed Pumpic app, we found that she was bullied by her classmate on Facebook. We gathered with teachers and parents and talked the whole thing out. Thank you!”</p>
 						</div>
 					</div>
 					<div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
 						<img src="{$img}/parental_control/testimonials_new_3.png" alt="" class="testimonial-photo">
 						<div class="testimonial-text">
-							<h4>Logan T – father of 14-year-old son</h4>
-							<p> “Pumpic has really made my life easier. Now, I can take care of my kid, even when I’m far from home. I can block 18+ websites and applications. It’s good to know that my son is safe and secured wherever I go.”</p>
+							<h4>Logan T – father of a 14-year-old son</h4>
+							<p>“Pumpic has really made my life easier. Now, I can take care of my kid, even when I’m far from home. I can block 18+ websites and applications. It’s good to know that my son is safe and secured wherever I go.”</p>
 						</div>
 					</div>
 				</div>
@@ -118,7 +119,7 @@
                 
 		<div class="dark howtouse-pumpic">
 			<div class="container">
-				<h2 class="text-center">HOW TO USE PUMPIC</h2>
+				<h2 class="text-center">HOW TO GET PUMPIC</h2>
 				<div class="howitworks-arrows">
 					<img src="{$img}/howitworks-arrows.png" class="" alt="">
 				</div>
@@ -126,15 +127,20 @@
 					<ol class="list_step">
 						<li>
 							<h3>Pick a subscription plan</h3>
-							<p>Visit our Pricing page, check out available subscription plans and choose the one, which meets your expectations and monitoring preferences. Soon after submitting the payment, you will receive an email with setup instructions.</p>
+                                                        <p>Visit our <a class="text-green underline" href="/store.html">Pricing</a> page, check out available <b>subscription plans</b> and 
+                                                            choose the one, which meets your expectations and <b>monitoring preferences</b>. 
+                                                            <br />After you submit the payment, you will receive an email with setup instructions.</p>
 						</li>
 						<li>
 							<h3>Download and install</h3>
-							<p>The process of Pumpic app installation will take you no longer than 5 minutes. Follow the guidelines pointed in the email to complete the setup. Note that physical access to your kid’s device is required.</p>
+							<p>Pumpic app installation process will take you no longer than <b>5 minutes</b>. Follow the guidelines pointed in the 
+                                                            subscription email to complete the setup. 
+                                                            <br />Note that <b>physical access</b> to your kid’s device is <b>required</b>.</p>
 						</li>
 						<li>
 							<h3>Keep your kids safe</h3>
-							<p>Launch Pumpic app to start protecting your children. Use the entire variety of monitoring functions and secure your kids’ happiness. From now on Pumpic will let you view calls and SMS, track location and follow online activity remotely.</p>
+                                                        <p>Enter your <b>Control Panel</b> to start monitoring and protecting your children. Use the entire variety of tracking functions and secure your kids’ happiness. 
+                                                            <br />From now on Pumpic will let you <b>view calls</b> and <b>SMS</b>, track <b>location</b> and follow <b>online activity</b> remotely.</p>
 						</li>
 					</ol>
 				</div>
@@ -144,19 +150,22 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-10 col-md-10 col-lg-10 col-sm-offset-1 col-md-offset-1 col-lg-offset-1 gutter-wide">
-						<h2 class="text-center">HOW PUMPIC WORKS</h2>
+						<h2 class="text-center">WHY PUMPIC</h2>
 						<div class="row">
 							<div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
 								<h3 class="text-center"><img src="{$img}/parental_control/icon-easy-to-use.png" alt=""> Easy to use</h3>
-								<p class="text-center">Pumpic is a feature-rich childcare software, which will helps you take care of your children remotely. You will not have to spend a lot of time finding out how to use the app. The service is user-friendly and does not require any technical skills.</p>
+								<p class="text-center">Pumpic is a feature-rich childcare software, which will help you take care of your children remotely. You will not have to spend a lot of time finding out how to use the app. 
+                                                                    <br />The service is user-friendly and does not require any technical skills.</p>
 							</div>
 							<div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
 								<h3 class="text-center"><img src="{$img}/parental_control/ico-easy-to-install.png" alt=""> Easy to install</h3>
-								<p class="text-center">Follow the guidelines and start remote monitoring from your Control Panel. Get physical access to the target device and install the app. Pumpic childcare tracking app will keep your kids safe soon after the installation is completed.</p>
+								<p class="text-center">Follow the guidelines and start remote monitoring from your Control Panel right after the setup. Get physical access to the target device and install the app in 5 minutes only. 
+                                                                    <br />Pumpic childcare tracking app will keep your kids safe quick and quiet.</p>
 							</div>
 							<div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
 								<h3 class="text-center"><img src="{$img}/parental_control/ico-easy-to-contact.png" alt=""> Easy to contact</h3>
-								<p class="text-center">Pumpic application has user-friendly interface, which make monitoring process quick and simple. Enter the Control Panel to see all the data from your kid’s device. In case of any questions, feel free to contact our Customer Support Team at any time, for any reason.</p>
+								<p class="text-center">Pumpic application has user-friendly interface, which makes monitoring process more than simple. Enter your Control Panel and see all the data from your kid’s device in a readable form. 
+                                                                    <br />Feel free to contact our Customer Support Team at any time, for any reason.</p>
 							</div>
 						</div>
 					</div>

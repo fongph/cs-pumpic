@@ -60,10 +60,11 @@
                                 <span>Need more information or advice on your
                                     <br /> children protection?</span>
                             </div>
-                            <button class="btn btn-green _forward_pricing"
-                                                ga-label-button="main-now"
-                                                ga-type-button="buy button"
-                                                ga-event="click">Visit Blog</button>
+                            <a href="/security/" 
+                               class="btn btn-green _forward_pricing"
+                                ga-label-button="main-visit-blog"
+                                ga-type-button="buy button"
+                                ga-event="click">Visit Blog</a>
                         </div>
                         <div id="promo-item" class="col-sm-2 col-md-2 col-lg-2">
                             <div class="text-green">
@@ -71,9 +72,9 @@
                                 <span>family safe</span>
                             </div>
                             <button class="btn btn-red _forward_pricing"
-                                                ga-label-button="main-now"
+                                                ga-label-button="main-buy-pumpic"
                                                 ga-type-button="buy button"
-                                                ga-event="click">Buy NOW</button>
+                                                ga-event="click">Buy Pumpic</button>
                         </div>
                         
                         <img src="{$img}/parental_control/mobile_small_baner.png" class="visible-mobile-lg" height="95" width="166" alt="" />

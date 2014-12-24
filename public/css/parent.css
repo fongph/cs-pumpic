@@ -45,6 +45,10 @@
     font-size: 22px;
 }
 
+.howtouse-pumpic p br {
+    margin-bottom: 5px;
+}
+
 /* --- buttons --- */
 .btn-green, .btn-red {
     font-family: "Open Sans",Helvetica,Arial,sans-serif;
@@ -528,7 +532,26 @@
 }
 
 @media (min-width: 992px) {
+    .visible-mobile-lg {
+        display: none !important;
+    }
     
+   .promo-parent-control #promo-item {
+       width: auto;
+       text-align: left;
+   }
+   
+   #promo-item .text-green span {
+        font-size: 33px;
+   }
+   
+   #promo-item .text-green {
+       font-size: 21px;
+   }
+   
+   .visible-parent-control-lg {
+        display: block !important;
+    }
 }  
 
 @media (min-width: 1200px) {
@@ -618,30 +641,50 @@
     float: left;
 }
 
+.underline {
+    text-decoration: underline;
+}
+
+.testimonial-title {
+    font-size: 26px;
+}
+
 /* -------------// fix ---------- */
 .quicklink {
     position: relative;
 }    
 @media only screen and (max-width: 480px) {
     .feature {
-        left: 50%;
-        margin-left: -25%;
+/*        left: 50%;
+        margin-left: -25%;*/
+        margin: 0 auto;
+        width: 80%;
     }
     
     .quicklink {
-        left: 50%;
+/*        left: 50%;
         margin-left: -25%;
+        width: 33.33333%;*/
+
+        margin: 0 auto;
+        width: 80%;
     }
 }
 @media (min-width: 480px) {
     .feature {
-        left: 50%;
-        margin-left: -25%;
+/*        left: 50%;
+        margin-left: -25%;*/
+
+        margin: 0 auto;
+        width: 80%;
     }
     
     .quicklink {
-        left: 50%;
-        margin-left: -25%;
+/*        left: 50%;
+        margin-left: -25%;*/
+
+        margin: 0 auto;
+        width: 80%;
     }
 }
 

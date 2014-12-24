@@ -88,7 +88,7 @@ class Order extends ManagerUser
 
         $orderProduct = $this -> _billing -> getOrderProduct();
         $orderProduct->setOrder($order)
-                ->setProduct($billingManager->getSiteProductByGroup(self::SITE_ID, self::PRODUCT_TYPE, $product))
+                ->setProduct($this -> _billing->getSiteProductByGroup(self::SITE_ID, self::PRODUCT_TYPE, $product))
                 ->loadReferenceNumber();
         if ($deviceId > 0) {
             $orderProduct->setInitialDeviceId($deviceId);

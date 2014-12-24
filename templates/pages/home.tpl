@@ -73,7 +73,7 @@
                                                             </li>
                                                             <li>
                                                                 <a class="btn btn-green"
-                                                                    href="/security/"
+                                                                    href="/store.html"
                                                                     ga-label-button="main-visit-store"
                                                                     ga-type-button="buy button"
                                                                     ga-event="click">Visit Store</a>

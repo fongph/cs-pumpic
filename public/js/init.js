@@ -1228,27 +1228,29 @@ $(document).ready(function(){
         $('.premium_fe').hide();
     }
 );   
+$("input[name='optionsRadios']").each(function(){
+    //console.log(this.getAttribute("checked"));
+    if(this.getAttribute("checked")){
+       // alert($(this).val());
+        
+       $(this).parent('.label_radio').addClass('r_on');
+       $(this).parent('.label_radio').removeClass('r_off');
+       $(this).parents('form').children('.product_price').val($(this).val());
+    }
+});
 
-    $("input[name='optionsRadios']").filter(':checked').each(function(){
-    //console.log('asd');
+    /*$("input[name='optionsRadios']").filter(':checked').each(function(){
+    
     var curr  = $(this);
     
-    //if(curr.('checked')){
-        
-       //var frm = curr.parent('form');
        
-       /*curr.parent('form').find('.label_radio').each(function(){
-              console.log($(this));
-              $(this).removeClass('r_off').removeClass('r_on'); 
-       });*/
-       
-       curr.parent('.label_radio').addClass('r_on');
+
        curr.parent('.label_radio').removeClass('r_off');
+       curr.parent('.label_radio').addClass('r_on');
+       
        curr.parents('form').children('.product_price').val(curr.val());
-       //curr.parent('form').children('.product_price').val(curr.val()); 
-       console.log(curr.parents('form').children('.product_price').val());
-    //} 
-});         
+   
+});   */      
   /* hashchange_AfterInit */
   hashchange_AfterInit();
   

@@ -135,8 +135,8 @@
                                                                     <li class= "">
                                                                         <label class="label_radio hover_label_radio r_off"><input name="optionsRadios" id="optionsRadios{$_item.id}"
                                                                         value="{$_item.id}"
-                                                                        {if $_item.period == '12'} checked {/if}
-                                                                        >
+                                                                        {if $_item.period == '12'} checked="checked" {/if}
+                                                                        />
                                                                         <span class="sp">
                                                                             <strong>
                                                                                 {$_item.period}
@@ -147,6 +147,7 @@
                                                                                 ${$_item.price}
                                                                             </strong>
                                                                         </span>
+                                                                        </label>
                                                                     </li>
                                                                     {/foreach}
                                                                 </ul>
@@ -191,8 +192,8 @@
                                                                     <li class= "">
                                                                         <label class="label_radio hover_label_radio r_off"><input name="optionsRadios" id="optionsRadios{$_item.id}"
                                                                         value="{$_item.id}"
-                                                                        {if $_item.period == '12'} checked {/if}
-                                                                        >
+                                                                        {if $_item.period == '12'} checked="checked" {/if}
+                                                                        />
                                                                         <span class="sp">
                                                                             <strong>
                                                                                 {$_item.period}
@@ -203,6 +204,7 @@
                                                                                 ${$_item.price}
                                                                             </strong>
                                                                         </span>
+                                                                        </label>
                                                                     </li>
                                                                     {/foreach}
                                                                 </ul>
@@ -233,8 +235,8 @@
                                                                     <li class= "">
                                                                         <label class="label_radio hover_label_radio r_off"><input name="optionsRadios" id="optionsRadios{$_item.id}"
                                                                         value="{$_item.id}"
-                                                                        {if $_item.period == '12'} checked {/if}
-                                                                        >
+                                                                        {if $_item.period == '12'} checked="checked" {/if}
+                                                                        />
                                                                         <span class="sp">
                                                                             <strong>
                                                                                 {$_item.period}
@@ -245,6 +247,7 @@
                                                                                 ${$_item.price}
                                                                             </strong>
                                                                         </span>
+                                                                        </label>
                                                                     </li>
                                                                     {/foreach}
                                                                 </ul>
@@ -289,8 +292,8 @@
                                                                     <li class= "">
                                                                         <label class="label_radio hover_label_radio r_off"><input name="optionsRadios" id="optionsRadios{$_item.id}"
                                                                         value="{$_item.id}"
-                                                                        {if $_item.period == '12'} checked {/if}
-                                                                        >
+                                                                        {if $_item.period == '12'} checked="checked" {/if}
+                                                                        />
                                                                         <span class="sp">
                                                                             <strong>
                                                                                 {$_item.period}
@@ -301,6 +304,7 @@
                                                                                 ${$_item.price}
                                                                             </strong>
                                                                         </span>
+                                                                        </label>
                                                                     </li>
                                                                     {/foreach}
                                                                 </ul>
@@ -308,7 +312,7 @@
                                                                 </form>
                                                                 <div class="space_line">&nbsp;</div> 
                                                             </div>
-                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </th>
                                             </tr>

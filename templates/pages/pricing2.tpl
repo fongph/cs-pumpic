@@ -344,7 +344,7 @@
     });
     {/literal}
     </script>
-    {include fle='../includes/analytics-footer.tpl'}
+    {include file='../includes/analytics-footer.tpl'}
     
 </body>
 </html>

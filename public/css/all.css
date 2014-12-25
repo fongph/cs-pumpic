@@ -1013,6 +1013,40 @@ only screen and (max-device-width: 480px) {
 .ipad-text {
   padding: 50px 0;
 }
+
+@media only screen and (max-width: 480px) {
+    .ipad-text {
+        padding: 10px 0px 50px 0px;
+    }
+}
+
+@media (min-width: 468px) { 
+    .ipad-text {
+        padding: 10px 0px 50px 0px;
+    }
+}
+
+@media (min-width: 768px) {
+    .ipad-text {
+      padding: 50px 0;
+    }
+}
+
+@media (min-width: 992px) {
+    .ipad-text {
+      padding: 50px 0;
+    }
+}
+
+@media (min-width: 1200px) {
+    .ipad-text {
+      padding: 50px 0;
+    }
+}    
+
+
+
+
 .ipad-text p {
   margin-top: 1.3em;
   margin-bottom: 0;
@@ -4055,3 +4089,77 @@ only screen and (max-device-width: 480px) {
 div[id^="attachment_"], div[id*=" attachment_"] {
     margin-bottom: 15px;
 }    
+
+.i-header-info {
+    display: inline-block;
+    background: url('../images/icons/ico-header-info.png') no-repeat;
+    margin-right: .2em;
+    text-align: center;
+    line-height: 1em;
+    margin-left: .2em;
+    
+    position: relative;
+    bottom: -7px;
+    
+    width: 22px;
+    height: 21px;
+}
+
+.item-list-yelow {
+    display: inline-block;
+    background: url('../images/icons/icon-header-list.png') no-repeat;
+    width: 10px;
+    height: 10px;
+}
+
+.visual-header-dop-info {
+    margin-top: 26px;
+    font-size: 14px;
+    font-weight: lighter;
+    font-family: "Open Sans",Helvetica,Arial,sans-serif;
+}
+
+.visual-header-dop-info li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.model-center {
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    float: none;
+}
+
+.i-help {
+    display: inline-block;
+    background: url('../images/icons/icon-helps.png') no-repeat;
+    width: 35px;
+    height: 35px;
+}
+
+.box-help {
+    display: block;
+    text-align: center;
+}
+
+.box-help span {
+    font-size: 20px;
+    font-weight: lighter;
+    font-family: "Open Sans",Helvetica,Arial,sans-serif;
+    text-transform: uppercase;
+    text-decoration: underline;
+    margin-left: 10px;
+}
+
+.box-help .i-help {
+    position: relative;
+    top: 10px;
+}
+
+.secures-title {
+    display: block;
+    font-size: 20px;
+    font-weight: lighter;
+    font-family: "Open Sans",Helvetica,Arial,sans-serif;
+}

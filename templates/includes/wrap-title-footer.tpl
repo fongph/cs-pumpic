@@ -9,6 +9,9 @@
 	<link href="{$css}/all.css" rel="stylesheet">
         <link href="{$css}/parent.css" rel="stylesheet">
         
+        <!-- landing -->
+        <link href="{$css}/landing.css" rel="stylesheet">
+        
 <link href="{$css}/p2.css" rel="stylesheet">
 
 	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->

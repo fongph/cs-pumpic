@@ -3,8 +3,8 @@
 {strip}
 {include file='../includes/wrap-title-header.tpl'}
 
-	<title>High-Grade Cell Phone Monitoring App – Pumpic</title>
-	<meta name="description" content="Pumpic is a new multifunction Parental Control and Employee Surveillance Application for your cell phone. Track locations, record environment, follow text messages and call logs remotely." />
+	<title>Childcare Mobile Monitoring App</title>
+	<meta name="description" content="Keep your children safe and secured with Pumpic. Track location. View calls and SMS. Follow online activity." />
 	
 {include file='../includes/wrap-title-footer.tpl'}
 <body>
@@ -91,21 +91,21 @@
 				<h2 class="text-center testimonial-title">PUMPIC TESTIMONIALS:</h2>
 				<div class="row">
 					<div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
-						<img src="{$img}/parental_control/testimonials_new_1.png" alt="" class="testimonial-photo">
+						<img src="{$img}/testimonials/testimonials_new_1.png" alt="" class="testimonial-photo">
 						<div class="testimonial-text">
 							<h4>Jane A.  – mother of twins</h4>
 							<p>“I didn’t know such technology existed. It made my life easier and helped me big time. I can track my kids’ calls, texts messages and social media to save them from online predators and misgiving companies.”</p>
 						</div>
 					</div>
 					<div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
-						<img src="{$img}/parental_control/testimonials_new_2.png" alt="" class="testimonial-photo">
+						<img src="{$img}/testimonials/testimonials_new_2.png" alt="" class="testimonial-photo">
 						<div class="testimonial-text">
 							<h4>Karen and Mike – parents of a 12-year-old daughter</h4>
 							<p>“Our daughter was acting weird after we moved to another state, when we installed Pumpic app, we found that she was bullied by her classmate on Facebook. We gathered with teachers and parents and talked the whole thing out. Thank you!”</p>
 						</div>
 					</div>
 					<div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
-						<img src="{$img}/parental_control/testimonials_new_3.png" alt="" class="testimonial-photo">
+						<img src="{$img}/testimonials/testimonials_new_3.png" alt="" class="testimonial-photo">
 						<div class="testimonial-text">
 							<h4>Logan T – father of a 14-year-old son</h4>
 							<p>“Pumpic has really made my life easier. Now, I can take care of my kid, even when I’m far from home. I can block 18+ websites and applications. It’s good to know that my son is safe and secured wherever I go.”</p>
@@ -153,17 +153,17 @@
 						<h2 class="text-center">WHY PUMPIC</h2>
 						<div class="row">
 							<div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
-								<h3 class="text-center"><img src="{$img}/parental_control/icon-easy-to-use.png" alt=""> Easy to use</h3>
+								<h3 class="text-center"><img src="{$img}/icons/icon-easy-to-use.png" alt=""> Easy to use</h3>
 								<p class="text-center">Pumpic is a feature-rich childcare software, which will help you take care of your children remotely. You will not have to spend a lot of time finding out how to use the app. 
                                                                     <br class="br" />The service is user-friendly and does not require any technical skills.</p>
 							</div>
 							<div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
-								<h3 class="text-center"><img src="{$img}/parental_control/ico-easy-to-install.png" alt=""> Easy to install</h3>
+								<h3 class="text-center"><img src="{$img}/icons/ico-easy-to-install.png" alt=""> Easy to install</h3>
 								<p class="text-center">Follow the guidelines and start remote monitoring from your Control Panel right after the setup. Get physical access to the target device and install the app in 5 minutes only. 
                                                                     <br class="br" />Pumpic childcare tracking app will keep your kids safe quick and quiet.</p>
 							</div>
 							<div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
-								<h3 class="text-center"><img src="{$img}/parental_control/ico-easy-to-contact.png" alt=""> Easy to contact</h3>
+								<h3 class="text-center"><img src="{$img}/icons/ico-easy-to-contact.png" alt=""> Easy to contact</h3>
 								<p class="text-center">Pumpic application has user-friendly interface, which makes monitoring process more than simple. Enter your Control Panel and see all the data from your kid’s device in a readable form. 
                                                                     <br class="br" />Feel free to contact our Customer Support Team at any time, for any reason.</p>
 							</div>

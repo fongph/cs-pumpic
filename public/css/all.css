@@ -669,6 +669,7 @@ form.form-contact-us .highlight {
 }
 
 .btn-yelow {
+    display: inline-block;
     text-align: left;
     border: none;
     background: #f5ac43;
@@ -701,8 +702,9 @@ form.form-contact-us .highlight {
     font-weight: lighter;
 }
 .button-discount:hover,
-.discount_50 button.btn-discount-50:hover {
+.discount_50 .btn-discount-50:hover {
     opacity: 0.8;
+    color: #fff;
 }
 .button-discount i,
 .box-form i,
@@ -4017,11 +4019,11 @@ only screen and (max-device-width: 480px) {
     
 }
 
-.discount_50 button.btn-discount-50 { 
+.discount_50 .btn-discount-50 { 
     width: 220px;
     padding: 8px 19px 10px 30px;
 }
-.discount_50 button.btn-discount-50 span {
+.discount_50 .btn-discount-50 span {
     display: block;
     position: relative;
     font-family: "Open Sans",Helvetica,Arial,sans-serif;
@@ -4032,7 +4034,7 @@ only screen and (max-device-width: 480px) {
     width: 148px;
 }
 
-.discount_50 button.btn-discount-50 i {
+.discount_50 .btn-discount-50 i {
     margin-top: 9px;
 }
 

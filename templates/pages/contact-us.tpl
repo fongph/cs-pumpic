@@ -15,7 +15,7 @@
 				<div class="col-lg-10 col-lg-offset-1">
 					<div class="row text-center">
 						<h2>CONTACT US</h2>
-						<p class="text-justify">We are a team of talented designers and developers, who combined forces to create unique and user-friendly surveillance solution. We introduced Pumpic Mobile Phone Monitoring Application for parents to take care of their children and business owners to control their employees remotely. The application is supported by most of devices that run iOs, Android and Blackberry. We made it for people and convenience in operation. If you have any questions or suggestions, which will make our service better, please feel free to contact us using the form below or via email.</p>
+						<p class="text-justify">We are a team of talented designers and developers, who joined forces to create unique and user-friendly childcare monitoring solution. We introduced Pumpic App for parents to take care of their children and secure their happiness. The application is supported by most of devices that run iOS and Android. We made it for people and convenience in use. If you have any questions or suggestions, which will make our service better, please feel free to contact us using the form below or via email.</p>
 						<p>
                                                     <a class="link_bordered">
                                                         <strong>Customer Support Team</strong>–<span id="emai-support-v2"></span>

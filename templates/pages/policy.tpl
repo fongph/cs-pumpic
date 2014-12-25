@@ -19,7 +19,7 @@
 								<h2 id="refund-policy">REFUND POLICY</h2>
 								<article>
 									<h3 class="text-center">PUMPIC APPLICATION</h3>
-									<p class="text-justify">Need to make sure your kids don’t mix with the wrong clique? Want to check whether your employees are loyal to their company? Pumpic can do all of this. It is a cross-platform tracking application designed to monitor cell phone and tablet activity of your children and employees. The innovative tracking solution from Pumpic will have all your doubts cleared out within a second.</p>
+									<p class="text-justify">Need to make sure that your kids don’t mix with the wrong clique? Pumpic is here to help you. It is a cross-platform tracking application designed to track cell phone and tablet activity of your children. Pumpic childcare monitoring will help you protect your loved ones remotely and secure their happiness.</p>
 									<h3 class="text-center">REFUND POLICY</h3>
 									<p class="text-justify">Every purchase of Pumpic products and their use are governed by this policy. Please read it through carefully before you make you purchase, since this Refund Policy sets forth the terms and conditions under which refunds are issued, your rights in regard to your purchases, including any essential restrictions and exclusions. By placing an order on Pumpic.com, you agree that your order shall be governed by this policy.</p>
 									<h3 class="text-center">REFUND CONDITIONS</h3>

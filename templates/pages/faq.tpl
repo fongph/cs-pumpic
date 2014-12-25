@@ -27,13 +27,13 @@
 											<li>
 												<a id="what-is-pumpic-app" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse1">What is Pumpic?</a>
 												<div id="collapse1" class="collapse">
-													<p>Pumpic is a feature-rich parental control and employee tracking application designed to monitor smartphones and tablets activity such as text messages, phone calls, GPS location, IM chats, web browsing history, contacts, calendar, multimedia files etc.</p>
+													<p>Pumpic is a feature-rich parental control application designed to monitor your kids’ smartphones and tablets activity such as text messages, phone calls, GPS location, web browsing history, contacts, calendar scheduled events, social media etc.</p>
 												</div>
 											</li>
 											<li>
 												<a id="what-is-pumpic-app" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse2">Is it legal to use Pumpic?</a>
 												<div id="collapse2" class="collapse">
-													<p>Pumpic is legal to install and use only on the device that you own personally, your underage child’s device or your employee’s company-issued device that you are properly authorized to monitor (usually that means having a written permission of the owner or user to conduct the surveillance). Pumpic does not condone the use of its software for any illegal purposes including but not limited to tracking people’s cell phones without their notice or permission.</p>
+													<p>It is legal to install and use Pumpic only on the device you own personally or that belongs to your underage children. Pumpic does not condone the use of its software for any illegal purposes including but not limited to tracking people’s cell phones without their notice or permission.</p>
 												</div>
 											</li>
 											<li>

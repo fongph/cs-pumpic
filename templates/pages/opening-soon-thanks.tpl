@@ -3,7 +3,8 @@
 
 	<title>Thank you for choosing pumpic.com</title>
 	<meta name="description" content="Thank you for choosing pumpic.com" />
-	
+	<meta name="robots" content="noindex,nofollow" /> 
+        
 {include file='../includes/wrap-title-footer.tpl'}
 <body>
 {include file='../includes/button-help.tpl'}

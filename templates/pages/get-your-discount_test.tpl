@@ -1,7 +1,7 @@
 {strip}
 {include file='../includes/wrap-title-header.tpl'}
 
-	<title>Thank you for choosing pumpic.com</title>
+	<title>Get your 50% discount on your first purchase!</title>
 	<meta name="description" content="Thank you for choosing pumpic.com" />
 	
         <meta name="robots" content="noindex,nofollow" /> 
@@ -17,10 +17,6 @@
         
 		<div class="visual">
 			<div class="container">
-                                <div class="info-box center">
-                                    <i class="i-box-info left"></i>
-                                    <h3 class="left">Launching in December 2014</h3>
-                                </div>
                             
 				<div class="visual-text text-center">
 					<h1>High-Grade Cell Phone Monitoring App</h1>
@@ -38,7 +34,7 @@
 				<img src="{$img}/visual-2.png" alt="" class="visual-img">
 			</div>
 		</div>
-		{include file='../includes/main-discount.tpl'}
+		{include file='../includes/main-discount_50.tpl'}
 		{include file='../includes/main-features.tpl'}
                 {include file='../includes/fly-box-discount.tpl'}
 

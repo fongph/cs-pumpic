@@ -14,13 +14,13 @@
                                            
                                            <form id="form-discount" action="#" method="POST" class="form-discount">
                                                <section class="info">
-                                                   Use a <span class="text-yalow">DISC7TRPR</span><br /> 
+                                                   Use a <span class="text-yalow">DISC2015{*DISC7TRPR*}</span><br /> 
                                                     code to get a 50% discount
                                                </section>
-                                               <button class="btn-yelow btn-discount-50">
+                                               <a href="/store.html" class="btn-yelow btn-discount-50">
                                                    <span class="left">Buy Now with 50%<br /> discount</span> 
                                                    <i class="left"></i>
-                                               </button>
+                                               </a>
                                            </form>
                                             
                                        </div>   

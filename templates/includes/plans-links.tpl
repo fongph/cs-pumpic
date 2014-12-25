@@ -5,7 +5,7 @@
                         ga-label-button="main-store-body"
                         ga-type-button="buy button"
                         ga-event="click">
-                View all store<i class="icon-angle-double-right"></i>
+                Store<i class="icon-angle-double-right"></i>
             </a>
         </li>
         <li>

@@ -129,7 +129,7 @@
 					<ol class="list_step">
 						<li>
 							<h3>Pick a subscription plan</h3>
-                                                        <p>Visit our <a class="text-green underline" href="/store.html">Pricing</a> page, check out available <b>subscription plans</b> and 
+                                                        <p>Visit our <a class="text-green underline" href="/store.html">Store</a>, check out available <b>subscription plans</b> and 
                                                             choose the one, which meets your expectations and <b>monitoring preferences</b>. 
                                                             <br class="br" />After you submit the payment, you will receive an email with setup instructions.</p>
 						</li>

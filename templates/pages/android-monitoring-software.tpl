@@ -1,5 +1,3 @@
-{closeAccess}
-
 {strip}
 {include file='../includes/wrap-title-header.tpl'}
 
@@ -12,7 +10,7 @@
 {include file='../includes/button-goup.tpl'}
 	<div class="wrapper landing-mobile">
 	{include file='../includes/topmenu-logo-login.tpl' topmenu_active='home'}	
-		<div class="visual">
+		<div class="visual android">
                     
 			<div class="container">
                             
@@ -29,23 +27,17 @@
                                             <ul class="compatibility">
                                                 <li><i class="icon-android"></i> (2.2 - 5.0)</li>
                                                 <li><i class="icon-apple"></i> (6.0 - 8.1.2)</li>
-                                                {*<li><i class="icon-blackberry"></i> (1.0 - 7.1)</li>*}
                                                 <li>
                                                     <i class="i-header-info"></i> <a href="/compatibility.html">platform compatibility</a>
                                                 </li>
                                             </ul>
                                             
-                                            <ul class="visual-header-dop-info">
-                                                <li>Follow Calls and SMS <i class="item-list-yelow"></i></li>
-                                                <li>Track GPS location <i class="item-list-yelow"></i></li>
-                                                <li>Monitor online activity <i class="item-list-yelow"></i></li>
-                                            </ul>
                                             
                                         </div>
                                     </div>
                                            
                                     <div class="col-lg-5">
-                                         <img src="{$img}/landing_mobile/bg-header-mobile.png" alt="" class="visual-img-pc">   
+                                         <img src="{$img}/landing_mobile/bg_header_android.png" alt="" class="visual-img-pc">   
                                     </div>            
                                                 
                                     {*<div class="col-lg-6 mobile-version">
@@ -66,7 +58,7 @@
 					<div class="col-sm-5 col-md-5 col-lg-5 col-sm-offset-1 col-md-offset-1 col-lg-offset-1">
 						<div class="text-center relative_box">
 							<img src="{$img}/arrows_content.png" class="arrows_img" height="518" width="255" alt="">
-							<img src="{$img}/ipad.jpg" alt="" class="ipad-pic">
+							<img src="{$img}/icons/ipad_android.png" alt="" class="ipad-pic">
 							<button class="btn btn-default _forward_pricing"
                                                                 ga-label-button="main-premium"
                                                                 ga-type-button="buy button"
@@ -125,7 +117,7 @@
 					<ul class="thumbs_video">
 						<li class="col-lg-6 col-md-6 col-sm-6 col-xs-12 model-center">
 							<a href="#">
-								<img src="images/video_thumb1.png" height="345" width="566" alt="">
+								<img src="{$img}/icons/icon-mobile-ios-android.png" height="345" width="566" alt="">
 							</a>
 						</li>
 					</ul>
@@ -180,21 +172,21 @@
 				<h2 class="text-center testimonial-title">TESTIMONIALS:</h2>
 				<div class="row">
 					<div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
-						<img src="{$img}/testimonials/testimonials_new_4.png" alt="" class="testimonial-photo">
+						<img src="{$img}/testimonials/testimonials_new_10.png" alt="" class="testimonial-photo">
 						<div class="testimonial-text">
 							<h4>Jessy K. – mother of 3 children</h4>
 							<p>“With Pumpic app on my Android smartphone I no longer worry about my kids. They are under my constant care and control every single minute.”</p>
 						</div>
 					</div>
 					<div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
-						<img src="{$img}/testimonials/testimonials_new_5.png" alt="" class="testimonial-photo">
+						<img src="{$img}/testimonials/testimonials_new_11.png" alt="" class="testimonial-photo">
 						<div class="testimonial-text">
 							<h4>Carl M. – father of an 11-year-old daughter</h4>
 							<p>“Pumpic is the best solution for parental control on Android phones. Now, I know what my kids are up to, I can browse their social media and scheduled events.”</p>
 						</div>
 					</div>
 					<div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
-						<img src="{$img}/testimonials/testimonials_new_6.png" alt="" class="testimonial-photo">
+						<img src="{$img}/testimonials/testimonials_new_12.png" alt="" class="testimonial-photo">
 						<div class="testimonial-text">
 							<h4>Mark D. – father of a 15-year-old son</h4>
 							<p>“Pumpic does its best with my son’s Android tab. I tend to worry a lot about my children’s internet usage. Now, I can block unwanted sites like 18+ remotely.”</p>

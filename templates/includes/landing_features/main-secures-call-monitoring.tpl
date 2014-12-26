@@ -4,7 +4,7 @@
                 <div class="row">
                         <div class="col-sm-4 col-md-4 col-lg-4">
                                 <div class="feature">
-                                        <img src="{$img}/icons/icon-monitor-text-messages.png" alt="">
+                                        <img src="{$img}/icons/icon-monitor-call-activity.png" alt="">
                                         <h3>Monitor call activity</h3>
                                         <p>Pumpic allows you to keep track of incoming and outgoing calls remotely. See who calls your child and when, block unwanted contacts from the list so they will never reach the number again.</p>
                                 </div>

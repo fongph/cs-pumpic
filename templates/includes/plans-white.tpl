@@ -11,7 +11,7 @@
 										<div class="price">
 											$11<sup>66</sup>/<sub>month</sub>
 										</div>
-										<a href="http://{$domain}/store.html" class="btn btn-default" id="plans-block-buy-basic">Buy Basic</a
+                                                                                <a href="http://{$domain}/store.html" class="btn btn-default" id="plans-block-buy-basic">Buy Basic</a>
 									</div>
 								</div>
 							</div>

@@ -70,10 +70,13 @@
                                                         <ul>
                                                             <li>
                                                                 <a href="http://demo.{$domain}" 
-                                                                   class="featured-link link-hl">View demo<i class="icon-angle-double-right"></i></a>
+                                                                   class="featured-link link-hl ga-click"
+                                                                   ga-label-button="main-demo-looks"
+                                                                   ga-type-button="demo link"
+                                                                   ga-event="click">View demo<i class="icon-angle-double-right"></i></a>
                                                             </li>
                                                             <li>
-                                                                <a class="btn btn-green"
+                                                                <a class="btn btn-green ga-click"
                                                                     href="/store.html"
                                                                     ga-label-button="main-visit-store"
                                                                     ga-type-button="buy button"
@@ -176,7 +179,25 @@
 		{include file='../includes/footer.tpl'}
 	</div>
 	{include file='../includes/analytics-footer.tpl'}
-        
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('#plans-block-buy-basic').click(function(){
+                    ga('send', 'event', 'buy button', 'click', 'main-basic');
+                });
+                
+                $('#plans-block-buy-premium').click(function(){
+                    ga('send', 'event', 'buy button', 'click', 'main-premium');
+                });
+                
+                $('#plans-block-store').click(function(){
+                    ga('send', 'event', 'store link', 'click', 'main-store-body');
+                });
+                
+                $('#plans-block-view-demo').click(function(){
+                    ga('send', 'event', 'demo link', 'click', 'main-demo-prices');
+                });
+            });
+        </script>
 </body>
 </html>
 {/strip}

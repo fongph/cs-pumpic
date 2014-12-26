@@ -8,8 +8,7 @@
                                 {include file=$disclaimer}
                             {else}
                                 <h3>DISCLAIMER</h3>
-                                <p>Pumpic is a unique parental control and employee tracking mobile phone application. It is for ethical and 
-                                    legal use only. To install the tracking app, one should assure he/she owns the device before installation.</p>
+                                <p>Pumpic is a unique parental control tracking application for mobile phones and tablets. It is for ethical and legal use only. To install the tracking app, one should assure that he or she owns the device before installation, or has obtained the owner’s admittance to track his or her device.</p>
                             {/if}    
                         </div>
                         <div class="col-sm-2 col-md-2 col-lg-2 col-sm-offset-1 col-md-offset-1 col-lg-offset-1">
@@ -47,19 +46,19 @@
                                 <h3>OUR PRODUCTS</h3>
                                 <ul class="list_grey">
                                         <li>
-                                                <span>Android software</span>
+                                                <a href="/android-monitoring-software.html">Android software</a>
                                         </li>
                                         <li>
-                                                <span>Iphone software</span>
+                                                <a href="/ios-monitoring-software.html">Iphone software</a>
                                         </li>
-                                        <li>
+                                        {*<li>
                                                 <span>Blackberry software</span>
+                                        </li>*}
+                                        <li>
+                                                <a href="/sms-monitoring-software.html">SMS monitoring</a>
                                         </li>
                                         <li>
-                                                <span>SMS monitoring</span>
-                                        </li>
-                                        <li>
-                                                <span>Call history monitoring</span>
+                                                <a href="/call-monitoring-software.html">Call history monitoring</a>
                                         </li>
                                         <li>
                                                 <span>Cell phone monitoring</span>

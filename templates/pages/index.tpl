@@ -1,8 +1,8 @@
 {strip}
 {include file='../includes/wrap-title-header.tpl'}
 
-	<title>High-Grade Cell Phone Monitoring App – Pumpic</title>
-	<meta name="description" content="Pumpic is a new multifunction Parental Control and Employee Surveillance Application for your cell phone. Track locations, record environment, follow text messages and call logs remotely." />
+	<title>Childcare Mobile Monitoring App</title>
+	<meta name="description" content="Keep your children safe and secured with Pumpic. Track location. View calls and SMS. Follow online activity." />
 	
 {include file='../includes/wrap-title-footer.tpl'}
 <body>
@@ -62,7 +62,7 @@
 					</div>
 					<div class="col-sm-5 col-md-5 col-lg-5">
 						<div class="ipad-text">
-							<h2 class="text-left">EASY TO USE CONTROL PANEL</h2>
+							<h2 class="text-left">EASY-TO-USE CONTROL PANEL</h2>
 							<p>Try Control Panel demo to see Pumpic app in use. Buy Pumpic to protect your kids and secure their happiness right now. </p>
                                                         <ul>
                                                             <li>
@@ -125,14 +125,12 @@
 					<ol class="list_step">
 						<li>
 							<h3>Pick a subscription plan</h3>
-                                                        <p>Visit our <a class="text-green underline" href="/store.html">Store</a>, check out available <b>subscription plans</b> and 
-                                                            choose the one, which meets your expectations and <b>monitoring preferences</b>. 
+                                                        <p>Visit our <a class="text-green underline" href="/store.html">Store</a>, check out available <b>subscription plans</b> and choose the one, which meets your expectations and <b>monitoring preferences</b>. 
                                                             <br class="br" />After you submit the payment, you will receive an email with setup instructions.</p>
 						</li>
 						<li>
 							<h3>Download and install</h3>
-							<p>Pumpic app installation process will take you no longer than <b>5 minutes</b>. Follow the guidelines pointed in the 
-                                                            subscription email to complete the setup. 
+							<p>Pumpic app installation process will take you no longer than <b>5 minutes</b>. Follow the guidelines pointed in the subscription email to complete the setup. 
                                                             <br class="br" />Note that <b>physical access</b> to your kid’s device is <b>required</b>.</p>
 						</li>
 						<li>

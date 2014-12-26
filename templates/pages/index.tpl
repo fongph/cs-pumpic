@@ -18,8 +18,11 @@
                                 
                                 <div class="col-lg-10 col-lg-offset-1">
                                     
+                                    <div class="col-md-6 col-lg-6 w900">
+                                        <img src="{$img}/parental_control/bg_famaly_mobile.png" alt="" class="visual-img-pc">
+                                    </div>
                                     
-                                    <div class="col-lg-6 box-right-description">
+                                    <div class="col-md-6 col-lg-6 box-right-description">
                                         <div class="visual-text text-center">
                                             <h1 class="title">CHILDCARE MOBILE <br />MONITORING APP</h1>
                                             <p>Keep your children safe and secured with Pumpic. <br />
@@ -35,7 +38,7 @@
                                         </div>
                                     </div>
                                                 
-                                    <div class="col-lg-6 mobile-version">
+                                    <div class="col-md-6 col-lg-6 w770">
                                         <img src="{$img}/parental_control/bg_famaly_mobile.png" alt="" class="visual-img-pc">
                                     </div>            
                                                 

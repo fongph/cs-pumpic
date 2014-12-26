@@ -60,7 +60,7 @@
                             </div>
                         </div>
                         <div id="promo-item" class="promo-button col-sm-2 col-md-2 col-lg-2">
-                            <button class="banner-v3-button btn btn-red" id="promo-footer-buy">Buy Pumpic</button>
+                            <a href="http://{$domain}/store.html" class="banner-v3-button btn btn-red" id="promo-footer-buy">Buy Pumpic</a>
                         </div>
                         <img src="{$img}/parental_control/mobile_small_baner.png" class="visible-mobile-lg" height="95" width="166" alt="" />
                     </div>

@@ -12,7 +12,7 @@
                                                                 <div class="price">
                                                                         $11<sup>66</sup>/<sub>month</sub> 
                                                                 </div>
-                                                                <button class="btn btn-default _forward_pricing" id="plans-block-buy-basic">Buy Basic</button>
+                                                                <button class="btn btn-default" id="plans-block-buy-basic">Buy Basic</button>
                                                         </div>
                                                 </div>
                                         </div>
@@ -25,7 +25,7 @@
                                                                 <div class="price">
                                                                         $33<sup>33</sup>/<sub>month</sub> 
                                                                 </div>
-                                                                <button class="btn btn-default _forward_pricing" id="plans-block-buy-premium">Buy Premium</button>
+                                                                <button class="btn btn-default" id="plans-block-buy-premium">Buy Premium</button>
                                                         </div>
                                                 </div>
                                         </div>

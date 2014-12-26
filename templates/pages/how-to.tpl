@@ -91,6 +91,17 @@
 	{include file='../includes/footer.tpl'}
 	</div>
 	{include file='../includes/analytics-footer.tpl'}
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('#plans-block-store').click(function(){
+                    ga('send', 'event', 'store link', 'click', 'how-store-body');
+                });
+                
+                $('#plans-block-view-demo').click(function(){
+                    ga('send', 'event', 'demo link', 'click', 'how-demo-prices');
+                });
+            });
+        </script>
 </body>
 </html>
 {/strip}	

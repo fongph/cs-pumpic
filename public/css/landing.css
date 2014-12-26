@@ -83,6 +83,7 @@
 
 .landing-features .visual-img-pc {
     margin-top: 0px;
+    width: 100%;
 }
 
 @media only screen and (max-width: 480px) {
@@ -96,6 +97,7 @@
     
     .landing-features .visual-img-pc {
         margin-top: 20px;
+        width: 55%;
     }
 }
 @media (min-width: 468px) {
@@ -109,6 +111,7 @@
     
     .landing-features .visual-img-pc {
         margin-top: 20px;
+        width: 55%;
     }
 }    
 
@@ -118,6 +121,7 @@
     }
     .landing-features .visual-img-pc {
         margin-top: 0px;
+        width: 50%;
     }
 }    
 
@@ -132,6 +136,7 @@
     
     .landing-features .visual-img-pc {
         margin-top: 0px;
+        width: 50%;
     }
 }
 
@@ -146,6 +151,7 @@
     
     .landing-features .visual-img-pc {
         margin-top: 0px;
+        width: 100%;
     }
 }
 

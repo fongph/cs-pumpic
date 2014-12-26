@@ -133,10 +133,12 @@
                                         
                                         
                                 <div class="row">
-                                    <a href="#" class="text-green text-center box-help"> 
-                                        <i class="i-help"></i>
-                                        <span>FREQUENTLY ASKED QUESTIONS</span>
-                                    </a>
+                                    <div class="text-center box-help">
+                                        <a href="/faq.html" class="text-green"> 
+                                            <i class="i-help"></i>
+                                            <span>FREQUENTLY ASKED QUESTIONS</span>
+                                        </a>
+                                    </div>    
                                 </div>        
                                         
 			</div>

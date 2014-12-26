@@ -1066,30 +1066,39 @@ $(document).ready(function(){
    /* Pricing */
   if($('form[name="price_basic"]').length) {
       var _basic = $('form[name="price_basic"]');
+      var _basic_b = $('form[name="price_basic_bottom"]');
       var _input_basic = _basic.find('#product_price_basic');
+      
+      var _input_basic_b = _basic_b.find('#product_price_basic');
+      
           _input_basic.val(''); 
- //init
- 
+          _input_basic_b.val('');
 
-          
-           _basic.find('.label_radio').on('click', function() { 
-          //var _val = false;
-          //if($(this).is('.r_on')) {
-            var  _val = $(this).children('input').val();
-          //}
-          var curr = $(this);
+          _basic.find('.label_radio').on('click', function() { 
+                  var  _val = $(this).children('input').val();
+                  var curr = $(this);
 
-          _basic.find('.label_radio').each(function(){
-              $(this).removeClass('r_on'); 
-              $(this).addClass('r_off');
-
-          });
-          curr.removeClass('r_off'); 
-          curr.addClass('r_on');
-          
-         _input_basic.val(_val); 
+                  _basic.find('.label_radio').each(function(){
+                   $(this).removeClass('r_on'); 
+                   $(this).addClass('r_off');
+                  });
+                  curr.removeClass('r_off'); 
+                  curr.addClass('r_on');
+                  _input_basic.val(_val); 
            });
-         
+           
+          _basic_b.find('.label_radio').on('click', function() { 
+                  var  _val = $(this).children('input').val();
+                  var curr = $(this);
+
+                  _basic_b.find('.label_radio').each(function(){
+                   $(this).removeClass('r_on'); 
+                   $(this).addClass('r_off');
+                  });
+                  curr.removeClass('r_off'); 
+                  curr.addClass('r_on');
+                  _input_basic_b.val(_val); 
+           });
        // select  
        _basic.find('select').change(function () {
                 _input_basic.val('');
@@ -1135,39 +1144,36 @@ $(document).ready(function(){
   if($('form[name="price_premium"]').length) {
       var _premium = $('form[name="price_premium"]');
       var _input_premium = _premium.find('#product_price_premium');
-          //_input_premium.val('');
-/* _premium.find('.label_radio').each(function(){
-    //console.log('asd');
-    var curr  = $(this);
-    if($(this).children('input').attr('checked')){
-       curr.removeClass('r_off'); 
-       curr.addClass('r_on');
-        _input_premium.val($(this).val());
-        
-       //console.log($(this).children('input'));
-   } 
-});         */    
+      var _premium_b = $('form[name="price_premium_bottom"]');
+      var _input_premium_b = _premium_b.find('#product_price_premium');
+      
+        _input_premium.val('');
+        _input_premium_b.val('');
              
       // radio
       _premium.find('.label_radio').on('click', function() {
-          _input_premium.val('');
-          //var _val = false;
-          //if($(this).is('.r_on')) {
-            var  _val = $(this).children('input').val();
-          //}
+          var  _val = $(this).children('input').val();
           var curr = $(this);
-
           _premium.find('.label_radio').each(function(){
               $(this).removeClass('r_on'); 
               $(this).addClass('r_off');
-
           });
           curr.removeClass('r_off'); 
           curr.addClass('r_on');
-          
          _input_premium.val(_val);
         }); 
         
+        _premium_b.find('.label_radio').on('click', function() {
+          var  _val = $(this).children('input').val();
+          var curr = $(this);
+          _premium_b.find('.label_radio').each(function(){
+              $(this).removeClass('r_on'); 
+              $(this).addClass('r_off');
+          });
+          curr.removeClass('r_off'); 
+          curr.addClass('r_on');
+         _input_premium_b.val(_val);
+        });
         
        // select 
       _premium.find('select').change(function () {
@@ -1182,7 +1188,7 @@ $(document).ready(function(){
                 _input_premium.val( _selected );
             }
         })
-        .change();  
+        .change();
              
       if(_premium.find('.label_radio input[type="radio"]:visible')) {
           // scan all checked

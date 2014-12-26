@@ -156,14 +156,14 @@ form > table.pricing-second:after {
 .tb_pricing  .refund_10{
     position: absolute;
     width:100%;
-    top:435px;
+    top:427px;
     height: 36px;
     background-color:#4d4f5b; 
 }
 .tb_pricing .support_os{
     position: absolute;
     width:100%;
-    top:471px;
+    top:463px;
     height: 40px;
     background-color:#f0f0f0; 
 }
@@ -347,9 +347,12 @@ form > table.pricing-second:after {
     text-align: left;
     text-transform: none;
     color:#4e4d5b;
-    line-height: 32px;
+    line-height: 22px;
     height:32px;
     overflow: hidden;
+}
+.basic_wr .basic_fe ul li div{
+    display: inline;
 }
 .basic_wr .basic_fe ul li span{
     font-size: 12px;
@@ -366,7 +369,7 @@ form > table.pricing-second:after {
     text-transform: none;
     color:#2cbdb3;
     cursor: pointer;
-    line-height: 32px;
+    line-height: 22px;
     height:32px;
     overflow: hidden;
 }
@@ -394,9 +397,12 @@ form > table.pricing-second:after {
     text-align: left;
     text-transform: none;
     color:#4d4f5b;
-    line-height: 32px;
+    line-height: 22px;
     height:32px;
     overflow: hidden;
+}
+.premium_wr .premium_fe ul li div{
+    display: inline;
 }
 .premium_wr .premium_fe ul li span{
     font-size: 12px;
@@ -414,7 +420,7 @@ form > table.pricing-second:after {
     text-transform: none;
     color:#2cbdb3;
     cursor: pointer;
-    line-height: 32px;
+    line-height: 22px;
     height:32px;
     
 }
@@ -481,6 +487,132 @@ form > table.pricing-second:after {
     color: #16a89e;
     font-weight: 600;
 }
+/******** tooltip ******/
+.tb_pricing .tooltip {
+  position: absolute;
+  z-index: 1070;
+  display: block;
+  visibility: visible;
+  font-size: 12px;
+  line-height: 1.4;
+  opacity: 1;
+  filter: alpha(opacity=1);
+}
+.tb_pricing .tooltip.in {
+  opacity: 1;
+  filter: alpha(opacity=1);
+}
+.tb_pricing .tooltip.top {
+  margin-top: 0px;
+  padding: 5px 0;
+}
+.tb_pricing .tooltip.right {
+  margin-left: 3px;
+  padding: 0 5px;
+}
+.tb_pricing .tooltip.bottom {
+  margin-top: 3px;
+  padding: 5px 0;
+}
+.tb_pricing .tooltip.left {
+  margin-left: -3px;
+  padding: 0 5px;
+}
+.tb_pricing .tooltip-inner {
+  max-width: 200px;
+  padding: 3px 8px;
+  color: #868686;
+  font-family: "Open Sans",Helvetica,Arial,sans-serif;
+  font-size:13px;
+  text-align: center;
+  text-decoration: none;
+  background-color: #fdfbf3;
+  border-radius: 4px;
+  border:1px solid #cecece;
+  text-transform: none !important;
+}
+.tb_pricing .tooltip-arrow, .tb_pricing .tooltip-arrow:after {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+}
+
+.tb_pricing .tooltip-arrow {
+
+  border-width: 11px;
+
+}
+.tb_pricing .tooltip-arrow:after {
+  border-width: 10px;
+  content: "";
+
+}
+.tb_pricing .tooltip.top .tooltip-arrow {
+  left: 10%;
+  margin-left: -11px;
+  border-bottom-width: -1px;
+  border-top-color: #cecece;
+  border-top-color: rgba(0, 0, 0, 0.25);
+  bottom: 0px;
+
+}
+
+.tb_pricing .tooltip.top .tooltip-arrow:after{
+  content: " ";
+  bottom: 1px;
+  margin-left: -10px;
+  border-bottom-width: 0;
+  border-top-color: #fdfbf3;
+}
+
+.tb_pricing .tooltip.top-left .tooltip-arrow {
+  bottom: 0;
+  left: 5px;
+  border-width: 5px 5px 0;
+  border-top-color: #f8f8f8;
+}
+.tb_pricing .tooltip.top-right .tooltip-arrow {
+  bottom: 0;
+  right: 5px;
+  border-width: 5px 5px 0;
+  border-top-color: #f8f8f8;
+}
+.tb_pricing .tooltip.right .tooltip-arrow {
+  top: 50%;
+  left: 0;
+  margin-top: -5px;
+  border-width: 5px 5px 5px 0;
+  border-right-color: #f8f8f8;
+}
+.tb_pricing .tooltip.left .tooltip-arrow {
+  top: 50%;
+  right: 0;
+  margin-top: -5px;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #f8f8f8;
+}
+.tb_pricing .tooltip.bottom .tooltip-arrow {
+  top: 0;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 0 5px 5px;
+  border-bottom-color: #f8f8f8;
+}
+.tb_pricing .tooltip.bottom-left .tooltip-arrow {
+  top: 0;
+  left: 5px;
+  border-width: 0 5px 5px;
+  border-bottom-color: #f8f8f8;
+}
+.tb_pricing .tooltip.bottom-right .tooltip-arrow {
+  top: 0;
+  right: 5px;
+  border-width: 0 5px 5px;
+  border-bottom-color: #f8f8f8;
+}
+
 @media only screen and (max-width: 1185px) {
 .tb_pricing  .refund_10{
     position: absolute;
@@ -535,6 +667,22 @@ form > table.pricing-second:after {
             
         }
 }
+@media only screen and (max-width: 991px) {
+     .tb_pricing  .refund_10{
+        position: absolute;
+        width:100%;
+        top:467px;
+        height: 36px;
+        background-color:#4d4f5b; 
+    }
+    .tb_pricing .support_os{
+        position: absolute;
+        width:100%;
+        top:503px;
+        height: 40px;
+        background-color:#f0f0f0; 
+    }
+}
 @media only screen and (max-width: 710px) {
     .tb_pricing  .refund_10{
         position: absolute;
@@ -559,6 +707,17 @@ form > table.pricing-second:after {
             margin-top:110px;
             width:100%;
             
+        }
+}
+@media only screen and (max-width: 400px){
+        .wr_price_big span {
+            display: block;
+            clear: both;
+            font-size: 13px;
+            text-align: right;
+            vertical-align: top;
+            line-height: 15px;
+           
         }
 }
 @media only screen and (max-width: 700px) {
@@ -587,15 +746,7 @@ form > table.pricing-second:after {
         position: absolute;
 
     }
-    .wr_price_big span {
-        display: block;
-        clear: both;
-        font-size: 13px;
-        text-align: right;
-        vertical-align: top;
-        line-height: 15px;
-       
-    }
+
     .tb_pricing  .refund_10{
         display: none;
     }

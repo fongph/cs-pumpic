@@ -1,4 +1,4 @@
-		<div class="dark">
+		<div class="dark bg-footer">
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-4 col-md-4 col-lg-4 col-sm-offset-1 col-md-offset-1 col-lg-offset-1">
@@ -41,7 +41,24 @@
 					<div class="col-sm-3 col-md-3 col-lg-3">
 						<h3>OUR PRODUCTS</h3>
 						<ul class="list_grey">
-							
+                                                        <li>
+                                                                <a href="/android-monitoring-software.html">Android software</a>
+                                                        </li>
+                                                        <li>
+                                                                <a href="/ios-monitoring-software.html">Iphone software</a>
+                                                        </li>
+                                                        <li>
+                                                                <a href="/sms-monitoring-software.html">SMS monitoring</a>
+                                                        </li>
+                                                        <li>
+                                                                <a href="/call-monitoring-software.html">Call history monitoring</a>
+                                                        </li>
+
+                                                        <li>
+                                                                <a href="/smartphone-monitoring-software.html">Smartphone monitoring</a>
+                                                        </li>
+                                                    
+                                                    <?php /*
                                                         <li>
 								<span>Android software</span>
 							</li>
@@ -67,7 +84,7 @@
 								<span>Our features</span>
 							</li>
                                                     
-                                                        <?php /*
+                                                        
                                                         <li>
 								<a href="#">Android Spy Software</a>
 							</li>

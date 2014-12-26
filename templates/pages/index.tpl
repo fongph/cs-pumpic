@@ -78,7 +78,7 @@
                                                             <li>
                                                                 <a class="btn btn-green ga-click"
                                                                     href="/store.html"
-                                                                    ga-label-button="main-now"
+                                                                    ga-label-button="main-visit-store"
                                                                     ga-type-button="buy button"
                                                                     ga-event="click">Visit Store</a>
                                                             </li>

@@ -1,37 +1,37 @@
-<div class="dark">
+<div class="{if $blockBg}{$blockBg}{else}dark{/if}">
         <div class="container">
-                <h2 class="text-center">HOW PUMPIC SECURES YOUR KID</h2>
+                <h2 class="text-center">FEATURES</h2>
                 <div class="row">
                         <div class="col-sm-4 col-md-4 col-lg-4">
                                 <div class="feature">
-                                        <img src="{$img}/parental_control/icon-mobile-secure.png" alt="">
-                                        <h3>Control cell phone usage</h3>
+                                        <img src="{$img}/icons/icon-mobile-secure.png" alt="">
+                                        <h3>Basic features</h3>
                                         <ul class="feature_list">
-                                                <li>Monitor in and outbound calls</li>
-                                                <li>View media files storage</li>
-                                                <li>Follow text message history</li>
+                                                <li>Monitor calls and contacts</li>
+                                                <li>Follow GPS location</li>
+                                                <li>View browsing history</li>
                                         </ul>
                                 </div>
                         </div>
                         <div class="col-sm-4 col-md-4 col-lg-4">
                                 <div class="feature">
-                                        <img src="{$img}/parental_control/icon-online-activity.png" alt="">
-                                        <h3><a href="http://{$domain}/">Follow online activity</a></h3>
+                                        <img src="{$img}/icons/icon-text-monitoring.png" alt="">
+                                        <h3><a href="http://{$domain}/">Text monitoring</a></h3>
                                         <ul class="feature_list">
-                                                <li>Monitor social media</li>
-                                                <li>Block distracting websites</li>
-                                                <li>Follow browsing history</li>
+                                                <li>Keep track of Short Message Service</li>
+                                                <li>Monitor Viber, Skype and WhatsApp</li>
+                                                <li>Follow Facebook communication</li>
                                         </ul>
                                 </div>
                         </div>
                         <div class="col-sm-4 col-md-4 col-lg-4">
                                 <div class="feature">
-                                        <img src="{$img}/parental_control/icon-track-kids.png" alt="">
-                                        <h3><a href="http://{$domain}/">Track kids remotely</a></h3>
+                                        <img src="{$img}/icons/icon-media-files.png" alt="">
+                                        <h3><a href="http://{$domain}/">View media files</a></h3>
                                         <ul class="feature_list">
-                                                <li>Monitor current GPS location</li>
-                                                <li>View recent route history</li>
-                                                <li>Protect kids on the road</li>
+                                                <li>See all photos taken</li>
+                                                <li>View each video shot</li>
+                                                <li>Control application setup</li>
                                         </ul>
                                 </div>
                         </div>

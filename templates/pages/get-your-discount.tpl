@@ -46,8 +46,8 @@
 			</div>
 		</div>
 		{include file='../includes/main-discount_50_test.tpl'}
-                {include file='../includes/parental_control/main-secures.tpl'}
-		{include file='../includes/parental_control/main-features.tpl'}
+                {include file='../includes/main-secures.tpl'}
+		{include file='../includes/main-features.tpl'}
 
 		<div class="dark">
 			<div class="container">
@@ -172,9 +172,9 @@
 				</div>
 			</div>
 		</div>
-		{include file='../includes/parental_control/quick-link.tpl'}
-		{include file='../includes/parental_control/main-footer-promo.tpl'}
-		{include file='../includes/parental_control/footer.tpl'}
+		{include file='../includes/quick-link.tpl'}
+		{include file='../includes/main-footer-promo.tpl'}
+		{include file='../includes/footer.tpl'}
 	</div>
 	{include file='../includes/analytics-footer.tpl'}
 </body>

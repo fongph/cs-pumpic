@@ -100,6 +100,14 @@
                 $('#plans-block-view-demo').click(function(){
                     ga('send', 'event', 'demo link', 'click', 'how-demo-prices');
                 });
+                
+                $('#plans-block-buy-basic').click(function(){
+                    ga('send', 'event', 'buy button', 'click', 'how-basic');
+                });
+                
+                $('#plans-block-buy-premium').click(function(){
+                    ga('send', 'event', 'buy button', 'click', 'how-premium');
+                });
             });
         </script>
 </body>

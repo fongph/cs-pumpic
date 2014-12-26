@@ -25,27 +25,27 @@
 						<div class="col-sm-12 col-md-4">
 							<div class="thumbnail">
 								<span class="img_thumb"><img src="images/thumb_1.png" height="216" width="360" alt=""></span>
-								<div class="caption">
-									<h3>Choose subscription plan</h3>
-									<p>Based on your tracking needs and abilities to pay, pick the most optimal Pumpic subscription plan. After the payment procedure is successfully completed, you will receive an email from Pumpic.com with installation requirements and instructions. Your Pumpic account will be created automatically and will not take you long to wait. The payment process is absolutely safe and secured.</p>
+								<div class="caption how-to-step">
+									<h3>Subscription plan</h3>
+									<p>Visit <a href="/store.html">Store</a>, select the most suitable for you subscription plan and submit the payment.</p>
 								</div>
 							</div>
 						</div>
 						<div class="col-sm-12 col-md-4">
 							<div class="thumbnail">
 								<span class="img_thumb"><img src="images/thumb_2_new.png" height="206" width="172" alt=""></span>
-								<div class="caption">
+								<div class="caption how-to-step">
 									<h3>Install easily</h3>
-									<p>Closely follow the instructions in your account. You need to get ahold of the target cell phone to download and install the app as well. The process is fast and easy. You will need no more than 5 minutes to complete the entire installation. It is very easy-to-understand and does not require any additional skills or knowledge. Meanwhile all major principles are stated in the guidelines you will receive after selecting subscription plan.</p>
+									<p>Take your kid’s device and install the app following the instructions from the received email.</p>
 								</div>
 							</div>
 						</div>
 						<div class="col-sm-12 col-md-4">
 							<div class="thumbnail">
 								<span class="img_thumb"><img src="images/thumb_3_new.png" height="216" width="360" alt=""></span>
-								<div class="caption">
-									<h3>Discover the truth</h3>
-									<p>No matter what is hidden from you, it will be revealed soon after installing the application. Get access to phone call logs, texts, IM chats, emails, location data, and even more. Stay updated on scheduled events, contacts and browsing history. However, do not forget that Pumpic is for legal useage only. Thus, do not try to use it to track any third parties or those you did not give notice about monitoring.</p>
+								<div class="caption how-to-step">
+									<h3>Protect your kids</h3>
+									<p>Log in to your Control Panel in order to start monitoring the data sent from your kid’s device.</p>
 								</div>
 							</div>
 						</div>

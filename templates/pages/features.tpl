@@ -14,8 +14,8 @@
 			<div class="container">
 						<div class="row">
 							<div class="col-lg-12">
-								<h2>PUMPIC – YOUR ULTIMATE CELL PHONE TRACKING EXPERIENCE</h2>
-								<p class="text-center">Pumpic is a perfect cell phone tracking solution for parents of underage children and employers worldwide. The application is safe, fast and 100% reliable. Pumpic gives you an easy and quick access to the target cell phone user’s call logs, SMS, location, IM chats and more.</p>
+								<h2>PUMPIC IS YOUR ULTIMATE PARENTAL CONTROL MONITORING APP</h2>
+								<p class="text-center">Pumpic is mobile phone tracking software for parents of underage children worldwide. The application is safe, fast and reliable. Pumpic gives you easy and quick access to your kid’s device including call logs, SMS, location data, IM chats, social media activity and even more. Pumpic protects your children and secures their happiness.</p>
 							</div>
 						</div>
 						<div class="row">
@@ -41,7 +41,7 @@
 										<div class="col-lg-7 col-md-7">
                                                                                         <h3>about</h3> <!-- class="lg_dheader" --> 
                                                                                         <div class="dth h47">
-												<h4 class="text-success">Read a short description of each feature and choose the plan that meets your needs entirely.</h4>
+												<h4 class="text-success">Read short descriptions of each feature and choose the plan that meets your needs entirely.</h4>
 											</div>
                                                                                     
 											{*<h3 class="lg_dheader">about</h3>*}

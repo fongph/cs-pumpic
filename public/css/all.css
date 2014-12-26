@@ -1724,6 +1724,12 @@ only screen and (max-device-width: 480px) {
   text-align: justify;
 }
 
+.thumbnail .caption.how-to-step {
+    height: auto;
+}
+.thumbnail .caption.how-to-step p {
+    margin-bottom: 0;
+}
 .img_thumb {
   display: block;
   background: #fff;

@@ -60,7 +60,12 @@
                                         <li>
                                                 <a href="/call-monitoring-software.html">Call history monitoring</a>
                                         </li>
+                                        
                                         <li>
+                                                <a href="/smartphone-monitoring-software.html">Smartphone monitoring</a>
+                                        </li>
+                                        
+                                        {*<li>
                                                 <span>Cell phone monitoring</span>
                                         </li>
                                         <li>
@@ -68,7 +73,7 @@
                                         </li>
                                         <li>
                                                 <span>Our features</span>
-                                        </li>
+                                        </li>*}
 
                                         {*
                                         <li>

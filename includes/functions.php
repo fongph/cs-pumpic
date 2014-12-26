@@ -451,10 +451,10 @@ function smarty_function_features_plans( $_plans = array()  ) {
                 'basic'     => ['status' => true, 'price' => '3 month - $11.66/month', 'url' => '/store.html'],
                 'premium'   => ['status' => true, 'price' => '3 month -$33.33/month', 'url' => '/store.html'],
             ),
-            'intro' => 'Get detailed information on all incoming and outgoing calls: a caller’s name and phone number, time of the call and its duration.',
+            'intro' => 'See who calls your child. Get detailed information on all incoming and outgoing calls: a caller’s name and phone number, time of the call and its duration.',
             'description' => array(
-                'title' => 'Monitor incoming and outgoing calls data',
-                'body' => 'Use Pumpic and follow the entire call history of the device you are tracking. View a caller’s data including the name and phone number, the time when a call was received and duration of the conversation.'
+                'title' => 'Monitor Incoming and Outgoing Calls Data',
+                'body' => 'Use Pumpic app to follow the entire call history of your child’s device. Protect your kids from mistrusted people. View a caller’s data including the name and phone number, the time when a call was received and duration of the conversation.  '
             ), 
         ],
         
@@ -470,10 +470,10 @@ function smarty_function_features_plans( $_plans = array()  ) {
                 'basic'     => ['status' => true, 'price' => '3 month - $11.66/month', 'url' => '/store.html'],
                 'premium'   => ['status' => true, 'price' => '3 month -$33.33/month', 'url' => '/store.html'],
             ),
-            'intro' => 'Read all text messages. Get precise information on both a sender and a recipient of SMS as well as the exact message time.',
+            'intro' => 'Read your children’s text messages remotely. Get precise information on both a sender and a recipient of SMS as well as the exact message time.',
             'description' => array(
-                'title' => 'Keep track of Short Message Service',
-                'body' => 'Monitor each and every text message along with attached multimedia files delivered to the tracked device. No matter whether they were deleted or not, Pumpic will make them visible to you. Keep track of your children and employees SMS activity.'
+                'title' => 'Keep Track Of Short Message Service',
+                'body' => 'Monitor each and every text message along with attached multimedia files delivered to your kid’s device. No matter whether they were deleted or not, Pumpic will make them visible to you. Keep track of your children’s SMS activity to see whom they are chatting with.'
             ),
         ],
         
@@ -489,10 +489,10 @@ function smarty_function_features_plans( $_plans = array()  ) {
                 'basic'     => ['status' => true, 'price' => '3 month - $11.66/month', 'url' => '/store.html'],
                 'premium'   => ['status' => true, 'price' => '3 month -$33.33/month', 'url' => '/store.html'],
             ),
-            'intro' => 'Block unwanted SMS senders so they will never again be able to reach the target phone user.<br />&nbsp;',
+            'intro' => 'Block unwanted SMS senders so they will never again be able to reach your kid.<br />&nbsp;',
             'description' => array(
-                'title' => 'Prevent the phone from unwelcome SMS',
-                'body' => 'Use Pumpic and block the cell phone you are monitoring against incoming text messages you wish your children or employees would never receive. Unwanted senders will never get on the phone you are keeping track of.'
+                'title' => 'Prevent Your Kid from Receiving Unwelcome SMS',
+                'body' => 'Use Pumpic to block incoming text messages you wish your child would never receive. Unwanted senders will never get on your kid’s device.'
             ),
         ],
         
@@ -508,10 +508,10 @@ function smarty_function_features_plans( $_plans = array()  ) {
                 'basic'     => ['status' => true, 'price' => '3 month - $11.66/month', 'url' => '/store.html'],
                 'premium'   => ['status' => true, 'price' => '3 month -$33.33/month', 'url' => '/store.html'],
             ),
-            'intro' => 'Identify current whereabouts of the tracked device on the map. Log into your Control Panel to access detailed route history.',
+            'intro' => 'Identify real time GPS location of your child. Log into your Control Panel to access detailed route history.',
             'description' => array(
-                'title' => 'Track the location anywhere in the world',
-                'body' => 'Pumpic allows you to tell the exact location of your children or employees you are keeping track of. By using GPS the application identifies the current position as well as a precise route of recent movements.'
+                'title' => 'Track the Location of Your Child Worldwide',
+                'body' => 'Pumpic allows you to tell the exact location of your children. Find your children by using GPS. The application identifies the current position together with the precise route of recent movements.'
             ),
         ],
         
@@ -527,10 +527,10 @@ function smarty_function_features_plans( $_plans = array()  ) {
                 'basic'     => ['status' => true, 'price' => '3 month - $11.66/month', 'url' => '/store.html'],
                 'premium'   => ['status' => true, 'price' => '3 month -$33.33/month', 'url' => '/store.html'],
             ),
-            'intro' => 'View all contacts within seconds. Access the address book remotely: names, phone numbers, emails etc.',
+            'intro' => 'Prevent unwanted company for your child. View all contacts within seconds. Access the address book remotely: names, phone numbers, emails etc.',
             'description' => array(
-                'title' => 'Monitor communications listing and contacts easily',
-                'body' => 'Find out all contact information ever put on the list. Keep track of communications list and prevent your children or employees from unwanted connections and companionship. Receive notifications about recent contacts additions.'
+                'title' => 'Monitor Communication Listing and Contacts Easily',
+                'body' => 'Find out all contact information ever put on the list. Keep track of communication lists to prevent your children from unwanted connections and companionship. Receive notifications about recent contact additions.'
             ),
         ],
         
@@ -546,10 +546,10 @@ function smarty_function_features_plans( $_plans = array()  ) {
                 'basic'     => ['status' => true, 'price' => '3 month - $11.66/month', 'url' => '/store.html'],
                 'premium'   => ['status' => true, 'price' => '3 month -$33.33/month', 'url' => '/store.html'],
             ),
-            'intro' => 'Keep track of all events put on the schedule. See what the tracked person plans to do and when. Follow tasks list.',
+            'intro' => 'Keep track of all events scheduled. See what your child plans to do and when. Follow the task list.',
             'description' => array(
-                'title' => 'Monitor date, month and year plans in the tracked calendar',
-                'body' => 'Follow each and every scripted event as well as scheduled intentions. Avert possible danger before it has happened. Keep up with recent and future plans of your underage children or employees.'
+                'title' => 'Monitor Date, Month and Year Plans in Your Child’s Calendar',
+                'body' => 'Follow each and every scripted event as well as scheduled intentions. Avert possible danger before it has happened. Keep up with recent and future plans of your underage children.'
             ),
         ],
         
@@ -565,10 +565,10 @@ function smarty_function_features_plans( $_plans = array()  ) {
                 'basic'     => ['status' => true, 'price' => '3 month - $11.66/month', 'url' => '/store.html'],
                 'premium'   => ['status' => true, 'price' => '3 month -$33.33/month', 'url' => '/store.html'],
             ),
-            'intro' => 'Go through browsing history of the tracked device. Check which websites were visited and what search engine queries were made.',
+            'intro' => 'Browse your kid’s internet history. Check which websites were visited and what search engine queries were made.',
             'description' => array(
-                'title' => 'Monitor online activity by tracking browsing history',
-                'body' => 'Pumpic enables you to follow each link and every website your kid or employee visits. Check search results and most popular requests. Keep the user of the target device away from visiting specific web resources.'
+                'title' => 'Monitor Online Activity of Your Children by Browsing Internet History',
+                'body' => 'Pumpic enables you to follow each link and every website your kid visits. Check search results and most popular requests. Keep your children away from visiting 18+ web resources.'
             ),
         ],
         
@@ -584,10 +584,10 @@ function smarty_function_features_plans( $_plans = array()  ) {
                 'basic'     => ['status' => true, 'price' => '3 month - $11.66/month', 'url' => '/store.html'],
                 'premium'   => ['status' => true, 'price' => '3 month -$33.33/month', 'url' => '/store.html'],
             ),
-            'intro' => 'Log in to your Control Panel to see which websites were bookmarked. Check at what time the user of the tracked gadget accesses favorite websites.',
+            'intro' => 'Log in to your Control Panel to see which websites were bookmarked. Check the time your child accesses the websites.',
             'description' => array(
-                'title' => 'Look through favorite websites of the tracked user ',
-                'body' => 'Use Pumpic app to find out which among visited websites the user of the monitored gadget bookmarked. Enter you Control Panel to check all bookmarks and prevent your kids or employees from visiting undesirable webpages.'
+                'title' => 'Track Websites Your Child Prefers',
+                'body' => 'Use Pumpic app to find out which among visited websites your child bookmarked. Enter you Control Panel to check all bookmarks and prevent your kid from visiting undesirable 18+ web pages.'
             ),
         ],
         
@@ -603,10 +603,10 @@ function smarty_function_features_plans( $_plans = array()  ) {
                 'basic'     => ['status' => true, 'price' => '3 month - $11.66/month', 'url' => '/store.html'],
                 'premium'   => ['status' => true, 'price' => '3 month -$33.33/month', 'url' => '/store.html'],
             ),
-            'intro' => 'Every taken picture will be available to you. See what photos the tracked gadget user downloads from the Internet.',
+            'intro' => 'Every picture taken will be visible to you. See what photos he or she downloads from the Internet.',
             'description' => array(
-                'title' => 'Monitor each and every photo taken',
-                'body' => 'By using Pumpic software, you can view every single photo shot and each picture downloaded from the Internet. Soon after your kid or employee takes a pic, it will be sent to your personal account for your consideration.'
+                'title' => 'Monitor Each and Every Photo Your Child Takes',
+                'body' => 'By using Pumpic software, you can view every single photo taken and downloaded from the Internet. Soon after your kid takes a pic, it will be sent to your Control Panel for your consideration.'
             ),
         ],
         
@@ -622,10 +622,10 @@ function smarty_function_features_plans( $_plans = array()  ) {
                 'basic'     => ['status' => true, 'price' => '3 month - $11.66/month', 'url' => '/store.html'],
                 'premium'   => ['status' => true, 'price' => '3 month -$33.33/month', 'url' => '/store.html'],
             ),
-            'intro' => 'Look through all sent and received emails. Access all available contact info on a sender and the recipient.',
+            'intro' => 'Look through all sent and received emails. Access all available contact info on both a sender and a recipient.',
             'description' => array(
-                'title' => 'Get access to inbox messages and sent mail',
-                'body' => 'Track every single email the user of the tracked gadget sends or receives. Check email correspondence history and prevent you children from ambiguous communication and your employees from wasting their time at work.'
+                'title' => 'Get Access to Your Kid’s Inbox and Sent Mail',
+                'body' => 'Track every single email your kid sends or receives. Check email correspondence history and prevent you children from ambiguous communications and online predators.'
             ),
         ],
         
@@ -641,10 +641,10 @@ function smarty_function_features_plans( $_plans = array()  ) {
                 'basic'     => ['status' => true, 'price' => '3 month - $11.66/month', 'url' => '/store.html'],
                 'premium'   => ['status' => true, 'price' => '3 month -$33.33/month', 'url' => '/store.html'],
             ),
-            'intro' => 'Monitor each cell phone application that your children use and play, or your employees are distracted by.',
+            'intro' => 'Monitor each application that your children download, use and play.',
             'description' => array(
-                'title' => 'View all applications set up on the target cell phone',
-                'body' => 'By using Pumpic, you can easily track each installation of new applications on the target mobile phone. Prevent your children from ambiguous software usage and your employees distracting from work.'
+                'title' => 'View All Applications Set Up on Your Child’s Phone',
+                'body' => 'Easily track each installation of new applications on your child’s device. Prevent your children from ambiguous software usage with Pumpic.'
             ),
         ],
         
@@ -660,10 +660,10 @@ function smarty_function_features_plans( $_plans = array()  ) {
                 'basic'     => ['status' => true, 'price' => '3 month - $11.66/month', 'url' => '/store.html'],
                 'premium'   => ['status' => true, 'price' => '3 month -$33.33/month', 'url' => '/store.html'],
             ),
-            'intro' => 'Block any websites and time-wasting applications from running on the target cell phone. Get detailed info on each app installed.',
+            'intro' => 'Block websites containing inappropriate content and time-wasting applications from running on your kid’s device. Get detailed info on each app installed.',
             'description' => array(
-                'title' => 'Block distracting websites and applications on the target device',
-                'body' => 'By using Pumpic you can view and control all websites visited and applications installed on the cell phone your children or employees use. Prevent them from wasting time playing games or using other distracting software.'
+                'title' => 'Block Distracting Websites and Applications',
+                'body' => 'By using Pumpic, you can view and control all websites visited and applications installed on the device your child uses. Prevent them from wasting time playing games, visiting criminal or 18+ websites.'
             ),
         ],
         
@@ -679,10 +679,10 @@ function smarty_function_features_plans( $_plans = array()  ) {
                 'basic'     => ['status' => false, 'price' => '3 month - $11.66/month', 'url' => '/store.html'],
                 'premium'   => ['status' => true, 'price' => '3 month -$33.33/month', 'url' => '/store.html'],
             ),
-            'intro' => 'Keep track of conversations via the most popular communications software including video chats and voice calls.',
+            'intro' => 'Keep track of conversations via Skype, WhatsApp and Viber, including video chats and voice calls.',
             'description' => array(
-                'title' => 'Monitor Viber, WhatsApp and Skype chats on the target phone',
-                'body' => 'Pumpic allows you to monitor the target cell phone user’s activity in the most widely used communications applications like WhatsApp, Viber and Skype. Prevent your employees or children from undesired conversations.'
+                'title' => 'Monitor Viber, Whatsapp and Skype Chats',
+                'body' => 'Pumpic allows you to monitor your child’s device activity in the most widely used communication applications like WhatsApp, Viber and Skype. Prevent your children from conversations with misgiving people.'
             ),
         ],
         
@@ -699,10 +699,10 @@ function smarty_function_features_plans( $_plans = array()  ) {
                 'basic'     => ['status' => false, 'price' => '3 month - $11.66/month', 'url' => '/store.html'],
                 'premium'   => ['status' => true, 'price' => '3 month -$33.33/month', 'url' => '/store.html'],
             ),
-            'intro' => 'Keep track of each new video the user of the cell phone you are monitoring films. Look through multimedia files.',
+            'intro' => 'Keep track of each new video your child views, receives and sends. Look through multimedia files.',
             'description' => array(
-                'title' => 'Monitor videos filmed by the target device',
-                'body' => 'Use Pumpic and monitor all multimedia files downloaded from the Internet or shot by the camera. Track videos that your employees or children film. Prevent your kids from watching restricted videos.'
+                'title' => 'Monitor Videos Shot By Your Kid',
+                'body' => 'Use Pumpic and monitor all multimedia files downloaded from the Internet or taken by the camera. Prevent your kids from watching restricted videos.'
             ),
         ],
         
@@ -718,10 +718,10 @@ function smarty_function_features_plans( $_plans = array()  ) {
                 'basic'     => ['status' => false, 'price' => '3 month - $11.66/month', 'url' => '/store.html'],
                 'premium'   => ['status' => true, 'price' => '3 month -$33.33/month', 'url' => '/store.html'],
             ),
-            'intro' => 'Monitor each and every word sent and received via Facebook. Control your employees’ chats, protect your kids.',
+            'intro' => 'Monitor each and every word sent and received via Facebook. Control your kids’ chats, protect their communication.',
             'description' => array(
-                'title' => 'Keep track of communications and messages on Facebook',
-                'body' => 'Pumpic enables you to monitor Facebook messages easily and quickly. Do not let your employees waste their time at work chatting online or protect your children from online predators and uncontrolled conversations.'
+                'title' => 'Keep Track Of Communications and Messages on Facebook',
+                'body' => 'Pumpic enables you to monitor Facebook messages easily and quickly. Protect your children from online predators, cyberbullying and aggressive conversations.'
             ),
         ],
         
@@ -738,10 +738,10 @@ function smarty_function_features_plans( $_plans = array()  ) {
                 'basic'     => ['status' => false, 'price' => '3 month - $11.66/month', 'url' => '/store.html'],
                 'premium'   => ['status' => true, 'price' => '3 month -$33.33/month', 'url' => '/store.html'],
             ),
-            'intro' => 'Look through all the information ever stored on the target phone. Keep track of the target device since the day it has been switched on.',
+            'intro' => 'Look through all the information ever stored on your child’s phone. Keep track of the target device since the day it has been switched on.',
             'description' => array(
-                'title' => 'Track the entire data history from the very beginning',
-                'body' => 'By using Pumpic Historical Data feature, you can view all the data ever kept on file. This function allows you to keep track of information from the very first day of the target cell power on regardless your subscription plan submission date.'
+                'title' => 'Track the Entire Data History from the Very Beginning',
+                'body' => 'By using Pumpic Historical Data feature, you can view all the data ever kept on file. This function allows you to keep track of information from the very first day your child started using the device.'
             ),
         ],
         
@@ -757,10 +757,10 @@ function smarty_function_features_plans( $_plans = array()  ) {
                 'basic'     => ['status' => false, 'price' => '3 month - $11.66/month', 'url' => '/store.html'],
                 'premium'   => ['status' => true, 'price' => '3 month -$33.33/month', 'url' => '/store.html'],
             ),
-            'intro' => 'Wipe out or lock the target cell phone remotely by using SMS commands even when the Internet is shot down.',
+            'intro' => 'Wipe out or lock your child’s device remotely by using SMS commands even when the Internet is off.',
             'description' => array(
-                'title' => 'Control the target phone remotely by using SMS commands',
-                'body' => 'Pumpic allows you to lock and wipe the target gadget remotely. Even if there is no network connection, you can easily use SMS commands to control your cell phone functioning: change the password or simply lock it by sending a text message.'
+                'title' => 'Control Your Kid’s Phone Remotely by Using SMS Commands',
+                'body' => 'Pumpic allows you to lock and wipe the phone remotely. Even if there is no network connection, you can easily use SMS commands to control your kid’s device functioning: change the password or simply lock it by sending a text message.'
             ),
         ],
         
@@ -776,10 +776,10 @@ function smarty_function_features_plans( $_plans = array()  ) {
                 'basic'     => ['status' => false, 'price' => '3 month - $11.66/month', 'url' => '/store.html'],
                 'premium'   => ['status' => true, 'price' => '3 month -$33.33/month', 'url' => '/store.html'],
             ),
-            'intro' => 'Monitor all key strokes on the target cell phone. Prevent your children from viewing inappropriate content, secure confidential business data.',
+            'intro' => 'Monitor all key strokes on the target device. Prevent your children from viewing inappropriate content.',
             'description' => array(
-                'title' => 'Keep track of each button pressed with keylogger',
-                'body' => 'By Using Pumpic software, you can follow each button your kid or employees press. Keep track of password changes, using the target device for non-work-related purposes, track key words and phrases input associated with commercial secret data.'
+                'title' => 'Keep Track Of Each Button Pressed With Keylogger',
+                'body' => 'By Using Pumpic software, you can follow each button your kid presses. Keep track of password changes, track keywords and phrases input, associated with misgiving subjects.'
             ),
         ],
         

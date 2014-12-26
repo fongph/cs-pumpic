@@ -173,6 +173,7 @@
 		{include file='../includes/footer.tpl'}
 	</div>
 	{include file='../includes/analytics-footer.tpl'}
+        
 </body>
 </html>
 {/strip}

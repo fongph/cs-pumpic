@@ -20,7 +20,7 @@
 					</div>
 				</div>
 				<div class="row">
-					<h2>HOW PUMPIC MOBILE TRACKING APP WORKS</h2>
+					<h2>How Pumpic Parental Control App Works</h2>
 					<ul class="thumbs">
 						<div class="col-sm-12 col-md-4">
 							<div class="thumbnail">

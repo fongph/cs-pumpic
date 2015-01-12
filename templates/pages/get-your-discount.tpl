@@ -13,37 +13,40 @@
 	<div class="wrapper parent-control">
 	{include file='../includes/topmenu-logo-login.tpl' topmenu_active='home'}	
 		<div class="visual">
-                    
-			<div class="container bg_famaly">
-                            
-                            <div class="row">
-                                
-                                <div class="col-lg-10 col-lg-offset-1">
-                                    
-                                    
-                                    <div class="col-lg-6 box-right-description">
-                                        <div class="visual-text text-center">
-                                            <h1 class="title">CHILDCARE MOBILE <br />MONITORING APP</h1>
-                                            <p>Keep your children safe and secured with Pumpic. <br />
-                                                Track location. View calls and SMS. Follow online activity.</p>
-                                            <ul class="compatibility">
-                                                <li><i class="icon-android"></i> (2.2 - 5.0)</li>
-                                                <li><i class="icon-apple"></i> (6.0 - 8.1.2)</li>
-                                                {*<li><i class="icon-blackberry"></i> (1.0 - 7.1)</li>*}
-                                                <li>
-                                                    <i class="icon-info-circled"></i> <a href="/compatibility.html">platform compatibility</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                                
-                                    <div class="col-lg-6 mobile-version">
-                                        <img src="{$img}/parental_control/bg_famaly_mobile.png" alt="" class="visual-img-pc">
-                                    </div>            
-                                                
-                                </div>
-                            </div> <!-- .row -->
-			</div>
+
+            <div class="container bg_famaly">
+
+                <div class="row">
+
+                    <div class="col-lg-10 col-lg-offset-1">
+
+                        <div class="col-md-6 col-lg-6 w900">
+                            <img src="{$img}/parental_control/bg_famaly_mobile.png" alt="" class="visual-img-pc">
+                        </div>
+
+                        <div class="col-md-6 col-lg-6 box-right-description">
+                            <div class="visual-text text-center">
+                                <h1 class="title">CHILDCARE MOBILE <br />MONITORING APP</h1>
+                                <p>Keep your children safe and secured with Pumpic. <br />
+                                    Track location. View calls and SMS. Follow online activity.</p>
+                                <ul class="compatibility">
+                                    <li><i class="icon-android"></i> (2.2 - 5.0)</li>
+                                    <li><i class="icon-apple"></i> (6.0 - 8.1.2)</li>
+                                    {*<li><i class="icon-blackberry"></i> (1.0 - 7.1)</li>*}
+                                    <li>
+                                        <i class="icon-info-circled"></i> <a href="/compatibility.html">platform compatibility</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-6 w770">
+                            <img src="{$img}/parental_control/bg_famaly_mobile.png" alt="" class="visual-img-pc">
+                        </div>
+
+                    </div>
+                </div> <!-- .row -->
+            </div>
 		</div>
 		{include file='../includes/main-discount_50_test.tpl'}
                 {include file='../includes/main-secures.tpl'}

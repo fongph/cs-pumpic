@@ -1,49 +1,3 @@
-{*<!-- banner 1 -->
-<div class="promo">
-<div class="container">
-<div class="row">
-<div class="vertical_m">
-<div>
-<img src="{$img}/buy_now_img.png" class="visible-lg" height="132" width="467" alt="">
-</div>
-<div class="promo-text">
-SWITCH YOUR SPYING APP ON 
-<br>
-<span>DISCOVER THE TRUTH</span>
-</div>
-<div>
-<button class="btn btn-default _forward_pricing">Buy NOW</button>
-</div>
-</div>
-</div>
-</div>
-</div>
-<!-- end -->  *}                               
-{*<!-- banner2 -->                                 
-<div class="promo">
-<div class="container">
-<div class="row">
-<div class="vertical_m">
-<div>
-<img src="{$img}/image_banners_2.png" class="visible-lg" height="132" width="367" alt="">
-</div>
-<div class="promo-text">
-WHATEVER IS HIDDEN
-<br>
-<span>APPEARS BY PUMPIC</span>
-</div>
-<div>
-<button class="btn btn-default _forward_pricing"
-ga-label-button="compatibility-now-{$model}"
-ga-type-button="buy button"
-ga-event="click">Buy NOW</button>
-</div>
-</div>
-</div>
-</div>
-</div>    
-<!-- end --> *}     
-
 <!-- banner3 -->
 <div class="promo promo-parent-control">
     <div class="container">
@@ -60,7 +14,7 @@ ga-event="click">Buy NOW</button>
                     </div>
                 </div>
                 <div id="promo-item" class="promo-button col-sm-2 col-md-2 col-lg-2">
-                    <button class="banner-v3-button btn btn-red">Buy Pumpic</button>
+                    <a href="/store.html" class="banner-v3-button btn btn-red">Buy Pumpic</a>
                 </div>
                 <img src="{$img}/parental_control/mobile_small_baner.png" class="visible-mobile-lg" height="95" width="166" alt="" />
             </div>
@@ -70,7 +24,7 @@ ga-event="click">Buy NOW</button>
 <script type="text/javascript">
     $(document).ready(function(){
         $('#promo-item button').click(function(){
-            ga('send', 'event', 'buy button', 'click', 'compatibility-now-{$model}');
+            ga('send', 'event', 'buy button', 'click', 'compatibility-now-{$compatibilityDeviceUri}');
         });
     });
 </script>

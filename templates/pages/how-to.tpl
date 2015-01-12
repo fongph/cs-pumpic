@@ -108,6 +108,10 @@
                 $('#plans-block-buy-premium').click(function(){
                     ga('send', 'event', 'buy button', 'click', 'how-premium');
                 });
+                
+                $('#header-menu-store-link').click(function(){
+                    ga('send', 'event', 'store link', 'click', 'how-store-header');
+                });
             });
         </script>
 </body>

@@ -80,7 +80,6 @@ $smarty->assign("css",$config['path_css']);
 $smarty->assign("js",$config['path_js']);
 $smarty ->assign('api_device', $config['api_device']);
 $smarty ->assign('site_id', $config['site_id']);
-$smarty ->assign('compatibilityDeviceUri', $_post['getModel']);
 
 // init output params
 $smarty->display($b_dir.'/templates/pages/compatibility/index.tpl');

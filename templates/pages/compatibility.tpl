@@ -28,6 +28,7 @@
                                                      </form>    
                                                 </div>
                                         </div>
+                                    
                                         <div class="row">
                                                 <div class="col-sm-4 col-md-4 col-lg-offset-2">
                                                         <div class="thumb">

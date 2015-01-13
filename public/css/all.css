@@ -1259,6 +1259,11 @@ only screen and (max-device-width: 480px) {
   font-size: 33px;
   padding: 2px 0;
 }
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+    .panel-bestvalue .panel-heading{
+        padding-right: 50px;
+    }
+}
 
 .panel-body {
   padding: 11px;

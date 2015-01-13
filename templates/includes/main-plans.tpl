@@ -1,9 +1,9 @@
 <div class="plans">
         <div class="container gutter-narrow">
                 <div class="row">
-                        <div class="col-sm-6 col-md-6 col-lg-6 col-sm-offset-2 col-md-offset-2 col-lg-offset-2">
+                        <div class="col-sm-7 col-md-7 col-lg-7 col-sm-offset-2 col-md-offset-2 col-lg-offset-2">
                                 <div class="row">
-                                        <div class="col-sm-5 col-md-5 col-lg-5">
+                                        <div class="col-sm-4 col-md-4 col-lg-4">
                                                 <div class="panel panel_inverse">
                                                         <div class="panel-heading">
                                                                 BASIC

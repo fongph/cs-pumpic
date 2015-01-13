@@ -276,3 +276,9 @@
 .landing-features .visual-text .compatibility {
     margin-top: 20px;
 }
+.landing-mobile .ios ul.visual-header-dop-info {
+    padding-left: 0;
+}
+.landing-mobile .ios .visual-text {
+    padding-right: 0;
+}

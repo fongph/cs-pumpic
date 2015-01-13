@@ -196,6 +196,10 @@
                 $('#plans-block-view-demo').click(function(){
                     ga('send', 'event', 'demo link', 'click', 'main-demo-prices');
                 });
+                
+                $('#header-menu-store-link').click(function(){
+                    ga('send', 'event', 'store link', 'click', 'main-store-header');
+                });
             });
         </script>
 </body>

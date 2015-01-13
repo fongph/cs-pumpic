@@ -94,6 +94,13 @@ Any purchase of Pumpic software at a discount price is non-refundable. No refund
 		{include file='../includes/footer.tpl'}
 	</div>
 	{include file='../includes/analytics-footer.tpl'}
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('#header-menu-store-link').click(function(){
+                    ga('send', 'event', 'store link', 'click', 'policy-store-header');
+                });
+            });
+        </script>
 </body>
 </html>
 {/strip}

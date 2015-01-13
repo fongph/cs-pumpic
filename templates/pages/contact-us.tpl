@@ -108,6 +108,10 @@
                 $('#promo-footer-buy').click(function(){
                     ga('send', 'event', 'buy button', 'click', 'contacts-now');
                 });
+                
+                $('#header-menu-store-link').click(function(){
+                    ga('send', 'event', 'store link', 'click', 'contacts-store-header');
+                });
             });
         </script>
 </body>

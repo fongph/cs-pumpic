@@ -28,6 +28,7 @@
                                                      </form>    
                                                 </div>
                                         </div>
+                                    
                                         <div class="row">
                                                 <div class="col-sm-4 col-md-4 col-lg-offset-2">
                                                         <div class="thumb">
@@ -120,6 +121,13 @@
 	{include file='../includes/footer.tpl'}
 	</div>
 	{include file='../includes/analytics-footer.tpl'}
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('#header-menu-store-link').click(function(){
+                    ga('send', 'event', 'store link', 'click', 'compatibility-store-header');
+                });
+            });
+        </script>
 </body>
 </html>
 {/strip}	

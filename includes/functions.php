@@ -48,8 +48,8 @@ function dispatch($urlParams, $config){
 			$fenom->display($path['tpl']);*/
 				
 		}catch(Exception $e){
-			echo $e->getTraceAsString();			
-								
+                        echo $e->getMessage() . '<br />';
+			echo $e->getTraceAsString();								
 		}
 			
 	}
@@ -427,6 +427,7 @@ function smarty_function_compatibilityDevice($params, $template) {
         //$_settings['error'] = ($_curl->error) ? $_curl->error: 'This page is temporarily unavailable!';
     }
         
+    $template->assign('compatibilityDeviceUri', $_GET['model']);
     
     // init output params!
     $template->assign($params['out'], $_settings);

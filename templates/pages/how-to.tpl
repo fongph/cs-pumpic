@@ -20,7 +20,7 @@
 					</div>
 				</div>
 				<div class="row">
-					<h2>HOW PUMPIC MOBILE TRACKING APP WORKS</h2>
+					<h2>How Pumpic Parental Control App Works</h2>
 					<ul class="thumbs">
 						<div class="col-sm-12 col-md-4">
 							<div class="thumbnail">
@@ -91,6 +91,29 @@
 	{include file='../includes/footer.tpl'}
 	</div>
 	{include file='../includes/analytics-footer.tpl'}
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('#plans-block-store').click(function(){
+                    ga('send', 'event', 'store link', 'click', 'how-store-body');
+                });
+                
+                $('#plans-block-view-demo').click(function(){
+                    ga('send', 'event', 'demo link', 'click', 'how-demo-prices');
+                });
+                
+                $('#plans-block-buy-basic').click(function(){
+                    ga('send', 'event', 'buy button', 'click', 'how-basic');
+                });
+                
+                $('#plans-block-buy-premium').click(function(){
+                    ga('send', 'event', 'buy button', 'click', 'how-premium');
+                });
+                
+                $('#header-menu-store-link').click(function(){
+                    ga('send', 'event', 'store link', 'click', 'how-store-header');
+                });
+            });
+        </script>
 </body>
 </html>
 {/strip}	

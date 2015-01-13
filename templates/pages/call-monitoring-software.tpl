@@ -1,5 +1,3 @@
-{closeAccess}
-
 {strip}
 {include file='../includes/wrap-title-header.tpl'}
 
@@ -12,7 +10,7 @@
 {include file='../includes/button-goup.tpl'}
 	<div class="wrapper landing-features">
 	{include file='../includes/topmenu-logo-login.tpl' topmenu_active='home'}	
-		<div class="visual">
+		<div class="visual call-monitoring">
                     
 			<div class="container">
                             
@@ -21,7 +19,7 @@
                                 <div class="col-lg-10 col-lg-offset-1 banner-header">
                                     
                                     
-                                    <div class="col-lg-6 col-md-6 col-sm-6">
+                                    <div class="col-lg-6 col-md-6">
                                         <div class="visual-text text-right">
                                             <h1 class="title">CALLS MONITORING <br />PARENTAL CONTROL APP</h1>
                                             <p>Pumpic protects your kids from misgiving callers.<br />
@@ -37,8 +35,8 @@
                                         </div>
                                     </div>
                                                 
-                                    <div class="col-lg-6">
-                                        <img src="{$img}/landing_features/bg-header-features.png" alt="" class="visual-img-pc">
+                                    <div class="col-lg-6 col-md-6">
+                                        <img src="{$img}/landing_features/bg_features_call.png" alt="" class="visual-img-pc">
                                     </div>            
                                                 
                                 </div>
@@ -57,7 +55,7 @@
 					<div class="col-sm-5 col-md-5 col-lg-5 col-sm-offset-1 col-md-offset-1 col-lg-offset-1">
 						<div class="text-center relative_box">
 							<img src="{$img}/arrows_content.png" class="arrows_img" height="518" width="255" alt="">
-							<img src="{$img}/ipad.jpg" alt="" class="ipad-pic">
+							<img src="{$img}/parental_control/ipad.png" alt="" class="ipad-pic">
 							<button class="btn btn-default _forward_pricing"
                                                                 ga-label-button="main-premium"
                                                                 ga-type-button="buy button"
@@ -111,21 +109,21 @@
 				<h2 class="text-center testimonial-title">TESTIMONIALS:</h2>
 				<div class="row">
 					<div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
-						<img src="{$img}/testimonials/testimonials_new_7.png" alt="" class="testimonial-photo">
+						<img src="{$img}/testimonials/testimonials_new_13.png" alt="" class="testimonial-photo">
 						<div class="testimonial-text">
 							<h4>Raul L. – father of a 13-year-old daughter</h4>
 							<p>“My daughter was stalked by her ex-boyfriend; she didn’t want me to worry so she kept it secret. Soon after I installed Pumpic, I could see his calls. I went over to his parents and we managed to have a conversation.”</p>
 						</div>
 					</div>
 					<div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
-						<img src="{$img}/testimonials/testimonials_new_8.png" alt="" class="testimonial-photo">
+						<img src="{$img}/testimonials/testimonials_new_14.png" alt="" class="testimonial-photo">
 						<div class="testimonial-text">
 							<h4>Linda K. – mother of 2 kids</h4>
 							<p>“I think it is logical to care about my children. Pumpic is a nice way to keep track of the people, who call my kids. I can say it’s my safety precaution, I am satisfied with this app and can actually recommend it to other parents.”</p>
 						</div>
 					</div>
 					<div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
-						<img src="{$img}/testimonials/testimonials_new_9.png" alt="" class="testimonial-photo">
+						<img src="{$img}/testimonials/testimonials_new_15.png" alt="" class="testimonial-photo">
 						<div class="testimonial-text">
 							<h4>James F. – father of a 15-year-old daughter</h4>
 							<p>“I track my daughter’s calls to keep her away from misgiving company. I have a full time job, thus I cannot be around all the time. Pumpic does what it promises, it is affordable, easy to use and the customer support is nice too.”</p>

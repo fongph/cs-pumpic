@@ -1,15 +1,15 @@
 
 .landing-mobile .visual-text {
-    padding-top: 12px;
     padding-right: 10px;
 }
 
-.landing-mobile .banner-header {
+.landing-mobile .ios .banner-header {
     padding-top: 81px;
 }
 
 .landing-mobile .visual-img-pc {
     margin-top: 0px;
+    bottom: 0px;
 }
 
 @media only screen and (max-width: 480px) {
@@ -17,9 +17,11 @@
         text-align: center;
     }
     
-    .landing-mobile .banner-header {
+    .landing-mobile .ios .banner-header,
+    .landing-mobile .android .banner-header {
         padding: 0px;
     }
+    
     
     .landing-mobile .visual-img-pc {
         margin-top: 20px;
@@ -30,11 +32,26 @@
         text-align: center;
     }
     
-    .landing-mobile .banner-header {
+    .landing-mobile .ios .banner-header,
+    .landing-mobile .android .banner-header {
         padding: 0px;
     }
     
     .landing-mobile .visual-img-pc {
+        margin-top: 20px;
+    }
+}    
+
+@media (min-width: 768px) {
+    .landing-mobile .ios .banner-header {
+        padding: 0px;
+    }
+    
+    .landing-mobile .android .banner-header {
+        padding: 0px;
+    } 
+    
+    .landing-mobile .android .visual-img-pc {
         margin-top: 20px;
     }
 }    
@@ -44,12 +61,22 @@
         text-align: right;
     }
     
-    .landing-mobile .banner-header {
+    .landing-mobile .ios .banner-header {
         padding-top: 81px;
     }
     
-    .landing-mobile .visual-img-pc {
+    .landing-mobile .android .banner-header {
+        padding: 25px 0px 20px;
+    }    
+    
+    .landing-mobile .ios .visual-img-pc {
         margin-top: 0px;
+        bottom: 0px;
+    }
+    
+    .landing-mobile .android .visual-img-pc {
+        margin-top: 0px;
+        width: 40%;
     }
 }
 
@@ -58,12 +85,21 @@
         text-align: right;
     }
     
-    .landing-mobile .banner-header {
+    .landing-mobile .ios .banner-header {
         padding-top: 81px;
     }
     
-    .landing-mobile .visual-img-pc {
+    .landing-mobile .android .banner-header {
+        padding: 50px 0px 40px;
+    }
+    
+    .landing-mobile .ios .visual-img-pc {
         margin-top: 0px;
+    }
+    
+    .landing-mobile .android .visual-img-pc {
+        margin-top: 20px;
+        width: 100%;
     }
 }
 
@@ -77,8 +113,20 @@
 
 
 /* ----------- // landing-features ----- */
-.landing-features .banner-header {
+.landing-features .sms .banner-header {
     padding: 97px 0px 67px;
+}
+
+.landing-features .smartphone .banner-header {
+    padding-top: 80px;
+}    
+
+.landing-features .call-monitoring .banner-header {
+    padding: 50px 0px;
+}
+
+.landing-features .smartphone .banner-header {
+/*    padding: 97px 0px 67px;*/
 }
 
 .landing-features .visual-img-pc {
@@ -86,18 +134,26 @@
     width: 100%;
 }
 
+.landing-features .smartphone .visual-img-pc {
+    position: relative;
+    bottom: -10px;
+}
+
 @media only screen and (max-width: 480px) {
     .landing-features .visual-text {
         text-align: center;
     }
     
-    .landing-features .banner-header {
+    .landing-features .sms .banner-header,
+    .landing-features .call-monitoring .banner-header,
+    .landing-features .smartphone .banner-header {
         padding: 10px 0px 10px;
     }
     
-    .landing-features .visual-img-pc {
+    .landing-features .sms .visual-img-pc,
+    .landing-features .call-monitoring .visual-img-pc {
         margin-top: 20px;
-        width: 55%;
+        max-width: 55%;
     }
 }
 @media (min-width: 468px) {
@@ -105,24 +161,47 @@
         text-align: center;
     }
     
-    .landing-features .banner-header {
+    
+    .landing-features .sms .banner-header,
+    .landing-features .call-monitoring .banner-header,
+    .landing-features .smartphone .banner-header {
         padding: 10px 0px 10px;
     }
     
-    .landing-features .visual-img-pc {
+    .landing-features .sms .visual-img-pc,
+    .landing-features .call-monitoring .visual-img-pc {
+        max-width: 55%;
         margin-top: 20px;
-        width: 55%;
     }
+    
 }    
 
 @media (min-width: 768px) {
-    .landing-features .banner-header {
+    .landing-features .call-monitoring .visual-text {
+        padding: 20px 0px;
+    } 
+    
+    
+    .landing-features .sms .banner-header {
         padding: 50px 0px 50px;
     }
-    .landing-features .visual-img-pc {
-        margin-top: 0px;
-        width: 50%;
+    
+    .landing-features .smartphone .banner-header {
+        padding-top: 20px;
     }
+    
+    .landing-features .call-monitoring .banner-header {
+        padding: 0px;
+    }
+    
+    .landing-features .sms .visual-img-pc {
+        margin-top: 0px;
+        max-width: 30%;
+    }
+    
+    .landing-features .call-monitoring .visual-img-pc {
+        max-width: 60%;
+    } 
 }    
 
 @media (min-width: 992px) {
@@ -130,14 +209,35 @@
         text-align: right;
     }
     
-    .landing-features .banner-header {
+    .landing-features .call-monitoring .visual-text {
+        padding: 50px 0px;
+    }    
+    
+    .landing-features .sms .banner-header {
         padding: 50px 0px 50px;
     }
     
-    .landing-features .visual-img-pc {
-        margin-top: 0px;
-        width: 50%;
+    .landing-features .call-monitoring .banner-header {
+        padding: 50px 0px;
     }
+    
+    .landing-features .smartphone .banner-header {
+        padding-top: 40px;
+    }
+    
+    .landing-features .sms .visual-img-pc {
+        bottom: 0px;
+        margin-top: 0px;
+        width: 40%;
+    }
+    
+    .landing-features .call-monitoring .visual-img-pc {
+         min-width: 80%;
+    }  
+    
+    .landing-features .smartphone .visual-img-pc {
+         bottom: 0px;
+    }    
 }
 
 @media (min-width: 1200px) { 
@@ -145,14 +245,29 @@
         text-align: right;
     }
     
-    .landing-features .banner-header {
+    .landing-features .sms .banner-header {
         padding: 97px 0px 67px;
     }
     
-    .landing-features .visual-img-pc {
+    .landing-features .call-monitoring .banner-header {
+        padding: 50px 0px;
+    }
+
+    .landing-features .smartphone .banner-header {
+        padding-top: 80px;
+    } 
+    
+    .landing-features .sms .visual-img-pc,
+    .landing-features .call-monitoring .visual-img-pc {
         margin-top: 0px;
         width: 100%;
+        max-width: 100%;
     }
+    
+    .landing-features .smartphone .visual-img-pc {
+         bottom: -10px;
+    }
+    
 }
 
 .landing-features .visual-text h1 {

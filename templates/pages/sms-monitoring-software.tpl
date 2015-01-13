@@ -1,5 +1,3 @@
-{closeAccess}
-
 {strip}
 {include file='../includes/wrap-title-header.tpl'}
 
@@ -12,7 +10,7 @@
 {include file='../includes/button-goup.tpl'}
 	<div class="wrapper landing-features">
 	{include file='../includes/topmenu-logo-login.tpl' topmenu_active='home'}	
-		<div class="visual">
+		<div class="visual sms">
                     
 			<div class="container">
                             
@@ -57,7 +55,7 @@
 					<div class="col-sm-5 col-md-5 col-lg-5 col-sm-offset-1 col-md-offset-1 col-lg-offset-1">
 						<div class="text-center relative_box">
 							<img src="{$img}/arrows_content.png" class="arrows_img" height="518" width="255" alt="">
-							<img src="{$img}/ipad.jpg" alt="" class="ipad-pic">
+							<img src="{$img}/parental_control/ipad.png" alt="" class="ipad-pic">
 							<button class="btn btn-default _forward_pricing"
                                                                 ga-label-button="main-premium"
                                                                 ga-type-button="buy button"

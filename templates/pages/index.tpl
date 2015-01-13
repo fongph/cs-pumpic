@@ -18,8 +18,11 @@
                                 
                                 <div class="col-lg-10 col-lg-offset-1">
                                     
+                                    <div class="col-md-6 col-lg-6 w900">
+                                        <img src="{$img}/parental_control/bg_famaly_mobile.png" alt="" class="visual-img-pc">
+                                    </div>
                                     
-                                    <div class="col-lg-6 box-right-description">
+                                    <div class="col-md-6 col-lg-6 box-right-description">
                                         <div class="visual-text text-center">
                                             <h1 class="title">CHILDCARE MOBILE <br />MONITORING APP</h1>
                                             <p>Keep your children safe and secured with Pumpic. <br />
@@ -35,7 +38,7 @@
                                         </div>
                                     </div>
                                                 
-                                    <div class="col-lg-6 mobile-version">
+                                    <div class="col-md-6 col-lg-6 w770">
                                         <img src="{$img}/parental_control/bg_famaly_mobile.png" alt="" class="visual-img-pc">
                                     </div>            
                                                 
@@ -67,10 +70,13 @@
                                                         <ul>
                                                             <li>
                                                                 <a href="http://demo.{$domain}" 
-                                                                   class="featured-link link-hl">View demo<i class="icon-angle-double-right"></i></a>
+                                                                   class="featured-link link-hl ga-click"
+                                                                   ga-label-button="main-demo-looks"
+                                                                   ga-type-button="demo link"
+                                                                   ga-event="click">View demo<i class="icon-angle-double-right"></i></a>
                                                             </li>
                                                             <li>
-                                                                <a class="btn btn-green"
+                                                                <a class="btn btn-green ga-click"
                                                                     href="/store.html"
                                                                     ga-label-button="main-visit-store"
                                                                     ga-type-button="buy button"
@@ -173,7 +179,29 @@
 		{include file='../includes/footer.tpl'}
 	</div>
 	{include file='../includes/analytics-footer.tpl'}
-        
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('#plans-block-buy-basic').click(function(){
+                    ga('send', 'event', 'buy button', 'click', 'main-basic');
+                });
+                
+                $('#plans-block-buy-premium').click(function(){
+                    ga('send', 'event', 'buy button', 'click', 'main-premium');
+                });
+                
+                $('#plans-block-store').click(function(){
+                    ga('send', 'event', 'store link', 'click', 'main-store-body');
+                });
+                
+                $('#plans-block-view-demo').click(function(){
+                    ga('send', 'event', 'demo link', 'click', 'main-demo-prices');
+                });
+                
+                $('#header-menu-store-link').click(function(){
+                    ga('send', 'event', 'store link', 'click', 'main-store-header');
+                });
+            });
+        </script>
 </body>
 </html>
 {/strip}

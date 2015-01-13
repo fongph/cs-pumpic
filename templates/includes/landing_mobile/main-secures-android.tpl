@@ -16,7 +16,7 @@
                         <div class="col-sm-4 col-md-4 col-lg-4">
                                 <div class="feature">
                                         <img src="{$img}/icons/icon-text-monitoring.png" alt="">
-                                        <h3><a href="http://{$domain}/">Follow online activity</a></h3>
+                                        <h3>Follow online activity</h3>
                                         <ul class="feature_list">
                                                 <li>Monitor social media</li>
                                                 <li>Block distracting websites</li>
@@ -27,7 +27,7 @@
                         <div class="col-sm-4 col-md-4 col-lg-4">
                                 <div class="feature">
                                         <img src="{$img}/icons/icon-media-files.png" alt="">
-                                        <h3><a href="http://{$domain}/">Track kids remotely</a></h3>
+                                        <h3>Track kids remotely</h3>
                                         <ul class="feature_list">
                                                 <li>Keep track of GPS location</li>
                                                 <li>Follow entire route history</li>

@@ -16,7 +16,7 @@
 					<div class="col-sm-4 col-md-4 col-lg-4">
 						<div class="feature">
 							<img src="{$img}/ico-secure.png" alt="">
-							<h3><a href="#">Secure your business</a></h3>
+							<h3>Secure your business</h3>
 							<ul class="feature_list">
 								<li>Monitor corporate emails</li>
 								<li>Track Internet usage</li>
@@ -27,7 +27,7 @@
 					<div class="col-sm-4 col-md-4 col-lg-4">
 						<div class="feature">
 							<img src="{$img}/ico-track.png" alt="">
-							<h3><a href="#">Protect your cell phone</a></h3>
+							<h3>Protect your cell phone</h3>
 							<ul class="feature_list">
 								<li>Wipe out the cell phone remotely</li>
 								<li>Record environment</li>

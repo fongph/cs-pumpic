@@ -367,6 +367,14 @@
          float: none;
     }
     
+    .visual-img-pc {
+      bottom: 0px;
+      display: block;
+      margin: 12px auto 0px;
+      max-width: 55% !important;
+      text-align: center;
+    }
+    
     .parent-control .visual p {
         margin: 0px;
     }
@@ -383,10 +391,10 @@
     }    
     
     .visual-img-pc {
+      bottom: 0px;
       display: block;
       margin: 12px auto 0px;
-/*      margin: 12px auto 20px;*/
-      max-width: 55%;
+      max-width: 55% !important;
       text-align: center;
     }
     
@@ -399,16 +407,31 @@
     }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 770px) {
+    .visual-img-pc {
+        bottom: 0px;
+        display: block;
+        max-width: 56% !important;
+    }
+    
     .parent-control .box-right-description {
          padding: 0px;  
          height: auto;
          float: none;
     } 
+}    
+
+@media (min-width: 992px) {
+    .parent-control .box-right-description {
+         padding: 20px 0px;  
+         height: auto;
+         float: right;
+    } 
     
     .visual-img-pc {
+      position: relative;
+      bottom: -40px;
       display: block;
-/*      margin: 12px auto 20px;*/
       max-width: 40%;
     }
     
@@ -431,9 +454,9 @@
     } 
     
     .visual-img-pc {
+      bottom: 0px;
       display: block;
-/*      margin: 12px auto 20px;*/
-      max-width: 100%;
+      max-width: 100% !important;
     }
     
     .parent-control .visual p {
@@ -487,6 +510,58 @@
     min-width: auto;
 }
 
+#promo-item.promo-title div {
+    font-size: 37px;
+    margin-top: 35px;
+}
+#promo-item.promo-title div span {
+    font-size: 37px;
+    font-weight: 600;
+}
+
+@media (min-width: 992px) {
+    #promo-item.promo-title {
+        padding-left: 15px;
+    }
+    #promo-item .btn-red.banner-v3-button {
+        margin-top: 35px;
+        padding: 13px 15px 13px 25px;
+    }
+}
+@media (min-width: 1200px) {
+    #promo-item img.promo-pointer.pc-version {
+        display: inline-block !important;
+    }
+    #promo-item.promo-button {
+        padding-left: 10px !important;
+    }
+}
+@media (max-width: 1199px) {
+    #promo-item img.promo-pointer.pc-version {
+        display: none !important;
+    }
+}
+@media (max-width: 991px) {
+    #promo-item.promo-title div {
+        font-size: 27px;
+        margin-top: 0;
+    }
+    #promo-item.promo-title div span {
+        font-size: 27px;
+    }
+    #promo-item .banner-v3-button {
+        margin-top: 0;
+        font-size: 24px !important;
+        padding: 7px 30px !important;
+    }
+    #promo-item.promo-title {
+        padding-bottom: 0;
+    }
+    #promo-item.promo-button {
+        padding-top: 8px;
+        padding-bottom: 14px;
+    }
+}
 #promo-item .btn-red {
     font-size: 24px;
     line-height: 24px;
@@ -519,9 +594,6 @@
 .visible-parent-control-lg {
     display: block;
 }
-
-
-
 
 @media only screen and (max-width: 480px) {
    .visible-mobile-lg {
@@ -645,16 +717,52 @@
    .pc-version {
         display: none !important;
     }
+    
+    .w770 {
+        display: block;
+    }
+    .w900 {
+        float: none;
+        display: none;
+    }
 }
 @media (min-width: 468px) {
     .mobile-version {
        display: block !important;
-   }
+    }
    
    .pc-version {
         display: none !important;
     }
+    
+    .w770 {
+        display: block;
+    }
+    .w900 {
+        float: none;
+        display: none;
+    }
+    
 }
+
+@media (min-width: 770px) {
+    .mobile-version {
+       display: block !important;
+    }
+   
+   .pc-version {
+        display: none !important;
+    }
+    
+    .w770 {
+        display: block;
+    }
+    
+    .w900 {
+        float: none;
+        display: none;
+    }
+}    
 
 @media (min-width: 992px) {
     .mobile-version {
@@ -663,6 +771,15 @@
    
    .pc-version {
         display: none !important;
+    }
+    
+    .w770 {
+        display: none;
+    }
+    
+    .w900 {
+        float: left;
+        display: block;
     }
 }  
 
@@ -673,6 +790,15 @@
    
    .pc-version {
         display: block !important;
+    }
+    
+    .w770 {
+        display: none;
+    }
+    
+    .w900 {
+        float: left;
+        display: none;
     }
 }   
 

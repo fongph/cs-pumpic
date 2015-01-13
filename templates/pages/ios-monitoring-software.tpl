@@ -1,5 +1,3 @@
-{closeAccess}
-
 {strip}
 {include file='../includes/wrap-title-header.tpl'}
 
@@ -12,7 +10,7 @@
 {include file='../includes/button-goup.tpl'}
 	<div class="wrapper landing-mobile">
 	{include file='../includes/topmenu-logo-login.tpl' topmenu_active='home'}	
-		<div class="visual">
+		<div class="visual ios">
                     
 			<div class="container">
                             
@@ -29,7 +27,6 @@
                                             <ul class="compatibility">
                                                 <li><i class="icon-android"></i> (2.2 - 5.0)</li>
                                                 <li><i class="icon-apple"></i> (6.0 - 8.1.2)</li>
-                                                {*<li><i class="icon-blackberry"></i> (1.0 - 7.1)</li>*}
                                                 <li>
                                                     <i class="i-header-info"></i> <a href="/compatibility.html">platform compatibility</a>
                                                 </li>
@@ -45,7 +42,7 @@
                                     </div>
                                            
                                     <div class="col-lg-5">
-                                         <img src="{$img}/landing_mobile/bg-header-mobile.png" alt="" class="visual-img-pc">   
+                                         <img src="{$img}/landing_mobile/bg-header-mobile_ios.png" alt="" class="visual-img-pc">   
                                     </div>            
                                                  
                                 </div>
@@ -62,7 +59,7 @@
 					<div class="col-sm-5 col-md-5 col-lg-5 col-sm-offset-1 col-md-offset-1 col-lg-offset-1">
 						<div class="text-center relative_box">
 							<img src="{$img}/arrows_content.png" class="arrows_img" height="518" width="255" alt="">
-							<img src="{$img}/ipad.jpg" alt="" class="ipad-pic">
+							<img src="{$img}/parental_control/ipad.png" alt="" class="ipad-pic">
 							<button class="btn btn-default _forward_pricing"
                                                                 ga-label-button="main-premium"
                                                                 ga-type-button="buy button"
@@ -124,7 +121,7 @@
 					<ul class="thumbs_video">
 						<li class="col-lg-6 col-md-6 col-sm-6 col-xs-12 model-center">
 							<a href="#">
-								<img src="images/video_thumb2.png" height="345" width="566" alt="">
+								<img src="{$img}/icons/icon-mobile-ios-android.png" height="345" width="567" alt="">
 							</a>
 						</li>
 					</ul>

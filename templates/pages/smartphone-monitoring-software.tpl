@@ -1,5 +1,3 @@
-{closeAccess}
-
 {strip}
 {include file='../includes/wrap-title-header.tpl'}
 
@@ -12,7 +10,7 @@
 {include file='../includes/button-goup.tpl'}
 	<div class="wrapper landing-features">
 	{include file='../includes/topmenu-logo-login.tpl' topmenu_active='home'}	
-		<div class="visual">
+		<div class="visual smartphone">
                     
 			<div class="container">
                             
@@ -37,8 +35,8 @@
                                         </div>
                                     </div>
                                                 
-                                    <div class="col-lg-6">
-                                        <img src="{$img}/landing_features/bg-header-features.png" alt="" class="visual-img-pc">
+                                    <div class="col-md-6 col-lg-6">
+                                        <img src="{$img}/landing_features/bg_header_smartphone.png" alt="" class="visual-img-pc">
                                     </div>            
                                                 
                                 </div>
@@ -57,7 +55,7 @@
 					<div class="col-sm-5 col-md-5 col-lg-5 col-sm-offset-1 col-md-offset-1 col-lg-offset-1">
 						<div class="text-center relative_box">
 							<img src="{$img}/arrows_content.png" class="arrows_img" height="518" width="255" alt="">
-							<img src="{$img}/ipad.jpg" alt="" class="ipad-pic">
+							<img src="{$img}/parental_control/ipad.png" alt="" class="ipad-pic">
 							<button class="btn btn-default _forward_pricing"
                                                                 ga-label-button="main-premium"
                                                                 ga-type-button="buy button"
@@ -111,21 +109,21 @@
 				<h2 class="text-center testimonial-title">TESTIMONIALS:</h2>
 				<div class="row">
 					<div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
-						<img src="{$img}/testimonials/testimonials_new_7.png" alt="" class="testimonial-photo">
+						<img src="{$img}/testimonials/testimonials_new_16.png" alt="" class="testimonial-photo">
 						<div class="testimonial-text">
 							<h4>Cindy K. - mother of 2 children</h4>
 							<p>“Pumpic helped me keep an eye on my kids while I was away on a business trip. I didn’t worry as I knew exactly where they were.”</p>
 						</div>
 					</div>
 					<div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
-						<img src="{$img}/testimonials/testimonials_new_8.png" alt="" class="testimonial-photo">
+						<img src="{$img}/testimonials/testimonials_new_17.png" alt="" class="testimonial-photo">
 						<div class="testimonial-text">
 							<h4>John L. father of a 16-year-old son</h4>
 							<p>“Thanks to Pumpic I can control my son from anywhere. It shows me if he talks on the phone too much, I can monitor his contacts and online activity. It’s a great help for parents.”</p>
 						</div>
 					</div>
 					<div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
-						<img src="{$img}/testimonials/testimonials_new_9.png" alt="" class="testimonial-photo">
+						<img src="{$img}/testimonials/testimonials_new_18.png" alt="" class="testimonial-photo">
 						<div class="testimonial-text">
 							<h4>Darcy H. father of a 13-year-old daughter</h4>
 							<p>“The app helped me repair relations with my daughter and get rid of any doubts about her. Pumpic lets me check if she tells me the truth. She really does.”</p>

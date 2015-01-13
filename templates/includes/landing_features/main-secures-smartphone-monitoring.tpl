@@ -4,7 +4,7 @@
                 <div class="row">
                         <div class="col-sm-4 col-md-4 col-lg-4">
                                 <div class="feature">
-                                        <img src="{$img}/icons/icon-monitor-text-messages.png" alt="">
+                                        <img src="{$img}/icons/icon-mobile-secure.png" alt="">
                                         <h3>Control cell phone usage</h3>
                                         <ul class="feature_list">
                                             <li>Track inbound and outgoing calls</li>
@@ -15,8 +15,8 @@
                         </div>
                         <div class="col-sm-4 col-md-4 col-lg-4">
                                 <div class="feature">
-                                        <img src="{$img}/icons/icon-follow-sms-gistory.png" alt="">
-                                        <h3><a href="http://{$domain}/">Follow online activity</a></h3>
+                                        <img src="{$img}/icons/icon-online-activity.png" alt="">
+                                        <h3>Follow online activity</h3>
                                         <ul class="feature_list">
                                             <li>Keep track of social media</li>
                                             <li>Block unwelcome websites</li>
@@ -26,8 +26,8 @@
                         </div>
                         <div class="col-sm-4 col-md-4 col-lg-4">
                                 <div class="feature">
-                                        <img src="{$img}/icons/icon-block-incoming-sms.png" alt="">
-                                        <h3><a href="http://{$domain}/">Track kids remotely</a></h3>
+                                        <img src="{$img}/icons/icon-track-kids.png" alt="">
+                                        <h3>Track kids remotely</h3>
                                         <ul class="feature_list">
                                             <li>Keep track of GPS location</li>
                                             <li>Monitor entire route history</li>

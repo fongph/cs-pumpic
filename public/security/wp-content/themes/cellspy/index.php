@@ -16,7 +16,7 @@
                         
                         <?php
                             $page = (get_query_var('paged')) ? get_query_var('paged') : 1;
-                            query_posts( array ( 'showposts' => 4, 'paged'=> $page ) );
+                            query_posts( array ( 'showposts' => get_option('posts_per_page'), 'paged'=> $page ) );
                             // The Loop
                             while ( have_posts() ) : the_post();
                                  get_template_part( 'content', 'post' );

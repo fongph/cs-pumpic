@@ -5,3 +5,4 @@
 /public/security/wp-config.php
 /composer.lock
 /.gitignore~
+/.idea

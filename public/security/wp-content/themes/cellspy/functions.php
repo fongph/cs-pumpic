@@ -49,12 +49,10 @@ if ( !function_exists('fb_get_cat_related_posts') ) {
         if($_dataTags = get_the_tags( (int)get_the_ID() ) 
                 and is_array($_dataTags) and count($_dataTags) > 0) {
             foreach($_dataTags as $_tag) :
-                $_tags .= $_tag -> slug.',';
+                $_tags .= $_tag -> slug.' ';
             endforeach;
-            $_tags = trim($_tags, ',');
+            $_tags = trim($_tags, ' ');
         }
-        
-        
         //$output .= __('<h4>Related articles</h4>');
         
         // if ( $catName )

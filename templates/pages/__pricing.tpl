@@ -4,7 +4,7 @@
 {strip}
 {include file='../includes/wrap-title-header.tpl'}
 
-	<title>Pumpic Subscription Store</title>
+	<title>Pumpic Prices and Subscription Plans</title>
 	<meta name="description" content="Pumpic offers high-quality Cell Phone Tracking Software for a good price. Find out more about a price range and subscription plan types to choose the one suitable for your monitoring needs." />
 	
 {include file='../includes/wrap-title-footer.tpl'}
@@ -18,18 +18,13 @@
 				<div class="row">
 					<div class="col-lg-10 col-lg-offset-1">
 						<div class="row">
-                                                        <h2 class="uppercase">Pumpic Store</h2>
-							{*<h2>PRICING & PLANS</h2>*}
+							<h2>PRICING & PLANS</h2>
 							<div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1">
-                                                            <form name="price_basic" method="POST" action="/buy.html">
+                                                            <form name="price_basic" method="POST" action="/pricing.html">
                                                                 <input id='product_price_basic' type='hidden' name='price[productID]' value='0' />
 								<table class="table table-bordered pricing-first">
 									<caption>
 										<div class="table_header">
-                                                                                        {*<div class="pull-left">
-                                                                                        <div class="box-currancies"></div>
-                                                                                    </div>*}
-                                                                                    
 											<!-- Block choose currency include -->
 											<div class="pull-right">
 												<span>Payment methods:</span>
@@ -84,7 +79,7 @@
 											</th>
 											<th>
 												<div class="lg_text_table"><i class="icon-apple"></i><span>iOS</span></div>
-												<div class="sm_text_table"><span>(6.0 - 8.1.2)<br />jailbreak needed</span></div>
+												<div class="sm_text_table"><span>(6.0 - 8.1.1)<br />jailbreak needed</span></div>
 											</th>
 											<th>
 												<div class="lg_text_table"><i class="icon-blackberry"></i><span class="hidden-xs">BlackBerry</span><span class="visible-xs">BB</span></div>
@@ -269,7 +264,7 @@
 								</table>
                                                                                         
                                                             </form>                         
-                                                            <form name="price_premium" method="POST" action="/buy.html"> 
+                                                            <form name="price_premium" method="POST" action="/pricing.html"> 
                                                                     
                                                                 <input id='product_price_premium' type='hidden' name='price[productID]' value='' />    
                                                                     

@@ -16,7 +16,7 @@
                             
                             <div class="row">
                                 
-                                <div class="col-lg-10 col-lg-offset-1 banner-header">
+                                <div class="col-lg-10 col-md-12 col-sm-12 col-lg-offset-1 banner-header">
                                     
                                     
                                     <div class="col-lg-6 col-md-6 col-sm-6">
@@ -35,7 +35,7 @@
                                         </div>
                                     </div>
                                                 
-                                    <div class="col-lg-6">
+                                    <div class="col-lg-6 col-md-6 col-sm-6">
                                         <img src="{$img}/landing_features/bg-header-features.png" alt="" class="visual-img-pc">
                                     </div>            
                                                 
@@ -54,7 +54,6 @@
 				<div class="row">
 					<div class="col-sm-5 col-md-5 col-lg-5 col-sm-offset-1 col-md-offset-1 col-lg-offset-1">
 						<div class="text-center relative_box">
-							<img src="{$img}/arrows_content.png" class="arrows_img" height="518" width="255" alt="">
 							<img src="{$img}/parental_control/ipad.png" alt="" class="ipad-pic">
 							<button class="btn btn-default _forward_pricing"
                                                                 ga-label-button="main-premium"

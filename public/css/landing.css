@@ -282,3 +282,21 @@
 .landing-mobile .ios .visual-text {
     padding-right: 0;
 }
+.landing-features .sms .visual-img-pc {
+    max-width: 100% !important;
+    width: 100% !important;
+}
+@media only screen and (max-width: 991px) {
+    .landing-features .sms .visual-img-pc {
+        width: 401px !important;
+        height: 237px !important;
+        max-width: none !important;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .landing-features .sms .visual-img-pc {
+        width: auto !important;
+        height: auto !important;
+        max-width: 100% !important;
+    }
+}

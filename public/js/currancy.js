@@ -211,7 +211,7 @@
                 $_html += '<ul class="clearfix">'; 
                 $.each($_settings.rates, function(key, val) {
                     status[ key ] = (val.iso.toUpperCase() == $_settings.currBase) ? 'active' : ''; 
-                    $_html += '<li><span class="store-flags flag-'+val.iso+' '+status[ key ]+'" attr-rates-iso="'+val.iso+'" attr-rates-id="'+val.id+'">'+val.iso.toUpperCase()+'</span></li>';
+                    $_html += '<li><span class="store-flags flag-'+val.iso+' '+status[ key ]+'" attr-rates-iso="'+val.iso+'" attr-rates-id="'+val.id+'"></span></li>'; // '+val.iso.toUpperCase()+'
                 });
                 $_html += '</ul>';
                 

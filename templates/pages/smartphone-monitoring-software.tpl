@@ -19,7 +19,7 @@
                                 <div class="col-lg-10 col-lg-offset-1 banner-header">
                                     
                                     
-                                    <div class="col-lg-6 col-md-6 col-sm-6">
+                                    <div class="col-lg-6 col-md-6">
                                         <div class="visual-text text-right">
                                             <h1 class="title">SMARTPHONE MONITORING <br />PARENTAL CONTROL APP</h1>
                                             <p>Protect your children with Pumpic app.<br />

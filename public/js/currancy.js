@@ -4,10 +4,13 @@
       
       var $_settings = {
           'api_key': '', // app_id=
-          'host': 'http://pumpic.com/currancy.html',
+          'host': 'http://pumpic.com/currency.html',
           'currBase': 'USD',
+          'currCode': { 'usd': '$', 
+                        'eur':'€', 
+                        'rub': 'P'},
           'filter': {
-              'iso': ['USD','AER','EUR','RUB']
+              'iso': ['USD','EUR','RUB']
            },
           'rates': {}, // list currance rates
           'convert': {
@@ -171,7 +174,28 @@
             if($this.find('.store-flags').length)
                 $this.find('.store-flags').on('click', function(event) {
                    event.preventDefault();
-                    alert( methods._convert(100, "usd", "rub") ); // 'USD', 'EUR' 
+                   var curr_convert = $(this).attr('attr-rates-iso');
+                   
+                   
+                   if(methods.getCach('currISO')) {
+                       if(methods.getCach('currISO') != curr_convert) {
+                           methods.setCach('currISO', curr_convert);
+                       } 
+                   } else
+                        methods.setCach('currISO', curr_convert);
+                   
+                   // status
+                   $this.find('.store-flags').each(function() {
+                       if($(this).hasClass('active')) {
+                         $(this).removeClass('active');
+                       } 
+                   }); 
+                   
+                   $(this).addClass('active'); 
+                    
+                   // event 
+                    methods.afterEvent();
+                    // alert( methods._convert(100, $_settings.currBase, curr_convert || $_settings.currBase) ); // 'USD', 'EUR' 
                    return false;
                 });
         },
@@ -184,15 +208,50 @@
         show: function() {
             
             if($_settings.rates) {
-                $_html += '<ul>'; 
+                $_html += '<ul class="clearfix">'; 
                 $.each($_settings.rates, function(key, val) {
-                    $_html += '<li><span class="store-flags flag-'+val.iso+'" attr-rates-iso="'+val.iso+'" attr-rates-id="'+val.id+'">'+val.iso+'</span></li>';
+                    $_html += '<li><span class="store-flags flag-'+val.iso+'" attr-rates-iso="'+val.iso+'" attr-rates-id="'+val.id+'">'+val.iso.toUpperCase()+'</span></li>';
                 });
                 $_html += '</ul>';
                 
                 $this.html( $_html );
+                
+                methods.beforeEvent(); // setup default
                 methods.bindEvent();
             }
+            
+            // console.log();
+        },
+        
+        // beforeEvent
+        beforeEvent: function() {
+            $('.box-currence').each(function() {
+                var _symbol = $(this).find('symbol'),
+                    _iso = _symbol.attr('attr-iso');
+               if(!_iso) _symbol.attr('attr-iso', $_settings.currBase);
+               if(!_symbol.text()) _symbol.text( $_settings.currCode[ $_settings.currBase.toLowerCase() ] );
+            });
+        },
+        
+        // afterEvent
+        afterEvent: function() {
+          // body generate price
+          $('.box-currence').each(function() {
+              var _symbol = $(this).find('symbol'), 
+                  _price = $(this).find('curr'),
+                  symbol = _symbol.text(), 
+                  price = _price.text(),
+                  iso = _symbol.attr('attr-iso');
+                  
+              if(price) {
+                  _price.html( methods._convert( parseFloat(price), 
+                                                iso, 
+                                                methods.getCach('currISO') || $_settings.currBase
+                                            ).toFixed(2)  ); // ).toFixed(2)
+                  _symbol.attr('attr-iso', methods.getCach('currISO'));   
+                  _symbol.text( $_settings.currCode[ methods.getCach('currISO').toLowerCase() ] )
+              }
+          });  
         },
         
         run : function( params ) {
@@ -227,8 +286,8 @@
 
 $(document).ready(function(){ 
     
-   if($('.box-currancies').length) {
-      $('.box-currancies').currancy({
+   if($('.list-currencies').length) {
+      $('.list-currencies').currancy({
           onOpen: function() {
               
           },

@@ -27,11 +27,10 @@
                                     <table class="tb_pricing table-bordered pricing-second">
                                         <caption>
                                             <div class="table_header">
-                                                {*
+                                                <!-- Block currance -->
                                                 <div class="pull-left">
-                                                    <div class="box-currancies">
-                                                    </div>
-                                                </div>*}
+                                                    <div class="list-currencies clearfix"></div>
+                                                </div>
 
                                                 <!-- Block choose currency include -->
                                                 <div class="pull-right">
@@ -125,7 +124,7 @@
                                                                 <img src="{$img}/basic_pack.png">
                                                             </div>
                                                             <div class="wr_price_big">
-                                                                <span></span>$11.66<span> / month</span>
+                                                                <span></span><div class="box-currence"><symbol attr-iso="usd">$</symbol><curr>11.66</curr></div><span> / month</span>
                                                             </div>
                                                             <div class="list_price">
                                                             <form name="price_basic" method="POST" action="/buy.html">
@@ -144,7 +143,7 @@
                                                                         </span>
                                                                         <span class="sp_price">
                                                                             <strong>
-                                                                                ${$_item.price}
+                                                                                <div class="box-currence"><symbol attr-iso="usd">$</symbol><curr>{$_item.price}</curr></div>
                                                                             </strong>
                                                                         </span>
                                                                         </label>
@@ -201,7 +200,7 @@
                                                                         </span>
                                                                         <span class="sp_price">
                                                                             <strong>
-                                                                                ${$_item.price}
+                                                                                <div class="box-currence"><symbol attr-iso="usd">$</symbol><curr>{$_item.price}</curr></div>
                                                                             </strong>
                                                                         </span>
                                                                         </label>
@@ -225,7 +224,7 @@
                                                                 <img src="{$img}/premium_pack.png">
                                                             </div>
                                                             <div class="wr_price_big">
-                                                                <span></span>$33.99<span>/ month</span>
+                                                                <span></span><div class="box-currence"><symbol attr-iso="usd">$</symbol><curr>33.99</curr></div><span>/ month</span>
                                                             </div>
                                                             <div class="list_price">
                                                             <form name="price_premium" method="POST" action="/buy.html">
@@ -244,7 +243,7 @@
                                                                         </span>
                                                                         <span class="sp_price">
                                                                             <strong>
-                                                                                ${$_item.price}
+                                                                                <div class="box-currence"><symbol attr-iso="usd">$</symbol><curr>{$_item.price}</curr></div>
                                                                             </strong>
                                                                         </span>
                                                                         </label>
@@ -299,7 +298,7 @@
                                                                         </span>
                                                                         <span class="sp_price">
                                                                             <strong>
-                                                                                ${$_item.price}
+                                                                                <div class="box-currence"><symbol attr-iso="usd">$</symbol><curr>{$_item.price}</curr></div>
                                                                             </strong>
                                                                         </span>
                                                                         </label>

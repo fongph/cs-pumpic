@@ -73,7 +73,7 @@ class Currency
         } 
         
         
-        $_rates = $this -> _db -> query("SELECT currID as id, rates, iso FROM `currancies` WHERE hidden = 0 ".$_filter);
+        $_rates = $this -> _db -> query("SELECT currID as id, rates, iso FROM `currencies` WHERE hidden = 0 ".$_filter);
         return (!empty($_rates)) ? $_rates : array();
     }
     

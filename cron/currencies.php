@@ -7,10 +7,10 @@ try {
 
     $config = array(
         'db' => array(
-            'host' =>  'localhost', 
-            'username' => 'root', 
-            'password' => 'password',
-            'dbname' =>  'blog_pumpic', 
+            'host' =>  '188.40.64.2', 
+            'username' => 'pumpic_blog_user', 
+            'password' => '57ge8j9SNg9EkhryWA3KV9ZB9NUue6',
+            'dbname' =>  'pumpic_blog', 
             
             'options' => array(
                 PDO::MYSQL_ATTR_INIT_COMMAND => 'set names utf8;',
@@ -51,7 +51,7 @@ try {
     function hasRates( $_iso ) {
         $pdo = getDb();
         $_iso = $pdo->quote( $_iso );
-        $_result = $pdo->query("SELECT currID FROM `currancies` WHERE `iso` = {$_iso}")->fetchAll();
+        $_result = $pdo->query("SELECT currID FROM `currencies` WHERE `iso` = {$_iso}")->fetchAll();
         if(is_array($_result) and count($_result) > 0) {
             return $_result;
         } else 
@@ -87,7 +87,7 @@ try {
             $fields .= $_name." = '". $_value."',";
         endforeach;
         
-        $sql = "INSERT INTO `currancies` SET currID = null, ".trim( $fields ,',');
+        $sql = "INSERT INTO `currencies` SET currID = null, ".trim( $fields ,',');
         
         $stmt = $pdo->prepare($sql); 
         return $stmt->execute();
@@ -102,7 +102,7 @@ try {
             $fields .= $_name." = '". $_value."',";
         endforeach;
         
-        $sql = "UPDATE `currancies` SET ".trim( $fields ,',')." WHERE currID = ".(int)$currID;
+        $sql = "UPDATE `currencies` SET ".trim( $fields ,',')." WHERE currID = ".(int)$currID;
         
         $stmt = $pdo->prepare($sql);  
         return $stmt->execute();

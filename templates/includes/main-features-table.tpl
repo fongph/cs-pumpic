@@ -40,7 +40,7 @@
                     </table>*}
                     
                     <div id="table-container" class="tabel-col-3 tabel-md-col-3 tabel-sm-col-3">
-                        <h1 class="text-center">To protect your children and secure their happiness Pumpic provides you with large variety of monitoring functions designed to make remote parenting safe and worriless.</h1>
+                        <h1 class="text-center">To protect your children and secure their happiness Pumpic provides you with a large variety of monitoring functions designed to make remote parenting safe and worriless.</h1>
                         <section>
                             <div class="tab col-item-3 col-md-item-3 col-sm-item-3">
                                 <ul>

@@ -8,7 +8,7 @@
             'boxResult': '.box-get-search-result',
             'boxPagination': '.box-navigations',
             '_ajax_url': 'http://a.pumpic.com/index.php',
-            'server_img': 'http://a.pumpic.com/compatibility/middle/',
+            'server_img': 'http://a.pumpic.com/compatibility/',
             '_ajax_data': {},
             '_method': 'getPhonesByQuery',
             '_query': false,
@@ -185,13 +185,15 @@
         _item: function(params, obj) {
             var html = '';
             if(methods._has(params)) {
-                var _img  = params.b_img.split('/'), img_name = '', middle_img = '';
+                var middle_img = params.m_img;
                 
-                 if(_img.length > 0) {
-                    img_name = _img[ (_img.length - 1) ];
-                    var _m = img_name.split('.');
-                    middle_img = _m[0]+'_medium.'+_m[1];
-                 }
+//                var _img  = params.b_img.split('/'), img_name = '', middle_img = '';
+//                
+//                 if(_img.length > 0) {
+//                    img_name = _img[ (_img.length - 1) ];
+//                    var _m = img_name.split('.');
+//                    middle_img = _m[0]+'_medium.'+_m[1];
+//                 }
                 
                 html += '<div id="search-result-item" class="col-sm-3 col-md-3 col-xs-6">';
                     html += '<div class="thumbnail">';

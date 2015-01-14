@@ -34,9 +34,13 @@
 							<h3 class="col-lg-12"><a href="#">{$getSetting._item.name}</a></h3>
 							<div class="col-sm-4 col-md-4">
 								<div class="thumbnail">
-									<a href="http://{$getSetting.api._domain}/{$getSetting.api.path_img}/{$getSetting._item.big_img}" class="img_thumb" data-lightbox="{$getSetting._item.name}" data-title="{$getSetting._item.name}">
+                                                                        <div class="img_thumb">
+                                                                            <img src="http://{$getSetting.api._domain}/{$getSetting.api.path_img}/{$getSetting._item.img}" height="202" width="90" alt="">
+                                                                        </div>
+                                                                        
+									{*<a href="http://{$getSetting.api._domain}/{$getSetting.api.path_img}/{$getSetting._item.big_img}" class="img_thumb" data-lightbox="{$getSetting._item.name}" data-title="{$getSetting._item.name}">
 										<img src="http://{$getSetting.api._domain}/{$getSetting.api.path_img}/{$getSetting._item.img}" height="202" width="90" alt="">
-									</a>
+									</a>*}
 									<div class="caption">
 
 										<span>OS:<strong> {$getSetting._item.os}</strong></span>

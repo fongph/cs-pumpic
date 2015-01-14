@@ -404,13 +404,14 @@ function smarty_function_compatibilityDevice($params, $template) {
     if(is_array($_respons) and count($_respons) > 0) {
             // parce path img
             if(isset($_respons['img']) and !empty($_respons['img'])) {
-                $_img = explode('/',$_respons['img']);
-                $_file_name = explode('.', $_img[count($_img) - 1]);
+//                $_img = explode('/',$_respons['img']);
+//                $_file_name = explode('.', $_img[count($_img) - 1]);
                 $_respons['big_img'] = $_respons['img'];
-                $_respons['img'] = 'middle/'.$_file_name[0].'_medium.'.$_file_name[1];
+                $_respons['img'] = $_respons['m_img'];
+//                $_respons['img'] = 'middle/'.$_file_name[0].'_medium.'.$_file_name[1];
             } else {
                 $_respons['big_img'] = '';
-                $_respons['img'] = '';
+//                $_respons['img'] = '';
             }    
         
             $_set = array(

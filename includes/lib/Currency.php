@@ -12,10 +12,16 @@ class Currency
     private function __construct()
     {
         $this -> _db = new DB(array(
-            'dbname'    => 'blog_pumpic',
-            'host'      => 'localhost',
-            'user'      => 'root',
-            'password'  => 'password'
+//            'dbname'    => 'blog_pumpic',
+//            'host'      => 'localhost',
+//            'user'      => 'root',
+//            'password'  => 'password'
+            
+            'dbname'    => 'pumpic_blog',
+            'host'      => '188.40.64.2',
+            'user'      => 'pumpic_blog_user',
+            'password'  => '57ge8j9SNg9EkhryWA3KV9ZB9NUue6'
+            
         ));
         // $this -> _pdo = $this -> _db -> getConnected();
     }
@@ -73,7 +79,7 @@ class Currency
         } 
         
         
-        $_rates = $this -> _db -> query("SELECT currID as id, rates, iso FROM `currencies` WHERE hidden = 0 ".$_filter);
+        $_rates = $this -> _db -> query("SELECT currID as id, rates, iso FROM `currencies` WHERE hidden = 0 ".$_filter." ORDER BY iso DESC");
         return (!empty($_rates)) ? $_rates : array();
     }
     

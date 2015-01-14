@@ -206,11 +206,12 @@
         
         // show create html list rates
         show: function() {
-            
+            var status = [];
             if($_settings.rates) {
                 $_html += '<ul class="clearfix">'; 
                 $.each($_settings.rates, function(key, val) {
-                    $_html += '<li><span class="store-flags flag-'+val.iso+'" attr-rates-iso="'+val.iso+'" attr-rates-id="'+val.id+'">'+val.iso.toUpperCase()+'</span></li>';
+                    status[ key ] = (val.iso.toUpperCase() == $_settings.currBase) ? 'active' : ''; 
+                    $_html += '<li><span class="store-flags flag-'+val.iso+' '+status[ key ]+'" attr-rates-iso="'+val.iso+'" attr-rates-id="'+val.id+'">'+val.iso.toUpperCase()+'</span></li>';
                 });
                 $_html += '</ul>';
                 

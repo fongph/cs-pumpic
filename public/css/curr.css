@@ -5,6 +5,23 @@
 .list-currencies {
     
 }
+
+/*@media only screen and (max-width: 480px) {
+}
+
+@media (min-width: 468px) {
+
+}
+@media (min-width: 768px) {
+
+}
+@media (min-width: 992px) { 
+
+}
+@media (min-width: 1200px) {
+
+}*/
+
 .list-currencies ul {
 /*    clear: both;*/
     margin: 0px;

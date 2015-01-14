@@ -8,9 +8,9 @@
           'currBase': 'USD',
           'currCode': { 'usd': '$', 
                         'eur':'€', 
-                        'rub': 'P'},
+                        'gbp': '£'},
           'filter': {
-              'iso': ['USD','EUR','RUB']
+              'iso': ['USD','EUR','GBP']
            },
           'rates': {}, // list currance rates
           'convert': {

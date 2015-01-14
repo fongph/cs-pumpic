@@ -82,6 +82,9 @@
     	
     	if (opts.type == 'url') {
 	    	var code = trChar.charCodeAt(0);
+                
+                if(trChar == '.') { return '.'; } // fix точка
+                
 	    	if (code >= 33  && code <= 47 && code != 45
 	    		|| code >= 58  && code <= 64
 	    		|| code >= 91  && code <= 96

@@ -21,7 +21,7 @@
                                     
                                     <div class="col-lg-7 col-md-7">
                                         <div class="visual-text text-right">
-                                            <h1 class="title">iOS Childcare App <br />Pumpic Parental Control</h1>
+                                            <h1 class="title">iOS Parental Control App</h1>
                                             <p>Pumpic helps you keep your children safe.        
                                                 <br />Monitor your kid’s iOS device with Pumpic.</p>
                                             <ul class="compatibility">
@@ -68,14 +68,27 @@
 					<div class="col-sm-5 col-md-5 col-lg-5">
 						<div class="ipad-text">
 							<h2>EASY-TO-USE CONTROL PANEL</h2>
-							 {*http://demo.{$domain}*} <a href="http://demo.{$domain}"  
-                                                                                      class="featured-link link-hl ga-click"
-                                                                                        ga-label-button="main-demo-looks"
-                                                                                        ga-type-button="buy button"
-                                                                                        ga-event="click"
-                                                                                      >View demo<i class="icon-angle-double-right"></i></a>
-							<p>Try Control Panel demo to see Pumpic for iOS in use.
-                                                            <br />Buy Pumpic to take care of kids and protect them online right now.</p>
+							<p>
+                                Try Control Panel demo to see Pumpic for iOS in use.
+                                <br />
+                                Buy Pumpic to take care of kids and protect them online right now.
+                            </p>
+                            <ul>
+                                <li>
+                                    <a href="http://demo.{$domain}"
+                                       class="featured-link link-hl ga-click"
+                                       ga-label-button="ios-demo-looks"
+                                       ga-type-button="demo link"
+                                       ga-event="click">View demo<i class="icon-angle-double-right"></i></a>
+                                </li>
+                                <li>
+                                    <a class="btn btn-green ga-click"
+                                       href="/store.html"
+                                       ga-label-button="ios-visit-store"
+                                       ga-type-button="buy button"
+                                       ga-event="click">Visit Store</a>
+                                </li>
+                            </ul>
 						</div>
 					</div>
 				</div>

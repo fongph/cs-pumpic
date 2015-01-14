@@ -67,20 +67,27 @@
 					<div class="col-sm-5 col-md-5 col-lg-5">
 						<div class="ipad-text">
 							<h2 class="text-left">EASY-TO-USE CONTROL PANEL</h2>
-							<p>Try Control Panel demo to see Pumpic app in use. Buy Pumpic to protect your kids and secure their happiness right now. </p>
-                                                        <ul>
-                                                            <li>
-                                                                <a href="http://demo.{$domain}" 
-                                                                   class="featured-link link-hl">View demo<i class="icon-angle-double-right"></i></a>
-                                                            </li>
-                                                            <li>
-                                                                <a class="btn btn-green"
-                                                                    href="/store.html"
-                                                                    ga-label-button="main-visit-store"
-                                                                    ga-type-button="buy button"
-                                                                    ga-event="click">Visit Store</a>
-                                                            </li>
-                                                        </ul>
+							<p>
+                                Try Control Panel demo to see Pumpic app in use.
+                                <br />
+                                Buy Pumpic to protect your kids and secure their happiness right now. 
+                            </p>
+                            <ul>
+                                <li>
+                                    <a href="http://demo.{$domain}"
+                                       class="featured-link link-hl ga-click"
+                                       ga-label-button="discount-demo-looks"
+                                       ga-type-button="demo link"
+                                       ga-event="click">View demo<i class="icon-angle-double-right"></i></a>
+                                </li>
+                                <li>
+                                    <a class="btn btn-green ga-click"
+                                       href="/store.html"
+                                       ga-label-button="discount-visit-store"
+                                       ga-type-button="buy button"
+                                       ga-event="click">Visit Store</a>
+                                </li>
+                            </ul>
                                                         
                                                         
 						</div>

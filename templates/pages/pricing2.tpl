@@ -27,7 +27,7 @@
                                     <table class="tb_pricing table-bordered pricing-second">
                                         <caption>
                                             <div class="table_header">
-                                                <!-- Block currance -->
+                                                <!-- Block currencies -->
                                                 <div class="pull-left">
                                                     <div class="list-currencies clearfix"></div>
                                                 </div>

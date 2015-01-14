@@ -66,7 +66,7 @@
 					</div>
 					<div class="col-sm-5 col-md-5 col-lg-5">
 						<div class="ipad-text">
-							<h2>EASY TO USE CONTROL PANEL</h2>
+							<h2>EASY-TO-USE CONTROL PANEL</h2>
 							 {*http://demo.{$domain}*} <a href="http://demo.{$domain}"  
                                                                                       class="featured-link link-hl ga-click"
                                                                                         ga-label-button="main-demo-looks"

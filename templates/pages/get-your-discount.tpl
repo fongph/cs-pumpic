@@ -66,7 +66,7 @@
 					</div>
 					<div class="col-sm-5 col-md-5 col-lg-5">
 						<div class="ipad-text">
-							<h2 class="text-left">EASY TO USE CONTROL PANEL</h2>
+							<h2 class="text-left">EASY-TO-USE CONTROL PANEL</h2>
 							<p>Try Control Panel demo to see Pumpic app in use. Buy Pumpic to protect your kids and secure their happiness right now. </p>
                                                         <ul>
                                                             <li>

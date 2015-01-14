@@ -340,7 +340,8 @@
             ga('linker:decorate', this);
         });
         $('[data-toggle="tooltip"]').tooltip({
-            placement:'top'
+            placement:'top',
+            animation:false
             
         });
         //$('[data-toggle="tooltip"]').tooltip('show');//for debug

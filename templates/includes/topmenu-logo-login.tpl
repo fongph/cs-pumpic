@@ -69,7 +69,7 @@
             </div>
         </div>
     </div>
-</div>
+</div>                           
 {if isset($compatibilityDeviceUri)}
 <script type="text/javascript">
     $(document).ready(function(){

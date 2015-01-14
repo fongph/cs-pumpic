@@ -1,0 +1,37 @@
+.box-currence {
+    display: inline;
+}
+
+.list-currencies {
+    
+}
+.list-currencies ul {
+/*    clear: both;*/
+    margin: 0px;
+    padding: 0px;
+}
+.list-currencies li:first-child { margin-left: 0px; }
+.list-currencies li {
+    display: block;
+    list-style: none;
+    float: left;
+    margin-left: 5px;
+}
+
+.list-currencies li span {
+    text-decoration: underline;
+    color: #16a89e;
+    font-size: 18px;
+    font-weight: 400;
+    cursor: pointer;
+    
+    margin: 0px !important;
+    padding: 0px !important;
+}
+
+.list-currencies li:hover span,
+.list-currencies li span.active {
+/*    text-decoration: none;*/
+    color: #606060; 
+}
+

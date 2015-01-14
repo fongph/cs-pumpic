@@ -10,7 +10,12 @@ try {
             'host' =>  '188.40.64.2', 
             'username' => 'pumpic_blog_user', 
             'password' => '57ge8j9SNg9EkhryWA3KV9ZB9NUue6',
-            'dbname' =>  'pumpic_blog', 
+            'dbname' =>  'pumpic_blog',
+            
+//            'host' =>  'localhost', 
+//            'username' => 'root', 
+//            'password' => 'password',
+//            'dbname' =>  'blog_pumpic',
             
             'options' => array(
                 PDO::MYSQL_ATTR_INIT_COMMAND => 'set names utf8;',
@@ -51,7 +56,7 @@ try {
     function hasRates( $_iso ) {
         $pdo = getDb();
         $_iso = $pdo->quote( $_iso );
-        $_result = $pdo->query("SELECT currID FROM `currencies` WHERE `iso` = {$_iso}")->fetchAll();
+        $_result = $pdo->query("SELECT `currID`, `iso`, `rates` FROM `currencies` WHERE `iso` = {$_iso}")->fetch();
         if(is_array($_result) and count($_result) > 0) {
             return $_result;
         } else 
@@ -62,15 +67,14 @@ try {
     function setRates( $iso, $rates ) {
         $iso = strtolower( trim( $iso ) );
         $_data = array('iso'        => $iso, 
-                       'rates'      => $rates,
-                       'date'       => 'NOW()',
+                       'rates'      => trim($rates),
+                       'date'       => date('Y-m-d H:i:s'),
                        'hidden'     => 0);
         
        
         if($_currID = hasRates( $iso )) {
-            
-            foreach($_currID as $_key => $_id) {
-                updateRates($_id, $_data);
+            if(md5($_currID['iso'].$_currID['rates']) != md5($_data['iso'].$_data['rates'])) {
+                updateRates($_currID['currID'], $_data);
             }
         } else {
             insertRates($_data);

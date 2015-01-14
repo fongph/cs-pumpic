@@ -173,7 +173,7 @@
             var $out;
             if(str) {
                 $out = $(this).syncTranslit({
-                    type: 'url',
+                    type: 'url', // url or raw 
                     'strtr': true,
                     '_text': str,
                 });

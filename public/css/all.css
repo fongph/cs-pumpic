@@ -113,20 +113,32 @@ ol {
   counter-reset: number;
   list-style: none;
 }
-ol li {
+
+ol ol {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 25px;
+}
+
+ol > li {
   position: relative;
-  padding-left: 20px;
+  padding-left: 30px;
   padding-bottom: 2px;
 }
-ol li:before {
+
+ol > li:before {
   position: absolute;
-  left: 0;
+  left: 10px;
   top: -2px;
   counter-increment: number;
   content: counter(number) ".";
   display: inline-block;
   font-size: 17px;
   font-weight: bold;
+}
+
+ol > li:nth-child(n+10):before {
+    left: 0px;
 }
 
 h1, .h1 {
@@ -338,10 +350,14 @@ select.form-control option {
   color: white;
   padding: 0;
 }
-.nav li a:hover {
+.nav li a:not(.cp-login):hover {
   color: #16a89e;
   text-decoration: none;
   background: transparent;
+}
+
+.nav > li > a.cp-login:hover {
+    background-color: #19bfb3 !important;
 }
 
 .navbar-toggle {
@@ -3934,8 +3950,26 @@ only screen and (max-device-width: 480px) {
     background-size: 100% 100%; // cover
 }
 
+.banner2 {
+    height: 276px;
+    background-color: #4d4f5b;
+    background-image: url('../images/blog_banners/banner_2.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%; // cover
+}
+
+.banner2 .btn {
+    font-size: 22px;
+    line-height: 22px;
+    margin-left: 20px;
+    min-width: 142px;
+    min-height: 46px;
+    text-transform: none;
+    padding: 9px 24px;
+}
+
 @media only screen and (max-width: 991px) {
-    .banner1 {
+    .banner1, .banner2 {
         width: 300px;
         margin: 0 auto;
     }
@@ -3953,14 +3987,20 @@ only screen and (max-device-width: 480px) {
     }*/
 }
 
-.banner1 .caption {
+.banner1 .caption, 
+.banner2 .caption {
     height: 100%;
     position: relative;
 }
 
-.banner1 .buttons {
+.banner1 .buttons,
+.banner2 .buttons {
     bottom: 0px;
     position: absolute;
+}
+
+.banner2 .buttons {
+    margin-bottom: 38px;
 }
 
 /* fix h1...h6 */

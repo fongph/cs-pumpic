@@ -50,12 +50,12 @@
 							</div>
 						</div>
 					</ul>
-					<div class="arrow_bottom">
-                                            <span><div class="no-click-video-guide"><i class="icon-angle-down"></i></div></span> {* <a href="#"></a> *}
+					{*<div class="arrow_bottom">
+                                            <span><div class="no-click-video-guide"><i class="icon-angle-down"></i></div></span> 
                                             <h3>INSTALLATION VIDEO GUIDE</h3>
-					</div>
+					</div>*}
 				</div>
-				<div class="row">
+				{*<div class="row">
 					<ul class="thumbs_video">
 						<li class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
 							<div class="ico-top"><i class="icon-android"></i>
@@ -76,7 +76,7 @@
                                                            class="text-center mt10" >iOS Installation Guide »</a>
 						</li>
 					</ul>
-				</div>
+				</div>*}
 			</div>
 			{include file='../includes/plans-white.tpl'}
 			

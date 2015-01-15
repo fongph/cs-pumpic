@@ -1,7 +1,7 @@
 {strip}
 {include file='../includes/wrap-title-header.tpl'}
 
-	<title>Childcare Mobile Monitoring App</title>
+	<title>Mobile Parental Control App for Children</title>
 	<meta name="description" content="Keep your children safe and secured with Pumpic. Track location. View calls and SMS. Follow online activity." />
 	
 {include file='../includes/wrap-title-footer.tpl'}
@@ -24,7 +24,7 @@
                                     
                                     <div class="col-md-6 col-lg-6 box-right-description">
                                         <div class="visual-text text-center">
-                                            <h1 class="title">CHILDCARE MOBILE <br />MONITORING APP</h1>
+                                            <h1 class="title">Cell Phone <br />Parental Control App{*CHILDCARE MOBILE <br />MONITORING APP*}</h1>
                                             <p>Keep your children safe and secured with Pumpic. <br />
                                                 Track location. View calls and SMS. Follow online activity.</p>
                                             <ul class="compatibility">
@@ -166,7 +166,7 @@
 							<div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
 								<h3 class="text-center"><img src="{$img}/icons/ico-easy-to-contact.png" alt=""> Easy to contact</h3>
 								<p class="text-center">Pumpic application has user-friendly interface, which makes monitoring process more than simple. Enter your Control Panel and see all the data from your kid’s device in a readable form. 
-                                                                    <br class="br" />Feel free to contact our Customer Support Team at any time, for any reason.</p>
+                                                                    <br class="br" />Feel free to contact our {*Customer*}Support Team at any time, for any reason.</p>
 							</div>
 						</div>
 					</div>

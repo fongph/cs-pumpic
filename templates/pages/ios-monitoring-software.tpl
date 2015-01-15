@@ -213,7 +213,7 @@
 		</div>
 		
 		{include file='../includes/landing_mobile/main-footer-promo.tpl'}
-		{include file='../includes/footer.tpl' disclaimer="../includes/landing_mobile/disclaimer-ios.tpl"}
+		{include file='../includes/footer.tpl' disclaimer=""} {* ../includes/landing_mobile/disclaimer-ios.tpl *}
 	</div>
 	{include file='../includes/analytics-footer.tpl'}
 </body>

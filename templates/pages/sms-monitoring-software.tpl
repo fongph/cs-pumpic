@@ -139,7 +139,7 @@
 		
 		{*include file='../includes/quick-link.tpl'*}
 		{include file='../includes/main-footer-promo.tpl'}
-		{include file='../includes/footer.tpl' disclaimer="../includes/landing_features/disclaimer-sms-monitoring.tpl"}
+		{include file='../includes/footer.tpl' disclaimer=""} {* ../includes/landing_features/disclaimer-sms-monitoring.tpl *}
 	</div>
 	{include file='../includes/analytics-footer.tpl'}
 </body>

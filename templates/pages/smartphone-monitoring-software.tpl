@@ -21,7 +21,7 @@
                                     
                                     <div class="col-lg-6 col-md-6">
                                         <div class="visual-text text-right">
-                                            <h1 class="title">SMARTPHONE MONITORING <br />PARENTAL CONTROL APP</h1>
+                                            <h1 class="title">Smartphone Monitoring <br />Parental Control App{*SMARTPHONE MONITORING <br />PARENTAL CONTROL APP*}</h1>
                                             <p>Protect your children with Pumpic app.<br />
                                                 Control your kid’s smartphone usage remotely.</p>
                                             <ul class="compatibility">
@@ -63,7 +63,7 @@
 					</div>
 					<div class="col-sm-5 col-md-5 col-lg-5">
 						<div class="ipad-text">
-							<h2>SMARTPHONE MONITORING</h2>
+							<h2>Smartphone Monitoring{*SMARTPHONE MONITORING*}</h2>
 							 {*http://demo.{$domain}*} <a href="http://demo.{$domain}"  
                                                                                       class="featured-link link-hl ga-click"
                                                                                         ga-label-button="main-demo-looks"
@@ -83,7 +83,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-10 col-md-10 col-lg-10 col-sm-offset-1 col-md-offset-1 col-lg-offset-1 gutter-wide">
-						<h2 class="text-center">WHY PUMPIC</h2>
+						<h2 class="text-center">Why Pumpic{*WHY PUMPIC*}</h2>
 						<div class="row">
 							<div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
 								<h3 class="text-center"><img src="{$img}/icons/icon-easy-to-use.png" alt=""> Easy to use</h3>
@@ -105,7 +105,7 @@
                                                       
                 <div class="dark">
 			<div class="container">
-				<h2 class="text-center testimonial-title">TESTIMONIALS:</h2>
+				<h2 class="text-center testimonial-title">Testimonials{*TESTIMONIALS*}:</h2>
 				<div class="row">
 					<div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
 						<img src="{$img}/testimonials/testimonials_new_16.png" alt="" class="testimonial-photo">

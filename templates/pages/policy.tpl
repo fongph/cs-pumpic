@@ -16,21 +16,21 @@
 					<div class="col-lg-10 col-lg-offset-1">
 						<div class="row">
 							<div class="col-lg-12">
-								<h2 id="refund-policy">REFUND POLICY</h2>
+								<h2 id="refund-policy">Refund Policy{*REFUND POLICY*}</h2>
 								<article>
-									<h3 class="text-center">PUMPIC APPLICATION</h3>
+									<h3 class="text-center">Pumpic Application{*PUMPIC APPLICATION*}</h3>
 									<p class="text-justify">Need to make sure that your kids don’t mix with the wrong clique? Pumpic is here to help you. It is a cross-platform tracking application designed to track cell phone and tablet activity of your children. Pumpic childcare monitoring will help you protect your loved ones remotely and secure their happiness.</p>
-									<h3 class="text-center">REFUND POLICY</h3>
+									<h3 class="text-center">Refund Policy{*REFUND POLICY*}</h3>
 									<p class="text-justify">Every purchase of Pumpic products and their use are governed by this policy. Please read it through carefully before you make you purchase, since this Refund Policy sets forth the terms and conditions under which refunds are issued, your rights in regard to your purchases, including any essential restrictions and exclusions. By placing an order on Pumpic.com, you agree that your order shall be governed by this policy.</p>
-									<h3 class="text-center">REFUND CONDITIONS</h3>
+									<h3 class="text-center">Refund Conditions{*REFUND CONDITIONS*}</h3>
 									<p class="text-justify">As a subject to these Refund Policy conditions, you may be eligible for a full refund within 10 days starting from the date of your purchase. You confirm that your reasons don’t contradict with the Refund Policy Conditions outlined below. No refund will be issued after the refund period is over.</p>
 									<p class="text-justify">The refund may be applied only to the primary Pumpic subscription purchase. If you own more than one subscription, no refund will be available. Your money may be refunded only once. If you buy another Pumpic subscription at later time, this will not be a subject to any refund.
 Any purchase of Pumpic software at a discount price is non-refundable. No refund is issued if the customer refuses to update Pumpic version, which should follow any upgrade on the target phone.
 </p>
-									<h3 class="text-center">GENERAL</h3>
+									<h3 class="text-center">General{*GENERAL*}</h3>
 									<p class="text-justify">If you are not fully satisfied with your purchase of Pumpic software, you can be eligible for a full refund within 10 days starting from the date of its purchase according to the Refund Conditions outlined below. However, we are sure that most refunds can be avoided if you request professional help from our customer support.</p>
 									<p class="note">
-										NOTE : <span>Subscription Prolongation/Automatic Renewals Are Non-Refundable</span>
+										Note{*NOTE*} : <span>Subscription Prolongation/Automatic Renewals are Non-Refundable</span>
 									</p>
 									<div class="text-center">
 										<span class="title_bordered">Force majeure</span>
@@ -57,11 +57,11 @@ Any purchase of Pumpic software at a discount price is non-refundable. No refund
 										<li>The customer cannot utilize the application properly due to the work of any anti-virus or other software or other spyware installed on the target cell phone.</li>
 										<li>The customer cannot or does not want to additionally enable the Keylogger feature on the target Android device following the instructions provided by Pumpic customer support.</li>
 									</ul>
-									<h3 class="text-center">REFUND PROCEDURE</h3>
+									<h3 class="text-center">Refund Procedure{*REFUND PROCEDURE*}</h3>
 									<p class="text-justify">You are required to send your refund request to our support department at support@pumpic.com. We do not accept refund requests made via our Live Chat, or by phone. The refund decision is usually made within one or two business days.</p>
 								</article>
 								<div class="row_top_border">
-									<h2 id="privacy-policy">PRIVACY POLICY</h2>
+									<h2 id="privacy-policy">Privacy Policy{*PRIVACY POLICY*}</h2>
 									<p class="text-justify text-success">
 										This Privacy Policy shows how Pumpic collects, uses, maintains and discloses all the data collected from all users (hereinafter referred to as “User” or “Users”) of pumpic.com website (hereinafter referred to as “Site”). This Privacy Policy applies to the Site and all the products and services provided and offered by Pumpic.com.
 									</p>
@@ -75,7 +75,7 @@ Any purchase of Pumpic software at a discount price is non-refundable. No refund
 									</article>
 								</div>
 								<div class="row_top_border">
-									<h3 class="text-center">CONTACT US</h3>
+									<h3 class="text-center">Contact Us{*CONTACT US*}</h3>
 									<p class="text-center">
 										If you have any questions regarding the aforementioned Refund Policy, Privacy Policy or<br/>any other questions on operation of this Site, please feel free to contact us via
 									</p>

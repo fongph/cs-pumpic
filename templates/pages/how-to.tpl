@@ -20,7 +20,10 @@
 					</div>
 				</div>
 				<div class="row">
-					<h2>HOW PUMPIC MOBILE TRACKING APP WORKS</h2>
+					<h2>
+                                            How Pumpic Mobile Tracking App Works
+                                            {*HOW PUMPIC MOBILE TRACKING APP WORKS*}
+                                        </h2>
 					<ul class="thumbs">
 						<div class="col-sm-12 col-md-4">
 							<div class="thumbnail">
@@ -84,7 +87,7 @@
 				<div class="col-lg-12">
 					<h3 class="link_circle"><a href="/faq.html" class="text-success">
 					<span class="circle_ico"><i class="icon-help"></i></span>
-					FREQUENTLY ASKED QUESTIONS</a></h3>
+					Frequently Asked Questions{*FREQUENTLY ASKED QUESTIONS*}</a></h3>
 				</div>
 			</div>
 		</div>

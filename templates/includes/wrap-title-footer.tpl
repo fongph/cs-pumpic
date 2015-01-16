@@ -29,6 +29,9 @@
 	<script src="{$js}/fancy_checkbox.js"></script>
         <script src="{$js}/main.js"></script>
         
+        <!-- resize -->
+        <script src="{$js}/browser.js"></script>
+        
         <!-- lightbox -->
         <script src="{$js}/lightbox/lightbox.js"></script>
         

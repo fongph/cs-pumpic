@@ -152,7 +152,7 @@ h2, .h2 {
   font-size: 30px;
   font-weight: 300;
   text-align: center;
-  text-transform: uppercase;
+  text-transform: none; /* uppercase */
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   color: #4d4f5b;
   margin-top: 10px;
@@ -1700,7 +1700,7 @@ only screen and (max-device-width: 480px) {
   position: relative;
 }
 .form legend {
-  text-transform: uppercase;
+  text-transform: none; /* uppercase */
 }
 .form button {
   min-width: 195px;
@@ -1899,7 +1899,7 @@ textarea {
   color: #fff;
   text-align: center;
   padding: 10px 0;
-  text-transform: uppercase;
+  text-transform: none; /* uppercase */
 }
 .dtable h4 {
   display: inline-block;
@@ -2875,7 +2875,7 @@ article img.pull-right {
   background: #eaeaea;
   padding: 5px;
   font-size: 16px;
-  text-transform: uppercase;
+  text-transform: none; /* uppercase */
   text-align: center;
 }
 .note span {
@@ -3046,7 +3046,7 @@ article img.pull-right {
 }
 .arrow_bottom h3 {
   margin-top: 10px;
-  text-transform: uppercase;
+  text-transform: none; /* uppercase */
 }
 .arrow_bottom i {
   font-size: 36px;
@@ -3299,7 +3299,7 @@ article.post a:after {
 }
 
 article.post a {
-    text-transform: uppercase;
+    text-transform: none; /* uppercase */
     color: #4d4f5b;
     font-family: "Open Sans",Helvetica,Arial,sans-serif;
     font-size: 20px;
@@ -4199,7 +4199,7 @@ div[id^="attachment_"], div[id*=" attachment_"] {
     font-size: 20px;
     font-weight: lighter;
     font-family: "Open Sans",Helvetica,Arial,sans-serif;
-    text-transform: uppercase;
+    text-transform: none; /* uppercase */
     text-decoration: underline;
     margin-left: 10px;
 }

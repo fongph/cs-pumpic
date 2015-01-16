@@ -1,6 +1,6 @@
 <div class="light">
         <div class="container">
-                <h2 class="text-center">PUMPIC FEATURES</h2>
+                <h2 class="text-center">Pumpic Features</h2>
                 <div class="row">
                     
                     {*<table>

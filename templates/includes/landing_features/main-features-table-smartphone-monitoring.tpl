@@ -1,6 +1,6 @@
 <div class="{if $blockBg}{$blockBg}{else}dark{/if}">
         <div class="container">
-                <h2 class="text-center">OTHER FEATURES</h2>
+                <h2 class="text-center">Other Features{*OTHER FEATURES*}</h2>
                 <div class="row">
                     
                     <div id="table-container" class="tabel-col-3 tabel-md-col-3 tabel-sm-col-3">

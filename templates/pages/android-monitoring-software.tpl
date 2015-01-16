@@ -62,7 +62,7 @@
 					</div>
 					<div class="col-sm-5 col-md-5 col-lg-5">
 						<div class="ipad-text">
-							<h2>EASY-TO-USE CONTROL PANEL</h2>
+							<h2>Easy-to-Use Control Panel{*EASY-TO-USE CONTROL PANEL*}</h2>
 							<p>
                                 Try Control Panel demo to see Pumpic for Android in use.
                                 <br />
@@ -95,7 +95,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-10 col-md-10 col-lg-10 col-sm-offset-1 col-md-offset-1 col-lg-offset-1 gutter-wide">
-						<h2 class="text-center">WHY PUMPIC</h2>
+						<h2 class="text-center">Why Pumpic{*WHY PUMPIC*}</h2>
 						<div class="row">
 							<div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
 								<h3 class="text-center"><img src="{$img}/icons/icon-easy-to-use.png" alt=""> Easy to use</h3>
@@ -117,7 +117,7 @@
                                 <div class="row">
                                     <div class="arrow_bottom">
                                         <span><div class="no-click-video-guide"><i class="icon-angle-down text-green"></i></div></span> {* <a href="#"></a> *}
-                                        <h3>INSTALATION GUIDE</h3>
+                                        <h3>Instalation Guide{*INSTALATION GUIDE*}</h3>
                                     </div>
                                 </div>                                 
                                                                 
@@ -136,7 +136,7 @@
                                     <div class="text-center box-help">
                                         <a href="/faq.html" class="text-green"> 
                                             <i class="i-help"></i>
-                                            <span>FREQUENTLY ASKED QUESTIONS</span>
+                                            <span>Frequently Asked Questions{*FREQUENTLY ASKED QUESTIONS*}</span>
                                         </a>
                                     </div>    
                                 </div>        
@@ -151,7 +151,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-10 col-md-10 col-lg-10 col-sm-offset-1 col-md-offset-1 col-lg-offset-1 gutter-wide">
-						<h2 class="text-center">HOW PUMPIC SECURES YOUR KID</h2>
+						<h2 class="text-center">How Pumpic Secures Your Kid{*HOW PUMPIC SECURES YOUR KID*}</h2>
 						<div class="row">
 							<div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
 								<h3 class="text-center"><img src="{$img}/icons/ico-monitor-online-activity.png" alt=""></h3>
@@ -177,7 +177,7 @@
 		<!-- TESTIMONIALS -->
 		<div class="light">
 			<div class="container">
-				<h2 class="text-center testimonial-title">TESTIMONIALS:</h2>
+				<h2 class="text-center testimonial-title">Testimonials{*TESTIMONIALS*}:</h2>
 				<div class="row">
 					<div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
 						<img src="{$img}/testimonials/testimonials_new_10.png" alt="" class="testimonial-photo">

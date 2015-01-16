@@ -14,7 +14,7 @@
 			<div class="container">
 				<div class="col-lg-10 col-lg-offset-1">
 					<div class="row text-center">
-						<h2>CONTACT US</h2>
+						<h2>Contact Us{*CONTACT US*}</h2>
 						<p class="text-justify">We are a team of talented designers and developers, who joined forces to create unique and user-friendly childcare monitoring solution. We introduced Pumpic App for parents to take care of their children and secure their happiness. The application is supported by most of devices that run iOS and Android. We made it for people and convenience in use. If you have any questions or suggestions, which will make our service better, please feel free to contact us using the form below or via email.</p>
 						<p>
                                                     <a class="link_bordered">
@@ -38,7 +38,7 @@
                                                                 {* contactusSend contact_us=$smarty.post *}
 								<form action="" class="form-contact-us" name="send-mail-conyacy-us" method="POST">
 									<fieldset>
-										<legend class="uppercase">Send your questions to us</legend>
+										<legend class="uppercase">Send Your Questions to Us</legend>
 										<div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3">
                                                                                         <span class="info"></span>
 											<div class="form-group">

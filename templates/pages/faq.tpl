@@ -17,7 +17,7 @@
 					<div class="col-lg-10 col-lg-offset-1">
 						<div class="row">
 							<div class="col-lg-12">
-                                                                <h2 class="uppercase">Frequently Asked Questions</h2>   
+                                                                <h2 {*class="uppercase"*}>Frequently Asked Questions</h2>   
 								{*<h2>FREQUENTLY ASKED QUESTIONS</h2>*}
 								<div class="tab_category">
 									{include file='../includes/faq-category.tpl'}
@@ -297,7 +297,7 @@
 								<div class="form">
                                                                     <form action="" method="POST" name="form-faq" class="form-faq">
 										<fieldset>
-											<legend>Have any other questions?</legend>
+											<legend>Have any Other Questions?</legend>
 											<div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3">
                                                                                                 <span class="info"></span>
 												<div class="form-group">

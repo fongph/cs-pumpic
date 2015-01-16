@@ -14,7 +14,10 @@
 			<div class="container">
 						<div class="row">
 							<div class="col-lg-12">
-								<h2>PUMPIC IS YOUR ULTIMATE PARENTAL CONTROL MONITORING APP</h2>
+								<h2>
+                                                                    Pumpic is Your Ultimate Parental Control Monitoring App
+                                                                    {*PUMPIC IS YOUR ULTIMATE PARENTAL CONTROL MONITORING APP*}
+                                                                </h2>
 								<p class="text-center">Pumpic is mobile phone tracking software for parents of underage children worldwide. The application is safe, fast and reliable. Pumpic gives you easy and quick access to your kid’s device including call logs, SMS, location data, IM chats, social media activity and even more. Pumpic protects your children and secures their happiness.</p>
 							</div>
 						</div>
@@ -23,7 +26,9 @@
 								<div class="dhead">
 									<div class="row">
 										<div class="col-lg-5 col-md-5">
-											<h3>FEATURES:</h3>
+											<h3>
+                                                                                            Features{*FEATURES*}:
+                                                                                        </h3>
 											<div class="dth">
 												<span>Plan: </span>
 												<a class='box-plans' rel="basic" href="#plan=basic">Basic</a>&nbsp;
@@ -39,7 +44,7 @@
 											<!-- dtd -->
 										</div>
 										<div class="col-lg-7 col-md-7">
-                                                                                        <h3>about</h3> <!-- class="lg_dheader" --> 
+                                                                                        <h3>About</h3> <!-- class="lg_dheader" --> 
                                                                                         <div class="dth h47">
 												<h4 class="text-success">Read short descriptions of each feature and choose the plan that meets your needs entirely.</h4>
 											</div>

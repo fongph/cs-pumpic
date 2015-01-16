@@ -66,7 +66,7 @@
 					</div>
 					<div class="col-sm-5 col-md-5 col-lg-5">
 						<div class="ipad-text">
-							<h2 class="text-left">EASY-TO-USE CONTROL PANEL</h2>
+							<h2 class="text-left">Easy-to-Use Control Panel{*EASY-TO-USE CONTROL PANEL*}</h2>
 							<p>
                                 Try Control Panel demo to see Pumpic app in use.
                                 <br />
@@ -97,7 +97,7 @@
 		</div>
 		<div class="light">
 			<div class="container">
-				<h2 class="text-center testimonial-title">PUMPIC TESTIMONIALS:</h2>
+				<h2 class="text-center testimonial-title">Pumpic Testimonials{*PUMPIC TESTIMONIALS*}:</h2>
 				<div class="row">
 					<div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
 						<img src="{$img}/testimonials/testimonials_new_1.png" alt="" class="testimonial-photo">
@@ -128,7 +128,7 @@
                 
 		<div class="dark howtouse-pumpic">
 			<div class="container">
-				<h2 class="text-center">HOW TO GET PUMPIC</h2>
+				<h2 class="text-center">How to Get Pumpic{*HOW TO GET PUMPIC*}</h2>
 				<div class="howitworks-arrows">
 					<img src="{$img}/howitworks-arrows.png" class="" alt="">
 				</div>
@@ -159,7 +159,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-10 col-md-10 col-lg-10 col-sm-offset-1 col-md-offset-1 col-lg-offset-1 gutter-wide">
-						<h2 class="text-center">WHY PUMPIC</h2>
+						<h2 class="text-center">Why Pumpic{*WHY PUMPIC*}</h2>
 						<div class="row">
 							<div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
 								<h3 class="text-center"><img src="{$img}/icons/icon-easy-to-use.png" alt=""> Easy to use</h3>

@@ -427,9 +427,13 @@
     
     .visual-img-pc {
       position: relative;
-      bottom: -40px;
+      bottom: -40px;  
       display: block;
       max-width: 40%;
+    }
+    
+    .webkit .visual-img-pc {
+      bottom: -38px;  
     }
     
     .parent-control .visual p {

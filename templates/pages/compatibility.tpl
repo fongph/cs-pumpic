@@ -81,7 +81,8 @@
                                                             <form class="send_find_phone" method="POST" action="" name="send_find_phone">
                                                                         <fieldset>
                                                                                 <legend>
-                                                                                    CAN’T FIND YOUR DEVICE HERE?<span>LET’S CHECK IF IT IS COMPATIBLE:</span>
+                                                                                    Can’t Find Your Device Here?<span>Let’s Check if it is Compatible:</span>
+                                                                                    {*CAN’T FIND YOUR DEVICE HERE?<span>LET’S CHECK IF IT IS COMPATIBLE:</span>*}
                                                                                 </legend>
                                                                                 
                                                                                 <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3">

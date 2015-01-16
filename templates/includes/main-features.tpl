@@ -1,6 +1,6 @@
 		<div class="light">
 			<div class="container">
-				<h2 class="text-center">FEATURES</h2>
+				<h2 class="text-center">Features{*FEATURES*}</h2>
 				<div class="row">
 					<div class="col-sm-4 col-md-4 col-lg-4">
 						<div class="feature">

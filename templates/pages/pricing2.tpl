@@ -21,7 +21,7 @@
                     <div class="col-lg-10 col-lg-offset-1">
                         <div class="row">
                             <h2>
-                                PRICING & PLANS
+                                Pricing & Plans {*PRICING & PLANS*}
                             </h2>
                             <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1">
                                     <table class="tb_pricing table-bordered pricing-second">

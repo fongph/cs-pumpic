@@ -11,7 +11,7 @@
                                         
                                         <div class="box-discount-v2">
                                             <div class="discount-banner"><b>50%</b> discount!</div>
-                                            <p>Use a <b class="text-green">DISC7TRPR</b> 
+                                            <p>Use a <b class="text-green">DISC2015{*DISC7TRPR*}</b> 
                                                 <br />code to get a 50% discount</p>
                                         </div>
                                     </div>

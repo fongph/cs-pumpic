@@ -36,7 +36,7 @@
 						<!-- <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3"> -->
 							<div class="form">
                                                                 {* contactusSend contact_us=$smarty.post *}
-								<form action="" class="form-contact-us" name="send-mail-conyacy-us" method="POST">
+								<form action="" class="form-contact-us" name="send-mail-contact-us" method="POST">
 									<fieldset>
 										<legend class="uppercase">Send Your Questions to Us</legend>
 										<div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3">
@@ -89,7 +89,7 @@
                                                                                         <div class="fatal-error"></div>
                                                                                         
 											<p>Learn more from our <a href="/faq.html">FAQ</a> before submitting an application.</p>
-											<button class="btn btn-orange mod-center">Submit Ticket <!-- btn-warning <i class="icon-right-open"></i>-->
+											<button class="btn btn-orange mod-center event-submit">Submit Ticket <!-- btn-warning <i class="icon-right-open"></i>-->
 											</button>
 										</div>
 									</fieldset>

@@ -1270,49 +1270,35 @@ $("input[name='optionsRadios']").each(function(){
            $('#viber-whatsapp-skype').removeClass('w16p').addClass('w30p'); 
   }
   
-  /*Monay*/
-//  if($('.box-currancies').length) {
-//      // alert('blaaaaa');
-//      $('.box-currancies').currancy({},'run');
-//  }
-    
-  
-  
-//  $.ajax( {
-//      dataType: 'json',
-//      url: 'http://openexchangerates.org/api/latest.json?app_id=aef6d4fe78d94707b26b14e5aaa2a143',
-//      success: function(data) {
-//          
-//      }
-//  } );
-  
-  
-  /*
-  $.ajax({ dataType: 'jsonp', 
-            url: 'http://api.fixer.io/latest', 
-            success: function(data) { 
-                fx.rates = data.rates; 
-                fx.rates = $.extend(fx.rates, {'EUR': 0.125});
-                
-                console.log(fx.rates);
-                
-                demo(); 
-            } 
-   }); 
-   
-    var demo = function() { 
-        var rate = fx(1).from('USD').to('EUR'); 
-        var round = Math.round(rate * 100) / 100; 
-        console.log('USD100 equals EUR' + round); 
-    } 
-    */
-    
-    
-  
-  
-//    $width = $('#box-content-post img').width();
-//    $('#content img').css({
-//        'max-width' : $width , 'height' : 'auto'
-//    });
+// ga click 
+// login
+$('form[name="form-login"] .button-sumbit button').click(function(){
+    ga('send', 'event', 'form', 'submit', 'login');
+}); 
+
+// registration
+$('form[name="form-registration"] .button-sumbit button').click(function(){
+    ga('send', 'event', 'form', 'submit', 'registration');
+});
+
+// restore
+$('form[name="form-restore"] .button-sumbit button').click(function(){
+    ga('send', 'event', 'form', 'submit', 'restore');
+});
+
+// compatibility
+$('form[name="send_find_phone"] button.event-submit').click(function(){
+    ga('send', 'event', 'form', 'submit', 'compatibility-request');
+});
+
+// faq
+$('form[name="form-faq"] button.event-submit').click(function(){
+    ga('send', 'event', 'form', 'submit', 'faq-request');
+});
+
+// contact-us
+$('form[name="send-mail-contact-us"] button.event-submit').click(function(){
+    ga('send', 'event', 'form', 'submit', 'contact-request');
+});
   
 });

@@ -107,7 +107,7 @@
                                                                                                 {*<p class="bg-danger"></p>*}
                                                                                         </div>
                                                                                         <div class="fatal-error"></div>
-                                                                                        <button class="btn btn-warning">Submit<i class="icon-right-open"></i>
+                                                                                        <button class="btn btn-warning event-submit">Submit<i class="icon-right-open"></i>
                                                                                         </button>
                                                                                 </div>
                                                                         </fieldset>

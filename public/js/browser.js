@@ -8,9 +8,9 @@
 
         if($.browser.msie) {
             $body.addClass('msie')
-            var userAgent = userAgent.substring(0,userAgent.indexOf('.'));
-            var version = userAgent;
-            $body.addClass('msie' + version)
+            //var userAgent = userAgent.substring(0,userAgent.indexOf('.'));
+            //var version = userAgent;
+            //$body.addClass('msie' + version)
         }
         if($.browser.webkit) {
             $body.addClass('webkit')

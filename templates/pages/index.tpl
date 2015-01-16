@@ -131,17 +131,17 @@
 						<li>
 							<h3>Pick a subscription plan</h3>
                                                         <p>Visit our <a class="text-green underline" href="/store.html">Store</a>, check out available <b>subscription plans</b> and choose the one, which meets your expectations and <b>monitoring preferences</b>. 
-                                                            <br class="br" />After you submit the payment, you will receive an email with setup instructions.</p>
+                                                            <span class="br"></span>After you submit the payment, you will receive an email with setup instructions.</p>
 						</li>
 						<li>
 							<h3>Download and install</h3>
 							<p>Pumpic app installation process will take you no longer than <b>5 minutes</b>. Follow the guidelines pointed in the subscription email to complete the setup. 
-                                                            <br class="br" />Note that <b>physical access</b> to your kid’s device is <b>required</b>.</p>
+                                                            <span class="br"></span>Note that <b>physical access</b> to your kid’s device is <b>required</b>.</p>
 						</li>
 						<li>
 							<h3>Keep your kids safe</h3>
                                                         <p>Enter your <b>Control Panel</b> to start monitoring and protecting your children. Use the entire variety of tracking functions and secure your kids’ happiness. 
-                                                            <br class="br" />From now on Pumpic will let you <b>view calls</b> and <b>SMS</b>, track <b>location</b> and follow <b>online activity</b> remotely.</p>
+                                                            <span class="br"></span>From now on Pumpic will let you <b>view calls</b> and <b>SMS</b>, track <b>location</b> and follow <b>online activity</b> remotely.</p>
 						</li>
 					</ol>
 				</div>
@@ -156,17 +156,17 @@
 							<div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
 								<h3 class="text-center"><img src="{$img}/icons/icon-easy-to-use.png" alt=""> Easy to use</h3>
 								<p class="text-center">Pumpic is a feature-rich childcare software, which will help you take care of your children remotely. You will not have to spend a lot of time finding out how to use the app. 
-                                                                    <br class="br" />The service is user-friendly and does not require any technical skills.</p>
+                                                                    <span class="br"></span>The service is user-friendly and does not require any technical skills.</p>
 							</div>
 							<div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
 								<h3 class="text-center"><img src="{$img}/icons/ico-easy-to-install.png" alt=""> Easy to install</h3>
 								<p class="text-center">Follow the guidelines and start remote monitoring from your Control Panel right after the setup. Get physical access to the target device and install the app in 5 minutes only. 
-                                                                    <br class="br" />Pumpic childcare tracking app will keep your kids safe quick and quiet.</p>
+                                                                    <span class="br"></span>Pumpic childcare tracking app will keep your kids safe quick and quiet.</p>
 							</div>
 							<div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
 								<h3 class="text-center"><img src="{$img}/icons/ico-easy-to-contact.png" alt=""> Easy to contact</h3>
 								<p class="text-center">Pumpic application has user-friendly interface, which makes monitoring process more than simple. Enter your Control Panel and see all the data from your kid’s device in a readable form. 
-                                                                    <br class="br" />Feel free to contact our {*Customer*}Support Team at any time, for any reason.</p>
+                                                                    <span class="br"></span>Feel free to contact our {*Customer*}Support Team at any time, for any reason.</p>
 							</div>
 						</div>
 					</div>

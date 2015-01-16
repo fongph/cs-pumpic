@@ -45,7 +45,10 @@
 }
 
 .howtouse-pumpic p br, .br {
-    margin-bottom: 5px;
+/*    margin-bottom: 5px;*/
+    display: block;
+    margin: 5px 0 0;
+    content: " ";
 }
 
 /* --- buttons --- */

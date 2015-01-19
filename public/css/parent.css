@@ -1011,3 +1011,7 @@
     font-size: 24px;
     padding: 17px 23px;
 }
+
+.pc2 #promo-item.promo-title div {
+    font-size: 32px;
+}

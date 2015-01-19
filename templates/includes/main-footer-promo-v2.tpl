@@ -19,7 +19,7 @@
 			</div>
 		</div>
                <!-- end -->  *}                               
-               {*<!-- banner2 -->                                 
+               <!-- banner2 -->                                 
                <div class="promo">
 			<div class="container">
 				<div class="row">
@@ -38,9 +38,9 @@
 				</div>
 			</div>
 		</div>    
-                <!-- end -->*}         
+                <!-- end -->         
                 
-<!-- banner3 -->
+{*<!-- banner3 -->
         <div class="promo promo-parent-control">
             <div class="container">
                 <div class="row">
@@ -51,8 +51,8 @@
                         <div id="promo-item" class="promo-title col-sm-4 col-md-4 col-lg-4">
                             <div>
                                 Keep Control Of Your Child
-                                {*Keep your
-                                <span>family safe</span>*}
+                                <!-- Keep your
+                                <span>family safe</span -->
                                 <img class="promo-pointer pc-version" src="{$img}/button_pointer.png"/>
                             </div>
                         </div>
@@ -64,4 +64,4 @@
                 </div>
             </div>
         </div>
-        <!-- end -->                  
+        <!-- end -->*}                  

@@ -360,6 +360,11 @@
     background-position: -70px 0px;
 }
 
+.bg_teenagers {
+    background: url('../images/pc2/bg_teenagers_header.png') no-repeat;
+    background-position: 16.80672% 46px;
+}
+
 @media only screen and (max-width: 480px) {
    .parent-control .box-right-description {
          padding: 0px;  
@@ -379,7 +384,7 @@
         margin: 0px;
     }
     
-    .bg_famaly {
+    .bg_famaly, .bg_teenagers {
         background: none;
     }
 }
@@ -402,7 +407,7 @@
         margin: 0px;
     }
     
-    .bg_famaly {
+    .bg_famaly, .bg_teenagers {
         background: none;
     }
 }
@@ -439,11 +444,14 @@
       bottom: -38px;  
     }
     
+    .pc2 .visual-img-pc {
+        bottom: 0px;
+    }
     .parent-control .visual p {
         margin: 0px;
     }
     
-    .bg_famaly {
+    .bg_famaly, .bg_teenagers {
         background: none;
     }
 }  
@@ -470,6 +478,11 @@
     .bg_famaly {
         background: url('../images/parental_control/bg_famaly.png') no-repeat;
         background-position: -70px 0px;
+    }
+    
+    .bg_teenagers {
+        background: url('../images/pc2/bg_teenagers_header.png') no-repeat;
+        background-position: 16.80672% 46px;
     }
 }    
 /* ----------- // bottom banner -------- */
@@ -932,4 +945,69 @@
     .hidden-mobile {
         display: block !important;
     }
+}
+
+/* ================ // pc2 =================== */
+.box-teenagers .box-teenages-arrows-left img {
+    display: inline-block;
+    float: right;
+    position: relative;
+    right: -85px;
+}
+.box-teenagers .box-teenages-arrows-rigth {
+    display: inline-block;
+    float: left;
+    position: relative;
+    left: -85px;
+}
+
+.box-teenagers {
+    color: #4d4f5b;
+}
+
+.box-teenagers .t-title {
+    margin-bottom: 50px;
+}
+
+.box-teenagers .item-teenager > img {
+    margin-bottom: 20px;
+}
+
+.box-teenagers .item-teenager > h1 {
+    margin-top: 0px;
+/*    color: #4d4f5b;*/
+    font-size: 42px;
+    font-weight: bold;
+    height: 39px;
+    vertical-align: middle;
+    margin-bottom: 19px;
+}
+.box-teenagers .row > h3 {
+    padding: 0px;
+    font-size: 26px;
+    font-weight: 300;    
+}
+.box-teenagers .item-teenager > h1 > sup {
+    font-size: 32px;
+}
+
+.fz20 {
+    font-size: 20px;
+}
+
+.box-teenagers .item-teenager > p {
+    font-size: 16px;
+    font-weight: 300;
+    color: #4d4f5b;
+}
+
+.box-teenagers .notebook {
+    margin-top: 8px;
+    margin-bottom: 40px;
+}
+
+.box-teenagers .btn-red {
+    margin-top: 23px;
+    font-size: 24px;
+    padding: 17px 23px;
 }

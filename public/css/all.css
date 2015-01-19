@@ -1431,6 +1431,10 @@ only screen and (max-device-width: 480px) {
   .vertical_m > *.visible-lg {
     display: none !important;
   }
+  
+  .vertical_m {
+    padding: 10px 0;
+  }
 }
 @media only screen and (max-width: 991px) {
   .vertical_m {

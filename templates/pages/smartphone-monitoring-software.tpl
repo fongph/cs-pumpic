@@ -23,7 +23,7 @@
                                         <div class="visual-text text-right">
                                             <h1 class="title">Smartphone Monitoring <br />Parental Control App{*SMARTPHONE MONITORING <br />PARENTAL CONTROL APP*}</h1>
                                             <p>Protect your children with Pumpic app.<br />
-                                                Control your kid’s smartphone usage remotely.</p>
+                                                Control your kids smartphone usage remotely.</p>
                                             <ul class="compatibility">
                                                 <li><i class="icon-android"></i> (2.2 - 5.0)</li>
                                                 <li><i class="icon-apple"></i> (6.0 - 8.1.2)</li>
@@ -55,23 +55,31 @@
 					<div class="col-sm-5 col-md-5 col-lg-5 col-sm-offset-1 col-md-offset-1 col-lg-offset-1">
 						<div class="text-center relative_box">
 							<img src="{$img}/parental_control/ipad.png" alt="" class="ipad-pic">
-							<button class="btn btn-default _forward_pricing"
-                                                                ga-label-button="main-premium"
-                                                                ga-type-button="buy button"
-                                                                ga-event="click">Buy Premium</button>
 						</div>
 					</div>
 					<div class="col-sm-5 col-md-5 col-lg-5">
 						<div class="ipad-text">
 							<h2>Smartphone Monitoring{*SMARTPHONE MONITORING*}</h2>
-							 {*http://demo.{$domain}*} <a href="http://demo.{$domain}"  
-                                                                                      class="featured-link link-hl ga-click"
-                                                                                        ga-label-button="main-demo-looks"
-                                                                                        ga-type-button="buy button"
-                                                                                        ga-event="click"
-                                                                                      >View demo<i class="icon-angle-double-right"></i></a>
-							<p>Try Control Panel demo to see Pumpic Smartphone Monitoring in use.
-                                                        <br />Buy Pumpic to secure your kids and track their smartphones right now.</p>
+							<p>
+                                Try Control Panel demo to see Pumpic Smartphone Monitoring in use.
+                                <br />Buy Pumpic to secure your kids and track their smartphones right now.
+                            </p>
+                            <ul>
+                                <li>
+                                    <a href="http://demo.{$domain}"
+                                       class="featured-link link-hl ga-click"
+                                       ga-label-button="smartphone-monitor-demo-looks"
+                                       ga-type-button="demo link"
+                                       ga-event="click">View demo<i class="icon-angle-double-right"></i></a>
+                                </li>
+                                <li>
+                                    <a class="btn btn-green ga-click"
+                                       href="/store.html"
+                                       ga-label-button="smartphone-monitor-visit-store"
+                                       ga-type-button="buy button"
+                                       ga-event="click">Visit Store</a>
+                                </li>
+                            </ul>
 						</div>
 					</div>
 				</div>

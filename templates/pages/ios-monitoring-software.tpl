@@ -23,7 +23,7 @@
                                         <div class="visual-text text-right">
                                             <h1 class="title">iOS Parental Control App</h1>
                                             <p>Pumpic helps you keep your children safe.        
-                                                <br />Monitor your kid’s iOS device with Pumpic.</p>
+                                                <br />Monitor your kids iOS device with Pumpic.</p>
                                             <ul class="compatibility">
                                                 <li><i class="icon-android"></i> (2.2 - 5.0)</li>
                                                 <li><i class="icon-apple"></i> (6.0 - 8.1.2)</li>
@@ -59,10 +59,6 @@
 					<div class="col-sm-5 col-md-5 col-lg-5 col-sm-offset-1 col-md-offset-1 col-lg-offset-1">
 						<div class="text-center relative_box">
 							<img src="{$img}/parental_control/ipad.png" alt="" class="ipad-pic">
-							<button class="btn btn-default _forward_pricing"
-                                                                ga-label-button="main-premium"
-                                                                ga-type-button="buy button"
-                                                                ga-event="click">Buy Premium</button>
 						</div>
 					</div>
 					<div class="col-sm-5 col-md-5 col-lg-5">

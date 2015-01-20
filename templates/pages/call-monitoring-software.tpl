@@ -55,23 +55,31 @@
 					<div class="col-sm-5 col-md-5 col-lg-5 col-sm-offset-1 col-md-offset-1 col-lg-offset-1">
 						<div class="text-center relative_box">
 							<img src="{$img}/parental_control/ipad.png" alt="" class="ipad-pic">
-							<button class="btn btn-default _forward_pricing"
-                                                                ga-label-button="main-premium"
-                                                                ga-type-button="buy button"
-                                                                ga-event="click">Buy Premium</button>
 						</div>
 					</div>
 					<div class="col-sm-5 col-md-5 col-lg-5">
 						<div class="ipad-text">
 							<h2>Calls Monitoring{*CALLS MONITORING*}</h2>
-							 {*http://demo.{$domain}*} <a href="http://demo.{$domain}"  
-                                                                                      class="featured-link link-hl ga-click"
-                                                                                        ga-label-button="main-demo-looks"
-                                                                                        ga-type-button="buy button"
-                                                                                        ga-event="click"
-                                                                                      >View demo<i class="icon-angle-double-right"></i></a>
-							<p>Try Control Panel demo to see Pumpic Calls Monitoring in use.
-                                                        <br />Buy Pumpic to protect your kids and track their calls right now.</p>
+                            <p>
+                                Try Control Panel demo to see Pumpic Calls Monitoring in use.
+                                <br />Buy Pumpic to protect your kids and track their calls right now.
+                            </p>
+                            <ul>
+                                <li>
+                                    <a href="http://demo.{$domain}"
+                                       class="featured-link link-hl ga-click"
+                                       ga-label-button="call-monitor-demo-looks"
+                                       ga-type-button="demo link"
+                                       ga-event="click">View demo<i class="icon-angle-double-right"></i></a>
+                                </li>
+                                <li>
+                                    <a class="btn btn-green ga-click"
+                                       href="/store.html"
+                                       ga-label-button="call-monitor-visit-store"
+                                       ga-type-button="buy button"
+                                       ga-event="click">Visit Store</a>
+                                </li>
+                            </ul>
 						</div>
 					</div>
 				</div>

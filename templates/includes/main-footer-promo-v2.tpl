@@ -27,7 +27,7 @@
 						<div>
 							<img src="{$img}/image_banners_2.png" class="visible-lg" height="132" width="367" alt="">
 						</div>
-						<div class="promo-text"><span>Keep Control Of Your Child</span></div>
+						<div class="promo-text">Prevent Troubles Remotely<br /><span>Secure Kids’ Happiness</span></div>
 						<div>
 							<button id="promo-footer-buy" class="btn btn-default _forward_pricing"
                                                                 ga-label-button="{if $labelButton}{$labelButton}{else}main-now{/if}"

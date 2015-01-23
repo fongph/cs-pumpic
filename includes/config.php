@@ -30,6 +30,7 @@ $config = array(
          ),
     
 	'php_compile' => array(
+        //'compatibility.html' => 'compatibility.php',
 		'compatibility_send.html' => 'compatibility_form.php',
                 'faq_send.html' => 'faq.php',
                 'contact_us_send.html' => 'contact_us.php',
@@ -53,7 +54,19 @@ $config = array(
             
                 // currancy
                 'currency.html'            => 'currency.php', 
-	)
+	),
+    
+    'db_phones' => array(
+        'host' => '188.40.64.2',
+        'username' => 'phones',
+        'password' => 'FxgUuFr2TqMR9yFjA5YBhZ3UVu68Kv',
+        'dbname' => 'phones',
+        'options' => array(
+            PDO::MYSQL_ATTR_INIT_COMMAND => 'set names utf8;',
+            PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
+            PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC
+        )
+    )
 );
-
-?>
+if(is_file(__DIR__ . '/config.development.php'))
+    $config = array_merge($config, (array) include __DIR__ . '/config.development.php');

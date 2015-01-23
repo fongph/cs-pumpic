@@ -5,3 +5,4 @@
 /public/security/wp-config.php
 /.gitignore~
 /.idea
+/includes/config.development.php

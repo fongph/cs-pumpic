@@ -3,11 +3,13 @@
 {*
     Template: hedaer HEADER ( ШАПКА СТРАНИЦЫ )
     Переменные:
+        robots (text): сключить или выключить индексацию от роботов ( yes | no ) * - default: yes
         title (text): вносим title - страницы. 
         description (text): вносим meta description ( описание страницы )
 *}    
     
-{include file='../includes/main/main-header.tpl' 
+{include file='../includes/main/main-header.tpl'
+    robots="no" 
     title="Pumpic mobile phone monitoring app for Android"
     description="Pumpic for Android is a new solution for parental control mobile monitoring. Track your children’s smartphone usage, 
                 follow incoming and outbound calls, monitor browsing history and text messages, track GPS location and social network 

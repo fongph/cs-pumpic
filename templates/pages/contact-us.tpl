@@ -67,7 +67,7 @@
                                                                                                         <option value="0" selected>Choose your OS*</option>
 													<option value="iOS">IOS</option>
 													<option value="Android">Android</option>
-													<option value="blackberry">BlackBerry</option>
+													{*<option value="blackberry">BlackBerry</option>*}
 												</select>
                                                                                                 <input id="wos" 
                                                                                                        name="wos" 

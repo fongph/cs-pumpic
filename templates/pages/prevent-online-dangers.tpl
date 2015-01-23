@@ -10,7 +10,7 @@
 <body class="pc2">
 {include file='../includes/button-help.tpl'}
 {include file='../includes/button-goup.tpl'}
-	<div class="wrapper parent-control">
+	<div class="wrapper parent-control prevent-online-dangers">
 	{include file='../includes/topmenu-logo-login.tpl' topmenu_active='home'}	
 		<div class="visual">
                     

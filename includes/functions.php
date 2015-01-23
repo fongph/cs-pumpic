@@ -29,30 +29,40 @@ function dispatch($urlParams, $config){
                         
                         $smarty ->assign('api_device', $config['api_device']);
                         $smarty ->assign('site_id', $config['site_id']);
-	if(isset($config['php_compile'][$urlParams['uri']])){
-		include $config['php_compile'][$urlParams['uri']];
-	}else{
-			
-		$path = buildTplPath($urlParams,$config);
-		
-		if($path['answer'] == 404){
-			header404();
-		}
-		try{
-				
+    
+    try {
 
-			$smarty->display($path['tpl']);
-
-			/*Fenom::registerAutoload($config['fenom']['path']);
-			$fenom = Fenom::factory($config['fenom']['tpl_path'], $config['fenom']['tpl_path_compile']);
-			$fenom->display($path['tpl']);*/
-				
-		}catch(Exception $e){
-                        echo $e->getMessage() . '<br />';
-			echo $e->getTraceAsString();								
-		}
-			
-	}
+        if (isset($config['php_compile'][$urlParams['uri']])) {
+            include $config['php_compile'][$urlParams['uri']];
+            
+        } elseif($urlParams['uri'] == 'compatibility') {
+            throw new PageNotFoundException;
+            
+        } elseif(strpos($urlParams['uri'], 'compatibility/') === 0) {
+            include 'compatibility_device.php';
+            
+        } else {
+            
+            $path = buildTplPath($urlParams,$config);
+            if($path['answer'] == 404)
+                throw new PageNotFoundException;
+            
+            try{
+                
+                $smarty->display($path['tpl']); 
+                
+            } catch(Exception $e){
+                echo $e->getMessage() . '<br />';
+                echo $e->getTraceAsString();
+            }
+        }
+        
+    } catch (PageNotFoundException $e) {
+        header404();
+        $smarty->display('404.tpl');
+        die;
+    }
+    
 }
 
 function getURI(){
@@ -367,73 +377,6 @@ function stdToArray($obj){
   }
   return $rc;
 }
-
-/*
- * Compatibility device
- */
-function smarty_function_compatibilityDevice($params, $template) {
-    require_once 'lib/Curl.php';
-    
-     $_settings = array(
-         'api'          => false,
-        'title'         => 'Title Device',
-        'description'   => 'Descriptions!',
-        '_item'         => false,
-        '_error'        => false, 
-    );
-    
-    $_curl = new \system\Curl();
-    $_post = array(
-        'getModel' => $_GET['model'],
-    );
-    
-    
-    if(isset($params['api']['host']) and !empty($params['api']['host'])) {
-        $_settings['api'] = $params['api'];
-        $_curl-> get($params['api']['host'], $_post);
-    }    
-    
-    
-    $_respons = array();
-    if(is_object($_curl->response))
-        $_respons = stdToArray($_curl->response); 
-    else if(is_array($_curl->response))
-        $_respons = $_curl->response;
-    
-    
-    if(is_array($_respons) and count($_respons) > 0) {
-            // parce path img
-            if(isset($_respons['img']) and !empty($_respons['img'])) {
-//                $_img = explode('/',$_respons['img']);
-//                $_file_name = explode('.', $_img[count($_img) - 1]);
-                $_respons['big_img'] = $_respons['img'];
-                $_respons['img'] = $_respons['m_img'];
-//                $_respons['img'] = 'middle/'.$_file_name[0].'_medium.'.$_file_name[1];
-            } else {
-                $_respons['big_img'] = '';
-//                $_respons['img'] = '';
-            }    
-        
-            $_set = array(
-                'title' => $_respons['name'],
-                'description' => $_respons['name'],
-                '_item' => (array)$_respons
-            );
-            
-            $_settings = array_merge($_settings, $_set);
-                
-    } else {
-        //header("Location: /404.html");
-        //exit;
-        //$_settings['error'] = ($_curl->error) ? $_curl->error: 'This page is temporarily unavailable!';
-    }
-        
-    $template->assign('compatibilityDeviceUri', $_GET['model']);
-    
-    // init output params!
-    $template->assign($params['out'], $_settings);
-}
-
 
 /*
  * Features ( generate Plans )
@@ -885,5 +828,4 @@ function hasAccess() {
     return $_result;
 }
 
-
-?>
+class PageNotFoundException extends Exception {}

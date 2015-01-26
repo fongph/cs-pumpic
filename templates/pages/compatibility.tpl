@@ -122,13 +122,6 @@
 	{include file='../includes/footer.tpl'}
 	</div>
 	{include file='../includes/analytics-footer.tpl'}
-        <script type="text/javascript">
-            $(document).ready(function(){
-                $('#header-menu-store-link').click(function(){
-                    ga('send', 'event', 'store link', 'click', 'compatibility-store-header');
-                });
-            });
-        </script>
 </body>
 </html>
 {/strip}	

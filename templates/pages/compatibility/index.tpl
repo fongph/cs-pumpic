@@ -75,7 +75,9 @@
                     </div>
                 </div>
             </div>
-            {include file='../../includes/compatibility-footer-promo.tpl' model=$compatibilityDeviceUri}
+            {*include file='../../includes/compatibility-footer-promo.tpl' model=$compatibilityDeviceUri*}
+            
+            {include file='../../includes/main-footer-promo.tpl'}
         </div>
 
 	{include file='../../includes/footer.tpl'}

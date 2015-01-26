@@ -69,17 +69,22 @@
                                                         <ul>
                                                             <li>
                                                                 <a href="http://demo.{$domain}" 
-                                                                   class="featured-link link-hl ga-click"
-                                                                   ga-label-button="main-demo-looks"
-                                                                   ga-type-button="demo link"
-                                                                   ga-event="click">View demo<i class="icon-angle-double-right"></i></a>
+                                                                   class="featured-link link-hl ga-action-click"
+                                                                   
+                                                                   ga-action ="click"
+                                                                   ga-category="demo link"
+                                                                   ga-label="body"
+                                                                   
+                                                                   >View demo<i class="icon-angle-double-right"></i></a>
                                                             </li>
                                                             <li>
-                                                                <a class="btn btn-green ga-click"
+                                                                <a class="btn btn-green ga-action-click"
                                                                     href="/store.html"
-                                                                    ga-label-button="main-now"
-                                                                    ga-type-button="buy button"
-                                                                    ga-event="click">Visit Store</a>
+                                                                    
+                                                                    ga-action ="click"
+                                                                    ga-category="store link"
+                                                                    ga-label="body"
+                                                                    >Visit Store</a>
                                                             </li>
                                                         </ul>
                                                         
@@ -178,29 +183,6 @@
 		{include file='../includes/footer.tpl'}
 	</div>
 	{include file='../includes/analytics-footer.tpl'}
-        <script type="text/javascript">
-            $(document).ready(function(){
-                $('#plans-block-buy-basic').click(function(){
-                    ga('send', 'event', 'buy button', 'click', 'main-basic');
-                });
-                
-                $('#plans-block-buy-premium').click(function(){
-                    ga('send', 'event', 'buy button', 'click', 'main-premium');
-                });
-                
-                $('#plans-block-store').click(function(){
-                    ga('send', 'event', 'store link', 'click', 'main-store-body');
-                });
-                
-                $('#plans-block-view-demo').click(function(){
-                    ga('send', 'event', 'demo link', 'click', 'main-demo-prices');
-                });
-                
-                $('#header-menu-store-link').click(function(){
-                    ga('send', 'event', 'store link', 'click', 'main-store-header');
-                });
-            });
-        </script>
 </body>
 </html>
 {/strip}

@@ -103,17 +103,6 @@
 		{include file='../includes/footer.tpl'}
 	</div>
 	{include file='../includes/analytics-footer.tpl'}
-        <script type="text/javascript">
-            $(document).ready(function(){
-                $('#promo-footer-buy').click(function(){
-                    ga('send', 'event', 'buy button', 'click', 'contacts-now');
-                });
-                
-                $('#header-menu-store-link').click(function(){
-                    ga('send', 'event', 'store link', 'click', 'contacts-store-header');
-                });
-            });
-        </script>
 </body>
 </html>
 {/strip}

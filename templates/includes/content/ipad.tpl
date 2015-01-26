@@ -21,17 +21,17 @@
                                     <ul>
                                         <li>
                                             <a href="http://demo.{$domain}"
-                                               class="featured-link link-hl ga-click"
-                                               ga-label-button="android-demo-looks"
-                                               ga-type-button="demo link"
-                                               ga-event="click">View demo<i class="icon-angle-double-right"></i></a>
+                                               class="featured-link link-hl ga-action-click"
+                                                ga-action ="{$gaAction}"
+                                                ga-category="{$gaDemoLinkCat}"
+                                                ga-label="{$gaLabel}">View demo<i class="icon-angle-double-right"></i></a>
                                         </li>
                                         <li>
-                                            <a class="btn btn-green ga-click"
-                                               href="/store.html"
-                                               ga-label-button="android-visit-store"
-                                               ga-type-button="buy button"
-                                               ga-event="click">Visit Store</a>
+                                            <a class="btn btn-green ga-action-click"
+                                                ga-action ="{$gaAction}"
+                                                ga-category="{$gaStoreLinkCat}"
+                                                ga-label="{$gaLabel}"
+                                               >Visit Store</a>
                                         </li>
                                     </ul>
                             </div>

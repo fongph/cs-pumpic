@@ -14,18 +14,22 @@
                     </div>
                 </div>
                 <div id="promo-item" class="promo-button col-sm-2 col-md-2 col-lg-2">
-                    <a href="/store.html" class="banner-v3-button btn btn-red">Buy Pumpic</a>
+                    <a href="/store.html" class="banner-v3-button btn btn-red ga-action-click"
+                       ga-action ="click"
+                       ga-category="buy pumpic"
+                       ga-label="banner"
+                       >Buy Pumpic</a>
                 </div>
                 <img src="{$img}/parental_control/mobile_small_baner.png" class="visible-mobile-lg" height="95" width="166" alt="" />
             </div>
         </div>
     </div>
 </div>  
-<script type="text/javascript">
+{*<script type="text/javascript">
     $(document).ready(function(){
         $('#promo-item button').click(function(){
             ga('send', 'event', 'buy button', 'click', 'compatibility-now-{$compatibilityDeviceUri}');
         });
     });
-</script>
+</script>*}
 <!-- end -->

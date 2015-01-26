@@ -38,7 +38,7 @@ $(function() {
         
         if(_ga_action && _ga_category && _ga_label) {
             ga('send', 'event', _ga_category, _ga_action, _ga_label);
-            alert( 'category = '+_ga_category + ' action = ' +  _ga_action + ' label =' + _ga_label );
+            // alert( 'category = '+_ga_category + ' action = ' +  _ga_action + ' label =' + _ga_label );
         }
     });
     

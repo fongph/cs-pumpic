@@ -1,4 +1,4 @@
-{closeAccess}
+{*closeAccess*}
 
 {*
     Template: hedaer HEADER ( ШАПКА СТРАНИЦЫ )

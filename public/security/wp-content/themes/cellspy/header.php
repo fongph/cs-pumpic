@@ -25,6 +25,7 @@
     <link href="<?php echo getStaticUrl();?>/css/all.css" rel="stylesheet">
     
     <link href="<?php echo getStaticUrl();?>/css/parent.css" rel="stylesheet">
+    <link href="<?php echo getStaticUrl();?>/css/wp-post.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -65,7 +66,7 @@
 */ ?>
 </head>
 
-<body>
+<body class="wp-blog">
     
     <?php /*  <?= wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav navbar-nav' ) ) ?> */ ?>
     

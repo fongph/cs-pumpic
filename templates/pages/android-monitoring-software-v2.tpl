@@ -65,7 +65,16 @@
                 Block Basic/Premium
         *}
         {include file='../includes/content/plans.tpl'}
-
+        
+        {*
+            Template: FEATURES TABLE
+            Переменные:
+                blockBg (text): Стиль блока ( dark / light ) *default: dark
+        *}
+        {include file='../includes/content/features-table.tpl' 
+                blockBg="dark"
+        }
+        
         {*
             Template: SECURES
             Переменные:

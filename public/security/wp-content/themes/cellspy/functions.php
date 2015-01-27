@@ -1,4 +1,25 @@
 <?php
+// Add buttons to html editor
+add_action('admin_print_footer_scripts','eg_quicktags');
+function eg_quicktags() {
+?>
+<script type="text/javascript" charset="utf-8">
+    /* Adding Quicktag buttons to the editor Wordpress ver. 3.3 and above
+    * - Button HTML ID (required)
+    * - Button display, value="" attribute (required)
+    * - Opening Tag (required)
+    * - Closing Tag (required)
+    * - Access key, accesskey="" attribute for the button (optional)
+    * - Title, title="" attribute (optional)
+    * - Priority/position on bar, 1-9 = first, 11-19 = second, 21-29 = third, etc. (optional)
+    */
+    QTags.addButton( 'eg_paragraph', 'p', '<p>', '</p>', 'p' );
+    QTags.addButton( 'eg_pre', 'pre','<pre lang="php">', '</pre>', 'q' );
+    QTags.addButton( 'eg_listImages', 'listImages','<ul class="ul-list-images">', '</ul>', 'listImages' );
+</script>
+<?php
+}
+
 
 if ( !function_exists('cellspy_r_banner_buy_1') ) {
     function cellspy_r_banner_buy_1() {

@@ -6,15 +6,15 @@
                 <div class="row">
                     <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
                         <h3 class="text-center"><img src="{$img}/icons/icon-easy-to-use.png" alt=""> Easy to use</h3>
-                        <p class="text-center">Pumpic will not make you puzzle out the entrails. The installation process as well as the use of the service is simple enough to understand in several minutes. Select a subscription plan, submit your payment, set it up and start protecting your kids with Pumpic immediately.</p>
+                        <p class="text-center">Pumpic is a feature-rich childcare software, which will help you take care of your children remotely. You will not have to spend a lot of time finding out how to use the app.<br/><br/>The service is user-friendly and does not require any technical skills.</p>
                     </div>
                     <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
                         <h3 class="text-center"><img src="{$img}/icons/ico-easy-to-install.png" alt=""> Easy to install</h3>
-                        <p class="text-center">The process of Pumpic app <a href="http://cp.pumpic.com/how-to-install/android-instructions.html">installation on Android</a> smartphones will take no longer than 5 minutes. At the same time, rooting is optional, in case you want to get access to extended functions. You can use Pumpic right after the set-up is done.</p>
+                        <p class="text-center">Follow the guidelines and start remote monitoring from your Control Panel right after the setup. Get physical access to the target device and install the app in 5 minutes only. <br/><br/>Pumpic mobile tracking app will keep your kids safe quick and quiet.</p>
                     </div>
                     <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
                         <h3 class="text-center"><img src="{$img}/icons/ico-easy-to-contact.png" alt=""> Easy to contact</h3>
-                        <p class="text-center">Pumpic has user-friendly interface for you to start enjoying all available tracking features soon after installation. The app is perfectly compatible with your kid’s Android device. It requires no additional skills or knowledge to use its monitoring advantages.</p>
+                        <p class="text-center">Pumpic application has user-friendly interface, which makes monitoring process more than simple. Enter your Control Panel and see all the data from your kid’s device in a readable form.<br/><br/>Feel free to contact our Support Team at any time, for any reason.</p>
                     </div>
                 </div>
             </div>

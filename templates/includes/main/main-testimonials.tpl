@@ -3,24 +3,24 @@
             <h2 class="text-center testimonial-title">Testimonials:</h2>
             <div class="row">
                     <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
-                            <img src="{$img}/testimonials/testimonials_new_10.png" alt="" class="testimonial-photo">
+                            <img src="{$img}/testimonials/testimonials_new_1.png" alt="" class="testimonial-photo">
                             <div class="testimonial-text">
-                                    <h4>Jessy K. – mother of 3 children</h4>
-                                    <p>“With Pumpic app on my Android smartphone I no longer worry about my kids. They are under my constant care and control every single minute.”</p>
+                                    <h4>Jane A. – mother of twins</h4>
+                                    <p>“I didn’t know such technology existed. It made my life easier and helped me big time. I can track my kids’ calls, texts messages and social media to save them from online predators and misgiving communications.”</p>
                             </div>
                     </div>
                     <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
-                            <img src="{$img}/testimonials/testimonials_new_11.png" alt="" class="testimonial-photo">
+                            <img src="{$img}/testimonials/testimonials_new_2.png" alt="" class="testimonial-photo">
                             <div class="testimonial-text">
-                                    <h4>Carl M. – father of an 11-year-old daughter</h4>
-                                    <p>“Pumpic is the best solution for parental control on Android phones. Now, I know what my kids are up to, I can browse their social media and scheduled events.”</p>
+                                    <h4>Karen and Mike – parents of a 12-year-old daughter</h4>
+                                    <p>“Our daughter was acting weird after we moved to another state. When we installed Pumpic, we found that she was bullied by her classmate on Facebook. We gathered with teachers and parents and talked the whole thing out. Thank you!”</p>
                             </div>
                     </div>
                     <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
-                            <img src="{$img}/testimonials/testimonials_new_12.png" alt="" class="testimonial-photo">
+                            <img src="{$img}/testimonials/testimonials_new_3.png" alt="" class="testimonial-photo">
                             <div class="testimonial-text">
-                                    <h4>Mark D. – father of a 15-year-old son</h4>
-                                    <p>“Pumpic does its best with my son’s Android tab. I tend to worry a lot about my children’s internet usage. Now, I can block unwanted sites like 18+ remotely.”</p>
+                                    <h4>Logan T – father of a 14-year-old son</h4>
+                                    <p>“Pumpic has really made my life easier. Now, I can take care of my kid, even when I’m far from home. I can block 18+ websites and applications. It’s good to know that my son is safe and secured wherever I go.”</p>
                             </div>
                     </div>
             </div>

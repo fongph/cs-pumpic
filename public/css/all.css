@@ -159,6 +159,23 @@ h2, .h2 {
   margin-bottom: 20px;
 }
 
+h3, .h3 {
+  font-size: 20px;
+  font-weight: 300;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  color: #4d4f5b;
+  margin: 0;
+  padding-bottom: 10px;
+}
+
+h4, .h4 {
+  font-size: 16px;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  color: #4d4f5b;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
 .big_header {
   font-size: 30px;
   text-transform: none !important;
@@ -173,19 +190,10 @@ h2, .h2 {
   font-weight: 500;
 }
 
-h3, .h3 {
-  font-size: 20px;
-  font-weight: 300;
-  font-family: "Open Sans", Helvetica, Arial, sans-serif;
-  color: #4d4f5b;
-  margin: 0;
-  padding-bottom: 10px;
-}
+
 h3.title_list {
   font-size: 22px;
 }
-
-
 .h2, .h1, .h3 {
     text-align: left;
 }
@@ -201,13 +209,7 @@ h3 a:hover {
   color: inherit;
 }
 
-h4, .h4 {
-  font-size: 16px;
-  font-family: "Open Sans", Helvetica, Arial, sans-serif;
-  color: #4d4f5b;
-  margin-top: 0;
-  margin-bottom: 10px;
-}
+
 h4.title_list {
   font-size: 16px;
 }
@@ -4008,6 +4010,7 @@ only screen and (max-device-width: 480px) {
 }
 
 /* fix h1...h6 */
+/*
 #box-content-post h1,
 #box-content-post h2,
 #box-content-post h3, 
@@ -4024,7 +4027,7 @@ only screen and (max-device-width: 480px) {
 
 
 #box-content-post h1 {
-  font-size: 35px; /* 38 */
+  font-size: 35px; 
 }
 #box-content-post h2 {
   font-size: 32px;
@@ -4045,7 +4048,7 @@ only screen and (max-device-width: 480px) {
   font-size: 16px;
   font-weight: bold;
 }
-
+*/
 
 #box-content-post h3:after {
     margin: 0px;

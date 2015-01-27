@@ -471,6 +471,10 @@
 /*      bottom: -38px;  */
     }
     
+    .webkit .smartphone-monitoring-software .visual-img-pc { 
+        bottom: -38px;
+    }
+    
     .pc2 .visual-img-pc {
         bottom: 0px;
     }

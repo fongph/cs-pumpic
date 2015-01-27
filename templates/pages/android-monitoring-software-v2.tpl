@@ -44,7 +44,7 @@
                 textAlign (text): позиция текста. ( left|center|right ) *default: right
                 title (text): название блока.
                 description (text): описание баннера.
-                listText (text): список параметров.
+                listText (text): список параметров. * - разделитель "|"
             
         *}
         {include file='../includes/content/info/info-promo.tpl'
@@ -56,7 +56,7 @@
             description = "Pumpic takes care of your children safety.        
                            <br />Track your kids’ Android device remotely."
 
-            listText = "text1|text2"               
+            listText = "Follow Calls and SMS|Track GPS location|Monitor online activity"               
         }
         
         {*

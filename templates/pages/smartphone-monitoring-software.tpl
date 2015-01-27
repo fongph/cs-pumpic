@@ -8,7 +8,7 @@
 <body>
 {include file='../includes/button-help.tpl'}
 {include file='../includes/button-goup.tpl'}
-	<div class="wrapper landing-features">
+	<div class="wrapper landing-features smartphone-monitoring-software">
 	{include file='../includes/topmenu-logo-login.tpl' topmenu_active='home'}	
 		<div class="visual smartphone">
                     

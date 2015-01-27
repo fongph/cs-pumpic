@@ -380,8 +380,13 @@
       bottom: 0px;
       display: block;
       margin: 12px auto 0px;
-      max-width: 55% !important;
+      max-width: 55%;
       text-align: center;
+    }
+    
+    .call-monitoring-software .visual-img-pc,
+    .smartphone-monitoring-software .visual-img-pc {
+        max-width: 55% !important;
     }
     
     .parent-control .visual p {
@@ -407,6 +412,11 @@
       text-align: center;
     }
     
+    .call-monitoring-software .visual-img-pc,
+    .smartphone-monitoring-software .visual-img-pc {
+        max-width: 55% !important;
+    }
+    
     .parent-control .visual p {
         margin: 0px;
     }
@@ -425,6 +435,11 @@
         bottom: 0px;
         display: block;
         max-width: 56%;
+    }
+    
+    .call-monitoring-software .visual-img-pc,
+    .smartphone-monitoring-software .visual-img-pc {
+        max-width: 56% !important;
     }
     
     .parent-control .box-right-description {
@@ -453,7 +468,7 @@
     }
     
     .webkit .visual-img-pc {
-      bottom: -38px;  
+/*      bottom: -38px;  */
     }
     
     .pc2 .visual-img-pc {
@@ -484,7 +499,16 @@
     .visual-img-pc {
       bottom: 0px;
       display: block;
-      max-width: 100% !important;
+      max-width: 100%;
+    }
+    
+    .call-monitoring-software .visual-img-pc,
+    .smartphone-monitoring-software .visual-img-pc { 
+        max-width: 100% !important;
+    }
+    
+    .smartphone-monitoring-software .visual-img-pc {
+        bottom: -40px;
     }
     
     .parent-control .visual p {

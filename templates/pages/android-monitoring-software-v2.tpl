@@ -1,13 +1,15 @@
-{closeAccess}
+{*closeAccess*}
 
 {*
     Template: hedaer HEADER ( ШАПКА СТРАНИЦЫ )
     Переменные:
+        robots (text): сключить или выключить индексацию от роботов ( yes | no ) * - default: yes
         title (text): вносим title - страницы. 
         description (text): вносим meta description ( описание страницы )
 *}    
     
-{include file='../includes/main/main-header.tpl' 
+{include file='../includes/main/main-header.tpl'
+    robots="no" 
     title="Pumpic mobile phone monitoring app for Android"
     description="Pumpic for Android is a new solution for parental control mobile monitoring. Track your children’s smartphone usage, 
                 follow incoming and outbound calls, monitor browsing history and text messages, track GPS location and social network 
@@ -27,9 +29,17 @@
             Template: MENU ( ГЛАВНОЕ МЕНЮ )
             Переменные:
                 topmenu_active (test): alias меню, которое будет подсвечиваться активным. 
+                // google analytics
+                gaStoreCat (text): категория аналитики на ссылку "Store"
+                gaAction (text): действие для всех кнопок.
+                gaLabel (text): короткое описание для всех кнопок.
         *}
 	{include file='../includes/main/main-top-menu.tpl' 
                 topmenu_active='home'
+
+                gaStoreCat = "store"
+                gaAction = "link click"
+                gaLabel = "header"
         }
         
         <!-- CONTENT -->
@@ -58,8 +68,24 @@
             Template: PLANS
             Переменные:
                 Block Basic/Premium
+                // google analytics
+                gaBasicCat (text): категория аналитики на кнопку "Buy Basic"
+                gaPremiumCat (text): категория аналитики на кнопку "Buy Pumpic"
+                gaStoreLinkCat (text): категория аналитики на ссылку "Store"
+                gaDemoLinkCat (text): категория аналитики на ссылку "View demo"
+                
+                gaAction (text): действие для всех кнопок.
+                gaLabel (text): короткое описание для всех кнопок. 
         *}
-        {include file='../includes/content/plans.tpl'}
+        {include file='../includes/content/plans.tpl'
+                gaBasicCat = "buy basic"
+                gaPremiumCat = "buy premium"
+                gaStoreLinkCat = "store link"
+                gaDemoLinkCat = "demo link"
+    
+                gaAction = "click"
+                gaLabel = "prices"
+        }
 
         {*
             Template: SECURES
@@ -78,6 +104,11 @@
                 imgAlt (text): описание для изображения.
                 title (text): название блока.
                 description (text): описание блока.
+                // google analytics
+                gaStoreLinkCat (text): категория аналитики на ссылку "Visit Store"
+                gaDemoLinkCat (text): категория аналитики на ссылку "View demo"
+                gaAction (text): действие для всех кнопок.
+                gaLabel (text): короткое описание для всех кнопок. 
         *}
         {include file='../includes/content/ipad.tpl' 
                 blockBg="dark"
@@ -85,7 +116,12 @@
                 imgAlt = "Android"
                 title = "Easy-to-Use Control Panel"
                 description = "Try Control Panel demo to see Pumpic for Android in use.
-                               <br />Buy Pumpic to keep your kids safe and secured right now."    
+                               <br />Buy Pumpic to keep your kids safe and secured right now."
+
+                gaStoreLinkCat ="store link"
+                gaDemoLinkCat = "demo link"
+                gaAction = "click"
+                gaLabel = "body"
         }
 
         {*
@@ -130,9 +166,17 @@
             Template: BANNER PROMO
             Переменные:
                 title (text): промо текст.
+                 // google analytics
+                gaBuyPumpicCat (text): категория аналитики на кнопку "Buy Pumpic"
+                gaAction (text): действие для всех кнопок.
+                gaLabel (text): короткое описание для всех кнопок. 
         *}
         {include file='../includes/content/banner-promo.tpl'
                 title = "Keep your <span>family safe</span>"
+
+                gaBuyPumpicCat = "buy pumpic"
+                gaAction = "click"
+                gaLabel = "banner"
         }
         <!-- END CONTENT -->    
            

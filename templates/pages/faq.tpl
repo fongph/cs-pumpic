@@ -270,12 +270,12 @@
 													<p>To block incoming calls from a specific phone number, add it to the Black list under the Settings tab. The app will automatically block attempts to reach the target cell phone user and the caller will hear only busy tones.</p>
 												</div>
 											</li>
-                                                                                        <li>
+                                                                                        {*<li>
 												<a id="other" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse34">How to start tracking BBM?</a>
 												<div id="collapse34" class="collapse">
 													<p>Open up BBM on the target phone. Tap on the icon with the BlackBerry symbol. Choose “Options”. Find the “Save Chat History” option and choose “Device”. Click “Agree” once it asks about saving the settings and save the changes.</p>
 												</div>
-											</li>
+											</li>*}
                                                                                         <li>
 												<a id="other" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse35">Where can I view the information on the target user’s SMS/call logs?</a>
 												<div id="collapse35" class="collapse">

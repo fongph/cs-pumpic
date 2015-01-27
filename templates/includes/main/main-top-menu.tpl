@@ -32,7 +32,12 @@
                             <li {if $topmenu_active=='compatibility'} class="active"{/if}>
                                 <a href="/compatibility.html">Compatibility</a>
                             </li>
-                            <li {if $topmenu_active=='pricing'} class="active"{/if} id="header-menu-store-link">
+                            <li class="{if $topmenu_active=='pricing'}active{/if} ga-action-click" 
+                                id="header-menu-store-link"
+                                ga-action ="{$gaAction}"
+                                ga-category="{$gaStoreCat}"
+                                ga-label="{$gaLabel}"
+                                >
                                 <a href="/store.html">Store</a>
                             </li>
                             <li {if $topmenu_active=='features'} class="active"{/if}>
@@ -70,12 +75,3 @@
         </div>
     </div>
 </div>                           
-{if isset($compatibilityDeviceUri)}
-<script type="text/javascript">
-    $(document).ready(function(){
-        $('#header-menu-store-link').click(function(){
-            ga('send', 'event', 'store link', 'click', 'compatibility-store-header-{$compatibilityDeviceUri}');
-        });
-    });
-</script>
-{/if}

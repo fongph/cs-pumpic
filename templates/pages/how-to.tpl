@@ -81,7 +81,9 @@
 					</ul>
 				</div>*}
 			</div>
-			{include file='../includes/plans-white.tpl'}
+			{*include file='../includes/plans-white.tpl'*}
+                        
+                        {include file='../includes/main-plans.tpl'}
 			
 			<div class="row">
 				<div class="col-lg-12">
@@ -94,29 +96,6 @@
 	{include file='../includes/footer.tpl'}
 	</div>
 	{include file='../includes/analytics-footer.tpl'}
-        <script type="text/javascript">
-            $(document).ready(function(){
-                $('#plans-block-store').click(function(){
-                    ga('send', 'event', 'store link', 'click', 'how-store-body');
-                });
-                
-                $('#plans-block-view-demo').click(function(){
-                    ga('send', 'event', 'demo link', 'click', 'how-demo-prices');
-                });
-                
-                $('#plans-block-buy-basic').click(function(){
-                    ga('send', 'event', 'buy button', 'click', 'how-basic');
-                });
-                
-                $('#plans-block-buy-premium').click(function(){
-                    ga('send', 'event', 'buy button', 'click', 'how-premium');
-                });
-                
-                $('#header-menu-store-link').click(function(){
-                    ga('send', 'event', 'store link', 'click', 'how-store-header');
-                });
-            });
-        </script>
 </body>
 </html>
 {/strip}	

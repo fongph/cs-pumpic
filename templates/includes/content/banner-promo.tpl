@@ -68,7 +68,13 @@
                     </div>
                 </div>
                 <div id="promo-item" class="promo-button col-sm-2 col-md-2 col-lg-2">
-                    <a href="http://{$domain}/store.html" class="banner-v3-button btn btn-red" id="promo-footer-buy">Buy Pumpic</a>
+                    <a href="http://{$domain}/store.html" 
+                       class="banner-v3-button btn btn-red ga-action-click" 
+                       id="promo-footer-buy"
+                        ga-action ="{$gaAction}"
+                        ga-category="{$gaBuyPumpicCat}"
+                        ga-label="{$gaLabel}"
+                       >Buy Pumpic</a>
                 </div>
                 <img src="{$img}/parental_control/mobile_small_baner.png" class="visible-mobile-lg" height="95" width="166" alt="" />
             </div>

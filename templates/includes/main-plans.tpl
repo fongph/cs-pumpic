@@ -12,7 +12,13 @@
                                                                 <div class="price">
                                                                         $11<sup>66</sup>/<sub>month</sub> 
                                                                 </div>
-                                                                <a href="http://{$domain}/store.html" class="btn btn-default" id="plans-block-buy-basic">Buy Basic</a>
+                                                                <a href="http://{$domain}/store.html" 
+                                                                   class="btn btn-default ga-action-click" 
+                                                                   id="plans-block-buy-basic"
+                                                                   ga-action ="click"
+                                                                   ga-category="buy basic"
+                                                                   ga-label="prices"
+                                                                   >Buy Basic</a>
                                                         </div>
                                                 </div>
                                         </div>
@@ -25,7 +31,13 @@
                                                                 <div class="price">
                                                                         $33<sup>33</sup>/<sub>month</sub> 
                                                                 </div>
-                                                                <a href="http://{$domain}/store.html" class="btn btn-default" id="plans-block-buy-premium">Buy Premium</a>
+                                                                <a href="http://{$domain}/store.html" 
+                                                                   class="btn btn-default ga-action-click" 
+                                                                   id="plans-block-buy-premium"
+                                                                   ga-action ="click"
+                                                                   ga-category="buy premium"
+                                                                   ga-label="prices"
+                                                                   >Buy Premium</a>
                                                         </div>
                                                 </div>
                                         </div>

@@ -83,10 +83,10 @@
                                             <div class="box-navigations">
                                                 <ul class="pagination">
                                                     {foreach from=$pages item=page}
-                                                        {if $page === $currentPage}
-                                                            <li class="active"><span class="current">{$page+1}</span></li>
-                                                        {elseif $page === false}
+                                                        {if $page === false}
                                                             <li class="disabled"><span class="ellipse">…</span></li>
+                                                        {elseif $page == $currentPage}
+                                                            <li class="active"><span class="current">{$page+1}</span></li>
                                                         {else}
                                                             <li><a href="/compatibility.html{if $page}?page={$page}{/if}" class="page-link" href="#page={$page+1}">{$page+1}</a></li>
                                                         {/if}

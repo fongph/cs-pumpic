@@ -403,7 +403,7 @@
       bottom: 0px;
       display: block;
       margin: 12px auto 0px;
-      max-width: 55% !important;
+      max-width: 55%;
       text-align: center;
     }
     
@@ -424,7 +424,7 @@
     .visual-img-pc {
         bottom: 0px;
         display: block;
-        max-width: 56% !important;
+        max-width: 56%;
     }
     
     .parent-control .box-right-description {
@@ -447,7 +447,7 @@
     
     .visual-img-pc {
       position: relative;
-      bottom: -40px;  
+/*      bottom: -40px;  */
       display: block;
       max-width: 40%;
     }

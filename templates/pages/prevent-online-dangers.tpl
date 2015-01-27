@@ -1,7 +1,7 @@
 {strip}
 {include file='../includes/wrap-title-header.tpl'}
 
-	<title>Prevent Online Dangers.</title>
+	<title>Prevent Online Dangers</title>
 	<meta name="description" content="Protect Your Kids Before It Is Too Late. Track location. View calls and SMS. Monitor online activity." />
         
         <meta name="robots" content="noindex,nofollow" />

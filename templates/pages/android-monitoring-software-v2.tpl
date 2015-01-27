@@ -29,17 +29,9 @@
             Template: MENU ( ГЛАВНОЕ МЕНЮ )
             Переменные:
                 topmenu_active (test): alias меню, которое будет подсвечиваться активным. 
-                // google analytics
-                gaStoreCat (text): категория аналитики на ссылку "Store"
-                gaAction (text): действие для всех кнопок.
-                gaLabel (text): короткое описание для всех кнопок.
         *}
 	{include file='../includes/main/main-top-menu.tpl' 
                 topmenu_active='home'
-
-                gaStoreCat = "store"
-                gaAction = "link click"
-                gaLabel = "header"
         }
         
         <!-- CONTENT -->
@@ -52,6 +44,7 @@
                 textAlign (text): позиция текста. ( left|center|right ) *default: right
                 title (text): название блока.
                 description (text): описание баннера.
+                listText (text): список параметров.
             
         *}
         {include file='../includes/content/info/info-promo.tpl'
@@ -62,30 +55,16 @@
             title = "Android Parental Control App"
             description = "Pumpic takes care of your children safety.        
                            <br />Track your kids’ Android device remotely."
+
+            listText = "text1|text2"               
         }
         
         {*
             Template: PLANS
             Переменные:
                 Block Basic/Premium
-                // google analytics
-                gaBasicCat (text): категория аналитики на кнопку "Buy Basic"
-                gaPremiumCat (text): категория аналитики на кнопку "Buy Pumpic"
-                gaStoreLinkCat (text): категория аналитики на ссылку "Store"
-                gaDemoLinkCat (text): категория аналитики на ссылку "View demo"
-                
-                gaAction (text): действие для всех кнопок.
-                gaLabel (text): короткое описание для всех кнопок. 
         *}
-        {include file='../includes/content/plans.tpl'
-                gaBasicCat = "buy basic"
-                gaPremiumCat = "buy premium"
-                gaStoreLinkCat = "store link"
-                gaDemoLinkCat = "demo link"
-    
-                gaAction = "click"
-                gaLabel = "prices"
-        }
+        {include file='../includes/content/plans.tpl'}
 
         {*
             Template: SECURES
@@ -104,11 +83,6 @@
                 imgAlt (text): описание для изображения.
                 title (text): название блока.
                 description (text): описание блока.
-                // google analytics
-                gaStoreLinkCat (text): категория аналитики на ссылку "Visit Store"
-                gaDemoLinkCat (text): категория аналитики на ссылку "View demo"
-                gaAction (text): действие для всех кнопок.
-                gaLabel (text): короткое описание для всех кнопок. 
         *}
         {include file='../includes/content/ipad.tpl' 
                 blockBg="dark"
@@ -117,11 +91,6 @@
                 title = "Easy-to-Use Control Panel"
                 description = "Try Control Panel demo to see Pumpic for Android in use.
                                <br />Buy Pumpic to keep your kids safe and secured right now."
-
-                gaStoreLinkCat ="store link"
-                gaDemoLinkCat = "demo link"
-                gaAction = "click"
-                gaLabel = "body"
         }
 
         {*
@@ -166,17 +135,9 @@
             Template: BANNER PROMO
             Переменные:
                 title (text): промо текст.
-                 // google analytics
-                gaBuyPumpicCat (text): категория аналитики на кнопку "Buy Pumpic"
-                gaAction (text): действие для всех кнопок.
-                gaLabel (text): короткое описание для всех кнопок. 
         *}
         {include file='../includes/content/banner-promo.tpl'
                 title = "Keep your <span>family safe</span>"
-
-                gaBuyPumpicCat = "buy pumpic"
-                gaAction = "click"
-                gaLabel = "banner"
         }
         <!-- END CONTENT -->    
            

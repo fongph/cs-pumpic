@@ -30,6 +30,21 @@
                                 <i class="i-header-info"></i> <a href="/compatibility.html">platform compatibility</a>
                             </li>
                         </ul>
+                        
+                        {if isset($listText)}
+                            
+                            {assign var="listExplode" value="|"|explode:$listText} 
+                            {if isset($listExplode)}
+                            <ul class="visual-header-dop-info">
+                                {foreach from=$listExplode item=_item}
+                                    <li>{$_item} <i class="item-list-yelow"></i></li>
+                                {/foreach}
+                            </ul>
+                            {/if}
+                            
+                        {/if}    
+                        
+                        
                     </div>
                     {if $imgAlign == "center"}
                         <img src="{$img}/{$imgUrl}" alt="{$imgAlt}" class="visual-img">

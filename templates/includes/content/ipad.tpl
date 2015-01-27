@@ -22,15 +22,15 @@
                                         <li>
                                             <a href="http://demo.{$domain}"
                                                class="featured-link link-hl ga-action-click"
-                                                ga-action ="{$gaAction}"
-                                                ga-category="{$gaDemoLinkCat}"
-                                                ga-label="{$gaLabel}">View demo<i class="icon-angle-double-right"></i></a>
+                                                ga-action ="click"
+                                                ga-category="demo link"
+                                                ga-label="body">View demo<i class="icon-angle-double-right"></i></a>
                                         </li>
                                         <li>
                                             <a class="btn btn-green ga-action-click"
-                                                ga-action ="{$gaAction}"
-                                                ga-category="{$gaStoreLinkCat}"
-                                                ga-label="{$gaLabel}"
+                                                ga-action ="click"
+                                                ga-category="store link"
+                                                ga-label="body"
                                                >Visit Store</a>
                                         </li>
                                     </ul>

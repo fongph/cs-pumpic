@@ -15,9 +15,9 @@
                                 <a href="http://{$domain}/store.html" 
                                    class="btn btn-default ga-action-click" 
                                    id="plans-block-buy-basic"
-                                   ga-action ="{$gaAction}"
-                                   ga-category="{$gaBasicCat}"
-                                   ga-label="{$gaLabel}"
+                                   ga-action ="click"
+                                   ga-category="buy basic"
+                                   ga-label="prices"
                                    >Buy Basic</a>
                             </div>
                         </div>
@@ -34,37 +34,16 @@
                                 <a href="http://{$domain}/store.html" 
                                    class="btn btn-default ga-action-click" 
                                    id="plans-block-buy-premium"
-                                   ga-action ="{$gaAction}"
-                                   ga-category="{$gaPremiumCat}"
-                                   ga-label="{$gaLabel}"
+                                   ga-action ="click"
+                                   ga-category="buy premium"
+                                   ga-label="prices"
                                    >Buy Premium</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            {if (isset($gaStoreLinkCat) 
-                    || isset($gaDemoLinkCat)) 
-                        && isset($gaAction) 
-                            && isset($gaLabel)} 
-                            
-               {include file='../main/main-plans-links.tpl'
-                        gaStoreLinkCat = $gaStoreLinkCat
-                        gaDemoLinkCat = $gaDemoLinkCat
-    
-                        gaAction = $gaAction
-                        gaLabel = $gaLabel
-                }             
-                            
-            {else}
-                {include file='../main/main-plans-links.tpl'
-                        gaStoreLinkCat = "store link"
-                        gaDemoLinkCat = "demo link"
-    
-                        gaAction = "click"
-                        gaLabel = "prices"
-                }
-            {/if}   
+            {include file='../main/main-plans-links.tpl'} 
         </div>
     </div>
 </div>

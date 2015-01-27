@@ -4,9 +4,9 @@
             <a href="/store.html" 
                class="featured-link ga-action-click" 
                id="plans-block-store"
-               ga-action ="{$gaAction}"
-               ga-category="{$gaStoreLinkCat}"
-               ga-label="{$gaLabel}"
+               ga-action ="click"
+               ga-category="store link"
+               ga-label="prices"
                >
                 Store<i class="icon-angle-double-right"></i>
             </a>
@@ -15,9 +15,9 @@
             <a href="http://demo.{$domain}" 
                class="featured-link link-hl ga-action-click" 
                id="plans-block-view-demo"
-               ga-action ="{$gaAction}"
-               ga-category="{$gaDemoLinkCat}"
-               ga-label="{$gaLabel}"
+               ga-action ="click"
+               ga-category="demo link"
+               ga-label="prices"
                >
                 View demo<i class="icon-angle-double-right"></i>
             </a>

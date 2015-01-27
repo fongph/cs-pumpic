@@ -71,9 +71,9 @@
                     <a href="http://{$domain}/store.html" 
                        class="banner-v3-button btn btn-red ga-action-click" 
                        id="promo-footer-buy"
-                        ga-action ="{$gaAction}"
-                        ga-category="{$gaBuyPumpicCat}"
-                        ga-label="{$gaLabel}"
+                        ga-action ="click"
+                        ga-category="buy pumpic"
+                        ga-label="banner"
                        >Buy Pumpic</a>
                 </div>
                 <img src="{$img}/parental_control/mobile_small_baner.png" class="visible-mobile-lg" height="95" width="166" alt="" />

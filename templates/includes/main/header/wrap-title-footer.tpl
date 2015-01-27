@@ -63,7 +63,6 @@
         
         <!-- init -->
         <script src="{$js}/scroll.js"></script>
-        <script src="{$js}/search.js"></script>
         <script src="{$js}/init.js"></script>
 {/strip}
 {include file='../header/analytics-header.tpl'}	

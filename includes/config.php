@@ -30,7 +30,7 @@ $config = array(
          ),
     
 	'php_compile' => array(
-        //'compatibility.html' => 'compatibility.php',
+        'compatibility.html' => 'compatibility.php',
 		'compatibility_send.html' => 'compatibility_form.php',
                 'faq_send.html' => 'faq.php',
                 'contact_us_send.html' => 'contact_us.php',

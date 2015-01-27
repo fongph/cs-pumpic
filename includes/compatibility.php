@@ -1,86 +1,40 @@
 <?php
-$_inc = dirname(__FILE__); // includes
-$b_dir = dirname( $_inc ); // folder sites directory
+/**
+ * @var $smarty Smarty
+ * @var $config array
+ * @var $urlParams array
+ */
 
-require_once $_inc.'/config.php';
-require_once $_inc.'/lib/Curl.php';
-require_once $_inc.'/lib/users/Order.php';
-$obj = new includes\lib\users\Order;
+use Models\Compatibility;
+require dirname( __DIR__ ).'/vendor/autoload.php';
 
-$smarty = new Smarty;
+$compatibility = new Compatibility(new PDO(
+    "mysql:dbname={$config['db_phones']['dbname']};host={$config['db_phones']['host']}",
+    $config['db_phones']['username'],
+    $config['db_phones']['password'],
+    $config['db_phones']['options']
+));
 
-// settings smarty
-$smarty->compile_check = true;
-$smarty->debugging = false;
-$smarty->force_compile = 1;
+$currentPage = (int)$_GET['page'] ?: 0;
 
-/* compatibility */
- $_settings = array(
-     'api'          => false,
-    'title'         => 'Title Device',
-    'description'   => 'Descriptions!',
-    '_item'         => false,
-    '_error'        => false, 
-);
-
-$_curl = new \system\Curl();
-$_post = array(
-    'getModel' => $_GET['model'],
-);
-    
-    
-if(isset($config['api_device']['host']) and !empty($config['api_device']['host'])) {
-    $_settings['api'] = $config['api_device'];
-    $_curl-> get($config['api_device']['host'], $_post);
-}    
-    
-    
-$_respons = array();
-if(is_object($_curl->response))
-    $_respons = stdToArray($_curl->response); 
-else if(is_array($_curl->response))
-    $_respons = $_curl->response;
-    
-    
-if(is_array($_respons) and count($_respons) > 0) {
-        // parce path img
-        $_respons['img'] = isset($_respons['m_img']) and !empty($_respons['m_img']) ? $_respons['m_img'] : '';
-//        if(isset($_respons['img']) and !empty($_respons['img'])) {
-//            $_img = explode('/',$_respons['img']);
-//            $_file_name = explode('.', $_img[count($_img) - 1]);
-//            $_respons['img'] = 'middle/'.$_file_name[0].'_medium.'.$_file_name[1];
-//        } else 
-//            $_respons['img'] = '';
-
-        $_set = array(
-            'title' => $_respons['name'],
-            'description' => $_respons['name'],
-            '_item' => (array)$_respons
-        );
-
-        $_settings = array_merge($_settings, $_set);
-
-} else {
-    //header("Location: /404.html");
-    //exit;
-    //$_settings['error'] = ($_curl->error) ? $_curl->error: 'This page is temporarily unavailable!';
+if(isAjax()){
+    if(!$_GET['json']) header('Content-Type: application/json');
+    $res = array();
+    if($_GET['os']) {
+        $res = $compatibility->getPhones(Compatibility::FIND_BY_OS, $currentPage, $_GET['os']);
+    } elseif($_GET['query']) {
+        $res = $compatibility->getPhones(Compatibility::FIND_BY_QUERY, $currentPage, $_GET['query']);
+    }
+    die(json_encode($res, true));
 }
-      
-// init output params!
-$smarty->assign('getSetting', $_settings);
 
-$smarty->setTemplateDir($config['smarty']['tpl_path']);
-$smarty->setCacheDir($config['smarty']['cache_path']);
-$smarty->setCompileDir($config['smarty']['tpl_path_compile']);
 
-$smarty->registerPlugin("function","year_now","print_current_year");
-$smarty->assign("domain",$config['domain']);
-$smarty->assign("domain_http",$config['domain_http']);
-$smarty->assign("img",$config['path_img']);
-$smarty->assign("css",$config['path_css']);
-$smarty->assign("js",$config['path_js']);
-$smarty ->assign('api_device', $config['api_device']);
-$smarty ->assign('site_id', $config['site_id']);
+$phones = $compatibility->getPhones(Compatibility::FIND_ALL,$currentPage);
+$paginationList = paginationByCount($currentPage, ceil($phones['count'] / Compatibility::devicesPerPage()));
 
-// init output params
-$smarty->display($b_dir.'/templates/pages/compatibility/index.tpl');
+$smarty->assign('phones', $phones['list']);
+$smarty->assign('currentPage', $currentPage);
+$smarty->assign('pages', $paginationList);
+$smarty->assign('api_device', $config['api_device']);
+
+$smarty->display('compatibility.tpl');

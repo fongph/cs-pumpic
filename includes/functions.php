@@ -369,6 +369,29 @@ function _redirect( $_url ) {
     die();
 }
 
+function isAjax()
+{
+    return !empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest';
+}
+
+function paginationByCount($current, $count)
+{
+    $p = array_slice(range(0, $count-1), $current+2 < $count ? ($current-2 > 0 ? $current-2 : 0) : $count-5, 5);
+    
+    if(reset($p) > 3){
+        $p = array_merge(array(0,1,false), $p);
+    } elseif(current($p)){
+        $p = array_merge(range(0, current($p)-1), $p);
+    }
+    
+    if(end($p) < $count-4){
+        $p = array_merge($p, array(false,$count-2,$count-1));
+    } elseif(current($p) < $count-1){
+        $p = array_merge($p, range(end($p)+1, $count-1));
+    }
+
+    return $p;
+}
 
 function stdToArray($obj){
   $rc = (array)$obj;

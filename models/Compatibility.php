@@ -6,37 +6,63 @@ use PDO;
 
 class Compatibility {
 
+    const FIND_ALL = 1;
+    const FIND_BY_OS = 2;
+    const FIND_BY_QUERY = 3;
+    
+    protected static $perPage = 12;
+    
     public function __construct(PDO $db)
     {
         $this->db = $db;
     }
     
-    public function getPhonesByQuery($value, $page = 0) {
-        global $config;
-        $values = array_slice(preg_split('/\s+/', trim($value)), 0, 4);
-        $searchString = implode('|', $values);
+    public static function devicesPerPage()
+    {
+        return self::$perPage;
+    }
 
-        if (strlen($searchString) > 1) {
-            $searchString = trim( strtolower( $searchString ) , '|');
-            $searchString = $this->db->quote( $searchString );
+    public function getPhones($searchType = self::FIND_ALL, $page = 0, $searchStr = '') {
+        
+        switch($searchType){
 
-            $count = $config['recordsOnPage'] + 1;
-            $start = $page * $count;
+            case self::FIND_ALL:
+                $whereQuery = '';
+                break;
+            
+            case self::FIND_BY_OS:
+                $whereQuery  = "WHERE `os` = {$this->db->quote($searchStr)} ";
+                break;
 
-            return $this->db->query("SELECT rowid as id, 
-                                    rowid as url, 
-                                    longname as name, 
-                                    path_small as img, 
-                                    path_big as b_img, 
-                                    path_middle as m_img,
-                                    os, 
-                                    os_ver as version, 
-                                    tested 
-                                FROM `phones` 
-                                WHERE LOWER(`longname`) RLIKE {$searchString} LIMIT {$start}, {$count}")->fetchAll();
-        } else {
-            return array();
+            case self::FIND_BY_QUERY:
+                if(!empty($searchStr))
+                    $whereQuery  = "WHERE LOWER(`longname`) RLIKE {$this->db->quote($searchStr)} ";
+                else $whereQuery = '';
+                break;
+
+            default: throw new \ErrorException('Illegal search type');
         }
+
+        $start = (int)$page * self::$perPage;
+        $data = $this->db->query("
+            SELECT SQL_CALC_FOUND_ROWS 
+                rowid as id,
+                rowid as url,
+                longname as name,
+                REPLACE( `longname`, ' ', '-') as uri_name,
+                path_small as img, 
+                path_big as b_img,
+                path_middle as m_img,
+                os, 
+                os_ver as version, 
+                tested FROM `phones`
+            {$whereQuery} 
+            LIMIT {$start}, " . self::$perPage)->fetchAll();
+
+        return array(
+            'count' => !empty($data) ? $this->db->query("SELECT FOUND_ROWS()")->fetchColumn() : 0,
+            'list' => $data,
+        );
     }
     
     public function getModel( $modelName ) {
@@ -125,19 +151,6 @@ class Compatibility {
             }
         }
         return $result;
-    }
-    
-    public function getPhonesByOS($os, $page = 0) {
-        $start = $page * 10;
-        return $this->db->query("SELECT rowid as id, 
-                    rowid as url, 
-                    longname as name, 
-                    path_small as img, 
-                    path_big as b_img,
-                    path_middle as m_img,
-                    os, 
-                    os_ver as version, 
-                    tested FROM `phones` WHERE `os` = {$this->db->quote($os)} LIMIT {$start}, 10")->fetchAll();
     }
     
 }

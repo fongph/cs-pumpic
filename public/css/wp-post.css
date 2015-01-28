@@ -124,6 +124,11 @@
   margin-bottom: 10px;
 }
 
+.wp-blog .widget_categories > h3, 
+.wp-blog .widget_tag_cloud > h3 {
+    color: #fff;
+}
+
 /* ============== // fix blockquote =============== */
 .wp-blog blockquote {
     text-align: center;

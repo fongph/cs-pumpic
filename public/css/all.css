@@ -126,10 +126,14 @@ ol > li {
   padding-bottom: 2px;
 }
 
+.wp-blog ol > li {
+    min-height: 22px;
+}
+
 ol > li:before {
   position: absolute;
   left: 10px;
-  top: -2px;
+  top: 0px; /* -2 */
   counter-increment: number;
   content: counter(number) ".";
   display: inline-block;

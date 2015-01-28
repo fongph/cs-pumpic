@@ -57,6 +57,7 @@ class Compatibility {
                 os_ver as version, 
                 tested FROM `phones`
             {$whereQuery} 
+            ORDER BY popularity DESC
             LIMIT {$start}, " . self::$perPage)->fetchAll();
 
         return array(

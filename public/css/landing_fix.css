@@ -81,7 +81,7 @@
     
     .block-android .visual-img-pc {
         margin-top: 0px;
-        width: 40%;
+/*        width: 40%;*/
     }
 }
 
@@ -183,7 +183,7 @@
     
     .block-sms .visual-img-pc,
     .block-call-monitoring .visual-img-pc {
-        max-width: 55%;
+/*        max-width: 55%;*/
         margin-top: 20px;
     }
     
@@ -208,7 +208,7 @@
     
     .block-sms .visual-img-pc {
         margin-top: 0px;
-        max-width: 30%;
+/*        max-width: 30%;*/
     }
     
     .block-call-monitoring .visual-img-pc {
@@ -242,7 +242,7 @@
     .block-sms .visual-img-pc {
         bottom: 0px;
         margin-top: 0px;
-        width: 40%;
+/*        width: 40%;*/
     }
     
     .block-call-monitoring .visual-img-pc {

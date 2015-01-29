@@ -17,7 +17,7 @@
 <body class="pc2">
 {include file='../includes/button-help.tpl'}
 {include file='../includes/button-goup.tpl'}
-	<div class="wrapper parent-control prevent-online-dangers">
+	<div class="wrapper parent-control prevent-online-dangers-v2 bg_bottom_images"> {* bg_teenagers *}
             
             <!-- TOP MENU -->
             {*
@@ -28,8 +28,33 @@
             {include file='../includes/main/main-top-menu.tpl' 
                     topmenu_active='home'
             }
+            
+            <!-- CONTENT -->
+            {*
+                Template: INFORNATION PROMO ( ОБЯЗАТЕЛЬНОЕ ПОЛЕ )
+                Переменные:
+                    imgUrl(url): ссылка на изображение. ( WxH: 437x325) * - не больше ОБЯЗАТЕЛЬНОЕ ПОЛЕ
+                    imgAlt (text): короткий текст для изображения.
+                    imgAlign (text): позиция изображения относительно текста. (left|center|right) *default: center
+                    textAlign (text): позиция текста. ( left|center|right ) *default: right
+                    title (text): название блока.
+                    description (text): описание баннера.
+                    listText (text): список параметров. * - разделитель "|"
+
+            *}
+            {include file='../includes/content/info/info-promo.tpl'
+                imgUrl = "pc2/bg_teenagers_header.png"
+                imgAlt = ""
+                imgAlign = "left bottom"
+                textAlign = "left"
+                title = "Prevent Online Dangers. <br />Pumpic Monitoring App."
+                description = "Protect your kids before it is too late. <br />
+                                            Track location. View calls and SMS. Monitor online activity."
+
+                listText = ""               
+            }
         
-            <!-- не стандартный блок -->
+            {*<!-- не стандартный блок -->
             <div class="visual">
 
                     <div class="container bg_teenagers">
@@ -46,7 +71,7 @@
                                         <ul class="compatibility">
                                             <li><i class="icon-android"></i> (2.2 - 5.0)</li>
                                             <li><i class="icon-apple"></i> (6.0 - 8.1.2)</li>
-                                            {*<li><i class="icon-blackberry"></i> (1.0 - 7.1)</li>*}
+                                            
                                             <li>
                                                 <i class="icon-info-circled"></i> <a href="/compatibility.html">platform compatibility</a>
                                             </li>
@@ -62,7 +87,7 @@
                         </div> <!-- .row -->
                     </div>
             </div>
-            <!-- end -->                    
+            <!-- end --> *}                   
 
             {include file='../includes/content/plans.tpl'}
 

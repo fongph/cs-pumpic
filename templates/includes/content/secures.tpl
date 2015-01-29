@@ -15,7 +15,7 @@
                         </div>
                         <div class="col-sm-4 col-md-4 col-lg-4">
                                 <div class="feature">
-                                        <img src="{$img}icons/icon-online-activity.png" alt="monitor online activity">
+                                        <img src="{$img}/icons/icon-online-activity.png" alt="monitor online activity">
                                         <h3>Follow online activity</h3>
                                         <ul class="feature_list">
                                                 <li>Monitor social media</li>
@@ -26,7 +26,7 @@
                         </div>
                         <div class="col-sm-4 col-md-4 col-lg-4">
                                 <div class="feature">
-                                        <img src="{$img}icons/icon-track-kids.png" alt="remote mobile monitoring">
+                                        <img src="{$img}/icons/icon-track-kids.png" alt="remote mobile monitoring">
                                         <h3>Track kids remotely</h3>
                                         <ul class="feature_list">
                                                 <li>Keep track of GPS location</li>

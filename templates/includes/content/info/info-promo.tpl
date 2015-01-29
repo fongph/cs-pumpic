@@ -5,13 +5,15 @@
         <div class="row">
 
             <div class="col-lg-10 col-lg-offset-1 banner-header">
-                {if $imgAlign == "left"}
-                    <div class="col-lg-5">
+                {assign var="position" value=" "|explode:$imgAlign}
+                
+                {if in_array('left', $position)}
+                    <div class="col-md-5 col-lg-6 visual-images-left">
                         <img src="{$img}/{$imgUrl}" alt="{$imgAlt}" class="visual-img-pc">   
                     </div> 
                 {/if}    
 
-                <div class="{if $imgAlign == "center"} col-lg-12 col-md-12 {else}col-lg-7 col-md-7{/if}">
+                <div class="{if $imgAlign == "center"} col-lg-12 col-md-12 {else}col-lg-6 col-md-6{/if}">
                     <div class="visual-text {if $textAlign}block-text-{$textAlign}{else}block-text-right{/if}">
                         <h1 class="title">{if $title} {$title} {else}Android Parental Control App{/if}</h1>
                         <p>
@@ -31,7 +33,7 @@
                             </li>
                         </ul>
                         
-                        {if isset($listText)}
+                        {if isset($listText) && $listText != ""}
                             
                             {assign var="listExplode" value="|"|explode:$listText} 
                             {if isset($listExplode)}
@@ -51,8 +53,8 @@
                     {/if}    
                 </div>
 
-                {if $imgAlign == "right"}
-                <div class="col-lg-5">
+                {if in_array('right', $position) || in_array('bottom', $position)}
+                <div class="visual-images-{if in_array('right', $position)}right{elseif in_array('bottom', $position)}bottom{/if} {if in_array('bottom', $position)}col-sm-7 col-md-6 mobile-version-inline{/if} {if in_array('right', $position)}col-sm-12 col-md-6 col-lg-6{/if}">
                      <img src="{$img}/{$imgUrl}" alt="{$imgAlt}" class="visual-img-pc">      
                 </div> 
                 {/if}

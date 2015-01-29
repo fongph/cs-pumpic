@@ -364,6 +364,23 @@
     background-position: -70px 0px;
 }
 
+/* ------ // style bottom images ----- */
+.bg_bottom_images .visual .visual-img-pc {
+    botoom: 0px;
+}
+
+    .bg_bottom_images .banner-header {
+        padding: 0px;
+    }
+    
+    .bg_bottom_images .visual-text {
+        padding: 50px 0 40px; 
+    }
+    
+    .bg_bottom_images .visual .visual-images-left {
+        display: block;
+    }
+
 .bg_teenagers {
     background: url('../images/pc2/bg_teenagers_header.png') no-repeat;
     background-position: 16.80672% 46px;
@@ -380,8 +397,15 @@
       bottom: 0px;
       display: block;
       margin: 12px auto 0px;
-      max-width: 55%;
+      
+      
+/*      max-width: 55%;*/
       text-align: center;
+    }
+    
+    .visual-images-bottom, .visual-images-right {
+        max-width: 80%;
+        margin: 0 auto;
     }
     
     .call-monitoring-software .visual-img-pc,
@@ -396,6 +420,11 @@
     .bg_famaly, .bg_teenagers {
         background: none;
     }
+    
+    .bg_bottom_images .visual .visual-images-left {
+        display: none;
+    }
+    
 }
 @media (min-width: 468px) {
     .parent-control .box-right-description {
@@ -408,8 +437,13 @@
       bottom: 0px;
       display: block;
       margin: 12px auto 0px;
-      max-width: 55%;
+/*      max-width: 55%;*/
       text-align: center;
+    }
+    
+    .visual-images-bottom, .visual-images-right {
+        max-width: 80%;
+        margin: 0 auto;
     }
     
     .call-monitoring-software .visual-img-pc,
@@ -424,6 +458,10 @@
     .bg_famaly, .bg_teenagers {
         background: none;
     }
+    
+    .bg_bottom_images .visual .visual-images-left {
+        display: none;
+    }
 }
 
 @media (min-width: 770px) {
@@ -434,6 +472,11 @@
     .visual-img-pc {
         bottom: 0px;
         display: block;
+/*        max-width: 56%;*/
+    }
+    
+    
+    .visual-images-bottom, .visual-images-right {
         max-width: 56%;
     }
     
@@ -447,6 +490,10 @@
          height: auto;
          float: none;
     } 
+    
+    .bg_bottom_images .visual .visual-images-left {
+        display: none;
+    }
 }    
 
 @media (min-width: 992px) {
@@ -464,7 +511,11 @@
       position: relative;
 /*      bottom: -40px;  */
       display: block;
-      max-width: 40%;
+/*      max-width: 40%;*/
+    }
+    
+    .visual-images-bottom, .visual-images-right {
+        max-width: 100%;
     }
     
     .webkit .visual-img-pc {
@@ -485,6 +536,14 @@
     .bg_famaly, .bg_teenagers {
         background: none;
     }
+    
+    .bg_bottom_images .visual .visual-images-left {
+        display: block;
+    }
+    
+/*    .bg_bottom_images .visual .col-lg-img-12 {
+        width: 100%;
+    }*/
 }  
 
 @media (min-width: 1200px) {
@@ -527,6 +586,10 @@
     .bg_teenagers {
         background: url('../images/pc2/bg_teenagers_header.png') no-repeat;
         background-position: 16.80672% 46px;
+    }
+    
+    .bg_bottom_images .visual .visual-images-left {
+        display: block;
     }
 }    
 /* ----------- // bottom banner -------- */
@@ -762,7 +825,7 @@
 }
 
 /* ------------// system --------------- */
-.mobile-version {
+.mobile-version, .mobile-version-inline {
     display: none;
 }
 
@@ -774,6 +837,10 @@
    .mobile-version {
        display: block !important;
    } 
+   
+   .mobile-version-inline {
+       display: block;
+   }
    
    .pc-version {
         display: none !important;
@@ -792,6 +859,10 @@
        display: block !important;
     }
    
+    .mobile-version-inline {
+       display: block;
+   }
+    
    .pc-version {
         display: none !important;
     }
@@ -810,6 +881,10 @@
     .mobile-version {
        display: block !important;
     }
+    
+    .mobile-version-inline {
+       display: block;
+   }
    
    .pc-version {
         display: none !important;
@@ -829,6 +904,10 @@
     .mobile-version {
        display: block !important;
     }
+    
+    .mobile-version-inline {
+       display: none;
+   }
    
    .pc-version {
         display: none !important;
@@ -847,6 +926,10 @@
 @media (min-width: 1200px) {
     .mobile-version {
        display: none !important;
+   }
+   
+   .mobile-version-inline {
+       display: none;
    }
    
    .pc-version {

@@ -54,7 +54,7 @@
                 </div>
 
                 {if in_array('right', $position) || in_array('bottom', $position)}
-                <div class="visual-images-{if in_array('right', $position)}right{elseif in_array('bottom', $position)}bottom{/if} {if in_array('bottom', $position)}col-sm-7 col-md-6 mobile-version-inline{/if} {if in_array('right', $position)}col-sm-12 col-md-6 col-lg-6{/if}">
+                <div class="visual-images-{if in_array('right', $position)}right{elseif in_array('bottom', $position)}bottom{/if} {if in_array('bottom', $position)}col-xs-sm-10 col-s-sm-12 col-sm-12 col-md-6 mobile-version-inline{/if} {if in_array('right', $position)}col-xs-sm-10 col-s-sm-12 col-sm-12 col-md-6 col-lg-6{/if}">
                      <img src="{$img}/{$imgUrl}" alt="{$imgAlt}" class="visual-img-pc">      
                 </div> 
                 {/if}

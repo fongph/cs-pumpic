@@ -386,6 +386,10 @@
     background-position: 16.80672% 46px;
 }
 
+.visual-images-bottom, .visual-images-right {
+    max-width: 100%;
+}
+
 @media only screen and (max-width: 480px) {
    .parent-control .box-right-description {
          padding: 0px;  
@@ -404,7 +408,6 @@
     }
     
     .visual-images-bottom, .visual-images-right {
-        max-width: 80%;
         margin: 0 auto;
     }
     
@@ -425,8 +428,11 @@
         display: none;
     }
     
+    
+    
 }
 @media (min-width: 468px) {
+    
     .parent-control .box-right-description {
          padding: 0px;  
          height: auto;
@@ -442,7 +448,6 @@
     }
     
     .visual-images-bottom, .visual-images-right {
-        max-width: 80%;
         margin: 0 auto;
     }
     
@@ -477,7 +482,7 @@
     
     
     .visual-images-bottom, .visual-images-right {
-        max-width: 56%;
+        margin: 0 auto;
     }
     
     .call-monitoring-software .visual-img-pc,
@@ -515,7 +520,7 @@
     }
     
     .visual-images-bottom, .visual-images-right {
-        max-width: 100%;
+        margin: 0 auto;
     }
     
     .webkit .visual-img-pc {

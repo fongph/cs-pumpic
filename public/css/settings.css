@@ -1,14 +1,14 @@
 .text-left,
 .block-text-left {
-    text-align: left !important;
+    text-align: left;
 }
 
 .text-right,
 .block-text-right {
-    text-align: right !important;
+    text-align: right;
 }
 
 .text-center,
 .block-text-center {
-    text-align: center !important;
+    text-align: center;
 }

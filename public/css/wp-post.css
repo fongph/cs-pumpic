@@ -130,6 +130,10 @@
     color: #fff;
 }
 
+.wp-blog .bg-footer h3 {
+    color: #4d4f5b;
+}
+
 /* ============== // fix blockquote =============== */
 .wp-blog blockquote {
     text-align: center;

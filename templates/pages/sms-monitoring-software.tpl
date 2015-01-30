@@ -1,155 +1,99 @@
-{strip}
-{include file='../includes/wrap-title-header.tpl'}
-
-	<title>Pumpic provides advanced SMS monitoring functions</title>
-	<meta name="description" content="Pumpic provides you with wide SMS monitoring opportunities. Monitor your kids’ text messages: current and deleted ones. Block your child’s target device against undesired SMS communication." />
-	
-{include file='../includes/wrap-title-footer.tpl'}
+{include file='../includes/main/main-header.tpl'
+    robots="no" 
+    title="Messages monitoring on smartphones"
+    description="Pumpic is a new solution for parental control mobile monitoring. Track your children’s smartphone usage, follow incoming and outbound calls, monitor browsing history and text messages, track GPS location and social network activity on Android devices with Pumpic."
+}    
+    
 <body>
-{include file='../includes/button-help.tpl'}
-{include file='../includes/button-goup.tpl'}
-	<div class="wrapper landing-features sms-monitoring-software">
-	{include file='../includes/topmenu-logo-login.tpl' topmenu_active='home'}	
-		<div class="visual sms">
-                    
-			<div class="container">
-                            
-                            <div class="row">
-                                
-                                <div class="col-lg-10 col-md-12 col-sm-12 col-lg-offset-1 banner-header">
-                                    
-                                    
-                                    <div class="col-lg-6 col-md-6 col-sm-6">
-                                        <div class="visual-text text-right">
-                                            <h1 class="title">Sms Monitoring <br />Parental Control App{*SMS MONITORING <br />PARENTAL CONTROL APP*}</h1>
-                                            <p>Keep your children safe with Pumpic.<br />
-                                                View your kid’s text message history remotely.</p>
-                                            <ul class="compatibility">
-                                                <li><i class="icon-android"></i> (2.2 - 5.0)</li>
-                                                <li><i class="icon-apple"></i> (6.0 - 8.1.2)</li>
-                                                {*<li><i class="icon-blackberry"></i> (1.0 - 7.1)</li>*}
-                                                <li>
-                                                    <i class="i-header-info"></i> <a href="/compatibility.html">platform compatibility</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                                
-                                    <div class="col-lg-6 col-md-6 col-sm-6">
-                                        <img src="{$img}/landing_features/bg-header-features.png" alt="" class="visual-img-pc">
-                                    </div>            
-                                                
-                                </div>
-                            </div> <!-- .row -->
-			</div>
-		</div>
-		{include file='../includes/main-plans.tpl'}
-                {*include file='../includes/main-secures.tpl' blockBg="dark"*}
-		
+    <!-- FLY BUTTON -->
+    {include file='../includes/main/main-button-help.tpl'}
+    {include file='../includes/main/main-button-goup.tpl'}
+    <!-- END FLY BUTTON -->
+    
+    <div class="wrapper block-sms">
+        <!-- TOP MENU -->
+ 	{include file='../includes/main/main-top-menu.tpl' }
+        
+        <!-- CONTENT -->
+        {include file='../includes/content/info/info-promo.tpl'
+            imgUrl = "landing_features/bg-header-features.png"
+            imgAlt = "Messages monitoring"
+            imgAlign = "right"
+            textAlign = "right"
+            title = "Sms Monitoring<br /> Parental Control App"
+            description = "Keep your children safe with Pumpic.<br />
+View your kid’s text message history remotely."
+        }
+        
+         {include file='../includes/content/plans.tpl' }
                 
-                
-                <!-- iPad old -->
-                <div class="dark">
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-5 col-md-5 col-lg-5 col-sm-offset-1 col-md-offset-1 col-lg-offset-1">
-						<div class="text-center relative_box">
-							<img src="{$img}/parental_control/ipad.png" alt="" class="ipad-pic">
-						</div>
-					</div>
-					<div class="col-sm-5 col-md-5 col-lg-5">
-						<div class="ipad-text">
-							<h2>Sms Monitoring{*SMS MONITORING*}</h2>
-							<p>
-                                Try Control Panel demo to see Pumpic SMS Monitoring in use.
-                                <br />Buy Pumpic to protect your kids and view their SMS right now.
-                            </p>
-                            <ul>
-                                <li>
-                                    <a href="http://demo.{$domain}"
-                                       class="featured-link link-hl ga-click"
-                                       ga-label-button="sms-monitor-demo-looks"
-                                       ga-type-button="demo link"
-                                       ga-event="click">View demo<i class="icon-angle-double-right"></i></a>
-                                </li>
-                                <li>
-                                    <a class="btn btn-green ga-click"
-                                       href="/store.html"
-                                       ga-label-button="sms-monitor-visit-store"
-                                       ga-type-button="buy button"
-                                       ga-event="click">Visit Store</a>
-                                </li>
-                            </ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-                                                                                      
-                <!-- WHY PUMPIC -->                
-		<div class="light">
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-10 col-md-10 col-lg-10 col-sm-offset-1 col-md-offset-1 col-lg-offset-1 gutter-wide">
-						<h2 class="text-center">Why Pumpic{*WHY PUMPIC*}</h2>
-						<div class="row">
-							<div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
-								<h3 class="text-center"><img src="{$img}/icons/icon-easy-to-use.png" alt=""> Easy to use</h3>
-								<p class="text-center">Pumpic parental control SMS monitoring app is created for parents with the idea of children safety and welfare. It requires no technical knowledge to use all features of remote childcare service.</p>
-							</div>
-							<div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
-								<h3 class="text-center"><img src="{$img}/icons/ico-easy-to-install.png" alt=""> Easy to install</h3>
-								<p class="text-center">Soon after submitting the payment you will receive an email with detailed instructions on how to setup the app. Follow the instructions and contact our 24/7 customer service if you have any questions.</p>
-							</div>
-							<div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
-								<h3 class="text-center"><img src="{$img}/icons/ico-easy-to-contact.png" alt=""> Easy to contact</h3>
-								<p class="text-center">Pumpic SMS monitoring service will let you enjoy all tracking features soon after the setup is completed. In case of any questions, our Customer Support Team is ready to help you at any time.</p>
-							</div>
-						</div>
-					</div>
-				</div>
-                        </div>
-                </div>                                                
-                                                      
-                <div class="dark">
-			<div class="container">
-				<h2 class="text-center testimonial-title">Testimonials{*TESTIMONIALS*}:</h2>
-				<div class="row">
-					<div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
-						<img src="{$img}/testimonials/testimonials_new_7.png" alt="" class="testimonial-photo">
-						<div class="testimonial-text">
-							<h4>Kenny G. mother of a 16-year-old daughter</h4>
-							<p>“Pumpic prevented my daughter from having relationships with a very strange guy, who turned out to be a criminal. I’m really grateful for that.”</p>
-						</div>
-					</div>
-					<div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
-						<img src="{$img}/testimonials/testimonials_new_8.png" alt="" class="testimonial-photo">
-						<div class="testimonial-text">
-							<h4>Marc C. father of a 13-year-old son</h4>
-							<p>“I can control each message my son sends or receives. It helps me a lot as I don’t want him to chum with the wrong crowd.”</p>
-						</div>
-					</div>
-					<div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
-						<img src="{$img}/testimonials/testimonials_new_9.png" alt="" class="testimonial-photo">
-						<div class="testimonial-text">
-							<h4>Lucy T. – mother of 2 kids</h4>
-							<p>“With Pumpic app I can monitor my kids SMS history. I can see both incoming and outgoing messages. This is an essential feature if you are a parent of a teenager.”</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-                                                                
+        {include file='../includes/content/ipad.tpl' 
+        blockBg="dark"
+        imgUrl = "icons/ipad_android.png"
+        imgAlt = "SMS monitoring"
+        title = "Sms Monitoring"
+        description = "Try Control Panel demo to see Pumpic SMS Monitoring in use.<br />
+Buy Pumpic to protect your kids and view their SMS right now."
+}
 
-                {include file='../includes/landing_features/main-secures-sms-monitoring.tpl' blockBg="light"}                                
-                {include file='../includes/landing_features/main-features-table-sms-monitoring.tpl' blockBg="dark"}                                
-                                                
-		
-		{*include file='../includes/quick-link.tpl'*}
-		{include file='../includes/main-footer-promo.tpl'}
-		{include file='../includes/footer.tpl' disclaimer=""} {* ../includes/landing_features/disclaimer-sms-monitoring.tpl *}
-	</div>
-	{include file='../includes/analytics-footer.tpl'}
+		{include file='../includes/content/why-pumpic.tpl' 
+                blockBg="light"
+        }
+  
+        {include file='../includes/main/main-testimonials.tpl' 
+                blockBg="dark"
+        }       
+        
+<div class="light">
+        <div class="container">
+                <h2 class="text-center">How Pumpic Secures Your Kid</h2>
+                <div class="row">
+                        <div class="col-sm-4 col-md-4 col-lg-4">
+                                <div class="feature">
+                                        <img src="/images/icons/icon-monitor-text-messages.png" alt="">
+                                        <h3>Monitor text messages</h3>
+                                        <p>Pumpic allows you to keep track of all SMS ever sent or received by your child. From now on, you will be aware of all your kids’ text communications. View the history of text messages and block unwelcome senders.</p>
+                                </div>
+                        </div>
+                        <div class="col-sm-4 col-md-4 col-lg-4">
+                                <div class="feature">
+                                        <img src="/images/icons/icon-follow-sms-gistory.png" alt="">
+                                        <h3>Follow SMS history</h3>
+                                        <p>View the entire SMS history from the day your child started using the phone. No matter whether messages were deleted or not, Pumpic will show them to you. Monitor all files attached to SMS messages.</p>
+                                </div>
+                        </div>
+                        <div class="col-sm-4 col-md-4 col-lg-4">
+                                <div class="feature">
+                                        <img src="/images/icons/icon-block-incoming-sms.png" alt="">
+                                        <h3>Block incoming SMS</h3>
+                                        <p>Pumpic allows you to block text messages sent by anyone who seems suspicious. Follow each SMS and block those you wish your kid would never receive. Prevent ambiguous communication at an early stage.</p>
+                                </div>
+                        </div>
+                </div>
+        </div>
+</div>
+
+        {include file='../includes/content/features-table.tpl' 
+                blockBg="dark"
+        }  
+
+        {include file='../includes/content/banner-promo.tpl' }
+        <!-- END CONTENT -->    
+           
+        
+        
+        <!-- FOOTER -->
+        {*
+            Template: FOOTER
+            Переменные:
+                our_products (text): Включить выключить блок OUR PRODUCTS (no|yes). * - yes 
+        *}
+        {include file='../includes/main/main-footer.tpl' 
+            our_products = "no"
+        }
+                
+    </div>
+        
+    {include file='../includes/main/main-analytics-footer.tpl'}
 </body>
 </html>
-{/strip}

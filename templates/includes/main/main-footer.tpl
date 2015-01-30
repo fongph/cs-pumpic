@@ -29,6 +29,7 @@
                                         </li>
                                 </ul>
                         </div>
+                        {if !isset($our_products) || $our_products != "no"}        
                         <div class="col-sm-3 col-md-3 col-lg-3">
                                 <h3>OUR PRODUCTS</h3>
                                 <ul class="list_grey">
@@ -51,6 +52,7 @@
                                         
                                 </ul>
                         </div>
+                        {/if}
                 </div>
                 <div class="row">
                         <div class="col-sm-10 col-md-10 col-lg-10 col-sm-offset-1 col-md-offset-1 col-lg-offset-1">

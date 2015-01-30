@@ -38,7 +38,7 @@
                                                         
 						</ul>
 					</div>
-					<div class="col-sm-3 col-md-3 col-lg-3">
+					<?php /*<div class="col-sm-3 col-md-3 col-lg-3">
 						<h3>OUR PRODUCTS</h3>
 						<ul class="list_grey">
                                                         <li>
@@ -58,54 +58,8 @@
                                                                 <a href="/smartphone-monitoring-software.html">Smartphone monitoring</a>
                                                         </li>
                                                     
-                                                    <?php /*
-                                                        <li>
-								<span>Android software</span>
-							</li>
-                                                        <li>
-								<span>Iphone software</span>
-							</li>
-                                                        <li>
-								<span>Blackberry software</span>
-							</li>
-                                                        <li>
-								<span>SMS monitoring</span>
-							</li>
-                                                        <li>
-								<span>Call history monitoring</span>
-							</li>
-                                                        <li>
-								<span>Cell phone monitoring</span>
-							</li>
-                                                        <li>
-								<span>Mobile phone monitoring</span>
-							</li>
-                                                        <li>
-								<span>Our features</span>
-							</li>
-                                                    
-                                                        
-                                                        <li>
-								<a href="#">Android Spy Software</a>
-							</li>
-							<li>
-								<a href="#">iPhone Spy Software</a>
-							</li>
-							<li>
-								<a href="#">Blackberry Spy Software</a>
-							</li>
-							<li>
-								<a href="#">Cell Phone Tracking</a>
-							</li>
-							<li>
-								<a href="#">Mobile SMS Spying</a>
-							</li>
-							<li>
-								<a href="#">Mobile Phone Spy</a>
-							</li>
-                                                        */ ?>
 						</ul>
-					</div>
+					</div> */ ?>
 				</div>
 				<div class="row">
 					<div class="col-sm-10 col-md-10 col-lg-10 col-sm-offset-1 col-md-offset-1 col-lg-offset-1">

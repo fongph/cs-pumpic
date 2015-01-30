@@ -6,7 +6,7 @@
         <div class="row">
             <div class="col-lg-10 col-lg-offset-1">
                 <div class="row">
-                    <h2><a class="blog-link" href="/security/">Kids' Phone Safety Blog</a></h2>
+                    <h1 class="text-center mt10 mb20"><a class="blog-link" href="/security/">Kids' Phone Safety Blog</a></h1>
                     
                     <?php /*<h2>blog<?php // the_title() ?></h2>
                     <p class="text-center">Find company updates and some of our most popular posts<?php  // get_post_content() ?></p>

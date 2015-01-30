@@ -7,7 +7,7 @@
                     
                     <?php if ( have_posts() ) : ?>
                     
-                    <h2><a class="blog-link" href="/security/">Kids' Phone Safety Blog</a></h2>
+                    <h1 class="text-center mt10 mb20"><a class="blog-link" href="/security/">Kids' Phone Safety Blog</a></h1>
                     <div class="archive">
                         <span class="title"><?php printf( __( "All posts for '<i>%s</i>' tag", 'cellspy' ), single_tag_title( '', false ) ); ?></span>
                     </div>

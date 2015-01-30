@@ -28,6 +28,11 @@
 //    } 
 //}
 
+function google_analitycs_click( category, action, label ) {
+    if(action && category && label) {
+        ga('send', 'event', category, action, label);
+    }
+}
 
 $(function() {
     $('.ga-action-click').on('click', function() {

@@ -271,6 +271,9 @@ function hashchange_AfterInit() {
     if(isset(_data['popUp'])) {
         
         if(_data['popUp'] == "auth") { // && !getCookie('popUp')
+            // google analitycs
+            ga('send', 'event', 'form', 'submit', 'login-success');
+            
             // login status ok
             if(isset($('.box-popUp #box-status-auth'))) {
                 var $this = $('.box-popUp #box-status-auth')
@@ -296,6 +299,9 @@ function hashchange_AfterInit() {
         }
         
         if(_data['popUp'] == "registration") { // && !getCookie('popUp')
+            // google analitycs
+            ga('send', 'event', 'form', 'submit', 'registration-success');
+            
             // login status ok
             if(isset($('.box-popUp #box-status-registration'))) {
                 var $this = $('.box-popUp #box-status-registration')
@@ -709,6 +715,9 @@ $(document).ready(function(){
                       return false;
                   } else if(_res.success) {
                       $('form[name="send_find_phone"] span.info').html( _res.success ).css({'display':'inline-block'});
+                      
+                      // google analitycs
+                      ga('send', 'event', 'form', 'submit', 'compatibility-request-success');
 
                   } else {
                       $('form[name="send_find_phone"] .fatal-error').html('Your email was not sent');
@@ -800,6 +809,9 @@ $(document).ready(function(){
                       return false;
                   } else if(_res.success) {
                       $('form.form-faq span.info').html( _res.success ).css({'display':'inline-block'});
+                      
+                      // google analitycs
+                      ga('send', 'event', 'form', 'submit', 'faq-request-success');
 
                   } else {
                       $('form.form-faq .fatal-error').html('Your email was not sent');
@@ -916,6 +928,9 @@ $(document).ready(function(){
                       return false;
                   } else if(_res.success) {
                       $('form.form-contact-us span.info').html( _res.success ).css({'display':'inline-block'});
+                      
+                      // google analitycs
+                      ga('send', 'event', 'form', 'submit', 'contact-request-success');
 
                   } else {
                       $('form.form-contact-us .fatal-error').html('Your email was not sent');
@@ -1218,19 +1233,29 @@ $("input[name='optionsRadios']").each(function(){
   }
   
 // ga click 
+// faq
+$('form[name="form-faq"] button.event-submit').click(function(){
+    ga('send', 'event', 'form', 'submit', 'faq-request');
+}); 
+ 
 // login
 $('form[name="form-login"] .button-sumbit button').click(function(){
     ga('send', 'event', 'form', 'submit', 'login');
 }); 
+
+// restore
+$('form[name="form-restore"] .button-sumbit button').click(function(){
+    ga('send', 'event', 'form', 'submit', 'restore');
+});
 
 // registration
 $('form[name="form-registration"] .button-sumbit button').click(function(){
     ga('send', 'event', 'form', 'submit', 'registration');
 });
 
-// restore
-$('form[name="form-restore"] .button-sumbit button').click(function(){
-    ga('send', 'event', 'form', 'submit', 'restore');
+// contact-us
+$('form[name="send-mail-contact-us"] button.event-submit').click(function(){
+    ga('send', 'event', 'form', 'submit', 'contact-request');
 });
 
 // compatibility
@@ -1238,14 +1263,6 @@ $('form[name="send_find_phone"] button.event-submit').click(function(){
     ga('send', 'event', 'form', 'submit', 'compatibility-request');
 });
 
-// faq
-$('form[name="form-faq"] button.event-submit').click(function(){
-    ga('send', 'event', 'form', 'submit', 'faq-request');
-});
 
-// contact-us
-$('form[name="send-mail-contact-us"] button.event-submit').click(function(){
-    ga('send', 'event', 'form', 'submit', 'contact-request');
-});
   
 });

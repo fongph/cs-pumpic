@@ -5,6 +5,7 @@
     <input type="hidden" name="site_id" value="{$site_id}" />
     
    {if $getOut._success}
+       <script> google_analitycs_click( 'form', 'submit', 'restore-success' ); </script>
         <div class="box-success text-center"> 
             <p class="bg-ok">{$getOut._success}</p>
         </div>

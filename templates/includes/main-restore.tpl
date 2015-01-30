@@ -1,11 +1,14 @@
-
 <div class="form-restore">
     
 <form class="box-form" name="form-restore" action="" method="POST">
     <input type="hidden" name="site_id" value="{$site_id}" />
     
    {if $getOut._success}
-       <script> google_analitycs_click( 'form', 'submit', 'restore-success' ); </script>
+       {literal}
+            <script type="text/javascript"> 
+                ga('send', 'event', 'form', 'submit', 'restore-success' ); 
+            </script>
+        {/literal}
         <div class="box-success text-center"> 
             <p class="bg-ok">{$getOut._success}</p>
         </div>

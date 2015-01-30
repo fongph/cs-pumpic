@@ -10,7 +10,7 @@
                             </div>
                             <div class="panel-body text-center">
                                 <div class="price">
-                                        $11<sup>66</sup>/<sub>month</sub> 
+                                        $3<sup>33</sup>/<sub>month</sub> 
                                 </div>
                                 <a href="http://{$domain}/store.html" 
                                    class="btn btn-default ga-action-click" 
@@ -29,7 +29,7 @@
                             </div>
                             <div class="panel-body text-center">
                                 <div class="price">
-                                        $33<sup>33</sup>/<sub>month</sub> 
+                                        $13<sup>33</sup>/<sub>month</sub> 
                                 </div>
                                 <a href="http://{$domain}/store.html" 
                                    class="btn btn-default ga-action-click" 

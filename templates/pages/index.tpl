@@ -46,7 +46,10 @@
                             </div> <!-- .row -->
 			</div>
 		</div>
-		{include file='../includes/main-plans.tpl'}
+		{* include file='../includes/main-plans.tpl'*}
+                
+                {include file='../includes/content/plans.tpl'}
+                
                 {include file='../includes/main-secures.tpl' blockBg="dark"}
 		{include file='../includes/main-features-table.tpl'}
 

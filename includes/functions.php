@@ -416,8 +416,8 @@ function smarty_function_features_plans( $_plans = array()  ) {
                 'blackberry' => ['status' => true, 'version' => '1.0 - 7.1']
             ),
             'plans' => array(
-                'basic'     => ['status' => true, 'price' => '3 month - $11.66/month', 'url' => '/store.html'],
-                'premium'   => ['status' => true, 'price' => '3 month -$33.33/month', 'url' => '/store.html'],
+                'basic'     => ['status' => true, 'price' => '3 month - $3.33/month', 'url' => '/store.html'],
+                'premium'   => ['status' => true, 'price' => '3 month - $13.33/month', 'url' => '/store.html'],
             ),
             'intro' => 'See who calls your child. Get detailed information on all incoming and outgoing calls: a caller’s name and phone number, time of the call and its duration.',
             'description' => array(
@@ -435,8 +435,8 @@ function smarty_function_features_plans( $_plans = array()  ) {
                 'blackberry' => ['status' => true, 'version' => '1.0 - 7.1']
             ),
             'plans' => array(
-                'basic'     => ['status' => true, 'price' => '3 month - $11.66/month', 'url' => '/store.html'],
-                'premium'   => ['status' => true, 'price' => '3 month -$33.33/month', 'url' => '/store.html'],
+                'basic'     => ['status' => true, 'price' => '3 month - $3.33/month', 'url' => '/store.html'],
+                'premium'   => ['status' => true, 'price' => '3 month - $13.33/month', 'url' => '/store.html'],
             ),
             'intro' => 'Read your children’s text messages remotely. Get precise information on both a sender and a recipient of SMS as well as the exact message time.',
             'description' => array(
@@ -454,8 +454,8 @@ function smarty_function_features_plans( $_plans = array()  ) {
                 'blackberry' => ['status' => false, 'version' => '1.0 - 7.1']
             ),
             'plans' => array(
-                'basic'     => ['status' => true, 'price' => '3 month - $11.66/month', 'url' => '/store.html'],
-                'premium'   => ['status' => true, 'price' => '3 month -$33.33/month', 'url' => '/store.html'],
+                'basic'     => ['status' => true, 'price' => '3 month - $3.33/month', 'url' => '/store.html'],
+                'premium'   => ['status' => true, 'price' => '3 month - $13.33/month', 'url' => '/store.html'],
             ),
             'intro' => 'Block unwanted SMS senders so they will never again be able to reach your kid.<br />&nbsp;',
             'description' => array(
@@ -473,8 +473,8 @@ function smarty_function_features_plans( $_plans = array()  ) {
                 'blackberry' => ['status' => true, 'version' => '1.0 - 7.1']
             ),
             'plans' => array(
-                'basic'     => ['status' => true, 'price' => '3 month - $11.66/month', 'url' => '/store.html'],
-                'premium'   => ['status' => true, 'price' => '3 month -$33.33/month', 'url' => '/store.html'],
+                'basic'     => ['status' => true, 'price' => '3 month - $3.33/month', 'url' => '/store.html'],
+                'premium'   => ['status' => true, 'price' => '3 month - $13.33/month', 'url' => '/store.html'],
             ),
             'intro' => 'Identify real time GPS location of your child. Log into your Control Panel to access detailed route history.',
             'description' => array(
@@ -492,8 +492,8 @@ function smarty_function_features_plans( $_plans = array()  ) {
                 'blackberry' => ['status' => false, 'version' => '1.0 - 7.1']
             ),
             'plans' => array(
-                'basic'     => ['status' => true, 'price' => '3 month - $11.66/month', 'url' => '/store.html'],
-                'premium'   => ['status' => true, 'price' => '3 month -$33.33/month', 'url' => '/store.html'],
+                'basic'     => ['status' => true, 'price' => '3 month - $3.33/month', 'url' => '/store.html'],
+                'premium'   => ['status' => true, 'price' => '3 month - $13.33/month', 'url' => '/store.html'],
             ),
             'intro' => 'Prevent unwanted company for your child. View all contacts within seconds. Access the address book remotely: names, phone numbers, emails etc.',
             'description' => array(
@@ -511,8 +511,8 @@ function smarty_function_features_plans( $_plans = array()  ) {
                 'blackberry' => ['status' => false, 'version' => '1.0 - 7.1']
             ),
             'plans' => array(
-                'basic'     => ['status' => true, 'price' => '3 month - $11.66/month', 'url' => '/store.html'],
-                'premium'   => ['status' => true, 'price' => '3 month -$33.33/month', 'url' => '/store.html'],
+                'basic'     => ['status' => true, 'price' => '3 month - $3.33/month', 'url' => '/store.html'],
+                'premium'   => ['status' => true, 'price' => '3 month - $13.33/month', 'url' => '/store.html'],
             ),
             'intro' => 'Keep track of all events scheduled. See what your child plans to do and when. Follow the task list.',
             'description' => array(
@@ -530,8 +530,8 @@ function smarty_function_features_plans( $_plans = array()  ) {
                 'blackberry' => ['status' => false, 'version' => '1.0 - 7.1']
             ),
             'plans' => array(
-                'basic'     => ['status' => true, 'price' => '3 month - $11.66/month', 'url' => '/store.html'],
-                'premium'   => ['status' => true, 'price' => '3 month -$33.33/month', 'url' => '/store.html'],
+                'basic'     => ['status' => true, 'price' => '3 month - $3.33/month', 'url' => '/store.html'],
+                'premium'   => ['status' => true, 'price' => '3 month - $13.33/month', 'url' => '/store.html'],
             ),
             'intro' => 'Browse your kid’s internet history. Check which websites were visited and what search engine queries were made.',
             'description' => array(
@@ -549,8 +549,8 @@ function smarty_function_features_plans( $_plans = array()  ) {
                 'blackberry' => ['status' => false, 'version' => '1.0 - 7.1']
             ),
             'plans' => array(
-                'basic'     => ['status' => true, 'price' => '3 month - $11.66/month', 'url' => '/store.html'],
-                'premium'   => ['status' => true, 'price' => '3 month -$33.33/month', 'url' => '/store.html'],
+                'basic'     => ['status' => true, 'price' => '3 month - $3.33/month', 'url' => '/store.html'],
+                'premium'   => ['status' => true, 'price' => '3 month - $13.33/month', 'url' => '/store.html'],
             ),
             'intro' => 'Log in to your Control Panel to see which websites were bookmarked. Check the time your child accesses the websites.',
             'description' => array(
@@ -568,8 +568,8 @@ function smarty_function_features_plans( $_plans = array()  ) {
                 'blackberry' => ['status' => false, 'version' => '1.0 - 7.1']
             ),
             'plans' => array(
-                'basic'     => ['status' => true, 'price' => '3 month - $11.66/month', 'url' => '/store.html'],
-                'premium'   => ['status' => true, 'price' => '3 month -$33.33/month', 'url' => '/store.html'],
+                'basic'     => ['status' => true, 'price' => '3 month - $3.33/month', 'url' => '/store.html'],
+                'premium'   => ['status' => true, 'price' => '3 month - $13.33/month', 'url' => '/store.html'],
             ),
             'intro' => 'Every picture taken will be visible to you. See what photos he or she downloads from the Internet.',
             'description' => array(
@@ -587,8 +587,8 @@ function smarty_function_features_plans( $_plans = array()  ) {
                 'blackberry' => ['status' => false, 'version' => '1.0 - 7.1']
             ),
             'plans' => array(
-                'basic'     => ['status' => true, 'price' => '3 month - $11.66/month', 'url' => '/store.html'],
-                'premium'   => ['status' => true, 'price' => '3 month -$33.33/month', 'url' => '/store.html'],
+                'basic'     => ['status' => true, 'price' => '3 month - $3.33/month', 'url' => '/store.html'],
+                'premium'   => ['status' => true, 'price' => '3 month - $13.33/month', 'url' => '/store.html'],
             ),
             'intro' => 'Look through all sent and received emails. Access all available contact info on both a sender and a recipient.',
             'description' => array(
@@ -606,8 +606,8 @@ function smarty_function_features_plans( $_plans = array()  ) {
                 'blackberry' => ['status' => false, 'version' => '1.0 - 7.1']
             ),
             'plans' => array(
-                'basic'     => ['status' => true, 'price' => '3 month - $11.66/month', 'url' => '/store.html'],
-                'premium'   => ['status' => true, 'price' => '3 month -$33.33/month', 'url' => '/store.html'],
+                'basic'     => ['status' => true, 'price' => '3 month - $3.33/month', 'url' => '/store.html'],
+                'premium'   => ['status' => true, 'price' => '3 month - $13.33/month', 'url' => '/store.html'],
             ),
             'intro' => 'Monitor each application that your children download, use and play.',
             'description' => array(
@@ -625,8 +625,8 @@ function smarty_function_features_plans( $_plans = array()  ) {
                 'blackberry' => ['status' => false, 'version' => '1.0 - 7.1']
             ),
             'plans' => array(
-                'basic'     => ['status' => true, 'price' => '3 month - $11.66/month', 'url' => '/store.html'],
-                'premium'   => ['status' => true, 'price' => '3 month -$33.33/month', 'url' => '/store.html'],
+                'basic'     => ['status' => true, 'price' => '3 month - $3.33/month', 'url' => '/store.html'],
+                'premium'   => ['status' => true, 'price' => '3 month - $13.33/month', 'url' => '/store.html'],
             ),
             'intro' => 'Block websites containing inappropriate content and time-wasting applications from running on your kid’s device. Get detailed info on each app installed.',
             'description' => array(
@@ -644,8 +644,8 @@ function smarty_function_features_plans( $_plans = array()  ) {
                 'blackberry' => ['status' => false, 'version' => '1.0 - 7.1']
             ),
             'plans' => array(
-                'basic'     => ['status' => false, 'price' => '3 month - $11.66/month', 'url' => '/store.html'],
-                'premium'   => ['status' => true, 'price' => '3 month -$33.33/month', 'url' => '/store.html'],
+                'basic'     => ['status' => false, 'price' => '3 month - $3.33/month', 'url' => '/store.html'],
+                'premium'   => ['status' => true, 'price' => '3 month - $13.33/month', 'url' => '/store.html'],
             ),
             'intro' => 'Keep track of conversations via Skype, WhatsApp and Viber, including video chats and voice calls.',
             'description' => array(
@@ -664,8 +664,8 @@ function smarty_function_features_plans( $_plans = array()  ) {
                 'blackberry' => ['status' => false, 'version' => '1.0 - 7.1']
             ),
             'plans' => array(
-                'basic'     => ['status' => false, 'price' => '3 month - $11.66/month', 'url' => '/store.html'],
-                'premium'   => ['status' => true, 'price' => '3 month -$33.33/month', 'url' => '/store.html'],
+                'basic'     => ['status' => false, 'price' => '3 month - $3.33/month', 'url' => '/store.html'],
+                'premium'   => ['status' => true, 'price' => '3 month - $13.33/month', 'url' => '/store.html'],
             ),
             'intro' => 'Keep track of each new video your child views, receives and sends. Look through multimedia files.',
             'description' => array(
@@ -683,8 +683,8 @@ function smarty_function_features_plans( $_plans = array()  ) {
                 'blackberry' => ['status' => false, 'version' => '1.0 - 7.1']
             ),
             'plans' => array(
-                'basic'     => ['status' => false, 'price' => '3 month - $11.66/month', 'url' => '/store.html'],
-                'premium'   => ['status' => true, 'price' => '3 month -$33.33/month', 'url' => '/store.html'],
+                'basic'     => ['status' => false, 'price' => '3 month - $3.33/month', 'url' => '/store.html'],
+                'premium'   => ['status' => true, 'price' => '3 month - $13.33/month', 'url' => '/store.html'],
             ),
             'intro' => 'Monitor each and every word sent and received via Facebook. Control your kids’ chats, protect their communication.',
             'description' => array(
@@ -703,8 +703,8 @@ function smarty_function_features_plans( $_plans = array()  ) {
                 'blackberry' => ['status' => false, 'version' => '1.0 - 7.1']
             ),
             'plans' => array(
-                'basic'     => ['status' => false, 'price' => '3 month - $11.66/month', 'url' => '/store.html'],
-                'premium'   => ['status' => true, 'price' => '3 month -$33.33/month', 'url' => '/store.html'],
+                'basic'     => ['status' => false, 'price' => '3 month - $3.33/month', 'url' => '/store.html'],
+                'premium'   => ['status' => true, 'price' => '3 month - $13.33/month', 'url' => '/store.html'],
             ),
             'intro' => 'Look through all the information ever stored on your child’s phone. Keep track of the target device since the day it has been switched on.',
             'description' => array(
@@ -722,8 +722,8 @@ function smarty_function_features_plans( $_plans = array()  ) {
                 'blackberry' => ['status' => false, 'version' => '1.0 - 7.1']
             ),
             'plans' => array(
-                'basic'     => ['status' => false, 'price' => '3 month - $11.66/month', 'url' => '/store.html'],
-                'premium'   => ['status' => true, 'price' => '3 month -$33.33/month', 'url' => '/store.html'],
+                'basic'     => ['status' => false, 'price' => '3 month - $3.33/month', 'url' => '/store.html'],
+                'premium'   => ['status' => true, 'price' => '3 month - $13.33/month', 'url' => '/store.html'],
             ),
             'intro' => 'Wipe out or lock your child’s device remotely by using SMS commands even when the Internet is off.',
             'description' => array(
@@ -741,8 +741,8 @@ function smarty_function_features_plans( $_plans = array()  ) {
                 'blackberry' => ['status' => false, 'version' => '1.0 - 7.1']
             ),
             'plans' => array(
-                'basic'     => ['status' => false, 'price' => '3 month - $11.66/month', 'url' => '/store.html'],
-                'premium'   => ['status' => true, 'price' => '3 month -$33.33/month', 'url' => '/store.html'],
+                'basic'     => ['status' => false, 'price' => '3 month - $3.33/month', 'url' => '/store.html'],
+                'premium'   => ['status' => true, 'price' => '3 month - $13.33/month', 'url' => '/store.html'],
             ),
             'intro' => 'Monitor all key strokes on the target device. Prevent your children from viewing inappropriate content.',
             'description' => array(

@@ -83,7 +83,9 @@
 			</div>
 			{*include file='../includes/plans-white.tpl'*}
                         
-                        {include file='../includes/main-plans.tpl'}
+                        {*include file='../includes/main-plans.tpl'*}
+                        
+                        {include file='../includes/content/plans.tpl'}
 			
 			<div class="row">
 				<div class="col-lg-12">

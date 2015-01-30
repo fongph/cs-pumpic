@@ -125,7 +125,8 @@
 }
 
 .wp-blog .widget_categories > h3, 
-.wp-blog .widget_tag_cloud > h3 {
+.wp-blog .widget_tag_cloud > h3,
+.wp-blog .widget_sticky_posts > h3 {
     color: #fff;
 }
 

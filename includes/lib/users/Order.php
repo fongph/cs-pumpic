@@ -1,4 +1,6 @@
 <?php
+//ini_set('display_errors', 1);
+
 namespace includes\lib\users;
 
 use CS\Billing\Manager as BillingManager;
@@ -70,7 +72,7 @@ class Order extends ManagerUser
                 -> setLocation( IP::getCountry($ip) ) 
                 -> save();
          
-        // save referer 
+//        // save referer 
         $referer = $this -> _billing -> getReferer(); 
         $referer -> setOrder($order)
                 ->setReferer( $this ->getReferer() )

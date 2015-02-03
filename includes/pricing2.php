@@ -1,4 +1,6 @@
 <?php
+ini_set('display_errors', 1);
+
 $_inc = dirname(__FILE__); // includes
 $b_dir = dirname( $_inc ); // folder sites directory
 
@@ -33,6 +35,10 @@ if($_request['productID']) {
         
     }
 
+}
+
+if(!$obj -> getSession('order_referer')) {
+    $obj ->setSession('order_referer', $_SERVER['HTTP_REFERER']);
 }
 
 // init output params!

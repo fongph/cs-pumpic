@@ -6,8 +6,11 @@ require_once $_inc.'/lib/users/Order.php';
 $order   = new includes\lib\users\Order;
 $user_id = $order->getUserID();
 $_request= (isset($_POST['price']) and !empty($_POST['price'])) ? $_POST['price']: false;
-$_referer = (isset($_POST['referer']) and !empty($_POST['referer'])) ? $_POST['referer']: false;
+//$_referer = (isset($_POST['referer']) and !empty($_POST['referer'])) ? $_POST['referer']: false;
 // $_productID = (!empty($_GET['productID'])) ? (int)$_GET['productID'] : false;
+
+$_referer = ($order ->getSession('order_referer')) 
+        ? $order ->getSession('order_referer') : false;
 
 $order -> setReferer( $_referer );
 

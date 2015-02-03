@@ -56,6 +56,7 @@ class Order extends ManagerUser
         return $this -> referer;
     }
     
+    
     private function _createOrder( $userID = null, $productId ) 
     {
         $ip = IP::getRealIP();

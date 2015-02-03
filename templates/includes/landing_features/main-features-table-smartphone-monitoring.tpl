@@ -3,7 +3,7 @@
                 <h2 class="text-center">Other Features{*OTHER FEATURES*}</h2>
                 <div class="row">
                     
-                    <div id="table-container" class="tabel-col-3 tabel-md-col-3 tabel-sm-col-3">
+                    <div id="table-container" class="table-col-3 table-md-col-3 table-sm-col-3">
                         <h1 class="text-center">In order to keep your children safe and secured Pumpic provides you with large variety of monitoring functions designed to make parental control worriless.</h1>
                         <section>
                             <div class="tab col-item-3 col-md-item-3 col-sm-item-3">

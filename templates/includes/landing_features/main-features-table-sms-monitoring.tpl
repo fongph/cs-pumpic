@@ -3,7 +3,7 @@
                 <h2 class="text-center">Other Features{*OTHER FEATURES*}</h2>
                 <div class="row">
                     
-                    <div id="table-container" class="tabel-col-3 tabel-md-col-3 tabel-sm-col-3">
+                    <div id="table-container" class="table-col-3 table-md-col-3 table-sm-col-3">
                         <h1 class="text-center">Pumpic provides you with large variety of monitoring functions to protect your children and secure their happy lives.</h1>
                         <section>
                             <div class="tab col-item-3 col-md-item-3 col-sm-item-3">

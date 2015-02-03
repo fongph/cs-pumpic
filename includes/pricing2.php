@@ -1,6 +1,4 @@
 <?php
-ini_set('display_errors', 1);
-
 $_inc = dirname(__FILE__); // includes
 $b_dir = dirname( $_inc ); // folder sites directory
 

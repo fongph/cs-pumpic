@@ -35,12 +35,6 @@ if($_request['productID']) {
 
 }
 
-if(!$obj ->getSession('orders_referer')) {
-    $obj ->setSession('orders_referer', $_SERVER['HTTP_REFERER']);
-} else
-    $obj ->setSession('orders_referer', $_SERVER['HTTP_REFERER']);
-    
-
 // init output params!
 $smarty->assign('getProducts', $products);
 
@@ -57,6 +51,6 @@ $smarty->assign("js",$config['path_js']);
 $smarty ->assign('api_device', $config['api_device']);
 $smarty ->assign('site_id', $config['site_id']);
 
-// $smarty ->assign('referer', $_SERVER['HTTP_REFERER']);
+$smarty ->assign('referer', $_SERVER['HTTP_REFERER']);
 // init output params
 $smarty->display($b_dir.'/templates/pages/pricing2.tpl');

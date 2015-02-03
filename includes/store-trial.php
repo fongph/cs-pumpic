@@ -14,7 +14,7 @@ $smarty->debugging = false;
 $smarty->force_compile = 1;
 
 /* list order */
-$products = $obj ->getProducts('first');
+$products = $obj ->getProducts('first-trial');
     
 /* form_order */
 $_request = (isset($_POST['price']) and !empty($_POST['price'])) ? $_POST['price']: false;

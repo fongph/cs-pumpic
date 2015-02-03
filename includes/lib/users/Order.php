@@ -5,6 +5,7 @@ use CS\Billing\Manager as BillingManager;
 use Seller\FastSpring\Gateway as Gateway;
 use CS\Models\Order\OrderRecord as OrderRecord; 
 use CS\Settings\GlobalSettings as GlobalSettings;
+use IP;
 
 use includes\lib\CDb as DB;
 
@@ -19,13 +20,15 @@ class Order extends ManagerUser
     private $_gateway;
     private $storeId;
     
+    private $referer;
+    
     public static $_data = array();
     
 //     private $_db = array(
 //        'dbname'    => 'main',
-//        'host'      => '188.40.64.2',
-//        'user'      => 'ci_user',
-//        'password'  => 'qmsgrSR8qhxeNSC44533hVBqwNajd62z2QtXwN6E'
+//        'host'      => '127.0.0.1',
+//        'user'      => 'root',
+//        'password'  => 'password'
 //        
 //    );
     
@@ -44,9 +47,18 @@ class Order extends ManagerUser
         $this -> storeId = $config['storeId'];
     }
     
+    public function setReferer( $value ) {
+        $this -> referer = $value;
+        return $this;
+    }
+    
+    public function getReferer() {
+        return $this -> referer;
+    }
+    
     private function _createOrder( $userID = null, $productId ) 
     {
-        
+        $ip = IP::getRealIP();
         $order = $this -> _billing -> getOrder();
         $order->setSiteId(self::SITE_ID);
         if($userID){
@@ -54,8 +66,15 @@ class Order extends ManagerUser
         }
          $order->setStatus(OrderRecord::STATUS_PENDING) // ->setStatus(CS\Models\Order\OrderRecord::STATUS_PENDING) ::STATUS_CREATED
                 ->setPaymentMethod(OrderRecord::PAYMENT_METHOD_FASTSPRING)
-                ->save();
-
+                -> setLocation( IP::getCountry($ip) ) 
+                -> save();
+         
+        // save referer 
+        $referer = $this -> _billing -> getReferer(); 
+        $referer -> setOrder($order)
+                ->setReferer( $this ->getReferer() )
+                -> save(); 
+        
         $orderProduct = $this -> _billing -> getOrderProduct();
         $orderProduct->setOrder($order)
                 ->setProduct($this -> _billing -> getProduct($productId))

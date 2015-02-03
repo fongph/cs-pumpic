@@ -129,7 +129,6 @@
                                                             <div class="list_price">
                                                             <form name="price_basic" method="POST" action="/buy.html">
                                                                 <input id='product_price_basic' type='hidden' name='price[productID]' value='0' class="product_price" />
-                                                                <input type="hidden" name="referer" value="{$referer}" />
                                                                 <ul>
                                                                     {foreach from=$getProducts.basic key=key item=_item}
                                                                     <li class= "">
@@ -187,7 +186,6 @@
                                                             <div class="space_line">&nbsp;</div>
                                                             <form name="price_basic_bottom" method="POST" action="/buy.html">
                                                                 <input id='product_price_basic' type='hidden' name='price[productID]' value='0' class="product_price" />
-                                                                <input type="hidden" name="referer" value="{$referer}" />
                                                                 <ul>
                                                                     {foreach from=$getProducts.basic key=key item=_item}
                                                                     <li class= "">
@@ -231,7 +229,6 @@
                                                             <div class="list_price">
                                                             <form name="price_premium" method="POST" action="/buy.html">
                                                                 <input id='product_price_premium' type='hidden' name='price[productID]' value='0' class="product_price"/>
-                                                                <input type="hidden" name="referer" value="{$referer}" />
                                                                 <ul>
                                                                     {foreach from=$getProducts.premium key=key item=_item}
                                                                     <li class= "">
@@ -287,7 +284,6 @@
                                                         <div class="space_line">&nbsp;</div> 
                                                             <form name="price_premium_bottom" method="POST" action="/buy.html">
                                                                 <input id='product_price_premium' type='hidden' name='price[productID]' value='0' class="product_price" />
-                                                                <input type="hidden" name="referer" value="{$referer}" />
                                                                 
                                                                 <ul>
                                                                     {foreach from=$getProducts.premium key=key item=_item}

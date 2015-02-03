@@ -130,9 +130,9 @@ class Order extends ManagerUser
         return $redirectUrl;
     }   
         
-    public function getProducts() 
+    public function getProducts($namespace) 
     {
-        $_plans = $this -> _billing->getSiteProducts(self::SITE_ID, self::PRODUCT_TYPE);
+        $_plans = $this -> _billing->getSiteProducts(self::SITE_ID, $namespace);
         if(is_array($_plans) 
                 and count($_plans) > 0) {
             
@@ -149,7 +149,6 @@ class Order extends ManagerUser
         
         return self::$_data;
     }
-    
     
     private function _numbers( $_str ) 
     {

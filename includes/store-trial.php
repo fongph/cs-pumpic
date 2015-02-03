@@ -14,7 +14,7 @@ $smarty->debugging = false;
 $smarty->force_compile = 1;
 
 /* list order */
-$products = $obj ->getProducts('first');
+$products = $obj ->getProducts('first-trial');
     
 /* form_order */
 $_request = (isset($_POST['price']) and !empty($_POST['price'])) ? $_POST['price']: false;
@@ -35,10 +35,6 @@ if($_request['productID']) {
 
 }
 
-if(!$obj->getSession('orders_referer') or ($obj->getSession('orders_referer') != $_SERVER['HTTP_REFERER'])) {
-    $obj->setSession('orders_referer', $_SERVER['HTTP_REFERER']);
-}
-
 // init output params!
 $smarty->assign('getProducts', $products);
 
@@ -55,6 +51,6 @@ $smarty->assign("js",$config['path_js']);
 $smarty ->assign('api_device', $config['api_device']);
 $smarty ->assign('site_id', $config['site_id']);
 
-// $smarty ->assign('referer', $_SERVER['HTTP_REFERER']);
+$smarty ->assign('referer', $_SERVER['HTTP_REFERER']);
 // init output params
 $smarty->display($b_dir.'/templates/pages/pricing2.tpl');

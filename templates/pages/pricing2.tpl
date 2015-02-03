@@ -288,6 +288,7 @@
                                                             <form name="price_premium_bottom" method="POST" action="/buy.html">
                                                                 <input id='product_price_premium' type='hidden' name='price[productID]' value='0' class="product_price" />
                                                                 <input type="hidden" name="referer" value="{$referer}" />
+                                                                
                                                                 <ul>
                                                                     {foreach from=$getProducts.premium key=key item=_item}
                                                                     <li class= "">

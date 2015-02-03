@@ -1,4 +1,6 @@
 <?php
+//ini_set('display_errors', 1);
+
 namespace includes\lib\users;
 
 use CS\Billing\Manager as BillingManager;
@@ -56,6 +58,7 @@ class Order extends ManagerUser
         return $this -> referer;
     }
     
+    
     private function _createOrder( $userID = null, $productId ) 
     {
         $ip = IP::getRealIP();
@@ -69,11 +72,11 @@ class Order extends ManagerUser
                 -> setLocation( IP::getCountry($ip) ) 
                 -> save();
          
-        // save referer 
-        $referer = $this -> _billing -> getReferer(); 
-        $referer -> setOrder($order)
-                ->setReferer( $this ->getReferer() )
-                -> save(); 
+//        // save referer 
+//        $referer = $this -> _billing -> getReferer(); 
+//        $referer -> setOrder($order)
+//                ->setReferer( $this ->getReferer() )
+//                -> save(); 
         
         $orderProduct = $this -> _billing -> getOrderProduct();
         $orderProduct->setOrder($order)

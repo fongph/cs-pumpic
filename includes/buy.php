@@ -9,7 +9,7 @@ $_request= (isset($_POST['price']) and !empty($_POST['price'])) ? $_POST['price'
 $_referer = (isset($_POST['referer']) and !empty($_POST['referer'])) ? $_POST['referer']: false;
 // $_productID = (!empty($_GET['productID'])) ? (int)$_GET['productID'] : false;
 
-$order -> setReferer( $_referer );
+// $order -> setReferer( $_referer );
 
 //logged
 if (isset($_request['productID']) and $_productID = (int)$_request['productID']) {

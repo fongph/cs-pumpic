@@ -29,7 +29,7 @@ Control your kids smartphone usage remotely"
                 
         {include file='../includes/content/ipad.tpl' 
         blockBg="dark"
-        imgUrl = "icons/ipad_android.png"
+        imgUrl = "lending_features_Smartphone monitoring.png"
         imgAlt = "Smartphone Monitoring"
         title = "Smartphone Monitoring"
         description = "Try Control Panel demo to see Smartphone Monitoring in use.<br />

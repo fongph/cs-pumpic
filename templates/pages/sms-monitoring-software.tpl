@@ -29,7 +29,7 @@ View your kid’s text message history remotely."
                 
         {include file='../includes/content/ipad.tpl' 
         blockBg="dark"
-        imgUrl = "icons/ipad_android.png"
+        imgUrl = "lending_features_SMS.png"
         imgAlt = "SMS monitoring"
         title = "Sms Monitoring"
         description = "Try Control Panel demo to see Pumpic SMS Monitoring in use.<br />

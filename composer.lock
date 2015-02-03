@@ -12,7 +12,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:boomersweb/cs-billing.git",
-                "reference": "b8c2f834908b7c589a9d4020674856f2d71c0a31"
+                "reference": "f57956ec3c6a5d211725938389b1d5d70d3b2a6a"
             },
             "require": {
                 "boomers/cs-models": "dev-master",
@@ -31,7 +31,7 @@
             "license": [
                 "MIT"
             ],
-            "time": "2015-01-14 10:19:46"
+            "time": "2015-02-03 10:54:50"
         },
         {
             "name": "boomers/cs-mail",

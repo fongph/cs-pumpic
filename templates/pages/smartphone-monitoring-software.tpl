@@ -10,7 +10,7 @@
     {include file='../includes/main/main-button-goup.tpl'}
     <!-- END FLY BUTTON -->
     
-    <div class="wrapper box-bottom-images block-smartphone">
+    <div class="wrapper block-smartphone">
         <!-- TOP MENU -->
  	{include file='../includes/main/main-top-menu.tpl' }
         

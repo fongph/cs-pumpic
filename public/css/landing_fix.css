@@ -131,7 +131,7 @@
 }
 
 .block-smartphone .banner-header {
-    padding-top: 40px;
+    padding-top: 20px;
 }    
 
 .block-call-monitoring .banner-header {
@@ -142,8 +142,11 @@
 /*    padding: 97px 0px 67px;*/
 }
 
+/*.block-smartphone .visual-img-pc {
+    width: 80%;
+}*/
+
 .block-sms .visual-img-pc, 
-.block-smartphone .visual-img-pc, 
 .block-call-monitoring .visual-img-pc {
     margin-top: 0px;
     width: 100%;
@@ -220,6 +223,11 @@
     .block-call-monitoring .visual-img-pc {
         max-width: 60%;
     } 
+    
+    .block-smartphone .visual-img-pc {
+        bottom: 0px;
+/*        width: 50%;*/
+    }    
 }    
 
 @media (min-width: 992px) {
@@ -257,6 +265,7 @@
     
     .block-smartphone .visual-img-pc {
          bottom: 0px;
+/*         width: 80%;*/
     }    
 }
 
@@ -288,6 +297,7 @@
     
     .block-smartphone .visual-img-pc {
          bottom: -10px;
+/*          width: 80%;*/
     }
     
 }

@@ -448,9 +448,48 @@ function cellspy_widgets_init() {
 		'after_title' => '</h3>',
 	) );
         
+        // subscribe
+//        register_sidebar( array(
+//		'name' => __( 'MailChimp subscribe', 'cellspy' ),
+//		'id' => 'sidebar-subscribe',
+//		'description' => __( 'Subscribe', 'cellspy' ),
+//		'before_widget' => '<aside id="%1$s" class="widget %2$s">', // <aside id="%1$s" class="widget %2$s">
+//		'after_widget' => '</aside>', // </aside>
+//		'before_title' => '',
+//		'after_title' => '',
+//	) );
+        
+        
+        // genarated sidevar all pages
+        $pages = get_pages_list();
+        
+        
+        foreach($pages as $page) :
+            
+            register_sidebar( array(
+		'name' => __( 'MailChimp subscribe '.$page['post_type'], 'dist' ),
+		'id' => 'sidebar-subscribe-'.$page['ID'],
+		'description' => __( 'MailChimp subscribe '.$page['post_type'], 'dist' ),
+		'before_widget' => '<div id="%1$s" class="box-sidebar-subscribe sidebar-subscribe-type-'.$page['post_type'].' sidebar-subscribe-item-'.$page['ID'].' %2$s">',
+		'after_widget' => '</div>', // </aside>
+		'before_title' => '',
+		'after_title' => '',
+            ) );
+            
+        
+        endforeach;
+        
         
 }
 add_action( 'widgets_init', 'cellspy_widgets_init' );
+
+function get_pages_list() {
+    global $wpdb;
+    $pages = $wpdb->get_results("SELECT * FROM $wpdb->posts WHERE $wpdb->posts.post_type = 'page' 
+                        AND $wpdb->posts.post_status = 'publish'
+                        AND $wpdb->posts.post_parent = '0' ORDER BY menu_order ASC ", ARRAY_A );
+    return $pages; 
+}
 
 
 if ( ! function_exists( 'cellspy_content_nav' ) ) :

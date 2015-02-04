@@ -27,6 +27,8 @@
     <link href="<?php echo getStaticUrl();?>/css/parent.css" rel="stylesheet">
     <link href="<?php echo getStaticUrl();?>/css/wp-post.css" rel="stylesheet">
 
+    <link href="<?php echo getStaticUrl();?>/css/wp-subscribe.css" rel="stylesheet">
+    
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -64,6 +66,9 @@
 
 <?php wp_head(); 
 */ ?>
+
+<?php wp_head(); ?>
+
 </head>
 
 <body class="wp-blog">

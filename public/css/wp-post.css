@@ -106,7 +106,8 @@
   margin-bottom: 5px;
 }
 
-.wp-blog .h2, .wp-blog .h2 > a {
+.wp-blog .h2, .wp-blog .h2 > a,
+.wp-blog .post > h2, .wp-blog .post > h2 > a{
   color: #4d4f5b;
   margin-top: 10px;
   margin-bottom: 20px;

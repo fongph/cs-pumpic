@@ -13,6 +13,18 @@
             
             <?= the_content() ?>
             
+            
+            <?php 
+//                $subscribe = '';
+//                if ( is_active_sidebar( 'subscribe' ) ) :
+//                         $subscribe = dynamic_sidebar( 'subscribe' );
+//                    endif; 
+//                echo $subscribe;    
+                    ?>
+
+            
+            <?php // get_sidebar('subscribe'); ?>
+            
         </div>    
         <?= fb_get_cat_related_posts() ?>
 

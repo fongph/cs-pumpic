@@ -15,6 +15,11 @@
     bottom: 0px;
 }
 
+.box-bottom-images .banner-header {
+    padding-top: 40px;
+    padding-bottom: 0px;
+}
+
 @media only screen and (max-width: 480px) {
     .block-android .visual-text,
     .block-iso .visual-text {
@@ -31,6 +36,7 @@
     .block-iso .visual-img-pc {
         margin-top: 20px;
     }
+    
 }
 @media (min-width: 468px) {
     .block-android .visual-text,
@@ -317,3 +323,4 @@
         max-width: 100% !important;
     }
 }
+

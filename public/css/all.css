@@ -4479,7 +4479,7 @@ div[id^="attachment_"], div[id*=" attachment_"] {
 }
 #table-container .table-item-col ul > li {
     margin-bottom: 10px;
-    text-align: center;
+    text-align: left;
     list-style: none;
 }
 

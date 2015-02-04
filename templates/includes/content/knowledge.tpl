@@ -1,6 +1,6 @@
 <div class="{if $blockBg}{$blockBg}{else}dark{/if}">
         <div class="container">
-                <h2 class="text-center">WELCOME TO PUMPIC LEARNING CENTER</h2>
+                <h2 class="text-center">Welcome to Pumpic Learning Center</h2>
                 <label class="label-description text-center">
                     You have been successfully subscribed! Now you can start learning about children safety in mobile era. 
                     <br />You will receive future updates and new articles on your email and you can also star learning now:

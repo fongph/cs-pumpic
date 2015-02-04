@@ -165,9 +165,13 @@
     }
     
     .block-sms .banner-header,
-    .block-call-monitoring .banner-header,
-    .block-smartphone .banner-header {
+    .block-call-monitoring .banner-header {
         padding: 10px 0px 10px;
+    }
+    
+    .block-smartphone .banner-header { 
+        padding-top: 20px;
+        padding-bottom: 0px;
     }
     
     .block-sms .visual-img-pc,
@@ -185,9 +189,13 @@
     
     
     .block-sms .banner-header,
-    .block-call-monitoring .banner-header,
-    .block-smartphone .banner-header {
+    .block-call-monitoring .banner-header {
         padding: 10px 0px 10px;
+    }
+    
+    .block-smartphone .banner-header { 
+        padding-top: 20px;
+        padding-bottom: 0px;
     }
     
     .block-sms .visual-img-pc,

@@ -5,6 +5,8 @@
 <title>{$getSetting.title}</title>
 <meta name="description" content="{$getSetting.description}" />
 
+<meta name="robots" content="noindex,nofollow" />
+
 {include file='../../includes/wrap-title-footer.tpl'}
 <body>
     

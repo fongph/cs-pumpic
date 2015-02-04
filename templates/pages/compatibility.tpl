@@ -3,6 +3,8 @@
 	<title>Compatibility search results</title>
 	<meta name="description" content="Ensure the phone you want to track is mentioned in the Compatibility list and OS Requirements. If it meets the requirements, you can install pumpic monitoring app." />
 	
+        <meta name="robots" content="noindex,nofollow" />
+        
 {include file='../includes/wrap-title-footer.tpl'}
 <body>
 {include file='../includes/button-help.tpl'}

@@ -132,6 +132,7 @@
 
 .block-smartphone .banner-header {
     padding-top: 20px;
+    padding-bottom: 0px;
 }    
 
 .block-call-monitoring .banner-header {
@@ -154,7 +155,6 @@
 
 .block-smartphone .visual-img-pc {
     position: relative;
-    bottom: -10px;
 }
 
 @media only screen and (max-width: 480px) {
@@ -209,6 +209,7 @@
     
     .block-smartphone .banner-header {
         padding-top: 20px;
+        padding-bottom: 0px;
     }
     
     .block-call-monitoring .banner-header {
@@ -250,7 +251,8 @@
     }
     
     .block-smartphone .banner-header {
-        padding-top: 40px;
+        padding-top: 20px;
+        padding-bottom: 0px;
     }
     
     .block-sms .visual-img-pc {
@@ -285,7 +287,8 @@
     }
 
     .block-smartphone .banner-header {
-        padding-top: 40px;
+        padding-top: 20px;
+        padding-bottom: 0px;
     } 
     
     .block-sms .visual-img-pc,
@@ -296,7 +299,7 @@
     }
     
     .block-smartphone .visual-img-pc {
-         bottom: -10px;
+/*         bottom: -10px;*/
 /*          width: 80%;*/
     }
     

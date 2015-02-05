@@ -12,7 +12,7 @@
 {include file='../includes/button-help.tpl'}
 {include file='../includes/button-goup.tpl'}
 	<div class="wrapper">
-	{include file='../includes/topmenu-logo-login.tpl' topmenu_active="false"}	
+	{include file='../includes/main/main-top-menu.tpl' topmenu_active="false"}	
 <div class="very_easy">
 			<div class="container">
                             

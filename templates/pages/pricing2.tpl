@@ -14,7 +14,7 @@
     {include file='../includes/button-help.tpl'}
     {include file='../includes/button-goup.tpl'}
     <div class="wrapper">
-        {include file='../includes/topmenu-logo-login.tpl' topmenu_active='pricing'}
+        {include file='../includes/main/main-top-menu.tpl' topmenu_active='pricing'}
         <div class="no_bg">
             <div class="container">
                 <div class="row">

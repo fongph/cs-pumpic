@@ -9,7 +9,7 @@
 {include file='../includes/button-help.tpl'}
 {include file='../includes/button-goup.tpl'}
 	<div class="wrapper">
-		{include file='../includes/topmenu-logo-login.tpl' }
+		{include file='../includes/main/main-top-menu.tpl' }
 		<div class="very_easy">
 			<div class="container">
 				<div class="row box-anchor">

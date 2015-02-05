@@ -34,8 +34,8 @@
                             </li>
                             <li class="{if $topmenu_active=='pricing'}active{/if} ga-action-click" 
                                 id="header-menu-store-link"
-                                ga-action ="link click"
-                                ga-category="store"
+                                ga-action ="click"
+                                ga-category="store link"
                                 ga-label="header"
                                 >
                                 <a href="/store.html">Store</a>

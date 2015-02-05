@@ -10,10 +10,10 @@
                     <br />
                     <span>{if $sloganSecond}{$sloganSecond}{else}Secure Kids’ Happiness{/if}</span></div>
                 <div>
-                    <button id="promo-footer-buy" class="btn btn-default _forward_pricing"
-                            ga-label-button="{if $labelButton}{$labelButton}{else}main-now{/if}"
-                            ga-type-button="buy button"
-                            ga-event="click">Buy Pumpic</button>
+                    <a href="/store.html" class="btn btn-default _forward_pricing ga-action-click"
+                       ga-label="banner"
+                       ga-category="buy pumpic"
+                       ga-action="click">Buy Pumpic</a>
                 </div>
             </div>
         </div>

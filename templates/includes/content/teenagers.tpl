@@ -57,7 +57,7 @@
                                         <a class="btn btn-red text-center ga-action-click" 
                                         ga-action ="click"
                                         ga-category="buy pumpic"
-                                        ga-label="teenagers" 
+                                        ga-label="body" 
                                        href="/store.html">Buy Pumpic</a>
                                     </div>    
                                 </div> 

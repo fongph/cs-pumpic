@@ -3,7 +3,7 @@
 $smarty = new Smarty();
 $smarty->caching = true;
 $smarty->compile_check = true;
-$smarty->force_compile =  true;
+$smarty->force_compile =  false;
 $smarty->debugging = false;
 
 $smarty->setTemplateDir($config['smarty']['tpl_path']);

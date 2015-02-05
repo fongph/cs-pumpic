@@ -6,12 +6,28 @@ require_once $_inc.'/config.php';
 require_once $_inc.'/lib/users/Order.php';
 $obj = new includes\lib\users\Order;
 
-$smarty = new Smarty;
+// smarty config
+require_once 'smarty.config.php';
 
-// settings smarty
-$smarty->compile_check = true;
-$smarty->debugging = false;
-$smarty->force_compile = 1;
+//$smarty = new Smarty;
+//
+//// settings smarty
+//$smarty->compile_check = true;
+//$smarty->debugging = false;
+//$smarty->force_compile = 1;
+//
+//$smarty->setTemplateDir($config['smarty']['tpl_path']);
+//$smarty->setCacheDir($config['smarty']['cache_path']);
+//$smarty->setCompileDir($config['smarty']['tpl_path_compile']);
+//
+//$smarty->registerPlugin("function","year_now","print_current_year");
+//$smarty->assign("domain",$config['domain']);
+//$smarty->assign("domain_http",$config['domain_http']);
+//$smarty->assign("img",$config['path_img']);
+//$smarty->assign("css",$config['path_css']);
+//$smarty->assign("js",$config['path_js']);
+//$smarty ->assign('api_device', $config['api_device']);
+//$smarty ->assign('site_id', $config['site_id']);
 
 /* list order */
 $products = $obj ->getProducts('first');
@@ -41,19 +57,6 @@ if(!$obj->getSession('orders_referer') or ($obj->getSession('orders_referer') !=
 
 // init output params!
 $smarty->assign('getProducts', $products);
-
-$smarty->setTemplateDir($config['smarty']['tpl_path']);
-$smarty->setCacheDir($config['smarty']['cache_path']);
-$smarty->setCompileDir($config['smarty']['tpl_path_compile']);
-
-$smarty->registerPlugin("function","year_now","print_current_year");
-$smarty->assign("domain",$config['domain']);
-$smarty->assign("domain_http",$config['domain_http']);
-$smarty->assign("img",$config['path_img']);
-$smarty->assign("css",$config['path_css']);
-$smarty->assign("js",$config['path_js']);
-$smarty ->assign('api_device', $config['api_device']);
-$smarty ->assign('site_id', $config['site_id']);
 
 // $smarty ->assign('referer', $_SERVER['HTTP_REFERER']);
 // init output params

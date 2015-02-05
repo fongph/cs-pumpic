@@ -8,30 +8,10 @@ function dispatch($urlParams, $config){
                 and in_array('compatibility', $urlParams['uriArr'])) {
             $urlParams['uriArr'] = array( array_shift($urlParams['uriArr']) );
         }
-				
-			$smarty = new Smarty();
-			$smarty->caching = false;
-			$smarty->compile_check = true;
-			$smarty->force_compile = false;
-			$smarty->debugging = false;
-			$smarty->setTemplateDir($config['smarty']['tpl_path']);
-			$smarty->setCacheDir($config['smarty']['cache_path']);
-			$smarty->setCompileDir($config['smarty']['tpl_path_compile']);
-			
-			$smarty->registerPlugin("function","year_now","print_current_year");
-                        
-                        
-			$smarty->assign("domain",$config['domain']);
-			$smarty->assign("domain_http",$config['domain_http']);
-			$smarty->assign("img",$config['path_img']);
-			$smarty->assign("css",$config['path_css']);
-			$smarty->assign("js",$config['path_js']);
-                        
-                        $smarty ->assign('api_device', $config['api_device']);
-                        $smarty ->assign('site_id', $config['site_id']);
-                        
-       
-    
+		
+        // smarty config
+	require_once 'smarty.config.php';		
+         
     try {
 
         if (isset($config['php_compile'][$urlParams['uri']])) {
@@ -369,6 +349,15 @@ function print_current_year($params, $smarty)
   return strftime($format,time());
 }
 
+function cache_data($params, $smarty) {
+    if(empty($params['data'])) {
+        $_data = date('Y-m-d'); 
+    } else 
+        $_data = $params['data'];
+    
+    return strtotime($_data);
+}
+
 function _redirect( $_url ) {
     header('Location: '.$_url);
     die();
@@ -409,7 +398,7 @@ function stdToArray($obj){
 /*
  * Features ( generate Plans )
  */
-function smarty_function_features_plans( $_plans = array()  ) {
+function smarty_function_features_plans( $_plans = array() ) { 
     
     $_options = [
         // Call History
@@ -763,11 +752,16 @@ function smarty_function_features_plans( $_plans = array()  ) {
     if(is_array($_options) and count($_options) > 0)
         $_options = array_merge($_options, $_plans);
     
-    $smarty = new Smarty();
-   // $smarty->caching = false;
-   // $smarty->compile_check = false;
-   // $smarty->force_compile = false;
-   // $smarty->debugging = false;
+    // config
+    require_once 'config.php';
+    //smarty configs
+    include 'smarty.config.php';
+    
+   // $smarty = new Smarty();
+    $smarty->caching = false;
+    $smarty->compile_check = false;
+    $smarty->force_compile = false;
+    $smarty->debugging = false;
     
     $smarty->setTemplateDir(dirname(dirname(__FILE__)).'/templates/includes'); // features-plans.tpl
     $smarty->setCacheDir(dirname(dirname(__FILE__)).'/cache/');

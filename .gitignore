@@ -1,5 +1,6 @@
 /nbproject/*
 /templates_c/*
+/cache/*
 /vendor/*
 /includes/config.php
 /public/security/wp-config.php

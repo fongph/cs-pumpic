@@ -9,7 +9,8 @@ $_request= (isset($_POST['price']) and !empty($_POST['price'])) ? $_POST['price'
 //$_referer = (isset($_POST['referer']) and !empty($_POST['referer'])) ? $_POST['referer']: false;
 // $_productID = (!empty($_GET['productID'])) ? (int)$_GET['productID'] : false;
 
-$_referer = ($order ->getSession('orders_referer')) ? $order ->getSession('orders_referer'): false;
+$_referer = ($_COOKIE['orders_referer']) ? $_COOKIE['orders_referer'] : false;
+// $_referer = ($order ->getSession('orders_referer')) ? $order ->getSession('orders_referer'): false;
 $order -> setReferer( $_referer );
 
 //logged

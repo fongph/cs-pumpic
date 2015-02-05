@@ -1,7 +1,12 @@
 <?php
 function dispatch($urlParams, $config){
         
-        
+        // orders_referer
+        if(empty($_COOKIE['orders_referer'])) {
+            setcookie("orders_referer", $_SERVER['HTTP_REFERER'], time()+3600 , '/' );
+        }
+    
+    
         // fix url
         if(is_array($urlParams['uriArr']) 
                 and count($urlParams['uriArr']) > 0

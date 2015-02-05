@@ -148,7 +148,11 @@ function hasUser() {
     return $_result;
 }
 
-
+function createReferral() {
+    if(empty($_COOKIE['orders_referer'])) {
+        setcookie("orders_referer", $_SERVER['HTTP_REFERER'], time()+3600 , '/' );
+    }
+}
 
 
 function get_banners_align($_align = 'top', $post_ID = false, $banner_id = false) {

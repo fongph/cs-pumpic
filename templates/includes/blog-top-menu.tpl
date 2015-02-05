@@ -15,7 +15,7 @@
 								</div>
 							</div>
                                                         
-                                                        <?php if (hasUser) : ?>
+                                                        <?php if (hasUser()) : ?>
                                                             <div class='box-cp pull-right'>   
                                                                 <a href="<?php echo getStaticUrl();?>/logout.html" class="pull-right visible-lg cp-logout">Log Out</a>
                                                                 <a href="http://cp.pumpic.com/" class="btn btn-sm btn-success visible-lg cp-login"><i class="icon-lock"></i>Control Panel</a>
@@ -52,7 +52,7 @@
                                                                         
                                                                         
                                                                         <li>
-                                                                            <?php if (hasUser) : ?> 
+                                                                            <?php if (hasUser()) : ?> 
                                                                                 <a href="http://cp.pumpic.com/" class="btn btn-sm btn-success hidden-lg cp-login"><i class="icon-lock"></i> Control Panel</a>
                                                                             <?php else: ?>
                                                                                 <a href="<?php echo getStaticUrl();?>/login.html" class="btn btn-sm btn-success hidden-lg cp-login"><i class="icon-lock"></i> Log In</a>
@@ -60,7 +60,7 @@
 
                                                                         </li>
 
-                                                                        <?php if (hasUser) : ?>
+                                                                        <?php if (hasUser()) : ?>
                                                                             <li>
                                                                                 <a href="<?php echo getStaticUrl();?>/logout.html" class="hidden-lg cp-logout">Log Out</a>
 

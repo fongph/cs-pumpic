@@ -4,6 +4,8 @@ RewriteCond %{HTTP_HOST} ^www\.pumpic\.com
 RewriteRule ^(.*)$ http://pumpic.com/$1 [NC,R=301,L]
 
 RewriteRule ^pricing\.html$ store\.html [L,R=301]
+
+RewriteRule ^compatibility\.html$ compatibility/ [L,R=301]
 RewriteRule ^compatibility/(.+)$ compatibility/?model=$1 [L]
 
 RewriteCond %{REQUEST_FILENAME} !-f

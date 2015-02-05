@@ -29,17 +29,22 @@ function dispatch($urlParams, $config){
                         
                         $smarty ->assign('api_device', $config['api_device']);
                         $smarty ->assign('site_id', $config['site_id']);
+                        
+       
     
     try {
 
         if (isset($config['php_compile'][$urlParams['uri']])) {
             include $config['php_compile'][$urlParams['uri']];
-            
-        } elseif($urlParams['uri'] == 'compatibility') {
-            throw new PageNotFoundException;
-            
-        } elseif(strpos($urlParams['uri'], 'compatibility/') === 0) {
+        } elseif( isset($_GET['model']) and !empty($_GET['model']) ) {
             include 'compatibility_device.php';
+            
+            
+        //} elseif($urlParams['uri'] == 'compatibility') {
+        //    throw new PageNotFoundException;
+            
+        //} elseif(strpos($urlParams['uri'], 'compatibility/') === 0) {
+         //   include 'compatibility_device.php';
             
         } else {
             

@@ -28,6 +28,6 @@ if($phoneData){
         'description' => "Parental control software for {$phoneData['name']} monitors and blocks unsafe activity while allowing kids access to the Internet. Geo fencing allows you to be always aware of your child safety.",
         'api' => $config['api_device'],
     ));
-    $smarty->display('compatibility/index.tpl');
+    $smarty->display('compatibility/item.tpl');
     
 } else throw new PageNotFoundException;

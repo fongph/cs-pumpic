@@ -8,8 +8,8 @@ $obj = new includes\lib\users\Order;
 
 // smarty config
 require_once 'smarty.config.php';
-$smarty->setCacheLifetime(-1);
-$smarty->clearAllCache(); // clear all cahes
+// $smarty->setCacheLifetime(-1);
+// $smarty->clearAllCache(); // clear all cahes
 
 //$smarty = new Smarty;
 //

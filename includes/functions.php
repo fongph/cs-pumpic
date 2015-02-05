@@ -12,6 +12,8 @@ function dispatch($urlParams, $config){
         // smarty config
 	require_once 'smarty.config.php';		
         
+        // $smarty->setCaching();
+        
     try {
 
         if (isset($config['php_compile'][$urlParams['uri']])) {

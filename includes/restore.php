@@ -9,7 +9,7 @@ $obj = new includes\lib\users\Order;
 
 // smarty config
 require_once 'smarty.config.php';
-
+// $smarty->clearAllCache(); // clear all cahes
 //$smarty = new Smarty;
 //
 //// settings smarty
@@ -30,7 +30,7 @@ require_once 'smarty.config.php';
 //$smarty ->assign('api_device', $config['api_device']);
 //$smarty ->assign('site_id', $config['site_id']);
 
-$smarty->clearAllCache(); // clear all cahes
+
 
 /* restore */
 $_result = array(

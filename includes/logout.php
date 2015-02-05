@@ -7,8 +7,8 @@ require_once $_inc.'/lib/users/ManagerUser.php';
 
 // smarty config
 require_once 'smarty.config.php';
-$smarty->setCacheLifetime(-1);
-$smarty->clearAllCache(); // clear all cahes
+// $smarty->setCacheLifetime(-1);
+// $smarty->clearAllCache(); // clear all cahes
 
 $_managerUser  = new includes\lib\users\ManagerUser;
 if($_managerUser -> getLoginUser()) {

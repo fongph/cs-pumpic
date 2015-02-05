@@ -30,6 +30,8 @@ require_once 'smarty.config.php';
 //$smarty ->assign('api_device', $config['api_device']);
 //$smarty ->assign('site_id', $config['site_id']);
 
+$smarty->clearAllCache(); // clear all cahes
+
 /* restore */
 $_result = array(
     '_error' => false,
@@ -53,6 +55,8 @@ if(isset($_POST['email']) and !$obj -> validateEmail($_POST['email'])) {
 }
 
 if($_result['_success']) {
+    
+    
     $_result['_success'] = 'Your request was successfully sent. Check your email for further instructions.'; // 'Your request was successfully sent. Check your inbox and follow the instructions from the received email.';
 }
     

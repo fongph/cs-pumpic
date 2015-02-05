@@ -136,6 +136,20 @@ function getStaticUrl(){
 	
 }
 
+function hasUser() {
+    require_once '../../includes/lib/users/ManagerUser.php';
+    $obj = new includes\lib\users\ManagerUser( array() );
+    $_result = false;
+    
+    if($obj -> getLoginUser()) {
+        $_result = true;
+    }
+    
+    return $_result;
+}
+
+
+
 
 function get_banners_align($_align = 'top', $post_ID = false, $banner_id = false) {
     global $wpdb;

@@ -14,7 +14,17 @@
 									<a href="<?php echo getStaticUrl();?>">pumpic</a>
 								</div>
 							</div>
-							<a href="<?php echo getStaticUrl();?>/login.html" class="btn btn-sm btn-success pull-right visible-lg"><i class="icon-lock"></i> Log In</a>
+                                                        
+                                                        <?php if (hasUser) : ?>
+                                                            <div class='box-cp pull-right'>   
+                                                                <a href="<?php echo getStaticUrl();?>/logout.html" class="pull-right visible-lg cp-logout">Log Out</a>
+                                                                <a href="http://cp.pumpic.com/" class="btn btn-sm btn-success visible-lg cp-login"><i class="icon-lock"></i>Control Panel</a>
+                                                            </div>    
+                                                        <?php else: ?>
+                                                            <a href="<?php echo getStaticUrl();?>/login.html" class="btn btn-sm btn-success pull-right visible-lg cp-login"><i class="icon-lock"></i> Log In</a>
+                                                        <?php endif; ?>
+                                                        
+							<!-- <a href="<?php echo getStaticUrl();?>/login.html" class="btn btn-sm btn-success pull-right visible-lg"><i class="icon-lock"></i> Log In</a> -->
 							<!-- Collect the nav links, forms, and other content for toggling -->
 							<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 								<ul class="nav navbar-nav">
@@ -39,9 +49,27 @@
 									<!--li>
 										<a href="http://demo.{$domain}">Demo</a>
 									</li-->
-									<li>
+                                                                        
+                                                                        
+                                                                        <li>
+                                                                            <?php if (hasUser) : ?> 
+                                                                                <a href="http://cp.pumpic.com/" class="btn btn-sm btn-success hidden-lg cp-login"><i class="icon-lock"></i> Control Panel</a>
+                                                                            <?php else: ?>
+                                                                                <a href="<?php echo getStaticUrl();?>/login.html" class="btn btn-sm btn-success hidden-lg cp-login"><i class="icon-lock"></i> Log In</a>
+                                                                            <?php endif; ?>   
+
+                                                                        </li>
+
+                                                                        <?php if (hasUser) : ?>
+                                                                            <li>
+                                                                                <a href="<?php echo getStaticUrl();?>/logout.html" class="hidden-lg cp-logout">Log Out</a>
+
+                                                                            </li>
+                                                                        <?php endif; ?>
+                                                                        
+									<!-- <li>
 										<a href="<?php echo getStaticUrl();?>/login.html" class="btn btn-sm btn-success hidden-lg"><i class="icon-lock"></i> Log In</a>
-									</li>
+									</li> -->
 								</ul>
 							</div>
 							<!-- /.navbar-collapse -->

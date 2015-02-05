@@ -5,6 +5,11 @@ $b_dir = dirname( $_inc ); // folder sites directory
 
 require_once $_inc.'/lib/users/ManagerUser.php';
 
+// smarty config
+require_once 'smarty.config.php';
+$smarty->setCacheLifetime(-1);
+$smarty->clearAllCache(); // clear all cahes
+
 $_managerUser  = new includes\lib\users\ManagerUser;
 if($_managerUser -> getLoginUser()) {
     $_managerUser -> logout();
@@ -16,5 +21,4 @@ if($_managerUser -> getLoginUser()) {
 //    unset ($_COOKIE['popUp']);
 //}
 
-header('Location: /');
-die();
+$_managerUser -> _redirect('/');

@@ -8,7 +8,7 @@ $obj = new includes\lib\users\Order;
 
 // smarty config
 require_once 'smarty.config.php';
-
+$smarty->clearAllCache(); // clear all cahes
 //$smarty = new Smarty;
 //
 //// settings smarty

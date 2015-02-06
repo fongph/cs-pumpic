@@ -11,7 +11,11 @@
 {include file='../includes/button-help.tpl'}
 {include file='../includes/button-goup.tpl'}
 	<div class="wrapper parent-control">
-	{include file='../includes/main/main-top-menu.tpl' topmenu_active='home'}	
+	{include file='../includes/main/main-top-menu.tpl' 
+                topmenu_active='home'
+                cache_id = "includes_main_main-top-menu"
+                nocache
+        }	
 		<div class="visual">
 
             <div class="container bg_famaly">

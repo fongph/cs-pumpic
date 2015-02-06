@@ -9,7 +9,11 @@
 {include file='../includes/button-help.tpl'}
 {include file='../includes/button-goup.tpl'}
 	<div class="wrapper">
-	{include file='../includes/main/main-top-menu.tpl' topmenu_active='how-to'}	
+	{include file='../includes/main/main-top-menu.tpl' 
+                topmenu_active='how-to'
+                cache_id = "includes_main_main-top-menu"
+                nocache
+        }	
 		<div class="very_easy">
 			<div class="container">
 				<div class="row">

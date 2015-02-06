@@ -1,7 +1,7 @@
 <?php 
 
 $smarty = new Smarty();
-$smarty->caching = false;
+$smarty->caching = true;
 $smarty->compile_check = true;
 $smarty->force_compile =  false;
 $smarty->debugging = false;

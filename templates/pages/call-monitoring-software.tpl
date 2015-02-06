@@ -13,7 +13,10 @@
     <div class="wrapper call-monitoring">
         <!-- TOP MENU -->
 
-	{include file='../includes/main/main-top-menu.tpl' }
+	{include file='../includes/main/main-top-menu.tpl' 
+            cache_id = "includes_main_main-top-menu"
+            nocache
+        }
         
         <!-- CONTENT -->
 

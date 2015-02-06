@@ -10,7 +10,11 @@
 {include file='../includes/button-help.tpl'}
 {include file='../includes/button-goup.tpl'}
 	<div class="wrapper">
-	{include file='../includes/main/main-top-menu.tpl' topmenu_active="compatibility"}	
+	{include file='../includes/main/main-top-menu.tpl' 
+                topmenu_active="compatibility"
+                cache_id = "includes_main_main-top-menu"
+                nocache    
+        }	
 <div class="very_easy">
                 <div class="container">
                         <div class="row">
@@ -67,6 +71,7 @@
                                         <div class="row">
                                             <h2 class="result-title">Most popular smartphones</h2>
                                             <div class="box-get-search-result clearfix">
+                                            {nocache}    
                                                 {foreach from=$phones item=phone}
                                                     <div class="col-sm-3 col-md-3 col-xs-6" id="search-result-item">
                                                         <div class="thumbnail">
@@ -81,9 +86,11 @@
                                                         </div>
                                                     </div>
                                                 {/foreach}
+                                            {/nocache}    
                                             </div>
                                             <div class="box-navigations">
                                                 <ul class="pagination">
+                                                {nocache}    
                                                     {foreach from=$pages item=page}
                                                         {if $page === false}
                                                             <li class="disabled"><span class="ellipse">…</span></li>
@@ -93,6 +100,7 @@
                                                             <li><a href="/compatibility.html{if $page}?page={$page}{/if}" class="page-link" href="#page={$page+1}">{$page+1}</a></li>
                                                         {/if}
                                                     {/foreach}
+                                                {/nocache}    
                                                 </ul>
                                             </div>
                                         </div>

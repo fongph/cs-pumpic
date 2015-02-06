@@ -138,7 +138,7 @@
                                                                     <li class= "">
                                                                         <label class="label_radio hover_label_radio r_off"><input class="data-price" data-target="#basic-price-per-month" data-cur="usd" data-price-usd="{$_item.price}" data-period="{$_item.period}" name="optionsRadios" id="optionsRadios{$_item.id}1"
                                                                         value="{$_item.id}" type="radio" 
-                                                                        {if $_item.period == '3'} checked="checked" {/if}
+                                                                        {if $_item.period == '12'} checked="checked" {/if}
                                                                         />
                                                                         <span class="sp">
                                                                             <strong>
@@ -196,7 +196,7 @@
                                                                     <li class= "">
                                                                         <label class="label_radio hover_label_radio r_off"><input name="optionsRadios" id="optionsRadios{$_item.id}2"
                                                                         value="{$_item.id}" type="radio" 
-                                                                        {if $_item.period == '3'} checked="checked" {/if}
+                                                                        {if $_item.period == '12'} checked="checked" {/if}
                                                                         />
                                                                         <span class="sp">
                                                                             <strong>
@@ -229,7 +229,7 @@
                                                                 <img src="{$img}/premium_pack.png">
                                                             </div>
                                                             <div class="wr_price_big">
-                                                                <span></span><div class="box-currence"><symbol attr-iso="usd">$</symbol><curr id="premium-price-per-month">13.33</curr></div><span>/ month</span>
+                                                                <span></span><div class="box-currence"><symbol attr-iso="usd">$</symbol><curr id="premium-price-per-month">10.83</curr></div><span>/ month</span>
                                                             </div>
                                                             <div class="list_price">
                                                             <form name="price_premium" method="POST" action="/buy.html" autocomplete="off">
@@ -240,7 +240,7 @@
                                                                     <li class= "">
                                                                         <label class="label_radio hover_label_radio r_off"><input class="data-price" data-target="#premium-price-per-month" data-cur="usd" data-price-usd="{$_item.price}" data-period="{$_item.period}" name="optionsRadios" id="optionsRadios{$_item.id}3"
                                                                         value="{$_item.id}" type="radio" 
-                                                                        {if $_item.period == '3'} checked="checked" {/if}
+                                                                        {if $_item.period == '12'} checked="checked" {/if}
                                                                         />
                                                                         <span class="sp">
                                                                             <strong>
@@ -296,7 +296,7 @@
                                                                     <li class= "">
                                                                         <label class="label_radio hover_label_radio r_off"><input name="optionsRadios" id="optionsRadios{$_item.id}4"
                                                                         value="{$_item.id}" type="radio" 
-                                                                        {if $_item.period == '3'} checked="checked" {/if}
+                                                                        {if $_item.period == '12'} checked="checked" {/if}
                                                                         />
                                                                         <span class="sp">
                                                                             <strong>

@@ -8,6 +8,8 @@ $obj = new includes\lib\users\Order;
 
 // smarty config
 require_once 'smarty.config.php';
+// $smarty->setCacheLifetime(-1);
+// $smarty->clearAllCache(); // clear all cahes
 
 //$smarty = new Smarty;
 //
@@ -29,6 +31,9 @@ require_once 'smarty.config.php';
 //$smarty ->assign('api_device', $config['api_device']);
 //$smarty ->assign('site_id', $config['site_id']);
 
+
+
+
 /* authorization */
 $_url = '';
 $_result = array(
@@ -36,6 +41,8 @@ $_result = array(
     '_success' => false,
 );
     
+
+
 if($obj -> getLoginUser()) $obj -> _redirect('/');
     
 // $_session_order = $obj -> getSession('pumpic_order');
@@ -63,7 +70,7 @@ if((isset($_POST['email']) and !$obj ->validateEmail($_POST['email']))) {
 }
 
 if($_result['_success']) {
-
+    
     if($_productID) {
         $_url = $obj -> createOrder( (int)$_productID );
         if($_url) {
@@ -76,10 +83,7 @@ if($_result['_success']) {
     
 // init output params!
 $smarty->assign('getOut', $_result);
-
 $smarty->assign('getUrl', $_url);
-
-
 
 // init output params
 $smarty->display($b_dir.'/templates/pages/login.tpl');

@@ -32,9 +32,9 @@ if(isAjax()){
 $phones = $compatibility->getPhones(Compatibility::FIND_ALL,$currentPage);
 $paginationList = paginationByCount($currentPage, ceil($phones['count'] / Compatibility::devicesPerPage()));
 
-$smarty->assign('phones', $phones['list']);
-$smarty->assign('currentPage', $currentPage);
-$smarty->assign('pages', $paginationList);
+$smarty->assign('phones', $phones['list'], false);
+$smarty->assign('currentPage', $currentPage, false);
+$smarty->assign('pages', $paginationList, false);
 $smarty->assign('api_device', $config['api_device']);
 
 $smarty->display('compatibility.tpl');

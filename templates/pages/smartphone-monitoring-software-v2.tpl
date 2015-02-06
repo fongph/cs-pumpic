@@ -12,7 +12,10 @@
     
     <div class="wrapper block-smartphone">
         <!-- TOP MENU -->
- 	{include file='../includes/main_cache/main-top-menu.tpl' }
+ 	{include file='../includes/main_cache/main-top-menu.tpl' 
+            cache_id = "includes_main_cache_main-top-menu"
+            nocache
+        }
         
         <!-- CONTENT -->
         {include file='../includes/content/info/info-promo.tpl'

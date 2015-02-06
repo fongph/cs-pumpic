@@ -1,3 +1,4 @@
+<?php createReferral(); ?>
 <!DOCTYPE html>
 <!--[if IE 7]>
 <html class="ie ie7" <?php language_attributes(); ?>>
@@ -67,8 +68,6 @@
 <?php wp_head(); 
 */ ?>
 
-<?php wp_head(); ?>
-
 </head>
 
 <body class="wp-blog">
@@ -104,7 +103,7 @@
     <div class="wrapper">
         
 	<?php 
-		include('../../templates/includes/blog-top-menu.tpl'); 
+		include_once('../../templates/includes/blog-top-menu.tpl'); 
 	?>
     
     

@@ -94,4 +94,7 @@
 </div>
                                         
 <!-- init popUp -->
-{include file='../includes/main-popUp.tpl'}
+{include file='../includes/main-popUp.tpl'
+    cache_id = "includes_main-popUp"
+    nocache
+}

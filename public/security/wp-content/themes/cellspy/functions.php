@@ -136,6 +136,24 @@ function getStaticUrl(){
 	
 }
 
+function hasUser() {
+    require_once '../../includes/lib/users/ManagerUser.php';
+    $obj = new includes\lib\users\ManagerUser( array() );
+    $_result = false;
+    
+    if($obj -> getLoginUser()) {
+        $_result = true;
+    }
+    
+    return $_result;
+}
+
+function createReferral() {
+    if(empty($_COOKIE['orders_referer'])) {
+        setcookie("orders_referer", $_SERVER['HTTP_REFERER'], time() + 86400 , '/' );
+    }
+}
+
 
 function get_banners_align($_align = 'top', $post_ID = false, $banner_id = false) {
     global $wpdb;

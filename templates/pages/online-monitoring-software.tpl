@@ -13,7 +13,10 @@
     <div class="wrapper block-online">
 	
 	<!-- TOP MENU -->
-	{include file='../includes/main/main-top-menu.tpl'}
+	{include file='../includes/main/main-top-menu.tpl'
+            cache_id = "includes_main_main-top-menu"
+            nocache
+        }
         
     <!-- CONTENT -->
          {include file='../includes/content/info/info-promo.tpl'
@@ -108,7 +111,7 @@ Monitor mobile device remotely with Pumpic."
                 <h2 class="text-center">Pumpic Features</h2>
                 <div class="row">
                     
-                    <div id="table-container" class="tabel-col-3 tabel-md-col-3 tabel-sm-col-3">
+                    <div id="table-container" class="table-col-3 table-md-col-3 table-sm-col-3">
                         <h1 class="text-center">Pumpic is reasonably improved mobile phone tracking software, which comes with a large range of monitoring functions. They will help you keep track of the target device quickly and quite.</h1>
                         <section>
                             <div class="tab col-item-3 col-md-item-3 col-sm-item-3">

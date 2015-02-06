@@ -4432,7 +4432,7 @@ div[id^="attachment_"], div[id*=" attachment_"] {
 
 #table-container .table-item-col {
     padding: 30px;
-    
+    vertical-align: top;
 }
 
 #table-container .table-item-col section {

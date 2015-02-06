@@ -11,15 +11,17 @@
 {include file='../includes/button-help.tpl'}
 {include file='../includes/button-goup.tpl'}
 	<div class="wrapper">
-	{include file='../includes/main/main-top-menu.tpl' topmenu_active="false"}	
+	{include file='../includes/main/main-top-menu.tpl' 
+            topmenu_active="false"
+            cache_id = "includes_main_main-top-menu"
+            nocache}	
 <div class="very_easy">
 			<div class="container">
                             
                              <div class="row">
                                 <div class="col-lg-10 col-lg-offset-1">
                                         <div class="row">
-                                                <legend class="text-center {*uppercase*}">Register</legend>
-                                                {*<h2>Register</h2>*}
+                                                <legend class="text-center">Register</legend>
                                                 {if $productID}
                                                     <h3 class="pb20 text-center">Please register your email before proceeding with your payment</h3>
                                                 {/if}    
@@ -27,7 +29,9 @@
                                         </div>
                                         <div class="row">
                                                 <div class="col-lg-12">
-                                                    {include file='../includes/main-registration.tpl'} 
+                                                    {include file='../includes/main-registration.tpl'
+                                                        cache_id = "includes_main-registration"
+                                                        nocache} 
                                                 </div>
                                         </div>
                                 </div>

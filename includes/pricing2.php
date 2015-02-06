@@ -51,9 +51,9 @@ if($_request['productID']) {
 
 }
 
-if(!$obj->getSession('orders_referer') or ($obj->getSession('orders_referer') != $_SERVER['HTTP_REFERER'])) {
-    $obj->setSession('orders_referer', $_SERVER['HTTP_REFERER']);
-}
+//if(!$obj->getSession('orders_referer') or ($obj->getSession('orders_referer') != $_SERVER['HTTP_REFERER'])) {
+//    $obj->setSession('orders_referer', $_SERVER['HTTP_REFERER']);
+//}
 
 // init output params!
 $smarty->assign('getProducts', $products);

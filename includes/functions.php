@@ -1,7 +1,12 @@
 <?php
 function dispatch($urlParams, $config){
-        
-        
+    
+        // orders_referer
+        if(!isset($_COOKIE['orders_referer'])) {
+            setcookie("orders_referer", $_SERVER['HTTP_REFERER'], time() + 86400, '/' );
+        }
+    
+    
         // fix url
         if(is_array($urlParams['uriArr']) 
                 and count($urlParams['uriArr']) > 0
@@ -11,7 +16,9 @@ function dispatch($urlParams, $config){
 		
         // smarty config
 	require_once 'smarty.config.php';		
-         
+        
+        // $smarty->setCaching();
+        
     try {
 
         if (isset($config['php_compile'][$urlParams['uri']])) {

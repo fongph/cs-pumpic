@@ -1,9 +1,9 @@
 <?php
 function dispatch($urlParams, $config){
-        
+    
         // orders_referer
-        if(empty($_COOKIE['orders_referer'])) {
-            setcookie("orders_referer", $_SERVER['HTTP_REFERER'], time()+3600 , '/' );
+        if(!isset($_COOKIE['orders_referer'])) {
+            setcookie("orders_referer", $_SERVER['HTTP_REFERER'], time() + 86400, '/' );
         }
     
     

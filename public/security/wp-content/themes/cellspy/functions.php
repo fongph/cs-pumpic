@@ -150,7 +150,7 @@ function hasUser() {
 
 function createReferral() {
     if(empty($_COOKIE['orders_referer'])) {
-        setcookie("orders_referer", $_SERVER['HTTP_REFERER'], time()+3600 , '/' );
+        setcookie("orders_referer", $_SERVER['HTTP_REFERER'], time() + 86400 , '/' );
     }
 }
 

@@ -324,11 +324,17 @@
                                     </table>
 
                                     <script type="text/javascript">
+                                        function roundUsing(func, number, prec) {
+                                            var tempnumber = number * Math.pow(10, prec);
+                                            tempnumber = func(tempnumber);
+                                            return tempnumber / Math.pow(10, prec);
+                                        }
                                         var symbols = { usd: '$', eur: '€', gbp: '£'};
                                         $('input[data-target="#basic-price-per-month"], input[data-target="#premium-price-per-month"]').change(function(){
-                                            var currentValue = Number(
-                                                    $(this).attr('data-price-'+$(this).attr('data-cur')) / $(this).attr('data-period')
-                                            ).toFixed(2);
+                                            
+                                            var currentValue = $(this).attr('data-price-'+$(this).attr('data-cur')) / Number($(this).attr('data-period'));
+
+                                            currentValue = roundUsing(Math.round, currentValue, 2);
                                             
                                             $($(this).attr('data-target'))
                                                     .html(currentValue)

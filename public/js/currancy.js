@@ -1,10 +1,38 @@
+currencyHandler = {
+    afterLoad: function(rates){
+        $.each($('input.data-price'), function(i, priceTag){
+            
+            var usdPrice = $(priceTag).data('price-usd');
+            
+            if(typeof usdPrice !== 'undefined')
+
+                $.each(['gbp', 'eur'], function(i, currency){
+
+                    if(rates[currency.toUpperCase()]){
+                        var priceInCurrency = Number(rates[currency.toUpperCase()]*usdPrice).toFixed(2);
+                        $(priceTag).attr('data-price-'+currency, priceInCurrency);
+                    }
+
+                });
+            
+        });
+        $('input.data-price:checked').change();
+    },
+    onChange: function(currentCurrency){
+        $('input.data-price')
+            .attr('data-cur', currentCurrency)
+            .filter(':checked')
+            .change();
+    }
+};
+
 (function( $ ){
       
       var $this = {}, $rates = {}, $_html = "";
       
       var $_settings = {
           'api_key': '', // app_id=
-          'host': 'http://pumpic.com/currency.html',
+          'host': '/currency.html',
           'currBase': 'USD',
           'currCode': { 'usd': '$', 
                         'eur':'€', 
@@ -43,9 +71,9 @@
             methods._die( $_settings.rates );   
             
             // init money
-            methods._initMoney();
+            var rates = methods._initMoney();
             
-            methods.triggerCall($_settings.onOpen);
+            methods.triggerCall($_settings.onOpen, rates);
             return $(this);
         }, // set init
         
@@ -68,7 +96,7 @@
         },
         
         _die: function(msg) {
-            console.log( msg );
+            //console.log( msg );
         },
         
         /* ==== init cookie ====== */
@@ -156,6 +184,7 @@
             // init money
             fx.rates = (_rates) ? _rates : data.rates;
             fx.base = ($_settings.currBase) ? $_settings.currBase : data.base;
+            return _rates;
         },
         
         _convert: function( pricing, from, to ) {
@@ -236,8 +265,11 @@
         
         // afterEvent
         afterEvent: function() {
+            currencyHandler.onChange(methods.getCach('currISO'));
+            
           // body generate price
-          $('.box-currence').each(function() {
+            //$_settings.currCode[ methods.getCach('currISO').toLowerCase() ]
+          $('.list_price .box-currence').each(function() {
               var _symbol = $(this).find('symbol'), 
                   _price = $(this).find('curr'),
                   symbol = _symbol.text(), 
@@ -289,9 +321,9 @@ $(document).ready(function(){
     
    if($('.list-currencies').length) {
       $('.list-currencies').currancy({
-          onOpen: function() {
-              
-          },
+          onOpen: function(rates) {
+              currencyHandler.afterLoad(rates);
+          }
       },'show');
    } 
 });

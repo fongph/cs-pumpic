@@ -5,32 +5,13 @@ try {
         throw new ErrorException($errstr, 0, $errno, $errfile, $errline);
     });
 
-    $config = array(
-        'db' => array(
-            'host' =>  '188.40.64.2', 
-            'username' => 'pumpic_blog_user', 
-            'password' => '57ge8j9SNg9EkhryWA3KV9ZB9NUue6',
-            'dbname' =>  'pumpic_blog',
-            
-//            'host' =>  'localhost', 
-//            'username' => 'root', 
-//            'password' => 'password',
-//            'dbname' =>  'blog_pumpic',
-            
-            'options' => array(
-                PDO::MYSQL_ATTR_INIT_COMMAND => 'set names utf8;',
-                PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
-                PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC
-            )
-        ),
-        'recordsOnPage' => 11
-    );
-
+    require dirname(__DIR__) . '/includes/config.php';
+    
     date_default_timezone_set('UTC');
 
     function getDb() {
         global $config;
-        return new \PDO("mysql:host={$config['db']['host']};dbname={$config['db']['dbname']}", $config['db']['username'], $config['db']['password'], $config['db']['options']);
+        return new \PDO("mysql:host={$config['db_blog']['host']};dbname={$config['db_blog']['dbname']}", $config['db_blog']['username'], $config['db_blog']['password'], $config['db_blog']['options']);
     }
     
     function getRates() {

@@ -72,7 +72,18 @@ $config = array(
             PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
             PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC
         )
-    )
+    ),
+    'db_blog' => array(
+        'dbname'    => 'pumpic_blog',
+        'host'      => '188.40.64.2',
+        'user'      => 'pumpic_blog_user',
+        'password'  => '57ge8j9SNg9EkhryWA3KV9ZB9NUue6',
+        'options' => array(
+            PDO::MYSQL_ATTR_INIT_COMMAND => 'set names utf8;',
+            PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
+            PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC
+        )
+    ),
 );
 if(is_file(__DIR__ . '/config.development.php'))
     $config = array_merge($config, (array) include __DIR__ . '/config.development.php');

@@ -11,18 +11,8 @@ class Currency
 
     private function __construct()
     {
-        $this -> _db = new DB(array(
-//            'dbname'    => 'blog_pumpic',
-//            'host'      => 'localhost',
-//            'user'      => 'root',
-//            'password'  => 'password'
-            
-            'dbname'    => 'pumpic_blog',
-            'host'      => '188.40.64.2',
-            'user'      => 'pumpic_blog_user',
-            'password'  => '57ge8j9SNg9EkhryWA3KV9ZB9NUue6'
-            
-        ));
+        global $config;
+        $this -> _db = new DB($config['db_blog']);
         // $this -> _pdo = $this -> _db -> getConnected();
     }
 

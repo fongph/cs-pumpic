@@ -1,7 +1,6 @@
 {*Order out="getProducts"*}
 {*formOrder post=$smarty.post*}
 
-{strip}
 {include file='../includes/wrap-title-header.tpl'}
 
 <title>
@@ -124,18 +123,18 @@
                                                                 <img src="{$img}/basic_pack.png">
                                                             </div>
                                                             <div class="wr_price_big">
-                                                                <span></span><div class="box-currence"><symbol attr-iso="usd">$</symbol><curr>3.33</curr></div><span> / month</span>
+                                                                <span></span><div class="box-currence"><symbol attr-iso="usd">$</symbol><curr id="basic-price-per-month">3.33</curr></div><span> / month</span>
                                                             </div>
                                                             <div class="list_price">
-                                                            <form name="price_basic" method="POST" action="/buy.html">
+                                                            <form name="price_basic" method="POST" action="/buy.html" autocomplete="off">
                                                                 <input id='product_price_basic' type='hidden' name='price[productID]' value='0' class="product_price" />
                                                                
                                                                 <ul>
                                                                     {foreach from=$getProducts.basic key=key item=_item}
                                                                     <li class= "">
-                                                                        <label class="label_radio hover_label_radio r_off"><input name="optionsRadios" id="optionsRadios{$_item.id}1"
+                                                                        <label class="label_radio hover_label_radio r_off"><input class="data-price" data-target="#basic-price-per-month" data-cur="usd" data-price-usd="{$_item.price}" data-period="{$_item.period}" name="optionsRadios" id="optionsRadios{$_item.id}1"
                                                                         value="{$_item.id}" type="radio" 
-                                                                        {if $_item.period == '12'} checked="checked" {/if}
+                                                                        {if $_item.period == '3'} checked="checked" {/if}
                                                                         />
                                                                         <span class="sp">
                                                                             <strong>
@@ -185,7 +184,7 @@
                                                         </div>
                                                             <div class="list_price" id="foot_h2">
                                                             <div class="space_line">&nbsp;</div>
-                                                            <form name="price_basic_bottom" method="POST" action="/buy.html">
+                                                            <form name="price_basic_bottom" method="POST" action="/buy.html" autocomplete="off">
                                                                 <input id='product_price_basic' type='hidden' name='price[productID]' value='0' class="product_price" />
                                                                 
                                                                 <ul>
@@ -193,7 +192,7 @@
                                                                     <li class= "">
                                                                         <label class="label_radio hover_label_radio r_off"><input name="optionsRadios" id="optionsRadios{$_item.id}2"
                                                                         value="{$_item.id}" type="radio" 
-                                                                        {if $_item.period == '12'} checked="checked" {/if}
+                                                                        {if $_item.period == '3'} checked="checked" {/if}
                                                                         />
                                                                         <span class="sp">
                                                                             <strong>
@@ -226,18 +225,18 @@
                                                                 <img src="{$img}/premium_pack.png">
                                                             </div>
                                                             <div class="wr_price_big">
-                                                                <span></span><div class="box-currence"><symbol attr-iso="usd">$</symbol><curr>13.33</curr></div><span>/ month</span>
+                                                                <span></span><div class="box-currence"><symbol attr-iso="usd">$</symbol><curr id="premium-price-per-month">13.33</curr></div><span>/ month</span>
                                                             </div>
                                                             <div class="list_price">
-                                                            <form name="price_premium" method="POST" action="/buy.html">
+                                                            <form name="price_premium" method="POST" action="/buy.html" autocomplete="off">
                                                                 <input id='product_price_premium' type='hidden' name='price[productID]' value='0' class="product_price"/>
                                                                 
                                                                 <ul>
                                                                     {foreach from=$getProducts.premium key=key item=_item}
                                                                     <li class= "">
-                                                                        <label class="label_radio hover_label_radio r_off"><input name="optionsRadios" id="optionsRadios{$_item.id}3"
+                                                                        <label class="label_radio hover_label_radio r_off"><input class="data-price" data-target="#premium-price-per-month" data-cur="usd" data-price-usd="{$_item.price}" data-period="{$_item.period}" name="optionsRadios" id="optionsRadios{$_item.id}3"
                                                                         value="{$_item.id}" type="radio" 
-                                                                        {if $_item.period == '12'} checked="checked" {/if}
+                                                                        {if $_item.period == '3'} checked="checked" {/if}
                                                                         />
                                                                         <span class="sp">
                                                                             <strong>
@@ -285,7 +284,7 @@
                                                         </div>
                                                         <div class="list_price" id="foot_h4">
                                                         <div class="space_line">&nbsp;</div> 
-                                                            <form name="price_premium_bottom" method="POST" action="/buy.html">
+                                                            <form name="price_premium_bottom" method="POST" action="/buy.html" autocomplete="off">
                                                                 <input id='product_price_premium' type='hidden' name='price[productID]' value='0' class="product_price" />
                                                                 
                                                                 <ul>
@@ -293,7 +292,7 @@
                                                                     <li class= "">
                                                                         <label class="label_radio hover_label_radio r_off"><input name="optionsRadios" id="optionsRadios{$_item.id}4"
                                                                         value="{$_item.id}" type="radio" 
-                                                                        {if $_item.period == '12'} checked="checked" {/if}
+                                                                        {if $_item.period == '3'} checked="checked" {/if}
                                                                         />
                                                                         <span class="sp">
                                                                             <strong>
@@ -320,6 +319,19 @@
                                         </thead>
                                     </table>
 
+                                    <script type="text/javascript">
+                                        var symbols = { usd: '$', eur: '€', gbp: '£'};
+                                        $('input[data-target="#basic-price-per-month"], input[data-target="#premium-price-per-month"]').change(function(){
+                                            var currentValue = Number(
+                                                    $(this).attr('data-price-'+$(this).attr('data-cur')) / $(this).attr('data-period')
+                                            ).toFixed(2);
+                                            
+                                            $($(this).attr('data-target'))
+                                                    .html(currentValue)
+                                                    .prev('symbol')
+                                                    .html(symbols[$(this).attr('data-cur')] ? symbols[$(this).attr('data-cur')] : '');
+                                        });
+                                    </script>
                                
                                 <div class="space_line">&nbsp;</div>
                                 <div class="link_circle_italic2">
@@ -356,4 +368,3 @@
     
 </body>
 </html>
-{/strip}

@@ -1,4 +1,3 @@
-{strip}
 	<!-- Bootstrap -->
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,300italic,400italic,600italic,700italic' rel='stylesheet' type='text/css'>
 	<link href="{$css}/bootstrap.css" rel="stylesheet">
@@ -24,7 +23,7 @@
 		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 	<![endif]-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-        <script src="http://code.jquery.com/jquery-migrate-1.2.1.js"></script>
+        <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 	<script src="{$js}/bootstrap.js"></script>
 	<script src="{$js}/fancy_checkbox.js"></script>
         <script src="{$js}/main.js"></script>
@@ -61,8 +60,6 @@
         <!-- init -->
         <script src="{$js}/scroll.js"></script>
         <script src="{$js}/init.js"></script>
-{/strip}
+
 {include file='../includes/analytics-header.tpl'}	
-{strip}	
 </head>
-{/strip}

@@ -4727,8 +4727,9 @@ div[id^="attachment_"], div[id*=" attachment_"] {
 .btn-yellow:focus,
 .btn-yellow:active,
 .btn-yellow.active {
-  background: #feff8b;
+  background: #ffffc3;
   color: #4d4f5b;
+  text-decoration: none;
 }
 
 @media only screen and (max-width: 480px) {

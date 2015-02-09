@@ -1,24 +1,24 @@
 {strip}
 	<!-- Bootstrap -->
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,300italic,400italic,600italic,700italic' rel='stylesheet' type='text/css'>
-	<link href="{$css}/bootstrap.css?{style_cache data='2015-02-05'}" rel="stylesheet">
-	<link href="{$css}/fontello.css?{style_cache data='2015-02-05'}" rel="stylesheet">
+	<link href="{$css}/bootstrap.css?{style_cache data='2015-02-09'}" rel="stylesheet">
+	<link href="{$css}/fontello.css?{style_cache data='2015-02-09'}" rel="stylesheet">
         <!-- lightbox style -->
-        <link href="{$css}/lightbox.css?{style_cache data='2015-02-05'}" rel="stylesheet">
+        <link href="{$css}/lightbox.css?{style_cache data='2015-02-09'}" rel="stylesheet">
         
         <!-- settings -->
-        <link href="{$css}/settings.css?{style_cache data='2015-02-05'}" rel="stylesheet">
+        <link href="{$css}/settings.css?{style_cache data='2015-02-09'}" rel="stylesheet">
         
-	<link href="{$css}/all.css?{style_cache data='2015-02-05'}" rel="stylesheet">
-        <link href="{$css}/parent.css?{style_cache data='2015-02-05'}" rel="stylesheet">
+	<link href="{$css}/all.css{style_cache data='2015-02-09'}" rel="stylesheet">
+        <link href="{$css}/parent.css?{style_cache data='2015-02-09'}" rel="stylesheet">
         
         <!-- landing -->
-        <link href="{$css}/landing_fix.css?{style_cache data='2015-02-05'}" rel="stylesheet">
+        <link href="{$css}/landing_fix.css?{style_cache data='2015-02-09'}" rel="stylesheet">
         
-        <link href="{$css}/p2.css?{style_cache data='2015-02-05'}" rel="stylesheet">
+        <link href="{$css}/p2.css?{style_cache data='2015-02-09'}" rel="stylesheet">
         
         <!-- currence -->
-        <link href="{$css}/curr.css?{style_cache data='2015-02-05'}" rel="stylesheet">
+        <link href="{$css}/curr.css?{style_cache data='2015-02-09'}" rel="stylesheet">
         
 	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->

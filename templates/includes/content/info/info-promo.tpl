@@ -1,4 +1,4 @@
-<div class="visual"> <!-- android -->
+<div class="visual box-banner-header"> <!-- android -->
 
     <div class="container">
 
@@ -7,57 +7,111 @@
             <div class="col-lg-10 col-lg-offset-1 banner-header">
                 {assign var="position" value=" "|explode:$imgAlign}
                 
-                {if in_array('left', $position)}
-                    <div class="col-md-5 col-lg-6 visual-images-left">
-                        <img src="{$img}/{$imgUrl}" alt="{$imgAlt}" class="visual-img-pc">   
-                    </div> 
-                {/if}    
-
-                <div class="{if $imgAlign == "center"} col-lg-12 col-md-12 {else}col-lg-6 col-md-6{/if}">
-                    <div class="visual-text {if $textAlign}block-text-{$textAlign}{else}block-text-right{/if}">
-                        <h1 class="title">{if $title} {$title} {else}Android Parental Control App{/if}</h1>
-                        <p>
-                            {if $description}
-                                {$description}
-                            {else}
-                            Pumpic takes care of your children safety.        
-                            <br />Track your kids’ Android device remotely.
-                            {/if}
-                        </p>
-                        
-                        <ul class="compatibility">
-                            <li><i class="icon-android"></i> (2.2 - 5.0)</li>
-                            <li><i class="icon-apple"></i> (6.0 - 8.1.2)</li>
-                            <li>
-                                <i class="i-header-info"></i> <a href="/compatibility.html">platform compatibility</a>
-                            </li>
-                        </ul>
-                        
-                        {if isset($listText) && $listText != ""}
+                <table id='block-table-header'>
+                    <tr>
+                        {if in_array('left', $position)}
+                        <td class='col-s-sm-6 col-xs-sm-5 col-md-5 col-lg-6 {if in_array('bottom', $position)}vertical-aligh-bottom{/if}'>
                             
-                            {assign var="listExplode" value="|"|explode:$listText} 
-                            {if isset($listExplode)}
-                            <ul class="visual-header-dop-info">
-                                {foreach from=$listExplode item=_item}
-                                    <li>{$_item} <i class="item-list-yelow"></i></li>
-                                {/foreach}
-                            </ul>
-                            {/if}
+                            <div class="visual-images-left">
+                                <img src="{$img}/{$imgUrl}" alt="{$imgAlt}" class="visual-img-pc">   
+                            </div> 
+                             
+                        </td>
+                        {/if}
+                        <td class="col-s-sm-12 col-xs-sm-12 {if $imgAlign == "center"} col-md-12 col-lg-12  {else}col-md-5 col-lg-5{/if}">
                             
-                        {/if}    
-                        
-                        
-                    </div>
-                    {if $imgAlign == "center"}
-                        <img src="{$img}/{$imgUrl}" alt="{$imgAlt}" class="visual-img">
-                    {/if}    
-                </div>
+                            <div>
+                                <div class="visual-text {if $textAlign}block-text-{$textAlign}{else}block-text-right{/if}">
+                                    <h1 class="title">{if $title} {$title} {else}Android Parental Control App{/if}</h1>
+                                    <p>
+                                        {if $description}
+                                            {$description}
+                                        {else}
+                                        Pumpic takes care of your children safety.        
+                                        <br />Track your kids’ Android device remotely.
+                                        {/if}
+                                    </p>
 
-                {if in_array('right', $position) || in_array('bottom', $position)}
-                <div class="visual-images-{if in_array('right', $position)}right{elseif in_array('bottom', $position)}bottom{/if} {if in_array('bottom', $position)}col-xs-sm-10 col-s-sm-12 col-sm-12 col-md-6 mobile-version-inline{/if} {if in_array('right', $position)}col-xs-sm-10 col-s-sm-12 col-sm-12 col-md-5 col-lg-5{/if}">
-                     <img src="{$img}/{$imgUrl}" alt="{$imgAlt}" class="visual-img-pc">      
-                </div> 
-                {/if}
+                                    <ul class="compatibility">
+                                        <li><i class="icon-android"></i> (2.2 - 5.0)</li>
+                                        <li><i class="icon-apple"></i> (6.0 - 8.1.2)</li>
+                                        <li>
+                                            <i class="i-header-info"></i> <a href="/compatibility.html">platform compatibility</a>
+                                        </li>
+                                    </ul>
+
+                                    {if isset($listText) && $listText != ""}
+
+                                        {assign var="listExplode" value="|"|explode:$listText} 
+                                        {if isset($listExplode)}
+                                        <ul class="visual-header-dop-info">
+                                            {foreach from=$listExplode item=_item}
+                                                <li>{if $textAlign == "left"}<i class="item-list-yelow"></i>{/if} {$_item} {if $textAlign == "center" || $textAlign == "right"}<i class="item-list-yelow"></i>{/if}</li>
+                                            {/foreach}
+                                        </ul>
+                                        {/if}
+
+                                    {/if}    
+
+                                    {if isset($trial) && $trial == 'yes'}
+                                        
+                                        <div class='mt20'>
+                                            <div id='block-trial'>
+                                                <section>
+                                                    <span class='text-trial'>
+                                                        <span class="uppercase">Try <i class='text-yellow'>7 days</i></span> 
+                                                        <br /> <i class='text-yellow'>free</i> trial
+                                                    </span>
+                                                </section>
+                                                <section>
+                                                    <a href="http://demo.{$domain}" 
+                                                       class="btn btn-yellow ga-action-click" 
+                                                       id="plans-block-view-demo"
+                                                       ga-action ="click"
+                                                       ga-category="demo link"
+                                                       ga-label="prices"
+                                                       >
+                                                        Start Now!
+                                                    </a>
+                                                </section>
+                                            </div>
+                                        </div>
+                                        
+                                        
+                                    {/if}    
+
+                                </div>
+                                {if $imgAlign == "center"}
+                                    <img src="{$img}/{$imgUrl}" alt="{$imgAlt}" class="visual-img">
+                                {/if}    
+                            </div>
+                            
+                        </td>
+                        
+                        {if in_array('right', $position)}
+                        <td class='col-xs-sm-12 col-s-sm-12 col-sm-12 col-md-5 col-lg-5'>
+                            <div class="visual-images-right">
+                                 <img src="{$img}/{$imgUrl}" alt="{$imgAlt}" class="visual-img-pc">      
+                            </div>
+                        </td>
+                        {/if}
+                    </tr>
+                    <tr>    
+                        {if in_array('bottom', $position)}
+                        <td class='col-xs-sm-12 col-s-sm-12 col-sm-12 col-md-6 col-log-5 '>
+                            <div class="col-xs-sm-8 col-s-sm-10 col-sm-10 visual-images-bottom mobile-version-inline model-center">
+                                 <img src="{$img}/{$imgUrl}" alt="{$imgAlt}" class="visual-img-pc">      
+                            </div> 
+                        </td>
+                        {/if}
+                    </tr>
+                </table>
+                
+                   
+
+                
+
+                
 
                 {*<div class="col-lg-6 mobile-version">
                     <img src="{$img}/parental_control/bg_famaly_mobile.png" alt="" class="visual-img-pc">

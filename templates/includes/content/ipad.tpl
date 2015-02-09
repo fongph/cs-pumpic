@@ -8,7 +8,7 @@
                     </div>
                     <div class="col-sm-5 col-md-5 col-lg-5">
                             <div class="ipad-text">
-                                    <h2>{if $title}{$title}{else}Easy-to-Use Control Panel{/if}</h2>
+                                    <h2 class="{if $textAlign == "left"}text-left{elseif $textAlign == "center"}text-center{elseif $textAlign == "right"}text-right{/if}">{if $title}{$title}{else}Easy-to-Use Control Panel{/if}</h2>
                                     <p>
                                         {if $description}
                                             {$description}

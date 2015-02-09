@@ -571,7 +571,7 @@
     .visual-img-pc {
       bottom: 0px;
       display: block;
-      max-width: 100%;
+/*      max-width: 100%;*/
     }
     
     .call-monitoring-software .visual-img-pc,

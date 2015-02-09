@@ -100,6 +100,4 @@
     {assign 'module' "../includes/main-popUp.tpl"}
 {/if}
 
-{include file="$module"
-cache_id = "includes_main-popUp"
-nocache}
+{include file="$module"}

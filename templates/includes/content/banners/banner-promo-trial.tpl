@@ -49,7 +49,7 @@
                                         <span class='uppercase'>Try <i class='text-yellow'>7 days</i></span> <i class='text-yellow'>free</i> trial
                                 </div>
                                 <div>
-                                    <a href="http://demo.{$domain}" 
+                                    <a href="http://sites.fastspring.com/pumpic/product/pumpic-premium-3m-v1" 
                                        class="btn btn-yellow ga-action-click" 
                                        id="plans-block-view-demo"
                                        ga-action ="click"

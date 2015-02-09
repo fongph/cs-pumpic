@@ -22,7 +22,7 @@
         
         <!-- CONTENT -->
         {include file='../includes/content/info/info-promo.tpl'
-            imgUrl = "parental_control/bg_famaly_mobile.png"
+            imgUrl = "header_banners/bg_famaly_427x254.png"
             imgAlt = "Landing Mobile"
             imgAlign = "left bottom"
             textAlign = "left"
@@ -32,7 +32,6 @@
             
 
             trial = "yes"
-
         }
         
         {include file='../includes/content/plans.tpl'}
@@ -66,7 +65,7 @@
             blockBg="dark"
         }        
         
-        {include file='../includes/content/banners/banner-promo-blue.tpl'}
+        {include file='../includes/content/banners/banner-promo-trial.tpl'}
         <!-- END CONTENT -->    
            
         <!-- FOOTER -->

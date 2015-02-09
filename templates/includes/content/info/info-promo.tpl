@@ -64,7 +64,7 @@
                                                     </span>
                                                 </section>
                                                 <section>
-                                                    <a href="http://demo.{$domain}" 
+                                                    <a href="http://sites.fastspring.com/pumpic/product/pumpic-premium-3m-v1" 
                                                        class="btn btn-yellow ga-action-click" 
                                                        id="plans-block-view-demo"
                                                        ga-action ="click"

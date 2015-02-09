@@ -4707,6 +4707,21 @@ div[id^="attachment_"], div[id*=" attachment_"] {
     font-size: 25px;
     font-weight: lighter;
     text-decoration: none;
+    
+/*    border: medium none;
+    border-radius: 4px;
+    font-family: "Open Sans",Helvetica,Arial,sans-serif;
+    padding: 8px;
+    
+    -moz-user-select: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-block;
+    line-height: 1.42857;
+    margin-bottom: 0;
+    vertical-align: middle;
+    white-space: nowrap;*/
 }
 
 .btn-yellow:hover,
@@ -4727,6 +4742,10 @@ div[id^="attachment_"], div[id*=" attachment_"] {
     #block-trial section:last-child { 
         margin-top: 20px;
     }
+    
+    .btn-yellow { 
+        font-size: 18px;
+    }
 }
 @media (min-width: 468px) { 
     #block-trial section {
@@ -4737,6 +4756,10 @@ div[id^="attachment_"], div[id*=" attachment_"] {
     
     #block-trial section:last-child { 
         margin-top: 20px;
+    }
+    
+    .btn-yellow { 
+        font-size: 18px;
     }
 }
 @media (min-width: 768px) {
@@ -4749,16 +4772,23 @@ div[id^="attachment_"], div[id*=" attachment_"] {
     #block-trial section:last-child { 
         margin-top: 20px;
     }
+    
+    .btn-yellow { 
+        font-size: 18px;
+    }
 }
 @media (min-width: 992px) {
      #block-trial section {
-        width: 100%;
-        margin-right: 0px;
-        text-align: center;
+        width: auto;
+        margin-right: 10px;
     }
     
     #block-trial section:last-child { 
         margin-top: 20px;
+    }
+    
+    .btn-yellow { 
+        font-size: 18px;
     }
 }
 @media (min-width: 1200px) {
@@ -4771,6 +4801,10 @@ div[id^="attachment_"], div[id*=" attachment_"] {
     #block-trial section:last-child { 
         margin-top: 0px;
         margin-right: 0px;
+    }
+    
+    .btn-yellow { 
+        font-size: 25px;
     }
 }
 

@@ -4652,7 +4652,6 @@ div[id^="attachment_"], div[id*=" attachment_"] {
 
 /* ------------------ // trial ------------------- */
 #block-trial {
-    
     display: inline-block;
     padding: 20px 30px;
     margin: 0px auto;
@@ -4708,10 +4707,10 @@ div[id^="attachment_"], div[id*=" attachment_"] {
     font-weight: lighter;
     text-decoration: none;
     
-/*    border: medium none;
+    border: medium none;
     border-radius: 4px;
     font-family: "Open Sans",Helvetica,Arial,sans-serif;
-    padding: 8px;
+    padding: 8px 25px;
     
     -moz-user-select: none;
     border: 1px solid transparent;
@@ -4721,7 +4720,7 @@ div[id^="attachment_"], div[id*=" attachment_"] {
     line-height: 1.42857;
     margin-bottom: 0;
     vertical-align: middle;
-    white-space: nowrap;*/
+    white-space: nowrap;
 }
 
 .btn-yellow:hover,
@@ -4733,6 +4732,7 @@ div[id^="attachment_"], div[id*=" attachment_"] {
 }
 
 @media only screen and (max-width: 480px) {
+    
     #block-trial section {
         width: 100%;
         margin-right: 0px;
@@ -4743,11 +4743,9 @@ div[id^="attachment_"], div[id*=" attachment_"] {
         margin-top: 20px;
     }
     
-    .btn-yellow { 
-        font-size: 18px;
-    }
 }
 @media (min-width: 468px) { 
+   
     #block-trial section {
         width: 100%;
         margin-right: 0px;
@@ -4758,11 +4756,10 @@ div[id^="attachment_"], div[id*=" attachment_"] {
         margin-top: 20px;
     }
     
-    .btn-yellow { 
-        font-size: 18px;
-    }
+    
 }
 @media (min-width: 768px) {
+    
     #block-trial section {
         width: 100%;
         margin-right: 0px;
@@ -4773,25 +4770,23 @@ div[id^="attachment_"], div[id*=" attachment_"] {
         margin-top: 20px;
     }
     
-    .btn-yellow { 
-        font-size: 18px;
-    }
+   
+    
 }
 @media (min-width: 992px) {
-     #block-trial section {
+    
+    #block-trial section {
         width: auto;
-        margin-right: 10px;
+        margin-right: 20px;
     }
     
     #block-trial section:last-child { 
-        margin-top: 20px;
+        margin-top: 0px;
     }
     
-    .btn-yellow { 
-        font-size: 18px;
-    }
 }
 @media (min-width: 1200px) {
+    
     #block-trial section {
         width: auto;
         margin-right: 20px;
@@ -4803,9 +4798,6 @@ div[id^="attachment_"], div[id*=" attachment_"] {
         margin-right: 0px;
     }
     
-    .btn-yellow { 
-        font-size: 25px;
-    }
 }
 
 /* ---------------- // banners blue ----------------- */

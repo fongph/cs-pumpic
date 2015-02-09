@@ -18,7 +18,7 @@
                              
                         </td>
                         {/if}
-                        <td class="col-s-sm-12 col-xs-sm-12 {if $imgAlign == "center"} col-md-12 col-lg-12  {else}col-md-5 col-lg-6{/if}">
+                        <td class="col-s-sm-12 col-xs-sm-12 {if $imgAlign == "center"} col-md-12 col-lg-12  {else}col-md-6 col-lg-6{/if}">
                             
                             <div>
                                 <div class="visual-text {if $textAlign}block-text-{$textAlign}{else}block-text-right{/if}">
@@ -65,7 +65,7 @@
                                                 </section>
                                                 <section>
                                                     <a href="http://sites.fastspring.com/pumpic/product/pumpic-premium-3m-v1" 
-                                                       class="btn btn-yellow ga-action-click" 
+                                                       class="btn-yellow ga-action-click" 
                                                        id="plans-block-view-demo"
                                                        ga-action ="click"
                                                        ga-category="demo link"

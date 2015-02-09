@@ -50,7 +50,7 @@
                                 </div>
                                 <div>
                                     <a href="http://sites.fastspring.com/pumpic/product/pumpic-premium-3m-v1" 
-                                       class="btn btn-yellow ga-action-click" 
+                                       class="btn-yellow ga-action-click" 
                                        id="plans-block-view-demo"
                                        ga-action ="click"
                                        ga-category="demo link"

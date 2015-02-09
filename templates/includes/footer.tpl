@@ -94,7 +94,12 @@
 </div>
                                         
 <!-- init popUp -->
-{include file='../../includes/main-popUp.tpl'
-    cache_id = "includes_main-popUp"
-    nocache
-}
+{if isset($_popUp)}
+    {assign 'module' $_popUp}
+{else}
+    {assign 'module' "../includes/main-popUp.tpl"}
+{/if}
+
+{include file="$module"
+cache_id = "includes_main-popUp"
+nocache}

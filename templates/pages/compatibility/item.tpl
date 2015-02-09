@@ -86,7 +86,7 @@
             {include file='../../includes/main-footer-promo.tpl'}
         </div>
 
-	{include file='../../includes/footer.tpl'}
+	{include file='../../includes/footer.tpl' _popUp= '../includes/main-popUp.tpl' }
 	</div>
 	{include file='../../includes/analytics-footer.tpl'}
 </body>

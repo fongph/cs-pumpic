@@ -38,6 +38,14 @@
 
         {include file='../includes/content/secures.tpl'}
         
+        {* Template: FLY BUTTONS
+        *}
+        {include file='../includes/content/fly/box-buttons.tpl'
+            buttonBuyNow = 'yes'
+            buttonViewDemo = 'yes'
+            buttonFreeTrial = 'yes'
+        }
+        
         {include file='../includes/content/features-table.tpl' 
                 blockBg="light"
         } 

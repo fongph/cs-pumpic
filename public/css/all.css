@@ -3703,14 +3703,22 @@ span.btn-banner-yellow:active {
     display: none;
 }
 
-
-
 .btn-orange {
+    color: white;
     border: medium none;
     background: #f5ac43;
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
+}
+
+.btn-orange:hover,
+.btn-orange:focus,
+.btn-orange:active,
+.btn-orange.active {
+  color: white;  
+  background-color: #ffd08c;
+  text-decoration: none;
 }
 
 .box-form .links {
@@ -4840,4 +4848,43 @@ div[id^="attachment_"], div[id*=" attachment_"] {
     .promo-blue .promo-blue-text { 
         padding: 40px;
     }
+}
+
+/* =================== // fly buttons =============== */
+.block-fly {
+    display: inline-block;
+    padding: 20px;
+    position: absolute;
+    right: 0;
+    z-index: 1000;
+}
+.block-buttons-fixed {
+    background: #4d4f5b;
+    padding: 12px 15px;
+}
+
+.block-buttons-fixed .fly-button-item {
+    display: inline-block;
+    position: relative;
+    float: left;
+    width: 139px;
+    min-width: 139px;
+    min-height: 40px;
+    margin-right: 8px;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.text-white { 
+    color: #fff; 
+}
+
+.block-buttons-fixed .fly-button-item:last-child {
+    margin-right: 0px;
+}
+
+.block-buttons-fixed > form {
+    display: inline-block;
 }

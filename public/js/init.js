@@ -1265,4 +1265,18 @@ $('form[name="send_find_phone"] button.event-submit').click(function(){
 
 
   
+  // fly block
+  if($('.fly-box-buttons').length) {
+       $('.fly-box-buttons').scrollPumpic({ 
+           '_objFly': '.block-fly',
+           'start': 1000, 
+           'stop': 0,
+           'right': 300,
+           '_settings': {
+               '_responce': false,
+               '_validate': false
+           },
+       }); //"coeff":1.15
+   }
+  
 });

@@ -36,8 +36,6 @@
         
         {include file='../includes/content/plans.tpl'}
 
-        {include file='../includes/content/secures.tpl'}
-        
         {* Template: FLY BUTTONS
         *}
         {include file='../includes/content/fly/box-buttons.tpl'
@@ -45,6 +43,10 @@
             buttonViewDemo = 'yes'
             buttonFreeTrial = 'yes'
         }
+        
+        {include file='../includes/content/secures.tpl'}
+        
+        
         
         {include file='../includes/content/features-table.tpl' 
                 blockBg="light"

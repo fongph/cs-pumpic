@@ -23,7 +23,7 @@
         <!-- CONTENT -->
 
         {include file='../includes/content/info/info-promo.tpl'
-            imgUrl = "/landing_features/bg_features_call.png"
+            imgUrl = "header_banners/bg_features_call_437x226.png"
             imgAlt = "calls monitoring app"
             imgAlign = "right"
             textAlign = "right"

@@ -22,7 +22,7 @@
         
     <!-- CONTENT -->
          {include file='../includes/content/info/info-promo.tpl'
-            imgUrl = "landing_mobile/bg-header-mobile_ios.png"
+            imgUrl = "header_banners/bg-header-mobile_ios_261x325.png"
             imgAlt = "iOS mobile monitoring"
             imgAlign = "right"
             textAlign = "right"

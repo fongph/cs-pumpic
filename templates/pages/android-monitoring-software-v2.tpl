@@ -22,7 +22,7 @@
         
         <!-- CONTENT -->
         {include file='../includes/content/info/info-promo.tpl'
-            imgUrl = "landing_mobile/bg_header_android.png"
+            imgUrl = "header_banners/bg_header_android_437x262.png"
             imgAlt = "Landing Mobile"
             imgAlign = "right"
             textAlign = "right"

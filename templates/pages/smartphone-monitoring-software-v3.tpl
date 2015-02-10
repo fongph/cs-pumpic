@@ -21,7 +21,7 @@
         
         <!-- CONTENT -->
         {include file='../includes/content/info/info-promo.tpl'
-            imgUrl = "landing_features/bg_header_smartphone.png"
+            imgUrl = "header_banners/bg_header_smartphone.png"
             imgAlt = "Smartphone monitoring"
             imgAlign = "right"
             textAlign = "right"

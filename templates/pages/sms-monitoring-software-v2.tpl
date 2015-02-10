@@ -21,7 +21,7 @@
         
         <!-- CONTENT -->
         {include file='../includes/content/info/info-promo.tpl'
-            imgUrl = "landing_features/bg-header-features.png"
+            imgUrl = "header_banners/bg-header-features_437x258.png"
             imgAlt = "Messages monitoring"
             imgAlign = "right"
             textAlign = "right"

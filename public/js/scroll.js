@@ -38,7 +38,7 @@
                 windowTop = $(window).scrollTop();
                 _stop = (opts.stop) ? (windowTop <= opts.stop) ? true : false : false; 
                 
-                
+                // console.log( windowTop );
                 // console.log( opts.start, windowTop, opts._settings._responce);
                 
                 if((windowTop >= opts.start) && !_stop) {

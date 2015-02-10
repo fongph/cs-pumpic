@@ -1269,7 +1269,7 @@ $('form[name="send_find_phone"] button.event-submit').click(function(){
   if($('.fly-box-buttons').length) {
        $('.fly-box-buttons').scrollPumpic({ 
            '_objFly': '.block-fly',
-           'start': 1000, 
+           'start': 700, 
            'stop': 0,
            'right': 300,
            '_settings': {

@@ -49,7 +49,7 @@
                                         <span class='uppercase'>Try <i class='text-yellow'>7 days</i></span> <i class='text-yellow'>free</i> trial
                                 </div>
                                 <div>
-                                    
+                                    {nocache} 
                                     <form method="POST" action="/buy.html" autocomplete="off">
                                         <input type='hidden' name='price[productID]' value='16' />
                                         <button class="btn-yellow ga-action-click" 
@@ -62,7 +62,7 @@
                                                 ga-label="prices"
                                                 >Try Now</button>
                                     </form>
-                                    
+                                    {/nocache} 
                                     {*<a href="http://sites.fastspring.com/pumpic/product/pumpic-premium-3m-v1" 
                                        class="btn-yellow ga-action-click" 
                                        id="plans-block-view-demo"

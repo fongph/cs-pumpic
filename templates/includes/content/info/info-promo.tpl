@@ -64,7 +64,7 @@
                                                     </span>
                                                 </section>
                                                 <section>
-                                                    
+                                                    {nocache} 
                                                     <form method="POST" action="/buy.html" autocomplete="off">
                                                         <input type='hidden' name='price[productID]' value='16' />
                                                         <button class="btn-yellow ga-action-click" 
@@ -77,7 +77,7 @@
                                                                 ga-label="prices"
                                                                 >Start Now!</button>
                                                     </form>            
-                                                    
+                                                    {/nocache} 
                                                 </section>
                                             </div>
                                         </div>

@@ -27,8 +27,9 @@
             title = "Smartphone Online Monitoring App"
             description = "Pumpic helps to track cell pone activity.<br/>
 Monitor mobile device remotely with Pumpic."
-			listText = "Follow Calls and SMS|Track GPS location|Monitor online activity"
+            trial = "yes"
         }
+        {*listText = "Follow Calls and SMS|Track GPS location|Monitor online activity"*}
         
         {include file='../includes/content/plans.tpl'}
 
@@ -184,11 +185,12 @@ Monitor mobile device remotely with Pumpic."
 
 
 
-        {include file='../includes/main/main-footer-promo-v2.tpl'
+        {*include file='../includes/main/main-footer-promo-v2.tpl'
             sloganFirst="Start monitoring with PUMPic"
             sloganSecond="Keep Your Eyes Open"
             bannerImg="image_banners_3.png"
-        }
+        *}
+        {include file='../includes/content/banners/banner-promo-trial.tpl'}
         <!-- END CONTENT -->    
            
         <!-- FOOTER -->

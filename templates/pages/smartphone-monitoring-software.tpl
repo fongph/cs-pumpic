@@ -19,13 +19,14 @@
         
         <!-- CONTENT -->
         {include file='../includes/content/info/info-promo.tpl'
-            imgUrl = "landing_features/bg_header_smartphone.png"
+            imgUrl = "header_banners/bg_header_smartphone.png"
             imgAlt = "Smartphone monitoring"
             imgAlign = "right"
             textAlign = "right"
             title = "Smartphone Monitoring<br />Parental Control App"
             description = "Protect your children with Pumpic app.<br />
 Control your kids smartphone usage remotely"
+            trial = "yes"
         }
         
          {include file='../includes/content/plans.tpl' }
@@ -47,7 +48,8 @@ Buy Pumpic to secure your kids and track their smartphones right now."
             blockBg="light"
         }
         {include file='../includes/content/features-table.tpl' }  
-        {include file='../includes/content/banner-promo.tpl' }
+        {*include file='../includes/content/banner-promo.tpl'*}
+        {include file='../includes/content/banners/banner-promo-trial.tpl'}
         
         <!-- END CONTENT -->    
         

@@ -19,13 +19,14 @@
         
         <!-- CONTENT -->
         {include file='../includes/content/info/info-promo.tpl'
-            imgUrl = "landing_features/bg-header-features.png"
+            imgUrl = "header_banners/bg-header-features_437x258.png"
             imgAlt = "Messages monitoring"
             imgAlign = "right"
             textAlign = "right"
             title = "Sms Monitoring<br /> Parental Control App"
             description = "Keep your children safe with Pumpic.<br />
 View your kid’s text message history remotely."
+            trial = "yes"
         }
         
          {include file='../includes/content/plans.tpl' }
@@ -80,7 +81,8 @@ Buy Pumpic to protect your kids and view their SMS right now."
                 blockBg="dark"
         }  
 
-        {include file='../includes/content/banner-promo.tpl' }
+        {*include file='../includes/content/banner-promo.tpl'*}
+        {include file='../includes/content/banners/banner-promo-trial.tpl'}
         <!-- END CONTENT -->    
            
         

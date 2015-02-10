@@ -21,13 +21,14 @@
         <!-- CONTENT -->
 
         {include file='../includes/content/info/info-promo.tpl'
-            imgUrl = "/landing_features/bg_features_call.png"
+            imgUrl = "header_banners/bg_features_call_437x226.png"
             imgAlt = "calls monitoring app"
             imgAlign = "right"
             textAlign = "right"
             title = "Calls Monitoring <br />Parental Control App"
             description = "Pumpic protects your kids from misgiving callers.
             <br /> View incoming and outgoing phone calls remotely."
+            trial = "yes"
         }
         
          {include file='../includes/content/plans.tpl' }
@@ -58,7 +59,8 @@
                 blockBg="dark"
         }  
 
-        {include file='../includes/content/banner-promo.tpl'        }
+        {*include file='../includes/content/banner-promo.tpl'*}
+        {include file='../includes/content/banners/banner-promo-trial.tpl'}
         <!-- END CONTENT -->    
            
         <!-- FOOTER -->

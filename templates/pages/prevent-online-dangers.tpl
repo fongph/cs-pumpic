@@ -19,13 +19,14 @@
         
         <!-- CONTENT -->
         {include file='../includes/content/info/info-promo.tpl'
-            imgUrl = "/pc2/bg_teenagers_header.png"
+            imgUrl = "header_banners/bg_teenagers_header_419x325.png"
             imgAlt = "Smartphone monitoring"
             imgAlign = "right"
             textAlign = "right"
             title = "Prevent Online Dangers. <br />Pumpic Monitoring App."
             description = "Protect your kids before it is too late. <br />
             Track location. View calls and SMS. Monitor online activity."
+            trial = "yes"
         }
         
         {include file='../includes/content/plans.tpl' }
@@ -68,12 +69,12 @@
         }
 
 
-        {include file='../includes/main/main-footer-promo-v2.tpl'
+        {*include file='../includes/main/main-footer-promo-v2.tpl'
             sloganFirst="Prevent Troubles Remotely"
             sloganSecond="Secure Kids’ Happiness"
             bannerImg="image_banners_2.png"
-        }
-        
+        *}
+        {include file='../includes/content/banners/banner-promo-trial.tpl'}
         <!-- END CONTENT -->    
         
         <!-- FOOTER -->

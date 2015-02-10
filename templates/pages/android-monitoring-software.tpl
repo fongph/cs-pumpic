@@ -1,4 +1,4 @@
- {include file='../includes/main/main-header.tpl'
+{include file='../includes/main/main-header.tpl'
     robots="yes" 
     title="Smartphone monitoring app for Android"
     description="Pumpic for Android is a new solution for parental control mobile monitoring. Track your children’s smartphone usage, follow incoming and outbound calls, monitor browsing history and text messages, track GPS location and social network activity on Android devices with Pumpic."
@@ -20,16 +20,16 @@
         
         <!-- CONTENT -->
         {include file='../includes/content/info/info-promo.tpl'
-            imgUrl = "landing_mobile/bg_header_android.png"
+            imgUrl = "header_banners/bg_header_android_437x262.png"
             imgAlt = "Landing Mobile"
             imgAlign = "right"
             textAlign = "right"
             title = "Android Parental<br /> Control App"
             description = "Pumpic takes care of your children safety.        
                            <br />Track your kids’ Android device remotely."
-            listText = "Follow Calls and SMS|Track GPS location|Monitor online activity"               
-
+            trial = "yes"               
         }
+        {*  listText = "Follow Calls and SMS|Track GPS location|Monitor online activity" *}
         
         {include file='../includes/content/plans.tpl'}
 
@@ -55,7 +55,8 @@
         {include file='../includes/main/main-testimonials.tpl'} 
 
 
-        {include file='../includes/content/banner-promo.tpl'}
+        {*include file='../includes/content/banner-promo.tpl'*}
+        {include file='../includes/content/banners/banner-promo-trial.tpl'}
         <!-- END CONTENT -->    
            
         <!-- FOOTER -->

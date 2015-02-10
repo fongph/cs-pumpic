@@ -20,15 +20,16 @@
         
     <!-- CONTENT -->
          {include file='../includes/content/info/info-promo.tpl'
-            imgUrl = "landing_mobile/bg-header-mobile_ios.png"
+            imgUrl = "header_banners/bg-header-mobile_ios_261x325.png"
             imgAlt = "iOS mobile monitoring"
             imgAlign = "right"
             textAlign = "right"
             title = "iOS Parental Control App"
             description = "Pumpic helps you keep your children safe.<br/>
 Monitor your kids iOS device with Pumpic."
-			listText = "Follow Calls and SMS|Track GPS location|Monitor online activity"
+            trial = "yes"
         }
+        {* listText = "Follow Calls and SMS|Track GPS location|Monitor online activity" *}
         
         {include file='../includes/content/plans.tpl'}
 
@@ -58,7 +59,8 @@ Monitor your kids iOS device with Pumpic."
 
 
 
-             {include file='../includes/content/banner-promo.tpl'}
+        {*include file='../includes/content/banner-promo.tpl'*}
+        {include file='../includes/content/banners/banner-promo-trial.tpl'}
         <!-- END CONTENT -->    
            
         <!-- FOOTER -->

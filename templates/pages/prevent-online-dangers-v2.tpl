@@ -71,12 +71,12 @@
         }
 
 
-        {include file='../includes/main/main-footer-promo-v2.tpl'
+        {*include file='../includes/main/main-footer-promo-v2.tpl'
             sloganFirst="Prevent Troubles Remotely"
             sloganSecond="Secure Kids’ Happiness"
             bannerImg="image_banners_2.png"
-        }
-        
+        *}
+        {include file='../includes/content/banners/banner-promo-trial.tpl'}
         <!-- END CONTENT -->    
         
         <!-- FOOTER -->

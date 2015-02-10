@@ -83,7 +83,8 @@ Buy Pumpic to protect your kids and view their SMS right now."
                 blockBg="dark"
         }  
 
-        {include file='../includes/content/banner-promo.tpl' }
+        {*include file='../includes/content/banner-promo.tpl'*}
+        {include file='../includes/content/banners/banner-promo-trial.tpl'}
         <!-- END CONTENT -->    
            
         

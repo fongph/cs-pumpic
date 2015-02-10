@@ -57,7 +57,8 @@
         {include file='../includes/main/main-testimonials.tpl'} 
 
 
-        {include file='../includes/content/banner-promo.tpl'}
+        {*include file='../includes/content/banner-promo.tpl'*}
+        {include file='../includes/content/banners/banner-promo-trial.tpl'}
         <!-- END CONTENT -->    
            
         <!-- FOOTER -->

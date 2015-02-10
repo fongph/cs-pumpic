@@ -50,7 +50,8 @@ Buy Pumpic to secure your kids and track their smartphones right now."
             blockBg="light"
         }
         {include file='../includes/content/features-table.tpl' }  
-        {include file='../includes/content/banner-promo.tpl' }
+        {*include file='../includes/content/banner-promo.tpl'*}
+        {include file='../includes/content/banners/banner-promo-trial.tpl'}
         
         <!-- END CONTENT -->    
         

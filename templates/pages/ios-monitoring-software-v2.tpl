@@ -61,7 +61,8 @@ Monitor your kids iOS device with Pumpic."
 
 
 
-             {include file='../includes/content/banner-promo.tpl'}
+        {*include file='../includes/content/banner-promo.tpl'*}
+        {include file='../includes/content/banners/banner-promo-trial.tpl'}
         <!-- END CONTENT -->    
            
         <!-- FOOTER -->

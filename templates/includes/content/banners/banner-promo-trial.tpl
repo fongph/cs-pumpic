@@ -49,7 +49,21 @@
                                         <span class='uppercase'>Try <i class='text-yellow'>7 days</i></span> <i class='text-yellow'>free</i> trial
                                 </div>
                                 <div>
-                                    <a href="http://sites.fastspring.com/pumpic/product/pumpic-premium-3m-v1" 
+                                    
+                                    <form method="POST" action="/buy.html" autocomplete="off">
+                                        <input type='hidden' name='price[productID]' value='16' />
+                                        <button class="btn-yellow ga-action-click" 
+                                                value="true" 
+                                                type="submit" 
+                                                name="price[submit]"
+
+                                                ga-action ="click"
+                                                ga-category="demo link"
+                                                ga-label="prices"
+                                                >Try Now</button>
+                                    </form>
+                                    
+                                    {*<a href="http://sites.fastspring.com/pumpic/product/pumpic-premium-3m-v1" 
                                        class="btn-yellow ga-action-click" 
                                        id="plans-block-view-demo"
                                        ga-action ="click"
@@ -57,7 +71,7 @@
                                        ga-label="prices"
                                        >
                                         Try Now
-                                    </a>
+                                    </a>*}
                                 </div>
                         </div>
                 </div>

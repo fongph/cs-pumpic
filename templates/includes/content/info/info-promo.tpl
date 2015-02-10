@@ -64,15 +64,20 @@
                                                     </span>
                                                 </section>
                                                 <section>
-                                                    <a href="http://sites.fastspring.com/pumpic/product/pumpic-premium-3m-v1" 
-                                                       class="btn-yellow ga-action-click" 
-                                                       id="plans-block-view-demo"
-                                                       ga-action ="click"
-                                                       ga-category="demo link"
-                                                       ga-label="prices"
-                                                       >
-                                                        Start Now!
-                                                    </a>
+                                                    
+                                                    <form method="POST" action="/buy.html" autocomplete="off">
+                                                        <input type='hidden' name='price[productID]' value='16' />
+                                                        <button class="btn-yellow ga-action-click" 
+                                                                value="true" 
+                                                                type="submit" 
+                                                                name="price[submit]"
+                                                                
+                                                                ga-action ="click"
+                                                                ga-category="demo link"
+                                                                ga-label="prices"
+                                                                >Start Now!</button>
+                                                    </form>            
+                                                    
                                                 </section>
                                             </div>
                                         </div>

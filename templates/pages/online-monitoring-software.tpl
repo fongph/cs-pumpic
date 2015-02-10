@@ -33,6 +33,14 @@ Monitor mobile device remotely with Pumpic."
         
         {include file='../includes/content/plans.tpl'}
 
+        {* Template: FLY BUTTONS
+        *}
+        {include file='../includes/content/fly/box-buttons.tpl'
+            buttonBuyNow = 'yes'
+            buttonViewDemo = 'no'
+            buttonFreeTrial = 'yes'
+        }
+        
 <div class="{if $blockBg}{$blockBg}{else}dark{/if}">
         <div class="container">
                 <h2 class="text-center">What You Get with Pumpic</h2>

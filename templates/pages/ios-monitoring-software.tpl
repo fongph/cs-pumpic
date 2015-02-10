@@ -33,6 +33,13 @@ Monitor your kids iOS device with Pumpic."
         
         {include file='../includes/content/plans.tpl'}
 
+        {* Template: FLY BUTTONS
+        *}
+        {include file='../includes/content/fly/box-buttons.tpl'
+            buttonBuyNow = 'yes'
+            buttonViewDemo = 'no'
+            buttonFreeTrial = 'yes'
+        }
 
         {include file='../includes/content/secures.tpl'}
 

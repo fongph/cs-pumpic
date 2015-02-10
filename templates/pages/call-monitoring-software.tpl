@@ -33,6 +33,14 @@
         
          {include file='../includes/content/plans.tpl' }
         
+        {* Template: FLY BUTTONS
+        *}
+        {include file='../includes/content/fly/box-buttons.tpl'
+            buttonBuyNow = 'yes'
+            buttonViewDemo = 'no'
+            buttonFreeTrial = 'yes'
+        } 
+         
         {include file='../includes/content/ipad.tpl' 
                 blockBg="dark"
                 imgUrl = "icons/ipad_android.png"

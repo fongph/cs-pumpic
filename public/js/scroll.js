@@ -23,6 +23,11 @@
             _objFly = (opts._objFly) ? opts._objFly : false;
         
         return this.each(function(){
+            $(window).on('resize', function() { 
+                if($(window).width() < 800) { 
+                    $this.find( _objFly ).css({'margin-right': '0px'});
+                }
+            });
             $(window).on('scroll', function() {
                 
                 //console.log( $(window).width() );

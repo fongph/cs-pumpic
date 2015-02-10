@@ -40,7 +40,7 @@
         *}
         {include file='../includes/content/fly/box-buttons.tpl'
             buttonBuyNow = 'yes'
-            buttonViewDemo = 'yes'
+            buttonViewDemo = 'no'
             buttonFreeTrial = 'yes'
         }
         

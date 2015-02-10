@@ -1,7 +1,7 @@
 <div class="fly-box-buttons">
     
     <div class="block-fly block-buttons-fixed">
-        {*if $buttonBuyNow == "yes"*}
+        {if $buttonBuyNow == "yes"}
         <!-- button 'Buy Now' -->
         <a href="/store.html" 
                class="btn-default ga-action-click fly-button-item" 
@@ -11,9 +11,9 @@
                >
                 Buy Now
             </a>
-       {*/if*}
+       {/if}
        
-       {*if $buttonViewDemo == "yes"*}
+       {if $buttonViewDemo == "yes"}
         <!-- button 'View Demo' -->
         <a href="http://demo.{$domain}" 
            class="btn-orange ga-action-click fly-button-item" 
@@ -23,9 +23,9 @@
            ga-label="prices"
            >
             View Demo</a>
-        {*/if*}
+        {/if}
         
-        {*if $buttonFreeTrial == "yes"*}
+        {if $buttonFreeTrial == "yes"}
         <!-- button 'Free Trial' -->
         {nocache} 
         <form method="POST" action="/buy.html" autocomplete="off">
@@ -42,7 +42,7 @@
         </form>            
         {/nocache}
         
-        {*/if*}
+        {/if}
     </div>
     
 </div>

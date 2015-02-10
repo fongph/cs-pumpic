@@ -38,7 +38,7 @@
                 windowTop = $(window).scrollTop();
                 _stop = (opts.stop) ? (windowTop <= opts.stop) ? true : false : false; 
                 
-                // console.log( windowTop );
+                //  console.log( windowTop, $(window).width() );
                 // console.log( opts.start, windowTop, opts._settings._responce);
                 
                 if((windowTop >= opts.start) && !_stop) {
@@ -46,10 +46,10 @@
                     
                     // box right
                     if(opts.right > 0) {
-                        var objWidth = $this.find( _objFly ).width() + opts.right; 
-                        if(objWidth <= $(window).width()) {
+                        
+                        if($(window).width() > 800) {
                             $this.find( _objFly ).css({'margin-right': opts.right+'px'});
-                        } else if(objWidth > $(window).width()) {
+                        } else {
                             $this.find( _objFly ).css({'margin-right': '0px'});
                         }
                     }
@@ -66,7 +66,7 @@
                 }
                 
                 
-                console.log( objWidth, $(window).width() );
+                // console.log( objWidth, $(window).width() );
                 
                 
                 

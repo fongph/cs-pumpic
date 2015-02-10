@@ -4851,6 +4851,10 @@ div[id^="attachment_"], div[id*=" attachment_"] {
 }
 
 /* =================== // fly buttons =============== */
+.fly-box-buttons {
+    display: none;
+}
+
 .block-fly {
     display: inline-block;
     padding: 20px;

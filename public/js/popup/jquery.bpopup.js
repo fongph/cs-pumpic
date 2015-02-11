@@ -25,6 +25,7 @@
         
 		// VARIABLES	
         var $popup 			= this
+          ,  $this                       = $(this)
           , d 				= $(document)
           , w 				= window
 		  , $w				= $(w)
@@ -47,11 +48,10 @@
 		  , autoCloseTO
 		;
 
-		////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        // PUBLIC FUNCTION - call it: $(element).bPopup().close();
-		////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        /* PUBLIC FUNCTION - call it: $(element).bPopup().close();*/
         $popup.close = function() {
-            close();
+            _init();
+            _close();
         };
 		
         $popup.reposition = function(animateSpeed) {
@@ -59,13 +59,42 @@
         };
 
         return $popup.each(function() {
-            if ($(this).data('bPopup')) return; //POPUP already exists?
+            if ($(this).data('bPopup')) return; /*POPUP already exists?*/
             init();
         });
 
-        ////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        // HELPER FUNCTIONS - PRIVATE
-        ////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        function _init() {
+            triggerCall(o.onOpen);
+			popups = ($w.data('bPopup') || 0), 
+                        id = prefix + popups + '__',
+                        fixedVPos = o.position[1] !== 'auto', 
+                        fixedHPos = o.position[0] !== 'auto', 
+                        fixedPosStyle = o.positionStyle === 'fixed', 
+                        height = $popup.outerHeight(true), 
+                        width = $popup.outerWidth(true);
+                
+            // o.loadUrl ? createContent() : open();
+        };
+        
+        function _close() {
+            
+            // alert(id, $popup.data('id'), $popup.data('bPopup'));
+            if (o.modal) {
+                $('.b-modal.'+id)
+	                .fadeTo(o.speed, 0, function() {
+	                    $(this).remove();
+	                });
+            }
+            // Clean up
+            unbindEvents();	
+            clearTimeout(autoCloseTO);
+            // Close trasition
+            doTransition();
+            
+            return false; // Prevent default
+        };
+
+        /* HELPER FUNCTIONS - PRIVATE*/
         function init() {
             triggerCall(o.onOpen);
 			popups = ($w.data('bPopup') || 0) + 1, id = prefix + popups + '__',fixedVPos = o.position[1] !== 'auto', fixedHPos = o.position[0] !== 'auto', fixedPosStyle = o.positionStyle === 'fixed', height = $popup.outerHeight(true), width = $popup.outerWidth(true);
@@ -123,26 +152,29 @@
 					, 'z-index': o.zIndex + popups + 1 
 				}).each(function() {
             		if(o.appending) {
-                		$(this).appendTo(o.appendTo);
+                                $(this).appendTo(o.appendTo);
             		}
         		});
 			doTransition(true);	
 		};
 		
         function close() {
+            console.log(id, $popup.data('id'), $popup.data('bPopup'));
+            
+            // alert(id, $popup.data('id'), $popup.data('bPopup'));
             if (o.modal) {
                 $('.b-modal.'+$popup.data('id'))
 	                .fadeTo(o.speed, 0, function() {
 	                    $(this).remove();
 	                });
             }
-			// Clean up
-			unbindEvents();	
-			clearTimeout(autoCloseTO);
-			// Close trasition
+            // Clean up
+            unbindEvents();	
+            clearTimeout(autoCloseTO);
+            // Close trasition
             doTransition();
             
-			return false; // Prevent default
+            return false; // Prevent default
         };
 		
 		function reposition(animateSpeed){
@@ -261,6 +293,11 @@
 						top: open ? getTopPos(!(!o.follow[1] && fixedVPos || fixedPosStyle)) : d.scrollTop() + wH + buffer
 					});
 		      	  	break;
+                                
+                        case "fadeOut": 
+                                $this.hide();
+                                $popup.stop().fadeOut(o.speed);
+                            break;
 			   default:
 			   	  	//Hardtyping 1 and 0 to ensure opacity 1 and not 0.9999998
 				  	$popup.stop().fadeTo(o.speed, open ? 1 : 0, function(){onCompleteCallback(open);});
@@ -322,9 +359,7 @@
 		};
     };
 
-	////////////////////////////////////////////////////////////////////////////////////////////////////////////
-	// DEFAULT VALUES
-	////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	/* DEFAULT VALUES */
     $.fn.bPopup.defaults = {
           amsl: 			50
         , appending: 		true

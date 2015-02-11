@@ -39,7 +39,7 @@
         <script src="{$js}/lightbox/lightbox.js?{style_cache data='2015-02-05'}"></script>
         
         <!-- jquery bpopUp -->
-        <script src="{$js}/popup/jquery.bpopup.min.js?{style_cache data='2015-02-05'}"></script>
+        <script src="{$js}/popup/jquery.bpopup.js?{style_cache data='2015-02-05'}"></script>
         
         <!-- jquery plugins -->
         <script src="{$js}/jquery.cookie.js?{style_cache data='2015-02-05'}"></script>
@@ -64,6 +64,10 @@
         <!-- init -->
         <script src="{$js}/scroll.js?{style_cache data='2015-02-05'}"></script>
         <script src="{$js}/init.js?{style_cache data='2015-02-05'}"></script>
+        
+        <!-- close/ out Windows -->
+        <script src="{$js}/outWindows.js?{style_cache data='2015-02-05'}"></script>
+        
 {/strip}
 {include file='../header/analytics-header.tpl'}	
 {strip}	

@@ -8,6 +8,8 @@ use api\Settings as Settings;
 
 class Phpmail extends Settings 
 {  
+    CONST mail_support = 'support@pumpic.com';
+    
     private $_api;
     private $_data;
     
@@ -143,6 +145,41 @@ class Phpmail extends Settings
                    // 'subject'        => [ 'FAQ_pumpic' => "FAQ ".$params['name']], 
                 )) -> sendMAil();
                 
+                
+                if($_data === true) {
+                    $this -> _messange['success'] = "Your Request has been sent, our support representative will contact you as soon as possible"; // "Your email has been successfully sent";
+                } else
+                    $this -> _messange['error']['email'] = "Invalid email format"; // Invalid System Params
+                
+                
+            }    
+
+            
+        }
+        
+        return $this -> _messange;
+        
+    }
+    
+    
+    /* Faq Send mail
+     * $params (array): GET or POST.
+     * $type (string): api mail template.      
+     */
+    public function _sendPopUp($params, $type = false) 
+    {
+        
+        if(is_array($params) and count($params) > 0) {
+            
+            if(!$this -> validateEmail($params['email'])) {
+                $this -> _messange['error']['email'] = "Invalid email format";
+            } else {
+                
+                // sendMail Api
+                $_data = $this ->setData($params['email'], 
+                                self::mail_support, 
+                                $type, 
+                                $params) -> sendMAil();
                 
                 if($_data === true) {
                     $this -> _messange['success'] = "Your Request has been sent, our support representative will contact you as soon as possible"; // "Your email has been successfully sent";

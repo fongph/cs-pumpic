@@ -18,19 +18,32 @@
             //"coeff": 0.95
         };
         
-        var opts = $.extend(defaults, options);
         
+        
+        var opts = $.extend(defaults, options);
             _objFly = (opts._objFly) ? opts._objFly : false;
         
+//        if(opts.start == 'auto') {
+//            opts.start = $('.fly-position').offset().top; 
+//        }
+        
         return this.each(function(){
-            $(window).on('resize', function() { 
-                if($(window).width() < 800) { 
-                    $this.find( _objFly ).css({'margin-right': '0px'});
-                }
-            });
+//            $(window).on('resize', function() { 
+//                if($(window).width() < 800) { 
+//                    $this.find( _objFly ).css({'margin-right': '0px'});
+//                }
+//
+//                if(opts.start == 'auto') {
+//                    opts.start = $('.fly-position').offset().top; 
+//                }
+//                
+//                console.log( opts.start );
+//            });
+            
+            
             $(window).on('scroll', function() {
                 
-                //console.log( $(window).width() );
+                console.log( opts.start );
                 if(opts._settings._responce) {
                     if($(window).width() <= 480)  {
                         $this.find( _objFly ).removeClass('fixed');
@@ -59,15 +72,23 @@
                         }
                     }
                     
+                    /*
                     $this.show(500, function() {
                         $this.find( _objFly ).addClass('fixed');
                         if(opts._settings._validate)
+                            $( opts._settings._validateObj ).validate(); // init validate
+                    });*/
+                    
+                    $this.stop(true).queue('fx', function(){
+                        $this.find( _objFly ).addClass('fixed');
+                         $(this).show(500).dequeue('fx');
+                         if(opts._settings._validate)
                             $( opts._settings._validateObj ).validate(); // init validate
                     });
                     
                 } else if((windowTop < opts.start) || _stop) {
                     $this.find( _objFly ).removeClass('fixed');
-                    $this.hide(500);
+                    $this.hide(400).dequeue('fx');
                 }
                 
                 

@@ -1267,16 +1267,27 @@ $('form[name="send_find_phone"] button.event-submit').click(function(){
   
   // fly block
   if($('.fly-box-buttons').length) {
-       $('.fly-box-buttons').scrollPumpic({ 
-           '_objFly': '.block-fly',
-           'start': 700, 
-           'stop': 0,
-           'right': 300,
-           '_settings': {
-               '_responce': false,
-               '_validate': false
-           },
-       }); //"coeff":1.15
+      $.cookie('_scrollButtons', 1000); // 1200px
+      $(window).on('load resize', function() { 
+           var _offcet = parseInt( $('.fly-position').offset().top );
+          if( $.cookie('_scrollButtons') !== _offcet) {
+              $('.fly-box-buttons').scrollPumpic({ 
+                   '_objFly': '.block-fly',
+                   'start': _offcet, // $('.fly-position').offset().top
+                   'stop': 0,
+                   'right': 300,
+                   '_settings': {
+                       '_responce': false,
+                       '_validate': false
+                   },
+                }); //"coeff":1.15
+              $.cookie('_scrollButtons', _offcet);
+          }
+          
+      });      
    }
+   
+   
+   
   
 });

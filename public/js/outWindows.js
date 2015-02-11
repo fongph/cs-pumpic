@@ -63,7 +63,7 @@ function popUpValidate() {
             if($('form.block-popup-form div.error').length)
                 $('form.block-popup-form div.error').html( " " ).hide();
         },
-        // eправление ошибками
+        // управление ошибками
         showErrors: function(errorMap, errorList) {
             var msg = null;
             $.each(errorList, function(){

@@ -159,7 +159,7 @@
 		};
 		
         function close() {
-            console.log(id, $popup.data('id'), $popup.data('bPopup'));
+            // console.log(id, $popup.data('id'), $popup.data('bPopup'));
             
             // alert(id, $popup.data('id'), $popup.data('bPopup'));
             if (o.modal) {

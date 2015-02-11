@@ -3973,8 +3973,9 @@ only screen and (max-device-width: 480px) {
     text-transform: uppercase;
 }
 .popUp .title > b {
-    font-size: 55px;
-    line-height: 55px;
+    font-family: "Open Sans";
+    font-size: 56px;
+    font-weight: 600;
 }
 
 .popUp .info {
@@ -4011,8 +4012,14 @@ only screen and (max-device-width: 480px) {
     background: url('../images/popUp_close_small.png') no-repeat;
     width: 45px;
     height: 45px;
+    opacity: 0.8;
 }
 
+.popUp .close:hover,
+.popUp .close:active,
+.popUp .close:focus {
+    opacity: 1;
+}
 .popUp div {
 /*    padding-bottom: 24px;*/
 }
@@ -4027,31 +4034,33 @@ only screen and (max-device-width: 480px) {
     
     background: #fff;
     border: 0px;
-    padding: 10px 14px;
+    padding: 9px 13px;
     font-size: 15px;
-    line-height: 15px;
-    height: 40px;
+    height: 37px;
     
     border-radius: 4px 4px;
     -webkit-border-radius:  4px 4px;
     -moz-border-radius: 4px 4px;
 }
-
+form.block-popup-form div.error { 
+    display: none; 
+}
+.block-popup-form label#email-error { 
+    display: inline-block;
+}
 .block-popup-form #email-error {
     color: #b54a58;
-    display: inline-block;
     font-size: 13px;
     font-weight: bold;
     margin: 5px 0px 0px;
+    width: 100%;
 }
 
 .popUp form button.btn, .block-popUp-close {
     font-size: 18px;
 }
 
-
-
-.popUp form .button-red {
+.button-red {
     background-clip: padding-box;
     border: medium none;
     border-radius: 4px;
@@ -4068,6 +4077,36 @@ only screen and (max-device-width: 480px) {
     text-align: center;
     vertical-align: middle;
     white-space: nowrap;
+    text-decoration: none;
+}
+
+.button-red.disabled, 
+.button-red[disabled], 
+fieldset[disabled] .button-red, 
+.button-red.disabled:hover, 
+.button-red[disabled]:hover, 
+fieldset[disabled] .button-red:hover, 
+.button-red.disabled:focus, 
+.button-red[disabled]:focus, 
+fieldset[disabled] 
+.button-red:focus, 
+.button-red.disabled:active, 
+.button-red[disabled]:active, 
+fieldset[disabled] .button-red:active, 
+.button-red.disabled.active, 
+.button-red.active[disabled], 
+fieldset[disabled] .button-red.active {
+    box-shadow: none;
+    cursor: not-allowed;
+    opacity: 0.65;
+    pointer-events: none;
+    background-color: #cf4757;
+    color: white;
+}
+
+.button-red:hover,
+.button-red:active,
+.button-red:focus {
     text-decoration: none;
 }
 

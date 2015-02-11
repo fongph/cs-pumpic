@@ -9,9 +9,7 @@ $(document).ready(function(){
     
     
     $('html').mouseleave(function(){
-        console.log( 'Out windows! ', $.cookie('popUp_email'), typeof($.cookie('popUp_email')) );
-        
-        
+        // console.log( 'Out windows! ', $.cookie('popUp_email'), typeof($.cookie('popUp_email')) );
         if(typeof $.cookie('popUp_email') !== "undefined" 
                 && !parseInt( $.cookie('popUp_email') )) {
             
@@ -22,13 +20,10 @@ $(document).ready(function(){
                     follow: [false, false], 
                     positionStyle: 'fixed', //'fixed' or 'absolute'
                     onOpen: function() {
-                        //content.html('TEST POPUP element!');
                         popUpValidate();
                     },
                     closeClass: 'close',
                     onClose: function() {
-                        // setCookie('popUp', true);
-                        //content.empty();
                     },
 
             });
@@ -68,12 +63,24 @@ function popUpValidate() {
             if($('form.block-popup-form div.error').length)
                 $('form.block-popup-form div.error').html( " " ).hide();
         },
+        // eправление ошибками
+        showErrors: function(errorMap, errorList) {
+            var msg = null;
+            $.each(errorList, function(){
+                 msg = this.message + '<br />'; });
+             
+            if(msg !== null) 
+                $("form.block-popup-form div.error").html(msg).show();
+        },
 
         submitHandler: function( form ) {
             var $form = $(form), _params = parseQuery($form.serializeArray());
             
             if($('form.block-popup-form div.error').length)
                 $('form.block-popup-form div.error').html( " " ).hide();
+            
+            // disabled button
+            $form.find('button').prop( "disabled", true );
             
             var _res = getAjaxForm('/popup_email_send.html', _params);
             if(typeof _res === 'object') {
@@ -86,13 +93,16 @@ function popUpValidate() {
                                 if(_obj.next('label').length)
                                     _obj.next().html( text ).show();
                                 else
-                                    $('<label id="'+name+'-error" for="'+name+'" class="error">'+text+'</label>').insertAfter(_obj); 
+                                    $('form.block-popup-form div.error').html( text ).show();
+                                    //$('<label id="'+name+'-error" for="'+name+'" class="error">'+text+'</label>').insertAfter(_obj); 
                             }
                           });
                     } else {
                         $('form.block-popup-form div.error').html( _res.error ).show();
                     }
                     
+                    // disabled button
+                    $form.find('button').prop( "disabled", false );
                     return false;
                 } else if(_res.success) {
                     // google analitycs
@@ -118,10 +128,16 @@ function popUpValidate() {
                 } else {
                     $('form.block-popup-form div.error').html('Your email was not sent').show();
                     console.log('System error!');
+                    
+                    // disabled button
+                    $form.find('button').prop( "disabled", false );
                      return false;
                 }
             } else {
                 $('form.block-popup-form div.error').html('Your email was not sent').show();
+                
+                // disabled button
+                $form.find('button').prop( "disabled", false );
                 return false;
             }
             

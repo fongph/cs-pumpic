@@ -60,6 +60,9 @@ $config = array(
             
                 // currancy
                 'currency.html'            => 'currency.php', 
+            
+                // popUp send email
+                'popup_email_send.html'   => 'popup_email_send.php',   
 	),
     
     'db_phones' => array(

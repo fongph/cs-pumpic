@@ -4991,7 +4991,7 @@ div[id^="attachment_"], div[id*=" attachment_"] {
     position: absolute;
     right: 0;
     z-index: 1000;
-    min-width: 310px;
+    min-width: 316px;
 }
 .block-buttons-fixed {
     background: #4d4f5b;
@@ -5024,4 +5024,58 @@ div[id^="attachment_"], div[id*=" attachment_"] {
 
 .block-buttons-fixed > form {
     display: inline-block;
+}
+
+@media only screen and (max-width: 480px) {
+   .block-fly {
+        min-width: 316px;
+        width: 100%;
+    }
+    
+    .block-fly > div {
+        margin: 0 auto;
+        width: 310px;
+    }
+}
+@media (min-width: 468px) { 
+   .block-fly {
+        min-width: 316px;
+        width: 100%;
+    }
+    
+    .block-fly > div {
+        margin: 0 auto;
+        width: 310px;
+    }
+}
+@media (min-width: 768px) {
+    .block-fly {
+        min-width: 316px;
+        width: auto;
+    }
+    
+    .block-fly > div {
+        margin: 0px;
+        width: auto;
+    }
+}
+@media (min-width: 992px) {
+    .block-fly {
+        min-width: 316px;
+        width: auto;
+    }
+    .block-fly > div {
+        margin: 0px;
+        width: auto;
+    }
+}
+@media (min-width: 1200px) {
+    .block-fly {
+        min-width: 316px;
+        width: auto;
+    }   
+    .block-fly > div {
+        margin: 0px;
+        width: auto;
+    }
 }

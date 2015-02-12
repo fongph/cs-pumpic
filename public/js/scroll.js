@@ -27,6 +27,14 @@
 //            opts.start = $('.fly-position').offset().top; 
 //        }
         
+        $(window).on('resize', function() { 
+           if($(this).width() > 800) {
+                $this.find( _objFly ).css({'margin-right': opts.right+'px'});
+            } else {
+                $this.find( _objFly ).css({'margin-right': '0px'});
+            }
+        });
+        
         return this.each(function(){
 //            $(window).on('resize', function() { 
 //                if($(window).width() < 800) { 
@@ -43,7 +51,7 @@
             
             $(window).on('scroll', function() {
                 
-                console.log( opts.start );
+                // console.log( opts.start );
                 if(opts._settings._responce) {
                     if($(window).width() <= 480)  {
                         $this.find( _objFly ).removeClass('fixed');

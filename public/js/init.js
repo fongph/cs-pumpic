@@ -1274,6 +1274,12 @@ $('form[name="send_find_phone"] button.event-submit').click(function(){
               $.data(document, '_scrollButtons_'+$(this).width(), $('.fly-position').offset().top);
           } 
           
+//          if($(window).width() > 800) {
+//                $('.fly-box-buttons .block-fly').css({'margin-right': '300px'});
+//            } else {
+//                $('.fly-box-buttons .block-fly').css({'margin-right': '0px'});
+//            }
+          
           console.log( $.data(document, '_scrollButtons_'+$(this).width()) );
           $('.fly-box-buttons').scrollPumpic({ 
                '_objFly': '.block-fly',

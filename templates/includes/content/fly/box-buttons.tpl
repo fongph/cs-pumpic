@@ -2,7 +2,9 @@
     <div class="fly-box-buttons">
 
         <div class="block-fly block-buttons-fixed">
+            <div class="clearfix">
             {if $buttonBuyNow == "yes"}
+                
             <!-- button 'Buy Now' -->
             <a href="/store.html" 
                    class="btn-default ga-action-click fly-button-item" 
@@ -12,9 +14,11 @@
                    >
                     Buy Now
                 </a>
+            
            {/if}
 
            {if $buttonViewDemo == "yes"}
+              
             <!-- button 'View Demo' -->
             <a href="http://demo.{$domain}" 
                class="btn-orange ga-action-click fly-button-item" 
@@ -24,6 +28,7 @@
                ga-label="prices"
                >
                 View Demo</a>
+               
             {/if}
 
             {if $buttonFreeTrial == "yes"}
@@ -42,7 +47,7 @@
                         >Free Trial</button>
             </form>            
             {/nocache}
-
+            </div>
             {/if}
         </div>
 

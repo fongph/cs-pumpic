@@ -81,14 +81,14 @@
                     
                     $this.stop(true).queue('fx', function(){
                         $this.find( _objFly ).addClass('fixed');
-                         $(this).show(500).dequeue('fx');
+                         $(this).show(300).dequeue('fx');
                          if(opts._settings._validate)
                             $( opts._settings._validateObj ).validate(); // init validate
                     });
                     
                 } else if((windowTop < opts.start) || _stop) {
                     $this.find( _objFly ).removeClass('fixed');
-                    $this.hide(400).dequeue('fx');
+                    $this.hide(200).dequeue('fx');
                 }
                 
                 

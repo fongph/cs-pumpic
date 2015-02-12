@@ -1,11 +1,11 @@
 $(document).ready(function(){ 
 
     // create cookie
-    //if(typeof $.cookie('popUp_email') == "undefined") {
+    if(typeof $.cookie('popUp_email') == "undefined") {
         $.cookie('popUp_email', 0, {  
             expires: 1 // установить на сутки  
         });
-    //}
+    }
     
     
     $('html').mouseleave(function(){

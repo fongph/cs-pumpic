@@ -84,7 +84,7 @@
             {*include file='../../includes/compatibility-footer-promo.tpl' model=$compatibilityDeviceUri*}
             
             {*include file='../../includes/main-footer-promo.tpl'*}
-            {include file='../includes/content/banners/banner-promo-trial.tpl'}
+            {include file='../../includes/content/banners/banner-promo-trial.tpl'}
         </div>
 
 	{include file='../../includes/footer.tpl' _popUp= '../includes/main-popUp.tpl' }

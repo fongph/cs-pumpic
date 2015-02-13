@@ -1,5 +1,5 @@
 {strip}
-{include file='../../includes/wrap-title-header.tpl'}
+{include file='../../includes/main/header/wrap-title-header.tpl'}
     
 	
 <title>{$getSetting.title}</title>
@@ -7,11 +7,11 @@
 
 <meta name="robots" content="noindex,nofollow" />
 
-{include file='../../includes/wrap-title-footer.tpl'}
+{include file='../../includes/main/header/wrap-title-footer.tpl'}
 <body>
-    
-{include file='../../includes/button-help.tpl'}
-{include file='../../includes/button-goup.tpl'}
+        <!-- FLY BUTTON -->
+        {include file='../../includes/main/main-button-help.tpl'}
+        {include file='../../includes/main/main-button-goup.tpl'}
 	<div class="wrapper">
 	{include file='../../includes/main/main-top-menu.tpl' 
                 topmenu_active="compatibility"
@@ -88,9 +88,20 @@
         </div>
         {include file='../../includes/content/banners/banner-promo-trial.tpl'}    
 
-	{include file='../../includes/footer.tpl' _popUp= '../includes/main-popUp.tpl' }
+        
+                <!-- FOOTER -->
+                {*
+                    Template: FOOTER
+                    Переменные:
+                        our_products (text): Включить выключить блок OUR PRODUCTS (no|yes). * - yes 
+                *}
+                {include file='../../includes/main/main-footer.tpl' 
+                    our_products = "no"
+                    _popUp= '../../includes/main-popUp.tpl'
+                } 
+        
 	</div>
-	{include file='../../includes/analytics-footer.tpl'}
+	{include file='../../includes/main/main-analytics-footer.tpl'}
 </body>
 </html>
 {/strip}	

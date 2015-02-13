@@ -3,8 +3,8 @@
  * The template for displaying posts in the Status post format
  *
  * @package WordPress
- * @subpackage Twenty_Twelve
- * @since Twenty Twelve 1.0
+ * @subpackage Pumpic
+ * @since Pumpic 1.0
  */
 ?>
 
@@ -18,7 +18,7 @@
 			/**
 			 * Filter the status avatar size.
 			 *
-			 * @since Twenty Twelve 1.0
+			 * @since Pumpic 1.0
 			 *
 			 * @param int $size The height and width of the avatar in pixels.
 			 */

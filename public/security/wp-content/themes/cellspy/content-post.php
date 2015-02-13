@@ -10,7 +10,8 @@
     <p>
     <?php 
         if(get_post_content()) {
-            $content = strip_tags(get_post_content()); 
+            $content = preg_replace('#\[(.*)\](.*?)\[/(.*)?\]#si', '', get_post_content());
+            $content = strip_tags($content);
             echo substr((string)$content, 0, 309).' …';
         }    
         ?> 

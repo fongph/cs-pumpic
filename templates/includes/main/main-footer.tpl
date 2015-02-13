@@ -80,4 +80,13 @@
 </div>
                                         
 <!-- init popUp -->
-{include file='../../includes/main-popUp.tpl'}
+<!-- init popUp -->
+{if isset($_popUp)}
+    {assign 'module' $_popUp}
+{else}
+    {assign 'module' '../../includes/main-popUp.tpl'}
+{/if}
+
+{include file="$module"}
+
+{*include file='../../includes/main-popUp.tpl'*}

@@ -1,13 +1,15 @@
 {strip}
-{include file='../includes/wrap-title-header.tpl'}
 
-	<title>High-grade tracking app with multiple functions</title>
-	<meta name="description" content="Pumpic is an innovative solution, which takes Mobile Phone Monitoring on a reasonably new level. Find out more functions of Pumpic and evaluate the progress it made." />
-	
-{include file='../includes/wrap-title-footer.tpl'}
+{include file='../includes/main/main-header.tpl'
+    robots="no" 
+    title="High-grade tracking app with multiple functions"
+    description="Pumpic is an innovative solution, which takes Mobile Phone Monitoring on a reasonably new level. Find out more functions of Pumpic and evaluate the progress it made."
+}
+
 <body>
-{include file='../includes/button-help.tpl'}
-{include file='../includes/button-goup.tpl'}
+    <!-- FLY BUTTON -->
+    {include file='../includes/main/main-button-help.tpl'}
+    {include file='../includes/main/main-button-goup.tpl'}
 	<div class="wrapper">
 	{include file='../includes/main/main-top-menu.tpl' 
                 topmenu_active="features"
@@ -20,7 +22,6 @@
 							<div class="col-lg-12">
 								<h2>
                                                                     Pumpic is Your Ultimate Parental Control Monitoring App
-                                                                    {*PUMPIC IS YOUR ULTIMATE PARENTAL CONTROL MONITORING APP*}
                                                                 </h2>
 								<p class="text-center">Pumpic is mobile phone tracking software for parents of underage children worldwide. The application is safe, fast and reliable. Pumpic gives you easy and quick access to your kid’s device including call logs, SMS, location data, IM chats, social media activity and even more. Pumpic protects your children and secures their happiness.</p>
 							</div>
@@ -31,7 +32,7 @@
 									<div class="row">
 										<div class="col-lg-5 col-md-5">
 											<h3>
-                                                                                            Features{*FEATURES*}:
+                                                                                            Features:
                                                                                         </h3>
 											<div class="dth">
 												<span>Plan: </span>
@@ -95,9 +96,19 @@
 			</div>
 		</div>
 
-	{include file='../includes/footer.tpl'}
+                {include file='../includes/content/banners/banner-promo-trial.tpl'} 
+                                                        
+                <!-- FOOTER -->
+                {*
+                    Template: FOOTER
+                    Переменные:
+                        our_products (text): Включить выключить блок OUR PRODUCTS (no|yes). * - yes 
+                *}
+                {include file='../includes/main/main-footer.tpl' 
+                    our_products = "no"
+                }
 	</div>
-	{include file='../includes/analytics-footer.tpl'}
+	{include file='../includes/main/main-analytics-footer.tpl'}
 </body>
 </html>
 {/strip}	

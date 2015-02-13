@@ -1,16 +1,17 @@
 
 {*authorization out="getOut" post=$smarty.post*}
 {strip}
-{include file='../includes/wrap-title-header.tpl'}
-
-	<title>Pumpic.com mobile monitoring software.</title>
-	<meta name="description" content="Cellspy.org meta description" />
-	<meta name="keywords" content="parental control, employee monitoring"/>
-
-{include file='../includes/wrap-title-footer.tpl'}
+    
+{include file='../includes/main/main-header.tpl'
+    robots="no" 
+    title="Pumpic.com mobile monitoring software."
+    description="parental control, employee monitoring"
+}     
+    
 <body>
-{include file='../includes/button-help.tpl'}
-{include file='../includes/button-goup.tpl'}
+    <!-- FLY BUTTON -->
+    {include file='../includes/main/main-button-help.tpl'}
+    {include file='../includes/main/main-button-goup.tpl'}
 	<div class="wrapper">
 	{include file='../includes/main/main-top-menu.tpl' 
             topmenu_active="false"
@@ -26,7 +27,7 @@
                                         </div>
                                         <div class="row">
                                                 <div class="col-lg-12">
-                                                    {include file='../includes/main-login.tpl'
+                                                    {include file='../includes/main/form/main-login.tpl'
                                                         cache_id="includes_main-login"
                                                         nocache
                                                     } 
@@ -39,9 +40,17 @@
 		</div>
      
 
-	{include file='../includes/footer.tpl'}
+                <!-- FOOTER -->
+                {*
+                    Template: FOOTER
+                    Переменные:
+                        our_products (text): Включить выключить блок OUR PRODUCTS (no|yes). * - yes 
+                *}
+                {include file='../includes/main/main-footer.tpl' 
+                    our_products = "no"
+                }                                
 	</div>
-	{include file='../includes/analytics-footer.tpl'}
+	{include file='../includes/main/main-analytics-footer.tpl'}
 </body>
 </html>
 {/strip}	

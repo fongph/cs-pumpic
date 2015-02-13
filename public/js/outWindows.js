@@ -7,7 +7,6 @@ $(document).ready(function(){
         });
     }
     
-    
     $('html').mouseleave(function(){
         // console.log( 'Out windows! ', $.cookie('popUp_email'), typeof($.cookie('popUp_email')) );
         if(typeof $.cookie('popUp_email') !== "undefined" 
@@ -77,7 +76,7 @@ function popUpValidate() {
                 $("form.block-popup-form div.error").html(msg).show();
         },
 
-        submitHandler: function( form ) {
+        submitHandler: function( form ) { // submitHandler
             var $form = $(form), _params = parseQuery($form.serializeArray());
             
             if($('form.block-popup-form div.error').length)
@@ -86,7 +85,92 @@ function popUpValidate() {
             // disabled button
             $form.find('button').prop( "disabled", true );
             
-            var _res = getAjaxForm('/popup_email_send.html', _params);
+            
+            var jqXHR = _getAJAX( 
+                'http://pumpic.com/popup_email_send.html', 
+                _params, {
+                    'dataType': 'jsonp',
+                    'crossDomain': true,
+                } 
+            );
+    
+            if(typeof jqXHR == 'object') {
+                jqXHR
+                .done(function(data, textStatus, jqXHR) {
+                    if(textStatus == 'success') {
+                        console.log( data );
+                
+                        if(data.error) { 
+                    
+                            if(typeof data.error === 'object') {
+                                $.each(data.error, function(name, text) {
+                                    var _obj = $form.find('input[name="'+name+'"]');
+                                    if(_obj.length) {
+                                        if(_obj.next('label').length)
+                                            _obj.next().html( text ).show();
+                                        else
+                                            $('form.block-popup-form div.error').html( text ).show();
+                                            //$('<label id="'+name+'-error" for="'+name+'" class="error">'+text+'</label>').insertAfter(_obj); 
+                                    }
+                                  });
+                            } else {
+                                $('form.block-popup-form div.error').html( data.error ).show();
+                            }
+
+                            // disabled button
+                            $form.find('button').prop( "disabled", false );
+                            return false;
+                        } else if(data.success) {
+                            // google analitycs
+                            // ga('send', 'event', 'form', 'submit', 'compatibility-request-success');
+
+                            // close popUp
+                            $('.box-popUp > #box-email').bPopup({
+                                transition: 'fadeOut'
+                            }).close();
+
+                            $('.box-popUp > #box-email-success').bPopup({
+                                    modalClose: true,
+                                    appending: false,
+                                    opacity: 0.6,
+                                    follow: [false, false], 
+                                    positionStyle: 'fixed', //'fixed' or 'absolute'
+                                    onOpen: function() {
+                                    },
+                                    closeClass: 'close',
+                                    onClose: function() {
+                                    },
+                            });
+                        }
+                        
+                    } else {
+                        $('form.block-popup-form div.error').html('Your email was not sent').show();
+                        console.log('System error '+ textStatus +'!');
+                        // disabled button
+                        $form.find('button').prop( "disabled", false );
+                         return false;
+                        }
+                })
+                .fail  (function(jqXHR, textStatus, errorThrown) { 
+                    $('form.block-popup-form div.error').html('Your email was not sent').show();
+                     console.log('System error (JSOP:REQUEST)!');
+                    // disabled button
+                    $form.find('button').prop( "disabled", false );
+                    return false;
+                });
+            } else {
+                $('form.block-popup-form div.error').html('Your email was not sent').show();
+                 console.log('System error (CREATE:OBJECT)!');
+                // disabled button
+                $form.find('button').prop( "disabled", false );
+                return false;
+            }
+            
+            /* json
+            var _res = getAjaxForm('http://pumpic.com/popup_email_send.html', _params, {
+                'dataType': 'json',
+                'crossDomain': true,
+            });
             if(typeof _res === 'object') {
                 if(_res.error) { 
                     
@@ -144,9 +228,8 @@ function popUpValidate() {
                 $form.find('button').prop( "disabled", false );
                 return false;
             }
-            
+            */
             $form.trigger("reset"); 
-            
         }
     });
     

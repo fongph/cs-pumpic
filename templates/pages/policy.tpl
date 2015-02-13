@@ -1,13 +1,15 @@
 {strip}
-{include file='../includes/wrap-title-header.tpl'}
-
-	<title>Privacy Policy, Refunds, Terms & Conditions</title>
-	<meta name="description" content="Pumpic is a Mobile Phone Monitoring Application with limitless possibilities. Learn more about the legal policy of the software usage. Pumpic is for legitimate use only." />
-	
-{include file='../includes/wrap-title-footer.tpl'}
+    
+{include file='../includes/main/main-header.tpl'
+    robots="no" 
+    title="Privacy Policy, Refunds, Terms & Conditions"
+    description="Pumpic is a Mobile Phone Monitoring Application with limitless possibilities. Learn more about the legal policy of the software usage. Pumpic is for legitimate use only."
+}    
+    
 <body>
-{include file='../includes/button-help.tpl'}
-{include file='../includes/button-goup.tpl'}
+    <!-- FLY BUTTON -->
+    {include file='../includes/main/main-button-help.tpl'}
+    {include file='../includes/main/main-button-goup.tpl'}
 	<div class="wrapper">
 		{include file='../includes/main/main-top-menu.tpl' 
                         cache_id = "includes_main_main-top-menu"
@@ -94,9 +96,17 @@ Any purchase of Pumpic software at a discount price is non-refundable. No refund
 			</div>
 		</div>
 			
-		{include file='../includes/footer.tpl'}
+		<!-- FOOTER -->
+                {*
+                    Template: FOOTER
+                    Переменные:
+                        our_products (text): Включить выключить блок OUR PRODUCTS (no|yes). * - yes 
+                *}
+                {include file='../includes/main/main-footer.tpl' 
+                    our_products = "no"
+                }
 	</div>
-	{include file='../includes/analytics-footer.tpl'}
+	{include file='../includes/main/main-analytics-footer.tpl'}
         <script type="text/javascript">
             $(document).ready(function(){
                 $('#header-menu-store-link').click(function(){

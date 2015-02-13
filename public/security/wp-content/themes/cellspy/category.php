@@ -49,10 +49,13 @@
                     <div class="col-lg-4 col-md-4 col-sm-12">
                         <?php require_once '../../templates/includes/blog-banner-buy-category.tpl'; ?>
                         <div class="feature_list">
+                            <div id="secondary" class="widget-area" role="complementary">
+                                <?php get_sidebar('main'); ?>
+                            </div>    
                             <?php // get_sidebar(); ?>
-                            <?php if ( is_active_sidebar( 'sidebar-7' ) ) : ?>
+                            <?php /* if ( is_active_sidebar( 'sidebar-7' ) ) : ?>
                                     <?php dynamic_sidebar( 'sidebar-7' ); ?>
-                            <?php endif; ?>
+                            <?php endif; */ ?>
                         </div>
                     </div>
                 </div> <!-- .row -->

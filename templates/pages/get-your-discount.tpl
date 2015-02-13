@@ -1,15 +1,15 @@
 {strip}
-{include file='../includes/wrap-title-header.tpl'}
 
-	<title>Get your 50% discount on your first purchase!</title>
-	<meta name="description" content="Thank you for choosing pumpic.com" />
-        
-        <meta name="robots" content="noindex,nofollow" />
-	
-{include file='../includes/wrap-title-footer.tpl'}
+{include file='../includes/main/main-header.tpl'
+    robots="yes" 
+    title="Get your 50% discount on your first purchase!"
+    description="Thank you for choosing pumpic.com"
+}
+
 <body>
-{include file='../includes/button-help.tpl'}
-{include file='../includes/button-goup.tpl'}
+    <!-- FLY BUTTON -->
+    {include file='../includes/main/main-button-help.tpl'}
+    {include file='../includes/main/main-button-goup.tpl'}
 	<div class="wrapper parent-control">
 	{include file='../includes/main/main-top-menu.tpl' 
                 topmenu_active='home'
@@ -52,9 +52,12 @@
                 </div> <!-- .row -->
             </div>
 		</div>
-		{include file='../includes/main-discount_50_test.tpl'}
-                {include file='../includes/main-secures.tpl'}
-		{include file='../includes/main-features.tpl'}
+		{include file='../includes/content/discount_50_v2.tpl'}
+                
+                {include file='../includes/content/secures.tpl'}
+		{include file='../includes/content/features.tpl'
+                        blockBg="light"
+                }
 
 		<div class="dark">
 			<div class="container">
@@ -101,7 +104,7 @@
 		</div>
 		<div class="light">
 			<div class="container">
-				<h2 class="text-center testimonial-title">Pumpic Testimonials{*PUMPIC TESTIMONIALS*}:</h2>
+				<h2 class="text-center testimonial-title">Pumpic Testimonials:</h2>
 				<div class="row">
 					<div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
 						<img src="{$img}/testimonials/testimonials_new_1.png" alt="" class="testimonial-photo">
@@ -128,7 +131,7 @@
 			</div>
 		</div>
 		
-                {* include file='../includes/main-subscribe.tpl' *}
+                {* include file='../includes/content/subscribe.tpl' *}
                 
 		<div class="dark howtouse-pumpic">
 			<div class="container">
@@ -185,11 +188,24 @@
 				</div>
 			</div>
 		</div>
-		{include file='../includes/quick-link.tpl'}
-		{include file='../includes/main-footer-promo.tpl'}
-		{include file='../includes/footer.tpl'}
+                {include file='../includes/main/main-quick-link.tpl' 
+                        blockBg="dark"
+                }                                         
+                                                        
+		{*include file='../includes/main/main-footer-promo.tpl'*}
+                {include file='../includes/content/banners/banner-promo-trial.tpl'}
+                
+		<!-- FOOTER -->
+                {*
+                    Template: FOOTER
+                    Переменные:
+                        our_products (text): Включить выключить блок OUR PRODUCTS (no|yes). * - yes 
+                *}
+                {include file='../includes/main/main-footer.tpl' 
+                    our_products = "no"
+                }
 	</div>
-	{include file='../includes/analytics-footer.tpl'}
+	{include file='../includes/main/main-analytics-footer.tpl'}
 </body>
 </html>
 {/strip}

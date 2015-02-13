@@ -1,13 +1,14 @@
 {strip}
-{include file='../includes/wrap-title-header.tpl'}
-
-	<title>Page not Found</title>
-	{*<meta name="description" content="Cellspy.org meta description" />*}
-
-{include file='../includes/wrap-title-footer.tpl'}
+ 
+{include file='../includes/main/main-header.tpl'
+    robots="no" 
+    title="Page not Found"
+}    
+    
 <body>
-{include file='../includes/button-help.tpl'}
-{include file='../includes/button-goup.tpl'}
+    <!-- FLY BUTTON -->
+    {include file='../includes/main/main-button-help.tpl'}
+    {include file='../includes/main/main-button-goup.tpl'}
 	<div class="wrapper">
 	{include file='../includes/main/main-top-menu.tpl'}	
 		<div class="very_easy">
@@ -26,9 +27,17 @@
 				</div>
 			</div>
 		</div>
-	{include file='../includes/footer.tpl'}
+	<!-- FOOTER -->
+        {*
+            Template: FOOTER
+            Переменные:
+                our_products (text): Включить выключить блок OUR PRODUCTS (no|yes). * - yes 
+        *}
+        {include file='../includes/main/main-footer.tpl' 
+            our_products = "no"
+        }
 	</div>
-	{include file='../includes/analytics-footer.tpl'}
+	{include file='../includes/main/main-analytics-footer.tpl'}
 </body>
 </html>
 {/strip}	

@@ -13,13 +13,28 @@ function eg_quicktags() {
     * - Title, title="" attribute (optional)
     * - Priority/position on bar, 1-9 = first, 11-19 = second, 21-29 = third, etc. (optional)
     */
-    QTags.addButton( 'eg_paragraph', 'p', '<p>', '</p>', 'p' );
-    QTags.addButton( 'eg_pre', 'pre','<pre lang="php">', '</pre>', 'q' );
-    QTags.addButton( 'eg_listImages', 'listImages','<ul class="ul-list-images">', '</ul>', 'listImages' );
+    if ( typeof QTags != 'undefined' ) {
+        QTags.addButton( 'eg_paragraph', 'p', '<p>', '</p>', 'p' );
+        QTags.addButton( 'eg_pre', 'pre','<pre lang="php">', '</pre>', 'q' );
+        QTags.addButton( 'eg_listImages', 'listImages','<ul class="ul-list-images">', '</ul>', 'listImages' );
+    }  
 </script>
 <?php
 }
 
+
+/* --------------- AJAX ----------------- */
+// Include the Ajax library on the front end
+function add_ajax_library() {
+ 
+    $html = '<script type="text/javascript">';
+        $html .= 'var ajaxurl = "' . site_url( '/wp-content/themes/dist/ajax/ajax.php' ) . '"';
+    $html .= '</script>';
+ 
+    echo $html;
+ 
+} // end add_ajax_library
+add_action( 'wp_head',  'add_ajax_library' );
 
 if ( !function_exists('cellspy_r_banner_buy_1') ) {
     function cellspy_r_banner_buy_1() {
@@ -186,10 +201,10 @@ function get_banners_align($_align = 'top', $post_ID = false, $banner_id = false
 }
 
 /**
- * Twenty Twelve setup.
+ * Pumpic setup.
  *
  * Sets up theme defaults and registers the various WordPress features that
- * Twenty Twelve supports.
+ * Pumpic supports.
  *
  * @uses load_theme_textdomain() For translation/localization support.
  * @uses add_editor_style() To add a Visual Editor stylesheet.
@@ -198,14 +213,14 @@ function get_banners_align($_align = 'top', $post_ID = false, $banner_id = false
  * @uses register_nav_menu() To add support for navigation menus.
  * @uses set_post_thumbnail_size() To set a custom post thumbnail size.
  *
- * @since Twenty Twelve 1.0
+ * @since Pumpic 1.0
  */
 function cellspy_setup() {
 	/*
-	 * Makes Twenty Twelve available for translation.
+	 * Makes Pumpic available for translation.
 	 *
 	 * Translations can be added to the /languages/ directory.
-	 * If you're building a theme based on Twenty Twelve, use a find and replace
+	 * If you're building a theme based on Pumpic, use a find and replace
 	 * to change 'twentytwelve' to the name of your theme in all the template files.
 	 */
 	load_theme_textdomain( 'cellspy', get_template_directory() . '/languages' );
@@ -247,7 +262,7 @@ add_action( 'after_setup_theme', 'cellspy_setup' );
  * The use of Open Sans by default is localized. For languages that use
  * characters not supported by the font, the font can be disabled.
  *
- * @since Twenty Twelve 1.2
+ * @since Pumpic 1.2
  *
  * @return string Font stylesheet or empty string if disabled.
  */
@@ -282,7 +297,7 @@ function cellspy_get_font_url() {
 /**
  * Enqueue scripts and styles for front-end.
  *
- * @since Twenty Twelve 1.0
+ * @since Pumpic 1.0
  */
 function cellspy_scripts_styles() {
 	global $wp_styles;
@@ -319,7 +334,7 @@ add_action( 'wp_enqueue_scripts', 'cellspy_scripts_styles' );
  *
  * @uses twentytwelve_get_font_url() To get the Google Font stylesheet URL.
  *
- * @since Twenty Twelve 1.2
+ * @since Pumpic 1.2
  *
  * @param string $mce_css CSS path to load in TinyMCE.
  * @return string Filtered CSS path.
@@ -345,7 +360,7 @@ add_filter( 'mce_css', 'cellspy_mce_css' );
  * Creates a nicely formatted and more specific title element text
  * for output in head of document, based on current view.
  *
- * @since Twenty Twelve 1.0
+ * @since Pumpic 1.0
  *
  * @param string $title Default title text for current view.
  * @param string $sep Optional separator.
@@ -378,7 +393,7 @@ add_filter( 'wp_title', 'cellspy_wp_title', 10, 2 );
  *
  * Makes our wp_nav_menu() fallback -- wp_page_menu() -- show a home link.
  *
- * @since Twenty Twelve 1.0
+ * @since Pumpic 1.0
  */
 function cellspy_page_menu_args( $args ) {
 	if ( ! isset( $args['show_home'] ) )
@@ -393,9 +408,19 @@ add_filter( 'wp_page_menu_args', 'cellspy_page_menu_args' );
  *
  * Registers our main widget area and the front page widget areas.
  *
- * @since Twenty Twelve 1.0
+ * @since Pumpic 1.0
  */
 function cellspy_widgets_init() {
+        register_sidebar( array(
+		'name' => __( 'All pages right box', 'cellspy' ),
+		'id' => 'sidebar-main-right',
+		'description' => __( 'The create sidebar right', 'cellspy' ),
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">', // <aside id="%1$s" class="widget %2$s">
+		'after_widget' => '</aside>', // </aside>
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>',
+	) );
+    
 	register_sidebar( array(
 		'name' => __( 'Main Sidebar', 'cellspy' ),
 		'id' => 'sidebar-1',
@@ -466,36 +491,22 @@ function cellspy_widgets_init() {
 		'after_title' => '</h3>',
 	) );
         
-        // subscribe
-//        register_sidebar( array(
-//		'name' => __( 'MailChimp subscribe', 'cellspy' ),
-//		'id' => 'sidebar-subscribe',
-//		'description' => __( 'Subscribe', 'cellspy' ),
-//		'before_widget' => '<aside id="%1$s" class="widget %2$s">', // <aside id="%1$s" class="widget %2$s">
-//		'after_widget' => '</aside>', // </aside>
-//		'before_title' => '',
-//		'after_title' => '',
-//	) );
-        
         
         // genarated sidevar all pages
         $pages = get_pages_list();
         
-        
         foreach($pages as $page) :
-            
             register_sidebar( array(
-		'name' => __( 'MailChimp subscribe '.$page['post_type'], 'dist' ),
+		'name' => __( 'Subscribe ('.$page['post_type'].'-'.$page['ID'].')', 'cellspy' ),
 		'id' => 'sidebar-subscribe-'.$page['ID'],
-		'description' => __( 'MailChimp subscribe '.$page['post_type'], 'dist' ),
+		'description' => __( 'MailChimp subscribe '.$page['post_type'], 'cellspy' ),
 		'before_widget' => '<div id="%1$s" class="box-sidebar-subscribe sidebar-subscribe-type-'.$page['post_type'].' sidebar-subscribe-item-'.$page['ID'].' %2$s">',
 		'after_widget' => '</div>', // </aside>
 		'before_title' => '',
 		'after_title' => '',
             ) );
-            
-        
         endforeach;
+        
         
         
 }
@@ -503,7 +514,9 @@ add_action( 'widgets_init', 'cellspy_widgets_init' );
 
 function get_pages_list() {
     global $wpdb;
-    $pages = $wpdb->get_results("SELECT * FROM $wpdb->posts WHERE $wpdb->posts.post_type = 'page' 
+    
+    
+    $pages = $wpdb->get_results("SELECT * FROM $wpdb->posts WHERE $wpdb->posts.post_type IN ('page', 'post')
                         AND $wpdb->posts.post_status = 'publish'
                         AND $wpdb->posts.post_parent = '0' ORDER BY menu_order ASC ", ARRAY_A );
     return $pages; 
@@ -591,7 +604,7 @@ if ( ! function_exists( 'cellspy_entry_meta' ) ) :
  *
  * Create your own twentytwelve_entry_meta() to override in a child theme.
  *
- * @since Twenty Twelve 1.0
+ * @since Pumpic 1.0
  */
 function cellspy_entry_meta() {
 	// Translators: used between list items, there is a space after the comma.
@@ -644,7 +657,7 @@ endif;
  * 4. Custom fonts enabled.
  * 5. Single or multiple authors.
  *
- * @since Twenty Twelve 1.0
+ * @since Pumpic 1.0
  *
  * @param array $classes Existing class values.
  * @return array Filtered class values.
@@ -688,7 +701,7 @@ add_filter( 'body_class', 'cellspy_body_class' );
  * Adjusts content_width value for full-width and single image attachment
  * templates, and when there are no active widgets in the sidebar.
  *
- * @since Twenty Twelve 1.0
+ * @since Pumpic 1.0
  */
 function cellspy_content_width() {
 	if ( is_page_template( 'page-templates/full-width.php' ) || is_attachment() || ! is_active_sidebar( 'sidebar-1' ) ) {
@@ -703,7 +716,7 @@ add_action( 'template_redirect', 'cellspy_content_width' );
  *
  * Add postMessage support for site title and description for the Customizer.
  *
- * @since Twenty Twelve 1.0
+ * @since Pumpic 1.0
  *
  * @param WP_Customize_Manager $wp_customize Customizer object.
  */
@@ -719,7 +732,7 @@ add_action( 'customize_register', 'cellspy_customize_register' );
  *
  * Binds JS handlers to make the Customizer preview reload changes asynchronously.
  *
- * @since Twenty Twelve 1.0
+ * @since Pumpic 1.0
  */
 function cellspy_customize_preview_js() {
 	wp_enqueue_script( 'cellspy-customizer', get_template_directory_uri() . '/js/theme-customizer.js', array( 'customize-preview' ), '20130301', true );

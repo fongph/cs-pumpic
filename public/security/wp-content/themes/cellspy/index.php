@@ -1,6 +1,5 @@
 <?php get_header(); ?>
 
-
 <div class="very_easy">
     <div class="container">
         <div class="row">
@@ -8,9 +7,7 @@
                 <div class="row">
                     <h1 class="text-center mt10 mb20"><a class="blog-link" href="/security/">Kids' Phone Safety Blog</a></h1>
                     
-                    <?php /*<h2>blog<?php // the_title() ?></h2>
-                    <p class="text-center">Find company updates and some of our most popular posts<?php  // get_post_content() ?></p>
-                    */ ?>
+                    
                     
                     <div class="col-lg-8 col-md-8 col-sm-12">
                         
@@ -51,14 +48,12 @@
                     <div class="col-lg-4 col-md-4 col-sm-12">
                         <?php require_once '../../templates/includes/blog-banner-buy-home.tpl'; ?>
                         
-                        <?php /*
-                        <div class="thumb_sidebar">
-                            <?= cellspy_r_banner_buy_1() ?>
-                        </div>
-                        */ ?>
+                        
                         
                         <div class="feature_list">
-                            <?php get_sidebar(); ?>
+                            <div id="secondary" class="widget-area" role="complementary">
+                                <?php get_sidebar('main'); ?>
+                            </div>
                         </div>
                     </div>
                 </div> <!-- .row -->
@@ -68,6 +63,4 @@
 </div> <!-- .very_easy -->
 
 <?php get_sidebar(); ?>
-
-<?php /*get_bottom();*/ ?>
 <?php get_footer(); ?>

@@ -15,4 +15,5 @@
 	<?php 
 		include('../../templates/includes/blog-footer.tpl'); 
                 
+                wp_footer();    
 	?>

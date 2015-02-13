@@ -43,61 +43,24 @@
     
     <script src="<?php echo getStaticUrl();?>/js/resize_images.js"></script>
 
+    <!-- jquery validate -->
+   <script src="<?php echo getStaticUrl();?>/js/jquery.validate.min.js"></script>
+    
+    <!-- jquery bpopUp -->
+    <script src="<?php echo getStaticUrl();?>/js/popup/jquery.bpopup.js"></script>
+
+    <!-- jquery plugins -->
+    <script src="<?php echo getStaticUrl();?>/js/jquery.cookie.js"></script>
+    <script src="<?php echo getStaticUrl();?>/js/jquery.ba-hashchange.min.js"></script>
+    <script src="<?php echo getStaticUrl();?>/js/jquery.total-storage.min.js"></script>
+     <!-- close/ out Windows -->
+    <script src="<?php echo getStaticUrl();?>/js/outWindows.js"></script>
+    
     <?php require_once '../../templates/includes/blog-analytics-header.tpl'; ?>
     
-<!-- style -->
-<?php /*
-<!--        <link href="css/bootstrap/bootstrap.css" media="all" type="text/css" rel="stylesheet" />-->
-<link href="http://mybootstrap.ru/wp-content/themes/clear-theme/styles/bootstrap.css" media="all" type="text/css" rel="stylesheet" />
-<link href="<?= get_template_directory_uri() ?>/css/iCheck/skins/dist1/dist1.css" media="all" type="text/css" rel="stylesheet" />
-
-<link href="<?= get_template_directory_uri() ?>/css/settings.css" type="text/css" rel="stylesheet" />
-<link href="<?= get_template_directory_uri() ?>/css/style.css" type="text/css" rel="stylesheet" /> 
- ?>
-
-<!-- js -->
-<script src="http://code.jquery.com/jquery-2.0.0.min.js" type="text/javascript"></script>
-<script src="<?= get_template_directory_uri() ?>/js/bootstrap/bootstrap.min.js" type="text/javascript"></script>
-
-<!-- iCheck -->
-<script src="<?= get_template_directory_uri() ?>/js/iCheck/icheck.js" type="text/javascript"></script>
-
-<!-- init -->
-<script src="<?= get_template_directory_uri() ?>/js/init.js" type="text/javascript"></script>
-
-<?php wp_head(); 
-*/ ?>
-
 </head>
 
 <body class="wp-blog">
-    
-    <?php /*  <?= wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav navbar-nav' ) ) ?> */ ?>
-    
-    <?php /*
-<div id="page" class="hfeed site">
-	<header id="masthead" class="site-header" role="banner">
-		<hgroup>
-			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-			<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
-		</hgroup>
-
-		<nav id="site-navigation" class="main-navigation" role="navigation">
-			<button class="menu-toggle"><?php _e( 'Menu', 'twentytwelve' ); ?></button>
-			<a class="assistive-text" href="#content" title="<?php esc_attr_e( 'Skip to content', 'twentytwelve' ); ?>"><?php _e( 'Skip to content', 'twentytwelve' ); ?></a>
-			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ) ); ?>
-		</nav><!-- #site-navigation -->
-
-	</header><!-- #masthead -->
-
-	<div id="main" class="wrapper">
-            */ ?>
-
-    
-    <?php 
-        // echo get_banners_align('top', (int)get_the_ID());
-    ?>
-
     
     <a href="#" class="go_up"></a>
     <div class="wrapper">

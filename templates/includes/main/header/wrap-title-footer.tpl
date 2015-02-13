@@ -32,6 +32,8 @@
 	<script src="{$js}/fancy_checkbox.js?{style_cache data='2015-02-05'}"></script>
         <script src="{$js}/main.js?{style_cache data='2015-02-05'}"></script>
         
+        <!-- jquery.handler.toolkit -->
+       <script src="{$js}/jquery.handler-toolkit.js?{style_cache data='2015-02-05'}"></script>
         <!-- resize -->
         <script src="{$js}/browser.js?{style_cache data='2015-02-05'}"></script>
         

@@ -4982,7 +4982,10 @@ div[id^="attachment_"], div[id*=" attachment_"] {
 
 /* =================== // fly buttons =============== */
 .fly-box-buttons {
-    display: none;
+/*    display: none;*/
+    display: block;
+    opacity: 0;
+    z-index: 99999;
 }
 
 .block-fly {

@@ -770,7 +770,7 @@ function smarty_function_features_plans( $_plans = array() ) {
     $smarty->force_compile = false;
     $smarty->debugging = false;
     
-    $smarty->setTemplateDir(dirname(dirname(__FILE__)).'/templates/includes'); // features-plans.tpl
+    $smarty->setTemplateDir(dirname(dirname(__FILE__)).'/templates/includes/content/'); // features-plans.tpl
     $smarty->setCacheDir(dirname(dirname(__FILE__)).'/cache/');
     $smarty->setCompileDir(dirname(dirname(__FILE__)).'/templates_c/');
     

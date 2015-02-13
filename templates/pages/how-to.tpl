@@ -1,13 +1,14 @@
 {strip}
-{include file='../includes/wrap-title-header.tpl'}
+{include file='../includes/main/main-header.tpl'
+    robots="no" 
+    title="Learn how to use Pumpic"
+    description="Pumpic is easy-to-use and quick-to-install Mobile Phone Monitoring Software. It will not take you long to get used to its functions and even much less to run the app. Find out more about how to use Pumpic."
+}
 
-	<title>Learn how to use Pumpic</title>
-	<meta name="description" content="Pumpic is easy-to-use and quick-to-install Mobile Phone Monitoring Software. It will not take you long to get used to its functions and even much less to run the app. Find out more about how to use Pumpic." />
-	
-{include file='../includes/wrap-title-footer.tpl'}
 <body>
-{include file='../includes/button-help.tpl'}
-{include file='../includes/button-goup.tpl'}
+    <!-- FLY BUTTON -->
+    {include file='../includes/main/main-button-help.tpl'}
+    {include file='../includes/main/main-button-goup.tpl'}
 	<div class="wrapper">
 	{include file='../includes/main/main-top-menu.tpl' 
                 topmenu_active='how-to'
@@ -26,7 +27,6 @@
 				<div class="row">
 					<h2>
                                             How Pumpic Mobile Tracking App Works
-                                            {*HOW PUMPIC MOBILE TRACKING APP WORKS*}
                                         </h2>
 					<ul class="thumbs">
 						<div class="col-sm-12 col-md-4">
@@ -99,9 +99,20 @@
 				</div>
 			</div>
 		</div>
-	{include file='../includes/footer.tpl'}
+                                
+                {include file='../includes/content/banners/banner-promo-trial.tpl'}                
+                <!-- FOOTER -->
+                {*
+                    Template: FOOTER
+                    Переменные:
+                        our_products (text): Включить выключить блок OUR PRODUCTS (no|yes). * - yes 
+                *}
+                {include file='../includes/main/main-footer.tpl' 
+                    our_products = "no"
+                }                
+                                
 	</div>
-	{include file='../includes/analytics-footer.tpl'}
+	{include file='../includes/main/main-analytics-footer.tpl'}
 </body>
 </html>
 {/strip}	

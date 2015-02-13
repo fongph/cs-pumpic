@@ -469,6 +469,43 @@ function getAjaxForm(path, params, options) {
 }
 
 /*
+ * JSONP
+ * 
+ */
+function _getAJAX( path, params, options ) {
+   if(!options) options = {};
+    
+    var settings = $.extend( {
+        'dataType': 'jsonp',
+        'jsonp': "callback",
+        'async': false,
+        'crossDomain': false,
+        'type': 'POST',
+        'cache': true
+    }, options || {});
+    
+    console.log( settings );
+    
+    if(!path) {
+        console.log('enter url AJAX!');
+        return null;
+    }   
+
+    return $.ajax({ 
+        type: settings.type,
+        async: settings.async,
+        url: path,
+        data: { 
+           params: params 
+        },
+        dataType: settings.dataType,
+        jsonp: settings.jsonp,
+        crossDomain: settings.crossDomain,
+        cache: settings.cache,
+    });
+}
+
+/*
  * 
  * @param {type} $_msg
  * @returns {undefined}
@@ -622,13 +659,6 @@ $(document).ready(function(){
    // compatibility tooltip in device
    if($('.mobile_tooltip').length) {
        $('.mobile_tooltip').easyTooltip();
-   }
-   
-   
-   // scroll (fly-box)
-   
-   if($('.fly-box').length) {
-       $('.fly-box').scrollPumpic({ 'start': 1000, 'stop': 0 }); //"coeff":1.15
    }
    
    // focus
@@ -1265,36 +1295,49 @@ $('form[name="send_find_phone"] button.event-submit').click(function(){
 
 
   
+  // scroll (fly-box)
+   if($('.fly-box').length) {
+        $('.fly-box').scrollPumpic({ 
+            'start': 1000, 
+            'stop': 0,
+            'animate': {
+                'type': 'visible', // fade, visible, blinking
+                'timeShow': 50,
+                'timeHide': 50
+            }
+        }); //"coeff":1.15
+   }
+  
   // fly block
   if($('.fly-box-buttons').length) {
-      // $.data(document, '_scrollButtons', 1000); // 1200px
       $(window).on('load resize', function() { 
-         // var _offcet = parseInt( $('.fly-position').offset().top );
-          if(typeof $.data(document, '_scrollButtons_'+$(this).width()) == "undefined") {
-              $.data(document, '_scrollButtons_'+$(this).width(), $('.fly-position').offset().top);
-          } 
+          var $offcetTop = Math.round( $('.fly-position').offset().top );
+          if(typeof $.data(document, '_scrollButtons_'+$(this).width()) == "undefined"
+                  || $.data(document, '_scrollButtons_'+$(this).width()) != $offcetTop) {
+              $.data(document, '_scrollButtons_'+$(this).width(), $offcetTop);
+          }
           
-//          if($(window).width() > 800) {
-//                $('.fly-box-buttons .block-fly').css({'margin-right': '300px'});
-//            } else {
-//                $('.fly-box-buttons .block-fly').css({'margin-right': '0px'});
-//            }
+          // console.log( $offcetTop, $.data(document, '_scrollButtons_'+$(this).width()) );
           
-          console.log( $.data(document, '_scrollButtons_'+$(this).width()) );
-          $('.fly-box-buttons').scrollPumpic({ 
-               '_objFly': '.block-fly',
-               'start': $.data(document, '_scrollButtons_'+$(this).width()), // $('.fly-position').offset().top
-               'stop': 0,
-               'right': 300,
-               '_settings': {
-                   '_responce': false,
-                   '_validate': false
-               },
-            }); //"coeff":1.15
-              // $.data(document, '_scrollButtons', _offcet);
-          
+          if( $.data(document, '_scrollButtons_'+$(this).width()) ) {
+              $('.fly-box-buttons').scrollPumpic({ 
+                   '_objFly': '.block-fly',
+                   'start': $.data(document, '_scrollButtons_'+$(this).width()),
+                   'stop': 0,
+                   'right': 300,
+                   '_settings': {
+                       '_responce': false,
+                       '_validate': false
+                   },
+                   'animate': {
+                        'type': 'blinking', // fade, visible, blinking
+                        'timeShow': 30,
+                        'timeHide': 50
+                    }
+                }); //"coeff":1.15
+          }
           
       });      
    }
    
-});
+}); // K:Lewd33(W2!sd3

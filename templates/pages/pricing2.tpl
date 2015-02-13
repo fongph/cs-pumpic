@@ -1,17 +1,16 @@
 {*Order out="getProducts"*}
 {*formOrder post=$smarty.post*}
 
-{include file='../includes/wrap-title-header.tpl'}
+{include file='../includes/main/main-header.tpl'
+    robots="no" 
+    title="Pumpic Prices and Subscription Plans"
+    description="Pumpic offers high-quality Cell Phone Tracking Software for a good price. Find out more about a price range and subscription plan types to choose the one suitable for your monitoring needs."
+}
 
-<title>
-    Pumpic Prices and Subscription Plans
-</title>
-<meta name="description" content="Pumpic offers high-quality Cell Phone Tracking Software for a good price. Find out more about a price range and subscription plan types to choose the one suitable for your monitoring needs." />
-
-{include file='../includes/wrap-title-footer.tpl'}
 <body>
-    {include file='../includes/button-help.tpl'}
-    {include file='../includes/button-goup.tpl'}
+    <!-- FLY BUTTON -->
+    {include file='../includes/main/main-button-help.tpl'}
+    {include file='../includes/main/main-button-goup.tpl'}
     <div class="wrapper">
         {include file='../includes/main/main-top-menu.tpl' 
                 topmenu_active='pricing'
@@ -356,7 +355,15 @@
             </div>
             <!-- block upgrade include-->
         </div>
-        {include file='../includes/footer.tpl'}
+        <!-- FOOTER -->
+        {*
+            Template: FOOTER
+            Переменные:
+                our_products (text): Включить выключить блок OUR PRODUCTS (no|yes). * - yes 
+        *}
+        {include file='../includes/main/main-footer.tpl' 
+            our_products = "no"
+        }
     </div>
     <script type="text/javascript">
     {literal}
@@ -374,7 +381,7 @@
     });
     {/literal}
     </script>
-    {include file='../includes/analytics-footer.tpl'}
+    {include file='../includes/main/main-analytics-footer.tpl'}
     
 </body>
 </html>

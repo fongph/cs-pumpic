@@ -5,8 +5,8 @@
  * @link http://codex.wordpress.org/Template_Hierarchy
  *
  * @package WordPress
- * @subpackage Twenty_Twelve
- * @since Twenty Twelve 1.0
+ * @subpackage Pumpic
+ * @since Pumpic 1.0
  */
 
 get_header(); ?>
@@ -77,7 +77,7 @@ endif;
 								/**
  								 * Filter the image attachment size to use.
 								 *
-								 * @since Twenty Twelve 1.0
+								 * @since Pumpic 1.0
 								 *
 								 * @param array $size {
 								 *     @type int The attachment height in pixels.

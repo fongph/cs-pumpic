@@ -52,9 +52,12 @@
                         
                         <div class="feature_list">
                             <?php // get_sidebar(); ?>
-                            <?php if ( is_active_sidebar( 'sidebar-7' ) ) : ?>
+                            <div id="secondary" class="widget-area" role="complementary">
+                                <?php get_sidebar('main'); ?>
+                            </div>    
+                            <?php /* if ( is_active_sidebar( 'sidebar-7' ) ) : ?>
                                     <?php dynamic_sidebar( 'sidebar-7' ); ?>
-                            <?php endif; ?>
+                            <?php endif; */ ?>
                         </div>
                     </div>
                 </div> <!-- .row -->

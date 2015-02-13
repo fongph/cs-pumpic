@@ -19,7 +19,7 @@
     </div>
     {/if}
 {/nocache}  
-
+    {*
     <div id="box-email" class="popUp">
         <div>
             <label class="title gold"> <b>10%</b> off<i class="close small"></i></label>   
@@ -38,7 +38,7 @@
                 </div>
             </form>
         </div>
-    </div>
+    </div> *}
 
     <div id="box-email-success" class="popUp">
         <div>

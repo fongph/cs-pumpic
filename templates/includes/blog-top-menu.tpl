@@ -37,15 +37,21 @@
 									<li>
 										<a href="<?php echo getStaticUrl();?>/store.html">Store</a>
 									</li>
+                                                                        
 									<li>
 										<a href="<?php echo getStaticUrl();?>/features.html">Features</a>
-									</li>
-									<li>
+									</li> 
+									<?php /*<li>
 										<a href="<?php echo getStaticUrl();?>/how-to.html">How to</a>
-									</li>
+									</li>  */ ?>
 									<li>
 										<a href="<?php echo getStaticUrl();?>/faq.html">FAQ</a>
 									</li>
+                                                                        
+                                                                        <li>
+                                                                            <a href="http://demo.pumpic.com/">Demo</a>
+                                                                        </li>
+                                                                        
 									<!--li>
 										<a href="http://demo.{$domain}">Demo</a>
 									</li-->

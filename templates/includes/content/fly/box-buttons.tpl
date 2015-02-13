@@ -1,4 +1,4 @@
-<div class="fly-position">
+{*<div class="fly-position">
     <div class="fly-box-buttons">
 
         <div class="block-fly block-buttons-fixed">
@@ -52,4 +52,4 @@
         </div>
 
     </div>
-</div>
+</div> *}

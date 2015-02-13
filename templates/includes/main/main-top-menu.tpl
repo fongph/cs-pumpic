@@ -43,12 +43,18 @@
                             <li {if $topmenu_active=='features'} class="active"{/if}>
                                 <a href="/features.html">Features</a>
                             </li>
-                            <li {if $topmenu_active=='how-to'} class="active"{/if}>
+                            
+                            {*<li {if $topmenu_active=='how-to'} class="active"{/if}>
                                 <a href="/how-to.html">How to</a>
-                            </li>
+                            </li>*}
                             <li {if $topmenu_active=='faq'} class="active"{/if}>
                                 <a href="/faq.html">FAQ</a>
                             </li>
+                            
+                            <li>
+                                <a href="http://demo.{$domain}/">Demo</a>
+                            </li>
+                            
                             <!--li>
                                     <a href="http://demo.{$domain}">Demo</a>
                             </li-->

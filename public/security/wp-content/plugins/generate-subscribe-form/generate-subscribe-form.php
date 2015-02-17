@@ -38,6 +38,7 @@ class generate_subscribe_form_widget extends WP_Widget
 	function update( $new_instance, $old_instance ){
 		$instance = $old_instance;
 		$instance['title'] = stripslashes( $new_instance['title'] );
+                $instance['button_text'] = stripslashes( $new_instance['button_text'] );
 		$instance['description'] = strip_tags( stripslashes( $new_instance['description'] ) );
                 $instance['img'] = strip_tags( trim($new_instance['img']) );
                 $instance['show_img'] = strip_tags( trim($new_instance['show_img']) );
@@ -49,6 +50,7 @@ class generate_subscribe_form_widget extends WP_Widget
 
 	function form( $instance ){
 		$instance = wp_parse_args( ( array ) $instance, array( 'title'=>'Popular Posts', 
+                                                                        'button_text' => 'Subscribe for free',
                                                                         'description' => '',
                                                                         'img'   => '',
                                                                         'show_img'  => 'true',
@@ -58,22 +60,35 @@ class generate_subscribe_form_widget extends WP_Widget
                                                                       ) );
 
 		$title = htmlspecialchars( $instance['title'] );
+                $button_text = htmlspecialchars( $instance['button_text'] );
 		$description = htmlspecialchars( $instance['description'] );
                 $img = htmlspecialchars( $instance['img'] );
+                $show_img = htmlspecialchars( $instance['show_img'] );
                 $link = htmlspecialchars( $instance['link'] );
                 $id_input = htmlspecialchars( $instance['id_input'] );
                 $type_form = htmlspecialchars( $instance['type_form'] );
                 
                 $type_form_option = '';
+                $show_img_option = '';
                 
                 if ( $type_form == "dark" ) {$type_form_option .= "<option value='dark' selected >Dark</option>";} else {$type_form_option .= "<option value='dark'>Dark</option>";}
 		if ( $type_form == "light" ) {$type_form_option .= "<option value='light' selected >Light</option>";} else {$type_form_option .= "<option value='light'>Light</option>";}
 
-                
+                if ( $show_img == "true" ) {$show_img_option .= "<option value='true' selected >On</option>";} else {$show_img_option .= "<option value='true'>On</option>";}
+		if ( $show_img == "false" ) {$show_img_option .= "<option value='false' selected >Off</option>";} else {$show_img_option .= "<option value='false'>Off</option>";}
+
 		# Output the options
 
                 echo '	<p style="text-align:left;"><label for="' . $this->get_field_name( 'type_form' ) . '">' . __( 'Style Form:' ) . '</label><br />
 				<select id="' . $this->get_field_id( 'type_form' ) . '" name="' . $this->get_field_name( 'type_form' ) . '">'.$type_form_option.'</select>
+				</p>';
+                
+                echo '	<p style="text-align:left;"><label for="' . $this->get_field_name( 'show_img' ) . '">' . __( 'Show Img:' ) . '</label><br />
+				<select id="' . $this->get_field_id( 'show_img' ) . '" name="' . $this->get_field_name( 'show_img' ) . '">'.$show_img_option.'</select>
+				</p>';
+                
+                 echo '	<p style="text-align:left;"><label for="' . $this->get_field_name( 'button_text' ) . '">' . __( 'Button Text:' ) . '</label><br />
+				<input style="width: 300px;" id="' . $this->get_field_id( 'button_text' ) . '" name="' . $this->get_field_name( 'button_text' ) . '" type="text" value="' . $button_text . '" />
 				</p>';
                 
                 echo '	<p style="text-align:left;"><label for="' . $this->get_field_name( 'id_input' ) . '">' . __( 'ID INPUT( MailChimp Form ):' ) . '</label><br />
@@ -102,7 +117,8 @@ class generate_subscribe_form_widget extends WP_Widget
 	/*  Displays the Widget */
 	function widget( $args, $instance ){
 		extract( $args );
-		$instance = wp_parse_args( ( array ) $instance, array( 'title'=>'Popular Posts', 
+		$instance = wp_parse_args( ( array ) $instance, array( 'title'=>'Popular Posts',
+                                                'button_text' => 'Subscribe for free',
                                                 'description' => '',
                                                 'img' => '',
                                                 'show_img' => 'true',
@@ -112,6 +128,17 @@ class generate_subscribe_form_widget extends WP_Widget
                                             ) );
 
                
+                $_block_img = '';
+                $_text_class = 'col-s-sm-12 col-sm-12 col-md-12 col-lg-12';
+                $_button_class = ($instance['type_form'] == 'dark') ? 'btn-green' : 'btn-border-green';
+                
+                if($instance['show_img'] == 'true') {
+                    $_block_img = '<div class="col-s-sm-12 col-sm-3 col-md-3 col-lg-3">
+                                            <img class="image" src="'.$instance['img'].'" alt="" />
+                                        </div>';
+                    $_text_class = 'col-s-sm-12 col-sm-9 col-md-9 col-lg-9';
+                }
+                
 		# Before the widget
 		echo $before_widget;
                 $html = '<div class="box-form-subscribe '.$instance['type_form'].'">
@@ -119,20 +146,18 @@ class generate_subscribe_form_widget extends WP_Widget
                                 <form method="POST" action="'.$instance['link'].'" name="subscribe-'.get_the_ID().'">
 
                                     <div class="row">
-                                        <div class="col-s-sm-12 col-sm-3 col-md-3 col-lg-3">
-                                            <img class="image" src="'.$instance['img'].'" alt="" />
-                                        </div>
-                                        <div class="col-s-sm-12 col-sm-9 col-md-9 col-lg-9">
+                                        '.$_block_img.'
+                                        <div class="'.$_text_class.'">
                                             <div class="visual-text">
                                                 <label class="title uppercase">'.$instance['title'].'</label>
                                                 <p class="description">'.$instance['description'].'</p>
                                                 <section>
-                                                    <div class="block-input left">
-                                                        <input type="text" class="email required" name="'.$instance['id_input'].'" value="" placeholder="Your email" />
-                                                    </div>
-                                                    <div class="block-button left">
-                                                        <button class="btn-green" name="submit">Subscribe for free</button>
-                                                    </div>    
+                                                        <div class="block-input left">
+                                                            <input type="text" class="email required" name="'.$instance['id_input'].'" value="" placeholder="Your email" />
+                                                        </div>
+                                                        <div class="block-button left">
+                                                            <button class="'.$_button_class.'" name="submit">'.$instance['button_text'].'</button>
+                                                        </div>
                                                 </section>
                                                 <label class="block-error"></label>
                                             </div>    

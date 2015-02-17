@@ -238,3 +238,148 @@ i.bg-small-logo {
     }
     
 }
+
+/* ------------ // light ------------ */
+.box-form-subscribe.light:after {
+    border: 1px solid #d0d0d0;
+}
+
+.box-form-subscribe.light {
+    background: #fff;
+    border: 1px solid #252525;
+    
+    border-radius: 10px 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+}
+
+.box-form-subscribe.light .visual-text {
+    display: block;
+    text-align: center;
+}
+
+.box-form-subscribe.light .visual-text label.title,
+.box-form-subscribe.light .visual-text .description {
+
+}
+
+.box-form-subscribe.light .visual-text label.title {
+    color: #ff2e6c;
+}
+
+.box-form-subscribe.light .visual-text .description {
+    color: #1a8fff;
+}
+
+.box-form-subscribe.light .visual-text label.title, 
+.box-form-subscribe.light .visual-text .description,
+.box-form-subscribe.light .visual-text section button.btn-border-green {
+    text-shadow: 0px 3px 2px #bbbbbb;
+  -webkit-box-shadow: 0px 4px 6px #bbbbbb;
+  -moz-box-shadow: 0px 4px 6px #bbbbbb;
+}
+
+.box-form-subscribe.light .visual-text section .block-input {
+    display: block;
+    z-index: 10;
+    position: relative;
+}
+
+.box-form-subscribe.light .visual-text section input {
+    background: #fff;
+    border:8px solid #1a8fff;
+    color: #000000;
+    margin-right: 0px;
+    padding-right: 44px !important;
+    width: 100%;
+}
+
+.box-form-subscribe.light .visual-text section .block-button {
+    display: block;
+    z-index: 11;
+    left: -44px;
+    position: relative;
+}
+
+.box-form-subscribe.light .visual-text section button.btn-border-green {
+   
+    display: block;
+    background: #fff;
+    border: 8px solid #00e700;
+    color: #00e700;
+    width: 100%;
+}
+
+.box-form-subscribe.light .visual-text section input,
+.box-form-subscribe.light .visual-text section button.btn-border-green {
+    font-size: 13px;
+    line-height: 13px;
+    height: 53px;
+    padding: 12px 13px;
+    border-radius: 20px 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+}
+
+.box-form-subscribe.light .block-error {
+    color: #000;
+    position: relative;
+    width: 100%;
+}
+
+@media only screen and (max-width: 480px) {
+    .box-form-subscribe.light .visual-text section .block-input,
+    .box-form-subscribe.light .visual-text section .block-button {
+        float: none;
+    }
+    .box-form-subscribe.light .visual-text section .block-button {
+        margin-top: 10px;
+        left: 0px;
+    }
+}
+@media (min-width: 468px) {
+    .box-form-subscribe.light .visual-text section .block-input,
+    .box-form-subscribe.light .visual-text section .block-button {
+        float: none;
+    }
+    
+    .box-form-subscribe.light .visual-text section .block-button {
+        margin-top: 10px;
+        left: 0px;
+    }
+}    
+@media (min-width: 768px) {
+    .box-form-subscribe.light .visual-text section .block-input,
+    .box-form-subscribe.light .visual-text section .block-button {
+        float: left;
+    }
+    
+    .box-form-subscribe.light .visual-text section .block-button {
+        margin-top: 0px;
+        left: -44px;
+    }    
+}
+
+@media (min-width: 992px) {
+    .box-form-subscribe.light .visual-text section .block-input,
+    .box-form-subscribe.light .visual-text section .block-button {
+        float: left;
+    }
+    
+    .box-form-subscribe.light .visual-text section .block-button {
+        margin-top: 0px;
+        left: -44px;
+    }
+}
+
+@media (min-width: 1200px) { 
+    .box-form-subscribe.light .visual-text section .block-input,
+    .box-form-subscribe.light .visual-text section .block-button {
+        float: left;
+    }
+    
+   .box-form-subscribe.light .visual-text section .block-button {
+       margin-top: 0px;
+        left: -44px;
+    }
+}

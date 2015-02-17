@@ -26,7 +26,7 @@
             title = "Sms Monitoring<br /> Parental Control App"
             description = "Keep your children safe with Pumpic.<br />
 View your kid’s text message history remotely."
-            trial = "yes"
+            trial = "no"
         }
         
          {include file='../includes/content/plans.tpl' }
@@ -90,7 +90,9 @@ Buy Pumpic to protect your kids and view their SMS right now."
         }  
 
         {*include file='../includes/content/banner-promo.tpl'*}
-        {include file='../includes/content/banners/banner-promo-trial.tpl'}
+        {*{include file='../includes/content/banners/banner-promo-trial.tpl'}*}
+        
+        {include file='../includes/content/banners/index.tpl'}
         <!-- END CONTENT -->    
            
         

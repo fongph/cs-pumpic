@@ -107,7 +107,9 @@
 		</div>
 		{*include file='../includes/main/main-footer-promo.tpl' 
                         labelButton="contacts-now"*}
-                {include file='../includes/content/banners/banner-promo-trial.tpl'}        
+                {*{include file='../includes/content/banners/banner-promo-trial.tpl'}*}
+                
+                {include file='../includes/content/banners/index.tpl'}
                 
                 <!-- FOOTER -->
                 {*

@@ -1,7 +1,7 @@
 {include file='../includes/main/main-header.tpl'
     robots="yes" 
     title="Mobile Parental Control App for Children"
-    description="Keep your children safe and secured with Pumpic. Track location. View calls and SMS. Follow online activity."
+    description="Keep your family safe and secured with Pumpic. Track location. View calls and SMS. Follow online activity."
 }    
     
 <body>
@@ -25,12 +25,12 @@
             imgAlt = "Landing Mobile"
             imgAlign = "left bottom"
             textAlign = "left"
-            title = "Cell Phone <br />Parental Control App"
-            description = "Keep your children safe and secured with Pumpic. <br />
+            title = "Cell Phone <br />Monitoring Control App"
+            description = "Keep your family safe and secured with Pumpic. <br />
                            Track location. View calls and SMS. Follow online activity."
             
 
-            trial = "yes"
+            trial = "no"
         }
         
         {include file='../includes/content/plans.tpl'}
@@ -43,7 +43,7 @@
             buttonFreeTrial = 'yes'
         }
         
-        {include file='../includes/content/secures.tpl'}
+        {include file='../includes/content/secures-mobile-phones-monitoring.tpl'}
         
         
         
@@ -58,7 +58,7 @@
                 title = "Easy-to-Use Control Panel"
                 textAlign = "left"
                 description = "Try Control Panel demo to see Pumpic app in use.
-                               <br />Buy Pumpic to protect your kids and secure their happiness right now."
+                               <br />Buy Pumpic to protect your family and secure your happiness right now."
         }
         
         {include file='../includes/main/main-testimonials.tpl'
@@ -74,7 +74,9 @@
             blockBg="dark"
         }        
         
-        {include file='../includes/content/banners/banner-promo-trial.tpl'}
+        {*{include file='../includes/content/banners/banner-promo-trial.tpl'}*}
+        
+        {include file='../includes/content/banners/index.tpl'}
         <!-- END CONTENT -->    
            
         <!-- FOOTER -->

@@ -51,8 +51,12 @@
             Переменные:
                 title (text): промо текст.
         *}
-        {include file='../includes/content/banner-promo.tpl'
+        {*{include file='../includes/content/banner-promo.tpl'
                 title = "Keep your <span>family safe</span>"
+        }*}
+        
+        {include file='../includes/content/banners/index.tpl'
+            title = "Keep your <span>family safe</span>"
         }
         <!-- END CONTENT -->    
            

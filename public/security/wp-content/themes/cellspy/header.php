@@ -42,7 +42,7 @@
     <script src="<?php echo getStaticUrl();?>/js/main.js"></script>
     
     <script src="<?php echo getStaticUrl();?>/js/resize_images.js"></script>
-
+    
     <!-- jquery validate -->
    <script src="<?php echo getStaticUrl();?>/js/jquery.validate.min.js"></script>
     
@@ -55,6 +55,9 @@
     <script src="<?php echo getStaticUrl();?>/js/jquery.total-storage.min.js"></script>
      <!-- close/ out Windows -->
     <script src="<?php echo getStaticUrl();?>/js/outWindows.js"></script>
+    
+    <script src="<?php echo getStaticUrl();?>/js/wp/settings.js"></script>
+    <script src="<?php echo getStaticUrl();?>/js/wp/init.js"></script>
     
     <?php require_once '../../templates/includes/blog-analytics-header.tpl'; ?>
     

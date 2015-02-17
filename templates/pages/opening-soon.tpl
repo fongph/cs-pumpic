@@ -153,7 +153,9 @@
                 } 
                 
 		{*include file='../includes/main/main-footer-promo.tpl'*}
-                {include file='../includes/content/banners/banner-promo-trial.tpl'}
+                {*{include file='../includes/content/banners/banner-promo-trial.tpl'}*}
+                
+                {include file='../includes/content/banners/index.tpl'}
 		<!-- FOOTER -->
                 {*
                     Template: FOOTER

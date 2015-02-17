@@ -28,7 +28,7 @@
             title = "Calls Monitoring <br />Parental Control App"
             description = "Pumpic protects your kids from misgiving callers.
             <br /> View incoming and outgoing phone calls remotely."
-            trial = "yes"
+            trial = "no"
         }
         
          {include file='../includes/content/plans.tpl' }
@@ -58,7 +58,7 @@
                 blockBg="dark"
         } 
 
-        {include file='../includes/landing_features/main-secures-call-monitoring.tpl' 
+        {include file='../includes/content/secures-call-monitoring.tpl' 
             blockBg="light"
         }                                
 
@@ -68,7 +68,9 @@
         }  
 
         {*include file='../includes/content/banner-promo.tpl'*}
-        {include file='../includes/content/banners/banner-promo-trial.tpl'}
+        {*{include file='../includes/content/banners/banner-promo-trial.tpl'}*}
+        
+        {include file='../includes/content/banners/index.tpl'}
         <!-- END CONTENT -->    
            
         <!-- FOOTER -->

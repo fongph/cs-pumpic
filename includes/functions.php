@@ -414,7 +414,7 @@ function smarty_function_features_plans( $_plans = array() ) {
             'device'  => array(
                 'apple'      => ['status' => true, 'version' => '6.0 - 8.1.2'], // 3.1.3 - 7.1.1
                 'android'    => ['status' => true, 'version' => '2.2 - 5.0'], // 2.2 - 4.4
-                'blackberry' => ['status' => true, 'version' => '1.0 - 7.1']
+                'blackberry' => ['status' => false, 'version' => '1.0 - 7.1']
             ),
             'plans' => array(
                 'basic'     => ['status' => true, 'price' => '3 month - $3.33/month', 'url' => '/store.html'],
@@ -433,7 +433,7 @@ function smarty_function_features_plans( $_plans = array() ) {
             'device'  => array(
                 'apple'      => ['status' => true, 'version' => '6.0 - 8.1.2'], // 3.1.3 - 7.1.1
                 'android'    => ['status' => true, 'version' => '2.2 - 5.0'], // 2.2 - 4.4
-                'blackberry' => ['status' => true, 'version' => '1.0 - 7.1']
+                'blackberry' => ['status' => false, 'version' => '1.0 - 7.1']
             ),
             'plans' => array(
                 'basic'     => ['status' => true, 'price' => '3 month - $3.33/month', 'url' => '/store.html'],
@@ -471,7 +471,7 @@ function smarty_function_features_plans( $_plans = array() ) {
             'device'  => array(
                 'apple'      => ['status' => true, 'version' => '6.0 - 8.1.2'],
                 'android'    => ['status' => true, 'version' => '2.2 - 5.0'],
-                'blackberry' => ['status' => true, 'version' => '1.0 - 7.1']
+                'blackberry' => ['status' => false, 'version' => '1.0 - 7.1']
             ),
             'plans' => array(
                 'basic'     => ['status' => true, 'price' => '3 month - $3.33/month', 'url' => '/store.html'],

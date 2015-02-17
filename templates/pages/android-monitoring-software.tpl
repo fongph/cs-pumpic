@@ -27,7 +27,8 @@
             title = "Android Parental<br /> Control App"
             description = "Pumpic takes care of your children safety.        
                            <br />Track your kids’ Android device remotely."
-            trial = "yes"               
+            trial = "no"
+            listText = "Follow Calls and SMS|Track GPS location|Monitor online activity"
         }
         {*  listText = "Follow Calls and SMS|Track GPS location|Monitor online activity" *}
         
@@ -64,7 +65,10 @@
 
 
         {*include file='../includes/content/banner-promo.tpl'*}
-        {include file='../includes/content/banners/banner-promo-trial.tpl'}
+        {*include file='../includes/content/banners/banner-promo-trial.tpl'*}
+        
+        {include file='../includes/content/banners/index.tpl'}
+        
         <!-- END CONTENT -->    
            
         <!-- FOOTER -->

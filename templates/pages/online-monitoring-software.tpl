@@ -24,10 +24,11 @@
             imgAlt = "online mobile monitoring"
             imgAlign = "right"
             textAlign = "right"
-            title = "Smartphone Online Monitoring App"
-            description = "Pumpic helps to track cell pone activity.<br/>
+            title = "Remote Smartphone Monitoring App"
+            description = "Pumpic helps to track cell phone activity.<br/>
 Monitor mobile device remotely with Pumpic."
-            trial = "yes"
+            trial = "no"
+            listText = "Follow Calls and SMS|Track GPS location|Monitor online activity"
         }
         {*listText = "Follow Calls and SMS|Track GPS location|Monitor online activity"*}
         
@@ -43,7 +44,7 @@ Monitor mobile device remotely with Pumpic."
         
 <div class="{if $blockBg}{$blockBg}{else}dark{/if}">
         <div class="container">
-                <h2 class="text-center">What You Get with Pumpic</h2>
+                <h2 class="text-center">Apple and Android Mobile Phones Monitoring</h2>
                 <div class="row">
                         <div class="col-sm-4 col-md-4 col-lg-4">
                                 <div class="feature">
@@ -51,7 +52,7 @@ Monitor mobile device remotely with Pumpic."
                                         <h3>Monitor cell phone usage</h3>
                                         <ul class="feature_list">
                                                 <li>Track in and outbound calls</li>
-                                                <li>Follow and block SMS</li>
+                                                <li>Monitor and block SMS</li>
                                                 <li>Track contacts and calendar</li>
                                         </ul>
                                 </div>
@@ -59,11 +60,11 @@ Monitor mobile device remotely with Pumpic."
                         <div class="col-sm-4 col-md-4 col-lg-4">
                                 <div class="feature">
                                         <img src="{$img}/icons/icon-online-activity.png" alt="">
-                                        <h3>Follow online activity</h3>
+                                        <h3>Monitor online activity</h3>
                                         <ul class="feature_list">
                                                 <li>Monitor browsing history</li>
                                                 <li>Block websites and applications</li>
-                                                <li>Follow social media and chats </li>
+                                                <li>Monitor social media and chats </li>
                                         </ul>
                                 </div>
                         </div>
@@ -81,41 +82,12 @@ Monitor mobile device remotely with Pumpic."
                 </div>
         </div>
 </div>
-        {include file='../includes/content/ipad.tpl' 
-                blockBg="light"
-                imgUrl = "parental_control/ipad.png"
-                imgAlt = "Cell phone monitoring"
-                title = "Easy-to-Use Control Panel"
-                description = "Try Control Panel demo to see Pumpic mobile monitoring app in use.
-                               <br/>Buy Pumpic to keep track of the target device remotely."
-
-        }
-<div class="{if $blockBg}{$blockBg}{else}dark{/if}">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-10 col-md-10 col-lg-10 col-sm-offset-1 col-md-offset-1 col-lg-offset-1 gutter-wide">
-                <h2 class="text-center">Why Pumpic</h2>
-                <div class="row">
-                    <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
-                        <h3 class="text-center"><img src="{$img}/icons/icon-easy-to-use.png" alt=""> Easy to use</h3>
-                        <p class="text-center">Pumpic is feature-rich mobile monitoring software, which will help you track and control the target device remotely. Follow calls, SMS, online activity, location and even more. <br/><br/>The service is user-friendly and does not require any technical skills.</p>
-                    </div>
-                    <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
-                        <h3 class="text-center"><img src="{$img}/icons/ico-easy-to-install.png" alt=""> Easy to install</h3>
-                        <p class="text-center">Follow the guidelines and start remote monitoring from your Control Panel right after the set up. Get physical access to the target device and install the app. <br/><br/>Note that jailbreak is required for iOS devices. </p>
-                    </div>
-                    <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
-                        <h3 class="text-center"><img src="{$img}/icons/ico-easy-to-contact.png" alt=""> Easy to contact</h3>
-                        <p class="text-center">Pumpic mobile phone tracking app makes monitoring process more than simple. Enter your Control Panel and see all the data from the target device in a readable form. <br/><br/>Feel free to contact our Support Team at any time, for any reason.</p>
-                    </div>
-                </div>
-            </div>
-        </div> 
-
-    </div>
-
-</div>
- 		<div class="{if $blockBg}{$blockBg}{else}light{/if}">
+     
+{include file='../includes/content/features-table.tpl' 
+        blockBg="light"
+}                                        
+{*                                        
+<div class="{if $blockBg}{$blockBg}{else}light{/if}">
         <div class="container">
                 <h2 class="text-center">Pumpic Features</h2>
                 <div class="row">
@@ -158,7 +130,44 @@ Monitor mobile device remotely with Pumpic."
                     
                 </div>
         </div>
+</div> *}                                    
+   
+                                        
+        {include file='../includes/content/ipad.tpl' 
+                blockBg="dark"
+                imgUrl = "parental_control/ipad.png"
+                imgAlt = "Cell phone monitoring"
+                title = "Easy-to-Use Control Panel"
+                description = "Try Control Panel demo to see Pumpic mobile monitoring app in use.
+                               <br/>Buy Pumpic to keep track of the target device remotely."
+
+        }
+<div class="{if $blockBg}{$blockBg}{else}light{/if}">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-10 col-md-10 col-lg-10 col-sm-offset-1 col-md-offset-1 col-lg-offset-1 gutter-wide">
+                <h2 class="text-center">Why Pumpic</h2>
+                <div class="row">
+                    <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
+                        <h3 class="text-center"><img src="{$img}/icons/icon-easy-to-use.png" alt=""> Easy to use</h3>
+                        <p class="text-center">Pumpic is feature-rich mobile monitoring software, which will help you track and control the target device remotely. Follow calls, SMS, online activity, location and even more. <br/><br/>The service is user-friendly and does not require any technical skills.</p>
+                    </div>
+                    <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
+                        <h3 class="text-center"><img src="{$img}/icons/ico-easy-to-install.png" alt=""> Easy to install</h3>
+                        <p class="text-center">Follow the guidelines and start remote monitoring from your Control Panel right after the set up. Get physical access to the target device and install the app. <br/><br/>Note that jailbreak is required for iOS devices. </p>
+                    </div>
+                    <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
+                        <h3 class="text-center"><img src="{$img}/icons/ico-easy-to-contact.png" alt=""> Easy to contact</h3>
+                        <p class="text-center">Pumpic mobile phone tracking app makes monitoring process more than simple. Enter your Control Panel and see all the data from the target device in a readable form. <br/><br/>Feel free to contact our Support Team at any time, for any reason.</p>
+                    </div>
+                </div>
+            </div>
+        </div> 
+
+    </div>
+
 </div>
+ 		
  {include file='../includes/prevent-online-dangers/how-pumpic.tpl' 
              blockBg="dark"
         }
@@ -198,7 +207,9 @@ Monitor mobile device remotely with Pumpic."
             sloganSecond="Keep Your Eyes Open"
             bannerImg="image_banners_3.png"
         *}
-        {include file='../includes/content/banners/banner-promo-trial.tpl'}
+        {*{include file='../includes/content/banners/banner-promo-trial.tpl'}*}
+        
+        {include file='../includes/content/banners/index.tpl'}
         <!-- END CONTENT -->    
            
         <!-- FOOTER -->

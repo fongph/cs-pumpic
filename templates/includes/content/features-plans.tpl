@@ -1,18 +1,20 @@
 <div class="row box-body-filters" attr-use-plan="{$item_plan}">
-    <div class="col-lg-5 col-md-5 box-first">
-        <div id="{$_id}" class="dtd w30p" {*if $_id == 'viber-whatsapp-skype'} style="width: 30.3333% !important;" {/if*} >{$title}</div> {* 16% *}
+    <div class="col-lg-5 col-md-5 box-first clearfix">
+        <div class='box-bg-width'>
+        
+        <div id="{$_id}" class="dtd {*col-sm-4 col-md-4 col-lg-4*} w30p" {*if $_id == 'viber-whatsapp-skype'} style="width: 30.3333% !important;" {/if*} >{$title}</div> {* 16% *}
         <!-- dtd -->
-        <div class="dtd box-filter-mobile w13p">
+        <div class="dtd box-filter-mobile {*col-sm-1 col-md-1 col-lg-1*} w13p">
             {foreach from=$device key=k item=v}
                 {if $v.status == true}
                     <i class="icon-{$k} {if $v.status == true} supported {/if}"></i>
                 {else}
-                    <li class="mobile-icon-none">&nbsp;</li>
+                    {*<li class="mobile-icon-none">&nbsp;</li>*}
                 {/if}    
             {/foreach}    
         </div>
         <!-- dtd -->
-        <div class="dtd w16p">
+        <div class="dtd {*col-sm-2 col-md-2 col-lg-2*} w16p">
             <strong>
                 {foreach from=$plans key=type item=value name=plans}
                     {if $value.status == true}
@@ -27,6 +29,8 @@
                 {/foreach}
             </strong>
         </div>
+            
+        </div>    
         <!-- dtd -->
         <div class="popover">
             <div class="row">

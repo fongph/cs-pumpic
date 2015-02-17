@@ -26,7 +26,7 @@
             title = "Prevent Online Dangers. <br />Pumpic Monitoring App."
             description = "Protect your kids before it is too late. <br />
             Track location. View calls and SMS. Monitor online activity."
-            trial = "yes"
+            trial = "no"
         }
         
         {include file='../includes/content/plans.tpl' }
@@ -82,7 +82,9 @@
             sloganSecond="Secure Kids’ Happiness"
             bannerImg="image_banners_2.png"
         *}
-        {include file='../includes/content/banners/banner-promo-trial.tpl'}
+        {*{include file='../includes/content/banners/banner-promo-trial.tpl'}*}
+        
+        {include file='../includes/content/banners/index.tpl'}
         <!-- END CONTENT -->    
         
         <!-- FOOTER -->

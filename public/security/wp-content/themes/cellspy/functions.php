@@ -491,7 +491,18 @@ function cellspy_widgets_init() {
 		'after_title' => '</h3>',
 	) );
         
+        // mailChimp subscribe
+        register_sidebar( array(
+		'name' => __( 'Subscribe mailChimp', 'cellspy' ),
+		'id' => 'sidebar-subscribe',
+		'description' => __( 'MailChimp subscribe ', 'cellspy' ),
+		'before_widget' => '<div id="%1$s" class="box-sidebar-subscribe sidebar-subscribe-type sidebar-subscribe-item %2$s">',
+		'after_widget' => '</div>', // </aside>
+		'before_title' => '',
+		'after_title' => '',
+            ) );
         
+        /*
         // genarated sidevar all pages
         $pages = get_pages_list();
         
@@ -505,7 +516,7 @@ function cellspy_widgets_init() {
 		'before_title' => '',
 		'after_title' => '',
             ) );
-        endforeach;
+        endforeach; */
         
         
         

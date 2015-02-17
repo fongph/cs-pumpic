@@ -1996,10 +1996,10 @@ textarea {
 .dbody .row > *:first-child {
   cursor: pointer;
 }
-.dbody .row > *:first-child:hover .dtd {
+/*.dbody .row > *:first-child:hover .dtd {
   background: #16a89e;
   color: #fff;
-}
+}*/
 .dbody .row > *:first-child:hover .dtd i {
   opacity: .8;
 }
@@ -2014,7 +2014,7 @@ textarea {
 }
 .dbody .row > *:first-child .dtd {
   color: #bababa;
-  border-top: 1px solid #e4e4e4;
+/*  border-top: 1px solid #e4e4e4;*/
 }
 .dbody .row > *:first-child .dtd:first-child {
   color: #747474;
@@ -2033,10 +2033,10 @@ textarea {
   border-radius: 50%;
   margin-right: 5px;
 }
-.dbody .row > *.active .dtd {
+/*.dbody .row > *.active .dtd {
   background: #16a89e;
   color: #fff;
-}
+}*/
 .dbody .row > *.active .dtd i {
   opacity: .8;
 }
@@ -2063,6 +2063,20 @@ textarea {
   color: #4d4f5b;
   font-size: 18px;
 }
+
+.dbody .row .box-bg-width {
+    border-top: 1px solid #e4e4e4;
+    background: #fff;
+}
+
+.dbody .row .box-bg-width:hover,
+.dbody .row > *:first-child:hover .dtd,
+.dbody .row > *.active .dtd,
+.dbody .row > *.active .box-bg-width {
+    background: #16a89e;
+    color: #fff;
+}
+
 @media only screen and (max-width: 480px) {
   .dbody .row .dtd i {
     font-size: 13px;

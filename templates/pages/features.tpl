@@ -44,7 +44,7 @@
 												<span>OS: </span>
 												<i class="icon-android box-phone" rel='android'></i>
 												<i class="icon-apple box-phone" rel='apple'></i>
-												<i class="icon-blackberry box-phone" rel='blackberry'></i>
+												{*<i class="icon-blackberry box-phone" rel='blackberry'></i>*}
 											</div>
 											<!-- dtd -->
 										</div>
@@ -96,8 +96,9 @@
 			</div>
 		</div>
 
-                {include file='../includes/content/banners/banner-promo-trial.tpl'} 
+                {*{include file='../includes/content/banners/banner-promo-trial.tpl'}*} 
                                                         
+                {include file='../includes/content/banners/index.tpl'}
                 <!-- FOOTER -->
                 {*
                     Template: FOOTER

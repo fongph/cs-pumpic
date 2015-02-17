@@ -49,11 +49,11 @@
                 <div class="row">
                     
                     <div id="table-container" class="table-col-3 table-md-col-3 table-sm-col-3">
-                        <h1 class="text-center">Pumpic is reasonably improved mobile phone tracking software, which comes with a large range of monitoring functions. They will help you keep track of the target device quickly and quite.</h1>
+                        <article class="text-center">Pumpic is reasonably improved mobile phone tracking software, which comes with a large range of monitoring functions. They will help you keep track of the target device quickly and quite.</article>
                         <section>
                             <div class="tab col-item-3 col-md-item-3 col-sm-item-3">
                                 <ul>
-                                    <li><i class="i-features-sms"></i> View SMS</li>
+                                    <li><i class="i-features-sms"></i> <span onclick="window.location='http://{$domain}/mobile-sms-spy.html'">View SMS</span></li>
                                     <li><i class="i-features-cell-history"></i> View Call History</li>
                                     <li><i class="i-features-calendar"></i> View Calendar</li>
                                     <li><i class="i-features-contacts"></i> View Contacts</li>

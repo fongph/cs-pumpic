@@ -1,5 +1,3 @@
-{closeAccess}
-
 {include file='../includes/main/main-header.tpl'
     robots="no" 
     title="Best SMS Spy Software for Kids Protection"
@@ -12,7 +10,7 @@
     {include file='../includes/main/main-button-goup.tpl'}
     <!-- END FLY BUTTON -->
     
-    <div class="wrapper block-featuresms">
+    <div class="wrapper mobile_sms_spy box-bottom-images">
 	
 	<!-- TOP MENU -->
 	{include file='../includes/main/main-top-menu.tpl'
@@ -22,7 +20,7 @@
         
     <!-- CONTENT -->
          {include file='../includes/content/info/info-promo.tpl'
-            imgUrl = "header_banners/sms-spying-app.png"
+            imgUrl = "header_banners/bg_mobile_sms_spy.png"
             imgAlt = "SMS spy app"
             imgAlign = "right"
             textAlign = "right"
@@ -46,8 +44,7 @@
         <div class="container">
                 <h2 class="text-center">Did you know?</h2>
                 <div class="row">
-                    
-                    <div id="table-container" class="table-col-3 table-md-col-3 table-sm-col-3">
+                    <div class='col-sm-12 col-md-12 col-lg-12'>
                         <p>Nowadays children spend more than 3 hours a day using smartphones for playing games, social media activity and chatting. Being a parent implies a huge responsibility to protect kids from misgiving people they might contact on the web. Reliable SMS spy software will help you secure your children.</p>
                             <ul>
                                 <li>70% of victims that online predators target are boys and girls aged 14-16 years old</li>
@@ -55,7 +52,7 @@
                                 <li>60% of all criminal cases among teenagers were planned through SMS and IM chats</li>
                             </ul>
                         <p>Pumpic parental text monitoring app was designed to help keep your children safe by tracking incoming and outgoing SMS. The app allows you to view saved and deleted messages as well as block specific contacts from reaching your kids in future.</p>
-                    </div>    
+                    </div>   
                 </div>
         </div>
 </div>
@@ -106,11 +103,11 @@
                 <div class="row">
                     
                     <div id="table-container" class="table-col-3 table-md-col-3 table-sm-col-3">
-                        <h1 class="text-center">In a large variety of available software, it is rather a challenge to find a reliable app for parents to monitor text messages on their kids’ cell phones. The very first thing to consider here is features such an application offers. Except text message monitoring you will surely want to track your kids’ location, online activity and control the time they spend playing games. Below is the entire list of functions Pumpic provides to protect your kids and secure their happiness. </h1>
+                        <article class="text-center">In a large variety of available software, it is rather a challenge to find a reliable app for parents to monitor text messages on their kids’ cell phones. The very first thing to consider here is features such an application offers. Except text message monitoring you will surely want to track your kids’ location, online activity and control the time they spend playing games. Below is the entire list of functions Pumpic provides to protect your kids and secure their happiness. </article>
                         <section>
                             <div class="tab col-item-3 col-md-item-3 col-sm-item-3">
                                 <ul>
-                                    <li><i class="i-features-sms"></i> View SMS</li>
+                                    <li><i class="i-features-sms"></i> <span onclick="window.location='http://{$domain}/mobile-sms-spy.html'">View SMS</span></li>
                                     <li><i class="i-features-cell-history"></i> View Call History</li>
                                     <li><i class="i-features-calendar"></i> View Calendar</li>
                                     <li><i class="i-features-contacts"></i> View Contacts</li>
@@ -149,8 +146,7 @@
         <div class="container">
                 <h2 class="text-center">Why to Follow Kids’ Text Messages</h2>
                 <div class="row">
-                    
-                    <div id="table-container" class="table-col-3 table-md-col-3 table-sm-col-3">
+                    <div class='col-sm-12 col-md-12 col-lg-12'>
                         <p>You will probably wonder, if hear that children most of all do not use their mobile phones to call each other. Instead, they use them to play games, search online and chat via social media or SMS. In other words, modern kids prefer writing text messages to making calls.</p>
 
                         <p>According to the recent statistics, more than 70% of teenagers use SMS to contact their friends. If you have a look at one of your kid’s SMS chat history, you will see that it more likely resembles a written down phone call than a message itself. It means that if you want to find out what your child talks about with his or her friend, you don’t need to record a call, you can simply read a text message. That’s why monitoring SMS is one of the best ways of keeping up with your kid’s affairs.</p>
@@ -166,7 +162,7 @@
                             <li>find out if your kid uses bad words in his or her communication;</li>
                             <li>prevent your kid from being involved in sexting (exchanging messages with sexual content, sometimes including inappropriate photos attached).</li>
                         </ul>
-                    </div>    
+                    </div>   
                 </div>
         </div>
 </div>
@@ -179,21 +175,21 @@
             <h2 class="text-center testimonial-title">Pumpic SMS Monitoring Testimonials:</h2>
             <div class="row">
                     <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
-                            <img src="{$img}/testimonials/testimonials_new_1.png" alt="" class="testimonial-photo">
+                            <img src="{$img}/testimonials/testimonials_new_19.png" alt="" class="testimonial-photo">
                             <div class="testimonial-text">
                                     <h4>Amanda J. (Newport Beach, CA)</h4>
                                     <p>“I am a single mother of 15 years old daughter. Recently, we had to move to the Golden State where she made friends with uncertain group of young people. I was worrying about her a lot. When I found Pumpic, I was relieved, now I can check her messages and IM chats to see what she is planning. I can see her GPS location and route history too to make sure she is home after school while I am at work.”</p>
                             </div>
                     </div>
                     <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
-                            <img src="{$img}/testimonials/testimonials_new_2.png" alt="" class="testimonial-photo">
+                            <img src="{$img}/testimonials/testimonials_new_20.png" alt="" class="testimonial-photo">
                             <div class="testimonial-text">
                                     <h4>Tiffany and Greg W. (Huntsville, AL)</h4>
                                     <p>“We have two adorable daughters (10 and 12). We do everything to rise them in a proper Catholic way. Although we allow them to use smartphones, we do keep track of their phones with SMS monitoring app. We use it as a precaution. We are fully satisfied with Pumpic, it let us see all incoming and outgoing messages to make sure they are safe. We also use block list that allows us to monitor bad words used in messages, if there are such.”</p>
                             </div>
                     </div>
                     <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
-                            <img src="{$img}/testimonials/testimonials_new_3.png" alt="" class="testimonial-photo">
+                            <img src="{$img}/testimonials/testimonials_new_21.png" alt="" class="testimonial-photo">
                             <div class="testimonial-text">
                                     <h4>George K. (Oklahoma City, OK)</h4>
                                     <p>“I installed Pumpic to keep track of my son, David (16). I am satisfied with the product, especially the function that allows me to see deleted messages. Sometimes, you just have to do it. I think it’s natural to protect your kids and Pumpic is one of the easiest ways.”</p>

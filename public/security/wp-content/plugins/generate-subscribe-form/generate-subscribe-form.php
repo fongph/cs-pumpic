@@ -72,7 +72,7 @@ class generate_subscribe_form_widget extends WP_Widget
                 $show_img_option = '';
                 
                 if ( $type_form == "dark" ) {$type_form_option .= "<option value='dark' selected >Dark</option>";} else {$type_form_option .= "<option value='dark'>Dark</option>";}
-		if ( $type_form == "light" ) {$type_form_option .= "<option value='light' selected >Light</option>";} else {$type_form_option .= "<option value='light'>Light</option>";}
+		//if ( $type_form == "light" ) {$type_form_option .= "<option value='light' selected >Light</option>";} else {$type_form_option .= "<option value='light'>Light</option>";}
 
                 if ( $show_img == "true" ) {$show_img_option .= "<option value='true' selected >On</option>";} else {$show_img_option .= "<option value='true'>On</option>";}
 		if ( $show_img == "false" ) {$show_img_option .= "<option value='false' selected >Off</option>";} else {$show_img_option .= "<option value='false'>Off</option>";}

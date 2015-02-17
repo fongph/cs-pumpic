@@ -1,5 +1,4 @@
-{include file='../includes/main/main-header.tpl'
-    robots="no" 
+{include file='../includes/main/main-header.tpl' 
     title="Best SMS Spy Software for Kids Protection"
     description="SMS communication is more popular these days than making calls. That’s why it is reasonable for parents to use a text message spy app to monitor their kids’ activity."
 }    

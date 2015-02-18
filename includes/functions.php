@@ -857,4 +857,24 @@ function hasAccess() {
     return $_result;
 }
 
+
+/* ------ // block Content --------- */
+function smarty_function_Content($params, $template) {
+    $_style = (isset($params['blockBg'])) ? $params['blockBg'] : 'dark';
+    $_title = (isset($params['title'])) ? $params['title'] : '';
+    
+    echo '<div id="block-content" class="'.$_style.'">
+                    <div class="container">
+                        <h2 class="text-center">'.$_title.'</h2>
+                        <div class="row">
+                            <div class="col-sm-12 col-md-12 col-lg-12">';
+}
+
+function smarty_function_EndContent() {
+    echo "              </div>   
+                    </div>
+                </div>
+            </div>";
+}
+
 class PageNotFoundException extends Exception {}

@@ -10,7 +10,7 @@
     {include file='../includes/main/main-button-goup.tpl'}
     <!-- END FLY BUTTON -->
     
-    <div class="wrapper box-bottom-images prevent-online-dangers">
+    <div class="wrapper {*box-bottom-images*} prevent-online-dangers">
         <!-- TOP MENU -->
  	{include file='../includes/main/main-top-menu.tpl' 
                 cache_id = "includes_main_main-top-menu"
@@ -22,6 +22,7 @@
             imgUrl = "header_banners/bg_teenagers_header_419x325.png"
             imgAlt = "Smartphone monitoring"
             imgAlign = "right"
+            imgVerticalAlign = "bottom"
             textAlign = "right"
             title = "Prevent Online Dangers. <br />Pumpic Monitoring App."
             description = "Protect your kids before it is too late. <br />

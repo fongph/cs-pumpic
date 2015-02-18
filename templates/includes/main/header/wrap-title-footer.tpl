@@ -70,6 +70,9 @@
         <!-- close/ out Windows -->
         <script src="{$js}/outWindows.js?{style_cache data='2015-02-05'}"></script>
         
+        <!-- resizeImages -->
+        <script src="{$js}/resize_images.js?{style_cache data='2015-02-05'}"></script>
+        
 {/strip}
 {include file='../header/analytics-header.tpl'}	
 {strip}	

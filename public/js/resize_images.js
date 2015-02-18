@@ -32,37 +32,43 @@
 
 // .wp-caption
 $( window ).resize(function() {
+    var $_wW = $(window).width();
     
-    if($('#box-content-post img').length) {
-      $('#box-content-post img').each(function() {
-          
-          var _caption = $(this).parent('.wp-caption'), width = $(this).outerWidth(true);
+    if($('#box-content-post img, #block-content img').length) {
+      $('#box-content-post img, #block-content img').each(function() {
+          var _caption = $(this).parents('.wp-caption'), 
+                width = $(this).outerWidth(true),
+                _attachmentW = $(this).parents('#attachment').outerWidth(true),
+                _width = $(this).width(),
+                _attrW = $(this).attr('attr-width');
+
           if(_caption.find('.wp-caption-text').length)
-              _caption.find('.wp-caption-text').css({
-                  'width': width+'px',
-              });
-              
+            _caption.find('.wp-caption-text').css({
+                'width': width+'px',
+            });
+            
       });
     }  
 });
 
 $(document).ready(function(){ 
     /* images mobile */
-  if($('#box-content-post img').length) {
+  if($('#box-content-post img, #block-content img').length) {
       
       
       //$('#box-content-post img').each(function() {
-      $('#box-content-post img').bindImageLoad(function() {    
+      $('#box-content-post img, #block-content img').bindImageLoad(function() {    
           
           var width = $(this).attr('width'),
-              parent = $(this).parent('.wp-caption'), 
+              parent = $(this).parents('.wp-caption'), 
               _caption_text = parent.find('.wp-caption-text'),
                 _src = $(this).attr('src'),
                 height = $(this).attr('height'),
-                outer_width = $(this).outerWidth(true);
+                outer_width = $(this).outerWidth(true),
+                parent_outer_width = parent.outerWidth(true);
           
-          $(this).removeAttr('width');
-          $(this).removeAttr('height');
+          $(this).attr('attr-width', width).removeAttr('width');
+          $(this).attr('attr-height', width).removeAttr('height');
           //$(this).attr('src', '');
           
           console.log(width, height);
@@ -82,6 +88,7 @@ $(document).ready(function(){
                   'width': 'auto',
               });
           
+          
           if(_caption_text.length) {
               if(outer_width > 0) {
                 _caption_text.css({
@@ -93,8 +100,7 @@ $(document).ready(function(){
                 }); 
               }
           }
-          
-          
+        
           
       });
       

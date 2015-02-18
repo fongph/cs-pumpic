@@ -5096,3 +5096,49 @@ div[id^="attachment_"], div[id*=" attachment_"] {
         width: auto;
     }
 }
+
+/* ---------------- // block-content ------------------- */
+#block-content ul, 
+#block-content ol {
+    margin: 0px 0px 10px 0px;
+    padding: 0px;
+}
+#block-content ul li {
+    margin-left: 30px;
+}
+
+#block-content ol > li:before {
+    content: counter(number, decimal) ".";
+    counter-increment: number;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    left: -18px;
+    position: absolute;
+    top: 0;
+}
+
+#block-content ol li {
+    padding-left: 0px;
+    margin-left: 36px;
+}
+
+
+#block-content p {}
+
+#block-content div[id^="attachment"], 
+#block-content div[id*=" attachment"] {
+    margin-bottom: 15px;
+} 
+#block-content .wp-caption > div {
+    display: inline-block;
+}
+
+#block-content .wp-caption > span {
+    display: block;
+    width: 100%;
+}
+
+#block-content .wp-caption p.wp-caption-text {
+    display: inline-block;
+}

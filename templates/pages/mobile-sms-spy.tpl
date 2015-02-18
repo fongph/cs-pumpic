@@ -40,22 +40,44 @@
         }
 
 
-<div class="dark">
-        <div class="container">
-                <h2 class="text-center">Did you know?</h2>
-                <div class="row">
-                    <div class='col-sm-12 col-md-12 col-lg-12'>
-                        <p>Nowadays children spend more than 3 hours a day using smartphones for playing games, social media activity and chatting. Being a parent implies a huge responsibility to protect kids from misgiving people they might contact on the web. Reliable SMS spy software will help you secure your children.</p>
-                            <ul>
-                                <li>70% of victims that online predators target are boys and girls aged 14-16 years old</li>
-                                <li>50% of children share personal data online, including names, the address and billing accounts</li>
-                                <li>60% of all criminal cases among teenagers were planned through SMS and IM chats</li>
-                            </ul>
-                        <p>Pumpic parental text monitoring app was designed to help keep your children safe by tracking incoming and outgoing SMS. The app allows you to view saved and deleted messages as well as block specific contacts from reaching your kids in future.</p>
-                    </div>   
-                </div>
-        </div>
-</div>
+
+{Content 
+    title="Did you know?"
+    blockBg='dark'}
+                        
+        <p>Nowadays children spend more than 3 hours a day using smartphones for playing games, social media activity and chatting. Being a parent implies a huge responsibility to protect kids from misgiving people they might contact on the web. Reliable SMS spy software will help you secure your children.</p>
+
+        <ul>
+            <li>70% of victims that online predators target are boys and girls aged 14-16 years old</li>
+            <li>50% of children share personal data online, including names, the address and billing accounts</li>
+            <li>60% of all criminal cases among teenagers were planned through SMS and IM chats</li>
+        </ul>
+
+        <p>Pumpic parental text monitoring app was designed to help keep your children safe by tracking incoming and outgoing SMS. The app allows you to view saved and deleted messages as well as block specific contacts from reaching your kids in future.</p>
+
+        {* Template: BLOCK IMAGE
+            blockAlign (text): позиция блока с изображением. (left|center|right) *default: center
+            
+            imgUrl (text): путь к изображению. *ОБЯЗАТЕЛЬНОЕ ПОЛЕ 
+            imgAlt (text): подпись к изображению.
+            // размер изображения
+            imgWidth (text): ширина изображения *ОБЯЗАТЕЛЬНОЕ ПОЛЕ
+            imgHeight (text): высота изображения *ОБЯЗАТЕЛЬНОЕ ПОЛЕ
+            // Подпись к изображению
+            captionText (text): подпись к изображению
+        *}
+        {*include file='../includes/content/block/image.tpl'
+                blockAlign = 'center'
+
+                imgUrl = 'parental_control/bg_famaly_mobile.png'
+                imgAlt = 'Alt Test image 1'                
+                imgWidth = '537'
+                imgHeight = '312'
+
+                captionText = 'Caption test image 1'
+        *}
+                        
+{EndContent}
 
 <div class="light">
         <div class="container">
@@ -142,33 +164,25 @@
         </div>
 </div>
 
-<div class="light">
-        <div class="container">
-                <h2 class="text-center">Why to Follow Kids’ Text Messages</h2>
-                <div class="row">
-                    <div class='col-sm-12 col-md-12 col-lg-12'>
-                        <p>You will probably wonder, if hear that children most of all do not use their mobile phones to call each other. Instead, they use them to play games, search online and chat via social media or SMS. In other words, modern kids prefer writing text messages to making calls.</p>
+{Content 
+    title="Why to Follow Kids’ Text Messages"
+    blockBg='light'}
+    <p>You will probably wonder, if hear that children most of all do not use their mobile phones to call each other. Instead, they use them to play games, search online and chat via social media or SMS. In other words, modern kids prefer writing text messages to making calls.</p>
 
-                        <p>According to the recent statistics, more than 70% of teenagers use SMS to contact their friends. If you have a look at one of your kid’s SMS chat history, you will see that it more likely resembles a written down phone call than a message itself. It means that if you want to find out what your child talks about with his or her friend, you don’t need to record a call, you can simply read a text message. That’s why monitoring SMS is one of the best ways of keeping up with your kid’s affairs.</p>
+    <p>According to the recent statistics, more than 70% of teenagers use SMS to contact their friends. If you have a look at one of your kid’s SMS chat history, you will see that it more likely resembles a written down phone call than a message itself. It means that if you want to find out what your child talks about with his or her friend, you don’t need to record a call, you can simply read a text message. That’s why monitoring SMS is one of the best ways of keeping up with your kid’s affairs.</p>
 
-                        <p>There is a lot of tracking software, which enables parents to follow their kids’ activity remotely. And SMS monitoring is one of its major functions. With the help of such spyware, you will easily track your children from any spot of the world as well as view SMS they send and receive.</p>
+    <p>There is a lot of tracking software, which enables parents to follow their kids’ activity remotely. And SMS monitoring is one of its major functions. With the help of such spyware, you will easily track your children from any spot of the world as well as view SMS they send and receive.</p>
 
-                        <p>SMS spy software will let you take care of your kids remotely and prevent them from possible dangers, namely:</p>
-                        <ul>
-                            <li>find out if your kid is dating someone and prevent him or her from related threat (teenagers chat with their dates pretty often, and thus SMS tracking will let you be in touch with the situation and take action, if needed);</li>
-                            <li>control, whom your kids communicate with and prevent them from chatting with strangers or misgiving people (swindlers, bullies and online predators often use text messages to contact their victims);</li>
-                            <li>take immediate action, if find out that your kid contacts drug dealers or someone, who might be a bad company for him or her;</li>
-                            <li>find out if your kid is up to do something you would not approve, or is going to go anywhere you would not allow;</li>
-                            <li>find out if your kid uses bad words in his or her communication;</li>
-                            <li>prevent your kid from being involved in sexting (exchanging messages with sexual content, sometimes including inappropriate photos attached).</li>
-                        </ul>
-                    </div>   
-                </div>
-        </div>
-</div>
-        
-
-
+    <p>SMS spy software will let you take care of your kids remotely and prevent them from possible dangers, namely:</p>
+    <ul>
+        <li>find out if your kid is dating someone and prevent him or her from related threat (teenagers chat with their dates pretty often, and thus SMS tracking will let you be in touch with the situation and take action, if needed);</li>
+        <li>control, whom your kids communicate with and prevent them from chatting with strangers or misgiving people (swindlers, bullies and online predators often use text messages to contact their victims);</li>
+        <li>take immediate action, if find out that your kid contacts drug dealers or someone, who might be a bad company for him or her;</li>
+        <li>find out if your kid is up to do something you would not approve, or is going to go anywhere you would not allow;</li>
+        <li>find out if your kid uses bad words in his or her communication;</li>
+        <li>prevent your kid from being involved in sexting (exchanging messages with sexual content, sometimes including inappropriate photos attached).</li>
+    </ul>
+{EndContent}    
 
 <div class="dark">
     <div class="container">

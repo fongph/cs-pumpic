@@ -10,7 +10,7 @@
     {include file='../includes/main/main-button-goup.tpl'}
     <!-- END FLY BUTTON -->
     
-    <div class="wrapper bg_bottom_images block-free-trial">
+    <div class="wrapper {*bg_bottom_images*} block-free-trial">
         <!-- TOP MENU -->
 
 	{include file='../includes/main/main-top-menu.tpl'
@@ -24,6 +24,7 @@
             imgUrl = "header_banners/bg_famaly_427x254.png"
             imgAlt = "Landing Mobile"
             imgAlign = "left bottom"
+            imgVerticalAlign = "bottom"
             textAlign = "left"
             title = "Cell Phone <br />Monitoring Control App"
             description = "Keep your family safe and secured with Pumpic. <br />

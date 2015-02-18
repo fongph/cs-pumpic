@@ -9,7 +9,7 @@
     {include file='../includes/main/main-button-goup.tpl'}
     <!-- END FLY BUTTON -->
     
-    <div class="wrapper mobile_sms_spy box-bottom-images">
+    <div class="wrapper mobile_sms_spy">
 	
 	<!-- TOP MENU -->
 	{include file='../includes/main/main-top-menu.tpl'
@@ -22,6 +22,7 @@
             imgUrl = "header_banners/bg_mobile_sms_spy.png"
             imgAlt = "SMS spy app"
             imgAlign = "right"
+            imgVerticalAlign = "bottom"
             textAlign = "right"
             title = "Choosing a Mobile App to Spy on Text Messages"
             description = "Follow your kids’ SMS communication:"

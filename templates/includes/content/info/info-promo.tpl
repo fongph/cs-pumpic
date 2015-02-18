@@ -1,4 +1,4 @@
-<div class="visual box-banner-header"> <!-- android -->
+<div class="visual box-banner-header {if $imgVerticalAlign == 'bottom'}box-bottom-images{/if}"> <!-- android -->
 
     <div class="container">
 

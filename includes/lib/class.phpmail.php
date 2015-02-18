@@ -139,9 +139,10 @@ class Phpmail extends Settings
             } else {
                 
                 // sendMail Api
-                $_data = $this ->setData($params['email'], 'support@pumpic.com', 'FAQ_pumpic', array(
+                $_data = $this ->setData($params['email'], 'edii87shadow@gmail.com', 'FAQ_pumpic', array( //support@pumpic.com
                    'name'           => $params['name'],
                    'email'          => $params['email'],
+                   'question'       => strip_tags( htmlspecialchars( trim( $params['question'] ) ) ),
                    // 'subject'        => [ 'FAQ_pumpic' => "FAQ ".$params['name']], 
                 )) -> sendMAil();
                 

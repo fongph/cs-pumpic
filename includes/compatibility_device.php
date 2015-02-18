@@ -5,6 +5,11 @@
  * @var $urlParams array
  */
 
+ $smarty->caching = false;
+ $smarty->compile_check = false;
+ $smarty->force_compile = false;
+ $smarty->debugging = false;
+
 require dirname( __DIR__ ).'/vendor/autoload.php';
 
 $pdo = new PDO(

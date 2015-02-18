@@ -5141,4 +5141,5 @@ div[id^="attachment_"], div[id*=" attachment_"] {
 
 #block-content .wp-caption p.wp-caption-text {
     display: inline-block;
+    line-height: 1.2em;
 }

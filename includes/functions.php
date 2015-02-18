@@ -871,10 +871,7 @@ function smarty_function_Content($params, $template) {
 }
 
 function smarty_function_EndContent() {
-    echo "              </div>   
-                    </div>
-                </div>
-            </div>";
+    echo "</div></div></div></div>";
 }
 
 class PageNotFoundException extends Exception {}

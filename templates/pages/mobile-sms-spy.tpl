@@ -74,7 +74,7 @@
                 imgWidth = '537'
                 imgHeight = '312'
 
-                captionText = 'Caption test image 1'
+                captionText = 'Caption test image 1 Caption test image 1 Caption test image 1 Caption test image 1'
         *}
                         
 {EndContent}

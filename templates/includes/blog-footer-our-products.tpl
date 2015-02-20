@@ -2,10 +2,10 @@
     <h3>OUR PRODUCTS</h3>
     <ul class="list_grey">
         <li>
-            <a href="/android-monitoring-software.html">Android software</a>
+            <a href="/android-parental-monitoring.html">Android software</a>
         </li>
         <li>
-            <a href="/ios-monitoring-software.html">Iphone software</a>
+            <a href="/iphone-parental-monitoring.html">Iphone software</a>
         </li>
         <?php
         /*

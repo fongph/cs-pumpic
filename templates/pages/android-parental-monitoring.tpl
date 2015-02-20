@@ -182,21 +182,21 @@
             <h2 class="text-center testimonial-title">Testimonials:</h2>
             <div class="row">
                     <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
-                            <img src="{$img}/testimonials/testimonials_2.png" alt="" class="testimonial-photo">
+                            <img src="{$img}/testimonials/t_new_1.png" alt="" class="testimonial-photo">
                             <div class="testimonial-text">
                                     <h4>Susan L. (Cheyenne, WY)</h4>
                                     <p>“Pumpic helped me find out that my daughter, 16 years old, was involved in sexting by her boyfriend. Frankly, the truth was more than ugly. When I saw all those messages full of mean and vulgarity, I was raving with my fury. We had a serious talk with my daughter and parents of this “boyfriend”. We both agreed that it must never ever happen again. Thanks Pumpic for keeping me informed.”</p>
                             </div>
                     </div>
                     <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
-                            <img src="{$img}/testimonials/testimonials_3.png" alt="" class="testimonial-photo">
+                            <img src="{$img}/testimonials/t_new_2.png" alt="" class="testimonial-photo">
                             <div class="testimonial-text">
                                     <h4>Melinda J. (St. Louis, MO)</h4>
                                     <p>“I decided to install Android smartphone monitoring on my son’s cell since he started acting weird. He became very shy and scary. I tried to talk to him, but he said everything was fine. Pumpic helped me find out that my son was bullied by his schoolmates. They sent him messages with threats and posted offensive pictures online. I went to school, talked to teachers and parents of the offenders. I’m happy that we found the way out. Finally, my son and I can sleep without worries.”</p>
                             </div>
                     </div>
                     <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
-                            <img src="{$img}/testimonials/testimonial_3.png" alt="" class="testimonial-photo">
+                            <img src="{$img}/testimonials/t_new_3.png" alt="" class="testimonial-photo">
                             <div class="testimonial-text">
                                     <h4>Sandy and Patrick K. (Sacramento, CA)</h4>
                                     <p>“My husband and I presented our son a brand new Android for his birthday. It was an expensive present but Mike did a great job at school and really deserved to have it. It happened that he lost it a few days after. My husband had predicted such situation, so we installed Pumpic right after the purchase. We tracked the cell phone and found it quickly. Very useful app!”</p>

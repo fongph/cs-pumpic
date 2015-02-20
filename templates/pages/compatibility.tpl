@@ -74,11 +74,11 @@
                                                 {foreach from=$phones item=phone}
                                                     <div class="col-sm-3 col-md-3 col-xs-6" id="search-result-item">
                                                         <div class="thumbnail">
-                                                            <a class="img_thumb" href="/compatibility/{$phone.uri_name}" target="_blank">
+                                                            <a class="img_thumb" href="/compatibility/{$phone.uri_name}/" target="_blank">
                                                                 <img height="202" width="90" alt="{$phone.name}" title="{$phone.name}" src="//{$api_device._domain}/{$api_device.path_img}/{$phone.m_img}">
                                                             </a>
                                                             <div class="caption">
-                                                                <h3><a href="/compatibility/{$phone.uri_name}" target="_blank">{$phone.name}</a></h3>
+                                                                <h3><a href="/compatibility/{$phone.uri_name}/" target="_blank">{$phone.name}</a></h3>
                                                                 <span>OS: <strong>{$phone.os}</strong></span>
                                                                 <span>Versions: <strong>{$phone.version}</strong></span>
                                                             </div>
@@ -206,11 +206,11 @@
             getRenderDeviceItem: function(devData) {
                 return  '<div id="search-result-item" class="col-sm-3 col-md-3 col-xs-6">' +
                         '<div class="thumbnail">' +
-                        '<a target="_blank" href="/compatibility/'+ devData.uri_name +'" class="img_thumb">' +
+                        '<a target="_blank" href="/compatibility/'+ devData.uri_name +'/" class="img_thumb">' +
                         '<img src="'+Devices.imgPath+ devData.m_img +'" height="202" width="90" title="'+devData.name+'" alt="'+devData.name+'">' +
                         '</a>' +
                         '<div class="caption">' +
-                        '<h3><a target="_blank" href="/compatibility/'+devData.uri_name+'">'+devData.name+'</a></h3>' +
+                        '<h3><a target="_blank" href="/compatibility/'+devData.uri_name+'/">'+devData.name+'</a></h3>' +
                         '<span>OS:<strong> '+devData.os+'</strong></span>' +
                         '<span>Versions:<strong> '+devData.version+'</strong></span>' +
                         '</div>' +

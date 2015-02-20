@@ -193,21 +193,21 @@
             <h2 class="text-center testimonial-title">iOS Monitoring Testimonials:</h2>
             <div class="row">
                     <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
-                            <img src="{$img}/testimonials/testimonials_new_19.png" alt="" class="testimonial-photo">
+                            <img src="{$img}/testimonials/t_new_19.png" alt="" class="testimonial-photo">
                             <div class="testimonial-text">
                                     <h4>Joan L. (Omaha, NE)</h4>
                                     <p>“The app helps me control my children, while I’m at work. I have to work overtime to support my family, that’s why my kids are on their own more often than not. With Pumpic, I’m sure they are safe. I know that wherever my kids go and whatever they do, they take their cells with them. So, I can track them, find out who calls or writes them, how much time they spend online and for which purposes. I suppose it is one of the most useful apps I’ve ever used.”</p>
                             </div>
                     </div>
                     <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
-                            <img src="{$img}/testimonials/testimonials_new_20.png" alt="" class="testimonial-photo">
+                            <img src="{$img}/testimonials/t_new_20.png" alt="" class="testimonial-photo">
                             <div class="testimonial-text">
                                     <h4>Katy O. (Reno, NV)</h4>
                                     <p>“I presented my daughter an iPhone for her last birthday and installed apple parental control right after the purchase. Frankly, it is amazing! I can see how good my daughter is. I can see that she never visits bad websites, never answers strange people, who contact her on Facebook. The app helps be sure that even when I’m far away, my daughter is safe. I can trust her more than ever. And this is the most precious thing I’ve ever had.”</p>
                             </div>
                     </div>
                     <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
-                            <img src="{$img}/testimonials/testimonials_new_21.png" alt="" class="testimonial-photo">
+                            <img src="{$img}/testimonials/t_new_21.png" alt="" class="testimonial-photo">
                             <div class="testimonial-text">
                                     <h4>Morgana H. (San Angelo, TX)</h4>
                                     <p>“The app helped me find out that my son started smoking and sometimes drank beer with his friends. I am a single mom, and thus work days and nights to keep my son and little daughter. I can read his text messages, his social media communication, know who calls him and why. That’s a great help for me. Thanks!”</p>

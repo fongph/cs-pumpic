@@ -5,33 +5,31 @@
             <div class="col-lg-10 col-lg-offset-1">
                 <div class="row">
                     
+                    <?php
+                        $page = (get_query_var('paged')) ? get_query_var('paged') : 1;
+                        $_tag = (get_query_var('tag')) ? get_query_var('tag') : false;
+                        
+                        if(!$_tag) {
+                            get_template_part( 'content', 'none' );
+                        } else {    
+
+                            query_posts(  array('tag' => $_tag, 'posts_per_page' => -1, 'paged' => $page, 'showposts' => 4));
+                        }    
+                    ?>
+                    
                     <?php if ( have_posts() ) : ?>
                     
                     <h1 class="text-center mt10 mb20"><a class="blog-link" href="/security/">Kids' Phone Safety Blog</a></h1>
                     <div class="archive">
                         <span class="title"><?php printf( __( "All posts for '<i>%s</i>' tag", 'cellspy' ), single_tag_title( '', false ) ); ?></span>
                     </div>
-                    
-  
                         <div class="col-lg-8 col-md-8 col-sm-12">
 
                             <?php
-
-                                $page = (get_query_var('paged')) ? get_query_var('paged') : 1;
-                                $_tag = (get_query_var('tag')) ? get_query_var('tag') : false;
-
-                                if(!$_tag) {
-                                    get_template_part( 'content', 'none' );
-                                } else {    
-                                
-                                    query_posts(  array('tag' => $_tag, 'posts_per_page' => -1, 'paged' => $page, 'showposts' => 4));
-
-                                    // The Loop
-                                    while ( have_posts() ) : the_post();
-                                         get_template_part( 'content', 'post' ); // get_post_format()
-                                    endwhile;
-                                }
-
+                                // The Loop
+                                while ( have_posts() ) : the_post();
+                                     get_template_part( 'content', 'post' ); // get_post_format()
+                                endwhile;
                             ?>
 
 

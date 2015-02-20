@@ -144,8 +144,9 @@ class WP {
 
 		// Fetch the rewrite rules.
 		$rewrite = $wp_rewrite->wp_rewrite_rules();
-
+                
 		if ( ! empty($rewrite) ) {
+                    
 			// If we match a rewrite rule, this will be cleared.
 			$error = '404';
 			$this->did_permalink = true;
@@ -566,7 +567,7 @@ class WP {
 		}
 
 		// We will 404 for paged queries, as no posts were found.
-		if ( ! is_paged() ) {
+		//if ( ! is_paged() ) {
 
 			// Don't 404 for authors without posts as long as they matched an author on this site.
 			$author = get_query_var( 'author' );
@@ -586,7 +587,7 @@ class WP {
 				status_header( 200 );
 				return;
 			}
-		}
+		//}
 
 		// Guess it's time to 404.
 		$wp_query->set_404();

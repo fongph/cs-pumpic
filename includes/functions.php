@@ -810,6 +810,14 @@ function smarty_modifier_hasUser() { // $params, $template
     return $_result;
 }
 
+function smarty_function_UserLogin() {
+    require_once 'lib/users/ManagerUser.php';
+    $obj = new includes\lib\users\ManagerUser( array() );
+    $_user = $obj -> getLoginUser();    
+    //return $smarty->assign('email', (isset($_user['login'])) ? $_user['login'] : '');
+    return (isset($_user['login'])) ? $_user['login'] : '';
+}
+
 // clear cookie popUp
 function _clearCookie() {
     if(isset($_COOKIE['popUp'])) {

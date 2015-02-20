@@ -102,9 +102,7 @@ Any purchase of Pumpic software at a discount price is non-refundable. No refund
                     Переменные:
                         our_products (text): Включить выключить блок OUR PRODUCTS (no|yes). * - yes 
                 *}
-                {include file='../includes/main/main-footer.tpl' 
-                    our_products = "no"
-                }
+                {include file='../includes/main/main-footer.tpl'}
 	</div>
 	{include file='../includes/main/main-analytics-footer.tpl'}
         <script type="text/javascript">

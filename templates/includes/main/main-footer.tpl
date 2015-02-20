@@ -29,30 +29,7 @@
                                         </li>
                                 </ul>
                         </div>
-                        {if !isset($our_products) || $our_products != "no"}        
-                        <div class="col-sm-3 col-md-3 col-lg-3">
-                                <h3>OUR PRODUCTS</h3>
-                                <ul class="list_grey">
-                                        <li>
-                                                <a href="/android-monitoring-software.html">Android software</a>
-                                        </li>
-                                        <li>
-                                                <a href="/ios-monitoring-software.html">Iphone software</a>
-                                        </li>
-                                        <li>
-                                                <a href="/sms-monitoring-software.html">SMS monitoring</a>
-                                        </li>
-                                        <li>
-                                                <a href="/call-monitoring-software.html">Call history monitoring</a>
-                                        </li>
-                                        
-                                        <li>
-                                                <a href="/smartphone-monitoring-software.html">Smartphone monitoring</a>
-                                        </li>
-                                        
-                                </ul>
-                        </div>
-                        {/if}
+                        {include file="../../includes/main/main-footer-our-products.tpl"}
                 </div>
                 <div class="row">
                         <div class="col-sm-10 col-md-10 col-lg-10 col-sm-offset-1 col-md-offset-1 col-lg-offset-1">

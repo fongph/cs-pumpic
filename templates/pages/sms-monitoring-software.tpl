@@ -103,9 +103,7 @@ Buy Pumpic to protect your kids and view their SMS right now."
             Переменные:
                 our_products (text): Включить выключить блок OUR PRODUCTS (no|yes). * - yes 
         *}
-        {include file='../includes/main/main-footer.tpl' 
-            our_products = "no"
-        }
+        {include file='../includes/main/main-footer.tpl'}
                 
     </div>
         

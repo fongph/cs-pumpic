@@ -5,6 +5,17 @@
         <div class="row">
             <div class="col-lg-10 col-lg-offset-1">
                 <div class="row">
+                    <?php 
+                        $page = (get_query_var('paged')) ? get_query_var('paged') : 1;
+                        $_cat = (get_query_var('cat')) ? get_category(get_query_var('cat'),false) : false;
+
+                        if(!$_cat) {
+                            get_template_part( 'content', 'none' );
+                        } else {    
+                            query_posts(  array('cat' => $_cat -> term_id, 'posts_per_page' => -1, 'paged' => $page, 'showposts' => 4));
+                        }    
+                    ?>
+                    
                     <?php if ( have_posts() ) : ?>
                     
                     <h1 class="text-center mt10 mb20"><a class="blog-link" href="/security/">Kids' Phone Safety Blog</a></h1>
@@ -13,33 +24,17 @@
                     </div>
                     
                     <div class="col-lg-8 col-md-8 col-sm-12">
-                        
                         <?php
-                        
-                            $page = (get_query_var('paged')) ? get_query_var('paged') : 1;
-                            $_cat = (get_query_var('cat')) ? get_category(get_query_var('cat'),false) : false;
-                            
-                            if(!$_cat) {
-                                get_template_part( 'content', 'none' );
-                            } else {    
-                            
-                                //$args = array( 'cat=3&posts_per_page=-1' );
-                                query_posts(  array('cat' => $_cat -> term_id, 'posts_per_page' => -1, 'paged' => $page, 'showposts' => 4));
-
-                                // The Loop
-                                while ( have_posts() ) : the_post();
-                                     get_template_part( 'content', 'post' ); // get_post_format()
-                                endwhile;
-                            }
+                            while ( have_posts() ) : the_post();
+                                 get_template_part( 'content', 'post' ); // get_post_format()
+                            endwhile;
                         ?>
-                        
                         
                         <?php 
                         if(function_exists('wp_paginate')) {
                             wp_paginate( );
                         } 
                         ?>
-                        
                     </div>
                     
                     <?php else : ?>

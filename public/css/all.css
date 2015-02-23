@@ -5257,7 +5257,10 @@ div[id^="attachment_"], div[id*=" attachment_"] {
     position: relative;
     top: 0px;
     float: left;
+    width: 24px;    
+    background-position: center center;
 }
+
 
 #item-form-trial #table-container .rowspan {
     background: #fff;

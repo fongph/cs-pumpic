@@ -75,7 +75,7 @@
                                                             <div class="tab col-item-3 col-md-item-3 col-sm-item-3">
                                                                 <ul>
                                                                     <li><i class="i-features-monitor-viber-whatsapp"></i> Monitor Whatsapp</li>
-                                                                    <li><i class="i-features-monitor-skype"></i> MonitorSkype</li>
+                                                                    <li><i class="i-features-monitor-skype"></i> Monitor Skype</li>
                                                                     <li><i class="i-features-social"></i> Monitor Facebook IM</li>
                                                                     <li><i class="i-features-monitor-viber-whatsapp"></i> Monitor Viber</li>
                                                                     <li><i class="i-features-location"></i> Location Tracking</li>

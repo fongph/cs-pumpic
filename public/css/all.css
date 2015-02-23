@@ -5251,6 +5251,11 @@ div[id^="attachment_"], div[id*=" attachment_"] {
     vertical-align: middle;
 }
 
+#item-form-trial #table-container .tab > ul:last-child > li,
+#item-form-trial #table-container div.tab:nth-child(3) {
+    border-right: 0px;
+}
+
 #item-form-trial [class^="i-features-"], 
 #item-form-trial [class*="i-features-"] {
     margin-right: 10px;

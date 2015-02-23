@@ -220,7 +220,7 @@
 												<a id="billing" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse27">What payment methods are available?</a>
 												<div id="collapse27" class="collapse">
 													<p>There are multiple payment methods available for the convenience of our customers. They include:</p>
-                                                                                                        <ul>
+                                                                                                        <ul class='list-items'>
                                                                                                             <li>Visa/MasterCard</li> 
                                                                                                             <li>PayPal</li>
                                                                                                             <li>Bank/Wire Transfer</li> 

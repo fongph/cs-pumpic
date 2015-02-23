@@ -604,20 +604,20 @@ $(document).ready(function(){
          
          if($(this).parent().hasClass('active')) {
              $(this).parent().removeClass('active');
-             $('.box_category ul li').show();
+             $('.box_category ul:not(.list-items) li').show();
          } else {
-             $.each($('.list_category li a'), function() {
+             $.each($('.list_category ul li a'), function() {
                 if($(this).parent().hasClass('active'))
                     $(this).parent().removeClass('active');
              }); // clear active
              
              $(this).parent().addClass('active');
-             $('.box_category ul > li').hide();
+             $('.box_category ul:not(.list-items) > li').hide();
              if(_hash.length > 1) {
                 if(_hash[1] == 'all') {
-                    $('.box_category ul > li').show();
+                    $('.box_category ul:not(.list-items) > li').show();
                 } else {
-                    $('.box_category ul > li').find('#'+_hash[1]).parents('li').show();
+                    $('.box_category ul:not(.list-items) > li').find('#'+_hash[1]).parents('li').show();
                 }
                  
                 
@@ -1017,6 +1017,23 @@ $(document).ready(function(){
         });
    }
    
+   /* ------- form-free-trial-registration ------ */
+   if($('form[name="free_trial_registration"]').length) {
+       $('form[name="free_trial_registration"]').validate({ 
+             messages: {
+                'captcha': "Invalid CAPTCHA.", // The CAPTCHA field is empty.
+                'name': {
+                    required: "The Name field is empty.",
+                },
+                'email': {
+                    required: "The Email field is empty.",
+                    email: "Invalid email format."
+                },
+                errorClass: "error",
+            }
+        });
+   }
+   
    /* ------- form-restore ------ */
    if($('form[name="form-restore"]').length) {
        $('form[name="form-restore"]').validate({ 
@@ -1046,10 +1063,10 @@ $(document).ready(function(){
     * CAPACHA 
     */
    if($('.box-captcha').length) {
-       $('.update-captcha').on('click', function(event) {
+       $('.update-captcha, .a-update-captcha').on('click', function(event) {
            event.preventDefault();
            $('.box-captcha').find('#img-captcha').attr('src', '/captcha.html?'+Math.random());
-           $('form[name="form-registration"]').find('input[name="captcha"]').focus();
+           $('form[name="form-registration"], form[name="free_trial_registration"]').find('input[name="captcha"]').focus();
            return false;
        });
    }

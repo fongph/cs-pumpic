@@ -1,5 +1,4 @@
 <?php
-
 namespace Models;
 
 use PDO;
@@ -23,7 +22,7 @@ class Compatibility {
     }
 
     public function getPhones($searchType = self::FIND_ALL, $page = 0, $searchStr = '') {
-        
+        $orderBy = 'ORDER BY popularity DESC';
         switch($searchType){
 
             case self::FIND_ALL:
@@ -35,14 +34,17 @@ class Compatibility {
                 break;
 
             case self::FIND_BY_QUERY:
-                if(!empty($searchStr))
-                    $whereQuery  = "WHERE LOWER(`longname`) RLIKE {$this->db->quote($searchStr)} ";
-                else $whereQuery = '';
+                
+                if(!empty($searchStr)) {
+                    //$whereQuery  = "WHERE LOWER(`longname`) RLIKE {$this->db->quote($searchStr)} ";
+                    $whereQuery  = "WHERE MATCH(longname) AGAINST ('{$searchStr}' IN BOOLEAN MODE) ";
+                    $orderBy = "ORDER BY rate2 DESC, rate1 DESC";
+                } else $whereQuery = '';
                 break;
 
             default: throw new \ErrorException('Illegal search type');
         }
-
+        
         $start = (int)$page * self::$perPage;
         $data = $this->db->query("
             SELECT SQL_CALC_FOUND_ROWS 
@@ -54,12 +56,18 @@ class Compatibility {
                 path_big as b_img,
                 path_middle as m_img,
                 os, 
-                os_ver as version, 
+                os_ver as version,
+                MATCH(longname) AGAINST ('{$searchStr}' IN BOOLEAN MODE) as rate1,
+                MATCH(longname) AGAINST ('\"{$searchStr}\"' IN BOOLEAN MODE) as rate2,
                 tested FROM `phones`
             {$whereQuery} 
-            ORDER BY popularity DESC
+            {$orderBy}
             LIMIT {$start}, " . self::$perPage)->fetchAll();
 
+//         echo "<pre>";
+//         var_dump( $data );
+//         echo "</pre>";
+            
         return array(
             'count' => !empty($data) ? $this->db->query("SELECT FOUND_ROWS()")->fetchColumn() : 0,
             'list' => $data,

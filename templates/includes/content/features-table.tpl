@@ -57,7 +57,7 @@
                                     <li><i class="i-features-cell-history"></i> View Call History</li>
                                     <li><i class="i-features-calendar"></i> View Calendar</li>
                                     <li><i class="i-features-contacts"></i> View Contacts</li>
-                                    <li><i class="i-features-email"></i> View Emails</li>
+                                    <li><i class="i-features-email"></i> <span onclick="window.location='http://{$domain}/email-monitoring-software.html'">View Emails</span></li>
                                 </ul>
                             </div>
 
@@ -74,7 +74,7 @@
                             <div class="tab col-item-3 col-md-item-3 col-sm-item-3">
                                 <ul>
                                     <li><i class="i-features-location"></i> Location Tracking</li>
-                                    <li><i class="i-features-keyloger"></i> Keylogger</li>
+                                    <li><i class="i-features-keyloger"></i> <span onclick="window.location='http://{$domain}/keylogging-software.html'">Keylogger</span></li>
                                     <li><i class="i-features-sms-commands"></i> SMS Commands</li>
                                     <li class="hidden-mobile"></li>
                                     <li class="hidden-mobile"></li>

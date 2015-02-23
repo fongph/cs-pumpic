@@ -26,7 +26,7 @@
             title = "Smartphone Monitoring<br />Parental Control App"
             description = "Protect your children with Pumpic app.<br />
 Control your kids smartphone usage remotely"
-            trial = "no"
+            trial = "yes"
         }
         
          {include file='../includes/content/plans.tpl' }

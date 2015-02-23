@@ -27,8 +27,7 @@
             title = "iOS Parental Control App"
             description = "Pumpic helps you keep your children safe.<br/>
 Monitor your kids iOS device with Pumpic."
-            trial = "no"
-            listText = "Follow Calls and SMS|Track GPS location|Monitor online activity"
+            trial = "yes"
         }
         {* listText = "Follow Calls and SMS|Track GPS location|Monitor online activity" *}
         

@@ -9,6 +9,7 @@ use System\Session\Handler\RedisSessionHandler as RedisSessionHandler;
 use Predis\Client as RedisClient; // Predis\Client
 
 use CS\Users\UsersManager as Manager;
+use CS\Models\User\Options\UserOptionRecord as UserOptionRecord; 
 use CS\Users\UserAlreadyExistsException as UserAlreadyExistsException;
 use CS\Users\UserNotFoundException as UserNotFoundException;
 USE CS\Users\InvalidPasswordException as InvalidPasswordException;
@@ -115,7 +116,7 @@ class ManagerUser extends Manager
     {
         $_type = 'prod';
         if (in_array(@$_SERVER['REMOTE_ADDR'], ['127.0.0.1', '::1'])) {
-            //$_type = 'dev';
+             // $_type = 'dev';
         }
         return $this -> _db[ $_type ];
     }
@@ -240,6 +241,39 @@ class ManagerUser extends Manager
         try {
             $user_id = $this -> createUser($params['siteId'], $params['email']);
             if((int)$user_id) {
+                $_data = $this->getUserDataById( self::SITE_ID, (int)$user_id );
+                $this -> _auth ->setIdentity( $_data );
+                
+                self::$_obj -> _data  = $this -> _auth->getIdentity();
+                self::$_obj -> _respons['_success'] = true;
+                
+            } else
+               self::$_obj -> _respons['_error'] = 'System Error! User not created!'; // ????
+            
+        } catch( UserAlreadyExistsException $e ) { 
+            self::$_obj -> _respons['_error'] = 'This email exists already.';
+        } catch( InvalidSenderObjectException $e ) {
+            self::$_obj -> _respons['_error'] = ($e ->getMessage()) ? $e ->getMessage() : 'System Error! Email not send!'; // ????    
+        } catch (Exception $ex) {
+            self::$_obj -> _respons['_error'] = 'Error! '.$e ->getMessage(); // ????
+        }
+        return self::$_obj -> _respons;
+    }
+    
+    // freeTrialRegistration
+    public function getfreeTrialRegistration() 
+    {
+        $this -> _freeTrialRegistration( self::$_obj -> getParams() );
+        return $this;
+    }
+    
+    // method freeTrialRegistration
+    private function _freeTrialRegistration(\ArrayAccess $params) 
+    {
+        try {
+            $user_id = $this -> createUserFreeTrial($params['siteId'], $params['email'], $params['name']);
+            if((int)$user_id) {
+                
                 $_data = $this->getUserDataById( self::SITE_ID, (int)$user_id );
                 $this -> _auth ->setIdentity( $_data );
                 

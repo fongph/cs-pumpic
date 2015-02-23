@@ -5367,7 +5367,8 @@ div[id^="attachment_"], div[id*=" attachment_"] {
 }
 
 #free_trial_registration .block-captcha .error {
-    
+    width: 100%;
+    display: block;
 }
 
 #free_trial_registration section > [class^="info-"], 
@@ -5411,7 +5412,7 @@ div[id^="attachment_"], div[id*=" attachment_"] {
     display: inline-block;
 }
 #free_trial_registration .block-captcha > div.box-captcha-input > span {
-    font-size: 12px;
+    font-size: 11px;
     position: relative;
     top: 3px;
 }

@@ -26,7 +26,7 @@
             title = "Sms Monitoring<br /> Parental Control App"
             description = "Keep your children safe with Pumpic.<br />
 View your kid’s text message history remotely."
-            trial = "no"
+            trial = "yes"
         }
         
          {include file='../includes/content/plans.tpl' }

@@ -326,6 +326,32 @@ function hashchange_AfterInit() {
             } 
         }
         
+        //free-trial-registration
+        if(_data['popUp'] == "free-trial-registration") { // && !getCookie('popUp')
+            // google analitycs
+            ga('send', 'event', 'form', 'submit', 'free-trial-registration-success');
+            
+            // login status ok
+            if(isset($('.box-popUp #box-status-free-trial-registration'))) {
+                var $this = $('.box-popUp #box-status-free-trial-registration')
+                , title = $this.find('.title') 
+                , content = $this.find('.info'); 
+
+                $this.bPopup({
+                    modalClose: true,
+                    opacity: 0.6,
+                    follow: [false, false], 
+                    positionStyle: 'fixed',
+                    onOpen: function() {
+                    },
+                    closeClass: 'close',
+                    onClose: function() {
+                    },
+
+                });
+            } 
+        }
+        
         
     }
 }
@@ -1019,7 +1045,13 @@ $(document).ready(function(){
    
    /* ------- form-free-trial-registration ------ */
    if($('form[name="free_trial_registration"]').length) {
-       $('form[name="free_trial_registration"]').validate({ 
+       $('form[name="free_trial_registration"]').validate({
+             onfocusout: false,
+             onkeyup: false,
+             onclick: true,
+             onsubmit: true,
+             focusInvalid: false,
+             focusCleanup: false, 
              messages: {
                 'captcha': "Invalid CAPTCHA.", // The CAPTCHA field is empty.
                 'name': {
@@ -1030,7 +1062,26 @@ $(document).ready(function(){
                     email: "Invalid email format."
                 },
                 errorClass: "error",
-            }
+            },
+            invalidHandler: function(event, validator) {
+                if($('form[name="free_trial_registration"] #block-fields label.error').length)
+                    $('form[name="free_trial_registration"] #block-fields label.error').remove();
+                
+                if($('form[name="free_trial_registration"] div.box-error')) {
+                    $('form[name="free_trial_registration"] div.box-error').addClass('hide');
+                }
+            },
+            // управление ошибками
+            showErrors: function(errorMap, errorList) {
+                var fileds = $('form[name="free_trial_registration"] #block-fields');
+                var msg = null;
+                
+                $.each(errorList, function(key, value){
+                    if(value.element) {
+                        fileds.find(value.element).after( '<label class="error">'+value.message+'</label>' ).show();
+                    }
+                 });
+            },
         });
    }
    

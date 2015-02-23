@@ -26,8 +26,9 @@
             textAlign = "right"
             title = "Android Parental Control Software"
             description = "Monitor your kids’ Android mobile phones remotely:"
-            trial = "no"
-            listText = "control cell phone usage|follow online activity|track routes and location" }
+            trial = "yes"
+             }
+         {*listText = "control cell phone usage|follow online activity|track routes and location"*}    
         
         {include file='../includes/content/plans.tpl'}
 

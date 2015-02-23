@@ -1,6 +1,6 @@
 <?php
-// ini_set('display_errors', 1);
-// error_reporting(-1);
+ //ini_set('display_errors', 1);
+ //error_reporting(-1);
 
 $config = array(
 	
@@ -45,7 +45,10 @@ $config = array(
                 'buy.html' => 'buy.php',
             
                 'login.html'  => 'login.php', 
+                
                 'registration.html'  => 'registration.php',
+                'free-trial.html'  => 'free_trial_registration.php',
+                
                 'restore.html'  => 'restore.php',
             
                 // pricing

@@ -26,8 +26,9 @@
             textAlign = "right"
             title = "Parental Control</br> Software for iPhone"
             description = "Keep track of your kids’ iOS devices remotely:"
-            trial = "no"
-            listText = "control mobile phone usage|monitor Internet activity|follow location and route history" }
+            trial = "yes"
+             }
+         {*listText = "control mobile phone usage|monitor Internet activity|follow location and route history"*}    
         
         {include file='../includes/content/plans.tpl'}
 

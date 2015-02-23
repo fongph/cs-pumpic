@@ -27,8 +27,7 @@
             title = "Remote Smartphone Monitoring App"
             description = "Pumpic helps to track cell phone activity.<br/>
 Monitor mobile device remotely with Pumpic."
-            trial = "no"
-            listText = "Follow Calls and SMS|Track GPS location|Monitor online activity"
+            trial = "yes"
         }
         {*listText = "Follow Calls and SMS|Track GPS location|Monitor online activity"*}
         

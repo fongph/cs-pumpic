@@ -31,7 +31,7 @@
                            Track location. View calls and SMS. Follow online activity."
             
 
-            trial = "no"
+            trial = "yes"
         }
         
         {include file='../includes/content/plans.tpl'}

@@ -18,7 +18,7 @@
                              
                         </td>
                         {/if}
-                        <td class="col-s-sm-12 col-xs-sm-12 {if $imgAlign == "center"} col-md-12 col-lg-12  {else}col-md-6 col-lg-7{/if}">
+                        <td class="col-s-sm-12 col-xs-sm-12 {if $imgAlign == "center"} col-md-12 col-lg-12  {else}col-md-6 col-lg-8{/if}">
                             
                             <div>
                                 <div class="visual-text {if $textAlign}block-text-{$textAlign}{else}block-text-right{/if}">

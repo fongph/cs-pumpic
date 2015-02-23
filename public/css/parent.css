@@ -266,7 +266,8 @@
 .i-features-videocam,
 .i-features-app, .i-features-browser, .i-features-calendar, .i-features-cell-history,
 .i-features-contacts, .i-features-email, .i-features-keyloger, .i-features-location,
-.i-features-photos, .i-features-sms-commands, .i-features-social, .i-features-sms {
+.i-features-photos, .i-features-sms-commands, .i-features-social, .i-features-sms,
+.i-features-block-device, .i-features-online-control-panel, .i-features-monitor-viber-whatsapp, .i-features-monitor-skype {
     display: inline-block;
     margin-right: 16px;
 }
@@ -350,6 +351,29 @@
     height: 18px;
 }
 
+.i-features-block-device {
+    background: url('../images/icons/icon-block-device.png') no-repeat;
+    width: 16px;
+    height: 20px;
+}
+
+.i-features-online-control-panel {
+    background: url('../images/icons/icon-online-control-panel.png') no-repeat;
+    width: 20px;
+    height: 21px;
+}
+
+.i-features-monitor-viber-whatsapp {
+    background: url('../images/icons/icon-monitor-viber-whatsapp.png') no-repeat;
+    width: 18px;
+    height: 19px;
+}
+
+.i-features-monitor-skype {
+    background: url('../images/icons/icon-monitor-skype.png') no-repeat;
+    width: 18px;
+    height: 19px;
+}
 
 /* -------------// top banners ------------- */
 

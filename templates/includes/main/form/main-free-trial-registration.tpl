@@ -39,7 +39,7 @@
                     <img src="/captcha.html" id="img-captcha">
                     <span class="update-captcha"></span>
                 </div>
-                <div class="box-captcha-input">    
+                <div class="box-captcha-input text-in-box-free-trial">    
                     <span class="left">Text in the box:</span>
                     <div class="captcha-input left">
                         <input id="captcha" type="text" name="captcha" autocomplete="off" class="text required captcha" />

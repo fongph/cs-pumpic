@@ -122,6 +122,8 @@
 </div>      
                                         
 {include file='../includes/content/features-table.tpl' 
+        title = "Features to Monitor Email"
+        description = "When it comes to children’s safety, parents should take all possible measures to protect them. Especially when it concerns online activity. Pumpic monitoring features will enable you to provide comprehensive security and cover all spheres of your kids’ time spending. Starting from tracking precise location and up to daily calls and text message reports, you will keep your children safe in a click."
         blockBg="dark"
 } 
                                         

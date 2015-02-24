@@ -45,11 +45,12 @@
 
 <div class="{if $blockBg}{$blockBg}{else}dark{/if}">
         <div class="container">
-                <h2 class="text-center">Pumpic Features</h2>
+                <h2 class="text-center">{if $title}{$title}{else}Pumpic Features{/if}</h2>
                 <div class="row">
                     
                     <div id="table-container" class="table-col-3 table-md-col-3 table-sm-col-3">
-                        <article class="text-center">Pumpic is reasonably improved mobile phone tracking software, which comes with a large range of monitoring functions. They will help you keep track of the target device quickly and quite.</article>
+                        <article class="text-center">{if $description}{$description}{else}Pumpic is reasonably improved mobile phone tracking software, which comes with a large range of monitoring functions. 
+                            They will help you keep track of the target device quickly and quite.{/if}</article>
                         <section>
                             <div class="tab col-item-3 col-md-item-3 col-sm-item-3">
                                 <ul>

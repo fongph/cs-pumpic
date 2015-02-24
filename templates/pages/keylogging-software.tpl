@@ -118,7 +118,9 @@
         </div>
 </div>   
     
-{include file='../includes/content/features-table.tpl' 
+{include file='../includes/content/features-table.tpl'
+        title = "Features"
+        description = "Pumpic is reliable and feature-rich parental control software designed to protect kids by monitoring their mobile devices. Except for cell phone keylogger, the app lets you follow other aspects of your kid’s life. Taking into account that children and their smartphones are inseparable these days, Pumpic enables parents to monitor their kids’ activity constantly and remotely from any spot of the world."
         blockBg="dark"
 }                                         
   

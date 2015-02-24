@@ -328,8 +328,6 @@ function hashchange_AfterInit() {
         
         //free-trial-registration
         if(_data['popUp'] == "free-trial-registration") { // && !getCookie('popUp')
-            // google analitycs
-            ga('send', 'event', 'form', 'submit', 'free-trial-registration-success');
             
             // login status ok
             if(isset($('.box-popUp #box-status-free-trial-registration'))) {
@@ -343,6 +341,10 @@ function hashchange_AfterInit() {
                     follow: [false, false], 
                     positionStyle: 'fixed',
                     onOpen: function() {
+                        
+                        // google analitycs
+                        ga('send', 'event', 'trial', 'popup', 'free-trial-registration-success');
+                        
                     },
                     closeClass: 'close',
                     onClose: function() {

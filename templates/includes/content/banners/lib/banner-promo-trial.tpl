@@ -58,8 +58,8 @@
                                                 name="price[submit]"
 
                                                 ga-action ="click"
-                                                ga-category="demo link"
-                                                ga-label="prices"
+                                                ga-category="trial"
+                                                ga-label="free trial"
                                                 >Try Now</button>
                                     </form>
                                     {/nocache} 

@@ -5203,10 +5203,8 @@ div[id^="attachment_"], div[id*=" attachment_"] {
 }
 
 #item-form-trial div.body > ol {
-    padding-bottom: 30px;
-    padding-top: 30px; 
-    padding-left: 30px;
-    padding-right: 10px;
+    padding: 15px 30px 15px 10px;
+    margin: 0px 0px 0px 20px;
 }
 
 #item-form-trial div.body ol > li:before {
@@ -5256,8 +5254,11 @@ div[id^="attachment_"], div[id*=" attachment_"] {
     border-right: 0px;
 }
 
-#item-form-trial [class^="i-features-"], 
-#item-form-trial [class*="i-features-"] {
+/*#item-form-trial [class^="i-features-"], 
+#item-form-trial [class*="i-features-"],*/
+
+#table-container [class^="i-features-"],
+#table-container [class*="i-features-"] {
     margin-right: 10px;
     position: relative;
     top: 0px;
@@ -5265,7 +5266,6 @@ div[id^="attachment_"], div[id*=" attachment_"] {
     width: 24px;    
     background-position: center center;
 }
-
 
 #item-form-trial #table-container .rowspan {
     background: #fff;
@@ -5325,13 +5325,14 @@ div[id^="attachment_"], div[id*=" attachment_"] {
     border: 1px solid #e8e8e8;
 }
 #free_trial_registration .step-1 {
-    padding: 30px 40px;
+    padding: 15px 40px;
 }
 
 #free_trial_registration div.step-1 > h1 {
     font-size: 17px;
     font-weight: bold;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
+    margin-top: 0px;
 }
 
 #free_trial_registration section {
@@ -5354,7 +5355,8 @@ div[id^="attachment_"], div[id*=" attachment_"] {
     border: 1px solid #e8e8e8;
     background: #fff;
     padding: 5px;
-    height: 23px;
+    height: 27px;
+    line-height: 12px;
     font-size: 12px;
 }
 
@@ -5385,7 +5387,7 @@ div[id^="attachment_"], div[id*=" attachment_"] {
 }
 
 #free_trial_registration .block-captcha {
-    margin-top: 30px;
+    margin-top: 15px;
 }
 
 #free_trial_registration .block-captcha > label {
@@ -5422,7 +5424,7 @@ div[id^="attachment_"], div[id*=" attachment_"] {
 #free_trial_registration .block-captcha > div.box-captcha-input > span {
     font-size: 11px;
     position: relative;
-    top: 3px;
+    top: 6px;
 }
 
 #free_trial_registration .captcha-input {

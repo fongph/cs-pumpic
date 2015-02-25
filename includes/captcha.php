@@ -9,10 +9,9 @@ $b_dir = dirname( $_inc ); // folder sites directory
 
 require_once $_inc.'/lib/SimpleCaptcha.php';
 
-
 $captcha = new SimpleCaptcha();
-$captcha->width = 317;
-$captcha->height = 48;
+$captcha->width = (isset($_GET['width'])) ? (int)$_GET['width'] : 317;
+$captcha->height = (isset($_GET['height'])) ? (int)$_GET['height'] : 48;
 
 // OPTIONAL Change configuration...
 // $captcha->wordsFile = dirname(__FILE__). "/resources/words/es.php";

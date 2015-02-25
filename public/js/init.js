@@ -1118,7 +1118,13 @@ $(document).ready(function(){
    if($('.box-captcha').length) {
        $('.update-captcha, .a-update-captcha').on('click', function(event) {
            event.preventDefault();
-           $('.box-captcha').find('#img-captcha').attr('src', '/captcha.html?'+Math.random());
+           
+           var _src = '/captcha.html?'+Math.random();
+           if($(this).attr('attr-width') && $(this).attr('attr-height')) {
+               _src = '/captcha.html?width='+$(this).attr('attr-width')+'&height='+$(this).attr('attr-height')+'&'+Math.random();
+           }
+           
+           $('.box-captcha').find('#img-captcha').attr('src', _src);
            $('form[name="form-registration"], form[name="free_trial_registration"]').find('input[name="captcha"]').focus();
            return false;
        });

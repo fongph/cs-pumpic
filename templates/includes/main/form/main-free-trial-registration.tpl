@@ -12,7 +12,7 @@
        {/if}
 
        {if $getOut._error}
-           <div class="box-error text-center">
+           <div class="box-error text-left">
                 <p class="bg-danger">{$getOut._error}</p>
            </div>
        {/if}

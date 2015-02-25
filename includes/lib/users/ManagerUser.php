@@ -32,6 +32,7 @@ class ManagerUser extends Manager
 {
     const SITE_ID = 1;
     const LANG = 'en-GB';
+    const ERROR_USER_ALREADY_EXISTS_EXCEPTION = 'Your email address is already registered with Pumpic. Restore <a href="/restore.html">password</a>?'; // This email exists already.
     
     static $_obj;
     
@@ -116,7 +117,7 @@ class ManagerUser extends Manager
     {
         $_type = 'prod';
         if (in_array(@$_SERVER['REMOTE_ADDR'], ['127.0.0.1', '::1'])) {
-             // $_type = 'dev';
+              // $_type = 'dev';
         }
         return $this -> _db[ $_type ];
     }
@@ -251,7 +252,7 @@ class ManagerUser extends Manager
                self::$_obj -> _respons['_error'] = 'System Error! User not created!'; // ????
             
         } catch( UserAlreadyExistsException $e ) { 
-            self::$_obj -> _respons['_error'] = 'This email exists already.';
+            self::$_obj -> _respons['_error'] = self::ERROR_USER_ALREADY_EXISTS_EXCEPTION;
         } catch( InvalidSenderObjectException $e ) {
             self::$_obj -> _respons['_error'] = ($e ->getMessage()) ? $e ->getMessage() : 'System Error! Email not send!'; // ????    
         } catch (Exception $ex) {
@@ -284,7 +285,7 @@ class ManagerUser extends Manager
                self::$_obj -> _respons['_error'] = 'System Error! User not created!'; // ????
             
         } catch( UserAlreadyExistsException $e ) { 
-            self::$_obj -> _respons['_error'] = 'This email exists already.';
+            self::$_obj -> _respons['_error'] = self::ERROR_USER_ALREADY_EXISTS_EXCEPTION;
         } catch( InvalidSenderObjectException $e ) {
             self::$_obj -> _respons['_error'] = ($e ->getMessage()) ? $e ->getMessage() : 'System Error! Email not send!'; // ????    
         } catch (Exception $ex) {

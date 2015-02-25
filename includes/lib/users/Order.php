@@ -112,8 +112,9 @@ class Order extends ManagerUser
         if($userID){
             $order->setUserId($userID);
         }
-         $order->setStatus(OrderRecord::STATUS_PENDING) // ->setStatus(CS\Models\Order\OrderRecord::STATUS_PENDING) ::STATUS_CREATED 
+         $order->setStatus(OrderRecord::STATUS_COMPLETED) // ->setStatus(CS\Models\Order\OrderRecord::STATUS_PENDING) ::STATUS_CREATED 
                 ->setPaymentMethod(OrderRecord::PAYMENT_METHOD_INTERNAL)
+                ->setTrial(true) 
                 -> setLocation( IP::getCountry($ip) );
          
          if($phone)

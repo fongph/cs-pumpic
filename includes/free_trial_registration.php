@@ -41,7 +41,7 @@ $_result = array(
     '_success' => false,
 );
     
-if($obj -> getLoginUser()) $obj -> _redirect('/');
+// if($obj -> getLoginUser()) $obj -> _redirect('/');
 
 // $_session_order = $obj -> getSession('pumpic_order');
 //$_productID = (isset($_GET['productID']) and !empty($_GET['productID'])) ? $_GET['productID'] : false;

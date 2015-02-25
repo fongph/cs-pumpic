@@ -19,13 +19,13 @@
         
         <!-- CONTENT -->
         {include file='../includes/content/info/info-promo.tpl'
-            imgUrl = "header_banners/bg_header_smartphone.png"
+            imgUrl = "header_banners/bg_features_call_437x226.png"
             imgAlt = "Smartphone monitoring"
             imgAlign = "right"
             textAlign = "right"
-            title = "Smartphone Monitoring<br />Parental Control App"
+            title = "Smartphone <br/> Parental Monitoring App"
             description = "Protect your children with Pumpic app.<br />
-Control your kids smartphone usage remotely"
+Control your kids smartphone usage remotely."
             trial = "yes"
         }
         

@@ -156,17 +156,10 @@ class Order extends ManagerUser
             if($license->getId())
                 $this -> setUserOption($userID, 'internal-trial-license', $license->getId());
             
+            // auth
+            $this -> authUserID( $userID ); 
+            
         }
-        
-//        $this -> _gateway->setStoreId( $this -> storeId )
-//                ->setProductId($orderProduct->getReferenceNumber())
-//                ->setReferenceData($order->getId() . '-' . $order->getHash())
-//                ->setInstant();
-//                // ->setTestMode(); // не обязательно
-//
-//        $response =$this -> _gateway->purchaseProduct()->send();
-//
-//        $redirectUrl = $response->getRedirectUrl();
         
         return true;
     } 
@@ -257,10 +250,9 @@ class Order extends ManagerUser
     }
     
     // free_trial_registration
-    public function createOrderByFreeTrial( $productID, $phone, $name ) {
+    public function createOrderByFreeTrial( $userID, $productID, $phone, $name ) {
         if($this -> hasOrder($productID)) {
-            $user_id = $this ->getUserID();
-            return $this -> _createOrderByFreeTrial( $user_id ? $user_id : null, $productID, $phone, $name );
+            return $this -> _createOrderByFreeTrial( $userID ? $userID : null, $productID, $phone, $name );
         } else {
             return false;
         }

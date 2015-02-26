@@ -206,8 +206,20 @@ class ManagerUser extends Manager
         return $content;
     }
    
+    /* Авторизация по UserID */
+    protected function authUserID( $user_id ) {
+        if(empty($user_id)) return false;
+        $_data = $this->getUserDataById( self::SITE_ID, (int)$user_id );        
+        if($_data) {
+            $this -> _auth ->setIdentity( $_data );
+            self::$_obj -> _data  = $this -> _auth->getIdentity();
+            return true;
+        } else
+            return false;
+    }
+    
     /* Авторизация */
-    private function _login(\ArrayAccess $params, $remember = false) 
+    protected function _login(\ArrayAccess $params, $remember = false) 
     {
         
         try {
@@ -262,18 +274,19 @@ class ManagerUser extends Manager
     }
     
     // freeTrialRegistration
-    public function getfreeTrialRegistration() 
+    public function getCreateUsersFreeTrial() 
     {
-        $this -> _freeTrialRegistration( self::$_obj -> getParams() );
+        $this -> _createUsersFreeTrial( self::$_obj -> getParams());
         return $this;
     }
     
     // method freeTrialRegistration
-    private function _freeTrialRegistration(\ArrayAccess $params) 
+    private function _createUsersFreeTrial(\ArrayAccess $params) 
     {
         try {
             $user_id = $this -> createUserFreeTrial($params['siteId'], $params['email'], $params['name']);
-            if((int)$user_id) {
+            self::$_obj -> _respons['user_id'] = $user_id;
+            /*if((int)$user_id) {
                 
                 $_data = $this->getUserDataById( self::SITE_ID, (int)$user_id );
                 $this -> _auth ->setIdentity( $_data );
@@ -281,8 +294,11 @@ class ManagerUser extends Manager
                 self::$_obj -> _data  = $this -> _auth->getIdentity();
                 self::$_obj -> _respons['_success'] = true;
                 
+            } else if((int)$user_id and !$_auth) {
+                self::$_obj -> _respons['_success'] = true;
             } else
                self::$_obj -> _respons['_error'] = 'System Error! User not created!'; // ????
+            */
             
         } catch( UserAlreadyExistsException $e ) { 
             self::$_obj -> _respons['_error'] = self::ERROR_USER_ALREADY_EXISTS_EXCEPTION;

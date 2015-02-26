@@ -5174,7 +5174,8 @@ div[id^="attachment_"], div[id*=" attachment_"] {
 #item-form-trial div.header {
     display: inline-block;
     background: #2cbdb3;
-    padding: 15px 32px;
+/*    padding: 15px 32px;*/
+    padding: 10px 32px;
     height: 100%;
 }
 
@@ -5325,7 +5326,7 @@ div[id^="attachment_"], div[id*=" attachment_"] {
     border: 1px solid #e8e8e8;
 }
 #free_trial_registration .step-1 {
-    padding: 15px 40px;
+    padding: 10px 40px;
 }
 
 #free_trial_registration div.step-1 > h1 {
@@ -5336,7 +5337,7 @@ div[id^="attachment_"], div[id*=" attachment_"] {
 }
 
 #free_trial_registration section {
-    margin-bottom: 14px;
+    margin-bottom: 10px;
 }
 
 #free_trial_registration section:last-child {
@@ -5574,7 +5575,7 @@ i.white-arrows-right {
     }
     
     #free_trial_registration .step-1 {
-        padding: 30px 40px;
+        padding: 10px 40px;
     }
     
     #free_trial_registration .box-captcha #img-captcha {
@@ -5607,7 +5608,7 @@ i.white-arrows-right {
     }
     
     #free_trial_registration .step-1 {
-        padding: 30px 40px;
+        padding: 10px 40px;
     }
     
     #free_trial_registration .box-captcha #img-captcha {
@@ -5640,7 +5641,7 @@ i.white-arrows-right {
     }
     
     #free_trial_registration .step-1 {
-        padding: 30px 40px;
+        padding: 10px 40px;
     }
     
     #free_trial_registration .box-captcha #img-captcha {

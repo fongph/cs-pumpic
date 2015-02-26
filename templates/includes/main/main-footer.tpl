@@ -66,4 +66,6 @@
 
 {include file="$module"}
 
-{*include file='../../includes/main-popUp.tpl'*}
+<!-- bxSlider -->
+<script src="{$js}/bxslider/jquery.bxslider.js"></script>
+<script src="{$js}/bxslider/bxInit.js"></script>

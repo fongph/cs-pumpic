@@ -20,6 +20,9 @@
         <!-- currence -->
         <link href="{$css}/curr.css?{style_cache data='2015-02-09'}" rel="stylesheet">
         
+        <!-- bxSlider -->
+        <link href="{$css}/jquery.bxslider.css" rel="stylesheet">
+        
 	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 	<!--[if lt IE 9]>

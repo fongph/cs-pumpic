@@ -1,7 +1,8 @@
 {include file='../includes/main/main-header.tpl'
     robots="no" 
-    title="Smartphone Monitoring App - Pumpic.com"
-    description="Pumpic is a new solution for parental control mobile monitoring. Track your children’s smartphone usage, follow incoming and outbound calls, monitor browsing history and text messages, track GPS location and social network activity on Android devices with Pumpic."
+    title="Kids Smartphone Monitoring Software App for Parents"
+    description="Pumpic app is a new software solution for parents to control mobile phones of their children. Tracking kid's smartphone usage, incoming and outbound calls, monitor browsing history and text messages, GPS location and social network activity on Android and iOS devices with."
+    keywords="track kids phone tracking parental controls iphone app child android monitoring mobile"
 }    
     
 <body>
@@ -24,12 +25,16 @@
             imgAlign = "right"
             textAlign = "right"
             title = "Smartphone <br/> Parental Monitoring App"
-            description = "Protect your children with Pumpic app.<br />
-Control your kids smartphone usage remotely."
+            description = "Monitor your kids smartphone usage remotely<br />
+            on iPhone, iPad, iPod and Android devices."
             trial = "yes"
         }
         
-         {include file='../includes/content/plans.tpl' }
+        {include file='../includes/content/secures.tpl' blockBg="light"}
+        {include file='../includes/content/features-table.tpl' }  
+
+
+        {include file='../includes/content/plans.tpl' }
                 
          {* Template: FLY BUTTONS
         *}
@@ -40,22 +45,17 @@ Control your kids smartphone usage remotely."
         }
          
         {include file='../includes/content/ipad.tpl' 
-        blockBg="dark"
+        blockBg="light"
         imgUrl = "icons/lending_features_smartphone_monitoring.png"
-        imgAlt = "Smartphone Monitoring"
-        title = "Smartphone Monitoring"
-        description = "Try Control Panel demo to see Smartphone Monitoring in use.<br />
-Buy Pumpic to secure your kids and track their smartphones right now."
-}
+        imgAlt = "Easy-to-Use Control Panel"
+        title = "Easy-to-Use Control Panel"
+        description = "Right after installing Pumpic, all the data from the target mobile phone will be sent to your Control Panel. It can be accessed from any browser and any device, including PCs, smartphones and tablets. In Control Panel you can not only view the information, but also set restrictions and block some of activities on the target device."
+        }
 
-		{include file='../includes/content/why-pumpic.tpl' 
-            blockBg="light"
-        }
-        {include file='../includes/main/main-testimonials.tpl' }       
-		{include file='../includes/content/secures.tpl'
-            blockBg="light"
-        }
-        {include file='../includes/content/features-table.tpl' }  
+
+        {include file='../includes/content/how-get-pumpic.tpl' }    
+        {include file='../includes/main/main-testimonials.tpl' blockBg="light"}       
+    
         {*include file='../includes/content/banner-promo.tpl'*}
         {*{include file='../includes/content/banners/banner-promo-trial.tpl'}*}
         

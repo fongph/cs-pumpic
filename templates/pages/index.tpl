@@ -63,6 +63,7 @@
         }
         
         {include file='../includes/main/main-testimonials.tpl'
+                sliders = "false"
                 blockBg="light"} 
         
         {include file='../includes/content/how-get-pumpic.tpl'}        

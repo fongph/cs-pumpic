@@ -117,14 +117,29 @@
                         </div>
                 </div>
         </div>
-</div>                                  
-<div class="dark">
+</div>   
+                                        
+{include file='../includes/content/features-table.tpl'
+        title = "Set Ultimate Parental Control on Android"
+        description = "Mobile technologies introduced new opportunities to our children. It is rather hard at 
+                            once to imagine the entire range of functions a single smartphone can fulfil. That’s why when it comes to features 
+                            that Android parental control app should include, it is very important to consider all of them. Listed below 
+                            reflects Pumpic monitoring abilities, and which particular mobile phone options you will cover by using it. 
+                            The app will help you follow each and every aspect of your kids’ life as well as all spheres of activity remotely."
+        blockBg="dark"
+}                                        
+                                        
+{*<div class="dark">
         <div class="container">
                 <h2 class="text-center">Set Ultimate Parental Control on Android</h2>
                 <div class="row">
                     
                     <div id="table-container" class="table-col-3 table-md-col-3 table-sm-col-3">
-                        <article class="text-center">Mobile technologies introduced new opportunities to our children. It is rather hard at once to imagine the entire range of functions a single smartphone can fulfil. That’s why when it comes to features that Android parental control app should include, it is very important to consider all of them. Listed below reflects Pumpic monitoring abilities, and which particular mobile phone options you will cover by using it. The app will help you follow each and every aspect of your kids’ life as well as all spheres of activity remotely.</article>
+                        <article class="text-center">Mobile technologies introduced new opportunities to our children. It is rather hard at 
+                            once to imagine the entire range of functions a single smartphone can fulfil. That’s why when it comes to features 
+                            that Android parental control app should include, it is very important to consider all of them. Listed below 
+                            reflects Pumpic monitoring abilities, and which particular mobile phone options you will cover by using it. 
+                            The app will help you follow each and every aspect of your kids’ life as well as all spheres of activity remotely.</article>
                         <section>
                             <div class="tab col-item-3 col-md-item-3 col-sm-item-3">
                                 <ul>
@@ -161,7 +176,7 @@
                     
                 </div>
         </div>
-</div>
+</div> *}
 
 {Content 
     title="Inherent Dangers a Cell Phone Hides"

@@ -117,14 +117,29 @@
                         </div>
                 </div>
         </div>
-</div>                                  
-<div class="dark">
+</div>   
+                                        
+{include file='../includes/content/features-table.tpl'
+        title = "Parental Control Features by Pumpic"
+        description = "Your children live a full life and mobile devices help them explore it. Photo and video 
+                            shooting, distant communication, mailing, game playing and social connections are some of options these gadgets 
+                            provide. Pumpic covers all spheres of your kids’ activity and enables you to take care of them remotely. 
+                            The features listed below show the variety of iPhone parental control abilities, which will let you secure your 
+                            children’s happiness."
+        blockBg="dark"
+}                                        
+                                        
+{*<div class="dark">
         <div class="container">
                 <h2 class="text-center">Parental Control Features by Pumpic</h2>
                 <div class="row">
                     
                     <div id="table-container" class="table-col-3 table-md-col-3 table-sm-col-3">
-                        <article class="text-center">Your children live a full life and mobile devices help them explore it. Photo and video shooting, distant communication, mailing, game playing and social connections are some of options these gadgets provide. Pumpic covers all spheres of your kids’ activity and enables you to take care of them remotely. The features listed below show the variety of iPhone parental control abilities, which will let you secure your children’s happiness.</article>
+                        <article class="text-center">Your children live a full life and mobile devices help them explore it. Photo and video 
+                            shooting, distant communication, mailing, game playing and social connections are some of options these gadgets 
+                            provide. Pumpic covers all spheres of your kids’ activity and enables you to take care of them remotely. 
+                            The features listed below show the variety of iPhone parental control abilities, which will let you secure your 
+                            children’s happiness.</article>
                         <section>
                             <div class="tab col-item-3 col-md-item-3 col-sm-item-3">
                                 <ul>
@@ -161,7 +176,7 @@
                     
                 </div>
         </div>
-</div>
+</div>*}
 
 {Content 
     title="Keep Your Eyes Open"

@@ -120,14 +120,29 @@
                         </div>
                 </div>
         </div>
-</div>                                  
-<div class="dark">
+</div>   
+                                        
+{include file='../includes/content/features-table.tpl'
+        title = "More of Pumpic Features"
+        description = "In a large variety of available software, it is rather a challenge to find a reliable app 
+                            for parents to monitor text messages on their kids’ cell phones. The very first thing to consider here is features 
+                            such an application offers. Except text message monitoring you will surely want to track your kids’ location, 
+                            online activity and control the time they spend playing games. Below is the entire list of functions Pumpic 
+                            provides to protect your kids and secure their happiness."
+        blockBg="dark"
+} 
+                                        
+{*<div class="dark">
         <div class="container">
                 <h2 class="text-center">More of Pumpic Features</h2>
                 <div class="row">
                     
                     <div id="table-container" class="table-col-3 table-md-col-3 table-sm-col-3">
-                        <article class="text-center">In a large variety of available software, it is rather a challenge to find a reliable app for parents to monitor text messages on their kids’ cell phones. The very first thing to consider here is features such an application offers. Except text message monitoring you will surely want to track your kids’ location, online activity and control the time they spend playing games. Below is the entire list of functions Pumpic provides to protect your kids and secure their happiness. </article>
+                        <article class="text-center">In a large variety of available software, it is rather a challenge to find a reliable app 
+                            for parents to monitor text messages on their kids’ cell phones. The very first thing to consider here is features 
+                            such an application offers. Except text message monitoring you will surely want to track your kids’ location, 
+                            online activity and control the time they spend playing games. Below is the entire list of functions Pumpic 
+                            provides to protect your kids and secure their happiness. </article>
                         <section>
                             <div class="tab col-item-3 col-md-item-3 col-sm-item-3">
                                 <ul>
@@ -164,7 +179,7 @@
                     
                 </div>
         </div>
-</div>
+</div> *}
 
 {Content 
     title="Why to Follow Kids’ Text Messages"

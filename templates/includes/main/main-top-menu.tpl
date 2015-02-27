@@ -79,7 +79,7 @@
                             </li>
 
                             <li>
-                                <a href="http://cp.{$domain}/" class="btn btn-sm btn-orange btn-success hidden-lg cp-login"> Demo</a>
+                                <a href="http://demo.{$domain}/" class="btn btn-sm btn-orange btn-success hidden-lg cp-login"> Demo</a>
                             </li>
                             
                             {*if ''|hasUser}

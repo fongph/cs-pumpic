@@ -21,10 +21,6 @@
                                                         <a href="/contact-us.html">Contact us</a>
                                                     </li> */ ?>
                                                     
-                                                    <li>
-                                                        <a href="/faq.html">Contact us</a>
-                                                    </li>
-                                                    
                                                      <li>
                                                         <a href="/security/">Security</a>
                                                     </li>

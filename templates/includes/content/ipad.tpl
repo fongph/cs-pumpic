@@ -29,7 +29,7 @@
                                                class="btn-orange featured-link link-hl ga-action-click"
                                                 ga-action ="click"
                                                 ga-category="demo link"
-                                                ga-label="body">View demo{*<i class="icon-angle-double-right"></i>*}</a>
+                                                ga-label="body">Live Demo{*<i class="icon-angle-double-right"></i>*}</a>
                                         </li>
                                         {/if}
                                         {if $showVisitStore eq "true"}

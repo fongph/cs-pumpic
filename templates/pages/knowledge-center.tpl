@@ -60,7 +60,11 @@
         }
         <!-- END CONTENT -->    
            
-        
+        <!-- RECOMMENDED -->
+        {*
+            Template: RECOMMENDED
+        *}    
+        {include file='../includes/main/main-recommended.tpl'}
         
         <!-- FOOTER -->
         {*

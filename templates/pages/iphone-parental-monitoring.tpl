@@ -24,7 +24,7 @@
             imgAlign = "right"
             imgVerticalAlign = "bottom"
             textAlign = "right"
-            title = "Parental Control</br> Software for iPhone"
+            title = "Parental Control Software for iPhone"
             description = "Keep track of your kids’ iOS devices remotely:"
             trial = "yes"
              }
@@ -246,6 +246,12 @@
         
         {include file='../includes/content/banners/index.tpl'}
         <!-- END CONTENT -->    
+        
+        <!-- RECOMMENDED -->
+        {*
+            Template: RECOMMENDED
+        *}    
+        {include file='../includes/main/main-recommended.tpl'}
            
         <!-- FOOTER -->
         {*

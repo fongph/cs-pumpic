@@ -15,16 +15,26 @@
                 cache_id = "includes_main_main-top-menu"
                 nocache
         }	
+        
+        
+                {include file='../includes/content/how-get-pumpic.tpl'
+                                    blockBg = "very_easy"
+                                    title = "How Pumpic Mobile Tracking App Works"
+                                    style = "images"} 
+        
 		<div class="very_easy">
 			<div class="container">
-				<div class="row">
+                            
+                                
+                            
+				{*<div class="row">
 					<div class="col-lg-10 col-lg-offset-1">
 						<div class="row">
 
 						</div>
 					</div>
-				</div>
-				<div class="row">
+				</div>*}
+				{*<div class="row">
 					<h2>
                                             How Pumpic Mobile Tracking App Works
                                         </h2>
@@ -57,11 +67,13 @@
 							</div>
 						</div>
 					</ul>
-					{*<div class="arrow_bottom">
+					<!-- <div class="arrow_bottom">
                                             <span><div class="no-click-video-guide"><i class="icon-angle-down"></i></div></span> 
                                             <h3>INSTALLATION VIDEO GUIDE</h3>
-					</div>*}
-				</div>
+					</div> -->
+				</div>*}
+                                
+                                
 				{*<div class="row">
 					<ul class="thumbs_video">
 						<li class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
@@ -103,6 +115,13 @@
                 {*{include file='../includes/content/banners/banner-promo-trial.tpl'}*}
                 
                 {include file='../includes/content/banners/index.tpl'}
+                
+                <!-- RECOMMENDED -->
+                {*
+                    Template: RECOMMENDED
+                *}    
+                {include file='../includes/main/main-recommended.tpl'}
+                
                 <!-- FOOTER -->
                 {*
                     Template: FOOTER

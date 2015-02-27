@@ -92,11 +92,11 @@
                                                 </h3>
                                                 <span>
                                                     <i class="icon-ok">
-                                                    </i>Remote control
+                                                    </i>Remote activity control{*Remote control*}
                                                 </span>
                                                 <span>
                                                     <i class="icon-ok">
-                                                    </i>Software updates
+                                                    </i>Removal protection{*Software updates*}
                                                 </span>
                                                 <span>
                                                     <i class="icon-ok">

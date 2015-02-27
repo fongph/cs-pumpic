@@ -63,10 +63,14 @@
         }
         
         {include file='../includes/main/main-testimonials.tpl'
+                title = "Trusted by Over 10,000 Customers Wordwide"
                 sliders = "false"
                 blockBg="light"} 
         
-        {include file='../includes/content/how-get-pumpic.tpl'}        
+        {include file='../includes/content/how-get-pumpic.tpl'
+            title = ""
+            style = "static"
+        }        
                 
                 
         {include file='../includes/content/why-pumpic.tpl'
@@ -81,6 +85,12 @@
         {include file='../includes/content/banners/index.tpl'}
         <!-- END CONTENT -->    
            
+        <!-- RECOMMENDED -->
+        {*
+            Template: RECOMMENDED
+        *}    
+        {include file='../includes/main/main-recommended.tpl'}
+        
         <!-- FOOTER -->
         {*
             Template: FOOTER

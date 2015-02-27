@@ -18,7 +18,7 @@
                              
                         </td>
                         {/if}
-                        <td class="col-s-sm-12 col-xs-sm-12 {if $imgAlign == "center"} col-md-12 col-lg-12  {else}col-md-6 col-lg-8{/if}">
+                        <td class="col-s-sm-12 col-xs-sm-12 {if $imgAlign == "center"} col-md-12 col-lg-12  {else}col-md-6 col-lg-6{/if}">
                             
                             <div>
                                 <div class="visual-text {if $textAlign}block-text-{$textAlign}{else}block-text-right{/if}">
@@ -55,7 +55,7 @@
 
                                     {if isset($trial) && $trial == 'yes'}
                                         
-                                        <div class='mt20'>
+                                        <div class='mt10'>
                                             <div id='block-trial'>
                                                 <section>
                                                     <span class='text-trial'>

@@ -156,6 +156,13 @@
                 {*{include file='../includes/content/banners/banner-promo-trial.tpl'}*}
                 
                 {include file='../includes/content/banners/index.tpl'}
+                
+                <!-- RECOMMENDED -->
+                {*
+                    Template: RECOMMENDED
+                *}    
+                {include file='../includes/main/main-recommended.tpl'}
+                
 		<!-- FOOTER -->
                 {*
                     Template: FOOTER

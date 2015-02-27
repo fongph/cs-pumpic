@@ -27,7 +27,8 @@
 						<p class="text-justify">We are a team of talented designers and developers, who joined forces to create unique 
                                                     and user-friendly smartphones monitoring solutions. Pumpic App was designed to help parents take care of 
                                                     their children and protect them using smartphone monitoring.The application runs on iOS and Android 
-                                                    operating system devices only.<br /> If you have any questions or suggestions, which will help improve our services, please feel free to contact us using the form below or via email.</p>
+                                                    operating system devices only.</p> 
+                                                <p class="text-justify">If you have any questions or suggestions, which will help improve our services, please feel free to contact us using the form below or via email.</p>
 						<p>
                                                     <a class="link_bordered">
                                                         <strong>Customer Support Team</strong> – <span id="emai-support-v2"></span>

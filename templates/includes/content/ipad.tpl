@@ -1,5 +1,5 @@
-{assign 'showViewDemo' 'true'}
-{assign 'showVisitStore' 'false'}
+{assign 'showViewDemo' 'false'}
+{assign 'showVisitStore' 'true'}
 {assign 'showFreeTrial' 'true'}
 
 <div class="{if $blockBg}{$blockBg}{else}dark{/if}">

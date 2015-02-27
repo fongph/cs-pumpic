@@ -17,9 +17,14 @@
                                                     <li>
                                                         <a href="/policy.html#refund-policy">Refund policy</a>
                                                     </li>
-                                                    <li>
+                                                    <?php /*<li>
                                                         <a href="/contact-us.html">Contact us</a>
+                                                    </li> */ ?>
+                                                    
+                                                    <li>
+                                                        <a href="/faq.html">Contact us</a>
                                                     </li>
+                                                    
                                                      <li>
                                                         <a href="/security/">Security</a>
                                                     </li>

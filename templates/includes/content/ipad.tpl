@@ -1,6 +1,6 @@
 {assign 'showViewDemo' 'true'}
-{assign 'showVisitStore' 'true'}
-{assign 'showFreeTrial' 'false'}
+{assign 'showVisitStore' 'false'}
+{assign 'showFreeTrial' 'true'}
 
 <div class="{if $blockBg}{$blockBg}{else}dark{/if}">
     <div class="container">

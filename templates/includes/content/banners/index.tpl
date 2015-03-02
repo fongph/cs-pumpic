@@ -1,4 +1,4 @@
-{assign 'var' 'free_trial'}
+{assign 'var' 'buy'}
 
 {if $var eq 'free_trial'}
     {assign 'url' './lib/banner-promo-trial.tpl'}

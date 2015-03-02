@@ -26,7 +26,8 @@
             textAlign = "right"
             title = "Choosing a Mobile App to Spy on Text Messages"
             description = "Follow your kids’ SMS communication:"
-            trial = "yes"
+            trial = "no"
+            listText = "monitor SMS messages sent and received|control contacts, block misgiving senders|prevent children from bullies and online predators"
           }
           
         {*listText = "monitor SMS messages sent and received|control contacts, block misgiving senders|prevent children from bullies and online predators"*}  

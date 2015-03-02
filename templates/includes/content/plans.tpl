@@ -1,4 +1,4 @@
-{*<div class="plans">
+<div class="plans">
     <div class="container gutter-narrow">
         <div class="row">
             <div class="col-sm-7 col-md-7 col-lg-7 col-sm-offset-2 col-md-offset-2 col-lg-offset-2">
@@ -46,4 +46,4 @@
             {include file='../main/main-plans-links.tpl'} 
         </div>
     </div>
-</div>*}
+</div>

@@ -27,8 +27,10 @@
             title = "Smartphone <br/> Parental Monitoring App"
             description = "Monitor your kids smartphone usage remotely<br />
             on iPhone, iPad, iPod and Android devices."
-            trial = "yes"
+            trial = "no"
         }
+        
+        {include file='../includes/content/plans.tpl' }
         
         {include file='../includes/content/secures.tpl' blockBg="light"}
         {include file='../includes/content/features-table.tpl'
@@ -37,9 +39,7 @@
         Just to remind you of Pumpic best features: monitor calls and text messages (even deleted ones); tack GPS location (current and route history); view internet browsing history, bookmarks and applications; follow online activity, including social networks, IM chats and emails; view photos and videos shot or downloaded from the Internet. And even more: block SMS containing bad words or threats; block inappropriate web sources and applications; use offline SMS commands to control the target device remotely; track each button pressed with keylogger function."
         blockBg="dark"
         } 
-
-        {include file='../includes/content/plans.tpl' }
-                
+    
          {* Template: FLY BUTTONS
         *}
         {include file='../includes/content/fly/box-buttons.tpl'

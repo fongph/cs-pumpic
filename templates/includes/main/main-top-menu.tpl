@@ -35,7 +35,7 @@
                                 <a href="/">Home</a>
                             </li>
                             <li {if $topmenu_active=='compatibility'} class="active"{/if}>
-                                <a href="/compatibility.html">Compatibility</a>
+                                <a href="/compatibility/">Compatibility</a>
                             </li>
                             <li class="{if $topmenu_active=='pricing'}active{/if} ga-action-click" 
                                 id="header-menu-store-link"

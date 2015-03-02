@@ -36,7 +36,7 @@
 										<a href="<?php echo getStaticUrl();?>/">Home</a>
 									</li>
 									<li>
-										<a href="<?php echo getStaticUrl();?>/compatibility.html">Compatibility</a>
+										<a href="<?php echo getStaticUrl();?>/compatibility/">Compatibility</a>
 									</li>
 									<li>
 										<a href="<?php echo getStaticUrl();?>/store.html">Store</a>

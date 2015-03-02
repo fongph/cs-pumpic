@@ -1,7 +1,6 @@
 {strip}
 
 {include file='../includes/main/main-header.tpl'
-    robots="no" 
     title="High-grade tracking app with multiple functions"
     description="Pumpic is an innovative solution, which takes Mobile Phone Monitoring on a reasonably new level. Find out more functions of Pumpic and evaluate the progress it made."
 }

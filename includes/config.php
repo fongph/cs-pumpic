@@ -65,7 +65,10 @@ $config = array(
                 'currency.html'            => 'currency.php', 
             
                 // popUp send email
-                'popup_email_send.html'   => 'popup_email_send.php',   
+                'popup_email_send.html'   => 'popup_email_send.php',
+            
+                // robots
+                'robots.txt'            => 'robots.php'
 	),
     
     'db_phones' => array(

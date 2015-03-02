@@ -1,6 +1,5 @@
 {strip}
 {include file='../includes/main/main-header.tpl'
-    robots="no" 
     title="Learn how to use Pumpic"
     description="Pumpic is easy-to-use and quick-to-install Mobile Phone Monitoring Software. It will not take you long to get used to its functions and even much less to run the app. Find out more about how to use Pumpic."
 }

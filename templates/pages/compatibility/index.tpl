@@ -48,7 +48,7 @@
                                                         <div class="thumb">
                                                                 <span class="ico-left"><i class="icon-android"></i></span>
                                                                 <span>OS:<strong> Android</strong></span>
-                                                                <span>Versions:<strong> 2.2 or later (rooted)</strong></span>
+                                                                <span>Versions:<strong> 2.2 or later</strong></span>
                                                                 <a href="#" class="text-succes search-category" data-os="Android">View all supported Android devices</a>
                                                         </div>
                                                 </div>

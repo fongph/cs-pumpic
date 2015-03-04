@@ -13,7 +13,7 @@
     <meta charset="<?php bloginfo( 'charset' ); ?>" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <title><?php wp_title( '|', true, 'right' ); ?></title>
+    <title><?php wp_title( '|', true, 'right' ); ?> <?php /* | Sign up for Pumpic Blog */ ?></title>
 
     <link rel="shortcut icon" type="image/png" href="<?php echo getStaticUrl();?>/images/favicon.png"/>
     
@@ -54,7 +54,7 @@
     <script src="<?php echo getStaticUrl();?>/js/jquery.ba-hashchange.min.js"></script>
     <script src="<?php echo getStaticUrl();?>/js/jquery.total-storage.min.js"></script>
      <!-- close/ out Windows -->
-    <script src="<?php echo getStaticUrl();?>/js/outWindows.js"></script>
+    <?php /*<script src="<?php echo getStaticUrl();?>/js/outWindows.js"></script>*/ ?>
     
     <script src="<?php echo getStaticUrl();?>/js/wp/settings.js"></script>
     <script src="<?php echo getStaticUrl();?>/js/wp/init.js"></script>

@@ -50,16 +50,16 @@
                                 </div>
                                 <div>
                                     {nocache} 
-                                    <form method="POST" action="/buy.html" autocomplete="off">
-                                        <input type='hidden' name='price[productID]' value='19{*16*}' />
+                                    <form method="POST" action="/free-trial.html" autocomplete="off">
+                                        {*<input type='hidden' name='price[productID]' value='19' />*}
                                         <button class="btn-yellow ga-action-click" 
                                                 value="true" 
                                                 type="submit" 
                                                 name="price[submit]"
 
                                                 ga-action ="click"
-                                                ga-category="demo link"
-                                                ga-label="prices"
+                                                ga-category="trial"
+                                                ga-label="free trial"
                                                 >Try Now</button>
                                     </form>
                                     {/nocache} 

@@ -2,7 +2,6 @@
 {*formOrder post=$smarty.post*}
 
 {include file='../includes/main/main-header.tpl'
-    robots="no" 
     title="Pumpic Prices and Subscription Plans"
     description="Pumpic offers high-quality Cell Phone Tracking Software for a good price. Find out more about a price range and subscription plan types to choose the one suitable for your monitoring needs."
 }
@@ -92,11 +91,11 @@
                                                 </h3>
                                                 <span>
                                                     <i class="icon-ok">
-                                                    </i>Remote control
+                                                    </i>Remote activity control{*Remote control*}
                                                 </span>
                                                 <span>
                                                     <i class="icon-ok">
-                                                    </i>Software updates
+                                                    </i>Removal protection{*Software updates*}
                                                 </span>
                                                 <span>
                                                     <i class="icon-ok">

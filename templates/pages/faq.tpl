@@ -1,7 +1,6 @@
 {strip}
 
 {include file='../includes/main/main-header.tpl'
-    robots="no" 
     title="Frequently asked questions about Pumpic"
     description="Pumpic is easy-to-use and user-friendly Cell Phone Tracking App. Learn our FAQ section to find answers to all Pumpic related issues. You can also send your questions to us."
 }
@@ -20,10 +19,95 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-10 col-lg-offset-1">
+                                            
+                                            <!-- ContactUs -->
+                                            <div class="row text-center">
+						<h2>Contact Us</h2>
+						<p class="text-justify">We are a team of talented designers and developers, who joined forces to create unique and user-friendly smartphones monitoring solutions. Pumpic App was designed to help parents take care of their children and protect them using smartphone monitoring. The application runs on iOS and Android operating system devices only.</p> 
+                                                <p class="text-justify">If you have any questions or suggestions, which will help improve our services, please feel free to contact us using the form below or via email.</p>
+						<p>
+                                                    <a class="link_bordered">
+                                                        <strong>Customer Support Team</strong> – <span id="emai-support-v2"></span>
+                                                    </a><br />
+                                                    <a class="link_bordered">
+                                                        <strong>Billing Department</strong> – <span id="emai-billing"></span> {*billing@pumpic.com*}
+                                                    </a> 
+                                                    <br />
+                                                    <a class="link_bordered">
+                                                        <strong>Press and Media</strong> – <span id="emai-info"></span> {*info@pumpic.com*}
+                                                    </a>
+						</p>
+                                            </div>
+                                            
+                                            <div class="row">
+							<div class="form">
+								<form action="" class="form-contact-us" name="send-mail-contact-us" method="POST">
+									<fieldset>
+										<legend class="uppercase">Send Your Questions to Us</legend>
+										<div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3">
+                                                                                        <span class="info"></span>
+											<div class="form-group">
+												<input id="name" 
+                                                                                                       name="name" 
+                                                                                                       type="text" 
+                                                                                                       class="form-control text required" 
+                                                                                                       placeholder="Name*" 
+                                                                                                       value="" />
+											</div>
+                                                                                        
+											<div class="form-group">
+												<input id="email" 
+                                                                                                       name="email" 
+                                                                                                       type="email" 
+                                                                                                       class="form-control text required" 
+                                                                                                       placeholder="Email*" 
+                                                                                                       value="" />
+											</div>
+                                                                                        
+                                                                                    
+											<div class="form-group">
+												<select id="os" 
+                                                                                                        class="select" 
+                                                                                                        name="os">
+                                                                                                        <option value="0" selected>Choose your OS*</option>
+													<option value="iOS">iOS</option>
+													<option value="Android">Android</option>
+                                                                                                        <option value="Other">Other</option>
+													{*<option value="blackberry">BlackBerry</option>*}
+												</select>
+                                                                                                <input id="wos" 
+                                                                                                       name="wos" 
+                                                                                                       type="hidden" 
+                                                                                                       class="form-control text required" 
+                                                                                                       placeholder="Wos*" 
+                                                                                                       value="" />
+											</div>
+                                                                                        
+                                                                                    
+											<div class="form-group">
+												<textarea id="description" 
+                                                                                                          rows="10" 
+                                                                                                          name="description" 
+                                                                                                          class="required" 
+                                                                                                          placeholder="Question*"></textarea>
+											</div>
+                                                                                        
+                                                                                        <div class="fatal-error"></div>
+                                                                                        
+											<p>Learn more from our {*<a href="/faq.html">*}FAQ{*</a>*} before submitting an application.</p>
+											<button class="btn btn-orange mod-center event-submit">Submit Ticket <!-- btn-warning <i class="icon-right-open"></i>-->
+											</button>
+										</div>
+									</fieldset>
+								</form>
+							</div>
+                                            </div>
+                                            
+                                            <!-- End -->
+                                            
 						<div class="row">
 							<div class="col-lg-12">
-                                                                <h2 {*class="uppercase"*}>Frequently Asked Questions</h2>   
-								{*<h2>FREQUENTLY ASKED QUESTIONS</h2>*}
+                                                                <h2>Frequently Asked Questions</h2>
 								<div class="tab_category">
 									{include file='../includes/content/faq-category.tpl'}
 									<div class="box_category">
@@ -220,7 +304,7 @@
 												<a id="billing" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse27">What payment methods are available?</a>
 												<div id="collapse27" class="collapse">
 													<p>There are multiple payment methods available for the convenience of our customers. They include:</p>
-                                                                                                        <ul>
+                                                                                                        <ul class='list-items'>
                                                                                                             <li>Visa/MasterCard</li> 
                                                                                                             <li>PayPal</li>
                                                                                                             <li>Bank/Wire Transfer</li> 
@@ -298,7 +382,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="row">
+						{*<div class="row">
 								<div class="form">
                                                                     <form action="" method="POST" name="form-faq" class="form-faq">
 										<fieldset>
@@ -335,7 +419,7 @@
 										</fieldset>
 									</form>
 								</div>
-						</div>
+						</div> *}
 					</div>
 				</div>
 			</div>
@@ -345,6 +429,13 @@
                 
                 {include file='../includes/content/banners/index.tpl'}
 		<!-- FOOTER -->
+                
+                <!-- RECOMMENDED -->
+                {*
+                    Template: RECOMMENDED
+                *}    
+                {include file='../includes/main/main-recommended.tpl'}
+                
                 {*
                     Template: FOOTER
                     Переменные:

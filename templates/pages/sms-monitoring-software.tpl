@@ -95,7 +95,11 @@ Buy Pumpic to protect your kids and view their SMS right now."
         {include file='../includes/content/banners/index.tpl'}
         <!-- END CONTENT -->    
            
-        
+        <!-- RECOMMENDED -->
+        {*
+            Template: RECOMMENDED
+        *}    
+        {include file='../includes/main/main-recommended.tpl'}
         
         <!-- FOOTER -->
         {*

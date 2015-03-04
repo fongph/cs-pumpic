@@ -6,7 +6,7 @@
                         <div class="col-sm-4 col-md-4 col-lg-4 col-sm-offset-1 col-md-offset-1 col-lg-offset-1">
                             
                             <h3>DISCLAIMER</h3>
-                            <p>Pumpic is a unique parental control tracking application for mobile phones and tablets. It is for ethical and legal use only. To install the tracking app, one should assure that he or she owns the device before installation, or has obtained the owner’s admittance to track his or her device.</p>
+                            <p>Pumpic is a unique parental control tracking application for iOS and Android mobile phones and tablets. It is for ethical and legal use only. To install the tracking app, one should assure that he or she owns the device before installation, or has obtained the owner’s admittance to track his or her device.</p>
                             
                         </div>
                         <div class="col-sm-2 col-md-2 col-lg-2 col-sm-offset-1 col-md-offset-1 col-lg-offset-1">
@@ -21,9 +21,9 @@
                                         <li>
                                             <a href="/policy.html#refund-policy">Refund policy</a>
                                         </li>
-                                        <li>
+                                        {*<li>
                                             <a href="/contact-us.html">Contact us</a>
-                                        </li>
+                                        </li>*}
                                          <li>
                                             <a href="/security/">Security</a>
                                         </li>

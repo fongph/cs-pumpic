@@ -1,3 +1,7 @@
+{assign 'showVisitStore' 'true'}
+{assign 'showViewDemo' 'true'}
+{assign 'showFreeTrial' 'false'}
+
 <div class="{if $blockBg}{$blockBg}{else}dark{/if}">
     <div class="container">
             <div class="row">
@@ -19,20 +23,35 @@
                                         {/if}
                                     </p>
                                     <ul>
+                                        {if $showViewDemo eq "true"}
                                         <li>
                                             <a href="http://demo.{$domain}"
-                                               class="featured-link link-hl ga-action-click"
+                                               class="btn-orange featured-link link-hl ga-action-click"
                                                 ga-action ="click"
                                                 ga-category="demo link"
-                                                ga-label="body">View demo<i class="icon-angle-double-right"></i></a>
+                                                ga-label="body">Live Demo{*<i class="icon-angle-double-right"></i>*}</a>
                                         </li>
+                                        {/if}
+                                        {if $showVisitStore eq "true"}
                                         <li>
-                                            <a class="btn btn-green ga-action-click"
+                                            <a href="http://{$domain}/store.html" 
+                                               class="btn-fix-red{*btn-green*} ga-action-click"
                                                 ga-action ="click"
                                                 ga-category="store link"
                                                 ga-label="body"
                                                >Visit Store</a>
                                         </li>
+                                        {/if}
+                                        {if $showFreeTrial eq "true"}
+                                        <li>
+                                            <a href="http://{$domain}/free-trial.html"
+                                                class="btn btn-yellow ga-action-click"
+                                                ga-action ="click"
+                                                ga-category="free trial"
+                                                ga-label="body"
+                                               >Free Trial</a>
+                                        </li>
+                                        {/if}
                                     </ul>
                             </div>
                     </div>

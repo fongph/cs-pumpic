@@ -1,7 +1,15 @@
 <?php
-
 namespace Models;
-
+/*
+SELECT SQL_CALC_FOUND_ROWS id, 
+	name,
+	MATCH(name) AGAINST ('samsung GT-I90' IN BOOLEAN MODE) as rale1, 
+	MATCH(name) AGAINST ('"samsung GT-I90"' IN BOOLEAN MODE) as rale2,
+	name REGEXP '(samsung*)(.*)(GT-I90*)' as rale3
+FROM `phones` 
+WHERE MATCH(name) AGAINST ('samsung GT-I90' IN BOOLEAN MODE) or name REGEXP '(samsung*)(.*)(GT-I90*)'
+ORDER BY rale2 DESC, rale1 DESC, rale3 DESC
+ */
 use PDO;
 
 class Compatibility {
@@ -23,7 +31,8 @@ class Compatibility {
     }
 
     public function getPhones($searchType = self::FIND_ALL, $page = 0, $searchStr = '') {
-        
+        $_fileds = '';
+        $orderBy = 'ORDER BY popularity DESC';
         switch($searchType){
 
             case self::FIND_ALL:
@@ -35,14 +44,29 @@ class Compatibility {
                 break;
 
             case self::FIND_BY_QUERY:
-                if(!empty($searchStr))
-                    $whereQuery  = "WHERE LOWER(`longname`) RLIKE {$this->db->quote($searchStr)} ";
-                else $whereQuery = '';
+                $_word = '';
+                $_one_word = '';
+                
+                $_fileds .= "
+                    MATCH(`longname`) AGAINST ('{$searchStr}' IN BOOLEAN MODE) as `rale1`,
+                    MATCH(`longname`) AGAINST ('\"{$searchStr}\"' IN BOOLEAN MODE) as `rale2`,
+                ";
+                if(!empty($searchStr)) {
+                    foreach(explode(' ', trim($searchStr)) as $_item) :
+                        $_word .= '('.$_item.'*)(.*)';
+                        $_one_word = '('.$_item.'*)|';
+                    endforeach;
+                    $_fileds .= "`longname` REGEXP '".trim($_word)."|".trim($_one_word, '|')."' as `rale3`,";
+                    
+                    //$whereQuery  = "WHERE LOWER(`longname`) RLIKE {$this->db->quote($searchStr)} ";
+                    $whereQuery  = "WHERE MATCH(`longname`) AGAINST ('{$searchStr}' IN BOOLEAN MODE) OR `longname` REGEXP '".trim($_word)."|".trim($_one_word, '|')."'";
+                    $orderBy = "ORDER BY `rale2` DESC, `rale1` DESC, `rale3` DESC";
+                } else $whereQuery = '';
                 break;
 
             default: throw new \ErrorException('Illegal search type');
         }
-
+        
         $start = (int)$page * self::$perPage;
         $data = $this->db->query("
             SELECT SQL_CALC_FOUND_ROWS 
@@ -54,12 +78,17 @@ class Compatibility {
                 path_big as b_img,
                 path_middle as m_img,
                 os, 
-                os_ver as version, 
+                os_ver as version,
+                {$_fileds}    
                 tested FROM `phones`
             {$whereQuery} 
-            ORDER BY popularity DESC
-            LIMIT {$start}, " . self::$perPage)->fetchAll();
+            {$orderBy}
+            LIMIT {$start}, " . self::$perPage)->fetchAll(); // LIMIT {$start}, " . self::$perPage
 
+//         echo "<pre>";
+//         var_dump( $data );
+//         echo "</pre>";
+            
         return array(
             'count' => !empty($data) ? $this->db->query("SELECT FOUND_ROWS()")->fetchColumn() : 0,
             'list' => $data,

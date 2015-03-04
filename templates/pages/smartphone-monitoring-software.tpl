@@ -1,7 +1,8 @@
 {include file='../includes/main/main-header.tpl'
     robots="no" 
-    title="Smartphone Monitoring App - Pumpic.com"
-    description="Pumpic is a new solution for parental control mobile monitoring. Track your children’s smartphone usage, follow incoming and outbound calls, monitor browsing history and text messages, track GPS location and social network activity on Android devices with Pumpic."
+    title="Kids Smartphone Monitoring Software App for Parents"
+    description="Pumpic app is a new software solution for parents to control mobile phones of their children. Tracking kid's smartphone usage, incoming and outbound calls, monitor browsing history and text messages, GPS location and social network activity on Android and iOS devices with."
+    keywords="track kids phone tracking parental controls iphone app child android monitoring mobile"
 }    
     
 <body>
@@ -19,18 +20,26 @@
         
         <!-- CONTENT -->
         {include file='../includes/content/info/info-promo.tpl'
-            imgUrl = "header_banners/bg_header_smartphone.png"
+            imgUrl = "header_banners/bg_features_call_437x226.png"
             imgAlt = "Smartphone monitoring"
             imgAlign = "right"
             textAlign = "right"
-            title = "Smartphone Monitoring<br />Parental Control App"
-            description = "Protect your children with Pumpic app.<br />
-Control your kids smartphone usage remotely"
+            title = "Smartphone <br/> Parental Monitoring App"
+            description = "Monitor your kids smartphone usage remotely<br />
+            on iPhone, iPad, iPod and Android devices."
             trial = "no"
         }
         
-         {include file='../includes/content/plans.tpl' }
-                
+        {include file='../includes/content/plans.tpl' }
+        
+        {include file='../includes/content/secures.tpl' blockBg="light"}
+        {include file='../includes/content/features-table.tpl'
+        title = "Top Parental Control Features"
+        description = "Pumpic is a new generation of mobile phone tracking software, which comes with a large range of monitoring functions. They will help you to remotely keep track of your child's cell phone activity. <br/><br/>
+        Just to remind you of Pumpic best features: monitor calls and text messages (even deleted ones); tack GPS location (current and route history); view internet browsing history, bookmarks and applications; follow online activity, including social networks, IM chats and emails; view photos and videos shot or downloaded from the Internet. And even more: block SMS containing bad words or threats; block inappropriate web sources and applications; use offline SMS commands to control the target device remotely; track each button pressed with keylogger function."
+        blockBg="dark"
+        } 
+    
          {* Template: FLY BUTTONS
         *}
         {include file='../includes/content/fly/box-buttons.tpl'
@@ -40,27 +49,28 @@ Control your kids smartphone usage remotely"
         }
          
         {include file='../includes/content/ipad.tpl' 
-        blockBg="dark"
+        blockBg="light"
         imgUrl = "icons/lending_features_smartphone_monitoring.png"
-        imgAlt = "Smartphone Monitoring"
-        title = "Smartphone Monitoring"
-        description = "Try Control Panel demo to see Smartphone Monitoring in use.<br />
-Buy Pumpic to secure your kids and track their smartphones right now."
-}
+        imgAlt = "Easy-to-Use Control Panel"
+        title = "Easy-to-Use Control Panel"
+        description = "Right after installing Pumpic, all the data from the target mobile phone will be sent to your Control Panel. It can be accessed from any browser and any device, including PCs, smartphones and tablets. In Control Panel you can not only view the information, but also set restrictions and block some of activities on the target device."
+        }
 
-		{include file='../includes/content/why-pumpic.tpl' 
-            blockBg="light"
-        }
-        {include file='../includes/main/main-testimonials.tpl' }       
-		{include file='../includes/content/secures.tpl'
-            blockBg="light"
-        }
-        {include file='../includes/content/features-table.tpl' }  
+
+        {include file='../includes/content/how-get-pumpic.tpl' }    
+        {include file='../includes/main/main-testimonials.tpl' blockBg="light"}       
+    
         {*include file='../includes/content/banner-promo.tpl'*}
         {*{include file='../includes/content/banners/banner-promo-trial.tpl'}*}
         
         {include file='../includes/content/banners/index.tpl'}
         <!-- END CONTENT -->    
+        
+        <!-- RECOMMENDED -->
+        {*
+            Template: RECOMMENDED
+        *}    
+        {include file='../includes/main/main-recommended.tpl'}
         
         <!-- FOOTER -->
         {*

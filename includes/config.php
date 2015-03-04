@@ -1,6 +1,6 @@
 <?php
-// ini_set('display_errors', 1);
-// error_reporting(-1);
+ //ini_set('display_errors', 1);
+ //error_reporting(-1);
 
 $config = array(
 	
@@ -45,7 +45,10 @@ $config = array(
                 'buy.html' => 'buy.php',
             
                 'login.html'  => 'login.php', 
+                
                 'registration.html'  => 'registration.php',
+                'free-trial.html'  => 'free_trial_registration.php',
+                
                 'restore.html'  => 'restore.php',
             
                 // pricing
@@ -62,7 +65,10 @@ $config = array(
                 'currency.html'            => 'currency.php', 
             
                 // popUp send email
-                'popup_email_send.html'   => 'popup_email_send.php',   
+                'popup_email_send.html'   => 'popup_email_send.php',
+            
+                // robots
+                'robots.txt'            => 'robots.php'
 	),
     
     'db_phones' => array(

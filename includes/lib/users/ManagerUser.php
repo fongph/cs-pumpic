@@ -9,6 +9,7 @@ use System\Session\Handler\RedisSessionHandler as RedisSessionHandler;
 use Predis\Client as RedisClient; // Predis\Client
 
 use CS\Users\UsersManager as Manager;
+use CS\Models\User\Options\UserOptionRecord as UserOptionRecord; 
 use CS\Users\UserAlreadyExistsException as UserAlreadyExistsException;
 use CS\Users\UserNotFoundException as UserNotFoundException;
 USE CS\Users\InvalidPasswordException as InvalidPasswordException;
@@ -31,6 +32,7 @@ class ManagerUser extends Manager
 {
     const SITE_ID = 1;
     const LANG = 'en-GB';
+    const ERROR_USER_ALREADY_EXISTS_EXCEPTION = 'Your email address is already registered with Pumpic. Restore <a href="/restore.html">password</a>?'; // This email exists already.
     
     static $_obj;
     
@@ -115,7 +117,7 @@ class ManagerUser extends Manager
     {
         $_type = 'prod';
         if (in_array(@$_SERVER['REMOTE_ADDR'], ['127.0.0.1', '::1'])) {
-            //$_type = 'dev';
+              // $_type = 'dev';
         }
         return $this -> _db[ $_type ];
     }
@@ -204,8 +206,20 @@ class ManagerUser extends Manager
         return $content;
     }
    
+    /* Авторизация по UserID */
+    protected function authUserID( $user_id ) {
+        if(empty($user_id)) return false;
+        $_data = $this->getUserDataById( self::SITE_ID, (int)$user_id );        
+        if($_data) {
+            $this -> _auth ->setIdentity( $_data );
+            self::$_obj -> _data  = $this -> _auth->getIdentity();
+            return true;
+        } else
+            return false;
+    }
+    
     /* Авторизация */
-    private function _login(\ArrayAccess $params, $remember = false) 
+    protected function _login(\ArrayAccess $params, $remember = false) 
     {
         
         try {
@@ -250,7 +264,44 @@ class ManagerUser extends Manager
                self::$_obj -> _respons['_error'] = 'System Error! User not created!'; // ????
             
         } catch( UserAlreadyExistsException $e ) { 
-            self::$_obj -> _respons['_error'] = 'This email exists already.';
+            self::$_obj -> _respons['_error'] = self::ERROR_USER_ALREADY_EXISTS_EXCEPTION;
+        } catch( InvalidSenderObjectException $e ) {
+            self::$_obj -> _respons['_error'] = ($e ->getMessage()) ? $e ->getMessage() : 'System Error! Email not send!'; // ????    
+        } catch (Exception $ex) {
+            self::$_obj -> _respons['_error'] = 'Error! '.$e ->getMessage(); // ????
+        }
+        return self::$_obj -> _respons;
+    }
+    
+    // freeTrialRegistration
+    public function getCreateUsersFreeTrial() 
+    {
+        $this -> _createUsersFreeTrial( self::$_obj -> getParams());
+        return $this;
+    }
+    
+    // method freeTrialRegistration
+    private function _createUsersFreeTrial(\ArrayAccess $params) 
+    {
+        try {
+            $user_id = $this -> createUserFreeTrial($params['siteId'], $params['email'], $params['name']);
+            self::$_obj -> _respons['user_id'] = $user_id;
+            /*if((int)$user_id) {
+                
+                $_data = $this->getUserDataById( self::SITE_ID, (int)$user_id );
+                $this -> _auth ->setIdentity( $_data );
+                
+                self::$_obj -> _data  = $this -> _auth->getIdentity();
+                self::$_obj -> _respons['_success'] = true;
+                
+            } else if((int)$user_id and !$_auth) {
+                self::$_obj -> _respons['_success'] = true;
+            } else
+               self::$_obj -> _respons['_error'] = 'System Error! User not created!'; // ????
+            */
+            
+        } catch( UserAlreadyExistsException $e ) { 
+            self::$_obj -> _respons['_error'] = self::ERROR_USER_ALREADY_EXISTS_EXCEPTION;
         } catch( InvalidSenderObjectException $e ) {
             self::$_obj -> _respons['_error'] = ($e ->getMessage()) ? $e ->getMessage() : 'System Error! Email not send!'; // ????    
         } catch (Exception $ex) {

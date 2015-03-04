@@ -12,7 +12,7 @@
        {/if}
 
        {if $getOut._error}
-           <div class="box-error text-center">
+           <div class="box-error text-left">
                 <p class="bg-danger">{$getOut._error}</p>
            </div>
        {/if}
@@ -26,20 +26,20 @@
                 <label for="email">Email*</label>
                 <input id="email" class="required" type="text" name="email" value="" />
                 {*<label class="error">Password will be send <br />to you your email</label>*}
-                <label class="info-email">The password will be sent <br />to your email </label>
+                <label class="info-email">The password will be sent to your email </label>
             </section>
             <section>
                 <label for="phone">Phone</label>
                 <input type="text" name="phone" value="" />
             </section>
             <div class="block-captcha">
-                <label>Enter the words below <br /><span>Can’t read the words below? <a class="a-update-captcha" href="#">Try to refresh</a></span></label>
+                <label>Enter the words below <br /><span>Can’t read the words below? <a class="a-update-captcha" attr-width="250" attr-height="39" href="#">Try to refresh</a></span></label>
 
                 <div class="box-captcha clearfix">
-                    <img src="/captcha.html" id="img-captcha">
-                    <span class="update-captcha"></span>
+                    <img src="/captcha.html?width=250&height=39" id="img-captcha">
+                    <span class="update-captcha" attr-width="250" attr-height="39"></span>
                 </div>
-                <div class="box-captcha-input">    
+                <div class="box-captcha-input text-in-box-free-trial">    
                     <span class="left">Text in the box:</span>
                     <div class="captcha-input left">
                         <input id="captcha" type="text" name="captcha" autocomplete="off" class="text required captcha" />

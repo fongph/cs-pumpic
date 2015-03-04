@@ -14,14 +14,19 @@
                             <a href="{$domain_http}">pumpic</a>
                         </div>
                     </div>
-                    {if ''|hasUser} 
+                        
+                     <div class='box-cp pull-right'>   
+                        <a href="http://demo.{$domain}/" class="btn btn-sm btn-orange btn-success visible-lg cp-login">Demo</a>
+                    </div>   
+                        
+                    {*if ''|hasUser} 
                         <div class='box-cp pull-right'>   
                             <a href="/logout.html" class="pull-right visible-lg cp-logout">Log Out</a>
                             <a href="http://cp.{$domain}/" class="btn btn-sm btn-success visible-lg cp-login"><i class="icon-lock"></i>Control Panel</a>
                         </div>    
                     {else}
                         <a href="{if ''|detectedDev}/login.html{else}#{/if}" class="btn btn-sm btn-success pull-right visible-lg cp-login"><i class="icon-lock"></i> Log In</a>
-                    {/if}    
+                    {/if*}    
 
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -30,7 +35,7 @@
                                 <a href="/">Home</a>
                             </li>
                             <li {if $topmenu_active=='compatibility'} class="active"{/if}>
-                                <a href="/compatibility.html">Compatibility</a>
+                                <a href="/compatibility/">Compatibility</a>
                             </li>
                             <li class="{if $topmenu_active=='pricing'}active{/if} ga-action-click" 
                                 id="header-menu-store-link"
@@ -48,31 +53,41 @@
                                 <a href="/how-to.html">How to</a>
                             </li>*}
                             <li {if $topmenu_active=='faq'} class="active"{/if}>
-                                <a href="/faq.html">FAQ</a>
+                                <a href="/faq.html">Help & Contacts</a>
                             </li>
                             
-                            <li>
+                            {* <li>
                                 <a href="http://demo.{$domain}/">Demo</a>
-                            </li>
+                            </li> *}
                             
-                            <!--li>
-                                    <a href="http://demo.{$domain}">Demo</a>
-                            </li-->
-                            <li>
+                            {* <li>
                                 {if ''|hasUser} 
                                     <a href="http://cp.{$domain}/" class="btn btn-sm btn-success hidden-lg cp-login"><i class="icon-lock"></i> Control Panel</a>
                                 {else}
                                     <a href="{if ''|detectedDev}/login.html{else}#{/if}" class="btn btn-sm btn-success hidden-lg cp-login"><i class="icon-lock"></i> Log In</a>
                                 {/if}   
 
+                            </li> *}
+                            
+                            <li>
+                                {if ''|hasUser} 
+                                    <a href="http://cp.{$domain}/">Control Panel</a>
+                                {else}
+                                    <a href="{if ''|detectedDev}/login.html{else}#{/if}">Sign in</a>
+                                {/if}   
+
                             </li>
 
-                            {if ''|hasUser}
+                            <li>
+                                <a href="http://demo.{$domain}/" class="btn btn-sm btn-orange btn-success hidden-lg cp-login"> Demo</a>
+                            </li>
+                            
+                            {*if ''|hasUser}
                                 <li>
                                     <a href="/logout.html" class="hidden-lg cp-logout">Log Out</a>
 
                                 </li>
-                            {/if}
+                            {/if*}
                         </ul>
                     </div>
                     <!-- /.navbar-collapse -->

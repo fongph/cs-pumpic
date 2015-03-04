@@ -326,6 +326,34 @@ function hashchange_AfterInit() {
             } 
         }
         
+        //free-trial-registration
+        if(_data['popUp'] == "free-trial-registration") { // && !getCookie('popUp')
+            
+            // login status ok
+            if(isset($('.box-popUp #box-status-free-trial-registration'))) {
+                var $this = $('.box-popUp #box-status-free-trial-registration')
+                , title = $this.find('.title') 
+                , content = $this.find('.info'); 
+
+                $this.bPopup({
+                    modalClose: true,
+                    opacity: 0.6,
+                    follow: [false, false], 
+                    positionStyle: 'fixed',
+                    onOpen: function() {
+                        
+                        // google analitycs
+                        ga('send', 'event', 'trial', 'popup', 'free-trial-registration-success');
+                        
+                    },
+                    closeClass: 'close',
+                    onClose: function() {
+                    },
+
+                });
+            } 
+        }
+        
         
     }
 }
@@ -604,20 +632,20 @@ $(document).ready(function(){
          
          if($(this).parent().hasClass('active')) {
              $(this).parent().removeClass('active');
-             $('.box_category ul li').show();
+             $('.box_category ul:not(.list-items) li').show();
          } else {
-             $.each($('.list_category li a'), function() {
+             $.each($('.list_category ul li a'), function() {
                 if($(this).parent().hasClass('active'))
                     $(this).parent().removeClass('active');
              }); // clear active
              
              $(this).parent().addClass('active');
-             $('.box_category ul > li').hide();
+             $('.box_category ul:not(.list-items) > li').hide();
              if(_hash.length > 1) {
                 if(_hash[1] == 'all') {
-                    $('.box_category ul > li').show();
+                    $('.box_category ul:not(.list-items) > li').show();
                 } else {
-                    $('.box_category ul > li').find('#'+_hash[1]).parents('li').show();
+                    $('.box_category ul:not(.list-items) > li').find('#'+_hash[1]).parents('li').show();
                 }
                  
                 
@@ -1017,6 +1045,48 @@ $(document).ready(function(){
         });
    }
    
+   /* ------- form-free-trial-registration ------ */
+   if($('form[name="free_trial_registration"]').length) {
+       $('form[name="free_trial_registration"]').validate({
+             onfocusout: false,
+             onkeyup: false,
+             onclick: true,
+             onsubmit: true,
+             focusInvalid: false,
+             focusCleanup: false, 
+             messages: {
+                'captcha': "Invalid CAPTCHA.", // The CAPTCHA field is empty.
+                'name': {
+                    required: "The Name field is empty.",
+                },
+                'email': {
+                    required: "The Email field is empty.",
+                    email: "Invalid email format."
+                },
+                errorClass: "error",
+            },
+            invalidHandler: function(event, validator) {
+                if($('form[name="free_trial_registration"] #block-fields label.error').length)
+                    $('form[name="free_trial_registration"] #block-fields label.error').remove();
+                
+                if($('form[name="free_trial_registration"] div.box-error')) {
+                    $('form[name="free_trial_registration"] div.box-error').addClass('hide');
+                }
+            },
+            // управление ошибками
+            showErrors: function(errorMap, errorList) {
+                var fileds = $('form[name="free_trial_registration"] #block-fields');
+                var msg = null;
+                
+                $.each(errorList, function(key, value){
+                    if(value.element) {
+                        fileds.find(value.element).after( '<label class="error">'+value.message+'</label>' ).show();
+                    }
+                 });
+            },
+        });
+   }
+   
    /* ------- form-restore ------ */
    if($('form[name="form-restore"]').length) {
        $('form[name="form-restore"]').validate({ 
@@ -1046,10 +1116,16 @@ $(document).ready(function(){
     * CAPACHA 
     */
    if($('.box-captcha').length) {
-       $('.update-captcha').on('click', function(event) {
+       $('.update-captcha, .a-update-captcha').on('click', function(event) {
            event.preventDefault();
-           $('.box-captcha').find('#img-captcha').attr('src', '/captcha.html?'+Math.random());
-           $('form[name="form-registration"]').find('input[name="captcha"]').focus();
+           
+           var _src = '/captcha.html?'+Math.random();
+           if($(this).attr('attr-width') && $(this).attr('attr-height')) {
+               _src = '/captcha.html?width='+$(this).attr('attr-width')+'&height='+$(this).attr('attr-height')+'&'+Math.random();
+           }
+           
+           $('.box-captcha').find('#img-captcha').attr('src', _src);
+           $('form[name="form-registration"], form[name="free_trial_registration"]').find('input[name="captcha"]').focus();
            return false;
        });
    }

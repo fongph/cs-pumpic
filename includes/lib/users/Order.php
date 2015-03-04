@@ -6,6 +6,8 @@ namespace includes\lib\users;
 use CS\Billing\Manager as BillingManager;
 use Seller\FastSpring\Gateway as Gateway;
 use CS\Models\Order\OrderRecord as OrderRecord; 
+use CS\Models\License\LicenseRecord as LicenseRecord; 
+use CS\Models\Product\ProductRecord as ProductRecord; 
 use CS\Settings\GlobalSettings as GlobalSettings;
 use IP;
 
@@ -20,6 +22,7 @@ class Order extends ManagerUser
     
     private $_billing;
     private $_gateway;
+    private $_license;
     private $storeId;
     
     private $referer;
@@ -42,6 +45,7 @@ class Order extends ManagerUser
 //        $this -> _pdo = $db -> getConnected();
         
         $this -> _billing = new BillingManager($this -> _pdo);
+        $this -> _license = new LicenseRecord( $this -> _pdo );
         $this -> _gateway = new Gateway();
         
         // detected storeID
@@ -58,7 +62,7 @@ class Order extends ManagerUser
         return $this -> referer;
     }
     
-    
+    // registration or store
     private function _createOrder( $userID = null, $productId ) 
     {
         $ip = IP::getRealIP();
@@ -73,10 +77,12 @@ class Order extends ManagerUser
                 -> save();
          
 //        // save referer 
-        $referer = $this -> _billing -> getReferer(); 
-        $referer -> setOrder($order)
+        if($this ->getReferer()) { 
+            $referer = $this -> _billing -> getReferer(); 
+            $referer -> setOrder($order)
                 ->setReferer( $this ->getReferer() )
                 -> save(); 
+        }
         
         $orderProduct = $this -> _billing -> getOrderProduct();
         $orderProduct->setOrder($order)
@@ -95,7 +101,69 @@ class Order extends ManagerUser
         $redirectUrl = $response->getRedirectUrl();
         
         return $redirectUrl;
-    }   
+    } 
+    
+    // free_trial_registration
+    private function _createOrderByFreeTrial( $userID = null, $productId, $phone, $name ) 
+    {
+        $ip = IP::getRealIP();
+        $order = $this -> _billing -> getOrder();
+        $order->setSiteId(self::SITE_ID);
+        if($userID){
+            $order->setUserId($userID);
+        }
+         $order->setStatus(OrderRecord::STATUS_COMPLETED) // ->setStatus(CS\Models\Order\OrderRecord::STATUS_PENDING) ::STATUS_CREATED 
+                ->setPaymentMethod(OrderRecord::PAYMENT_METHOD_INTERNAL)
+                ->setTrial(true) 
+                -> setLocation( IP::getCountry($ip) );
+         
+         if($phone)
+             $order -> setPhone( $phone );
+         
+         if($name)
+             $order ->setPerson ( $name );
+         
+         $order -> save();
+         
+//        // save referer 
+         if($this ->getReferer()) {
+            $referer = $this -> _billing -> getReferer(); 
+            $referer -> setOrder($order)
+                ->setReferer( $this ->getReferer() )
+                -> save(); 
+         }
+        
+        
+        $orderProduct = $this -> _billing->getOrderProduct();
+        $orderProduct->setOrder($order)
+                -> setProduct($this -> _billing->getProduct($productId))
+                -> loadReferenceNumber()
+                -> save();
+
+        if($userID){
+            // create license        
+            $license = $this -> _billing -> getLicense(); 
+            $license ->setOrderProduct($orderProduct)
+                        ->setAmount(0)
+                        ->setCurrency('USD')
+                        ->setLifetime( time() + 7 * 24 * 3600 )
+                        ->setActivationDate(time())
+                        ->setExpirationDate(time() + 7 * 24 * 3600)
+                        ->setStatus(LicenseRecord::STATUS_AVAILABLE)
+                        ->save();
+            
+            // create options
+            if($license->getId())
+                $this -> setUserOption($userID, 'internal-trial-license', $license->getId());
+            
+            // auth
+            $this -> authUserID( $userID ); 
+            
+        }
+        
+        return true;
+    } 
+    
     public function createOrderByProduct( $userID, $product, $deviceId ) 
     {
         
@@ -171,10 +239,20 @@ class Order extends ManagerUser
             return false;
     }
     
+    // registration or store
     public function createOrder( $productID ) {
         if($this -> hasOrder($productID)) {
             $user_id = $this ->getUserID();
             return $this -> _createOrder( $user_id ? $user_id : null, $productID );
+        } else {
+            return false;
+        }
+    }
+    
+    // free_trial_registration
+    public function createOrderByFreeTrial( $userID, $productID, $phone, $name ) {
+        if($this -> hasOrder($productID)) {
+            return $this -> _createOrderByFreeTrial( $userID ? $userID : null, $productID, $phone, $name );
         } else {
             return false;
         }

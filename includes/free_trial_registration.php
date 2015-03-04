@@ -41,7 +41,7 @@ $_result = array(
     '_success' => false,
 );
     
-if($obj -> getLoginUser()) $obj -> _redirect('/');
+// if($obj -> getLoginUser()) $obj -> _redirect('/');
 
 // $_session_order = $obj -> getSession('pumpic_order');
 //$_productID = (isset($_GET['productID']) and !empty($_GET['productID'])) ? $_GET['productID'] : false;
@@ -62,8 +62,8 @@ if(isset($_POST['email']) and !$obj -> validateEmail($_POST['email'])) {
         'name' => $_name,
     );
 
-    $_respons = $obj->_initAfter($_params) -> freeTrialRegistration -> respons;
-    if($_result['_success']) {
+    $_respons = $obj->_initAfter($_params) -> CreateUsersFreeTrial -> respons;
+    if($_result['user_id']) {
         $_result['_success'] = 'Successful registration.';
     } 
 
@@ -71,14 +71,9 @@ if(isset($_POST['email']) and !$obj -> validateEmail($_POST['email'])) {
         $_result = array_merge ($_result, $_respons);
 }
 
-if($_result['_success']) {
-    if($_productID) {
- //       $_url = $obj -> createOrderByFreeTrial( (int)$_productID );
-//        if($_url) {
-//           $obj -> _redirect( $_url ); 
-//        } else
-        
-          if($obj -> createOrderByFreeTrial( (int)$_productID, $_phone, $_name ))  
+if($_result['user_id']) {
+    if($_productID) {        
+          if($obj -> createOrderByFreeTrial( $_result['user_id'], (int)$_productID, $_phone, $_name ))  
             $obj -> _redirect('/#popUp=free-trial-registration');
     } else
         $obj -> _redirect('/#popUp=free-trial-registration'); 

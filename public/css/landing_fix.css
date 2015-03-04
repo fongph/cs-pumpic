@@ -145,8 +145,7 @@
 }
 
 .block-smartphone .banner-header {
-    padding-top: 20px;
-    padding-bottom: 0px;
+    padding: 25px 0 20px;
 }    
 
 .block-call-monitoring .banner-header {
@@ -230,9 +229,8 @@
     }*/
     
     .block-smartphone .banner-header {
-        padding-top: 0px;
-        padding-bottom: 0px;
-    }
+        padding: 25px 0 20px;
+    } 
     
     .block-call-monitoring .banner-header {
         padding: 0px;
@@ -273,8 +271,7 @@
     }*/
     
     .block-smartphone .banner-header {
-        padding-top: 0px;
-        padding-bottom: 0px;
+        padding: 25px 0 20px;
     }
     
     .block-sms .visual-img-pc {
@@ -309,9 +306,8 @@
     }*/
 
     .block-smartphone .banner-header {
-        padding-top: 0px;
-        padding-bottom: 0px;
-    } 
+        padding: 25px 0 20px;
+    }
     
     .block-sms .visual-img-pc,
     .block-call-monitoring .visual-img-pc {

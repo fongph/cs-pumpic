@@ -18,7 +18,7 @@
                              
                         </td>
                         {/if}
-                        <td class="col-s-sm-12 col-xs-sm-12 {if $imgAlign == "center"} col-md-12 col-lg-12  {else}col-md-6 col-lg-7{/if}">
+                        <td class="col-s-sm-12 col-xs-sm-12 {if $imgAlign == "center"} col-md-12 col-lg-12  {else}col-md-6 col-lg-6{/if}">
                             
                             <div>
                                 <div class="visual-text {if $textAlign}block-text-{$textAlign}{else}block-text-right{/if}">
@@ -55,7 +55,7 @@
 
                                     {if isset($trial) && $trial == 'yes'}
                                         
-                                        <div class='mt20'>
+                                        <div class='mt10'>
                                             <div id='block-trial'>
                                                 <section>
                                                     <span class='text-trial'>
@@ -65,16 +65,16 @@
                                                 </section>
                                                 <section>
                                                     {nocache} 
-                                                    <form method="POST" action="/buy.html" autocomplete="off">
-                                                        <input type='hidden' name='price[productID]' value='19{*16*}' />
+                                                    <form method="POST" action="/free-trial.html" autocomplete="off">
+                                                        {*<input type='hidden' name='price[productID]' value='19' />*}
                                                         <button class="btn-yellow ga-action-click" 
                                                                 value="true" 
                                                                 type="submit" 
                                                                 name="price[submit]"
                                                                 
                                                                 ga-action ="click"
-                                                                ga-category="demo link"
-                                                                ga-label="prices"
+                                                                ga-category="trial"
+                                                                ga-label="free trial"
                                                                 >Start Now!</button>
                                                     </form>            
                                                     {/nocache} 

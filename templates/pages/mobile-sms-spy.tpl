@@ -1,5 +1,5 @@
 {include file='../includes/main/main-header.tpl' 
-    title="Best SMS Spy Software for Kids Protection"
+    title="SMS Monitoring for Kids Protection, SMS Tracking App - Pumpic"
     description="SMS communication is more popular these days than making calls. That’s why it is reasonable for parents to use a text message spy app to monitor their kids’ activity."
 }    
     
@@ -24,7 +24,7 @@
             imgAlign = "right"
             imgVerticalAlign = "bottom"
             textAlign = "right"
-            title = "Choosing a Mobile App to Spy on Text Messages"
+            title = "SMS Monitoring App"
             description = "Follow your kids’ SMS communication:"
             trial = "no"
             listText = "monitor SMS messages sent and received|control contacts, block misgiving senders|prevent children from bullies and online predators"

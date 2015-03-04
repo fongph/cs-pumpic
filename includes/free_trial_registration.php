@@ -72,7 +72,9 @@ if(isset($_POST['email']) and !$obj -> validateEmail($_POST['email'])) {
 }
 
 if($_result['user_id']) {
-    if($_productID) {        
+    if($_productID) {
+        if(isset($_COOKIE['orders_referer']))
+            $obj->setReferer($_COOKIE['orders_referer']);
           if($obj -> createOrderByFreeTrial( $_result['user_id'], (int)$_productID, $_phone, $_name ))  
             $obj -> _redirect('/#popUp=free-trial-registration');
     } else

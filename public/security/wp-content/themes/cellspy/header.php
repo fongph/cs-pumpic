@@ -54,7 +54,7 @@
     <script src="<?php echo getStaticUrl();?>/js/jquery.ba-hashchange.min.js"></script>
     <script src="<?php echo getStaticUrl();?>/js/jquery.total-storage.min.js"></script>
      <!-- close/ out Windows -->
-    <script src="<?php echo getStaticUrl();?>/js/outWindows.js"></script>
+    <?php /*<script src="<?php echo getStaticUrl();?>/js/outWindows.js"></script>*/ ?>
     
     <script src="<?php echo getStaticUrl();?>/js/wp/settings.js"></script>
     <script src="<?php echo getStaticUrl();?>/js/wp/init.js"></script>

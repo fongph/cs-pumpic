@@ -56,6 +56,8 @@
     </div>
 
     <div class="block-buttons">
-        <button class="btn-orange">Start your 7-day free trial <i class='white-arrows-right'></i></button>
+        <button ga-label="buy button" ga-category="trial" ga-action="click" class="btn-orange ga-action-click">
+            Start your 7-day free trial <i class='white-arrows-right'></i>
+        </button>
     </div>
 </form>

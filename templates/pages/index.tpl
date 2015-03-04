@@ -63,7 +63,7 @@
         }
         
         {include file='../includes/main/main-testimonials.tpl'
-                title = "Trusted by Over 10,000 Customers Wordwide"
+                title = "Trusted by Over 10 000 Customers Wordwide"
                 sliders = "false"
                 blockBg="light"} 
         

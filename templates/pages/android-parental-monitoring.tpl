@@ -26,7 +26,7 @@
             textAlign = "right"
             title = "Android Parental Control Software"
             description = "Monitor your kids’ Android mobile phones remotely:"
-            trial = "no"
+            promoBuyBlock = "yes"
             listText = "control cell phone usage|follow online activity|track routes and location"
              }
          {*listText = "control cell phone usage|follow online activity|track routes and location"*}    

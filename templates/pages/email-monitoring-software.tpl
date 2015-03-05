@@ -26,7 +26,7 @@
             textAlign = "right"
             title = "Pumpic Email Monitoring Software"
             description = "Monitor your children’s emails:"
-            trial = "no"
+            promoBuyBlock = "yes"
             listText = "view sent and received emails|keep track of mailing contact list|follow online registrations"
              }
          {*listText = "view sent and received emails|keep track of mailing contact list|follow online registrations"*}    

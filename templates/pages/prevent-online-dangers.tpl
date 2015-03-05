@@ -27,7 +27,7 @@
             title = "Prevent Online Dangers. <br />Pumpic Monitoring App."
             description = "Protect your kids before it is too late. <br />
             Track location. View calls and SMS. Monitor online activity."
-            trial = "no"
+            promoBuyBlock = "yes"
         }
         
         {include file='../includes/content/plans.tpl' }

@@ -20,14 +20,14 @@
         
     <!-- CONTENT -->
          {include file='../includes/content/info/info-promo.tpl'
-            imgUrl = "header_banners/bg-header-mobile_ios_261x325.png"
+            imgUrl = "header_banners/bg-header-mobile_ios_400x325.png"
             imgAlt = "iOS mobile monitoring"
             imgAlign = "right"
             textAlign = "right"
             title = "iOS Parental Control App"
             description = "Pumpic helps you keep your children safe.<br/>
 Monitor your kids iOS device with Pumpic."
-            trial = "no"
+            promoBuyBlock = "yes"
             listText = "Follow Calls and SMS|Track GPS location|Monitor online activity"
         }
         {* listText = "Follow Calls and SMS|Track GPS location|Monitor online activity" *}

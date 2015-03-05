@@ -27,7 +27,7 @@
             title = "Smartphone <br/> Parental Monitoring App"
             description = "Monitor your kids smartphone usage remotely<br />
             on iPhone, iPad, iPod and Android devices."
-            trial = "no"
+            promoBuyBlock = "yes"
         }
         
         {include file='../includes/content/plans.tpl' }

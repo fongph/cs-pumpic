@@ -26,7 +26,7 @@
             textAlign = "right"
             title = "SMS Monitoring App"
             description = "Follow your kids’ SMS communication:"
-            trial = "no"
+            promoBuyBlock = "yes"
             listText = "monitor SMS messages sent and received|control contacts, block misgiving senders|prevent children from bullies and online predators"
           }
           

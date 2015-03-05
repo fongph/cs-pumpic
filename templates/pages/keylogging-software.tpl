@@ -26,7 +26,7 @@
             textAlign = "right"
             title = "Keylogger for Android and iPhone"
             description = "Track each tap and every button your kid presses:"
-            trial = "no"
+            promoBuyBlock = "yes"
             listText = "keep track of all keystrokes|follow password inputs|monitor Internet activity"
              }
         {*listText = "keep track of all keystrokes|follow password inputs|monitor Internet activity"*}

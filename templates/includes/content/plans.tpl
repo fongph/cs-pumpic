@@ -1,3 +1,4 @@
+{*
 <div class="plans">
     <div class="container gutter-narrow">
         <div class="row">
@@ -46,4 +47,4 @@
             {include file='../main/main-plans-links.tpl'} 
         </div>
     </div>
-</div>
+</div>*}

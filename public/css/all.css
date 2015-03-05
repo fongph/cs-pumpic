@@ -4825,15 +4825,15 @@ div[id^="attachment_"], div[id*=" attachment_"] {
 
 
 /* ------------------ // trial ------------------- */
-#block-trial {
+#block-promo-buy {
     display: inline-block;
 /*    padding: 20px 30px;*/
-    padding: 15px 20px;
+    padding: 15px;
     margin: 0px auto;
     position: relative;
 }
 
-#block-trial:before {
+#block-promo-buy:before {
     content: "";
     position: absolute;
     display: block;
@@ -4856,7 +4856,7 @@ div[id^="attachment_"], div[id*=" attachment_"] {
     color: #feff8b;
 }
 
-#block-trial section {
+#block-promo-buy section {
     list-style: none;
     float: left;
     z-index: 10;
@@ -4864,11 +4864,11 @@ div[id^="attachment_"], div[id*=" attachment_"] {
     margin-right: 20px;
 }
 
-#block-trial section:last-child {
+#block-promo-buy section:last-child {
     margin-right: 0px;
 }
 
-.text-trial {
+.text-promo-buy {
     font-size: 24px;
     font-weight: lighter;
     line-height: 1.1em;
@@ -4924,26 +4924,26 @@ div[id^="attachment_"], div[id*=" attachment_"] {
 
 @media only screen and (max-width: 480px) {
     
-    #block-trial section {
+    #block-promo-buy section {
         width: 100%;
         margin-right: 0px;
         text-align: center;
     }
     
-    #block-trial section:last-child { 
+    #block-promo-buy section:last-child { 
         margin-top: 20px;
     }
     
 }
 @media (min-width: 468px) { 
    
-    #block-trial section {
+    #block-promo-buy section {
         width: 100%;
         margin-right: 0px;
         text-align: center;
     }
     
-    #block-trial section:last-child { 
+    #block-promo-buy section:last-child { 
         margin-top: 20px;
     }
     
@@ -4951,13 +4951,13 @@ div[id^="attachment_"], div[id*=" attachment_"] {
 }
 @media (min-width: 768px) {
     
-    #block-trial section {
+    #block-promo-buy section {
         width: 100%;
         margin-right: 0px;
         text-align: center;
     }
     
-    #block-trial section:last-child { 
+    #block-promo-buy section:last-child { 
         margin-top: 20px;
     }
     
@@ -4966,25 +4966,24 @@ div[id^="attachment_"], div[id*=" attachment_"] {
 }
 @media (min-width: 992px) {
     
-    #block-trial section {
+    #block-promo-buy section {
         width: auto;
         margin-right: 20px;
     }
     
-    #block-trial section:last-child { 
+    #block-promo-buy section:last-child { 
         margin-top: 0px;
     }
     
 }
 @media (min-width: 1200px) {
     
-    #block-trial section {
+    #block-promo-buy section {
         width: auto;
         margin-right: 20px;
-        text-align: left;
     }
     
-    #block-trial section:last-child { 
+    #block-promo-buy section:last-child { 
         margin-top: 0px;
         margin-right: 0px;
     }

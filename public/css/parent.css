@@ -168,7 +168,7 @@
 /* ----------- // table ------------ */
 @media only screen and (max-width: 480px) {
     .table-sm-col-5, .table-sm-col-4, .table-sm-col-3, .table-sm-col-2,
-    .col-sm-item-4, .col-sm-item-3, .col-sm-item-2 {
+    .col-sm-item-4, .col-sm-item-3, .col-sm-item-2, .col-sm-item-1 {
         width: 100%;
     }
     
@@ -186,7 +186,7 @@
 }
 @media (min-width: 468px) {
     .table-sm-col-5, .table-sm-col-4, .table-sm-col-3, .table-sm-col-2, 
-    .col-sm-item-4, .col-sm-item-3, .col-sm-item-2 {
+    .col-sm-item-4, .col-sm-item-3, .col-sm-item-2, .col-sm-item-1 {
         width: 100%;
     }
     
@@ -206,7 +206,7 @@
 @media (min-width: 768px) {
     
     .table-sm-col-4, .table-sm-col-3, .table-sm-col-2,
-    .col-sm-item-4, .col-sm-item-3, .col-sm-item-2 {
+    .col-sm-item-4, .col-sm-item-3, .col-sm-item-2, .col-sm-item-1 {
         width: 100%;
     }
     
@@ -241,12 +241,23 @@
         width: 49.230769230769234%;
     }
     
+    .col-md-item-1 {
+        width: 38.6977886977887%;
+    }
+    
     #table-container .rowspan {
         text-align: center;
     }
 }
 
 @media (min-width: 1200px) { 
+    .table-col-8 {
+        width: 	80.76923076923077%;
+    }
+    
+    .table-col-7 {
+        width: 73.15789473684211%;
+    }
     
     .table-col-5 {
         width: 54.18803418803418%;
@@ -275,6 +286,10 @@
         width: 49.230769230769234%;
     }
     
+    .col-item-1 {
+        width: 	27.631578947368424%;  /*38.6977886977887%;*/
+    }
+    
     #table-container .rowspan {
         text-align: center;
     }
@@ -286,7 +301,8 @@
 .i-features-app, .i-features-browser, .i-features-calendar, .i-features-cell-history,
 .i-features-contacts, .i-features-email, .i-features-keyloger, .i-features-location,
 .i-features-photos, .i-features-sms-commands, .i-features-social, .i-features-sms,
-.i-features-block-device, .i-features-online-control-panel, .i-features-monitor-viber-whatsapp, .i-features-monitor-skype {
+.i-features-block-device, .i-features-online-control-panel, .i-features-monitor-viber-whatsapp, .i-features-monitor-skype,
+.i-features-remote-activity-control, .i-features-remote-device-lock, .i-features-removal-protection, .i-features-instant-location {
     display: inline-block;
     margin-right: 16px;
 }
@@ -392,6 +408,42 @@
     background: url('../images/icons/icon-monitor-skype.png') no-repeat;
     width: 18px;
     height: 19px;
+}
+
+.i-features-reboot {
+    background: url('../images/icons/icon-reboot.png') no-repeat;
+    width: 16px;
+    height: 18px;
+}
+
+.i-features-sim-card {
+    background: url('../images/icons/icon-sim-card.png') no-repeat;
+    width: 25px;
+    height: 19px;
+}
+
+.i-features-remote-activity-control {
+    background: url('../images/icons/icon-remote-activity-control.png') no-repeat;
+    width: 18px;
+    height: 25px;
+}
+
+.i-features-remote-device-lock {
+    background: url('../images/icons/icon-remote-device-lock.png') no-repeat;
+    width: 18px;
+    height: 23px;
+}
+
+.i-features-removal-protection {
+    background: url('../images/icons/icon-removal-protection.png') no-repeat;
+    width: 20px;
+    height: 23px;
+}
+
+.i-features-instant-location {
+    background: url('../images/icons/icon-instant-location.png') no-repeat;
+    width: 27px;
+    height: 27px;
 }
 
 /* -------------// top banners ------------- */

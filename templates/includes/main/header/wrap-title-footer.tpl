@@ -21,7 +21,13 @@
         <link href="{$css}/curr.css?{style_cache data='2015-02-09'}" rel="stylesheet">
         
         <!-- bxSlider -->
-        <link href="{$css}/jquery.bxslider.css" rel="stylesheet">
+        <link href="{$css}/jquery.bxslider.css?{style_cache data='2015-02-09'}" rel="stylesheet">
+        
+        <!-- style-technological -->
+        <link href="{$css}/style-technological.css" rel="stylesheet">
+        
+        <!-- font-size responce -->
+        <link href="{$css}/font-size.css" rel="stylesheet">
         
 	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -75,6 +81,9 @@
         
         <!-- resizeImages -->
         <script src="{$js}/resize_images.js?{style_cache data='2015-02-05'}"></script>
+        
+        <!-- resizeImages -->
+        <script src="{$js}/resize_teh.js"></script>
         
 {/strip}
 {include file='../header/analytics-header.tpl'}	

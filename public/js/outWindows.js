@@ -7,6 +7,7 @@ $(document).ready(function(){
         });
     }
     
+    /*
     $('html').mouseleave(function(){
         // console.log( 'Out windows! ', $.cookie('popUp_email'), typeof($.cookie('popUp_email')) );
         if(typeof $.cookie('popUp_email') !== "undefined" 
@@ -31,6 +32,7 @@ $(document).ready(function(){
         }
         
     });
+    */
     
     // form popUp
     $('.block-popUp-close').on('click', function() {

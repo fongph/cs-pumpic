@@ -148,8 +148,10 @@
 											<li>
 												<a id="start" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse6">Do I need to jailbreak/root the target device to install Pumpic?</a>
 												<div id="collapse6" class="collapse">
-                                                                                                    <p>To install Pumpic, the target iOS device must be jailbroken.</p>  
-                                                                                                    <p>Android devices require rooting to get access to all the features of the app.</p>
+                                                                                                    <p>The app can be used to monitor devices both with jailbreak and without. To track jailbreak-free devices, one can use iCloud feature, otherwise the target device must be jailbroken. Please note that monitoring of jailbreak-free devices is limited to the following features:  SMS, Calls, Contacts, Browser History, Bookmarks, Calendar events.</p>
+                                                                                                    <p>Android devices require rooting to get access to the following features: Emails and Social Networks monitoring.</p>
+                                                                                                    {*<p>To install Pumpic, the target iOS device must be jailbroken.</p>  
+                                                                                                    <p>Android devices require rooting to get access to all the features of the app.</p>*}
                                                                                                 </div>
 											</li>
 											<li>

@@ -39,7 +39,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:boomersweb/cs-mail.git",
-                "reference": "9dd8628baa260a044af1ead7d8c415a11bfb4b41"
+                "reference": "9553369ad1a7bc3cfb21e8349c49d8ee1e2acff2"
             },
             "require": {
                 "guzzlehttp/guzzle": "~5.0",
@@ -57,7 +57,7 @@
             "license": [
                 "MIT"
             ],
-            "time": "2015-03-02 11:01:17"
+            "time": "2015-03-10 10:13:12"
         },
         {
             "name": "boomers/cs-models",
@@ -87,7 +87,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:boomersweb/cs-settings.git",
-                "reference": "8ff11bcd7914dcff0e5d25c642b540e1afeaa298"
+                "reference": "343272772ae603057eac348c3493daf862d37e8b"
             },
             "require": {
                 "php": ">=5.4.0"
@@ -98,7 +98,7 @@
                     "CS\\Settings\\": "src/"
                 }
             },
-            "time": "2015-03-03 15:44:54"
+            "time": "2015-03-10 10:08:20"
         },
         {
             "name": "boomers/cs-users",
@@ -385,16 +385,16 @@
         },
         {
             "name": "rastor/system",
-            "version": "0.5.4.10",
+            "version": "0.5.4.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/oRastor/system.git",
-                "reference": "b974f8e99f95b8bc0d37ede4e672e0c690323c71"
+                "reference": "eded608b4afcc39bcfa87476754abe35cb5c6046"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/oRastor/system/zipball/b974f8e99f95b8bc0d37ede4e672e0c690323c71",
-                "reference": "b974f8e99f95b8bc0d37ede4e672e0c690323c71",
+                "url": "https://api.github.com/repos/oRastor/system/zipball/eded608b4afcc39bcfa87476754abe35cb5c6046",
+                "reference": "eded608b4afcc39bcfa87476754abe35cb5c6046",
                 "shasum": ""
             },
             "require": {
@@ -424,7 +424,7 @@
                     "homepage": "http://rastor.name"
                 }
             ],
-            "time": "2014-12-25 08:15:43"
+            "time": "2015-03-10 07:33:18"
         },
         {
             "name": "react/promise",

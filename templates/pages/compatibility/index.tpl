@@ -68,7 +68,98 @@
                                         </div>
                                         <!-- end -->
                                     
-                                        <!-- search result -->
+                                        
+                                        <!-- BLOCK NEW LIST COMPATIBILYTI -->
+                                        <div class='row'>
+                                            <div class="col-sm-12 col-md-12 col-lg-12">
+                                                <ul class="option_list">
+                                                    <li><span>Manage calls</span>
+                                                        <ul>
+                                                            <li class="mobile_tooltip"> Call History</li>
+                                                        </ul>
+                                                            
+                                                    </li>
+                                                </ul>
+                                                <ul class="option_list">
+                                                    <li><span>Instant messengers</span>
+                                                        <ul>
+                                                            <li class="mobile_tooltip"> Skype</li>
+                                                        </ul>
+                                                            
+                                                    </li>
+                                                </ul>
+                                                <ul class="option_list">
+                                                    <li><span>Manage SMS</span>
+                                                        <ul>
+                                                            <li class="mobile_tooltip"> SMS History</li>
+                                                        </ul>
+                                                            
+                                                    </li>
+                                                </ul>
+                                                <ul class="option_list">
+                                                    <li><span>Browser</span>
+                                                        <ul>
+                                                            <li class="mobile_tooltip"> Browser history</li>
+                                                        </ul>
+                                                            
+                                                    </li>
+                                                </ul>
+                                                <ul class="option_list">
+                                                    <li><span>Other features</span>
+                                                        <ul>
+                                                            <li class="mobile_tooltip"> Location history</li>
+                                                        </ul>
+                                                            
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            
+                                            <div class="col-sm-12 col-md-12 col-lg-12">
+                                                <ul class="option_list">
+                                                    <li><span>Manage calls</span>
+                                                        <ul>
+                                                            <li class="mobile_tooltip"> Call History</li>
+                                                        </ul>
+                                                            
+                                                    </li>
+                                                </ul>
+                                                <ul class="option_list">
+                                                    <li><span>Instant messengers</span>
+                                                        <ul>
+                                                            <li class="mobile_tooltip"> Skype</li>
+                                                        </ul>
+                                                            
+                                                    </li>
+                                                </ul>
+                                                <ul class="option_list">
+                                                    <li><span>Manage SMS</span>
+                                                        <ul>
+                                                            <li class="mobile_tooltip"> SMS History</li>
+                                                        </ul>
+                                                            
+                                                    </li>
+                                                </ul>
+                                                <ul class="option_list">
+                                                    <li><span>Browser</span>
+                                                        <ul>
+                                                            <li class="mobile_tooltip"> Browser history</li>
+                                                        </ul>
+                                                            
+                                                    </li>
+                                                </ul>
+                                                <ul class="option_list">
+                                                    <li><span>Other features</span>
+                                                        <ul>
+                                                            <li class="mobile_tooltip"> Location history</li>
+                                                        </ul>
+                                                            
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            
+                                        </div>
+                                        
+                                        {*<!-- search result -->
                                         <div class="row">
                                             <h2 class="result-title">Most popular smartphones</h2>
                                             <div class="box-get-search-result clearfix">
@@ -105,7 +196,7 @@
                                                 </ul>
                                             </div>
                                         </div>
-                                        <!-- end -->
+                                        <!-- end -->*}
                                 </div>
                         </div>
                 </div>

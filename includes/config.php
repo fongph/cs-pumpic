@@ -68,7 +68,10 @@ $config = array(
                 'popup_email_send.html'   => 'popup_email_send.php',
             
                 // robots
-                'robots.txt'            => 'robots.php'
+                'robots.txt'            => 'robots.php',
+            
+                //search
+                'compatibility/results'           => 'compatibility_search.php'
 	),
     
     'db_phones' => array(

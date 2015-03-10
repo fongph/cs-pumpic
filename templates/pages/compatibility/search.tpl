@@ -8,8 +8,8 @@
 {include file='../../includes/main/header/wrap-title-footer.tpl'}
 <body>
         <!-- FLY BUTTON -->
-        {include file='../../includes/main/button-help.tpl'}
-        {include file='../../includes/main/button-goup.tpl'}
+        {include file='../../includes/main/main-button-help.tpl'}
+        {include file='../../includes/main/main-button-goup.tpl'}
 	<div class="wrapper">
 	{include file='../../includes/main/main-top-menu.tpl' 
                 topmenu_active="compatibility"
@@ -25,9 +25,9 @@
                                         </div>
                                         <div class="row">
                                                 <div class="col-lg-12">
-                                                    <form action="" name="box-search" method="POST" class="form-search compatibility-search">
+                                                    <form action="/compatibility/results/" name="box-search" method="POST" class="form-search compatibility-search">
                                                         <div class="input-group">
-                                                                <input type="text" class="form-control required" name="device-model" value="" placeholder="Enter device model">
+                                                                <input type="text" class="form-control required" name="device-model" value="{if $search_word}{$search_word}{/if}" placeholder="Enter device model">
                                                                 <span class="input-group-btn"><button class="btn btn-warning" type="submit">Search</button></span>
                                                         </div>
                                                         <div id="compatibility-search-error" class="fatal-error"></div>
@@ -52,14 +52,6 @@
                                                                 <a href="#" class="text-succes search-category" data-os="Android">View all supported Android devices</a>
                                                         </div>
                                                 </div>
-                                                {*<div class="col-sm-4 col-md-4">
-                                                        <div class="thumb">
-                                                                <span class="ico-left"><i class="icon-blackberry"></i></span>
-                                                                <span>OS:<strong> BlackBerry</strong></span>
-                                                                <span>Versions:<strong> 7.0 – 7.1</strong></span>
-                                                                <a href="#" class="text-succes search-category" attr_os="blackberry">View all supported BlackBerry devices</a>
-                                                        </div>
-                                                </div>*}
                                         </div>
                                     
                                         <!-- #log -->
@@ -70,7 +62,7 @@
                                     
                                         <!-- search result -->
                                         <div class="row">
-                                            <h2 class="result-title">Most popular smartphones</h2>
+                                            {if $search_word}<h2 class="result-title">Search results for "<strong>{$search_word}</strong>"</h2>{/if}
                                             <div class="box-get-search-result clearfix">
                                             {nocache}    
                                                 {foreach from=$phones item=phone}
@@ -98,7 +90,7 @@
                                                         {elseif $page == $currentPage}
                                                             <li class="active"><span class="current">{$page+1}</span></li>
                                                         {else}
-                                                            <li><a href="/compatibility.html{if $page}?page={$page}{/if}" class="page-link" href="#page={$page+1}">{$page+1}</a></li>
+                                                            <li><a href="/compatibility/results/?{if $page}page={$page}{/if}" class="page-link" href="#page={$page+1}">{$page+1}</a></li>
                                                         {/if}
                                                     {/foreach}
                                                 {/nocache}    
@@ -161,13 +153,15 @@
                     Переменные:
                         our_products (text): Включить выключить блок OUR PRODUCTS (no|yes). * - yes 
                 *}
-                {include file='../../includes/main/main-footer.tpl'}
+                {include file='../../includes/main/main-footer.tpl'
+                    _popUp= '../../includes/main-popUp.tpl'
+                } 
                                                    
 	</div>
         {include file='../../includes/main/main-analytics-footer.tpl'}
 
     <script type="text/javascript">
-        var Devices = {
+        /*var Devices = {
             imgPath: 'http://{$api_device._domain}/{$api_device.path_img}/',
             $titleBlock:  $('.result-title'),
             $resBlock: $('.box-get-search-result'),
@@ -230,7 +224,7 @@
     
             Devices.search(request, params);
             return false;
-        });
+        });*/
         var $searchForm = $('.form-search');
         $searchForm.validate({
             rules: {
@@ -248,9 +242,13 @@
                 }
             },
             submitHandler: function(  ) {
-                var searchStr = $searchForm.find('input[name="device-model"]').val();
-                Devices.search({ query: searchStr }, { title: 'Search results for "' + searchStr + '"'});
+                var $form = $(form);
+                $form.submit();
                 return false;
+                
+               /* var searchStr = $searchForm.find('input[name="device-model"]').val();
+                Devices.search({ query: searchStr }, { title: 'Search results for "' + searchStr + '"'});
+                return false;*/
             }
         });
     </script>

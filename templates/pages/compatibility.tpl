@@ -23,7 +23,7 @@
                                         </div>
                                         <div class="row">
                                                 <div class="col-lg-12">
-                                                    <form action="" name="box-search" method="POST" class="form-search compatibility-search">
+                                                    <form action="/compatibility/results/" name="box-search" method="POST" class="form-search compatibility-search">
                                                         <div class="input-group">
                                                                 <input type="text" class="form-control required" name="device-model" value="" placeholder="Enter device model">
                                                                 <span class="input-group-btn"><button class="btn btn-warning" type="submit">Search</button></span>
@@ -66,8 +66,36 @@
                                         </div>
                                         <!-- end -->
                                     
+                                        <!-- BLOCK NEW LIST COMPATIBILYTI -->
+                                        <div class='row'>
+                                            
+                                            {nocache}
+                                                <div class="col-sm-12 col-md-12 col-lg-12">
+                                                    {foreach from=$phones item=phone key=key}
+                                                        {assign 'iteration' $key + 1}
+                                                        <ul id="lists-compatibility" class="option_list">
+                                                            <li><span>{$phone.cat_name}</span>
+                                                                <ul>
+                                                                    {foreach from=$phone.models item=model}
+                                                                        <li class="mobile_tooltip"> <label {if $model.custom_text && count($model.features) > 0}onclick="window.open('http://{$domain}/compatibility/{$model.alies}/','_blank');"{/if}>{$model.name}</label> </li>
+                                                                    {/foreach}
+                                                                </ul>
+
+                                                            </li>
+                                                        </ul>
+                                                        
+                                                        {if $iteration % $cols == 0}     
+                                                            </div><div class="col-sm-12 col-md-12 col-lg-12">
+                                                        {/if}
+                                                        
+                                                    {/foreach} 
+                                                </div>    
+                                            {/nocache}
+                                            
+                                        </div>
+                                        
                                         <!-- search result -->
-                                        <div class="row">
+                                        {*<div class="row">
                                             <h2 class="result-title">Most popular smartphones</h2>
                                             <div class="box-get-search-result clearfix">
                                             {nocache}    
@@ -102,7 +130,7 @@
                                                 {/nocache}    
                                                 </ul>
                                             </div>
-                                        </div>
+                                        </div>*}
                                         <!-- end -->
                                 </div>
                         </div>
@@ -164,6 +192,7 @@
 	{include file='../includes/main/main-analytics-footer.tpl'}
 
     <script type="text/javascript">
+        /*
         var Devices = {
             imgPath: 'http://{$api_device._domain}/{$api_device.path_img}/',
             $titleBlock:  $('.result-title'),
@@ -228,6 +257,8 @@
             Devices.search(request, params);
             return false;
         });
+        */
+        
         var $searchForm = $('.form-search');
         $searchForm.validate({
             rules: {
@@ -244,10 +275,14 @@
                     minlength: "Enter at least 2 symbols to start search"
                 }
             },
-            submitHandler: function(  ) {
-                var searchStr = $searchForm.find('input[name="device-model"]').val();
-                Devices.search({ query: searchStr }, { title: 'Search results for "' + searchStr + '"'});
+            submitHandler: function( form ) {
+                var $form = $(form);
+                $form.submit();
                 return false;
+                
+                /*var searchStr = $searchForm.find('input[name="device-model"]').val();
+                Devices.search({ query: searchStr }, { title: 'Search results for "' + searchStr + '"'});
+                return false;*/
             }
         });
     </script>

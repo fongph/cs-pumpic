@@ -25,9 +25,7 @@ $compatibility = new Compatibility(new PDO(
 $currentPage = (int)$_GET['page'] ?: 0;
 
 //$res = $compatibility->getPhones(Compatibility::FIND_BY_QUERY, $currentPage, $_GET['query']);
-//echo "<pre>";
-//var_dump( $res );
-//echo "</pre>";
+
 
 if(isAjax()){
     if(!$_GET['json']) header('Content-Type: application/json');
@@ -40,13 +38,20 @@ if(isAjax()){
     die(json_encode($res, true));
 }
 
-
+/*
 $phones = $compatibility->getPhones(Compatibility::FIND_ALL,$currentPage);
 $paginationList = paginationByCount($currentPage, ceil($phones['count'] / Compatibility::devicesPerPage()));
 
 $smarty->assign('phones', $phones['list'], false);
 $smarty->assign('currentPage', $currentPage, false);
 $smarty->assign('pages', $paginationList, false);
-$smarty->assign('api_device', $config['api_device']);
+*/
 
+$cat_phones = $compatibility->getCategoryModels();
+$smarty->assign('phones', $cat_phones, false);
+$smarty->assign("cols", 5);
+
+// domain
+$smarty->assign('domain', $config['domain']);
+$smarty->assign('api_device', $config['api_device']);
 $smarty->display('compatibility.tpl');

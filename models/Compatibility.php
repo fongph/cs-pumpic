@@ -161,6 +161,7 @@ class Compatibility {
             'tested' => $data['tested'],
             'features' => array(),
             'custom_text' => $data['custom_text'],
+            'alies' => (isset( $data['alies'] ) and !empty($data['alies'])) ? $data['alies'] : false,
         );
 
 
@@ -181,6 +182,54 @@ class Compatibility {
             }
         }
         return $result;
+    }
+    
+    public function getCategories() {
+        $categoties = $this->db->query("
+            SELECT *
+            FROM `phones_category`  
+            WHERE `hidden` = 0 ORDER BY `sort`")->fetchAll();
+        if(is_array($categoties) and count($categoties) > 0) {
+            return $categoties;
+        } else
+            return false;
+            
+    }
+    
+    public function getModelCatID( $cat_id ) {
+        $_res = array();
+        if(!$cat_id) return false;
+        
+        $_models = $this->db->query("
+            SELECT *,
+                LOWER( REPLACE( `longname`, ' ', '-') ) as alies
+            FROM `phones`  
+            WHERE `cat_id` = ".$cat_id." ORDER BY `popularity`")->fetchAll();
+        if(is_array($_models) and count($_models) > 0) {
+            
+            // add features
+            foreach($_models as $key => $_item):
+                $_res[$key] = self::phoneDataPrepare($_item);
+            endforeach;
+            
+            return $_res;
+        } else
+            return false;
+    }
+    
+    public function getCategoryModels() {
+        $_data = false;
+        $cats = $this -> getCategories();
+        if($cats) {
+            
+            foreach($cats as $_item) {
+                $_data[] = array(
+                    'cat_name' => $_item['name'],
+                    'models' => $this ->getModelCatID((int)$_item['id']),
+                );
+            }
+        }
+        return $_data;
     }
     
 }

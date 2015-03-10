@@ -1,0 +1,67 @@
+#fly_features {
+    position: fixed;
+    display: inline-block;
+    background: url('../images/fly_features/bg_fly_features.png') no-repeat;
+    width: 207px;
+    height: 156px;
+    color: #fff;
+    padding: 10px 10px;
+    
+    bottom: 40px;
+    right: 0px;
+    z-index: 999;
+    
+    border-radius: 5px;
+    -webkit-border-radius: 5px 5px;
+    -moz-border-radius: 5px 5px;
+}
+#fly_features > h2 {
+    color: #fff;
+    font-weight: 300;
+    font-size: 23px;
+    line-height: 23px;
+    margin: 0px 0px 7px 4px;
+    padiing: 0px;
+    
+    text-align: left;
+}
+
+#fly_features > ul {
+    margin: 0px;
+    padding: 0px;
+}
+#fly_features > ul li {
+    list-style: none;
+    margin: 0px 0px 8px 0px; 
+    font-size: 14px;
+    line-height: 14px;
+}
+
+#fly_features i {
+    display: inline-block;
+    position: relative;
+    margin-right: 12px;
+    width: 23px;
+    background: url('../images/fly_features/icons_fly_features.png') no-repeat;
+}
+
+#fly_features i.i-fly-features-monitor-instagram {
+    background-position: 0px 0px;
+    height: 18px;
+    top: 5px;
+}
+#fly_features i.i-fly-features-geo-fences {
+    background-position: 0px -29px;
+    height: 16px;
+    top: 3px;
+}
+#fly_features i.i-fly-features-limit-app {
+    background-position: 0px -53px;
+    height: 23px;
+    top: 6px;
+}
+#fly_features i.i-fly-features-icloud {
+    background-position: 0px -82px;
+    height: 14px;
+    top: 3px;
+}

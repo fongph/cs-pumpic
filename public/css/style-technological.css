@@ -68,6 +68,9 @@
 .mt40 {
     margin-top: 40px;
 }
+/*.block-technological .box-hedaer-title > h2 {
+    margin: 
+}*/
 
 .block-technological #table-container .tab > ul > li {
     height: 55px;
@@ -979,7 +982,7 @@ dl.table-rows.block-left {
 }
 .box-hedaer-title > h2 {
     font-size: 39px;
-    margin: 30px 0px 20px 0px;
+    margin: 15px 0px 5px 0px;
 }
 
 .box-hedaer-title > span {
@@ -1079,7 +1082,7 @@ dl.table-rows.block-left {
     padding-bottom: 40px;
 }
 .bth-buttons > ul {
-    padding: 20px 0px 25px;
+    padding: 0px 0px 10px;
     margin: 0px;
 }
 .bth-buttons > ul > li {

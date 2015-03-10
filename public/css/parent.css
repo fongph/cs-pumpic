@@ -446,6 +446,23 @@
     height: 27px;
 }
 
+.i-features-geo-fences {
+    background: url('../images/icons/icon-geo-fences.png') no-repeat;
+    width: 22px;
+    height: 16px;
+}
+
+.i-features-view-bookmarks {
+    background: url('../images/icons/icon-view-bookmarks.png') no-repeat;
+    width: 19px;
+    height: 19px;
+}
+
+.i-features-monitor-instagram {
+    background: url('../images/icons/icon-monitor-instagram.png') no-repeat;
+    width: 21px;
+    height: 20px;
+}
 /* -------------// top banners ------------- */
 
 

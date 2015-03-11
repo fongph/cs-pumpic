@@ -223,10 +223,14 @@ class Compatibility {
         if($cats) {
             
             foreach($cats as $_item) {
-                $_data[] = array(
-                    'cat_name' => $_item['name'],
-                    'models' => $this ->getModelCatID((int)$_item['id']),
-                );
+                if($models = $this ->getModelCatID((int)$_item['id'])) {
+                    $_data[] = array(
+                        'cat_name' => $_item['name'],
+                        'models' => $models,
+                    );
+                }
+                
+                
             }
         }
         return $_data;

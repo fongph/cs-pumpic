@@ -277,17 +277,18 @@
                     required: "The Device Model field is empty",
                     minlength: "Enter at least 2 symbols to start search"
                 }
-            },
-            /*
+
+            }/*,
             submitHandler: function( form ) {
                 var $form = $(form);
                 alert('test');
                 $form.submit();
                 return false;
+        
                 
-                // var searchStr = $searchForm.find('input[name="device-model"]').val();
-                // Devices.search({ query: searchStr }, { title: 'Search results for "' + searchStr + '"'});
-                // return false;
+                //var searchStr = $searchForm.find('input[name="device-model"]').val();
+                //Devices.search({ query: searchStr }, { title: 'Search results for "' + searchStr + '"'});
+                //return false;
             }*/
         });
     </script>

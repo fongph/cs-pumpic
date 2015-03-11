@@ -21,7 +21,7 @@
     <!-- END FLY BUTTON -->
     
     {* 'block-android' - название вашей страницы латинецей. ОБЯЗАТЕЛЬНОЕ ПОЛЕ *}
-    <div class="wrapper block-android">
+    <div class="wrapper block-knowledge{*block-android*}">
         <!-- TOP MENU -->
         {*
             Template: MENU ( ГЛАВНОЕ МЕНЮ )

@@ -1,9 +1,7 @@
-{closeAccess}
-
 {include file='../includes/main/main-header.tpl'
-    robots="yes" 
-    title="Mobile Parental Control App for Children"
-    description="Keep your family safe and secured with Pumpic. Track location. View calls and SMS. Follow online activity."
+    robots="no" 
+    title="High-grade tracking app with multiple functions"
+    description="Pumpic is an innovative solution, which takes Mobile Phone Monitoring on a reasonably new level. Find out more functions of Pumpic and evaluate the progress it made."
 }    
     
 <body>

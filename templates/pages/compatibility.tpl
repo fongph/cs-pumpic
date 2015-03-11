@@ -98,7 +98,7 @@
                                         </div>
                                         
                                         <!-- search result -->
-                                        {*<div class="row">
+                                        <div class="row">
                                             <h2 class="result-title">Most popular smartphones</h2>
                                             <div class="box-get-search-result clearfix">
                                             {nocache}    
@@ -133,7 +133,7 @@
                                                 {/nocache}    
                                                 </ul>
                                             </div>
-                                        </div>*}
+                                        </div>
                                         <!-- end -->
                                 </div>
                         </div>
@@ -209,7 +209,7 @@
                 Devices.$paginationBlock.html('');
                 Devices.$log.html('');
     
-                $.get('/compatibility.html', request, function(result){
+                $.get('/compatibility/', request, function(result){
     
                     if(Number(result.count) > 0) {
                         Devices.$titleBlock.html(params.title);
@@ -278,9 +278,10 @@
                     minlength: "Enter at least 2 symbols to start search"
                 }
             },
-            
-            /*submitHandler: function( form ) {
+            /*
+            submitHandler: function( form ) {
                 var $form = $(form);
+                alert('test');
                 $form.submit();
                 return false;
                 

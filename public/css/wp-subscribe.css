@@ -14,23 +14,23 @@
 }
 
 .box-form-subscribe .visual-text label.title {
-    font-size: 21px;
-    font-weight: bold;
-    padding-bottom: 10px;
+    font-size: 24px;
+    font-weight: 600;
+    padding-bottom: 5px;
     margin-bottom: 0px;
     position: relative;
 }
 
 .box-form-subscribe .visual-text .description {
    font-size: 17px;
-   font-weight: normal;
+   font-weight: 600;
    line-height: 1.2em;
-   margin-bottom: 15px;
+   margin-bottom: 10px;
 }    
 
 .box-form-subscribe .visual-text section {
     display: inline-block;
-    margin-bottom: 10px;
+    margin-bottom: 6px;
 }
 
 .box-form-subscribe .visual-text section input {
@@ -41,16 +41,17 @@
     margin-right: 9px;
 }
 
-.box-form-subscribe .block-error {
+.box-form-subscribe .block-error,
+.box-form-subscribe .block-info {
     font-size: 12px;
     line-height: 1.1em;
 }
 
-i.bg-small-logo {
+/*i.bg-small-logo {
     background: url('../images/subscribe/small_logo.png') no-repeat;
     width: 31px;
     height: 31px;
-}
+}*/
 
 /* ------------ // dark ------------ */
 .box-form-subscribe.dark {
@@ -58,11 +59,20 @@ i.bg-small-logo {
     background-size: 100% 100%;
 }
 
-.box-form-subscribe.dark i.bg-small-logo {
+.box-form-subscribe.dark .title > img {
     display: inline-block;
     position: relative;
     vertical-align: middle;
+    width: 31px;
+    height: 31px;
+    margin: 0px;
 }
+
+/*.box-form-subscribe.dark i.bg-small-logo {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+}*/
 
 .box-form-subscribe.dark .visual-text label.title {
     color: white;
@@ -73,6 +83,16 @@ i.bg-small-logo {
 }
 
 .box-form-subscribe.dark .block-error {
+    text-shadow: 1px 1px 1px #b54a58;
+    padding: 5px 0px 0px;
+    position: relative;
+    color: #e54a58;
+    width: 100%;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.box-form-subscribe.dark .block-info {
     color: #aeafc6;
 }
 
@@ -82,15 +102,19 @@ i.bg-small-logo {
     border: none;
     font-size: 13px;
     line-height: 13px;
+    font-weight: 400;
 }
 
 .box-form-subscribe.dark button {
+    top: 1px;
+    position: relative;
     background-clip: padding-box;
     border: medium none;
     border-radius: 4px;
     font-family: "Open Sans",Helvetica,Arial,sans-serif;
     font-size: 15px;
-    font-weight: 300;
+    line-height: 15px;
+    font-weight: 400;
     padding: 12px 15px;
 }
 

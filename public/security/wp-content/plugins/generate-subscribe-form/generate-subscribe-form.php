@@ -78,39 +78,48 @@ class generate_subscribe_form_widget extends WP_Widget
 		if ( $show_img == "false" ) {$show_img_option .= "<option value='false' selected >Off</option>";} else {$show_img_option .= "<option value='false'>Off</option>";}
 
 		# Output the options
-
+                echo " <p style='text-align:left'> * - Важные поля </p> ";
+                
                 echo '	<p style="text-align:left;"><label for="' . $this->get_field_name( 'type_form' ) . '">' . __( 'Style Form:' ) . '</label><br />
-				<select id="' . $this->get_field_id( 'type_form' ) . '" name="' . $this->get_field_name( 'type_form' ) . '">'.$type_form_option.'</select>
+				<select id="' . $this->get_field_id( 'type_form' ) . '" name="' . $this->get_field_name( 'type_form' ) . '">'.$type_form_option.'</select><br />
+                                <label for="' . $this->get_field_name( 'type_form' ) . '-info">Стиль письма ( по умолчанию: Dark )</label>    
 				</p>';
                 
                 echo '	<p style="text-align:left;"><label for="' . $this->get_field_name( 'show_img' ) . '">' . __( 'Show Img:' ) . '</label><br />
-				<select id="' . $this->get_field_id( 'show_img' ) . '" name="' . $this->get_field_name( 'show_img' ) . '">'.$show_img_option.'</select>
+				<select id="' . $this->get_field_id( 'show_img' ) . '" name="' . $this->get_field_name( 'show_img' ) . '">'.$show_img_option.'</select><br />
+                                <label for="' . $this->get_field_name( 'show_img' ) . '-info">Отображать/Скрывать изображение в форме. ( по умолчанию: On. - Отображать )</label>     
 				</p>';
                 
                  echo '	<p style="text-align:left;"><label for="' . $this->get_field_name( 'button_text' ) . '">' . __( 'Button Text:' ) . '</label><br />
-				<input style="width: 300px;" id="' . $this->get_field_id( 'button_text' ) . '" name="' . $this->get_field_name( 'button_text' ) . '" type="text" value="' . $button_text . '" />
-				</p>';
+				<input style="width: 300px;" id="' . $this->get_field_id( 'button_text' ) . '" name="' . $this->get_field_name( 'button_text' ) . '" type="text" value="' . $button_text . '" /><br />
+				<label for="' . $this->get_field_name( 'button_text' ) . '-info">* Текст кнопки в форме. </label>
+                                </p>';
                 
                 echo '	<p style="text-align:left;"><label for="' . $this->get_field_name( 'id_input' ) . '">' . __( 'ID INPUT( MailChimp Form ):' ) . '</label><br />
-				<input style="width: 300px;" id="' . $this->get_field_id( 'id_input' ) . '" name="' . $this->get_field_name( 'id_input' ) . '" type="text" value="' . $id_input . '" />
+				<input style="width: 300px;" id="' . $this->get_field_id( 'id_input' ) . '" name="' . $this->get_field_name( 'id_input' ) . '" type="text" value="' . $id_input . '" /><br />
+				<label for="' . $this->get_field_name( 'id_input' ) . '-info">* Поле для того чтобы в Мэилчимп подставлялся емэйл из формы. Прогер должен поменять, если емэйл в форму автоматом не подставляется.</label>
+                                </p>';
+                
+                echo '	<p style="text-align:left;"><label for="' . $this->get_field_name( 'img' ) . '">' . __( 'Img:' ) . '</label><br />
+				<input style="width: 300px;" id="' . $this->get_field_id( 'img' ) . '" name="' . $this->get_field_name( 'img' ) . '" type="text" value="' . $img . '" /><br />
+                                <label for="' . $this->get_field_name( 'img' ) . '-info"> Ссылка к изображению для данной формы. </label>    
 				</p>';
                 
 		echo '	<p style="text-align:left;"><label for="' . $this->get_field_name( 'title' ) . '">' . __( 'Title:' ) . '</label><br />
-				<input style="width: 300px;" id="' . $this->get_field_id( 'title' ) . '" name="' . $this->get_field_name( 'title' ) . '" type="text" value="' . $title . '" />
-				</p>';
+                                <textarea id="' . $this->get_field_id( 'title' ) . '" class="widefat" name="' . $this->get_field_name( 'title' ) . '" cols="20" rows="16">'.$title.'</textarea><br />
+				<div for="' . $this->get_field_name( 'title' ) . '-info"> Название формы ( для вставки изображения используем HTML, bзображение не должно быть больше 31x31 ). </div>
+                                </p>';
                 
                 echo '	<p style="text-align:left;"><label for="' . $this->get_field_name( 'link' ) . '">' . __( 'Link:' ) . '</label><br />
-				<input style="width: 300px;" id="' . $this->get_field_id( 'link' ) . '" name="' . $this->get_field_name( 'link' ) . '" type="text" value="' . $link . '" />
-				</p>';
+				<input style="width: 300px;" id="' . $this->get_field_id( 'link' ) . '" name="' . $this->get_field_name( 'link' ) . '" type="text" value="' . $link . '" /><br />
+				<label for="' . $this->get_field_name( 'link' ) . '-info">* Ссылка на форму MailChimp. </label>
+                                </p>';
                 
                 echo '	<p style="text-align:left;"><label for="' . $this->get_field_name( 'description' ) . '">' . __( 'Description:' ) . '</label><br />
-                            <textarea id="' . $this->get_field_id( 'description' ) . '" class="widefat" name="' . $this->get_field_name( 'description' ) . '" cols="20" rows="16">'.$description.'</textarea>
-				</p>';
+                            <textarea id="' . $this->get_field_id( 'description' ) . '" class="widefat" name="' . $this->get_field_name( 'description' ) . '" cols="20" rows="16">'.$description.'</textarea><br />
+                            <label for="' . $this->get_field_name( 'description' ) . '-info"> Описание формы. </label>    
+                        </p>';
 
-                echo '	<p style="text-align:left;"><label for="' . $this->get_field_name( 'img' ) . '">' . __( 'Img:' ) . '</label><br />
-				<input style="width: 300px;" id="' . $this->get_field_id( 'img' ) . '" name="' . $this->get_field_name( 'img' ) . '" type="text" value="' . $img . '" />
-				</p>';
-                
 		
 	}
 
@@ -152,14 +161,19 @@ class generate_subscribe_form_widget extends WP_Widget
                                                 <label class="title uppercase">'.$instance['title'].'</label>
                                                 <p class="description">'.$instance['description'].'</p>
                                                 <section>
+                                                    <div class="clearfix">
                                                         <div class="block-input left">
                                                             <input type="text" class="email required" name="'.$instance['id_input'].'" value="" placeholder="Your email" />
                                                         </div>
                                                         <div class="block-button left">
                                                             <button class="'.$_button_class.'" name="submit">'.$instance['button_text'].'</button>
                                                         </div>
+                                                    </div>    
+                                                    <div class="block-error"></div>
                                                 </section>
-                                                <label class="block-error"></label>
+                                                
+                                                <label class="block-info">We’ll never share your email adress and you can opt out at any time, we promise.</label>
+                                                
                                             </div>    
                                         </div>
                                     </div>

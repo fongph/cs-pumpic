@@ -1840,15 +1840,19 @@ only screen and (max-device-width: 480px) {
   background: none;
 }
 .option_list li ul li,
-.option_list li ul li > label{
+.option_list li ul li > label,
+.option_list li ul li > a {
   background: none;
   color: #525252;
   text-align: left;
-  line-height: 1;
+  line-height: 1.2em;
   margin: 0 10px 10px;
+  text-decoration: none;
+  cursor: default;
 }
 
-.option_list li ul li > label {  
+.option_list li ul li > label,
+.option_list li ul li > a {  
   display: block; 
   font-weight: normal;
   margin: 0px;

@@ -36,7 +36,7 @@
                                         <li><i class="icon-android"></i> (2.2 - 5.0)</li>
                                         <li><i class="icon-apple"></i> (6.0 - 8.1.2)</li>
                                         <li>
-                                            <i class="i-header-info"></i> <a href="/compatibility.html">platform compatibility</a>
+                                            <i class="i-header-info"></i> <a href="/compatibility/">platform compatibility</a>
                                         </li>
                                     </ul>
 

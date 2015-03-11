@@ -107,7 +107,7 @@ class generate_subscribe_form_widget extends WP_Widget
                 
 		echo '	<p style="text-align:left;"><label for="' . $this->get_field_name( 'title' ) . '">' . __( 'Title:' ) . '</label><br />
                                 <textarea id="' . $this->get_field_id( 'title' ) . '" class="widefat" name="' . $this->get_field_name( 'title' ) . '" cols="20" rows="16">'.$title.'</textarea><br />
-				<div for="' . $this->get_field_name( 'title' ) . '-info"> Название формы ( для вставки изображения используем HTML, bзображение не должно быть больше 31x31 ). </div>
+				<div for="' . $this->get_field_name( 'title' ) . '-info"> Название формы ( для вставки изображения используем HTML, зображение не должно быть больше 31x31 ). </div>
                                 </p>';
                 
                 echo '	<p style="text-align:left;"><label for="' . $this->get_field_name( 'link' ) . '">' . __( 'Link:' ) . '</label><br />

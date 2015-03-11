@@ -98,7 +98,7 @@
                                         </div>
                                         
                                         <!-- search result -->
-                                        <div class="row">
+                                        {*<div class="row">
                                             <h2 class="result-title">Most popular smartphones</h2>
                                             <div class="box-get-search-result clearfix">
                                             {nocache}    
@@ -133,7 +133,7 @@
                                                 {/nocache}    
                                                 </ul>
                                             </div>
-                                        </div>
+                                        </div>*}
                                         <!-- end -->
                                 </div>
                         </div>

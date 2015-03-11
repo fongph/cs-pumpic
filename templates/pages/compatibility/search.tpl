@@ -249,7 +249,7 @@
                 
                // var searchStr = $searchForm.find('input[name="device-model"]').val();
                // Devices.search({ query: searchStr }, { title: 'Search results for "' + searchStr + '"'});
-               // return false;*/
+               // return false;
             } */
         });
     </script>

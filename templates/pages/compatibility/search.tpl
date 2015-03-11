@@ -242,7 +242,7 @@
                     minlength: "Enter at least 2 symbols to start search"
                 }
             },
-            submitHandler: function(  ) {
+            submitHandler: function( form ) {
                 var $form = $(form);
                 $form.submit();
                 return false;

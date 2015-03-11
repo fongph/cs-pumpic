@@ -40,7 +40,7 @@
                                                         <div class="thumb">
                                                                 <span class="ico-left"><i class="icon-apple"></i></span>
                                                                 <span>OS:<strong> iOS</strong></span>
-                                                                <span>Versions:<strong> 6.0 or later (jailbreak required)</strong></span>
+                                                                <span>Versions:<strong> 6.0 or later {*(jailbreak required)*}</strong></span>
                                                                 <a href="#" class="text-succes search-category" data-os="iOS">View all supported iOS devices</a>
                                                         </div>
                                                 </div>
@@ -161,7 +161,7 @@
         {include file='../../includes/main/main-analytics-footer.tpl'}
 
     <script type="text/javascript">
-        /*var Devices = {
+        var Devices = {
             imgPath: 'http://{$api_device._domain}/{$api_device.path_img}/',
             $titleBlock:  $('.result-title'),
             $resBlock: $('.box-get-search-result'),
@@ -224,7 +224,8 @@
     
             Devices.search(request, params);
             return false;
-        });*/
+        });
+        
         var $searchForm = $('.form-search');
         $searchForm.validate({
             rules: {

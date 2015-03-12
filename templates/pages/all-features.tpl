@@ -216,6 +216,15 @@
                             <div class="col-xs-sm-12 col-sm-12 col-md-12 col-lg-12 text-center bth-buttons">
                                 <ul>
                                     <li>
+                                     <a class="btn-yellow ga-action-click btn-free-trial" 
+                                       href="http://demo.{$domain}/"
+                                        ga-action ="click"
+                                        ga-category="techological"
+                                        ga-label="demo"
+                                       >Live Demo</a>
+                                    </li>
+                                    
+                                    <li>
                                       <a class="btn-red ga-action-click btn-buy-now" 
                                        href="http://{$domain}/store.html"
                                         ga-action ="click"
@@ -223,14 +232,14 @@
                                         ga-label="buy now"
                                        >Buy Now</a>
                                     </li>
-                                    <li>
+                                    {*<li>
                                     <a class="btn-yellow ga-action-click btn-free-trial" 
                                        href="http://{$domain}/free-trial.html"
                                         ga-action ="click"
                                         ga-category="techological"
                                         ga-label="trial"
                                        >Free Trial</a>
-                                    </li>    
+                                    </li>*}    
                                 </ul>
                                 <p>Keep your family safe and secured with Pumpic. 
                                     <br />Track location. View calls and SMS. Follow online activity.</p>

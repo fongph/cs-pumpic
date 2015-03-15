@@ -429,6 +429,9 @@
                                 <img style='max-width: 380px' class="image-features model-mobile-center" src='../images/technological/image-location-history.png' />
                             </div>
                             <div class="item-feature-list div-table-column col-sm-12 col-md-1 col-lg-1 text-center">
+                                {*<i class='i-bubble'></i>*}
+                                {*<div class='box-solid-1'></div>*}
+                                    
                                 <div class='box-line-solid only-pc'>
                                     <i class='i-bubble'></i>
                                     <span class='box-solid-1'></span>

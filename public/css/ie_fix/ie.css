@@ -1,0 +1,107 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 15.03.2015, 12:04:05
+    Author     : Сергей
+*/
+.msie #box-features-list > .div-table-row > .item-feature-list {
+        position: relative;
+        height: 100%;
+        min-height: 100%;
+        clear: both;
+}
+.msie .box-line-solid {
+    height: 100vh;
+    width: 100%;
+}
+
+.msie .box-line-solid .i-bubble {
+    margin: 0 auto;
+}
+
+.msie .feature-item-info .block-info > ul > li,
+.text-left.list-features > li ul > li, 
+.text-right.list-features > li ul > li {
+    list-style: none;
+}
+.msie .feature-item-info .block-info > ul > li:before,
+.text-left.list-features > li ul > li:before,
+.text-right.list-features > li ul > li:before {
+font-family: "fontello_list";
+/*  font-size: 1px;  */
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  position: relative;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  text-align: center;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1em;
+  font-size: 40%; 
+  content: '\e800';
+  top: -2px;
+  padding: 0px 0px 0px 0px;
+}
+
+.msie .even .feature-item-info .block-info > ul > li:before,
+.text-left.list-features > li ul > li:before {
+   margin: 0px 0px 0px -1.4em; 
+   left: -1.4em;
+}
+.msie .odd .feature-item-info .block-info > ul > li:before,
+.text-right.list-features > li ul > li:before {
+   margin: 0px -1.4em 0px 0px; 
+   right: -1.4em;
+}
+
+/* header banners */
+
+/* end */
+
+@media only screen and (max-width: 480px) { 
+    .msie .even .feature-item-info .block-info > ul > li:before,
+    .msie .odd .feature-item-info .block-info > ul > li:before {
+       margin: 0px 0px 0px -1.4em; 
+       left: -1.4em;
+    }
+}
+@media (min-width: 468px) { 
+    .msie .even .feature-item-info .block-info > ul > li:before,
+    .msie .odd .feature-item-info .block-info > ul > li:before {
+       margin: 0px 0px 0px -1.4em; 
+   left: -1.4em;
+    }
+}
+@media (min-width: 768px) { 
+    .msie .even .feature-item-info .block-info > ul > li:before,
+    .msie .odd .feature-item-info .block-info > ul > li:before {
+        margin: 0px 0px 0px -1.4em; 
+        left: -1.4em;
+    }
+}
+@media (min-width: 992px) {
+    .msie .even .feature-item-info .block-info > ul > li:before {
+        margin: 0px 0px 0px -1.4em; 
+        left: -1.4em;
+    }
+    .msie .odd .feature-item-info .block-info > ul > li:before {
+        margin: 0px -1.4em 0px 0px; 
+        right: -1.4em;
+    }
+}
+@media (min-width: 1200px) { 
+    .msie .even .feature-item-info .block-info > ul > li:before {
+       margin: 0px 0px 0px -1.4em; 
+       left: -1.4em;
+    }
+    .msie .odd .feature-item-info .block-info > ul > li:before {
+       margin: 0px -1.4em 0px 0px; 
+       right: -1.4em;
+    }
+}

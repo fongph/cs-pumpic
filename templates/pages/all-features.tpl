@@ -25,7 +25,7 @@
                 <div id="block-technological-header"> 
                     <div class="box-hedaer-title">
                         <h2 class="text-center">Cell Phone Monitoring Mobile Application</h2>
-                        <span>Enjoy more than <strong>20 features</strong> of <strong>remote mobile tracking</strong> with Pumpic.</span>
+                        {*<span>Enjoy more than <strong>20 features</strong> of <strong>remote mobile tracking</strong> with Pumpic.</span>*}
                     </div>
                     
                     <div class="box-hedaer-body">
@@ -239,6 +239,7 @@
                                     Keep your eyes open!
                                     {*Keep your family safe and secured with Pumpic. 
                                     <br />Track location. View calls and SMS. Follow online activity.*}</p>
+                                <p>Enjoy more than <strong>20 features</strong> of <strong>remote mobile tracking</strong> with Pumpic.</p>
                             </div>
                         </div>                    
                     </div>

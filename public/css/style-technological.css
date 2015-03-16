@@ -981,11 +981,13 @@ dl.table-rows.block-left {
 
 .box-hedaer-title {
     text-align: center;
-    padding-bottom: 36px;
+/*    padding-bottom: 36px;*/
+    padding-bottom: 10px;
 }
 .box-hedaer-title > h2 {
     font-size: 39px;
-    margin: 15px 0px 5px 0px;
+/*    margin: 15px 0px 5px 0px;*/
+    margin: 10px 0px 5px 0px;
 }
 
 .box-hedaer-title > span {

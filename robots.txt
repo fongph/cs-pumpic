@@ -2,3 +2,4 @@ User-agent:*
 Disallow: /tag/
 Disallow: /restore.html
 Disallow: /login.html
+Disallow: /policy.html

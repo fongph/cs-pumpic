@@ -9,19 +9,18 @@
 						<h3>COMPANY</h3>
 						<ul class="list_grey">
                                                     <li>
-                                                        <a href="/policy.html">Terms and conditions</a>
+                                                        <a href="/policy.html">Legal Policies</a>
                                                     </li>
-                                                    <li>
+                                                    <?php /*<li>
                                                         <a href="/policy.html#privacy-policy">Privacy Policy</a>
                                                     </li>
                                                     <li>
                                                         <a href="/policy.html#refund-policy">Refund policy</a>
                                                     </li>
-                                                    <?php /*<li>
+                                                    <li>
                                                         <a href="/contact-us.html">Contact us</a>
                                                     </li> */ ?>
-                                                    
-                                                     <li>
+                                                    <li>
                                                         <a href="/security/">Security</a>
                                                     </li>
                                                     

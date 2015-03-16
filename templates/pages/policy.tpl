@@ -21,6 +21,26 @@
 					<div class="col-lg-10 col-lg-offset-1">
 						<div class="row">
 							<div class="col-lg-12">
+								<h2 id="refund-policy">Legal Policies</h2>
+								<article>
+									<p class="text-justify">Please carefully read this end user license agreement prior to purchasing or using the Pumpic software. By purchasing or using the software, you agree to adhere to the terms of this license. If you do not accept the terms of this license, do not install or use the software and delete the software and all of its related files from your device. This end user license agreement ("EULA") is a legal agreement between you and software provider. By downloading, installing, or otherwise using the software, you agree to be bound by the terms of this EULA. If you do not agree to the terms of this EULA, you may not download, install, or use the software.</p>
+									<p class="text-justify">By accepting this agreement, you agree to install this software only on a device or devices owned by you and, for cloud-based or other monitoring that does not require installation on a device, to use it only in connection with an account, application, or program you have the legal right to access. You also agree to inform any person(s) who use(s) a device with the software installed and any other person with the right to access a monitored account of the presence of the software. Failure to comply may result in you breaking state and federal laws. You understand and agree that you shall be responsible for any legal costs incurred by application provider resulting from your improper or illegal use of the software.</p>
+
+									<h3 class="text-center">ALLOWED USES POLICY </h3>
+									<p class="text-justify">Pumpic is designed only to be used to monitor your underage child or employee:</p>
+									<p class="text-justify"><b>1) Child:</b> Your own child that is under the legal age of 18 (as defined by US law). Unless you are the legal guardian thereof, you cannot monitor a child if you hold one of the following relationships: </p>
+                                    <ul class="feature_list">
+										<li>Brother / Sister</li>
+                                        <li>Step-Brother / Step-Sister</li>
+                                        <li>Step-Father / Step-Mother</li>
+ 										<li>Aunt / Uncle Cousin / Nephew</li>
+                                        <li>Grandfather / Grandmother</li>
+                                        <li>Great-Grandfather / Great-Grandmother</li>                                       
+									</ul>
+									<p class="text-justify"><b>2) Employee:</b> Your employee at a company you own OR an employee at the same company as you and you have managerial responsibilities for. The employee can be monitored using a phone owned by the company and issued to the employee under your company's policies regarding company phones. The employee must give consent and be notified they are being monitored before monitoring can begin.</p>                                    
+									<p class="text-justify">Pumpic cannot be used to monitor any other individuals (such as a spouse, friend, significant other, parolee, probationer, etc.). This would violate the terms you agreed to at the point of purchase and be subject to immediate termination without reimbursement.</p>
+								</article>
+                                <!-- refund policy -->                            
 								<h2 id="refund-policy">Refund Policy{*REFUND POLICY*}</h2>
 								<article>
 									<h3 class="text-center">Pumpic Application{*PUMPIC APPLICATION*}</h3>

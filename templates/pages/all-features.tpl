@@ -337,7 +337,7 @@
                     
                     <div class="table-col-8 table-sm-col-3 model-center">
                         <!-- left table #1 -->
-                        <div class="col-lg-6 padding-null">
+                        <div class="col-md-6 col-lg-6 padding-null">
                         
                             <div id="block-compatibility-table" class="android-table">
                                 
@@ -367,7 +367,7 @@
 
                         </div>
                         <!-- left table #1 -->
-                        <div class="col-lg-6 padding-null">
+                        <div class="col-md-6 col-lg-6 padding-null">
                         
                             <div id="block-compatibility-table" class="ios-table">
                                 

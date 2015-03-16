@@ -5,10 +5,9 @@
 }    
     
 <body>
-    <!-- FLY BUTTON -->
-    {include file='../includes/main/main-button-help.tpl'}
-    {include file='../includes/main/main-button-goup.tpl'}
-    <!-- END FLY BUTTON -->
+    <!-- FLY BLOCKS -->
+    {include file='../includes/content/fly/fly_blocks.tpl'}
+    <!-- END FLY BLOCKS-->
     
     <div class="wrapper {*bg_bottom_images*} block-free-trial">
         <!-- TOP MENU -->
@@ -61,7 +60,7 @@
         }
         
         {include file='../includes/main/main-testimonials.tpl'
-                title = "Trusted by Over 10 000 Customers Wordwide"
+                title = "Trusted by Over 10 000 Customers Worldwide"
                 sliders = "false"
                 blockBg="light"} 
         

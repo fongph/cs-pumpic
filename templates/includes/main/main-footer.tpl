@@ -1,4 +1,4 @@
-<div class="dark bg-footer">
+<div class="{if $blockBg}{$blockBg}{else}dark bg-footer{/if}">
         <div class="container">
                 <div class="row">
                     {*<div class="bg-footer"></div>*}

@@ -141,7 +141,7 @@
                                                                         <span class="sp">
                                                                             <strong>
                                                                                 {$_item.period}
-                                                                            </strong> month
+                                                                            </strong> months
                                                                         </span>
                                                                         <span class="sp_price">
                                                                             <strong>
@@ -199,7 +199,7 @@
                                                                         <span class="sp">
                                                                             <strong>
                                                                                 {$_item.period}
-                                                                            </strong> month
+                                                                            </strong> months
                                                                         </span>
                                                                         <span class="sp_price">
                                                                             <strong>
@@ -243,7 +243,7 @@
                                                                         <span class="sp">
                                                                             <strong>
                                                                                 {$_item.period}
-                                                                            </strong> month
+                                                                            </strong> months
                                                                         </span>
                                                                         <span class="sp_price">
                                                                             <strong>
@@ -299,7 +299,7 @@
                                                                         <span class="sp">
                                                                             <strong>
                                                                                 {$_item.period}
-                                                                            </strong> month
+                                                                            </strong> months
                                                                         </span>
                                                                         <span class="sp_price">
                                                                             <strong>

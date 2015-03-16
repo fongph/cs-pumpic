@@ -94,6 +94,10 @@
         <!-- resizeImages -->
         <script src="{$js}/resize_teh.js"></script>
         
+        <!-- sliders -->
+        <script src="{$js}/bxslider/jquery.bxslider.js"></script>
+        <script src="{$js}/bxslider/bxInit.js"></script>
+        
 {/strip}
 {include file='../header/analytics-header.tpl'}	
 {strip}	

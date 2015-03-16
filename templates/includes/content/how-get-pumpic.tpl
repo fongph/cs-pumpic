@@ -1,6 +1,6 @@
 <div class="{if $blockBg}{$blockBg}{else}dark{/if} howtouse-pumpic">
     <div class="container">
-            <h2 class="text-center">{if $title}{$title}{else}How to Get Pumpic{/if}</h2>
+            <h2 class="text-center">{if $title}{$title}{else}How it works{*How to Get Pumpic*}{/if}</h2>
                 
             {if $style eq 'static' || !isset($style)}
                 {include file='./how_get_pumpic/static.tpl'}

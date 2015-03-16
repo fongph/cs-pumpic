@@ -25,8 +25,8 @@
                 
                 <div id="block-technological-header"> 
                     <div class="box-hedaer-title">
-                        <h2 class="text-center">Cell Phone Monitoring Control App</h2>
-                        <span>Keep your family safe and secured with Pumpic. Track location. View calls and SMS. Follow online activity.</span>
+                        <h2 class="text-center">Cell Phone Monitoring Mobile Application</h2>
+                        <span>Enjoy more than <strong>20 features</strong> of <strong>remote mobile tracking</strong> with Pumpic.</span>
                     </div>
                     
                     <div class="box-hedaer-body">
@@ -39,14 +39,10 @@
                                             <div class="col-sm-10 col-md-10 col-lg-10">
                                                 <label>Calls</label>
                                                 <div class="bth-info">
-                                                    {*<p>Monitor incoming and outgoing 
-                                                        call data. Call blocking.</p>*}
-                                                     
                                                     <ul>
-                                                        <li>Monitor incoming and outgoing</li>
-                                                        <li>call data. Call blocking.</li>
-                                                    </ul>    
-                                                        
+                                                        <li>in- and outbound call logs</li>
+                                                        <li>name, number and time data</li>
+                                                    </ul>  
                                                 </div>
                                             </div>
                                             <div class="col-sm-2 col-md-2 col-lg-2 padding-null">
@@ -58,11 +54,11 @@
                                     <li class="i-l-features">
                                         <div class="row">
                                             <div class="col-sm-10 col-md-10 col-lg-10">
-                                                <label>Location history</label>
+                                                <label>Location & Geo-fences</label>
                                                 <div class="bth-info">
                                                     <ul>
-                                                        <li>Monitor incoming and outgoing</li>
-                                                        <li>call data. Call blocking.</li>
+                                                        <li>current GPS location & history</li>
+                                                        <li>geo-fences and alerts</li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -76,11 +72,11 @@
                                     <li class="i-l-features">
                                         <div class="row">
                                             <div class="col-sm-10 col-md-10 col-lg-10">
-                                                <label>Chats</label>
+                                                <label>Online Chats</label>
                                                 <div class="bth-info">
                                                     <ul>
-                                                        <li>Monitor incoming and outgoing</li>
-                                                        <li>call data. Call blocking.</li>
+                                                        <li>Facebook Messenger</li>
+                                                        <li>WhatsApp, Viber, Skype</li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -97,8 +93,8 @@
                                                 <label>Email</label>
                                                 <div class="bth-info">
                                                     <ul>
-                                                        <li>Monitor incoming and outgoing</li>
-                                                        <li>call data. Call blocking.</li>
+                                                        <li>inbox and sent emails</li>
+                                                        <li>precise contact data</li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -129,7 +125,7 @@
                             <div class="col-sm-3 col-md-3 col-lg-3">
                                 <ul class="list-features text-left">
                                     
-                                    <li class="i-l-features">
+                                    <li class="i-l-features p-b40">
                                         <div class="row">
                                             <div class="col-sm-2 col-md-2 col-lg-2 padding-null">
                                                 <img class="model-center" src="{$img}/technological/header/icon/icon-sms.png" width="33px" height="29px" />
@@ -139,17 +135,16 @@
                                                 <label>SMS</label>
                                                 <div class="bth-info">
                                                     <ul>
-                                                        <li>Monitor incoming and outgoing</li>
-                                                        <li>call data. Call blocking.</li>
+                                                        <li>sent, received and deleted text messages</li>
+                                                        <li>block by senders or bad words</li>
                                                     </ul>
                                                 </div>
                                             </div>
                                         </div>
-                                        
                                     </li>
                                     
                                     
-                                    <li class="i-l-features">
+                                    <li class="i-l-features p-b20">
                                         <div class="row">
                                             <div class="col-sm-2 col-md-2 col-lg-2 padding-null">
                                                 <img class="model-center" src="{$img}/technological/header/icon/icon-photos.png" width="29px" height="24px" />
@@ -159,8 +154,8 @@
                                                 <label>Photos & Videos</label>
                                                 <div class="bth-info">
                                                     <ul>
-                                                        <li>Monitor incoming and outgoing</li>
-                                                        <li>call data. Call blocking.</li>
+                                                        <li>camera shots and Instagram monitoring</li>
+                                                        <li>downloaded pictures from the Internet</li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -168,18 +163,18 @@
                                         
                                     </li>
                                     
-                                    <li class="i-l-features">
+                                    <li class="i-l-features p-b30">
                                         <div class="row">
                                             <div class="col-sm-2 col-md-2 col-lg-2 padding-null">
                                                 <img class="model-center" src="{$img}/technological/header/icon/icon-browser.png" width="31px" height="31px" />
                                             </div>
                                             
                                             <div class="col-sm-10 col-md-10 col-lg-10">
-                                                <label>Browser & Apps</label>
+                                                <label>Browsers & Applications</label>
                                                 <div class="bth-info">
                                                     <ul>
-                                                        <li>Monitor incoming and outgoing</li>
-                                                        <li>call data. Call blocking.</li>
+                                                        <li>browsing history and bookmarks</li>
+                                                        <li>block websites and limit applications</li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -195,11 +190,11 @@
                                             </div>
                                             
                                             <div class="col-sm-10 col-md-10 col-lg-10">
-                                                <label>Calendar & contacts</label>
+                                                <label>Calendar & Contacts</label>
                                                 <div class="bth-info">
                                                     <ul>
-                                                        <li>Monitor incoming and outgoing</li>
-                                                        <li>call data. Call blocking.</li>
+                                                        <li>scheduled plans and events</li>
+                                                        <li>existing and deleted contacts</li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -216,7 +211,7 @@
                             <div class="col-xs-sm-12 col-sm-12 col-md-12 col-lg-12 text-center bth-buttons">
                                 <ul>
                                     <li>
-                                     <a class="btn-yellow ga-action-click btn-free-trial" 
+                                     <a class="btn-orange ga-action-click btn-view-demo" 
                                        href="http://demo.{$domain}/"
                                         ga-action ="click"
                                         ga-category="techological"
@@ -241,8 +236,10 @@
                                        >Free Trial</a>
                                     </li>*}    
                                 </ul>
-                                <p>Keep your family safe and secured with Pumpic. 
-                                    <br />Track location. View calls and SMS. Follow online activity.</p>
+                                <p>View, track and block mobile activity remotely with Pumpic.<br />
+                                    Keep your eyes open!
+                                    {*Keep your family safe and secured with Pumpic. 
+                                    <br />Track location. View calls and SMS. Follow online activity.*}</p>
                             </div>
                         </div>                    
                     </div>
@@ -264,20 +261,20 @@
                                 <section>
                                     <div class="tab col-item-3 col-md-item-3 col-sm-item-3">
                                         <ul>
-                                            <li class="text-uppercase">
+                                            <li {*class="text-uppercase"*}>
                                                 <i class="i-features-keyloger"></i> 
                                                 <div>
                                                     Keylogger<br />
-                                                    <span class="text-normal">(passwords, apps behaviour, incognito)</span>
+                                                    {*<span class="text-normal">(passwords, apps behaviour, incognito)</span>*}
                                                 </div>    
                                             </li>
                                             <li>
                                                 <i class="i-features-reboot"></i>
-                                                <div>REBOOT APPLICATION</div>
+                                                <div>Reboot Application{*REBOOT APPLICATION*}</div>
                                             </li>
                                             <li>
                                                 <i class="i-features-remote-activity-control"></i>
-                                                <div>Remote activity control</div>
+                                                <div>Remote Activity Control{*Remote activity control*}</div>
                                             </li>
                                         </ul>
                                     </div>
@@ -290,7 +287,7 @@
                                             </li>
                                             <li>
                                                 <i class="i-features-reboot"></i>
-                                                <div>REBOOT DEVICE</div>
+                                                <div>Reboot Device{*REBOOT DEVICE*}</div>
                                             </li>
                                             <li>
                                                 <i class="i-features-remote-device-lock"></i>
@@ -303,15 +300,15 @@
                                         <ul>
                                             <li>
                                                 <i class="i-features-sim-card"></i>
-                                                <div>SIM CHANGE <span class="text-normal">notification</span></div>
+                                                <div>SIM Change Notification{*SIM CHANGE <span class="text-normal">notification</span>*}</div>
                                             </li>
                                             <li>
                                                 <i class="i-features-removal-protection"></i>
-                                                <div>Removal protection</div>
+                                                <div>Removal Protection{*Removal protection*}</div>
                                             </li>
                                             <li>
                                                 <i class="i-features-instant-location"></i>
-                                                <div>Instant location</div>
+                                                <div>Instant Location{*Instant location*}</div>
                                             </li>
                                         </ul>
                                     </div>
@@ -377,13 +374,13 @@
                                 
                                 <div class="table-body">
                                     <div class="text-center">
-                                        <p>Jailbreak is required before the installation</p>
+                                        <p>Jailbreak or iCloud password are required before the installation</p>
                                     </div>
                                     <div>
                                         
                                         <div class="div-table">
                                             <div class="div-table-row">
-                                                <div class="div-table-column"><span>iPhones / iPads / iPods Touch</span></div>
+                                                <div class="div-table-column"><span>iPhones / iPads / iPods Touch:</span></div>
                                                 <div class="div-table-column"><span class="color-green">iOS 6.0 and up</span></div>
                                             </div>
                                             {*<div class="div-table-row">
@@ -423,7 +420,73 @@
                     <!-- \\ list -->
                     <div id='box-features-list' class="div-table col-sm-12 col-md-12 col-lg-12">
                         
-                        <!-- \\ #1 -->
+                        <!-- \\ #2 Calls: (even)-->
+                        <div class="div-table-row even">
+                            <div class="item-feature-list div-table-column col-sm-12 col-md-4 col-lg-4 text-right">
+                                <img style='max-width: 302px' class="image-features model-mobile-center" src='../images/technological/image-call.png' />
+                            </div>
+                            <div class="item-feature-list div-table-column col-sm-12 col-md-1 col-lg-1 text-center">
+                                <div class='box-line-solid only-pc'>
+                                    <i class='i-bubble'></i>
+                                    <span class='box-solid-1'></span>
+                                </div>
+                            </div>
+                            <div class="item-feature-list div-table-column col-sm-12 col-md-4 col-lg-4 text-left">
+                                
+                                <div class='feature-item-info'>
+                                    <ul>
+                                        <li><i class='i-list-features-call'></i><strong>Calls</strong></li>
+                                    </ul>
+                                    <div class='block-info'>
+                                        <p>Follow <b>incoming</b> and <b>outgoing</b> call logs with precise contact data including <b>name</b>, <b>number</b>, <b>time</b> of the call and its <b>duration</b>. Find out, who reaches the target phone, at what time and for how long.</p>
+                                        
+                                        <div><a class="btn-orange" href="http://demo.{$domain}">View Demo</a></div>
+                                        <label class="color-orange">(no registration required)</label>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        
+                        <!-- \\ #3 SMS: (odd) -->
+                        <div class="div-table-row odd">
+                            <div class="item-feature-list div-table-column col-lg-4 text-right">
+                                
+                                <div class='feature-item-info'>
+                                    <ul>
+                                        <li>
+                                            <i class='i-list-features-sms only-mobile'></i>
+                                            <strong>SMS</strong>
+                                            <i class='i-list-features-sms only-pc'></i>
+                                        </li>
+                                    </ul>
+                                    <div class='block-info'>
+                                        <p>View <b>sent, received</b> and <b>deleted</b> SMS and iMessages along with forwarding information on both a sender and recipient. <b>Block</b> unwelcome senders <b>by phone number</b>, as well as offending SMS and threats <b>by words or phrases</b>.</p>
+                                        {*<ul>
+                                            <li>Use Pumpic app to follow the entire call history of your</li>
+                                            <li>child’s device. Protect your kids from mistrusted people.</li>
+                                            <li>View a caller’s data including the name and phone number,</li>
+                                            <li>the time when a call was received and duration of the </li>
+                                            <li>conversation</li>
+                                        </ul>*}
+                                        <div><a class="btn-orange" href="http://demo.{$domain}">View Demo</a></div>
+                                        <label class="color-orange">(no registration required)</label>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="item-feature-list div-table-column col-lg-1 text-center">
+                                <div class='box-line-solid only-pc'>
+                                    <i class='i-bubble'></i>
+                                    <span class='box-solid-1'></span>
+                                </div>
+                            </div>
+                            <div class="item-feature-list div-table-column col-lg-4 text-left">
+                                <img style='max-width: 302px' class="image-features model-mobile-center" src='../images/technological/image-sms.png' />
+                            </div>
+                        </div>
+                        
+                        <!-- \\ #1 Location: (even) -->
                         <div class="div-table-row even">
                             <div class="item-feature-list div-table-column col-sm-12 col-md-4 col-lg-4 text-right">
                                 <img style='max-width: 380px' class="image-features model-mobile-center" src='../images/technological/image-location-history.png' />
@@ -441,15 +504,16 @@
                               
                                 <div class='feature-item-info'>
                                     <ul>
-                                        <li><i class="i-list-features-location-history"></i><strong> Location history</strong></li>
+                                        <li><i class="i-list-features-location-history"></i><strong> Location</strong></li>
                                     </ul>
                                     <div class='block-info'>
-                                        <ul>
+                                        <p>Instantly <b>locate</b> the target device <b>on the map</b>. Keep track of current position as well as the <b>entire route history</b> by using GPS. Find the target device, if lost or stolen.</p>
+                                        {*<ul>
                                             <li>Pumpic allows you to tell the exact location of your children. </li>
                                             <li>Find your children by using GPS. The application identifies the current position together with the 
                                                 precise route of recent movements.</li>
-                                        </ul>
-                                        <div><a class="btn-orange" href="http://demo.{$domain}">View in demo</a></div>
+                                        </ul>*}
+                                        <div><a class="btn-orange" href="http://demo.{$domain}">View Demo</a></div>
                                         <label class="color-orange">(no registration required)</label>
                                     </div>
                                 </div>
@@ -457,77 +521,7 @@
                             </div>
                         </div>
                         
-                        <!-- \\ #2 (odd) -->
-                        <div class="div-table-row odd">
-                            <div class="item-feature-list div-table-column col-lg-4 text-right">
-                                
-                                <div class='feature-item-info'>
-                                    <ul>
-                                        <li>
-                                            <i class='i-list-features-call only-mobile'></i>
-                                            <strong>Calls</strong>
-                                            <i class='i-list-features-call only-pc'></i>
-                                        </li>
-                                    </ul>
-                                    <div class='block-info'>
-                                        <ul>
-                                            <li>Use Pumpic app to follow the entire call history of your</li>
-                                            <li>child’s device. Protect your kids from mistrusted people.</li>
-                                            <li>View a caller’s data including the name and phone number,</li>
-                                            <li>the time when a call was received and duration of the </li>
-                                            <li>conversation</li>
-                                        </ul>
-                                        <div><a class="btn-orange" href="http://demo.{$domain}">View in demo</a></div>
-                                        <label class="color-orange">(no registration required)</label>
-                                    </div>
-                                </div>
-                                
-                            </div>
-                            <div class="item-feature-list div-table-column col-lg-1 text-center">
-                                <div class='box-line-solid only-pc'>
-                                    <i class='i-bubble'></i>
-                                    <span class='box-solid-1'></span>
-                                </div>
-                            </div>
-                            <div class="item-feature-list div-table-column col-lg-4 text-left">
-                                <img style='max-width: 302px' class="image-features model-mobile-center" src='../images/technological/image-call.png' />
-                            </div>
-                        </div>
-                        
-                        <!-- \\ #3 -->
-                        <div class="div-table-row even">
-                            <div class="item-feature-list div-table-column col-sm-12 col-md-4 col-lg-4 text-right">
-                                <img style='max-width: 302px' class="image-features model-mobile-center" src='../images/technological/image-sms.png' />
-                            </div>
-                            <div class="item-feature-list div-table-column col-sm-12 col-md-1 col-lg-1 text-center">
-                                <div class='box-line-solid only-pc'>
-                                    <i class='i-bubble'></i>
-                                    <span class='box-solid-1'></span>
-                                </div>
-                            </div>
-                            <div class="item-feature-list div-table-column col-sm-12 col-md-4 col-lg-4 text-left">
-                                
-                                <div class='feature-item-info'>
-                                    <ul>
-                                        <li><i class='i-list-features-sms'></i><strong>SMS</strong></li>
-                                    </ul>
-                                    <div class='block-info'>
-                                        <ul>
-                                            <li>Monitor each and every text message along with attached</li>
-                                            <li>multimedia files delivered to your kid’s device. No matter</li>
-                                            <li>whether they were deleted or not, Pumpic will make them</li>
-                                            <li>visible to you. Keep track of your children’s SMS activity to</li>
-                                            <li>see whom they are chatting with.</li>
-                                        </ul>
-                                        <div><a class="btn-orange" href="http://demo.{$domain}">View in demo</a></div>
-                                        <label class="color-orange">(no registration required)</label>
-                                    </div>
-                                </div>
-                                
-                            </div>
-                        </div>
-                        
-                        <!-- \\ #4 (odd) -->
+                        <!-- \\ #4 Photos/Videos: (odd) -->
                         <div class="div-table-row odd">
                             <div class="item-feature-list div-table-column col-lg-4 text-right">
                                 
@@ -546,13 +540,14 @@
                                     </ul>
                                     
                                     <div class='block-info'>
-                                        <ul>
+                                        <p>View each <b>photo</b> or <b>video</b> file <b>shot by the camera</b> of the target smartphone or <b>downloaded</b> from the Internet. Monitor all multimedia files stored on the target device.</p>
+                                        {*<ul>
                                             <li>By using Pumpic software, you can view every single photo</li>
                                             <li>taken and downloaded from the Internet. Soon after your</li>
                                             <li>kid takes a pic, it will be sent to your Control Panel for your</li>
                                             <li>consideration.</li>
-                                        </ul>
-                                        <div><a class="btn-orange" href="http://demo.{$domain}">View in demo</a></div>
+                                        </ul>*}
+                                        <div><a class="btn-orange" href="http://demo.{$domain}">View Demo</a></div>
                                         <label class="color-orange">(no registration required)</label>
                                     </div>
                                 </div>
@@ -569,7 +564,7 @@
                             </div>
                         </div>
                         
-                        <!-- \\ #5 -->
+                        <!-- \\ #5 Facebook IM/Viber/Skype/WhatsApp: (even) -->
                         <div class="div-table-row even">
                             <div class="item-feature-list div-table-column col-sm-12 col-md-4 col-lg-4 text-right">
                                 <img style='max-width: 306px' class="image-features model-mobile-center" src='../images/technological/image-messanges.png' />
@@ -586,17 +581,18 @@
                                         <li><i class='i-list-features-facebook'></i><strong>Facebook IM</strong></li>
                                         <li><i class='i-list-features-viber'></i><strong>Viber</strong></li>
                                         <li><i class='i-list-features-skype'></i><strong>Skype</strong></li>
-                                        <li><i class='i-list-features-whatsapp'></i><strong>Whatsapp</strong></li>
+                                        <li><i class='i-list-features-whatsapp'></i><strong>WhatsApp</strong></li>
                                     </ul>
                                     
                                     <div class='block-info'>
-                                        <ul>
+                                        <p>Follow online communication activity. View <b>messages</b> sent and received via popular instant messengers like Facebook Messenger, Viber, Skype and WhatsApp.</p>
+                                        {*<ul>
                                             <li>Pumpic allows you to monitor your child’s device activity in</li>
                                             <li>the most widely used communication applications like</li>
                                             <li>WhatsApp, Viber and Skype. Prevent your children from</li>
                                             <li>conversations with misgiving people.</li>
-                                        </ul>
-                                        <div><a class="btn-orange" href="http://demo.{$domain}">View in demo</a></div>
+                                        </ul>*}
+                                        <div><a class="btn-orange" href="http://demo.{$domain}">View Demo</a></div>
                                         <label class="color-orange">(no registration required)</label>
                                     </div>
                                 </div>
@@ -604,7 +600,7 @@
                             </div>
                         </div>
                         
-                        <!-- \\ #6 (odd) -->
+                        <!-- \\ #6 Browser control: (odd) -->
                         <div class="div-table-row odd">
                             <div class="item-feature-list div-table-column col-lg-4 text-right">
                                 
@@ -612,19 +608,20 @@
                                     <ul>
                                         <li>
                                             <i class='i-list-features-browser only-mobile'></i>
-                                            <strong>Browser</strong>
+                                            <strong>Browser control</strong>
                                             <i class='i-list-features-browser only-pc'></i>
                                         </li>
                                     </ul>
                                     
                                     <div class='block-info'>
-                                        <ul>
+                                        <p>Monitor <b>browsing history</b> and view websites visited from the target device. Check <b>bookmarks</b>. <b>Block websites</b> containing inappropriate content.</p>
+                                        {*<ul>
                                             <li>Pumpic enables you to follow each link and every website</li>
                                             <li>your kid visits. Check search results and most popular</li>
                                             <li>requests. Keep your children away from visiting 18+ web</li>
                                             <li>resources.</li>
-                                        </ul>
-                                        <div><a class="btn-orange" href="http://demo.{$domain}">View in demo</a></div>
+                                        </ul>*}
+                                        <div><a class="btn-orange" href="http://demo.{$domain}">View Demo</a></div>
                                         <label class="color-orange">(no registration required)</label>
                                     </div>
                                 </div>
@@ -641,148 +638,7 @@
                             </div>
                         </div>
                         
-                        <!-- \\ #7 -->
-                        <div class="div-table-row even">
-                            <div class="item-feature-list div-table-column col-sm-12 col-md-4 col-lg-4 text-right">
-                                <img style='max-width: 302px' class="image-features model-mobile-center" src='../images/technological/image-email.png' />
-                            </div>
-                            <div class="item-feature-list div-table-column col-sm-12 col-md-1 col-lg-1 text-center">
-                                <div class='box-line-solid only-pc'>
-                                    <i class='i-bubble'></i>
-                                    <span class='box-solid-1'></span>
-                                </div>
-                            </div>
-                            <div class="item-feature-list div-table-column col-sm-12 col-md-4 col-lg-4 text-left">
-                                
-                                <div class='feature-item-info'>
-                                    <ul>
-                                        <li><i class='i-list-features-email'></i><strong>Email</strong></li>
-                                    </ul>
-                                    <div class='block-info'>
-                                        <ul>
-                                            <li>Track every single email your kid sends or receives. Check</li>
-                                            <li>email correspondence history and prevent you children</li>
-                                            <li>from ambiguous communications and online predators.</li>
-                                        </ul>
-                                        <div><a class="btn-orange" href="http://demo.{$domain}">View in demo</a></div>
-                                        <label class="color-orange">(no registration required)</label>
-                                    </div>
-                                </div>
-                                
-                            </div>
-                        </div>
-                        
-                        <!-- \\ #8 (odd) -->
-                        <div class="div-table-row odd">
-                            <div class="item-feature-list div-table-column col-lg-4 text-right">
-                                
-                                <div class='feature-item-info'>
-                                    <ul>
-                                        <li>
-                                            <i class='i-list-features-calendar only-mobile'></i>
-                                            <strong>Calendar</strong>
-                                            <i class='i-list-features-calendar only-pc'></i>
-                                        </li>
-                                        <li>
-                                            <i class='i-list-features-contacts only-mobile'></i>
-                                            <strong>Contacts</strong>
-                                            <i class='i-list-features-contacts only-pc'></i>
-                                        </li>
-                                    </ul>
-                                    
-                                    <div class='block-info'>
-                                        <ul>
-                                            <li>Find out all contact information ever put on the list. Keep</li>
-                                            <li>track of communication lists to prevent your children from</li>
-                                            <li>unwanted connections and companionship. Receive</li>
-                                            <li>notifications about recent contact additions.</li>
-                                        </ul>
-                                        <div><a class="btn-orange" href="http://demo.{$domain}">View in demo</a></div>
-                                        <label class="color-orange">(no registration required)</label>
-                                    </div>
-                                </div>
-                                
-                            </div>
-                            <div class="item-feature-list div-table-column col-lg-1 text-center">
-                                <div class='box-line-solid only-pc'>
-                                    <i class='i-bubble'></i>
-                                    <span class='box-solid-1'></span>
-                                </div>
-                            </div>
-                            <div class="item-feature-list div-table-column col-lg-4 text-left">
-                                <img style='max-width: 302px' class="image-features model-mobile-center" src='../images/technological/image-calendar-and-contacts.png' />
-                            </div>
-                        </div>
-                        
-                        <!-- \\ #9 -->
-                        <div class="div-table-row even">
-                            <div class="item-feature-list div-table-column col-sm-12 col-md-4 col-lg-4 text-right">
-                                <img style='max-width: 304px' class="image-features model-mobile-center" src='../images/technological/image-keylogger.png' />
-                            </div>
-                            <div class="item-feature-list div-table-column col-sm-12 col-md-1 col-lg-1 text-center">
-                                <div class='box-line-solid only-pc'>
-                                    <i class='i-bubble'></i>
-                                    <span class='box-solid-1'></span>
-                                </div>
-                            </div>
-                            <div class="item-feature-list div-table-column col-sm-12 col-md-4 col-lg-4 text-left">
-                                
-                                <div class='feature-item-info'>
-                                    <ul>
-                                        <li><i class='i-list-features-keylogger'></i><strong> Keylogger <span class='text-normal'>(passwords, apps behaviour, incognito)</span> </strong></li>
-                                    </ul>
-                                    <div class='block-info'>
-                                        <ul>
-                                            <li>By Using Pumpic software, you can follow each button your</li>
-                                            <li>kid presses. Keep track of password changes, track keywords</li>
-                                            <li>and phrases input, associated with misgiving subjects.</li>
-                                        </ul>
-                                        <div><a class="btn-orange" href="http://demo.{$domain}">View in demo</a></div>
-                                        <label class="color-orange">(no registration required)</label>
-                                    </div>
-                                </div>
-                                
-                            </div>
-                        </div>
-                        
-                        <!-- \\ #10 (odd) -->
-                        <div class="div-table-row odd">
-                            <div class="item-feature-list div-table-column col-lg-4 text-right">
-                                
-                                <div class='feature-item-info'>
-                                    <ul>
-                                        <li>
-                                            <i class='i-list-features-sms-command only-mobile'></i>
-                                            <strong>SMS comands</strong>
-                                            <i class='i-list-features-sms-command only-pc'></i>
-                                        </li>
-                                    </ul>
-                                    
-                                    <div class='block-info'>
-                                        <ul>
-                                            <li>Pumpic allows you to lock and wipe the phone remotely. Even</li>
-                                            <li>if there is no network connection, you can easily use SMS</li>
-                                            <li>commands to control your kid’s device functioning: change</li>
-                                            <li>the password or simply lock it by sending a text message.</li>
-                                        </ul>
-                                        <div><a class="btn-orange" href="http://demo.{$domain}">View in demo</a></div>
-                                        <label class="color-orange">(no registration required)</label>
-                                    </div>
-                                </div>
-                                
-                            </div>
-                            <div class="item-feature-list div-table-column col-lg-1 text-center">
-                                <div class='box-line-solid only-pc'>
-                                    <i class='i-bubble'></i>
-                                    <span class='box-solid-1'></span>
-                                </div>
-                            </div>
-                            <div class="item-feature-list div-table-column col-lg-4 text-left">
-                                <img style='max-width: 187px' class="image-features model-mobile-center" src='../images/technological/image-sms-command.png' />
-                            </div>
-                        </div>
-                            
-                        <!-- \\ #11 -->
+                       <!-- \\ #11 Applications: (even)-->
                         <div class="div-table-row even">
                             <div class="item-feature-list div-table-column col-sm-12 col-md-4 col-lg-4 text-right">
                                 <img style='max-width: 326px' class="image-features model-mobile-center" src='../images/technological/image-applications.png' />
@@ -800,20 +656,173 @@
                                         <li><i class='i-list-features-applications'></i><strong>Applications</strong></li>
                                     </ul>
                                     <div class='block-info'>
-                                        <ul>
+                                        <p>Keep track of <b>installed applications</b> on the target device. <b>Block</b> and <b>set time limits</b> on running particular apps installed on the target device.</p>
+                                        {*<ul>
                                             <li>By Using Pumpic software, you can follow each button your</li>
                                             <li>kid presses. Keep track of password changes, track keywords</li>
                                             <li>and phrases input, associated with misgiving subjects.</li>
-                                        </ul>
-                                        <div><a class="btn-orange" href="http://demo.{$domain}">View in demo</a></div>
+                                        </ul>*}
+                                        <div><a class="btn-orange" href="http://demo.{$domain}">View Demo</a></div>
                                         <label class="color-orange">(no registration required)</label>
                                     </div>
                                 </div>
                                 
                             </div>
-                        </div>  
+                        </div>                 
+                                      
+                                        
+                       <!-- \\ #7 Email: (odd) -->
+                        <div class="div-table-row odd">
+                            <div class="item-feature-list div-table-column col-lg-4 text-right">
+                                
+                                <div class='feature-item-info'>
+                                    <ul>
+                                        <li>
+                                            <i class='i-list-features-email only-mobile'></i>
+                                            <strong>Email</strong>
+                                            <i class='i-list-features-email only-pc'></i>
+                                        </li>
+                                    </ul>
+                                    
+                                    <div class='block-info'>
+                                        <p>View <b>incoming</b>, <b>sent</b> and <b>deleted</b> emails. Find out precise communication data, including <b>names</b>, <b>addresses</b> and writing <b>time</b>. Monitor online correspondence, subscriptions and registrations.</p>
+                                        {*<ul>
+                                            <li>Find out all contact information ever put on the list. Keep</li>
+                                            <li>track of communication lists to prevent your children from</li>
+                                            <li>unwanted connections and companionship. Receive</li>
+                                            <li>notifications about recent contact additions.</li>
+                                        </ul>*}
+                                        <div><a class="btn-orange" href="http://demo.{$domain}">View Demo</a></div>
+                                        <label class="color-orange">(no registration required)</label>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="item-feature-list div-table-column col-lg-1 text-center">
+                                <div class='box-line-solid only-pc'>
+                                    <i class='i-bubble'></i>
+                                    <span class='box-solid-1'></span>
+                                </div>
+                            </div>
+                            <div class="item-feature-list div-table-column col-lg-4 text-left">
+                                <img style='max-width: 302px' class="image-features model-mobile-center" src='../images/technological/image-email.png' />
+                            </div>
+                        </div>                 
+                                        
+                                        
+                        <!-- \\ #8 Calendar/Contacts: (even) -->
+                        <div class="div-table-row even">
+                            <div class="item-feature-list div-table-column col-sm-12 col-md-4 col-lg-4 text-right">
+                                <img style='max-width: 302px' class="image-features model-mobile-center" src='../images/technological/image-calendar-and-contacts.png' />
+                            </div>
+                            <div class="item-feature-list div-table-column col-sm-12 col-md-1 col-lg-1 text-center">
+                                <div class='box-line-solid only-pc'>
+                                    <i class='i-bubble'></i>
+                                    <span class='box-solid-1'></span>
+                                </div>
+                            </div>
+                            <div class="item-feature-list div-table-column col-sm-12 col-md-4 col-lg-4 text-left">
+                                
+                                <div class='feature-item-info'>
+                                    <ul>
+                                        <li>
+                                            <i class='i-list-features-calendar'></i>
+                                            <strong>Calendar</strong>
+                                        </li>
+                                        <li>
+                                            <i class='i-list-features-contacts'></i>
+                                            <strong>Contacts</strong>
+                                        </li>
+                                    </ul>
+                                    <div class='block-info'>
+                                        <p>Track calendar and follow plans put on the list as <b>scheduled events</b>. View <b>existing</b> and <b>deleted contacts</b>. Find out of <b>new ones added</b>. Prevent contacting misgiving people.</p>
+                                        {*<ul>
+                                            <li>Track every single email your kid sends or receives. Check</li>
+                                            <li>email correspondence history and prevent you children</li>
+                                            <li>from ambiguous communications and online predators.</li>
+                                        </ul>*}
+                                        <div><a class="btn-orange" href="http://demo.{$domain}">View Demo</a></div>
+                                        <label class="color-orange">(no registration required)</label>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
                         
-                        <!-- \\ #12 (odd) -->
+                        <!-- \\ #9 Keylogger: (odd) -->
+                        <div class="div-table-row odd">
+                            <div class="item-feature-list div-table-column col-lg-4 text-right">
+                                
+                                <div class='feature-item-info'>
+                                    <ul>
+                                        <li>
+                                            <i class='i-list-features-keylogger only-mobile'></i>
+                                            <strong> Keylogger {*<span class='text-normal'>(passwords, apps behaviour, incognito)</span>*} </strong>
+                                            <i class='i-list-features-keylogger only-pc'></i>
+                                        </li>
+                                    </ul>
+                                    
+                                    <div class='block-info'>
+                                        <p>Keep track of <b>each keystroke typed</b> and every tap on the touchscreen of the target device. Follow <b>logins</b> and <b>passwords</b>, words written in browser in <b>incognito mode</b>, monitor texts written <b>in any app</b>.</p>
+                                        {*<ul>
+                                            <li>Find out all contact information ever put on the list. Keep</li>
+                                            <li>track of communication lists to prevent your children from</li>
+                                            <li>unwanted connections and companionship. Receive</li>
+                                            <li>notifications about recent contact additions.</li>
+                                        </ul>*}
+                                        <div><a class="btn-orange" href="http://demo.{$domain}">View Demo</a></div>
+                                        <label class="color-orange">(no registration required)</label>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="item-feature-list div-table-column col-lg-1 text-center">
+                                <div class='box-line-solid only-pc'>
+                                    <i class='i-bubble'></i>
+                                    <span class='box-solid-1'></span>
+                                </div>
+                            </div>
+                            <div class="item-feature-list div-table-column col-lg-4 text-left">
+                                <img style='max-width: 304px' class="image-features model-mobile-center" src='../images/technological/image-keylogger.png' />
+                            </div>
+                        </div>
+                        
+                        <!-- \\ #10 SMS commands: (even)-->
+                        <div class="div-table-row even">
+                            <div class="item-feature-list div-table-column col-sm-12 col-md-4 col-lg-4 text-right">
+                                <img style='max-width: 187px' class="image-features model-mobile-center" src='../images/technological/image-sms-command.png' />
+                            </div>
+                            <div class="item-feature-list div-table-column col-sm-12 col-md-1 col-lg-1 text-center">
+                                <div class='box-line-solid only-pc'>
+                                    <i class='i-bubble'></i>
+                                    <span class='box-solid-1'></span>
+                                </div>
+                            </div>
+                            <div class="item-feature-list div-table-column col-sm-12 col-md-4 col-lg-4 text-left">
+                                
+                                <div class='feature-item-info'>
+                                    <ul>
+                                        <li>
+                                            <i class='i-list-features-sms-command'></i>
+                                            <strong>SMS commands</strong>
+                                        </li>
+                                    </ul>
+                                    <div class='block-info'>
+                                        <p>Control the target device remotely. <b>Lock</b> or <b>wipe</b> it out even <b>without Internet connection</b>. Manipulate the target smartphone or tablet <b>by sending text messages</b>.</p>
+                                        {*<ul>
+                                            <li>By Using Pumpic software, you can follow each button your</li>
+                                            <li>kid presses. Keep track of password changes, track keywords</li>
+                                            <li>and phrases input, associated with misgiving subjects.</li>
+                                        </ul>*}
+                                        <div><a class="btn-orange" href="http://demo.{$domain}">View Demo</a></div>
+                                        <label class="color-orange">(no registration required)</label>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        
+                        <!-- \\ #12 Instagram Monitoring: (odd) -->
                         <div class="div-table-row odd">
                             <div class="item-feature-list div-table-column col-lg-4 text-right">
                                 
@@ -821,18 +830,19 @@
                                     <ul>
                                         <li>
                                             <i class='i-list-features-instagram only-mobile'></i>
-                                            <strong>instagram</strong>
+                                            <strong>Instagram Monitoring</strong>
                                             <i class='i-list-features-instagram only-pc'></i>
                                         </li>
                                     </ul>
                                     
                                     <div class='block-info'>
-                                        <ul>
+                                        <p>Follow Instagram activity. View all <b>photos</b> and <b>videos</b> uploaded, as well as comments posted below.</p>
+                                        {*<ul>
                                             <li>Track every single email your kid sends or receives. Check</li>
                                             <li>email correspondence history and prevent you children</li>
                                             <li>from ambiguous communications and online predators.</li>
-                                        </ul>
-                                        <div><a class="btn-orange" href="http://demo.{$domain}">View in demo</a></div>
+                                        </ul>*}
+                                        <div><a class="btn-orange" href="http://demo.{$domain}">View Demo</a></div>
                                         <label class="color-orange">(no registration required)</label>
                                     </div>
                                 </div>
@@ -849,7 +859,7 @@
                             </div>
                         </div>
                         
-                        <!-- \\ #13 -->
+                        <!-- \\ #13 Geo-fencing: (even)-->
                         <div class="div-table-row even">
                             <div class="item-feature-list div-table-column col-sm-12 col-md-4 col-lg-4 text-right">
                                 <img style='max-width: 381px' class="image-features model-mobile-center" src='../images/technological/image-geo-fencing.png' />
@@ -864,22 +874,23 @@
                                 
                                 <div class='feature-item-info'>
                                     <ul>
-                                        <li><i class='i-list-features-geo-fencing'></i><strong>geo-fencing</strong></li>
+                                        <li><i class='i-list-features-geo-fencing'></i><strong>Geo-fencing</strong></li>
                                     </ul>
                                     <div class='block-info'>
-                                        <ul>
+                                        <p>Define and <b>set specific zones</b> on the <b>map</b> and <b>receive notifications</b>, once the target device <b>leaves</b> or <b>enters</b> the area.</p>
+                                        {*<ul>
                                             <li>By Using Pumpic software, you can follow each button your</li>
                                             <li>kid presses. Keep track of password changes, track keywords</li>
                                             <li>and phrases input, associated with misgiving subjects.</li>
-                                        </ul>
-                                        <div><a class="btn-orange" href="http://demo.{$domain}">View in demo</a></div>
+                                        </ul>*}
+                                        <div><a class="btn-orange" href="http://demo.{$domain}">View Demo</a></div>
                                         <label class="color-orange">(no registration required)</label>
                                     </div>
                                 </div>
                                 
                             </div>
                         </div>  
-                        <!-- \\ #14 (odd) -->
+                        <!-- \\ #14 iCloud monitoring: (odd) -->
                         <div class="div-table-row odd">
                             <div class="item-feature-list div-table-column col-lg-4 text-right">
                                 
@@ -887,18 +898,27 @@
                                     <ul>
                                         <li>
                                             <i class='i-list-features-icloud only-mobile'></i>
-                                            <strong>iCloud</strong>
+                                            <strong>iCloud monitoring <span class='text-normal'>(jailbreak-free)</span></strong>
                                             <i class='i-list-features-icloud only-pc'></i>
                                         </li>
                                     </ul>
                                     
                                     <div class='block-info'>
+                                        <p>Enjoy Pumpic application on iPhones, iPads and iPods Touch with no need to jailbreak the target device. Supported features:</p>
                                         <ul>
+                                            <li>SMS monitoring</li>
+                                            <li>Calls monitoring</li>
+                                            <li>Contacts list</li>
+                                            <li>Browser history</li>
+                                            <li>Bookmarks list</li>
+                                            <li>Calendar events</li>
+                                        </ul>
+                                        {*<ul>
                                             <li>Track every single email your kid sends or receives. Check</li>
                                             <li>email correspondence history and prevent you children</li>
                                             <li>from ambiguous communications and online predators.</li>
-                                        </ul>
-                                        <div><a class="btn-orange" href="http://demo.{$domain}">View in demo</a></div>
+                                        </ul>*}
+                                        <div><a class="btn-orange" href="http://demo.{$domain}">View Demo</a></div>
                                         <label class="color-orange">(no registration required)</label>
                                     </div>
                                 </div>
@@ -915,9 +935,7 @@
                             </div>
                         </div>    
                             
-                            
-                        
-                        <!-- \\ #15 -->
+                        <!-- \\ #15 Other features: (even) -->
                         <div class="div-table-row even">
                             <div class="item-feature-list div-table-column col-sm-12 col-md-4 col-lg-4 text-right">
                                 <img style='max-width: 167px' class="image-features model-mobile-center" src='../images/technological/image-sim-change.png' />
@@ -934,21 +952,28 @@
                                     <ul>
                                         <li>
                                             <i class='i-list-features-geo-fencing'></i>
-                                            <ul>
+                                            <strong>Other features</strong>
+                                            {*<ul>
                                                 <li><strong>Sim change notification</strong></li>
                                                 <li><strong>Reboot application</strong></li>
                                                 <li><strong>Reboot device</strong></li>
-                                            </ul>
+                                            </ul>*}
                                             
                                         </li>
                                     </ul>
                                     <div class='block-info'>
                                         <ul>
+                                            <li>Receive notifications of SIM card change</li>
+                                            <li>Reboot the target device or the application remotely</li>
+                                            <li>Protect the app with password from being removed</li>
+                                            <li>Lock the target device and control its activity remotely</li>
+                                        </ul>
+                                        {*<ul>
                                             <li>By Using Pumpic software, you can follow each button your</li>
                                             <li>kid presses. Keep track of password changes, track keywords</li>
                                             <li>and phrases input, associated with misgiving subjects.</li>
-                                        </ul>
-                                        <div><a class="btn-orange" href="http://demo.{$domain}">View in demo</a></div>
+                                        </ul>*}
+                                        <div><a class="btn-orange" href="http://demo.{$domain}">View Demo</a></div>
                                         <label class="color-orange">(no registration required)</label>
                                     </div>
                                 </div>
@@ -966,7 +991,7 @@
                             <div class="item item-buttom div-table-column col-sm-12 col-md-3 col-lg-2 text-center">
                                 
                                 <div class='box-all-features'>
-                                    <a class='btn-green' href='#' >All features</a>
+                                    <a class='btn-red{*btn-green*}' href='http://{$domain}/store.html' >Try now!</a>
                                 </div>
                                 {*<div class='box-line-solid only-pc'>
                                     <span class='box-solid-1'></span>
@@ -1059,9 +1084,9 @@
         <!-- BLOCK LINE -->
         <div class="border-dark-line"></div>    
         
-        {include file='../includes/main/main-quick-link.tpl' 
+        {*include file='../includes/main/main-quick-link.tpl' 
             blockBg="light"
-        } 
+        *} 
         
         <!-- RECOMMENDED -->
         {*
@@ -1070,8 +1095,8 @@
         {include file='../includes/main/main-recommended.tpl'}
         
         {include file='../includes/main/main-testimonials.tpl'
-                title = "Trusted by Over 10 000 Customers Wordwide"
-                sliders = "false"
+                title = "Trusted by Over 10 000 Customers Worldwide"
+                sliders = "true"
                 blockBg="bg_white pt40"} {* light *} 
         
         <!-- FOOTER -->

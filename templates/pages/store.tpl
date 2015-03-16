@@ -114,7 +114,7 @@
                                                                                                                        name="optionsRadios" 
                                                                                                                        id="optionsRadios{$_item.id}" 
                                                                                                                        value="{$_item.id}" 
-                                                                                                                       {if $_item.period == '12'} checked {/if}
+                                                                                                                       {if $_item.period == '3'} checked {/if}
                                                                                                                        >
 														<span><strong>{$_item.period}</strong> month</span>
 														<span>${$_item.price}</span>
@@ -138,7 +138,7 @@
 													<select class="select_inverse">
                                                                                                             
                                                                                                                 {foreach from=$getProducts.basic key=key item=_item}
-                                                                                                                    <option value="{$_item.id}" {if $_item.period == '12'}selected{/if}>{$_item.period} month ${$_item.price}</option>
+                                                                                                                    <option value="{$_item.id}" {if $_item.period == '3'}selected{/if}>{$_item.period} month ${$_item.price}</option>
                                                                                                                 {/foreach}    
                                                                                                                 
                                                                                                             
@@ -293,7 +293,7 @@
                                                                                                                        name="optionsRadios2" 
                                                                                                                        id="optionsRadios{$_item.id}" 
                                                                                                                        value="{$_item.id}"
-                                                                                                                       {if $_item.period == '12'} checked {/if}
+                                                                                                                       {if $_item.period == '3'} checked {/if}
                                                                                                                        >
 														<span><strong>{$_item.period}</strong> month</span>
 														<span>${$_item.price}</span>
@@ -321,7 +321,7 @@
 													<select class="select_inverse">
                                                                                                                 {if $getProducts.premium}
                                                                                                                     {foreach from=$getProducts.premium key=key item=_item}
-                                                                                                                        <option value="{$_item.id}" {if $_item.period == '12'} selected {/if}>{$_item.period} month ${$_item.price}</option>
+                                                                                                                        <option value="{$_item.id}" {if $_item.period == '3'} selected {/if}>{$_item.period} month ${$_item.price}</option>
                                                                                                                     {/foreach}    
                                                                                                                 {/if} 
                                                                                                             

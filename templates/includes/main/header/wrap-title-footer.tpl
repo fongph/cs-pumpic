@@ -24,13 +24,16 @@
         <link href="{$css}/jquery.bxslider.css?{style_cache data='2015-02-09'}" rel="stylesheet">
         
         <!-- style-technological -->
-        <link href="{$css}/style-technological.css" rel="stylesheet">
+        <link href="{$css}/style-technological.css?{style_cache data='2015-02-09'}" rel="stylesheet">
         
         <!-- font-size responce -->
-        <link href="{$css}/font-size.css" rel="stylesheet">
+        <link href="{$css}/font-size.css?{style_cache data='2015-02-09'}" rel="stylesheet">
+        
+        <!-- fly blocks -->
+        <link href="{$css}/style-fly-features.css?{style_cache data='2015-02-09'}" rel="stylesheet">
         
         <!-- ie -->
-        <link href="{$css}/ie_fix/ie.css" rel="stylesheet">
+        <link href="{$css}/ie_fix/ie.css?{style_cache data='2015-02-09'}" rel="stylesheet">
 
 
 	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -86,6 +89,8 @@
         <!-- resizeImages -->
         <script src="{$js}/resize_images.js?{style_cache data='2015-02-05'}"></script>
         
+        <!-- fly blocks -->
+        <script src="{$js}/fly_feachers.js"></script>
         <!-- resizeImages -->
         <script src="{$js}/resize_teh.js"></script>
         

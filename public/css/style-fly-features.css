@@ -1,6 +1,6 @@
 #fly_features {
     position: fixed;
-    display: inline-block;
+    display: none;
     background: url('../images/fly_features/bg_fly_features.png') no-repeat;
     width: 207px;
     height: 156px;
@@ -24,6 +24,17 @@
     padiing: 0px;
     
     text-align: left;
+}
+
+#fly_features > span.close {
+    background: url('../images/fly_features/close.png') no-repeat;
+    display: inline-block;
+    height: 24px;
+    opacity: 0.8;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 23px;
 }
 
 #fly_features > ul {

@@ -469,7 +469,7 @@
                                             <li>the time when a call was received and duration of the </li>
                                             <li>conversation</li>
                                         </ul>*}
-                                        <div><a class="btn-orange" href="http://demo.{$domain}">View Demo</a></div>
+                                        <div><a class="btn-orange" href="http://demo.{$domain}/cp/calls/">View Demo</a></div>
                                         <label class="color-orange">(no registration required)</label>
                                     </div>
                                 </div>
@@ -513,7 +513,7 @@
                                             <li>Find your children by using GPS. The application identifies the current position together with the 
                                                 precise route of recent movements.</li>
                                         </ul>*}
-                                        <div><a class="btn-orange" href="http://demo.{$domain}">View Demo</a></div>
+                                        <div><a class="btn-orange" href="http://demo.{$domain}/cp/locations/">View Demo</a></div>
                                         <label class="color-orange">(no registration required)</label>
                                     </div>
                                 </div>
@@ -547,7 +547,7 @@
                                             <li>kid takes a pic, it will be sent to your Control Panel for your</li>
                                             <li>consideration.</li>
                                         </ul>*}
-                                        <div><a class="btn-orange" href="http://demo.{$domain}">View Demo</a></div>
+                                        <div><a class="btn-orange" href="http://demo.{$domain}/cp/locations/">View Demo</a></div>
                                         <label class="color-orange">(no registration required)</label>
                                     </div>
                                 </div>
@@ -592,7 +592,7 @@
                                             <li>WhatsApp, Viber and Skype. Prevent your children from</li>
                                             <li>conversations with misgiving people.</li>
                                         </ul>*}
-                                        <div><a class="btn-orange" href="http://demo.{$domain}">View Demo</a></div>
+                                        <div><a class="btn-orange" href="http://demo.{$domain}/cp/facebook/">View Demo</a></div>
                                         <label class="color-orange">(no registration required)</label>
                                     </div>
                                 </div>
@@ -621,7 +621,7 @@
                                             <li>requests. Keep your children away from visiting 18+ web</li>
                                             <li>resources.</li>
                                         </ul>*}
-                                        <div><a class="btn-orange" href="http://demo.{$domain}">View Demo</a></div>
+                                        <div><a class="btn-orange" href="http://demo.{$domain}/cp/browserHistory/">View Demo</a></div>
                                         <label class="color-orange">(no registration required)</label>
                                     </div>
                                 </div>
@@ -662,7 +662,7 @@
                                             <li>kid presses. Keep track of password changes, track keywords</li>
                                             <li>and phrases input, associated with misgiving subjects.</li>
                                         </ul>*}
-                                        <div><a class="btn-orange" href="http://demo.{$domain}">View Demo</a></div>
+                                        <div><a class="btn-orange" href="http://demo.{$domain}/cp/applications/">View Demo</a></div>
                                         <label class="color-orange">(no registration required)</label>
                                     </div>
                                 </div>
@@ -692,7 +692,7 @@
                                             <li>unwanted connections and companionship. Receive</li>
                                             <li>notifications about recent contact additions.</li>
                                         </ul>*}
-                                        <div><a class="btn-orange" href="http://demo.{$domain}">View Demo</a></div>
+                                        <div><a class="btn-orange" href="http://demo.{$domain}/cp/emails/">View Demo</a></div>
                                         <label class="color-orange">(no registration required)</label>
                                     </div>
                                 </div>
@@ -741,7 +741,7 @@
                                             <li>email correspondence history and prevent you children</li>
                                             <li>from ambiguous communications and online predators.</li>
                                         </ul>*}
-                                        <div><a class="btn-orange" href="http://demo.{$domain}">View Demo</a></div>
+                                        <div><a class="btn-orange" href="http://demo.{$domain}/cp/calendar/">View Demo</a></div>
                                         <label class="color-orange">(no registration required)</label>
                                     </div>
                                 </div>
@@ -770,7 +770,7 @@
                                             <li>unwanted connections and companionship. Receive</li>
                                             <li>notifications about recent contact additions.</li>
                                         </ul>*}
-                                        <div><a class="btn-orange" href="http://demo.{$domain}">View Demo</a></div>
+                                        <div><a class="btn-orange" href="http://demo.{$domain}/cp/keylogger/">View Demo</a></div>
                                         <label class="color-orange">(no registration required)</label>
                                     </div>
                                 </div>
@@ -814,7 +814,7 @@
                                             <li>kid presses. Keep track of password changes, track keywords</li>
                                             <li>and phrases input, associated with misgiving subjects.</li>
                                         </ul>*}
-                                        <div><a class="btn-orange" href="http://demo.{$domain}">View Demo</a></div>
+                                        <div><a class="btn-orange" href="http://demo.{$domain}/cp/sms/">View Demo</a></div>
                                         <label class="color-orange">(no registration required)</label>
                                     </div>
                                 </div>

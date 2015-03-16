@@ -29,6 +29,7 @@
     <link href="<?php echo getStaticUrl();?>/css/wp-post.css" rel="stylesheet">
 
     <link href="<?php echo getStaticUrl();?>/css/wp-subscribe.css" rel="stylesheet">
+    <link href="<?php echo getStaticUrl();?>/css/style-fly-features.css" rel="stylesheet">
     
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -58,6 +59,8 @@
     
     <script src="<?php echo getStaticUrl();?>/js/wp/settings.js"></script>
     <script src="<?php echo getStaticUrl();?>/js/wp/init.js"></script>
+    <!-- fly blocks -->
+    <script src="<?php echo getStaticUrl();?>/js/fly_feachers.js"></script>
     
     <?php require_once '../../templates/includes/blog-analytics-header.tpl'; ?>
     
@@ -66,6 +69,20 @@
 <body class="wp-blog">
     
     <a href="#" class="go_up"></a>
+    
+    <a href="/store.html">
+        <div id="fly_features">
+            <h2>New features:</h2>
+            <span class="close"></span>
+            <ul>
+                <li><i class="i-fly-features-monitor-instagram"></i> Instagram monitoring</li>
+                <li><i class="i-fly-features-geo-fences"></i> Geo-fences</li>
+                <li><i class="i-fly-features-limit-app"></i> Limit applications</li>
+                <li><i class="i-fly-features-icloud"></i> iCloud monitoring</li>
+            </ul>
+        </div>
+    </a>
+    
     <div class="wrapper">
         
 	<?php 

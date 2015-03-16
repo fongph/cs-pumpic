@@ -215,7 +215,7 @@
                                         ga-action ="click"
                                         ga-category="techological"
                                         ga-label="demo"
-                                       >Live Demo</a>
+                                       >View Demo</a>
                                     </li>
                                     
                                     <li>
@@ -280,7 +280,7 @@
 
                                     <div class="tab col-item-3 col-md-item-3 col-sm-item-3">
                                         <ul>
-                                            <li class="text-uppercase">
+                                            <li {*class="text-uppercase"*}>
                                                 <i class="i-features-sms-commands"></i> 
                                                 <div>SMS Commands</div>
                                             </li>

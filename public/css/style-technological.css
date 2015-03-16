@@ -107,6 +107,7 @@
 }
 
 .div-table-row {
+  position: relative;
   display: table-row;
 }
 .div-table-column {

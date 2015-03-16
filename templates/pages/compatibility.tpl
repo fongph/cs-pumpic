@@ -34,7 +34,7 @@
                                         </div>
                                     
                                         <div class="row">
-                                                <div class="col-sm-4 col-md-4 col-lg-offset-2">
+                                                <div class="col-sm-4 col-md-4 col-sm-offset-2 col-md-offset-2 col-lg-offset-2">
                                                         <div class="thumb">
                                                                 <span class="ico-left"><i class="icon-apple"></i></span>
                                                                 <span>OS:<strong> iOS</strong></span>
@@ -77,7 +77,13 @@
                                                             <li><span>{$phone.cat_name}</span>
                                                                 <ul>
                                                                     {foreach from=$phone.models item=model}
-                                                                        <li class="mobile_tooltip"> <label {if $model.custom_text && count($model.features) > 0}onclick="window.open('http://{$domain}/compatibility/{$model.alies}/','_blank');"{/if}>{$model.name}</label> </li>
+                                                                        <li class="mobile_tooltip"> 
+                                                                            {if $model.custom_text && count($model.features) > 0}
+                                                                                <a target="_blank" href="http://{$domain}/compatibility/{$model.alies}/">{$model.name}</a>
+                                                                            {else}
+                                                                                <label>{$model.name}</label> 
+                                                                            {/if}
+                                                                        </li>
                                                                     {/foreach}
                                                                 </ul>
 
@@ -98,7 +104,7 @@
                                         </div>
                                         
                                         <!-- search result -->
-                                        <div class="row">
+                                        {*<div class="row">
                                             <h2 class="result-title">Most popular smartphones</h2>
                                             <div class="box-get-search-result clearfix">
                                             {nocache}    
@@ -133,7 +139,7 @@
                                                 {/nocache}    
                                                 </ul>
                                             </div>
-                                        </div>
+                                        </div>*}
                                         <!-- end -->
                                 </div>
                         </div>
@@ -277,16 +283,18 @@
                     required: "The Device Model field is empty",
                     minlength: "Enter at least 2 symbols to start search"
                 }
+
             }/*,
             submitHandler: function( form ) {
                 var $form = $(form);
                 $form.submit();
                 return false;
-                */
-                /*var searchStr = $searchForm.find('input[name="device-model"]').val();
-                Devices.search({ query: searchStr }, { title: 'Search results for "' + searchStr + '"'});
-                return false;*/
-            //}
+        
+                
+                //var searchStr = $searchForm.find('input[name="device-model"]').val();
+                //Devices.search({ query: searchStr }, { title: 'Search results for "' + searchStr + '"'});
+                //return false;
+            }*/
         });
     </script>
 

@@ -8,7 +8,7 @@
                 
                 <div class="row">
                     
-                    <table id="table-container" class="table-col-5 table-md-col-5 table-sm-col-5">
+                    <table id="table-container" class="table-sm-col-5 table-md-col-5 table-col-5">
                         <tr>
                             <td class="col-sm-5 col-md-5 col-lg-6 table-item-col">
                                 <section>

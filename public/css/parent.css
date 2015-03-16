@@ -30,6 +30,7 @@
     display: inline-block;
     font-size: 18px;
     line-height: 18px;
+    font-weight: 400;
     min-height: 32px;
     min-width: 110px;
     padding: 9px 15px;
@@ -37,6 +38,10 @@
     text-decoration: none;
     border: none;
 } 
+
+.ipad-text a.btn-fix-red {
+/*    font-size: 17px;*/
+}
 
 .ipad-text ul {
     margin: 0px;
@@ -165,6 +170,10 @@
     border: none;
 }
 
+.block-knowledge #table-container .table-item-col ul > li {
+    text-align: left;
+}
+
 /* ----------- // table ------------ */
 @media only screen and (max-width: 480px) {
     .table-sm-col-5, .table-sm-col-4, .table-sm-col-3, .table-sm-col-2,
@@ -183,9 +192,18 @@
     #table-container .rowspan {
         text-align: left;
     }
+    
+    .block-knowledge #table-container .table-item-col ul > li {
+        text-align: center;
+    }
 }
 @media (min-width: 468px) {
-    .table-sm-col-5, .table-sm-col-4, .table-sm-col-3, .table-sm-col-2, 
+    .table-sm-col-5 {
+        width: 74.18803418803418%;
+    }
+    
+/*    .table-sm-col-5, */
+    .table-sm-col-4, .table-sm-col-3, .table-sm-col-2, 
     .col-sm-item-4, .col-sm-item-3, .col-sm-item-2, .col-sm-item-1 {
         width: 100%;
     }
@@ -200,11 +218,19 @@
     
     #table-container .rowspan {
         text-align: left;
+    }
+    
+    .block-knowledge #table-container .table-item-col ul > li {
+        text-align: center;
     }
 }    
 /* -- // col-item */
 @media (min-width: 768px) {
     
+    .table-sm-col-5 {
+        width: 84.18803418803418%;
+    }
+    
     .table-sm-col-4, .table-sm-col-3, .table-sm-col-2,
     .col-sm-item-4, .col-sm-item-3, .col-sm-item-2, .col-sm-item-1 {
         width: 100%;
@@ -221,14 +247,22 @@
     #table-container .rowspan {
         text-align: left;
     }
+    
+    .block-knowledge #table-container .table-item-col ul > li {
+        text-align: left;
+    }
 }
 
 @media (min-width: 992px) {
-    .table-sm-col-4, .table-sm-col-3, .table-sm-col-2,
+/*    .table-sm-col-4, .table-sm-col-3, .table-sm-col-2,
     .col-sm-item-4, .col-sm-item-3, .col-sm-item-2 {
         width: 100%;
-    }
+    }*/
     
+    .table-md-col-5 {
+        width: 64.18803418803418%;
+    }
+
     .col-md-item-4 {
         width: 21.333333333333335%;
     }
@@ -247,6 +281,10 @@
     
     #table-container .rowspan {
         text-align: center;
+    }
+    
+    .block-knowledge #table-container .table-item-col ul > li {
+        text-align: left;
     }
 }
 
@@ -292,6 +330,10 @@
     
     #table-container .rowspan {
         text-align: center;
+    }
+    
+    .block-knowledge #table-container .table-item-col ul > li {
+        text-align: left;
     }
 }
 

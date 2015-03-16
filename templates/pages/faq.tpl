@@ -241,7 +241,7 @@
 											<li>
 												<a id="compatibility" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse17">What devices support Pumpic?</a>
 												<div id="collapse17" class="collapse">
-                                                                                                    <p>Pumpic is supported by the majority of smartphones and tablets. To make sure your particular device model is compatible with the application, please visit our <a class="text-link" target="_blank" href="http://{$domain}/compatibility.html">Compatibility page</a> or contact our Customer Support Team.</p>
+                                                                                                    <p>Pumpic is supported by the majority of smartphones and tablets. To make sure your particular device model is compatible with the application, please visit our <a class="text-link" target="_blank" href="http://{$domain}/compatibility/">Compatibility page</a> or contact our Customer Support Team.</p>
                                                                                                     <p>BlackBerry devices are not supported at the moment. We work hard to make them compatible in the nearest future.</p>
                                                                                                 </div>
 											</li>

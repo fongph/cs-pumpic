@@ -1,9 +1,7 @@
-{closeAccess}
-
 {include file='../includes/main/main-header.tpl'
-    robots="yes" 
-    title="Mobile Parental Control App for Children"
-    description="Keep your family safe and secured with Pumpic. Track location. View calls and SMS. Follow online activity."
+    robots="no" 
+    title="High-grade tracking app with multiple functions"
+    description="Pumpic is an innovative solution, which takes Mobile Phone Monitoring on a reasonably new level. Find out more functions of Pumpic and evaluate the progress it made."
 }    
     
 <body>
@@ -218,6 +216,15 @@
                             <div class="col-xs-sm-12 col-sm-12 col-md-12 col-lg-12 text-center bth-buttons">
                                 <ul>
                                     <li>
+                                     <a class="btn-yellow ga-action-click btn-free-trial" 
+                                       href="http://demo.{$domain}/"
+                                        ga-action ="click"
+                                        ga-category="techological"
+                                        ga-label="demo"
+                                       >Live Demo</a>
+                                    </li>
+                                    
+                                    <li>
                                       <a class="btn-red ga-action-click btn-buy-now" 
                                        href="http://{$domain}/store.html"
                                         ga-action ="click"
@@ -225,14 +232,14 @@
                                         ga-label="buy now"
                                        >Buy Now</a>
                                     </li>
-                                    <li>
+                                    {*<li>
                                     <a class="btn-yellow ga-action-click btn-free-trial" 
                                        href="http://{$domain}/free-trial.html"
                                         ga-action ="click"
                                         ga-category="techological"
                                         ga-label="trial"
                                        >Free Trial</a>
-                                    </li>    
+                                    </li>*}    
                                 </ul>
                                 <p>Keep your family safe and secured with Pumpic. 
                                     <br />Track location. View calls and SMS. Follow online activity.</p>
@@ -330,7 +337,7 @@
                     
                     <div class="table-col-8 table-sm-col-3 model-center">
                         <!-- left table #1 -->
-                        <div class="col-lg-6 padding-null">
+                        <div class="col-md-6 col-lg-6 padding-null">
                         
                             <div id="block-compatibility-table" class="android-table">
                                 
@@ -360,7 +367,7 @@
 
                         </div>
                         <!-- left table #1 -->
-                        <div class="col-lg-6 padding-null">
+                        <div class="col-md-6 col-lg-6 padding-null">
                         
                             <div id="block-compatibility-table" class="ios-table">
                                 
@@ -422,6 +429,9 @@
                                 <img style='max-width: 380px' class="image-features model-mobile-center" src='../images/technological/image-location-history.png' />
                             </div>
                             <div class="item-feature-list div-table-column col-sm-12 col-md-1 col-lg-1 text-center">
+                                {*<i class='i-bubble'></i>*}
+                                {*<div class='box-solid-1'></div>*}
+                                    
                                 <div class='box-line-solid only-pc'>
                                     <i class='i-bubble'></i>
                                     <span class='box-solid-1'></span>

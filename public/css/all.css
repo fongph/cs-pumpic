@@ -364,7 +364,8 @@ select.form-control option {
 }
 
 .nav > li > a.cp-login:hover {
-    background-color: #19bfb3 !important;
+    /* !important */
+    background-color: #19bfb3; 
 }
 
 .navbar-toggle {
@@ -1840,15 +1841,19 @@ only screen and (max-device-width: 480px) {
   background: none;
 }
 .option_list li ul li,
-.option_list li ul li > label{
+.option_list li ul li > label,
+.option_list li ul li > a {
   background: none;
   color: #525252;
   text-align: left;
-  line-height: 1;
+  line-height: 1.2em;
   margin: 0 10px 10px;
+  text-decoration: none;
+  cursor: default;
 }
 
-.option_list li ul li > label {  
+.option_list li ul li > label,
+.option_list li ul li > a {  
   display: block; 
   font-weight: normal;
   margin: 0px;
@@ -2317,9 +2322,26 @@ textarea {
 @media only screen and (max-width: 480px) {
   .thumbs .thumbnail h3:before {
     display: block;
-    margin: auto;
+    margin: 0 auto 10px;
   }
 }
+
+@media (min-width: 992px) {
+    .thumbs .thumbnail h3:before {
+        display: block;
+        margin: 0 auto 10px;
+    }
+    .thumbs .thumbnail h3 { font-size: 16px; }
+}
+@media (min-width: 1200px) {
+    .thumbs .thumbnail h3:before {
+        display: inline-block;
+        margin: 0 10px 0px 0px;
+    }
+    
+    .thumbs .thumbnail h3 { font-size: 17px; }
+}
+
 .thumbs .thumbnail .img_thumb {
   background: none;
   height: 250px;
@@ -3757,10 +3779,19 @@ span.btn-banner-yellow:active {
     -moz-border-radius: 10px;
 }
 
+.nav > li > a.btn-orange {
+    font-size: 18px;
+    font-weight: 400;
+    border-radius: 5px;
+}
+
 .btn-orange:hover,
 .btn-orange:focus,
 .btn-orange:active,
-.btn-orange.active {
+.btn-orange.active,
+.nav > li > a.btn-orange:hover,
+.nav > li > a.btn-orange:focus,
+.nav > li > a.btn-orange:active {
   color: white;  
   background-color: #ffd08c;
   text-decoration: none;

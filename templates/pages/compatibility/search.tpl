@@ -36,7 +36,7 @@
                                         </div>
                                     
                                         <div class="row">
-                                                <div class="col-sm-4 col-md-4 col-lg-offset-2">
+                                                <div class="col-sm-4 col-md-4 col-sm-offset-2 col-md-offset-2 col-lg-offset-2">
                                                         <div class="thumb">
                                                                 <span class="ico-left"><i class="icon-apple"></i></span>
                                                                 <span>OS:<strong> iOS</strong></span>
@@ -242,15 +242,15 @@
                     minlength: "Enter at least 2 symbols to start search"
                 }
             },
-            submitHandler: function( form ) {
+            /* submitHandler: function( form ) {
                 var $form = $(form);
                 $form.submit();
                 return false;
                 
-               /* var searchStr = $searchForm.find('input[name="device-model"]').val();
-                Devices.search({ query: searchStr }, { title: 'Search results for "' + searchStr + '"'});
-                return false;*/
-            }
+               // var searchStr = $searchForm.find('input[name="device-model"]').val();
+               // Devices.search({ query: searchStr }, { title: 'Search results for "' + searchStr + '"'});
+               // return false;
+            } */
         });
     </script>
 

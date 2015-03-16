@@ -280,7 +280,6 @@
             }/*,
             submitHandler: function( form ) {
                 var $form = $(form);
-                alert('test');
                 $form.submit();
                 return false;
                 */

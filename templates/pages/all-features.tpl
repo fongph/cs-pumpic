@@ -951,7 +951,7 @@
                                 <div class='feature-item-info'>
                                     <ul>
                                         <li>
-                                            <i class='i-list-features-geo-fencing'></i>
+                                            <i class='i-list-features-sim-change'></i>
                                             <strong>Other features</strong>
                                             {*<ul>
                                                 <li><strong>Sim change notification</strong></li>

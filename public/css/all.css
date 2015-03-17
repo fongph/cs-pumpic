@@ -5824,6 +5824,9 @@ i.white-arrows-right {
     left: -7px;
 }
 .webkit p {
-    font-family: 'Open Sans', sans-serif; 
-    font-weight: 400;
+    color: #4d4f5b;
+}
+
+.webkit .list_grey li a, .list_grey li span {
+    color: #4d4f5b;
 }

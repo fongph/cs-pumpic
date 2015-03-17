@@ -24,6 +24,7 @@
     padiing: 0px;
     
     text-align: left;
+    text-decoration: none;
 }
 
 #fly_features > span.close {
@@ -46,6 +47,7 @@
     margin: 0px 0px 8px 0px; 
     font-size: 14px;
     line-height: 14px;
+    text-decoration: none;
 }
 
 #fly_features i {

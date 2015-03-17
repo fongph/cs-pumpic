@@ -5819,6 +5819,10 @@ i.white-arrows-right {
 }
 
 /* ----- \\ fix webkit ---- */
+.webkit #box-features-list .box-line-solid {
+    margin-left: 50%;
+    left: -7px;
+}
 .webkit p {
     font-family: 'Open Sans', sans-serif; 
     font-weight: 400;

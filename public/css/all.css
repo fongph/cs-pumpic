@@ -101,6 +101,10 @@ img {
 }
 
 /* fonts */
+.fz13 {
+ font-size: 13px;   
+}
+
 body {
   color: #7f7f7f;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;

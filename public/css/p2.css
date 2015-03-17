@@ -373,6 +373,12 @@ form > table.pricing-second:after {
     height:32px;
     overflow: hidden;
 }
+
+.basic_wr .basic_fe ul li:hover > span {
+    color:#2cbdb3;
+    cursor: pointer;
+}
+
 .basic_wr .icon-ok{
     font-size: 13px !important;
 }
@@ -424,6 +430,12 @@ form > table.pricing-second:after {
     height:32px;
     
 }
+
+.premium_wr .premium_fe ul li:hover > span {
+    color:#2cbdb3;
+    cursor: pointer;
+}
+
 .premium_wr .icon-ok{
     font-size: 13px !important;
 }

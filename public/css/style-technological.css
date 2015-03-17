@@ -73,6 +73,7 @@
 }*/
 
 .block-technological #table-container .tab > ul > li {
+    position: relative;
     height: 55px;
     padding: 10px 15px;
 }
@@ -88,6 +89,11 @@
 .block-technological #table-container [class*="i-features-"] {
     top: 50%;
     transform: translate(0, -50%);
+    -webkit-transform: translate(0, -50%);
+    -moz-transform: translate(0, -50%);
+    -o-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    -sand-transform: translate(0, -50%);
 }
 
 #table-container .tab > ul > li div {

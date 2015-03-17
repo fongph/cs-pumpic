@@ -286,8 +286,8 @@
                                                            <div class="premium_fe">
                                                             <ul>
                                                                 
-                                                                <li data-toggle="tooltip" data-placement="top" title="View detailed data on incoming/outgoing calls: name, phone number, time and duration."><i class="icon-ok"></i> Calls history <span>(700 calls monthly)</span></li>
-                                                                <li data-toggle="tooltip" data-placement="top" title="View text message content with detailed data including name, phone number and time."><i class="icon-ok"></i> SMS history <span>(300 SMS monthly)</span></li>
+                                                                <li data-toggle="tooltip" data-placement="top" title="View detailed data on incoming/outgoing calls: name, phone number, time and duration."><i class="icon-ok"></i> Calls history <span>(unlimited)</span></li>
+                                                                <li data-toggle="tooltip" data-placement="top" title="View text message content with detailed data including name, phone number and time."><i class="icon-ok"></i> SMS history <span>(unlimited)</span></li>
                                                                 <li data-toggle="tooltip" data-placement="top" title="Block calls from specific numbers."><i class="icon-ok"></i> Calls blocking </li>
                                                                 <li data-toggle="tooltip" data-placement="top" title="Block SMS from specific senders and/or containing specific keywords. Not available for Android 4.4 and newer versions"><i class="icon-ok"></i> SMS blocking </li>
                                                                 <li data-toggle="tooltip" data-placement="top" title="Track current location as well as the entire route history. Map view available."><i class="icon-ok"></i> Location history</li>

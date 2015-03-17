@@ -349,7 +349,7 @@ dl.table-rows.block-left {
     width: 13px;
 }
 
-.mozilla #box-features-list .box-line-solid {
+#box-features-list .box-line-solid {
     left: 50%;
     margin: 0px -15px 0px -7px;
 }
@@ -1325,8 +1325,8 @@ dl.table-rows.block-left {
 
 /* ----- \\ fix webkit ---- */
 .webkit #box-features-list .box-line-solid {
-    margin: 0px -15px 0px -15px;
-    left: 50%;
+    margin: 0px -15px 0px -15px !important;
+    left: 50% !important;
 }
 .webkit p {
     color: #4d4f5b;

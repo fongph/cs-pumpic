@@ -349,7 +349,7 @@ dl.table-rows.block-left {
     width: 13px;
 }
 
-#box-features-list .box-line-solid {
+.mozilla #box-features-list .box-line-solid {
     left: 50%;
     margin: 0px -15px 0px -7px;
 }

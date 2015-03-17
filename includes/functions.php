@@ -1,5 +1,13 @@
 <?php
 function dispatch($urlParams, $config){
+
+        // 301 redirect
+        if(preg_match('/\/\?cat=(.*)/is', $_SERVER['REQUEST_URI'])) {
+            header("HTTP/1.1 301 Moved Permanently");
+            header("Location: http://pumpic.com/");
+            //exit();
+        }
+    
     
         // orders_referer
         if(!isset($_COOKIE['orders_referer'])) {

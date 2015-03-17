@@ -15,9 +15,8 @@ and open the template in the editor.
 }
 
 .msie #box-features-list .box-line-solid { 
-    margin-left: -7px !important;
-/*    margin-right: -15px !important;
-    left: 0px !important;*/
+    margin-left: 0px !important;
+    left: 0px !important;
 }
 
 .msie .box-line-solid {

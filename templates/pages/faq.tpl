@@ -167,7 +167,7 @@
 												<a id="install" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse8">How to install Pumpic?</a>
 												<div id="collapse8" class="collapse">
                                                                                                     <p>
-                                                                                                        Installation is very easy and stress-free. Here you will find detailed and stepwise installation instructions for <a class="text-link" target="_blank" href="http://cp.pumpic.com/how-to-install/android-instructions.html">Android</a> and <a class="text-link" target="_blank" href="http://cp.pumpic.com/how-to-install/ios-instructions.html">iOS</a>. If you run into difficulties, feel free to contact our Customer Support Team for help.
+                                                                                                        Installation is very easy and stress-free. Pumpic app installation process will take you no longer than 5 minutes. Once you've made a purchase - follow the guidelines pointed in the subscription email to complete the setup. Note that physical access to the target device is required. If you run into difficulties, feel free to contact our Customer Support Team for help.
                                                                                                     </p>
 												</div>
 											</li>

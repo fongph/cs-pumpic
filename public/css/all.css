@@ -5820,8 +5820,8 @@ i.white-arrows-right {
 
 /* ----- \\ fix webkit ---- */
 .webkit #box-features-list .box-line-solid {
-    margin-left: 50%;
-    left: -7px;
+    margin: 0px -15px 0px -15px;
+    left: 50%;
 }
 .webkit p {
     color: #4d4f5b;

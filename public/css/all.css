@@ -5818,15 +5818,3 @@ i.white-arrows-right {
     font-weight: 400;
 }
 
-/* ----- \\ fix webkit ---- */
-.webkit #box-features-list .box-line-solid {
-    margin: 0px -15px 0px -15px;
-    left: 50%;
-}
-.webkit p {
-    color: #4d4f5b;
-}
-
-.webkit .list_grey li a, .list_grey li span {
-    color: #4d4f5b;
-}

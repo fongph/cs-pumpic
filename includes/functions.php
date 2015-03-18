@@ -1,19 +1,10 @@
 <?php
 function dispatch($urlParams, $config){
 
-        // 301 redirect
-        if(preg_match('/\/\?cat=(.*)/is', $_SERVER['REQUEST_URI'])) {
-            header("HTTP/1.1 301 Moved Permanently");
-            header("Location: http://pumpic.com/");
-            //exit();
-        }
-    
-    
         // orders_referer
         if(!isset($_COOKIE['orders_referer'])) {
             setcookie("orders_referer", $_SERVER['HTTP_REFERER'], time() + 86400, '/' );
         }
-    
     
         // fix url
         if(is_array($urlParams['uriArr']) 
@@ -24,6 +15,18 @@ function dispatch($urlParams, $config){
 		
         // smarty config
 	require_once 'smarty.config.php';		
+        
+        // 301 redirect
+        if(preg_match('/\/\?cat=(.*)/is', $_SERVER['REQUEST_URI'])) {
+            header301( $config['domain_http'] );
+        }
+        
+        // 404 redirect
+        if(preg_match('/\/compatibility\/\?page=(.*)/is', $_SERVER['REQUEST_URI'])) {
+            header404();
+            $smarty->display('404.tpl');
+            die;
+        }
         
         // $smarty->setCaching();
         
@@ -96,6 +99,14 @@ function buildTplPath($arr,$config){
 
 function header404(){
 	header("HTTP/1.0 404 Not Found");
+}
+
+function header301( $url ){
+    if($url) {
+        header("HTTP/1.1 301 Moved Permanently");
+        header("Location: ".$url);
+        die();
+    }
 }
 
 

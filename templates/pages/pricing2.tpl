@@ -172,9 +172,10 @@
 
                                                                 <li data-toggle="tooltip" data-placement="top" title="View all websites visited and bookmarked as preferred ones."><i class="icon-ok"></i> Bookmarks</li> 
                                                                 <li data-toggle="tooltip" data-placement="top" title="View all photos stored on a device."><i class="icon-ok"></i> Photos</li>
-                                                                <li data-toggle="tooltip" data-placement="top" title="View all videos stored on a device."><i class="icon-cancel"></i> Videos</li>
+                                                                
                                                                 <li data-toggle="tooltip" data-placement="top" title="View all emails and detailed contact data. Rooting is required for Android devices."><i class="icon-ok"></i> Emails</li>
                                                                 <li data-toggle="tooltip" data-placement="top" title="Monitor, block or set time limits on all applications (games, services etc.) downloaded on a device."><i class="icon-ok"></i> Applications Management</li>
+                                                                <li data-toggle="tooltip" data-placement="top" title="View all videos stored on a device."><i class="icon-cancel"></i> Videos</li>
                                                                 <li data-toggle="tooltip" data-placement="top" title="Track conversations via Skype, WhatsApp, Viber. Root is required for Android."><i class="icon-cancel"></i> Viber/WhatsApp/Skype</li>
                                                                 <li data-toggle="tooltip" data-placement="top" title="Monitor posted images and comments in Instagram. Root is required for Android devices."><i class="icon-cancel"></i> Instagram</li>
                                                                 <li data-toggle="tooltip" data-placement="top" title="Monitor chats on Facebook. Root is required for Android devices."><i class="icon-cancel"></i> Facebook Messages</li>
@@ -299,9 +300,10 @@
 
                                                                 <li data-toggle="tooltip" data-placement="top" title="View all websites visited and bookmarked as preferred ones."><i class="icon-ok"></i> Bookmarks</li> 
                                                                 <li data-toggle="tooltip" data-placement="top" title="View all photos stored on a device."><i class="icon-ok"></i> Photos</li>
-                                                                <li data-toggle="tooltip" data-placement="top" title="View all videos stored on a device."><i class="icon-ok"></i> Videos</li>
+                                                                
                                                                 <li data-toggle="tooltip" data-placement="top" title="View all emails and detailed contact data. Rooting is required for Android devices."><i class="icon-ok"></i> Emails</li>
                                                                 <li data-toggle="tooltip" data-placement="top" title="Monitor, block or set time limits on all applications (games, services etc.) downloaded on a device."><i class="icon-ok"></i> Applications Management</li>
+                                                                <li data-toggle="tooltip" data-placement="top" title="View all videos stored on a device."><i class="icon-ok"></i> Videos</li>
                                                                 <li data-toggle="tooltip" data-placement="top" title="Track conversations via Skype, WhatsApp, Viber. Root is required for Android."><i class="icon-ok"></i> Viber/WhatsApp/Skype</li>
                                                                 <li data-toggle="tooltip" data-placement="top" title="Monitor posted images and comments in Instagram. Root is required for Android devices."><i class="icon-ok"></i> Instagram</li>
                                                                 <li data-toggle="tooltip" data-placement="top" title="Monitor chats on Facebook. Root is required for Android devices."><i class="icon-ok"></i> Facebook Messages</li>

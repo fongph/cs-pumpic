@@ -64,9 +64,11 @@ if( in_array($_uri, $os_url) ) {
     
     if( $_os ) :
         $phones = $compatibility->getPhones(Compatibility::FIND_BY_OS, $currentPage, $_os);
-        if(!$phones['count']) throw new PageNotFoundException;
+        $count_pages = (ceil($phones['count'] / Compatibility::devicesPerPage()) - 1);
+        $count_pages = ($count_pages < 0) ? 0 : $count_pages;
+        if($currentPage > $count_pages) throw new PageNotFoundException;
         
-        $paginationList = paginationByCount($currentPage, ceil($phones['count'] / Compatibility::devicesPerPage()));
+        $paginationList = paginationByCount($currentPage, $count_pages);
         
         $smarty->assign('phones', $phones['list'], false);
         $smarty->assign('currentPage', $currentPage, false);
@@ -87,15 +89,25 @@ if( in_array($_uri, $os_url) ) {
 
     if($mu -> getSession('device-model')){        
         $phones = $compatibility->getPhones(Compatibility::FIND_BY_QUERY, $currentPage, $mu -> getSession('device-model'));
-        if(!$phones['count']) throw new PageNotFoundException;
+        $count_pages = (ceil($phones['count'] / Compatibility::devicesPerPage()) - 1);
+        $count_pages = ($count_pages < 0) ? 0 : $count_pages;
+        if($currentPage > $count_pages) throw new PageNotFoundException;
         
-        $paginationList = paginationByCount($currentPage, ceil($phones['count'] / Compatibility::devicesPerPage()));
+        $paginationList = paginationByCount($currentPage, $count_pages);
 
         $smarty->assign('phones', $phones['list'], false);
         $smarty->assign('currentPage', $currentPage, false);
-        $smarty->assign('pages', $paginationList, false);
+        
 
-        $smarty->assign('title_search', str_replace('{search_word}', $mu -> getSession('device-model'), $title_search[ $_node ]));
+        if(isset($phones['list']) and !count($phones['list'])) {
+            $smarty->assign('pages', false, false);
+            $smarty->assign('title_search', 'No search results found for "'.$mu -> getSession('device-model').'"');
+        } else {
+            $smarty->assign('pages', $paginationList, false);
+            $smarty->assign('title_search', str_replace('{search_word}', $mu -> getSession('device-model'), $title_search[ $_node ]));
+        }
+        
+        
         // Search results for "<strong>{$search_word}</strong>"
         $smarty->assign('search_word', $mu -> getSession('device-model'), false);
         $smarty->display('compatibility/search.tpl');

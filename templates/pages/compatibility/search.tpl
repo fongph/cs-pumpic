@@ -82,9 +82,11 @@
                                                 {/foreach}
                                             {/nocache}    
                                             </div>
+                                            {if $pages}
                                             <div class="box-navigations">
                                                 <ul class="pagination">
                                                 {nocache}    
+                                                    
                                                     {foreach from=$pages item=page}
                                                         {if $page === false}
                                                             <li class="disabled"><span class="ellipse">…</span></li>
@@ -94,9 +96,11 @@
                                                             <li><a href="/compatibility/{$link_page}/?{if $page}page={$page}{/if}" class="page-link" href="#page={$page+1}">{$page+1}</a></li>
                                                         {/if}
                                                     {/foreach}
+                                                   
                                                 {/nocache}    
                                                 </ul>
                                             </div>
+                                            {/if}     
                                         </div>
                                         <!-- end -->
                                 </div>

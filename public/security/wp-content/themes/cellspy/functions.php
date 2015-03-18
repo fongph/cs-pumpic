@@ -1,6 +1,5 @@
 <?php
-remove_action( 'wp_head', 'wp_shortlink_wp_head' );
-remove_action( 'wp_head', 'adjacent_posts_rel_link_wp_head' );
+
 
 // Add buttons to html editor
 add_action('admin_print_footer_scripts','eg_quicktags');

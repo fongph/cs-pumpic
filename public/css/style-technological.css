@@ -1328,7 +1328,8 @@ dl.table-rows.block-left {
     margin: 0px 0px 0px -7px !important;
     left: 50% !important;
 }
-.webkit p {
+.webkit .bg-footer p, 
+.webkit .testimonial-text p {
     color: #4d4f5b;
 }
 

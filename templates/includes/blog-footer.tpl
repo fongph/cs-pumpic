@@ -73,5 +73,3 @@
         <?php include(dirname(__FILE__).'/blog-popUp.tpl'); ?>
         <?php include(dirname(__FILE__).'/blog-analytics-footer.tpl'); ?>
         
-</body>
-</html>

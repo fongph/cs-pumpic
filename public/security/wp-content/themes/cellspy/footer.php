@@ -13,7 +13,9 @@
 ?>
 
 	<?php 
-		include('../../templates/includes/blog-footer.tpl'); 
                 
-                wp_footer();    
+		include('../../templates/includes/blog-footer.tpl'); 
+                wp_footer();
 	?>
+</body>
+</html>

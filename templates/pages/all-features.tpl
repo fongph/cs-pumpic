@@ -350,7 +350,7 @@
                                         
                                         <div class="div-table">
                                             <div class="div-table-row">
-                                                <div class="div-table-column"><span>Smartphones and tablets:</span></div>
+                                                <div class="div-table-column"><span>Smartphones and Tablets:</span></div>
                                                 <div class="div-table-column"><span class="color-green">Android 2.2 and up</span></div>
                                             </div>
                                         </div>

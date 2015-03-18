@@ -71,7 +71,11 @@ $config = array(
                 'robots.txt'            => 'robots.php',
             
                 //search
-                'compatibility/results'           => 'compatibility_search.php'
+                'compatibility/results'           => 'compatibility_search.php',
+            
+                // devices
+                'compatibility/android-devices'   => 'compatibility_search.php',
+                'compatibility/ios-devices'       => 'compatibility_search.php',  
 	),
     
     'db_phones' => array(

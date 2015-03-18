@@ -5,7 +5,9 @@
 <title>{$getSetting.title}</title>
 <meta name="description" content="{$getSetting.description}" />
 
-<meta name="robots" content="noindex,nofollow" />
+{if isset($getSetting._item.custom_text) && empty($getSetting._item.custom_text)}
+    <meta name="robots" content="noindex,nofollow" />
+{/if}
 
 {include file='../../includes/main/header/wrap-title-footer.tpl'}
 <body>

@@ -1,6 +1,6 @@
 {include file='../../includes/main/header/wrap-title-header.tpl'}
 
-	<title>Compatibility search results</title>
+	<title>{if $meta_title}{$meta_title}{else}Compatibility search results{/if}</title>
 	<meta name="description" content="Ensure the phone you want to track is mentioned in the Compatibility list and OS Requirements. If it meets the requirements, you can install pumpic monitoring app." />
 	
         <meta name="robots" content="noindex,nofollow" />
@@ -42,7 +42,7 @@
                                                                 <span class="ico-left"><i class="icon-apple"></i></span>
                                                                 <span>OS:<strong> iOS</strong></span>
                                                                 <span>Versions:<strong> 6.0 or later {*(jailbreak required)*}</strong></span>
-                                                                <a href="#" class="text-succes search-category" data-os="iOS">View all supported iOS devices</a>
+                                                                <a href="/compatibility/ios-devices" class="text-succes search-category" data-os="iOS">View all supported iOS devices</a>
                                                         </div>
                                                 </div>
                                                 <div class="col-sm-4 col-md-4">
@@ -50,7 +50,7 @@
                                                                 <span class="ico-left"><i class="icon-android"></i></span>
                                                                 <span>OS:<strong> Android</strong></span>
                                                                 <span>Versions:<strong> 2.2 or later</strong></span>
-                                                                <a href="#" class="text-succes search-category" data-os="Android">View all supported Android devices</a>
+                                                                <a href="/compatibility/android-devices" class="text-succes search-category" data-os="Android">View all supported Android devices</a>
                                                         </div>
                                                 </div>
                                         </div>
@@ -63,7 +63,7 @@
                                     
                                         <!-- search result -->
                                         <div class="row">
-                                            {if $search_word}<h2 class="result-title">Search results for "<strong>{$search_word}</strong>"</h2>{/if}
+                                            {if $title_search}<h2 class="result-title">{$title_search}</h2>{/if}
                                             <div class="box-get-search-result clearfix">
                                             {nocache}    
                                                 {foreach from=$phones item=phone}
@@ -91,7 +91,7 @@
                                                         {elseif $page == $currentPage}
                                                             <li class="active"><span class="current">{$page+1}</span></li>
                                                         {else}
-                                                            <li><a href="/compatibility/results/?{if $page}page={$page}{/if}" class="page-link" href="#page={$page+1}">{$page+1}</a></li>
+                                                            <li><a href="/compatibility/{$link_page}/?{if $page}page={$page}{/if}" class="page-link" href="#page={$page+1}">{$page+1}</a></li>
                                                         {/if}
                                                     {/foreach}
                                                 {/nocache}    
@@ -162,7 +162,7 @@
         {include file='../../includes/main/main-analytics-footer.tpl'}
 
     <script type="text/javascript">
-        var Devices = {
+        /*var Devices = {
             imgPath: 'http://{$api_device._domain}/{$api_device.path_img}/',
             $titleBlock:  $('.result-title'),
             $resBlock: $('.box-get-search-result'),
@@ -225,7 +225,7 @@
     
             Devices.search(request, params);
             return false;
-        });
+        }); */
         
         var $searchForm = $('.form-search');
         $searchForm.validate({

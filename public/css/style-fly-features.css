@@ -83,3 +83,43 @@
     height: 14px;
     top: 3px;
 }
+
+/* ------------- \\ fly-features-v2 -------------- */
+.fly-features-v2 {
+    
+}
+.fly-features-v2 #fly_features { padding: 9px; }
+.fly-features-v2 h2 {
+    color: #f7efa5 !important;
+    font-size: 24px !important;
+    line-height: 1em !important;
+}
+#fly_features i.i-fly-features-iphone,
+#fly_features i.i-fly-features-ipad {
+    display: inline-block;
+    margin: 0px;
+    top: 6px;
+}    
+#fly_features i.i-fly-features-iphone { 
+    background: url('../images/fly_features/i-icon-features-iphone.png') no-repeat;
+    width: 13px;
+    height: 22px;
+}
+
+#fly_features i.i-fly-features-ipad { 
+    background: url('../images/fly_features/i-icon-features-ipad.png') no-repeat;
+    width: 18px;
+    height: 22px;
+}    
+
+.fly-features-v2 #fly_features > p {
+    font-size: 14px;
+    line-height: 1.6em;
+    color: white;
+    margin-top: 5px;
+}
+
+.fly-features-v2 #fly_features > p > span.icon-apple {
+    font-size: 16px;
+    color:  #d1f0f0;
+}

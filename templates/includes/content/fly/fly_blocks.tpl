@@ -4,5 +4,5 @@
 <!-- END FLY BUTTON -->
 
 <!-- FLY BLOCK -->
-{include file='./fly_features.tpl'}
+{include file='./fly_features_v2.tpl'}
 <!-- END FLY BLOCK -->

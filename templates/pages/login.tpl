@@ -23,7 +23,7 @@
                              <div class="row">
                                 <div class="col-lg-10 col-lg-offset-1">
                                         <div class="row">
-                                                <legend class="text-center">Login</legend>
+                                                <legend class="text-center">Login to Pumpic Control Panel</legend>
                                         </div>
                                         <div class="row">
                                                 <div class="col-lg-12">
@@ -33,6 +33,16 @@
                                                     } 
                                                 </div>
                                         </div>
+                                        <div class='row'>
+                                            <div class='col-lg-12'>
+                                                <div id='login-member-yet'>
+                                                    <h2>Not a member yet?</h2>
+                                                    <div class='block-buttons text-center'>
+                                                        <a href='http://{$domain}/store.html' class='btn btn-red'>Buy Now</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>        
                                 </div>
                              </div>     
                            

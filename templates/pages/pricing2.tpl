@@ -125,7 +125,7 @@
                                                                 <img src="{$img}/basic_pack.png">
                                                             </div>
                                                             <div class="wr_price_big">
-                                                                <span></span><div class="box-currence"><symbol attr-iso="usd">$</symbol><curr id="basic-price-per-month">3.33</curr></div><span> / month</span>
+                                                                <span></span><div class="box-currence"><symbol attr-iso="usd">$</symbol><curr id="basic-price-per-month">13.33</curr></div><span> / month</span>
                                                             </div>
                                                             <div class="list_price">
                                                             <form name="price_basic" method="POST" action="/buy.html" autocomplete="off">
@@ -253,7 +253,7 @@
                                                                 <img src="{$img}/premium_pack.png">
                                                             </div>
                                                             <div class="wr_price_big">
-                                                                <span></span><div class="box-currence"><symbol attr-iso="usd">$</symbol><curr id="premium-price-per-month">10.83</curr></div><span>/ month</span>
+                                                                <span></span><div class="box-currence"><symbol attr-iso="usd">$</symbol><curr id="premium-price-per-month">16.66</curr></div><span>/ month</span>
                                                             </div>
                                                             <div class="list_price">
                                                             <form name="price_premium" method="POST" action="/buy.html" autocomplete="off">
@@ -384,9 +384,8 @@
                                         $('input[data-target="#basic-price-per-month"], input[data-target="#premium-price-per-month"]').change(function(){
                                             
                                             var currentValue = $(this).attr('data-price-'+$(this).attr('data-cur')) / Number($(this).attr('data-period'));
-
-                                            currentValue = roundUsing(Math.round, currentValue, 2);
-                                            
+                                            //currentValue = roundUsing(Math.round, currentValue, 4);
+                                            currentValue = Math.floor(currentValue * 100) / 100;
                                             $($(this).attr('data-target'))
                                                     .html(currentValue)
                                                     .prev('symbol')

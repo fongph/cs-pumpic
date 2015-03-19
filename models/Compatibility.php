@@ -110,8 +110,12 @@ class Compatibility {
     public static function phoneDataPrepare(array $data)
     {
         $groups = array(
-            'Manage calls' => array(
-                'call_log' => 'Call History',
+            'Calls & Texts' => array(
+                'call_log' => 'Calls history',
+                'lock_device' => 'Calls blocking',
+                'sms_log' => 'SMS history',
+                'block_word' => 'SMS blocking',
+                'bad_word_sms'  => 'Block SMS by keyword',
 //                    'block_number' => 'Blocking calls & SMS by number',
             ),
             'Instant messengers' => array(
@@ -122,14 +126,15 @@ class Compatibility {
 //                    'bb_messenger' => 'BlackBerry Messenger',
 //                    'pin_message' => 'PIN Message',
             ),
-            'Manage SMS' => array(
-                'sms_log' => 'SMS History',
-                'block_word' => 'SMS Blocking'
+            'Control Apps' => array(
+                'application'  => 'Applications list',
+                'app_list_block' => 'Apps blocking (Block distracting websites.)',
+                'keylogger' => 'Keylogger',
             ),
             'Browser' => array(
                 'browser_history' => 'Browser history',
                 'browser_bookmarks' => 'Bookmarks',
-//                    'blocking_sites' => 'Blocking web sites',
+                'blocking_sites' => 'Websites blocking (Block 18+ websites.)',
             ),
             'Other features' => array(
                 'location_history'  => 'Location history',
@@ -137,17 +142,13 @@ class Compatibility {
                 'calendar' => 'Calendar',
                 'photos' => 'Photos',
                 'emails' => 'Emails',
-                'application'  => 'Application',
-                'app_list_block' => 'Websites & APPS blocking',
                 'video' => 'View user video',
                 'historical_data'  => 'Historical data',
                 'sms_commands' => 'SMS Commands',
-                'keylogger' => 'Keylogger',
-                'lock_device' => 'Blocked list number',
                 'sim_change_notification' => 'SIM change',
                 'reboot_app'  => 'Reboot application',
                 'reboot_device'  => 'Reboot device',
-                'bad_word_sms'  => 'Bad word SMS',
+                
 //                    'gps' => 'Current GPS location',
 
             ),

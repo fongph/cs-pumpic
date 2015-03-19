@@ -60,9 +60,9 @@
                                                 <span>{$name}</span>
                                                 <ul>
                                                     {foreach from=$params key=alies item=value}
-                                                        {if $value}
+                                                        {*if $value*}
                                                             <li class="mobile_tooltip" title="{$value}"> {$alies}</li>
-                                                        {/if}
+                                                        {*/if*}
                                                     {/foreach}
                                                 </ul>
                                             </li>

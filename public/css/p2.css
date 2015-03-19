@@ -531,7 +531,7 @@ form > table.pricing-second:after {
   padding: 0 5px;
 }
 .tb_pricing .tooltip-inner {
-  max-width: 200px;
+  max-width: 250px;
   padding: 3px 8px;
   color: #868686;
   font-family: "Open Sans",Helvetica,Arial,sans-serif;

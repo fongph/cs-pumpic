@@ -385,7 +385,7 @@
                                             
                                             var currentValue = $(this).attr('data-price-'+$(this).attr('data-cur')) / Number($(this).attr('data-period'));
                                             //currentValue = roundUsing(Math.round, currentValue, 4);
-                                            currentValue = Math.floor(currentValue * 100) / 100;
+                                            currentValue = (Math.floor(currentValue * 100) / 100).toFixed(2);
                                             $($(this).attr('data-target'))
                                                     .html(currentValue)
                                                     .prev('symbol')

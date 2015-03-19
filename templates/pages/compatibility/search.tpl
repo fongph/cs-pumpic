@@ -93,7 +93,7 @@
                                                         {elseif $page == $currentPage}
                                                             <li class="active"><span class="current">{$page+1}</span></li>
                                                         {else}
-                                                            <li><a href="/compatibility/{$link_page}/?{if $page}page={$page}{/if}" class="page-link" href="#page={$page+1}">{$page+1}</a></li>
+                                                            <li><a href="/compatibility/{$link_page}/?{if $page+1}page={$page+1}{/if}" class="page-link" {*href="#page={$page+1}"*}>{$page+1}</a></li>
                                                         {/if}
                                                     {/foreach}
                                                    

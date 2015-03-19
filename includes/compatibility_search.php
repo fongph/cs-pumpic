@@ -24,8 +24,13 @@
  ];
  
  list(,$_uri) = explode('/', $urlParams['uri']);    
-$currentPage = (int)$_GET['page'] ?: 0;
+$currentPage = (int)$_GET['page'] ?: 1;
+$_curr = ($currentPage - 1 < 0 )? 0 : $currentPage - 1;
 $_node = (in_array($_uri, $os_url)) ? $_uri : 'results';
+
+// currPage
+$smarty->assign('currentPage', $_curr, false);
+
 // uri
 $smarty->assign('link_page', $_node, false);
 // config
@@ -63,15 +68,15 @@ if( in_array($_uri, $os_url) ) {
     endswitch;
     
     if( $_os ) :
-        $phones = $compatibility->getPhones(Compatibility::FIND_BY_OS, $currentPage, $_os);
-        $count_pages = (ceil($phones['count'] / Compatibility::devicesPerPage()) - 1);
-        $count_pages = ($count_pages < 0) ? 0 : $count_pages;
-        if($currentPage > $count_pages) throw new PageNotFoundException;
         
-        $paginationList = paginationByCount($currentPage, $count_pages);
+        $phones = $compatibility->getPhones(Compatibility::FIND_BY_OS, $_curr, $_os);
+        $count_pages = (ceil($phones['count'] / Compatibility::devicesPerPage()));
+        $count_pages = ($count_pages < 0) ? 0 : $count_pages;
+        if($_curr > $count_pages) throw new PageNotFoundException;
+        
+        $paginationList = paginationByCount($_curr, $count_pages);
         
         $smarty->assign('phones', $phones['list'], false);
-        $smarty->assign('currentPage', $currentPage, false);
         $smarty->assign('pages', $paginationList, false);
         $smarty->assign('title_search', $title_search[ $_node ]);
         $smarty->assign('search_word', false, false);
@@ -88,16 +93,14 @@ if( in_array($_uri, $os_url) ) {
     }
 
     if($mu -> getSession('device-model')){        
-        $phones = $compatibility->getPhones(Compatibility::FIND_BY_QUERY, $currentPage, $mu -> getSession('device-model'));
-        $count_pages = (ceil($phones['count'] / Compatibility::devicesPerPage()) - 1);
+        $phones = $compatibility->getPhones(Compatibility::FIND_BY_QUERY, $_curr, $mu -> getSession('device-model'));
+        $count_pages = (ceil($phones['count'] / Compatibility::devicesPerPage()));
         $count_pages = ($count_pages < 0) ? 0 : $count_pages;
-        if($currentPage > $count_pages) throw new PageNotFoundException;
+        if($_curr > $count_pages) throw new PageNotFoundException;
         
-        $paginationList = paginationByCount($currentPage, $count_pages);
+        $paginationList = paginationByCount($_curr, $count_pages);
 
         $smarty->assign('phones', $phones['list'], false);
-        $smarty->assign('currentPage', $currentPage, false);
-        
 
         if(isset($phones['list']) and !count($phones['list'])) {
             $smarty->assign('pages', false, false);

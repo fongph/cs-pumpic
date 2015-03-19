@@ -112,8 +112,6 @@
                                                     </i>SIM card change alert
                                                 </span>
                                             </div>
-                                        <div class="refund_10"><div class="wr_refund"><div class="day10">10-DAY <span class="d_green">Refund Policy</span></div></div></div>
-                                        <div class="support_os"><div class="wr_support_os"><i class="icon-android d_green"></i> Android 2.0 - 5.1 <i class="icon-apple d_green"></i> iOS 6.0 - 8.2 </div></div>
                                         </caption>
                                         <thead>
                                             <tr>

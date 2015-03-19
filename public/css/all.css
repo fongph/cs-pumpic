@@ -5818,3 +5818,7 @@ i.white-arrows-right {
     font-weight: 400;
 }
 
+/* ---------- \\ block-GPS ------------------ */
+.block-GPS .bg_bottom_images .visual-text {
+      padding: 25px 0 7px;
+}

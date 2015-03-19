@@ -1,3 +1,11 @@
+#link-fly-features {
+    text-decoration: none;
+}
+
+#link-fly-features:hover {
+    text-decoration: none;
+}
+
 #fly_features {
     position: fixed;
     display: none;
@@ -22,7 +30,6 @@
     line-height: 23px;
     margin: 0px 0px 7px 4px;
     padiing: 0px;
-    
     text-align: left;
 }
 

@@ -13,8 +13,14 @@ and open the template in the editor.
         min-height: 100%;
         clear: both;
 }
+
+.msie #box-features-list .box-line-solid { 
+    margin-left: 0px !important;
+    left: 0px !important;
+}
+
 .msie .box-line-solid {
-    height: 100vh;
+    height: 200vh;
     width: 100%;
 }
 

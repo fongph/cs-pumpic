@@ -670,19 +670,19 @@ $(document).ready(function(){
    });
    
    
-   $('.search-category').on('click', function(e) {
-       e.preventDefault();
-       var _os = $(this).attr('attr_os'); 
-       if( _os) {
-           $.fn.PumpicList('search', {
-               'search_method': 'getPhonesByOS',
-               '_method': 'getCountOS',
-               '_query': _os
-           });
-       }
-       
-       return false;
-   });
+//   $('.search-category').on('click', function(e) {
+//       e.preventDefault();
+//       var _os = $(this).attr('attr_os'); 
+//       if( _os) {
+//           $.fn.PumpicList('search', {
+//               'search_method': 'getPhonesByOS',
+//               '_method': 'getCountOS',
+//               '_query': _os
+//           });
+//       }
+//       
+//       return false;
+//   });
    
    // compatibility tooltip in device
    if($('.mobile_tooltip').length) {

@@ -5,10 +5,9 @@
 }    
     
 <body>
-    <!-- FLY BUTTON -->
-    {include file='../includes/main/main-button-help.tpl'}
-    {include file='../includes/main/main-button-goup.tpl'}
-    <!-- END FLY BUTTON -->
+    <!-- FLY BLOCKS -->
+    {include file='../includes/content/fly/fly_blocks.tpl'}
+    <!-- END FLY BLOCKS-->
     
     <div class="wrapper block-technological">
         <!-- TOP MENU -->
@@ -26,7 +25,7 @@
                 <div id="block-technological-header"> 
                     <div class="box-hedaer-title">
                         <h2 class="text-center">Cell Phone Monitoring Mobile Application</h2>
-                        <span>Enjoy more than <strong>20 features</strong> of <strong>remote mobile tracking</strong> with Pumpic.</span>
+                        {*<span>Enjoy more than <strong>20 features</strong> of <strong>remote mobile tracking</strong> with Pumpic.</span>*}
                     </div>
                     
                     <div class="box-hedaer-body">
@@ -216,7 +215,7 @@
                                         ga-action ="click"
                                         ga-category="techological"
                                         ga-label="demo"
-                                       >Live Demo</a>
+                                       >View Demo</a>
                                     </li>
                                     
                                     <li>
@@ -240,6 +239,7 @@
                                     Keep your eyes open!
                                     {*Keep your family safe and secured with Pumpic. 
                                     <br />Track location. View calls and SMS. Follow online activity.*}</p>
+                                <p>Enjoy more than <strong>20 features</strong> of <strong>remote mobile tracking</strong> with Pumpic.</p>
                             </div>
                         </div>                    
                     </div>
@@ -281,7 +281,7 @@
 
                                     <div class="tab col-item-3 col-md-item-3 col-sm-item-3">
                                         <ul>
-                                            <li class="text-uppercase">
+                                            <li {*class="text-uppercase"*}>
                                                 <i class="i-features-sms-commands"></i> 
                                                 <div>SMS Commands</div>
                                             </li>
@@ -350,7 +350,7 @@
                                         
                                         <div class="div-table">
                                             <div class="div-table-row">
-                                                <div class="div-table-column"><span>Smartphones and tablets:</span></div>
+                                                <div class="div-table-column"><span>Smartphones and Tablets:</span></div>
                                                 <div class="div-table-column"><span class="color-green">Android 2.2 and up</span></div>
                                             </div>
                                         </div>
@@ -469,7 +469,7 @@
                                             <li>the time when a call was received and duration of the </li>
                                             <li>conversation</li>
                                         </ul>*}
-                                        <div><a class="btn-orange" href="http://demo.{$domain}">View Demo</a></div>
+                                        <div><a class="btn-orange" href="http://demo.{$domain}/cp/calls/">View Demo</a></div>
                                         <label class="color-orange">(no registration required)</label>
                                     </div>
                                 </div>
@@ -513,7 +513,7 @@
                                             <li>Find your children by using GPS. The application identifies the current position together with the 
                                                 precise route of recent movements.</li>
                                         </ul>*}
-                                        <div><a class="btn-orange" href="http://demo.{$domain}">View Demo</a></div>
+                                        <div><a class="btn-orange" href="http://demo.{$domain}/cp/locations/">View Demo</a></div>
                                         <label class="color-orange">(no registration required)</label>
                                     </div>
                                 </div>
@@ -547,7 +547,7 @@
                                             <li>kid takes a pic, it will be sent to your Control Panel for your</li>
                                             <li>consideration.</li>
                                         </ul>*}
-                                        <div><a class="btn-orange" href="http://demo.{$domain}">View Demo</a></div>
+                                        <div><a class="btn-orange" href="http://demo.{$domain}/cp/locations/">View Demo</a></div>
                                         <label class="color-orange">(no registration required)</label>
                                     </div>
                                 </div>
@@ -592,7 +592,7 @@
                                             <li>WhatsApp, Viber and Skype. Prevent your children from</li>
                                             <li>conversations with misgiving people.</li>
                                         </ul>*}
-                                        <div><a class="btn-orange" href="http://demo.{$domain}">View Demo</a></div>
+                                        <div><a class="btn-orange" href="http://demo.{$domain}/cp/facebook/">View Demo</a></div>
                                         <label class="color-orange">(no registration required)</label>
                                     </div>
                                 </div>
@@ -621,7 +621,7 @@
                                             <li>requests. Keep your children away from visiting 18+ web</li>
                                             <li>resources.</li>
                                         </ul>*}
-                                        <div><a class="btn-orange" href="http://demo.{$domain}">View Demo</a></div>
+                                        <div><a class="btn-orange" href="http://demo.{$domain}/cp/browserHistory/">View Demo</a></div>
                                         <label class="color-orange">(no registration required)</label>
                                     </div>
                                 </div>
@@ -662,7 +662,7 @@
                                             <li>kid presses. Keep track of password changes, track keywords</li>
                                             <li>and phrases input, associated with misgiving subjects.</li>
                                         </ul>*}
-                                        <div><a class="btn-orange" href="http://demo.{$domain}">View Demo</a></div>
+                                        <div><a class="btn-orange" href="http://demo.{$domain}/cp/applications/">View Demo</a></div>
                                         <label class="color-orange">(no registration required)</label>
                                     </div>
                                 </div>
@@ -692,7 +692,7 @@
                                             <li>unwanted connections and companionship. Receive</li>
                                             <li>notifications about recent contact additions.</li>
                                         </ul>*}
-                                        <div><a class="btn-orange" href="http://demo.{$domain}">View Demo</a></div>
+                                        <div><a class="btn-orange" href="http://demo.{$domain}/cp/emails/">View Demo</a></div>
                                         <label class="color-orange">(no registration required)</label>
                                     </div>
                                 </div>
@@ -741,7 +741,7 @@
                                             <li>email correspondence history and prevent you children</li>
                                             <li>from ambiguous communications and online predators.</li>
                                         </ul>*}
-                                        <div><a class="btn-orange" href="http://demo.{$domain}">View Demo</a></div>
+                                        <div><a class="btn-orange" href="http://demo.{$domain}/cp/calendar/">View Demo</a></div>
                                         <label class="color-orange">(no registration required)</label>
                                     </div>
                                 </div>
@@ -770,7 +770,7 @@
                                             <li>unwanted connections and companionship. Receive</li>
                                             <li>notifications about recent contact additions.</li>
                                         </ul>*}
-                                        <div><a class="btn-orange" href="http://demo.{$domain}">View Demo</a></div>
+                                        <div><a class="btn-orange" href="http://demo.{$domain}/cp/keylogger/">View Demo</a></div>
                                         <label class="color-orange">(no registration required)</label>
                                     </div>
                                 </div>
@@ -814,7 +814,7 @@
                                             <li>kid presses. Keep track of password changes, track keywords</li>
                                             <li>and phrases input, associated with misgiving subjects.</li>
                                         </ul>*}
-                                        <div><a class="btn-orange" href="http://demo.{$domain}">View Demo</a></div>
+                                        <div><a class="btn-orange" href="http://demo.{$domain}/cp/sms/">View Demo</a></div>
                                         <label class="color-orange">(no registration required)</label>
                                     </div>
                                 </div>
@@ -951,7 +951,7 @@
                                 <div class='feature-item-info'>
                                     <ul>
                                         <li>
-                                            <i class='i-list-features-geo-fencing'></i>
+                                            <i class='i-list-features-sim-change'></i>
                                             <strong>Other features</strong>
                                             {*<ul>
                                                 <li><strong>Sim change notification</strong></li>

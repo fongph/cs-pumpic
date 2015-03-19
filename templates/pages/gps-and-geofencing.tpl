@@ -6,10 +6,9 @@
 }    
     
 <body>
-    <!-- FLY BUTTON -->
-    {include file='../includes/main/main-button-help.tpl'}
-    {include file='../includes/main/main-button-goup.tpl'}
-    <!-- END FLY BUTTON -->
+    <!-- FLY BLOCKS -->
+    {include file='../includes/content/fly/fly_blocks.tpl'}
+    <!-- END FLY BLOCKS-->
     
     <div class="wrapper block-GPS">
         <!-- TOP MENU -->
@@ -63,7 +62,7 @@
 
 <div class="{if $blockBg}{$blockBg}{else}dark{/if}">
     <div class="container">
-            <h2 class="text-center testimonial-title">{if $title}{$title}{else}Trusted by Over 10 000 Customers Wordwide{/if}:</h2>
+            <h2 class="text-center testimonial-title">{if $title}{$title}{else}Trusted by Over 10 000 Customers Worldwide{/if}:</h2>
             <div class="row">
                 
 

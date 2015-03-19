@@ -101,6 +101,10 @@ img {
 }
 
 /* fonts */
+.fz13 {
+ font-size: 13px;   
+}
+
 body {
   color: #7f7f7f;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
@@ -4330,6 +4334,10 @@ only screen and (max-device-width: 480px) {
     padding-bottom: 20px;
 }
 
+.pb10 {
+    padding-bottom: 10px;
+}
+
 .mt20 {
     margin-top: 20px;
 }
@@ -5809,3 +5817,4 @@ i.white-arrows-right {
     font-size: 17px;
     font-weight: 400;
 }
+

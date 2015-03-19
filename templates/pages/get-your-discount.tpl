@@ -7,9 +7,10 @@
 }
 
 <body>
-    <!-- FLY BUTTON -->
-    {include file='../includes/main/main-button-help.tpl'}
-    {include file='../includes/main/main-button-goup.tpl'}
+    <!-- FLY BLOCKS -->
+    {include file='../includes/content/fly/fly_blocks.tpl'}
+    <!-- END FLY BLOCKS-->
+    
 	<div class="wrapper parent-control">
 	{include file='../includes/main/main-top-menu.tpl' 
                 cache_id = "includes_main_main-top-menu"
@@ -33,8 +34,8 @@
                                 <p>Keep your children safe and secured with Pumpic. <br />
                                     Track location. View calls and SMS. Follow online activity.</p>
                                 <ul class="compatibility">
-                                    <li><i class="icon-android"></i> (2.2 - 5.0)</li>
-                                    <li><i class="icon-apple"></i> (6.0 - 8.1.2)</li>
+                                    <li><i class="icon-android"></i> (2.2 - 5.1)</li>
+                                    <li><i class="icon-apple"></i> (6.0 - 8.2)</li>
                                     {*<li><i class="icon-blackberry"></i> (1.0 - 7.1)</li>*}
                                     <li>
                                         <i class="icon-info-circled"></i> <a href="/compatibility.html">platform compatibility</a>

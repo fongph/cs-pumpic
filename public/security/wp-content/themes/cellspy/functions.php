@@ -1,4 +1,6 @@
 <?php
+
+
 // Add buttons to html editor
 add_action('admin_print_footer_scripts','eg_quicktags');
 function eg_quicktags() {

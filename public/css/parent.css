@@ -30,7 +30,7 @@
     display: inline-block;
     font-size: 18px;
     line-height: 18px;
-    font-weight: 400;
+    font-weight: 300;
     min-height: 32px;
     min-width: 110px;
     padding: 9px 15px;
@@ -344,7 +344,8 @@
 .i-features-contacts, .i-features-email, .i-features-keyloger, .i-features-location,
 .i-features-photos, .i-features-sms-commands, .i-features-social, .i-features-sms,
 .i-features-block-device, .i-features-online-control-panel, .i-features-monitor-viber-whatsapp, .i-features-monitor-skype,
-.i-features-remote-activity-control, .i-features-remote-device-lock, .i-features-removal-protection, .i-features-instant-location {
+.i-features-remote-activity-control, .i-features-remote-device-lock, .i-features-removal-protection, .i-features-instant-location,
+.i-features-notes, .i-features-email-close, .i-features-skype {
     display: inline-block;
     margin-right: 16px;
 }
@@ -504,6 +505,24 @@
     background: url('../images/icons/icon-monitor-instagram.png') no-repeat;
     width: 21px;
     height: 20px;
+}
+
+.i-features-notes {
+    background: url('../images/icons/icon-notes.png') no-repeat;
+    width: 20px;
+    height: 26px;
+}
+
+.i-features-email-close {
+    background: url('../images/icons/icon-email-close.png') no-repeat;
+    width: 24px;
+    height: 17px;
+}
+
+.i-features-skype {
+    background: url('../images/icons/icon-skype.png') no-repeat;
+    width: 23px;
+    height: 23px;
 }
 /* -------------// top banners ------------- */
 

@@ -32,6 +32,9 @@
         <!-- fly blocks -->
         <link href="{$css}/style-fly-features.css?{style_cache data='2015-02-09'}" rel="stylesheet">
         
+        <!-- icloud -->
+        <link href="{$css}/icloud/icloud.css" rel="stylesheet">
+        
         <!-- ie -->
         <link href="{$css}/ie_fix/ie.css?{style_cache data='2015-02-09'}" rel="stylesheet">
 

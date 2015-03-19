@@ -5,9 +5,10 @@
 } 
 
 <body>
-    <!-- FLY BUTTON -->
-    {include file='../includes/main/main-button-help.tpl'}
-    {include file='../includes/main/main-button-goup.tpl'}
+    <!-- FLY BLOCKS -->
+    {include file='../includes/content/fly/fly_blocks.tpl'}
+    <!-- END FLY BLOCKS-->
+    
 	<div class="wrapper">
 	{include file='../includes/main/main-top-menu.tpl' 
                 topmenu_active="compatibility"
@@ -39,7 +40,7 @@
                                                                 <span class="ico-left"><i class="icon-apple"></i></span>
                                                                 <span>OS:<strong> iOS</strong></span>
                                                                 <span>Versions:<strong> 6.0 or later {*(jailbreak required)*}</strong></span>
-                                                                <a href="#" class="text-succes search-category" data-os="iOS">View all supported iOS devices</a>
+                                                                <a href="/compatibility/ios-devices" class="text-succes search-category" data-os="iOS">View all supported iOS devices</a>
                                                         </div>
                                                 </div>
                                                 <div class="col-sm-4 col-md-4">
@@ -47,7 +48,7 @@
                                                                 <span class="ico-left"><i class="icon-android"></i></span>
                                                                 <span>OS:<strong> Android</strong></span>
                                                                 <span>Versions:<strong> 2.2 or later</strong></span>
-                                                                <a href="#" class="text-succes search-category" data-os="Android">View all supported Android devices</a>
+                                                                <a href="/compatibility/android-devices" class="text-succes search-category" data-os="Android">View all supported Android devices</a>
                                                         </div>
                                                 </div>
                                                 {*<div class="col-sm-4 col-md-4">
@@ -202,7 +203,7 @@
 
     <script type="text/javascript">
         
-        var Devices = {
+        /*var Devices = {
             imgPath: 'http://{$api_device._domain}/{$api_device.path_img}/',
             $titleBlock:  $('.result-title'),
             $resBlock: $('.box-get-search-result'),
@@ -265,7 +266,7 @@
     
             Devices.search(request, params);
             return false;
-        });
+        }); */
         
         
         var $searchForm = $('.form-search');

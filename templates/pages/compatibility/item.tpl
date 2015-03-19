@@ -5,13 +5,16 @@
 <title>{$getSetting.title}</title>
 <meta name="description" content="{$getSetting.description}" />
 
-<meta name="robots" content="noindex,nofollow" />
+{if isset($getSetting._item.custom_text) && empty($getSetting._item.custom_text)}
+    <meta name="robots" content="noindex,nofollow" />
+{/if}
 
 {include file='../../includes/main/header/wrap-title-footer.tpl'}
 <body>
-        <!-- FLY BUTTON -->
-        {include file='../../includes/main/main-button-help.tpl'}
-        {include file='../../includes/main/main-button-goup.tpl'}
+        <!-- FLY BLOCKS -->
+    {include file='../../includes/content/fly/fly_blocks.tpl'}
+    <!-- END FLY BLOCKS-->
+    
 	<div class="wrapper">
 	{include file='../../includes/main/main-top-menu.tpl' 
                 topmenu_active="compatibility"

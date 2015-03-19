@@ -16,7 +16,7 @@
         </li>
         <li>
                 <h3>{*Monitor Smartphone Remotely*}Track remotely</h3>
-                <p>Enter your Control Panel to view data of a target device. Here you can also use the entire variety of monitoring functions like blocking and setting limits.             
+                <p>Enter your <b>Control Panel</b> to view data of a target device. Here you can also use the entire variety of monitoring functions like blocking and setting limits.             
                     {*Enter your <b>Control Panel</b> to start monitoring and protecting your children. 
                     Use the entire variety of tracking functions and secure your kids’ happiness.*} 
                     <span class="br"></span>From now on you can remotely view calls and texts, track location and monitor all other online activity.

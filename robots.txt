@@ -1,5 +1,14 @@
 User-agent:*
-Disallow: /tag/
+Disallow: */uncategorized/*
+Disallow: */tag/*
 Disallow: /restore.html
 Disallow: /login.html
 Disallow: /policy.html
+
+Disallow: /wp-content
+Disallow: /wp-admin
+Disallow: /wp-includes
+Allow: /wp-content/uploads/
+
+User-agent: Googlebot-Image
+Allow: /wp-content/uploads/

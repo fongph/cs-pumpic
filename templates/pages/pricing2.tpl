@@ -7,9 +7,9 @@
 }
 
 <body>
-    <!-- FLY BUTTON -->
-    {include file='../includes/main/main-button-help.tpl'}
-    {include file='../includes/main/main-button-goup.tpl'}
+    <!-- FLY BLOCKS -->
+    {include file='../includes/content/fly/fly_blocks.tpl'}
+    <!-- END FLY BLOCKS-->
     <div class="wrapper">
         {include file='../includes/main/main-top-menu.tpl' 
                 topmenu_active='pricing'
@@ -111,7 +111,7 @@
                                                 </span>
                                             </div>
                                         <div class="refund_10"><div class="wr_refund"><div class="day10">10-DAY <span class="d_green">Refund Policy</span></div></div></div>
-                                        <div class="support_os"><div class="wr_support_os"><i class="icon-android d_green"></i> Android (2.0 - 5.0) <i class="icon-apple d_green"></i> IOS (6.0 - 8.1.2) jailbreak needed </div></div>
+                                        <div class="support_os"><div class="wr_support_os"><i class="icon-android d_green"></i> Android (2.0 - 5.1) <i class="icon-apple d_green"></i> IOS (6.0 - 8.2) jailbreak needed </div></div>
                                         </caption>
                                         <thead>
                                             <tr>
@@ -158,7 +158,33 @@
                                                             </div>
                                                             <div class="basic_fe">
                                                             <ul>
-                                                                <li data-toggle="tooltip" data-placement="top" title="View detailed data on incoming/outgoing calls: name, phone number, time and duration"><i class="icon-ok"></i> Calls history <span>(700 calls monthly)</span></li>
+                                                                
+                                                                <li data-toggle="tooltip" data-placement="top" title="View detailed data on incoming/outgoing calls: name, phone number, time and duration."><i class="icon-ok"></i> Calls history <span>(700 calls monthly)</span></li>
+                                                                <li data-toggle="tooltip" data-placement="top" title="View text message content with detailed data including name, phone number and time."><i class="icon-ok"></i> SMS history <span>(300 SMS monthly)</span></li>
+                                                                <li data-toggle="tooltip" data-placement="top" title="Block calls from specific numbers."><i class="icon-ok"></i> Calls blocking </li>
+                                                                <li data-toggle="tooltip" data-placement="top" title="Block SMS from specific senders and/or containing specific keywords. Not available for Android 4.4 and newer versions"><i class="icon-ok"></i> SMS blocking </li>
+                                                                <li data-toggle="tooltip" data-placement="top" title="Track current location as well as the entire route history. Map view available."><i class="icon-ok"></i> Location history</li>
+                                                                <li data-toggle="tooltip" data-placement="top" title="Set specific zones and receive alerts once the target device leaves them or enters."><i class="icon-ok"></i> Geo-fences</li> 
+                                                                <li data-toggle="tooltip" data-placement="top" title="View contact list including names, addresses, numbers and emails."><i class="icon-ok"></i> Contacts</li>
+                                                                <li data-toggle="tooltip" data-placement="top" title="Monitor scheduled dates and events."><i class="icon-ok"></i> Calendar</li>
+                                                                <li data-toggle="tooltip" data-placement="top" title="View all visited websites. On iOS devices available for Safari browser only."><i class="icon-ok"></i> Browsing history</li>
+                                                                <li data-toggle="tooltip" data-placement="top" title="Block specific websites on a target device."><i class="icon-ok"></i> Websites blocking</li>
+
+                                                                <li data-toggle="tooltip" data-placement="top" title="View all websites visited and bookmarked as preferred ones."><i class="icon-ok"></i> Bookmarks</li> 
+                                                                <li data-toggle="tooltip" data-placement="top" title="View all photos stored on a device."><i class="icon-ok"></i> Photos</li>
+                                                                
+                                                                <li data-toggle="tooltip" data-placement="top" title="View all emails and detailed contact data. Rooting is required for Android devices."><i class="icon-ok"></i> Emails</li>
+                                                                <li data-toggle="tooltip" data-placement="top" title="Monitor, block or set time limits on all applications (games, services etc.) downloaded on a device."><i class="icon-ok"></i> Applications Management</li>
+                                                                <li data-toggle="tooltip" data-placement="top" title="View all videos stored on a device."><i class="icon-cancel"></i> Videos</li>
+                                                                <li data-toggle="tooltip" data-placement="top" title="Track conversations via Skype, WhatsApp, Viber. Root is required for Android."><i class="icon-cancel"></i> Viber/WhatsApp/Skype</li>
+                                                                <li data-toggle="tooltip" data-placement="top" title="Monitor posted images and comments in Instagram. Root is required for Android devices."><i class="icon-cancel"></i> Instagram</li>
+                                                                <li data-toggle="tooltip" data-placement="top" title="Monitor chats on Facebook. Root is required for Android devices."><i class="icon-cancel"></i> Facebook Messages</li>
+                                                                <li data-toggle="tooltip" data-placement="top" title="View all the previouse data ever stored on a device."><i class="icon-cancel"></i> Historical data</li> 
+                                                                <li data-toggle="tooltip" data-placement="top" title="Control devices remotely. Not supported: on Android 4.4+; “Wipe” function on iOS 8+."><i class="icon-cancel"></i> SMS commands</li>
+                                                                <li data-toggle="tooltip" data-placement="top" title="View every keystroke typed on a target device."><i class="icon-cancel"></i> Keylogger</li>
+                                                                <li data-toggle="tooltip" data-placement="top" title="Monitoring of iPhones, iPads and iPods Touch without jailbreak.  View SMS, Calls, Contacts, Browser History, Bookmarks, Calendar events."><i class="icon-cancel"></i> iCloud (<span class="fz13">jailbreak-free</span>)</li>
+                                                                
+                                                                {*<li data-toggle="tooltip" data-placement="top" title="View detailed data on incoming/outgoing calls: name, phone number, time and duration"><i class="icon-ok"></i> Calls history <span>(700 calls monthly)</span></li>
                                                                 <li data-toggle="tooltip" data-placement="top" title="View text message content with detailed data including name, phone number and time"><i class="icon-ok"></i> SMS history <span>(300 SMS monthly)</span></li>
                                                                 <li data-toggle="tooltip" data-placement="top" title="Block SMS from specific senders. Not available for Android 4.4 and newer versions"><i class="icon-ok"></i> SMS blocking </li>
                                                                 <li data-toggle="tooltip" data-placement="top" title="Track current location as well as the entire route history of your children"><i class="icon-ok"></i> Location history</li> 
@@ -176,7 +202,7 @@
                                                                 <li data-toggle="tooltip" data-placement="top" title="Monitor your kid’s chats on Facebook. Root is required for Android devices"><i class="icon-cancel"></i> Facebook Messages</li>
                                                                 <li data-toggle="tooltip" data-placement="top" title="View all the data ever stored on your kid’s device"><i class="icon-cancel"></i> Historical data</li> 
                                                                 <li data-toggle="tooltip" data-placement="top" title="Control devices remotely. Not supported: on Android 4.4+; “Wipe” function on iOS 8+."><i class="icon-cancel"></i> SMS commands</li>
-                                                                <li data-toggle="tooltip" data-placement="top" title="Keep track of each button your kid presses on his or her device"><i class="icon-cancel"></i> Keylogger</li>
+                                                                <li data-toggle="tooltip" data-placement="top" title="Keep track of each button your kid presses on his or her device"><i class="icon-cancel"></i> Keylogger</li>*}
                                                                                                                               
                                                                                                                      
                                                             </ul>
@@ -260,7 +286,33 @@
                                                             </div>
                                                            <div class="premium_fe">
                                                             <ul>
-                                                                <li data-toggle="tooltip" data-placement="top" title="View detailed data on incoming/outgoing calls: name, phone number, time and duration"><i class="icon-ok"></i> Calls history <span>(Unlimited)</span></li>
+                                                                
+                                                                <li data-toggle="tooltip" data-placement="top" title="View detailed data on incoming/outgoing calls: name, phone number, time and duration."><i class="icon-ok"></i> Calls history <span>(unlimited)</span></li>
+                                                                <li data-toggle="tooltip" data-placement="top" title="View text message content with detailed data including name, phone number and time."><i class="icon-ok"></i> SMS history <span>(unlimited)</span></li>
+                                                                <li data-toggle="tooltip" data-placement="top" title="Block calls from specific numbers."><i class="icon-ok"></i> Calls blocking </li>
+                                                                <li data-toggle="tooltip" data-placement="top" title="Block SMS from specific senders and/or containing specific keywords. Not available for Android 4.4 and newer versions"><i class="icon-ok"></i> SMS blocking </li>
+                                                                <li data-toggle="tooltip" data-placement="top" title="Track current location as well as the entire route history. Map view available."><i class="icon-ok"></i> Location history</li>
+                                                                <li data-toggle="tooltip" data-placement="top" title="Set specific zones and receive alerts once the target device leaves them or enters."><i class="icon-ok"></i> Geo-fences</li> 
+                                                                <li data-toggle="tooltip" data-placement="top" title="View contact list including names, addresses, numbers and emails."><i class="icon-ok"></i> Contacts</li>
+                                                                <li data-toggle="tooltip" data-placement="top" title="Monitor scheduled dates and events."><i class="icon-ok"></i> Calendar</li>
+                                                                <li data-toggle="tooltip" data-placement="top" title="View all visited websites. On iOS devices available for Safari browser only."><i class="icon-ok"></i> Browsing history</li>
+                                                                <li data-toggle="tooltip" data-placement="top" title="Block specific websites on a target device."><i class="icon-ok"></i> Websites blocking</li>
+
+                                                                <li data-toggle="tooltip" data-placement="top" title="View all websites visited and bookmarked as preferred ones."><i class="icon-ok"></i> Bookmarks</li> 
+                                                                <li data-toggle="tooltip" data-placement="top" title="View all photos stored on a device."><i class="icon-ok"></i> Photos</li>
+                                                                
+                                                                <li data-toggle="tooltip" data-placement="top" title="View all emails and detailed contact data. Rooting is required for Android devices."><i class="icon-ok"></i> Emails</li>
+                                                                <li data-toggle="tooltip" data-placement="top" title="Monitor, block or set time limits on all applications (games, services etc.) downloaded on a device."><i class="icon-ok"></i> Applications Management</li>
+                                                                <li data-toggle="tooltip" data-placement="top" title="View all videos stored on a device."><i class="icon-ok"></i> Videos</li>
+                                                                <li data-toggle="tooltip" data-placement="top" title="Track conversations via Skype, WhatsApp, Viber. Root is required for Android."><i class="icon-ok"></i> Viber/WhatsApp/Skype</li>
+                                                                <li data-toggle="tooltip" data-placement="top" title="Monitor posted images and comments in Instagram. Root is required for Android devices."><i class="icon-ok"></i> Instagram</li>
+                                                                <li data-toggle="tooltip" data-placement="top" title="Monitor chats on Facebook. Root is required for Android devices."><i class="icon-ok"></i> Facebook Messages</li>
+                                                                <li data-toggle="tooltip" data-placement="top" title="View all the previouse data ever stored on a device."><i class="icon-ok"></i> Historical data</li> 
+                                                                <li data-toggle="tooltip" data-placement="top" title="Control devices remotely. Not supported: on Android 4.4+; “Wipe” function on iOS 8+."><i class="icon-ok"></i> SMS commands</li>
+                                                                <li data-toggle="tooltip" data-placement="top" title="View every keystroke typed on a target device."><i class="icon-ok"></i> Keylogger</li>
+                                                                <li data-toggle="tooltip" data-placement="top" title="Monitoring of iPhones, iPads and iPods Touch without jailbreak.  View SMS, Calls, Contacts, Browser History, Bookmarks, Calendar events."><i class="icon-ok"></i> iCloud (<span class="fz13">jailbreak-free</span>)</li>
+                                                                
+                                                                {*<li data-toggle="tooltip" data-placement="top" title="View detailed data on incoming/outgoing calls: name, phone number, time and duration"><i class="icon-ok"></i> Calls history <span>(Unlimited)</span></li>
                                                                 <li data-toggle="tooltip" data-placement="top" title="View text message content with detailed data including name, phone number and time"><i class="icon-ok"></i> SMS history <span>(Unlimited)</span></li>
                                                                 <li data-toggle="tooltip" data-placement="top" title="Block SMS from specific senders. Not available for Android 4.4 and newer versions"><i class="icon-ok"></i> SMS blocking </li>
                                                                 <li data-toggle="tooltip" data-placement="top" title="Track current location as well as the entire route history of your children"><i class="icon-ok"></i> Location history</li> 
@@ -278,7 +330,8 @@
                                                                 <li data-toggle="tooltip" data-placement="top" title="Monitor your kid’s chats on Facebook. Root is required for Android devices"><i class="icon-ok"></i> Facebook Messages</li>
                                                                 <li data-toggle="tooltip" data-placement="top" title="View all the data ever stored on your kid’s device"><i class="icon-ok"></i> Historical data</li> 
                                                                 <li data-toggle="tooltip" data-placement="top" title="Control devices remotely. Not supported: on Android 4.4+; “Wipe” function on iOS 8+."><i class="icon-ok"></i> SMS commands</li>
-                                                                <li data-toggle="tooltip" data-placement="top" title="Keep track of each button your kid presses on his or her device"><i class="icon-ok"></i> Keylogger</li>
+                                                                <li data-toggle="tooltip" data-placement="top" title="Keep track of each button your kid presses on his or her device"><i class="icon-ok"></i> Keylogger</li>*}
+                                                            
                                                             </ul>
                                                             </div>
                                                         <div class="premium_h" id="foot_h3">

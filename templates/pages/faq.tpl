@@ -42,7 +42,7 @@
                                             
                                             <div class="row">
 							<div class="form">
-								<form action="" class="form-contact-us" name="send-mail-contact-us" method="POST">
+								<form action="/contact_us_send.html" class="form-contact-us" name="send-mail-contact-us" method="POST">
 									<fieldset>
 										<legend class="uppercase">Send Your Questions to Us</legend>
 										<div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3">
@@ -387,7 +387,7 @@
 						</div>
 						{*<div class="row">
 								<div class="form">
-                                                                    <form action="" method="POST" name="form-faq" class="form-faq">
+                                                                    <form action="/faq_send.html" method="POST" name="form-faq" class="form-faq">
 										<fieldset>
 											<legend>Have any Other Questions?</legend>
 											<div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3">
@@ -422,7 +422,7 @@
 										</fieldset>
 									</form>
 								</div>
-						</div> *}
+						</div>*} 
 					</div>
 				</div>
 			</div>

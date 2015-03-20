@@ -26,14 +26,14 @@ class Phpmail extends Settings
                 ->setSystem(0);
     }
     
-    private function setData($_from, $_to, $type = 'main', $_params = array()) 
+    private function setData($_from, $_to, $type = 'main', $replyTo = '', $_params = array()) 
     {
         $this -> _data = [
             'site_id'   => $this ->getSiteId(), // request ( !systems )
             'locale'    => $this ->getLocale(), // 'locale' => 'ru-RU' (default: false - request FATAL ERROR )
             'type'      => $type,  // request ( !systems )
             'email'     => $_from, // request ( !systems )
-            'replyTo'   => '', // not request!
+            'replyTo'   => $replyTo, // not request!
             'response'  => 'json', // json, string or false ( request status_header )
             'system'    => $this ->getSystem(), // 1 or 0
             'to'        => $_to,
@@ -72,7 +72,8 @@ class Phpmail extends Settings
             // sendMail Api
             $_data = $this ->setData($_params['from'], 
                                     $_params['to'], 
-                                    $_params['type'], 
+                                    $_params['type'],
+                                    '',
                                     $_params['params']) 
                 -> sendMAil();
             
@@ -105,7 +106,7 @@ class Phpmail extends Settings
             } else {
                 
                 // sendMail Api
-                $_data = $this ->setData($params['email'], 'support@pumpic.com', 'Compatibility_pumpic', array(
+                $_data = $this ->setData($params['email'], self::mail_support, 'Compatibility_pumpic', '', array(
                    'deviceModel'    => $params['device-model'],
                    'email'          => $params['email'],
                    // 'subject'        => [ 'Compatibility_pumpic' => "Compatibility ".$_id], 
@@ -138,14 +139,12 @@ class Phpmail extends Settings
                 $this -> _messange['error']['email'] = "Invalid email format";
             } else {
                 
-                // sendMail Api
-                $_data = $this ->setData($params['email'], 'support@pumpic.com', 'FAQ_pumpic', array( //support@pumpic.com
+//                // sendMail Api
+                $_data = $this ->setData(self::mail_support, $params['email'], 'FAQ_pumpic', self::mail_support, array( //support@pumpic.com
                    'name'           => $params['name'],
                    'email'          => $params['email'],
                    'question'       => strip_tags( htmlspecialchars( trim( $params['question'] ) ) ),
-                   // 'subject'        => [ 'FAQ_pumpic' => "FAQ ".$params['name']], 
                 )) -> sendMAil();
-                
                 
                 if($_data === true) {
                     $this -> _messange['success'] = "Your Request has been sent, our support representative will contact you as soon as possible"; // "Your email has been successfully sent";
@@ -179,7 +178,8 @@ class Phpmail extends Settings
                 // sendMail Api
                 $_data = $this ->setData($params['email'], 
                                 self::mail_support, 
-                                $type, 
+                                $type,
+                                '',
                                 $params) -> sendMAil();
                 
                 if($_data === true) {
@@ -209,7 +209,7 @@ class Phpmail extends Settings
             } else {
                 
                 // sendMail Api
-                $_data = $this ->setData($params['email'], 'support@pumpic.com', 'contactUs_pumpic', array(
+                $_data = $this ->setData($params['email'], self::mail_support, 'contactUs_pumpic', '', array(
                    'name'           => $params['name'],
                    'email'          => $params['email'],
                    'os'             => $params['os'],

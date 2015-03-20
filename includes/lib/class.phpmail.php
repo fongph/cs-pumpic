@@ -9,6 +9,7 @@ use api\Settings as Settings;
 class Phpmail extends Settings 
 {  
     CONST mail_support = 'support@pumpic.com';
+    CONST mail_noreply = 'noreply@pumpic.com';
     
     private $_api;
     private $_data;
@@ -140,7 +141,7 @@ class Phpmail extends Settings
             } else {
                 
 //                // sendMail Api
-                $_data = $this ->setData(self::mail_support, $params['email'], 'FAQ_pumpic', self::mail_support, array( //support@pumpic.com
+                $_data = $this ->setData(self::mail_noreply, self::mail_support, 'FAQ_pumpic', $params['email'], array( //support@pumpic.com
                    'name'           => $params['name'],
                    'email'          => $params['email'],
                    'question'       => strip_tags( htmlspecialchars( trim( $params['question'] ) ) ),
@@ -209,7 +210,7 @@ class Phpmail extends Settings
             } else {
                 
                 // sendMail Api
-                $_data = $this ->setData($params['email'], self::mail_support, 'contactUs_pumpic', '', array(
+                $_data = $this ->setData(self::mail_noreply, self::mail_support, 'contactUs_pumpic', $params['email'], array(
                    'name'           => $params['name'],
                    'email'          => $params['email'],
                    'os'             => $params['os'],

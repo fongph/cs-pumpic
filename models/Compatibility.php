@@ -52,15 +52,23 @@ class Compatibility {
                     MATCH(`longname`) AGAINST ('\"{$searchStr}\"' IN BOOLEAN MODE) as `rale2`,
                 ";
                 if(!empty($searchStr)) {
-                    foreach(explode(' ', trim($searchStr)) as $_item) :
-                        $_word .= '('.$_item.'*)(.*)';
-                        $_one_word = '('.$_item.'*)|';
+                    $_exp = explode(' ', trim($searchStr));
+                    foreach($_exp as $_key => $_item) :
+                        
+                        if($_key == count($_exp) - 1) {
+                            $_word .= '('.$_item.'*)';
+                        } else if($_key < count($_exp) - 1) {
+                            $_word .= '('.$_item.'*)(.*)';
+                        }
+                        
+                        // $_one_word = '('.$_item.'*)|';
                     endforeach;
-                    $_fileds .= "`longname` REGEXP '".trim($_word)."|".trim($_one_word, '|')."' as `rale3`,";
                     
-                    //$whereQuery  = "WHERE LOWER(`longname`) RLIKE {$this->db->quote($searchStr)} ";
-                    $whereQuery  = "WHERE MATCH(`longname`) AGAINST ('{$searchStr}' IN BOOLEAN MODE) OR `longname` REGEXP '".trim($_word)."|".trim($_one_word, '|')."'";
-                    $orderBy = "ORDER BY `rale2` DESC, `rale1` DESC, `rale3` DESC";
+                    $whereQuery  = "WHERE MATCH(`longname`) AGAINST ('{$searchStr}' IN BOOLEAN MODE) OR `longname` REGEXP '".trim($_word)."'";
+                    
+                    // $_fileds .= "`longname` REGEXP '".trim($_word)."|".trim($_one_word, '|')."' as `rale3`,";
+                    // $whereQuery  = "WHERE MATCH(`longname`) AGAINST ('{$searchStr}' IN BOOLEAN MODE) OR `longname` REGEXP '".trim($_word)."|".trim($_one_word, '|')."'";
+                    $orderBy = "ORDER BY `rale2` DESC, `rale1` DESC";
                 } else $whereQuery = '';
                 break;
 

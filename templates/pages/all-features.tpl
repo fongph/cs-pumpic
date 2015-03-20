@@ -918,7 +918,7 @@
                                             <li>email correspondence history and prevent you children</li>
                                             <li>from ambiguous communications and online predators.</li>
                                         </ul>*}
-                                        <div><a class="btn-orange" href="http://demo.{$domain}">View Demo</a></div>
+                                        <div><a class="btn-orange" href="http://demo.{$domain}/setDevice/126">View Demo</a></div>
                                         <label class="color-orange">(no registration required)</label>
                                     </div>
                                 </div>

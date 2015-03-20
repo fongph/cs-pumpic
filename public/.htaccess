@@ -3,6 +3,7 @@ RewriteBase /
 RewriteCond %{HTTP_HOST} ^www\.pumpic\.com
 RewriteRule ^(.*)$ http://pumpic.com/$1 [NC,R=301,L]
 
+RewriteRule ^GPS-and-geofencing\.html$ gps-and-geofencing\.html [L,R=301]
 RewriteRule ^pricing\.html$ store\.html [L,R=301]
 RewriteRule ^index\.html$ http://pumpic.com/ [L,R=301]
 

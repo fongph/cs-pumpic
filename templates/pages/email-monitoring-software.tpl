@@ -54,7 +54,13 @@
             <li>And only 1 in 3 parents with online access actively protect their kids with filtering or blocking software</li>
         </ul>
 
-        <p>The Internet is the easiest way for online predators, web swindlers and cyberbullies to contact your children. By making friendship with your kids via social media, it is not hard to find out their email addresses, which is the key to personal data and identity theft. Unfortunately, not many parents realize how important web protection is. These days’ online reality shifts the world around, making new rules for us. If you really want to secure your kids’ happiness, it is for you to consider these rules.</p>
+        <p>The Internet is the easiest way for online predators, web swindlers and cyberbullies to contact your children. By making friendship with your kids via social media, it is not hard to find out their email addresses, which is the key to personal data and identity theft. Unfortunately, not many parents realize how important web protection is. These days’ online reality shifts the world around, making new rules for us. If you really want to secure your kids’ happiness, it is for you to consider these rules:</p>
+
+        <ul>
+            <li>view sent and received emails</li>
+            <li>keep track of mailing contact list</li>
+            <li>follow online registrations</li>
+        </ul>
 
         {* Template: BLOCK IMAGE
             blockAlign (text): позиция блока с изображением. (left|center|right) *default: center

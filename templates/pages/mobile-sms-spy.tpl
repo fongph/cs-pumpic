@@ -55,8 +55,14 @@
             <li>60% of all criminal cases among teenagers were planned through SMS and IM chats</li>
         </ul>
 
-        <p>Pumpic parental text monitoring app was designed to help keep your children safe by tracking incoming and outgoing SMS. The app allows you to view saved and deleted messages as well as block specific contacts from reaching your kids in future.</p>
+        <p>Pumpic parental text monitoring app was designed to help keep your children safe by tracking incoming and outgoing SMS. The app allows you to view saved and deleted messages as well as block specific contacts from reaching your kids in future:</p>
 
+        <ul>
+            <li>monitor SMS messages sent and received</li>
+            <li>control contacts, block misgiving senders</li>
+            <li>prevent children from bullies and online predators</li>
+        </ul>    
+        
         {* Template: BLOCK IMAGE
             blockAlign (text): позиция блока с изображением. (left|center|right) *default: center
             

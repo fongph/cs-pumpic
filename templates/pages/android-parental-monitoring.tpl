@@ -52,7 +52,13 @@
             <li>23% of teenagers report that they feel addicted to games on mobile devices</li>
             <li>69% of boys and girls under 18 have experienced cyberbullying via mobile phones</li>
 		</ul>
-        <p>As a parent you should always keep the situation under control, be aware of possible threats coming from the Internet, how to resist it, and if a reliable Android parental monitoring app can be the way out.</p>
+        <p>As a parent you should always keep the situation under control, be aware of possible threats coming from the Internet, how to resist it, and if a reliable Android parental monitoring app can be the way out:</p>
+
+        <ul>
+            <li>control cell phone usage</li>
+            <li>follow online activity</li>
+            <li>track routes and location</li>
+        </ul>
 
         {* Template: BLOCK IMAGE
             blockAlign (text): позиция блока с изображением. (left|center|right) *default: center

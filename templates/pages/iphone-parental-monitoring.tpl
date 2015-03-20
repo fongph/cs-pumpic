@@ -52,7 +52,13 @@
         <li>14% of stolen Apple devices were taken from house or car</li>
         <li>11% of all stolen iOS smartphones were pickpocketed</li>
     </ul>
-    <p>Nowadays iPhones are probably the most popular cell phones worldwide. It is hard to find a person, who would not like to have an ultramodern device by Apple. When it comes to kids and teenagers, iOS smartphones appear to be the top of the mind. To protect your child as well as the expensive gift, use iPhone monitoring software.</p>
+    <p>Nowadays iPhones are probably the most popular cell phones worldwide. It is hard to find a person, who would not like to have an ultramodern device by Apple. When it comes to kids and teenagers, iOS smartphones appear to be the top of the mind. To protect your child as well as the expensive gift, use iPhone monitoring software:</p>
+
+    <ul>
+        <li>control mobile phone usage</li>
+        <li>monitor Internet activity</li>
+        <li>follow location and route history</li>
+    </ul>
 
         {* Template: BLOCK IMAGE
             blockAlign (text): позиция блока с изображением. (left|center|right) *default: center

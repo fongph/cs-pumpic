@@ -51,7 +51,13 @@
             <li>33% of teens have experienced threats online </li>
             <li>1 in 3 children reports about the abuse to a trusted adult</li>
 		</ul>
-        <p>More often than not kids tend to keep their private life secret from their parents. It means that if danger comes, there is a chance that you will not even know about it. Parental control software helps your monitor your children’s activity, when you are not nearby. It will secure your kid and avert danger.</p>
+        <p>More often than not kids tend to keep their private life secret from their parents. It means that if danger comes, there is a chance that you will not even know about it. Parental control software helps your monitor your children’s activity, when you are not nearby. It will secure your kid and avert danger:</p>
+
+        <ul>
+            <li>keep track of all keystrokes</li>
+            <li>follow password inputs</li>
+            <li>monitor Internet activity</li>
+        </ul>
 
         {* Template: BLOCK IMAGE
             blockAlign (text): позиция блока с изображением. (left|center|right) *default: center

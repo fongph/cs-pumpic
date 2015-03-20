@@ -54,7 +54,7 @@
                                     {/if}    
 
                                     {if isset($promoBuyBlock) && $promoBuyBlock == 'yes'}
-                                        {include './blocks/block-quick-and-simple.tpl'}
+                                        {include './blocks/include-blocks.tpl'}
                                         {*{include './blocks/block-trial.tpl'}*}
                                     {/if}    
 

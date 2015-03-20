@@ -19,17 +19,17 @@
         
         <div id="block-fields">
             <section>
-                <label for="name">Name*</label>
+                <label for="name">Your Name*</label>
                 <input id="name" class="required" type="text" name="name" value="" />
             </section>
             <section>
-                <label for="email">Email*</label>
+                <label for="email">Your Email*</label>
                 <input id="email" class="required" type="text" name="email" value="" />
                 {*<label class="error">Password will be send <br />to you your email</label>*}
                 <label class="info-email">The password will be sent to your email </label>
             </section>
             <section>
-                <label for="phone">Phone</label>
+                <label for="phone">Your Phone</label>
                 <input type="text" name="phone" value="" />
             </section>
             <div class="block-captcha">

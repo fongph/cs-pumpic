@@ -75,7 +75,12 @@ $config = array(
             
                 // devices
                 'compatibility/android-devices'   => 'compatibility_search.php',
-                'compatibility/ios-devices'       => 'compatibility_search.php',  
+                'compatibility/ios-devices'       => 'compatibility_search.php', 
+            
+                // iphone-tracking-software
+                'iphone-tracking-software.html'   => 'iphone_tracking_software.php',
+                'iphone-with-jailbreak-monitoring.html' => 'iphone_with_jailbreak_monitoring.php',
+                'icloud-iphone-without-jailbreak-monitoring.html' => 'icloud_iphone_without_jailbreak_monitoring.php'
 	),
     
     'db_phones' => array(

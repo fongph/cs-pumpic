@@ -10,6 +10,7 @@
         <link href="{$css}/settings.css?{style_cache data='2015-02-09'}" rel="stylesheet">
         
 	<link href="{$css}/all.css?{style_cache data='2015-02-09'}" rel="stylesheet">
+        <link href="{$css}/all23032015.css" rel="stylesheet">
         <link href="{$css}/parent.css?{style_cache data='2015-02-09'}" rel="stylesheet">
         
         <!-- landing -->

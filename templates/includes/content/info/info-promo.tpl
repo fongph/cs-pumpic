@@ -32,6 +32,14 @@
                                         {/if}
                                     </p>
 
+                                    {if $os_versions == 'os_v2'}
+                                    <ul class="compatibility compatibility-lg">
+                                        <li><i class="icon-apple"></i> iOS 6.0 – 8.2</li>
+                                        <li><i class="icons ico-iphones"></i>iPhones</li>
+                                        <li><i class="icons ico-ipads"></i>iPads</li>
+                                        <li><i class="icons ico-ipods"></i>iPods Touch</li>
+                                    </ul>
+                                    {else}    
                                     <ul class="compatibility">
                                         <li><i class="icon-android"></i> (2.2 - 5.1)</li>
                                         <li><i class="icon-apple"></i> (6.0 - 8.2)</li>
@@ -39,6 +47,7 @@
                                             <i class="i-header-info"></i> <a href="/compatibility/">platform compatibility</a>
                                         </li>
                                     </ul>
+                                    {/if}
 
                                     {if 0 && isset($listText) && $listText != ""}
 
@@ -56,6 +65,11 @@
                                     {if isset($promoBuyBlock) && $promoBuyBlock == 'yes'}
                                         {include './blocks/include-blocks.tpl'}
                                         {*{include './blocks/block-trial.tpl'}*}
+                                    {/if}   
+                                    
+                                    {if isset($iCloudSolution) && $iCloudSolution == 'yes'}
+                                        {include './blocks/block-icloud-solution.tpl'}
+                                        {*{include './blocks/block-trial.tpl'}*}
                                     {/if}    
 
                                 </div>
@@ -67,7 +81,7 @@
                         </td>
                         
                         {if in_array('right', $position)}
-                        <td class='col-xs-sm-12 col-s-sm-12 col-sm-12 col-md-5 col-lg-5'>
+                        <td class='col-xs-sm-12 col-s-sm-12 col-sm-12 col-md-5 col-lg-5 {if $imgVerticalAlign == 'bottom'}vertical-aligh-bottom{/if}'>
                             <div class="visual-images-right">
                                  <img src="{$img}/{$imgUrl}" alt="{$imgAlt}" class="visual-img-pc">      
                             </div>

@@ -30,7 +30,7 @@
                             <br>Control cell phone use. Follow location and online activity"
             os_versions = "os_v2"                
             promoBuyBlock = "no"
-            iCloudSolution = 'yes'
+            iCloudSolution = 'no'
         }
         
         <!-- BLOCK ICLOUD SOLUTION -->

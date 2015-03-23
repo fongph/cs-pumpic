@@ -196,7 +196,7 @@
                                   </li>
                                   <li href="#" class="list-group-item">
                                     <p class="list-group-item-text">
-                                        <span class="title"><i class="icon-ok"></i> iCloud password not - <span class="text-success">Required</span></span>
+                                        <span class="title"><i class="icon-ok"></i> iCloud password - <span class="text-success">Required</span></span>
                                         <span>You need to know iCloud password of the target iOS device. </span>
                                     </p>
                                   </li>

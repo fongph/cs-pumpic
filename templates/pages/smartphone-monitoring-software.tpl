@@ -31,7 +31,8 @@
         
         {include file='../includes/content/plans.tpl' }
         
-        {include file='../includes/content/secures.tpl' blockBg="light"}
+        {include file='../includes/content/secures-parental.tpl' blockBg="light"}
+
         {include file='../includes/content/features-table.tpl'
         title = "Top Parental Control Features"
         description = "Pumpic is a new generation of mobile phone tracking software, which comes with a large range of monitoring functions. They will help you to remotely keep track of your child's cell phone activity. <br/><br/>

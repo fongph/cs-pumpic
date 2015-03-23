@@ -47,18 +47,20 @@
                 blockBg="light"
                 imgUrl = "icons/ipad_android.png"
                 imgAlt = "Android"
-                title = "Easy-to-Use Control Panel"
-                description = "Try Control Panel demo to see Pumpic for Android in use.
-                               <br />Buy Pumpic to keep your kids safe and secured right now."
+                title = "Remote Android Monitoring"
+                description = "Right after installing Pumpic on Android phone or tablet, all the data from the target device will be sent directly to your Control Panel. It can be accessed from any browser and any device, including PCs, smartphones and tablets. In Control Panel you can review the information collected, set restrictions and block some of activities on the target Android device."
         }
 
-        {include file='../includes/content/why-pumpic.tpl'}
-
-
         {include file='../includes/content/features-table.tpl' 
-                blockBg="light"
-        }                   
+                blockBg="dark"
+        } 
 
+        {include file='../includes/content/how-get-pumpic.tpl'
+            title = ""
+            style = "static"
+            blockBg="light"
+
+        } 
 
         {include file='../includes/main/main-testimonials.tpl'} 
 

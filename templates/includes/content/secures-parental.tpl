@@ -1,0 +1,40 @@
+<div class="{if $blockBg}{$blockBg}{else}dark{/if}">
+        <div class="container">
+                <h2 class="text-center">{if $title}{$title}{else}Track Digital Footprint of Your Child{/if}</h2>
+                <div class="row">
+                        <div class="col-sm-4 col-md-4 col-lg-4">
+                                <div class="feature">
+                                        <img src="{$img}/icons/icon-online-activity.png" alt="monitor online activity">
+                                        <h3>Follow online activity</h3>
+                                        <ul class="feature_list">
+                                                <li>Monitor bookmarks & browser</li>
+                                                <li>Block websites</li>
+                                                <li>Read posted comments</li>
+                                        </ul>
+                                </div>
+                        </div>
+                        <div class="col-sm-4 col-md-4 col-lg-4">
+                                <div class="feature">
+                                        <img src="{$img}/icons/icon-mobile-secure.png" alt="cell phone monitoring">
+                                        <h3>Social Apps & Messengers</h3>
+                                        <ul class="feature_list">
+                                                <li>Instagram photos & comments</li>
+                                                <li>Facebook and Skype chats</li>
+                                                <li>Text messages (SMS, WhatsApp, Viber)</li>
+                                        </ul>
+                                </div>
+                        </div>
+                        <div class="col-sm-4 col-md-4 col-lg-4">
+                                <div class="feature">
+                                        <img src="{$img}/icons/icon-track-kids.png" alt="remote mobile monitoring">
+                                        <h3>Track kids remotely</h3>
+                                        <ul class="feature_list">
+                                                <li>Keep track of GPS location</li>
+                                                <li>Follow entire route history</li>
+                                                <li>Set geo-fences</li>
+                                        </ul>
+                                </div>
+                        </div>
+                </div>
+        </div>
+</div>

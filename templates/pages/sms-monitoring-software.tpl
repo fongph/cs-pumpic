@@ -41,52 +41,70 @@ View your kid’s text message history remotely."
         {include file='../includes/content/ipad.tpl' 
         blockBg="dark"
         imgUrl = "icons/lending_features_sms.png"
-        imgAlt = "SMS monitoring"
-        title = "Sms Monitoring"
-        description = "Try Control Panel demo to see Pumpic SMS Monitoring in use.<br />
-Buy Pumpic to protect your kids and view their SMS right now."
-}
-
-		{include file='../includes/content/why-pumpic.tpl' 
-                blockBg="light"
+        imgAlt = "Easy Texts monitoring"
+        title = "Easy-to-Use Control Panel"
+        description = "Right after installing Pumpic, all the data from the target mobile phone will be sent to your Control Panel. It can be accessed from any browser and any device, including PCs, smartphones and tablets. In Control Panel you can not only view the information, but also set restrictions and block some of activities on the target device. "
         }
-  
-        {include file='../includes/main/main-testimonials.tpl' 
-                blockBg="dark"
-        }       
-        
-<div class="light">
+        <div class="light">
         <div class="container">
-                <h2 class="text-center">How Pumpic Secures Your Kid</h2>
+                <h2 class="text-center">Text Messages Tracking with Pumpic</h2>
                 <div class="row">
                         <div class="col-sm-4 col-md-4 col-lg-4">
                                 <div class="feature">
                                         <img src="/images/icons/icon-monitor-text-messages.png" alt="">
-                                        <h3>Monitor text messages</h3>
-                                        <p>Pumpic allows you to keep track of all SMS ever sent or received by your child. From now on, you will be aware of all your kids’ text communications. View the history of text messages and block unwelcome senders.</p>
+                                        <h3>Monitor SMS</h3>
+                                        <ul class="feature_list">
+                                                <li>Track in- and outbound SMS</li>
+                                                <li>iMessages supported</li>
+                                                <li>View even deleted texts</li>
+                                        </ul>
+                                        
                                 </div>
                         </div>
                         <div class="col-sm-4 col-md-4 col-lg-4">
                                 <div class="feature">
                                         <img src="/images/icons/icon-follow-sms-gistory.png" alt="">
-                                        <h3>Follow SMS history</h3>
-                                        <p>View the entire SMS history from the day your child started using the phone. No matter whether messages were deleted or not, Pumpic will show them to you. Monitor all files attached to SMS messages.</p>
+                                        <h3>Monitor chats</h3>
+                                        <ul class="feature_list">
+                                                <li>Viber, Whatsapp, Skype</li>
+                                                <li>Facebook Messenger</li>
+                                                <li>Instagram comment</li>
+                                        </ul>
+                                        
                                 </div>
                         </div>
                         <div class="col-sm-4 col-md-4 col-lg-4">
                                 <div class="feature">
                                         <img src="/images/icons/icon-block-incoming-sms.png" alt="">
                                         <h3>Block incoming SMS</h3>
-                                        <p>Pumpic allows you to block text messages sent by anyone who seems suspicious. Follow each SMS and block those you wish your kid would never receive. Prevent ambiguous communication at an early stage.</p>
+                                        <ul class="feature_list">
+                                                <li>Block specific phone numbers</li>
+                                                <li>Block by list of bad words</li>
+                                                <li>Limit daily amount of sent SMS<br/> (coming soon)</li>
+                                        
+                                        </div>
                                 </div>
                         </div>
                 </div>
         </div>
-</div>
 
-        {include file='../includes/content/features-table.tpl' 
+        {include file='../includes/content/features-table.tpl'
+        title = "All Pumpic Features"
+        description = "Pumpic app can track a lot more than just text messages and online chats. Check out other amazing features for remote cell phone monitoring:"
+        blockBg="dark"
+        } 
+
+        {include file='../includes/content/how-get-pumpic.tpl'
+            title = ""
+            style = "static"
+            blockBg="light"
+
+        }   
+
+        {include file='../includes/main/main-testimonials.tpl' 
                 blockBg="dark"
-        }  
+        }
+
 
         {*include file='../includes/content/banner-promo.tpl'*}
         {*{include file='../includes/content/banners/banner-promo-trial.tpl'}*}

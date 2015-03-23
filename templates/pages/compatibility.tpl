@@ -169,7 +169,7 @@
                                                                                                 
                                                                                                 {*<p class="bg-danger"></p>*}
                                                                                         </div>
-                                                                                        <div class="form-group has-error">
+                                                                                        <div class="form-group {*has-error*}">
                                                                                                 <input id="email" type="email" 
                                                                                                        class="form-control required" 
                                                                                                        name="email"

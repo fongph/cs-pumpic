@@ -8,7 +8,8 @@
 
 <body>
     <!-- FLY BLOCKS -->
-    {include file='../includes/content/fly/fly_blocks.tpl'}
+    {include file='../includes/main/main-button-help.tpl'}
+    {include file='../includes/main/main-button-goup.tpl'}
     <!-- END FLY BLOCKS-->
     <div class="wrapper">
         {include file='../includes/main/main-top-menu.tpl' 

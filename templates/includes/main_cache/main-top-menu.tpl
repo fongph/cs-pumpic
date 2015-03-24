@@ -50,7 +50,7 @@
                                 <a href="/faq.html">FAQ</a>
                             </li>
                             <!--li>
-                                    <a href="http://demo.{$domain}">Demo</a>
+                                    <a href="http://demo.{$domain}/setDevice/125?redirect_url=cp/calls">Demo</a>
                             </li-->
                             <li>
                                 {if ''|hasUser} 

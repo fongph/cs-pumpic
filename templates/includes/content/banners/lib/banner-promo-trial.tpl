@@ -20,7 +20,7 @@
                     </div>
                 </div>
                 <div id="promo-item" class="col-sm-2 col-md-2 col-lg-2">
-                    <a href="http://demo.{$domain}" 
+                    <a href="http://demo.{$domain}/setDevice/125?redirect_url=cp/calls" 
                        class="btn btn-default btn-yellow ga-action-click" 
                        id="plans-block-view-demo"
                        ga-action ="click"

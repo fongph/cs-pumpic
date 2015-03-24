@@ -10,7 +10,7 @@
             </a>
         </li>
         <li>
-            <a href="http://demo.{$domain}" class="featured-link link-hl ga-action-click" id="plans-block-view-demo"
+            <a href="http://demo.{$domain}/setDevice/125?redirect_url=cp/calls" class="featured-link link-hl ga-action-click" id="plans-block-view-demo"
                ga-action ="click"
                ga-category="demo link"
                ga-label="prices"

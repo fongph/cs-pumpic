@@ -211,7 +211,7 @@
                                 <ul>
                                     <li>
                                      <a class="btn-orange ga-action-click btn-view-demo" 
-                                       href="http://demo.{$domain}/"
+                                       href="http://demo.{$domain}/setDevice/125?redirect_url=cp/calls"
                                         ga-action ="click"
                                         ga-category="techological"
                                         ga-label="demo"

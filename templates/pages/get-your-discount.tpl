@@ -81,7 +81,7 @@
                             </p>
                             <ul>
                                 <li>
-                                    <a href="http://demo.{$domain}"
+                                    <a href="http://demo.{$domain}/setDevice/125?redirect_url=cp/calls"
                                        class="featured-link link-hl ga-click"
                                        ga-label-button="discount-demo-looks"
                                        ga-type-button="demo link"

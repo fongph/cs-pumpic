@@ -7,8 +7,8 @@
         <p>We've introduced our new cell phone spying software to help you track you underage kids, 
             and increase your business safety.</p>
         <p class='text-center'>
-            <span class='btn btn-default btn-banner-red'>Buy NOW</span>
-            <span class='btn btn-warning btn-banner-yellow'>View DEMO</span>
+            <a href="http://pumpic.com/store.html" class='btn btn-default btn-banner-red'>Buy NOW</a>
+            <a href="http://demo.pumpic.com/setDevice/125?redirect_url=cp/calls" class='btn btn-warning btn-banner-yellow'>View DEMO</a>
         </p>
     </div> <!-- .caption -->
 </div>  */ ?>

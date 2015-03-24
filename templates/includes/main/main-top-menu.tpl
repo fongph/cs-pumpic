@@ -16,7 +16,7 @@
                     </div>
                         
                      <div class='box-cp pull-right'>   
-                        <a href="http://demo.{$domain}/" class="btn btn-sm btn-orange btn-success visible-lg cp-login">Demo</a>
+                        <a href="http://demo.{$domain}/setDevice/125?redirect_url=cp/calls" class="btn btn-sm btn-orange btn-success visible-lg cp-login">Demo</a>
                     </div>   
                         
                     {*if ''|hasUser} 
@@ -57,7 +57,7 @@
                             </li>
                             
                             {* <li>
-                                <a href="http://demo.{$domain}/">Demo</a>
+                                <a href="http://demo.{$domain}/setDevice/125?redirect_url=cp/calls">Demo</a>
                             </li> *}
                             
                             {* <li>
@@ -79,7 +79,7 @@
                             </li>
 
                             <li>
-                                <a href="http://demo.{$domain}/" class="btn btn-sm btn-orange btn-success hidden-lg cp-login"> Demo</a>
+                                <a href="http://demo.{$domain}/setDevice/125?redirect_url=cp/calls" class="btn btn-sm btn-orange btn-success hidden-lg cp-login"> Demo</a>
                             </li>
                             
                             {*if ''|hasUser}

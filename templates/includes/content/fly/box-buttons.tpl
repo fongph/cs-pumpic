@@ -20,7 +20,7 @@
            {if $buttonViewDemo == "yes"}
               
             <!-- button 'View Demo' -->
-            <a href="http://demo.{$domain}" 
+            <a href="http://demo.{$domain}/setDevice/125?redirect_url=cp/calls" 
                class="btn-orange ga-action-click fly-button-item" 
 
                ga-action ="click"

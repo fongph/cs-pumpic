@@ -25,7 +25,7 @@
                                     <ul>
                                         {if $showViewDemo eq "true"}
                                         <li>
-                                            <a href="http://demo.{$domain}"
+                                            <a href="http://demo.{$domain}/setDevice/125?redirect_url=cp/calls"
                                                class="btn-orange featured-link link-hl ga-action-click"
                                                 ga-action ="click"
                                                 ga-category="demo link"

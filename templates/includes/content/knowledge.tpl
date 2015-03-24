@@ -45,7 +45,7 @@
                                 <section>
                                     <span class="img"><a href="http://pumpic.com/security/"><img src="{$img}/icons/icon-knowledge-4.png" alt=""></a></span>
                                     <label class="knowledge-title text-center"><a href="http://pumpic.com/security/">Blog</a></label>
-                                    <p class="text-center">We update our <a href="http://pumpic.com/security/">blog</a> weekly. Check out the <a href="#">articles' archive</a> or take a look at the last 5 articles:</p>
+                                    <p class="text-center">We update our <a href="http://pumpic.com/security/">blog</a> weekly. Check out the articles' archive or take a look at the last 5 articles:</p>
                                     <ul>
                                         <li><a href="http://pumpic.com/security/how-to-tell-if-your-kid-has-online-addiction/">Pros and cons of Facebook for children</a></li>
                                         <li><a href="http://pumpic.com/security/is-facebook-a-secure-place-for-your-child/">Best smartphones for children on 2014</a></li>

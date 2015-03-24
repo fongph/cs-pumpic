@@ -38,7 +38,7 @@
                 <img src="{$img}/testimonials/testimonials_new_2.png" alt="" class="testimonial-photo">
                 <div class="testimonial-text">
                         <h4>Karen and Mike – parents of a 12-year-old daughter</h4>
-                        <p>“Our daughter was acting weird after we moved to another state. When we installed Pumpic on her iPhone, we found that she was bullied by her classmate on Facebook. We gathered with teachers and parents and talked the whole thing out. Thank you!”</p>
+                        <p>“Our daughter was acting weird after we moved to another state. When we installed Pumpic on her iPhone, we found out that she was bullied by her classmate on Facebook. We gathered with teachers and parents and talked the whole thing out. Thank you!”</p>
                 </div>
         </div>
         <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
@@ -63,7 +63,7 @@
                 <img src="{$img}/testimonials/testimonials_new_2.png" alt="" class="testimonial-photo">
                 <div class="testimonial-text">
                         <h4>Karen and Mike – parents of a 12-year-old daughter</h4>
-                        <p>“Our daughter was acting weird after we moved to another state. When we installed Pumpic, we found that she was bullied by her classmate on Facebook. We gathered with teachers and parents and talked the whole thing out. Thank you!”</p>
+                        <p>“Our daughter was acting weird after we moved to another state. When we installed Pumpic, we found out that she was bullied by her classmate on Facebook. We gathered with teachers and parents and talked the whole thing out. Thank you!”</p>
                 </div>
         </div>
         <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">

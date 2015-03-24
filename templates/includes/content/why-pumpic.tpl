@@ -6,7 +6,7 @@
                 <div class="row">
                     <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
                         <h3 class="text-center"><img src="{$img}/icons/icon-easy-to-use.png" alt=""> Easy to use</h3>
-                        <p class="text-center">Pumpic is a feature-rich mobile monitoring software, which will help you take care of your children remotely. More than 20 minitoring features gathered in Pumpic app.<br/><br/>Control panel has a user-friendly design and does not require specific technical skills.</p>
+                        <p class="text-center">Pumpic is a feature-rich mobile monitoring software, that will help you take care of your children remotely. More than 20 minitoring features gathered in Pumpic app.<br/><br/>Control panel has a user-friendly design and does not require specific technical skills.</p>
                     </div>
                     <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
                         <h3 class="text-center"><img src="{$img}/icons/ico-easy-to-install.png" alt=""> Easy to install</h3>
@@ -14,7 +14,7 @@
                     </div>
                     <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
                         <h3 class="text-center"><img src="{$img}/icons/ico-easy-to-contact.png" alt=""> Easy to contact</h3>
-                        <p class="text-center">Pumpic application has user-friendly interface, which makes monitoring process more than simple. Enter your Control Panel and see all the data from the target device in a readable form.<br/><br/>Feel free to contact our Support Team at any time, for any reason.</p>
+                        <p class="text-center">Pumpic application has user-friendly interface, which makes the monitoring process more than simple. Enter your Control Panel and see all the data from the target device in a readable form.<br/><br/>Feel free to contact our Support Team at any time, for any reason.</p>
                     </div>
                 </div>
             </div>

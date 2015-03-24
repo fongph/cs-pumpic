@@ -35,8 +35,8 @@
 
         {include file='../includes/content/features-table.tpl'
         title = "Top Parental Control Features"
-        description = "Pumpic is a new generation of mobile phone tracking software, which comes with a large range of monitoring functions. They will help you to remotely keep track of your child's cell phone activity. <br/><br/>
-        Just to remind you of Pumpic best features: monitor calls and text messages (even deleted ones); tack GPS location (current and route history); view internet browsing history, bookmarks and applications; follow online activity, including social networks, IM chats and emails; view photos and videos shot or downloaded from the Internet. And even more: block SMS containing bad words or threats; block inappropriate web sources and applications; use offline SMS commands to control the target device remotely; track each button pressed with keylogger function."
+        description = "Pumpic is a new generation of mobile phone tracking software that comes with a large range of monitoring functions. They will help you to remotely keep track of your child's cell phone activity.<br/><br/>
+        Pumpic’s best features include the ability to monitor calls and text messages (even deleted ones); track GPS location (current and route history); view Internet browsing history, bookmarks and applications; follow online activity, including social networks, IM chats and emails; and view photos and videos shot or downloaded from the Internet. And Pumpic does even more: it blocks SMS containing bad words or threats; blocks inappropriate web sources and applications; uses offline SMS commands to control the target device remotely; and tracks each button pressed with a keylogger function."
         blockBg="dark"
         } 
     

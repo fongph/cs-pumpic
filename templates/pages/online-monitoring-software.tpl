@@ -43,14 +43,14 @@ Monitor mobile device remotely with Pumpic."
         
 <div class="{if $blockBg}{$blockBg}{else}dark{/if}">
         <div class="container">
-                <h2 class="text-center">Apple and Android Mobile Phones Monitoring</h2>
+                <h2 class="text-center">Apple and Android Mobile Phone Monitoring</h2>
                 <div class="row">
                         <div class="col-sm-4 col-md-4 col-lg-4">
                                 <div class="feature">
                                         <img src="{$img}/icons/icon-mobile-secure.png" alt="">
                                         <h3>Monitor cell phone usage</h3>
                                         <ul class="feature_list">
-                                                <li>Track in and outbound calls</li>
+                                                <li>Track inbound and outbound calls</li>
                                                 <li>Monitor and block SMS</li>
                                                 <li>Track contacts and calendar</li>
                                         </ul>
@@ -72,7 +72,7 @@ Monitor mobile device remotely with Pumpic."
                                         <img src="{$img}/icons/icon-track-kids.png" alt="">
                                         <h3>Control the device remotely</h3>
                                         <ul class="feature_list">
-                                                <li>Use SMS commands to control</li>
+                                                <li>Use SMS commands to control the device </li>
                                                 <li>Lock and wipe the device remotely</li>
                                                 <li>Keep track of location and route history</li>
                                         </ul>
@@ -92,7 +92,7 @@ Monitor mobile device remotely with Pumpic."
                 <div class="row">
                     
                     <div id="table-container" class="table-col-3 table-md-col-3 table-sm-col-3">
-                        <article class="text-center">Pumpic is reasonably improved mobile phone tracking software, which comes with a large range of monitoring functions. They will help you keep track of the target device quickly and quite.</article>
+                        <article class="text-center">Pumpic is a multifeatured mobile phone tracking software that comes with a large range of monitoring functions. They will help you keep track of the target device quickly and quietly.</article>
                         <section>
                             <div class="tab col-item-3 col-md-item-3 col-sm-item-3">
                                 <ul>
@@ -137,8 +137,7 @@ Monitor mobile device remotely with Pumpic."
                 imgUrl = "parental_control/ipad.png"
                 imgAlt = "Cell phone monitoring"
                 title = "Easy-to-Use Control Panel"
-                description = "Try Control Panel demo to see Pumpic mobile monitoring app in use.
-                               <br/>Buy Pumpic to keep track of the target device remotely."
+                description = "Right after installing Pumpic, all the data from the target mobile phone will be sent to your Control Panel. It can be accessed from any browser and any device, including PCs, smartphones and tablets. In Control Panel you can not only view the information, but also set restrictions and block some of activities on the target device."
 
         }
 <div class="{if $blockBg}{$blockBg}{else}light{/if}">
@@ -170,29 +169,30 @@ Monitor mobile device remotely with Pumpic."
  {include file='../includes/prevent-online-dangers/how-pumpic.tpl' 
              blockBg="dark"
         }
+
 <div class="{if $blockBg}{$blockBg}{else}light{/if}">
     <div class="container">
-            <h2 class="text-center testimonial-title">Testimonials:</h2>
+            <h2 class="text-center testimonial-title">Trusted by Over 10 000 Customers Worldwide:</h2>
             <div class="row">
                     <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
                             <img src="{$img}/testimonials/testimonials_new_1.png" alt="" class="testimonial-photo">
                             <div class="testimonial-text">
                                     <h4>Martha T.</h4>
-                                    <p>“I’ve lost my cell phone a few weeks ago. I didn’t want anyone, who would find it to see the information stored on the device, so I quickly wiped everything and locked it. Then I used GPS tracking to find out where it was. I was very happy to see that my phone was still at the parking, where I left my car. Thanks Pumpic for a great help.”</p>
+                                    <p>“I lost my cell phone a few weeks ago. I didn’t want anyone, who would find it to see the information stored on the device, so I quickly wiped everything and locked it. Then I used GPS tracking to find out where it was. I was very happy to see that my phone was still at the parking lot, where I left my car. Thanks, Pumpic, for the great help.”</p>
                             </div>
                     </div>
                     <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
                             <img src="{$img}/testimonials/testimonials_new_2.png" alt="" class="testimonial-photo">
                             <div class="testimonial-text">
                                     <h4>Sarah H. and Mathew H.</h4>
-                                    <p>“We suspected our son in skipping classes, so we installed Pumpic on his smartphone. We checked his SMS and found out that our son was going to visit his best friend at the time, when he was supposed to be at school. The next day we checked his location at the appointed time and saw that he was not at school. Since then Pumpic is our helping hand in bringing our son up.”</p>
+                                    <p>“We suspected our son of skipping classes, so we installed Pumpic on his smartphone. We checked his SMS and found out that our son was going to visit his best friend at the time when he was supposed to be at school. The next day we checked his location at the appointed time and saw that he was not at school. Since then Pumpic has been our helping hand in bringing our son up.”</p>
                             </div>
                     </div>
                     <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
                             <img src="{$img}/testimonials/testimonials_new_3.png" alt="" class="testimonial-photo">
                             <div class="testimonial-text">
                                     <h4>John T.</h4>
-                                    <p>“I use Pumpic to control whether my employees use their corporate cell phones on business purposes or to arrange their own affairs. The app shows me whom they call or send text messages. I can look through corporate emails to prevent information leak. I can even find out what they search in the Internet and where they are. It is a great help for my business.”</p>
+                                    <p>“I use Pumpic to control whether my employees use their corporate cell phones for business purposes or to arrange their own affairs. The app shows me whom they call or send text messages to. I can look through corporate emails to prevent information leaks. I can even find out what they search for on the Internet and where they are. It is a great help for my business.”</p>
                             </div>
                     </div>
             </div>

@@ -101,8 +101,35 @@ img {
 }
 
 /* fonts */
+.fz12 {
+ font-size: 12px;   
+}
 .fz13 {
  font-size: 13px;   
+}
+
+.fz14 {
+ font-size: 14px;   
+}
+
+.fz15 {
+ font-size: 15px;   
+}
+
+.fz16 {
+ font-size: 16px;   
+}
+
+.fz17 {
+ font-size: 17px;   
+}
+
+.fz18 {
+ font-size: 18px;   
+}
+
+.fz19 {
+ font-size: 19px;   
 }
 
 body {
@@ -4353,6 +4380,10 @@ only screen and (max-device-width: 480px) {
     margin-top: 10px;
 }
 
+.inline-block {
+    display: inline-block;
+}
+
 /* ========== settings =========== */
 .pt20 {
     padding-top: 20px;
@@ -4360,6 +4391,14 @@ only screen and (max-device-width: 480px) {
 
 .pb20 {
     padding-bottom: 20px;
+}
+
+.pb30 {
+    padding-bottom: 30px;
+}
+
+.pb35 {
+    padding-bottom: 35px;
 }
 
 .pb10 {

@@ -8,7 +8,7 @@
        </section>
        <section>
            <a class="btn btn-default btn-text-sm ga-action-click" 
-              href="/icloud-iphone-without-jailbreak-monitoring.html" 
+              href="{if isset($iCloudSolutionUrl) && $iCloudSolutionUrl != ""}{$iCloudSolutionUrl}{else}/icloud-iphone-without-jailbreak-monitoring.html{/if}" 
               ga-action="click" 
               ga-category="promo buy" 
               ga-label="icloud solution">

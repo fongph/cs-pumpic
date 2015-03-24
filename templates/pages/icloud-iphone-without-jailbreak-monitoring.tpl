@@ -30,7 +30,8 @@
                             <br>Control cell phone use. Follow location and online activity"
             os_versions = "os_v2"                
             promoBuyBlock = "no"
-            iCloudSolution = 'no'
+            iCloudSolution = 'yes'
+            iCloudSolutionUrl = '';
         }
         
         <!-- BLOCK ICLOUD SOLUTION -->
@@ -88,87 +89,12 @@
                         <div class="row">
                             <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1">
                                 <table class="tb_pricing table-bordered pricing-second ">
-                                    <caption>
+                                    {*<caption>
                                         <div class="table_title">
                                             <h2 class="h2-sm">Features</h2>
                                         </div>
-                                    </caption>
+                                    </caption>*}
                                     <thead>
-                                        <tr>
-                                            <th>
-                                                <div class="basic_wr padding-none-list span-list-block">
-                                                    <div class="priceb border-none">
-                                                        <div class="basic_fe reset-list media-sm-block">
-                                                            <ul class="list_price-no-link list_price-no-link-inline">
-
-                                                                <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> SMS <span>View sent and received messages</span>
-                                                                </li>
-                                                                <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Calls <span>Follow in- and outbound calls</span>
-                                                                </li>
-                                                                <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Contacts <span>View existing contacts</span></li>
-
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-
-
-                                                </div>
-                                                <div class="basic_wr padding-none-list span-list-block">
-                                                    <div class="pricep">
-                                                        <div class="basic_fe reset-list media-sm-block">
-                                                            <ul class="list_price-no-link list_price-no-link-inline">
-
-                                                                <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Browser <span>View visited websites</span></li>
-                                                                <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Bookmarks <span>View bookmarked websites</span></li>
-                                                                <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Calendar  <span>Follow scheduled events</span></li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </th>
-                                        </tr>
-                                        <tr>
-                                            <th>
-                                                <div class="coming_soon_block">
-                                                <h2 class="text-warning font-weight400">Coming soon:</h2>
-                                                    <ul>
-                                                        <li><b><i class="icons ico-skype"></i> Skype</b> <span>Follow personal, group messages and calls.</span></li>
-                                                        <li><b><i class="icons ico-notes"></i> Notes </b><span> View notes kept on the target device.</span></li>
-                                                        <li><b><i class="icons ico-emails"></i> Emails</b> <span>Monitor sent and received emails.</span></li>
-                                                    </ul>
-                                                <h3 class="text-warning font-weight400">And Even More Features!</h3>
-                                                </div>
-                                            </th>
-                                        </tr>
-                                        <tr>
-                                            <th >
-                                            <div class="table_title">
-                                                <h2 class="text-success h2-sm">Additional Benefits</h2>
-                                            </div>
-                                                <div class="basic_wr padding-none-list span-list-block">
-                                                    <div class="priceb border-none">
-                                                        <div class="basic_fe reset-list media-sm-block">
-                                                            <ul class="list_price-no-link">
-
-                                                                <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Removal Protection <span>Since you do not need to install the application, it cannot be deleted from the target device.</span></li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-
-
-                                                </div>
-                                                <div class="basic_wr padding-none-list span-list-block">
-                                                    <div class="pricep border-none">
-                                                        <div class="basic_fe reset-list media-sm-block">
-                                                            <ul class="list_price-no-link">
-
-                                                                <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Remote Activity Control <span>View all the data sent from the target device via your personal Control Panel. <br>Control Panel can be accessed from any browser and any computer or mobile gadget (smartphones and tablets).</span></li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </th>
-                                        </tr>
                                         <tr>
                                             <th>
                                                 <div class="basic_wr row-pricing-panel w100 icloud-box">
@@ -179,7 +105,7 @@
                                                         <div class="dtable">
                                                             <div class="dtable-cell text-center">
                                                             <div class="dtable-text text-right">
-                                                                <strong class='none-uppercase'>iCloud Solution</strong><br>
+                                                                {*<strong class='none-uppercase'>iCloud Solution</strong><br>*}
                                                                  <span class='none-uppercase'>iCloud Solution is provided with <br>Premium subscription</span>
                                                             </div>
                                                                 <div class="wr_pack">
@@ -229,6 +155,97 @@
                                                 
                                                 
                                                 </div>
+                                                
+                                            </th>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <th>
+                                                <div class="table_title">
+                                                    <h2 class="h2-sm">Features</h2>
+                                                </div>
+                                            </th>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <th>
+                                                <div class="basic_wr padding-none-list span-list-block">
+                                                    <div class="priceb border-none">
+                                                        <div class="basic_fe reset-list media-sm-block">
+                                                            <ul class="list_price-no-link list_price-no-link-inline">
+
+                                                                <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> SMS <span>View sent and received messages</span>
+                                                                </li>
+                                                                <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Calls <span>Follow in- and outbound calls</span>
+                                                                </li>
+                                                                <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Contacts <span>View existing contacts</span></li>
+
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+
+
+                                                </div>
+                                                <div class="basic_wr padding-none-list span-list-block">
+                                                    <div class="pricep">
+                                                        <div class="basic_fe reset-list media-sm-block">
+                                                            <ul class="list_price-no-link list_price-no-link-inline">
+
+                                                                <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Browser <span>View visited websites</span></li>
+                                                                <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Bookmarks <span>View bookmarked websites</span></li>
+                                                                <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Calendar  <span>Follow scheduled events</span></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <p class="inline-block text-center none-uppercase fz16">If there is not enough functionality of Pumpic iCloud solution, you can try to full featured <br /><a href="http://{$domain}/iphone-tracking-software.html">Pumpic jailbreak solution</a>.</p>
+                                            </th>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                <div class="coming_soon_block">
+                                                <h2 class="text-warning font-weight400">Coming soon:</h2>
+                                                    <ul>
+                                                        <li><b><i class="icons ico-skype"></i> Skype</b> <span>Follow personal, group messages and calls.</span></li>
+                                                        <li><b><i class="icons ico-notes"></i> Notes </b><span> View notes kept on the target device.</span></li>
+                                                        <li><b><i class="icons ico-emails"></i> Emails</b> <span>Monitor sent and received emails.</span></li>
+                                                    </ul>
+                                                {*<h3 class="text-warning font-weight400">And Even More Features!</h3>*}
+                                                </div>
+                                            </th>
+                                        </tr>
+                                        <tr>
+                                            <th >
+                                            <div class="table_title">
+                                                <h2 class="text-success h2-sm">Additional Benefits</h2>
+                                            </div>
+                                                <div class="basic_wr padding-none-list span-list-block">
+                                                    <div class="priceb border-none">
+                                                        <div class="basic_fe reset-list media-sm-block">
+                                                            <ul class="list_price-no-link">
+
+                                                                <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Removal Protection <span>Since you do not need to install the application, it cannot be deleted from the target device.</span></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+
+
+                                                </div>
+                                                <div class="basic_wr padding-none-list span-list-block">
+                                                    <div class="pricep border-none">
+                                                        <div class="basic_fe reset-list media-sm-block">
+                                                            <ul class="list_price-no-link">
+
+                                                                <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Remote Activity Control <span>View all the data sent from the target device via your personal Control Panel. <br>Control Panel can be accessed from any browser and any computer or mobile gadget (smartphones and tablets).</span></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </th>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <th>
                                                 <div class="refund_10 refund_bg">
                                                     <div class="wr_refund text-transform-none">
                                                         <div class="day10">10-DAY <span class="d_green">Refund Policy</span>
@@ -246,6 +263,8 @@
                                                 </div>
                                             </th>
                                         </tr>
+                                        
+                                        
                                     </thead>
                                 </table>
 

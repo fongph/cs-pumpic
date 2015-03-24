@@ -38,9 +38,9 @@
                         <div class="list-group-box">
                             <div class="list-group">
                                 <ul >
-                                  <li href="#" class="list-group-item text-center">
+                                  <li href="#" class="list-group-item text-center pb35">
                                     <h4 class="list-group-item-heading"><i class="icons ico-jailbreak"></i> Jailbreak Solution </h4>
-                                    <small>Requirements:</small>
+                                    {*<small>Requirements:</small>*}
                                   </li>
                                   <li href="#" class="list-group-item">
                                     <p class="list-group-item-text">
@@ -178,9 +178,9 @@
                             </div>
                             <div class="list-group list-group-bg">
                                 <ul >
-                                  <li href="#" class="list-group-item text-center">
+                                  <li href="#" class="list-group-item text-center pb35">
                                     <h4 class="list-group-item-heading"><i class="icons ico-cloud"></i> iCloud Solution </h4>
-                                    <small>Requirements:</small>
+                                    {*<small>Requirements:</small>*}
                                   </li>
                                   <li href="#" class="list-group-item">
                                     <p class="list-group-item-text">
@@ -213,7 +213,7 @@
                                             <div class="dtable">
                                                 <div class="dtable-cell">
                                                 <div class="dtable-text text-right">
-                                                    <strong class='none-uppercase'>iCloud Solution</strong><br>
+                                                    {*<strong class='none-uppercase'>iCloud Solution</strong><br>*}
                                                      <span>iCloud Solution is provided with <br>Premium subscription</span>
                                                 </div>
                                                     <div class="wr_pack">

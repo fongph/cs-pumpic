@@ -24,7 +24,7 @@
     {if is_array($getOut._error) && $getOut._error.email}<label class="error show">{$getOut._error.email|escape}</label>{/if}
     
     <div class="button-sumbit clearfix">
-        <button class="btn-orange center">Restore <i></i></button>
+        <button class="btn btn-green {*btn-orange*} center">Restore <i></i></button>
     </div>
     
     {*<ul class="links">

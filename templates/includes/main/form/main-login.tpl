@@ -20,7 +20,7 @@
     <input type="password" placeholder="Password*" name="password" value="" class="text required" id="password" />
     
     <div class="button-sumbit clearfix">
-        <button class="btn-orange center">Sign in <i></i></button>
+        <button class="btn btn-green {*btn-orange*} center">Sign in <i></i></button>
     </div>
     
     <ul class="links">

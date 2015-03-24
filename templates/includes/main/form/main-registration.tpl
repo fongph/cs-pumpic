@@ -27,7 +27,7 @@
     {if is_array($getOut._error) && $getOut._error.captcha}<label class="error show">{$getOut._error.captcha|escape}</label>{/if}
     
     <div class="button-sumbit clearfix">
-        <button class="btn-orange center">Register <i></i></button>
+        <button class="btn btn-green {*btn-orange*} center">Register <i></i></button>
     </div>
     
     <ul class="links">

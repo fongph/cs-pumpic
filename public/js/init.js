@@ -558,6 +558,24 @@ function getJsonp( _data ) {
 
 
 /*
+ * 
+ * @param {type} $_msg
+ * @returns {undefined}
+ */
+function reloadCaptcha( obj, error ) {
+   if(!obj.length) return false;
+   var _form = obj.parents('form');
+   var _src = '/captcha.html?'+Math.random();
+   if($(obj).attr('attr-width') && $(obj).attr('attr-height')) {
+       _src = '/captcha.html?width='+$(obj).attr('attr-width')+'&height='+$(obj).attr('attr-height')+'&'+Math.random();
+   }
+   $('.box-captcha').find('#img-captcha').attr('src', _src);
+   
+   if(error)
+    _form.find('input[name="captcha"]').focus();
+}
+
+/*
  * Display error massenge
  * @param {type} $_msg
  * @returns {undefined}
@@ -713,9 +731,16 @@ $(document).ready(function(){
    
    // compatibility_form
    var validator_send_find_phone = $('form[name="send_find_phone"]').validate({
-        onfocusout: false,
-        focusInvalid: false,
+         onfocusout: false,
+         onkeyup: false,
+         onclick: true,
+         onsubmit: true,
+         focusInvalid: false,
+         focusCleanup: false,
        'device-model': {
+            required: true
+        },
+        'captcha': {
             required: true
         },
         email: {
@@ -723,6 +748,7 @@ $(document).ready(function(){
             email: true
         },
         messages: {
+           'captcha': "Invalid CAPTCHA.", // The CAPTCHA field is empty.
             name: "The Device Model field is empty",
             email: {
                 required: "The Email field is empty",
@@ -738,14 +764,33 @@ $(document).ready(function(){
             
             if($('form[name="send_find_phone"] .fatal-error').length)
                 $('form[name="send_find_phone"] .fatal-error').html( " " ).hide();
+            
+            if($('form[name="send_find_phone"] label.error, form[name="send_find_phone"] label.invalid').length)
+                    $('form[name="send_find_phone"] label.error, form[name="send_find_phone"] label.invalid').remove();
         },
+        // управление ошибками
+        showErrors: function(errorMap, errorList) {
+            var _form = $('form[name="send_find_phone"]');
+            var msg = null;
 
+            $.each(errorList, function(key, value){
+                if(value.element) {
+                    var name = _form.find( value.element ).attr('name');
+                    // console.log( name );
+                    _form.find(value.element).after( '<label id="'+name+'-error" for="'+name+'" class="invalid">'+value.message+'</label>' );
+                    _form.find(value.element).next().show();
+                }
+             });
+        },
         submitHandler: function( form ) {
             if($('form[name="send_find_phone"] span.info').length)
                 $('form[name="send_find_phone"] span.info').html( " " ).hide();
             
             if($('form[name="send_find_phone"] .fatal-error').length)
                 $('form[name="send_find_phone"] .fatal-error').html( " " ).hide();
+
+            if($('form[name="send_find_phone"] label.error, form[name="send_find_phone"] label.invalid').length)
+                    $('form[name="send_find_phone"] label.error, form[name="send_find_phone"] label.invalid').remove();    
 
             var $form = $(form);
             var _params = parseQuery($form.serializeArray());
@@ -769,7 +814,7 @@ $(document).ready(function(){
                           $('form[name="send_find_phone"] .fatal-error').html( _res.error );
                       }
                       
-                      
+                      reloadCaptcha( $form.find('.box-captcha > img'), true ); // reload captcha 
                       return false;
                   } else if(_res.success) {
                       $('form[name="send_find_phone"] span.info').html( _res.success ).css({'display':'inline-block'});
@@ -779,17 +824,17 @@ $(document).ready(function(){
 
                   } else {
                       $('form[name="send_find_phone"] .fatal-error').html('Your email was not sent');
-                      console.log('System error!');
+                      reloadCaptcha( $form.find('.box-captcha > img'), true ); // reload captcha 
                       return false;
                   }    
 
               } else {
                   $('form[name="send_find_phone"] .fatal-error').html('Your email was not sent'); 
-                  console.log('Can not get params in ajax!');
+                  reloadCaptcha( $form.find('.box-captcha > img'), true ); // reload captcha 
                   return false;
               }
                   
-
+              reloadCaptcha( $form.find('.box-captcha > img'), false ); // reload captcha        
               $form.trigger("reset"); 
         }
     });
@@ -800,6 +845,8 @@ $(document).ready(function(){
             $('form[name="send_find_phone"] span.info').html( " " ).hide();
         if($('form[name="send_find_phone"] .fatal-error').length)
             $('form[name="send_find_phone"] .fatal-error').html( " " ).hide();
+        if($('form[name="send_find_phone"] label.error, form[name="send_find_phone"] label.invalid').length)
+            $('form[name="send_find_phone"] label.error, form[name="send_find_phone"] label.invalid').remove();
     });   
       
    // validator faq (form-faq)
@@ -894,6 +941,8 @@ $(document).ready(function(){
             $('form.form-faq span.info').html( " " ).hide();
         if($('form.form-faq .fatal-error').length)
             $('form.form-faq .fatal-error').html( " " ).hide();
+        if($('form.form-faq label.error, form.form-faq label.invalid').length)
+            $('form.form-faq label.error, form.form-faq label.invalid').remove();
     });
     
    /* validate contact us */
@@ -914,7 +963,11 @@ $(document).ready(function(){
    
    var validator_contact_us = $('form.form-contact-us').validate({
         onfocusout: false,
+        onkeyup: false,
+        onclick: true,
+        onsubmit: true,
         focusInvalid: false,
+        focusCleanup: false,
         ignore: "not:hidden",
        'name': {
             required: true
@@ -929,7 +982,11 @@ $(document).ready(function(){
             required: true,
             email: true
         },
+        'captcha': {
+            required: true,
+        },
         messages: {
+            'captcha': "Invalid CAPTCHA.", // The CAPTCHA field is empty.
             name: "The Name field is empty",
             description: 'The Question field is empty',
             wos: 'The field Choose your OS is empty',
@@ -947,24 +1004,40 @@ $(document).ready(function(){
             
             if($('form.form-contact-us .fatal-error').length)
                 $('form.form-contact-us .fatal-error').html( " " ).hide();
+            
+            if($('form.form-contact-us label.error, form.form-contact-us label.invalid').length)
+                    $('form.form-contact-us label.error, form.form-contact-us label.invalid').remove();
         },
+        // управление ошибками
+        showErrors: function(errorMap, errorList) {
+            var _form = $('form.form-contact-us');
+            var msg = null;
 
-//        errorPlacement: function(error, element) {
-//          console.log( element.attr('id') );  
-//        },
-
+            $.each(errorList, function(key, value){
+                if(value.element) {
+                    var name = _form.find( value.element ).attr('name');
+                    // console.log( name );
+                    _form.find(value.element).after( '<label id="'+name+'-error" for="'+name+'" class="invalid">'+value.message+'</label>' );
+                    _form.find(value.element).next().show();
+                }
+             });
+        },
         submitHandler: function( form ) {
             if($('form.form-contact-us span.info').length)
                 $('form.form-contact-us span.info').html( " " ).hide();
             
             if($('form.form-contact-us .fatal-error').length)
                 $('form.form-contact-us .fatal-error').html( " " ).hide();
+            
+            if($('form.form-contact-us label.error, form.form-contact-us label.invalid').length)
+                    $('form.form-contact-us label.error, form.form-contact-us label.invalid').remove();
 
             var $form = $(form);
             var _params = parseQuery($form.serializeArray());
 
             var _response = getAjaxForm('/contact_us_send.html', _params);
               if(_response.result) {
+                  
                   var _res = _response.result;
                   if(_res.error) {
                       
@@ -982,7 +1055,7 @@ $(document).ready(function(){
                           $('form.form-contact-us .fatal-error').html( _res.error );
                       }
                       
-                      
+                      reloadCaptcha( $form.find('.box-captcha > img'), true ); // reload captcha 
                       return false;
                   } else if(_res.success) {
                       $('form.form-contact-us span.info').html( _res.success ).css({'display':'inline-block'});
@@ -992,17 +1065,16 @@ $(document).ready(function(){
 
                   } else {
                       $('form.form-contact-us .fatal-error').html('Your email was not sent');
-                      console.log('System error!');
+                      reloadCaptcha( $form.find('.box-captcha > img'), true ); // reload captcha 
                       return false;
                   }    
 
               } else {
                   $('form.form-contact-us .fatal-error').html('Your email was not sent'); 
-                  console.log('Can not get params in ajax!');
+                  reloadCaptcha( $form.find('.box-captcha > img'), true ); // reload captcha 
                   return false;
               }
-                  
-
+              reloadCaptcha( $form.find('.box-captcha > img')); // reload captcha     
               $form.trigger("reset"); 
         }
     }); 
@@ -1012,6 +1084,8 @@ $(document).ready(function(){
             $('form.form-contact-us span.info').html( " " ).hide();
         if($('form.form-contact-us .fatal-error').length)
             $('form.form-contact-us .fatal-error').html( " " ).hide();
+        if($('form.form-contact-us label.error, form.form-contact-us label.invalid').length)
+            $('form.form-contact-us label.error, form.form-contact-us label.invalid').remove();
     });
     
       
@@ -1022,26 +1096,80 @@ $(document).ready(function(){
    /* ------- form login ------ */
    if($('form[name="form-login"]').length) {
        $('form[name="form-login"]').validate({ 
+             onfocusout: false,
+             onkeyup: false,
+             onclick: true,
+             onsubmit: true,
+             focusInvalid: false,
+             focusCleanup: false,
              messages: {
                 'password': "The Password field is empty.",
                 'email': {
                     required: "The Email field is empty.",
                     email: "Invalid email format."
+                },
+                errorClass: "error",
+            },
+            invalidHandler: function(event, validator) {
+                if($('form[name="form-login"] label.error').length)
+                    $('form[name="form-login"] label.error').remove();
+                
+                if($('form[name="form-login"] div.box-error')) {
+                    $('form[name="form-login"] div.box-error').addClass('hide');
                 }
-            }
+            },
+            // управление ошибками
+            showErrors: function(errorMap, errorList) {
+                var _form = $('form[name="form-login"]');
+                var msg = null;
+                
+                $.each(errorList, function(key, value){
+                    if(value.element) {
+                        _form.find(value.element).after( '<label class="error">'+value.message+'</label>' );
+                        _form.find(value.element).next().show();
+                    }
+                 });
+            },
         });
    }
    
    /* ------- form-registration ------ */
    if($('form[name="form-registration"]').length) {
        $('form[name="form-registration"]').validate({ 
+             onfocusout: false,
+             onkeyup: false,
+             onclick: true,
+             onsubmit: true,
+             focusInvalid: false,
+             focusCleanup: false, 
              messages: {
                 'captcha': "Invalid CAPTCHA.", // The CAPTCHA field is empty.
                 'email': {
                     required: "The Email field is empty.",
                     email: "Invalid email format."
+                },
+                errorClass: "error",
+            },
+            invalidHandler: function(event, validator) {
+                if($('form[name="form-registration"] label.error').length)
+                    $('form[name="form-registration"] label.error').remove();
+                
+                if($('form[name="form-registration"] div.box-error')) {
+                    $('form[name="form-registration"] div.box-error').addClass('hide');
                 }
-            }
+            },
+            // управление ошибками
+            showErrors: function(errorMap, errorList) {
+                var _form = $('form[name="form-registration"]');
+                var msg = null;
+                
+                $.each(errorList, function(key, value){
+                    if(value.element) {
+                        _form.find(value.element).after( '<label class="error">'+value.message+'</label>' );
+                        _form.find(value.element).next().show();
+                    }
+                 });
+            },
         });
    }
    
@@ -1090,25 +1218,80 @@ $(document).ready(function(){
    /* ------- form-restore ------ */
    if($('form[name="form-restore"]').length) {
        $('form[name="form-restore"]').validate({ 
+             onfocusout: false,
+             onkeyup: false,
+             onclick: true,
+             onsubmit: true,
+             focusInvalid: false,
+             focusCleanup: false, 
              messages: {
                 'email': {
                     required: "The Email field is empty.",
                     email: "Invalid email format."
+                },
+                errorClass: "error",
+            },
+            invalidHandler: function(event, validator) {
+                if($('form[name="form-restore"] label.error').length)
+                    $('form[name="form-restore"] label.error').remove();
+                
+                if($('form[name="form-restore"] div.box-error')) {
+                    $('form[name="form-restore"] div.box-error').addClass('hide');
                 }
-            }
+            },
+            // управление ошибками
+            showErrors: function(errorMap, errorList) {
+                var _form = $('form[name="form-restore"]');
+                var msg = null;
+                
+                $.each(errorList, function(key, value){
+                    if(value.element) {
+                        _form.find(value.element).after( '<label class="error">'+value.message+'</label>' );
+                        _form.find(value.element).next().show();
+                    }
+                 });
+            },
         });
    }
    
    /* ----- form discount ----- */
    if($('#form-discount').length) {
        $('#form-discount').validate({ 
+             onfocusout: false,
+             onkeyup: false,
+             onclick: true,
+             onsubmit: true,
+             focusInvalid: false,
+             focusCleanup: false,
              messages: {
+                'captcha': "Invalid CAPTCHA.", // The CAPTCHA field is empty. 
                 'discount[name]': "The Name field is empty.",
                 'discount[email]': {
                     required: "The Password field is empty.",
                     email: "Invalid email format."
+                },
+                errorClass: "error",
+            },
+            invalidHandler: function(event, validator) {
+                if($('#form-discount label.error').length)
+                    $('#form-discount label.error').remove();
+                
+                if($('#form-discount div.box-error')) {
+                    $('#form-discount div.box-error').addClass('hide');
                 }
-            }
+            },
+            // управление ошибками
+            showErrors: function(errorMap, errorList) {
+                var _form = $('#form-discount');
+                var msg = null;
+                
+                $.each(errorList, function(key, value){
+                    if(value.element) {
+                        _form.find(value.element).after( '<label class="error">'+value.message+'</label>' );
+                        _form.find(value.element).next().show();
+                    }
+                 });
+            },
         });
    } 
    
@@ -1118,14 +1301,14 @@ $(document).ready(function(){
    if($('.box-captcha').length) {
        $('.update-captcha, .a-update-captcha').on('click', function(event) {
            event.preventDefault();
-           
-           var _src = '/captcha.html?'+Math.random();
-           if($(this).attr('attr-width') && $(this).attr('attr-height')) {
-               _src = '/captcha.html?width='+$(this).attr('attr-width')+'&height='+$(this).attr('attr-height')+'&'+Math.random();
-           }
-           
-           $('.box-captcha').find('#img-captcha').attr('src', _src);
-           $('form[name="form-registration"], form[name="free_trial_registration"]').find('input[name="captcha"]').focus();
+           reloadCaptcha( $(this), true );
+//           var _src = '/captcha.html?'+Math.random();
+//           if($(this).attr('attr-width') && $(this).attr('attr-height')) {
+//               _src = '/captcha.html?width='+$(this).attr('attr-width')+'&height='+$(this).attr('attr-height')+'&'+Math.random();
+//           }
+//           
+//           $('.box-captcha').find('#img-captcha').attr('src', _src);
+//           $('form[name="form-registration"], form[name="free_trial_registration"]').find('input[name="captcha"]').focus();
            return false;
        });
    }

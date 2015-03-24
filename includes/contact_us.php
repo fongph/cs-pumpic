@@ -11,33 +11,10 @@ require_once $_inc.'/lib/class.phpmail.php';
 
 $_mail = new Phpmail;
 
-// smarty config
-// require_once 'smarty.config.php';
-
  $smarty->caching = false;
  $smarty->compile_check = false;
  $smarty->force_compile = false;
  $smarty->debugging = false;
-
-//$smarty = new Smarty;
-//
-//// settings smarty
-//$smarty->compile_check = true;
-//$smarty->debugging = false;
-//$smarty->force_compile = 1;
-//
-//$smarty->setTemplateDir($config['smarty']['tpl_path']);
-//$smarty->setCacheDir($config['smarty']['cache_path']);
-//$smarty->setCompileDir($config['smarty']['tpl_path_compile']);
-//
-//$smarty->registerPlugin("function","year_now","print_current_year");
-//$smarty->assign("domain",$config['domain']);
-//$smarty->assign("domain_http",$config['domain_http']);
-//$smarty->assign("img",$config['path_img']);
-//$smarty->assign("css",$config['path_css']);
-//$smarty->assign("js",$config['path_js']);
-//$smarty ->assign('api_device', $config['api_device']);
-//$smarty ->assign('site_id', $config['site_id']);
 
 // init function json
 function json_modifier($value) {

@@ -1,18 +1,24 @@
 <?php
 include dirname(__FILE__).'/apiMail/sendMail.php';
 include dirname(__FILE__).'/apiMail/Settings.php';
+include dirname(__FILE__).'/users/Order.php';
 
 
 use api\ApiMail as ApiMail;
 use api\Settings as Settings; 
+use includes\lib\users\Order as Order;
 
 class Phpmail extends Settings 
 {  
     CONST mail_support = 'support@pumpic.com';
     CONST mail_noreply = 'noreply@pumpic.com';
     
+    CONST error_email = 'Invalid email format';
+    CONST error_captcha = 'Invalid CAPTCHA.';
+    
     private $_api;
     private $_data;
+    private $_order;
     
     private $_messange = [
         'error' => false,
@@ -21,7 +27,7 @@ class Phpmail extends Settings
     
     public function __construct() 
     {
-        
+        $this -> _order = new Order;
         $this -> setLocale('en-En') 
                 ->setSiteId(1)
                 ->setSystem(0);
@@ -101,9 +107,11 @@ class Phpmail extends Settings
             $_id = rand(0, 9000000);
             
             if(!$this -> validateEmail($params['email'])) {
-                $this -> _messange['error']['email'] = "Invalid email format";
+                $this -> _messange['error']['email'] = self::error_email;
             } else if(empty($params['device-model']) or strlen( $params['device-model']) < 3 ) {
                 $this -> _messange['error']['device-model'] = "The Device Model field is empty";
+            } elseif( isset($params['captcha']) and !$this ->_order-> validateCaptcha( $params['captcha'] ) ) {
+                $this -> _messange['error']['captcha'] = self::error_captcha;
             } else {
                 
                 // sendMail Api
@@ -117,7 +125,7 @@ class Phpmail extends Settings
                 if($_data === true) {
                     $this -> _messange['success'] = "Your Request has been sent, our support representative will contact you as soon as possible"; //"Your email has been successfully sent";
                 } else
-                    $this -> _messange['error']['email'] = "Invalid email format"; // Invalid System Params
+                    $this -> _messange['error']['email'] = self::error_email; 
                 
                 
             }    
@@ -138,6 +146,8 @@ class Phpmail extends Settings
             
             if(!$this -> validateEmail($params['email'])) {
                 $this -> _messange['error']['email'] = "Invalid email format";
+            } elseif( isset($params['captcha']) and !$this ->_order-> validateCaptcha( $params['captcha'] ) ) {
+                $this -> _messange['error']['captcha'] = self::error_captcha;
             } else {
                 
 //                // sendMail Api
@@ -207,6 +217,8 @@ class Phpmail extends Settings
             
             if(!$this -> validateEmail($params['email'])) {
                 $this -> _messange['error']['email'] = "Invalid email format";
+            } elseif( isset($params['captcha']) and !$this ->_order-> validateCaptcha( $params['captcha'] ) ) {
+                $this -> _messange['error']['captcha'] = self::error_captcha;
             } else {
                 
                 // sendMail Api

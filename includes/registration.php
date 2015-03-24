@@ -8,26 +8,6 @@ $obj = new includes\lib\users\Order;
 
 // smarty config
 require_once 'smarty.config.php';
-// $smarty->clearAllCache(); // clear all cahes
-//$smarty = new Smarty;
-//
-//// settings smarty
-//$smarty->compile_check = true;
-//$smarty->debugging = false;
-//$smarty->force_compile = 1;
-//
-//$smarty->setTemplateDir($config['smarty']['tpl_path']);
-//$smarty->setCacheDir($config['smarty']['cache_path']);
-//$smarty->setCompileDir($config['smarty']['tpl_path_compile']);
-//
-//$smarty->registerPlugin("function","year_now","print_current_year");
-//$smarty->assign("domain",$config['domain']);
-//$smarty->assign("domain_http",$config['domain_http']);
-//$smarty->assign("img",$config['path_img']);
-//$smarty->assign("css",$config['path_css']);
-//$smarty->assign("js",$config['path_js']);
-//$smarty ->assign('api_device', $config['api_device']);
-//$smarty ->assign('site_id', $config['site_id']);
 
 /* registration */
 $_result = array(
@@ -41,12 +21,12 @@ if($obj -> getLoginUser()) $obj -> _redirect('/');
 // $_session_order = $obj -> getSession('pumpic_order');
 $_productID = (isset($_GET['productID']) and !empty($_GET['productID'])) ? $_GET['productID'] : false;
 $_captcha = (isset($_POST['captcha']) and !empty($_POST['captcha'])) ? $_POST['captcha'] : false;
-$_sID = (isset($_POST['site_id']) and !empty($_POST['site_id'])) ? $_POST['site_id'] : false;
+$_sID = (isset($_POST['site_id']) and !empty($_POST['site_id'])) ? $_POST['site_id'] : 1;
 
 if(isset($_POST['email']) and !$obj -> validateEmail($_POST['email'])) {
-   $_result['_error'] = "Invalid email format.";
+   $_result['_error']['email'] = "Invalid email format.";
 } else if(isset($_POST['captcha']) and !$obj -> validateCaptcha( $_captcha )) { 
-    $_result['_error'] = "Invalid CAPTCHA.";
+    $_result['_error']['captcha'] = "Invalid CAPTCHA.";
 } else if(!empty($_POST['email']) and $_sID and $obj -> validateCaptcha( $_captcha )) {
 
     $_params = array(
@@ -78,7 +58,7 @@ if($_result['_success']) {
         $obj -> _redirect('/#popUp=registration'); 
 
 }
-    
+
 // init output params!
 $smarty->assign('getOut', $_result);
 $smarty->assign('productID', $_productID);

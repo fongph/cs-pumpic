@@ -146,48 +146,17 @@
                         </div>
                 </div>
                 <div class="row row_top_border">
-                        <div class="container">
-                                <div class="col-lg-10 col-lg-offset-1">
-                                        <div class="row">
-                                                        <div class="form">
-                                                            <form class="send_find_phone" method="POST" action="" name="send_find_phone">
-                                                                        <fieldset>
-                                                                                <legend>
-                                                                                    Can’t Find Your Device Here?<span>Let’s Check if it is Compatible:</span>
-                                                                                    {*CAN’T FIND YOUR DEVICE HERE?<span>LET’S CHECK IF IT IS COMPATIBLE:</span>*}
-                                                                                </legend>
-                                                                                
-                                                                                <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3">
-                                                                                        <span class="info"></span>
-                                                                                    
-                                                                                        <div class="form-group">
-                                                                                                <input id="device-model" type="text" 
-                                                                                                       class="form-control required" 
-                                                                                                       name="device-model" 
-                                                                                                       value=""
-                                                                                                       placeholder="Device model*">
-                                                                                                
-                                                                                                {*<p class="bg-danger"></p>*}
-                                                                                        </div>
-                                                                                        <div class="form-group {*has-error*}">
-                                                                                                <input id="email" type="email" 
-                                                                                                       class="form-control required" 
-                                                                                                       name="email"
-                                                                                                       value=""
-                                                                                                       placeholder="Email*">
-                                                                                                
-                                                                                                {*<p class="bg-danger"></p>*}
-                                                                                        </div>
-                                                                                        <div class="fatal-error"></div>
-                                                                                        <button class="btn btn-warning event-submit">Submit<i class="icon-right-open"></i>
-                                                                                        </button>
-                                                                                </div>
-                                                                        </fieldset>
-                                                                </form>
-                                                        </div>
-                                        </div>
+                    <div class="container">
+                        <div class="col-lg-10 col-lg-offset-1">
+                            <div class="row">
+                                <div class="form">
+                                    {include file='../includes/main/form/main-compatibility-send-find-phone.tpl'
+                                        cache_id = "main-compatibility-send-find-phone"
+                                        nocache} 
                                 </div>
+                            </div>
                         </div>
+                    </div>
                 </div>
         </div>
     

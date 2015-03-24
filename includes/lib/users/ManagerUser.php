@@ -32,7 +32,7 @@ class ManagerUser extends Manager
 {
     const SITE_ID = 1;
     const LANG = 'en-GB';
-    const ERROR_USER_ALREADY_EXISTS_EXCEPTION = 'Your email address is already registered with Pumpic. Restore <a href="/restore.html">password</a>?'; // This email exists already.
+    const ERROR_USER_ALREADY_EXISTS_EXCEPTION = 'Your email address is already registered with Pumpic. Restore <a href="/restore.html">password</a>'; // This email exists already.
     
     static $_obj;
     
@@ -427,7 +427,7 @@ class ManagerUser extends Manager
     {
         if(!empty($_captcha)) {
             if (!isset($this -> _session['captcha']) 
-                    and (empty($this -> _session['captcha']) || trim(strtolower($_captcha)) != $this -> _session['captcha'])) {
+                    or (empty($this -> _session['captcha']) || trim(strtolower($_captcha)) != $this -> _session['captcha'])) {
                 return false;
             } else
                 return true;

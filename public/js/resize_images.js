@@ -34,6 +34,20 @@
 $( window ).resize(function() {
     var $_wW = $(window).width();
     
+    // form.send_find_phone .box-captcha img
+    if($('form .box-captcha > img').length) {
+        $('form .box-captcha > img').each(function() {
+            var _bcaptcha = $(this).parents('.box-captcha'), _bcw = _bcaptcha.width(),
+            _width = $(this).width(), width = $(this).outerWidth(true),
+            _update = _bcaptcha.find('.update-captcha');
+            $(this).css({'width': (_bcw - 54)+'px'});
+            _update.attr('attr-width', _bcw - 54);
+            
+        });
+    }
+    
+    
+    // box-content-post
     if($('#box-content-post img, #block-content img').length) {
       $('#box-content-post img, #block-content img').each(function() {
           var _caption = $(this).parents('.wp-caption'), 
@@ -52,6 +66,17 @@ $( window ).resize(function() {
 });
 
 $(document).ready(function(){ 
+    /* capcha resize */
+  if($('form .box-captcha > img').length) { 
+      $('form .box-captcha > img').bindImageLoad(function() { 
+            var _bcaptcha = $(this).parents('.box-captcha'), _bcw = _bcaptcha.width(),
+            _width = $(this).width(), width = $(this).outerWidth(true),
+            _update = _bcaptcha.find('.update-captcha');
+            $(this).css({'width': (_bcw - 54)+'px'});
+            _update.attr('attr-width', _bcw - 54);
+      });
+  }  
+    
     /* images mobile */
   if($('#box-content-post img, #block-content img').length) {
       

@@ -14,13 +14,14 @@
         </div>
    {/if}
    
-   {if $getOut._error}
+   {if is_string($getOut._error)}
        <div class="box-error text-center">
             <p class="bg-danger">{$getOut._error}</p>
        </div>
    {/if}    
     
     <input id="email" type="email" name="email" class="text required email" placeholder="Email*" value="" />
+    {if is_array($getOut._error) && $getOut._error.email}<label class="error show">{$getOut._error.email|escape}</label>{/if}
     
     <div class="button-sumbit clearfix">
         <button class="btn-orange center">Restore <i></i></button>

@@ -630,11 +630,11 @@ form.form-contact-us label.disabled {
     color:#aaa;
 }
 
-form.form-discount .highlight,
+/*form.form-discount .highlight,
 form.box-form .highlight,
 form.form-contact-us .highlight {  
     background-color:#e2e2e2;
-}
+}*/
 
 .off{
     display:none !important;
@@ -673,6 +673,7 @@ form.form-contact-us .highlight {
     border: none;
     height: 48px;
     width: 220px;
+    margin-top: 5px;
     margin-bottom: 5px;
     padding: 17px 20px;
     background: #5d5f6d;
@@ -3918,10 +3919,11 @@ span.btn-banner-yellow:active {
 }
 /* --- \\ box-capcha --- */
 .box-captcha {
+    display: inline-block;
     width: 370px;
 }
 .box-captcha #img-captcha {
-    width: 317px;
+/*    width: 317px;*/
     height: 48px;
     border-top: 3px;
     border-left: 3px;
@@ -5850,9 +5852,41 @@ i.white-arrows-right {
 }
 
 /* ----------- \\ focus all forms ------ */
-.form-search  > .input-group > .form-control:focus {
+.form-search .form-control:focus {
+    border-right: 6px solid #e5e5e5;
+    box-shadow: none;
+    outline: 1;
+}
+
+.form-login input:focus, 
+.form-registration input:focus, 
+.form-restore input:focus,
+.form-contact-us textarea:focus,
+.btn-group.open .dropdown-toggle {
   border-color: #66afe9;
   outline: 0;
   -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
   box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
+}
+
+.form-search  > .input-group > .form-control::-moz-placeholder
+{
+  color: #999999;
+  opacity: 1;
+}
+.form-search  > .input-group > .form-control::-ms-input-placeholder {
+    color: #999999;
+}
+.form-search  > .input-group > .form-control::-webkit-input-placeholder
+{
+    color: #999999;
+}
+
+/* -------------- \\ fix form ------------ */
+.form-box-captcha { margin-bottom: 5px; }
+form.send_find_phone .box-captcha,
+form.form-contact-us .box-captcha { 
+    height: 46px;
+    width: 100%;
+    min-width: 100%; 
 }

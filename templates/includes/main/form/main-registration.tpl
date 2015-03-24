@@ -10,19 +10,21 @@
         </div>
    {/if}
    
-   {if $getOut._error}
+   {if is_string($getOut._error)}
        <div class="box-error text-center">
             <p class="bg-danger">{$getOut._error}</p>
        </div>
    {/if}
    
     <input id="email" type="email" name="email" class="text required email" placeholder="Email*" value="" />
+    {if is_array($getOut._error) && $getOut._error.email}<label class="error show">{$getOut._error.email|escape}</label>{/if}
     <div class="box-captcha">
         <img src="/captcha.html" id="img-captcha">
         <span class="update-captcha"></span>
     </div>
     
     <input id="captcha" type="text" name="captcha" autocomplete="off" class="text required captcha" />
+    {if is_array($getOut._error) && $getOut._error.captcha}<label class="error show">{$getOut._error.captcha|escape}</label>{/if}
     
     <div class="button-sumbit clearfix">
         <button class="btn-orange center">Register <i></i></button>

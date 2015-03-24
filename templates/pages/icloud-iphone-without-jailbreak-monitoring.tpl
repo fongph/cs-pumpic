@@ -9,7 +9,7 @@
     {include file='../includes/content/fly/fly_blocks.tpl'}
     <!-- END FLY BLOCKS-->
     
-    <div class="wrapper">
+    <div class="wrapper icloud-iphone-without-jailbreak-monitoring">
         <!-- TOP MENU -->
 
 	{include file='../includes/main/main-top-menu.tpl'

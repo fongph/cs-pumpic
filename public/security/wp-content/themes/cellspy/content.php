@@ -13,8 +13,6 @@
             
             <?= the_content() ?>
             
-            <?php get_sidebar('subscribe'); ?>
-            
         </div>    
         <?= fb_get_cat_related_posts() ?>
 

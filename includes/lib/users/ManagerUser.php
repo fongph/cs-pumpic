@@ -240,7 +240,7 @@ class ManagerUser extends Manager
         } catch (InvalidPasswordException $e) {
            self::$_obj -> _respons['_error'] = "Invalid email or password.";
         } catch (UserLockedException $e) {
-           self::$_obj -> _respons['_error'] = "учетная запись пользователя заблокирована"; // ?????
+           self::$_obj -> _respons['_error'] = "Account is locked.";
         }
         
         return self::$_obj -> _respons;

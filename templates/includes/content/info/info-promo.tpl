@@ -68,7 +68,8 @@
                                     {/if}   
                                     
                                     {if isset($iCloudSolution) && $iCloudSolution == 'yes'}
-                                        {include './blocks/block-icloud-solution.tpl'}
+                                        {include file='./blocks/block-icloud-solution.tpl' 
+                                                iCloudSolutionUrl = $iCloudSolutionUrl}
                                         {*{include './blocks/block-trial.tpl'}*}
                                     {/if}    
 
@@ -99,12 +100,6 @@
                     </tr>
                 </table>
                 
-                   
-
-                
-
-                
-
                 {*<div class="col-lg-6 mobile-version">
                     <img src="{$img}/parental_control/bg_famaly_mobile.png" alt="" class="visual-img-pc">
                 </div> *}           

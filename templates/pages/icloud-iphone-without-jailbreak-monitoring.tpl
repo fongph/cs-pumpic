@@ -31,7 +31,7 @@
             os_versions = "os_v2"                
             promoBuyBlock = "no"
             iCloudSolution = 'yes'
-            iCloudSolutionUrl = '';
+            iCloudSolutionUrl = ''
         }
         
         <!-- BLOCK ICLOUD SOLUTION -->

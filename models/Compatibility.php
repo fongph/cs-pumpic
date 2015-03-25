@@ -139,13 +139,13 @@ class Compatibility {
             ),
             'Control Apps' => array(
                 'application'  => 'Applications list',
-                'app_list_block' => 'Apps blocking (Block distracting websites.)',
+                'app_list_block' => 'Apps blocking',
                 'keylogger' => 'Keylogger',
             ),
             'Browser' => array(
                 'browser_history' => 'Browser history',
                 'browser_bookmarks' => 'Bookmarks',
-                'blocking_sites' => 'Websites blocking (Block 18+ websites.)',
+                'blocking_sites' => 'Websites blocking',
             ),
             'Other features' => array(
                 'location_history'  => 'Location history',

@@ -13,4 +13,4 @@ Allow: /wp-content/uploads/
 User-agent: Googlebot-Image
 Allow: /wp-content/uploads/
 
-Sitemap: /sitemap.xml
+Sitemap: http://pumpic.com/sitemap.xml

@@ -26,34 +26,18 @@
                                         </div>
                                         <div class="row">
                                                 <div class="col-lg-12">
-                                                    <form action="/compatibility/results/" name="box-search" method="POST" class="form-search compatibility-search">
-                                                        <div class="input-group">
-                                                                <input type="text" class="form-control required" name="device-model" value="{if $search_word}{$search_word}{/if}" placeholder="Enter device model">
-                                                                <span class="input-group-btn"><button class="btn btn-warning" type="submit">Search</button></span>
-                                                        </div>
-                                                        <div id="compatibility-search-error" class="fatal-error"></div>
-                                                     </form>    
+                                                    {assign sw ''}
+                                                    {if $search_word} 
+                                                        {assign sw $search_word}
+                                                    {/if}
+                                                    {include file='../../includes/main/form/main-compatibility-search.tpl'
+                                                            cache_id = "main-compatibility-search"
+                                                            search_word = $sw
+                                                        nocache}
                                                 </div>
                                         </div>
                                     
-                                        <div class="row">
-                                                <div class="col-sm-4 col-md-4 col-sm-offset-2 col-md-offset-2 col-lg-offset-2">
-                                                        <div class="thumb">
-                                                                <span class="ico-left"><i class="icon-apple"></i></span>
-                                                                <span>OS:<strong> iOS</strong></span>
-                                                                <span>Versions:<strong> 6.0 or later {*(jailbreak required)*}</strong></span>
-                                                                <a href="/compatibility/ios-devices" class="text-succes search-category" data-os="iOS">View all supported iOS devices</a>
-                                                        </div>
-                                                </div>
-                                                <div class="col-sm-4 col-md-4">
-                                                        <div class="thumb">
-                                                                <span class="ico-left"><i class="icon-android"></i></span>
-                                                                <span>OS:<strong> Android</strong></span>
-                                                                <span>Versions:<strong> 2.2 or later</strong></span>
-                                                                <a href="/compatibility/android-devices" class="text-succes search-category" data-os="Android">View all supported Android devices</a>
-                                                        </div>
-                                                </div>
-                                        </div>
+                                        {include file='../../includes/main/main-compatibility-filters.tpl'}
                                     
                                         <!-- #log -->
                                         <div class="row">
@@ -110,42 +94,11 @@
                         <div class="container">
                                 <div class="col-lg-10 col-lg-offset-1">
                                         <div class="row">
-                                                        <div class="form">
-                                                            <form class="send_find_phone" method="POST" action="" name="send_find_phone">
-                                                                        <fieldset>
-                                                                                <legend>
-                                                                                    Can’t Find Your Device Here?<span>Let’s Check if it is Compatible:</span>
-                                                                                    {*CAN’T FIND YOUR DEVICE HERE?<span>LET’S CHECK IF IT IS COMPATIBLE:</span>*}
-                                                                                </legend>
-                                                                                
-                                                                                <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3">
-                                                                                        <span class="info"></span>
-                                                                                    
-                                                                                        <div class="form-group">
-                                                                                                <input id="device-model" type="text" 
-                                                                                                       class="form-control required" 
-                                                                                                       name="device-model" 
-                                                                                                       value=""
-                                                                                                       placeholder="Device model*">
-                                                                                                
-                                                                                                {*<p class="bg-danger"></p>*}
-                                                                                        </div>
-                                                                                        <div class="form-group has-error">
-                                                                                                <input id="email" type="email" 
-                                                                                                       class="form-control required" 
-                                                                                                       name="email"
-                                                                                                       value=""
-                                                                                                       placeholder="Email*">
-                                                                                                
-                                                                                                {*<p class="bg-danger"></p>*}
-                                                                                        </div>
-                                                                                        <div class="fatal-error"></div>
-                                                                                        <button class="btn btn-warning event-submit">Submit<i class="icon-right-open"></i>
-                                                                                        </button>
-                                                                                </div>
-                                                                        </fieldset>
-                                                                </form>
-                                                        </div>
+                                            <div class="form">
+                                            {include file='../../includes/main/form/main-compatibility-send-find-phone.tpl'
+                                                cache_id = "main-compatibility-send-find-phone"
+                                                nocache} 
+                                            </div>  
                                         </div>
                                 </div>
                         </div>
@@ -166,7 +119,7 @@
         {include file='../../includes/main/main-analytics-footer.tpl'}
 
     <script type="text/javascript">
-        /*var Devices = {
+        {*var Devices = {
             imgPath: 'http://{$api_device._domain}/{$api_device.path_img}/',
             $titleBlock:  $('.result-title'),
             $resBlock: $('.box-get-search-result'),
@@ -229,7 +182,7 @@
     
             Devices.search(request, params);
             return false;
-        }); */
+        }); *}
         
         var $searchForm = $('.form-search');
         $searchForm.validate({
@@ -247,7 +200,7 @@
                     minlength: "Enter at least 2 symbols to start search"
                 }
             },
-            /* submitHandler: function( form ) {
+            {* submitHandler: function( form ) {
                 var $form = $(form);
                 $form.submit();
                 return false;
@@ -255,7 +208,7 @@
                // var searchStr = $searchForm.find('input[name="device-model"]').val();
                // Devices.search({ query: searchStr }, { title: 'Search results for "' + searchStr + '"'});
                // return false;
-            } */
+            } *}
         });
     </script>
 

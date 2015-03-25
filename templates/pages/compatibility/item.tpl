@@ -38,7 +38,7 @@
                         {if $getSetting._item}
                             <!-- item device -->
                             <div class="row">
-                                <h3 class="col-lg-12"><a href="#">{$getSetting._item.name}</a></h3>
+                                <h3 class="col-lg-12"><a href="http://{$domain}/compatibility/{$getSetting._item.alies}/">{$getSetting._item.name}</a></h3>
                                 <div class="col-sm-4 col-md-4">
                                     <div class="thumbnail">
 

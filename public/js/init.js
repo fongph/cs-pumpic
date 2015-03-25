@@ -803,11 +803,14 @@ $(document).ready(function(){
                       if(typeof _res.error === 'object') {
                           $.each(_res.error, function(name, text) {
                               var _obj = $form.find('input[name="'+name+'"]');
+                              
                               if(_obj.length) {
-                                 if(_obj.next('label').length)
+                                 
+                                if(_obj.next('label').length) {
                                     _obj.next().html( text ).show();
-                                  else
+                                 } else {
                                      $('<label id="'+name+'-error" for="'+name+'" class="invalid">'+text+'</label>').insertAfter(_obj); 
+                                 }   
                               }
                           });
                       } else {
@@ -841,12 +844,12 @@ $(document).ready(function(){
       
    // clear info in focus   
    $('form[name="send_find_phone"] input, form[name="send_find_phone"] textarea').focus(function() {
-        if($('form[name="send_find_phone"] span.info').length)
-            $('form[name="send_find_phone"] span.info').html( " " ).hide();
-        if($('form[name="send_find_phone"] .fatal-error').length)
-            $('form[name="send_find_phone"] .fatal-error').html( " " ).hide();
-        if($('form[name="send_find_phone"] label.error, form[name="send_find_phone"] label.invalid').length)
-            $('form[name="send_find_phone"] label.error, form[name="send_find_phone"] label.invalid').remove();
+        //if($('form[name="send_find_phone"] span.info').length)
+        //    $('form[name="send_find_phone"] span.info').html( " " ).hide();
+        //if($('form[name="send_find_phone"] .fatal-error').length)
+        //    $('form[name="send_find_phone"] .fatal-error').html( " " ).hide();
+        //if($('form[name="send_find_phone"] label.error, form[name="send_find_phone"] label.invalid').length)
+        //    $('form[name="send_find_phone"] label.error, form[name="send_find_phone"] label.invalid').remove();
     });   
       
    // validator faq (form-faq)
@@ -937,12 +940,12 @@ $(document).ready(function(){
     
    // clear info in focus 
    $('form.form-faq input, form.form-faq textarea').focus(function() {
-        if($('form.form-faq span.info').length)
-            $('form.form-faq span.info').html( " " ).hide();
-        if($('form.form-faq .fatal-error').length)
-            $('form.form-faq .fatal-error').html( " " ).hide();
-        if($('form.form-faq label.error, form.form-faq label.invalid').length)
-            $('form.form-faq label.error, form.form-faq label.invalid').remove();
+//        if($('form.form-faq span.info').length)
+//            $('form.form-faq span.info').html( " " ).hide();
+//        if($('form.form-faq .fatal-error').length)
+//            $('form.form-faq .fatal-error').html( " " ).hide();
+//        if($('form.form-faq label.error, form.form-faq label.invalid').length)
+//            $('form.form-faq label.error, form.form-faq label.invalid').remove();
     });
     
    /* validate contact us */
@@ -1080,12 +1083,12 @@ $(document).ready(function(){
     }); 
     
     $('form.form-contact-us input, form.form-contact-us textarea').focus(function() {
-        if($('form.form-contact-us span.info').length)
-            $('form.form-contact-us span.info').html( " " ).hide();
-        if($('form.form-contact-us .fatal-error').length)
-            $('form.form-contact-us .fatal-error').html( " " ).hide();
-        if($('form.form-contact-us label.error, form.form-contact-us label.invalid').length)
-            $('form.form-contact-us label.error, form.form-contact-us label.invalid').remove();
+//        if($('form.form-contact-us span.info').length)
+//            $('form.form-contact-us span.info').html( " " ).hide();
+//        if($('form.form-contact-us .fatal-error').length)
+//            $('form.form-contact-us .fatal-error').html( " " ).hide();
+//        if($('form.form-contact-us label.error, form.form-contact-us label.invalid').length)
+//            $('form.form-contact-us label.error, form.form-contact-us label.invalid').remove();
     });
     
       

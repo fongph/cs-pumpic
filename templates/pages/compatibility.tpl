@@ -23,42 +23,31 @@
                                                 <h2>Compatibility</h2>
                                         </div>
                                         <div class="row">
+                                            <div class="col-lg-12 pb20 intro-compatibility">
+                                                <span>Pumpic is compatible with all major smartphones and tablets. Operating systems supported: <b>Android (smartphone and tablets)</b> starting from <b>2.2</b> version, 
+                                                    <b>iOS (iPhones, iPad, iPods Touch)</b> starting from <b>6.0</b> version. This page is a partial list of phones and devices that are compatible with Pumpic.</span>
+                                            </div>
+                                        </div>
+                                    
+                                        {include file='../includes/main/main-compatibility-filters.tpl'}
+                                    
+                                        <div class="row">
+                                                <h2>Search</h2>
+                                        </div>
+                                        
+                                        <div class="row">
                                                 <div class="col-lg-12">
-                                                    <form action="/compatibility/results/" name="box-search" method="POST" class="form-search compatibility-search">
-                                                        <div class="input-group">
-                                                                <input type="text" class="form-control required" name="device-model" value="" placeholder="Enter device model">
-                                                                <span class="input-group-btn"><button class="btn btn-warning" type="submit">Search</button></span>
-                                                        </div>
-                                                        <div id="compatibility-search-error" class="fatal-error"></div>
-                                                     </form>    
+                                                       {include file='../includes/main/form/main-compatibility-search.tpl'
+                                                            cache_id = "main-compatibility-search"
+                                                        nocache}
                                                 </div>
                                         </div>
                                     
                                         <div class="row">
-                                                <div class="col-sm-4 col-md-4 col-sm-offset-2 col-md-offset-2 col-lg-offset-2">
-                                                        <div class="thumb">
-                                                                <span class="ico-left"><i class="icon-apple"></i></span>
-                                                                <span>OS:<strong> iOS</strong></span>
-                                                                <span>Versions:<strong> 6.0 or later {*(jailbreak required)*}</strong></span>
-                                                                <a href="/compatibility/ios-devices" class="text-succes search-category" data-os="iOS">View all supported iOS devices</a>
-                                                        </div>
-                                                </div>
-                                                <div class="col-sm-4 col-md-4">
-                                                        <div class="thumb">
-                                                                <span class="ico-left"><i class="icon-android"></i></span>
-                                                                <span>OS:<strong> Android</strong></span>
-                                                                <span>Versions:<strong> 2.2 or later</strong></span>
-                                                                <a href="/compatibility/android-devices" class="text-succes search-category" data-os="Android">View all supported Android devices</a>
-                                                        </div>
-                                                </div>
-                                                {*<div class="col-sm-4 col-md-4">
-                                                        <div class="thumb">
-                                                                <span class="ico-left"><i class="icon-blackberry"></i></span>
-                                                                <span>OS:<strong> BlackBerry</strong></span>
-                                                                <span>Versions:<strong> 7.0 – 7.1</strong></span>
-                                                                <a href="#" class="text-succes search-category" attr_os="blackberry">View all supported BlackBerry devices</a>
-                                                        </div>
-                                                </div>*}
+                                            <div class="block-info-compatibility">
+                                                <h2>Popular models supported</h2>
+                                                <span>sorted by popularity</span>
+                                            </div>    
                                         </div>
                                     
                                         <!-- #log -->
@@ -172,7 +161,7 @@
 
     <script type="text/javascript">
         
-        /*var Devices = {
+        {*var Devices = {
             imgPath: 'http://{$api_device._domain}/{$api_device.path_img}/',
             $titleBlock:  $('.result-title'),
             $resBlock: $('.box-get-search-result'),
@@ -235,7 +224,7 @@
     
             Devices.search(request, params);
             return false;
-        }); */
+        }); *}
         
         
         var $searchForm = $('.form-search');
@@ -254,7 +243,7 @@
                     minlength: "Enter at least 2 symbols to start search"
                 }
 
-            }/*,
+            }{*,
             submitHandler: function( form ) {
                 var $form = $(form);
                 $form.submit();
@@ -264,7 +253,7 @@
                 //var searchStr = $searchForm.find('input[name="device-model"]').val();
                 //Devices.search({ query: searchStr }, { title: 'Search results for "' + searchStr + '"'});
                 //return false;
-            }*/
+            }*}
         });
     </script>
 

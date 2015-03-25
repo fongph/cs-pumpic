@@ -105,7 +105,8 @@ class Compatibility {
     
     public function getModel( $modelName ) {
         $found = $this->db->query("
-            SELECT *
+            SELECT *,
+                 LOWER( REPLACE( `longname`, ' ', '-') ) as alies
             FROM `phones`  
             WHERE LOWER( REPLACE( `longname`, ' ', '-') ) = {$this->db->quote($modelName)}")->fetch();
         
@@ -126,11 +127,13 @@ class Compatibility {
                 'bad_word_sms'  => 'Block SMS by keyword',
 //                    'block_number' => 'Blocking calls & SMS by number',
             ),
-            'Instant messengers' => array(
+            // Instant messengers
+            'Socials' => array( 
                 'skype' => 'Skype',
                 'viber' => 'Viber',
                 'whatsapp' => 'Whatsapp',
                 'facebook' => 'Facebook',
+                'instagram' => 'Instagram',
 //                    'bb_messenger' => 'BlackBerry Messenger',
 //                    'pin_message' => 'PIN Message',
             ),
@@ -150,13 +153,13 @@ class Compatibility {
                 'calendar' => 'Calendar',
                 'photos' => 'Photos',
                 'emails' => 'Emails',
-                'video' => 'View user video',
+                'video' => 'Videos', // View user video
                 'historical_data'  => 'Historical data',
                 'sms_commands' => 'SMS Commands',
                 'sim_change_notification' => 'SIM change',
-                'reboot_app'  => 'Reboot application',
+                // 'reboot_app'  => 'Reboot application',
                 'reboot_device'  => 'Reboot device',
-                
+                'geo_fences'    => 'Geo-fences',
 //                    'gps' => 'Current GPS location',
 
             ),

@@ -5945,3 +5945,38 @@ form.form-contact-us .box-captcha {
     width: 100%;
     padding-bottom: 15px;
 }
+
+/* --- \\ fix buttons ----- */
+.btn-default:hover,
+.btn-default:focus,
+.btn-default:active,
+
+.btn-success:focus,
+.btn-success:hover,
+.btn-success:active,
+
+.btn-orange:focus,
+.btn-orange:active,
+.btn-orange:hover,
+
+.btn-green:focus,
+.btn-green:active,
+.btn-green:hover,
+
+.btn-warning:focus,
+.btn-warning:active,
+.btn-warning:hover
+
+.btn-red:focus,
+.btn-red:active,
+.btn-red:hover,
+
+.btn-sm-yellow:focus,
+.btn-sm-yellow:active,
+.btn-sm-yellow:hover
+
+.btn-yellow:focus,
+.btn-yellow:active,
+.btn-yellow:hover {
+  outline: 0 !important;
+}

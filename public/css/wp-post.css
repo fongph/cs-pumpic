@@ -179,6 +179,15 @@ ul.ul-list-images li > span {
   display: table-row-group;
 }
 
+.wp-blog .bg-footer {
+  font-size: 14px;
+  line-height: 1.42857143;
+}
+
+.webkit .bg-footer p {
+  color: #4d4f5b;
+}
+
 /*ul.ul-list-images li > img {a
     text-align: left;
 }

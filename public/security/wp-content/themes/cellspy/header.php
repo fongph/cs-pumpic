@@ -42,6 +42,8 @@
     <script src="<?php echo getStaticUrl();?>/js/fancy_checkbox.js"></script>
     <script src="<?php echo getStaticUrl();?>/js/main.js"></script>
     
+    <script src="<?php echo getStaticUrl();?>/js/browser.js"></script>
+    
     <script src="<?php echo getStaticUrl();?>/js/resize_images.js"></script>
     
     <!-- jquery validate -->

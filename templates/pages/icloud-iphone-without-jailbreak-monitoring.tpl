@@ -82,15 +82,15 @@
         <!-- END BLOCK HOW IT WORK -->
         
         <!-- BLOCK PRICE AND FEATURES -->
-        <div class="no_bg prices-padding">
+        <div class="no_bg prices-padding padding-reset">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-10 col-lg-offset-1">
                         <div class="row">
-                            <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1">
-                                <table class="tb_pricing table-bordered pricing-second ">
+                            <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 pt20">
+                                <table class="tb_pricing table-bordered pricing-second">
                                     {*<caption>
-                                        <div class="table_title">
+                                        <div class="table_title border-none">
                                             <h2 class="h2-sm">Features</h2>
                                         </div>
                                     </caption>*}
@@ -161,7 +161,7 @@
                                         
                                         <tr>
                                             <th>
-                                                <div class="table_title">
+                                                <div class="table_title {*border-none*}">
                                                     <h2 class="h2-sm">Features</h2>
                                                 </div>
                                             </th>
@@ -252,7 +252,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="table_header text-center">
+                                                <div class="table_header text-transform-none text-center">
                                                   <span class='none-uppercase'>Payment methods:</span>
                                                   <i class="ico-cart-visa"></i>
                                                   <i class="ico-cart-mcart"></i>

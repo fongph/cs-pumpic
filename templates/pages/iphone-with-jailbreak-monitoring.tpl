@@ -100,7 +100,7 @@
                                                 <div class="table_title">
                                                     <h2 class="h2-sm">Features</h2>
                                                 </div>
-                                                    <div class="basic_wr">
+                                                    <div class="basic_wr row-pricing-panel">
                                                         <div class="basic_h">
                                                             Basic
                                                         </div>
@@ -190,8 +190,47 @@
                                                         </div>
                                                         
                                                 
+                                                        <div class="visible-sm-box">
+                                                            <div class="table_title">
+                                                                <h2 class="text-success h2-sm">
+                                                                                                Additional Benefits
+                                                                                            </h2>
+                                                            </div>
+                                                                <div class="basic_wr padding-none-list-sm">
+                                                                    <div class="priceb border-none">
+                                                                        <div class="basic_fe basic_fe_mobile_block reset-list">
+                                                                            <ul class="list_price-no-link">
+                                                            
+                                                                                <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Removal Protection <span>The app is protected with password. Thus, no one else but you can remove it.</span></li>
+                                                                                <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> SMS Commands  <span>Sent text messages to manipulate the target device remotely, even without Internet connection:</span>
+                                                                                <ul class="feature_list">
+                                                                                    <li>instant location</li>
+                                                                                    <li>wipe phone</li>
+                                                                                    <li>block and unblock device</li>
+                                                                                </ul>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                            
+                                                            
+                                                                </div>
+                                                                <div class="basic_wr padding-none-list-sm bb-media-sm">
+                                                                    <div class="pricep">
+                                                                        <div class="basic_fe basic_fe_mobile_block reset-list">
+                                                                            <ul class="list_price-no-link">
+                                                            
+                                                                                <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i>Removal Protection <span>Control Panel can be accessed from any browser and any computer or mobile gadget (smartphones and tablets).</span></li>
+                                                                                <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i>SIM-Card Change Alert <span>In case a SIM-card on the target device is changed, you will receive an email notification.</span>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                        </div>
+                                                
                                                     </div>
-                                                    <div class="premium_wr">
+                                                    <div class="premium_wr row-pricing-panel"> 
                                                         <div class="premium_h">
                                                             Premium
                                                         </div>
@@ -279,16 +318,55 @@
                                                                 </ul>
                                                             </div>
                                                         </div>
+                                                                    
+                                                        <div class="visible-sm-box">
+                                                            <div class="table_title">
+                                                                <h2 class="text-success h2-sm">
+                                                                                                Additional Benefits
+                                                                                            </h2>
+                                                            </div>
+                                                                <div class="premium_wr">
+                                                                    <div class="priceb border-none">
+                                                                        <div class="premium_fe basic_fe_mobile_block reset-list">
+                                                                            <ul class="list_price-no-link">
+                                                            
+                                                                                <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Removal Protection <span>The app is protected with password. Thus, no one else but you can remove it.</span></li>
+                                                                                <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> SMS Commands  <span>Sent text messages to manipulate the target device remotely, even without Internet connection:</span>
+                                                                                <ul class="feature_list">
+                                                                                    <li>instant location</li>
+                                                                                    <li>wipe phone</li>
+                                                                                    <li>block and unblock device</li>
+                                                                                </ul>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                            
+                                                            
+                                                                </div>
+                                                                <div class="premium_wr bb-media-sm">
+                                                                    <div class="pricep">
+                                                                        <div class="premium_fe basic_fe_mobile_block reset-list">
+                                                                            <ul class="list_price-no-link">
+                                                            
+                                                                                <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i>Removal Protection <span>Control Panel can be accessed from any browser and any computer or mobile gadget (smartphones and tablets).</span></li>
+                                                                                <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i>SIM-Card Change Alert <span>In case a SIM-card on the target device is changed, you will receive an email notification.</span>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                        </div>
                                                     </div>
                                             </div>
                                             </th>
                                         </tr>
                                         <tr>
-                                            <th>
+                                            <th class="hidden-media-box">
                                             <div class="table_title">
                                                 <h2 class="text-success h2-sm">Additional Benefits</h2>
                                             </div>
-                                                <div class="basic_wr">
+                                                <div class="basic_wr row-pricing-panel">
                                                     <div class="priceb border-none">
                                                         <div class="basic_fe basic_fe_mobile_block reset-list">
                                                             <ul class="list_price-no-link">
@@ -307,7 +385,7 @@
 
 
                                                 </div>
-                                                <div class="basic_wr bb-media-sm">
+                                                <div class="basic_wr row-pricing-panel bb-media-sm">
                                                     <div class="pricep">
                                                         <div class="basic_fe basic_fe_mobile_block reset-list">
                                                             <ul class="list_price-no-link">
@@ -326,7 +404,7 @@
                                             <div class="table_title">
                                                 <h2 class="text-success h2-sm">Choose Subscription Plan</h2>
                                             </div>
-                                                <div class="basic_wr">
+                                                <div class="basic_wr row-pricing-panel">
                                                     <div class="basic_h">
                                                         Basic
                                                     </div>
@@ -382,7 +460,7 @@
 
 
                                                 </div>
-                                                <div class="premium_wr">
+                                                <div class="premium_wr row-pricing-panel">
                                                     <div class="premium_h">
                                                         Premium
                                                     </div>
@@ -441,6 +519,10 @@
                                                         </div>
                                                     </div>
                                                 </div>
+                                            </th>
+                                        </tr>
+                                        <tr>
+                                            <th>
                                                 <div class="table_header text-center">
                                                   <span class='none-uppercase'>Payment methods:</span>
 

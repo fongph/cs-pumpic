@@ -69,7 +69,7 @@
                                         <div class="basic_h text-uppercase">
                                             Basic
                                         </div>
-                                        <div class="priceb">
+                                        <div class="priceb border-left">
                                             <div class="dtable">
                                                 <div class="dtable-cell">
                                                     <div class="wr_pack">
@@ -125,7 +125,7 @@
                                         <div class="premium_h text-uppercase">
                                             Premium
                                         </div>
-                                        <div class="pricep">
+                                        <div class="pricep border-right-sm">
                                             <div class="dtable">
                                                 <div class="dtable-cell">
                                                     <div class="wr_pack">

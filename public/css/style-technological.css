@@ -1336,3 +1336,111 @@ dl.table-rows.block-left {
 .webkit .list_grey li a, .list_grey li span {
     color: #4d4f5b;
 }
+
+/* ---------- features lists only mobile ----- */
+.features-mobile { display: none; }
+@media (max-width: 768px) { 
+    .features-mobile { display: block; }
+}
+
+.box-features-header-lists {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    color: #4d4f5b;
+}
+
+.box-features-header-lists > li {
+    margin-bottom: 20px;
+}
+
+.box-features-header-item {
+    padding-left: 40px;
+}
+.box-features-header-item div > ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+.box-features-header-item div > ul > li {
+    padding-left: 6px; 
+    font-size: 14px;
+    font-weight: lighter;
+    line-height: 1;
+}
+.box-features-header-item div > ul > li:before {
+    left: -1em;
+}
+
+.box-features-header-item div > i {
+    margin-left: -40px;
+}
+
+.box-features-header-item div > label {
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 22px;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+[class^="i-header-feature-"],
+[class*="i-header-feature-"] {
+   background-position: center center;
+   background-repeat: no-repeat;
+   display: block;
+   position: absolute;
+   width: 33px;
+}        
+
+.i-header-feature-calendar {
+    background-image: url('../images/technological/header/icon/icon-calendar.png');
+/*    width: 31px;*/
+    height: 31px;
+}
+
+.i-header-feature-call {
+    background-image: url('../images/technological/header/icon/icon-call.png');
+/*    width: 27px;*/
+    height: 27px;
+}
+
+.i-header-feature-location-history {
+    background-image: url('../images/technological/header/icon/icon-location-history.png');
+/*    width: 24px;*/
+    height: 31px;
+}
+
+.i-header-feature-chat {
+    background-image: url('../images/technological/header/icon/icon-chat.png');
+/*    width: 13px;*/
+    height: 28px;
+}
+
+.i-header-feature-email {
+    background-image: url('../images/technological/header/icon/icon-email.png');
+/*    width: 29px;*/
+    height: 20px;
+}
+
+.i-header-feature-sms {
+    background-image: url('../images/technological/header/icon/icon-sms.png');
+/*    width: 33px;*/
+    height: 29px;
+}
+
+.i-header-feature-photos {
+    background-image: url('../images/technological/header/icon/icon-photos.png');
+/*    width: 29px;*/
+    height: 24px;
+}
+
+.i-header-feature-browser {
+    background-image: url('../images/technological/header/icon/icon-browser.png');
+/*    width: 31px;*/
+    height: 31px;
+}
+
+.min-t5 {top: -5px}
+.min-10 {top: -10px}

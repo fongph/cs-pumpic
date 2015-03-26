@@ -50,6 +50,7 @@
                                         </div>
                                         
                                     </li>
+                                    
                                     <li class="i-l-features">
                                         <div class="row">
                                             <div class="col-sm-10 col-md-10 col-lg-10">
@@ -67,7 +68,6 @@
                                         </div>
                                     </li>
                                     
-                                    
                                     <li class="i-l-features">
                                         <div class="row">
                                             <div class="col-sm-10 col-md-10 col-lg-10">
@@ -84,7 +84,6 @@
                                             </div>
                                         </div>
                                     </li>
-                                    
                                     
                                     <li class="i-l-features">
                                         <div class="row">
@@ -241,7 +240,211 @@
                                     <br />Track location. View calls and SMS. Follow online activity.*}</p>
                                 <p>Enjoy more than <strong>20 features</strong> of <strong>remote mobile tracking</strong> with Pumpic.</p>
                             </div>
-                        </div>                    
+                        </div>  
+                                
+                        <!-- features lists only mobile -->  
+                        <div class='row'>
+                            <div class='col-sm-12'>
+                                
+                                <ul class='box-features-header-lists features-mobile'>
+                                    <!-- calls -->
+                                    <li>
+                                        <div class="row">
+                                            
+                                            <div class='col-sm-12 col-md-12'>
+                                                
+                                                <div class='box-features-header-item'>
+                                                    <div>
+                                                        <i class='i-header-feature-call'></i>
+                                                        <label>Calls</label>
+                                                    </div>
+                                                    <div class="bth-info">
+                                                        <ul>
+                                                            <li>in- and outbound call logs</li>
+                                                            <li>name, number and time data</li>
+                                                        </ul> 
+                                                    </div>        
+                                                </div>
+                                                
+                                            </div>
+                                            
+                                        </div>
+                                    </li>
+                                    
+                                    <!-- Location & Geo-fences -->
+                                    <li>
+                                        <div class="row">
+                                            
+                                            <div class='col-sm-12 col-md-12'>
+                                                
+                                                <div class='box-features-header-item'>
+                                                    <div>
+                                                        <i class='i-header-feature-location-history min-t5'></i>
+                                                        <label>Location & Geo-fences</label>
+                                                    </div>
+                                                    <div class="bth-info">
+                                                        <ul>
+                                                            <li>current GPS location & history</li>
+                                                            <li>geo-fences and alerts</li>
+                                                        </ul>
+                                                    </div>        
+                                                </div>
+                                                
+                                            </div>
+                                            
+                                        </div>
+                                    </li>
+                                    
+                                    <!-- Online Chats -->
+                                    <li>
+                                        <div class="row">
+                                            
+                                            <div class='col-sm-12 col-md-12'>
+                                                
+                                                <div class='box-features-header-item'>
+                                                    <div>
+                                                        <i class='i-header-feature-chat min-t5'></i>
+                                                        <label>Online Chats</label>
+                                                    </div>
+                                                    <div class="bth-info">
+                                                        <ul>
+                                                            <li>Facebook Messenger</li>
+                                                            <li>WhatsApp, Viber, Skype</li>
+                                                        </ul>
+                                                    </div>        
+                                                </div>
+                                                
+                                            </div>
+                                            
+                                        </div>
+                                    </li>
+                                    
+                                    <!-- Email -->
+                                    <li>
+                                        <div class="row">
+                                            
+                                            <div class='col-sm-12 col-md-12'>
+                                                
+                                                <div class='box-features-header-item'>
+                                                    <div>
+                                                        <i class='i-header-feature-email'></i>
+                                                        <label>Email</label>
+                                                    </div>
+                                                    <div class="bth-info">
+                                                        <ul>
+                                                            <li>inbox and sent emails</li>
+                                                            <li>precise contact data</li>
+                                                        </ul>
+                                                    </div>        
+                                                </div>
+                                                
+                                            </div>
+                                            
+                                        </div>
+                                    </li>
+                                    
+                                    <!-- SMS -->
+                                    <li>
+                                        <div class="row">
+                                            
+                                            <div class='col-sm-12 col-md-12'>
+                                                
+                                                <div class='box-features-header-item'>
+                                                    <div>
+                                                        <i class='i-header-feature-sms min-t5'></i>
+                                                        <label>SMS</label>
+                                                    </div>
+                                                    <div class="bth-info">
+                                                        <ul>
+                                                            <li>sent, received and deleted text messages</li>
+                                                            <li>block by senders or bad words</li>
+                                                        </ul>
+                                                    </div>        
+                                                </div>
+                                                
+                                            </div>
+                                            
+                                        </div>
+                                    </li>
+                                    
+                                    <!-- Photos & Videos -->
+                                    <li>
+                                        <div class="row">
+                                            
+                                            <div class='col-sm-12 col-md-12'>
+                                                
+                                                <div class='box-features-header-item'>
+                                                    <div>
+                                                        <i class='i-header-feature-photos min-t5'></i>
+                                                        <label>Photos & Videos</label>
+                                                    </div>
+                                                    <div class="bth-info">
+                                                        <ul>
+                                                            <li>camera shots and Instagram monitoring</li>
+                                                            <li>downloaded pictures from the Internet</li>
+                                                        </ul>
+                                                    </div>        
+                                                </div>
+                                                
+                                            </div>
+                                            
+                                        </div>
+                                    </li>
+                                    
+                                    <!-- Browsers & Applications -->
+                                    <li>
+                                        <div class="row">
+                                            
+                                            <div class='col-sm-12 col-md-12'>
+                                                
+                                                <div class='box-features-header-item'>
+                                                    <div>
+                                                        <i class='i-header-feature-browser min-t5'></i>
+                                                        <label>Browsers & Applications</label>
+                                                    </div>
+                                                    <div class="bth-info">
+                                                        <ul>
+                                                            <li>browsing history and bookmarks</li>
+                                                            <li>block websites and limit applications</li>
+                                                        </ul>
+                                                    </div>        
+                                                </div>
+                                                
+                                            </div>
+                                            
+                                        </div>
+                                    </li>
+                                    
+                                    <!-- Calendar & Contacts -->
+                                    <li>
+                                        <div class="row">
+                                            
+                                            <div class='col-sm-12 col-md-12'>
+                                                
+                                                <div class='box-features-header-item'>
+                                                    <div>
+                                                        <i class='i-header-feature-calendar min-t5'></i>
+                                                        <label>Calendar & Contacts</label>
+                                                    </div>
+                                                    <div class="bth-info">
+                                                        <ul>
+                                                            <li>scheduled plans and events</li>
+                                                            <li>existing and deleted contacts</li>
+                                                        </ul>
+                                                    </div>        
+                                                </div>
+                                                
+                                            </div>
+                                            
+                                        </div>
+                                    </li>
+                                    
+                                </ul>
+                                
+                            </div>
+                        </div>
+                        <!-- end -->        
+                                
                     </div>
                     
                 </div>

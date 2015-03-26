@@ -16,6 +16,9 @@ class Phpmail extends Settings
     CONST error_email = 'Invalid email format';
     CONST error_captcha = 'Invalid CAPTCHA.';
     
+    CONST FAQ_SUCCESS = 'Your Request has been sent, our support representative will contact you as soon as possible';
+    CONST CONTACTUS_SUCCESS = 'Your Request has been sent, our support representative will contact you as soon as possible';
+    
     private $_api;
     private $_data;
     private $_order;
@@ -158,7 +161,7 @@ class Phpmail extends Settings
                 )) -> sendMAil();
                 
                 if($_data === true) {
-                    $this -> _messange['success'] = "Your Request has been sent, our support representative will contact you as soon as possible"; // "Your email has been successfully sent";
+                    $this -> _messange['success'] = self::FAQ_SUCCESS; // "Your email has been successfully sent";
                 } else
                     $this -> _messange['error']['email'] = "Invalid email format"; // Invalid System Params
                 
@@ -232,7 +235,7 @@ class Phpmail extends Settings
                 
                 
                 if($_data === true) {
-                    $this -> _messange['success'] = "Your Request has been sent, our support representative will contact you as soon as possible"; //"Your email has been successfully sent";
+                    $this -> _messange['success'] = self::CONTACTUS_SUCCESS; //"Your email has been successfully sent";
                 } else
                     $this -> _messange['error']['email'] = "Invalid email format"; // Invalid System Params
                 

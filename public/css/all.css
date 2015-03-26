@@ -632,9 +632,9 @@ form.form-contact-us .clean {
     border:none;
 }
 
+/* form.form-contact-us .info */
 form.form-discount .info,
-form.box-form .info,
-form.form-contact-us .info {
+form.box-form .info {
     padding-top: 0.5em;
     font-size: 13px;
     font-family: "Open Sans", Helvetica, Arial, sans-serif;

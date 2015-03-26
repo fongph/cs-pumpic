@@ -38,11 +38,11 @@
             <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.2.1.js"></script>
+    
     <script src="<?php echo getStaticUrl();?>/js/bootstrap.js"></script>
     <script src="<?php echo getStaticUrl();?>/js/fancy_checkbox.js"></script>
     <script src="<?php echo getStaticUrl();?>/js/main.js"></script>
-    
-    <script src="<?php echo getStaticUrl();?>/js/browser.js"></script>
     
     <script src="<?php echo getStaticUrl();?>/js/resize_images.js"></script>
     
@@ -58,6 +58,9 @@
     <script src="<?php echo getStaticUrl();?>/js/jquery.total-storage.min.js"></script>
      <!-- close/ out Windows -->
     <?php /*<script src="<?php echo getStaticUrl();?>/js/outWindows.js"></script>*/ ?>
+    
+    <!-- browser detected -->
+    <script src="<?php echo getStaticUrl();?>/js/browser.js"></script>
     
     <script src="<?php echo getStaticUrl();?>/js/wp/settings.js"></script>
     <script src="<?php echo getStaticUrl();?>/js/wp/init.js"></script>

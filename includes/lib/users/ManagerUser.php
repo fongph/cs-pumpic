@@ -33,6 +33,7 @@ class ManagerUser extends Manager
     const SITE_ID = 1;
     const LANG = 'en-GB';
     const ERROR_USER_ALREADY_EXISTS_EXCEPTION = 'Your email address is already registered with Pumpic. Restore <a href="/restore.html">password</a>'; // This email exists already.
+    const ERROR_ACCOUNT_LOCK = 'Your account is locked. The instructions on how to unlock your account were sent to your email.';
     
     static $_obj;
     
@@ -240,7 +241,7 @@ class ManagerUser extends Manager
         } catch (InvalidPasswordException $e) {
            self::$_obj -> _respons['_error'] = "Invalid email or password.";
         } catch (UserLockedException $e) {
-           self::$_obj -> _respons['_error'] = "Account is locked.";
+           self::$_obj -> _respons['_error'] = self::ERROR_ACCOUNT_LOCK;
         }
         
         return self::$_obj -> _respons;

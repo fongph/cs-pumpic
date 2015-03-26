@@ -6032,3 +6032,11 @@ form.form-contact-us .box-captcha {
 .btn-yellow:hover {
   outline: 0 !important;
 }
+
+.how-it-works b > a, 
+.how-it-works b > a:hover, 
+.how-it-works b > a:active, 
+.how-it-works b > a:focus {
+    color: #7f7f7f;
+    text-decoration: underline;
+}

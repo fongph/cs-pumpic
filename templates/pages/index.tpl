@@ -66,10 +66,8 @@
         
         {include file='../includes/content/how-get-pumpic.tpl'
             title = ""
-            style = "static"
-        }        
-                
-                
+        } 
+        
         {include file='../includes/content/why-pumpic.tpl'
                 blockBg="light"}
 

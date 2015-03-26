@@ -14,13 +14,13 @@
         {* BLOCK 'FLY_FEATURES v2' *}
         {include file='../includes/content/fly/fly_features_v2.tpl'}
         {* BLOCK 'FLY_DISCOUNT' *}
-        {include file='../includes/content/fly/fly-box-discount.tpl'}
+        {* include file='../includes/content/fly/fly-box-discount.tpl' *}
         {* BLOCK 'FLY_BUTTONS' *}
         {include file='../includes/content/fly/box-buttons.tpl'}
         {* BLOCK 'FLY_BUTTON_HELP GO_UP' *}
-        {include file='../includes/main/main-button-help.tpl'}
+        {* include file='../includes/main/main-button-help.tpl' *}
         {* BLOCK 'FLY_BUTTON_GROUP' *}
-        {include file='../includes/main/main-button-goup.tpl'}
+        {* include file='../includes/main/main-button-goup.tpl' *}
         <!-- end templates fly blocks -->
     <!-- END FLY BLOCKS-->
     
@@ -246,8 +246,6 @@
         <!-- TEMPLATES BANNERS -->
         {* BLOCK BANNER #1 'PROMO-BUY' *}
         {include file='../includes/content/banners/lib/banner-promo-buy.tpl'}
-        {* BLOCK BANNER #2 'PROMO-PARENT-CONTROL' *}
-        {include file='../includes/content/banners/lib/banner-promo-parent-control.tpl'}
         {* BLOCK BANNER #3 'PROMO-TRIAL' *}
         {include file='../includes/content/banners/lib/banner-promo-trial.tpl'}
         <!-- END TEMPLATES BANNERS -->

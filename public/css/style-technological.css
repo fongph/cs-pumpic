@@ -1356,6 +1356,7 @@ dl.table-rows.block-left {
 
 .box-features-header-item {
     padding-left: 40px;
+    margin: 0px 15px;
 }
 .box-features-header-item div > ul {
     margin: 0px;

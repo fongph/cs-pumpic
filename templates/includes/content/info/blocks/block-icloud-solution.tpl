@@ -16,7 +16,8 @@
               ga-action="click" 
               ga-category="promo buy" 
               ga-label="icloud solution">
-               <i class="icons ico-cloud-white"></i>iCloud solution
+               
+               <i class="icons {if isset($iCloudSolutionIButton) && $iCloudSolutionIButton != ""}{$iCloudSolutionIButton}{else}ico-cloud-white{/if}"></i>{if isset($iCloudSolutionBTitle) && $iCloudSolutionBTitle != ""}{$iCloudSolutionBTitle}{else}iCloud solution{/if}
            </a>
        </section>
    </div>

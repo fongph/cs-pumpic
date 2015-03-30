@@ -81,6 +81,8 @@
                                         {include file='./blocks/block-icloud-solution.tpl' 
                                                 iCloudSolutionUrl = $iCloudSolutionUrl
                                                 iCloudSolutionDescription = $iCloudSolutionDescription
+                                                iCloudSolutionIButton = $iCloudSolutionIButton
+                                                iCloudSolutionBTitle = $iCloudSolutionBTitle
                                         }
                                         {*{include './blocks/block-trial.tpl'}*}
                                     {/if}    

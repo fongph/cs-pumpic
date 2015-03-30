@@ -33,8 +33,10 @@
             promoBuyBlock = "no"
             iCloudSolution = 'yes'
             iCloudSolutionUrl = ''
-            iCloudSolutionDescription = 'What more monitoring <br />features? Jailbreak solution'
+            iCloudSolutionDescription = 'What more monitoring <br />features?'
             iCloudClass = 'icloud-p9'
+            iCloudSolutionBTitle = 'jailbreak solution'
+            iCloudSolutionIButton = 'ico-cloud-lock'
         }
         
         <!-- BLOCK ICLOUD SOLUTION -->

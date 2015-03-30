@@ -82,6 +82,14 @@ span.text-success {
   display: block;
   margin: auto;
 }
+
+.ico-cloud-lock {
+  margin-right: 7px;
+  background: url('../images/icons/icon-icloud-lock.png') no-repeat;
+  width: 20px;
+  height: 24px;
+}
+
 .weight-normal {
   font-weight: 400;
 }

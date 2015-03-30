@@ -32,7 +32,7 @@
             os_versions = "os_v2"                
             promoBuyBlock = "no"
             iCloudSolution = 'yes'
-            iCloudSolutionUrl = ''
+            iCloudSolutionUrl = '/iphone-with-jailbreak-monitoring.html'
             iCloudSolutionDescription = 'What more monitoring <br />features?'
             iCloudClass = 'icloud-p9'
             iCloudSolutionBTitle = 'jailbreak solution'
@@ -42,7 +42,7 @@
         <!-- BLOCK ICLOUD SOLUTION -->
         <div class="row-white">
             <div class="container">
-                <h2 class="list-group-item-heading text-center"><i class="icons ico-jailbreak"></i> iCloud Solution</h2>
+                <h2 class="list-group-item-heading text-center"><i class="icons ico-cloud{*ico-jailbreak*}"></i> iCloud Solution</h2>
             </div>
         </div>
         <!-- END ICLOUD SOLUTION -->

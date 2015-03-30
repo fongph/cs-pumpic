@@ -1,3 +1,17 @@
+/* ---- \\ icloud block ----- */
+.position-relative {
+    position: relative;
+}
+.icloud-p9 > #block-promo-buy {
+    padding: 7px;
+}
+.icloud-p9 #block-promo-buy section:first-child { margin-right: 5px; }
+.icloud-p9 #block-promo-buy .text-promo-buy.text-promo-sm {
+    font-size: 15px;
+}
+@media (max-width: 992px) { 
+   .icloud-p9 #block-promo-buy section:last-child { margin-top: 10px; } 
+}
 /* layout backgrounds */
 :-moz-placeholder {
   color: #c7c7c7;
@@ -109,7 +123,7 @@ img {
 }
 
 .fz14 {
- font-size: 14px;   
+ font-size: 14px !important;   
 }
 
 .fz15 {
@@ -117,7 +131,7 @@ img {
 }
 
 .fz16 {
- font-size: 16px;   
+ font-size: 16px !important;   
 }
 
 .fz17 {
@@ -4428,6 +4442,11 @@ only screen and (max-device-width: 480px) {
     width: 65px;
 }
 
+
+.mt5 {
+    margin-top: 5px;
+}
+
 .mt10 {
     margin-top: 10px;
 }
@@ -4437,6 +4456,10 @@ only screen and (max-device-width: 480px) {
 }
 
 /* ========== settings =========== */
+.pt10 {
+    padding-top: 10px;
+}
+
 .pt20 {
     padding-top: 20px;
 }
@@ -4453,12 +4476,37 @@ only screen and (max-device-width: 480px) {
     padding-bottom: 35px;
 }
 
+.pb0 {
+    padding-bottom: 0px;
+}
+
 .pb10 {
     padding-bottom: 10px;
 }
 
+.pc-pb50 {
+    padding-bottom: 50px;
+}
+
+.pc-pb60 {
+    padding-bottom: 60px;
+}
+.pc-pb65 {
+    padding-bottom: 65px;
+}
+
+
+@media(max-width: 1200px) {
+  .pc-pb50, .pc-pb60, .pc-pb65 {
+    padding-bottom: 0px;
+  }  
+}
 .mt20 {
     margin-top: 20px;
+}
+
+.mb5 {
+    margin-bottom: 5px;
 }
 
 .mb20 {
@@ -6039,4 +6087,30 @@ form.form-contact-us .box-captcha {
 .how-it-works b > a:focus {
     color: #7f7f7f;
     text-decoration: underline;
+}
+
+.iphones-text-full-width-block {
+    display: block;
+    background: #fff;
+    position: absolute;
+    padding: 10px 0px;
+    top: 378px;
+    width: 100%;
+    z-index: 9;
+    height: 55px;
+    border-top: 1px solid #dddddd;
+    border-left: 1px solid #dddddd;
+    border-right: 1px solid #dddddd;
+}
+
+.iphones-text-full-width-block h2 {
+    font-size: 26px;
+    margin-bottom: 5px;
+    margin-top: 0px;
+}
+
+@media (max-width: 1200px) {
+    .iphones-text-full-width-block {
+        display: none;
+    }
 }

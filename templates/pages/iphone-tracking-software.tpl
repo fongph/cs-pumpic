@@ -20,21 +20,25 @@
         
         <!-- CONTENT -->
         {include file='../includes/content/info/info-promo.tpl'
-            imgUrl = "header_banners/header_mobile.png"
+            imgUrl = "header_banners/iphone-tracking-software.png"
             imgAlt = "Apple iOS Mobile Monitoring App"
             imgAlign = "right"
             imgVerticalAlign = "bottom"
             textAlign = "right"
-            title = "Apple iOS Mobile  <br>Monitoring App"
-            description = "Enjoy multitask tracking with or without Jailbreak 
-                            <br>Control cell phone use. Follow location and online activity"
-            os_versions = "os_v2"                
+            title = "Apple Mobile <br>Monitoring App"
+            description = "Enjoy iOS multitask tracking with or without Jailbreak. 
+                            <br>Track location. View calls and texts. Follow online activity."
+            os_versions = "os_v2_its"                
             promoBuyBlock = "no"
         }
         
         <div class="light">
             <div class="container">
-                <div class="row">
+                <div class="row position-relative">
+                    <div class='iphones-text-full-width-block'>
+                        <h2>Choose Subscription Plan</h2>
+                    </div>
+                    
                         <div class="list-group-box">
                             <div class="list-group">
                                 <ul >
@@ -50,17 +54,17 @@
                                   </li>
                                   <li href="#" class="list-group-item">
                                     <p class="list-group-item-text">
-                                        <span class="title"><i class="icon-ok"></i> Physical access - <span class="text-success">Required</span></span>
+                                        <span class="title"><i class="icon-ok"></i> Physical Access - <span class="text-success">Required</span></span>
                                         <span>You need physical access to the target device to install the app on it.</span>
                                     </p>
                                   </li>
                                   <li href="#" class="list-group-item">
                                     <p class="list-group-item-text">
-                                        <span class="title"><i class="icon-cancel"></i> iCloud password - <span class="text-danger">Not Required</span></span>
+                                        <span class="title"><i class="icon-cancel"></i> iCloud Password - <span class="text-danger">Not Required</span></span>
                                         <span>You do not need to know iCloud password of the target iOS device.</span>
                                     </p>
                                   </li>
-                                  <li href="#" class="list-group-item">
+                                  <li href="#" class="list-group-item pc-pb65">
                                     <a href="http://{$domain}/iphone-with-jailbreak-monitoring.html" class="list-group-item-link">Learn more <i class="icons ico-arrows"></i></a>
                                   </li>
                                 </ul>
@@ -190,17 +194,17 @@
                                   </li>
                                   <li href="#" class="list-group-item">
                                     <p class="list-group-item-text">
-                                        <span class="title"><i class="icon-cancel"></i> Physical access - <span class="text-danger">Not Required</span></span>
+                                        <span class="title"><i class="icon-cancel"></i> Physical Access - <span class="text-danger">Not Required</span></span>
                                         <span>You do not need to install the app on the target device.</span>
                                     </p>
                                   </li>
                                   <li href="#" class="list-group-item">
                                     <p class="list-group-item-text">
-                                        <span class="title"><i class="icon-ok"></i> iCloud password - <span class="text-success">Required</span></span>
+                                        <span class="title"><i class="icon-ok"></i> iCloud Password - <span class="text-success">Required</span></span>
                                         <span>You need to know iCloud password of the target iOS device. </span>
                                     </p>
                                   </li>
-                                  <li href="#" class="list-group-item">
+                                  <li href="#" class="list-group-item pc-pb65">
                                     <a href="http://{$domain}/icloud-iphone-without-jailbreak-monitoring.html" class="list-group-item-link">Learn more <i class="icons ico-arrows"></i></a>
                                   </li>
                                 </ul>
@@ -214,7 +218,7 @@
                                                 <div class="dtable-cell">
                                                 <div class="dtable-text text-right">
                                                     {*<strong class='none-uppercase'>iCloud Solution</strong><br>*}
-                                                     <span>iCloud Solution is provided with <br>Premium subscription</span>
+                                                     <span>iCloud Solution is provided <br>with Premium subscription only</span>
                                                 </div>
                                                     <div class="wr_pack">
                                                         <img src="images/premium_pack.png">
@@ -324,11 +328,76 @@
         </script>                                                
 
         
-        {include file='../includes/main/main-testimonials.tpl'
+        {* include file='../includes/main/main-testimonials.tpl'
                 title = "Trusted by Over 10 000 Customers Worldwide"
                 sliders = "false"
-                blockBg="light"} 
+                blockBg="light" *} 
         
+        {* BLOCK TESTIMONIALS HTML (sliders) *}    
+        <div class="light">
+            <div class="container">
+                <h2 class="text-center testimonial-title">Trusted by Over 10 000 Customers Worldwide:</h2>
+                <div class="row">
+
+                    <div class="bxSliders">
+
+                        <!-- SLIDE #1 -->
+                        <div class="slide">
+                            <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
+                                    <img src="{$img}/testimonials/testimonials_new_25.png" alt="" class="testimonial-photo">
+                                    <div class="testimonial-text">
+                                            <h4>Mike P. (Denver, CO)</h4>
+                                            <p>“I didn’t like that my son played games on his iPad all the time. He didn’t want to do his homework, nor to clean his room. All he did was taping on the screen of his tablet. So, I decided to limit his “addiction” somehow. I didn’t want to take away the device, so I searched online and found Pumpic. After I had installed the app, I realized it was what I needed. For now, I can easily set limits on his gaming, Internet use and chatting. I don’t let him play, until his work is done.”</p>
+                                    </div>
+                            </div>
+                            <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
+                                    <img src="{$img}/testimonials/testimonials_new_26.png" alt="" class="testimonial-photo">
+                                    <div class="testimonial-text">
+                                            <h4>Peter G. (Richmond, VA)</h4>
+                                            <p>“I heard about Pumpic from my neighbors, who used it as parental controls to look after kids when at work, and to protect their own cell phones, in case they are lost or stolen. I also wanted to try it, but I didn’t want to jailbreak iPhones I’d bought for my children, my wife and me. When they told me it was available without jailbreak, I sing up and ordered the app with iCloud feature for all my family the very same day. I’m glad I can see my kids are protected now, I can monitor them online and prevent from dangers. And I’m also sure that my wife is safe, as well as she knows I’m ok too.”</p>
+                                    </div>
+                            </div>
+                            <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
+                                    <img src="{$img}/testimonials/testimonials_new_27.png" alt="" class="testimonial-photo">
+                                    <div class="testimonial-text">
+                                            <h4>Sandra O. (Nashville, TN)</h4>
+                                            <p>“Pumpic has reasonably simplified my life. I didn’t know where to find enough time to look after my three sons, and at the same time work full time. I saw Pumpic ad in the Internet and decided to give it a try. I asked my older son to jailbreak his own iPhone and tablets of my younger kids. Then I installed the app on their devices. I can finally calm down and be sure that my children are safe, even when I’m not at home. Thanks Pumpic for helping parents like me.”</p>
+                                    </div>
+                            </div>
+                        </div> <!-- .slide-->
+                        <!-- END SLIDER #1 -->
+                        <!-- SLIDE #2 -->
+                        <div class="slide">
+                            <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
+                                    <img src="{$img}/testimonials/testimonials_new_1.png" alt="" class="testimonial-photo">
+                                    <div class="testimonial-text">
+                                            <h4>Amanda T. (St. Louis, MO)</h4>
+                                            <p>“My daughter has recently become inseparable friends with her iPod Touch. She doesn’t want to do anything but listen to music, chat with her friends via Skype or simply scroll her Facebook feed. My husband decided to take away her device, but I said it was not the best idea. We both agreed that a parental control app would be a solution, and decided to try Pumpic. It is amazing! In addition to various device limits, it lets us track her location, Internet usage and block inappropriate content. It is a real helping hand for parents.”</p>
+                                    </div>
+                            </div>
+                            <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
+                                    <img src="{$img}/testimonials/testimonials_new_2.png" alt="" class="testimonial-photo">
+                                    <div class="testimonial-text">
+                                            <h4>Monica A. (Tampa, FL)</h4>
+                                            <p>“My husband and I have two teenage daughters. We long ago realized that we should have a tool to keep an eye on their online life and phone activities. But we couldn’t find a universal app to monitor our older daughter’s iPhone and Android device we bought for our little one. A friend of ours recommended trying Pumpic. He was using it for two or three months on his own, and was very satisfied with results. My husband bought two subscriptions for a year at once. I couldn’t believe it would work so good. The app allows us to see who calls them and write messages, where they go online and track their location in real time. It’s a must-have solution for parents in the modern world I think.”</p>
+                                    </div>
+                            </div>
+                            <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
+                                    <img src="{$img}/testimonials/testimonials_new_3.png" alt="" class="testimonial-photo">
+                                    <div class="testimonial-text">
+                                            <h4>Jason G. (Los Angeles, CA)</h4>
+                                            <p>“I’ve made my son a gift, bought him a brand new iPhone for all that great job he did at school. The first thing I thought about after the purchase was how to secure my kid. I didn’t want him to spend much time chatting and gaming like most kids do today. I also wanted to make sure I’ll find his iPhone, if my son loses it or it is stolen. My friends recommended me Pumpic and I’m even more than satisfied with the app. It keeps my son and his device protected.”</p>
+                                    </div>
+                            </div>
+                        </div> <!-- .slide-->
+                        <!-- END SLIDER #2-->
+
+                    </div> <!-- .bxSliders -->
+
+                </div>
+            </div>
+        </div>        
+                
         <!-- RECOMMENDED -->
         {*
             Template: RECOMMENDED

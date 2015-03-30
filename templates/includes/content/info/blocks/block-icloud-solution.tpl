@@ -1,9 +1,13 @@
-<div class="mt10">
+<div class="mt10 {if $iCloudClass}{$iCloudClass}{/if}">
    <div class="block-promo-buy" id="block-promo-buy">
        <section>
            <span class="text-promo-buy text-promo-sm">     
+               {if isset($iCloudSolutionDescription) && $iCloudSolutionDescription != ""}
+                   {$iCloudSolutionDescription}
+               {else}    
                Don't want to
                <br>Jailbreak iPhone?
+               {/if}
            </span>
        </section>
        <section>

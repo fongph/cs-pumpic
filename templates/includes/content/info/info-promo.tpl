@@ -32,13 +32,23 @@
                                         {/if}
                                     </p>
 
-                                    {if $os_versions == 'os_v2'}
-                                    <ul class="compatibility compatibility-lg">
-                                        <li><i class="icon-apple"></i> iOS 6.0 – 8.2</li>
-                                        <li><i class="icons ico-iphones"></i>iPhones</li>
-                                        <li><i class="icons ico-ipads"></i>iPads</li>
-                                        <li><i class="icons ico-ipods"></i>iPods Touch</li>
-                                    </ul>
+                                    {if $os_versions == 'os_v2' || $os_versions == 'icloud_v2' || $os_versions == 'os_v2_its'}
+                                        {if $os_versions == 'icloud_v2'} 
+                                            <ul class="compatibility compatibility-lg">
+                                                <li><i class="icon-apple"></i> iOS 6.0 – 8.1.2</li>
+                                                <li><i class="icons ico-iphones"></i>iPhone</li>
+                                                <li><i class="icons ico-ipads"></i>iPad</li>
+                                                <li><i class="icons ico-ipods"></i>iPod Touch</li>
+                                            </ul>
+                                        {else}
+                                            <ul class="compatibility compatibility-lg">
+                                                {if $os_versions != 'os_v2_its'}<li><i class="icon-apple"></i> iOS 6.0 – 8.2</li>{/if}
+                                                <li><i class="icons ico-iphones"></i>iPhone</li>
+                                                <li><i class="icons ico-ipads"></i>iPad</li>
+                                                <li><i class="icons ico-ipods"></i>iPod Touch</li>
+                                            </ul>
+                                        {/if}
+                                              
                                     {else}    
                                     <ul class="compatibility">
                                         <li><i class="icon-android"></i> (2.2 - 5.1)</li>
@@ -69,7 +79,9 @@
                                     
                                     {if isset($iCloudSolution) && $iCloudSolution == 'yes'}
                                         {include file='./blocks/block-icloud-solution.tpl' 
-                                                iCloudSolutionUrl = $iCloudSolutionUrl}
+                                                iCloudSolutionUrl = $iCloudSolutionUrl
+                                                iCloudSolutionDescription = $iCloudSolutionDescription
+                                        }
                                         {*{include './blocks/block-trial.tpl'}*}
                                     {/if}    
 

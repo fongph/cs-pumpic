@@ -6,7 +6,8 @@
     
 <body>
     <!-- FLY BLOCKS -->
-    {include file='../includes/content/fly/fly_blocks.tpl'}
+    {include file='../includes/main/main-button-help.tpl'}
+    {include file='../includes/main/main-button-goup.tpl'}
     <!-- END FLY BLOCKS-->
     
     <div class="wrapper icloud-iphone-without-jailbreak-monitoring">
@@ -20,18 +21,20 @@
         
         <!-- CONTENT -->
         {include file='../includes/content/info/info-promo.tpl'
-            imgUrl = "header_banners/header_mobile.png"
+            imgUrl = "header_banners/icloud-iphone-without-jailbreak-monitoring.png"
             imgAlt = "Apple iOS Mobile Monitoring App"
             imgAlign = "right"
             imgVerticalAlign = "bottom"
             textAlign = "right"
-            title = "Apple iOS Mobile  <br>Monitoring App"
-            description = "Enjoy multitask tracking with or <b>without Jailbreak</b> 
-                            <br>Control cell phone use. Follow location and online activity"
+            title = "Apple Monitoring App  <br>iCloud Solution"
+            description = "Enjoy multitask tracking without Jailbreak 
+                            <br>Control iPhone use. Follow location and online activity"
             os_versions = "os_v2"                
             promoBuyBlock = "no"
             iCloudSolution = 'yes'
             iCloudSolutionUrl = ''
+            iCloudSolutionDescription = 'What more monitoring <br />features? Jailbreak solution'
+            iCloudClass = 'icloud-p9'
         }
         
         <!-- BLOCK ICLOUD SOLUTION -->
@@ -54,7 +57,7 @@
                                 iCloud solution is available with <b>Premium subscription</b> only.
                             </p>
                             <p>
-                               Soon after submitting the payment, you will receive a letter with further installation guidelines. 
+                               Soon after submitting the payment, you will receive <b>an email</b>. 
                             </p>
                         </div>
                         <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
@@ -106,7 +109,7 @@
                                                             <div class="dtable-cell text-center">
                                                             <div class="dtable-text text-right">
                                                                 {*<strong class='none-uppercase'>iCloud Solution</strong><br>*}
-                                                                 <span class='none-uppercase'>iCloud Solution is provided with <br>Premium subscription</span>
+                                                                 <span class='none-uppercase'>iCloud Solution is provided <br>with Premium subscription only</span>
                                                             </div>
                                                                 <div class="wr_pack">
                                                                     <img src="images/premium_pack.png">
@@ -174,11 +177,11 @@
                                                         <div class="basic_fe reset-list media-sm-block">
                                                             <ul class="list_price-no-link list_price-no-link-inline">
 
-                                                                <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> SMS <span>View sent and received messages</span>
+                                                                <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> SMS <span>View sent and received messages;</span>
                                                                 </li>
-                                                                <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Calls <span>Follow in- and outbound calls</span>
+                                                                <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Calls <span>Follow in- and outbound calls;</span>
                                                                 </li>
-                                                                <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Contacts <span>View existing contacts</span></li>
+                                                                <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Contacts <span>View existing contacts;</span></li>
 
                                                             </ul>
                                                         </div>
@@ -191,14 +194,14 @@
                                                         <div class="basic_fe reset-list media-sm-block">
                                                             <ul class="list_price-no-link list_price-no-link-inline">
 
-                                                                <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Browser <span>View visited websites</span></li>
-                                                                <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Bookmarks <span>View bookmarked websites</span></li>
-                                                                <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Calendar  <span>Follow scheduled events</span></li>
+                                                                <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Browser <span>View visited websites;</span></li>
+                                                                <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Bookmarks <span>View bookmarked websites;</span></li>
+                                                                <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Calendar  <span>Follow scheduled events;</span></li>
                                                             </ul>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <p class="inline-block text-center none-uppercase fz16">If there is not enough functionality of Pumpic iCloud solution, you can try to full featured <br /><a href="http://{$domain}/iphone-tracking-software.html">Pumpic jailbreak solution</a>.</p>
+                                                <p class="inline-block text-center none-uppercase"><i class='fz16 inline-block'>If there is not enough functionality of Pumpic iCloud solution, you can try full featured <a class='underline' href="http://{$domain}/iphone-with-jailbreak-monitoring.html">Pumpic jailbreak solution</a>.</i></p>
                                             </th>
                                         </tr>
                                         <tr>
@@ -236,7 +239,7 @@
                                                         <div class="basic_fe reset-list media-sm-block">
                                                             <ul class="list_price-no-link">
 
-                                                                <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Remote Activity Control <span>View all the data sent from the target device via your personal Control Panel. <br>Control Panel can be accessed from any browser and any computer or mobile gadget (smartphones and tablets).</span></li>
+                                                                <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Remote Activity Control <span>View all the data from the target device via your personal Control Panel. <p class='pt10 pb0'>Control Panel can be accessed from any browser and any computer or mobile gadget (smartphones and tablets).</p></span></li>
                                                             </ul>
                                                         </div>
                                                     </div>

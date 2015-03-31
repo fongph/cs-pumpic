@@ -13,7 +13,16 @@ $(document).ready(function(){
         if(typeof $.cookie('popUp_email') !== "undefined" 
                 && !parseInt( $.cookie('popUp_email') )) {
             
-            $('.box-popUp > #box-email').bPopup({
+            var $_popUp = $('.box-popUp'),
+                $box_email = $_popUp.find('#box-email');
+
+            if(!$box_email.length) { 
+                $box_email = $_popUp
+                        .append( _htmlPopUp.box_email )
+                        .find('#box-email'); 
+            } 
+            
+            $box_email.bPopup({
                     modalClose: true,
                     appending: false,
                     opacity: 0.6,
@@ -125,13 +134,23 @@ function popUpValidate() {
                         } else if(data.success) {
                             // google analitycs
                             // ga('send', 'event', 'form', 'submit', 'compatibility-request-success');
-
+                            var $_popUp = $('.box-popUp'),
+                                $email_success = $_popUp.find('#box-email-success');
+                                
+                            if(!$email_success.length) { 
+                                $email_success = $_popUp
+                                        .append( _htmlPopUp.email_success )
+                                        .find('#box-email-success'); 
+                            }
+                            
                             // close popUp
-                            $('.box-popUp > #box-email').bPopup({
-                                transition: 'fadeOut'
-                            }).close();
+                            if($('.box-popUp > .popUp').is(':visible')) {
+                                $('.box-popUp > .popUp').bPopup({
+                                    transition: 'fadeOut'
+                                }).close();
+                            }
 
-                            $('.box-popUp > #box-email-success').bPopup({
+                            $email_success.bPopup({
                                     modalClose: true,
                                     appending: false,
                                     opacity: 0.6,
@@ -198,10 +217,14 @@ function popUpValidate() {
                     // google analitycs
                     // ga('send', 'event', 'form', 'submit', 'compatibility-request-success');
 
+                    
+
                     // close popUp
-                    $('.box-popUp > #box-email').bPopup({
-                        transition: 'fadeOut'
-                    }).close();
+                    if($('.box-popUp > .popUp').is(':visible')) {
+                        $('.box-popUp > #box-email').bPopup({
+                            transition: 'fadeOut'
+                        }).close();
+                    }        
 
                     $('.box-popUp > #box-email-success').bPopup({
                             modalClose: true,

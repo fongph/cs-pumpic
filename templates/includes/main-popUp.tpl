@@ -1,6 +1,6 @@
 <!-- Element to pop up -->
-<div class="box-popUp">
-{nocache} 
+<div class="box-popUp" data-test="Test">
+{* nocache} 
     {if ''|hasUser} 
     <div id="box-status-auth" class="popUp">
         <div>
@@ -27,7 +27,7 @@
     </div>
     
     {/if}
-{/nocache}  
+{/nocache *}  
     {*
     <div id="box-email" class="popUp">
         <div>
@@ -49,7 +49,7 @@
         </div>
     </div> *}
 
-    <div id="box-email-success" class="popUp">
+    {*<div id="box-email-success" class="popUp">
         <div>
             <label class="title gold"> Thank you! <i class="close small"></i></label>   
         </div>
@@ -61,6 +61,6 @@
                 </div>
             </form>
         </div>
-    </div>
+    </div>*}
 
 </div>    

@@ -1,6 +1,6 @@
 <!-- Element to pop up -->
 <div class="box-popUp">
-    
+    <?php /*
     <div id="box-email" class="popUp">
         <div>
             <label class="title gold"> <b>10%</b> off<i class="close small"></i></label>   
@@ -34,5 +34,6 @@
             </form>
         </div>
     </div>
+    */ ?>
 
 </div>    

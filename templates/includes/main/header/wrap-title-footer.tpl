@@ -82,7 +82,16 @@
         <!-- monay convert-->
         <script src="{$js}/money/money.min.js?{style_cache data='2015-02-05'}"></script>
         <script src="{$js}/currancy.js?{style_cache data='2015-02-05'}"></script>
-        
+        {nocache} 
+        <script>
+            {assign _hasUser 'false'}
+            {if ''|hasUser}{assign _hasUser 'true'}{/if}
+            
+            var UserLogin = '{UserLogin}',
+                _hasUser = '{$_hasUser}';
+                        
+        </script>
+        {/nocache} 
         <!-- init -->
         <script src="{$js}/scroll.js?{style_cache data='2015-02-05'}"></script>
         <script src="{$js}/init.js?{style_cache data='2015-02-05'}"></script>

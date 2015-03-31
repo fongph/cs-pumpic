@@ -214,6 +214,32 @@
 // globa variable
 $data_hash = [];
 
+var _htmlPopUp = {
+    'boxStatusAuth': '<div id="box-status-auth" class="popUp"><div><label class="title gold">Hello!<i class="close small"></i></label></div>'
+        +'<p class="info">You have just logged into Pumpic.com, enjoy your time with us or go straight to your <a href="http://cp.pumpic.com">account</a>.</p>'
+        +'</div>',
+    'boxStatusRegistration': '<div id="box-status-registration" class="popUp">'
+        +'<div><label class="title gold">Hello!<i class="close small"></i></label></div>'
+        +'<p class="info">You have just registered in Pumpic.com, enjoy your time with us or go straight to your <a href="http://cp.pumpic.com">account</a>.</p>'
+        +'</div>',
+    'boxStatusFreeTrialRegistration' : '<div id="box-status-free-trial-registration" class="popUp">'
+        +'<div><label class="title gold">Thank you for signing up!<i class="close small"></i></label></div>'
+        +'<p class="info">The email with registration details was sent to '+UserLogin+'.<br /> You can go straight to your <a href="http://cp.pumpic.com">Personal Account</a> now.</p>'
+        +'</div>',
+    'email_success' : '<div id="box-email-success" class="popUp">'
+        +'<div><label class="title gold"> Thank you! <i class="close small"></i></label></div>'
+        +'<div class="info text-center"> Your discount code will be sent to you soon.'
+        +'<form><div><a href="#" class="button-red btn-default block-popUp-close">Close</a></div></form>'
+        +'</div></div>',
+    'box_email' : '<div id="box-email" class="popUp">'
+        +'<div><label class="title gold"> <b>10%</b> off<i class="close small"></i></label></div>'
+        +'<div class="info text-center">Want to get <a href="#">10% discount</a> right now?<br />Subscribe to our specail promo!'
+        +'<form class="block-popup-form text-center">'
+        +'<div><input id="email" class="required" type="email" name="email" value="" placeholder="email" />'
+        +'<div id="email-error" class="error"></div></div><div><button class="button-red btn-default">Save 10% today</button></div>'
+        +'</form></div></div>',    
+};
+    
 // anchor
 jQuery(function(){
     jQuery(window).hashchange(function(){ 
@@ -266,21 +292,29 @@ function hashchange_onLoadInit() {
 
 function hashchange_AfterInit() { 
     var _data = _parceHash( $data_hash );
-    
+    var $_popUp = $('.box-popUp'),
+        $auth = $_popUp.find('#box-status-auth'),
+        $registration = $_popUp.find('#box-status-registration'),
+        $trial_registration = $_popUp.find('#box-status-free-trial-registration');
+         
     // init bPopUp
-    if(isset(_data['popUp'])) {
+    if(isset(_data['popUp']) && _hasUser == 'true') {
         
         if(_data['popUp'] == "auth") { // && !getCookie('popUp')
             // google analitycs
             ga('send', 'event', 'form', 'submit', 'login-success');
+           
+            if(!$auth.length) { 
+                $auth = $_popUp
+                        .append( _htmlPopUp.boxStatusAuth )
+                        .find('#box-status-auth'); 
+            }
             
             // login status ok
-            if(isset($('.box-popUp #box-status-auth'))) {
-                var $this = $('.box-popUp #box-status-auth')
-                , title = $this.find('.title') 
-                , content = $this.find('.info'); 
-
-                $this.bPopup({
+            if(isset($auth)) {
+                var title = $auth.find('.title') 
+                , content = $auth.find('.info'); 
+                $auth.bPopup({
                     modalClose: true,
                     opacity: 0.6,
                     follow: [false, false], 
@@ -302,13 +336,17 @@ function hashchange_AfterInit() {
             // google analitycs
             ga('send', 'event', 'form', 'submit', 'registration-success');
             
+            if(!$registration.length) { 
+                $registration = $_popUp
+                        .append( _htmlPopUp.boxStatusRegistration )
+                        .find('#box-status-registration'); 
+            }
+            
             // login status ok
-            if(isset($('.box-popUp #box-status-registration'))) {
-                var $this = $('.box-popUp #box-status-registration')
-                , title = $this.find('.title') 
-                , content = $this.find('.info'); 
-
-                $this.bPopup({
+            if(isset($registration)) {
+                var title = $registration.find('.title') 
+                , content = $registration.find('.info'); 
+                $registration.bPopup({
                     modalClose: true,
                     opacity: 0.6,
                     follow: [false, false], 
@@ -328,14 +366,17 @@ function hashchange_AfterInit() {
         
         //free-trial-registration
         if(_data['popUp'] == "free-trial-registration") { // && !getCookie('popUp')
-            
+            if(!$trial_registration.length) { 
+                $trial_registration = $_popUp
+                        .append( _htmlPopUp.boxStatusFreeTrialRegistration )
+                        .find('#box-status-free-trial-registration'); 
+            }
             // login status ok
-            if(isset($('.box-popUp #box-status-free-trial-registration'))) {
-                var $this = $('.box-popUp #box-status-free-trial-registration')
-                , title = $this.find('.title') 
-                , content = $this.find('.info'); 
+            if(isset($trial_registration)) {
+                var title = $trial_registration.find('.title') 
+                , content = $trial_registration.find('.info'); 
 
-                $this.bPopup({
+                $trial_registration.bPopup({
                     modalClose: true,
                     opacity: 0.6,
                     follow: [false, false], 
@@ -353,7 +394,6 @@ function hashchange_AfterInit() {
                 });
             } 
         }
-        
         
     }
 }
@@ -585,6 +625,7 @@ function die( $_msg ) {
 }
 
 $(document).ready(function(){ 
+    
     cookie_init();
     
     $.data( window, "filters", false); // init clear cache

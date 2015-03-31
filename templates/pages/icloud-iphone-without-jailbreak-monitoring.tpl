@@ -35,7 +35,7 @@
             iCloudSolutionUrl = '/iphone-with-jailbreak-monitoring.html'
             iCloudSolutionDescription = 'Want more monitoring <br />features?'
             iCloudClass = 'icloud-p9'
-            iCloudSolutionBTitle = 'Jailbreak Solution'
+            iCloudSolutionBTitle = 'jailbreak solution'
             iCloudSolutionIButton = 'ico-cloud-lock'
         }
         

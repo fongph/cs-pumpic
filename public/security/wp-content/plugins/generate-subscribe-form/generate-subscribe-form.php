@@ -65,7 +65,7 @@ class generate_subscribe_form_widget extends WP_Widget
                 $img = htmlspecialchars( $instance['img'] );
                 $show_img = htmlspecialchars( $instance['show_img'] );
                 $link = htmlspecialchars( $instance['link'] );
-                $id_input = htmlspecialchars( $instance['id_input'] );
+                $id_input = ($instance['id_input'] == '') ? 'MERGE0' : htmlspecialchars( $instance['id_input'] );
                 $type_form = htmlspecialchars( $instance['type_form'] );
                 
                 $type_form_option = '';
@@ -97,12 +97,12 @@ class generate_subscribe_form_widget extends WP_Widget
                 
                 echo '	<p style="text-align:left;"><label for="' . $this->get_field_name( 'id_input' ) . '">' . __( 'ID INPUT( MailChimp Form ):' ) . '</label><br />
 				<input style="width: 300px;" id="' . $this->get_field_id( 'id_input' ) . '" name="' . $this->get_field_name( 'id_input' ) . '" type="text" value="' . $id_input . '" /><br />
-				<label for="' . $this->get_field_name( 'id_input' ) . '-info">* Поле для того чтобы в Мэилчимп подставлялся емэйл из формы. Прогер должен поменять, если емэйл в форму автоматом не подставляется.</label>
+				<label for="' . $this->get_field_name( 'id_input' ) . '-info">* По этой переменной в Mailchimp форму передается введенный емэйл из формы. Если при тесте емэйл передается - оставляем как есть. Если нет - прогер должен подставить корректную.</label>
                                 </p>';
                 
                 echo '	<p style="text-align:left;"><label for="' . $this->get_field_name( 'img' ) . '">' . __( 'Img:' ) . '</label><br />
 				<input style="width: 300px;" id="' . $this->get_field_id( 'img' ) . '" name="' . $this->get_field_name( 'img' ) . '" type="text" value="' . $img . '" /><br />
-                                <label for="' . $this->get_field_name( 'img' ) . '-info"> Ссылка к изображению для данной формы. </label>    
+                                <label for="' . $this->get_field_name( 'img' ) . '-info"> Ссылка к изображение слева. Берем из Media>Library. </label>    
 				</p>';
                 
 		echo '	<p style="text-align:left;"><label for="' . $this->get_field_name( 'title' ) . '">' . __( 'Title:' ) . '</label><br />

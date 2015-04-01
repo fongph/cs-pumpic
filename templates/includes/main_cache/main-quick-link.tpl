@@ -8,7 +8,7 @@
                                         <div class="col-sm-6 col-md-6 col-lg-6">
                                                 <ul class="list_succes">
                                                         <li>
-                                                                <a href="/features.html">Major features of Pumpic</a>
+                                                                <a href="/all-features.html">Major features of Pumpic</a>
                                                         </li>
 
                                                         <li>

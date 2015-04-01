@@ -43,7 +43,7 @@
 									</li>
                                                                         
 									<li>
-										<a href="<?php echo getStaticUrl();?>/features.html">Features</a>
+										<a href="<?php echo getStaticUrl();?>/all-features.html">Features</a>
 									</li> 
 									<?php /*<li>
 										<a href="<?php echo getStaticUrl();?>/how-to.html">How to</a>

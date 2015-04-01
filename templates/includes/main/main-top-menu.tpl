@@ -45,8 +45,8 @@
                                 >
                                 <a href="/store.html">Store</a>
                             </li>
-                            <li {if $topmenu_active=='features'} class="active"{/if}>
-                                <a href="/features.html">Features</a>
+                            <li {if $topmenu_active=='all-features'} class="active"{/if}>
+                                <a href="/all-features.html">Features</a>
                             </li>
                             
                             {*<li {if $topmenu_active=='how-to'} class="active"{/if}>

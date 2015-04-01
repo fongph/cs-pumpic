@@ -13,7 +13,7 @@
         <!-- TOP MENU -->
 
 	{include file='../includes/main/main-top-menu.tpl'
-            topmenu_active='home'
+            topmenu_active='all-features'
             cache_id = "includes_main_main-top-menu"
             nocache
         }

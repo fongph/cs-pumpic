@@ -179,11 +179,11 @@
                                                         <div class="basic_fe reset-list media-sm-block">
                                                             <ul class="list_price-no-link list_price-no-link-inline">
 
-                                                                <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> SMS <span>View sent and received messages;</span>
+                                                                <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> SMS <span>View sent and received messages.</span>
                                                                 </li>
-                                                                <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Calls <span>Follow in- and outbound calls;</span>
+                                                                <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Calls <span>Follow in- and outbound calls.</span>
                                                                 </li>
-                                                                <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Contacts <span>View existing contacts;</span></li>
+                                                                <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Contacts <span>View existing contacts.</span></li>
 
                                                             </ul>
                                                         </div>
@@ -196,14 +196,14 @@
                                                         <div class="basic_fe reset-list media-sm-block">
                                                             <ul class="list_price-no-link list_price-no-link-inline">
 
-                                                                <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Browser <span>View visited websites;</span></li>
-                                                                <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Bookmarks <span>View bookmarked websites;</span></li>
-                                                                <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Calendar  <span>Follow scheduled events;</span></li>
+                                                                <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Browser <span>View visited websites.</span></li>
+                                                                <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Bookmarks <span>View bookmarked websites.</span></li>
+                                                                <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Calendar  <span>Follow scheduled events.</span></li>
                                                             </ul>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <p class="inline-block text-center none-uppercase"><i class='fz16 inline-block'>If there is not enough functionality of Pumpic iCloud solution, you can try full featured <a class='underline' href="http://{$domain}/iphone-with-jailbreak-monitoring.html">Pumpic jailbreak solution</a>.</i></p>
+                                                <p class="inline-block text-center none-uppercase"><i class='fz15 inline-block'>If there is not enough functionality of Pumpic iCloud solution, you can try full featured <a class='underline' href="http://{$domain}/iphone-with-jailbreak-monitoring.html">Pumpic jailbreak solution</a>.</i></p>
                                             </th>
                                         </tr>
                                         <tr>
@@ -306,10 +306,75 @@
         </div>
         <!-- END BLOCK PRICE AND FEATURES -->
         
-        {include file='../includes/main/main-testimonials.tpl'
+        {*include file='../includes/main/main-testimonials.tpl'
                 title = "Trusted by Over 10 000 Customers Worldwide"
                 sliders = "false"
-                blockBg="light"} 
+                blockBg="light"*}
+                
+        {* BLOCK TESTIMONIALS HTML (sliders) *}    
+        <div class="light">
+            <div class="container">
+                <h2 class="text-center testimonial-title">Trusted by Over 10 000 Customers Worldwide:</h2>
+                <div class="row">
+
+                    <div class="bxSliders">
+
+                        <!-- SLIDE #1 -->
+                        <div class="slide">
+                            <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
+                                    <img src="{$img}/testimonials/testimonials_new_25.png" alt="" class="testimonial-photo">
+                                    <div class="testimonial-text">
+                                            <h4>Mike P. (Denver, CO)</h4>
+                                            <p>“I didn’t like that my son played games on his iPad all the time. He didn’t want to do his homework, nor to clean his room. All he did was taping on the screen of his tablet. So, I decided to limit his “addiction” somehow. I didn’t want to take away the device, so I searched online and found Pumpic. After I had installed the app, I realized it was what I needed. For now, I can easily set limits on his gaming, Internet use and chatting. I don’t let him play, until his work is done.”</p>
+                                    </div>
+                            </div>
+                            <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
+                                    <img src="{$img}/testimonials/testimonials_new_26.png" alt="" class="testimonial-photo">
+                                    <div class="testimonial-text">
+                                            <h4>Peter G. (Richmond, VA)</h4>
+                                            <p>“I heard about Pumpic from my neighbors, who used it as parental controls to look after kids when at work, and to protect their own cell phones, in case they are lost or stolen. I also wanted to try it, but I didn’t want to jailbreak iPhones I’d bought for my children, my wife and me. When they told me it was available without jailbreak, I sing up and ordered the app with iCloud feature for all my family the very same day. I’m glad I can see my kids are protected now, I can monitor them online and prevent from dangers. And I’m also sure that my wife is safe, as well as she knows I’m ok too.”</p>
+                                    </div>
+                            </div>
+                            <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
+                                    <img src="{$img}/testimonials/testimonials_new_27.png" alt="" class="testimonial-photo">
+                                    <div class="testimonial-text">
+                                            <h4>Sandra O. (Nashville, TN)</h4>
+                                            <p>“Pumpic has reasonably simplified my life. I didn’t know where to find enough time to look after my three sons, and at the same time work full time. I saw Pumpic ad in the Internet and decided to give it a try. I asked my older son to jailbreak his own iPhone and tablets of my younger kids. Then I installed the app on their devices. I can finally calm down and be sure that my children are safe, even when I’m not at home. Thanks Pumpic for helping parents like me.”</p>
+                                    </div>
+                            </div>
+                        </div> <!-- .slide-->
+                        <!-- END SLIDER #1 -->
+                        <!-- SLIDE #2 -->
+                        <div class="slide">
+                            <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
+                                    <img src="{$img}/testimonials/testimonials_new_1.png" alt="" class="testimonial-photo">
+                                    <div class="testimonial-text">
+                                            <h4>Amanda T. (St. Louis, MO)</h4>
+                                            <p>“My daughter has recently become inseparable friends with her iPod Touch. She doesn’t want to do anything but listen to music, chat with her friends via Skype or simply scroll her Facebook feed. My husband decided to take away her device, but I said it was not the best idea. We both agreed that a parental control app would be a solution, and decided to try Pumpic. It is amazing! In addition to various device limits, it lets us track her location, Internet usage and block inappropriate content. It is a real helping hand for parents.”</p>
+                                    </div>
+                            </div>
+                            <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
+                                    <img src="{$img}/testimonials/testimonials_new_2.png" alt="" class="testimonial-photo">
+                                    <div class="testimonial-text">
+                                            <h4>Monica A. (Tampa, FL)</h4>
+                                            <p>“My husband and I have two teenage daughters. We long ago realized that we should have a tool to keep an eye on their online life and phone activities. But we couldn’t find a universal app to monitor our older daughter’s iPhone and Android device we bought for our little one. A friend of ours recommended trying Pumpic. He was using it for two or three months on his own, and was very satisfied with results. My husband bought two subscriptions for a year at once. I couldn’t believe it would work so good. The app allows us to see who calls them and write messages, where they go online and track their location in real time. It’s a must-have solution for parents in the modern world I think.”</p>
+                                    </div>
+                            </div>
+                            <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
+                                    <img src="{$img}/testimonials/testimonials_new_3.png" alt="" class="testimonial-photo">
+                                    <div class="testimonial-text">
+                                            <h4>Jason G. (Los Angeles, CA)</h4>
+                                            <p>“I’ve made my son a gift, bought him a brand new iPhone for all that great job he did at school. The first thing I thought about after the purchase was how to secure my kid. I didn’t want him to spend much time chatting and gaming like most kids do today. I also wanted to make sure I’ll find his iPhone, if my son loses it or it is stolen. My friends recommended me Pumpic and I’m even more than satisfied with the app. It keeps my son and his device protected.”</p>
+                                    </div>
+                            </div>
+                        </div> <!-- .slide-->
+                        <!-- END SLIDER #2-->
+
+                    </div> <!-- .bxSliders -->
+
+                </div>
+            </div>
+        </div>        
         
         <!-- RECOMMENDED -->
         {*

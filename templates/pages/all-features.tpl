@@ -234,11 +234,11 @@
                                        >Free Trial</a>
                                     </li>*}    
                                 </ul>
-                                <p>View, track and block mobile activity remotely with Pumpic.<br />
+                                <p>Enjoy more than <strong>20 features</strong> of <strong>remote mobile tracking</strong> with Pumpic.</p>
+                                <p>View, track and block mobile activity remotely with Pumpic.<br class='only-mobile' />
                                     Keep your eyes open!
                                     {*Keep your family safe and secured with Pumpic. 
                                     <br />Track location. View calls and SMS. Follow online activity.*}</p>
-                                <p>Enjoy more than <strong>20 features</strong> of <strong>remote mobile tracking</strong> with Pumpic.</p>
                             </div>
                         </div>  
                                 
@@ -724,8 +724,40 @@
                             </div>
                         </div>
                         
-                        <!-- \\ #4 Photos/Videos: (odd) -->
+                        <!-- \\ #4 Applications: (odd) -->
                         <div class="div-table-row odd">
+                            <div class="item-feature-list div-table-column col-lg-4 text-right">
+                                
+                                <div class='feature-item-info'>
+                                    <ul>
+                                        <li>
+                                            <i class='i-list-features-applications only-mobile'></i>
+                                            <strong>Applications</strong>
+                                            <i class='i-list-features-applications only-pc'></i>
+                                        </li>
+                                    </ul>
+                                    
+                                    <div class='block-info'>
+                                        <p>Keep track of <b>installed applications</b> on the target device. <b>Block</b> and <b>set time limits</b> on running particular apps installed on the target device.</p>
+                                        
+                                        <div><a class="btn-orange" href="http://demo.{$domain}/setDevice/125?redirect_url=cp/applications">View Demo</a></div>
+                                        <label class="color-orange">(no registration required)</label>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="item-feature-list div-table-column col-lg-1 text-center">
+                                <div class='box-line-solid only-pc'>
+                                    <i class='i-bubble'></i>
+                                    <span class='box-solid-1'></span>
+                                </div>
+                            </div>
+                            <div class="item-feature-list div-table-column col-lg-4 text-left">
+                                <img style='max-width: 326px' class="image-features model-mobile-center" src='../images/technological/image-applications.png' />
+                            </div>
+                        </div>
+                        
+                        {*<div class="div-table-row odd">
                             <div class="item-feature-list div-table-column col-lg-4 text-right">
                                 
                                 <div class='feature-item-info'>
@@ -744,12 +776,7 @@
                                     
                                     <div class='block-info'>
                                         <p>View each <b>photo</b> or <b>video</b> file <b>shot by the camera</b> of the target smartphone or <b>downloaded</b> from the Internet. Monitor all multimedia files stored on the target device.</p>
-                                        {*<ul>
-                                            <li>By using Pumpic software, you can view every single photo</li>
-                                            <li>taken and downloaded from the Internet. Soon after your</li>
-                                            <li>kid takes a pic, it will be sent to your Control Panel for your</li>
-                                            <li>consideration.</li>
-                                        </ul>*}
+                                        
                                         <div><a class="btn-orange" href="http://demo.{$domain}/setDevice/125?redirect_url=cp/photos">View Demo</a></div>
                                         <label class="color-orange">(no registration required)</label>
                                     </div>
@@ -765,7 +792,7 @@
                             <div class="item-feature-list div-table-column col-lg-4 text-left">
                                 <img style='max-width: 300px' class="image-features model-mobile-center" src='../images/technological/image-video-and-photos.png' />
                             </div>
-                        </div>
+                        </div>*}
                         
                         <!-- \\ #5 Facebook IM/Viber/Skype/WhatsApp: (even) -->
                         <div class="div-table-row even">
@@ -841,8 +868,37 @@
                             </div>
                         </div>
                         
-                       <!-- \\ #11 Applications: (even)-->
-                        <div class="div-table-row even">
+                       <!-- \\ #11 Photos/Videos: (even)-->
+                       <div class="div-table-row even">
+                            <div class="item-feature-list div-table-column col-sm-12 col-md-4 col-lg-4 text-right">
+                                <img style='max-width: 300px' class="image-features model-mobile-center" src='../images/technological/image-video-and-photos.png' />
+                            </div>
+                            <div class="item-feature-list div-table-column col-sm-12 col-md-1 col-lg-1 text-center">
+                                <div class='box-line-solid only-pc'>
+                                    <i class='i-bubble'></i>
+                                    <span class='box-solid-1'></span>
+                                </div>
+                            </div>
+                            <div class="item-feature-list div-table-column col-sm-12 col-md-4 col-lg-4 text-left">
+                                
+                                <div class='feature-item-info'>
+                                    <ul>
+                                        <li><i class='i-list-features-photos'></i><strong>Photos</strong></li>
+                                        <li><i class='i-list-features-video'></i><strong>Videos</strong></li>
+                                    </ul>
+                                    <div class='block-info'>
+                                        <p>View each <b>photo</b> or <b>video</b> file <b>shot by the camera</b> of the target smartphone or <b>downloaded</b> from the Internet. Monitor all multimedia files stored on the target device.</p>
+                                        
+                                        <div><a class="btn-orange" href="http://demo.{$domain}/setDevice/125?redirect_url=cp/photos">View Demo</a></div>
+                                        <label class="color-orange">(no registration required)</label>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                       
+                       
+                        {*<div class="div-table-row even">
                             <div class="item-feature-list div-table-column col-sm-12 col-md-4 col-lg-4 text-right">
                                 <img style='max-width: 326px' class="image-features model-mobile-center" src='../images/technological/image-applications.png' />
                             </div>
@@ -860,18 +916,14 @@
                                     </ul>
                                     <div class='block-info'>
                                         <p>Keep track of <b>installed applications</b> on the target device. <b>Block</b> and <b>set time limits</b> on running particular apps installed on the target device.</p>
-                                        {*<ul>
-                                            <li>By Using Pumpic software, you can follow each button your</li>
-                                            <li>kid presses. Keep track of password changes, track keywords</li>
-                                            <li>and phrases input, associated with misgiving subjects.</li>
-                                        </ul>*}
+                                        
                                         <div><a class="btn-orange" href="http://demo.{$domain}/setDevice/125?redirect_url=cp/applications">View Demo</a></div>
                                         <label class="color-orange">(no registration required)</label>
                                     </div>
                                 </div>
                                 
                             </div>
-                        </div>                 
+                        </div>*}                 
                                       
                                         
                        <!-- \\ #7 Email: (odd) -->

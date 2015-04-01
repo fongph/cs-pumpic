@@ -13,7 +13,7 @@
                             get_template_part( 'content', 'none' );
                         } else {    
 
-                            query_posts(  array('tag' => $_tag, 'posts_per_page' => -1, 'paged' => $page, 'showposts' => 4));
+                            query_posts(  array('tag' => $_tag, 'posts_per_page' => -1, 'paged' => $page, 'showposts' => get_option('posts_per_page')));
                         }    
                     ?>
                     

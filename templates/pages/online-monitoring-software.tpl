@@ -1,5 +1,5 @@
 {include file='../includes/main/main-header.tpl'
-    robots="no" 
+    robots="yes" 
     title="Online monitoring software for cell phones"
     description="Pumpic for cell [hone is a new solution for mobile monitoring control. Track smartphone or tablet usage, monitor incoming and outbound calls, monitor browsing history and text messages, track GPS location and social network activity on target devices with Pumpic.com"
 }    

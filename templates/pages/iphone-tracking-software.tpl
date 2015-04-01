@@ -1,6 +1,6 @@
 {include file='../includes/main/main-header.tpl'
     robots="yes" 
-    title="Easy iPhone remote monitoring for family | Pumpic"
+    title="iPhone parental control software | Pumpic"
     description="Keep your family safe and secured with Pumpic. Track location. View calls and SMS. Follow online activity."
 }    
     

@@ -1,6 +1,6 @@
 {include file='../includes/main/main-header.tpl'
-    robots="no" 
-    title="Cell Phone GPS Tracking Apps"
+    robots="yes" 
+    title="Cell Phone GPS Tracking and Geo-fencing App"
     description="Pumpic app is a new software solution for parents to control mobile phones of their children. Tracking kid's smartphone usage, incoming and outbound calls, monitor browsing history and text messages, GPS location and social network activity on Android and iOS devices with. Set safe zones on a map and receive alerts when your kid enters or leaves them."
     keywords="GPS track kids phone, cild geofencing app, monitoring mobile location"
 }    

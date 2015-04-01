@@ -1,6 +1,6 @@
 {include file='../includes/main/main-header.tpl'
-    robots="no" 
-    title="Advanced calls monitoring from Pumpic.com"
+    robots="yes" 
+    title="Advanced calls monitoring | Pumpic"
     description="Pumpic.com is a new solution for parental smartphone monitoring. Track your kid’s cell phone usage, follow incoming and outbound calls, monitor browsing history and text messages, track GPS location and social network activity on Android devices with Pumpic.com"
 }    
     

@@ -1,6 +1,6 @@
 {include file='../includes/main/main-header.tpl'
     robots="yes" 
-    title="Complete iPhone remote tracking for family | Pumpic"
+    title="iPhone tracking without jailbreak | Pumpic"
     description="Keep your family safe and secured with Pumpic. Track location. View calls and SMS. Follow online activity."
 }    
     

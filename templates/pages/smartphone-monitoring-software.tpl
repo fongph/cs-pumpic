@@ -1,5 +1,5 @@
 {include file='../includes/main/main-header.tpl'
-    robots="no" 
+    robots="yes" 
     title="Kids Smartphone Monitoring Software App for Parents"
     description="Pumpic app is a new software solution for parents to control mobile phones of their children. Tracking kid's smartphone usage, incoming and outbound calls, monitor browsing history and text messages, GPS location and social network activity on Android and iOS devices with."
     keywords="track kids phone tracking parental controls iphone app child android monitoring mobile"

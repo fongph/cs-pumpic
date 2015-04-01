@@ -1,6 +1,6 @@
 {include file='../includes/main/main-header.tpl'
-    robots="no" 
-    title="Prevent Online Dangers and Protect Your Kids"
+    robots="yes" 
+    title="Child cell phone monitoring software"
     description="Protect Your Kids Before It Is Too Late. Track location. View calls and SMS. Monitor online activity."
 }    
     

@@ -39,7 +39,6 @@
 									</ul>
 									<p class="text-justify"><b>2) Employee:</b> Your employee at a company you own OR an employee at the same company as you and you have managerial responsibilities for. The employee can be monitored using a phone owned by the company and issued to the employee under your company's policies regarding company phones. The employee must give consent and be notified they are being monitored before monitoring can begin.</p>                                    
 									<p class="text-justify">Pumpic cannot be used to monitor any other individuals (such as a spouse, friend, significant other, parolee, probationer, etc.). This would violate the terms you agreed to at the point of purchase and be subject to immediate termination without reimbursement.</p>
-									<p class="text-justify">Note that Pumpic app applies to legal frames and creates a visible icon on the target phone your child or employee can delete with a special password only.</p>
 								</article>
                                 <!-- refund policy -->                            
 								<h2 id="refund-policy">Refund Policy{*REFUND POLICY*}</h2>
@@ -69,7 +68,6 @@ Any purchase of Pumpic software at a discount price is non-refundable. No refund
 										<li>The target phone has been reset to the original factory settings/ the Pumpic app has been removed from the target phone.</li>
 										<li>The customer did not follow the installation guidelines provided by our customer support, which resulted in the failure to install the app.</li>
 										<li>The customer does not have physical access to the target phone.</li>
-										<li>The customer didn’t know the app is visible to the user of the target phone.</li>
 										<li>The customer didn’t receive previous data from the target device because Pumpic had not been installed at that time.</li>
 										<li>The target device uses Symbian Belle, Windows Phone OS, Bada OS or any other operating system, which is not listed on our Compatibility page.</li>
 										<li>The customer planned to use one Pumpic subscription plan on more than one target device.<br />Other personal reasons (“I’ve changed my mind”, “I’ve made a purchase by mistake”, etc.).

@@ -29,11 +29,11 @@ function eg_quicktags() {
 // Include the Ajax library on the front end
 function add_ajax_library() {
  
-    $html = '<script type="text/javascript">';
-        $html .= 'var ajaxurl = "' . site_url( '/wp-content/themes/dist/ajax/ajax.php' ) . '"';
-    $html .= '</script>';
- 
-    echo $html;
+//    $html = '<script type="text/javascript">';
+//        $html .= 'var ajaxurl = "' . site_url( '/wp-content/themes/dist/ajax/ajax.php' ) . '"';
+//    $html .= '</script>';
+// 
+//    echo $html;
  
 } // end add_ajax_library
 add_action( 'wp_head',  'add_ajax_library' );

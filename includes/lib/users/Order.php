@@ -62,6 +62,13 @@ class Order extends ManagerUser
         return $this -> referer;
     }
     
+    private function unsetReferer() {
+        if(isset($_COOKIE['orders_referer'])) {
+            setcookie("orders_referer", false, -1, '/' );
+            unset($_COOKIE['orders_referer']);
+        }    
+    }
+    
     // registration or store
     private function _createOrder( $userID = null, $productId ) 
     {
@@ -84,6 +91,8 @@ class Order extends ManagerUser
                 -> save(); 
         }
         
+        $this -> unsetReferer();
+        
         $orderProduct = $this -> _billing -> getOrderProduct();
         $orderProduct->setOrder($order)
                 ->setProduct($this -> _billing -> getProduct($productId))
@@ -99,6 +108,8 @@ class Order extends ManagerUser
         $response =$this -> _gateway->purchaseProduct()->send();
 
         $redirectUrl = $response->getRedirectUrl();
+        
+        
         
         return $redirectUrl;
     } 
@@ -132,7 +143,7 @@ class Order extends ManagerUser
                 ->setReferer( $this ->getReferer() )
                 -> save(); 
          }
-        
+        $this -> unsetReferer();
         
         $orderProduct = $this -> _billing->getOrderProduct();
         $orderProduct->setOrder($order)
@@ -160,7 +171,6 @@ class Order extends ManagerUser
             $this -> authUserID( $userID ); 
             
         }
-        
         return true;
     } 
     

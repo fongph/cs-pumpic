@@ -61,7 +61,7 @@
                                                                     <li><i class="i-features-email"></i> <span onclick="window.location='http://{$domain}/email-monitoring-software.html'">View Emails</span></li>
                                                                     <li><i class="i-features-photos"></i> View Photos</li>
                                                                     <li><i class="i-features-videocam"></i> View Videos</li>
-                                                                    <li><i class="i-features-kik-chat"></i> Monitor kik chat</li>
+                                                                    <li><i class="i-features-kik-chat"></i> Monitor kik</li>
                                                                 </ul>
                                                             </div>
 

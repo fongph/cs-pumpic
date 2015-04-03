@@ -812,7 +812,7 @@
                                         <li><i class='i-list-features-viber'></i><strong>Viber</strong></li>
                                         <li><i class='i-list-features-skype'></i><strong>Skype</strong></li>
                                         <li><i class='i-list-features-whatsapp'></i><strong>WhatsApp</strong></li>
-                                        <li><i class='i-list-features-kik-chat'></i><strong>Kik chat</strong></li>
+                                        <li><i class='i-list-features-kik-chat'></i><strong>Kik</strong></li>
                                     </ul>
                                     
                                     <div class='block-info'>

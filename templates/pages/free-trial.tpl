@@ -74,7 +74,7 @@
                                                                     <li><i class="i-features-block-device"></i> Block device</li>
                                                                     <li><i class="i-features-location"></i> Location Tracking</li>
                                                                     <li><i class="i-features-geo-fences"></i> Geo-fences</li>
-                                                                    <li>&nbsp;</li>
+                                                                    <li class="hidden-mobile">&nbsp;</li>
                                                                 </ul>
                                                             </div>
 
@@ -87,7 +87,7 @@
                                                                     <li><i class="i-features-monitor-instagram"></i> Monitor Instagram</li>
                                                                     <li><i class="i-features-remote-activity-control"></i> Remote Control Panel</li>
                                                                     <li><i class="i-features-sms-commands"></i> SMS Commands</li>
-                                                                    <li>&nbsp;</li>
+                                                                    <li class="hidden-mobile">&nbsp;</li>
                                                                 </ul>
                                                             </div>
                                                             

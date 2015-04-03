@@ -1088,7 +1088,7 @@
                                     <ul>
                                         <li>
                                             <i class='i-list-features-instagram only-mobile'></i>
-                                            <strong>Instagram Monitoring</strong>
+                                            <strong>Instagram monitoring</strong>
                                             <i class='i-list-features-instagram only-pc'></i>
                                         </li>
                                     </ul>

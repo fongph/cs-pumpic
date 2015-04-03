@@ -4,7 +4,7 @@
     
 {include file='../includes/main/main-header.tpl'
     robots="no" 
-    title="Pumpic.com mobile monitoring software."
+    title="Login to Pumpic"
     description="parental control, employee monitoring"
 }     
     

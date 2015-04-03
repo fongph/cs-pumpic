@@ -1,6 +1,6 @@
 {include file='../includes/main/main-header.tpl'
     robots="yes" 
-    title="Compatibility search results"
+    title="Smartphones compatibility with monitoring software"
     description="Ensure the phone you want to track is mentioned in the Compatibility list and OS Requirements. If it meets the requirements, you can install pumpic monitoring app."
 } 
 

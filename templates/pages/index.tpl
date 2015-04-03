@@ -1,6 +1,6 @@
 {include file='../includes/main/main-header.tpl'
     robots="yes" 
-    title="Cell Phone Parental Control App for Children. Pumpic Parental Monitoring Software"
+    title="Cell Phone Parental Control App for Children| Pumpic Monitoring Software"
     description="Keep your family safe and secured with Pumpic. Track location. View calls and SMS. Follow online activity."
 }    
     

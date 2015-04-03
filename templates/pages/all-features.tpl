@@ -309,7 +309,7 @@
                                                     <div class="bth-info">
                                                         <ul>
                                                             <li>Facebook Messenger</li>
-                                                            <li>WhatsApp, Viber, Skype</li>
+                                                            <li>WhatsApp, Viber, Skype, Kik</li>
                                                         </ul>
                                                     </div>        
                                                 </div>

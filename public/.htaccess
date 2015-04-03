@@ -1,3 +1,8 @@
+# denied Access
+Order allow,deny
+allow from all
+Deny from 49.199.27.18
+ 
 RewriteEngine on
 RewriteBase /
 RewriteCond %{HTTP_HOST} ^www\.pumpic\.com

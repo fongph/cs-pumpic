@@ -125,6 +125,7 @@ class Compatibility {
                 'sms_log' => 'SMS history',
                 'block_word' => 'SMS blocking',
                 'bad_word_sms'  => 'Block SMS by keyword',
+                'sms_daily_limiting' => 'SMS daily limiting',
 //                    'block_number' => 'Blocking calls & SMS by number',
             ),
             // Instant messengers
@@ -134,6 +135,7 @@ class Compatibility {
                 'whatsapp' => 'Whatsapp',
                 'facebook' => 'Facebook',
                 'instagram' => 'Instagram',
+                'kik'       => 'Kik',
 //                    'bb_messenger' => 'BlackBerry Messenger',
 //                    'pin_message' => 'PIN Message',
             ),

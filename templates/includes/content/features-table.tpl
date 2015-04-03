@@ -61,6 +61,7 @@
                                     <li><i class="i-features-email"></i> <span onclick="window.location='http://{$domain}/email-monitoring-software.html'">View Emails</span></li>
                                     <li><i class="i-features-photos"></i> View Photos</li>
                                     <li><i class="i-features-videocam"></i> View Videos</li>
+                                    <li><i class="i-features-kik-chat"></i> Monitor kik chat</li>
                                 </ul>
                             </div>
                                     
@@ -73,6 +74,7 @@
                                     <li><i class="i-features-block-device"></i> Block device</li>
                                     <li><i class="i-features-location"></i> Location Tracking</li>
                                     <li><i class="i-features-geo-fences"></i> Geo-fences</li>
+                                    <li>&nbsp;</li>
                                 </ul>
                             </div>        
                             
@@ -85,6 +87,7 @@
                                     <li><i class="i-features-monitor-instagram"></i> Monitor Instagram</li>
                                     <li><i class="i-features-remote-activity-control"></i> Remote Control Panel</li>
                                     <li><i class="i-features-sms-commands"></i> SMS Commands</li>
+                                    <li>&nbsp;</li>
                                 </ul>
                             </div>        
                                     

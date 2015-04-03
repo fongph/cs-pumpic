@@ -75,7 +75,7 @@
                                                 <div class="bth-info">
                                                     <ul>
                                                         <li>Facebook Messenger</li>
-                                                        <li>WhatsApp, Viber, Skype</li>
+                                                        <li>WhatsApp, Viber, Skype, Kik</li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -812,10 +812,13 @@
                                         <li><i class='i-list-features-viber'></i><strong>Viber</strong></li>
                                         <li><i class='i-list-features-skype'></i><strong>Skype</strong></li>
                                         <li><i class='i-list-features-whatsapp'></i><strong>WhatsApp</strong></li>
+                                        <li><i class='i-list-features-kik-chat'></i><strong>Kik chat</strong></li>
                                     </ul>
                                     
                                     <div class='block-info'>
-                                        <p>Follow online communication activity. View <b>messages</b> sent and received via popular instant messengers like Facebook Messenger, Viber, Skype and WhatsApp.</p>
+                                        <p>
+                                            Follow online communication activity. View <b>messages</b> sent and received via popular instant messengers like Facebook Messenger, Viber, Skype, WhatsApp and Kik.
+                                        </p>
                                         {*<ul>
                                             <li>Pumpic allows you to monitor your child’s device activity in</li>
                                             <li>the most widely used communication applications like</li>

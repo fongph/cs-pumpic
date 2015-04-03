@@ -345,11 +345,16 @@
 .i-features-photos, .i-features-sms-commands, .i-features-social, .i-features-sms,
 .i-features-block-device, .i-features-online-control-panel, .i-features-monitor-viber-whatsapp, .i-features-monitor-skype,
 .i-features-remote-activity-control, .i-features-remote-device-lock, .i-features-removal-protection, .i-features-instant-location,
-.i-features-notes, .i-features-email-close, .i-features-skype {
+.i-features-notes, .i-features-email-close, .i-features-skype, i-features-kik-chat {
     display: inline-block;
     margin-right: 16px;
 }
 
+.i-features-kik-chat {
+    background: url('../images/icons/icon-kik-chat.png') no-repeat;
+    width: 25px;
+    height: 18px;
+}
 
 .i-features-videocam {
     background: url('../images/icons/icon-video.png') no-repeat;

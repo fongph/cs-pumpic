@@ -9,6 +9,7 @@ use System\Session\Handler\RedisSessionHandler as RedisSessionHandler;
 use Predis\Client as RedisClient; // Predis\Client
 
 use CS\Users\UsersManager as Manager;
+use CS\Users\UsersNotes as UsersNotes;
 use CS\Models\User\Options\UserOptionRecord as UserOptionRecord; 
 use CS\Users\UserAlreadyExistsException as UserAlreadyExistsException;
 use CS\Users\UserNotFoundException as UserNotFoundException;
@@ -236,6 +237,8 @@ class ManagerUser extends Manager
 
                 self::$_obj -> _respons['_success'] = true;
             
+                $this -> setNotice(self::$_obj -> _data);
+                
         } catch (UserNotFoundException $e) {
            self::$_obj -> _respons['_error'] = "The email was not found.";
         } catch (InvalidPasswordException $e) {
@@ -259,6 +262,7 @@ class ManagerUser extends Manager
                 $this -> _auth ->setIdentity( $_data );
                 
                 self::$_obj -> _data  = $this -> _auth->getIdentity();
+                $this -> setNotice(self::$_obj -> _data);
                 self::$_obj -> _respons['_success'] = true;
                 
             } else
@@ -383,9 +387,11 @@ class ManagerUser extends Manager
     public function getLoginUser() 
     {
         $data = $this->_auth->getIdentity();
-        if(isset($data['id']) and !empty($data['id']))
-            return $this->getUserDataById(self::SITE_ID, (int)$data['id']);
-        else
+        if(isset($data['id']) and !empty($data['id'])) { 
+            $data = $this->getUserDataById(self::SITE_ID, (int)$data['id']);
+            $this -> setNotice($data);
+            return $data;
+        } else
             return false;
     }
     
@@ -440,6 +446,22 @@ class ManagerUser extends Manager
     public function validateEmail($email) 
     {
         return filter_var($email, FILTER_VALIDATE_EMAIL);
+    }
+    
+    // set Notice
+    protected function setNotice( $authData ) { // , $userId
+        if ($this -> _auth ->hasIdentity() 
+                && !isset($_COOKIE['s']) 
+                && !isset($authData['admin_id'])) {
+            
+            // $usersManager = new CS\Users\UsersManager($db);
+            $usersNotes = new UsersNotes($this -> _pdo, $authData['id']);
+
+            $this->setUsersNotesProcessor($usersNotes)
+                ->logAuth($authData['id']);
+
+            setcookie('s', 1, time() + 3600 * 6, '/');
+        }
     }
     
 }

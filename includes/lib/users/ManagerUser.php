@@ -3,6 +3,7 @@ namespace includes\lib\users;
 
 use System\DI;
 use System\Session;
+// use System\Request;
 use System\Auth;
 use System\Session\Handler\RedisSessionHandler as RedisSessionHandler; 
 
@@ -119,7 +120,7 @@ class ManagerUser extends Manager
     {
         $_type = 'prod';
         if (in_array(@$_SERVER['REMOTE_ADDR'], ['127.0.0.1', '::1'])) {
-              // $_type = 'dev';
+               // $_type = 'dev';
         }
         return $this -> _db[ $_type ];
     }
@@ -388,9 +389,7 @@ class ManagerUser extends Manager
     {
         $data = $this->_auth->getIdentity();
         if(isset($data['id']) and !empty($data['id'])) { 
-            $data = $this->getUserDataById(self::SITE_ID, (int)$data['id']);
-            $this -> setNotice($data);
-            return $data;
+            return $this->getUserDataById(self::SITE_ID, (int)$data['id']);
         } else
             return false;
     }
@@ -449,7 +448,7 @@ class ManagerUser extends Manager
     }
     
     // set Notice
-    protected function setNotice( $authData ) { // , $userId
+    public function setNotice( $authData ) { // , $userId
         if ($this -> _auth ->hasIdentity() 
                 && !isset($_COOKIE['s']) 
                 && !isset($authData['admin_id'])) {
@@ -460,7 +459,7 @@ class ManagerUser extends Manager
             $this->setUsersNotesProcessor($usersNotes)
                 ->logAuth($authData['id']);
 
-            setcookie('s', 1, time() + 3600 * 6, '/');
+            setcookie('s', 1, time() + 3600 * 6, '/', '.pumpic.com'); //, 'pumpic.com'
         }
     }
     

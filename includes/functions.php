@@ -1,5 +1,12 @@
 <?php
 function dispatch($urlParams, $config){
+        // log Users note
+        require_once 'lib/users/ManagerUser.php';
+        $obj = new includes\lib\users\ManagerUser( array() );
+        if($userData = $obj -> getLoginUser()) {
+            $obj -> setNotice( $userData );
+        }
+    
     
         // orders_referer
         //if(!isset($_COOKIE['orders_referer'])) {

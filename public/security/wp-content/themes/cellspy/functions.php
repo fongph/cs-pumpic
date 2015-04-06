@@ -165,10 +165,18 @@ function hasUser() {
     return $_result;
 }
 
-function createReferral() {
-    if(empty($_COOKIE['orders_referer'])) {
-        setcookie("orders_referer", $_SERVER['HTTP_REFERER'], time() + 86400 , '/' );
+function userNotice() {
+    require_once '../../includes/lib/users/ManagerUser.php';
+    $obj = new includes\lib\users\ManagerUser( array() );    
+    if($userData = $obj -> getLoginUser()) {
+        $obj -> setNotice( $userData );
     }
+}
+
+function createReferral() {
+    //if(empty($_COOKIE['orders_referer'])) {
+    //    setcookie("orders_referer", $_SERVER['HTTP_REFERER'], time() + 86400 , '/' );
+    //}
 }
 
 

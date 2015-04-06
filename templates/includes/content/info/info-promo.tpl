@@ -23,6 +23,34 @@
                             <div>
                                 <div class="visual-text {if $textAlign}block-text-{$textAlign}{else}block-text-right{/if}">
                                     <h1 class="title">{if $title} {$title} {else}Android Parental Control App{/if}</h1>
+                                    
+                                    {if isset($flagName)}
+                                    <div class='block-table'>
+                                        <div class='table-row'>
+                                        {if $flagPosition == 'left'}
+                                            <div class='table-cell col-xs-sm-2 col-md-2 col-lg-2 vertical-aligh-middle'>
+                                                <div class='row'><i class='image-flag-header-{$flagName}'></i></div>
+                                            </div>
+                                        {/if}
+                                        <div class='table-cell col-xs-sm-10 col-md-10 col-lg-10'>
+                                            <div class="row">
+                                            {if $description}
+                                                {$description}
+                                            {else}
+                                            Pumpic takes care of your children safety.        
+                                            <br />Track your kids’ Android device remotely.
+                                            {/if}
+                                            </div>
+                                        </div>
+                                        {if $flagPosition == 'right'}
+                                            <div class='table-cell col-xs-sm-2 col-md-2 col-lg-2 vertical-aligh-middle'>
+                                                
+                                                <div class='row'><i class='image-flag-header-{$flagName}'></i></div>
+                                            </div>
+                                        {/if}
+                                        </div>
+                                    </div>
+                                    {else}
                                     <p>
                                         {if $description}
                                             {$description}
@@ -31,6 +59,7 @@
                                         <br />Track your kids’ Android device remotely.
                                         {/if}
                                     </p>
+                                    {/if}
 
                                     {if $os_versions == 'os_v2' || $os_versions == 'icloud_v2' || $os_versions == 'os_v2_its'}
                                         {if $os_versions == 'icloud_v2'} 

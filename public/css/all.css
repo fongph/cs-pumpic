@@ -2516,23 +2516,31 @@ textarea {
   text-align: left;
   background: #ececec;
 }
+.table_header .list-currencies > span,
 .table_header span {
   font-size: 13px;
   color: #606060;
 }
-.table_header span:first-child {
+.table_header span:first-child,
+.table_header .list-currencies > span:first-child {
   display: inline-block;
   padding-top: 5px;
   vertical-align: top;
   margin-right: 5px;
 }
+
+.table_header .list-currencies > a {
+    margin-left: 5px;
+    cursor: pointer;
+}
+
 @media only screen and (max-width: 991px) {
-  .table_header span:first-child {
-    display: block;
+  .table_header .list-currencies > span:first-child {
+    display: inline-block;
   }
 }
 .table_header .pull-right {
-  margin-top: 5px;
+  margin-top: 8px; /* 5px */
 }
 @media only screen and (max-width: 600px) {
   .table_header .pull-right {
@@ -2565,19 +2573,24 @@ textarea {
 .table_header a:hover {
   text-decoration: none;
 }
-.table_header a:hover .ico-flag-usd {
+.table_header a:hover .ico-flag-usd,
+.table_header a.active .ico-flag-usd {
   background-position: 0 -26px;
 }
-.table_header a:hover .ico-flag-gbp {
+.table_header a:hover .ico-flag-gbp,
+.table_header a.active .ico-flag-gbp {
   background-position: -26px -26px;
 }
-.table_header a:hover .ico-flag-eur {
+.table_header a:hover .ico-flag-eur,
+.table_header a.active .ico-flag-eur {
   background-position: -52px -26px;
 }
-.table_header a:hover .ico-flag-cad {
+.table_header a:hover .ico-flag-cad,
+.table_header a.active .ico-flag-cad {
   background-position: -78px -26px;
 }
-.table_header a:hover .ico-flag-aud {
+.table_header a:hover .ico-flag-aud,
+.table_header a.active .ico-flag-aud {
   background-position: -104px -26px;
 }
 
@@ -6113,4 +6126,23 @@ form.form-contact-us .box-captcha {
     .iphones-text-full-width-block {
         display: none;
     }
+}
+
+/* ----- \\ flags header ---- */
+[class^="image-flag-header-"], 
+[class*=" image-flag-header-"] {
+   display: inline-block;
+   position: relative;
+   width: 60px;
+   height: 30px;
+   margin-right: 5px;
+}
+.image-flag-header-au {
+    background: url('../images/flag/aud.png') no-repeat;
+}
+.image-flag-header-ca {
+    background: url('../images/flag/cad.png') no-repeat;
+}
+.image-flag-header-gb {
+    background: url('../images/flag/gbp.png') no-repeat;
 }

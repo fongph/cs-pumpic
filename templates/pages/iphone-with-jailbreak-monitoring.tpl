@@ -547,11 +547,7 @@
                                     tempnumber = func(tempnumber);
                                     return tempnumber / Math.pow(10, prec);
                                 }
-                                var symbols = {
-                                    usd: '$',
-                                    eur: '€',
-                                    gbp: '£'
-                                };
+                                var symbols = { usd: '$', eur: '€', gbp: '£', cad: '$', aud: '$' };
                                 $('input[data-target="#basic-price-per-month"], input[data-target="#premium-price-per-month"], input[data-target="#basic-price-bottom-per-month"], input[data-target="#premium-price-bottom-per-month"]').change(function() {
 
                                     var currentValue = $(this).attr('data-price-' + $(this).attr('data-cur')) / Number($(this).attr('data-period'));

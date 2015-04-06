@@ -13,6 +13,10 @@
     text-align: center;
 }
 
+.vertical-aligh-middle {
+    vertical-align: middle;
+}
+
 .vertical-aligh-bottom {
     vertical-align: bottom;
 }
@@ -161,3 +165,35 @@
     
 }
 
+.block-table {
+    display: table;
+}
+
+.block-table > .table-row {
+    display: table-row;
+}
+
+.block-table > .table-row > .table-column { 
+    display: table-column;
+}
+
+.block-table > .table-row > .table-cell { 
+    float: none;
+    position: static;
+    display: table-cell;
+    text-align: left;
+}
+
+@media (max-width: 768px) { 
+    .block-table { margin: 0 auto; }
+}
+@media only screen and (max-width: 480px) { 
+/*    .col-xs-sm-offset-1 {
+        margin-left: 8.33333%;
+    }*/
+}
+@media (min-width: 468px) {
+/*    .col-xs-sm-offset-1 {
+        margin-left: 8.33333%;
+    }*/
+}

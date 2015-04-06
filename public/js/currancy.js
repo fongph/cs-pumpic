@@ -6,7 +6,7 @@ currencyHandler = {
             
             if(typeof usdPrice !== 'undefined')
 
-                $.each(['gbp', 'eur'], function(i, currency){
+                $.each(['gbp', 'eur', 'cad', 'aud'], function(i, currency){
 
                     if(rates[currency.toUpperCase()]){
                         var priceInCurrency = Number(rates[currency.toUpperCase()]*usdPrice).toFixed(2);
@@ -34,11 +34,13 @@ currencyHandler = {
           'api_key': '', // app_id=
           'host': '/currency.html',
           'currBase': 'USD',
-          'currCode': { 'usd': '$', 
-                        'eur':'€', 
-                        'gbp': '£'},
+          'currCode': { 'usd' : '$', 
+                        'eur' :'€', 
+                        'gbp' : '£',
+                        'cad' : '$',
+                        'aud' : '$'},
           'filter': {
-              'iso': ['USD','EUR','GBP']
+              'iso': ['USD','EUR','GBP','CAD','AUD']
            },
           'rates': {}, // list currance rates
           'convert': {
@@ -200,8 +202,8 @@ currencyHandler = {
         
         bindEvent: function() {
             // click 
-            if($this.find('.store-flags').length)
-                $this.find('.store-flags').on('click', function(event) {
+            if($this.find('.store-flags, .store-link-currancy-flag').length)
+                $this.find('.store-flags, .store-link-currancy-flag').on('click', function(event) {
                    event.preventDefault();
                    var curr_convert = $(this).attr('attr-rates-iso');
                    
@@ -214,7 +216,7 @@ currencyHandler = {
                         methods.setCach('currISO', curr_convert);
                    
                    // status
-                   $this.find('.store-flags').each(function() {
+                   $this.find('.store-flags, .store-link-currancy-flag').each(function() {
                        if($(this).hasClass('active')) {
                          $(this).removeClass('active');
                        } 
@@ -230,19 +232,21 @@ currencyHandler = {
         },
         
         unbindEvent: function() {
-            $this.find('.store-flags').off('click');
+            $this.find('.store-flags, .store-link-currancy-flag').off('click');
         },
         
         // show create html list rates
         show: function() {
             var status = [];
             if($_settings.rates) {
-                $_html += '<ul class="clearfix">'; 
+                $_html += '<span>Currency:</span>';
+                //$_html += '<ul class="clearfix">'; 
                 $.each($_settings.rates, function(key, val) {
                     status[ key ] = (val.iso.toUpperCase() == $_settings.currBase) ? 'active' : ''; 
-                    $_html += '<li><span class="store-flags flag-'+val.iso+' '+status[ key ]+'" attr-rates-iso="'+val.iso+'" attr-rates-id="'+val.id+'"></span></li>'; // '+val.iso.toUpperCase()+'
+                    //$_html += '<li><span class="store-flags flag-'+val.iso+' '+status[ key ]+'" attr-rates-iso="'+val.iso+'" attr-rates-id="'+val.id+'"></span></li>'; // '+val.iso.toUpperCase()+'
+                    $_html += '<a class="store-link-currancy-flag '+status[ key ]+'" attr-rates-iso="'+val.iso+'" attr-rates-id="'+val.id+'" href="#"><i class="ico-flag-'+val.iso+'"></i><span>'+val.iso.toUpperCase()+'</span></a>';
                 });
-                $_html += '</ul>';
+                //$_html += '</ul>';
                 
                 $this.html( $_html );
                 

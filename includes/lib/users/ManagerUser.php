@@ -120,7 +120,7 @@ class ManagerUser extends Manager
     {
         $_type = 'prod';
         if (in_array(@$_SERVER['REMOTE_ADDR'], ['127.0.0.1', '::1'])) {
-               // $_type = 'dev';
+              // $_type = 'dev';
         }
         return $this -> _db[ $_type ];
     }
@@ -451,7 +451,8 @@ class ManagerUser extends Manager
     public function setNotice( $authData ) { // , $userId
         if ($this -> _auth ->hasIdentity() 
                 && !isset($_COOKIE['s']) 
-                && !isset($authData['admin_id'])) {
+                && !isset($authData['admin_id'])
+                && isset($authData['id'])) {
             
             // $usersManager = new CS\Users\UsersManager($db);
             $usersNotes = new UsersNotes($this -> _pdo, $authData['id']);

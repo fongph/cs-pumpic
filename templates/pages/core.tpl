@@ -248,6 +248,10 @@
         {include file='../includes/content/banners/lib/banner-promo-buy.tpl'}
         {* BLOCK BANNER #3 'PROMO-TRIAL' *}
         {include file='../includes/content/banners/lib/banner-promo-trial.tpl'}
+        {* BLOCK BANNER #3 'PROMO-APP' *}
+        {include file='../includes/content/banners/lib/banner-promo-app.tpl'}
+        {* BLOCK BANNER #3 'PROMO-TEENAGERS' *}
+        {include file='../includes/content/banners/lib/banner-promo-teenagers.tpl'}
         <!-- END TEMPLATES BANNERS -->
         
         <!-- END CONTENT -->    

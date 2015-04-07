@@ -1,4 +1,14 @@
+{*
+    Function: закрывает доступ для всех, кроме нашего IP.
+*}
 {closeAccess}
+{*
+    Template: hedaer HEADER ( ШАПКА СТРАНИЦЫ )
+    Переменные:
+        robots (string): сключить или выключить индексацию от роботов ( yes | no ) * - default: yes
+        title (string): вносим title - страницы. 
+        description (string): вносим meta description ( описание страницы )
+*}
 {include file='../includes/main/main-header.tpl'
     robots="yes" 
     title="Title"
@@ -7,26 +17,35 @@
 
 <body>
     <!-- FLY BLOCKS -->
+    {*
+        Template: FLY BLOCKS ( Добавляет на странице плавающие блоки )
+    *}
     {include file='../includes/content/fly/fly_blocks.tpl'}
         <!-- templates fly blocks -->
-        {* BLOCK 'FLY_FEATURES v1' *}
+        {* Template: BLOCK 'FLY_FEATURES v1' *}
         {include file='../includes/content/fly/fly_features.tpl'}
-        {* BLOCK 'FLY_FEATURES v2' *}
+        {* Template: BLOCK 'FLY_FEATURES v2' *}
         {include file='../includes/content/fly/fly_features_v2.tpl'}
-        {* BLOCK 'FLY_DISCOUNT' *}
-        {* include file='../includes/content/fly/fly-box-discount.tpl' *}
-        {* BLOCK 'FLY_BUTTONS' *}
+        {* Template: BLOCK 'FLY_BUTTONS' *}
         {include file='../includes/content/fly/box-buttons.tpl'}
-        {* BLOCK 'FLY_BUTTON_HELP GO_UP' *}
+        {* Template: BLOCK 'FLY_DISCOUNT' *}
+        {* include file='../includes/content/fly/fly-box-discount.tpl' *}
+        {* Template: BLOCK 'FLY_BUTTON_HELP GO_UP' *}
         {* include file='../includes/main/main-button-help.tpl' *}
-        {* BLOCK 'FLY_BUTTON_GROUP' *}
+        {* Template: BLOCK 'FLY_BUTTON_GROUP' *}
         {* include file='../includes/main/main-button-goup.tpl' *}
         <!-- end templates fly blocks -->
     <!-- END FLY BLOCKS-->
     
     <div class="wrapper {*bg_bottom_images*} block-free-trial">
         <!-- TOP MENU -->
-
+        {*
+            Template: MENU ( ГЛАВНОЕ МЕНЮ )
+            Переменные:
+                topmenu_active (string): alias меню, которое будет подсвечиваться активным. 
+                cache_id (string): id - шаблона по которому будет производится кеширование.
+                nocache (tag): - говорим смарти не кешировать.
+        *}
 	{include file='../includes/main/main-top-menu.tpl'
             topmenu_active='home'
             cache_id = "includes_main_main-top-menu"
@@ -34,6 +53,23 @@
         }
         
         <!-- CONTENT -->
+        <!-- CONTENT -->
+        {*
+            Template: INFORMATION PROMO ( ОБЯЗАТЕЛЬНОЕ ПОЛЕ )
+            Переменные:
+                imgUrl(url): ссылка на изображение. ( WxH: 437x325) * - не больше ОБЯЗАТЕЛЬНОЕ ПОЛЕ
+                imgAlt (string): короткий текст для изображения.
+                imgAlign (string): позиция изображения относительно текста. (left|center|right) *default: center
+                imgVerticalAlign (string): позиция изображения относительно высоты. ( bottom|middle ) *default: middle
+                textAlign (string): позиция текста. ( left|center|right ) *default: right
+                title (string): название блока.
+                description (string): описание баннера.
+                listText (string): список параметров. * - разделитель "|"
+                trial (string): "yes" -  триал баннер. (yes|no)
+                promoBuyBlock (string): Включает кнопку PromoBuy (yes|no) *default: переменная не инцелезирована
+                flagPosition (string): 'left' * - позиция флага относительно тексиа ( описания ). (left|right) default: ''
+                flagName (string): 'gb' * - назначение флага. ( au - Австралия | gb - Великобритания | ca - Канада ) default: ''
+        *}
         {include file='../includes/content/info/info-promo.tpl'
             imgUrl = "header_banners/bg_famaly_427x254.png"
             imgAlt = "Landing Mobile"
@@ -46,23 +82,40 @@
             promoBuyBlock = "yes"
         }
         
-        {* TEMPLATE TEENAGERS *}
+        {*
+            Template: TEMPLATE TEENAGERS
+            Переменные:
+                blockBg (string): Стиль блока ( dark / light ) *default: dark
+        *}
         {include file='../includes/content/teenagers.tpl' 
                     blockBg="light"
         }
         
-        {* BLOCK DISCOUNT *}
+        {*
+            Template: BLOCK DISCOUNT
+        *}
         {include file='../includes/content/discount_50_v2.tpl'}
                 
-        {* SAMPLE BLOCK SECURES *}
+        {*
+            Template: SAMPLE BLOCK SECURES
+            Переменные:
+                blockBg (string): Стиль блока ( dark / light ) *default: dark
+        *}
         {include file='../includes/content/secures.tpl'
                 blockBg="light"
         }
         
-        {*  BLOCK FEATURES LIST *}
+        {*
+            Template: BLOCK FEATURES LIST
+            Переменные:
+                blockBg (string): Стиль блока ( dark / light ) *default: dark
+        *}
         {include file='../includes/content/features.tpl'}
         
-        {* BLOCK TEXT(HTML) *}
+        {* Template: BLOCK TEXT(HTML)
+             title (string): название блока
+            blockBg (string): Стиль блока ( dark / light ) *default: dark
+        *}
         {Content 
             title="Email using statistics"
             blockBg='light'}
@@ -78,10 +131,21 @@
                 <p>The Internet is the easiest way for online predators, web swindlers and cyberbullies to contact your children. By making friendship with your kids via social media, it is not hard to find out their email addresses, which is the key to personal data and identity theft. Unfortunately, not many parents realize how important web protection is. These days’ online reality shifts the world around, making new rules for us. If you really want to secure your kids’ happiness, it is for you to consider these rules.</p>
         {EndContent}
         
-        {* BLOCK PLANS *}
+        {*
+            Template: BLOCK PLANS
+            Переменные:
+                blockBg (string): Стиль блока ( dark / light ) *default: dark
+        *}
         {include file='../includes/content/plans.tpl'}
 
-        {* Template: FLY BUTTONS
+        
+        {*
+            Template: FLY BUTTONS
+            Переменные:
+                blockBg (string): Стиль блока ( dark / light ) *default: dark
+                buttonBuyNow (string): Кнопка Buy now 'yes' *default: yes
+                buttonViewDemo (string): Кнопка View demo 'no' *default: no
+                buttonFreeTrial (string): Кнопка Free trial 'yes' *default: yes
         *}
         {include file='../includes/content/fly/box-buttons.tpl'
             buttonBuyNow = 'yes'
@@ -89,16 +153,32 @@
             buttonFreeTrial = 'yes'
         }
         
-        {* TEMPLATE SECURES MOBILE PHONES MONITORING *}
+        {*
+            Template: SECURES MOBILE PHONES MONITORING
+            Переменные:
+                blockBg (string): Стиль блока ( dark / light ) *default: dark
+        *}
         {include file='../includes/content/secures-mobile-phones-monitoring.tpl'}
         
-        
-        {* BLOCK FEATURES TEBLE *}
+        {*
+            Template: BLOCK FEATURES TEBLE
+            Переменные:
+                blockBg (string): Стиль блока ( dark / light ) *default: dark
+        *}
         {include file='../includes/content/features-table.tpl' 
                 blockBg="light"
         } 
         
-        {* BLOCK Easy-to-Use 'ipad' *}
+        {*
+            Template: BLOCK Easy-to-Use 'ipad'
+            Переменные:
+                blockBg (string): Стиль блока ( dark / light ) *default: dark
+                imgUrl(url): ссылка на изображение.
+                imgAlt (string): короткий текст для изображения.
+                title (string): название блока.
+                textAlign (string): позиция текста (left|center|right). * default: left
+                description (string): описание блока.
+        *}
         {include file='../includes/content/ipad.tpl' 
                 blockBg="dark"
                 imgUrl = "parental_control/ipad.png"
@@ -109,7 +189,16 @@
                                <br />Buy Pumpic to protect your family and secure your happiness right now."
         }
         
-        {* BLOCK Easy-to-Use 'ipad_android' *}
+        {*
+            Template: BLOCK Easy-to-Use 'ipad_android'
+            Переменные:
+                blockBg (string): Стиль блока ( dark / light ) *default: dark
+                imgUrl(url): ссылка на изображение.
+                imgAlt (string): короткий текст для изображения.
+                title (string): название блока.
+                textAlign (string): позиция текста (left|center|right). * default: left
+                description (string): описание блока.
+        *}
         {include file='../includes/content/ipad.tpl' 
                 blockBg="dark"
                 imgUrl = "icons/ipad_android.png"
@@ -120,13 +209,21 @@
 
         }
         
-        {* TEMPLATE TESTIMONIALS *}
+        {*
+            Template: TESTIMONIALS
+            Переменные:
+                blockBg (string): Стиль блока ( dark / light ) *default: dark
+                title (string): название блока.
+                sliders (string): вкл./ выкл. слайдера (false|true). * default: false
+        *}
         {include file='../includes/main/main-testimonials.tpl'
                 title = "Trusted by Over 10 000 Customers Worldwide"
                 sliders = "false"
                 blockBg="light"} 
                 
-        {* BLOCK TESTIMONIALS HTML (static) *}
+        {* 
+            Template: BLOCK TESTIMONIALS HTML (static) 
+        *}
         <div class="dark">
             <div class="container">
                 <h2 class="text-center testimonial-title">Trusted by Over 10 000 Customers Worldwide:</h2>
@@ -158,7 +255,9 @@
             </div>
         </div>
                                 
-        {* BLOCK TESTIMONIALS HTML (sliders) *}    
+        {* 
+            Template: BLOCK TESTIMONIALS HTML (sliders) 
+        *}    
         <div class="dark">
             <div class="container">
                 <h2 class="text-center testimonial-title">Trusted by Over 10 000 Customers Worldwide:</h2>
@@ -223,43 +322,60 @@
             </div>
         </div>
         
-        
-        {* BLOCK HOW-GET-PUMPIC *}        
+        {*
+            Template: BLOCK HOW-GET-PUMPIC
+            Переменные:
+                blockBg (string): Стиль блока ( dark / light ) *default: dark
+               title (string): название блока.
+               style (string): стиль блока. ( static|images ) * default: static
+        *}
         {include file='../includes/content/how-get-pumpic.tpl'
             title = ""
             style = "static"
         }        
                 
-        {* BLOCK WHY PUMPIC *}        
+        {*
+            Template: BLOCK WHY PUMPIC
+            Переменные:
+                blockBg (string): Стиль блока ( dark / light ) *default: dark
+        *}
         {include file='../includes/content/why-pumpic.tpl'
                 blockBg="light"}
-
-        {* BLOCK QUICK LINK *}        
+  
+        {*
+            Template: BLOCK QUICK LINK
+            Переменные:
+                blockBg (string): Стиль блока ( dark / light ) *default: dark
+        *}
         {include file='../includes/main/main-quick-link.tpl' 
             blockBg="dark"
         }        
         
         
-        {* TEMPLATE BANNERS *}
+        {* 
+            Template: BLOCK BANNERS 
+        *}
         {include file='../includes/content/banners/index.tpl'}
         
         <!-- TEMPLATES BANNERS -->
-        {* BLOCK BANNER #1 'PROMO-BUY' *}
+        {* Template: BLOCK BANNER #1 'PROMO-BUY' *}
         {include file='../includes/content/banners/lib/banner-promo-buy.tpl'}
-        {* BLOCK BANNER #3 'PROMO-TRIAL' *}
+        {* Template: BLOCK BANNER #3 'PROMO-TRIAL' *}
         {include file='../includes/content/banners/lib/banner-promo-trial.tpl'}
-        {* BLOCK BANNER #3 'PROMO-APP' *}
+        {* Template: BLOCK BANNER #3 'PROMO-APP' *}
         {include file='../includes/content/banners/lib/banner-promo-app.tpl'}
-        {* BLOCK BANNER #3 'PROMO-TEENAGERS' *}
+        {* Template: BLOCK BANNER #3 'PROMO-TEENAGERS' *}
         {include file='../includes/content/banners/lib/banner-promo-teenagers.tpl'}
         <!-- END TEMPLATES BANNERS -->
         
         <!-- END CONTENT -->    
            
-        <!-- RECOMMENDED -->
+        <!-- RECOMMENDED -->  
         {*
             Template: RECOMMENDED
-        *}    
+            Переменные:
+                blockBg (string): Стиль блока ( dark / light ) *default: dark
+        *}
         {include file='../includes/main/main-recommended.tpl'}
         
         <!-- FOOTER -->
@@ -271,7 +387,9 @@
         {include file='../includes/main/main-footer.tpl'}
                 
     </div>
-       
+    {*
+        Template: ANALYTICS
+    *}   
     {include file='../includes/main/main-analytics-footer.tpl'}
 </body>
 </html>

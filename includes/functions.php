@@ -1,26 +1,11 @@
 <?php
 function dispatch($urlParams, $config){
-        // log Users note
-//        require_once 'lib/users/ManagerUser.php';
-//        $obj = new includes\lib\users\ManagerUser;
-//        if($userData = $obj -> getLoginUser()) {
-//            $obj -> setNotice( $userData );
-//        }
-    
-        // orders_referer
-        //if(!isset($_COOKIE['orders_referer'])) {
-        //    setcookie("orders_referer", $_SERVER['HTTP_REFERER'], time() + 86400, '/' );
-        //}
         
         $_domain = "http://" . $_SERVER["HTTP_HOST"];
-        //$_arr_domain = array($_domain, );
         if ( isset($_SERVER["HTTP_REFERER"]) and !empty($_SERVER["HTTP_REFERER"]) ) {
             if(substr($_SERVER["HTTP_REFERER"],0,strlen($_domain)) != $_domain) {
-            // # Проверяем куки и если нужно устанавливаем
-                setcookie("orders_referer", $_SERVER['HTTP_REFERER'], time() + 86400, '/' ); // 600 - 1м. 86400 - 1д.
-            // setcookie("orders_referer", $_SERVER['HTTP_REFERER'], time() + 86400, '/' );
-            } elseif (!isset($_COOKIE['orders_referer']) 
-                    or (isset($_COOKIE['orders_referer']) and empty($_COOKIE['orders_referer']))) {
+                setcookie("orders_referer", $_SERVER['HTTP_REFERER'], time() + 3600 * 1, '/' ); // 600 - 1м. 86400 - 1д.
+            } elseif (!isset($_COOKIE['orders_referer'])) {
                 setcookie("orders_referer", $_SERVER['HTTP_REFERER'], time() + 3600 * 1, '/' ); // 1 - ч.
             }
         }    

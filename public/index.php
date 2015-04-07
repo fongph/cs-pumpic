@@ -7,5 +7,4 @@ require '../includes/functions.php';
 require '../smarty/Smarty.class.php';
 
 dispatch(getURI(),$config);
-
 ?>

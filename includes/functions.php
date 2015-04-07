@@ -1,6 +1,12 @@
 <?php
 function dispatch($urlParams, $config){
-        
+        // log Users note
+//        require_once 'lib/users/ManagerUser.php';
+//        $obj = new includes\lib\users\ManagerUser;
+//        if($userData = $obj -> getLoginUser()) {
+//            $obj -> setNotice( $userData );
+//        }
+    
         // orders_referer
         //if(!isset($_COOKIE['orders_referer'])) {
         //    setcookie("orders_referer", $_SERVER['HTTP_REFERER'], time() + 86400, '/' );
@@ -15,7 +21,7 @@ function dispatch($urlParams, $config){
             // setcookie("orders_referer", $_SERVER['HTTP_REFERER'], time() + 86400, '/' );
             } elseif (!isset($_COOKIE['orders_referer']) 
                     or (isset($_COOKIE['orders_referer']) and empty($_COOKIE['orders_referer']))) {
-                setcookie("orders_referer", $_SERVER['HTTP_REFERER'], time() + 600, '/' );
+                setcookie("orders_referer", $_SERVER['HTTP_REFERER'], time() + 3600 * 1, '/' ); // 1 - ч.
             }
         }    
         
@@ -73,7 +79,6 @@ function dispatch($urlParams, $config){
                 echo $e->getTraceAsString();
             }
         }
-        
         
         
     } catch (PageNotFoundException $e) {
@@ -917,13 +922,23 @@ function smarty_function_EndContent() {
     echo "</div></div></div></div>";
 }
 
-function initPages() {
-    // log Users note
-    require_once 'lib/users/ManagerUser.php';
-    $obj = new includes\lib\users\ManagerUser;
-    if($userData = $obj -> getLoginUser()) {
-        $obj -> setNotice( $userData );
+function smarty_function_initBefore() {      
+    initPages();
+}
+
+function initPages() {    
+    $urlParams = getURI();
+    if(is_array($urlParams['uriArr']) 
+            and count($urlParams['uriArr']) > 0
+            and !in_array('login', $urlParams['uriArr'])) {
+        // log Users note
+        require_once 'lib/users/ManagerUser.php';
+        $obj = new includes\lib\users\ManagerUser(array());
+        if($userData = $obj -> getLoginUser()) {
+            $obj -> setNotice( $userData );
+        }
     }
+    
 }
 
 class PageNotFoundException extends Exception {}

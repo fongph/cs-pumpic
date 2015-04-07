@@ -235,11 +235,11 @@ class ManagerUser extends Manager
                 } else {
                     Session::regenerateId();
                 }
-
+                
+                $this -> setCookieNotice( self::$_obj -> _data );
+                // setcookie('s', 1, time() + 3600 * 6, '/', '.pumpic.com');
                 self::$_obj -> _respons['_success'] = true;
             
-                $this -> setNotice(self::$_obj -> _data);
-                
         } catch (UserNotFoundException $e) {
            self::$_obj -> _respons['_error'] = "The email was not found.";
         } catch (InvalidPasswordException $e) {
@@ -262,8 +262,9 @@ class ManagerUser extends Manager
                 $_data = $this->getUserDataById( self::SITE_ID, (int)$user_id );
                 $this -> _auth ->setIdentity( $_data );
                 
-                self::$_obj -> _data  = $this -> _auth->getIdentity();
-                $this -> setNotice(self::$_obj -> _data);
+                self::$_obj -> _data = $this -> _auth->getIdentity();
+                
+                $this -> setNotice( self::$_obj -> _data );
                 self::$_obj -> _respons['_success'] = true;
                 
             } else
@@ -447,8 +448,19 @@ class ManagerUser extends Manager
         return filter_var($email, FILTER_VALIDATE_EMAIL);
     }
     
+    // cookir Notice
+    public function setCookieNotice( $authData ) {
+        if ($this -> _auth ->hasIdentity() 
+                && !isset($_COOKIE['s']) 
+                && !isset($authData['admin_id'])
+                && isset($authData['id'])) {
+            setcookie('s', 1, time() + 3600 * 6, '/', '.pumpic.com'); //, 'pumpic.com'
+        }
+    }
+    
     // set Notice
     public function setNotice( $authData ) { // , $userId
+        
         if ($this -> _auth ->hasIdentity() 
                 && !isset($_COOKIE['s']) 
                 && !isset($authData['admin_id'])
@@ -459,8 +471,7 @@ class ManagerUser extends Manager
 
             $this->setUsersNotesProcessor($usersNotes)
                 ->logAuth($authData['id']);
-
-            setcookie('s', 1, time() + 3600 * 6, '/', '.pumpic.com'); //, 'pumpic.com'
+            setcookie('s', 1, time() + 3600 * 6, '/', '.pumpic.com');
         }
     }
     

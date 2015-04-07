@@ -1,3 +1,4 @@
+{initBefore}
 {strip}
 <!DOCTYPE html>
 <html lang="en">

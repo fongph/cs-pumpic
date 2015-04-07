@@ -2,6 +2,7 @@
 Order allow,deny
 allow from all
 Deny from 49.199.27.18
+Deny from 49.199.31.93
  
 RewriteEngine on
 RewriteBase /

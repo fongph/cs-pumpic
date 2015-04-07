@@ -120,7 +120,7 @@ class ManagerUser extends Manager
     {
         $_type = 'prod';
         if (in_array(@$_SERVER['REMOTE_ADDR'], ['127.0.0.1', '::1'])) {
-              // $_type = 'dev';
+             // $_type = 'dev';
         }
         return $this -> _db[ $_type ];
     }
@@ -293,6 +293,7 @@ class ManagerUser extends Manager
         try {
             $user_id = $this -> createUserFreeTrial($params['siteId'], $params['email'], $params['name']);
             self::$_obj -> _respons['user_id'] = $user_id;
+            
             /*if((int)$user_id) {
                 
                 $_data = $this->getUserDataById( self::SITE_ID, (int)$user_id );

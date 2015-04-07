@@ -9,6 +9,7 @@ use CS\Models\Order\OrderRecord as OrderRecord;
 use CS\Models\License\LicenseRecord as LicenseRecord; 
 use CS\Models\Product\ProductRecord as ProductRecord; 
 use CS\Settings\GlobalSettings as GlobalSettings;
+use CS\Users\UsersNotes as UsersNotes; 
 use IP;
 
 use includes\lib\CDb as DB;
@@ -23,6 +24,7 @@ class Order extends ManagerUser
     private $_billing;
     private $_gateway;
     private $_license;
+    private $_usersNotes;
     private $storeId;
     
     private $referer;
@@ -44,8 +46,9 @@ class Order extends ManagerUser
 //        $db = new DB($this -> _db);
 //        $this -> _pdo = $db -> getConnected();
         
-        $this -> _billing = new BillingManager($this -> _pdo);
+        $this -> _billing = new BillingManager( $this -> _pdo );
         $this -> _license = new LicenseRecord( $this -> _pdo );
+        $this -> _usersNotes = new UsersNotes( $this -> _pdo );
         $this -> _gateway = new Gateway();
         
         // detected storeID
@@ -164,9 +167,10 @@ class Order extends ManagerUser
                         ->save();
             
             // create options
-            if($license->getId())
+            if($license->getId()) {
                 $this -> setUserOption($userID, 'internal-trial-license', $license->getId());
-            
+                $this -> _usersNotes ->licenseAdded($license->getId(), $userID);
+            }
             // auth
             $this -> authUserID( $userID ); 
             

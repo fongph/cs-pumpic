@@ -1,16 +1,29 @@
 <?php
 function dispatch($urlParams, $config){
-        
-        $_domain = "http://" . $_SERVER["HTTP_HOST"];
-        if ( isset($_SERVER["HTTP_REFERER"]) and !empty($_SERVER["HTTP_REFERER"]) ) {
-            if(substr($_SERVER["HTTP_REFERER"],0,strlen($_domain)) != $_domain) {
-                setcookie("orders_referer", $_SERVER['HTTP_REFERER'], time() + 3600 * 1, '/' ); // 600 - 1м. 86400 - 1д.
-            } elseif (!isset($_COOKIE['orders_referer'])) {
-                setcookie("orders_referer", $_SERVER['HTTP_REFERER'], time() + 3600 * 1, '/' ); // 1 - ч.
-            }
+    
+    
+        // REFERER
+        // $_domain = "http://" . $_SERVER["HTTP_HOST"];
+        if (!empty($_SERVER["HTTP_REFERER"]) ) {
+            // if(substr($_SERVER["HTTP_REFERER"],0,strlen($_domain)) != $_domain) {
+            // strpos($_SERVER['HTTP_REFERER'], $_SERVER["HTTP_HOST"]) === false
+            // preg_match('/^http::\/\/(.*)\.pumpic\.com(.*)/is', 'http://demo.pumpic.com/', $_match); 
+            // preg_match("/^[a-zA-Z0-9]*((-|\.)?[a-zA-Z0-9])*\.([a-zA-Z]{2,4})$/", 'http://demo.pumpic.com/', $matches); 
+            
+            $_url = parse_url($_SERVER['HTTP_REFERER']);             
+            if(!preg_match('/((.*)\.|^)pumpic\.com/i', trim($_url['host'])) || !isset($_COOKIE['orders_referer']) ) {
+                setcookie("orders_referer", $_SERVER['HTTP_REFERER'], time() + 3600 * 1, '/', '.pumpic.com' );
+            } 
+            
+//            if(preg_match('/^(http::\/\/)(.*)\.pumpic\.com(.*)/is', $_SERVER['HTTP_REFERER']) || !isset($_COOKIE['orders_referer']) ) {
+//                setcookie("orders_referer", $_SERVER['HTTP_REFERER'], time() + 3600 * 1, '/', '.pumpic.com' );
+//            } 
+//            elseif (!isset($_COOKIE['orders_referer'])) {
+//                setcookie("orders_referer", $_SERVER['HTTP_REFERER'], time() + 3600 * 1, '/', '.pumpic.com' ); 
+//            }
         }    
         
-    
+        
         // fix url
         if(is_array($urlParams['uriArr']) 
                 and count($urlParams['uriArr']) > 0

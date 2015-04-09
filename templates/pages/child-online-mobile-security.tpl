@@ -98,20 +98,16 @@
 
         {EndContent}
 
-        {include file='../includes/main/main-quick-link.tpl' 
-            blockBg="dark"
-        }        
         
-        {*{include file='../includes/content/banners/banner-promo-trial.tpl'}*}
-        
-        {include file='../includes/content/banners/index.tpl'}
         <!-- END CONTENT -->    
            
         <!-- RECOMMENDED -->
         {*
             Template: RECOMMENDED
         *}    
-        {include file='../includes/main/main-recommended.tpl'}
+        {include file='../includes/main/main-recommended.tpl'
+                 blockBg='light'
+        }
         
         <!-- FOOTER -->
         {*

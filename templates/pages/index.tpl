@@ -28,7 +28,8 @@
             title = "Cell Phone <br />Monitoring Control App"
             description = "Keep your family safe and secured with Pumpic. <br />
                            Track location. View calls and SMS. Follow online activity."
-            promoBuyBlock = "yes"
+            promoBuyBlock = "no"
+            planPackageBuy = "yes"
         }
         
         {include file='../includes/content/plans.tpl'}

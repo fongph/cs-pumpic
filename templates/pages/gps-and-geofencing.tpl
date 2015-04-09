@@ -27,7 +27,8 @@
             title = "Cell Phone GPS<br /> Tracking App"
             description = "Track location and route history. Set Geo-fences. <br />
             Monitor iPhones, iPads, iPods Touch and Android devices."
-            promoBuyBlock = "yes"
+            promoBuyBlock = "no"
+            planPackageBuy = "yes"
         }
         
         {include file='../includes/content/plans.tpl' }

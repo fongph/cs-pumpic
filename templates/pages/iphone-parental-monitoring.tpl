@@ -25,8 +25,9 @@
             textAlign = "right"
             title = "Parental Control Software for iPhone"
             description = "Keep track of your kids’ iOS devices remotely:"
-            promoBuyBlock = "yes"
+            promoBuyBlock = "no"
             listText = "control mobile phone usage|monitor Internet activity|follow location and route history"
+            planPackageBuy = "yes"
              }
          {*listText = "control mobile phone usage|monitor Internet activity|follow location and route history"*}    
         

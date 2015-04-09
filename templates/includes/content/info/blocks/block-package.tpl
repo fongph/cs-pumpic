@@ -7,7 +7,7 @@
         </section>
         <section class="vertical-aligh-middle">
             {nocache}
-                <form method="POST" action="/free-trial.html" autocomplete="off">
+                <form method="POST" action="/store.html" autocomplete="off">
                     {*<input type='hidden' name='price[productID]' value='19' />*}
                     <button class="btn btn-default ga-action-click"
                             value="true"

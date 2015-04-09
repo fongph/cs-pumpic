@@ -156,14 +156,14 @@ form > table.pricing-second:after {
 .tb_pricing  .refund_10{
     position: absolute;
     width:100%;
-    top:427px;
+    top:512px; /* 427 */
     height: 36px;
     background-color:#4d4f5b; 
 }
 .tb_pricing .support_os{
     position: absolute;
     width:100%;
-    top:463px;
+    top:547px; /* 463 */
     height: 40px;
     background-color:#f0f0f0; 
 }
@@ -307,19 +307,29 @@ form > table.pricing-second:after {
     text-transform: none;
    
 }
-.hover_label_radio:hover {
+
+
+.priceb .list_price ul li:hover,
+.pricep .list_price ul li:hover {
+    border-top:1px solid #d8f3f1;
+    border-bottom:1px solid #d8f3f1;
+    background: #fdfbf3;
+}
+
+/*.hover_label_radio:hover {
     border-top:1px solid #d8f3f1;
     border-bottom:1px solid #d8f3f1;
     background: #fdfbf3;
     overflow: hidden;
     height: 39px;
     line-height: 36px;
-}
+}*/
 .label_radio .sp_price{
     display: block;
     font-size: 14px;
     font-weight: normal;
-    text-align: left;
+/*    text-align: left;*/
+    text-align: right;
     float:right;
     text-transform: none;
 }
@@ -629,14 +639,14 @@ form > table.pricing-second:after {
 .tb_pricing  .refund_10{
     position: absolute;
     width:100%;
-    top:450px;
+    top:5300px; /* 450 */
     height: 36px;
     background-color:#4d4f5b; 
 }
 .tb_pricing .support_os{
     position: absolute;
     width:100%;
-    top:486px;
+    top:565x; /* 486 */
     height: 40px;
     background-color:#f0f0f0; 
 }
@@ -657,14 +667,14 @@ form > table.pricing-second:after {
     .tb_pricing  .refund_10{
         position: absolute;
         width:100%;
-        top:450px;
+        top:529px; /*450*/
         height: 36px;
         background-color:#4d4f5b; 
     }
     .tb_pricing .support_os{
         position: absolute;
         width:100%;
-        top:486px;
+        top:570px; /*486*/
         height: 40px;
         background-color:#f0f0f0; 
     }
@@ -687,14 +697,14 @@ form > table.pricing-second:after {
      .tb_pricing  .refund_10{
         position: absolute;
         width:100%;
-        top:467px;
+        top:531px; /* 467 */
         height: 36px;
         background-color:#4d4f5b; 
     }
     .tb_pricing .support_os{
         position: absolute;
         width:100%;
-        top:503px;
+        top:565px; /*503*/
         height: 40px;
         background-color:#f0f0f0; 
     }
@@ -703,7 +713,7 @@ form > table.pricing-second:after {
     .tb_pricing  .refund_10{
         position: absolute;
         width:100%;
-        top:477px;
+        top:557px;/* 477 */
         height: 36px;
         background-color:#4d4f5b; 
     }
@@ -780,3 +790,7 @@ form > table.pricing-second:after {
        width:100%;
     }
 } 
+
+.basic_wr .priceb > div.price-main {
+    position: relative;
+}

@@ -25,9 +25,10 @@
             textAlign = "right"
             title = "SMS Monitoring App"
             description = "Follow your kids’ SMS communication:"
-            promoBuyBlock = "yes"
+            promoBuyBlock = "no"
             listText = "monitor SMS messages sent and received|control contacts, block misgiving senders|prevent children from bullies and online predators"
-          }
+            planPackageBuy = "yes"    
+         }
           
         {*listText = "monitor SMS messages sent and received|control contacts, block misgiving senders|prevent children from bullies and online predators"*}  
         

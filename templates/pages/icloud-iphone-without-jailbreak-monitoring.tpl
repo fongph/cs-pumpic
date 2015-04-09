@@ -125,6 +125,25 @@
                                                                 </div>
                                                             </div>
                                                         </div>
+                                                       
+                                                        <div id="list-plans-premium-package" class="box-plans-package">
+                                                           <section class="full"> 
+
+                                                            <div class="list-plans box-table">
+                                                                <div class="table-rows">
+                                                                    <div class="item-plan table-column col-xs-sm-4 col-sm-4 col-md-4 col-lg-4 vertical-aligh-middle">
+                                                                        <i class="i-price-plans-big-premium"></i>
+                                                                    </div>
+                                                                    <div class="item-plan table-column col-xs-sm-8 col-sm-8 col-md-8 col-lg-8">
+                                                                        <p class="full">Buy <strong class="text-red">6</strong> or <strong class="text-red">12</strong> month plan 
+                                                                           and <strong class="text-red">get 2 plans for free</strong></p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>  
+
+                                                           </section>        
+                                                        </div>         
+                                                                 
                                                         <div class="list_price">
                                                             <form name="price_basic" method="POST" action="/buy.html" autocomplete="off">
                                                                 <input id='product_price_basic' type='hidden' name='price[productID]' value='0' class="product_price" />
@@ -138,15 +157,20 @@
                                                                                    value="{$_item.id}" type="radio"  
                                                                                    {if $_item.period == '3'} checked="checked" {/if} />
                                                                             <span class="sp">
-                                                                            <strong>
-                                                                                {$_item.period}
-                                                                            </strong> months
-                                                                        </span>
+                                                                                <strong>
+                                                                                    {$_item.period}
+                                                                                </strong> months
+                                                                            </span>
+                                                                             
+                                                                            <div class="box-small-package">    
+                                                                                {if $_item.period > 3}<span class="small_package i-price-plans-small-premium"></span>{/if} 
+                                                                            </div>     
+                                                                                
                                                                             <span class="sp_price">
-                                                                            <strong>
-                                                                                <div class="box-currence"><symbol attr-iso="usd">$</symbol><curr>{$_item.price}</curr></div>
-                                                                            </strong>
-                                                                        </span>
+                                                                                <strong>
+                                                                                    <div class="box-currence"><symbol attr-iso="usd">$</symbol><curr>{$_item.price}</curr></div>
+                                                                                </strong>
+                                                                            </span>     
                                                                         </label>
                                                                     </li>
                                                                     {/foreach}

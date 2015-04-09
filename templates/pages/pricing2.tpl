@@ -128,6 +128,34 @@
                                                             <div class="wr_price_big">
                                                                 <span></span><div class="box-currence"><symbol attr-iso="usd">$</symbol><curr id="basic-price-per-month">13.33</curr></div><span> / month</span>
                                                             </div>
+                                                            
+                                                            {*<div class="price-main">
+                                                                <div class="wr_pack">
+                                                                    <img src="{$img}/basic_pack.png">
+                                                                </div>
+                                                                <div class="wr_price_big">
+                                                                    <span></span><div class="box-currence"><symbol attr-iso="usd">$</symbol><curr id="basic-price-per-month">13.33</curr></div><span> / month</span>
+                                                                </div>
+                                                            </div>*}
+                                                            
+                                                            <div id="list-plans-basic-package" class="box-plans-package mt15">
+                                                               <section> 
+
+                                                                <div class="list-plans box-table">
+                                                                    <div class="table-rows">
+                                                                        <div class="item-plan table-column col-xs-sm-6 col-sm-6 col-md-6 col-lg-6 vertical-aligh-middle">
+                                                                            <i class="i-price-plans-big-basic"></i>
+                                                                        </div>
+                                                                        <div class="item-plan table-column col-xs-sm-6 col-sm-6 col-md-6 col-lg-6">
+                                                                            <p>Buy <strong class="text-red">6</strong> or <strong class="text-red">12</strong> month plan 
+                                                                               and <strong class="text-red">get 2 plans for free</strong></p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>  
+
+                                                               </section>        
+                                                            </div> 
+                                                            
                                                             <div class="list_price">
                                                             <form name="price_basic" method="POST" action="/buy.html" autocomplete="off">
                                                                 <input id='product_price_basic' type='hidden' name='price[productID]' value='0' class="product_price" />
@@ -144,11 +172,16 @@
                                                                                 {$_item.period}
                                                                             </strong> months
                                                                         </span>
+                                                                         
+                                                                        <div class="box-small-package">    
+                                                                            {if $_item.period > 3}<span class="small_package i-price-plans-small-basic"></span>{/if} 
+                                                                        </div>     
+                                                                            
                                                                         <span class="sp_price">
                                                                             <strong>
                                                                                 <div class="box-currence"><symbol attr-iso="usd">$</symbol><curr>{$_item.price}</curr></div>
                                                                             </strong>
-                                                                        </span>
+                                                                        </span>   
                                                                         </label>
                                                                     </li>
                                                                     {/foreach}
@@ -213,6 +246,10 @@
                                                         </div>
                                                             <div class="list_price" id="foot_h2">
                                                             <div class="space_line">&nbsp;</div>
+                                                            
+                                                            
+                                                            
+                                                            
                                                             <form name="price_basic_bottom" method="POST" action="/buy.html" autocomplete="off">
                                                                 <input id='product_price_basic' type='hidden' name='price[productID]' value='0' class="product_price" />
                                                                 
@@ -223,16 +260,21 @@
                                                                         value="{$_item.id}" type="radio" 
                                                                         {if $_item.period == '3'} checked="checked" {/if}
                                                                         />
-                                                                        <span class="sp">
-                                                                            <strong>
-                                                                                {$_item.period}
-                                                                            </strong> months
-                                                                        </span>
-                                                                        <span class="sp_price">
-                                                                            <strong>
-                                                                                <div class="box-currence"><symbol attr-iso="usd">$</symbol><curr>{$_item.price}</curr></div>
-                                                                            </strong>
-                                                                        </span>
+                                                                            <span class="sp">
+                                                                                <strong>
+                                                                                    {$_item.period}
+                                                                                </strong> months
+                                                                            </span>
+
+                                                                            <div class="box-small-package">    
+                                                                                {if $_item.period > 3}<span class="small_package i-price-plans-small-basic"></span>{/if} 
+                                                                            </div>
+
+                                                                            <span class="sp_price">
+                                                                                <strong>
+                                                                                    <div class="box-currence"><symbol attr-iso="usd">$</symbol><curr>{$_item.price}</curr></div>
+                                                                                </strong>
+                                                                            </span>   
                                                                         </label>
                                                                     </li>
                                                                     {/foreach}
@@ -250,12 +292,32 @@
                                                             Premium
                                                         </div>
                                                         <div class="pricep">
-                                                        <div class="wr_pack">
+                                                            <div class="wr_pack">
                                                                 <img src="{$img}/premium_pack.png">
                                                             </div>
                                                             <div class="wr_price_big">
                                                                 <span></span><div class="box-currence"><symbol attr-iso="usd">$</symbol><curr id="premium-price-per-month">16.66</curr></div><span>/ month</span>
                                                             </div>
+                                                            
+                                                            
+                                                            <div id="list-plans-premium-package" class="box-plans-package mt15">
+                                                               <section> 
+
+                                                                <div class="list-plans box-table">
+                                                                    <div class="table-rows">
+                                                                        <div class="item-plan table-column col-xs-sm-6 col-sm-6 col-md-6 col-lg-6 vertical-aligh-middle">
+                                                                            <i class="i-price-plans-big-premium"></i>
+                                                                        </div>
+                                                                        <div class="item-plan table-column col-xs-sm-6 col-sm-6 col-md-6 col-lg-6">
+                                                                            <p>Buy <strong class="text-red">6</strong> or <strong class="text-red">12</strong> month plan 
+                                                                               and <strong class="text-red">get 2 plans for free</strong></p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>  
+
+                                                               </section>        
+                                                            </div>
+                                                            
                                                             <div class="list_price">
                                                             <form name="price_premium" method="POST" action="/buy.html" autocomplete="off">
                                                                 <input id='product_price_premium' type='hidden' name='price[productID]' value='0' class="product_price"/>
@@ -267,16 +329,21 @@
                                                                         value="{$_item.id}" type="radio" 
                                                                         {if $_item.period == '3'} checked="checked" {/if}
                                                                         />
-                                                                        <span class="sp">
-                                                                            <strong>
-                                                                                {$_item.period}
-                                                                            </strong> months
-                                                                        </span>
-                                                                        <span class="sp_price">
-                                                                            <strong>
-                                                                                <div class="box-currence"><symbol attr-iso="usd">$</symbol><curr>{$_item.price}</curr></div>
-                                                                            </strong>
-                                                                        </span>
+                                                                            <span class="sp">
+                                                                                <strong>
+                                                                                    {$_item.period}
+                                                                                </strong> months
+                                                                            </span>
+                                                                                
+                                                                            <div class="box-small-package">    
+                                                                                {if $_item.period > 3}<span class="small_package i-price-plans-small-premium"></span>{/if} 
+                                                                            </div>    
+                                                                                
+                                                                            <span class="sp_price">
+                                                                                <strong>
+                                                                                    <div class="box-currence"><symbol attr-iso="usd">$</symbol><curr>{$_item.price}</curr></div>
+                                                                                </strong>
+                                                                            </span>   
                                                                         </label>
                                                                     </li>
                                                                     {/foreach}
@@ -350,16 +417,21 @@
                                                                         value="{$_item.id}" type="radio" 
                                                                         {if $_item.period == '3'} checked="checked" {/if}
                                                                         />
-                                                                        <span class="sp">
-                                                                            <strong>
-                                                                                {$_item.period}
-                                                                            </strong> months
-                                                                        </span>
-                                                                        <span class="sp_price">
-                                                                            <strong>
-                                                                                <div class="box-currence"><symbol attr-iso="usd">$</symbol><curr>{$_item.price}</curr></div>
-                                                                            </strong>
-                                                                        </span>
+                                                                            <span class="sp">
+                                                                                <strong>
+                                                                                    {$_item.period}
+                                                                                </strong> months
+                                                                            </span>
+                                                                                
+                                                                            <div class="box-small-package">    
+                                                                                {if $_item.period > 3}<span class="small_package i-price-plans-small-premium"></span>{/if} 
+                                                                            </div>    
+                                                                                
+                                                                            <span class="sp_price">
+                                                                                <strong>
+                                                                                    <div class="box-currence"><symbol attr-iso="usd">$</symbol><curr>{$_item.price}</curr></div>
+                                                                                </strong>
+                                                                            </span>   
                                                                         </label>
                                                                     </li>
                                                                     {/foreach}

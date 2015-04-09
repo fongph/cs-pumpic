@@ -25,8 +25,9 @@
             textAlign = "right"
             title = "Keylogger for Android and iPhone"
             description = "Track each tap and every button your kid presses:"
-            promoBuyBlock = "yes"
+            promoBuyBlock = "no"
             listText = "keep track of all keystrokes|follow password inputs|monitor Internet activity"
+            planPackageBuy = "yes"
              }
         {*listText = "keep track of all keystrokes|follow password inputs|monitor Internet activity"*}
         {include file='../includes/content/plans.tpl'}

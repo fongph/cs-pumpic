@@ -25,9 +25,10 @@
             textAlign = "right"
             title = "Pumpic Email Monitoring Software"
             description = "Monitor your children’s emails:"
-            promoBuyBlock = "yes"
+            promoBuyBlock = "no"
             listText = "view sent and received emails|keep track of mailing contact list|follow online registrations"
-             }
+            planPackageBuy = "yes"
+         }
          {*listText = "view sent and received emails|keep track of mailing contact list|follow online registrations"*}    
         
         {include file='../includes/content/plans.tpl'}

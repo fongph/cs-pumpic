@@ -6146,3 +6146,21 @@ form.form-contact-us .box-captcha {
 .image-flag-header-gb {
     background: url('../images/flag/gbp.png') no-repeat;
 }
+
+/* ------------ \\ fix price --------- */
+.priceb .list_price ul {
+    margin-left: 0px !important;
+    padding: 0px;
+}
+.priceb .list_price ul li {
+    margin: auto;
+/*    width: 100% !important;*/
+}
+
+/*.list_price ul li,*/
+.list_price ul li .label_check, 
+.list_price ul li .label_radio{
+    margin: auto;
+    width: 230px !important;
+    max-width: 230px;
+}

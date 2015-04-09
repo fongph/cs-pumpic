@@ -67,6 +67,7 @@
                 listText (string): список параметров. * - разделитель "|"
                 trial (string): "yes" -  триал баннер. (yes|no)
                 promoBuyBlock (string): Включает кнопку PromoBuy (yes|no) *default: переменная не инцелезирована
+                planPackageBuy (sting): Включает банер пакетов (yes|no) *default: переменная не инцелезирована
                 flagPosition (string): 'left' * - позиция флага относительно тексиа ( описания ). (left|right) default: ''
                 flagName (string): 'gb' * - назначение флага. ( au - Австралия | gb - Великобритания | ca - Канада ) default: ''
         *}
@@ -79,7 +80,8 @@
             title = "Cell Phone <br />Monitoring Control App"
             description = "Keep your family safe and secured with Pumpic. <br />
                            Track location. View calls and SMS. Follow online activity."
-            promoBuyBlock = "yes"
+            promoBuyBlock = "no"
+            planPackageBuy = "yes"
         }
         
         {*

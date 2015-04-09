@@ -284,7 +284,9 @@ span.text-success {
     background: #fdfbf3;
 }
 .row-pricing-panel .priceb .list_price ul li .hover_label_radio {
-  max-width: 210px;
+/*  max-width: 210px;*/
+  max-width: 230px;
+  width: 230px;
   margin: auto;
 }
 .row-pricing-panel .priceb .list_price ul li .hover_label_radio:hover {
@@ -301,7 +303,9 @@ span.text-success {
     background: #fdfbf3;
 }
 .row-pricing-panel .pricep .list_price ul li .hover_label_radio {
-  max-width: 210px;
+/*  max-width: 210px;*/
+  max-width: 230px;
+  width: 230px;
   margin: auto;
 }
 .row-pricing-panel .pricep .list_price ul li .hover_label_radio:hover {
@@ -553,7 +557,7 @@ th .table_title {
 @media (min-width: 700px) {
   .column-relative > .table_title {
     position: absolute;
-    top: 340px;
+    top: 417px; /* 340 */
     left: 0;
     width: 100%;
     background: #fff;
@@ -807,4 +811,174 @@ th .table_title {
     .row-pricing-panel .priceb .list_price ul li:hover .label_check::before {
         margin-top: -8px;
     } 
+}
+
+/* ------------- \\ PLANS -------------- */
+.row-pricing-panel .basic_wr .priceb .list-plans, 
+.row-pricing-panel .premium_wr .pricep .list-plans {
+    clear: both;
+    width: 100%;
+    color: #606060;
+}
+
+.list-plans .item-plan {
+    padding: 0px;
+    float: none;
+    vertical-align: middle;
+}
+.list-plans .item-plan:first-child { 
+    margin-right: 0px;
+}
+.list-plans .item-plan:last-child { 
+    text-align: left; 
+}
+
+.list-plans i {
+    float: right;
+}
+
+.list-plans p {
+    margin-bottom: 0px;
+    font-size: 14px;
+    line-height: 1.1em;
+    font-weight: 300;
+    text-transform: none;
+    color: #606060;
+}
+
+.list-plans p.full { 
+    font-size: 15px;
+}
+
+[class^="i-price-plans-small-"], 
+[class*="i-price-plans-small-"],
+[class^="i-price-plans-big-"], 
+[class*="i-price-plans-big-"] {
+    display: block;
+}
+[class^="i-price-plans-big-"], 
+[class*="i-price-plans-big-"] {
+    position: relative;
+    width: 112px;
+    height: 35px;
+}
+
+.i-price-plans-big-basic {
+    background: url('../images/plans/basic_plan_packets.png') no-repeat;
+}
+
+.i-price-plans-big-premium {
+    background: url('../images/plans/premium_plan_packets.png') no-repeat;
+}
+
+[class^="i-price-plans-small-"], 
+[class*="i-price-plans-small-"] {
+    width: 47px;
+    height: 18px;
+}
+
+.i-price-plans-small-basic {
+    background: url('../images/plans/basic_plan_small_packets.png') no-repeat;
+}
+
+.i-price-plans-small-premium {
+    background: url('../images/plans/premium_plan_small_packets.png') no-repeat;
+}
+
+.text-red {
+    color: #cf4857;
+}
+
+.box-plans-package {
+    position: relative;
+/*    margin: 0px;*/
+}
+ 
+.box-plans-package:first-child { border-left: 1px solid #d8f3f1; }
+.box-plans-package {
+    border-top: 1px solid #d8f3f1;
+    border-bottom: 1px solid #d8f3f1;
+    border-right: 1px solid #d8f3f1;
+}
+
+#list-plans-premium-package {
+    background: #fffefb;
+}
+#list-plans-basic-package {
+   background: #f9f7ee; 
+}
+#list-plans-basic-package,
+#list-plans-premium-package {
+    display: inline-block;
+    width: 100%;
+}
+#list-plans-basic-package > section,
+#list-plans-premium-package > section {
+    max-width: 280px;
+    margin: 0 auto;
+    padding: 6px;
+}
+
+#list-plans-premium-package > section.full {
+    max-width: 310px;
+    padding: 11px 6px 12px 6px;
+}
+
+#list-plans-premium-package > section.full .list-plans i {
+    float: none;
+}
+
+.box-small-package {
+    width: 47px;
+    padding-left: 5px;
+    vertical-align: middle;
+}
+
+.small_package {
+    position: relative;
+}
+
+.plan-header-premium {
+    display: inline-block;
+    background: url('../images/plans/header_premium.png') no-repeat;
+    width: 105px;
+    height: 31px;
+}
+
+.banner-header-package p {
+    margin-bottom: 0px;
+}
+.banner-header-package p:last-child {
+    font-size: 14px;
+    line-height: 1.1em;
+}
+
+.banner-header-package section:last-child {
+    
+}
+
+.banner-header-package button {
+    top: 10px;
+    position: relative;
+}
+
+@media only screen and (max-width: 992px) { 
+    .banner-header-package button { 
+        top: 0px;
+    }
+}
+
+
+.label_radio .sp,
+.label_radio .sp_price, 
+.box-small-package {
+    float: none !important;
+    display: inline-block !important;
+}
+.label_radio .sp {
+    width: 76px;
+}
+.label_radio .sp_price {
+/*    width: auto;*/
+    width: 70px;
 }

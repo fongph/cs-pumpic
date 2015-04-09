@@ -101,6 +101,10 @@
 
                                     {/if}    
 
+                                    {if isset($planPackageBuy) && $planPackageBuy == 'yes'}
+                                        {include './blocks/block-package.tpl'}
+                                    {/if}
+                                    
                                     {if isset($promoBuyBlock) && $promoBuyBlock == 'yes'}
                                         {include './blocks/include-blocks.tpl'}
                                         {*{include './blocks/block-trial.tpl'}*}

@@ -1,7 +1,7 @@
 <article id="post-<?php the_ID(); ?>" class="post artice_bordered">
     <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
     <div class="list_tags">
-        <span class="date"><?= wp_date_format() ?></span>
+        <span class="date"><?php the_date()  // wp_date_format() ?></span>
         <?php /* the_tags(__('<strong>Posted by to</strong>'), '') */ ?>
     </div>
     <div class="pull-left">

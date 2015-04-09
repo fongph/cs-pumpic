@@ -3,7 +3,7 @@
     <article>
         <h1 class="h1 h1_post"><?php the_title(); ?></h1>
         <div class="list_tags">
-            <span class="date"><?php the_date()  // wp_date_format() ?></span>
+            <span class="date"><?php echo get_the_date();  // wp_date_format() ?></span>
             <?php /* the_tags(__('<strong>Posted by to</strong>'), '')*/ ?>
         </div>
         <div id="box-content-post">

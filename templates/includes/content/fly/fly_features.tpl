@@ -1,4 +1,4 @@
-<a id="link-fly-features" href="/store.html">
+<a id="link-fly-features" class="fly-features-v1" href="/store.html">
     <div id="fly_features">
         <h2>New features:</h2>
         <span class="close"></span>

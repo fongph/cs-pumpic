@@ -2575,23 +2575,23 @@ textarea {
 }
 .table_header a:hover .ico-flag-usd,
 .table_header a.active .ico-flag-usd {
-  background-position: 0 -26px;
+  background-position: 0 -27px;
 }
 .table_header a:hover .ico-flag-gbp,
 .table_header a.active .ico-flag-gbp {
-  background-position: -26px -26px;
+  background-position: -26px -27px;
 }
 .table_header a:hover .ico-flag-eur,
 .table_header a.active .ico-flag-eur {
-  background-position: -52px -26px;
+  background-position: -52px -27px;
 }
 .table_header a:hover .ico-flag-cad,
 .table_header a.active .ico-flag-cad {
-  background-position: -78px -26px;
+  background-position: -78px -27px;
 }
 .table_header a:hover .ico-flag-aud,
 .table_header a.active .ico-flag-aud {
-  background-position: -104px -26px;
+  background-position: -104px -27px;
 }
 
 .ico-flag-usd {

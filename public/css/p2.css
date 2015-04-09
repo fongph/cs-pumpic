@@ -156,14 +156,14 @@ form > table.pricing-second:after {
 .tb_pricing  .refund_10{
     position: absolute;
     width:100%;
-    top:512px; /* 427 */
+    top:527px; /* 427 */
     height: 36px;
     background-color:#4d4f5b; 
 }
 .tb_pricing .support_os{
     position: absolute;
     width:100%;
-    top:547px; /* 463 */
+    top:562px; /* 463 */
     height: 40px;
     background-color:#f0f0f0; 
 }
@@ -341,7 +341,7 @@ form > table.pricing-second:after {
 }
 
 .basic_wr .basic_fe{
-    margin-top:95px;
+    margin-top:110px;
     width:100%;
     
 }
@@ -397,7 +397,7 @@ form > table.pricing-second:after {
 }
 
 .premium_wr .premium_fe{
-    margin-top:95px;
+    margin-top:110px;
     width:100%;
     
 }
@@ -636,27 +636,27 @@ form > table.pricing-second:after {
 }
 
 @media only screen and (max-width: 1200px) {
-.tb_pricing  .refund_10{
-    position: absolute;
-    width:100%;
-    top:5300px; /* 450 */
-    height: 36px;
-    background-color:#4d4f5b; 
-}
-.tb_pricing .support_os{
-    position: absolute;
-    width:100%;
-    top:565x; /* 486 */
-    height: 40px;
-    background-color:#f0f0f0; 
-}
+        .tb_pricing  .refund_10{
+            position: absolute;
+            width:100%;
+            top:545px; /* 450 */
+            height: 36px;
+            background-color:#4d4f5b; 
+        }
+        .tb_pricing .support_os{
+            position: absolute;
+            width:100%;
+            top:580px; /* 486 */
+            height: 40px;
+            background-color:#f0f0f0; 
+        }
         .basic_wr .basic_fe{
-            margin-top:125px;
+            margin-top:110px;
             width:100%;
             
         }
         .premium_wr .premium_fe{
-            margin-top:125px;
+            margin-top:110px;
             width:100%;
             
         }
@@ -667,24 +667,24 @@ form > table.pricing-second:after {
     .tb_pricing  .refund_10{
         position: absolute;
         width:100%;
-        top:529px; /*450*/
+        top:545px; /*450*/
         height: 36px;
         background-color:#4d4f5b; 
     }
     .tb_pricing .support_os{
         position: absolute;
         width:100%;
-        top:570px; /*486*/
+        top:580px; /*486*/
         height: 40px;
         background-color:#f0f0f0; 
     }
         .basic_wr .basic_fe{
-            margin-top:100px;
+            margin-top:110px;
             width:100%;
             
         }
         .premium_wr .premium_fe{
-            margin-top:100px;
+            margin-top:110px;
             width:100%;
             
         }
@@ -697,14 +697,14 @@ form > table.pricing-second:after {
      .tb_pricing  .refund_10{
         position: absolute;
         width:100%;
-        top:531px; /* 467 */
+        top:539px; /* 467 */
         height: 36px;
         background-color:#4d4f5b; 
     }
     .tb_pricing .support_os{
         position: absolute;
         width:100%;
-        top:565px; /*503*/
+        top:575px; /*503*/
         height: 40px;
         background-color:#f0f0f0; 
     }
@@ -713,14 +713,14 @@ form > table.pricing-second:after {
     .tb_pricing  .refund_10{
         position: absolute;
         width:100%;
-        top:557px;/* 477 */
+        top:536px;/* 477 */
         height: 36px;
         background-color:#4d4f5b; 
     }
     .tb_pricing .support_os{
         position: absolute;
         width:100%;
-        top:513px;
+        top:572px;
         height: 40px;
         background-color:#f0f0f0; 
     }

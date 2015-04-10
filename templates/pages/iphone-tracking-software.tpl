@@ -30,7 +30,7 @@
                             <br>Track location. View calls and texts. Follow online activity."
             os_versions = "os_v2_its"                
             promoBuyBlock = "no"
-            planPackageBuy = "yes"
+            planPackageBuy = "no"
             
         }
         

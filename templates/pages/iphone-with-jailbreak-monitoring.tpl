@@ -30,8 +30,8 @@
                             <br />Control iPhone use. Follow location and online activity."
             os_versions = "icloud_v2"                
             promoBuyBlock = "no"
-            iCloudSolution = 'no'
-            planPackageBuy = "yes"
+            iCloudSolution = 'yes'
+            planPackageBuy = "no"
         }
         
         <!-- BLOCK JAILBREAL SOLUTION -->

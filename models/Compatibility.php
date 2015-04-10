@@ -1,15 +1,5 @@
 <?php
 namespace Models;
-/*
-SELECT SQL_CALC_FOUND_ROWS id, 
-	name,
-	MATCH(name) AGAINST ('samsung GT-I90' IN BOOLEAN MODE) as rale1, 
-	MATCH(name) AGAINST ('"samsung GT-I90"' IN BOOLEAN MODE) as rale2,
-	name REGEXP '(samsung*)(.*)(GT-I90*)' as rale3
-FROM `phones` 
-WHERE MATCH(name) AGAINST ('samsung GT-I90' IN BOOLEAN MODE) or name REGEXP '(samsung*)(.*)(GT-I90*)'
-ORDER BY rale2 DESC, rale1 DESC, rale3 DESC
- */
 use PDO;
 
 class Compatibility {
@@ -46,29 +36,59 @@ class Compatibility {
             case self::FIND_BY_QUERY:
                 $_word = '';
                 $_one_word = '';
+                $_rel = '';
                 
-                $_fileds .= "
-                    MATCH(`longname`) AGAINST ('{$searchStr}' IN BOOLEAN MODE) as `rale1`,
-                    MATCH(`longname`) AGAINST ('\"{$searchStr}\"' IN BOOLEAN MODE) as `rale2`,
-                ";
                 if(!empty($searchStr)) {
+                    $firstWord = trim($searchStr);
                     $_exp = explode(' ', trim($searchStr));
-                    foreach($_exp as $_key => $_item) :
-                        
-                        if($_key == count($_exp) - 1) {
-                            $_word .= '('.$_item.'*)';
-                        } else if($_key < count($_exp) - 1) {
-                            $_word .= '('.$_item.'*)(.*)';
-                        }
-                        
-                        // $_one_word = '('.$_item.'*)|';
-                    endforeach;
                     
-                    $whereQuery  = "WHERE MATCH(`longname`) AGAINST ('{$searchStr}' IN BOOLEAN MODE) OR `longname` REGEXP '".trim($_word)."'";
+                    $_word .= '^'.  str_replace(' ', '*', trim($searchStr)) .'$|';
+                    $_word .= str_replace(' ', '(.*)', trim($searchStr)) .'(.*)|';
+                    
+                    if(count($_exp) > 1):
+                        // v1
+                        foreach($_exp as $_key => $_item) :
+                            
+                            if(strlen($_item) > 1) :
+                                if(!empty($_exp[0]))
+                                    $firstWord = $_exp[0];
+                                
+                                $_rel .= " +". $_item;
+                                if($_key == count($_exp) - 1) {
+                                    $_word .= $_item.'(.*)+|';
+                                } else if($_key < count($_exp) - 1) {
+                                    $_word .= $_item.'(.*)+|';
+                                }
+                            endif;
+                            
+                        endforeach;
+                        
+                    else:
+                        $_rel .= " +". trim($searchStr);
+                    endif;
+                    
+                    $_fileds .= "
+                        (
+                           (0.1*(IF((`longname` REGEXP '^". trim($firstWord) ."(.*)') > 0 , 1, 0))) +
+                           (0.1*(IF((`longname` REGEXP '^". trim($searchStr) ."$') > 0 , 1, 0))) +    
+                           (0.6*(MATCH(`longname`) AGAINST ('{$searchStr}' IN BOOLEAN MODE))) +
+                           (0.6*(MATCH(`longname`) AGAINST ('\"{$searchStr}\"' IN BOOLEAN MODE))) +
+                           (0.6*(MATCH(`longname`) AGAINST ('".trim($_rel)."' IN BOOLEAN MODE))) + 
+                           (1.3 * COUNT(IF(MATCH (`longname`) AGAINST ('*{$searchStr}*' IN BOOLEAN MODE),1,0))) +
+                           (1.3 * IF(LOCATE('{$searchStr}',`longname`)>0,1,0)) + 
+                           (1.3 * `longname` LIKE '%{$searchStr}%')    
+                        ) as `_sort`,
+                    ";
+                    
+                    $whereQuery  = "WHERE `longname` REGEXP '".trim($_word, '|')."'";
+                    
+                    // $whereQuery  = "WHERE MATCH(`longname`) AGAINST ('{$searchStr}' IN BOOLEAN MODE) OR `longname` REGEXP '".trim($_word)."'";
                     
                     // $_fileds .= "`longname` REGEXP '".trim($_word)."|".trim($_one_word, '|')."' as `rale3`,";
                     // $whereQuery  = "WHERE MATCH(`longname`) AGAINST ('{$searchStr}' IN BOOLEAN MODE) OR `longname` REGEXP '".trim($_word)."|".trim($_one_word, '|')."'";
-                    $orderBy = "ORDER BY `rale2` DESC, `rale1` DESC";
+                    
+                    $groupBy = 'GROUP BY `id`';
+                    $orderBy = "ORDER BY `_sort` DESC";
                 } else $whereQuery = '';
                 break;
 
@@ -90,13 +110,10 @@ class Compatibility {
                 {$_fileds}    
                 tested FROM `phones`
             {$whereQuery} 
+            {$groupBy}    
             {$orderBy}
             LIMIT {$start}, " . self::$perPage)->fetchAll(); // LIMIT {$start}, " . self::$perPage
 
-//         echo "<pre>";
-//         var_dump( $data );
-//         echo "</pre>";
-            
         return array(
             'count' => !empty($data) ? $this->db->query("SELECT FOUND_ROWS()")->fetchColumn() : 0,
             'list' => $data,

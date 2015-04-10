@@ -911,7 +911,7 @@ function smarty_function_Content($params, $template) {
     
     echo '<div id="block-content" class="'.$_style.'">
                     <div class="container">
-                        <h2 class="text-center">'.$_title.'</h2>
+                        <h1 class="h2 text-center">'.$_title.'</h1>
                         <div class="row">
                             <div class="col-sm-12 col-md-12 col-lg-12">';
 }

@@ -51,8 +51,9 @@
                                                     <div class="table-col-3 table-md-col-3 table-sm-col-3" id="table-container">
                                                         <article class="text-center">Features</article>
                                                         <section>
+                                                            {include file='../includes/content/table-items/feature-items.tpl'} 
                                                             
-                                                            <div class="tab col-item-3 col-md-item-3 col-sm-item-3">
+                                                            {*<div class="tab col-item-3 col-md-item-3 col-sm-item-3">
                                                                 <ul>
                                                                     <li><i class="i-features-sms"></i> <span onclick="window.location='http://{$domain}/mobile-sms-spy.html'">Monitor SMS</span></li>
                                                                     <li><i class="i-features-cell-history"></i> Monitor Calls History</li>
@@ -89,7 +90,7 @@
                                                                     <li><i class="i-features-sms-commands"></i> SMS Commands</li>
                                                                     <li class="hidden-mobile">&nbsp;</li>
                                                                 </ul>
-                                                            </div>
+                                                            </div>*}
                                                             
                                                             <div class="tab rowspan">
                                                                 <span>Avaliable on Apple & Android devices</span>

@@ -136,33 +136,37 @@ class Compatibility {
     public static function phoneDataPrepare(array $data)
     {
         $groups = array(
-            'Calls & Texts' => array(
+            // Calls & Texts
+            'Calls & SMS' => array(
                 'call_log' => 'Calls history',
                 'lock_device' => 'Calls blocking',
                 'sms_log' => 'SMS history',
                 'block_word' => 'SMS blocking',
-                'bad_word_sms'  => 'Block SMS by keyword',
+                'bad_word_sms'  => 'Block SMS by keywords',
                 'sms_daily_limiting' => 'SMS daily limiting',
 //                    'block_number' => 'Blocking calls & SMS by number',
             ),
             // Instant messengers
-            'Socials' => array( 
+            // Socials
+            'Social Media' => array( 
                 'skype' => 'Skype',
                 'viber' => 'Viber',
-                'whatsapp' => 'Whatsapp',
+                'whatsapp' => 'WhatsApp',
                 'facebook' => 'Facebook',
                 'instagram' => 'Instagram',
                 'kik'       => 'Kik',
 //                    'bb_messenger' => 'BlackBerry Messenger',
 //                    'pin_message' => 'PIN Message',
             ),
-            'Control Apps' => array(
+            // Control Apps
+            'Apps Control' => array(
                 'application'  => 'Applications list',
                 'app_list_block' => 'Apps blocking',
                 'keylogger' => 'Keylogger',
             ),
-            'Browser' => array(
-                'browser_history' => 'Browser history',
+            //Browser
+            'Browsing' => array(
+                'browser_history' => 'Browsing history',
                 'browser_bookmarks' => 'Bookmarks',
                 'blocking_sites' => 'Websites blocking',
             ),
@@ -174,11 +178,12 @@ class Compatibility {
                 'emails' => 'Emails',
                 'video' => 'Videos', // View user video
                 'historical_data'  => 'Historical data',
-                'sms_commands' => 'SMS Commands',
-                'sim_change_notification' => 'SIM change',
+                'sms_commands' => 'SMS commands',
+                'sim_change_notification' => 'SIM card change alert',
                 // 'reboot_app'  => 'Reboot application',
                 'reboot_device'  => 'Reboot device',
                 'geo_fences'    => 'Geo-fences',
+                'icloud_solution'   => 'iCloud solution',
 //                    'gps' => 'Current GPS location',
 
             ),

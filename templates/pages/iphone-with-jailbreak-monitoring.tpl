@@ -184,7 +184,7 @@
                                                             <div class="basic_fe reset-list">
                                                                 <ul class="list_price-no-link">
                                                 
-                                                                    <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> SMS <span>View sent and received messages. Block senders and bad-word SMS.</span>
+                                                                    <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> SMS <span>{*View sent and received messages. Block senders and bad-word SMS.*}SMS View sent and received messages. Block senders and bad-word SMS. Limit daily amount of outgoing texts.</span>
                                                                     </li>
                                                                     <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Calls <span>Follow in- and outbound calls. Block callers by phone numbers.</span>
                                                                     </li>
@@ -339,7 +339,7 @@
                                                             <div class="premium_fe reset-list">
                                                                 <ul class="list_price-no-link">
                                                 
-                                                                    <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> SMS <span>View sent and received messages. Block senders and bad-word SMS.</span>
+                                                                    <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> SMS <span>{*View sent and received messages. Block senders and bad-word SMS.*}SMS View sent and received messages. Block senders and bad-word SMS. Limit daily amount of outgoing texts.</span>
                                                                     </li>
                                                                     <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Calls <span>Follow in- and outbound calls. Block callers by phone numbers.</span>
                                                                     </li>

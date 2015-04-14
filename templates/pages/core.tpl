@@ -85,6 +85,15 @@
         }
         
         {*
+            Template: DID YOU KNOW
+            Переменные:
+                blockBg (string): Стиль блока ( dark / light ) *default: dark
+        *}
+        {include file='../includes/content/did_you_know.tpl' 
+                    blockBg="light"
+        }
+        
+        {*
             Template: TEMPLATE TEENAGERS
             Переменные:
                 blockBg (string): Стиль блока ( dark / light ) *default: dark

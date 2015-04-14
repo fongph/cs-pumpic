@@ -1,68 +1,80 @@
 <!-- block teenagers -->
 <div class="{if $blockBg}{$blockBg}{else}dark{/if} box-teenagers">
-        <div class="container">
-                <div class="row">
-                        <div class="col-sm-10 col-md-10 col-lg-10 col-sm-offset-1 col-md-offset-1 col-lg-offset-1 gutter-wide">
-                                <h2 class="t-title text-center">Most Teenagers Are In Trouble</h2>
-                                <div class="row">
-                                        <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12 item-teenager">
-                                                <img class="model-center" src="{$img}/pc2/teenagers_1.png" alt="">
-                                                <h1 class="item-t-title text-center">47<sup>%</sup></h1>
-                                                <p class="text-center">The number of high school students who admit they have tried alcohol or drugs.</p>
-
-                                        </div>
-                                        <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12 item-teenager">
-                                                <img class="model-center" src="{$img}/pc2/teenagers_2.png" alt="">
-                                                <h1 class="item-t-title text-center">1<span class="fz20">in</span>3</h1>
-                                                <p class="text-center">Children of 9-17 years old view 18+ websites containing pornography or violence daily.</p>
-
-                                        </div>
-                                        <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12 item-teenager">
-                                                <img class="model-center" src="{$img}/pc2/teenagers_3.png" alt="">
-                                                <h1 class="item-t-title text-center">27<sup>%</sup></h1>
-                                                <p class="text-center">The number of girls who bear children in the age of 15-19 in the United States yearly.</p>
-
-                                        </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
-                                        <div class="box-teenages-arrows-left pc-version">
-                                            <img src="{$img}/pc2/arrows_left.png"
-                                                 width="85px"
-                                                 height="70px" />
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
-                                        <div class="box-teenages-arrows-center pc-version">
-                                            <img class="model-center" 
-                                                 src="{$img}/pc2/arrows_center.png"
-                                                 width="17px"
-                                                 height="53px" />
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
-                                        <div class="box-teenages-arrows-rigth pc-version">
-                                            <img src="{$img}/pc2/arrows_right.png"
-                                                 width="85px"
-                                                 height="69px">
-                                        </div>
-                                    </div>
-
-                                </div>    
-
-                                <div class="row">
-                                    <img class="model-center notebook" src="{$img}/pc2/notebook.png" width="259px" height="149px" />
-                                    <h3 class="text-center">Want to Protect Your Child?</h3>
-                                    <div class="text-center">
-                                        <a class="btn btn-red text-center ga-action-click" 
-                                        ga-action ="click"
-                                        ga-category="buy pumpic"
-                                        ga-label="body" 
-                                       href="/store.html">Buy Pumpic</a>
-                                    </div>    
-                                </div> 
-                        </div>
-                </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-10 col-md-10 col-lg-10 col-sm-offset-1 col-md-offset-1 col-lg-offset-1">
+        
+        <h2 class="text-center">Did you know?</h2>
+        <p class="text-center f-light">
+            Modern technologies including smartphones, tablets, the Internet and browsers have become a significant part of our 
+            everyday life. When it comes to parenting, we should realize that we are responsible for our kids, and thus from time to 
+            time we need to limit their usage of gadgets and employ Internet restrictions.
+        </p>
+        
+        <!-- BLOCK STATISTICK -->
+        <div class="block-statistick row">
+            
+            <div class="item col-xs-sm-12 col-sm-4 col-md-4 col-lg-4">
+                <section>
+                    <span class="text-uppercase">Most kids are first <br />exposed to porn <br />at less than</span>
+                    <div><strong class="fz50 color-orange">11</strong></div>
+                    <span class="text-uppercase">years of age</span>
+                </section>
+            </div>
+            <div class="item col-xs-sm-12 col-sm-4 col-md-4 col-lg-4">
+                <section>
+                    <div>
+                        <strong class="fz50 color-orange">1</strong>
+                        <span>out of</span> 
+                        <strong class="fz50 color-orange">5</strong></div>
+                    <span class="text-uppercase">children ages 10-17 <br />have been approached <br />for sex online</span>
+                </section>
+            </div>
+            <div class="item col-xs-sm-12 col-sm-4 col-md-4 col-lg-4">
+                <section>
+                    <div><strong class="fz50 color-orange">75%</strong></div>
+                    <span class="text-uppercase">of these young
+                        <br />people do not tell
+                        <br />their parents about
+                        <br />these incidents
+                    </span>
+                </section>
+            </div>
+            
         </div>
+        <!-- END -->
+
+        <p class="text-center f-light">
+            Modern technologies including smartphones, tablets, the Internet and browsers have become a significant part of our 
+            everyday life. When it comes to parenting, we should realize that we are responsible for our kids, and thus from time 
+            to time we need to limit their usage of gadgets and employ Internet restrictions.
+        </p>
+        
+        <!-- BLOCK LIST -->
+        <div class="row pt15">
+            <div class="padding-null col-sm-4 col-md-4 col-lg-4">
+                <ul class="block-list">
+                    <li><i class="item-list-yelow"></i> Get access to Phone call logs</li>
+                    <li><i class="item-list-yelow"></i> Record the inbound/outbound calls</li>
+                </ul>
+            </div>
+            <div class="padding-null col-sm-4 col-md-4 col-lg-4">
+                <ul class="block-list">
+                    <li><i class="item-list-yelow"></i> Lock and Wipe phone remotely</li>
+                    <li><i class="item-list-yelow"></i> Track device location</li>
+                </ul>
+            </div>
+            <div class="padding-null col-sm-4 col-md-4 col-lg-4">
+                <ul class="block-list">
+                    <li><i class="item-list-yelow"></i> Monitor cell phone and Internet usage</li>
+                    <li><i class="item-list-yelow"></i> Block incoming calls – get productivity boost!</li>
+                </ul>
+            </div>
+        </div>
+        <!-- END -->
+        
+            </div></div>
+        
+    </div>
 </div>
 <!-- end -->

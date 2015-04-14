@@ -6164,3 +6164,17 @@ form.form-contact-us .box-captcha {
     width: 230px !important;
     max-width: 230px;
 }
+
+/* ------------- \\ iPad ----------- */
+.bgIpad {
+    background: url('../images/slider_home/ipad.png') no-repeat;
+    max-width: 385px;
+    max-height: 297px;
+    padding: 35px 36px 31px 33px;
+    z-index: 10;
+    background-size: 100% 100%;
+}
+
+.bgIpad > img {
+    z-index: 100;
+}

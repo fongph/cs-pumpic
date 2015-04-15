@@ -57,8 +57,7 @@
                 title = "Easy-to-Use Control Panel"
                 textAlign = "left"
                 description = "Try Control Panel demo to see Pumpic app in use.
-                               <br />Buy Pumpic to protect your family and secure your happiness right now."
-                sliders = "true"               
+                               <br />Buy Pumpic to protect your family and secure your happiness right now."             
         }
         
         {include file='../includes/main/main-testimonials.tpl'

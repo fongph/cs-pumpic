@@ -6167,11 +6167,19 @@ form.form-contact-us .box-captcha {
 
 /* ------------- \\ iPad ----------- */
 .bgIpad {
-    background: url('../images/slider_home/ipad.png') no-repeat;
     max-width: 385px;
     max-height: 297px;
     padding: 35px 36px 31px 33px;
     z-index: 10;
+}
+
+.bgAndroid {
+    background: url('../images/slider_home/ipad.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+.bgIOS {
+    background: url('../images/slider_home/ipad_ios.png') no-repeat;
     background-size: 100% 100%;
 }
 

@@ -46,6 +46,7 @@
 
         {include file='../includes/content/ipad.tpl' 
                 blockBg="light"
+                bgTab = "bgIOS"
                 imgUrl = "icons/ipad_android.png"
                 imgAlt = "Android"
                 title = "Remote Android Monitoring"

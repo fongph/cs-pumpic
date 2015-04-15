@@ -43,6 +43,7 @@
          
         {include file='../includes/content/ipad.tpl' 
                 blockBg="dark"
+                bgTab = "bgIOS"
                 imgUrl = "icons/ipad_android.png"
                 imgAlt = "call monitoring"
                 title = "Calls Monitoring"

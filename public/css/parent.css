@@ -215,6 +215,7 @@
     
     #table-container div.tab-full {
         text-align: left;
+        width: 100%;
     }
 }
 

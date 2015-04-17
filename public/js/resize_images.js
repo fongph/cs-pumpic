@@ -30,41 +30,6 @@
     };
 })(jQuery);
 
-// .wp-caption
-$( window ).resize(function() {
-    var $_wW = $(window).width();
-    
-    // form.send_find_phone .box-captcha img
-    if($('form .box-captcha > img').length) {
-        $('form .box-captcha > img').each(function() {
-            var _bcaptcha = $(this).parents('.box-captcha'), _bcw = _bcaptcha.width(),
-            _width = $(this).width(), width = $(this).outerWidth(true),
-            _update = _bcaptcha.find('.update-captcha');
-            $(this).css({'width': (_bcw - 54)+'px'});
-            _update.attr('attr-width', _bcw - 54);
-            
-        });
-    }
-    
-    
-    // box-content-post
-    if($('#box-content-post img, #block-content img').length) {
-      $('#box-content-post img, #block-content img').each(function() {
-          var _caption = $(this).parents('.wp-caption'), 
-                width = $(this).outerWidth(true),
-                _attachmentW = $(this).parents('#attachment').outerWidth(true),
-                _width = $(this).width(),
-                _attrW = $(this).attr('attr-width');
-
-          if(_caption.find('.wp-caption-text').length)
-            _caption.find('.wp-caption-text').css({
-                'width': width+'px',
-            });
-            
-      });
-    }  
-});
-
 $(document).ready(function(){ 
     /* capcha resize */
   if($('form .box-captcha > img').length) { 
@@ -131,4 +96,39 @@ $(document).ready(function(){
       
       
   }
+});
+
+// .wp-caption
+$( window ).resize(function() {
+    var $_wW = $(window).width();
+    
+    // form.send_find_phone .box-captcha img
+    if($('form .box-captcha > img').length) {
+        $('form .box-captcha > img').each(function() {
+            var _bcaptcha = $(this).parents('.box-captcha'), _bcw = _bcaptcha.width(),
+            _width = $(this).width(), width = $(this).outerWidth(true),
+            _update = _bcaptcha.find('.update-captcha');
+            $(this).css({'width': (_bcw - 54)+'px'});
+            _update.attr('attr-width', _bcw - 54);
+            
+        });
+    }
+    
+    
+    // box-content-post
+    if($('#box-content-post img, #block-content img').length) {
+      $('#box-content-post img, #block-content img').each(function() {
+          var _caption = $(this).parents('.wp-caption'), 
+                width = $(this).outerWidth(true),
+                _attachmentW = $(this).parents('#attachment').outerWidth(true),
+                _width = $(this).width(),
+                _attrW = $(this).attr('attr-width');
+
+          if(_caption.find('.wp-caption-text').length)
+            _caption.find('.wp-caption-text').css({
+                'width': width+'px',
+            });
+            
+      });
+    }  
 });

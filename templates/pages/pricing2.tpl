@@ -471,7 +471,7 @@
                                 <div class="space_line">&nbsp;</div>
                                 <div class="link_circle_italic2">
                                     <div class="style-links2">
-                                        <span class="circle_ico2"></span>You need to have physical access to your kid’s device to install the application.
+                                        <span class="circle_ico2"></span>{*You need to have physical access to your kid’s device to install the application*}You need to have physical access to the target device or iCloud password to install the application.
                                     </div>
                                 </div>
                             </div>

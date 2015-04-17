@@ -2,14 +2,17 @@
 include dirname(__FILE__).'/apiMail/sendMail.php';
 include dirname(__FILE__).'/apiMail/Settings.php';
 include dirname(__FILE__).'/users/Order.php';
+require_once dirname(__FILE__).'/CDb.php';
 
 
 use api\ApiMail as ApiMail;
 use api\Settings as Settings; 
 use includes\lib\users\Order as Order;
+use includes\lib\CDb as DB;
 
 class Phpmail extends Settings 
 {  
+    CONST start_id = 11701;
     CONST mail_support = 'support@pumpic.com';
     CONST mail_noreply = 'noreply@pumpic.com';
     
@@ -22,18 +25,23 @@ class Phpmail extends Settings
     private $_api;
     private $_data;
     private $_order;
+    private $_pdo;
+    
+    private $_browser = array();
     
     private $_messange = [
         'error' => false,
         'success' => false
     ];
     
-    public function __construct() 
+    public function __construct($_settings = array()) 
     {
+        $this -> _pdo = new DB($_settings);
         $this -> _order = new Order;
         $this -> setLocale('en-En') 
                 ->setSiteId(1)
                 ->setSystem(0);
+        $this -> initBrowser();
     }
     
     private function setData($_from, $_to, $type = 'main', $replyTo = '', $_params = array()) 
@@ -117,16 +125,64 @@ class Phpmail extends Settings
                 $this -> _messange['error']['captcha'] = self::error_captcha;
             } else {
                 
-                // sendMail Api
-                $_data = $this ->setData($params['email'], self::mail_support, 'Compatibility_pumpic', '', array(
+                $_params = array(
                    'deviceModel'    => $params['device-model'],
                    'email'          => $params['email'],
-                   // 'subject'        => [ 'Compatibility_pumpic' => "Compatibility ".$_id], 
-                )) -> sendMAil();
+                    '_browser'      => $this -> getBrowser(),
+                   // 'subject'        => [ 'contactUs_pumpic' => 'Contact US #pp '.$_id], 
+                );
                 
+                if($old_id = $this ->getMaxUID( 'Compatibility_pumpic' ) and $old_id['uid'] > 0) {
+                    $_uid = $old_id['uid'] + 1; 
+                } else {
+                    $_uid = self::start_id;
+                }
                 
-                if($_data === true) {
-                    $this -> _messange['success'] = "Your Request has been sent, our support representative will contact you as soon as possible"; //"Your email has been successfully sent";
+                if(!$sm_arr = $this ->saveDB(array(
+                    'to' => self::mail_support,
+                    'from' => $params['email'],
+                    'type' => 'Compatibility_pumpic',
+                ))) { 
+                    $this -> _messange['error'] = 'Fatal Error! Dont save in DB!'; 
+                    return $this -> _messange;
+                }
+                
+                $_params = array_merge( $_params, array('uid' => $_uid) );
+                
+                $this ->setSendmail(array( 'subject' => 'Website request #'.$_uid.' - '.$_params['email'], 
+                                            'uid' => $_uid,
+                                            'params' =>  serialize($_params) ), "id = ". (int)$sm_arr['id']);
+                
+                // sendMail Api (go support)
+                $_data = $this ->setData($params['email'], 
+                                        self::mail_support, 
+                                        'Compatibility_pumpic', 
+                                        '', 
+                                        $_params) -> sendMAil();
+                
+                if(!$this ->saveDB(array(
+                    'to' => $params['email'],
+                    'from' => self::mail_support,
+                    'type' => 'Compatibility_pumpic_sendUser',
+                    'uid' => $_uid,
+                    'subject' => 'Compatibility request #'. $_uid .' received',
+                    'params' => serialize( $_params ),
+                ))) {
+                    $this -> _messange['error'] = 'Fatal Error! Dont save Compatibility_pumpic_sendUser in DB!';
+                    return $this -> _messange;
+                }
+                
+                // go suers
+                $user_data = $this ->setData(
+                        self::mail_support, 
+                        $params['email'], 
+                        'Compatibility_pumpic_sendUser', 
+                        '', 
+                        $_params ) -> sendMAil();
+                
+                if($_data === true && $user_data === true) {
+                    $this -> _messange['success'] =  'Ticket #'. $_uid .' has been successfully sent.<br />
+                                                     Our support representative will contact you as soon as possible.';// "Your Request has been sent, our support representative will contact you as soon as possible"; //"Your email has been successfully sent";
                 } else
                     $this -> _messange['error']['email'] = self::error_email; 
                 
@@ -224,30 +280,211 @@ class Phpmail extends Settings
                 $this -> _messange['error']['captcha'] = self::error_captcha;
             } else {
                 
-                // sendMail Api
-                $_data = $this ->setData(self::mail_noreply, self::mail_support, 'contactUs_pumpic', $params['email'], array(
+                $_params = array(
                    'name'           => $params['name'],
                    'email'          => $params['email'],
                    'os'             => $params['os'],
                    'description'    => $params['description'],
+                    '_browser'      => $this -> getBrowser(),
                    // 'subject'        => [ 'contactUs_pumpic' => 'Contact US #pp '.$_id], 
-                )) -> sendMAil();
+                );
+                
+                if($old_id = $this ->getMaxUID( 'contactUs_pumpic' ) and $old_id['uid'] > 0) {
+                    $_uid = $old_id['uid'] + 1; 
+                } else {
+                    $_uid = self::start_id;
+                }
+                
+                if(!$sm_arr = $this ->saveDB(array(
+                    'to' => self::mail_support,
+                    'from' => self::mail_noreply,
+                    'type' => 'contactUs_pumpic',
+                ))) {
+                    $this -> _messange['error'] = 'Fatal Error! Dont save in DB!';
+                    return $this -> _messange;
+                }  
+                
+                // $_uid = ($sm_arr['uid'] > self::start_id) ? $sm_arr['uid'] ++ : self::start_id + $sm_arr['uid'];
+                $_params = array_merge( $_params, array('uid' => $_uid) );
+                
+                $this ->setSendmail(array( 'subject' => 'Website request #'.$_uid.' - '.$_params['email'], 
+                                            'uid' => $_uid,
+                                            'params' =>  serialize($_params) ), "id = ". (int)$sm_arr['id']);
+                
+               
+                
+                // sendMail Api (go support)
+                $_data = $this ->setData(
+                        self::mail_noreply, 
+                        self::mail_support, 
+                        'contactUs_pumpic', 
+                        $params['email'], 
+                        $_params ) -> sendMAil();
+                
+                if(!$this ->saveDB(array(
+                    'to' => $params['email'],
+                    'from' => self::mail_support,
+                    'type' => 'contactUs_pumpic_sendUser',
+                    'uid' => $_uid,
+                    'subject' => 'Contact form #'.$_uid.' received',
+                    'params' => serialize( $_params ),
+                ))) {
+                    $this -> _messange['error'] = 'Fatal Error! Dont save contactUs_pumpic_sendUser in DB!';
+                    return $this -> _messange;
+                }
+                // go users
+                $user_data = $this ->setData(
+                        self::mail_support, 
+                        $params['email'], 
+                        'contactUs_pumpic_sendUser', 
+                        '', 
+                        $_params ) -> sendMAil();
                 
                 
-                if($_data === true) {
-                    $this -> _messange['success'] = self::CONTACTUS_SUCCESS; //"Your email has been successfully sent";
+                
+                if($_data === true and $user_data === true) {
+                    $this -> _messange['success'] = 'Ticket #'. $_uid .' has been successfully sent.<br />
+                                                     Our support representative will contact you as soon as possible.';//self::CONTACTUS_SUCCESS; //"Your email has been successfully sent";
                 } else
                     $this -> _messange['error']['email'] = "Invalid email format"; // Invalid System Params
                 
             }    
 
             
-        }
+        } 
+        // $this -> _messange['success'] = self::CONTACTUS_SUCCESS;
         
         return $this -> _messange;
         
     }
     
+    /**
+     * getBrowser
+     */
+    protected function initBrowser() {
+        $info = get_browser();
+        if (isset($info->browser, $info->version)) {
+            $this -> _browser['browser'] = $info->browser;
+            $this -> _browser['browser_version'] = $info->version;
+        }
+        
+        if (isset($info->platform)) {
+            $this -> _browser['platform'] = $info->platform;
+            if (isset($info->platform_version)) {
+                $this -> _browser['platform_version'] = $info->platform_version;
+            }
+        }
+
+        if (isset($info->ismobiledevice))
+            $this -> _browser['ismobiledevice'] = $info->ismobiledevice;
+        
+        if (isset($info->istablet))
+            $this -> _browser['istablet'] = $info->istablet;
+        
+        if(isset($_COOKIE['_screen']))
+            $this -> _browser['_screen'] = $_COOKIE['_screen'];
+        
+        return $this -> _browser;
+    }
     
+    public function getBrowser() {
+        return $this -> _browser;
+    }
+    
+    public function getTmpBrowser() {
+        $_html ='';
+        if(count( $this ->getBrowser() ) > 0) {
+            $_b = $this ->getBrowser();
+            $browser = (isset($_b['browser'])) ? $_b['browser'].'( '.$_b['browser_version'].' )' : '-';
+            $platform = (isset($_b['platform'])) ? $_b['platform'].'( '.$_b['platform_version'].' )' : '-';
+            $screen = (isset($_b['_screen'])) ? $_b['_screen'] : '-';
+            
+            $mobile = (isset($_b['ismobiledevice'])) ? true : false;
+            $tablet = (isset($_b['istablet'])) ? true : false;
+            
+            $device = 'Desktop';
+            if($mobile) $device = 'Phone';
+            else if($tablet) $device = 'Tablet';
+            
+            $_html .= 'Browser: '. $browser .'<br />';
+            $_html .= 'OS: '. $platform .'<br />';
+            $_html .= 'Screen Resolution: '. $screen .'<br />';
+            $_html .= 'Device: '. $device .'<br />';
+            
+        }
+        return $_html;
+    }
+    
+    /**
+     * Svae DB
+     */
+    function saveDB( $_params ) {
+        $_setParams = array();
+       // $_uid = 1000;
+
+        if(!isset($_params['to']))
+            return false;
+
+       foreach($_params as $_name => $_value) :
+           $_setParams[ $_name ] = htmlspecialchars( trim($_value) );
+       endforeach;
+
+        $from = ($_setParams['from']) ? $_setParams['from'] : '';
+        $params = ($_setParams['params']) ? $_setParams['params'] : ''; 
+        $query = '';
+
+        if(isset($_setParams['uid'])) {
+            $query .= "`uid` = '".(int)$_setParams['uid']."',";
+        }
+        
+        if(isset($_setParams['subject'])) {
+            $query .= "`subject` = '".$_setParams['subject']."',";
+        }
+
+        $_sql = "INSERT INTO `sendmail` SET 
+                `to` = '".$_setParams['to']."',
+                `from` = '".$from."',
+                `type` = '".$_setParams['type']."',
+                ".$query."    
+                `params` = '".$params."'"; // `subject` = '".$_subject."', ".$_uid." + LAST_INSERT_ID() `body` = '".serialize(mysql_escape_string($_setParams['body']))."',
+        if($this -> _pdo -> query($_sql)) {
+            return $this ->getSendmailID( $this -> _pdo -> lastInsertId() );
+        } else
+            return false;
+
+    }
+    
+    function getSendmailID( $_id ) {
+        $_row = $this -> _pdo -> query("SELECT * FROM `sendmail` WHERE `id` = ". (int)$_id);
+        if(is_array($_row) and count($_row) > 0) {
+            return $_row[0];
+        } else 
+            return false; 
+    }
+    
+    function getMaxUID( $type ) {
+        $_row = $this -> _pdo -> query("SELECT MAX(`uid`) as uid FROM `sendmail` WHERE `type` = '". $type."'");
+        if(is_array($_row) and count($_row) > 0) {
+            return $_row[0];
+        } else 
+            return false; 
+    }
+    
+    function setSendmail($_params, $_where) {
+        $_sql = '';
+        if(!is_array($_params) or empty($_params))
+            return false;
+        foreach($_params as $_name => $_value) :
+           $_sql .= $_name . " = '" . mysql_escape_string( htmlspecialchars( trim($_value) ) )."',";
+       endforeach;
+       
+       $_query = "UPDATE `sendmail` SET ". trim($_sql, ',') ." WHERE ".$_where;
+       
+       if($this -> _pdo -> query( $_query )) {
+           return true;
+       } else
+           return false;
+        
+    }
 }
 

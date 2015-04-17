@@ -16,6 +16,7 @@ $_mail = new Phpmail;
  $smarty->force_compile = false;
  $smarty->debugging = false;
 
+ 
 // init function json
 function json_modifier($value) {
     return json_encode($value);

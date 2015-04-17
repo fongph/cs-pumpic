@@ -46,20 +46,88 @@
 {Content 
     title="Did you know?"
     blockBg='dark'}
-                        
-        <p>Using monitoring software to protect kids is an urgent issue of contemporary society. On one hand, technological progress opened new doors for the evolution of humanity; on the other one, it has resulted in a lot of dangers in return. And children are exposed to these dangers much more than others.</p> 
+                   
+        <p class="text-center f-light">
+            Using monitoring software to protect kids is an urgent issue of contemporary society. 
+        On one hand, technological progress opened new doors for the evolution of humanity; on the other one, it has 
+        resulted in a lot of dangers in return. And children are exposed to these dangers much more than others.
+        </p>
+        
+        <!-- BLOCK STATISTICK -->
+        <div class="block-statistick row">
+            
+            <div class="item col-s-sm-12 col-xs-sm-12 col-sm-4 col-md-4 col-lg-4">
+                <section>
+                    <div><strong class="fz50 color-orange">72%</strong></div>
+                    <span class="text-uppercase">
+                        of children worldwide use smartphones, 33% of them are under 8 years old
+                    </span>
+                </section>
+            </div>
+            <div class="item col-s-sm-12 col-xs-sm-12 col-sm-4 col-md-4 col-lg-4">
+                <section>
+                    <div><strong class="fz50 color-orange">23%</strong></div>
+                    <span class="text-uppercase">
+                        of teenagers report that they feel addicted to games on mobile devices
+                    </span>
+                </section>
+            </div>
+            <div class="item col-s-sm-12 col-xs-sm-12 col-sm-4 col-md-4 col-lg-4">
+                <section>
+                    <div><strong class="fz50 color-orange">69%</strong></div>
+                    <span class="text-uppercase">
+                        of boys and girls under 18 have experienced cyberbullying via mobile phones
+                    </span>
+                </section>
+            </div>
+            
+        </div>
+        <!-- END -->
+
+        <p class="text-center f-light">
+            As a parent you should always keep the situation under control, be aware of possible threats coming from the Internet, 
+        how to resist it, and if a reliable Android parental monitoring app can be the way out:
+        </p>
+        
+        <!-- BLOCK LIST -->
+        <div class="row pt15">
+            <div class="padding-null col-sm-4 col-md-4 col-lg-4">
+                <ul class="block-list">
+                    <li><i class="item-list-css-orange"></i> control cell phone usage</li>
+                    <li><i class="item-list-css-orange"></i> follow online activity</li>
+                    
+                </ul>
+            </div>
+            <div class="padding-null col-sm-4 col-md-4 col-lg-4">
+                <ul class="block-list">
+                    <li><i class="item-list-css-orange"></i> track routes and location</li>
+                </ul>
+            </div>
+            {*<div class="padding-null col-sm-4 col-md-4 col-lg-4">
+                <ul class="block-list">
+                    <li><i class="item-list-css-orange"></i> Monitor cell phone and Internet usage</li>
+                    <li><i class="item-list-css-orange"></i> Block incoming calls – get productivity boost!</li>
+                </ul>
+            </div>*}
+        </div>
+        <!-- END -->
+    
+        {*<p>Using monitoring software to protect kids is an urgent issue of contemporary society. 
+        On one hand, technological progress opened new doors for the evolution of humanity; on the other one, it has 
+        resulted in a lot of dangers in return. And children are exposed to these dangers much more than others.</p> 
         <ul>
 		    <li>72% of children worldwide use smartphones, 33% of them are under 8 years old</li>
             <li>23% of teenagers report that they feel addicted to games on mobile devices</li>
             <li>69% of boys and girls under 18 have experienced cyberbullying via mobile phones</li>
 		</ul>
-        <p>As a parent you should always keep the situation under control, be aware of possible threats coming from the Internet, how to resist it, and if a reliable Android parental monitoring app can be the way out:</p>
+        <p>As a parent you should always keep the situation under control, be aware of possible threats coming from the Internet, 
+        how to resist it, and if a reliable Android parental monitoring app can be the way out:</p>
 
         <ul>
             <li>control cell phone usage</li>
             <li>follow online activity</li>
             <li>track routes and location</li>
-        </ul>
+        </ul>*}
 
         {* Template: BLOCK IMAGE
             blockAlign (text): позиция блока с изображением. (left|center|right) *default: center

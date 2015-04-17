@@ -46,20 +46,92 @@
 {Content 
     title="Did you know?"
     blockBg='dark'}
-                        
-    <p>Since iPhones have hit the market in 2007, there are over 500 million devices sold. And sales performance grows rapidly until now, as well as figures of Apple smartphones stolen. That’s why upgrading your kid’s device with an app to monitor iPhone is a must-have security measure. With its help, you will easily locate, lock or wipe an iOS mobile phone remotely, if lost or stolen.</p>   
+       
+        <p class="text-center f-light">
+            Since iPhones have hit the market in 2007, there are over 500 million devices sold. And sales performance grows rapidly 
+            until now, as well as figures of Apple smartphones stolen. That’s why upgrading your kid’s device with an app to monitor 
+            iPhone is a must-have security measure. With its help, you will easily locate, lock or wipe an iOS mobile phone remotely, 
+            if lost or stolen.
+        </p>
+        
+        <!-- BLOCK STATISTICK -->
+        <div class="block-statistick row">
+            
+            <div class="item col-s-sm-12 col-xs-sm-12 col-sm-4 col-md-4 col-lg-4">
+                <section>
+                    <div><strong class="fz50 color-orange">44%</strong></div>
+                    <span class="text-uppercase">
+                        of lost iPhones were simply left in public places
+                    </span>
+                </section>
+            </div>
+            <div class="item col-s-sm-12 col-xs-sm-12 col-sm-4 col-md-4 col-lg-4">
+                <section>
+                    <div><strong class="fz50 color-orange">14%</strong></div>
+                    <span class="text-uppercase">
+                        of stolen Apple devices were taken from house or car
+                    </span>
+                </section>
+            </div>
+            <div class="item col-s-sm-12 col-xs-sm-12 col-sm-4 col-md-4 col-lg-4">
+                <section>
+                    <div><strong class="fz50 color-orange">11%</strong></div>
+                    <span class="text-uppercase">
+                        of all stolen iOS smartphones were pickpocketed
+                    </span>
+                </section>
+            </div>
+            
+        </div>
+        <!-- END -->
+
+        <p class="text-center f-light">
+            Nowadays iPhones are probably the most popular cell phones worldwide. It is hard to find a person, who would not 
+            like to have an ultramodern device by Apple. When it comes to kids and teenagers, iOS smartphones appear 
+            to be the top of the mind. To protect your child as well as the expensive gift, use iPhone monitoring software:
+        </p>
+        
+        <!-- BLOCK LIST -->
+        <div class="row pt15">
+            <div class="padding-null col-sm-4 col-md-4 col-lg-4">
+                <ul class="block-list">
+                    <li><i class="item-list-css-orange"></i> control mobile phone usage</li>
+                    <li><i class="item-list-css-orange"></i> monitor Internet activity</li>
+                    
+                </ul>
+            </div>
+            <div class="padding-null col-sm-4 col-md-4 col-lg-4">
+                <ul class="block-list">
+                    <li><i class="item-list-css-orange"></i> follow location and route history</li>
+                </ul>
+            </div>
+            {*<div class="padding-null col-sm-4 col-md-4 col-lg-4">
+                <ul class="block-list">
+                    <li><i class="item-list-css-orange"></i> Monitor cell phone and Internet usage</li>
+                    <li><i class="item-list-css-orange"></i> Block incoming calls – get productivity boost!</li>
+                </ul>
+            </div>*}
+        </div>
+        <!-- END -->
+    
+    {*<p>Since iPhones have hit the market in 2007, there are over 500 million devices sold. And sales performance grows rapidly 
+    until now, as well as figures of Apple smartphones stolen. That’s why upgrading your kid’s device with an app to monitor 
+    iPhone is a must-have security measure. With its help, you will easily locate, lock or wipe an iOS mobile phone remotely, 
+    if lost or stolen.</p>   
     <ul>
         <li>44% of lost iPhones were simply left in public places</li>
         <li>14% of stolen Apple devices were taken from house or car</li>
         <li>11% of all stolen iOS smartphones were pickpocketed</li>
     </ul>
-    <p>Nowadays iPhones are probably the most popular cell phones worldwide. It is hard to find a person, who would not like to have an ultramodern device by Apple. When it comes to kids and teenagers, iOS smartphones appear to be the top of the mind. To protect your child as well as the expensive gift, use iPhone monitoring software:</p>
+    <p>Nowadays iPhones are probably the most popular cell phones worldwide. It is hard to find a person, who would not 
+    like to have an ultramodern device by Apple. When it comes to kids and teenagers, iOS smartphones appear 
+    to be the top of the mind. To protect your child as well as the expensive gift, use iPhone monitoring software:</p>
 
     <ul>
         <li>control mobile phone usage</li>
         <li>monitor Internet activity</li>
         <li>follow location and route history</li>
-    </ul>
+    </ul>*}
 
         {* Template: BLOCK IMAGE
             blockAlign (text): позиция блока с изображением. (left|center|right) *default: center

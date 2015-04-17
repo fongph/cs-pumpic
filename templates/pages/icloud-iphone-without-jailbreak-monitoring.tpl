@@ -235,9 +235,14 @@
                                                 <div class="coming_soon_block">
                                                 <h2 class="text-warning font-weight400">Coming soon:</h2>
                                                     <ul>
-                                                        <li><b><i class="icons ico-skype"></i> Skype</b> <span>Follow personal, group messages and calls.</span></li>
-                                                        <li><b><i class="icons ico-notes"></i> Notes </b><span> View notes kept on the target device.</span></li>
-                                                        <li><b><i class="icons ico-emails"></i> Emails</b> <span>Monitor sent and received emails.</span></li>
+                                                        <li><b>Skype</b><i class="coming-soon-icons cs-ico-skype"></i><span>Follow personal, group messages and calls.</span></li>
+                                                        <li><b>WhatsApp</b><i class="coming-soon-icons cs-ico-whatsapp"></i><span>Follow personal messages and group chats.</span></li>
+                                                        <li><b>Photos</b><i class="coming-soon-icons cs-ico-photos"></i><span>View camera shots and downloaded photos.</span></li>
+                                                        <li><b>Notes</b><i class="coming-soon-icons cs-ico-notes"></i><span>View notes kept on the target device.</span></li>
+                                                        
+                                                        {*<li><b>Skype</b><i class="icons ico-skype"></i> <span>Follow personal, group messages and calls.</span></li>
+                                                        <li><b>Notes</b> <i class="icons ico-notes"></i> <span> View notes kept on the target device.</span></li>
+                                                        <li><b>Emails</b> <i class="icons ico-emails"></i> <span>Monitor sent and received emails.</span></li>*}
                                                     </ul>
                                                 {*<h3 class="text-warning font-weight400">And Even More Features!</h3>*}
                                                 </div>

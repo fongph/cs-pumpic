@@ -45,20 +45,95 @@
 {Content 
     title="How kids use cell phones"
     blockBg='dark'}
-                        
-        <p>Children learn from not only their parents and schoolteachers. The majority of information they get, comes from the surrounding. That’s why to protect your kids from ambiguous knowledge, it is essential to follow their time spent online and filter incoming data.</p> 
+               
+        <p class="text-center f-light">
+            Children learn from not only their parents and schoolteachers. The majority of information they get, comes 
+        from the surrounding. That’s why to protect your kids from ambiguous knowledge, it is essential to follow their time 
+        spent online and filter incoming data.
+        </p>
+        
+        <!-- BLOCK STATISTICK -->
+        <div class="block-statistick row">
+            
+            <div class="item col-s-sm-12 col-xs-sm-12 col-sm-4 col-md-4 col-lg-4">
+                <section>
+                    <div><strong class="fz50 color-orange">65%</strong></div>
+                    <span class="text-uppercase">
+                        of all information children learn comes from the surrounding
+                    </span>
+                </section>
+            </div>
+            <div class="item col-s-sm-12 col-xs-sm-12 col-sm-4 col-md-4 col-lg-4">
+                <section>
+                    <div><strong class="fz50 color-orange">33%</strong></div>
+                    <span class="text-uppercase">
+                        of teens have experienced threats online
+                    </span>
+                </section>
+            </div>
+            <div class="item col-s-sm-12 col-xs-sm-12 col-sm-4 col-md-4 col-lg-4">
+                <section>
+                    <div>
+                        <strong class="fz50 color-orange">1</strong>
+                        <span>in</span> 
+                        <strong class="fz50 color-orange">3</strong>
+                    </div>
+                    <span class="text-uppercase">
+                        children reports about the abuse to a trusted adult
+                    </span>
+                </section>
+            </div>
+            
+        </div>
+        <!-- END -->
+
+        <p class="text-center f-light">
+            More often than not kids tend to keep their private life secret from their parents. It means that if danger comes, 
+        there is a chance that you will not even know about it. Parental control software helps your monitor your children’s 
+        activity, when you are not nearby. It will secure your kid and avert danger:
+        </p>
+        
+        <!-- BLOCK LIST -->
+        <div class="row pt15">
+            <div class="padding-null col-sm-4 col-md-4 col-lg-4">
+                <ul class="block-list">
+                    <li><i class="item-list-css-orange"></i> keep track of all keystrokes</li>
+                    <li><i class="item-list-css-orange"></i> follow password inputs</li>
+                    
+                </ul>
+            </div>
+            <div class="padding-null col-sm-4 col-md-4 col-lg-4">
+                <ul class="block-list">
+                    <li><i class="item-list-css-orange"></i> monitor Internet activity</li>
+                </ul>
+            </div>
+            {*<div class="padding-null col-sm-4 col-md-4 col-lg-4">
+                <ul class="block-list">
+                    <li><i class="item-list-css-orange"></i> Monitor cell phone and Internet usage</li>
+                    <li><i class="item-list-css-orange"></i> Block incoming calls – get productivity boost!</li>
+                </ul>
+            </div>*}
+        </div>
+        <!-- END -->
+    
+    
+        {*<p>Children learn from not only their parents and schoolteachers. The majority of information they get, comes 
+        from the surrounding. That’s why to protect your kids from ambiguous knowledge, it is essential to follow their time 
+        spent online and filter incoming data.</p> 
         <ul>
 		    <li>65% of all information children learn comes from the surrounding</li>
             <li>33% of teens have experienced threats online </li>
             <li>1 in 3 children reports about the abuse to a trusted adult</li>
 		</ul>
-        <p>More often than not kids tend to keep their private life secret from their parents. It means that if danger comes, there is a chance that you will not even know about it. Parental control software helps your monitor your children’s activity, when you are not nearby. It will secure your kid and avert danger:</p>
+        <p>More often than not kids tend to keep their private life secret from their parents. It means that if danger comes, 
+        there is a chance that you will not even know about it. Parental control software helps your monitor your children’s 
+        activity, when you are not nearby. It will secure your kid and avert danger:</p>
 
         <ul>
             <li>keep track of all keystrokes</li>
             <li>follow password inputs</li>
             <li>monitor Internet activity</li>
-        </ul>
+        </ul>*}
 
         {* Template: BLOCK IMAGE
             blockAlign (text): позиция блока с изображением. (left|center|right) *default: center

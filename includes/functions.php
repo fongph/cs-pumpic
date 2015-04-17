@@ -1,6 +1,9 @@
 <?php
 function dispatch($urlParams, $config){
-    
+
+//        echo "<pre>";
+//        var_dump( $_SERVER['HTTP_USER_AGENT'], get_browser() );
+//        echo "</pre>";
     
         // REFERER
         // $_domain = "http://" . $_SERVER["HTTP_HOST"];

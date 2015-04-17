@@ -1731,7 +1731,8 @@ only screen and (max-device-width: 480px) {
   padding: 2px 12px;
 }
 
-.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+.dropdown-menu > li > a:hover, 
+.dropdown-menu > li > a:focus {
   background: #4d4f5b;
   color: #fff;
   outline: none;
@@ -6185,4 +6186,34 @@ form.form-contact-us .box-captcha {
 
 .bgIpad > img {
     z-index: 100;
+}
+
+/* ================ \\ CONTACT US =============== */ 
+.form-contact-us .dropdown-menu > li.selected {
+  background: #4d4f5b;
+  color: #fff;
+  outline: none;
+}
+
+.form-contact-us span.check-mark {
+    display: none !important;
+}
+
+.form-contact-us .select .btn-select { color: #555555; }
+.form-contact-us .bootstrap-select > button {
+    padding: 6px 12px;
+    font-size: 14px;
+    height: 34px;
+    line-height: 1.42857;
+}
+
+.item-list-css-orange {
+    border: 1px solid #ffba60;
+    border-radius: 5px;
+    content: "";
+    height: 10px;
+    left: 0;
+    margin-top: 0;
+    position: absolute;
+    width: 10px;
 }

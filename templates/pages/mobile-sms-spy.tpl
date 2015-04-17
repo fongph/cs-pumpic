@@ -47,8 +47,74 @@
 {Content 
     title="Did you know?"
     blockBg='dark'}
-                        
-        <p>Nowadays children spend more than 3 hours a day using smartphones for playing games, social media activity and chatting. Being a parent implies a huge responsibility to protect kids from misgiving people they might contact on the web. Reliable SMS spy software will help you secure your children.</p>
+            
+        <p class="text-center f-light">
+            Nowadays children spend more than 3 hours a day using smartphones for playing games, social media activity and chatting. 
+            Being a parent implies a huge responsibility to protect kids from misgiving people they might contact on the web. 
+            Reliable SMS spy software will help you secure your children.
+        </p>
+        
+        <!-- BLOCK STATISTICK -->
+        <div class="block-statistick row">
+            
+            <div class="item col-s-sm-12 col-xs-sm-12 col-sm-4 col-md-4 col-lg-4">
+                <section>
+                    <div><strong class="fz50 color-orange">70%</strong></div>
+                    <span class="text-uppercase">
+                        of victims that online predators target are boys and girls aged 14-16 years old
+                    </span>
+                </section>
+            </div>
+            <div class="item col-s-sm-12 col-xs-sm-12 col-sm-4 col-md-4 col-lg-4">
+                <section>
+                    <div><strong class="fz50 color-orange">50%</strong></div>
+                    <span class="text-uppercase">
+                        of children share personal data online, including names, the address and billing accounts
+                    </span>
+                </section>
+            </div>
+            <div class="item col-s-sm-12 col-xs-sm-12 col-sm-4 col-md-4 col-lg-4">
+                <section>
+                    <div><strong class="fz50 color-orange">60%</strong></div>
+                    <span class="text-uppercase">
+                        of all criminal cases among teenagers were planned through SMS and IM chats
+                    </span>
+                </section>
+            </div>
+            
+        </div>
+        <!-- END -->
+
+        <p class="text-center f-light">
+            Pumpic parental text monitoring app was designed to help keep your children safe by tracking incoming and outgoing SMS. 
+            The app allows you to view saved and deleted messages as well as block specific contacts from reaching your kids in future:
+        </p>
+        
+        <!-- BLOCK LIST -->
+        <div class="row pt15">
+            <div class="padding-null col-sm-4 col-md-4 col-lg-4">
+                <ul class="block-list">
+                    <li><i class="item-list-css-orange"></i> monitor SMS messages sent and received</li>
+                    <li><i class="item-list-css-orange"></i> control contacts, block misgiving senders</li>
+                    
+                </ul>
+            </div>
+            <div class="padding-null col-sm-4 col-md-4 col-lg-4">
+                <ul class="block-list">
+                    <li><i class="item-list-css-orange"></i> prevent children from bullies and online predators</li>
+                </ul>
+            </div>
+            {*<div class="padding-null col-sm-4 col-md-4 col-lg-4">
+                <ul class="block-list">
+                    <li><i class="item-list-css-orange"></i> Monitor cell phone and Internet usage</li>
+                    <li><i class="item-list-css-orange"></i> Block incoming calls – get productivity boost!</li>
+                </ul>
+            </div>*}
+        </div>
+        <!-- END -->
+    
+    
+        {*<p>Nowadays children spend more than 3 hours a day using smartphones for playing games, social media activity and chatting. Being a parent implies a huge responsibility to protect kids from misgiving people they might contact on the web. Reliable SMS spy software will help you secure your children.</p>
 
         <ul>
             <li>70% of victims that online predators target are boys and girls aged 14-16 years old</li>
@@ -62,7 +128,7 @@
             <li>monitor SMS messages sent and received</li>
             <li>control contacts, block misgiving senders</li>
             <li>prevent children from bullies and online predators</li>
-        </ul>    
+        </ul>*}    
         
         {* Template: BLOCK IMAGE
             blockAlign (text): позиция блока с изображением. (left|center|right) *default: center

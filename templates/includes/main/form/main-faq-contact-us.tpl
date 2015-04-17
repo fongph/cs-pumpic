@@ -24,14 +24,49 @@
 
                         <div class="form-group">
                                 <select id="os" 
-                                        class="select" 
+                                        class="select"
+                                        title='Question type*'
                                         name="os">
-                                        <option value="0" selected>Choose your OS*</option>
+                                        <option data-hidden="true" value="0" selected>Question type*</option>
+                                        <option value="General question">General question</option>
+                                        <option value="Technical">Technical question</option>
+                                        <option value="General">Billing question</option>
+                                        <option value="Website">Website feedback</option>
+                                </select>
+                                
+                                {* v1 <select id="os" 
+                                        class="select selectpicker" 
+                                        title='Question type*'
+                                        name="os"
+                                        multiple data-max-options="1">
                                         <option value="iOS">iOS</option>
                                         <option value="Android">Android</option>
                                         <option value="Other">Other</option>
-                                        {*<option value="blackberry">BlackBerry</option>*}
-                                </select>
+                                </select>*}
+                                
+                                {* v2 <select id="os" 
+                                        class="select form-control" 
+                                        title='Question type*'
+                                        name="os"
+                                        data-max-options="1">
+                                        <option value=""></option>
+                                        <option value="iOS">iOS</option>
+                                        <option value="Android">Android</option>
+                                        <option value="Other">Other</option>
+                                </select>*}
+                                
+                                {* v3 <select 
+                                    id="os" 
+                                    class="select selectpicker" 
+                                    title='Question type*'
+                                    name="os">
+                                    <option data-hidden="true">Question type*</option>
+                                    <option value="Billing">Billing</option>
+                                    <option value="Technical">Technical</option>
+                                    <option value="General">General</option>
+                                    <option value="Website">Website</option>
+                                </select>*}
+                                
                                 <input id="wos" 
                                        name="wos" 
                                        type="hidden" 
@@ -62,7 +97,7 @@
                         <div class="fatal-error"></div>
 
                         <p>Learn more from our {*<a href="/faq.html">*}FAQ{*</a>*} before submitting an application.</p>
-                        <button class="btn btn-orange mod-center event-submit">Submit Ticket <!-- btn-warning <i class="icon-right-open"></i>-->
+                        <button class="btn-orange mod-center event-submit">Submit Ticket <!-- btn-warning <i class="icon-right-open"></i>-->
                         </button>
                 </div>
         </fieldset>

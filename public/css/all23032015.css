@@ -498,7 +498,8 @@ th .table_title {
 .coming_soon_block ul li b{
   font-size: 19px;
   color: #4d4f5b;
-  min-width: 120px;
+/*  min-width: 120px;*/
+  min-width: 95px;
   font-weight: 400;
   display: inline-block;
 }
@@ -982,3 +983,37 @@ th .table_title {
 /*    width: auto;*/
     width: 70px;
 }
+
+/* ================== \\ Coming soon ================ */
+.coming-soon-icons {
+    margin: 0 15px !important;
+    display: inline-block;
+    width: 27px;
+    height: 26px;
+    position: relative;
+    top: 3px;
+}
+
+.coming_soon_block ul li span {
+    display: inline-block;
+}
+
+.cs-ico-skype {
+    background: url('../images/icons/coming_soon/i-skype.png') no-repeat;
+}
+
+.cs-ico-whatsapp {
+    background: url('../images/icons/coming_soon/i-whatsapp.png') no-repeat;
+}
+
+.cs-ico-photos {
+    background: url('../images/icons/coming_soon/i-phones.png') no-repeat;
+}
+
+.cs-ico-notes {
+    background: url('../images/icons/coming_soon/i-notes.png') no-repeat;
+}
+
+[class="cs-ico-*"] {
+    background-position: center center;
+} 

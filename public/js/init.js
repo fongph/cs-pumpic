@@ -265,7 +265,14 @@ function cookie_init() {
 //                        expires: 7, 
 //                        path: '/' 
 //                    });
-//    }            
+//    }         
+
+    // save cookie screen window
+    if(!getCookie('_screen')) {
+        console.log('Save Cookie!');
+        $.cookie('_screen', $(window).width()+'x'+$(window).height(), { expires: 7, path: '/', domain: '.pumpic.com' });
+    }
+
 }
 
 function cookie_clear() {
@@ -778,6 +785,7 @@ $(document).ready(function(){
          onsubmit: true,
          focusInvalid: false,
          focusCleanup: false,
+         debug: false,
        'device-model': {
             required: true
         },
@@ -862,6 +870,14 @@ $(document).ready(function(){
                       return false;
                   } else if(_res.success) {
                       $('form[name="send_find_phone"] span.info').html( _res.success ).css({'display':'inline-block'});
+                      
+                      // scrollTo block info
+                      var target_top = $('form[name="send_find_phone"] span.info').offset().top;
+                      $('html, body').animate( { 
+                            scrollTop: Math.ceil(target_top) // Math.ceil((target_top * $(window).outerHeight(true)) / $('html, body').height())
+                       },'linear');
+                      
+                      console.log( target_top, Math.ceil((target_top * $(window).outerHeight(true)) / $('html, body').height()) );
                       
                       // google analitycs
                       ga('send', 'event', 'form', 'submit', 'compatibility-request-success');
@@ -994,13 +1010,14 @@ $(document).ready(function(){
         .change(function () {
             var _selected = false;
             $('form.form-contact-us #wos').val('');
-            $( "select option:selected" ).each(function() {
+            $(this).find( "option:selected" ).each(function() {
                 _selected = $( this ).val();
             });
             
             if(_selected && _selected != '0') {
                 $('form.form-contact-us #wos').val( _selected ).valid();
             }
+            // $(this).selectpicker('hide');
         })
             .change(); 
     
@@ -1012,6 +1029,7 @@ $(document).ready(function(){
         onsubmit: true,
         focusInvalid: false,
         focusCleanup: false,
+        debug: false,
         ignore: "not:hidden",
        'name': {
             required: true
@@ -1078,7 +1096,8 @@ $(document).ready(function(){
 
             var $form = $(form);
             var _params = parseQuery($form.serializeArray());
-
+            
+            
             var _response = getAjaxForm('/contact_us_send.html', _params);
               if(_response.result) {
                   
@@ -1102,8 +1121,17 @@ $(document).ready(function(){
                       reloadCaptcha( $form.find('.box-captcha > img'), true ); // reload captcha 
                       return false;
                   } else if(_res.success) {
-                      $('form.form-contact-us span.info').html( _res.success ).css({'display':'inline-block'});
                       
+                      $('form.form-contact-us span.info')
+                              .html( _res.success )
+                              .css({'display':'inline-block'});
+                      
+                      // scrollTo block info
+                      var target_top = $('form.form-contact-us span.info').offset().top;
+                      $('html, body').animate( { 
+                            scrollTop: Math.ceil((target_top * $(window).outerHeight(true)) / $('html, body').height())
+                       },'linear');
+                               
                       // google analitycs
                       ga('send', 'event', 'form', 'submit', 'contact-request-success');
 
@@ -1118,10 +1146,16 @@ $(document).ready(function(){
                   reloadCaptcha( $form.find('.box-captcha > img'), true ); // reload captcha 
                   return false;
               }
+              
               reloadCaptcha( $form.find('.box-captcha > img')); // reload captcha     
-              $form.trigger("reset"); 
+              $form.trigger("reset");
         }
     }); 
+    
+//    $('form.form-contact-us"]').on('submit', function() {
+//       alert('ok!');
+//        return false;
+//    });
     
     $('form.form-contact-us input, form.form-contact-us textarea').focus(function() {
 //        if($('form.form-contact-us span.info').length)

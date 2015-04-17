@@ -46,8 +46,82 @@
 {Content 
     title="Email using statistics"
     blockBg='dark'}
-                        
-        <p>Though children do not tend to use an email in their online communication, they have to use it almost every day. The thing is that most websites and literally all social networks require an email to sign in. That’s why email monitoring software can show you a broad picture of your kid’s online activity: preferred websites, social networks he or she uses as well as if your child browses sites with inappropriate content.</p>
+                      
+    
+        <p class="text-center f-light">
+            Though children do not tend to use an email in their online communication, they have to use it almost every day. 
+            The thing is that most websites and literally all social networks require an email to sign in. That’s why email monitoring 
+            software can show you a broad picture of your kid’s online activity: preferred websites, social networks he or she uses as 
+            well as if your child browses sites with inappropriate content.
+        </p>
+        
+        <!-- BLOCK STATISTICK -->
+        <div class="block-statistick row">
+            
+            <div class="item col-s-sm-12 col-xs-sm-12 col-sm-4 col-md-4 col-lg-4">
+                <section>
+                    <span class="text-uppercase">More than</span>
+                    <div><strong class="fz50 color-orange">80%</strong></div>
+                    <span class="text-uppercase">of kids receive inappropriate spam via email on a daily basis</span>
+                </section>
+            </div>
+            <div class="item col-s-sm-12 col-xs-sm-12 col-sm-4 col-md-4 col-lg-4">
+                <section>
+                    <span class="text-uppercase">In addition,</span>
+                    <div><strong class="fz50 color-orange">27%</strong></div>
+                    <span class="text-uppercase">of teens have received emails with words or photos that made them feel embarrassed</span>
+                </section>
+            </div>
+            <div class="item col-s-sm-12 col-xs-sm-12 col-sm-4 col-md-4 col-lg-4">
+                <section>
+                    <span class="text-uppercase">And only</span>
+                    <div>
+                        <strong class="fz50 color-orange">1</strong>
+                        <span>in</span> 
+                        <strong class="fz50 color-orange">3</strong>
+                    </div>
+                    <span class="text-uppercase">parents with online access actively protect their kids with filtering or blocking software</span>
+                </section>
+            </div>
+            
+        </div>
+        <!-- END -->
+
+        <p class="text-center f-light">
+            The Internet is the easiest way for online predators, web swindlers and cyberbullies to contact your children. 
+            By making friendship with your kids via social media, it is not hard to find out their email addresses, which is the key 
+            to personal data and identity theft. Unfortunately, not many parents realize how important web protection is. 
+            These days’ online reality shifts the world around, making new rules for us. If you really want to secure your kids’ 
+            happiness, it is for you to consider these rules:
+        </p>
+        
+        <!-- BLOCK LIST -->
+        <div class="row pt15">
+            <div class="padding-null col-sm-4 col-md-4 col-lg-4">
+                <ul class="block-list">
+                    <li><i class="item-list-css-orange"></i> view sent and received emails</li>
+                    <li><i class="item-list-css-orange"></i> keep track of mailing contact list</li>
+                    
+                </ul>
+            </div>
+            <div class="padding-null col-sm-4 col-md-4 col-lg-4">
+                <ul class="block-list">
+                    <li><i class="item-list-css-orange"></i> follow online registrations</li>
+                </ul>
+            </div>
+            {*<div class="padding-null col-sm-4 col-md-4 col-lg-4">
+                <ul class="block-list">
+                    <li><i class="item-list-css-orange"></i> Monitor cell phone and Internet usage</li>
+                    <li><i class="item-list-css-orange"></i> Block incoming calls – get productivity boost!</li>
+                </ul>
+            </div>*}
+        </div>
+        <!-- END -->
+    
+        {*<p>Though children do not tend to use an email in their online communication, they have to use it almost every day. 
+        The thing is that most websites and literally all social networks require an email to sign in. That’s why email monitoring 
+        software can show you a broad picture of your kid’s online activity: preferred websites, social networks he or she uses as 
+        well as if your child browses sites with inappropriate content.</p>
 
         <ul>
             <li>More than 80% of kids receive inappropriate spam via email on a daily basis</li>
@@ -55,13 +129,17 @@
             <li>And only 1 in 3 parents with online access actively protect their kids with filtering or blocking software</li>
         </ul>
 
-        <p>The Internet is the easiest way for online predators, web swindlers and cyberbullies to contact your children. By making friendship with your kids via social media, it is not hard to find out their email addresses, which is the key to personal data and identity theft. Unfortunately, not many parents realize how important web protection is. These days’ online reality shifts the world around, making new rules for us. If you really want to secure your kids’ happiness, it is for you to consider these rules:</p>
+        <p>The Internet is the easiest way for online predators, web swindlers and cyberbullies to contact your children. 
+        By making friendship with your kids via social media, it is not hard to find out their email addresses, which is the key 
+        to personal data and identity theft. Unfortunately, not many parents realize how important web protection is. 
+        These days’ online reality shifts the world around, making new rules for us. If you really want to secure your kids’ 
+        happiness, it is for you to consider these rules:</p>
 
         <ul>
             <li>view sent and received emails</li>
             <li>keep track of mailing contact list</li>
             <li>follow online registrations</li>
-        </ul>
+        </ul>*}
 
         {* Template: BLOCK IMAGE
             blockAlign (text): позиция блока с изображением. (left|center|right) *default: center

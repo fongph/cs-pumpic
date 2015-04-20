@@ -453,7 +453,7 @@ function smarty_function_features_plans( $_plans = array() ) {
         'call-history' => [
             'title'   => 'Call History',
             'device'  => array(
-                'apple'      => ['status' => true, 'version' => '6.0 - 8.2'], // 3.1.3 - 7.1.1
+                'apple'      => ['status' => true, 'version' => '6.0 - 8.3'], // 3.1.3 - 7.1.1
                 'android'    => ['status' => true, 'version' => '2.2 - 5.1'], // 2.2 - 4.4
                 'blackberry' => ['status' => false, 'version' => '1.0 - 7.1']
             ),
@@ -472,7 +472,7 @@ function smarty_function_features_plans( $_plans = array() ) {
         'sms-history' => [
             'title'   => 'SMS History',
             'device'  => array(
-                'apple'      => ['status' => true, 'version' => '6.0 - 8.2'], // 3.1.3 - 7.1.1
+                'apple'      => ['status' => true, 'version' => '6.0 - 8.3'], // 3.1.3 - 7.1.1
                 'android'    => ['status' => true, 'version' => '2.2 - 5.1'], // 2.2 - 4.4
                 'blackberry' => ['status' => false, 'version' => '1.0 - 7.1']
             ),
@@ -491,7 +491,7 @@ function smarty_function_features_plans( $_plans = array() ) {
         'sms-blocking' => [
             'title'   => 'SMS blocking',
             'device'  => array(
-                'apple'      => ['status' => true, 'version' => '6.0 - 8.2'], // 3.1.3 - 7.1.1
+                'apple'      => ['status' => true, 'version' => '6.0 - 8.3'], // 3.1.3 - 7.1.1
                 'android'    => ['status' => true, 'version' => '2.2 - 4.3.1'], // except 4.4 (except 4.4 and higher)
                 'blackberry' => ['status' => false, 'version' => '1.0 - 7.1']
             ),
@@ -510,7 +510,7 @@ function smarty_function_features_plans( $_plans = array() ) {
         'location-history' => [
             'title'   => 'Location History',
             'device'  => array(
-                'apple'      => ['status' => true, 'version' => '6.0 - 8.2'],
+                'apple'      => ['status' => true, 'version' => '6.0 - 8.3'],
                 'android'    => ['status' => true, 'version' => '2.2 - 5.1'],
                 'blackberry' => ['status' => false, 'version' => '1.0 - 7.1']
             ),
@@ -529,7 +529,7 @@ function smarty_function_features_plans( $_plans = array() ) {
         'contacts' => [
             'title'   => 'Contacts',
             'device'  => array(
-                'apple'      => ['status' => true, 'version' => '6.0 - 8.2'],
+                'apple'      => ['status' => true, 'version' => '6.0 - 8.3'],
                 'android'    => ['status' => true, 'version' => '2.2 - 5.1'],
                 'blackberry' => ['status' => false, 'version' => '1.0 - 7.1']
             ),
@@ -548,7 +548,7 @@ function smarty_function_features_plans( $_plans = array() ) {
         'calendar' => [
             'title'   => 'Calendar',
             'device'  => array(
-                'apple'      => ['status' => true, 'version' => '6.0 - 8.2'],
+                'apple'      => ['status' => true, 'version' => '6.0 - 8.3'],
                 'android'    => ['status' => true, 'version' => '2.2 - 5.1'],
                 'blackberry' => ['status' => false, 'version' => '1.0 - 7.1']
             ),
@@ -567,7 +567,7 @@ function smarty_function_features_plans( $_plans = array() ) {
         'browsing-history' => [
             'title'   => 'Browsing History',
             'device'  => array(
-                'apple'      => ['status' => true, 'version' => '6.0 - 8.2'],
+                'apple'      => ['status' => true, 'version' => '6.0 - 8.3'],
                 'android'    => ['status' => true, 'version' => '2.2 - 5.1'],
                 'blackberry' => ['status' => false, 'version' => '1.0 - 7.1']
             ),
@@ -586,7 +586,7 @@ function smarty_function_features_plans( $_plans = array() ) {
         'bookmarks' => [
             'title'   => 'Bookmarks',
             'device'  => array(
-                'apple'      => ['status' => true, 'version' => '6.0 - 8.2'],
+                'apple'      => ['status' => true, 'version' => '6.0 - 8.3'],
                 'android'    => ['status' => true, 'version' => '2.2 - 5.1'],
                 'blackberry' => ['status' => false, 'version' => '1.0 - 7.1']
             ),
@@ -605,7 +605,7 @@ function smarty_function_features_plans( $_plans = array() ) {
         'photos' => [
             'title'   => 'Photos',
             'device'  => array(
-                'apple'      => ['status' => true, 'version' => '6.0 - 8.2'],
+                'apple'      => ['status' => true, 'version' => '6.0 - 8.3'],
                 'android'    => ['status' => true, 'version' => '2.2 - 5.1'],
                 'blackberry' => ['status' => false, 'version' => '1.0 - 7.1']
             ),
@@ -624,7 +624,7 @@ function smarty_function_features_plans( $_plans = array() ) {
         'emails' => [
             'title'   => 'Emails',
             'device'  => array(
-                'apple'      => ['status' => true, 'version' => '6.0 - 8.2'],
+                'apple'      => ['status' => true, 'version' => '6.0 - 8.3'],
                 'android'    => ['status' => true, 'version' => '2.2 - 5.1 (ROOT for all)'],
                 'blackberry' => ['status' => false, 'version' => '1.0 - 7.1']
             ),
@@ -643,7 +643,7 @@ function smarty_function_features_plans( $_plans = array() ) {
         'applications' => [
             'title'   => 'Applications',
             'device'  => array(
-                'apple'      => ['status' => true, 'version' => '6.0 - 8.2'],
+                'apple'      => ['status' => true, 'version' => '6.0 - 8.3'],
                 'android'    => ['status' => true, 'version' => '2.2 - 5.1'],
                 'blackberry' => ['status' => false, 'version' => '1.0 - 7.1']
             ),
@@ -662,7 +662,7 @@ function smarty_function_features_plans( $_plans = array() ) {
         'websites-apps-blocking' => [
             'title'   => 'Websites & Apps blocking',
             'device'  => array(
-                'apple'      => ['status' => true, 'version' => '6.0 - 8.2'],
+                'apple'      => ['status' => true, 'version' => '6.0 - 8.3'],
                 'android'    => ['status' => true, 'version' => '2.2 - 5.1'],
                 'blackberry' => ['status' => false, 'version' => '1.0 - 7.1']
             ),
@@ -681,7 +681,7 @@ function smarty_function_features_plans( $_plans = array() ) {
         'viber-whatsapp-skype' => [
             'title'   => 'Viber/WhatsApp/Skype',
             'device'  => array(
-                'apple'      => ['status' => true, 'version' => '6.0 - 8.2'],
+                'apple'      => ['status' => true, 'version' => '6.0 - 8.3'],
                 'android'    => ['status' => true, 'version' => '2.2 - 5.1 (ROOT for all)'],
                 'blackberry' => ['status' => false, 'version' => '1.0 - 7.1']
             ),
@@ -701,7 +701,7 @@ function smarty_function_features_plans( $_plans = array() ) {
         'view-user-video' => [
             'title'   => 'View User Video',
             'device'  => array(
-                'apple'      => ['status' => true, 'version' => '6.0 - 8.2'],
+                'apple'      => ['status' => true, 'version' => '6.0 - 8.3'],
                 'android'    => ['status' => true, 'version' => '2.2 - 5.1'],
                 'blackberry' => ['status' => false, 'version' => '1.0 - 7.1']
             ),
@@ -720,7 +720,7 @@ function smarty_function_features_plans( $_plans = array() ) {
         'facebook-messages' => [
             'title'   => 'Facebook Messages',
             'device'  => array(
-                'apple'      => ['status' => true, 'version' => '6.0 - 8.2'],
+                'apple'      => ['status' => true, 'version' => '6.0 - 8.3'],
                 'android'    => ['status' => true, 'version' => '2.2 - 5.1 (ROOT for all)'],
                 'blackberry' => ['status' => false, 'version' => '1.0 - 7.1']
             ),
@@ -740,7 +740,7 @@ function smarty_function_features_plans( $_plans = array() ) {
         'historical-data' => [
             'title'   => 'Historical Data',
             'device'  => array(
-                'apple'      => ['status' => true, 'version' => '6.0 - 8.2'],
+                'apple'      => ['status' => true, 'version' => '6.0 - 8.3'],
                 'android'    => ['status' => true, 'version' => '2.2 - 5.1'],
                 'blackberry' => ['status' => false, 'version' => '1.0 - 7.1']
             ),
@@ -759,7 +759,7 @@ function smarty_function_features_plans( $_plans = array() ) {
         'sms-commands' => [
             'title'   => 'SMS Commands',
             'device'  => array(
-                'apple'      => ['status' => true, 'version' => '6.0 - 8.2'],
+                'apple'      => ['status' => true, 'version' => '6.0 - 8.3'],
                 'android'    => ['status' => true, 'version' => '2.2 - 4.3.1 (ROOT for all)'],
                 'blackberry' => ['status' => false, 'version' => '1.0 - 7.1']
             ),
@@ -778,7 +778,7 @@ function smarty_function_features_plans( $_plans = array() ) {
         'keylogger' => [
             'title'   => 'Keylogger',
             'device'  => array(
-                'apple'      => ['status' => true, 'version' => '6.0 - 8.2'],
+                'apple'      => ['status' => true, 'version' => '6.0 - 8.3'],
                 'android'    => ['status' => true, 'version' => '2.2 - 5.1'],
                 'blackberry' => ['status' => false, 'version' => '1.0 - 7.1']
             ),

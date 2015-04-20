@@ -227,15 +227,15 @@
                 title (string): название блока.
                 sliders (string): вкл./ выкл. слайдера (false|true). * default: false
         *}
-        {include file='../includes/main/main-testimonials.tpl'
+        {*include file='../includes/main/main-testimonials.tpl'
                 title = "Trusted by Over 10 000 Customers Worldwide"
                 sliders = "false"
-                blockBg="light"} 
+                blockBg="light" *} 
                 
         {* 
             Template: BLOCK TESTIMONIALS HTML (static) 
         *}
-        <div class="dark">
+        <div class="light">
             <div class="container">
                 <h2 class="text-center testimonial-title">Trusted by Over 10 000 Customers Worldwide:</h2>
                 <div class="row">
@@ -371,14 +371,94 @@
         <!-- TEMPLATES BANNERS -->
         {* Template: BLOCK BANNER #1 'PROMO-BUY' *}
         {include file='../includes/content/banners/lib/banner-promo-buy.tpl'}
-        {* Template: BLOCK BANNER #3 'PROMO-TRIAL' *}
+        {* Template: BLOCK BANNER #2 'PROMO-TRIAL' *}
         {include file='../includes/content/banners/lib/banner-promo-trial.tpl'}
         {* Template: BLOCK BANNER #3 'PROMO-APP' *}
         {include file='../includes/content/banners/lib/banner-promo-app.tpl'}
-        {* Template: BLOCK BANNER #3 'PROMO-TEENAGERS' *}
+        {* Template: BLOCK BANNER #4 'PROMO-TEENAGERS' *}
         {include file='../includes/content/banners/lib/banner-promo-teenagers.tpl'}
+        <div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-12">    
+                        {* Template: BLOCK BANNER #5 'PROMO-DEMO' *}
+                        {include file='../includes/content/banners/lib/banner-promo-demo.tpl'}
+                    </div>
+                </div>
+            </div>
+        </div>    
         <!-- END TEMPLATES BANNERS -->
         
+        <!-- TEMPLATES VIDEO -->
+        {* Template: VIDEO 
+            Переменные:
+                blockBg (string): Стиль блока ( dark / light ) *default: dark
+        *}
+        {include file='../includes/content/video-pumpic.tpl'}
+        <!-- END TEMPLATES VIDEO -->
+        
+        <!-- TEMPLATES PLANS WHITE -->
+        {* Template: PLANS WHITE
+            Переменные:
+                blockBg (string): Стиль блока ( dark / light ) *default: dark
+        *}
+        {include file='../includes/content/plans-white.tpl'}
+        <!-- END TEMPLATES PLANS WHITE -->
+        
+        <!-- TEMPLATES BLOG BANNERS -->
+        <div class="pt15">
+            <div class="container">
+                <div class="row">
+                    
+                    <div class="col-sm-12 col-md-10 col-lg-10">
+                        <div class="row">
+                        
+                    <div class="col-sm-12 col-md-4 col-lg-4">
+                        <!-- #1 Banner BUY -->
+                        <div class="thumb_sidebar banner1 banner2"> <!-- banner2 -->
+                            <div class='caption'>
+                                <p class='buttons'>
+                                    <a href="http://pumpic.com/store.html" class='btn btn-default btn-banner-red'>Start Now</a>
+                                </p>
+                            </div> <!-- .caption -->
+                        </div>  
+                        
+                        <!-- #2 -->
+                        
+                        <div class="thumb_sidebar">
+                            <span class="img_thumb"><img src="{$img}/img_photo.png" height="72" width="138" alt=""></span>
+                            <div class="caption">
+                                <h3>GET IN LINE TO TRY TOPSPY</h3>
+                                <p>We've introduced our new cell phone spying software to help you track you underage kids, and increase your business safety.</p>
+                                <p class="text-center">
+                                    <a href="#" class="btn btn-default" role="button">Buy NOW</a>
+                                    <a href="#" class="btn btn-warning" role="button">View DEMO</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="col-sm-12 col-md-4 col-lg-4">
+                        <!-- #3 -->
+                        <div class="thumb_sidebar thumb_warning">
+                            <span class="img_thumb"><img src="{$img}/img_photo_white.png" height="72" width="138" alt=""></span>
+                            <div class="caption">
+                                <h3>GET IN LINE TO TRY TOPSPY</h3>
+                                <p>We've introduced our new cell phone spying software to help you track you underage kids, and increase your business safety.</p>
+                                <p class="text-center">
+                                        <a href="#" class="btn btn-default" role="button">Buy NOW</a>
+                                        <a href="#" class="btn btn-warning" role="button">View DEMO</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>        
+                       
+                        </div>        
+                    </div>  
+                            
+                </div>
+            </div>
+        </div>
+        <!-- END TEMPLATES BLOG BANNERS -->
         <!-- END CONTENT -->    
            
         <!-- RECOMMENDED -->  

@@ -94,8 +94,11 @@
             <div class="padding-null col-sm-4 col-md-4 col-lg-4">
                 <ul class="block-list">
                     <li><i class="item-list-css-orange"></i> control cell phone usage</li>
+                </ul>
+            </div>
+            <div class="padding-null col-sm-4 col-md-4 col-lg-4">
+                <ul class="block-list">
                     <li><i class="item-list-css-orange"></i> follow online activity</li>
-                    
                 </ul>
             </div>
             <div class="padding-null col-sm-4 col-md-4 col-lg-4">
@@ -103,12 +106,6 @@
                     <li><i class="item-list-css-orange"></i> track routes and location</li>
                 </ul>
             </div>
-            {*<div class="padding-null col-sm-4 col-md-4 col-lg-4">
-                <ul class="block-list">
-                    <li><i class="item-list-css-orange"></i> Monitor cell phone and Internet usage</li>
-                    <li><i class="item-list-css-orange"></i> Block incoming calls – get productivity boost!</li>
-                </ul>
-            </div>*}
         </div>
         <!-- END -->
     

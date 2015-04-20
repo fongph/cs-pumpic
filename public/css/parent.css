@@ -399,7 +399,8 @@
 .i-features-photos, .i-features-sms-commands, .i-features-social, .i-features-sms,
 .i-features-block-device, .i-features-online-control-panel, .i-features-monitor-viber-whatsapp, .i-features-monitor-skype,
 .i-features-remote-activity-control, .i-features-remote-device-lock, .i-features-removal-protection, .i-features-instant-location,
-.i-features-notes, .i-features-email-close, .i-features-skype, i-features-kik-chat {
+.i-features-notes, .i-features-email-close, .i-features-skype, i-features-kik-chat,
+.i-features-remote-activity-control-v2 {
     display: inline-block;
     margin-right: 16px;
 }
@@ -528,6 +529,12 @@
     background: url('../images/icons/icon-remote-activity-control.png') no-repeat;
     width: 18px;
     height: 25px;
+}
+
+.i-features-remote-activity-control-v2 {
+    background: url('../images/icons/icon-remote-activity-control_v2.png') no-repeat;
+    width: 14px;
+    height: 20px;
 }
 
 .i-features-remote-device-lock {

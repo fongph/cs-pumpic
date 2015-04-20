@@ -64,14 +64,14 @@
                                     {if $os_versions == 'os_v2' || $os_versions == 'icloud_v2' || $os_versions == 'os_v2_its'}
                                         {if $os_versions == 'icloud_v2'} 
                                             <ul class="compatibility compatibility-lg">
-                                                <li><i class="icon-apple"></i> iOS 6.0 – 8.1.2</li>
+                                                <li><i class="icon-apple"></i> iOS 6.0 – 8.3</li>
                                                 <li><i class="icons ico-iphones"></i>iPhone</li>
                                                 <li><i class="icons ico-ipads"></i>iPad</li>
                                                 <li><i class="icons ico-ipods"></i>iPod Touch</li>
                                             </ul>
                                         {else}
                                             <ul class="compatibility compatibility-lg">
-                                                {if $os_versions != 'os_v2_its'}<li><i class="icon-apple"></i> iOS 6.0 – 8.2</li>{/if}
+                                                {if $os_versions != 'os_v2_its'}<li><i class="icon-apple"></i> iOS 6.0 – 8.3</li>{/if}
                                                 <li><i class="icons ico-iphones"></i>iPhone</li>
                                                 <li><i class="icons ico-ipads"></i>iPad</li>
                                                 <li><i class="icons ico-ipods"></i>iPod Touch</li>
@@ -81,7 +81,7 @@
                                     {else}    
                                     <ul class="compatibility">
                                         <li><i class="icon-android"></i> (2.2 - 5.1)</li>
-                                        <li><i class="icon-apple"></i> (6.0 - 8.2)</li>
+                                        <li><i class="icon-apple"></i> (6.0 - 8.3)</li>
                                         <li>
                                             <i class="i-header-info"></i> <a href="/compatibility/">platform compatibility</a>
                                         </li>
@@ -164,7 +164,7 @@
                                             <br />Track the location, text messages and contacts quickly and quiet.</p>
 					<ul class="compatibility">
 						<li><i class="icon-android"></i> (2.2 - 5.0)</li>
-						<li><i class="icon-apple"></i> (6.0 - 8.1.1)</li>
+						<li><i class="icon-apple"></i> (6.0 - 8.3)</li>
 						<li><i class="icon-blackberry"></i> (1.0 - 7.1)</li>
 						<li>
 							<i class="icon-info-circled"></i> <a href="/compatibility.html">platform compatibility</a>
@@ -192,7 +192,7 @@
                                                 Track location. View calls and SMS. Follow online activity.</p>
                                             <ul class="compatibility">
                                                 <li><i class="icon-android"></i> (2.2 - 5.0)</li>
-                                                <li><i class="icon-apple"></i> (6.0 - 8.1.2)</li>
+                                                <li><i class="icon-apple"></i> (6.0 - 8.3)</li>
                                                 <li><i class="icon-blackberry"></i> (1.0 - 7.1)</li>
                                                 <li>
                                                     <i class="icon-info-circled"></i> <a href="/compatibility.html">platform compatibility</a>

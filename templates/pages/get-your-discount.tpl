@@ -35,7 +35,7 @@
                                     Track location. View calls and SMS. Follow online activity.</p>
                                 <ul class="compatibility">
                                     <li><i class="icon-android"></i> (2.2 - 5.1)</li>
-                                    <li><i class="icon-apple"></i> (6.0 - 8.2)</li>
+                                    <li><i class="icon-apple"></i> (6.0 - 8.3)</li>
                                     {*<li><i class="icon-blackberry"></i> (1.0 - 7.1)</li>*}
                                     <li>
                                         <i class="icon-info-circled"></i> <a href="/compatibility.html">platform compatibility</a>

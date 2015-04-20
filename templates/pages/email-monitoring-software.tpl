@@ -100,8 +100,11 @@
             <div class="padding-null col-sm-4 col-md-4 col-lg-4">
                 <ul class="block-list">
                     <li><i class="item-list-css-orange"></i> view sent and received emails</li>
+                </ul>
+            </div>
+            <div class="padding-null col-sm-4 col-md-4 col-lg-4">
+                <ul class="block-list">
                     <li><i class="item-list-css-orange"></i> keep track of mailing contact list</li>
-                    
                 </ul>
             </div>
             <div class="padding-null col-sm-4 col-md-4 col-lg-4">
@@ -109,12 +112,6 @@
                     <li><i class="item-list-css-orange"></i> follow online registrations</li>
                 </ul>
             </div>
-            {*<div class="padding-null col-sm-4 col-md-4 col-lg-4">
-                <ul class="block-list">
-                    <li><i class="item-list-css-orange"></i> Monitor cell phone and Internet usage</li>
-                    <li><i class="item-list-css-orange"></i> Block incoming calls – get productivity boost!</li>
-                </ul>
-            </div>*}
         </div>
         <!-- END -->
     

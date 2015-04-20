@@ -98,8 +98,11 @@
             <div class="padding-null col-sm-4 col-md-4 col-lg-4">
                 <ul class="block-list">
                     <li><i class="item-list-css-orange"></i> keep track of all keystrokes</li>
+                </ul>
+            </div>
+            <div class="padding-null col-sm-4 col-md-4 col-lg-4">
+                <ul class="block-list">
                     <li><i class="item-list-css-orange"></i> follow password inputs</li>
-                    
                 </ul>
             </div>
             <div class="padding-null col-sm-4 col-md-4 col-lg-4">
@@ -107,12 +110,6 @@
                     <li><i class="item-list-css-orange"></i> monitor Internet activity</li>
                 </ul>
             </div>
-            {*<div class="padding-null col-sm-4 col-md-4 col-lg-4">
-                <ul class="block-list">
-                    <li><i class="item-list-css-orange"></i> Monitor cell phone and Internet usage</li>
-                    <li><i class="item-list-css-orange"></i> Block incoming calls – get productivity boost!</li>
-                </ul>
-            </div>*}
         </div>
         <!-- END -->
     

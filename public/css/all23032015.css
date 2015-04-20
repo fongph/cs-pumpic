@@ -502,6 +502,7 @@ th .table_title {
   min-width: 95px;
   font-weight: 400;
   display: inline-block;
+  text-align: right;
 }
 .border-none {
   border: none !important;

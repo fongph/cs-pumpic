@@ -44,7 +44,7 @@
         <ul>
             <li>
                 <span class="width-table-full{*display-block model-center*} {*col-item-3 col-md-item-3 col-sm-item-3*}">
-                    <i class="i-features-remote-activity-control"></i> Remote Control Panel
+                    <i class="i-features-remote-activity-control-v2"></i> Remote Control Panel
                 </span> 
             </li>
         </ul>    

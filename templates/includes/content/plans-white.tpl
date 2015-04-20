@@ -42,7 +42,7 @@
                 </div>
             </div>
         </div>
-        {include file='../includes/plans-links.tpl'}
+        {include file='../main/main-plans-links.tpl'}
 
     </div>
 </div>

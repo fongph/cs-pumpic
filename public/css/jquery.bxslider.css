@@ -13,7 +13,7 @@
 ===================================*/
 .bx-wrapper {
   position: relative;
-  margin: 0 auto 30px;
+  margin: 0 auto 45px;
   padding: 0;
   *zoom: 1;
   -ms-touch-action: pan-y;
@@ -45,7 +45,7 @@ ul.bxslider {
 
 .bx-wrapper .bx-pager,
 .bx-wrapper .bx-controls-auto {
-/*  position: absolute;*/
+  position: absolute;
 /*  bottom: -40px;*/
   width: 100%;
 }
@@ -203,7 +203,8 @@ ul.bxslider {
 
 /* =============== \\ .slider-ipad ==================== */
 .blockSlider {
-    margin: 0px 20px;
+/*    margin: 0px 20px;*/
+    margin: 0px 25px;
     padding: 10px 0px 0px;
 }
 .slider-ipad {
@@ -211,6 +212,7 @@ ul.bxslider {
 }
 
 #slider-prev .bx-prev {
+    padding-right: 10px;
   left: 0px;
   background: url(../images/slider-arrows.png) no-repeat;
   background-position: 0px 0px;
@@ -220,6 +222,7 @@ ul.bxslider {
   background-position: 0px 0px;
 }
 #slider-next .bx-next {
+    padding-left: 10px;
   right: 0px;
   background: url(../images/slider-arrows.png) no-repeat;
   background-position: -17px 0px;
@@ -233,7 +236,7 @@ ul.bxslider {
   position: absolute;
   top: 50%;
 /*  margin-top: -16px;*/
-  margin-top: -24px;  
+  margin-top: -13px; /* 24 */  
   outline: 0;
   width: 15px;
   height: 38px;
@@ -243,4 +246,8 @@ ul.bxslider {
 #slider-next a.disabled,
 #slider-prev a.disabled {
   display: none;
+}
+
+.boxes-slider {
+    max-width: 435px;
 }

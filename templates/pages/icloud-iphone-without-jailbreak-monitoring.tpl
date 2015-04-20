@@ -145,14 +145,14 @@
                                                         </div>         
                                                                  
                                                         <div class="list_price">
-                                                            <form name="price_basic" method="POST" action="/buy.html" autocomplete="off">
-                                                                <input id='product_price_basic' type='hidden' name='price[productID]' value='0' class="product_price" />
+                                                            <form name="price_premium" method="POST" action="/buy.html" autocomplete="off">
+                                                                <input id='product_price_premium' type='hidden' name='price[productID]' value='0' class="product_price" />
                                                 
                                                                 <ul>
                                                                     {foreach from=$getProducts.premium key=key item=_item}
                                                                     <li class="">
                                                                         <label class="label_radio hover_label_radio r_off">
-                                                                            <input class="data-price" data-target="#basic-price-per-month" data-cur="usd" 
+                                                                            <input class="data-price" data-target="#premium-price-per-month" data-cur="usd" 
                                                                                    data-price-usd="{$_item.price}" data-period="{$_item.period}" name="optionsRadios" id="optionsRadios{$_item.id}1" 
                                                                                    value="{$_item.id}" type="radio"  
                                                                                    {if $_item.period == '3'} checked="checked" {/if} />
@@ -175,7 +175,11 @@
                                                                     </li>
                                                                     {/foreach}
                                                                 </ul>
-                                                                <button class="btn btn-default" value="true" type="submit" name="price[submit]">Buy Now</button>
+                                                                <button class="btn btn-default ga-action-click"
+                                                                        ga-action ="click"
+                                                                        ga-category="iphone-icloud"
+                                                                        ga-label="buy-icloud"
+                                                                        value="true" type="submit" name="price[submit]">Buy Now</button>
                                                                 <!-- <div class="show_basic_features"><a href="#">Show Basic features</a>
                                                                 </div> -->
                                                             </form>

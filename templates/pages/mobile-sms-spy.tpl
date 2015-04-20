@@ -95,6 +95,10 @@
             <div class="padding-null col-sm-4 col-md-4 col-lg-4">
                 <ul class="block-list">
                     <li><i class="item-list-css-orange"></i> monitor SMS messages sent and received</li>
+                </ul>
+            </div>
+            <div class="padding-null col-sm-4 col-md-4 col-lg-4">
+                <ul class="block-list">
                     <li><i class="item-list-css-orange"></i> control contacts, block misgiving senders</li>
                     
                 </ul>
@@ -104,12 +108,6 @@
                     <li><i class="item-list-css-orange"></i> prevent children from bullies and online predators</li>
                 </ul>
             </div>
-            {*<div class="padding-null col-sm-4 col-md-4 col-lg-4">
-                <ul class="block-list">
-                    <li><i class="item-list-css-orange"></i> Monitor cell phone and Internet usage</li>
-                    <li><i class="item-list-css-orange"></i> Block incoming calls – get productivity boost!</li>
-                </ul>
-            </div>*}
         </div>
         <!-- END -->
     

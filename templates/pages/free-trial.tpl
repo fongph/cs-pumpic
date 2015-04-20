@@ -44,7 +44,7 @@
                                                     <ol>
                                                         <li>Fill in and submit Contact Information form;</li>
                                                         <li>Find an email with registration details in your inbox;</li>
-                                                        <li>Follow the instructions and install Pumpic on the target device;</li>
+                                                        <li>Follow the instructions and set up Pumpic to track the target device;</li>
                                                         <li>Start monitoring the target device from your Control Panel.</li>
                                                     </ol>
                                                     
@@ -101,7 +101,7 @@
                                                                     </li>
                                                                     <li> 
                                                                         <i class="icon-apple"></i>
-                                                                        (6.0 - 8.1.2)
+                                                                        (6.0 - 8.3)
                                                                     </li>
                                                                 </ul>    
                                                             </div>

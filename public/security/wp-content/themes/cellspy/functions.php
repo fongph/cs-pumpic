@@ -168,9 +168,9 @@ function hasUser() {
 function userNotice() {
     require_once '../../includes/lib/users/ManagerUser.php';
     $obj = new includes\lib\users\ManagerUser( array() );    
-    if($userData = $obj -> getLoginUser()) {
-        $obj -> setNotice( $userData );
-    }
+    //if($userData = $obj -> getLoginUser()) {
+    $obj -> setNotice();
+    //}
 }
 
 function createReferral() {

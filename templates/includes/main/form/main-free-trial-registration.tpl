@@ -24,7 +24,7 @@
             </section>
             <section>
                 <label for="email">Your Email*</label>
-                <input id="email" class="required" type="text" name="email" value="" />
+                <input id="email" class="required" type="email" name="email" value="" />
                 {*<label class="error">Password will be send <br />to you your email</label>*}
                 <label class="info-email">The password will be sent to your email </label>
             </section>

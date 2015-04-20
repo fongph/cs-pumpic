@@ -1287,6 +1287,7 @@ $(document).ready(function(){
                 var msg = null;
                 
                 $.each(errorList, function(key, value){
+                    // console.log(key, value);
                     if(value.element) {
                         fileds.find(value.element).after( '<label class="error">'+value.message+'</label>' ).show();
                     }

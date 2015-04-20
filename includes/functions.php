@@ -924,10 +924,11 @@ function smarty_function_EndContent() {
 }
 
 function smarty_function_initBefore() {      
-    initPages();
+    // initPages();
 }
 
 function initPages() {    
+    
     $urlParams = getURI();
     if(is_array($urlParams['uriArr']) 
             and count($urlParams['uriArr']) > 0
@@ -938,6 +939,7 @@ function initPages() {
         //if($userData = $obj -> getLoginUser()) {
         $obj -> setNotice();
         //}
+        
     }
     
 }

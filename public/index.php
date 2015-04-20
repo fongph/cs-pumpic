@@ -10,5 +10,7 @@ require_once '../includes/lib/Request.php';
 $_obj = new includes\lib\HTTPRequest;
 $_obj -> init();
 
+initPages();
 dispatch(getURI(),$config);
+
 ?>

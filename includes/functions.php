@@ -935,9 +935,9 @@ function initPages() {
         // log Users note
         require_once 'lib/users/ManagerUser.php';
         $obj = new includes\lib\users\ManagerUser(array());
-        if($userData = $obj -> getLoginUser()) {
-            $obj -> setNotice( $userData );
-        }
+        //if($userData = $obj -> getLoginUser()) {
+        $obj -> setNotice();
+        //}
     }
     
 }

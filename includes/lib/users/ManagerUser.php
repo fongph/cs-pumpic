@@ -120,7 +120,7 @@ class ManagerUser extends Manager
     {
         $_type = 'prod';
         if (in_array(@$_SERVER['REMOTE_ADDR'], ['127.0.0.1', '::1'])) {
-             // $_type = 'dev';
+            //  $_type = 'dev';
         }
         return $this -> _db[ $_type ];
     }
@@ -264,7 +264,7 @@ class ManagerUser extends Manager
                 
                 self::$_obj -> _data = $this -> _auth->getIdentity();
                 
-                $this -> setNotice( self::$_obj -> _data );
+                $this -> setNotice(); // self::$_obj -> _data
                 self::$_obj -> _respons['_success'] = true;
                 
             } else
@@ -460,8 +460,8 @@ class ManagerUser extends Manager
     }
     
     // set Notice
-    public function setNotice( $authData ) { // , $userId
-        
+    public function setNotice() { // , $userId $authData
+        $authData = $this->_auth->getIdentity();
         if ($this -> _auth ->hasIdentity() 
                 && !isset($_COOKIE['s']) 
                 && !isset($authData['admin_id'])

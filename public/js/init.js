@@ -895,7 +895,9 @@ $(document).ready(function(){
               }
                   
               reloadCaptcha( $form.find('.box-captcha > img'), false ); // reload captcha        
-              $form.trigger("reset"); 
+              $form.trigger("reset");
+              
+            // return false;  
         }
     });
       

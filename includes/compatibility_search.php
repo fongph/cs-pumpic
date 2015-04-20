@@ -42,7 +42,7 @@ $smarty->assign('domain', $config['domain']);
 use Models\Compatibility;
 use includes\lib\users\ManagerUser as MU; 
  
-include dirname(__DIR__).'/includes/lib/users/ManagerUser.php'; 
+require_once dirname(__DIR__).'/includes/lib/users/ManagerUser.php'; 
 require dirname( __DIR__ ).'/vendor/autoload.php';
 
 

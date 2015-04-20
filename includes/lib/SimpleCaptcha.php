@@ -1,7 +1,8 @@
 <?php
-include dirname(__FILE__).'/users/ManagerUser.php';
+require_once dirname(__FILE__).'/users/ManagerUser.php';
 
 use includes\lib\users\ManagerUser as MU;
+use System\Session;
 
 /**
  * Captcha class
@@ -112,10 +113,13 @@ class SimpleCaptcha
     protected $textFinalX = null;
 
     protected $mu;
-    
+    //protected $_session;
+
+
     public function __construct($config = array())
     {
-        $this -> mu = new MU();
+        $this -> mu = new MU;
+        //$this -> _session = new Session();
         $this->resourcesPath = __DIR__ . '/' . $this->resourcesPath;
     }
 
@@ -157,6 +161,25 @@ class SimpleCaptcha
         $this->cleanup();
     }
 
+    // set Session 
+    public function setSession( $_name, $_data ) 
+    {
+        if(!empty($_data))
+            $this -> _session[$_name] = $_data;
+        return $this -> _session;
+    }
+    
+    public function getSession( $_name ) 
+    {
+        return (isset($this -> _session[$_name])) ? $this -> _session[$_name] : null; 
+    }
+    
+    public function unsetSession($_name) 
+    {
+        if(isset($this -> _session[$_name]))
+            unset($this -> _session[$_name]);
+    }
+    
     /**
      * Creates the image resources
      */

@@ -1,7 +1,7 @@
 {include file='../includes/main/main-header.tpl'
     robots="yes" 
     title="iPhone parental control software | Pumpic"
-    description="Pumpic Apple iOS monitoring app for iPhones, iPads, and iPods Touch. View calls and text messages. Track GPS location. Follow social media and online activity remotely."
+    description="Keep your family safe and secured with Pumpic. Track location. View calls and SMS. Follow online activity."
 }    
     
 <body>

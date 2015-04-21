@@ -64,7 +64,7 @@
                                     {if $os_versions == 'os_v2' || $os_versions == 'icloud_v2' || $os_versions == 'os_v2_its'}
                                         {if $os_versions == 'icloud_v2'} 
                                             <ul class="compatibility compatibility-lg">
-                                                <li><i class="icon-apple"></i> iOS 6.0 – 8.3</li>
+                                                <li><i class="icon-apple"></i> iOS 6.0 – 8.1.2</li>
                                                 <li><i class="icons ico-iphones"></i>iPhone</li>
                                                 <li><i class="icons ico-ipads"></i>iPad</li>
                                                 <li><i class="icons ico-ipods"></i>iPod Touch</li>

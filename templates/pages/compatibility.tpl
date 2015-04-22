@@ -69,7 +69,7 @@
                                                                     {foreach from=$phone.models item=model}
                                                                         <li class="mobile_tooltip"> 
                                                                             {if $model.custom_text && count($model.features) > 0}
-                                                                                <a target="_blank" href="http://{$domain}/compatibility/{$model.alies}/">{$model.name}</a>
+                                                                                <a {*target="_blank"*} href="http://{$domain}/compatibility/{$model.alies}/">{$model.name}</a>
                                                                             {else}
                                                                                 <label>{$model.name}</label> 
                                                                             {/if}

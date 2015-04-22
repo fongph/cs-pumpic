@@ -97,7 +97,7 @@
                                                                 <ul>   
                                                                     <li> 
                                                                         <i class="icon-android"></i>
-                                                                        (2.2 - 5.0)
+                                                                        (2.2 - 5.1)
                                                                     </li>
                                                                     <li> 
                                                                         <i class="icon-apple"></i>

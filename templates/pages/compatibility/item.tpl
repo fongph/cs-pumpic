@@ -38,7 +38,17 @@
                         {if $getSetting._item}
                             <!-- item device -->
                             <div class="row">
-                                <h3 class="col-lg-12"><a href="http://{$domain}/compatibility/{$getSetting._item.alies}/">{$getSetting._item.name}</a></h3>
+                                {if $getSetting._item.alies}
+                                <div class="breadcrumbs col-lg-12">
+                                    <h4>
+                                        <a class="underline" href="http://{$domain}/compatibility/">Compatibility</a>
+                                        <span class="arrows icon-right-open"></span>
+                                    </h4>
+                                    <h3>
+                                        <a href="http://{$domain}/compatibility/{$getSetting._item.alies}/">{$getSetting._item.name}</a>
+                                    </h3>
+                                </div>
+                                {/if}
                                 <div class="col-sm-4 col-md-4">
                                     <div class="thumbnail">
 

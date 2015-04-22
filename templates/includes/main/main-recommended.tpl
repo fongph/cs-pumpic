@@ -9,22 +9,30 @@
             
             <div class="item">
                 <attr>
-                    <img src="/images/recommended/forbes.png" width="125px" height="56px" alt="" />
+                    <img src="/images/recommended/small/forbes.png" width="88px" height="39px" alt="" />
                 </attr>
             </div>
             <div class="item">
                 <attr>
-                    <img src="/images/recommended/WSJ.png" width="83px" height="82px" alt="" />
+                    <img src="/images/recommended/small/wsj.png" width="59px" height="57px" alt="" />
                 </attr>
             </div>
             <div class="item">
                 <attr>
-                    <img src="/images/recommended/c_net.png" width="85px" height="85px" alt="" />
+                    <img src="/images/recommended/small/c_net.png" width="60px" height="60px" alt="" />
                 </attr>
             </div>
             <div class="item">
                 <attr>
-                    <img src="/images/recommended/tech_crunch.png" width="198px" height="35px" alt="" />
+                    <img src="/images/recommended/small/tc.png" width="139px" height="20px" alt="" />
+                </attr>
+            </div>
+            <div class="member-of item">
+                <span id="title-recommended">Member of:</span>
+            </div>
+            <div class="item">
+                <attr>
+                    <img src="/images/recommended/small/anti_bullying.png" width="177px" height="71px" alt="" />
                 </attr>
             </div>
         </div> 

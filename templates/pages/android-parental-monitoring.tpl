@@ -23,8 +23,8 @@
             imgAlign = "right"
             imgVerticalAlign = "bottom"
             textAlign = "right"
-            title = "Android Parental Control Software"
-            description = "Monitor your kids’ Android mobile phones remotely:"
+            title = "Android Parental Control <br/>Mobile Monitoring Software"
+            description = "Track your kids’ Android mobile phones remotely."
             promoBuyBlock = "no"
             listText = "control cell phone usage|follow online activity|track routes and location"
             planPackageBuy = "yes"
@@ -44,13 +44,13 @@
 
 
 {Content 
-    title="Did you know?"
+    title="Did You Know?"
     blockBg='dark'}
                    
         <p class="text-center f-light">
             Using monitoring software to protect kids is an urgent issue of contemporary society. 
         On one hand, technological progress opened new doors for the evolution of humanity; on the other one, it has 
-        resulted in a lot of dangers in return. And children are exposed to these dangers much more than others.
+        resulted in many dangers in return. And children are exposed to these dangers much more than others.
         </p>
         
         <!-- BLOCK STATISTICK -->
@@ -195,9 +195,9 @@
         title = "Set Ultimate Parental Control on Android"
         description = "Mobile technologies introduced new opportunities to our children. It is rather hard at 
                             once to imagine the entire range of functions a single smartphone can fulfil. That’s why when it comes to features 
-                            that Android parental control app should include, it is very important to consider all of them. Listed below 
+                            that an Android parental control app should include, it is very important to consider all of them. Listed below 
                             reflects Pumpic monitoring abilities, and which particular mobile phone options you will cover by using it. 
-                            The app will help you follow each and every aspect of your kids’ life as well as all spheres of activity remotely."
+                            The app will help you follow each and every aspect of your kids’ lives as well as all spheres of activity remotely."
         blockBg="dark"
 }                                        
                                         
@@ -209,9 +209,9 @@
                     <div id="table-container" class="table-col-3 table-md-col-3 table-sm-col-3">
                         <article class="text-center">Mobile technologies introduced new opportunities to our children. It is rather hard at 
                             once to imagine the entire range of functions a single smartphone can fulfil. That’s why when it comes to features 
-                            that Android parental control app should include, it is very important to consider all of them. Listed below 
+                            that an Android parental control app should include, it is very important to consider all of them. Listed below 
                             reflects Pumpic monitoring abilities, and which particular mobile phone options you will cover by using it. 
-                            The app will help you follow each and every aspect of your kids’ life as well as all spheres of activity remotely.</article>
+                            The app will help you follow each and every aspect of your kids’ lives as well as all spheres of activity remotely.</article>
                         <section>
                             <div class="tab col-item-3 col-md-item-3 col-sm-item-3">
                                 <ul>
@@ -255,11 +255,11 @@
     blockBg='light'}
     <p>One can hardly imagine his or her life without a mobile phone connected to the Internet these days. When it comes to children, we see that online reality means almost the world to them, being an essential part of communication and spare time spending. However, along with great opportunities there comes the issue.</p>
 <ul>
-<li><strong>Online predators.</strong> Sexual predators really exist and threaten your kids’ security. Boys and girl, who are more technical than parents, more emotionally vulnerable due to personal issues, are their main target. Most of online predators are masters of manipulation and know how to deceive your children pretending care and friendship. They use the anonymity of the Internet and can be whomever they want to get into your kids’ confidence. The threat starts as a harmless online talk and usually turns out to be sexual seduction in the real life. Using parental control apps for Android will let you know, whom your kids chat with online, and thus you will be able to protect them against attacks of online predators.</li>
+<li><strong>Online predators.</strong> Sexual predators really exist and threaten your kids’ security. Boys and girl, who are more technical than parents, more emotionally vulnerable due to personal issues, are their main target. Most of online predators are masters of manipulation and know how to deceive your children pretending care and friendship. They use the anonymity of the Internet and can be whomever they want to get into your kids’ confidence. A threat starts as a harmless online talk and usually turns out to be sexual seduction in the real life. Using parental control apps for Android will let you know, whom your kids chat with online, and thus, you will be able to protect them against attacks of online predators.</li>
 
-<li><strong>Cyberbullies.</strong> Talk to your kids and find out if someone offends them. They might receive text messages with threats or bad words. Cyberbullying images can be posted anonymously in social networks and spread quickly through the Internet. More often than not, it is hard to find the source of cyberbullying, since online an offender can be not even a real person. Parental control apps for Android will allow you to track your kids’ online activity, follow social media and networks as well as text messages they receive. Such software will let you find out if any threat exists and take action before it’s too late.</li>   
+<li><strong>Cyberbullies.</strong> Talk to your kids and find out if someone offends them. They might receive text messages with threats or bad words. Cyberbullying images can be posted anonymously in social networks and spread quickly through the Internet. More often than not, it is hard to find the source of cyberbullying, since online an offender can be not even a real person. Parental control apps for Android will allow you to track your kids’ online activity, follow social media, networks, as well as text messages they receive. Such software will let you find out if any threat exists, and take action before it’s too late.</li>   
 
-<li><strong>Sexting.</strong> Today children develop faster than their parents did before. When it comes to sexual life, their development is no less fast moving. Some of them consider exchanging SMS, photos and videos with sexual content a part of growing-up. As the statistics shows, about 22% of underage children are engaged in sexting. They think it will help them build relations with the opposite sex or stand out from their classmates and look more adult. Parental controls on Android phones will help you monitor your children’s communication, view photos and videos they send and receive, and thus you will be able to intervene.</li> 
+<li><strong>Sexting.</strong> Today children develop faster than their parents did before. When it comes to sexual life, their development is no less fast moving. Some of them consider exchanging SMS, photos and videos with sexual content a part of growing-up. As the statistics shows, about 22% of underage children are engaged in sexting. They think it will help them build relations with the opposite sex or stand out from their classmates and look more adult. Parental controls on Android phones will help you monitor your children’s communication, view photos and videos they send and receive, and thus, you will be able to intervene.</li> 
 </ul>
 <p>While your children are underage, you as a parent are responsible for them. You should secure their time spending by all means, and sometimes take steps they might consider needless interference. However, as long as safety is your top priority, you should do what is necessary.</p>
 
@@ -293,7 +293,7 @@
             </div>
     </div>
 </div>
-        {include file='../includes/prevent-online-dangers/how-pumpic.tpl' 
+        {include file='../includes/content/how-get-pumpic.tpl' 
              blockBg="light"
         }
 

@@ -90,6 +90,33 @@ function dispatch($urlParams, $config){
     
 }
 
+function smarty_modifier_getCloseLink($links, $template) { 
+    $uri = getURI();
+    $res = true;
+    $_links = (isset($links)) ? explode(',', $links) : false;
+    if(is_array($_links) and count($_links) > 0) {
+        foreach($_links as $link) :
+            if(in_array($link, $uri['uriArr'])) { 
+                $res = false; 
+                continue; 
+            }
+        endforeach;
+    }
+    return $res;
+}
+
+function smarty_function_getDemoLink($params, $template) {
+    $uri = getURI();
+    $domain = (isset($params['domain'])) ? $params['domain'] : $_SERVER['HTTP_HOST']; 
+    $_id = 125;
+    $_get = "?redirect_url=cp/calls";
+    if(in_array('icloud-iphone-without-jailbreak-monitoring.html', $uri['uriArr'])) {
+        $_id = 126; 
+        $_get = " ";
+    }
+    return "http://demo.{$domain}/setDevice/{$_id}{$_get}";
+}
+
 function getURI(){
 	@list( $request, $params) = explode('?', $_SERVER['REQUEST_URI']);
 	parse_str($params, $params); 

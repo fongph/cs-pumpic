@@ -51,7 +51,7 @@
                                   <li href="#" class="list-group-item">
                                     <p class="list-group-item-text">
                                         <span class="title"><i class="icon-ok"></i> Jailbreak - <span class="text-success">Required</span></span>
-                                        <span>You need to jailbreak the target iOS device before installing the app.</span>
+                                        <span>You need to jailbreak the target iOS device (6.0 - 8.1.2) before installing the app.{*You need to jailbreak the target iOS device before installing the app.*}</span>
                                     </p>
                                   </li>
                                   <li href="#" class="list-group-item">
@@ -62,12 +62,24 @@
                                   </li>
                                   <li href="#" class="list-group-item">
                                     <p class="list-group-item-text">
+                                        <span class="title"><i class="icon-ok"></i> The app is - <span class="text-success">Visible</span></span>
+                                        <span>Pumpic is visible on the target device. However, to disable it, change settings, or delete the app a secret code is required.</span>
+                                    </p>
+                                  </li>
+                                  <li href="#" class="list-group-item">
+                                    <p class="list-group-item-text">
                                         <span class="title"><i class="icon-cancel"></i> iCloud Password - <span class="text-danger">Not Required</span></span>
                                         <span>You do not need to know iCloud password of the target iOS device.</span>
                                     </p>
                                   </li>
+                                  <li href="#" class="list-group-item">
+                                    <p class="list-group-item-text">
+                                        <span class="title"><label class='block-number'>22</label> Monitoring features</span>
+                                        <span>Multi-featured real-time iOS monitoring with filtering and blocking options.</span>
+                                    </p>
+                                  </li>
                                   <li href="#" class="list-group-item pc-pb65">
-                                    <a href="http://{$domain}/iphone-with-jailbreak-monitoring.html" class="list-group-item-link">Learn more <i class="icons ico-arrows"></i></a>
+                                    <a href="http://{$domain}/iphone-with-jailbreak-monitoring.html#choose-subscription-plan" class="list-group-item-link">Learn more <i class="icons ico-arrows"></i></a>
                                   </li>
                                 </ul>
                                 <div class="row-pricing-panel">
@@ -248,7 +260,7 @@
                                   <li href="#" class="list-group-item">
                                     <p class="list-group-item-text">
                                         <span class="title"><i class="icon-cancel"></i> Jailbreak - <span class="text-danger">Not Required</span></span>
-                                        <span>You do not need to jailbreak the target iOS device before installing the app.</span>
+                                        <span>You do not need to jailbreak the target iOS device (6.0 - 8.3) before installing the app.{*You do not need to jailbreak the target iOS device before installing the app.*}</span>
                                     </p>
                                   </li>
                                   <li href="#" class="list-group-item">
@@ -259,12 +271,24 @@
                                   </li>
                                   <li href="#" class="list-group-item">
                                     <p class="list-group-item-text">
+                                        <span class="title"><i class="icon-cancel"></i> The app is - <span class="text-danger">Invisible</span></span>
+                                        <span>Pumpic remains invisible on the target device. You don’t need to install the app, and thus, no one will be able to delete it.</span>
+                                    </p>
+                                  </li>
+                                  <li href="#" class="list-group-item">
+                                    <p class="list-group-item-text">
                                         <span class="title"><i class="icon-ok"></i> iCloud Password - <span class="text-success">Required</span></span>
-                                        <span>You need to know iCloud password of the target iOS device. </span>
+                                        <span>You need to know iCloud password of the target iOS device.</span>
+                                    </p>
+                                  </li>
+                                  <li href="#" class="list-group-item">
+                                    <p class="list-group-item-text">
+                                        <span class="title"><label class='block-number'>6</label> Monitoring features</span>
+                                        <span>Simple iCloud monitoring that does not require jailbreak of the target device.</span>
                                     </p>
                                   </li>
                                   <li href="#" class="list-group-item pc-pb65">
-                                    <a href="http://{$domain}/icloud-iphone-without-jailbreak-monitoring.html" class="list-group-item-link">Learn more <i class="icons ico-arrows"></i></a>
+                                    <a href="http://{$domain}/icloud-iphone-without-jailbreak-monitoring.html#icloud-solution" class="list-group-item-link">Learn more <i class="icons ico-arrows"></i></a>
                                   </li>
                                 </ul>
                                 <div class="row-pricing-panel">

@@ -168,6 +168,18 @@ span.text-success {
   display: block;
   padding-bottom: 5px;
 }
+.list-group-item .block-number {
+    color: #fff;
+    font-size: 26px;
+    line-height: 26px;
+    font-weight: bold;
+    padding: 4px 7px;
+    margin-right: 8px;
+    background: #16a89e;
+    border-radius: 5px 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
 .list-group-item .icon-cancel {
   font-size: 28px;
   line-height: 1;
@@ -339,7 +351,7 @@ color: #cf4857;
   background: #3f041b;
   opacity: 0.12;
 }
-#block-promo-buy.block-promo-buy .btn-default {
+#block-promo-buy.block-promo-buy .btn-blue {
  background: #42778e;
 }
 

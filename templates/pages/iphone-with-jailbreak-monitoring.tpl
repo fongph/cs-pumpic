@@ -30,10 +30,15 @@
                             <br />Control iPhone use. Follow location and online activity."
             os_versions = "icloud_v2"                
             promoBuyBlock = "no"
-            iCloudSolution = 'yes'
-            planPackageBuy = "no"
+            planPackageBuy = "yes"
+            planPackageBuyUrl = '/icloud-iphone-without-jailbreak-monitoring.html#icloud-solution'
         }
-        
+        {*
+            iCloudSolution = 'yes'
+            iCloudSolutionUrl = '/icloud-iphone-without-jailbreak-monitoring.html#icloud-solution'
+            iCloudSolutionButtonClass = 'btn-default'
+            planPackageBuy = "no"
+        *}
         <!-- BLOCK JAILBREAL SOLUTION -->
         <div class="row-white">
             <div class="container">
@@ -63,7 +68,7 @@
                                 Follow the guidelines from the email to complete the <b>installation</b>. 
                             </p>
                             <p>
-                                It will take you no longer than 5 minutes. Note that <b>physical access</b> to the target device <b>is required</b>.
+                                It will take you no longer than 5 minutes. Note that <b>jailbreak</b> and <b>physical access</b> to the target device are required.
                             </p>
                         </div>
                         <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
@@ -82,7 +87,7 @@
         <!-- END -->
         
         <!-- BLOCK CHOOSE SUBSCRIPTION PLAN -->
-        <div class="no_bg prices-padding padding-reset">
+        <div id='choose-subscription-plan' class="no_bg prices-padding padding-reset">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-10 col-lg-offset-1">
@@ -673,7 +678,14 @@
                                         .html(symbols[$(this).attr('data-cur')] ? symbols[$(this).attr('data-cur')] : '');
                                 });
                                 </script>
-
+                                
+                                <div class="space_line"> </div>
+                                <div class="link_circle_italic2">
+                                    <div class="style-links2">
+                                        <span class="circle_ico2"></span><b>Jailbreak</b> and <b>physical access</b> to the target device are required for iOS monitoring. Meanwhile it is not necessary for <a class='underline' href='/icloud-iphone-without-jailbreak-monitoring.html'>monitoring iCloud</a>.
+                                    </div>
+                                </div>
+                                
                             </div>
                         </div>
                     </div>

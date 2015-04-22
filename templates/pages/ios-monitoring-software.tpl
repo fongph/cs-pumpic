@@ -25,7 +25,7 @@
             textAlign = "right"
             title = "iOS Parental Control App"
             description = "Pumpic helps you keep your children safe.<br/>
-Monitor your kids iOS device with Pumpic."
+Monitor your kid's iOS device with Pumpic."
             promoBuyBlock = "no"
             listText = "Follow Calls and SMS|Track GPS location|Monitor online activity"
             planPackageBuy = "yes"
@@ -49,9 +49,8 @@ Monitor your kids iOS device with Pumpic."
                 blockBg="light"
                 imgUrl = "parental_control/ipad.png"
                 imgAlt = "iOS monitoring"
-                title = "Easy-to-Use Control Panel"
-                description = "Try Control Panel demo to see Pumpic for Android in use.
-                               <br/>Buy Pumpic to keep your kids safe and secured right now."
+                title = "Remote iOS Monitoring"
+                description = "Right after installing Pumpic, all the data from the target device will be sent to your Control Panel. It can be accessed from any browser and any gadget, including PCs, mobile phones and tablets. In Control Panel, you can not only view the information, but also set restrictions, block, and limit some of activities."
 
         }
 

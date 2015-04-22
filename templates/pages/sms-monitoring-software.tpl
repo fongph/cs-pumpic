@@ -22,9 +22,9 @@
             imgAlt = "Messages monitoring"
             imgAlign = "right"
             textAlign = "right"
-            title = "Sms Monitoring<br /> Parental Control App"
+            title = "SMS Monitoring<br /> Parental Control App"
             description = "Keep your children safe with Pumpic.<br />
-View your kid’s text message history remotely."
+View, block, and limit text messages remotely."
             promoBuyBlock = "no"
             planPackageBuy = "yes"
         }
@@ -43,20 +43,20 @@ View your kid’s text message history remotely."
         blockBg="dark"
         imgUrl = "icons/lending_features_sms.png"
         imgAlt = "Easy Texts monitoring"
-        title = "Easy-to-Use Control Panel"
-        description = "Right after installing Pumpic, all the data from the target mobile phone will be sent to your Control Panel. It can be accessed from any browser and any device, including PCs, smartphones and tablets. In Control Panel you can not only view the information, but also set restrictions and block some of activities on the target device. "
+        title = "Remote SMS Monitoring"
+        description = "Right after installing Pumpic, all the data from the target device will be sent to your Control Panel. It can be accessed from any browser and any gadget, including PCs, smartphones, and tablets. In Control Panel, you can not only view the information, but also set restrictions, block, and limit some of activities."
         }
         <div class="light">
         <div class="container">
-                <h2 class="text-center">Text Messages Tracking with Pumpic</h2>
+                <h2 class="text-center">Text Message Tracking with Pumpic</h2>
                 <div class="row">
                         <div class="col-sm-4 col-md-4 col-lg-4">
                                 <div class="feature">
                                         <img src="/images/icons/icon-monitor-text-messages.png" alt="">
-                                        <h3>Monitor SMS</h3>
+                                        <h3>Track text messages</h3>
                                         <ul class="feature_list">
-                                                <li>Track in- and outbound SMS</li>
-                                                <li>iMessages supported</li>
+                                                <li>Monitor sent and received SMS</li>
+                                                <li>Follow iMessages</li>
                                                 <li>View even deleted texts</li>
                                         </ul>
                                         
@@ -67,9 +67,9 @@ View your kid’s text message history remotely."
                                         <img src="/images/icons/icon-follow-sms-gistory.png" alt="">
                                         <h3>Monitor chats</h3>
                                         <ul class="feature_list">
-                                                <li>Viber, Whatsapp, Skype</li>
+                                                <li>Viber, WhatsApp, Skype, Kik</li>
                                                 <li>Facebook Messenger</li>
-                                                <li>Instagram comment</li>
+                                                <li>Instagram comments</li>
                                         </ul>
                                         
                                 </div>
@@ -79,9 +79,9 @@ View your kid’s text message history remotely."
                                         <img src="/images/icons/icon-block-incoming-sms.png" alt="">
                                         <h3>Block incoming SMS</h3>
                                         <ul class="feature_list">
-                                                <li>Block specific phone numbers</li>
-                                                <li>Block by list of bad words</li>
-                                                <li>Limit daily amount of sent SMS<br/> (coming soon)</li>
+                                                <li>Block messages by phone numbers</li>
+                                                <li>Block SMS by bad words or threats</li>
+                                                <li>Limit the amount of SMS sent daily</li>
                                         
                                         </div>
                                 </div>
@@ -91,7 +91,7 @@ View your kid’s text message history remotely."
 
         {include file='../includes/content/features-table.tpl'
         title = "All Pumpic Features"
-        description = "Pumpic app can track a lot more than just text messages and online chats. Check out other amazing features for remote cell phone monitoring:"
+        description = "Pumpic app tracks much more than just text messages and online chats. Check out other amazing features for remote cell phone monitoring."
         blockBg="dark"
         } 
 

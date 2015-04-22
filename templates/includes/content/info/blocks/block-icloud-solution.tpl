@@ -11,7 +11,7 @@
            </span>
        </section>
        <section>
-           <a class="btn btn-default btn-text-sm ga-action-click" 
+           <a class="btn {if isset($iCloudSolutionButtonClass)}{$iCloudSolutionButtonClass}{else}btn-blue btn-default{/if} btn-text-sm ga-action-click" 
               href="{if isset($iCloudSolutionUrl) && $iCloudSolutionUrl != ""}{$iCloudSolutionUrl}{else}/icloud-iphone-without-jailbreak-monitoring.html{/if}" 
               ga-action="click" 
               ga-category="promo buy" 

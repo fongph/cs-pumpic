@@ -1,6 +1,6 @@
 <div class="{if $blockBg}{$blockBg}{else}dark{/if}">
         <div class="container">
-                <h2 class="text-center">Apple and Android Mobile Phones Monitoring</h2>
+                <h2 class="text-center">Android and iOS Smartphones and Tablets Monitoring</h2>
                 <div class="row">
                         <div class="col-sm-4 col-md-4 col-lg-4">
                                 <div class="feature">
@@ -8,7 +8,7 @@
                                         <h3>Monitor cell phone usage</h3>
                                         <ul class="feature_list">
                                                 <li>Track in and outbound calls</li>
-                                                <li>Monitor and block SMS</li>
+                                                <li>Monitor, block, and limit SMS</li>
                                                 <li>Track contacts and calendar</li>
                                         </ul>
                                 </div>
@@ -16,7 +16,7 @@
                         <div class="col-sm-4 col-md-4 col-lg-4">
                                 <div class="feature">
                                         <img src="{$img}/icons/icon-online-activity.png" alt="">
-                                        <h3>Monitor online activity</h3>
+                                        <h3>Follow online activity</h3>
                                         <ul class="feature_list">
                                                 <li>Monitor browsing history</li>
                                                 <li>Block websites and applications</li>

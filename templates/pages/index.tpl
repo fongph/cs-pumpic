@@ -1,6 +1,6 @@
 {include file='../includes/main/main-header.tpl'
     robots="yes" 
-    title="Cell Phone Parental Control App for Children| Pumpic Monitoring Software"
+    title="Cell Phone Parental Control App for Children | Pumpic Monitoring Software"
     description="Keep your family safe with Pumpic mobile monitoring app for parents. View calls and text messages. Track GPS location. Follow social media and online activity. Limit or block apps remotely."
 }    
     
@@ -25,7 +25,7 @@
             imgAlign = "left bottom"
             imgVerticalAlign = "bottom"
             textAlign = "left"
-            title = "Cell Phone <br />Monitoring Control App"
+            title = "Cell Phone <br />Monitoring App"
             description = "Keep your family safe and secured with Pumpic. <br />
                            Track location. View calls and SMS. Follow online activity."
             promoBuyBlock = "no"
@@ -56,8 +56,7 @@
                 imgAlt = "Android"
                 title = "Easy-to-Use Control Panel"
                 textAlign = "left"
-                description = "Try Control Panel demo to see Pumpic app in use.
-                               <br />Buy Pumpic to protect your family and secure your happiness right now."             
+                description = "Right after installing Pumpic, all the data from the target mobile phone will be sent to your Control Panel. It can be accessed from any browser and any device, including PCs, smartphones and tablets. In Control Panel you can not only view the information, but also set restrictions and block some of activities on the target device."             
         }
         
         {include file='../includes/main/main-testimonials.tpl'

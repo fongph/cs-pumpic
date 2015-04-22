@@ -5927,8 +5927,8 @@ i.white-arrows-right {
 #title-recommended {
     position: relative;
     display: block;
-    font-size: 29px;
-    line-height: 29px;
+    font-size: 21px;
+    line-height: 21px;
     font-weight: lighter;
 }
 
@@ -5940,12 +5940,17 @@ i.white-arrows-right {
     display: inline-block;
     width: auto;
     vertical-align: middle;
-    margin-right: 50px;
-}    
+/*    margin-right: 50px;*/
+    margin-right: 28px;
+}  
+
+.main-recommended > .member-of {
+    margin-right: 15px;
+}
 
 .main-recommended > .item a,
 .main-recommended > .item attr {
-    opacity: 0.7;
+/*    opacity: 0.7;*/
 }
 
 .main-recommended > .item:last-child {
@@ -5980,17 +5985,24 @@ i.white-arrows-right {
     }
 }
 @media (min-width: 992px) {
+    
     .main-recommended > .item { 
         margin-top: 0px;
-        margin-right: 50px;
+/*        margin-right: 50px;*/
+        margin-right: 10px;
         width: auto;
     }
 }
 @media (min-width: 1200px) {
+    
     .main-recommended > .item { 
         margin-top: 0px;
-        margin-right: 50px;
+/*        margin-right: 50px;*/
+        margin-right: 28px;
         width: auto;
+    }
+    .main-recommended > .member-of {
+        margin-right: 15px;
     }
 }
 
@@ -6108,7 +6120,8 @@ form.form-contact-us .box-captcha {
     background: #fff;
     position: absolute;
     padding: 10px 0px;
-    top: 378px;
+/*    top: 378px;*/
+    top: 568px;
     width: 100%;
     z-index: 9;
     height: 55px;
@@ -6344,14 +6357,33 @@ form.form-contact-us .box-captcha {
 
 /* ============= \\ breadcrumbs ================ */
 .breadcrumbs {}
-.breadcrumbs h4, 
-.breadcrumbs h3 {
+.breadcrumbs div.h4, 
+.breadcrumbs h3,
+.breadcrumbs h1.h3 {
     display: inline-block;
 }
-.breadcrumbs h4 {
+.breadcrumbs div.h4 {
     
 }
-.breadcrumbs h4 span {
+.breadcrumbs div.h4 span {
     margin: 0px;
     color: #16a89e;
+}
+
+.store-full-link {
+    display: block;
+    float: right;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 12px;
+    margin-top: 12px;
+    position: relative;
+    right: 14px;
+    text-align: right;
+    vertical-align: middle;
+    
+}
+.store-full-link > a {
+    text-decoration: underline;
+    color: #a1a4b6;
 }

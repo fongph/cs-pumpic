@@ -23,8 +23,8 @@
             imgAlign = "right"
             imgVerticalAlign = "bottom"
             textAlign = "right"
-            title = "Pumpic Email Monitoring Software"
-            description = "Monitor your children’s emails:"
+            title = "Pumpic Email<br/>Monitoring Software"
+            description = "Monitor your children’s emails."
             promoBuyBlock = "no"
             listText = "view sent and received emails|keep track of mailing contact list|follow online registrations"
             planPackageBuy = "yes"
@@ -44,14 +44,14 @@
 
 
 {Content 
-    title="Email using statistics"
+    title="Email Using Statistics"
     blockBg='dark'}
                       
     
         <p class="text-center f-light">
-            Though children do not tend to use an email in their online communication, they have to use it almost every day. 
+            Though children do not tend to use emails in their online communication, they have to use them almost every day. 
             The thing is that most websites and literally all social networks require an email to sign in. That’s why email monitoring 
-            software can show you a broad picture of your kid’s online activity: preferred websites, social networks he or she uses as 
+            software can show you a broad picture of your kid’s online activity: preferred websites, social networks he or she uses, as 
             well as if your child browses sites with inappropriate content.
         </p>
         
@@ -115,9 +115,9 @@
         </div>
         <!-- END -->
     
-        {*<p>Though children do not tend to use an email in their online communication, they have to use it almost every day. 
+        {*<p>Though children do not tend to use emails in their online communication, they have to use them almost every day. 
         The thing is that most websites and literally all social networks require an email to sign in. That’s why email monitoring 
-        software can show you a broad picture of your kid’s online activity: preferred websites, social networks he or she uses as 
+        software can show you a broad picture of your kid’s online activity: preferred websites, social networks he or she uses, as 
         well as if your child browses sites with inappropriate content.</p>
 
         <ul>
@@ -180,7 +180,7 @@
                         <div class="col-sm-4 col-md-4 col-lg-4">
                                 <div class="feature">
                                         <img src="{$img}/icons/icon-online-activity.png" alt="monitor online activity">
-                                        <h3>Keep track of mailing contact list</h3>
+                                        <h3>Keep track of a contact list</h3>
                                         <ul class="feature_list">
                                                 <li>Know whom your children contact</li>
                                                 <li>Find out if they make new friends</li>
@@ -217,7 +217,7 @@
 <p>By setting parental control software on your kid’s device, you will ensure his or her safety and provide yourself with calm and worriless sleep. A reasonable tracking solution like Pumpic app will reveal the following advantages:</p>
 <ul>
 <li>You will protect your children from cyberbullies, online predators and swindlers. Thus, you will be able to avert danger before it has happened.</li> 
-<li>You will be able to get text messages sent to email your kid uses and check if there are threats, offences, bad words or any other content inappropriate for children under 18.</li> 
+<li>You will be able to get text messages sent to email your kid uses and check if there are threats, offences, bad words or other content inappropriate for children under 18.</li> 
 <li>Control your kid’s Internet usage, set restrictions including time limits, websites to visit, applications and games to download etc.</li>
 <li>You will have the access to incoming and outgoing calls and SMS, know who communicates with your child, if he or she contacts with strangers or misgiving people.</li>
 <li>The full data containing your kid’s location and route history will be sent to your personal account systematically. You will surely know, where your children are at each particular moment, and see where they were recently. It is also a good help, if your kid loses his or her device or it is stolen.</li>      
@@ -255,7 +255,7 @@
             </div>
     </div>
 </div>
-        {include file='../includes/prevent-online-dangers/how-pumpic.tpl' 
+        {include file='../includes/content/how-get-pumpic.tpl' 
              blockBg="light"
         }
 

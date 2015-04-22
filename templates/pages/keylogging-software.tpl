@@ -23,8 +23,8 @@
             imgAlign = "right"
             imgVerticalAlign = "bottom"
             textAlign = "right"
-            title = "Keylogger for Android and iPhone"
-            description = "Track each tap and every button your kid presses:"
+            title = "Keylogger for Android, <br/>iPhone, iPad, and iPod Touch"
+            description = "Track each tap and every button your kid presses."
             promoBuyBlock = "no"
             listText = "keep track of all keystrokes|follow password inputs|monitor Internet activity"
             planPackageBuy = "yes"
@@ -43,7 +43,7 @@
 
 
 {Content 
-    title="How kids use cell phones"
+    title="How Kids Use Cell Phones"
     blockBg='dark'}
                
         <p class="text-center f-light">
@@ -207,12 +207,12 @@
     title="How Keylogger Works"
     blockBg='light'}
     <p>When it comes to keylogger software, parents usually get confused due to the obscurity of this function. Let’s shed some light on it to make everything fall into place, where it belongs.</p> 
-<p>When we talk about keylogger, we at the same time mean a keyboard tracker – a special program developed to capture button presses. With its help, a user can view personal text messages, passwords, credit card numbers, and literally everything that the owner of the target device types in.</p> 
+<p>When we talk about keylogger, we at the same time mean a keyboard tracker – a special program developed to capture button presses. With its help, a user can view personal text messages, passwords, credit card numbers, and literally everything that an owner of the target device types in.</p> 
 <p>Thus, a keylogger app can help you monitor each tap on a touchscreen and every button your kid hits, while using his or her cell phone. With Pumpic keylogger at your command, you will be able to:</p>
 <ul>
 <li>Control if your kids use dirty language or any other words inappropriate for children;</li>
 <li>Follow all publications they make online and track their communication;</li>
-<li>View passwords they set, and change them if the situation requires;</li>
+<li>View passwords they set and change them, if the situation requires;</li>
 <li>Monitor all suspicious text messages to prevent inherent dangers or threats;</li>
 <li>Avert cyberbullying and contacts with online predators.</li>
 </ul> 
@@ -248,7 +248,7 @@
             </div>
     </div>
 </div>
-        {include file='../includes/prevent-online-dangers/how-pumpic.tpl' 
+        {include file='../includes/content/how-get-pumpic.tpl' 
              blockBg="light"
         }
 

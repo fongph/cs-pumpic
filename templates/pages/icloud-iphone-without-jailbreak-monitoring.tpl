@@ -31,13 +31,20 @@
                             <br>Control iPhone use. Follow location and online activity"
             os_versions = "os_v2"                
             promoBuyBlock = "no"
+            iCloudSolution = 'no'
+            planPackageBuy = "yes"
+            planPackageBuyUrl = '/iphone-with-jailbreak-monitoring.html#choose-subscription-plan'
+        }
+        
+        {*
             iCloudSolution = 'yes'
-            iCloudSolutionUrl = '/iphone-with-jailbreak-monitoring.html'
+            iCloudSolutionButtonClass = 'btn-default'
+            iCloudSolutionUrl = '/iphone-with-jailbreak-monitoring.html#choose-subscription-plan'
             iCloudSolutionDescription = 'Want more monitoring <br />features?'
             iCloudClass = 'icloud-p9'
             iCloudSolutionBTitle = 'Jailbreak solution'
             iCloudSolutionIButton = 'ico-cloud-lock'
-        }
+        *}
         
         <!-- BLOCK ICLOUD SOLUTION -->
         <div class="row-white">
@@ -87,7 +94,7 @@
         <!-- END BLOCK HOW IT WORK -->
         
         <!-- BLOCK PRICE AND FEATURES -->
-        <div class="no_bg prices-padding padding-reset">
+        <div id='icloud-solution' class="no_bg prices-padding padding-reset">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-10 col-lg-offset-1">

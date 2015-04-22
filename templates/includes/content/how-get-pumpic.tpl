@@ -10,7 +10,7 @@
                         <div class="caption how-to-step">
                             <h3>Pick a subscription plan</h3>
                             <p>Visit our <a class="text-green underline" href="/store.html">Store</a>, check out available <b>subscription plans</b> and choose the one that meets your expectations and <b>monitoring preferences</b>. 
-                            <span class="br"></span>After you submit payment, you will receive an email with setup instructions.</p>
+                            <span class="br"></span>After you submit a payment, you will receive an email with setup instructions.</p>
                         </div>
                     </div>
                 </div>
@@ -18,8 +18,8 @@
                     <div class="thumbnail">
                         <span class="img_thumb"><img src="images/thumb_2_new.png" height="206" width="172" alt=""></span>
                         <div class="caption how-to-step">
-                            <h3>Set Up</h3>
-                            <p>The Pumpic app installation process will take you no longer than <b>5 minutes</b>. Follow the guidelines in the subscription email to complete the setup.  
+                            <h3>Set up</h3>
+                            <p>Pumpic app installation process will take you no longer than <b>5 minutes</b>. Follow the guidelines in the subscription email to complete the setup.  
                                 <span class="br"></span>Note that <b>physical access</b> to the <b>target device is required</b> for <b>Android</b> and <b>iOS monitoring</b>. Meanwhile it is <b>not necessary for <b><a href='http://{$domain}/icloud-iphone-without-jailbreak-monitoring.html'>monitoring iCloud</a></b></b>.
                             </p>
                         </div>

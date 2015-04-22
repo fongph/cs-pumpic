@@ -23,8 +23,8 @@
             imgAlign = "right"
             imgVerticalAlign = "bottom"
             textAlign = "right"
-            title = "Parental Control Software for iPhone"
-            description = "Keep track of your kids’ iOS devices remotely:"
+            title = "Parental Control Software for <br/>iPhone, iPad, and iPod Touch"
+            description = "Keep track of your kids’ iOS devices remotely."
             promoBuyBlock = "no"
             listText = "control mobile phone usage|monitor Internet activity|follow location and route history"
             planPackageBuy = "yes"
@@ -44,11 +44,11 @@
 
 
 {Content 
-    title="Did you know?"
+    title="Did You Know?"
     blockBg='dark'}
        
         <p class="text-center f-light">
-            Since iPhones have hit the market in 2007, there are over 500 million devices sold. And sales performance grows rapidly 
+            Since iPhones have hit the market in 2007, there are over 500 million devices sold. And sale performance grows rapidly 
             until now, as well as figures of Apple smartphones stolen. That’s why upgrading your kid’s device with an app to monitor 
             iPhone is a must-have security measure. With its help, you will easily locate, lock or wipe an iOS mobile phone remotely, 
             if lost or stolen.
@@ -69,7 +69,7 @@
                 <section>
                     <div><strong class="fz50 color-orange">14%</strong></div>
                     <span class="text-uppercase">
-                        of stolen Apple devices were taken from house or car
+                        of stolen Apple devices were taken from a house or car
                     </span>
                 </section>
             </div>
@@ -88,7 +88,7 @@
         <p class="text-center f-light">
             Nowadays iPhones are probably the most popular cell phones worldwide. It is hard to find a person, who would not 
             like to have an ultramodern device by Apple. When it comes to kids and teenagers, iOS smartphones appear 
-            to be the top of the mind. To protect your child as well as the expensive gift, use iPhone monitoring software:
+            to be the top of the mind. To protect your child as well as an expensive gift, use iPhone monitoring software:
         </p>
         
         <!-- BLOCK LIST -->
@@ -111,18 +111,18 @@
         </div>
         <!-- END -->
     
-    {*<p>Since iPhones have hit the market in 2007, there are over 500 million devices sold. And sales performance grows rapidly 
+    {*<p>Since iPhones have hit the market in 2007, there are over 500 million devices sold. And sale performance grows rapidly 
     until now, as well as figures of Apple smartphones stolen. That’s why upgrading your kid’s device with an app to monitor 
     iPhone is a must-have security measure. With its help, you will easily locate, lock or wipe an iOS mobile phone remotely, 
     if lost or stolen.</p>   
     <ul>
         <li>44% of lost iPhones were simply left in public places</li>
-        <li>14% of stolen Apple devices were taken from house or car</li>
+        <li>14% of stolen Apple devices were taken from a house or car</li>
         <li>11% of all stolen iOS smartphones were pickpocketed</li>
     </ul>
     <p>Nowadays iPhones are probably the most popular cell phones worldwide. It is hard to find a person, who would not 
     like to have an ultramodern device by Apple. When it comes to kids and teenagers, iOS smartphones appear 
-    to be the top of the mind. To protect your child as well as the expensive gift, use iPhone monitoring software:</p>
+    to be the top of the mind. To protect your child as well as an expensive gift, use iPhone monitoring software:</p>
 
     <ul>
         <li>control mobile phone usage</li>
@@ -183,10 +183,10 @@
                         <div class="col-sm-4 col-md-4 col-lg-4">
                                 <div class="feature">
                                         <img src="{$img}/icons/icon-track-kids.png" alt="remote mobile monitoring">
-                                        <h3>Follow locations and route history</h3>
+                                        <h3>Follow location and routes</h3>
                                         <ul class="feature_list">
                                                 <li>Track current GPS location</li>
-                                                <li>Follow route history</li>
+                                                <li>Follow the entire route history</li>
                                                 <li>Find iPhone if lost or stolen </li>
                                         </ul>
                                 </div>
@@ -266,18 +266,18 @@
         <li>your child will be able to stay up to date and communicate with his friends and relatives;</li>
         <li>having online connection your kid will always stay tuned and current;</li>
         <li>smartphones can help kids perform and follow their daily tasks;</li>
-        <li>modern mobile phones help children advance their skills, and thus determine the future profession.</li>
+        <li>modern mobile phones help children advance their skills, and thus, determine their future profession.</li>
     </ul>
     <p>On the other hand, together with mobility and opportunities there come some issues:</p>
     <ul>
         <li>mobile swindlers and online predators might attack your kid through the web;</li>
-        <li>your kid might waste a lot of time playing games, chatting online or using social networks;</li>
+        <li>your kid might waste a lot of time playing games, chatting online, or using social networks;</li>
         <li>your child might strike inappropriate content in the Internet: watch videos containing porn or violence, read articles with bad words or messages with threats etc.;</li>
         <li>your kid might be involved in activity you would not approve: commit a crime, form connections with a sect or be forced to go the limit;</li>
-        <li>you child might fall under bad influence and start using drugs or alcohol.</li>
+        <li>your child might fall under bad influence and start using drugs or alcohol.</li>
     </ul>
     <p>However, the real world hides not less dangers that it does online. On any hand, there is a possibility to control your children’s lives on the web. Pumpic sets parental control on your kid’s cell phone and monitors every step he or she takes as well as each decision made via a smartphone or tablet.</p>
-    <p>Nowadays your responsibility is not to take your kid’s mobile phone away to protect him, or forbid doing things you do not approve. All you need is to keep your eyes open and take action, when the situation requires. Thus, if your have decided to present your child an iPhone, see about iOS monitoring for kids.</p>
+    <p>Nowadays your responsibility is not to take your kid’s mobile phone away to protect him, or forbid doing things you do not approve. All you need is to keep your eyes open and take action, when the situation requires. Thus, if you have decided to present your child an iPhone, learn more about iOS monitoring for kids.</p>
 {EndContent}    
 
 <div class="dark">
@@ -308,7 +308,7 @@
             </div>
     </div>
 </div>
-        {include file='../includes/prevent-online-dangers/how-pumpic.tpl' 
+        {include file='../includes/content/how-get-pumpic.tpl' 
              blockBg="light"
         }
 

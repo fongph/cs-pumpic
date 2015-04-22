@@ -24,7 +24,7 @@
             imgVerticalAlign = "bottom"
             textAlign = "right"
             title = "SMS Monitoring App"
-            description = "Follow your kids’ SMS communication:"
+            description = "Follow your kids’ SMS communication."
             promoBuyBlock = "no"
             listText = "monitor SMS messages sent and received|control contacts, block misgiving senders|prevent children from bullies and online predators"
             planPackageBuy = "yes"    
@@ -45,7 +45,7 @@
 
 
 {Content 
-    title="Did you know?"
+    title="Did You Know?"
     blockBg='dark'}
             
         <p class="text-center f-light">
@@ -69,7 +69,7 @@
                 <section>
                     <div><strong class="fz50 color-orange">50%</strong></div>
                     <span class="text-uppercase">
-                        of children share personal data online, including names, the address and billing accounts
+                        of children share personal data online, including names, addresses, and billing accounts
                     </span>
                 </section>
             </div>
@@ -87,7 +87,7 @@
 
         <p class="text-center f-light">
             Pumpic parental text monitoring app was designed to help keep your children safe by tracking incoming and outgoing SMS. 
-            The app allows you to view saved and deleted messages as well as block specific contacts from reaching your kids in future:
+            The app allows you to view saved and deleted messages, limit daily amount of sent SMS, as well as block specific contacts from reaching your kids in future:
         </p>
         
         <!-- BLOCK LIST -->
@@ -116,11 +116,11 @@
 
         <ul>
             <li>70% of victims that online predators target are boys and girls aged 14-16 years old</li>
-            <li>50% of children share personal data online, including names, the address and billing accounts</li>
+            <li>50% of children share personal data online, including names, addresses, and billing accounts</li>
             <li>60% of all criminal cases among teenagers were planned through SMS and IM chats</li>
         </ul>
 
-        <p>Pumpic parental text monitoring app was designed to help keep your children safe by tracking incoming and outgoing SMS. The app allows you to view saved and deleted messages as well as block specific contacts from reaching your kids in future:</p>
+        <p>Pumpic parental text monitoring app was designed to help keep your children safe by tracking incoming and outgoing SMS. The app allows you to view saved and deleted messages, limit daily amount of sent SMS, as well as block specific contacts from reaching your kids in future:</p>
 
         <ul>
             <li>monitor SMS messages sent and received</li>
@@ -169,12 +169,12 @@
                         </div>
                         <div class="col-sm-4 col-md-4 col-lg-4">
                                 <div class="feature">
-                                        <img src="{$img}/icons/icon-online-activity.png" alt="monitor online activity">
+                                        <img src="{$img}/icons/icon-block-incoming-sms.png" alt="block incoming SMS">
                                         <h3>Block text messages</h3>
                                         <ul class="feature_list">
                                                 <li>Add misgiving people to the block list</li>
                                                 <li>Lock SMS containing bad words or threats</li>
-                                                <li>Ban strangers contacting your kids</li>
+                                                <li>Limit the amount of SMS sent daily </li>
                                         </ul>
                                 </div>
                         </div>
@@ -255,16 +255,16 @@
 {Content 
     title="Why to Follow Kids’ Text Messages"
     blockBg='light'}
-    <p>You will probably wonder, if hear that children most of all do not use their mobile phones to call each other. Instead, they use them to play games, search online and chat via social media or SMS. In other words, modern kids prefer writing text messages to making calls.</p>
+    <p>You will probably wonder, if hear that children most of all do not use their mobile phones to call each other. Instead, they use them to play games, search online, and chat via social media or SMS. In other words, modern kids prefer writing text messages to making calls.</p>
 
-    <p>According to the recent statistics, more than 70% of teenagers use SMS to contact their friends. If you have a look at one of your kid’s SMS chat history, you will see that it more likely resembles a written down phone call than a message itself. It means that if you want to find out what your child talks about with his or her friend, you don’t need to record a call, you can simply read a text message. That’s why monitoring SMS is one of the best ways of keeping up with your kid’s affairs.</p>
+    <p>According to the recent statistics, more than 70% of teenagers use SMS to contact their friends. If you have a look at one of your kid’s SMS chat history, you will see that it more likely resembles a written down phone call than a message itself. It means that if you want to find out what your child talks about with his or her friend, you don’t need to record a call, you can simply read text messages. That’s why monitoring SMS is one of the best ways of keeping up with your kid’s affairs.</p>
 
     <p>There is a lot of tracking software, which enables parents to follow their kids’ activity remotely. And SMS monitoring is one of its major functions. With the help of such spyware, you will easily track your children from any spot of the world as well as view SMS they send and receive.</p>
 
     <p>SMS spy software will let you take care of your kids remotely and prevent them from possible dangers, namely:</p>
     <ul>
-        <li>find out if your kid is dating someone and prevent him or her from related threat (teenagers chat with their dates pretty often, and thus SMS tracking will let you be in touch with the situation and take action, if needed);</li>
-        <li>control, whom your kids communicate with and prevent them from chatting with strangers or misgiving people (swindlers, bullies and online predators often use text messages to contact their victims);</li>
+        <li>find out if your kid is dating someone and prevent him or her from related threats (teenagers chat with their dates pretty often, and thus, SMS tracking will let you be in touch with the situation and take action, if needed);</li>
+        <li>control whom your kids communicate with and prevent them from chatting with strangers or misgiving people (swindlers, bullies, and online predators often use text messages to contact their victims);</li>
         <li>take immediate action, if find out that your kid contacts drug dealers or someone, who might be a bad company for him or her;</li>
         <li>find out if your kid is up to do something you would not approve, or is going to go anywhere you would not allow;</li>
         <li>find out if your kid uses bad words in his or her communication;</li>
@@ -300,7 +300,7 @@
             </div>
     </div>
 </div>
-        {include file='../includes/prevent-online-dangers/how-pumpic.tpl' 
+        {include file='../includes/content/how-get-pumpic.tpl' 
              blockBg="light"
         }
 

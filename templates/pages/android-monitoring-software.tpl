@@ -50,7 +50,7 @@
                 imgUrl = "icons/ipad_android.png"
                 imgAlt = "Android"
                 title = "Remote Android Monitoring"
-                description = "Right after installing Pumpic on Android phone or tablet, all the data from the target device will be sent directly to your Control Panel. It can be accessed from any browser and any device, including PCs, smartphones and tablets. In Control Panel you can review the information collected, set restrictions and block some of activities on the target Android device."
+                description = "Right after installing Pumpic on an Android phone or tablet, all the data from the target device will be sent directly to your Control Panel. It can be accessed from any browser and any device, including PCs, smartphones and tablets. In Control Panel you can review the information collected, set restrictions, block, and limit some of activities on the target Android device."
         }
 
         {include file='../includes/content/features-table.tpl' 

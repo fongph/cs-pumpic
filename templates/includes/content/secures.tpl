@@ -9,7 +9,7 @@
                                         <ul class="feature_list">
                                                 <li>Monitor incoming and outgoing calls</li>
                                                 <li>View Contacts and Calendar</li>
-                                                <li>Follow text messages and SMS history</li>
+                                                <li>Follow, block, and limit text messages</li>
                                         </ul>
                                 </div>
                         </div>
@@ -30,7 +30,7 @@
                                         <h3>Track kids remotely</h3>
                                         <ul class="feature_list">
                                                 <li>Keep track of GPS location</li>
-                                                <li>Follow entire route history</li>
+                                                <li>Follow the entire route history</li>
                                                 <li>Use SMS commands to control</li>
                                         </ul>
                                 </div>

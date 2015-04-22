@@ -30,8 +30,8 @@
                                         <h3>Follow Internet activity</h3>
                                         <ul class="feature_list">
                                                 <li>Monitor browsing and bookmarks</li>
-                                                <li>Track Skype, Viber and WhatsApp</li>
-                                                <li>Follow Facebook and Instagram</li>
+                                                <li>Track Skype, Viber, WhatsApp, Kik</li>
+                                                <li>Follow Facebook IM and Instagram</li>
                                         </ul>
                                 </div>
                         </div>

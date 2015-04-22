@@ -133,8 +133,8 @@
                                                 <label>SMS</label>
                                                 <div class="bth-info">
                                                     <ul>
-                                                        <li>sent, received and deleted text messages</li>
-                                                        <li>block by senders or bad words</li>
+                                                        <li>SMS and iMessage content</li>
+                                                        <li>block or limit outgoing texts</li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -152,8 +152,8 @@
                                                 <label>Photos & Videos</label>
                                                 <div class="bth-info">
                                                     <ul>
-                                                        <li>camera shots and Instagram monitoring</li>
-                                                        <li>downloaded pictures from the Internet</li>
+                                                        <li>camera shots, downloaded files</li>
+                                                        <li>Instagram monitoring</li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -171,8 +171,8 @@
                                                 <label>Browsers & Applications</label>
                                                 <div class="bth-info">
                                                     <ul>
-                                                        <li>browsing history and bookmarks</li>
-                                                        <li>block websites and limit applications</li>
+                                                        <li>browsing history, bookmarks</li>
+                                                        <li>block websites and limit apps</li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -664,7 +664,7 @@
                                         </li>
                                     </ul>
                                     <div class='block-info'>
-                                        <p>View <b>sent, received</b> and <b>deleted</b> SMS and iMessages along with forwarding information on both a sender and recipient. <b>Block</b> unwelcome senders <b>by phone number</b>, as well as offending SMS and threats <b>by words or phrases</b>.</p>
+                                        <p>Monitor <b>sent</b>, <b>received</b>, and <b>deleted</b> SMS and iMessages. View data on both a sender and recipient. <b>Block</b> text messages by a <b>phone number</b>, <b>words</b>, or <b>phrases</b>. <b>Limit</b> a number of <b>texts sent daily</b>. </p>
                                         {*<ul>
                                             <li>Use Pumpic app to follow the entire call history of your</li>
                                             <li>child’s device. Protect your kids from mistrusted people.</li>

@@ -16,7 +16,7 @@
                     </div>
                         
                      <div class='box-cp pull-right'>   
-                        <a href="http://demo.{$domain}/setDevice/125?redirect_url=cp/calls" class="btn btn-sm btn-orange btn-success visible-lg cp-login">Demo</a>
+                        <a href="{getDemoLink domain=$domain}" class="btn btn-sm btn-orange btn-success visible-lg cp-login">Demo</a>
                     </div>   
                         
                     {*if ''|hasUser} 
@@ -45,10 +45,11 @@
                                 >
                                 <a href="/store.html">Store</a>
                             </li>
+                            {if 'iphone-tracking-software.html,iphone-with-jailbreak-monitoring.html,icloud-iphone-without-jailbreak-monitoring.html'|getCloseLink}
                             <li {if $topmenu_active=='all-features'} class="active"{/if}>
                                 <a href="/all-features.html">Features</a>
                             </li>
-                            
+                            {/if}
                             {*<li {if $topmenu_active=='how-to'} class="active"{/if}>
                                 <a href="/how-to.html">How to</a>
                             </li>*}

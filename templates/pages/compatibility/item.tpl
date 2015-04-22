@@ -40,13 +40,14 @@
                             <div class="row">
                                 {if $getSetting._item.alies}
                                 <div class="breadcrumbs col-lg-12">
-                                    <h4>
+                                    <div class="h4">
                                         <a class="underline" href="http://{$domain}/compatibility/">Compatibility</a>
                                         <span class="arrows icon-right-open"></span>
-                                    </h4>
-                                    <h3>
-                                        <a href="http://{$domain}/compatibility/{$getSetting._item.alies}/">{$getSetting._item.name}</a>
-                                    </h3>
+                                    </div>
+                                    <h1 class='h3'>
+                                        {$getSetting._item.name}
+                                        {*<a href="http://{$domain}/compatibility/{$getSetting._item.alies}/">{$getSetting._item.name}</a>*}
+                                    </h1>
                                 </div>
                                 {/if}
                                 <div class="col-sm-4 col-md-4">

@@ -24,8 +24,8 @@
             imgAlign = "right"
             textAlign = "right"
             title = "Remote Smartphone Monitoring App"
-            description = "Pumpic helps to track cell phone activity.<br/>
-Monitor mobile device remotely with Pumpic."
+            description = "Pumpic helps track cell phone activity.<br/>
+Monitor mobile devices remotely with Pumpic."
             promoBuyBlock = "no"
             listText = "Follow Calls and SMS|Track GPS location|Monitor online activity"
             planPackageBuy = "yes"
@@ -138,7 +138,7 @@ Monitor mobile device remotely with Pumpic."
                 imgUrl = "parental_control/ipad.png"
                 imgAlt = "Cell phone monitoring"
                 title = "Easy-to-Use Control Panel"
-                description = "Right after installing Pumpic, all the data from the target mobile phone will be sent to your Control Panel. It can be accessed from any browser and any device, including PCs, smartphones and tablets. In Control Panel you can not only view the information, but also set restrictions and block some of activities on the target device."
+                description = "Right after installing Pumpic, all the data from the target device will be sent to your Control Panel. It can be accessed from any browser and any gadget, including PCs, mobile phones and tablets. In Control Panel, you can not only view the information, but also set restrictions, block, and limit some of activities."
 
         }
 <div class="{if $blockBg}{$blockBg}{else}light{/if}">
@@ -148,16 +148,16 @@ Monitor mobile device remotely with Pumpic."
                 <h2 class="text-center">Why Pumpic</h2>
                 <div class="row">
                     <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
-                        <h3 class="text-center"><img src="{$img}/icons/icon-easy-to-use.png" alt=""> Easy to use</h3>
-                        <p class="text-center">Pumpic is feature-rich mobile monitoring software, which will help you track and control the target device remotely. Follow calls, SMS, online activity, location and even more. <br/><br/>The service is user-friendly and does not require any technical skills.</p>
+                        <h3 class="text-center"><img src="{$img}/icons/icon-easy-to-use.png" alt="">Easy to use</h3>
+                        <p class="text-center">Pumpic is feature-rich mobile monitoring software that will help you take care of your children remotely. More than 20 monitoring features are gathered in Pumpic app.<br/><br/>Control Panel has a user-friendly design and does not require any specific technical skills.</p>
                     </div>
                     <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
-                        <h3 class="text-center"><img src="{$img}/icons/ico-easy-to-install.png" alt=""> Easy to install</h3>
-                        <p class="text-center">Follow the guidelines and start remote monitoring from your Control Panel right after the set up. Get physical access to the target device and install the app. <br/><br/>Note that jailbreak is required for iOS devices. </p>
+                        <h3 class="text-center"><img src="{$img}/icons/ico-easy-to-install.png" alt="">Easy to install</h3>
+                        <p class="text-center">Follow the guidelines and start remote monitoring from your Control Panel right after the setup. Get physical access to the target device once and install the app in less than 5 minutes.<br/><br/>For iPhone monitoring via iCloud solution you don't even need to install the software on the target device.</p>
                     </div>
                     <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
-                        <h3 class="text-center"><img src="{$img}/icons/ico-easy-to-contact.png" alt=""> Easy to contact</h3>
-                        <p class="text-center">Pumpic mobile phone tracking app makes monitoring process more than simple. Enter your Control Panel and see all the data from the target device in a readable form. <br/><br/>Feel free to contact our Support Team at any time, for any reason.</p>
+                        <h3 class="text-center"><img src="{$img}/icons/ico-easy-to-contact.png" alt="">Easy to contact</h3>
+                        <p class="text-center">Pumpic application has a user-friendly interface, which makes the monitoring process more than simple. Enter your Control Panel and see all the data from the target device in a readable form.<br/><br/>Feel free to contact our Support Team at any time, for any reason.</p>
                     </div>
                 </div>
             </div>
@@ -167,7 +167,7 @@ Monitor mobile device remotely with Pumpic."
 
 </div>
  		
- {include file='../includes/prevent-online-dangers/how-pumpic.tpl' 
+ {include file='../includes/content/how-get-pumpic.tpl' 
              blockBg="dark"
         }
 

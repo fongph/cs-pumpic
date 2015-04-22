@@ -102,7 +102,9 @@
                                     {/if}    
 
                                     {if isset($planPackageBuy) && $planPackageBuy == 'yes'}
-                                        {include './blocks/block-package.tpl'}
+                                        {include file='./blocks/block-package.tpl'
+                                            planPackageBuyUrl = $planPackageBuyUrl
+                                        }
                                     {/if}
                                     
                                     {if isset($promoBuyBlock) && $promoBuyBlock == 'yes'}
@@ -116,6 +118,7 @@
                                                 iCloudSolutionDescription = $iCloudSolutionDescription
                                                 iCloudSolutionIButton = $iCloudSolutionIButton
                                                 iCloudSolutionBTitle = $iCloudSolutionBTitle
+                                                iCloudSolutionButtonClass = $iCloudSolutionButtonClass
                                         }
                                         {*{include './blocks/block-trial.tpl'}*}
                                     {/if}    

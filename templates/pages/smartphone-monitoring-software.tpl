@@ -24,8 +24,8 @@
             imgAlign = "right"
             textAlign = "right"
             title = "Smartphone <br/> Parental Monitoring App"
-            description = "Monitor your kids smartphone usage remotely<br />
-            on iPhone, iPad, iPod and Android devices."
+            description = "Monitor your kid's smartphone usage remotely<br />
+            on iPhone, iPad, iPod Touch, and Android devices."
             promoBuyBlock = "no"
             planPackageBuy = "yes"
         }
@@ -36,8 +36,9 @@
 
         {include file='../includes/content/features-table.tpl'
         title = "Top Parental Control Features"
-        description = "Pumpic is a new generation of mobile phone tracking software that comes with a large range of monitoring functions. They will help you to remotely keep track of your child's cell phone activity.<br/><br/>
-        Pumpic’s best features include the ability to monitor calls and text messages (even deleted ones); track GPS location (current and route history); view Internet browsing history, bookmarks and applications; follow online activity, including social networks, IM chats and emails; and view photos and videos shot or downloaded from the Internet. And Pumpic does even more: it blocks SMS containing bad words or threats; blocks inappropriate web sources and applications; uses offline SMS commands to control the target device remotely; and tracks each button pressed with a keylogger function."
+        description = "Pumpic is a new generation of mobile phone tracking software that comes with a large range of monitoring functions. They will help you keep track of your kid's cell phone activity remotely.<br/><br/>
+        Pumpic best features include an ability to monitor calls and text messages (even deleted ones); track GPS location (current and route history); view online browsing history, bookmarks, and applications; follow online activity, including social networks, IM chats, and emails; view photos as well as videos shot or downloaded from the Internet.<br/><br/>
+		In addition, even more: block SMS containing bad words or threats; limit the amount of text messages sent daily; block inappropriate web sources and applications; use offline SMS commands to control the target device remotely; track each button pressed with a keylogger function."
         blockBg="dark"
         } 
     
@@ -53,8 +54,8 @@
         blockBg="light"
         imgUrl = "icons/lending_features_smartphone_monitoring.png"
         imgAlt = "Easy-to-Use Control Panel"
-        title = "Easy-to-Use Control Panel"
-        description = "Right after installing Pumpic, all the data from the target mobile phone will be sent to your Control Panel. It can be accessed from any browser and any device, including PCs, smartphones and tablets. In Control Panel you can not only view the information, but also set restrictions and block some of activities on the target device."
+        title = "Remote Smartphone Monitoring"
+        description = "Right after installing Pumpic, all the data from the target device will be sent to your Control Panel. It can be accessed from any browser and any gadget, including PCs, mobile phones and tablets. In Control Panel, you can not only view the information, but also set restrictions, block, and limit some of activities."
         }
 
 

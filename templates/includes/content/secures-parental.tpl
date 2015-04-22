@@ -1,26 +1,26 @@
 <div class="{if $blockBg}{$blockBg}{else}dark{/if}">
         <div class="container">
-                <h2 class="text-center">{if $title}{$title}{else}Track Digital Footprint of Your Child{/if}</h2>
+                <h2 class="text-center">{if $title}{$title}{else}Track Digital Footprints of Your Children{/if}</h2>
                 <div class="row">
                         <div class="col-sm-4 col-md-4 col-lg-4">
                                 <div class="feature">
                                         <img src="{$img}/icons/icon-online-activity.png" alt="monitor online activity">
                                         <h3>Follow online activity</h3>
                                         <ul class="feature_list">
-                                                <li>Monitor bookmarks & browser</li>
-                                                <li>Block websites</li>
-                                                <li>Read posted comments</li>
+                                                <li>Monitor browsing history</li>
+                                                <li>Block websites, view bookmarks</li>
+                                                <li>Follow posts and downloads</li>
                                         </ul>
                                 </div>
                         </div>
                         <div class="col-sm-4 col-md-4 col-lg-4">
                                 <div class="feature">
                                         <img src="{$img}/icons/icon-mobile-secure.png" alt="cell phone monitoring">
-                                        <h3>Social Apps & Messengers</h3>
+                                        <h3>Social Apps & Online Chats</h3>
                                         <ul class="feature_list">
                                                 <li>Instagram photos & comments</li>
-                                                <li>Facebook and Skype chats</li>
-                                                <li>Text messages (SMS, WhatsApp, Viber)</li>
+                                                <li>Facebook Instant Messenger</li>
+                                                <li>WhatsApp, Viber, Skype, and Kik</li>
                                         </ul>
                                 </div>
                         </div>
@@ -30,8 +30,8 @@
                                         <h3>Track kids remotely</h3>
                                         <ul class="feature_list">
                                                 <li>Keep track of GPS location</li>
-                                                <li>Follow entire route history</li>
-                                                <li>Set geo-fences</li>
+                                                <li>Follow the entire route history</li>
+                                                <li>Set geo-fences, check out alerts</li>
                                         </ul>
                                 </div>
                         </div>

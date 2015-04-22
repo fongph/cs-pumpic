@@ -127,7 +127,7 @@
                                                                     <span></span>
                                                                     <div class="box-currence">
                                                                         <symbol attr-iso="usd">$</symbol>
-                                                                        <curr id="basic-price-per-month">16.66</curr>
+                                                                        <curr id="premium-price-per-month">16.66</curr>
                                                                     </div><span> / month</span>
                                                                 </div>
                                                             </div>

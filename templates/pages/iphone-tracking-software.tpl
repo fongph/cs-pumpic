@@ -391,7 +391,10 @@
                 <div class="row text-center">
                     <div class="refund_10 refund_bg">
                         <div class="wr_refund">
-                            <div class="day10">10-DAY <span class="d_green">Refund Policy</span>
+                            <div class="day10">
+                                10-DAY 
+                                <span class="d_green">Refund Policy</span>
+                                <span class="store-full-link"><a href="http://pumpic.com/policy.html">if you fulfill these rules <i class="icon-angle-double-right"></i></a></span>
                             </div>
                         </div>
                     </div>

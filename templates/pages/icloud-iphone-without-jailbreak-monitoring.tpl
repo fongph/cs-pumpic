@@ -33,7 +33,9 @@
             promoBuyBlock = "no"
             iCloudSolution = 'no'
             planPackageBuy = "yes"
-            planPackageBuyUrl = '/icloud-iphone-without-jailbreak-monitoring.html#icloud-solution'
+            planPackageBuyUrl = '#icloud-solution'
+            planPackageBuyType = 'link'
+            planPackageBuyClass = 'go_block_scroll'
 
             TouchPad = 'yes'
             Android = 'no'
@@ -297,7 +299,11 @@
                                             <th>
                                                 <div class="refund_10 refund_bg">
                                                     <div class="wr_refund text-transform-none">
-                                                        <div class="day10">10-DAY <span class="d_green">Refund Policy</span>
+                                                        <div class="day10">10-DAY 
+                                                            <span class="d_green">Refund Policy</span>
+                                                        </div>
+                                                        <div class="fulfill-link">
+                                                            <span class="store-full-link"><a href="http://pumpic.com/policy.html">if you fulfill these rules <i class="icon-angle-double-right"></i></a></span>
                                                         </div>
                                                     </div>
                                                 </div>

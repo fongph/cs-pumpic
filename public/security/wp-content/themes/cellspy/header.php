@@ -1,5 +1,7 @@
-<?php createReferral(); 
-      userNotice();  
+<?php 
+      createReferral(); 
+      userNotice(); 
+      statistic();
 ?>
 <!DOCTYPE html>
 <!--[if IE 7]>

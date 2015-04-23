@@ -31,7 +31,9 @@
                             
             promoBuyBlock = "no"
             planPackageBuy = "yes"
-            planPackageBuyUrl = '/iphone-with-jailbreak-monitoring.html#choose-subscription-plan'
+            planPackageBuyUrl = '#choose-subscription-plan'
+            planPackageBuyType = 'link'
+            planPackageBuyClass = 'go_block_scroll'
 
             TouchPad = 'yes'
             Android = 'no'
@@ -641,7 +643,11 @@
                                                 </div>
                                                 <div class="refund_10 refund_bg">
                                                     <div class="wr_refund text-transform-none">
-                                                        <div class="day10">10-DAY <span class="d_green">Refund Policy</span>
+                                                        <div class="day10">10-DAY 
+                                                            <span class="d_green">Refund Policy</span>
+                                                        </div>
+                                                        <div class="fulfill-link">
+                                                            <span class="store-full-link"><a href="http://pumpic.com/policy.html">if you fulfill these rules <i class="icon-angle-double-right"></i></a></span>
                                                         </div>
                                                     </div>
                                                 </div>

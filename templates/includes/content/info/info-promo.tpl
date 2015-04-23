@@ -132,6 +132,8 @@
                                     {if isset($planPackageBuy) && $planPackageBuy == 'yes'}
                                         {include file='./blocks/block-package.tpl'
                                             planPackageBuyUrl = $planPackageBuyUrl
+                                            planPackageBuyType = $planPackageBuyType
+                                            planPackageBuyClass = $planPackageBuyClass 
                                         }
                                     {/if}
                                     

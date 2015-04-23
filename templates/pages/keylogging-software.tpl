@@ -89,7 +89,7 @@
 
         <p class="text-center f-light">
             More often than not kids tend to keep their private life secret from their parents. It means that if danger comes, 
-        there is a chance that you will not even know about it. Parental control software helps your monitor your children’s 
+        there is a chance that you will not even know about it. Parental control software helps you monitor your children’s 
         activity, when you are not nearby. It will secure your kid and avert danger:
         </p>
         

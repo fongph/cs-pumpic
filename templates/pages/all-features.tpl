@@ -36,7 +36,7 @@
                                     <li class="i-l-features">
                                         <div class="row">
                                             <div class="col-sm-10 col-md-10 col-lg-10">
-                                                <label>Calls</label>
+                                                <a class="underline go_block_scroll" href="#calls">Calls</a>
                                                 <div class="bth-info">
                                                     <ul>
                                                         <li>in- and outbound call logs</li>
@@ -54,7 +54,7 @@
                                     <li class="i-l-features">
                                         <div class="row">
                                             <div class="col-sm-10 col-md-10 col-lg-10">
-                                                <label>Location & Geo-fences</label>
+                                                <a class="underline go_block_scroll" href="#location">Location & Geo-fences</a>
                                                 <div class="bth-info">
                                                     <ul>
                                                         <li>current GPS location & history</li>
@@ -71,7 +71,7 @@
                                     <li class="i-l-features">
                                         <div class="row">
                                             <div class="col-sm-10 col-md-10 col-lg-10">
-                                                <label>Online Chats</label>
+                                                <a class="underline go_block_scroll" href="#social">Online Chats</a>
                                                 <div class="bth-info">
                                                     <ul>
                                                         <li>Facebook Messenger</li>
@@ -88,7 +88,7 @@
                                     <li class="i-l-features">
                                         <div class="row">
                                             <div class="col-sm-10 col-md-10 col-lg-10">
-                                                <label>Email</label>
+                                                <a class="underline go_block_scroll" href="#email">Email</a>
                                                 <div class="bth-info">
                                                     <ul>
                                                         <li>inbox and sent emails</li>
@@ -130,7 +130,7 @@
                                             </div>
                                             
                                             <div class="col-sm-10 col-md-10 col-lg-10">
-                                                <label>SMS</label>
+                                                <a class="underline go_block_scroll" href="#sms">SMS</a>
                                                 <div class="bth-info">
                                                     <ul>
                                                         <li>SMS and iMessage content</li>
@@ -149,7 +149,7 @@
                                             </div>
                                             
                                             <div class="col-sm-10 col-md-10 col-lg-10">
-                                                <label>Photos & Videos</label>
+                                                <a class="underline go_block_scroll" href="#media">Photos & Videos</a>
                                                 <div class="bth-info">
                                                     <ul>
                                                         <li>camera shots, downloaded files</li>
@@ -168,7 +168,7 @@
                                             </div>
                                             
                                             <div class="col-sm-10 col-md-10 col-lg-10">
-                                                <label>Browsers & Applications</label>
+                                                <a class="underline go_block_scroll" href="#applications">Browsers & Applications</a>
                                                 <div class="bth-info">
                                                     <ul>
                                                         <li>browsing history, bookmarks</li>
@@ -188,7 +188,7 @@
                                             </div>
                                             
                                             <div class="col-sm-10 col-md-10 col-lg-10">
-                                                <label>Calendar & Contacts</label>
+                                                <a class="underline go_block_scroll" href="#organiser">Calendar & Contacts</a>
                                                 <div class="bth-info">
                                                     <ul>
                                                         <li>scheduled plans and events</li>
@@ -624,7 +624,7 @@
                     <div id='box-features-list' class="div-table col-sm-12 col-md-12 col-lg-12">
                         
                         <!-- \\ #2 Calls: (even)-->
-                        <div class="div-table-row even">
+                        <div id="calls" class="div-table-row even">
                             <div class="item-feature-list div-table-column col-sm-12 col-md-4 col-lg-4 text-right">
                                 <img style='max-width: 302px' class="image-features model-mobile-center" src='../images/technological/image-call.png' />
                             </div>
@@ -652,7 +652,7 @@
                         </div>
                         
                         <!-- \\ #3 SMS: (odd) -->
-                        <div class="div-table-row odd">
+                        <div id="sms" class="div-table-row odd">
                             <div class="item-feature-list div-table-column col-lg-4 text-right">
                                 
                                 <div class='feature-item-info'>
@@ -690,7 +690,7 @@
                         </div>
                         
                         <!-- \\ #1 Location: (even) -->
-                        <div class="div-table-row even">
+                        <div id="location" class="div-table-row even">
                             <div class="item-feature-list div-table-column col-sm-12 col-md-4 col-lg-4 text-right">
                                 <img style='max-width: 380px' class="image-features model-mobile-center" src='../images/technological/image-location-history.png' />
                             </div>
@@ -725,7 +725,7 @@
                         </div>
                         
                         <!-- \\ #4 Applications: (odd) -->
-                        <div class="div-table-row odd">
+                        <div id="applications" class="div-table-row odd">
                             <div class="item-feature-list div-table-column col-lg-4 text-right">
                                 
                                 <div class='feature-item-info'>
@@ -795,7 +795,7 @@
                         </div>*}
                         
                         <!-- \\ #5 Facebook IM/Viber/Skype/WhatsApp: (even) -->
-                        <div class="div-table-row even">
+                        <div id="social" class="div-table-row even">
                             <div class="item-feature-list div-table-column col-sm-12 col-md-4 col-lg-4 text-right">
                                 <img style='max-width: 306px' class="image-features model-mobile-center" src='../images/technological/image-messanges.png' />
                             </div>
@@ -834,7 +834,7 @@
                         </div>
                         
                         <!-- \\ #6 Browser control: (odd) -->
-                        <div class="div-table-row odd">
+                        <div id="browser_control" class="div-table-row odd">
                             <div class="item-feature-list div-table-column col-lg-4 text-right">
                                 
                                 <div class='feature-item-info'>
@@ -872,7 +872,7 @@
                         </div>
                         
                        <!-- \\ #11 Photos/Videos: (even)-->
-                       <div class="div-table-row even">
+                       <div id="media" class="div-table-row even">
                             <div class="item-feature-list div-table-column col-sm-12 col-md-4 col-lg-4 text-right">
                                 <img style='max-width: 300px' class="image-features model-mobile-center" src='../images/technological/image-video-and-photos.png' />
                             </div>
@@ -930,7 +930,7 @@
                                       
                                         
                        <!-- \\ #7 Email: (odd) -->
-                        <div class="div-table-row odd">
+                        <div id="email" class="div-table-row odd">
                             <div class="item-feature-list div-table-column col-lg-4 text-right">
                                 
                                 <div class='feature-item-info'>
@@ -969,7 +969,7 @@
                                         
                                         
                         <!-- \\ #8 Calendar/Contacts: (even) -->
-                        <div class="div-table-row even">
+                        <div id="organiser" class="div-table-row even">
                             <div class="item-feature-list div-table-column col-sm-12 col-md-4 col-lg-4 text-right">
                                 <img style='max-width: 302px' class="image-features model-mobile-center" src='../images/technological/image-calendar-and-contacts.png' />
                             </div>
@@ -1008,7 +1008,7 @@
                         </div>
                         
                         <!-- \\ #9 Keylogger: (odd) -->
-                        <div class="div-table-row odd">
+                        <div id="keylogger" class="div-table-row odd">
                             <div class="item-feature-list div-table-column col-lg-4 text-right">
                                 
                                 <div class='feature-item-info'>
@@ -1046,7 +1046,7 @@
                         </div>
                         
                         <!-- \\ #10 SMS commands: (even)-->
-                        <div class="div-table-row even">
+                        <div id="sms_commands" class="div-table-row even">
                             <div class="item-feature-list div-table-column col-sm-12 col-md-4 col-lg-4 text-right">
                                 <img style='max-width: 187px' class="image-features model-mobile-center" src='../images/technological/image-sms-command.png' />
                             </div>
@@ -1081,7 +1081,7 @@
                         </div>
                         
                         <!-- \\ #12 Instagram Monitoring: (odd) -->
-                        <div class="div-table-row odd">
+                        <div id="instagram" class="div-table-row odd">
                             <div class="item-feature-list div-table-column col-lg-4 text-right">
                                 
                                 <div class='feature-item-info'>
@@ -1118,7 +1118,7 @@
                         </div>
                         
                         <!-- \\ #13 Geo-fencing: (even)-->
-                        <div class="div-table-row even">
+                        <div id="geo_fencing" class="div-table-row even">
                             <div class="item-feature-list div-table-column col-sm-12 col-md-4 col-lg-4 text-right">
                                 <img style='max-width: 381px' class="image-features model-mobile-center" src='../images/technological/image-geo-fencing.png' />
                             </div>
@@ -1149,7 +1149,7 @@
                             </div>
                         </div>  
                         <!-- \\ #14 iCloud monitoring: (odd) -->
-                        <div class="div-table-row odd">
+                        <div id="icloud" class="div-table-row odd">
                             <div class="item-feature-list div-table-column col-lg-4 text-right">
                                 
                                 <div class='feature-item-info'>
@@ -1194,7 +1194,7 @@
                         </div>    
                             
                         <!-- \\ #15 Other features: (even) -->
-                        <div class="div-table-row even">
+                        <div id="other_features" class="div-table-row even">
                             <div class="item-feature-list div-table-column col-sm-12 col-md-4 col-lg-4 text-right">
                                 <img style='max-width: 167px' class="image-features model-mobile-center" src='../images/technological/image-sim-change.png' />
                             </div>

@@ -6357,6 +6357,9 @@ form.form-contact-us .box-captcha {
 
 /* ============= \\ breadcrumbs ================ */
 .breadcrumbs {}
+
+.breadcrumbs a:hover { text-decoration: none; }
+
 .breadcrumbs div.h4, 
 .breadcrumbs h3,
 .breadcrumbs h1.h3 {
@@ -6369,6 +6372,8 @@ form.form-contact-us .box-captcha {
     margin: 0px;
     color: #16a89e;
 }
+
+
 
 .store-full-link {
     display: block;
@@ -6383,7 +6388,14 @@ form.form-contact-us .box-captcha {
     vertical-align: middle;
     
 }
+
+.store-full-link i:before { 
+    margin-right: 0px !important;
+}
+
 .store-full-link > a {
     text-decoration: underline;
     color: #a1a4b6;
 }
+
+.btn-red-link { margin-top: 10px; }

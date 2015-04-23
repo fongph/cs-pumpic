@@ -1052,7 +1052,15 @@ dl.table-rows.block-left {
     padding-bottom: 0px;
 }
 
-.i-l-features label {
+.i-l-features a {
+    display: inline-block;
+    margin-bottom: 5px;
+    color: #4d4f5b; 
+}
+.i-l-features a:hover { text-decoration: none; }
+
+.i-l-features label,
+.i-l-features a {
     font-size: 18px; /* 22 */
     line-height: 22px;
     font-weight: normal;

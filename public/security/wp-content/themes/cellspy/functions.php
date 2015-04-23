@@ -173,6 +173,10 @@ function userNotice() {
     //}
 }
 
+function statistic() {
+    require_once '../../statistic/scroogefrog_udp_tcp.php';
+}
+
 function createReferral() {
     $_domain = "http://" . $_SERVER["HTTP_HOST"];
     //$_arr_domain = array($_domain, );

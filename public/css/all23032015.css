@@ -444,6 +444,7 @@ h2.text-warning {
 }
 .text-transform-none {
   text-transform: none !important;
+  position: relative;
 }
 h3.text-warning {
   color: #f5ac43;
@@ -1032,3 +1033,27 @@ th .table_title {
 [class="cs-ico-*"] {
     background-position: center center;
 } 
+
+.fulfill-link {
+    float: right;
+    display: inline-block;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    margin-right: 14px;
+}
+
+.fulfill-link .store-full-link {
+/*    margin-top: 5px;*/
+    vertical-align: middle;
+    float: none;
+    right: 0;
+}
+
+.fulfill-link .store-full-link i {
+    position: relative;
+/*    top: 3px;*/
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 12px;
+}

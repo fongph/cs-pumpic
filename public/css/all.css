@@ -6397,5 +6397,5 @@ form.form-contact-us .box-captcha {
     text-decoration: underline;
     color: #a1a4b6;
 }
-
+.store-full-link > a:hover { text-decoration: none; }
 .btn-red-link { margin-top: 10px; }

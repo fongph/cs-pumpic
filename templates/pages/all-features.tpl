@@ -256,7 +256,7 @@
                                                 <div class='box-features-header-item'>
                                                     <div>
                                                         <i class='i-header-feature-call'></i>
-                                                        <label>Calls</label>
+                                                        <a class="underline go_block_scroll" href="#calls">Calls</a>
                                                     </div>
                                                     <div class="bth-info">
                                                         <ul>
@@ -280,7 +280,7 @@
                                                 <div class='box-features-header-item'>
                                                     <div>
                                                         <i class='i-header-feature-location-history min-t5'></i>
-                                                        <label>Location & Geo-fences</label>
+                                                        <a class="underline go_block_scroll" href="#location">Location & Geo-fences</a>
                                                     </div>
                                                     <div class="bth-info">
                                                         <ul>
@@ -304,7 +304,7 @@
                                                 <div class='box-features-header-item'>
                                                     <div>
                                                         <i class='i-header-feature-chat min-t5'></i>
-                                                        <label>Online Chats</label>
+                                                        <a class="underline go_block_scroll" href="#social">Online Chats</a>
                                                     </div>
                                                     <div class="bth-info">
                                                         <ul>
@@ -328,7 +328,7 @@
                                                 <div class='box-features-header-item'>
                                                     <div>
                                                         <i class='i-header-feature-email'></i>
-                                                        <label>Email</label>
+                                                        <a class="underline go_block_scroll" href="#email">Email</a>
                                                     </div>
                                                     <div class="bth-info">
                                                         <ul>
@@ -352,7 +352,7 @@
                                                 <div class='box-features-header-item'>
                                                     <div>
                                                         <i class='i-header-feature-sms min-t5'></i>
-                                                        <label>SMS</label>
+                                                        <a class="underline go_block_scroll" href="#sms">SMS</a>
                                                     </div>
                                                     <div class="bth-info">
                                                         <ul>
@@ -376,7 +376,7 @@
                                                 <div class='box-features-header-item'>
                                                     <div>
                                                         <i class='i-header-feature-photos min-t5'></i>
-                                                        <label>Photos & Videos</label>
+                                                        <a class="underline go_block_scroll" href="#media">Photos & Videos</a>
                                                     </div>
                                                     <div class="bth-info">
                                                         <ul>
@@ -400,7 +400,7 @@
                                                 <div class='box-features-header-item'>
                                                     <div>
                                                         <i class='i-header-feature-browser min-t5'></i>
-                                                        <label>Browsers & Applications</label>
+                                                        <a class="underline go_block_scroll" href="#applications">Browsers & Applications</a>
                                                     </div>
                                                     <div class="bth-info">
                                                         <ul>
@@ -424,7 +424,7 @@
                                                 <div class='box-features-header-item'>
                                                     <div>
                                                         <i class='i-header-feature-calendar min-t5'></i>
-                                                        <label>Calendar & Contacts</label>
+                                                        <a class="underline go_block_scroll" href="#organiser">Calendar & Contacts</a>
                                                     </div>
                                                     <div class="bth-info">
                                                         <ul>

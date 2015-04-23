@@ -1389,8 +1389,14 @@ dl.table-rows.block-left {
 .box-features-header-item div > i {
     margin-left: -40px;
 }
-
-.box-features-header-item div > label {
+.box-features-header-item div > a {
+    display: inline-block;
+    margin-bottom: 5px;
+    color: #4d4f5b; 
+}
+.box-features-header-item div > a:hover { text-decoration: none; }
+.box-features-header-item div > label,
+.box-features-header-item div > a {
     font-size: 18px;
     font-weight: normal;
     line-height: 22px;

@@ -28,10 +28,16 @@
             title = "Mobile Monitoring App <br>for Jailbroken iOS devices"
             description = "Enjoy remote tracking of Apple devices. 
                             <br />Control iPhone use. Follow location and online activity."
-            os_versions = "icloud_v2"                
+                            
             promoBuyBlock = "no"
             planPackageBuy = "yes"
-            planPackageBuyUrl = '/icloud-iphone-without-jailbreak-monitoring.html#icloud-solution'
+            planPackageBuyUrl = '/iphone-with-jailbreak-monitoring.html#choose-subscription-plan'
+
+            TouchPad = 'yes'
+            Android = 'no'
+            Apple = 'yes'
+            AppleVersion = 'iOS 6.0 – 8.1.2'
+            InfoBlock = 'no'
         }
         {*
             iCloudSolution = 'yes'

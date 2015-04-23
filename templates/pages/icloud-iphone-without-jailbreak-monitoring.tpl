@@ -29,11 +29,15 @@
             title = "Apple Monitoring App  <br>iCloud Solution"
             description = "Enjoy multitask tracking without Jailbreak 
                             <br>Control iPhone use. Follow location and online activity"
-            os_versions = "os_v2"                
+                         
             promoBuyBlock = "no"
             iCloudSolution = 'no'
             planPackageBuy = "yes"
-            planPackageBuyUrl = '/iphone-with-jailbreak-monitoring.html#choose-subscription-plan'
+            planPackageBuyUrl = '/icloud-iphone-without-jailbreak-monitoring.html#icloud-solution'
+
+            TouchPad = 'yes'
+            Android = 'no'
+            InfoBlock = 'no'
         }
         
         {*

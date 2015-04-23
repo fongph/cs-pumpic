@@ -61,7 +61,35 @@
                                     </p>
                                     {/if}
 
-                                    {if $os_versions == 'os_v2' || $os_versions == 'icloud_v2' || $os_versions == 'os_v2_its'}
+                                    <ul class="compatibility compatibility-lg">
+                                        {if isset($Android)}
+                                            {if isset($AndroidVersion) && $Android == 'yes'}<li><i class="icon-android"></i> {$AndroidVersion}</li>{/if}
+                                        {else}    
+                                            <li><i class="icon-android"></i> (2.2 - 5.1)</li>
+                                        {/if} 
+                                        {if isset($Apple)}
+                                            {if isset($AppleVersion) && $Apple == 'yes'}<li><i class="icon-apple"></i> {$AppleVersion}</li>{/if}
+                                        {else}    
+                                            <li><i class="icon-apple"></i> (6.0 - 8.3)</li>
+                                        {/if} 
+                                        
+                                        {if isset($InfoBlock)}
+                                            {if isset($InfoBlockText) && $InfoBlock == 'yes'}
+                                                <li><i class="i-header-info"></i> <a href="/compatibility/">{$InfoBlockText}</a></li>
+                                            {/if}    
+                                        {else}    
+                                            <li>
+                                                <i class="i-header-info"></i> <a href="/compatibility/">platform compatibility</a>
+                                            </li>
+                                        {/if} 
+                                        {if isset($TouchPad) && $TouchPad == 'yes'}
+                                            <li><i class="icons ico-iphones"></i>iPhone</li>
+                                            <li><i class="icons ico-ipads"></i>iPad</li>
+                                            <li><i class="icons ico-ipods"></i>iPod Touch</li>
+                                        {/if}
+                                    </ul>
+                                    
+                                    {*if $os_versions == 'os_v2' || $os_versions == 'icloud_v2' || $os_versions == 'os_v2_its'}
                                         {if $os_versions == 'icloud_v2'} 
                                             <ul class="compatibility compatibility-lg">
                                                 <li><i class="icon-apple"></i> iOS 6.0 – 8.1.2</li>
@@ -86,7 +114,7 @@
                                             <i class="i-header-info"></i> <a href="/compatibility/">platform compatibility</a>
                                         </li>
                                     </ul>
-                                    {/if}
+                                    {/if*}
 
                                     {if 0 && isset($listText) && $listText != ""}
 

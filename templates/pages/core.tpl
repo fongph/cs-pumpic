@@ -366,7 +366,7 @@
         {* 
             Template: BLOCK BANNERS 
         *}
-        {include file='../includes/content/banners/index.tpl'}
+        {* include file='../includes/content/banners/index.tpl' *}
         
         <!-- TEMPLATES BANNERS -->
         {* Template: BLOCK BANNER #1 'PROMO-BUY' *}

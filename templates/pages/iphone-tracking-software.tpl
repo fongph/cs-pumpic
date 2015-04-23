@@ -28,10 +28,14 @@
             title = "Apple Mobile <br>Monitoring App"
             description = "Enjoy iOS multitask tracking with or without Jailbreak. 
                             <br>Track location. View calls and texts. Follow online activity."
-            os_versions = "os_v2_its"                
+            
             promoBuyBlock = "no"
             planPackageBuy = "no"
             
+            TouchPad = 'yes'
+            Android = 'no'
+            Apple = 'no'
+            InfoBlock = 'no'
         }
         
         <div class="light">
@@ -79,7 +83,7 @@
                                     </p>
                                   </li>
                                   <li href="#" class="list-group-item pc-pb65">
-                                    <a href="http://{$domain}/iphone-with-jailbreak-monitoring.html#choose-subscription-plan" class="list-group-item-link">Learn more <i class="icons ico-arrows"></i></a>
+                                    <a href="http://{$domain}/iphone-with-jailbreak-monitoring.html" class="list-group-item-link">Learn more <i class="icons ico-arrows"></i></a>
                                   </li>
                                 </ul>
                                 <div class="row-pricing-panel">
@@ -288,7 +292,7 @@
                                     </p>
                                   </li>
                                   <li href="#" class="list-group-item pc-pb65">
-                                    <a href="http://{$domain}/icloud-iphone-without-jailbreak-monitoring.html#icloud-solution" class="list-group-item-link">Learn more <i class="icons ico-arrows"></i></a>
+                                    <a href="http://{$domain}/icloud-iphone-without-jailbreak-monitoring.html" class="list-group-item-link">Learn more <i class="icons ico-arrows"></i></a>
                                   </li>
                                 </ul>
                                 <div class="row-pricing-panel">

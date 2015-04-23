@@ -179,6 +179,8 @@ span.text-success {
     border-radius: 5px 5px;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
+    width: 45px;
+    text-align: center;
 }
 .list-group-item .icon-cancel {
   font-size: 28px;

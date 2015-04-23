@@ -1,5 +1,16 @@
 <?php
 
+function shailan_redirect_404() {
+    global $wp_query;
+    $wp_query->is_404 = true;
+    wp_redirect(get_bloginfo('/404'), 404);
+    //exit;
+    //if ( $wp_query->is_404 ) {
+    //  wp_redirect( get_bloginfo('wpurl'), 301 );
+    //  exit;
+    //}
+}
+add_action('template_redirect', 'shailan_redirect_404', 1);
 
 // Add buttons to html editor
 add_action('admin_print_footer_scripts','eg_quicktags');

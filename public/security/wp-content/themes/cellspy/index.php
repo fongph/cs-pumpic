@@ -5,6 +5,11 @@
         <div class="row">
             <div class="col-lg-10 col-lg-offset-1">
                 <div class="row">
+                    
+                    <?php if(is_archive() || is_author() || is_comment_feed()) : ?>
+                        <?php shailan_redirect_404(); ?>
+                    <?php else: ?>
+                    
                     <h1 class="text-center mt10 mb20"><a class="blog-link" href="/security/">Kids' Phone Safety Blog</a></h1>
                     
                     
@@ -56,6 +61,8 @@
                             </div>
                         </div>
                     </div>
+                    
+                    <?php endif; ?>
                 </div> <!-- .row -->
             </div>
         </div> <!-- .row -->

@@ -11,7 +11,7 @@
 
 */
 ?>
-
+    <?php if ( !is_404() ) { ?>
         <div class="container">
             <div class="row">
                 <div class="col-lg-10 col-lg-offset-1">
@@ -26,7 +26,7 @@
                 </div>
             </div>
         </div>
-
+    <?php } ?>
 	<?php 
             include('../../templates/includes/blog-footer.tpl'); 
             wp_footer();

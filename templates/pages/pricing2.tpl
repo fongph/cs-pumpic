@@ -133,7 +133,7 @@
                                                                 <img src="{$img}/basic_pack.png">
                                                             </div>
                                                             <div class="wr_price_big">
-                                                                <span></span><div class="box-currence"><symbol attr-iso="usd">$</symbol><curr id="basic-price-per-month">11.33</curr></div><span> / month</span>
+                                                                <span></span><div class="box-currence"><symbol attr-iso="usd">$</symbol><curr id="basic-price-per-month">5.33{*11.33*}</curr></div><span> / month</span>
                                                             </div>
                                                             
                                                             {*<div class="price-main">
@@ -312,7 +312,7 @@
                                                                 <img src="{$img}/premium_pack.png">
                                                             </div>
                                                             <div class="wr_price_big">
-                                                                <span></span><div class="box-currence"><symbol attr-iso="usd">$</symbol><curr id="premium-price-per-month">14.66</curr></div><span>/ month</span>
+                                                                <span></span><div class="box-currence"><symbol attr-iso="usd">$</symbol><curr id="premium-price-per-month">6.99{*14.66*}</curr></div><span>/ month</span>
                                                             </div>
                                                             
                                                             

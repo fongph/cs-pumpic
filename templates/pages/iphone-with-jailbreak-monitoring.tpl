@@ -130,7 +130,7 @@
                                                                         <span></span>
                                                                         <div class="box-currence">
                                                                             <symbol attr-iso="usd">$</symbol>
-                                                                            <curr id="basic-price-per-month">13.33</curr>
+                                                                            <curr id="basic-price-per-month">11.33</curr>
                                                                         </div><span> / month</span>
                                                                     </div>
                                                                 </div>
@@ -165,7 +165,7 @@
                                                                                 <input class="data-price" data-target="#basic-price-per-month" data-cur="usd" 
                                                                                        data-price-usd="{$_item.price}" data-period="{$_item.period}" name="optionsRadios" id="optionsRadios{$_item.id}1" 
                                                                                        value="{$_item.id}" type="radio" 
-                                                                                       {if $_item.period == '3'} checked="checked" {/if} />
+                                                                                       {if $_item.period == '12'} checked="checked" {/if} />
                                                                                 <span class="sp">
                                                                                     <strong>
                                                                                         {$_item.period}
@@ -288,7 +288,7 @@
                                                                         <span></span>
                                                                         <div class="box-currence">
                                                                             <symbol attr-iso="usd">$</symbol>
-                                                                            <curr id="premium-price-per-month">16.66</curr>
+                                                                            <curr id="premium-price-per-month">14.66</curr>
                                                                         </div><span>/ month</span>
                                                                     </div>
                                                                 </div>
@@ -323,7 +323,7 @@
                                                                                 <input class="data-price" data-target="#premium-price-per-month" data-cur="usd" 
                                                                                        data-price-usd="{$_item.price}" data-period="{$_item.period}" name="optionsRadios" id="optionsRadios{$_item.id}2" 
                                                                                        value="{$_item.id}" type="radio" 
-                                                                                       {if $_item.period == '3'} checked="checked" {/if} />
+                                                                                       {if $_item.period == '12'} checked="checked" {/if} />
                                                                                 <span class="sp">
                                                                                     <strong>
                                                                                         {$_item.period}
@@ -492,7 +492,7 @@
                                                                     <span></span>
                                                                     <div class="box-currence">
                                                                         <symbol attr-iso="usd">$</symbol>
-                                                                        <curr id="basic-price-bottom-per-month">13.33</curr>
+                                                                        <curr id="basic-price-bottom-per-month">11.33</curr>
                                                                     </div><span> / month</span>
                                                                 </div>
                                                             </div>
@@ -527,7 +527,7 @@
                                                                             <input class="data-price" data-target="#basic-price-bottom-per-month" data-cur="usd" 
                                                                                    data-price-usd="{$_item.price}" data-period="{$_item.period}" name="optionsRadios" id="optionsRadios{$_item.id}3" 
                                                                                    value="{$_item.id}" type="radio" 
-                                                                                   {if $_item.period == '3'} checked="checked" {/if} />
+                                                                                   {if $_item.period == '12'} checked="checked" {/if} />
                                                                             <span class="sp">
                                                                                 <strong>
                                                                                     {$_item.period}
@@ -576,7 +576,7 @@
                                                                     <span></span>
                                                                     <div class="box-currence">
                                                                         <symbol attr-iso="usd">$</symbol>
-                                                                        <curr id="premium-price-bottom-per-month">16.66</curr>
+                                                                        <curr id="premium-price-bottom-per-month">14.66</curr>
                                                                     </div><span>/ month</span>
                                                                 </div>
                                                             </div>
@@ -610,7 +610,7 @@
                                                                         <label class="label_radio hover_label_radio r_off">
                                                                             <input class="data-price" data-target="#premium-price-bottom-per-month" data-cur="usd" 
                                                                                    data-price-usd="{$_item.price}" data-period="{$_item.period}" name="optionsRadios" id="optionsRadios{$_item.id}4" 
-                                                                                   value="{$_item.id}" type="radio" {if $_item.period == '3'} checked="checked" {/if} />
+                                                                                   value="{$_item.id}" type="radio" {if $_item.period == '12'} checked="checked" {/if} />
                                                                             <span class="sp">
                                                                                 <strong>
                                                                                     {$_item.period}

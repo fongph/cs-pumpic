@@ -1014,6 +1014,12 @@ th .table_title {
     display: inline-block;
 }
 
+@media only screen and (max-width: 700px) { 
+    .coming_soon_block ul li span {
+        display: inline;
+    }
+}
+
 .cs-ico-skype {
     background: url('../images/icons/coming_soon/i-skype.png') no-repeat;
 }
@@ -1056,4 +1062,10 @@ th .table_title {
     font-size: 12px;
     font-weight: 400;
     line-height: 12px;
+}
+
+#choose-subscription-plan .tb_pricing .table_title {
+    border-color: #e8e8e8;
+    border-style: solid;
+    border-width: 1px 1px 0;
 }

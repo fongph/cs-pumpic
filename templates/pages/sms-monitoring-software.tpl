@@ -55,8 +55,8 @@ View, block, and limit text messages remotely."
                                         <img src="/images/icons/icon-monitor-text-messages.png" alt="">
                                         <h3>Track text messages</h3>
                                         <ul class="feature_list">
-                                                <li>Monitor sent and received SMS</li>
-                                                <li>Follow iMessages</li>
+                                                <li>Monitor text content of <br />SMS, MMS, and iMessages</li>
+                                                {*<li>Follow iMessages</li>*}
                                                 <li>View even deleted texts</li>
                                         </ul>
                                         

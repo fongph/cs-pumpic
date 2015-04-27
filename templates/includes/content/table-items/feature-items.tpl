@@ -2,7 +2,7 @@
         
     <div class="tab col-item-3 col-md-item-3 col-sm-item-3">
         <ul>
-            <li><i class="i-features-sms"></i> <span onclick="window.location='http://{$domain}/mobile-sms-spy.html'">Monitor SMS</span></li>
+            <li><i class="i-features-sms"></i> <span onclick="window.location='http://{$domain}/mobile-sms-spy.html'">Monitor SMS and MMS</span></li>
             <li><i class="i-features-cell-history"></i> Monitor Calls History</li>
             <li><i class="i-features-calendar"></i> View Calendar</li>
             <li><i class="i-features-contacts"></i> View Contacts</li>
@@ -28,7 +28,7 @@
 
     <div class="tab col-item-3 col-md-item-3 col-sm-item-3">
         <ul>
-            <li><i class="i-features-monitor-viber-whatsapp"></i> Monitor Whatsapp</li>
+            <li><i class="i-features-monitor-viber-whatsapp"></i> Monitor WhatsApp</li>
             <li><i class="i-features-monitor-skype"></i> Monitor Skype</li>
             <li><i class="i-features-social"></i> Monitor Facebook IM</li>
             <li><i class="i-features-monitor-viber-whatsapp"></i> Monitor Viber</li>

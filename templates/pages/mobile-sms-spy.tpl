@@ -24,7 +24,7 @@
             imgVerticalAlign = "bottom"
             textAlign = "right"
             title = "SMS Monitoring App"
-            description = "Follow your kids’ SMS communication."
+            description = "Follow your kids’ text message communication.<br />Monitor text content of SMS, MMS, and iMessages."
             promoBuyBlock = "no"
             listText = "monitor SMS messages sent and received|control contacts, block misgiving senders|prevent children from bullies and online predators"
             planPackageBuy = "yes"    
@@ -159,9 +159,9 @@
                         <div class="col-sm-4 col-md-4 col-lg-4">
                                 <div class="feature">
                                         <img src="{$img}/icons/icon-mobile-secure.png" alt="cell phone monitoring">
-                                        <h3>Keep track of SMS</h3>
+                                        <h3>Keep track of text messages</h3>
                                         <ul class="feature_list">
-                                                <li>Follow sent and received messages</li>
+                                                <li>View SMS, iMessages, and MMS</li>
                                                 <li>View saved and deleted SMS</li>
                                                 <li>Control message contact list</li>
                                         </ul>

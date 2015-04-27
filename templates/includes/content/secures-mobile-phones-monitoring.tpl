@@ -7,9 +7,9 @@
                                         <img src="{$img}/icons/icon-mobile-secure.png" alt="">
                                         <h3>Monitor cell phone usage</h3>
                                         <ul class="feature_list">
-                                                <li>Track in and outbound calls</li>
+                                                <li>Track calls and text messages</li>
                                                 <li>Monitor, block, and limit SMS</li>
-                                                <li>Track contacts and calendar</li>
+                                                <li>View contacts and calendar</li>
                                         </ul>
                                 </div>
                         </div>

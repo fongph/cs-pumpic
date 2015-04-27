@@ -123,18 +123,18 @@
                             <div class="col-sm-3 col-md-3 col-lg-3">
                                 <ul class="list-features text-left">
                                     
-                                    <li class="i-l-features p-b40">
+                                    <li class="i-l-features p-b-item-1">
                                         <div class="row">
                                             <div class="col-sm-2 col-md-2 col-lg-2 padding-null">
                                                 <img class="model-center" src="{$img}/technological/header/icon/icon-sms.png" width="33px" height="29px" />
                                             </div>
                                             
                                             <div class="col-sm-10 col-md-10 col-lg-10">
-                                                <a class="underline go_block_scroll" href="#sms">SMS</a>
+                                                <a class="underline go_block_scroll" href="#sms">Texts</a>
                                                 <div class="bth-info">
                                                     <ul>
-                                                        <li>SMS and iMessage content</li>
-                                                        <li>block or limit outgoing texts</li>
+                                                        <li>SMS, MMS, iMessage text content</li>
+                                                        <li>block or limit messages</li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -142,7 +142,7 @@
                                     </li>
                                     
                                     
-                                    <li class="i-l-features p-b20">
+                                    <li class="i-l-features p-b-item-2">
                                         <div class="row">
                                             <div class="col-sm-2 col-md-2 col-lg-2 padding-null">
                                                 <img class="model-center" src="{$img}/technological/header/icon/icon-photos.png" width="29px" height="24px" />
@@ -161,7 +161,7 @@
                                         
                                     </li>
                                     
-                                    <li class="i-l-features p-b30">
+                                    <li class="i-l-features p-b-item-3">
                                         <div class="row">
                                             <div class="col-sm-2 col-md-2 col-lg-2 padding-null">
                                                 <img class="model-center" src="{$img}/technological/header/icon/icon-browser.png" width="31px" height="31px" />
@@ -659,12 +659,12 @@
                                     <ul>
                                         <li>
                                             <i class='i-list-features-sms only-mobile'></i>
-                                            <strong>SMS</strong>
+                                            <strong>SMS and MMS</strong>
                                             <i class='i-list-features-sms only-pc'></i>
                                         </li>
                                     </ul>
                                     <div class='block-info'>
-                                        <p>Monitor <b>sent</b>, <b>received</b>, and <b>deleted</b> SMS and iMessages. View data on both a sender and recipient. <b>Block</b> text messages by a <b>phone number</b>, <b>words</b>, or <b>phrases</b>. <b>Limit</b> a number of <b>texts sent daily</b>. </p>
+                                        <p>Monitor <b>sent</b>, <b>received</b>, and <b>deleted</b> text content of SMS, iMessages, and MMS. View data on both a sender and recipient. <b>Block</b> text messages by a <b>phone number</b>, <b>words</b>, or <b>phrases</b>. <b>Limit</b> a number of <b>texts sent daily</b>. </p>
                                         {*<ul>
                                             <li>Use Pumpic app to follow the entire call history of your</li>
                                             <li>child’s device. Protect your kids from mistrusted people.</li>
@@ -1164,12 +1164,14 @@
                                     <div class='block-info'>
                                         <p>Enjoy Pumpic application on iPhones, iPads and iPods Touch with no need to jailbreak the target device. Supported features:</p>
                                         <ul>
-                                            <li>SMS monitoring</li>
-                                            <li>Calls monitoring</li>
+                                            <li><span class="block ltr">Text message monitoring <br /><span class='text-normal'>&lpar;SMS, MMS, and iMessages&rpar;</span></span></li>
+                                            <li>Call monitoring</li>
                                             <li>Contacts list</li>
                                             <li>Browser history</li>
                                             <li>Bookmarks list</li>
                                             <li>Calendar events</li>
+                                            <li>WhatsApp</li>
+                                            <li>Skype</li>
                                         </ul>
                                         {*<ul>
                                             <li>Track every single email your kid sends or receives. Check</li>

@@ -1,7 +1,6 @@
-.border-top-bottom {
-    border-color: #e8e8e8 !important;
-    border-style: solid !important;
-    border-width: 1px 0px !important;
+/* header */
+.block-reviews table td[class*="col-"], .block-reviews table th[class*="col-"]{
+   float: left; 
 }
 /* pages*/
 .row-white {
@@ -14,7 +13,7 @@
 .icons {
   display: inline-block;
   vertical-align: middle;
-  background: url(../images/sprite-icons-update.png) no-repeat;
+  background: url(../../images/sprite-icons-update.png) no-repeat;
 }
 span.text-success {
   color: #16a89e !important;
@@ -87,14 +86,6 @@ span.text-success {
   display: block;
   margin: auto;
 }
-
-.ico-cloud-lock {
-  margin-right: 7px;
-  background: url('../images/icons/icon-icloud-lock.png') no-repeat;
-  width: 20px;
-  height: 24px;
-}
-
 .weight-normal {
   font-weight: 400;
 }
@@ -173,20 +164,6 @@ span.text-success {
   display: block;
   padding-bottom: 5px;
 }
-.list-group-item .block-number {
-    color: #fff;
-    font-size: 26px;
-    line-height: 26px;
-    font-weight: bold;
-    padding: 4px 7px;
-    margin-right: 8px;
-    background: #16a89e;
-    border-radius: 5px 5px;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    width: 45px;
-    text-align: center;
-}
 .list-group-item .icon-cancel {
   font-size: 28px;
   line-height: 1;
@@ -210,17 +187,11 @@ span.text-success {
   color: #16a89e;
   font-size: inherit;
 }
-
-.icloud-iphone-without-jailbreak-monitoring .dtable,
-.iphone-with-jailbreak-monitoring .dtable,
-.iphone-tracking-software .dtable {
+.dtable {
   display: table;
   width: 100%;
 }
-    
-.icloud-iphone-without-jailbreak-monitoring .dtable .wr_price_big,
-.iphone-with-jailbreak-monitoring .dtable .wr_price_big,
-.iphone-tracking-software .dtable .wr_price_big {
+.dtable .wr_price_big {
   position: static;
   margin: 0;
   height: auto;
@@ -228,10 +199,7 @@ span.text-success {
   float: none;
   min-width: 190px;
 }
-    
-.icloud-iphone-without-jailbreak-monitoring .dtable .wr_pack,
-.iphone-with-jailbreak-monitoring .dtable .wr_pack,
-.iphone-tracking-software .dtable .wr_pack {
+.dtable .wr_pack {
   position: static;
   margin: 0;
   height: auto;
@@ -241,18 +209,12 @@ span.text-success {
   margin-right: -30px;
   display: inline-block;
 }
-
-.icloud-iphone-without-jailbreak-monitoring .dtable-cell,
-.iphone-with-jailbreak-monitoring .dtable-cell,
-.iphone-tracking-software .dtable-cell {
+.dtable-cell {
   text-align: center;
   display: table-cell;
   vertical-align: middle;
 }
-
-.icloud-iphone-without-jailbreak-monitoring .dtable-text,
-.iphone-with-jailbreak-monitoring .dtable-text,
-.iphone-tracking-software .dtable-text {
+.dtable-text {
   display: inline-block;
   vertical-align: middle;
   color: #606060;
@@ -303,9 +265,7 @@ span.text-success {
     background: #fdfbf3;
 }
 .row-pricing-panel .priceb .list_price ul li .hover_label_radio {
-/*  max-width: 210px;*/
-  max-width: 230px;
-  width: 230px;
+  max-width: 210px;
   margin: auto;
 }
 .row-pricing-panel .priceb .list_price ul li .hover_label_radio:hover {
@@ -322,9 +282,7 @@ span.text-success {
     background: #fdfbf3;
 }
 .row-pricing-panel .pricep .list_price ul li .hover_label_radio {
-/*  max-width: 210px;*/
-  max-width: 230px;
-  width: 230px;
+  max-width: 210px;
   margin: auto;
 }
 .row-pricing-panel .pricep .list_price ul li .hover_label_radio:hover {
@@ -358,20 +316,18 @@ color: #cf4857;
   background: #3f041b;
   opacity: 0.12;
 }
-#block-promo-buy.block-promo-buy .btn-blue {
+#block-promo-buy.block-promo-buy .btn-default {
  background: #42778e;
 }
 
-.basic_wr .basic_fe .list_price-no-link li:hover, 
-.premium_wr .premium_fe .list_price-no-link li:hover {
+.basic_wr .basic_fe .list_price-no-link li:hover, .premium_wr .premium_fe .list_price-no-link li:hover {
   color: #4e4d5b;
   font-size: 16px;
   cursor: default;
   line-height: 1;
   height: auto;
 }
-.basic_wr .basic_fe .list_price-no-link li, 
-.premium_wr .premium_fe .list_price-no-link li {
+.basic_wr .basic_fe .list_price-no-link li, .premium_wr .premium_fe .list_price-no-link li {
   font-size: 16px;
   height: auto;
   line-height: 1;
@@ -381,19 +337,16 @@ color: #cf4857;
   padding-left: 30px;
   padding-right: 10px;
 }
-.basic_wr .basic_fe .list_price-no-link li i, 
-.premium_wr .premium_fe .list_price-no-link li i {
+.basic_wr .basic_fe .list_price-no-link li i, .premium_wr .premium_fe .list_price-no-link li i {
   position: absolute;
   left: 5px;
   top: 8px;
 }
-.basic_wr .basic_fe .list_price-no-link li:hover > span, 
-.premium_wr .premium_fe .list_price-no-link li:hover > span {
+.basic_wr .basic_fe .list_price-no-link li:hover > span, .premium_wr .premium_fe .list_price-no-link li:hover > span {
   color: #898989;
   cursor: default;
 }
-.basic_wr .basic_fe .list_price-no-link li > span, 
-.premium_wr .premium_fe .list_price-no-link li > span {
+.basic_wr .basic_fe .list_price-no-link li > span, .premium_wr .premium_fe .list_price-no-link li > span {
   display: block;
   margin-top: 5px;
   font-size: 13px;
@@ -449,7 +402,6 @@ h2.text-warning {
 }
 .text-transform-none {
   text-transform: none !important;
-  position: relative;
 }
 h3.text-warning {
   color: #f5ac43;
@@ -494,7 +446,7 @@ th .table_title {
 .ico-skype:before {
   content: '';
   display: inline-block;
-  background: url(../images/sprite-icons-update.png) no-repeat;
+  background: url(../../images/sprite-icons-update.png) no-repeat;
   background-position: 0 -100px;
   width: 23px;
   height: 23px;
@@ -502,7 +454,7 @@ th .table_title {
 .ico-notes:before {
   content: '';
   display: inline-block;
-  background: url(../images/sprite-icons-update.png) no-repeat;
+  background: url(../../images/sprite-icons-update.png) no-repeat;
   background-position: -25px -100px;
   width: 20px;
   height: 26px;
@@ -510,7 +462,7 @@ th .table_title {
 .ico-emails:before {
   content: '';
   display: inline-block;
-  background: url(../images/sprite-icons-update.png) no-repeat;
+  background: url(../../images/sprite-icons-update.png) no-repeat;
   background-position: -50px -100px;
   width: 24px;
   height: 17px;
@@ -518,11 +470,9 @@ th .table_title {
 .coming_soon_block ul li b{
   font-size: 19px;
   color: #4d4f5b;
-/*  min-width: 120px;*/
-  min-width: 95px;
+  min-width: 120px;
   font-weight: 400;
   display: inline-block;
-  text-align: right;
 }
 .border-none {
   border: none !important;
@@ -536,15 +486,11 @@ th .table_title {
   border-left: 1px solid #dddddd;
 }
 
-.icloud-iphone-without-jailbreak-monitoring .dtable-cell,
-.iphone-with-jailbreak-monitoring .dtable-cell,
-.iphone-tracking-software .dtable-cell {
+.dtable-cell {
   padding: 20px 0;
 
 }
-.icloud-iphone-without-jailbreak-monitoring .dtable,
-.iphone-with-jailbreak-monitoring .dtable,
-.iphone-tracking-software .dtable {
+.dtable {
   max-width: 280px;
   margin: auto;
 }
@@ -570,7 +516,7 @@ th .table_title {
   text-align: left;
 }*/
 /*body {
-  background: url(../images/test/page1.png) 50% 0 no-repeat;
+  background: url(../../images/test/page1.png) 50% 0 no-repeat;
   opacity: .7;
 }*/
 .column-relative {
@@ -579,7 +525,7 @@ th .table_title {
 @media (min-width: 700px) {
   .column-relative > .table_title {
     position: absolute;
-    top: 417px; /* 340 */
+    top: 340px;
     left: 0;
     width: 100%;
     background: #fff;
@@ -589,7 +535,6 @@ th .table_title {
   }
   
 }
-
 @media (max-width: 700px) {
   .column-relative > .table_title {
     display: none;
@@ -603,11 +548,9 @@ th .table_title {
   .basic_wr .basic_fe .list_price-no-link .feature_list, .premium_wr .premium_fe .list_price-no-link .feature_list {
     display: none;
   }
-
+  
 }
-.iphone-tracking-software .dtable-cell.text-center,
-.iphone-with-jailbreak-monitoring .dtable-cell.text-center, 
-.icloud-iphone-without-jailbreak-monitoring .dtable-cell.text-center {
+.dtable-cell.text-center {
   text-align: center !important;
 }
 .list-group-item .icon-cancel:before {
@@ -616,9 +559,7 @@ th .table_title {
 }
 @media only screen and (max-width: 400px) {
     
-    .icloud-iphone-without-jailbreak-monitoring .dtable-cell .wr_price_big span,
-    .iphone-with-jailbreak-monitoring .dtable-cell .wr_price_big span,
-    .iphone-tracking-software .dtable-cell .wr_price_big span {
+    .dtable-cell .wr_price_big span {
       display: inline-block;
       vertical-align: bottom;
     }
@@ -647,14 +588,13 @@ th .table_title {
       display: block;
     }*/
     .border-right-sm {
-      border-right: 1px solid #ddd;
+      border-right: 1px solid #dddddd;
     }
     .pricep.border-left {
       border-left: none;
     }
     .row-pricing-panel .basic_wr .priceb, .row-pricing-panel .premium_wr .pricep {
-      border-left: 1px solid #ddd;
-      border-right: 1px solid #ddd;
+      border-left: 1px solid #dddddd;
     }
     .list-group-box .list-group{
       float: none;
@@ -696,10 +636,7 @@ th .table_title {
 .hidden-media-box {
 
 }
-
-.icloud-iphone-without-jailbreak-monitoring .pricep .list_price ul li,
-.iphone-with-jailbreak-monitoring .pricep .list_price ul li,
-.iphone-tracking-software .pricep .list_price ul li {
+.pricep .list_price ul li {
   margin: auto;
 }
 @media only screen and (max-width: 700px) {
@@ -713,8 +650,7 @@ th .table_title {
   }
 }
 @media only screen and (max-width: 700px) {
-  .basic_wr .basic_fe .list_price-no-link > li > span, 
-  .premium_wr .premium_fe .list_price-no-link li > span {
+  .basic_wr .basic_fe .list_price-no-link > li > span, .premium_wr .premium_fe .list_price-no-link li > span {
     display: none;
   }
   /*.basic_fe_mobile_block .list_price-no-link > li > span, .basic_fe_mobile_block .list_price-no-link li > span {
@@ -767,7 +703,7 @@ th .table_title {
   }
   .padding-none-list-sm + .padding-none-list-sm {
     margin-top: -12px;
-}
+  }
 }
 /*.border-none{
   border: none;
@@ -777,19 +713,12 @@ th .table_title {
   padding: 0;
   margin-left: 0;
 }
-
-.iphone-tracking-software .priceb .list_price ul li,
-.iphone-with-jailbreak-monitoring .priceb .list_price ul li, 
-.icloud-iphone-without-jailbreak-monitoring .priceb .list_price ul li {
+.priceb .list_price ul li {
   margin: auto;
 }
 
 .row-pricing-panel .basic_wr + .premium_wr .premium_h {
   border-right: 1px solid #41a9a0;
-}
-/* ------------- \\ my settings ------------- */
-.none-uppercase {
-    text-transform: none !important;
 }
 
 
@@ -822,255 +751,6 @@ th .table_title {
     left: 20px;
   }
 }
-
 .table_header span:first-child {
   text-transform: none;
-}
-
-
-@media only screen and (max-width: 700px) {
-    .row-pricing-panel .priceb .list_price ul li:hover .label_radio::before,
-    .row-pricing-panel .priceb .list_price ul li:hover .label_check::before {
-        margin-top: -8px;
-    } 
-}
-
-/* ------------- \\ PLANS -------------- */
-.row-pricing-panel .basic_wr .priceb .list-plans, 
-.row-pricing-panel .premium_wr .pricep .list-plans {
-    clear: both;
-    width: 100%;
-    color: #606060;
-}
-
-.list-plans .item-plan {
-    padding: 0px;
-    float: none;
-    vertical-align: middle;
-}
-.list-plans .item-plan:first-child { 
-    margin-right: 0px;
-}
-.list-plans .item-plan:last-child { 
-    text-align: left; 
-}
-
-.list-plans i {
-    float: right;
-}
-
-.list-plans p {
-    margin-bottom: 0px;
-    font-size: 14px;
-    line-height: 1.1em;
-    font-weight: 300;
-    text-transform: none;
-    color: #606060;
-}
-
-.list-plans p.full { 
-    font-size: 15px;
-}
-
-[class^="i-price-plans-small-"], 
-[class*="i-price-plans-small-"],
-[class^="i-price-plans-big-"], 
-[class*="i-price-plans-big-"] {
-    display: block;
-}
-[class^="i-price-plans-big-"], 
-[class*="i-price-plans-big-"] {
-    position: relative;
-    width: 112px;
-    height: 35px;
-}
-
-.i-price-plans-big-basic {
-    background: url('../images/plans/basic_plan_packets.png') no-repeat;
-}
-
-.i-price-plans-big-premium {
-    background: url('../images/plans/premium_plan_packets.png') no-repeat;
-}
-
-[class^="i-price-plans-small-"], 
-[class*="i-price-plans-small-"] {
-    width: 47px;
-    height: 18px;
-}
-
-.i-price-plans-small-basic {
-    background: url('../images/plans/basic_plan_small_packets.png') no-repeat;
-}
-
-.i-price-plans-small-premium {
-    background: url('../images/plans/premium_plan_small_packets.png') no-repeat;
-}
-
-.text-red {
-    color: #cf4857;
-}
-
-.box-plans-package {
-    position: relative;
-/*    margin: 0px;*/
-}
- 
-.box-plans-package:first-child { border-left: 1px solid #d8f3f1; }
-.box-plans-package {
-    border-top: 1px solid #d8f3f1;
-    border-bottom: 1px solid #d8f3f1;
-/*    border-right: 1px solid #d8f3f1;*/
-}
-
-#list-plans-premium-package {
-    background: #fffefb;
-}
-#list-plans-basic-package {
-   background: #f9f7ee; 
-}
-#list-plans-basic-package,
-#list-plans-premium-package {
-    display: inline-block;
-    width: 100%;
-}
-#list-plans-basic-package > section,
-#list-plans-premium-package > section {
-    max-width: 280px;
-    margin: 0 auto;
-    padding: 6px;
-}
-
-#list-plans-premium-package > section.full {
-    max-width: 310px;
-    padding: 11px 6px 12px 6px;
-}
-
-#list-plans-premium-package > section.full .list-plans i {
-    float: none;
-}
-
-.box-small-package {
-    width: 47px;
-    padding-left: 5px;
-    vertical-align: middle;
-}
-
-.small_package {
-    position: relative;
-}
-
-.plan-header-premium {
-    display: inline-block;
-    background: url('../images/plans/header_premium.png') no-repeat;
-    width: 105px;
-    height: 31px;
-}
-
-.banner-header-package p {
-    margin-bottom: 0px;
-}
-.banner-header-package p:last-child {
-    font-size: 14px;
-    line-height: 1.1em;
-}
-
-.banner-header-package section:last-child {
-    
-}
-
-.banner-header-package button {
-    top: 10px;
-    position: relative;
-}
-
-@media only screen and (max-width: 992px) { 
-    .banner-header-package button { 
-        top: 0px;
-    }
-}
-
-
-.label_radio .sp,
-.label_radio .sp_price, 
-.box-small-package {
-    float: none !important;
-    display: inline-block !important;
-}
-.label_radio .sp {
-    width: 76px;
-}
-.label_radio .sp_price {
-/*    width: auto;*/
-    width: 70px;
-}
-
-/* ================== \\ Coming soon ================ */
-.coming-soon-icons {
-    margin: 0 15px !important;
-    display: inline-block;
-    width: 27px;
-    height: 26px;
-    position: relative;
-    top: 3px;
-}
-
-.coming_soon_block ul li span {
-    display: inline-block;
-}
-
-@media only screen and (max-width: 700px) { 
-    .coming_soon_block ul li span {
-        display: inline;
-    }
-}
-
-.cs-ico-skype {
-    background: url('../images/icons/coming_soon/i-skype.png') no-repeat;
-}
-
-.cs-ico-whatsapp {
-    background: url('../images/icons/coming_soon/i-whatsapp.png') no-repeat;
-}
-
-.cs-ico-photos {
-    background: url('../images/icons/coming_soon/i-phones.png') no-repeat;
-}
-
-.cs-ico-notes {
-    background: url('../images/icons/coming_soon/i-notes.png') no-repeat;
-}
-
-[class="cs-ico-*"] {
-    background-position: center center;
-} 
-
-.fulfill-link {
-    float: right;
-    display: inline-block;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    margin-right: 14px;
-}
-
-.fulfill-link .store-full-link {
-/*    margin-top: 5px;*/
-    vertical-align: middle;
-    float: none;
-    right: 0;
-}
-
-.fulfill-link .store-full-link i {
-    position: relative;
-/*    top: 3px;*/
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 12px;
-}
-
-#choose-subscription-plan .tb_pricing .table_title {
-    border-color: #e8e8e8;
-    border-style: solid;
-    border-width: 1px 1px 0;
 }

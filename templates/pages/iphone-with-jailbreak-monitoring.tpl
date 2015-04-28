@@ -111,7 +111,7 @@
                                         <tr>
                                             <th>
                                             <div class="column-relative">
-                                                <div class="table_title">
+                                                <div class="table_title border-top-bottom">
                                                     <h2 class="h2-sm">Features</h2>
                                                 </div>
                                                     <div class="basic_wr row-pricing-panel">
@@ -184,7 +184,7 @@
                                                                         </li>
                                                                         {/foreach}
                                                                     </ul>
-                                                                    <button class="btn btn-default ga-action-click" 
+                                                                    <button class="btn btn-default ga-action-submit" 
                                                                             ga-action ="click"
                                                                             ga-category="iphone-jailbreak"
                                                                             ga-label="buy basic"
@@ -195,7 +195,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="priceb border-none-sm">
-                                                        <div class="table_title show_basic_features">
+                                                        <div class="table_title show_basic_features border-top-bottom">
                                                             <h2 class="h2-sm">Features</h2>
                                                         </div>
                                                             <div class="basic_fe reset-list">
@@ -233,10 +233,10 @@
                                                         
                                                 
                                                         <div class="visible-sm-box">
-                                                            <div class="table_title">
+                                                            <div class="table_title border-top-bottom">
                                                                 <h2 class="text-success h2-sm">
-                                                                                                Additional Benefits
-                                                                                            </h2>
+                                                                    Additional Benefits
+                                                                </h2>
                                                             </div>
                                                                 <div class="basic_wr padding-none-list-sm">
                                                                     <div class="priceb border-none">
@@ -343,7 +343,7 @@
                                                                         </li>
                                                                         {/foreach}
                                                                     </ul>
-                                                                    <button class="btn btn-default ga-action-click" 
+                                                                    <button class="btn btn-default ga-action-submit" 
                                                                             ga-action ="click"
                                                                             ga-category="iphone-jailbreak"
                                                                             ga-label="buy-premium"
@@ -354,7 +354,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="pricep ">
-                                                        <div class="table_title show_basic_features">
+                                                        <div class="table_title show_basic_features border-top-bottom">
                                                             <h2 class="h2-sm">Features</h2>
                                                         </div>
                                                             <div class="premium_fe reset-list">
@@ -392,7 +392,7 @@
                                                         </div>
                                                                     
                                                         <div class="visible-sm-box">
-                                                            <div class="table_title">
+                                                            <div class="table_title border-top-bottom">
                                                                 <h2 class="text-success h2-sm">
                                                                                                 Additional Benefits
                                                                                             </h2>
@@ -435,7 +435,7 @@
                                         </tr>
                                         <tr>
                                             <th class="hidden-media-box">
-                                            <div class="table_title">
+                                            <div class="table_title border-top-bottom">
                                                 <h2 class="text-success h2-sm">Additional Benefits</h2>
                                             </div>
                                                 <div class="basic_wr row-pricing-panel">
@@ -473,7 +473,7 @@
                                         </tr>
                                         <tr>
                                             <th class="hidden-media-box">
-                                            <div class="table_title">
+                                            <div class="table_title border-top-bottom">
                                                 <h2 class="text-success h2-sm">Choose Subscription Plan</h2>
                                             </div>
                                                 <div class="basic_wr row-pricing-panel">
@@ -547,7 +547,7 @@
                                                                     </li>
                                                                     {/foreach}
                                                                 </ul>
-                                                                <button class="btn btn-default ga-action-click" 
+                                                                <button class="btn btn-default ga-action-submit" 
                                                                         ga-action ="click"
                                                                         ga-category="iphone-jailbreak"
                                                                         ga-label="buy-basic"
@@ -630,7 +630,7 @@
                                                                     </li>
                                                                     {/foreach}
                                                                 </ul>
-                                                                <button class="btn btn-default ga-action-click"
+                                                                <button class="btn btn-default ga-action-submit"
                                                                         ga-action ="click"
                                                                         ga-category="iphone-jailbreak"
                                                                         ga-label="buy-premium"

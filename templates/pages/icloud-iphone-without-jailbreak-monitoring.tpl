@@ -188,7 +188,7 @@
                                                                     </li>
                                                                     {/foreach}
                                                                 </ul>
-                                                                <button class="btn btn-default ga-action-click"
+                                                                <button class="btn btn-default ga-action-submit"
                                                                         ga-action ="click"
                                                                         ga-category="iphone-icloud"
                                                                         ga-label="buy-icloud"

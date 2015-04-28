@@ -205,6 +205,7 @@ form > table.pricing-second:after {
 .refund_10 .wr_refund{
     margin: 0 auto;
     color:#fff;
+    position: relative;
 }
 
 .refund_10 .wr_refund .day10{
@@ -212,6 +213,7 @@ form > table.pricing-second:after {
     font-size:22px;
     font-weight:bold;
     line-height: 36px;
+    position: relative;
 }
 .refund_10 .wr_refund .d_green{
     color:#2ebcb0;

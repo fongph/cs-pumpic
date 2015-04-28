@@ -140,7 +140,7 @@ class Compatibility {
             'Calls & SMS' => array(
                 'call_log' => 'Calls history',
                 'lock_device' => 'Calls blocking',
-                'sms_log' => 'SMS history',
+                'sms_log' => 'Text message history', // SMS history
                 'block_word' => 'SMS blocking',
                 'bad_word_sms'  => 'Block SMS by keywords',
                 'sms_daily_limiting' => 'SMS daily limiting',
@@ -188,6 +188,91 @@ class Compatibility {
 
             ),
         );
+        
+        // only this OS
+        $os_iOS = array(
+            'Other features' => array(
+                'icloud_solution'   => 'iCloud monitoring (jailbreak - free)',
+            ),    
+        );
+        
+        // add commit info 
+        $addInfo = array(
+            'ios' => [
+                'Calls & SMS' => array(
+                    // Calls blocking
+                    'lock_device' => '<strong>Jailbreak Needed</strong>',
+                    // SMS blocking
+                    'block_word' => '<strong>Jailbreak Needed</strong>',
+                    // SMS daily limiting
+                    'sms_daily_limiting' => '<strong>Jailbreak Needed</strong>',
+                    'bad_word_sms' => '<strong>Jailbreak Needed</strong>',
+                ),
+                'Apps Control' => array(
+                    // Applications list
+                    'application'  => '<strong>Jailbreak Needed</strong>',
+                    'app_list_block' => '<strong>Jailbreak Needed</strong>',
+                    // Keylogger
+                    'keylogger' => '<strong>Jailbreak Needed</strong>',
+                ),    
+                'Browsing' => array(
+                    // Websites blocking
+                    'blocking_sites' => '<strong>Jailbreak Needed</strong>',
+                ),
+                
+                'Social Media' => array( 
+                    'skype' => '<strong>Jailbreak Needed</strong>',
+                    'viber' => '<strong>Jailbreak Needed</strong>',
+                    'whatsapp' => '<strong>Jailbreak Needed</strong>',
+                    'facebook' => '<strong>Jailbreak Needed</strong>',
+                    'instagram' => '<strong>Jailbreak Needed</strong>',
+                    'kik'       => '<strong>Jailbreak Needed</strong>',
+                ),
+                
+                'Other features' => array(
+                    // Location history
+                    'location_history'  => '<strong>Jailbreak Needed</strong>',
+                    // Geo-fences
+                    'geo_fences'    => '<strong>Jailbreak Needed</strong>',
+                    // Photos
+                    'photos' => '<strong>Jailbreak Needed</strong>',
+                    // Emails
+                    'emails' => '<strong>Jailbreak Needed</strong>',
+                    // Videos
+                    'video' => '<strong>Jailbreak Needed</strong>',
+                    // SMS commands
+                    'sms_commands' => '<strong>Jailbreak Needed</strong>',
+                    'sim_change_notification' => '<strong>Jailbreak Needed</strong>',
+                ),    
+            ],
+            'android' => [
+                'Calls & SMS' => array(
+                    // SMS blocking
+                    'block_word' => '<strong>Root Required</strong>',
+                    // SMS daily limiting
+                    'sms_daily_limiting' => '<strong>Activated Keylogger Needed</strong>',
+                ),
+//                'Apps Control' => array( 
+//                    'keylogger' => '<strong>Activated Keylogger Needed</strong>',
+//                ),
+                'Social Media' => array( 
+                    'skype' => '<strong>Root Required</strong>',
+                    'viber' => '<strong>Root Required</strong>',
+                    'whatsapp' => '<strong>Root Required</strong>',
+                    'facebook' => '<strong>Root Required</strong>',
+                    'instagram' => '<strong>Root Required</strong>',
+                    'kik'       => '<strong>Root Required</strong>',
+                ),
+                'Other features' => array( 
+                    // Emails
+                    'emails' => '<strong>Root Required</strong>',
+                    // SMS commands
+                    // 'sms_commands' => '<strong>Not supported: on Android 4.4+.</strong>',
+                ),
+            ],
+        );
+        
+        
         $result = array(
             'name' => $data['longname'],
             'img' => $data['path_big'],
@@ -205,8 +290,16 @@ class Compatibility {
             $group = array();
             foreach ($features as $id => $name) {
                 if (isset($data[$id]) and !empty($data[$id])) {
+                    $_os = (isset($data['os'])) ? trim(strtolower($data['os']) ) : false;
+                    $name = (isset($os_iOS[$key][$id])) ? $os_iOS[$key][$id] : $name;
+                    
                     if (isset($data[$id . '_comment']) && strlen($data[$id . '_comment'])) {
-                        $group[$name] = $data[$id . '_comment'];
+                        $_add_info = '<br />';
+                        if($_os and isset($addInfo[ $_os ][$key][$id])) {
+                            $_add_info .= $addInfo[ $_os ][$key][$id];
+                        } 
+                        
+                        $group[$name] = $data[$id . '_comment'].$_add_info;
                     } else {
                         $group[$name] = false;
                     }

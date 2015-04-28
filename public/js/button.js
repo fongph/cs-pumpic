@@ -42,10 +42,19 @@ $(function() {
         
         if(_ga_action && _ga_category && _ga_label) {
             ga('send', 'event', _ga_category, _ga_action, _ga_label);
-            // alert( 'category = '+_ga_category + ' action = ' +  _ga_action + ' label =' + _ga_label );
         }
         
-        // return false;
+    });
+    
+    $('.ga-action-submit').parents('form').on('submit', function() {
+           var _b = $(this).find('.ga-action-submit'); 
+           var _ga_action = (_b.attr('ga-action')) ? _b.attr('ga-action') : false,
+               _ga_category = (_b.attr('ga-category')) ? _b.attr('ga-category') : false,
+               _ga_label = (_b.attr('ga-label')) ? $.trim( _b.attr('ga-label').toLowerCase() ).replace(/\s/g,'-') : false;
+        
+        if(_ga_action && _ga_category && _ga_label) {
+            ga('send', 'event', _ga_category, _ga_action, _ga_label);
+        }
     });
     
 });

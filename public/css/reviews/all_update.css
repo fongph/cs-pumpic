@@ -222,74 +222,76 @@ span.text-success {
   line-height: 1;
   text-transform: none;
 }
-.visual-images-left-lg {
+.block-reviews .visual-images-left-lg {
   margin-top: 30px;
 }
-.visual-text-lg p{
+.block-reviews .visual-text-lg p{
   margin: 22px 0;
 }
-.list-group-item-heading + small {
+.block-reviews .list-group-item-heading + small {
   display: block;
   font-size: 18px;
   color: inherit;
   padding-top: 35px;
   color: #16a89e;
 }
-.list-group-bg , .list-group-bg .list-group-item{
+.block-reviews .list-group-bg , .list-group-bg .list-group-item{
   background: #f8f8f8;
 }
-.compatibility-lg {
+.block-reviews .compatibility-lg {
   font-size: 13px;
 }
-.row-pricing-panel .basic_wr .priceb, .row-pricing-panel .premium_wr .pricep{
+.block-reviews .row-pricing-panel .basic_wr .priceb, .row-pricing-panel .premium_wr .pricep{
   padding-bottom: 10px;
 }
-.row-pricing-panel .basic_wr .basic_h {
+.block-reviews .row-pricing-panel .basic_wr .basic_h {
   font-size: 21px;
 }
-.row-pricing-panel .premium_wr .premium_h {
+.block-reviews .row-pricing-panel .premium_wr .premium_h {
   font-size: 21px;
   position: relative;
   z-index: 2;
 }
-.row-pricing-panel .wr_price_big span {
+.block-reviews .row-pricing-panel .wr_price_big span {
   font-weight: normal;
 }
-.row-pricing-panel .priceb .list_price ul li {
+.block-reviews .row-pricing-panel .priceb .list_price ul li {
   border-top: 1px solid transparent;
     border-bottom: 1px solid transparent;
 }
-.row-pricing-panel .priceb .list_price ul li:hover{
+.block-reviews .row-pricing-panel .priceb .list_price ul li:hover{
   border-top-color: #d8f3f1;
     border-bottom-color: #d8f3f1;
     background: #fdfbf3;
 }
-.row-pricing-panel .priceb .list_price ul li .hover_label_radio {
+.block-reviews .row-pricing-panel .priceb .list_price ul li .hover_label_radio {
   max-width: 210px;
   margin: auto;
 }
-.row-pricing-panel .priceb .list_price ul li .hover_label_radio:hover {
+.block-reviews .row-pricing-panel .priceb .list_price ul li .hover_label_radio:hover {
   border-color: transparent;
   background-color: transparent;
 }
-.row-pricing-panel .pricep .list_price ul li {
+.block-reviews .row-pricing-panel .pricep .list_price ul li {
   border-top: 1px solid transparent;
     border-bottom: 1px solid transparent;
 }
-.row-pricing-panel .pricep .list_price ul li:hover{
+.block-reviews .row-pricing-panel .pricep .list_price ul li:hover{
   border-top-color: #d8f3f1;
     border-bottom-color: #d8f3f1;
     background: #fdfbf3;
 }
-.row-pricing-panel .pricep .list_price ul li .hover_label_radio {
+
+.block-reviews .pricep .list_price ul li .hover_label_radio {
   max-width: 210px;
   margin: auto;
 }
-.row-pricing-panel .pricep .list_price ul li .hover_label_radio:hover {
+
+.block-reviews .row-pricing-panel .pricep .list_price ul li .hover_label_radio:hover {
   border-color: transparent;
   background-color: transparent;
 }
-.icloud-box .priceb .list_price ul li:hover {
+.block-reviews .icloud-box .priceb .list_price ul li:hover {
   background: #ebfcfa !important;
 }
 

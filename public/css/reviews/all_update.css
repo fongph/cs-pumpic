@@ -236,13 +236,15 @@
   padding-top: 35px;
   color: #16a89e;
 }
-.block-reviews .list-group-bg , .list-group-bg .list-group-item{
+.block-reviews .list-group-bg , 
+.block-reviews .list-group-bg .list-group-item{
   background: #f8f8f8;
 }
 .block-reviews .compatibility-lg {
   font-size: 13px;
 }
-.block-reviews .row-pricing-panel .basic_wr .priceb, .row-pricing-panel .premium_wr .pricep{
+.block-reviews .row-pricing-panel .basic_wr .priceb, 
+.block-reviews .row-pricing-panel .premium_wr .pricep{
   padding-bottom: 10px;
 }
 .block-reviews .row-pricing-panel .basic_wr .basic_h {
@@ -446,7 +448,9 @@ color: #cf4857;
 
 }
 
-.block-reviews .ico-skype, .ico-notes,.ico-emails {
+.block-reviews .ico-skype, 
+.block-reviews .ico-notes,
+.block-reviews .ico-emails {
   background: none;
   width: 40px;
   text-align: center;
@@ -552,7 +556,8 @@ color: #cf4857;
   .block-reviews .column-relative .premium_wr .list_price-no-link{
     padding-top: 0;
   }
-  .block-reviews .column-relative .basic_fe, .column-relative .premium_fe {
+  .block-reviews .column-relative .basic_fe, 
+  .block-reviews .column-relative .premium_fe {
     display: block !important;
   }
   .block-reviews .basic_wr .basic_fe .list_price-no-link .feature_list, 
@@ -625,7 +630,8 @@ color: #cf4857;
     }
 }
 
-.block-reviews .list-group .wr_price_big  curr, .dtable .wr_price_big  curr {
+.block-reviews .list-group .wr_price_big  curr, 
+.block-reviews .dtable .wr_price_big  curr {
   text-indent: -8px;
   display: inline-block;
 }
@@ -746,7 +752,8 @@ color: #cf4857;
 .block-reviews .border-left {
   border-left: 1px solid #dddddd;
 }
-.block-reviews .premium_wr , .basic_wr{
+.block-reviews .premium_wr , 
+.block-reviews .basic_wr{
   width: 50%;
 }
 .block-reviews .bg_bottom_images .visual-img-pc {

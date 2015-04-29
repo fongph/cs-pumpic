@@ -39,7 +39,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:boomersweb/cs-mail.git",
-                "reference": "2ff8ba6a7a73f4aa33b884c784833a925f564d42"
+                "reference": "2b22dec533f5ab71082f9edfe7cc1ebec43df405"
             },
             "require": {
                 "guzzlehttp/guzzle": "~5.0",
@@ -57,7 +57,7 @@
             "license": [
                 "MIT"
             ],
-            "time": "2015-04-16 15:08:03"
+            "time": "2015-04-16 15:30:48"
         },
         {
             "name": "boomers/cs-models",
@@ -65,7 +65,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:boomersweb/cs-models.git",
-                "reference": "e8d0e4d521b4847ace6999ec7033b5ad436b9a04"
+                "reference": "95578ae5455123daa584ab51ef2f87b8357fcbb7"
             },
             "require": {
                 "php": ">=5.4.0"
@@ -79,7 +79,7 @@
                     "CS\\Models\\": "src/"
                 }
             },
-            "time": "2015-04-09 13:11:00"
+            "time": "2015-04-28 13:33:17"
         },
         {
             "name": "boomers/cs-settings",
@@ -87,7 +87,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:boomersweb/cs-settings.git",
-                "reference": "e5c68af64f06ec7fb846cd4ebf7e11172e86e3f3"
+                "reference": "20e3b4f9cc033fc5c553f24f8919c8fd01dfa1e7"
             },
             "require": {
                 "php": ">=5.4.0"
@@ -98,7 +98,7 @@
                     "CS\\Settings\\": "src/"
                 }
             },
-            "time": "2015-04-15 11:14:28"
+            "time": "2015-04-29 09:35:37"
         },
         {
             "name": "boomers/cs-users",
@@ -106,7 +106,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:boomersweb/cs-users.git",
-                "reference": "addf0db1b783bafd0edb03894408bb377ccb5a01"
+                "reference": "885dfd1ad387a9e099c94b1d4d054982d61c0a31"
             },
             "require": {
                 "boomers/cs-mail": "dev-master",
@@ -126,7 +126,7 @@
             "license": [
                 "MIT"
             ],
-            "time": "2015-04-15 07:03:18"
+            "time": "2015-04-22 11:01:20"
         },
         {
             "name": "boomers/ip",
@@ -576,16 +576,16 @@
         },
         {
             "name": "phpspec/prophecy",
-            "version": "1.4.0",
+            "version": "v1.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpspec/prophecy.git",
-                "reference": "8724cd239f8ef4c046f55a3b18b4d91cc7f3e4c5"
+                "reference": "3132b1f44c7bf2ec4c7eb2d3cb78fdeca760d373"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpspec/prophecy/zipball/8724cd239f8ef4c046f55a3b18b4d91cc7f3e4c5",
-                "reference": "8724cd239f8ef4c046f55a3b18b4d91cc7f3e4c5",
+                "url": "https://api.github.com/repos/phpspec/prophecy/zipball/3132b1f44c7bf2ec4c7eb2d3cb78fdeca760d373",
+                "reference": "3132b1f44c7bf2ec4c7eb2d3cb78fdeca760d373",
                 "shasum": ""
             },
             "require": {
@@ -632,7 +632,7 @@
                 "spy",
                 "stub"
             ],
-            "time": "2015-03-27 19:31:25"
+            "time": "2015-04-27 22:15:08"
         },
         {
             "name": "phpunit/php-code-coverage",
@@ -882,16 +882,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "4.6.4",
+            "version": "4.6.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "163232991e652e6efed2f8470326fffa61e848e2"
+                "reference": "1c54dd1d9a782d7c8715bb3604cde7b6e23c2614"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/163232991e652e6efed2f8470326fffa61e848e2",
-                "reference": "163232991e652e6efed2f8470326fffa61e848e2",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/1c54dd1d9a782d7c8715bb3604cde7b6e23c2614",
+                "reference": "1c54dd1d9a782d7c8715bb3604cde7b6e23c2614",
                 "shasum": ""
             },
             "require": {
@@ -950,7 +950,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2015-04-11 05:23:21"
+            "time": "2015-04-29 05:04:43"
         },
         {
             "name": "phpunit/phpunit-mock-objects",

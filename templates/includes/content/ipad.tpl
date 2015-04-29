@@ -6,7 +6,7 @@
     <div class="container">
             <div class="row">
                     <div class="col-sm-5 col-md-5 col-lg-5 col-sm-offset-1 col-md-offset-1 col-lg-offset-1">
-                        {* if isset($sliders) && $sliders == 'true' *}
+                        {if !isset($paginations) || (isset($paginations) && $paginations == 'yes')}
                            <!-- slider TAB -->
                             <div id="boxSlider" class="padding-null boxes-slider {*col-s-sm-10 col-xs-sm-8 col-sm-11 col-md-12 col-lg-12*} model-center">
                                 <div class="blockSlider">
@@ -30,11 +30,11 @@
 
                             <!-- End --> 
                             
-                        {* else}
+                        {else}
                            <div class="text-center relative_box">
                                     <img src="{$img}/{$imgUrl}" alt="{$imgAlt}" class="ipad-pic">
                             </div>
-                        {/if *}  
+                        {/if}  
                     </div>
                     <div class="col-sm-5 col-md-5 col-lg-5">
                             <div class="ipad-text">

@@ -6121,7 +6121,8 @@ form.form-contact-us .box-captcha {
     position: absolute;
     padding: 10px 0px;
 /*    top: 378px;*/
-    top: 568px;
+/*    top: 568px;*/
+    top: 575px;
     width: 100%;
     z-index: 9;
     height: 55px;
@@ -6399,3 +6400,102 @@ form.form-contact-us .box-captcha {
 }
 .store-full-link > a:hover { text-decoration: none; }
 .btn-red-link { margin-top: 10px; }
+
+/* ============ // HOW IT WORK OLD ============== */
+.block-how-it-works-old .thumbs {
+    counter-reset: list2;
+    overflow: hidden;
+    padding: 0;
+}
+.block-how-it-works-old .thumbs > *:first-child .thumbnail .caption::after {
+    display: none;
+}
+.block-how-it-works-old .thumbs .thumbnail {
+    border: medium none;
+    margin: 20px 0 0;
+    padding: 0;
+    position: relative;
+}
+@media only screen and (max-width: 991px) {
+    .block-how-it-works-old .thumbs .thumbnail {
+        padding: 0;
+    }
+}
+.block-how-it-works-old .thumbs .thumbnail h3 {
+    color: #555;
+    font-size: 23px;
+    text-align: center;
+    vertical-align: bottom;
+}
+.block-how-it-works-old .thumbs .thumbnail h3::before {
+    border: 1px solid #16a89e;
+    color: #16a89e;
+    content: counter(list2, decimal) "";
+    counter-increment: list2;
+    display: inline-block;
+    font-family: "Open Sans",Helvetica,Arial,sans-serif;
+    font-size: 38px;
+    font-weight: 300;
+    height: 45px;
+    line-height: 45px;
+    margin-right: 10px;
+    text-align: center;
+    width: 45px;
+}
+@media only screen and (max-width: 480px) {
+    .block-how-it-works-old .thumbs .thumbnail h3::before {
+        display: block;
+        margin: auto;
+    }
+}
+.block-how-it-works-old .thumbs .thumbnail .img_thumb {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    height: 250px;
+    text-align: center;
+    display: block;
+}
+.block-how-it-works-old .thumbs .thumbnail .img_thumb img {
+    height: auto;
+}
+.block-how-it-works-old .thumbs .thumbnail .caption {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    padding: 9px 20px;
+    position: relative;
+}
+@media only screen and (max-width: 991px) {
+    .block-how-it-works-old .thumbs .thumbnail .caption {
+        text-align: center;
+    }
+}
+
+.block-how-it-works-old .thumbnail .caption {
+    height: auto;
+    overflow: visible;
+}
+
+.block-how-it-works-old .thumbs .thumbnail .caption::after {
+    background: url("../images/thumb_arrow_right.png") no-repeat scroll 0 50% rgba(0, 0, 0, 0);
+    content: "";
+    display: block;
+    height: 204px;
+    left: -80px;
+    margin-top: -86px;
+    position: absolute;
+    top: 50%;
+    width: 88px;
+    
+}
+
+@media only screen and (max-width: 991px) {
+    .block-how-it-works-old .thumbs .thumbnail .caption::after {
+        display: none;
+    }
+}
+@media only screen and (max-width: 1199px) {
+    .block-how-it-works-old .thumbs .thumbnail .caption::after {
+        background: url("../images/thumb_arrow_right.png") no-repeat scroll 100% 50% rgba(0, 0, 0, 0);
+        height: 205px;
+        left: -45px;
+        width: 50px;
+    }
+}

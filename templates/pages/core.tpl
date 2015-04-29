@@ -127,7 +127,7 @@
              title (string): название блока
             blockBg (string): Стиль блока ( dark / light ) *default: dark
         *}
-        {Content 
+        {* Content 
             title="Email using statistics"
             blockBg='light'}
 
@@ -140,7 +140,7 @@
                 </ul>
 
                 <p>The Internet is the easiest way for online predators, web swindlers and cyberbullies to contact your children. By making friendship with your kids via social media, it is not hard to find out their email addresses, which is the key to personal data and identity theft. Unfortunately, not many parents realize how important web protection is. These days’ online reality shifts the world around, making new rules for us. If you really want to secure your kids’ happiness, it is for you to consider these rules.</p>
-        {EndContent}
+        {EndContent *}
         
         {*
             Template: BLOCK PLANS
@@ -169,7 +169,8 @@
             Переменные:
                 blockBg (string): Стиль блока ( dark / light ) *default: dark
         *}
-        {include file='../includes/content/secures-mobile-phones-monitoring.tpl'}
+        {include file='../includes/content/secures-mobile-phones-monitoring.tpl'
+            blockBg='light'}
         
         {*
             Template: BLOCK FEATURES TEBLE
@@ -177,7 +178,7 @@
                 blockBg (string): Стиль блока ( dark / light ) *default: dark
         *}
         {include file='../includes/content/features-table.tpl' 
-                blockBg="light"
+                blockBg="dark"
         } 
         
         {*
@@ -191,7 +192,7 @@
                 description (string): описание блока.
         *}
         {include file='../includes/content/ipad.tpl' 
-                blockBg="dark"
+                blockBg="light"
                 imgUrl = "parental_control/ipad.png"
                 imgAlt = "Android"
                 title = "Easy-to-Use Control Panel"
@@ -212,6 +213,7 @@
         *}
         {include file='../includes/content/ipad.tpl' 
                 blockBg="dark"
+                paginations = 'no'
                 imgUrl = "icons/ipad_android.png"
                 imgAlt = "call monitoring"
                 title = "Calls Monitoring"
@@ -341,10 +343,54 @@
                style (string): стиль блока. ( static|images ) * default: static
         *}
         {include file='../includes/content/how-get-pumpic.tpl'
+            blockBg = 'light'
             title = ""
             style = "static"
         }        
-                
+          
+        {*
+            Template: BLOCK HOT-IT-WORK (old)
+        *}
+        <div class="dark block-how-it-works-old">
+            <div class="container">
+                <div class="row">
+                    <h2>HOW TOPSPY KIDS AND EMPLOYEES TRACKING SOLUTION WORKS</h2>
+                    <ul class="thumbs">
+                        <div class="col-sm-12 col-md-4">
+                            <div class="thumbnail">
+                                <span class="img_thumb"><img src="{$img}/thumb_1.png" height="216" width="360" alt=""></span>
+                                <div class="caption">
+                                    <h3>Ярлык эскиза</h3>
+                                    <p>Choose the subscription plan that meets your needs with the period you would like to purchase it for. On the checkout page - enter your valid billing information. The payment procedure is completely secure, privacy is kept this is 100% guaranteed. After payment is done - your account will be created automatically, check your inbox for the Welcome letter from TopSpy with log in details and instructions.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-4">
+                            <div class="thumbnail">
+                                <span class="img_thumb"><img src="{$img}/thumb_2.png" height="206" width="172" alt=""></span>
+                                <div class="caption">
+                                    <h3>Easy installation</h3>
+                                    <p>Choose the subscription plan that meets your needs with the period you would like to purchase it for. On the checkout page - enter your valid billing information. The payment procedure is completely secure, privacy is kept this is 100% guaranteed. After payment is done - your account will be created automatically, check your inbox for the Welcome letter from TopSpy with log in details and instructions.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-4">
+                            <div class="thumbnail">
+                                <span class="img_thumb"><img src="{$img}/thumb_3.png" height="216" width="360" alt=""></span>
+                                <div class="caption">
+                                    <h3>Reveal the truth</h3>
+                                    <p>Choose the subscription plan that meets your needs with the period you would like to purchase it for. On the checkout page - enter your valid billing information. The payment procedure is completely secure, privacy is kept this is 100% guaranteed. After payment is done - your account will be created automatically, check your inbox for the Welcome letter from TopSpy with log in details and instructions.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </ul>
+                   {* <div class="arrow_bottom">
+                        <span><a href="#"><i class="icon-angle-down"></i></a></span>
+                        <h3>INSTALLATION GUIDE</h3>
+                    </div>*}
+                </div>
+            </div>
+        </div>                
         {*
             Template: BLOCK WHY PUMPIC
             Переменные:

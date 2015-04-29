@@ -287,7 +287,7 @@
                                   </li>
                                   <li href="#" class="list-group-item">
                                     <p class="list-group-item-text">
-                                        <span class="title"><label class='block-number'>6</label> Monitoring features</span>
+                                        <span class="title"><label class='block-number'>8</label> Monitoring features</span>
                                         <span>Simple iCloud monitoring that does not require jailbreak of the target device.</span>
                                     </p>
                                   </li>

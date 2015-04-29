@@ -82,7 +82,7 @@
                                     <div class="content-thumb-ranking">
                                         <div class="img-ranking">
                                             <img src="{$img}/boxes/boxes_1_11.png" height="57" width="62" alt="">
-                                            <span>MobileForceField</span>
+                                            <span>Mobile <br />Force Field</span>
                                         </div>
                                         <div class="price-ranking">$31.95</div>
                                     </div>
@@ -101,7 +101,7 @@
                                     <div class="content-thumb-ranking">
                                         <div class="img-ranking">
                                             <img src="{$img}/boxes/boxes_1_10.png" height="57" width="62" alt="">
-                                            <span>MMGuardian</span>
+                                            <span>MM <br />Guardian</span>
                                         </div>
                                         <div class="price-ranking">$49.99</div>
                                     </div>
@@ -158,7 +158,7 @@
                                     <div class="content-thumb-ranking">
                                         <div class="img-ranking">
                                             <img src="{$img}/boxes/boxes_1_5.png" height="57" width="62" alt="">
-                                            <span>ScreentimeLabs</span>
+                                            <span>Screentime <br /> Labs </span>
                                         </div>
                                         <div class="price-ranking">$39.99</div>
                                     </div>
@@ -215,7 +215,7 @@
                                     <div class="content-thumb-ranking">
                                         <div class="img-ranking">
                                             <img src="{$img}/boxes/boxes_1_8.png" height="57" width="62" alt="">
-                                            <span>IgnoreNoMore</span>
+                                            <span>Ignore <br>No More</span>
                                         </div>
                                         <div class="price-ranking">$5.99</div>
                                     </div>

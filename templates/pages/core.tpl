@@ -55,7 +55,7 @@
         <!-- CONTENT -->
         <!-- CONTENT -->
         {*
-            Template: INFORMATION PROMO ( ОБЯЗАТЕЛЬНОЕ ПОЛЕ )
+            Template: INFORMATION PROMO ( ОБЯЗАТЕЛЬНОЕ ПОЛЕ ) * - DEFAULT
             Переменные:
                 imgUrl(url): ссылка на изображение. ( WxH: 437x325) * - не больше ОБЯЗАТЕЛЬНОЕ ПОЛЕ
                 imgAlt (string): короткий текст для изображения.
@@ -82,6 +82,114 @@
                            Track location. View calls and SMS. Follow online activity."
             promoBuyBlock = "no"
             planPackageBuy = "yes"
+        }
+        {*
+            Template: INFORMATION iCLOUD ( SUBMIT RED ) * - iCloud
+            Переменные:
+                imgUrl(url): ссылка на изображение. ( WxH: 437x325) * - не больше ОБЯЗАТЕЛЬНОЕ ПОЛЕ
+                imgAlt (string): короткий текст для изображения.
+                imgAlign (string): позиция изображения относительно текста. (left|center|right) *default: center
+                imgVerticalAlign (string): позиция изображения относительно высоты. ( bottom|middle ) *default: middle
+                textAlign (string): позиция текста. ( left|center|right ) *default: right
+                title (string): название блока.
+                description (string): описание баннера.
+                
+                promoBuyBlock (string): Включает кнопку PromoBuy (yes|no) *default: переменная не инцелезирована
+                planPackageBuy (sting): Включает банер пакетов (yes|no) *default: переменная не инцелезирована
+                
+        *}
+        {include file='../includes/content/info/info-promo.tpl'
+            imgUrl = "header_banners/icloud-iphone-without-jailbreak-monitoring.png"
+            imgAlt = "Apple iOS Mobile Monitoring App"
+            imgAlign = "right"
+            imgVerticalAlign = "bottom"
+            textAlign = "right"
+            title = "Apple Monitoring App  <br>iCloud Solution"
+            description = "Enjoy multitask tracking without Jailbreak 
+                            <br>Control iPhone use. Follow location and online activity"
+                         
+            promoBuyBlock = "no"
+            iCloudSolution = 'no'
+            planPackageBuy = "yes"
+            planPackageBuyUrl = '#icloud-solution'
+            planPackageBuyType = 'link'
+            planPackageBuyClass = 'go_block_scroll'
+
+            TouchPad = 'yes'
+            Android = 'no'
+            InfoBlock = 'no'
+        }
+        
+        {*
+            Template: INFORMATION iCLOUD ( SUBMIT BLUE ) * - iCloud
+            Переменные:
+                imgUrl(url): ссылка на изображение. ( WxH: 437x325) * - не больше ОБЯЗАТЕЛЬНОЕ ПОЛЕ
+                imgAlt (string): короткий текст для изображения.
+                imgAlign (string): позиция изображения относительно текста. (left|center|right) *default: center
+                imgVerticalAlign (string): позиция изображения относительно высоты. ( bottom|middle ) *default: middle
+                textAlign (string): позиция текста. ( left|center|right ) *default: right
+                title (string): название блока.
+                description (string): описание баннера.
+                
+                promoBuyBlock (string): Включает кнопку PromoBuy (yes|no) *default: переменная не инцелезирована
+                planPackageBuy (sting): Включает банер пакетов (yes|no) *default: переменная не инцелезирована
+                
+        *}
+        {include file='../includes/content/info/info-promo.tpl'
+            imgUrl = "header_banners/icloud-iphone-without-jailbreak-monitoring.png"
+            imgAlt = "Apple iOS Mobile Monitoring App"
+            imgAlign = "right"
+            imgVerticalAlign = "bottom"
+            textAlign = "right"
+            title = "Apple Monitoring App  <br>iCloud Solution"
+            description = "Enjoy multitask tracking without Jailbreak 
+                            <br>Control iPhone use. Follow location and online activity"
+                         
+            promoBuyBlock = "no"
+            iCloudSolution = 'yes'
+            planPackageBuy = "no"
+            planPackageBuyUrl = '#icloud-solution'
+            planPackageBuyType = 'link'
+            planPackageBuyClass = 'go_block_scroll'
+
+            TouchPad = 'no'
+            Android = 'no'
+            Apple = 'no'
+            InfoBlock = 'no'
+        }
+        
+        {*
+            Template: INFORMATION BLOCK ( NOT SUBMIT )
+            Переменные:
+                imgUrl(url): ссылка на изображение. ( WxH: 437x325) * - не больше ОБЯЗАТЕЛЬНОЕ ПОЛЕ
+                imgAlt (string): короткий текст для изображения.
+                imgAlign (string): позиция изображения относительно текста. (left|center|right) *default: center
+                imgVerticalAlign (string): позиция изображения относительно высоты. ( bottom|middle ) *default: middle
+                textAlign (string): позиция текста. ( left|center|right ) *default: right
+                title (string): название блока.
+                description (string): описание баннера.
+                
+                promoBuyBlock (string): Включает кнопку PromoBuy (yes|no) *default: переменная не инцелезирована
+                planPackageBuy (sting): Включает банер пакетов (yes|no) *default: переменная не инцелезирована
+                
+        *}
+        {include file='../includes/content/info/info-promo.tpl'
+            imgUrl = "header_banners/iphone-tracking-software.png"
+            imgAlt = "Apple iOS Mobile Monitoring App"
+            imgAlign = "right"
+            imgVerticalAlign = "bottom"
+            textAlign = "right"
+            title = "Apple Mobile <br>Monitoring App"
+            description = "Enjoy iOS multitask tracking with or without Jailbreak. 
+                            <br>Track location. View calls and texts. Follow online activity."
+            
+            promoBuyBlock = "no"
+            planPackageBuy = "no"
+            
+            TouchPad = 'yes'
+            Android = 'no'
+            Apple = 'no'
+            InfoBlock = 'no'
         }
         
         {*

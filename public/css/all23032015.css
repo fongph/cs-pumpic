@@ -706,11 +706,6 @@ th .table_title {
   .hidden-media-box {
     display: none;
   }
-  .coming_soon_block ul li span  {
-    padding-top: 3px;
-    overflow: hidden;
-    display: block;
-  }
 }
 @media only screen and (max-width: 700px) {
   .basic_wr .basic_fe .list_price-no-link > li > span, 
@@ -1016,13 +1011,22 @@ th .table_title {
 }
 
 .coming_soon_block ul li span {
-    display: inline-block;
+/*    display: inline-block;*/
+    display: inline;
+    text-align: left;
 }
 
 @media only screen and (max-width: 700px) { 
-    .coming_soon_block ul li span {
+    .coming_soon_block ul li span  {
+        padding-top: 3px;
+        overflow: hidden;
+        display: block;
+        text-align: center;
+      }
+    
+/*    .coming_soon_block ul li span {
         display: inline;
-    }
+    }*/
 }
 
 .cs-ico-skype {

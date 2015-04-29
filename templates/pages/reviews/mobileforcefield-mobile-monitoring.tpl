@@ -55,7 +55,7 @@
                             <h3 class="heading">MobileForceField</h3>
                             <div class="price-span">$31.95</div>
                             <a href="#" class="img-media">
-                                <img src="{$img}/boxes/boxes_4_1.png" height="219" width="242" alt="">
+                                <img src="{$img}/boxes/boxes_4_11.png" height="219" width="242" alt="">
                             </a>
                         </div>
                         <div class="media-body">

@@ -51,8 +51,8 @@
 									<h3 class="text-center">Refund Conditions{*REFUND CONDITIONS*}</h3>
 									<p class="text-justify">As a subject to these Refund Policy conditions, you may be eligible for a full refund within 10 days starting from the date of your purchase. You confirm that your reasons don’t contradict with the Refund Policy Conditions outlined below. No refund will be issued after the refund period is over.</p>
 									<p class="text-justify">The refund may be applied only to the primary Pumpic subscription purchase. If you own more than one subscription, no refund will be available. Your money may be refunded only once. If you buy another Pumpic subscription at later time, this will not be a subject to any refund.
-Any purchase of Pumpic software at a discount price is non-refundable. No refund is issued if the customer refuses to update Pumpic version, which should follow any upgrade on the target phone.</p>
-<p class="text-justify">Please note that promo subscriptions, which come in addition to a plan you purchase, are not subjects to a refund. If everything is fine with a subscription that you have bought, your order will not be refunded regardless any issues with subscriptions that you have gotten for free.</p>
+Any purchase of Pumpic software at a discount price is non-refundable. No refund is issued if the customer refuses to update Pumpic version, which should follow any upgrade on the target phone.
+</p>
 									<h3 class="text-center">General{*GENERAL*}</h3>
 									<p class="text-justify">If you are not fully satisfied with your purchase of Pumpic software, you can be eligible for a full refund within 10 days starting from the date of its purchase according to the Refund Conditions outlined below. However, we are sure that most refunds can be avoided if you request professional help from our customer support.</p>
 									<p class="note">

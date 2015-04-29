@@ -127,9 +127,9 @@ body {
 .visual-images-right-lg img {
 	float: right;
 }
-.visual-text-xlg .title {
+/*.block-reviews .visual-text-xlg .title {
 	font-size: 41px;
-}
+}*/
 .bg_bottom_images .visual-text-xlg {
   padding: 55px 28px 98px;
 }

@@ -10,18 +10,20 @@
                 <table id='block-table-header'>
                     <tr>
                         {if in_array('left', $position)}
-                        <td class='col-s-sm-6 col-xs-sm-5 col-md-5 col-lg-6 {if in_array('bottom', $position)}vertical-aligh-bottom{/if}'>
+                        <td class='{if isset($Review)}col-s-sm-6 col-xs-sm-5 col-md-4 col-lg-4 {else}col-s-sm-6 col-xs-sm-5 col-md-5 col-lg-6{/if} {if in_array('bottom', $position)}vertical-aligh-bottom{/if}'>
                             
-                            <div class="visual-images-left">
-                                <img src="{$img}/{$imgUrl}" alt="{$imgAlt}" class="visual-img-pc">   
+                            <div class="visual-images-left {if isset($Review)}visual-images-left-lg{/if}">
+                                <img {if isset($imgWidth)}width='{$imgWidth}'{/if}
+                                     {if isset($imgHeight)}height='{$imgHeight}'{/if}                       
+                                    src="{$img}/{$imgUrl}" alt="{$imgAlt}" class="visual-img-pc">   
                             </div> 
                              
                         </td>
                         {/if}
-                        <td class="col-s-sm-12 col-xs-sm-12 {if $imgAlign == "center"} col-md-12 col-lg-12  {else}col-md-6 col-lg-6{/if}">
+                        <td class="col-s-sm-12 col-xs-sm-12 {if $imgAlign == "center"} col-md-12 col-lg-12  {else}{if isset($Review)}col-md-8 col-lg-8{else}col-md-6 col-lg-6{/if}{/if}">
                             
                             <div>
-                                <div class="visual-text {if $textAlign}block-text-{$textAlign}{else}block-text-right{/if}">
+                                <div class="visual-text {if isset($Review)}visual-text-lg visual-text-xlg{else}{if $textAlign}block-text-{$textAlign}{else}block-text-right{/if}{/if}">
                                     <h1 class="title">{if $title} {$title} {else}Android Parental Control App{/if}</h1>
                                     
                                     {if isset($flagName)}
@@ -61,6 +63,7 @@
                                     </p>
                                     {/if}
 
+                                    {if !isset($infoBlockMobile) || (isset($infoBlockMobile) && $infoBlockMobile == 'yes')}
                                     <ul class="compatibility compatibility-lg">
                                         {if isset($Android)}
                                             {if isset($AndroidVersion) && $Android == 'yes'}<li><i class="icon-android"></i> {$AndroidVersion}</li>{/if}
@@ -88,6 +91,7 @@
                                             <li><i class="icons ico-ipods"></i>iPod Touch</li>
                                         {/if}
                                     </ul>
+                                    {/if}
                                     
                                     {*if $os_versions == 'os_v2' || $os_versions == 'icloud_v2' || $os_versions == 'os_v2_its'}
                                         {if $os_versions == 'icloud_v2'} 

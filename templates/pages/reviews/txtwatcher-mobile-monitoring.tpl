@@ -52,7 +52,7 @@
                     <div class="media">
                         <div class="pull-left">
                             <h3 class="heading">Txtwatcher</h3>
-                            <div class="price-span">$89.97</div>
+                            <div class="price-span">$65.88</div>
                             <a href="#" class="img-media">
                                 <img src="{$img}/boxes/boxes_4_1.png" height="219" width="242" alt="">
                             </a>
@@ -71,7 +71,7 @@
                                 With GPS tracking and a host of security features, you will feel secure letting your child use a smartphone protected by PhoneSheriff.
                             </p>
                             <div class="media-btn">
-                                <a href="#" class="btn btn-sm btn-success">Next Review &rarr;</a>
+                                <a href="/reviews/ignorenomore-mobile-monitoring.html" class="btn btn-sm btn-success">Next Review &rarr;</a>
                             </div>
                         </div>
                     </div>

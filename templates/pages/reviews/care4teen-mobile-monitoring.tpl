@@ -2,8 +2,8 @@
 
 {include file='../../includes/main/main-header.tpl'
     robots="yes" 
-    title="ParentKit parental control software review"
-    description="Read editor's reviews, view a features comparison table, and learn more about ParentKit mobile monitoring solution."
+    title="Care4Teen parental control software review"
+    description="Read editor's reviews, view a features comparison table, and learn more about Care4Teen mobile monitoring solution."
 }    
     
 <body>
@@ -46,16 +46,15 @@
         }
         
         
-        
         <div class="lighten">
             <div class="container">
                 <div class="box-state">
                     <div class="media">
                         <div class="pull-left">
-                            <h3 class="heading">ParentKit</h3>
-                            <div class="price-span">$39.99</div>
+                            <h3 class="heading">Care4Teen</h3>
+                            <div class="price-span">Free</div>
                             <a href="#" class="img-media">
-                                <img src="{$img}/boxes/boxes_4_6.png" height="219" width="242" alt="">
+                                <img src="{$img}/boxes/boxes_4_12.png" height="219" width="242" alt="">
                             </a>
                         </div>
                         <div class="media-body">
@@ -72,7 +71,7 @@
                                 With GPS tracking and a host of security features, you will feel secure letting your child use a smartphone protected by PhoneSheriff.
                             </p>
                             <div class="media-btn">
-                                <a href="/reviews/screentime-labs-mobile-monitoring.html" class="btn btn-sm btn-success">Next Review &rarr;</a>
+                                <a href="/reviews/pumpic.html" class="btn btn-sm btn-success">Next Review &rarr;</a>
                             </div>
                         </div>
                     </div>
@@ -106,7 +105,7 @@
                 </div>
             </div>
         </div>
-                                
+        
         <!-- END CONTENT -->    
         {include file='../../includes/content/banners/index.tpl'}
         <!-- END CONTENT -->    

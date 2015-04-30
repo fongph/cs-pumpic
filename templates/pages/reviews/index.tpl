@@ -27,9 +27,9 @@
             imgAlign = "left bottom"
             imgVerticalAlign = "bottom"
             textAlign = "left"
-            title = "Best parental software, <br> mobile tracking reviews, etc"
-            description = "Keep your children safe and secured with Pumpic.
-                           <br> Track location. View calls and SMS. Follow online activity."
+            title = "Best of Parental Controls <br>Mobile Monitoring App Reviews"
+            description = "Secure your family. Ensure your children’s safety.
+                           <br>Track calls, text messages, and location. Follow online activity."
             Review = "yes"   
             imgWidth = "285"
             imgHeight = "300"
@@ -65,11 +65,11 @@
                                             <img src="{$img}/boxes/boxes_1_2.png" height="57" width="62" alt="">
                                             <span>Pumpic</span>
                                         </div>
-                                        <div class="price-ranking">$39.99</div>
+                                        <div class="price-ranking">$5.33</div>
                                     </div>
                                     <div class="footer-thumb-ranking">
                                         <div class="btn-ranking">
-                                            <a href="#" class="btn btn-info">Read review</a>
+                                            <a href="/reviews/pumpic.html" class="btn btn-info">Read review</a>
                                         </div>
                                     </div>
                                 </div>
@@ -126,7 +126,7 @@
                                     </div>
                                     <div class="footer-thumb-ranking">
                                         <div class="btn-ranking">
-                                            <a href="#" class="btn btn-info">Read review</a>
+                                            <a href="/reviews/fumano-mobile-monitoring.html" class="btn btn-info">Read review</a>
                                         </div>
                                     </div>
                                 </div>
@@ -145,7 +145,7 @@
                                     </div>
                                     <div class="footer-thumb-ranking">
                                         <div class="btn-ranking">
-                                            <a href="#" class="btn btn-info">Read review</a>
+                                            <a href="/reviews/parentkit-mobile-monitoring.html" class="btn btn-info">Read review</a>
                                         </div>
                                     </div>
                                 </div>
@@ -164,7 +164,7 @@
                                     </div>
                                     <div class="footer-thumb-ranking">
                                         <div class="btn-ranking">
-                                            <a href="#" class="btn btn-info">Read review</a>
+                                            <a href="/reviews/screentime-labs-mobile-monitoring.html" class="btn btn-info">Read review</a>
                                         </div>
                                     </div>
                                 </div>
@@ -183,7 +183,7 @@
                                     </div>
                                     <div class="footer-thumb-ranking">
                                         <div class="btn-ranking">
-                                            <a href="#" class="btn btn-info">Read review</a>
+                                            <a href="/reviews/safetyweb-mobile-monitoring.html" class="btn btn-info">Read review</a>
                                         </div>
                                     </div>
                                 </div>
@@ -202,7 +202,7 @@
                                     </div>
                                     <div class="footer-thumb-ranking">
                                         <div class="btn-ranking">
-                                            <a href="#" class="btn btn-info">Read review</a>
+                                            <a href="/reviews/txtwatcher-mobile-monitoring.html" class="btn btn-info">Read review</a>
                                         </div>
                                     </div>
                                 </div>
@@ -221,7 +221,7 @@
                                     </div>
                                     <div class="footer-thumb-ranking">
                                         <div class="btn-ranking">
-                                            <a href="#" class="btn btn-info">Read review</a>
+                                            <a href="/reviews/ignorenomore-mobile-monitoring.html" class="btn btn-info">Read review</a>
                                         </div>
                                     </div>
                                 </div>
@@ -240,7 +240,7 @@
                                     </div>
                                     <div class="footer-thumb-ranking">
                                         <div class="btn-ranking">
-                                            <a href="#" class="btn btn-info">Read review</a>
+                                            <a href="/reviews/care4teen-mobile-monitoring.html" class="btn btn-info">Read review</a>
                                         </div>
                                     </div>
                                 </div>
@@ -250,7 +250,7 @@
                     <table class="table-vertical-striped">
                         <thead>
                             <tr>
-                                <th class="table-vertical-striped-title">Reporting & Logging</th>
+                                <th class="table-vertical-striped-title">Reports & Logs{*Reporting & Logging*}</th>
                                 <th class="boxes-img-heading">
                                     <div class="boxes-img">
                                         <span>#1</span>
@@ -331,7 +331,7 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <span class="title-table">Texts</span>
+                                    <span class="title-table">Text Messages{*Texts*}</span>
                                 </td>
                                 <td><i class="icon-ok"></i></td>
                                 <td><i class="icon-ok"></i></td>
@@ -361,7 +361,7 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <span class="title-table">GPS Location & Fencing</span>
+                                    <span class="title-table">GPS Location & Geo-fencing</span>
                                 </td>
                                 <td><i class="icon-ok"></i></td>
                                 <td><i class="icon-ok"></i></td>
@@ -376,7 +376,7 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <span class="title-table">Photos/Videos</span>
+                                    <span class="title-table">Photos & Videos</span>
                                 </td>
                                 <td><i class="icon-ok"></i></td>
                                 <td><i class="icon-ok"></i></td>
@@ -406,7 +406,7 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <span class="title-table">Contacts Details</span>
+                                    <span class="title-table">Contact Details</span>
                                 </td>
                                 <td><i class="icon-ok"></i></td>
                                 <td><i class="icon-ok"></i></td>
@@ -451,7 +451,7 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <span class="title-table">Applications List</span>
+                                    <span class="title-table">Application List</span>
                                 </td>
                                 <td><i class="icon-ok"></i></td>
                                 <td><i class="icon-ok"></i></td>
@@ -496,7 +496,7 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <span class="title-table">Facebook Messages</span>
+                                    <span class="title-table">Facebook Messenger</span>
                                 </td>
                                 <td><i class="icon-ok"></i></td>
                                 <td><i class="icon-cancel"></i></td>
@@ -526,7 +526,7 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <span class="title-table">Whatsapp</span>
+                                    <span class="title-table">WhatsApp</span>
                                 </td>
                                 <td><i class="icon-ok"></i></td>
                                 <td><i class="icon-cancel"></i></td>
@@ -595,7 +595,7 @@
                         <tbody>
                             <tr>
                                 <td>
-                                    <span class="title-table">Applications Limiting</span>
+                                    <span class="title-table">Application Limiting</span>
                                 </td>
                                 <td><i class="icon-ok"></i></td>
                                 <td><i class="icon-cancel"></i></td>
@@ -610,7 +610,7 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <span class="title-table">Applications Blocking</span>
+                                    <span class="title-table">Application Blocking</span>
                                 </td>
                                 <td><i class="icon-ok"></i></td>
                                 <td><i class="icon-ok"></i></td>
@@ -625,7 +625,7 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <span class="title-table">Websites Blocking</span>
+                                    <span class="title-table">Website Blocking</span>
                                 </td>
                                 <td><i class="icon-ok"></i></td>
                                 <td><i class="icon-ok"></i></td>
@@ -878,7 +878,7 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <span class="title-table">Texts</span>
+                                        <span class="title-table">Text Messages{*Texts*}</span>
                                     </td>
                                     <td><i class="icon-ok"></i></td>
                                 </tr>
@@ -890,13 +890,13 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <span class="title-table">GPS Location & Fencing</span>
+                                        <span class="title-table">GPS Location & Geo-fencing</span>
                                     </td>
                                     <td><i class="icon-ok"></i></td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <span class="title-table">Photos/Videos</span>
+                                        <span class="title-table">Photos & Videos</span>
                                     </td>
                                     <td><i class="icon-ok"></i></td>
                                 </tr>
@@ -908,7 +908,7 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <span class="title-table">Contacts Details</span>
+                                        <span class="title-table">Contact Details</span>
                                     </td>
                                     <td><i class="icon-ok"></i></td>
                                 </tr>
@@ -926,7 +926,7 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <span class="title-table">Applications List</span>
+                                        <span class="title-table">Application List</span>
                                     </td>
                                     <td><i class="icon-ok"></i></td>
                                 </tr>
@@ -944,7 +944,7 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <span class="title-table">Facebook Messages</span>
+                                        <span class="title-table">Facebook Messenger</span>
                                     </td>
                                     <td><i class="icon-ok"></i></td>
                                 </tr>
@@ -956,7 +956,7 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <span class="title-table">Whatsapp</span>
+                                        <span class="title-table">WhatsApp</span>
                                     </td>
                                     <td><i class="icon-ok"></i></td>
                                 </tr>
@@ -980,19 +980,19 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <span class="title-table">Applications Limiting</span>
+                                        <span class="title-table">Application Limiting</span>
                                     </td>
                                     <td><i class="icon-ok"></i></td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <span class="title-table">Applications Blocking</span>
+                                        <span class="title-table">Application Blocking</span>
                                     </td>
                                     <td><i class="icon-ok"></i></td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <span class="title-table">Websites Blocking</span>
+                                        <span class="title-table">Website Blocking</span>
                                     </td>
                                     <td><i class="icon-ok"></i></td>
                                 </tr>
@@ -1090,7 +1090,7 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <span class="title-table">Texts</span>
+                                        <span class="title-table">Text Messages{*Texts*}</span>
                                     </td>
                                     <td><i class="icon-ok"></i></td>
                                 </tr>
@@ -1102,13 +1102,13 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <span class="title-table">GPS Location & Fencing</span>
+                                        <span class="title-table">GPS Location & Geo-fencing</span>
                                     </td>
                                     <td><i class="icon-ok"></i></td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <span class="title-table">Photos/Videos</span>
+                                        <span class="title-table">Photos & Videos</span>
                                     </td>
                                     <td><i class="icon-ok"></i></td>
                                 </tr>
@@ -1120,7 +1120,7 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <span class="title-table">Contacts Details</span>
+                                        <span class="title-table">Contact Details</span>
                                     </td>
                                     <td><i class="icon-ok"></i></td>
                                 </tr>
@@ -1138,7 +1138,7 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <span class="title-table">Applications List</span>
+                                        <span class="title-table">Application List</span>
                                     </td>
                                     <td><i class="icon-ok"></i></td>
                                 </tr>
@@ -1156,7 +1156,7 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <span class="title-table">Facebook Messages</span>
+                                        <span class="title-table">Facebook Messenger</span>
                                     </td>
                                     <td><i class="icon-cancel"></i></td>
                                 </tr>
@@ -1168,7 +1168,7 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <span class="title-table">Whatsapp</span>
+                                        <span class="title-table">WhatsApp</span>
                                     </td>
                                     <td><i class="icon-cancel"></i></td>
                                 </tr>
@@ -1192,19 +1192,19 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <span class="title-table">Applications Limiting</span>
+                                        <span class="title-table">Application Limiting</span>
                                     </td>
                                     <td><i class="icon-cancel"></i></td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <span class="title-table">Applications Blocking</span>
+                                        <span class="title-table">Application Blocking</span>
                                     </td>
                                     <td><i class="icon-ok"></i></td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <span class="title-table">Websites Blocking</span>
+                                        <span class="title-table">Website Blocking</span>
                                     </td>
                                     <td><i class="icon-ok"></i></td>
                                 </tr>
@@ -1302,7 +1302,7 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <span class="title-table">Texts</span>
+                                        <span class="title-table">Text Messages{*Texts*}</span>
                                     </td>
                                     <td><i class="icon-ok"></i></td>
                                 </tr>
@@ -1314,13 +1314,13 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <span class="title-table">GPS Location & Fencing</span>
+                                        <span class="title-table">GPS Location & Geo-fencing</span>
                                     </td>
                                     <td><i class="icon-ok"></i></td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <span class="title-table">Photos/Videos</span>
+                                        <span class="title-table">Photos & Videos</span>
                                     </td>
                                     <td><i class="icon-cancel"></i></td>
                                 </tr>
@@ -1332,7 +1332,7 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <span class="title-table">Contacts Details</span>
+                                        <span class="title-table">Contact Details</span>
                                     </td>
                                     <td><i class="icon-ok"></i></td>
                                 </tr>
@@ -1350,7 +1350,7 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <span class="title-table">Applications List</span>
+                                        <span class="title-table">Application List</span>
                                     </td>
                                     <td><i class="icon-cancel"></i></td>
                                 </tr>
@@ -1368,7 +1368,7 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <span class="title-table">Facebook Messages</span>
+                                        <span class="title-table">Facebook Messenger</span>
                                     </td>
                                     <td><i class="icon-cancel"></i></td>
                                 </tr>
@@ -1380,7 +1380,7 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <span class="title-table">Whatsapp</span>
+                                        <span class="title-table">WhatsApp</span>
                                     </td>
                                     <td><i class="icon-cancel"></i></td>
                                 </tr>
@@ -1404,19 +1404,19 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <span class="title-table">Applications Limiting</span>
+                                        <span class="title-table">Application Limiting</span>
                                     </td>
                                     <td><i class="icon-ok"></i></td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <span class="title-table">Applications Blocking</span>
+                                        <span class="title-table">Application Blocking</span>
                                     </td>
                                     <td><i class="icon-ok"></i></td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <span class="title-table">Websites Blocking</span>
+                                        <span class="title-table">Website Blocking</span>
                                     </td>
                                     <td><i class="icon-ok"></i></td>
                                 </tr>
@@ -1514,7 +1514,7 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <span class="title-table">Texts</span>
+                                        <span class="title-table">Text Messages{*Texts*}</span>
                                     </td>
                                     <td><i class="icon-ok"></i></td>
                                 </tr>
@@ -1526,13 +1526,13 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <span class="title-table">GPS Location & Fencing</span>
+                                        <span class="title-table">GPS Location & Geo-fencing</span>
                                     </td>
                                     <td><i class="icon-ok"></i></td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <span class="title-table">Photos/Videos</span>
+                                        <span class="title-table">Photos & Videos</span>
                                     </td>
                                     <td><i class="icon-cancel"></i></td>
                                 </tr>
@@ -1544,7 +1544,7 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <span class="title-table">Contacts Details</span>
+                                        <span class="title-table">Contact Details</span>
                                     </td>
                                     <td><i class="icon-ok"></i></td>
                                 </tr>
@@ -1562,7 +1562,7 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <span class="title-table">Applications List</span>
+                                        <span class="title-table">Application List</span>
                                     </td>
                                     <td><i class="icon-ok"></i></td>
                                 </tr>
@@ -1580,7 +1580,7 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <span class="title-table">Facebook Messages</span>
+                                        <span class="title-table">Facebook Messenger</span>
                                     </td>
                                     <td><i class="icon-cancel"></i></td>
                                 </tr>
@@ -1592,7 +1592,7 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <span class="title-table">Whatsapp</span>
+                                        <span class="title-table">WhatsApp</span>
                                     </td>
                                     <td><i class="icon-cancel"></i></td>
                                 </tr>
@@ -1616,19 +1616,19 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <span class="title-table">Applications Limiting</span>
+                                        <span class="title-table">Application Limiting</span>
                                     </td>
                                     <td><i class="icon-ok"></i></td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <span class="title-table">Applications Blocking</span>
+                                        <span class="title-table">Application Blocking</span>
                                     </td>
                                     <td><i class="icon-ok"></i></td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <span class="title-table">Websites Blocking</span>
+                                        <span class="title-table">Website Blocking</span>
                                     </td>
                                     <td><i class="icon-ok"></i></td>
                                 </tr>
@@ -1726,7 +1726,7 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <span class="title-table">Texts</span>
+                                        <span class="title-table">Text Messages{*Texts*}</span>
                                     </td>
                                     <td><i class="icon-cancel"></i></td>
                                 </tr>
@@ -1738,13 +1738,13 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <span class="title-table">GPS Location & Fencing</span>
+                                        <span class="title-table">GPS Location & Geo-fencing</span>
                                     </td>
                                     <td><i class="icon-cancel"></i></td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <span class="title-table">Photos/Videos</span>
+                                        <span class="title-table">Photos & Videos</span>
                                     </td>
                                     <td><i class="icon-cancel"></i></td>
                                 </tr>
@@ -1756,7 +1756,7 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <span class="title-table">Contacts Details</span>
+                                        <span class="title-table">Contact Details</span>
                                     </td>
                                     <td><i class="icon-cancel"></i></td>
                                 </tr>
@@ -1774,7 +1774,7 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <span class="title-table">Applications List</span>
+                                        <span class="title-table">Application List</span>
                                     </td>
                                     <td><i class="icon-ok"></i></td>
                                 </tr>
@@ -1792,7 +1792,7 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <span class="title-table">Facebook Messages</span>
+                                        <span class="title-table">Facebook Messenger</span>
                                     </td>
                                     <td><i class="icon-cancel"></i></td>
                                 </tr>
@@ -1804,7 +1804,7 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <span class="title-table">Whatsapp</span>
+                                        <span class="title-table">WhatsApp</span>
                                     </td>
                                     <td><i class="icon-cancel"></i></td>
                                 </tr>
@@ -1828,19 +1828,19 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <span class="title-table">Applications Limiting</span>
+                                        <span class="title-table">Application Limiting</span>
                                     </td>
                                     <td><i class="icon-ok"></i></td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <span class="title-table">Applications Blocking</span>
+                                        <span class="title-table">Application Blocking</span>
                                     </td>
                                     <td><i class="icon-ok"></i></td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <span class="title-table">Websites Blocking</span>
+                                        <span class="title-table">Website Blocking</span>
                                     </td>
                                     <td><i class="icon-ok"></i></td>
                                 </tr>
@@ -1938,7 +1938,7 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <span class="title-table">Texts</span>
+                                        <span class="title-table">Text Messages{*Texts*}</span>
                                     </td>
                                     <td><i class="icon-cancel"></i></td>
                                 </tr>
@@ -1950,13 +1950,13 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <span class="title-table">GPS Location & Fencing</span>
+                                        <span class="title-table">GPS Location & Geo-fencing</span>
                                     </td>
                                     <td><i class="icon-cancel"></i></td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <span class="title-table">Photos/Videos</span>
+                                        <span class="title-table">Photos & Videos</span>
                                     </td>
                                     <td><i class="icon-cancel"></i></td>
                                 </tr>
@@ -1968,7 +1968,7 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <span class="title-table">Contacts Details</span>
+                                        <span class="title-table">Contact Details</span>
                                     </td>
                                     <td><i class="icon-cancel"></i></td>
                                 </tr>
@@ -1986,7 +1986,7 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <span class="title-table">Applications List</span>
+                                        <span class="title-table">Application List</span>
                                     </td>
                                     <td><i class="icon-ok"></i></td>
                                 </tr>
@@ -2004,7 +2004,7 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <span class="title-table">Facebook Messages</span>
+                                        <span class="title-table">Facebook Messenger</span>
                                     </td>
                                     <td><i class="icon-cancel"></i></td>
                                 </tr>
@@ -2016,7 +2016,7 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <span class="title-table">Whatsapp</span>
+                                        <span class="title-table">WhatsApp</span>
                                     </td>
                                     <td><i class="icon-cancel"></i></td>
                                 </tr>
@@ -2040,19 +2040,19 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <span class="title-table">Applications Limiting</span>
+                                        <span class="title-table">Application Limiting</span>
                                     </td>
                                     <td><i class="icon-ok"></i></td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <span class="title-table">Applications Blocking</span>
+                                        <span class="title-table">Application Blocking</span>
                                     </td>
                                     <td><i class="icon-ok"></i></td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <span class="title-table">Websites Blocking</span>
+                                        <span class="title-table">Website Blocking</span>
                                     </td>
                                     <td><i class="icon-cancel"></i></td>
                                 </tr>
@@ -2150,7 +2150,7 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <span class="title-table">Texts</span>
+                                        <span class="title-table">Text Messages{*Texts*}</span>
                                     </td>
                                     <td><i class="icon-ok"></i></td>
                                 </tr>
@@ -2162,13 +2162,13 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <span class="title-table">GPS Location & Fencing</span>
+                                        <span class="title-table">GPS Location & Geo-fencing</span>
                                     </td>
                                     <td><i class="icon-cancel"></i></td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <span class="title-table">Photos/Videos</span>
+                                        <span class="title-table">Photos & Videos</span>
                                     </td>
                                     <td><i class="icon-ok"></i></td>
                                 </tr>
@@ -2180,7 +2180,7 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <span class="title-table">Contacts Details</span>
+                                        <span class="title-table">Contact Details</span>
                                     </td>
                                     <td><i class="icon-cancel"></i></td>
                                 </tr>
@@ -2198,7 +2198,7 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <span class="title-table">Applications List</span>
+                                        <span class="title-table">Application List</span>
                                     </td>
                                     <td><i class="icon-cancel"></i></td>
                                 </tr>
@@ -2216,7 +2216,7 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <span class="title-table">Facebook Messages</span>
+                                        <span class="title-table">Facebook Messenger</span>
                                     </td>
                                     <td><i class="icon-cancel"></i></td>
                                 </tr>
@@ -2228,7 +2228,7 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <span class="title-table">Whatsapp</span>
+                                        <span class="title-table">WhatsApp</span>
                                     </td>
                                     <td><i class="icon-cancel"></i></td>
                                 </tr>
@@ -2252,19 +2252,19 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <span class="title-table">Applications Limiting</span>
+                                        <span class="title-table">Application Limiting</span>
                                     </td>
                                     <td><i class="icon-cancel"></i></td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <span class="title-table">Applications Blocking</span>
+                                        <span class="title-table">Application Blocking</span>
                                     </td>
                                     <td><i class="icon-cancel"></i></td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <span class="title-table">Websites Blocking</span>
+                                        <span class="title-table">Website Blocking</span>
                                     </td>
                                     <td><i class="icon-cancel"></i></td>
                                 </tr>
@@ -2362,7 +2362,7 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <span class="title-table">Texts</span>
+                                        <span class="title-table">Text Messages{*Texts*}</span>
                                     </td>
                                     <td><i class="icon-ok"></i></td>
                                 </tr>
@@ -2374,13 +2374,13 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <span class="title-table">GPS Location & Fencing</span>
+                                        <span class="title-table">GPS Location & Geo-fencing</span>
                                     </td>
                                     <td><i class="icon-cancel"></i></td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <span class="title-table">Photos/Videos</span>
+                                        <span class="title-table">Photos & Videos</span>
                                     </td>
                                     <td><i class="icon-cancel"></i></td>
                                 </tr>
@@ -2392,7 +2392,7 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <span class="title-table">Contacts Details</span>
+                                        <span class="title-table">Contact Details</span>
                                     </td>
                                     <td><i class="icon-cancel"></i></td>
                                 </tr>
@@ -2410,7 +2410,7 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <span class="title-table">Applications List</span>
+                                        <span class="title-table">Application List</span>
                                     </td>
                                     <td><i class="icon-ok"></i></td>
                                 </tr>
@@ -2428,7 +2428,7 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <span class="title-table">Facebook Messages</span>
+                                        <span class="title-table">Facebook Messenger</span>
                                     </td>
                                     <td><i class="icon-cancel"></i></td>
                                 </tr>
@@ -2440,7 +2440,7 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <span class="title-table">Whatsapp</span>
+                                        <span class="title-table">WhatsApp</span>
                                     </td>
                                     <td><i class="icon-cancel"></i></td>
                                 </tr>
@@ -2464,19 +2464,19 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <span class="title-table">Applications Limiting</span>
+                                        <span class="title-table">Application Limiting</span>
                                     </td>
                                     <td><i class="icon-cancel"></i></td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <span class="title-table">Applications Blocking</span>
+                                        <span class="title-table">Application Blocking</span>
                                     </td>
                                     <td><i class="icon-cancel"></i></td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <span class="title-table">Websites Blocking</span>
+                                        <span class="title-table">Website Blocking</span>
                                     </td>
                                     <td><i class="icon-cancel"></i></td>
                                 </tr>
@@ -2574,7 +2574,7 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <span class="title-table">Texts</span>
+                                        <span class="title-table">Text Messages{*Texts*}</span>
                                     </td>
                                     <td><i class="icon-cancel"></i></td>
                                 </tr>
@@ -2586,13 +2586,13 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <span class="title-table">GPS Location & Fencing</span>
+                                        <span class="title-table">GPS Location & Geo-fencing</span>
                                     </td>
                                     <td><i class="icon-cancel"></i></td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <span class="title-table">Photos/Videos</span>
+                                        <span class="title-table">Photos & Videos</span>
                                     </td>
                                     <td><i class="icon-cancel"></i></td>
                                 </tr>
@@ -2604,7 +2604,7 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <span class="title-table">Contacts Details</span>
+                                        <span class="title-table">Contact Details</span>
                                     </td>
                                     <td><i class="icon-ok"></i></td>
                                 </tr>
@@ -2622,7 +2622,7 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <span class="title-table">Applications List</span>
+                                        <span class="title-table">Application List</span>
                                     </td>
                                     <td><i class="icon-cancel"></i></td>
                                 </tr>
@@ -2640,7 +2640,7 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <span class="title-table">Facebook Messages</span>
+                                        <span class="title-table">Facebook Messenger</span>
                                     </td>
                                     <td><i class="icon-cancel"></i></td>
                                 </tr>
@@ -2652,7 +2652,7 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <span class="title-table">Whatsapp</span>
+                                        <span class="title-table">WhatsApp</span>
                                     </td>
                                     <td><i class="icon-cancel"></i></td>
                                 </tr>
@@ -2676,19 +2676,19 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <span class="title-table">Applications Limiting</span>
+                                        <span class="title-table">Application Limiting</span>
                                     </td>
                                     <td><i class="icon-cancel"></i></td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <span class="title-table">Applications Blocking</span>
+                                        <span class="title-table">Application Blocking</span>
                                     </td>
                                     <td><i class="icon-cancel"></i></td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <span class="title-table">Websites Blocking</span>
+                                        <span class="title-table">Website Blocking</span>
                                     </td>
                                     <td><i class="icon-cancel"></i></td>
                                 </tr>
@@ -2786,7 +2786,7 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <span class="title-table">Texts</span>
+                                        <span class="title-table">Text Messages{*Texts*}</span>
                                     </td>
                                     <td><i class="icon-ok"></i></td>
                                 </tr>
@@ -2798,13 +2798,13 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <span class="title-table">GPS Location & Fencing</span>
+                                        <span class="title-table">GPS Location & Geo-fencing</span>
                                     </td>
                                     <td><i class="icon-ok"></i></td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <span class="title-table">Photos/Videos</span>
+                                        <span class="title-table">Photos & Videos</span>
                                     </td>
                                     <td><i class="icon-cancel"></i></td>
                                 </tr>
@@ -2816,7 +2816,7 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <span class="title-table">Contacts Details</span>
+                                        <span class="title-table">Contact Details</span>
                                     </td>
                                     <td><i class="icon-cancel"></i></td>
                                 </tr>
@@ -2834,7 +2834,7 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <span class="title-table">Applications List</span>
+                                        <span class="title-table">Application List</span>
                                     </td>
                                     <td><i class="icon-cancel"></i></td>
                                 </tr>
@@ -2852,7 +2852,7 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <span class="title-table">Facebook Messages</span>
+                                        <span class="title-table">Facebook Messenger</span>
                                     </td>
                                     <td><i class="icon-cancel"></i></td>
                                 </tr>
@@ -2864,7 +2864,7 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <span class="title-table">Whatsapp</span>
+                                        <span class="title-table">WhatsApp</span>
                                     </td>
                                     <td><i class="icon-cancel"></i></td>
                                 </tr>
@@ -2888,19 +2888,19 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <span class="title-table">Applications Limiting</span>
+                                        <span class="title-table">Application Limiting</span>
                                     </td>
                                     <td><i class="icon-cancel"></i></td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <span class="title-table">Applications Blocking</span>
+                                        <span class="title-table">Application Blocking</span>
                                     </td>
                                     <td><i class="icon-ok"></i></td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <span class="title-table">Websites Blocking</span>
+                                        <span class="title-table">Website Blocking</span>
                                     </td>
                                     <td><i class="icon-ok"></i></td>
                                 </tr>

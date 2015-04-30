@@ -2,8 +2,8 @@
 
 {include file='../../includes/main/main-header.tpl'
     robots="yes" 
-    title="MMGuardian parental control software review"
-    description="Read editor's reviews, view a features comparison table, and learn more about MMGuardian mobile monitoring solution."
+    title="Pumpic parental control software review"
+    description="Read editor's reviews, view a features comparison table, and learn more about Pumpic mobile monitoring solution."
 }    
     
 <body>
@@ -52,10 +52,10 @@
                 <div class="box-state">
                     <div class="media">
                         <div class="pull-left">
-                            <h3 class="heading">MMGuardian</h3>
-                            <div class="price-span">$49.99</div>
+                            <h3 class="heading">Pumpic</h3>
+                            <div class="price-span">$5.33</div>
                             <a href="#" class="img-media">
-                                <img src="{$img}/boxes/boxes_4_10.png" height="219" width="242" alt="">
+                                <img src="{$img}/boxes/boxes_4_2.png" height="219" width="242" alt="">
                             </a>
                         </div>
                         <div class="media-body">
@@ -72,7 +72,8 @@
                                 The application is said to be among the best parental control software, though it lacks many important features that ensure all-round protection for children.
                             </p>
                             <div class="media-btn">
-                                <a href="/reviews/fumano-mobile-monitoring.html" class="btn btn-sm btn-success">Next Review &rarr;</a>
+                                <a href="/reviews/mobileforcefield-mobile-monitoring.html" class="btn btn-sm btn-success">Next Review &rarr;</a>
+                                &nbsp;<a href="/store.html" class="btn btn-sm btn-default">Next Review &rarr;</a>
                             </div>
                         </div>
                     </div>
@@ -80,7 +81,7 @@
                     <p>With help of the app, you will be able to monitor Calls and SMS, follow visited Websites and Contacts, track GPS location, and set Geo-fences. MMGuardian also allows websites and application limiting or blocking. Remote lock feature will reasonably help, if your kid’s device is lost or stolen.</p>
                     <p>On the other hand, MMGuardian won’t enable you to track Instagram and Facebook, nor Kik, WhatsApp, Viber, and Skype. It doesn’t support Email monitoring, and won’t let you view media files (photos, videos). There is no ability to set text message limits and track SIM card changes.</p>
                     <div class="box-graph">
-                        <img src="{$img}/diagrams/mmguardian.png" height="368" width="686" alt="">
+                        <img src="{$img}/diagrams/pumpic.png" height="368" width="686" alt="">
                     </div>
                     <h3 class="heading">Reports & Logs – <span class="heading-rating">6/10</span></h3>
                     <p>The application logs all the tracked data from the target device immediately. Once your child sends or receives a text messages, opens a new tab in a browser, makes or has an incoming call, it all is reflected in your personal account. MMGuardian also allows tracking GPS location on the map and setting Geo-fences. Once your kid leaves or enter a restricted area, the app will let you know.</p>

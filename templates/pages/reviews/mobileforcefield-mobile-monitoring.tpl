@@ -72,7 +72,7 @@
                                 The app lacks too many features, which are essential, when it comes to providing kids with comprehensive protection.
                             </p>
                             <div class="media-btn">
-                                <a href="#" class="btn btn-sm btn-success">Next Review &rarr;</a>
+                                <a href="/reviews/mmguardian-mobile-monitoring.html" class="btn btn-sm btn-success">Next Review &rarr;</a>
                             </div>
                         </div>
                     </div>

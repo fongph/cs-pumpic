@@ -51,10 +51,10 @@
                 <div class="box-state">
                     <div class="media">
                         <div class="pull-left">
-                            <h3 class="heading">Txtwatcher</h3>
-                            <div class="price-span">$89.97</div>
+                            <h3 class="heading">Fumano</h3>
+                            <div class="price-span">$19.99</div>
                             <a href="#" class="img-media">
-                                <img src="{$img}/boxes/boxes_4_1.png" height="219" width="242" alt="">
+                                <img src="{$img}/boxes/boxes_4_3.png" height="219" width="242" alt="">
                             </a>
                         </div>
                         <div class="media-body">
@@ -71,7 +71,7 @@
                                 With GPS tracking and a host of security features, you will feel secure letting your child use a smartphone protected by PhoneSheriff.
                             </p>
                             <div class="media-btn">
-                                <a href="#" class="btn btn-sm btn-success">Next Review &rarr;</a>
+                                <a href="/reviews/parentkit-mobile-monitoring.html" class="btn btn-sm btn-success">Next Review &rarr;</a>
                             </div>
                         </div>
                     </div>

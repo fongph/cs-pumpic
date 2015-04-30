@@ -81,7 +81,7 @@
                     <p>The app enables parents to take care of children remotely by providing them (parents) with an ability to monitor calls, text messages, sent and received emails, photos, video files, and applications. In addition, it lets you specify the websites that kids are allowed to visit.</p>
                     <p>Regardless the aforementioned options, there are a lot of them missing. MobileForceField doesn’t support monitoring of popular online chats like Skype, Viber, WhatsApp, and Kik, as well as social media like Facebook, Instagram, and Twitter. Considering that most dangers that children face come from these particular sources, it is a reasonable failure.</p>
                     <div class="box-graph">
-                        <img src="{$img}/img-graphic.png" height="270" width="630" alt="">
+                        <img src="{$img}/diagrams/mobileforcefield.png" height="368" width="686" alt="">
                     </div>
                     
                     <h3 class="heading">Reports & Logs – <span class="heading-rating">8/10</span></h3>

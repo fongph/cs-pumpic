@@ -221,9 +221,9 @@ class Compatibility {
                 ),
                 
                 'Social Media' => array( 
-                    'skype' => '<strong>Jailbreak Needed</strong>',
+                    // 'skype' => '<strong>Jailbreak Needed</strong>',
                     'viber' => '<strong>Jailbreak Needed</strong>',
-                    'whatsapp' => '<strong>Jailbreak Needed</strong>',
+                    // 'whatsapp' => '<strong>Jailbreak Needed</strong>',
                     'facebook' => '<strong>Jailbreak Needed</strong>',
                     'instagram' => '<strong>Jailbreak Needed</strong>',
                     'kik'       => '<strong>Jailbreak Needed</strong>',
@@ -248,9 +248,10 @@ class Compatibility {
             'android' => [
                 'Calls & SMS' => array(
                     // SMS blocking
-                    'block_word' => '<strong>Root Required</strong>',
+                    //'block_word' => '<strong>Not available for Android 5.0 and newer versions.</strong>', // Root Required
                     // SMS daily limiting
                     'sms_daily_limiting' => '<strong>Activated Keylogger Needed</strong>',
+                    'bad_word_sms'  => '<strong>Not available for Android 5.0 and newer versions.</strong>',
                 ),
 //                'Apps Control' => array( 
 //                    'keylogger' => '<strong>Activated Keylogger Needed</strong>',

@@ -21,14 +21,14 @@
         
         <!-- CONTENT -->
         {include file='../includes/content/info/info-promo.tpl'
-            imgUrl = "header_banners/icloud-iphone-monitoring-without-jailbreak.png"
+            imgUrl = "header_banners/icloud-iphone-without-jailbreak-monitoring.png"
             imgAlt = "Apple iOS Mobile Monitoring App"
             imgAlign = "right"
             imgVerticalAlign = "bottom"
             textAlign = "right"
             title = "Apple Monitoring App  <br>iCloud Solution"
-            description = "Enjoy multitask tracking without Jailbreak. 
-                            <br>Control iPhone use. Follow communication and online activity."
+            description = "Enjoy multitask tracking without Jailbreak 
+                            <br>Control iPhone use. Follow location and online activity"
                          
             promoBuyBlock = "no"
             iCloudSolution = 'no'

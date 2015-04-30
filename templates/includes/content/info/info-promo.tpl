@@ -120,7 +120,7 @@
                                     </ul>
                                     {/if*}
 
-                                    {if 0 && isset($listText) && $listText != ""}
+                                    {if 0 && isset($listText) && $listText != ""} {*0 &&*}
 
                                         {assign var="listExplode" value="|"|explode:$listText} 
                                         {if isset($listExplode)}

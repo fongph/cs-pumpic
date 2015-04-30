@@ -94,9 +94,17 @@
                 title (string): название блока.
                 description (string): описание баннера.
                 
-                promoBuyBlock (string): Включает кнопку PromoBuy (yes|no) *default: переменная не инцелезирована
-                planPackageBuy (sting): Включает банер пакетов (yes|no) *default: переменная не инцелезирована
+                promoBuyBlock (string): Включает/Выключает кнопку PromoBuy (yes|no) *default: переменная не инцелезирована
+                planPackageBuy (sting): Включает/Выключает банер пакетов (yes|no) *default: переменная не инцелезирована
+                planPackageBuyUrl (sting): url - куда будет вести красная кнопка. 
+                planPackageBuyType (sting): тип блока ( link - ссылка|button - кнопка) *-default: button
+                planPackageBuyClass (sting): класс блока. ( Добовлять custom - стиль ). *-default: false
                 
+                iCloudSolution (sting): Включает/Выключает синию кнопку. *-default: no
+                
+                InfoBlock (sting): Включает/Выключает инфо блок. *-default: no
+                TouchPad (sting): Включает/Выключает табы в инфо-блоке. *-default: no 
+                Android (sting): Включает/Выключает андройд в инфо-блоке. *-default: no
         *}
         {include file='../includes/content/info/info-promo.tpl'
             imgUrl = "header_banners/icloud-iphone-without-jailbreak-monitoring.png"
@@ -131,9 +139,22 @@
                 title (string): название блока.
                 description (string): описание баннера.
                 
-                promoBuyBlock (string): Включает кнопку PromoBuy (yes|no) *default: переменная не инцелезирована
-                planPackageBuy (sting): Включает банер пакетов (yes|no) *default: переменная не инцелезирована
+                listText (string): список параметров. * - разделитель "|"
                 
+                promoBuyBlock (string): Включает/Выключает кнопку PromoBuy (yes|no) *default: переменная не инцелезирована
+                planPackageBuy (sting): Включает/Выключает банер пакетов (yes|no) *default: переменная не инцелезирована
+                
+                iCloudSolution (sting): Включает/Выключает синию кнопку. *-default: no
+                iCloudSolutionButtonClass (string) класс кнопки. default: 'btn-default'
+                iCloudSolutionUrl (string): url - куда будет вести красная кнопка.
+                iCloudSolutionDescription (string) - описание блока. default: 'Want more monitoring <br />features?'
+                iCloudSolutionBTitle (string) - текст кгопки.
+                iCloudSolutionIButton (string) - иконка на кнопке. *-default: 'ico-cloud-lock'
+                
+                InfoBlock (sting): Включает/Выключает инфо блок. *-default: no
+                TouchPad (sting): Включает/Выключает табы в инфо-блоке. *-default: no 
+                Android (sting): Включает/Выключает андройд в инфо-блоке. *-default: no
+                Apple (sting): Включает/Выключает apple в инфо-блоке. *-default: no
         *}
         {include file='../includes/content/info/info-promo.tpl'
             imgUrl = "header_banners/icloud-iphone-without-jailbreak-monitoring.png"
@@ -144,13 +165,10 @@
             title = "Apple Monitoring App  <br>iCloud Solution"
             description = "Enjoy multitask tracking without Jailbreak 
                             <br>Control iPhone use. Follow location and online activity"
-                         
+                     
             promoBuyBlock = "no"
             iCloudSolution = 'yes'
             planPackageBuy = "no"
-            planPackageBuyUrl = '#icloud-solution'
-            planPackageBuyType = 'link'
-            planPackageBuyClass = 'go_block_scroll'
 
             TouchPad = 'no'
             Android = 'no'
@@ -169,8 +187,13 @@
                 title (string): название блока.
                 description (string): описание баннера.
                 
-                promoBuyBlock (string): Включает кнопку PromoBuy (yes|no) *default: переменная не инцелезирована
-                planPackageBuy (sting): Включает банер пакетов (yes|no) *default: переменная не инцелезирована
+                promoBuyBlock (string): Включает/Выключает кнопку PromoBuy (yes|no) *default: переменная не инцелезирована
+                planPackageBuy (sting): Включает/Выключает банер пакетов (yes|no) *default: переменная не инцелезирована
+                
+                InfoBlock (sting): Включает/Выключает инфо блок. *-default: no
+                TouchPad (sting): Включает/Выключает табы в инфо-блоке. *-default: no 
+                Android (sting): Включает/Выключает андройд в инфо-блоке. *-default: no
+                Apple (sting): Включает/Выключает apple в инфо-блоке. *-default: no
                 
         *}
         {include file='../includes/content/info/info-promo.tpl'

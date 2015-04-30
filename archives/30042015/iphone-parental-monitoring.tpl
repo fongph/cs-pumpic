@@ -197,7 +197,7 @@
                                         
 {include file='../includes/content/features-table.tpl'
         title = "Parental Control Features by Pumpic"
-        description = "Your children live their full lives and mobile devices help them explore the world around. Photo and video 
+        description = "Your children live a full life and mobile devices help them explore it. Photo and video 
                             shooting, distant communication, mailing, game playing and social connections are some of options these gadgets 
                             provide. Pumpic covers all spheres of your kids’ activity and enables you to take care of them remotely. 
                             The features listed below show the variety of iPhone parental control abilities, which will let you secure your 

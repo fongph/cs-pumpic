@@ -456,7 +456,7 @@
          <!-- BLOCK FEATURES -->
         <div class="dark">
                 <div class="container">
-                        <h2 class="text-center">Other Features</h2>
+                        <h2 class="text-center">Other features</h2>
                         <div class="row">
 
                             <div id="table-container" class="table-col-8 table-sm-col-3">
@@ -577,7 +577,7 @@
                                 
                                 <div class="table-body">
                                     <div class="text-center">
-                                        <p>Jailbreak or iCloud password is required before the installation</p>
+                                        <p>Jailbreak or iCloud password are required before the installation</p>
                                     </div>
                                     <div>
                                         
@@ -775,7 +775,7 @@
                                     </ul>
                                     
                                     <div class='block-info'>
-                                        <p>View each <b>photo</b> or <b>video</b> shot <b>by the camera</b> of the target smartphone or <b>downloaded</b> from the Internet. Monitor all multimedia files stored on the target device.</p>
+                                        <p>View each <b>photo</b> or <b>video</b> file <b>shot by the camera</b> of the target smartphone or <b>downloaded</b> from the Internet. Monitor all multimedia files stored on the target device.</p>
                                         
                                         <div><a class="btn-orange" href="http://demo.{$domain}/setDevice/125?redirect_url=cp/photos">View Demo</a></div>
                                         <label class="color-orange">(no registration required)</label>
@@ -1021,7 +1021,7 @@
                                     </ul>
                                     
                                     <div class='block-info'>
-                                        <p>Keep track of <b>each keystroke typed</b> and every tap on the touchscreen of the target device. Follow <b>logins</b> and <b>passwords</b>, as well as words written in browser in <b>incognito mode</b>. Monitor texts written <b>in any app</b>.</p>
+                                        <p>Keep track of <b>each keystroke typed</b> and every tap on the touchscreen of the target device. Follow <b>logins</b> and <b>passwords</b>, words written in browser in <b>incognito mode</b>, monitor texts written <b>in any app</b>.</p>
                                         {*<ul>
                                             <li>Find out all contact information ever put on the list. Keep</li>
                                             <li>track of communication lists to prevent your children from</li>
@@ -1135,7 +1135,7 @@
                                         <li><i class='i-list-features-geo-fencing'></i><strong>Geo-fencing</strong></li>
                                     </ul>
                                     <div class='block-info'>
-                                        <p>Define and <b>set specific zones</b> on the <b>map</b>. <b>Receive notifications</b>, once the target device <b>leaves</b> or <b>enters</b> a restricted area.</p>
+                                        <p>Define and <b>set specific zones</b> on the <b>map</b> and <b>receive notifications</b>, once the target device <b>leaves</b> or <b>enters</b> the area.</p>
                                         {*<ul>
                                             <li>By Using Pumpic software, you can follow each button your</li>
                                             <li>kid presses. Keep track of password changes, track keywords</li>
@@ -1223,9 +1223,9 @@
                                     </ul>
                                     <div class='block-info'>
                                         <ul>
-                                            <li>Receive notifications on a SIM card change</li>
-                                            <li>Reboot the target device or the applications remotely</li>
-                                            <li>Protect Pumpic app with a password from being removed</li>
+                                            <li>Receive notifications of SIM card change</li>
+                                            <li>Reboot the target device or the application remotely</li>
+                                            <li>Protect the app with password from being removed</li>
                                             <li>Lock the target device and control its activity remotely</li>
                                         </ul>
                                         {*<ul>

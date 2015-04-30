@@ -193,11 +193,11 @@
                                         
 {include file='../includes/content/features-table.tpl'
         title = "Set Ultimate Parental Control on Android"
-        description = "Mobile technologies have introduced new opportunities to our children. It is rather hard at 
+        description = "Mobile technologies introduced new opportunities to our children. It is rather hard at 
                             once to imagine the entire range of functions a single smartphone can fulfil. That’s why when it comes to features 
                             that an Android parental control app should include, it is very important to consider all of them. Listed below 
                             reflects Pumpic monitoring abilities, and which particular mobile phone options you will cover by using it. 
-                            The app will help you follow each and every aspect of your kids’ lives as well as all spheres of activities remotely."
+                            The app will help you follow each and every aspect of your kids’ lives as well as all spheres of activity remotely."
         blockBg="dark"
 }                                        
                                         
@@ -253,9 +253,9 @@
 {Content 
     title="Inherent Dangers a Cell Phone Hides"
     blockBg='light'}
-    <p>One can hardly imagine his or her life without a mobile phone connected to the Internet these days. When it comes to children, we see that online reality means almost the entire world to them, being an essential part of communication and spare time spending. However, along with great opportunities there comes the issue.</p>
+    <p>One can hardly imagine his or her life without a mobile phone connected to the Internet these days. When it comes to children, we see that online reality means almost the world to them, being an essential part of communication and spare time spending. However, along with great opportunities there comes the issue.</p>
 <ul>
-<li><strong>Online predators.</strong> Sexual predators really exist and threaten your kids’ security. Boys and girls, who are more technical than parents, more emotionally vulnerable due to personal issues, are their main target. Most of online predators are masters of manipulation and know how to deceive your children pretending care and friendship. They use anonymity of the Internet and can be whomever they want to get into your kids’ confidence. A threat starts as a harmless online talk and usually turns out to be sexual seduction in the real life. Using parental control apps for Android will let you know, whom your kids chat with online, and thus, you will be able to protect them against attacks of online predators.</li>
+<li><strong>Online predators.</strong> Sexual predators really exist and threaten your kids’ security. Boys and girl, who are more technical than parents, more emotionally vulnerable due to personal issues, are their main target. Most of online predators are masters of manipulation and know how to deceive your children pretending care and friendship. They use the anonymity of the Internet and can be whomever they want to get into your kids’ confidence. A threat starts as a harmless online talk and usually turns out to be sexual seduction in the real life. Using parental control apps for Android will let you know, whom your kids chat with online, and thus, you will be able to protect them against attacks of online predators.</li>
 
 <li><strong>Cyberbullies.</strong> Talk to your kids and find out if someone offends them. They might receive text messages with threats or bad words. Cyberbullying images can be posted anonymously in social networks and spread quickly through the Internet. More often than not, it is hard to find the source of cyberbullying, since online an offender can be not even a real person. Parental control apps for Android will allow you to track your kids’ online activity, follow social media, networks, as well as text messages they receive. Such software will let you find out if any threat exists, and take action before it’s too late.</li>   
 

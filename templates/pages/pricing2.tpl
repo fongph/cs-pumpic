@@ -23,7 +23,7 @@
                     <div class="col-lg-10 col-lg-offset-1">
                         <div class="row">
                             <h2>
-                                Pricing & Plans {*PRICING & PLANS*}
+                                Subscription Plans{*Pricing & Plans*}
                             </h2>
                             <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1">
                                     <table class="tb_pricing table-bordered pricing-second">
@@ -123,7 +123,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="support_os"><div class="wr_support_os"><i class="icon-android d_green"></i> Android 2.0 - 5.1 <i class="icon-apple d_green"></i> iOS 6.0 - 8.3</div></div>
+                                        <div class="support_os"><div class="wr_support_os"><i class="icon-android d_green"></i> Android 2.2 - 5.1 <i class="icon-apple d_green"></i> iOS 6.0 - 8.3</div></div>
                                         </caption>
                                         <thead>
                                             <tr>

@@ -51,7 +51,7 @@
             <div class="container">
                 <div class="box-state">
                     <div class="media">
-                        <div class="pull-left">
+                        <div class="pull-left{*pull-right*}">
                             <h3 class="heading">Pumpic</h3>
                             <div class="price-span">$5.33</div>
                             <a href="#" class="img-media">
@@ -72,8 +72,8 @@
                                 The application is said to be among the best parental control software, though it lacks many important features that ensure all-round protection for children.
                             </p>
                             <div class="media-btn">
-                                <a href="/reviews/mobileforcefield-mobile-monitoring.html" class="btn btn-sm btn-success">Next Review &rarr;</a>
-                                &nbsp;<a href="/store.html" class="btn btn-sm btn-default">Next Review &rarr;</a>
+                                <a href="/store.html" class="btn btn-sm btn-default">Learn More</a>
+                                &nbsp;<a href="/reviews/mobileforcefield-mobile-monitoring.html" class="btn btn-sm btn-success">Next Review &rarr;</a>
                             </div>
                         </div>
                     </div>

@@ -96,6 +96,9 @@ body {
 .block-reviews .box-state .media > .pull-left {
 	margin-right: 60px;
 }
+.block-reviews .box-state .media > .pull-right {
+	margin-left: 60px;
+}
 .block-reviews .box-state .media-body {
 	padding-top: 12px;
 }

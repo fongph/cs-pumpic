@@ -51,7 +51,7 @@
             <div class="container">
                 <div class="box-state">
                     <div class="media">
-                        <div class="pull-left">
+                        <div class="pull-left{*pull-right*}">
                             <h3 class="heading">MobileForceField</h3>
                             <div class="price-span">$31.95</div>
                             <a href="#" class="img-media">
@@ -61,7 +61,7 @@
                         <div class="media-body">
                             <h4 class="media-heading">Pros </h4>
                             <p>
-                                MobileForceField will let you monitor your kid’s cell phone use including Calls, SMS, Emails, Location, Media files, and Applications.
+                                MobileForceField will let you monitor your kid’s cell phone use including Calls, SMS, {*Emails,*} Location, Media files, and Applications.
                             </p>
                             <h4 class="media-heading">Cons </h4>
                             <p>
@@ -78,7 +78,7 @@
                     </div>
                     
                     <h3 class="heading">Summary</h3>
-                    <p>The app enables parents to take care of children remotely by providing them (parents) with an ability to monitor calls, text messages, sent and received emails, photos, video files, and applications. In addition, it lets you specify the websites that kids are allowed to visit.</p>
+                    <p>The app enables parents to take care of children remotely by providing them (parents) with an ability to monitor calls, text messages, {*sent and received emails,*} photos, video files, and applications. In addition, it lets you specify the websites that kids are allowed to visit.</p>
                     <p>Regardless the aforementioned options, there are a lot of them missing. MobileForceField doesn’t support monitoring of popular online chats like Skype, Viber, WhatsApp, and Kik, as well as social media like Facebook, Instagram, and Twitter. Considering that most dangers that children face come from these particular sources, it is a reasonable failure.</p>
                     <div class="box-graph">
                         <img src="{$img}/diagrams/mobileforcefield.png" height="368" width="686" alt="">
@@ -98,8 +98,9 @@
                     
                     <h3 class="heading">Help & Support – <span class="heading-rating">5/10</span></h3>
                     <p>
-                        If you have any question on MobileForceField operation, you can send your application to customer 
-                        care at <a href="mailto:support@mobileforcefield.com">support@mobileforcefield.com</a>
+                        If you have any question on MobileForceField operation, you can send your application to customer care <a href="mailto:support@mobileforcefield.com">email</a>.
+                        {*If you have any question on MobileForceField operation, you can send your application to customer 
+                        care at <a href="mailto:support@mobileforcefield.com">support@mobileforcefield.com</a>*}
                     </p>
                     <p>At the same time, there is no live chat or free 24/7 support, which is essential if you have questions, which require an instant answer and solution. There is no phone number provided as well. Thus, you will have to wait for an indefinite period of time until your email is received and replied.</p>
                     

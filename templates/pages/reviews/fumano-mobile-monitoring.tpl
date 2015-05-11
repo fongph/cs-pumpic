@@ -50,7 +50,7 @@
             <div class="container">
                 <div class="box-state">
                     <div class="media">
-                        <div class="pull-left">
+                        <div class="pull-left{*pull-right*}">
                             <h3 class="heading">Fumano</h3>
                             <div class="price-span">$19.99</div>
                             <a href="#" class="img-media">

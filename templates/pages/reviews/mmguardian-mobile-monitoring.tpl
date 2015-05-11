@@ -51,7 +51,7 @@
             <div class="container">
                 <div class="box-state">
                     <div class="media">
-                        <div class="pull-left">
+                        <div class="pull-left{*pull-right*}">
                             <h3 class="heading">MMGuardian</h3>
                             <div class="price-span">$49.99</div>
                             <a href="#" class="img-media">

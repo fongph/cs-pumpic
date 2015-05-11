@@ -190,7 +190,8 @@ function userNotice() {
 }
 
 function statistic() {
-    require_once '../../statistic/scroogefrog_udp_tcp.php';
+    // require_once '../../statistic/scroogefrog_udp_tcp.php';
+    require_once '../../statistic/scroogefrog_tcp.php';
 }
 
 function createReferral() {

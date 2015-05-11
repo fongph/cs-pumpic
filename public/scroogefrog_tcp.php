@@ -1,5 +1,20 @@
 <?php 
-class ScroogefrogUDPTCPSender
+/*
+	Connect this script to the pages, to which the advertisements lead. If necessary connect the script to all the pages of your website.
+	In most cases it is easier to connect it to the main template or to the templates responsible for header or footer.
+	
+	Example: the page is added into the template
+		include_once($path);
+		where $path – is the path to your script; 
+
+	For example:
+	<?php
+		$path = "./scroogefrog_tcp.php";
+		include_once($path);
+	?>
+*/ 
+
+class ScroogefrogUDPSender
 {
 	private static $CLFG_REQUEST = array('_COUNTER_UDP_IP' => '62.149.12.92', '_COUNTER_UDP_PORT' => '83', '_COUNTER_HOST' => 'stat.scroogefrog.com', '_COUNTER_GET'=>'/server_side_action.php');
 	
@@ -21,9 +36,7 @@ class ScroogefrogUDPTCPSender
 		}
 
 		if(!$occur)
-			return 0;		
-		
-		$s_udp = @fsockopen("udp://".self::$CLFG_REQUEST['_COUNTER_UDP_IP'], self::$CLFG_REQUEST['_COUNTER_UDP_PORT'], $errno, $errstr);
+			return 0;
 		
 		$headers = array("HTTP_HOST", "REMOTE_ADDR", "REQUEST_METHOD", "REQUEST_URI", "PATH_INFO", "HTTP_REFERER", "HTTP_X_FORWARDED_FOR", "QUERY_STRING", "REQUEST_URI_CLICKFROG", "HTTP_USER_AGENT");
 		$srv = array();
@@ -34,27 +47,7 @@ class ScroogefrogUDPTCPSender
 			exit;
 			
 		$msg = 'header='.@urlencode(@json_encode($srv));
-		$msg_id = self::msgid($msg);
-
-		$send_data = sprintf('CFSTAT#%s[%s]END', $msg_id, $msg);	
-		
-		$tries = 5;
-		$len = strlen($send_data);
-		$err_id = false;
-		for($i=0;$i<$tries;$i++)
-		{	
-			if($s_udp) {
-				//send mesg
-				@fwrite($s_udp, $send_data);				
-			}
-			else {				
-				$err_id = 1;
-				break;
-			}			
-		}		
-		@fclose($s_udp);
-		if($err_id!== false && $err_id === 1)			
-			self::sendto_tcp($msg);
+		self::sendto_tcp($msg);
 		}
 		catch(Exception $e) { } 
 	}
@@ -65,7 +58,7 @@ class ScroogefrogUDPTCPSender
 			$fp = fsockopen(self::$CLFG_REQUEST['_COUNTER_HOST'], 80, $errno, $errstr, 1); 
 			if ($fp) {
 				$out = '';
-				
+				//$post = 'header='.urlencode(json_encode($srv));
 				$post = $msg;
 				$out .= "POST ".self::$CLFG_REQUEST['_COUNTER_GET']." HTTP/1.0\r\n";
 				$out .= "Content-Length: ".strlen($post)."\r\n";
@@ -79,7 +72,7 @@ class ScroogefrogUDPTCPSender
 				$out .= "Connection: Close\r\n\r\n";
 				$out .= $post;    
 				fwrite($fp, $out);
-				stream_set_timeout($fp,2);
+				stream_set_timeout($fp,2); 				
 				while (!feof($fp)) {
 					fgets($fp, 128);
 				}
@@ -110,5 +103,5 @@ class ScroogefrogUDPTCPSender
 	
 }
 
-ScroogefrogUDPTCPSender::sendto();
+ScroogefrogUDPSender::sendto();
 ?>

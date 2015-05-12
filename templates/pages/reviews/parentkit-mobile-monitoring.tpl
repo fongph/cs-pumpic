@@ -54,9 +54,12 @@
                         <div class="pull-left{*pull-right*}">
                             <h3 class="heading">ParentKit</h3>
                             <div class="price-span">$39.99</div>
-                            <a href="#" class="img-media">
+                            {*<a href="#" class="img-media">
                                 <img src="{$img}/boxes/boxes_4_6.png" height="219" width="242" alt="">
-                            </a>
+                            </a>*}
+                            <span class="img-media">
+                                <img src="{$img}/boxes/boxes_4_6.png" height="219" width="242" alt="">
+                            </span>
                         </div>
                         <div class="media-body">
                             <h4 class="media-heading">Pros </h4>

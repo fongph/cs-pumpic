@@ -519,11 +519,30 @@ th .table_title {
   font-size: 19px;
   color: #4d4f5b;
 /*  min-width: 120px;*/
-  min-width: 95px;
+/*  min-width: 95px;*/
+  min-width: 65px;  
   font-weight: 400;
   display: inline-block;
   text-align: right;
 }
+
+.coming_soon_block ul li > div {
+    display: inline-block;
+    position: relative;
+    min-width: 122px;
+    width: auto;
+}
+@media only screen and (max-width: 768px) { 
+    .coming_soon_block ul li > div {
+        text-align: center;
+        width: 100%;
+    }
+    .coming_soon_block ul li b {
+        float: none;
+    }
+}
+
+
 .border-none {
   border: none !important;
 }
@@ -751,9 +770,9 @@ th .table_title {
   .list_price-no-link {
     padding: 0 !important;
   }
-  .coming_soon_block ul li b {
+/*  .coming_soon_block ul li b {
     float: left;
-  }
+  }*/
   .basic_wr.span-list-block .basic_fe .list_price-no-link > li > span, .premium_wr.span-list-block .premium_fe .list_price-no-link li > span {
     display: block !important;
   }
@@ -1020,7 +1039,7 @@ th .table_title {
     text-align: left;
 }
 
-@media only screen and (max-width: 700px) { 
+@media only screen and (max-width: 768px) { 
     .coming_soon_block ul li span  {
         padding-top: 3px;
         overflow: hidden;

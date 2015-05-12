@@ -98,7 +98,8 @@ class ManagerUser extends Manager
         // mailProcessor
         $mailProcessor = new RemoteProcessor(
                 GlobalSettings::getMailSenderURL(1), 
-                GlobalSettings::getMailSenderSecret(1)
+                GlobalSettings::getMailSenderSecret(1),
+                $this -> _pdo
         );
         
         // set sender
@@ -120,7 +121,7 @@ class ManagerUser extends Manager
     {
         $_type = 'prod';
         if (in_array(@$_SERVER['REMOTE_ADDR'], ['127.0.0.1', '::1'])) {
-            //  $_type = 'dev';
+             // $_type = 'dev';
         }
         return $this -> _db[ $_type ];
     }

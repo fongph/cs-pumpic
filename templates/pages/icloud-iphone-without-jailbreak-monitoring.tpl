@@ -255,8 +255,8 @@
                                                     <ul>
                                                         {*<li><b>Skype</b><i class="coming-soon-icons cs-ico-skype"></i><span>Follow personal, group messages and calls.</span></li>
                                                         <li><b>WhatsApp</b><i class="coming-soon-icons cs-ico-whatsapp"></i><span>Follow personal messages and group chats.</span></li>*}
-                                                        <li><b>Photos</b><i class="coming-soon-icons cs-ico-photos"></i><span>View camera shots and downloaded photos.</span></li>
-                                                        <li><b>Notes</b><i class="coming-soon-icons cs-ico-notes"></i><span>View notes kept on the target device.</span></li>
+                                                        <li><div><b>Photos</b><i class="coming-soon-icons cs-ico-photos"></i></div><span>View camera shots and downloaded photos.</span></li>
+                                                        <li><div><b>Notes</b><i class="coming-soon-icons cs-ico-notes"></i></div><span>View notes kept on the target device.</span></li>
                                                         
                                                         {*<li><b>Skype</b><i class="icons ico-skype"></i> <span>Follow personal, group messages and calls.</span></li>
                                                         <li><b>Notes</b> <i class="icons ico-notes"></i> <span> View notes kept on the target device.</span></li>

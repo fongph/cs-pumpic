@@ -216,6 +216,13 @@ body {
 	background: #b3b3b3;
 	color: #fff;
 }
+@media screen and (max-width: 992px) { 
+   .block-reviews .header-thumb-ranking { 
+       font-size: 25px;
+       background: none;
+       color: #999;
+   } 
+}
 .content-thumb-ranking {
 	border-left: 1px solid #dbdbdb;
 	border-right: 1px solid #dbdbdb;

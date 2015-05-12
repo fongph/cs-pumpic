@@ -67,7 +67,7 @@
                             <p>
                                 There is no possibility to follow social networks and online chats, where children are exposed to cyberbullying and online predators’ attacks.
                             </p>
-                            <h4 class="media-heading">The Verdict – 6/10</h4>
+                            <h4 class="media-heading">The Verdict – 7.4/10</h4>
                             <p>
                                 The app lacks too many features, which are essential, when it comes to providing kids with comprehensive protection.
                             </p>
@@ -98,7 +98,7 @@
                     
                     <h3 class="heading">Help & Support – <span class="heading-rating">5/10</span></h3>
                     <p>
-                        If you have any question on MobileForceField operation, you can send your application to customer care <a href="mailto:support@mobileforcefield.com">email</a>.
+                        If you have any question on MobileForceField operation, you can send your application to customer care {*<a href="mailto:support@mobileforcefield.com">*}email{*</a>*}.
                         {*If you have any question on MobileForceField operation, you can send your application to customer 
                         care at <a href="mailto:support@mobileforcefield.com">support@mobileforcefield.com</a>*}
                     </p>

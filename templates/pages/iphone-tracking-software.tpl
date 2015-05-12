@@ -83,7 +83,8 @@
                                     </p>
                                   </li>
                                   <li href="#" class="list-group-item pc-pb65">
-                                    <a href="http://{$domain}/iphone-with-jailbreak-monitoring.html" class="list-group-item-link">Learn more <i class="icons ico-arrows"></i></a>
+                                    <a href="http://{$domain}/iphone-with-jailbreak-monitoring.html" 
+                                       class="list-group-item-link a-default">Learn more <i class="icons ico-arrows"></i></a>
                                   </li>
                                 </ul>
                                 <div class="row-pricing-panel">
@@ -175,7 +176,7 @@
                                         <div class="premium_h text-uppercase">
                                             Premium
                                         </div>
-                                        <div class="pricep border-right-sm">
+                                        <div class="pricep border-right-sm {*border-right-ddd*}">
                                             <div class="dtable">
                                                 <div class="dtable-cell">
                                                     <div class="wr_pack">
@@ -292,11 +293,12 @@
                                     </p>
                                   </li>
                                   <li href="#" class="list-group-item pc-pb65">
-                                    <a href="http://{$domain}/icloud-iphone-without-jailbreak-monitoring.html" class="list-group-item-link">Learn more <i class="icons ico-arrows"></i></a>
+                                    <a href="http://{$domain}/icloud-iphone-without-jailbreak-monitoring.html" 
+                                       class="list-group-item-link a-default">Learn more <i class="icons ico-arrows"></i></a>
                                   </li>
                                 </ul>
                                 <div class="row-pricing-panel">
-                                    <div class="basic_wr pricep border-left w100 icloud-box">
+                                    <div class="basic_wr pricep fix-m-left {*border-left*} w100 icloud-box">
                                         <div class="basic_h">
                                             iCloud Solution
                                         </div>
@@ -329,7 +331,7 @@
                                                             <i class="i-price-plans-big-premium"></i>
                                                         </div>
                                                         <div class="item-plan table-column col-xs-sm-8 col-sm-8 col-md-8 col-lg-8">
-                                                            <p class="full">Buy <strong class="text-red">6</strong> or <strong class="text-red">12</strong> month plan 
+                                                            <p class="full" style='line-height: 1.0em;'>Buy <strong class="text-red">6</strong> or <strong class="text-red">12</strong> month plan 
                                                                 <br />and <strong class="text-red">get 2 plans for free</strong></p>
                                                         </div>
                                                     </div>

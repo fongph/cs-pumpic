@@ -5,7 +5,8 @@
                     <span>OS:<strong> iOS</strong></span>
                     <span>Versions:<strong> 6.0 or later {*(jailbreak required)*}</strong></span>
                     <span><strong>iPhones, iPads, iPods Touch</strong></span>
-                    <a href="/compatibility/ios-devices" class="text-succes search-category" data-os="iOS">View list of iOS devices</a>
+                    <a href="/compatibility/ios-devices" 
+                       class="text-succes search-category a-default" data-os="iOS">View list of iOS devices</a>
             </div>
     </div>
     <div class="col-sm-4 col-md-4">
@@ -14,7 +15,8 @@
                     <span>OS:<strong> Android</strong></span>
                     <span>Versions:<strong> 2.2 or later</strong></span>
                     <span><strong>Smartphones and Tablets</strong></span>
-                    <a href="/compatibility/android-devices" class="text-succes search-category" data-os="Android">View list of Android devices</a>
+                    <a href="/compatibility/android-devices" 
+                       class="text-succes search-category a-default" data-os="Android">View list of Android devices</a>
             </div>
     </div>
     {*<div class="col-sm-4 col-md-4">

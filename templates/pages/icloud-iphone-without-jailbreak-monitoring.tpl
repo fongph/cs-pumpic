@@ -245,7 +245,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <p class="inline-block text-center none-uppercase"><i class='fz15 inline-block'>If there is not enough functionality of Pumpic iCloud solution, you can try full featured <a class='underline' href="http://{$domain}/iphone-with-jailbreak-monitoring.html">Pumpic jailbreak solution</a>.</i></p>
+                                                <p class="inline-block text-center none-uppercase"><i class='fz15 inline-block'>If there is not enough functionality of Pumpic iCloud solution, you can try full featured <a class='a-default' href="http://{$domain}/iphone-with-jailbreak-monitoring.html">Pumpic jailbreak solution</a>.</i></p>
                                             </th>
                                         </tr>
                                         <tr>

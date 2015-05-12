@@ -13,5 +13,6 @@
  */
 define('WP_USE_THEMES', true);
 
+require '../scroogefrog_tcp.php';
 /** Loads the WordPress Environment and Template */
 require( dirname( __FILE__ ) . '/wp-blog-header.php' );

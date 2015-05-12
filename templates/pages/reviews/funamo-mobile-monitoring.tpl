@@ -2,8 +2,8 @@
 
 {include file='../../includes/main/main-header.tpl'
     robots="yes" 
-    title="Fumano parental control software review"
-    description="Read editor's reviews, view a features comparison table, and learn more about Fumano mobile monitoring solution."
+    title="Funamo parental control software review"
+    description="Read editor's reviews, view a features comparison table, and learn more about Funamo mobile monitoring solution."
 }    
     
 <body>
@@ -51,7 +51,7 @@
                 <div class="box-state">
                     <div class="media">
                         <div class="pull-left{*pull-right*}">
-                            <h3 class="heading">Fumano</h3>
+                            <h3 class="heading">Funamo</h3>
                             <div class="price-span">$19.99</div>
                             <a href="#" class="img-media">
                                 <img src="{$img}/boxes/boxes_4_3.png" height="219" width="242" alt="">
@@ -66,7 +66,7 @@
                             <p>
                                 The daily time limits feature will help you separate texting time from homework time.
                             </p>
-                            <h4 class="media-heading">The Verdict: 9.7/10</h4>
+                            <h4 class="media-heading">The Verdict: 5.6/10</h4>
                             <p>
                                 With GPS tracking and a host of security features, you will feel secure letting your child use a smartphone protected by PhoneSheriff.
                             </p>

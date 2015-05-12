@@ -126,7 +126,7 @@
                                     </div>
                                     <div class="footer-thumb-ranking">
                                         <div class="btn-ranking">
-                                            <a href="/reviews/fumano-mobile-monitoring.html" class="btn btn-info">Read review</a>
+                                            <a href="/reviews/funamo-mobile-monitoring.html" class="btn btn-info">Read review</a>
                                         </div>
                                     </div>
                                 </div>

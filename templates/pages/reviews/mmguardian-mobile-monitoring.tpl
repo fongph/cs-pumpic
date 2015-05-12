@@ -67,12 +67,12 @@
                             <p>
                                 The app doesn’t support monitoring of social networks and online chats, which makes it impossible to prevent kids from cyberbullies and online predators.
                             </p>
-                            <h4 class="media-heading">The Verdict – 7/10</h4>
+                            <h4 class="media-heading">The Verdict – 6.8/10</h4>
                             <p>
                                 The application is said to be among the best parental control software, though it lacks many important features that ensure all-round protection for children.
                             </p>
                             <div class="media-btn">
-                                <a href="/reviews/fumano-mobile-monitoring.html" class="btn btn-sm btn-success">Next Review &rarr;</a>
+                                <a href="/reviews/funamo-mobile-monitoring.html" class="btn btn-sm btn-success">Next Review &rarr;</a>
                             </div>
                         </div>
                     </div>

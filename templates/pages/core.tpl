@@ -216,6 +216,79 @@
         }
         
         {*
+            Template: INFORMATION BLOCK ( BUTTON TRIAL )
+            Переменные:
+                imgUrl(url): ссылка на изображение. ( WxH: 437x325) * - не больше ОБЯЗАТЕЛЬНОЕ ПОЛЕ
+                imgAlt (string): короткий текст для изображения.
+                imgAlign (string): позиция изображения относительно текста. (left|center|right) *default: center
+                imgVerticalAlign (string): позиция изображения относительно высоты. ( bottom|middle ) *default: middle
+                textAlign (string): позиция текста. ( left|center|right ) *default: right
+                title (string): название блока.
+                description (string): описание баннера.
+                listText (string): список параметров. * - разделитель "|"
+                trial (string): "yes" -  триал баннер. (yes|no)
+                promoBuyBlock (string): Включает кнопку PromoBuy (yes|no) *default: переменная не инцелезирована
+                planPackageBuy (sting): Включает банер пакетов (yes|no) *default: переменная не инцелезирована
+                flagPosition (string): 'left' * - позиция флага относительно тексиа ( описания ). (left|right) default: ''
+                flagName (string): 'gb' * - назначение флага. ( au - Австралия | gb - Великобритания | ca - Канада ) default: ''
+                blockTrial (string): Включает кнопку Trial (yes|no) *default: переменная не инцелезирована
+        *}
+        {include file='../includes/content/info/info-promo.tpl'
+            imgUrl = "header_banners/bg_famaly_427x254.png"
+            imgAlt = "Landing Mobile"
+            imgAlign = "left bottom"
+            imgVerticalAlign = "bottom"
+            textAlign = "left"
+            title = "Cell Phone <br />Monitoring Control App"
+            description = "Keep your family safe and secured with Pumpic. <br />
+                           Track location. View calls and SMS. Follow online activity."
+            promoBuyBlock = "no"
+            planPackageBuy = "no"
+            blockTrial = "yes"
+        }
+        
+        {*
+            Template: INFORMATION BLOCK ( BUTTON QUICK AND SIMPLE )
+            Переменные:
+                imgUrl(url): ссылка на изображение. ( WxH: 437x325) * - не больше ОБЯЗАТЕЛЬНОЕ ПОЛЕ
+                imgAlt (string): короткий текст для изображения.
+                imgAlign (string): позиция изображения относительно текста. (left|center|right) *default: center
+                imgVerticalAlign (string): позиция изображения относительно высоты. ( bottom|middle ) *default: middle
+                textAlign (string): позиция текста. ( left|center|right ) *default: right
+                title (string): название блока.
+                description (string): описание баннера.
+                listText (string): список параметров. * - разделитель "|"
+                trial (string): "yes" -  триал баннер. (yes|no)
+                promoBuyBlock (string): Включает кнопку PromoBuy (yes|no) *default: переменная не инцелезирована
+                planPackageBuy (sting): Включает банер пакетов (yes|no) *default: переменная не инцелезирована
+                flagPosition (string): 'left' * - позиция флага относительно тексиа ( описания ). (left|right) default: ''
+                flagName (string): 'gb' * - назначение флага. ( au - Австралия | gb - Великобритания | ca - Канада ) default: ''
+                blockTrial (string): Включает кнопку Trial (yes|no) *default: переменная не инцелезирована
+                blockQuickAndSimple (string): Включает кнопку QUICK AND SIMPLE (yes|no) *default: переменная не инцелезирована
+        *}
+        {include file='../includes/content/info/info-promo.tpl'
+            imgUrl = "header_banners/bg_famaly_427x254.png"
+            imgAlt = "Landing Mobile"
+            imgAlign = "left bottom"
+            imgVerticalAlign = "bottom"
+            textAlign = "left"
+            title = "Cell Phone <br />Monitoring Control App"
+            description = "Keep your family safe and secured with Pumpic. <br />
+                           Track location. View calls and SMS. Follow online activity."
+            promoBuyBlock = "no"
+            planPackageBuy = "no"
+            blockTrial = "no"
+            blockQuickAndSimple = "yes"
+        }
+        {*
+            Template: BLOCK PLANS
+            Переменные:
+                blockBg (string): Стиль блока ( dark / light ) *default: dark
+        *}
+        {include file='../includes/content/plans.tpl'
+            visible = "true"}
+        
+        {*
             Template: DID YOU KNOW
             Переменные:
                 blockBg (string): Стиль блока ( dark / light ) *default: dark
@@ -273,13 +346,6 @@
                 <p>The Internet is the easiest way for online predators, web swindlers and cyberbullies to contact your children. By making friendship with your kids via social media, it is not hard to find out their email addresses, which is the key to personal data and identity theft. Unfortunately, not many parents realize how important web protection is. These days’ online reality shifts the world around, making new rules for us. If you really want to secure your kids’ happiness, it is for you to consider these rules.</p>
         {EndContent *}
         
-        {*
-            Template: BLOCK PLANS
-            Переменные:
-                blockBg (string): Стиль блока ( dark / light ) *default: dark
-        *}
-        {include file='../includes/content/plans.tpl'}
-
         
         {*
             Template: FLY BUTTONS
@@ -477,7 +543,26 @@
             blockBg = 'light'
             title = ""
             style = "static"
-        }        
+        }  
+        
+        {*
+            Template: BLOCK HOW-GET-PUMPIC-OLD
+            Переменные:
+                blockBg (string): Стиль блока ( dark / light ) *default: dark
+               title (string): название блока.
+        *}
+        {include file='../includes/content/how-get-pumpic_old.tpl'
+            blockBg = 'dark'
+            title = ""
+        } 
+        
+        {*
+            Template: BLOCK HOW-PUMPIC-SECURES
+            Переменные:
+                blockBg (string): Стиль блока ( dark / light ) *default: dark
+        *}
+        {include file='../includes/content/how-pumpic-secures.tpl'
+            blockBg = 'light'} 
           
         {*
             Template: BLOCK HOT-IT-WORK (old)

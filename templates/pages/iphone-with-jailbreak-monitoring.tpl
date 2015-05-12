@@ -694,7 +694,7 @@
                                 <div class="space_line"> </div>
                                 <div class="link_circle_italic2">
                                     <div class="style-links2">
-                                        <span class="circle_ico2"></span><b>Jailbreak</b> and <b>physical access</b> to the target device are required for iOS monitoring. Meanwhile it is not necessary for <a class='underline' href='/icloud-iphone-without-jailbreak-monitoring.html'>monitoring iCloud</a>.
+                                        <span class="circle_ico2"></span><b>Jailbreak</b> and <b>physical access</b> to the target device are required for iOS monitoring. Meanwhile it is not necessary for <a class='a-default' href='/icloud-iphone-without-jailbreak-monitoring.html'>monitoring iCloud</a>.
                                     </div>
                                 </div>
                                 

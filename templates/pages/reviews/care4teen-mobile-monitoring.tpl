@@ -66,7 +66,7 @@
                             <p>
                                 The daily time limits feature will help you separate texting time from homework time.
                             </p>
-                            <h4 class="media-heading">The Verdict: 9.7/10</h4>
+                            <h4 class="media-heading">The Verdict: 2.4/10</h4>
                             <p>
                                 With GPS tracking and a host of security features, you will feel secure letting your child use a smartphone protected by PhoneSheriff.
                             </p>

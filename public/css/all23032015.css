@@ -941,6 +941,10 @@ th .table_title {
     padding: 11px 6px 12px 6px;
 }
 
+.webkit #list-plans-premium-package > section.full { 
+    padding: 11px 6px 11px 6px
+}
+
 #list-plans-premium-package > section.full .list-plans i {
     float: none;
 }
@@ -1077,4 +1081,18 @@ th .table_title {
     border-color: #e8e8e8;
     border-style: solid;
     border-width: 1px 1px 0;
+}
+
+.fix-m-left { 
+    margin-left: -1px; 
+    z-index: 2;
+    display: inline-block;
+    position: relative;
+    border-left: 1px solid #ddd;
+}
+
+@media only screen and (max-width: 992px) { 
+    .fix-m-left {
+        border-left: none;
+    }
 }

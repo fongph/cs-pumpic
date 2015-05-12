@@ -144,7 +144,15 @@
                                     {if isset($promoBuyBlock) && $promoBuyBlock == 'yes'}
                                         {include './blocks/include-blocks.tpl'}
                                         {*{include './blocks/block-trial.tpl'}*}
-                                    {/if}   
+                                    {/if}  
+                                    
+                                    {if isset($blockTrial) && $blockTrial == 'yes'}
+                                        {include './blocks/block-trial.tpl'}
+                                    {/if} 
+                                    
+                                    {if isset($blockQuickAndSimple) && $blockQuickAndSimple == 'yes'}
+                                        {include './blocks/block-quick-and-simple.tpl'}
+                                    {/if}
                                     
                                     {if isset($iCloudSolution) && $iCloudSolution == 'yes'}
                                         {include file='./blocks/block-icloud-solution.tpl' 

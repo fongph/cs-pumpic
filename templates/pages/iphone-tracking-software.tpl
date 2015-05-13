@@ -297,7 +297,7 @@
                                        class="list-group-item-link a-default">Learn more <i class="icons ico-arrows"></i></a>
                                   </li>
                                 </ul>
-                                <div class="row-pricing-panel">
+                                <div class="row-pricing-panel pricing-icloud-solution">
                                     <div class="basic_wr pricep fix-m-left {*border-left*} w100 icloud-box">
                                         <div class="basic_h">
                                             iCloud Solution
@@ -305,13 +305,15 @@
                                         <div class="priceb">
                                             <div class="dtable">
                                                 <div class="dtable-cell">
-                                                <div class="dtable-text text-right">
-                                                    {*<strong class='none-uppercase'>iCloud Solution</strong><br>*}
-                                                     <span>iCloud Solution is provided <br>with Premium subscription only</span>
-                                                </div>
+                                                    <div class="dtable-text text-right">
+                                                        {*<strong class='none-uppercase'>iCloud Solution</strong><br>*}
+                                                         <span>iCloud Solution is provided <br>with Premium subscription only</span>
+                                                    </div>
                                                     <div class="wr_pack">
                                                         <img src="images/premium_pack.png">
                                                     </div>
+                                                </div>
+                                                <div class="dtable-cell">         
                                                     <div class="wr_price_big">
                                                         <span></span>
                                                         <div class="box-currence">

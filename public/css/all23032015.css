@@ -1124,4 +1124,15 @@ th .table_title {
     .fix-m-left {
         border-left: none;
     }
+    
+    .pricing-icloud-solution .priceb > .dtable > .dtable-cell {
+        display: block;
+    }
+    .pricing-icloud-solution .priceb > .dtable > .dtable-cell:first-child {
+        padding-bottom: 5px;
+    }
+    .pricing-icloud-solution .priceb > .dtable > .dtable-cell:last-child { 
+        padding-top: 0px;
+    }
 }
+

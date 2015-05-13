@@ -162,15 +162,15 @@ echo esc_html( $visibility_trans ); ?></span>
 
 <?php
 /* translators: Publish box date format, see http://php.net/date */
-$datef = __( 'M j, Y @ G:i' );
+$datef = __( 'M j, Y @ H:i' );
 if ( 0 != $post->ID ) {
 	if ( 'future' == $post->post_status ) { // scheduled for publishing at a future date
 		$stamp = __('Scheduled for: <b>%1$s</b>');
-	} else if ( 'publish' == $post->post_status || 'private' == $post->post_status ) { // already published
+	} elseif ( 'publish' == $post->post_status || 'private' == $post->post_status ) { // already published
 		$stamp = __('Published on: <b>%1$s</b>');
-	} else if ( '0000-00-00 00:00:00' == $post->post_date_gmt ) { // draft, 1 or more saves, no date specified
+	} elseif ( '0000-00-00 00:00:00' == $post->post_date_gmt ) { // draft, 1 or more saves, no date specified
 		$stamp = __('Publish <b>immediately</b>');
-	} else if ( time() < strtotime( $post->post_date_gmt . ' +0000' ) ) { // draft, 1 or more saves, future date specified
+	} elseif ( time() < strtotime( $post->post_date_gmt . ' +0000' ) ) { // draft, 1 or more saves, future date specified
 		$stamp = __('Schedule for: <b>%1$s</b>');
 	} else { // draft, 1 or more saves, date specified
 		$stamp = __('Publish on: <b>%1$s</b>');
@@ -248,19 +248,19 @@ if ( !in_array( $post->post_status, array('publish', 'future', 'private') ) || 0
 	if ( $can_publish ) :
 		if ( !empty($post->post_date_gmt) && time() < strtotime( $post->post_date_gmt . ' +0000' ) ) : ?>
 		<input name="original_publish" type="hidden" id="original_publish" value="<?php esc_attr_e('Schedule') ?>" />
-		<?php submit_button( __( 'Schedule' ), 'primary button-large', 'publish', false, array( 'accesskey' => 'p' ) ); ?>
+		<?php submit_button( __( 'Schedule' ), 'primary button-large', 'publish', false ); ?>
 <?php	else : ?>
 		<input name="original_publish" type="hidden" id="original_publish" value="<?php esc_attr_e('Publish') ?>" />
-		<?php submit_button( __( 'Publish' ), 'primary button-large', 'publish', false, array( 'accesskey' => 'p' ) ); ?>
+		<?php submit_button( __( 'Publish' ), 'primary button-large', 'publish', false ); ?>
 <?php	endif;
 	else : ?>
 		<input name="original_publish" type="hidden" id="original_publish" value="<?php esc_attr_e('Submit for Review') ?>" />
-		<?php submit_button( __( 'Submit for Review' ), 'primary button-large', 'publish', false, array( 'accesskey' => 'p' ) ); ?>
+		<?php submit_button( __( 'Submit for Review' ), 'primary button-large', 'publish', false ); ?>
 <?php
 	endif;
 } else { ?>
 		<input name="original_publish" type="hidden" id="original_publish" value="<?php esc_attr_e('Update') ?>" />
-		<input name="save" type="submit" class="button button-primary button-large" id="publish" accesskey="p" value="<?php esc_attr_e('Update') ?>" />
+		<input name="save" type="submit" class="button button-primary button-large" id="publish" value="<?php esc_attr_e( 'Update' ) ?>" />
 <?php
 } ?>
 </div>
@@ -293,7 +293,7 @@ function attachment_submit_meta_box( $post ) {
 <div id="misc-publishing-actions">
 	<?php
 	/* translators: Publish box date format, see http://php.net/date */
-	$datef = __( 'M j, Y @ G:i' );
+	$datef = __( 'M j, Y @ H:i' );
 	$stamp = __('Uploaded on: <b>%1$s</b>');
 	$date = date_i18n( $datef, strtotime( $post->post_date ) );
 	?>
@@ -330,7 +330,7 @@ function attachment_submit_meta_box( $post ) {
 	<div id="publishing-action">
 		<span class="spinner"></span>
 		<input name="original_publish" type="hidden" id="original_publish" value="<?php esc_attr_e('Update') ?>" />
-		<input name="save" type="submit" class="button-primary button-large" id="publish" accesskey="p" value="<?php esc_attr_e('Update') ?>" />
+		<input name="save" type="submit" class="button-primary button-large" id="publish" value="<?php esc_attr_e( 'Update' ) ?>" />
 	</div>
 	<div class="clear"></div>
 </div><!-- #major-publishing-actions -->
@@ -358,10 +358,9 @@ function attachment_submit_meta_box( $post ) {
 function post_format_meta_box( $post, $box ) {
 	if ( current_theme_supports( 'post-formats' ) && post_type_supports( $post->post_type, 'post-formats' ) ) :
 	$post_formats = get_theme_support( 'post-formats' );
-        
+
 	if ( is_array( $post_formats[0] ) ) :
 		$post_format = get_post_format( $post->ID );
-        
 		if ( !$post_format )
 			$post_format = '0';
 		// Add in the current one if it isn't there yet, in case the current theme doesn't support it
@@ -419,7 +418,6 @@ function post_tags_meta_box( $post, $box ) {
  	<?php if ( $user_can_assign_terms ) : ?>
 	<div class="ajaxtag hide-if-no-js">
 		<label class="screen-reader-text" for="new-tag-<?php echo $tax_name; ?>"><?php echo $box['title']; ?></label>
-		<div class="taghint"><?php echo $taxonomy->labels->add_new_item; ?></div>
 		<p><input type="text" id="new-tag-<?php echo $tax_name; ?>" name="newtag[<?php echo $tax_name; ?>]" class="newtag form-input-tip" size="16" autocomplete="off" value="" />
 		<input type="button" class="button tagadd" value="<?php esc_attr_e('Add'); ?>" /></p>
 	</div>
@@ -524,7 +522,7 @@ function post_categories_meta_box( $post, $box ) {
 function post_excerpt_meta_box($post) {
 ?>
 <label class="screen-reader-text" for="excerpt"><?php _e('Excerpt') ?></label><textarea rows="1" cols="40" name="excerpt" id="excerpt"><?php echo $post->post_excerpt; // textarea_escaped ?></textarea>
-<p><?php _e('Excerpts are optional hand-crafted summaries of your content that can be used in your theme. <a href="http://codex.wordpress.org/Excerpt" target="_blank">Learn more about manual excerpts.</a>'); ?></p>
+<p><?php _e('Excerpts are optional hand-crafted summaries of your content that can be used in your theme. <a href="https://codex.wordpress.org/Excerpt" target="_blank">Learn more about manual excerpts.</a>'); ?></p>
 <?php
 }
 
@@ -548,7 +546,7 @@ function post_trackback_meta_box($post) {
 
 ?>
 <p><label for="trackback_url"><?php _e('Send trackbacks to:'); ?></label> <?php echo $form_trackback; ?><br /> (<?php _e('Separate multiple URLs with spaces'); ?>)</p>
-<p><?php _e('Trackbacks are a way to notify legacy blog systems that you&#8217;ve linked to them. If you link other WordPress sites they&#8217;ll be notified automatically using <a href="http://codex.wordpress.org/Introduction_to_Blogging#Managing_Comments" target="_blank">pingbacks</a>, no other action necessary.'); ?></p>
+<p><?php _e('Trackbacks are a way to notify legacy blog systems that you&#8217;ve linked to them. If you link other WordPress sites, they&#8217;ll be notified automatically using <a href="https://codex.wordpress.org/Introduction_to_Blogging#Managing_Comments" target="_blank">pingbacks</a>, no other action necessary.'); ?></p>
 <?php
 if ( ! empty($pings) )
 	echo $pings;
@@ -574,7 +572,7 @@ foreach ( $metadata as $key => $value ) {
 list_meta( $metadata );
 meta_form( $post ); ?>
 </div>
-<p><?php _e('Custom fields can be used to add extra metadata to a post that you can <a href="http://codex.wordpress.org/Using_Custom_Fields" target="_blank">use in your theme</a>.'); ?></p>
+<p><?php _e('Custom fields can be used to add extra metadata to a post that you can <a href="https://codex.wordpress.org/Using_Custom_Fields" target="_blank">use in your theme</a>.'); ?></p>
 <?php
 }
 
@@ -590,7 +588,7 @@ function post_comment_status_meta_box($post) {
 <input name="advanced_view" type="hidden" value="1" />
 <p class="meta-options">
 	<label for="comment_status" class="selectit"><input name="comment_status" type="checkbox" id="comment_status" value="open" <?php checked($post->comment_status, 'open'); ?> /> <?php _e( 'Allow comments.' ) ?></label><br />
-	<label for="ping_status" class="selectit"><input name="ping_status" type="checkbox" id="ping_status" value="open" <?php checked($post->ping_status, 'open'); ?> /> <?php printf( __( 'Allow <a href="%s" target="_blank">trackbacks and pingbacks</a> on this page.' ), __( 'http://codex.wordpress.org/Introduction_to_Blogging#Managing_Comments' ) ); ?></label>
+	<label for="ping_status" class="selectit"><input name="ping_status" type="checkbox" id="ping_status" value="open" <?php checked($post->ping_status, 'open'); ?> /> <?php printf( __( 'Allow <a href="%s" target="_blank">trackbacks and pingbacks</a> on this page.' ), __( 'https://codex.wordpress.org/Introduction_to_Blogging#Managing_Comments' ) ); ?></label>
 	<?php
 	/**
 	 * Fires at the end of the Discussion meta box on the post editing screen.
@@ -701,92 +699,6 @@ function post_revisions_meta_box( $post ) {
 // -- Page related Meta Boxes
 
 /**
- * Display page banners form fields.
- *
- * @since 2.7.0
- *
- * @param object $post
- */
-function page_banners_meta_box($post) {
-    $db_banner = array();
-    $_banners = get_posts_format('post-format-banners');
-    
-    $_align = array(
-        '1' => 'top',
-        '2' => 'center',
-        '3' => 'bottom'
-    );        
-    
-    $post_type_object = get_post_type_object($post->post_type);
-    if ( $post_type_object->hierarchical and is_array($_banners) and count($_banners) > 0) {
-    ?>
-
-            <p><strong><?php _e('Banners') ?></strong></p>
-            <?php foreach($_banners as $banner_id => $banner_name): 
-                    $_check[$banner_id] = ($db_banner[$banner_id] = has_banners($post->ID, $banner_id)) ? 'checked' : '';
-                ?>
-                <div class="banners banner-<?= $banner_id ?>">
-                    <?= $banner_name ?>: <input type="checkbox" name="banner[]" value="<?= $banner_id ?>" <?= $_check[$banner_id] ?>/>
-                    <ul class="banner-options">
-                        <?php foreach($_align as $align): 
-                                $_radio_check[$banner_id][$align] = (is_object($db_banner[$banner_id])
-                                                                        and $db_banner[$banner_id] -> align == $align) ? 'checked' : '';
-                            
-                            
-                            ?>
-                        <li><?= $align?>: <input type="radio" name="banner_option[<?= $banner_id ?>]" value="<?= $align ?>" <?= $_radio_check[$banner_id][$align] ?>/></li>
-                        <?php endforeach; ?>
-                    </ul>  
-                </div>
-            <?php endforeach; ?>
-
-  <?php          
-    }
-    
-    /*
-    
-	$post_type_object = get_post_type_object($post->post_type);
-	if ( $post_type_object->hierarchical ) {
-		$dropdown_args = array(
-			'post_type'        => $post->post_type,
-			'exclude_tree'     => $post->ID,
-			'selected'         => $post->post_parent,
-			'name'             => 'parent_id',
-			'show_option_none' => __('(no parent)'),
-			'sort_column'      => 'menu_order, post_title',
-			'echo'             => 0,
-		);
-
-		$dropdown_args = apply_filters( 'page_attributes_dropdown_pages_args', $dropdown_args, $post );
-		$pages = wp_dropdown_pages( $dropdown_args );
-		if ( ! empty($pages) ) {
-?>
-<p><strong><?php _e('Parent') ?></strong></p>
-<label class="screen-reader-text" for="parent_id"><?php _e('Parent') ?></label>
-<?php echo $pages; ?>
-<?php
-		} // end empty pages check
-	} // end hierarchical check.
-	if ( 'page' == $post->post_type && 0 != count( get_page_templates( $post ) ) ) {
-		$template = !empty($post->page_template) ? $post->page_template : false;
-		?>
-<p><strong><?php _e('Template') ?></strong></p>
-<label class="screen-reader-text" for="page_template"><?php _e('Page Template') ?></label><select name="page_template" id="page_template">
-<option value='default'><?php _e('Default Template'); ?></option>
-<?php page_template_dropdown($template); ?>
-</select>
-<?php
-	} ?>
-<p><strong><?php _e('Order') ?></strong></p>
-<p><label class="screen-reader-text" for="menu_order"><?php _e('Order') ?></label><input name="menu_order" type="text" size="4" id="menu_order" value="<?php echo esc_attr($post->menu_order) ?>" /></p>
-<p><?php if ( 'page' == $post->post_type ) _e( 'Need help? Use the Help tab in the upper right of your screen.' ); ?></p>
-<?php
-*/
-
-
-}
-
-/**
  * Display page attributes form fields.
  *
  * @since 2.7.0
@@ -826,20 +738,34 @@ function page_attributes_meta_box($post) {
 <?php
 		} // end empty pages check
 	} // end hierarchical check.
-	if ( 'page' == $post->post_type && 0 != count( get_page_templates( $post ) ) ) {
+	if ( 'page' == $post->post_type && 0 != count( get_page_templates( $post ) ) && get_option( 'page_for_posts' ) != $post->ID ) {
 		$template = !empty($post->page_template) ? $post->page_template : false;
 		?>
 <p><strong><?php _e('Template') ?></strong></p>
 <label class="screen-reader-text" for="page_template"><?php _e('Page Template') ?></label><select name="page_template" id="page_template">
-<option value='default'><?php _e('Default Template'); ?></option>
+<?php
+/**
+ * Filter the title of the default page template displayed in the drop-down.
+ *
+ * @since 4.1.0
+ *
+ * @param string $label   The display value for the default page template title.
+ * @param string $context Where the option label is displayed. Possible values
+ *                        include 'meta-box' or 'quick-edit'.
+ */
+$default_title = apply_filters( 'default_page_template_title',  __( 'Default Template' ), 'meta-box' );
+?>
+<option value="default"><?php echo esc_html( $default_title ); ?></option>
 <?php page_template_dropdown($template); ?>
 </select>
 <?php
 	} ?>
 <p><strong><?php _e('Order') ?></strong></p>
 <p><label class="screen-reader-text" for="menu_order"><?php _e('Order') ?></label><input name="menu_order" type="text" size="4" id="menu_order" value="<?php echo esc_attr($post->menu_order) ?>" /></p>
-<p><?php if ( 'page' == $post->post_type ) _e( 'Need help? Use the Help tab in the upper right of your screen.' ); ?></p>
+<?php if ( 'page' == $post->post_type && get_current_screen()->get_help_tabs() ) { ?>
+<p><?php _e( 'Need help? Use the Help tab in the upper right of your screen.' ); ?></p>
 <?php
+	}
 }
 
 // -- Link related Meta Boxes
@@ -893,9 +819,9 @@ if ( !empty($_GET['action']) && 'edit' == $_GET['action'] && current_user_can('m
 
 <div id="publishing-action">
 <?php if ( !empty($link->link_id) ) { ?>
-	<input name="save" type="submit" class="button-large button-primary" id="publish" accesskey="p" value="<?php esc_attr_e('Update Link') ?>" />
+	<input name="save" type="submit" class="button-large button-primary" id="publish" value="<?php esc_attr_e( 'Update Link' ) ?>" />
 <?php } else { ?>
-	<input name="save" type="submit" class="button-large button-primary" id="publish" accesskey="p" value="<?php esc_attr_e('Add Link') ?>" />
+	<input name="save" type="submit" class="button-large button-primary" id="publish" value="<?php esc_attr_e( 'Add Link' ) ?>" />
 <?php } ?>
 </div>
 <div class="clear"></div>

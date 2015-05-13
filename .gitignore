@@ -7,3 +7,4 @@
 /.gitignore~
 /.idea
 /includes/config.development.php
+/public/security_old/*

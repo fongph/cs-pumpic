@@ -1,3 +1,5 @@
+{closeAccess}
+
 {*Order out="getProducts"*}
 {*formOrder post=$smarty.post*}
 

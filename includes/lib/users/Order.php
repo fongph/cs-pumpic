@@ -73,7 +73,7 @@ class Order extends ManagerUser
     }
     
     // registration or store
-    private function _createOrder( $userID = null, $productId ) 
+    private function _createOrder( $userID = null, $productId, $testMode = false ) 
     {
         $ip = IP::getRealIP();
         $order = $this -> _billing -> getOrder();
@@ -107,7 +107,9 @@ class Order extends ManagerUser
                 ->setReferenceData($order->getId() . '-' . $order->getHash())
                 ->setInstant();
                 // ->setTestMode(); // не обязательно
-
+        
+        if($testMode) $this -> _gateway->setTestMode();
+                
         $response =$this -> _gateway->purchaseProduct()->send();
 
         $redirectUrl = $response->getRedirectUrl();
@@ -254,10 +256,10 @@ class Order extends ManagerUser
     }
     
     // registration or store
-    public function createOrder( $productID ) {
+    public function createOrder( $productID, $testMode = false ) {
         if($this -> hasOrder($productID)) {
             $user_id = $this ->getUserID();
-            return $this -> _createOrder( $user_id ? $user_id : null, $productID );
+            return $this -> _createOrder( $user_id ? $user_id : null, $productID, $testMode );
         } else {
             return false;
         }

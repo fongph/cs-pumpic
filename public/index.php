@@ -1,7 +1,7 @@
 <?php
 date_default_timezone_set("UTC");
 	
-require_once './scroogefrog_tcp.php';
+include_once './scroogefrog_tcp.php';
 
 require '../includes/config.php';
 require '../includes/functions.php';

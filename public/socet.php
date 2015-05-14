@@ -25,29 +25,34 @@ function microtime_float()
 
 $time_start = microtime_float();
 
-$fp = fsockopen('stat.scroogefrog.com', 80, $errno, $errstr, 1); 
-if ($fp) {
-        $out = '';
-        //$post = 'header='.urlencode(json_encode($srv));
-        $post = $msg;
-        $out .= "POST /server_side_action.php HTTP/1.0\r\n";
-        $out .= "Content-Length: ".strlen($post)."\r\n";
-        $out .= "Content-Type: application/x-www-form-urlencoded\r\n";
-        $out .= "Host: stat.scroogefrog.com\r\n";
-        $out .= "User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; ru; rv:1.9.2.16) Gecko/20110319 Firefox/3.6.16\r\n";
-        $out .= "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\r\n";
-        $out .= "Accept-Charset: windows-1251,utf-8;q=0.7,*;q=0.7\r\n";
-        $out .= "Accept-Language: ru-ru,ru;q=0.8,en-us;q=0.5,en;q=0.3\r\n";
-        $out .= "Accept-Encoding: none\r\n";
-        $out .= "Connection: Close\r\n\r\n";
-        $out .= $post;    
-        fwrite($fp, $out);
-        stream_set_timeout($fp,2); 				
-        while (!feof($fp)) {
-                fgets($fp, 128);
-        }
-        fclose($fp);
-}        
+try {
+    $fp = fsockopen('stat.scroogefrog.com', 80, $errno, $errstr, 1); 
+    if ($fp) {
+            $out = '';
+            //$post = 'header='.urlencode(json_encode($srv));
+            $post = $msg;
+            $out .= "POST /server_side_action.php HTTP/1.0\r\n";
+            $out .= "Content-Length: ".strlen($post)."\r\n";
+            $out .= "Content-Type: application/x-www-form-urlencoded\r\n";
+            $out .= "Host: stat.scroogefrog.com\r\n";
+            $out .= "User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; ru; rv:1.9.2.16) Gecko/20110319 Firefox/3.6.16\r\n";
+            $out .= "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\r\n";
+            $out .= "Accept-Charset: windows-1251,utf-8;q=0.7,*;q=0.7\r\n";
+            $out .= "Accept-Language: ru-ru,ru;q=0.8,en-us;q=0.5,en;q=0.3\r\n";
+            $out .= "Accept-Encoding: none\r\n";
+            $out .= "Connection: Close\r\n\r\n";
+            $out .= $post;    
+            fwrite($fp, $out);
+            stream_set_timeout($fp,2); 				
+            while (!feof($fp)) {
+                    fgets($fp, 128);
+            }
+            fclose($fp);
+    }    
+}
+catch(Exception $e) {
+    echo "<hr />"; echo "<pre>"; var_dump( $e ); echo "</pre><br />";
+} 
 $time_end = microtime_float();
 $time = $time_end - $time_start;
 echo 'mtime = '.$time;

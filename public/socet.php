@@ -51,7 +51,10 @@ try {
     }    
 }
 catch(Exception $e) {
-    echo "<hr />"; echo "<pre>"; var_dump( $e ); echo "</pre><br />";
+    echo "<hr />"; 
+    echo "<pre>"; 
+    var_dump( $e ); 
+    echo "</pre><br />";
 } 
 $time_end = microtime_float();
 $time = $time_end - $time_start;

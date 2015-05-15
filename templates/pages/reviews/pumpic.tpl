@@ -20,6 +20,16 @@
             nocache
         }
         
+        {*
+            Template: PHONE
+            Переменные:
+                style (text): стиль блока Phone (blue|black). * - blue 
+        *}
+        {include file='../../includes/content/phone/block-phone.tpl'
+                 style="blue"   
+        } 
+        
+        
         <!-- CONTENT (img: 300x285)-->
         {include file='../../includes/content/info/info-promo.tpl'
             imgUrl = "header_banners/bg-img-phone-star.png"

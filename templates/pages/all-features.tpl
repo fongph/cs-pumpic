@@ -22,6 +22,15 @@
         <div class="bg_white">
             <div class="container">
                 
+                {*
+                    Template: PHONE
+                    Переменные:
+                        style (text): стиль блока Phone (blue|black). * - blue 
+                *}
+                {include file='../includes/content/phone/block-phone.tpl'
+                         style="black block"   
+                } 
+                
                 <div id="block-technological-header"> 
                     <div class="box-hedaer-title">
                         <h2 class="text-center">Cell Phone Monitoring Mobile Application</h2>

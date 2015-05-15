@@ -16,6 +16,15 @@
             nocache
         }
         
+        {*
+            Template: PHONE
+            Переменные:
+                style (text): стиль блока Phone (blue|black). * - blue 
+        *}
+        {include file='../includes/content/phone/block-phone.tpl'
+                 style="blue"   
+        }
+        
     <!-- CONTENT -->
          {include file='../includes/content/info/info-promo.tpl'
             imgUrl = "header_banners/bg_iphone-parental-monitoring.png"
@@ -260,6 +269,29 @@
     <p>As a parent, you always take care of your kids and do your best to protect them from any possible danger. However, when they grow up and get stronger day by day, you become less and less engaged in their lives. Meanwhile, your children become more and more independent.</p>
     <p>Nevertheless, no matter how old and independent your kids are, they will always remain the same in your eyes. You will always try to be there, when help is needed; provide support and assistance whatever it will take.</p>
     <p>To be at hand each and every moment, you give your kid a cell phone. From now on, this small device will define your communication and interaction. In addition, it will open larger horizons for your little child; will show him/her the world as it is or should be, and help explore it through online reality.</p>
+    
+    <ul class="list-content">
+        <li class="img-plus">If you still hesitating to give or not to give your child a mobile phone, note that there 
+            really are a lot of benefits:
+            <ul class="list-green">
+                <li><i class="l-imgages l-phone"></i> you will always be within a call and know what happens to your kid;</li>
+                <li><i class="l-imgages l-messange"></i> your child will be able to stay up to date and communicate with his friends and relatives;</li>
+                <li><i class="l-imgages l-social"></i> having online connection your kid will always stay tuned and current;</li>
+                <li><i class="l-imgages l-write"></i> smartphones can help kids perform and follow their daily tasks;</li>
+                <li><i class="l-imgages l-study"></i> modern mobile phones help children advance their skills, and thus, determine their future profession.</li>
+            </ul>
+        </li>
+        <li class="img-minus">On the other hand, together with mobility and opportunities there come some issues:
+            <ul class="list-red">
+                <li><i class="l-imgages l-mobile"></i> mobile swindlers and online predators might attack your kid through the web;</li>
+                <li><i class="l-imgages l-play"></i> your kid might waste a lot of time playing games, chatting online, or using social networks;</li>
+                <li><i class="l-imgages l-smile"></i> your child might strike inappropriate content in the Internet: watch videos containing porn or violence, read articles with bad words or messages with threats etc.;</li>
+                <li><i class="l-imgages l-close"></i> your kid might be involved in activity you would not approve: commit a crime, form connections with a sect or be forced to go the limit;</li>
+                <li><i class="l-imgages l-list"></i> your child might fall under bad influence and start using drugs or alcohol.</li>
+            </ul>
+        </li>
+    </ul>
+    
     <p>If you still hesitating to give or not to give your child a mobile phone, note that there really are a lot of benefits:</p>
     <ul>
         <li>you will always be within a call and know what happens to your kid;</li>

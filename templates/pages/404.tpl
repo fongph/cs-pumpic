@@ -11,6 +11,14 @@
     <!-- END FLY BLOCKS-->
 	<div class="wrapper">
 	{include file='../includes/main/main-top-menu.tpl'}	
+        {*
+            Template: PHONE
+            Переменные:
+                style (text): стиль блока Phone (blue|black). * - blue 
+        *}
+        {include file='../includes/content/phone/block-phone.tpl'
+                 style="black"   
+        }
 		<div class="very_easy">
 			<div class="container">
 				<div class="row">

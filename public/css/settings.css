@@ -305,3 +305,125 @@ a.a-default:hover {
     .block-list li:last-child { margin-bottom: 10px; }
 }
 
+/* =================== \\ list content =================== */
+.list-content,
+ul.list-green,
+ul.list-red,
+.list-images {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.list-content > li ul {
+    margin-bottom: 0px !important;
+}
+
+.list-content > li.img-plus, 
+.list-content > li.img-minus {
+    background-position: 0px 5px;
+    background-repeat: no-repeat;
+    padding: 10px 0px 10px 40px;
+}
+
+.list-content > li.img-plus {
+    background-image: url("../images/list/plus.png");
+}  
+
+.list-content > li.img-minus {
+    background-image: url("../images/list/minus.png");
+}
+
+ul.list-green li,
+ul.list-red li {  
+    position: relative;
+    background-repeat: no-repeat;
+    padding-left: 30px;
+    padding-bottom: 10px;
+    margin: 10px 0px !important;
+} 
+
+ul.list-green .l-imgages, 
+ul.list-red .l-imgages {
+    display: inline-block;
+    left: 0;
+    position: absolute;
+}
+
+ul.list-green .l-imgages {
+     background-image: url("../images/list/list-green.png"); 
+     width: 24px;
+    height: 24px;
+}
+
+ul.list-green .l-phone {
+    background-position: 0px 0xp;
+}
+ul.list-green .l-messange {
+    background-position: 0 -37px;
+}
+ul.list-green .l-social {
+    background-position: 0 -71px;
+}
+ul.list-green .l-write {
+    background-position: 0 -105px;
+}
+ul.list-green .l-study {
+    background-position: 0 -141px;
+    height: 19px;
+}
+
+ul.list-red .l-imgages { 
+    background-image: url("../images/list/list-red.png");
+    width: 22px;
+    height: 22px;
+} 
+
+ul.list-red .l-mobile {
+    background-position: 0px 0xp;
+}
+ul.list-red .l-play {
+    background-position: 0 -37px;
+}
+ul.list-red .l-smile {
+    background-position: 0 -71px;
+}
+ul.list-red .l-close {
+    background-position: 0 -129px;
+}
+ul.list-red .l-list {
+    background-position: 0 -181px;
+}
+
+.list-images > li {
+    position: relative;
+    margin-left: 89px !important;
+    margin-top: 10px;
+}
+.list-images > li:first-child {
+    margin-top: 0px;
+}
+
+.list-images li > img {
+    display: inline-block;
+    position: absolute;
+}
+
+.list-images .lc-1 {
+/*    background: url("../images/list/lc_1.png") no-repeat;*/
+    width: 75px;
+    height: 79px;
+    left: -89px;
+}
+.list-images .lc-2 {
+/*    background: url("../images/list/lc_2.png") no-repeat;*/
+    width: 79px;
+    height: 70px;
+    left: -89px;
+}
+.list-images .lc-3 {
+/*    background: url("../images/list/lc_3.png") no-repeat;*/
+    width: 79px;
+    height: 49px;
+    left: -89px;
+}

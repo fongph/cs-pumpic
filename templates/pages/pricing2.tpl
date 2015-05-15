@@ -17,6 +17,16 @@
                 cache_id = "includes_main_main-top-menu"
                 nocache
         }
+        
+        {*
+            Template: PHONE
+            Переменные:
+                style (text): стиль блока Phone (blue|black). * - blue 
+        *}
+        {include file='../includes/content/phone/block-phone.tpl'
+                 style="black"   
+        }
+		
         <div class="no_bg">
             <div class="container">
                 <div class="row">

@@ -15,6 +15,14 @@
                 nocache
         }	
         
+        {*
+            Template: PHONE
+            Переменные:
+                style (text): стиль блока Phone (blue|black). * - blue 
+        *}
+        {include file='../includes/content/phone/block-phone.tpl'
+                 style="black"   
+        }
         
                 {include file='../includes/content/how-get-pumpic.tpl'
                                     blockBg = "very_easy"

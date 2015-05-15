@@ -67,7 +67,9 @@ class ManagerUser extends Manager
     protected $_session;
     protected $_di;
     private $_auth;
-    private $_mail_sender;
+    protected $_mail_sender;
+    
+    protected $mail_processor;
     
     public function __construct( $settings = array() ) 
     {
@@ -96,14 +98,14 @@ class ManagerUser extends Manager
         parent::__construct($this -> _pdo);
         
         // mailProcessor
-        $mailProcessor = new RemoteProcessor(
+        $this -> mail_processor = new RemoteProcessor(
                 GlobalSettings::getMailSenderURL(1), 
                 GlobalSettings::getMailSenderSecret(1),
                 $this -> _pdo
         );
         
         // set sender
-        $this -> _mail_sender = new MailSender( $mailProcessor );
+        $this -> _mail_sender = new MailSender( $this -> mail_processor );
         $this -> _mail_sender
                ->setLocale( self::LANG )
                ->setSiteId( self::SITE_ID );
@@ -120,8 +122,8 @@ class ManagerUser extends Manager
     private function getSettingsDB() 
     {
         $_type = 'prod';
-        if (in_array(@$_SERVER['REMOTE_ADDR'], ['127.0.0.1', '::1'])) {
-             // $_type = 'dev';
+        if (in_array(@$_SERVER['REMOTE_ADDR'], ['176.38.120.13', '212.90.60.74', '192.168.40.22', '127.0.0.1', '::1'])) {
+            // $_type = 'dev';
         }
         return $this -> _db[ $_type ];
     }
@@ -397,6 +399,11 @@ class ManagerUser extends Manager
             return false;
     }
     
+    //getUserDataEmail
+    public function getUserDataEmail( $email ) {
+        return $this ->getUserData(self::SITE_ID, $email);
+    }
+    
     // get UserID
     public function getUserID() 
     {
@@ -475,6 +482,15 @@ class ManagerUser extends Manager
                 ->logAuth($authData['id']);
             setcookie('s', 1, time() + 3600 * 6, '/', '.pumpic.com');
         }
+    }
+    
+    public function setLogMailSender($userId, $type) {
+        if($this -> _pdo === null) return;
+        
+        $userId = $this -> _pdo->quote($userId);
+        $messageType = $this -> _pdo->quote($type);
+        
+        $this -> _pdo->exec("INSERT INTO `users_emails_log` SET `user_id` = {$userId}, `type` = {$messageType}");
     }
     
 }

@@ -51,6 +51,9 @@
                                                             <li><a href="https://twitter.com/pumpic_com" class="icons-social i-tw"></a></li>
                                                             <li><a href="https://www.youtube.com/user/pumpicapp" class="icons-social i-youtube"></a></li>
                                                             <li><a href="https://plus.google.com/u/2/b/103434324737023434003/103434324737023434003/posts" class="icons-social i-google"></a></li>
+                                                            <li>
+                                                                <?php include(dirname(__FILE__).'/content/phone/blog-phone-footer.tpl'); ?>
+                                                            </li>
                                                         </ul>
                                                         
 						</div>

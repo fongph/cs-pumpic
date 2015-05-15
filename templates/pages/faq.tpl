@@ -16,6 +16,14 @@
                 cache_id = "includes_main_main-top-menu"
                 nocache
         }	
+        {*
+            Template: PHONE
+            Переменные:
+                style (text): стиль блока Phone (blue|black). * - blue 
+        *}
+        {include file='../includes/content/phone/block-phone.tpl'
+                 style="black"   
+        }
 		<divv class="very_easy">
 			<div class="container">
 				<div class="row">
@@ -37,6 +45,7 @@
                                                     <a class="link_bordered">
                                                         <strong>Press and Media</strong> – <span id="emai-info"></span> {*info@pumpic.com*}
                                                     </a>
+                                                    {include file='../includes/content/phone/block-phone-content.tpl'}
 						</p>
                                             </div>
                                             
@@ -198,7 +207,7 @@
 											<li>
 												<a id="compatibility" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse17">What devices support Pumpic?</a>
 												<div id="collapse17" class="collapse">
-                                                                                                    <p>Pumpic is supported by the majority of smartphones and tablets. To make sure your particular device model is compatible with the application, please visit our <a class="text-link" target="_blank" href="http://{$domain}/compatibility/">Compatibility</a> page or contact our Customer Support Team.</p>
+                                                                                                    <p>Pumpic is supported by the majority of smartphones and tablets. To make sure your particular device model is compatible with the application, please visit our <a class="text-link a-default" target="_blank" href="http://{$domain}/compatibility/">Compatibility</a> page or contact our Customer Support Team.</p>
                                                                                                 </div>
 											</li>
                                                                                         {*
@@ -272,7 +281,7 @@
 											<li>
 												<a id="billing" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse28">Is it possible to get a refund?</a>
 												<div id="collapse28" class="collapse">
-													<p>Pumpic users can request a refund, if their reasons for doing so comply with our <a class="text-link" target="_blank" href="http://{$domain}/policy.html#refund-policy">Refund Policy</a>. You can email your refund request to our Customer Support Team and explain in details why, in your opinion, you qualify for a refund. Our Customer Care will get back to you in the shortest time possible.</p>
+													<p>Pumpic users can request a refund, if their reasons for doing so comply with our <a class="text-link a-default" target="_blank" href="http://{$domain}/policy.html#refund-policy">Refund Policy</a>. You can email your refund request to our Customer Support Team and explain in details why, in your opinion, you qualify for a refund. Our Customer Care will get back to you in the shortest time possible.</p>
 												</div>
 											</li>
 											<li>

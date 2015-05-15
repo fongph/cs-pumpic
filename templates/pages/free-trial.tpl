@@ -18,11 +18,19 @@
             topmenu_active="false"
             cache_id = "includes_main_main-top-menu"
             nocache}	
-            
-            
+        
             <div class="very_easy">
                     <div class="container">
-
+                        
+                        {*
+                            Template: PHONE
+                            Переменные:
+                                style (text): стиль блока Phone (blue|black). * - blue 
+                        *}
+                        {include file='../includes/content/phone/block-phone.tpl'
+                                 style="black block"   
+                        } 
+                        
                          <div class="row">
                             <div class="col-sm-10 col-md-10 col-lg-10 col-lg-offset-1">
                                 

@@ -33,7 +33,7 @@
                 <input type="text" name="phone" value="" />
             </section>
             <div class="block-captcha">
-                <label>Enter the words below <br /><span>Can’t read the words below? <a class="a-update-captcha" attr-width="250" attr-height="39" href="#">Try to refresh</a></span></label>
+                <label>Enter the words below <br /><span>Can’t read the words below? <a class="a-update-captcha a-default" attr-width="250" attr-height="39" href="#">Try to refresh</a></span></label>
 
                 <div class="box-captcha clearfix">
                     <img src="/captcha.html?width=250&height=39" id="img-captcha">

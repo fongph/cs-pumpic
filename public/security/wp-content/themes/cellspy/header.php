@@ -88,6 +88,9 @@
 		include_once('../../templates/includes/blog-top-menu.tpl'); 
 	?>
     
+        <?php 
+		include_once('../../templates/includes/content/phone/blog-phone.tpl'); 
+	?>
     
     <?php /*
     <div class="breadcrumbs">

@@ -216,15 +216,15 @@ $data_hash = [];
 
 var _htmlPopUp = {
     'boxStatusAuth': '<div id="box-status-auth" class="popUp"><div><label class="title gold">Hello!<i class="close small"></i></label></div>'
-        +'<p class="info">You have just logged into Pumpic.com, enjoy your time with us or go straight to your <a href="http://cp.pumpic.com">account</a>.</p>'
+        +'<p class="info">You have just logged into Pumpic.com, enjoy your time with us or go straight to your <a class="a-default" href="http://cp.pumpic.com">account</a>.</p>'
         +'</div>',
     'boxStatusRegistration': '<div id="box-status-registration" class="popUp">'
         +'<div><label class="title gold">Hello!<i class="close small"></i></label></div>'
-        +'<p class="info">You have just registered in Pumpic.com, enjoy your time with us or go straight to your <a href="http://cp.pumpic.com">account</a>.</p>'
+        +'<p class="info">You have just registered in Pumpic.com, enjoy your time with us or go straight to your <a class="a-default" href="http://cp.pumpic.com">account</a>.</p>'
         +'</div>',
     'boxStatusFreeTrialRegistration' : '<div id="box-status-free-trial-registration" class="popUp">'
         +'<div><label class="title gold">Thank you for signing up!<i class="close small"></i></label></div>'
-        +'<p class="info">The email with registration details was sent to '+UserLogin+'.<br /> You can go straight to your <a href="http://cp.pumpic.com">Personal Account</a> now.</p>'
+        +'<p class="info">The email with registration details was sent to '+UserLogin+'.<br /> You can go straight to your <a class="a-default" href="http://cp.pumpic.com">Personal Account</a> now.</p>'
         +'</div>',
     'email_success' : '<div id="box-email-success" class="popUp">'
         +'<div><label class="title gold"> Thank you! <i class="close small"></i></label></div>'
@@ -233,7 +233,7 @@ var _htmlPopUp = {
         +'</div></div>',
     'box_email' : '<div id="box-email" class="popUp">'
         +'<div><label class="title gold"> <b>10%</b> off<i class="close small"></i></label></div>'
-        +'<div class="info text-center">Want to get <a href="#">10% discount</a> right now?<br />Subscribe to our specail promo!'
+        +'<div class="info text-center">Want to get <a class="a-default" href="#">10% discount</a> right now?<br />Subscribe to our specail promo!'
         +'<form class="block-popup-form text-center">'
         +'<div><input id="email" class="required" type="email" name="email" value="" placeholder="email" />'
         +'<div id="email-error" class="error"></div></div><div><button class="button-red btn-default">Save 10% today</button></div>'
@@ -785,7 +785,7 @@ $(document).ready(function(){
          onsubmit: true,
          focusInvalid: false,
          focusCleanup: false,
-         debug: false,
+         debug: true,
        'device-model': {
             required: true
         },

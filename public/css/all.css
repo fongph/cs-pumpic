@@ -6559,3 +6559,182 @@ form.form-contact-us .box-captcha {
         padding-left: 10px;
     }
 }
+
+/* ============= // Phone ================== */
+#box-phone {
+    display: inherit;
+/*    height: auto;*/
+    width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+/*@media (min-width: 768px) {
+    #box-phone {
+        width: 750px;
+    }
+    #box-phone.phone-hedaer {
+        position: absolute;
+    }
+}
+@media (min-width: 992px) {
+    #box-phone {
+        width: 970px;
+    }
+    #box-phone.phone-hedaer {
+        position: absolute;
+    }
+}*/
+@media (min-width: 1200px) {
+    #box-phone {
+        width: 1170px;
+    }
+    #box-phone.phone-hedaer {
+        position: relative;
+    }
+    
+    #box-phone.phone-header-black {
+        position: relative;
+    }
+}
+
+#box-phone-content {
+    
+}
+
+#box-phone-footer {
+    display: inline-block;
+    margin-left: 21px;
+    position: relative;
+    top: 5px;
+}
+
+#box-phone.phone-hedaer .block-phone,
+#box-phone.phone-header-black .block-phone {
+    padding: 11px 26px;
+    display: inline-block;
+    position: absolute;
+    right: 15px;
+    min-width: 239px;
+}
+
+#box-phone.phone-header-black.phb-block {
+    height: 45px;
+    position: relative;
+}
+
+.block-free-trial-form #box-phone.phone-header-black.phb-block,
+.page-login #box-phone.phone-header-black.phb-block {
+    top: -30px;
+}
+
+@media (max-width: 1200px) { 
+    #box-phone {
+        display: inline-block;
+        width: 100%;
+    }
+    
+    #box-phone.phone-hedaer {
+        position: absolute;
+    }
+    
+    #box-phone.phone-hedaer .block-phone,
+    #box-phone.phone-header-black .block-phone {
+        display: inline-block;
+        float: none;
+        right:0;
+        left: 50%;
+        margin-left: -115px;
+        padding: 11px 26px;
+        position: relative;
+    }
+    
+    
+}
+
+#box-phone.phone-hedaer .bg-phone,
+#box-phone.phone-header-black .bg-phone {
+    opacity: 0.5;
+    background: #efefef;
+    z-index: 10;
+    -webkit-border-radius: 0px 0px 25px 25px;
+    -moz-border-radius: 0px 0px 25px 25px;
+    border-radius: 0px 0px 25px 25px;
+    -webkit-box-shadow: 0px 1px 2px #e5e8e9;
+    -moz-box-shadow: 0px 1px 2px #e5e8e9;
+    box-shadow: 0px 1px 2px #e5e8e9;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin-left: -26px;
+    margin-right: -26px;
+    display: inline-block;
+    top: 0px;
+    
+}
+
+#box-phone.phone-header-black .bg-phone { 
+    opacity: 1;
+}
+
+#box-phone .block-phone > span,
+#box-phone-content .block-phone > span {
+    display: inline-block;
+    position: relative;
+    z-index: 20;
+}
+
+#box-phone .block-phone > .p-flag,
+#box-phone-content .block-phone > .p-flag {
+    width: 25px;
+    height: 13px;
+    margin-right: 9px;
+}
+
+#box-phone.phone-hedaer .block-phone > .p-flag,
+#box-phone.phone-hedaer .block-phone > .p-number {
+    background-image: url("../images/phone/1.png");
+    background-repeat: no-repeat;
+} 
+
+#box-phone.phone-header-black .block-phone > .p-flag,
+#box-phone.phone-header-black .block-phone > .p-number,
+#box-phone-content .block-phone > .p-flag,
+#box-phone-content .block-phone > .p-number {
+    background-image: url("../images/phone/2.png");
+    background-repeat: no-repeat;
+}
+    
+#box-phone.phone-hedaer .block-phone > .p-number, 
+#box-phone.phone-header-black .block-phone > .p-number,
+#box-phone-content .block-phone > .p-number {
+    background-position: -33px center;
+    color: #fff;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: lighter;
+    padding-left: 21px;
+    height: 18px;
+}
+
+#box-phone.phone-header-black .block-phone > .p-number,
+#box-phone-content .block-phone > .p-number,
+#box-phone-footer .block-phone > .p-number {
+    color: #4d4f5b;
+}
+
+#box-phone-footer .block-phone > span {
+    display: inline-block;
+    position: relative;
+}
+
+#box-phone-footer .block-phone > .p-number {
+    background: url("../images/phone/3.png") no-repeat;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: lighter;
+    padding-left: 21px;
+    height: 18px;
+}

@@ -149,9 +149,15 @@ class Phpmail extends Settings
                 
                 $_params = array_merge( $_params, array('uid' => $_uid) );
                 
+                
+                
                 $this ->setSendmail(array( 'subject' => 'Website request #'.$_uid.' - '.$_params['email'], 
                                             'uid' => $_uid,
                                             'params' =>  serialize($_params) ), "id = ". (int)$sm_arr['id']);
+                
+                // log in ControlAdmin
+                if($user = $this -> _order ->getUserDataEmail( $params['email'] ) and isset($user['id']))
+                    $this -> _order ->setLogMailSender($user['id'], 'Compatibility_pumpic_sendUser');
                 
                 // sendMail Api (go support)
                 $_data = $this ->setData($params['email'], 
@@ -311,7 +317,9 @@ class Phpmail extends Settings
                                             'uid' => $_uid,
                                             'params' =>  serialize($_params) ), "id = ". (int)$sm_arr['id']);
                 
-               
+               // log in ControlAdmin
+                if($user = $this -> _order ->getUserDataEmail( $params['email'] ) and isset($user['id']))
+                    $this -> _order ->setLogMailSender($user['id'], 'contactUs_pumpic_sendUser');
                 
                 // sendMail Api (go support)
                 $_data = $this ->setData(

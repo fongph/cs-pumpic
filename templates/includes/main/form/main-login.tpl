@@ -24,7 +24,7 @@
     </div>
     
     <ul class="links">
-        <li><a href="/restore.html">Forgot password?</a></li>
+        <li><a class="a-default" href="/restore.html">Forgot password?</a></li>
         {*<li><a href="/registration.html{$getUrl}">Don't have account yet?</a></li>*}
     </ul>
     

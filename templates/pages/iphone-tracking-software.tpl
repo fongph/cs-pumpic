@@ -18,6 +18,15 @@
             nocache
         }
         
+        {*
+            Template: PHONE
+            Переменные:
+                style (text): стиль блока Phone (blue|black). * - blue 
+        *}
+        {include file='../includes/content/phone/block-phone.tpl'
+                 style="blue"   
+        }
+        
         <!-- CONTENT -->
         {include file='../includes/content/info/info-promo.tpl'
             imgUrl = "header_banners/iphone-tracking-software.png"
@@ -82,9 +91,9 @@
                                         <span>Multi-featured real-time iOS monitoring with filtering and blocking options.</span>
                                     </p>
                                   </li>
-                                  <li href="#" class="list-group-item pc-pb65">
+                                  <li href="#" class="list-group-item pc-pb65 text-center">
                                     <a href="http://{$domain}/iphone-with-jailbreak-monitoring.html" 
-                                       class="list-group-item-link a-default">Learn more <i class="icons ico-arrows"></i></a>
+                                       class="list-group-item-link a-default">Learn more<i class="icons ico-arrows"></i></a>
                                   </li>
                                 </ul>
                                 <div class="row-pricing-panel">
@@ -292,9 +301,9 @@
                                         <span>Simple iCloud monitoring that does not require jailbreak of the target device.</span>
                                     </p>
                                   </li>
-                                  <li href="#" class="list-group-item pc-pb65">
+                                  <li href="#" class="list-group-item pc-pb65 text-center">
                                     <a href="http://{$domain}/icloud-iphone-without-jailbreak-monitoring.html" 
-                                       class="list-group-item-link a-default">Learn more <i class="icons ico-arrows"></i></a>
+                                       class="list-group-item-link a-default">Learn more<i class="icons ico-arrows"></i></a>
                                   </li>
                                 </ul>
                                 <div class="row-pricing-panel pricing-icloud-solution">

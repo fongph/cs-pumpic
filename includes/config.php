@@ -54,6 +54,7 @@ $config = array(
                 // pricing
                 'store.html'  => 'pricing2.php',
                 'store-trial.html'  => 'store-trial.php',
+                'store-test.html'  => 'store-test.php',
                 //'pricing2.html'  => 'pricing2.php', 
                 // opening-soon-thanks.html
                 'opening-soon-thanks.html' => 'opening-soon-thanks.php',
@@ -99,6 +100,9 @@ $config = array(
         'host'      => '188.40.64.2',
         'user'      => 'pumpic_blog_user',
         'password'  => '57ge8j9SNg9EkhryWA3KV9ZB9NUue6',
+//        'host'      => '127.0.0.1',
+//        'user'      => 'root',
+//        'password'  => 'password',
         'options' => array(
             PDO::MYSQL_ATTR_INIT_COMMAND => 'set names utf8;',
             PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,

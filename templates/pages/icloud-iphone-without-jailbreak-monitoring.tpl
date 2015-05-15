@@ -19,6 +19,15 @@
             nocache
         }
         
+        {*
+            Template: PHONE
+            Переменные:
+                style (text): стиль блока Phone (blue|black). * - blue 
+        *}
+        {include file='../includes/content/phone/block-phone.tpl'
+                 style="blue"   
+        }
+        
         <!-- CONTENT -->
         {include file='../includes/content/info/info-promo.tpl'
             imgUrl = "header_banners/icloud-iphone-monitoring-without-jailbreak.png"

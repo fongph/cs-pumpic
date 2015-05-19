@@ -1141,3 +1141,8 @@ th .table_title {
     }
 }
 
+.icloud-iphone-without-jailbreak-monitoring .basic_wr .basic_fe .list_price-no-link li, 
+.icloud-iphone-without-jailbreak-monitoring .premium_wr .premium_fe .list_price-no-link li{
+    min-height: 70px;  
+    height: 70px;
+}

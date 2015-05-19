@@ -339,6 +339,7 @@ class Compatibility {
             
             // add features
             foreach($_models as $key => $_item):
+                //$_res[$key]['count'] = ceil(count( $_models )/4);
                 $_res[$key] = self::phoneDataPrepare($_item);
             endforeach;
             
@@ -355,7 +356,9 @@ class Compatibility {
             foreach($cats as $_item) {
                 if($models = $this ->getModelCatID((int)$_item['id'])) {
                     $_data[] = array(
+                        'cat_id' => $_item['id'],
                         'cat_name' => $_item['name'],
+                        'count' => ceil(count($models) / 4),
                         'models' => $models,
                     );
                 }

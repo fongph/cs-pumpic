@@ -1680,4 +1680,27 @@ $('form[name="send_find_phone"] button.event-submit').click(function(){
       });      
    }
    
+   // tabs compatibility
+   $('#temp-1 .bc-tabs .item-tab a, #temp-1 .bc-tabs .item-tab span, #temp-2 > ul > li > a, #temp-2 > ul > li > span').on('click', function() {
+      // clear all active
+      var _itab = $(this).parent(), _data_cat_id = _itab.attr('data-cat-id');
+      $.each($('#temp-1 .bc-tabs .item-tab, #temp-2 > ul > li, #temp-1 #tab-content > div'), function(key, val) {
+         if($(val).hasClass('active')) $(val).removeClass('active');
+      }); 
+      
+      if($('#temp-2 > ul > li ul').is(':visible')) {
+          $('#temp-2 > ul > li ul').slideUp('slow');
+      } 
+      
+      if(_itab.children('ul').is(':not(visible)')) {
+          _itab.children('ul').slideDown('slow');
+      }
+      
+      if(!_itab.hasClass('active')) {
+        $('#temp-1 .bc-tabs section > div[data-cat-id="'+_data_cat_id+'"], #temp-2 > ul > li[data-cat-id="'+_data_cat_id+'"]').addClass('active');
+        $('#temp-1 #tab-content > div[data-cat-id="'+_data_cat_id+'"]').addClass('active');
+      }  
+     
+   });
+   
 }); //

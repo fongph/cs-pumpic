@@ -1171,16 +1171,19 @@
                                     </ul>
                                     
                                     <div class='block-info'>
-                                        <p>Enjoy Pumpic application on iPhones, iPads and iPods Touch with no need to jailbreak the target device. Supported features:</p>
+                                        <p>Enjoy Pumpic application on iPhones, iPads and iPods Touch with no need to jailbreak the target device. 
+                                            Supported features:</p>
                                         <ul>
                                             <li><span class="block ltr">Text message monitoring <br /><span class='text-normal'>&lpar;SMS, MMS, and iMessages&rpar;</span></span></li>
                                             <li>Call monitoring</li>
-                                            <li>Contacts list</li>
-                                            <li>Browser history</li>
+                                            <li>Contact list</li>
+                                            <li>Browsing history</li>
                                             <li>Bookmarks list</li>
                                             <li>Calendar events</li>
+                                            <li>Photos</li>
                                             <li>WhatsApp</li>
                                             <li>Skype</li>
+                                            <li>View Demo</li>
                                         </ul>
                                         {*<ul>
                                             <li>Track every single email your kid sends or receives. Check</li>

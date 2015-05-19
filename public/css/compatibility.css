@@ -1,0 +1,207 @@
+.block-compatibility {}
+
+/* -- // temp 1 -- */
+#temp-1 {}
+#temp-1 .bc-header {
+/*    display: inline-block;
+    background: #4d4f5b;
+    position: relative;
+    width: 100%;*/
+}
+#temp-1 .bc-tabs {
+/*    display: inline-block;
+    background: #4d4f5b;*/
+    position: relative;
+    width: 100%;
+}
+#temp-1 .bc-tabs section {
+    width: 25%;
+    float: left;
+    background: #4d4f5b;
+}
+#temp-1 .bc-tabs section > .item-tab.active { 
+  background: #16a89e;
+}
+
+#temp-1 .bc-tabs section > .item-tab:first-child {
+/*    border-top: 2px solid #61636e;*/
+}
+
+#temp-1 .bc-tabs section > .item-tab {
+    border-right: 1px solid #61636e;
+    border-bottom: 1px solid #61636e; 
+    text-align: center;
+}
+
+#temp-1 .bc-tabs section > .item-tab:last-child {
+    border-bottom: 0px;
+}
+
+#temp-1 .bc-tabs section:last-child > .item-tab {
+    border-right: 0px;
+}
+
+#temp-1 .bc-tabs section > .item-tab.active a {
+    color: #fff;
+}
+#temp-1 .bc-tabs section > .item-tab a {
+    color: #16a89e;
+    font-size: 17px;
+    line-height: 17px;
+    font-weight: 300;
+    padding: 10px 0px;
+    display: inline-block;
+}
+
+#temp-1 .bc-body {
+    background: #f9f9f9;
+    display: inline-block;
+    position: relative;
+    width: 100%;
+}
+#temp-1 .bc-body ul {
+/*    display: inline-block;
+    margin: 0px;
+    padding: 0px;*/
+/*    padding: 5px 0px 10px;*/
+/*    width: 100%;*/
+
+    padding: 5px 0px 5px;
+    margin: 0px;
+    float: left;
+    width: 25%;
+    border-right: 1px solid #ededed;
+}
+/*#temp-1 .bc-body ul:last-child {
+    border-right: 0px;
+}*/
+#temp-1 .bc-body ul > li {
+    list-style: inside;
+    padding: 5px 30px 5px;
+/*    width: 25%;*/
+/*    float: left;*/
+/*    border-right: 1px solid #ededed;*/
+    height: auto;
+/*    padding-top: 10px;*/
+/*    min-height: 40px;
+    height: 60px;*/
+    
+}
+
+#temp-1 .bc-body ul > li:nth-child(4n) {
+    border-right: 0px;
+}
+
+#temp-1 .bc-body ul > li:last-child {
+/*    padding-bottom: 10px;*/
+}
+
+#temp-1 .bc-body ul > li span, 
+#temp-1 .bc-body ul > li a {
+    text-decoration: none;
+    color:#525252;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1em;
+/*    vertical-align: middle;*/
+}
+
+#temp-1 .bc-body .tab-content > .active {
+    display: inline-block;
+    width: 100%;    
+}
+
+/* ============ // temp 2 mobile version =============== */
+#temp-2 {
+    display: inline-block;
+    width: 100%;
+    position: relative;
+}
+#temp-2 ul {
+    margin: 0px;
+    padding: 0px;
+}
+#temp-2 > ul > li {
+    list-style: none;
+}
+
+#temp-2 ul li > span,
+#temp-2 ul li > a {
+    text-align: center;
+}
+
+#temp-2 > ul > li > span,
+#temp-2 > ul > li > a { 
+    display: inline-block;
+    background: #4d4f5b;
+    border-bottom: 1px solid #61636e;
+    padding: 10px;
+    color: #27958f;
+    font-size: 17px;
+    line-height: 17px;
+    font-weight: 300;
+    width: 100%;
+}
+
+#temp-2 > ul > li > span:hover,
+#temp-2 > ul > li > a:hover {
+    cursor: pointer;
+}
+
+#temp-2 > ul > li.active > a,
+#temp-2 > ul > li.active > span {
+    background: #16a89e;
+    color: #fff;
+}
+
+#temp-2 > ul > li.active > a,
+#temp-2 > ul > li.active > span,
+#temp-2 > ul > li:last-child > a,
+#temp-2 > ul > li:last-child > span {
+    border-bottom: 0px;
+}
+
+#temp-2 > ul > li ul {
+    display: none;
+    background: #f9f9f9;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#temp-2 > ul > li.active ul {
+    display: block;
+}
+
+#temp-2 > ul > li ul li {
+    list-style: inside;
+    padding: 6px 20px;
+}
+
+#temp-2 > ul > li ul > li > a,
+#temp-2 > ul > li ul > li > span {
+    color: #525252;
+    font-size: 15px;
+    line-height: 1em;
+    font-weight: 400;
+}
+/* ========= // responsv  ========== */
+@media only screen and (max-width: 480px) {
+    #temp-1 { display: none; }
+    #temp-2 { display: block; } 
+}
+@media (min-width: 468px) {
+    #temp-1 { display: none; }
+    #temp-2 { display: block; } 
+}
+@media (min-width: 768px) { 
+    #temp-1 { display: none; }
+    #temp-2 { display: block; }
+}
+@media (min-width: 992px) {
+    #temp-1 { display: block; }
+    #temp-2 { display: none; }
+}
+@media (min-width: 1200px) {
+    #temp-1 { display: block; }
+    #temp-2 { display: none; }
+}

@@ -234,6 +234,7 @@
                                                                 <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Calls <span>Follow in- and outbound calls.</span>
                                                                 </li>
                                                                 <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Contacts <span>View existing contacts.</span></li>
+                                                                <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Photos <span>View camera shots and downloaded photos.</span></li>
                                                                 <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Skype <span>Monitor personal, group messages, and calls.</span></li>    
                                                             </ul>
                                                         </div>
@@ -264,7 +265,7 @@
                                                     <ul>
                                                         {*<li><b>Skype</b><i class="coming-soon-icons cs-ico-skype"></i><span>Follow personal, group messages and calls.</span></li>
                                                         <li><b>WhatsApp</b><i class="coming-soon-icons cs-ico-whatsapp"></i><span>Follow personal messages and group chats.</span></li>*}
-                                                        <li><div><b>Photos</b><i class="coming-soon-icons cs-ico-photos"></i></div><span>View camera shots and downloaded photos.</span></li>
+                                                        {*<li><div><b>Photos</b><i class="coming-soon-icons cs-ico-photos"></i></div><span>View camera shots and downloaded photos.</span></li>*}
                                                         <li><div><b>Notes</b><i class="coming-soon-icons cs-ico-notes"></i></div><span>View notes kept on the target device.</span></li>
                                                         
                                                         {*<li><b>Skype</b><i class="icons ico-skype"></i> <span>Follow personal, group messages and calls.</span></li>

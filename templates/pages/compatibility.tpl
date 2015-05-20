@@ -112,7 +112,7 @@
                                             
                                             <li>
                                                 {if $model.custom_text && count($model.features) > 0}
-                                                    <a href="http://{$domain}/compatibility/{$model.alies}/">{$model.name}</a>
+                                                    <a onClick="window.location.href = 'http://{$domain}/compatibility/{$model.alies}/'">{$model.name}</a>
                                                 {else}
                                                     <span>{$model.name}</span> 
                                                 {/if}

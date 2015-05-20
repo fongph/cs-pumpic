@@ -28,7 +28,8 @@ class Order extends ManagerUser
     private $storeId;
     
     private $referer;
-    
+    private $landing;
+
     public static $_data = array();
     
 //     private $_db = array(
@@ -72,6 +73,23 @@ class Order extends ManagerUser
         }    
     }
     
+    // landing
+    public function setLanding( $value ) {
+        $this -> landing = $value;
+        return $this;
+    }
+    
+    public function getLanding() {
+        return $this -> landing;
+    }
+    
+    private function unsetLanding() {
+        if(isset($_COOKIE['landing'])) {
+            setcookie("landing", false, -1, '/' );
+            unset($_COOKIE['landing']);
+        }    
+    }
+    
     // registration or store
     private function _createOrder( $userID = null, $productId, $testMode = false ) 
     {
@@ -86,15 +104,18 @@ class Order extends ManagerUser
                 -> setLocation( IP::getCountry($ip) ) 
                 -> save();
          
-//        // save referer 
-        if($this ->getReferer()) { 
+//        // save referer and landing
+        if($this ->getReferer() and $this ->getLanding()) { 
             $referer = $this -> _billing -> getReferer(); 
             $referer -> setOrder($order)
                 ->setReferer( $this ->getReferer() )
-                -> save(); 
+                ->setLanding( $this ->getLanding() )    
+                ->save(); 
         }
         
         $this -> unsetReferer();
+        $this -> unsetLanding();
+        
         
         $orderProduct = $this -> _billing -> getOrderProduct();
         $orderProduct->setOrder($order)

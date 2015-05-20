@@ -26,6 +26,12 @@ function dispatch($urlParams, $config){
 //            }
         }    
         
+        // landing
+        if (!isset($_COOKIE['landing']) && isset($_SERVER['HTTP_HOST'], $_SERVER['REQUEST_URI'])) {
+            $url = 'http' . (isset($_SERVER['HTTPS']) ? 's' : '') . '://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
+            setcookie("landing", $url, time() + 3600 * 1, '/', '.pumpic.com');
+        }
+        
         
         // fix url
         if(is_array($urlParams['uriArr']) 

@@ -26,138 +26,203 @@
         }
         
 <div class="very_easy">
-                <div class="container">
-                        <div class="row">
-                                <div class="col-lg-10 col-lg-offset-1">
-                                        <div class="row">
-                                                <h2>Compatibility</h2>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-lg-12 pb20 intro-compatibility">
-                                                <span>Pumpic is compatible with all major smartphones and tablets. Operating systems supported: <b>Android (smartphone and tablets)</b> starting from <b>2.2</b> version, 
-                                                    <b>iOS (iPhones, iPad, iPods Touch)</b> starting from <b>6.0</b> version. This page is a partial list of phones and devices that are compatible with Pumpic.</span>
-                                            </div>
-                                        </div>
-                                    
-                                        {include file='../includes/main/main-compatibility-filters.tpl'}
-                                    
-                                        <div class="row">
-                                                <h2>Search</h2>
-                                        </div>
-                                        
-                                        <div class="row">
-                                                <div class="col-lg-12">
-                                                       {include file='../includes/main/form/main-compatibility-search.tpl'
-                                                            cache_id = "main-compatibility-search"
-                                                        nocache}
-                                                </div>
-                                        </div>
-                                    
-                                        <div class="row">
-                                            <div class="block-info-compatibility">
-                                                <h2>Popular models supported</h2>
-                                                <span>sorted by popularity</span>
-                                            </div>    
-                                        </div>
-                                    
-                                        <!-- #log -->
-                                        <div class="row">
-                                            <div id="log"></div>
-                                        </div>
-                                        <!-- end -->
-                                    
-                                        <!-- BLOCK NEW LIST COMPATIBILYTI -->
-                                        <div class='row'>
-                                            <div class="box-get-search-result clearfix">
-                                            {nocache}
-                                                <div class="col-sm-12 col-md-12 col-lg-12">
-                                                    {foreach from=$phones item=phone key=key}
-                                                        {assign 'iteration' $key + 1}
-                                                        <ul id="lists-compatibility" class="option_list">
-                                                            <li><span>{$phone.cat_name}</span>
-                                                                <ul>
-                                                                    {foreach from=$phone.models item=model}
-                                                                        <li class="mobile_tooltip"> 
-                                                                            {if $model.custom_text && count($model.features) > 0}
-                                                                                <a {*target="_blank"*} href="http://{$domain}/compatibility/{$model.alies}/">{$model.name}</a>
-                                                                            {else}
-                                                                                <label>{$model.name}</label> 
-                                                                            {/if}
-                                                                        </li>
-                                                                    {/foreach}
-                                                                </ul>
-
-                                                            </li>
-                                                        </ul>
-                                                        
-                                                        {if $iteration % $cols == 0}     
-                                                            </div><div class="col-sm-12 col-md-12 col-lg-12">
-                                                        {/if}
-                                                        
-                                                    {/foreach} 
-                                                </div>    
-                                            {/nocache}
-                                            </div>
-                                            <div class="box-navigations">
-                                                <ul class="pagination"></ul>
-                                            </div>
-                                        </div>
-                                        
-                                        <!-- search result -->
-                                        {*<div class="row">
-                                            <h2 class="result-title">Most popular smartphones</h2>
-                                            <div class="box-get-search-result clearfix">
-                                            {nocache}    
-                                                {foreach from=$phones item=phone}
-                                                    <div class="col-sm-3 col-md-3 col-xs-6" id="search-result-item">
-                                                        <div class="thumbnail">
-                                                            <a class="img_thumb" href="/compatibility/{$phone.uri_name}/" target="_blank">
-                                                                <img height="202" width="90" alt="{$phone.name}" title="{$phone.name}" src="//{$api_device._domain}/{$api_device.path_img}/{$phone.m_img}">
-                                                            </a>
-                                                            <div class="caption">
-                                                                <h3><a href="/compatibility/{$phone.uri_name}/" target="_blank">{$phone.name}</a></h3>
-                                                                <span>OS: <strong>{$phone.os}</strong></span>
-                                                                <span>Versions: <strong>{$phone.version}</strong></span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                {/foreach}
-                                            {/nocache}    
-                                            </div>
-                                            <div class="box-navigations">
-                                                <ul class="pagination">
-                                                {nocache}    
-                                                    {foreach from=$pages item=page}
-                                                        {if $page === false}
-                                                            <li class="disabled"><span class="ellipse">…</span></li>
-                                                        {elseif $page == $currentPage}
-                                                            <li class="active"><span class="current">{$page+1}</span></li>
-                                                        {else}
-                                                            <li><a href="/compatibility.html{if $page}?page={$page}{/if}" class="page-link" href="#page={$page+1}">{$page+1}</a></li>
-                                                        {/if}
-                                                    {/foreach}
-                                                {/nocache}    
-                                                </ul>
-                                            </div>
-                                        </div>*}
-                                        <!-- end -->
-                                </div>
-                        </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 col-lg-offset-1">
+                <div class="row">
+                        <h2>Compatibility</h2>
                 </div>
-                <div class="row row_top_border">
-                    <div class="container">
-                        <div class="col-lg-10 col-lg-offset-1">
-                            <div class="row">
-                                <div class="form">
-                                    {include file='../includes/main/form/main-compatibility-send-find-phone.tpl'
-                                        cache_id = "main-compatibility-send-find-phone"
-                                        nocache} 
-                                </div>
-                            </div>
-                        </div>
+                <div class="row">
+                    <div class="col-lg-12 pb20 intro-compatibility">
+                        <span>Pumpic is compatible with all major smartphones and tablets. Operating systems supported: <b>Android (smartphone and tablets)</b> starting from <b>2.2</b> version, 
+                            <b>iOS (iPhones, iPad, iPods Touch)</b> starting from <b>6.0</b> version. This page is a partial list of phones and devices that are compatible with Pumpic.</span>
                     </div>
                 </div>
+
+                {include file='../includes/main/main-compatibility-filters.tpl'}
+
+                <div class="row">
+                        <h2>Search</h2>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-12">
+                       {include file='../includes/main/form/main-compatibility-search.tpl'
+                            cache_id = "main-compatibility-search"
+                        nocache}
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="block-info-compatibility">
+                        <h2>Popular models supported</h2>
+                        <span>sorted by popularity</span>
+                    </div>    
+                </div>
+
+                <!-- #log -->
+                <div class="row">
+                    <div id="log"></div>
+                </div>
+                <!-- end -->
+
+                <!-- BLOCK NEW LIST COMPATIBILYTI -->
+                <div class='row'>
+                    <div class="block-compatibility col-lg-12 col-md-12 col-sm-12">
+                        
+                        <!-- // template-1 -->
+                        <div id="temp-1">
+                            {*nocache*}
+                            <div class="bc-header">
+                                
+                            <div id="tabs" class="bc-tabs" data-tabs="tabs">
+                                <section>
+                                {foreach from=$phones item=phone key=key}
+                                    {assign 'iteration' $key + 1}
+                                
+                                    <div data-cat-id="{$phone.cat_id}" class="item-tab {if $key == 0}active{/if}">
+                                        <a href="#{$phone.cat_id}" data-toggle="tab">{$phone.cat_name}</a>
+                                    </div>
+                                    {*<div class="item-tab"><a href="#orange" data-toggle="tab">Orange</a></div>*}
+                                
+                                {if $iteration % $cols_cats == 0}     
+                                    </section><section>
+                                {/if}
+                                
+                                
+                                {* if $iteration < 2}  {/if *}
+                                
+                                {*<section>
+                                    <div class="item-tab"><a href="#black" data-toggle="tab">Black</a></div>
+                                    <div class="item-tab"><a href="#test" data-toggle="tab">Test</a></div>
+                                </section>*}
+                                {/foreach} 
+                                </section>
+                            </div> <!-- #tabs -->
+                                
+                            </div>
+                            
+                            <div id="tab-content" class="tab-content bc-body">
+                                {foreach from=$phones item=phone key=key}
+                                <div class="tab-pane {if $key == 0}active{/if}" data-cat-id="{$phone.cat_id}">
+                                    <table><tr><td><ul>
+                                        {assign var=miteration value=1}
+                                        {assign var=mtd value=3}
+                                        {foreach from=$phone.models item=model key=mkey}
+                                            
+                                            <li>
+                                                {if $model.custom_text && count($model.features) > 0}
+                                                    <a href="http://{$domain}/compatibility/{$model.alies}/">{$model.name}</a>
+                                                {else}
+                                                    <span>{$model.name}</span> 
+                                                {/if}
+                                            </li>
+                                            {if $miteration % $phone.count == 0}     
+                                                </ul></td><td><ul>
+                                                {assign var=mtd value=$mtd-1}        
+                                            {/if}
+                                            
+                                            {assign var=miteration value=$miteration+1}
+                                            
+                                        {/foreach}
+                                        
+                                    </ul></td>
+                                      
+                                    {if $mtd} 
+                                        {for $foo=1 to $mtd}
+                                            <td></td>
+                                        {/for}
+                                    {/if}
+                                        
+                                        </tr></table>
+                                        
+                                </div>  
+                                {/foreach}
+                                
+                                <div class="clear"></div>
+                            </div>
+                            {*/nocache*}
+                        </div> <!-- #temp-1 -->
+                        <!-- end -->
+                        <!-- // template-2 -->
+                        <div id="temp-2">
+                            
+                            <ul>
+                                {foreach from=$phones item=phone key=key}
+                                <li data-cat-id="{$phone.cat_id}" class="{if $key == 0}active{/if}">
+                                    <span>{$phone.cat_name}</span>
+                                    <ul>
+                                        {foreach from=$phone.models item=model}
+                                        <li>
+                                            {if $model.custom_text && count($model.features) > 0}
+                                                <a href="http://{$domain}/compatibility/{$model.alies}/">{$model.name}</a>
+                                            {else}
+                                                <span>{$model.name}</span> 
+                                            {/if}
+                                        </li>
+                                        {/foreach}
+                                    </ul>
+                                </li>
+                                {/foreach}
+                            </ul>
+                            
+                        </div> <!-- #temp-2 -->
+                        
+                        
+                    </div>
+                    
+                    {*<div class="box-get-search-result clearfix">
+                    {nocache}
+                        <div class="col-sm-12 col-md-12 col-lg-12">
+                            {foreach from=$phones item=phone key=key}
+                                {assign 'iteration' $key + 1}
+                                <ul id="lists-compatibility" class="option_list">
+                                    <li><span>{$phone.cat_name}</span>
+                                        <ul>
+                                            {foreach from=$phone.models item=model}
+                                                <li class="mobile_tooltip"> 
+                                                    {if $model.custom_text && count($model.features) > 0}
+                                                        <a href="http://{$domain}/compatibility/{$model.alies}/">{$model.name}</a>
+                                                    {else}
+                                                        <label>{$model.name}</label> 
+                                                    {/if}
+                                                </li>
+                                            {/foreach}
+                                        </ul>
+
+                                    </li>
+                                </ul>
+
+                                {if $iteration % $cols == 0}     
+                                    </div><div class="col-sm-12 col-md-12 col-lg-12">
+                                {/if}
+
+                            {/foreach} 
+                        </div>    
+                    {/nocache}
+                    </div>
+                    <div class="box-navigations">
+                        <ul class="pagination"></ul>
+                    </div>*}
+                </div>
+
+            </div>
         </div>
+    </div>
+    <div class="row row_top_border">
+        <div class="container">
+            <div class="col-lg-10 col-lg-offset-1">
+                <div class="row">
+                    <div class="form">
+                        {include file='../includes/main/form/main-compatibility-send-find-phone.tpl'
+                            cache_id = "main-compatibility-send-find-phone"
+                            nocache} 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
     
 	<!-- FOOTER -->
         {*

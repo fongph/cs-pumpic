@@ -181,6 +181,18 @@ function hasUser() {
     return $_result;
 }
 
+function isPhone() {
+    require_once '../../includes/lib/users/ManagerUser.php';
+    $obj = new includes\lib\users\ManagerUser( array() );
+    $_result = false;
+    
+    if($obj ->isPhone()) {
+        $_result = true;
+    }
+    
+    return $_result;
+}
+
 function userNotice() {
     require_once '../../includes/lib/users/ManagerUser.php';
     $obj = new includes\lib\users\ManagerUser( array() );    

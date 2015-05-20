@@ -934,6 +934,13 @@ function hasAccess() {
     return $_result;
 }
 
+/* isPhone */
+function smarty_modifier_isPhone($params, $template) { 
+    require_once 'lib/users/ManagerUser.php';
+    $obj = new includes\lib\users\ManagerUser( array() );
+    $phone = $obj ->isPhone();
+    return ((int)$phone) ? $phone : '';
+}
 
 /* ------ // block Content --------- */
 function smarty_function_Content($params, $template) {

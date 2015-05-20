@@ -493,6 +493,11 @@ class ManagerUser extends Manager
         $this -> _pdo->exec("INSERT INTO `users_emails_log` SET `user_id` = {$userId}, `type` = {$messageType}");
     }
     
+    public function isPhone() {
+        $show = $this -> _pdo-> query("SELECT `value` FROM `options` WHERE `name` = 'pumpic-phone-show' LIMIT 1") -> fetch();
+        return (is_array($show) and count($show) > 0) ? $show['value'] : 0;
+    }
+    
 }
 
 class Params implements \ArrayAccess 

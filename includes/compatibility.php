@@ -6,14 +6,16 @@
  * @var $config array
  * @var $urlParams array
  */
-
- $smarty->caching = false;
- $smarty->compile_check = false;
- $smarty->force_compile = false;
- $smarty->debugging = false;
  
 use Models\Compatibility;
 require dirname( __DIR__ ).'/vendor/autoload.php';
+
+// echo "<pre>"; var_dump( $smarty ); echo "</pre>";
+
+ $smarty->caching = true;
+ $smarty->compile_check = false;
+ $smarty->force_compile = false;
+ $smarty->debugging = false;
 
 $compatibility = new Compatibility(new PDO(
     "mysql:dbname={$config['db_phones']['dbname']};host={$config['db_phones']['host']}",
@@ -47,11 +49,21 @@ $smarty->assign('currentPage', $currentPage, false);
 $smarty->assign('pages', $paginationList, false);
 */
 
-$cat_phones = $compatibility->getCategoryModels();
-$smarty->assign('phones', $cat_phones, false);
-$smarty->assign("cols", 5);
+// clearCahce
+if($smarty ->isCached('compatibility.tpl', 'compatibility_'.date("dmY", strtotime("now"))))
+        $smarty -> clearCache('compatibility.tpl', 'compatibility_'.date("dmY", strtotime("now")));
 
-// domain
-$smarty->assign('domain', $config['domain']);
-$smarty->assign('api_device', $config['api_device']);
-$smarty->display('compatibility.tpl');
+$cache_id = 'compatibility_'.date("dmY", strtotime("+1 day"));
+// $compatibility->getCategoriesCount();
+if(!$smarty ->isCached('compatibility.tpl', $cache_id)) {
+     $cat_phones = $compatibility->getCategoryModels();
+    $smarty->assign('phones', $cat_phones, false);
+    //$cats = $compatibility->getCategories();
+    //$smarty->assign('phones', $cats, false);
+    $smarty->assign("cols_cats", 6);
+
+    // domain
+    $smarty->assign('domain', $config['domain']);
+    $smarty->assign('api_device', $config['api_device']);
+}
+$smarty->display('compatibility.tpl', $cache_id);

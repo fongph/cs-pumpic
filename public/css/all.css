@@ -6738,3 +6738,19 @@ form.form-contact-us .box-captcha {
     padding-left: 21px;
     height: 18px;
 }
+
+@media (max-width: 480px) {
+    .box-socials li:last-child {
+        width: 100%;
+        display: inline-block;
+    }
+    #box-phone-footer {
+        
+        margin: 10px 0px;
+        text-align: left;
+    }
+    #box-phone-footer .block-phone > .p-number {
+        text-align: left;
+        
+    }
+}

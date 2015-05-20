@@ -314,6 +314,17 @@ class Compatibility {
         return $result;
     }
     
+    public function getCategoriesCount() {
+        $cat_count = $this->db->query("
+            SELECT COUNT(id) as count
+            FROM `phones_category`  
+            WHERE `hidden` = 0 ORDER BY `sort`")->fetch();
+        if(is_array($cat_count) and count($cat_count) > 0) {
+            return $cat_count['count'];
+        } else
+            return false;
+    }
+    
     public function getCategories() {
         $categoties = $this->db->query("
             SELECT *
@@ -359,6 +370,7 @@ class Compatibility {
                         'cat_id' => $_item['id'],
                         'cat_name' => $_item['name'],
                         'count' => ceil(count($models) / 4),
+                        'm_count' => count($models),
                         'models' => $models,
                     );
                 }
@@ -366,6 +378,7 @@ class Compatibility {
                 
             }
         }
+        
         return $_data;
     }
     

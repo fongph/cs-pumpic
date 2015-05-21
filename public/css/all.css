@@ -1944,6 +1944,13 @@ textarea {
   vertical-align: middle;
   font-size: 19px;
 }
+
+.list_category li a:active,
+.list_category li a:focus {
+    color: #16a89e;
+    text-decoration: none;
+}
+
 @media only screen and (max-width: 480px) {
   .list_category li a {
     font-size: 16px;
@@ -6601,7 +6608,7 @@ form.form-contact-us .box-captcha {
 }
 
 #box-phone-content {
-    
+    display: inline-block;
 }
 
 #box-phone-footer {

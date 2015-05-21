@@ -271,23 +271,23 @@
     <p>To be at hand each and every moment, you give your kid a cell phone. From now on, this small device will define your communication and interaction. In addition, it will open larger horizons for your little child; will show him/her the world as it is or should be, and help explore it through online reality.</p>
     
     <ul class="list-content">
-        <li class="img-plus">If you still hesitating to give or not to give your child a mobile phone, note that there 
+        <li class="img-plus"><img src="{$img}/list/plus.png" width="30" height="29" alt="Mobile Phone Benefits">If you still hesitating to give or not to give your child a mobile phone, note that there 
             really are a lot of benefits:
             <ul class="list-green">
-                <li><i class="l-imgages l-phone"></i> you will always be within a call and know what happens to your kid;</li>
-                <li><i class="l-imgages l-messange"></i> your child will be able to stay up to date and communicate with his friends and relatives;</li>
-                <li><i class="l-imgages l-social"></i> having online connection your kid will always stay tuned and current;</li>
-                <li><i class="l-imgages l-write"></i> smartphones can help kids perform and follow their daily tasks;</li>
-                <li><i class="l-imgages l-study"></i> modern mobile phones help children advance their skills, and thus, determine their future profession.</li>
+                <li><img class="l-phone" width="24" height="22" src="{$img}/list/l-g-1.png" alt="Be Within a Call" /> you will always be within a call and know what happens to your kid;</li>
+                <li><img class="l-messange" width="24" height="20" src="{$img}/list/l-g-2.png" alt="Children Communication" /> your child will be able to stay up to date and communicate with his friends and relatives;</li>
+                <li><img class="l-social" width="19" height="19" src="{$img}/list/l-g-3.png" alt="Online Connection" /> having online connection your kid will always stay tuned and current;</li>
+                <li><img class="l-write" width="19" height="19" src="{$img}/list/l-g-4.png" alt="Daily Task Schedule" /> smartphones can help kids perform and follow their daily tasks;</li>
+                <li><img class="l-study" width="22" height="17" src="{$img}/list/l-g-5.png" alt="Learning Online" /> modern mobile phones help children advance their skills, and thus, determine their future profession.</li>
             </ul>
         </li>
-        <li class="img-minus">On the other hand, together with mobility and opportunities there come some issues:
+        <li class="img-minus"><img src="{$img}/list/minus.png" width="30" height="29" alt="Cell Phone Issues">On the other hand, together with mobility and opportunities there come some issues:
             <ul class="list-red">
-                <li><i class="l-imgages l-mobile"></i> mobile swindlers and online predators might attack your kid through the web;</li>
-                <li><i class="l-imgages l-play"></i> your kid might waste a lot of time playing games, chatting online, or using social networks;</li>
-                <li><i class="l-imgages l-smile"></i> your child might strike inappropriate content in the Internet: watch videos containing porn or violence, read articles with bad words or messages with threats etc.;</li>
-                <li><i class="l-imgages l-close"></i> your kid might be involved in activity you would not approve: commit a crime, form connections with a sect or be forced to go the limit;</li>
-                <li><i class="l-imgages l-list"></i> your child might fall under bad influence and start using drugs or alcohol.</li>
+                <li><img class="l-mobile" width="18" height="21" src="{$img}/list/l-r-1.png" alt="Online Predators" /> mobile swindlers and online predators might attack your kid through the web;</li>
+                <li><img class="l-play" width="22" height="22" src="{$img}/list/l-r-2.png" alt="Excessive Gaming" /> your kid might waste a lot of time playing games, chatting online, or using social networks;</li>
+                <li><img class="l-smile" width="19" height="19" src="{$img}/list/l-r-3.png" alt="Explicit Internet Content" /> your child might strike inappropriate content in the Internet: watch videos containing porn or violence, read articles with bad words or messages with threats etc.;</li>
+                <li><img class="l-close" width="19" height="19" src="{$img}/list/l-r-4.png" alt="Harmful Web Activity" /> your kid might be involved in activity you would not approve: commit a crime, form connections with a sect or be forced to go the limit;</li>
+                <li><img class="l-list" width="19" height="19" src="{$img}/list/l-r-5.png" alt="Drugs Online" /> your child might fall under bad influence and start using drugs or alcohol.</li>
             </ul>
         </li>
     </ul>

@@ -321,18 +321,26 @@ ul.list-red,
 
 .list-content > li.img-plus, 
 .list-content > li.img-minus {
-    background-position: 0px 5px;
-    background-repeat: no-repeat;
+/*    background-position: 0px 5px;
+    background-repeat: no-repeat;*/
     padding: 10px 0px 10px 40px;
+    position: relative;
 }
 
-.list-content > li.img-plus {
+.list-content > li.img-plus > img, 
+.list-content > li.img-minus > img
+{
+    margin-top: -5px;
+    margin-left: -40px;    
+    position: absolute;
+} 
+/*.list-content > li.img-plus {
     background-image: url("../images/list/plus.png");
 }  
 
 .list-content > li.img-minus {
     background-image: url("../images/list/minus.png");
-}
+}*/
 
 ul.list-green li,
 ul.list-red li {  
@@ -351,48 +359,54 @@ ul.list-red .l-imgages {
 }
 
 ul.list-green .l-imgages {
-     background-image: url("../images/list/list-green.png"); 
-     width: 24px;
-    height: 24px;
+/*     background-image: url("../images/list/list-green.png"); */
+/*     width: 24px;
+    height: 24px;*/
 }
 
 ul.list-green .l-phone {
-    background-position: 0px 0xp;
+/*    background-position: 0px 0xp;*/
 }
 ul.list-green .l-messange {
-    background-position: 0 -37px;
+/*    background-position: 0 -37px;*/
 }
 ul.list-green .l-social {
-    background-position: 0 -71px;
+/*    background-position: 0 -71px;*/
 }
 ul.list-green .l-write {
-    background-position: 0 -105px;
+/*    background-position: 0 -105px;*/
 }
 ul.list-green .l-study {
-    background-position: 0 -141px;
-    height: 19px;
+/*    background-position: 0 -141px;
+    height: 19px;*/
 }
 
 ul.list-red .l-imgages { 
-    background-image: url("../images/list/list-red.png");
-    width: 22px;
-    height: 22px;
+/*    background-image: url("../images/list/list-red.png");*/
+/*    width: 22px;
+    height: 22px;*/
 } 
 
 ul.list-red .l-mobile {
-    background-position: 0px 0xp;
+/*    background-position: 0px 0xp;*/
 }
 ul.list-red .l-play {
-    background-position: 0 -37px;
+/*    background-position: 0 -37px;*/
 }
 ul.list-red .l-smile {
-    background-position: 0 -71px;
+/*    background-position: 0 -71px;*/
 }
 ul.list-red .l-close {
-    background-position: 0 -129px;
+/*    background-position: 0 -129px;*/
 }
 ul.list-red .l-list {
-    background-position: 0 -181px;
+/*    background-position: 0 -181px;*/
+}
+
+ul.list-green > li > img,
+ul.list-red > li > img {
+    position: absolute;
+    margin-left: -30px;
 }
 
 .list-images > li {
@@ -427,3 +441,14 @@ ul.list-red .l-list {
     height: 49px;
     left: -89px;
 }
+
+legend {
+    margin-bottom: 0px;
+    padding-bottom: 20px;
+}
+
+.send_find_phone fieldset > legend,
+.form-contact-us fieldset > legend { 
+    text-align: center;
+}
+

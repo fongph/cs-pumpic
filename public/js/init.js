@@ -692,34 +692,82 @@ $(document).ready(function(){
     });
 
     // choose categoey
-     $('.list_category li a').on('click', function(event) {
-         event.preventDefault();
-         var _hash = $(this).attr('href').split('#');
+    $('.list_category > li > a').on('click', function(event){
+        event.preventDefault();
+        var _hash = $(this).attr('href').split('#'), 
+            _index = $(this).closest('li').index();
+        
+        // console.log('index = '+_index);
          
-         if($(this).parent().hasClass('active')) {
-             $(this).parent().removeClass('active');
-             $('.box_category ul:not(.list-items) li').show();
-         } else {
-             $.each($('.list_category ul li a'), function() {
-                if($(this).parent().hasClass('active'))
-                    $(this).parent().removeClass('active');
-             }); // clear active
-             
-             $(this).parent().addClass('active');
-             $('.box_category ul:not(.list-items) > li').hide();
-             if(_hash.length > 1) {
+        // clear all active 
+        $.each($('.list_category > li').not(":eq("+ _index +")"), function() {
+            if($(this).hasClass('active'))
+                $(this).removeClass('active');
+            
+            if($(this).children('a').attr('data-toggled') == 'on') {
+                $(this).children('a').attr('data-toggled', 'off');
+            }
+        }); // clear active 
+        
+        // all add attr off
+         
+        if (!$(this).attr('data-toggled') || $(this).attr('data-toggled') == 'off'){
+           // alert('off > on');
+               $(this).attr('data-toggled','on');
+               
+            $(this).parent().addClass('active');
+            $('.box_category > ul > li').hide();
+            
+            if(_hash.length > 1) {
                 if(_hash[1] == 'all') {
-                    $('.box_category ul:not(.list-items) > li').show();
+                    $('.box_category > ul > li').show();
                 } else {
-                    $('.box_category ul:not(.list-items) > li').find('#'+_hash[1]).parents('li').show();
+                    $('.box_category > ul > li').find('#'+_hash[1]).closest('li').show();
                 }
-                 
-                
-             }
-         }     
-         
-         return false;
-     });
+            }
+               
+        }
+        else if ($(this).attr('data-toggled') == 'on'){
+           // alert('on > off');
+               $(this).attr('data-toggled','off');
+               
+                //if($(this).parent().hasClass('active'))
+                    $(this).parent().removeClass('active');
+               $('.box_category > ul > li').show();
+        }
+        
+        return false;
+    });
+    
+//    
+//     $('.list_category > li > a').on('click', function(event) {
+//         event.preventDefault();
+//         var _hash = $(this).attr('href').split('#');
+//         
+//         $.each($('.list_category > li'), function() {
+//            if($(this).hasClass('active'))
+//                $(this).removeClass('active');
+//         }); // clear active
+//         
+//         if($(this).parent().hasClass('active')) {
+//             $(this).parent().removeClass('active');
+//             $('.box_category > ul > li').show();
+//         } else {
+//             $(this).parent().addClass('active');
+//             $('.box_category > ul > li').hide();
+//             if(_hash.length > 1) {
+//                if(_hash[1] == 'all') {
+//                    $('.box_category > ul > li').show();
+//                } else {
+//                    $('.box_category > ul > li').find('#'+_hash[1]).closest('li').show();
+//                }
+//                 
+//                
+//             }
+//         }     
+//         
+//         return false;
+//     });
     
     // якори
     $('a.anchor').on("click", function(e){
@@ -1683,23 +1731,42 @@ $('form[name="send_find_phone"] button.event-submit').click(function(){
    // tabs compatibility
    $('#temp-1 .bc-tabs .item-tab a, #temp-1 .bc-tabs .item-tab span, #temp-2 > ul > li > a, #temp-2 > ul > li > span').on('click', function() {
       // clear all active
-      var _itab = $(this).parent(), _data_cat_id = _itab.attr('data-cat-id');
+      var _itab = $(this).parent(),
+          _this = $(this),
+          _data_cat_id = _itab.attr('data-cat-id');
       $.each($('#temp-1 .bc-tabs .item-tab, #temp-2 > ul > li, #temp-1 #tab-content > div'), function(key, val) {
          if($(val).hasClass('active')) $(val).removeClass('active');
       }); 
-      
-      if($('#temp-2 > ul > li ul').is(':visible')) {
-          $('#temp-2 > ul > li ul').slideUp('slow');
-      } 
-      
-      if(_itab.children('ul').is(':not(visible)')) {
-          _itab.children('ul').slideDown('slow');
-      }
       
       if(!_itab.hasClass('active')) {
         $('#temp-1 .bc-tabs section > div[data-cat-id="'+_data_cat_id+'"], #temp-2 > ul > li[data-cat-id="'+_data_cat_id+'"]').addClass('active');
         $('#temp-1 #tab-content > div[data-cat-id="'+_data_cat_id+'"]').addClass('active');
       }  
+      
+      // clear all items
+//            $.each($('#temp-2 > ul > li ul'), function(key, value) {
+//                $(value).slideUp();
+//            });
+      
+//      if($('#temp-2 > ul > li ul').is(':visible')) {
+//          $('#temp-2 > ul > li ul').slideUp('slow');
+//      } 
+      
+      if(_itab.children('ul').is(':not(visible)')) {
+          _itab.children('ul').slideDown('slow', function() {
+              
+                $.each($('#temp-2 > ul > li').not(':eq('+ $(this).parent().index() +')').children('ul'), function(key, value) {
+                $(value).slideUp();
+                });
+
+                // scroll to active
+                $('html, body').stop().animate({
+                    scrollTop: _this.offset().top
+                }, 1000);
+          });
+      }
+      
+      
      
    });
    

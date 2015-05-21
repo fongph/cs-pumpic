@@ -16,6 +16,7 @@
     <meta charset="<?php bloginfo( 'charset' ); ?>" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <?php /*<meta name="SKYPE_TOOLBAR" content ="SKYPE_TOOLBAR_PARSER_COMPATIBLE" /> */ ?>
     <title><?php wp_title( '|', true, 'right' ); ?> <?php /* | Sign up for Pumpic Blog */ ?></title>
 
     <link rel="shortcut icon" type="image/png" href="<?php echo getStaticUrl();?>/images/favicon.png"/>

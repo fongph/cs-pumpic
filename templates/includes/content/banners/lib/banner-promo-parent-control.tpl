@@ -10,7 +10,7 @@
                     <div>
                         Keep your
                         <span>family safe</span>
-                        <img class="promo-pointer pc-version" src="{$img}/button_pointer.png"/>
+                        <img class="promo-pointer pc-version" src="{$img}/button_pointer.gif"/>
                     </div>
                 </div>
                 <div id="promo-item" class="promo-button col-sm-2 col-md-2 col-lg-2">

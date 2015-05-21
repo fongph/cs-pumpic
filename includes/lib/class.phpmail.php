@@ -13,6 +13,10 @@ use includes\lib\CDb as DB;
 class Phpmail extends Settings 
 {  
     CONST start_id = 11701;
+    
+    CONST COMPATIBILITY_START_ID = 100000;
+    CONST CONTACT_US_START_ID = 10000;
+    
     CONST mail_support = 'support@pumpic.com';
     CONST mail_noreply = 'noreply@pumpic.com';
     
@@ -132,10 +136,10 @@ class Phpmail extends Settings
                    // 'subject'        => [ 'contactUs_pumpic' => 'Contact US #pp '.$_id], 
                 );
                 
-                if($old_id = $this ->getMaxUID( 'Compatibility_pumpic' ) and $old_id['uid'] > 0) {
-                    $_uid = $old_id['uid'] + 1; 
+                if($opt_value = $this ->getOptionValue( 'Compatibility_pumpic' ) and $opt_value >= self::COMPATIBILITY_START_ID) {
+                    $_uid = $opt_value + 1; 
                 } else {
-                    $_uid = self::start_id;
+                    $_uid = self::COMPATIBILITY_START_ID;
                 }
                 
                 if(!$sm_arr = $this ->saveDB(array(
@@ -151,7 +155,7 @@ class Phpmail extends Settings
                 
                 
                 
-                $this ->setSendmail(array( 'subject' => 'Website request #'.$_uid.' - '.$_params['email'], 
+                $this ->setSendmail(array( 'subject' => 'Compatibility request #C'.$_uid.' - '.$_params['email'], 
                                             'uid' => $_uid,
                                             'params' =>  serialize($_params) ), "id = ". (int)$sm_arr['id']);
                 
@@ -163,7 +167,7 @@ class Phpmail extends Settings
                 $_data = $this ->setData($params['email'], 
                                         self::mail_support, 
                                         'Compatibility_pumpic', 
-                                        '', 
+                                        $params['email'], 
                                         $_params) -> sendMAil();
                 
                 if(!$this ->saveDB(array(
@@ -185,6 +189,9 @@ class Phpmail extends Settings
                         'Compatibility_pumpic_sendUser', 
                         '', 
                         $_params ) -> sendMAil();
+                
+                // updateOptions
+                $this ->updateOptionValue('Compatibility_pumpic', $_uid);
                 
                 if($_data === true && $user_data === true) {
                     $this -> _messange['success'] =  'Ticket #'. $_uid .' has been successfully sent.<br />
@@ -295,10 +302,10 @@ class Phpmail extends Settings
                    // 'subject'        => [ 'contactUs_pumpic' => 'Contact US #pp '.$_id], 
                 );
                 
-                if($old_id = $this ->getMaxUID( 'contactUs_pumpic' ) and $old_id['uid'] > 0) {
-                    $_uid = $old_id['uid'] + 1; 
+                if($opt_value = $this ->getOptionValue( 'contactUs_pumpic' ) and $opt_value >= self::CONTACT_US_START_ID) {
+                    $_uid = $opt_value + 1; 
                 } else {
-                    $_uid = self::start_id;
+                    $_uid = self::CONTACT_US_START_ID;
                 }
                 
                 if(!$sm_arr = $this ->saveDB(array(
@@ -313,7 +320,7 @@ class Phpmail extends Settings
                 // $_uid = ($sm_arr['uid'] > self::start_id) ? $sm_arr['uid'] ++ : self::start_id + $sm_arr['uid'];
                 $_params = array_merge( $_params, array('uid' => $_uid) );
                 
-                $this ->setSendmail(array( 'subject' => 'Website request #'.$_uid.' - '.$_params['email'], 
+                $this ->setSendmail(array( 'subject' => 'Website request #W'.$_uid.' - '.$_params['email'], 
                                             'uid' => $_uid,
                                             'params' =>  serialize($_params) ), "id = ". (int)$sm_arr['id']);
                 
@@ -348,7 +355,8 @@ class Phpmail extends Settings
                         '', 
                         $_params ) -> sendMAil();
                 
-                
+                // updateOptions
+                $this ->updateOptionValue('contactUs_pumpic', $_uid);
                 
                 if($_data === true and $user_data === true) {
                     $this -> _messange['success'] = 'Ticket #'. $_uid .' has been successfully sent.<br />
@@ -468,6 +476,29 @@ class Phpmail extends Settings
             return $_row[0];
         } else 
             return false; 
+    }
+    
+    
+    function getOptionValue( $type ) {
+        if(empty($type)) return false;
+        $type = htmlspecialchars(trim( $type ));
+        $_row = $this -> _pdo -> query("SELECT value FROM `sendmail_options` WHERE `type` = '". $type."'");
+        if(is_array($_row) and count($_row) > 0) {
+            return $_row[0]['value'];
+        } else 
+            return false; 
+    }
+    
+    function updateOptionValue($type, $value) {
+        if(empty($type)) return false;
+        $type = htmlspecialchars(trim( $type ));
+        if((int)$value) :
+            $_query = "UPDATE `sendmail_options` SET `value` = ".(int)$value." WHERE `type` = '". $type ."'";
+            if($this -> _pdo -> query( $_query )) {
+                return true;
+            } else
+                return false;
+        endif;
     }
     
     function getMaxUID( $type ) {

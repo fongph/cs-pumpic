@@ -16,7 +16,7 @@
                                         <!-- #{$foo} -->    
                                         <div class="slide">
                                             <div class="bgIpad {if isset($bgTab)}{$bgTab}{else}bgAndroid{/if}">
-                                                <img src="{$img}/slider_home/{$foo}.png" alt="{$foo}.png">
+                                                <img src="{$img}/slider_home/{$foo}.jpg" alt="{$foo}.jpg">
                                             </div>
                                         </div>
                                         {/for} 

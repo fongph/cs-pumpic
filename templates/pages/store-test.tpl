@@ -199,9 +199,9 @@
                                                                     </li>
                                                                     {/foreach}
                                                                 </ul>
-                                                                <button class="btn btn-default ga-action-click" 
+                                                                <button class="btn btn-default ga-action-submit" 
                                                                         ga-action ="click"
-                                                                        ga-category="store"
+                                                                        ga-category="store test"
                                                                         ga-label="buy basic"
                                                                         value="true" type="submit" name="price[submit]">Buy Basic</button>
                                                                 <div class="show_basic_features"><a href="#">Show Basic features</a></div>
@@ -297,9 +297,9 @@
                                                                     </li>
                                                                     {/foreach}
                                                                 </ul>
-                                                                <button class="btn btn-default ga-action-click" 
+                                                                <button class="btn btn-default ga-action-submit" 
                                                                         ga-action ="click"
-                                                                        ga-category="store"
+                                                                        ga-category="store test"
                                                                         ga-label="buy basic"
                                                                         value="true" type="submit" name="price[submit]">Buy Basic</button>
                                                                 </form>
@@ -370,9 +370,9 @@
                                                                     </li>
                                                                     {/foreach}
                                                                 </ul>
-                                                                <button class="btn btn-default ga-action-click" 
+                                                                <button class="btn btn-default ga-action-submit" 
                                                                         ga-action ="click"
-                                                                        ga-category="store"
+                                                                        ga-category="store test"
                                                                         ga-label="buy premium"
                                                                         value="true" type="submit" name="price[submit]">Buy Premium</button>
                                                                 <div class="show_premium_features"><a href="#">Show Premium features</a></div>
@@ -463,9 +463,9 @@
                                                                     </li>
                                                                     {/foreach}
                                                                 </ul>
-                                                                <button class="btn btn-default ga-action-click"
+                                                                <button class="btn btn-default ga-action-submit"
                                                                         ga-action ="click"
-                                                                        ga-category="store"
+                                                                        ga-category="store test"
                                                                         ga-label="buy premium"
                                                                         value="true" type="submit" name="price[submit]">Buy Premium</button>
                                                                 </form>

@@ -163,13 +163,15 @@ class Order extends ManagerUser
          $order -> save();
          
 //        // save referer 
-         if($this ->getReferer()) {
+         if($this ->getReferer() and $this ->getLanding()) {
             $referer = $this -> _billing -> getReferer(); 
             $referer -> setOrder($order)
                 ->setReferer( $this ->getReferer() )
+                ->setLanding( $this ->getLanding() )    
                 -> save(); 
          }
         $this -> unsetReferer();
+        $this -> unsetLanding();
         
         $orderProduct = $this -> _billing->getOrderProduct();
         $orderProduct->setOrder($order)

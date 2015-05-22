@@ -75,8 +75,11 @@ if($_result['user_id']) {
     if($_productID) {
         if(isset($_COOKIE['orders_referer']))
             $obj->setReferer($_COOKIE['orders_referer']);
-          if($obj -> createOrderByFreeTrial( $_result['user_id'], (int)$_productID, $_phone, $_name ))  
-            $obj -> _redirect('/#popUp=free-trial-registration');
+        if(isset($_COOKIE['landing']))
+            $obj->setLanding($_COOKIE['landing']);
+        
+      if($obj -> createOrderByFreeTrial( $_result['user_id'], (int)$_productID, $_phone, $_name ))  
+        $obj -> _redirect('/#popUp=free-trial-registration');
     } else
         $obj -> _redirect('/#popUp=free-trial-registration'); 
 

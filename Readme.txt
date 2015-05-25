@@ -19,4 +19,4 @@ npm install grunt-contrib-watch --save-dev
 terminal:
 > grunt 
 OR
-> grunt watch
+> grunt watch && grunt

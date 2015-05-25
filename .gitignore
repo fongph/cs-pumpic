@@ -2,6 +2,8 @@
 /templates_c/*
 /cache/*
 /vendor/*
+/node_modules/*
+/bower_components/*
 /includes/config.php
 /public/security/wp-config.php
 /.gitignore~

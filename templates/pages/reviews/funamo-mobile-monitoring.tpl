@@ -37,9 +37,10 @@
             imgAlign = "left bottom"
             imgVerticalAlign = "bottom"
             textAlign = "left"
-            title = "Best parental software, <br> mobile tracking reviews, etc"
-            description = "Keep your children safe and secured with Pumpic.
-                           <br> Track location. View calls and SMS. Follow online activity."
+            title = "Best of Parental Controls <br /> Mobile Monitoring App Reviews"
+            description = "Secure your family. Ensure your children’s safety.
+                           <br>Track calls, text messages, and location. Follow online activity."
+            Review = 'yes'               
             promoBuyBlock = "no"
             planPackageBuy = "no"
             infoBlockMobile = "no"
@@ -71,47 +72,43 @@
                             </span>
                         </div>
                         <div class="media-body">
-                            <h4 class="media-heading">Pros </h4>
+                            <h4 class="media-heading">Pros</h4>
                             <p>
-                                The daily time limits feature will help you separate texting time from homework time.
+                                The app is cheap enough and allows you to monitor major cell phone activities like calls and text messages, track location, view websites, block or limit application use.
                             </p>
-                            <h4 class="media-heading">Cons </h4>
+                            <h4 class="media-heading">Cons</h4>
                             <p>
-                                The daily time limits feature will help you separate texting time from homework time.
+                                Funamo will not let you follow social networks and multimedia files (photos and videos). It doesn’t support keystrokes tracking nor blocking incoming calls by phone numbers.
                             </p>
-                            <h4 class="media-heading">The Verdict: 5.6/10</h4>
+                            <h4 class="media-heading">The Verdict – 5.6/10</h4>
                             <p>
-                                With GPS tracking and a host of security features, you will feel secure letting your child use a smartphone protected by PhoneSheriff.
+                                The application is cheaper than most of its competitors and its utility is of the same value. If you want to save on your kids’ protection, Funamo is probably your choice. However, note that children safety is priceless. 
                             </p>
                             <div class="media-btn">
                                 <a href="/reviews/parentkit-mobile-monitoring.html" class="btn btn-sm btn-success">Next Review &rarr;</a>
                             </div>
                         </div>
                     </div>
-                    <h3 class="heading">PhoneSheriff Summary:</h3>
-                    <p>EDITOR’S NOTE: We've been notified that the updated version of this product does not include stealth monitoring features. We'll post an updated review once fully evaluated.</p>
-                    <p>PhoneSheriff, our Top Ten Reviews Gold Award winner for parental control applications, is a wonderful tool for protecting children online. This cell phone parental control software lets you track what your child sends and receives on his or her smartphone in an online interface that is relatively easy to navigate.</p>
-                    <p>Mobile phone safety starts with prevention, and PhoneSheriff makes it easy to control what your child can access. You can block specific websites or prevent all usage at set times by blocking access to the phone completely. You can also block certain contacts if you do not want them to text or call your child.</p>
-                    <p>Even with all of these filtering features in place, your child may do things online that you are not comfortable with. But PhoneSheriff's extensive logging features will make sure that you know about it. You will be able to see all photos, text messages, phone calls, websites, calendar entries and much more. You can even set keyword alerts so that you will know when your child tries to access prohibited content. You can also receive an alert if your child or someone else tries to disable PhoneSheriff.</p>
+                    <h3 class="heading">Summary</h3>
+                    <p>Funamo is no different from most of parental control apps you can find online. It tracks incoming and outgoing calls, text messages, and location. In addition, it will let you view visited websites, block or limit applications from the list of downloaded ones.</p>
+					<p>However, such range of features is poor enough to provide children with appropriate security. As you know, a great majority of dangers that kids face come from the Internet, especially social media. Funamo doesn’t log this kind of online activity, which is a huge lack, when it comes to all-round protection, online predators, and cyberbullying issues.</p>
                     <div class="box-graph">
-                        <img src="{$img}/img-graphic.png" height="270" width="630" alt="">
+                        <img src="{$img}/diagrams/funamo_new.jpg" height="368" width="690" alt="">
                     </div>
-                    <h3 class="heading">Reporting & Logging  <span class="heading-rating">9.9/10</span></h3>
-                    <p>PhoneSheriff's logging features record specific activity, content and applications stored on your child's cell phone. Teenagers will often hide a picture or immediately delete a text message if they do not want a parent to see it. Regardless of whether they immediately delete the file or message, or even hide it on their phone, PhoneSheriff immediately stores the activity on a specific log, so you can always access it. This cell phone parental control software logs all calling activity with the name, date and length of each phone call. Text messages are also logged, with an exact copy of the message.</p>
-                    <p>Sending explicit photos and videos of each another to peers, boyfriends and girlfriends is a growing trend among teenagers. When your child captures any videos or photos, PhoneSheriff immediately sends a copy of them to your web account, where you can view the photos or videos and all accompanying information. You also receive a notification of all websites your child views, and you can block them from accessing any website you don't approve of. This gives you more control over the content your child views, sends and receives.</p>
-                    <p>PhoneSheriff is the best parental control software we could find, but its logging features do not meet our full expectations. We are disappointed that the software lacks the ability to log emails, which are a highly popular form of communication among smartphones users. There is also no way to track keystrokes with this parental control app either.</p>
-                    <h3 class="heading">Features   <span class="heading-rating">10/10</span></h3>
-                    <p>PhoneSheriff gives you control over the times when your child can use his or her phone. With this cell phone parental control software, you can create time restrictions that will automatically lock the device during off hours. With this feature, you can prevent your child from text messaging or surfing the internet during class or late at night. In addition to restricting certain usage times, you can restrict specific numbers. This lets you know exactly who your child is talking to at all times.</p>
-                    <p>Another excellent filtering tool is the keyword alert feature. If you tell PhoneSheriff to flag words that concern you, whether they include "drugs," "party" or any other words you want to monitor, you will receive an email if your child types in any of these words on their phone.</p>
-                    <p>PhoneSheriff works with virtually any phone and any platform – Android, Blackberry, iPhone, Windows and more. You can only track one phone per license, but you can move the software to new phones as needed, so it is nice not to have to learn a new parental control application for each new smartphone your children use.</p>
-                    <h3 class="heading">Tracking & Security  <span class="heading-rating">10/10</span></h3>
-                    <p>PhoneSheriff has GPS monitoring. This feature allows you to receive the phone's GPS locations on demand, or at scheduled times throughout the day. The GPS monitoring is not only ideal for keeping track of where your child is, but it can also help you find the phone if it is misplaced. If the phone falls into the wrong hands, privacy settings are included in the software that allow you to lock or wipe the device from a remote location. If you want to remotely lock the device or completely wipe all information from the phone, you need to log in to the software online to get access to the phone. Both privacy features are effective tools for preventing personal information from falling into the wrong hands.</p>
-                    <h3 class="heading">Help & Support  <span class="heading-rating">7.5/10</span></h3>
-                    <p>
-                        If you come across any problems while using this cell phone parental control software, PhoneSheriff provides live chat, email and telephone support, though none of those options are available 24/7. Using the toll-free number PhoneSheriff provides, you can receive immediate technical support. To receive help by email, you must submit a support ticket on the PhoneSheriff website, after which a customer representative will get back to you within 24 hours. A FAQs section is available on PhoneSheriff's website that provides additional help for general questions or concerns that may arise.
-                    </p>
-                    <h3 class="heading">PhoneSheriff Summary:  <span class="heading-rating">9.7/10</span></h3>
-                    <p>PhoneSheriff lacks a few features such as keystroke and email logging on certain platforms, but it is ideal in most ways. This parental control app logs all basic smartphone activities such as calls, text messages, videos, photos and contacts. It also provides you with GPS monitoring and several privacy features such as the ability to remotely wipe or lock the phone. The company's technical help and support is good, though 24/7 access would make it even better. PhoneSheriff offers a wide assortment of features that make it the best parental control app.</p>
+                    <h3 class="heading">Reports & Logs – <span class="heading-rating">3.5/10</span></h3>
+                    <p>The application monitors incoming and outgoing calls, as well as sent and received SMS. It will also enable you to track GPS location and set geo-fences to find out once your child leaves or enters specific areas on the map. In addition, Funamo allows viewing visited websites, contact and application lists.</p>
+					<p>On the other hand, the parental control app lacks too many useful options. There is no possibility to follow emails, and thus, you will not know about your kid’s subscriptions. The app doesn’t log photos and videos, and you will not be able to prevent your kid from 18+ content. It’s needless to say that social networks are the main source of threats and harassment. Funamo will not let you follow any of them.</p>
+                    <h3 class="heading">Features – <span class="heading-rating">5/10</span></h3>
+                    <p>When it comes to controlling smartphone or tablet activities, it is very important to be able to limit or block the use of applications and websites. Funamo will provide you with such a possibility.</p>
+					<p>However, you will not be able to restrict phone numbers and prevent your kid from being reached by misgiving people, filter words and phrases to ban threats and explicit language, nor limit the amount of text messages sent daily. </p>
+                    <h3 class="heading">Security & Management – <span class="heading-rating">2.5/10</span></h3>
+                    <p>Funamo provides its customers with capability of managing the app use and monitoring remotely. It means that you will be able to access your personal account from any computer or mobile gadget and see the entire information on your kid’s cell phone activities from anywhere.</p>
+					<p>On the other hand, the app will not notify you of a SIM card change. It will not let you wipe or lock the target device distantly, which means that you will not be able to protect personal data, in case a mobile phone is lost or stolen.</p>
+					<h3 class="heading">Help & Support – <span class="heading-rating">2/10</span></h3>
+                    <p>To contact Funamo concerning questions that may appear while using the app, you as a client should sent a request over email by filling in a contact form provided on the official website.</p>
+					<p>There is no other way to contact Funamo to get customer support or assistance.    </p>
+                    <h3 class="heading">Conclusion – <span class="heading-rating">5.6/10</span></h3>
+                    <p>Funamo is a cheap solution. It is cheap all along the line. If you want to save money and pretend that you protect your children, try the app. However, don’t expect a lot from it, and don’t complain we didn’t tell you that safety is priceless. </p>
                     <!-- Top parental Control Products -->
                     {include file='../../includes/reviews/list-top-products.tpl'}
                     

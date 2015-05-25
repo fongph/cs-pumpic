@@ -95,23 +95,23 @@
                     <div class="box-graph">
                         <img src="{$img}/diagrams/mmguardian.png" height="368" width="686" alt="">
                     </div>
-                    <h3 class="heading">Reports & Logs – <span class="heading-rating">6/10</span></h3>
+                    <h3 class="heading">Reports & Logs – <span class="heading-rating">3.5/10</span></h3>
                     <p>The application logs all the tracked data from the target device immediately. Once your child sends or receives a text messages, opens a new tab in a browser, makes or has an incoming call, it all is reflected in your personal account. MMGuardian also allows tracking GPS location on the map and setting Geo-fences. Once your kid leaves or enter a restricted area, the app will let you know.</p>
                     <p>However, there is no possibility to follow emailing activity, follow social media resources, nor view media files like photos and videos. Bookmarks history is also unavailable. And considering that most of dangers come from the Internet, the absence of these functions is a serious lose.</p>
-                    <h3 class="heading">Features – <span class="heading-rating">9/10</span></h3>
+                    <h3 class="heading">Features – <span class="heading-rating">8.5/10</span></h3>
                     <p>The app includes all major options peculiar for mobile monitoring software. It will allow you to limit or block other applications, block websites, prevent particular callers from reaching your child’s cell phone. You will also be able to set specific words and phrases inappropriate for you child, and thus, he or she will never read them again.</p>
                     <p>The only significant feature missing here is SMS amount limiting. This option would let you set the number of text messages that you kid is allowed to send per day.</p>
-                    <h3 class="heading">Security & Management – <span class="heading-rating">7/10</span></h3>
+                    <h3 class="heading">Security & Management – <span class="heading-rating">5/10</span></h3>
                     <p>The service provides parents with alternatives to monitor their children via either a Parent App or the MMGuardian Parent Web Portal. Both of them will let you keep track of your kids carefully. In addition, you will be able to lock the device remotely, and thus, prevent information leak, if the device is stolen, or simply prevent your child from using a gadget at each particular time, when it’s not allowed.</p>
                     <p>On the other hand, MMGuardian is missing ability to wipe the target device remotely and follow SIM card changes. The first one is essential, when a gadget is stolen or lost; meanwhile the second one lets you know once a phone number or a carrier is changed.</p>
-                    <h3 class="heading">Help & Support – <span class="heading-rating">5/10</span></h3>
+                    <h3 class="heading">Help & Support – <span class="heading-rating">2/10</span></h3>
                     <p>
                         Regardless all the aforementioned services and options, MMGuardian’s customer care leaves a lot to be desired. 
                         If you face any troubles or have any questions on the app operation, the only way you can apply for help is sending 
-                        an email to a support team. Sure, you can do this by either mailing at <a href="mailto:support@mparenting.com">support@mparenting.com</a> or filling a form on the
+                        an email to a support team. Sure, you can do this by either email or filling a form on the
                         website. Still it is not enough, when we talk about prompt feedback.
                     </p>
-                    <h3 class="heading">MobileForceField Summary – <span class="heading-rating">7/10</span></h3>
+                    <h3 class="heading">Conclusion – <span class="heading-rating">6.8/10</span></h3>
                     <p>The app claims to be among the best of parental controls, and it is far from the worst solution. However, it lacks too many features to justify its price. In addition, there are no new updates for the app. Thus, MMGuardian seems unlikely to improve shortly.</p>
                     
                     <!-- Top parental Control Products -->

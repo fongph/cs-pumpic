@@ -1,3 +1,4 @@
+{closeAccess}
 {include file='../includes/main/main-header.tpl'
     robots="yes" 
     title="Cell Phone Parental Control App for Tracking Children | Pumpic Monitoring Software"
@@ -9,7 +10,7 @@
     {include file='../includes/content/fly/fly_blocks.tpl'}
     <!-- END FLY BLOCKS-->
     
-    <div class="wrapper {*bg_bottom_images*} block-free-trial">
+    <div class="wrapper {*bg_bottom_images*}block-mobile-operators">
         <!-- TOP MENU -->
 
 	{include file='../includes/main/main-top-menu.tpl'
@@ -27,19 +28,21 @@
                  style="blue"   
         }
         
-        <!-- CONTENT -->
+       <!-- CONTENT -->
         {include file='../includes/content/info/info-promo.tpl'
-            imgUrl = "header_banners/bg_famaly_427x254.png"
-            imgAlt = "Landing Mobile"
-            imgAlign = "left bottom"
-            imgVerticalAlign = "bottom"
-            textAlign = "left"
-            title = "Cell Phone <br />Monitoring App"
-            description = "Keep your family safe and secured with Pumpic. <br />
-                           Track location. View calls and SMS. Follow online activity."
+            collg = "7"
+            imgUrl = "header_banners/banner-header-mobile-operators.png"
+            imgAlt = "Compatible with iOS & Android Supported by All Mobile Carriers"
+            imgAlign = "right"
+            textAlign = "right"
+            title = "<b>Compatible with</b> iOS & Android <br />Supported by <b>All Mobile Carriers</b>"
+            description = "Monitor the target device remotely<br />
+            Despite of mobile carrier services."
             promoBuyBlock = "no"
-            planPackageBuy = "yes"
-        }
+            planPackageBuy = "no"
+            blockTrial = "no"
+            blockQuickAndSimple = "yes"
+        } {* bg_features_call_437x226.png *}
         
         {include file='../includes/content/plans.tpl'}
 
@@ -51,49 +54,11 @@
             buttonFreeTrial = 'yes'
         }
         
-        {include file='../includes/content/secures-mobile-phones-monitoring.tpl'}
-        
-        {Content 
-    title="Why Parental Control Is Essential"
-    blockBg='light'}
-        
-        <!-- BLOCK STATISTICK -->
-        <div class="block-statistick row">
-            
-            <div class="item col-s-sm-12 col-xs-sm-12 col-sm-4 col-md-4 col-lg-4">
-                <section>
-                    <div><strong class="fz50 color-orange">92%</strong></div>
-                    <span class="text-uppercase">
-                        teens use preferably smartphones to go online on daily basis. In addition, 24% say they are on the web almost constantly.
-                    </span>
-                </section>
-            </div>
-            <div class="item col-s-sm-12 col-xs-sm-12 col-sm-4 col-md-4 col-lg-4">
-                <section>
-                    <div><strong class="fz50 color-orange">51%</strong></div>
-                    <span class="text-uppercase">
-                        children, who use the Internet have been cyberbullied. Most of them neither complain nor inform parents. Meanwhile, bullying is among top suicide factors among teens.
-                    </span>
-                </section>
-            </div>
-            <div class="item col-s-sm-12 col-xs-sm-12 col-sm-4 col-md-4 col-lg-4">
-                <section>
-                    <div><strong class="fz50 color-orange">78%</strong></div>
-                    <span class="text-uppercase">
-                        parents, who use parental control software admit their children have reasonably improved behavior and a success level at school.
-                    </span>
-                </section>
-            </div>
-            
-        </div>
-        <!-- END -->
-
-        <p class="text-center f-light">Most dangers children face today are closely connected with the use of mobile devices and the Internet.</p>
-		
-		{EndContent}
+        {include file='../includes/content/secures-mobile-operators.tpl'}
         
         {include file='../includes/content/features-table.tpl' 
                 blockBg="dark"
+                description = "Pumpic is a reasonably improved mobile phone application, which comes with a large range of monitoring functions. The app runs independently of mobile carriers and services they provide."
         } 
         
         {include file='../includes/content/ipad.tpl' 
@@ -105,25 +70,73 @@
                 description = "Right after installing Pumpic, all the data from the target mobile phone will be sent to your Control Panel. It can be accessed from any browser and any device, including PCs, smartphones and tablets. In Control Panel you can not only view the information, but also set restrictions and block some of activities on the target device."             
         }
         
-        {include file='../includes/main/main-testimonials.tpl'
-                title = "Trusted by Over 10 000 Customers Worldwide"
-                sliders = "false"
-                blockBg="dark"} 
+        <!-- informer -->
+        <!-- end -->
+        <!-- BLOCK COMPATIBILITY -->
+        {include file='../includes/content/compatibility/compatibility-table.tpl'
+            blockBg="dark"
+            descriptions="The app is compatible with most of modern smartphones and tablets run by iOS and Android. You can check if your particular target device is compatible by finding it in the list on our <a href='/compatibility/'>Compatibility</a> page. Alternatively, you can fill in the form, send us a request, and we will do it for you."
+        } 
+        
+        <!-- BLOCK BLUE TEXT -->
+        {include file='../includes/content/block-blue-text.tpl'
+            title = "Pumpic app is attached to the target device itself. <br />It does not depend on a mobile carrier that is used."
+        }
+        
+        <!-- BLOCK MOBILE OPERATOTS -->
+        {include file='../includes/content/mobile-operators.tpl'
+            blockBg="dark"
+            title = "Mobile Wireless Carriers Worldwide"
+            descriptions="When searching for a relevant mobile monitoring app online, many people tend to use key words like “how to track my Verizon phone”, “Vodafone tracking”, or “at&t mobile monitoring”. However, it is important to note that Pumpic app works independently; our monitoring software does not depend on any mobile carrier as well as services it provides."
+        } 
         
         {include file='../includes/content/how-get-pumpic.tpl'
             blockBg="light"
         } 
         
-        {include file='../includes/content/why-pumpic.tpl'
-                blockBg="dark"}
-
+        <!-- TESTIMONIALS -->
+        <div class="dark">
+            <div class="container">
+                <h2 class="text-center testimonial-title">Trusted by Over 10 000 Customers Worldwide:</h2>
+                <div class="row">
+                    
+                    <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
+                        <img src="{$img}/testimonials/testimonials_new_1.png" alt="" class="testimonial-photo">
+                        <div class="testimonial-text">
+                            <h4>Janet K. – mother of 14-year-old son</h4>
+                            <p>“I was looking for an app to track a Verizon cell phone of my son and came across Pumpic in one of reviews. I decided to try it and was satisfied with opportunities the app provides. It allows me to control my son’s activities online, check his calls and text messages. Location tracking is one more option I really appreciate. I know where my son is and what he does at any time I need.”</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
+                        <img src="{$img}/testimonials/testimonials_new_2.png" alt="" class="testimonial-photo">
+                        <div class="testimonial-text">
+                            <h4>Briana F. – mother of 12-year-old son</h4>
+                            <p>“My son asked me for a smartphone as a birthday gift, so I went to AT&T store and bought one for him. I was worried about my kid’s online safety with this new device and a sales assistant suggested me to use parental controls. He said he personally chose Pumpic for his children, so I deiced to follow his advice. For now, I’m sure my son is protected. I can take care of him even from work and control his cell phone use easily.”</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
+                        <img src="{$img}/testimonials/testimonials_new_3.png" alt="" class="testimonial-photo">
+                        <div class="testimonial-text">
+                            <h4>Mark O. – a business owner</h4>
+                            <p>“I use Pumpic to monitor corporate cell phones that I give my employees. First, I thought about trying tracking services provided by my mobile operator, but as it turned out Pumpic has much more functions and useful abilities that help me effectively control my officers and run my business.”</p>
+                        </div>
+                    </div>
+            
+                </div>
+            </div>
+        </div>    
+        <!-- END -->
+        {*include file='../includes/main/main-testimonials.tpl'
+                title = "Trusted by Over 10 000 Customers Worldwide"
+                sliders = "false"
+                blockBg="dark"*} 
+        
         {include file='../includes/main/main-quick-link.tpl' 
             blockBg="light"
         }        
         
-        {*{include file='../includes/content/banners/banner-promo-trial.tpl'}*}
         
-        {include file='../includes/content/banners/index.tpl'}
+        {include file='../includes/content/banners/lib/banner-promo-mobile-operators.tpl'}
         <!-- END CONTENT -->    
            
         <!-- RECOMMENDED -->

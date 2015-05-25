@@ -37,9 +37,10 @@
             imgAlign = "left bottom"
             imgVerticalAlign = "bottom"
             textAlign = "left"
-            title = "Best parental software, <br> mobile tracking reviews, etc"
-            description = "Keep your children safe and secured with Pumpic.
-                           <br> Track location. View calls and SMS. Follow online activity."
+            title = "Best of Parental Controls <br /> Mobile Monitoring App Reviews"
+            description = "Secure your family. Ensure your children’s safety.
+                           <br>Track calls, text messages, and location. Follow online activity."
+            Review = 'yes'               
             promoBuyBlock = "no"
             planPackageBuy = "no"
             infoBlockMobile = "no"
@@ -74,45 +75,38 @@
                         <div class="media-body">
                             <h4 class="media-heading">Pros </h4>
                             <p>
-                                The daily time limits feature will help you separate texting time from homework time.
+                                The app is easy-to-use and allows a user to look through the list of visited websites and applications installed on the target device. In addition, it is possible to block certain websites and apps.
                             </p>
                             <h4 class="media-heading">Cons </h4>
                             <p>
-                                The daily time limits feature will help you separate texting time from homework time.
+                                As a matter of fact, ParentKit is a two-purposed application. It can review and block apps and sites, and that is all it can actually do. No calls and message tracking, no GPS locating, no monitoring of social media is provided.
                             </p>
-                            <h4 class="media-heading">The Verdict: 4.9/10</h4>
+                            <h4 class="media-heading">The Verdict – 4.9/10</h4>
                             <p>
-                                With GPS tracking and a host of security features, you will feel secure letting your child use a smartphone protected by PhoneSheriff.
+                                Although the app is proposed at a middle price, the functionality of it is really poor in comparison with apps of the same price. It more looks like a demo-version of a parental control app, though some parents may find it useful as it allows them to block inappropriate websites.
                             </p>
                             <div class="media-btn">
                                 <a href="/reviews/screentime-labs-mobile-monitoring.html" class="btn btn-sm btn-success">Next Review &rarr;</a>
                             </div>
                         </div>
                     </div>
-                    <h3 class="heading">PhoneSheriff Summary:</h3>
-                    <p>EDITOR’S NOTE: We've been notified that the updated version of this product does not include stealth monitoring features. We'll post an updated review once fully evaluated.</p>
-                    <p>PhoneSheriff, our Top Ten Reviews Gold Award winner for parental control applications, is a wonderful tool for protecting children online. This cell phone parental control software lets you track what your child sends and receives on his or her smartphone in an online interface that is relatively easy to navigate.</p>
-                    <p>Mobile phone safety starts with prevention, and PhoneSheriff makes it easy to control what your child can access. You can block specific websites or prevent all usage at set times by blocking access to the phone completely. You can also block certain contacts if you do not want them to text or call your child.</p>
-                    <p>Even with all of these filtering features in place, your child may do things online that you are not comfortable with. But PhoneSheriff's extensive logging features will make sure that you know about it. You will be able to see all photos, text messages, phone calls, websites, calendar entries and much more. You can even set keyword alerts so that you will know when your child tries to access prohibited content. You can also receive an alert if your child or someone else tries to disable PhoneSheriff.</p>
+                    <h3 class="heading">Summary</h3>
+                    <p>ParentKit is one among many parental control applications available in the Internet. And, as many other apps, it does not meet requirements of thoughtful parents. The only features of this app concern browsing history and applications installed on the target device. Perhaps, it could fit parents, whose children have no notion of social media. With its help, you can remotely manipulate a child’s device by blocking certain applications and access to websites.</p>
+					<p>It is safe to say that this app defaults on a duty of a parental control app. ParentKit has so many gaps in the protection of kids that it can be used as an addition to the main defensive application. </p>
                     <div class="box-graph">
-                        <img src="{$img}/img-graphic.png" height="270" width="630" alt="">
+                        <img src="{$img}/diagrams/parentkit_new.jpg" height="368" width="690" alt="">
                     </div>
-                    <h3 class="heading">Reporting & Logging  <span class="heading-rating">9.9/10</span></h3>
-                    <p>PhoneSheriff's logging features record specific activity, content and applications stored on your child's cell phone. Teenagers will often hide a picture or immediately delete a text message if they do not want a parent to see it. Regardless of whether they immediately delete the file or message, or even hide it on their phone, PhoneSheriff immediately stores the activity on a specific log, so you can always access it. This cell phone parental control software logs all calling activity with the name, date and length of each phone call. Text messages are also logged, with an exact copy of the message.</p>
-                    <p>Sending explicit photos and videos of each another to peers, boyfriends and girlfriends is a growing trend among teenagers. When your child captures any videos or photos, PhoneSheriff immediately sends a copy of them to your web account, where you can view the photos or videos and all accompanying information. You also receive a notification of all websites your child views, and you can block them from accessing any website you don't approve of. This gives you more control over the content your child views, sends and receives.</p>
-                    <p>PhoneSheriff is the best parental control software we could find, but its logging features do not meet our full expectations. We are disappointed that the software lacks the ability to log emails, which are a highly popular form of communication among smartphones users. There is also no way to track keystrokes with this parental control app either.</p>
-                    <h3 class="heading">Features   <span class="heading-rating">10/10</span></h3>
-                    <p>PhoneSheriff gives you control over the times when your child can use his or her phone. With this cell phone parental control software, you can create time restrictions that will automatically lock the device during off hours. With this feature, you can prevent your child from text messaging or surfing the internet during class or late at night. In addition to restricting certain usage times, you can restrict specific numbers. This lets you know exactly who your child is talking to at all times.</p>
-                    <p>Another excellent filtering tool is the keyword alert feature. If you tell PhoneSheriff to flag words that concern you, whether they include "drugs," "party" or any other words you want to monitor, you will receive an email if your child types in any of these words on their phone.</p>
-                    <p>PhoneSheriff works with virtually any phone and any platform – Android, Blackberry, iPhone, Windows and more. You can only track one phone per license, but you can move the software to new phones as needed, so it is nice not to have to learn a new parental control application for each new smartphone your children use.</p>
-                    <h3 class="heading">Tracking & Security  <span class="heading-rating">10/10</span></h3>
-                    <p>PhoneSheriff has GPS monitoring. This feature allows you to receive the phone's GPS locations on demand, or at scheduled times throughout the day. The GPS monitoring is not only ideal for keeping track of where your child is, but it can also help you find the phone if it is misplaced. If the phone falls into the wrong hands, privacy settings are included in the software that allow you to lock or wipe the device from a remote location. If you want to remotely lock the device or completely wipe all information from the phone, you need to log in to the software online to get access to the phone. Both privacy features are effective tools for preventing personal information from falling into the wrong hands.</p>
-                    <h3 class="heading">Help & Support  <span class="heading-rating">7.5/10</span></h3>
-                    <p>
-                        If you come across any problems while using this cell phone parental control software, PhoneSheriff provides live chat, email and telephone support, though none of those options are available 24/7. Using the toll-free number PhoneSheriff provides, you can receive immediate technical support. To receive help by email, you must submit a support ticket on the PhoneSheriff website, after which a customer representative will get back to you within 24 hours. A FAQs section is available on PhoneSheriff's website that provides additional help for general questions or concerns that may arise.
-                    </p>
-                    <h3 class="heading">PhoneSheriff Summary:  <span class="heading-rating">9.7/10</span></h3>
-                    <p>PhoneSheriff lacks a few features such as keystroke and email logging on certain platforms, but it is ideal in most ways. This parental control app logs all basic smartphone activities such as calls, text messages, videos, photos and contacts. It also provides you with GPS monitoring and several privacy features such as the ability to remotely wipe or lock the phone. The company's technical help and support is good, though 24/7 access would make it even better. PhoneSheriff offers a wide assortment of features that make it the best parental control app.</p>
+                    <h3 class="heading">Reports & Logs – <span class="heading-rating">2/10</span></h3>
+                    <p>With help of this application you will be able to look through websites your children have visited recently and see the list of applications they installed on their gadgets. And that are the only fields of the app’s activity. Calls, texts, emails, and multimedia content stored on the device – you will know nothing of that. For sure, Skype, Kik, Facebook, and WhatsApp messages, Viber and Instagram are also wrapped in obscurity. And forget about keylogger – there is none of that. </p>
+					<p>The options of GPS location and Geo-fencing are also unavailable here. That means that you will not be able to find a lost phone or rest assured that your child is safe in the place where he or she has to be at the moment. You have no control of multimedia content – as a result, your child is at risk of receiving nude photos or adult videos from strangers in the Internet.</p>
+                    <h3 class="heading">Features – <span class="heading-rating">5/10</span></h3>
+                    <p>ParentKit allows parents to block or limit applications installed on the target device. As a result, your children will have no possibility to spend money on games. Also it blocks access to websites with inappropriate content. Yet you won’t be able to protect your child from undesirable calls or sexting – there is no phone number restriction or word filters. </p>
+                    <h3 class="heading">Security & Management – <span class="heading-rating">2.5/10</span></h3>
+                    <p>Remote management is the only tool available. You will get a possibility to manipulate the target device – to block apps. There are no anti-theft features, you won’t wipe or lock a lost or stolen phone and the change of a SIM card will be unnoticed. As a result, all personal information stored on the device is in potential danger.</p>
+                    <h3 class="heading">Help & Support – <span class="heading-rating">2/10</span></h3>
+                    <p>The only way to contact the Support team of ParentKit, in case if you have questions concerning the app usage, is to fill in the contact form and send a request via email.</p>
+                    <h3 class="heading">Conclusion – <span class="heading-rating">4.9/10</span></h3>
+                    <p>ParentKit is an inferior variation of a parental control app. It is not worth the money it costs – there are many applications with far better functionality at the same price. Moreover, there are no features necessary for any parental control app – call and message tracking and GPS location.</p>
                     <!-- Top parental Control Products -->
                     {include file='../../includes/reviews/list-top-products.tpl'}
                     

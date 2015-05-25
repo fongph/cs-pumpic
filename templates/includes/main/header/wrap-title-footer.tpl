@@ -46,6 +46,9 @@
         <!-- compatibility -->
         <link href="{$css}/compatibility.css?{style_cache data='2015-02-09'}" rel="stylesheet">
         
+        <!-- 404 -->
+        <link href="{$css}/404.css?{style_cache data='2015-02-09'}" rel="stylesheet">
+        
 	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 	<!--[if lt IE 9]>

@@ -35,6 +35,9 @@
     <link href="<?php echo getStaticUrl();?>/css/wp-subscribe.css" rel="stylesheet">
     <link href="<?php echo getStaticUrl();?>/css/style-fly-features.css" rel="stylesheet">
     
+    <!-- 404 -->
+    <link href="<?php echo getStaticUrl();?>/css/404.css" rel="stylesheet">
+    
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>

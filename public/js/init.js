@@ -1770,4 +1770,20 @@ $('form[name="send_find_phone"] button.event-submit').click(function(){
      
    });
    
-}); //
+   
+   // mobile operators
+   if($('.toggle-mobile-operators').length) {
+       $('.toggle-mobile-operators').on('click', function(event) {
+           event.preventDefault();
+           $.each( $('#mobile-operators .item-operators'), function(key, value) {
+               if($(value).hasClass('hide')) {
+                   $(value).removeClass('hide').addClass('show');
+               }
+           });
+           $(this).parent().hide();
+           return false;
+       });
+   }
+   
+   
+}); 

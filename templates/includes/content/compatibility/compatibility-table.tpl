@@ -1,78 +1,86 @@
-		<div class="dark bg-footer">
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-4 col-md-4 col-lg-4 col-sm-offset-1 col-md-offset-1 col-lg-offset-1">
-						<h3>DISCLAIMER</h3>
-						<p>Pumpic is a unique parental control tracking application for iOS and Android mobile phones and tablets. It is for ethical and legal use only. To install the tracking app, one should assure that he or she owns the device before installation, or has obtained the owner’s permission to track his or her device.</p>
-					</div>
-					<div class="col-sm-2 col-md-2 col-lg-2 col-sm-offset-1 col-md-offset-1 col-lg-offset-1">
-						<h3>COMPANY</h3>
-						<ul class="list_grey">
-                                                    <li>
-                                                        <a href="/policy.html">Legal Policies</a>
-                                                    </li>
-                                                    <?php /*<li>
-                                                        <a href="/policy.html#privacy-policy">Privacy Policy</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="/policy.html#refund-policy">Refund policy</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="/contact-us.html">Contact us</a>
-                                                    </li> */ ?>
-                                                    <li>
-                                                        <a href="/security/">Security</a>
-                                                    </li>
-                                                    
-                                                        <?php /*
-							<li>
-								<a href="<?php echo getStaticUrl();?>/policy.html">Policy</a>
-							</li>
-							<li>
-								<a href="<?php echo getStaticUrl();?>/contact-us.html">Contacts</a>
-							</li>
-							<li>
-								<a href="<?php echo getStaticUrl();?>/security/">Blog</a>
-							</li>
-                                                        */ ?>
-                                                        
-						</ul>
-					</div>
-                    <?php include(dirname(__FILE__).'/blog-footer-our-products.tpl'); ?>
-				</div>
-				<div class="row">
-					<div class="col-sm-10 col-md-10 col-lg-10 col-sm-offset-1 col-md-offset-1 col-lg-offset-1">
-						<div class="share">
-							<?php /*Share:
-							<img src="<?php echo getStaticUrl();?>/images/social-buttons.png" alt=""> */ ?>
-                                                        
-                                                        <ul class="box-socials clearfix">
-                                                            <li><a href="https://www.facebook.com/pages/Pumpic/299299196929718?sk=timeline" class="icons-social i-fb"></a></li>
-                                                            <li><a href="https://twitter.com/pumpic_com" class="icons-social i-tw"></a></li>
-                                                            <li><a href="https://www.youtube.com/user/pumpicapp" class="icons-social i-youtube"></a></li>
-                                                            <li><a href="https://plus.google.com/u/2/b/103434324737023434003/103434324737023434003/posts" class="icons-social i-google"></a></li>
-                                                            <li>
-                                                                <?php include(dirname(__FILE__).'/content/phone/blog-phone-footer.tpl'); ?>
-                                                            </li>
-                                                        </ul>
-                                                        
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>		
-		<div class="footer">
-			<div class="container">
-				<div class="footer-text text-center">
-					&copy;
-					<?= strftime('%Y',time()) ?>
-					Pumpic — All Rights Reserved.
-				</div>
-			</div>
-		</div>
-	</div>
-        
-        <!-- init popUp -->
-        <?php include(dirname(__FILE__).'/blog-popUp.tpl'); ?>
-        <?php include(dirname(__FILE__).'/blog-analytics-footer.tpl'); ?>
-        
+<!-- BLOCK COMPATIBILITY -->
+<div id="compatibility-table" class="{if $blockBg}{$blockBg}{else}dark{/if}">
+    <div class="container">
+        <h2 class="text-center">Compatibility</h2>
+    
+        <div class="row">
+
+            <div class="table-col-8 table-sm-col-3 model-center">
+                {if $descriptions}
+                    <article>{$descriptions}</article>
+                {/if}
+                
+                <!-- left table #1 -->
+                <div class="col-md-6 col-lg-6 padding-null">
+
+                    <div id="block-compatibility-table" class="android-table">
+
+                        <div class="table-header">
+                            <section><span class="title">Android <i class="icon-android"></i></span></section>
+                        </div> <!-- .table-header -->
+
+                        <div class="table-body">
+                            <div class="text-center">
+                                <p>Rooting is required to use some extended features</p>
+                            </div>
+                            <div>
+
+                                <div class="div-table">
+                                    <div class="div-table-row">
+                                        <div class="div-table-column"><span>Smartphones and Tablets:</span></div>
+                                        <div class="div-table-column"><span class="color-green">Android 2.2 and up</span></div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+                <!-- left table #1 -->
+                <div class="col-md-6 col-lg-6 padding-null">
+
+                    <div id="block-compatibility-table" class="ios-table">
+
+                        <div class="table-header">
+                            <section><span class="title">iOS <i class="icon-apple"></i></span></section>
+                        </div> <!-- .table-header -->
+
+                        <div class="table-body">
+                            <div class="text-center">
+                                <p>Jailbreak or iCloud password is required before the installation</p>
+                            </div>
+                            <div>
+
+                                <div class="div-table">
+                                    <div class="div-table-row">
+                                        <div class="div-table-column"><span>iPhones / iPads / iPods Touch:</span></div>
+                                        <div class="div-table-column"><span class="color-green">iOS 6.0 and up</span></div>
+                                    </div>
+                                    {*<div class="div-table-row">
+                                        <div class="div-table-column"><span>iPods:</span></div>
+                                        <div class="div-table-column"><span class="color-green">iOS 6.0 and up</span></div>
+                                    </div>
+                                    <div class="div-table-row">
+                                        <div class="div-table-column"><span>iPads:</span></div>
+                                        <div class="div-table-column"><span class="color-green">iOS 6.0 and up</span></div>
+                                    </div>*}
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div> 

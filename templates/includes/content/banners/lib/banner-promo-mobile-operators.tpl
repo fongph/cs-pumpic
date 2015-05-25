@@ -1,10 +1,10 @@
-<div class="demo-banner">
+<div class="demo-banner mobile-operations-banner">
     <div class="banner-phone"></div>
     <div class="banner-text">
         <span>Smartphone Monitoring App</span>
         <ul>
-            <li><i class="fa fa-android"></i> (2.2 - 5.1)</li>
-            <li><i class="fa fa-apple"></i> (6.0 - 8.3)</li>
+            <li><i class="icon-android"></i> (2.2 - 5.1)</li>
+            <li><i class="icon-apple"></i> (6.0 - 8.3)</li>
         </ul>
     </div>
     <div class="banner-arrow"></div>

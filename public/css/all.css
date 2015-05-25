@@ -6329,6 +6329,27 @@ form.form-contact-us .box-captcha {
     min-width: 0;
 }
 
+/* ================= \\ BANNERS MOBILE OPERATIONS BANNER ===================== */
+.mobile-operations-banner {
+    padding: 13px;
+    margin-bottom: 0px;
+    height: 123px;
+    background: url(../images/bg-banner-small-mobile-operators.gif) no-repeat;
+    background-size: 100% 100%;
+}
+.mobile-operations-banner .banner-phone {
+    width: 224px;
+    height: 102px;
+    background: url(../images/banner-operations.png) no-repeat;
+}
+
+.mobile-operations-banner i.icon-android, 
+.mobile-operations-banner i.icon-apple {
+    position: relative;
+    top: 1px;
+    font-size: 16px;
+}
+
 @media (min-width: 1200px) {
     .demo-banner .banner-phone {
         display: inline-block;
@@ -6355,6 +6376,12 @@ form.form-contact-us .box-captcha {
     .demo-banner .banner-text {
         margin: 0;
     }
+    
+    .mobile-operations-banner { 
+        background: url(../images/bg-banner-small-mobile-operators.gif);
+        background-size: 100% 100%;
+        padding: 5px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -6362,6 +6389,8 @@ form.form-contact-us .box-captcha {
         font-size: 20px;
     }
 }
+
+
 
 /* ============= \\ breadcrumbs ================ */
 .breadcrumbs {}
@@ -6760,4 +6789,54 @@ form.form-contact-us .box-captcha {
         text-align: left;
         
     }
+}
+
+
+.bgBlue {
+    background: url("../images/bg-blue-content.gif") no-repeat;
+    background-position: 100% 100%;
+}
+
+#block-blue-text {
+    padding: 30px 0px; 
+}
+
+#block-blue-text h2.title {
+    font-size: 28px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+#block-blue-text .descriptions {
+    color: #fff;
+}
+
+.block-mobile-operators #block-table-header h1.title {
+    font-size: 30px;
+}
+
+/* ------------- // btn-white ---------------- */
+.btn-white {
+    font-family: "Open Sans",Helvetica,Arial,sans-serif;
+    color: #24ada3;
+    background: #e8e7e7;
+    padding: 9px 15px;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 300;
+    
+    min-height: 32px;
+    min-width: 110px;
+    
+    border: 0px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.btn-white:hover, .btn-white:active, .btn-white:focus {
+    color: #fff;
+    background: #c7c7c7;
+    border-color: #adadad;
+    text-decoration: none;
 }

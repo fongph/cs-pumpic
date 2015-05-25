@@ -97,19 +97,19 @@
                         <img src="{$img}/diagrams/mobileforcefield.png" height="368" width="686" alt="">
                     </div>
                     
-                    <h3 class="heading">Reports & Logs – <span class="heading-rating">8/10</span></h3>
+                    <h3 class="heading">Reports & Logs – <span class="heading-rating">4/10</span></h3>
                     <p>MobileForceField software captures any data your kid sends or receives. Even if he or she decides to hide restricted photos from you or delete messages with inappropriate text content. The app will log it all at once and report right to your console.</p>
                     <p>The app logs only the most common activities like calls, text messages, and media files. It cannot track keystrokes, visited websites, calendars, instant messengers, and social networks, which would let parents protect children more carefully.</p>
                     
-                    <h3 class="heading">Features – <span class="heading-rating">5/10</span></h3>
+                    <h3 class="heading">Features – <span class="heading-rating">3.5/10</span></h3>
                     <p>The application enables parents to use Child Safe Browser, and thus, to determine, which particular websites kids are allowed to visit. Such an option will protect your children from explicit content as well as restricted photos and videos. It also allows application blocking, which is useful if you want to prevent your kid from excessive gaming or using a smartphone while doing homework.</p>
                     <p>On the other hand, using MobileForceField will not allow you to restrict phone numbers that can reach your child. The app does not support limiting the amount of SMS sent during a day, and it will not let you prevent your kid from reading text messages containing bad words or threats.</p>
                     
-                    <h3 class="heading">Security & Management – <span class="heading-rating">5/10</span></h3>
+                    <h3 class="heading">Security & Management – <span class="heading-rating">2.5/10</span></h3>
                     <p>MobileForceField will provide you with a personal console, which allows monitoring the tracked data remotely. You will see all the information from the target device on your personal computer or mobile device with no need to take your kid’s gadget.</p>
                     <p>However, the app lacks some more significant features. There is no ability to track SIM card change, and thus, you will not know if your child changes a phone number or a mobile phone carrier. There is no possibility to lock or wipe the target device remotely, and thus, you will not be able to protect or simply delete personal information, if the device is lost or stolen.</p>
                     
-                    <h3 class="heading">Help & Support – <span class="heading-rating">5/10</span></h3>
+                    <h3 class="heading">Help & Support – <span class="heading-rating">2/10</span></h3>
                     <p>
                         If you have any question on MobileForceField operation, you can send your application to customer care {*<a href="mailto:support@mobileforcefield.com">*}email{*</a>*}.
                         {*If you have any question on MobileForceField operation, you can send your application to customer 
@@ -117,7 +117,7 @@
                     </p>
                     <p>At the same time, there is no live chat or free 24/7 support, which is essential if you have questions, which require an instant answer and solution. There is no phone number provided as well. Thus, you will have to wait for an indefinite period of time until your email is received and replied.</p>
                     
-                    <h3 class="heading">MobileForceField Summary – <span class="heading-rating">6/10</span></h3>
+                    <h3 class="heading">Conclusion – <span class="heading-rating">7.4/10</span></h3>
                     <p>The application lacks many useful features, which are essential, when it comes to children’s lives protection. The range of options the service provides will let you monitor you kid, but it will hardly let you see a wide picture of what is actually going on. In addition, the software has no updates, and thus, it doesn’t look like MobileForceField is going to improve its lack of must-have monitoring solutions.</p>
                    
                     <!-- Top parental Control Products -->

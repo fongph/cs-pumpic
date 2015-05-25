@@ -29,7 +29,7 @@ get_header(); ?>
                                         <span class="title"><b>Pumpic Features</b></span>
                                         <p>We are sure you were looking for our amazing features.</p>
                                         <div class="clearfix">
-                                            <a class="btn-white" href="#">All features</a>
+                                            <a class="btn-white" href="/all-features.html">All features</a>
                                         </div>
                                     </section>
                                     <i class="arrows-404"></i>
@@ -40,7 +40,7 @@ get_header(); ?>
                                         <span class="title"><b>Blog</b></span>
                                         <p>No? Then you probably wanted to read our kids’ safety blog.</p>
                                         <div class="clearfix">
-                                            <a class="btn-white" href="#">Visit blog</a>
+                                            <a class="btn-white" href="/security/">Visit blog</a>
                                         </div>
                                     </section>
                                     <i class="arrows-404"></i>
@@ -50,7 +50,7 @@ get_header(); ?>
                                         <span class="title"><b>Contacts Us</b></span>
                                         <p>We will help you find what you’ve been looking for. </p>
                                         <div class="clearfix">
-                                            <a class="btn-white" href="#">Contact</a>
+                                            <a class="btn-white" href="/faq.html">Contact</a>
                                         </div>
                                     </section>
                                 </div>

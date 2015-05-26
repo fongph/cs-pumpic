@@ -360,7 +360,8 @@ body {
 		display: table;
 		width: 100%;
 		background: none;
-	.block-reviews }
+        }        
+/*	.block-reviews */
 	.header-thumb-ranking {
 		text-align: left;
 		display: table-cell;

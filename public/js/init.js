@@ -958,6 +958,141 @@ $(document).ready(function(){
         //if($('form[name="send_find_phone"] label.error, form[name="send_find_phone"] label.invalid').length)
         //    $('form[name="send_find_phone"] label.error, form[name="send_find_phone"] label.invalid').remove();
     });   
+    
+    // compatibility_form
+   var validator_send_mobile_operators_find_phone = $('form[name="send_mobile_operators_find_phone"]').validate({
+         onfocusout: false,
+         onkeyup: false,
+         onclick: true,
+         onsubmit: true,
+         focusInvalid: false,
+         focusCleanup: false,
+         debug: true,
+       'carrier': {
+            required: true
+        },
+        'captcha': {
+            required: true
+        },
+        email: {
+            required: true,
+            email: true
+        },
+        messages: {
+           'captcha': "Invalid CAPTCHA.", // The CAPTCHA field is empty.
+            name: "The Device Model field is empty",
+            email: {
+                required: "The Email field is empty",
+                email: "Invalid email format"
+            }
+        },
+       
+        errorClass: "invalid",
+        validClass: "success",
+        invalidHandler: function(event, validator) {
+            if($('form[name="send_mobile_operators_find_phone"] span.info').length)
+                $('form[name="send_mobile_operators_find_phone"] span.info').html( " " ).hide();
+            
+            if($('form[name="send_mobile_operators_find_phone"] .fatal-error').length)
+                $('form[name="send_mobile_operators_find_phone"] .fatal-error').html( " " ).hide();
+            
+            if($('form[name="send_mobile_operators_find_phone"] label.error, form[name="send_mobile_operators_find_phone"] label.invalid').length)
+                    $('form[name="send_mobile_operators_find_phone"] label.error, form[name="send_mobile_operators_find_phone"] label.invalid').remove();
+        },
+        // управление ошибками
+        showErrors: function(errorMap, errorList) {
+            var _form = $('form[name="send_mobile_operators_find_phone"]');
+            var msg = null;
+
+            $.each(errorList, function(key, value){
+                if(value.element) {
+                    var name = _form.find( value.element ).attr('name');
+                    // console.log( name );
+                    _form.find(value.element).after( '<label id="'+name+'-error" for="'+name+'" class="invalid">'+value.message+'</label>' );
+                    _form.find(value.element).next().show();
+                }
+             });
+        },
+        submitHandler: function( form ) {
+            if($('form[name="send_mobile_operators_find_phone"] span.info').length)
+                $('form[name="send_mobile_operators_find_phone"] span.info').html( " " ).hide();
+            
+            if($('form[name="send_mobile_operators_find_phone"] .fatal-error').length)
+                $('form[name="send_mobile_operators_find_phone"] .fatal-error').html( " " ).hide();
+
+            if($('form[name="send_mobile_operators_find_phone"] label.error, form[name="send_mobile_operators_find_phone"] label.invalid').length)
+                    $('form[name="send_mobile_operators_find_phone"] label.error, form[name="send_mobile_operators_find_phone"] label.invalid').remove();    
+
+            var $form = $(form);
+            var _params = parseQuery($form.serializeArray());
+
+            var _response = getAjaxForm('/mobile_operators_send.html', _params);
+              if(_response.result) {
+                  var _res = _response.result;
+                  if(_res.error) {
+                      
+                      if(typeof _res.error === 'object') {
+                          $.each(_res.error, function(name, text) {
+                              var _obj = $form.find('input[name="'+name+'"]');
+                              
+                              if(_obj.length) {
+                                 
+                                if(_obj.next('label').length) {
+                                    _obj.next().html( text ).show();
+                                 } else {
+                                     $('<label id="'+name+'-error" for="'+name+'" class="invalid">'+text+'</label>').insertAfter(_obj); 
+                                 }   
+                              }
+                          });
+                      } else {
+                          $('form[name="send_mobile_operators_find_phone"] .fatal-error').html( _res.error );
+                      }
+                      
+                      reloadCaptcha( $form.find('.box-captcha > img'), true ); // reload captcha 
+                      return false;
+                  } else if(_res.success) {
+                      $('form[name="send_mobile_operators_find_phone"] span.info').html( _res.success ).css({'display':'inline-block'});
+                      
+                      // scrollTo block info
+                      var target_top = $('form[name="send_mobile_operators_find_phone"] span.info').offset().top;
+                      $('html, body').animate( { 
+                            scrollTop: Math.ceil(target_top) // Math.ceil((target_top * $(window).outerHeight(true)) / $('html, body').height())
+                       },'linear');
+                      
+                      // console.log( target_top, Math.ceil((target_top * $(window).outerHeight(true)) / $('html, body').height()) );
+                      
+                      // google analitycs
+                      ga('send', 'event', 'form', 'submit', 'mobile-operators-request-success');
+
+                  } else {
+                      $('form[name="send_mobile_operators_find_phone"] .fatal-error').html('Your email was not sent');
+                      reloadCaptcha( $form.find('.box-captcha > img'), true ); // reload captcha 
+                      return false;
+                  }    
+
+              } else {
+                  $('form[name="send_mobile_operators_find_phone"] .fatal-error').html('Your email was not sent'); 
+                  reloadCaptcha( $form.find('.box-captcha > img'), true ); // reload captcha 
+                  return false;
+              }
+                  
+              reloadCaptcha( $form.find('.box-captcha > img'), false ); // reload captcha        
+              $form.trigger("reset");
+              
+            // return false;  
+        }
+    });
+      
+   // clear info in focus   
+   $('form[name="send_mobile_operators_find_phone"] input, form[name="send_mobile_operators_find_phone"] textarea').focus(function() {
+        //if($('form[name="send_mobile_operators_find_phone"] span.info').length)
+        //    $('form[name="send_mobile_operators_find_phone"] span.info').html( " " ).hide();
+        //if($('form[name="send_mobile_operators_find_phone"] .fatal-error').length)
+        //    $('form[name="send_mobile_operators_find_phone"] .fatal-error').html( " " ).hide();
+        //if($('form[name="send_mobile_operators_find_phone"] label.error, form[name="send_mobile_operators_find_phone"] label.invalid').length)
+        //    $('form[name="send_mobile_operators_find_phone"] label.error, form[name="send_mobile_operators_find_phone"] label.invalid').remove();
+    });   
+    
       
    // validator faq (form-faq)
    var validator_form_faq = $('form.form-faq').validate({

@@ -1,4 +1,4 @@
-{closeAccess}
+{* closeAccess *}
 
 {include file='../../includes/main/main-header.tpl'
     robots="yes" 

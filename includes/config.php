@@ -3,7 +3,8 @@
  //error_reporting(-1);
 
 $config = array(
-	
+	'css_min' => '/stylesheets',
+        'js_min' => '/javascripts',
 	'fenom' => array(
 		'path' => '../fenom/',
 		'tpl_path' => '../templates/pages/',
@@ -35,7 +36,7 @@ $config = array(
 	'php_compile' => array(
                 //'compatibility.html' => 'compatibility.php',
                 'compatibility' => 'compatibility.php',
-            
+                'mobile_operators_send.html' => 'mobile_operators_form.php',
 		'compatibility_send.html' => 'compatibility_form.php',
                 'faq_send.html' => 'faq.php',
                 'contact_us_send.html' => 'contact_us.php',
@@ -110,5 +111,7 @@ $config = array(
         )
     ),
 );
-if(is_file(__DIR__ . '/config.development.php'))
-    $config = array_merge($config, (array) include __DIR__ . '/config.development.php');
+if(is_file(__DIR__ . '/config.development.php')) {
+    include __DIR__ . '/config.development.php';
+    $config = array_merge($config, $config_dev);
+}    

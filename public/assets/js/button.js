@@ -34,15 +34,6 @@ function google_analitycs_click( category, action, label ) {
     }
 }
 
-function TrackEventGA(Category, Action, Label, Value) {
-    "use strict";
-    if (typeof (_gaq) !== "undefined") {
-        _gaq.push(['_trackEvent', Category, Action, Label, Value]);
-    } else if (typeof (ga) !== "undefined") {
-        ga('send', 'event', Category, Action, Label, Value);
-    }
-}
-
 $(function() {
     $('.ga-action-click').on('click', function() {
            var _ga_action = ($(this).attr('ga-action')) ? $(this).attr('ga-action') : false,
@@ -50,37 +41,21 @@ $(function() {
                _ga_label = ($(this).attr('ga-label')) ? $.trim( $(this).attr('ga-label').toLowerCase() ).replace(/\s/g,'-') : false;
         
         if(_ga_action && _ga_category && _ga_label) {
-            // ga('send', 'event', _ga_category, _ga_action, _ga_label);
-            TrackEventGA(_ga_category, _ga_action, _ga_label);
+            ga('send', 'event', _ga_category, _ga_action, _ga_label);
         }
         
     });
     
-    $('.ga-action-submit').on('click', function() { // closest('form'). submit
-        var _b = $(this), _form = $(this).closest('form');  // .find('.ga-action-submit')
+    $('.ga-action-submit').closest('form').on('submit', function() {
+        var _b = $(this).find('.ga-action-submit'); 
         var _ga_action = (_b.attr('ga-action')) ? _b.attr('ga-action') : false,
            _ga_category = (_b.attr('ga-category')) ? _b.attr('ga-category') : false,
            _ga_label = (_b.attr('ga-label')) ? $.trim( _b.attr('ga-label').toLowerCase() ).replace(/\s/g,'-') : false;
         
         if(_ga_action && _ga_category && _ga_label) {
-            // onclick="_gaq.push(['_trackEvent', 'button3', 'clicked'])"
-            //ga.push(['_trackEvent', _ga_category, _ga_action, _ga_label]);
-            //console.log( _ga_category, _ga_action, _ga_label );
-            //ga('send', 'event', _ga_category, _ga_action, _ga_label);
-            //console.log( 'Click start!' );
-            //console.log( !window.ga, !(ga.hasOwnProperty('loaded') && ga.loaded === true) );
-            ga('send', 'event', _ga_category, _ga_action, _ga_label, {
-                'hitCallback': function() {
-                    _form.submit();
-                }
-            });
-
-            return !(ga.hasOwnProperty('loaded') && ga.loaded === true);
-
-            //return false;
-            //if(ga('send', 'event', _ga_category, _ga_action, _ga_label)) {
-             //   $(this).submit();
-            //}
+            if(ga('send', 'event', _ga_category, _ga_action, _ga_label)) {
+                $(this).submit();
+            }
         } else {
             return true;
         }

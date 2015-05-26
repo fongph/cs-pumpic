@@ -1,0 +1,153 @@
+#link-fly-features {
+    text-decoration: none;
+}
+
+#link-fly-features:hover {
+    text-decoration: none;
+}
+
+
+#fly_features {
+    position: fixed;
+    display: none;
+    background: url('../../images/fly_features/bg_fly_features.png') no-repeat;
+    background-size: auto;
+    width: 207px;
+    height: 156px;
+    color: #fff;
+    padding: 10px 10px;
+    bottom: 40px;
+    right: 0px;
+    z-index: 999;
+    border-radius: 5px;
+    -webkit-border-radius: 5px 5px;
+    -moz-border-radius: 5px 5px;
+}
+
+.fly-features-v1 h2 {
+    color: #fff;
+    font-weight: 300;
+    font-size: 23px;
+    line-height: 23px;
+    margin: 0px 0px 7px 4px;
+    padiing: 0px;
+    text-align: left;
+}
+
+#fly_features > span.close {
+    background: url('../../images/fly_features/close.png') no-repeat;
+    display: inline-block;
+    height: 24px;
+    opacity: 0.8;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 23px;
+}
+
+#fly_features > ul {
+    margin: 0px;
+    padding: 0px;
+}
+#fly_features > ul li {
+    list-style: none;
+    margin: 0px 0px 8px 0px; 
+    font-size: 14px;
+    line-height: 14px;
+}
+
+#fly_features i {
+    display: inline-block;
+    position: relative;
+    margin-right: 12px;
+    width: 23px;
+    background: url('../../images/fly_features/icons_fly_features.png') no-repeat;
+}
+
+#fly_features i.i-fly-features-monitor-instagram {
+    background-position: 0px 0px;
+    height: 18px;
+    top: 5px;
+}
+#fly_features i.i-fly-features-geo-fences {
+    background-position: 0px -29px;
+    height: 16px;
+    top: 3px;
+}
+#fly_features i.i-fly-features-limit-app {
+    background-position: 0px -53px;
+    height: 23px;
+    top: 6px;
+}
+#fly_features i.i-fly-features-icloud {
+    background-position: 0px -82px;
+    height: 14px;
+    top: 3px;
+}
+
+/* ------------- \\ fly-features-v2 -------------- */
+.fly-features-v2 {
+    
+}
+.fly-features-v2 #fly_features { padding: 9px; }
+.fly-features-v2 h2 {
+    color: #f7efa5;
+    font-size: 24px;
+    line-height: 1em;
+}
+#fly_features i.i-fly-features-iphone,
+#fly_features i.i-fly-features-ipad {
+    display: inline-block;
+    margin: 0px;
+    top: 6px;
+}    
+#fly_features i.i-fly-features-iphone { 
+    background: url('../../images/fly_features/i-icon-features-iphone.png') no-repeat;
+    width: 13px;
+    height: 22px;
+}
+
+#fly_features i.i-fly-features-ipad { 
+    background: url('../../images/fly_features/i-icon-features-ipad.png') no-repeat;
+    width: 18px;
+    height: 22px;
+}    
+
+.fly-features-v2 #fly_features > p {
+    font-size: 14px;
+    line-height: 1.6em;
+    color: white;
+    margin-top: 5px;
+    margin-bottom: 6px;
+}
+
+.fly-features-v2 #fly_features > p > span.icon-apple {
+    font-size: 16px;
+    color:  #d1f0f0;
+}
+
+@media only screen and (max-width: 480px) {
+    #fly_features { 
+        background: url('../../images/fly_features/bg_mobile_fly_features.png') no-repeat;
+        background-size: 100% 100%;
+        border-radius: 0px;
+          -webkit-border-radius: 0px 0px;
+            -moz-border-radius: 0px 0px;
+        border-radius: none;
+        width: 100%;
+        height: auto;
+    }
+    #fly_features h2 {
+        text-align: center;
+        font-size: 27px;
+        line-height: 27px;
+    }
+    #fly_features h2 > br,
+    #fly_features > p > br {
+        display: none;
+    }
+    
+     #fly_features > p { text-align: center; }
+    
+
+}

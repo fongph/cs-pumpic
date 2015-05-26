@@ -56,9 +56,11 @@
                 imgUrl = "icons/ipad_android.png"
                 imgAlt = "call monitoring"
                 title = "Calls Monitoring"
-                description = "Try Control Panel demo to see Pumpic Calls Monitoring in use.<br/>Buy Pumpic to protect your kids and track their calls right now."
-
         }
+        
+        {* description = "Try Control Panel demo to see Pumpic Calls Monitoring in use.<br/>Buy Pumpic to protect your kids and track their calls right now."
+
+        *}
         
         {include file='../includes/content/why-pumpic.tpl' 
                 blockBg="light"

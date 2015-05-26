@@ -4,7 +4,7 @@
         <div class="block-phone right">
             <div class="bg-phone"></div>
             <span class="p-flag"></span>
-            <span class="p-number">+1 855 896 0041</span>
+            <span class="p-number">+1 239 214 8898</span>
         </div>
     </div>    
 </div>

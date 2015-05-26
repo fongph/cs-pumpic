@@ -1,8 +1,7 @@
-<form class="send_find_phone" method="POST" action="" name="send_find_phone">
+<form class="send_mobile_operators_find_phone" method="POST" action="" name="send_mobile_operators_find_phone">
         <fieldset>
                 <legend>
-                    Can’t Find Your Device Here?<span>Let’s Check if it is Compatible:</span>
-                    {*CAN’T FIND YOUR DEVICE HERE?<span>LET’S CHECK IF IT IS COMPATIBLE:</span>*}
+                    Can't Find Your Carrier in this List? <span>Leave us your email, write your operator and your name, we will check</span>
                 </legend>
 
                 <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3">
@@ -11,9 +10,9 @@
                         <div class="form-group">
                                 <input id="device-model" type="text" 
                                        class="form-control required" 
-                                       name="device-model" 
+                                       name="carrier" 
                                        value=""
-                                       placeholder="Device model*">
+                                       placeholder="Carrier*">
 
                                 {*<p class="bg-danger"></p>*}
                         </div>

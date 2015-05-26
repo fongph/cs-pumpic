@@ -102,8 +102,10 @@
                 imgAlt = "Android"
                 title = "Easy-to-Use Control Panel"
                 textAlign = "left"
-                description = "Right after installing Pumpic, all the data from the target mobile phone will be sent to your Control Panel. It can be accessed from any browser and any device, including PCs, smartphones and tablets. In Control Panel you can not only view the information, but also set restrictions and block some of activities on the target device."             
         }
+        
+        {* description = "Right after installing Pumpic, all the data from the target mobile phone will be sent to your Control Panel. It can be accessed from any browser and any device, including PCs, smartphones and tablets. In Control Panel you can not only view the information, but also set restrictions and block some of activities on the target device."             
+        *}
         
         {include file='../includes/main/main-testimonials.tpl'
                 title = "Trusted by Over 10 000 Customers Worldwide"

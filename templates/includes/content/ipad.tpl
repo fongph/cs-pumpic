@@ -43,9 +43,12 @@
                                         {if $description}
                                             {$description}
                                         {else}    
-                                        Try Control Panel demo to see Pumpic for Android in use.
+                                        {*Try Control Panel demo to see Pumpic for Android in use.
                                         <br />
-                                        Buy Pumpic to keep your kids safe and secured right now.
+                                        Buy Pumpic to keep your kids safe and secured right now.*}
+                                        
+                                        Right after installing Pumpic, all the data from the target mobile phone will be sent to your Control Panel. It can be accessed from any browser and any device, including PCs, smartphones and tablets. In Control Panel, you can not only view the information, but also set restrictions and block some of activities.
+                                        
                                         {/if}
                                     </p>
                                     <ul>

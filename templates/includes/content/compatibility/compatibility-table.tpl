@@ -1,7 +1,7 @@
 <!-- BLOCK COMPATIBILITY -->
 <div id="compatibility-table" class="{if $blockBg}{$blockBg}{else}dark{/if}">
     <div class="container">
-        <h2 class="text-center">Compatibility</h2>
+        <h2 class="text-center">{if $title}{$title}{else}Compatibility{/if}</h2>
     
         <div class="row">
 

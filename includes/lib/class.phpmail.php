@@ -14,6 +14,7 @@ class Phpmail extends Settings
 {  
     CONST start_id = 11701;
     
+    CONST MOBILEOPERATORS_START_ID = 1000000;
     CONST COMPATIBILITY_START_ID = 100000;
     CONST CONTACT_US_START_ID = 10000;
     
@@ -209,6 +210,103 @@ class Phpmail extends Settings
         
     }
     
+    /*
+     * MobileOperators (send form and validater)
+     */
+    public function _sendMobileOperators($params) 
+    {
+        
+        if(is_array($params) and count($params) > 0) {
+            $_id = rand(0, 9000000);
+            
+            if(!$this -> validateEmail($params['email'])) {
+                $this -> _messange['error']['email'] = self::error_email;
+            } else if(empty($params['carrier']) or strlen( $params['carrier']) < 3 ) {
+                $this -> _messange['error']['carrierl'] = "The carrier field is empty";
+            } elseif( isset($params['captcha']) and !$this ->_order-> validateCaptcha( $params['captcha'] ) ) {
+                $this -> _messange['error']['captcha'] = self::error_captcha;
+            } else {
+                
+                $_params = array(
+                   'carrier'    => $params['carrier'],
+                   'email'          => $params['email'],
+                    '_browser'      => $this -> getBrowser(),
+                   // 'subject'        => [ 'contactUs_pumpic' => 'Contact US #pp '.$_id], 
+                );
+                
+                if($opt_value = $this ->getOptionValue( 'Mobile_operators_pumpic' ) and $opt_value >= self::MOBILEOPERATORS_START_ID) {
+                    $_uid = $opt_value + 1; 
+                } else {
+                    $_uid = self::MOBILEOPERATORS_START_ID;
+                }
+                
+                if(!$sm_arr = $this ->saveDB(array(
+                    'to' => self::mail_support,
+                    'from' => $params['email'],
+                    'type' => 'Mobile_operators_pumpic',
+                ))) { 
+                    $this -> _messange['error'] = 'Fatal Error! Dont save in DB!'; 
+                    return $this -> _messange;
+                }
+                
+                $_params = array_merge( $_params, array('uid' => $_uid) );
+                
+                
+                
+                $this ->setSendmail(array( 'subject' => 'Carrier request #M'.$_uid.' - '.$_params['email'], 
+                                            'uid' => $_uid,
+                                            'params' =>  serialize($_params) ), "id = ". (int)$sm_arr['id']);
+                
+                // log in ControlAdmin
+                if($user = $this -> _order ->getUserDataEmail( $params['email'] ) and isset($user['id']))
+                    $this -> _order ->setLogMailSender($user['id'], 'Mobile_operators_pumpic_sendUser');
+                
+                // sendMail Api (go support)
+                $_data = $this ->setData($params['email'], 
+                                        self::mail_support, 
+                                        'Mobile_operators_pumpic', 
+                                        $params['email'], 
+                                        $_params) -> sendMAil();
+                
+                if(!$this ->saveDB(array(
+                    'to' => $params['email'],
+                    'from' => self::mail_support,
+                    'type' => 'Mobile_operators_pumpic_sendUser',
+                    'uid' => $_uid,
+                    'subject' => 'Carrier request #'. $_uid .' received',
+                    'params' => serialize( $_params ),
+                ))) {
+                    $this -> _messange['error'] = 'Fatal Error! Dont save Mobile_operators_pumpic_sendUser in DB!';
+                    return $this -> _messange;
+                }
+                
+                // go users
+                $user_data = $this ->setData(
+                        self::mail_support, 
+                        $params['email'], 
+                        'Mobile_operators_pumpic_sendUser', 
+                        '', 
+                        $_params ) -> sendMAil();
+                
+                // updateOptions
+                $this ->updateOptionValue('Mobile_operators_pumpic', $_uid);
+                
+                if($_data === true && $user_data === true) {
+                    $this -> _messange['success'] =  'Ticket #'. $_uid .' has been successfully sent.<br />
+                                                     Our support representative will contact you as soon as possible.';// "Your Request has been sent, our support representative will contact you as soon as possible"; //"Your email has been successfully sent";
+                } else
+                    $this -> _messange['error']['email'] = self::error_email; 
+                
+                
+            }    
+
+            
+        }
+        
+        return $this -> _messange;
+        
+    }
+    
     
     /* Faq Send mail*/
     public function _sendFaq($params) 
@@ -330,7 +428,7 @@ class Phpmail extends Settings
                 
                 // sendMail Api (go support)
                 $_data = $this ->setData(
-                        self::mail_noreply, 
+                        $params['email'], //self::mail_noreply, 
                         self::mail_support, 
                         'contactUs_pumpic', 
                         $params['email'], 

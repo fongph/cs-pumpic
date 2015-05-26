@@ -66,8 +66,10 @@
                     imgUrl = "parental_control/ipad.png"
                     imgAlt = "remote control"
                     title = "Easy-to-Use Control Panel"
-                    description = "Right after installing Pumpic, all the data from the target device will be sent to your Control Panel. It can be accessed from any browser and any gadget, including PCs, mobile phones and tablets. In Control Panel, you can not only view the information, but also set restrictions, block, and limit some of activities."
         }
+        
+        {* description = "Right after installing Pumpic, all the data from the target device will be sent to your Control Panel. It can be accessed from any browser and any gadget, including PCs, mobile phones and tablets. In Control Panel, you can not only view the information, but also set restrictions, block, and limit some of activities."
+         *}
         
         {include file='../includes/main/main-testimonials.tpl' 
             blockBg="light"

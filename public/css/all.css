@@ -591,6 +591,7 @@ form.form-discount label.error,
 form.box-form label.error,
 .form-contact-us label.error,
 .send_find_phone label.error,
+.send_mobile_operators_find_phone label.error,
 .fatal-error {
     
     color: #b54a58;
@@ -610,6 +611,7 @@ form.box-form label.error,
 .form-restore label.error,
 .form-contact-us label.error,
 .send_find_phone label.error,
+.send_mobile_operators_find_phone label.error,
 label.invalid,
 .fatal-error {
     text-align: center;
@@ -3630,7 +3632,7 @@ span.btn-banner-yellow:active {
     color: #16a89e !important;
 }
 
-.supported { // , .supported:hover
+.supported {
     color: #545662 !important;
 }
 
@@ -6057,6 +6059,7 @@ i.white-arrows-right {
 /* -------------- \\ fix form ------------ */
 .form-box-captcha { margin-bottom: 5px; }
 form.send_find_phone .box-captcha,
+form.send_mobile_operators_find_phone .box-captcha,
 form.form-contact-us .box-captcha { 
     height: 46px;
     width: 100%;

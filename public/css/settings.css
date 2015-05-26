@@ -448,8 +448,23 @@ legend {
 }
 
 .send_find_phone fieldset > legend,
+.send_mobile_operators_find_phone fieldset > legend,
 .form-contact-us fieldset > legend { 
     text-align: center;
+}
+
+.send_mobile_operators_find_phone fieldset > div {
+    padding: 5px 18px 15px;
+    background: #f2f2f2;
+}
+
+.send_mobile_operators_find_phone fieldset > legend {
+    font-size: 26px;
+    font-weight: 300;
+}
+
+.send_mobile_operators_find_phone fieldset > legend > span { 
+    font-size: 14px;
 }
 
 /* ============= // Compatibility table ============== */

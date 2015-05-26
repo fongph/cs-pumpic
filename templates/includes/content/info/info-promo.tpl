@@ -24,7 +24,7 @@
                             
                             <div>
                                 <div class="visual-text {if isset($Review)}visual-text-lg visual-text-xlg{else}{if $textAlign}block-text-{$textAlign}{else}block-text-right{/if}{/if}">
-                                    <h1 class="title">{if $title} {$title} {else}Android Parental Control App{/if}</h1>
+                                    <h1 class="title {if $fz}fz{$fz}{/if}">{if $title} {$title} {else}Android Parental Control App{/if}</h1>
                                     
                                     {if isset($flagName)}
                                     <div class='block-table'>

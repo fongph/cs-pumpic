@@ -199,8 +199,8 @@
                                                                 </ul>
                                                                 <button class="btn btn-default ga-action-submit"
                                                                         ga-action ="click"
-                                                                        ga-category="iphone-icloud"
-                                                                        ga-label="buy-icloud"
+                                                                        ga-category="icloud-iphone-without-jailbreak-monitoring"
+                                                                        ga-label="buy premium"
                                                                         value="true" type="submit" name="price[submit]">Buy Now</button>
                                                                 <!-- <div class="show_basic_features"><a href="#">Show Basic features</a>
                                                                 </div> -->
@@ -251,6 +251,7 @@
                                                                 <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Bookmarks <span>View bookmarked websites.</span></li>
                                                                 <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Calendar  <span>Follow scheduled events.</span></li>
                                                                 <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> WhatsApp  <span>Follow personal messages and group chats.</span></li>
+                                                                <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Notes  <span>View notes kept on the target device.</span></li>
                                                             </ul>
                                                         </div>
                                                     </div>
@@ -266,8 +267,8 @@
                                                         {*<li><b>Skype</b><i class="coming-soon-icons cs-ico-skype"></i><span>Follow personal, group messages and calls.</span></li>
                                                         <li><b>WhatsApp</b><i class="coming-soon-icons cs-ico-whatsapp"></i><span>Follow personal messages and group chats.</span></li>*}
                                                         {*<li><div><b>Photos</b><i class="coming-soon-icons cs-ico-photos"></i></div><span>View camera shots and downloaded photos.</span></li>*}
-                                                        <li><div><b>Notes</b><i class="coming-soon-icons cs-ico-notes"></i></div><span>View notes kept on the target device.</span></li>
-                                                        
+                                                        {*<li><div><b>Notes</b><i class="coming-soon-icons cs-ico-notes"></i></div><span>View notes kept on the target device.</span></li>*}
+                                                        <li><div><b>Kik</b><i class="coming-soon-icons cs-ico-kik"></i></div><span>Monitor online text communication.</span></li>
                                                         {*<li><b>Skype</b><i class="icons ico-skype"></i> <span>Follow personal, group messages and calls.</span></li>
                                                         <li><b>Notes</b> <i class="icons ico-notes"></i> <span> View notes kept on the target device.</span></li>
                                                         <li><b>Emails</b> <i class="icons ico-emails"></i> <span>Monitor sent and received emails.</span></li>*}

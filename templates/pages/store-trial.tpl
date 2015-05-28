@@ -165,7 +165,10 @@
 													<button name='price[submit]' 
                                                                                                                 type='submit' 
                                                                                                                 value='true'
-                                                                                                                class="btn btn-default">Buy Basic</button>
+                                                                                                                class="btn btn-default ga-action-submit"
+                                                                                                                ga-action ="click"
+                                                                                                                ga-category="store-trial"
+                                                                                                                ga-label="buy basic">Buy Basic</button>
 												</div>
                                                                                                   
                                                                                              
@@ -345,7 +348,10 @@
 													<!-- Block block-limits-pricing only for premium include -->
 												</div>
 												<div class="text-center">
-													<button class="btn btn-default">Buy Premium</button>
+													<button class="btn btn-default ga-action-submit"
+                                                                                                                ga-action ="click"
+                                                                                                                ga-category="store-test"
+                                                                                                                ga-label="buy basic">Buy Premium</button>
 												</div>
 											</td>
 										</tr>

@@ -168,10 +168,10 @@
                                                         {/foreach}
                                                         
                                                     </ul>
-                                                    <button class="btn btn-default ga-action-click" 
+                                                    <button class="btn btn-default ga-action-submit" 
                                                             ga-action ="click"
-                                                            ga-category="iphone-tracking"
-                                                            ga-label="buy-basic"
+                                                            ga-category="iphone-tracking-software"
+                                                            ga-label="buy basic"
                                                             value="true" type="submit" name="price[submit]">Buy Now</button>
                                                 <!--     <div class="show_basic_features"><a href="#">Show Basic features</a>
                                                     </div> -->
@@ -252,10 +252,10 @@
                                                         </li>
                                                         {/foreach}
                                                     </ul>
-                                                    <button class="btn btn-default ga-action-click"
+                                                    <button class="btn btn-default ga-action-submit"
                                                             ga-action ="click"
-                                                            ga-category="iphone-tracking"
-                                                            ga-label="buy-premium"
+                                                            ga-category="iphone-tracking-software"
+                                                            ga-label="buy premium"
                                                             value="true" type="submit" name="price[submit]">Buy Now</button>
                                                   <!--   <div class="show_premium_features"><a href="#">Show Premium features</a>
                                                     </div> -->
@@ -383,10 +383,10 @@
                                                         {/foreach}
                                                        
                                                     </ul>
-                                                    <button class="btn btn-default ga-action-click" 
+                                                    <button class="btn btn-default ga-action-submit" 
                                                             ga-action ="click"
-                                                            ga-category="iphone-tracking"
-                                                            ga-label="buy-icloud"
+                                                            ga-category="iphone-tracking-software"
+                                                            ga-label="buy premium icloud"
                                                             value="true" type="submit" name="price[submit]">Buy Now</button>
                                                     <!-- <div class="show_basic_features"><a href="#">Show Basic features</a>
                                                     </div> -->

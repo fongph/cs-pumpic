@@ -195,7 +195,7 @@
                                                                     </ul>
                                                                     <button class="btn btn-default ga-action-submit" 
                                                                             ga-action ="click"
-                                                                            ga-category="iphone-jailbreak"
+                                                                            ga-category="iphone-with-jailbreak-monitoring"
                                                                             ga-label="buy basic"
                                                                             value="true" type="submit" name="price[submit]">Buy Now</button>
                                                                     <!-- <div class="show_basic_features"><a href="#">Show Basic features</a>
@@ -354,8 +354,8 @@
                                                                     </ul>
                                                                     <button class="btn btn-default ga-action-submit" 
                                                                             ga-action ="click"
-                                                                            ga-category="iphone-jailbreak"
-                                                                            ga-label="buy-premium"
+                                                                            ga-category="iphone-with-jailbreak-monitoring"
+                                                                            ga-label="buy premium"
                                                                             value="true" type="submit" name="price[submit]">Buy Now</button>
                                                                     <!-- <div class="show_premium_features"><a href="#">Show Premium features</a>
                                                                     </div> -->
@@ -558,8 +558,8 @@
                                                                 </ul>
                                                                 <button class="btn btn-default ga-action-submit" 
                                                                         ga-action ="click"
-                                                                        ga-category="iphone-jailbreak"
-                                                                        ga-label="buy-basic"
+                                                                        ga-category="iphone-with-jailbreak-monitoring"
+                                                                        ga-label="buy basic"
                                                                         value="true" type="submit" name="price[submit]">Buy Now</button>
                                                                 <!-- <div class="show_basic_features"><a href="#">Show Basic features</a>
                                                                 </div> -->
@@ -641,8 +641,8 @@
                                                                 </ul>
                                                                 <button class="btn btn-default ga-action-submit"
                                                                         ga-action ="click"
-                                                                        ga-category="iphone-jailbreak"
-                                                                        ga-label="buy-premium"
+                                                                        ga-category="iphone-with-jailbreak-monitoring"
+                                                                        ga-label="buy premium"
                                                                         value="true" type="submit" name="price[submit]">Buy Now</button>
                                                                 <!-- <div class="show_premium_features"><a href="#">Show Premium features</a>
                                                                 </div> -->

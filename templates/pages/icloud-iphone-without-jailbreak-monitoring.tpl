@@ -282,7 +282,7 @@
                                             <div class="table_title">
                                                 <h2 class="text-success h2-sm">Additional Benefits</h2>
                                             </div>
-                                                <div class="basic_wr padding-none-list span-list-block">
+                                                <div class="basic_wr padding-none-list span-list-block additional-benefits-item">
                                                     <div class="priceb border-none">
                                                         <div class="basic_fe reset-list media-sm-block">
                                                             <ul class="list_price-no-link">
@@ -294,7 +294,7 @@
 
 
                                                 </div>
-                                                <div class="basic_wr padding-none-list span-list-block">
+                                                <div class="basic_wr padding-none-list span-list-block additional-benefits-item">
                                                     <div class="pricep border-none">
                                                         <div class="basic_fe reset-list media-sm-block">
                                                             <ul class="list_price-no-link">

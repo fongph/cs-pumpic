@@ -6798,6 +6798,7 @@ form.form-contact-us .box-captcha {
 .bgBlue {
     background: url("../images/bg-blue-content.gif") no-repeat;
     background-position: 100% 100%;
+    background-size: cover;
 }
 
 #block-blue-text {

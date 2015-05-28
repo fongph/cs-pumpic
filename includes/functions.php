@@ -13,10 +13,19 @@ function dispatch($urlParams, $config){
             // preg_match('/^http::\/\/(.*)\.pumpic\.com(.*)/is', 'http://demo.pumpic.com/', $_match); 
             // preg_match("/^[a-zA-Z0-9]*((-|\.)?[a-zA-Z0-9])*\.([a-zA-Z]{2,4})$/", 'http://demo.pumpic.com/', $matches); 
             
-            $_url = parse_url($_SERVER['HTTP_REFERER']);             
-            if(!preg_match('/((.*)\.|^)pumpic\.com/i', trim($_url['host'])) || !isset($_COOKIE['orders_referer']) ) {
-                setcookie("orders_referer", $_SERVER['HTTP_REFERER'], time() + 3600 * 1, '/', '.pumpic.com' );
-            } 
+            $_url = parse_url($_SERVER['HTTP_REFERER']);        
+//            if(!isset($_COOKIE['orders_referer'])) {
+//                if(!preg_match('/((.*)\.|^)pumpic\.com/i', trim($_url['host'])) ) {
+//                    setcookie("orders_referer", $_SERVER['HTTP_REFERER'], time() + 3600 * 1, '/', '.pumpic.com' );
+//                } 
+//            }
+            
+            //if(!isset($_COOKIE['orders_referer'])) {
+                if(!isset($_COOKIE['orders_referer']) and isset($_url['host']) and !preg_match('/((.*)\.|^)pumpic\.com/i', trim($_url['host'])) ) {
+                    setcookie("orders_referer", $_SERVER['HTTP_REFERER'], time() + 3600 * 1, '/', '.pumpic.com' );
+                } 
+            //}
+            
             
 //            if(preg_match('/^(http::\/\/)(.*)\.pumpic\.com(.*)/is', $_SERVER['HTTP_REFERER']) || !isset($_COOKIE['orders_referer']) ) {
 //                setcookie("orders_referer", $_SERVER['HTTP_REFERER'], time() + 3600 * 1, '/', '.pumpic.com' );

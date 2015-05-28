@@ -10,12 +10,16 @@ $_request= (isset($_POST['price']) and !empty($_POST['price'])) ? $_POST['price'
 // $_productID = (!empty($_GET['productID'])) ? (int)$_GET['productID'] : false;
 
 
-$_referer = (isset($_COOKIE['orders_referer']) and !empty($_COOKIE['orders_referer'])) ? $_COOKIE['orders_referer'] : $_SERVER['HTTP_REFERER'];
-$_landing = (isset($_COOKIE['landing']) and !empty($_COOKIE['landing'])) ? $_COOKIE['landing'] : '';
+$_referer = (isset($_COOKIE['orders_referer']) and !empty($_COOKIE['orders_referer'])) ? $_COOKIE['orders_referer'] : "--"; // $_SERVER['HTTP_REFERER']
+$_landing = (isset($_COOKIE['landing']) and !empty($_COOKIE['landing'])) ? $_COOKIE['landing'] : "--";
 
 // $_referer = ($order ->getSession('orders_referer')) ? $order ->getSession('orders_referer'): false;
 $order ->setReferer( $_referer );
 $order ->setLanding( $_landing );
+
+//echo "<pre>";
+//var_dump( $_REQUEST, $_SESSION );
+//echo "</pre>"; die('stop');
 
 //logged
 if (isset($_request['productID']) and $_productID = (int)$_request['productID']) {

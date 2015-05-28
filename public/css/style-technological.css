@@ -584,7 +584,9 @@ dl.table-rows.block-left {
 #block-compatibility-table {
     background: #f9f9f9;
 }
-
+#block-compatibility-table.ios-table > .table-header {
+    border-right: 0px;
+}
 #block-compatibility-table > .table-header {
     background: #16a89e;
     border-right: 1px solid #30c1b7;
@@ -602,7 +604,9 @@ dl.table-rows.block-left {
     font-size: 35px;
     line-height: 35px;
 }
-
+#block-compatibility-table.ios-table > .table-body {
+    border-left: 0px;
+}
 #block-compatibility-table > .table-body {
     border: 1px solid #e7e7e7; 
 }

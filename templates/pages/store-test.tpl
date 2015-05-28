@@ -203,6 +203,7 @@
                                                                         ga-action ="click"
                                                                         ga-category="store-test"
                                                                         ga-label="buy basic"
+                                                                        ga-page="/store-test.html"
                                                                         value="true" type="submit" name="price[submit]">Buy Basic</button>
                                                                 <div class="show_basic_features"><a href="#">Show Basic features</a></div>
                                                                 </form>
@@ -301,6 +302,7 @@
                                                                         ga-action ="click"
                                                                         ga-category="store-test"
                                                                         ga-label="buy basic"
+                                                                        ga-page="/store-test.html"
                                                                         value="true" type="submit" name="price[submit]">Buy Basic</button>
                                                                 </form>
                                                             <div class="space_line">&nbsp;</div> 
@@ -374,6 +376,7 @@
                                                                         ga-action ="click"
                                                                         ga-category="store-test"
                                                                         ga-label="buy premium"
+                                                                        ga-page="/store-test.html"
                                                                         value="true" type="submit" name="price[submit]">Buy Premium</button>
                                                                 <div class="show_premium_features"><a href="#">Show Premium features</a></div>
                                                                 </form>
@@ -467,6 +470,7 @@
                                                                         ga-action ="click"
                                                                         ga-category="store-test"
                                                                         ga-label="buy premium"
+                                                                        ga-page="/store-test.html"
                                                                         value="true" type="submit" name="price[submit]">Buy Premium</button>
                                                                 </form>
                                                                 <div class="space_line">&nbsp;</div> 

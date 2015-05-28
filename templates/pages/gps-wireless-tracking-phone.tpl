@@ -37,7 +37,7 @@
             textAlign = "right"
             title = "<b>Compatible with</b> iOS & Android <br />Supported by <b>All Mobile Carriers</b>"
             description = "Monitor the target device remotely<br />
-            Despite of mobile carrier services."
+            Despite of mobile carrier services"
             promoBuyBlock = "no"
             planPackageBuy = "yes"
             blockTrial = "no"
@@ -80,7 +80,7 @@
         <!-- BLOCK COMPATIBILITY -->
         {include file='../includes/content/compatibility/compatibility-table.tpl'
             blockBg="dark"
-            descriptions="The app is compatible with most of modern smartphones and tablets run by iOS and Android. You can check if your particular target device is compatible by finding it in the list on our <a href='/compatibility/'>Compatibility</a> page. Alternatively, you can fill in the form, send us a request, and we will do it for you."
+            descriptions="The app is compatible with most of modern smartphones and tablets run by iOS and Android. You can check if your particular target device is compatible by finding it in the list on our <a class='a-default' href='/compatibility/'>Compatibility</a> page. Alternatively, you can fill in the form, send us a request, and we will do it for you."
         } 
         
         

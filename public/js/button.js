@@ -60,6 +60,7 @@ $(function() {
         var _b = $(this), _form = $(this).closest('form');  // .find('.ga-action-submit')
         var _ga_action = (_b.attr('ga-action')) ? _b.attr('ga-action') : false,
            _ga_category = (_b.attr('ga-category')) ? _b.attr('ga-category') : false,
+//           _ga_page = (_b.attr('ga-page')) ? _b.attr('ga-page') : '',
            _ga_label = (_b.attr('ga-label')) ? $.trim( _b.attr('ga-label').toLowerCase() ).replace(/\s/g,'-') : false;
         
         if(_ga_action && _ga_category && _ga_label) {
@@ -70,6 +71,8 @@ $(function() {
             //console.log( 'Click start!' );
             //console.log( !window.ga, !(ga.hasOwnProperty('loaded') && ga.loaded === true) );
             ga('send', 'event', _ga_category, _ga_action, _ga_label, {
+//                'page': _ga_page,
+//                '_trackPageview': _ga_page, 
                 'hitCallback': function() {
                     _form.submit();
                 }

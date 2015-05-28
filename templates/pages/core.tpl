@@ -382,6 +382,7 @@
             Template: BLOCK FEATURES TEBLE
             Переменные:
                 blockBg (string): Стиль блока ( dark / light ) *default: dark
+                description (string) описание блока.
         *}
         {include file='../includes/content/features-table.tpl' 
                 blockBg="dark"
@@ -427,6 +428,43 @@
                 description = "Try Control Panel demo to see Pumpic Calls Monitoring in use.<br/>Buy Pumpic to protect your kids and track their calls right now."
 
         }
+        
+        {*
+            Template: BLOCK BLUE
+            Переменные:
+                title (string): название блока.
+                description (string): описание блока.
+        *}
+        {include file='../includes/content/block-blue-text.tpl'
+            title = "Pumpic app is attached to the target device itself. <br />It does not depend on a mobile carrier that is used."
+            description = "Descriptions"
+        }
+        
+        {*
+            Template: BLOCK COMPATIBILITY
+            Переменные:
+                blockBg (string): Стиль блока ( dark / light ) *default: dark
+                title (string): название блока.
+                description (string): описание блока.
+        *}
+        {include file='../includes/content/compatibility/compatibility-table.tpl'
+            blockBg="light"
+            descriptions="The app is compatible with most of modern smartphones and tablets run by iOS and Android. You can check if your particular target device is compatible by finding it in the list on our <a href='/compatibility/'>Compatibility</a> page. Alternatively, you can fill in the form, send us a request, and we will do it for you."
+        } 
+        
+        
+        {*
+            Template: BLOCK MOBILE OPERATOTS
+            Переменные:
+                blockBg (string): Стиль блока ( dark / light ) *default: dark
+                title (string): название блока.
+                description (string): описание блока.
+        *}
+        {include file='../includes/content/mobile-operators.tpl'
+            blockBg="dark"
+            title = "Mobile Wireless Carriers Worldwide"
+            descriptions="When searching for a relevant mobile monitoring app online, many people tend to use key words like “how to track my Verizon phone”, “Vodafone tracking”, or “at&t mobile monitoring”. However, it is important to note that Pumpic app works independently; our monitoring software does not depend on any mobile carrier as well as services it provides."
+        } 
         
         {*
             Template: TESTIMONIALS
@@ -648,6 +686,8 @@
         {include file='../includes/content/banners/lib/banner-promo-app.tpl'}
         {* Template: BLOCK BANNER #4 'PROMO-TEENAGERS' *}
         {include file='../includes/content/banners/lib/banner-promo-teenagers.tpl'}
+        {* Template: BLOCK BANNER #5 'PROMO-MOBILE-OPERATORS' *}
+        {include file='../includes/content/banners/lib/banner-promo-mobile-operators.tpl'}
         <div>
             <div class="container">
                 <div class="row">

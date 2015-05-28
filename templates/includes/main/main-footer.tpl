@@ -27,6 +27,9 @@
                                          <li>
                                             <a href="/security/">Security</a>
                                         </li>
+                                        <li>
+                                            <a href="/how-to-monitor-social-networks.html">How to Monitor Social Networks</a>
+                                        </li>
                                 </ul>
                         </div>
                         {include file="../../includes/main/main-footer-our-products.tpl"}

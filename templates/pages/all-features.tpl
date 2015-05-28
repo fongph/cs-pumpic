@@ -1102,9 +1102,10 @@
                                             <li>Bookmarks list</li>
                                             <li>Calendar events</li>
                                             <li>Photos</li>
+                                            <li>Notes</li>
                                             <li>WhatsApp</li>
                                             <li>Skype</li>
-                                            <li>View Demo</li>
+                                            {*<li>View Demo</li>*}
                                         </ul>
                                         {*<ul>
                                             <li>Track every single email your kid sends or receives. Check</li>

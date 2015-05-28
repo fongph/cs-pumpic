@@ -491,7 +491,7 @@ legend {
 
 .list-operators li {
     display: inline-block;
-    min-height: 80px;
+    min-height: 80px; /* 80 */
     height: 80px;
     line-height: 80px;
     padding: 10px;
@@ -522,3 +522,25 @@ legend {
     }
 }
 
+#block-content {
+    counter-reset: section;
+}
+
+#block-content h2.incr-number-green {
+    font-size: 24px;
+    line-height: 1.4em;
+    padding: 5px 0px;
+}
+
+#block-content h2.incr-number-green:before {
+    background: #16a89e none repeat scroll 0 0;
+    border-radius: 50%;
+    color: #fff;
+    content: counter(section, decimal);
+    counter-increment: section;
+    font-size: 26px;
+    font-weight: 300;
+/*    line-height: 1.4em;*/
+    margin-right: 10px;
+    padding: 0 12px;
+}

@@ -59,18 +59,18 @@
 									<h3 class="text-center">Refund Policy{*REFUND POLICY*}</h3>
 									<p class="text-justify">Every purchase of Pumpic products and their use are governed by this policy. Please read it through carefully before you make your purchase, since this Refund Policy sets forth the terms and conditions under which refunds are issued, as well as your rights in regards to your purchases, including any essential restrictions and exclusions. By placing an order on Pumpic.com, you agree that your order shall be governed by this policy.</p>
 									<h3 class="text-center">Refund Conditions{*REFUND CONDITIONS*}</h3>
-									<p class="text-justify">As a subject to these Refund Policy conditions, you may be eligible for a full refund within 10 days starting from the date of your purchase, if only your reasons do not contradict with the Refund Policy conditions outlined below. No refund will be issued after the refund period is over.</p>
+									<p class="text-justify">As a subject to these Refund Policy conditions, you may be eligible for a full refund within 10 days starting from the date of your purchase. You confirm that your reasons don’t contradict with the Refund Policy Conditions outlined below. No refund will be issued after the refund period is over.</p>
 									<p class="text-justify">A refund may be applied only to your primary Pumpic subscription purchase. If you own more than one subscription, no refund will be available. Your money may be refunded only once. If you buy another Pumpic subscription at later time, this will not be a subject to any refund. Any purchase of Pumpic software at a discount price is non-refundable. No refund is issued, if a customer refuses to update Pumpic version, which should follow any upgrade on the target device.</p>
                                     <p class="text-justify">Please note that promo subscriptions, which come in addition to a plan you purchase, are not subjects to a refund. If everything is fine with a subscription that you have bought, your order will not be refunded regardless any issues with subscriptions that you have gotten for free.</p>
 									<h3 class="text-center">General{*GENERAL*}</h3>
-									<p class="text-justify">If something goes wrong with Pumpic software due to our fault, you can be eligible for a full refund within 10 days starting from the date of its purchase according to the Refund Policy conditions outlined below. However, we are sure that most refunds can be avoided if you request professional help from our customer support.</p>
+									<p class="text-justify">If you are not fully satisfied with your purchase of Pumpic software, you can be eligible for a full refund within 10 days starting from the date of its purchase according to the Refund Conditions outlined below. However, we are sure that most refunds can be avoided if you request professional help from our customer support.</p>
 									<p class="note">
 										Note{*NOTE*} : <span>Subscription Prolongation/Automatic Renewals are Non-Refundable</span>
 									</p>
 									<div class="text-center">
 										<span class="title_bordered">Force majeure</span>
 										<p class="text-success">No refund can be granted to Pumpic customers in case their reasons for a refund request are completely beyond our control. 
-											<br />The reasons for no refund can be the following:</p>
+											<br />The reasons can be the following:</p>
 									</div>
 									<ul class="feature_list">
 										<li>The target device does not have the Internet access any longer (no money left on balance, temporary service interruptions, roaming-related problems etc.).</li>
@@ -81,16 +81,16 @@
 										<li>A customer didn’t know the app is visible to the user of the target phone.</li>
 										<li>A customer didn’t receive previous data from the target device because Pumpic had not been installed at that time.</li>
 										<li>The target device uses Symbian Belle, Windows Phone OS, Bada OS, or any other operating system, which is not listed on our Compatibility page.</li>
-										<li>A customer planned to use one Pumpic subscription plan on more than one target device.</li>
-										<li>Other personal reasons (“I’ve changed my mind”, “I’ve made a purchase by mistake”, etc.)</li>
+										<li>A customer planned to use one Pumpic subscription plan on more than one target device.<br />Other personal reasons (“I’ve changed my mind”, “I’ve made a purchase by mistake”, etc.).
+</li>
 										<li>A customer is either unable or unwilling to jailbreak the target iOS device (iPhone, iPad, iPod Touch), or to use iCloud Solution, which comes with Premium subscription only. A refund is not issued if a jailbreak version is not yet available for the given iOS version.</li>
 										<li>A customer is either unable or unwilling to root the target Android device to obtain full functionality of the application, which includes viewing information from Google Chrome, IM activity, or emails.</li>
+										<li>No refund is issued if the Keylogger feature does not work because the target device user uses a Keyboard different from US English.</li>
 										<li>A customer has reached the limit on his or her subscription plan.</li>
 										<li>A customer intended to monitor web activities of non-standard web-browsers, except for Internet and Google Chrome on Android OS), and Safari on iOS.</li>
 										<li>The target device is switched/replaced.</li>
 										<li>A customer refuses to update the application or OS version after the technical issues have been resolved successfully.</li>
 										<li>A customer cannot utilize the application properly due to the functioning of any anti-virus, other software, or other spyware installed on the target device.</li>
-										<li>No refund is issued if the Keylogger feature does not work because the target device user uses a Keyboard different from US English.</li>
 										<li>A customer cannot or does not want to additionally enable the Keylogger feature on the target Android device following the instructions provided by Pumpic customer support.</li>
 									</ul>
 									<h3 class="text-center">Refund Procedure{*REFUND PROCEDURE*}</h3>

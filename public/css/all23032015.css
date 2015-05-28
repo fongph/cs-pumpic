@@ -1083,6 +1083,11 @@ th .table_title {
     background: url('../images/icons/coming_soon/i-notes.png') no-repeat;
 }
 
+.cs-ico-kik {
+    background: url("../images/technological/i-list-features-kik-chat.png") no-repeat;
+    background-position: bottom center;
+}
+
 [class="cs-ico-*"] {
     background-position: center center;
 } 
@@ -1141,8 +1146,20 @@ th .table_title {
     }
 }
 
-.icloud-iphone-without-jailbreak-monitoring .basic_wr .basic_fe .list_price-no-link li, 
-.icloud-iphone-without-jailbreak-monitoring .premium_wr .premium_fe .list_price-no-link li{
+.icloud-iphone-without-jailbreak-monitoring .basic_wr .basic_fe .list_price-no-link li {
+    min-height: 120px;  
+    height: auto;
+}
+
+.icloud-iphone-without-jailbreak-monitoring .premium_wr .premium_fe .list_price-no-link li {
     min-height: 70px;  
     height: 70px;
+}
+
+@media (max-width: 768px) { 
+    .icloud-iphone-without-jailbreak-monitoring .basic_wr .basic_fe .list_price-no-link li, 
+    .icloud-iphone-without-jailbreak-monitoring .premium_wr .premium_fe .list_price-no-link li{
+           height: auto;
+           min-height: auto;
+    }
 }

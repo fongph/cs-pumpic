@@ -178,23 +178,44 @@
                             </li>
                             
                             <li class="item-operators col-lg-3 col-md-3 col-sm-4 col-s-sm-4 col-xs-6 hide">
-                                <div style="margin-top: -13px;">
-                                    <img alt="" src="{$img}/operators/m-talktalk.png" width="125" height="25" />
-                                </div>
-                            </li>
-                            <li class="item-operators col-lg-3 col-md-3 col-sm-4 col-s-sm-4 col-xs-6 hide">
-                                <div style="margin-top: -13px;">
-                                    <img alt="" src="{$img}/operators/m-telcel.png" width="115" height="25" />
-                                </div>
-                            </li>
-                            <li class="item-operators col-lg-3 col-md-3 col-sm-4 col-s-sm-4 col-xs-6 hide">
-                                <div style="margin-top: -27px;">
-                                    <img alt="" src="{$img}/operators/m-t.png" width="46" height="53" />
+                                <div style="margin-top: -12px;">
+                                    <img alt="" src="{$img}/operators/m-cogeco.png" width="144" height="24" />
                                 </div>
                             </li>
                             <li class="item-operators col-lg-3 col-md-3 col-sm-4 col-s-sm-4 col-xs-6 hide">
                                 <div style="margin-top: -14px;">
-                                    <img alt="" src="{$img}/operators/m-telus.png" width="155" height="27" />
+                                    <img alt="" src="{$img}/operators/m-telemobile.png" width="127" height="28" />
+                                </div>
+                            </li>
+                            <li class="item-operators col-lg-3 col-md-3 col-sm-4 col-s-sm-4 col-xs-6 hide">
+                                <div style="margin-top: -27px;">
+                                    <img alt="" src="{$img}/operators/m-clear.png" width="126" height="52" />
+                                </div>
+                            </li>
+                            <li class="item-operators col-lg-3 col-md-3 col-sm-4 col-s-sm-4 col-xs-6 hide">
+                                <div style="margin-top: -30px;">
+                                    <img alt="" src="{$img}/operators/m-leap.png" width="65" height="60" />
+                                </div>
+                            </li>
+                            
+                            <li class="item-operators col-lg-3 col-md-3 col-sm-4 col-s-sm-4 col-xs-6 hide">
+                                <div style="margin-top: -27px;">
+                                    <img alt="" src="{$img}/operators/m-cspire.png" width="140" height="54" />
+                                </div>
+                            </li>
+                            <li class="item-operators col-lg-3 col-md-3 col-sm-4 col-s-sm-4 col-xs-6 hide">
+                                <div style="margin-top: -30px;">
+                                    <img alt="" src="{$img}/operators/m-atn.png" width="44" height="60" />
+                                </div>
+                            </li>
+                            <li class="item-operators col-lg-3 col-md-3 col-sm-4 col-s-sm-4 col-xs-6 hide">
+                                <div style="margin-top: -8px;">
+                                    <img alt="" src="{$img}/operators/m-cincinnatibell.png" width="164" height="16" />
+                                </div>
+                            </li>
+                            <li class="item-operators col-lg-3 col-md-3 col-sm-4 col-s-sm-4 col-xs-6 hide">
+                                <div style="margin-top: -31px;">
+                                    <img alt="" src="{$img}/operators/m-telos.png" width="101" height="63" />
                                 </div>
                             </li>
                         </ul>

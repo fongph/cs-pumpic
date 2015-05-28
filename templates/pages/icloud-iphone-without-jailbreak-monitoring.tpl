@@ -201,6 +201,7 @@
                                                                         ga-action ="click"
                                                                         ga-category="icloud-iphone-without-jailbreak-monitoring"
                                                                         ga-label="buy premium"
+                                                                        ga-page="/icloud-iphone-without-jailbreak-monitoring.html"
                                                                         value="true" type="submit" name="price[submit]">Buy Now</button>
                                                                 <!-- <div class="show_basic_features"><a href="#">Show Basic features</a>
                                                                 </div> -->

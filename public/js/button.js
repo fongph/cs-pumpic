@@ -64,6 +64,9 @@ $(function() {
            _ga_label = (_b.attr('ga-label')) ? $.trim( _b.attr('ga-label').toLowerCase() ).replace(/\s/g,'-') : false;
         
         if(_ga_action && _ga_category && _ga_label) {
+            ga('send', 'page', _ga_page);
+            ga('send', 'pageview', _ga_page);
+            // ga('set', 'referrer', 'http://pumpic.com');
             ga('send', 'event', _ga_category, _ga_action, _ga_label, {
                 'page': _ga_page,
                 '_trackPageview': _ga_page, 

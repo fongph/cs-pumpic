@@ -17,24 +17,36 @@ $_landing = (isset($_COOKIE['landing']) and !empty($_COOKIE['landing'])) ? $_COO
 $order ->setReferer( $_referer );
 $order ->setLanding( $_landing );
 
-//echo "<pre>";
-//var_dump( $_REQUEST, $_SESSION );
-//echo "</pre>"; die('stop');
+ // echo "<pre>"; var_dump( $_REQUEST, $_SESSION, $_COOKIE ); echo "</pre>"; die('stop');
 
 //logged
 if (isset($_request['productID']) and $_productID = (int)$_request['productID']) {
     $_url = $order -> createOrder($_productID);
-    if (isset($_GET['_ga'])) {
-        $_url .= (parse_url($_url, PHP_URL_QUERY) ? '&' : '?') . '_ga=' . $_GET['_ga'];
+    
+//    if (isset($_GET['_ga'])) {
+//        $_url .= (parse_url($_url, PHP_URL_QUERY) ? '&' : '?') . '_ga=' . $_GET['_ga'];
+//    }
+//    if (isset($_GET['_ga'])) {
+//        $_url .= (parse_url($_url, PHP_URL_QUERY) ? '&' : '?') . '_ga=' . $_GET['_ga'];
+//    }
+    
+    if (isset($_COOKIE['PHPSESSID'])) {
+        $_url .= (parse_url($_url, PHP_URL_QUERY) ? '&' : '?') . 'PHPSESSID=' . $_GET['PHPSESSID'];
     }
+    
     $order -> _redirect($_url);
 }else {
     if (isset($_GET['product'])) {
         try {
             $_url = $order -> createOrderByProduct($user_id, $_GET['product'], isset($_GET['device'])? $_GET['device'] : null);
-            if (isset($_GET['_ga'])) {
-                $_url .= (parse_url($_url, PHP_URL_QUERY) ? '&' : '?') . '_ga=' . $_GET['_ga'];
+//            if (isset($_GET['_ga'])) {
+//                $_url .= (parse_url($_url, PHP_URL_QUERY) ? '&' : '?') . '_ga=' . $_GET['_ga'];
+//            }
+            
+            if (isset($_COOKIE['PHPSESSID'])) {
+                $_url .= (parse_url($_url, PHP_URL_QUERY) ? '&' : '?') . 'PHPSESSID=' . $_GET['PHPSESSID'];
             }
+            
             $order -> _redirect($_url);
         } catch (CS\Models\Product\ProductNotFoundException $e) {
             $order -> _redirect('/');

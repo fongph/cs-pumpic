@@ -12,14 +12,33 @@
                         {if in_array('left', $position)}
                         <td class='{if isset($Review)}col-s-sm-6 col-xs-sm-5 col-md-4 col-lg-4 {else}col-s-sm-6 col-xs-sm-5 col-md-5 col-lg-6{/if} {if in_array('bottom', $position)}vertical-aligh-bottom{/if}'>
                             
-                            <div class="visual-images-left {if isset($Review)}visual-images-left-lg{/if}">
+                            <div class="visual-images-left {if isset($Review)}visual-images-left-lg{/if} {if $block_video}box-video-constructors{/if}">
                                 <img {if isset($imgWidth)}width='{$imgWidth}'{/if}
                                      {if isset($imgHeight)}height='{$imgHeight}'{/if}                       
                                     src="{$img}/{$imgUrl}" alt="{$imgAlt}" class="visual-img-pc">   
+                                {if isset($block_video) && $block_video == "yes" && isset($block_video_src) && $block_video_src != ""}
+                                    <div id="block-video">
+                                        <div class="block-video-button">
+                                            <div class="video-arrows"></div>
+                                            <div class="box-hover">
+                                                <a 
+                                                   {*data-toggle="modal" *}
+                                                   data-src="{$block_video_src}" 
+                                                   data-height="520" 
+                                                   data-width="820"
+                                                   {*data-target="#myModal"*} id="openBtnVideo">
+                                                    <img src="{$img}/video/video-button-play.png" class="video-buttons" />
+                                                    <img src="{$img}/video/hover-video-button-play.png" class="hover-video-buttons" /> 
+                                                </a>    
+                                            </div>
+                                        </div>
+                                    </div>
+                                {/if}
                             </div> 
                              
                         </td>
                         {/if}
+                        
                         <td class="col-s-sm-12 col-xs-sm-12 {if $imgAlign == "center"} col-md-12 col-lg-12  {else}{if isset($Review)}col-md-8 col-lg-8{else}{if $collg}col-md-{$collg} col-lg-{$collg}{else}col-md-6 col-lg-6{/if}{/if}{/if}">
                             
                             <div>
@@ -174,18 +193,56 @@
                         </td>
                         
                         {if in_array('right', $position)}
-                        <td class='col-xs-sm-12 col-s-sm-12 col-sm-12 col-md-5 col-lg-5 {if $imgVerticalAlign == 'bottom'}vertical-aligh-bottom{/if}'>
-                            <div class="visual-images-right">
-                                 <img src="{$img}/{$imgUrl}" alt="{$imgAlt}" class="visual-img-pc">      
+                        <td class='col-xs-sm-12 col-s-sm-12 col-sm-12 col-md-5 col-lg-5{if $imgVerticalAlign == 'bottom'} vertical-aligh-bottom{/if}'>
+                            <div class="visual-images-right {if $block_video}box-video-constructors{/if}">
+                                 <img src="{$img}/{$imgUrl}" alt="{$imgAlt}" class="visual-img-pc"> 
+                                 {if isset($block_video) && $block_video == "yes" && isset($block_video_src) && $block_video_src != ""}
+                                    <div id="block-video">
+                                        <div class="block-video-button">
+                                            <div class="video-arrows pc-version"></div>
+                                            <div class="mobile-video-arrows"></div>
+                                            <div class="box-hover">
+                                                <a 
+                                                   {*data-toggle="modal" *}
+                                                   data-src="{$block_video_src}" 
+                                                   data-height="520" 
+                                                   data-width="820" 
+                                                   {*data-target="#myModal"*} 
+                                                   id="openBtnVideo"> 
+                                                    <img src="{$img}/video/video-button-play.png" class="video-buttons" />
+                                                    <img src="{$img}/video/hover-video-button-play.png" class="hover-video-buttons" />
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                {/if}
                             </div>
                         </td>
                         {/if}
                     </tr>
                     <tr>    
                         {if in_array('bottom', $position)}
-                        <td class='col-xs-sm-12 col-s-sm-12 col-sm-12 col-md-6 col-log-5 '>
-                            <div class="col-xs-sm-8 col-s-sm-10 col-sm-10 visual-images-bottom mobile-version-inline model-center">
-                                 <img src="{$img}/{$imgUrl}" alt="{$imgAlt}" class="visual-img-pc">      
+                        <td class='col-xs-sm-12 col-s-sm-12 col-sm-12 col-md-6 col-log-5'>
+                            <div class="col-xs-sm-8 col-s-sm-10 col-sm-10 visual-images-bottom mobile-version-inline model-center {if $block_video}box-video-constructors{/if}">
+                                 <img src="{$img}/{$imgUrl}" alt="{$imgAlt}" class="visual-img-pc">   
+                                 {if isset($block_video) && $block_video == "yes" && isset($block_video_src) && $block_video_src != ""}
+                                    <div id="mobile-block-video" class="row">
+                                        
+                                        <div class="mobile-block-video-button">
+                                            <div class="mobile-video-arrows"></div>
+                                            <a 
+                                               {*data-toggle="modal"*} 
+                                               data-src="{$block_video_src}" 
+                                               data-height="520" 
+                                               data-width="820" 
+                                               {*data-target="#myModal"*} id="openBtnVideo">
+                                                <img src="{$img}/video/m-video-button-play.png" class="mobile-video-buttons" />
+                                            </a>
+                                            
+                                            {*<img src="{$img}/video/hover-video-button-play.png" class="mobile-hover-video-buttons" />*} 
+                                        </div>
+                                    </div>
+                                {/if}
                             </div> 
                         </td>
                         {/if}

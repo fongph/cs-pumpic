@@ -633,6 +633,11 @@ function die( $_msg ) {
 
 $(document).ready(function(){ 
     
+   $rs_width = false;
+   $( window ).resize(function() { 
+      $rs_width = $(window).width()
+   });
+    
     cookie_init();
     
     $.data( window, "filters", false); // init clear cache
@@ -1921,4 +1926,62 @@ $('form[name="send_find_phone"] button.event-submit').click(function(){
    }
    
    
+   
+   // hovers
+   $('.box-video-constructors .block-video-button > .box-hover').hover(
+      function() {
+          // console.log( $rs_width );
+          if(!$rs_width || $rs_width > 992)
+             $(this).find('.hover-video-buttons').show();
+      }, function() {
+          if(!$rs_width || $rs_width > 992)
+            $(this).find('.hover-video-buttons').hide();  
+      }
+    );
+    
+        
+    // bootstrap clic popUp
+   $('a#openBtnVideo').click(function(e){
+        e.preventDefault();
+        var src = $(this).attr('data-src');
+        var height = $(this).attr('data-height') || 520;
+        var width = $(this).attr('data-width') || 820;
+        
+        var p_w = parseInt( width ) + 15;
+        var p_h = parseInt( height ) + 25;
+       
+        // $("#myModal .modal-dialog").css({'max-width': p_w+'px'}); // 'height': p_h+'px'
+        $("#myModal .modal-body").css({'max-width': width+'px', 'height': height+'px'});
+        
+        $("#myModal iframe").attr({ 'height': height,
+                                    'width': width});
+        
+        $('#myModal').on('shown.bs.modal', function (e) {
+            $("#myModal iframe").attr({'src':src});
+        });
+        
+        $('#myModal').modal({show:true});
+        return false;
+    });
+    
+    $('#myModal').on('shown.bs.modal', function (e) {
+    });
+    $('#myModal').on('hidden.bs.modal', function (e) { 
+    });
+
+//    $('a#openBtnVideo').on('click', function(e) {
+//        var src = $(this).attr('data-src');
+//        var height = $(this).attr('data-height') || 520;
+//        var width = $(this).attr('data-width') || 820;
+//        
+//        var p_w = parseInt( width ) + 15;
+//        var p_h = parseInt( height ) + 25;
+//        
+//        $("#myModal .modal-dialog").css({'width': p_w+'px', 'height': p_h+'px'});
+//        $("#myModal .modal-body").css({'width': width+'px', 'height': height+'px'});
+//        $("#myModal iframe").attr({'src':src,
+//                               'height': height,
+//                               'width': width});
+//    });
+
 }); 

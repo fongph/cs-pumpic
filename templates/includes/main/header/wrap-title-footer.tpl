@@ -1,7 +1,10 @@
 {strip}
 	<!-- Bootstrap -->
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,300italic,400italic,600italic,700italic' rel='stylesheet' type='text/css'>
-	<link href="{$css}/bootstrap.css?{style_cache data='2015-02-09'}" rel="stylesheet">
+	
+        {*<link href="{$cssMin}/frontend.min.css?{style_cache data='2015-02-05'}" rel="stylesheet">*}
+        
+        <link href="{$css}/bootstrap.css?{style_cache data='2015-02-09'}" rel="stylesheet">
 	<link href="{$css}/fontello.css?{style_cache data='2015-02-09'}" rel="stylesheet">
         <!-- lightbox style -->
         <link href="{$css}/lightbox.css?{style_cache data='2015-02-09'}" rel="stylesheet">
@@ -47,7 +50,10 @@
         <link href="{$css}/compatibility.css?{style_cache data='2015-02-09'}" rel="stylesheet">
         
         <!-- 404 -->
-        <link href="{$css}/404.css?{style_cache data='2015-02-09'}" rel="stylesheet">
+        <link href="{$css}/404.css?{style_cache data='2015-02-09'}" rel="stylesheet"> 
+        
+        <!-- video -->
+        <link href="{$css}/video.css?{style_cache data='2015-02-09'}" rel="stylesheet"> 
         
 	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -57,7 +63,20 @@
 	<![endif]-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js?{style_cache data='2015-02-05'}"></script>
         <script src="http://code.jquery.com/jquery-migrate-1.2.1.js?{style_cache data='2015-02-05'}"></script>
-	<script src="{$js}/bootstrap.js?{style_cache data='2015-02-05'}"></script>
+	
+        {nocache} 
+        <script>
+            {assign _hasUser 'false'}
+            {if ''|hasUser}{assign _hasUser 'true'}{/if}
+            
+            var UserLogin = '{UserLogin}',
+                _hasUser = '{$_hasUser}';
+                        
+        </script>
+        {/nocache} 
+        {*<script src="{$jsMin}/frontend.min.js?{style_cache data='2015-02-05'}"></script>*}
+        
+        <script src="{$js}/bootstrap.js?{style_cache data='2015-02-05'}"></script>
 	<script src="{$js}/fancy_checkbox.js?{style_cache data='2015-02-05'}"></script>
         <script src="{$js}/main.js?{style_cache data='2015-02-05'}"></script>
         
@@ -91,16 +110,7 @@
         <!-- monay convert-->
         <script src="{$js}/money/money.min.js?{style_cache data='2015-02-05'}"></script>
         <script src="{$js}/currancy.js?{style_cache data='2015-02-05'}"></script>
-        {nocache} 
-        <script>
-            {assign _hasUser 'false'}
-            {if ''|hasUser}{assign _hasUser 'true'}{/if}
-            
-            var UserLogin = '{UserLogin}',
-                _hasUser = '{$_hasUser}';
-                        
-        </script>
-        {/nocache} 
+        
         <!-- init -->
         <script src="{$js}/scroll.js?{style_cache data='2015-02-05'}"></script>
         <script src="{$js}/init.js?{style_cache data='2015-02-05'}"></script>

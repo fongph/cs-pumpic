@@ -37,11 +37,12 @@
             on iPhone, iPad, iPod Touch, and Android devices."
             promoBuyBlock = "no"
             planPackageBuy = "yes"
+            block_video = "no"
         }
         
         {include file='../includes/content/plans.tpl' }
         
-        {include file='../includes/content/secures-parental.tpl' blockBg="light"}
+        {include file='../includes/content/secures-parental.tpl' blockBg="light" title="How Pumpic Secures Your Kid"}
 
         {include file='../includes/content/features-table.tpl'
         title = "Top Parental Control Features"

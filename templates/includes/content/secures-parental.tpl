@@ -1,6 +1,6 @@
 <div class="{if $blockBg}{$blockBg}{else}dark{/if}">
         <div class="container">
-                <h2 class="text-center">{if $title}{$title}{else}Track Digital Footprints of Your Children{/if}</h2>
+                <h2 class="text-center">{if $title}{$title}{else}How Pumpic Secures Your Kid{/if}</h2>
                 <div class="row">
                         <div class="col-sm-4 col-md-4 col-lg-4">
                                 <div class="feature">

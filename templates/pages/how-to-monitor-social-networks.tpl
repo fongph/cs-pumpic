@@ -69,32 +69,32 @@
         <div class="pb10">
             <h2 class="incr-number-green">Adjust your kids’ privacy settings</h2>
             {*<p><strong>2. Adjust your kids’ privacy settings.</strong></p>*}
-            <p class="text-center pb20"><img src="{$img}/monitor_social_networks/sn_2.png" alt="Privacy Settings" class="sn-2" /></p>
+            <p class="text-center"><img src="{$img}/monitor_social_networks/sn_2.png" alt="Privacy Settings" class="sn-2" /></p>
             <p>If you are more tech-savvy than your kids, help them adjust online privacy settings appropriately. Do not leave privacy setting in default mode, since in this case your children will be able to share too much information with the public. Set private mode and make sure that only approved friends can see what your kids post, like, and share.</p>   
         </div>
             
         <div class="pb10">    
             <h2 class="incr-number-green">Set your own rules</h2>
             {*<p><strong>3. Set your own rules.</strong></p>*}
-            <p class="text-center pb20"><img src="{$img}/monitor_social_networks/sn_3.png" alt="Online Rules" class="sn-3" /></p>
+            <p class="text-center"><img src="{$img}/monitor_social_networks/sn_3.png" alt="Online Rules" class="sn-3" /></p>
             <p>You should clearly specify that the access to social media and the Internet as a whole is a privilege for your children, not a matter of course. Thus, you should set your own rules by following which your kids will get this privilege. If you want to monitor what they do online, let them know that you will follow their posts, comments, and new friends added.</p>  
         </div>
         <div class="pb10">    
             <h2 class="incr-number-green">Befriend Your Children on Social Media</h2>
             {*<p><strong>4. Befriend Your Children on Social Media.</strong></p>*}
-            <p class="text-center pb20"><img src="{$img}/monitor_social_networks/sn_4.png" alt="Social Media Friends" class="sn-4" /></p>
+            <p class="text-center"><img src="{$img}/monitor_social_networks/sn_4.png" alt="Social Media Friends" class="sn-4" /></p>
             <p>By setting private mode to prevent you kids from communicating with strangers and misgiving people, you will be able to see their content only in case you are official friends on a particular network. If not, all post, likes, shares, as well as new contacts will be hidden from you. That’s why befriending your kids is a pre-requisite for them to use social media.</p> 
         </div>
         <div class="pb10">    
             <h2 class="incr-number-green">Talk to your children</h2>
             {*<p><strong>5. Talk to your children.</strong></p>*}
-            <p class="text-center pb20"><img src="{$img}/monitor_social_networks/sn_5.png" alt="Conversation" class="sn-5" /></p>
+            <p class="text-center"><img src="{$img}/monitor_social_networks/sn_5.png" alt="Conversation" class="sn-5" /></p>
             <p>Being a parent you should always keep the conversation between you and your kids open. They should clearly realize your concerns, trust you, and know they can rely on you for any reason. Explain your children why online reality may be dangerous, as well as why your interference may be needed sometimes. Your kids should understand that you do not try to restrict their freedom, but protect them and secure their happiness.</p> 
         </div>
         <div class="pb10">    
             <h2 class="incr-number-green">Actively monitor your children</h2>
             {*<p><strong>6. Actively monitor your children.</strong></p>*}
-            <p class="text-center pb20"><img src="{$img}/monitor_social_networks/sn_6.png" alt="Monitor Your Children" class="sn-6" /></p>
+            <p class="text-center"><img src="{$img}/monitor_social_networks/sn_6.png" alt="Monitor Your Children" class="sn-6" /></p>
             <p>Eventually you will have to let your children live their own lives and make their own mistakes. The earlier you will do this, the more experienced your kids will be. However, it does not mean at all that you should stop taking care of your children and back them up. Good parental control software will help in this case. It will let you monitor online activity and cell phone use without direct physical access. Thus, you will grant your children freedom of communication and at the same time will have a capability of preventing them from danger they may face.</p> 
             <p>Keep your eyes open, since kids’ protection is your top priority.</p>
         </div>

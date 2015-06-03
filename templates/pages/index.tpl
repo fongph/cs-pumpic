@@ -39,6 +39,8 @@
                            Track location. View calls and SMS. Follow online activity."
             promoBuyBlock = "no"
             planPackageBuy = "yes"
+            block_video = "no"
+            block_video_src = "http://www.youtube.com/embed/Oc8sWN_jNF4?rel=0&wmode=transparent&fs=0"
         }
         
         {include file='../includes/content/plans.tpl'}

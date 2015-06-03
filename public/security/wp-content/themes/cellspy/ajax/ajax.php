@@ -1,4 +1,10 @@
 <?php
+/**
+ * Description of ajax
+ *
+ * @author sergey
+ */
+
 define( 'DOING_AJAX', true );
 
 $_dist = dirname( dirname( __FILE__ ) ) ;
@@ -32,12 +38,3 @@ if ( ! empty( $_POST['action'] ) && in_array( $_POST['action'], $core_actions ) 
 	add_action( 'wp_ajax_' . $_POST['action'], 'wp_ajax_' . str_replace( '-', '_', $_POST['action'] ), 1 );
 
 do_action( 'wp_ajax_' . $_REQUEST['action'] );
-
-/**
- * Description of ajax
- *
- * @author sergey
- */
-//class ajax {
-//    //put your code here
-//}

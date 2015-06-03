@@ -328,7 +328,9 @@ select.form-control option {
 
 .logo {
   float: left;
-  background: url(../images/logo.png) no-repeat;
+  background: url(../images/logo/logo.png) no-repeat;
+  
+/*  background: url(../images/logo.png) no-repeat;*/
 /*  width: 149px;*/
   width: 172px;
   height: 44px;
@@ -6843,4 +6845,22 @@ form.form-contact-us .box-captcha {
     background: #c7c7c7;
     border-color: #adadad;
     text-decoration: none;
+}
+
+/* ================ // footer bottom ================== */
+
+@media only screen and (max-width: 410px) {
+    .very_easy { min-height: auto; }
+}
+@media (min-width: 468px) {
+    .very_easy { min-height: auto; }
+}
+@media (min-width: 768px) { 
+    .very_easy { min-height: auto; }
+}
+@media (min-width: 992px) {
+    .very_easy { min-height: 640px; }
+}
+@media (min-width: 1200px) { 
+    .very_easy { min-height: 768px; }
 }

@@ -13463,7 +13463,7 @@ form.form-contact-us .box-captcha {
 
 /* ================ // footer bottom ================== */
 
-@media only screen and (max-width: 410px) {
+/*@media only screen and (max-width: 410px) {
     .very_easy { min-height: auto; }
 }
 @media (min-width: 468px) {
@@ -13477,7 +13477,7 @@ form.form-contact-us .box-captcha {
 }
 @media (min-width: 1200px) { 
     .very_easy { min-height: 768px; }
-}
+}*/
 .banner-header {
     padding: 25px 0 20px;
 }

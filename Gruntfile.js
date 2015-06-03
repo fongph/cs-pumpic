@@ -2,61 +2,100 @@ module.exports = function (grunt) {
 
     grunt.initConfig({
         concat: {
+            
             frontend: {
                 src: [
-                    './public/assets/js/bootstrap.js', 
-                    './public/assets/js/fancy_checkbox.js',  
-                    './public/assets/js/main.js',
-                    './public/assets/js/jquery.handler-toolkit.js', 
-                    './public/assets/js/browser.js',  
-                    './public/assets/js/lightbox/lightbox.js',
-                    './public/assets/js/popup/jquery.bpopup.js', 
-                    './public/assets/js/jquery.cookie.js', 
-                    './public/assets/js/jquery.ba-hashchange.min.js',
-                    './public/assets/js/jquery.total-storage.min.js', 
-                    './public/assets/js/easyTooltip.js', 
-                    './public/assets/js/jquery.simplePagination.js',
-                    './public/assets/js/jquery.validate.min.js', 
-                    './public/assets/js/translite/jquery.synctranslit.js', 
-                    './public/assets/js/money/money.min.js',
-                    './public/assets/js/currancy.js', 
-                    './public/assets/js/scroll.js', 
-                    './public/assets/js/init.js',
-                    './public/assets/js/outWindows.js', 
-                    './public/assets/js/resize_images.js', 
-                    './public/assets/js/fly_feachers.js',
-                    './public/assets/js/resize_teh.js', 
-                    './public/assets/js/bxslider/jquery.bxslider.js', 
-                    './public/assets/js/bxslider/bxInit.js',
+                    './assets/js/bootstrap.js', 
+                    './assets/js/fancy_checkbox.js',  
+                    './assets/js/main.js',
+                    './assets/js/jquery.handler-toolkit.js', 
+                    './assets/js/browser.js',  
+                    './assets/js/lightbox/lightbox.js',
+                    './assets/js/popup/jquery.bpopup.js', 
+                    './assets/js/jquery.cookie.js', 
+                    './assets/js/jquery.ba-hashchange.min.js',
+                    './assets/js/jquery.total-storage.min.js', 
+                    './assets/js/easyTooltip.js', 
+                    './assets/js/jquery.simplePagination.js',
+                    './assets/js/jquery.validate.js', 
+                    './assets/js/translite/jquery.synctranslit.js', 
+                    './assets/js/money/money.js',
+                    './assets/js/currancy.js', 
+                    './assets/js/scroll.js', 
+                    './assets/js/init.js',
+                    './assets/js/outWindows.js', 
+                    './assets/js/resize_images.js', 
+                    './assets/js/fly_feachers.js',
+                    './assets/js/resize_teh.js', 
+                    './assets/js/bxslider/jquery.bxslider.js', 
+                    './assets/js/bxslider/bxInit.js',
+                    
+                    './assets/js/wp/settings.js',
+                    './assets/js/wp/init.js',
                 ],
                 dest: './public/javascripts/frontend.js'
             },
             
+            jsWP: {
+                src: [
+                    './assets/js/bootstrap.js', 
+                    './assets/js/fancy_checkbox.js',  
+                    './assets/js/main.js',
+                    './assets/js/resize_images.js',
+                    './assets/js/jquery.validate.js', 
+                    './assets/js/popup/jquery.bpopup.js', 
+                    './assets/js/jquery.cookie.js',
+                    './assets/js/jquery.ba-hashchange.min.js',
+                    './assets/js/jquery.total-storage.min.js', 
+                    './assets/js/browser.js',
+                    './assets/js/wp/settings.js',
+                    './assets/js/wp/init.js',
+                    './assets/js/fly_feachers.js',
+                ],
+                dest: './public/javascripts/wp.js'
+            },
+            
             css: {
                 src: [
-                    './public/assets/css/bootstrap.css', 
-                    './public/assets/css/fontello.css',
-                    './public/assets/css/lightbox.css', 
-                    './public/assets/css/settings.css', 
-                    './public/assets/css/all.css', 
-                    './public/assets/css/all23032015.css',
-                    './public/assets/css/parent.css', 
-                    './public/assets/css/landing_fix.css', 
-                    './public/assets/css/p2.css',
-                    './public/assets/css/curr.css', 
-                    './public/assets/css/jquery.bxslider.css', 
-                    './public/assets/css/style-technological.css', 
-                    './public/assets/css/font-size.css', 
-                    './public/assets/css/style-fly-features.css', 
-                    './public/assets/css/icloud/icloud.css', 
-                    './public/assets/css/ie_fix/ie.css',
-                    './public/assets/css/reviews/all_update.css', 
-                    './public/assets/css/reviews/style-new-page.css',  
-                    './public/assets/css/compatibility.css', 
-                    './public/assets/css/404.css',
+                    './assets/css/bootstrap.css', 
+                    './assets/css/fontello.css',
+                    './assets/css/lightbox.css', 
+                    './assets/css/settings.css', 
+                    './assets/css/all.css', 
+                    './assets/css/all23032015.css',
+                    './assets/css/parent.css', 
+                    './assets/css/landing_fix.css', 
+                    './assets/css/p2.css',
+                    './assets/css/curr.css', 
+                    './assets/css/jquery.bxslider.css', 
+                    './assets/css/style-technological.css', 
+                    './assets/css/font-size.css', 
+                    './assets/css/style-fly-features.css', 
+                    './assets/css/icloud/icloud.css', 
+                    './assets/css/ie_fix/ie.css',
+                    './assets/css/reviews/all_update.css', 
+                    './assets/css/reviews/style-new-page.css',  
+                    './assets/css/compatibility.css', 
+                    './assets/css/404.css',
+                    './assets/css/video.css',
                 ], 
                 dest: './public/stylesheets/frontend.css'
+            },
+            
+            cssWP: {
+                src: [
+                    './assets/css/bootstrap.css', 
+                    './assets/css/fontello.css',
+                    './assets/css/all.css', 
+                    './assets/css/parent.css', 
+                    './assets/css/wp-post.css', 
+                    './assets/css/wp-subscribe.css',
+                    './assets/css/style-fly-features.css', 
+                    './assets/css/404.css',
+                ], 
+                dest: './public/stylesheets/wp.css'
             }
+            
         },
         uglify: {
             options: {
@@ -64,7 +103,8 @@ module.exports = function (grunt) {
             },
             frontend: {
                 files: {
-                    './public/javascripts/frontend.min.js': './public/javascripts/frontend.js'
+                    './public/javascripts/frontend.min.js': './public/javascripts/frontend.js',
+                    './public/javascripts/wp.min.js': './public/javascripts/wp.js',
                 }
             }
         },
@@ -76,14 +116,15 @@ module.exports = function (grunt) {
             },
             css:{ 
                 files: {
-                  './public/stylesheets/frontend.min.css': ['./public/stylesheets/frontend.css']
+                  './public/stylesheets/frontend.min.css': ['./public/stylesheets/frontend.css'],
+                  './public/stylesheets/wp.min.css': ['./public/stylesheets/wp.css'],
                 }
             }
         },
         
         watch: {
             js: {
-                files: ['./public/assets/js/*.js', './public/javascript/**/*.js'],
+                files: ['./assets/js/*.js', './public/javascript/**/*.js'],
                 tasks: ['concat', 'uglify'],
                 options: {
                     livereload: true
@@ -91,7 +132,7 @@ module.exports = function (grunt) {
             },
             
             css: {
-                files: ['./public/assets/css/**/*.css', './public/assets/css/*.css'],
+                files: ['./assets/css/**/*.css', './assets/css/*.css'],
                 tasks: ['cssmin'],
                 options: {
                     livereload: true

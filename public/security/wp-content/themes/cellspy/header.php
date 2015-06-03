@@ -25,7 +25,9 @@
 
     <!-- Bootstrap -->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,300italic,400italic,600italic,700italic' rel='stylesheet' type='text/css'>
-    <link href="<?php echo getStaticUrl();?>/css/bootstrap.css" rel="stylesheet">
+    <link href="<?php echo getStaticUrl();?>/stylesheets/wp.min.css?<?= strtotime( '2015-02-05' ) ?>" rel="stylesheet">
+    
+    <?php /*<link href="<?php echo getStaticUrl();?>/css/bootstrap.css" rel="stylesheet">
     <link href="<?php echo getStaticUrl();?>/css/fontello.css" rel="stylesheet">
     <link href="<?php echo getStaticUrl();?>/css/all.css" rel="stylesheet">
     
@@ -37,6 +39,7 @@
     
     <!-- 404 -->
     <link href="<?php echo getStaticUrl();?>/css/404.css" rel="stylesheet">
+    */ ?>
     
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -47,7 +50,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="http://code.jquery.com/jquery-migrate-1.2.1.js"></script>
     
-    <script src="<?php echo getStaticUrl();?>/js/bootstrap.js"></script>
+    <script src="<?php echo getStaticUrl();?>/javascripts/wp.min.js?<?= strtotime( '2015-02-05' ) ?>"></script>
+    
+    <?php /*<script src="<?php echo getStaticUrl();?>/js/bootstrap.js"></script>
     <script src="<?php echo getStaticUrl();?>/js/fancy_checkbox.js"></script>
     <script src="<?php echo getStaticUrl();?>/js/main.js"></script>
     
@@ -64,7 +69,7 @@
     <script src="<?php echo getStaticUrl();?>/js/jquery.ba-hashchange.min.js"></script>
     <script src="<?php echo getStaticUrl();?>/js/jquery.total-storage.min.js"></script>
      <!-- close/ out Windows -->
-    <?php /*<script src="<?php echo getStaticUrl();?>/js/outWindows.js"></script>*/ ?>
+    <?php // <script src="<?php echo getStaticUrl();?>/js/outWindows.js"></script> ?>
     
     <!-- browser detected -->
     <script src="<?php echo getStaticUrl();?>/js/browser.js"></script>
@@ -73,7 +78,7 @@
     <script src="<?php echo getStaticUrl();?>/js/wp/init.js"></script>
     <!-- fly blocks -->
     <script src="<?php echo getStaticUrl();?>/js/fly_feachers.js"></script>
-    
+    */ ?>
     <?php require_once '../../templates/includes/blog-analytics-header.tpl'; ?>
     
 </head>

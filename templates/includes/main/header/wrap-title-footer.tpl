@@ -2,9 +2,9 @@
 	<!-- Bootstrap -->
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,300italic,400italic,600italic,700italic' rel='stylesheet' type='text/css'>
 	
-        {*<link href="{$cssMin}/frontend.min.css?{style_cache data='2015-02-05'}" rel="stylesheet">*}
+        <link href="{$cssMin}/frontend.min.css?{style_cache data='2015-02-05'}" rel="stylesheet">
         
-        <link href="{$css}/bootstrap.css?{style_cache data='2015-02-09'}" rel="stylesheet">
+        {*<link href="{$css}/bootstrap.css?{style_cache data='2015-02-09'}" rel="stylesheet">
 	<link href="{$css}/fontello.css?{style_cache data='2015-02-09'}" rel="stylesheet">
         <!-- lightbox style -->
         <link href="{$css}/lightbox.css?{style_cache data='2015-02-09'}" rel="stylesheet">
@@ -53,7 +53,7 @@
         <link href="{$css}/404.css?{style_cache data='2015-02-09'}" rel="stylesheet"> 
         
         <!-- video -->
-        <link href="{$css}/video.css?{style_cache data='2015-02-09'}" rel="stylesheet"> 
+        <link href="{$css}/video.css?{style_cache data='2015-02-09'}" rel="stylesheet"> *}
         
 	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -74,9 +74,9 @@
                         
         </script>
         {/nocache} 
-        {*<script src="{$jsMin}/frontend.min.js?{style_cache data='2015-02-05'}"></script>*}
+        <script src="{$jsMin}/frontend.min.js?{style_cache data='2015-02-05'}"></script>
         
-        <script src="{$js}/bootstrap.js?{style_cache data='2015-02-05'}"></script>
+        {*<script src="{$js}/bootstrap.js?{style_cache data='2015-02-05'}"></script>
 	<script src="{$js}/fancy_checkbox.js?{style_cache data='2015-02-05'}"></script>
         <script src="{$js}/main.js?{style_cache data='2015-02-05'}"></script>
         
@@ -128,7 +128,7 @@
         
         <!-- sliders -->
         <script src="{$js}/bxslider/jquery.bxslider.js"></script>
-        <script src="{$js}/bxslider/bxInit.js"></script>
+        <script src="{$js}/bxslider/bxInit.js"></script>*}
         
 {/strip}
 {include file='../header/analytics-header.tpl'}	

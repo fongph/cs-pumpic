@@ -4,6 +4,7 @@
 namespace includes\lib\users;
 
 use CS\Billing\Manager as BillingManager;
+use CS\Models\Order\OrderGoogleAnalyticsRecord;
 use Seller\FastSpring\Gateway as Gateway;
 use CS\Models\Order\OrderRecord as OrderRecord; 
 use CS\Models\License\LicenseRecord as LicenseRecord; 
@@ -112,7 +113,7 @@ class Order extends ManagerUser
                 ->setLanding( $this ->getLanding() )    
                 ->save(); 
         }
-        
+
         $this -> unsetReferer();
         $this -> unsetLanding();
         
@@ -128,6 +129,12 @@ class Order extends ManagerUser
                 ->setReferenceData($order->getId() . '-' . $order->getHash())
                 ->setInstant();
                 // ->setTestMode(); // не обязательно
+
+        $googleAnalytics = new OrderGoogleAnalyticsRecord($this->_pdo);
+        $googleAnalytics
+            ->setOrderId($order->getId())
+            ->setDataFromCookiesArray($_COOKIE)
+            ->save();
         
         if($testMode) $this -> _gateway->setTestMode();
                 
@@ -200,6 +207,13 @@ class Order extends ManagerUser
             $this -> authUserID( $userID ); 
             
         }
+
+        $googleAnalytics = new OrderGoogleAnalyticsRecord($this->_pdo);
+        $googleAnalytics
+            ->setOrderId($order->getId())
+            ->setDataFromCookiesArray($_COOKIE)
+            ->save();
+
         return true;
     } 
     

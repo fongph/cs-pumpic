@@ -74,7 +74,8 @@
                         
         </script>
         {/nocache} 
-        <script src="{$jsMin}/frontend.min.js?{style_cache data='2015-02-05'}"></script>
+        
+        {*<script src="{$jsMin}/frontend.min.js?{style_cache data='2015-02-05'}"></script>*}
         
         {*<script src="{$js}/bootstrap.js?{style_cache data='2015-02-05'}"></script>
 	<script src="{$js}/fancy_checkbox.js?{style_cache data='2015-02-05'}"></script>

@@ -9480,7 +9480,7 @@ $(document).ready(function(){
           $(this).attr('attr-height', width).removeAttr('height');
           //$(this).attr('src', '');
           
-          console.log(width, height);
+          // console.log(width, height);
           
           $(this).css({
               //'background': 'url( "'+_src+'" ) no-repeat',

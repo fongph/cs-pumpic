@@ -5,7 +5,7 @@
             <a href="/android-parental-monitoring.html">Android Parental Control</a>
         </li>
         <li>
-            <a href="/iphone-parental-monitoring.html">Iphone Parental Control</a>
+            <a href="/iphone-parental-monitoring.html">iPhone Parental Control</a>
         </li>
         <li>
             <a href="/iphone-tracking-software.html">iPhone Tracking Software</a>

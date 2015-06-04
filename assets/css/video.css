@@ -7,6 +7,7 @@
 
 .box-video-constructors .box-hover {
     display: inline;
+    cursor: pointer;
 }
 
 .box-video-constructors > div#block-video,
@@ -178,7 +179,7 @@
     width: 107px;
     height: 109px;
     z-index: 20;
-    cursor: pointer;
+/*    cursor: pointer;*/
 }
 
 .box-video-constructors .mobile-block-video-button { 

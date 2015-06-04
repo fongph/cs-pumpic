@@ -68,6 +68,8 @@ RewriteRule .* - [F]
 RewriteCond %{HTTP_HOST} ^www\.pumpic\.com
 RewriteRule ^(.*)$ http://pumpic.com/$1 [NC,R=301,L]
 
+RewriteRule ^compatibility/Samsung\-N7100\-Galaxy\-Note\-II/$ compatibility/Samsung\-Galaxy\-Note\-2/ [L,R=301]
+
 RewriteRule ^GPS-and-geofencing\.html$ gps-and-geofencing\.html [L,R=301]
 RewriteRule ^pricing\.html$ store\.html [L,R=301]
 RewriteRule ^index\.html$ http://pumpic.com/ [L,R=301]

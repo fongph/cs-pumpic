@@ -34,9 +34,13 @@
                             <li {if $topmenu_active=='home'} class="active"{/if}>
                                 <a href="/">Home</a>
                             </li>
-                            <li {if $topmenu_active=='compatibility'} class="active"{/if}>
-                                <a href="/compatibility/">Compatibility</a>
+                            
+                            {if 'iphone-tracking-software.html,iphone-with-jailbreak-monitoring.html,icloud-iphone-without-jailbreak-monitoring.html'|getCloseLink}
+                            <li {if $topmenu_active=='all-features'} class="active"{/if}>
+                                <a href="/all-features.html">Features</a>
                             </li>
+                            {/if}
+                            
                             <li class="{if $topmenu_active=='pricing'}active{/if} ga-action-click" 
                                 id="header-menu-store-link"
                                 ga-action ="click"
@@ -45,11 +49,11 @@
                                 >
                                 <a href="/store.html">Store</a>
                             </li>
-                            {if 'iphone-tracking-software.html,iphone-with-jailbreak-monitoring.html,icloud-iphone-without-jailbreak-monitoring.html'|getCloseLink}
-                            <li {if $topmenu_active=='all-features'} class="active"{/if}>
-                                <a href="/all-features.html">Features</a>
+                            
+                            <li {if $topmenu_active=='compatibility'} class="active"{/if}>
+                                <a href="/compatibility/">Compatibility</a>
                             </li>
-                            {/if}
+                            
                             {*<li {if $topmenu_active=='how-to'} class="active"{/if}>
                                 <a href="/how-to.html">How to</a>
                             </li>*}

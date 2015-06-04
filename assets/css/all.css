@@ -3898,9 +3898,9 @@ span.btn-banner-yellow:active {
     color: white;
     border: medium none;
     background: #f5ac43;
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
 }
 
 .nav > li > a.btn-orange {
@@ -4367,12 +4367,13 @@ fieldset[disabled] .button-red.active {
 
 .banner2 .btn {
     font-size: 22px;
-    line-height: 22px;
+/*    line-height: 22px;*/
     margin-left: 20px;
     min-width: 142px;
     min-height: 46px;
     text-transform: none;
-    padding: 9px 24px;
+/*    padding: 9px 24px;*/
+    padding: 8px;
 }
 
 @media only screen and (max-width: 991px) {
@@ -6848,7 +6849,6 @@ form.form-contact-us .box-captcha {
 }
 
 /* ================ // footer bottom ================== */
-
 /*@media only screen and (max-width: 410px) {
     .very_easy { min-height: auto; }
 }

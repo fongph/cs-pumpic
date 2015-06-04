@@ -229,3 +229,200 @@ ul.ul-list-images li > p {
     position: relative;
     
 }*/
+
+
+/* ============= list images v1 =============== */
+ul.list-image-v1 {
+    list-style: none;
+    margin: 10px 0px 10px 12px;
+    padding: 0px;
+}
+
+ul.list-image-v1 li ul {
+    margin-left: 30px;
+}
+
+ul.list-image-v1 li {
+    padding-left: 39px;
+    margin-bottom: 10px;
+    vertical-align: middle;
+    min-height: 25px;
+}
+
+ul.list-image-v1 li img {
+    display: inline-block;
+    margin-left: -39px;
+    position: absolute;
+    width: 29px;
+}
+
+ul.list-image-v1 li img.call-log {
+    height: 25px;
+}
+ul.list-image-v1 li img.location {
+    height: 24px;
+}
+ul.list-image-v1 li img.internet {
+    height: 21px;
+}
+ul.list-image-v1 li img.man {
+    height: 21px;
+}
+ul.list-image-v1 li img.facebook {
+    height: 23px;
+}
+ul.list-image-v1 li img.message {
+    height: 16px;
+}
+ul.list-image-v1 li img.play {
+    height: 22px;
+}
+ul.list-image-v1 li img.message-settings {
+    height: 19px;
+}
+ul.list-image-v1 li img.message-close {
+    height: 21px;
+}
+ul.list-image-v1 li img.keyboard {
+    height: 17px;
+}
+
+ul.list-image-v1 li img.arrows-play {
+    height: 19px;
+}
+
+/* =============== banners in post ===================== */
+.box-wp-banner {
+    margin: 10px 0px;
+    background: url('../images/wp/bg_banner.png') no-repeat;
+    background-size: cover;
+    width: 100%;
+    max-width: 612px;
+    height: 100%;
+    padding: 20px 10px 20px 10px;
+}
+
+.box-wp-banner > label {
+    display: block;
+    color: #fff;
+    text-align: center;
+    font-size: 28px;
+    line-height: 1.4em;
+    font-weight: 300;
+    padding-bottom: 24px;
+    text-transform: uppercase;
+}
+
+.box-wp-banner .block-price #basic,
+.box-wp-banner .block-price #premium {
+    display: inline-block;
+    float: left;
+    position: relative;
+}
+
+    .box-wp-banner .block-price #basic > .package-basic,
+    .box-wp-banner .block-price #premium > .package-premium {
+        display: inline-block;
+        width: 136px;
+        height: 119px;
+    }
+    
+    .box-wp-banner .block-price #basic > .package-basic {
+        background: url('../images/wp/basic.png') no-repeat;
+    }
+    
+    .box-wp-banner .block-price #premium > .package-premium {
+        background: url('../images/wp/premium.png') no-repeat;
+    }
+    
+    .box-wp-banner .block-price #basic > .price,
+    .box-wp-banner .block-price #premium > .price {
+        color: #fff;
+        font-size: 31px;
+        line-height: 31px;
+        font-weight: bold;
+    }
+    
+    .block-price #basic > .price > sub,
+    .block-price #premium > .price > sub {
+        font-size: 17px;
+        line-height: 17px;
+        bottom: -2px;
+        padding-right: 2px;
+    }
+    .block-price #basic > .price > span.slash,
+    .block-price #premium > .price > span.slash {
+        font-size: 23px;
+        line-height: 23px;
+        font-weight: 400;
+        padding: 0px 2px;
+    }
+    .block-price #basic > .price > span.month,
+    .block-price #premium > .price > span.month {
+        font-size: 14px;
+        line-height: 14px;
+        font-weight: 400;
+    }
+    
+.box-wp-banner .block-buttons {
+    padding: 10px 0px;
+}
+.box-wp-banner .block-buttons > a:first-child {
+    margin-bottom: 16px;
+}
+@media only screen and (max-width: 300px) { 
+    .box-wp-banner .block-price #basic,
+    .box-wp-banner .block-price #premium {
+        display: block;
+        float: none;
+        margin: 0 auto;
+        position: relative;
+    }
+}
+@media (min-width: 300px) { 
+    .box-wp-banner .block-price #basic,
+    .box-wp-banner .block-price #premium {
+        display: block;
+        float: none;
+        margin: 0 auto;
+        position: relative;
+    }
+}
+
+@media (min-width: 468px) {
+   .box-wp-banner .block-price #basic,
+    .box-wp-banner .block-price #premium {
+        display: inline-block;
+        float: left;
+        margin: 0px;
+        position: relative;
+    }
+}
+@media (min-width: 768px) {
+    .box-wp-banner .block-price #basic,
+    .box-wp-banner .block-price #premium {
+        display: inline-block;
+        float: left;
+        margin: 0px;
+        position: relative;
+    }
+}
+@media (min-width: 992px) { 
+    .box-wp-banner .block-price #basic,
+    .box-wp-banner .block-price #premium {
+        display: inline-block;
+        float: left;
+        margin: 0px;
+        position: relative;
+    }
+}
+@media (min-width: 1200px) { 
+    .box-wp-banner .block-price #basic,
+    .box-wp-banner .block-price #premium {
+        display: inline-block;
+        float: left;
+        margin: 0px;
+        position: relative;
+    }
+}
+

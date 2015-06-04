@@ -36,15 +36,15 @@
 										<a href="<?php echo getStaticUrl();?>/">Home</a>
 									</li>
 									<li>
-										<a href="<?php echo getStaticUrl();?>/compatibility/">Compatibility</a>
-									</li>
+										<a href="<?php echo getStaticUrl();?>/all-features.html">Features</a>
+									</li> 
 									<li>
 										<a href="<?php echo getStaticUrl();?>/store.html">Store</a>
 									</li>
-                                                                        
-									<li>
-										<a href="<?php echo getStaticUrl();?>/all-features.html">Features</a>
-									</li> 
+                                                                        <li>
+										<a href="<?php echo getStaticUrl();?>/compatibility/">Compatibility</a>
+									</li>
+									
 									<?php /*<li>
 										<a href="<?php echo getStaticUrl();?>/how-to.html">How to</a>
 									</li>  */ ?>

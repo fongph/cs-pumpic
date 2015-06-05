@@ -27,19 +27,21 @@
                  style="blue"   
         }
         
+        {* bg_famaly_427x254.png imgVerticalAlign = "bottom"*}
         <!-- CONTENT -->
         {include file='../includes/content/info/info-promo.tpl'
-            imgUrl = "header_banners/bg_famaly_427x254.png"
+            imgUrl = "header_banners/bg_header_home_page.png"
             imgAlt = "Landing Mobile"
             imgAlign = "left bottom"
-            imgVerticalAlign = "bottom"
+            imgVerticalAlign = "center"
             textAlign = "left"
             title = "Cell Phone <br />Monitoring App"
             description = "Keep your family safe and secured with Pumpic. <br />
                            Track location. View calls and SMS. Follow online activity."
             promoBuyBlock = "no"
             planPackageBuy = "yes"
-            block_video = "no"
+            typeVideoImg = "black_orange"
+            block_video = "yes"
             block_video_src = "http://www.youtube.com/embed/Oc8sWN_jNF4?rel=0&wmode=transparent&fs=0"
         }
         

@@ -1,4 +1,4 @@
-<div class="visual box-banner-header {if $imgVerticalAlign == 'bottom'}box-bottom-images bg_bottom_images{/if}"> <!-- android -->
+<div class="visual box-banner-header {if $imgVerticalAlign == 'bottom'}box-bottom-images bg_bottom_images{/if}{if $imgVerticalAlign == 'center'}bg_center_images{/if}"> <!-- android -->
 
     <div class="container">
 
@@ -27,7 +27,18 @@
                                                    data-height="520" 
                                                    data-width="820"
                                                    {*data-target="#myModal"*} id="openBtnVideo">
-                                                    <img src="{$img}/video/video-button-play.png" class="video-buttons" />
+                                                    {* if $typeVideoImg == "standart" || !isset($typeVideoImg) *}
+                                                        <img src="{$img}/video/video-button-play.png" class="video-buttons" />
+                                                    {* /if *}
+                                                    {*{if $typeVideoImg == "black_orange"}
+                                                        <img src="{$img}/video/arrows_black_orange.png" class="video-buttons" />
+                                                    {/if}
+                                                    {if $typeVideoImg == "orange"}
+                                                        <img src="{$img}/video/arrows_orange.png" class="video-buttons" />
+                                                    {/if}
+                                                    {if $typeVideoImg == "yellow"}
+                                                        <img src="{$img}/video/arrows_yellow.png" class="video-buttons" />
+                                                    {/if}*}
                                                     <img src="{$img}/video/hover-video-button-play.png" class="hover-video-buttons" /> 
                                                 </a>    
                                             </div>

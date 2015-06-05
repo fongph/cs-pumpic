@@ -637,6 +637,10 @@ $(document).ready(function(){
    $( window ).resize(function() { 
       $rs_width = $(window).width()
    });
+   
+   if(!$rs_width) {
+       $rs_width = $(window).width();
+   }
     
     cookie_init();
     
@@ -1931,10 +1935,10 @@ $('form[name="send_find_phone"] button.event-submit').click(function(){
    $('.box-video-constructors .block-video-button > .box-hover').hover(
       function() {
           // console.log( $rs_width );
-          if(!$rs_width || $rs_width > 992)
+          if($rs_width > 992) // !$rs_width || 
              $(this).find('.hover-video-buttons').show();
       }, function() {
-          if(!$rs_width || $rs_width > 992)
+          if($rs_width > 992) // !$rs_width || 
             $(this).find('.hover-video-buttons').hide();  
       }
     );

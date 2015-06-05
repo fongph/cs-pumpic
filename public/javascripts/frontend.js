@@ -7807,6 +7807,10 @@ $(document).ready(function(){
    $( window ).resize(function() { 
       $rs_width = $(window).width()
    });
+   
+   if(!$rs_width) {
+       $rs_width = $(window).width();
+   }
     
     cookie_init();
     
@@ -9101,10 +9105,10 @@ $('form[name="send_find_phone"] button.event-submit').click(function(){
    $('.box-video-constructors .block-video-button > .box-hover').hover(
       function() {
           // console.log( $rs_width );
-          if(!$rs_width || $rs_width > 992)
+          if($rs_width > 992) // !$rs_width || 
              $(this).find('.hover-video-buttons').show();
       }, function() {
-          if(!$rs_width || $rs_width > 992)
+          if($rs_width > 992) // !$rs_width || 
             $(this).find('.hover-video-buttons').hide();  
       }
     );
@@ -9469,7 +9473,7 @@ $(document).ready(function(){
       $('#box-content-post img, #block-content img').bindImageLoad(function() {    
           
           var width = $(this).attr('width'),
-              parent = $(this).parents('.wp-caption'), 
+              parent = $(this).closest('.wp-caption'), 
               _caption_text = parent.find('.wp-caption-text'),
                 _src = $(this).attr('src'),
                 height = $(this).attr('height'),
@@ -9477,7 +9481,7 @@ $(document).ready(function(){
                 parent_outer_width = parent.outerWidth(true);
           
           $(this).attr('attr-width', width).removeAttr('width');
-          $(this).attr('attr-height', width).removeAttr('height');
+          $(this).attr('attr-height', height).removeAttr('height');
           //$(this).attr('src', '');
           
           // console.log(width, height);
@@ -9497,15 +9501,20 @@ $(document).ready(function(){
                   'width': 'auto',
               });
           
+          console.log(' ---- Start width -------- ');
+          console.log(parent_outer_width, outer_width);
+          console.log( '-------- end ---------' );
           
           if(_caption_text.length) {
-              if(outer_width > 0) {
+              if(parent_outer_width > 0) {
                 _caption_text.css({
-                  'width': outer_width+'px',
+                  'width': '100%',  
+                  'max-width': parent_outer_width+'px',
                 });
-              } else {
+              } else if(outer_width > 0) {
                  _caption_text.css({
-                  'width': outer_width+'px',
+                     'width': '100%',
+                    'max-width': outer_width+'px',
                 }); 
               }
           }
@@ -9539,7 +9548,7 @@ $( window ).resize(function() {
       $('#box-content-post img, #block-content img').each(function() {
           var _caption = $(this).parents('.wp-caption'), 
                 width = $(this).outerWidth(true),
-                _attachmentW = $(this).parents('#attachment').outerWidth(true),
+                _attachmentW = $(this).closest('#attachment').outerWidth(true),
                 _width = $(this).width(),
                 _attrW = $(this).attr('attr-width');
 

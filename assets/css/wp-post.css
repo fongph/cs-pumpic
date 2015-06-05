@@ -1,4 +1,8 @@
 /* ============= // body ============ */
+#box-content-post {
+    display: block;
+}
+
 .wp-blog {
     font-size: 17px;
     line-height: 1.3em;
@@ -323,16 +327,17 @@ ul.list-image-v1 li img.arrows-play {
     .box-wp-banner .block-price #basic > .package-basic,
     .box-wp-banner .block-price #premium > .package-premium {
         display: inline-block;
-        width: 136px;
+/*        width: 136px;*/
+        width: 154px;
         height: 119px;
     }
     
     .box-wp-banner .block-price #basic > .package-basic {
-        background: url('../images/wp/basic.png') no-repeat;
+        background: url('../images/wp/basic_v2.png') no-repeat;
     }
     
     .box-wp-banner .block-price #premium > .package-premium {
-        background: url('../images/wp/premium.png') no-repeat;
+        background: url('../images/wp/premium_v2.png') no-repeat;
     }
     
     .box-wp-banner .block-price #basic > .price,
@@ -341,6 +346,7 @@ ul.list-image-v1 li img.arrows-play {
         font-size: 31px;
         line-height: 31px;
         font-weight: bold;
+        text-align: left;
     }
     
     .block-price #basic > .price > sub,
@@ -378,6 +384,11 @@ ul.list-image-v1 li img.arrows-play {
         margin: 0 auto;
         position: relative;
     }
+    
+    .box-wp-banner .block-price #basic > .price,
+    .box-wp-banner .block-price #premium > .price {
+        text-align: center;
+    }
 }
 @media (min-width: 300px) { 
     .box-wp-banner .block-price #basic,
@@ -386,6 +397,11 @@ ul.list-image-v1 li img.arrows-play {
         float: none;
         margin: 0 auto;
         position: relative;
+    }
+    
+    .box-wp-banner .block-price #basic > .price,
+    .box-wp-banner .block-price #premium > .price {
+        text-align: center;
     }
 }
 
@@ -397,6 +413,11 @@ ul.list-image-v1 li img.arrows-play {
         margin: 0px;
         position: relative;
     }
+    
+    .box-wp-banner .block-price #basic > .price,
+    .box-wp-banner .block-price #premium > .price {
+        text-align: center;
+    }
 }
 @media (min-width: 768px) {
     .box-wp-banner .block-price #basic,
@@ -405,6 +426,11 @@ ul.list-image-v1 li img.arrows-play {
         float: left;
         margin: 0px;
         position: relative;
+    }
+    
+    .box-wp-banner .block-price #basic > .price,
+    .box-wp-banner .block-price #premium > .price {
+        text-align: left;
     }
 }
 @media (min-width: 992px) { 
@@ -415,6 +441,11 @@ ul.list-image-v1 li img.arrows-play {
         margin: 0px;
         position: relative;
     }
+    
+    .box-wp-banner .block-price #basic > .price,
+    .box-wp-banner .block-price #premium > .price {
+        text-align: left;
+    }
 }
 @media (min-width: 1200px) { 
     .box-wp-banner .block-price #basic,
@@ -424,5 +455,10 @@ ul.list-image-v1 li img.arrows-play {
         margin: 0px;
         position: relative;
     }
+    
+    .box-wp-banner .block-price #basic > .price,
+    .box-wp-banner .block-price #premium > .price {
+        text-align: left;
+    }    
 }
 

@@ -228,7 +228,8 @@
         padding: 50px 0px 50px;
     }*/
     
-    .block-smartphone .banner-header {
+    .block-smartphone .banner-header,
+    .block-sms .banner-header {
         padding: 25px 0 20px;
     } 
     
@@ -270,7 +271,8 @@
         padding: 50px 0px;
     }*/
     
-    .block-smartphone .banner-header {
+    .block-smartphone .banner-header,
+    .block-sms .banner-header { 
         padding: 25px 0 20px;
     }
     
@@ -305,7 +307,8 @@
         padding: 50px 0px;
     }*/
 
-    .block-smartphone .banner-header {
+    .block-smartphone .banner-header,
+    .block-sms .banner-header{
         padding: 25px 0 20px;
     }
     

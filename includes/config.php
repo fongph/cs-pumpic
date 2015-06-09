@@ -81,7 +81,7 @@ $config = array(
     'db_blog' => array(
         'dbname'    => 'pumpic_blog',
         'host'      => '188.40.64.2',
-        'user'      => 'pumpic_blog_user',
+        'username'      => 'pumpic_blog_user',
         'password'  => '57ge8j9SNg9EkhryWA3KV9ZB9NUue6',
     ),
     'db' => array(

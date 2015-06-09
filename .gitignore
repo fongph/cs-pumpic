@@ -4,7 +4,6 @@
 /vendor/*
 /node_modules/*
 /bower_components/*
-/includes/config.php
 /includes/config.development.php
 /.gitignore~
 /.idea

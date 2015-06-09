@@ -4,7 +4,7 @@ $config or require __DIR__ . '/config.php';
 
 use CS\Settings\GlobalSettings;
 
-$di = new System\Di;
+$di = new System\DI;
 
 $di->set('config', $config);
 

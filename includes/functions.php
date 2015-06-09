@@ -1,6 +1,11 @@
 <?php
-function dispatch($urlParams, $config){
+function di() {
+    global $di;
+    return $di ?: $di = require __DIR__ . '/di.php';
+}
 
+function dispatch($urlParams, $config){
+    global $smarty;
 //        echo "<pre>";
 //        var_dump( $_SERVER['HTTP_USER_AGENT'], get_browser() );
 //        echo "</pre>";
@@ -49,9 +54,6 @@ function dispatch($urlParams, $config){
             $urlParams['uriArr'] = array( array_shift($urlParams['uriArr']) );
         }
 		
-        // smarty config
-	require_once 'smarty.config.php';		
-        
         // 301 redirect
         if(preg_match('/\/\?cat=(.*)/is', $_SERVER['REQUEST_URI'])) {
             header301( $config['domain_http'] );
@@ -105,7 +107,7 @@ function dispatch($urlParams, $config){
     
 }
 
-function smarty_modifier_getCloseLink($links, $template) { 
+function smarty_modifier_getCloseLink($links) { 
     $uri = getURI();
     $res = true;
     $_links = (isset($links)) ? explode(',', $links) : false;
@@ -950,7 +952,7 @@ function hasAccess() {
 }
 
 /* isPhone */
-function smarty_modifier_isPhone($params, $template) { 
+function smarty_modifier_isPhone($params) { 
     require_once 'lib/users/ManagerUser.php';
     $obj = new includes\lib\users\ManagerUser( array() );
     $phone = $obj ->isPhone();

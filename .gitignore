@@ -5,8 +5,7 @@
 /node_modules/*
 /bower_components/*
 /includes/config.php
-/public/security/wp-config.php
+/includes/config.development.php
 /.gitignore~
 /.idea
-/includes/config.development.php
 /public/security_old/*

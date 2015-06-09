@@ -1,8 +1,8 @@
 <?php if(is_archive() || is_author() || is_comment_feed()) : ?>
     <?php shailan_redirect_404(true); ?>
-<?php else: ?>
-
-<?php get_header(); ?>
+<?php else:
+    ob_start();
+    get_header(); ?>
 
 <div class="very_easy">
     <div class="container">

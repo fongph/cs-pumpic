@@ -10,21 +10,7 @@ class CDb
     private $sQuery;
 
     # @array,  The database settings
-//    private $settings = array(
-//        'dbname'    => 'pumpic',
-//        'host'      => 'localhost',
-//        'user'      => 'root',
-//        'password'  => 'password'
-//        
-//    );
-    
-    private $settings = array(
-        'dbname'    => 'pumpic_blog',
-        'host'      => '188.40.64.2',
-        'user'      => 'pumpic_blog_user',
-        'password'  => '57ge8j9SNg9EkhryWA3KV9ZB9NUue6'
-        
-    );
+    private $settings;
 
     # @bool ,  Connected to the database
     private $bConnected = false;
@@ -44,8 +30,8 @@ class CDb
     */
     public function __construct($_settings = array()) 
     { 
-        //$this->Connect();
         $this->parameters = array();
+        $this->settings = \di()->get('dbBlog');
         if(!empty($_settings))
             $this ->setSettings($_settings);
 
@@ -56,7 +42,7 @@ class CDb
     public function setSettings( $_settings ) 
     {
         if(!empty($_settings) and is_array($_settings) and count($_settings)) 
-            return $this -> settings = $_settings;
+            $this -> settings = $_settings;
     }
 	
    /**
@@ -74,7 +60,7 @@ class CDb
         try 
         {
             # Read settings from INI file, set UTF8
-            $this->pdo = new \PDO($dsn, $this->settings["user"], $this->settings["password"], array(\PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
+            $this->pdo = new \PDO($dsn, $this->settings["username"], $this->settings["password"], array(\PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
 
             # We can now log any exceptions on Fatal error. 
             $this->pdo->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);

@@ -61,7 +61,15 @@
         </div>
     </div>
 </div>
-                                        
+{if $di.isDirectLogin == true}
+    <div class="direct-login-footer">
+        <div class="container">
+            <a class="log-out-button" href="/logout.html">Log out</a>
+            You are currently logged in as <a class="account-login" href="mailto:{$di.authData.login}">{$di.authData.login}</a>!
+        </div>
+        
+    </div>
+{/if}
 <!-- init popUp -->
 <!-- init popUp -->
 {if isset($_popUp)}

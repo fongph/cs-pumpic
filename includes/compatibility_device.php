@@ -10,16 +10,7 @@
  $smarty->force_compile = false;
  $smarty->debugging = false;
 
-require dirname( __DIR__ ).'/vendor/autoload.php';
-
-$pdo = new PDO(
-    "mysql:dbname={$config['db_phones']['dbname']};host={$config['db_phones']['host']}", 
-    $config['db_phones']['username'], 
-    $config['db_phones']['password'],
-    $config['db_phones']['options']
-);
-
-$compatibility = new Models\Compatibility($pdo);
+$compatibility = new Models\Compatibility(di()->get('dbPhones'));
 
 list(,$modelName) = explode('/', $urlParams['uri']);
 

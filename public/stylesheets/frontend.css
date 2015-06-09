@@ -14244,7 +14244,26 @@ form.form-contact-us .box-captcha {
     .very_easy { min-height: 768px; }
 }*/
 
-
+.direct-login-footer {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 60px;
+    color: #303030;
+    position: fixed;
+    font-size: 14px;
+    padding-top: 20px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #ff4545;
+}
+.direct-login-footer .log-out-button {
+    color: #106a60;
+    float: left;
+}
+.direct-login-footer .account-login {
+    color: #303030;
+}
 .border-top-bottom {
     border-color: #e8e8e8 !important;
     border-style: solid !important;

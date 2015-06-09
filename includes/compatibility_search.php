@@ -45,16 +45,8 @@ use includes\lib\users\ManagerUser as MU;
 require_once dirname(__DIR__).'/includes/lib/users/ManagerUser.php'; 
 require dirname( __DIR__ ).'/vendor/autoload.php';
 
-
 $mu = new MU();
-$compatibility = new Compatibility(new PDO(
-    "mysql:dbname={$config['db_phones']['dbname']};host={$config['db_phones']['host']}",
-    $config['db_phones']['username'],
-    $config['db_phones']['password'],
-    $config['db_phones']['options']
-));
- 
-
+$compatibility = new Compatibility(di()->get('dbPhones'));
 
 if( in_array($_uri, $os_url) ) {
     $_os = false;    

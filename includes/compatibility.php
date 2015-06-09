@@ -17,12 +17,7 @@ require dirname( __DIR__ ).'/vendor/autoload.php';
  $smarty->force_compile = false;
  $smarty->debugging = false;
 
-$compatibility = new Compatibility(new PDO(
-    "mysql:dbname={$config['db_phones']['dbname']};host={$config['db_phones']['host']}",
-    $config['db_phones']['username'],
-    $config['db_phones']['password'],
-    $config['db_phones']['options']
-));
+$compatibility = new Compatibility(di()->get('dbPhones'));
 
 $currentPage = (int)$_GET['page'] ?: 0;
 

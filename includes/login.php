@@ -20,7 +20,6 @@ if($obj -> getLoginUser()) $obj -> _redirect('/');
     
 // $_session_order = $obj -> getSession('pumpic_order');
 $_productID = (isset($_GET['productID']) and !empty($_GET['productID'])) ? $_GET['productID'] : false;
-$_sID = (isset($_POST['site_id']) and !empty($_POST['site_id'])) ? $_POST['site_id'] : false;
 $_pass = (isset($_POST['password']) and !empty($_POST['password'])) ? trim($_POST['password']) : null;
     
 if($_productID) {
@@ -31,7 +30,7 @@ if((isset($_POST['email']) and !$obj ->validateEmail($_POST['email']))) {
    $_result['_error']['email'] = "Invalid email format.";
 } else if(isset($_POST['email']) and !empty($_POST['email'])) {
      $_params = array(
-        'siteId' => $_sID,
+        'siteId' => SITE_ID,
         'email' => $_POST['email'],
         'password' => $_pass
     );

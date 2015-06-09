@@ -1,4 +1,12 @@
 <?php
+function di() {
+    global $di;
+    if (!$di) {
+        require_once dirname(dirname(dirname(dirname(dirname(__DIR__))))) .'/vendor/autoload.php';
+        $di = require dirname(dirname(dirname(dirname(dirname(__DIR__))))) . '/includes/di.php';
+    }
+    return $di;
+}
 
 function shailan_redirect_404( $_redirect ) {
     global $wp_query;

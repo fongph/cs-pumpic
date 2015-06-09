@@ -13,19 +13,20 @@
  *
  * @package WordPress
  */
-
+global $config;
+$config or require dirname(dirname(__DIR__)) . '/includes/config.php';
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'pumpic_blog');
+define('DB_NAME', $config['db_blog']['dbname']);
 
 /** MySQL database username */
-define('DB_USER', 'pumpic_blog_user');
+define('DB_USER', $config['db_blog']['username']);
 
 /** MySQL database password */
-define('DB_PASSWORD', '57ge8j9SNg9EkhryWA3KV9ZB9NUue6');
+define('DB_PASSWORD', $config['db_blog']['password']);
 
 /** MySQL hostname */
-define('DB_HOST', '188.40.64.2');
+define('DB_HOST', $config['db_blog']['host']);
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');

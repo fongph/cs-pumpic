@@ -3,15 +3,8 @@ namespace includes\lib\users;
 
 use System\DI;
 use System\Session;
-// use System\Request;
-use System\Auth;
-use System\Session\Handler\RedisSessionHandler as RedisSessionHandler; 
-
-use Predis\Client as RedisClient; // Predis\Client
-
 use CS\Users\UsersManager as Manager;
 use CS\Users\UsersNotes as UsersNotes;
-use CS\Models\User\Options\UserOptionRecord as UserOptionRecord; 
 use CS\Users\UserAlreadyExistsException as UserAlreadyExistsException;
 use CS\Users\UserNotFoundException as UserNotFoundException;
 USE CS\Users\InvalidPasswordException as InvalidPasswordException;
@@ -19,20 +12,12 @@ use CS\Users\UserLockedException as UserLockedException;
 
 use CS\Users\InvalidSenderObjectException as InvalidSenderObjectException; // exception sender mail
 
-use CS\Mail\MailSender;
-use CS\Settings\GlobalSettings;
-use CS\Mail\Processor\RemoteProcessor;
-
-use includes\lib\CDb as DB;
-
 defined('PATH') or define('PATH',dirname(__FILE__));
-
-require_once dirname( PATH ).'/CDb.php';
-$loader = require dirname( dirname( dirname( PATH ) ) ).'/vendor/autoload.php';
+require_once dirname( dirname( dirname( PATH ) ) ).'/vendor/autoload.php';
 
 class ManagerUser extends Manager 
 {
-    const SITE_ID = 1;
+    const SITE_ID = SITE_ID;
     const LANG = 'en-GB';
     const ERROR_USER_ALREADY_EXISTS_EXCEPTION = 'Your email address is already registered with Pumpic. Restore <a href="/restore.html">password</a>'; // This email exists already.
     const ERROR_ACCOUNT_LOCK = 'Your account is locked. The instructions on how to unlock your account were sent to your email.';
@@ -48,22 +33,6 @@ class ManagerUser extends Manager
         '_success' => false
     ); // cache messange
     
-    
-    private $_db = [
-        'dev' => array(
-                    'dbname'    => 'main',
-                    'host'      => 'localhost',
-                    'user'      => 'root',
-                    'password'  => 'password'
-                 ),
-        'prod' => array(
-                    'dbname'    => 'main',
-                    'host'      => '188.40.64.2',
-                    'user'      => 'ci_user',
-                    'password'  => 'qmsgrSR8qhxeNSC44533hVBqwNajd62z2QtXwN6E'
-                ),
-    ];
-    
     protected $_session;
     protected $_di;
     private $_auth;
@@ -73,59 +42,20 @@ class ManagerUser extends Manager
     
     public function __construct( $settings = array() ) 
     {
-        $this -> _di = new DI();
         
-        
-        Session::setConfig(array(
-            'cookieParams' => array(
-                'domain' => GlobalSettings::getCookieDomain(self::SITE_ID),
-                'rememberMeTime' => 2592000
-            )
-        ));
-        $redisConfig = GlobalSettings::getRedisConfig('sessions', self::SITE_ID);
-        $redisClient = new RedisClient($redisConfig);
-        Session::setSessionHandler(new RedisSessionHandler($redisClient));
-        $this -> _session = new Session();
-        
-        // $this -> _session = new Session(array('rememberMeTime' => 5));
-        
-        $this -> _di -> set('session', $this -> _session);
-        $this -> _auth = new Auth($this -> _di);
-        
-        
-        $db = new DB($this -> getSettingsDB());
-        $this -> _pdo = $db -> getConnected();
+        $this -> _di = \di();
+        $this -> _session = $this -> _di -> get('session');
+        $this -> _auth = $this -> _di -> get('auth');
+        $this -> _pdo =  $this -> _di -> get('db');
+        $this -> _mail_sender = $this -> _di -> get('mailSender');
         parent::__construct($this -> _pdo);
-        
-        // mailProcessor
-        $this -> mail_processor = new RemoteProcessor(
-                GlobalSettings::getMailSenderURL(1), 
-                GlobalSettings::getMailSenderSecret(1),
-                $this -> _pdo
-        );
-        
-        // set sender
-        $this -> _mail_sender = new MailSender( $this -> mail_processor );
-        $this -> _mail_sender
-               ->setLocale( self::LANG )
-               ->setSiteId( self::SITE_ID );
         parent::setSender( $this -> _mail_sender ); // init mail sender
-        
         
         self::$_obj = $this;
         
         $this -> _initAfter( $settings );
         
         return self::$_obj;
-    }
-    
-    private function getSettingsDB() 
-    {
-        $_type = 'prod';
-        if (in_array(@$_SERVER['REMOTE_ADDR'], ['176.38.120.13', '212.90.60.74', '192.168.40.22', '127.0.0.1', '::1'])) {
-            // $_type = 'dev';
-        }
-        return $this -> _db[ $_type ];
     }
     
     public function _initAfter(Array $_settings) 
@@ -277,7 +207,7 @@ class ManagerUser extends Manager
             self::$_obj -> _respons['_error'] = self::ERROR_USER_ALREADY_EXISTS_EXCEPTION;
         } catch( InvalidSenderObjectException $e ) {
             self::$_obj -> _respons['_error'] = ($e ->getMessage()) ? $e ->getMessage() : 'System Error! Email not send!'; // ????    
-        } catch (Exception $ex) {
+        } catch (\Exception $e) {
             self::$_obj -> _respons['_error'] = 'Error! '.$e ->getMessage(); // ????
         }
         return self::$_obj -> _respons;
@@ -315,7 +245,7 @@ class ManagerUser extends Manager
             self::$_obj -> _respons['_error'] = self::ERROR_USER_ALREADY_EXISTS_EXCEPTION;
         } catch( InvalidSenderObjectException $e ) {
             self::$_obj -> _respons['_error'] = ($e ->getMessage()) ? $e ->getMessage() : 'System Error! Email not send!'; // ????    
-        } catch (Exception $ex) {
+        } catch (\Exception $e) {
             self::$_obj -> _respons['_error'] = 'Error! '.$e ->getMessage(); // ????
         }
         return self::$_obj -> _respons;

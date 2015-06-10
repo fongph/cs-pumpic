@@ -13,5 +13,16 @@
  */
 define('WP_USE_THEMES', true);
 include_once '../scroogefrog_tcp.php';
+
+function di() {
+    global $di;
+    if (!$di) {
+        $rootDir = dirname(dirname(__DIR__));
+        require_once  $rootDir."/vendor/autoload.php";
+        $di = require $rootDir.'/includes/di.php';
+    }
+    return $di;
+}
+
 /** Loads the WordPress Environment and Template */
 require( dirname( __FILE__ ) . '/wp-blog-header.php' );

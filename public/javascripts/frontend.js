@@ -9115,6 +9115,15 @@ $('form[name="send_find_phone"] button.event-submit').click(function(){
     
         
     // bootstrap clic popUp
+    $(".youtube").YouTubeModal({
+        autoplay:1, 
+        autohide: 1,
+        width:820, 
+        height:520, 
+        theme: 'darck'
+    });
+    
+   /*
    $('a#openBtnVideo').click(function(e){
         e.preventDefault();
         var src = $(this).attr('data-src');
@@ -9134,6 +9143,10 @@ $('form[name="send_find_phone"] button.event-submit').click(function(){
             $("#myModal iframe").attr({'src':src});
         });
         
+        $('#myModal').on('hidden.bs.modal', function (e) { 
+            $("#myModal iframe").attr({'src': '#'});
+        });
+        
         $('#myModal').modal({show:true});
         return false;
     });
@@ -9142,6 +9155,8 @@ $('form[name="send_find_phone"] button.event-submit').click(function(){
     });
     $('#myModal').on('hidden.bs.modal', function (e) { 
     });
+    */
+    
 
 //    $('a#openBtnVideo').on('click', function(e) {
 //        var src = $(this).attr('data-src');
@@ -11223,172 +11238,190 @@ $(document).ready(function(){
         }); 
     }
 });
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+/*!
+ * Bootstrap YouTube Popup Player Plugin
+ * author: Edii Shadow
  */
+(function ($) {
+  var $YouTubeModal = null,
+    $YouTubeModalDialog = null,
+    $YouTubeModalTitle = null,
+    $YouTubeModalBody = null,
+    margin = 5,
+    methods;
 
-function isset(element) {
-    if(typeof element != 'undefined') {
-        return element.length > 0;
-    } else
-        return false;
-}
+  //Plugin methods
+  methods = {
+    //initialize plugin
+    init: function (options) {
+      options = $.extend({}, $.fn.YouTubeModal.defaults, options);
 
-/*
- * parce url
- **/
-function parseUrlQuery() {
-    var data = {};
-    if(location.search) {
-        var pair = (location.search.substr(1)).split('&');
-        for(var i = 0; i < pair.length; i ++) {
-            var param = pair[i].split('=');
-            data[param[0]] = param[1];
-        }
-    }
-    return data;
-}
+      // initialize YouTube Player Modal
+      if ($YouTubeModal == null) {
+        $YouTubeModal = $('<div class="modal ' + options.cssClass + '" id="YouTubeModal" role="dialog" aria-hidden="true">'); // fade
+        
+        
+        var modalContent = '<div class="modal-dialog" id="YouTubeModalDialog">' +
+                              '<div class="modal-content" id="YouTubeModalContent">' +
+                                    '<div class="video-wrapper">' +
+                                         '<div class="video-inner">'+
+                                             '<button type="button" data-dismiss="modal" aria-hidden="true" class="video-close close"></button>'+
+                                
+                                              '<div class="modal-body" id="YouTubeModalBody"></div>' +
+                                          '</div>'+ 
+                                     '</div>'+     
+                              '</div>' +
+                            '</div>';
+        
+        
+//        var modalContent = '<div class="modal-dialog" id="YouTubeModalDialog">' +
+//                              '<div class="modal-content" id="YouTubeModalContent">' +
+//                                '<div class="modal-header">' +
+//                                  '<button type="button" class="close" data-dismiss="modal">&times;</button>' +
+//                                  '<h4 class="modal-title" id="YouTubeModalTitle"></h4>' +
+//                                '</div>' +
+//                                '<div class="modal-body" id="YouTubeModalBody" style="padding:0;"></div>' +
+//                              '</div>' +
+//                            '</div>';
+        $YouTubeModal.html(modalContent).hide().appendTo('body');
+        $YouTubeModalDialog = $("#YouTubeModalDialog");
+        $YouTubeModalTitle = $("#YouTubeModalTitle");
+        $YouTubeModalBody = $("#YouTubeModalBody");
+        $YouTubeModal.modal({
+          show: false
+        }).on('hide.bs.modal', resetModalBody);
+      }
 
-/*
- * parce string serilize
- **/
-function parseQuery( str ) {
-    var data = {};
-    if(typeof str == 'string') {
-        var pair = (str).split('&');
-        for(var i = 0; i < pair.length; i ++) {
-            var param = pair[i].split('=');
-            data[param[0]] = param[1];
-        }
-    } else if(typeof str == 'object') {
-        $.each(str, function(_k, _val) {
-            if(_val.name)
-                data[ _val.name ] = (_val.value) ? _val.value : null;
-        });
-    }
-    return data;
-}
-
-/*
- * Ajax function.
- * return json result
- **/
-function getAjaxForm(path, params, options) {
-  
-    if(!options) options = {};
-    
-    var settings = $.extend( {
-        'dataType': 'json',
-        'async': false,
-        'crossDomain': false,
-        'type': 'POST',
-        'cache': true
-    }, options || {});
-    
-    console.log( settings );
-    
-    if(!path) {
-        console.log('enter url AJAX!');
-        return null;
-    }
-    var res = $.ajax({
-                    url: path,
-                    dataType: settings.dataType,
-                    async: settings.async,
-                    crossDomain: settings.crossDomain,
-                    type: settings.type,
-                    cache: settings.cache,
-                    success: function() {
-                        
-                    },
-                    complete: function(){
-                    },
-                    data: {
-                        params: params 
-                    }
-		}).responseText;
-                
-    console.log(res);            
-                
-    res = eval('['+res+']');
-    var obj = res[0];
-    return obj;
-}
-
-/*
- * JSONP
- * 
- */
-function _getAJAX( path, params, options ) {
-   if(!options) options = {};
-    
-    var settings = $.extend( {
-        'dataType': 'jsonp',
-        'jsonp': "callback",
-        'async': false,
-        'crossDomain': false,
-        'type': 'POST',
-        'cache': true
-    }, options || {});
-    
-    console.log( settings );
-    
-    if(!path) {
-        console.log('enter url AJAX!');
-        return null;
-    }   
-
-    return $.ajax({ 
-        type: settings.type,
-        async: settings.async,
-        url: path,
-        data: { 
-           params: params 
-        },
-        dataType: settings.dataType,
-        jsonp: settings.jsonp,
-        crossDomain: settings.crossDomain,
-        cache: settings.cache,
-    });
-}
-$(document).ready(function(){ 
-    var _email = new String($(".box-form-subscribe > form input.email").attr("name"));
-    $('.box-form-subscribe > form').validate({
-        onfocusout: false,
-        onkeyup: false,
-        onclick: true,
-        onsubmit: true,
-        focusInvalid: false,
-        focusCleanup: false,        
-        _email: {
-            required: true,
-            email: true
-        },
-        messages: {
-            _email: {
-                required: 'The Email field is empty',
-                email: 'We’ll never share your email adress and you can opt out at any time, we promise.'
+      return this.each(function () {
+        var obj = $(this);
+        var data = obj.data('YouTube');
+        if (!data) { //check if event is already assigned
+          obj.data('YouTube', {
+            target: obj
+          });
+          $(obj).bind('click.YouTubeModal', function (event) {
+            var youtubeId = options.youtubeId;
+            if ($.trim(youtubeId) == '' && obj.is("a")) {
+              youtubeId = getYouTubeIdFromUrl(obj.attr("href"));
             }
-        },
+            if ($.trim(youtubeId) == '' || youtubeId === false) {
+              youtubeId = obj.attr(options.idAttribute);
+            }
+            var videoTitle = $.trim(options.title);
+            if (videoTitle == '') {
+              if (options.useYouTubeTitle) setYouTubeTitle(youtubeId);
+              else videoTitle = obj.attr('title');
+            }
+            if (videoTitle) {
+              setModalTitle(videoTitle);
+            }
 
-        errorClass: 'block-error',
-        validClass: 'success',
-        invalidHandler: function(event, validator) {
-            if($('.box-form-subscribe > form .block-error').length)
-                $('.box-form-subscribe > form .block-error').html( ' ' ).hide();
-        },
-        // управление ошибками
-        showErrors: function(errorMap, errorList) {
-            var msg = '';
-            $.each(errorList, function(){
-                if(this.message) 
-                    msg += this.message + '<br />'; 
-             });
+            resizeModal(options.width);
 
-            if(msg !== '') 
-                $('.box-form-subscribe > form .block-error').html(msg).show();
-        },
+            //Setup YouTube Modal
+            var YouTubeURL = getYouTubeUrl(youtubeId, options);
+            var YouTubePlayerIframe = getYouTubePlayer(YouTubeURL, options.width, options.height);
+            $YouTubeModalBody.css({'max-width': options.width, 'height': options.height});
+            setModalBody(YouTubePlayerIframe);
+            $YouTubeModal.modal('show');
+
+            event.preventDefault();
+          });
+        }
+      });
+    },
+    destroy: function () {
+      return this.each(function () {
+        $(this).unbind(".YouTubeModal").removeData('YouTube');
+      });
+    }
+  };
+
+  function setModalTitle(title) {
+    $YouTubeModalTitle.html($.trim(title));
+  }
+
+  function setModalBody(content) {
+    $YouTubeModalBody.html(content);
+  }
+
+  function resetModalBody() {
+    setModalTitle('');
+    setModalBody('');
+  }
+
+  function resizeModal(w) {
+//    $YouTubeModalDialog.css({
+//      'max-width': w + (margin * 2)
+//    });
+  }
+
+  function getYouTubeUrl(youtubeId, options) {
+    return ["//www.youtube.com/embed/", youtubeId, "?rel=0&showsearch=0&autohide=", options.autohide,
+      "&autoplay=", options.autoplay, "&controls=", options.controls, "&fs=", options.fs, "&loop=", options.loop,
+      "&showinfo=", options.showinfo, "&color=", options.color, "&theme=", options.theme, "&wmode=transparent"
+    ].join('');
+  }
+
+  function getYouTubePlayer(URL, width, height) {
+    return ['<iframe title="YouTube video player" width="', width, '" height="', height, '" ',
+      'style="margin:0; padding:0; box-sizing:border-box; border:0; -webkit-border-radius:5px; -moz-border-radius:5px; border-radius:5px; margin:', (margin - 1), 'px;" ',
+      'src="', URL, '" frameborder="0" allowfullscreen seamless></iframe>'
+    ].join('');
+  }
+
+  function setYouTubeTitle(youtubeId) {
+    $.ajax({
+      url: window.location.protocol + '//query.yahooapis.com/v1/public/yql',
+      data: {
+        q: "select * from json where url ='http://www.youtube.com/oembed?url=http://www.youtube.com/watch?v=" + youtubeId + "&format=json'",
+        format: "json"
+      },
+      dataType: "jsonp",
+      success: function (data) {
+          if (data && data.query && data.query.results && data.query.results.json) {
+            setModalTitle(data.query.results.json.title);
+          }
+      }
     });
-});    
+  }
+
+  function getYouTubeIdFromUrl(youtubeUrl) {
+    var regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=)([^#\&\?]*).*/;
+    var match = youtubeUrl.match(regExp);
+    if (match && match[2].length == 11) {
+      return match[2];
+    } else {
+      return false;
+    }
+  }
+
+  $.fn.YouTubeModal = function (method) {
+    if (methods[method]) {
+      return methods[method].apply(this, Array.prototype.slice.call(arguments, 1));
+    } else if (typeof method === 'object' || !method) {
+      return methods.init.apply(this, arguments);
+    } else {
+      $.error('Method ' + method + ' does not exist on Bootstrap.YouTubeModal');
+    }
+  };
+
+  //default configuration
+  $.fn.YouTubeModal.defaults = {
+    youtubeId: '',
+    title: '',
+    useYouTubeTitle: true,
+    idAttribute: 'rel',
+    cssClass: 'YouTubeModal',
+    width: 640,
+    height: 480,
+    autohide: 2,
+    autoplay: 1,
+    color: 'red',
+    controls: 1,
+    fs: 1,
+    loop: 0,
+    showinfo: 0,
+    theme: 'light'
+  };
+})(jQuery);

@@ -7374,6 +7374,52 @@ legend {
 .pb10 {
     padding-bottom:10px;  
 }
+
+/* =================== iphone_parental_monitoring ========================= */
+.iphone_parental_monitoring #block-table-header .visual-text h1.title {
+    font-size: 32px;
+}
+@media (min-width: 992px) { 
+    .iphone_parental_monitoring .visual-images-right {
+        padding-left: 60px;
+    }
+}
+
+@media (min-width: 1200px) { 
+    .iphone_parental_monitoring .visual-images-right {
+        padding-left: 60px;
+    }
+}
+
+/* =================== ios-monitoring-software ========================= */
+/*.ios-monitoring-software #block-table-header .visual-text h1.title {
+    font-size: 32px;
+}*/
+@media (min-width: 992px) { 
+    .ios-monitoring-software .visual-images-right {
+        padding-left: 60px;
+    }
+}
+
+@media (min-width: 1200px) { 
+    .ios-monitoring-software .visual-images-right {
+        padding-left: 60px;
+    }
+}
+
+/* =================== gps-wireless-tracking-phone ========================= */
+
+@media (min-width: 992px) { 
+    .gps-wireless-tracking-phone .visual-images-right {
+        padding-left: 60px;
+    }
+}
+
+@media (min-width: 1200px) { 
+    .gps-wireless-tracking-phone .visual-images-right {
+        padding-left: 60px;
+    }
+}
 /* ---- \\ icloud block ----- */
 .position-relative {
     position: relative;
@@ -14264,6 +14310,7 @@ form.form-contact-us .box-captcha {
 .direct-login-footer .account-login {
     color: #303030;
 }
+
 .border-top-bottom {
     border-color: #e8e8e8 !important;
     border-style: solid !important;
@@ -15442,7 +15489,7 @@ th .table_title {
 }
 
 .banner-header {
-    padding: 25px 0 20px;
+    padding: 20px 0;
 }
 
 .parent-control .plans-links,
@@ -16114,10 +16161,10 @@ th .table_title {
         margin: 0 auto;
     }
     
-    .call-monitoring-software .visual-img-pc,
-    .smartphone-monitoring-software .visual-img-pc {
+    .call-monitoring-software .visual-img-pc{
         max-width: 55% !important;
     }
+    /* .smartphone-monitoring-software .visual-img-pc */
     
     .parent-control .visual p {
         margin: 0px;
@@ -16162,10 +16209,10 @@ th .table_title {
         margin: 12px auto 0px;
     }
     
-    .call-monitoring-software .visual-img-pc,
-    .smartphone-monitoring-software .visual-img-pc {
+    .call-monitoring-software .visual-img-pc{
         max-width: 55% !important;
     }
+    /* .smartphone-monitoring-software .visual-img-pc */
     
     .parent-control .visual p {
         margin: 0px;
@@ -16203,10 +16250,11 @@ th .table_title {
         margin: 12px auto 0px;
     }
     
-    .call-monitoring-software .visual-img-pc,
-    .smartphone-monitoring-software .visual-img-pc {
+    .call-monitoring-software .visual-img-pc{
         max-width: 56% !important;
     }
+    
+    /* .smartphone-monitoring-software .visual-img-pc  */
     
     .parent-control .box-right-description {
          padding: 0px;  
@@ -16251,9 +16299,9 @@ th .table_title {
 /*      bottom: -38px;  */
     }
     
-    .webkit .smartphone-monitoring-software .visual-img-pc { 
+/*    .webkit .smartphone-monitoring-software .visual-img-pc { 
         bottom: -38px;
-    }
+    }*/
     
     .pc2 .visual-img-pc {
         bottom: 0px;
@@ -16300,14 +16348,14 @@ th .table_title {
 /*      max-width: 100%;*/
     }
     
-    .call-monitoring-software .visual-img-pc,
-    .smartphone-monitoring-software .visual-img-pc { 
+    .call-monitoring-software .visual-img-pc{ 
         max-width: 100% !important;
     }
+    /* .smartphone-monitoring-software .visual-img-pc  */
     
-    .smartphone-monitoring-software .visual-img-pc {
+/*    .smartphone-monitoring-software .visual-img-pc {
         bottom: -40px;
-    }
+    }*/
     
     .parent-control .visual p {
         margin: 24px 0px 30px 0px;
@@ -16888,7 +16936,7 @@ th .table_title {
 .block-android .banner-header,
 .block-iso .banner-header {
 /*    padding-top: 81px;*/
-    padding-top: 25px;
+    padding-top: 20px;
 }
 
 .block-android .visual-img-pc,
@@ -16960,11 +17008,11 @@ th .table_title {
     */
     
     .block-ios .banner-header {
-        padding-top: 25px;
+        padding-top: 20px;
     }
     
     .block-android .banner-header {
-        padding: 25px 0px 20px;
+        padding: 20px 0px 20px;
     }   
     
     .block-ios .visual-img-pc {
@@ -16993,11 +17041,11 @@ th .table_title {
     }*/
 
     .block-ios .banner-header {
-        padding-top: 25px;
+        padding-top: 20px;
     }
     
      .block-android .banner-header {
-        padding: 25px 0px 20px;
+        padding: 20px 0px 20px;
     }
 
     .block-ios .visual-img-pc {
@@ -22443,7 +22491,9 @@ body {
 }
 
 .box-video-constructors .video-arrows,
-.box-video-constructors .video-buttons, 
+.box-video-constructors .video-arrows-v2,
+.box-video-constructors .video-buttons,
+.box-video-constructors .video-buttons-v2,
 .box-video-constructors .mobile-video-arrows, 
 .box-video-constructors .mobile-video-buttons {
     display: inline-block;
@@ -22461,10 +22511,19 @@ body {
     position: absolute;
     background: url('../images/video/video-arrows.png') no-repeat;
     height: 161px;
-    left: -146px;
-    position: absolute;
-    top: -101px;
     width: 161px;
+    left: -146px;
+    top: -101px;
+}
+
+
+.box-video-constructors .video-arrows-v2 {
+    position: absolute;
+    background: url('../images/video/arrows_shadows.png') no-repeat;
+    height: 170px;
+    width: 170px;
+    left: -150px;
+    top: -101px;
 }
 
 .box-video-constructors .mobile-video-arrows {
@@ -22574,7 +22633,7 @@ body {
         display: none;
     }
     .visual-images-right.box-video-constructors{  
-        padding-top: 0px;
+        padding-top: 20px;
     }
     
     .visual-images-right.box-video-constructors .mobile-video-arrows {
@@ -22598,7 +22657,7 @@ body {
     position: relative;
     left: 50%;
     top: 50%;
-    margin: -53.5px 0px 0px -54.5px;
+    margin: -53.5px 0px 0px -69.5px;
     width: 107px;
     height: 109px;
     z-index: 20;
@@ -22618,8 +22677,8 @@ body {
 .box-video-constructors .block-video-button .hover-video-buttons {
     display: none;
     position: absolute;
-    left:0px;
-    top:0px;
+    left:-2px;
+    top:-3px;
     width: 107px;
     height: 109px;
     z-index: 30;
@@ -22628,15 +22687,26 @@ body {
 .box-video-constructors .block-video-button .video-buttons {
     display: block;
     height: 67px;
-    left: 26.5px;
+    left: 26px;
     position: relative;
     top: 22px;
     width: 59px;
     z-index: 20;
 }
 
+.box-video-constructors .block-video-button .video-buttons-v2 {
+    display: block;
+    height: 109px;
+    left: 0px;
+    position: relative;
+    top: 0px;
+    width: 107px;
+    z-index: 20;
+}
+
 /* --------------- // video popUp ----------------- */
-#myModal .modal-content {
+#myModal .modal-content,
+#YouTubeModal .modal-content{
 /*    top: 100px;*/
     border: 0px;
 }
@@ -22697,4 +22767,120 @@ body {
     border-top: 0px;
     padding: 10px;
     text-align: left;
+}
+
+/* =================== home-page ========================= */
+@media (min-width: 992px) { 
+    .home-page .box-video-constructors .block-video-button{
+        margin: -56.5px 0 0 1.5px;
+    }
+}
+@media (min-width: 1200px) { 
+    .home-page .box-video-constructors .block-video-button{
+        margin: -61.5px 0 0 1.5px;
+    }
+}
+
+/* =================== call-monitoring ========================= */
+@media (min-width: 992px) { 
+    .call-monitoring .box-video-constructors .block-video-button{
+        margin: -7.5px 0 0 25.5px;
+    }
+}
+@media (min-width: 1200px) { 
+    .call-monitoring .box-video-constructors .block-video-button{
+        margin: -17.5px 0 0 25.5px;
+    }
+}
+
+/* =================== iphone-tracking-software ========================= */
+@media (min-width: 992px) { 
+    .iphone-tracking-software .box-video-constructors .block-video-button{
+        margin: -39.5px 0 0 -93.5px;
+    }
+}
+@media (min-width: 1200px) { 
+    .iphone-tracking-software .box-video-constructors .block-video-button{
+        margin: -43.5px 0 0 -93.5px;
+    }
+}
+
+/* =================== keylogging_software, online-monitoring-software ========================= */
+@media (min-width: 992px) { 
+    .keylogging_software .box-video-constructors .block-video-button {
+        margin: -17.5px 0 0 19.5px;
+    }
+    .online-monitoring-software .box-video-constructors .block-video-button {
+        margin: -7.5px 0 0 19.5px;
+    }
+}
+@media (min-width: 1200px) { 
+    .keylogging_software .box-video-constructors .block-video-button {
+        margin: -27.5px 0 0 19.5px;
+    }
+    .online-monitoring-software .box-video-constructors .block-video-button {
+        margin: -17.5px 0 0 19.5px;
+    }
+}
+
+/* =================== smartphone-monitoring-software ========================= */
+@media (min-width: 992px) { 
+    .smartphone-monitoring-software .box-video-constructors .block-video-button{
+        margin: -9.5px 0 0 27.5px;
+    }
+}
+@media (min-width: 1200px) { 
+    .smartphone-monitoring-software .box-video-constructors .block-video-button{
+        margin: -16.5px 0 0 28.5px;
+    }
+}
+
+/* =================== iphone_parental_monitoring ========================= */
+@media (min-width: 1200px) { 
+    .iphone_parental_monitoring .box-video-constructors .block-video-button,
+    .ios-monitoring-software .box-video-constructors .block-video-button{
+        margin: -73.5px 0px 0px -69.5px;
+    }
+}
+/* =================== gps-wireless-tracking-phone ========================= */
+.gps-wireless-tracking-phone .box-video-constructors .block-video-button {
+    margin: -100.5px 0 0 -49.5px;
+}
+@media (max-width: 360px) {  
+    .gps-wireless-tracking-phone .box-video-constructors .block-video-button {
+        margin: -100.5px 0 0 -49.5px;
+    }
+}
+@media only screen and (max-width: 410px) { 
+    .gps-wireless-tracking-phone .box-video-constructors .block-video-button {
+        margin: -100.5px 0 0 -49.5px;
+    }
+}
+@media (min-width: 468px) { 
+    .gps-wireless-tracking-phone .box-video-constructors .block-video-button {
+        margin: -100.5px 0 0 -49.5px;
+    }
+}
+@media (min-width: 500px) {
+    .gps-wireless-tracking-phone .box-video-constructors .block-video-button {
+        margin: -100.5px 0 0 -49.5px;
+    }
+}
+@media (min-width: 768px) { 
+    .gps-wireless-tracking-phone .box-video-constructors .block-video-button {
+        margin: -100.5px 0 0 -49.5px;
+    }
+}
+@media (min-width: 992px) {  
+    .gps-wireless-tracking-phone .box-video-constructors .block-video-button {
+        margin: -74.5px 0 0 -79.5px;
+    }
+}
+@media (min-width: 1200px) {  
+    .gps-wireless-tracking-phone .visual-images-right.box-video-constructors {
+        padding-top: 40px;
+    }
+    .gps-wireless-tracking-phone .box-video-constructors .block-video-button {
+        margin: -69.5px 0 0 -79.5px;
+    }
 }

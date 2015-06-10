@@ -1,5 +1,5 @@
 .banner-header {
-    padding: 25px 0 20px;
+    padding: 20px 0;
 }
 
 .parent-control .plans-links,
@@ -671,10 +671,10 @@
         margin: 0 auto;
     }
     
-    .call-monitoring-software .visual-img-pc,
-    .smartphone-monitoring-software .visual-img-pc {
+    .call-monitoring-software .visual-img-pc{
         max-width: 55% !important;
     }
+    /* .smartphone-monitoring-software .visual-img-pc */
     
     .parent-control .visual p {
         margin: 0px;
@@ -719,10 +719,10 @@
         margin: 12px auto 0px;
     }
     
-    .call-monitoring-software .visual-img-pc,
-    .smartphone-monitoring-software .visual-img-pc {
+    .call-monitoring-software .visual-img-pc{
         max-width: 55% !important;
     }
+    /* .smartphone-monitoring-software .visual-img-pc */
     
     .parent-control .visual p {
         margin: 0px;
@@ -760,10 +760,11 @@
         margin: 12px auto 0px;
     }
     
-    .call-monitoring-software .visual-img-pc,
-    .smartphone-monitoring-software .visual-img-pc {
+    .call-monitoring-software .visual-img-pc{
         max-width: 56% !important;
     }
+    
+    /* .smartphone-monitoring-software .visual-img-pc  */
     
     .parent-control .box-right-description {
          padding: 0px;  
@@ -808,9 +809,9 @@
 /*      bottom: -38px;  */
     }
     
-    .webkit .smartphone-monitoring-software .visual-img-pc { 
+/*    .webkit .smartphone-monitoring-software .visual-img-pc { 
         bottom: -38px;
-    }
+    }*/
     
     .pc2 .visual-img-pc {
         bottom: 0px;
@@ -857,14 +858,14 @@
 /*      max-width: 100%;*/
     }
     
-    .call-monitoring-software .visual-img-pc,
-    .smartphone-monitoring-software .visual-img-pc { 
+    .call-monitoring-software .visual-img-pc{ 
         max-width: 100% !important;
     }
+    /* .smartphone-monitoring-software .visual-img-pc  */
     
-    .smartphone-monitoring-software .visual-img-pc {
+/*    .smartphone-monitoring-software .visual-img-pc {
         bottom: -40px;
-    }
+    }*/
     
     .parent-control .visual p {
         margin: 24px 0px 30px 0px;

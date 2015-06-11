@@ -9,7 +9,7 @@
     {include file='../includes/content/fly/fly_blocks.tpl'}
     <!-- END FLY BLOCKS-->
     
-    <div class="wrapper {*bg_bottom_images*} block-free-trial">
+    <div class="wrapper {*bg_bottom_images*} block-free-trial home-page">
         <!-- TOP MENU -->
 
 	{include file='../includes/main/main-top-menu.tpl'
@@ -41,8 +41,8 @@
             promoBuyBlock = "no"
             planPackageBuy = "yes"
             block_video = "yes"
-            block_video_src = "http://www.youtube.com/embed/Atg0CbaytAY?rel=0&wmode=transparent&fs=0&autoplay=1&modestbranding=1&autohide=1"
-        }
+            block_video_src = "http://www.youtube.com/embed/Atg0CbaytAY"
+        } {* ?rel=0&wmode=transparent&fs=0&autoplay=1&modestbranding=1&autohide=1 *}
         
         {include file='../includes/content/plans.tpl'}
 

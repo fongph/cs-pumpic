@@ -611,13 +611,20 @@ th .table_title {
   position: relative;
 }
 @media (min-width: 700px) {
-  .column-relative > .table_title {
+  .column-relative > .table_title,
+  .column-relative > .table_title_v2 {
     position: absolute;
     top: 417px; /* 340 */
     left: 0;
     width: 100%;
     background: #fff;
   }
+  
+  .column-relative > .table_title_v2 {
+      top: 460px;
+      left: 0px;
+  }
+  
   .column-relative .basic_wr .list_price-no-link, .column-relative .premium_wr .list_price-no-link{
     padding-top: 100px;
   }
@@ -625,7 +632,8 @@ th .table_title {
 }
 
 @media (max-width: 700px) {
-  .column-relative > .table_title {
+  .column-relative > .table_title,
+  .column-relative > .table_title_v2 {
     display: none;
   }
   .column-relative .basic_wr .list_price-no-link, .column-relative .premium_wr .list_price-no-link{

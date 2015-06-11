@@ -6926,6 +6926,26 @@ select.form-control option {
   text-align: justify;
 }
 
+div.blockquate_bottom { 
+    margin-bottom: 15px;
+}
+
+/* ========== custom text ========== */
+.blockquate_bottom h2,
+.blockquate_bottom h3 {
+    font-weight: 300;
+    padding-bottom: 10px;
+    margin: 0px;
+    line-height: 1.1;
+    text-align: left;
+}
+/*.blockquate_bottom h2 { 
+    font-size: 30px;
+}
+.blockquate_bottom h3 { 
+    font-size: 20px;
+}*/
+
 .text-success {
   color: #16a89e;
   font-size: 14px;

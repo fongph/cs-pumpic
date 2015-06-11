@@ -7380,22 +7380,28 @@ legend {
     font-size: 32px;
 }
 @media (min-width: 992px) { 
-    .iphone_parental_monitoring .visual-images-right {
+    .iphone_parental_monitoring .visual-images-right,
+    .ios-monitoring-software .visual-images-right,
+    .gps-wireless-tracking-phone .visual-images-right,
+    .mobile_sms_spy .visual-images-right{
         padding-left: 60px;
-    }
+    } /* .iphone_parental_monitoring */
 }
 
 @media (min-width: 1200px) { 
-    .iphone_parental_monitoring .visual-images-right {
+    .iphone_parental_monitoring .visual-images-right,
+    .ios-monitoring-software .visual-images-right,
+    .gps-wireless-tracking-phone .visual-images-right,
+    .mobile_sms_spy .visual-images-right {
         padding-left: 60px;
-    }
+    } /* .iphone_parental_monitoring */
 }
 
 /* =================== ios-monitoring-software ========================= */
 /*.ios-monitoring-software #block-table-header .visual-text h1.title {
     font-size: 32px;
 }*/
-@media (min-width: 992px) { 
+/*@media (min-width: 992px) { 
     .ios-monitoring-software .visual-images-right {
         padding-left: 60px;
     }
@@ -7405,11 +7411,11 @@ legend {
     .ios-monitoring-software .visual-images-right {
         padding-left: 60px;
     }
-}
+}*/
 
 /* =================== gps-wireless-tracking-phone ========================= */
 
-@media (min-width: 992px) { 
+/*@media (min-width: 992px) { 
     .gps-wireless-tracking-phone .visual-images-right {
         padding-left: 60px;
     }
@@ -7419,7 +7425,7 @@ legend {
     .gps-wireless-tracking-phone .visual-images-right {
         padding-left: 60px;
     }
-}
+}*/
 /* ---- \\ icloud block ----- */
 .position-relative {
     position: relative;
@@ -7733,6 +7739,26 @@ select.form-control option {
   margin-top: 50px;
   text-align: justify;
 }
+
+div.blockquate_bottom { 
+    margin-bottom: 15px;
+}
+
+/* ========== custom text ========== */
+.blockquate_bottom h2,
+.blockquate_bottom h3 {
+    font-weight: 300;
+    padding-bottom: 10px;
+    margin: 0px;
+    line-height: 1.1;
+    text-align: left;
+}
+/*.blockquate_bottom h2 { 
+    font-size: 30px;
+}
+.blockquate_bottom h3 { 
+    font-size: 20px;
+}*/
 
 .text-success {
   color: #16a89e;
@@ -14924,13 +14950,20 @@ th .table_title {
   position: relative;
 }
 @media (min-width: 700px) {
-  .column-relative > .table_title {
+  .column-relative > .table_title,
+  .column-relative > .table_title_v2 {
     position: absolute;
     top: 417px; /* 340 */
     left: 0;
     width: 100%;
     background: #fff;
   }
+  
+  .column-relative > .table_title_v2 {
+      top: 460px;
+      left: 0px;
+  }
+  
   .column-relative .basic_wr .list_price-no-link, .column-relative .premium_wr .list_price-no-link{
     padding-top: 100px;
   }
@@ -14938,7 +14971,8 @@ th .table_title {
 }
 
 @media (max-width: 700px) {
-  .column-relative > .table_title {
+  .column-relative > .table_title,
+  .column-relative > .table_title_v2 {
     display: none;
   }
   .column-relative .basic_wr .list_price-no-link, .column-relative .premium_wr .list_price-no-link{
@@ -22544,10 +22578,33 @@ body {
 
 /* ----------- response mobile --------- */
 
+/* margin-left: -53.5px;
+    margin-top: -42.5px; */
+
+.box-video-constructors .block-video-button {
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    top: 50%;
+/*    margin: -53.5px 0px 0px -69.5px;*/
+    margin-left: -53.5px;
+    margin-top: -69.5px;
+
+    width: 107px;
+    height: 109px;
+    z-index: 20;
+/*    cursor: pointer;*/
+}
+
 @media (max-width: 360px) { 
     .box-video-constructors .mobile-video-arrows,
     .visual-images-right.box-video-constructors .mobile-video-arrows {  
         display: none !important;
+    }
+    
+    .box-video-constructors .block-video-button { 
+        margin-left: -53.5px;
+        margin-top: -42.5px;
     }
 }
 
@@ -22565,6 +22622,11 @@ body {
         width: 120px;
     } 
     
+    .box-video-constructors .block-video-button { 
+        margin-left: -53.5px;
+        margin-top: -42.5px;
+    }
+    
 }
 
 
@@ -22575,6 +22637,11 @@ body {
         top: -26px;
         width: 120px;
     } 
+    
+    .box-video-constructors .block-video-button { 
+        margin-left: -53.5px;
+        margin-top: -42.5px;
+    }
 }
 
 @media (min-width: 500px) {
@@ -22596,6 +22663,11 @@ body {
         left: -146px;
         top: -26px;
     }
+    
+    .box-video-constructors .block-video-button { 
+        margin-left: -53.5px;
+        margin-top: -42.5px;
+    }
 }
 
 @media (min-width: 768px) { 
@@ -22603,13 +22675,18 @@ body {
         display: block;
     }
     .visual-images-right.box-video-constructors{  
-        padding-top: 0px;
+        marign-top: 0px;
     }
     
     .visual-images-right.box-video-constructors .mobile-video-arrows {
         width: 161px; 
         left: -146px;
         top: -26px;
+    }
+    
+    .box-video-constructors .block-video-button { 
+        margin-left: -53.5px;
+        margin-top: -42.5px;
     }
 }
 
@@ -22618,13 +22695,18 @@ body {
         display: block;
     }
     .visual-images-right.box-video-constructors{  
-        padding-top: 30px;
+        margin-top: 30px;
     }
     
     .visual-images-right.box-video-constructors .mobile-video-arrows {
         width: 161px; 
         left: -146px;
         top: -26px;
+    }
+    
+    .box-video-constructors .block-video-button { 
+        margin-left: -53.5px;
+        margin-top: -69.5px;
     }
 }
 
@@ -22633,13 +22715,18 @@ body {
         display: none;
     }
     .visual-images-right.box-video-constructors{  
-        padding-top: 20px;
+        margin-top: 20px;
     }
     
     .visual-images-right.box-video-constructors .mobile-video-arrows {
         width: 161px; 
         left: -146px;
         top: -26px;
+    }
+    
+    .box-video-constructors .block-video-button { 
+        margin-left: -53.5px;
+        margin-top: -69.5px;
     }
 }
 
@@ -22650,19 +22737,14 @@ body {
         top: -26px;
         width: 120px;
     } 
+    
+    .box-video-constructors .block-video-button { 
+        margin-left: -53.5px;
+        margin-top: -42.5px;
+    }
 }
 
-.box-video-constructors .block-video-button {
-    display: inline-block;
-    position: relative;
-    left: 50%;
-    top: 50%;
-    margin: -53.5px 0px 0px -69.5px;
-    width: 107px;
-    height: 109px;
-    z-index: 20;
-/*    cursor: pointer;*/
-}
+
 
 .box-video-constructors .mobile-block-video-button { 
     display: inline-block;
@@ -22796,12 +22878,12 @@ body {
 /* =================== iphone-tracking-software ========================= */
 @media (min-width: 992px) { 
     .iphone-tracking-software .box-video-constructors .block-video-button{
-        margin: -39.5px 0 0 -93.5px;
+        margin: -54.5px 0 0 -97px;
     }
 }
 @media (min-width: 1200px) { 
     .iphone-tracking-software .box-video-constructors .block-video-button{
-        margin: -43.5px 0 0 -93.5px;
+        margin: -54.5px 0 0 -97px;
     }
 }
 
@@ -22826,20 +22908,30 @@ body {
 /* =================== smartphone-monitoring-software ========================= */
 @media (min-width: 992px) { 
     .smartphone-monitoring-software .box-video-constructors .block-video-button{
-        margin: -9.5px 0 0 27.5px;
+        margin: -26.5px 0 0 26.5px;
     }
 }
 @media (min-width: 1200px) { 
     .smartphone-monitoring-software .box-video-constructors .block-video-button{
-        margin: -16.5px 0 0 28.5px;
+        margin: -26.5px 0 0 26.5px;
     }
 }
 
 /* =================== iphone_parental_monitoring ========================= */
+@media (min-width: 992px) { 
+    .iphone_parental_monitoring .box-video-constructors .block-video-button,
+    .ios-monitoring-software .box-video-constructors .block-video-button,
+    .mobile_sms_spy .box-video-constructors .block-video-button {
+        margin-left: -83.5px;
+        margin-top: -38.5px;
+    }
+}
 @media (min-width: 1200px) { 
     .iphone_parental_monitoring .box-video-constructors .block-video-button,
-    .ios-monitoring-software .box-video-constructors .block-video-button{
-        margin: -73.5px 0px 0px -69.5px;
+    .ios-monitoring-software .box-video-constructors .block-video-button,
+    .mobile_sms_spy .box-video-constructors .block-video-button {
+        margin-left: -83.5px;
+        margin-top: -38.5px;
     }
 }
 /* =================== gps-wireless-tracking-phone ========================= */
@@ -22878,7 +22970,7 @@ body {
 }
 @media (min-width: 1200px) {  
     .gps-wireless-tracking-phone .visual-images-right.box-video-constructors {
-        padding-top: 40px;
+        margin-top: 40px;
     }
     .gps-wireless-tracking-phone .box-video-constructors .block-video-button {
         margin: -69.5px 0 0 -79.5px;

@@ -19,16 +19,19 @@
                                 {if isset($block_video) && $block_video == "yes" && isset($block_video_src) && $block_video_src != ""}
                                     <div id="block-video">
                                         <div class="block-video-button">
-                                            <div class="video-arrows"></div>
+                                            <div class="video-arrows-v2"></div>
                                             <div class="box-hover">
-                                                <a 
+                                                <a class="youtube" href="{$block_video_src}"
                                                    {*data-toggle="modal" *}
-                                                   data-src="{$block_video_src}" 
+                                                   
+                                                   {*data-src="{$block_video_src}" 
                                                    data-height="520" 
-                                                   data-width="820"
+                                                   data-width="820"*}
+                                                   
                                                    {*data-target="#myModal"*} id="openBtnVideo">
                                                     {* if $typeVideoImg == "standart" || !isset($typeVideoImg) *}
-                                                        <img src="{$img}/video/video-button-play.png" class="video-buttons" />
+                                                        {*<img src="{$img}/video/video-button-play.png" class="video-buttons" />*}
+                                                        <img src="{$img}/video/button_shadows.png" class="video-buttons-v2" />
                                                     {* /if *}
                                                     {*{if $typeVideoImg == "black_orange"}
                                                         <img src="{$img}/video/arrows_black_orange.png" class="video-buttons" />
@@ -50,23 +53,23 @@
                         </td>
                         {/if}
                         
-                        <td class="col-s-sm-12 col-xs-sm-12 {if $imgAlign == "center"} col-md-12 col-lg-12  {else}{if isset($Review)}col-md-8 col-lg-8{else}{if $collg}col-md-{$collg} col-lg-{$collg}{else}col-md-6 col-lg-6{/if}{/if}{/if}">
+                        <td class="col-s-sm-12 col-xs-sm-12 {if $imgAlign == "center"} col-md-12 col-lg-12  {else}{if isset($Review)}col-md-8 col-lg-8{else}{if isset($collg)}col-md-{$collg} col-lg-{$collg}{else}col-md-6 col-lg-6{/if}{/if}{/if}">
                             
                             <div>
                                 <div class="visual-text {if isset($Review)}visual-text-lg visual-text-xlg{else}{if $textAlign}block-text-{$textAlign}{else}block-text-right{/if}{/if}">
-                                    <h1 class="title {if $fz}fz{$fz}{/if}">{if $title} {$title} {else}Android Parental Control App{/if}</h1>
+                                    <h1 class="title {if isset($fz)}fz{$fz}{/if}">{if isset($title)} {$title} {else}Android Parental Control App{/if}</h1>
                                     
                                     {if isset($flagName)}
                                     <div class='block-table'>
                                         <div class='table-row'>
-                                        {if $flagPosition == 'left'}
+                                        {if isset($flagPosition) && $flagPosition == 'left'}
                                             <div class='table-cell col-xs-sm-2 col-md-2 col-lg-2 vertical-aligh-middle'>
                                                 <div class='row'><i class='image-flag-header-{$flagName}'></i></div>
                                             </div>
                                         {/if}
                                         <div class='table-cell col-xs-sm-10 col-md-10 col-lg-10'>
                                             <div class="row">
-                                            {if $description}
+                                            {if isset($description)}
                                                 {$description}
                                             {else}
                                             Pumpic takes care of your children safety.        
@@ -74,7 +77,7 @@
                                             {/if}
                                             </div>
                                         </div>
-                                        {if $flagPosition == 'right'}
+                                        {if isset($flagPosition) && $flagPosition == 'right'}
                                             <div class='table-cell col-xs-sm-2 col-md-2 col-lg-2 vertical-aligh-middle'>
                                                 
                                                 <div class='row'><i class='image-flag-header-{$flagName}'></i></div>
@@ -84,7 +87,7 @@
                                     </div>
                                     {else}
                                     <p>
-                                        {if $description}
+                                        {if isset($description)}
                                             {$description}
                                         {else}
                                         Pumpic takes care of your children safety.        
@@ -165,9 +168,9 @@
 
                                     {if isset($planPackageBuy) && $planPackageBuy == 'yes'}
                                         {include file='./blocks/block-package.tpl'
-                                            planPackageBuyUrl = $planPackageBuyUrl
-                                            planPackageBuyType = $planPackageBuyType
-                                            planPackageBuyClass = $planPackageBuyClass 
+                                            planPackageBuyUrl = (isset($planPackageBuyUrl)) ? $planPackageBuyUrl : "" 
+                                            planPackageBuyType = (isset($planPackageBuyType)) ? $planPackageBuyType : "" 
+                                            planPackageBuyClass = (isset($planPackageBuyClass)) ? $planPackageBuyClass : "" 
                                         }
                                     {/if}
                                     
@@ -210,17 +213,19 @@
                                  {if isset($block_video) && $block_video == "yes" && isset($block_video_src) && $block_video_src != ""}
                                     <div id="block-video">
                                         <div class="block-video-button">
-                                            <div class="video-arrows pc-version"></div>
+                                            <div class="video-arrows-v2 pc-version"></div>
                                             <div class="mobile-video-arrows"></div>
                                             <div class="box-hover">
-                                                <a 
+                                                <a class="youtube" href="{$block_video_src}"
                                                    {*data-toggle="modal" *}
-                                                   data-src="{$block_video_src}" 
+                                                   {*data-src="{$block_video_src}" 
                                                    data-height="520" 
-                                                   data-width="820" 
+                                                   data-width="820"*} 
                                                    {*data-target="#myModal"*} 
                                                    id="openBtnVideo"> 
-                                                    <img src="{$img}/video/video-button-play.png" class="video-buttons" />
+                                                    {*<img src="{$img}/video/video-button-play.png" class="video-buttons" />*}
+                                                    <img src="{$img}/video/button_shadows.png" class="video-buttons-v2" />
+                                                    
                                                     <img src="{$img}/video/hover-video-button-play.png" class="hover-video-buttons" />
                                                 </a>
                                             </div>
@@ -241,11 +246,11 @@
                                         
                                         <div class="mobile-block-video-button">
                                             <div class="mobile-video-arrows"></div>
-                                            <a 
+                                            <a class="youtube" href="{$block_video_src}"
                                                {*data-toggle="modal"*} 
-                                               data-src="{$block_video_src}" 
+                                               {*data-src="{$block_video_src}" 
                                                data-height="520" 
-                                               data-width="820" 
+                                               data-width="820" *}
                                                {*data-target="#myModal"*} id="openBtnVideo">
                                                 <img src="{$img}/video/m-video-button-play.png" class="mobile-video-buttons" />
                                             </a>

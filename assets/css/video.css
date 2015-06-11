@@ -20,7 +20,9 @@
 }
 
 .box-video-constructors .video-arrows,
-.box-video-constructors .video-buttons, 
+.box-video-constructors .video-arrows-v2,
+.box-video-constructors .video-buttons,
+.box-video-constructors .video-buttons-v2,
 .box-video-constructors .mobile-video-arrows, 
 .box-video-constructors .mobile-video-buttons {
     display: inline-block;
@@ -38,10 +40,19 @@
     position: absolute;
     background: url('../images/video/video-arrows.png') no-repeat;
     height: 161px;
-    left: -146px;
-    position: absolute;
-    top: -101px;
     width: 161px;
+    left: -146px;
+    top: -101px;
+}
+
+
+.box-video-constructors .video-arrows-v2 {
+    position: absolute;
+    background: url('../images/video/arrows_shadows.png') no-repeat;
+    height: 170px;
+    width: 170px;
+    left: -150px;
+    top: -101px;
 }
 
 .box-video-constructors .mobile-video-arrows {
@@ -62,15 +73,43 @@
 
 /* ----------- response mobile --------- */
 
-@media (max-width: 360px) { 
+/* margin-left: -53.5px;
+    margin-top: -42.5px; */
+
+.box-video-constructors .block-video-button {
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    top: 50%;
+/*    margin: -53.5px 0px 0px -69.5px;*/
+    margin-left: -53.5px;
+    margin-top: -69.5px;
+
+    width: 107px;
+    height: 109px;
+    z-index: 20;
+/*    cursor: pointer;*/
+}
+
+/*@media (max-width: 360px) { 
     .box-video-constructors .mobile-video-arrows,
     .visual-images-right.box-video-constructors .mobile-video-arrows {  
         display: none !important;
     }
-}
+    
+    .box-video-constructors .block-video-button { 
+        margin-left: -53.5px;
+        margin-top: -42.5px;
+    }
+}*/
 
-@media only screen and (max-width: 410px) {
-    .visual-images-right.box-video-constructors .mobile-video-arrows { 
+@media only screen and (max-width: 468px) {
+    .box-video-constructors .mobile-video-arrows,
+    .visual-images-right.box-video-constructors .mobile-video-arrows {  
+        display: none !important;
+    }
+    
+/*    .visual-images-right.box-video-constructors .mobile-video-arrows { 
         display: block;
     }
     .box-video-constructors .mobile-video-arrows { 
@@ -81,7 +120,12 @@
         left: -107px;
         top: -26px;
         width: 120px;
-    } 
+    } */
+    
+    .box-video-constructors .block-video-button { 
+        margin-left: -53.5px;
+        margin-top: -42.5px;
+    }
     
 }
 
@@ -93,6 +137,11 @@
         top: -26px;
         width: 120px;
     } 
+    
+    .box-video-constructors .block-video-button { 
+        margin-left: -53.5px;
+        margin-top: -42.5px;
+    }
 }
 
 @media (min-width: 500px) {
@@ -114,6 +163,11 @@
         left: -146px;
         top: -26px;
     }
+    
+    .box-video-constructors .block-video-button { 
+        margin-left: -53.5px;
+        margin-top: -42.5px;
+    }
 }
 
 @media (min-width: 768px) { 
@@ -121,13 +175,18 @@
         display: block;
     }
     .visual-images-right.box-video-constructors{  
-        padding-top: 0px;
+        marign-top: 0px;
     }
     
     .visual-images-right.box-video-constructors .mobile-video-arrows {
         width: 161px; 
         left: -146px;
         top: -26px;
+    }
+    
+    .box-video-constructors .block-video-button { 
+        margin-left: -53.5px;
+        margin-top: -42.5px;
     }
 }
 
@@ -136,13 +195,18 @@
         display: block;
     }
     .visual-images-right.box-video-constructors{  
-        padding-top: 30px;
+        margin-top: 30px;
     }
     
     .visual-images-right.box-video-constructors .mobile-video-arrows {
         width: 161px; 
         left: -146px;
         top: -26px;
+    }
+    
+    .box-video-constructors .block-video-button { 
+        margin-left: -53.5px;
+        margin-top: -69.5px;
     }
 }
 
@@ -151,13 +215,18 @@
         display: none;
     }
     .visual-images-right.box-video-constructors{  
-        padding-top: 0px;
+        margin-top: 20px;
     }
     
     .visual-images-right.box-video-constructors .mobile-video-arrows {
         width: 161px; 
         left: -146px;
         top: -26px;
+    }
+    
+    .box-video-constructors .block-video-button { 
+        margin-left: -53.5px;
+        margin-top: -69.5px;
     }
 }
 
@@ -168,22 +237,17 @@
         top: -26px;
         width: 120px;
     } 
+    
+    .box-video-constructors .block-video-button { 
+        margin-left: -53.5px;
+        margin-top: -42.5px;
+    }
 }
 
-.box-video-constructors .block-video-button {
-    display: inline-block;
-    position: relative;
-    left: 50%;
-    top: 50%;
-    margin: -53.5px 0px 0px -54.5px;
-    width: 107px;
-    height: 109px;
-    z-index: 20;
-/*    cursor: pointer;*/
-}
+
 
 .box-video-constructors .mobile-block-video-button { 
-    display: inline-block;
+    display: block;
     position: relative;
     left: 50%;
     top: 50%;
@@ -195,8 +259,8 @@
 .box-video-constructors .block-video-button .hover-video-buttons {
     display: none;
     position: absolute;
-    left:0px;
-    top:0px;
+    left:-2px;
+    top:-3px;
     width: 107px;
     height: 109px;
     z-index: 30;
@@ -205,15 +269,26 @@
 .box-video-constructors .block-video-button .video-buttons {
     display: block;
     height: 67px;
-    left: 26.5px;
+    left: 26px;
     position: relative;
     top: 22px;
     width: 59px;
     z-index: 20;
 }
 
+.box-video-constructors .block-video-button .video-buttons-v2 {
+    display: block;
+    height: 109px;
+    left: 0px;
+    position: relative;
+    top: 0px;
+    width: 107px;
+    z-index: 20;
+}
+
 /* --------------- // video popUp ----------------- */
-#myModal .modal-content {
+#myModal .modal-content,
+#YouTubeModal .modal-content{
 /*    top: 100px;*/
     border: 0px;
 }
@@ -274,4 +349,130 @@
     border-top: 0px;
     padding: 10px;
     text-align: left;
+}
+
+/* =================== home-page ========================= */
+@media (min-width: 992px) { 
+    .home-page .box-video-constructors .block-video-button{
+        margin: -56.5px 0 0 1.5px;
+    }
+}
+@media (min-width: 1200px) { 
+    .home-page .box-video-constructors .block-video-button{
+        margin: -61.5px 0 0 1.5px;
+    }
+}
+
+/* =================== call-monitoring ========================= */
+@media (min-width: 992px) { 
+    .call-monitoring .box-video-constructors .block-video-button{
+        margin: -7.5px 0 0 25.5px;
+    }
+}
+@media (min-width: 1200px) { 
+    .call-monitoring .box-video-constructors .block-video-button{
+        margin: -17.5px 0 0 25.5px;
+    }
+}
+
+/* =================== iphone-tracking-software ========================= */
+@media (min-width: 992px) { 
+    .iphone-tracking-software .box-video-constructors .block-video-button{
+        margin: -54.5px 0 0 -97px;
+    }
+}
+@media (min-width: 1200px) { 
+    .iphone-tracking-software .box-video-constructors .block-video-button{
+        margin: -54.5px 0 0 -97px;
+    }
+}
+
+/* =================== keylogging_software, online-monitoring-software ========================= */
+@media (min-width: 992px) { 
+    .keylogging_software .box-video-constructors .block-video-button {
+        margin: -17.5px 0 0 19.5px;
+    }
+    .online-monitoring-software .box-video-constructors .block-video-button {
+        margin: -7.5px 0 0 19.5px;
+    }
+}
+@media (min-width: 1200px) { 
+    .keylogging_software .box-video-constructors .block-video-button {
+        margin: -27.5px 0 0 19.5px;
+    }
+    .online-monitoring-software .box-video-constructors .block-video-button {
+        margin: -17.5px 0 0 19.5px;
+    }
+}
+
+/* =================== smartphone-monitoring-software ========================= */
+@media (min-width: 992px) { 
+    .smartphone-monitoring-software .box-video-constructors .block-video-button{
+        margin: -26.5px 0 0 26.5px;
+    }
+}
+@media (min-width: 1200px) { 
+    .smartphone-monitoring-software .box-video-constructors .block-video-button{
+        margin: -26.5px 0 0 26.5px;
+    }
+}
+
+/* =================== iphone_parental_monitoring ========================= */
+@media (min-width: 992px) { 
+    .iphone_parental_monitoring .box-video-constructors .block-video-button,
+    .ios-monitoring-software .box-video-constructors .block-video-button,
+    .mobile_sms_spy .box-video-constructors .block-video-button {
+        margin-left: -83.5px;
+        margin-top: -38.5px;
+    }
+}
+@media (min-width: 1200px) { 
+    .iphone_parental_monitoring .box-video-constructors .block-video-button,
+    .ios-monitoring-software .box-video-constructors .block-video-button,
+    .mobile_sms_spy .box-video-constructors .block-video-button {
+        margin-left: -83.5px;
+        margin-top: -38.5px;
+    }
+}
+/* =================== gps-wireless-tracking-phone ========================= */
+.gps-wireless-tracking-phone .box-video-constructors .block-video-button {
+    margin: -100.5px 0 0 -49.5px;
+}
+@media (max-width: 360px) {  
+    .gps-wireless-tracking-phone .box-video-constructors .block-video-button {
+        margin: -100.5px 0 0 -49.5px;
+    }
+}
+@media only screen and (max-width: 410px) { 
+    .gps-wireless-tracking-phone .box-video-constructors .block-video-button {
+        margin: -100.5px 0 0 -49.5px;
+    }
+}
+@media (min-width: 468px) { 
+    .gps-wireless-tracking-phone .box-video-constructors .block-video-button {
+        margin: -100.5px 0 0 -49.5px;
+    }
+}
+@media (min-width: 500px) {
+    .gps-wireless-tracking-phone .box-video-constructors .block-video-button {
+        margin: -100.5px 0 0 -49.5px;
+    }
+}
+@media (min-width: 768px) { 
+    .gps-wireless-tracking-phone .box-video-constructors .block-video-button {
+        margin: -100.5px 0 0 -49.5px;
+    }
+}
+@media (min-width: 992px) {  
+    .gps-wireless-tracking-phone .box-video-constructors .block-video-button {
+        margin: -74.5px 0 0 -79.5px;
+    }
+}
+@media (min-width: 1200px) {  
+    .gps-wireless-tracking-phone .visual-images-right.box-video-constructors {
+        margin-top: 40px;
+    }
+    .gps-wireless-tracking-phone .box-video-constructors .block-video-button {
+        margin: -69.5px 0 0 -79.5px;
+    }
 }

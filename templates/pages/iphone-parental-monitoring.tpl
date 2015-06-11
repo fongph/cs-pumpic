@@ -27,17 +27,21 @@
         
     <!-- CONTENT -->
          {include file='../includes/content/info/info-promo.tpl'
-            imgUrl = "header_banners/bg_iphone-parental-monitoring.png"
+            imgUrl = "landings/bg_iphone-parental-monitoring.png"
             imgAlt = "iphone parental monitoring"
             imgAlign = "right"
             imgVerticalAlign = "bottom"
+            collg = "7"
             textAlign = "right"
-            title = "Parental Control Software for <br/>iPhone, iPad, and iPod Touch"
+            title = "Parental Control Software <br/>for iPhone, iPad, <br/>and iPod Touch"
             description = "Keep track of your kids’ iOS devices remotely."
             promoBuyBlock = "no"
             listText = "control mobile phone usage|monitor Internet activity|follow location and route history"
             planPackageBuy = "yes"
-             }
+            block_video = "yes"
+            block_video_src = "http://www.youtube.com/embed/Atg0CbaytAY"
+        }
+         {* header_banners/bg_iphone-parental-monitoring.png *}
          {*listText = "control mobile phone usage|monitor Internet activity|follow location and route history"*}    
         
         {include file='../includes/content/plans.tpl'}

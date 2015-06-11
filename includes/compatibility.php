@@ -19,7 +19,7 @@ require dirname( __DIR__ ).'/vendor/autoload.php';
 
 $compatibility = new Compatibility(di()->get('dbPhones'));
 
-$currentPage = (int)$_GET['page'] ?: 0;
+$currentPage = (isset($_GET['page']) and (int)$_GET['page']) ?: 0;
 
 //$res = $compatibility->getPhones(Compatibility::FIND_BY_QUERY, $currentPage, $_GET['query']);
 

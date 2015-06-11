@@ -29,8 +29,25 @@ require_once 'smarty.config.php';
 //$smarty ->assign('api_device', $config['api_device']);
 //$smarty ->assign('site_id', $config['site_id']);
 
+
 /* list order */
 $products = $obj ->getProducts('first');
+$_sortingProducts = array('basic' => array(), 'premium' => array());
+if(is_array($products)) {
+    // Basic
+    if(isset($products['basic'])) {
+        $_sortingProducts['basic'] = $obj -> _arsort( $products['basic'] );
+    }
+    // Premium
+    if(isset($products['premium'])) {
+        $_sortingProducts['premium'] = $obj -> _arsort( $products['premium'] );
+    }
+}
+
+//echo "<pre>";
+//var_dump( $_sortingProducts );
+//echo "</pre>";
+
     
 /* form_order */
 $_request = (isset($_POST['price']) and !empty($_POST['price'])) ? $_POST['price']: false;
@@ -56,8 +73,8 @@ if($_request['productID']) {
 //}
 
 // init output params!
-$smarty->assign('getProducts', $products);
+$smarty->assign('getProducts', $_sortingProducts);
 
 // $smarty ->assign('referer', $_SERVER['HTTP_REFERER']);
 // init output params
-$smarty->display($b_dir.'/templates/pages/pricing2.tpl');
+$smarty->display($b_dir.'/templates/pages/pricing-apps-store.tpl');

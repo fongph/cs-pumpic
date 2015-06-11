@@ -36,7 +36,7 @@
                 <div class="row">
                     <div class="col-lg-10 col-lg-offset-1">
                         <div class="row">
-                            <h2>Compatibility</h2>
+                            <div class="h2 text-center">Compatibility</div>
                         </div>
 
                         <!-- #log -->
@@ -95,7 +95,7 @@
                             {if $getSetting._item.custom_text}
                                 <div class="row">
                                     <div class="col-lg-12">
-                                        <p class="blockquate_bottom">{$getSetting._item.custom_text}</p>
+                                        <div class="blockquate_bottom">{$getSetting._item.custom_text}</div>
                                     </div>
                                 </div>
                             {/if}

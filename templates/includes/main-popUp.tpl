@@ -78,7 +78,8 @@
  </div>*}
     
 {*<div class="modal fade" id="myModal" tabindex="-1" role="dialog"  aria-labelledby="myModalLabel" aria-hidden="true">*}
-<div id="myModal" class="modal {*hide fade*}" tabindex="-1" role="dialog">      
+{*hide fade*}
+{*<div id="myModal" class="modal " tabindex="-1" role="dialog">      
     <div class="modal-dialog">
          <div class="modal-content">
              
@@ -86,11 +87,11 @@
                      <div class="video-inner">
                          <button type="button" data-dismiss="modal" aria-hidden="true" class="video-close close"></button>
                          
-                         {*<div class="modal-header"></div>*}
+                         <!-- <div class="modal-header"></div> -->
                          <div class="modal-body">
-                              <iframe src="" frameborder="0" height="250" width="99.6%"></iframe>
+                              <iframe src="" frameborder="0"></iframe>
                          </div>
-                         {*<div class="modal-footer"></div>*}
+                         <!-- <div class="modal-footer"></div> -->
                          
                      </div>
              </div> 
@@ -100,4 +101,4 @@
              
         </div><!-- /.modal-content -->
      </div><!-- /.modal-dialog -->
-  </div><!-- /.modal -->    
+  </div><!-- /.modal -->    *}

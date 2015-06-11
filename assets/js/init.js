@@ -1945,6 +1945,15 @@ $('form[name="send_find_phone"] button.event-submit').click(function(){
     
         
     // bootstrap clic popUp
+    $(".youtube").YouTubeModal({
+        autoplay:1, 
+        autohide: 1,
+        width:820, 
+        height:520, 
+        theme: 'darck'
+    });
+    
+   /*
    $('a#openBtnVideo').click(function(e){
         e.preventDefault();
         var src = $(this).attr('data-src');
@@ -1964,6 +1973,10 @@ $('form[name="send_find_phone"] button.event-submit').click(function(){
             $("#myModal iframe").attr({'src':src});
         });
         
+        $('#myModal').on('hidden.bs.modal', function (e) { 
+            $("#myModal iframe").attr({'src': '#'});
+        });
+        
         $('#myModal').modal({show:true});
         return false;
     });
@@ -1972,6 +1985,8 @@ $('form[name="send_find_phone"] button.event-submit').click(function(){
     });
     $('#myModal').on('hidden.bs.modal', function (e) { 
     });
+    */
+    
 
 //    $('a#openBtnVideo').on('click', function(e) {
 //        var src = $(this).attr('data-src');

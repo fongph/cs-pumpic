@@ -30,8 +30,9 @@ module.exports = function (grunt) {
                     './assets/js/bxslider/jquery.bxslider.js', 
                     './assets/js/bxslider/bxInit.js',
                     
-                    './assets/js/wp/settings.js',
-                    './assets/js/wp/init.js',
+                    //'./assets/js/wp/settings.js',
+                    //'./assets/js/wp/init.js',
+                    './assets/js/youtube/bootstrap.youtubepopup.js',
                 ],
                 dest: './public/javascripts/frontend.js'
             },
@@ -133,7 +134,7 @@ module.exports = function (grunt) {
             
             css: {
                 files: ['./assets/css/**/*.css', './assets/css/*.css'],
-                tasks: ['cssmin'],
+                tasks: ['concat', 'cssmin'],
                 options: {
                     livereload: true
                 }

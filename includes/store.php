@@ -31,7 +31,22 @@ require_once 'smarty.config.php';
 
 /* list order */
 $products = $obj ->getProducts();
+$_sortingProducts = array('basic' => array(), 'premium' => array());
+if(is_array($products)) {
+    // Basic
+    if(isset($products['basic'])) {
+        $_sortingProducts['basic'] = $obj -> _arsort( $products['basic'] );
+    }
+    // Premium
+    if(isset($products['premium'])) {
+        $_sortingProducts['premium'] = $obj -> _arsort( $products['premium'] );
+    }
+}
     
+echo "<pre>";
+var_dump( $_sortingProducts );
+echo "</pre>";
+
 /* form_order */
 $_request = (isset($_POST['price']) and !empty($_POST['price'])) ? $_POST['price']: false;
 if($_request['productID']) {
@@ -52,7 +67,7 @@ if($_request['productID']) {
 }
 
 // init output params!
-$smarty->assign('getProducts', $products);
+$smarty->assign('getProducts', $_sortingProducts);
 
 // init output params
 $smarty->display($b_dir.'/templates/pages/store.tpl');

@@ -9,7 +9,7 @@
     {include file='../includes/content/fly/fly_blocks.tpl'}
     <!-- END FLY BLOCKS-->
     
-    <div class="wrapper block-ios">
+    <div class="wrapper block-ios ios-monitoring-software">
 	
 	<!-- TOP MENU -->
 	{include file='../includes/main/main-top-menu.tpl'
@@ -28,9 +28,10 @@
         
     <!-- CONTENT -->
          {include file='../includes/content/info/info-promo.tpl'
-            imgUrl = "header_banners/bg-header-mobile_ios_400x325.png"
+            imgUrl = "landings/bg_iphone-parental-monitoring.png"
             imgAlt = "iOS mobile monitoring"
             imgAlign = "right"
+            collg = "7"
             textAlign = "right"
             title = "iOS Parental Control App"
             description = "Pumpic helps you keep your children safe.<br/>
@@ -38,7 +39,11 @@ Monitor your kid's iOS device with Pumpic."
             promoBuyBlock = "no"
             listText = "Follow Calls and SMS|Track GPS location|Monitor online activity"
             planPackageBuy = "yes"
+            block_video = "yes"
+            block_video_src = "http://www.youtube.com/embed/Atg0CbaytAY"
         }
+        {* header_banners/bg-header-mobile_ios_400x325.png *}
+        {* ?rel=0&wmode=transparent&fs=0&autoplay=1&modestbranding=1&autohide=1 *}
         {* listText = "Follow Calls and SMS|Track GPS location|Monitor online activity" *}
         
         {include file='../includes/content/plans.tpl'}

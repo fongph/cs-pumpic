@@ -30,10 +30,34 @@ function eg_quicktags() {
     * - Title, title="" attribute (optional)
     * - Priority/position on bar, 1-9 = first, 11-19 = second, 21-29 = third, etc. (optional)
     */
+   
+    var _bannerBuyAndDemo = '';
+        _bannerBuyAndDemo += '<div class="box-wp-banner">';
+            _bannerBuyAndDemo += '<label>you should keep<br />your children safe</label>';
+            _bannerBuyAndDemo += '<div class="clearfix">';
+                _bannerBuyAndDemo += '<div class="block-price col-lg-8 col-md-8 col-sm-8 clearfix text-center">';
+                    _bannerBuyAndDemo += '<div id="basic" class="col-lg-6 col-md-6 col-sm-6 col-xs-sm-6">';
+                        _bannerBuyAndDemo += '<span class="package-basic"></span>';
+                        _bannerBuyAndDemo += '<div class="price"><sub>$</sub>5.33<span class="slash">/</span><span class="month">month</span></div>';
+                    _bannerBuyAndDemo += '</div>';
+                    _bannerBuyAndDemo += '<div id="premium" class="col-lg-6 col-md-6 col-sm-6 col-xs-sm-6">';
+                        _bannerBuyAndDemo += '<span class="package-premium"></span>';
+                        _bannerBuyAndDemo += '<div class="price"><sub>$</sub>6.99<span class="slash">/</span><span class="month">month</span></div>';
+                    _bannerBuyAndDemo += '</div>';
+                _bannerBuyAndDemo += '</div>';
+                    _bannerBuyAndDemo += '<div class="block-buttons col-lg-4 col-md-4 col-sm-4 clearfix text-center">';
+                    _bannerBuyAndDemo += '<a href="http://pumpic.com/store.html" class="btn btn-default">Learn More</a>';
+                    _bannerBuyAndDemo += '<br />';
+                    _bannerBuyAndDemo += '<a href="http://demo.pumpic.com/setDevice/125?redirect_url=cp/calls" class="btn btn-orange">Live Demo</a>'; 
+                    _bannerBuyAndDemo += '</div>';
+                _bannerBuyAndDemo += '</div>';    
+            _bannerBuyAndDemo += '</div>';
+   
     if ( typeof QTags != 'undefined' ) {
         QTags.addButton( 'eg_paragraph', 'p', '<p>', '</p>', 'p' );
         QTags.addButton( 'eg_pre', 'pre','<pre lang="php">', '</pre>', 'q' );
         QTags.addButton( 'eg_listImages', 'listImages','<ul class="ul-list-images">', '</ul>', 'listImages' );
+        QTags.addButton( 'eg_bannerbuydemo', 'bannerBuyAndDemo', _bannerBuyAndDemo, '', 'bannerBuyAndDemo' );
     }  
 </script>
 <?php
@@ -206,18 +230,26 @@ function statistic() {
 }
 
 function createReferral() {
-    $_domain = "http://" . $_SERVER["HTTP_HOST"];
-    //$_arr_domain = array($_domain, );
-    if ( isset($_SERVER["HTTP_REFERER"]) and !empty($_SERVER["HTTP_REFERER"]) ) {
-        if(substr($_SERVER["HTTP_REFERER"],0,strlen($_domain)) != $_domain) {
-        // # Проверяем куки и если нужно устанавливаем
-            setcookie("orders_referer", $_SERVER['HTTP_REFERER'], time() + 86400, '/' ); // 600 - 1м. 86400 - 1д.
-        // setcookie("orders_referer", $_SERVER['HTTP_REFERER'], time() + 86400, '/' );
-        } elseif (!isset($_COOKIE['orders_referer']) 
-                or (isset($_COOKIE['orders_referer']) and empty($_COOKIE['orders_referer']))) {
-            setcookie("orders_referer", $_SERVER['HTTP_REFERER'], time() + 600, '/' );
-        }
-    }  
+    if (!empty($_SERVER["HTTP_REFERER"]) ) {
+        $_url = parse_url($_SERVER['HTTP_REFERER']);  
+        if(!isset($_COOKIE['orders_referer']) and isset($_url['host']) and !preg_match('/((.*)\.|^)pumpic\.com/i', trim($_url['host'])) ) {
+            setcookie("orders_referer", $_SERVER['HTTP_REFERER'], time() + 3600 * 24, '/', '.pumpic.com' );
+        } 
+    }     
+    
+    
+//    $_domain = "http://" . $_SERVER["HTTP_HOST"];
+//    //$_arr_domain = array($_domain, );
+//    if ( isset($_SERVER["HTTP_REFERER"]) and !empty($_SERVER["HTTP_REFERER"]) ) {
+//        if(substr($_SERVER["HTTP_REFERER"],0,strlen($_domain)) != $_domain) {
+//        // # Проверяем куки и если нужно устанавливаем
+//            setcookie("orders_referer", $_SERVER['HTTP_REFERER'], time() + 86400, '/' ); // 600 - 1м. 86400 - 1д.
+//        // setcookie("orders_referer", $_SERVER['HTTP_REFERER'], time() + 86400, '/' );
+//        } elseif (!isset($_COOKIE['orders_referer']) 
+//                or (isset($_COOKIE['orders_referer']) and empty($_COOKIE['orders_referer']))) {
+//            setcookie("orders_referer", $_SERVER['HTTP_REFERER'], time() + 600, '/' );
+//        }
+//    }  
 }
 
 

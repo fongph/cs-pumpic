@@ -36,6 +36,8 @@
 View, block, and limit text messages remotely."
             promoBuyBlock = "no"
             planPackageBuy = "yes"
+            block_video = "yes"
+            block_video_src = "http://www.youtube.com/embed/Atg0CbaytAY"
         }
         
          {include file='../includes/content/plans.tpl' }

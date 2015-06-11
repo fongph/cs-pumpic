@@ -549,3 +549,55 @@ legend {
 .pb10 {
     padding-bottom:10px;  
 }
+
+/* =================== iphone_parental_monitoring ========================= */
+.iphone_parental_monitoring #block-table-header .visual-text h1.title {
+    font-size: 32px;
+}
+@media (min-width: 992px) { 
+    .iphone_parental_monitoring .visual-images-right,
+    .ios-monitoring-software .visual-images-right,
+    .gps-wireless-tracking-phone .visual-images-right,
+    .mobile_sms_spy .visual-images-right{
+        padding-left: 60px;
+    } /* .iphone_parental_monitoring */
+}
+
+@media (min-width: 1200px) { 
+    .iphone_parental_monitoring .visual-images-right,
+    .ios-monitoring-software .visual-images-right,
+    .gps-wireless-tracking-phone .visual-images-right,
+    .mobile_sms_spy .visual-images-right {
+        padding-left: 60px;
+    } /* .iphone_parental_monitoring */
+}
+
+/* =================== ios-monitoring-software ========================= */
+/*.ios-monitoring-software #block-table-header .visual-text h1.title {
+    font-size: 32px;
+}*/
+/*@media (min-width: 992px) { 
+    .ios-monitoring-software .visual-images-right {
+        padding-left: 60px;
+    }
+}
+
+@media (min-width: 1200px) { 
+    .ios-monitoring-software .visual-images-right {
+        padding-left: 60px;
+    }
+}*/
+
+/* =================== gps-wireless-tracking-phone ========================= */
+
+/*@media (min-width: 992px) { 
+    .gps-wireless-tracking-phone .visual-images-right {
+        padding-left: 60px;
+    }
+}
+
+@media (min-width: 1200px) { 
+    .gps-wireless-tracking-phone .visual-images-right {
+        padding-left: 60px;
+    }
+}*/

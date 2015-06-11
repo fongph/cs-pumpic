@@ -10,10 +10,10 @@ require_once $_inc.'/lib/class.phpmail.php';
 
 $_mail = new Phpmail( $config['db_blog'] );
 
-$smarty->caching = false;
-$smarty->compile_check = false;
-$smarty->force_compile = false;
-$smarty->debugging = false;
+ $smarty->caching = false;
+ $smarty->compile_check = false;
+ $smarty->force_compile = false;
+ $smarty->debugging = false;
 
  
 // init function json

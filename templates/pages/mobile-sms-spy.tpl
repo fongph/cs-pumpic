@@ -27,18 +27,22 @@
         
     <!-- CONTENT -->
          {include file='../includes/content/info/info-promo.tpl'
-            imgUrl = "header_banners/bg_mobile_sms_spy.png"
+            imgUrl = "landings/bg_mobile_sms_spy_1.png"
             imgAlt = "SMS spy app"
             imgAlign = "right"
             imgVerticalAlign = "bottom"
+            collg="7"
             textAlign = "right"
             title = "SMS Monitoring App"
             description = "Follow your kids’ text message communication.<br />Monitor text content of SMS, MMS, and iMessages."
             promoBuyBlock = "no"
             listText = "monitor SMS messages sent and received|control contacts, block misgiving senders|prevent children from bullies and online predators"
-            planPackageBuy = "yes"    
+            planPackageBuy = "yes"   
+            block_video = "yes"
+            block_video_src = "http://www.youtube.com/embed/Atg0CbaytAY"
          }
-          
+        {* header_banners/bg_mobile_sms_spy.png *}
+        {* ?rel=0&wmode=transparent&fs=0&autoplay=1&modestbranding=1&autohide=1 *}
         {*listText = "monitor SMS messages sent and received|control contacts, block misgiving senders|prevent children from bullies and online predators"*}  
         
         {include file='../includes/content/plans.tpl'}

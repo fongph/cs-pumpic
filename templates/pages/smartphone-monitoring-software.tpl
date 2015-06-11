@@ -10,7 +10,7 @@
     {include file='../includes/content/fly/fly_blocks.tpl'}
     <!-- END FLY BLOCKS-->
     
-    <div class="wrapper block-smartphone">
+    <div class="wrapper block-smartphone smartphone-monitoring-software">
         <!-- TOP MENU -->
  	{include file='../includes/main/main-top-menu.tpl' 
             cache_id = "includes_main_main-top-menu"
@@ -38,6 +38,8 @@
             promoBuyBlock = "no"
             planPackageBuy = "yes"
             block_video = "no"
+            block_video = "yes"
+            block_video_src = "http://www.youtube.com/embed/Atg0CbaytAY"
         }
         
         {include file='../includes/content/plans.tpl' }

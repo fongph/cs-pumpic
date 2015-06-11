@@ -11,7 +11,7 @@ class CDb
 
     # @array,  The database settings
     private $settings;
-
+    
     # @bool ,  Connected to the database
     private $bConnected = false;
 

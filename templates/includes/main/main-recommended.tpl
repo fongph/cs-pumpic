@@ -1,5 +1,5 @@
 
-<div class="{if $blockBg}{$blockBg}{else}dark{/if}">
+<div class="{if isset($blockBg)}{$blockBg}{else}dark{/if}">
     <div class="container">
         
         <div class="row main-recommended text-center">

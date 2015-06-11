@@ -121,7 +121,7 @@
                                                     </i>SIM card change alert
                                                 </span>
                                             </div>
-                                        <div class="refund_10">
+                                        <div class="refund_new_11">
                                             <div class="wr_refund">
                                                 <div class="day10">
                                                     10-DAY <span class="d_green">Refund Policy</span>
@@ -133,7 +133,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="support_os"><div class="wr_support_os"><i class="icon-android d_green"></i> Android 2.2 - 5.1 <i class="icon-apple d_green"></i> iOS 6.0 - 8.3</div></div>
+                                        <div class="support_new_os"><div class="wr_support_new_os"><i class="icon-android d_green"></i> Android 2.2 - 5.1 <i class="icon-apple d_green"></i> iOS 6.0 - 8.3</div></div>
                                         </caption>
                                         <thead>
                                             <tr>

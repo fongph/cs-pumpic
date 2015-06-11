@@ -37,7 +37,10 @@
             promoBuyBlock = "no"
             listText = "view sent and received emails|keep track of mailing contact list|follow online registrations"
             planPackageBuy = "yes"
+            block_video = "yes"
+            block_video_src = "http://www.youtube.com/embed/Atg0CbaytAY"
          }
+         {*?rel=0&wmode=transparent&fs=0&autoplay=1&modestbranding=1&autohide=1*}
          {*listText = "view sent and received emails|keep track of mailing contact list|follow online registrations"*}    
         
         {include file='../includes/content/plans.tpl'}

@@ -22,7 +22,7 @@ if(isset($_POST['email']) and !$obj -> validateEmail($_POST['email'])) {
    $_result['_error']['email'] = "Invalid email format.";
 } else if(!empty($_POST['email']) and $_sID) {
      $_params = array(
-        'siteId' => $_sID,
+        'siteId' => SITE_ID,
         'email' => $_POST['email']
     );
 

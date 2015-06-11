@@ -17,7 +17,7 @@ $_request = (isset($_POST['price']) and !empty($_POST['price'])) ? $_POST['price
 if($_request['productID']) {
     // $_order ->setSession('pumpic_order', array('productID' => (int)$_request['productID']));
 
-    if($_request['productID'] and $obj -> getUserID()) {
+    if($_request['productID'] and $obj -> getUserIdByAuth()) {
         // $_order ->unsetSession('pumpic_order'); // clear session
         $_url = $obj -> createOrder((int)$_request['productID']);
         if($_url) {

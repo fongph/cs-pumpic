@@ -254,7 +254,7 @@ class ManagerUser extends Manager
     // method restore
     private function _restore(\ArrayAccess $params) 
     {
-        
+
         if($this -> has()) {
             $this -> lostPassword($params['siteId'], $params['email']);
             self::$_obj -> _respons['_success'] = true;
@@ -335,7 +335,7 @@ class ManagerUser extends Manager
     }
     
     // get UserID
-    public function getUserID() 
+    public function getUserIdByAuth() 
     {
         $user = $this -> getLoginUser();
         return (isset($user['id'])) ? $user['id'] : false;  

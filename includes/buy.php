@@ -4,7 +4,7 @@ $_inc = dirname(__FILE__); // includes
 
 require_once $_inc.'/lib/users/Order.php';
 $order   = new includes\lib\users\Order;
-$user_id = $order->getUserID();
+$user_id = $order->getUserIdByAuth();
 $_request= (isset($_POST['price']) and !empty($_POST['price'])) ? $_POST['price']: false;
 //$_referer = (isset($_POST['referer']) and !empty($_POST['referer'])) ? $_POST['referer']: false;
 // $_productID = (!empty($_GET['productID'])) ? (int)$_GET['productID'] : false;

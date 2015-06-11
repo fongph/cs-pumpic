@@ -295,7 +295,7 @@ class Order extends ManagerUser
     // registration or store
     public function createOrder( $productID, $testMode = false ) {
         if($this -> hasOrder($productID)) {
-            $user_id = $this ->getUserID();
+            $user_id = $this ->getUserIdByAuth();
             return $this -> _createOrder( $user_id ? $user_id : null, $productID, $testMode );
         } else {
             return false;

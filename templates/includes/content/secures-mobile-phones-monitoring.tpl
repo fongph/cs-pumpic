@@ -1,4 +1,4 @@
-<div class="{if $blockBg}{$blockBg}{else}dark{/if}">
+<div class="{if isset($blockBg)}{$blockBg}{else}dark{/if}">
         <div class="container">
                 <h2 class="text-center">Android and iOS Smartphones and Tablets Monitoring</h2>
                 <div class="row">

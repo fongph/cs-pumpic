@@ -37,7 +37,10 @@
             promoBuyBlock = "no"
             listText = "control cell phone usage|follow online activity|track routes and location"
             planPackageBuy = "yes"
+            block_video = "yes"
+            block_video_src = "http://www.youtube.com/embed/Atg0CbaytAY"
           }
+          {* ?rel=0&wmode=transparent&fs=0&autoplay=1&modestbranding=1&autohide=1 *}
          {*listText = "control cell phone usage|follow online activity|track routes and location"*}    
         
         {include file='../includes/content/plans.tpl'}

@@ -9,7 +9,7 @@
     {include file='../includes/content/fly/fly_blocks.tpl'}
     <!-- END FLY BLOCKS-->
     
-    <div class="wrapper block-online">
+    <div class="wrapper block-online online-monitoring-software">
 	
 	<!-- TOP MENU -->
 	{include file='../includes/main/main-top-menu.tpl'
@@ -28,9 +28,10 @@
         
     <!-- CONTENT -->
          {include file='../includes/content/info/info-promo.tpl'
-            imgUrl = "/landing_features/bg_features_call_515x267.png"
+            imgUrl = "landings/bg_features_call.png"
             imgAlt = "online mobile monitoring"
             imgAlign = "right"
+            imgVerticalAlign = "center"
             textAlign = "right"
             title = "Remote Smartphone Monitoring App"
             description = "Pumpic helps track cell phone activity.<br/>
@@ -38,7 +39,11 @@ Monitor mobile devices remotely with Pumpic."
             promoBuyBlock = "no"
             listText = "Follow Calls and SMS|Track GPS location|Monitor online activity"
             planPackageBuy = "yes"
+            block_video = "yes"
+            block_video_src = "http://www.youtube.com/embed/Atg0CbaytAY"
         }
+        {* landing_features/bg_features_call_515x267.png *}
+        {* ?rel=0&wmode=transparent&fs=0&autoplay=1&modestbranding=1&autohide=1 *}
         {*listText = "Follow Calls and SMS|Track GPS location|Monitor online activity"*}
         
         {include file='../includes/content/plans.tpl'}

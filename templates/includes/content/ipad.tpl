@@ -2,7 +2,7 @@
 {assign 'showViewDemo' 'true'}
 {assign 'showFreeTrial' 'false'}
 
-<div class="{if $blockBg}{$blockBg}{else}dark{/if}">
+<div class="{if isset($blockBg)}{$blockBg}{else}dark{/if}">
     <div class="container">
             <div class="row">
                     <div class="col-sm-5 col-md-5 col-lg-5 col-sm-offset-1 col-md-offset-1 col-lg-offset-1">
@@ -40,7 +40,7 @@
                             <div class="ipad-text">
                                     <h2 class="{if $textAlign == "left"}text-left{elseif $textAlign == "center"}text-center{elseif $textAlign == "right"}text-right{/if}">{if $title}{$title}{else}Easy-to-Use Control Panel{/if}</h2>
                                     <p>
-                                        {if $description}
+                                        {if isset($description)}
                                             {$description}
                                         {else}    
                                         {*Try Control Panel demo to see Pumpic for Android in use.

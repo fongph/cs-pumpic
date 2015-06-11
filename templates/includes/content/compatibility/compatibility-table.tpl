@@ -1,12 +1,12 @@
 <!-- BLOCK COMPATIBILITY -->
-<div id="compatibility-table" class="{if $blockBg}{$blockBg}{else}dark{/if}">
+<div id="compatibility-table" class="{if isset($blockBg)}{$blockBg}{else}dark{/if}">
     <div class="container">
-        <h2 class="text-center">{if $title}{$title}{else}Compatibility{/if}</h2>
+        <h2 class="text-center">{if isset($title)}{$title}{else}Compatibility{/if}</h2>
     
         <div class="row">
 
             <div class="table-col-8 table-sm-col-3 model-center">
-                {if $descriptions}
+                {if isset($descriptions)}
                     <article>{$descriptions}</article>
                 {/if}
                 

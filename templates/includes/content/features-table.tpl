@@ -43,12 +43,12 @@
         </div>
 </div>*}
 
-<div class="{if $blockBg}{$blockBg}{else}dark{/if}">
+<div class="{if isset($blockBg)}{$blockBg}{else}dark{/if}">
         <div class="container">
-                <h2 class="text-center">{if $title}{$title}{else}Pumpic Features{/if}</h2>
+                <h2 class="text-center">{if isset($title)}{$title}{else}Pumpic Features{/if}</h2>
                 <div class="row">
                     <div id="table-container" class="table-col-3 table-md-col-3 table-sm-col-3">
-                        <article>{if $description}{$description}{else}Pumpic is reasonably improved mobile phone tracking software, which comes with a large range of monitoring functions. 
+                        <article>{if isset($description)}{$description}{else}Pumpic is reasonably improved mobile phone tracking software, which comes with a large range of monitoring functions. 
                             They will help you keep track of the target device quickly and quite.{/if}</article>
                         <section>
                             {include file='../content/table-items/feature-items.tpl'}    

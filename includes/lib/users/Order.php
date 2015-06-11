@@ -311,4 +311,22 @@ class Order extends ManagerUser
         }
     }
     
+    public function _arsort( array $arr ) {
+        $sort = array();
+        $result = array();
+        foreach($arr as $_item) :
+            $sort[] = $_item['period'];
+        endforeach;
+        asort( $sort );
+
+        foreach($sort as $_period) {
+            foreach($arr as $_item) :
+               if((int)$_period == (int)$_item['period']) 
+                    $result[] = $_item;  
+            endforeach; 
+        }    
+
+        return $result;
+    }
+    
 }

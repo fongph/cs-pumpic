@@ -47,7 +47,7 @@ require dirname( __DIR__ ).'/vendor/autoload.php';
 
 $mu = new MU();
 $compatibility = new Compatibility(di()->get('dbPhones'));
-
+ 
 if( in_array($_uri, $os_url) ) {
     $_os = false;    
     switch ($_uri):

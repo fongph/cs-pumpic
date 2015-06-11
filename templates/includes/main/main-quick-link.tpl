@@ -1,4 +1,4 @@
-<div class="{if $blockBg}{$blockBg}{else}dark{/if}">
+<div class="{if isset($blockBg)}{$blockBg}{else}dark{/if}">
         <div class="container">
                 <div class="row col-lg-offset-1">
                         <div class="col-sm-8 col-md-8 col-lg-8">

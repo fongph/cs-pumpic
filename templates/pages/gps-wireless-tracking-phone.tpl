@@ -1,4 +1,4 @@
-{closeAccess}
+{*closeAccess*}
 {include file='../includes/main/main-header.tpl'
     robots="yes" 
     title="Track iPhones and Android Smartphones via any Mobile Carrier or Operator"
@@ -10,7 +10,7 @@
     {include file='../includes/content/fly/fly_blocks.tpl'}
     <!-- END FLY BLOCKS-->
     
-    <div class="wrapper {*bg_bottom_images*}block-mobile-operators">
+    <div class="wrapper {*bg_bottom_images*}block-mobile-operators gps-wireless-tracking-phone">
         <!-- TOP MENU -->
 
 	{include file='../includes/main/main-top-menu.tpl'
@@ -31,7 +31,7 @@
        <!-- CONTENT -->
         {include file='../includes/content/info/info-promo.tpl'
             collg = "7"
-            imgUrl = "header_banners/banner-header-mobile-operators.png"
+            imgUrl = "landings/gps-wireless-tracking-phone_v1.png"
             imgAlt = "Compatible with iOS & Android Supported by All Mobile Carriers"
             imgAlign = "right"
             textAlign = "right"
@@ -42,7 +42,12 @@
             planPackageBuy = "yes"
             blockTrial = "no"
             blockQuickAndSimple = "no"
+            block_video = "yes"
+            block_video_src = "http://www.youtube.com/embed/Atg0CbaytAY"
         } {* bg_features_call_437x226.png *}
+        
+        {* header_banners/banner-header-mobile-operators.png *}
+        {* ?rel=0&wmode=transparent&fs=0&autoplay=1&modestbranding=1&autohide=1 *}
         
         {include file='../includes/content/plans.tpl'}
 

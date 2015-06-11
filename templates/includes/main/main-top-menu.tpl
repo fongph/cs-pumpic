@@ -35,7 +35,7 @@
                                 <a href="/">Home</a>
                             </li>
                             
-                            {if 'iphone-tracking-software.html,iphone-with-jailbreak-monitoring.html,icloud-iphone-without-jailbreak-monitoring.html'|getCloseLink}
+                            {if 'iphone-tracking-software.html,iphone-with-jailbreak-monitoring.html,icloud-iphone-without-jailbreak-monitoring.html'|@getCloseLink}
                             <li {if $topmenu_active=='all-features'} class="active"{/if}>
                                 <a href="/all-features.html">Features</a>
                             </li>

@@ -22608,7 +22608,7 @@ body {
     }
 }
 
-@media only screen and (max-width: 410px) {
+@media only screen and (max-width: 468px) {
     .visual-images-right.box-video-constructors .mobile-video-arrows { 
         display: block;
     }

@@ -27,7 +27,7 @@ function dispatch($urlParams, $config){
             
             //if(!isset($_COOKIE['orders_referer'])) {
                 if(!isset($_COOKIE['orders_referer']) and isset($_url['host']) and !preg_match('/((.*)\.|^)pumpic\.com/i', trim($_url['host'])) ) {
-                    setcookie("orders_referer", $_SERVER['HTTP_REFERER'], time() + 3600 * 1, '/', '.pumpic.com' );
+                    setcookie("orders_referer", $_SERVER['HTTP_REFERER'], time() + 3600 * 24, '/', '.pumpic.com' );
                 } 
             //}
             
@@ -43,7 +43,7 @@ function dispatch($urlParams, $config){
         // landing
         if (!isset($_COOKIE['landing']) && isset($_SERVER['HTTP_HOST'], $_SERVER['REQUEST_URI'])) {
             $url = 'http' . (isset($_SERVER['HTTPS']) ? 's' : '') . '://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
-            setcookie("landing", $url, time() + 3600 * 1, '/', '.pumpic.com');
+            setcookie("landing", $url, time() + 3600 * 24, '/', '.pumpic.com');
         }
         
         
@@ -952,7 +952,8 @@ function hasAccess() {
 }
 
 /* isPhone */
-function smarty_modifier_isPhone($params) { 
+function smarty_modifier_isPhone() { // $params, $template
+    // $params
     require_once 'lib/users/ManagerUser.php';
     $obj = new includes\lib\users\ManagerUser( array() );
     $phone = $obj ->isPhone();

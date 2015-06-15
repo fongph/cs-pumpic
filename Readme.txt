@@ -27,4 +27,4 @@ terminal:
 Run:
 > grunt 
 OR
-> grunt watch && grunt
+> grunt watch

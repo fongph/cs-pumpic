@@ -1496,7 +1496,8 @@ $(document).ready(function(){
              onclick: true,
              onsubmit: true,
              focusInvalid: false,
-             focusCleanup: false, 
+             focusCleanup: false,
+             debug: false,
              messages: {
                 'email': {
                     required: "The Email field is empty.",

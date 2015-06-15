@@ -6623,6 +6623,7 @@ currencyHandler = {
       var $this = {}, $rates = {}, $_html = "";
       
       var $_settings = {
+          'debug': false,
           'api_key': '', // app_id=
           'host': '/currency.html',
           'currBase': 'USD',
@@ -6690,7 +6691,8 @@ currencyHandler = {
         },
         
         _die: function(msg) {
-            //console.log( msg );
+            if($_settings.debug)
+                console.log( msg );
         },
         
         /* ==== init cookie ====== */
@@ -8666,7 +8668,8 @@ $(document).ready(function(){
              onclick: true,
              onsubmit: true,
              focusInvalid: false,
-             focusCleanup: false, 
+             focusCleanup: false,
+             debug: false,
              messages: {
                 'email': {
                     required: "The Email field is empty.",

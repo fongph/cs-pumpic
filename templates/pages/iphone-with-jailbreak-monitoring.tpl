@@ -122,7 +122,7 @@
                                         <tr>
                                             <th>
                                             <div class="column-relative">
-                                                <div class="table_title {*table_title_v2*} border-top-bottom">
+                                                <div class="table_title table_title_v2 border-top-bottom">
                                                     <h2 class="h2-sm">Features</h2>
                                                 </div>
                                                     <div class="basic_wr row-pricing-panel">
@@ -206,7 +206,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="priceb border-none-sm">
-                                                        <div class="table_title {*table_title_v2*} show_basic_features border-top-bottom">
+                                                        <div class="table_title table_title_v2 show_basic_features border-top-bottom">
                                                             <h2 class="h2-sm">Features</h2>
                                                         </div>
                                                             <div class="basic_fe reset-list">
@@ -365,7 +365,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="pricep ">
-                                                        <div class="table_title {*table_title_v2*} show_basic_features border-top-bottom">
+                                                        <div class="table_title table_title_v2 show_basic_features border-top-bottom">
                                                             <h2 class="h2-sm">Features</h2>
                                                         </div>
                                                             <div class="premium_fe reset-list">

@@ -1,6 +1,6 @@
 <?php
- //ini_set('display_errors', 1);
- //error_reporting(-1);
+// ini_set('display_errors', 1);
+// error_reporting(-1);
 global $config;
 $config = array(
     'environment' => 'production',
@@ -53,10 +53,12 @@ $config = array(
                 'restore.html'  => 'restore.php',
             
                 // pricing
-                'store.html'  => 'pricing2.php',
+                // 'store.html'  => 'pricing2.php', // old
                 'store-trial.html'  => 'store-trial.php',
                 'store-test.html'  => 'store-test.php',
-                'apps-store.html'  => 'apps-store.php',
+            
+                'store.html'  => 'apps-store.php',
+                
                 //'pricing2.html'  => 'pricing2.php', 
                 // opening-soon-thanks.html
                 'opening-soon-thanks.html' => 'opening-soon-thanks.php',

@@ -31,17 +31,17 @@
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav">
-                            <li {if $topmenu_active=='home'} class="active"{/if}>
+                            <li {if isset($topmenu_active) && $topmenu_active=='home'} class="active"{/if}>
                                 <a href="/">Home</a>
                             </li>
                             
                             {if 'iphone-tracking-software.html,iphone-with-jailbreak-monitoring.html,icloud-iphone-without-jailbreak-monitoring.html'|@getCloseLink}
-                            <li {if $topmenu_active=='all-features'} class="active"{/if}>
+                            <li {if isset($topmenu_active) && $topmenu_active=='all-features'} class="active"{/if}>
                                 <a href="/all-features.html">Features</a>
                             </li>
                             {/if}
                             
-                            <li class="{if $topmenu_active=='pricing'}active{/if} ga-action-click" 
+                            <li class="{if isset($topmenu_active) && $topmenu_active=='pricing'}active{/if} ga-action-click" 
                                 id="header-menu-store-link"
                                 ga-action ="click"
                                 ga-category="store link"
@@ -50,14 +50,14 @@
                                 <a href="/store.html">Store</a>
                             </li>
                             
-                            <li {if $topmenu_active=='compatibility'} class="active"{/if}>
+                            <li {if isset($topmenu_active) && $topmenu_active=='compatibility'} class="active"{/if}>
                                 <a href="/compatibility/">Compatibility</a>
                             </li>
                             
                             {*<li {if $topmenu_active=='how-to'} class="active"{/if}>
                                 <a href="/how-to.html">How to</a>
                             </li>*}
-                            <li {if $topmenu_active=='faq'} class="active"{/if}>
+                            <li {if isset($topmenu_active) && $topmenu_active=='faq'} class="active"{/if}>
                                 <a href="/faq.html">Help & Contacts</a>
                             </li>
                             

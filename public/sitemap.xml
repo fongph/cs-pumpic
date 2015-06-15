@@ -1,239 +1,296 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-
+<?xml-stylesheet type="text/css" href="http://pumpic.com/security/wp-content/plugins/simple-wp-sitemap/css/xml.css"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-  <loc>http://pumpic.com/</loc>
+	<loc>http://pumpic.com/security/</loc>
+	<lastmod>2015-06-12T11:14:16+00:00</lastmod>
 </url>
 <url>
-  <loc>http://pumpic.com/compatibility/</loc>
+	<loc>http://pumpic.com/security/how-to-tell-if-your-kid-has-online-addiction/</loc>
+	<lastmod>2015-06-10T08:58:20+00:00</lastmod>
 </url>
 <url>
-  <loc>http://pumpic.com/store.html</loc>
+	<loc>http://pumpic.com/security/what-to-do-if-your-child-is-a-game-addict/</loc>
+	<lastmod>2015-01-22T16:26:26+00:00</lastmod>
 </url>
 <url>
-  <loc>http://pumpic.com/all-features.html</loc>
+	<loc>http://pumpic.com/security/is-facebook-a-secure-place-for-your-child/</loc>
+	<lastmod>2015-01-22T16:26:33+00:00</lastmod>
 </url>
 <url>
-  <loc>http://pumpic.com/faq.html</loc>
+	<loc>http://pumpic.com/security/how-to-resist-online-predators/</loc>
+	<lastmod>2015-01-22T16:26:48+00:00</lastmod>
 </url>
 <url>
-  <loc>http://pumpic.com/how-to.html</loc>
+	<loc>http://pumpic.com/security/10-signs-of-cyberbullying/</loc>
+	<lastmod>2015-01-22T16:25:15+00:00</lastmod>
 </url>
 <url>
-  <loc>http://pumpic.com/contact-us.html</loc>
+	<loc>http://pumpic.com/security/identity-security-tips-dating-advice/</loc>
+	<lastmod>2015-01-22T16:26:57+00:00</lastmod>
 </url>
 <url>
-  <loc>http://pumpic.com/iphone-tracking-software.html</loc>
+	<loc>http://pumpic.com/security/advanced-child-cell-phone-monitoring-app/</loc>
+	<lastmod>2015-06-05T07:20:40+00:00</lastmod>
 </url>
 <url>
-  <loc>http://pumpic.com/mobile-sms-spy.html</loc>
+	<loc>http://pumpic.com/security/what-to-do-if-your-identity-is-stolen/</loc>
+	<lastmod>2015-01-22T16:30:20+00:00</lastmod>
 </url>
 <url>
-  <loc>http://pumpic.com/keylogging-software.html</loc>
+	<loc>http://pumpic.com/security/protecting-yourself-from-identity-theft/</loc>
+	<lastmod>2015-06-04T14:14:09+00:00</lastmod>
 </url>
 <url>
-  <loc>http://pumpic.com/email-monitoring-software.html</loc>
+	<loc>http://pumpic.com/security/wearable-tracking-devices-security-risks/</loc>
+	<lastmod>2015-01-22T16:33:33+00:00</lastmod>
 </url>
 <url>
-  <loc>http://pumpic.com/reviews/</loc>
+	<loc>http://pumpic.com/security/how-to-jailbreak-iphone-3gs-4-4s-ios-6/</loc>
+	<lastmod>2015-01-22T16:40:32+00:00</lastmod>
 </url>
 <url>
-  <loc>http://pumpic.com/reviews/pumpic.html</loc>
+	<loc>http://pumpic.com/security/child-smartphone-monitoring-software/</loc>
+	<lastmod>2015-03-02T07:46:01+00:00</lastmod>
 </url>
 <url>
-  <loc>http://pumpic.com/reviews/mobileforcefield-mobile-monitoring.html</loc>
+	<loc>http://pumpic.com/security/how-to-jailbreak-iphone-4-4s-5-5s-5c-ios-7/</loc>
+	<lastmod>2015-01-22T16:36:39+00:00</lastmod>
 </url>
 <url>
-  <loc>http://pumpic.com/reviews/mmguardian-mobile-monitoring.html</loc>
+	<loc>http://pumpic.com/</loc>
+	<lastmod>2015-06-02T08:09:24+00:00</lastmod>
 </url>
 <url>
-  <loc>http://pumpic.com/reviews/funamo-mobile-monitoring.html</loc>
+	<loc>http://pumpic.com/compatibility/</loc>
+	<lastmod>2015-06-02T08:09:24+00:00</lastmod>
 </url>
 <url>
-  <loc>http://pumpic.com/reviews/parentkit-mobile-monitoring.html</loc>
+	<loc>http://pumpic.com/store.html</loc>
+	<lastmod>2015-06-02T08:09:24+00:00</lastmod>
 </url>
 <url>
-  <loc>http://pumpic.com/reviews/screentime-labs-mobile-monitoring.html</loc>
+	<loc>http://pumpic.com/all-features.html</loc>
+	<lastmod>2015-06-02T08:09:24+00:00</lastmod>
 </url>
 <url>
-  <loc>http://pumpic.com/reviews/safetyweb-mobile-monitoring.html</loc>
+	<loc>http://pumpic.com/faq.html</loc>
+	<lastmod>2015-06-02T08:09:24+00:00</lastmod>
 </url>
 <url>
-  <loc>http://pumpic.com/reviews/txtwatcher-mobile-monitoring.html</loc>
+	<loc>http://pumpic.com/how-to.html</loc>
+	<lastmod>2015-06-02T08:09:24+00:00</lastmod>
 </url>
 <url>
-  <loc>http://pumpic.com/reviews/ignorenomore-mobile-monitoring.html</loc>
+	<loc>http://pumpic.com/contact-us.html</loc>
+	<lastmod>2015-06-02T08:09:24+00:00</lastmod>
 </url>
 <url>
-  <loc>http://pumpic.com/reviews/care4teen-mobile-monitoring.html</loc>
+	<loc>http://pumpic.com/iphone-tracking-software.html</loc>
+	<lastmod>2015-06-02T08:09:24+00:00</lastmod>
 </url>
 <url>
-  <loc>http://pumpic.com/security/</loc>
+	<loc>http://pumpic.com/mobile-sms-spy.html</loc>
+	<lastmod>2015-06-02T08:09:24+00:00</lastmod>
 </url>
 <url>
-  <loc>http://pumpic.com/how-to-monitor-social-networks.html</loc>
+	<loc>http://pumpic.com/keylogging-software.html</loc>
+	<lastmod>2015-06-02T08:09:24+00:00</lastmod>
 </url>
 <url>
-  <loc>http://pumpic.com/android-parental-monitoring.html</loc>
+	<loc>http://pumpic.com/email-monitoring-software.html</loc>
+	<lastmod>2015-06-02T08:09:24+00:00</lastmod>
 </url>
 <url>
-  <loc>http://pumpic.com/iphone-parental-monitoring.html</loc>
+	<loc>http://pumpic.com/reviews/</loc>
+	<lastmod>2015-06-02T08:09:24+00:00</lastmod>
 </url>
 <url>
-  <loc>http://pumpic.com/security/how-to-jailbreak-iphone-4-4s-5-5s-5c-ios-7/</loc>
+	<loc>http://pumpic.com/reviews/pumpic.html</loc>
+	<lastmod>2015-06-02T08:09:24+00:00</lastmod>
 </url>
 <url>
-  <loc>http://pumpic.com/security/how-to-monitor-your-kids-facebook/</loc>
+	<loc>http://pumpic.com/reviews/mobileforcefield-mobile-monitoring.html</loc>
+	<lastmod>2015-06-02T08:09:24+00:00</lastmod>
 </url>
 <url>
-  <loc>http://pumpic.com/security/how-to-monitor-you-kids-viber/</loc>
+	<loc>http://pumpic.com/reviews/mmguardian-mobile-monitoring.html</loc>
+	<lastmod>2015-06-02T08:09:24+00:00</lastmod>
 </url>
 <url>
-  <loc>http://pumpic.com/security/how-to-monitor-you-kids-skype/</loc>
+	<loc>http://pumpic.com/reviews/funamo-mobile-monitoring.html</loc>
+	<lastmod>2015-06-02T08:09:24+00:00</lastmod>
 </url>
 <url>
-  <loc>http://pumpic.com/security/how-to-monitor-you-kids-instagram/</loc>
+	<loc>http://pumpic.com/reviews/parentkit-mobile-monitoring.html</loc>
+	<lastmod>2015-06-02T08:09:24+00:00</lastmod>
 </url>
 <url>
-  <loc>http://pumpic.com/security/how-to-tell-if-your-kid-has-online-addiction/</loc>
+	<loc>http://pumpic.com/reviews/screentime-labs-mobile-monitoring.html</loc>
+	<lastmod>2015-06-02T08:09:24+00:00</lastmod>
 </url>
 <url>
-  <loc>http://pumpic.com/security/what-to-do-if-your-child-is-a-game-addict/</loc>
+	<loc>http://pumpic.com/reviews/safetyweb-mobile-monitoring.html</loc>
+	<lastmod>2015-06-02T08:09:24+00:00</lastmod>
 </url>
 <url>
-  <loc>http://pumpic.com/security/is-facebook-a-secure-place-for-your-child/</loc>
+	<loc>http://pumpic.com/reviews/txtwatcher-mobile-monitoring.html</loc>
+	<lastmod>2015-06-02T08:09:24+00:00</lastmod>
 </url>
 <url>
-  <loc>http://pumpic.com/security/how-to-resist-online-predators/</loc>
+	<loc>http://pumpic.com/reviews/ignorenomore-mobile-monitoring.html</loc>
+	<lastmod>2015-06-02T08:09:24+00:00</lastmod>
 </url>
 <url>
-  <loc>http://pumpic.com/security/10-signs-of-cyberbullying/</loc>
+	<loc>http://pumpic.com/reviews/care4teen-mobile-monitoring.html</loc>
+	<lastmod>2015-06-02T08:09:24+00:00</lastmod>
 </url>
 <url>
-  <loc>http://pumpic.com/security/identity-security-tips-dating-advice/</loc>
+	<loc>http://pumpic.com/how-to-monitor-social-networks.html</loc>
+	<lastmod>2015-06-02T08:09:24+00:00</lastmod>
 </url>
 <url>
-  <loc>http://pumpic.com/security/page/2/</loc>
+	<loc>http://pumpic.com/android-parental-monitoring.html</loc>
+	<lastmod>2015-06-02T08:09:24+00:00</lastmod>
 </url>
 <url>
-  <loc>http://pumpic.com/security/category/children/</loc>
+	<loc>http://pumpic.com/iphone-parental-monitoring.html</loc>
+	<lastmod>2015-06-02T08:09:24+00:00</lastmod>
 </url>
 <url>
-  <loc>http://pumpic.com/security/category/security/</loc>
+	<loc>http://pumpic.com/compatibility/apple-iphone-3g/</loc>
+	<lastmod>2015-06-02T08:09:24+00:00</lastmod>
 </url>
 <url>
-  <loc>http://pumpic.com/security/category/tutorials/</loc>
+	<loc>http://pumpic.com/compatibility/apple-iphone-4/</loc>
+	<lastmod>2015-06-02T08:09:24+00:00</lastmod>
 </url>
 <url>
-  <loc>http://pumpic.com/security/advanced-child-cell-phone-monitoring-app/</loc>
+	<loc>http://pumpic.com/compatibility/apple-iphone-4s/</loc>
+	<lastmod>2015-06-02T08:09:24+00:00</lastmod>
 </url>
 <url>
-  <loc>http://pumpic.com/security/child-smartphone-monitoring-software/</loc>
+	<loc>http://pumpic.com/compatibility/apple-iphone-5/</loc>
+	<lastmod>2015-06-02T08:09:24+00:00</lastmod>
 </url>
 <url>
-  <loc>http://pumpic.com/security/how-to-jailbreak-iphone-3gs-4-4s-ios-6/</loc>
+	<loc>http://pumpic.com/compatibility/apple-iphone-5s/</loc>
+	<lastmod>2015-06-02T08:09:24+00:00</lastmod>
 </url>
 <url>
-  <loc>http://pumpic.com/security/what-to-do-if-your-identity-is-stolen/</loc>
+	<loc>http://pumpic.com/compatibility/apple-iphone-6-plus/</loc>
+	<lastmod>2015-06-02T08:09:24+00:00</lastmod>
 </url>
 <url>
-  <loc>http://pumpic.com/security/protecting-yourself-from-identity-theft/</loc>
+	<loc>http://pumpic.com/compatibility/apple-iphone-6/</loc>
+	<lastmod>2015-06-02T08:09:24+00:00</lastmod>
 </url>
 <url>
-  <loc>http://pumpic.com/security/wearable-tracking-devices-security-risks/</loc>
+	<loc>http://pumpic.com/compatibility/htc-one-m8/</loc>
+	<lastmod>2015-06-02T08:09:24+00:00</lastmod>
 </url>
 <url>
-  <loc>http://pumpic.com/compatibility/apple-iphone-3g/</loc>
+	<loc>http://pumpic.com/compatibility/lg-g3/</loc>
+	<lastmod>2015-06-02T08:09:24+00:00</lastmod>
 </url>
 <url>
-  <loc>http://pumpic.com/compatibility/apple-iphone-4/</loc>
+	<loc>http://pumpic.com/compatibility/motorola-milestone-droid/</loc>
+	<lastmod>2015-06-02T08:09:24+00:00</lastmod>
 </url>
 <url>
-  <loc>http://pumpic.com/compatibility/apple-iphone-4s/</loc>
+	<loc>http://pumpic.com/compatibility/motorola-xt701/</loc>
+	<lastmod>2015-06-02T08:09:24+00:00</lastmod>
 </url>
 <url>
-  <loc>http://pumpic.com/compatibility/apple-iphone-5/</loc>
+	<loc>http://pumpic.com/compatibility/samsung-galaxy-note-4/</loc>
+	<lastmod>2015-06-02T08:09:24+00:00</lastmod>
 </url>
 <url>
-  <loc>http://pumpic.com/compatibility/apple-iphone-5s/</loc>
+	<loc>http://pumpic.com/compatibility/samsung-galaxy-s5/</loc>
+	<lastmod>2015-06-02T08:09:24+00:00</lastmod>
 </url>
 <url>
-  <loc>http://pumpic.com/compatibility/apple-iphone-6-plus/</loc>
+	<loc>http://pumpic.com/compatibility/samsung-gt-i9000-galaxy-s/</loc>
+	<lastmod>2015-06-02T08:09:24+00:00</lastmod>
 </url>
 <url>
-  <loc>http://pumpic.com/compatibility/apple-iphone-6/</loc>
+	<loc>http://pumpic.com/compatibility/samsung-gt-i9100-galaxy-s-ii/</loc>
+	<lastmod>2015-06-02T08:09:24+00:00</lastmod>
 </url>
 <url>
-  <loc>http://pumpic.com/compatibility/htc-one-m8/</loc>
+	<loc>http://pumpic.com/iphone-with-jailbreak-monitoring.html</loc>
+	<lastmod>2015-06-02T08:09:24+00:00</lastmod>
 </url>
 <url>
-  <loc>http://pumpic.com/compatibility/lg-g3/</loc>
+	<loc>http://pumpic.com/icloud-iphone-without-jailbreak-monitoring.html</loc>
+	<lastmod>2015-06-02T08:09:24+00:00</lastmod>
 </url>
 <url>
-  <loc>http://pumpic.com/compatibility/motorola-milestone-droid/</loc>
+	<loc>http://pumpic.com/child-online-mobile-security.html</loc>
+	<lastmod>2015-06-02T08:09:24+00:00</lastmod>
 </url>
 <url>
-  <loc>http://pumpic.com/compatibility/motorola-xt701/</loc>
+	<loc>http://pumpic.com/gps-wireless-tracking-phone.html</loc>
+	<lastmod>2015-06-02T13:03:04+00:00</lastmod>
 </url>
 <url>
-  <loc>http://pumpic.com/compatibility/samsung-galaxy-note-4/</loc>
+	<loc>http://pumpic.com/android-monitoring-software.html</loc>
+	<lastmod>2015-06-02T13:04:15+00:00</lastmod>
 </url>
 <url>
-  <loc>http://pumpic.com/compatibility/samsung-galaxy-s5/</loc>
+	<loc>http://pumpic.com/call-monitoring-software.html</loc>
+	<lastmod>2015-06-02T13:04:51+00:00</lastmod>
 </url>
 <url>
-  <loc>http://pumpic.com/compatibility/samsung-gt-i9000-galaxy-s/</loc>
+	<loc>http://pumpic.com/free-trial.html</loc>
+	<lastmod>2015-06-02T13:05:39+00:00</lastmod>
 </url>
 <url>
-  <loc>http://pumpic.com/compatibility/samsung-gt-i9100-galaxy-s-ii/</loc>
+	<loc>http://pumpic.com/gps-and-geofencing.html</loc>
+	<lastmod>2015-06-02T13:06:17+00:00</lastmod>
 </url>
 <url>
-  <loc>http://pumpic.com/iphone-with-jailbreak-monitoring.html</loc>
+	<loc>http://pumpic.com/how-to.html</loc>
+	<lastmod>2015-06-02T08:09:24+00:00</lastmod>
 </url>
 <url>
-  <loc>http://pumpic.com/icloud-iphone-without-jailbreak-monitoring.html</loc>
+	<loc>http://pumpic.com/ios-monitoring-software.html</loc>
+	<lastmod>2015-06-02T13:08:09+00:00</lastmod>
 </url>
 <url>
-  <loc>http://pumpic.com/child-online-mobile-security.html</loc>
+	<loc>http://pumpic.com/online-monitoring-software.html</loc>
+	<lastmod>2015-06-02T13:08:09+00:00</lastmod>
 </url>
 <url>
-  <loc>http://pumpic.com/gps-wireless-tracking-phone.html</loc>
+	<loc>http://pumpic.com/policy.html</loc>
+	<lastmod>2015-06-02T13:10:03+00:00</lastmod>
 </url>
 <url>
-  <loc>http://pumpic.com/android-monitoring-software.html</loc>
+	<loc>http://pumpic.com/prevent-online-dangers.html</loc>
+	<lastmod>2015-06-02T13:10:03+00:00</lastmod>
 </url>
 <url>
-  <loc>http://pumpic.com/call-monitoring-software.html</loc>
+	<loc>http://pumpic.com/smartphone-monitoring-software.html</loc>
+	<lastmod>2015-06-02T13:10:03+00:00</lastmod>
 </url>
 <url>
-  <loc>http://pumpic.com/free-trial.html</loc>
+	<loc>http://pumpic.com/sms-monitoring-software.html</loc>
+	<lastmod>2015-06-02T13:10:03+00:00</lastmod>
 </url>
 <url>
-  <loc>http://pumpic.com/gps-and-geofencing.html</loc>
+	<loc>http://pumpic.com/sms-monitoring-software2.html</loc>
+	<lastmod>2015-06-12T09:22:41+00:00</lastmod>
 </url>
 <url>
-  <loc>http://pumpic.com/how-to.html</loc>
+	<loc>http://pumpic.com/security/category/children/</loc>
+	<lastmod>2015-06-10T08:58:20+00:00</lastmod>
 </url>
 <url>
-  <loc>http://pumpic.com/ios-monitoring-software.html</loc>
+	<loc>http://pumpic.com/security/category/security/</loc>
+	<lastmod>2015-06-04T14:14:09+00:00</lastmod>
 </url>
 <url>
-  <loc>http://pumpic.com/online-monitoring-software.html</loc>
-</url>
-<url>
-  <loc>http://pumpic.com/policy.html</loc>
-</url>
-<url>
-  <loc>http://pumpic.com/prevent-online-dangers.html</loc>
-</url>
-<url>
-  <loc>http://pumpic.com/smartphone-monitoring-software.html</loc>
-</url>
-<url>
-  <loc>http://pumpic.com/sms-monitoring-software.html</loc>
+	<loc>http://pumpic.com/security/category/tutorials/</loc>
+	<lastmod>2015-01-22T16:40:32+00:00</lastmod>
 </url>
 </urlset>

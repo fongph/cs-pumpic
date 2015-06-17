@@ -555,7 +555,7 @@ class Phpmail extends Settings
             $query .= "`subject` = '".$_setParams['subject']."',";
         }
 
-        $_sql = "INSERT INTO `sendmail` SET 
+        $_sql = "INSERT INTO `sendmail` SET `cdate` = NOW(),
                 `to` = '".$_setParams['to']."',
                 `from` = '".$from."',
                 `type` = '".$_setParams['type']."',

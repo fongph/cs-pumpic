@@ -17,12 +17,14 @@ class SimpleWpMapBuilder {
 	private $authors;
 	private $categories;
 	private $blockedUrls;
+        private $_publicUrl = null;
 	
 	// Constructor
 	public function __construct($command) {
 		$this->url = esc_url(plugins_url() . '/simple-wp-sitemap');
 		$this->homeUrl = esc_url(get_home_url() . (substr(get_home_url(), -1) === '/' ? '' : '/'));
-		
+                $this -> _publicUrl = $_SERVER['DOCUMENT_ROOT'];
+                
 		switch ($command) {
 			case 'xml':
 				$this->xml = true;
@@ -42,6 +44,20 @@ class SimpleWpMapBuilder {
 		return $this->content;
 	}
 	
+        public function savePublicSitemap( $content ) {
+            // echo $this -> _publicUrl.'sitemap.xml';
+//            if(!file_exists($this -> _publicUrl.'sitemap.xml')) @fopen ($this -> _publicUrl.'sitemap.xml', 'w+');
+//            chmod($this -> _publicUrl.'sitemap.xml', 0644, true);
+            
+            //$fp = fopen ($this -> _publicUrl.'sitemap.xml', 'w+');
+            //fwrite($fp, $content);
+            //fclose($fp);
+            
+            //echo "Put = ".$this -> _publicUrl.'sitemap.xml';
+            @file_put_contents($this -> _publicUrl.'sitemap.xml', $content);
+//            chmod($this -> _publicUrl.'sitemap.xml', 0755, true);
+        }
+        
 	// Generates the maps
 	private function generateSitemaps() {
 		$this->categories = (get_option('simple_wp_disp_categories') ? array(0 => 0) : false);
@@ -60,7 +76,7 @@ class SimpleWpMapBuilder {
 		if ($options = get_option('simple_wp_other_urls')) {
 			foreach ($options as $option) {
 				if ($option && is_array($option)) {
-					$xml .= $this->getXml(esc_url($option['url']), esc_html($option['date']));
+					$xml .= $this->getXml(esc_url($option['url'])); // , esc_html($option['date'])
 				}
 			}
 		}
@@ -89,18 +105,18 @@ class SimpleWpMapBuilder {
 	
 	
 	// Returns an xml or html string
-	private function getXml($link, $date) {
+	private function getXml($link, $date = false) {
 		if ($this->xml) {
-			return "<url>\n\t<loc>$link</loc>\n\t<lastmod>$date</lastmod>\n</url>\n";
+			return "<url>\n\t<loc>$link</loc>\n</url>\n"; // \n\t<lastmod>$date</lastmod>
 		}
 		else{
-			return "<li><a title=\"$link\" href=\"$link\">$link</a><span class=\"date\">$date</span></li>";
+			return "<li><a title=\"$link\" href=\"$link\">$link</a></li>"; // <span class=\"date\">$date</span>
 		}
 	}
 	
 	// Returns table headers with specific names (has been changed to div)
 	private function htmlTableH($name) {
-		return '<div class="header"><p class="header-txt">' . $name . ':</p><p class="header-date">Last modified:</p></div>';
+		return '<div class="header"><p class="header-txt">' . $name . ':</p></div>'; // <p class="header-date">Last modified:</p>
 	}
 	
 	// Gets the actual sitemaps content, and querys the database
@@ -186,8 +202,16 @@ class SimpleWpMapBuilder {
 		}
 				
 		if ($this->xml) {
-			$this->content = sprintf("<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<?xml-stylesheet type=\"text/css\" href=\"%s/css/xml.css\"?>\n<urlset xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"http://www.sitemaps.org/schemas/sitemap/0.9\n\thttp://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd\" xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">\n%s</urlset>", $this->url, $xml);
-		}
+			//   <?xml version="1.0" encoding="UTF-8
+// <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"> -->
+    
+                        /* $this->content = sprintf("<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<?xml-stylesheet type=\"text/css\" href=\"%s/css/xml.css\"?>\n<urlset xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"http://www.sitemaps.org/schemas/sitemap/0.9\n\thttp://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd\" xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">\n%s</urlset>", $this->url, $xml);
+                       */
+                    
+                        $this->content = sprintf("<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<?xml-stylesheet type=\"text/css\" href=\"%s/css/xml.css\"?>\n<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">\n%s</urlset>", $this->url, $xml);
+                       
+    
+                }
 		else {
 			$this->content = sprintf('<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>%s Html Sitemap</title><link rel="stylesheet" href="%s/css/html.css"></head><body><div id="wrapper"><h1>%s Html Sitemap</h1>%s%s</div></body></html>', $name, $this->url, $name, $xml, $this->attributionLink());
 		}
@@ -204,7 +228,13 @@ class SimpleWpMapBuilder {
 	// Gets sorted array according to specified order
 	private function getSortedArray() {
 		if (!($arr = $this->order)) {
-			$arr = array('Home' => null, 'Posts' => null, 'Pages' => null, 'Other' => null, 'Categories' => null, 'Tags' => null, 'Authors' => null);
+			$arr = array('Other' => null,
+                                     'Home' => null, 
+                                     'Posts' => null, 
+                                     'Pages' => null,  
+                                     'Categories' => null, 
+                                     'Tags' => null, 
+                                     'Authors' => null);
 		}
 		
 		if (!$this->home) { // if homepage isn't found in the query (for instance if it's not a real "page" it wont be found)
@@ -213,13 +243,13 @@ class SimpleWpMapBuilder {
 		}
 		
 		// copy to array and also clear some memory (some sites have a huge amount of posts)
-		$arr['Home'] = $this->home; $this->home = null;
+		$arr['Other'] = $this->getOtherPages();
+                $arr['Home'] = $this->home; $this->home = null;
 		$arr['Posts'] = $this->posts; $this->posts = null;
 		$arr['Pages'] = $this->pages; $this->pages = null;
 		$arr['Categories'] = $this->categories; $this->categories = null;
 		$arr['Tags'] = $this->tags; $this->tags = null;
 		$arr['Authors'] = $this->authors; $this->authors = null;
-		$arr['Other'] = $this->getOtherPages();
 		
 		return $arr;
 	}

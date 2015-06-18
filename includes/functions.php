@@ -6,68 +6,39 @@ function di() {
 
 function dispatch($urlParams, $config){
     global $smarty;
-//        echo "<pre>";
-//        var_dump( $_SERVER['HTTP_USER_AGENT'], get_browser() );
-//        echo "</pre>";
-    
-        // REFERER
-        // $_domain = "http://" . $_SERVER["HTTP_HOST"];
-        if (!empty($_SERVER["HTTP_REFERER"]) ) {
-            // if(substr($_SERVER["HTTP_REFERER"],0,strlen($_domain)) != $_domain) {
-            // strpos($_SERVER['HTTP_REFERER'], $_SERVER["HTTP_HOST"]) === false
-            // preg_match('/^http::\/\/(.*)\.pumpic\.com(.*)/is', 'http://demo.pumpic.com/', $_match); 
-            // preg_match("/^[a-zA-Z0-9]*((-|\.)?[a-zA-Z0-9])*\.([a-zA-Z]{2,4})$/", 'http://demo.pumpic.com/', $matches); 
-            
-            $_url = parse_url($_SERVER['HTTP_REFERER']);        
-//            if(!isset($_COOKIE['orders_referer'])) {
-//                if(!preg_match('/((.*)\.|^)pumpic\.com/i', trim($_url['host'])) ) {
-//                    setcookie("orders_referer", $_SERVER['HTTP_REFERER'], time() + 3600 * 1, '/', '.pumpic.com' );
-//                } 
-//            }
-            
-            //if(!isset($_COOKIE['orders_referer'])) {
-                if(!isset($_COOKIE['orders_referer']) and isset($_url['host']) and !preg_match('/((.*)\.|^)pumpic\.com/i', trim($_url['host'])) ) {
-                    setcookie("orders_referer", $_SERVER['HTTP_REFERER'], time() + 3600 * 24, '/', '.pumpic.com' );
-                } 
-            //}
-            
-            
-//            if(preg_match('/^(http::\/\/)(.*)\.pumpic\.com(.*)/is', $_SERVER['HTTP_REFERER']) || !isset($_COOKIE['orders_referer']) ) {
-//                setcookie("orders_referer", $_SERVER['HTTP_REFERER'], time() + 3600 * 1, '/', '.pumpic.com' );
-//            } 
-//            elseif (!isset($_COOKIE['orders_referer'])) {
-//                setcookie("orders_referer", $_SERVER['HTTP_REFERER'], time() + 3600 * 1, '/', '.pumpic.com' ); 
-//            }
-        }    
+    if (!empty($_SERVER["HTTP_REFERER"]) ) {
+        $_url = parse_url($_SERVER['HTTP_REFERER']);  
+        if(!isset($_COOKIE['orders_referer']) and isset($_url['host']) and !preg_match('/((.*)\.|^)pumpic\.com/i', trim($_url['host'])) ) {
+            setcookie("orders_referer", $_SERVER['HTTP_REFERER'], time() + 3600 * 24, '/', '.pumpic.com' );
+        } 
+
+    }    
         
-        // landing
-        if (!isset($_COOKIE['landing']) && isset($_SERVER['HTTP_HOST'], $_SERVER['REQUEST_URI'])) {
-            $url = 'http' . (isset($_SERVER['HTTPS']) ? 's' : '') . '://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
-            setcookie("landing", $url, time() + 3600 * 24, '/', '.pumpic.com');
-        }
-        
-        
-        // fix url
-        if(is_array($urlParams['uriArr']) 
-                and count($urlParams['uriArr']) > 0
-                and in_array('compatibility', $urlParams['uriArr'])) {
-            $urlParams['uriArr'] = array( array_shift($urlParams['uriArr']) );
-        }
-		
-        // 301 redirect
-        if(preg_match('/\/\?cat=(.*)/is', $_SERVER['REQUEST_URI'])) {
-            header301( $config['domain_http'] );
-        }
-        
-        // 404 redirect
-        if(preg_match('/\/compatibility\/\?page=(.*)/is', $_SERVER['REQUEST_URI'])) {
-            header404();
-            $smarty->display('404.tpl');
-            die;
-        }
-        
-        // $smarty->setCaching();
-        
+    // landing
+    if (!isset($_COOKIE['landing']) && isset($_SERVER['HTTP_HOST'], $_SERVER['REQUEST_URI'])) {
+        $url = 'http' . (isset($_SERVER['HTTPS']) ? 's' : '') . '://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
+        setcookie("landing", $url, time() + 3600 * 24, '/', '.pumpic.com');
+    }
+
+
+    // fix url
+    if(is_array($urlParams['uriArr']) 
+            and count($urlParams['uriArr']) > 0
+            and in_array('compatibility', $urlParams['uriArr'])) {
+        $urlParams['uriArr'] = array( array_shift($urlParams['uriArr']) );
+    }
+
+    // 301 redirect
+    if(preg_match('/\/\?cat=(.*)/is', $_SERVER['REQUEST_URI'])) {
+        header301( $config['domain_http'] );
+    }
+
+    // 404 redirect
+    if(preg_match('/\/compatibility\/\?page=(.*)/is', $_SERVER['REQUEST_URI'])) {
+        header404();
+        $smarty->display('404.tpl');
+        die;
+    }
         
     try {
 
@@ -177,60 +148,60 @@ function header301( $url ){
 
 
 function sendEmail($email, $subject, $text, $from = 'noreply@pumpic.com'){ // support
-	if(strlen($email) && strlen($text)){
-		$subject = "=?UTF-8?B?" . base64_encode($subject) . "?=";
+    if(strlen($email) && strlen($text)){
+        $subject = "=?UTF-8?B?" . base64_encode($subject) . "?=";
 
-		$headers = 'MIME-Version: 1.0' . "\r\n" .
-		'Content-type: text/html; charset=UTF-8' . "\r\n" .
-		'From: pumpic <'.$from.'>' . "\r\n" .
-		'X-Mailer: PHP/' . phpversion();
+        $headers = 'MIME-Version: 1.0' . "\r\n" .
+        'Content-type: text/html; charset=UTF-8' . "\r\n" .
+        'From: pumpic <'.$from.'>' . "\r\n" .
+        'X-Mailer: PHP/' . phpversion();
 
-		try{
-			$result = mail($email, $subject, $text, $headers);
-		} catch(Exception $e){
-			return false;
-		}
+        try{
+            $result = mail($email, $subject, $text, $headers);
+        } catch(Exception $e){
+            return false;
+        }
 
-		return $result;
-	}
+        return $result;
+    }
 
-	return false;
+    return false;
 }
 
 function getUrl($url){
-	$params = parse_url($url);
+    $params = parse_url($url);
 
-	if(!isset($params['scheme'])){
-		$url = 'http://' . $url;
-	}
+    if(!isset($params['scheme'])){
+            $url = 'http://' . $url;
+    }
 
-	if(!filter_var($url, FILTER_VALIDATE_URL)){
-		return false;
-	}
+    if(!filter_var($url, FILTER_VALIDATE_URL)){
+            return false;
+    }
 
-	return filter_var($url, FILTER_SANITIZE_URL);
+    return filter_var($url, FILTER_SANITIZE_URL);
 }
 
 function getThumbUrl($full){
-	$parts = explode(".png", $full);
-	return $parts[0] . '-tumb.png';
+    $parts = explode(".png", $full);
+    return $parts[0] . '-tumb.png';
 }
 
 function validateEmail($email){
-	return filter_var($email, FILTER_VALIDATE_EMAIL);
+    return filter_var($email, FILTER_VALIDATE_EMAIL);
 }
 
 function getRandomString(){
-	return md5('ah5d7asd' . rand(0, 9000000));
+    return md5('ah5d7asd' . rand(0, 9000000));
 }
 
 function validateDate($date, $format = 'Y-m-d'){
-	$d = DateTime::createFromFormat($format, $date);
-	return $d && $d->format($format) == $date;
+    $d = DateTime::createFromFormat($format, $date);
+    return $d && $d->format($format) == $date;
 }
 
 function orderNumberFormat($orderId){
-	return '#' . str_pad($orderId, 6, '0', STR_PAD_LEFT);
+    return '#' . str_pad($orderId, 6, '0', STR_PAD_LEFT);
 }
 
 function validate_email($email){
@@ -912,6 +883,20 @@ function _clearCookie() {
     
 }
 
+function smarty_function_hedaerLastModified($params, $template) {
+    $LastModified_unix = strtotime( (isset($params['data'])) ? $params['data']: filemtime( $_SERVER['SCRIPT_FILENAME'] ) ); // время последнего изменения страницы
+    $LastModified = gmdate("D, d M Y H:i:s \G\M\T", $LastModified_unix);
+    $IfModifiedSince = false;
+    if (isset($_ENV['HTTP_IF_MODIFIED_SINCE']))
+        $IfModifiedSince = strtotime(substr($_ENV['HTTP_IF_MODIFIED_SINCE'], 5));  
+    if (isset($_SERVER['HTTP_IF_MODIFIED_SINCE']))
+        $IfModifiedSince = strtotime(substr($_SERVER['HTTP_IF_MODIFIED_SINCE'], 5));
+    if ($IfModifiedSince && $IfModifiedSince >= $LastModified_unix) {
+        header($_SERVER['SERVER_PROTOCOL'] . ' 304 Not Modified');
+        exit;
+    }
+    header('Last-Modified: '. $LastModified);
+}
 
 /*
  * Detected ip

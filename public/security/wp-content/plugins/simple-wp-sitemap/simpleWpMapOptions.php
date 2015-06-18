@@ -103,8 +103,16 @@ class SimpleWpMapOptions {
 						}
 					}
 					if (!$b && strlen($u) < 500) {
-						$arr[] = array('url' => $u, 'date' => date('Y-m-d\TH:i:sP'));
-					}
+                                               // $_header = get_headers($u, 1);
+//                                                echo "url = ".$u;
+//                                                echo "<pre>";
+//                                                var_dump( $_header );
+//                                                echo "</pre>";
+//                                                die('stop');
+						// $arr[] = array('url' => $u, 'date' => date('Y-m-d\TH:i:sP', strtotime( (isset($_header['Last-Modified'])) ? $_header['Last-Modified']: time() )));
+					
+                                                $arr[] = array('url' => $u);
+                                        }
 				}
 			}
 		}

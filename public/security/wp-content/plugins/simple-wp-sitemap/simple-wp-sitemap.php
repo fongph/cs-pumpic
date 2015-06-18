@@ -17,6 +17,7 @@ class SimpleWpSitemap {
 	
 	// Activates the plugin
 	public static function activateSitemaps() {
+                
 		self::rewriteRules();
 		flush_rewrite_rules();
 		
@@ -81,14 +82,13 @@ class SimpleWpSitemap {
 	// Generates the content
 	public static function generateSitemapContent() {
 		global $wp_query;
-		
 		if (isset($wp_query->query_vars['thesimplewpsitemap'])) {
 			$q = $wp_query->query_vars['thesimplewpsitemap'];
 		
 			if (!empty($q) && ($q === 'xml' || $q === 'html')) {
 				$wp_query->is_404 = false;
 				require_once('simpleWpMapBuilder.php');
-			
+                                
 				if ($q === 'xml') {
 					$builder = new SimpleWpMapBuilder('xml');
 					header('Content-type: application/xml; charset=utf-8');
@@ -96,6 +96,7 @@ class SimpleWpSitemap {
 				else {
 					$builder = new SimpleWpMapBuilder('html');
 				}
+                                
 				echo $builder->getContent();
 				exit;
 			}
@@ -111,15 +112,26 @@ class SimpleWpSitemap {
 		wp_enqueue_script('simple-wp-sitemap-admin-js', plugin_dir_url( __FILE__ ) . '/js/simple-wp-sitemap-admin.js', array('jquery'), false, true);
 	}
 	
+        public static function saveSitemapInPublic() {
+            require_once('simpleWpMapBuilder.php');
+            
+            $builder = new SimpleWpMapBuilder('xml');
+            $content = $builder->getContent();
+            if(!empty($content)) {
+                $builder->savePublicSitemap( $content );
+            }
+        }
+        
 	// Interface for settings page, also handles initial post request when settings are changed
-	public static function sitemapAdminArea() {		
+	public static function sitemapAdminArea() {
 		require_once('simpleWpMapOptions.php');
 		$options = new SimpleWpMapOptions();
 		
 		if (isset($_POST['simple_wp_other_urls'], $_POST['simple_wp_block_urls'], $_POST['simple_wp_home_n'], $_POST['simple_wp_posts_n'], $_POST['simple_wp_pages_n'], $_POST['simple_wp_other_n'], $_POST['simple_wp_categories_n'], $_POST['simple_wp_tags_n'], $_POST['simple_wp_authors_n'])) {
 			
 			$options->setOptions($_POST['simple_wp_other_urls'], $_POST['simple_wp_block_urls'], (isset($_POST['simple_wp_attr_link']) ? 1 : 0), (isset($_POST['simple_wp_disp_categories']) ? 1 : 0), (isset($_POST['simple_wp_disp_tags']) ? 1 : 0), (isset($_POST['simple_wp_disp_authors']) ? 1 : 0), array('Home' => $_POST['simple_wp_home_n'], 'Posts' => $_POST['simple_wp_posts_n'], 'Pages' => $_POST['simple_wp_pages_n'], 'Other' => $_POST['simple_wp_other_n'], 'Categories' => $_POST['simple_wp_categories_n'], 'Tags' => $_POST['simple_wp_tags_n'], 'Authors' => $_POST['simple_wp_authors_n']));
-		} ?>
+                        SimpleWpSitemap::saveSitemapInPublic();
+                } ?>
 		
 		<div class="wrap">
 		
@@ -178,7 +190,15 @@ class SimpleWpSitemap {
 							<?php
 							
 								if (!($orderArray = $options->getOptions('simple_wp_disp_sitemap_order'))) {
-									$orderArray = array('Home' => null, 'Posts' => null, 'Pages' => null, 'Other' => null, 'Categories' => null, 'Tags' => null, 'Authors' => null);
+									$orderArray = array(
+                                                                            'Other' => null,
+                                                                            'Home' => null, 
+                                                                            'Posts' => null, 
+                                                                            'Pages' => null,
+                                                                            'Categories' => null, 
+                                                                            'Tags' => null, 
+                                                                            'Authors' => null
+                                                                        );
 								}
 								$count = 0;
 								

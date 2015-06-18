@@ -1,10 +1,12 @@
 <?php 
 global $config, $smarty;
+
 $smarty = new Smarty();
 $smarty->caching = true;
 $smarty->compile_check = true;
 $smarty->force_compile =  false;
 $smarty->debugging = false;
+$smarty->cache_modified_check = true;
 
 $smarty->setTemplateDir($config['smarty']['tpl_path']);
 $smarty->setCacheDir($config['smarty']['cache_path']);

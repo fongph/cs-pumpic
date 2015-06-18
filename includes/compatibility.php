@@ -13,9 +13,10 @@ require dirname( __DIR__ ).'/vendor/autoload.php';
 // echo "<pre>"; var_dump( $smarty ); echo "</pre>";
 
  $smarty->caching = true;
- $smarty->compile_check = false;
- $smarty->force_compile = false;
+ $smarty->compile_check = true;
+ $smarty->force_compile =  false;
  $smarty->debugging = false;
+ $smarty->cache_modified_check = false;
 
 $compatibility = new Compatibility(di()->get('dbPhones'));
 

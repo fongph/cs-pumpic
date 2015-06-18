@@ -9,7 +9,8 @@
  $smarty->compile_check = false;
  $smarty->force_compile = false;
  $smarty->debugging = false;
-
+ $smarty->cache_modified_check = true;
+ 
 $compatibility = new Models\Compatibility(di()->get('dbPhones'));
 
 list(,$modelName) = explode('/', $urlParams['uri']);

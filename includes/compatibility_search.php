@@ -9,6 +9,7 @@
  $smarty->compile_check = false;
  $smarty->force_compile = false;
  $smarty->debugging = false;
+ $smarty->cache_modified_check = true;
 
  $os_url = ['ios-devices', 'android-devices'];
  $meta_title = [

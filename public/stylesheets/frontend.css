@@ -14334,7 +14334,8 @@ form.form-contact-us .box-captcha {
 }
 .direct-login-footer .log-out-button {
     color: #106a60;
-    float: left;
+    text-decoration: underline;
+    margin-left: 10px;
 }
 .direct-login-footer .account-login {
     color: #303030;

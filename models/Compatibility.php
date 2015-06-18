@@ -279,6 +279,8 @@ class Compatibility {
         
         
         $result = array(
+            'rowid' => $data['rowid'],
+            'cdate' => $data['cdate'],
             'name' => $data['longname'],
             'img' => $data['path_big'],
             'm_img' => $data['path_middle'],

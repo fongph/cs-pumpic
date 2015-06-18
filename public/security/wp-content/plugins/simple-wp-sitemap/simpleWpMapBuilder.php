@@ -54,7 +54,8 @@ class SimpleWpMapBuilder {
             //fclose($fp);
             
             //echo "Put = ".$this -> _publicUrl.'sitemap.xml';
-            @file_put_contents($this -> _publicUrl.'sitemap.xml', $content);
+            // echo $this -> _publicUrl.'sitemap.xml';
+            @file_put_contents($this -> _publicUrl.'/sitemap.xml', $content);
 //            chmod($this -> _publicUrl.'sitemap.xml', 0755, true);
         }
         

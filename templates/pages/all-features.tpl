@@ -44,7 +44,7 @@
                                 <ul class="list-features text-right">
                                     <li class="i-l-features">
                                         <div class="row">
-                                            <div class="col-sm-10 col-md-10 col-lg-10">
+                                            <div class="col-sm-10 col-md-10 col-lg-10 plr5">
                                                 <a class="underline go_block_scroll" href="#calls">Calls</a>
                                                 <div class="bth-info">
                                                     <ul>
@@ -62,7 +62,7 @@
                                     
                                     <li class="i-l-features">
                                         <div class="row">
-                                            <div class="col-sm-10 col-md-10 col-lg-10">
+                                            <div class="col-sm-10 col-md-10 col-lg-10 plr5">
                                                 <a class="underline go_block_scroll" href="#location">Location & Geo-fences</a>
                                                 <div class="bth-info">
                                                     <ul>
@@ -79,7 +79,7 @@
                                     
                                     <li class="i-l-features">
                                         <div class="row">
-                                            <div class="col-sm-10 col-md-10 col-lg-10">
+                                            <div class="col-sm-10 col-md-10 col-lg-10 plr5">
                                                 <a class="underline go_block_scroll" href="#social">Online Chats</a>
                                                 <div class="bth-info">
                                                     <ul>
@@ -96,7 +96,7 @@
                                     
                                     <li class="i-l-features">
                                         <div class="row">
-                                            <div class="col-sm-10 col-md-10 col-lg-10">
+                                            <div class="col-sm-10 col-md-10 col-lg-10 plr5">
                                                 <a class="underline go_block_scroll" href="#email">Email</a>
                                                 <div class="bth-info">
                                                     <ul>
@@ -138,7 +138,7 @@
                                                 <img class="model-center" src="{$img}/technological/header/icon/icon-sms.png" width="33px" height="29px" />
                                             </div>
                                             
-                                            <div class="col-sm-10 col-md-10 col-lg-10">
+                                            <div class="col-sm-10 col-md-10 col-lg-10 plr5">
                                                 <a class="underline go_block_scroll" href="#sms">Texts</a>
                                                 <div class="bth-info">
                                                     <ul>
@@ -157,12 +157,12 @@
                                                 <img class="model-center" src="{$img}/technological/header/icon/icon-photos.png" width="29px" height="24px" />
                                             </div>
                                             
-                                            <div class="col-sm-10 col-md-10 col-lg-10">
+                                            <div class="col-sm-10 col-md-10 col-lg-10 plr5">
                                                 <a class="underline go_block_scroll" href="#media">Photos & Videos</a>
                                                 <div class="bth-info">
                                                     <ul>
                                                         <li>camera shots, downloaded files</li>
-                                                        <li>Instagram monitoring</li>
+                                                        <li>follow Instagram and Snapchat</li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -176,7 +176,7 @@
                                                 <img class="model-center" src="{$img}/technological/header/icon/icon-browser.png" width="31px" height="31px" />
                                             </div>
                                             
-                                            <div class="col-sm-10 col-md-10 col-lg-10">
+                                            <div class="col-sm-10 col-md-10 col-lg-10 plr5">
                                                 <a class="underline go_block_scroll" href="#applications">Browsers & Applications</a>
                                                 <div class="bth-info">
                                                     <ul>
@@ -196,7 +196,7 @@
                                                 <img class="model-center" src="{$img}/technological/header/icon/icon-calendar.png" width="31px" height="31px" />
                                             </div>
                                             
-                                            <div class="col-sm-10 col-md-10 col-lg-10">
+                                            <div class="col-sm-10 col-md-10 col-lg-10 plr5">
                                                 <a class="underline go_block_scroll" href="#organiser">Calendar & Contacts</a>
                                                 <div class="bth-info">
                                                     <ul>
@@ -352,8 +352,32 @@
                                         </div>
                                     </li>
                                     
-                                    <!-- SMS -->
+                                    <!-- Text -->
                                     <li>
+                                        <div class="row">
+                                            
+                                            <div class='col-sm-12 col-md-12'>
+                                                
+                                                <div class='box-features-header-item'>
+                                                    <div>
+                                                        <i class='i-header-feature-sms'></i>
+                                                        <a class="underline go_block_scroll" href="#email">Texts</a>
+                                                    </div>
+                                                    <div class="bth-info">
+                                                        <ul>
+                                                            <li>SMS, MMS, iMessage text content</li>
+                                                            <li>block or limit messages</li>
+                                                        </ul>
+                                                    </div>        
+                                                </div>
+                                                
+                                            </div>
+                                            
+                                        </div>
+                                    </li>
+                                    
+                                    <!-- SMS -->
+                                    {*<li>
                                         <div class="row">
                                             
                                             <div class='col-sm-12 col-md-12'>
@@ -374,7 +398,7 @@
                                             </div>
                                             
                                         </div>
-                                    </li>
+                                    </li>*}
                                     
                                     <!-- Photos & Videos -->
                                     <li>
@@ -389,8 +413,8 @@
                                                     </div>
                                                     <div class="bth-info">
                                                         <ul>
-                                                            <li>camera shots and Instagram monitoring</li>
-                                                            <li>downloaded pictures from the Internet</li>
+                                                            <li>camera shots, downloaded files</li>
+                                                            <li>follow Instagram and Snapchat</li>
                                                         </ul>
                                                     </div>        
                                                 </div>
@@ -413,8 +437,10 @@
                                                     </div>
                                                     <div class="bth-info">
                                                         <ul>
-                                                            <li>browsing history and bookmarks</li>
-                                                            <li>block websites and limit applications</li>
+                                                            <li>browsing history, bookmarks</li>
+                                                            <li>block websites and limit apps</li>
+                                                            {*<li>browsing history and bookmarks</li>
+                                                            <li>block websites and limit applications</li>*}
                                                         </ul>
                                                     </div>        
                                                 </div>
@@ -749,6 +775,9 @@
                                         <p>
                                             Follow online communication activity. View <b>messages</b> sent and received via popular instant messengers like Facebook Messenger, Viber, Skype, WhatsApp and Kik.
                                         </p>
+                                        <p>
+                                            Monitor <b>WhatsApp</b> and <b>Facebook calls</b> on Android devices.
+                                        </p>
                                         {*<ul>
                                             <li>Pumpic allows you to monitor your child’s device activity in</li>
                                             <li>the most widely used communication applications like</li>
@@ -804,7 +833,7 @@
                        <!-- \\ #11 Photos/Videos: (even)-->
                        <div id="media" class="div-table-row even">
                             <div class="item-feature-list div-table-column col-sm-12 col-md-4 col-lg-4 text-right">
-                                <img style='max-width: 300px' class="image-features model-mobile-center" src='../images/technological/image-video-and-photos.png' />
+                                <img style='max-width: 300px' class="image-features model-mobile-center" src='../images/technological/image-video-and-photos_v2.png' />
                             </div>
                             <div class="item-feature-list div-table-column col-sm-12 col-md-1 col-lg-1 text-center">
                                 <div class='box-line-solid only-pc'>
@@ -921,9 +950,15 @@
                                             <i class='i-list-features-contacts'></i>
                                             <strong>Contacts</strong>
                                         </li>
+                                        <li>
+                                            <i class='i-list-features-notes'></i>
+                                            <strong>Notes</strong>
+                                        </li>
                                     </ul>
                                     <div class='block-info'>
-                                        <p>Track calendar and follow plans put on the list as <b>scheduled events</b>. View <b>existing</b> and <b>deleted contacts</b>. Find out of <b>new ones added</b>. Prevent contacting misgiving people.</p>
+                                        <p>View Notes on iPhones, iPads, and iPods Touch. Find out <b>plans</b> and <b>intentions</b>. Follow <b>important information, to-do lists</b>, as well as written down <b>thoughts</b>.</p>
+                                        {*<p>Track calendar and follow plans put on the list as <b>scheduled events</b>. View <b>existing</b> 
+                                            and <b>deleted contacts</b>. Find out of <b>new ones added</b>. Prevent contacting misgiving people.</p>*}
                                         {*<ul>
                                             <li>Track every single email your kid sends or receives. Check</li>
                                             <li>email correspondence history and prevent you children</li>
@@ -1018,7 +1053,7 @@
                                     <ul>
                                         <li>
                                             <i class='i-list-features-instagram only-mobile'></i>
-                                            <strong>Instagram monitoring</strong>
+                                            <strong>Instagram {*monitoring*}</strong>
                                             <i class='i-list-features-instagram only-pc'></i>
                                         </li>
                                     </ul>
@@ -1175,6 +1210,39 @@
                             </div>
                         </div>
                         
+                         <!-- \\ #14 Snapchat: (odd) -->
+                        <div id="snapchat" class="div-table-row odd">
+                            <div class="item-feature-list div-table-column col-lg-4 text-right">
+                                
+                                <div class='feature-item-info'>
+                                    <ul>
+                                        <li>
+                                            <i class='i-list-features-snapchat only-mobile'></i>
+                                            <strong>Snapchat</strong>
+                                            <i class='i-list-features-snapchat only-pc'></i>
+                                        </li>
+                                    </ul>
+                                    
+                                    <div class='block-info'>
+                                        <p>Monitor temporary <b>photos</b>, <b>videos</b>, and <b>comments</b> posted on Snapchat via iOS devices. Prevent inappropriate <b>content sharing</b> and <b>viewing</b>.</p>
+                                        
+                                        <div><a class="btn-orange" href="http://demo.{$domain}/setDevice/126?redirect_url=cp/call">View Demo</a></div>
+                                        <label class="color-orange">(no registration required)</label>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="item-feature-list div-table-column col-lg-1 text-center">
+                                <div class='box-line-solid only-pc'>
+                                    <i class='i-bubble'></i>
+                                    <span class='box-solid-1'></span>
+                                </div>
+                            </div>
+                            <div class="item-feature-list div-table-column col-lg-4 text-left">
+                                <img style='max-width: 302px' class="image-features model-mobile-center" src='../images/technological/image-snapchat.png' />
+                            </div>
+                        </div>               
+                                        
                     </div>
                     <!-- \\ end -->
                     

@@ -89,7 +89,7 @@
                                   </li>
                                   <li href="#" class="list-group-item">
                                     <p class="list-group-item-text">
-                                        <span class="title"><label class='block-number'>22</label> Monitoring features</span>
+                                        <span class="title"><label class='block-number'>23</label> Monitoring features</span>
                                         <span>Multi-featured real-time iOS monitoring with filtering and blocking options.</span>
                                     </p>
                                   </li>
@@ -180,7 +180,6 @@
                                                 </form>
                                             </div>
                                         </div>
-                                    
                                     
                                     </div>
                                     <div class="premium_wr">

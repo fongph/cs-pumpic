@@ -218,6 +218,7 @@
                                                                     </li>
                                                                     <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Photos <span>View shot and downloaded photos, including deleted ones.</span></li>
                                                                     <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Calendar  <span>Follow scheduled events.</span></li>
+                                                                    <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Notes  <span>Track Notes on the target iOS device.</span></li>
                                                                     <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Contacts <span>View new, existing and deleted contacts.</span></li>
                                                                     <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Location <span>Track current location and route history in table format or on the map.</span></li>
                                                                     <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Emails <span>Monitor sent and received emails, including deleted ones.</span></li>
@@ -235,6 +236,7 @@
                                                                     <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-cancel"></i> WhatsApp <span>Follow personal messages and group chats.</span></li>
                                                                     <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-cancel"></i> Kik <span>Monitor text messages.</span></li>
                                                                     <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-cancel"></i> Instagram <span>View uploaded images and posted comments.</span></li>
+                                                                    <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-cancel"></i> Snapchat <span>Monitor Snapchat photos, videos, and comments on the target iOS device.</span></li>
                                                                     <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-cancel"></i> Keylogger <span>Keep track of each button pressed or taped. View passwords, keystrokes and words input.</span></li>
                                                                     <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-cancel"></i> Historical Data <span>Monitor the information from the target device prior to the date, when Pumpic was installed.</span></li>
                                                 
@@ -377,6 +379,7 @@
                                                                     </li>
                                                                     <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Photos <span>View shot and downloaded photos, including deleted ones.</span></li>
                                                                     <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Calendar  <span>Follow scheduled events.</span></li>
+                                                                    <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Notes  <span>Track Notes on the target iOS device.</span></li>
                                                                     <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Contacts <span>View new, existing and deleted contacts.</span></li>
                                                                     <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Location <span>Track current location and route history in table format or on the map.</span></li>
                                                                     <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Emails <span>Monitor sent and received emails, including deleted ones.</span></li>
@@ -395,6 +398,7 @@
                                                                     <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> WhatsApp <span>Follow personal messages and group chats.</span></li>
                                                                     <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Kik <span>Monitor text messages.</span></li>
                                                                     <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Instagram <span>View uploaded images and posted comments.</span></li>
+                                                                    <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Snapchat <span>Monitor Snapchat photos, videos, and comments on the target iOS device.</span></li>
                                                                     <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Keylogger <span>Keep track of each button pressed or taped. View passwords, keystrokes and words input.</span></li>
                                                                     <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Historical Data <span>Monitor the information from the target device prior to the date, when Pumpic was installed.</span></li>
                                                 

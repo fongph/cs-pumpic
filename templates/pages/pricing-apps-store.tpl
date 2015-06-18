@@ -147,7 +147,7 @@
                                                                 <img src="{$img}/basic_pack.png">
                                                             </div>
                                                             <div class="wr_price_big">
-                                                                <span></span><div class="box-currence"><symbol attr-iso="usd">$</symbol><curr id="basic-price-per-month">5.33{*11.33*}</curr></div><span> / month</span>
+                                                                <span></span><div class="box-currence"><symbol attr-iso="usd">$</symbol><div class="curr" id="basic-price-per-month">5.33{*11.33*}</div></div><span> / month</span>
                                                             </div>
                                                             
                                                             {*<div class="price-main">
@@ -200,7 +200,7 @@
                                                                             
                                                                         <span class="sp_price">
                                                                             <strong>
-                                                                                <div class="box-currence"><symbol attr-iso="usd">$</symbol><curr>{$_item.price}</curr></div>
+                                                                                <div class="box-currence"><symbol attr-iso="usd">$</symbol><div class="curr">{$_item.price}</div></div>
                                                                             </strong>
                                                                         </span>   
                                                                         </label>
@@ -227,6 +227,7 @@
                                                                 <li data-toggle="tooltip" data-placement="top" title="Set specific zones and receive alerts once the target device leaves them or enters. <div class='br'><strong>iOS: Jailbreak Needed</strong></div>"><i class="icon-ok"></i> Geo-fences</li> 
                                                                 <li data-toggle="tooltip" data-placement="top" title="View contact list including names, addresses, numbers and emails."><i class="icon-ok"></i> Contacts</li>
                                                                 <li data-toggle="tooltip" data-placement="top" title="Monitor scheduled dates and events."><i class="icon-ok"></i> Calendar</li>
+                                                                <li data-toggle="tooltip" data-placement="top" title="Track Notes on the target iOS device."><i class="icon-ok"></i> Notes</li>
                                                                 <li data-toggle="tooltip" data-placement="top" title="View all visited websites. On iOS devices available for Safari browser only."><i class="icon-ok"></i> Browsing history</li>
                                                                 <li data-toggle="tooltip" data-placement="top" title="Block specific websites on a target device. <div class='br'><strong>iOS: Jailbreak Needed</strong></div>"><i class="icon-ok"></i> Websites blocking</li>
 
@@ -236,9 +237,10 @@
                                                                 <li data-toggle="tooltip" data-placement="top" title="View all emails and detailed contact data. <div class='br'><strong>iOS: Jailbreak Needed</strong><br /><strong>Android: Root Required</strong></div>"><i class="icon-ok"></i> Emails</li>
                                                                 <li data-toggle="tooltip" data-placement="top" title="Monitor, block or set time limits on all applications (games, services etc.) downloaded on a device. <div class='br'><strong>iOS: Jailbreak Needed</strong></div>"><i class="icon-ok"></i> Applications Management</li>
                                                                 <li data-toggle="tooltip" data-placement="top" title="View all videos stored on a device. <div class='br'><strong>iOS: Jailbreak Needed</strong></div>"><i class="icon-cancel"></i> Videos</li>
-                                                                <li data-toggle="tooltip" data-placement="top" title="Track conversations via Skype, WhatsApp, Viber and Kik. <div class='br'><strong>iOS: Jailbreak Needed</strong><br /><strong>Android: Root Required</strong></div>"><i class="icon-cancel"></i> Viber/WhatsApp/Skype/Kik</li>
-                                                                <li data-toggle="tooltip" data-placement="top" title="Monitor posted images and comments in Instagram. <div class='br'><strong>iOS: Jailbreak Needed</strong><br /><strong>Android: Root Required</strong></div>"><i class="icon-cancel"></i> Instagram</li>
-                                                                <li data-toggle="tooltip" data-placement="top" title="Monitor chats on Facebook. <div class='br'><strong>iOS: Jailbreak Needed</strong><br /><strong>Android: Root Required</strong></div>"><i class="icon-cancel"></i> Facebook Messages</li>
+                                                                <li data-toggle="tooltip" data-placement="top" title="Track conversations via Skype, WhatsApp, Viber, and Kik. Monitor WhatsApp calls (currently available for Android devices only). <div class='br'><strong>iOS: Jailbreak Needed</strong><br /><strong>Android: Root Required</strong></div>"><i class="icon-cancel"></i> Viber/WhatsApp/Skype/Kik</li>
+                                                                <li data-toggle="tooltip" data-placement="top" title="Monitor posted images and comments on Instagram. <div class='br'><strong>iOS: Jailbreak Needed</strong><br /><strong>Android: Root Required</strong></div>"><i class="icon-cancel"></i> Instagram</li>
+                                                                <li data-toggle="tooltip" data-placement="top" title="Monitor Snapchat photos, videos, and comments on the target iOS device."><i class="icon-cancel"></i> Snapchat</li>
+                                                                <li data-toggle="tooltip" data-placement="top" title="Track chats and calls on Facebook. Facebook call monitoring is currently available for Android devices only. <div class='br'><strong>iOS: Jailbreak Needed</strong><br /><strong>Android: Root Required</strong></div>"><i class="icon-cancel"></i> Facebook{*Messages*}</li>
                                                                 <li data-toggle="tooltip" data-placement="top" title="View all the previouse data ever stored on a device."><i class="icon-cancel"></i> Historical data</li> 
                                                                 <li data-toggle="tooltip" data-placement="top" title="Control devices remotely. <div class='br'><strong>iOS: Jailbreak Needed</strong></div><div class='br'><strong>Not supported: on Android 5.0{*4.4+*}.</strong></div>"><i class="icon-cancel"></i> SMS commands</li>
                                                                 <li data-toggle="tooltip" data-placement="top" title="View every keystroke typed on a target device. <div class='br'><strong>iOS: Jailbreak Needed</strong></div>"><i class="icon-cancel"></i> Keylogger</li>
@@ -298,7 +300,7 @@
 
                                                                             <span class="sp_price">
                                                                                 <strong>
-                                                                                    <div class="box-currence"><symbol attr-iso="usd">$</symbol><curr>{$_item.price}</curr></div>
+                                                                                    <div class="box-currence"><symbol attr-iso="usd">$</symbol><div class="curr">{$_item.price}</div></div>
                                                                                 </strong>
                                                                             </span>   
                                                                         </label>
@@ -326,7 +328,7 @@
                                                                 <img src="{$img}/premium_pack.png">
                                                             </div>
                                                             <div class="wr_price_big">
-                                                                <span></span><div class="box-currence"><symbol attr-iso="usd">$</symbol><curr id="premium-price-per-month">6.99{*14.66*}</curr></div><span>/ month</span>
+                                                                <span></span><div class="box-currence"><symbol attr-iso="usd">$</symbol><div class="curr" id="premium-price-per-month">6.99{*14.66*}</div></div><span>/ month</span>
                                                             </div>
                                                             
                                                             
@@ -398,6 +400,7 @@
                                                                 <li data-toggle="tooltip" data-placement="top" title="Set specific zones and receive alerts once the target device leaves them or enters. <div class='br'><strong>iOS: Jailbreak Needed</strong></div>"><i class="icon-ok"></i> Geo-fences</li> 
                                                                 <li data-toggle="tooltip" data-placement="top" title="View contact list including names, addresses, numbers and emails."><i class="icon-ok"></i> Contacts</li>
                                                                 <li data-toggle="tooltip" data-placement="top" title="Monitor scheduled dates and events."><i class="icon-ok"></i> Calendar</li>
+                                                                <li data-toggle="tooltip" data-placement="top" title="Track Notes on the target iOS device."><i class="icon-ok"></i> Notes</li>
                                                                 <li data-toggle="tooltip" data-placement="top" title="View all visited websites. On iOS devices available for Safari browser only."><i class="icon-ok"></i> Browsing history</li>
                                                                 <li data-toggle="tooltip" data-placement="top" title="Block specific websites on a target device. <div class='br'><strong>iOS: Jailbreak Needed</strong></div>"><i class="icon-ok"></i> Websites blocking</li>
 
@@ -407,9 +410,10 @@
                                                                 <li data-toggle="tooltip" data-placement="top" title="View all emails and detailed contact data. <div class='br'><strong>iOS: Jailbreak Needed</strong><br /><strong>Android: Root Required</strong></div>"><i class="icon-ok"></i> Emails</li>
                                                                 <li data-toggle="tooltip" data-placement="top" title="Monitor, block or set time limits on all applications (games, services etc.) downloaded on a device. <div class='br'><strong>iOS: Jailbreak Needed</strong></div>"><i class="icon-ok"></i> Applications Management</li>
                                                                 <li data-toggle="tooltip" data-placement="top" title="View all videos stored on a device. <div class='br'><strong>iOS: Jailbreak Needed</strong></div>"><i class="icon-ok"></i> Videos</li>
-                                                                <li data-toggle="tooltip" data-placement="top" title="Track conversations via Skype, WhatsApp, Viber and Kik. <div class='br'><strong>iOS: Jailbreak Needed</strong><br /><strong>Android: Root Required</strong></div>"><i class="icon-ok"></i> Viber/WhatsApp/Skype/Kik</li>
-                                                                <li data-toggle="tooltip" data-placement="top" title="Monitor posted images and comments in Instagram. <div class='br'><strong>iOS: Jailbreak Needed</strong><br /><strong>Android: Root Required</strong></div>"><i class="icon-ok"></i> Instagram</li>
-                                                                <li data-toggle="tooltip" data-placement="top" title="Monitor chats on Facebook. <div class='br'><strong>iOS: Jailbreak Needed</strong><br /><strong>Android: Root Required</strong></div>"><i class="icon-ok"></i> Facebook Messages</li>
+                                                                <li data-toggle="tooltip" data-placement="top" title="Track conversations via Skype, WhatsApp, Viber, and Kik. Monitor WhatsApp calls (currently available for Android devices only).<div class='br'><strong>iOS: Jailbreak Needed</strong><br /><strong>Android: Root Required</strong></div>"><i class="icon-ok"></i> Viber/WhatsApp/Skype/Kik</li>
+                                                                <li data-toggle="tooltip" data-placement="top" title="Monitor posted images and comments on Instagram. <div class='br'><strong>iOS: Jailbreak Needed</strong><br /><strong>Android: Root Required</strong></div>"><i class="icon-ok"></i> Instagram</li>
+                                                                <li data-toggle="tooltip" data-placement="top" title="Monitor Snapchat photos, videos, and comments on the target iOS device."><i class="icon-ok"></i> Snapchat</li>
+                                                                <li data-toggle="tooltip" data-placement="top" title="Track chats and calls on Facebook. Facebook call monitoring is currently available for Android devices only.<div class='br'><strong>iOS: Jailbreak Needed</strong><br /><strong>Android: Root Required</strong></div>"><i class="icon-ok"></i> Facebook{*Messages*}</li>
                                                                 <li data-toggle="tooltip" data-placement="top" title="View all the previouse data ever stored on a device."><i class="icon-ok"></i> Historical data</li> 
                                                                 <li data-toggle="tooltip" data-placement="top" title="Control devices remotely. <div class='br'><strong>iOS: Jailbreak Needed</strong></div><div class='br'><strong>Not supported: on Android 5.0{*4.4+*}.</strong></div>"><i class="icon-ok"></i> SMS commands</li>
                                                                 <li data-toggle="tooltip" data-placement="top" title="View every keystroke typed on a target device. <div class='br'><strong>iOS: Jailbreak Needed</strong></div>"><i class="icon-ok"></i> Keylogger</li>

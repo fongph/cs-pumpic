@@ -21,9 +21,8 @@ $phoneData = $compatibility->getModel($modelName);
 //if($smarty ->isCached('compatibility.tpl', 'compatibility_'. md5() ))
 //        $smarty -> clearCache('compatibility.tpl', 'compatibility_'.date("dmY", strtotime("now")));
 
-$cache_id = 'compatibility_item_'.md5( $_GET['model'] );
 if($phoneData){
-
+    $cache_id = 'compatibility_item_'.md5( $phoneData['id'].'-'.$phoneData['cdate'] );
     $smarty->assign('compatibilityDeviceUri', $_GET['model']);
     $smarty->assign('getSetting', array(
         '_item' => $phoneData,

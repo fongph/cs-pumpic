@@ -185,6 +185,8 @@ class Compatibility {
                 'reboot_device'  => 'Reboot device',
                 'geo_fences'    => 'Geo-fences',
                 'icloud_solution'   => 'iCloud solution',
+                'notes' => 'Notes',
+                'snapchat' => 'Snapchat',
 //                    'gps' => 'Current GPS location',
 
             ),

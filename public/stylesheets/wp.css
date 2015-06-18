@@ -6612,6 +6612,7 @@ button.close {
   top: -2px;
   padding: 0px 0px 0px 0px;
 }
+
 /* ---- \\ icloud block ----- */
 .position-relative {
     position: relative;
@@ -13523,6 +13524,20 @@ form.form-contact-us .box-captcha {
     color: #303030;
 }
 
+.w25p {
+    width: 25%;
+}
+
+@media only screen and (max-width: 991px) {
+  .w25p {
+    width: 100%;
+  }
+}
+
+
+div.curr {
+    display: inline-block;
+}
 .banner-header {
     padding: 20px 0;
 }
@@ -14118,6 +14133,18 @@ form.form-contact-us .box-captcha {
     background: url('../images/icons/icon-skype.png') no-repeat;
     width: 23px;
     height: 23px;
+}
+
+.i-features-view-notes {
+    background: url('../images/icons/icon-notes_v2.png') no-repeat;
+    width: 19px;
+    height: 19px;
+}
+
+.i-features-monitor-snapchat {
+    background: url('../images/icons/icon-snapchat.png') no-repeat;
+    width: 20px;
+    height: 20px;
 }
 /* -------------// top banners ------------- */
 

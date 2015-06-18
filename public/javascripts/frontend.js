@@ -6619,11 +6619,11 @@ currencyHandler = {
 };
 
 (function( $ ){
-      
+      // var _dataObj = ($("body").hasClass("ie8")) ? document.body : window;
       var $this = {}, $rates = {}, $_html = "";
       
       var $_settings = {
-          'debug': false,
+          'debug': true,
           'api_key': '', // app_id=
           'host': '/currency.html',
           'currBase': 'USD',
@@ -6715,52 +6715,100 @@ currencyHandler = {
         
         /* ==== init data cahce ====== */
         _clearCach: function(key) {
-            if(key) {
-                jQuery.data( window, key, false);
-            } else {
-                jQuery.data( window, '_result', false);
-            }    
-                
+//            if( $("body").hasClass("ie8") ) { 
+//                if(key) {
+//                    jQuery.data( document.body, key, false);
+//                } else {
+//                    jQuery.data( document.body, '_result', false);
+//                }
+//            } else {
+                if(key) {
+                    jQuery.data( window, key, false);
+                } else {
+                    jQuery.data( window, '_result', false);
+                }    
+//            }    
         },
         setCach: function(key, params) {
             key = (!key) ? "_result" : key;
+            
             if(params) {
-                return jQuery.data( window, key, params);
+//                if( $("body").hasClass("ie8") ) { 
+//                    return jQuery.data( document.body, key, params );
+//                } else {
+                    return jQuery.data( window, key, params);
+//                }
             } else {
-                return jQuery.data( window, key);
+//                if( $("body").hasClass("ie8") ) { 
+//                    return jQuery.data( document.body, key);
+//                } else {
+                    return jQuery.data( window, key);
+//                }    
             }
+            
         }, // set cahce
         
         getCach: function(key) {
-            if(jQuery.data( window, key))
-                return jQuery.data( window, key);
-            else
-                return false;
+//            if( $("body").hasClass("ie8") ) {
+//                if(jQuery.data( document.body, key))
+//                    return jQuery.data( document.body, key);
+//                else
+//                    return false;
+//            } else {
+                if(jQuery.data( window, key))
+                    return jQuery.data( window, key);
+                else
+                    return false;
+//            }
         },
         
         /* ajax */
         _json: function(_data) {
             methods._die('Load json curr..');
-            var _url = '';
+            var _url = '', result = {};
             _data = (_data) ? _data : {
                 '_base': $_settings.currBase, // set Base currance
                 '_filter': $_settings.filter // set filter in iso
             }; 
             
-            var result = {};
-            $.ajax({ 
-                type: $_settings.ajax.type,
-                async: false,
-                url: $_settings.host,
-                data: $.extend(_data, $_settings.ajax.data),
-                dataType: $_settings.ajax.dataType,
-                crossDomain: $_settings.ajax.crossDomain
-            }).done(function(responce) {
-                if(responce) {
-                    methods.setCach('_ajax', responce); // .responseJSON 
-                }
-            });
-            
+            if( $("body").hasClass("ie8") ) { 
+                methods._die('Load ie8 ...');
+                // fix for ie8
+                var responce = $.ajax({
+                   type: $_settings.ajax.type,
+                   url: $_settings.host,
+                   processData: true,
+                   async: false,
+                   cache: false,
+                   data: $.extend(_data, $_settings.ajax.data),
+                   dataType: "json",
+                   success: function () {
+                   }
+                }).responseText;
+                responce = eval('['+responce+']');
+                methods.setCach('_ajax', responce[0]); // .responseJSON
+                
+            } else {
+                $.ajax({ 
+                    type: $_settings.ajax.type,
+                    async: false,
+                    cache: false,
+                    url: $_settings.host,
+                    data: $.extend(_data, $_settings.ajax.data),
+                    dataType: $_settings.ajax.dataType,
+                    crossDomain: $_settings.ajax.crossDomain
+                }).done(function(responce) {
+                    methods._die( 'Responce..' );
+                    methods._die( responce );
+                    if(responce) {
+
+                         methods._die( responce );
+                        methods.setCach('_ajax', responce); // .responseJSON 
+                    }
+                });
+            }
+            methods._die( 'getCache...' );
+            methods._die( methods.getCach('_ajax') );
             return result = methods.getCach('_ajax');
             
         },
@@ -6802,7 +6850,7 @@ currencyHandler = {
                    var curr_convert = $(this).attr('attr-rates-iso');
                    
                    
-                   if(methods.getCach('currISO')) {
+                   if(methods.getCach('currISO') && curr_convert) {
                        if(methods.getCach('currISO') != curr_convert) {
                            methods.setCach('currISO', curr_convert);
                        } 
@@ -6832,6 +6880,8 @@ currencyHandler = {
         // show create html list rates
         show: function() {
             var status = [];
+             methods._die( $_settings.rates );
+             
             if($_settings.rates) {
                 $_html += '<span>Currency:</span>';
                 //$_html += '<ul class="clearfix">'; 
@@ -6848,7 +6898,6 @@ currencyHandler = {
                 methods.bindEvent();
             }
             
-            // console.log();
         },
         
         // beforeEvent
@@ -6857,22 +6906,29 @@ currencyHandler = {
                 var _symbol = $(this).find('symbol'),
                     _iso = _symbol.attr('attr-iso');
                if(!_iso) _symbol.attr('attr-iso', $_settings.currBase);
-               if(!_symbol.text()) _symbol.text( $_settings.currCode[ $_settings.currBase.toLowerCase() ] );
+               if(!_symbol) _symbol.text( $_settings.currCode[ $_settings.currBase.toLowerCase() ] );
             });
         },
         
         // afterEvent
         afterEvent: function() {
-            currencyHandler.onChange(methods.getCach('currISO'));
+           currencyHandler.onChange(methods.getCach('currISO'));
             
           // body generate price
             //$_settings.currCode[ methods.getCach('currISO').toLowerCase() ]
-          $('.list_price .box-currence').each(function() {
+          $('.list_price').find('.box-currence').each(function() {
+              methods._die(  $(this)   );
+              
               var _symbol = $(this).find('symbol'), 
-                  _price = $(this).find('curr'),
-                  symbol = _symbol.text(), 
-                  price = _price.text(),
-                  iso = _symbol.attr('attr-iso');
+                  _price = $(this).find('div.curr'),
+                  symbol = (_symbol.length) ? _symbol.text() : false, 
+                  price = (_price.length) ? _price.text() : false,
+                  iso = (_price.length) ? _symbol.attr('attr-iso') : false;
+                  
+                  methods._die(  'afterEvent...'   );
+                  methods._die(  symbol   );
+                  methods._die(  price   );
+                  methods._die(  iso   );
                   
               if(price) {
                   _price.html( methods._convert( parseFloat(price), 
@@ -6882,7 +6938,9 @@ currencyHandler = {
                   _symbol.attr('attr-iso', methods.getCach('currISO'));   
                   _symbol.text( $_settings.currCode[ methods.getCach('currISO').toLowerCase() ] )
               }
+              
           });  
+          
         },
         
         run : function( params ) {
@@ -6924,6 +6982,7 @@ $(document).ready(function(){
           }
       },'show');
    } 
+   
 });
 // The plugin code
 (function($){

@@ -41,6 +41,10 @@
     padding: 0px;
 }
 
+.plr5 {
+    padding: 0px 5px;
+}
+
 .color-orange {
     color: #f5ac43;
 }
@@ -270,6 +274,14 @@
 
 .i-list-features-kik-chat {
     background-image: url('../images/technological/i-list-features-kik-chat.png');
+}
+
+.i-list-features-notes {
+    background-image: url('../images/technological/i-list-features-notes.png');
+}
+
+.i-list-features-snapchat {
+    background-image: url('../images/technological/i-list-features-snapchat.png');
 }
 
 /* --- \\ icon coming soon --- */

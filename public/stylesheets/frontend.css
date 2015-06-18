@@ -7374,7 +7374,9 @@ legend {
 .pb10 {
     padding-bottom:10px;  
 }
-
+.fz13i { 
+    font-size: 13px !important; 
+}
 /* =================== iphone_parental_monitoring ========================= */
 .iphone_parental_monitoring #block-table-header .visual-text h1.title {
     font-size: 32px;
@@ -7426,6 +7428,7 @@ legend {
         padding-left: 60px;
     }
 }*/
+
 /* ---- \\ icloud block ----- */
 .position-relative {
     position: relative;
@@ -14337,6 +14340,20 @@ form.form-contact-us .box-captcha {
     color: #303030;
 }
 
+.w25p {
+    width: 25%;
+}
+
+@media only screen and (max-width: 991px) {
+  .w25p {
+    width: 100%;
+  }
+}
+
+
+div.curr {
+    display: inline-block;
+}
 .border-top-bottom {
     border-color: #e8e8e8 !important;
     border-style: solid !important;
@@ -16117,6 +16134,18 @@ th .table_title {
     background: url('../images/icons/icon-skype.png') no-repeat;
     width: 23px;
     height: 23px;
+}
+
+.i-features-view-notes {
+    background: url('../images/icons/icon-notes_v2.png') no-repeat;
+    width: 19px;
+    height: 19px;
+}
+
+.i-features-monitor-snapchat {
+    background: url('../images/icons/icon-snapchat.png') no-repeat;
+    width: 20px;
+    height: 20px;
 }
 /* -------------// top banners ------------- */
 
@@ -18577,6 +18606,10 @@ ul.bxslider {
     padding: 0px;
 }
 
+.plr5 {
+    padding: 0px 5px;
+}
+
 .color-orange {
     color: #f5ac43;
 }
@@ -18806,6 +18839,14 @@ ul.bxslider {
 
 .i-list-features-kik-chat {
     background-image: url('../images/technological/i-list-features-kik-chat.png');
+}
+
+.i-list-features-notes {
+    background-image: url('../images/technological/i-list-features-notes.png');
+}
+
+.i-list-features-snapchat {
+    background-image: url('../images/technological/i-list-features-snapchat.png');
 }
 
 /* --- \\ icon coming soon --- */

@@ -76,7 +76,7 @@
                                 </div>
                                 <div class="col-sm-8 col-md-8">
                                     {foreach from=$getSetting._item.features key=name item=params}
-                                        <ul class="option_list">
+                                        <ul class="{if $getSetting._item.features|@count < 5}option_list w25p{else}option_list{/if}">
                                             <li>
                                                 <span>{$name}</span>
                                                 <ul>

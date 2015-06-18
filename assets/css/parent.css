@@ -594,6 +594,18 @@
     width: 23px;
     height: 23px;
 }
+
+.i-features-view-notes {
+    background: url('../images/icons/icon-notes_v2.png') no-repeat;
+    width: 19px;
+    height: 19px;
+}
+
+.i-features-monitor-snapchat {
+    background: url('../images/icons/icon-snapchat.png') no-repeat;
+    width: 20px;
+    height: 20px;
+}
 /* -------------// top banners ------------- */
 
 

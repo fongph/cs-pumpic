@@ -33,7 +33,7 @@
             imgVerticalAlign = "bottom"
             collg = "7"
             textAlign = "right"
-            title = "Parental Control Software <br/>for iPhone, iPad, <br/>and iPod Touch"
+            title = "Parental Control Software<br/> for iPhone, iPad<br/> and iPod Touch"
             description = "Keep track of your kids’ iOS devices remotely."
             promoBuyBlock = "no"
             listText = "control mobile phone usage|monitor Internet activity|follow location and route history"

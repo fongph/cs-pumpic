@@ -549,7 +549,9 @@ legend {
 .pb10 {
     padding-bottom:10px;  
 }
-
+.fz13i { 
+    font-size: 13px !important; 
+}
 /* =================== iphone_parental_monitoring ========================= */
 .iphone_parental_monitoring #block-table-header .visual-text h1.title {
     font-size: 32px;

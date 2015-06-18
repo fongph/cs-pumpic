@@ -101,12 +101,13 @@ class Compatibility {
                 rowid as id,
                 rowid as url,
                 longname as name,
-                REPLACE( `longname`, ' ', '-') as uri_name,
+                REPLACE( REPLACE( `longname`, ' ', '-'), '/', '-') as uri_name,
                 path_small as img, 
                 path_big as b_img,
                 path_middle as m_img,
                 os, 
                 os_ver as version,
+                gsm_module,
                 {$_fileds}    
                 tested FROM `phones`
             {$whereQuery} 
@@ -123,9 +124,9 @@ class Compatibility {
     public function getModel( $modelName ) {
         $found = $this->db->query("
             SELECT *,
-                 LOWER( REPLACE( `longname`, ' ', '-') ) as alies
+                 LOWER( REPLACE( REPLACE( `longname`, ' ', '-'), '/', '-') ) as alies
             FROM `phones`  
-            WHERE LOWER( REPLACE( `longname`, ' ', '-') ) = {$this->db->quote($modelName)}")->fetch();
+            WHERE LOWER( REPLACE( REPLACE( `longname`, ' ', '-'), '/', '-') ) = {$this->db->quote($modelName)}")->fetch();
         
         if($found)
             $found = self::phoneDataPrepare($found);
@@ -188,6 +189,9 @@ class Compatibility {
 
             ),
         );
+        
+        if(isset($data['gsm_module']) and !$data['gsm_module'])
+            unset($groups['Calls & SMS']);
         
         // only this OS
         $os_iOS = array(
@@ -343,7 +347,7 @@ class Compatibility {
         
         $_models = $this->db->query("
             SELECT *,
-                LOWER( REPLACE( `longname`, ' ', '-') ) as alies
+                LOWER( REPLACE( REPLACE( `longname`, ' ', '-'), '/', '-') ) as alies
             FROM `phones`  
             WHERE `cat_id` = ".$cat_id." ORDER BY `popularity`")->fetchAll();
         if(is_array($_models) and count($_models) > 0) {

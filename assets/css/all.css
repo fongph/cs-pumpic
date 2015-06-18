@@ -1,3 +1,4 @@
+
 /* ---- \\ icloud block ----- */
 .position-relative {
     position: relative;
@@ -6907,4 +6908,19 @@ form.form-contact-us .box-captcha {
 }
 .direct-login-footer .account-login {
     color: #303030;
+}
+
+.w25p {
+    width: 25%;
+}
+
+@media only screen and (max-width: 991px) {
+  .w25p {
+    width: 100%;
+  }
+}
+
+
+div.curr {
+    display: inline-block;
 }

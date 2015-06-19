@@ -27,7 +27,7 @@ class SimpleWpMapOptions {
 		update_option('simple_wp_disp_authors', $authors);
 		
 		if ($this->checkOrder($orderArray)) {
-			asort($orderArray); // sort the array here
+			// asort($orderArray); // sort the array here
 			update_option('simple_wp_disp_sitemap_order', $orderArray);
 		}
 	}

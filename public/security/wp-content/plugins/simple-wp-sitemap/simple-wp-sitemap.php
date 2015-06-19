@@ -129,7 +129,7 @@ class SimpleWpSitemap {
 		
 		if (isset($_POST['simple_wp_other_urls'], $_POST['simple_wp_block_urls'], $_POST['simple_wp_home_n'], $_POST['simple_wp_posts_n'], $_POST['simple_wp_pages_n'], $_POST['simple_wp_other_n'], $_POST['simple_wp_categories_n'], $_POST['simple_wp_tags_n'], $_POST['simple_wp_authors_n'])) {
 			
-			$options->setOptions($_POST['simple_wp_other_urls'], $_POST['simple_wp_block_urls'], (isset($_POST['simple_wp_attr_link']) ? 1 : 0), (isset($_POST['simple_wp_disp_categories']) ? 1 : 0), (isset($_POST['simple_wp_disp_tags']) ? 1 : 0), (isset($_POST['simple_wp_disp_authors']) ? 1 : 0), array('Home' => $_POST['simple_wp_home_n'], 'Posts' => $_POST['simple_wp_posts_n'], 'Pages' => $_POST['simple_wp_pages_n'], 'Other' => $_POST['simple_wp_other_n'], 'Categories' => $_POST['simple_wp_categories_n'], 'Tags' => $_POST['simple_wp_tags_n'], 'Authors' => $_POST['simple_wp_authors_n']));
+			$options->setOptions($_POST['simple_wp_other_urls'], $_POST['simple_wp_block_urls'], (isset($_POST['simple_wp_attr_link']) ? 1 : 0), (isset($_POST['simple_wp_disp_categories']) ? 1 : 0), (isset($_POST['simple_wp_disp_tags']) ? 1 : 0), (isset($_POST['simple_wp_disp_authors']) ? 1 : 0), array('Other' => $_POST['simple_wp_other_n'], 'Home' => $_POST['simple_wp_home_n'], 'Posts' => $_POST['simple_wp_posts_n'], 'Pages' => $_POST['simple_wp_pages_n'], 'Categories' => $_POST['simple_wp_categories_n'], 'Tags' => $_POST['simple_wp_tags_n'], 'Authors' => $_POST['simple_wp_authors_n']));
                         SimpleWpSitemap::saveSitemapInPublic();
                 } ?>
 		

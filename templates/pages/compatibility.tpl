@@ -56,7 +56,7 @@
                 <div class="row">
                     <div class="block-info-compatibility">
                         <h2>Popular models supported</h2>
-                        <span>sorted by popularity</span>
+                        <span>sorted in alphabetical order{*sorted by popularity*}</span>
                     </div>    
                 </div>
 

@@ -337,7 +337,7 @@ class Compatibility {
         $categoties = $this->db->query("
             SELECT *
             FROM `phones_category`  
-            WHERE `hidden` = 0 ORDER BY `sort`")->fetchAll();
+            WHERE `hidden` = 0 ORDER BY `name`, `sort`")->fetchAll(); // 
         if(is_array($categoties) and count($categoties) > 0) {
             return $categoties;
         } else

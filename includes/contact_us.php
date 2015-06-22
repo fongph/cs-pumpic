@@ -14,7 +14,7 @@ $_mail = new Phpmail( $config['db_blog'] );
  $smarty->compile_check = false;
  $smarty->force_compile = false;
  $smarty->debugging = false;
-
+ 
  
 // init function json
 function json_modifier($value) {

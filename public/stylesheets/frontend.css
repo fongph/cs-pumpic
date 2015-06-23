@@ -7399,6 +7399,10 @@ legend {
     } /* .iphone_parental_monitoring */
 }
 
+div.symbol {
+    display: inline;
+}
+
 /* =================== ios-monitoring-software ========================= */
 /*.ios-monitoring-software #block-table-header .visual-text h1.title {
     font-size: 32px;
@@ -17671,8 +17675,15 @@ form > table.pricing-second:after {
 }
 .pricep .list_price ul li{
     width: 84%;
-    height:38px;
+    height: 38px;
     line-height: 38px;
+    
+}
+
+.priceb .list_price ul li,
+.pricep .list_price ul li {
+    border-bottom: 1px solid transparent;
+    border-top: 1px solid transparent;
 }
 
 .label_radio .sp {
@@ -17688,9 +17699,21 @@ form > table.pricing-second:after {
 
 .priceb .list_price ul li:hover,
 .pricep .list_price ul li:hover {
-    border-top:1px solid #d8f3f1;
-    border-bottom:1px solid #d8f3f1;
+/*    border-top:1px solid #d8f3f1;
+    border-bottom:1px solid #d8f3f1;*/
     background: #fdfbf3;
+    border-bottom-color: #d8f3f1;
+    border-top-color: #d8f3f1;
+}
+
+.priceb .list_price ul li:hover > label {
+    
+}
+
+.priceb .list_price ul li:hover > label > span,
+.priceb .list_price ul li:hover > label > div.box-small-package {
+/*    display: inline-block;*/
+/*    margin-top: -1px;*/
 }
 
 /*.hover_label_radio:hover {

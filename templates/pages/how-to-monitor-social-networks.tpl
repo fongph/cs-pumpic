@@ -34,7 +34,7 @@
             imgAlign = "right"
             imgVerticalAlign = "bottom"
             textAlign = "right"
-            title = "How to Monitor Text Messages:<br/>Facebook, Instagram, Skype, Kik <br/>WhatsApp, Viber, and Snapchat"
+            title = "How to Monitor Text Messages:<br/>Facebook, Instagram, Skype, Kik<br/>WhatsApp, Viber, and Snapchat"
             description = "Prevent your kids from cyberbullies and online predators."
             promoBuyBlock = "no"
             listText = "control cell phone usage|follow online activity|track routes and location"

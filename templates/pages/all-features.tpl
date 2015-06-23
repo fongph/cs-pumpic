@@ -1365,6 +1365,7 @@
                                             <li>Browsing history</li>
                                             <li>Bookmarks list</li>
                                             <li>Calendar events</li>
+                                            <li>Location</li>
                                             <li>Photos</li>
                                             <li>Notes</li>
                                             <li>WhatsApp</li>

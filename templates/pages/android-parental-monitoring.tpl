@@ -32,7 +32,7 @@
             imgAlign = "right"
             imgVerticalAlign = "bottom"
             textAlign = "right"
-            title = "Android Parental Control <br/>Mobile Monitoring Software"
+            title = "Android Parental Control<br/>Mobile Monitoring Software"
             description = "Track your kids’ Android mobile phones remotely."
             promoBuyBlock = "no"
             listText = "control cell phone usage|follow online activity|track routes and location"

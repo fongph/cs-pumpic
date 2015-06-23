@@ -32,7 +32,7 @@
             imgAlign = "right"
             imgVerticalAlign = "bottom"
             textAlign = "right"
-            title = "Keylogger for Android, <br/>iPhone, iPad, and iPod Touch"
+            title = "Keylogger for Android,<br/>iPhone, iPad, and iPod Touch"
             description = "Track each tap and every button your kid presses."
             promoBuyBlock = "no"
             listText = "keep track of all keystrokes|follow password inputs|monitor Internet activity"

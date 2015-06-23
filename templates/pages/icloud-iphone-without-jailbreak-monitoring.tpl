@@ -35,7 +35,7 @@
             imgAlign = "right"
             imgVerticalAlign = "bottom"
             textAlign = "right"
-            title = "Apple Monitoring App  <br>iCloud Solution"
+            title = "Apple Monitoring App<br>iCloud Solution"
             description = "Enjoy multitask tracking without Jailbreak. 
                             <br>Control iPhone use. Follow communication and online activity."
                          
@@ -144,8 +144,8 @@
                                                                 <div class="wr_price_big">
                                                                     <span></span>
                                                                     <div class="box-currence">
-                                                                        <symbol attr-iso="usd">$</symbol>
-                                                                        <curr id="premium-price-per-month">6.99{*14.66*}</curr>
+                                                                        <div class="symbol" attr-iso="usd">$</div>
+                                                                        <div class="curr" id="premium-price-per-month">6.99{*14.66*}</div>
                                                                     </div><span> / month</span>
                                                                 </div>
                                                             </div>
@@ -193,7 +193,7 @@
                                                                                 
                                                                             <span class="sp_price">
                                                                                 <strong>
-                                                                                    <div class="box-currence"><symbol attr-iso="usd">$</symbol><curr>{$_item.price}</curr></div>
+                                                                                    <div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr">{$_item.price}</div></div>
                                                                                 </strong>
                                                                             </span>     
                                                                         </label>
@@ -239,7 +239,9 @@
                                                                 </li>
                                                                 <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Contacts <span>View existing contacts.</span></li>
                                                                 <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Photos <span>View camera shots and downloaded photos.</span></li>
-                                                                <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Skype <span>Monitor personal, group messages, and calls.</span></li>    
+                                                                <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Skype <span>Monitor personal, group messages, and calls.</span></li>
+                                                                
+                                                                <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Location <span>Track the exact location on the map.</span></li>
                                                             </ul>
                                                         </div>
                                                     </div>
@@ -360,7 +362,7 @@
                                     currentValue = (Math.floor(currentValue * 100) / 100).toFixed(2);
                                     $($(this).attr('data-target'))
                                         .html(currentValue)
-                                        .prev('symbol')
+                                        .prev('div.symbol')
                                         .html(symbols[$(this).attr('data-cur')] ? symbols[$(this).attr('data-cur')] : '');
                                 });
                                 </script>

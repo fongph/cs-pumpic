@@ -34,7 +34,7 @@
             imgAlign = "right"
             imgVerticalAlign = "bottom"
             textAlign = "right"
-            title = "Mobile Monitoring App <br>for Jailbroken iOS devices"
+            title = "Mobile Monitoring App<br>for Jailbroken iOS devices"
             description = "Enjoy remote tracking of Apple devices. 
                             <br />Control iPhone use. Follow location and online activity."
                             
@@ -140,8 +140,8 @@
                                                                     <div class="wr_price_big">
                                                                         <span></span>
                                                                         <div class="box-currence">
-                                                                            <symbol attr-iso="usd">$</symbol>
-                                                                            <curr id="basic-price-per-month">5.33{*11.33*}</curr>
+                                                                            <div class="symbol" attr-iso="usd">$</div>
+                                                                            <div class="curr" id="basic-price-per-month">5.33{*11.33*}</div>
                                                                         </div><span> / month</span>
                                                                     </div>
                                                                 </div>
@@ -187,7 +187,7 @@
                                                                                 </div>
                                                                                 <span class="sp_price">
                                                                                     <strong>
-                                                                                        <div class="box-currence"><symbol attr-iso="usd">$</symbol><curr>{$_item.price}</curr></div>
+                                                                                        <div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr">{$_item.price}</div></div>
                                                                                     </strong>
                                                                                 </span>
                                                                                     
@@ -300,8 +300,8 @@
                                                                     <div class="wr_price_big">
                                                                         <span></span>
                                                                         <div class="box-currence">
-                                                                            <symbol attr-iso="usd">$</symbol>
-                                                                            <curr id="premium-price-per-month">6.99{*14.66*}</curr>
+                                                                            <div class="symbol" attr-iso="usd">$</div>
+                                                                            <div class="curr" id="premium-price-per-month">6.99{*14.66*}</div>
                                                                         </div><span>/ month</span>
                                                                     </div>
                                                                 </div>
@@ -349,7 +349,7 @@
                                                                                     
                                                                                 <span class="sp_price">
                                                                                     <strong>
-                                                                                        <div class="box-currence"><symbol attr-iso="usd">$</symbol><curr>{$_item.price}</curr></div>
+                                                                                        <div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr">{$_item.price}</div></div>
                                                                                     </strong>
                                                                                 </span>    
                                                                             </label>
@@ -506,8 +506,8 @@
                                                                 <div class="wr_price_big">
                                                                     <span></span>
                                                                     <div class="box-currence">
-                                                                        <symbol attr-iso="usd">$</symbol>
-                                                                        <curr id="basic-price-bottom-per-month">5.33{*11.33*}</curr>
+                                                                        <div class="symbol" attr-iso="usd">$</div>
+                                                                        <div class="curr" id="basic-price-bottom-per-month">5.33{*11.33*}</div>
                                                                     </div><span> / month</span>
                                                                 </div>
                                                             </div>
@@ -555,7 +555,7 @@
                                                                                 
                                                                             <span class="sp_price">
                                                                                 <strong>
-                                                                                    <div class="box-currence"><symbol attr-iso="usd">$</symbol><curr>{$_item.price}</curr></div>
+                                                                                    <div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr">{$_item.price}</div></div>
                                                                                 </strong>
                                                                             </span>    
                                                                         </label>
@@ -590,8 +590,8 @@
                                                                 <div class="wr_price_big">
                                                                     <span></span>
                                                                     <div class="box-currence">
-                                                                        <symbol attr-iso="usd">$</symbol>
-                                                                        <curr id="premium-price-bottom-per-month">6.99{*14.66*}</curr>
+                                                                        <div class="symbol" attr-iso="usd">$</div>
+                                                                        <div class="curr" id="premium-price-bottom-per-month">6.99{*14.66*}</div>
                                                                     </div><span>/ month</span>
                                                                 </div>
                                                             </div>
@@ -638,7 +638,7 @@
                                                                                 
                                                                             <span class="sp_price">
                                                                                 <strong>
-                                                                                    <div class="box-currence"><symbol attr-iso="usd">$</symbol><curr>{$_item.price}</curr></div>
+                                                                                    <div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr">{$_item.price}</div></div>
                                                                                 </strong>
                                                                             </span>   
                                                                         </label>
@@ -701,7 +701,7 @@
                                     
                                     $($(this).attr('data-target'))
                                         .html(currentValue)
-                                        .prev('symbol')
+                                        .prev('div.symbol')
                                         .html(symbols[$(this).attr('data-cur')] ? symbols[$(this).attr('data-cur')] : '');
                                 });
                                 </script>

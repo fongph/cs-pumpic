@@ -574,6 +574,10 @@ legend {
     } /* .iphone_parental_monitoring */
 }
 
+div.symbol {
+    display: inline;
+}
+
 /* =================== ios-monitoring-software ========================= */
 /*.ios-monitoring-software #block-table-header .visual-text h1.title {
     font-size: 32px;

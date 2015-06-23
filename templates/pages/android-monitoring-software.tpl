@@ -32,7 +32,7 @@
             imgAlt = "Landing Mobile"
             imgAlign = "right"
             textAlign = "right"
-            title = "Android Parental<br /> Control App"
+            title = "Android Parental<br />Control App"
             description = "Pumpic takes care of your children safety.        
                            <br />Track your kids’ Android device remotely."
             promoBuyBlock = "no"

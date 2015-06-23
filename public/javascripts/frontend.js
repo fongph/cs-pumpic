@@ -6623,7 +6623,7 @@ currencyHandler = {
       var $this = {}, $rates = {}, $_html = "";
       
       var $_settings = {
-          'debug': true,
+          'debug': false,
           'api_key': '', // app_id=
           'host': '/currency.html',
           'currBase': 'USD',
@@ -6903,33 +6903,35 @@ currencyHandler = {
         // beforeEvent
         beforeEvent: function() {
             $('.box-currence').each(function() {
-                var _symbol = $(this).find('symbol'),
+                var _symbol = $(this).find('div.symbol'),
                     _iso = _symbol.attr('attr-iso');
-               if(!_iso) _symbol.attr('attr-iso', $_settings.currBase);
-               if(!_symbol) _symbol.text( $_settings.currCode[ $_settings.currBase.toLowerCase() ] );
+               if(!_iso.length) _symbol.attr('attr-iso', $_settings.currBase);
+               if(!_symbol.length) _symbol.text( $_settings.currCode[ $_settings.currBase.toLowerCase() ] );
             });
         },
         
         // afterEvent
         afterEvent: function() {
-           currencyHandler.onChange(methods.getCach('currISO'));
+          currencyHandler.onChange(methods.getCach('currISO'));
             
           // body generate price
             //$_settings.currCode[ methods.getCach('currISO').toLowerCase() ]
-          $('.list_price').find('.box-currence').each(function() {
-              methods._die(  $(this)   );
+          // jQuery('.list_price').find('.box-currence').each(function() {
+          $.each($('.list_price .box-currence'), function(i, boxCurr) {
+    
+              methods._die(  $(boxCurr)   );
               
-              var _symbol = $(this).find('symbol'), 
-                  _price = $(this).find('div.curr'),
-                  symbol = (_symbol.length) ? _symbol.text() : false, 
-                  price = (_price.length) ? _price.text() : false,
-                  iso = (_price.length) ? _symbol.attr('attr-iso') : false;
+              var _symbol = $( boxCurr ).find('div.symbol'), 
+                  _price = $( boxCurr ).find('div.curr'),
+                  symbol = (_symbol) ? _symbol.text() : false, 
+                  price = (_price) ? _price.text() : false,
+                  iso = (_price) ? _symbol.attr('attr-iso') : false;
                   
                   methods._die(  'afterEvent...'   );
                   methods._die(  symbol   );
                   methods._die(  price   );
                   methods._die(  iso   );
-                  
+                 
               if(price) {
                   _price.html( methods._convert( parseFloat(price), 
                                                 iso, 
@@ -6938,6 +6940,7 @@ currencyHandler = {
                   _symbol.attr('attr-iso', methods.getCach('currISO'));   
                   _symbol.text( $_settings.currCode[ methods.getCach('currISO').toLowerCase() ] )
               }
+              
               
           });  
           

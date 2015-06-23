@@ -147,7 +147,7 @@
                                                                 <img src="{$img}/basic_pack.png">
                                                             </div>
                                                             <div class="wr_price_big">
-                                                                <span></span><div class="box-currence"><symbol attr-iso="usd">$</symbol><div class="curr" id="basic-price-per-month">5.33{*11.33*}</div></div><span> / month</span>
+                                                                <span></span><div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr" id="basic-price-per-month">5.33{*11.33*}</div></div><span> / month</span>
                                                             </div>
                                                             
                                                             {*<div class="price-main">
@@ -200,7 +200,7 @@
                                                                             
                                                                         <span class="sp_price">
                                                                             <strong>
-                                                                                <div class="box-currence"><symbol attr-iso="usd">$</symbol><div class="curr">{$_item.price}</div></div>
+                                                                                <div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr">{$_item.price}</div></div>
                                                                             </strong>
                                                                         </span>   
                                                                         </label>
@@ -239,12 +239,12 @@
                                                                 <li data-toggle="tooltip" data-placement="top" title="View all videos stored on a device. <div class='br'><strong>iOS: Jailbreak Needed</strong></div>"><i class="icon-cancel"></i> Videos</li>
                                                                 <li data-toggle="tooltip" data-placement="top" title="Track conversations via Skype, WhatsApp, Viber, and Kik. Monitor WhatsApp calls (currently available for Android devices only). <div class='br'><strong>iOS: Jailbreak Needed</strong><br /><strong>Android: Root Required</strong></div>"><i class="icon-cancel"></i> Viber/WhatsApp/Skype/Kik</li>
                                                                 <li data-toggle="tooltip" data-placement="top" title="Monitor posted images and comments on Instagram. <div class='br'><strong>iOS: Jailbreak Needed</strong><br /><strong>Android: Root Required</strong></div>"><i class="icon-cancel"></i> Instagram</li>
-                                                                <li data-toggle="tooltip" data-placement="top" title="Monitor Snapchat photos, videos, and comments on the target iOS device. <div class='br'><strong>iOS: Jailbreak Needed</strong></div>"><i class="icon-cancel"></i> Snapchat</li>
+                                                                <li data-toggle="tooltip" data-placement="top" title="Monitor Snapchat photos, videos, and comments on the target iOS device. <div class='br'><strong>iOS: Jailbreak Needed</strong><br /><strong>Not available for Android</strong></div>"><i class="icon-cancel"></i> Snapchat</li>
                                                                 <li data-toggle="tooltip" data-placement="top" title="Track chats and calls on Facebook. Facebook call monitoring is currently available for Android devices only. <div class='br'><strong>iOS: Jailbreak Needed</strong><br /><strong>Android: Root Required</strong></div>"><i class="icon-cancel"></i> Facebook{*Messages*}</li>
                                                                 <li data-toggle="tooltip" data-placement="top" title="View all the previouse data ever stored on a device."><i class="icon-cancel"></i> Historical data</li> 
                                                                 <li data-toggle="tooltip" data-placement="top" title="Control devices remotely. <div class='br'><strong>iOS: Jailbreak Needed</strong></div><div class='br'><strong>Not supported: on Android 5.0{*4.4+*}.</strong></div>"><i class="icon-cancel"></i> SMS commands</li>
                                                                 <li data-toggle="tooltip" data-placement="top" title="View every keystroke typed on a target device. <div class='br'><strong>iOS: Jailbreak Needed</strong></div>"><i class="icon-cancel"></i> Keylogger</li>
-                                                                <li data-toggle="tooltip" data-placement="top" title="Monitor iPhones, iPads, and iPods Touch without jailbreak. View Calls, Text messages, Photos, Notes, Contacts, Browsing History, Bookmarks, Calendar, Skype, and WhatsApp.{*Monitoring of iPhones, iPads and iPods Touch without jailbreak.  View SMS, Calls, Contacts, Browser History, Bookmarks, Calendar events.*}"><i class="icon-cancel"></i> iCloud (<span class="fz13">jailbreak-free</span>)</li>
+                                                                <li data-toggle="tooltip" data-placement="top" title="Monitor iPhones, iPads, and iPods Touch without jailbreak. View Calls, Text messages, Photos, Location, Notes, Contacts, Browsing History, Bookmarks, Calendar, Skype, and WhatsApp.{*Monitoring of iPhones, iPads and iPods Touch without jailbreak.  View SMS, Calls, Contacts, Browser History, Bookmarks, Calendar events.*}"><i class="icon-cancel"></i> iCloud (<span class="fz13">jailbreak-free</span>)</li>
                                                                 
                                                                 {*<li data-toggle="tooltip" data-placement="top" title="View detailed data on incoming/outgoing calls: name, phone number, time and duration"><i class="icon-ok"></i> Calls history <span>(700 calls monthly)</span></li>
                                                                 <li data-toggle="tooltip" data-placement="top" title="View text message content with detailed data including name, phone number and time"><i class="icon-ok"></i> SMS history <span>(300 SMS monthly)</span></li>
@@ -300,7 +300,7 @@
 
                                                                             <span class="sp_price">
                                                                                 <strong>
-                                                                                    <div class="box-currence"><symbol attr-iso="usd">$</symbol><div class="curr">{$_item.price}</div></div>
+                                                                                    <div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr">{$_item.price}</div></div>
                                                                                 </strong>
                                                                             </span>   
                                                                         </label>
@@ -328,7 +328,7 @@
                                                                 <img src="{$img}/premium_pack.png">
                                                             </div>
                                                             <div class="wr_price_big">
-                                                                <span></span><div class="box-currence"><symbol attr-iso="usd">$</symbol><div class="curr" id="premium-price-per-month">6.99{*14.66*}</div></div><span>/ month</span>
+                                                                <span></span><div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr" id="premium-price-per-month">6.99{*14.66*}</div></div><span>/ month</span>
                                                             </div>
                                                             
                                                             
@@ -373,7 +373,7 @@
                                                                                 
                                                                             <span class="sp_price">
                                                                                 <strong>
-                                                                                    <div class="box-currence"><symbol attr-iso="usd">$</symbol><curr>{$_item.price}</curr></div>
+                                                                                    <div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr">{$_item.price}</div></div>
                                                                                 </strong>
                                                                             </span>   
                                                                         </label>
@@ -412,12 +412,12 @@
                                                                 <li data-toggle="tooltip" data-placement="top" title="View all videos stored on a device. <div class='br'><strong>iOS: Jailbreak Needed</strong></div>"><i class="icon-ok"></i> Videos</li>
                                                                 <li data-toggle="tooltip" data-placement="top" title="Track conversations via Skype, WhatsApp, Viber, and Kik. Monitor WhatsApp calls (currently available for Android devices only).<div class='br'><strong>iOS: Jailbreak Needed</strong><br /><strong>Android: Root Required</strong></div>"><i class="icon-ok"></i> Viber/WhatsApp/Skype/Kik</li>
                                                                 <li data-toggle="tooltip" data-placement="top" title="Monitor posted images and comments on Instagram. <div class='br'><strong>iOS: Jailbreak Needed</strong><br /><strong>Android: Root Required</strong></div>"><i class="icon-ok"></i> Instagram</li>
-                                                                <li data-toggle="tooltip" data-placement="top" title="Monitor Snapchat photos, videos, and comments on the target iOS device. <div class='br'><strong>iOS: Jailbreak Needed</strong></div>"><i class="icon-ok"></i> Snapchat</li>
+                                                                <li data-toggle="tooltip" data-placement="top" title="Monitor Snapchat photos, videos, and comments on the target iOS device. <div class='br'><strong>iOS: Jailbreak Needed</strong><br /><strong>Not available for Android</strong></div>"><i class="icon-ok"></i> Snapchat</li>
                                                                 <li data-toggle="tooltip" data-placement="top" title="Track chats and calls on Facebook. Facebook call monitoring is currently available for Android devices only.<div class='br'><strong>iOS: Jailbreak Needed</strong><br /><strong>Android: Root Required</strong></div>"><i class="icon-ok"></i> Facebook{*Messages*}</li>
                                                                 <li data-toggle="tooltip" data-placement="top" title="View all the previouse data ever stored on a device."><i class="icon-ok"></i> Historical data</li> 
                                                                 <li data-toggle="tooltip" data-placement="top" title="Control devices remotely. <div class='br'><strong>iOS: Jailbreak Needed</strong></div><div class='br'><strong>Not supported: on Android 5.0{*4.4+*}.</strong></div>"><i class="icon-ok"></i> SMS commands</li>
                                                                 <li data-toggle="tooltip" data-placement="top" title="View every keystroke typed on a target device. <div class='br'><strong>iOS: Jailbreak Needed</strong></div>"><i class="icon-ok"></i> Keylogger</li>
-                                                                <li data-toggle="tooltip" data-placement="top" title="Monitor iPhones, iPads, and iPods Touch without jailbreak. View Calls, Text messages, Photos, Notes, Contacts, Browsing History, Bookmarks, Calendar, Skype, and WhatsApp.{*Monitoring of iPhones, iPads and iPods Touch without jailbreak.  View SMS, Calls, Contacts, Browser History, Bookmarks, Calendar events.*}"><i class="icon-ok"></i> iCloud (<span class="fz13">jailbreak-free</span>)</li>
+                                                                <li data-toggle="tooltip" data-placement="top" title="Monitor iPhones, iPads, and iPods Touch without jailbreak. View Calls, Text messages, Photos, Location, Notes, Contacts, Browsing History, Bookmarks, Calendar, Skype, and WhatsApp.{*Monitoring of iPhones, iPads and iPods Touch without jailbreak.  View SMS, Calls, Contacts, Browser History, Bookmarks, Calendar events.*}"><i class="icon-ok"></i> iCloud (<span class="fz13">jailbreak-free</span>)</li>
                                                                 
                                                                 {*<li data-toggle="tooltip" data-placement="top" title="View detailed data on incoming/outgoing calls: name, phone number, time and duration"><i class="icon-ok"></i> Calls history <span>(Unlimited)</span></li>
                                                                 <li data-toggle="tooltip" data-placement="top" title="View text message content with detailed data including name, phone number and time"><i class="icon-ok"></i> SMS history <span>(Unlimited)</span></li>
@@ -468,7 +468,7 @@
                                                                                 
                                                                             <span class="sp_price">
                                                                                 <strong>
-                                                                                    <div class="box-currence"><symbol attr-iso="usd">$</symbol><curr>{$_item.price}</curr></div>
+                                                                                    <div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr">{$_item.price}</div></div>
                                                                                 </strong>
                                                                             </span>   
                                                                         </label>
@@ -504,7 +504,7 @@
                                             currentValue = (Math.floor(currentValue * 100) / 100).toFixed(2);
                                             $($(this).attr('data-target'))
                                                     .html(currentValue)
-                                                    .prev('symbol')
+                                                    .prev('div.symbol')
                                                     .html(symbols[$(this).attr('data-cur')] ? symbols[$(this).attr('data-cur')] : '');
                                         });
                                     </script>

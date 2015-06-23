@@ -32,7 +32,7 @@
             imgAlign = "right"
             imgVerticalAlign = "bottom"
             textAlign = "right"
-            title = "Prevent Online Dangers. <br />Pumpic Monitoring App."
+            title = "Prevent Online Dangers.<br />Pumpic Monitoring App."
             description = "Protect your kids before it is too late. <br />
             Track location. View calls and SMS. Monitor online activity."
             promoBuyBlock = "no"

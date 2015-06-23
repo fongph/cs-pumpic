@@ -34,7 +34,7 @@
             imgAlign = "right"
             imgVerticalAlign = "bottom"
             textAlign = "right"
-            title = "Apple Mobile <br>Monitoring App"
+            title = "Apple Mobile<br>Monitoring App"
             description = "Enjoy iOS multitask tracking with or without Jailbreak. 
                             <br>Track location. View calls and texts. Follow online activity."
             
@@ -114,8 +114,8 @@
                                                     <div class="wr_price_big">
                                                         <span></span>
                                                         <div class="box-currence">
-                                                            <symbol attr-iso="usd">$</symbol>
-                                                            <curr id="basic-price-per-month">5.33{*11.33*}</curr>
+                                                            <div class="symbol" attr-iso="usd">$</div>
+                                                            <div class="curr" id="basic-price-per-month">5.33{*11.33*}</div>
                                                         </div><span> / month</span>
                                                     </div>
                                                 </div>
@@ -162,7 +162,7 @@
                                                                     
                                                                 <span class="sp_price">
                                                                     <strong>
-                                                                        <div class="box-currence"><symbol attr-iso="usd">$</symbol><curr>{$_item.price}</curr></div>
+                                                                        <div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr">{$_item.price}</div></div>
                                                                     </strong>
                                                                 </span>   
                                                             </label>
@@ -197,8 +197,8 @@
                                                     <div class="wr_price_big">
                                                         <span></span>
                                                         <div class="box-currence">
-                                                            <symbol attr-iso="usd">$</symbol>
-                                                            <curr id="premium-price-per-month">6.99{*14.66*}</curr>
+                                                            <div class="symbol" attr-iso="usd">$</div>
+                                                            <div class="curr" id="premium-price-per-month">6.99{*14.66*}</div>
                                                         </div><span>/ month</span>
                                                     </div>
                                                 </div>
@@ -246,7 +246,7 @@
                                                                     
                                                                 <span class="sp_price">
                                                                     <strong>
-                                                                        <div class="box-currence"><symbol attr-iso="usd">$</symbol><curr>{$_item.price}</curr></div>
+                                                                        <div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr">{$_item.price}</div></div>
                                                                     </strong>
                                                                 </span>   
                                                             </label>
@@ -298,7 +298,7 @@
                                   </li>
                                   <li href="#" class="list-group-item">
                                     <p class="list-group-item-text">
-                                        <span class="title"><label class='block-number'>10</label> Monitoring features</span>
+                                        <span class="title"><label class='block-number'>11</label> Monitoring features</span>
                                         <span>Simple iCloud monitoring that does not require jailbreak of the target device.</span>
                                     </p>
                                   </li>
@@ -327,8 +327,8 @@
                                                     <div class="wr_price_big">
                                                         <span></span>
                                                         <div class="box-currence">
-                                                            <symbol attr-iso="usd">$</symbol>
-                                                            <curr id="premium-price-bottom-per-month">6.99{*14.66 *}</curr>
+                                                            <div class="symbol" attr-iso="usd">$</div>
+                                                            <div class="curr" id="premium-price-bottom-per-month">6.99{*14.66 *}</div>
                                                         </div><span> / month</span>
                                                     </div>
                                                 </div>
@@ -376,7 +376,7 @@
                                                                     
                                                                 <span class="sp_price">
                                                                     <strong>
-                                                                        <div class="box-currence"><symbol attr-iso="usd">$</symbol><curr>{$_item.price}</curr></div>
+                                                                        <div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr">{$_item.price}</div></div>
                                                                     </strong>
                                                                 </span>        
                                                             </label>
@@ -452,7 +452,7 @@
 
             $($(this).attr('data-target'))
                 .html(currentValue)
-                .prev('symbol')
+                .prev('div.symbol')
                 .html(symbols[$(this).attr('data-cur')] ? symbols[$(this).attr('data-cur')] : '');
         });
         </script>                                                

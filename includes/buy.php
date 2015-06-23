@@ -23,9 +23,9 @@ $order ->setLanding( $_landing );
 if (isset($_request['productID']) and $_productID = (int)$_request['productID']) {
     $_url = $order -> createOrder($_productID);
     
-//    if (isset($_GET['_ga'])) {
-//        $_url .= (parse_url($_url, PHP_URL_QUERY) ? '&' : '?') . '_ga=' . $_GET['_ga'];
-//    }
+    if (isset($_GET['_ga'])) {
+        $_url .= (parse_url($_url, PHP_URL_QUERY) ? '&' : '?') . '_ga=' . $_GET['_ga'];
+    }
 //    if (isset($_GET['_ga'])) {
 //        $_url .= (parse_url($_url, PHP_URL_QUERY) ? '&' : '?') . '_ga=' . $_GET['_ga'];
 //    }

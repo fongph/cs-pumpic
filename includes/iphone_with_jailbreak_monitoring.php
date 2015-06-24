@@ -44,4 +44,5 @@ if($_request['productID']) {
 
 // init output params!
 $smarty->assign('getProducts', $_sortingProducts);
+// $smarty->assign('_ga', (isset($_COOKIE['_ga'])) ? trim( strtolower($_COOKIE['_ga']), 'ga') : '' );
 $smarty->display($b_dir.'/templates/pages/iphone-with-jailbreak-monitoring.tpl');

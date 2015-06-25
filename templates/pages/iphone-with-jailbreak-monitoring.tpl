@@ -166,7 +166,7 @@
                                                             </div>        
                                                                     
                                                             <div class="list_price">
-                                                                <form name="price_basic" method="POST" action="/buy.html{nocache}{if isset($smarty.cookies._ga)}?_ga={$smarty.cookies._ga|trim:"GA"}{/if}{/nocache}" autocomplete="off">
+                                                                <form name="price_basic" method="POST" action="/buy.html" autocomplete="off">
                                                                     <input id='product_price_basic' type='hidden' name='price[productID]' value='0' class="product_price" />
                                                 
                                                                     <ul>
@@ -326,7 +326,7 @@
                                                             </div>        
                                                                     
                                                             <div class="list_price">
-                                                                <form name="price_premium" method="POST" action="/buy.html{nocache}{if isset($smarty.cookies._ga)}?_ga={$smarty.cookies._ga|trim:"GA"}{/if}{/nocache}" autocomplete="off">
+                                                                <form name="price_premium" method="POST" action="/buy.html" autocomplete="off">
                                                                     <input id='product_price_premium' type='hidden' name='price[productID]' value='0' class="product_price" />
                                                 
                                                                     <ul>
@@ -532,7 +532,7 @@
                                                         </div>        
                                                                 
                                                         <div class="list_price">
-                                                            <form name="price_basic_bottom" method="POST" action="/buy.html{nocache}{if isset($smarty.cookies._ga)}?_ga={$smarty.cookies._ga|trim:"GA"}{/if}{/nocache}" autocomplete="off">
+                                                            <form name="price_basic_bottom" method="POST" action="/buy.html" autocomplete="off">
                                                                 <input id='product_price_basic' type='hidden' name='price[productID]' value='0' class="product_price" />
 
                                                                 <ul>
@@ -616,7 +616,7 @@
                                                         </div>        
                                                                 
                                                         <div class="list_price">
-                                                            <form name="price_premium_bottom" method="POST" action="/buy.html{nocache}{if isset($smarty.cookies._ga)}?_ga={$smarty.cookies._ga|trim:"GA"}{/if}{/nocache}" autocomplete="off">
+                                                            <form name="price_premium_bottom" method="POST" action="/buy.html" autocomplete="off">
                                                                 <input id='product_price_premium' type='hidden' name='price[productID]' value='0' class="product_price" />
 
                                                                 <ul>
@@ -704,6 +704,19 @@
                                         .prev('div.symbol')
                                         .html(symbols[$(this).attr('data-cur')] ? symbols[$(this).attr('data-cur')] : '');
                                 });
+                                
+                                // вариант 1
+                                {*ga(function(tracker) {
+                                  var linkerParam = tracker.get('linkerParam');
+                                  console.log( linkerParam );
+                                });*}
+
+                                $(document).ready(function(){
+                                    $('form').submit(function(){
+                                        ga('linker:decorate', this);
+                                    });
+                                });
+                                
                                 </script>
                                 
                                 <div class="space_line"> </div>

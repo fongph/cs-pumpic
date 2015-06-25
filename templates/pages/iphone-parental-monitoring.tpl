@@ -12,6 +12,7 @@
 	
 	<!-- TOP MENU -->
 	{include file='../includes/main/main-top-menu.tpl'
+            demoHref = '/setDevice/126'
             cache_id = "includes_main_main-top-menu"
             nocache
         }

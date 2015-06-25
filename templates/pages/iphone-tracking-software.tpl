@@ -13,6 +13,8 @@
         <!-- TOP MENU -->
 
 	{include file='../includes/main/main-top-menu.tpl'
+            demoHref = '/setDevice/126'
+            storeHref = '/iphone-parental-monitoring.html'
             topmenu_active='home'
             cache_id = "includes_main_main-top-menu"
             nocache
@@ -140,7 +142,7 @@
                                             </div>    
                                                     
                                             <div class="list_price">
-                                                <form name="price_basic" method="POST" action="/buy.html{nocache}{if isset($smarty.cookies._ga)}?_ga={$smarty.cookies._ga|trim:"GA"}{/if}{/nocache}" autocomplete="off">
+                                                <form name="price_basic" method="POST" action="/buy.html" autocomplete="off">
                                                     <input id='product_price_basic' type='hidden' name='price[productID]' value='0' class="product_price" />
                                     
                                                     <ul>
@@ -170,7 +172,7 @@
                                                         {/foreach}
                                                         
                                                     </ul>
-                                                    <button class="btn btn-default ga-action-submit" 
+                                                    <button class="btn btn-default ga-action-click" 
                                                             ga-action ="click"
                                                             ga-category="iphone-tracking-software"
                                                             ga-label="buy basic"
@@ -224,7 +226,7 @@
                                                           
                                                     
                                             <div class="list_price">
-                                                <form name="price_premium" method="POST" action="/buy.html{nocache}{if isset($smarty.cookies._ga)}?_ga={$smarty.cookies._ga|trim:"GA"}{/if}{/nocache}" autocomplete="off">
+                                                <form name="price_premium" method="POST" action="/buy.html" autocomplete="off">
                                                     <input id='product_price_premium' type='hidden' name='price[productID]' value='0' class="product_price" />
                                     
                                                     <ul>
@@ -253,7 +255,7 @@
                                                         </li>
                                                         {/foreach}
                                                     </ul>
-                                                    <button class="btn btn-default ga-action-submit"
+                                                    <button class="btn btn-default ga-action-click"
                                                             ga-action ="click"
                                                             ga-category="iphone-tracking-software"
                                                             ga-label="buy premium"
@@ -353,7 +355,7 @@
                                             </div>         
                                                      
                                             <div class="list_price">
-                                                <form name="price_premium_bottom" method="POST" action="/buy.html{nocache}{if isset($smarty.cookies._ga)}?_ga={$smarty.cookies._ga|trim:"GA"}{/if}{/nocache}" autocomplete="off">
+                                                <form name="price_premium_bottom" method="POST" action="/buy.html" autocomplete="off">
                                                     <input id='product_price_premium' type='hidden' name='price[productID]' value='0' class="product_price" />
                                     
                                                     <ul>
@@ -384,7 +386,7 @@
                                                         {/foreach}
                                                        
                                                     </ul>
-                                                    <button class="btn btn-default ga-action-submit" 
+                                                    <button class="btn btn-default ga-action-click" 
                                                             ga-action ="click"
                                                             ga-category="iphone-tracking-software"
                                                             ga-label="buy premium icloud"
@@ -455,6 +457,19 @@
                 .prev('div.symbol')
                 .html(symbols[$(this).attr('data-cur')] ? symbols[$(this).attr('data-cur')] : '');
         });
+        
+        // вариант 1
+        {*ga(function(tracker) {
+          var linkerParam = tracker.get('linkerParam');
+          console.log( linkerParam );
+        });*}
+        
+        $(document).ready(function(){
+            $('form').submit(function(){
+                ga('linker:decorate', this);
+            });
+        });
+        
         </script>                                                
 
         

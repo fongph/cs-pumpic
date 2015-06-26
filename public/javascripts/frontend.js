@@ -3463,6 +3463,18 @@ $(function() {
            }); 
         }
         
+        // ga form
+        // вариант 1
+//        ga(function(tracker) {
+//          var linkerParam = tracker.get('linkerParam');
+//          console.log( linkerParam );
+//        });
+
+       if($('form[name="price_premium_bottom"], form[name="price_basic_bottom"], form[name="price_premium"], form[name="price_basic"]').length) {
+        $('form[name="price_premium_bottom"], form[name="price_basic_bottom"], form[name="price_premium"], form[name="price_basic"]').submit(function(){
+            ga('linker:decorate', this);
+        });
+       }
 });
 
 //http://stackoverflow.com/questions/12214654/jquery-1-8-find-event-handlers

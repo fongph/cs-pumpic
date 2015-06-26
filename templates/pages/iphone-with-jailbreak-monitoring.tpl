@@ -704,19 +704,6 @@
                                         .prev('div.symbol')
                                         .html(symbols[$(this).attr('data-cur')] ? symbols[$(this).attr('data-cur')] : '');
                                 });
-                                
-                                // вариант 1
-                                {*ga(function(tracker) {
-                                  var linkerParam = tracker.get('linkerParam');
-                                  console.log( linkerParam );
-                                });*}
-
-                                $(document).ready(function(){
-                                    $('form').submit(function(){
-                                        ga('linker:decorate', this);
-                                    });
-                                });
-                                
                                 </script>
                                 
                                 <div class="space_line"> </div>

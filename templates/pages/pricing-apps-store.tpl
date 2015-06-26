@@ -540,9 +540,6 @@
     <script type="text/javascript">
     {literal}
     $(document).ready(function(){
-        $('form').submit(function(){
-            ga('linker:decorate', this);
-        });
         $('[data-toggle="tooltip"]').tooltip({
             placement:'top',
             animation:false,

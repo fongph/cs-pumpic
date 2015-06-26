@@ -16,7 +16,7 @@
                     </div>
                         
                      <div class='box-cp pull-right'>   
-                        <a href="{getDemoLink domain=$domain}" class="btn btn-sm btn-orange btn-success visible-lg cp-login">Demo</a>
+                        <a href="{if isset($demoHref)}http://demo.{$domain}{$demoHref}{else}{getDemoLink domain=$domain}{/if}" class="btn btn-sm btn-orange btn-success visible-lg cp-login">Demo</a>
                     </div>   
                         
                     {*if ''|hasUser} 
@@ -47,7 +47,7 @@
                                 ga-category="store link"
                                 ga-label="header"
                                 >
-                                <a href="/store.html">Store</a>
+                                <a href="{if isset($storeHref)}{$storeHref}{else}/store.html{/if}">Store</a>
                             </li>
                             
                             <li {if isset($topmenu_active) && $topmenu_active=='compatibility'} class="active"{/if}>
@@ -84,7 +84,8 @@
                             </li>
 
                             <li>
-                                <a href="http://demo.{$domain}/setDevice/125?redirect_url=cp/calls" class="btn btn-sm btn-orange btn-success hidden-lg cp-login"> Demo</a>
+                                <a href="http://demo.{$domain}{if isset($demoHref)}{$demoHref}{else}/setDevice/125?redirect_url=cp/calls{/if}" 
+                                   class="btn btn-sm btn-orange btn-success hidden-lg cp-login"> Demo</a>
                             </li>
                             
                             {*if ''|hasUser}

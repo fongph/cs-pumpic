@@ -14,12 +14,10 @@
 
 	{include file='../includes/main/main-top-menu.tpl'
             demoHref = '/setDevice/126'
-            storeHref = '/iphone-parental-monitoring.html'
             topmenu_active='home'
             cache_id = "includes_main_main-top-menu"
             nocache
         }
-        
         {*
             Template: PHONE
             Переменные:

@@ -6783,8 +6783,8 @@ currencyHandler = {
                 '_filter': $_settings.filter // set filter in iso
             }; 
             
-            if( $("body").hasClass("ie8") ) { 
-                methods._die('Load ie8 ...');
+            if( $("body").hasClass("ie8") || $("body").hasClass("ie9") ) { 
+                methods._die('Load ie8 or ie9 ...');
                 // fix for ie8
                 var responce = $.ajax({
                    type: $_settings.ajax.type,
@@ -9192,13 +9192,15 @@ $('form[name="send_find_phone"] button.event-submit').click(function(){
     
         
     // bootstrap clic popUp
-    $(".youtube").YouTubeModal({
-        autoplay:1, 
-        autohide: 1,
-        width:820, 
-        height:520, 
-        theme: 'darck'
-    });
+    if($(".youtube").length) {
+        $(".youtube").YouTubeModal({
+            autoplay:1, 
+            autohide: 1,
+            width:820, 
+            height:520, 
+            theme: 'darck'
+        });
+    }
     
    /*
    $('a#openBtnVideo').click(function(e){

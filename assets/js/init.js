@@ -1946,13 +1946,15 @@ $('form[name="send_find_phone"] button.event-submit').click(function(){
     
         
     // bootstrap clic popUp
-    $(".youtube").YouTubeModal({
-        autoplay:1, 
-        autohide: 1,
-        width:820, 
-        height:520, 
-        theme: 'darck'
-    });
+    if($(".youtube").length) {
+        $(".youtube").YouTubeModal({
+            autoplay:1, 
+            autohide: 1,
+            width:820, 
+            height:520, 
+            theme: 'darck'
+        });
+    }
     
    /*
    $('a#openBtnVideo').click(function(e){

@@ -179,8 +179,8 @@ currencyHandler = {
                 '_filter': $_settings.filter // set filter in iso
             }; 
             
-            if( $("body").hasClass("ie8") ) { 
-                methods._die('Load ie8 ...');
+            if( $("body").hasClass("ie8") || $("body").hasClass("ie9") ) { 
+                methods._die('Load ie8 or ie9 ...');
                 // fix for ie8
                 var responce = $.ajax({
                    type: $_settings.ajax.type,

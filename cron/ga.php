@@ -31,8 +31,8 @@
      *    https://console.developers.google.com
      */
 
-    ini_set('display_errors', 1);
-    error_reporting(-1);
+    //ini_set('display_errors', 1);
+    //error_reporting(-1);
 
     date_default_timezone_set("UTC");
     session_start();

@@ -1,4 +1,6 @@
 <?php
+session_start();
+date_default_timezone_set('Europe/Kiev');
 
 ini_set('display_errors', 1);
 error_reporting(-1);
@@ -184,7 +186,7 @@ function getService()
   // Use the developers console and replace the values with your
   // service account email, and relative location of your key file.
   $service_account_email = '35839110757-7759svhb01lfqel581c83dv0b60apaof@developer.gserviceaccount.com';
-  $key_file_location = './p12/Pumpic-50cc9c322908.p12';
+  $key_file_location = './p12/Pumpic-50cc9c322908.p12'; // './p12/Pumpic-50cc9c322908.p12';
 
   // Create and configure a new client object.
   $client = new Google_Client();

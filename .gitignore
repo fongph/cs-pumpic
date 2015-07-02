@@ -9,3 +9,4 @@
 /.idea
 /public/security_old/*
 /public/sitemap.xml
+/logs/*

@@ -1956,6 +1956,7 @@ $('form[name="send_find_phone"] button.event-submit').click(function(){
         });
     }
     
+    
    /*
    $('a#openBtnVideo').click(function(e){
         e.preventDefault();

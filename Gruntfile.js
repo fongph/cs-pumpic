@@ -49,6 +49,7 @@ module.exports = function (grunt) {
                     './assets/js/jquery.ba-hashchange.min.js',
                     './assets/js/jquery.total-storage.min.js', 
                     './assets/js/browser.js',
+                    './assets/js/button.js',
                     './assets/js/wp/settings.js',
                     './assets/js/wp/init.js',
                     './assets/js/fly_feachers.js',

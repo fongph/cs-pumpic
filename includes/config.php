@@ -107,6 +107,10 @@ $config = array(
             PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
             PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC
     ),
+    
+    'cron' => array(
+        'log_path' => '/var/www/pumpic/www/pumpic.com/current/cron/logs',
+    ),
 );
 if (is_file(__DIR__ . '/config.development.php')) {
     define('SITE_ID', 0);

@@ -45,6 +45,7 @@ class GoogleAnalyticsAPI extends GALog {
 	 * @param String $auth (default: 'web') 'web' for Web-applications with end-users involved, 'service' for service applications (server-to-server)
 	 */
 	public function __construct($auth='web') {
+                global $config;
                 
 		if (!function_exists('curl_init')) throw new GAExeptions('The curl extension for PHP is required.');
 		$this->auth = ($auth == 'web') ? new GoogleOauthWeb() : new GoogleOauthService();
@@ -56,7 +57,8 @@ class GoogleAnalyticsAPI extends GALog {
                 $this -> getLogger();
                 
                 /* log params */
-                $this -> logPath = dirname( dirname( dirname( __DIR__ ) ) ).'/cron/log';
+                $this -> logPath = $config['cron']['log_path']; // dirname( dirname( dirname( __DIR__ ) ) ).'/cron/log';
+                echo "path = ".$this -> logPath; die('stop');
                
 	}
 

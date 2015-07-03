@@ -61,7 +61,7 @@
         
         const GA_CLIENT_ID = '35839110757-7759svhb01lfqel581c83dv0b60apaof.apps.googleusercontent.com';
         const GA_EMAIL = '35839110757-7759svhb01lfqel581c83dv0b60apaof@developer.gserviceaccount.com';
-        const GA_PATH_P12 = '/p12/Pumpic-8d3b545958ff.p12';
+        const GA_PATH_P12 = '/p12/Pumpic-50cc9c322908.p12';
         
         // Analytics account id like, 'ga:xxxxxxx'
         const ACCOUNT_ID = 'ga:93503867'; //'ga:97633209'; // 'ga:103771050';

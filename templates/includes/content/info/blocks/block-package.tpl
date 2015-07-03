@@ -11,7 +11,7 @@
                    ga-action ="click"
                    ga-category="premium"
                    ga-label="plan premium packahe"
-                   href='{if isset($planPackageBuyUrl) && $planPackageBuyUrl != ""}{$planPackageBuyUrl}{else}/store.html{/if}'>Start Now!</a>
+                   href='{if isset($planPackageBuyUrl) && $planPackageBuyUrl != ""}{$planPackageBuyUrl}{else}/store.html{/if}'>Learn More{*Start Now!*}</a>
             {else}    
             <form method="POST" action="{if isset($planPackageBuyUrl) && $planPackageBuyUrl != ""}{$planPackageBuyUrl}{else}/store.html{/if}" autocomplete="off">
                 {*<input type='hidden' name='price[productID]' value='19' />*}
@@ -23,7 +23,7 @@
                         ga-action ="click"
                         ga-category="premium"
                         ga-label="plan premium packahe"
-                        >Start Now!</button>
+                        >Learn More{*Start Now!*}</button>
             </form>
             {/if}    
         </section>

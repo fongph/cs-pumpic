@@ -48,8 +48,15 @@
                 <h2 class="text-center">{if isset($title)}{$title}{else}Pumpic Features{/if}</h2>
                 <div class="row">
                     <div id="table-container" class="table-col-3 table-md-col-3 table-sm-col-3">
-                        <article>{if isset($description)}{$description}{else}Pumpic is reasonably improved mobile phone tracking software, which comes with a large range of monitoring functions. 
-                            They will help you keep track of the target device quickly and quite.{/if}</article>
+                        <article>
+                            {if isset($description)}
+                                {$description}
+                            {else}
+                                Pumpic is a reliable parental control application designed to protect children and prevent dangers they may face. It comes with more than 24 useful monitoring features, which cover as many parts of your kid’s life as possible. Both online and during daily activities, the app provides all-round protection and secures family happiness.
+                                {*Pumpic is reasonably improved mobile phone tracking software, which comes with a large range of monitoring functions. 
+                            They will help you keep track of the target device quickly and quite.*}
+                            {/if}
+                        </article>
                         <section>
                             {include file='../content/table-items/feature-items.tpl'}    
                         </section>

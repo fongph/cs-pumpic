@@ -4,6 +4,7 @@ Disallow: */tag/*
 Disallow: /restore.html
 Disallow: /login.html
 Disallow: /policy.html
+Disallow: /tos.txt
 
 Disallow: /wp-content
 Disallow: /wp-admin

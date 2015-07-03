@@ -58,7 +58,6 @@ class GoogleAnalyticsAPI extends GALog {
                 
                 /* log params */
                 $this -> logPath = $config['cron']['log_path']; // dirname( dirname( dirname( __DIR__ ) ) ).'/cron/log';
-                echo "path = ".$this -> logPath; die('stop');
                
 	}
 

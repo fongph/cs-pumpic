@@ -1,4 +1,8 @@
 <?php
+if ( function_exists( 'session_cache_limiter' ) ) :
+    session_cache_limiter('public');
+endif;
+
 function shailan_redirect_404( $_redirect ) {
     global $wp_query;
     if ( $_redirect ) {

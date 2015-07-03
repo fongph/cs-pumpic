@@ -56,7 +56,7 @@
                                     </div>
                                     <div class="item-404 col-lg-4 col-md-4 col-sm-12">
                                         <section>
-                                            <span class="title"><b>Contacts Us</b></span>
+                                            <span class="title"><b>Contact Us</b></span>
                                             <p>We will help you find what you’ve been looking for. </p>
                                             <div class="clearfix">
                                                 <a class="btn-white" href="/faq.html">Contact</a>

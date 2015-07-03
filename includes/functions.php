@@ -6,6 +6,10 @@ function di() {
 
 function dispatch($urlParams, $config){
     global $smarty;
+    
+    // Expires
+     header('Expires: '.gmdate('D, d M Y H:i:s \G\M\T', time() + 3600));
+    
     if (!empty($_SERVER["HTTP_REFERER"]) ) {
         $_url = parse_url($_SERVER['HTTP_REFERER']);  
         if(!isset($_COOKIE['orders_referer']) and isset($_url['host']) and !preg_match('/((.*)\.|^)pumpic\.com/i', trim($_url['host'])) ) {

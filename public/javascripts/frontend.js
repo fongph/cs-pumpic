@@ -8469,7 +8469,7 @@ $(document).ready(function(){
         onsubmit: true,
         focusInvalid: false,
         focusCleanup: false,
-        debug: false,
+        debug: true,
         ignore: "not:hidden",
        'name': {
             required: true

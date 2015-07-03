@@ -18,7 +18,10 @@ a.a-default:hover {
     direction: rtl;
 }
 
+.pt5 { padding-top: 5px; }
 .pt15 { padding-top: 15px; }
+.pt20 { padding-top: 20px; }
+.pt25 { padding-top: 25px; }
 .pt30 { padding-top: 30px; }
 
 .display-block { display: block !important; }

@@ -14990,6 +14990,28 @@ div.curr {
     font-size: 32px;
 }
 
+.padding-null { padding: 0px !important; }
+
+/* ==== // banners ====== */
+.box-right-banners {
+    text-align: center;
+}
+.box-right-banners label {
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.box-right-banners a {
+    display: inline-block;
+}
+.box-right-banners a:hover { cursor: pointer; }
+.box-right-banners img {
+    max-width: 295px;
+    width: 100%;
+    max-height: 157px;
+    height: 100%;
+}
 /* ============= // body ============ */
 #box-content-post {
     display: block;

@@ -147,8 +147,8 @@ class Phpmail extends Settings
                 $browserInfo = $this->getBrowser();
                 
                 try {
-                    $this->sender->sendSystemCompatibility(self::mail_support, $params['email'], $params['device-model'], $browserInfo);
-                    $this->sender->sendCompatibility($params['email'], $params['device-model'], $browserInfo);
+                    $this->sender->sendSystemCompatibility(self::mail_support, $params['email'], $params['device-model'], $_uid, $browserInfo);
+                    $this->sender->sendCompatibility($params['email'], $params['device-model'], $_uid, $browserInfo);
                     
                     $eventManager = \EventManager\EventManager::getInstance();
                     $eventManager->emit('front-compatibility-completed', array(
@@ -199,8 +199,8 @@ class Phpmail extends Settings
                 $browserInfo = $this->getBrowser();
                 
                 try {
-                    $this->sender->sendSystemMobileOperators(self::mail_support, $params['email'], $params['carrier'], $browserInfo);
-                    $this->sender->sendMobileOperators($params['email'], $params['carrier'], $browserInfo);
+                    $this->sender->sendSystemMobileOperators(self::mail_support, $params['email'], $params['carrier'], $_uid, $browserInfo);
+                    $this->sender->sendMobileOperators($params['email'], $params['carrier'], $_uid, $browserInfo);
                     
                     $eventManager = \EventManager\EventManager::getInstance();
                     $eventManager->emit('front-carriers-completed', array(
@@ -310,8 +310,8 @@ class Phpmail extends Settings
                 $browserInfo = $this->getBrowser();
                 
                 try {
-                    $this->sender->sendSystemContactUs(self::mail_support, $params['name'], $params['email'], $params['os'], $params['description'], $browserInfo);
-                    $this->sender->sendContactUs($params['email'], $params['name'], $params['os'], $params['description'], $browserInfo);
+                    $this->sender->sendSystemContactUs(self::mail_support, $params['name'], $params['email'], $params['os'], $params['description'], $_uid, $browserInfo);
+                    $this->sender->sendContactUs($params['email'], $params['name'], $params['os'], $params['description'], $_uid, $browserInfo);
                  
                     $eventManager = \EventManager\EventManager::getInstance();
                     $eventManager->emit('front-contact-us-completed', array(

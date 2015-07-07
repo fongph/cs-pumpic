@@ -38,11 +38,6 @@ if(isset($_POST['email']) and !$obj -> validateEmail($_POST['email'])) {
     $_respons = $obj->_initAfter($_params) -> registration -> respons;
 
     if($_result['_success']) {
-        $eventManager = EventManager\EventManager::getInstance();
-        $eventManager->emit('front-registration-completed', array(
-            'email' => $_POST['email']
-        ));
-        
         $_result['_success'] = 'Successful registration.';
     } 
 
@@ -59,8 +54,14 @@ if($_result['_success']) {
            $obj -> _redirect( $_url ); 
         } else
             $obj -> _redirect('/#popUp=registration');
-    } else
+    } else {
+        $eventManager = \EventManager\EventManager::getInstance();
+        $eventManager->emit('front-registration-completed', array(
+            'email' => $_POST['email']
+        ));
+        
         $obj -> _redirect('/#popUp=registration'); 
+    }
 
 }
 

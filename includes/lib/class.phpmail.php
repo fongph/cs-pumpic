@@ -150,7 +150,12 @@ class Phpmail extends Settings
                     $this->sender->sendSystemCompatibility(self::mail_support, $params['email'], $params['device-model'], $browserInfo);
                     $this->sender->sendCompatibility($params['email'], $params['device-model'], $browserInfo);
                     
-                     $this ->updateOptionValue('Compatibility_pumpic', $_uid);
+                    $eventManager = \EventManager\EventManager::getInstance();
+                    $eventManager->emit('front-compatibility-completed', array(
+                        'email' => $params['email']
+                    ));
+                    
+                    $this ->updateOptionValue('Compatibility_pumpic', $_uid);
                     
                     $this -> _messange['success'] =  'Ticket #'. $_uid .' has been successfully sent.<br />
                                                      Our support representative will contact you as soon as possible.';
@@ -196,6 +201,11 @@ class Phpmail extends Settings
                 try {
                     $this->sender->sendSystemMobileOperators(self::mail_support, $params['email'], $params['carrier'], $browserInfo);
                     $this->sender->sendMobileOperators($params['email'], $params['carrier'], $browserInfo);
+                    
+                    $eventManager = \EventManager\EventManager::getInstance();
+                    $eventManager->emit('front-carriers-completed', array(
+                        'email' => $params['email']
+                    ));
                     
                     $this ->updateOptionValue('Mobile_operators_pumpic', $_uid);
                     
@@ -303,6 +313,11 @@ class Phpmail extends Settings
                     $this->sender->sendSystemContactUs(self::mail_support, $params['name'], $params['email'], $params['os'], $params['description'], $browserInfo);
                     $this->sender->sendContactUs($params['email'], $params['name'], $params['os'], $params['description'], $browserInfo);
                  
+                    $eventManager = \EventManager\EventManager::getInstance();
+                    $eventManager->emit('front-contact-us-completed', array(
+                        'email' => $params['email']
+                    ));
+                    
                     $this ->updateOptionValue('contactUs_pumpic', $_uid);
                     $this -> _messange['success'] = 'Ticket #'. $_uid .' has been successfully sent.<br />Our support representative will contact you as soon as possible.';
                 } catch (\Exception $e) {

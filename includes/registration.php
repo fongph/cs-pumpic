@@ -38,6 +38,11 @@ if(isset($_POST['email']) and !$obj -> validateEmail($_POST['email'])) {
     $_respons = $obj->_initAfter($_params) -> registration -> respons;
 
     if($_result['_success']) {
+        $eventManager = EventManager\EventManager::getInstance();
+        $eventManager->emit('front-registration-completed', array(
+            'email' => $_POST['email']
+        ));
+        
         $_result['_success'] = 'Successful registration.';
     } 
 

@@ -32,6 +32,7 @@ require_once 'smarty.config.php';
 
 /* list order */
 $products = $obj ->getProducts('first');
+
 $_sortingProducts = array('basic' => array(), 'premium' => array());
 if(is_array($products)) {
     // Basic
@@ -56,6 +57,7 @@ if($_request['productID']) {
 
     if($_request['productID'] and $obj -> getUserIdByAuth()) {
         // $_order ->unsetSession('pumpic_order'); // clear session
+        
         $_url = $obj -> createOrder((int)$_request['productID']);
         if($_url) {
             $obj -> _redirect( $_url );

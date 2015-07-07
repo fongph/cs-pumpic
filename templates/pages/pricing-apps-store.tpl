@@ -180,7 +180,6 @@
                                                             <div class="list_price">
                                                             <form name="price_basic" method="POST" action="/buy.html" autocomplete="off">
                                                                 <input id='product_price_basic' type='hidden' name='price[productID]' value='0' class="product_price" />
-                                                               
                                                                 <ul>
                                                                     {foreach from=$getProducts.basic key=key item=_item}
                                                                     <li class= "">

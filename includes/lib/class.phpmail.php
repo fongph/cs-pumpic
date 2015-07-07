@@ -32,6 +32,12 @@ class Phpmail extends Settings
     private $_order;
     private $_pdo;
     
+    /**
+     *
+     * @var \CS\Mail\MailSender
+     */
+    private $sender;
+    
     private $_browser = array();
     
     private $_messange = [
@@ -46,7 +52,12 @@ class Phpmail extends Settings
         $this -> setLocale('en-En') 
                 ->setSiteId(1)
                 ->setSystem(0);
+
         $this -> initBrowser();
+        
+        $di = di();
+        
+        $this->sender = $di['mailSender'];
     }
     
     private function setData($_from, $_to, $type = 'main', $replyTo = '', $_params = array()) 
@@ -120,8 +131,6 @@ class Phpmail extends Settings
     {
         
         if(is_array($params) and count($params) > 0) {
-            $_id = rand(0, 9000000);
-            
             if(!$this -> validateEmail($params['email'])) {
                 $this -> _messange['error']['email'] = self::error_email;
             } else if(empty($params['device-model']) or strlen( $params['device-model']) < 3 ) {
@@ -129,81 +138,26 @@ class Phpmail extends Settings
             } elseif( isset($params['captcha']) and !$this ->_order-> validateCaptcha( $params['captcha'] ) ) {
                 $this -> _messange['error']['captcha'] = self::error_captcha;
             } else {
-                
-                $_params = array(
-                   'deviceModel'    => $params['device-model'],
-                   'email'          => $params['email'],
-                    '_browser'      => $this -> getBrowser(),
-                   // 'subject'        => [ 'contactUs_pumpic' => 'Contact US #pp '.$_id], 
-                );
-                
-                if($opt_value = $this ->getOptionValue( 'Compatibility_pumpic' ) and $opt_value >= self::COMPATIBILITY_START_ID) {
+                if ($opt_value = $this ->getOptionValue('Compatibility_pumpic') and $opt_value >= self::COMPATIBILITY_START_ID) {
                     $_uid = $opt_value + 1; 
                 } else {
                     $_uid = self::COMPATIBILITY_START_ID;
                 }
                 
-                if(!$sm_arr = $this ->saveDB(array(
-                    'to' => self::mail_support,
-                    'from' => $params['email'],
-                    'type' => 'Compatibility_pumpic',
-                ))) { 
-                    $this -> _messange['error'] = 'Fatal Error! Dont save in DB!'; 
-                    return $this -> _messange;
-                }
+                $browserInfo = $this->getBrowser();
                 
-                $_params = array_merge( $_params, array('uid' => $_uid) );
-                
-                
-                
-                $this ->setSendmail(array( 'subject' => 'Compatibility request #C'.$_uid.' - '.$_params['email'], 
-                                            'uid' => $_uid,
-                                            'params' =>  serialize($_params) ), "id = ". (int)$sm_arr['id']);
-                
-                // log in ControlAdmin
-                if($user = $this -> _order ->getUserDataEmail( $params['email'] ) and isset($user['id']))
-                    $this -> _order ->setLogMailSender($user['id'], 'Compatibility_pumpic_sendUser');
-                
-                // sendMail Api (go support)
-                $_data = $this ->setData($params['email'], 
-                                        self::mail_support, 
-                                        'Compatibility_pumpic', 
-                                        $params['email'], 
-                                        $_params) -> sendMAil();
-                
-                if(!$this ->saveDB(array(
-                    'to' => $params['email'],
-                    'from' => self::mail_support,
-                    'type' => 'Compatibility_pumpic_sendUser',
-                    'uid' => $_uid,
-                    'subject' => 'Compatibility request #'. $_uid .' received',
-                    'params' => serialize( $_params ),
-                ))) {
-                    $this -> _messange['error'] = 'Fatal Error! Dont save Compatibility_pumpic_sendUser in DB!';
-                    return $this -> _messange;
-                }
-                
-                // go suers
-                $user_data = $this ->setData(
-                        self::mail_support, 
-                        $params['email'], 
-                        'Compatibility_pumpic_sendUser', 
-                        '', 
-                        $_params ) -> sendMAil();
-                
-                // updateOptions
-                $this ->updateOptionValue('Compatibility_pumpic', $_uid);
-                
-                if($_data === true && $user_data === true) {
+                try {
+                    $this->sender->sendSystemCompatibility(self::mail_support, $params['email'], $params['device-model'], $browserInfo);
+                    $this->sender->sendCompatibility($params['email'], $params['device-model'], $browserInfo);
+                    
+                     $this ->updateOptionValue('Compatibility_pumpic', $_uid);
+                    
                     $this -> _messange['success'] =  'Ticket #'. $_uid .' has been successfully sent.<br />
-                                                     Our support representative will contact you as soon as possible.';// "Your Request has been sent, our support representative will contact you as soon as possible"; //"Your email has been successfully sent";
-                } else
-                    $this -> _messange['error']['email'] = self::error_email; 
-                
-                
+                                                     Our support representative will contact you as soon as possible.';
+                } catch(\Exception $e) {
+                    $this -> _messange['error'] = 'Something went wrong! Please contact support!';
+                }
             }    
-
-            
         }
         
         return $this -> _messange;
@@ -217,8 +171,6 @@ class Phpmail extends Settings
     {
         
         if(is_array($params) and count($params) > 0) {
-            $_id = rand(0, 9000000);
-            
             if(!$this -> validateEmail($params['email'])) {
                 $this -> _messange['error']['email'] = self::error_email;
             } else if(empty($params['carrier']) or strlen( $params['carrier']) < 3 ) {
@@ -230,8 +182,7 @@ class Phpmail extends Settings
                 $_params = array(
                    'carrier'    => $params['carrier'],
                    'email'          => $params['email'],
-                    '_browser'      => $this -> getBrowser(),
-                   // 'subject'        => [ 'contactUs_pumpic' => 'Contact US #pp '.$_id], 
+                    '_browser'      => $this -> getBrowser()
                 );
                 
                 if($opt_value = $this ->getOptionValue( 'Mobile_operators_pumpic' ) and $opt_value >= self::MOBILEOPERATORS_START_ID) {
@@ -240,67 +191,20 @@ class Phpmail extends Settings
                     $_uid = self::MOBILEOPERATORS_START_ID;
                 }
                 
-                if(!$sm_arr = $this ->saveDB(array(
-                    'to' => self::mail_support,
-                    'from' => $params['email'],
-                    'type' => 'Mobile_operators_pumpic',
-                ))) { 
-                    $this -> _messange['error'] = 'Fatal Error! Dont save in DB!'; 
-                    return $this -> _messange;
-                }
+                $browserInfo = $this->getBrowser();
                 
-                $_params = array_merge( $_params, array('uid' => $_uid) );
-                
-                
-                
-                $this ->setSendmail(array( 'subject' => 'Carrier request #M'.$_uid.' - '.$_params['email'], 
-                                            'uid' => $_uid,
-                                            'params' =>  serialize($_params) ), "id = ". (int)$sm_arr['id']);
-                
-                // log in ControlAdmin
-                if($user = $this -> _order ->getUserDataEmail( $params['email'] ) and isset($user['id']))
-                    $this -> _order ->setLogMailSender($user['id'], 'Mobile_operators_pumpic_sendUser');
-                
-                // sendMail Api (go support)
-                $_data = $this ->setData($params['email'], 
-                                        self::mail_support, 
-                                        'Mobile_operators_pumpic', 
-                                        $params['email'], 
-                                        $_params) -> sendMAil();
-                
-                if(!$this ->saveDB(array(
-                    'to' => $params['email'],
-                    'from' => self::mail_support,
-                    'type' => 'Mobile_operators_pumpic_sendUser',
-                    'uid' => $_uid,
-                    'subject' => 'Carrier request #'. $_uid .' received',
-                    'params' => serialize( $_params ),
-                ))) {
-                    $this -> _messange['error'] = 'Fatal Error! Dont save Mobile_operators_pumpic_sendUser in DB!';
-                    return $this -> _messange;
-                }
-                
-                // go users
-                $user_data = $this ->setData(
-                        self::mail_support, 
-                        $params['email'], 
-                        'Mobile_operators_pumpic_sendUser', 
-                        '', 
-                        $_params ) -> sendMAil();
-                
-                // updateOptions
-                $this ->updateOptionValue('Mobile_operators_pumpic', $_uid);
-                
-                if($_data === true && $user_data === true) {
+                try {
+                    $this->sender->sendSystemMobileOperators(self::mail_support, $params['email'], $params['carrier'], $browserInfo);
+                    $this->sender->sendMobileOperators($params['email'], $params['carrier'], $browserInfo);
+                    
+                    $this ->updateOptionValue('Mobile_operators_pumpic', $_uid);
+                    
                     $this -> _messange['success'] =  'Ticket #'. $_uid .' has been successfully sent.<br />
-                                                     Our support representative will contact you as soon as possible.';// "Your Request has been sent, our support representative will contact you as soon as possible"; //"Your email has been successfully sent";
-                } else
-                    $this -> _messange['error']['email'] = self::error_email; 
-                
-                
+                                                     Our support representative will contact you as soon as possible.';
+                } catch (\Exception $e) {
+                    $this -> _messange['error'] = 'Something went wrong! Please contact support!';
+                }                
             }    
-
-            
         }
         
         return $this -> _messange;
@@ -381,92 +285,31 @@ class Phpmail extends Settings
     /* Contact US Send mail*/
     public function _sendContactUs($params) 
     {
-        
         if(is_array($params) and count($params) > 0) {
-            $_id = rand(0, 9000000);
-            
             if(!$this -> validateEmail($params['email'])) {
                 $this -> _messange['error']['email'] = "Invalid email format";
             } elseif( isset($params['captcha']) and !$this ->_order-> validateCaptcha( $params['captcha'] ) ) {
                 $this -> _messange['error']['captcha'] = self::error_captcha;
             } else {
-                
-                $_params = array(
-                   'name'           => $params['name'],
-                   'email'          => $params['email'],
-                   'os'             => $params['os'],
-                   'description'    => $params['description'],
-                    '_browser'      => $this -> getBrowser(),
-                   // 'subject'        => [ 'contactUs_pumpic' => 'Contact US #pp '.$_id], 
-                );
-                
-                if($opt_value = $this ->getOptionValue( 'contactUs_pumpic' ) and $opt_value >= self::CONTACT_US_START_ID) {
+                if($opt_value = $this ->getOptionValue('contactUs_pumpic') and $opt_value >= self::CONTACT_US_START_ID) {
                     $_uid = $opt_value + 1; 
                 } else {
                     $_uid = self::CONTACT_US_START_ID;
                 }
                 
-                if(!$sm_arr = $this ->saveDB(array(
-                    'to' => self::mail_support,
-                    'from' => self::mail_noreply,
-                    'type' => 'contactUs_pumpic',
-                ))) {
-                    $this -> _messange['error'] = 'Fatal Error! Dont save in DB!';
-                    return $this -> _messange;
-                }  
+                $browserInfo = $this->getBrowser();
                 
-                // $_uid = ($sm_arr['uid'] > self::start_id) ? $sm_arr['uid'] ++ : self::start_id + $sm_arr['uid'];
-                $_params = array_merge( $_params, array('uid' => $_uid) );
-                
-                $this ->setSendmail(array( 'subject' => 'Website request #W'.$_uid.' - '.$_params['email'], 
-                                            'uid' => $_uid,
-                                            'params' =>  serialize($_params) ), "id = ". (int)$sm_arr['id']);
-                
-               // log in ControlAdmin
-                if($user = $this -> _order ->getUserDataEmail( $params['email'] ) and isset($user['id']))
-                    $this -> _order ->setLogMailSender($user['id'], 'contactUs_pumpic_sendUser');
-                
-                // sendMail Api (go support)
-                $_data = $this ->setData(
-                        $params['email'], //self::mail_noreply, 
-                        self::mail_support, 
-                        'contactUs_pumpic', 
-                        $params['email'], 
-                        $_params ) -> sendMAil();
-                
-                if(!$this ->saveDB(array(
-                    'to' => $params['email'],
-                    'from' => self::mail_support,
-                    'type' => 'contactUs_pumpic_sendUser',
-                    'uid' => $_uid,
-                    'subject' => 'Contact form #'.$_uid.' received',
-                    'params' => serialize( $_params ),
-                ))) {
-                    $this -> _messange['error'] = 'Fatal Error! Dont save contactUs_pumpic_sendUser in DB!';
-                    return $this -> _messange;
+                try {
+                    $this->sender->sendSystemContactUs(self::mail_support, $params['name'], $params['email'], $params['os'], $params['description'], $browserInfo);
+                    $this->sender->sendContactUs($params['email'], $params['name'], $params['os'], $params['description'], $browserInfo);
+                 
+                    $this ->updateOptionValue('contactUs_pumpic', $_uid);
+                    $this -> _messange['success'] = 'Ticket #'. $_uid .' has been successfully sent.<br />Our support representative will contact you as soon as possible.';
+                } catch (\Exception $e) {
+                    $this -> _messange['error'] = 'Something went wrong! Please contact support!';
                 }
-                // go users
-                $user_data = $this ->setData(
-                        self::mail_support, 
-                        $params['email'], 
-                        'contactUs_pumpic_sendUser', 
-                        '', 
-                        $_params ) -> sendMAil();
-                
-                // updateOptions
-                $this ->updateOptionValue('contactUs_pumpic', $_uid);
-                
-                if($_data === true and $user_data === true) {
-                    $this -> _messange['success'] = 'Ticket #'. $_uid .' has been successfully sent.<br />
-                                                     Our support representative will contact you as soon as possible.';//self::CONTACTUS_SUCCESS; //"Your email has been successfully sent";
-                } else
-                    $this -> _messange['error']['email'] = "Invalid email format"; // Invalid System Params
-                
-            }    
-
-            
+            }      
         } 
-        // $this -> _messange['success'] = self::CONTACTUS_SUCCESS;
         
         return $this -> _messange;
         

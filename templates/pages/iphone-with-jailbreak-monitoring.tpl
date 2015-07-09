@@ -47,7 +47,7 @@
             TouchPad = 'yes'
             Android = 'no'
             Apple = 'yes'
-            AppleVersion = 'iOS 6.0 – 8.1.2'
+            AppleVersion = 'iOS 6.0 – 8.4'
             InfoBlock = 'no'
             block_video = "yes"
             block_video_src = "http://www.youtube.com/embed/Atg0CbaytAY"

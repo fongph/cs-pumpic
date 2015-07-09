@@ -298,22 +298,6 @@
         </li>
     </ul>
     
-    <p>If you still hesitating to give or not to give your child a mobile phone, note that there really are a lot of benefits:</p>
-    <ul>
-        <li>you will always be within a call and know what happens to your kid;</li>
-        <li>your child will be able to stay up to date and communicate with his friends and relatives;</li>
-        <li>having online connection your kid will always stay tuned and current;</li>
-        <li>smartphones can help kids perform and follow their daily tasks;</li>
-        <li>modern mobile phones help children advance their skills, and thus, determine their future profession.</li>
-    </ul>
-    <p>On the other hand, together with mobility and opportunities there come some issues:</p>
-    <ul>
-        <li>mobile swindlers and online predators might attack your kid through the web;</li>
-        <li>your kid might waste a lot of time playing games, chatting online, or using social networks;</li>
-        <li>your child might strike inappropriate content in the Internet: watch videos containing porn or violence, read articles with bad words or messages with threats etc.;</li>
-        <li>your kid might be involved in activity you would not approve: commit a crime, form connections with a sect or be forced to go the limit;</li>
-        <li>your child might fall under bad influence and start using drugs or alcohol.</li>
-    </ul>
     <p>However, the real world hides not less dangers that it does online. On any hand, there is a possibility to control your children’s lives on the web. Pumpic sets parental control on your kid’s cell phone and monitors every step he or she takes as well as each decision made via a smartphone or tablet.</p>
     <p>Nowadays your responsibility is not to take your kid’s mobile phone away to protect him, or forbid doing things you do not approve. All you need is to keep your eyes open and take action, when the situation requires. Thus, if you have decided to present your child an iPhone, learn more about iOS monitoring for kids.</p>
 {EndContent}    

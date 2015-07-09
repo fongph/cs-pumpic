@@ -291,7 +291,7 @@
             <ul class="list-red">
                 <li><img class="l-mobile" width="18" height="21" src="{$img}/list/l-r-1.png" alt="Online Predators" /> mobile swindlers and online predators might attack your kid through the web;</li>
                 <li><img class="l-play" width="22" height="22" src="{$img}/list/l-r-2.png" alt="Excessive Gaming" /> your kid might waste a lot of time playing games, chatting online, or using social networks;</li>
-                <li><img class="l-smile" width="19" height="19" src="{$img}/list/l-r-3.png" alt="Explicit Internet Content" /> your child might strike inappropriate content in the Internet: watch videos containing porn or violence, read articles with bad words or messages with threats etc.;</li>
+                <li><img class="l-smile" width="19" height="19" src="{$img}/list/l-r-3.png" alt="Explicit Internet Content" /> your child might strike inappropriate content in the Internet: watch videos containing 18+ content, read articles with bad words or messages with threats etc.;</li>
                 <li><img class="l-close" width="19" height="19" src="{$img}/list/l-r-4.png" alt="Harmful Web Activity" /> your kid might be involved in activity you would not approve: commit a crime, form connections with a sect or be forced to go the limit;</li>
                 <li><img class="l-list" width="19" height="19" src="{$img}/list/l-r-5.png" alt="Drugs Online" /> your child might fall under bad influence and start using drugs or alcohol.</li>
             </ul>

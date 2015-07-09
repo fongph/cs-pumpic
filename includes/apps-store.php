@@ -46,7 +46,7 @@ if(is_array($products)) {
 }
 
 //echo "<pre>";
-//var_dump( $_sortingProducts );
+//var_dump( $_sortingProducts['basic'] );
 //echo "</pre>";
 
     

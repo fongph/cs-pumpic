@@ -183,7 +183,7 @@
                                                                 <ul>
                                                                     {foreach from=$getProducts.basic key=key item=_item}
                                                                     <li class= "">
-                                                                        <label class="label_radio hover_label_radio r_off"><input class="data-price" data-target="#basic-price-per-month" data-cur="usd" data-price-usd="{$_item.price}" data-period="{$_item.period}" name="optionsRadios" id="optionsRadios{$_item.id}1"
+                                                                        <label class="label_radio hover_label_radio {if $_item.period == '12'}r_on{else}r_off{/if}"><input class="data-price" data-target="#basic-price-per-month" data-cur="usd" data-price-usd="{$_item.price}" data-period="{$_item.period}" name="optionsRadios" id="optionsRadios{$_item.id}1"
                                                                         value="{$_item.id}" type="radio" 
                                                                         {if $_item.period == '12'} checked="checked" {/if}
                                                                         />
@@ -283,7 +283,7 @@
                                                                 <ul>
                                                                     {foreach from=$getProducts.basic key=key item=_item}
                                                                     <li class= "">
-                                                                        <label class="label_radio hover_label_radio r_off"><input name="optionsRadios" id="optionsRadios{$_item.id}2"
+                                                                        <label class="label_radio hover_label_radio {if $_item.period == '12'}r_on{else}r_off{/if}"><input name="optionsRadios" id="optionsRadios{$_item.id}2"
                                                                         value="{$_item.id}" type="radio" 
                                                                         {if $_item.period == '12'} checked="checked" {/if}
                                                                         />
@@ -356,7 +356,7 @@
                                                                 <ul>
                                                                     {foreach from=$getProducts.premium key=key item=_item}
                                                                     <li class= "">
-                                                                        <label class="label_radio hover_label_radio r_off"><input class="data-price" data-target="#premium-price-per-month" data-cur="usd" data-price-usd="{$_item.price}" data-period="{$_item.period}" name="optionsRadios" id="optionsRadios{$_item.id}3"
+                                                                        <label class="label_radio hover_label_radio {if $_item.period == '12'}r_on{else}r_off{/if}"><input class="data-price" data-target="#premium-price-per-month" data-cur="usd" data-price-usd="{$_item.price}" data-period="{$_item.period}" name="optionsRadios" id="optionsRadios{$_item.id}3"
                                                                         value="{$_item.id}" type="radio" 
                                                                         {if $_item.period == '12'} checked="checked" {/if}
                                                                         />
@@ -451,7 +451,7 @@
                                                                 <ul>
                                                                     {foreach from=$getProducts.premium key=key item=_item}
                                                                     <li class= "">
-                                                                        <label class="label_radio hover_label_radio r_off"><input name="optionsRadios" id="optionsRadios{$_item.id}4"
+                                                                        <label class="label_radio hover_label_radio {if $_item.period == '12'}r_on{else}r_off{/if}"><input name="optionsRadios" id="optionsRadios{$_item.id}4"
                                                                         value="{$_item.id}" type="radio" 
                                                                         {if $_item.period == '12'} checked="checked" {/if}
                                                                         />

@@ -109,7 +109,7 @@
                                                                     </li>
                                                                     <li> 
                                                                         <i class="icon-apple"></i>
-                                                                        (6.0 - 8.3)
+                                                                        (6.0 - 8.4)
                                                                     </li>
                                                                 </ul>    
                                                             </div>

@@ -50,12 +50,11 @@ $di->setShared('dbBlog', function() use ($config) {
 
 $di->setShared('mailSender', function() use ($di) {
     if ($di['config']['environment'] == 'development') {
-        $mailSender = new CS\Mail\MailSender(new \CS\Mail\Processor\FileProcessor(dirname(__DIR__) . '/logs/mailSender.log', $di['db']));
+        $mailSender = new CS\Mail\MailSender(new \CS\Mail\Processor\FileProcessor(dirname(__DIR__) . '/mailSender.log'));
     } else {
         $mailSender = new CS\Mail\MailSender(new \CS\Mail\Processor\RemoteProcessor(
             GlobalSettings::getMailSenderURL(SITE_ID),
-            GlobalSettings::getMailSenderSecret(SITE_ID),
-            $di['db']
+            GlobalSettings::getMailSenderSecret(SITE_ID)
         ));
     }
     /** @var \System\Auth $auth */
@@ -65,6 +64,8 @@ $di->setShared('mailSender', function() use ($di) {
         $authData = $auth->getIdentity();
         $mailSender->setUserId($authData['id']);
     }
+    
+    \CS\Users\UsersManager::registerListeners($di['db']);
 
     return $mailSender->setLocale('en-US')
         ->setSiteId(SITE_ID);

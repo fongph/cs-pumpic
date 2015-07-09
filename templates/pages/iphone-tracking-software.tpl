@@ -66,7 +66,7 @@
                                   <li href="#" class="list-group-item">
                                     <p class="list-group-item-text">
                                         <span class="title"><i class="icon-ok"></i> Jailbreak - <span class="text-success">Required</span></span>
-                                        <span>You need to jailbreak the target iOS device (6.0 - 8.1.2) before installing the app.{*You need to jailbreak the target iOS device before installing the app.*}</span>
+                                        <span>You need to jailbreak the target iOS device (6.0 - 8.4) before installing the app.{*You need to jailbreak the target iOS device before installing the app.*}</span>
                                     </p>
                                   </li>
                                   <li href="#" class="list-group-item">
@@ -275,7 +275,7 @@
                                   <li href="#" class="list-group-item">
                                     <p class="list-group-item-text">
                                         <span class="title"><i class="icon-cancel"></i> Jailbreak - <span class="text-danger">Not Required</span></span>
-                                        <span>You do not need to jailbreak the target iOS device (6.0 - 8.3) before installing the app.{*You do not need to jailbreak the target iOS device before installing the app.*}</span>
+                                        <span>You do not need to jailbreak the target iOS device (6.0 - 8.4) before installing the app.{*You do not need to jailbreak the target iOS device before installing the app.*}</span>
                                     </p>
                                   </li>
                                   <li href="#" class="list-group-item">

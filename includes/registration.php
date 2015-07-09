@@ -54,8 +54,14 @@ if($_result['_success']) {
            $obj -> _redirect( $_url ); 
         } else
             $obj -> _redirect('/#popUp=registration');
-    } else
+    } else {
+        $eventManager = \EventManager\EventManager::getInstance();
+        $eventManager->emit('front-registration-completed', array(
+            'email' => $_POST['email']
+        ));
+        
         $obj -> _redirect('/#popUp=registration'); 
+    }
 
 }
 

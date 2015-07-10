@@ -39,7 +39,7 @@
             description = "Keep track of your kids’ iOS devices remotely."
             promoBuyBlock = "no"
             listText = "control mobile phone usage|monitor Internet activity|follow location and route history"
-            planPackageBuy = "yes"
+            planPackageIphoneParental = "yes"
             block_video = "yes"
             block_video_src = "http://www.youtube.com/embed/Atg0CbaytAY"
         }

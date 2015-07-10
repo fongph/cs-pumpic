@@ -174,6 +174,10 @@
                                         }
                                     {/if}
                                     
+                                    {if isset($planPackageIphoneParental) && $planPackageIphoneParental == 'yes'}
+                                        {include './blocks/block-package-iphone-parental.tpl'}
+                                    {/if}
+                                    
                                     {if isset($promoBuyBlock) && $promoBuyBlock == 'yes'}
                                         {include './blocks/include-blocks.tpl'}
                                         {*{include './blocks/block-trial.tpl'}*}

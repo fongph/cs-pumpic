@@ -14,7 +14,7 @@
                                         <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12 item-teenager">
                                                 <img class="model-center pt15" src="{$img}/pc2/teenagers_5.png" alt="">
                                                 <h1 class="item-t-title text-center">42<sup>%</sup></h1>
-                                                <p class="text-center">kids aged between 7 and 16 admit they have seen online porn</p>
+                                                <p class="text-center">kids aged between 7 and 16 admit they have seen online adult content</p>
 
                                         </div>
                                         <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12 item-teenager">

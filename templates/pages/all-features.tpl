@@ -776,7 +776,7 @@
                                             Follow online communication activity. View <b>messages</b> sent and received via popular instant messengers like Facebook Messenger, Viber, Skype, WhatsApp and Kik.
                                         </p>
                                         <p>
-                                            Monitor <b>WhatsApp</b> and <b>Facebook calls</b> on Android devices.
+                                            Monitor <b>WhatsApp</b> and <b>Facebook calls</b> on iOS and Android devices.
                                         </p>
                                         {*<ul>
                                             <li>Pumpic allows you to monitor your child’s device activity in</li>

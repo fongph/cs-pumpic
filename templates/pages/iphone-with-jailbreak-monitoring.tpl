@@ -47,7 +47,7 @@
             TouchPad = 'yes'
             Android = 'no'
             Apple = 'yes'
-            AppleVersion = 'iOS 6.0 – 8.1.2'
+            AppleVersion = 'iOS 6.0 – 8.4'
             InfoBlock = 'no'
             block_video = "yes"
             block_video_src = "http://www.youtube.com/embed/Atg0CbaytAY"
@@ -230,10 +230,10 @@
                                                                     <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Geo-fences <span>Set specified zones on the map and receive alerts, when they are left or entered.</span></li>
                                                                     
                                                                     <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-cancel"></i> Videos <span>View shot and downloaded videos, including deleted ones.</span></li>
-                                                                    <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-cancel"></i> Facebook IM <span>Follow group and personal Messenger chats.</span></li>
+                                                                    <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-cancel"></i> Facebook IM <span>Follow group, personal Messenger chats, and calls.</span></li>
                                                                     <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-cancel"></i> Skype <span>Monitor personal, group messages and calls. </span></li>
                                                                     <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-cancel"></i> Viber <span>View personal messages and group chats.</span></li>
-                                                                    <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-cancel"></i> WhatsApp <span>Follow personal messages and group chats.</span></li>
+                                                                    <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-cancel"></i> WhatsApp <span>Follow personal messages, group chats, and calls.</span></li>
                                                                     <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-cancel"></i> Kik <span>Monitor text messages.</span></li>
                                                                     <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-cancel"></i> Instagram <span>View uploaded images and posted comments.</span></li>
                                                                     <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-cancel"></i> Snapchat <span>Monitor Snapchat photos, videos, and comments on the target iOS device.</span></li>
@@ -392,10 +392,10 @@
                                                                     
                                                                     <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Videos <span>View shot and downloaded videos, including deleted ones.</span></li>
                                            
-                                                                    <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Facebook IM <span>Follow group and personal Messenger chats.</span></li>
+                                                                    <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Facebook IM <span>Follow group, personal Messenger chats, and calls.</span></li>
                                                                     <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Skype <span>Monitor personal, group messages and calls. </span></li>
                                                                     <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Viber <span>View personal messages and group chats.</span></li>
-                                                                    <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> WhatsApp <span>Follow personal messages and group chats.</span></li>
+                                                                    <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> WhatsApp <span>Follow personal messages, group chats, and calls.</span></li>
                                                                     <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Kik <span>Monitor text messages.</span></li>
                                                                     <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Instagram <span>View uploaded images and posted comments.</span></li>
                                                                     <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Snapchat <span>Monitor Snapchat photos, videos, and comments on the target iOS device.</span></li>

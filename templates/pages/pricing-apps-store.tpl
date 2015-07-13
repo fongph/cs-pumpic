@@ -133,7 +133,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="support_new_os"><div class="wr_support_new_os"><i class="icon-android d_green"></i> Android 2.2 - 5.1 <i class="icon-apple d_green"></i> iOS 6.0 - 8.3</div></div>
+                                        <div class="support_new_os"><div class="wr_support_new_os"><i class="icon-android d_green"></i> Android 2.2 - 5.1 <i class="icon-apple d_green"></i> iOS 6.0 - 8.4</div></div>
                                         </caption>
                                         <thead>
                                             <tr>
@@ -180,11 +180,10 @@
                                                             <div class="list_price">
                                                             <form name="price_basic" method="POST" action="/buy.html" autocomplete="off">
                                                                 <input id='product_price_basic' type='hidden' name='price[productID]' value='0' class="product_price" />
-                                                               
                                                                 <ul>
                                                                     {foreach from=$getProducts.basic key=key item=_item}
                                                                     <li class= "">
-                                                                        <label class="label_radio hover_label_radio r_off"><input class="data-price" data-target="#basic-price-per-month" data-cur="usd" data-price-usd="{$_item.price}" data-period="{$_item.period}" name="optionsRadios" id="optionsRadios{$_item.id}1"
+                                                                        <label class="label_radio hover_label_radio {if $_item.period == '12'}r_on{else}r_off{/if}"><input class="data-price" data-target="#basic-price-per-month" data-cur="usd" data-price-usd="{$_item.price}" data-period="{$_item.period}" name="optionsRadios" id="optionsRadios{$_item.id}1"
                                                                         value="{$_item.id}" type="radio" 
                                                                         {if $_item.period == '12'} checked="checked" {/if}
                                                                         />
@@ -228,7 +227,7 @@
                                                                 <li data-toggle="tooltip" data-placement="top" title="View contact list including names, addresses, numbers and emails."><i class="icon-ok"></i> Contacts</li>
                                                                 <li data-toggle="tooltip" data-placement="top" title="Monitor scheduled dates and events."><i class="icon-ok"></i> Calendar</li>
                                                                 <li data-toggle="tooltip" data-placement="top" title="Track Notes on the target iOS device."><i class="icon-ok"></i> Notes</li>
-                                                                <li data-toggle="tooltip" data-placement="top" title="View all visited websites. On iOS devices available for Safari browser only."><i class="icon-ok"></i> Browsing history</li>
+                                                                <li data-toggle="tooltip" data-placement="top" title="View all visited websites."><i class="icon-ok"></i> Browsing history</li>
                                                                 <li data-toggle="tooltip" data-placement="top" title="Block specific websites on a target device. <div class='br'><strong>iOS: Jailbreak Needed</strong></div>"><i class="icon-ok"></i> Websites blocking</li>
 
                                                                 <li data-toggle="tooltip" data-placement="top" title="View all websites visited and bookmarked as preferred ones."><i class="icon-ok"></i> Bookmarks</li> 
@@ -237,10 +236,10 @@
                                                                 <li data-toggle="tooltip" data-placement="top" title="View all emails and detailed contact data. <div class='br'><strong>iOS: Jailbreak Needed</strong><br /><strong>Android: Root Required</strong></div>"><i class="icon-ok"></i> Emails</li>
                                                                 <li data-toggle="tooltip" data-placement="top" title="Monitor, block or set time limits on all applications (games, services etc.) downloaded on a device. <div class='br'><strong>iOS: Jailbreak Needed</strong></div>"><i class="icon-ok"></i> Applications Management</li>
                                                                 <li data-toggle="tooltip" data-placement="top" title="View all videos stored on a device. <div class='br'><strong>iOS: Jailbreak Needed</strong></div>"><i class="icon-cancel"></i> Videos</li>
-                                                                <li data-toggle="tooltip" data-placement="top" title="Track conversations via Skype, WhatsApp, Viber, and Kik. Monitor WhatsApp calls (currently available for Android devices only). <div class='br'><strong>iOS: Jailbreak Needed</strong><br /><strong>Android: Root Required</strong></div>"><i class="icon-cancel"></i> Viber/WhatsApp/Skype/Kik</li>
+                                                                <li data-toggle="tooltip" data-placement="top" title="Track conversations via Skype, WhatsApp, Viber, and Kik. Monitor WhatsApp calls. <div class='br'><strong>iOS: Jailbreak Needed</strong><br /><strong>Android: Root Required</strong></div>"><i class="icon-cancel"></i> Viber/WhatsApp/Skype/Kik</li>
                                                                 <li data-toggle="tooltip" data-placement="top" title="Monitor posted images and comments on Instagram. <div class='br'><strong>iOS: Jailbreak Needed</strong><br /><strong>Android: Root Required</strong></div>"><i class="icon-cancel"></i> Instagram</li>
                                                                 <li data-toggle="tooltip" data-placement="top" title="Monitor Snapchat photos, videos, and comments on the target iOS device. <div class='br'><strong>iOS: Jailbreak Needed</strong><br /><strong>Not available for Android</strong></div>"><i class="icon-cancel"></i> Snapchat</li>
-                                                                <li data-toggle="tooltip" data-placement="top" title="Track chats and calls on Facebook. Facebook call monitoring is currently available for Android devices only. <div class='br'><strong>iOS: Jailbreak Needed</strong><br /><strong>Android: Root Required</strong></div>"><i class="icon-cancel"></i> Facebook{*Messages*}</li>
+                                                                <li data-toggle="tooltip" data-placement="top" title="Track chats and calls on Facebook. <div class='br'><strong>iOS: Jailbreak Needed</strong><br /><strong>Android: Root Required</strong></div>"><i class="icon-cancel"></i> Facebook{*Messages*}</li>
                                                                 <li data-toggle="tooltip" data-placement="top" title="View all the previouse data ever stored on a device."><i class="icon-cancel"></i> Historical data</li> 
                                                                 <li data-toggle="tooltip" data-placement="top" title="Control devices remotely. <div class='br'><strong>iOS: Jailbreak Needed</strong></div><div class='br'><strong>Not supported: on Android 5.0{*4.4+*}.</strong></div>"><i class="icon-cancel"></i> SMS commands</li>
                                                                 <li data-toggle="tooltip" data-placement="top" title="View every keystroke typed on a target device. <div class='br'><strong>iOS: Jailbreak Needed</strong></div>"><i class="icon-cancel"></i> Keylogger</li>
@@ -284,7 +283,7 @@
                                                                 <ul>
                                                                     {foreach from=$getProducts.basic key=key item=_item}
                                                                     <li class= "">
-                                                                        <label class="label_radio hover_label_radio r_off"><input name="optionsRadios" id="optionsRadios{$_item.id}2"
+                                                                        <label class="label_radio hover_label_radio {if $_item.period == '12'}r_on{else}r_off{/if}"><input name="optionsRadios" id="optionsRadios{$_item.id}2"
                                                                         value="{$_item.id}" type="radio" 
                                                                         {if $_item.period == '12'} checked="checked" {/if}
                                                                         />
@@ -357,7 +356,7 @@
                                                                 <ul>
                                                                     {foreach from=$getProducts.premium key=key item=_item}
                                                                     <li class= "">
-                                                                        <label class="label_radio hover_label_radio r_off"><input class="data-price" data-target="#premium-price-per-month" data-cur="usd" data-price-usd="{$_item.price}" data-period="{$_item.period}" name="optionsRadios" id="optionsRadios{$_item.id}3"
+                                                                        <label class="label_radio hover_label_radio {if $_item.period == '12'}r_on{else}r_off{/if}"><input class="data-price" data-target="#premium-price-per-month" data-cur="usd" data-price-usd="{$_item.price}" data-period="{$_item.period}" name="optionsRadios" id="optionsRadios{$_item.id}3"
                                                                         value="{$_item.id}" type="radio" 
                                                                         {if $_item.period == '12'} checked="checked" {/if}
                                                                         />
@@ -401,7 +400,7 @@
                                                                 <li data-toggle="tooltip" data-placement="top" title="View contact list including names, addresses, numbers and emails."><i class="icon-ok"></i> Contacts</li>
                                                                 <li data-toggle="tooltip" data-placement="top" title="Monitor scheduled dates and events."><i class="icon-ok"></i> Calendar</li>
                                                                 <li data-toggle="tooltip" data-placement="top" title="Track Notes on the target iOS device."><i class="icon-ok"></i> Notes</li>
-                                                                <li data-toggle="tooltip" data-placement="top" title="View all visited websites. On iOS devices available for Safari browser only."><i class="icon-ok"></i> Browsing history</li>
+                                                                <li data-toggle="tooltip" data-placement="top" title="View all visited websites."><i class="icon-ok"></i> Browsing history</li>
                                                                 <li data-toggle="tooltip" data-placement="top" title="Block specific websites on a target device. <div class='br'><strong>iOS: Jailbreak Needed</strong></div>"><i class="icon-ok"></i> Websites blocking</li>
 
                                                                 <li data-toggle="tooltip" data-placement="top" title="View all websites visited and bookmarked as preferred ones."><i class="icon-ok"></i> Bookmarks</li> 
@@ -410,10 +409,10 @@
                                                                 <li data-toggle="tooltip" data-placement="top" title="View all emails and detailed contact data. <div class='br'><strong>iOS: Jailbreak Needed</strong><br /><strong>Android: Root Required</strong></div>"><i class="icon-ok"></i> Emails</li>
                                                                 <li data-toggle="tooltip" data-placement="top" title="Monitor, block or set time limits on all applications (games, services etc.) downloaded on a device. <div class='br'><strong>iOS: Jailbreak Needed</strong></div>"><i class="icon-ok"></i> Applications Management</li>
                                                                 <li data-toggle="tooltip" data-placement="top" title="View all videos stored on a device. <div class='br'><strong>iOS: Jailbreak Needed</strong></div>"><i class="icon-ok"></i> Videos</li>
-                                                                <li data-toggle="tooltip" data-placement="top" title="Track conversations via Skype, WhatsApp, Viber, and Kik. Monitor WhatsApp calls (currently available for Android devices only).<div class='br'><strong>iOS: Jailbreak Needed</strong><br /><strong>Android: Root Required</strong></div>"><i class="icon-ok"></i> Viber/WhatsApp/Skype/Kik</li>
+                                                                <li data-toggle="tooltip" data-placement="top" title="Track conversations via Skype, WhatsApp, Viber, and Kik. Monitor WhatsApp calls.<div class='br'><strong>iOS: Jailbreak Needed</strong><br /><strong>Android: Root Required</strong></div>"><i class="icon-ok"></i> Viber/WhatsApp/Skype/Kik</li>
                                                                 <li data-toggle="tooltip" data-placement="top" title="Monitor posted images and comments on Instagram. <div class='br'><strong>iOS: Jailbreak Needed</strong><br /><strong>Android: Root Required</strong></div>"><i class="icon-ok"></i> Instagram</li>
                                                                 <li data-toggle="tooltip" data-placement="top" title="Monitor Snapchat photos, videos, and comments on the target iOS device. <div class='br'><strong>iOS: Jailbreak Needed</strong><br /><strong>Not available for Android</strong></div>"><i class="icon-ok"></i> Snapchat</li>
-                                                                <li data-toggle="tooltip" data-placement="top" title="Track chats and calls on Facebook. Facebook call monitoring is currently available for Android devices only.<div class='br'><strong>iOS: Jailbreak Needed</strong><br /><strong>Android: Root Required</strong></div>"><i class="icon-ok"></i> Facebook{*Messages*}</li>
+                                                                <li data-toggle="tooltip" data-placement="top" title="Track chats and calls on Facebook. <div class='br'><strong>iOS: Jailbreak Needed</strong><br /><strong>Android: Root Required</strong></div>"><i class="icon-ok"></i> Facebook{*Messages*}</li>
                                                                 <li data-toggle="tooltip" data-placement="top" title="View all the previouse data ever stored on a device."><i class="icon-ok"></i> Historical data</li> 
                                                                 <li data-toggle="tooltip" data-placement="top" title="Control devices remotely. <div class='br'><strong>iOS: Jailbreak Needed</strong></div><div class='br'><strong>Not supported: on Android 5.0{*4.4+*}.</strong></div>"><i class="icon-ok"></i> SMS commands</li>
                                                                 <li data-toggle="tooltip" data-placement="top" title="View every keystroke typed on a target device. <div class='br'><strong>iOS: Jailbreak Needed</strong></div>"><i class="icon-ok"></i> Keylogger</li>
@@ -452,7 +451,7 @@
                                                                 <ul>
                                                                     {foreach from=$getProducts.premium key=key item=_item}
                                                                     <li class= "">
-                                                                        <label class="label_radio hover_label_radio r_off"><input name="optionsRadios" id="optionsRadios{$_item.id}4"
+                                                                        <label class="label_radio hover_label_radio {if $_item.period == '12'}r_on{else}r_off{/if}"><input name="optionsRadios" id="optionsRadios{$_item.id}4"
                                                                         value="{$_item.id}" type="radio" 
                                                                         {if $_item.period == '12'} checked="checked" {/if}
                                                                         />

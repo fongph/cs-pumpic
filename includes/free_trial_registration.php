@@ -63,15 +63,21 @@ if(isset($_POST['email']) and !$obj -> validateEmail($_POST['email'])) {
     );
 
     $_respons = $obj->_initAfter($_params) -> CreateUsersFreeTrial -> respons;
-    if($_result['user_id']) {
-        $_result['_success'] = 'Successful registration.';
-    } 
 
     if(is_array($_respons) and count($_respons) > 0)
         $_result = array_merge ($_result, $_respons);
+    
+    if(isset($_result['user_id'])) {
+        $_result['_success'] = 'Successful registration.';
+        
+        $eventManager = EventManager\EventManager::getInstance();
+        $eventManager->emit('front-registration-trial-completed', array(
+            'userId' => $_result['user_id']
+        ));
+    } 
 }
 
-if($_result['user_id']) {
+if(isset($_result['user_id'])) {
     if($_productID) {
         if(isset($_COOKIE['orders_referer']))
             $obj->setReferer($_COOKIE['orders_referer']);

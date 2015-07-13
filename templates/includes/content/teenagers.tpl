@@ -14,7 +14,7 @@
                                         <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12 item-teenager">
                                                 <img class="model-center" src="{$img}/pc2/teenagers_2.png" alt="">
                                                 <h1 class="item-t-title text-center">1<span class="fz20">in</span>3</h1>
-                                                <p class="text-center">Children of 9-17 years old view 18+ websites containing pornography or violence daily.</p>
+                                                <p class="text-center">Children of 9-17 years old view 18+ websites containing inappropriate content daily.</p>
 
                                         </div>
                                         <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12 item-teenager">

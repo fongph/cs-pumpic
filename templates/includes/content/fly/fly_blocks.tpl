@@ -4,5 +4,7 @@
 <!-- END FLY BUTTON -->
 
 <!-- FLY BLOCK -->
-{include file='./fly_features_v2.tpl'}
+{if !isset($visibleFlyFeatures) || $visibleFlyFeatures == "yes"}
+    {include file='./fly_features_v2.tpl'}
+{/if}
 <!-- END FLY BLOCK -->

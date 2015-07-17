@@ -10,7 +10,9 @@
 
 <body>
     <!-- FLY BLOCKS -->
-    {include file='../includes/content/fly/fly_blocks.tpl'}
+    {include file='../includes/content/fly/fly_blocks.tpl'
+        visibleFlyFeatures = 'no'
+    }
     <!-- END FLY BLOCKS-->
     
 	<div class="wrapper block-free-trial-form">

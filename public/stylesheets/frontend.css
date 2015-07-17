@@ -7436,6 +7436,17 @@ div.symbol {
     }
 }*/
 
+/* ======================== MAX WIDTH ======================= */
+.max-width-469 {
+    max-width: 469px;
+}
+
+@media (max-width: 992px) { 
+    .max-width-469 {
+        max-width: 100%;
+    }
+}
+
 /* ---- \\ icloud block ----- */
 .position-relative {
     position: relative;

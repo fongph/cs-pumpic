@@ -3,7 +3,7 @@
         <div class="container">
                 <div class="row">
                         <div class="col-sm-10 col-md-10 col-lg-10 col-sm-offset-1 col-md-offset-1 col-lg-offset-1 gutter-wide">
-                                <h2 class="t-title text-center">Most Teenagers Are In Trouble</h2>
+                                <h2 class="t-title text-center">Your Kids Are Exposed to Online Dangers</h2>
                                 <div class="row">
                                         <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12 item-teenager">
                                                 <img class="model-center" src="{$img}/pc2/teenagers_4.png" alt="">
@@ -19,7 +19,7 @@
                                         <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12 item-teenager">
                                                 <img class="model-center" src="{$img}/pc2/teenagers_6.png" alt="">
                                                 <h1 class="item-t-title text-center">29<sup>%</sup></h1>
-                                                <p class="text-center">parents allow their kids under 7 to use mobile apps without supervision</p>
+                                                <p class="text-center">parents allow their kids under 7 <br />to use mobile apps without supervision</p>
                                         </div>
                                 </div>
                                 <div class="row">

@@ -28,7 +28,8 @@
         <!-- CONTENT -->
         {include file='../includes/content/info/info-promo.tpl'
             collg = "7"
-            imgUrl = "header_banners/bg_teenagers_header_419x325.png"
+            imgUrl = "header_banners/hd_protect_your_little_kids.png"
+            maxWidth = "469"
             imgAlt = "Smartphone monitoring"
             imgAlign = "right"
             imgVerticalAlign = "bottom"

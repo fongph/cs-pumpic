@@ -15,7 +15,7 @@
                             <div class="visual-images-left {if isset($Review)}visual-images-left-lg{/if} {if $block_video}box-video-constructors{/if}">
                                 <img {if isset($imgWidth)}width='{$imgWidth}'{/if}
                                      {if isset($imgHeight)}height='{$imgHeight}'{/if}                       
-                                    src="{$img}/{$imgUrl}" alt="{$imgAlt}" class="visual-img-pc">   
+                                    src="{$img}/{$imgUrl}" alt="{$imgAlt}" class="visual-img-pc {if isset($maxWidth)}max-width-{$maxWidth}{/if}">   
                                 {if isset($block_video) && $block_video == "yes" && isset($block_video_src) && $block_video_src != ""}
                                     <div id="block-video">
                                         <div class="block-video-button">
@@ -213,7 +213,7 @@
                         {if in_array('right', $position)}
                         <td class='col-xs-sm-12 col-s-sm-12 col-sm-12 col-md-5 col-lg-5{if $imgVerticalAlign == 'bottom'} vertical-aligh-bottom{/if}'>
                             <div class="visual-images-right {if $block_video}box-video-constructors{/if}">
-                                 <img src="{$img}/{$imgUrl}" alt="{$imgAlt}" class="visual-img-pc"> 
+                                 <img src="{$img}/{$imgUrl}" alt="{$imgAlt}" class="visual-img-pc {if isset($maxWidth)}max-width-{$maxWidth}{/if}"> 
                                  {if isset($block_video) && $block_video == "yes" && isset($block_video_src) && $block_video_src != ""}
                                     <div id="block-video">
                                         <div class="block-video-button">

@@ -78,7 +78,8 @@
 										<li>The target device has been reset to the original factory settings or Pumpic app has been removed from the target device.</li>
 										<li>A customer did not follow the installation guidelines provided by our customer support, which resulted in the failure to install the app.</li>
 										<li>A customer does not have physical access to the target device or Apple ID and the password for iCloud account of the target device (in case of using iCloud monitoring solution).</li>
-										<li>A customer didn’t know the app is visible to the user of the target phone.</li>
+                                                                                <li>A customer purchased the iCloud solution subscription, but intended to monitor activities beyond the provided jailbreak-free feature list (Text Messages, Calls, Browsing History, Bookmarks, Location, Calendar, Contacts, Photos, Notes, Skype, WhatsApp).</li>
+                                                                                <li>A customer didn’t know the app is visible to the user of the target phone.</li>
 										<li>A customer didn’t receive previous data from the target device because Pumpic had not been installed at that time.</li>
 										<li>The target device uses Symbian Belle, Windows Phone OS, Bada OS, or any other operating system, which is not listed on our Compatibility page.</li>
 										<li>A customer planned to use one Pumpic subscription plan on more than one target device.</li>

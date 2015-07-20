@@ -3,7 +3,7 @@
 Plugin Name: Add Meta Tags
 Plugin URI: http://www.g-loaded.eu/2006/01/05/add-meta-tags-wordpress-plugin/
 Description: Add basic meta tags and also Opengraph, Schema.org Microdata, Twitter Cards and Dublin Core metadata to optimize your web site for better SEO.
-Version: 2.4.3
+Version: 2.8.17
 Author: George Notaras
 Author URI: http://www.g-loaded.eu/
 License: Apache License v2
@@ -48,34 +48,44 @@ Domain Path: /languages/
  *  The NOTICE file contains additional licensing and copyright information.
  */
 
+// Prevent direct access to this file.
+if ( ! defined( 'ABSPATH' ) ) {
+    header( 'HTTP/1.0 403 Forbidden' );
+    echo 'This file should not be accessed directly!';
+    exit; // Exit if accessed directly
+}
 
 // Store plugin directory
-define('AMT_DIR', dirname(__FILE__));
+define( 'AMT_PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
+// Store plugin main file path
+define( 'AMT_PLUGIN_FILE', __FILE__ );
 
 // Import modules
-require_once( join( DIRECTORY_SEPARATOR, array( AMT_DIR, 'amt-settings.php' ) ) );
-require_once( join( DIRECTORY_SEPARATOR, array( AMT_DIR, 'amt-admin-panel.php' ) ) );
-require_once( join( DIRECTORY_SEPARATOR, array( AMT_DIR, 'amt-utils.php' ) ) );
-require_once( join( DIRECTORY_SEPARATOR, array( AMT_DIR, 'amt-template-tags.php' ) ) );
-require_once( join( DIRECTORY_SEPARATOR, array( AMT_DIR, 'metadata', 'amt_basic.php' ) ) );
-require_once( join( DIRECTORY_SEPARATOR, array( AMT_DIR, 'metadata', 'amt_twitter_cards.php' ) ) );
-require_once( join( DIRECTORY_SEPARATOR, array( AMT_DIR, 'metadata', 'amt_opengraph.php' ) ) );
-require_once( join( DIRECTORY_SEPARATOR, array( AMT_DIR, 'metadata', 'amt_dublin_core.php' ) ) );
-require_once( join( DIRECTORY_SEPARATOR, array( AMT_DIR, 'metadata', 'amt_schemaorg.php' ) ) );
+require_once( AMT_PLUGIN_DIR . 'amt-settings.php' );
+require_once( AMT_PLUGIN_DIR . 'amt-admin-panel.php' );
+require_once( AMT_PLUGIN_DIR . 'amt-utils.php' );
+require_once( AMT_PLUGIN_DIR . 'amt-template-tags.php' );
+require_once( AMT_PLUGIN_DIR . 'amt-embed.php' );
+require_once( AMT_PLUGIN_DIR . 'metadata/amt_basic.php' );
+require_once( AMT_PLUGIN_DIR . 'metadata/amt_twitter_cards.php' );
+require_once( AMT_PLUGIN_DIR . 'metadata/amt_opengraph.php' );
+require_once( AMT_PLUGIN_DIR . 'metadata/amt_dublin_core.php' );
+require_once( AMT_PLUGIN_DIR . 'metadata/amt_schemaorg.php' );
+require_once( AMT_PLUGIN_DIR . 'metadata/amt_extended.php' );
 
 /**
  * Translation Domain
  *
  * Translation files are searched in: wp-content/plugins
  */
-load_plugin_textdomain('add-meta-tags', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/');
+load_plugin_textdomain('add-meta-tags', false, dirname( plugin_basename( AMT_PLUGIN_FILE ) ) . '/languages/');
 
 
 /**
  * Settings Link in the ``Installed Plugins`` page
  */
 function amt_plugin_actions( $links, $file ) {
-    if( $file == plugin_basename(__FILE__) && function_exists( "admin_url" ) ) {
+    if( $file == plugin_basename( AMT_PLUGIN_FILE ) && function_exists( "admin_url" ) ) {
         $settings_link = '<a href="' . admin_url( 'options-general.php?page=add-meta-tags-options' ) . '">' . __('Settings') . '</a>';
         // Add the settings link before other links
         array_unshift( $links, $settings_link );
@@ -108,6 +118,8 @@ function amt_custom_title_tag($title) {
         $custom_title = amt_get_post_meta_title( $post->ID );
         if ( !empty($custom_title) ) {
             $custom_title = str_replace('%title%', $title, $custom_title);
+            // Allow filtering of the custom title
+            $custom_title = apply_filters( 'amt_custom_title', $custom_title );
             // Note: Contains multipage information through amt_process_paged()
             return esc_attr( amt_process_paged( $custom_title ) );
         }
@@ -116,6 +128,39 @@ function amt_custom_title_tag($title) {
     return $title;
 }
 add_filter('wp_title', 'amt_custom_title_tag', 1000);
+
+
+/**
+ * Sets the correct lang attribute of the html element of the page,
+ * according to the content's locale.
+ */
+function amt_set_html_lang_attribute( $lang ) {
+    //var_dump($lang);
+    $options = get_option('add_meta_tags_opts');
+    if ( ! is_array($options) ) {
+        return $lang;
+    } elseif ( ! array_key_exists( 'manage_html_lang_attribute', $options) ) {
+        return $lang;
+    } elseif ( $options['manage_html_lang_attribute'] == '0' ) {
+        return $lang;
+    }
+    // Set the html lang attribute according to the locale
+    $locale = '';
+    if ( is_singular() ) {
+        $post = get_queried_object();
+        $locale = str_replace( '_', '-', amt_get_language_content($options, $post) );
+    } else {
+        $locale = str_replace( '_', '-', amt_get_language_site($options) );
+    }
+    // Allow filtering
+    $locale = apply_filters( 'amt_wordpress_lang', $locale );
+    if ( ! empty($locale) ) {
+        // Replace WordPress locale with ours. (even if it's the same)
+        $lang = str_replace( get_bloginfo('language'), $locale, $lang );
+    }
+    return $lang;
+}
+add_filter( 'language_attributes', 'amt_set_html_lang_attribute' );
 
 
 /**
@@ -129,6 +174,14 @@ function amt_get_metadata_head() {
 
     $metadata_arr = array();
 
+    // No metadata for password protected posts.
+    if ( post_password_required() ) {
+        return $metadata_arr;
+    }
+
+    // Robots Meta Tag content.
+    $robots_content = '';
+
     // Check for NOINDEX,FOLLOW on archives.
     // There is no need to further process metadata as we explicitly ask search
     // engines not to index the content.
@@ -138,12 +191,21 @@ function amt_get_metadata_head() {
             ( is_date() && ($options["noindex_date_archives"] == "1") )  ||             // Date and time archives
             ( is_category() && is_paged() && ($options["noindex_category_archives"] == "1") )  ||     // Category archives (except 1st page)
             ( is_tag() && is_paged() && ($options["noindex_tag_archives"] == "1") )  ||               // Tag archives (except 1st page)
+            ( is_tax() && is_paged() && ($options["noindex_taxonomy_archives"] == "1") )  ||          // Custom taxonomy archives (except 1st page)
             ( is_author() && is_paged() && ($options["noindex_author_archives"] == "1") )             // Author archives (except 1st page)
         ) {
-            $metadata_arr[] = '<meta name="robots" content="NOINDEX,FOLLOW" />';
             $do_add_metadata = false;   // No need to process metadata
+            $robots_content = 'NOINDEX,FOLLOW';
+            // Allow filtering of the robots meta tag content.
+            // Dev Note: Filtering of the robots meta tag takes place here, so as to avoid double filtering in case $do_add_metadata is true.
+            $robots_content = apply_filters( 'amt_robots_data', $robots_content );
         }
     }
+    // Add a robots meta tag if its content is not empty.
+    if ( ! empty( $robots_content ) ) {
+        $metadata_arr[] = '<meta name="robots" content="' . $robots_content . '" />';
+    }
+
 
     // Get current post object
     $post = get_queried_object();

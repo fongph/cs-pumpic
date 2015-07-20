@@ -43,6 +43,13 @@
  * Module containing functions related to Basic Metadata
  */
 
+// Prevent direct access to this file.
+if ( ! defined( 'ABSPATH' ) ) {
+    header( 'HTTP/1.0 403 Forbidden' );
+    echo 'This file should not be accessed directly!';
+    exit; // Exit if accessed directly
+}
+
 
 /**
  * Generates basic metadata for the head area.
@@ -57,11 +64,75 @@ function amt_add_basic_metadata_head( $post, $attachments, $embedded_media, $opt
     // Array to store metadata
     $metadata_arr = array();
 
-    // Add NOODP on posts and pages
+
+    // Robots Meta Tag.
+    $robots_content = '';
+
     if ( $do_noodp_description && ( is_front_page() || is_singular() ) ) {
-        $metadata_arr[] = '<meta name="robots" content="NOODP,NOYDIR" />';
+        // Add NOODP on posts and pages
+        $robots_content = 'NOODP,NOYDIR';
+        // Allow filtering of the robots meta tag content.
+        $robots_content = apply_filters( 'amt_robots_data', $robots_content );
+    }
+    // Add a robots meta tag if its content is not empty.
+    if ( ! empty( $robots_content ) ) {
+        $metadata_arr[] = '<meta name="robots" content="' . $robots_content . '" />';
     }
 
+
+    // hreflang link element
+    if ( $options['generate_hreflang_links'] == '1' ) {
+        if ( is_singular() ) {
+            $locale = amt_get_language_content($options, $post);
+            $hreflang = amt_get_the_hreflang($locale, $options);
+            $hreflang_url = amt_get_permalink_for_multipage($post);
+        } else {
+            $locale = amt_get_language_site($options);
+            $hreflang = amt_get_the_hreflang($locale, $options);
+            $hreflang_url = '';
+            if ( amt_is_default_front_page() ) {
+                $hreflang_url = trailingslashit( get_bloginfo('url') );
+            } elseif ( is_category() || is_tag() || is_tax() ) {
+                // $post is a term object
+                $hreflang_url = get_term_link($post);
+            } elseif ( is_author() ) {
+                // $post is an author object
+                $hreflang_url = get_author_posts_url( $post->ID );
+            } elseif ( is_year() ) {
+                $archive_year  = get_the_time('Y'); 
+                $hreflang_url = get_year_link($archive_year);
+            } elseif ( is_month() ) {
+                $archive_year  = get_the_time('Y'); 
+                $archive_month = get_the_time('m'); 
+                $hreflang_url = get_month_link($archive_year, $archive_month);
+            } elseif ( is_day() ) {
+                $archive_year  = get_the_time('Y'); 
+                $archive_month = get_the_time('m'); 
+                $archive_day   = get_the_time('d'); 
+                $hreflang_url = get_day_link($archive_year, $archive_month, $archive_day);
+            }
+            // If paged information is available
+            if ( is_paged() ) {
+                //$hreflang_url = trailingslashit( $hreflang_url ) . get_query_var('paged') . '/';
+                $hreflang_url = get_pagenum_link( get_query_var('paged') );
+            }
+        }
+        // hreflang links array
+        $hreflang_arr = array();
+        // Add link element
+        if ( ! empty($hreflang) && ! empty($hreflang_url) ) {
+            $hreflang_arr[] = '<link rel="alternate" hreflang="' . esc_attr( $hreflang ) . '" href="' . esc_url_raw( $hreflang_url ) . '" />';
+        }
+        // Allow filtering of the hreflang array
+        $hreflang_arr = apply_filters( 'amt_hreflang_links', $hreflang_arr, $hreflang, $hreflang_url );
+        // Add to to metadata array
+        foreach ( $hreflang_arr as $hreflang_link ) {
+            $metadata_arr[] = $hreflang_link;
+        }
+    }
+
+
+    // Basic Meta Tags
 
     // Default front page displaying latest posts
     if ( amt_is_default_front_page() ) {
@@ -73,7 +144,7 @@ function amt_add_basic_metadata_head( $post, $attachments, $embedded_media, $opt
         if ($do_description) {
             // Use the site description from the Add-Meta-Tags settings.
             // Fall back to the blog description.
-            $site_description = $options["site_description"];
+            $site_description = amt_get_site_description($options);
             if ( empty($site_description ) ) {
                 // Alternatively, use the blog description
                 // Here we sanitize the provided description for safety
@@ -90,7 +161,7 @@ function amt_add_basic_metadata_head( $post, $attachments, $embedded_media, $opt
         if ($do_keywords) {
             // Use the site keywords from the Add-Meta-Tags settings.
             // Fall back to the blog categories.
-            $site_keywords = $options["site_keywords"];
+            $site_keywords = amt_get_site_keywords($options);
             if ( empty( $site_keywords ) ) {
                 // Alternatively, use the blog categories
                 // Here we sanitize the provided keywords for safety
@@ -119,6 +190,7 @@ function amt_add_basic_metadata_head( $post, $attachments, $embedded_media, $opt
 
 
     // Content pages and static pages used as "front page" and "posts page"
+    // This also supports products via is_singular()
     } elseif ( is_singular() || amt_is_static_front_page() || amt_is_static_home() ) {
 
         // Description
@@ -171,7 +243,10 @@ function amt_add_basic_metadata_head( $post, $attachments, $embedded_media, $opt
             $description_content = sanitize_text_field( amt_sanitize_description( category_description() ) );
             // Note: Contains multipage information through amt_process_paged()
             if ( empty( $description_content ) ) {
-                $metadata_arr[] = '<meta name="description" content="' . esc_attr( amt_process_paged( 'Content filed under the ' . single_cat_title( $prefix='', $display=false ) . ' category.' ) ) . '" />';
+                // Add a filtered generic description.
+                $generic_description = apply_filters( 'amt_generic_description_category_archive', __('Content filed under the %s category.', 'add-meta-tags') );
+                $generic_description = sprintf( $generic_description, single_cat_title( $prefix='', $display=false ) );
+                $metadata_arr[] = '<meta name="description" content="' . esc_attr( amt_process_paged( $generic_description ) ) . '" />';
             } else {
                 $metadata_arr[] = '<meta name="description" content="' . esc_attr( amt_process_paged( $description_content ) ) . '" />';
             }
@@ -195,7 +270,10 @@ function amt_add_basic_metadata_head( $post, $attachments, $embedded_media, $opt
             $description_content = sanitize_text_field( amt_sanitize_description( tag_description() ) );
             // Note: Contains multipage information through amt_process_paged()
             if ( empty( $description_content ) ) {
-                $metadata_arr[] = '<meta name="description" content="' . esc_attr( amt_process_paged( 'Content tagged with ' . single_tag_title( $prefix='', $display=false ) . '.' ) ) . '" />';
+                // Add a filtered generic description.
+                $generic_description = apply_filters( 'amt_generic_description_tag_archive', __('Content tagged with %s.', 'add-meta-tags') );
+                $generic_description = sprintf( $generic_description, single_tag_title( $prefix='', $display=false ) );
+                $metadata_arr[] = '<meta name="description" content="' . esc_attr( amt_process_paged( $generic_description ) ) . '" />';
             } else {
                 $metadata_arr[] = '<meta name="description" content="' . esc_attr( amt_process_paged( $description_content ) ) . '" />';
             }
@@ -207,6 +285,43 @@ function amt_add_basic_metadata_head( $post, $attachments, $embedded_media, $opt
             $cur_tag_name = sanitize_text_field( amt_sanitize_keywords( single_tag_title($prefix = '', $display = false ) ) );
             if ( ! empty($cur_tag_name) ) {
                 $metadata_arr[] = '<meta name="keywords" content="' . esc_attr( $cur_tag_name ) . '" />';
+            }
+        }
+
+    // Custom taxonomies - Should be after is_category() and is_tag(), as it would catch those taxonomies as well.
+    // This also supports product groups via is_tax(). Only product groups that are WordPress custom taxonomies are supported.
+    } elseif ( is_tax() ) {
+
+        // Taxonomy term object.
+        // When viewing taxonomy archives, the $post object is the taxonomy term object. Check with: var_dump($post);
+        $tax_term_object = $post;
+        //var_dump($tax_term_object);
+
+        if ($do_description) {
+            // If set, the description of the custom taxonomy term is used in the 'description' metatag.
+            // Otherwise, a generic description is used.
+            // Here we sanitize the provided description for safety
+            $description_content = sanitize_text_field( amt_sanitize_description( term_description( $tax_term_object->term_id, $tax_term_object->taxonomy ) ) );
+            // Note: Contains multipage information through amt_process_paged()
+            if ( empty( $description_content ) ) {
+                // Add a filtered generic description.
+                // Construct the filter name. Template: ``amt_generic_description_TAXONOMYSLUG_archive``
+                $taxonomy_description_filter_name = sprintf( 'amt_generic_description_%s_archive', $tax_term_object->taxonomy);
+                // var_dump($taxonomy_description_filter_name);
+                $generic_description = apply_filters( $taxonomy_description_filter_name, __('Content filed under the %s taxonomy.', 'add-meta-tags') );
+                $generic_description = sprintf( $generic_description, single_term_title( $prefix='', $display=false ) );
+                $metadata_arr[] = '<meta name="description" content="' . esc_attr( amt_process_paged( $generic_description ) ) . '" />';
+            } else {
+                $metadata_arr[] = '<meta name="description" content="' . esc_attr( amt_process_paged( $description_content ) ) . '" />';
+            }
+        }
+        
+        if ($do_keywords) {
+            // The taxonomy term name alone is included in the 'keywords' metatag.
+            // Here we sanitize the provided keywords for safety.
+            $cur_tax_term_name = sanitize_text_field( amt_sanitize_keywords( single_term_title( $prefix = '', $display = false ) ) );
+            if ( ! empty($cur_tax_term_name) ) {
+                $metadata_arr[] = '<meta name="keywords" content="' . esc_attr( $cur_tax_term_name ) . '" />';
             }
         }
 
@@ -232,7 +347,10 @@ function amt_add_basic_metadata_head( $post, $attachments, $embedded_media, $opt
             $author_description = sanitize_text_field( amt_sanitize_description( $author->description ) );
             if ( empty( $author_description ) || is_paged() ) {
                 // Note: Contains multipage information through amt_process_paged()
-                $metadata_arr[] = '<meta name="description" content="' . esc_attr( amt_process_paged( 'Content published by ' . $author->display_name . '.' ) ) . '" />';
+                // Add a filtered generic description.
+                $generic_description = apply_filters( 'amt_generic_description_author_archive', __('Content published by %s.', 'add-meta-tags') );
+                $generic_description = sprintf( $generic_description, $author->display_name );
+                $metadata_arr[] = '<meta name="description" content="' . esc_attr( amt_process_paged( $generic_description ) ) . '" />';
             } else {
                 $metadata_arr[] = '<meta name="description" content="' . esc_attr( $author_description ) . '" />';
             }
@@ -255,8 +373,12 @@ function amt_add_basic_metadata_head( $post, $attachments, $embedded_media, $opt
     }
 
     // On every page print the copyright head link
-    if ( ! empty( $options["copyright_url"] ) ) {
-        $metadata_arr[] = '<link rel="copyright" type="text/html" title="' . esc_attr( get_bloginfo('name') ) . ' Copyright Information" href="' . esc_url_raw( $options["copyright_url"] ) . '" />';
+    $copyright_url = amt_get_site_copyright_url($options);
+    //if ( empty($copyright_url)) {
+    //    $copyright_url = trailingslashit( get_bloginfo('url') );
+    //}
+    if ( ! empty($copyright_url) ) {
+        $metadata_arr[] = '<link rel="copyright" type="text/html" title="' . esc_attr( get_bloginfo('name') ) . ' Copyright Information" href="' . esc_url_raw( $copyright_url ) . '" />';
     }
 
     // Filtering of the generated basic metadata

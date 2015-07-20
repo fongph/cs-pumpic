@@ -50,11 +50,23 @@
  * Module containing functions related to Dublin Core
  */
 
+// Prevent direct access to this file.
+if ( ! defined( 'ABSPATH' ) ) {
+    header( 'HTTP/1.0 403 Forbidden' );
+    echo 'This file should not be accessed directly!';
+    exit; // Exit if accessed directly
+}
+
 
 function amt_add_dublin_core_metadata_head( $post, $attachments, $embedded_media, $options ) {
 
     if ( !is_singular() || is_front_page() ) {  // is_front_page() is used for the case in which a static page is used as the front page.
         // Dublin Core metadata has a meaning for content only.
+        return array();
+    }
+
+    // The Dublin Core metadata generator does not support products or product groups.
+    if ( amt_is_product() || amt_is_product_group() ) {
         return array();
     }
 
@@ -99,12 +111,16 @@ function amt_add_dublin_core_metadata_head( $post, $attachments, $embedded_media
         }
     }
 
-    $metadata_arr[] = '<meta name="dcterms.language" content="' . esc_attr( get_bloginfo('language') ) . '" />';
-    $metadata_arr[] = '<meta name="dcterms.publisher" content="' . esc_url_raw( get_bloginfo('url') ) . '" />';
+    $metadata_arr[] = '<meta name="dcterms.language" content="' . esc_attr( amt_get_language_content($options, $post) ) . '" />';
+    $metadata_arr[] = '<meta name="dcterms.publisher" content="' . esc_url_raw( trailingslashit( get_bloginfo('url') ) ) . '" />';
 
     // Copyright page
-    if (!empty($options["copyright_url"])) {
-        $metadata_arr[] = '<meta name="dcterms.rights" content="' . esc_url_raw( get_bloginfo('url') ) . '" />';
+    $copyright_url = amt_get_site_copyright_url($options);
+    if ( empty($copyright_url)) {
+        $copyright_url = trailingslashit( get_bloginfo('url') );
+    }
+    if ( ! empty($copyright_url) ) {
+        $metadata_arr[] = '<meta name="dcterms.rights" content="' . esc_url_raw( $copyright_url ) . '" />';
     }
 
     // License
@@ -144,7 +160,7 @@ function amt_add_dublin_core_metadata_head( $post, $attachments, $embedded_media
         }
 
         // Finally add the hasFormat
-        $metadata_arr[] = '<meta name="dcterms.hasFormat" content="' . esc_url_raw( $post->guid ) . '" />';
+        $metadata_arr[] = '<meta name="dcterms.hasFormat" content="' . esc_url_raw( wp_get_attachment_url($post->ID) ) . '" />';
 
     } else {    // Default: Text
         $metadata_arr[] = '<meta name="dcterms.type" content="Text" />';

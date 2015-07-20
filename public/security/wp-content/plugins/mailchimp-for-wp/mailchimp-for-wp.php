@@ -3,7 +3,7 @@
 Plugin Name: MailChimp for WordPress Lite
 Plugin URI: https://mc4wp.com/
 Description: Lite version of MailChimp for WordPress. Adds various sign-up methods to your website. 
-Version: 2.2.3
+Version: 2.3.7
 Author: Danny van Kooten
 Author URI: https://dannyvankooten.com
 Text Domain: mailchimp-for-wp

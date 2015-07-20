@@ -41,6 +41,13 @@
  * Module containing template tags.
  */
 
+// Prevent direct access to this file.
+if ( ! defined( 'ABSPATH' ) ) {
+    header( 'HTTP/1.0 403 Forbidden' );
+    echo 'This file should not be accessed directly!';
+    exit; // Exit if accessed directly
+}
+
 
 function amt_content_description() {
     $post = get_queried_object();
@@ -69,5 +76,9 @@ function amt_metadata_footer() {
 function amt_metadata_review() {
     // Prints full metadata in review mode. No user level checks here.
     echo amt_get_metadata_inspect();
+}
+
+function amt_breadcrumbs( $user_options ) {
+    echo amt_get_breadcrumbs( $user_options );
 }
 

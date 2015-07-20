@@ -4,7 +4,7 @@
 Plugin Name: WP Popular Posts
 Plugin URI: http://www.sooource.net/wp-popularposts
 Description: Виджет выводит популярные записи на вашем блоге, полагаясь на самые комментируемые записи./Widget displays a popular entries on your blog, relying on the most the event recording.
-Version: 1.0.0
+Version: 1.2
 Author: Alexei91 
 Author URI: http://www.sooource.net
 */ 

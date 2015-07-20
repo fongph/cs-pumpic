@@ -41,6 +41,13 @@
  * Module containing utility functions.
  */
 
+// Prevent direct access to this file.
+if ( ! defined( 'ABSPATH' ) ) {
+    header( 'HTTP/1.0 403 Forbidden' );
+    echo 'This file should not be accessed directly!';
+    exit; // Exit if accessed directly
+}
+
 
 /**
  * Helper function that returns an array of allowable HTML elements and attributes
@@ -117,18 +124,26 @@ function amt_sanitize_description($desc) {
 
     // Remove shortcode
     // Needs to be before cleaning double quotes as it may contain quoted settings.
-    $pattern = get_shortcode_regex();
+//    $pattern = get_shortcode_regex();
     //var_dump($pattern);
-    $desc = preg_replace('#' . $pattern . '#s', '', $desc);
+    // TODO: Possibly this is not needed since shortcodes are stripped in amt_get_the_excerpt().
+//    $desc = preg_replace('#' . $pattern . '#s', '', $desc);
 
     // Clean double quotes
     $desc = str_replace('"', '', $desc);
-    $desc = str_replace('&quot;', '', $desc);
+//    $desc = str_replace('&quot;', '', $desc);
 
     // Convert single quotes to space
-    $desc = str_replace("'", ' ', $desc);
-    $desc = str_replace('&#039;', ' ', $desc);
-    $desc = str_replace("&apos;", ' ', $desc);
+    //$desc = str_replace("'", ' ', $desc);
+    //$desc = str_replace('&#039;', ' ', $desc);
+    //$desc = str_replace("&apos;", ' ', $desc);
+    //$desc = str_replace("&#8216;", ' ', $desc);
+    //$desc = str_replace("&#8217;", ' ', $desc);
+    // Finally, convert double space to single space.
+    //$desc = str_replace('  ', ' ', $desc);
+
+    // Allow further filtering of description
+    $desc = apply_filters( 'amt_sanitize_description_extra', $desc );
 
     return $desc;
 }
@@ -160,6 +175,9 @@ function amt_sanitize_keywords( $text ) {
     $text = str_replace('&#039;', ' ', $text);
     $text = str_replace("&apos;", ' ', $text);
 
+    // Allow further filtering of keywords
+    $text = apply_filters( 'amt_sanitize_keywords_extra', $text );
+
     return $text;
 }
 
@@ -174,6 +192,7 @@ function amt_sanitize_keywords( $text ) {
 function amt_convert_placeholders( $data ) {
     $data = str_replace('%cats%', '#cats#', $data);
     $data = str_replace('%tags%', '#tags#', $data);
+    $data = str_replace('%terms%', '#terms#', $data);
     $data = str_replace('%contentkw%', '#contentkw#', $data);
     $data = str_replace('%title%', '#title#', $data);
     return $data;
@@ -188,6 +207,7 @@ function amt_convert_placeholders( $data ) {
 function amt_revert_placeholders( $data ) {
     $data = str_replace('#cats#', '%cats%', $data);
     $data = str_replace('#tags#', '%tags%', $data);
+    $data = str_replace('#terms#', '%terms%', $data);
     $data = str_replace('#contentkw#', '%contentkw%', $data);
     $data = str_replace('#title#', '%title%', $data);
     return $data;
@@ -250,8 +270,19 @@ function amt_get_the_excerpt( $post, $excerpt_max_len=300, $desc_avg_length=250,
 
         // Here we generate an excerpt from $post->post_content
 
-        // Get the initial data for the excerpt
-        $amt_excerpt = sanitize_text_field( amt_sanitize_description( substr($post->post_content, 0, $excerpt_max_len) ) );
+        // Early filter that lets dev define the post. This makes it possible to
+        // exclude specific parts of the post for the rest of the algorithm.
+        $initial_content = apply_filters( 'amt_get_the_excerpt_initial_content', $post->post_content, $post );
+
+        // First strip all HTML tags
+        $plain_text = wp_kses( $initial_content, array() );
+
+        // Strip shortcodes
+        $plain_text = strip_shortcodes( $plain_text );
+
+        // Get the initial text.
+        // We use $excerpt_max_len characters of the text for the description.
+        $amt_excerpt = sanitize_text_field( amt_sanitize_description( substr($plain_text, 0, $excerpt_max_len) ) );
 
         // Remove any URLs that may exist exactly at the beginning of the description.
         // This may happen if for example you put a youtube video url first thing in
@@ -339,13 +370,51 @@ function amt_get_the_excerpt( $post, $excerpt_max_len=300, $desc_avg_length=250,
 
 
 /**
+ * Returns a comma-delimited list of a post's terms that belong to custom taxonomies.
+ */
+function amt_get_keywords_from_custom_taxonomies( $post ) {
+    // Array to hold all terms of custom taxonomies.
+    $keywords_arr = array();
+
+    // Get the custom taxonomy names.
+    // Arguments in order to retrieve all public custom taxonomies
+    // (excluding the builtin categories, tags and post formats.)
+    $args = array(
+        'public'   => true,
+        '_builtin' => false
+    );
+    $output = 'names'; // or objects
+    $operator = 'and'; // 'and' or 'or'
+    $taxonomies = get_taxonomies( $args, $output, $operator );
+
+    // Get the terms of each taxonomy and append to $keywords_arr
+    foreach ( $taxonomies  as $taxonomy ) {
+        $terms = get_the_terms( $post->ID, $taxonomy );
+        if ( $terms && is_array($terms) ) {
+            foreach ( $terms as $term ) {
+                $keywords_arr[] = $term->name;
+            }
+        }
+    }
+
+    if ( ! empty( $keywords_arr ) ) {
+        return implode(', ', $keywords_arr);
+    } else {
+        return '';
+    }
+}
+
+
+/**
  * Returns a comma-delimited list of a post's categories.
  */
 function amt_get_keywords_from_post_cats( $post ) {
 
     $postcats = "";
     foreach((get_the_category($post->ID)) as $cat) {
-        $postcats .= $cat->cat_name . ', ';
+        if ( $cat->slug != 'uncategorized' ) {
+            $postcats .= $cat->cat_name . ', ';
+        }
     }
     // strip final comma
     $postcats = substr($postcats, 0, -2);
@@ -474,12 +543,36 @@ function amt_get_tags_from_loop( $tag_arr=array() ) {
 
 
 /**
+ * Returns an array of URLS of referenced items in the post.
+ *
+ * Accepts a post object.
+ */
+function amt_get_referenced_items( $post ) {
+    if ( is_singular() ) {  // TODO: check if this check is needed at all!
+        $referenced_list_content = amt_get_post_meta_referenced_list( $post->ID );
+        if ( ! empty( $referenced_list_content ) ) {
+            // Each line contains a single URL. Split the string and convert each line to an array item.
+            $referenced_list_content = str_replace("\r", '', $referenced_list_content);     // Do not change the double quotes.
+            return explode("\n", $referenced_list_content);                                 // Do not change the double quotes.
+        }
+    }
+    return array();
+}
+
+
+/**
  * This is a helper function that returns the post's or page's description.
  *
  * Important: MUST return sanitized data, unless this plugin has sanitized the data before storing to db.
  *
  */
 function amt_get_content_description( $post, $auto=true ) {
+
+    // By default, if a custom description has not been entered by the user in the
+    // metabox, a description is autogenerated. To stop this automatic generation
+    // of a description and return only the description that has been entered manually,
+    // set $auto to false via the following filter.
+    $auto = apply_filters( 'amt_generate_description_if_no_manual_data', $auto );
 
     $content_description = '';
 
@@ -508,78 +601,150 @@ function amt_get_content_description( $post, $auto=true ) {
  * Important: MUST return sanitized data, unless this plugin has sanitized the data before storing to db.
  *
  */
-function amt_get_content_keywords($post, $auto=true) {
+function amt_get_content_keywords($post, $auto=true, $exclude_categories=false) {
     
+    // By default, if custom keywords have not been entered by the user in the
+    // metabox, keywords are autogenerated. To stop this automatic generation
+    // of keywords and return only the keywords that have been entered manually,
+    // set $auto to false via the following filter.
+    $auto = apply_filters( 'amt_generate_keywords_if_no_manual_data', $auto );
+
     $content_keywords = '';
 
     /*
-     * Custom post field "keywords" overrides post's categories and tags (tags exist in WordPress 2.3 or newer).
+     * Custom post field "keywords" overrides post's categories, tags (tags exist in WordPress 2.3 or newer)
+     * and custom taxonomy terms (custom taxonomies exist since WP version 2.8).
      * %cats% is replaced by the post's categories.
-     * %tags% us replaced by the post's tags.
+     * %tags% is replaced by the post's tags.
+     * %terms% is replaced by the post's custom taxonomy terms.
      */
     if ( is_singular() || amt_is_static_front_page() || amt_is_static_home() ) {
 
         $keyw_fld_content = amt_get_post_meta_keywords( $post->ID );
 
         // If there is a custom field, use it
-        if ( !empty($keyw_fld_content) ) {
+        if ( ! empty($keyw_fld_content) ) {
             
-            // On single posts, expand the %cats% and %tags% placeholders
+            // On single posts, expand the %cats%, %tags% and %terms% placeholders.
+            // This should not take place in pages (no categories, no tags by default)
+            // or custom post types, the support of which for categories and tags is unknown.
+
             if ( is_single() ) {
 
                 // Here we sanitize the provided keywords for safety
                 $keywords_from_post_cats = sanitize_text_field( amt_sanitize_keywords( amt_get_keywords_from_post_cats($post) ) );
-                $keyw_fld_content = str_replace("%cats%", $keywords_from_post_cats, $keyw_fld_content);
+                if ( ! empty($keywords_from_post_cats) ) {
+                    $keyw_fld_content = str_replace("%cats%", $keywords_from_post_cats, $keyw_fld_content);
+                }
 
-                // Also, the %tags% tag is replaced by the post's tags (WordPress 2.3 or newer)
+                // Also, the %tags% placeholder is replaced by the post's tags (WordPress 2.3 or newer)
                 if ( version_compare( get_bloginfo('version'), '2.3', '>=' ) ) {
                     // Here we sanitize the provided keywords for safety
                     $keywords_from_post_tags = sanitize_text_field( amt_sanitize_keywords( amt_get_post_tags($post) ) );
-                    $keyw_fld_content = str_replace("%tags%", $keywords_from_post_tags, $keyw_fld_content);
+                    if ( ! empty($keywords_from_post_tags) ) {
+                        $keyw_fld_content = str_replace("%tags%", $keywords_from_post_tags, $keyw_fld_content);
+                    }
+                }
+
+                // Also, the %terms% placeholder is replaced by the post's custom taxonomy terms (WordPress 2.8 or newer)
+                if ( version_compare( get_bloginfo('version'), '2.8', '>=' ) ) {
+                    // Here we sanitize the provided keywords for safety
+                    $keywords_from_post_terms = sanitize_text_field( amt_sanitize_keywords( amt_get_keywords_from_custom_taxonomies($post) ) );
+                    if ( ! empty($keywords_from_post_terms) ) {
+                        $keyw_fld_content = str_replace("%terms%", $keywords_from_post_terms, $keyw_fld_content);
+                    }
                 }
             }
             $content_keywords .= $keyw_fld_content;
 
-        // Otherwise, generate the keywords from categories and tags
+        // Otherwise, generate the keywords from categories, tags and custom taxonomy terms.
         // Note:
-        // Here we use is_singular(), so that pages are checked for categories and tags.
+        // Here we use is_singular(), so that pages are also checked for categories and tags.
         // By default, pages do not support categories and tags, but enabling such
         // functionality is trivial. See #1206 for more details.
-        } elseif ( is_singular() ) {
-            if ($auto) {
-                /*
-                 * Add keywords automatically.
-                 * Keywords consist of the post's categories and the post's tags (tags exist in WordPress 2.3 or newer).
-                 */
-                // Here we sanitize the provided keywords for safety
+
+        } elseif ( $auto && is_singular() ) {
+            /*
+             * Add keywords automatically.
+             * Keywords consist of the post's categories, the post's tags (tags exist in WordPress 2.3 or newer)
+             * and the terms of the custom taxonomies to which the post belongs (since WordPress 2.8).
+             */
+            // Categories - Here we sanitize the provided keywords for safety
+            if ( $exclude_categories === false ) {
                 $keywords_from_post_cats = sanitize_text_field( amt_sanitize_keywords( amt_get_keywords_from_post_cats($post) ) );
                 if (!empty($keywords_from_post_cats)) {
                     $content_keywords .= $keywords_from_post_cats;
                 }
-                // Here we sanitize the provided keywords for safety
-                $keywords_from_post_tags = sanitize_text_field( amt_sanitize_keywords( amt_get_post_tags($post) ) );
-                if (!empty($keywords_from_post_tags)) {
-                    $content_keywords .= ", " . $keywords_from_post_tags;
-                }
             }
+            // Tags - Here we sanitize the provided keywords for safety
+            $keywords_from_post_tags = sanitize_text_field( amt_sanitize_keywords( amt_get_post_tags($post) ) );
+            if (!empty($keywords_from_post_tags)) {
+                if ( ! empty($content_keywords) ) {
+                    $content_keywords .= ", ";
+                }
+                $content_keywords .= $keywords_from_post_tags;
+            }
+            // Custom taxonomy terms - Here we sanitize the provided keywords for safety
+            $keywords_from_post_custom_taxonomies = sanitize_text_field( amt_sanitize_keywords( amt_get_keywords_from_custom_taxonomies($post) ) );
+            if (!empty($keywords_from_post_custom_taxonomies)) {
+                if ( ! empty($content_keywords) ) {
+                    $content_keywords .= ", ";
+                }
+                $content_keywords .= $keywords_from_post_custom_taxonomies;
+            }
+        }
+    }
+
+    // Add post format to the list of keywords
+    if ( $auto && is_singular() && get_post_format($post->ID) !== false ) {
+        if ( empty($content_keywords) ) {
+            $content_keywords .= get_post_format($post->ID);
+        } else {
+            $content_keywords .= ', ' . get_post_format($post->ID);
         }
     }
 
     /**
      * Finally, add the global keywords, if they are set in the administration panel.
-     * If $content_keywords is empty, then no global keyword processing takes place.
      */
-    if ( !empty($content_keywords) && ( is_singular() || amt_is_static_front_page() || amt_is_static_home() ) ) {
+    #if ( !empty($content_keywords) && ( is_singular() || amt_is_static_front_page() || amt_is_static_home() ) ) {
+    if ( $auto && ( is_singular() || amt_is_static_front_page() || amt_is_static_home() ) ) {
+
         $options = get_option("add_meta_tags_opts");
-        $global_keywords = $options["global_keywords"];
-        if (!empty($global_keywords)) {
-            if ( strpos($global_keywords, '%contentkw%') === false ) {
-                // The placeholder ``%contentkw%`` has not been used. Append the content keywords to the global keywords.
-                $content_keywords = $global_keywords . ', ' . $content_keywords;
+        $global_keywords = amt_get_site_global_keywords($options);
+
+        if ( ! empty($global_keywords) ) {
+
+            // If we have $content_keywords so far
+            if ( ! empty($content_keywords) ) {
+                if ( strpos($global_keywords, '%contentkw%') === false ) {
+                    // The placeholder ``%contentkw%`` has not been used. Append the content keywords to the global keywords.
+                    $content_keywords = $global_keywords . ', ' . $content_keywords;
+                } else {
+                    // The user has used the placeholder ``%contentkw%``. Replace it with the content keywords.
+                    $content_keywords = str_replace('%contentkw%', $content_keywords, $global_keywords);
+                }
+
+            // If $content_keywords have not been found.
             } else {
-                // The user has used the placeholder ``%contentkw%``. Replace it with the content keywords.
-                $content_keywords = str_replace('%contentkw%', $content_keywords, $global_keywords);
+                if ( strpos($global_keywords, '%contentkw%') === false ) {
+                    // The placeholder ``%contentkw%`` has not been used. Just use the global keywords as is.
+                    $content_keywords = $global_keywords;
+                } else {
+                    // The user has used the placeholder ``%contentkw%``, but we do not have generated any content keywords => Delete the %contentkw% placeholder.
+                    $global_keywords_new = array();
+                    foreach ( explode(',', $global_keywords) as $g_keyword ) {
+                        $g_keyword = trim($g_keyword);
+                        if ( $g_keyword != '%contentkw%' ) {
+                            $global_keywords_new[] = $g_keyword;
+                        }
+                    }
+                    if ( ! empty($global_keywords_new) ) {
+                        $content_keywords = implode(', ', $global_keywords_new);
+                    }
+                }
             }
+
         }
     }
 
@@ -607,6 +772,45 @@ function amt_get_supported_post_types() {
     $supported_types = apply_filters( 'amt_supported_post_types', $supported_types );
 
     return $supported_types;
+}
+
+
+/**
+ * Helper function that returns an array containing permissions for the
+ * Metadata metabox.
+ */
+function amt_get_metadata_metabox_permissions() {
+    //
+    // Default Metadata metabox permission settings.
+    // Regardless of these settings the `edit_posts` capability is _always_
+    // checked when reading/writing metabox data, so the `edit_posts` capability
+    // should be considered as the least restrictive capability that can be used.
+    // The available Capabilities vs Roles table can be found here:
+    //     http://codex.wordpress.org/Roles_and_Capabilities
+    // To disable a box, simply add a very restrictive capability like `create_users`.
+    //
+    $metabox_permissions = array(
+        // Minimum capability for the metabox to appear in the editing
+        // screen of the supported post types.
+        'global_metabox_capability' => 'edit_posts',
+        // The following permissions have an effect only if they are stricter
+        // than the permission of the `global_metabox_capability` setting.
+        // Edit these, only if you want to further restrict access to
+        // specific boxes, for example the `full metatags` box.
+        'description_box_capability' => 'edit_posts',
+        'keywords_box_capability' => 'edit_posts',
+        'title_box_capability' => 'edit_posts',
+        'news_keywords_box_capability' => 'edit_posts',
+        'full_metatags_box_capability' => 'edit_posts',
+        'image_url_box_capability' => 'edit_posts',
+        'content_locale_box_capability' => 'edit_posts',
+        'express_review_box_capability' => 'edit_posts',
+        'referenced_list_box_capability' => 'edit_posts'
+    );
+    // Allow filtering of the metabox permissions
+    $metabox_permissions = apply_filters( 'amt_metadata_metabox_permissions', $metabox_permissions );
+
+    return $metabox_permissions;
 }
 
 
@@ -653,6 +857,14 @@ function amt_get_post_types_for_metabox() {
  * old ``description`` custom field and also from the custom field of other plugins.
  */
 function amt_get_post_meta_description( $post_id ) {
+    $options = get_option('add_meta_tags_opts');
+    if ( ! is_array($options) ) {
+        return '';
+    } elseif ( ! array_key_exists( 'metabox_enable_description', $options) ) {
+        return '';
+    } elseif ( $options['metabox_enable_description'] == '0' ) {
+        return '';
+    }
     // Internal fields - order matters
     $supported_custom_fields = array( '_amt_description', 'description' );
     // External fields - Allow filtering
@@ -689,6 +901,14 @@ function amt_get_post_meta_description( $post_id ) {
  * old ``keywords`` custom field and also from the custom field of other plugins.
  */
 function amt_get_post_meta_keywords($post_id) {
+    $options = get_option('add_meta_tags_opts');
+    if ( ! is_array($options) ) {
+        return '';
+    } elseif ( ! array_key_exists( 'metabox_enable_keywords', $options) ) {
+        return '';
+    } elseif ( $options['metabox_enable_keywords'] == '0' ) {
+        return '';
+    }
     // Internal fields - order matters
     $supported_custom_fields = array( '_amt_keywords', 'keywords' );
     // External fields - Allow filtering
@@ -724,6 +944,14 @@ function amt_get_post_meta_keywords($post_id) {
  * No need to migrate from older field name.
  */
 function amt_get_post_meta_title($post_id) {
+    $options = get_option('add_meta_tags_opts');
+    if ( ! is_array($options) ) {
+        return '';
+    } elseif ( ! array_key_exists( 'metabox_enable_title', $options) ) {
+        return '';
+    } elseif ( $options['metabox_enable_title'] == '0' ) {
+        return '';
+    }
     // Internal fields - order matters
     $supported_custom_fields = array( '_amt_title' );
     // External fields - Allow filtering
@@ -759,6 +987,14 @@ function amt_get_post_meta_title($post_id) {
  * No need to migrate from older field name.
  */
 function amt_get_post_meta_newskeywords($post_id) {
+    $options = get_option('add_meta_tags_opts');
+    if ( ! is_array($options) ) {
+        return '';
+    } elseif ( ! array_key_exists( 'metabox_enable_news_keywords', $options) ) {
+        return '';
+    } elseif ( $options['metabox_enable_news_keywords'] == '0' ) {
+        return '';
+    }
     // Internal fields - order matters
     $supported_custom_fields = array( '_amt_news_keywords' );
     // External fields - Allow filtering
@@ -794,6 +1030,14 @@ function amt_get_post_meta_newskeywords($post_id) {
  * No need to migrate from older field name.
  */
 function amt_get_post_meta_full_metatags($post_id) {
+    $options = get_option('add_meta_tags_opts');
+    if ( ! is_array($options) ) {
+        return '';
+    } elseif ( ! array_key_exists( 'metabox_enable_full_metatags', $options) ) {
+        return '';
+    } elseif ( $options['metabox_enable_full_metatags'] == '0' ) {
+        return '';
+    }
     // Internal fields - order matters
     $supported_custom_fields = array( '_amt_full_metatags' );
     // External fields - Allow filtering
@@ -812,6 +1056,178 @@ function amt_get_post_meta_full_metatags($post_id) {
     // Try our fields
     foreach( $supported_custom_fields as $sup_field ) {
         // If such a field exists in the db, return its content as the full metatags.
+        if ( in_array( $sup_field, $custom_fields ) ) {
+            return get_post_meta( $post_id, $sup_field, true );
+        }
+    }
+
+    //Return empty string if all fail
+    return '';
+}
+
+
+/**
+ * Helper function that returns the value of the custom field that contains
+ * a global image override URL.
+ * The default field name for the 'global image override URL' is ``_amt_image_url``.
+ * No need to migrate from older field name.
+ */
+function amt_get_post_meta_image_url($post_id) {
+    $options = get_option('add_meta_tags_opts');
+    if ( ! is_array($options) ) {
+        return '';
+    } elseif ( ! array_key_exists( 'metabox_enable_image_url', $options) ) {
+        return '';
+    } elseif ( $options['metabox_enable_image_url'] == '0' ) {
+        return '';
+    }
+    // Internal fields - order matters
+    $supported_custom_fields = array( '_amt_image_url' );
+    // External fields - Allow filtering
+    $external_fields = array();
+    $external_fields = apply_filters( 'amt_external_image_url_fields', $external_fields, $post_id );
+    // Merge external fields to our supported custom fields
+    $supported_custom_fields = array_merge( $supported_custom_fields, $external_fields );
+
+    // Get an array of all custom fields names of the post
+    $custom_fields = get_post_custom_keys( $post_id );
+    if ( empty( $custom_fields ) ) {
+        // Just return an empty string if no custom fields have been associated with this content.
+        return '';
+    }
+
+    // Try our fields
+    foreach( $supported_custom_fields as $sup_field ) {
+        // If such a field exists in the db, return its content as the news keywords.
+        if ( in_array( $sup_field, $custom_fields ) ) {
+            return get_post_meta( $post_id, $sup_field, true );
+        }
+    }
+
+    //Return empty string if all fail
+    return '';
+}
+
+
+/**
+ * Helper function that returns the value of the custom field that contains
+ * a locale override for the content.
+ * The default field name for the 'content locale override' is ``_amt_content_locale``.
+ * No need to migrate from older field name.
+ */
+function amt_get_post_meta_content_locale($post_id) {
+    $options = get_option('add_meta_tags_opts');
+    if ( ! is_array($options) ) {
+        return '';
+    } elseif ( ! array_key_exists( 'metabox_enable_content_locale', $options) ) {
+        return '';
+    } elseif ( $options['metabox_enable_content_locale'] == '0' ) {
+        return '';
+    }
+    // Internal fields - order matters
+    $supported_custom_fields = array( '_amt_content_locale' );
+    // External fields - Allow filtering
+    $external_fields = array();
+    $external_fields = apply_filters( 'amt_external_content_locale_fields', $external_fields, $post_id );
+    // Merge external fields to our supported custom fields
+    $supported_custom_fields = array_merge( $supported_custom_fields, $external_fields );
+
+    // Get an array of all custom fields names of the post
+    $custom_fields = get_post_custom_keys( $post_id );
+    if ( empty( $custom_fields ) ) {
+        // Just return an empty string if no custom fields have been associated with this content.
+        return '';
+    }
+
+    // Try our fields
+    foreach( $supported_custom_fields as $sup_field ) {
+        // If such a field exists in the db, return its content as the news keywords.
+        if ( in_array( $sup_field, $custom_fields ) ) {
+            return get_post_meta( $post_id, $sup_field, true );
+        }
+    }
+
+    //Return empty string if all fail
+    return '';
+}
+
+
+/**
+ * Helper function that returns the value of the custom field that contains
+ * express review related information.
+ * The default field name for the 'express review' is ``_amt_express_review``.
+ * No need to migrate from older field name.
+ */
+function amt_get_post_meta_express_review($post_id) {
+    $options = get_option('add_meta_tags_opts');
+    if ( ! is_array($options) ) {
+        return '';
+    } elseif ( ! array_key_exists( 'metabox_enable_express_review', $options) ) {
+        return '';
+    } elseif ( $options['metabox_enable_express_review'] == '0' ) {
+        return '';
+    }
+    // Internal fields - order matters
+    $supported_custom_fields = array( '_amt_express_review' );
+    // External fields - Allow filtering
+    $external_fields = array();
+    $external_fields = apply_filters( 'amt_external_express_review_fields', $external_fields, $post_id );
+    // Merge external fields to our supported custom fields
+    $supported_custom_fields = array_merge( $supported_custom_fields, $external_fields );
+
+    // Get an array of all custom fields names of the post
+    $custom_fields = get_post_custom_keys( $post_id );
+    if ( empty( $custom_fields ) ) {
+        // Just return an empty string if no custom fields have been associated with this content.
+        return '';
+    }
+
+    // Try our fields
+    foreach( $supported_custom_fields as $sup_field ) {
+        // If such a field exists in the db, return its content as the news keywords.
+        if ( in_array( $sup_field, $custom_fields ) ) {
+            return get_post_meta( $post_id, $sup_field, true );
+        }
+    }
+
+    //Return empty string if all fail
+    return '';
+}
+
+
+/**
+ * Helper function that returns the value of the custom field that contains
+ * the list of URLs of items referenced in the post.
+ * The default field name is ``_amt_referenced_list``.
+ * No need to migrate from older field name.
+ */
+function amt_get_post_meta_referenced_list($post_id) {
+    $options = get_option('add_meta_tags_opts');
+    if ( ! is_array($options) ) {
+        return '';
+    } elseif ( ! array_key_exists( 'metabox_enable_referenced_list', $options) ) {
+        return '';
+    } elseif ( $options['metabox_enable_referenced_list'] == '0' ) {
+        return '';
+    }
+    // Internal fields - order matters
+    $supported_custom_fields = array( '_amt_referenced_list' );
+    // External fields - Allow filtering
+    $external_fields = array();
+    $external_fields = apply_filters( 'amt_external_referenced_list_fields', $external_fields, $post_id );
+    // Merge external fields to our supported custom fields
+    $supported_custom_fields = array_merge( $supported_custom_fields, $external_fields );
+
+    // Get an array of all custom fields names of the post
+    $custom_fields = get_post_custom_keys( $post_id );
+    if ( empty( $custom_fields ) ) {
+        // Just return an empty string if no custom fields have been associated with this content.
+        return '';
+    }
+
+    // Try our fields
+    foreach( $supported_custom_fields as $sup_field ) {
+        // If such a field exists in the db, return its content as the URL list of referenced items (text).
         if ( in_array( $sup_field, $custom_fields ) ) {
             return get_post_meta( $post_id, $sup_field, true );
         }
@@ -863,7 +1279,7 @@ function amt_get_permalink_for_multipage( $post ) {
     if ( $pagenum && $pagenum > 1 ) {
         // Not using clean URLs -> Add query argument to the URL (eg: ?page=2)
         if ( '' == get_option('permalink_structure') || in_array( $post->post_status, array('draft', 'pending')) ) {
-            return add_query_arg( 'page', $pagenum, get_permalink($post->ID) );
+            return esc_url( add_query_arg( 'page', $pagenum, get_permalink($post->ID) ) );
         // Using clean URLs
         } else {
             return trailingslashit( get_permalink($post->ID) ) . user_trailingslashit( $pagenum, 'single_paged');
@@ -964,6 +1380,20 @@ function amt_get_posts_page_id() {
  */
 function amt_get_embedded_media( $post ) {
 
+    // Post content pre-processing
+
+    // At this point we give devs the opportunity to inject raw URLs of
+    // supported embeddable media, so that they can be picked up by
+    // the algorithms below.
+    // Array of URLs of supported embeddable media.
+    $external_media_urls = apply_filters( 'amt_embedded_media_external', array(), $post );
+
+    // Store post body
+    $post_body = $post->post_content;
+    // Attach the external media URLs to the post content.
+    //$post_body .= sprintf( '\n%s\n', implode('\n', $external_media_urls) );
+    $post_body .= PHP_EOL . implode(PHP_EOL, $external_media_urls) . PHP_EOL;
+
     // Format of the array
     // Embeds are grouped by type images/videos/sounds
     // Embedded media are added to any group as an associative array.
@@ -978,14 +1408,15 @@ function amt_get_embedded_media( $post ) {
     // Keys:
     // page - URL to a HTML page that contains the object.
     // player - URL to the player that can be used in an iframe.
+    // thumbnail - URL to a preview image
 
     // Youtube
     // Supported:
     // - http://www.youtube.com/watch?v=VIDEO_ID
     //$pattern = '#youtube.com/watch\?v=([-|~_0-9A-Za-z]+)#';
     //$pattern = '#http:\/\/(?:www.)?youtube.com\/.*v=(\w*)#i';
-    $pattern = '#http:\/\/(?:www.)?youtube.com\/.*v=([a-zA-Z0-9_-]+)#i';
-    preg_match_all( $pattern, $post->post_content, $matches );
+    $pattern = '#https?:\/\/(?:www.)?youtube.com\/.*v=([a-zA-Z0-9_-]+)#i';
+    preg_match_all( $pattern, $post_body, $matches );
     //var_dump($matches);
     if ($matches) {
         // $matches[0] contains a list of YT video URLS
@@ -993,11 +1424,19 @@ function amt_get_embedded_media( $post ) {
         // Add matches to $embedded_media_urls
         foreach( $matches[1] as $youtube_video_id ) {
             $item = array(
-                'page' => 'http://www.youtube.com/watch?v=' . $youtube_video_id,
-                'player' => 'http://youtube.com/v/' . $youtube_video_id,
+                'type' => 'youtube',
+                'page' => 'https://www.youtube.com/watch?v=' . $youtube_video_id,
+                'player' => 'https://youtube.com/v/' . $youtube_video_id,
+                //'player' => 'https://www.youtube.com/embed/' . $youtube_video_id,
                 // Since we can construct the video thumbnail from the ID, we add it
-                'thumbnail' => 'http://img.youtube.com/vi/' . $youtube_video_id . '/0.jpg'
+                'thumbnail' => apply_filters( 'amt_oembed_youtube_image_preview', 'https://img.youtube.com/vi/' . $youtube_video_id . '/sddefault.jpg', $youtube_video_id ),
+                //'thumbnail' => apply_filters( 'amt_oembed_youtube_image_preview', '', $youtube_video_id ),
                 // TODO: check http://i1.ytimg.com/vi/FTnqYIkjSjQ/maxresdefault.jpg    MAXRES
+                // http://img.youtube.com/vi/rr6H-MJCNw0/hqdefault.jpg  480x360 (same as 0.jpg)
+                // http://img.youtube.com/vi/rr6H-MJCNw0/sddefault.jpg  640x480
+                // See more here: http://stackoverflow.com/a/2068371
+                'width' => apply_filters( 'amt_oembed_youtube_player_width', '640' ),
+                'height' => apply_filters( 'amt_oembed_youtube_player_height', '480' ),
             );
             array_unshift( $embedded_media_urls['videos'], $item );
         }
@@ -1006,9 +1445,11 @@ function amt_get_embedded_media( $post ) {
     // Vimeo
     // Supported:
     // - http://vimeo.com/VIDEO_ID
+    // Check output of:  http://vimeo.com/api/v2/video/VIDEO_ID.xml
+    // INVALID METHOD: 'thumbnail' => 'https://i.vimeocdn.com/video/' . $vimeo_video_id . '_640.jpg'
     //$pattern = '#vimeo.com/([-|~_0-9A-Za-z]+)#';
-    $pattern = '#http:\/\/(?:www.)?vimeo.com\/(\d*)#i';
-    preg_match_all( $pattern, $post->post_content, $matches );
+    $pattern = '#https?:\/\/(?:www.)?vimeo.com\/(\d+)#i';
+    preg_match_all( $pattern, $post_body, $matches );
     //var_dump($matches);
     if ($matches) {
         // $matches[0] contains a list of Vimeo video URLS
@@ -1016,9 +1457,36 @@ function amt_get_embedded_media( $post ) {
         // Add matches to $embedded_media_urls
         foreach( $matches[1] as $vimeo_video_id ) {
             $item = array(
-                'page' => 'http://vimeo.com/' . $vimeo_video_id,
-                'player' => 'http://player.vimeo.com/video/' . $vimeo_video_id,
-                'thumbnail' => ''
+                'type' => 'vimeo',
+                'page' => 'https://vimeo.com/' . $vimeo_video_id,
+                'player' => 'https://player.vimeo.com/video/' . $vimeo_video_id,
+                'thumbnail' => apply_filters( 'amt_oembed_vimeo_image_preview', '', $vimeo_video_id ),
+                'width' => apply_filters( 'amt_oembed_vimeo_player_width', '640' ),
+                'height' => apply_filters( 'amt_oembed_vimeo_player_height', '480' ),
+            );
+            array_unshift( $embedded_media_urls['videos'], $item );
+        }
+    }
+
+    // Vine
+    // Supported:
+    // - https://vine.co/v/VIDEO_ID
+    // Also check output of:  https://vine.co/v/bwBYItOUKrw/card
+    $pattern = '#https?:\/\/(?:www.)?vine.co\/v\/([a-zA-Z0-9_-]+)#i';
+    preg_match_all( $pattern, $post_body, $matches );
+    //var_dump($matches);
+    if ($matches) {
+        // $matches[0] contains a list of Vimeo video URLS
+        // $matches[1] contains a list of Vimeo video IDs
+        // Add matches to $embedded_media_urls
+        foreach( $matches[1] as $vine_video_id ) {
+            $item = array(
+                'type' => 'vine',
+                'page' => 'https://vine.co/v/' . $vine_video_id,
+                'player' => 'https://vine.co/v/' . $vine_video_id . '/embed/simple',
+                'thumbnail' => apply_filters( 'amt_oembed_vine_image_preview', '', $vine_video_id ),
+                'width' => apply_filters( 'amt_oembed_vine_player_width', '600' ),
+                'height' => apply_filters( 'amt_oembed_vine_player_height', '600' ),
             );
             array_unshift( $embedded_media_urls['videos'], $item );
         }
@@ -1029,6 +1497,7 @@ function amt_get_embedded_media( $post ) {
     // Keys:
     // page - URL to a HTML page that contains the object.
     // player - URL to the player that can be used in an iframe.
+    // thumbnail - URL to a preview image -= ALWAYS EMPTY, but needed for the player twitter card.
 
     // Soundcloud
     // Supported:
@@ -1036,15 +1505,19 @@ function amt_get_embedded_media( $post ) {
     // player:
     // https://w.soundcloud.com/player/?url=https://api.soundcloud.com/tracks/117455833
     $pattern = '#https?:\/\/(?:www.)?soundcloud.com\/[^/]+\/[a-zA-Z0-9_-]+#i';
-    preg_match_all( $pattern, $post->post_content, $matches );
+    preg_match_all( $pattern, $post_body, $matches );
     //var_dump($matches);
     if ($matches) {
         // $matches[0] contains a list of Soundcloud URLS
         // Add matches to $embedded_media_urls
         foreach( $matches[0] as $soundcloud_url ) {
             $item = array(
+                'type' => 'soundcloud',
                 'page' => $soundcloud_url,
-                'player' => 'https://w.soundcloud.com/player/?url=' . $soundcloud_url
+                'player' => 'https://w.soundcloud.com/player/?url=' . $soundcloud_url,
+                'thumbnail' => apply_filters( 'amt_oembed_soundcloud_image_preview', '', $soundcloud_url ),
+                'width' => apply_filters( 'amt_oembed_soundcloud_player_width', '640' ),
+                'height' => apply_filters( 'amt_oembed_soundcloud_player_height', '164' ),
             );
             array_unshift( $embedded_media_urls['sounds'], $item );
         }
@@ -1080,7 +1553,7 @@ function amt_get_embedded_media( $post ) {
     //
     $pattern = '#https?:\/\/(?:www.)?flickr.com\/photos\/[^\/]+\/[^\/]+\/#i';
     //$pattern = '#https?://(?:www.)?flickr.com/photos/[^/]+/[^/]+/#i';
-    preg_match_all( $pattern, $post->post_content, $matches );
+    preg_match_all( $pattern, $post_body, $matches );
     //var_dump($matches);
     if ($matches) {
         // $matches[0] contains a list of Flickr image page URLS
@@ -1104,6 +1577,7 @@ function amt_get_embedded_media( $post ) {
             //var_dump($img_info);
             if ( ! empty( $img_info ) ) {
                 $item = array(
+                    'type' => 'flickr',
                     'page' => $flick_page_url,
                     'player' => $flick_page_url . 'lightbox/',
                     'thumbnail' => str_replace( 'z.jpg', 'q.jpg', $img_info[1] ),   // size q   BEFORE CHANGING this check if the 150x150 is hardcoded into any metadata generator. It is in Twitter cards.
@@ -1116,6 +1590,51 @@ function amt_get_embedded_media( $post ) {
             }
         }
     }
+
+    /**
+    // Instagram
+    //
+    // Supported:
+    // Embedded URLs MUST be of Format: https://instagram.com/p/IMAGE_ID/
+    //
+    $pattern = '#https?:\/\/(?:www.)?instagram.com\/p\/[^\/]+\/#i';
+    preg_match_all( $pattern, $post_body, $matches );
+    //var_dump($matches);
+    if ($matches) {
+        // $matches[0] contains a list of Flickr image page URLS
+        // Add matches to $embedded_media_urls
+        foreach( $matches[0] as $instagram_page_url ) {
+
+            // Get cached HTML data for embedded images.
+            // Do it like WordPress.
+            // See source code:
+            // - class-wp-embed.php: line 177 [[ $cachekey = '_oembed_' . md5( $url . serialize( $attr ) ); ]]
+            // - media.php: line 1332 [[ function wp_embed_defaults ]]
+            // If no attributes have been used in the [embed] shortcode, $attr is an empty string.
+            $attr = '';
+            $attr = wp_parse_args( $attr, wp_embed_defaults() );
+            $cachekey = '_oembed_' . md5( $instagram_page_url . serialize( $attr ) );
+            $cache = get_post_meta( $post->ID, $cachekey, true );
+            var_dump($cache);
+
+            // Get image info from the cached HTML
+            preg_match( '#target="_top">(.*)<\/a>#i', $cache, $img_info );
+            //var_dump($img_info);
+            if ( ! empty( $img_info ) ) {
+                $item = array(
+                    'page' => $instagram_page_url,
+                    'player' => $instagram_page_url . 'lightbox/',
+                    'thumbnail' => str_replace( 'z.jpg', 'q.jpg', $img_info[1] ),   // size q   BEFORE CHANGING this check if the 150x150 is hardcoded into any metadata generator. It is in Twitter cards.
+                    'image' => $img_info[1],    // size z
+                    'alt' => $img_info[1],
+                    'width' => '640',
+                    'height' => '640',
+                );
+                array_unshift( $embedded_media_urls['images'], $item );
+            }
+        }
+    }
+    */
 
     // Allow filtering of the embedded media array
     $embedded_media_urls = apply_filters( 'amt_embedded_media', $embedded_media_urls, $post->ID );
@@ -1180,5 +1699,320 @@ function amt_metatag_highlighter( $metatags ) {
     //$metatags = str_replace('/>', '/&gt;', $metatags);
 
     return $metatags;
+}
+
+
+// Accepts a URL and converts the protocol to https. Returns the processed URL.
+function amt_make_https( $url ) {
+    return preg_replace( '#^http://#' , 'https://', $url );
+}
+
+
+function amt_return_false() {
+    return false;
+}
+
+
+// Returns site locale
+function amt_get_language_site($options) {
+    $language = get_bloginfo('language');
+    // If set, the 'global_locale' setting overrides WordPress.
+    if ( ! empty( $options["global_locale"] ) ) {
+        $language = $options["global_locale"];
+    }
+    // Allow filtering of the site language
+    $language = apply_filters( 'amt_language_site', $language );
+    return $language;
+}
+
+
+// Returns content locale
+// NOTE: SHOULD NOT BE USED ON ARCHIVES
+function amt_get_language_content($options, $post) {
+    $language = get_bloginfo('language');
+    // If set, the 'global_locale' setting overrides WordPress.
+    if ( ! empty( $options["global_locale"] ) ) {
+        $language = $options["global_locale"];
+    }
+    // If set, the locale setting from the Metabox overrides all other local settings.
+    $metabox_locale = amt_get_post_meta_content_locale($post->ID);
+    if ( ! empty( $metabox_locale ) ) {
+        $language = $metabox_locale;
+    }
+    // Allow filtering of the content language
+    $language = apply_filters( 'amt_language_content', $language, $post );
+    return $language;
+}
+
+
+// Returns the hreflang attribute's value
+function amt_get_the_hreflang($locale, $options) {
+    $output = '';
+    // Convert underscore to dash
+    $locale = str_replace('_', '-', $locale);
+    // Return locale if no further processing is needed
+    if ( $options['hreflang_strip_region'] == '0' ) {
+        $output = $locale;
+    } else {
+        // Strip region code
+        $locale_parts = explode('-', $locale);
+        if ( count($locale_parts) == 1 ) {
+            $output = $locale;
+        } elseif ( count($locale_parts) > 2 ) {
+            $output = $locale_parts[0] . '-' . $locale_parts[1];
+        } elseif ( count($locale_parts) == 2 ) {
+            // In this case we need to understand whether locale is
+            // language_TERRITORY or language_Script_TERRITORY
+            // If the last part is a two letter string, we assume it's the region and strip it
+            if ( strlen($locale_parts[1]) == 2 ) {
+                // We assume this is a region code and strip it
+                $output = $locale_parts[0];
+            } else {
+                // We assume that the locale consist only of language_Script
+                $output = $locale_parts[0] . '-' . $locale_parts[1];
+            }
+        }
+    }
+    // Allow filtering
+    $output = apply_filters( 'amt_get_the_hreflang', $output );
+    return $output;
+}
+
+
+// Returns the default Twitter Card type
+function amt_get_default_twitter_card_type($options) {
+    $default = 'summary';
+    if ( $options["tc_enforce_summary_large_image"] == "1" ) {
+        $default = 'summary_large_image';
+    }
+    // Allow filtering of the default card type
+    $default = apply_filters( 'amt_twitter_cards_default_card_type', $default );
+    return $default;
+}
+
+
+// Function that returns the content of the Site Description setting of the
+// general Add-Meta-Tags settings.
+// This function allows filtering of the description, so that it can be set
+// programmatically, for instance in multilingual web sites.
+function amt_get_site_description($options) {
+    $output = '';
+    if ( is_array($options) && array_key_exists('site_description', $options) ) {
+        $output = $options['site_description'];
+    }
+    // Allow filtering
+    $output = apply_filters( 'amt_settings_site_description', $output );
+    return $output;
+}
+
+
+// Function that returns the content of the Site Keywords setting of the
+// general Add-Meta-Tags settings.
+// This function allows filtering of the keywords, so that it can be set
+// programmatically, for instance in multilingual web sites.
+function amt_get_site_keywords($options) {
+    $output = '';
+    if ( is_array($options) && array_key_exists('site_keywords', $options) ) {
+        $output = $options['site_keywords'];
+    }
+    // Allow filtering
+    $output = apply_filters( 'amt_settings_site_keywords', $output );
+    return $output;
+}
+
+
+// Function that returns the content of the Global Keywords setting of the
+// general Add-Meta-Tags settings.
+// This function allows filtering of the 'global keywords', so that it can be set
+// programmatically, for instance in multilingual web sites.
+function amt_get_site_global_keywords($options) {
+    $output = '';
+    if ( is_array($options) && array_key_exists('global_keywords', $options) ) {
+        $output = $options['global_keywords'];
+    }
+    // Allow filtering
+    $output = apply_filters( 'amt_settings_global_keywords', $output );
+    return $output;
+}
+
+
+// Function that returns the content of the Copyright URL setting of the
+// general Add-Meta-Tags settings.
+// This function allows filtering of the 'copyright URL', so that it can be set
+// programmatically, for instance in multilingual web sites.
+function amt_get_site_copyright_url($options) {
+    $output = '';
+    if ( is_array($options) && array_key_exists('copyright_url', $options) ) {
+        $output = $options['copyright_url'];
+    }
+    // Allow filtering
+    $output = apply_filters( 'amt_settings_copyright_url', $output );
+    return $output;
+}
+
+
+// Function that returns an itemref attribute, ready to be placed in the HTML element.
+function amt_get_schemaorg_itemref( $object_type ) {
+    // Construct filter name, eg 'amt_schemaorg_itemref_organization'
+    $filter_name = 'amt_schemaorg_itemref_' . $object_type;
+    // Construct itemref attribute. Should contain a comma delimited list of IDs.
+    $itemref = apply_filters( $filter_name, '' );
+    if ( ! empty($itemref) ) {
+        $itemref_attrib = ' itemref="' . $itemref . '"';
+    } else {
+        $itemref_attrib = '';
+    }
+    return $itemref_attrib;
+}
+
+
+// Determines if a Product page has been requested.
+function amt_is_product() {
+    return apply_filters( 'amt_is_product', false );
+}
+
+
+// Determines if a Product Group page has been requested.
+function amt_is_product_group() {
+    // Normally a product group should fall into the is_tax() validation.
+    // Product groups other than WordPress custom taxonomies are not suported.
+    // However, we use this function in order to distinguish a non product
+    // related taxonomy from a product related one (aka product group).
+    // This is useful in case we need to set the metadata object type to a
+    // group type, like it happens with Opengraph og:type=product.group.
+    return apply_filters( 'amt_is_product_group', false );
+}
+
+
+// Reviews
+
+// Returns an array containing review related data, only when the provided data is valid.
+function amt_get_review_data( $data ) {
+    if ( empty($data) ) {
+        return;
+    }
+    // Clean new line information
+    $data = preg_replace( '#[\r\n]+#', '', $data );
+    // Check if $data contains exactly 4 items in a '__' delimited list.
+    $parts = explode( '__', $data );
+    if ( count($parts) != 4 ) {
+        return;
+    }
+    // Return the array with review data
+    return array(
+        'rating' => trim($parts[0]),
+        'object' => trim($parts[1]),
+        'name' => trim($parts[2]),
+        'url' => trim($parts[3])
+    );
+}
+
+
+// Return the information text that should be attached to the post content.
+function amt_get_review_info_box( $review_data ) {
+    // Variables: #rating#, #bestrating#, #object#, #name#, #url#
+    $template = '
+<div id="review-info" class="review-info">
+    <p>This is a review of
+    <span itemprop="itemReviewed" itemscope itemtype="http://schema.org/#object#">
+        <a title="#object#: #name#" href="#url#" itemprop="sameAs"><span itemprop="name">#name#</span></a>
+    </span>, which has been rated with 
+    <span class="rating" itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating">
+        <span itemprop="ratingValue">#rating#</span>/<span itemprop="bestRating">#bestrating#</span>
+    </span> stars!</p>
+</div>
+';
+    // Allow filtering of the template
+    $template = apply_filters( 'amt_schemaorg_review_info_template', $template );
+    // Set variables
+    $bestrating = apply_filters( 'amt_schemaorg_review_bestrating', '5' );
+    // Replace placeholders
+    $output = $template;
+    $output = str_replace('#rating#', $review_data['rating'], $output);
+    $output = str_replace('#bestrating#', $bestrating, $output);
+    $output = str_replace('#object#', $review_data['object'], $output);
+    $output = str_replace('#name#', $review_data['name'], $output);
+    $output = str_replace('#url#', $review_data['url'], $output);
+    // Allow filtering of the output
+    $output = apply_filters( 'amt_schemaorg_review_info_output', $output );
+    return $output;
+}
+
+
+// Breadcrumbs
+
+// Generates a semantic (Schema.org) breadcrumb trail.
+// Accepts array
+function amt_get_breadcrumbs( $user_options ) {
+    // Default Options
+    $default_options = array(
+        // ID of list element.
+        'list_id' => 'breadcrumbs',
+        // Show breadcrumb item for the home page.
+        'show_home' => true,
+        // Text for the home link (requires show_home=true).
+        'home_link_text' => 'Home',
+        // Show breadcrumb item for the last page.
+        'show_last' => true,
+        // Show last breadcrumb as link (requires show_last=true).
+        'show_last_as_link' => true,
+        // Separator. Set to empty string for no separator.
+        'separator' => '>'
+    );
+    // Final options.
+    $options = array_merge( $default_options, $user_options );
+
+    $post = get_queried_object();
+
+    $bc_arr = array();
+    $bc_arr[] = '<!-- BEGIN Metadata added by Add-Meta-Tags WordPress plugin -->';
+    $bc_arr[] = '<!-- Scope BEGIN: BreadcrumbList -->';
+    $bc_arr[] = '<ul id="' . $options['list_id'] . '" itemprop="breadcrumb" itemscope itemtype="http://schema.org/BreadcrumbList">';
+    // Item counter
+    $counter = 1;
+    // Home link
+    if ( $options['show_home'] ) {
+        $bc_arr['bc-home'] = '<li class="list-item list-item-' . $counter . '" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a class="breadcrumb breadcrumb-' . $counter . '" itemprop="item" title="' . esc_attr( get_bloginfo('name') ) . '" href="' . esc_url_raw( trailingslashit( get_bloginfo('url') ) ) . '"><span itemprop="name">' . $options['home_link_text'] . '</span></a></li>';
+        //$bc_arr['bc-home-pos'] = '<meta itemprop="position" content="' . $counter . '" />';
+        $counter++;
+    }
+    // Generate breadcrumbs for parent pages, if any.
+    if ( $post->post_parent ) {
+        // Get the parent pages
+        $ancestors = get_post_ancestors( $post->ID );
+        // Set ancestors in reverse order
+        $ancestors = array_reverse( $ancestors );
+        // Generate items
+        foreach ( $ancestors as $ancestor ) {
+            // Add separator
+            if ( ! empty($options['separator']) ) {
+                $bc_arr['bc-sep-' . $counter] = '<span class="separator separator-' . $counter . '"> ' . esc_attr($options['separator']) . ' </span>';
+            }
+            $bc_arr['bc-item-' . $counter] = '<li class="list-item list-item-' . $counter . '" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a class="breadcrumb breadcrumb-' . $counter . '" itemprop="item" title="' . esc_attr( get_the_title($ancestor) ) . '" href="' . esc_url_raw( get_permalink($ancestor) ) . '"><span itemprop="name">' .esc_attr( get_the_title($ancestor) ) . '</span></a></li>';
+            //$bc_arr['bc-item-' . $counter . '-pos'] = '<meta itemprop="position" content="' . $counter . '" />';
+            $counter++;
+        }
+    }
+    // Last link
+    if ( $options['show_last'] ) {
+        // Add separator
+        if ( ! empty($options['separator']) ) {
+            $bc_arr['bc-sep-' . $counter] = '<span class="separator separator-' . $counter . ' separator-current"> ' . esc_attr($options['separator']) . ' </span>';
+        }
+        if ( $options['show_last_as_link'] ) {
+            $bc_arr['bc-item-' . $counter] = '<li class="list-item list-item-' . $counter . ' list-item-current" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a class="breadcrumb breadcrumb-' . $counter . ' breadcrumb-current" itemprop="item" title="' . esc_attr( get_the_title($post) ) . '" href="' . esc_url_raw( get_permalink($post) ) . '"><span itemprop="name">' .esc_attr( get_the_title($post) ) . '</span></a></li>';
+        } else {
+            $bc_arr['bc-item-' . $counter] = '<li class="list-item list-item-' . $counter . ' list-item-current" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><span itemprop="item"><span itemprop="name">' .esc_attr( get_the_title($post) ) . '</span></span></li>';
+        }
+        //$bc_arr['bc-item-' . $counter . '-pos'] = '<meta itemprop="position" content="' . $counter . '" />';
+        $counter++;
+    }
+
+    $bc_arr[] = '<!-- END Metadata added by Add-Meta-Tags WordPress plugin -->';
+
+    // Allow filtering of the generated
+    $bc_arr = apply_filters( 'amt_breadcrumbs', $bc_arr );
+
+    return PHP_EOL . implode(PHP_EOL, $bc_arr) . PHP_EOL . PHP_EOL;
 }
 

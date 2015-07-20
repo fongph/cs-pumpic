@@ -1,4 +1,4 @@
-<div class="{if $blockBg}{$blockBg}{else}dark{/if}">
+{*<div class="{if $blockBg}{$blockBg}{else}dark{/if}">
     <div class="container">
         <div class="row">
             <div class="col-sm-10 col-md-10 col-lg-10 col-sm-offset-1 col-md-offset-1 col-lg-offset-1 gutter-wide">
@@ -22,4 +22,4 @@
 
     </div>
 
-</div>
+</div>*}

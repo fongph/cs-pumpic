@@ -9,7 +9,7 @@
     {include file='../includes/content/fly/fly_blocks.tpl'}
     <!-- END FLY BLOCKS-->
     
-    <div class="wrapper {*box-bottom-images*} prevent-online-dangers">
+    <div class="wrapper {*box-bottom-images*} prevent-online-dangers protect-your-little-kids">
         <!-- TOP MENU -->
  	{include file='../includes/main/main-top-menu.tpl' 
                 cache_id = "includes_main_main-top-menu"
@@ -28,7 +28,7 @@
         <!-- CONTENT -->
         {include file='../includes/content/info/info-promo.tpl'
             collg = "7"
-            imgUrl = "header_banners/hd_protect_your_little_kids.png"
+            imgUrl = "header_banners/hd_protect_your_little_kids_2.png"
             maxWidth = "469"
             imgAlt = "Smartphone monitoring"
             imgAlign = "right"

@@ -73,12 +73,15 @@ Monitor your kid's iOS device with Pumpic."
 
                        
         {include file='../includes/content/why-pumpic.tpl'}
-                                  
- 		{include file='../includes/content/features-table.tpl' 
-        blockBg="light"
+                
+        {* blockBg="light" *}
+        {include file='../includes/content/features-table.tpl' 
+                blockBg="dark"
         } 
 
-        {include file='../includes/main/main-testimonials.tpl'} 
+        {include file='../includes/main/main-testimonials.tpl'
+                blockBg="light"
+        } 
 
 
 

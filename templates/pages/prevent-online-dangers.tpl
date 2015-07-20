@@ -85,8 +85,9 @@
             blockBg="light"
         }
 
+        {* blockBg="dark" *}
         {include file='../includes/main/main-quick-link.tpl' 
-            blockBg="dark"
+            blockBg="light"
         }
 
 

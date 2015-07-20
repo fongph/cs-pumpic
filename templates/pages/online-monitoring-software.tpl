@@ -158,7 +158,7 @@ Monitor mobile devices remotely with Pumpic."
 
          *}
         
-<div class="{if $blockBg}{$blockBg}{else}light{/if}">
+{*<div class="{if $blockBg}{$blockBg}{else}light{/if}">
     <div class="container">
         <div class="row">
             <div class="col-sm-10 col-md-10 col-lg-10 col-sm-offset-1 col-md-offset-1 col-lg-offset-1 gutter-wide">
@@ -182,13 +182,15 @@ Monitor mobile devices remotely with Pumpic."
 
     </div>
 
-</div>
- 		
+</div>*}
+ 	
+ {* blockBg="dark" *}
  {include file='../includes/content/how-get-pumpic.tpl' 
-             blockBg="dark"
+             blockBg="light"
         }
 
-<div class="{if $blockBg}{$blockBg}{else}light{/if}">
+{* light *}        
+<div class="{if $blockBg}{$blockBg}{else}dark{/if}">
     <div class="container">
             <h2 class="text-center testimonial-title">Trusted by Over 10 000 Customers Worldwide:</h2>
             <div class="row">

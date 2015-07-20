@@ -23118,3 +23118,46 @@ body {
         margin: -69.5px 0 0 -79.5px;
     }
 }
+
+/* =================== protect-your-little-kids ========================= */
+.protect-your-little-kids .box-video-constructors > div#block-video {
+    top: 40px;
+}
+@media (max-width: 360px) {
+    .protect-your-little-kids .box-video-constructors > div#block-video {
+        top: 0px;
+    }
+}
+@media only screen and (max-width: 410px) { 
+    .protect-your-little-kids .box-video-constructors > div#block-video {
+        top: 20px;
+    }
+}
+@media (min-width: 468px) {
+    .protect-your-little-kids .box-video-constructors > div#block-video {
+        top: 20px;
+    }
+}
+
+@media (min-width: 500px) {
+    .protect-your-little-kids .box-video-constructors > div#block-video {
+        top: 25px;
+    }
+}
+
+@media (min-width: 768px) {
+    .protect-your-little-kids .box-video-constructors > div#block-video {
+        top: 30px;
+    }
+}
+@media (min-width: 992px) { 
+    .protect-your-little-kids .box-video-constructors > div#block-video {
+        top: 60px;
+    }
+}
+@media (min-width: 1200px) { 
+    .protect-your-little-kids .box-video-constructors > div#block-video {
+        top: 60px;
+    }
+}
+

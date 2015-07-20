@@ -123,7 +123,7 @@
                 blockBg="dark"}
 
         {include file='../includes/main/main-quick-link.tpl' 
-            blockBg="light"
+            blockBg="dark"
         }        
         
         {*{include file='../includes/content/banners/banner-promo-trial.tpl'}*}

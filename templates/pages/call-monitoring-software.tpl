@@ -68,17 +68,19 @@
                 blockBg="light"
         }
         
+        {* blockBg="dark" *}
         {include file='../includes/main/main-testimonials.tpl' 
-                blockBg="dark"
+                blockBg="light"
         } 
 
+        {*blockBg="light"*}
         {include file='../includes/content/secures-call-monitoring.tpl' 
-            blockBg="light"
+            blockBg="dark"
         }                                
 
-
+        {* blockBg="dark" *}
         {include file='../includes/content/features-table.tpl' 
-                blockBg="dark"
+                blockBg="light"
         }  
 
         {*include file='../includes/content/banner-promo.tpl'*}

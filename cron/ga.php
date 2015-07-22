@@ -281,6 +281,9 @@
                 // default
             } 
             
+            // log
+            $this ->trace( 'TransactionID:'. $this ->getTransactionID() .' ga_type:'.$ga_type.' times:('.$this ->getStartData().'-'. $this ->getEndData().')', 'ga_api');
+            
             if($ga_type == self::GA_TYPE_DEFAULT) {
                 $this->_pdo->exec("UPDATE `orders` SET `ga_source` = 0, `ga_cron` = 1  WHERE `id` = {$order_id} LIMIT 1");
             } else if( $source_id = $this ->getGoogleSourceId( $ga_type ) ) {

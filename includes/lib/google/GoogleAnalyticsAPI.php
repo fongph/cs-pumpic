@@ -8,7 +8,7 @@ use includes\lib\GoogleAnalyticsExeptions as GAExeptions;
 use includes\lib\GALog as GALog;
 
 defined('BEGIN_TIME') or define('BEGIN_TIME',microtime(true));
-defined('DEBUG') or define('DEBUG', true);
+defined('DEBUG') or define('DEBUG', false);
 defined('TRACE_LEVEL') or define('TRACE_LEVEL',0);
 
 /**

@@ -1,4 +1,3 @@
-{*closeAccess*}
 
 {*
     Template: hedaer HEADER ( ШАПКА СТРАНИЦЫ )
@@ -8,7 +7,7 @@
         description (text): вносим meta description ( описание страницы )
 *}    
     
-{include file='../includes/main/main-header.tpl'
+{include file='../../includes/main/main-header.tpl'
     robots="no" 
     title="How to protect your child online | Download PDF"
     description="Follow these simple steps to help protect your children's privacy and safety when they are online."
@@ -16,7 +15,7 @@
     
 <body>
     <!-- FLY BLOCKS -->
-    {include file='../includes/content/fly/fly_blocks.tpl'}
+    {include file='../../includes/content/fly/fly_blocks.tpl'}
     <!-- END FLY BLOCKS-->
     
     {* 'block-android' - название вашей страницы латинецей. ОБЯЗАТЕЛЬНОЕ ПОЛЕ *}
@@ -27,7 +26,7 @@
             Переменные:
                 topmenu_active (test): alias меню, которое будет подсвечиваться активным. 
         *}
-	{include file='../includes/main/main-top-menu.tpl' 
+	{include file='../../includes/main/main-top-menu.tpl' 
                 topmenu_active='home'
                 cache_id = "includes_main_main-top-menu"
                 nocache    
@@ -38,18 +37,18 @@
             Переменные:
                 style (text): стиль блока Phone (blue|black). * - blue 
         *}
-        {include file='../includes/content/phone/block-phone.tpl'
+        {include file='../../includes/content/phone/block-phone.tpl'
                  style="black"   
         }
         
         <!-- CONTENT -->
        
-        {include file='../includes/content/knowledge.tpl' 
+        {include file='../../includes/content/knowledge.tpl' 
                 blockBg="light"
         } 
         
         
-        {include file='../includes/main/main-quick-link.tpl' 
+        {include file='../../includes/main/main-quick-link.tpl' 
             blockBg="dark"
         }
 
@@ -59,11 +58,11 @@
             Переменные:
                 title (text): промо текст.
         *}
-        {*{include file='../includes/content/banner-promo.tpl'
+        {*{include file='../../includes/content/banner-promo.tpl'
                 title = "Keep your <span>family safe</span>"
         }*}
         
-        {include file='../includes/content/banners/index.tpl'
+        {include file='../../includes/content/banners/index.tpl'
             title = "Keep your <span>family safe</span>"
         }
         <!-- END CONTENT -->    
@@ -72,19 +71,19 @@
         {*
             Template: RECOMMENDED
         *}    
-        {include file='../includes/main/main-recommended.tpl'}
+        {include file='../../includes/main/main-recommended.tpl'}
         
         <!-- FOOTER -->
         {*
             Template: FOOTER
         *}
-        {include file='../includes/main/main-footer.tpl'
+        {include file='../../includes/main/main-footer.tpl'
             our_products= "no"}
                 
     </div>
     {*
         Template: ANALYTICS
     *}        
-    {include file='../includes/main/main-analytics-footer.tpl'}
+    {include file='../../includes/main/main-analytics-footer.tpl'}
 </body>
 </html>

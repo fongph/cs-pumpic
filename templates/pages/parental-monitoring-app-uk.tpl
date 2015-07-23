@@ -31,13 +31,13 @@
             imgAlt = "Smartphone monitoring"
             imgAlign = "right"
             textAlign = "right"
-            title = "Parental Control Solution<br/> Mobile Monitoring App"
+            title = "Parental Control Solution<br/>Mobile Monitoring App"
             description = "Reliable protection all over the United Kingdom.<br />
             View calls and SMS. Track location and online activities."
             promoBuyBlock = "no"
             planPackageBuy = "yes"
             block_video = "no"
-			flagPosition = 'left'
+			flagPosition = 'right'
             flagName = 'gb'
         }
         

@@ -31,12 +31,12 @@
             imgAlt = "Smartphone monitoring"
             imgAlign = "right"
             textAlign = "right"
-            title = "Parental Monitoring App <br/> for Android and Apple iOS"
-            description = "Keep your family safe, protected, and secured. <br/> Track mobile phones across Australia and overseas."
+            title = "Parental Monitoring App<br/>for Android and Apple iOS"
+            description = "Keep your family safe, protected, and secured.<br/>Track mobile phones across Australia and overseas."
             promoBuyBlock = "no"
             planPackageBuy = "yes"
             block_video = "no"
-			flagPosition = 'left'
+			flagPosition = 'right'
             flagName = 'au'
         }
         

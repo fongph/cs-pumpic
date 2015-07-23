@@ -31,11 +31,13 @@
             imgAlt = "Smartphone monitoring"
             imgAlign = "right"
             textAlign = "right"
-            title = "Parental Monitoring App <br/> for Android and iOS <br/> Smartphones and Tablets"
+            title = "Parental Monitoring App<br/>for Android and iOS<br/>Smartphones and Tablets"
             description = "Proved to be reliable across the USA."
             promoBuyBlock = "no"
             planPackageBuy = "yes"
             block_video = "no"
+            flagPosition = 'right'
+            flagName = 'usa'
         }
         
         {include file='../includes/content/plans.tpl' }

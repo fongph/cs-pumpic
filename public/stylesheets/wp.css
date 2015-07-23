@@ -7045,10 +7045,10 @@ div.blockquate_bottom {
   background: transparent;
 }
 
-.nav > li > a.cp-login:hover {
-    /* !important */
+/*.nav > li > a.cp-login:hover {
+     !important 
     background-color: #19bfb3; 
-}
+}*/
 
 .navbar-toggle {
   margin: 0;
@@ -10541,19 +10541,10 @@ span.btn-banner-yellow:active {
     -moz-border-radius: 4px;
 }
 
-.nav > li > a.btn-orange {
-    font-size: 18px;
-    font-weight: 400;
-    border-radius: 5px;
-}
-
 .btn-orange:hover,
 .btn-orange:focus,
 .btn-orange:active,
-.btn-orange.active,
-.nav > li > a.btn-orange:hover,
-.nav > li > a.btn-orange:focus,
-.nav > li > a.btn-orange:active {
+.btn-orange.active {
   color: white;  
   background-color: #ffd08c;
   text-decoration: none;
@@ -10751,11 +10742,6 @@ div.aligncenter {
     margin: 0;
 }
 /* End captions */
-
-/* fix button login */
-.cp-login {
-    padding: 10px !important;
-}
 
 /* fix compatibility */
 @media only screen and (max-width: 480px), 
@@ -12801,7 +12787,7 @@ form.form-contact-us .box-captcha {
    position: relative;
    width: 60px;
    height: 30px;
-   margin-right: 5px;
+/*   margin-right: 5px;*/
 }
 .image-flag-header-au {
     background: url('../images/flag/aud.png') no-repeat;
@@ -12811,6 +12797,9 @@ form.form-contact-us .box-captcha {
 }
 .image-flag-header-gb {
     background: url('../images/flag/gbp.png') no-repeat;
+}
+.image-flag-header-usa {
+    background: url('../images/flag/usa.png') no-repeat;
 }
 
 /* ------------ \\ fix price --------- */

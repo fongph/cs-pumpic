@@ -6823,6 +6823,24 @@ body:after {
   opacity: 1;
 }
 
+.margin-null { margin: 0px; }
+
+.ml5 { margin-left: 5px; }
+.mr0 { margin-right: 0px; }
+.ml0 { margin-left: 0px; }
+.mr5 { margin-right: 5px; }
+.mlr-5 {
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.pl-0 { padding-left: 0px; }
+.pr-0 { padding-right: 0px; }
+
+.pl-5 { padding-left: 5px; }
+.pr-5 { padding-right: 5px; }
+.plr-5 { padding: 0px 5px; }
+
 .a-default {
     text-decoration: underline !important;
 }
@@ -7447,6 +7465,96 @@ div.symbol {
     }
 }
 
+/* ======================= // fix top menu button Demo =============== */
+/*@media only screen and (max-width: 480px) {  }
+@media (min-width: 468px) { }
+@media (min-width: 768px) {
+    .nav > li > a.btn-orange {
+        display: block;
+        border-radius: 0px;
+        font-size: 16px;
+        font-weight: 300;
+        padding: 0px;
+        line-height: 20px;
+    }
+}
+
+@media (min-width: 992px) { 
+
+    .nav > li > a.btn-orange {
+        display: block;
+        border-radius: 5px;
+        font-size: 18px;
+        font-weight: 400;
+        padding: 10px;
+    }
+}*/
+
+.nav > li > a.btn-orange:hover,
+.nav > li > a.btn-orange:focus,
+.nav > li > a.btn-orange:active {
+  color: white;  
+  background-color: #ffd08c;
+  text-decoration: none;
+}
+
+@media (max-width: 992px) { 
+    .nav > li > a.btn-orange {
+        display: block;
+        border-radius: 0px;
+        font-size: 16px !important;
+        font-weight: 300 !important;
+        padding: 0px !important;
+        line-height: 20px !important;
+        background: none;
+        min-height: auto;
+        min-width: auto;
+    }
+    
+    .nav > li > a.btn-orange:hover, 
+    .nav > li > a.btn-orange:active,
+    .nav > li > a.btn-orange:focus {
+        color: #16a89e !important;
+        text-decoration: none !important;
+        background: none !important;
+    }
+}
+
+@media (min-width: 992px) { 
+
+    .nav > li > a.btn-orange {
+        display: block;
+        border-radius: 5px;
+        font-size: 18px !important;
+        font-weight: 400 !important;
+        line-height: 38px !important;
+        padding: 0px !important;
+        
+        font-size: 18px;
+        font-weight: 400;
+        border-radius: 5px;
+        
+        background: #f5ac43 none repeat scroll 0 0;
+        
+        min-height: 38px;
+        min-width: 110px;
+    }
+    .nav > li > a.btn-orange:hover, 
+    .nav > li > a.btn-orange:active,
+    .nav > li > a.btn-orange:focus {
+        color: #fff !important;
+        text-decoration: none !important;
+        background: #ffd08c !important;
+    }
+}
+
+@media (min-width: 1200px) { 
+    .box-cp > .btn-orange { padding: 10px; }
+    .nav > li > a.btn-orange {
+        display: none !important;
+    }
+}
+
 /* ---- \\ icloud block ----- */
 .position-relative {
     position: relative;
@@ -7879,10 +7987,10 @@ div.blockquate_bottom {
   background: transparent;
 }
 
-.nav > li > a.cp-login:hover {
-    /* !important */
+/*.nav > li > a.cp-login:hover {
+     !important 
     background-color: #19bfb3; 
-}
+}*/
 
 .navbar-toggle {
   margin: 0;
@@ -11375,19 +11483,10 @@ span.btn-banner-yellow:active {
     -moz-border-radius: 4px;
 }
 
-.nav > li > a.btn-orange {
-    font-size: 18px;
-    font-weight: 400;
-    border-radius: 5px;
-}
-
 .btn-orange:hover,
 .btn-orange:focus,
 .btn-orange:active,
-.btn-orange.active,
-.nav > li > a.btn-orange:hover,
-.nav > li > a.btn-orange:focus,
-.nav > li > a.btn-orange:active {
+.btn-orange.active {
   color: white;  
   background-color: #ffd08c;
   text-decoration: none;
@@ -11585,11 +11684,6 @@ div.aligncenter {
     margin: 0;
 }
 /* End captions */
-
-/* fix button login */
-.cp-login {
-    padding: 10px !important;
-}
 
 /* fix compatibility */
 @media only screen and (max-width: 480px), 
@@ -13635,7 +13729,7 @@ form.form-contact-us .box-captcha {
    position: relative;
    width: 60px;
    height: 30px;
-   margin-right: 5px;
+/*   margin-right: 5px;*/
 }
 .image-flag-header-au {
     background: url('../images/flag/aud.png') no-repeat;
@@ -13645,6 +13739,9 @@ form.form-contact-us .box-captcha {
 }
 .image-flag-header-gb {
     background: url('../images/flag/gbp.png') no-repeat;
+}
+.image-flag-header-usa {
+    background: url('../images/flag/usa.png') no-repeat;
 }
 
 /* ------------ \\ fix price --------- */

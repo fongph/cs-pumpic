@@ -80,10 +80,10 @@
 												</div>
 											</li>
 											<li>
-												<a id="what-is-pumpic-app" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse3">Can Pumpic be detected on the target device?</a>
+												<a id="what-is-pumpic-app" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse3">Is Pumpic parental monitoring stealth? Can the app be detected on the target device?</a>
 												<div id="collapse3" class="collapse">
-													<p>Yes, Pumpic is a visible application, which means that its icon can be detected on the screen of the target device and viewed by a user. In addition, there are alerts, notifications, and badges that display the operation of the app.</p>
-													<p>However, if you use iCloud solution for monitoring iOS devices, you do not need to install the app on the target devices, and thus, its icon does not appear on the screen at all, and its operation is invisible.</p>
+                                                                                                    <p>Pumpic is a visible application, which means that its icon can be detected on the screen of the target device and viewed by a user. In addition, there are alerts, notifications, and badges that trace the operation of the app.</p>
+                                                                                                    <p>However, if you choose <a class="text-link a-default" href="http://{$domain}/icloud-iphone-without-jailbreak-monitoring.html">iCloud solution</a> for iOS device surveillance, you will not need to install the app on the target device, and thus, Pumpic will remain undetected. The operation of the app is invisible in this case as well.</p>
                                                                                                         <p>
                                                                                                             <div class="box-faq-images">
                                                                                                                 <div class="faq-img">
@@ -192,7 +192,7 @@
 												<a id="install" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse15">How to jailbreak iOS?</a>
 												<div id="collapse15" class="collapse">
 													<p>During the installation you will be provided with links to off-site sources, where you will find instructions on how to jailbreak iOS devices. Pumpic is not connected with such sources. Feel free to find relevant information on iOS jailbreak online on your own as well.</p>
-													<p>If you do not want to jailbreak the target iPhone, iPad, or iPod Touch, you can use Pumpic iCloud solution. Note that it is provided with Premium subscription only.</p>
+													<p>If you do not want to jailbreak the target iPhone, iPad, or iPod Touch, you can use <a class="text-link a-default" href="http://{$domain}/icloud-iphone-without-jailbreak-monitoring.html">Pumpic iCloud solution</a>. With its help you will be able to control iPhone from another iPhone without a need to jailbreak any of them. Note that it is provided with Premium subscription only.</p>
 												</div>
 											</li>
 											<li>

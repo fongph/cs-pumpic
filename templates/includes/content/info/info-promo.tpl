@@ -60,31 +60,32 @@
                                     <h1 class="title {if isset($fz)}fz{$fz}{/if}">{if isset($title)} {$title} {else}Android Parental Control App{/if}</h1>
                                     
                                     {if isset($flagName)}
-                                    <div class='block-table'>
-                                        <div class='table-row'>
-                                        {if isset($flagPosition) && $flagPosition == 'left'}
-                                            <div class='table-cell col-xs-sm-2 col-md-2 col-lg-2 vertical-aligh-middle'>
-                                                <div class='row'><i class='image-flag-header-{$flagName}'></i></div>
-                                            </div>
-                                        {/if}
-                                        <div class='table-cell col-xs-sm-10 col-md-10 col-lg-10'>
-                                            <div class="row">
-                                            {if isset($description)}
-                                                {$description}
-                                            {else}
-                                            Pumpic takes care of your children safety.        
-                                            <br />Track your kids’ Android device remotely.
+                                    <div class="clearfix">    
+                                        <div class='block-table right'>
+                                            <div class='table-row'>
+                                            {if isset($flagPosition) && $flagPosition == 'left'}
+                                                <div class='table-cell col-xs-sm-2 col-md-2 col-lg-2 vertical-aligh-middle pr-5 pl-0 {*padding-null mr5*}'>
+                                                    <div class='text-left'><i class='image-flag-header-{$flagName}'></i></div>
+                                                </div>
+                                            {/if}
+                                                <div class='table-cell col-xs-sm-10 col-md-10 col-lg-10 {*padding-null mlr-5*} plr-5'>
+                                                    <div class="{if isset($flagPosition)}text-{$flagPosition}{/if}">
+                                                    {if isset($description)}
+                                                        {trim($description)}
+                                                    {else}
+                                                        Pumpic takes care of your children safety.        
+                                                        <br />Track your kids’ Android device remotely.
+                                                    {/if}
+                                                    </div>
+                                                </div>
+                                            {if (isset($flagPosition) && $flagPosition == 'right') || !isset($flagPosition)}
+                                                <div class='table-cell col-xs-sm-2 col-md-2 col-lg-2 vertical-aligh-middle pl-5 pr-0 {*padding-null ml5*}'>
+                                                    <div class='text-right'><i class='image-flag-header-{$flagName}'></i></div>
+                                                </div>
                                             {/if}
                                             </div>
                                         </div>
-                                        {if isset($flagPosition) && $flagPosition == 'right'}
-                                            <div class='table-cell col-xs-sm-2 col-md-2 col-lg-2 vertical-aligh-middle'>
-                                                
-                                                <div class='row'><i class='image-flag-header-{$flagName}'></i></div>
-                                            </div>
-                                        {/if}
-                                        </div>
-                                    </div>
+                                    </div>  
                                     {else}
                                     <p>
                                         {if isset($description)}

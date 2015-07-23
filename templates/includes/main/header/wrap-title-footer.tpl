@@ -147,5 +147,28 @@
 {/strip}
 {include file='../header/analytics-header.tpl'}	
 {strip}	
+   
+{if isset($test) && $test == 'true'}  
+    {*_gaq.push(['_setDomainName', 'none']);
+    _gaq.push(['_setAllowLinker', true]);*}
+    
+    {literal}
+    <!-- GOOGLE GA.JS --> 
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-56492507-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+    var iga = document.createElement('script'); iga.type = 'text/javascript'; iga.async = true;
+    iga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(iga, s);
+    })();
+
+    </script>
+    <!-- END GA.JS -->
+    {/literal}    
+{/if}
+
 </head>
 {/strip}

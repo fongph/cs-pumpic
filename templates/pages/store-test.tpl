@@ -4,6 +4,7 @@
 {*formOrder post=$smarty.post*}
 
 {include file='../includes/main/main-header.tpl'
+    test = "true"
     title="Phone Tracker Prices and Subscription Plans"
     description="Pumpic offers high-quality Cell Phone Tracking Software for a good price. Find out more about a price range and subscription plan types to choose the one suitable for your monitoring needs."
 }
@@ -139,17 +140,14 @@
                                                                 <img src="{$img}/basic_pack.png">
                                                             </div>
                                                             <div class="wr_price_big">
-                                                                <span></span><div class="box-currence"><symbol attr-iso="usd">$</symbol><curr id="basic-price-per-month">5.33{*11.33*}</curr></div><span> / month</span>
+                                                                <span></span>
+                                                                <div class="box-currence">
+                                                                    <div class="symbol" attr-iso="usd">$</div>
+                                                                    <div class="curr" id="basic-price-per-month">5.33</div>
+                                                                        
+                                                                </div><span> / month</span>
                                                             </div>
                                                             
-                                                            {*<div class="price-main">
-                                                                <div class="wr_pack">
-                                                                    <img src="{$img}/basic_pack.png">
-                                                                </div>
-                                                                <div class="wr_price_big">
-                                                                    <span></span><div class="box-currence"><symbol attr-iso="usd">$</symbol><curr id="basic-price-per-month">13.33</curr></div><span> / month</span>
-                                                                </div>
-                                                            </div>*}
                                                             
                                                             <div id="list-plans-basic-package" class="box-plans-package mt15">
                                                                <section> 
@@ -176,7 +174,8 @@
                                                                 <ul>
                                                                     {foreach from=$getProducts.basic key=key item=_item}
                                                                     <li class= "">
-                                                                        <label class="label_radio hover_label_radio r_off"><input class="data-price" data-target="#basic-price-per-month" data-cur="usd" data-price-usd="{$_item.price}" data-period="{$_item.period}" name="optionsRadios" id="optionsRadios{$_item.id}1"
+                                                                        <label class="label_radio hover_label_radio r_off">
+                                                                            <input class="data-price" data-target="#basic-price-per-month" data-cur="usd" data-price-usd="{$_item.price}" data-period="{$_item.period}" name="optionsRadios" id="optionsRadios{$_item.id}1"
                                                                         value="{$_item.id}" type="radio" 
                                                                         {if $_item.period == '12'} checked="checked" {/if}
                                                                         />
@@ -192,7 +191,7 @@
                                                                             
                                                                         <span class="sp_price">
                                                                             <strong>
-                                                                                <div class="box-currence"><symbol attr-iso="usd">$</symbol><curr>{$_item.price}</curr></div>
+                                                                                <div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr">{$_item.price}</div></div>
                                                                             </strong>
                                                                         </span>   
                                                                         </label>
@@ -236,28 +235,7 @@
                                                                 <li data-toggle="tooltip" data-placement="top" title="Control devices remotely. <div class='br'><strong>iOS: Jailbreak Needed</strong></div><div class='br'><strong>Not supported: on Android 5.0{*4.4+*}.</strong></div>"><i class="icon-cancel"></i> SMS commands</li>
                                                                 <li data-toggle="tooltip" data-placement="top" title="View every keystroke typed on a target device. <div class='br'><strong>iOS: Jailbreak Needed</strong></div>"><i class="icon-cancel"></i> Keylogger</li>
                                                                 <li data-toggle="tooltip" data-placement="top" title="Monitor iPhones, iPads, and iPods Touch without jailbreak. View Calls, Text messages, Contacts, Browsing History, Bookmarks, Calendar, Skype, and WhatsApp.{*Monitoring of iPhones, iPads and iPods Touch without jailbreak.  View SMS, Calls, Contacts, Browser History, Bookmarks, Calendar events.*}"><i class="icon-cancel"></i> iCloud (<span class="fz13">jailbreak-free</span>)</li>
-                                                                
-                                                                {*<li data-toggle="tooltip" data-placement="top" title="View detailed data on incoming/outgoing calls: name, phone number, time and duration"><i class="icon-ok"></i> Calls history <span>(700 calls monthly)</span></li>
-                                                                <li data-toggle="tooltip" data-placement="top" title="View text message content with detailed data including name, phone number and time"><i class="icon-ok"></i> SMS history <span>(300 SMS monthly)</span></li>
-                                                                <li data-toggle="tooltip" data-placement="top" title="Block SMS from specific senders. Not available for Android 4.4 and newer versions"><i class="icon-ok"></i> SMS blocking </li>
-                                                                <li data-toggle="tooltip" data-placement="top" title="Track current location as well as the entire route history of your children"><i class="icon-ok"></i> Location history</li> 
-                                                                <li data-toggle="tooltip" data-placement="top" title="View your kid’s contact list including names, addresses, numbers and emails"><i class="icon-ok"></i> Contacts</li>
-                                                                <li data-toggle="tooltip" data-placement="top" title="Monitor scheduled dates and events. Follow your kid’s calendar plans"><i class="icon-ok"></i> Calendar</li>
-                                                                <li data-toggle="tooltip" data-placement="top" title="View all websites your kid visits. On iOS devices available for Safari browser only"><i class="icon-ok"></i> Browsing history</li>
-                                                                <li data-toggle="tooltip" data-placement="top" title="View all websites that your child visited and bookmarked as preferred ones"><i class="icon-ok"></i> Bookmarks</li> 
-                                                                <li data-toggle="tooltip" data-placement="top" title="View all photos stored on your kid’s device"><i class="icon-ok"></i> Photos</li>
-                                                                <li data-toggle="tooltip" data-placement="top" title="View all emails and detailed contact data. Root is required for Android devices"><i class="icon-ok"></i> Emails</li>
-                                                                <li data-toggle="tooltip" data-placement="top" title="Monitor all applications (games, services etc.) downloaded on your kid’s device"><i class="icon-ok"></i> Applications</li>
-                                                                <li data-toggle="tooltip" data-placement="top" title="Block distracting applications and 18+ websites"><i class="icon-ok"></i> Websites & Apps blocking</li>
-                                                                 
-                                                                <li data-toggle="tooltip" data-placement="top" title="Track conversations via Skype, WhatsApp, Viber. Root is required for Android"><i class="icon-cancel"></i> Viber/WhatsApp/Skype</li>
-                                                                <li data-toggle="tooltip" data-placement="top" title="View all user videos stored on your child’s device"><i class="icon-cancel"></i> View user Videos</li>
-                                                                <li data-toggle="tooltip" data-placement="top" title="Monitor your kid’s chats on Facebook. Root is required for Android devices"><i class="icon-cancel"></i> Facebook Messages</li>
-                                                                <li data-toggle="tooltip" data-placement="top" title="View all the data ever stored on your kid’s device"><i class="icon-cancel"></i> Historical data</li> 
-                                                                <li data-toggle="tooltip" data-placement="top" title="Control devices remotely. Not supported: on Android 4.4+; “Wipe” function on iOS 8+."><i class="icon-cancel"></i> SMS commands</li>
-                                                                <li data-toggle="tooltip" data-placement="top" title="Keep track of each button your kid presses on his or her device"><i class="icon-cancel"></i> Keylogger</li>*}
-                                                                                                                              
-                                                                                                                     
+                                                                                                        
                                                             </ul>
                                                             </div>
                                                         <div class="basic_h" id="foot_h1">
@@ -291,7 +269,7 @@
 
                                                                             <span class="sp_price">
                                                                                 <strong>
-                                                                                    <div class="box-currence"><symbol attr-iso="usd">$</symbol><curr>{$_item.price}</curr></div>
+                                                                                    <div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr">{$_item.price}</div></div>
                                                                                 </strong>
                                                                             </span>   
                                                                         </label>
@@ -320,7 +298,7 @@
                                                                 <img src="{$img}/premium_pack.png">
                                                             </div>
                                                             <div class="wr_price_big">
-                                                                <span></span><div class="box-currence"><symbol attr-iso="usd">$</symbol><curr id="premium-price-per-month">6.99{*14.66*}</curr></div><span>/ month</span>
+                                                                <span></span><div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr" id="premium-price-per-month">6.99</div></div><span>/ month</span>
                                                             </div>
                                                             
                                                             
@@ -365,7 +343,7 @@
                                                                                 
                                                                             <span class="sp_price">
                                                                                 <strong>
-                                                                                    <div class="box-currence"><symbol attr-iso="usd">$</symbol><curr>{$_item.price}</curr></div>
+                                                                                    <div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr">{$_item.price}</div></div>
                                                                                 </strong>
                                                                             </span>   
                                                                         </label>
@@ -410,26 +388,6 @@
                                                                 <li data-toggle="tooltip" data-placement="top" title="View every keystroke typed on a target device. <div class='br'><strong>iOS: Jailbreak Needed</strong></div>"><i class="icon-ok"></i> Keylogger</li>
                                                                 <li data-toggle="tooltip" data-placement="top" title="Monitor iPhones, iPads, and iPods Touch without jailbreak. View Calls, Text messages, Contacts, Browsing History, Bookmarks, Calendar, Skype, and WhatsApp.{*Monitoring of iPhones, iPads and iPods Touch without jailbreak.  View SMS, Calls, Contacts, Browser History, Bookmarks, Calendar events.*}"><i class="icon-ok"></i> iCloud (<span class="fz13">jailbreak-free</span>)</li>
                                                                 
-                                                                {*<li data-toggle="tooltip" data-placement="top" title="View detailed data on incoming/outgoing calls: name, phone number, time and duration"><i class="icon-ok"></i> Calls history <span>(Unlimited)</span></li>
-                                                                <li data-toggle="tooltip" data-placement="top" title="View text message content with detailed data including name, phone number and time"><i class="icon-ok"></i> SMS history <span>(Unlimited)</span></li>
-                                                                <li data-toggle="tooltip" data-placement="top" title="Block SMS from specific senders. Not available for Android 4.4 and newer versions"><i class="icon-ok"></i> SMS blocking </li>
-                                                                <li data-toggle="tooltip" data-placement="top" title="Track current location as well as the entire route history of your children"><i class="icon-ok"></i> Location history</li> 
-                                                                <li data-toggle="tooltip" data-placement="top" title="View your kid’s contact list including names, addresses, numbers and emails"><i class="icon-ok"></i> Contacts</li>
-                                                                <li data-toggle="tooltip" data-placement="top" title="Monitor scheduled dates and events. Follow your kid’s calendar plans"><i class="icon-ok"></i> Calendar</li>
-                                                                <li data-toggle="tooltip" data-placement="top" title="View all websites your kid visits. On iOS devices available for Safari browser only"><i class="icon-ok"></i> Browsing history</li>
-                                                                <li data-toggle="tooltip" data-placement="top" title="View all websites that your child visited and bookmarked as preferred ones"><i class="icon-ok"></i> Bookmarks</li> 
-                                                                <li data-toggle="tooltip" data-placement="top" title="View all photos stored on your kid’s device"><i class="icon-ok"></i> Photos</li>
-                                                                <li data-toggle="tooltip" data-placement="top" title="View all emails and detailed contact data. Root is required for Android devices"><i class="icon-ok"></i> Emails</li>
-                                                                <li data-toggle="tooltip" data-placement="top" title="Monitor all applications (games, services etc.) downloaded on your kid’s device"><i class="icon-ok"></i> Applications</li>
-                                                                <li data-toggle="tooltip" data-placement="top" title="Block distracting applications and 18+ websites"><i class="icon-ok"></i> Websites & Apps blocking</li>
-                                                                 
-                                                                <li data-toggle="tooltip" data-placement="top" title="Track conversations via Skype, WhatsApp, Viber. Root is required for Android"><i class="icon-ok"></i> Viber/WhatsApp/Skype</li>
-                                                                <li data-toggle="tooltip" data-placement="top" title="View all user videos stored on your child’s device"><i class="icon-ok"></i> View user Videos</li>
-                                                                <li data-toggle="tooltip" data-placement="top" title="Monitor your kid’s chats on Facebook. Root is required for Android devices"><i class="icon-ok"></i> Facebook Messages</li>
-                                                                <li data-toggle="tooltip" data-placement="top" title="View all the data ever stored on your kid’s device"><i class="icon-ok"></i> Historical data</li> 
-                                                                <li data-toggle="tooltip" data-placement="top" title="Control devices remotely. Not supported: on Android 4.4+; “Wipe” function on iOS 8+."><i class="icon-ok"></i> SMS commands</li>
-                                                                <li data-toggle="tooltip" data-placement="top" title="Keep track of each button your kid presses on his or her device"><i class="icon-ok"></i> Keylogger</li>*}
-                                                            
                                                             </ul>
                                                             </div>
                                                         <div class="premium_h" id="foot_h3">
@@ -459,7 +417,7 @@
                                                                                 
                                                                             <span class="sp_price">
                                                                                 <strong>
-                                                                                    <div class="box-currence"><symbol attr-iso="usd">$</symbol><curr>{$_item.price}</curr></div>
+                                                                                    <div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr">{$_item.price}</div></div>
                                                                                 </strong>
                                                                             </span>   
                                                                         </label>
@@ -496,7 +454,7 @@
                                             currentValue = (Math.floor(currentValue * 100) / 100).toFixed(2);
                                             $($(this).attr('data-target'))
                                                     .html(currentValue)
-                                                    .prev('symbol')
+                                                    .prev('div.symbol')
                                                     .html(symbols[$(this).attr('data-cur')] ? symbols[$(this).attr('data-cur')] : '');
                                         });
                                     </script>

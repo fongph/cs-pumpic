@@ -41,11 +41,11 @@ function eg_quicktags() {
             _bannerBuyAndDemo += '<div class="clearfix">';
                 _bannerBuyAndDemo += '<div class="block-price col-lg-8 col-md-8 col-sm-8 clearfix text-center">';
                     _bannerBuyAndDemo += '<div id="basic" class="col-lg-6 col-md-6 col-sm-6 col-xs-sm-6">';
-                        _bannerBuyAndDemo += '<span class="package-basic"></span>';
+                        _bannerBuyAndDemo += '<div class="package-basic"></div>';
                         _bannerBuyAndDemo += '<div class="price"><sub>$</sub>5.33<span class="slash">/</span><span class="month">month</span></div>';
                     _bannerBuyAndDemo += '</div>';
                     _bannerBuyAndDemo += '<div id="premium" class="col-lg-6 col-md-6 col-sm-6 col-xs-sm-6">';
-                        _bannerBuyAndDemo += '<span class="package-premium"></span>';
+                        _bannerBuyAndDemo += '<div class="package-premium"></div>';
                         _bannerBuyAndDemo += '<div class="price"><sub>$</sub>6.99<span class="slash">/</span><span class="month">month</span></div>';
                     _bannerBuyAndDemo += '</div>';
                 _bannerBuyAndDemo += '</div>';

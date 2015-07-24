@@ -180,7 +180,7 @@
                                                                                 <span class="sp">
                                                                                     <strong>
                                                                                         {$_item.period}
-                                                                                    </strong> months
+                                                                                    </strong> {if $_item.period == 1}month{else}months{/if}
                                                                                 </span>
                                                                                 <div class="box-small-package">    
                                                                                 {if $_item.period > 3}<span class="small_package i-price-plans-small-basic"></span>{/if} 
@@ -340,7 +340,7 @@
                                                                                 <span class="sp">
                                                                                     <strong>
                                                                                         {$_item.period}
-                                                                                    </strong> months
+                                                                                    </strong> {if $_item.period == 1}month{else}months{/if}
                                                                                 </span>
                                                                                 
                                                                                 <div class="box-small-package">    
@@ -546,7 +546,7 @@
                                                                             <span class="sp">
                                                                                 <strong>
                                                                                     {$_item.period}
-                                                                                </strong> months
+                                                                                </strong> {if $_item.period == 1}month{else}months{/if}
                                                                             </span>
                                                                             
                                                                             <div class="box-small-package">    
@@ -629,7 +629,7 @@
                                                                             <span class="sp">
                                                                                 <strong>
                                                                                     {$_item.period}
-                                                                                </strong> months
+                                                                                </strong> {if $_item.period == 1}month{else}months{/if}
                                                                             </span>
                                                                             
                                                                             <div class="box-small-package">    

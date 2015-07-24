@@ -8,7 +8,6 @@
 *}    
     
 {include file='../../includes/main/main-header.tpl'
-    robots="no" 
     title="How to protect your child online | Download PDF"
     description="Follow these simple steps to help protect your children's privacy and safety when they are online."
 }    

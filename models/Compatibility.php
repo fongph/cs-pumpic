@@ -139,8 +139,8 @@ class Compatibility {
         $groups = array(
             // Calls & Texts
             'Calls & SMS' => array(
-                'call_log' => 'Calls history',
-                'lock_device' => 'Calls blocking',
+                'call_log' => 'Call history',
+                'lock_device' => 'Call blocking',
                 'sms_log' => 'Text message history', // SMS history
                 'block_word' => 'SMS blocking',
                 'bad_word_sms'  => 'Block SMS by keywords',
@@ -161,15 +161,15 @@ class Compatibility {
             ),
             // Control Apps
             'Apps Control' => array(
-                'application'  => 'Applications list',
-                'app_list_block' => 'Apps blocking',
+                'application'  => 'Application list',
+                'app_list_block' => 'App blocking',
                 'keylogger' => 'Keylogger',
             ),
             //Browser
             'Browsing' => array(
                 'browser_history' => 'Browsing history',
                 'browser_bookmarks' => 'Bookmarks',
-                'blocking_sites' => 'Websites blocking',
+                'blocking_sites' => 'Website blocking',
             ),
             'Other features' => array(
                 'location_history'  => 'Location history',
@@ -269,10 +269,12 @@ class Compatibility {
                     'facebook' => '<strong>Root Required</strong>',
                     'instagram' => '<strong>Root Required</strong>',
                     'kik'       => '<strong>Root Required</strong>',
+                   
                 ),
                 'Other features' => array( 
                     // Emails
                     'emails' => '<strong>Root Required</strong>',
+                    'snapchat' => '<strong>Root and Xposed Required</strong>',
                     // SMS commands
                     // 'sms_commands' => '<strong>Not supported: on Android 4.4+.</strong>',
                 ),

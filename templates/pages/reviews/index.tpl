@@ -593,6 +593,22 @@
                                 <td><i class="icon-cancel"></i></td>
                                 <td><i class="icon-cancel"></i></td>
                             </tr>
+                            
+                            <tr>
+                                <td>
+                                    <span class="title-table">Snapchat</span>
+                                </td>
+                                <td><i class="icon-ok"></i></td>
+                                <td><i class="icon-cancel"></i></td>
+                                <td><i class="icon-cancel"></i></td>
+                                <td><i class="icon-cancel"></i></td>
+                                <td><i class="icon-cancel"></i></td>
+                                <td><i class="icon-cancel"></i></td>
+                                <td><i class="icon-cancel"></i></td>
+                                <td><i class="icon-cancel"></i></td>
+                                <td><i class="icon-cancel"></i></td>
+                                <td><i class="icon-cancel"></i></td>
+                            </tr>
                         </tbody>
                     </table> 
                     <table class="table-vertical-striped">

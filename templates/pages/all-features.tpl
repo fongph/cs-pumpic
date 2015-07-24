@@ -773,10 +773,10 @@
                                     
                                     <div class='block-info'>
                                         <p>
-                                            Follow online communication activity. View <b>messages</b> sent and received via popular instant messengers like Facebook Messenger, Viber, Skype, WhatsApp and Kik.
+                                            Follow online communication activities. View <b>messages</b> sent and received via popular instant messengers like Facebook Messenger, Viber, Skype, WhatsApp, and Kik.
                                         </p>
                                         <p>
-                                            Monitor <b>WhatsApp</b> and <b>Facebook calls</b> on iOS and Android devices.
+                                            Monitor <b>Skype</b>, <b>WhatsApp</b>, and <b>Facebook calls</b>.
                                         </p>
                                         {*<ul>
                                             <li>Pumpic allows you to monitor your child’s device activity in</li>
@@ -806,7 +806,7 @@
                                     </ul>
                                     
                                     <div class='block-info'>
-                                        <p>Monitor temporary <b>photos</b>, <b>videos</b>, and <b>comments</b> posted on Snapchat via iOS devices. Prevent inappropriate <b>content sharing</b> and <b>viewing</b>.</p>
+                                        <p>Monitor temporary <b>photos</b>, <b>videos</b>, and <b>comments</b> posted on Snapchat. Prevent your children from inappropriate <b>content sharing</b> and <b>viewing</b>.</p>
                                         
                                         <div><a class="btn-orange" href="http://demo.{$domain}/setDevice/126?redirect_url=cp/call">View Demo</a></div>
                                         <label class="color-orange">(no registration required)</label>

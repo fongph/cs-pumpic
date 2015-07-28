@@ -26,10 +26,9 @@
                 topmenu_active (test): alias меню, которое будет подсвечиваться активным. 
         *}
 	{include file='../../includes/main/main-top-menu.tpl' 
-                topmenu_active='home'
                 cache_id = "includes_main_main-top-menu"
                 nocache    
-        }
+        } {* topmenu_active='home' *}
         
         {*
             Template: PHONE

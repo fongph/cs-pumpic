@@ -72,7 +72,10 @@ $config = array(
                 'compatibility/ios-devices'       => 'compatibility_search.php', 
                 'iphone-tracking-software.html'   => 'iphone_tracking_software.php',
                 'iphone-with-jailbreak-monitoring.html' => 'iphone_with_jailbreak_monitoring.php',
-                'icloud-iphone-without-jailbreak-monitoring.html' => 'icloud_iphone_without_jailbreak_monitoring.php'
+                'icloud-iphone-without-jailbreak-monitoring.html' => 'icloud_iphone_without_jailbreak_monitoring.php',
+            
+                // security
+                'security-subscribe-form-mailChimp.html' => 'security-subscribe-form-mailChimp.php',
 	),
     'db_phones' => array(
         'host' => '188.40.64.2',

@@ -93,7 +93,7 @@
                             </div>
 
                             {if $getSetting._item.custom_text}
-                                <div class="row">
+                                <div class="row block_custom_text">
                                     <div class="col-lg-12">
                                         <div class="blockquate_bottom">{$getSetting._item.custom_text}</div>
                                     </div>

@@ -428,6 +428,23 @@ class ManagerUser extends Manager
         return (is_array($show) and count($show) > 0) ? $show['value'] : 0;
     }
     
+    
+    // 
+    public function subscriptionFromMailChimp( $email ) {
+        Manager::registerListeners( $this->_pdo );
+        $eventManager = \EventManager\EventManager::getInstance();
+        
+        if(!$this ->validateEmail($email)) return false;
+        
+        if( $eventManager->emit('front-subscription-completed', array(
+            'email' => $email
+        )) ) {
+            return true;
+        } else 
+            return false;
+        
+    }
+    
 }
 
 class Params implements \ArrayAccess 

@@ -152,7 +152,9 @@ class generate_subscribe_form_widget extends WP_Widget
 		echo $before_widget;
                 $html = '<div class="box-form-subscribe '.$instance['type_form'].'">
                 
-                                <form method="POST" action="'.$instance['link'].'" name="subscribe-'.get_the_ID().'">
+                                <form method="POST" action="http://'.$_SERVER['HTTP_HOST'].'/security-subscribe-form-mailChimp.html" name="subscribe-'.get_the_ID().'">
+
+                                    <input type="hidden" name="link" value="'.$instance['link'].'" />
 
                                     <div class="row">
                                         '.$_block_img.'

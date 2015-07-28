@@ -7555,6 +7555,51 @@ div.symbol {
     }
 }
 
+/* ===================== // block-custom-text =============== */
+.block_custom_text .blockquate_bottom h1,
+.block_custom_text .blockquate_bottom h2,
+.block_custom_text .blockquate_bottom h3,
+.block_custom_text .blockquate_bottom h4,
+.block_custom_text .blockquate_bottom h5 {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.42857;    
+    color: #7f7f7f;
+    opacity: 1;
+}
+
+/* ================== // live chat =============== */
+
+@media only screen and (max-width: 480px) { 
+    #livechat-compact-container {
+        display: none !important;
+    }
+}
+@media (min-width: 468px) {
+    #livechat-compact-container {
+        display: none !important;
+    }  
+}
+@media (min-width: 768px) {
+    #livechat-compact-container {
+        display: block !important;
+    }
+}
+@media (min-width: 992px) { 
+    #livechat-compact-container {
+        display: block !important;
+    }
+}
+@media (min-width: 1200px) {
+    #livechat-compact-container {
+        display: block !important;
+    }
+}
+
+#livechat-compact-container {
+    display: block !important;
+}
+
 /* ---- \\ icloud block ----- */
 .position-relative {
     position: relative;

@@ -1,5 +1,4 @@
 {include file='../includes/main/main-header.tpl'
-    test = "true"
     robots="yes" 
     title="iPhone remote sms, calls and Facebook tracker"
     description="Advanced mobile monitoring app for iOS. Compatible with iPhones, iPads and iPods Touch. Discover more than 22 monitoring features in one app."

@@ -13,60 +13,6 @@
         <![endif]-->
 	
         <link href="{$cssMin}/frontend.min.css?{style_cache data='2015-02-05'}" rel="stylesheet">
-        
-        {*<link href="{$css}/bootstrap.css?{style_cache data='2015-02-09'}" rel="stylesheet">
-	<link href="{$css}/fontello.css?{style_cache data='2015-02-09'}" rel="stylesheet">
-        <!-- lightbox style -->
-        <link href="{$css}/lightbox.css?{style_cache data='2015-02-09'}" rel="stylesheet">
-        
-        <!-- settings -->
-        <link href="{$css}/settings.css?{style_cache data='2015-02-09'}" rel="stylesheet">
-        
-	<link href="{$css}/all.css?{style_cache data='2015-02-09'}" rel="stylesheet">
-        <link href="{$css}/all23032015.css?{style_cache data='2015-02-09'}" rel="stylesheet">
-        <link href="{$css}/parent.css?{style_cache data='2015-02-09'}" rel="stylesheet">
-        
-        <!-- landing -->
-        <link href="{$css}/landing_fix.css?{style_cache data='2015-02-09'}" rel="stylesheet">
-        
-        <link href="{$css}/p2.css?{style_cache data='2015-02-09'}" rel="stylesheet">
-        
-        <!-- currence -->
-        <link href="{$css}/curr.css?{style_cache data='2015-02-09'}" rel="stylesheet">
-        
-        <!-- bxSlider -->
-        <link href="{$css}/jquery.bxslider.css?{style_cache data='2015-02-09'}" rel="stylesheet">
-        
-        <!-- style-technological -->
-        <link href="{$css}/style-technological.css?{style_cache data='2015-02-09'}" rel="stylesheet">
-        
-        <!-- font-size responce -->
-        <link href="{$css}/font-size.css?{style_cache data='2015-02-09'}" rel="stylesheet">
-        
-        <!-- fly blocks -->
-        <link href="{$css}/style-fly-features.css?{style_cache data='2015-02-09'}" rel="stylesheet">
-        
-        <!-- icloud -->
-        <link href="{$css}/icloud/icloud.css" rel="stylesheet">
-        
-        <!-- ie -->
-        <link href="{$css}/ie_fix/ie.css?{style_cache data='2015-02-09'}" rel="stylesheet">
-
-        <!-- reviews -->
-        <link href="{$css}/reviews/all_update.css?{style_cache data='2015-02-09'}" rel="stylesheet">
-        <link href="{$css}/reviews/style-new-page.css?{style_cache data='2015-02-09'}" rel="stylesheet">
-        
-        <!-- compatibility -->
-        <link href="{$css}/compatibility.css?{style_cache data='2015-02-09'}" rel="stylesheet">
-        
-        <!-- 404 -->
-        <link href="{$css}/404.css?{style_cache data='2015-02-09'}" rel="stylesheet"> 
-        
-        <!-- video -->
-        <link href="{$css}/video.css?{style_cache data='2015-02-09'}" rel="stylesheet"> *}
-        
-	
-	{*<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js?{style_cache data='2015-02-05'}"></script>*}
         <script src="http://code.jquery.com/jquery-1.11.1.min.js?{style_cache data='2015-02-05'}"></script>
         <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js?{style_cache data='2015-02-05'}"></script>
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -88,61 +34,6 @@
         </script>
         {/nocache} 
         
-        {*<script src="{$jsMin}/frontend.min.js?{style_cache data='2015-02-05'}"></script>*}
-        
-        {*<script src="{$js}/bootstrap.js?{style_cache data='2015-02-05'}"></script>
-	<script src="{$js}/fancy_checkbox.js?{style_cache data='2015-02-05'}"></script>
-        <script src="{$js}/main.js?{style_cache data='2015-02-05'}"></script>
-        
-        <!-- jquery.handler.toolkit -->
-       <script src="{$js}/jquery.handler-toolkit.js?{style_cache data='2015-02-05'}"></script>
-        <!-- resize -->
-        <script src="{$js}/browser.js?{style_cache data='2015-02-05'}"></script>
-        
-        <!-- lightbox -->
-        <script src="{$js}/lightbox/lightbox.js?{style_cache data='2015-02-05'}"></script>
-        
-        <!-- jquery bpopUp -->
-        <script src="{$js}/popup/jquery.bpopup.js?{style_cache data='2015-02-05'}"></script>
-        
-        <!-- jquery plugins -->
-        <script src="{$js}/jquery.cookie.js?{style_cache data='2015-02-05'}"></script>
-        <script src="{$js}/jquery.ba-hashchange.min.js?{style_cache data='2015-02-05'}"></script>
-        <script src="{$js}/jquery.total-storage.min.js?{style_cache data='2015-02-05'}"></script>
-        
-        <!-- tool tip -->
-        <script src="{$js}/easyTooltip.js?{style_cache data='2015-02-05'}"></script>
-        <!-- pagination -->
-        <script src="{$js}/jquery.simplePagination.js?{style_cache data='2015-02-05'}"></script>
-        
-        <!-- jquery validate -->
-        <script src="{$js}/jquery.validate.min.js?{style_cache data='2015-02-05'}"></script>
-        
-        <!-- jquery translite -->
-        <script src="{$js}/translite/jquery.synctranslit.js?{style_cache data='2015-02-05'}"></script>
-        
-        <!-- monay convert-->
-        <script src="{$js}/money/money.min.js?{style_cache data='2015-02-05'}"></script>
-        <script src="{$js}/currancy.js?{style_cache data='2015-02-05'}"></script>
-        
-        <!-- init -->
-        <script src="{$js}/scroll.js?{style_cache data='2015-02-05'}"></script>
-        <script src="{$js}/init.js?{style_cache data='2015-02-05'}"></script>
-        
-        <!-- close/ out Windows -->
-        <script src="{$js}/outWindows.js?{style_cache data='2015-02-05'}"></script>
-        
-        <!-- resizeImages -->
-        <script src="{$js}/resize_images.js?{style_cache data='2015-02-05'}"></script>
-        
-        <!-- fly blocks -->
-        <script src="{$js}/fly_feachers.js"></script>
-        <!-- resizeImages -->
-        <script src="{$js}/resize_teh.js"></script>
-        
-        <!-- sliders -->
-        <script src="{$js}/bxslider/jquery.bxslider.js"></script>
-        <script src="{$js}/bxslider/bxInit.js"></script>*}
         
 {/strip}
 {include file='../header/analytics-header.tpl'}	
@@ -152,7 +43,7 @@
     {*_gaq.push(['_setDomainName', 'none']);
     _gaq.push(['_setAllowLinker', true]);*}
     
-    {literal}
+    {* literal}
     <!-- GOOGLE GA.JS --> 
     <script type="text/javascript">
     var _gaq = _gaq || [];
@@ -167,7 +58,8 @@
 
     </script>
     <!-- END GA.JS -->
-    {/literal}    
+    {/literal *}  
+    
 {/if}
 
 </head>

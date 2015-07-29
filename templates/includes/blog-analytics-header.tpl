@@ -19,3 +19,18 @@ ga('require', 'linker');
 ga('linker:autoLink', ['pumpic.com','fastspring.com','demo.pumpic.com','cp.pumpic.com'], true, true);
 ga('send', 'pageview');
 </script>
+
+<!-- GOOGLE GA.JS --> 
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-56492507-1']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+var iga = document.createElement('script'); iga.type = 'text/javascript'; iga.async = true;
+iga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(iga, s);
+})();
+
+</script>
+<!-- END GA.JS -->

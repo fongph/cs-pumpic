@@ -156,6 +156,7 @@ class Compatibility {
                 'facebook' => 'Facebook',
                 'instagram' => 'Instagram',
                 'kik'       => 'Kik',
+                'snapchat' => 'Snapchat',
 //                    'bb_messenger' => 'BlackBerry Messenger',
 //                    'pin_message' => 'PIN Message',
             ),
@@ -186,7 +187,7 @@ class Compatibility {
                 'geo_fences'    => 'Geo-fences',
                 'icloud_solution'   => 'iCloud solution',
                 'notes' => 'Notes',
-                'snapchat' => 'Snapchat',
+                
 //                    'gps' => 'Current GPS location',
 
             ),

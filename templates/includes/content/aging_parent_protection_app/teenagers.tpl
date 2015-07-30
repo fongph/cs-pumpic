@@ -8,7 +8,7 @@
                                 <div class="row">
                                         <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12 item-teenager">
                                                 <img class="model-center" src="{$img}/aging_parent_protection_app/gone_missing.png" alt="">
-                                                <h1 class="item-t-title text-center">Gone missing</h1>
+                                                <h1 class="item-t-title text-center">Gone Missing</h1>
                                                 <p class="text-center">There are cases when elderly people go outside and due to memory failures or dementia lose their way back home and simply get lost missing.</p>
 
                                         </div>
@@ -52,7 +52,7 @@
                                 <div class="row">
                                     <div class="protected_lk_text text-center mobile-version">According to the data provided by Microsoft, NetMums.com and ShareHope.org</div>
                                     <img class="model-center notebook" src="{$img}/aging_parent_protection_app/descotp.png" width="263px" height="150px" alt="" />
-                                    <h3 class="text-center">Protect Your Child Right Now!</h3>
+                                    <h3 class="text-center">Protect Your Elderly Parents!</h3>
                                     <div class="text-center">
                                         <a class="btn btn-orange text-center ga-action-click mr20" 
                                         ga-action ="click"

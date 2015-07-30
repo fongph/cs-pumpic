@@ -1,9 +1,16 @@
+.bold { font-weight: bold; }
 .margin-null { margin: 0px; }
 
 .ml5 { margin-left: 5px; }
 .mr0 { margin-right: 0px; }
 .ml0 { margin-left: 0px; }
 .mr5 { margin-right: 5px; }
+.mr10 { margin-right: 10px; }
+.mr15 { margin-right: 15px; }
+.mr20 { margin-right: 20px; }
+.mr25 { margin-right: 25px; }
+.mr30 { margin-right: 30px; }
+
 .mlr-5 {
     margin-right: 5px;
     margin-left: 5px;
@@ -769,4 +776,41 @@ div.symbol {
     #livechat-compact-container {
         display: block !important;
     }
+}
+
+/* ================ // fz ============= */
+.fz25 { font-size: 25px; }
+.fz26 { font-size: 26px; }
+.fz27 { font-size: 27px; }
+.fz28 { font-size: 28px; }
+.fz29 { font-size: 29px; }
+.fz30 { font-size: 30px; }
+.fz31 { font-size: 31px; }
+.fz32 { font-size: 32px; }
+.fz33 { font-size: 33px; }
+.fz34 { font-size: 34px; }
+.fz35 { font-size: 35px; }
+
+/* ================ // table ============== */
+.block-table { display: table; }
+.block-table > .tr { display: table-row; }
+.block-table > .tr > .td { display: table-cell; }
+
+.bg-black-1 {
+    background: #4d4f5b; 
+}
+.bg-black-2 {
+    background: #41434f; 
+}
+.bg-lavel-green-1 {
+    background: #2fbeb4;
+}
+.bg-lavel-green-2 {
+    background: #23b2a8;
+}
+.bg-lavel-green-3 {
+    background: #16a89e;
+}
+.bg-lavel-green-4 {
+    background: #199e95;
 }

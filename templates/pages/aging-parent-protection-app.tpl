@@ -1,7 +1,9 @@
+{*closeAccess*}
+
 {include file='../includes/main/main-header.tpl'
     robots="yes" 
-    title="Child Safety Monitoring App"
-    description="Little kids are exposed to dangers more than others. Pumpic app leaves no chances to online predators, cyberbullies, kidnappers, and other abusers."
+    title="Aging Parent Protection App"
+    description="Pumpic helps you take care of your elderly parents. Monitor calls and text messages. Track locations and geo-fences. Prevent dangers remotely."
 }    
     
 <body>
@@ -27,20 +29,20 @@
         
         <!-- CONTENT -->
         {include file='../includes/content/info/info-promo.tpl'
+            fz="28"
             collg = "7"
-            imgUrl = "header_banners/hd_protect_your_little_kids_2.png"
+            imgUrl = "header_banners/hd_aging_parent_protection_app.png"
             maxWidth = "469"
             imgAlt = "Smartphone monitoring"
             imgAlign = "right"
             imgVerticalAlign = "bottom"
             textAlign = "right"
-            title = "Protect Your Little Kids.<br />Parental Control Application"
-            description = "Secure kids from cyberbullies, kidnappers, and other abusers.<br />
-            Track location. Block strange contacts. Control phone activities."
+            title = "Take Care of Your Elderly Parents<br />Secure Their Safety on Mobile Phones"
+            description = "Block unidentified calls and messages,<br />Track locations, set geo-fences, view alerts.<br />
+            A peace of mind for you and your aging parents."
             promoBuyBlock = "no"
             planPackageBuy = "yes"
-            block_video = "yes"
-            block_video_src = "http://www.youtube.com/embed/Atg0CbaytAY"
+            block_video = "no"
         }
         
         {include file='../includes/content/plans.tpl' }
@@ -53,62 +55,311 @@
             buttonFreeTrial = 'yes'
         }
         
-         {include file='../includes/content/teenagers_protect_little_kids.tpl' 
+         {include file='../includes/content/aging_parent_protection_app/teenagers.tpl' 
                     blockBg="light"
         }
                 
-        {include file='../includes/content/secures.tpl'
+        {include file='../includes/content/aging_parent_protection_app/secures.tpl'
             blockBg="dark"
         }
 
         {include file='../includes/content/features-table.tpl' 
                 blockBg="light"
+                description="Pumpic is a unique mobile monitoring application designed to keep your family safe and secured. The app comprises many useful tracking features that allow remote eldercare and parenting. It will help you protect your aging parents and unsure their welfare. Pumpic is available for Android and iOS phones and tablets, and includes jailbreak-free iCloud monitoring solution."
         }     
 
-        {include file='../includes/content/ipad.tpl' 
+        {*include file='../includes/content/ipad.tpl' 
                     blockBg="dark"
                     imgUrl = "parental_control/ipad.png"
                     imgAlt = "remote control"
                     title = "Easy-to-Use Control Panel"
-        }
+        *}
         
         {* description = "Right after installing Pumpic, all the data from the target device will be sent to your Control Panel. It can be accessed from any browser and any gadget, including PCs, mobile phones and tablets. In Control Panel, you can not only view the information, but also set restrictions, block, and limit some of activities."
          *}
         
         {include file='../includes/content/how-get-pumpic.tpl' 
-             blockBg="light"
+             blockBg="dark"
         } 
          
+        <!-- BLOCK CHOOSE SUBSCRIPTION PLAN -->
+        <div id='choose-subscription-plan' class="light prices-padding {*padding-reset*}">
+            <div class="container">
+                <h2 class="text-center">Choose Subscription Plan</h2>
+                <div class="row">
+                    <div class="col-lg-10 col-lg-offset-1">
+                        <div class="row">
+                            <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1">
+                                <table class="tb_pricing table-bordered pricing-second">
+                                    <thead>
+                                        <tr>
+                                            <th class="{*hidden-media-box*}">
+                                            
+                                                <div class="basic_wr row-pricing-panel">
+                                                    <div class="basic_h">
+                                                        Basic
+                                                    </div>
+                                                    <div class="priceb">
+                                                        <div class="dtable">
+                                                            <div class="dtable-cell">
+                                                                <div class="wr_pack">
+                                                                    <img src="{$img}/basic_pack.png">
+                                                                </div>
+                                                            </div>
+                                                            <div class="dtable-cell">
+                                                                <div class="wr_price_big">
+                                                                    <span></span>
+                                                                    <div class="box-currence">
+                                                                        <div class="symbol" attr-iso="usd">$</div>
+                                                                        <div class="curr" id="basic-price-bottom-per-month">5.33{*11.33*}</div>
+                                                                    </div><span> / month</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                                
+                                                        <div id="list-plans-basic-package" class="box-plans-package">
+                                                           <section> 
+
+                                                            <div class="list-plans box-table">
+                                                                <div class="table-rows">
+                                                                    <div class="item-plan table-column col-xs-sm-6 col-sm-6 col-md-6 col-lg-6 vertical-aligh-middle">
+                                                                        <i class="i-price-plans-big-basic"></i>
+                                                                    </div>
+                                                                    <div class="item-plan table-column col-xs-sm-6 col-sm-6 col-md-6 col-lg-6">
+                                                                        <p>Buy <strong class="text-red">6</strong> or <strong class="text-red">12</strong> month plan 
+                                                                           and <strong class="text-red">get 2 plans for free</strong></p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>  
+
+                                                           </section>        
+                                                        </div>        
+                                                                
+                                                        <div class="list_price">
+                                                            <form name="price_basic_bottom" method="POST" action="/buy.html" autocomplete="off">
+                                                                <input id='product_price_basic' type='hidden' name='price[productID]' value='0' class="product_price" />
+
+                                                                <ul>
+                                                                    {foreach from=$getProducts.basic key=key item=_item}
+                                                                    <li class="">
+                                                                        <label class="label_radio hover_label_radio r_off">
+                                                                            <input class="data-price" data-target="#basic-price-bottom-per-month" data-cur="usd" 
+                                                                                   data-price-usd="{$_item.price}" data-period="{$_item.period}" name="optionsRadios" id="optionsRadios{$_item.id}3" 
+                                                                                   value="{$_item.id}" type="radio" 
+                                                                                   {if $_item.period == '12'} checked="checked" {/if} />
+                                                                            <span class="sp">
+                                                                                <strong>
+                                                                                    {$_item.period}
+                                                                                </strong> {if $_item.period == 1}month{else}months{/if}
+                                                                            </span>
+                                                                            
+                                                                            <div class="box-small-package">    
+                                                                                {if $_item.period > 3}<span class="small_package i-price-plans-small-basic"></span>{/if} 
+                                                                            </div>     
+                                                                                
+                                                                            <span class="sp_price">
+                                                                                <strong>
+                                                                                    <div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr">{$_item.price}</div></div>
+                                                                                </strong>
+                                                                            </span>    
+                                                                        </label>
+                                                                    </li>
+                                                                    {/foreach}
+                                                                </ul>
+                                                                <button class="btn btn-default ga-action-submit" 
+                                                                        ga-action ="click"
+                                                                        ga-category="iphone-with-jailbreak-monitoring"
+                                                                        ga-label="buy basic"
+                                                                        value="true" type="submit" name="price[submit]">Buy Now</button>
+                                                                <!-- <div class="show_basic_features"><a href="#">Show Basic features</a>
+                                                                </div> -->
+                                                            </form>
+                                                        </div>
+                                                    </div>
+
+
+                                                </div>
+                                                <div class="premium_wr row-pricing-panel">
+                                                    <div class="premium_h">
+                                                        Premium
+                                                    </div>
+                                                    <div class="pricep">
+                                                        <div class="dtable">
+                                                            <div class="dtable-cell">
+                                                                <div class="wr_pack">
+                                                                    <img src="{$img}/premium_pack.png">
+                                                                </div>
+                                                            </div>
+                                                            <div class="dtable-cell">
+                                                                <div class="wr_price_big">
+                                                                    <span></span>
+                                                                    <div class="box-currence">
+                                                                        <div class="symbol" attr-iso="usd">$</div>
+                                                                        <div class="curr" id="premium-price-bottom-per-month">6.99{*14.66*}</div>
+                                                                    </div><span>/ month</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                                
+                                                        <div id="list-plans-premium-package" class="box-plans-package">
+                                                           <section> 
+
+                                                            <div class="list-plans box-table">
+                                                                <div class="table-rows">
+                                                                    <div class="item-plan table-column col-xs-sm-6 col-sm-6 col-md-6 col-lg-6 vertical-aligh-middle">
+                                                                        <i class="i-price-plans-big-premium"></i>
+                                                                    </div>
+                                                                    <div class="item-plan table-column col-xs-sm-6 col-sm-6 col-md-6 col-lg-6">
+                                                                        <p>Buy <strong class="text-red">6</strong> or <strong class="text-red">12</strong> month plan 
+                                                                           and <strong class="text-red">get 2 plans for free</strong></p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>  
+
+                                                           </section>        
+                                                        </div>        
+                                                                
+                                                        <div class="list_price">
+                                                            <form name="price_premium_bottom" method="POST" action="/buy.html" autocomplete="off">
+                                                                <input id='product_price_premium' type='hidden' name='price[productID]' value='0' class="product_price" />
+
+                                                                <ul>
+                                                                    {foreach from=$getProducts.premium key=key item=_item}
+                                                                    <li class="">
+                                                                        <label class="label_radio hover_label_radio r_off">
+                                                                            <input class="data-price" data-target="#premium-price-bottom-per-month" data-cur="usd" 
+                                                                                   data-price-usd="{$_item.price}" data-period="{$_item.period}" name="optionsRadios" id="optionsRadios{$_item.id}4" 
+                                                                                   value="{$_item.id}" type="radio" {if $_item.period == '12'} checked="checked" {/if} />
+                                                                            <span class="sp">
+                                                                                <strong>
+                                                                                    {$_item.period}
+                                                                                </strong> {if $_item.period == 1}month{else}months{/if}
+                                                                            </span>
+                                                                            
+                                                                            <div class="box-small-package">    
+                                                                                {if $_item.period > 3}<span class="small_package i-price-plans-small-premium"></span>{/if} 
+                                                                            </div>    
+                                                                                
+                                                                            <span class="sp_price">
+                                                                                <strong>
+                                                                                    <div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr">{$_item.price}</div></div>
+                                                                                </strong>
+                                                                            </span>   
+                                                                        </label>
+                                                                    </li>
+                                                                    {/foreach}
+                                                                </ul>
+                                                                <button class="btn btn-default ga-action-submit"
+                                                                        ga-action ="click"
+                                                                        ga-category="iphone-with-jailbreak-monitoring"
+                                                                        ga-label="buy premium"
+                                                                        value="true" type="submit" name="price[submit]">Buy Now</button>
+                                                                <!-- <div class="show_premium_features"><a href="#">Show Premium features</a>
+                                                                </div> -->
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="refund_10 refund_bg">
+                                                    <div class="wr_refund text-transform-none">
+                                                        <div class="day10">10-DAY 
+                                                            <span class="d_green">Refund Policy</span>
+                                                        </div>
+                                                        <div class="fulfill-link">
+                                                            <span class="store-full-link"><a href="http://pumpic.com/policy.html#refund-policy">if you fulfill these rules <i class="icon-angle-double-right"></i></a></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </th>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                <div class="table_header text-center">
+                                                  <span class='none-uppercase'>Payment methods:</span>
+
+                                                  <i class="ico-cart-visa"></i>
+                                                  <i class="ico-cart-mcart"></i>
+                                                  <i class="ico-cart-maestro"></i>
+                                                  <i class="ico-cart-aexpress"></i>
+                                                  <i class="ico-cart-descover-new"></i>
+                                                  <i class="ico-cart-paypal-new"></i>
+                                                </div>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                </table>
+
+                                <script type="text/javascript">
+                                function roundUsing(func, number, prec) {
+                                    var tempnumber = number * Math.pow(10, prec);
+                                    tempnumber = func(tempnumber);
+                                    return tempnumber / Math.pow(10, prec);
+                                }
+                                var symbols = { usd: '$', eur: '€', gbp: '£', cad: '$', aud: '$' };
+                                $('input[data-target="#basic-price-per-month"], input[data-target="#premium-price-per-month"], input[data-target="#basic-price-bottom-per-month"], input[data-target="#premium-price-bottom-per-month"]').change(function() {
+
+                                    var currentValue = $(this).attr('data-price-' + $(this).attr('data-cur')) / Number($(this).attr('data-period'));
+
+                                    // currentValue = roundUsing(Math.round, currentValue, 2);
+                                    currentValue = (Math.floor(currentValue * 100) / 100).toFixed(2);
+                                    
+                                    $($(this).attr('data-target'))
+                                        .html(currentValue)
+                                        .prev('div.symbol')
+                                        .html(symbols[$(this).attr('data-cur')] ? symbols[$(this).attr('data-cur')] : '');
+                                });
+                                </script>
+                                
+                                <div class="space_line"> </div>
+                                <div class="link_circle_italic2">
+                                    <div class="style-links2">
+                                        <span class="circle_ico2"></span>You need to have physical access to the target device or iCloud password to install the application.
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- block upgrade include-->
+        </div>
+        <!-- END -->
+        
         <!-- TESTIMONIALS -->
         <div class="dark">
             <div class="container">
                 <h2 class="text-center testimonial-title">Trusted by Over 10 000 Customers Worldwide:</h2>
                 <div class="row">
                     <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
-                        <img src="{$img}/testimonials/t_new_19.png" alt="" class="testimonial-photo">
+                        <img src="{$img}/testimonials/testimonials_new_47.png" alt="" class="testimonial-photo">
                         <div class="testimonial-text">
-                            <h4>Joan L. (Omaha, NE)</h4>
-                            <p>“The app helps me control my children, while I’m at work. I have to work overtime to support my family, that’s why my kids are on their own more often than not. With Pumpic, I’m sure they are safe. I know that wherever my kids go and whatever they do, they take their cells with them. So, I can track them, find out who calls or writes them, how much time they spend online and for which purposes. I suppose it is one of the most useful apps I’ve ever used.”</p>
+                            <h4>Merion S. – cares of 78-y.o. mother</h4>
+                            <p>“I’ve read a lot and watched many videos about elderly people who went out for a walk and never come back. My mother is 78 and I’m really afraid that something like that might happen to her. I made a research and found out of monitoring applications. They don’t require any additional devices and can be installed on a mobile phone. With Pumpic, I can set special areas and receive messages, when my mom leaves them. Thanks!”</p>
                         </div>
                     </div>
                     <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
-                        <img src="{$img}/testimonials/email_monitoring_software/testimonials4.png" alt="" class="testimonial-photo">
+                        <img src="{$img}/testimonials/testimonials_new_48.png" alt="" class="testimonial-photo">
                         <div class="testimonial-text">
-                            <h4>Steven R. (Fresno, CA)</h4>
-                            <p>“After a few days that I started to spy on email my son uses, I found that he receives too many spam letters from websites, which seemed strange to me. I opened some of them and realized that he was signed up for 18+ web sources, and that’s why they sent him advertisements. We had a serious talk and both agreed he should stop and sign out. I will keep an eye on him. Thanks Pumpic.”</p>
+                            <h4>Sam Y. – cares of 69-y.o. father</h4>
+                            <p>“There are too many scammers who cash in on aged people. My father was cheated by one of them. A man called on his cell from an unknown number and said that my father had won a new TV, but that man needed money to deliver the prize. My father transferred him money and was very upset, as he received no feedback. I searched for a kind of mobile antifraud and came across Pumpic. In addition to calls blocking, it has a huge list of other helpful functions.”</p>
                         </div>
                     </div>
                     <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
-                        <img src="{$img}/testimonials/t_new_2.png" alt="" class="testimonial-photo">
+                        <img src="{$img}/testimonials/testimonials_new_49.png" alt="" class="testimonial-photo">
                         <div class="testimonial-text">
-                            <h4>Melinda J. (St. Louis, MO)</h4>
-                            <p>“I decided to install Android smartphone monitoring on my son’s cell since he started acting weird. He became very shy and scary. I tried to talk to him, but he said everything was fine. Pumpic helped me find out that my son was bullied by his schoolmates. They sent him messages with threats and posted offensive pictures online. I went to school, talked to teachers and parents of the offenders. I’m happy that we found the way out. Finally, my son and I can sleep without worries.”</p>
+                            <h4>Clara K. – raises 13-y.o. son</h4>
+                            <p>“I use Pumpic for several months to look after my kid remotely from work. The app shows great results and really helps me. I can easily find out who calls my son and prevent him from contacts with strangers. I can also see where he is at each particular period of time and check places he visits during a day. It’s very easy to do as every time my son leaves home, I receive a notification and know at once that he is going to go somewhere. For me the app works better than a babysitter.”</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <!-- END -->
+        
+        {*include file='../includes/content/how-get-pumpic.tpl' 
+             blockBg="light"
+        *} 
         
         {* include file='../includes/main/main-testimonials.tpl' 
             blockBg="dark"
@@ -132,7 +383,7 @@
         *}
         {*{include file='../includes/content/banners/banner-promo-trial.tpl'}*}
         
-        {include file='../includes/content/banners/index.tpl'}
+        {*include file='../includes/content/banners/index.tpl'*}
         <!-- END CONTENT -->    
         
         <!-- RECOMMENDED -->

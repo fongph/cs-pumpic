@@ -1439,12 +1439,92 @@
     margin-bottom: 40px;
 }
 
-.box-teenagers .btn-red {
+.box-teenagers .btn-red,
+.box-teenagers .btn-orange {
+    font-weight: 300;
+    line-height: 18px !important;
     margin-top: 23px;
-    font-size: 24px;
+    font-size: 24px !important;
     padding: 17px 23px;
+}
+
+@media only screen and (max-width: 480px) {
+    .box-teenagers .btn-red,
+    .box-teenagers .btn-orange {
+        font-size: 18px !important;
+        font-weight: 300;
+        line-height: 18px !important;
+        min-height: 32px;
+        min-width: 110px;
+        padding: 9px 15px;
+        text-align: center;
+    }
+}
+@media (min-width: 480px) {
+    .box-teenagers .btn-red,
+    .box-teenagers .btn-orange {
+        font-size: 18px !important;
+        font-weight: 300;
+        line-height: 18px !important;
+        min-height: 32px;
+        min-width: 110px;
+        padding: 9px 15px;
+        text-align: center;
+    }
+}
+
+@media (min-width: 770px) {
+   .box-teenagers .btn-red,
+    .box-teenagers .btn-orange {
+        font-weight: 300;
+        line-height: 18px !important;
+        margin-top: 23px;
+        font-size: 24px !important;
+        padding: 17px 23px;
+    }
+}    
+
+@media (min-width: 992px) { 
+    .box-teenagers .btn-red,
+    .box-teenagers .btn-orange {
+        font-weight: 300;
+        line-height: 18px !important;
+        margin-top: 23px;
+        font-size: 24px !important;
+        padding: 17px 23px;
+    }
+}
+     
+@media (min-width: 1200px) {
+    .box-teenagers .btn-red,
+    .box-teenagers .btn-orange {
+        font-weight: 300;
+        line-height: 18px !important;
+        margin-top: 23px;
+        font-size: 24px !important;
+        padding: 17px 23px;
+    }
 }
 
 .pc2 #promo-item.promo-title div {
     font-size: 32px;
+}
+.box-teenagers .aging-parent-protection-app .item-teenager > h1 {
+    color: #4d4f5b;
+    font-size: 25px;
+    font-weight: 400;
+     margin-bottom: 0px;
+}
+.box-teenagers .aging-parent-protection-app h2.t-title {
+    margin-bottom: 15px;
+}
+.box-teenagers .aging-parent-protection-app div.desc {
+    font-size: 15px;
+    line-height: 1.1;
+    margin-bottom: 24px;
+    color: #5b5d67;
+}
+.box-teenagers .aging-parent-protection-app div.desc > .bottom {
+    bottom: -3px;
+    position: relative;
 }

@@ -58,24 +58,30 @@ $config = array(
                 'store-test.html'  => 'store-test.php',
             
                 'store.html'  => 'apps-store.php',
-                
+                'aging-parent-protection-app.html' => 'aging-parent-protection-app.php',
+                'iphone-tracking-software.html'   => 'iphone_tracking_software.php',
+                'iphone-with-jailbreak-monitoring.html' => 'iphone_with_jailbreak_monitoring.php',
+                'icloud-iphone-without-jailbreak-monitoring.html' => 'icloud_iphone_without_jailbreak_monitoring.php',
+            
                 //'pricing2.html'  => 'pricing2.php', 
                 // opening-soon-thanks.html
                 'opening-soon-thanks.html' => 'opening-soon-thanks.php',
                 // detected rtegion
                 'ipregion.html'            => 'ipregion.php',
-                'currency.html'            => 'currency.php', 
+                'currency.html'            => 'currency.php',
+            
                 'popup_email_send.html'   => 'popup_email_send.php',
+            
                 'robots.txt'            => 'robots.php',
+            
                 'compatibility/results'           => 'compatibility_search.php',
                 'compatibility/android-devices'   => 'compatibility_search.php',
                 'compatibility/ios-devices'       => 'compatibility_search.php', 
-                'iphone-tracking-software.html'   => 'iphone_tracking_software.php',
-                'iphone-with-jailbreak-monitoring.html' => 'iphone_with_jailbreak_monitoring.php',
-                'icloud-iphone-without-jailbreak-monitoring.html' => 'icloud_iphone_without_jailbreak_monitoring.php',
             
                 // security
                 'security-subscribe-form-mailChimp.html' => 'security-subscribe-form-mailChimp.php',
+            
+                'learning-center/ready-solutions'       => 'ready-solutions.php', 
 	),
     'db_phones' => array(
         'host' => '188.40.64.2',

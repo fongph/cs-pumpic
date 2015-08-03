@@ -1,5 +1,21 @@
+.row-full {
+    display: table;
+}
+.row-full > div[class*="col-"] {
+    display: inline-block;
+}
+
+.arrows_green {
+    display: inline-block;
+    background: url('/images/icons/arrows_green.png') no-repeat;
+    width: 6px;
+    height: 12px;
+}
+
 .bold { font-weight: bold; }
 .margin-null { margin: 0px; }
+
+.mt0 { margin-top: 0px; }
 
 .ml5 { margin-left: 5px; }
 .mr0 { margin-right: 0px; }

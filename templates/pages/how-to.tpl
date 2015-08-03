@@ -46,7 +46,7 @@
                                             How Pumpic Mobile Tracking App Works
                                         </h2>
 					<ul class="thumbs">
-						<div class="col-sm-12 col-md-4">
+						<div class="col-sm-12 col-md-4 clearfix">
 							<div class="thumbnail">
 								<span class="img_thumb"><img src="images/thumb_1.png" height="216" width="360" alt=""></span>
 								<div class="caption how-to-step">
@@ -55,7 +55,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-sm-12 col-md-4">
+						<div class="col-sm-12 col-md-4 clearfix">
 							<div class="thumbnail">
 								<span class="img_thumb"><img src="images/thumb_2_new.png" height="206" width="172" alt=""></span>
 								<div class="caption how-to-step">
@@ -64,7 +64,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-sm-12 col-md-4">
+						<div class="col-sm-12 col-md-4 clearfix">
 							<div class="thumbnail">
 								<span class="img_thumb"><img src="images/thumb_3_new.png" height="216" width="360" alt=""></span>
 								<div class="caption how-to-step">

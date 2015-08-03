@@ -619,7 +619,7 @@
                 <div class="row">
                     <h2>HOW TOPSPY KIDS AND EMPLOYEES TRACKING SOLUTION WORKS</h2>
                     <ul class="thumbs">
-                        <div class="col-sm-12 col-md-4">
+                        <div class="col-sm-12 col-md-4 clearfix">
                             <div class="thumbnail">
                                 <span class="img_thumb"><img src="{$img}/thumb_1.png" height="216" width="360" alt=""></span>
                                 <div class="caption">
@@ -628,7 +628,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-12 col-md-4">
+                        <div class="col-sm-12 col-md-4 clearfix">
                             <div class="thumbnail">
                                 <span class="img_thumb"><img src="{$img}/thumb_2.png" height="206" width="172" alt=""></span>
                                 <div class="caption">
@@ -637,7 +637,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-12 col-md-4">
+                        <div class="col-sm-12 col-md-4 clearfix">
                             <div class="thumbnail">
                                 <span class="img_thumb"><img src="{$img}/thumb_3.png" height="216" width="360" alt=""></span>
                                 <div class="caption">

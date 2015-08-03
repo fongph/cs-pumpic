@@ -34,7 +34,7 @@
             imgAlign = "right"
             imgVerticalAlign = "bottom"
             textAlign = "right"
-            title = "Protect Your Little Kids.<br />Parental Control Application"
+            title = "Protect Your Little Kids<br />Parental Control Application"
             description = "Secure kids from cyberbullies, kidnappers, and other abusers.<br />
             Track location. Block strange contacts. Control phone activities."
             promoBuyBlock = "no"

@@ -105,8 +105,8 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(.*)?free\-share\-buttons\.com.*$ [NC,OR
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?free\-share\-buttons\.com.*$ [NC,OR]
 #v3
 RewriteCond %{HTTP_REFERER} ^http(s)?://(.*)?floating\-share\-buttons\.com.*$ [NC,OR]
-RewriteCond %{HTTP_REFERER} ^http(s)?://(.*)?videos\-for\-your\-business\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?floating\-share\-buttons\.com.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(.*)?videos\-for\-your\-business\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?videos\-for\-your\-business\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?success\-seo\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?semaltmedia\.com.*$ [NC,OR]
@@ -143,6 +143,7 @@ RewriteRule ^features\.html$ all-features\.html [L,R=301]
 RewriteRule ^store-trial\.html$ http://pumpic.com/ [L,R=301]
 RewriteRule ^compatibility\.html$ compatibility/ [L,R=301]
 #RewriteRule ^knowledge-center\.html$ \/learning-center/ [L,R=301]
+RewriteRule ^learning-center/ready\-solutions\.html$ learning-center/ready\-solutions/ [L,R=301]
 
 RewriteCond %{REQUEST_URI} !\?
 RewriteCond %{REQUEST_URI} !\&

@@ -38,7 +38,7 @@
                                 <section>
                                     <span class="img"><img src="{$img}/icons/icon-knowledge-3.png" alt=""></span>
                                     <label class="knowledge-title text-center">Ready Solutions</label>
-                                    <p class="text-center">Learn how Pumpic can help you <a href="#">protect your children</a> in Mobile era.</p>
+                                    <p class="text-center">Learn how Pumpic can help you <a href="http://{$domain}/learning-center/ready-solutions/">protect your children</a> in Mobile era.</p>
                                 </section>
                             </td>
                             <td class="col-sm-5 col-md-5 col-lg-6 table-item-col">

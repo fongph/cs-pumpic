@@ -1,5 +1,3 @@
-{*closeAccess*}
-
 {include file='../includes/main/main-header.tpl'
     robots="yes" 
     title="Aging Parent Protection App"
@@ -65,7 +63,7 @@
 
         {include file='../includes/content/features-table.tpl' 
                 blockBg="light"
-                description="Pumpic is a unique mobile monitoring application designed to keep your family safe and secured. The app comprises many useful tracking features that allow remote eldercare and parenting. It will help you protect your aging parents and unsure their welfare. Pumpic is available for Android and iOS phones and tablets, and includes jailbreak-free iCloud monitoring solution."
+                description="Pumpic is a unique mobile monitoring application designed to keep your family safe and secured.The app comprises many useful tracking features that allow taking care of your elderly parents remotely. It will help you protect your aging parents and ensure their welfare. Pumpic is available for Android and iOS phones & tablets, and includes jailbreak-free iCloud monitoring solution."
         }     
 
         {*include file='../includes/content/ipad.tpl' 

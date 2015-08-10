@@ -1,24 +1,24 @@
-<h4 class="text-success text-center">Choose your category:</h4>
+{*<h4 class="text-success text-center">Choose your category:</h4>*}
 <ul class="list_category">
-        <li>
-                <a data-toggled="off" href="#all">All</a>
-        </li>
-        <li>
-                <a data-toggled="off" href="#what-is-pumpic-app">What Is Pumpic App</a>
-        </li>
-        <li>
-                <a data-toggled="off" href="#start">Start</a>
-        </li>
-        <li> 
-                <a data-toggled="off" href="#install">Install</a>
-        </li>
-        <li>
-                <a data-toggled="off" href="#compatibility">Compatibility</a>
-        </li>
-        <li>
-                <a data-toggled="off" href="#billing">Billing</a>
-        </li>
-        <li>
-                <a data-toggled="off" href="#other">Other</a>
-        </li>
+    <li class="active">
+        <a data-toggled="on" href="#common">Common</a>
+    </li>
+    <li>
+        <a data-toggled="off" href="#sexting">Sexting</a>
+    </li>
+    <li>
+        <a data-toggled="off" href="#drug">Drug</a>
+    </li>
+    <li>
+        <a data-toggled="off" href="#dating">Dating</a>
+    </li>
+    <li>
+        <a data-toggled="off" href="#technical">Technical</a>
+    </li>
+    <li>
+        <a data-toggled="off" href="#apps_ims">Apps & IMs</a>
+    </li>
+    <li>
+        <a data-toggled="off" href="#emojis">Emojis</a>
+    </li>
 </ul>

@@ -20,6 +20,7 @@ ga('linker:autoLink', ['pumpic.com','fastspring.com','demo.pumpic.com','cp.pumpi
 ga('send', 'pageview');
 </script>
 
+<?php /*
 <!-- GOOGLE GA.JS --> 
 <script type="text/javascript">
 var _gaq = _gaq || [];
@@ -34,3 +35,4 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ig
 
 </script>
 <!-- END GA.JS -->
+*/ ?>

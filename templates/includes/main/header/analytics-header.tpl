@@ -25,7 +25,9 @@ ga('linker:autoLink', ['pumpic.com','fastspring.com','demo.pumpic.com','cp.pumpi
 ga('send', 'pageview');
 </script>
 
-<!-- GOOGLE GA.JS --> 
+{/literal}
+
+{*<!-- GOOGLE GA.JS --> 
 <script type="text/javascript">
 var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-56492507-1']);
@@ -38,6 +40,4 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ig
 })();
 
 </script>
-<!-- END GA.JS -->
-
-{/literal}
+<!-- END GA.JS -->*}

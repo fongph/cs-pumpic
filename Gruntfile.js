@@ -33,6 +33,7 @@ module.exports = function (grunt) {
                     //'./assets/js/wp/settings.js',
                     //'./assets/js/wp/init.js',
                     './assets/js/youtube/bootstrap.youtubepopup.js',
+                    // './assets/js/sticky/jquery.autofix_anything.js',
                 ],
                 dest: './public/javascripts/frontend.js'
             },
@@ -80,6 +81,7 @@ module.exports = function (grunt) {
                     './assets/css/compatibility.css', 
                     './assets/css/404.css',
                     './assets/css/video.css',
+                    // './assets/css/sticky/autofix_anything.css',
                 ], 
                 dest: './public/stylesheets/frontend.css'
             },

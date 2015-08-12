@@ -1,17 +1,18 @@
+{closeAccess}
 {strip}
 
-{include file='../includes/main/main-header.tpl'
-    title="Frequently asked questions about Pumpic"
-    description="Pumpic is easy-to-use and user-friendly Cell Phone Tracking App. Learn our FAQ section to find answers to all Pumpic related issues. You can also send your questions to us."
+{include file='../../includes/main/main-header.tpl'
+    title="Pumpic Learning Center: Glossary of Internet Terms"
+    description="Learn more about online slang words, acronyms, and abbreviations that teenagers use. Stay up-to-date to better understand your children and protect them on the web."
 }
 
 <body>
     <!-- FLY BLOCKS -->
-    {include file='../includes/content/fly/fly_blocks.tpl'}
+    {include file='../../includes/content/fly/fly_blocks.tpl'}
     <!-- END FLY BLOCKS-->
     
-	<div id="tmp-faq" class="wrapper">
-	{include file='../includes/main/main-top-menu.tpl' 
+	<div id="tmp-git" class="wrapper">
+	{include file='../../includes/main/main-top-menu.tpl' 
                 topmenu_active='faq'
                 cache_id = "includes_main_main-top-menu"
                 nocache
@@ -21,390 +22,643 @@
             Переменные:
                 style (text): стиль блока Phone (blue|black). * - blue 
         *}
-        {include file='../includes/content/phone/block-phone.tpl'
+        
+        
+        
+        {*include file='../../includes/content/phone/blog-phone-sticky.tpl'
                  style="black"   
-        }
-		<divv class="very_easy">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-10 col-lg-offset-1">
+        *}
+        
+        
+        
+        <divv class="very_easy {*position-relative*}">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10 col-lg-offset-1">
+
+                        <div id="block-top" class="position-relative">
+                        
+                            <!-- breadcrumbs -->
+                            <div class="box-breadcrumbs left">
+                                <div class="{*container*}">
+                                    <ul id="breadcrumbs">
+                                        <li><a class="color-green" href="http://{$domain}/learning-center/">Learning Center</a><span class="arrows icon-right-open"></span>{*<span class="arrows_green"></span>*}</li>
+                                        <li><span>Glossary of Internet Terms</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- END -->
+
+                            {include file='../../includes/content/phone/blog-phone-sticky-in-blocks.tpl'
+                                     position="right"   
+                            }
+                        </div>
+                        
+                        <!-- ContactUs -->
+                        <div class="row text-center">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <h2>Glossary of Internet Terms</h2>
+                                <p class="text-justify">If you look through your kids’ messages, you will hardly understand what most of them are about. You will surely find many abbreviations, unfinished words, phrases, and sentences, as well as acronyms and slang words there.</p> 
+                                <p class="text-justify">On one hand, children try to simplify their text conversations, make them shorter, and waste less time on typing, tapping, and recalling how all these words are spelled. Moreover, there are a few of them, who knows and pays attention to spelling as such.</p>
+                                <p class="text-justify">On the other hand, kids tend to make their messaging more secret and hide its actual meaning. Especially, when it comes to parents, who can read these messages, disclose hidden intentions, and ultimately forbid them. </p>
+                                <p class="text-justify">
+                                    That’s why many children resort to cunning and use words that parents are not supposed to understand. And that’s why you as a parent should learn and know what all these words mean.
+                                </p>
+                            </div>
+                        </div>
+
+
+                        <!-- End -->
+
+                        <div id="block-git" class="row">
+                            <div class="col-lg-12">
+                                <div class="tab_category">
+                                    {include file='../../includes/content/learning-center/glossary-internet-terms-category.tpl'}
+                                    <div class="box_category">
+                                        <ul>
                                             
-                                            <!-- ContactUs -->
-                                            <div class="row text-center">
-						<h2>Contact Us</h2>
-						<p class="text-justify">We are a team of talented designers and developers, who joined forces to introduce unique and user-friendly smartphone monitoring solutions. Pumpic app was created to help parents take care of their children and protect them by means of remote mobile tracking. The application runs on iOS and Android devices only.</p> 
-                                                <p class="text-justify">If you have any questions or suggestions, which will help improve our services, please feel free to contact us using the form below or via email.</p>
-						<p>
-                                                    <a class="link_bordered">
-                                                        <strong>Customer Support Team</strong> – <span id="emai-support-v2"></span>
-                                                    </a><br />
-                                                    <a class="link_bordered">
-                                                        <strong>Billing Department</strong> – <span id="emai-billing"></span> {*billing@pumpic.com*}
-                                                    </a> 
-                                                    <br />
-                                                    <a class="link_bordered">
-                                                        <strong>Press and Media</strong> – <span id="emai-info"></span> {*info@pumpic.com*}
-                                                    </a>
-                                                    {include file='../includes/content/phone/block-phone-content.tpl'}
-						</p>
-                                            </div>
-                                            
-                                            <div class="row">
-                                                <div class="form">
-                                                    {include file='../includes/main/form/main-faq-contact-us.tpl'
-                                                        cache_id = "main-faq-contact-us"
-                                                    nocache} 
+                                            <!-- #common -->
+                                            <li>
+                                                <div id="common">
+                                                    
+                                                    <h2 class="title color-green text-left bold">Common Slang Terms</h2>
+                                                    <p class="text-justify {*font-light*}">Below is the list of the most popular terms and abbreviations teenagers use while chatting online or writing text messages. Have a look and try to keep them in mind to know whether your kid is hiding something from you.</p>
+                                                    <div class="row block-content background-width">    
+                                                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                                                            <ul class="list_orange_circle">
+                                                                <li>4Q – F*** You</li>   
+                                                                <li>143 / 459 – I Love You</li>
+                                                                <li>1432 – I Love You Too</li>
+                                                                <li>182 – I Hate You</li>
+                                                                <li>ASL (R/P) – Age Sex Location (Race / Picture)</li>
+                                                                <li>ADR – Address</li>
+                                                                <li>BF/GF – Boyfriend / Girlfriend</li>
+                                                                <li>BRB – Be Right Back</li>
+                                                                <li>Broken – Alcohol Hungover</li>
+                                                                <li>C-P – Sleepy</li>
+                                                                <li>CD9 – Code 9 – means Parents Are Around</li>
+                                                                <li>CMB – Call Me Back</li>
+                                                                <li>CUNS – See You in School</li>
+                                                                <li>DIY – Do It Yourself</li>
+                                                                <li>DOC - Drug of Choice</li>
+                                                                <li>FAQ – Frequently Asked Questions</li>
+                                                                <li>FYI – For Your Information</li>
+                                                                <li>F2F – Face-to-Face, face time</li>
+                                                                <li>FOAF – Friend of a Friend</li>
+                                                                <li>FML – F*ck My Life</li>
+                                                                <li>GNOC – Get Naked on Cam (webcam)</li>
+                                                                <li>GTG – Got to Go</li>
+                                                                <li>HAK – Hugs and Kisses</li>
+                                                                <li>HMU – Hit Me Up</li>
+                                                                <li>IDK – I Do Not Know</li>
+                                                                <li>IDC – I Don’t Care</li>
+                                                                <li>ITA/D – I Totally Agree/Disagree</li>
+                                                                <li>J/K – Just Kidding</li>
+                                                                <li>KK – Okay</li>
+                                                                <li>KOTL – Kiss on the Lips</li>
+                                                                <li>KFY / K4Y – Kiss For You</li>
+                                                                <li>KPC – Keeping Parents Clueless</li>
+                                                                <li>KWIM – Know what I mean?</li>
+                                                                <li>(L)MIRL – (Lets) meet in real life</li>
+                                                                <li>LOL – Laugh Out Loud / Lots of Laugh</li>
+                                                                <li>L&R – Love and respect</li>
+                                                                <li>LHS – Let's Have Sex</li>
+                                                                <li>LMIRL – Let's Meet In Real Life</li>
+                                                                <li>mmk – Mmm…okay</li>
+                                                                <li>MorF – Male or Female</li>
+                                                                <li>MOS – Mom over Shoulder</li>
+                                                                <li>MYT – Meet You There</li>
+                                                                <li>NSFW – Not Safe for Work</li>
+                                                                <li>NSFL – Not Safe for Life</li>
+                                                                <li>NGH – Not Gonna Happen</li>
+                                                                <li>NMP – Not My Problem</li>
+                                                                <li>NBD – No Big Deal</li>
+                                                                <li>NAGI – Not A Good Idea</li>
+                                                                <li>NIFOC – Naked in Front of Computer</li>
+                                                                <li>Noob – Newbie - often an refers to someone who doesn't know a lot about something</li>
+                                                                <li>NMU – Not much, you?</li>
+                                                                <li>P911 / 911 – Parent Emergency</li>
+                                                                <li>PAW – Parents are watching</li>
+                                                                <li>PITA – Pain in the A*s</li>
+                                                                <li>PIR – Parent in Room</li>
+                                                                <li>P&C – Private and Confidential</li>
+                                                                <li>POS – Parent over Shoulder</li>
+                                                                <li>PRON – Porn</li>
+                                                                <li>PRW – Parents Are Watching</li>
+                                                                <li>PAL – Parents Are Listening / Peace and Love</li>
+                                                                <li>SOL – Sh** Out of Luck</li>
+                                                                <li>S2R – Send To Receive (pictures)</li>
+                                                                <li>TDTM – Talk Dirty To Me</li>
+                                                                <li>TWD – Texting While Driving</li>
+                                                                <li>W/E – Whatever</li>
+                                                                <li>WTF – What the F*ck?</li>
+                                                                <li>WDYM – What Do You Mean?</li>
+                                                                <li>WRUD – What Are You Doing?</li>
+                                                                <li>WTH – What The Hell?</li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                                            <img class="git-img img-common model-center pt10" src="{$img}/learning_center/glossary-internet-terms/m_common.jpg">
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                            </div>
+                                            </li>
+                                            <!-- END -->
                                             
-                                            <!-- End -->
+                                            <!-- #sexting -->
+                                            <li>
+                                                <div id="sexting">
+                                                    
+                                                    <h2 class="title color-green text-left bold">Sexting Slang Terms</h2>
+                                                    <p class="text-justify {*font-light*}">Sexting refers to sending messages with sexual content, primarily via SMS, IM chats and online communication. Know the following list of the most widely used sexting terms to prevent your kids from online predators and other possible dangers on the web.</p>
+                                                    <div class="row block-content background-width">    
+                                                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                                                            <ul class="list_orange_circle">
+                                                                <li>8 – Oral Sex</li>
+                                                                <li>53X – Sex</li>
+                                                                <li>1174 – Nude Club / Party Meet-Up</li>
+                                                                <li>ASLP – Age, Sex, Location, and a Picture Request</li>
+                                                                <li>cu46 – See You for Sex</li>
+                                                                <li>DUM – Do You Masturbate?</li>
+                                                                <li>GNOC – Get Naked On Cam</li>
+                                                                <li>GYPO – Get Your Pants Off</li>
+                                                                <li>GNRN – Get Naked Right Now</li>
+                                                                <li>GTFO – Get the F* Out</li>
+                                                                <li>FMH – F*ck Me Harder</li>
+                                                                <li>IWS – I Want Sex</li>
+                                                                <li>IIT – Is It Tight?</li>
+                                                                <li>IPN – I'm posting naked</li>
+                                                                <li>IWSN – I want sex now</li>
+                                                                <li>Q2C – Quick to Come</li>
+                                                                <li>RUH – Are You Horny?</li>
+                                                                <li>TDTM – Talk Dirty To Me</li>
+                                                                <li>S2R – Send To Receive</li>
+                                                                <li>LH6 – Let's Have Sex</li>
+                                                                <li>MEGO – My Eyes are Glazing Over</li>
+                                                                <li>MOOS – Member of the Opposite Sex</li>
+                                                                <li>MOSS – Member(s) Of the Same Sex</li>
+                                                                <li>MorF – Male or Female</li>
+                                                                <li>MPFB - My Personal F*** Buddy</li>
+                                                                <li>NIFOC – Naked In Front Of Computer</li>
+                                                                <li>SorG – Straight or Gay?</li>
+                                                                <li>Sugarpic – Sexy picture</li>
+                                                                <li>JO – Jerk Off</li>
+                                                                <li>PAW – Parents Are Watching</li>
+                                                                <li>PIR – Parent in Room</li>
+                                                                <li>POS – Parent over Shoulder</li>
+                                                                <li>RU/18 – Are You Over 18?</li>
+                                                                <li>THOT – Slamming a girl, as in "that hoe over there"</li>
+                                                                <li>YWS – You Want Sex</li>
+                                                                <li>WYCM – Will You Call Me?</li>
+                                                                <li>RU18 – Are You 18?</li>
+                                                                <li>CD9 / Code 9 – Parent / Adult around</li>
+                                                                <li>CD99 / Code 99 – Parents Are Gone</li>
+                                                                <li>NALOPKT – Not A Lot of People Know This</li>
+                                                                <li>WUF – Where You From</li>
+                                                                <li>WTTP – Want to trade pics?</li>
+                                                                <li>WYRN – What's Your Real Name?</li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                                            <img class="git-img img-sexting model-center pt10" src="{$img}/learning_center/glossary-internet-terms/m_sexting.jpg">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <!-- END -->
                                             
-						<div class="row">
-							<div class="col-lg-12">
-                                                                <h2 id="faq_frequently_asked_questions">Frequently Asked Questions</h2>
-								<div class="tab_category">
-									{include file='../includes/content/faq-category.tpl'}
-									<div class="box_category">
-										<ul>
-                                                                                        <!-- #what-is-pumpic-app -->
-											<li>
-												<a id="what-is-pumpic-app" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse1">What is Pumpic?</a>
-												<div id="collapse1" class="collapse">
-													<p>Pumpic is a feature-rich parental control application designed to monitor your kids’ smartphone and tablet activities such as text messages, phone calls, GPS location, web browsing history, contacts, calendar scheduled events, social media etc.</p>
-												</div>
-											</li>
-											<li>
-												<a id="what-is-pumpic-app" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse2">Is it legal to use Pumpic?</a>
-												<div id="collapse2" class="collapse">
-													<p>It is legal to install and use Pumpic only on devices you own personally or that belong to your underage children. Pumpic does not condone the use of its software for any illegal purposes including but not limited to tracking people’s cell phones without their notice or permission.</p>
-												</div>
-											</li>
-											<li>
-												<a id="what-is-pumpic-app" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse3">Is Pumpic parental monitoring stealth? Can the app be detected on the target device?</a>
-												<div id="collapse3" class="collapse">
-                                                                                                    <p>Pumpic is a visible application, which means that its icon can be detected on the screen of the target device and viewed by a user. In addition, there are alerts, notifications, and badges that trace the operation of the app.</p>
-                                                                                                    <p>However, if you choose <a class="text-link a-default" href="http://{$domain}/icloud-iphone-without-jailbreak-monitoring.html">iCloud solution</a> for iOS device surveillance, you will not need to install the app on the target device, and thus, Pumpic will remain undetected. The operation of the app is invisible in this case as well.</p>
-                                                                                                        <p>
-                                                                                                            <div class="box-faq-images">
-                                                                                                                <div class="faq-img">
-                                                                                                                    <img src="{$img}/faq/visible-ios.png" {*width="270px" height="479px"*} />
-                                                                                                                    <p><i>The app is visible on the screen of jailbroken iOS devices</i></p>
-                                                                                                                </div>
-                                                                                                                <div class="faq-img">
-                                                                                                                    <img src="{$img}/faq/arrow_right-form.png" {*width="270px" height="480px"*} />
-                                                                                                                    <p><i>The app is visible on the screen of Android devices</i></p>
-                                                                                                                </div>
-                                                                                                            </div>
-                                                                                                        </p>
-                                                                                                </div>
-											</li>
+                                            <!-- #drug -->
+                                            <li>
+                                                <div id="drug">
+                                                    
+                                                    <h2 class="title color-green text-left bold">Drug Slang Terms</h2>
+                                                    <p class="text-justify {*font-light*}">Below is the list of the most popular illicit drugs and their street names. Keep them in mind and check if your kids use any of them. If they do, consider that they are a footstep from possible danger. Prevent your children from using drugs before it’s tool late.</p>
+                                                    <div class="row block-content background-width">    
+                                                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                                                            <ul class="list_orange_circle">
+                                                                <li>
+                                                                    <label>Cocaine</label>
+                                                                    <p>Blow, C, candy, coke, do a line, freeze, girl, happy dust, Mama coca, mojo, monster, nose, pimp, shot, smoking gun, snow, sugar, sweet stuff, and white powder.</p>
+                                                                </li>
+                                                                <li>
+                                                                    <label>Crack (a form of cocaine, smokeable)</label>
+                                                                    <p>Base, beat, blast, casper, chalk, devil drug, gravel, hardball, hell, kryptonite, love, moonrocks, rock, scrabble, stones and tornado.</p>
+                                                                </li>
+                                                                <li>
+                                                                    <label>Depressants</label>
+                                                                    <p>Backwards, blue heavens, downie, drowsy high, green dragons, idiot pills, joy juice, M&M, no worries, peanut, rainbows, red bullets, stoppers, stumbler, tooles and yellow.</p>
+                                                                </li>
+                                                                <li>
+                                                                    <label>Fentanyl</label>
+                                                                    <p>Apache, China girl, China town, dance fever, friend, goodfellas, great bear, he-man, jackpot, king ivory, murder 8, poison, tango and cash and TNT.</p>
+                                                                </li>
+                                                                <li>
+                                                                    <label>GHB (Gamma-hydroxybutyric acid)</label>
+                                                                    <p>Caps, cherry meth, ever clear, easy lay, fantasy, G, G-riffic, gamma hydrate, Georgia home boy, grievous bodily harm, liquid ecstasy, liquid X, soap and sodium oxybate.</p>
+                                                                </li>
+                                                                <li>
+                                                                    <label>Heroin</label>
+                                                                    <p>Aunt Hazel, big H, black pearl, brown sugar, capital H, charley, china white, dope, good horse, H, hard stuff, hero, heroina, little boy, mud, perfect high, smack, stuff and tar.</p>
+                                                                </li>
+                                                                <li>
+                                                                    <label>Inhalants</label>
+                                                                    <p>Air blast, bolt, boppers, bullet bolt, climax, discorama, hardware, heart-on, highball, honey oil, huff, laughing gas, medusa, moon gas, satan’s secret, thrust and whiteout.</p>
+                                                                </li>
+                                                                <li>
+                                                                    <label>Ketamine</label>
+                                                                    <p>Bump, cat killer, cat valium, fort dodge, green, honey oil, jet, K, ket, kit kat, psychedelic heroin, purple, special “K”, special la coke, super acid, super C and vitamin K.</p>
+                                                                </li>
+                                                                <li>
+                                                                    <label>LSD (Lysergic acid diethylamide)</label>
+                                                                    <p>A, Acid, black star, blotter, boomers, cubes, Elvis, golden dragon, L, microdot, paper acid, pink robots, superman, twenty-five, yellow sunshine and ying yang.</p>
+                                                                </li>
+                                                                <li>
+                                                                    <label>Marijuana</label>
+                                                                    <p>420, Aunt Mary, baby, bobby, boom, chira, chronic, ditch, ganja, grass, greens, hash, herb, Mary Jane, nigra, Pot, reefer, rip, root, skunk, stack, torch, weed and zambi.</p>
+                                                                </li>
+                                                                <li>
+                                                                    <label>MDMA (Methylenedioxy-methamphetamine)</label>
+                                                                    <p>Adam, bean, blue kisses, clarity, club drug, disco biscuits, E, ecstasy, hug drug, love drug, lover’s speed, Mercedes, Molly, New Yorkers, peace, roll, white dove, X and XTC.</p>
+                                                                </li>
+                                                                <li>
+                                                                    <label>Mescaline</label>
+                                                                    <p>Beans, buttons, cactus, cactus buttons, cactus head, chief, love trip, mesc, mescal, mezc, moon, peyote and topi.</p>
+                                                                </li>
+                                                                <li>
+                                                                    <label>Methamphetamine</label>
+                                                                    <p>Beannies, blue devils, chalk, CR, crank, crystal, crystal meth, fast, granulated orange, ice, meth, Mexican crack, pink, rock, speckled birds, speed, tina and yellow powder.</p>
+                                                                </li>
+                                                                <li>
+                                                                    <label>Methcathinone</label>
+                                                                    <p>Bathtub speed, Cadillac express, cat, crank, ephedrone, gagers, go-fast, goob, qat, slick superspeed, star, the C, tweeker, wild cat and wonder star.</p>
+                                                                </li>
+                                                                <li>
+                                                                    <label>Opium</label>
+                                                                    <p>Ah-pen-yen, aunti, big O, black stuff, Chinese tobacco, chocolate, dopium, dover’s deck, dream gun, hard stuff, hocus, joy plant, O, ope, pin yen, toxy and zero.</p>
+                                                                </li>
+                                                                <li>
+                                                                    <label>PCP (Phencyclidine)</label>
+                                                                    <p>Angel dust, belladonna, black whack, CJ, cliffhanger, crystal joint, Detroit pink, elephant tranquilizer, hog, magic, Peter Pan, sheets, soma, TAC, trank, white horizon and zoom.</p>
+                                                                </li>
+                                                                <li>
+                                                                    <label>Psilocybin/psilocin</label>
+                                                                    <p>Boomers, god’s flesh, little smoke, magic mushroom, Mexican mushrooms, mushrooms, musk, sherm, shrooms, silly putty and simple simon.</p>
+                                                                </li>
+                                                                <li>
+                                                                    <label>Ritalin</label>
+                                                                    <p>Crackers, one and ones, pharming, poor man’s heroin, R-ball, ritz an ts, set, skippy, speedball, ts and ritz, ts and rs, vitamin R and west coast.</p>
+                                                                </li>
+                                                                <li>
+                                                                    <label>Rohypnol</label>
+                                                                    <p>Circles, forget-me pill, la rocha, lunch money drug, Mexican valium, pingus, R2, Reynolds, roche, roofies, rope, ruffles and wolfies.</p>
+                                                                </li>
+                                                                <li>
+                                                                    <label>Steroids</label>
+                                                                    <p>Abolic, anadrol, arnolds, bolasterone, dihydrolone, equipose, gym candy, juice, methyl testosterone, proviron, pumpers, stackers, therobolin, weight trainers and winstrol V.</p>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                                            <img class="git-img img-drug model-center pt10" src="{$img}/learning_center/glossary-internet-terms/m_drug.jpg">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <!-- END -->
+                                            
+                                            <!-- #dating -->
+                                            <li>
+                                                <div id="dating">
+                                                    
+                                                    <h2 class="title color-green text-left bold">Online Dating Slang Terms</h2>
+                                                    <p class="text-justify {*font-light*}">Below is the list of terms commonly used in online dating. Have a look at them and keep in mind. Check if your children use any of them. Do not let strangers or online predators contact your kids with inappropriate offers. Prevent danger before it has happened.</p>
+                                                    <div class="row block-content background-width">    
+                                                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                                                            <ul class="list_orange_circle">
+                                                                <li>BBW – Big Beautiful Woman</li>
+                                                                <li>BDSM – Bondage/Discipline/Sadomasochism</li>
+                                                                <li>Bi – Bisexual</li>
+                                                                <li>C – Christian</li>
+                                                                <li>CPL – Couple</li>
+                                                                <li>D – Divorced</li>
+                                                                <li>D&D free or D/D free – Drug and disease free</li>
+                                                                <li>DTE – Down to earth</li>
+                                                                <li>F2F – Face to Face</li>
+                                                                <li>FtM – Female-To-Male Transgendered</li>
+                                                                <li>G – Gay</li>
+                                                                <li>GBM – Gay Black Male</li>
+                                                                <li>G/L/B/T or GLBT – Gay Lesbian Bisexual Transgendered</li>
+                                                                <li>GSOH – Good Sense of Humor</li>
+                                                                <li>GWM – Gay White Male</li>
+                                                                <li>H – Hispanic</li>
+                                                                <li>HNG – Horny Net Geek</li>
+                                                                <li>HWP – Height/Weight Proportionate</li>
+                                                                <li>IR – Interracial</li>
+                                                                <li>IRL – In Real Life</li>
+                                                                <li>ISO – In Search Of</li>
+                                                                <li>J – Jewish</li>
+                                                                <li>K – Kids</li>
+                                                                <li>L – Lesbian</li>
+                                                                <li>LD – Light Drinker</li>
+                                                                <li>LDR – Long Distance Relationship</li>
+                                                                <li>LS –Light Smoker</li>
+                                                                <li>M – Male</li>
+                                                                <li>MBA – Married but Available</li>
+                                                                <li>MBC – Married Black Couple</li>
+                                                                <li>MM – Marriage minded</li>
+                                                                <li>MoF – Male or female</li>
+                                                                <li>MSM – Men Seeking Men or Men Who Have Sex with Men</li>
+                                                                <li>MSW – Men Seeking Women</li>
+                                                                <li>MtF – Male-to-female Transgendered</li>
+                                                                <li>MWC – Married White Couple</li>
+                                                                <li>NBM – Never Been Married</li>
+                                                                <li>ND or N/D – Non-Drinker, No Drinking or No Drugs</li>
+                                                                <li>NK or N/K – No Kids</li>
+                                                                <li>NS or N/S – Non-Smoker</li>
+                                                                <li>P – Professional or Parent</li>
+                                                                <li>NRE – New Relationship Energy</li>
+                                                                <li>RL – Real Life, i.e. Not Online</li>
+                                                                <li>S – Single</li>
+                                                                <li>SBF – Single Black Female</li>
+                                                                <li>SBiF – Single bisexual Female</li>
+                                                                <li>SBM – Single Black Male</li>
+                                                                <li>SGL – Single</li>
+                                                                <li>SI – Similar Interests</li>
+                                                                <li>SO – Significant Other</li>
+                                                                <li>STR – Straight</li>
+                                                                <li>SWF – Single White Female</li>
+                                                                <li>SWM – Single White Male</li>
+                                                                <li>TG – Transgendered</li>
+                                                                <li>TS – Transsexual</li>
+                                                                <li>TV – Transvestite</li>
+                                                                <li>VBD – Very Bad Date</li>
+                                                                <li>W – Widowed or White</li>
+                                                                <li>w/ – With</li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                                            <img class="git-img img-dating model-center pt10" src="{$img}/learning_center/glossary-internet-terms/m_dating.jpg">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <!-- END -->
+                                            
+                                            <!-- #technical -->
+                                            <li>
+                                                <div id="technical">
+                                                    
+                                                    <h2 class="title color-green text-left bold">Technical Online Terms</h2>
+                                                    
+                                                    <div class="row block-content background-width">    
+                                                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                                                            <ul class="list_orange_circle">
+                                                                <li>
+                                                                    <b>PC</b> – personal computer.
+                                                                </li>
+                                                                <li>
+                                                                    <b>OS</b> – operating system – special software, which manages hardware or any computer, smartphone or tablet. Popular operation systems: Apple iOS (or simply iOS), Android, Blackberry, Windows.
+                                                                </li>
+                                                                <li>
+                                                                    <b>Social Media (Network)</b> – online services, which allow their users to create personal profiles (accounts) with any personal data as well as share and exchange information (including multimedia files) via the Internet. Popular social media: Facebook, Twitter, Instagram, LinkedIn, Pinterest, Google Plus+, Tumblr, Flickr, Vine.
+                                                                </li>
+                                                                <li>
+                                                                    <b>GPS</b> – the Global Positioning System – a satellite navigation system based in space, which provides location and time information in all weather conditions, anywhere on or near the Earth.
+                                                                </li>
+                                                                <li>
+                                                                    <b>Mobile Application (Mobile App or simply App)</b> – a special computer program designed to run on smartphones, tablets and other mobile devices. E.g.: Pumpic is a mobile app designed for parental control and remote monitoring.
+                                                                </li>
+                                                                <li>
+                                                                    <b>Browser (Web Browser)</b> – a special program (application), which allows you to view and use any information from the Internet. Popular browsers: Safari, Google Chrome, Opera, Internet Explorer, Mozilla Firefox.
+                                                                </li>
+                                                                <li>
+                                                                    <b>SMS</b> – short message service – a text messaging service component of a phone. SMS also refers to a text message itself.
+                                                                </li>
+                                                                <li>
+                                                                   <b>IM chat</b> – instant messenger – a kind of an online chat, which provides real-time text transmission over the Internet. Popular IM chats: Viber, WhatsApp, Skype, Kik, Facebook Messenger.
+                                                                </li>
+                                                                <li>
+                                                                   <b>Control Panel</b> – computer user interface, which gives a user control of software and hardware features. Pumpic Control Panel allows you to receive the information sent from your kids’ devices: calls data, text message content, locations etc. and view it on your personal computer.
+                                                                </li> 
+                                                                <li><b>Compatibility</b> – the ability of software (applications) to be run on a particular device. E.g.: if your smartphone or tablet is compatible with Pumpic, it means that you can download and use the app on your device.</li>
+                                                                <li><b>Search Engine</b> – special software designed and integrated into a web browser to search information on the web. Popular search engines: Google, Bing, Yahoo, Ask.</li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                                            <img class="git-img img-technical model-center pt10" src="{$img}/learning_center/glossary-internet-terms/m_technical.jpg">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <!-- END -->
+                                            
+                                            <!-- #apps_ims -->
+                                            <li>
+                                                <div id="apps_ims">
+                                                    
+                                                    <h2 class="title color-green text-left bold">Popular Apps & Messengers</h2>
+                                                    <p class="text-justify {*font-light*}">Below is the list of the most popular instant messengers among kids and teenagers. All of them provide communication benefits and connect people across the world. However, these online chats are supposed to be used by 12+ or even 17+ users. They bear real danger for children like sexting, online predators’ attacks, cyberbullying etc. That’s why parents must know and control instant messengers their children use.</p>
+                                                    
+                                                    <div class="row block-content background-width">    
+                                                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                                                            <ul class="list_orange_circle">
+                                                                <li>
+                                                                    <span class="color-green display-block">Skype</span>
+                                                                    <b>Why popular:</b>
+                                                                    <ul class="list_green">
+                                                                        <li>allows free calls, personal and group messages, and video calls;</li>
+                                                                        <li>conference calls with up to 9 people, forwarded calls</li>
+                                                                    </ul>
+                                                                    <b>Why dangerous:</b>
+                                                                    <ul class="list_green">
+                                                                        <li>your children might be contacted by any stranger with any intentions;</li>
+                                                                        <li>an opportunity for cyberbullies and online predators to reach their victims;</li>
+                                                                        <li>SkypeMe mode allows anyone to see that you are ready to chat and contact easily.</li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li>
+                                                                    <span class="color-green display-block">Kik</span>
+                                                                    <b>Why popular:</b>
+                                                                    <ul class="list_green">
+                                                                        <li>allows online texting and photo sharing;</li>
+                                                                        <li>private and group text conversations are available as well.</li>
+                                                                    </ul>
+                                                                    <b>Why dangerous:</b>
+                                                                    <ul class="list_green">
+                                                                        <li>if someone knows your user name or email, he or she might contact you easily
+                                                                            <br /><i>(children tend to share their emails and user names on Facebook)</i>;</li>
+                                                                        <li>created for 17+ adults and thus, the access is restricted for children;</li>
+                                                                        <li>an opportunity for cyberbullies and online predators to reach their victims;</li>
+                                                                        <li>might be used for requesting nude photos, sharing sexual experience.</li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li>
+                                                                    <span class="color-green display-block">Snapchat</span>
+                                                                    <b>Why popular:</b>
+                                                                    <ul class="list_green">
+                                                                        <li>allows sharing photos and video files;</li>
+                                                                        <li>lets users set a time limit on when a pic or video disappears from online.</li>
+                                                                    </ul>
+                                                                    <b>Why dangerous:</b>
+                                                                    <ul class="list_green">
+                                                                        <li>photos and videos are actually not deleted; what goes online, remains there forever;</li>
+                                                                        <li>children suppose that their pics and videos will be deleted soon and thus, tend to share inappropriate content (sexual, nude, embarrassing, sexting);</li>
+                                                                        <li>a user can make a screenshot to save a photo before it disappears.</li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li>
+                                                                    <span class="color-green display-block">Burn Note</span>
+                                                                    <b>Why popular:</b>
+                                                                    <ul class="list_green">
+                                                                        <li>limited to text messaging and thus, is simple in use;</li>
+                                                                        <li>deletes messages after a set time period.</li>
+                                                                    </ul>
+                                                                    <b>Why dangerous:</b>
+                                                                    <ul class="list_green">
+                                                                        <li>an opportunity for cyberbullies to reach their victims;</li>
+                                                                        <li>children tend to send each other messages with offensive or sexual content;</li>
+                                                                        <li>kids think they will get away with sending inappropriate messages as they will be erased soon;</li>
+                                                                        <li>anyone can receive a Burn Note message even without having an account.</li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li>
+                                                                    <span class="color-green display-block">Slingshot</span>
+                                                                    <b>Why popular:</b>
+                                                                    <ul class="list_green">
+                                                                        <li>the app comes from Facebook;</li>
+                                                                        <li>allows sharing photos and video files;</li>
+                                                                        <li>lets users set a time limit on when a pic or video disappears from online;</li>
+                                                                        <li>ability to draw on a photo and make posts more creative;</li>
+                                                                        <li>before sending a file, one must first send a shot of his or her own.</li>
+                                                                    </ul>
+                                                                    <b>Why dangerous:</b>
+                                                                    <ul class="list_green">
+                                                                        <li>an opportunity for cyberbullies and online predators to reach their victims;</li>
+                                                                        <li>doesn’t require a Facebook account and thus, might be used by anyone;</li>
+                                                                        <li>when registering, one must point a Facebook account or a phone number;</li>
+                                                                        <li>shows a user’s city, date, and time, until location services disabled.</li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li>
+                                                                    <span class="color-green display-block">Tinder</span>
+                                                                    <b>Why popular:</b>
+                                                                    <ul class="list_green">
+                                                                        <li>created for hooking and dating;</li>
+                                                                        <li>allows finding potential hook-ups via GPS;</li>
+                                                                        <li>takes information from users’ Facebook profiles.</li>
+                                                                    </ul>
+                                                                    <b>Why dangerous:</b>
+                                                                    <ul class="list_green">
+                                                                        <li>an opportunity for cyberbullies and online predators to reach their victims;</li>
+                                                                        <li>created for hooking up and thus, it is not the right place for the under-18;</li>
+                                                                        <li>the app shows Facebook photos and in addition your exact location;</li>
+                                                                        <li>it is a known source where older males try to match with much younger girls.</li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li>
+                                                                    <span class="color-green display-block">Vine</span>
+                                                                    <b>Why popular:</b>
+                                                                    <ul class="list_green">
+                                                                        <li>allows posting short 6-second videos.</li>
+                                                                    </ul>
+                                                                    <b>Why dangerous:</b>
+                                                                    <ul class="list_green">
+                                                                        <li>sexually explicit videos and porn might appear in the feed;</li>
+                                                                        <li>inappropriate content might be found easily through the search line;</li>
+                                                                        <li>online predators use the app to find teens and track their location.</li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li>
+                                                                    <span class="color-green display-block">YikYak</span>
+                                                                    <b>Why popular:</b>
+                                                                    <ul class="list_green">
+                                                                        <li>it is anonymous and doesn’t require creating a profile or account;</li>
+                                                                        <li>allows sharing comments with nearest 500 people in 1-5 mile radius.</li>
+                                                                    </ul>
+                                                                    <b>Why dangerous:</b>
+                                                                    <ul class="list_green">
+                                                                        <li>an opportunity for cyberbullies to attack children anonymously;</li>
+                                                                        <li>users know they will get away with offensive comments or explicit content;</li>
+                                                                        <li>this particular app causes many problems in schools across the USA.</li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li>
+                                                                    <span class="color-green display-block">Ask.fm</span>
+                                                                    <b>Why popular:</b>
+                                                                    <ul class="list_green">
+                                                                        <li>allows asking and answering user questions anonymously.</li>
+                                                                    </ul>
+                                                                    <b>Why dangerous:</b>
+                                                                    <ul class="list_green">
+                                                                        <li>cyberbullies and online predators use the app to attack kids;</li>
+                                                                        <li>many answers to kids’ questions are mean, angry, and sexually explicit.</li>
+                                                                    </ul>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                                            <img class="git-img img-apps_ims model-center pt10" src="{$img}/learning_center/glossary-internet-terms/m_technical.jpg">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <!-- END -->
+                                            
+                                            <!-- #emojis -->
+                                            <li>
+                                                <div id="emojis">
+                                                    
+                                                    <h2 class="title color-green text-left bold">Emojis & Emoticons</h2>
+                                                    <p class="text-justify {*font-light*}">One may wonder, where can be the harm of a cute smile :) At first sight, all these emojis and emoticons may seem honeyed nothings, however, even they happen to become a tool for offence and bullying.</p>
+                                                    <p class="text-justify {*font-light*}">There is no point in showing the entire list of all possible smiles that might be use to bring about harm. There are too many of them. In addition, literally all of them if combined in a particular way might appear as offensive ones. Instead, let’s give an example from a real life experience.</p>
+                                                    <div class="row block-content background-width">    
+                                                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                                                            <ol class="list_numbers_green">
+                                                                <li>
+                                                                    In South California, two men were accused of sending threatening emoticons to another person. The emoticons pictured a closed fist, an “L-shaped” hand gesture resembling a gun, and an ambulance. The situation was enhanced by the fact that the two men had a history of problems and at the same time previously tried to assault the addressee of the mentioned emoticons at his house. If convicted the two offenders will face up to five years in prison.
+                                                                </li>
+                                                                <li>
+                                                                    A teenager form Brooklyn was accused of a terroristic threat because of his Facebook status. The boy used emojis and pictured a police officer with a gun near the head. At the same time, there were no verbal threats, only emoticons. He was charged 7 years of imprisonment, but ultimately the jury overturned a conviction. Of course, that probably was too much as for emojis and a teenager. However, it once again means that one can be arrested and sentenced for emoticons.
+                                                                </li>
+                                                            </ol>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                                            <img class="git-img img-emojis model-center pt10" src="{$img}/learning_center/glossary-internet-terms/m_emojis.jpg">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <!-- END -->
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
                                                                                         
-                                                                                        <!-- #start -->
-											<li>
-												<a id="start" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse4">Where to start?</a>
-												<div id="collapse4" class="collapse">
-													<p>First, register your account on the website. Choose the most optimal Pumpic subscription plan that suits your needs and budget. Log in to proceed with the payment and further installation.</p>
-												</div>
-											</li>
-											<li>
-												<a id="start" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse5">Where can I check the captured data?</a>
-												<div id="collapse5" class="collapse">
-													<p>Soon after Pumpic is installed on the device you want to monitor and connected to our server, the captured data will be uploaded to the Control Panel of your personal account automatically.</p>
-												</div>
-											</li>
-											<li>
-												<a id="start" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse6">Do I need to jailbreak/root the target device to install Pumpic?</a>
-												<div id="collapse6" class="collapse">
-                                                                                                    <p><b>iOS:</b> The app can be used to monitor devices both with jailbreak and without. To track devices without jailbreak, you can use iCloud solution provided with Premium subscription. Otherwise, the target device must be jailbroken. Please note that monitoring of jailbreak-free iOS devices is currently limited to the following features: Text Messages, Calls, {*Contacts,*} Browsing History, Bookmarks, Location, Calendar, Contacts, Photos, Notes, Skype, and WhatsApp.</p>
-                                                                                                    <p><b>Android:</b> The target device requires rooting to get access to the following features: Email and Social Network monitoring.</p>
-                                                                                                    {*<p>To install Pumpic, the target iOS device must be jailbroken.</p>  
-                                                                                                    <p>Android devices require rooting to get access to all the features of the app.</p>*}
-                                                                                                </div>
-											</li>
-											<li>
-												<a id="start" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse7">Is physical access required or can I install the app remotely?</a>
-												<div id="collapse7" class="collapse">
-													<p>Physical access is required to install the app on the target device. However, iCloud solution provided with Premium subscription and designed for monitoring iOS devices requires neither physical access nor jailbreak.</p>
-												</div>
-											</li>
-                                                                                        
-                                                                                        <!-- #install -->
-											<li>
-												<a id="install" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse8">How to install Pumpic?</a>
-												<div id="collapse8" class="collapse">
-                                                                                                    <p>The installation is very easy and stress-free. It will take you no longer than 5 minutes. Once you have made a purchase, follow the guidelines pointed in a subscription email to complete the setup. Note that physical access to the target device is required (unless you choose iCloud solution for monitoring iOS devices). If you run into difficulties, feel free to contact our Customer Support Team for help.</p>
-												</div>
-											</li>
-											<li>
-												<a id="install" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse9">How to uninstall Pumpic?</a>
-												<div id="collapse9" class="collapse">
-                                                                                                    <b>Uninstall the app on iOS:</b>
-                                                                                                    <p>Go to Cydia > Manage > Sources > Click on apps.pumpic.com (the Developer’s Repo) > Updated > Modify > Uninstall > Uninstall will be completed > Go to the Cydia once again > Manage > Sources > Edit > Click on “remove” Next to the Developer’s Repo.</p>
-                                                                                                    <b>Uninstall the app on Android:</b>
-                                                                                                    <p>Go to Phone > Settings > Security > Device administrators > Uncheck the box next to the app > Get back to settings > Apps > com.pumpic > Uninstall.</p>
-                                                                                                    <b>Uninstall within the app:</b>
-                                                                                                    <p>Run Pumpic App > Enter your Secret Key to proceed to Settings > Tap button “Delete”. </p>
-												</div>
-											</li>
-											<li>
-												<a id="install" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse10">Can I install or uninstall the application remotely?</a>
-												<div id="collapse10" class="collapse">
-                                                                                                    <p>Both installation and removal of Pumpic app is performed manually (unless you choose iCloud solution for monitoring iOS devices, which does not require installation at all). Please, make sure you have physical access to the target device before purchasing a subscription.</p>
-																									<p>Note that if you use iCloud solution provided with Premium subscription and designed for iOS devices without jailbreak, you do not need to install the app on the target device at all. At the same time, you do not need physical access to the target device, meanwhile all the data is monitored through iCloud backup. </p>
-																									<p>In this case, you will need to know iCloud login and password of the target device to connect it to your Control Panel. </p>
-												</div>
-											</li>
-											<li>
-												<a id="install" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse11">How to update Pumpic?</a>
-												<div id="collapse11" class="collapse">
-                                                                                                    <p><b>iOS:</b> The app is updated automatically on all iOS devices.</p>
-                                                                                                    <p><b>Android:</b> Rooted devices are updated automatically. All other Android devices can be updated in two ways:</p>
-																									<p>1) By tapping “Update” button in the app on the target device.</p>
-																									<p>2) By following an instruction in your Control Panel.</p>
-                                                                                                    {*<ol>
-                                                                                                        <li>Take the target device where the app is installed.</li>
-                                                                                                        <li>Open a web browser on the target phone and proceed to: apps.pumpic.com. The app will start downloading automatically.</li> 
-                                                                                                        <li>When it’s downloaded, open the Notification Panel (by swiping your finger from the top of the screen to the bottom) and click on the downloaded apk file.</li> 
-                                                                                                        <li>Agree with everything that pops up on the screen and click Install.</li> 
-                                                                                                        <li>When the app is successfully updated, click “Done”.</li> 
-                                                                                                    </ol>*}
-												</div>
-											</li>
-											<li>
-												<a id="install" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse12">How often is the information updated?</a>
-												<div id="collapse12" class="collapse">
-													<p>The information update frequency depends on each particular feature. At average, information is updated at least every 20 minutes.</p>
-												</div>
-											</li>
-											<li>
-												<a id="install" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse13">Is it possible to add more devices to my Control Panel or will I have to set up an account for each new device?</a>
-												<div id="collapse13" class="collapse">
-													<p>Our Control Panel is very flexible and allows adding as many devices as you wish. However, please note that only one device can be assigned to a specific Pumpic subscription.</p>
-												</div>
-											</li>
-											<li>
-												<a id="install" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse14">Can I switch my subscription plan to another device?</a>
-												<div id="collapse14" class="collapse">
-													<p>Unfortunately, it is not allowed. Only the device you purchased the subscription plan for can run the app.</p>
-												</div>
-											</li>
-											<li>
-												<a id="install" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse15">How to jailbreak iOS?</a>
-												<div id="collapse15" class="collapse">
-													<p>During the installation you will be provided with links to off-site sources, where you will find instructions on how to jailbreak iOS devices. Pumpic is not connected with such sources. Feel free to find relevant information on iOS jailbreak online on your own as well.</p>
-													<p>If you do not want to jailbreak the target iPhone, iPad, or iPod Touch, you can use <a class="text-link a-default" href="http://{$domain}/icloud-iphone-without-jailbreak-monitoring.html">Pumpic iCloud solution</a>. With its help you will be able to control iPhone from another iPhone without a need to jailbreak any of them. Note that it is provided with Premium subscription only.</p>
-												</div>
-											</li>
-											<li>
-												<a id="install" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse16">Is there any daily limit? How to find out if I have reached the limit on my plan?</a>
-												<div id="collapse16" class="collapse">
-													<p>Pumpic has no particular daily limits. There only are limits coming with Basic subscription plan, which allow you to monitor up to 700 calls and 300 SMS per month. However, you can reach these limits much earlier than a month.</p>
-                                                    <p>If you notice that the data in your Control Panel has stopped updating, that might be a sign that you have reached a limit. Contact our Customer Support Team to make sure. In this case, you can either buy the same Basic subscription, upgrade to Premium or additionally order unlimited calls or SMS within your Basic subscription plan.</p>
-												</div>
-											</li>
-                                                                                        
-                                                                                        <!-- #compatibility -->
-											<li>
-												<a id="compatibility" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse17">What devices support Pumpic?</a>
-												<div id="collapse17" class="collapse">
-                                                                                                    <p>Pumpic is supported by the majority of smartphones and tablets. To make sure your particular device model is compatible with the application, please visit our <a class="text-link a-default" target="_blank" href="http://{$domain}/compatibility/">Compatibility</a> page or contact our Customer Support Team.</p>
-                                                                                                </div>
-											</li>
-                                                                                        {*
-											<li>
-												<a id="compatibility" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse18">How to jailbreak iOS?</a>
-												<div id="collapse18" class="collapse">
-													<p>Detailed instructions on how to jailbreak an iOS device can be found here. Note that all iOS devices have to be jailbroken before installing Pumpic.</p>
-												</div>
-											</li>*}
-											<li>
-												<a id="compatibility" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse19">Does jailbreak void a warranty? Can I delete jailbreak from the target iOS device to restore my warranty?</a>
-												<div id="collapse19" class="collapse">
-													<p>Yes, jailbreak voids iOS warranty. However, it is completely restorable. To recover your warranty you should either update your gadget to the latest iOS version or restore it to primary settings. Please consider that in this case Pumpic will not function.</p>
-												</div>
-											</li>
-											<li>
-												<a id="compatibility" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse20">Is jailbreak visible while connected to iTunes or iCloud?</a>
-												<div id="collapse20" class="collapse">
-													<p>Jailbreak is not visible while connected to iTunes or iCloud. You will be able to use both in regular mode even after jailbreaking your iOS device.</p>
-												</div>
-											</li>
-											<li>
-												<a id="compatibility" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse21">How to root Android?</a>
-												<div id="collapse21" class="collapse">
-                                                                                                    <p>During the installation you will be provided with links to off-site sources, where you will find instructions on how to root Android devices. Pumpic is not connected with such sources. Feel free to find relevant information on Android rooting online on your own as well.</p>
-																									<p>Note that Android devices do not necessarily require rooting to run Pumpic. However, you should root the target device to get full access to all Pumpic features.</p>
-												</div>
-											</li>
-											<li>
-												<a id="compatibility" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse22">Does Android rooting void a warranty?</a>
-												<div id="collapse22" class="collapse">
-													<p>Take notice that rooting of Android may void your warranty. The decision to root your Android or not should be done at your own risk.</p>
-												</div>
-											</li>
-											<li>
-												<a id="compatibility" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse23">How to cancel my Pumpic subscription and/or delete my account?</a>
-												<div id="collapse23" class="collapse">
-													<p>To cancel your Pumpic subscription and/or delete your account please contact our Customer Support Team.</p>
-												</div>
-											</li>
-											<li>
-												<a id="compatibility" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse24">Is the app attached to a mobile phone operator, a SIM card, or the target device itself?</a>
-												<div id="collapse24" class="collapse">
-													<p>The app is attached to the target device itself. It will continue working, even if you change a carrier or switch your SIM card.</p>
-												</div>
-											</li>
-											<li>
-												<a id="compatibility" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse25">Does the app require Internet connection to function at full efficiency?</a>
-												<div id="collapse25" class="collapse">
-													<p>The app itself does not require Internet connection for monitoring. However, to transfer the collected data to your Control Panel, the target device needs to have Internet connection. Usually EDGE/3G is enough. However, to transfer multimedia files you will need Wi-Fi connection.</p>
-												</div>
-											</li>
-                                                                                        
-                                                                                        <!-- #billing -->
-											<li>
-												<a id="billing" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse27">What payment methods are available?</a>
-												<div id="collapse27" class="collapse">
-													<p>There are multiple payment methods available for the convenience of our customers. They include:</p>
-                                                                                                        <ul class='list-items'>
-                                                                                                            <li>Visa/MasterCard</li> 
-                                                                                                            <li>PayPal</li>
-                                                                                                            <li>Bank/Wire Transfer</li> 
-                                                                                                            <li>American Express</li> 
-                                                                                                            <li>Discover/Novus</li> 
-                                                                                                            <li>Diners Club</li> 
-                                                                                                            <li>Fax</li> 
-                                                                                                            <li>JCB</li> 
-                                                                                                        </ul>
-												</div>
-											</li>
-											<li>
-												<a id="billing" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse28">Is it possible to get a refund?</a>
-												<div id="collapse28" class="collapse">
-													<p>Pumpic users can request a refund, if their reasons for doing so comply with our <a class="text-link a-default" target="_blank" href="http://{$domain}/policy.html#refund-policy">Refund Policy</a>. You can email your refund request to our Customer Support Team and explain in details why, in your opinion, you qualify for a refund. Our Customer Care will get back to you in the shortest time possible.</p>
-												</div>
-											</li>
-											<li>
-												<a id="billing" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse29">How to disable an automatic billing option?</a>
-												<div id="collapse29" class="collapse">
-													<p>An automatic billing option can be deactivated at your request. Use our online chat, place a ticket via our contact form or simply send an email to our Customer Support Team, and we will do it for you.</p>
-												</div>
-											</li>
-                                                                                        
-                                                                                        {*<li>
-												<a id="billing" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse30">How much does it cost to upgrade my plan?</a>
-												<div id="collapse30" class="collapse">
-													<p>If you decide to upgrade your subscription plan, you will need to pay the difference in the price of your current subscription and the subscription you want to upgrade to. Please note that you will need to get in touch with our Customer Support Team to have your price recalculated and get step-by-step assistance with upgrading your plan. Once the payment is successfully done, your account will be upgraded within 5 minutes.</p>
-												</div>
-											</li>*}
-                                                                                        
-                                                                                        <li>
-												<a id="billing" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse31">What will I see in my bank statement?</a>
-												<div id="collapse31" class="collapse">
-													<p>In your bank statement, you will see FS *pumpic.com.</p>
-												</div>
-											</li>
-                                                                                        
-                                                                                        <li>
-												<a id="billing" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse32">What happens after a purchase?</a>
-												<div id="collapse32" class="collapse">
-													<p>Please check your email after submitting your payment. Consider that sometimes automatically generated emails may be classified as Spam, so please check Spam box as well. You will receive a payment confirmation message from a billing company, and one more email from us with both a link to your Control Panel and login credentials.</p>
-												</div>
-											</li>
-                                                                                        
-                                                                                        <!-- #other -->
-                                                                                        <li>
-												<a id="other" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse33">How to block incoming calls?</a>
-												<div id="collapse33" class="collapse">
-													<p>To block incoming calls from a specific phone number, add this number to a Block list under a Settings tab. Pumpic will automatically block attempts to reach the target cell phone user and a caller will hear only busy tones.</p>
-												</div>
-											</li>
-                                                                                        {*<li>
-												<a id="other" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse34">How to start tracking BBM?</a>
-												<div id="collapse34" class="collapse">
-													<p>Open up BBM on the target phone. Tap on the icon with the BlackBerry symbol. Choose “Options”. Find the “Save Chat History” option and choose “Device”. Click “Agree” once it asks about saving the settings and save the changes.</p>
-												</div>
-											</li>*}
-                                                                                        <li>
-												<a id="other" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse35">Where can I view the information on the target user’s SMS and call logs?</a>
-												<div id="collapse35" class="collapse">
-													<p>All the data from the target device including SMS and call logs, is located in your Control Panel under corresponding tabs. Navigate through your Control Panel searching for the required information.</p>
-												</div>
-											</li>
-                                                                                        <li>
-												<a id="other" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse36">How can I delete information from my Control Panel?</a>
-												<div id="collapse36" class="collapse">
-													<p>Go to “Device Settings” section of your Control Panel and choose “Unassign Device” on the right corner below.  </p>
-													<p>Note that this action cannot be undone. Your subscription will be deactivated, and you will not be able to use it any longer with any other device. All the data will be deleted from Control Panel immediately.</p>
-												</div>
-											</li>
-										</ul>
-									</div>
-								</div>
-							</div>
-						</div>
-						{*<div class="row">
-								<div class="form">
-                                                                    <form action="/faq_send.html" method="POST" name="form-faq" class="form-faq">
-										<fieldset>
-											<legend>Have any Other Questions?</legend>
-											<div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3">
-                                                                                                <span class="info"></span>
-												<div class="form-group">
-													<input id="name"
-                                                                                                               type="text" 
-                                                                                                               class="form-control required" 
-                                                                                                               placeholder="Name*" 
-                                                                                                               name="name" 
-                                                                                                               value="" />
-												</div>
-												<div class="form-group">
-													<input id="email"
-                                                                                                               type="email" 
-                                                                                                               class="form-control required" 
-                                                                                                               placeholder="Email*" 
-                                                                                                               name="email" 
-                                                                                                               value="">
-												</div>
-												<div class="form-group">
-													<textarea id="question"
-                                                                                                            rows="10" 
-                                                                                                            class="required"
-                                                                                                            placeholder="Question*" 
-                                                                                                            name="question"></textarea>
-												</div>
-                                                                                                <div class="fatal-error"></div>
-												<button class="btn btn-orange mod-center event-submit">Send
-												</button> <!-- btn-warning-->
-											</div>
-										</fieldset>
-									</form>
-								</div>
-						</div>*} 
-					</div>
-				</div>
-			</div>
-		</div>
-                                                                                        
-                {*{include file='../includes/content/banners/banner-promo-trial.tpl'}*}
+                {*{include file='../../includes/content/banners/banner-promo-trial.tpl'}*}
                 
-                {include file='../includes/content/banners/index.tpl'}
+                {include file='../../includes/content/banners/index.tpl'}
 		<!-- FOOTER -->
                 
                 <!-- RECOMMENDED -->
                 {*
                     Template: RECOMMENDED
                 *}    
-                {include file='../includes/main/main-recommended.tpl'}
+                {include file='../../includes/main/main-recommended.tpl'}
                 
                 {*
                     Template: FOOTER
                     Переменные:
                         our_products (text): Включить выключить блок OUR PRODUCTS (no|yes). * - yes 
                 *}
-                {include file='../includes/main/main-footer.tpl'}
+                {include file='../../includes/main/main-footer.tpl'}
 	</div>
-	{include file='../includes/main/main-analytics-footer.tpl'}
+	{include file='../../includes/main/main-analytics-footer.tpl'}
         <script type="text/javascript">
             $(document).ready(function(){
                 $('#header-menu-store-link').click(function(){

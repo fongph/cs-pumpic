@@ -1,11 +1,21 @@
-<?php /*
-<div id="box-phone" class="phone-header-black phb-block">
-    <div class="col-lg-10 col-lg-offset-1">
-        <div class="block-phone right">
-            <div class="bg-phone"></div>
-            <span class="p-flag"></span>
-            <span class="p-number">+1 239 214 8898</span>
+<div class="sticky">
+    {nocache}
+    {if 1|isPhone}
+    <div class="phone-sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1">
+                    <div id="b-p-sticky">
+                        <div class="block-phone right">
+                            <div class="bg-phone"></div>
+                            <span class="p-flag"></span>
+                            <span class="p-number">+1 239 214 8898</span>
+                        </div>
+                    </div>    
+                </div> 
+            </div>    
         </div>
-    </div>    
+    </div>
+    {/if}
+    {/nocache}
 </div>
-*/ ?>

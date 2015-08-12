@@ -17,7 +17,7 @@
                                                        height="80px"
                                                        alt=""></span>
                                     <label class="knowledge-title text-center">Ultimate safety guide</label>
-                                    <p class="text-center"><a href="#">Read our guide</a> for the best tips to keep your children safe online.</p>
+                                    <p class="text-center"><a href="http://{$domain}/learning-center/internet-safety-guide.html">Read our guide</a> for the best tips to keep your children safe online.</p>
                                 </section>
                             </td>
                             <td class="col-sm-5 col-md-5 col-lg-6 table-item-col">
@@ -27,7 +27,7 @@
                                                        height="75px"
                                                        alt=""></span>
                                     <label class="knowledge-title text-center">Glossary of Internet Terms</label>
-                                    <p class="text-center">Learn about <a href="#">common online terms</a> and the most used internet acronyms that your 
+                                    <p class="text-center">Learn about <a href="http://{$domain}/learning-center/glossary-internet-terms.html">common online terms</a> and the most used internet acronyms that your 
                                         children use while communicating online.</p>
                                 </section>
                             </td>

@@ -7946,6 +7946,19 @@ $(document).ready(function(){
         return false;
     });
 
+    if($('.list_category > li > a[data-toggled="on"]').length) {
+        $.each($('.list_category > li > a[data-toggled="on"]'), function() {
+            $('.box_category > ul > li').hide();
+           if($(this).parent().hasClass('active')) {
+               var _hash = $(this).attr('href').split('#');
+               console.log(_hash[1]);
+               if(_hash.length) {
+                    $('.box_category > ul > li').find('#'+_hash[1]).closest('li').show();
+                }     
+           } 
+        });
+    }
+
     // choose categoey
     $('.list_category > li > a').on('click', function(event){
         event.preventDefault();
@@ -9202,6 +9215,45 @@ $('form[name="send_find_phone"] button.event-submit').click(function(){
         });
     }
     
+    // sticky
+    if($('.sticky').length) {
+        var sticky = document.querySelector('.sticky');
+        var origOffsetY = (!sticky.offsetTop) ? 68 : sticky.offsetTop;
+
+        function onScroll(e) {
+            window.scrollY >= origOffsetY ? sticky.classList.add('fixed') :
+                                          sticky.classList.remove('fixed');
+                                  
+            console.log(window.scrollY+' = '+ origOffsetY);                      
+        }
+
+        document.addEventListener('scroll', onScroll);
+    }
+    /*$(".blocks-sticky").autofix_anything({
+      customOffset: false, // You can define custom offset for when you want the container to be fixed. This option takes the number of pixels from the top of the page. The default value is false which the plugin will automatically fix the container when the it is in the viewport
+      manual: false, // Toggle this to true if you wish to manually fix containers with the public method. Default value is false
+      onlyInContainer: true // Set this to false if you don't want the fixed container to limit itself to the parent's container.
+    });
+    */
+    
+    /*
+    if($(".phone-sticky").length) {
+        
+        if($(".phone-sticky").is(':visible')) {
+            
+            $(window).on('scroll', function() {
+                var windowTop = $(window).scrollTop();
+                if(windowTop > 68) {
+                    $(".phone-sticky").css({'position': 'fixed'});
+                } else {
+                    $(".phone-sticky").css({'position': 'static'});
+                }
+            });
+            
+        }
+        
+    }
+    */
     
    /*
    $('a#openBtnVideo').click(function(e){

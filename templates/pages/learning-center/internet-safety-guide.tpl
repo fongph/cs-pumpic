@@ -59,7 +59,7 @@
 
                         <div class="row">
                             <div class="col-lg-12">
-                                <h2 id="faq_frequently_asked_questions">Frequently Asked Questions</h2>
+                                {*<h2 id="faq_frequently_asked_questions">Frequently Asked Questions</h2>*}
                                 <div class="tab_category">
                                     {include file='../../includes/content/learning-center/internet-safety-guide-category.tpl'}
                                     <div class="box_category">

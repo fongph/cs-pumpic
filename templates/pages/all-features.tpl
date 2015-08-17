@@ -33,7 +33,7 @@
                 
                 <div id="block-technological-header"> 
                     <div class="box-hedaer-title">
-                        <h2 class="text-center">Cell Phone Monitoring Mobile Application</h2>
+                        <h1 class="h2 text-center">Cell Phone Monitoring Features</h1>
                         {*<span>Enjoy more than <strong>20 features</strong> of <strong>remote mobile tracking</strong> with Pumpic.</span>*}
                     </div>
                     

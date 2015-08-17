@@ -3,7 +3,6 @@ Disallow: */uncategorized/*
 Disallow: */tag/*
 Disallow: /restore.html
 Disallow: /login.html
-Disallow: /policy.html
 Disallow: /tos.txt
 
 Disallow: /wp-content
@@ -11,6 +10,7 @@ Disallow: /wp-admin
 Disallow: /wp-includes
 Disallow: /security/tag/
 Disallow: /security/tag/*
+Disallow: *?gclid=*
 Allow: /wp-content/uploads/
 
 User-agent: Googlebot-Image

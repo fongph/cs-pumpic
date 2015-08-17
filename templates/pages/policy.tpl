@@ -1,7 +1,7 @@
 {strip}
     
 {include file='../includes/main/main-header.tpl'
-    robots="no" 
+    robots="yes" 
     title="Privacy Policy, Refunds, Terms & Conditions"
     description="Pumpic is a Mobile Phone Monitoring Application with limitless possibilities. Learn more about the legal policy of the software usage. Pumpic is for legitimate use only."
 }    

@@ -7,19 +7,19 @@
                                 <div class="row">
                                         <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12 item-teenager">
                                                 <img class="model-center" src="{$img}/pc2/teenagers_1.png" alt="">
-                                                <h1 class="item-t-title text-center">47<sup>%</sup></h1>
+                                                <div class="h1 item-t-title text-center">47<sup>%</sup></div>
                                                 <p class="text-center">The number of high school students, who admit they have tried alcohol or drugs.</p>
 
                                         </div>
                                         <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12 item-teenager">
                                                 <img class="model-center" src="{$img}/pc2/teenagers_2.png" alt="">
-                                                <h1 class="item-t-title text-center">1<span class="fz20">in</span>3</h1>
+                                                <div class="h1 item-t-title text-center">1<span class="fz20">in</span>3</div>
                                                 <p class="text-center">Children of 9-17 years old view 18+ websites containing inappropriate content daily.</p>
 
                                         </div>
                                         <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12 item-teenager">
                                                 <img class="model-center" src="{$img}/pc2/teenagers_3.png" alt="">
-                                                <h1 class="item-t-title text-center">27<sup>%</sup></h1>
+                                                <div class="h1 item-t-title text-center">27<sup>%</sup></div>
                                                 <p class="text-center">The number of girls, who bear children in the age of 15-19 in the United States yearly.</p>
 
                                         </div>

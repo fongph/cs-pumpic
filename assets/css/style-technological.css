@@ -713,7 +713,7 @@ dl.table-rows.block-left {
         width: 100%;
     }
 
-    .only-pc { display: none; }
+    .only-pc, .mobile-off { display: none; }
     .only-mobile { display: inline-block; }
     .div-table-row .div-table-column.text-right {
         text-align: left;
@@ -777,7 +777,7 @@ dl.table-rows.block-left {
         width: 80%;
     }
 
-    .only-pc { display: none; }
+    .only-pc, .mobile-off { display: none; }
     .only-mobile { display: inline-block; }
     .div-table-row .div-table-column.text-right {
         text-align: left;
@@ -840,6 +840,7 @@ dl.table-rows.block-left {
         width: 70%;
     }
     
+    .mobile-off { display: block; }
     .only-pc { display: none; }
     .only-mobile { display: inline-block; }
     .div-table-row .div-table-column.text-right {
@@ -909,6 +910,7 @@ dl.table-rows.block-left {
         width: 100%;
     }
     
+    .mobile-off { display: block; }
     .only-pc { display: inline-block; }
     .only-mobile { display: none; }
     .div-table-row .div-table-column.text-right {
@@ -977,6 +979,7 @@ dl.table-rows.block-left {
         width: 100%;
     }
     
+    .mobile-off { display: block; }
     .only-pc { display: inline-block; }
     .only-mobile { display: none; }
     .div-table-row .div-table-column.text-right {
@@ -1017,7 +1020,8 @@ dl.table-rows.block-left {
 /*    padding-bottom: 36px;*/
     padding-bottom: 10px;
 }
-.box-hedaer-title > h2 {
+.box-hedaer-title > h2,
+.box-hedaer-title > h1 {
     font-size: 39px;
 /*    margin: 15px 0px 5px 0px;*/
     margin: 10px 0px 5px 0px;

@@ -30,7 +30,7 @@
         <div class="row">
             <div class="col-lg-10 col-lg-offset-1">
                 <div class="row">
-                        <h2>Compatibility</h2>
+                        <h1 class="h2 text-center">Monitoring App Compatibility</h1>
                 </div>
                 <div class="row">
                     <div class="col-lg-12 pb20 intro-compatibility">

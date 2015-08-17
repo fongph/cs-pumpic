@@ -6,6 +6,10 @@
 
             <div class="col-lg-10 col-lg-offset-1 banner-header">
                 {assign var="position" value=" "|explode:$imgAlign}
+                    {assign var="h_title" value="h1"}
+                {if isset($styleTitle)}
+                    {assign var="h_title" value=$styleTitle}
+                {/if}
                 
                 <table id='block-table-header'>
                     <tr>
@@ -57,7 +61,7 @@
                             
                             <div>
                                 <div class="visual-text {if isset($Review)}visual-text-lg visual-text-xlg{else}{if $textAlign}block-text-{$textAlign}{else}block-text-right{/if}{/if}">
-                                    <h1 class="title {if isset($fz)}fz{$fz}{/if}">{if isset($title)} {$title} {else}Android Parental Control App{/if}</h1>
+                                    <{$h_title} class="h1 title {if isset($fz)}fz{$fz}{/if}">{if isset($title)} {$title} {else}Android Parental Control App{/if}</{$h_title}>
                                     
                                     {if isset($flagName)}
                                     <div class="clearfix">    

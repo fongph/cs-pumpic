@@ -32,9 +32,9 @@
                 <div class="row">
                     <div class="col-lg-10 col-lg-offset-1">
                         <div class="row">
-                            <h2>
+                            <h1 class="h2 text-center">
                                 Subscription Plans{*Pricing & Plans*}
-                            </h2>
+                            </h1>
                             <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1">
                                     <table class="tb_pricing table-bordered pricing-second">
                                         <caption>
@@ -96,7 +96,7 @@
                                                     </a>*}
                                                 </div>
                                             </div>
-                                            <div class="table_title">
+                                            <div class="table_title mobile-off">
                                                 <h3>
                                                     Free with every plan:
                                                 </h3>

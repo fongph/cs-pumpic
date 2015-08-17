@@ -58,6 +58,7 @@
 
 
 {Content 
+    styleTitle="h2"
     title="Did You Know?"
     blockBg='dark'}
             
@@ -266,6 +267,7 @@
 </div> *}
 
 {Content 
+    styleTitle="h2"
     title="Why to Follow Kids’ Text Messages"
     blockBg='light'}
     <p>You will probably wonder, if hear that children most of all do not use their mobile phones to call each other. Instead, they use them to play games, search online, and chat via social media or SMS. In other words, modern kids prefer writing text messages to making calls.</p>

@@ -953,10 +953,11 @@ function smarty_modifier_isPhone() { // $params, $template
 function smarty_function_Content($params, $template) {
     $_style = (isset($params['blockBg'])) ? $params['blockBg'] : 'dark';
     $_title = (isset($params['title'])) ? $params['title'] : '';
+    $_styleTitle = (isset($params['styleTitle'])) ? $params['styleTitle'] : 'h1';
     
     echo '<div id="block-content" class="'.$_style.'">
                     <div class="container">
-                        <h1 class="h2 text-center">'.$_title.'</h1>
+                        <'.$_styleTitle.' class="h2 text-center">'.$_title.'</'.$_styleTitle.'>
                         <div class="row">
                             <div class="col-sm-12 col-md-12 col-lg-12">';
 }

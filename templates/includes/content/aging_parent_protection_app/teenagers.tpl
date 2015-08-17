@@ -8,18 +8,18 @@
                                 <div class="row">
                                         <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12 item-teenager">
                                                 <img class="model-center" src="{$img}/aging_parent_protection_app/gone_missing.png" alt="">
-                                                <h1 class="item-t-title text-center">Gone Missing</h1>
+                                                <h2 class="h1 item-t-title text-center">Gone Missing</h2>
                                                 <p class="text-center">There are cases when elderly people go outside and due to memory failures or dementia lose their way back home and simply get lost missing.</p>
 
                                         </div>
                                         <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12 item-teenager">
                                                 <img class="model-center pt15" src="{$img}/aging_parent_protection_app/scam_fraud.png" alt="">
-                                                <h1 class="item-t-title text-center">Scam & Fraud</h1>
+                                                <h2 class="h1 item-t-title text-center">Scam & Fraud</h2>
                                                 <p class="text-center">Seniors are frequent victims of phone scammers, who fraudulently get money or personal data (social security, credit card numbers) out of them.</p>
                                         </div>
                                         <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12 item-teenager">
                                                 <img class="model-center" src="{$img}/aging_parent_protection_app/loss_or_theft.png" alt="">
-                                                <h1 class="item-t-title text-center">Phone Loss</h1>
+                                                <h2 class="h1 item-t-title text-center">Phone Loss</h2>
                                                 <p class="text-center">Some people become less attentive with aging and might forget where they have left a cell phone or if it was stolen. At the same time, a phone robbery is a known reason of an identity theft.</p>
                                         </div>
                                 </div>

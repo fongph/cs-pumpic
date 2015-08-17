@@ -57,6 +57,7 @@
         {include file='../includes/content/secures-mobile-phones-monitoring.tpl'}
         
         {Content 
+    styleTitle="h2"    
     title="Why Parental Control Is Essential"
     blockBg='light'}
         

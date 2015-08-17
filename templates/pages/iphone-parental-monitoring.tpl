@@ -59,6 +59,7 @@
 
 
 {Content 
+    styleTitle="h2"
     title="Did You Know?"
     blockBg='dark'}
        
@@ -270,6 +271,7 @@
 </div>*}
 
 {Content 
+    styleTitle="h2"
     title="Keep Your Eyes Open"
     blockBg='light'}
     <p>As a parent, you always take care of your kids and do your best to protect them from any possible danger. However, when they grow up and get stronger day by day, you become less and less engaged in their lives. Meanwhile, your children become more and more independent.</p>

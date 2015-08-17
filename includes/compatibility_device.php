@@ -15,6 +15,8 @@ $compatibility = new Models\Compatibility(di()->get('dbPhones'));
 
 list(,$modelName) = explode('/', $urlParams['uri']);
 
+if($compatibility->isPartUppercase($modelName)) throw new PageNotFoundException;
+
 $phoneData = $compatibility->getModel($modelName);
 
 // clearCahce

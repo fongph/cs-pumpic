@@ -31,22 +31,24 @@
                                             
                                             <!-- ContactUs -->
                                             <div class="row text-center">
-						<h2>Contact Us</h2>
-						<p class="text-justify">We are a team of talented designers and developers, who joined forces to introduce unique and user-friendly smartphone monitoring solutions. Pumpic app was created to help parents take care of their children and protect them by means of remote mobile tracking. The application runs on iOS and Android devices only.</p> 
-                                                <p class="text-justify">If you have any questions or suggestions, which will help improve our services, please feel free to contact us using the form below or via email.</p>
-						<p>
-                                                    <a class="link_bordered">
-                                                        <strong>Customer Support Team</strong> – <span id="emai-support-v2"></span>
-                                                    </a><br />
-                                                    <a class="link_bordered">
-                                                        <strong>Billing Department</strong> – <span id="emai-billing"></span> {*billing@pumpic.com*}
-                                                    </a> 
-                                                    <br />
-                                                    <a class="link_bordered">
-                                                        <strong>Press and Media</strong> – <span id="emai-info"></span> {*info@pumpic.com*}
-                                                    </a>
-                                                    {include file='../includes/content/phone/block-phone-content.tpl'}
-						</p>
+                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                    <h2>Contact Us</h2>
+                                                    <p class="text-justify">We are a team of talented designers and developers, who joined forces to introduce unique and user-friendly smartphone monitoring solutions. Pumpic app was created to help parents take care of their children and protect them by means of remote mobile tracking. The application runs on iOS and Android devices only.</p> 
+                                                    <p class="text-justify">If you have any questions or suggestions, which will help improve our services, please feel free to contact us using the form below or via email.</p>
+                                                    <p>
+                                                        <a class="link_bordered">
+                                                            <strong>Customer Support Team</strong> – <span id="emai-support-v2"></span>
+                                                        </a><br />
+                                                        <a class="link_bordered">
+                                                            <strong>Billing Department</strong> – <span id="emai-billing"></span> {*billing@pumpic.com*}
+                                                        </a> 
+                                                        <br />
+                                                        <a class="link_bordered">
+                                                            <strong>Press and Media</strong> – <span id="emai-info"></span> {*info@pumpic.com*}
+                                                        </a>
+                                                        {include file='../includes/content/phone/block-phone-content.tpl'}
+                                                    </p>
+                                                </div>
                                             </div>
                                             
                                             <div class="row">

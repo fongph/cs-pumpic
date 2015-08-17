@@ -56,6 +56,7 @@
 
 
 {Content 
+    styleTitle="h2"
     title="Email Using Statistics"
     blockBg='dark'}
                       
@@ -222,6 +223,7 @@
 } 
                                         
 {Content 
+    styleTitle="h2"
     title="To Spy or Not To Spy Email"
     blockBg='light'}
     <p>Most parents would better prefer not to spy on their children. They say it violates their rights as individuals, who deserve privacy as well as any adult does. At the same time, parents admit a need for constant control and want their kids protected.</p> 

@@ -101,7 +101,7 @@ class Compatibility {
                 rowid as id,
                 rowid as url,
                 longname as name,
-                REPLACE( REPLACE( `longname`, ' ', '-'), '/', '-') as uri_name,
+                LOWER( REPLACE( REPLACE( `longname`, ' ', '-'), '/', '-') ) as uri_name,
                 path_small as img, 
                 path_big as b_img,
                 path_middle as m_img,
@@ -119,6 +119,10 @@ class Compatibility {
             'count' => !empty($data) ? $this->db->query("SELECT FOUND_ROWS()")->fetchColumn() : 0,
             'list' => $data,
         );
+    }
+    
+    public function isPartUppercase($string) {
+        return (bool) preg_match('/[A-Z]/', $string);
     }
     
     public function getModel( $modelName ) {

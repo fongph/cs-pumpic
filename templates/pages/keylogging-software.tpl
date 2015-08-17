@@ -54,6 +54,7 @@
 
 
 {Content 
+    styleTitle="h2"
     title="How Kids Use Cell Phones"
     blockBg='dark'}
                
@@ -215,6 +216,7 @@
 }                                         
   
 {Content 
+    styleTitle="h2"
     title="How Keylogger Works"
     blockBg='light'}
     <p>When it comes to keylogger software, parents usually get confused due to the obscurity of this function. Let’s shed some light on it to make everything fall into place, where it belongs.</p> 

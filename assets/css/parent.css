@@ -258,6 +258,31 @@
         text-align: left;
     }
 }    
+
+@media (min-width: 500px) { 
+    #table-container div.tab {
+        border-right: 1px solid #dbdbdb;
+    }
+    
+    .col-sm-item-3 {
+        width: 50%;
+    }
+    
+    #table-container .tab:last-child {
+        width: 100%;
+        border-right: none;
+    }
+    
+    #table-container .tab:last-child > ul > li {
+        float: left;
+        width: 50%;
+    }
+    
+    #table-container .tab:last-child > ul > li:nth-child(2n) {
+        border-left: 1px solid #dbdbdb;
+    }
+}
+
 /* -- // col-item */
 @media (min-width: 768px) {
     
@@ -265,13 +290,17 @@
         width: 84.18803418803418%;
     }
     
-    #table-container div.tab {
-        border-right: none;
+    #table-container div.tab, #table-container .tab:last-child {
+        border-right: 1px solid #dbdbdb;
     }
     
     .table-sm-col-4, .table-sm-col-3, .table-sm-col-2,
-    .col-sm-item-4, .col-sm-item-3, .col-sm-item-2, .col-sm-item-1 {
+    .col-sm-item-4,  .col-sm-item-2, .col-sm-item-1 {
         width: 100%;
+    }
+    
+    .col-sm-item-3, #table-container .tab:last-child {
+        width: 33.33333333%;
     }
     
     #table-container .tab > ul > li:last-child {
@@ -293,6 +322,16 @@
     #table-container div.tab-full {
         text-align: left;
     }
+    
+    #table-container .tab:last-child > ul > li {
+        float: none;
+        width: auto;
+    }
+    
+    #table-container .tab:last-child > ul > li:nth-child(2n) {
+        border-left: none;
+    }
+    
 }
 
 @media (min-width: 992px) {
@@ -1406,7 +1445,7 @@
     margin-bottom: 20px;
 }
 
-.box-teenagers .item-teenager > h1 {
+.box-teenagers .item-teenager > div.h1 {
     margin-top: 0px;
 /*    color: #4d4f5b;*/
     font-size: 42px;
@@ -1420,7 +1459,7 @@
     font-size: 26px;
     font-weight: 300;    
 }
-.box-teenagers .item-teenager > h1 > sup {
+.box-teenagers .item-teenager > div.h1 > sup {
     font-size: 32px;
 }
 
@@ -1509,7 +1548,8 @@
 .pc2 #promo-item.promo-title div {
     font-size: 32px;
 }
-.box-teenagers .aging-parent-protection-app .item-teenager > h1 {
+.box-teenagers .aging-parent-protection-app .item-teenager > h1,
+.box-teenagers .aging-parent-protection-app .item-teenager > .h1 {
     color: #4d4f5b;
     font-size: 25px;
     font-weight: 400;

@@ -28,6 +28,7 @@
         
     <!-- CONTENT -->
          {include file='../includes/content/info/info-promo.tpl'
+            styleTitle="h2"
             fz = "4"
             imgUrl = "header_banners/how-to-monitor-social-networks.png"
             imgAlt = "how to monitor social networks"

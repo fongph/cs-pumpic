@@ -56,6 +56,7 @@
 
 
 {Content 
+    styleTitle="h2"
     title="Did You Know?"
     blockBg='dark'}
                    
@@ -263,6 +264,7 @@
 </div> *}
 
 {Content 
+    styleTitle="h2"
     title="Inherent Dangers a Cell Phone Hides"
     blockBg='light'}
     <p>One can hardly imagine his or her life without a mobile phone connected to the Internet these days. When it comes to children, we see that online reality means almost the entire world to them, being an essential part of communication and spare time spending. However, along with great opportunities there comes the issue.</p>

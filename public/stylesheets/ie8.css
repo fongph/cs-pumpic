@@ -1,0 +1,163 @@
+/* ============= // fly ============= */
+.ie8 #link-fly-features, 
+.ie8 #link-fly-features:hover, 
+.ie8 .box-features-header-item div > a:hover, 
+.ie8 .i-l-features a:hover {
+    text-decoration: none;
+}
+
+.ie8 .fly-features-v2 #fly_features {
+    padding: 9px;
+}
+
+.ie8 #fly_features {
+    background-color: rgba(0, 0, 0, 0);
+    background-image: url("../images/fly_features/bg_fly_features.png");
+    background-repeat: no-repeat;
+    background-size: scroll;
+    background-position: 0 0;
+    -moz-border-radius: 5px 5px; 
+    border-radius: 5px 5px;
+    bottom: 0;
+    color: #fff;
+    display: none;
+    height: 156px;
+    padding: 10px;
+    position: fixed;
+    _position: expression(fixed);
+    right: 0;
+    width: 207px;
+    z-index: 999;
+}
+
+.ie8 .fly-features-v1 h2 {
+    color: #fff;
+    font-size: 23px;
+    font-weight: 300;
+    line-height: 23px;
+    margin: 0 0 7px 4px;
+    text-align: left;
+}
+
+.ie8 .fly-features-v2 h2 {
+    color: #f7efa5;
+    font-size: 24px;
+    line-height: 1em;
+}
+
+/* ================= // store ================= */
+.ie8 .box-table, 
+.ie8 .div-table {
+    display: table;
+}
+
+.ie8 .table-rows {
+    display: table-row;
+}
+
+.ie8 .mt15 {
+    margin-top: 15px;
+}
+
+.ie8 #list-plans-basic-package, 
+.ie8 #list-plans-premium-package {
+    display: inline-block;
+    width: 100%;
+}
+.ie8 #list-plans-basic-package {
+    background: #f9f7ee none repeat scroll 0 0;
+}
+.ie8 .box-plans-package {
+    border-bottom: 1px solid #d8f3f1;
+    border-top: 1px solid #d8f3f1;
+    position: relative;
+}
+
+.ie8 #list-plans-basic-package > section, 
+.ie8 #list-plans-premium-package > section {
+    margin: 0 auto;
+    max-width: 280px;
+    padding: 6px;
+}
+
+.ie8 .list-plans .item-plan:first-child {
+    margin-right: 0;
+}
+
+.ie8 .list-plans .item-plan {
+    display: table-cell;
+    float: left;
+    padding: 0;
+    vertical-align: middle;
+}
+
+.ie8 .tb_pricing thead tr th i {
+    color: #cecece;
+    font-size: 21px;
+    margin-right: 5px;
+}
+
+.ie8 .list-plans i {
+    float: right;
+}
+.ie8 .i-price-plans-big-basic {
+    background: rgba(0, 0, 0, 0) url("../images/plans/basic_plan_packets.png") no-repeat scroll 0 0;
+}
+
+.ie8 .i-price-plans-big-premium {
+    background: rgba(0, 0, 0, 0) url("../images/plans/premium_plan_packets.png") no-repeat scroll 0 0;
+}
+
+.ie8 [class*="i-price-plans-big-"], 
+.ie8 [class^="i-price-plans-big-"] {
+    height: 35px;
+    position: relative;
+    width: 112px;
+}
+
+.ie8 [class*="i-price-plans-big-"], 
+.ie8 [class^="i-price-plans-big-"] {
+    height: 35px;
+    position: relative;
+    width: 112px;
+}
+
+.ie8 [class*="i-price-plans-small-"], 
+.ie8 [class*="i-price-plans-big-"], 
+.ie8 [class^="i-price-plans-small-"], 
+.ie8 [class^="i-price-plans-big-"] {
+    display: block;
+}
+
+.ie8 [class*="i-price-plans-small-"], 
+.ie8 [class*="i-price-plans-big-"], 
+.ie8 [class^="i-price-plans-small-"], 
+.ie8 [class^="i-price-plans-big-"] {
+    display: block;
+}
+
+.ie8 .list-plans .item-plan:last-child {
+    text-align: left;
+}
+.ie8 .list-plans .item-plan {
+    float: none;
+    padding: 0;
+    vertical-align: middle;
+}
+
+.ie8 .list-plans p {
+    color: #606060;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.1em;
+    margin-bottom: 0;
+    text-transform: none;
+}
+.ie8 div.blockquate_bottom, 
+.ie8 p {
+    margin-bottom: 15px;
+}
+
+.ie8 .text-red {
+    color: #cf4857;
+}

@@ -7,6 +7,7 @@ and open the template in the editor.
     Created on : 15.03.2015, 12:04:05
     Author     : Сергей
 */
+
 .msie #box-features-list > .div-table-row > .item-feature-list {
         position: relative;
         height: 100%;
@@ -36,8 +37,7 @@ and open the template in the editor.
 .msie .feature-item-info .block-info > ul > li:before,
 .text-left.list-features > li ul > li:before,
 .text-right.list-features > li ul > li:before {
-font-family: "fontello_list";
-/*  font-size: 1px;  */
+    font-family: "fontello_list";
   font-style: normal;
   font-weight: normal;
   speak: none;
@@ -65,10 +65,6 @@ font-family: "fontello_list";
    margin: 0px -1.4em 0px 0px; 
    right: -1.4em;
 }
-
-/* header banners */
-
-/* end */
 
 @media only screen and (max-width: 480px) { 
     .msie .even .feature-item-info .block-info > ul > li:before,

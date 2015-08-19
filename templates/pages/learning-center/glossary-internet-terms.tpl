@@ -13,7 +13,6 @@
     
 	<div id="tmp-git" class="wrapper">
 	{include file='../../includes/main/main-top-menu.tpl' 
-                topmenu_active='faq'
                 cache_id = "includes_main_main-top-menu"
                 nocache
         }	
@@ -58,11 +57,11 @@
                         <div class="row text-center">
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                 <h2>Glossary of Internet Terms</h2>
-                                <p class="text-justify">If you look through your kids’ messages, you will hardly understand what most of them are about. You will surely find many abbreviations, unfinished words, phrases, and sentences, as well as acronyms and slang words there.</p> 
-                                <p class="text-justify">On one hand, children try to simplify their text conversations, make them shorter, and waste less time on typing, tapping, and recalling how all these words are spelled. Moreover, there are a few of them, who knows and pays attention to spelling as such.</p>
-                                <p class="text-justify">On the other hand, kids tend to make their messaging more secret and hide its actual meaning. Especially, when it comes to parents, who can read these messages, disclose hidden intentions, and ultimately forbid them. </p>
                                 <p class="text-justify">
-                                    That’s why many children resort to cunning and use words that parents are not supposed to understand. And that’s why you as a parent should learn and know what all these words mean.
+                                    Kids’ and teens’ text messages are hard to understand at the first sight. <b>Children try to simplify their text conversations</b>, make them shorter, and waste less time on typing. On the other hand, they tend to make messaging secret and <b>hide its actual meaning from parents</b>.
+                                </p>
+                                <p class="text-justify">
+                                    What sets alarm bells ringing is <b>online abusers</b>, who use the same methods to <b>get into kids’ confidence</b>. That’s why you as a parent should learn what all these slang words mean to prevent your children from <b>Internet threats</b> and <b>stranger danger</b>. Especially those <b>used for sexting</b>, <b>online dating</b>, <b>drug abuse</b>, <b>cyberbullying</b>, and <b>online predators’</b> attacks.
                                 </p>
                             </div>
                         </div>

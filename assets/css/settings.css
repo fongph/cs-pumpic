@@ -5,7 +5,6 @@
 }
 .list_numbers_green > li {
     position:relative; 
-/*    margin:0 0 6px 2em; */
     padding-left: 20px; 
     list-style:none; 
 } 
@@ -65,8 +64,7 @@
   content: "";
   position: absolute;
   left: 0;
-/*  top: .75em;*/
-    top: 0px;
+  top: 0px;
   width: 10px;
   height: 10px;
   margin-top: 0;
@@ -197,24 +195,6 @@ a.a-default:hover {
 .vertical-aligh-top {
     vertical-align: top;
 }
-
-
-/*
-.pc-border-right {
-    border-right: 1px solid #e7e7e7;
-}
-
-.pc-border-left {
-    border-left: 1px solid #e7e7e7;
-}
-
-.pc-border-top {
-    border-top: 1px solid #e7e7e7;
-}
-
-.pc-border-bottom {
-    border-bottom: 1px solid #e7e7e7;
-}   */
     
 @media only screen and (max-width: 480px) {
     .block-text-center, .block-text-left, .block-text-right {
@@ -258,7 +238,6 @@ a.a-default:hover {
         border-bottom: none;
     }
 }    
-/* -- // col-item */
 @media (min-width: 768px) {
     .block-text-center, .block-text-left, .block-text-right {
         text-align: center;
@@ -360,16 +339,6 @@ a.a-default:hover {
 @media (max-width: 768px) { 
     .block-table { margin: 0 auto; }
 }
-@media only screen and (max-width: 480px) { 
-/*    .col-xs-sm-offset-1 {
-        margin-left: 8.33333%;
-    }*/
-}
-@media (min-width: 468px) {
-/*    .col-xs-sm-offset-1 {
-        margin-left: 8.33333%;
-    }*/
-}
 .mt15 {
     margin-top: 15px;
 }
@@ -377,7 +346,6 @@ a.a-default:hover {
     margin-top: 30px;
 }
 
-/* ================= \\ BLOCK LIST ================== */
 .block-list {
     margin: 0px;
     padding: 0px;
@@ -411,7 +379,6 @@ a.a-default:hover {
     .block-list { padding: 0px 0px 0px 15px; }
 }
 
-/* ================ \\ BLOCK STATISTICK ====== */
 .block-statistick {
     display: inline-block;
     margin: 15px 0px;
@@ -439,7 +406,6 @@ a.a-default:hover {
 }
 
 .block-statistick .item strong {
-/*    display: block;*/
     font-size: 50px;
     line-height: 50px;
     font-weight: 600;
@@ -453,7 +419,6 @@ a.a-default:hover {
     .block-list li:last-child { margin-bottom: 10px; }
 }
 
-/* =================== \\ list content =================== */
 .list-content,
 ul.list-green,
 ul.list-red,
@@ -469,8 +434,6 @@ ul.list-red,
 
 .list-content > li.img-plus, 
 .list-content > li.img-minus {
-/*    background-position: 0px 5px;
-    background-repeat: no-repeat;*/
     padding: 10px 0px 10px 40px;
     position: relative;
 }
@@ -482,13 +445,6 @@ ul.list-red,
     margin-left: -40px;    
     position: absolute;
 } 
-/*.list-content > li.img-plus {
-    background-image: url("../images/list/plus.png");
-}  
-
-.list-content > li.img-minus {
-    background-image: url("../images/list/minus.png");
-}*/
 
 ul.list-green li,
 ul.list-red li {  
@@ -504,51 +460,6 @@ ul.list-red .l-imgages {
     display: inline-block;
     left: 0;
     position: absolute;
-}
-
-ul.list-green .l-imgages {
-/*     background-image: url("../images/list/list-green.png"); */
-/*     width: 24px;
-    height: 24px;*/
-}
-
-ul.list-green .l-phone {
-/*    background-position: 0px 0xp;*/
-}
-ul.list-green .l-messange {
-/*    background-position: 0 -37px;*/
-}
-ul.list-green .l-social {
-/*    background-position: 0 -71px;*/
-}
-ul.list-green .l-write {
-/*    background-position: 0 -105px;*/
-}
-ul.list-green .l-study {
-/*    background-position: 0 -141px;
-    height: 19px;*/
-}
-
-ul.list-red .l-imgages { 
-/*    background-image: url("../images/list/list-red.png");*/
-/*    width: 22px;
-    height: 22px;*/
-} 
-
-ul.list-red .l-mobile {
-/*    background-position: 0px 0xp;*/
-}
-ul.list-red .l-play {
-/*    background-position: 0 -37px;*/
-}
-ul.list-red .l-smile {
-/*    background-position: 0 -71px;*/
-}
-ul.list-red .l-close {
-/*    background-position: 0 -129px;*/
-}
-ul.list-red .l-list {
-/*    background-position: 0 -181px;*/
 }
 
 ul.list-green > li > img,
@@ -572,19 +483,16 @@ ul.list-red > li > img {
 }
 
 .list-images .lc-1 {
-/*    background: url("../images/list/lc_1.png") no-repeat;*/
     width: 75px;
     height: 79px;
     left: -89px;
 }
 .list-images .lc-2 {
-/*    background: url("../images/list/lc_2.png") no-repeat;*/
     width: 79px;
     height: 70px;
     left: -89px;
 }
 .list-images .lc-3 {
-/*    background: url("../images/list/lc_3.png") no-repeat;*/
     width: 79px;
     height: 49px;
     left: -89px;
@@ -615,13 +523,11 @@ legend {
     font-size: 14px;
 }
 
-/* ============= // Compatibility table ============== */
 #compatibility-table article {
     padding: 0px 15px;
     margin-bottom: 0px 0px 28px;
 }
 
-/* =============== // list-operators =============== */
 #mobile-operators {
     padding: 30px 0px;
 }
@@ -630,7 +536,6 @@ legend {
 }
 
 .list-operators {
-/*    display: inline-block;*/
     list-style: none;
     margin: 0px;
     padding: 10px 0px;
@@ -639,7 +544,7 @@ legend {
 
 .list-operators li {
     display: inline-block;
-    min-height: 80px; /* 80 */
+    min-height: 80px;
     height: 80px;
     line-height: 80px;
     padding: 10px;
@@ -652,13 +557,6 @@ legend {
     top:50%;
 }
 .list-operators li img {
-/*    position: absolute;
-    top: 50%;
-    left: 50%;
-    height: 30%;
-    width: 50%;
-    margin: -15% 0 0 -25%;*/
-            
     display: block;
     margin: 0px auto;
     vertical-align: middle;
@@ -677,7 +575,6 @@ legend {
 #block-content h2.incr-number-green {
     font-size: 24px;
     line-height: 1.4em;
-/*    padding: 5px 0px;*/
     margin: 0px 0px 20px;
 }
 
@@ -689,7 +586,6 @@ legend {
     counter-increment: section;
     font-size: 26px;
     font-weight: 300;
-/*    line-height: 1.4em;*/
     margin-right: 10px;
     padding: 0 12px;
 }
@@ -700,7 +596,6 @@ legend {
 .fz13i { 
     font-size: 13px !important; 
 }
-/* =================== iphone_parental_monitoring ========================= */
 .iphone_parental_monitoring #block-table-header .visual-text h1.title {
     font-size: 32px;
 }
@@ -710,7 +605,7 @@ legend {
     .gps-wireless-tracking-phone .visual-images-right,
     .mobile_sms_spy .visual-images-right{
         padding-left: 60px;
-    } /* .iphone_parental_monitoring */
+    }
 }
 
 @media (min-width: 1200px) { 
@@ -719,44 +614,13 @@ legend {
     .gps-wireless-tracking-phone .visual-images-right,
     .mobile_sms_spy .visual-images-right {
         padding-left: 60px;
-    } /* .iphone_parental_monitoring */
+    }
 }
 
 div.symbol {
     display: inline;
 }
 
-/* =================== ios-monitoring-software ========================= */
-/*.ios-monitoring-software #block-table-header .visual-text h1.title {
-    font-size: 32px;
-}*/
-/*@media (min-width: 992px) { 
-    .ios-monitoring-software .visual-images-right {
-        padding-left: 60px;
-    }
-}
-
-@media (min-width: 1200px) { 
-    .ios-monitoring-software .visual-images-right {
-        padding-left: 60px;
-    }
-}*/
-
-/* =================== gps-wireless-tracking-phone ========================= */
-
-/*@media (min-width: 992px) { 
-    .gps-wireless-tracking-phone .visual-images-right {
-        padding-left: 60px;
-    }
-}
-
-@media (min-width: 1200px) { 
-    .gps-wireless-tracking-phone .visual-images-right {
-        padding-left: 60px;
-    }
-}*/
-
-/* ======================== MAX WIDTH ======================= */
 .max-width-469 {
     max-width: 469px;
 }
@@ -766,31 +630,6 @@ div.symbol {
         max-width: 100%;
     }
 }
-
-/* ======================= // fix top menu button Demo =============== */
-/*@media only screen and (max-width: 480px) {  }
-@media (min-width: 468px) { }
-@media (min-width: 768px) {
-    .nav > li > a.btn-orange {
-        display: block;
-        border-radius: 0px;
-        font-size: 16px;
-        font-weight: 300;
-        padding: 0px;
-        line-height: 20px;
-    }
-}
-
-@media (min-width: 992px) { 
-
-    .nav > li > a.btn-orange {
-        display: block;
-        border-radius: 5px;
-        font-size: 18px;
-        font-weight: 400;
-        padding: 10px;
-    }
-}*/
 
 .nav > li > a.btn-orange:hover,
 .nav > li > a.btn-orange:focus,
@@ -857,7 +696,6 @@ div.symbol {
     }
 }
 
-/* ===================== // block-custom-text =============== */
 .block_custom_text .blockquate_bottom h1,
 .block_custom_text .blockquate_bottom h2,
 .block_custom_text .blockquate_bottom h3,
@@ -869,8 +707,6 @@ div.symbol {
     color: #7f7f7f;
     opacity: 1;
 }
-
-/* ================== // live chat =============== */
 
 @media only screen and (max-width: 480px) { 
     #livechat-compact-container {
@@ -898,7 +734,6 @@ div.symbol {
     }
 }
 
-/* ================ // fz ============= */
 .fz25 { font-size: 25px; }
 .fz26 { font-size: 26px; }
 .fz27 { font-size: 27px; }
@@ -911,7 +746,6 @@ div.symbol {
 .fz34 { font-size: 34px; }
 .fz35 { font-size: 35px; }
 
-/* ================ // table ============== */
 .block-table { display: table; }
 .block-table > .tr { display: table-row; }
 .block-table > .tr > .td { display: table-cell; }
@@ -935,7 +769,6 @@ div.symbol {
     background: #199e95;
 }
 
-/* ================= // list-numbers =================*/
 .list-numbers {
     padding-top: 10px;
     padding-bottom: 10px;
@@ -1011,7 +844,6 @@ div.symbol {
     line-height: 1.5;
     margin-top: 30px;
     margin-bottom: 0px;
-/*    text-align: justify;*/
 }
 
 .b-column-1 > .item-number {
@@ -1286,7 +1118,7 @@ div.symbol {
         border-right: none;
     }
 }
-/* ====================== glossary-internet-terms ====================== */
+
 #tmp-git {
     position: relative;
 }
@@ -1377,13 +1209,9 @@ div.symbol {
     }
 }
 
-.fixed {
-    position: fixed;
-    top: 0;
-}
+
 .sticky {
     z-index: 1000;
-/*    width: 100%;*/
 }
 
 .phone-sticky {}

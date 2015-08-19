@@ -158,7 +158,7 @@ form > table.pricing-second:after {
 .tb_pricing .refund_new_11 {
     position: absolute;
     width:100%;
-    top:527px; /* 427 */
+    top:527px;
     height: 36px;
     background-color:#4d4f5b; 
 }
@@ -171,7 +171,7 @@ form > table.pricing-second:after {
 .tb_pricing .support_new_os {
     position: absolute;
     width:100%;
-    top:562px; /* 463 */
+    top:562px;
     height: 40px;
     background-color:#f0f0f0; 
 }
@@ -191,7 +191,6 @@ form > table.pricing-second:after {
     width:49.99%;
     background: #f9f7ee;
     color:#606060;
-
     float:left;
 }
 .wr_price_big{
@@ -212,7 +211,6 @@ form > table.pricing-second:after {
    width:100%;
     
 }
-
 
 .refund_10 .wr_refund,
 .refund_new_11 .wr_refund {
@@ -239,7 +237,6 @@ form > table.pricing-second:after {
     margin: 0 auto;
     color:#fff;
 }
-
 
 .support_os .wr_support_os,
 .support_new_os .wr_support_new_os{
@@ -269,14 +266,12 @@ form > table.pricing-second:after {
     color:#fff;
     line-height:34px; 
     height:34px;
-
    clear: both;
 }
 .basic_wr .priceb{
     width:100%;
     color:#5cbab2;
     line-height:34px; 
-
     clear: both;
     border-right:1px solid #dddddd;
     content: "";
@@ -336,39 +331,17 @@ form > table.pricing-second:after {
    
 }
 
-
 .priceb .list_price ul li:hover,
 .pricep .list_price ul li:hover {
-/*    border-top:1px solid #d8f3f1;
-    border-bottom:1px solid #d8f3f1;*/
     background: #fdfbf3;
     border-bottom-color: #d8f3f1;
     border-top-color: #d8f3f1;
 }
 
-.priceb .list_price ul li:hover > label {
-    
-}
-
-.priceb .list_price ul li:hover > label > span,
-.priceb .list_price ul li:hover > label > div.box-small-package {
-/*    display: inline-block;*/
-/*    margin-top: -1px;*/
-}
-
-/*.hover_label_radio:hover {
-    border-top:1px solid #d8f3f1;
-    border-bottom:1px solid #d8f3f1;
-    background: #fdfbf3;
-    overflow: hidden;
-    height: 39px;
-    line-height: 36px;
-}*/
 .label_radio .sp_price{
     display: block;
     font-size: 14px;
     font-weight: normal;
-/*    text-align: left;*/
     text-align: right;
     float:right;
     text-transform: none;
@@ -383,7 +356,6 @@ form > table.pricing-second:after {
 .basic_wr .basic_fe{
     margin-top:110px;
     width:100%;
-    
 }
 
 .basic_wr .basic_fe ul{
@@ -549,7 +521,7 @@ form > table.pricing-second:after {
     color: #16a89e;
     font-weight: 600;
 }
-/******** tooltip ******/
+
 .tb_pricing .tooltip {
   position: absolute;
   z-index: 1070;
@@ -680,7 +652,7 @@ form > table.pricing-second:after {
         .tb_pricing  .refund_new_11 {
             position: absolute;
             width:100%;
-            top:545px; /* 450 */
+            top:545px; 
             height: 36px;
             background-color:#4d4f5b; 
         }
@@ -692,7 +664,7 @@ form > table.pricing-second:after {
         .tb_pricing .support_new_os {
             position: absolute;
             width:100%;
-            top:580px; /* 486 */
+            top:580px; 
             height: 40px;
             background-color:#f0f0f0; 
         }
@@ -719,7 +691,7 @@ form > table.pricing-second:after {
     .tb_pricing  .refund_new_11 {
         position: absolute;
         width:100%;
-        top:545px; /*450*/
+        top:545px;
         height: 36px;
         background-color:#4d4f5b; 
     }
@@ -732,7 +704,7 @@ form > table.pricing-second:after {
     .tb_pricing .support_new_os {
         position: absolute;
         width:100%;
-        top:580px; /*486*/
+        top:580px;
         height: 40px;
         background-color:#f0f0f0; 
     }
@@ -761,7 +733,7 @@ form > table.pricing-second:after {
      .tb_pricing  .refund_new_11 {
         position: absolute;
         width:100%;
-        top:539px; /* 467 */
+        top:539px;
         height: 36px;
         background-color:#4d4f5b; 
     }
@@ -774,7 +746,7 @@ form > table.pricing-second:after {
     .tb_pricing .support_new_os{ 
         position: absolute;
         width:100%;
-        top:575px; /*503*/
+        top:575px;
         height: 40px;
         background-color:#f0f0f0; 
     }
@@ -788,7 +760,7 @@ form > table.pricing-second:after {
     .tb_pricing  .refund_new_11{
         position: absolute;
         width:100%;
-        top:536px;/* 477 */
+        top:536px;
         height: 36px;
         background-color:#4d4f5b; 
     }

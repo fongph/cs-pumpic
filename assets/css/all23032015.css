@@ -3,7 +3,6 @@
     border-style: solid !important;
     border-width: 1px 0px !important;
 }
-/* pages*/
 .row-white {
   padding: 15px 0;
   background: #fff;
@@ -103,8 +102,6 @@ span.text-success {
   margin-bottom: 10px;
 }
 
-
-
 .list-group-box {
   
 }
@@ -154,9 +151,7 @@ span.text-success {
   width: 100% !important;
 }
 .list-group-item-link {
-    display: inline-block;
-/*  display: block;
-  text-align: center;*/
+  display: inline-block;
   font-size: 20px;
   color: #42778e;
   padding: 10px 0;
@@ -318,7 +313,6 @@ span.text-success {
     background: #fdfbf3;
 }
 .row-pricing-panel .priceb .list_price ul li .hover_label_radio {
-/*  max-width: 210px;*/
   max-width: 230px;
   width: 230px;
   margin: auto;
@@ -337,7 +331,6 @@ span.text-success {
     background: #fdfbf3;
 }
 .row-pricing-panel .pricep .list_price ul li .hover_label_radio {
-/*  max-width: 210px;*/
   max-width: 230px;
   width: 230px;
   margin: auto;
@@ -533,8 +526,6 @@ th .table_title {
 .coming_soon_block ul li b{
   font-size: 19px;
   color: #4d4f5b;
-/*  min-width: 120px;*/
-/*  min-width: 95px;*/
   min-width: 65px;  
   font-weight: 400;
   display: inline-block;
@@ -597,16 +588,6 @@ th .table_title {
 .basic_fe_mobile_block {
   display: block !important;
 }
-/*.dtable-cell:nth-child(1) {
-  text-align: right;
-}
-.dtable-cell:nth-child(2) {
-  text-align: left;
-}*/
-/*body {
-  background: url(../images/test/page1.png) 50% 0 no-repeat;
-  opacity: .7;
-}*/
 .column-relative {
   position: relative;
 }
@@ -614,7 +595,7 @@ th .table_title {
   .column-relative > .table_title,
   .column-relative > .table_title_v2 {
     position: absolute;
-    top: 417px; /* 340 */
+    top: 417px; 
     left: 0;
     width: 100%;
     background: #fff;
@@ -685,9 +666,7 @@ th .table_title {
    
 }
 @media only screen and (max-width: 1200px) {
-    /*.row-pricing-panel .wr_price_big span {
-      display: block;
-    }*/
+    
     .border-right-sm {
       border-right: 1px solid #ddd;
     }
@@ -754,9 +733,6 @@ th .table_title {
   .premium_wr .premium_fe .list_price-no-link li > span {
     display: none;
   }
-  /*.basic_fe_mobile_block .list_price-no-link > li > span, .basic_fe_mobile_block .list_price-no-link li > span {
-    display: block !important;
-  }*/
 }
 
 .padding-reset {
@@ -793,9 +769,6 @@ th .table_title {
   .list_price-no-link {
     padding: 0 !important;
   }
-/*  .coming_soon_block ul li b {
-    float: left;
-  }*/
   .basic_wr.span-list-block .basic_fe .list_price-no-link > li > span, .premium_wr.span-list-block .premium_fe .list_price-no-link li > span {
     display: block !important;
   }
@@ -806,9 +779,6 @@ th .table_title {
     margin-top: -12px;
 }
 }
-/*.border-none{
-  border: none;
-}*/
 .row-pricing-panel .priceb .list_price ul, .row-pricing-panel .pricep .list_price ul {
   margin-bottom: 10px;
   padding: 0;
@@ -824,13 +794,10 @@ th .table_title {
 .row-pricing-panel .basic_wr + .premium_wr .premium_h {
   border-right: 1px solid #41a9a0;
 }
-/* ------------- \\ my settings ------------- */
 .none-uppercase {
     text-transform: none !important;
 }
 
-
-/*old css*/
 .table_header span:first-child {
   padding: 0;
   vertical-align: middle;
@@ -872,7 +839,6 @@ th .table_title {
     } 
 }
 
-/* ------------- \\ PLANS -------------- */
 .row-pricing-panel .basic_wr .priceb .list-plans, 
 .row-pricing-panel .premium_wr .pricep .list-plans {
     clear: both;
@@ -950,14 +916,12 @@ th .table_title {
 
 .box-plans-package {
     position: relative;
-/*    margin: 0px;*/
 }
  
 .box-plans-package:first-child { border-left: 1px solid #d8f3f1; }
 .box-plans-package {
     border-top: 1px solid #d8f3f1;
     border-bottom: 1px solid #d8f3f1;
-/*    border-right: 1px solid #d8f3f1;*/
 }
 
 #list-plans-premium-package {
@@ -1042,11 +1006,9 @@ th .table_title {
     width: 76px;
 }
 .label_radio .sp_price {
-/*    width: auto;*/
     width: 70px;
 }
 
-/* ================== \\ Coming soon ================ */
 .coming-soon-icons {
     margin: 0 15px !important;
     display: inline-block;
@@ -1057,7 +1019,6 @@ th .table_title {
 }
 
 .coming_soon_block ul li span {
-/*    display: inline-block;*/
     display: inline;
     text-align: left;
 }
@@ -1069,10 +1030,6 @@ th .table_title {
         display: block;
         text-align: center;
       }
-    
-/*    .coming_soon_block ul li span {
-        display: inline;
-    }*/
 }
 
 .cs-ico-skype {
@@ -1110,7 +1067,6 @@ th .table_title {
 }
 
 .fulfill-link .store-full-link {
-/*    margin-top: 5px;*/
     vertical-align: middle;
     float: none;
     right: 0;
@@ -1118,7 +1074,6 @@ th .table_title {
 
 .fulfill-link .store-full-link i {
     position: relative;
-/*    top: 3px;*/
     font-size: 12px;
     font-weight: 400;
     line-height: 12px;
@@ -1154,11 +1109,6 @@ th .table_title {
     }
 }
 
-/* {
-    min-height: 120px;  
-    height: auto;
-}*/
-
 .icloud-iphone-without-jailbreak-monitoring .premium_wr .premium_fe .list_price-no-link li,
 .icloud-iphone-without-jailbreak-monitoring .basic_wr .basic_fe .list_price-no-link li {
     min-height: 70px;  
@@ -1175,10 +1125,4 @@ th .table_title {
         min-height: auto !important;  
         height: auto !important;
     }
-    
-/*    .icloud-iphone-without-jailbreak-monitoring .basic_wr .basic_fe .list_price-no-link li, 
-    .icloud-iphone-without-jailbreak-monitoring .premium_wr .premium_fe .list_price-no-link li{
-           height: auto;
-           min-height: auto;
-    }*/
 }

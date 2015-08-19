@@ -7,32 +7,35 @@
                 <span id="title-recommended">Recommended by:</span>
             </div>
             
-            <div class="item">
-                <attr>
-                    <img src="/images/recommended/small/forbes.png" width="88px" height="39px" alt="" />
-                </attr>
+            <div class="row-item">
+                <div class="item">
+                    <attr>
+                        <img class="ri-forbes" src="/images/recommended/small/forbes.png" alt="" />
+                    </attr>
+                </div>
+                <div class="item">
+                    <attr>
+                        <img class="ri-wsj" src="/images/recommended/small/wsj.png" alt="" />
+                    </attr>
+                </div>
+                <div class="item">
+                    <attr>
+                        <img class="ri-c_net" src="/images/recommended/small/c_net.png" alt="" />
+                    </attr>
+                </div>
+                <div class="item">
+                    <attr>
+                        <img class="ri-tc" src="/images/recommended/small/tc.png" alt="" />
+                    </attr>
+                </div>
             </div>
-            <div class="item">
-                <attr>
-                    <img src="/images/recommended/small/wsj.png" width="59px" height="57px" alt="" />
-                </attr>
-            </div>
-            <div class="item">
-                <attr>
-                    <img src="/images/recommended/small/c_net.png" width="60px" height="60px" alt="" />
-                </attr>
-            </div>
-            <div class="item">
-                <attr>
-                    <img src="/images/recommended/small/tc.png" width="139px" height="20px" alt="" />
-                </attr>
-            </div>
+            
             <div class="member-of item">
                 <span id="title-recommended">Member of:</span>
             </div>
             <div class="item">
                 <attr>
-                    <img src="/images/recommended/small/anti_bullying.png" width="177px" height="71px" alt="" />
+                    <img class="ri-anti-bullying" src="/images/recommended/small/anti_bullying.png" alt="" />
                 </attr>
             </div>
         </div> 

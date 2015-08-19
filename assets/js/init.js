@@ -1,3 +1,16 @@
+// fix ie8 - 10
+var alertFallback = false;
+if (typeof console === "undefined" || typeof console.log === "undefined") {
+ console = {};
+ if (alertFallback) {
+     console.log = function(msg) {
+          alert(msg);
+     };
+ } else {
+     console.log = function() {};
+ }
+}
+
 (function( $ ){
       var $_result = {
           '_plans': false,
@@ -855,7 +868,7 @@ $(document).ready(function(){
          onsubmit: true,
          focusInvalid: false,
          focusCleanup: false,
-         debug: true,
+         debug: false,
        'device-model': {
             required: true
         },
@@ -989,7 +1002,7 @@ $(document).ready(function(){
          onsubmit: true,
          focusInvalid: false,
          focusCleanup: false,
-         debug: true,
+         debug: false,
        'carrier': {
             required: true
         },
@@ -1236,7 +1249,7 @@ $(document).ready(function(){
         onsubmit: true,
         focusInvalid: false,
         focusCleanup: false,
-        debug: true,
+        debug: false,
         ignore: "not:hidden",
        'name': {
             required: true
@@ -1971,17 +1984,28 @@ $('form[name="send_find_phone"] button.event-submit').click(function(){
     
     // sticky
     if($('.sticky').length) {
-        var sticky = document.querySelector('.sticky');
-        var origOffsetY = (!sticky.offsetTop) ? 68 : sticky.offsetTop;
-
-        function onScroll(e) {
-            window.scrollY >= origOffsetY ? sticky.classList.add('fixed') :
-                                          sticky.classList.remove('fixed');
-                                  
-            console.log(window.scrollY+' = '+ origOffsetY);                      
-        }
-
-        document.addEventListener('scroll', onScroll);
+        
+        $(window).on('scroll', function() {
+            var windowTop = $(window).scrollTop();
+            if(windowTop > 68) {
+                $('.sticky').addClass('fixed');
+            } else {
+                $('.sticky').removeClass('fixed');
+            }
+        });
+        
+        
+//        var sticky = document.querySelector('.sticky');
+//        var origOffsetY = (!sticky.offsetTop) ? 68 : sticky.offsetTop;
+//
+//        function onScroll(e) {
+//            window.scrollY >= origOffsetY ? sticky.classList.add('fixed') :
+//                                          sticky.classList.remove('fixed');
+//                                  
+//            console.log(window.scrollY+' = '+ origOffsetY);                      
+//        }
+//
+//        document.addEventListener('scroll', onScroll);
     }
     /*$(".blocks-sticky").autofix_anything({
       customOffset: false, // You can define custom offset for when you want the container to be fixed. This option takes the number of pixels from the top of the page. The default value is false which the plugin will automatically fix the container when the it is in the viewport
@@ -2058,5 +2082,12 @@ $('form[name="send_find_phone"] button.event-submit').click(function(){
 //                               'height': height,
 //                               'width': width});
 //    });
+
+
+
+//    $(window).on('load resize', function() {
+//         console.log($(this).width());
+//    });    
+
 
 }); 

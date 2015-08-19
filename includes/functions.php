@@ -966,6 +966,11 @@ function smarty_function_EndContent() {
     echo "</div></div></div></div>";
 }
 
+// youtube URL
+function smarty_modifier_getYoutubeUrl($links) {
+    echo $links.(parse_url($links, PHP_URL_QUERY) ? '&' : '?') . "rel=nofollow";
+}
+
 function smarty_function_initBefore() {      
     // initPages();
 }

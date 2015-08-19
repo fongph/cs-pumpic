@@ -1,5 +1,3 @@
-
-        
     <div class="tab col-item-3 col-md-item-3 col-sm-item-3">
         <ul>
             <li><i class="i-features-sms"></i> <span onclick="window.location='http://{$domain}/mobile-sms-spy.html'">Monitor SMS and MMS</span></li>

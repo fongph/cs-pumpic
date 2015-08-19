@@ -34,7 +34,7 @@
                         } 
                         
                          <div class="row">
-                            <div class="col-sm-10 col-md-10 col-lg-10 col-lg-offset-1">
+                            <div class="col-sm-10 col-md-10 col-lg-10 col-lg-offset-1 padding-null">
                                 
                                     <!-- form free trial -->
                                     <div class="row block-items">

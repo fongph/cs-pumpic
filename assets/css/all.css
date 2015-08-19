@@ -5244,6 +5244,7 @@ div[id^="attachment_"], div[id*=" attachment_"] {
     background: #fff;
     color: #555762;
     padding: 20px 10px 15px;
+    width: 100%;
 }
 
 #item-form-trial #table-container .rowspan > span {
@@ -5285,7 +5286,6 @@ div[id^="attachment_"], div[id*=" attachment_"] {
     font-size: 23px;
     font-weight: bold;
 } 
-
 
 #free_trial_registration {
     color: #606060;

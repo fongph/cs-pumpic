@@ -6823,6 +6823,45 @@ body:after {
   opacity: 1;
 }
 
+.h10 {
+   height: 10px; 
+}
+.h20 {
+   height: 20px; 
+}
+.h30 {
+   height: 30px;
+}
+.h40 {
+  height: 40px;  
+}
+.h50 {
+  height: 50px;  
+}
+.h52 {
+   height: 52px; 
+}
+
+.h60 {
+   height: 60px; 
+}
+
+.h70 {
+   height: 70px; 
+}
+
+.h80 {
+   height: 80px; 
+}
+
+.h90 {
+   height: 90px; 
+}
+
+.h100 {
+  height: 100px;  
+}
+
 .list_numbers_green {
    counter-reset:li; 
    margin-left:0;
@@ -7562,7 +7601,7 @@ div.symbol {
 .fz25 { font-size: 25px; }
 .fz26 { font-size: 26px; }
 .fz27 { font-size: 27px; }
-.fz28 { font-size: 28px; }
+.fz28 { font-size: 28px !important; }
 .fz29 { font-size: 29px; }
 .fz30 { font-size: 30px; }
 .fz31 { font-size: 31px; }
@@ -13359,6 +13398,7 @@ div[id^="attachment_"], div[id*=" attachment_"] {
     background: #fff;
     color: #555762;
     padding: 20px 10px 15px;
+    width: 100%;
 }
 
 #item-form-trial #table-container .rowspan > span {
@@ -13400,7 +13440,6 @@ div[id^="attachment_"], div[id*=" attachment_"] {
     font-size: 23px;
     font-weight: bold;
 } 
-
 
 #free_trial_registration {
     color: #606060;

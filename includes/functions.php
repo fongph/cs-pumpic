@@ -967,8 +967,8 @@ function smarty_function_EndContent() {
 }
 
 // youtube URL
-function smarty_modifier_getYoutubeUrl($links) {
-    echo $links.(parse_url($links, PHP_URL_QUERY) ? '&' : '?') . "rel=nofollow";
+function smarty_function_getAddUrl($links, $get) {
+    echo $links.(parse_url($links, PHP_URL_QUERY) ? '&' : '?'). $get;
 }
 
 function smarty_function_initBefore() {      
@@ -990,6 +990,25 @@ function initPages() {
         
     }
     
+}
+
+function smarty_modifier_matchtrue($value=null)
+{
+   return $value?true:false;
+} 
+
+function smarty_function_robotsClose($params, $template) { 
+    $_result = 'false';
+    if(isset($_GET) and is_array($_GET)) {
+        foreach($_GET as $key => $value) {
+            if(preg_match('/^gclid(.*)|^utm(.*)/is', trim(strtolower( $key )) )) {
+                $_result = 'true';
+                break;
+            }
+        }
+    }
+    
+    $template->assign('robotClose', $_result);
 }
 
 class PageNotFoundException extends Exception {}

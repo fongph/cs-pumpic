@@ -25,7 +25,7 @@
                                         <div class="block-video-button">
                                             <div class="video-arrows-v2"></div>
                                             <div class="box-hover">
-                                                <a class="youtube" href="{$block_video_src}"
+                                                <a class="youtube" href="{$block_video_src}" rel="nofollow"
                                                    {*data-toggle="modal" *}
                                                    
                                                    {*data-src="{$block_video_src}" 
@@ -225,7 +225,7 @@
                                             <div class="video-arrows-v2 pc-version"></div>
                                             <div class="mobile-video-arrows"></div>
                                             <div class="box-hover">
-                                                <a class="youtube" href="{$block_video_src}"
+                                                <a class="youtube" href="{$block_video_src}" rel="nofollow"
                                                    {*data-toggle="modal" *}
                                                    {*data-src="{$block_video_src}" 
                                                    data-height="520" 
@@ -255,7 +255,7 @@
                                         
                                         <div class="mobile-block-video-button">
                                             <div class="mobile-video-arrows"></div>
-                                            <a class="youtube" href="{$block_video_src}"
+                                            <a class="youtube" href="{$block_video_src}" rel="nofollow"
                                                {*data-toggle="modal"*} 
                                                {*data-src="{$block_video_src}" 
                                                data-height="520" 

@@ -10,6 +10,7 @@
                             
                         </div>
                         <div class="col-lg-3 col-md-3 col-sm-3 col-lg-offset-1 col-md-offset-1 col-sm-offset-1">
+                            <div>
                                 <h3>COMPANY</h3>
                                 <ul class="list_grey">
                                         <li>
@@ -25,15 +26,30 @@
                                             <a href="/contact-us.html">Contact us</a>
                                         </li>*}
                                          <li>
-                                            <a href="/security/">Security</a>
+                                            <a href="/security/">{*Security*}Child Security Blog</a>
                                         </li>
-                                        <li>
+                                        {*<li>
                                             <a href="/how-to-monitor-social-networks.html">How to Monitor Social Networks</a>
                                         </li>
                                         <li>
                                             <a href="/gps-wireless-tracking-phone.html">Wireless Phone Tracking</a>
-                                        </li>
+                                        </li>*}
                                 </ul>
+                            </div>
+                            <div>
+                                <h3>USEFUL INFO</h3>
+                                <ul class="list_grey">
+                                    <li>
+                                        <a href="/how-to-monitor-social-networks.html">How to Monitor Social Networks</a>
+                                    </li>
+                                    <li>
+                                        <a href="/child-online-mobile-security.html">Mobile Security Infographic</a>
+                                    </li>
+                                    <li>
+                                        <a href="/reviews/">Best Mobile Trackers</a>
+                                    </li>
+                                </ul>        
+                            </div>    
                         </div>
                         {include file="../../includes/main/main-footer-our-products.tpl"}
                 </div>

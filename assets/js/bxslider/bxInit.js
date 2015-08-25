@@ -1,6 +1,6 @@
 $(document).ready(function(){ 
     
-    if(!$('.bxSliders.only-mobile') && !$('.bxSliders.only-pc')) {
+    if($('.bxSliders').not('.only-mobile') && $('.bxSliders').not('.only-pc')) {
         var bxSliders = $('.bxSliders').bxSlider({
                 slideWidth: 1170,
                 minSlides: 1,

@@ -4,7 +4,12 @@
 
         <div class="row">
 
-            <div class="col-lg-10 col-lg-offset-1 banner-header">
+            {assign 'bottom_padding_null' ''}
+            {if isset($block_video) && $block_video == "yes" && isset($block_video_src) && $block_video_src != ""}
+                {assign 'bottom_padding_null' 'yes'}    
+            {/if}    
+            
+            <div class="col-lg-10 col-lg-offset-1 banner-header {if $bottom_padding_null == "yes"}bottom_padding_null{/if}">
                 {assign var="position" value=" "|explode:$imgAlign}
                     {assign var="h_title" value="h1"}
                 {if isset($styleTitle)}
@@ -65,7 +70,7 @@
                                     
                                     {if isset($flagName)}
                                     <div class="clearfix">    
-                                        <div class='block-table right'>
+                                        <div class='block-table right border-none'>
                                             <div class='table-row'>
                                             {if isset($flagPosition) && $flagPosition == 'left'}
                                                 <div class='table-cell col-xs-sm-2 col-md-2 col-lg-2 vertical-aligh-middle pr-5 pl-0 {*padding-null mr5*}'>
@@ -218,29 +223,38 @@
                         {if in_array('right', $position)}
                         <td class='col-xs-sm-12 col-s-sm-12 col-sm-12 col-md-5 col-lg-5{if $imgVerticalAlign == 'bottom'} vertical-aligh-bottom{/if}'>
                             <div class="visual-images-right {if $block_video}box-video-constructors{/if}">
-                                 <img src="{$img}/{$imgUrl}" alt="{$imgAlt}" class="visual-img-pc {if isset($maxWidth)}max-width-{$maxWidth}{/if}"> 
-                                 {if isset($block_video) && $block_video == "yes" && isset($block_video_src) && $block_video_src != ""}
-                                    <div id="block-video">
-                                        <div class="block-video-button">
-                                            <div class="video-arrows-v2 pc-version"></div>
-                                            <div class="mobile-video-arrows"></div>
-                                            <div class="box-hover">
-                                                <a class="youtube" href="{$block_video_src}" rel="nofollow"
-                                                   {*data-toggle="modal" *}
-                                                   {*data-src="{$block_video_src}" 
-                                                   data-height="520" 
-                                                   data-width="820"*} 
-                                                   {*data-target="#myModal"*} 
-                                                   id="openBtnVideo"> 
-                                                    {*<img src="{$img}/video/video-button-play.png" class="video-buttons" />*}
-                                                    <img src="{$img}/video/button_shadows.png" class="video-buttons-v2" />
-                                                    
-                                                    <img src="{$img}/video/hover-video-button-play.png" class="hover-video-buttons" />
-                                                </a>
+                                <div class="mobile-none w100p"> 
+                                    <img src="{$img}/{$imgUrl}" alt="{$imgAlt}" class="visual-img-pc {if isset($maxWidth)}max-width-{$maxWidth}{/if}"> 
+                                     {if isset($block_video) && $block_video == "yes" && isset($block_video_src) && $block_video_src != ""}
+                                        <div id="block-video">
+                                            <div class="block-video-button">
+                                                <div class="video-arrows-v2 pc-version"></div>
+                                                <div class="mobile-video-arrows"></div>
+                                                <div class="box-hover">
+                                                    <a class="youtube" href="{$block_video_src}" rel="nofollow"
+                                                       id="openBtnVideo"> 
+                                                        <img src="{$img}/video/button_shadows.png" class="video-buttons-v2" />
+                                                        <img src="{$img}/video/hover-video-button-play.png" class="hover-video-buttons" />
+                                                    </a>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                {/if}
+                                    {/if}
+                                </div>
+                                
+                                <div class="mobile-block style-youtube">
+                                    {if isset($block_video) && $block_video == "yes" && isset($block_video_src) && $block_video_src != ""}
+                                        <img src="{$img}/video/v2/m_bg_video.jpg" class="visual-img-pc pb20" width="206px" height="116px" />    
+                                        <div class="box-button-video">
+                                            <a class="youtube" href="{$block_video_src}" rel="nofollow"
+                                                id="openBtnVideo">
+                                            </a>
+                                        </div>
+                                    {else}
+                                        <img src="{$img}/{$imgUrl}" alt="{$imgAlt}" class="visual-img-pc {if isset($maxWidth)}max-width-{$maxWidth}{/if}">
+                                    {/if}    
+                                </div>
+                                
                             </div>
                         </td>
                         {/if}
@@ -249,25 +263,51 @@
                         {if in_array('bottom', $position)}
                         <td class='col-xs-sm-12 col-s-sm-12 col-sm-12 col-md-6 col-log-5'>
                             <div class="col-xs-sm-8 col-s-sm-10 col-sm-10 visual-images-bottom mobile-version-inline model-center {if $block_video}box-video-constructors{/if}">
-                                 <img src="{$img}/{$imgUrl}" alt="{$imgAlt}" class="visual-img-pc">   
+                                <div class="mobile-none">
+                                    <img src="{$img}/{$imgUrl}" alt="{$imgAlt}" class="visual-img-pc">  
+                                    {if isset($block_video) && $block_video == "yes" && isset($block_video_src) && $block_video_src != ""}
+                                        <div id="mobile-block-video" class="row">
+                                            <div class="mobile-block-video-button">
+                                                <div class="mobile-video-arrows"></div>
+                                                <a class="youtube" href="{$block_video_src}" rel="nofollow"
+                                                    id="openBtnVideo">
+                                                    <img src="{$img}/video/m-video-button-play.png" class="mobile-video-buttons" />
+                                                </a>
+                                            </div>
+                                        </div>
+                                    {/if}
+                                </div>
+                                
+                                <div class="mobile-block style-youtube">
+                                    
+                                    {if isset($block_video) && $block_video == "yes" && isset($block_video_src) && $block_video_src != ""}
+                                        <img src="{$img}/video/v2/m_bg_video.jpg" class="visual-img-pc pb20" width="206px" height="116px" />
+                                        <div class="box-button-video">
+                                            <a class="youtube" href="{$block_video_src}" rel="nofollow"
+                                                id="openBtnVideo">
+                                            </a>
+                                        </div>
+                                    {else}
+                                        <img src="{$img}/{$imgUrl}" alt="{$imgAlt}" class="visual-img-pc"> 
+                                    {/if}    
+                                </div>
+                                
+                                {* 
+                                <img src="{$img}/{$imgUrl}" alt="{$imgAlt}" class="visual-img-pc">   
                                  {if isset($block_video) && $block_video == "yes" && isset($block_video_src) && $block_video_src != ""}
                                     <div id="mobile-block-video" class="row">
                                         
                                         <div class="mobile-block-video-button">
                                             <div class="mobile-video-arrows"></div>
                                             <a class="youtube" href="{$block_video_src}" rel="nofollow"
-                                               {*data-toggle="modal"*} 
-                                               {*data-src="{$block_video_src}" 
-                                               data-height="520" 
-                                               data-width="820" *}
-                                               {*data-target="#myModal"*} id="openBtnVideo">
+                                                id="openBtnVideo">
                                                 <img src="{$img}/video/m-video-button-play.png" class="mobile-video-buttons" />
                                             </a>
                                             
-                                            {*<img src="{$img}/video/hover-video-button-play.png" class="mobile-hover-video-buttons" />*} 
                                         </div>
                                     </div>
                                 {/if}
+                                *}
                             </div> 
                         </td>
                         {/if}

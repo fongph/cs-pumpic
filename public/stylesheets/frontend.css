@@ -6823,6 +6823,14 @@ body:after {
   opacity: 1;
 }
 
+.pl15-imp {
+    padding-left: 15px !important;
+}
+
+.w100p {
+  width: 100%;  
+}
+
 .h10 {
    height: 10px; 
 }
@@ -7080,6 +7088,9 @@ a.a-default:hover {
     .pc-border-bottom {
         border-bottom: none;
     }
+    
+    .mobile-block { display: block; }
+    .mobile-none { display: none; }
 }
 @media (min-width: 468px) {
     .block-text-center, .block-text-left, .block-text-right {
@@ -7101,7 +7112,16 @@ a.a-default:hover {
     .pc-border-bottom {
         border-bottom: none;
     }
+    
+    .mobile-block { display: block; }
+    .mobile-none { display: none; }
 }    
+
+@media (min-width: 500px) { 
+    .mobile-block { display: none; }
+    .mobile-none { display: block; }
+}
+
 @media (min-width: 768px) {
     .block-text-center, .block-text-left, .block-text-right {
         text-align: center;
@@ -7122,6 +7142,9 @@ a.a-default:hover {
     .pc-border-bottom {
         border-bottom: 1px solid #e7e7e7;
     }
+    
+    .mobile-block { display: none; }
+    .mobile-none { display: inline-block; }
 }
 
 @media (min-width: 992px) {
@@ -7150,6 +7173,9 @@ a.a-default:hover {
     .pc-border-bottom {
         border-bottom: 1px solid #e7e7e7;
     }
+    
+    .mobile-block { display: none; }
+    .mobile-none { display: inline-block; }
 }
 
 @media (min-width: 1200px) { 
@@ -7179,6 +7205,8 @@ a.a-default:hover {
         border-bottom: 1px solid #e7e7e7;
     }
     
+    .mobile-block { display: none; }
+    .mobile-none { display: inline-block; }
 }
 
 .block-table {
@@ -7432,6 +7460,12 @@ legend {
     }
 }
 
+@media (max-width: 500px) {
+    .bottom_padding_null {
+        padding-bottom: 0px !important; 
+    }
+}
+
 #block-content {
     counter-reset: section;
 }
@@ -7503,11 +7537,17 @@ div.symbol {
   text-decoration: none;
 }
 
+@media (max-width: 768px) {  
+    .nav > li > a.btn-orange {
+        font-size: 19px !important;
+    }
+}
+
 @media (max-width: 992px) { 
     .nav > li > a.btn-orange {
         display: block;
         border-radius: 0px;
-        font-size: 16px !important;
+        font-size: 16px; /* !important */
         font-weight: 300 !important;
         padding: 0px !important;
         line-height: 20px !important;
@@ -15784,7 +15824,8 @@ th .table_title {
   width: 50%;
 }
 .bg_bottom_images .visual-img-pc {
-  bottom: -1px;
+  bottom: -6px; /* -1 */
+  position: relative;
 }
 .box-bottom-images .banner-header {
   overflow: hidden;
@@ -17681,18 +17722,22 @@ th .table_title {
 .block-android .banner-header,
 .block-iso .banner-header {
 /*    padding-top: 81px;*/
-    padding-top: 20px;
+/*    padding-top: 20px;*/
 }
 
-.block-android .visual-img-pc,
 .block-iso .visual-img-pc {
     margin-top: 0px;
-    bottom: 0px;
+/*    bottom: 0px;*/
 }
 
 .box-bottom-images .banner-header {
     padding-top: 20px;
     padding-bottom: 0px;
+}
+
+.block-ios .visual-img-pc {
+    bottom: -5px;
+    position: relative;
 }
 
 @media only screen and (max-width: 480px) {
@@ -17706,10 +17751,12 @@ th .table_title {
         padding: 0px;
     }
     
-    
-    .block-android .visual-img-pc,
     .block-iso .visual-img-pc {
         margin-top: 20px;
+    }
+    
+    .block-ios .visual-img-pc { 
+        bottom: 0px;
     }
     
 }
@@ -17723,12 +17770,21 @@ th .table_title {
     .block-android .banner-header {
         padding: 0px;
     }
-    
-    .block-android .visual-img-pc,
+
     .block-iso .visual-img-pc {
         margin-top: 20px;
     }
+    
+    .block-ios .visual-img-pc { 
+        bottom: 0px;
+    }
 }    
+
+@media (min-width: 700px) { 
+    .block-ios .visual-img-pc { 
+        bottom: 0px;
+    }
+}
 
 @media (min-width: 768px) {
     .block-ios .banner-header,
@@ -17736,8 +17792,8 @@ th .table_title {
         padding: 0px;
     } 
     
-    .block-android .visual-img-pc {
-        margin-top: 20px;
+    .block-ios .visual-img-pc { 
+        bottom: -5px;
     }
 }    
 
@@ -17762,13 +17818,13 @@ th .table_title {
     
     .block-ios .visual-img-pc {
         margin-top: 0px;
-        bottom: 0px;
+/*        bottom: 0px;*/
     }
     
-    .block-android .visual-img-pc {
-        margin-top: 0px;
-/*        width: 40%;*/
+    .block-ios .visual-img-pc { 
+        bottom: -5px;
     }
+    
 }
 
 @media (min-width: 1200px) { 
@@ -17798,8 +17854,11 @@ th .table_title {
     }
     
     .block-android .visual-img-pc {
-        margin-top: 20px;
         width: 100%;
+    }
+    
+    .block-ios .visual-img-pc { 
+        bottom: -5px;
     }
 }
 
@@ -23316,7 +23375,7 @@ body {
 .box-video-constructors {
     position: relative;
 }
-.box-video-constructors > img {
+.box-video-constructors img {
     z-index: 10;
 }
 
@@ -23325,8 +23384,8 @@ body {
     cursor: pointer;
 }
 
-.box-video-constructors > div#block-video,
-.box-video-constructors > div#mobile-block-video {
+.box-video-constructors div#block-video,
+.box-video-constructors div#mobile-block-video {
     display: inline-block;
     position: absolute;
     top: 0;
@@ -23386,6 +23445,50 @@ body {
     top: -26px;
 }
 
+
+/* ------------- style youtube ---------------- */
+.style-youtube {
+    position: relative;
+}
+.style-youtube img {}
+
+.visual-images-right .style-youtube img {
+    margin: 12px auto auto;
+}
+
+.block-android .visual-images-right > div.mobile-none {
+    margin-top: 0px;
+}
+
+
+.style-youtube .visual-img-pc {
+    bottom: 0px;
+}
+
+.icloud-iphone-without-jailbreak-monitoring .visual-images-right {
+    margin-top: 0px;
+}
+
+.style-youtube .box-button-video {
+    top: 0px;
+    left: 0px;
+    display: inline-block;
+    z-index: 50;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.style-youtube .box-button-video .youtube {
+    display: block;
+    width: 76px;
+    height: 54px;
+    margin: 25px auto 0;
+    background: url('../images/video/v2/m_b_video.png') no-repeat;
+}
+.style-youtube .box-button-video .youtube:hover {
+    background: url('../images/video/v2/m_b_video_hover.png') no-repeat;
+}
+
 /* ----------- response mobile --------- */
 
 /* margin-left: -53.5px;
@@ -23419,10 +23522,15 @@ body {
 }*/
 
 @media only screen and (max-width: 468px) {
-    .box-video-constructors .mobile-video-arrows,
+/*    .box-video-constructors .mobile-video-arrows,
     .visual-images-right.box-video-constructors .mobile-video-arrows {  
         display: none !important;
     }
+    
+    .box-video-constructors .block-video-button { 
+        margin-left: -53.5px;
+        margin-top: -42.5px;
+    }*/
     
 /*    .visual-images-right.box-video-constructors .mobile-video-arrows { 
         display: block;
@@ -23437,17 +23545,23 @@ body {
         width: 120px;
     } */
     
-    .box-video-constructors .block-video-button { 
-        margin-left: -53.5px;
-        margin-top: -42.5px;
+    .visual-img-video {
+        bottom: 0px;
+        margin: 12px auto 0px;
+        text-align: center;
     }
     
+    .block-android .visual-images-right > div.mobile-none {
+        margin-top: 20px;
+        position: relative;
+    }
+
 }
 
 
 
 @media (min-width: 468px) {
-    .visual-images-right.box-video-constructors .mobile-video-arrows { 
+/*    .visual-images-right.box-video-constructors .mobile-video-arrows { 
         left: -107px;
         top: -26px;
         width: 120px;
@@ -23456,6 +23570,17 @@ body {
     .box-video-constructors .block-video-button { 
         margin-left: -53.5px;
         margin-top: -42.5px;
+    }*/
+
+    .visual-img-video {
+        bottom: 0px;
+        margin: 12px auto 0px;
+        text-align: center;
+    }
+    
+    .block-android .visual-images-right > div.mobile-none {
+        margin-top: 20px;
+        position: relative;
     }
 }
 
@@ -23485,6 +23610,13 @@ body {
     }
 }
 
+@media (min-width: 770px) { 
+    .visual-img-video {
+        bottom: 0px;
+        margin: 0px auto;
+    }
+}
+
 @media (min-width: 768px) { 
     .visual-images-right.box-video-constructors .mobile-video-arrows { 
         display: block;
@@ -23502,6 +23634,11 @@ body {
     .box-video-constructors .block-video-button { 
         margin-left: -53.5px;
         margin-top: -42.5px;
+    }
+    
+    .block-android .visual-images-right > div.mobile-none {
+        margin-top: 20px;
+        position: relative;
     }
 }
 
@@ -23523,6 +23660,16 @@ body {
         margin-left: -53.5px;
         margin-top: -69.5px;
     }
+    
+    .visual-img-video {
+        position: relative;
+        margin: auto 0px;
+    }  
+    
+    .block-android .visual-images-right > div.mobile-none {
+        margin-top: 0px;
+        position: relative;
+    }
 }
 
 @media (min-width: 1200px) { 
@@ -23542,6 +23689,16 @@ body {
     .box-video-constructors .block-video-button { 
         margin-left: -53.5px;
         margin-top: -69.5px;
+    }
+    
+    .visual-img-video {
+        bottom: 0px;
+        margin: auto 0px;
+    }  
+    
+    .block-android .visual-images-right > div.mobile-none {
+        margin-top: 20px;
+        position: relative;
     }
 }
 
@@ -23793,43 +23950,43 @@ body {
 }
 
 /* =================== protect-your-little-kids ========================= */
-.protect-your-little-kids .box-video-constructors > div#block-video {
+.protect-your-little-kids .box-video-constructors div#block-video {
     top: 40px;
 }
 @media (max-width: 360px) {
-    .protect-your-little-kids .box-video-constructors > div#block-video {
+    .protect-your-little-kids .box-video-constructors div#block-video {
         top: 0px;
     }
 }
 @media only screen and (max-width: 410px) { 
-    .protect-your-little-kids .box-video-constructors > div#block-video {
+    .protect-your-little-kids .box-video-constructors div#block-video {
         top: 20px;
     }
 }
 @media (min-width: 468px) {
-    .protect-your-little-kids .box-video-constructors > div#block-video {
+    .protect-your-little-kids .box-video-constructors div#block-video {
         top: 20px;
     }
 }
 
 @media (min-width: 500px) {
-    .protect-your-little-kids .box-video-constructors > div#block-video {
+    .protect-your-little-kids .box-video-constructors div#block-video {
         top: 25px;
     }
 }
 
 @media (min-width: 768px) {
-    .protect-your-little-kids .box-video-constructors > div#block-video {
+    .protect-your-little-kids .box-video-constructors div#block-video {
         top: 30px;
     }
 }
 @media (min-width: 992px) { 
-    .protect-your-little-kids .box-video-constructors > div#block-video {
+    .protect-your-little-kids .box-video-constructors div#block-video {
         top: 60px;
     }
 }
 @media (min-width: 1200px) { 
-    .protect-your-little-kids .box-video-constructors > div#block-video {
+    .protect-your-little-kids .box-video-constructors div#block-video {
         top: 60px;
     }
 }

@@ -7,18 +7,22 @@
 .block-android .banner-header,
 .block-iso .banner-header {
 /*    padding-top: 81px;*/
-    padding-top: 20px;
+/*    padding-top: 20px;*/
 }
 
-.block-android .visual-img-pc,
 .block-iso .visual-img-pc {
     margin-top: 0px;
-    bottom: 0px;
+/*    bottom: 0px;*/
 }
 
 .box-bottom-images .banner-header {
     padding-top: 20px;
     padding-bottom: 0px;
+}
+
+.block-ios .visual-img-pc {
+    bottom: -5px;
+    position: relative;
 }
 
 @media only screen and (max-width: 480px) {
@@ -32,10 +36,12 @@
         padding: 0px;
     }
     
-    
-    .block-android .visual-img-pc,
     .block-iso .visual-img-pc {
         margin-top: 20px;
+    }
+    
+    .block-ios .visual-img-pc { 
+        bottom: 0px;
     }
     
 }
@@ -49,12 +55,21 @@
     .block-android .banner-header {
         padding: 0px;
     }
-    
-    .block-android .visual-img-pc,
+
     .block-iso .visual-img-pc {
         margin-top: 20px;
     }
+    
+    .block-ios .visual-img-pc { 
+        bottom: 0px;
+    }
 }    
+
+@media (min-width: 700px) { 
+    .block-ios .visual-img-pc { 
+        bottom: 0px;
+    }
+}
 
 @media (min-width: 768px) {
     .block-ios .banner-header,
@@ -62,8 +77,8 @@
         padding: 0px;
     } 
     
-    .block-android .visual-img-pc {
-        margin-top: 20px;
+    .block-ios .visual-img-pc { 
+        bottom: -5px;
     }
 }    
 
@@ -88,13 +103,13 @@
     
     .block-ios .visual-img-pc {
         margin-top: 0px;
-        bottom: 0px;
+/*        bottom: 0px;*/
     }
     
-    .block-android .visual-img-pc {
-        margin-top: 0px;
-/*        width: 40%;*/
+    .block-ios .visual-img-pc { 
+        bottom: -5px;
     }
+    
 }
 
 @media (min-width: 1200px) { 
@@ -124,8 +139,11 @@
     }
     
     .block-android .visual-img-pc {
-        margin-top: 20px;
         width: 100%;
+    }
+    
+    .block-ios .visual-img-pc { 
+        bottom: -5px;
     }
 }
 

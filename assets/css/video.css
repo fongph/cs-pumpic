@@ -1,7 +1,7 @@
 .box-video-constructors {
     position: relative;
 }
-.box-video-constructors > img {
+.box-video-constructors img {
     z-index: 10;
 }
 
@@ -10,8 +10,8 @@
     cursor: pointer;
 }
 
-.box-video-constructors > div#block-video,
-.box-video-constructors > div#mobile-block-video {
+.box-video-constructors div#block-video,
+.box-video-constructors div#mobile-block-video {
     display: inline-block;
     position: absolute;
     top: 0;
@@ -71,6 +71,50 @@
     top: -26px;
 }
 
+
+/* ------------- style youtube ---------------- */
+.style-youtube {
+    position: relative;
+}
+.style-youtube img {}
+
+.visual-images-right .style-youtube img {
+    margin: 12px auto auto;
+}
+
+.block-android .visual-images-right > div.mobile-none {
+    margin-top: 0px;
+}
+
+
+.style-youtube .visual-img-pc {
+    bottom: 0px;
+}
+
+.icloud-iphone-without-jailbreak-monitoring .visual-images-right {
+    margin-top: 0px;
+}
+
+.style-youtube .box-button-video {
+    top: 0px;
+    left: 0px;
+    display: inline-block;
+    z-index: 50;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.style-youtube .box-button-video .youtube {
+    display: block;
+    width: 76px;
+    height: 54px;
+    margin: 25px auto 0;
+    background: url('../images/video/v2/m_b_video.png') no-repeat;
+}
+.style-youtube .box-button-video .youtube:hover {
+    background: url('../images/video/v2/m_b_video_hover.png') no-repeat;
+}
+
 /* ----------- response mobile --------- */
 
 /* margin-left: -53.5px;
@@ -104,10 +148,15 @@
 }*/
 
 @media only screen and (max-width: 468px) {
-    .box-video-constructors .mobile-video-arrows,
+/*    .box-video-constructors .mobile-video-arrows,
     .visual-images-right.box-video-constructors .mobile-video-arrows {  
         display: none !important;
     }
+    
+    .box-video-constructors .block-video-button { 
+        margin-left: -53.5px;
+        margin-top: -42.5px;
+    }*/
     
 /*    .visual-images-right.box-video-constructors .mobile-video-arrows { 
         display: block;
@@ -122,17 +171,23 @@
         width: 120px;
     } */
     
-    .box-video-constructors .block-video-button { 
-        margin-left: -53.5px;
-        margin-top: -42.5px;
+    .visual-img-video {
+        bottom: 0px;
+        margin: 12px auto 0px;
+        text-align: center;
     }
     
+    .block-android .visual-images-right > div.mobile-none {
+        margin-top: 20px;
+        position: relative;
+    }
+
 }
 
 
 
 @media (min-width: 468px) {
-    .visual-images-right.box-video-constructors .mobile-video-arrows { 
+/*    .visual-images-right.box-video-constructors .mobile-video-arrows { 
         left: -107px;
         top: -26px;
         width: 120px;
@@ -141,6 +196,17 @@
     .box-video-constructors .block-video-button { 
         margin-left: -53.5px;
         margin-top: -42.5px;
+    }*/
+
+    .visual-img-video {
+        bottom: 0px;
+        margin: 12px auto 0px;
+        text-align: center;
+    }
+    
+    .block-android .visual-images-right > div.mobile-none {
+        margin-top: 20px;
+        position: relative;
     }
 }
 
@@ -170,6 +236,13 @@
     }
 }
 
+@media (min-width: 770px) { 
+    .visual-img-video {
+        bottom: 0px;
+        margin: 0px auto;
+    }
+}
+
 @media (min-width: 768px) { 
     .visual-images-right.box-video-constructors .mobile-video-arrows { 
         display: block;
@@ -187,6 +260,11 @@
     .box-video-constructors .block-video-button { 
         margin-left: -53.5px;
         margin-top: -42.5px;
+    }
+    
+    .block-android .visual-images-right > div.mobile-none {
+        margin-top: 20px;
+        position: relative;
     }
 }
 
@@ -208,6 +286,16 @@
         margin-left: -53.5px;
         margin-top: -69.5px;
     }
+    
+    .visual-img-video {
+        position: relative;
+        margin: auto 0px;
+    }  
+    
+    .block-android .visual-images-right > div.mobile-none {
+        margin-top: 0px;
+        position: relative;
+    }
 }
 
 @media (min-width: 1200px) { 
@@ -227,6 +315,16 @@
     .box-video-constructors .block-video-button { 
         margin-left: -53.5px;
         margin-top: -69.5px;
+    }
+    
+    .visual-img-video {
+        bottom: 0px;
+        margin: auto 0px;
+    }  
+    
+    .block-android .visual-images-right > div.mobile-none {
+        margin-top: 20px;
+        position: relative;
     }
 }
 
@@ -478,43 +576,43 @@
 }
 
 /* =================== protect-your-little-kids ========================= */
-.protect-your-little-kids .box-video-constructors > div#block-video {
+.protect-your-little-kids .box-video-constructors div#block-video {
     top: 40px;
 }
 @media (max-width: 360px) {
-    .protect-your-little-kids .box-video-constructors > div#block-video {
+    .protect-your-little-kids .box-video-constructors div#block-video {
         top: 0px;
     }
 }
 @media only screen and (max-width: 410px) { 
-    .protect-your-little-kids .box-video-constructors > div#block-video {
+    .protect-your-little-kids .box-video-constructors div#block-video {
         top: 20px;
     }
 }
 @media (min-width: 468px) {
-    .protect-your-little-kids .box-video-constructors > div#block-video {
+    .protect-your-little-kids .box-video-constructors div#block-video {
         top: 20px;
     }
 }
 
 @media (min-width: 500px) {
-    .protect-your-little-kids .box-video-constructors > div#block-video {
+    .protect-your-little-kids .box-video-constructors div#block-video {
         top: 25px;
     }
 }
 
 @media (min-width: 768px) {
-    .protect-your-little-kids .box-video-constructors > div#block-video {
+    .protect-your-little-kids .box-video-constructors div#block-video {
         top: 30px;
     }
 }
 @media (min-width: 992px) { 
-    .protect-your-little-kids .box-video-constructors > div#block-video {
+    .protect-your-little-kids .box-video-constructors div#block-video {
         top: 60px;
     }
 }
 @media (min-width: 1200px) { 
-    .protect-your-little-kids .box-video-constructors > div#block-video {
+    .protect-your-little-kids .box-video-constructors div#block-video {
         top: 60px;
     }
 }

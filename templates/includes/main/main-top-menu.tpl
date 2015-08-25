@@ -29,7 +29,7 @@
                     {/if*}    
 
                     <!-- Collect the nav links, forms, and other content for toggling -->
-                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <div class="collapse navbar-collapse pl15-imp" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav">
                             <li {if isset($topmenu_active) && $topmenu_active=='home'} class="active"{/if}>
                                 <a href="/">Home</a>

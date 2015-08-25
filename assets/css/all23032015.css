@@ -809,7 +809,8 @@ th .table_title {
   width: 50%;
 }
 .bg_bottom_images .visual-img-pc {
-  bottom: -1px;
+  bottom: -6px; /* -1 */
+  position: relative;
 }
 .box-bottom-images .banner-header {
   overflow: hidden;

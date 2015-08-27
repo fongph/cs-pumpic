@@ -315,7 +315,8 @@ class Phpmail extends Settings
                  
                     $eventManager = \EventManager\EventManager::getInstance();
                     $eventManager->emit('front-contact-us-completed', array(
-                        'email' => $params['email']
+                        'email' => $params['email'],
+                        'name' => $params['name']
                     ));
                     
                     $this ->updateOptionValue('contactUs_pumpic', $_uid);

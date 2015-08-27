@@ -72,7 +72,8 @@ if(isset($_POST['email']) and !$obj -> validateEmail($_POST['email'])) {
         
         $eventManager = EventManager\EventManager::getInstance();
         $eventManager->emit('front-registration-trial-completed', array(
-            'userId' => $_result['user_id']
+            'userId' => $_result['user_id'],
+            'name' => $_name
         ));
     } 
 }

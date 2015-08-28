@@ -714,7 +714,7 @@ div.symbol {
 
 @media (max-width: 768px) {  
     .nav > li > a.btn-orange {
-        font-size: 19px !important;
+        font-size: 16px !important;
     }
 }
 

@@ -7082,7 +7082,12 @@ div.blockquate_bottom {
     .navbar-nav > li > a {
         font-size: 19px;
     }
+    
+    .nav > li > a.btn-orange {
+        font-size: 19px !important;
+    }
 }
+
 
 .collapse.in {
   display: block !important;

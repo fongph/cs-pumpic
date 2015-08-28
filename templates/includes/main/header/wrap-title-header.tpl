@@ -6,7 +6,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1">
         <meta name="wot-verification" content="1b0ee71fe52ad3e5bff4"/>
         <!--[if lt IE 9]>
         <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">

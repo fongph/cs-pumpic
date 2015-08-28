@@ -1705,12 +1705,15 @@ $(document).ready(function(){
       _premium.find('.label_radio').on('click', function() {
           var  _val = $(this).children('input').val();
           var curr = $(this);
+          
           _premium.find('.label_radio').each(function(){
               $(this).removeClass('r_on'); 
               $(this).addClass('r_off');
           });
+          
           curr.removeClass('r_off'); 
           curr.addClass('r_on');
+          
          _input_premium.val(_val);
         }); 
         

@@ -73,12 +73,15 @@
 											<br />The reasons for no refund can be the following:</p>
 									</div>
 									<ul class="feature_list">
-										<li>The target device does not have the Internet access any longer (no money left on balance, temporary service interruptions, roaming-related problems etc.).</li>
+                                                                                <li>The target device is no longer connected to the Internet for some reasons (empty balance, network interruptions, roaming-related issues etc.). Please also note that the iCloud solution requires a strong and stable Wi-Fi signal.</li>
+										{*<li>The target device does not have the Internet access any longer (no money left on balance, temporary service interruptions, roaming-related problems etc.).</li>*}
 										<li>A mobile operator is changed by the target phone user, which leads to the loss of the Internet connectivity and consequently to an improper functioning of Pumpic.</li>
 										<li>The target device has been reset to the original factory settings or Pumpic app has been removed from the target device.</li>
 										<li>A customer did not follow the installation guidelines provided by our customer support, which resulted in the failure to install the app.</li>
 										<li>A customer does not have physical access to the target device or Apple ID and the password for iCloud account of the target device (in case of using iCloud monitoring solution).</li>
+                                                                                <li>A client uses iCloud solution and refuses to check backup settings or perform a backup manually.</li>
                                                                                 <li>A customer purchased the iCloud solution subscription, but intended to monitor activities beyond the provided jailbreak-free feature list (Text Messages, Calls, Browsing History, Bookmarks, Location, Calendar, Contacts, Photos, Notes, Skype, WhatsApp).</li>
+                                                                                <li>A client intended to use iCloud solution for monitoring the data that had been deleted from the target device before a backup was performed.</li>
                                                                                 <li>A customer didn’t know the app is visible to the user of the target phone.</li>
 										<li>A customer didn’t receive previous data from the target device because Pumpic had not been installed at that time.</li>
 										<li>The target device uses Symbian Belle, Windows Phone OS, Bada OS, or any other operating system, which is not listed on our Compatibility page.</li>
@@ -90,7 +93,8 @@
 										<li>A customer intended to monitor web activities of non-standard web-browsers, except for Internet and Google Chrome on Android OS), and Safari on iOS.</li>
 										<li>The target device is switched/replaced.</li>
 										<li>A customer refuses to update the application or OS version after the technical issues have been resolved successfully.</li>
-										<li>A customer cannot utilize the application properly due to the functioning of any anti-virus, other software, or other spyware installed on the target device.</li>
+                                                                                <li>A client refuses to provide print-screens from the target device required for handling a technical problem or proving proper setup.</li>
+                                                                                <li>A customer cannot utilize the application properly due to the functioning of any anti-virus, other software, or other spyware installed on the target device.</li>
 										<li>No refund is issued if the Keylogger feature does not work because the target device user uses a Keyboard different from US English.</li>
 										<li>A customer cannot or does not want to additionally enable the Keylogger feature on the target Android device following the instructions provided by Pumpic customer support.</li>
 									</ul>

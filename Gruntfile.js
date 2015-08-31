@@ -18,6 +18,7 @@ module.exports = function (grunt) {
                     './assets/js/easyTooltip.js', 
                     './assets/js/jquery.simplePagination.js',
                     './assets/js/jquery.validate.js', 
+                    './assets/js/stickybar/jquery.sticky-kit.js',
                     './assets/js/translite/jquery.synctranslit.js', 
                     './assets/js/money/money.js',
                     './assets/js/currancy.js', 

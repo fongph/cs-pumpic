@@ -713,6 +713,30 @@ $(document).ready(function(){
         return false;
     });
 
+    if($('#item-stickybar').length) {
+        // $("#item-stickybar").trigger("sticky_kit:detach");
+    // $("#item-stickybar").stick_in_parent();
+    
+    
+        $('.list_category > li').each(function(key, val) {
+            $('#item-stickybar.stickybar-'+key).stick_in_parent();
+            console.log( 'key = '+key );
+        });
+    
+    
+//        $("#item-stickybar").each(function(key, val) {
+//            console.log(key);
+//            $(this).stick_in_parent();
+//        });
+    
+//        $("#item-stickybar").stick_in_parent({
+//        parent: "#items-stickybar",
+//        spacer: "#item-stickybar"
+//      });
+    }
+    
+
+
     if($('.list_category > li > a[data-toggled="on"]').length) {
         $.each($('.list_category > li > a[data-toggled="on"]'), function() {
             $('.box_category > ul > li').hide();
@@ -770,6 +794,8 @@ $(document).ready(function(){
                     $(this).parent().removeClass('active');
                $('.box_category > ul > li').show();
         }
+        
+       // $('#item-stickybar').trigger("sticky_kit:recalc");
         
         return false;
     });
@@ -2092,5 +2118,7 @@ $('form[name="send_find_phone"] button.event-submit').click(function(){
 //         console.log($(this).width());
 //    });    
 
+
+    
 
 }); 

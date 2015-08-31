@@ -48,9 +48,9 @@
                             </div>
                             <!-- END -->
 
-                            {include file='../../includes/content/phone/blog-phone-sticky-in-blocks.tpl'
+                            {*include file='../../includes/content/phone/blog-phone-sticky-in-blocks.tpl'
                                      position="right"   
-                            }
+                            *}
                         </div>
                         
                         <!-- ContactUs -->
@@ -67,8 +67,7 @@
                         </div>
 
 
-                        <!-- End -->
-
+                        <!-- End -->   
                         <div id="block-git" class="row">
                             <div class="col-lg-12">
                                 <div class="tab_category">
@@ -82,8 +81,8 @@
                                                     
                                                     <h2 class="title color-green text-left bold">Common Slang Terms</h2>
                                                     <p class="text-justify {*font-light*}">Below is the list of the most popular terms and abbreviations teenagers use while chatting online or writing text messages. Have a look and try to keep them in mind to know whether your kid is hiding something from you.</p>
-                                                    <div class="row block-content background-width">    
-                                                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                                                    <div class="{*row*} block-content background-width clearfix">    
+                                                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
                                                             <ul class="list_orange_circle">
                                                                 <li>4Q – F*** You</li>   
                                                                 <li>143 / 459 – I Love You</li>
@@ -156,8 +155,10 @@
                                                                 <li>WTH – What The Hell?</li>
                                                             </ul>
                                                         </div>
-                                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-                                                            <img class="git-img img-common model-center pt10" src="{$img}/learning_center/glossary-internet-terms/m_common.jpg">
+                                                        <div id="item-stickybar" {*id="items-stickybar"*} class="stickybar-0 col-lg-4 col-md-4 col-sm-4 col-xs-4 position-static">
+                                                            {*<div id="item-stickybar">*}
+                                                                <img class="git-img img-common model-center pt10 only-pc" src="{$img}/learning_center/glossary-internet-terms/m_common.jpg">
+                                                            {*</div>*}
                                                         </div>
                                                     </div>
                                                 </div>
@@ -170,8 +171,8 @@
                                                     
                                                     <h2 class="title color-green text-left bold">Sexting Slang Terms</h2>
                                                     <p class="text-justify {*font-light*}">Sexting refers to sending messages with sexual content, primarily via SMS, IM chats and online communication. Know the following list of the most widely used sexting terms to prevent your kids from online predators and other possible dangers on the web.</p>
-                                                    <div class="row block-content background-width">    
-                                                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                                                    <div class="{*row*} block-content background-width clearfix">    
+                                                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
                                                             <ul class="list_orange_circle">
                                                                 <li>8 – Oral Sex</li>
                                                                 <li>53X – Sex</li>
@@ -218,8 +219,8 @@
                                                                 <li>WYRN – What's Your Real Name?</li>
                                                             </ul>
                                                         </div>
-                                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-                                                            <img class="git-img img-sexting model-center pt10" src="{$img}/learning_center/glossary-internet-terms/m_sexting.jpg">
+                                                        <div id="item-stickybar" class="stickybar-1 col-lg-4 col-md-4 col-sm-4 col-xs-4 position-static">
+                                                            <img class="git-img img-sexting model-center pt10 only-pc" src="{$img}/learning_center/glossary-internet-terms/m_sexting.jpg">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -232,8 +233,8 @@
                                                     
                                                     <h2 class="title color-green text-left bold">Drug Slang Terms</h2>
                                                     <p class="text-justify {*font-light*}">Below is the list of the most popular illicit drugs and their street names. Keep them in mind and check if your kids use any of them. If they do, consider that they are a footstep from possible danger. Prevent your children from using drugs before it’s tool late.</p>
-                                                    <div class="row block-content background-width">    
-                                                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                                                    <div class="{*row*} block-content background-width clearfix">    
+                                                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
                                                             <ul class="list_orange_circle">
                                                                 <li>
                                                                     <label>Cocaine</label>
@@ -317,8 +318,8 @@
                                                                 </li>
                                                             </ul>
                                                         </div>
-                                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-                                                            <img class="git-img img-drug model-center pt10" src="{$img}/learning_center/glossary-internet-terms/m_drug.jpg">
+                                                        <div id="item-stickybar" class="stickybar-2 col-lg-4 col-md-4 col-sm-4 col-xs-4 position-static">
+                                                            <img class="git-img img-drug model-center pt10 only-pc" src="{$img}/learning_center/glossary-internet-terms/m_drug.jpg">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -331,8 +332,8 @@
                                                     
                                                     <h2 class="title color-green text-left bold">Online Dating Slang Terms</h2>
                                                     <p class="text-justify {*font-light*}">Below is the list of terms commonly used in online dating. Have a look at them and keep in mind. Check if your children use any of them. Do not let strangers or online predators contact your kids with inappropriate offers. Prevent danger before it has happened.</p>
-                                                    <div class="row block-content background-width">    
-                                                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                                                    <div class="{*row*} block-content background-width clearfix">    
+                                                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
                                                             <ul class="list_orange_circle">
                                                                 <li>BBW – Big Beautiful Woman</li>
                                                                 <li>BDSM – Bondage/Discipline/Sadomasochism</li>
@@ -395,8 +396,8 @@
                                                                 <li>w/ – With</li>
                                                             </ul>
                                                         </div>
-                                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-                                                            <img class="git-img img-dating model-center pt10" src="{$img}/learning_center/glossary-internet-terms/m_dating.jpg">
+                                                        <div id="item-stickybar" class="stickybar-3 col-lg-4 col-md-4 col-sm-4 col-xs-4 position-static">
+                                                            <img class="git-img img-dating model-center pt10 only-pc" src="{$img}/learning_center/glossary-internet-terms/m_dating.jpg">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -409,8 +410,8 @@
                                                     
                                                     <h2 class="title color-green text-left bold">Technical Online Terms</h2>
                                                     
-                                                    <div class="row block-content background-width">    
-                                                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                                                    <div class="{*row*} block-content background-width clearfix">    
+                                                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
                                                             <ul class="list_orange_circle">
                                                                 <li>
                                                                     <b>PC</b> – personal computer.
@@ -443,8 +444,8 @@
                                                                 <li><b>Search Engine</b> – special software designed and integrated into a web browser to search information on the web. Popular search engines: Google, Bing, Yahoo, Ask.</li>
                                                             </ul>
                                                         </div>
-                                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-                                                            <img class="git-img img-technical model-center pt10" src="{$img}/learning_center/glossary-internet-terms/m_technical.jpg">
+                                                        <div id="item-stickybar" class="stickybar-4 col-lg-4 col-md-4 col-sm-4 col-xs-4 position-static">
+                                                            <img class="git-img img-technical model-center pt10 only-pc" src="{$img}/learning_center/glossary-internet-terms/m_technical.jpg">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -458,8 +459,8 @@
                                                     <h2 class="title color-green text-left bold">Popular Apps & Messengers</h2>
                                                     <p class="text-justify {*font-light*}">Below is the list of the most popular instant messengers among kids and teenagers. All of them provide communication benefits and connect people across the world. However, these online chats are supposed to be used by 12+ or even 17+ users. They bear real danger for children like sexting, online predators’ attacks, cyberbullying etc. That’s why parents must know and control instant messengers their children use.</p>
                                                     
-                                                    <div class="row block-content background-width">    
-                                                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                                                    <div class="{*row*} block-content background-width clearfix">    
+                                                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
                                                             <ul class="list_orange_circle">
                                                                 <li>
                                                                     <span class="color-green display-block">Skype</span>
@@ -595,8 +596,8 @@
                                                                 </li>
                                                             </ul>
                                                         </div>
-                                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-                                                            <img class="git-img img-apps_ims model-center pt10" src="{$img}/learning_center/glossary-internet-terms/m_technical.jpg">
+                                                        <div id="item-stickybar" class="stickybar-5 col-lg-4 col-md-4 col-sm-4 col-xs-4 position-static">
+                                                            <img class="git-img img-apps_ims model-center pt10 only-pc" src="{$img}/learning_center/glossary-internet-terms/m_technical.jpg">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -610,8 +611,8 @@
                                                     <h2 class="title color-green text-left bold">Emojis & Emoticons</h2>
                                                     <p class="text-justify {*font-light*}">One may wonder, where can be the harm of a cute smile :) At first sight, all these emojis and emoticons may seem honeyed nothings, however, even they happen to become a tool for offence and bullying.</p>
                                                     <p class="text-justify {*font-light*}">There is no point in showing the entire list of all possible smiles that might be use to bring about harm. There are too many of them. In addition, literally all of them if combined in a particular way might appear as offensive ones. Instead, let’s give an example from a real life experience.</p>
-                                                    <div class="row block-content background-width">    
-                                                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                                                    <div class="{*row*} block-content background-width clearfix">    
+                                                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
                                                             <ol class="list_numbers_green">
                                                                 <li>
                                                                     In South California, two men were accused of sending threatening emoticons to another person. The emoticons pictured a closed fist, an “L-shaped” hand gesture resembling a gun, and an ambulance. The situation was enhanced by the fact that the two men had a history of problems and at the same time previously tried to assault the addressee of the mentioned emoticons at his house. If convicted the two offenders will face up to five years in prison.
@@ -621,8 +622,8 @@
                                                                 </li>
                                                             </ol>
                                                         </div>
-                                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-                                                            <img class="git-img img-emojis model-center pt10" src="{$img}/learning_center/glossary-internet-terms/m_emojis.jpg">
+                                                        <div id="item-stickybar" class="stickybar-6 col-lg-4 col-md-4 col-sm-4 col-xs-4 position-static">
+                                                            <img class="git-img img-emojis model-center pt10 only-pc" src="{$img}/learning_center/glossary-internet-terms/m_emojis.jpg">
                                                         </div>
                                                     </div>
                                                 </div>

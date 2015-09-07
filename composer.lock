@@ -12,7 +12,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:boomersweb/cs-billing.git",
-                "reference": "b1c9ec79c1f58ab6a73530b99a673182caf3a8e2"
+                "reference": "ea074f5735f15dde7908a66ec0d46297f3881ae3"
             },
             "require": {
                 "boomers/cs-models": "dev-master",
@@ -31,7 +31,7 @@
             "license": [
                 "MIT"
             ],
-            "time": "2015-09-03 08:43:21"
+            "time": "2015-09-04 14:23:22"
         },
         {
             "name": "boomers/cs-mail",
@@ -66,7 +66,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:boomersweb/cs-models.git",
-                "reference": "a43b5909732ce5ee074a637f873e1be30ff66b2b"
+                "reference": "e6116e49ab613b0f015428d54efd21549b34de23"
             },
             "require": {
                 "php": ">=5.4.0"
@@ -80,7 +80,7 @@
                     "CS\\Models\\": "src/"
                 }
             },
-            "time": "2015-09-03 08:42:50"
+            "time": "2015-09-07 12:17:38"
         },
         {
             "name": "boomers/cs-settings",
@@ -88,7 +88,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:boomersweb/cs-settings.git",
-                "reference": "0820e0e4fd73c0c6c121e0ab12317b57bbeaa166"
+                "reference": "8e1443c099dc13884fe006eb24e2c7249cfdb77f"
             },
             "require": {
                 "php": ">=5.4.0"
@@ -99,7 +99,7 @@
                     "CS\\Settings\\": "src/"
                 }
             },
-            "time": "2015-08-20 07:04:12"
+            "time": "2015-09-03 08:59:39"
         },
         {
             "name": "boomers/cs-users",
@@ -107,7 +107,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:boomersweb/cs-users.git",
-                "reference": "be66b46c1063a322796f97ab035d0c110eb92414"
+                "reference": "fd26daae11e3fd9f28af0e3bd0ec7c72590057ce"
             },
             "require": {
                 "boomers/cs-mail": "dev-master",
@@ -131,7 +131,7 @@
             "license": [
                 "MIT"
             ],
-            "time": "2015-09-03 08:43:48"
+            "time": "2015-09-07 09:37:18"
         },
         {
             "name": "boomers/ip",

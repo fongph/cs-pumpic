@@ -605,6 +605,7 @@
 		var populatePager = function(){
 			var pagerHtml = '';
 			var pagerQty = getPagerQty();
+                        // console.log('pagerQty = '+ pagerQty);
 			// loop through each pager item
 			for(var i=0; i < pagerQty; i++){
 				var linkContent = '';
@@ -621,7 +622,8 @@
 				pagerHtml += '<div class="bx-pager-item"><a href="" data-slide-index="' + i + '" class="bx-pager-link">' + linkContent + '</a></div>';
 			}
 			// populate the pager element with pager links
-			slider.pagerEl.html(pagerHtml);
+                        if(pagerQty > 1)
+                            slider.pagerEl.html(pagerHtml);
 		};
 
 		/**

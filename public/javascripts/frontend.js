@@ -9975,9 +9975,9 @@ $(document).ready(function(){
                   'width': 'auto',
               });
           
-          console.log(' ---- Start width -------- ');
-          console.log(parent_outer_width, outer_width);
-          console.log( '-------- end ---------' );
+          //console.log(' ---- Start width -------- ');
+          //console.log(parent_outer_width, outer_width);
+          //console.log( '-------- end ---------' );
           
           if(_caption_text.length) {
               if(parent_outer_width > 0) {
@@ -10725,6 +10725,7 @@ $( window ).resize(function() {
 		var populatePager = function(){
 			var pagerHtml = '';
 			var pagerQty = getPagerQty();
+                        // console.log('pagerQty = '+ pagerQty);
 			// loop through each pager item
 			for(var i=0; i < pagerQty; i++){
 				var linkContent = '';
@@ -10741,7 +10742,8 @@ $( window ).resize(function() {
 				pagerHtml += '<div class="bx-pager-item"><a href="" data-slide-index="' + i + '" class="bx-pager-link">' + linkContent + '</a></div>';
 			}
 			// populate the pager element with pager links
-			slider.pagerEl.html(pagerHtml);
+                        if(pagerQty > 1)
+                            slider.pagerEl.html(pagerHtml);
 		};
 
 		/**
@@ -11663,61 +11665,33 @@ $( window ).resize(function() {
 })(jQuery);
 
 $(document).ready(function(){ 
+    var bxSliders = false;
+    var bxSlidersMobile = false;
+    var bxSlidersPC = false;
     
-    if($('.bxSliders').not('.only-mobile') && $('.bxSliders').not('.only-pc')) {
-        var bxSliders = $('.bxSliders').bxSlider({
-                slideWidth: 1170,
-                minSlides: 1,
-                controls: false,
-                wrapperClass: 'bx-wrapper-testimonials',
-            }); 
+    if($('.bxSliders').not('.only-mobile, .only-pc')) {
+        bxSliders = runSliders( $('.bxSliders').not('.only-mobile, .only-pc') );
     }
     
-    if($('.bxSliders.only-mobile')) {
-        var bxSlidersMobile = $('.bxSliders.only-mobile').bxSlider({
-            slideWidth: 1170,
-            minSlides: 1,
-            controls: false,
-            wrapperClass: 'bx-wrapper-testimonials',
-        }); 
-    }
-    
-    if($('.bxSliders.only-pc')) {
-        var bxSlidersPC = $('.bxSliders.only-pc').bxSlider({
-            slideWidth: 1170,
-            minSlides: 1,
-            controls: false,
-            wrapperClass: 'bx-wrapper-testimonials',
-            // moveSlides: 1,
-            // startSlide: 2,
-            // maxSlides: 10,
-            // slideMargin: 10
-
-    //        nextSelector: '#slider-next',
-    //        prevSelector: '#slider-prev',
-    //        nextText: 'Onward →',
-    //         prevText: '← Go back'
-        });
-    }
+    bxSlidersMobile = runSliders( $('.bxSliders.only-mobile') ); // :visible
+    bxSlidersPC = runSliders( $('.bxSliders.only-pc') ); // :visible
     
     $(window).on('load resize', function() {
-        // console.log($(this).width());
         if($(this).width() < 992) {
             
-            if($('.bxSliders').is('.only-mobile'))
-                bxSlidersMobile.reloadSlider();
+            if($('.bxSliders.only-mobile')) // .is(':visible')
+               bxSlidersMobile.reloadSlider();
             
-            if($('.bxSliders').is('.only-pc'))
-                bxSlidersPC.destroySlider();
+            if($('.bxSliders.only-pc')) // .not(':visible')
+               bxSlidersPC.destroySlider();
             
-//            if($('.bxSliders').is(':visible'))
-//                bxSliders.reloadSlider();
         } else {
-           if($('.bxSliders').is('.only-mobile')) 
-                bxSlidersMobile.destroySlider();
+           
+           if($('.bxSliders.only-mobile')) //.not(':visible') 
+               bxSlidersMobile.destroySlider();
             
-            if($('.bxSliders').is('.only-pc'))
-                bxSlidersPC.reloadSlider();
+            if($('.bxSliders.only-pc')) // .is(':visible')
+               bxSlidersPC.reloadSlider();
        }   
     });
     
@@ -11740,6 +11714,25 @@ $(document).ready(function(){
         }); 
     }
 });
+
+function runSliders( obj ) {
+    return obj.bxSlider({
+        slideWidth: 1170,
+        minSlides: 1,
+        controls: false,
+        wrapperClass: 'bx-wrapper-testimonials',
+        onSliderLoad: function(){
+            // alert( $('.bx-controls .bx-pager > .bx-pager-item').length );
+            if($('.bx-controls > .bx-pager > .bx-pager-item').length < 2) $('.bx-controls > .bx-pager > .bx-pager-item').hide(); 
+        },
+        onSlideBefore: function() {
+            
+        },
+        onSlideAfter: function(){
+            
+        },
+    }); 
+}
 //$(function() {
 //    
 //	$('._forward_pricing').on("click",function(){

@@ -913,7 +913,7 @@ function smarty_function_closeAccess($params, $template) {
 }
 
 function dieAccess() {
-    if(in_array(@$_SERVER['REMOTE_ADDR'], ['213.160.158.7', '176.38.120.13', '212.90.60.74', '192.168.40.22', '162.243.217.155', '127.0.0.1', '::1'])) {
+    if(in_array(@$_SERVER['REMOTE_ADDR'], ['93.79.221.182', '213.160.158.7', '176.38.120.13', '212.90.60.74', '192.168.40.22', '162.243.217.155', '127.0.0.1', '::1'])) {
         $_result = true;
     } else
         $_result = false;

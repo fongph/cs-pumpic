@@ -1,7 +1,8 @@
+
 {include file='../includes/main/main-header.tpl'
     robots="yes" 
-    title="Parental Monitoring App Australia"
-    description="Pumpic is modern monitoring software designed for parents to protect their children remotely. Track cell phone usage and online activities, follow location all over Australia."
+    title="Child Mobile Phone Tracking in Australia"
+    description="Monitor your kids on a phone all over Australia. View calls, text messages, location, browsing history, social media, and even more. Track your child with Pumpic app in Australia."
 }    
     
 <body>
@@ -83,6 +84,105 @@
         </div>
 </div> 
 
+{Content 
+    styleTitle="h2"    
+    title="Online Danger Statistics & Facts"
+    blockBg='light'}
+        
+        <!-- BLOCK STATISTICK -->
+        <div class="block-statistick row">
+            
+            <div class="item col-s-sm-12 col-xs-sm-12 col-sm-4 col-md-4 col-lg-4">
+                <section>
+                    <div><strong class="fz50 color-orange">57%</strong></div>
+                    <span class="text-uppercase">
+                        children in Australia has a smartphone with online access.
+                    </span>
+                </section>
+            </div>
+            <div class="item col-s-sm-12 col-xs-sm-12 col-sm-4 col-md-4 col-lg-4">
+                <section>
+                    <div><strong class="fz50 color-orange">1 in 5</strong></div>
+                    <span class="text-uppercase">
+                        Australian children are bullied on the Internet each year.
+                    </span>
+                </section>
+            </div>
+			<div class="item col-s-sm-12 col-xs-sm-12 col-sm-4 col-md-4 col-lg-4">
+                <section>
+                    <div><strong class="fz50 color-orange">18%</strong></div>
+                    <span class="text-uppercase">
+                        kids have sent or received sexually suggestive photos and videos.
+                    </span>
+                </section>
+            </div>
+            
+        </div>
+        <!-- END -->
+
+        <p class="text-center f-light">Cyberbullying, online predator attacks, and sexting are Internet dangers children face world-widely each day. In fact, Australia is the third most searching country on the cyberbullying topic. More often than not parents know too little about what actually is going on with their kids online and even less about how to secure them. Sometimes such ignorance costs children lives.</p>
+{EndContent}
+		
+{Content 
+    styleTitle="h2"
+    title="Cyberbullying Remains One of Major Suicide Factors Among Teenagers"
+    blockBg='dark'}
+    
+    <div id="grid-images" class="row">
+        <div class="col-lg-9 col-md-9 col-sm-9">
+            <div class="pt15 pb20">
+                <ul>
+                    <li>17 year-old Allem Halkic had received over 300 threatening messages from a cyberbully within a few months, which ultimately forced him to commit suicide.</li> 
+                    <li>As reported by The Australian, 14 year-old Chanelle Rae took her own life after being cyberbullied for her appearance. Chanelle’s mother revealed her daughter had received an online threat a few hours before the suicide.</li>
+                </ul>
+                <p>The Internet is the environment our kids live in these days. If left without control and surveillance, this powerful source of useful information and knowledge may turn into direct threat to our children’s safety.</p>
+            </div>
+        </div>    
+        <div class="col-lg-3 col-md-3 col-sm-3 text-center">
+            <img alt="stop cyberbullying with Pumpic" src="{$img}/geo-lending/img_1.png" width="207px" height="208px" />
+        </div>
+    </div>    
+    
+    
+{EndContent}
+
+{Content 
+    styleTitle="h2"
+    title="The Government Takes Action"
+    blockBg='light'}
+    
+    <div id="grid-images" class="row">
+        <div class="col-lg-3 col-md-3 col-sm-3 text-center">
+            <img alt="how Australia government fights cyberbullying" src="{$img}/geo-lending/geo-lending_australia.png" width="207px" height="208px" />
+        </div>
+        <div class="col-lg-9 col-md-9 col-sm-9">
+            <div class="pt30 pb20">
+                <p>At struggle with online bullying and child abuse, the government of Australia works together with networks known for cyberbullying. Thus, kids and their parents can ask the government to remove humiliating content by making a formal complaint. If a network refuses to remove a harmful post, it is charged $17,000 fine for each day such content remains on the site.</p>
+                <p>The weakest point of the program is that most children refuse to inform parents about cyberbullying. They are simply afraid of abusers so much that will never tell anyone about it. Statistically, only 1 in 3 kids inform adults about being bellied online.</p>
+            </div>
+        </div>
+    </div>    
+    
+{EndContent}
+
+{Content 
+    styleTitle="h2"
+    title="Take Control – Protect Your Children on Your Own"
+    blockBg='dark'}
+    
+    <div id="grid-images" class="row">
+        <div class="col-lg-9 col-md-9 col-sm-9">
+            <div class="pt30 pb20">
+                <p>Thankfully, parents can take the issue into their own hands by means of mobile phone monitoring software. Available in Australia Pumpic parental control app allows tracking online activities and text communication remotely. It lets parents avert Internet dangers in the making and secure child safety. </p>
+                <p>Parental control proved to be the most effective tool against online bullying and child abuse.</p>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-3 text-center">
+            <img alt="child cell phone monitoring Australia" src="{$img}/geo-lending/img_2.png" width="207px" height="208px" />
+        </div>
+    </div>    
+{EndContent}
+
         {include file='../includes/content/features-table.tpl'
         title = "Pumpic Features"
         description = "Pumpic provides you with multi-featured parental control options and protects your family. Check out the entire list of useful monitoring functions below and keep your children safe."
@@ -100,7 +200,7 @@
         {include file='../includes/content/ipad.tpl' 
         blockBg="dark"
         imgUrl = "icons/lending_features_smartphone_monitoring.png"
-        imgAlt = "Easy-to-Use Control Panel"
+        imgAlt = "Pumpic parental monitoring Australia"
         title = "Remote Smartphone Monitoring"
         description = "Right after installing Pumpic, all the data from the target device will be sent to your Control Panel. It can be accessed from any browser and any gadget, including PCs, mobile phones and tablets. In Control Panel, you can not only view the information, but also set restrictions, block, and limit some of activities."
         }
@@ -108,32 +208,134 @@
 
         {include file='../includes/content/how-get-pumpic.tpl'
 		blockBg="light"
+                imgAlt = "Pumpic parental monitoring Australia"
 		}    
 
 <div class="dark">
     <div class="container">
-            <h2 class="text-center testimonial-title">Testimonials:</h2>
+            <h2 class="text-center testimonial-title">Trusted by Over 10 000 Customers Worldwide:</h2>
             <div class="row">
-                    <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
-                            <img src="{$img}/testimonials/charlotte.png" alt="" class="testimonial-photo">
-                            <div class="testimonial-text">
-                                    <h4>Charlotte F. – Melbourne, Victoria</h4>
-                                    <p>“My son is a huge fan of the Internet. He spends all the time he has online. I decided to get it under control and Pumpic helped me a lot. I set limits when he could use browsers and other network applications. I filtered 18+ websites as well. Thanks to Pumpic I have no worries any longer.”</p>
+                    <div class="bxSliders only-pc">
+                        <!-- SLIDE #1 -->
+                        <div class="slide">
+                            <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
+                                <img src="{$img}/testimonials/australia/1.png" alt="" class="testimonial-photo">
+                                <div class="testimonial-text">
+                                    <h4>Josh L. – Sydney, New South Wales</h4>
+                                    <p>“My son started acting weird a few weeks ago. His girlfriend told me some older boys bullied him at school and shared threatful comments under his posts on Instagram. I decided to get some reliable iPhone monitoring software and came across Pumpic. The app helped me handle the situation with those bullies and keeps helping me protect my boy on the Internet here and after.”</p>
+                                </div>
                             </div>
+                            <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
+                                <img src="{$img}/testimonials/australia/2.png" alt="" class="testimonial-photo">
+                                <div class="testimonial-text">
+                                    <h4>Megan Z. – Melbourne, Victoria</h4>
+                                    <p>“If you need to track a mobile phone in Australia, I would recommend you Pumpic. The app has so many useful features that I can easily keep an eye on my kids online and anywhere they go. Calls, text messages, locations, geo-fences, all Internet activities. Everything I need to protect my family is in one good app.”</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
+                                <img src="{$img}/testimonials/australia/3.png" alt="" class="testimonial-photo">
+                                <div class="testimonial-text">
+                                    <h4>Steven T. – Adelaide, South Australia</h4>
+                                    <p>“Children are addicted to online reality these days. To prevent my girls (12 and 14) from wasting time on the Internet I've installed Pumpic on their smartphones. This application is a helping hand for parents. I can see websites they visit, block inappropriate content and prevent my daughters from contacting strangers.”</p>
+                                </div>
+                            </div>
+                        </div> <!-- .slide-->
+    
+                        <!-- SLIDE #2 -->
+                        <div class="slide">
+                            <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
+                                <img src="{$img}/testimonials/australia/4.png" alt="" class="testimonial-photo">
+                                <div class="testimonial-text">
+                                    <h4>Maria O. – Canberra, ACT</h4>
+                                    <p>“It took me as much as a week to find a workable solution for my children online safety. After reading many reviews, forums, and taking advice of other moms Pumpic turned out to be one of the most reliable kid tracker apps in Australia. It includes all functions I need and is simple enough to use it without any technical skills.”</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
+                                <img src="{$img}/testimonials/australia/5.png" alt="" class="testimonial-photo">
+                                <div class="testimonial-text">
+                                    <h4>Michael P. – Brisbane, Queensland</h4>
+                                    <p>“My son always was a problem kid and I didn’t want him to get into troubles. That’s why I decided to monitor my kids phone, when we’d moved to Australia. I got Pumpic and started monitoring his activities both online and offline. I set geo-fences to prevent him from visiting restricted places and check when he comes back home. The app also lets me check his contacts. I would recommend Pumpic to all parents, as it really helps prevent kids from dangers.”</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
+                                <img src="{$img}/testimonials/australia/6.png" alt="" class="testimonial-photo">
+                                <div class="testimonial-text">
+                                    <h4>Zoe L. – Melbourne, Victoria</h4>
+                                    <p>“There are so many articles online telling how dangerous the Internet is for children, and so few tools that can really protect our little ones. Pumpic is what I can rely on. It lets me view calls and SMS my kids send and receive, follow where they go, see which sites they visit and block bad ones. So if you need a good tool to track your child, Pumpic app protects kids in Australia and over the world.”</p>
+                                </div>
+                            </div>
+                        </div> <!-- .slide-->
+                        <!-- END -->
+    
                     </div>
-                    <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
-                            <img src="{$img}/testimonials/zoe.png" alt="" class="testimonial-photo">
-                            <div class="testimonial-text">
-                                    <h4>Zoe D. – Canberra, Australian Capital Territory</h4>
-                                    <p>“I’m a single mom and sometimes have to work double tides. The app helps me take care of my kids when I can’t be near. I can easily follow their calls and SMS remotely from work, I can view their online messages and control web sources they visit. It’s a great help for me. Sincerely.”</p>
+    
+                    <div class="bxSliders only-mobile">
+                        <!-- SLIDE #1 -->
+                        <div class="slide">
+                            <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
+                                <img src="{$img}/testimonials/australia/1.png" alt="" class="testimonial-photo">
+                                <div class="testimonial-text">
+                                    <h4>Josh L. – Sydney, New South Wales</h4>
+                                    <p>“My son started acting weird a few weeks ago. His girlfriend told me some older boys bullied him at school and shared threatful comments under his posts on Instagram. I decided to get some reliable iPhone monitoring software and came across Pumpic. The app helped me handle the situation with those bullies and keeps helping me protect my boy on the Internet here and after.”</p>
+                                </div>
                             </div>
-                    </div>
-                    <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
-                            <img src="{$img}/testimonials/noah.png" alt="" class="testimonial-photo">
-                            <div class="testimonial-text">
-                                    <h4>Noah R. – Sydney, New South Wales</h4>
-                                    <p>“I twice busted my son watching 18+ videos on his tablet and unfortunately realized that my words and bans meant nothing to him. I installed Pumpic. I didn’t know it could be so useful. I can not only put websites on a blacklist, but also control calls, SMS and places he visits. A great app for parenting.”</p>
+                        </div> <!-- .slide-->
+
+                        <!-- SLIDE #2 -->
+                        <div class="slide">
+                            <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
+                                <img src="{$img}/testimonials/australia/2.png" alt="" class="testimonial-photo">
+                                <div class="testimonial-text">
+                                    <h4>Megan Z. – Melbourne, Victoria</h4>
+                                    <p>“If you need to track a mobile phone in Australia, I would recommend you Pumpic. The app has so many useful features that I can easily keep an eye on my kids online and anywhere they go. Calls, text messages, locations, geo-fences, all Internet activities. Everything I need to protect my family is in one good app.”</p>
+                                </div>
                             </div>
+                        </div> <!-- .slide-->
+                        <!-- SLIDE #3 -->
+                        <div class="slide">
+                            <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
+                                <img src="{$img}/testimonials/australia/3.png" alt="" class="testimonial-photo">
+                                <div class="testimonial-text">
+                                    <h4>Steven T. – Adelaide, South Australia</h4>
+                                    <p>“Children are addicted to online reality these days. To prevent my girls (12 and 14) from wasting time on the Internet I've installed Pumpic on their smartphones. This application is a helping hand for parents. I can see websites they visit, block inappropriate content and prevent my daughters from contacting strangers.”</p>
+                                </div>
+                            </div>
+                        </div> <!-- .slide-->
+                        
+                        <!-- SLIDE #4 -->
+                        <div class="slide">
+                            <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
+                                <img src="{$img}/testimonials/australia/4.png" alt="" class="testimonial-photo">
+                                <div class="testimonial-text">
+                                    <h4>Maria O. – Canberra, ACT</h4>
+                                    <p>“It took me as much as a week to find a workable solution for my children online safety. After reading many reviews, forums, and taking advice of other moms Pumpic turned out to be one of the most reliable kid tracker apps in Australia. It includes all functions I need and is simple enough to use it without any technical skills.”</p>
+                                </div>
+                            </div>
+                        </div> <!-- .slide-->
+                        
+                        <!-- SLIDE #5 -->
+                        <div class="slide">
+                            <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
+                                <img src="{$img}/testimonials/australia/5.png" alt="" class="testimonial-photo">
+                                <div class="testimonial-text">
+                                    <h4>Michael P. – Brisbane, Queensland</h4>
+                                    <p>“My son always was a problem kid and I didn’t want him to get into troubles. That’s why I decided to monitor my kids phone, when we’d moved to Australia. I got Pumpic and started monitoring his activities both online and offline. I set geo-fences to prevent him from visiting restricted places and check when he comes back home. The app also lets me check his contacts. I would recommend Pumpic to all parents, as it really helps prevent kids from dangers.”</p>
+                                </div>
+                            </div>
+                        </div> <!-- .slide-->
+                        
+                        <!-- SLIDE #6 -->
+                        <div class="slide">
+                            <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
+                                <img src="{$img}/testimonials/australia/6.png" alt="" class="testimonial-photo">
+                                <div class="testimonial-text">
+                                    <h4>Zoe L. – Melbourne, Victoria</h4>
+                                    <p>“There are so many articles online telling how dangerous the Internet is for children, and so few tools that can really protect our little ones. Pumpic is what I can rely on. It lets me view calls and SMS my kids send and receive, follow where they go, see which sites they visit and block bad ones. So if you need a good tool to track your child, Pumpic app protects kids in Australia and over the world.”</p>
+                                </div>
+                            </div>
+                        </div> <!-- .slide-->
+                        
+                        <!-- END -->
                     </div>
             </div>
     </div>

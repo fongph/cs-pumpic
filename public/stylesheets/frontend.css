@@ -8701,7 +8701,7 @@ div.blockquate_bottom {
   }
 }
 
-@media (max-width: 468px) { 
+@media (max-width: 1000px) { 
     .navbar-nav > li > a {
         font-size: 19px;
     }

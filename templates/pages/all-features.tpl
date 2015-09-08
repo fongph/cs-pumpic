@@ -83,7 +83,7 @@
                                                 <a class="underline go_block_scroll" href="#social">Online Chats</a>
                                                 <div class="bth-info">
                                                     <ul>
-                                                        <li>Facebook Messenger</li>
+                                                        <li>Facebook Messenger, Snapchat</li>
                                                         <li>WhatsApp, Viber, Skype, Kik</li>
                                                     </ul>
                                                 </div>
@@ -162,7 +162,7 @@
                                                 <div class="bth-info">
                                                     <ul>
                                                         <li>camera shots, downloaded files</li>
-                                                        <li>follow Instagram and Snapchat</li>
+                                                        <li>follow Instagram</li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -317,7 +317,7 @@
                                                     </div>
                                                     <div class="bth-info">
                                                         <ul>
-                                                            <li>Facebook Messenger</li>
+                                                            <li>Facebook Messenger, Snapchat</li>
                                                             <li>WhatsApp, Viber, Skype, Kik</li>
                                                         </ul>
                                                     </div>        
@@ -414,7 +414,7 @@
                                                     <div class="bth-info">
                                                         <ul>
                                                             <li>camera shots, downloaded files</li>
-                                                            <li>follow Instagram and Snapchat</li>
+                                                            <li>follow Instagram</li>
                                                         </ul>
                                                     </div>        
                                                 </div>

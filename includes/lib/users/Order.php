@@ -21,6 +21,7 @@ class Order extends ManagerUser
 {
     
     const PRODUCT_TYPE = 'first';
+    const SELLER = 'pumpic.com';
     
     private $_billing;
     private $_gateway;
@@ -102,8 +103,9 @@ class Order extends ManagerUser
         }
          $order->setStatus(OrderRecord::STATUS_PENDING) // ->setStatus(CS\Models\Order\OrderRecord::STATUS_PENDING) ::STATUS_CREATED
                 ->setPaymentMethod(OrderRecord::PAYMENT_METHOD_FASTSPRING)
-                -> setLocation( IP::getCountry($ip) ) 
-                -> save();
+                ->setLocation( IP::getCountry($ip) ) 
+                ->setSeller( self::SELLER ) 
+                ->save();
          
 //        // save referer and landing
         if($this ->getReferer() and $this ->getLanding()) { 
@@ -159,7 +161,8 @@ class Order extends ManagerUser
          $order->setStatus(OrderRecord::STATUS_COMPLETED) // ->setStatus(CS\Models\Order\OrderRecord::STATUS_PENDING) ::STATUS_CREATED 
                 ->setPaymentMethod(OrderRecord::PAYMENT_METHOD_INTERNAL)
                 ->setTrial(true) 
-                -> setLocation( IP::getCountry($ip) );
+                ->setLocation( IP::getCountry($ip) )
+                ->setSeller( self::SELLER );
          
          if($phone)
              $order -> setPhone( $phone );
@@ -227,6 +230,7 @@ class Order extends ManagerUser
         }
          $order->setStatus(OrderRecord::STATUS_PENDING) // ->setStatus(CS\Models\Order\OrderRecord::STATUS_PENDING) ::STATUS_CREATED
                 ->setPaymentMethod(OrderRecord::PAYMENT_METHOD_FASTSPRING)
+                ->setSeller( self::SELLER ) 
                 ->save();
 
         $orderProduct = $this -> _billing -> getOrderProduct();

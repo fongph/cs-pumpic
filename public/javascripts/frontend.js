@@ -8560,6 +8560,8 @@ $(document).ready(function(){
         //    $('form[name="send_find_phone"] label.error, form[name="send_find_phone"] label.invalid').remove();
     });   
     
+    
+    
     // compatibility_form
    var validator_send_mobile_operators_find_phone = $('form[name="send_mobile_operators_find_phone"]').validate({
          onfocusout: false,

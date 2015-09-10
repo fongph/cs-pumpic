@@ -3434,7 +3434,7 @@ function _LC_OPEN() {
 // LC_API.on_after_load = function()
 LC_API.on_before_load = function()
 {
-    console.log('LC_API:ON BEFORE');
+  //  console.log('LC_API:ON BEFORE');
     
     // setTimeout( _LC_OPEN, 1000*60*10); // 1000 - 1cек.
     
@@ -3470,7 +3470,7 @@ LC_API.on_before_load = function()
 //};
 
 LC_API.on_after_load = function() {
-    console.log('LC_API:ON AFTER');
+   // console.log('LC_API:ON AFTER');
     
     // LC_API.minimize_chat_window();
     

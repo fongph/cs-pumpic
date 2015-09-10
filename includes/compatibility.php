@@ -7,6 +7,9 @@
  * @var $urlParams array
  */
  
+$_inc = dirname(__FILE__); // includes
+$b_dir = dirname( $_inc ); // folder sites directory
+
 $filename = dirname(dirname(__FILE__)).'/templates/pages/compatibility.tpl';
 if(file_exists($filename)) {
     $LastModified_unix = filemtime($filename); // время последнего изменения страницы
@@ -25,6 +28,10 @@ if(file_exists($filename)) {
 
 use Models\Compatibility;
 require dirname( __DIR__ ).'/vendor/autoload.php';
+require_once $_inc.'/config.php';
+require_once $_inc.'/lib/class.phpmail.php';
+
+$_mail = new Phpmail( $config['db_blog'] );
 
 // echo "<pre>"; var_dump( $smarty ); echo "</pre>";
 
@@ -61,6 +68,38 @@ $smarty->assign('currentPage', $currentPage, false);
 $smarty->assign('pages', $paginationList, false);
 */
 
+$_result = array(
+        'error' => false,
+        'success' => false,
+    );
+
+if(isset($_POST['submit']) and $_POST['submit']) {
+
+    
+    // validate
+    if(isset($_POST['device-model']) and empty($_POST['device-model']))
+        $_result['error']['device_model'] = "This field is required.";
+
+    if(isset($_POST['email']) && empty($_POST['email'])) {
+        $_result['error']['email'] = 'The Email field is empty';
+    }elseif(isset($_POST['email']) and !$_mail->validateEmail($_POST['email'])) {
+       $_result['error']['email'] = "Invalid email format.";
+    }
+    
+    if(isset($_POST['captcha']) and !$_mail->validateCaptcha( $_POST['captcha'] )) 
+        $_result['error']['captcha'] = "Invalid CAPTCHA.";
+
+    if(!$_result['error']) {
+
+        if($successMail = $_mail -> _sendCompatibility($_POST)) {
+            $_result = array_merge($_result, $successMail);
+        }
+
+    }
+
+    if($_result['success']) unset($_POST);
+}
+
 // clearCahce
 if($smarty ->isCached('compatibility.tpl', 'compatibility_'.date("dmY", strtotime("now"))))
         $smarty -> clearCache('compatibility.tpl', 'compatibility_'.date("dmY", strtotime("now")));
@@ -78,4 +117,8 @@ if(!$smarty ->isCached('compatibility.tpl', $cache_id)) {
     $smarty->assign('domain', $config['domain']);
     $smarty->assign('api_device', $config['api_device']);
 }
+
+// init output params!
+$smarty->assign('getOut', $_result);
+
 $smarty->display('compatibility.tpl', $cache_id);

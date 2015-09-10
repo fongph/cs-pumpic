@@ -214,6 +214,7 @@
             <div class="col-lg-10 col-lg-offset-1">
                 <div class="row">
                     <div class="form">
+                        {* getOut = $getOut *}
                         {include file='../includes/main/form/main-compatibility-send-find-phone.tpl'
                             cache_id = "main-compatibility-send-find-phone"
                             nocache} 

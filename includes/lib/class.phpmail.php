@@ -77,9 +77,13 @@ class Phpmail extends Settings
         return $this;
     }
     
-    private function validateEmail($email)
+    public function validateEmail($email)
     {
 	return filter_var($email, FILTER_VALIDATE_EMAIL);
+    }
+    
+    public function validateCaptcha($captcha) {
+        return $this ->_order-> validateCaptcha( $captcha );
     }
     
     private function sendMAil() 

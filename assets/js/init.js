@@ -1020,8 +1020,6 @@ $(document).ready(function(){
         //    $('form[name="send_find_phone"] label.error, form[name="send_find_phone"] label.invalid').remove();
     });   
     
-    
-    
     // compatibility_form
    var validator_send_mobile_operators_find_phone = $('form[name="send_mobile_operators_find_phone"]').validate({
          onfocusout: false,
@@ -1089,7 +1087,7 @@ $(document).ready(function(){
             var $form = $(form);
             var _params = parseQuery($form.serializeArray());
 
-            var _response = getAjaxForm('/mobile_operators_send.html', _params);
+            var _response = getAjaxForm('/gps-wireless-tracking-phone.html', _params);
               if(_response.result) {
                   var _res = _response.result;
                   if(_res.error) {
@@ -1156,9 +1154,9 @@ $(document).ready(function(){
         //    $('form[name="send_mobile_operators_find_phone"] label.error, form[name="send_mobile_operators_find_phone"] label.invalid').remove();
     });   
     
-      
-   // validator faq (form-faq)
-   var validator_form_faq = $('form.form-faq').validate({
+ 
+   // validator faq (form-faq-send)
+   var validator_form_faq = $('form.form-faq-send').validate({
         onfocusout: false,
         focusInvalid: false,
        'name': {
@@ -1183,19 +1181,19 @@ $(document).ready(function(){
         errorClass: "invalid",
         validClass: "success",
         invalidHandler: function(event, validator) {
-            if($('form.form-faq span.info').length)
-                $('form.form-faq span.info').html( " " ).hide();
+            if($('form.form-faq-send span.info').length)
+                $('form.form-faq-send span.info').html( " " ).hide();
             
-            if($('form.form-faq .fatal-error').length)
-                $('form.form-faq .fatal-error').html( " " ).hide();
+            if($('form.form-faq-send .fatal-error').length)
+                $('form.form-faq-send .fatal-error').html( " " ).hide();
         },
 
         submitHandler: function( form ) {
-            if($('form.form-faq span.info').length)
-                $('form.form-faq span.info').html( " " ).hide();
+            if($('form.form-faq-send span.info').length)
+                $('form.form-faq-send span.info').html( " " ).hide();
             
-            if($('form.form-faq .fatal-error').length)
-                $('form.form-faq .fatal-error').html( " " ).hide();
+            if($('form.form-faq-send .fatal-error').length)
+                $('form.form-faq-send .fatal-error').html( " " ).hide();
 
             var $form = $(form);
             var _params = parseQuery($form.serializeArray());
@@ -1215,25 +1213,25 @@ $(document).ready(function(){
                               }
                           });
                       } else {
-                          $('form.form-faq .fatal-error').html( _res.error );
+                          $('form.form-faq-send .fatal-error').html( _res.error );
                       }
                       
                       
                       return false;
                   } else if(_res.success) {
-                      $('form.form-faq span.info').html( _res.success ).css({'display':'inline-block'});
+                      $('form.form-faq-send span.info').html( _res.success ).css({'display':'inline-block'});
                       
                       // google analitycs
                       ga('send', 'event', 'form', 'submit', 'faq-request-success');
 
                   } else {
-                      $('form.form-faq .fatal-error').html('Your email was not sent');
+                      $('form.form-faq-send .fatal-error').html('Your email was not sent');
                       console.log('System error!');
                       return false;
                   }    
 
               } else {
-                  $('form.form-faq .fatal-error').html('Your email was not sent'); 
+                  $('form.form-faq-send .fatal-error').html('Your email was not sent'); 
                   console.log('Can not get params in ajax!');
                   return false;
               }
@@ -1244,14 +1242,16 @@ $(document).ready(function(){
     });
     
    // clear info in focus 
-   $('form.form-faq input, form.form-faq textarea').focus(function() {
-//        if($('form.form-faq span.info').length)
-//            $('form.form-faq span.info').html( " " ).hide();
-//        if($('form.form-faq .fatal-error').length)
-//            $('form.form-faq .fatal-error').html( " " ).hide();
-//        if($('form.form-faq label.error, form.form-faq label.invalid').length)
-//            $('form.form-faq label.error, form.form-faq label.invalid').remove();
+   $('form.form-faq-send input, form.form-faq-send textarea').focus(function() {
+//        if($('form.form-faq-send span.info').length)
+//            $('form.form-faq-send span.info').html( " " ).hide();
+//        if($('form.form-faq-send .fatal-error').length)
+//            $('form.form-faq-send .fatal-error').html( " " ).hide();
+//        if($('form.form-faq-send label.error, form.form-faq-send label.invalid').length)
+//            $('form.form-faq-send label.error, form.form-faq-send label.invalid').remove();
     });
+    
+   
     
    /* validate contact us */
    $( 'form.form-contact-us select' )
@@ -1413,6 +1413,153 @@ $(document).ready(function(){
 //        if($('form.form-contact-us label.error, form.form-contact-us label.invalid').length)
 //            $('form.form-contact-us label.error, form.form-contact-us label.invalid').remove();
     });
+    
+    /* validate faq form */
+   $( 'form.form-faq select' )
+        .change(function () {
+            var _selected = false;
+            $('form.form-faq #wos').val('');
+            $(this).find( "option:selected" ).each(function() {
+                _selected = $( this ).val();
+            });
+            
+            if(_selected && _selected != '0') {
+                $('form.form-faq #wos').val( _selected ).valid();
+            }
+            // $(this).selectpicker('hide');
+        })
+            .change(); 
+    
+   
+   var validator_contact_us = $('form.form-faq').validate({
+        onfocusout: false,
+        onkeyup: false,
+        onclick: true,
+        onsubmit: true,
+        focusInvalid: false,
+        focusCleanup: false,
+        debug: false,
+        ignore: "not:hidden",
+       'name': {
+            required: true
+        },
+        'description': {
+            required: true
+        },
+        wos: {
+            required: true
+        },
+        email: {
+            required: true,
+            email: true
+        },
+        'captcha': {
+            required: true,
+        },
+        messages: {
+            'captcha': "Invalid CAPTCHA.", // The CAPTCHA field is empty.
+            name: "The Name field is empty",
+            description: 'The Question field is empty',
+            wos: 'The field Choose your OS is empty',
+            email: {
+                required: "The Email field is empty",
+                email: "Invalid email format"
+            },
+        },
+       
+        errorClass: "invalid",
+        validClass: "success",
+        invalidHandler: function(event, validator) {
+            if($('form.form-faq span.info').length)
+                $('form.form-faq span.info').html( " " ).hide();
+            
+            if($('form.form-faq .fatal-error').length)
+                $('form.form-faq .fatal-error').html( " " ).hide();
+            
+            if($('form.form-faq label.error, form.form-faq label.invalid').length)
+                    $('form.form-faq label.error, form.form-faq label.invalid').remove();
+        },
+        // управление ошибками
+        showErrors: function(errorMap, errorList) {
+            var _form = $('form.form-faq');
+            var msg = null;
+
+            $.each(errorList, function(key, value){
+                if(value.element) {
+                    var name = _form.find( value.element ).attr('name');
+                    // console.log( name );
+                    _form.find(value.element).after( '<label id="'+name+'-error" for="'+name+'" class="invalid">'+value.message+'</label>' );
+                    _form.find(value.element).next().show();
+                }
+             });
+        },
+        submitHandler: function( form ) {
+            if($('form.form-faq span.info').length)
+                $('form.form-faq span.info').html( " " ).hide();
+            
+            if($('form.form-faq .fatal-error').length)
+                $('form.form-faq .fatal-error').html( " " ).hide();
+            
+            if($('form.form-faq label.error, form.form-faq label.invalid').length)
+                    $('form.form-faq label.error, form.form-faq label.invalid').remove();
+
+            var $form = $(form);
+            var _params = parseQuery($form.serializeArray());
+            
+            
+            var _response = getAjaxForm('/faq.html', _params);
+              if(_response.result) {
+                  
+                  var _res = _response.result;
+                  if(_res.error) {
+                      
+                      if(typeof _res.error === 'object') {
+                          $.each(_res.error, function(name, text) {
+                              var _obj = $form.find('input[name="'+name+'"]');
+                              if(_obj.length) {
+                                  if(_obj.next('label').length)
+                                    _obj.next().html( text ).show();
+                                  else
+                                     $('<label id="'+name+'-error" for="'+name+'" class="invalid">'+text+'</label>').insertAfter(_obj); 
+                              }
+                          });
+                      } else {
+                          $('form.form-faq .fatal-error').html( _res.error );
+                      }
+                      
+                      reloadCaptcha( $form.find('.box-captcha > img'), true ); // reload captcha 
+                      return false;
+                  } else if(_res.success) {
+                      
+                      $('form.form-faq span.info')
+                              .html( _res.success )
+                              .css({'display':'inline-block'});
+                      
+                      // scrollTo block info
+                      var target_top = $('form.form-faq span.info').offset().top;
+                      $('html, body').animate( { 
+                            scrollTop: Math.ceil((target_top * $(window).outerHeight(true)) / $('html, body').height())
+                       },'linear');
+                               
+                      // google analitycs
+                      ga('send', 'event', 'form', 'submit', 'contact-request-success');
+
+                  } else {
+                      $('form.form-faq .fatal-error').html('Your email was not sent');
+                      reloadCaptcha( $form.find('.box-captcha > img'), true ); // reload captcha 
+                      return false;
+                  }    
+
+              } else {
+                  $('form.form-faq .fatal-error').html('Your email was not sent'); 
+                  reloadCaptcha( $form.find('.box-captcha > img'), true ); // reload captcha 
+                  return false;
+              }
+              
+              reloadCaptcha( $form.find('.box-captcha > img')); // reload captcha     
+              $form.trigger("reset");
+        }
+    }); 
     
       
    // validate form

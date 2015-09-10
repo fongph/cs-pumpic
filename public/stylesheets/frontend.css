@@ -8827,6 +8827,7 @@ label.success {
 form.form-discount label.error,
 form.box-form label.error,
 .form-contact-us label.error,
+.form-faq label.error,
 .send_find_phone label.error,
 .send_mobile_operators_find_phone label.error,
 .fatal-error {
@@ -8845,6 +8846,7 @@ form.box-form label.error,
 .form-registration label.error,
 .form-restore label.error,
 .form-contact-us label.error,
+.form-faq label.error,
 .send_find_phone label.error,
 .send_mobile_operators_find_phone label.error,
 label.invalid,
@@ -8855,13 +8857,15 @@ label.invalid,
     font-size: 14px !important;
 }
 
-.form-contact-us .box-error label {
+.form-contact-us .box-error label,
+.form-faq .box-error label{
     margin-bottom: 0px !important;
 }
 		
 form.form-discount label.info,
 form.box-form label.info,
-form.form-contact-us label.info {
+form.form-contact-us label.info,
+form.faq label.info {
     font-size: 13px;
     font-weight: bold;
     font-family: "Open Sans", Helvetica, Arial, sans-serif;
@@ -8872,13 +8876,15 @@ form.form-contact-us label.info {
 	
 form.form-discount label label.error,
 form.box-form label label.error,
-form.form-contact-us label label.error {
+form.form-contact-us label label.error,
+form.form-faq label label.error {
     margin-left:0px;
 }
 
 form.form-discount .clean,
 form.box-form .clean,
-form.form-contact-us .clean {
+form.form-contact-us .clean,
+form.form-faq .clean {
     border:none;
 }
 
@@ -8893,7 +8899,8 @@ form.box-form .info {
 
 form.form-discount .indent,
 form.box-form .indent,
-form.form-contact-us .indent {
+form.form-contact-us .indent,
+form.form-faq .indent {
     padding:2px 20px; 
     width:auto !important;
     white-space:nowrap;
@@ -8902,7 +8909,8 @@ form.form-contact-us .indent {
 
 form.form-discount label.disabled,
 form.box-form label.disabled,
-form.form-contact-us label.disabled {
+form.form-contact-us label.disabled,
+form.form-faq label.disabled {
     color:#aaa;
 }
 
@@ -11942,7 +11950,8 @@ span.btn-banner-yellow:active {
 .form-registration button, 
 .form-restore button,
 .form-contact-us button,
-.form-faq button {
+.form-faq button,
+.form-faq-send button {
     display: block;
     position: relative;
     width: 195px;
@@ -14069,6 +14078,7 @@ i.white-arrows-right {
 .form-registration input:focus, 
 .form-restore input:focus,
 .form-contact-us textarea:focus,
+.form-faq textarea:focus,
 .btn-group.open .dropdown-toggle {
   border-color: #66afe9;
   outline: 0;
@@ -14091,7 +14101,8 @@ i.white-arrows-right {
 .form-box-captcha { margin-bottom: 5px; }
 form.send_find_phone .box-captcha,
 form.send_mobile_operators_find_phone .box-captcha,
-form.form-contact-us .box-captcha { 
+form.form-contact-us .box-captcha,
+form.form-faq .box-captcha { 
     height: 46px;
     width: 100%;
     min-width: 100%; 
@@ -14228,18 +14239,22 @@ form.form-contact-us .box-captcha {
     z-index: 100;
 }
  
-.form-contact-us .dropdown-menu > li.selected {
+.form-contact-us .dropdown-menu > li.selected,
+.form-faq .dropdown-menu > li.selected {
   background: #4d4f5b;
   color: #fff;
   outline: none;
 }
 
-.form-contact-us span.check-mark {
+.form-contact-us span.check-mark,
+.form-faq span.check-mark {
     display: none !important;
 }
 
-.form-contact-us .select .btn-select { color: #555555; }
-.form-contact-us .bootstrap-select > button {
+.form-contact-us .select .btn-select, 
+.form-faq .select .btn-select { color: #555555; }
+.form-contact-us .bootstrap-select > button,
+.form-faq .bootstrap-select > button {
     padding: 6px 12px;
     font-size: 14px;
     height: 34px;

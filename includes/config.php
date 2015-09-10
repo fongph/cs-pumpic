@@ -37,10 +37,14 @@ $config = array(
     
 	'php_compile' => array(
                 'compatibility' => 'compatibility.php',
-                'mobile_operators_send.html' => 'mobile_operators_form.php',
+                'gps-wireless-tracking-phone.html' => 'gps-wireless-tracking-phone.php',
 		'compatibility_send.html' => 'compatibility_form.php',
-                'faq_send.html' => 'faq.php',
+                //'faq_send.html' => 'faq_send.php',
+            
+                'faq.html' => 'faq.php',
+            
                 'contact_us_send.html' => 'contact_us.php',
+            
                 'captcha.html'  => 'captcha.php',
                 'logout.html' => 'logout.php',
                 'buy.html' => 'buy.php',

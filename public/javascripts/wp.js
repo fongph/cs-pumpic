@@ -3425,6 +3425,12 @@ var turn_radio = function() {
 
 var LC_API = LC_API || {};
 
+var custom_variables = [
+  { name: 'visit', value: '1' },
+];
+
+LC_API.set_custom_variables(custom_variables);
+
 function _LC_OPEN() {
     LC_API.open_chat_window();
 }

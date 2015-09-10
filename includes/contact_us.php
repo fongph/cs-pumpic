@@ -16,31 +16,34 @@ $_mail = new Phpmail( $config['db_blog'] );
  $smarty->debugging = false;
  
  
-// init function json
-function json_modifier($value) {
-    return json_encode($value);
+ 
+if(isset($_SERVER['HTTP_X_REQUESTED_WITH']) && !empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest') { 
+    // init function json
+    function json_modifier($value) {
+        return json_encode($value);
+    }
+
+    function json_function($params, &$smarty) {
+        return json_encode($params);
+    }
+
+    // $_request = $_GET['params'];
+
+    $_request = (isset($_POST['params']) and !empty($_POST['params'])) ? $_POST['params']: false;
+
+
+
+    // register function and modifier
+    $smarty->registerPlugin("modifier",'json', 'json_modifier');
+    $smarty->registerPlugin("function",'json', 'json_function');
+
+    //echo "<pre>";
+    //var_dump( $_request );
+    //echo "</pre>";
+
+    // generate params
+    $smarty->assign('arr', $_mail -> _sendContactUs($_request) );
+
+    // init output params
+    $smarty->display($b_dir.'/templates/json/contact_us.tpl');
 }
-
-function json_function($params, &$smarty) {
-    return json_encode($params);
-}
-
-// $_request = $_GET['params'];
-
-$_request = (isset($_POST['params']) and !empty($_POST['params'])) ? $_POST['params']: false;
-
-
-
-// register function and modifier
-$smarty->registerPlugin("modifier",'json', 'json_modifier');
-$smarty->registerPlugin("function",'json', 'json_function');
-
-//echo "<pre>";
-//var_dump( $_request );
-//echo "</pre>";
-
-// generate params
-$smarty->assign('arr', $_mail -> _sendContactUs($_request) );
-
-// init output params
-$smarty->display($b_dir.'/templates/json/contact_us.tpl');

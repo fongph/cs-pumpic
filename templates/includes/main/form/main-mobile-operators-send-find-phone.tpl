@@ -1,5 +1,17 @@
 <form class="send_mobile_operators_find_phone" method="POST" action="" name="send_mobile_operators_find_phone">
         <fieldset>
+            
+            {if isset($getOut) && $getOut.success}
+                <div class="box-success text-center"> 
+                    <p class="bg-ok">{$getOut.success}</p>
+                </div>
+            {/if}
+            {if isset($getOut) && is_string($getOut.error)}
+               <div class="box-error text-center">
+                    <p class="bg-danger">{$getOut.error}</p>
+               </div>
+            {/if}
+            
                 <legend>
                     Can't Find Your Carrier in this List? <span>Leave us your email, write your operator and your name, we will check</span>
                 </legend>
@@ -11,18 +23,18 @@
                                 <input id="device-model" type="text" 
                                        class="form-control required" 
                                        name="carrier" 
-                                       value=""
+                                       value="{if isset($smarty.post.carrier)}{$smarty.post.carrier}{/if}"
                                        placeholder="Carrier*">
-
+                                {if is_array($getOut.error) && $getOut.error.carrier}<label class="error show">{$getOut.error.carrier|escape}</label>{/if}
                                 {*<p class="bg-danger"></p>*}
                         </div>
                         <div class="form-group {*has-error*}">
                                 <input id="email" type="email" 
                                        class="form-control required" 
                                        name="email"
-                                       value=""
+                                       value="{if isset($smarty.post.email)}{$smarty.post.email}{/if}"
                                        placeholder="Email*">
-
+                                {if is_array($getOut.error) && $getOut.error.email}<label class="error show">{$getOut.error.email|escape}</label>{/if}
                                 {*<p class="bg-danger"></p>*}
                         </div>
                         <div class="form-group form-box-captcha">
@@ -34,6 +46,7 @@
                         </div>
                         <div class="form-group">
                             <input id="captcha" type="text" name="captcha" autocomplete="off" class="form-control text required captcha" />
+                            {if is_array($getOut.error) && $getOut.error.captcha}<label class="error show">{$getOut.error.captcha|escape}</label>{/if}
                         </div>
                         <div class="fatal-error"></div>
                         <button class="btn btn-warning event-submit">Submit<i class="icon-right-open"></i>

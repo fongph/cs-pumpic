@@ -1,64 +1,89 @@
 <?php
-header("Content-Type: application/json");
-header("Cache-Control: no-cache");
-header("Pragma: no-cache");
+
 
 $_inc = dirname(__FILE__); // includes
 $b_dir = dirname( $_inc ); // folder sites directory
-
-// require_once $_inc.'/config.php';
+global $config, $smarty;
 require_once $_inc.'/lib/class.phpmail.php';
 
-$_mail = new Phpmail;
+$_mail = new Phpmail( $config['db_blog'] );
 
-// smarty config
-// require_once 'smarty.config.php';
+$_result = array(
+    'error' => false,
+    'success' => false,
+);
+
+if(isset($_SERVER['HTTP_X_REQUESTED_WITH']) && !empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest') { 
+    
+    header("Content-Type: application/json");
+    header("Cache-Control: no-cache");
+    header("Pragma: no-cache");
+    
+    $smarty->caching = false;
+    $smarty->compile_check = false;
+    $smarty->force_compile = false;
+    $smarty->debugging = false;
+    
+    // init function json
+    function json_modifier($value) {
+        return json_encode($value);
+    }
+
+    function json_function($params, &$smarty) {
+        return json_encode($params);
+    }
+
+    // $_request = $_GET['params'];
+
+    $_request = (isset($_POST['params']) and !empty($_POST['params'])) ? $_POST['params']: false;
 
 
- $smarty->caching = false;
- $smarty->compile_check = false;
- $smarty->force_compile = false;
- $smarty->debugging = false;
 
-//$smarty = new Smarty;
-//
-//// settings smarty
-//$smarty->compile_check = true;
-//$smarty->debugging = false;
-//$smarty->force_compile = 1;
-//
-//$smarty->setTemplateDir($config['smarty']['tpl_path']);
-//$smarty->setCacheDir($config['smarty']['cache_path']);
-//$smarty->setCompileDir($config['smarty']['tpl_path_compile']);
-//
-//$smarty->registerPlugin("function","year_now","print_current_year");
-//$smarty->assign("domain",$config['domain']);
-//$smarty->assign("domain_http",$config['domain_http']);
-//$smarty->assign("img",$config['path_img']);
-//$smarty->assign("css",$config['path_css']);
-//$smarty->assign("js",$config['path_js']);
-//$smarty ->assign('api_device', $config['api_device']);
-//$smarty ->assign('site_id', $config['site_id']);
+    // register function and modifier
+    $smarty->registerPlugin("modifier",'json', 'json_modifier');
+    $smarty->registerPlugin("function",'json', 'json_function');
 
-// init function json
-function json_modifier($value) {
-    return json_encode($value);
+    //echo "<pre>";
+    //var_dump( $_request );
+    //echo "</pre>";
+
+    // generate params
+    $smarty->assign('arr', $_mail -> _sendContactUs($_request) );
+
+    // init output params
+    $smarty->display($b_dir.'/templates/json/faq.tpl');
+} else {
+    
+
+// validate
+if(isset($_POST['name']) and empty($_POST['name']))
+    $_result['error']['name'] = "The Name field is empty";
+
+if(isset($_POST['email']) and !$_mail->validateEmail($_POST['email'])) 
+   $_result['error']['email'] = "The Email field is empty";
+
+if(isset($_POST['captcha']) and !$_mail->validateCaptcha( $_POST['captcha'] )) 
+    $_result['error']['captcha'] = "Invalid CAPTCHA.";
+
+if( (isset($_POST['os']) and empty($_POST['os'])) || (isset($_POST['wos']) and empty($_POST['wos']))  )
+    $_result['error']['os'] = "The field Choose your OS is empty";
+
+if(isset($_POST['description']) and empty($_POST['description']))
+    $_result['error']['description'] = "The Question field is empty";
+
+if(!$_result['error']) {
+    
+    if($mailFaq = $_mail -> _sendContactUs($_POST)) {
+        $_result = array_merge($_result, $mailFaq);
+    }
+        
 }
 
-function json_function($params, &$smarty) {
-    return json_encode($params);
-}
+if($_result['success']) unset($_POST);
 
-$_request = (isset($_POST['params']) and !empty($_POST['params'])) ? $_POST['params']: false;
-
-//$_request = $_POST;
-
-// register function and modifier
-$smarty->registerPlugin("modifier",'json', 'json_modifier');
-$smarty->registerPlugin("function",'json', 'json_function');
-
-// generate params
-$smarty->assign('arr', $_mail -> _sendFaq($_request) );
+// init output params!
+$smarty->assign('getOut', $_result);
 
 // init output params
-$smarty->display($b_dir.'/templates/json/faq.tpl');
+$smarty->display($b_dir.'/templates/pages/faq.tpl');
+}

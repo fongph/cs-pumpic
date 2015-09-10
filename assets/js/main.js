@@ -4,10 +4,17 @@
 var LC_API = LC_API || {};
 LC_API.on_load = function()
 {
-    var custom_variables = [
-        { name: 'visit', value: '1' }
-    ];
-    LC_API.set_custom_variables(custom_variables);
+//    var custom_variables = [
+//        { name: 'visit', value: '1' }
+//    ];
+//    LC_API.set_custom_variables(custom_variables);
+
+
+    if(LC_API.chat_window_maximized()) {
+//            // LC_API.hide_chat_window();
+        LC_API.minimize_chat_window();
+    }
+
 };
 
 function _LC_OPEN() {

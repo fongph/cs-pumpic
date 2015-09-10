@@ -36,6 +36,7 @@ LC_API.on_before_load = function()
 };
 
 LC_API.on_after_load = function() {
+        LC_API.close_chat();
     //if(LC_API.chat_window_maximized()) {
 //            // LC_API.hide_chat_window();
             LC_API.minimize_chat_window();

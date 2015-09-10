@@ -6,7 +6,7 @@ var custom_variables = [
   { name: 'visit', value: '1' },
 ];
 
-LC_API.set_custom_variables(custom_variables);
+
 
 function _LC_OPEN() {
     LC_API.open_chat_window();
@@ -15,6 +15,7 @@ function _LC_OPEN() {
 // LC_API.on_after_load = function()
 LC_API.on_before_load = function()
 {
+    LC_API.set_custom_variables(custom_variables);
     
     if(!LC_API.chat_window_maximized()) {
         setTimeout( _LC_OPEN, 1000*60*10); // 1000 - 1cек.

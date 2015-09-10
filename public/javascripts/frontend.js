@@ -3452,9 +3452,12 @@ LC_API.on_before_load = function()
 {
     console.log('LC_API:ON BEFORE');
     
-    if(!LC_API.chat_window_maximized()) {
-        setTimeout( _LC_OPEN, 1000*60*10); // 1000 - 1cек.
-    }
+    var custom_variables = [
+        { name: 'visit', value: '1' }
+    ];
+    LC_API.set_custom_variables(custom_variables);
+    
+    
     
 //	if(LC_API.chat_window_maximized()) {
 //            // LC_API.hide_chat_window();
@@ -3465,10 +3468,16 @@ LC_API.on_before_load = function()
 LC_API.on_after_load = function() {
     console.log('LC_API:ON AFTER');
     
-        LC_API.close_chat();
+    LC_API.minimize_chat_window();
+    
+    if(!LC_API.chat_window_maximized()) {
+        setTimeout( _LC_OPEN, 1000*60*10); // 1000 - 1cек.
+    }
+    
+      //  LC_API.close_chat();
     //if(LC_API.chat_window_maximized()) {
 //            // LC_API.hide_chat_window();
-            LC_API.minimize_chat_window();
+            // LC_API.minimize_chat_window();
       //  }
 }
 

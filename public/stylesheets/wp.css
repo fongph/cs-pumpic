@@ -15176,7 +15176,34 @@ div.curr {
   margin-bottom: 10px;
 }
 
-.wp-blog .widget_categories > h3, 
+.wp-blog .widget_search label {
+    display: none;
+}
+.wp-blog .widget_search input[type="text"] {
+    width: 70%;
+    float: left;
+    display: block;
+    padding-left: .5em;
+}
+.wp-blog .widget_search input[type="submit"] {
+    width: 27%;
+    float: right;
+}
+
+.widget_search:after {
+    display: block;
+    content: '';
+    clear: both;
+}
+.widget_sticky_banners:after {
+    display: block;
+    content: '';
+    clear: both;
+}
+
+.wp-blog .widget_text > h3,
+.wp-blog .widget_search > h3,
+.wp-blog .widget_categories > h3,
 .wp-blog .widget_tag_cloud > h3,
 .wp-blog .widget_sticky_posts > h3 {
     color: #fff;

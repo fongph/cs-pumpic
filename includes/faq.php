@@ -54,36 +54,35 @@ if(isset($_SERVER['HTTP_X_REQUESTED_WITH']) && !empty($_SERVER['HTTP_X_REQUESTED
     $smarty->display($b_dir.'/templates/json/faq.tpl');
 } else {
     
+    // validate
+    if(isset($_POST['name']) and empty($_POST['name']))
+        $_result['error']['name'] = "The Name field is empty";
 
-// validate
-if(isset($_POST['name']) and empty($_POST['name']))
-    $_result['error']['name'] = "The Name field is empty";
+    if(isset($_POST['email']) and !$_mail->validateEmail($_POST['email'])) 
+       $_result['error']['email'] = "The Email field is empty";
 
-if(isset($_POST['email']) and !$_mail->validateEmail($_POST['email'])) 
-   $_result['error']['email'] = "The Email field is empty";
+    if(isset($_POST['captcha']) and !$_mail->validateCaptcha( $_POST['captcha'] )) 
+        $_result['error']['captcha'] = "Invalid CAPTCHA.";
 
-if(isset($_POST['captcha']) and !$_mail->validateCaptcha( $_POST['captcha'] )) 
-    $_result['error']['captcha'] = "Invalid CAPTCHA.";
+    if(isset($_POST['os']) and empty($_POST['os'])  )
+        $_result['error']['os'] = "The field Choose your OS is empty";
 
-if( (isset($_POST['os']) and empty($_POST['os'])) || (isset($_POST['wos']) and empty($_POST['wos']))  )
-    $_result['error']['os'] = "The field Choose your OS is empty";
+    if(isset($_POST['description']) and empty($_POST['description']))
+        $_result['error']['description'] = "The Question field is empty";
 
-if(isset($_POST['description']) and empty($_POST['description']))
-    $_result['error']['description'] = "The Question field is empty";
+    if(!$_result['error']) {
 
-if(!$_result['error']) {
-    
-    if($mailFaq = $_mail -> _sendContactUs($_POST)) {
-        $_result = array_merge($_result, $mailFaq);
+        if($mailFaq = $_mail -> _sendContactUs($_POST)) {
+            $_result = array_merge($_result, $mailFaq);
+        }
+
     }
-        
-}
 
-if($_result['success']) unset($_POST);
+    if($_result['success']) unset($_POST);
 
-// init output params!
-$smarty->assign('getOut', $_result);
+    // init output params!
+    $smarty->assign('getOut', $_result);
 
-// init output params
-$smarty->display($b_dir.'/templates/pages/faq.tpl');
+    // init output params
+    $smarty->display($b_dir.'/templates/pages/faq.tpl');
 }

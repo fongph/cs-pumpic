@@ -854,6 +854,11 @@ function smarty_function_features_plans( $_plans = array() ) {
     echo $_html;
 }
 
+function smarty_function_getUserID() {
+    require_once 'lib/users/ManagerUser.php';
+    $obj = new includes\lib\users\ManagerUser( array() );
+    return ($obj->getUserIdByAuth()) ? $obj->getUserIdByAuth() : '';
+}
 
 // has user
 function smarty_modifier_hasUser() { // $params, $template

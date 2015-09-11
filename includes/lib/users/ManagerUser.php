@@ -371,6 +371,7 @@ class ManagerUser extends Manager
     // validate Captcha
     public function validateCaptcha($_captcha) 
     {
+        
         if(!empty($_captcha)) {
             if (!isset($this -> _session['captcha']) 
                     or (empty($this -> _session['captcha']) || trim(strtolower($_captcha)) != $this -> _session['captcha'])) {

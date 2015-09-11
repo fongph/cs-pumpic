@@ -8235,6 +8235,10 @@ div.symbol {
     border: 1px solid rgb(0,255,255);
 }
 
+#tmp-faq .form-faq select {
+    width: 100%;
+    min-width: 100%;
+}
 .position-relative {
     position: relative;
 }

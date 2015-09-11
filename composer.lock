@@ -66,7 +66,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:boomersweb/cs-models.git",
-                "reference": "6371d984b99f28c5d9ede9f352dd2fbc72bf9fb6"
+                "reference": "432f209de056fef47f574b6798468efffdb40df5"
             },
             "require": {
                 "php": ">=5.4.0"
@@ -80,7 +80,7 @@
                     "CS\\Models\\": "src/"
                 }
             },
-            "time": "2015-09-08 05:43:22"
+            "time": "2015-09-11 08:01:55"
         },
         {
             "name": "boomers/cs-settings",
@@ -107,7 +107,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:boomersweb/cs-users.git",
-                "reference": "fd26daae11e3fd9f28af0e3bd0ec7c72590057ce"
+                "reference": "d85c1b39a840dfb1435be3262cca008ac526fd21"
             },
             "require": {
                 "boomers/cs-mail": "dev-master",
@@ -131,7 +131,7 @@
             "license": [
                 "MIT"
             ],
-            "time": "2015-09-07 09:37:18"
+            "time": "2015-09-11 07:16:29"
         },
         {
             "name": "boomers/ip",
@@ -1637,16 +1637,16 @@
         },
         {
             "name": "symfony/yaml",
-            "version": "v2.7.3",
+            "version": "v2.7.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Yaml.git",
-                "reference": "71340e996171474a53f3d29111d046be4ad8a0ff"
+                "reference": "2dc7b06c065df96cc686c66da2705e5e18aef661"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Yaml/zipball/71340e996171474a53f3d29111d046be4ad8a0ff",
-                "reference": "71340e996171474a53f3d29111d046be4ad8a0ff",
+                "url": "https://api.github.com/repos/symfony/Yaml/zipball/2dc7b06c065df96cc686c66da2705e5e18aef661",
+                "reference": "2dc7b06c065df96cc686c66da2705e5e18aef661",
                 "shasum": ""
             },
             "require": {
@@ -1682,7 +1682,7 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
-            "time": "2015-07-28 14:07:07"
+            "time": "2015-08-24 07:13:45"
         }
     ],
     "aliases": [],

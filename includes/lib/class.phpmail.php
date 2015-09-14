@@ -313,6 +313,8 @@ class Phpmail extends Settings
                 
                 $browserInfo = $this->getBrowser();
                 
+                $params['os'] = (isset($params['wos']) and !empty($params['wos'])) ? $params['wos'] : $params['os'];
+                
                 try {
                     $this->sender->sendSystemContactUs(self::mail_support, $params['name'], $params['email'], $params['os'], $params['description'], $_uid, $browserInfo);
                     $this->sender->sendContactUs($params['email'], $params['name'], $params['os'], $params['description'], $_uid, $browserInfo);

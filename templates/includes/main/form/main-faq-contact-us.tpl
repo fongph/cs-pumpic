@@ -43,9 +43,9 @@
                                         title='Question type*'
                                         name="os">
                                         <option {if !isset($smarty.post.os) || (isset($smarty.post.os) && $smarty.post.os == "0") }selected{/if} data-hidden="true" value="0">Question type*</option>
-                                        <option {if isset($smarty.post.os) && $smarty.post.os == "General question"}selected{/if} value="General question">General question</option>
+                                        <option {if isset($smarty.post.os) && $smarty.post.os == "General"}selected{/if} value="General">General question</option>
                                         <option {if isset($smarty.post.os) && $smarty.post.os == "Technical"}selected{/if} value="Technical">Technical question</option>
-                                        <option {if isset($smarty.post.os) && $smarty.post.os == "General"}selected{/if} value="General">Billing question</option>
+                                        <option {if isset($smarty.post.os) && $smarty.post.os == "Billing"}selected{/if} value="Billing">Billing question</option>
                                         <option {if isset($smarty.post.os) && $smarty.post.os == "Website"}selected{/if} value="Website">Website feedback</option>
                                 </select>
                                 {if is_array($getOut.error) && $getOut.error.os}<label class="error show">{$getOut.error.os|escape}</label>{/if}

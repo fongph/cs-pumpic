@@ -63,7 +63,7 @@ if(isset($_SERVER['HTTP_X_REQUESTED_WITH']) && !empty($_SERVER['HTTP_X_REQUESTED
     if(isset($_POST['captcha']) and !$_mail->validateCaptcha( $_POST['captcha'] )) 
         $_result['error']['captcha'] = "Invalid CAPTCHA.";
 
-    if(isset($_POST['os']) and empty($_POST['os'])  )
+    if(isset($_POST['os']) and empty($_POST['os']))
         $_result['error']['os'] = "The field Choose your OS is empty";
 
     if(isset($_POST['description']) and empty($_POST['description']))

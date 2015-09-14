@@ -12,8 +12,8 @@ function dispatch($urlParams, $config){
     
     if (!empty($_SERVER["HTTP_REFERER"]) ) {
         $_url = parse_url($_SERVER['HTTP_REFERER']);  
-        if(!isset($_COOKIE['orders_referer']) and isset($_url['host']) and !preg_match('/((.*)\.|^)pumpic\.com/i', trim($_url['host'])) ) {
-            setcookie("orders_referer", $_SERVER['HTTP_REFERER'], time() + 3600 * 24, '/', '.pumpic.com' );
+        if(!isset($_COOKIE['orders_referer']) and isset($_url['host']) and !preg_match('/((.*)\.|^)'. str_replace('.', '\.', $config['domain']) .'/i', trim($_url['host'])) ) {
+            setcookie("orders_referer", $_SERVER['HTTP_REFERER'], time() + 3600 * 24, '/', '.' . $config['domain'] );
         } 
 
     }    
@@ -21,7 +21,7 @@ function dispatch($urlParams, $config){
     // landing
     if (!isset($_COOKIE['landing']) && isset($_SERVER['HTTP_HOST'], $_SERVER['REQUEST_URI'])) {
         $url = 'http' . (isset($_SERVER['HTTPS']) ? 's' : '') . '://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
-        setcookie("landing", $url, time() + 3600 * 24, '/', '.pumpic.com');
+        setcookie("landing", $url, time() + 3600 * 24, '/', '.' . $config['domain']);
     }
 
 

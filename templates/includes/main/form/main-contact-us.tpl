@@ -1,4 +1,4 @@
-<form action="/faq.html" class="form-faq" name="send-mail-contact-us" method="POST">
+<form action="/contact-us.html" class="form-faq" name="send-mail-contact-us" method="POST">
         <fieldset>
             <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3">
                 {if isset($getOut) && $getOut.success}

@@ -24,11 +24,11 @@ $config = array(
 	'path_css' => '/css',
         'site_id' => 1,
         'session' => array(
-        'rememberMeTime' => 2592000, // 30 days
-        'cookieParams' => array(
-            'domain' => '.pumpic.com'
+            'rememberMeTime' => 2592000, // 30 days
+            'cookieParams' => array(
+                'domain' => '.pumpic.com'
+            ),
         ),
-    ),
         'api_device' => array(
             '_domain' => 'a.pumpic.com',
             'path_img' => 'compatibility',
@@ -42,6 +42,7 @@ $config = array(
                 //'faq_send.html' => 'faq_send.php',
             
                 'faq.html' => 'faq.php',
+                'contact-us.html' => 'contact_us.php',
             
                 'contact_us_send.html' => 'contact_us.php',
             

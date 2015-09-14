@@ -52,7 +52,7 @@
 							<div class="form">
                                                             
                                                                 {include file='../includes/main/form/main-faq-contact-us.tpl'
-                                                                    cache_id = "main-faq-contact-us"
+                                                                    cache_id = "main-contact-us"
                                                                 nocache}
                                                             
                                                                 {* contactusSend contact_us=$smarty.post *}

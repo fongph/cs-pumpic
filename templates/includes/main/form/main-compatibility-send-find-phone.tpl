@@ -43,8 +43,8 @@
                         </div>
                         <div class="form-group form-box-captcha">
                             <div class="box-captcha">
-                                <img src="/captcha.html?width=443&height=44" id="img-captcha">
-                                <span class="update-captcha" attr-width="443" attr-height="44"></span>
+                                <img src="/captcha.html?width=407&height=44" id="img-captcha">
+                                <span class="update-captcha" attr-width="407" attr-height="44"></span>
                             </div>
                             
                         </div>

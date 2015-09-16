@@ -15058,7 +15058,7 @@ div.curr {
 /* fix h1...h6 */
 .wp-blog h1,
 .wp-blog h2,
-.wp-blog h3, 
+.wp-blog h3,
 .wp-blog h4,
 .wp-blog h5,
 .wp-blog h6,
@@ -15108,7 +15108,7 @@ div.curr {
 /*    font-weight: 300;*/
 }
 
-.wp-blog h4, 
+.wp-blog h4,
 .wp-blog h4 > a,
 .wp-blog .h4,
 .wp-blog .h4 > a {
@@ -15121,16 +15121,16 @@ div.curr {
 .wp-blog .h5,
 .wp-blog .h5 > a {
 /*  font-size: 18px;*/
-  font-size: 16px;  
+  font-size: 16px;
 /*  font-weight: 500;*/
     font-weight: bold;
 }
 
-.wp-blog h6, 
+.wp-blog h6,
 .wp-blog h6 > a,
 .wp-blog .h6,
 .wp-blog .h6 > a {
-  color: #277EAB;  
+  color: #277EAB;
   font-size: 16px;
   font-weight: bold;
 }
@@ -15201,6 +15201,7 @@ div.curr {
     clear: both;
 }
 
+.wp-blog aside.widget .widget-title,
 .wp-blog .widget_text > h3,
 .wp-blog .widget_search > h3,
 .wp-blog .widget_categories > h3,
@@ -15305,7 +15306,7 @@ ul.ul-list-images li > p {
     text-align: justify;
     display: table-cell;
     position: relative;
-    
+
 }*/
 
 
@@ -15405,15 +15406,15 @@ ul.list-image-v1 li img.arrows-play {
         width: 154px;
         height: 119px;
     }
-    
+
     .box-wp-banner .block-price #basic > .package-basic {
         background: url('../images/wp/basic_v2.png') no-repeat;
     }
-    
+
     .box-wp-banner .block-price #premium > .package-premium {
         background: url('../images/wp/premium_v2.png') no-repeat;
     }
-    
+
     .box-wp-banner .block-price #basic > .price,
     .box-wp-banner .block-price #premium > .price {
         color: #fff;
@@ -15422,7 +15423,7 @@ ul.list-image-v1 li img.arrows-play {
         font-weight: bold;
         text-align: left;
     }
-    
+
     .block-price #basic > .price > sub,
     .block-price #premium > .price > sub {
         font-size: 17px;
@@ -15443,14 +15444,14 @@ ul.list-image-v1 li img.arrows-play {
         line-height: 14px;
         font-weight: 400;
     }
-    
+
 .box-wp-banner .block-buttons {
     padding: 10px 0px;
 }
 .box-wp-banner .block-buttons > a:first-child {
     margin-bottom: 16px;
 }
-@media only screen and (max-width: 300px) { 
+@media only screen and (max-width: 300px) {
     .box-wp-banner .block-price #basic,
     .box-wp-banner .block-price #premium {
         display: block;
@@ -15458,13 +15459,13 @@ ul.list-image-v1 li img.arrows-play {
         margin: 0 auto;
         position: relative;
     }
-    
+
     .box-wp-banner .block-price #basic > .price,
     .box-wp-banner .block-price #premium > .price {
         text-align: center;
     }
 }
-@media (min-width: 300px) { 
+@media (min-width: 300px) {
     .box-wp-banner .block-price #basic,
     .box-wp-banner .block-price #premium {
         display: block;
@@ -15472,7 +15473,7 @@ ul.list-image-v1 li img.arrows-play {
         margin: 0 auto;
         position: relative;
     }
-    
+
     .box-wp-banner .block-price #basic > .price,
     .box-wp-banner .block-price #premium > .price {
         text-align: center;
@@ -15487,7 +15488,7 @@ ul.list-image-v1 li img.arrows-play {
         margin: 0px;
         position: relative;
     }
-    
+
     .box-wp-banner .block-price #basic > .price,
     .box-wp-banner .block-price #premium > .price {
         text-align: center;
@@ -15501,13 +15502,13 @@ ul.list-image-v1 li img.arrows-play {
         margin: 0px;
         position: relative;
     }
-    
+
     .box-wp-banner .block-price #basic > .price,
     .box-wp-banner .block-price #premium > .price {
         text-align: left;
     }
 }
-@media (min-width: 992px) { 
+@media (min-width: 992px) {
     .box-wp-banner .block-price #basic,
     .box-wp-banner .block-price #premium {
         display: inline-block;
@@ -15515,13 +15516,13 @@ ul.list-image-v1 li img.arrows-play {
         margin: 0px;
         position: relative;
     }
-    
+
     .box-wp-banner .block-price #basic > .price,
     .box-wp-banner .block-price #premium > .price {
         text-align: left;
     }
 }
-@media (min-width: 1200px) { 
+@media (min-width: 1200px) {
     .box-wp-banner .block-price #basic,
     .box-wp-banner .block-price #premium {
         display: inline-block;
@@ -15529,11 +15530,11 @@ ul.list-image-v1 li img.arrows-play {
         margin: 0px;
         position: relative;
     }
-    
+
     .box-wp-banner .block-price #basic > .price,
     .box-wp-banner .block-price #premium > .price {
         text-align: left;
-    }    
+    }
 }
 
 

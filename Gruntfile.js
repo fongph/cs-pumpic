@@ -15,6 +15,7 @@ module.exports = function (grunt) {
                     './assets/js/jquery.cookie.js', 
                     './assets/js/jquery.ba-hashchange.min.js',
                     './assets/js/jquery.total-storage.min.js', 
+                    './assets/js/jquery.matchHeight-min.js',
                     './assets/js/easyTooltip.js', 
                     './assets/js/jquery.simplePagination.js',
                     './assets/js/jquery.validate.js', 
@@ -83,6 +84,7 @@ module.exports = function (grunt) {
                     './assets/css/compatibility.css', 
                     './assets/css/404.css',
                     './assets/css/video.css',
+                    './assets/css/icons.css',
                     // './assets/css/sticky/autofix_anything.css',
                 ], 
                 dest: './public/stylesheets/frontend.css'

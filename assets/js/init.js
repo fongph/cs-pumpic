@@ -2268,6 +2268,7 @@ $('form[name="send_find_phone"] button.event-submit').click(function(){
 //    });    
 
 
-    
+    // countries
+    $("#c-features .row-list > li").matchHeight();
 
 }); 

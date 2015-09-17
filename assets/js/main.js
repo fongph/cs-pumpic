@@ -1,3 +1,4 @@
+/*
 // авто-гритинг чата.
 var LC_API = LC_API || {};
 
@@ -36,6 +37,7 @@ LC_API.on_after_load = function() {
         
      setTimeout( _LC_OPEN, 1000*60*10); // 1000 - 1cек.   
 }
+*/
 
 $(function() {
         $('.select_inverse, .select').selectpicker();

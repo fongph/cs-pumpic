@@ -6823,6 +6823,9 @@ body:after {
   opacity: 1;
 }
 
+.mt3 {
+    margin-top: 3px;
+}
 .pl15-imp {
     padding-left: 15px !important;
 }
@@ -7537,14 +7540,24 @@ div.symbol {
   text-decoration: none;
 }
 
+.nav > li > a.btn-red:hover,
+.nav > li > a.btn-red:focus,
+.nav > li > a.btn-red:active {
+  color: #fff;  
+  background-color: #d45b69;
+  text-decoration: none;
+}
+
 @media (max-width: 768px) {  
-    .nav > li > a.btn-orange {
+    .nav > li > a.btn-orange,
+    .nav > li > a.btn-red {
         font-size: 16px !important;
     }
 }
 
 @media (max-width: 992px) { 
-    .nav > li > a.btn-orange {
+    .nav > li > a.btn-orange,
+    .nav > li > a.btn-red {
         display: block;
         border-radius: 0px;
         font-size: 16px; /* !important */
@@ -7558,7 +7571,10 @@ div.symbol {
     
     .nav > li > a.btn-orange:hover, 
     .nav > li > a.btn-orange:active,
-    .nav > li > a.btn-orange:focus {
+    .nav > li > a.btn-orange:focus,
+    .nav > li > a.btn-red:hover,
+    .nav > li > a.btn-red:focus,
+    .nav > li > a.btn-red:active {
         color: #16a89e !important;
         text-decoration: none !important;
         background: none !important;
@@ -7566,8 +7582,9 @@ div.symbol {
 }
 
 @media (min-width: 992px) { 
-
-    .nav > li > a.btn-orange {
+    
+    .nav > li > a.btn-orange,
+    .nav > li > a.btn-red {
         display: block;
         border-radius: 5px;
         font-size: 18px !important;
@@ -7584,6 +7601,11 @@ div.symbol {
         min-height: 38px;
         min-width: 110px;
     }
+    
+    .nav > li > a.btn-red {
+        background: #cf4857 none repeat scroll 0 0;
+    }
+    
     .nav > li > a.btn-orange:hover, 
     .nav > li > a.btn-orange:active,
     .nav > li > a.btn-orange:focus {
@@ -7591,11 +7613,21 @@ div.symbol {
         text-decoration: none !important;
         background: #ffd08c !important;
     }
+    
+    .nav > li > a.btn-red:hover,
+    .nav > li > a.btn-red:focus,
+    .nav > li > a.btn-red:active {
+      color: #fff !important;  
+      background-color: #d45b69 !important;
+      text-decoration: none !important;
+    }
 }
 
 @media (min-width: 1200px) { 
-    .box-cp > .btn-orange { padding: 10px; }
-    .nav > li > a.btn-orange {
+    .box-cp > .btn-orange,
+    .box-cp > .btn-red { padding: 10px; }
+    .nav > li > a.btn-orange,
+    .nav > li > a.btn-red {
         display: none !important;
     }
 }
@@ -7642,13 +7674,13 @@ div.symbol {
 .fz26 { font-size: 26px; }
 .fz27 { font-size: 27px; }
 .fz28 { font-size: 28px !important; }
-.fz29 { font-size: 29px; }
-.fz30 { font-size: 30px; }
-.fz31 { font-size: 31px; }
-.fz32 { font-size: 32px; }
-.fz33 { font-size: 33px; }
-.fz34 { font-size: 34px; }
-.fz35 { font-size: 35px; }
+.fz29 { font-size: 29px !important; }
+.fz30 { font-size: 30px !important; }
+.fz31 { font-size: 31px !important; }
+.fz32 { font-size: 32px !important; }
+.fz33 { font-size: 33px !important; }
+.fz34 { font-size: 34px !important; }
+.fz35 { font-size: 35px !important; }
 
 .block-table { display: table; }
 .block-table > .tr { display: table-row; }
@@ -8637,7 +8669,7 @@ div.blockquate_bottom {
   text-decoration: none;
   background: transparent;
 }
-.nav li a {
+.nav li a, .nav li span {
   color: white;
   padding: 0;
 }
@@ -8706,11 +8738,13 @@ div.blockquate_bottom {
 }
 
 @media (max-width: 1000px) { 
-    .navbar-nav > li > a {
+    .navbar-nav > li > a,
+    .navbar-nav > li > span {
         font-size: 19px;
     }
     
-    .nav > li > a.btn-orange {
+    .nav > li > a.btn-orange,
+    .nav > li > a.btn-red {
         font-size: 19px !important;
     }
 }
@@ -10569,7 +10603,8 @@ textarea {
   display: inline-block;
   width: 100%;
   background: none;
-  min-height: 250px;
+/*  min-height: 250px;*/
+    min-height: 214px;
   height: auto;
   text-align: center;
   margin-bottom: 10px;
@@ -14511,7 +14546,8 @@ form.form-faq .box-captcha {
 }
 .block-how-it-works-old .thumbs .thumbnail .img_thumb {
     background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
-    height: 250px;
+/*    height: 250px;*/
+    height: 214px;
     text-align: center;
     display: block;
 }
@@ -15079,6 +15115,161 @@ div.curr {
 @media (min-width: 1200px) {
     .block-table-mobile { display: none; }
     .block-table { display: table; }
+}
+
+.bg-wite {
+    background: #fff;
+}
+
+.row-light {
+    background: #f3f3f3 none repeat scroll 0 0;
+    padding: 15px 0;
+}
+
+/* ======================== // COUNTRY ======================== */
+.c-f-border-top {
+    border-top: 1px solid #dcdcdc;
+}
+.c-f-table-cell {
+    display: table-cell;
+}
+.c-lh-h1-title {
+    line-height: 1.3;
+}
+#country-label {
+    position: relative;
+    left: -36px;
+    height: 107px;
+}
+#country-label > img {
+    position: absolute;
+    top: 22px;
+}
+.language > span > i, .language > a > i {
+    position: relative;
+    top: 3px;
+    margin-left: 7px;
+}
+
+.c-f-list {
+    display: table;
+    border-bottom: 1px solid #dcdcdc;
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.c-f-list > li {
+    padding: 30px 27px 20px 27px;
+    border-right: 1px solid #dcdcdc;
+}
+.c-f-list > li:last-child {
+    border-right: none;
+}
+
+.c-f-list:first-child > li {
+    padding-top: 0px;
+}
+
+.c-f-list:last-child {
+    border-bottom: none;
+}
+
+#c-f-block-info {
+    
+}
+    #c-f-block-info > section { 
+        display: inline-block;
+        width: 100%;
+        min-height: 33px;
+    }
+        #c-f-block-info > section label { 
+            font-size: 18px;
+            line-height: 18px;
+            font-weight: 500;
+            margin: 0px 5px; 
+        }
+        
+        #c-f-block-info > section .root-android {
+            margin-top: 5px;
+        }
+        
+    #c-f-block-info > p { 
+        color: #4d4f5b;
+        font-size: 14px; 
+        font-weight: 300; 
+        line-height: 1.4; 
+        margin: 10px 0px; 
+    }
+    
+.c-f-title-section {
+    color: #4d4f5b;
+    border-top: 1px solid #dcdcdc;
+    border-bottom: 1px solid #dcdcdc;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 300;
+    padding: 10px 0px;
+    margin: 40px 0px;
+}    
+
+#list-price-phones {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 17px;
+}
+
+#list-price-phones > i {
+    color: #35bfb6 !important;
+}
+.b-p-countries .link_circle_italic2 .style-links2 { position: relative; }
+.b-p-countries .link_circle_italic2 .style-links2 .circle_ico2 {
+    left: 0px;
+    position: absolute;
+}
+.b-p-countries .link_circle_italic2 .style-links2 > label {
+    padding: 0px 0px 0px 40px;
+    text-align: left;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.3;
+    font-style: italic;
+}
+
+.c-f-table-col-6 {
+    width: 50%;
+}
+
+.block-language {
+    display: inline-block;
+    background: #e8e8e8;
+    padding: 6px 12px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+}
+.block-language > label {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 13px;
+    position: relative;
+    top: 3px;
+}
+.block-language > i {
+    margin-left: 10px;
+}
+
+@media (max-width: 968px) { 
+    .c-f-list { border: none; }
+    .c-f-list:first-child > li:first-child {
+        padding-top: 0px;
+    }
+    .c-f-list > li, .c-f-list:first-child > li {
+        border: none;
+        padding: 0px 0px 20px;
+    }
 }
 .border-top-bottom {
     border-color: #e8e8e8 !important;
@@ -24058,3 +24249,145 @@ body {
     }
 }
 
+
+.lang-icon-en {
+    display: inline-block;
+}
+
+.c-header-germany {
+    width: 182px;
+    height: 107px;
+    background: url(../images/country/icon-germany.png) no-repeat;
+}
+
+.c-header-brazil {
+    width: 182px;
+    height: 107px;
+    background: url(../images/country/icon-brazil.png) no-repeat;
+}
+
+.lang-icon-en {
+    width: 36px;
+    height: 18px;
+    background: url(../images/country/icon-en-usa.png) no-repeat;
+} 
+
+.c-icon-root-android {
+    width: 46px;
+    height: 25px;
+    background: url(../images/country/icon-rooted-android.png) no-repeat;
+}
+
+.c-icon-sms {
+    width: 33px;
+    height: 29px;
+    background: url(../images/country/icon-sms.png) no-repeat;
+}
+
+.c-icon-calls {
+    width: 31px;
+    height: 31px;
+    background: url(../images/country/icon-phones.png) no-repeat;
+}
+
+.c-icon-contacts {
+    width: 29px;
+    height: 29px;
+    background: url(../images/country/icon-contacts.png) no-repeat;
+}
+
+.c-icon-media-files {
+    width: 31px;
+    height: 26px;
+    background: url(../images/country/icon-media.png) no-repeat;
+}
+
+.c-icon-browser-activity {
+    width: 29px;
+    height: 29px;
+    background: url(../images/country/icon-browser-activity.png) no-repeat;
+}
+
+.c-icon-app-control {
+    width: 32px;
+    height: 32px;
+    background: url(../images/country/icon-app-control.png) no-repeat;
+}
+
+.c-icon-keylogger, .c-icon-skype {
+    width: 30px;
+    height: 20px;
+    background: url(../images/country/icon-keylogger.png) no-repeat;
+}
+
+.c-icon-email {
+    width: 29px;
+    height: 20px;
+    background: url(../images/country/icon-email.png) no-repeat;
+}
+
+.c-icon-calendars {
+    width: 28px;
+    height: 28px;
+    background: url(../images/country/icon-calendars.png) no-repeat;
+}
+
+.c-icon-notes {
+    width: 28px;
+    height: 28px;
+    background: url(../images/country/icon-notes.png) no-repeat;
+}
+
+.c-icon-location-geo-fences, .c-icon-location {
+    width: 25px;
+    height: 32px;
+    background: url(../images/country/icon-location-geo-fences.png) no-repeat;
+}
+
+.c-icon-chats-social-media {
+    width: 27px;
+    height: 26px;
+    background: url(../images/country/icon-chats-social-media.png) no-repeat;
+}
+
+.c-icon-historical-data {
+    width: 29px;
+    height: 29px;
+    background: url(../images/country/icon-historical-data.png) no-repeat;
+}
+
+.c-icon-sim-change-alert {
+    width: 23px;
+    height: 30px;
+    background: url(../images/country/icon-sim-change-alert.png) no-repeat;
+}
+
+.c-icon-sms-commands {
+    width: 33px;
+    height: 28px;
+    background: url(../images/country/icon-sms-commands.png) no-repeat;
+}
+
+.c-icon-anti-theft {
+    width: 25px;
+    height: 32px;
+    background: url(../images/country/icon-anti-theft.png) no-repeat;
+}
+
+.c-icon-whatsapp {
+    width: 29px;
+    height: 20px;
+    background: url(../images/country/icon-whatsapp.png) no-repeat;
+}
+
+.c-icon-bookmarks {
+    width: 30px;
+    height: 29px;
+    background: url(../images/country/icon-bookmarks.png) no-repeat;
+}
+
+.c-icon-kik {
+    width: 30px;
+    height: 29px;
+    background: url(../images/country/icon-kik.png) no-repeat;
+}

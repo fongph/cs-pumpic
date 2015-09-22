@@ -1,5 +1,3 @@
-{closeAccess}
-
 {include file='../includes/main/main-header.tpl'
     robots="yes" 
     title=""
@@ -169,8 +167,11 @@
                                             <th>
                                                 <div class="refund_10 refund_bg">
                                                     <div class="wr_refund text-transform-none">
-                                                        <span class="d_green">Política de Reembolso de</span>
-                                                        <div class="day10">10 DIAS</div>
+                                                        
+                                                        <div class="day10">Política de Reembolso de 
+                                                            <span class="d_green">10 DIAS</span>
+                                                        </div>
+                                                        
                                                     </div>
                                                 </div>
                                                 <div class="table_header text-transform-none text-center">
@@ -241,12 +242,14 @@
         } 
         
         <!-- BLOCK HOW-IT-WORK -->
-        {include file='../includes/content/country/how-it-work-bra.tpl'
+        {include file='../includes/content/country/how-it-work-bra_2.tpl'
             blockBg="dark"
         } 
         
          <!-- BLOCK COMPATIBILITY -->
         {include file='../includes/content/compatibility/compatibility-table.tpl'
+            androidText=""
+            iosText="A senha do iCloud é necessária para esta instalação"
             blockBg="light" 
             onlyItem="ios"
             lang="bra"
@@ -356,7 +359,10 @@
                                             <th>
                                                 <div class="refund_10 refund_bg">
                                                     <div class="wr_refund text-transform-none">
-                                                        <span class="d_green">Política de Reembolso de </span><div class="day10">10 DIAS</div>
+                                                        <div class="day10">Política de Reembolso de 
+                                                            <span class="d_green">10 DIAS</span>
+                                                        </div>
+                                                        {*<span class="d_green">Política de Reembolso de </span><div class="day10">10 DIAS</div>*}
                                                     </div>
                                                 </div>
                                                 <div class="table_header text-transform-none text-center">

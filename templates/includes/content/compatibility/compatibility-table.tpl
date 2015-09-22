@@ -24,7 +24,7 @@
 
                             <div class="table-body">
                                 <div class="text-center">
-                                    <p>É necessário ter <b>acesso root</b> para usar alguns recursos mais avançados</p>
+                                    {if isset($androidText)}<p>{$androidText}</p>{else}<p>É necessário ter <b>acesso root</b> para usar alguns recursos mais avançados</p>{/if}
                                 </div>
                                 <div>
 
@@ -46,7 +46,7 @@
 
                             <div class="table-body">
                                 <div class="text-center">
-                                    <p><b>Rooting</b> wird benötigt, um einige der Zusatzfunktionen nutzen zu können.</p>
+                                    {if isset($androidText)}<p>{$androidText}</p>{else}<p><b>Rooting</b> wird benötigt, um einige der Zusatzfunktionen nutzen zu können.</p>{/if}
                                 </div>
                                 <div>
 
@@ -106,7 +106,7 @@
 
                             <div class="table-body">
                                 <div class="text-center">
-                                    <p>É necessário ter um <b>jailbreak</b> antes da instalação</p>
+                                    {if isset($iosText)}<p>{$iosText}</p>{else}<p>É necessário ter um <b>jailbreak</b> antes da instalação</p>{/if}
                                 </div>
                                 <div>
 
@@ -128,7 +128,7 @@
 
                             <div class="table-body">
                                 <div class="text-center">
-                                    <p>Vor der Installation ist ein <b>Jailbreak</b> notwendig.</p>
+                                    {if isset($iosText)}<p>{$iosText}</p>{else}<p>Vor der Installation ist ein <b>Jailbreak</b> notwendig.</p>{/if}
                                 </div>
                                 <div>
 

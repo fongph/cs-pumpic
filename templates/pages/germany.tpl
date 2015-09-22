@@ -1,5 +1,3 @@
-{closeAccess}
-
 {include file='../includes/main/main-header.tpl'
     robots="yes" 
     title=""
@@ -245,12 +243,14 @@
         } 
         
         <!-- BLOCK HOW-IT-WORK -->
-        {include file='../includes/content/country/how-it-work-de.tpl'
+        {include file='../includes/content/country/how-it-work-de_2.tpl'
             blockBg="dark"
         } 
         
          <!-- BLOCK COMPATIBILITY -->
         {include file='../includes/content/compatibility/compatibility-table.tpl'
+            androidText=""
+            iosText="iCloud Passwort ist für die Installation notwendig"
             blockBg="light" 
             onlyItem="ios"
             lang="de"

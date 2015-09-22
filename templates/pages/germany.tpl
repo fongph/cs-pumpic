@@ -249,6 +249,8 @@
         
          <!-- BLOCK COMPATIBILITY -->
         {include file='../includes/content/compatibility/compatibility-table.tpl'
+            title="Kompatibilität"
+            versionIOS="iOS 6.0 und aktueller"
             androidText=""
             iosText="iCloud Passwort ist für die Installation notwendig"
             blockBg="light" 

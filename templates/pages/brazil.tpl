@@ -168,8 +168,9 @@
                                                 <div class="refund_10 refund_bg">
                                                     <div class="wr_refund text-transform-none">
                                                         
-                                                        <div class="day10">Política de Reembolso de 
-                                                            <span class="d_green">10 DIAS</span>
+                                                        <div class="day10"> 
+                                                            <span class="d_green">Política de Reembolso de</span>
+                                                            10 DIAS
                                                         </div>
                                                         
                                                     </div>
@@ -248,6 +249,8 @@
         
          <!-- BLOCK COMPATIBILITY -->
         {include file='../includes/content/compatibility/compatibility-table.tpl'
+            title="Compatibilidade"
+            versionIOS="iOS 6.0 ou superior"    
             androidText=""
             iosText="A senha do iCloud é necessária para esta instalação"
             blockBg="light" 
@@ -359,8 +362,9 @@
                                             <th>
                                                 <div class="refund_10 refund_bg">
                                                     <div class="wr_refund text-transform-none">
-                                                        <div class="day10">Política de Reembolso de 
-                                                            <span class="d_green">10 DIAS</span>
+                                                        <div class="day10"> 
+                                                            <span class="d_green">Política de Reembolso de</span>
+                                                            10 DIAS
                                                         </div>
                                                         {*<span class="d_green">Política de Reembolso de </span><div class="day10">10 DIAS</div>*}
                                                     </div>

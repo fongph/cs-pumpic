@@ -13632,6 +13632,9 @@ div.curr {
     .language > span > i, .language > a > i {
         float: right;
         position: absolute;
+        right: 0px;
+        top: 2px;
+        margin-right: -46px;
     }
     
     #c-features { padding-bottom: 20px; }

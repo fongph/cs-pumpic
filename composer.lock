@@ -40,7 +40,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:boomersweb/cs-mail.git",
-                "reference": "86a12e4054e4040bc21e09a24ecfeb94e8629835"
+                "reference": "14e120070424fb191ac132a3291c457f0198001f"
             },
             "require": {
                 "guzzlehttp/guzzle": "~5.0",
@@ -59,7 +59,7 @@
             "license": [
                 "MIT"
             ],
-            "time": "2015-09-03 06:40:07"
+            "time": "2015-09-21 06:27:18"
         },
         {
             "name": "boomers/cs-models",
@@ -67,7 +67,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:boomersweb/cs-models.git",
-                "reference": "fe3eaea4c6486279fb58f2d75a84bde24c5f687c"
+                "reference": "56720fdb43f00ed45d232c046ed6673f36df323e"
             },
             "require": {
                 "php": ">=5.4.0"
@@ -81,7 +81,7 @@
                     "CS\\Models\\": "src/"
                 }
             },
-            "time": "2015-09-15 06:51:48"
+            "time": "2015-09-17 07:22:05"
         },
         {
             "name": "boomers/cs-settings",
@@ -108,7 +108,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:boomersweb/cs-users.git",
-                "reference": "d85c1b39a840dfb1435be3262cca008ac526fd21"
+                "reference": "c31ff0457631c60771c4d0eb16603ea0cef003ce"
             },
             "require": {
                 "boomers/cs-mail": "dev-master",
@@ -132,7 +132,7 @@
             "license": [
                 "MIT"
             ],
-            "time": "2015-09-11 07:16:29"
+            "time": "2015-09-16 14:59:48"
         },
         {
             "name": "boomers/ip",
@@ -605,16 +605,16 @@
         },
         {
             "name": "rastor/jira-client",
-            "version": "0.3.4",
+            "version": "0.3.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/oRastor/jira-client.git",
-                "reference": "24cfcc209d1d0cc7e7ae8509b7ae61edf04b8ddc"
+                "reference": "2edc0223d9d890f69b26e951f54c1c9b9dead12c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/oRastor/jira-client/zipball/24cfcc209d1d0cc7e7ae8509b7ae61edf04b8ddc",
-                "reference": "24cfcc209d1d0cc7e7ae8509b7ae61edf04b8ddc",
+                "url": "https://api.github.com/repos/oRastor/jira-client/zipball/2edc0223d9d890f69b26e951f54c1c9b9dead12c",
+                "reference": "2edc0223d9d890f69b26e951f54c1c9b9dead12c",
                 "shasum": ""
             },
             "require": {
@@ -643,7 +643,7 @@
                 "jira",
                 "rest"
             ],
-            "time": "2015-08-26 08:03:23"
+            "time": "2015-09-16 13:33:12"
         },
         {
             "name": "rastor/system",
@@ -1090,16 +1090,16 @@
         },
         {
             "name": "phpunit/php-token-stream",
-            "version": "1.4.7",
+            "version": "1.4.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-token-stream.git",
-                "reference": "6f1447a60f068c89d345ceee32025a51dd630f1c"
+                "reference": "3144ae21711fb6cac0b1ab4cbe63b75ce3d4e8da"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-token-stream/zipball/6f1447a60f068c89d345ceee32025a51dd630f1c",
-                "reference": "6f1447a60f068c89d345ceee32025a51dd630f1c",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-token-stream/zipball/3144ae21711fb6cac0b1ab4cbe63b75ce3d4e8da",
+                "reference": "3144ae21711fb6cac0b1ab4cbe63b75ce3d4e8da",
                 "shasum": ""
             },
             "require": {
@@ -1135,20 +1135,20 @@
             "keywords": [
                 "tokenizer"
             ],
-            "time": "2015-09-14 18:56:12"
+            "time": "2015-09-15 10:49:45"
         },
         {
             "name": "phpunit/phpunit",
-            "version": "4.8.7",
+            "version": "4.8.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "dab2ada9e9a503d2ec3c32fe0fb59dea9bdd9dfa"
+                "reference": "73fad41adb5b7bc3a494bb930d90648df1d5e74b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/dab2ada9e9a503d2ec3c32fe0fb59dea9bdd9dfa",
-                "reference": "dab2ada9e9a503d2ec3c32fe0fb59dea9bdd9dfa",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/73fad41adb5b7bc3a494bb930d90648df1d5e74b",
+                "reference": "73fad41adb5b7bc3a494bb930d90648df1d5e74b",
                 "shasum": ""
             },
             "require": {
@@ -1207,7 +1207,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2015-09-14 06:57:22"
+            "time": "2015-09-20 12:56:44"
         },
         {
             "name": "phpunit/phpunit-mock-objects",

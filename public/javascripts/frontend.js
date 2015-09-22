@@ -9832,7 +9832,7 @@ $('form[name="send_find_phone"] button.event-submit').click(function(){
 
 
     // countries
-    $("#c-features .row-list > li").matchHeight();
+    $("#c-features .row-list > li, .b-how-it-work h3.weight-normal, #block-compatibility-table .table-body > div > p").matchHeight();
 
 }); 
 

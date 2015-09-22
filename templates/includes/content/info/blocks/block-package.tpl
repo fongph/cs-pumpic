@@ -1,9 +1,20 @@
 <div class='mt10'>
-    <div id='block-promo-buy' class="banner-header-package">
+    <div id='block-promo-buy' class="{if isset($language)}bb-p-buy-{$language}{/if} banner-header-package">
         <section>
             <p><i class="plan-header-premium"></i></p>
-            <p>Buy <strong>6</strong> or <strong>12</strong> month plan 
+            
+            {if isset($language) && $language == "bra"}
+                <p>Compre o plano de 6 ou 12 
+                <br class="only-pc" />meses e obtenha mais 2 grátis</p>
+            {elseif isset($language) && $language == "de"}
+                <p>Kaufen Sie den <strong>6</strong> oder <strong>12</strong> Monatsabo 
+                <br class="only-pc" />und <strong>erhalten Sie 2 Monate kostenlos</strong></p>
+            {else}
+                <p>Buy <strong>6</strong> or <strong>12</strong> month plan 
                 <br class="only-pc" />and <strong>get 2 plans for free</strong></p>
+            {/if}    
+            
+            
         </section>
         <section class="vertical-aligh-middle">
             {if isset($planPackageBuyType) && $planPackageBuyType == 'link'}
@@ -23,7 +34,7 @@
                         ga-action ="click"
                         ga-category="premium"
                         ga-label="plan premium packahe"
-                        >Learn More{*Start Now!*}</button>
+                        > {if isset($language) && $language == "bra"}Comprar Agora{elseif isset($language) && $language == "de"}Jetzt kaufen{else}Learn More{/if}{*Start Now!*}</button>
             </form>
             {/if}    
         </section>

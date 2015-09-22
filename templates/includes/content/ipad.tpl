@@ -2,7 +2,10 @@
 {assign 'showViewDemo' 'true'}
 {assign 'showFreeTrial' 'false'}
 
-<div class="{if isset($blockBg)}{$blockBg}{else}dark{/if}">
+{if isset($showDemo)}{assign 'showViewDemo' $showDemo}{/if}
+{if isset($showStore)}{assign 'showVisitStore' $showStore}{/if}
+
+<div {if isset($hook)}id="{$hook}"{/if}  class="{if isset($blockBg)}{$blockBg}{else}dark{/if}">
     <div class="container">
             <div class="row">
                     <div class="col-sm-5 col-md-5 col-lg-5 col-sm-offset-1 col-md-offset-1 col-lg-offset-1">
@@ -38,7 +41,21 @@
                     </div>
                     <div class="col-sm-5 col-md-5 col-lg-5">
                             <div class="ipad-text">
-                                    <h2 class="{if $textAlign == "left"}text-left{elseif $textAlign == "center"}text-center{elseif $textAlign == "right"}text-right{/if}">{if $title}{$title}{else}Easy-to-Use Control Panel{/if}</h2>
+                                    <h2 class="{if $textAlign == "left"}text-left{elseif $textAlign == "center"}text-center{elseif $textAlign == "right"}text-right{/if}">
+                                        {if $title}{$title}{else}Easy-to-Use Control Panel{/if}
+                                    </h2>
+                                    {if isset($language)}
+                                        <div class="block-language">
+                                            {if isset($lang) && $lang == "de"}
+                                                <label class="left">Control Panel auf Englisch</label><i class="lang-icon-{$language} right"></i>
+                                            {elseif isset($lang) && $lang == "bra"}
+                                                <label class="left">Painel de Controle em Inglês</label><i class="lang-icon-{$language} right"></i>
+                                            {else}
+                                                <label class="left">Control Panel in English</label><i class="lang-icon-{$language} right"></i>
+                                            {/if}    
+                                            
+                                        </div>
+                                    {/if}
                                     <p>
                                         {if isset($description)}
                                             {$description}

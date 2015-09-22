@@ -16,50 +16,75 @@
                     </div>
                         
                     <div class='box-cp pull-right mt3'>   
-                        <a href="/store.html" class="btn btn-sm btn-red{*btn-orange btn-success*} visible-lg cp-login"> Buy Now</a>
+                        {if isset($lang) && $lang == "bra"}
+                            <a href="#store" class="btn btn-sm btn-red visible-lg cp-login"> Comprar Agora</a>
+                        {elseif isset($lang) && $lang == "de"}
+                            <a href="#store" class="btn btn-sm btn-red visible-lg cp-login"> Jetzt kaufen</a>
+                        {else}
+                            <a href="#store" class="btn btn-sm btn-red visible-lg cp-login"> Buy Now</a>
+                        {/if}
                     </div>    
                         
-                     {*<div class='box-cp pull-right'>   
-                        <a href="{if isset($demoHref)}http://demo.{$domain}{$demoHref}{else}{getDemoLink domain=$domain}{/if}" class="btn btn-sm btn-orange btn-success visible-lg cp-login">Demo</a>
-                    </div> *}  
-                       
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse pl15-imp" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav">
                             <li {if isset($topmenu_active) && $topmenu_active=='mobile-spy'} class="active"{/if}>
-                                <a href="#mobile-spy">Mobile Spy</a>
+                                
+                                {if isset($lang) && $lang == "bra"}
+                                    <a href="#mobile-spy">Espião Móvel</a>
+                                {elseif isset($lang) && $lang == "de"}
+                                    <a href="#mobile-spy">Mobile Spy</a>
+                                {else}
+                                    <a href="#mobile-spy">Mobile Spy</a>
+                                {/if}    
                             </li>
                             
                             <li {if isset($topmenu_active) && $topmenu_active=='icloud-spy'} class="active"{/if}>
-                                <a href="#icloud-spy">iCloud Spy</a>
+                                
+                                {if isset($lang) && $lang == "bra"}
+                                    <a href="#icloud-spy">Espião iCloud</a>
+                                {elseif isset($lang) && $lang == "de"}
+                                    <a href="#icloud-spy">iCloud Spy</a>
+                                {else}
+                                    <a href="#icloud-spy">iCloud Spy</a>
+                                {/if} 
+                                
                             </li>
                             
                             <li {if isset($topmenu_active) && $topmenu_active=='demo'} class="active"{/if}>
-                                <a href="{if isset($demoHref)}http://demo.{$domain}{$demoHref}{else}{getDemoLink domain=$domain}{/if}">Demo</a>
+                                
+                                {if isset($lang) && $lang == "bra"}
+                                    <a href="#ipad">Demonstração</a>
+                                {elseif isset($lang) && $lang == "de"}
+                                    <a href="#ipad">Demo</a>
+                                {else}
+                                    <a href="#ipad">Demo</a>
+                                {/if}
+                                
                             </li>
                             
                             <li class="language {if isset($topmenu_active) && $topmenu_active=='english-version'}active{/if}">
-                                {*<a href="/english-version.html">English version <i class="lang-icon-en"></i></a>*}
-                                <span>English version <i class="lang-icon-en"></i></span>
-                            </li>
-                            
-                            {*<li>
-                                {if ''|hasUser} 
-                                    <a href="http://cp.{$domain}/">Control Panel</a>
+                                
+                                {if isset($lang) && $lang == "bra"}
+                                    <a href="/">Versão em inglês <i class="lang-icon-en"></i></a>
+                                {elseif isset($lang) && $lang == "de"}
+                                    <a href="/">Englische Version <i class="lang-icon-en"></i></a>
                                 {else}
-                                    <a href="{if ''|detectedDev}/login.html{else}#{/if}">Sign in</a>
-                                {/if}   
-
+                                    <a href="/">English version <i class="lang-icon-en"></i></a>
+                                {/if}
+                                
                             </li>
-
+                           
                             <li>
-                                <a href="http://demo.{$domain}{if isset($demoHref)}{$demoHref}{else}/setDevice/125?redirect_url=cp/calls{/if}" 
-                                   class="btn btn-sm btn-orange btn-success hidden-lg cp-login"> Demo</a>
-                            </li>*}
-                            
-                            <li>
-                                <a href="/store.html" 
-                                   class="btn btn-sm btn-red hidden-lg cp-login"> Buy Now</a>
+                                
+                                {if isset($lang) && $lang == "bra"}
+                                    <a href="#store" class="btn btn-sm btn-red hidden-lg cp-login"> Comprar Agora</a>
+                                {elseif isset($lang) && $lang == "de"}
+                                    <a href="#store" class="btn btn-sm btn-red hidden-lg cp-login"> Jetzt kaufen</a>
+                                {else}
+                                    <a href="#store" class="btn btn-sm btn-red hidden-lg cp-login"> Buy Now</a>
+                                {/if}
+                                
                             </li>
                             
                         </ul>

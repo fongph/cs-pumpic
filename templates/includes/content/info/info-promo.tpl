@@ -22,6 +22,14 @@
                         <td class='{if isset($Review)}col-s-sm-6 col-xs-sm-5 col-md-4 col-lg-4 {else}col-s-sm-6 col-xs-sm-5 col-md-5 col-lg-6{/if} {if in_array('bottom', $position)}vertical-aligh-bottom{/if}'>
                             
                             <div class="visual-images-left {if isset($Review)}visual-images-left-lg{/if} {if $block_video}box-video-constructors{/if}">
+                                
+                                {if isset($language)}
+                                <div id="country-label">
+                                    {if $language == "de"}<img src="{$img}/country/icon-available-germany.png" />{/if}
+                                    {if $language == "bra"}<img src="{$img}/country/icon-available-brazil.png" />{/if}
+                                </div>
+                                {/if}
+                                
                                 <img {if isset($imgWidth)}width='{$imgWidth}'{/if}
                                      {if isset($imgHeight)}height='{$imgHeight}'{/if}                       
                                     src="{$img}/{$imgUrl}" alt="{$imgAlt}" class="visual-img-pc {if isset($maxWidth)}max-width-{$maxWidth}{/if}">   
@@ -66,7 +74,7 @@
                             
                             <div>
                                 <div class="visual-text {if isset($Review)}visual-text-lg visual-text-xlg{else}{if $textAlign}block-text-{$textAlign}{else}block-text-right{/if}{/if}">
-                                    <{$h_title} class="h1 title {if isset($fz)}fz{$fz}{/if}">{if isset($title)} {$title} {else}Android Parental Control App{/if}</{$h_title}>
+                                    <{$h_title} class="h1 title {if isset($classTitle)}{$classTitle}{/if} {if isset($fz)}fz{$fz}{/if}">{if isset($title)} {$title} {else}Android Parental Control App{/if}</{$h_title}>
                                     
                                     {if isset($flagName)}
                                     <div class="clearfix">    
@@ -116,7 +124,7 @@
                                         {if isset($Apple)}
                                             {if isset($AppleVersion) && $Apple == 'yes'}<li><i class="icon-apple"></i> {$AppleVersion}</li>{/if}
                                         {else}    
-                                            <li><i class="icon-apple"></i> (6.0 - 8.4)</li>
+                                            <li><i class="icon-apple"></i> (6.0 - {if isset($jailbreak) && $jailbreak == "true"}8.4{else}8.4.1{/if})</li>
                                         {/if} 
                                         
                                         {if isset($InfoBlock)}
@@ -181,6 +189,7 @@
                                             planPackageBuyUrl = (isset($planPackageBuyUrl)) ? $planPackageBuyUrl : "" 
                                             planPackageBuyType = (isset($planPackageBuyType)) ? $planPackageBuyType : "" 
                                             planPackageBuyClass = (isset($planPackageBuyClass)) ? $planPackageBuyClass : "" 
+                                            language = (isset($language)) ? $language : ""    
                                         }
                                     {/if}
                                     
@@ -260,7 +269,7 @@
                         {/if}
                     </tr>
                     <tr>    
-                        {if in_array('bottom', $position)}
+                        {if in_array('bottom', $position) || in_array('bottom-only-mobile', $position)}
                         <td class='col-xs-sm-12 col-s-sm-12 col-sm-12 col-md-6 col-log-5'>
                             <div class="col-xs-sm-8 col-s-sm-10 col-sm-10 visual-images-bottom mobile-version-inline model-center {if $block_video}box-video-constructors{/if}">
                                 <div class="mobile-none">

@@ -24,6 +24,7 @@ $smarty->assign("jsMin",$config['js_min']);
 $smarty->assign("domain",$config['domain']);
 $smarty->assign("domain_http",$config['domain_http']);
 $smarty->assign("img",$config['path_img']);
+$smarty->assign("ga_key",$config['ga_key']);
 $smarty->assign("css",$config['path_css']);
 $smarty->assign("js",$config['path_js']);
 

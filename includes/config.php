@@ -3,6 +3,7 @@
 // error_reporting(-1);
 global $config;
 $config = array(
+    'ga_key' => 'UA-56492507-1',
     'environment' => 'production',
 	'css_min' => '/stylesheets',
         'js_min' => '/javascripts',
@@ -86,7 +87,11 @@ $config = array(
                 // security
                 'security-subscribe-form-mailChimp.html' => 'security-subscribe-form-mailChimp.php',
             
-                'learning-center/ready-solutions'       => 'ready-solutions.php', 
+                'learning-center/ready-solutions'       => 'ready-solutions.php',
+            
+                // countrie
+                'germany.html' => 'germany.php',
+                'brazil.html' => 'brazil.php'  
 	),
     'db_phones' => array(
         'host' => '188.40.64.2',

@@ -1,6 +1,6 @@
 <div id="c-features" class="{if isset($blockBg)}{$blockBg}{else}dark{/if}">
     <div class="container">
-        <h2 class="text-center">{if isset($title)}{$title}{else}Features{/if}</h2>
+        <h2 class="text-center">{if isset($title)}{$title}{else}Funktionen{/if}</h2>
     
         <div class="row">
             <div class="col-lg-12">
@@ -11,9 +11,9 @@
                             
                             <section>
                                 <i class="c-icon-sms vertical-aligh-bottom"></i>
-                                <label class="vertical-aligh-bottom">SMS</label>
+                                <label class="vertical-aligh-bottom">Textnachrichten</label>
                             </section>
-                            <p>View text content of SMS, MMS, and iMessages sent or received.</p>
+                            <p>Überwachen Sie den Inhalt von <b>SMS</b>, <b>MMS</b>, und <b>iMessages</b>, die gesendet oder empfangen werden.</p>
                         
                         </div>
                     </li>
@@ -22,9 +22,9 @@
                             
                             <section>
                                 <i class="c-icon-browser-activity vertical-aligh-bottom"></i>
-                                <label class="vertical-aligh-bottom">Browser</label>
+                                <label class="vertical-aligh-bottom">Browsing History</label>
                             </section>
-                            <p>View visited websites.</p>
+                            <p>Verfolgen Sie die vom Zielgerät <b>geöffneten Webseiten</b>.</p>
                         
                         </div>
                     </li>
@@ -33,9 +33,9 @@
                             
                             <section>
                                 <i class="c-icon-media-files vertical-aligh-bottom"></i>
-                                <label class="vertical-aligh-bottom">Photos</label>
+                                <label class="vertical-aligh-bottom">Fotos</label>
                             </section>
-                            <p>View camera shots and downloaded photos.</p>
+                            <p>Sehen Sie <b>Kameraaufnahmen</b> und heruntergeladene <b>Fotos</b> an.</p>
                         
                         </div>
                     </li>
@@ -44,9 +44,9 @@
                             
                             <section>
                                 <i class="c-icon-location vertical-aligh-bottom"></i>
-                                <label class="vertical-aligh-bottom">Location</label>
+                                <label class="vertical-aligh-bottom">Standort</label>
                             </section>
-                            <p>Track the exact location on the map.</p>
+                            <p>Verfolgen Sie den <b>genauen Standort</b> auf der Karte.</p>
                         
                         </div>
                     </li>
@@ -58,9 +58,9 @@
                             
                             <section>
                                 <i class="c-icon-calls vertical-aligh-bottom"></i>
-                                <label class="vertical-aligh-bottom">Calls</label>
+                                <label class="vertical-aligh-bottom">Anrufe</label>
                             </section>
-                            <p>Follow in- and outbound calls.</p>
+                            <p>Verfolgen Sie die Anrufhistorie von <b>eingegangenen</b> und <b>getätigten</b> Anrufen.</p>
                         
                         </div>
                     </li>
@@ -69,9 +69,9 @@
                             
                             <section>
                                 <i class="c-icon-contacts vertical-aligh-bottom"></i>
-                                <label class="vertical-aligh-bottom">Contacts</label>
+                                <label class="vertical-aligh-bottom">Kontakte</label>
                             </section>
-                            <p>View existing contacts.</p>
+                            <p>Sehen Sie die <b>Kontaktliste</b> auf dem Zielgerät ein. </p>
                         
                         </div>
                     </li>
@@ -82,7 +82,7 @@
                                 <i class="c-icon-skype vertical-aligh-bottom"></i>
                                 <label class="vertical-aligh-bottom">Skype</label>
                             </section>
-                            <p>Monitor personal, group messages, and calls.</p>
+                            <p>Überwachen Sie Privat- und Gruppen-<b>Nachrichten</b> und <b>Anrufe</b>.</p>
                         
                         </div>
                     </li>
@@ -91,9 +91,9 @@
                             
                             <section>
                                 <i class="c-icon-whatsapp vertical-aligh-bottom"></i>
-                                <label class="vertical-aligh-bottom">Whatsapp</label>
+                                <label class="vertical-aligh-bottom">WhatsApp</label>
                             </section>
-                            <p>Follow personal messages and group chats.</p>
+                            <p>Folgen <b>Privatnachrichten</b> und <b>Gruppenchats</b>.</p>
                         
                         </div>
                     </li>
@@ -105,9 +105,9 @@
                             
                             <section>
                                 <i class="c-icon-bookmarks vertical-aligh-bottom"></i>
-                                <label class="vertical-aligh-bottom">Bookmarks</label>
+                                <label class="vertical-aligh-bottom">Lesezeichen</label>
                             </section>
-                            <p>View bookmarked websites.</p>
+                            <p>Sehen Sie <b>Webseiten</b> an, die als <b>Favorit</b> markiert wurden.</p>
                         
                         </div>
                     </li>
@@ -116,9 +116,9 @@
                             
                             <section>
                                 <i class="c-icon-calendars vertical-aligh-bottom"></i>
-                                <label class="vertical-aligh-bottom">Calendar</label>
+                                <label class="vertical-aligh-bottom">Kalender</label>
                             </section>
-                            <p>Follow scheduled events.</p>
+                            <p>Folgen Sie <b>vorgemerkten Events</b>, Plänen und Ideen.</p>
                         
                         </div>
                     </li>
@@ -127,9 +127,9 @@
                             
                             <section>
                                 <i class="c-icon-notes vertical-aligh-bottom"></i>
-                                <label class="vertical-aligh-bottom">Notes</label>
+                                <label class="vertical-aligh-bottom">Notizen</label>
                             </section>
-                            <p>View notes kept on the target device.</p>
+                            <p>Sehen Sie auf dem Zielgerät <b>angelegte Notizen</b> an.</p>
                         
                         </div>
                     </li>
@@ -138,9 +138,9 @@
                             
                             <section>
                                 <i class="c-icon-kik vertical-aligh-bottom"></i>
-                                <label class="vertical-aligh-bottom color-green">Coming soon!</label>
+                                <label class="vertical-aligh-bottom color-green">Schon bald!</label>
                             </section>
-                            <p>Kik Monitoring</p>
+                            <p>Kik Überwachung</p>
                         
                         </div>
                     </li>

@@ -15166,7 +15166,7 @@ div.curr {
 }
 
 .c-f-list > li {
-    padding: 30px 27px 20px 27px;
+    padding: 30px 15px 20px; /* 27px */
     border-right: 1px solid #dcdcdc;
 }
 .c-f-list > li:last-child {

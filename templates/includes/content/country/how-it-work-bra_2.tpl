@@ -19,7 +19,7 @@
                         Siga as instruções do e-mail e preencha o <b>login iCloud e senha</b> do dispositivo pretendido.
                     </p>
                     <p>
-                        Note que <b>pode ser necessário acesso físico</b> para alterar as configurações do dispositivo (ative o iCloud Backup ).
+                        Note que <b>pode ser necessário acesso físico</b> para alterar as configurações do dispositivo (ative o iCloud Backup).
                     </p>
                 </div>
                 <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">

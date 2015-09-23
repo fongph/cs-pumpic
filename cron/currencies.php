@@ -97,5 +97,5 @@ try {
     getRates();
     
 } catch (Exception $e) {
-    file_put_contents(dirname(__FILE__) . '/logs/exceptions.log', PHP_EOL . date("Y-m-d H:i:s -> ") . $e->getMessage() . PHP_EOL . $e->getTraceAsString() . PHP_EOL . print_r($_REQUEST, true), FILE_APPEND);
+    file_put_contents(dirname(__FILE__) . '/log/exceptions.log', PHP_EOL . date("Y-m-d H:i:s -> ") . $e->getMessage() . PHP_EOL . $e->getTraceAsString() . PHP_EOL . print_r($_REQUEST, true), FILE_APPEND);
 }

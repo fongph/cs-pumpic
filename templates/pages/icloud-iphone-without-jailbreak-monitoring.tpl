@@ -39,6 +39,8 @@
             description = "Enjoy multitask tracking without Jailbreak. 
                             <br>Control iPhone use. Follow communication and online activity."
                          
+            jailbreak = "true"                
+
             promoBuyBlock = "no"
             iCloudSolution = 'no'
             planPackageBuy = "yes"
@@ -73,7 +75,7 @@
         <!-- END ICLOUD SOLUTION -->
         
         <!-- BLOCK HOW IT WORK -->
-        <div class="light">
+        <div class="b-how-it-work light">
             <div class="container">
                 <div class="col-lg-8 col-lg-offset-2">
                 <h2 class="text-center">How It Works</h2>

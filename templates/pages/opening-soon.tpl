@@ -38,9 +38,9 @@
 					<p>Pumpic takes cell phone monitoring to a new level. 
                                             <br />Track the location, text messages and contacts quickly and quiet.</p>
 					<ul class="compatibility">
-						<li><i class="icon-android"></i> (2.2 - 4.4)</li>
-						<li><i class="icon-apple"></i> (3.1.3 - 7.1.1)</li>
-						<li><i class="icon-blackberry"></i> (1.0 - 7.1)</li>
+						<li><i class="icon-android"></i> (2.2 - 5.1)</li>
+						<li><i class="icon-apple"></i> (6.0 - 8.4.1)</li>
+						{*<li><i class="icon-blackberry"></i> (1.0 - 7.1)</li>*}
 						<li>
                                                     <i class="icon-info-circled"></i> <a href="/compatibility.html">platform compatibility</a>
 						</li>

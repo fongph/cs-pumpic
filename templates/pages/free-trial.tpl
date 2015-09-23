@@ -111,7 +111,7 @@
                                                                     </li>
                                                                     <li> 
                                                                         <i class="icon-apple"></i>
-                                                                        (6.0 - 8.4)
+                                                                        (6.0 - 8.4.1)
                                                                     </li>
                                                                 </ul>    
                                                             </div>

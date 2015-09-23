@@ -38,6 +38,8 @@
             description = "Enjoy remote tracking of Apple devices. 
                             <br />Control iPhone use. Follow location and online activity."
                             
+            jailbreak = "true"                
+
             promoBuyBlock = "no"
             planPackageBuy = "yes"
             planPackageBuyUrl = '#choose-subscription-plan'
@@ -67,7 +69,7 @@
         <!-- END -->
         
         <!-- HOW IT WORK -->
-        <div class="light">
+        <div class="b-how-it-work light">
             <div class="container">
                 <div class="col-lg-8 col-lg-offset-2">
                 <h2 class="text-center">How It Works</h2>

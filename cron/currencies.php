@@ -11,7 +11,7 @@ try {
 
     function getDb() {
         global $config;
-        return new \PDO("mysql:host={$config['db_blog']['host']};dbname={$config['db_blog']['dbname']}", $config['db_blog']['username'], $config['db_blog']['password'], $config['db_blog']['options']);
+        return new \PDO("mysql:host={$config['db_blog']['host']};dbname={$config['db_blog']['dbname']}", $config['db_blog']['username'], $config['db_blog']['password'], $config['dbOptions']);
     }
     
     function getRates() {

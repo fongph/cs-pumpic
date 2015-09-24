@@ -178,7 +178,7 @@
                                                 <div class="table_header text-transform-none text-center">
                                                     <div id="list-price-phones" class="wr_support_new_os">
                                                         <i class="icon-android d_green"></i> Android 2.2 - 5.1
-                                                        <i class="icon-apple d_green"></i> iOS 6.0 — 8.4 (com jailbreak)
+                                                        <i class="icon-apple d_green"></i> iOS 6.0 - 8.4 (com jailbreak)
                                                     </div>
                                                 </div>
                                             </th>

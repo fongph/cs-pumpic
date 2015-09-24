@@ -31,7 +31,7 @@
                                     <div class="div-table">
                                         <div class="div-table-row">
                                             <div class="div-table-column"><span>Smartphones e Tablets:</span></div>
-                                            <div class="div-table-column"><span class="color-green">Android 2.2 ou acima</span></div>
+                                            <div class="div-table-column"><span class="color-green">Android 2.2 – 5.1</span></div>
                                         </div>
                                     </div>
 
@@ -53,7 +53,7 @@
                                     <div class="div-table">
                                         <div class="div-table-row">
                                             <div class="div-table-column"><span>Smartphones und Tablets:</span></div>
-                                            <div class="div-table-column"><span class="color-green">Android 2.2 oder aktueller</span></div>
+                                            <div class="div-table-column"><span class="color-green">Android 2.2 – 5.1</span></div>
                                         </div>
                                     </div>
 
@@ -75,7 +75,7 @@
                                     <div class="div-table">
                                         <div class="div-table-row">
                                             <div class="div-table-column"><span>Smartphones and Tablets:</span></div>
-                                            <div class="div-table-column"><span class="color-green">Android 2.2 and up</span></div>
+                                            <div class="div-table-column"><span class="color-green">Android 2.2 – 5.1</span></div>
                                         </div>
                                     </div>
 
@@ -113,7 +113,7 @@
                                     <div class="div-table">
                                         <div class="div-table-row">
                                             <div class="div-table-column"><span>iPhones / iPads / iPods Touch:</span></div>
-                                            <div class="div-table-column"><span class="color-green">{if isset($versionIOS)}{$versionIOS}{else}iOS 6.0 ou acima{/if}</span></div>
+                                            <div class="div-table-column"><span class="color-green">{if isset($versionIOS)}{$versionIOS}{else}iOS 6.0 – 8.4{/if}</span></div>
                                         </div>
                                     </div>
 
@@ -135,7 +135,7 @@
                                     <div class="div-table">
                                         <div class="div-table-row">
                                             <div class="div-table-column"><span>iPhones / iPads / iPods Touch:</span></div>
-                                            <div class="div-table-column"><span class="color-green">{if isset($versionIOS)}{$versionIOS}{else}iOS 6.0 oder aktueller{/if}</span></div>
+                                            <div class="div-table-column"><span class="color-green">{if isset($versionIOS)}{$versionIOS}{else}iOS 6.0 – 8.4{/if}</span></div>
                                         </div>
                                     </div>
 
@@ -157,7 +157,7 @@
                                     <div class="div-table">
                                         <div class="div-table-row">
                                             <div class="div-table-column"><span>iPhones / iPads / iPods Touch:</span></div>
-                                            <div class="div-table-column"><span class="color-green">iOS 6.0 and up</span></div>
+                                            <div class="div-table-column"><span class="color-green">iOS 6.0 – 8.4</span></div>
                                         </div>
                                     </div>
 

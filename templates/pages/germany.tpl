@@ -250,7 +250,7 @@
          <!-- BLOCK COMPATIBILITY -->
         {include file='../includes/content/compatibility/compatibility-table.tpl'
             title="Kompatibilität"
-            versionIOS="iOS 6.0 – 8.4.1"
+            versionIOS="iOS 6.0 - 8.4.1"
             androidText=""
             iosText="iCloud Passwort ist für die Installation notwendig"
             blockBg="light" 

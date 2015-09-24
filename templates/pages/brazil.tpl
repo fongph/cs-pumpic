@@ -250,7 +250,7 @@
          <!-- BLOCK COMPATIBILITY -->
         {include file='../includes/content/compatibility/compatibility-table.tpl'
             title="Compatibilidade"
-            versionIOS="iOS 6.0 – 8.4.1"    
+            versionIOS="iOS 6.0 - 8.4.1"    
             androidText=""
             iosText="A senha do iCloud é necessária para esta instalação"
             blockBg="light" 

@@ -34,8 +34,8 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-12 pb20 intro-compatibility">
-                        <span>Pumpic is compatible with all major smartphones and tablets. Operating systems supported: <b>Android (smartphone and tablets)</b> starting from <b>2.2</b> version, 
-                            <b>iOS (iPhones, iPad, iPods Touch)</b> starting from <b>6.0</b> version. This page is a partial list of phones and devices that are compatible with Pumpic.</span>
+                        <span>Pumpic is compatible with the majority of mobile devices. Operating systems supported: <b>Android (smartphones and tablets)</b> starting from the <b>2.2</b> version, 
+                            <b>iOS (iPhone, iPad, iPod Touch)</b> starting from the <b>6.0</b> version. This page contains a partial list of devices compatible with the Pumpic app.</span>
                     </div>
                 </div>
 

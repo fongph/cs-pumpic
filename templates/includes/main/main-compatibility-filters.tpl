@@ -4,7 +4,7 @@
                     <span class="ico-left"><i class="icon-apple"></i></span>
                     <span>OS:<strong> iOS</strong></span>
                     <span>Versions:<strong> 6.0 - 8.4.1</strong></span>
-                    <span><strong>iPhones, iPads, iPods Touch</strong></span>
+                    <span><strong>iPhone, iPad, iPod Touch</strong></span>
                     <a href="/compatibility/ios-devices" 
                        class="text-succes search-category a-default" data-os="iOS">View list of iOS devices</a>
             </div>

@@ -9,12 +9,10 @@
     <meta name="keywords" content="{$keywords}"/>
 {/if}
 
-{nocache}
-    {robotsClose}
-    {if isset($robots) && $robots == "no" || $robotClose == "true"} 
-        <meta name="robots" content="noindex,nofollow" />
-    {/if}
-{/nocache}
+{robotsClose}
+{if isset($robots) && $robots == "no" || $robotClose == "true"} 
+    <meta name="robots" content="noindex,nofollow" />
+{/if}
 
 {assign '_test' 'false'}
 {if isset($test) && $test == 'true'} {assign '_test' 'true'} {/if}

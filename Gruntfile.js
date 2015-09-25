@@ -32,6 +32,7 @@ module.exports = function (grunt) {
                     './assets/js/bxslider/jquery.bxslider.js', 
                     './assets/js/bxslider/bxInit.js',
                     './assets/js/button.js',
+                    './assets/js/ZeroClipboard.min.js',
                     //'./assets/js/wp/settings.js',
                     //'./assets/js/wp/init.js',
                     './assets/js/youtube/bootstrap.youtubepopup.js',

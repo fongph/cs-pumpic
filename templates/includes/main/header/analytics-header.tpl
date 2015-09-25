@@ -22,7 +22,11 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 ga('create', 'UA-56492507-1', 'auto', {'allowLinker': true});
 ga('require', 'linker');
 ga('linker:autoLink', ['pumpic.com','fastspring.com','demo.pumpic.com','cp.pumpic.com'], true, true);
+{if $search_word}
+ga('send', 'pageview', '/compatibility/results?q={$search_word}');
+{else}
 ga('send', 'pageview');
+{/if}
 </script>
 
 {/literal}

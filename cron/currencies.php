@@ -14,23 +14,52 @@ try {
         return new \PDO("mysql:host={$config['db_blog']['host']};dbname={$config['db_blog']['dbname']}", $config['db_blog']['username'], $config['db_blog']['password'], $config['dbOptions']);
     }
     
+    function isXML ( $xml ) {               
+        libxml_use_internal_errors(true);
+        $doc = new DOMDocument('1.0', 'utf-8');
+        $doc->loadXML( $xml );
+
+        $errors = libxml_get_errors();
+        if (empty($errors))
+        {
+            return true;
+        }
+        return false;
+    } 
+    
     function getRates() {
-        $_url = "http://openexchangerates.org/api/latest.json?app_id=aef6d4fe78d94707b26b14e5aaa2a143";
-        $_currancies = file_get_contents( $_url );
-        if($_currancies) {
-            $_currancies = json_decode( $_currancies, JSON_OBJECT_AS_ARRAY );
-            
-            if(isset($_currancies['rates']) 
-                    and is_array($_currancies['rates']) 
-                    and count($_currancies['rates']) > 0) {
-                foreach($_currancies['rates'] as $_iso => $_rate) :
-                    if($_iso) setRates($_iso, $_rate);
+        $url = 'https://secure.avangate.com/content/exchange-xml.php?CURRENCY=USD'; 
+        $xmlstr = file_get_contents( $url );
+        if($xmlstr && isXml( $xmlstr )) { // tidy::isXml
+            $movies = new SimpleXMLElement($xmlstr);
+            if(isset($movies->currency) and count($movies->currency) > 0) {
+                foreach($movies->currency as $item):
+                    $symbol = (isset($item->csymbol)) ? strtolower(trim($item->csymbol)) : null;
+                    $rate = (isset($item->crate)) ? (float)$item->crate : false; // fix (1 / (float)$item->crate)
+                    if($symbol && $rate) setRates($symbol, $rate);
                 endforeach;
             } else
                 \Exception ( 'Error! Result Rates Empty!' );
-            
         } else
-            \Exception ( 'Error! Can not load RATES. in( '.$_url.' )' );
+            \Exception ( 'Error! Can not load RATES. '. $url );
+        
+        
+//        $_url = "http://openexchangerates.org/api/latest.json?app_id=aef6d4fe78d94707b26b14e5aaa2a143";
+//        $_currancies = file_get_contents( $_url );
+//        if($_currancies) {
+//            $_currancies = json_decode( $_currancies, JSON_OBJECT_AS_ARRAY );
+//            
+//            if(isset($_currancies['rates']) 
+//                    and is_array($_currancies['rates']) 
+//                    and count($_currancies['rates']) > 0) {
+//                foreach($_currancies['rates'] as $_iso => $_rate) :
+//                    if($_iso) setRates($_iso, $_rate);
+//                endforeach;
+//            } else
+//                \Exception ( 'Error! Result Rates Empty!' );
+//            
+//        } else
+//            \Exception ( 'Error! Can not load RATES. in( '.$_url.' )' );
         
     }
     
@@ -51,8 +80,7 @@ try {
                        'rates'      => trim($rates),
                        'date'       => date('Y-m-d H:i:s'),
                        'hidden'     => 0);
-        
-       
+
         if($_currID = hasRates( $iso )) {
             if(md5($_currID['iso'].$_currID['rates']) != md5($_data['iso'].$_data['rates'])) {
                 updateRates($_currID['currID'], $_data);

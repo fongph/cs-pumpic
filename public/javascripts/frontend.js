@@ -7263,8 +7263,8 @@ currencyHandler = {
                  
               if(price) {
                   _price.html( methods._convert( parseFloat(price), 
-                                                iso, 
-                                                methods.getCach('currISO') || $_settings.currBase
+                                                 methods.getCach('currISO') || $_settings.currBase,   
+                                                iso
                                             ).toFixed(2)  ); // ).toFixed(2)
                   _symbol.attr('attr-iso', methods.getCach('currISO'));   
                   _symbol.text( $_settings.currCode[ methods.getCach('currISO').toLowerCase() ] )

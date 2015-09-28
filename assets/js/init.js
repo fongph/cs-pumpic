@@ -288,6 +288,20 @@ function cookie_init() {
 
 }
 
+function copy_to_clipboard_init() {
+    var client = new ZeroClipboard($(".copy-to-clipboard"));
+
+    client.on( "copy", function (event) {
+        var clipboard = event.clipboardData;
+        clipboard.setData( "text/plain", $('.copy-this').val() );
+    });
+
+    client.on( 'aftercopy', function(event) {
+        $('.copy-done').show().fadeOut(1500);
+    } );
+
+}
+
 function cookie_clear() {
     if($.cookie('popUp')) {
         $.removeCookie('popUp', { path: '/' });
@@ -644,7 +658,7 @@ function die( $_msg ) {
     console.log( $_msg );
 }
 
-$(document).ready(function(){ 
+$(document).ready(function(){
     
    $rs_width = false;
    $( window ).resize(function() { 
@@ -656,6 +670,8 @@ $(document).ready(function(){
    }
     
     cookie_init();
+
+    copy_to_clipboard_init();
     
     $.data( window, "filters", false); // init clear cache
     
@@ -667,6 +683,28 @@ $(document).ready(function(){
             'blackberry': false
         }
     }; // init settings
+
+    // activate tab
+    if(window.location.hash.length) {
+        var hash = window.location.hash,
+            $button = $('a[href="'+hash+'"]');
+
+        $button.attr('data-toggled', 'on');
+        $button.parent().addClass('active');
+
+        $('.box_category>ul>li').hide();
+        $(hash).show();
+
+        console.log(window.location.hash);
+    }
+
+    $('.share_list a').click(function(e){
+        e.preventDefault();
+        if($(this).data('location').length) {
+            window.open($(this).data('location') + encodeURIComponent(window.location), 'Share', 'height=300,width=500');
+        }
+        return false
+    });
     
     $('.box-plans, .box-phone').on('click', function(event) {
         event.preventDefault();
@@ -744,8 +782,8 @@ $(document).ready(function(){
                var _hash = $(this).attr('href').split('#');
                console.log(_hash[1]);
                if(_hash.length) {
-                    $('.box_category > ul > li').find('#'+_hash[1]).closest('li').show();
-                }     
+                   $('.box_category > ul > li').find('#'+_hash[1]).closest('li').show();
+               }
            } 
         });
     }
@@ -754,9 +792,16 @@ $(document).ready(function(){
     $('.list_category > li > a').on('click', function(event){
         event.preventDefault();
         var _hash = $(this).attr('href').split('#'), 
-            _index = $(this).closest('li').index();
+            _index = $(this).closest('li').index(),
+            $holder = $(this).parent().parent();
         
         // console.log('index = '+_index);
+
+        var store_history = $holder.attr('save-state');
+
+        if(typeof store_history !== typeof undefined && store_history !== false) {
+            window.location.hash = $(this).attr('href');
+        }
          
         // clear all active 
         $.each($('.list_category > li').not(":eq("+ _index +")"), function() {
@@ -771,10 +816,13 @@ $(document).ready(function(){
         // all add attr off
          
         if (!$(this).attr('data-toggled') || $(this).attr('data-toggled') == 'off'){
-           // alert('off > on');
-               $(this).attr('data-toggled','on');
-               
-            $(this).parent().addClass('active');
+            $(this).attr('data-toggled','on');
+          
+            $(".list_category").each(function(key, value){
+                if($(this).find("li:eq("+ _index +")").length)
+                    $(this).find("li:eq("+ _index +")").addClass('active');
+            });
+            
             $('.box_category > ul > li').hide();
             
             if(_hash.length > 1) {
@@ -787,11 +835,13 @@ $(document).ready(function(){
                
         }
         else if ($(this).attr('data-toggled') == 'on'){
-           // alert('on > off');
                $(this).attr('data-toggled','off');
                
-                //if($(this).parent().hasClass('active'))
-                    $(this).parent().removeClass('active');
+               $(".list_category").each(function(key, value){
+                   if($(this).find("li:eq("+ _index +")").hasClass('active'))
+                        $(this).find("li:eq("+ _index +")").removeClass('active');
+                });
+                    
                $('.box_category > ul > li').show();
         }
         

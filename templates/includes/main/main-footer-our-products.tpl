@@ -13,6 +13,16 @@
         <li>
             <a href="/gps-wireless-tracking-phone.html">Wireless Phone Tracking</a>
         </li>
+        
+        <li>
+            <a href="/ipad-parental-control.html">iPad Parental Control</a>
+        </li>
+        <li>
+            <a href="/ipod-parental-control.html">iPod Parental Controls</a>
+        </li>
+        <li>
+            <a href="/android-tablet-parental-control.html">Android Tablet Parental Control</a>
+        </li>
         {*<li>
             <a href="/reviews/">Best Mobile Trackers</a>
         </li>

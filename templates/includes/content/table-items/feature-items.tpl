@@ -14,7 +14,7 @@
 
     <div class="tab col-item-3 col-md-item-3 col-sm-item-3">
         <ul>
-            <li><i class="i-features-browser"></i> Control Browser</li>
+            <li><i class="i-features-browser"></i> <span onclick="window.location='http://{$domain}/browser-parental-control.html'">Control Browser</span></li>
             <li><i class="i-features-app"></i> Control Applications</li>
             <li><i class="i-features-view-bookmarks"></i> View Bookmarks</li>
             <li><i class="i-features-view-notes"></i> View Notes</li>

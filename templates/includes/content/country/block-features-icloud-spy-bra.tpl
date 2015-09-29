@@ -12,6 +12,7 @@
                             <section>
                                 <i class="c-icon-sms vertical-aligh-bottom"></i>
                                 <label class="vertical-aligh-bottom">Mensagens de texto</label>
+                                {*<i class="root-android c-icon-root-android vertical-aligh-bottom right"></i>*}
                             </section>
                             <p>Monitore os conteúdos de texto de <b>SMS</b>, <b>MMS</b> e <b>iMessages</b> enviados ou recebidos.</p>
                         

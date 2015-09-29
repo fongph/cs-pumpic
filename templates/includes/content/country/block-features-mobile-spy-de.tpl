@@ -46,7 +46,7 @@
                             <section>
                                 <i class="c-icon-sms vertical-aligh-bottom"></i>
                                 <label class="vertical-aligh-bottom">Mediendaten</label>
-                                <i class="root-android c-icon-root-android vertical-aligh-bottom right"></i>
+                                {*<i class="root-android c-icon-root-android vertical-aligh-bottom right"></i>*}
                             </section>
                             <p>Sehen Sie jedes <b>Foto</b> und Video an, dass von der Kamera des Zielgerätes aufgenommen oder aus dem Internet <b>heruntergeladen</b> wurde. </p>
                         
@@ -61,7 +61,7 @@
                             <section>
                                 <i class="c-icon-browser-activity vertical-aligh-bottom"></i>
                                 <label class="vertical-aligh-bottom">Browseraktivitäten</label>
-                                <i class="root-android c-icon-root-android vertical-aligh-bottom right"></i>
+                                {*<i class="root-android c-icon-root-android vertical-aligh-bottom right"></i>*}
                             </section>
                             <p>Folgen Sie der <b>Browserhistorie</b>, indem Sie die besuchten Webseiten des Zielgeräts aufrufen. Prüfen Sie <b>Lesezeichen</b> und <b>blockieren Sie Webseiten</b> mit unangemessenen Inhalten.</p>
                         
@@ -95,6 +95,7 @@
                             <section>
                                 <i class="c-icon-email vertical-aligh-bottom"></i>
                                 <label class="vertical-aligh-bottom">E-Mail</label>
+                                <i class="root-android c-icon-root-android vertical-aligh-bottom right"></i>
                             </section>
                             <p>Öffnen Sie <b>eingehende</b>, <b>gesendete</b> und <b>gelöschte</b> E-Mails. Überwachen Sie Kommunikationsdaten mit Kontakten. </p>
                         
@@ -141,7 +142,8 @@
                             
                             <section>
                                 <i class="c-icon-chats-social-media vertical-aligh-bottom"></i>
-                                <label class="vertical-aligh-bottom">Chats & Social Media</label>
+                                <label class="vertical-aligh-bottom">Chats & Social <br class="only-pc" />Media</label>
+                                <i class="root-android c-icon-root-android vertical-aligh-bottom right"></i>
                             </section>
                             <p>Folgen Sie bekannten Sozialen Netzwerken: <b>Facebook</b> und <b>Instagram</b>, sowie beliebte Online-Messengern: <b>WhatsApp</b>, <b>Skype</b>, <b>Kik</b>, <b>Viber</b>, <b>Snapchat</b>.</p>
                         

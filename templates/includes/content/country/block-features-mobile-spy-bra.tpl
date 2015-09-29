@@ -49,7 +49,7 @@
                             <section>
                                 <i class="c-icon-sms vertical-aligh-bottom"></i>
                                 <label class="vertical-aligh-bottom">Arquivos <br class="only-pc" />de mídia</label>
-                                <i class="root-android c-icon-root-android vertical-aligh-bottom right"></i>
+                                {*<i class="root-android c-icon-root-android vertical-aligh-bottom right"></i>*}
                             </section>
                             <p>Visualize cada <b>foto e vídeo tirados</b> pela câmera do dispositivo ou <b>baixado</b> da internet.</p>
                         
@@ -64,7 +64,7 @@
                             <section>
                                 <i class="c-icon-browser-activity vertical-aligh-bottom"></i>
                                 <label class="vertical-aligh-bottom">Atividade <br class="only-pc" />de Navegação</label>
-                                <i class="root-android c-icon-root-android vertical-aligh-bottom right"></i>
+                                {*<i class="root-android c-icon-root-android vertical-aligh-bottom right"></i>*}
                             </section>
                             <p>Acompanhe o <b>histórico de navegação</b> visualizando os sites que foram visitados pelo dispositivo. Verifique os <b>favoritos</b>. <b>Bloqueie sites</b> que contenham conteúdo inapropriado.</p>
                         
@@ -98,6 +98,7 @@
                             <section>
                                 <i class="c-icon-email vertical-aligh-bottom"></i>
                                 <label class="vertical-aligh-bottom">E-mail</label>
+                                <i class="root-android c-icon-root-android vertical-aligh-bottom right"></i>
                             </section>
                             <p>Veja os e-mails <b>recebidos</b>, <b>enviados e excluídos</b>.</p>
                         
@@ -144,7 +145,8 @@
                             
                             <section>
                                 <i class="c-icon-chats-social-media vertical-aligh-bottom"></i>
-                                <label class="vertical-aligh-bottom">Chats e Mídias Sociais</label>
+                                <label class="vertical-aligh-bottom">Chats e Mídias <br class="only-pc" />Sociais</label>
+                                <i class="root-android c-icon-root-android vertical-aligh-bottom right"></i>
                             </section>
                             <p>Siga as redes sociais populares, <b>Facebook e Instagram</b>, bem como os chats amplamente usados: <b>WhatsApp</b>, <b>Skype</b>, <b>Kik</b>, <b>Viber</b>, <b>Snapchat</b>.</p>
                         

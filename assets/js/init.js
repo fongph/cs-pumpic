@@ -330,7 +330,6 @@ function hashchange_AfterInit() {
         $auth = $_popUp.find('#box-status-auth'),
         $registration = $_popUp.find('#box-status-registration'),
         $trial_registration = $_popUp.find('#box-status-free-trial-registration');
-         
     // init bPopUp
     if(isset(_data['popUp']) && _hasUser == 'true') {
         
@@ -688,14 +687,12 @@ $(document).ready(function(){
     if(window.location.hash.length) {
         var hash = window.location.hash,
             $button = $('a[href="'+hash+'"]');
-
-        $button.attr('data-toggled', 'on');
-        $button.parent().addClass('active');
-
-        $('.box_category>ul>li').hide();
-        $(hash).show();
-
-        console.log(window.location.hash);
+        if($button.length && $(hash).length) {    
+            $button.attr('data-toggled', 'on');
+            $button.parent().addClass('active');
+            $('.box_category>ul>li').hide();
+            $(hash).show();
+        }
     }
 
     $('.share_list a').click(function(e){
@@ -831,6 +828,13 @@ $(document).ready(function(){
                 } else {
                     $('.box_category > ul > li').find('#'+_hash[1]).closest('li').show();
                 }
+                
+                if($('.box_category > ul > li').find('#'+_hash[1]).length) {
+                    $('html, body').animate( { 
+                        scrollTop: Math.ceil( $('.box_category > ul > li').find('#'+_hash[1]).offset().top ) // Math.ceil((target_top * $(window).outerHeight(true)) / $('html, body').height())
+                    },'linear');
+                }
+                
             }
                
         }

@@ -15499,15 +15499,13 @@ textarea.copy-this {
 ul.list_category li:first-child {
     margin-left: 0 !important;
 }
-
 .l-c-mobile { display: none; }
 
 @media only screen and (max-width: 480px) { }
 @media (max-width: 480px) { 
     .col-mob-12 {
         width: 100%;
-    }
-    
+    }    
     .actions .copyright, .actions .copy-to-clipboard {
         display: inline-block;
         float: none;

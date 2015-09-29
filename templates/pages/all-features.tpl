@@ -1355,7 +1355,7 @@
                                             <i class='i-list-features-icloud'></i>
                                             <strong>
                                                 {*iCloud*}
-                                                iCloud monitoring <span class='text-normal'>(jailbreak-free)</span>
+                                                iCloud monitoring <span class='text-normal'>(jailbreak-free up to iOS 8.4.1)</span>
                                             </strong>
                                         </li>
                                     </ul>

@@ -100,7 +100,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="support_new_os"><div class="wr_support_new_os"><i class="icon-android d_green"></i> Android 2.2 - 5.1 <i class="icon-apple d_green"></i> iOS 6.0 - 8.4</div></div>
+                                        <div class="support_new_os"><div class="wr_support_new_os"><i class="icon-android d_green"></i> Android 2.2 - 5.1 <i class="icon-apple d_green"></i> iOS 6.0 - 8.4 (with jailbreak)</div></div>
                                         </caption>
                                         <thead>
                                             <tr>
@@ -199,7 +199,7 @@
                                                                 <li data-toggle="tooltip" data-placement="top" title="Monitor Snapchat photos, videos, and comments. <div class='br'><strong>iOS: Jailbreak Needed</strong><br /><strong>Android: Root and Xposed Required</strong></div>"><i class="icon-cancel"></i> Snapchat</li>
                                                                 <li data-toggle="tooltip" data-placement="top" title="Track chats and calls on Facebook. <div class='br'><strong>iOS: Jailbreak Needed</strong><br /><strong>Android: Root Required</strong></div>"><i class="icon-cancel"></i> Facebook{*Messages*}</li>
                                                                 <li data-toggle="tooltip" data-placement="top" title="View all the previouse data ever stored on a device."><i class="icon-cancel"></i> Historical data</li> 
-                                                                <li data-toggle="tooltip" data-placement="top" title="Control devices remotely. <div class='br'><strong>iOS: Jailbreak Needed</strong></div><div class='br'><strong>Not supported: on Android 5.0{*4.4+*}.</strong></div>"><i class="icon-cancel"></i> SMS commands</li>
+                                                                <li data-toggle="tooltip" data-placement="top" title="Control devices remotely. <div class='br'><strong>iOS: Jailbreak Needed</strong></div><div class='br'><strong>Not supported: Android 5.0 and higher.</strong></div>"><i class="icon-cancel"></i> SMS commands</li>
                                                                 <li data-toggle="tooltip" data-placement="top" title="View every keystroke typed on a target device. <div class='br'><strong>iOS: Jailbreak Needed</strong></div>"><i class="icon-cancel"></i> Keylogger</li>
                                                                 <li data-toggle="tooltip" data-placement="top" title="Monitor iPhones, iPads, and iPods Touch without jailbreak. View Calls, Text messages, Photos, Location, Notes, Contacts, Browsing History, Bookmarks, Calendar, Skype, and WhatsApp."><i class="icon-cancel"></i> iCloud (<span class="fz13">jailbreak-free up to iOS 8.4.1</span>)</li>
                                                                                                                
@@ -351,7 +351,7 @@
                                                                 <li data-toggle="tooltip" data-placement="top" title="Monitor Snapchat photos, videos, and comments. <div class='br'><strong>iOS: Jailbreak Needed</strong><br /><strong>Android: Root and Xposed Required</strong></div>"><i class="icon-ok"></i> Snapchat</li>
                                                                 <li data-toggle="tooltip" data-placement="top" title="Track chats and calls on Facebook. <div class='br'><strong>iOS: Jailbreak Needed</strong><br /><strong>Android: Root Required</strong></div>"><i class="icon-ok"></i> Facebook{*Messages*}</li>
                                                                 <li data-toggle="tooltip" data-placement="top" title="View all the previouse data ever stored on a device."><i class="icon-ok"></i> Historical data</li> 
-                                                                <li data-toggle="tooltip" data-placement="top" title="Control devices remotely. <div class='br'><strong>iOS: Jailbreak Needed</strong></div><div class='br'><strong>Not supported: on Android 5.0{*4.4+*}.</strong></div>"><i class="icon-ok"></i> SMS commands</li>
+                                                                <li data-toggle="tooltip" data-placement="top" title="Control devices remotely. <div class='br'><strong>iOS: Jailbreak Needed</strong></div><div class='br'><strong>Not supported: Android 5.0 and higher.</strong></div>"><i class="icon-ok"></i> SMS commands</li>
                                                                 <li data-toggle="tooltip" data-placement="top" title="View every keystroke typed on a target device. <div class='br'><strong>iOS: Jailbreak Needed</strong></div>"><i class="icon-ok"></i> Keylogger</li>
                                                                 <li data-toggle="tooltip" data-placement="top" title="Monitor iPhones, iPads, and iPods Touch without jailbreak. View Calls, Text messages, Photos, Location, Notes, Contacts, Browsing History, Bookmarks, Calendar, Skype, and WhatsApp."><i class="icon-ok"></i> iCloud (<span class="fz13">jailbreak-free up to iOS 8.4.1</span>)</li>
                                                                

@@ -150,7 +150,7 @@
 
                             <div class="table-body">
                                 <div class="text-center">
-                                    <p>Jailbreak or iCloud password is required before the installation</p>
+                                    <p>Jailbreak is required before the installation</p>
                                 </div>
                                 <div>
 

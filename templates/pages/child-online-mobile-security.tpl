@@ -1,4 +1,3 @@
-{closeAccess}
 {include file='../includes/main/main-header.tpl'
     robots="yes" 
     title="Mobile Phone Security Measures"

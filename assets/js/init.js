@@ -727,15 +727,15 @@ $(document).ready(function(){
         e.preventDefault();
         
         // facebook
-        if($(this).hasClass('share-facebook')) {
-           window.open($(this).data('location') + encodeURIComponent(window.location), 'Share', 'height=300,width=500'); 
-           // fb_share();
-        }
+//        if($(this).hasClass('share-facebook')) {
+//           window.open($(this).data('location') + encodeURIComponent(window.location), 'Share', 'height=300,width=500'); 
+//           // fb_share();
+//        }
         
 //        console.log( $(this).data('location') + encodeURIComponent(window.location) );
-//        if($(this).data('location').length) {
-//            window.open($(this).data('location') + encodeURIComponent(window.location), 'Share', 'height=300,width=500');
-//        }
+        if($(this).data('location').length) {
+            window.open($(this).data('location') + encodeURIComponent(window.location), 'Share', 'height=300,width=500');
+        }
         return false
     });
     

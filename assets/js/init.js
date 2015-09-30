@@ -727,14 +727,18 @@ $(document).ready(function(){
         e.preventDefault();
         
         // facebook
-//        if($(this).hasClass('share-facebook')) {
-//           window.open($(this).data('location') + encodeURIComponent(window.location), 'Share', 'height=300,width=500'); 
-//           // fb_share();
-//        }
+        if($(this).hasClass('share-facebook')) {
+           window.open("http://www.facebook.com/sharer/sharer.php?s=100&p[url]="+encodeURIComponent(window.location)+"&p[images][0]=http://pumpic.com/images/socials/social-icon.jpg&p[title]=Mobile Phone Security Measures&p[summary]=How to protect children from online predators, cyberbullies, 18+ content, and identity theft. Pumpic gathered essential information on mobile phone safety practice. Learn more to keep kids safe.", 
+           'Share', 
+           'height=300,width=500'); 
+           // fb_share();
+        } else {
         
 //        console.log( $(this).data('location') + encodeURIComponent(window.location) );
-        if($(this).data('location').length) {
-            window.open($(this).data('location') + encodeURIComponent(window.location), 'Share', 'height=300,width=500');
+            if($(this).data('location').length) {
+                window.open($(this).data('location') + encodeURIComponent(window.location), 'Share', 'height=300,width=500');
+            }
+        
         }
         return false
     });

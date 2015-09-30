@@ -735,11 +735,12 @@ $(document).ready(function(){
 //        } else {
         
 //        console.log( $(this).data('location') + encodeURIComponent(window.location) );
-            if($(this).data('location').length) {
+            if(isset($(this).data('location')) && $(this).data('location').length) {
+                
                 var media = '';
-                if($(this).data('media').length)
+                if(isset($(this).data('media')) && $(this).data('media').length)
                     media = '&media='+$(this).data('media');
-                console.log($(this).data('location') + encodeURIComponent(window.location) + media);
+
                 window.open($(this).data('location') + encodeURIComponent(window.location) + media, 'Share', 'height=300,width=500');
             }
         

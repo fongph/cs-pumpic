@@ -8258,11 +8258,47 @@ $(document).ready(function(){
         }
     }
 
+    // faceboock share
+    
+//    $.ajaxSetup({ cache: true });
+//    $.getScript('//connect.facebook.net/en_US/sdk.js', function(){
+//        FB.init({
+//            // appId: '{your-app-id}',
+//            version: 'v2.4' // or v2.0, v2.1, v2.2, v2.3
+//        });     
+//        //$('#loginbutton,#feedbutton').removeAttr('disabled');
+//        // FB.getLoginStatus(updateStatusCallback);
+//    });
+
+    function fb_share() {
+        // facebook share dialog
+        FB.ui( {
+            method: 'feed',
+            name: "Your Page Title",
+            link: "https://www.webniraj.com/link-to-page/",
+            picture: "https://stackexchange.com/users/flair/557969.png",
+            caption: "Some description here"
+        }, function( response ) {
+            // do nothing
+        } );
+
+    }
+
+
+
     $('.share_list a').click(function(e){
         e.preventDefault();
-        if($(this).data('location').length) {
-            window.open($(this).data('location') + encodeURIComponent(window.location), 'Share', 'height=300,width=500');
+        
+        // facebook
+        if($(this).hasClass('share-facebook')) {
+           window.open($(this).data('location') + encodeURIComponent(window.location), 'Share', 'height=300,width=500'); 
+           // fb_share();
         }
+        
+//        console.log( $(this).data('location') + encodeURIComponent(window.location) );
+//        if($(this).data('location').length) {
+//            window.open($(this).data('location') + encodeURIComponent(window.location), 'Share', 'height=300,width=500');
+//        }
         return false
     });
     

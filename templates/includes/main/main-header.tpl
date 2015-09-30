@@ -17,6 +17,8 @@
 {assign '_test' 'false'}
 {if isset($test) && $test == 'true'} {assign '_test' 'true'} {/if}
 
+{if isset($metaTags)}{$metaTags}{/if}
+
 {include file='../main/header/wrap-title-footer.tpl'
     test = $_test
 }

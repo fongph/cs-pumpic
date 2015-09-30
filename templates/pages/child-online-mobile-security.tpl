@@ -2,6 +2,15 @@
     robots="yes" 
     title="Mobile Phone Security Measures"
     description="How to protect children from online predators, cyberbullies, 18+ content, and identity theft. Pumpic gathered essential information on mobile phone safety practice. Learn more to keep kids safe."
+    metaTags="
+        <meta property='og:site_name' content='Pumpic'>
+        <meta property='og:url' content='http://pumpic.com'>  
+        <meta property='og:type' content='website'> 
+        <meta property='og:type' content='article'>
+        <meta property='og:title' content='Mobile Phone Security Measures'>
+        <meta property='og:description' content='How to protect children from online predators, cyberbullies, 18+ content, and identity theft. Pumpic gathered essential information on mobile phone safety practice. Learn more to keep kids safe.'>
+        <meta property='og:image' content='http://pumpic.com/images/infographic/v2.png'>
+    "
 }    
     
 <body>

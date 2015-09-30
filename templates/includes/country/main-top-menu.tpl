@@ -63,6 +63,7 @@
                                 
                             </li>
                             
+                            {if !isset($hidden) || isset($hidden) && $hidden != "yes"}
                             <li class="language {if isset($topmenu_active) && $topmenu_active=='english-version'}active{/if}">
                                 
                                 {if isset($lang) && $lang == "bra"}
@@ -74,6 +75,7 @@
                                 {/if}
                                 
                             </li>
+                            {/if}
                            
                             <li>
                                 

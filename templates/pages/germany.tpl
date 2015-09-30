@@ -118,7 +118,7 @@
                                                                  
                                                         <div class="list_price">
                                                             <form name="price_premium" method="POST" action="/buy.html" autocomplete="off">
-                                                                <input id='product_price_premium' type='hidden' name='price[productID]' value='0' class="product_price" />
+                                                                <input id='product_price_premium' type='hidden' name='price[productID]' value='{if isset($getDefaultPremium)}{$getDefaultPremium}{else}0{/if}' class="product_price" />
                                                 
                                                                 <ul>
                                                                     {foreach from=$getProducts.premium key=key item=_item}
@@ -313,7 +313,7 @@
                                                                  
                                                         <div class="list_price">
                                                             <form name="price_premium" method="POST" action="/buy.html" autocomplete="off">
-                                                                <input id='product_price_premium' type='hidden' name='price[productID]' value='0' class="product_price" />
+                                                                <input id='product_price_premium' type='hidden' name='price[productID]' value='{if isset($getDefaultPremium)}{$getDefaultPremium}{else}0{/if}' class="product_price" />
                                                 
                                                                 <ul>
                                                                     {foreach from=$getProducts.premium key=key item=_item}

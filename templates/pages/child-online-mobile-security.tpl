@@ -49,7 +49,7 @@
             title="How to Protect Children on Smartphones and Tablets"
            blockBg='dark'}
                  {* свой HTML код *}               
-                <p >Nowadays children are inseparable from their smartphones and tablets. These gadgets may be useful, and at the
+                <p class="text-justify">Nowadays children are inseparable from their smartphones and tablets. These gadgets may be useful, and at the
                     same time bear hidden dangers like attacks of online predators, threats of cyberbullies, 18+ content, and identity 
                     theft. However, not many adults know of security measures it is necessary to consider here. Pumpic is designed 
                     to take care of children. Our team did a great job and gathered essential information on mobile phone safety 

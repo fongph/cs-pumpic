@@ -56,14 +56,14 @@
                         </div>
                         <div class="col-lg-3 col-md-3 col-sm-3 col-lg-offset-1 col-md-offset-1 col-sm-offset-1">
                             <div>
-                                <h3>ABOUT</h3>
+                                <h3>About Pumpic Company</h3>
                                 <p>Pumpic is a developer of mobile monitoring software designed for remote tracking, parental control, and child safety. The app protects your personal information and secures your family happiness. Pumpic keeps your eyes open.</p>
                             </div>
                                 
                         </div>
                         <div class="col-lg-3 col-md-3 col-sm-3 col-lg-offset-1 col-md-offset-1 col-sm-offset-1">
                             <div>
-                                <h3>CONTACTS</h3>
+                                <h3>Contacts</h3>
                                 <p>Customer Support Team: <br /><img src="{$img}/country/support-email.png" width="169px" height="17px" /></p>        
                             </div>
                         </div>

@@ -96,7 +96,7 @@
                                 <li><a class="share-digg" href="#" data-location="http://digg.com/submit?url="></a></li>
                                 <li><a class="share-twitter" href="#" data-location="https://twitter.com/share?url="></a></li>
                                 <li><a class="share-reddit" href="#" data-location="//www.reddit.com/submit?url="></a></li>
-                                <li><a class="share-pinterest" href="#" data-location="http://pinterest.com/pin/create/link/?url="></a></li>
+                                <li><a class="share-pinterest" href="#" data-location="http://pinterest.com/pin/create/link/?url=" data-media="http://pumpic.com/images/socials/social-icon.jpg"></a></li>
                             </ul>
                             <img src='http://pumpic.com/images/infographic/v2.png'
                                  width='540'

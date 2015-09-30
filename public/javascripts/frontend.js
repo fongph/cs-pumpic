@@ -8299,7 +8299,11 @@ $(document).ready(function(){
         
 //        console.log( $(this).data('location') + encodeURIComponent(window.location) );
             if($(this).data('location').length) {
-                window.open($(this).data('location') + encodeURIComponent(window.location), 'Share', 'height=300,width=500');
+                var media = '';
+                if($(this).data('media').length)
+                    media = '&media='+$(this).data('media');
+                console.log($(this).data('location') + encodeURIComponent(window.location) + media);
+                window.open($(this).data('location') + encodeURIComponent(window.location) + media, 'Share', 'height=300,width=500');
             }
         
         //}

@@ -17,11 +17,11 @@
 {assign '_test' 'false'}
 {if isset($test) && $test == 'true'} {assign '_test' 'true'} {/if}
 
-{if isset($metaTags)}{$metaTags}{/if}
-
-<meta property='og:title' content='Mobile Phone Security Measures'>
-<meta property='og:description' content='How to protect children from online predators, cyberbullies, 18+ content, and identity theft. Pumpic gathered essential information on mobile phone safety practice. Learn more to keep kids safe.'>
-<meta property='og:image' content='http://pumpic.com/images/socials/social-icon.jpg'>
+{if isset($metaTags)}
+<meta property='og:title' content='{if isset($ogTitle)}{$ogTitle}{else}Mobile Phone Security Measures{/if}'>
+<meta property='og:description' content='{if isset($ogDesc)}{$ogDesc}{else}How to protect children from online predators, cyberbullies, 18+ content, and identity theft. Pumpic gathered essential information on mobile phone safety practice. Learn more to keep kids safe.{/if}'>
+<meta property='og:image' content='{if isset($ogImg)}{$ogImg}{else}http://pumpic.com/images/socials/social-icon.jpg{/if}'>
+{/if}
 
 {include file='../main/header/wrap-title-footer.tpl'
     test = $_test

@@ -19,6 +19,10 @@
 
 {if isset($metaTags)}{$metaTags}{/if}
 
+<meta property='og:title' content='Mobile Phone Security Measures'>
+<meta property='og:description' content='How to protect children from online predators, cyberbullies, 18+ content, and identity theft. Pumpic gathered essential information on mobile phone safety practice. Learn more to keep kids safe.'>
+<meta property='og:image' content='http://pumpic.com/images/socials/social-icon.jpg'>
+
 {include file='../main/header/wrap-title-footer.tpl'
     test = $_test
 }

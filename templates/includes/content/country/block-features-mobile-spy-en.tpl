@@ -24,7 +24,7 @@
                             <section>
                                 <i class="c-icon-sms vertical-aligh-bottom"></i>
                                 <label class="vertical-aligh-bottom">Text Messages</label>
-                                <i class="root-android c-icon-root-android vertical-aligh-bottom right"></i>
+                                {*<i class="root-android c-icon-root-android vertical-aligh-bottom right"></i>*}
                             </section>
                             <p>View <b>sent</b>, <b>received</b>, and <b>deleted</b> text content of <b>SMS</b>, <b>iMessages</b>, and <b>MMS</b>. <b>Block text messages</b> by a phone number <b>or</b> keywords. <b>Limit</b> the number of <b>texts sent daily</b>.</p>
                         </div>

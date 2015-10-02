@@ -23,7 +23,7 @@
                             <section>
                                 <i class="c-icon-sms vertical-aligh-bottom"></i>
                                 <label class="vertical-aligh-bottom">Textnachrichten</label>
-                                <i class="root-android c-icon-root-android vertical-aligh-bottom right"></i>
+                                {*<i class="root-android c-icon-root-android vertical-aligh-bottom right"></i>*}
                             </section>
                             <p>Lesen Sie <b>gesendete</b>, <b>empfangene</b> und <b>gelöschte</b> Texte von <b>SMS</b>, <b>iMessages</b> und <b>MMS</b>. <b>Blockieren Sie Textnachrichten</b> nach Rufnummer oder Keywords. Beschränken Sie die Anzahl der täglich versendbaren Textnachrichten.</p>
                         

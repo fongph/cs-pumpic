@@ -24,8 +24,8 @@
                             
                             <section>
                                 <i class="c-icon-sms vertical-aligh-bottom"></i>
-                                <label class="vertical-aligh-bottom">Mensagens <br class="only-pc"/>de Texto</label>
-                                <i class="root-android c-icon-root-android vertical-aligh-bottom right"></i>
+                                <label class="vertical-aligh-bottom">Mensagens {*<br class="only-pc"/>*}de Texto</label>
+                                {*<i class="root-android c-icon-root-android vertical-aligh-bottom right"></i>*}
                             </section>
                             <p>Visualize o conteúdo das mensagens de texto <b>enviadas</b>, <b>recebidas e excluídas</b> de <b>SMS</b>, <b>iMessages e MMS</b>. Bloqueie mensagens de texto enviadas de telefones específicos ou com palavras-chave. Limite o número de palavras enviadas diariamente.</p>
                         

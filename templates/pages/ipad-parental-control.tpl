@@ -63,7 +63,7 @@
 		<p class="text-center f-light">Statistically, 40% of children use the iPad before they can say a word. Not a secret that modern mobile devices, especially those connected to the Internet, are a source of potential risks for kids of all ages. Thankfully, for parents there are two common ways on <a href="http://pumpic.com/security/how-to-set-parental-controls-on-ipad/" target="_blanc">how to set parental controls on iPad</a>.</p>
         
         <!-- BLOCK STATISTICK -->
-        <div class="block-statistick row">
+        {*<div class="block-statistick row">
             
             <div class="item col-s-sm-12 col-xs-sm-12 col-sm-4 col-md-4 col-lg-4 border-none">
                 <section>
@@ -85,7 +85,30 @@
 				</section>
             </div>
 			
-        </div>
+        </div>*}
+        
+        <table class="table-statistick row">
+            <tr>
+                <td class="item col-s-sm-12 col-xs-sm-12 col-sm-12 col-md-4 col-lg-4 border-none">
+                    <section>
+                        <div class='pb20'><strong class="fz50 color-orange">Built-In Restrictions</strong></div>
+                        <p>The iPad has out-of-box parental control options, which let parents limit child tablet activities. Thus, parents can block built-in applications, disallow installing or deleting apps, specify allowed content, adjust privacy setting and permitted changes, as well as set up game center. The password prevents children from disabling applied restrictions.</p>
+                        <p>Settings > General > Restrictions</p> 
+                    </section>
+                </td>
+                <td class="item col-s-sm-12 col-xs-sm-12 col-sm-12 col-md-4 col-lg-4 border-none vertical-aligh-bottom text-center">
+                    <img class="statistick-images" alt="stop cyberbullying with Pumpic" src="{$img}/landings/parental-control-for-ipad.png" />
+                </td>
+                <td class="item col-s-sm-12 col-xs-sm-12 col-sm-12 col-md-4 col-lg-4 border-none">
+                    <section>
+                        <div class='pb20'><strong class="fz50 color-orange">Parental Control App</strong></div>
+                        <p>Pumpic provides parents with flexible monitoring abilities. It protects kids on iPad both online and during daily living. In addition to calls, text messages, browsing history, social media, and chats, parents can track location and set geo-fences to follow children on the go. The app enables blocking websites, callers, SMS senders, and allows screen time limiting.</p>
+                        <p>Pumpic keeps your eyes open!</p>
+                    </section>
+                </td>
+            </tr>
+        </table>
+        
         <!-- END -->
 
         <p class="text-center f-light">Online predators, cyberbullying, sexting, inappropriate content, and many other online threats watch time to violate child safety. Every new opening of a browser and each misgiving chat on social networks enhance chances for kids to be attacked and eventually abused. Pumpic provides you with capability of averting stranger danger in the making.</p>

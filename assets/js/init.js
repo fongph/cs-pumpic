@@ -2369,5 +2369,24 @@ $('form[name="send_find_phone"] button.event-submit').click(function(){
 
     // countries
     $("#c-features .row-list > li, .b-how-it-work h3.weight-normal, #block-compatibility-table .table-body > div > p").matchHeight();
+    
+    if($('.match-height').length)
+        $('.match-height').matchHeight();
+    
+//    if($('#b-recommended-by .main-block > .b-item').length)
+//        $('#b-recommended-by .main-block > .b-item').matchHeight();
+    
+    $.fn.matchHeight._beforeUpdate = function(event, groups) {
+        
+        // do something before any updates are applied
+    }
+
+    $.fn.matchHeight._afterUpdate = function(event, groups) {
+        /*
+        if($('#b-recommended-by .main-block > .b-item').length)
+            $('#b-recommended-by .main-block > .b-item').find('lable.title').css({'line-height': $('#b-recommended-by .main-block > .b-item').height()+'px'});
+            */
+        // do something after all updates are applied
+    }
 
 }); 

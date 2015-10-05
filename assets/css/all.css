@@ -7248,3 +7248,22 @@ ul.list_category li:first-child {
     .l-c-mobile { display: inherit; }
     
 }
+
+/*#block-bottom {
+    height: 160px;  
+    vertical-align: bottom;
+    display: table-cell;
+}*/
+
+/*.b-s-image {
+    position: absolute;
+    left: 0px;
+    bottom: 20px;
+}
+
+@media (max-width: 992px) { 
+    .b-s-image {
+        position: relative;
+        bottom: 0px;
+    }
+}*/

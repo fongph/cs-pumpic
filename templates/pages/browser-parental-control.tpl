@@ -63,7 +63,7 @@
 	    <p class="text-center f-light">Internet is a great storage of information of all kinds. With its help any person can find anything he or she wants in a click. However, in addition to many benefits there is danger that sometimes is hidden from our sight. Our kids, they are most vulnerable to these online dangers. That’s why if handing them mobile devices and allowing access the web, you should do your best to take care of their safety.</p>
 		<p class="text-center f-light">Pumpic provides comprehensive Internet monitoring and reliable online security.</p>
         <!-- BLOCK STATISTICK -->
-        <div class="block-statistick row">
+        {*<div class="block-statistick row">
             
             <div class="item col-s-sm-12 col-xs-sm-12 col-sm-4 col-md-4 col-lg-4 border-none">
                 <section>
@@ -83,7 +83,27 @@
 				</section>
             </div>
 			
-        </div>
+        </div>*}
+        
+        <table class="table-statistick row">
+            <tr>
+                <td class="item col-s-sm-12 col-xs-sm-12 col-sm-12 col-md-4 col-lg-4 border-none">
+                    <section>
+                        <div class='pb20'><strong class="fz50 color-orange">View Visited Websites</strong></div>
+                        <p>By means of a safe browser option, Pumpic allows monitoring all websites that your children visit. In addition, you can view bookmarks and check pages they favor. The app will revel if your kids access restricted web sources, watch violent videos, or sexually suggestive photos. Prevent your loved ones from things they are not ready to see yet.</p>
+                    </section>
+                </td>
+                <td class="item col-s-sm-12 col-xs-sm-12 col-sm-12 col-md-4 col-lg-4 border-none vertical-aligh-bottom text-center">
+                    <img class="statistick-images" alt="stop cyberbullying with Pumpic" src="{$img}/landings/browser-control.png" />
+                </td>
+                <td class="item col-s-sm-12 col-xs-sm-12 col-sm-12 col-md-4 col-lg-4 border-none">
+                    <section>
+                        <div class='pb20'><strong class="fz50 color-orange">Block 18+ Content</strong></div>
+                        <p>Pumpic provides parents with capability of blocking websites they consider inappropriate for children. View browsing history and bookmarks to find out if your kids access web sources that include sexual, explicit, or violent content. Block them and your children will not be able to enter any longer. Avert possible danger before it is too late.</p>
+                    </section>
+                </td>
+            </tr>
+        </table>
         <!-- END -->
 
         <p class="text-center f-light">Internet is not a toy for little children. It can be helpful, educative, and entertaining, and at the same time dangerous enough to bring about many undesirable outcomes. Try to learn as much as possible about online perils and teach your kids face them responsibly. Cyberbullying, online predator attacks, sexting, and child abuse are real. They do exist and sometimes their ignorance costs children’s lives.</p>

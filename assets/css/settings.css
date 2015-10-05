@@ -449,11 +449,14 @@ a.a-default:hover {
     .block-list { padding: 0px 0px 0px 15px; }
 }
 
-.block-statistick {
-    display: inline-block;
+.block-statistick, .table-statistick {
     margin: 15px 0px;
     padding: 0px;
     width: 100%;
+}
+
+.block-statistick {
+    display: inline-block;
 }
 
 .block-statistick .item {
@@ -464,11 +467,18 @@ a.a-default:hover {
     height: 100%;
 }
 
-.block-statistick .item:last-child {
+.table-statistick .item {
+    padding: 10px 15px;
+    border-right: 1px solid #cccccc;
+    min-height: 160px;
+    height: 100%;
+}
+
+.block-statistick .item:last-child, .table-statistick .item:last-child {
     border-right: none;
 }
 
-.block-statistick .item > section {
+.block-statistick .item > section, .table-statistick .item > section {
     text-align: center;
     font-size: 16px;
     font-weight: 400;
@@ -476,18 +486,22 @@ a.a-default:hover {
     width: 100%;
 }
 
-.block-statistick .item strong {
+.block-statistick .item strong, .table-statistick .item strong {
     font-size: 50px;
     line-height: 50px;
     font-weight: 600;
 }
 
 @media (max-width: 768px) { 
-    .block-statistick .item { border-right: none; }
+    .block-statistick .item, .table-statistick .item { border-right: none; }
     
     .block-list { display: block; margin: 0 auto; position: relative; }
     .block-list li,
     .block-list li:last-child { margin-bottom: 10px; }
+}
+
+@media (max-width: 992px) {  
+    .table-statistick .item { display: inline-block; }
 }
 
 .list-content,
@@ -1446,4 +1460,30 @@ div.symbol {
 #tmp-faq .form-faq select {
     width: 100%;
     min-width: 100%;
+}
+
+/* ============== // btn green ================= */
+
+.btn-gree {
+    display: inline-block;
+    background: #16a89e;
+    background-clip: padding-box;
+    border: medium none;
+    border-radius: 4px;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 24px;
+    padding: 16px 30px;
+    text-decoration: none;
+    color: #fff;
+    opacity: 1;
+}
+.btn-gree:hover {
+    opacity: 0.7;
+    color: #fff;
+    text-decoration: none;
+}
+
+.button-more-detailes {
+    margin-top: 36px;
 }

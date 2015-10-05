@@ -63,27 +63,51 @@
 		<p class="text-center f-light">Like any other Apple device, the iPod lets users access the Internet and utilize its benefits to the fullest. Thus, children can chat on instant messengers, shoot, share, and like photos on social media, and play games online. The Internet is dangerous for kids for so many reasons. That’s why careful parents should know <a href="pumpic.com/security/can-i-monitor-my-kids-ipod-touch/" target="_blanc">how to apply iPod parental controls</a>.</p>
         
         <!-- BLOCK STATISTICK -->
-        <div class="block-statistick row">
+        {*<div class="block-statistick row">
             
-            <div class="item col-s-sm-12 col-xs-sm-12 col-sm-4 col-md-4 col-lg-4 border-none">
+            <div class="item col-s-sm-12 col-xs-sm-12 col-sm-12 col-md-4 col-lg-4 border-none match-height">
                 <section>
                     <div class='pb20'><strong class="fz50 color-orange">Onboard Restrictions</strong></div>
                     <p>The iOS includes built-in adjustable options that allow setting parental control on iPod Touch without any additional software required. Go to Settings and proceed to General. There, you can turn on Restrictions and specify applications kids are allowed to use and content to see, settings to protect their privacy, changes they can perform manually, and games to play. These options are not as flexible as provided by Pumpic and lack remote monitoring of online activities. But still better than nothing.</p>
 				</section>
             </div>
-            <div class="item col-s-sm-12 col-xs-sm-12 col-sm-4 col-md-4 col-lg-4 border-none">
-                <section>
+            <div class="item col-s-sm-12 col-xs-sm-12 col-sm-12 col-md-4 col-lg-4 border-none match-height text-center">
+                
+                    <img alt="stop cyberbullying with Pumpic" src="{$img}/landings/ipod-parental-control.png" width="207px" height="208px" />
+                
+                <!--<section>
                    <img alt="stop cyberbullying with Pumpic" src="{$img}/landings/ipod-parental-control.png" width="207px" height="208px" />
-                </section>
+                </section>-->
             </div>
-			<div class="item col-s-sm-12 col-xs-sm-12 col-sm-4 col-md-4 col-lg-4 border-none">
+			<div class="item col-s-sm-12 col-xs-sm-12 col-sm-12 col-md-4 col-lg-4 border-none match-height">
 			    <section>
                     <div class='pb20'><strong class="fz50 color-orange">Parental Control App</strong></div>
                     <p>Pumpic parental control app for iPod Touch provides comprehensive opportunities for child protection. Installed on your kids’ device it lets you track location, follow social network activities on Facebook and Instagram, as well as online chats like Snapchat, Viber, WhatsApp Skype, and Kik. Thus, you can monitor your children remotely and avert possible threats in the making. The app also allows setting geo-fences and control applications both downloaded and out-of-box. Pumpic keeps your eyes open.</p>
 				</section>
             </div>
 			
-        </div>
+        </div>*}
+        
+        <table class="table-statistick row">
+            <tr>
+                <td class="item col-s-sm-12 col-xs-sm-12 col-sm-12 col-md-4 col-lg-4 border-none">
+                    <section>
+                        <div class='pb20'><strong class="fz50 color-orange">Onboard Restrictions</strong></div>
+                        <p>The iOS includes built-in adjustable options that allow setting parental control on iPod Touch without any additional software required. Go to Settings and proceed to General. There, you can turn on Restrictions and specify applications kids are allowed to use and content to see, settings to protect their privacy, changes they can perform manually, and games to play. These options are not as flexible as provided by Pumpic and lack remote monitoring of online activities. But still better than nothing.</p>
+                    </section>
+                </td>
+                <td class="item col-s-sm-12 col-xs-sm-12 col-sm-12 col-md-4 col-lg-4 border-none vertical-aligh-bottom text-center">
+                    <img class="statistick-images" alt="stop cyberbullying with Pumpic" src="{$img}/landings/ipod-parental-control.png" />
+                </td>
+                <td class="item col-s-sm-12 col-xs-sm-12 col-sm-12 col-md-4 col-lg-4 border-none">
+                    <section>
+                        <div class='pb20'><strong class="fz50 color-orange">Parental Control App</strong></div>
+                        <p>Pumpic parental control app for iPod Touch provides comprehensive opportunities for child protection. Installed on your kids’ device it lets you track location, follow social network activities on Facebook and Instagram, as well as online chats like Snapchat, Viber, WhatsApp Skype, and Kik. Thus, you can monitor your children remotely and avert possible threats in the making. The app also allows setting geo-fences and control applications both downloaded and out-of-box. Pumpic keeps your eyes open.</p>
+                    </section>
+                </td>
+            </tr>
+        </table>
+        
         <!-- END -->
 
         <p class="text-center f-light">Risks related to the use of the iPod as well as other mobile devices do exist and pose potential danger to children of all ages. Being engaged in online activities day and night, kids not often realize real consequences of irresponsible behavior on the web. Cyberbullying, online predators, sexting, inappropriate content, and much more threats are what happens when children forget of Internet security measures. As a parent, you should take the situation under your personal control and keep your eyes open widely.</p>

@@ -7315,12 +7315,49 @@ a.a-default:hover {
     font-weight: 600;
 }
 
+
+.table-statistick .statistick-images {
+    width: auto !important;
+}
+@media (max-width: 468px) {
+    .table-statistick {
+        display: inline-block;
+    }
+    .table-statistick .item {
+        display: inline;
+    }
+    
+    .table-statistick tr {
+        display: inline-block;
+        width: 100%;
+    }
+    
+    .table-statistick tbody {
+        display: inline-block;
+        width: 100%;
+    }
+    .table-statistick .statistick-images {
+        width: 100% !important;
+    }
+    
+    
+    .table-statistick .item strong {
+        font-size: 35px !important;
+        line-height: 35px !important;
+    }
+}
+
 @media (max-width: 768px) { 
     .block-statistick .item, .table-statistick .item { border-right: none; }
     
     .block-list { display: block; margin: 0 auto; position: relative; }
     .block-list li,
     .block-list li:last-child { margin-bottom: 10px; }
+    
+    .table-statistick .item strong {
+        font-size: 50px;
+        line-height: 50px;
+    }
 }
 
 @media (max-width: 992px) {  

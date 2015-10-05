@@ -84,7 +84,7 @@
 			
         </div>*}
         
-        <table class="table-statistick row">
+        <table class="table-statistick">
             <tr>
                 <td class="item col-s-sm-12 col-xs-sm-12 col-sm-12 col-md-4 col-lg-4 border-none">
                     <section>

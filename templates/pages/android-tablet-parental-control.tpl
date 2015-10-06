@@ -18,6 +18,14 @@
             nocache
         }
         
+        <!-- FLY BLOCKS -->
+        {nocache}
+        {if ''|hasFreeTrialStick}    
+            {include file='../includes/content/fly/fly-free-trial.tpl'}
+        {/if}    
+        {/nocache}
+        <!-- END FLY -->
+        
         {*
             Template: PHONE
             Переменные:
@@ -60,7 +68,7 @@
     blockBg='dark'}
 	
 	    <p class="text-center f-light">Android tablets are introduced in plenty of shapes, colors, and brands to fit any taste. Due to a relatively a low price for many of available models, it is Android that your kids are likely to get as their first tablet. That’s why it is so important to consider its safety in children’s hands.</p>
-		<p class="text-center f-light">Before handing your kids a mobile device connected online, make sure you know of its potential risks and can prevent your little ones from facing them. Educate yourself first and teach your children how to behave securely on the Internet. Choose reliable software and learn <a href="http://pumpic.com/security/how-to-set-parental-controls-on-android-tablet/" target="_blanc">how to set parental controls on Android tablet</a> before you allow your kids to use it.</p>
+		<p class="text-center f-light">Before handing your kids a mobile device connected online, make sure you know of its potential risks and can prevent your little ones from facing them. Educate yourself first and teach your children how to behave securely on the Internet. Choose reliable software and learn <a class="a-default" href="http://pumpic.com/security/how-to-set-parental-controls-on-android-tablet/" target="_blanc">how to set parental controls on Android tablet</a> before you allow your kids to use it.</p>
         <!-- BLOCK STATISTICK -->
         {*<div class="block-statistick row">
             

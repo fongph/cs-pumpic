@@ -18,6 +18,14 @@
             nocache
         }
         
+        <!-- FLY BLOCKS -->
+        {nocache}
+        {if ''|hasFreeTrialStick}    
+            {include file='../includes/content/fly/fly-free-trial.tpl'}
+        {/if}    
+        {/nocache}
+        <!-- END FLY -->
+        
         {*
             Template: PHONE
             Переменные:
@@ -60,7 +68,7 @@
     blockBg='dark'}
 	
 	    <p class="text-center f-light">If you ask your kids which mp3 player they would like to have, most of them will surely choose the iPod Touch. What makes it so popular, you may wonder? The iPod Touch is almost the same as the iPhone, though calls and SMS are not supported. Everyone wants to have the iPhone, doesn’t it?</p>
-		<p class="text-center f-light">Like any other Apple device, the iPod lets users access the Internet and utilize its benefits to the fullest. Thus, children can chat on instant messengers, shoot, share, and like photos on social media, and play games online. The Internet is dangerous for kids for so many reasons. That’s why careful parents should know <a href="pumpic.com/security/can-i-monitor-my-kids-ipod-touch/" target="_blanc">how to apply iPod parental controls</a>.</p>
+		<p class="text-center f-light">Like any other Apple device, the iPod lets users access the Internet and utilize its benefits to the fullest. Thus, children can chat on instant messengers, shoot, share, and like photos on social media, and play games online. The Internet is dangerous for kids for so many reasons. That’s why careful parents should know <a class="a-default" href="pumpic.com/security/can-i-monitor-my-kids-ipod-touch/" target="_blanc">how to apply iPod parental controls</a>.</p>
         
         <!-- BLOCK STATISTICK -->
         {*<div class="block-statistick row">

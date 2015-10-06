@@ -10355,6 +10355,13 @@ $( window ).resize(function() {
     }  
 });
 $(document).ready(function(){ 
+    
+    if( $('#fly-free-trial').length) {
+        $('#fly-free-trial').each(function(key, value){
+            $(this).css({'top': ($(this).offset().top + 20) + 'px'});
+        });
+    }
+    
     // create cookie
     if(typeof $.cookie('fly_features') == "undefined") {
         $.cookie('fly_features', 0, {  

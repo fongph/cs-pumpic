@@ -30,3 +30,11 @@ $smarty->assign("js",$config['path_js']);
 
 $smarty ->assign('api_device', $config['api_device']);
 $smarty ->assign('site_id', $config['site_id']);
+// versions
+$smarty ->assign('ver_jailbreak_up', $config['ver_jailbreak_up']);
+$smarty ->assign('ver_android_up', $config['ver_android_up']);
+$smarty ->assign('ver_android_bot', $config['ver_android_bot']);
+$smarty ->assign('ver_ios_up', $config['ver_ios_up']);
+$smarty ->assign('ver_ios_bot', $config['ver_ios_bot']);
+$smarty ->assign('ver_icloud_up', $config['ver_icloud_up']);
+$smarty ->assign('ver_icloud_bot', $config['ver_icloud_bot']);

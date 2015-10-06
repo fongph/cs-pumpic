@@ -90,6 +90,7 @@ $config = array(
                 'learning-center/ready-solutions'       => 'ready-solutions.php',
             
                 // countrie
+                'parental-control-software.html' => 'parental-control-software.php',
                 'germany.html' => 'germany.php',
                 'brazil.html' => 'brazil.php'  
 	),
@@ -126,6 +127,15 @@ $config = array(
             PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
             PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC
     ),
+    
+    // version mobiles
+    'ver_jailbreak_up'      => '8.4',
+    'ver_android_up'        => '5.1',
+    'ver_android_bot'       => '2.2',
+    'ver_ios_up'            => '8.4.1',
+    'ver_ios_bot'           => '6.0',
+    'ver_icloud_up'         => '8.4.1',
+    'ver_icloud_bot'        => '6.0',
     
     'cron' => array(
         'log_path' => '/var/www/pumpic/www/pumpic.com/current/cron/log',

@@ -86,6 +86,8 @@ module.exports = function (grunt) {
                     './assets/css/404.css',
                     './assets/css/video.css',
                     './assets/css/icons.css',
+                    './assets/css/style-recommended-by.css',
+                    './assets/css/fly/free-trial-stick.css',
                     // './assets/css/sticky/autofix_anything.css',
                 ], 
                 dest: './public/stylesheets/frontend.css'
@@ -102,6 +104,7 @@ module.exports = function (grunt) {
                     './assets/css/wp-subscribe.css',
                     './assets/css/style-fly-features.css', 
                     './assets/css/404.css',
+                    './assets/css/fly/free-trial-stick.css',
                 ], 
                 dest: './public/stylesheets/wp.css'
             }

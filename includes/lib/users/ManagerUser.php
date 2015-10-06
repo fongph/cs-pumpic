@@ -42,7 +42,6 @@ class ManagerUser extends Manager
     
     public function __construct( $settings = array() ) 
     {
-        
         $this -> _di = \di();
         $this -> _session = $this -> _di -> get('session');
         $this -> _auth = $this -> _di -> get('auth');
@@ -154,6 +153,25 @@ class ManagerUser extends Manager
             return false;
     }
     
+    
+    public function setFreeTrialStick($user_id = null) {
+        
+        if($this->hasTrial($user_id)) {
+            setcookie("free_trial_stick", '1', time() + 3600 * 24 * 90, '/', '.'.$this -> _di->get('config')['domain']);
+        } else {
+            if(isset($_COOKIE['free_trial_stick']))
+                setcookie("free_trial_stick", '0', time() + 3600 * 24 * 90, '/', '.'.$this -> _di->get('config')['domain']);
+        }
+    }
+    
+    public function hasTrial($user_id) {
+        if($user_id && $this->getUserOptions($user_id, 'internal-trial-license')) 
+                return true;
+        
+        return false;
+    }
+
+
     /* Авторизация */
     protected function _login(\ArrayAccess $params, $remember = false) 
     {
@@ -169,7 +187,8 @@ class ManagerUser extends Manager
                     Session::regenerateId();
                 }
                 
-                $this -> setCookieNotice( self::$_obj -> _data );
+                $this->setFreeTrialStick(self::$_obj -> _data['id']);
+                $this->setCookieNotice( self::$_obj -> _data );
                 // setcookie('s', 1, time() + 3600 * 6, '/', '.pumpic.com');
                 self::$_obj -> _respons['_success'] = true;
             
@@ -197,6 +216,7 @@ class ManagerUser extends Manager
                 
                 self::$_obj -> _data = $this -> _auth->getIdentity();
                 
+                $this->setFreeTrialStick(self::$_obj -> _data['id']);
                 $this -> setNotice(); // self::$_obj -> _data
                 self::$_obj -> _respons['_success'] = true;
                 
@@ -226,6 +246,8 @@ class ManagerUser extends Manager
         try {
             $user_id = $this -> createUserFreeTrial($params['siteId'], $params['email'], $params['name']);
             self::$_obj -> _respons['user_id'] = $user_id;
+            
+            $this->setFreeTrialStick($user_id);
             
             /*if((int)$user_id) {
                 
@@ -318,6 +340,7 @@ class ManagerUser extends Manager
     public function logout() 
     {
         $this->_auth->clearIdentity();
+        $this->setFreeTrialStick(NULL);   
     }
     
     public function getLoginUser() 

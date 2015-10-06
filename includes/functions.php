@@ -860,6 +860,37 @@ function smarty_function_getUserID() {
     return ($obj->getUserIdByAuth()) ? $obj->getUserIdByAuth() : '';
 }
 
+function smarty_function_getUserInfo($params, $template) {
+    require_once 'lib/users/ManagerUser.php';
+    $obj = new includes\lib\users\ManagerUser( array() );
+    $user = array();
+    
+    if($obj->getUserIdByAuth()) {
+        $_user = $obj->getUser( $obj->getUserIdByAuth() );
+        $user['name'] = ($_user->getName()) ? $_user->getName() : false;
+        $user['login'] = ($_user->getLogin()) ? $_user->getLogin() : false;
+    } 
+    
+    $template->assign('getUserInfo', (count($user) > 0) ?  $user: false);   
+}
+
+// has free trial stick
+function smarty_modifier_hasFreeTrialStick() { 
+    
+    require_once 'lib/users/ManagerUser.php';
+    $obj = new includes\lib\users\ManagerUser( array() );
+    $_result = false;
+    if($obj->hasTrial( $obj->getUserIdByAuth() )) $_result = true;
+    
+    
+//    $_result = false;
+//    if(isset($_COOKIE['free_trial_stick']) && (int)$_COOKIE['free_trial_stick'] == 1) {
+//        $_result = true;
+//    }
+    
+    return $_result;
+}
+
 // has user
 function smarty_modifier_hasUser() { // $params, $template
 //  $_result = false;

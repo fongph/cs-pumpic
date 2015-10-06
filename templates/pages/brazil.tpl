@@ -6,7 +6,7 @@
     
 <body>
     <!-- FLY BLOCKS -->
-    {*{include file='../includes/content/fly/fly_blocks.tpl'}*}
+    {include file='../includes/content/fly/fly_blocks.tpl'}
     <!-- END FLY BLOCKS-->
     
     <div class="wrapper block-free-trial b-p-countries page-germany">
@@ -18,6 +18,14 @@
             cache_id = "includes_main_main-top-menu"
             nocache
         }
+        
+        <!-- FLY BLOCKS -->
+        {* nocache}
+        {if ''|hasFreeTrialStick}    
+            {include file='../includes/content/fly/fly-free-trial.tpl'}
+        {/if}    
+        {/nocache *}
+        <!-- END FLY -->
         
         <!-- BLOCK HEADER -->
         {include file='../includes/content/info/info-promo.tpl'
@@ -177,8 +185,8 @@
                                                 </div>
                                                 <div class="table_header text-transform-none text-center">
                                                     <div id="list-price-phones" class="wr_support_new_os">
-                                                        <i class="icon-android d_green"></i> Android 2.2 - 5.1
-                                                        <i class="icon-apple d_green"></i> iOS 6.0 - 8.4 (com jailbreak)
+                                                        <i class="icon-android d_green"></i> Android {$ver_android_bot} - {$ver_android_up}
+                                                        <i class="icon-apple d_green"></i> iOS {$ver_ios_bot} - {$ver_jailbreak_up} (com jailbreak)
                                                     </div>
                                                 </div>
                                             </th>
@@ -250,7 +258,7 @@
          <!-- BLOCK COMPATIBILITY -->
         {include file='../includes/content/compatibility/compatibility-table.tpl'
             title="Compatibilidade"
-            versionIOS="iOS 6.0 - 8.4.1"    
+            versionIOS="iOS {$ver_ios_bot} - {$ver_ios_up}"    
             androidText=""
             iosText="A senha do iCloud é necessária para esta instalação"
             blockBg="light" 
@@ -371,7 +379,7 @@
                                                 </div>
                                                 <div class="table_header text-transform-none text-center">
                                                     <div id="list-price-phones" class="wr_support_new_os">
-                                                        <i class="icon-apple d_green"></i> iOS 6.0 - 8.4.1
+                                                        <i class="icon-apple d_green"></i> iOS {$ver_ios_bot} - {$ver_ios_up}
                                                     </div>
                                                 </div>
                                             </th>

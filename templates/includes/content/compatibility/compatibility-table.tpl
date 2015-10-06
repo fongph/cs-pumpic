@@ -31,7 +31,7 @@
                                     <div class="div-table">
                                         <div class="div-table-row">
                                             <div class="div-table-column"><span>Smartphones e Tablets:</span></div>
-                                            <div class="div-table-column"><span class="color-green">Android 2.2 - 5.1</span></div>
+                                            <div class="div-table-column"><span class="color-green">Android {$ver_android_bot} - {$ver_android_up}</span></div>
                                         </div>
                                     </div>
 
@@ -53,7 +53,7 @@
                                     <div class="div-table">
                                         <div class="div-table-row">
                                             <div class="div-table-column"><span>Smartphones und Tablets:</span></div>
-                                            <div class="div-table-column"><span class="color-green">Android 2.2 - 5.1</span></div>
+                                            <div class="div-table-column"><span class="color-green">Android {$ver_android_bot} - {$ver_android_up}</span></div>
                                         </div>
                                     </div>
 
@@ -68,14 +68,14 @@
 
                             <div class="table-body">
                                 <div class="text-center">
-                                    <p>Rooting is required to use some extended features</p>
+                                    <p>{if isset($androidText)}{$androidText}{else}Rooting is required to use some extended features{/if}</p>
                                 </div>
                                 <div>
 
                                     <div class="div-table">
                                         <div class="div-table-row">
                                             <div class="div-table-column"><span>Smartphones and Tablets:</span></div>
-                                            <div class="div-table-column"><span class="color-green">Android 2.2 - 5.1</span></div>
+                                            <div class="div-table-column"><span class="color-green">Android {$ver_android_bot} - {$ver_android_up}</span></div>
                                         </div>
                                     </div>
 
@@ -113,7 +113,7 @@
                                     <div class="div-table">
                                         <div class="div-table-row">
                                             <div class="div-table-column"><span>iPhones / iPads / iPods Touch:</span></div>
-                                            <div class="div-table-column"><span class="color-green">{if isset($versionIOS)}{$versionIOS}{else}iOS 6.0 - 8.4{/if}</span></div>
+                                            <div class="div-table-column"><span class="color-green">{if isset($versionIOS)}{$versionIOS}{else}iOS {$ver_ios_bot} - {$ver_jailbreak_up}{/if}</span></div>
                                         </div>
                                     </div>
 
@@ -135,7 +135,7 @@
                                     <div class="div-table">
                                         <div class="div-table-row">
                                             <div class="div-table-column"><span>iPhones / iPads / iPods Touch:</span></div>
-                                            <div class="div-table-column"><span class="color-green">{if isset($versionIOS)}{$versionIOS}{else}iOS 6.0 - 8.4{/if}</span></div>
+                                            <div class="div-table-column"><span class="color-green">{if isset($versionIOS)}{$versionIOS}{else}iOS {$ver_ios_bot} - {$ver_jailbreak_up}{/if}</span></div>
                                         </div>
                                     </div>
 
@@ -150,14 +150,14 @@
 
                             <div class="table-body">
                                 <div class="text-center">
-                                    <p>Jailbreak is required before the installation</p>
+                                    <p>{if isset($iosText)}{$iosText}{else}Jailbreak is required before the installation{/if}</p>
                                 </div>
                                 <div>
 
                                     <div class="div-table">
                                         <div class="div-table-row">
                                             <div class="div-table-column"><span>iPhones / iPads / iPods Touch:</span></div>
-                                            <div class="div-table-column"><span class="color-green">iOS 6.0 - 8.4</span></div>
+                                            <div class="div-table-column"><span class="color-green">iOS {$ver_ios_bot} - {$ver_jailbreak_up}</span></div>
                                         </div>
                                     </div>
 

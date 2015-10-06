@@ -3,7 +3,7 @@
             <div class="thumb">
                     <span class="ico-left"><i class="icon-apple"></i></span>
                     <span>OS:<strong> iOS</strong></span>
-                    <span>Versions:<strong> 6.0 - 8.4.1</strong></span>
+                    <span>Versions:<strong> {$ver_ios_bot} - {$ver_ios_up}</strong></span>
                     <span><strong>iPhone, iPad, iPod Touch</strong></span>
                     <a href="/compatibility/ios-devices" 
                        class="text-succes search-category a-default" data-os="iOS">View list of iOS devices</a>
@@ -13,7 +13,7 @@
             <div class="thumb">
                     <span class="ico-left"><i class="icon-android"></i></span>
                     <span>OS:<strong> Android</strong></span>
-                    <span>Versions:<strong> 2.2 - 5.1{*later*}</strong></span>
+                    <span>Versions:<strong> {$ver_android_bot} - {$ver_android_up}</strong></span>
                     <span><strong>Smartphones and Tablets</strong></span>
                     <a href="/compatibility/android-devices" 
                        class="text-succes search-category a-default" data-os="Android">View list of Android devices</a>

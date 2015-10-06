@@ -751,6 +751,15 @@ dl.table-rows.block-left {
         margin-left: -45px;
     }
     
+    #block-compatibility-table.ios-table .div-table-column,
+    #block-compatibility-table.android-table .div-table-column {
+        border-right: none;
+    }
+    
+    #block-compatibility-table.ios-table > .table-body {
+        border-left: 1px solid #e7e7e7;
+    }
+    
 }
 @media (min-width: 468px) { 
     .div-table-row {
@@ -822,6 +831,15 @@ dl.table-rows.block-left {
     #box-features-list .odd [class^="i-list-features-"],
     #box-features-list .odd [class*="i-list-features-"] {
         margin-left: -45px;
+    }
+    
+    #block-compatibility-table.ios-table .div-table-column,
+    #block-compatibility-table.android-table .div-table-column {
+        border-right: none;
+    }
+    
+    #block-compatibility-table.ios-table > .table-body {
+        border-left: 1px solid #e7e7e7;
     }
 }
 @media (min-width: 768px) {
@@ -899,6 +917,15 @@ dl.table-rows.block-left {
     #box-features-list .odd [class*="i-list-features-"] {
         margin-left: -45px;
     }
+    
+    #block-compatibility-table.ios-table .div-table-column,
+    #block-compatibility-table.android-table .div-table-column {
+        border-right: none;
+    }
+    
+    #block-compatibility-table.ios-table > .table-body {
+        border-left: 1px solid #e7e7e7;
+    }
  }
 @media (min-width: 992px) {
     .div-table-row {
@@ -968,6 +995,15 @@ dl.table-rows.block-left {
     #box-features-list .odd [class*="i-list-features-"] {
         margin-left: 5px;
     }
+    
+    #block-compatibility-table.ios-table .div-table-column,
+    #block-compatibility-table.android-table .div-table-column {
+        border-right: 1px solid #e7e7e7;
+    }
+    
+    #block-compatibility-table.ios-table > .table-body {
+        border-left: 0px;
+    }
 }
 @media (min-width: 1200px) {
     .div-table-row {
@@ -1036,6 +1072,15 @@ dl.table-rows.block-left {
     #box-features-list .odd [class^="i-list-features-"],
     #box-features-list .odd [class*="i-list-features-"] {
         margin-left: 5px;
+    }
+    
+    #block-compatibility-table.ios-table .div-table-column,
+    #block-compatibility-table.android-table .div-table-column {
+        border-right: 1px solid #e7e7e7;
+    }
+    
+    #block-compatibility-table.ios-table > .table-body {
+        border-left: 0px;
     }
 }
 

@@ -1,6 +1,4 @@
 <?php
- //ini_set('display_errors', 1);
- //error_reporting(-1);
 /**
  * Bootstrap file for setting the ABSPATH constant
  * and loading the wp-config.php file. The wp-config.php

@@ -1,7 +1,7 @@
 {include file='../includes/main/main-header.tpl'
     robots="yes" 
-    title=""
-    description=""
+    title="Secure Parental Control Monitoring App | Pumpic"
+    description="Pumpic is a secure parental control app that protects your children from cyberbullying, adult content, online predators, and other threats. Keeping children safe is so easy with Pumpic!"
 }    
     
 <body>
@@ -440,7 +440,7 @@
                 blockBg="light"
                 imgUrl = "parental_control/ipad.png"
                 imgAlt = "Android"
-                title = "Control Panel in English"
+                title = " Easy-to-Use Control Panel"
                 description="Right after installing Pumpic, all the data from the target device will be sent to your Control Panel. It can be accessed from any browser and any device, including PCs, smartphones, and tablets. In Control Panel, you can not only view the information, but also set restrictions and block some of activities."
                 textAlign = "left"
                 lang="en"

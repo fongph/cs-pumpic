@@ -16,6 +16,14 @@
                 nocache
         }
         
+        <!-- FLY BLOCKS -->
+        {nocache}
+        {if ''|hasFreeTrialStick}    
+            {include file='../includes/content/fly/fly-free-trial.tpl'}
+        {/if}    
+        {/nocache}
+        <!-- END FLY -->
+        
         {*
             Template: PHONE
             Переменные:
@@ -389,7 +397,7 @@
         {*
             Template: RECOMMENDED
         *}    
-        {include file='../includes/main/main-recommended.tpl'}
+        {include file='../includes/main/main-recommended_protaction.tpl'}
         
         <!-- FOOTER -->
         {*

@@ -20,3 +20,7 @@
     max-height: 157px;
     height: 100%;
 }
+
+.wp-blog .list_grey li a:hover {
+    text-decoration: underline;
+}

@@ -91,8 +91,8 @@ $config = array(
             
                 // countrie
                 'parental-control-software.html' => 'parental-control-software.php',
-                'germany.html' => 'germany.php',
-                'brazil.html' => 'brazil.php'  
+                'mobile-spion.html' => 'mobile-spion.php',
+                'espiao-movel.html' => 'espiao-movel.php'  
 	),
     'db_phones' => array(
         'host' => '188.40.64.2',

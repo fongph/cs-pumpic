@@ -9,15 +9,14 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 })(window,document,'script','//www.google-analytics.com/analytics.js','ga'); 
 
 {/literal}
-{* nocache}
+{nocache}
 {if ''|hasUser}
 {literal}ga('create', 'UA-56492507-1', 'auto', {'allowLinker': true, 'userId': '{/literal}{getUserID}{literal}'});{/literal}
 {else}  
 {literal}ga('create', 'UA-56492507-1', 'auto', {'allowLinker': true});{/literal}
 {/if}
-{/nocache*}
-{literal}
-ga('create', 'UA-56492507-1', 'auto', {'allowLinker': true});    
+{/nocache}
+{literal}   
 ga('require', 'linker');
 ga('linker:autoLink', ['pumpic.com','fastspring.com','demo.pumpic.com','cp.pumpic.com'], true, true);
 {/literal}

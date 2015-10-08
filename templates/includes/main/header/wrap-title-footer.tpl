@@ -45,6 +45,8 @@
 {include file='../header/analytics-header.tpl'}	
 {strip}	
    
+{getUserInfo}    
+    
 {if isset($test) && $test == 'true'}  
     {*_gaq.push(['_setDomainName', 'none']);
     _gaq.push(['_setAllowLinker', true]);*}

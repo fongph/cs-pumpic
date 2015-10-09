@@ -119,12 +119,12 @@
                                         {if isset($Android)}
                                             {if isset($AndroidVersion) && $Android == 'yes'}<li><i class="icon-android"></i> {$AndroidVersion}</li>{/if}
                                         {else}    
-                                            <li><i class="icon-android"></i> (2.2 - 5.1)</li>
+                                            <li><i class="icon-android"></i> ({$ver_android_bot} - {$ver_android_up})</li>
                                         {/if} 
                                         {if isset($Apple)}
                                             {if isset($AppleVersion) && $Apple == 'yes'}<li><i class="icon-apple"></i> {$AppleVersion}</li>{/if}
                                         {else}    
-                                            <li><i class="icon-apple"></i> (6.0 - {if isset($jailbreak) && $jailbreak == "true"}8.4{else}8.4.1{/if})</li>
+                                            <li><i class="icon-apple"></i> ({$ver_ios_bot} - {if isset($jailbreak) && $jailbreak == "true"}{$ver_jailbreak_up}{else}{$ver_ios_up}{/if})</li>
                                         {/if} 
                                         
                                         {if isset($InfoBlock)}

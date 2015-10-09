@@ -1,6 +1,6 @@
 <h4 class="text-success text-center">Choose your category:</h4>
 <ul class="list_category">
-        <li>
+        <li class='active'>
                 <a data-toggled="off" href="#all">All</a>
         </li>
         <li>

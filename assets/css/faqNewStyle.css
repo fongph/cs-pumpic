@@ -23,17 +23,24 @@
 }
 
 .box_category > ul > li > div {
+    position: relative;
+    z-index: 1;
     padding-left: 38px;
 }
-.box_category > ul > li > .minus,
-.box_category > ul > li > .plus {
+.box_category > ul > li .minus,
+.box_category > ul > li .plus {
+    cursor: pointer;
+    z-index: 10;
+    margin-left: -38px;
+    display: inline-block;
+    position: absolute;
     min-width: 27px;
     min-height: 27px;
 }
-.box_category > ul > li > .minus {
+.box_category > ul > li .minus {
     background: url('../images/faq/minus.png') no-repeat;
 }
-.box_category > ul > li > .plus {
+.box_category > ul > li .plus {
     background: url('../images/faq/plus.png') no-repeat;
 }
 
@@ -61,6 +68,12 @@
     font-weight: 300;
     color: #888888;
 }
+
+#tmp-faq .box_category .collapse a,
+#tmp-faq .box_category .collapsing a {
+    color: #16a89e;
+}
+
 #tmp-faq .box_category .collapse p,
 #tmp-faq .box_category .collapsing p {
     margin: 0px;

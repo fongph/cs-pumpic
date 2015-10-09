@@ -9,7 +9,7 @@ currencyHandler = {
                 $.each(['gbp', 'eur', 'cad', 'aud'], function(i, currency){
 
                     if(rates[currency.toUpperCase()]){
-                        var priceInCurrency = Number(rates[currency.toUpperCase()]*usdPrice).toFixed(2);
+                        var priceInCurrency = Number((1/rates[currency.toUpperCase()])*usdPrice).toFixed(2);
                         $(priceTag).attr('data-price-'+currency, priceInCurrency);
                     }
 

@@ -83,7 +83,8 @@
 										<ul>
                                                                                         <!-- #what-is-pumpic-app -->
 											<li>
-                                                                                            <div class='plus'>
+                                                                                            <div>
+                                                                                                <i class="plus"></i>
 												<a id="what-is-pumpic-app" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse1">What is Pumpic?</a>
 												<div id="collapse1" class="collapse">
                                                                                                     <div>
@@ -93,7 +94,7 @@
                                                                                             </div>    
 											</li>
 											<li>
-                                                                                            <div class='plus'>
+                                                                                            <div>                                                                                                <i class="plus"></i>
                                                                                                 <a id="what-is-pumpic-app" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse2">Is it legal to use Pumpic?</a>
                                                                                                 <div id="collapse2" class="collapse">
                                                                                                     <div>
@@ -103,7 +104,7 @@
                                                                                             </div>
 											</li>
 											<li>
-                                                                                            <div class='plus'>
+                                                                                            <div>                                                                                                <i class="plus"></i>
 												<a id="what-is-pumpic-app" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse3">Is Pumpic parental monitoring stealth? Can the app be detected on the target device?</a>
 												<div id="collapse3" class="collapse">
                                                                                                     <div>
@@ -127,7 +128,7 @@
                                                                                         
                                                                                         <!-- #start -->
 											<li>
-                                                                                            <div class='plus'>
+                                                                                            <div>                                                                                                <i class="plus"></i>
 												<a id="start" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse4">Where to start?</a>
 												<div id="collapse4" class="collapse">
                                                                                                     <div>
@@ -137,7 +138,7 @@
                                                                                             </div>    
 											</li>
 											<li>
-                                                                                            <div class='plus'>
+                                                                                            <div>                                                                                                <i class="plus"></i>
 												<a id="start" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse5">Where can I check the captured data?</a>
 												<div id="collapse5" class="collapse">
                                                                                                     <div>
@@ -147,7 +148,7 @@
                                                                                             </div>    
 											</li>
 											<li>
-                                                                                            <div class='plus'>
+                                                                                            <div>                                                                                                <i class="plus"></i>
 												<a id="start" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse6">Do I need to jailbreak/root the target device to install Pumpic?</a>
 												<div id="collapse6" class="collapse">
                                                                                                     <div>
@@ -160,7 +161,7 @@
                                                                                             </div>    
 											</li>
 											<li>
-                                                                                            <div class='plus'>
+                                                                                            <div>                                                                                                <i class="plus"></i>
 												<a id="start" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse7">Is physical access required or can I install the app remotely?</a>
 												<div id="collapse7" class="collapse">
                                                                                                     <div>
@@ -172,7 +173,7 @@
                                                                                         
                                                                                         <!-- #install -->
 											<li>
-                                                                                            <div class='plus'>
+                                                                                            <div>                                                                                                <i class="plus"></i>
 												<a id="install" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse8">How to install Pumpic?</a>
 												<div id="collapse8" class="collapse">
                                                                                                     <div>
@@ -182,7 +183,7 @@
                                                                                             </div>    
 											</li>
 											<li>
-                                                                                            <div class='plus'>
+                                                                                            <div>                                                                                                <i class="plus"></i>
 												<a id="install" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse9">How to uninstall Pumpic?</a>
 												<div id="collapse9" class="collapse">
                                                                                                     <div>
@@ -197,7 +198,7 @@
                                                                                             </div>   
 											</li>
 											<li>
-                                                                                            <div class='plus'>
+                                                                                            <div>                                                                                                <i class="plus"></i>
 												<a id="install" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse10">Can I install or uninstall the application remotely?</a>
 												<div id="collapse10" class="collapse">
                                                                                                     <div>
@@ -209,7 +210,7 @@
                                                                                             </div>    
 											</li>
 											<li>
-                                                                                            <div class='plus'>
+                                                                                            <div>                                                                                                <i class="plus"></i>
 												<a id="install" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse11">How to update Pumpic?</a>
 												<div id="collapse11" class="collapse">
                                                                                                     <div>
@@ -229,7 +230,7 @@
                                                                                             </div>    
 											</li>
 											<li>
-                                                                                            <div class='plus'>
+                                                                                            <div>                                                                                                <i class="plus"></i>
 												<a id="install" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse12">How often is the information updated?</a>
 												<div id="collapse12" class="collapse">
                                                                                                     <div>
@@ -239,7 +240,7 @@
                                                                                             </div>    
 											</li>
 											<li>
-                                                                                            <div class='plus'>
+                                                                                            <div>                                                                                                <i class="plus"></i>
 												<a id="install" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse13">Is it possible to add more devices to my Control Panel or will I have to set up an account for each new device?</a>
 												<div id="collapse13" class="collapse">
                                                                                                     <div>
@@ -249,7 +250,7 @@
                                                                                             </div>    
 											</li>
 											<li>
-                                                                                            <div class='plus'>
+                                                                                            <div>                                                                                                <i class="plus"></i>
 												<a id="install" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse14">Can I switch my subscription plan to another device?</a>
 												<div id="collapse14" class="collapse">
                                                                                                     <div>
@@ -259,7 +260,7 @@
                                                                                             </div>    
 											</li>
 											<li>
-                                                                                            <div class='plus'>
+                                                                                            <div>                                                                                                <i class="plus"></i>
 												<a id="install" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse15">How to jailbreak iOS?</a>
 												<div id="collapse15" class="collapse">
                                                                                                     <div>
@@ -270,7 +271,7 @@
                                                                                             </div>    
 											</li>
 											<li>
-                                                                                            <div class='plus'>
+                                                                                            <div>                                                                                                <i class="plus"></i>
 												<a id="install" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse16">Is there any daily limit? How to find out if I have reached the limit on my plan?</a>
 												<div id="collapse16" class="collapse">
                                                                                                     <div>
@@ -283,7 +284,7 @@
                                                                                         
                                                                                         <!-- #compatibility -->
 											<li>
-                                                                                            <div class='plus'>
+                                                                                            <div>                                                                                                <i class="plus"></i>
 												<a id="compatibility" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse17">What devices support Pumpic?</a>
 												<div id="collapse17" class="collapse">
                                                                                                     <div>
@@ -294,7 +295,7 @@
 											</li>
                                                                                         {*
 											<li>
-                                                                                            <div class='plus'>
+                                                                                            <div>                                                                                                <i class="plus"></i>
 												<a id="compatibility" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse18">How to jailbreak iOS?</a>
 												<div id="collapse18" class="collapse">
                                                                                                     <div>
@@ -304,7 +305,7 @@
                                                                                             </div>    
 											</li>*}
 											<li>
-                                                                                            <div class='plus'>
+                                                                                            <div>                                                                                                <i class="plus"></i>
 												<a id="compatibility" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse19">Does jailbreak void a warranty? Can I delete jailbreak from the target iOS device to restore my warranty?</a>
 												<div id="collapse19" class="collapse">
                                                                                                     <div>
@@ -314,7 +315,7 @@
                                                                                             </div>    
 											</li>
 											<li>
-                                                                                            <div class='plus'>
+                                                                                            <div>                                                                                                <i class="plus"></i>
 												<a id="compatibility" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse20">Is jailbreak visible while connected to iTunes or iCloud?</a>
 												<div id="collapse20" class="collapse">
                                                                                                     <div>
@@ -324,7 +325,7 @@
                                                                                             </div>    
 											</li>
 											<li>
-                                                                                            <div class='plus'>
+                                                                                            <div>                                                                                                <i class="plus"></i>
 												<a id="compatibility" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse21">How to root Android?</a>
 												<div id="collapse21" class="collapse">
                                                                                                     <div>
@@ -335,7 +336,7 @@
                                                                                             </div>    
 											</li>
 											<li>
-                                                                                            <div class='plus'>
+                                                                                            <div>                                                                                                <i class="plus"></i>
 												<a id="compatibility" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse22">Does Android rooting void a warranty?</a>
 												<div id="collapse22" class="collapse">
                                                                                                     <div>
@@ -345,7 +346,7 @@
                                                                                             </div>    
 											</li>
 											<li>
-                                                                                            <div class='plus'>
+                                                                                            <div>                                                                                                <i class="plus"></i>
 												<a id="compatibility" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse23">How to cancel my Pumpic subscription and/or delete my account?</a>
 												<div id="collapse23" class="collapse">
                                                                                                     <div>
@@ -355,7 +356,7 @@
                                                                                             </div>    
 											</li>
 											<li>
-                                                                                            <div class='plus'>
+                                                                                            <div>                                                                                                <i class="plus"></i>
 												<a id="compatibility" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse24">Is the app attached to a mobile phone operator, a SIM card, or the target device itself?</a>
 												<div id="collapse24" class="collapse">
                                                                                                     <div>
@@ -365,7 +366,7 @@
                                                                                             </div>    
 											</li>
 											<li>
-                                                                                            <div class='plus'>
+                                                                                            <div>                                                                                                <i class="plus"></i>
 												<a id="compatibility" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse25">Does the app require Internet connection to function at full efficiency?</a>
 												<div id="collapse25" class="collapse">
                                                                                                     <div>
@@ -377,7 +378,7 @@
                                                                                         
                                                                                         <!-- #billing -->
 											<li>
-                                                                                            <div class='plus'>
+                                                                                            <div>                                                                                                <i class="plus"></i>
 												<a id="billing" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse27">What payment methods are available?</a>
 												<div id="collapse27" class="collapse">
                                                                                                     <div>
@@ -397,7 +398,7 @@
                                                                                             </div>    
 											</li>
 											<li>
-                                                                                            <div class='plus'>
+                                                                                            <div>                                                                                                <i class="plus"></i>
 												<a id="billing" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse28">Is it possible to get a refund?</a>
 												<div id="collapse28" class="collapse">
                                                                                                     <div>
@@ -407,7 +408,7 @@
                                                                                             </div>    
 											</li>
 											<li>
-                                                                                            <div class='plus'>
+                                                                                            <div>                                                                                                <i class="plus"></i>
 												<a id="billing" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse29">How to disable an automatic billing option?</a>
 												<div id="collapse29" class="collapse">
                                                                                                     <div>
@@ -418,7 +419,7 @@
 											</li>
                                                                                         
                                                                                         {*<li>
-                                                                                            <div class='plus'>
+                                                                                            <div>                                                                                                <i class="plus"></i>
 												<a id="billing" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse30">How much does it cost to upgrade my plan?</a>
 												<div id="collapse30" class="collapse">
                                                                                                     <div>
@@ -429,7 +430,7 @@
 											</li>*}
                                                                                         
                                                                                         <li>
-                                                                                            <div class='plus'>
+                                                                                            <div>                                                                                                <i class="plus"></i>
 												<a id="billing" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse31">What will I see in my bank statement?</a>
 												<div id="collapse31" class="collapse">
                                                                                                     <div>
@@ -440,7 +441,7 @@
 											</li>
                                                                                         
                                                                                         <li>
-                                                                                            <div class='plus'>
+                                                                                            <div>                                                                                                <i class="plus"></i>
 												<a id="billing" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse32">What happens after a purchase?</a>
 												<div id="collapse32" class="collapse">
                                                                                                     <div>
@@ -452,7 +453,7 @@
                                                                                         
                                                                                         <!-- #other -->
                                                                                         <li>
-                                                                                            <div class='plus'>
+                                                                                            <div>                                                                                                <i class="plus"></i>
 												<a id="other" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse33">How to block incoming calls?</a>
 												<div id="collapse33" class="collapse">
                                                                                                     <div>
@@ -462,7 +463,7 @@
                                                                                             </div>    
 											</li>
                                                                                         {*<li>
-                                                                                            <div class='plus'>
+                                                                                            <div>                                                                                                <i class="plus"></i>
 												<a id="other" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse34">How to start tracking BBM?</a>
 												<div id="collapse34" class="collapse">
                                                                                                     <div>
@@ -472,7 +473,7 @@
                                                                                             </div>    
 											</li>*}
                                                                                         <li>
-                                                                                            <div class='plus'>
+                                                                                            <div>                                                                                                <i class="plus"></i>
 												<a id="other" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse35">Where can I view the information on the target user’s SMS and call logs?</a>
 												<div id="collapse35" class="collapse">
                                                                                                     <div>
@@ -482,7 +483,7 @@
                                                                                             </div>    
 											</li>
                                                                                         <li>
-                                                                                            <div class='plus'>
+                                                                                            <div>                                                                                                <i class="plus"></i>
 												<a id="other" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse36">How can I delete information from my Control Panel?</a>
 												<div id="collapse36" class="collapse">
                                                                                                     <div>

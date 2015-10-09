@@ -2391,18 +2391,19 @@ $('form[name="send_find_phone"] button.event-submit').click(function(){
     
     if($('.box_category .minus, .box_category .plus').length) {
         $('.box_category .minus, .box_category .plus').on('click', function() {
-            $(this).children('.collapse').collapse('toggle');
+            $(this).parent('div').find('.collapse').collapse('toggle');
         });
     }
     
     $('.collapse').on('shown.bs.collapse', function(e) {
-        if($(this).parent('.plus')) {
-            $(this).parent('.plus').removeClass('plus').addClass('minus');
+        console.log('Show');
+        if($(this).parent('div').find('i.plus')) {
+            $(this).parent('div').find('i.plus').removeClass('plus').addClass('minus');
         }
     });
     $('.collapse').on('hidden.bs.collapse', function(e) {
-        if($(this).parent('.minus')) {
-            $(this).parent('.minus').removeClass('minus').addClass('plus');
+        if($(this).parent('div').find('i.minus')) {
+            $(this).parent('div').find('i.minus').removeClass('minus').addClass('plus');
         }
     });
     

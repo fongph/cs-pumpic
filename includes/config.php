@@ -39,7 +39,7 @@ $config = array(
 	'php_compile' => array(
                 'compatibility' => 'compatibility.php',
                 'gps-wireless-tracking-phone.html' => 'gps-wireless-tracking-phone.php',
-		'compatibility_send.html' => 'compatibility_form.php',
+				'compatibility_send.html' => 'compatibility_form.php',
                 //'faq_send.html' => 'faq_send.php',
             
                 'faq.html' => 'faq.php',
@@ -92,7 +92,8 @@ $config = array(
                 // countrie
                 'parental-control-software.html' => 'parental-control-software.php',
                 'germany.html' => 'germany.php',
-                'brazil.html' => 'brazil.php'  
+                'brazil.html' => 'brazil.php',
+				'receiver.html' => 'receiver.php',
 	),
     'db_phones' => array(
         'host' => '188.40.64.2',

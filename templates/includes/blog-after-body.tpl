@@ -1,0 +1,1 @@
+<?php include(dirname(__FILE__).'/blog-ga-tag-manager.tpl'); ?>

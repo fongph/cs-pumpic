@@ -88,6 +88,8 @@ module.exports = function (grunt) {
                     './assets/css/icons.css',
                     './assets/css/style-recommended-by.css',
                     './assets/css/fly/free-trial-stick.css',
+                    './assets/css/faqNewStyle.css',
+                    
                     // './assets/css/sticky/autofix_anything.css',
                 ], 
                 dest: './public/stylesheets/frontend.css'

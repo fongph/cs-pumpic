@@ -7,6 +7,10 @@
 }    
     
 <body>
+    <!-- BLOCK GTM -->
+    {include file='../includes/main/main-after-body.tpl'}
+    <!-- END BLOCK GTM -->
+    
     <!-- FLY BLOCKS -->
     {include file='../includes/content/fly/fly_blocks.tpl'}
     <!-- END FLY BLOCKS-->
@@ -16,6 +20,14 @@
                     cache_id = "includes_main_main-top-menu"
                     nocache
         }
+        
+        <!-- FLY BLOCKS -->
+        {nocache}
+        {if ''|hasFreeTrialStick}    
+            {include file='../includes/content/fly/fly-free-trial.tpl'}
+        {/if}    
+        {/nocache}
+        <!-- END FLY -->
         
         {*
             Template: PHONE
@@ -38,8 +50,8 @@
 					<p>Pumpic takes cell phone monitoring to a new level. 
                                             <br />Track the location, text messages and contacts quickly and quiet.</p>
 					<ul class="compatibility">
-						<li><i class="icon-android"></i> (2.2 - 5.1)</li>
-						<li><i class="icon-apple"></i> (6.0 - 8.4.1)</li>
+						<li><i class="icon-android"></i> ({$ver_android_bot} - {$ver_android_up})</li>
+						<li><i class="icon-apple"></i> ({$ver_ios_bot} - {$ver_ios_up})</li>
 						{*<li><i class="icon-blackberry"></i> (1.0 - 7.1)</li>*}
 						<li>
                                                     <i class="icon-info-circled"></i> <a href="/compatibility.html">platform compatibility</a>

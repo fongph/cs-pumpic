@@ -16,6 +16,10 @@
 }  
 
 <body>
+    <!-- BLOCK GTM -->
+    {include file='../includes/main/main-after-body.tpl'}
+    <!-- END BLOCK GTM -->
+    
     <!-- FLY BLOCKS -->
     {*
         Template: FLY BLOCKS ( Добавляет на странице плавающие блоки )

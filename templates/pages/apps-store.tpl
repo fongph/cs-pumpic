@@ -12,6 +12,10 @@
 }    
 
 <body>
+    <!-- BLOCK GTM -->
+    {include file='../includes/main/main-after-body.tpl'}
+    <!-- END BLOCK GTM -->
+    
     <!-- FLY BLOCKS -->
     {include file='../includes/content/fly/fly_blocks.tpl'}
     <!-- END FLY BLOCKS-->
@@ -22,6 +26,14 @@
                 cache_id = "includes_main_main-top-menu"
                 nocache
         }
+        
+        <!-- FLY BLOCKS -->
+        {nocache}
+        {if ''|hasFreeTrialStick}    
+            {include file='../includes/content/fly/fly-free-trial.tpl'}
+        {/if}    
+        {/nocache}
+        <!-- END FLY -->
         
         {*
             Template: PHONE
@@ -99,16 +111,16 @@
 											<th>FEATURES:</th>
 											<th>
 												<div class="lg_text_table"><i class="icon-android"></i><span>Android</span></div>
-												<div class="sm_text_table"><span>(2.2 - 5.0)</span></div>
+												<div class="sm_text_table"><span>({$ver_android_bot} - {$ver_android_up})</span></div>
 											</th>
 											<th>
 												<div class="lg_text_table"><i class="icon-apple"></i><span>iOS</span></div>
-												<div class="sm_text_table"><span>(6.0 - 8.4)<br />jailbreak needed</span></div>
+												<div class="sm_text_table"><span>({$ver_ios_bot} - {$ver_jailbreak_up})<br />jailbreak needed</span></div>
 											</th>
-											<th>
+											{*<th>
 												<div class="lg_text_table"><i class="icon-blackberry"></i><span class="hidden-xs">BlackBerry</span><span class="visible-xs">BB</span></div>
 												<div class="sm_text_table"><span>(1.0 - 7.1)</span></div>
-											</th>
+											</th>*}
 										</tr>
 									</thead>
 									<tfoot>

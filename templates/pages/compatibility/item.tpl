@@ -11,6 +11,10 @@
 
 {include file='../../includes/main/header/wrap-title-footer.tpl'}
 <body>
+    <!-- BLOCK GTM -->
+    {include file='../../includes/main/main-after-body.tpl'}
+    <!-- END BLOCK GTM -->
+    
         <!-- FLY BLOCKS -->
     {include file='../../includes/content/fly/fly_blocks.tpl'}
     <!-- END FLY BLOCKS-->
@@ -21,6 +25,14 @@
                 cache_id = "includes_main_main-top-menu"
                 nocache
         }
+        
+        <!-- FLY BLOCKS -->
+        {nocache}
+        {if ''|hasFreeTrialStick}    
+            {include file='../../includes/content/fly/fly-free-trial.tpl'}
+        {/if}    
+        {/nocache}
+        <!-- END FLY -->
         
         {*
             Template: PHONE

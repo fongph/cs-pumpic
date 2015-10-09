@@ -60,7 +60,11 @@
                         <section>
                             {include file='../content/table-items/feature-items.tpl'}    
                         </section>
-
+                        
+                        <div class="text-center button-more-detailes">
+                            <a href="/all-features.html" class="btn-gree" rel="nofollow">More Details</a>
+                        </div>
+                        
                     </div>
                 </div>
         </div>

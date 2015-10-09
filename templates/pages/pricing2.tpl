@@ -7,6 +7,10 @@
 }
 
 <body>
+    <!-- BLOCK GTM -->
+    {include file='../includes/main/main-after-body.tpl'}
+    <!-- END BLOCK GTM -->
+    
     <!-- FLY BLOCKS -->
     {include file='../includes/main/main-button-help.tpl'}
     {include file='../includes/main/main-button-goup.tpl'}
@@ -17,6 +21,14 @@
                 cache_id = "includes_main_main-top-menu"
                 nocache
         }
+        
+        <!-- FLY BLOCKS -->
+        {nocache}
+        {if ''|hasFreeTrialStick}    
+            {include file='../includes/content/fly/fly-free-trial.tpl'}
+        {/if}    
+        {/nocache}
+        <!-- END FLY -->
         
         {*
             Template: PHONE
@@ -33,7 +45,7 @@
                     <div class="col-lg-10 col-lg-offset-1">
                         <div class="row">
                             <h2>
-                                Subscription Plans{*Pricing & Plans*}
+                                Subscription Plans
                             </h2>
                             <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1">
                                     <table class="tb_pricing table-bordered pricing-second">
@@ -133,7 +145,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="support_os"><div class="wr_support_os"><i class="icon-android d_green"></i> Android 2.2 - 5.1 <i class="icon-apple d_green"></i> iOS 6.0 - 8.4</div></div>
+                                        <div class="support_os"><div class="wr_support_os"><i class="icon-android d_green"></i> Android {$ver_android_bot} - {$ver_android_up} <i class="icon-apple d_green"></i> iOS {$ver_ios_bot} - {$ver_ios_up}</div></div>
                                         </caption>
                                         <thead>
                                             <tr>

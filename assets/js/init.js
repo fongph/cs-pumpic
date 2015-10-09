@@ -2388,5 +2388,13 @@ $('form[name="send_find_phone"] button.event-submit').click(function(){
             */
         // do something after all updates are applied
     }
+    
+    $(document).on('click.bs.collapse.data-api', '[data-toggle="collapse"]', function(e) {
+       if($(this).parent('.plus').length) {
+           $(this).parent('.plus').removeClass('plus').addClass('minus');
+       } else if($(this).parent('.minus').length) {
+           $(this).parent('.minus').removeClass('minus').addClass('plus');
+       }
+    });
 
 }); 

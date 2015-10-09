@@ -5,6 +5,10 @@
 }    
     
 <body>
+    <!-- BLOCK GTM -->
+    {include file='../includes/main/main-after-body.tpl'}
+    <!-- END BLOCK GTM -->
+    
     <!-- FLY BLOCKS -->
     {include file='../includes/content/fly/fly_blocks.tpl'}
     <!-- END FLY BLOCKS-->
@@ -17,6 +21,14 @@
             cache_id = "includes_main_main-top-menu"
             nocache
         }
+        
+        <!-- FLY BLOCKS -->
+        {nocache}
+        {if ''|hasFreeTrialStick}    
+            {include file='../includes/content/fly/fly-free-trial.tpl'}
+        {/if}    
+        {/nocache}
+        <!-- END FLY -->
         
         <!-- BLOCK HEADER -->
         <div class="bg_white">
@@ -1355,7 +1367,7 @@
                                             <i class='i-list-features-icloud'></i>
                                             <strong>
                                                 {*iCloud*}
-                                                iCloud monitoring <span class='text-normal'>(jailbreak-free up to iOS 8.4.1)</span>
+                                                iCloud monitoring <span class='text-normal'>(jailbreak-free up to iOS {$ver_ios_up})</span>
                                             </strong>
                                         </li>
                                     </ul>

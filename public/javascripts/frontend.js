@@ -9954,17 +9954,20 @@ $('form[name="send_find_phone"] button.event-submit').click(function(){
     
     if($('.box_category .minus, .box_category .plus').length) {
         $('.box_category .minus, .box_category .plus').on('click', function() {
-            
-            var _class = $(this).attr('class');
-            if(_class == 'plus') {
-                $(this).removeClass('plus').addClass('minus');
-            } else if(_class == 'minus') {
-                $(this).removeClass('minus').addClass('plus');
-            }
-            
             $(this).children('.collapse').collapse('toggle');
         });
     }
+    
+    $('.collapse').on('shown.bs.collapse', function(e) {
+        if($(this).parent('.plus')) {
+            $(this).parent('.plus').removeClass('plus').addClass('minus');
+        }
+    });
+    $('.collapse').on('hidden.bs.collapse', function(e) {
+        if($(this).parent('.minus')) {
+            $(this).parent('.minus').removeClass('minus').addClass('plus');
+        }
+    });
     
 //    $(document).on('click.bs.collapse.data-api', '[data-toggle="collapse"]', function(e) {
 //       var _class = $(this).parent().attr('class');

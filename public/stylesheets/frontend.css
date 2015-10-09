@@ -25065,6 +25065,11 @@ body {
 
 .box_category > ul > li a {
     color: #4d4f5b;
+    font-weight: 400;
+    line-height: 1.6;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
 }
 
 .box_category > ul {}
@@ -25092,20 +25097,18 @@ body {
     background: #f9f9f9 none repeat scroll 0 0;
 }
 
-.box_category > ul > li { }
-.box_category > ul > li > a {
-    font-weight: 400;
-    line-height: 1.6;
-    margin-bottom: 0;
-    padding-bottom: 0px;
-    padding-top: 0px;
-}
-
-#tmp-faq .box_category .collapse, 
-#tmp-faq .box_category .collapsing {
+#tmp-faq .box_category .collapse > div,
+#tmp-faq .box_category .collapsing > div {
     padding: 5px 0px;
 }
-#tmp-faq .box_category .collapse *{
+
+#tmp-faq .box_category .collapse,
+#tmp-faq .box_category .collapsing {
+    padding: 0px;
+}
+
+#tmp-faq .box_category .collapse *,
+#tmp-faq .box_category .collapsing * {
     font-size: 14px;
     line-height: 1.6;
     font-style: italic;
@@ -25113,8 +25116,8 @@ body {
     font-weight: 300;
     color: #888888;
 }
-#tmp-faq .box_category .collapse > p, 
-#tmp-faq .box_category .collapsing > p {
+#tmp-faq .box_category .collapse p,
+#tmp-faq .box_category .collapsing p {
     margin: 0px;
     padding: 7px 0px 0px; 
 }

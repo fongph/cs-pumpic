@@ -2389,6 +2389,20 @@ $('form[name="send_find_phone"] button.event-submit').click(function(){
         // do something after all updates are applied
     }
     
+    if($('.box_category .minus, .box_category .plus').length) {
+        $('.box_category .minus, .box_category .plus').on('click', function() {
+            
+            var _class = $(this).attr('class');
+            if(_class == 'plus') {
+                $(this).removeClass('plus').addClass('minus');
+            } else if(_class == 'minus') {
+                $(this).removeClass('minus').addClass('plus');
+            }
+            
+            $(this).children('.collapse').collapse('toggle');
+        });
+    }
+    
     $(document).on('click.bs.collapse.data-api', '[data-toggle="collapse"]', function(e) {
        if($(this).parent('.plus').length) {
            $(this).parent('.plus').removeClass('plus').addClass('minus');

@@ -2404,11 +2404,13 @@ $('form[name="send_find_phone"] button.event-submit').click(function(){
     }
     
     $(document).on('click.bs.collapse.data-api', '[data-toggle="collapse"]', function(e) {
-       if($(this).parent('.plus').length) {
-           $(this).parent('.plus').removeClass('plus').addClass('minus');
-       } else if($(this).parent('.minus').length) {
-           $(this).parent('.minus').removeClass('minus').addClass('plus');
+       var _class = $(this).parent().attr('class');
+       if(_class == 'plus') {
+           $(this).parent('div.plus').attr('class', 'minus'); // removeClass('plus').addClass('minus');
+       } else if(_class == 'minus') {
+           $(this).parent('div.minus').attr('class', 'plus'); //.removeClass('minus').addClass('plus');
        }
+       
     });
 
 }); 

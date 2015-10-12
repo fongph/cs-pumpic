@@ -3,19 +3,12 @@
     if(isset( $_GET['jsonCallback'], $_GET['dirtyData'])) {
 
         $clearData      = [];
-        $dirtyData      = $_GET['dirtyData'];
+        $dirtyData      = (array) json_decode( $_GET['dirtyData'] );
         $callback       = preg_replace('/[^a-z0-9_]+/ui', '', $_GET['jsonCallback']);
         $necessaryKeys  = ['fname', 'lname', 'phone_number', 'email', 'country'];
 
-        foreach( json_decode($data) as $key => $value ) {
-            $key = explode(':', $key);
-            if(isset( $key[0], $key[1])) {
-                $key    = $key[1];
-
-                if( in_array( $key, $necessaryKeys ) ) {
-                    $clearData[ $key ]  = $value;
-                }
-            }
+        foreach( $necessaryKeys as $key ) {
+            $clearData[ $key ]  = isset( $dirtyData[ $key ] ) ? $dirtyData[ $key ] : '';
         }
 
         if(count( $clearData ) > 0) {
@@ -23,8 +16,11 @@
             $config     = \CS\Settings\GlobalSettings::getDB();
             $dsn        = "mysql:dbname={$config['dbname']};host={$config['host']}";
 
-            (new \CS\Users\JiraLogger(new \PDO($dsn, $config['username'], $config['password'], $config['options'])))
-                ->registerListeners();
+            $pdo        = new \PDO($dsn, $config['username'], $config['password'], $config['options']);
+            $jira       = new \CS\Users\JiraLogger( $pdo );
+
+            $jira->registerListeners();
+
             $eventManager   = \EventManager\EventManager::getInstance();
             $eventManager->emit('billing-order-started', $clearData );
 
@@ -33,5 +29,5 @@
         }
 
     } else {
-        status_header(418); die('access denied');
+        status_header(403); die('access denied');
     }

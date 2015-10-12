@@ -128,7 +128,7 @@
                 Android (sting): Включает/Выключает андройд в инфо-блоке. *-default: no
         *}
         {include file='../includes/content/info/info-promo.tpl'
-            imgUrl = "header_banners/icloud-iphone-without-jailbreak-monitoring.png"
+            imgUrl = "header_banners/icloud-iphone-monitoring-without-jailbreak.png"
             imgAlt = "Apple iOS Mobile Monitoring App"
             imgAlign = "right"
             imgVerticalAlign = "bottom"
@@ -300,6 +300,27 @@
             planPackageBuy = "no"
             blockTrial = "no"
             blockQuickAndSimple = "yes"
+        }
+        
+        {*
+            Template: LANGUAGE BLOCK
+            Переменные:
+                flagName(string): - код страны (bra|de|en|gb). *default: false
+                flagPosition(string): - позиция флага на странице (right|left). *default: right
+        *}
+        {include file='../includes/content/info/info-promo.tpl'
+            imgUrl = "header_banners/bg_features_call_437x226.png"
+            imgAlt = "Smartphone monitoring"
+            imgAlign = "right"
+            textAlign = "right"
+            title = "Parental Control Solution<br/>Mobile Monitoring App"
+            description = "Reliable protection all over the United Kingdom.<br />
+            View calls and SMS. Track location and online activities."
+            promoBuyBlock = "no"
+            planPackageBuy = "yes"
+            block_video = "no"
+            flagPosition = 'right'
+            flagName = 'gb'
         }
         
         {*

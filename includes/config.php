@@ -39,7 +39,7 @@ $config = array(
 	'php_compile' => array(
                 'compatibility' => 'compatibility.php',
                 'gps-wireless-tracking-phone.html' => 'gps-wireless-tracking-phone.php',
-		'compatibility_send.html' => 'compatibility_form.php',
+				'compatibility_send.html' => 'compatibility_form.php',
                 //'faq_send.html' => 'faq_send.php',
             
                 'faq.html' => 'faq.php',
@@ -88,11 +88,13 @@ $config = array(
                 'security-subscribe-form-mailChimp.html' => 'security-subscribe-form-mailChimp.php',
             
                 'learning-center/ready-solutions'       => 'ready-solutions.php',
+
+                'receiver.html' => 'receiver.php',
             
                 // countrie
                 'parental-control-software.html' => 'parental-control-software.php',
                 'mobile-spion.html' => 'mobile-spion.php',
-                'espiao-movel.html' => 'espiao-movel.php'  
+                'espiao-movel.html' => 'espiao-movel.php'
 	),
     'db_phones' => array(
         'host' => '188.40.64.2',

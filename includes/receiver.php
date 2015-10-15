@@ -29,5 +29,6 @@
         }
 
     } else {
-        status_header(403); die('access denied');
+        header('HTTP/1.0 403 Forbidden');
+        die('access denied');
     }

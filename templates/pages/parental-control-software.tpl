@@ -47,7 +47,7 @@
             fz="32"
             classTitle="c-lh-h1-title"
             description = "Track calls, texts, locations, and online activities. <br />
-                           Keep your eyes open. Now available in Germany."
+                           Keep your eyes open. Now available worldwide."
             promoBuyBlock = "no"
             planPackageBuy = "yes"
 
@@ -276,7 +276,7 @@
         
         <!-- BLOCK FEATURES -->
         {include file='../includes/content/country/block-features-icloud-spy-en.tpl'
-            title="Recursos"
+            title="Features"
         }
         
         <!-- BLOCK PRICING -->

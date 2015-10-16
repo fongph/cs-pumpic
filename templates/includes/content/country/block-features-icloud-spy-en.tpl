@@ -72,7 +72,7 @@
                                 <i class="c-icon-contacts vertical-aligh-bottom"></i>
                                 <label class="vertical-aligh-bottom">Contacts</label>
                             </section>
-                            <p>View the contact list on the target device.</p>
+                            <p>View the <b>contact list</b> on the target device.</p>
                         
                         </div>
                     </li>
@@ -119,7 +119,7 @@
                                 <i class="c-icon-calendars vertical-aligh-bottom"></i>
                                 <label class="vertical-aligh-bottom">Calendar</label>
                             </section>
-                            <p>Follow <b>scheduled events</b>, plan, and intentions.</p>
+                            <p>Follow <b>scheduled events</b>, plans, and intentions.</p>
                         
                         </div>
                     </li>

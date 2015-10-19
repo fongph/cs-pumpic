@@ -1002,11 +1002,15 @@ function smarty_function_Content($params, $template) {
     $_title = (isset($params['title'])) ? $params['title'] : '';
     $_styleTitle = (isset($params['styleTitle'])) ? $params['styleTitle'] : 'h1';
     
-    echo '<div id="block-content" class="'.$_style.'">
-                    <div class="container">
-                        <'.$_styleTitle.' class="h2 text-center">'.$_title.'</'.$_styleTitle.'>
-                        <div class="row">
+    $html = '<div id="block-content" class="'.$_style.'">
+                    <div class="container">';
+                    if(!empty($_title))
+                        $html .= '<'.$_styleTitle.' class="h2 text-center">'.$_title.'</'.$_styleTitle.'>';
+                    
+    $html .=            '<div class="row">
                             <div class="col-sm-12 col-md-12 col-lg-12">';
+    
+    echo $html; 
 }
 
 function smarty_function_EndContent() {

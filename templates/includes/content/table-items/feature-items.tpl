@@ -25,7 +25,7 @@
         <li><i class="i-features-view-bookmarks"></i> View Bookmarks</li>
         <li><i class="i-features-view-notes"></i> View Notes</li>
         <li><i class="i-features-block-device"></i> Block Device</li>
-        <li><i class="i-features-location"></i> Location Tracking</li>
+        <li><i class="i-features-location"></i> {if !in_array('location-tracking', $_notVisible)}<span onclick="window.location='http://{$domain}/child-location-tracking.html'">Location Tracking</span>{else}Location Tracking{/if}</li>
         <li><i class="i-features-geo-fences"></i> {if !in_array('geo-fences', $_notVisible)}<span onclick="window.location='http://{$domain}/gps-and-geofencing.html'">Geo-fences</span>{else}Geo-fences{/if}</li>
         <li><i class="i-features-keyloger"></i> <span onclick="window.location='http://{$domain}/keylogging-software.html'">Keylogger</span></li>
         {*<li class="hidden-mobile">&nbsp;</li>*}

@@ -23,7 +23,10 @@
 <meta property='og:image' content='{if isset($ogImg)}{$ogImg}{else}http://pumpic.com/images/socials/social-icon.jpg{/if}'>
 {/if}
 
+{if isset($customeStyle) && $customeStyle}<style type="text/css">{$customeStyle}</style>{/if}
+
 {include file='../main/header/wrap-title-footer.tpl'
     test = $_test
+    fbTrack = $fbTrack
 }
 

@@ -1522,3 +1522,13 @@ div.symbol {
 .button-more-detailes {
     margin-top: 36px;
 }
+
+.text-right-important {
+    text-align: right !important;
+}
+
+@media (max-width: 768px) { 
+    .text-right-important {
+        text-align: center !important;
+    }
+}

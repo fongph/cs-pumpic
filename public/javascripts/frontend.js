@@ -9982,12 +9982,13 @@ $('form[name="send_find_phone"] button.event-submit').click(function(){
 
     if($('.block-child-location-tracking .feature').length) {
         $(window).on("load resize orientationchange", function(a){
-            $('.block-child-location-tracking .feature').each(function(key, item) {
-                $(item).css({"display": "inline-block"});
-                $(item).css({"width": ($(item).width() + 80) + "px"});
-                $(item).css({"display": "block", 'margin': '0 auto'});
-            });
-            
+            if($(this).width() > 992) {
+                $('.block-child-location-tracking .feature').each(function(key, item) {
+                    $(item).css({"display": "inline-block", 'width': 'auto'});
+                    $(item).css({"width": ($(item).width() + 80) + "px"});
+                    $(item).css({"display": "block", 'margin': '0 auto'});
+                });
+            }
         });
     }
 

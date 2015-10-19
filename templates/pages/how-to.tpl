@@ -101,7 +101,7 @@
 							<a href="#">
 								<img src="images/video_thumb1.png" height="345" width="566" alt="">
 							</a>
-                                                        <a href="http://cp.pumpic.com/how-to-install/android-instructions.html"
+                                                        <a href="https://cp.pumpic.com/how-to-install/android-instructions.html"
                                                            class="text-center mt10" >Android Installation Guide »</a>
 						</li>
 						<li class="col-lg-6 col-md-6 col-sm-6  col-xs-12">
@@ -110,7 +110,7 @@
 							<a href="#">
 								<img src="images/video_thumb2.png" height="345" width="566" alt="">
 							</a>
-                                                        <a href="http://cp.pumpic.com/how-to-install/ios-instructions.html"
+                                                        <a href="https://cp.pumpic.com/how-to-install/ios-instructions.html"
                                                            class="text-center mt10" >iOS Installation Guide »</a>
 						</li>
 					</ul>

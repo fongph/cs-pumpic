@@ -22,7 +22,7 @@
                     {*if ''|hasUser} 
                         <div class='box-cp pull-right'>   
                             <a href="/logout.html" class="pull-right visible-lg cp-logout">Log Out</a>
-                            <a href="http://cp.{$domain}/" class="btn btn-sm btn-success visible-lg cp-login"><i class="icon-lock"></i>Control Panel</a>
+                            <a href="https://cp.{$domain}/" class="btn btn-sm btn-success visible-lg cp-login"><i class="icon-lock"></i>Control Panel</a>
                         </div>    
                     {else}
                         <a href="{if ''|detectedDev}/login.html{else}#{/if}" class="btn btn-sm btn-success pull-right visible-lg cp-login"><i class="icon-lock"></i> Log In</a>
@@ -67,7 +67,7 @@
                             
                             {* <li>
                                 {if ''|hasUser} 
-                                    <a href="http://cp.{$domain}/" class="btn btn-sm btn-success hidden-lg cp-login"><i class="icon-lock"></i> Control Panel</a>
+                                    <a href="https://cp.{$domain}/" class="btn btn-sm btn-success hidden-lg cp-login"><i class="icon-lock"></i> Control Panel</a>
                                 {else}
                                     <a href="{if ''|detectedDev}/login.html{else}#{/if}" class="btn btn-sm btn-success hidden-lg cp-login"><i class="icon-lock"></i> Log In</a>
                                 {/if}   
@@ -76,13 +76,21 @@
                             
                             <li>
                                 {if ''|hasUser} 
-                                    <a href="http://cp.{$domain}/">Control Panel</a>
+                                    <a href="https://cp.{$domain}/">Control Panel</a>
                                 {else}
                                     <a href="{if ''|detectedDev}/login.html{else}#{/if}">Sign in</a>
                                 {/if}   
 
                             </li>
 
+                            {nocache}
+                                {if ''|hasFreeTrialStick} 
+                            <li>
+                                <span class="mobile-free-trial"><a href="/free-trial.html">Free Trial</a></span>
+                            </li>
+                                {/if}    
+                            {/nocache}
+                            
                             <li>
                                 <a href="http://demo.{$domain}{if isset($demoHref)}{$demoHref}{else}/setDevice/125?redirect_url=cp/calls{/if}" 
                                    class="btn btn-sm btn-orange btn-success hidden-lg cp-login"> Demo</a>

@@ -7792,15 +7792,15 @@ $data_hash = [];
 
 var _htmlPopUp = {
     'boxStatusAuth': '<div id="box-status-auth" class="popUp"><div><label class="title gold">Hello!<i class="close small"></i></label></div>'
-        +'<p class="info">You have just logged into Pumpic.com, enjoy your time with us or go straight to your <a class="a-default" href="http://cp.pumpic.com">account</a>.</p>'
+        +'<p class="info">You have just logged into Pumpic.com, enjoy your time with us or go straight to your <a class="a-default" href="https://cp.pumpic.com">account</a>.</p>'
         +'</div>',
     'boxStatusRegistration': '<div id="box-status-registration" class="popUp">'
         +'<div><label class="title gold">Hello!<i class="close small"></i></label></div>'
-        +'<p class="info">You have just registered in Pumpic.com, enjoy your time with us or go straight to your <a class="a-default" href="http://cp.pumpic.com">account</a>.</p>'
+        +'<p class="info">You have just registered in Pumpic.com, enjoy your time with us or go straight to your <a class="a-default" href="https://cp.pumpic.com">account</a>.</p>'
         +'</div>',
     'boxStatusFreeTrialRegistration' : '<div id="box-status-free-trial-registration" class="popUp">'
         +'<div><label class="title gold">Thank you for signing up!<i class="close small"></i></label></div>'
-        +'<p class="info">The email with registration details was sent to '+UserLogin+'.<br /> You can go straight to your <a class="a-default" href="http://cp.pumpic.com">Personal Account</a> now.</p>'
+        +'<p class="info">The email with registration details was sent to '+UserLogin+'.<br /> You can go straight to your <a class="a-default" href="https://cp.pumpic.com">Personal Account</a> now.</p>'
         +'</div>',
     'email_success' : '<div id="box-email-success" class="popUp">'
         +'<div><label class="title gold"> Thank you! <i class="close small"></i></label></div>'

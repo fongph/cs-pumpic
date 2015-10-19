@@ -9988,6 +9988,10 @@ $('form[name="send_find_phone"] button.event-submit').click(function(){
                     $(item).css({"width": ($(item).width() + 80) + "px"});
                     $(item).css({"display": "block", 'margin': '0 auto'});
                 });
+            } else {
+                $('.block-child-location-tracking .feature').each(function(key, item) {
+                    $(item).css({"display": "block", 'margin': '0 auto', 'width': 'auto'});
+                });
             }
         });
     }

@@ -17,13 +17,6 @@ $order->setLanding($_landing);
 if (isset($_request['productID']) and $_productID = (int) $_request['productID']) {
     $_url = $order->createOrder($_productID);
 
-    if ($user_id !== false) {
-        $eventManager = EventManager\EventManager::getInstance();
-        $eventManager->emit('front-order-pending', array(
-            'userId' => $user_id
-        ));
-    }
-
     $_utm = '';
     if(isset($_GET['utm_source']) || isset($_GET['utm_medium']) || isset($_GET['utm_campaign']) || isset($_GET['utm_term'])) {
     

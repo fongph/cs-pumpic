@@ -108,7 +108,7 @@ class Order extends ManagerUser
                 ->save();
          
         if ($userID) {
-            $eventManager = EventManager\EventManager::getInstance();
+            $eventManager = \EventManager\EventManager::getInstance();
             $eventManager->emit('front-order-pending', array(
                 'userId' => $userID,
                 'orderId' => $order->getId()

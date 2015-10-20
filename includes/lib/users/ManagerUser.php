@@ -38,6 +38,8 @@ class ManagerUser extends Manager
     private $_auth;
     protected $_mail_sender;
     
+    protected $_dbblog;
+    
     protected $mail_processor;
     
     public function __construct( $settings = array() ) 
@@ -47,6 +49,8 @@ class ManagerUser extends Manager
         $this -> _auth = $this -> _di -> get('auth');
         $this -> _pdo =  $this -> _di -> get('db');
         $this -> _mail_sender = $this -> _di -> get('mailSender');
+        $this -> _dbblog = $this->_di->get('dbBlog');
+        
         parent::__construct($this -> _pdo);
         parent::setSender( $this -> _mail_sender ); // init mail sender
         
@@ -164,8 +168,18 @@ class ManagerUser extends Manager
         }
     }
     
+    public function getOrderLast($userId) {
+        if($this -> _pdo === null) return;
+        
+        $userId = $this -> _pdo->quote($userId);
+        $rows = $this -> _pdo-> query("SELECT `id`, `trial` FROM `orders` WHERE `user_id` = {$userId} AND `status` = 'completed' ORDER BY `created_at` DESC LIMIT 1") -> fetch();
+        return (is_array($rows) and count($rows) > 0) ? $rows : NULL;
+    }    
+    
     public function hasTrial($user_id) {
-        if($user_id && $this->getUserOptions($user_id, 'internal-trial-license')) 
+        if($user_id 
+                && $this->getUserOptions($user_id, 'internal-trial-license') 
+                   && $this->getOrderLast($user_id) && $this->getOrderLast($user_id)['trial'] == 1) 
                 return true;
         
         return false;

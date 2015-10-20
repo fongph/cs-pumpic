@@ -105,8 +105,8 @@
                                                                 <div class="wr_price_big">
                                                                     <span></span>
                                                                     <div class="box-currence">
-                                                                        <div class="symbol" attr-iso="usd">$</div>
-                                                                        <div class="curr" id="premium-price-per-month">6.99</div>
+                                                                        <div class="symbol" attr-iso="eur">€</div>
+                                                                        <div class="curr" id="premium-price-per-month">{if isset($getDefaultPremiumMoth)}{$getDefaultPremiumMoth}{else}6.99{/if}</div>
                                                                     </div><span> / monat</span>
                                                                 </div>
                                                             </div>
@@ -138,8 +138,8 @@
                                                                     {foreach from=$getProducts.premium key=key item=_item}
                                                                     <li class="">
                                                                         <label class="label_radio hover_label_radio r_off">
-                                                                            <input class="data-price" data-target="#premium-price-per-month" data-cur="usd" 
-                                                                                   data-price-usd="{$_item.price}" data-period="{$_item.period}" name="optionsRadios" id="optionsRadios{$_item.id}1" 
+                                                                            <input class="data-price" data-target="#premium-price-per-month" data-cur="eur" 
+                                                                                   data-price-eur="{$_item.price}" data-period="{$_item.period}" name="optionsRadios" id="optionsRadios{$_item.id}1" 
                                                                                    value="{$_item.id}" type="radio"  
                                                                                    {if $_item.period == '12'} checked="checked" {/if} />
                                                                             <span class="sp">
@@ -154,7 +154,7 @@
                                                                                 
                                                                             <span class="sp_price">
                                                                                 <strong>
-                                                                                    <div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr">{$_item.price}</div></div>
+                                                                                    <div class="box-currence"><div class="symbol" attr-iso="eur">€</div><div class="curr">{$_item.price}</div></div>
                                                                                 </strong>
                                                                             </span>     
                                                                         </label>
@@ -300,8 +300,8 @@
                                                                 <div class="wr_price_big">
                                                                     <span></span>
                                                                     <div class="box-currence">
-                                                                        <div class="symbol" attr-iso="usd">$</div>
-                                                                        <div class="curr" id="premium-price-per-month">6.99</div>
+                                                                        <div class="symbol" attr-iso="eur">€</div>
+                                                                        <div class="curr" id="premium-price-per-month">{if isset($getDefaultPremiumMoth)}{$getDefaultPremiumMoth}{else}6.99{/if}</div>
                                                                     </div><span> / monat</span>
                                                                 </div>
                                                             </div>
@@ -333,8 +333,8 @@
                                                                     {foreach from=$getProducts.premium key=key item=_item}
                                                                     <li class="">
                                                                         <label class="label_radio hover_label_radio r_off">
-                                                                            <input class="data-price" data-target="#premium-price-per-month" data-cur="usd" 
-                                                                                   data-price-usd="{$_item.price}" data-period="{$_item.period}" name="optionsRadios" id="optionsRadios{$_item.id}1" 
+                                                                            <input class="data-price" data-target="#premium-price-per-month" data-cur="eur" 
+                                                                                   data-price-eur="{$_item.price}" data-period="{$_item.period}" name="optionsRadios" id="optionsRadios{$_item.id}1" 
                                                                                    value="{$_item.id}" type="radio"  
                                                                                    {if $_item.period == '12'} checked="checked" {/if} />
                                                                             <span class="sp">
@@ -349,7 +349,7 @@
                                                                                 
                                                                             <span class="sp_price">
                                                                                 <strong>
-                                                                                    <div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr">{$_item.price}</div></div>
+                                                                                    <div class="box-currence"><div class="symbol" attr-iso="eur">€</div><div class="curr">{$_item.price}</div></div>
                                                                                 </strong>
                                                                             </span>     
                                                                         </label>

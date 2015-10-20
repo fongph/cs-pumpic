@@ -1,12 +1,12 @@
 <div class="{if isset($blockBg)}{$blockBg}{else}dark{/if} howtouse-pumpic how-it-works">
     <div class="container">
-        <h2 class="text-center">{if isset($title)}{$title}{else}How It Works{*How to Get Pumpic*}{/if}</h2>
+        <h2 class="text-center">{if isset($title) && !empty($title)}{$title}{else}How It Works{*How to Get Pumpic*}{/if}</h2>
 
         <div class="row">
             <ul class="thumbs">
                 <div class="col-sm-12 col-md-4 clearfix">
                     <div class="thumbnail">
-                        <span class="img_thumb"><img src="images/thumb_1.png" height="216" width="360" alt=""></span>
+                        <span class="img_thumb"><img src="images/thumb_1.png" height="184{*216*}" width="308{*360*}" alt="{if isset($imgAlt)}{$imgAlt}{/if}"></span>
                         <div class="caption how-to-step">
                             <h3>Pick a subscription plan</h3>
                             <p>Visit our <a class="text-green a-default" href="/store.html">Store</a>, check out available <b>subscription plans</b> and choose the one that meets your expectations and <b>monitoring preferences</b>. 
@@ -16,7 +16,7 @@
                 </div>
                 <div class="col-sm-12 col-md-4 clearfix">
                     <div class="thumbnail">
-                        <span class="img_thumb"><img src="images/thumb_2_new.png" height="206" width="172" alt=""></span>
+                        <span class="img_thumb"><img src="images/thumb_2_new.png" height="175{*206*}" width="147{*172*}" alt="{if isset($imgAlt)}{$imgAlt}{/if}"></span>
                         <div class="caption how-to-step">
                             <h3>Set up</h3>
                             <p>Pumpic app installation process will take you no longer than <b>5 minutes</b>. Follow the guidelines in the subscription email to complete the setup.  
@@ -27,7 +27,7 @@
                 </div>
                 <div class="col-sm-12 col-md-4 clearfix">
                     <div class="thumbnail">
-                        <span class="img_thumb"><img src="images/thumb_3_new.png" height="216" width="360" alt=""></span>
+                        <span class="img_thumb"><img src="images/thumb_3_new.png" height="184{*216*}" width="308{*360*}" alt="{if isset($imgAlt)}{$imgAlt}{/if}"></span>
                         <div class="caption how-to-step">
                             <h3>Track remotely</h3>
                             <p>Enter your <b>Control Panel</b> to view the data from the target device. Here you can also use the entire variety of monitoring functions like blocking and setting limits etc.

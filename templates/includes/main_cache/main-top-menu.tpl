@@ -17,7 +17,7 @@
                     {if ''|hasUser} 
                         <div class='box-cp pull-right'>   
                             <a href="/logout.html" class="pull-right visible-lg cp-logout">Log Out</a>
-                            <a href="http://cp.{$domain}/" class="btn btn-sm btn-success visible-lg cp-login"><i class="icon-lock"></i>Control Panel</a>
+                            <a href="https://cp.{$domain}/" class="btn btn-sm btn-success visible-lg cp-login"><i class="icon-lock"></i>Control Panel</a>
                         </div>    
                     {else}
                         <a href="{if ''|detectedDev}/login.html{else}#{/if}" class="btn btn-sm btn-success pull-right visible-lg cp-login"><i class="icon-lock"></i> Log In</a>
@@ -54,7 +54,7 @@
                             </li-->
                             <li>
                                 {if ''|hasUser} 
-                                    <a href="http://cp.{$domain}/" class="btn btn-sm btn-success hidden-lg cp-login"><i class="icon-lock"></i> Control Panel</a>
+                                    <a href="https://cp.{$domain}/" class="btn btn-sm btn-success hidden-lg cp-login"><i class="icon-lock"></i> Control Panel</a>
                                 {else}
                                     <a href="{if ''|detectedDev}/login.html{else}#{/if}" class="btn btn-sm btn-success hidden-lg cp-login"><i class="icon-lock"></i> Log In</a>
                                 {/if}   

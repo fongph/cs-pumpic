@@ -12,8 +12,8 @@ function dispatch($urlParams, $config){
     
     if (!empty($_SERVER["HTTP_REFERER"]) ) {
         $_url = parse_url($_SERVER['HTTP_REFERER']);  
-        if(!isset($_COOKIE['orders_referer']) and isset($_url['host']) and !preg_match('/((.*)\.|^)pumpic\.com/i', trim($_url['host'])) ) {
-            setcookie("orders_referer", $_SERVER['HTTP_REFERER'], time() + 3600 * 24, '/', '.pumpic.com' );
+        if(!isset($_COOKIE['orders_referer']) and isset($_url['host']) and !preg_match('/((.*)\.|^)'. str_replace('.', '\.', $config['domain']) .'/i', trim($_url['host'])) ) {
+            setcookie("orders_referer", $_SERVER['HTTP_REFERER'], time() + 3600 * 24, '/', '.' . $config['domain'] );
         } 
 
     }    
@@ -21,7 +21,7 @@ function dispatch($urlParams, $config){
     // landing
     if (!isset($_COOKIE['landing']) && isset($_SERVER['HTTP_HOST'], $_SERVER['REQUEST_URI'])) {
         $url = 'http' . (isset($_SERVER['HTTPS']) ? 's' : '') . '://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
-        setcookie("landing", $url, time() + 3600 * 24, '/', '.pumpic.com');
+        setcookie("landing", $url, time() + 3600 * 24, '/', '.' . $config['domain']);
     }
 
 
@@ -854,6 +854,53 @@ function smarty_function_features_plans( $_plans = array() ) {
     echo $_html;
 }
 
+function smarty_function_getUserID() {
+    require_once 'lib/users/ManagerUser.php';
+    $obj = new includes\lib\users\ManagerUser( array() );
+    return ($obj->getUserIdByAuth()) ? $obj->getUserIdByAuth() : '';
+}
+
+function smarty_function_getUserInfo($params, $template) {
+    require_once 'lib/users/ManagerUser.php';
+    $obj = new includes\lib\users\ManagerUser( array() );
+    $user = array();
+    
+    if($obj->getUserIdByAuth()) {
+        $_user = $obj->getUser( $obj->getUserIdByAuth() );
+        $user['name'] = ($_user->getName()) ? $_user->getName() : false;
+        $user['login'] = ($_user->getLogin()) ? $_user->getLogin() : false;
+    } 
+    
+    $template->assign('getUserInfo', (count($user) > 0) ?  $user: false);   
+}
+
+// has free trial stick
+function smarty_modifier_hasFreeTrialStick() { 
+    
+    require_once 'lib/users/ManagerUser.php';
+    $obj = new includes\lib\users\ManagerUser( array() );
+    $_result = false;
+    if($obj->hasTrial( $obj->getUserIdByAuth() )) $_result = true;
+    
+    
+//    $_result = false;
+//    if(isset($_COOKIE['free_trial_stick']) && (int)$_COOKIE['free_trial_stick'] == 1) {
+//        $_result = true;
+//    }
+    
+    return $_result;
+}
+
+function smarty_modifier_hasFbPixel() { 
+    $_result = false;
+    if(isset($_COOKIE['fb_pixel']) && (int)$_COOKIE['fb_pixel'] == 1) {
+        $_result = true;
+        setcookie("fb_pixel", '0', 0, '/');
+        unset ($_COOKIE['fb_pixel']);
+    }
+    
+    return $_result;
+}
 
 // has user
 function smarty_modifier_hasUser() { // $params, $template
@@ -913,7 +960,7 @@ function smarty_function_closeAccess($params, $template) {
 }
 
 function dieAccess() {
-    if(in_array(@$_SERVER['REMOTE_ADDR'], ['176.38.120.13', '212.90.60.74', '192.168.40.22', '162.243.217.155', '127.0.0.1', '::1'])) {
+    if(in_array(@$_SERVER['REMOTE_ADDR'], ['93.79.221.182', '213.160.158.7', '176.38.120.13', '212.90.60.74', '192.168.40.22', '162.243.217.155', '127.0.0.1', '::1'])) {
         $_result = true;
     } else
         $_result = false;
@@ -955,11 +1002,15 @@ function smarty_function_Content($params, $template) {
     $_title = (isset($params['title'])) ? $params['title'] : '';
     $_styleTitle = (isset($params['styleTitle'])) ? $params['styleTitle'] : 'h1';
     
-    echo '<div id="block-content" class="'.$_style.'">
-                    <div class="container">
-                        <'.$_styleTitle.' class="h2 text-center">'.$_title.'</'.$_styleTitle.'>
-                        <div class="row">
+    $html = '<div id="block-content" class="'.$_style.'">
+                    <div class="container">';
+                    if(!empty($_title))
+                        $html .= '<'.$_styleTitle.' class="h2 text-center">'.$_title.'</'.$_styleTitle.'>';
+                    
+    $html .=            '<div class="row">
                             <div class="col-sm-12 col-md-12 col-lg-12">';
+    
+    echo $html; 
 }
 
 function smarty_function_EndContent() {

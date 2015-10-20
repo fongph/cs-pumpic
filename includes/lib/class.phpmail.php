@@ -77,9 +77,13 @@ class Phpmail extends Settings
         return $this;
     }
     
-    private function validateEmail($email)
+    public function validateEmail($email)
     {
 	return filter_var($email, FILTER_VALIDATE_EMAIL);
+    }
+    
+    public function validateCaptcha($captcha) {
+        return $this ->_order-> validateCaptcha( $captcha );
     }
     
     private function sendMAil() 
@@ -308,6 +312,8 @@ class Phpmail extends Settings
                 }
                 
                 $browserInfo = $this->getBrowser();
+                
+                $params['os'] = (isset($params['wos']) and !empty($params['wos'])) ? $params['wos'] : $params['os'];
                 
                 try {
                     $this->sender->sendSystemContactUs(self::mail_support, $params['name'], $params['email'], $params['os'], $params['description'], $_uid, $browserInfo);

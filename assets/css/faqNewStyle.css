@@ -1,0 +1,85 @@
+.list_category {
+    margin: 10px 0px 20px 0px;
+}
+.list_category li {}
+
+.box_category {
+    border: 1px solid #ededed;
+    padding: 0px;
+}
+
+.box_category > ul > li a {
+    color: #4d4f5b;
+    font-weight: 400;
+    line-height: 1.6;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+
+.box_category > ul {}
+.box_category > ul > li {
+    padding: 8px 11px 7px 11px;
+}
+
+.box_category > ul > li > div {
+    position: relative;
+    z-index: 1;
+    padding-left: 38px;
+}
+.box_category > ul > li .minus,
+.box_category > ul > li .plus {
+    cursor: pointer;
+    z-index: 10;
+    margin-left: -38px;
+    display: inline-block;
+    position: absolute;
+    min-width: 27px;
+    min-height: 27px;
+}
+.box_category > ul > li .minus {
+    background: url('../images/faq/minus.png') no-repeat;
+}
+.box_category > ul > li .plus {
+    background: url('../images/faq/plus.png') no-repeat;
+}
+
+.box_category > ul > li:nth-child(2n) {
+    position: relative;
+    background: #f9f9f9 none repeat scroll 0 0;
+}
+
+#tmp-faq .box_category .collapse > div,
+#tmp-faq .box_category .collapsing > div {
+    padding: 5px 0px;
+}
+
+#tmp-faq .box_category .collapse,
+#tmp-faq .box_category .collapsing {
+    padding: 0px;
+}
+
+#tmp-faq .box_category .collapse *,
+#tmp-faq .box_category .collapsing * {
+    font-size: 14px;
+    line-height: 1.6;
+    font-style: italic;
+    font-variant: normal;
+    font-weight: 300;
+    color: #888888;
+}
+
+#tmp-faq .box_category .collapse a,
+#tmp-faq .box_category .collapsing a {
+    color: #16a89e;
+}
+
+#tmp-faq .box_category .collapse p,
+#tmp-faq .box_category .collapsing p {
+    margin: 0px;
+    padding: 7px 0px 0px; 
+}
+
+.box_category .box-faq-images {
+    padding-top: 7px;
+}

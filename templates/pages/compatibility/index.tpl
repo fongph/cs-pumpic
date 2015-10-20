@@ -7,6 +7,10 @@
         
 {include file='../../includes/main/header/wrap-title-footer.tpl'}
 <body>
+    <!-- BLOCK GTM -->
+    {include file='../../includes/main/main-after-body.tpl'}
+    <!-- END BLOCK GTM -->
+    
         <!-- FLY BLOCKS -->
     {include file='../../includes/content/fly/fly_blocks.tpl'}
     <!-- END FLY BLOCKS-->
@@ -17,6 +21,15 @@
                 cache_id = "includes_main_main-top-menu"
                 nocache
         }	
+        
+        <!-- FLY BLOCKS -->
+        {nocache}
+        {if ''|hasFreeTrialStick}    
+            {include file='../../includes/content/fly/fly-free-trial.tpl'}
+        {/if}    
+        {/nocache}
+        <!-- END FLY -->
+        
 <div class="very_easy">
                 <div class="container">
                         <div class="row">
@@ -41,7 +54,7 @@
                                                         <div class="thumb">
                                                                 <span class="ico-left"><i class="icon-apple"></i></span>
                                                                 <span>OS:<strong> iOS</strong></span>
-                                                                <span>Versions:<strong> 6.0 or later {*(jailbreak required)*}</strong></span>
+                                                                <span>Versions:<strong> {$ver_ios_bot} - {$ver_ios_up} {*(jailbreak required)*}</strong></span>
                                                                 <a href="#" class="text-succes search-category a-default" data-os="iOS">View all supported iOS devices</a>
                                                         </div>
                                                 </div>
@@ -49,7 +62,7 @@
                                                         <div class="thumb">
                                                                 <span class="ico-left"><i class="icon-android"></i></span>
                                                                 <span>OS:<strong> Android</strong></span>
-                                                                <span>Versions:<strong> 2.2 or later</strong></span>
+                                                                <span>Versions:<strong> {$ver_android_bot} - {$ver_android_up}</strong></span>
                                                                 <a href="#" class="text-succes search-category a-default" data-os="Android">View all supported Android devices</a>
                                                         </div>
                                                 </div>

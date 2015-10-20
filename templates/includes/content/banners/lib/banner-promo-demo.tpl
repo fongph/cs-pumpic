@@ -3,8 +3,8 @@
     <div class="banner-text">
         <span>Smartphone Monitoring App</span>
         <ul>
-            <li><i class="fa fa-android"></i> (2.2 - 5.1)</li>
-            <li><i class="fa fa-apple"></i> (6.0 - 8.4)</li>
+            <li><i class="fa fa-android"></i> ({$ver_android_bot} - {$ver_android_up})</li>
+            <li><i class="fa fa-apple"></i> ({$ver_ios_bot} - {$ver_ios_up})</li>
         </ul>
     </div>
     <div class="banner-arrow"></div>

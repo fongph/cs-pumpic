@@ -1,5 +1,18 @@
-<form action="/contact_us_send.html" class="form-contact-us" name="send-mail-contact-us" method="POST">
+<form action="/faq.html" class="form-faq" name="send-mail-contact-us" method="POST">
         <fieldset>
+            <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3">
+                {if isset($getOut) && $getOut.success}
+                    <div class="box-success text-center"> 
+                        <p class="bg-ok">{$getOut.success}</p>
+                    </div>
+                {/if}
+                {if isset($getOut) && is_string($getOut.error)}
+                   <div class="box-error text-center">
+                        <p class="bg-danger">{$getOut.error}</p>
+                   </div>
+                {/if}
+            </div>
+            
                 <legend class="uppercase">Send Your Questions to Us</legend>
                 <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3">
                         <span class="info"></span>
@@ -9,7 +22,8 @@
                                        type="text" 
                                        class="form-control text required" 
                                        placeholder="Name*" 
-                                       value="" />
+                                       value="{if isset($smarty.post.name)}{$smarty.post.name}{/if}" />
+                                {if is_array($getOut.error) && $getOut.error.name}<label class="error show">{$getOut.error.name|escape}</label>{/if}
                         </div>
 
                         <div class="form-group">
@@ -18,7 +32,8 @@
                                        type="email" 
                                        class="form-control text required" 
                                        placeholder="Email*" 
-                                       value="" />
+                                       value="{if isset($smarty.post.email)}{$smarty.post.email}{/if}" />
+                                {if is_array($getOut.error) && $getOut.error.email}<label class="error show">{$getOut.error.email|escape}</label>{/if}
                         </div>
 
 
@@ -27,13 +42,13 @@
                                         class="select"
                                         title='Question type*'
                                         name="os">
-                                        <option data-hidden="true" value="0" selected>Question type*</option>
-                                        <option value="General question">General question</option>
-                                        <option value="Technical">Technical question</option>
-                                        <option value="General">Billing question</option>
-                                        <option value="Website">Website feedback</option>
+                                        <option {if !isset($smarty.post.os) || (isset($smarty.post.os) && $smarty.post.os == "0") }selected{/if} data-hidden="true" value="0">Question type*</option>
+                                        <option {if isset($smarty.post.os) && $smarty.post.os == "General"}selected{/if} value="General">General question</option>
+                                        <option {if isset($smarty.post.os) && $smarty.post.os == "Technical"}selected{/if} value="Technical">Technical question</option>
+                                        <option {if isset($smarty.post.os) && $smarty.post.os == "Billing"}selected{/if} value="Billing">Billing question</option>
+                                        <option {if isset($smarty.post.os) && $smarty.post.os == "Website"}selected{/if} value="Website">Website feedback</option>
                                 </select>
-                                
+                                {if is_array($getOut.error) && $getOut.error.os}<label class="error show">{$getOut.error.os|escape}</label>{/if}
                                 {* v1 <select id="os" 
                                         class="select selectpicker" 
                                         title='Question type*'
@@ -77,13 +92,14 @@
 
                         <div class="form-group form-box-captcha">
                             <div class="box-captcha">
-                                <img src="/captcha.html?width=443&height=44" id="img-captcha">
-                                <span class="update-captcha" attr-width="443" attr-height="44"></span>
+                                <img src="/captcha.html?width=420&height=44" id="img-captcha">
+                                <span class="update-captcha" attr-width="420" attr-height="44"></span>
                             </div>
                             
                         </div>
                         <div class="form-group">
-                            <input id="captcha" type="text" name="captcha" autocomplete="off" class="form-control text required captcha" />
+                            <input id="captcha" type="text" name="captcha" autocomplete="off" class="form-control text required captcha" value='' />
+                            {if is_array($getOut.error) && $getOut.error.captcha}<label class="error show">{$getOut.error.captcha|escape}</label>{/if}
                         </div>       
                                 
                         <div class="form-group">
@@ -91,7 +107,8 @@
                                           rows="10" 
                                           name="description" 
                                           class="required" 
-                                          placeholder="Question*"></textarea>
+                                          placeholder="Question*">{if isset($smarty.post.description)}{$smarty.post.description}{/if}</textarea>
+                                {if is_array($getOut.error) && $getOut.error.description}<label class="error show">{$getOut.error.description|escape}</label>{/if}          
                         </div>
 
                         <div class="fatal-error"></div>

@@ -22,7 +22,7 @@
                                                         <?php /* if (hasUser()) : ?>
                                                             <div class='box-cp pull-right'>   
                                                                 <a href="<?php echo getStaticUrl();?>/logout.html" class="pull-right visible-lg cp-logout">Log Out</a>
-                                                                <a href="http://cp.pumpic.com/" class="btn btn-sm btn-success visible-lg cp-login"><i class="icon-lock"></i>Control Panel</a>
+                                                                <a href="https://cp.pumpic.com/" class="btn btn-sm btn-success visible-lg cp-login"><i class="icon-lock"></i>Control Panel</a>
                                                             </div>    
                                                         <?php else: ?>
                                                             <a href="<?php echo getStaticUrl();?>/login.html" class="btn btn-sm btn-success pull-right visible-lg cp-login"><i class="icon-lock"></i> Log In</a>
@@ -65,7 +65,7 @@
                                                                         <?php /*
                                                                         <li>
                                                                             <?php if (hasUser()) : ?> 
-                                                                                <a href="http://cp.pumpic.com/" class="btn btn-sm btn-success hidden-lg cp-login"><i class="icon-lock"></i> Control Panel</a>
+                                                                                <a href="https://cp.pumpic.com/" class="btn btn-sm btn-success hidden-lg cp-login"><i class="icon-lock"></i> Control Panel</a>
                                                                             <?php else: ?>
                                                                                 <a href="<?php echo getStaticUrl();?>/login.html" class="btn btn-sm btn-success hidden-lg cp-login"><i class="icon-lock"></i> Log In</a>
                                                                             <?php endif; ?>   
@@ -75,17 +75,25 @@
                                                                         
                                                                         <li>
                                                                             <?php if (hasUser()) : ?>
-                                                                                <a href="http://cp.pumpic.com/">Control Panel</a>
+                                                                                <a href="https://cp.pumpic.com/">Control Panel</a>
                                                                             <?php else: ?>
                                                                                 <a href="<?php echo getStaticUrl();?>/login.html">Sign in</a>
                                                                             <?php endif; ?>   
 
                                                                         </li>
+                                                                        
+                                                                        <?php if(hasFreeTrialStick()): ?>
+                                                                        <li class="mobile-free-trial">
+                                                                            <a href="/free-trial.html">Free Trial</a>
+                                                                        </li>
+                                                                        <?php endif; ?>
 
                                                                         <li>
-                                                                            <a href="http://demo.pumpic.com/setDevice/125?redirect_url=cp/calls" class="btn btn-sm btn-orange btn-success hidden-lg cp-login"> Demo</a>
+                                                                            <a href="http://demo.pumpic.com/setDevice/125?redirect_url=cp/calls" class="btn btn-sm btn-orange btn-success hidden-lg cp-login{*btn btn-sm btn-orange btn-success hidden-lg cp-login*}"> Demo</a>
                                                                         </li>
 
+                                                                        
+                                                                        
                                                                         <?php /* if (hasUser()) : ?>
                                                                             <li>
                                                                                 <a href="<?php echo getStaticUrl();?>/logout.html" class="hidden-lg cp-logout">Log Out</a>

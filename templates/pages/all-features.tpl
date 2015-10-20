@@ -5,6 +5,10 @@
 }    
     
 <body>
+    <!-- BLOCK GTM -->
+    {include file='../includes/main/main-after-body.tpl'}
+    <!-- END BLOCK GTM -->
+    
     <!-- FLY BLOCKS -->
     {include file='../includes/content/fly/fly_blocks.tpl'}
     <!-- END FLY BLOCKS-->
@@ -17,6 +21,14 @@
             cache_id = "includes_main_main-top-menu"
             nocache
         }
+        
+        <!-- FLY BLOCKS -->
+        {nocache}
+        {if ''|hasFreeTrialStick}    
+            {include file='../includes/content/fly/fly-free-trial.tpl'}
+        {/if}    
+        {/nocache}
+        <!-- END FLY -->
         
         <!-- BLOCK HEADER -->
         <div class="bg_white">
@@ -34,7 +46,6 @@
                 <div id="block-technological-header"> 
                     <div class="box-hedaer-title">
                         <h1 class="h2 text-center">Cell Phone Monitoring Features</h1>
-                        {*<span>Enjoy more than <strong>20 features</strong> of <strong>remote mobile tracking</strong> with Pumpic.</span>*}
                     </div>
                     
                     <div class="box-hedaer-body">
@@ -83,7 +94,7 @@
                                                 <a class="underline go_block_scroll" href="#social">Online Chats</a>
                                                 <div class="bth-info">
                                                     <ul>
-                                                        <li>Facebook Messenger</li>
+                                                        <li>Facebook Messenger, Snapchat</li>
                                                         <li>WhatsApp, Viber, Skype, Kik</li>
                                                     </ul>
                                                 </div>
@@ -162,7 +173,7 @@
                                                 <div class="bth-info">
                                                     <ul>
                                                         <li>camera shots, downloaded files</li>
-                                                        <li>follow Instagram and Snapchat</li>
+                                                        <li>follow Instagram</li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -317,7 +328,7 @@
                                                     </div>
                                                     <div class="bth-info">
                                                         <ul>
-                                                            <li>Facebook Messenger</li>
+                                                            <li>Facebook Messenger, Snapchat</li>
                                                             <li>WhatsApp, Viber, Skype, Kik</li>
                                                         </ul>
                                                     </div>        
@@ -414,7 +425,7 @@
                                                     <div class="bth-info">
                                                         <ul>
                                                             <li>camera shots, downloaded files</li>
-                                                            <li>follow Instagram and Snapchat</li>
+                                                            <li>follow Instagram</li>
                                                         </ul>
                                                     </div>        
                                                 </div>
@@ -1341,7 +1352,7 @@
                         <!-- \\ #14 iCloud monitoring: (even) -->
                         <div id="icloud" class="div-table-row even">
                             <div class="item-feature-list div-table-column col-sm-12 col-md-4 col-lg-4 text-right">
-                                <img style='max-width: 398px' class="image-features model-mobile-center" src='../images/technological/image-icloud.png' />
+                                <img style='max-width: 284{*398*}px' class="image-features model-mobile-center" src='../images/technological/image-icloud_v2.png' />
                             </div>
                             <div class="item-feature-list div-table-column col-sm-12 col-md-1 col-lg-1 text-center">
                                 <div class='box-line-solid only-pc'>
@@ -1352,10 +1363,21 @@
                             <div class="item-feature-list div-table-column col-sm-12 col-md-4 col-lg-4 text-left">
                                 <div class='feature-item-info'>
                                     <ul>
-                                        <li><i class='i-list-features-icloud'></i><strong>iCloud monitoring <span class='text-normal'>(jailbreak-free)</span></strong></li>
+                                        <li>
+                                            <i class='i-list-features-icloud'></i>
+                                            <strong>
+                                                {*iCloud*}
+                                                iCloud monitoring <span class='text-normal'>(jailbreak-free up to iOS {$ver_ios_up})</span>
+                                            </strong>
+                                        </li>
                                     </ul>
                                     
                                     <div class='block-info'>
+                                        {*<ul>
+                                            <li>Track every single email your kid sends or receives.</li> 
+                                            <li>Check email correspondence history and prevent you children</li> 
+                                            <li>from ambiguous communications and online predators.</li>
+                                        </ul>*}
                                         <p>Enjoy Pumpic application on iPhones, iPads and iPods Touch with no need to jailbreak the target device. 
                                             Supported features:</p>
                                         <ul>

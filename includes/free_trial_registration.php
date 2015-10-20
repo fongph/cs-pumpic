@@ -41,6 +41,13 @@ $_result = array(
     '_success' => false,
 );
     
+
+$_referer = (isset($_COOKIE['orders_referer']) and ! empty($_COOKIE['orders_referer'])) ? $_COOKIE['orders_referer'] : "--"; // $_SERVER['HTTP_REFERER']
+$_landing = (isset($_COOKIE['landing']) and ! empty($_COOKIE['landing'])) ? $_COOKIE['landing'] : "--";
+
+$obj->setReferer($_referer);
+$obj->setLanding($_landing);
+
 // if($obj -> getLoginUser()) $obj -> _redirect('/');
 
 // $_session_order = $obj -> getSession('pumpic_order');
@@ -70,6 +77,12 @@ if(isset($_POST['email']) and !$obj -> validateEmail($_POST['email'])) {
     if(isset($_result['user_id'])) {
         $_result['_success'] = 'Successful registration.';
         
+//        // fly free trial stick 
+//        // landing
+//        if (!isset($_COOKIE['free_trial_stick']) || !(int)$_COOKIE['free_trial_stick']) {
+//            setcookie("free_trial_stick", '1', time() + 3600 * 24 * 90, '/', '.' . $config['domain']);
+//        }
+        
         $eventManager = EventManager\EventManager::getInstance();
         $eventManager->emit('front-registration-trial-completed', array(
             'userId' => $_result['user_id'],
@@ -79,17 +92,15 @@ if(isset($_POST['email']) and !$obj -> validateEmail($_POST['email'])) {
 }
 
 if(isset($_result['user_id'])) {
+    
+    if(!isset($_COOKIE['fb_pixel']) || isset($_COOKIE['fb_pixel']) && !(int)$_COOKIE['fb_pixel'])
+        setcookie("fb_pixel", '1', 0, '/');
+    
     if($_productID) {
-        if(isset($_COOKIE['orders_referer']))
-            $obj->setReferer($_COOKIE['orders_referer']);
-        if(isset($_COOKIE['landing']))
-            $obj->setLanding($_COOKIE['landing']);
-        
       if($obj -> createOrderByFreeTrial( $_result['user_id'], (int)$_productID, $_phone, $_name ))  
-        $obj -> _redirect('/#popUp=free-trial-registration');
+        $obj -> _redirect('/?fb=1#popUp=free-trial-registration'); // /#popUp=free-trial-registration
     } else
-        $obj -> _redirect('/#popUp=free-trial-registration'); 
-
+        $obj -> _redirect('/?fb=1#popUp=free-trial-registration'); // /#popUp=free-trial-registration
 }
     
 // init output params!

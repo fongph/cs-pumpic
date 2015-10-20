@@ -10,6 +10,10 @@
 }
 
 <body>
+    <!-- BLOCK GTM -->
+    {include file='../includes/main/main-after-body.tpl'}
+    <!-- END BLOCK GTM -->
+    
     <!-- FLY BLOCKS -->
     {include file='../includes/main/main-button-help.tpl'}
     {include file='../includes/main/main-button-goup.tpl'}
@@ -126,7 +130,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="support_os"><div class="wr_support_os"><i class="icon-android d_green"></i> Android 2.2 - 5.1 <i class="icon-apple d_green"></i> iOS 6.0 - 8.4</div></div>
+                                        <div class="support_os"><div class="wr_support_os"><i class="icon-android d_green"></i> Android {$ver_android_bot} - {$ver_android_up} <i class="icon-apple d_green"></i> iOS {$ver_ios_bot} - {$ver_ios_up}</div></div>
                                         </caption>
                                         <thead>
                                             <tr>
@@ -462,7 +466,7 @@
                                 <div class="space_line">&nbsp;</div>
                                 <div class="link_circle_italic2">
                                     <div class="style-links2">
-                                        <span class="circle_ico2"></span>{*You need to have physical access to your kid’s device to install the application*}You need to have physical access to the target device or iCloud password to install the application.
+                                        <span class="circle_ico2"></span>You need to have physical access to the target device or iCloud password to install the application.
                                     </div>
                                 </div>
                             </div>

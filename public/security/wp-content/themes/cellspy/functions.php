@@ -3,6 +3,43 @@ if ( function_exists( 'session_cache_limiter' ) ) :
     session_cache_limiter('public');
 endif;
 
+function getUserID() {
+    require_once '../../includes/lib/users/ManagerUser.php';
+    $obj = new includes\lib\users\ManagerUser( array() );
+    return ($obj->getUserIdByAuth()) ? $obj->getUserIdByAuth() : '';
+}
+
+/* ---------------- // GA.js ----------- */
+function add_ga() {
+    $js = "<script type=\"text/javascript\">
+    // IMPORTANT: Remove this code snippet when upgrading to analytics.js
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-68480087-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>";
+    
+//    $js = "<script>
+//          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+//          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+//          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+//          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+//
+//          ga('create', 'UA-68480087-1', 'auto');
+//          ga('send', 'pageview');
+//
+//        </script>";
+    
+    echo $js;
+}
+
 function shailan_redirect_404( $_redirect ) {
     global $wp_query;
     if ( $_redirect ) {
@@ -204,6 +241,22 @@ function hasUser() {
     if($obj -> getLoginUser()) {
         $_result = true;
     }
+    
+    return $_result;
+}
+
+// has free trial stick
+function hasFreeTrialStick() { 
+    $_result = false;
+//    require_once '../../includes/lib/users/ManagerUser.php';
+//    $obj = new includes\lib\users\ManagerUser( array() );
+//    $_result = false;
+//    if($obj->hasTrial( $obj->getUserIdByAuth() )) $_result = true;
+    
+//    $_result = false;
+//    if(isset($_COOKIE['free_trial_stick']) && (int)$_COOKIE['free_trial_stick'] == 1) {
+//        $_result = true;
+//    }
     
     return $_result;
 }

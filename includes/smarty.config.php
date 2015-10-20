@@ -24,8 +24,17 @@ $smarty->assign("jsMin",$config['js_min']);
 $smarty->assign("domain",$config['domain']);
 $smarty->assign("domain_http",$config['domain_http']);
 $smarty->assign("img",$config['path_img']);
+$smarty->assign("ga_key",$config['ga_key']);
 $smarty->assign("css",$config['path_css']);
 $smarty->assign("js",$config['path_js']);
 
 $smarty ->assign('api_device', $config['api_device']);
 $smarty ->assign('site_id', $config['site_id']);
+// versions
+$smarty ->assign('ver_jailbreak_up', $config['ver_jailbreak_up']);
+$smarty ->assign('ver_android_up', $config['ver_android_up']);
+$smarty ->assign('ver_android_bot', $config['ver_android_bot']);
+$smarty ->assign('ver_ios_up', $config['ver_ios_up']);
+$smarty ->assign('ver_ios_bot', $config['ver_ios_bot']);
+$smarty ->assign('ver_icloud_up', $config['ver_icloud_up']);
+$smarty ->assign('ver_icloud_bot', $config['ver_icloud_bot']);

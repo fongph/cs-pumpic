@@ -70,6 +70,23 @@ if($_request['productID']) {
 
 }
 
+// default
+if(is_array($products)) { 
+    // Basic
+    if(isset($products['basic'])) {
+        foreach($products['basic'] as $item) :
+            if($item['period'] == 12 && $item['id']) $smarty->assign('getDefaultBasic', $item['id']);
+        endforeach;
+    }
+    // Premium
+    if(isset($products['premium'])) {
+        foreach($products['premium'] as $item) :
+            if($item['period'] == 12 && $item['id']) $smarty->assign('getDefaultPremium', $item['id']);
+        endforeach;
+    }
+}
+
+
 //if(!$obj->getSession('orders_referer') or ($obj->getSession('orders_referer') != $_SERVER['HTTP_REFERER'])) {
 //    $obj->setSession('orders_referer', $_SERVER['HTTP_REFERER']);
 //}

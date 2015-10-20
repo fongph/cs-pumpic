@@ -229,15 +229,15 @@ $data_hash = [];
 
 var _htmlPopUp = {
     'boxStatusAuth': '<div id="box-status-auth" class="popUp"><div><label class="title gold">Hello!<i class="close small"></i></label></div>'
-        +'<p class="info">You have just logged into Pumpic.com, enjoy your time with us or go straight to your <a class="a-default" href="http://cp.pumpic.com">account</a>.</p>'
+        +'<p class="info">You have just logged into Pumpic.com, enjoy your time with us or go straight to your <a class="a-default" href="https://cp.pumpic.com">account</a>.</p>'
         +'</div>',
     'boxStatusRegistration': '<div id="box-status-registration" class="popUp">'
         +'<div><label class="title gold">Hello!<i class="close small"></i></label></div>'
-        +'<p class="info">You have just registered in Pumpic.com, enjoy your time with us or go straight to your <a class="a-default" href="http://cp.pumpic.com">account</a>.</p>'
+        +'<p class="info">You have just registered in Pumpic.com, enjoy your time with us or go straight to your <a class="a-default" href="https://cp.pumpic.com">account</a>.</p>'
         +'</div>',
     'boxStatusFreeTrialRegistration' : '<div id="box-status-free-trial-registration" class="popUp">'
         +'<div><label class="title gold">Thank you for signing up!<i class="close small"></i></label></div>'
-        +'<p class="info">The email with registration details was sent to '+UserLogin+'.<br /> You can go straight to your <a class="a-default" href="http://cp.pumpic.com">Personal Account</a> now.</p>'
+        +'<p class="info">The email with registration details was sent to '+UserLogin+'.<br /> You can go straight to your <a class="a-default" href="https://cp.pumpic.com">Personal Account</a> now.</p>'
         +'</div>',
     'email_success' : '<div id="box-email-success" class="popUp">'
         +'<div><label class="title gold"> Thank you! <i class="close small"></i></label></div>'
@@ -288,6 +288,20 @@ function cookie_init() {
 
 }
 
+function copy_to_clipboard_init() {
+    var client = new ZeroClipboard($(".copy-to-clipboard"));
+
+    client.on( "copy", function (event) {
+        var clipboard = event.clipboardData;
+        clipboard.setData( "text/plain", $('.copy-this').val() );
+    });
+
+    client.on( 'aftercopy', function(event) {
+        $('.copy-done').show().fadeOut(1500);
+    } );
+
+}
+
 function cookie_clear() {
     if($.cookie('popUp')) {
         $.removeCookie('popUp', { path: '/' });
@@ -316,7 +330,6 @@ function hashchange_AfterInit() {
         $auth = $_popUp.find('#box-status-auth'),
         $registration = $_popUp.find('#box-status-registration'),
         $trial_registration = $_popUp.find('#box-status-free-trial-registration');
-         
     // init bPopUp
     if(isset(_data['popUp']) && _hasUser == 'true') {
         
@@ -644,7 +657,7 @@ function die( $_msg ) {
     console.log( $_msg );
 }
 
-$(document).ready(function(){ 
+$(document).ready(function(){
     
    $rs_width = false;
    $( window ).resize(function() { 
@@ -656,6 +669,8 @@ $(document).ready(function(){
    }
     
     cookie_init();
+
+    copy_to_clipboard_init();
     
     $.data( window, "filters", false); // init clear cache
     
@@ -667,6 +682,71 @@ $(document).ready(function(){
             'blackberry': false
         }
     }; // init settings
+
+    // activate tab
+    if(window.location.hash.length) {
+        var hash = window.location.hash,
+            $button = $('a[href="'+hash+'"]');
+        if($button.length && $(hash).length) {    
+            $button.attr('data-toggled', 'on');
+            $button.parent().addClass('active');
+            $('.box_category>ul>li').hide();
+            $(hash).show();
+        }
+    }
+
+    // faceboock share
+    
+//    $.ajaxSetup({ cache: true });
+//    $.getScript('//connect.facebook.net/en_US/sdk.js', function(){
+//        FB.init({
+//            // appId: '{your-app-id}',
+//            version: 'v2.4' // or v2.0, v2.1, v2.2, v2.3
+//        });     
+//        //$('#loginbutton,#feedbutton').removeAttr('disabled');
+//        // FB.getLoginStatus(updateStatusCallback);
+//    });
+
+    function fb_share() {
+        // facebook share dialog
+        FB.ui( {
+            method: 'feed',
+            name: "Your Page Title",
+            link: "https://www.webniraj.com/link-to-page/",
+            picture: "https://stackexchange.com/users/flair/557969.png",
+            caption: "Some description here"
+        }, function( response ) {
+            // do nothing
+        } );
+
+    }
+
+
+
+    $('.share_list a').click(function(e){
+        e.preventDefault();
+        
+        // facebook
+//        if($(this).hasClass('share-facebook')) {
+//           window.open("http://www.facebook.com/sharer/sharer.php?s=100&p[url]="+encodeURIComponent(window.location)+"&p[images][0]=http://pumpic.com/images/socials/social-icon.jpg&p[title]=Mobile Phone Security Measures&p[summary]=How to protect children from online predators, cyberbullies, 18+ content, and identity theft. Pumpic gathered essential information on mobile phone safety practice. Learn more to keep kids safe.", 
+//           'Share', 
+//           'height=300,width=500'); 
+//           // fb_share();
+//        } else {
+        
+//        console.log( $(this).data('location') + encodeURIComponent(window.location) );
+            if(isset($(this).data('location')) && $(this).data('location').length) {
+                
+                var media = '';
+                if(isset($(this).data('media')) && $(this).data('media').length)
+                    media = '&media='+$(this).data('media');
+
+                window.open($(this).data('location') + encodeURIComponent(window.location) + media, 'Share', 'height=300,width=500');
+            }
+        
+        //}
+        return false
+    });
     
     $('.box-plans, .box-phone').on('click', function(event) {
         event.preventDefault();
@@ -713,6 +793,30 @@ $(document).ready(function(){
         return false;
     });
 
+    if($('#item-stickybar').length) {
+        // $("#item-stickybar").trigger("sticky_kit:detach");
+    // $("#item-stickybar").stick_in_parent();
+    
+    
+        $('.list_category > li').each(function(key, val) {
+            $('#item-stickybar.stickybar-'+key).stick_in_parent();
+            console.log( 'key = '+key );
+        });
+    
+    
+//        $("#item-stickybar").each(function(key, val) {
+//            console.log(key);
+//            $(this).stick_in_parent();
+//        });
+    
+//        $("#item-stickybar").stick_in_parent({
+//        parent: "#items-stickybar",
+//        spacer: "#item-stickybar"
+//      });
+    }
+    
+
+
     if($('.list_category > li > a[data-toggled="on"]').length) {
         $.each($('.list_category > li > a[data-toggled="on"]'), function() {
             $('.box_category > ul > li').hide();
@@ -720,8 +824,8 @@ $(document).ready(function(){
                var _hash = $(this).attr('href').split('#');
                console.log(_hash[1]);
                if(_hash.length) {
-                    $('.box_category > ul > li').find('#'+_hash[1]).closest('li').show();
-                }     
+                   $('.box_category > ul > li').find('#'+_hash[1]).closest('li').show();
+               }
            } 
         });
     }
@@ -730,9 +834,16 @@ $(document).ready(function(){
     $('.list_category > li > a').on('click', function(event){
         event.preventDefault();
         var _hash = $(this).attr('href').split('#'), 
-            _index = $(this).closest('li').index();
+            _index = $(this).closest('li').index(),
+            $holder = $(this).parent().parent();
         
         // console.log('index = '+_index);
+
+        var store_history = $holder.attr('save-state');
+
+        if(typeof store_history !== typeof undefined && store_history !== false) {
+            window.location.hash = $(this).attr('href');
+        }
          
         // clear all active 
         $.each($('.list_category > li').not(":eq("+ _index +")"), function() {
@@ -747,10 +858,13 @@ $(document).ready(function(){
         // all add attr off
          
         if (!$(this).attr('data-toggled') || $(this).attr('data-toggled') == 'off'){
-           // alert('off > on');
-               $(this).attr('data-toggled','on');
-               
-            $(this).parent().addClass('active');
+            $(this).attr('data-toggled','on');
+          
+            $(".list_category").each(function(key, value){
+                if($(this).find("li:eq("+ _index +")").length)
+                    $(this).find("li:eq("+ _index +")").addClass('active');
+            });
+            
             $('.box_category > ul > li').hide();
             
             if(_hash.length > 1) {
@@ -759,17 +873,28 @@ $(document).ready(function(){
                 } else {
                     $('.box_category > ul > li').find('#'+_hash[1]).closest('li').show();
                 }
+                
+                if($('.box_category > ul > li').find('#'+_hash[1]).length) {
+                    $('html, body').animate( { 
+                        scrollTop: Math.ceil( $('.box_category > ul > li').find('#'+_hash[1]).offset().top ) // Math.ceil((target_top * $(window).outerHeight(true)) / $('html, body').height())
+                    },'linear');
+                }
+                
             }
                
         }
         else if ($(this).attr('data-toggled') == 'on'){
-           // alert('on > off');
                $(this).attr('data-toggled','off');
                
-                //if($(this).parent().hasClass('active'))
-                    $(this).parent().removeClass('active');
+               $(".list_category").each(function(key, value){
+                   if($(this).find("li:eq("+ _index +")").hasClass('active'))
+                        $(this).find("li:eq("+ _index +")").removeClass('active');
+                });
+                    
                $('.box_category > ul > li').show();
         }
+        
+       // $('#item-stickybar').trigger("sticky_kit:recalc");
         
         return false;
     });
@@ -1061,7 +1186,7 @@ $(document).ready(function(){
             var $form = $(form);
             var _params = parseQuery($form.serializeArray());
 
-            var _response = getAjaxForm('/mobile_operators_send.html', _params);
+            var _response = getAjaxForm('/gps-wireless-tracking-phone.html', _params);
               if(_response.result) {
                   var _res = _response.result;
                   if(_res.error) {
@@ -1128,9 +1253,9 @@ $(document).ready(function(){
         //    $('form[name="send_mobile_operators_find_phone"] label.error, form[name="send_mobile_operators_find_phone"] label.invalid').remove();
     });   
     
-      
-   // validator faq (form-faq)
-   var validator_form_faq = $('form.form-faq').validate({
+ 
+   // validator faq (form-faq-send)
+   var validator_form_faq = $('form.form-faq-send').validate({
         onfocusout: false,
         focusInvalid: false,
        'name': {
@@ -1155,19 +1280,19 @@ $(document).ready(function(){
         errorClass: "invalid",
         validClass: "success",
         invalidHandler: function(event, validator) {
-            if($('form.form-faq span.info').length)
-                $('form.form-faq span.info').html( " " ).hide();
+            if($('form.form-faq-send span.info').length)
+                $('form.form-faq-send span.info').html( " " ).hide();
             
-            if($('form.form-faq .fatal-error').length)
-                $('form.form-faq .fatal-error').html( " " ).hide();
+            if($('form.form-faq-send .fatal-error').length)
+                $('form.form-faq-send .fatal-error').html( " " ).hide();
         },
 
         submitHandler: function( form ) {
-            if($('form.form-faq span.info').length)
-                $('form.form-faq span.info').html( " " ).hide();
+            if($('form.form-faq-send span.info').length)
+                $('form.form-faq-send span.info').html( " " ).hide();
             
-            if($('form.form-faq .fatal-error').length)
-                $('form.form-faq .fatal-error').html( " " ).hide();
+            if($('form.form-faq-send .fatal-error').length)
+                $('form.form-faq-send .fatal-error').html( " " ).hide();
 
             var $form = $(form);
             var _params = parseQuery($form.serializeArray());
@@ -1187,25 +1312,25 @@ $(document).ready(function(){
                               }
                           });
                       } else {
-                          $('form.form-faq .fatal-error').html( _res.error );
+                          $('form.form-faq-send .fatal-error').html( _res.error );
                       }
                       
                       
                       return false;
                   } else if(_res.success) {
-                      $('form.form-faq span.info').html( _res.success ).css({'display':'inline-block'});
+                      $('form.form-faq-send span.info').html( _res.success ).css({'display':'inline-block'});
                       
                       // google analitycs
                       ga('send', 'event', 'form', 'submit', 'faq-request-success');
 
                   } else {
-                      $('form.form-faq .fatal-error').html('Your email was not sent');
+                      $('form.form-faq-send .fatal-error').html('Your email was not sent');
                       console.log('System error!');
                       return false;
                   }    
 
               } else {
-                  $('form.form-faq .fatal-error').html('Your email was not sent'); 
+                  $('form.form-faq-send .fatal-error').html('Your email was not sent'); 
                   console.log('Can not get params in ajax!');
                   return false;
               }
@@ -1216,14 +1341,16 @@ $(document).ready(function(){
     });
     
    // clear info in focus 
-   $('form.form-faq input, form.form-faq textarea').focus(function() {
-//        if($('form.form-faq span.info').length)
-//            $('form.form-faq span.info').html( " " ).hide();
-//        if($('form.form-faq .fatal-error').length)
-//            $('form.form-faq .fatal-error').html( " " ).hide();
-//        if($('form.form-faq label.error, form.form-faq label.invalid').length)
-//            $('form.form-faq label.error, form.form-faq label.invalid').remove();
+   $('form.form-faq-send input, form.form-faq-send textarea').focus(function() {
+//        if($('form.form-faq-send span.info').length)
+//            $('form.form-faq-send span.info').html( " " ).hide();
+//        if($('form.form-faq-send .fatal-error').length)
+//            $('form.form-faq-send .fatal-error').html( " " ).hide();
+//        if($('form.form-faq-send label.error, form.form-faq-send label.invalid').length)
+//            $('form.form-faq-send label.error, form.form-faq-send label.invalid').remove();
     });
+    
+   
     
    /* validate contact us */
    $( 'form.form-contact-us select' )
@@ -1385,6 +1512,153 @@ $(document).ready(function(){
 //        if($('form.form-contact-us label.error, form.form-contact-us label.invalid').length)
 //            $('form.form-contact-us label.error, form.form-contact-us label.invalid').remove();
     });
+    
+    /* validate faq form */
+   $( 'form.form-faq select' )
+        .change(function () {
+            var _selected = false;
+            $('form.form-faq #wos').val('');
+            $(this).find( "option:selected" ).each(function() {
+                _selected = $( this ).val();
+            });
+            
+            if(_selected && _selected != '0') {
+                $('form.form-faq #wos').val( _selected ).valid();
+            }
+            // $(this).selectpicker('hide');
+        })
+            .change(); 
+    
+   
+   var validator_contact_us = $('form.form-faq').validate({
+        onfocusout: false,
+        onkeyup: false,
+        onclick: true,
+        onsubmit: true,
+        focusInvalid: false,
+        focusCleanup: false,
+        debug: false,
+        ignore: "not:hidden",
+       'name': {
+            required: true
+        },
+        'description': {
+            required: true
+        },
+        wos: {
+            required: true
+        },
+        email: {
+            required: true,
+            email: true
+        },
+        'captcha': {
+            required: true,
+        },
+        messages: {
+            'captcha': "Invalid CAPTCHA.", // The CAPTCHA field is empty.
+            name: "The Name field is empty",
+            description: 'The Question field is empty',
+            wos: 'The field Choose your OS is empty',
+            email: {
+                required: "The Email field is empty",
+                email: "Invalid email format"
+            },
+        },
+       
+        errorClass: "invalid",
+        validClass: "success",
+        invalidHandler: function(event, validator) {
+            if($('form.form-faq span.info').length)
+                $('form.form-faq span.info').html( " " ).hide();
+            
+            if($('form.form-faq .fatal-error').length)
+                $('form.form-faq .fatal-error').html( " " ).hide();
+            
+            if($('form.form-faq label.error, form.form-faq label.invalid').length)
+                    $('form.form-faq label.error, form.form-faq label.invalid').remove();
+        },
+        // управление ошибками
+        showErrors: function(errorMap, errorList) {
+            var _form = $('form.form-faq');
+            var msg = null;
+
+            $.each(errorList, function(key, value){
+                if(value.element) {
+                    var name = _form.find( value.element ).attr('name');
+                    // console.log( name );
+                    _form.find(value.element).after( '<label id="'+name+'-error" for="'+name+'" class="invalid">'+value.message+'</label>' );
+                    _form.find(value.element).next().show();
+                }
+             });
+        },
+        submitHandler: function( form ) {
+            if($('form.form-faq span.info').length)
+                $('form.form-faq span.info').html( " " ).hide();
+            
+            if($('form.form-faq .fatal-error').length)
+                $('form.form-faq .fatal-error').html( " " ).hide();
+            
+            if($('form.form-faq label.error, form.form-faq label.invalid').length)
+                    $('form.form-faq label.error, form.form-faq label.invalid').remove();
+
+            var $form = $(form);
+            var _params = parseQuery($form.serializeArray());
+            
+            
+            var _response = getAjaxForm('/faq.html', _params);
+              if(_response.result) {
+                  
+                  var _res = _response.result;
+                  if(_res.error) {
+                      
+                      if(typeof _res.error === 'object') {
+                          $.each(_res.error, function(name, text) {
+                              var _obj = $form.find('input[name="'+name+'"]');
+                              if(_obj.length) {
+                                  if(_obj.next('label').length)
+                                    _obj.next().html( text ).show();
+                                  else
+                                     $('<label id="'+name+'-error" for="'+name+'" class="invalid">'+text+'</label>').insertAfter(_obj); 
+                              }
+                          });
+                      } else {
+                          $('form.form-faq .fatal-error').html( _res.error );
+                      }
+                      
+                      reloadCaptcha( $form.find('.box-captcha > img'), true ); // reload captcha 
+                      return false;
+                  } else if(_res.success) {
+                      
+                      $('form.form-faq span.info')
+                              .html( _res.success )
+                              .css({'display':'inline-block'});
+                      
+                      // scrollTo block info
+                      var target_top = $('form.form-faq span.info').offset().top;
+                      $('html, body').animate( { 
+                            scrollTop: Math.ceil((target_top * $(window).outerHeight(true)) / $('html, body').height())
+                       },'linear');
+                               
+                      // google analitycs
+                      ga('send', 'event', 'form', 'submit', 'contact-request-success');
+
+                  } else {
+                      $('form.form-faq .fatal-error').html('Your email was not sent');
+                      reloadCaptcha( $form.find('.box-captcha > img'), true ); // reload captcha 
+                      return false;
+                  }    
+
+              } else {
+                  $('form.form-faq .fatal-error').html('Your email was not sent'); 
+                  reloadCaptcha( $form.find('.box-captcha > img'), true ); // reload captcha 
+                  return false;
+              }
+              
+              reloadCaptcha( $form.find('.box-captcha > img')); // reload captcha     
+              $form.trigger("reset");
+        }
+    }); 
     
       
    // validate form
@@ -1705,12 +1979,15 @@ $(document).ready(function(){
       _premium.find('.label_radio').on('click', function() {
           var  _val = $(this).children('input').val();
           var curr = $(this);
+          
           _premium.find('.label_radio').each(function(){
               $(this).removeClass('r_on'); 
               $(this).addClass('r_off');
           });
+          
           curr.removeClass('r_off'); 
           curr.addClass('r_on');
+          
          _input_premium.val(_val);
         }); 
         
@@ -2089,5 +2366,71 @@ $('form[name="send_find_phone"] button.event-submit').click(function(){
 //         console.log($(this).width());
 //    });    
 
+
+    // countries
+    $("#c-features .row-list > li, .b-how-it-work h3.weight-normal, #block-compatibility-table .table-body > div > p").matchHeight();
+    
+    if($('.match-height').length)
+        $('.match-height').matchHeight();
+    
+//    if($('#b-recommended-by .main-block > .b-item').length)
+//        $('#b-recommended-by .main-block > .b-item').matchHeight();
+    
+    $.fn.matchHeight._beforeUpdate = function(event, groups) {
+        
+        // do something before any updates are applied
+    }
+
+    $.fn.matchHeight._afterUpdate = function(event, groups) {
+        /*
+        if($('#b-recommended-by .main-block > .b-item').length)
+            $('#b-recommended-by .main-block > .b-item').find('lable.title').css({'line-height': $('#b-recommended-by .main-block > .b-item').height()+'px'});
+            */
+        // do something after all updates are applied
+    }
+    
+    if($('.box_category .minus, .box_category .plus').length) {
+        $('.box_category .minus, .box_category .plus').on('click', function() {
+            $(this).parent('div').find('.collapse').collapse('toggle');
+        });
+    }
+    
+    $('.collapse').on('shown.bs.collapse', function(e) {
+        console.log('Show');
+        if($(this).parent('div').find('i.plus')) {
+            $(this).parent('div').find('i.plus').removeClass('plus').addClass('minus');
+        }
+    });
+    $('.collapse').on('hidden.bs.collapse', function(e) {
+        if($(this).parent('div').find('i.minus')) {
+            $(this).parent('div').find('i.minus').removeClass('minus').addClass('plus');
+        }
+    });
+    
+//    $(document).on('click.bs.collapse.data-api', '[data-toggle="collapse"]', function(e) {
+//       var _class = $(this).parent().attr('class');
+//       if(_class == 'plus') {
+//           $(this).parent('div.plus').attr('class', 'minus'); // removeClass('plus').addClass('minus');
+//       } else if(_class == 'minus') {
+//           $(this).parent('div.minus').attr('class', 'plus'); //.removeClass('minus').addClass('plus');
+//       }
+//       
+//    });
+
+    if($('.block-child-location-tracking .feature').length) {
+        $(window).on("load resize orientationchange", function(a){
+            if($(this).width() > 992) {
+                $('.block-child-location-tracking .feature').each(function(key, item) {
+                    $(item).css({"display": "inline-block", 'width': 'auto'});
+                    $(item).css({"width": ($(item).width() + 81) + "px"});
+                    $(item).css({"display": "block", 'margin': '0 auto'});
+                });
+            } else {
+                $('.block-child-location-tracking .feature').each(function(key, item) {
+                    $(item).css({"display": "block", 'margin': '0 auto', 'width': 'auto'});
+                });
+            }
+        });
+    }
 
 }); 

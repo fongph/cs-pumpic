@@ -16,6 +16,10 @@
 }  
 
 <body>
+    <!-- BLOCK GTM -->
+    {include file='../includes/main/main-after-body.tpl'}
+    <!-- END BLOCK GTM -->
+    
     <!-- FLY BLOCKS -->
     {*
         Template: FLY BLOCKS ( Добавляет на странице плавающие блоки )
@@ -51,6 +55,14 @@
             cache_id = "includes_main_main-top-menu"
             nocache
         }
+        
+        <!-- FLY BLOCKS -->
+        {nocache}
+        {if ''|hasFreeTrialStick}    
+            {include file='../includes/content/fly/fly-free-trial.tpl'}
+        {/if}    
+        {/nocache}
+        <!-- END FLY -->
         
         {*
             Template: PHONE
@@ -116,7 +128,7 @@
                 Android (sting): Включает/Выключает андройд в инфо-блоке. *-default: no
         *}
         {include file='../includes/content/info/info-promo.tpl'
-            imgUrl = "header_banners/icloud-iphone-without-jailbreak-monitoring.png"
+            imgUrl = "header_banners/icloud-iphone-monitoring-without-jailbreak.png"
             imgAlt = "Apple iOS Mobile Monitoring App"
             imgAlign = "right"
             imgVerticalAlign = "bottom"
@@ -289,6 +301,55 @@
             blockTrial = "no"
             blockQuickAndSimple = "yes"
         }
+        
+        {*
+            Template: LANGUAGE BLOCK
+            Переменные:
+                flagName(string): - код страны (bra|de|en|gb). *default: false
+                flagPosition(string): - позиция флага на странице (right|left). *default: right
+        *}
+        {include file='../includes/content/info/info-promo.tpl'
+            imgUrl = "header_banners/bg_features_call_437x226.png"
+            imgAlt = "Smartphone monitoring"
+            imgAlign = "right"
+            textAlign = "right"
+            title = "Parental Control Solution<br/>Mobile Monitoring App"
+            description = "Reliable protection all over the United Kingdom.<br />
+            View calls and SMS. Track location and online activities."
+            promoBuyBlock = "no"
+            planPackageBuy = "yes"
+            block_video = "no"
+            flagPosition = 'right'
+            flagName = 'gb'
+        }
+        
+        {*
+            Template: COUNTRY BLOCK
+            Переменные:
+                language(string): - код страны (bra|de|en). *default: false 
+        *}
+        {include file='../includes/content/info/info-promo.tpl'
+            infoBlockMobile="no"
+
+            imgUrl = "header_banners/header-countries.png"
+            imgAlt = "Landing Mobile"
+            imgAlign = "left bottom-only-mobile"
+            imgVerticalAlign = "center"
+            textAlign = "left"
+            title = "App de Monitoramento Móvel <br />para Apple iOS e Android <br />Smartphones e Tablets"
+            fz="32"
+            classTitle="c-lh-h1-title"
+            description = "Rastreia ligações, mensagens de texto, localizações e atividades online. <br />
+                           Mantenha seus olhos abertos. Agora disponível no Brasil."
+            promoBuyBlock = "no"
+            planPackageBuy = "yes"
+
+            block_video = "no"
+            block_video_src = ""
+
+            language="bra"
+        } {* bottom *}
+        
         {*
             Template: BLOCK PLANS
             Переменные:
@@ -588,7 +649,6 @@
         *}
         {include file='../includes/content/how-get-pumpic.tpl'
             blockBg = 'light'
-            title = ""
             style = "static"
         }  
         
@@ -797,6 +857,31 @@
         <!-- END TEMPLATES BLOG BANNERS -->
         <!-- END CONTENT -->    
            
+        <!-- COUNTRY BLOCK TITLE -->
+        {include file='../includes/content/country/title.tpl'
+            hook="mobile-spy"
+            blockBg="light"
+            icon="false"
+            iconName=""
+            title="Mobile Spy"
+        } 
+        
+        <!-- COUNTRY BLOCK COMPATIBILITY -->
+        {include file='../includes/content/compatibility/compatibility-table.tpl'
+            lang="en"
+            blockBg="light" 
+        }  {* no_bg bg-wite *}
+        
+        <!-- COUNTRY BLOCK FEATURES -->
+        {include file='../includes/content/country/block-features-mobile-spy-en.tpl'
+            title="Features"
+        }
+        
+        <!-- COUNTRY BLOCK HOW-IT-WORK -->
+        {include file='../includes/content/country/how-it-work-en.tpl'
+                blockBg="light"
+        } 
+        
         <!-- RECOMMENDED -->  
         {*
             Template: RECOMMENDED
@@ -804,6 +889,7 @@
                 blockBg (string): Стиль блока ( dark / light ) *default: dark
         *}
         {include file='../includes/main/main-recommended.tpl'}
+        {include file='../includes/main/main-recommended_protaction.tpl' blockBg="light"}
         
         <!-- FOOTER -->
         {*

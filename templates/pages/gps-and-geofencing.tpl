@@ -1,11 +1,15 @@
 {include file='../includes/main/main-header.tpl'
     robots="yes" 
-    title="Cell Phone GPS Tracking and Geo-fencing App"
-    description="Pumpic app is a new software solution for parents to control mobile phones of their children. Tracking kid's smartphone usage, incoming and outbound calls, monitor browsing history and text messages, GPS location and social network activity on Android and iOS devices with. Set safe zones on a map and receive alerts when your kid enters or leaves them."
-    keywords="GPS track kids phone, cild geofencing app, monitoring mobile location"
+    title="Cell Phone Geo-fencing App | Pumpic Parental Control"
+    description="Reliable geofencing for iPhone, iPad, iPod Touch and Android. Set safety zones and danger areas. Receive alerts, when children enter or leave them. Track GPS location remotely."
+    keywords="geofence iphone, geofence android, geofencing iphone, geofence alerts iphone, geofence apple, iphone geofence app, geofence app android, geofence reminders"
 }    
     
 <body>
+    <!-- BLOCK GTM -->
+    {include file='../includes/main/main-after-body.tpl'}
+    <!-- END BLOCK GTM -->
+    
     <!-- FLY BLOCKS -->
     {include file='../includes/content/fly/fly_blocks.tpl'}
     <!-- END FLY BLOCKS-->
@@ -16,6 +20,14 @@
             cache_id = "includes_main_main-top-menu"
             nocache
         }
+        
+        <!-- FLY BLOCKS -->
+        {nocache}
+        {if ''|hasFreeTrialStick}    
+            {include file='../includes/content/fly/fly-free-trial.tpl'}
+        {/if}    
+        {/nocache}
+        <!-- END FLY -->
         
         {*
             Template: PHONE
@@ -28,14 +40,16 @@
         
         <!-- CONTENT -->
         {include file='../includes/content/info/info-promo.tpl'
+            fz="33"
+            collg="7"
             imgUrl = "header_banners/bg_GPS_437x226.png"
             imgAlt = "Cell Phone GPS Tracking"
             imgAlign = "right"
             imgVerticalAlign = "bottom"
             textAlign = "right"
-            title = "Cell Phone GPS<br /> Tracking App"
-            description = "Track location and route history. Set Geo-fences. <br />
-            Monitor iPhones, iPads, iPods Touch and Android devices."
+            title = "Set Geo-fences. Receive Alerts<br /> Location Tracking Application"
+            description = "Specify safety zones and restricted areas on the map. <br />
+            Geofence iPhone, iPad, iPod Touch, and Android."
             promoBuyBlock = "no"
             planPackageBuy = "yes"
         }
@@ -45,9 +59,9 @@
         {include file='../includes/content/secures-GPS.tpl' blockBg="light"}
         {include file='../includes/content/features-table.tpl'
         title = "Advanced Monitoring Solutions"
-        description = "Pumpic always remains at least a step ahead of modern tracking technologies by reasonably improving existing features and introducing new solutions.<br /><br />
-        On one side, it is a smart GPS tracker, which allows you to set Geo-fences and follow location. Once the target device leaves a safety zone or enters a restricted area, a notification alert comes to your inbox.<br /><br />
-        On the other one, it is a multitask monitoring solution with a wide variety of useful functions. They will help with both your family matters and business affairs."
+        description = "Pumpic always remains at least a step ahead of modern monitoring technologies providing reliable location tracking and geofencing for iPhone, iPad, iPod Touch, and Android smartphones and tablets.<br /><br />
+        The app includes accurate GPS tracker, which allows you to set geo-fences and follow locations. Once the target device leaves safety zones or enter restricted areas, geofence reminders notify you instantly.<br /><br />
+        Pumpic is a multitask monitoring solution with wide variety of useful functions."
         blockBg="dark"
         } 
     
@@ -72,7 +86,7 @@
 
         {include file='../includes/content/how-get-pumpic.tpl' }    
 
-<div class="{if $blockBg}{$blockBg}{else}dark{/if}">
+<div class="light">
     <div class="container">
             <h2 class="text-center testimonial-title">{if $title}{$title}{else}Trusted by Over 10 000 Customers Worldwide{/if}:</h2>
             <div class="row">
@@ -83,21 +97,21 @@
         <img src="{$img}/testimonials/testimonials_new_22.png" alt="" class="testimonial-photo">
         <div class="testimonial-text">
                 <h4>Tiffany G. (mother of 15-year-old son)</h4>
-                <p>“The app helped me find out that my son was skipping school classes. I set geo-fences and saw that sometimes he left school too early or didn’t enter it at all. Thanks to Pumpic for helping me take care of my boy. It’s amazing that I can use such technologies so easily. I’m 40 years old and I can’t say that I’m a techy person. However, it doesn’t demand from me any technical skills. I just switch it on and everything comes clear to me. I can now control my son and be sure that he won’t ever again miss school or do anything wrong without me knowing.”</p>
+                <p>“The app helped me find out that my son was skipping school classes. I used it to geofence his Android tablet and saw that sometimes he left school too early or didn’t enter it at all. Thanks to Pumpic for helping me take care of my boy. It’s amazing that I can use such technologies so easily. I’m 40 years old and I can’t say that I’m a techy person. However, it doesn’t demand from me any technical skills. I just switch it on and everything comes clear to me. I can now control my son and be sure that he won’t ever again miss school or do anything wrong without me knowing. It’s the most reliable geofence app for Android I’ve ever tried.”</p>
         </div>
 </div>
 <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
         <img src="{$img}/testimonials/testimonials_new_23.png" alt="" class="testimonial-photo">
         <div class="testimonial-text">
-                <h4>Scott J. (35-year-old husband)</h4>
-                <p>“This tracking app literally saved my wife’s life. A few weeks ago, we subscribed for Pumpic to track each other in case of emergency. A week ago, my wife get into an accident. I tried to call her that evening, but she didn’t answer. I launched the app then, and saw the map, where she was outside the town and didn’t move. I took my car and went there. When I reached the place, I saw her car crashed against a tree, and my wife unconscious. Thanks God, she wasn’t injured too much, and thanks Pumpic for saving her life.”</p>
+                <h4>Scott J. (father of 16-year-old son)</h4>
+                <p>“I’ve recently presented my son his first Apple device. He was so pleased and happy. At the same time, we both agreed that I would set up parental app to receive geofence alerts from his iPhone and check when he leaves school or home and comes back. The app has shown great results since then. I don’t try to snoop into my kids’ activities I’m not supposed to, but it leaves me without any worries while he’s out with friends. If you need to geofence the Apple phone too, I’d recommend you Pumpic.”</p>
         </div>
 </div>
 <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
         <img src="{$img}/testimonials/testimonials_new_24.png" alt="" class="testimonial-photo">
         <div class="testimonial-text">
-                <h4>John and Megan F. (parents of two sons)</h4>
-                <p>““My husband and I, we are successful businessmen and sometimes spend too much time at work. Meanwhile our children stay at home alone, go to school on their own and grow up without parents nearby. We tried a lot to find a reasonable solutions, tried many apps, but Pumpic turned out to be the most reliable one. We installed it on their smartphones and now can know what happens to them right from our offices. We set geofences and can be sure they get to school without troubles, or get home on time. It’s like a helping hand for us.”</p>
+                <h4>John and Megan F. (parents of 14-year-old daughter)</h4>
+                <p>“My husband installed this iPhone geofence app on our daughter’s cell a few weeks ago. I didn’t even know there could be anything like that. I can see where she is from my computer and can know for sure the time when she goes out, enters her school and comes back after classes. Great solution. Very easy-to-use and fast. We recommend Pumpic to all careful parents, who really want to be sure their children are safe and protected.”</p>
         </div>
 </div>
 

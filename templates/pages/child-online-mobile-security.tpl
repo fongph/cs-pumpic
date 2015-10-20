@@ -2,9 +2,14 @@
     robots="yes" 
     title="Mobile Phone Security Measures"
     description="How to protect children from online predators, cyberbullies, 18+ content, and identity theft. Pumpic gathered essential information on mobile phone safety practice. Learn more to keep kids safe."
+    metaTags="true"
 }    
     
 <body>
+    <!-- BLOCK GTM -->
+    {include file='../includes/main/main-after-body.tpl'}
+    <!-- END BLOCK GTM -->
+    
     <!-- FLY BLOCKS -->
     {include file='../includes/content/fly/fly_blocks.tpl'}
     <!-- END FLY BLOCKS-->
@@ -17,6 +22,14 @@
             cache_id = "includes_main_main-top-menu"
             nocache
         }
+        
+        <!-- FLY BLOCKS -->
+        {nocache}
+        {if ''|hasFreeTrialStick}    
+            {include file='../includes/content/fly/fly-free-trial.tpl'}
+        {/if}    
+        {/nocache}
+        <!-- END FLY -->
         
         {*
             Template: PHONE
@@ -48,7 +61,7 @@
             title="How to Protect Children on Smartphones and Tablets"
            blockBg='dark'}
                  {* свой HTML код *}               
-                <p>Nowadays children are inseparable from their smartphones and tablets. These gadgets may be useful, and at the 
+                <p class="text-justify">Nowadays children are inseparable from their smartphones and tablets. These gadgets may be useful, and at the
                     same time bear hidden dangers like attacks of online predators, threats of cyberbullies, 18+ content, and identity 
                     theft. However, not many adults know of security measures it is necessary to consider here. Pumpic is designed 
                     to take care of children. Our team did a great job and gathered essential information on mobile phone safety 
@@ -75,34 +88,91 @@
 
                         captionText = 'Caption test image 1'
                 *}
-                
-                <div class="text-center">
-                <img src='http://pumpic.com/images/infographic/v2.png' 
-                            width='540' 
-                            alt='Mobile Phone Security Measures' 
-                            id='the_img_link'>
-                    {*<a href='http://pumpic.com/child-online-mobile-security.html' id='the_img_link'>
-                        <p>
-                        Mobile Phone Security Measures [Infographic] by the team at <a href='http://pumpic.com/child-online-mobile-security.html' 
-                                                                                       id='the_img_link'>Pumpic</a>
-                        </p>
-                    </a>*}
-                </div>
-                <br /><br />
-                <div class="text-center">
-                    <p><strong>Add this infographic to your website by copying and pasting the following embed code:</strong></p>
-                    <textarea style='margin:0px; width:650px; height:200px;'>
-                        <img src='http://pumpic.com/images/infographic/v2.png' 
-                            width='540' 
-                            alt='Mobile Phone Security Measures' 
-                            id='the_img_link'>
-                    <a href='http://pumpic.com/child-online-mobile-security.html' id='the_img_link'>
-                    <p>
-                        Mobile Phone Security Measures [Infographic] by the team at <a href='http://pumpic.com/child-online-mobile-security.html' 
-                                                                                       id='the_img_link'>Pumpic</a></p>
-                    </a>
-                    </textarea>
-                </div>
+                <ul class="list_category" save-state>
+                    <li>
+                        <a data-toggled="off" href="#infographic">View Infographic</a>
+                    </li>
+                    <li>
+                        <a data-toggled="off" href="#read-article">Read Article</a>
+                    </li>
+                </ul>
+
+        <div class="row">
+            <div class="box_category box_category-bg">
+                <ul class="no-left-padding">
+                    <li style="display: list-item;">
+                        <div id="infographic" class="text-center">
+                            <ul class="share_list">
+                                <li><a class="share-facebook" href="#" data-location="http://www.facebook.com/sharer/sharer.php?u="></a></li>
+                                <li><a class="share-google" href="#" data-location="https://plus.google.com/share?url="></a></li>
+                                <li><a class="share-digg" href="#" data-location="http://digg.com/submit?url="></a></li>
+                                <li><a class="share-twitter" href="#" data-location="https://twitter.com/share?url="></a></li>
+                                <li><a class="share-reddit" href="#" data-location="//www.reddit.com/submit?url="></a></li>
+                                <li><a class="share-pinterest" href="#" data-location="http://pinterest.com/pin/create/link/?url=" data-media="http://pumpic.com/images/socials/social-icon.jpg"></a></li>
+                            </ul>
+                            <img src='http://pumpic.com/images/infographic/v2.png'
+                                 width='540'
+                                 alt='Mobile Phone Security Measures'
+                                 id='the_img_link'>
+                            {*<a href='http://pumpic.com/child-online-mobile-security.html' id='the_img_link'>
+                                <p>
+                                Mobile Phone Security Measures [Infographic] by the team at <a href='http://pumpic.com/child-online-mobile-security.html'
+                                                                                               id='the_img_link'>Pumpic</a>
+                                </p>
+                            </a>*}
+                        </div>
+                        <br /><br />
+                        <ul class="share_list" style="max-width: 700px;">
+                            <li><a class="share-facebook" href="#" data-location="http://www.facebook.com/sharer/sharer.php?u="></a></li>
+                            <li><a class="share-google" href="#" data-location="https://plus.google.com/share?url="></a></li>
+                            <li><a class="share-digg" href="#" data-location="http://digg.com/submit?url="></a></li>
+                            <li><a class="share-twitter" href="#" data-location="https://twitter.com/share?url="></a></li>
+                            <li><a class="share-reddit" href="#" data-location="//www.reddit.com/submit?url="></a></li>
+                            <li><a class="share-pinterest" href="#" data-location="http://pinterest.com/pin/create/link/?url=" data-media="http://pumpic.com/images/socials/social-icon.jpg"></a></li>
+                        </ul>
+                        <div class="text-center">
+                            <p><strong>Add this infographic to your website by copying and pasting the following embed code:</strong></p>
+                            <textarea class="copy-this" style='margin:0px; height:200px;'>
+                                <img src='http://pumpic.com/images/infographic/v2.png'
+                                     width='540'
+                                     alt='Mobile Phone Security Measures'
+                                     id='the_img_link'>
+                                <a href='http://pumpic.com/child-online-mobile-security.html' id='the_img_link'>
+                                    <p>
+                                        Mobile Phone Security Measures [Infographic] by the team at <a href='http://pumpic.com/child-online-mobile-security.html'
+                                                                                                       id='the_img_link'>Pumpic</a></p>
+                                </a>
+                            </textarea>
+                            
+                            <div class="actions clearfix">
+                                <div class="col-mob-12 col-xs-6 col-sm-6 col-md-6 col-lg-6 padding-null">
+                                <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="nofollow" title="Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License" class="copyright"></a>
+                                </div>
+                                <div class="col-mob-12 col-xs-6 col-sm-6 col-md-6 col-lg-6 padding-null">
+                                <div class="copy-to-clipboard">Copy to clipboard</div>
+                                <div class="copy-done">Copied to clipboard!</div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    <li style="display: none">
+                        <div id="read-article">
+                            {include file="../includes/content/child-online-mobile-security-article.tpl"}
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+                        
+             <ul class="list_category l-c-mobile" save-state>
+                <li>
+                    <a data-toggled="off" href="#infographic">View Infographic</a>
+                </li>
+                <li>
+                    <a data-toggled="off" href="#read-article">Read Article</a>
+                </li>
+            </ul>           
 
         {EndContent}
 

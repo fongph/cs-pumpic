@@ -1,0 +1,52 @@
+#fly-free-trial {
+    z-index: 999;
+    right: 10px;
+    position: fixed;
+}
+#fly-free-trial > a {
+    display: inline-block;
+}
+#fly-free-trial > a:hover,
+#fly-free-trial > a {
+    cursor: pointer;
+    text-decoration: none;
+}
+#fly-free-trial > a:active,
+#fly-free-trial > a:focus {
+    text-decoration: none;
+    border: none;
+}
+
+#fly-free-trial .fft-title {
+    color: #4d4f5b;
+    font-size: 12px;
+    line-height: 1.2em;
+    padding-bottom: 8px;
+    text-align: center;
+    
+    width: 85px;
+}
+
+#fly-free-trial .fft-package {
+    padding-left: 5px;
+    position: relative;
+}
+#fly-free-trial .fft-package > img {
+    position: relative;
+    z-index: 1;
+}
+#fly-free-trial .fft-package > .fft-arrows {
+    display: inline-block;
+    width: 25px;
+    height: 46px;
+    background: url('../images/free-trial-stick/arrows.png') no-repeat;
+    position: absolute;
+    z-index: 10;
+    
+    right: 13px;
+    top: -17px;
+}
+
+@media (max-width: 768px) {
+    #fly-free-trial { display: none; }
+}

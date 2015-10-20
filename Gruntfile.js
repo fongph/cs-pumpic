@@ -15,9 +15,11 @@ module.exports = function (grunt) {
                     './assets/js/jquery.cookie.js', 
                     './assets/js/jquery.ba-hashchange.min.js',
                     './assets/js/jquery.total-storage.min.js', 
+                    './assets/js/jquery.matchHeight-min.js',
                     './assets/js/easyTooltip.js', 
                     './assets/js/jquery.simplePagination.js',
                     './assets/js/jquery.validate.js', 
+                    './assets/js/stickybar/jquery.sticky-kit.js',
                     './assets/js/translite/jquery.synctranslit.js', 
                     './assets/js/money/money.js',
                     './assets/js/currancy.js', 
@@ -30,6 +32,7 @@ module.exports = function (grunt) {
                     './assets/js/bxslider/jquery.bxslider.js', 
                     './assets/js/bxslider/bxInit.js',
                     './assets/js/button.js',
+                    './assets/js/ZeroClipboard.min.js',
                     //'./assets/js/wp/settings.js',
                     //'./assets/js/wp/init.js',
                     './assets/js/youtube/bootstrap.youtubepopup.js',
@@ -82,6 +85,11 @@ module.exports = function (grunt) {
                     './assets/css/compatibility.css', 
                     './assets/css/404.css',
                     './assets/css/video.css',
+                    './assets/css/icons.css',
+                    './assets/css/style-recommended-by.css',
+                    './assets/css/fly/free-trial-stick.css',
+                    './assets/css/faqNewStyle.css',
+                    
                     // './assets/css/sticky/autofix_anything.css',
                 ], 
                 dest: './public/stylesheets/frontend.css'
@@ -98,6 +106,7 @@ module.exports = function (grunt) {
                     './assets/css/wp-subscribe.css',
                     './assets/css/style-fly-features.css', 
                     './assets/css/404.css',
+                    './assets/css/fly/free-trial-stick.css',
                 ], 
                 dest: './public/stylesheets/wp.css'
             }

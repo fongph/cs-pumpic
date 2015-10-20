@@ -1,3 +1,44 @@
+/*
+// авто-гритинг чата.
+var LC_API = LC_API || {};
+
+
+function _LC_OPEN() {
+    LC_API.open_chat_window();
+}
+
+// LC_API.on_after_load = function()
+LC_API.on_before_load = function()
+{
+    
+    var custom_variables = [
+       { name: 'visit', value: '1' }
+    ];
+    LC_API.set_custom_variables(custom_variables);
+    
+//    console.log('LC_API:BEFORE'); 
+//    if(!LC_API.chat_window_maximized()) {
+//        setTimeout( _LC_OPEN, 1000*60*10); // 1000 - 1cек.
+//    }
+    
+//	if(LC_API.chat_window_maximized()) {
+//            // LC_API.hide_chat_window();
+//            LC_API.minimize_chat_window();
+//        }
+};
+
+LC_API.on_after_load = function() {
+//    console.log('LC_API:AFTER');    
+    
+    if(LC_API.chat_window_maximized()) {
+//            // LC_API.hide_chat_window();
+        LC_API.minimize_chat_window();
+    }
+        
+     setTimeout( _LC_OPEN, 1000*60*10); // 1000 - 1cек.   
+}
+*/
+
 $(function() {
         $('.select_inverse, .select').selectpicker();
 

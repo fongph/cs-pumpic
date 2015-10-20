@@ -4,6 +4,6 @@
         <span class="close"></span>
         <p>Monitor <i class='i-fly-features-iphone'></i> iPhone & <i class='i-fly-features-ipad'></i> iPad
         <br />without jailbreaking!</p>
-        <p><span class='icon-apple'></span> iOS 6.0 – 8.4</p>
+        <p><span class='icon-apple'></span> iOS {$ver_ios_bot} - {$ver_jailbreak_up}</p>
     </div>
 </a>

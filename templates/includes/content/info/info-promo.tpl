@@ -22,6 +22,14 @@
                         <td class='{if isset($Review)}col-s-sm-6 col-xs-sm-5 col-md-4 col-lg-4 {else}col-s-sm-6 col-xs-sm-5 col-md-5 col-lg-6{/if} {if in_array('bottom', $position)}vertical-aligh-bottom{/if}'>
                             
                             <div class="visual-images-left {if isset($Review)}visual-images-left-lg{/if} {if $block_video}box-video-constructors{/if}">
+                                
+                                {if isset($language)}
+                                <div id="country-label">
+                                    {if $language == "de"}<img src="{$img}/country/icon-available-germany.png" />{/if}
+                                    {if $language == "bra"}<img src="{$img}/country/icon-available-brazil.png" />{/if}
+                                </div>
+                                {/if}
+                                
                                 <img {if isset($imgWidth)}width='{$imgWidth}'{/if}
                                      {if isset($imgHeight)}height='{$imgHeight}'{/if}                       
                                     src="{$img}/{$imgUrl}" alt="{$imgAlt}" class="visual-img-pc {if isset($maxWidth)}max-width-{$maxWidth}{/if}">   
@@ -66,7 +74,7 @@
                             
                             <div>
                                 <div class="visual-text {if isset($Review)}visual-text-lg visual-text-xlg{else}{if $textAlign}block-text-{$textAlign}{else}block-text-right{/if}{/if}">
-                                    <{$h_title} class="h1 title {if isset($fz)}fz{$fz}{/if}">{if isset($title)} {$title} {else}Android Parental Control App{/if}</{$h_title}>
+                                    <{$h_title} class="h1 title {if isset($classTitle)}{$classTitle}{/if} {if isset($fz)}fz{$fz}{/if}">{if isset($title)} {$title} {else}Android Parental Control App{/if}</{$h_title}>
                                     
                                     {if isset($flagName)}
                                     <div class="clearfix">    
@@ -111,12 +119,12 @@
                                         {if isset($Android)}
                                             {if isset($AndroidVersion) && $Android == 'yes'}<li><i class="icon-android"></i> {$AndroidVersion}</li>{/if}
                                         {else}    
-                                            <li><i class="icon-android"></i> (2.2 - 5.1)</li>
+                                            <li><i class="icon-android"></i> ({$ver_android_bot} - {$ver_android_up})</li>
                                         {/if} 
                                         {if isset($Apple)}
                                             {if isset($AppleVersion) && $Apple == 'yes'}<li><i class="icon-apple"></i> {$AppleVersion}</li>{/if}
                                         {else}    
-                                            <li><i class="icon-apple"></i> (6.0 - 8.4)</li>
+                                            <li><i class="icon-apple"></i> ({$ver_ios_bot} - {if isset($jailbreak) && $jailbreak == "true"}{$ver_jailbreak_up}{else}{$ver_ios_up}{/if})</li>
                                         {/if} 
                                         
                                         {if isset($InfoBlock)}
@@ -181,6 +189,7 @@
                                             planPackageBuyUrl = (isset($planPackageBuyUrl)) ? $planPackageBuyUrl : "" 
                                             planPackageBuyType = (isset($planPackageBuyType)) ? $planPackageBuyType : "" 
                                             planPackageBuyClass = (isset($planPackageBuyClass)) ? $planPackageBuyClass : "" 
+                                            language = (isset($language)) ? $language : ""    
                                         }
                                     {/if}
                                     
@@ -260,7 +269,7 @@
                         {/if}
                     </tr>
                     <tr>    
-                        {if in_array('bottom', $position)}
+                        {if in_array('bottom', $position) || in_array('bottom-only-mobile', $position)}
                         <td class='col-xs-sm-12 col-s-sm-12 col-sm-12 col-md-6 col-log-5'>
                             <div class="col-xs-sm-8 col-s-sm-10 col-sm-10 visual-images-bottom mobile-version-inline model-center {if $block_video}box-video-constructors{/if}">
                                 <div class="mobile-none">
@@ -322,58 +331,3 @@
         </div> <!-- .row -->
     </div>
 </div>
-                
-{*
-
-<div class="visual-text text-center">
-					<h1>High-Grade Cell Phone Monitoring App</h1>
-					<p>Pumpic takes cell phone monitoring to a new level. 
-                                            <br />Track the location, text messages and contacts quickly and quiet.</p>
-					<ul class="compatibility">
-						<li><i class="icon-android"></i> (2.2 - 5.0)</li>
-						<li><i class="icon-apple"></i> (6.0 - 8.4)</li>
-						<li><i class="icon-blackberry"></i> (1.0 - 7.1)</li>
-						<li>
-							<i class="icon-info-circled"></i> <a href="/compatibility.html">platform compatibility</a>
-						</li>
-					</ul>
-				</div>
-				<img src="{$img}/visual.png" alt="" class="visual-img">
-
-<div class="visual">
-                    
-			<div class="container bg_famaly">
-                            
-                            <div class="row">
-                                
-                                <div class="col-lg-10 col-lg-offset-1">
-                                    
-                                    <!-- <div class="col-md-6 col-lg-6 w900">
-                                        <img src="{$img}/parental_control/bg_famaly_mobile.png" alt="" class="visual-img-pc">
-                                    </div> -->
-                                    
-                                    <div class="col-md-6 col-lg-6 box-right-description">
-                                        <div class="visual-text text-center">
-                                            <h1 class="title">Cell Phone <br />Parental Control App</h1>
-                                            <p>Keep your children safe and secured with Pumpic. <br />
-                                                Track location. View calls and SMS. Follow online activity.</p>
-                                            <ul class="compatibility">
-                                                <li><i class="icon-android"></i> (2.2 - 5.0)</li>
-                                                <li><i class="icon-apple"></i> (6.0 - 8.4)</li>
-                                                <li><i class="icon-blackberry"></i> (1.0 - 7.1)</li>
-                                                <li>
-                                                    <i class="icon-info-circled"></i> <a href="/compatibility.html">platform compatibility</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                                
-                                    <div class="col-md-6 col-lg-6 mobile-version w770">
-                                        <img src="{$img}/parental_control/bg_famaly_mobile.png" alt="" class="visual-img-pc">
-                                    </div>            
-                                                
-                                </div>
-                            </div> <!-- .row -->
-			</div>
-		</div>
-*}

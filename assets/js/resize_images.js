@@ -78,9 +78,9 @@ $(document).ready(function(){
                   'width': 'auto',
               });
           
-          console.log(' ---- Start width -------- ');
-          console.log(parent_outer_width, outer_width);
-          console.log( '-------- end ---------' );
+          //console.log(' ---- Start width -------- ');
+          //console.log(parent_outer_width, outer_width);
+          //console.log( '-------- end ---------' );
           
           if(_caption_text.length) {
               if(parent_outer_width > 0) {

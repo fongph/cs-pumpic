@@ -6,11 +6,23 @@
 }    
     
 <body>
+    <!-- BLOCK GTM -->
+    {include file='../includes/main/main-after-body.tpl'}
+    <!-- END BLOCK GTM -->
     <!-- FLY BLOCKS -->
     {include file='../includes/content/fly/fly_blocks.tpl'}
     <!-- END FLY BLOCKS-->
 	<div class="wrapper box-404">
-	{include file='../includes/main/main-top-menu.tpl'}	
+	{include file='../includes/main/main-top-menu.tpl'}
+        
+        <!-- FLY BLOCKS -->
+        {nocache}
+        {if ''|hasFreeTrialStick}    
+            {include file='../includes/content/fly/fly-free-trial.tpl'}
+        {/if}    
+        {/nocache}
+        <!-- END FLY -->
+        
         {*
             Template: PHONE
             Переменные:

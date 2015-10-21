@@ -148,23 +148,18 @@ if(is_array($user) || !$user ) {
 } 
 */
 
-/*
-$cache_id = 'compatibility|compatibility_start';
-if(is_array($smarty->getTemplateVars('getUserInfo')) && isset($smarty->getTemplateVars('getUserInfo')['login'])) {
-    $cache_id = 'compatibility|compatibility_'.md5($smarty->getTemplateVars('getUserInfo')['name'].$smarty->getTemplateVars('getUserInfo')['login']);
-    
-    $smarty->clearCache('compatibility.tpl');
-    $smarty->clearCache('compatibility.tpl', 'compatibility');
-    $smarty->clearCache('compatibility.tpl', $cache_id);
-    $smarty->clearCache(null, 'main-compatibility-send-find-phone');
-    $smarty->clearCache(null, 'includes_main_main-top-menu');
-}
-*/
-if(is_array($smarty->getTemplateVars('getUserInfo')) && isset($smarty->getTemplateVars('getUserInfo')['login'])) {
-    $smarty->clearCache('compatibility.tpl');
-} else if($smarty->isCached('compatibility.tpl')) {
-    $smarty->clearCache('compatibility.tpl');
-}
+//$cache_id = 'compatibility_start';
+//if(is_array($smarty->getTemplateVars('getUserInfo')) && isset($smarty->getTemplateVars('getUserInfo')['login'])) {
+//    $cache_id = 'compatibility_'.$smarty->getTemplateVars('getUserInfo')['name'].$smarty->getTemplateVars('getUserInfo')['login'];
+//}
+//$cache_id = md5($cache_id);
+//if(is_array($user) || !$user ) {
+//    $smarty->clearCache('compatibility.tpl', $cache_id);
+//} 
+
+$smarty->clearCache('compatibility.tpl');
+$smarty->clearCache(null, 'main-compatibility-send-find-phone');
+$smarty->clearCache(null, 'includes_main_main-top-menu');
 
 //$hash = md5($cache_id);
 //$endTime = strtotime("+1 day");

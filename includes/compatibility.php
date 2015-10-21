@@ -29,8 +29,10 @@ if(file_exists($filename)) {
 use Models\Compatibility;
 require dirname( __DIR__ ).'/vendor/autoload.php';
 require_once $_inc.'/config.php';
+require_once $_inc.'/functions.php';
 require_once $_inc.'/lib/class.phpmail.php';
 
+smarty_function_getUserInfo(array(), $smarty);
 $_mail = new Phpmail( $config['db_blog'] );
 
 // echo "<pre>"; var_dump( $smarty ); echo "</pre>";

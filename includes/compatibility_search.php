@@ -5,6 +5,9 @@
  * @var $urlParams array
  */
 
+$_inc = dirname(__FILE__); // includes
+$b_dir = dirname( $_inc ); // folder sites directory
+
  // LastModified
 
 $filename = dirname(dirname(__FILE__)).'/templates/pages/compatibility/search.tpl';
@@ -22,7 +25,7 @@ if(file_exists($filename)) {
     }
     header('Last-Modified: '. $LastModified);   
 }
-
+require_once $_inc.'/functions.php';
 
  $smarty->caching = false;
  $smarty->compile_check = false;
@@ -68,6 +71,8 @@ require dirname( __DIR__ ).'/vendor/autoload.php';
 $mu = new MU();
 $compatibility = new Compatibility(di()->get('dbPhones'));
  
+smarty_function_getUserInfo(array(), $smarty);
+
 if( in_array($_uri, $os_url) ) {
     $_os = false;    
     switch ($_uri):

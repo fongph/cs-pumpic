@@ -137,8 +137,10 @@ class Phpmail extends Settings
         if(is_array($params) and count($params) > 0) {
             if(!$this -> validateEmail($params['email'])) {
                 $this -> _messange['error']['email'] = self::error_email;
+            } else if(!isset($params['name']) or empty($params['name']) ) {
+                $this -> _messange['error']['name'] = "The name field is empty";
             } else if(empty($params['device-model']) or strlen( $params['device-model']) < 3 ) {
-                $this -> _messange['error']['device-model'] = "The Device Model field is empty";
+                $this -> _messange['error']['device-model'] = "The device model field is empty";
             } elseif( isset($params['captcha']) and !$this ->_order-> validateCaptcha( $params['captcha'] ) ) {
                 $this -> _messange['error']['captcha'] = self::error_captcha;
             } else {
@@ -151,8 +153,8 @@ class Phpmail extends Settings
                 $browserInfo = $this->getBrowser();
                 
                 try {
-                    $this->sender->sendSystemCompatibility(self::mail_support, $params['email'], $params['device-model'], $_uid, $browserInfo);
-                    $this->sender->sendCompatibility($params['email'], $params['device-model'], $_uid, $browserInfo);
+                    $this->sender->sendSystemCompatibility(self::mail_support, $params['name'], $params['email'], $params['device-model'], $_uid, $browserInfo);
+                    $this->sender->sendCompatibility($params['name'], $params['email'], $params['device-model'], $_uid, $browserInfo);
                     
                     $eventManager = \EventManager\EventManager::getInstance();
                     $eventManager->emit('front-compatibility-completed', array(
@@ -182,17 +184,13 @@ class Phpmail extends Settings
         if(is_array($params) and count($params) > 0) {
             if(!$this -> validateEmail($params['email'])) {
                 $this -> _messange['error']['email'] = self::error_email;
+            } else if(!isset($params['name']) or empty($params['name'])) {
+                $this -> _messange['error']['name'] = "The name field is empty";
             } else if(empty($params['carrier']) or strlen( $params['carrier']) < 3 ) {
                 $this -> _messange['error']['carrierl'] = "The carrier field is empty";
             } elseif( isset($params['captcha']) and !$this ->_order-> validateCaptcha( $params['captcha'] ) ) {
                 $this -> _messange['error']['captcha'] = self::error_captcha;
             } else {
-                
-                $_params = array(
-                   'carrier'    => $params['carrier'],
-                   'email'          => $params['email'],
-                    '_browser'      => $this -> getBrowser()
-                );
                 
                 if($opt_value = $this ->getOptionValue( 'Mobile_operators_pumpic' ) and $opt_value >= self::MOBILEOPERATORS_START_ID) {
                     $_uid = $opt_value + 1; 
@@ -203,8 +201,8 @@ class Phpmail extends Settings
                 $browserInfo = $this->getBrowser();
                 
                 try {
-                    $this->sender->sendSystemMobileOperators(self::mail_support, $params['email'], $params['carrier'], $_uid, $browserInfo);
-                    $this->sender->sendMobileOperators($params['email'], $params['carrier'], $_uid, $browserInfo);
+                    $this->sender->sendSystemMobileOperators(self::mail_support, $params['name'], $params['email'], $params['carrier'], $_uid, $browserInfo);
+                    $this->sender->sendMobileOperators($params['name'], $params['email'], $params['carrier'], $_uid, $browserInfo);
                     
                     $eventManager = \EventManager\EventManager::getInstance();
                     $eventManager->emit('front-carriers-completed', array(

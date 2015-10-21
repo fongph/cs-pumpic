@@ -6,6 +6,7 @@ $b_dir = dirname( $_inc ); // folder sites directory
 
 // require_once $_inc.'/config.php';
 require_once $_inc.'/config.php';
+require_once $_inc.'/functions.php';
 require_once $_inc.'/lib/class.phpmail.php';
 
 
@@ -15,6 +16,8 @@ $_result = array(
     'error' => false,
     'success' => false,
 );
+
+smarty_function_getUserInfo(array(), $smarty);
 
 if(isset($_SERVER['HTTP_X_REQUESTED_WITH']) && !empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest') { 
   

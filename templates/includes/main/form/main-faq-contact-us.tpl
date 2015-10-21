@@ -16,6 +16,8 @@
                 <legend class="uppercase">Send Your Questions to Us</legend>
                 <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3">
                         <span class="info"></span>
+                        {nocache}
+                        {if !isset($getUserInfo.name) || empty($getUserInfo.name)}
                         <div class="form-group">
                                 <input id="name" 
                                        name="name" 
@@ -25,7 +27,12 @@
                                        value="{if isset($smarty.post.name)}{$smarty.post.name}{/if}" />
                                 {if is_array($getOut.error) && $getOut.error.name}<label class="error show">{$getOut.error.name|escape}</label>{/if}
                         </div>
-
+                        {else}
+                        <input id="name" class="form-control required" type="hidden" name="name" value="{if isset($getUserInfo.name)}{$getUserInfo.name}{/if}">
+                        {/if}
+                        {/nocache}
+                        {nocache}
+                        {if !isset($getUserInfo.login) || empty($getUserInfo.login)}
                         <div class="form-group">
                                 <input id="email" 
                                        name="email" 
@@ -35,8 +42,11 @@
                                        value="{if isset($smarty.post.email)}{$smarty.post.email}{/if}" />
                                 {if is_array($getOut.error) && $getOut.error.email}<label class="error show">{$getOut.error.email|escape}</label>{/if}
                         </div>
-
-
+                        {else}
+                        <input id="email" class="form-control required" type="hidden" name="email" value="{if isset($getUserInfo.login)}{$getUserInfo.login}{/if}">
+                        {/if}
+                        {/nocache}
+                        
                         <div class="form-group">
                                 <select id="os" 
                                         class="select"

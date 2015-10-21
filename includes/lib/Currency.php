@@ -13,14 +13,10 @@ class Currency
     {
         global $config;
         $this -> _db = new DB($config['db_blog']);
-        // $this -> _pdo = $this -> _db -> getConnected();
     }
 
     private static  $instance; 
-    
-    // private $_pdo;
     private $_db;
-    
     private $_searchCurr = [];
     private $_base;
     
@@ -65,7 +61,7 @@ class Currency
             if(is_array($this -> _searchCurr['iso']))
                 $_filter .= "AND iso IN (".  implode($this -> _searchCurr['iso'], ',') . ")";
             if(is_string( $this -> _searchCurr['iso'] ))
-                $_filter .= "AND iso = ". $this->_validateValue ( $this -> _searchCurr['iso'] );
+                $_filter .= "AND iso = ". $this->_validateValue( $this -> _searchCurr['iso'] );
         } 
         
         

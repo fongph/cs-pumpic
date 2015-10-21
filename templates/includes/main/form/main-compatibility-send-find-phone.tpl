@@ -18,7 +18,23 @@
                         {/if}
                     
                         <span class="info"></span>
-
+                        {nocache}
+                        {if !isset($getUserInfo.name) || empty($getUserInfo.name)}
+                        <div class="form-group">
+                                <input id="name" type="text" 
+                                       class="form-control required" 
+                                       name="name" 
+                                       value="{* if isset($smarty.post.name)}{$smarty.post.name}{/if *}"
+                                       placeholder="Name*">
+                                {if isset($getOut) && is_array($getOut.error) && $getOut.error.name}
+                                    <label class="error show">{$getOut.error.name|escape}</label>
+                                {/if}
+                        </div>
+                        {else}
+                        <input id="name" class="form-control required" type="hidden" name="name" value="{if isset($getUserInfo.name)}{$getUserInfo.name}{/if}">
+                        {/if}
+                        {/nocache}
+                        
                         <div class="form-group">
                                 <input id="device-model" type="text" 
                                        class="form-control required" 
@@ -30,6 +46,9 @@
                                 {/if}
                                 {*<p class="bg-danger"></p>*}
                         </div>
+                        
+                        {nocache}    
+                        {if !isset($getUserInfo.login) || empty($getUserInfo.login)}    
                         <div class="form-group {*has-error*}">
                                 <input id="email" type="email" 
                                        class="form-control required" 
@@ -41,6 +60,11 @@
                                 {/if}
                                 {*<p class="bg-danger"></p>*}
                         </div>
+                        {else}
+                        <input id="email" class="form-control required" type="hidden" name="email" value="{if isset($getUserInfo.login)}{$getUserInfo.login}{/if}">
+                        {/if}
+                        {/nocache}
+                        
                         <div class="form-group form-box-captcha">
                             <div class="box-captcha">
                                 <img src="/captcha.html?width=407&height=44" id="img-captcha">

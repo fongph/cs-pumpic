@@ -1,13 +1,15 @@
 <?php
 
-require '../vendor/autoload.php';
-require '../includes/di.php';
+require __DIR__ . '/../vendor/autoload.php';
+require __DIR__ . '/../includes/di.php';
+
+date_default_timezone_set('UTC');
 
 $whoops = new Whoops\Run;
 
 $logger = new Monolog\Logger('logger');
 $logger->pushProcessor(new Monolog\Processor\WebProcessor());
-$logger->pushHandler(new Monolog\Handler\StreamHandler(__DIR__ . '/logs/livechat.log', Monolog\Logger::DEBUG));
+$logger->pushHandler(new Monolog\Handler\StreamHandler(__DIR__ . '/../logs/livechat.log', Monolog\Logger::DEBUG));
 
 $whoops->pushHandler(new \Whoops\Handler\CallbackHandler(function($exception, $inspector, $run) use ($logger) {
     $logger->addError(sprintf(

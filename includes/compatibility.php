@@ -10,9 +10,17 @@
 $_inc = dirname(__FILE__); // includes
 $b_dir = dirname( $_inc ); // folder sites directory
 
+use Models\Compatibility;
+require dirname( __DIR__ ).'/vendor/autoload.php';
+require_once $_inc.'/config.php';
+require_once $_inc.'/functions.php';
+require_once $_inc.'/lib/class.phpmail.php';
+
+smarty_function_getUserInfo(array(), $smarty);
+
 $filename = dirname(dirname(__FILE__)).'/templates/pages/compatibility.tpl';
 if(file_exists($filename)) {
-    $LastModified_unix = filemtime($filename); // время последнего изменения страницы
+    $LastModified_unix = (is_array($smarty->getTemplateVars('getUserInfo')) && isset($smarty->getTemplateVars('getUserInfo')['login'])) ? strtotime("now"):filemtime($filename); // время последнего изменения страницы
     $LastModified = gmdate("D, d M Y H:i:s \G\M\T", $LastModified_unix);
     $IfModifiedSince = false;
     if (isset($_ENV['HTTP_IF_MODIFIED_SINCE']))
@@ -26,13 +34,11 @@ if(file_exists($filename)) {
     header('Last-Modified: '. $LastModified);   
 }
 
-use Models\Compatibility;
-require dirname( __DIR__ ).'/vendor/autoload.php';
-require_once $_inc.'/config.php';
-require_once $_inc.'/functions.php';
-require_once $_inc.'/lib/class.phpmail.php';
 
-smarty_function_getUserInfo(array(), $smarty);
+
+
+
+
 $_mail = new Phpmail( $config['db_blog'] );
 
 // echo "<pre>"; var_dump( $smarty ); echo "</pre>";

@@ -163,6 +163,9 @@ if(is_array($smarty->getTemplateVars('getUserInfo')) && isset($smarty->getTempla
 if(is_array($smarty->getTemplateVars('getUserInfo')) && isset($smarty->getTemplateVars('getUserInfo')['login'])) {
     $smarty->clearCache('compatibility.tpl');
     $smarty->clearCache('compatibility.tpl', 'compatibility');
+} else {
+    $smarty->clearCache('compatibility.tpl');
+    $smarty->clearCache('compatibility.tpl', 'compatibility');
 }
 
 //$hash = md5($cache_id);

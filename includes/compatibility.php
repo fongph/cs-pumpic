@@ -148,6 +148,7 @@ if(is_array($user) || !$user ) {
 } 
 */
 
+/*
 $cache_id = 'compatibility|compatibility_start';
 if(is_array($smarty->getTemplateVars('getUserInfo')) && isset($smarty->getTemplateVars('getUserInfo')['login'])) {
     $cache_id = 'compatibility|compatibility_'.md5($smarty->getTemplateVars('getUserInfo')['name'].$smarty->getTemplateVars('getUserInfo')['login']);
@@ -157,6 +158,11 @@ if(is_array($smarty->getTemplateVars('getUserInfo')) && isset($smarty->getTempla
     $smarty->clearCache('compatibility.tpl', $cache_id);
     $smarty->clearCache(null, 'main-compatibility-send-find-phone');
     $smarty->clearCache(null, 'includes_main_main-top-menu');
+}
+*/
+if(is_array($smarty->getTemplateVars('getUserInfo')) && isset($smarty->getTemplateVars('getUserInfo')['login'])) {
+    $smarty->clearCache('compatibility.tpl');
+    $smarty->clearCache('compatibility.tpl', 'compatibility');
 }
 
 //$hash = md5($cache_id);
@@ -179,7 +185,7 @@ if(is_array($smarty->getTemplateVars('getUserInfo')) && isset($smarty->getTempla
 
 $smarty->cache_lifetime = 3600;
 
-if(!$smarty ->isCached('compatibility.tpl', $cache_id)) {
+if(!$smarty ->isCached('compatibility.tpl')) {
      $cat_phones = $compatibility->getCategoryModels();
     $smarty->assign('phones', $cat_phones, false);
     //$cats = $compatibility->getCategories();
@@ -194,4 +200,4 @@ if(!$smarty ->isCached('compatibility.tpl', $cache_id)) {
 // init output params!
 $smarty->assign('getOut', $_result);
 
-$smarty->display('compatibility.tpl', $cache_id); // , $cache_id
+$smarty->display('compatibility.tpl'); // , $cache_id

@@ -1,3 +1,4 @@
+{nocache}
 <form class="send_find_phone" method="POST" action="/compatibility/" name="send_find_phone">
         <fieldset>
                 <legend>
@@ -18,7 +19,7 @@
                         {/if}
                     
                         <span class="info"></span>
-                        {nocache}
+  
                         {if !isset($getUserInfo.name) || empty($getUserInfo.name)}
                         <div class="form-group">
                                 <input id="name" type="text" 
@@ -33,7 +34,6 @@
                         {else}
                         <input id="name" class="form-control required" type="hidden" name="name" value="{if isset($getUserInfo.name)}{$getUserInfo.name}{/if}">
                         {/if}
-                        {/nocache}
                         
                         <div class="form-group">
                                 <input id="device-model" type="text" 
@@ -46,8 +46,7 @@
                                 {/if}
                                 {*<p class="bg-danger"></p>*}
                         </div>
-                        
-                        {nocache}    
+                          
                         {if !isset($getUserInfo.login) || empty($getUserInfo.login)}    
                         <div class="form-group {*has-error*}">
                                 <input id="email" type="email" 
@@ -63,7 +62,7 @@
                         {else}
                         <input id="email" class="form-control required" type="hidden" name="email" value="{if isset($getUserInfo.login)}{$getUserInfo.login}{/if}">
                         {/if}
-                        {/nocache}
+                        
                         
                         <div class="form-group form-box-captcha">
                             <div class="box-captcha">
@@ -84,3 +83,4 @@
                 </div>
         </fieldset>
 </form>
+{/nocache}

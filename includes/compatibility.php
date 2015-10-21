@@ -102,8 +102,6 @@ if(isset($_POST['submit']) and $_POST['submit']) {
     if($_result['success']) unset($_POST);
 }
 
-//var_dump($smarty->getTemplateVars('getUserInfo')); // get_template_vars('getUserInfo')
-
 // clearCahce
 //if($smarty ->isCached('compatibility.tpl', 'compatibility_'.date("dmY", strtotime("now"))))
 //        $smarty -> clearCache('compatibility.tpl', 'compatibility_'.date("dmY", strtotime("now")));
@@ -114,26 +112,30 @@ $cache_id = 'compatibility_start';
 if(is_array($smarty->getTemplateVars('getUserInfo'))) {
     $cache_id = 'compatibility_'.$smarty->getTemplateVars('getUserInfo')['name'].$smarty->getTemplateVars('getUserInfo')['login'];
 }
-$cache_id = md5($cache_id).'_'.strtotime("+1 day");
-
+$cache_id = md5($cache_id);
 if(is_array($smarty->getTemplateVars('getUserInfo'))) {
-    $smarty -> clearCache('compatibility.tpl', $cache_id);
+    $smarty->clearCache('compatibility.tpl', $cache_id);
 }
 
-$hash = false;
-$endTime = false;
-$caheTime = explode('_', $cache_id);
-if(is_array($caheTime) and count($caheTime) > 0) {
-    $hash = $caheTime[0];
-    $endTime = $caheTime[1];
-}
+//$hash = md5($cache_id);
+//$endTime = strtotime("+1 day");
+//
+//$caheTime = explode('_', $cache_id);
+//
+//if(is_array($caheTime) and count($caheTime) > 0) {
+//    $hash = $caheTime[0];
+//    $endTime = $caheTime[1];
+//}
 
-if(strtotime("now") > $endTime && $smarty ->isCached('compatibility.tpl', $hash.$endTime)) {
-    $smarty->clearCache('compatibility.tpl', $hash.$endTime);
-}
+//if(strtotime("now") > $endTime && $smarty ->isCached('compatibility.tpl', $hash.$endTime) 
+//        || is_array($smarty->getTemplateVars('getUserInfo'))) {
+//    $smarty->clearCache('compatibility.tpl', $hash.$endTime);
+//}
 
 // if($smarty ->isCached('compatibility.tpl', $cache_id))
 // $compatibility->getCategoriesCount();
+
+
 if(!$smarty ->isCached('compatibility.tpl', $cache_id)) {
      $cat_phones = $compatibility->getCategoryModels();
     $smarty->assign('phones', $cat_phones, false);
@@ -149,4 +151,5 @@ if(!$smarty ->isCached('compatibility.tpl', $cache_id)) {
 // init output params!
 $smarty->assign('getOut', $_result);
 
+$smarty->cache_lifetime = 3600;
 $smarty->display('compatibility.tpl', $cache_id);

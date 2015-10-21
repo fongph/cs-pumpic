@@ -74,6 +74,7 @@
 
                             </li> *}
                             
+                            {nocache}
                             <li>
                                 {if ''|hasUser} 
                                     <a href="https://cp.{$domain}/">Control Panel</a>
@@ -82,6 +83,7 @@
                                 {/if}   
 
                             </li>
+                            {/nocache}
 
                             {nocache}
                                 {if ''|hasFreeTrialStick} 

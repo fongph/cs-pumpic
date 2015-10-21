@@ -14,11 +14,15 @@
     <!-- END FLY BLOCKS-->
     
 	<div class="wrapper">
-	{include file='../includes/main/main-top-menu.tpl' 
-                topmenu_active="compatibility"
-                cache_id = "includes_main_main-top-menu"
-                nocache    
-        }	
+        {nocache}    
+            {include file='../includes/main/main-top-menu.tpl' 
+                    topmenu_active="compatibility"
+            }	
+            
+            {* cache_id = "includes_main_main-top-menu"
+                    nocache   *}
+            
+        {/nocache}
         
         <!-- FLY BLOCKS -->
         {nocache}
@@ -227,9 +231,11 @@
                 <div class="row">
                     <div class="form">
                         {* getOut = $getOut *}
-                        {include file='../includes/main/form/main-compatibility-send-find-phone.tpl'
-                            cache_id = "main-compatibility-send-find-phone"
-                            nocache} 
+                        {nocache}
+                            {include file='../includes/main/form/main-compatibility-send-find-phone.tpl'}
+                            {* cache_id = "main-compatibility-send-find-phone"
+                                nocache *}
+                        {/nocache}    
                     </div>
                 </div>
             </div>

@@ -10,17 +10,9 @@
 $_inc = dirname(__FILE__); // includes
 $b_dir = dirname( $_inc ); // folder sites directory
 
-use Models\Compatibility;
-require dirname( __DIR__ ).'/vendor/autoload.php';
-require_once $_inc.'/config.php';
-require_once $_inc.'/functions.php';
-require_once $_inc.'/lib/class.phpmail.php';
-
-smarty_function_getUserInfo(array(), $smarty);
-
 $filename = dirname(dirname(__FILE__)).'/templates/pages/compatibility.tpl';
 if(file_exists($filename)) {
-    $LastModified_unix = (is_array($smarty->getTemplateVars('getUserInfo')) && isset($smarty->getTemplateVars('getUserInfo')['login'])) ? strtotime("now"):filemtime($filename); // время последнего изменения страницы
+    $LastModified_unix = filemtime($filename); // время последнего изменения страницы
     $LastModified = gmdate("D, d M Y H:i:s \G\M\T", $LastModified_unix);
     $IfModifiedSince = false;
     if (isset($_ENV['HTTP_IF_MODIFIED_SINCE']))
@@ -35,9 +27,29 @@ if(file_exists($filename)) {
 }
 
 
+use Models\Compatibility;
+require dirname( __DIR__ ).'/vendor/autoload.php';
+require_once $_inc.'/config.php';
+require_once $_inc.'/functions.php';
+require_once $_inc.'/lib/class.phpmail.php';
 
+smarty_function_getUserInfo(array(), $smarty);
 
-
+//$filename = dirname(dirname(__FILE__)).'/templates/pages/compatibility.tpl';
+//if(file_exists($filename)) {
+//    $LastModified_unix = (is_array($smarty->getTemplateVars('getUserInfo')) && isset($smarty->getTemplateVars('getUserInfo')['login'])) ? strtotime("now"):filemtime($filename); // время последнего изменения страницы
+//    $LastModified = gmdate("D, d M Y H:i:s \G\M\T", $LastModified_unix);
+//    $IfModifiedSince = false;
+//    if (isset($_ENV['HTTP_IF_MODIFIED_SINCE']))
+//        $IfModifiedSince = strtotime(substr($_ENV['HTTP_IF_MODIFIED_SINCE'], 5));  
+//    if (isset($_SERVER['HTTP_IF_MODIFIED_SINCE']))
+//        $IfModifiedSince = strtotime(substr($_SERVER['HTTP_IF_MODIFIED_SINCE'], 5));
+//    if ($IfModifiedSince && $IfModifiedSince >= $LastModified_unix) {
+//        header($_SERVER['SERVER_PROTOCOL'] . ' 304 Not Modified');
+//        exit;
+//    }
+//    header('Last-Modified: '. $LastModified);   
+//}
 
 $_mail = new Phpmail( $config['db_blog'] );
 
@@ -114,12 +126,23 @@ if(isset($_POST['submit']) and $_POST['submit']) {
 //
 //$cache_id = 'compatibility_'.date("dmY", strtotime("+1 day"));
 
+require_once 'lib/users/ManagerUser.php';
+$obj = new includes\lib\users\ManagerUser( array() );
+$user = false;
+
+if($obj->getUserIdByAuth()) {
+    $user = array();
+    $_user = $obj->getUser( $obj->getUserIdByAuth() );
+    $user['name'] = ($_user->getName()) ? $_user->getName() : false;
+    $user['login'] = ($_user->getLogin()) ? $_user->getLogin() : false;
+} 
+
 $cache_id = 'compatibility_start';
-if(is_array($smarty->getTemplateVars('getUserInfo')) && isset($smarty->getTemplateVars('getUserInfo')['login'])) {
-    $cache_id = 'compatibility_'.$smarty->getTemplateVars('getUserInfo')['name'].$smarty->getTemplateVars('getUserInfo')['login'];
+if(is_array($user) && isset($user['login'])) {
+    $cache_id = 'compatibility_'.$user['name'].$user['login'];
 }
 $cache_id = md5($cache_id);
-if(is_array($smarty->getTemplateVars('getUserInfo')) || !$smarty->getTemplateVars('getUserInfo') ) {
+if(is_array($user) || !$user ) {
     $smarty->clearCache('compatibility.tpl', $cache_id);
 } 
 

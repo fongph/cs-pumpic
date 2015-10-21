@@ -10,21 +10,7 @@
 $_inc = dirname(__FILE__); // includes
 $b_dir = dirname( $_inc ); // folder sites directory
 
-$filename = dirname(dirname(__FILE__)).'/templates/pages/compatibility.tpl';
-if(file_exists($filename)) {
-    $LastModified_unix = filemtime($filename); // время последнего изменения страницы
-    $LastModified = gmdate("D, d M Y H:i:s \G\M\T", $LastModified_unix);
-    $IfModifiedSince = false;
-    if (isset($_ENV['HTTP_IF_MODIFIED_SINCE']))
-        $IfModifiedSince = strtotime(substr($_ENV['HTTP_IF_MODIFIED_SINCE'], 5));  
-    if (isset($_SERVER['HTTP_IF_MODIFIED_SINCE']))
-        $IfModifiedSince = strtotime(substr($_SERVER['HTTP_IF_MODIFIED_SINCE'], 5));
-    if ($IfModifiedSince && $IfModifiedSince >= $LastModified_unix) {
-        header($_SERVER['SERVER_PROTOCOL'] . ' 304 Not Modified');
-        exit;
-    }
-    header('Last-Modified: '. $LastModified);   
-}
+
 
 
 use Models\Compatibility;
@@ -34,6 +20,23 @@ require_once $_inc.'/functions.php';
 require_once $_inc.'/lib/class.phpmail.php';
 
 smarty_function_getUserInfo(array(), $smarty);
+if(!$smarty->getTemplateVars('getUserInfo')) {
+    $filename = dirname(dirname(__FILE__)).'/templates/pages/compatibility.tpl';
+    if(file_exists($filename)) {
+        $LastModified_unix = filemtime($filename); // время последнего изменения страницы
+        $LastModified = gmdate("D, d M Y H:i:s \G\M\T", $LastModified_unix);
+        $IfModifiedSince = false;
+        if (isset($_ENV['HTTP_IF_MODIFIED_SINCE']))
+            $IfModifiedSince = strtotime(substr($_ENV['HTTP_IF_MODIFIED_SINCE'], 5));  
+        if (isset($_SERVER['HTTP_IF_MODIFIED_SINCE']))
+            $IfModifiedSince = strtotime(substr($_SERVER['HTTP_IF_MODIFIED_SINCE'], 5));
+        if ($IfModifiedSince && $IfModifiedSince >= $LastModified_unix) {
+            header($_SERVER['SERVER_PROTOCOL'] . ' 304 Not Modified');
+            exit;
+        }
+        header('Last-Modified: '. $LastModified);   
+    }
+} 
 
 //$filename = dirname(dirname(__FILE__)).'/templates/pages/compatibility.tpl';
 //if(file_exists($filename)) {
@@ -157,9 +160,10 @@ if(is_array($user) || !$user ) {
 //    $smarty->clearCache('compatibility.tpl', $cache_id);
 //} 
 
-$smarty->clearCache('compatibility.tpl');
-$smarty->clearCache(null, 'main-compatibility-send-find-phone');
-$smarty->clearCache(null, 'includes_main_main-top-menu');
+
+//$smarty->clearCache('compatibility.tpl');
+//$smarty->clearCache(null, 'main-compatibility-send-find-phone');
+//$smarty->clearCache(null, 'includes_main_main-top-menu');
 
 //$hash = md5($cache_id);
 //$endTime = strtotime("+1 day");
@@ -180,9 +184,8 @@ $smarty->clearCache(null, 'includes_main_main-top-menu');
 // $compatibility->getCategoriesCount();
 
 $smarty->cache_lifetime = 3600;
-
 if(!$smarty ->isCached('compatibility.tpl')) {
-     $cat_phones = $compatibility->getCategoryModels();
+    $cat_phones = $compatibility->getCategoryModels();
     $smarty->assign('phones', $cat_phones, false);
     //$cats = $compatibility->getCategories();
     //$smarty->assign('phones', $cats, false);

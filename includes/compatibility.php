@@ -10,21 +10,21 @@
 $_inc = dirname(__FILE__); // includes
 $b_dir = dirname( $_inc ); // folder sites directory
 
-//$filename = dirname(dirname(__FILE__)).'/templates/pages/compatibility.tpl';
-//if(file_exists($filename)) {
-//    $LastModified_unix = filemtime($filename); // время последнего изменения страницы
-//    $LastModified = gmdate("D, d M Y H:i:s \G\M\T", $LastModified_unix);
-//    $IfModifiedSince = false;
-//    if (isset($_ENV['HTTP_IF_MODIFIED_SINCE']))
-//        $IfModifiedSince = strtotime(substr($_ENV['HTTP_IF_MODIFIED_SINCE'], 5));  
-//    if (isset($_SERVER['HTTP_IF_MODIFIED_SINCE']))
-//        $IfModifiedSince = strtotime(substr($_SERVER['HTTP_IF_MODIFIED_SINCE'], 5));
-//    if ($IfModifiedSince && $IfModifiedSince >= $LastModified_unix) {
-//        header($_SERVER['SERVER_PROTOCOL'] . ' 304 Not Modified');
-//        exit;
-//    }
-//    header('Last-Modified: '. $LastModified);   
-//}
+$filename = dirname(dirname(__FILE__)).'/templates/pages/compatibility.tpl';
+if(file_exists($filename)) {
+    $LastModified_unix = filemtime($filename); // время последнего изменения страницы
+    $LastModified = gmdate("D, d M Y H:i:s \G\M\T", $LastModified_unix);
+    $IfModifiedSince = false;
+    if (isset($_ENV['HTTP_IF_MODIFIED_SINCE']))
+        $IfModifiedSince = strtotime(substr($_ENV['HTTP_IF_MODIFIED_SINCE'], 5));  
+    if (isset($_SERVER['HTTP_IF_MODIFIED_SINCE']))
+        $IfModifiedSince = strtotime(substr($_SERVER['HTTP_IF_MODIFIED_SINCE'], 5));
+    if ($IfModifiedSince && $IfModifiedSince >= $LastModified_unix) {
+        header($_SERVER['SERVER_PROTOCOL'] . ' 304 Not Modified');
+        exit;
+    }
+    header('Last-Modified: '. $LastModified);   
+}
 
 
 use Models\Compatibility;
@@ -148,9 +148,16 @@ if(is_array($user) || !$user ) {
 } 
 */
 
-$smarty->clearCache('compatibility.tpl');
-$smarty->clearCache(null, 'main-compatibility-send-find-phone');
-$smarty->clearCache(null, 'includes_main_main-top-menu');
+$cache_id = 'compatibility|compatibility_start';
+if(is_array($smarty->getTemplateVars('getUserInfo')) && isset($smarty->getTemplateVars('getUserInfo')['login'])) {
+    $cache_id = 'compatibility|compatibility_'.md5($smarty->getTemplateVars('getUserInfo')['name'].$smarty->getTemplateVars('getUserInfo')['login']);
+    
+    $smarty->clearCache('compatibility.tpl');
+    $smarty->clearCache('compatibility.tpl', 'compatibility');
+    $smarty->clearCache('compatibility.tpl', $cache_id);
+    $smarty->clearCache(null, 'main-compatibility-send-find-phone');
+    $smarty->clearCache(null, 'includes_main_main-top-menu');
+}
 
 //$hash = md5($cache_id);
 //$endTime = strtotime("+1 day");
@@ -172,7 +179,7 @@ $smarty->clearCache(null, 'includes_main_main-top-menu');
 
 $smarty->cache_lifetime = 3600;
 
-//if(!$smarty ->isCached('compatibility.tpl', $cache_id)) {
+if(!$smarty ->isCached('compatibility.tpl', $cache_id)) {
      $cat_phones = $compatibility->getCategoryModels();
     $smarty->assign('phones', $cat_phones, false);
     //$cats = $compatibility->getCategories();
@@ -182,9 +189,9 @@ $smarty->cache_lifetime = 3600;
     // domain
     $smarty->assign('domain', $config['domain']);
     $smarty->assign('api_device', $config['api_device']);
-//}
+}
 
 // init output params!
 $smarty->assign('getOut', $_result);
 
-$smarty->display('compatibility.tpl'); // , $cache_id
+$smarty->display('compatibility.tpl', $cache_id); // , $cache_id

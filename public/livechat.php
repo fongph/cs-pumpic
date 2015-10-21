@@ -29,7 +29,7 @@ $data = json_decode($inputData, true);
 $logger->debug("Started");
 
 if (isset($_GET['b28d30d3683bf925d1f02b65a65984b400f3bf41d87aa3fcaf2b13ca01d97650'])) {
-    $data = null;
+    $eventData = null;
 
     if ($data['event_type'] === 'chat_ended') {
         $messages = array();
@@ -41,7 +41,7 @@ if (isset($_GET['b28d30d3683bf925d1f02b65a65984b400f3bf41d87aa3fcaf2b13ca01d9765
             );
         }
 
-        $data = array(
+        $eventData = array(
             'email' => $data['visitor']['email'],
             'name' => $data['visitor']['name'],
             'chat' => array(
@@ -50,7 +50,7 @@ if (isset($_GET['b28d30d3683bf925d1f02b65a65984b400f3bf41d87aa3fcaf2b13ca01d9765
             )
         );
     } else if ($data['event_type'] === 'ticket_created') {
-        $data = array(
+        $eventData = array(
             'email' => $data['ticket']['requester']['mail'],
             'name' => $data['ticket']['requester']['name'],
             'ticket' => array(
@@ -61,9 +61,9 @@ if (isset($_GET['b28d30d3683bf925d1f02b65a65984b400f3bf41d87aa3fcaf2b13ca01d9765
         );
     }
 
-    if ($data !== null) {
+    if ($eventData !== null) {
         $eventManager = \EventManager\EventManager::getInstance();
-        $eventManager->emit('front-livechat', $data);
+        $eventManager->emit('front-livechat', $eventData);
         $logger->debug("Event sended");
     }
 }

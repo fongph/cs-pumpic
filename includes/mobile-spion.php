@@ -42,18 +42,39 @@ if($_request['productID']) {
 
 }
 
+// conver to evro
+if(is_array($_sortingProducts)) {
+    if(isset($_sortingProducts['basic']) && is_array($_sortingProducts['basic'])) {
+        foreach($_sortingProducts['basic'] as $bkey => $bitem) {
+            $_sortingProducts['basic'][$bkey]['price'] = round($obj->converting($bitem['price'], 'eur'), 2);
+        }
+    }
+    if(isset($_sortingProducts['premium']) && is_array($_sortingProducts['premium'])) {
+        foreach($_sortingProducts['premium'] as $pkey => $pitem) {
+            $_sortingProducts['premium'][$pkey]['price'] = round($obj->converting($pitem['price'], 'eur'), 2);
+        }
+    }
+}
+
 // default
 if(is_array($products)) { 
+    
     // Basic
     if(isset($products['basic'])) {
         foreach($products['basic'] as $item) :
-            if($item['period'] == 12 && $item['id']) $smarty->assign('getDefaultBasic', $item['id']);
+            if($item['period'] == 12 && $item['id']) { 
+                $smarty->assign('getDefaultBasic', $item['id']);
+                $smarty->assign('getDefaultBasicMoth', round( $obj->converting( ($item['price']/12), 'eur'), 2));
+            }    
         endforeach;
     }
     // Premium
     if(isset($products['premium'])) {
         foreach($products['premium'] as $item) :
-            if($item['period'] == 12 && $item['id']) $smarty->assign('getDefaultPremium', $item['id']);
+            if($item['period'] == 12 && $item['id']) {
+                $smarty->assign('getDefaultPremium', $item['id']);
+                $smarty->assign('getDefaultPremiumMoth', round( $obj->converting( ($item['price']/12), 'eur'), 2));
+            }    
         endforeach;
     }
 }

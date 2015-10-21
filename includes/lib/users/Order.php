@@ -23,6 +23,9 @@ class Order extends ManagerUser
     const PRODUCT_TYPE = 'first';
     const SELLER = 'pumpic.com';
     
+    const USER_STATUS_OLD = 'old-customers';
+    const USER_STATUS_NEW = 'new-customers';
+    
     private $_billing;
     private $_gateway;
     private $_license;
@@ -92,6 +95,17 @@ class Order extends ManagerUser
         }    
     }
     
+    public function converting( $value, $iso = 'usd' ) {
+        if($this -> _dbblog === null) return NULL;
+        
+        $iso = $this -> _dbblog->quote($iso);
+        $rante = $this -> _dbblog->query("SELECT `rates` FROM `currencies` WHERE `iso` = {$iso} AND hidden = 0")->fetch();
+        if(isset($rante['rates'])) {
+            return $value * (1/$rante['rates']);
+        }
+        return NULL;
+    }
+    
     // registration or store
     private function _createOrder( $userID = null, $productId, $testMode = false ) 
     {
@@ -99,7 +113,10 @@ class Order extends ManagerUser
         $order = $this -> _billing -> getOrder();
         $order->setSiteId(self::SITE_ID);
         if($userID){
-            $order->setUserId($userID);
+            $order->setUserId($userID)
+                  ->setUserStatus( self::USER_STATUS_OLD );
+        } else {
+            $order->setUserStatus( self::USER_STATUS_NEW );
         }
          $order->setStatus(OrderRecord::STATUS_PENDING) // ->setStatus(CS\Models\Order\OrderRecord::STATUS_PENDING) ::STATUS_CREATED
                 ->setPaymentMethod(OrderRecord::PAYMENT_METHOD_FASTSPRING)
@@ -140,11 +157,13 @@ class Order extends ManagerUser
                 ->setInstant();
                 // ->setTestMode(); // не обязательно
 
-        $googleAnalytics = new OrderGoogleAnalyticsRecord($this->_pdo);
-        $googleAnalytics
-            ->setOrderId($order->getId())
-            ->setDataFromCookiesArray($_COOKIE)
-            ->save();
+        if($_COOKIE) {
+            $googleAnalytics = new OrderGoogleAnalyticsRecord($this->_pdo);
+            $googleAnalytics
+                ->setOrderId($order->getId())
+                ->setDataFromCookiesArray($_COOKIE)
+                ->save();
+        }
         
         if($testMode) $this -> _gateway->setTestMode();
                 
@@ -164,7 +183,10 @@ class Order extends ManagerUser
         $order = $this -> _billing -> getOrder();
         $order->setSiteId(self::SITE_ID);
         if($userID){
-            $order->setUserId($userID);
+            $order->setUserId($userID)
+                  ->setUserStatus( self::USER_STATUS_OLD );
+        } else {
+            $order->setUserStatus( self::USER_STATUS_NEW );
         }
          $order->setStatus(OrderRecord::STATUS_COMPLETED) // ->setStatus(CS\Models\Order\OrderRecord::STATUS_PENDING) ::STATUS_CREATED 
                 ->setPaymentMethod(OrderRecord::PAYMENT_METHOD_INTERNAL)
@@ -219,12 +241,14 @@ class Order extends ManagerUser
             
         }
 
-        $googleAnalytics = new OrderGoogleAnalyticsRecord($this->_pdo);
-        $googleAnalytics
-            ->setOrderId($order->getId())
-            ->setDataFromCookiesArray($_COOKIE)
-            ->save();
-
+        if(isset($_COOKIE)) {
+            $googleAnalytics = new OrderGoogleAnalyticsRecord($this->_pdo);
+            $googleAnalytics
+                ->setOrderId($order->getId())
+                ->setDataFromCookiesArray($_COOKIE)
+                ->save();
+        }
+        
         return true;
     } 
     
@@ -234,7 +258,10 @@ class Order extends ManagerUser
         $order = $this -> _billing -> getOrder();
         $order->setSiteId(self::SITE_ID);
         if($userID){
-            $order->setUserId($userID);
+            $order->setUserId($userID)
+                    ->setUserStatus( self::USER_STATUS_OLD );
+        } else {
+            $order->setUserStatus( self::USER_STATUS_NEW );
         }
          $order->setStatus(OrderRecord::STATUS_PENDING) // ->setStatus(CS\Models\Order\OrderRecord::STATUS_PENDING) ::STATUS_CREATED
                 ->setPaymentMethod(OrderRecord::PAYMENT_METHOD_FASTSPRING)

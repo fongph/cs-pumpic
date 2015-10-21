@@ -7456,7 +7456,7 @@ legend {
 
 .send_mobile_operators_find_phone fieldset > div {
     padding: 5px 18px 15px;
-    background: #f2f2f2;
+/*    background: #f2f2f2;*/
 }
 
 .send_mobile_operators_find_phone fieldset > legend {
@@ -15682,6 +15682,13 @@ ul.list_category li:first-child {
     }
 }
 
+#tmp-isg *, .tmp-lc-rs * {
+    font-weight: 300;
+}
+
+.tmp-lc-rs .box-rsp {
+    padding-top: 10px;
+}
 
 .border-top-bottom {
     border-color: #e8e8e8 !important;

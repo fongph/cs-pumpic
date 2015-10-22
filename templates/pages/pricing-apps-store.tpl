@@ -2,6 +2,7 @@
 {*formOrder post=$smarty.post*}
 
 {include file='../includes/main/main-header.tpl'
+    showRand="true"
     title="Phone Tracker Prices and Subscription Plans"
     description="Pumpic offers high-quality Cell Phone Tracking Software for a good price. Find out more about a price range and subscription plan types to choose the one suitable for your monitoring needs."
 }
@@ -38,7 +39,7 @@
         {include file='../includes/content/phone/block-phone.tpl'
                  style="black"   
         }
-		
+	
         <div class="no_bg">
             <div class="container">
                 <div class="row">

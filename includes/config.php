@@ -74,7 +74,7 @@ $config = array(
                 'opening-soon-thanks.html' => 'opening-soon-thanks.php',
                 // detected rtegion
                 'ipregion.html'            => 'ipregion.php',
-                'currency.html'            => 'currency.php',
+                // 'currency.html'            => 'currency.php',
             
                 'popup_email_send.html'   => 'popup_email_send.php',
             

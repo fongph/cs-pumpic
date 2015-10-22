@@ -6954,7 +6954,7 @@ currencyHandler = {
       var $_settings = {
           'debug': false,
           'api_key': '', // app_id=
-          'host': '/currency.html',
+          // 'host': '/currency.html',
           'currBase': 'USD',
           'currCode': { 'usd' : '$', 
                         'eur' :'€', 
@@ -7095,47 +7095,53 @@ currencyHandler = {
         _json: function(_data) {
             methods._die('Load json curr..');
             var _url = '', result = {};
-            _data = (_data) ? _data : {
-                '_base': $_settings.currBase, // set Base currance
-                '_filter': $_settings.filter // set filter in iso
-            }; 
             
-            if( $("body").hasClass("ie8") || $("body").hasClass("ie9") ) { 
-                methods._die('Load ie8 or ie9 ...');
-                // fix for ie8
-                var responce = $.ajax({
-                   type: $_settings.ajax.type,
-                   url: $_settings.host,
-                   processData: true,
-                   async: false,
-                   cache: false,
-                   data: $.extend(_data, $_settings.ajax.data),
-                   dataType: "json",
-                   success: function () {
-                   }
-                }).responseText;
-                responce = eval('['+responce+']');
-                methods.setCach('_ajax', responce[0]); // .responseJSON
-                
-            } else {
-                $.ajax({ 
-                    type: $_settings.ajax.type,
-                    async: false,
-                    cache: false,
-                    url: $_settings.host,
-                    data: $.extend(_data, $_settings.ajax.data),
-                    dataType: $_settings.ajax.dataType,
-                    crossDomain: $_settings.ajax.crossDomain
-                }).done(function(responce) {
-                    methods._die( 'Responce..' );
-                    methods._die( responce );
-                    if(responce) {
+            
+            
+//            _data = (_data) ? _data : {
+//                '_base': $_settings.currBase, // set Base currance
+//                '_filter': $_settings.filter // set filter in iso
+//            }; 
+//            
+//            if( $("body").hasClass("ie8") || $("body").hasClass("ie9") ) { 
+//                methods._die('Load ie8 or ie9 ...');
+//                // fix for ie8
+//                var responce = $.ajax({
+//                   type: $_settings.ajax.type,
+//                   url: $_settings.host,
+//                   processData: true,
+//                   async: false,
+//                   cache: false,
+//                   data: $.extend(_data, $_settings.ajax.data),
+//                   dataType: "json",
+//                   success: function () {
+//                   }
+//                }).responseText;
+//                responce = eval('['+responce+']');
+//                methods.setCach('_ajax', responce[0]); // .responseJSON
+//                
+//            } else {
+//                $.ajax({ 
+//                    type: $_settings.ajax.type,
+//                    async: false,
+//                    cache: false,
+//                    url: $_settings.host,
+//                    data: $.extend(_data, $_settings.ajax.data),
+//                    dataType: $_settings.ajax.dataType,
+//                    crossDomain: $_settings.ajax.crossDomain
+//                }).done(function(responce) {
+//                    methods._die( 'Responce..' );
+//                    methods._die( responce );
+//                    if(responce) {
+//
+//                         methods._die( responce );
+//                        methods.setCach('_ajax', responce); // .responseJSON 
+//                    }
+//                });
+//            }
 
-                         methods._die( responce );
-                        methods.setCach('_ajax', responce); // .responseJSON 
-                    }
-                });
-            }
+            if(isset($rand) && !methods.getCach('_ajax')) methods.setCach('_ajax', $rand);
+
             methods._die( 'getCache...' );
             methods._die( methods.getCach('_ajax') );
             return result = methods.getCach('_ajax');

@@ -188,27 +188,37 @@
     <div class="container">
             <h2 class="text-center testimonial-title">Trusted by Over 10 000 Customers Worldwide:</h2>
             <div class="row">
-                    <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
+                
+                <div class="bxSliders only-pc">
+                        <!-- SLIDE #1 -->
+                        <div class="slide">
+                
+                    <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
                             <img src="{$img}/testimonials/helen-o-14.png" alt="" class="testimonial-photo">
                             <div class="testimonial-text">
                                     <h4>Helen O. – mother of 14-year-old daughter</h4>
                                     <p>“My daughter keeps messaging on her iPod all the time. After reading some articles on parenting web sources, I found out how dangerous social media can be for children of her age. That’s why I decided to apply parental monitoring for text messages on her iPod. Pumpic looked like a sound solution. I installed it and was quite satisfied with the result. All her messaging history is clearly visible to me now.”</p>
                             </div>
                     </div>
-                    <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
+                    <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
                             <img src="{$img}/testimonials/josh-m-13.png" alt="" class="testimonial-photo">
                             <div class="testimonial-text">
                                     <h4>Josh M. – father of 13-year-old son</h4>
                                     <p>“My son likes his iPod Touch very much. I think it’s the best gift I’ve ever presented to him. He likes it so much that goes to bed and wakes up with it in hands. It makes me worry a little. I know there’s such a fever in kids, when they keep playing and browsing and can’t stop. I’m afraid it might turn into addiction or he might face a kind of danger online. I decided to use parental control and set iPod time limit on his activities. Finally I can control the time he spends on his favorite device.”</p>
                             </div>
                     </div>
-                    <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
+                    <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
                             <img src="{$img}/testimonials/mike-b-16.png" alt="" class="testimonial-photo">
                             <div class="testimonial-text">
                                     <h4>Michael B. – father of 16-year-old son</h4>
                                     <p>“I was looking for iPod Touch parental controls for YouTube. My son used to waste to much of time watching videos. I needed to limit this time wasted somehow. A friend of mine recommended Pumpic. The app lets me block the YouTube application permanently or set time limits on its running. There are so many useful options in Pumpic that I can keep complete control of my kid’s iPod from anywhere I go. And what is most important, it tracks location and allows setting geo-fences, which I consider a must for child safety.”</p>
                             </div>
                     </div>
+                            
+                        </div>
+                </div> 
+                <div class="bxSliderMobile"></div>            
+                            
             </div>
     </div>
 </div> 

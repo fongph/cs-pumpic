@@ -257,27 +257,39 @@
     <div class="container">
             <h2 class="text-center testimonial-title">Testimonials:</h2>
             <div class="row">
-                    <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
+                
+                <div class="bxSliders only-pc">
+                        <!-- SLIDE #1 -->
+                        <div class="slide">
+                
+                    <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
                             <img src="{$img}/testimonials/email_monitoring_software/testimonials4.png" alt="" class="testimonial-photo">
                             <div class="testimonial-text">
                                     <h4>Steven R. (Fresno, CA)</h4>
                                     <p>“After a few days that I started to spy on email my son uses, I found that he receives too many spam letters from websites, which seemed strange to me. I opened some of them and realized that he was signed up for 18+ web sources, and that’s why they sent him advertisements. We had a serious talk and both agreed he should stop and sign out. I will keep an eye on him. Thanks Pumpic.”</p>
                             </div>
                     </div>
-                    <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
+                    <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
                             <img src="{$img}/testimonials/email_monitoring_software/testimonials5.png" alt="" class="testimonial-photo">
                             <div class="testimonial-text">
                                     <h4>Monica D. (Milwaukee, WI)</h4>
                                     <p>“Pumpic helped me learn the truth and my son get rid of a cyberbully, who kept sending him letters with threats. Messages always came from different addresses, but the message was almost the same. I didn’t know what to do first, but then decided to inform police and reply to the bully as a mom. In two days, he stopped offending my son. Thanks Pumpic for relieving my family.”</p>
                             </div>
                     </div>
-                    <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
+                    <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
                             <img src="{$img}/testimonials/email_monitoring_software/testimonials6.png" alt="" class="testimonial-photo">
                             <div class="testimonial-text">
                                     <h4>Margaret H. (Columbus, OH)</h4>
                                     <p>“Very useful app. I always know where my son logs in, on which websites he subscribes and networks he uses. It also helps me prevent my boy from watching forbidden videos and photos. I think such an app is a must-have, if you work all day and your kids require minding. I’m glad there are technologies for not entertaining only, but for parenting and childcare.”</p>
                             </div>
                     </div>
+                            
+                            
+                        </div>
+                </div> 
+                <div class="bxSliderMobile"></div>            
+                            
+                            
             </div>
     </div>
 </div>

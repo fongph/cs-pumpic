@@ -342,27 +342,37 @@
             <div class="container">
                 <h2 class="text-center testimonial-title">Trusted by Over 10 000 Customers Worldwide:</h2>
                 <div class="row">
-                    <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
-                        <img src="{$img}/testimonials/testimonials_new_47.png" alt="" class="testimonial-photo">
-                        <div class="testimonial-text">
-                            <h4>Merion S. – cares of 78-y.o. mother</h4>
-                            <p>“I’ve read a lot and watched many videos about elderly people who went out for a walk and never come back. My mother is 78 and I’m really afraid that something like that might happen to her. I made a research and found out of monitoring applications. They don’t require any additional devices and can be installed on a mobile phone. With Pumpic, I can set special areas and receive messages, when my mom leaves them. Thanks!”</p>
+                    
+                    <div class="bxSliders only-pc">
+                        <!-- SLIDE #1 -->
+                        <div class="slide">
+                    
+                        <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
+                            <img src="{$img}/testimonials/testimonials_new_47.png" alt="" class="testimonial-photo">
+                            <div class="testimonial-text">
+                                <h4>Merion S. – cares of 78-y.o. mother</h4>
+                                <p>“I’ve read a lot and watched many videos about elderly people who went out for a walk and never come back. My mother is 78 and I’m really afraid that something like that might happen to her. I made a research and found out of monitoring applications. They don’t require any additional devices and can be installed on a mobile phone. With Pumpic, I can set special areas and receive messages, when my mom leaves them. Thanks!”</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
-                        <img src="{$img}/testimonials/testimonials_new_48.png" alt="" class="testimonial-photo">
-                        <div class="testimonial-text">
-                            <h4>Sam Y. – cares of 69-y.o. father</h4>
-                            <p>“There are too many scammers who cash in on aged people. My father was cheated by one of them. A man called on his cell from an unknown number and said that my father had won a new TV, but that man needed money to deliver the prize. My father transferred him money and was very upset, as he received no feedback. I searched for a kind of mobile antifraud and came across Pumpic. In addition to calls blocking, it has a huge list of other helpful functions.”</p>
+                        <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
+                            <img src="{$img}/testimonials/testimonials_new_48.png" alt="" class="testimonial-photo">
+                            <div class="testimonial-text">
+                                <h4>Sam Y. – cares of 69-y.o. father</h4>
+                                <p>“There are too many scammers who cash in on aged people. My father was cheated by one of them. A man called on his cell from an unknown number and said that my father had won a new TV, but that man needed money to deliver the prize. My father transferred him money and was very upset, as he received no feedback. I searched for a kind of mobile antifraud and came across Pumpic. In addition to calls blocking, it has a huge list of other helpful functions.”</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
-                        <img src="{$img}/testimonials/testimonials_new_49.png" alt="" class="testimonial-photo">
-                        <div class="testimonial-text">
-                            <h4>Clara K. – raises 13-y.o. son</h4>
-                            <p>“I use Pumpic for several months to look after my kid remotely from work. The app shows great results and really helps me. I can easily find out who calls my son and prevent him from contacts with strangers. I can also see where he is at each particular period of time and check places he visits during a day. It’s very easy to do as every time my son leaves home, I receive a notification and know at once that he is going to go somewhere. For me the app works better than a babysitter.”</p>
+                        <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
+                            <img src="{$img}/testimonials/testimonials_new_49.png" alt="" class="testimonial-photo">
+                            <div class="testimonial-text">
+                                <h4>Clara K. – raises 13-y.o. son</h4>
+                                <p>“I use Pumpic for several months to look after my kid remotely from work. The app shows great results and really helps me. I can easily find out who calls my son and prevent him from contacts with strangers. I can also see where he is at each particular period of time and check places he visits during a day. It’s very easy to do as every time my son leaves home, I receive a notification and know at once that he is going to go somewhere. For me the app works better than a babysitter.”</p>
+                            </div>
                         </div>
-                    </div>
+                        
+                        </div>  
+                    </div>  
+                    <div class="bxSliderMobile"></div>        
+                        
                 </div>
             </div>
         </div>

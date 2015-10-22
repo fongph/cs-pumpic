@@ -183,27 +183,37 @@
     <div class="container">
             <h2 class="text-center testimonial-title">Trusted by Over 10 000 Customers Worldwide:</h2>
             <div class="row">
-                    <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
+                
+                <div class="bxSliders only-pc">
+                        <!-- SLIDE #1 -->
+                        <div class="slide">
+                
+                    <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
                             <img src="{$img}/testimonials/morgan-m-14.png" alt="" class="testimonial-photo">
                             <div class="testimonial-text">
                                     <h4>Morgan M. – father of 14-year-old daughter</h4>
                                     <p>“I needed a GPS tracking app for the iPhone of my little girl. She grows up and starts hanging out with her friends alone. They meet together quite often and I think she not always tells me where exactly they hang out. To get rid of constant worries I bought Pumpic and installed it on her phone. This app lets me see where she is at each time I need. I can also view her route history and check if she visits places I’ve not approved. That’s a huge help I suppose.”</p>
                             </div>
                     </div>
-                    <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
+                    <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
                             <img src="{$img}/testimonials/scarlett-d-12.png" alt="" class="testimonial-photo">
                             <div class="testimonial-text">
                                     <h4>Scarlett D. – mother of 12-year-old son</h4>
                                     <p>“I work 24/7 from time to time and that’s why sometimes have to leave my son alone. Pumpic lets me rest assured he is safe and protected, and won’t get into trouble. I track where he is, where he goes, and places he visits. The app also lets me set geo-fences to prevent him from visiting restricted places in advance. I can follow him remotely online and check who calls him while I’m away. Thanks Pumpic for taking my worries away!”</p>
                             </div>
                     </div>
-                    <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
+                    <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
                             <img src="{$img}/testimonials/janet-p-15.png" alt="" class="testimonial-photo">
                             <div class="testimonial-text">
                                     <h4>Janet P. – mother of 15-year-old son</h4>
                                     <p>“My son is 15. You know that children need thorough watch and care at this age. My friend is a school teacher and he recommended me Pumpic as the best Android family tracking app he had ever had to do with. I decided to give it a try and was satisfied with the result. I can supervise my boy on his tablet and track his whereabouts. The app lets me block many activities, which is essential especially when it comes to Internet access. Pumpic is a good helper for careful parents.”</p>
                             </div>
                     </div>
+                            
+                        </div>
+                </div>
+                <div class="bxSliderMobile"></div>            
+                            
             </div>
     </div>
 </div> 

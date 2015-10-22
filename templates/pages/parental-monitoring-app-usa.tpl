@@ -226,21 +226,21 @@
                     <div class="bxSliders only-pc">
                         <!-- SLIDE #1 -->
                         <div class="slide">
-                            <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
+                            <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
                                     <img src="{$img}/testimonials/usa/19.png" alt="" class="testimonial-photo">
                                     <div class="testimonial-text">
                                             <h4>Mike P. – Los Angeles, California</h4>
                                             <p>“With Pumpic app I can prevent my son from playing games and using social medial during classes. I simply block distracting applications and unlock them as soon as lessons are over. Thanks to Pumpic my son have no troubles with teachers at schools he had before.”</p>
                                     </div>
                             </div>
-                            <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
+                            <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
                                     <img src="{$img}/testimonials/usa/20.png" alt="" class="testimonial-photo">
                                     <div class="testimonial-text">
                                             <h4>Milena S. – NYC, New York</h4>
                                             <p>“My daughter used to break family rules and visited parties at her friends without my permission. Right after my husband had installed child locator on her smartphone I set geo-fences to check when she leaves home and comes back. I can also see where she is at each particular period of time. Pumpic helps us maintain our family rules.”</p>
                                     </div>
                             </div>
-                            <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
+                            <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
                                     <img src="{$img}/testimonials/usa/21.png" alt="" class="testimonial-photo">
                                     <div class="testimonial-text">
                                             <h4>Susan S. – Las Vegas, California</h4>
@@ -251,21 +251,21 @@
     
     <!-- SLIDE #2 -->
     <div class="slide">
-        <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
+        <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
                 <img src="{$img}/testimonials/usa/22.png" alt="" class="testimonial-photo">
                 <div class="testimonial-text">
                         <h4>Michel L. – San Antonio, Texas</h4>
                         <p>“Pumpic helps me prevent my son from watching 18+ videos online. It was a very sad issue for my husband and me, so we turned to phone monitoring. The results are really great! In addition to the features we’ve been looking for the app allows checking calls and SMS to prevent our boy from contacting strangers both online and on the phone.”</p>
                 </div>
         </div>
-        <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
+        <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
                 <img src="{$img}/testimonials/usa/23.png" alt="" class="testimonial-photo">
                 <div class="testimonial-text">
                         <h4>Morin K. – Houston, Texas</h4>
                         <p>“It’s brought peace of mind to my family. I was too worried when I let my girl go to the cinema or visit different parties on her own. She’s only 16 and I know how dangerous this age is. With Pumpic I feel pretty calm as I can make sure where she is and if she’s ok at any time.”</p>
                 </div>
         </div>
-        <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
+        <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
                 <img src="{$img}/testimonials/usa/24.png" alt="" class="testimonial-photo">
                 <div class="testimonial-text">
                         <h4>Den P. – Chicago, Illinois</h4>
@@ -276,8 +276,9 @@
     <!-- END -->
     
 </div>
+                <div class="bxSliderMobile"></div>
     
-                    <div class="bxSliders only-mobile">
+                    {*<div class="bxSliders only-mobile">
                         <!-- SLIDE #1 -->
                         <div class="slide">
                             <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
@@ -344,7 +345,7 @@
                         </div> <!-- .slide-->
                         
                         <!-- END -->
-                    </div>
+                    </div>*}
             </div>
     </div>
 </div>		

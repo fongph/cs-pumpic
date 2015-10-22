@@ -230,21 +230,21 @@
                     <div class="bxSliders only-pc">
                         <!-- SLIDE #1 -->
                         <div class="slide">
-                            <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
+                            <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
                                 <img src="{$img}/testimonials/australia/1.png" alt="" class="testimonial-photo">
                                 <div class="testimonial-text">
                                     <h4>Josh L. – Sydney, New South Wales</h4>
                                     <p>“My son started acting weird a few weeks ago. His girlfriend told me some older boys bullied him at school and shared threatful comments under his posts on Instagram. I decided to get some reliable iPhone monitoring software and came across Pumpic. The app helped me handle the situation with those bullies and keeps helping me protect my boy on the Internet here and after.”</p>
                                 </div>
                             </div>
-                            <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
+                            <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
                                 <img src="{$img}/testimonials/australia/2.png" alt="" class="testimonial-photo">
                                 <div class="testimonial-text">
                                     <h4>Megan Z. – Melbourne, Victoria</h4>
                                     <p>“If you need to track a mobile phone in Australia, I would recommend you Pumpic. The app has so many useful features that I can easily keep an eye on my kids online and anywhere they go. Calls, text messages, locations, geo-fences, all Internet activities. Everything I need to protect my family is in one good app.”</p>
                                 </div>
                             </div>
-                            <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
+                            <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
                                 <img src="{$img}/testimonials/australia/3.png" alt="" class="testimonial-photo">
                                 <div class="testimonial-text">
                                     <h4>Steven T. – Adelaide, South Australia</h4>
@@ -255,21 +255,21 @@
     
                         <!-- SLIDE #2 -->
                         <div class="slide">
-                            <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
+                            <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
                                 <img src="{$img}/testimonials/australia/4.png" alt="" class="testimonial-photo">
                                 <div class="testimonial-text">
                                     <h4>Maria O. – Canberra, ACT</h4>
                                     <p>“It took me as much as a week to find a workable solution for my children online safety. After reading many reviews, forums, and taking advice of other moms Pumpic turned out to be one of the most reliable kid tracker apps in Australia. It includes all functions I need and is simple enough to use it without any technical skills.”</p>
                                 </div>
                             </div>
-                            <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
+                            <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
                                 <img src="{$img}/testimonials/australia/5.png" alt="" class="testimonial-photo">
                                 <div class="testimonial-text">
                                     <h4>Michael P. – Brisbane, Queensland</h4>
                                     <p>“My son always was a problem kid and I didn’t want him to get into troubles. That’s why I decided to monitor my kids phone, when we’d moved to Australia. I got Pumpic and started monitoring his activities both online and offline. I set geo-fences to prevent him from visiting restricted places and check when he comes back home. The app also lets me check his contacts. I would recommend Pumpic to all parents, as it really helps prevent kids from dangers.”</p>
                                 </div>
                             </div>
-                            <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
+                            <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
                                 <img src="{$img}/testimonials/australia/6.png" alt="" class="testimonial-photo">
                                 <div class="testimonial-text">
                                     <h4>Zoe L. – Melbourne, Victoria</h4>
@@ -280,8 +280,9 @@
                         <!-- END -->
     
                     </div>
-    
-                    <div class="bxSliders only-mobile">
+                    <div class="bxSliderMobile"></div>
+                    
+                   {* <div class="bxSliders only-mobile">
                         <!-- SLIDE #1 -->
                         <div class="slide">
                             <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
@@ -348,7 +349,7 @@
                         </div> <!-- .slide-->
                         
                         <!-- END -->
-                    </div>
+                    </div>*}
             </div>
     </div>
 </div>		

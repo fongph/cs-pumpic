@@ -184,27 +184,37 @@
     <div class="container">
             <h2 class="text-center testimonial-title">Trusted by Over 10 000 Customers Worldwide:</h2>
             <div class="row">
-                    <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
+                
+                <div class="bxSliders only-pc">
+                        <!-- SLIDE #1 -->
+                        <div class="slide">
+                
+                    <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
                             <img src="{$img}/testimonials/peter-f-13.png" alt="" class="testimonial-photo">
                             <div class="testimonial-text">
                                     <h4>Peter F. – father of 13-year-old son</h4>
                                     <p>“I needed to set parental control on son’s Android and Chrome browser in particular. I installed Pumpic on his tablet and started tracking his online activities. I found out many interesting things. And one of them was that my son visited some web sources restricted for the underage. Pumpic helped me block it all and prevent my kid from watching 18+ videos for future use.”</p>
                             </div>
                     </div>
-                    <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
+                    <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
                             <img src="{$img}/testimonials/sarah-g-12.png" alt="" class="testimonial-photo">
                             <div class="testimonial-text">
                                     <h4>Sarah G. – mother of 12-year-old son</h4>
                                     <p>“My sister recommended me Pumpic as a kind of safe browser for iPad I was going to present my son for a birthday. I tried it before giving him the device and was very surprised seeing with how many useful capabilities the app would provide me in addition. Locations, social media, app control, screen time limiting. All of these is a must for parents who really care.”</p>
                             </div>
                     </div>
-                    <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
+                    <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
                             <img src="{$img}/testimonials/tomas-u-15.png" alt="" class="testimonial-photo">
                             <div class="testimonial-text">
                                     <h4>Tomas U. – father of 15-year-old daughter</h4>
                                     <p>“I started thinking about iPhone Safari parental controls soon after I’d noticed how much time my daughter spends surfing the web on her cell phone. Pumpic showed me the way out. It’s amazing how many helpful options the app has. I can not only monitor her browsing activity, but also track calls, messages, camera shots, and even location. That’s a huge help for parents.”</p>
                             </div>
                     </div>
+                            
+                        </div>
+                </div> 
+                <div class="bxSliderMobile"></div>            
+                            
             </div>
     </div>
 </div> 

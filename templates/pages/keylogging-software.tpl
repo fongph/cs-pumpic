@@ -249,27 +249,37 @@
     <div class="container">
             <h2 class="text-center testimonial-title">Testimonials:</h2>
             <div class="row">
-                    <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
+                
+                <div class="bxSliders only-pc">
+                        <!-- SLIDE #1 -->
+                        <div class="slide">
+                
+                    <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
                             <img src="{$img}/testimonials/keylogging_software/testimonials1.png" alt="" class="testimonial-photo">
                             <div class="testimonial-text">
                                     <h4>Sharon F. (Pueblo, CO)</h4>
                                     <p>“When I decided to buy the first smartphone for my daughter, I also asked a shop assistant to install Android key logger at once. However, it did not satisfy my expectations at all. My sister suggested me Pumpic as parental control system. I tried it, and keep using until now. I can see literally everything that my daughter does with her smartphone. I have no worries about her any longer”</p>
                             </div>
                     </div>
-                    <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
+                    <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
                             <img src="{$img}/testimonials/keylogging_software/testimonials2.png" alt="" class="testimonial-photo">
                             <div class="testimonial-text">
                                     <h4>Paula J. (Boise, ID)</h4>
                                     <p>“Great app! Calls, SMS, Internet connection, chats, games – everything is clearly visible. I can control my son completely. There is nothing he can hide from me. Now he spends more time doing homework, finally gets better marks, stopped smoking. Thanks for such technology. I did not suspect that such simple monitoring can have such results.”</p>
                             </div>
                     </div>
-                    <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
+                    <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
                             <img src="{$img}/testimonials/keylogging_software/testimonials3.png" alt="" class="testimonial-photo">
                             <div class="testimonial-text">
                                     <h4>Walter K. (Denver, CO)</h4>
                                     <p>“It is hard to overstate help that Pumpic provides. I work days and nights, meanwhile my son keeps wasting his time with his tablet in hands. Now the app lets me monitor his activity from work. I can follow him and know where he goes, I can see who calls him and monitor each button pushed. I can work without worries now.””</p>
                             </div>
                     </div>
+                            
+                        </div>
+                </div>
+                <div class="bxSliderMobile"></div>            
+                            
             </div>
     </div>
 </div>

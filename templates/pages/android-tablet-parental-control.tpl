@@ -182,27 +182,37 @@
     <div class="container">
             <h2 class="text-center testimonial-title">Trusted by Over 10 000 Customers Worldwide:</h2>
             <div class="row">
-                    <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
+                
+                <div class="bxSliders only-pc">
+                        <!-- SLIDE #1 -->
+                        <div class="slide">
+                
+                    <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
                             <img src="{$img}/testimonials/andrea-l-16.png" alt="" class="testimonial-photo">
                             <div class="testimonial-text">
                                     <h4>Andrea L. – mother of 16-year-old son</h4>
                                     <p>“I learned about Pumpic from a review of best parental control apps for Android tablet. I liked its benefits among other similar applications and decided to try it to secure my own son. He is 16 and this age I suppose is the most dangerous for teens. Pumpic works great. It lets me view all activities on his device and control him remotely. I know where he goes and where he currently is. I can check if he tells me the truth when I ask him questions on his time spending. Which is great too.”</p>
                             </div>
                     </div>
-                    <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
+                    <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
                             <img src="{$img}/testimonials/martin-s-12.png" alt="" class="testimonial-photo">
                             <div class="testimonial-text">
                                     <h4>Martin S. – father of 12-year-old daughter</h4>
                                     <p>“I use Pumpic to prevent my little daughter from restricted videos, photos and other content she may come across on the Internet. There are so many things children shouldn’t see and Pumpic shows good results in limiting her access to all this mess. I can block links to 18+ sources, inappropriate games and so on. Also I can control her screen time and prevent her from wasting time on playing games. Very sound solution for careful parents.”</p>
                             </div>
                     </div>
-                    <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
+                    <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
                             <img src="{$img}/testimonials/miranda-p-14.png" alt="" class="testimonial-photo">
                             <div class="testimonial-text">
                                     <h4>Miranda P. – mother of 14-year-old son</h4>
                                     <p>“When I decided to set parental controls on my son’s Android tablet I didn’t actually believe the app would do such a good job. My husband got a free trial and we though why not to give it a shot. We both were amazed with how helpful Pumpic could be. It shows just everything happening on my son’s tablet. Browsing history, Facebook, Instagram, Snapchat. The app logs all the data I need to protect him online. And location tracking option is irreplaceable.”</p>
                             </div>
                     </div>
+                            
+                        </div>
+                </div>
+                <div class="bxSliderMobile"></div>            
+                            
             </div>
     </div>
 </div> 

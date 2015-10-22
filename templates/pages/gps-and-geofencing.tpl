@@ -92,22 +92,25 @@
             <div class="row">
                 
 
+            <div class="bxSliders only-pc">
+                        <!-- SLIDE #1 -->
+                        <div class="slide">        
 
-<div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
+<div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
         <img src="{$img}/testimonials/testimonials_new_22.png" alt="" class="testimonial-photo">
         <div class="testimonial-text">
                 <h4>Tiffany G. (mother of 15-year-old son)</h4>
                 <p>“The app helped me find out that my son was skipping school classes. I used it to geofence his Android tablet and saw that sometimes he left school too early or didn’t enter it at all. Thanks to Pumpic for helping me take care of my boy. It’s amazing that I can use such technologies so easily. I’m 40 years old and I can’t say that I’m a techy person. However, it doesn’t demand from me any technical skills. I just switch it on and everything comes clear to me. I can now control my son and be sure that he won’t ever again miss school or do anything wrong without me knowing. It’s the most reliable geofence app for Android I’ve ever tried.”</p>
         </div>
 </div>
-<div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
+<div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
         <img src="{$img}/testimonials/testimonials_new_23.png" alt="" class="testimonial-photo">
         <div class="testimonial-text">
                 <h4>Scott J. (father of 16-year-old son)</h4>
                 <p>“I’ve recently presented my son his first Apple device. He was so pleased and happy. At the same time, we both agreed that I would set up parental app to receive geofence alerts from his iPhone and check when he leaves school or home and comes back. The app has shown great results since then. I don’t try to snoop into my kids’ activities I’m not supposed to, but it leaves me without any worries while he’s out with friends. If you need to geofence the Apple phone too, I’d recommend you Pumpic.”</p>
         </div>
 </div>
-<div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
+<div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
         <img src="{$img}/testimonials/testimonials_new_24.png" alt="" class="testimonial-photo">
         <div class="testimonial-text">
                 <h4>John and Megan F. (parents of 14-year-old daughter)</h4>
@@ -115,7 +118,12 @@
         </div>
 </div>
 
-                    
+                
+                        </div>
+            </div>
+            <div class="bxSliderMobile"></div>    
+        
+        
             </div>
     </div>
 </div>

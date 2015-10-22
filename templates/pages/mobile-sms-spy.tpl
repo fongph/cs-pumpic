@@ -303,27 +303,37 @@
     <div class="container">
             <h2 class="text-center testimonial-title">Pumpic SMS Monitoring Testimonials:</h2>
             <div class="row">
-                    <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
+                
+                <div class="bxSliders only-pc">
+                        <!-- SLIDE #1 -->
+                        <div class="slide">
+                
+                    <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
                             <img src="{$img}/testimonials/testimonials_new_19.png" alt="" class="testimonial-photo">
                             <div class="testimonial-text">
                                     <h4>Amanda J. (Newport Beach, CA)</h4>
                                     <p>“I am a single mother of 15 years old daughter. Recently, we had to move to the Golden State where she made friends with uncertain group of young people. I was worrying about her a lot. When I found Pumpic, I was relieved, now I can check her messages and IM chats to see what she is planning. I can see her GPS location and route history too to make sure she is home after school while I am at work.”</p>
                             </div>
                     </div>
-                    <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
+                    <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
                             <img src="{$img}/testimonials/testimonials_new_20.png" alt="" class="testimonial-photo">
                             <div class="testimonial-text">
                                     <h4>Tiffany and Greg W. (Huntsville, AL)</h4>
                                     <p>“We have two adorable daughters (10 and 12). We do everything to rise them in a proper Catholic way. Although we allow them to use smartphones, we do keep track of their phones with SMS monitoring app. We use it as a precaution. We are fully satisfied with Pumpic, it let us see all incoming and outgoing messages to make sure they are safe. We also use block list that allows us to monitor bad words used in messages, if there are such.”</p>
                             </div>
                     </div>
-                    <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
+                    <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
                             <img src="{$img}/testimonials/testimonials_new_21.png" alt="" class="testimonial-photo">
                             <div class="testimonial-text">
                                     <h4>George K. (Oklahoma City, OK)</h4>
                                     <p>“I installed Pumpic to keep track of my son, David (16). I am satisfied with the product, especially the function that allows me to see deleted messages. Sometimes, you just have to do it. I think it’s natural to protect your kids and Pumpic is one of the easiest ways.”</p>
                             </div>
                     </div>
+                            
+                        </div>
+                </div>
+                <div class="bxSliderMobile"></div>            
+                            
             </div>
     </div>
 </div>

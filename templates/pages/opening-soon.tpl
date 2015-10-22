@@ -93,27 +93,37 @@
 			<div class="container">
 				<h2 class="text-center">Pumpic Testimonials:</h2>
 				<div class="row">
-					<div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
+                                    <div class="bxSliders only-pc">
+                                        <!-- SLIDE #1 -->
+                                        <div class="slide">
+                                    
+                                    
+					<div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
 						<img src="{$img}/testimonial_1.png" alt="" class="testimonial-photo">
 						<div class="testimonial-text">
 							<h4>Jennet H.</h4>
 							<p>“No matter how much you love your children, they may be a big headache. Pumpic allows me to keep an eye on what they do or are up to. This is a great help.”</p>
 						</div>
 					</div>
-					<div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
+					<div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
 						<img src="{$img}/testimonial_3.png" alt="" class="testimonial-photo">
 						<div class="testimonial-text">
 							<h4>Sophia R.</h4>
 							<p>“The app is great! I use it to keep track of my employees. I regularly monitor their emails and online activity, so I can reasonably increase the productivity.”</p>
 						</div>
 					</div>
-					<div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
+					<div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
 						<img src="{$img}/testimonial_2.png" alt="" class="testimonial-photo">
 						<div class="testimonial-text">
 							<h4>Logan T.</h4>
 							<p>“Pumpic has made my life easier. Now I can take care of my kids, even when I’m far from home. I’m sure they are safe and secured wherever I go.”</p>
 						</div>
 					</div>
+                                                
+                                        </div>
+                                    </div>
+                                    <div class="bxSliderMobile"></div>            
+                                                
 				</div>
 			</div>
 		</div>

@@ -96,27 +96,38 @@
             <div class="container">
                 <h2 class="text-center testimonial-title">Trusted by Over 10 000 Customers Worldwide:</h2>
                 <div class="row">
-                    <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
+                    <div class="bxSliders only-pc">
+                        <!-- SLIDE #1 -->
+                        <div class="slide">
+                    
+                    
+                    <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
                         <img src="{$img}/testimonials/t_new_19.png" alt="" class="testimonial-photo">
                         <div class="testimonial-text">
                             <h4>Joan L. (Omaha, NE)</h4>
                             <p>“The app helps me control my children, while I’m at work. I have to work overtime to support my family, that’s why my kids are on their own more often than not. With Pumpic, I’m sure they are safe. I know that wherever my kids go and whatever they do, they take their cells with them. So, I can track them, find out who calls or writes them, how much time they spend online and for which purposes. I suppose it is one of the most useful apps I’ve ever used.”</p>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
+                    <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
                         <img src="{$img}/testimonials/email_monitoring_software/testimonials4.png" alt="" class="testimonial-photo">
                         <div class="testimonial-text">
                             <h4>Steven R. (Fresno, CA)</h4>
                             <p>“After a few days that I started to spy on email my son uses, I found that he receives too many spam letters from websites, which seemed strange to me. I opened some of them and realized that he was signed up for 18+ web sources, and that’s why they sent him advertisements. We had a serious talk and both agreed he should stop and sign out. I will keep an eye on him. Thanks Pumpic.”</p>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
+                    <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
                         <img src="{$img}/testimonials/t_new_2.png" alt="" class="testimonial-photo">
                         <div class="testimonial-text">
                             <h4>Melinda J. (St. Louis, MO)</h4>
                             <p>“I decided to install Android smartphone monitoring on my son’s cell since he started acting weird. He became very shy and scary. I tried to talk to him, but he said everything was fine. Pumpic helped me find out that my son was bullied by his schoolmates. They sent him messages with threats and posted offensive pictures online. I went to school, talked to teachers and parents of the offenders. I’m happy that we found the way out. Finally, my son and I can sleep without worries.”</p>
                         </div>
                     </div>
+                        
+                        
+                        </div>
+                    </div>
+                    <div class="bxSliderMobile"></div>    
+                        
                 </div>
             </div>
         </div>

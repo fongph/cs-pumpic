@@ -228,21 +228,21 @@
                     <div class="bxSliders only-pc">
     <!-- SLIDE #1 -->
     <div class="slide">
-        <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
+        <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
                 <img src="{$img}/testimonials/uk/13.png" alt="" class="testimonial-photo">
                 <div class="testimonial-text">
                         <h4>Caren O. – Birmingham, England</h4>
                         <p>“I’m a single mom with two boys-teenagers (13 and 15) and Pumpic helps me handle my parenting on my own. Previously I didn’t know what to do when I had to leave them alone during my business trips. Now I’m sure they are safe, when I’m away. I can view their online communication and control so that they not spend too much time on the Internet. Pumpic is a mobile phone tracker I can rely on even when I leave the UK.”</p>
                 </div>
         </div>
-        <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
+        <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
                 <img src="{$img}/testimonials/uk/14.png" alt="" class="testimonial-photo">
                 <div class="testimonial-text">
                         <h4>Peter L. – Glasgow, Scotland</h4>
                         <p>“I didn’t realize how dangerous the Internet might be for kids, until my 12-year-old son became a victim of a bully. An older boy teased him at school and as it turned out sent threatening messages on Facebook. Thanks God my wife took advice of her friend and installed Pumpic on our son’s smartphone. We talked all things out with parents of the bully and he finally left my boy alone. I keep an eye on my son every day. With call monitoring software like Pumpic I’m sure I can protect him.”</p>
                 </div>
         </div>
-        <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
+        <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
                 <img src="{$img}/testimonials/uk/15.png" alt="" class="testimonial-photo">
                 <div class="testimonial-text">
                         <h4>George F. – Liverpool, England</h4>
@@ -253,21 +253,21 @@
     
     <!-- SLIDE #2 -->
     <div class="slide">
-        <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
+        <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
                 <img src="{$img}/testimonials/uk/16.png" alt="" class="testimonial-photo">
                 <div class="testimonial-text">
                         <h4>Monica B. – London, England</h4>
                         <p>“Pumpic is like a safety belt for my daughter, when I let her use the Internet. I work online and see how many inappropriate things there are in the free stream. With Pumpic, I’m sure my girl won’t visit 18+ web sources, that no one will hurt her, and she will not talk to strangers. I can’t easily block unknown phone numbers and view each SMS she receives. She’s only 12 and I’m completely responsible for her safety. And Pumpic does a great job helping me with it.”</p>
                 </div>
         </div>
-        <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
+        <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
                 <img src="{$img}/testimonials/uk/17.png" alt="" class="testimonial-photo">
                 <div class="testimonial-text">
                         <h4>Sarah M. – Manchester, England</h4>
                         <p>“I’ve been looking for good parental control software, since I’ve bought my 13 y.o. daughter a new iPad. I know how many dangers there are online and I don’t want my girl to come across any of them. I check her Facebook communication, view what she posts on Instagram as well as her friends’ comments. With Pumpic I can be sure she won’t hang out with a bad company and check places she visits when goes out with friends. I’d recommend such a kid tracker to all parents in the UK who really care.”</p>
                 </div>
         </div>
-        <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
+        <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
                 <img src="{$img}/testimonials/uk/18.png" alt="" class="testimonial-photo">
                 <div class="testimonial-text">
                         <h4>Michael Z. – Belfast, Northern Ireland</h4>
@@ -278,8 +278,8 @@
     <!-- END -->
     
 </div>
-    
-                    <div class="bxSliders only-mobile">
+    <div class="bxSliderMobile"></div>
+                    {*<div class="bxSliders only-mobile">
                         <!-- SLIDE #1 -->
                         <div class="slide">
                             <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
@@ -346,7 +346,7 @@
                         </div> <!-- .slide-->
                         
                         <!-- END -->
-                    </div>
+                    </div>*}
             </div>
     </div>
 </div>		

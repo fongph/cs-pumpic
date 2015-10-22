@@ -134,21 +134,25 @@
                 <h2 class="text-center testimonial-title">Trusted by Over 10 000 Customers Worldwide:</h2>
                 <div class="row">
                     
-                    <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
+                    <div class="bxSliders only-pc">
+                        <!-- SLIDE #1 -->
+                        <div class="slide">
+                    
+                    <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
                         <img src="{$img}/testimonials/testimonials_new_13.png" alt="" class="testimonial-photo">
                         <div class="testimonial-text">
                             <h4>Janet K. – mother of 14-year-old son</h4>
                             <p>“I was looking for an app to track a Verizon cell phone of my son and came across Pumpic in one of reviews. I decided to try it and was satisfied with opportunities the app provides. It allows me to control my son’s activities online, check his calls and text messages. Location tracking is one more option I really appreciate. I know where my son is and what he does at any time I need.”</p>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
+                    <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
                         <img src="{$img}/testimonials/testimonials_new_14.png" alt="" class="testimonial-photo">
                         <div class="testimonial-text">
                             <h4>Briana F. – mother of 12-year-old son</h4>
                             <p>“My son asked me for a smartphone as a birthday gift, so I went to AT&T store and bought one for him. I was worried about my kid’s online safety with this new device and a sales assistant suggested me to use parental controls. He said he personally chose Pumpic for his children, so I deiced to follow his advice. For now, I’m sure my son is protected. I can take care of him even from work and control his cell phone use easily.”</p>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
+                    <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
                         <img src="{$img}/testimonials/testimonials_new_15.png" alt="" class="testimonial-photo">
                         <div class="testimonial-text">
                             <h4>Mark O. – a business owner</h4>
@@ -156,6 +160,10 @@
                         </div>
                     </div>
             
+                        </div>
+                    </div>
+                    <div class="bxSliderMobile"></div>    
+                        
                 </div>
             </div>
         </div>    

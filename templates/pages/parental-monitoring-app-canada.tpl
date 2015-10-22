@@ -224,21 +224,21 @@
                     <div class="bxSliders only-pc">
     <!-- SLIDE #1 -->
     <div class="slide">
-        <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
+        <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
                 <img src="{$img}/testimonials/canada/7.png" alt="" class="testimonial-photo">
                 <div class="testimonial-text">
                         <h4>John M. – Toronto, Ontario</h4>
                         <p>“I’ve been looking for parental control app to monitor my son when at work. A friend of mine recommended Pumpic. He’s been using it for a while. I didn’t know I could track so many activities with one single app. Most apps allow location tracking or alike separately. Meanwhile Pumpic includes everything I need in one. I recommend Pumpic as a very useful parenting tool.”</p>
                 </div>
         </div>
-        <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
+        <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
                 <img src="{$img}/testimonials/canada/8.png" alt="" class="testimonial-photo">   
                 <div class="testimonial-text">
                         <h4>Margaret O. – Windsor, Ontario</h4>
                         <p>“When we moved to Ontario and my son encountered bullying at school and was systematically bullied online, I didn’t know what to do. I didn’t know if there were any reliable cell phone tracker in Canada. I searched online and came across Pumpic. I was so surprised and pleased, when I saw from how many dangers the app can prevent my son. I now can monitor if someone offends him and take action instantly.”</p>
                 </div>
         </div>
-        <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
+        <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
                 <img src="{$img}/testimonials/canada/9.png" alt="" class="testimonial-photo">
                 <div class="testimonial-text">
                         <h4>Steven S. – Kitchener, Ontario</h4>
@@ -249,21 +249,21 @@
     
     <!-- SLIDE #2 -->
     <div class="slide">
-        <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
+        <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
                 <img src="{$img}/testimonials/canada/10.png" alt="" class="testimonial-photo">
                 <div class="testimonial-text">
                         <h4>Ryan L. – Winnipeg, Manitoba</h4>
                         <p>“It’s impossible to overvalue the usefulness of Pumpic if you’ve got kids. Parenting is a tough task and responsibility as you must always be there, take care, and keep your eyes open. Thankfully, Pumpic provides such an opportunity. Preferably, I use phone tracking as I’m out of Canada on business very often. The app also lets me follow online activities my kids are engaged in.”</p>
                 </div>
         </div>
-        <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
+        <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
                 <img src="{$img}/testimonials/canada/11.png" alt="" class="testimonial-photo">
                 <div class="testimonial-text">
                         <h4>Tod P. – Sudbury, Ontario</h4>
                         <p>“My daughter is 16 y.o. and the time has come when she goes on dates and visits different parties with her friends. I don’t mind it, however, I need to be sure she’s fine when going out. Pumpic child tracker lets me keep an eye on her, even when I’m away from Canada.”</p>
                 </div>
         </div>
-        <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
+        <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
                 <img src="{$img}/testimonials/canada/12.png" alt="" class="testimonial-photo">
                 <div class="testimonial-text">
                         <h4>Megan J. – Edmonton, Alberta</h4>
@@ -274,8 +274,8 @@
     <!-- END -->
     
 </div>
-    
-                    <div class="bxSliders only-mobile">
+    <div class="bxSliderMobile"></div>
+                    {*<div class="bxSliders only-mobile">
                         <!-- SLIDE #1 -->
                         <div class="slide">
                             <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
@@ -342,7 +342,7 @@
                         </div> <!-- .slide-->
                         
                         <!-- END -->
-                    </div>
+                    </div>*}
                 
                 
                 

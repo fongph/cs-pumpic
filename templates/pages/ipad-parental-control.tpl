@@ -189,27 +189,39 @@
     <div class="container">
             <h2 class="text-center testimonial-title">Trusted by Over 10 000 Customers Worldwide:</h2>
             <div class="row">
-                    <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
+                
+                <div class="bxSliders only-pc">
+
+                <!-- SLIDE #1 -->
+                <div class="slide">
+                
+                    <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
                             <img src="{$img}/testimonials/ipad-parental-control/jenny-q-11.png" alt="" class="testimonial-photo">
                             <div class="testimonial-text">
                                     <h4>Jenny Q. – mother of 11-year-old son</h4>
                                     <p>“I use Pumpic as iPad parental controls to set time limits on games and monitor my son’s tablet activities. He keeps playing all the time and I’m really afraid his fancy may result in obsession or even addiction. I used advice my friend had gave me and installed Pumpic. Now I can restrict the time when he is allowed to play and go online.”</p>
                             </div>
                     </div>
-                    <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
+                    <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
                             <img src="{$img}/testimonials/ipad-parental-control/sarah-w-14.png" alt="" class="testimonial-photo">
                             <div class="testimonial-text">
                                     <h4>Sarah W. – mother of 14-year-old son</h4>
                                     <p>“I’ve been searching for parental control for my son’s iPad mini and came across Pumpic. Right after using a trial version I’ve decided to subscribe for 6 months and I’m happy with my decision. The app lets me control everything he does on his tablet. Games, online browsing, chats, social networks and even location. I can control all of it and be quite sure he is safe.”</p>
                             </div>
                     </div>
-                    <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
+                    <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
                             <img src="{$img}/testimonials/ipad-parental-control/patrcik-j-14.png" alt="" class="testimonial-photo">
                             <div class="testimonial-text">
                                     <h4>Patrick J. – father of 14-year-old daughter</h4>
                                     <p>“With Pumpic I can track my daughter’s location wherever she goes. It’s very useful option for parents who work full day and want to control children and take care of them distantly. Pumpic also lets me apply parental control on Safari on her iPad and prevent her from visiting 18+ websites and viewing other inappropriate content. Ability to follow social chats is of huge help too.”</p>
                             </div>
                     </div>
+                            
+                            
+                </div>         
+                </div> 
+                <div class="bxSliderMobile"></div>             
+                            
             </div>
     </div>
 </div> 

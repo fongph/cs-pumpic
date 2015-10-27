@@ -107,7 +107,7 @@
                                                                     <div class="box-currence">
                                                                         <div class="symbol" attr-iso="eur">€</div>
                                                                         <div class="curr" id="premium-price-per-month">{if isset($getDefaultPremiumMoth)}{$getDefaultPremiumMoth}{else}6.99{/if}</div>
-                                                                    </div><span> / monat</span>
+                                                                    </div><span> / Monat</span>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -145,7 +145,7 @@
                                                                             <span class="sp">
                                                                                 <strong>
                                                                                     {$_item.period}
-                                                                                </strong> {if $_item.period == 1}monat{else}monate{/if}
+                                                                                </strong> {if $_item.period == 1}Monat{else}Monate{/if}
                                                                             </span>
                                                                              
                                                                             <div class="box-small-package">    
@@ -275,7 +275,7 @@
                                                                     <div class="box-currence">
                                                                         <div class="symbol" attr-iso="eur">€</div>
                                                                         <div class="curr" id="premium-price-per-month">{if isset($getDefaultPremiumMoth)}{$getDefaultPremiumMoth}{else}6.99{/if}</div>
-                                                                    </div><span> / monat</span>
+                                                                    </div><span> / Monat</span>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -313,7 +313,7 @@
                                                                             <span class="sp">
                                                                                 <strong>
                                                                                     {$_item.period}
-                                                                                </strong> {if $_item.period == 1}monat{else}monate{/if}
+                                                                                </strong> {if $_item.period == 1}Monat{else}Monate{/if}
                                                                             </span>
                                                                              
                                                                             <div class="box-small-package">    

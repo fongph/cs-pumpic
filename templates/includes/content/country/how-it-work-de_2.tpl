@@ -25,7 +25,7 @@
                 <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
                     <h3 class="weight-normal"><i class="icons icon-remotely"></i> Verfolgung starten</h3>
                     <p>
-                        Geben Sie Ihr <b>Control Panel</b> ein, um die Daten vom Zielgerät zu überwachen. 
+                        Starten Sie Ihr <b>Control Panel</b> ein, um die Daten vom Zielgerät zu überwachen. 
                     </p>
                     <p>
                         Verwenden Sie jeden Browser oder jedes mobile Gerät, um Zugang zu Ihrem Control Panel zu erhalten.

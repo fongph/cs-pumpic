@@ -4,14 +4,14 @@
                 <div class="row">
                         <div class="col-lg-3 col-md-3 col-sm-3 col-lg-offset-1 col-md-offset-1 col-sm-offset-1">
                             
-                            <h3>DISCLAIMER</h3>
-                            <p>O Pumpic é um aplicativo excluisvo para controle parental para celulares e tablets com iOS e Android. Ele deve ser usado apenas de maneira ética e legal. Para instalar o app de rastreamento, deve-se garantir que a pessoa seja a proprietária do dispositivo antes da instalação, ou tenha obtido a permissão do proprietário do aparelho para que ele seja rastreaddo.</p>
+                            <h3>AVISO LEGAL</h3>
+                            <p>O Pumpic é um aplicativo excluisvo para controle dos pais para celulares e tablets com iOS e Android. Ele deve ser usado apenas de maneira ética e legal. Para instalar o app de rastreamento, deve-se garantir que a pessoa seja a proprietária do dispositivo antes da instalação, ou tenha obtido a permissão do proprietário do aparelho para que ele seja rastreaddo.</p>
                             
                         </div>
                         <div class="col-lg-3 col-md-3 col-sm-3 col-lg-offset-1 col-md-offset-1 col-sm-offset-1">
                             <div>
                                 <h3>Sobre a Empresa Pumpic</h3>
-                                <p>A Pumpic é uma desenvolvedora de software de monitoramento móvel para rastreamento remoto, controle parental e segurança das crianças. O app protege as suas informações pessoais e garante a felicidade da sua família. A Pumpic mantém seus olhos abertos.</p>
+                                <p>A Pumpic é uma desenvolvedora de software de monitoramento móvel para rastreamento remoto, controle dos pais e segurança das crianças. O app protege as suas informações pessoais e garante a felicidade da sua família. A Pumpic mantém seus olhos abertos.</p>
                             </div>
                                 
                         </div>
@@ -93,7 +93,7 @@
         <div class="footer-text text-center">
             &copy;
             {year_now}
-            Pumpic — All Rights Reserved.
+            Pumpic — {if isset($lang) && $lang == "bra"}Todos os Direitos Reservados.{elseif isset($lang) && $lang == "de"}Alle Rechte Vorbehalten.{else}All Rights Reserved.{/if}
         </div>
     </div>
 </div>

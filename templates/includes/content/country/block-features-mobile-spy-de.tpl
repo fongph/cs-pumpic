@@ -13,7 +13,7 @@
                                 <i class="c-icon-calls vertical-aligh-bottom"></i>
                                 <label class="vertical-aligh-bottom">Anrufe</label>
                             </section>
-                            <p>Überwachen Sie <b>eingehende</b> und <b>getätigte</b> Anrufhistorie wie Name, Rufnummer, Anrufzeit und Dauer.</p>
+                            <p>Überwachen Sie <b>eingehende</b> und <b>getätigte</b> Anrufe, Anrufhistorie, Name, Rufnummer, Anrufzeit und Dauer.</p>
                         
                         </div>
                     </li>
@@ -63,7 +63,7 @@
                                 <label class="vertical-aligh-bottom">Browseraktivitäten</label>
                                 {*<i class="root-android c-icon-root-android vertical-aligh-bottom right"></i>*}
                             </section>
-                            <p>Folgen Sie der <b>Browserhistorie</b>, indem Sie die besuchten Webseiten des Zielgeräts aufrufen. Prüfen Sie <b>Lesezeichen</b> und <b>blockieren Sie Webseiten</b> mit unangemessenen Inhalten.</p>
+                            <p>Überwachen Sie der <b>Browserhistorie</b>, indem Sie die besuchten Webseiten des Zielgeräts aufrufen. Prüfen Sie <b>Lesezeichen</b>,  und <b>blockieren Sie Webseiten</b>, mit unangemessenen Inhalten.</p>
                         
                         </div>
                     </li>

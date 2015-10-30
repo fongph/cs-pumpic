@@ -15,7 +15,7 @@
     }
     <!-- END FLY BLOCKS-->
     
-    <div class="wrapper block-free-trial b-p-countries page-germany">
+    <div class="wrapper block-free-trial b-p-countries page-espiao">
         <!-- TOP MENU -->
 
 	{include file='../includes/country/main-top-menu.tpl'
@@ -32,10 +32,21 @@
         {/if}    
         {/nocache *}
         <!-- END FLY -->
-        
+        <style>
+            .page-espiao .visual-text p.header-info-descriptions {
+                font-size: 14px;
+            }
+            .page-espiao #block-table-header tr, 
+            .page-espiao #table-container tr {
+                display: table;
+            }
+        </style>
         <!-- BLOCK HEADER -->
         {include file='../includes/content/info/info-promo.tpl'
             infoBlockMobile="no"
+
+            collg="7"
+            colLeft="col-md-4 col-lg-5"
 
             imgUrl = "header_banners/header-countries.png"
             imgAlt = "Landing Mobile"
@@ -45,8 +56,7 @@
             title = "App de Monitoramento Móvel <br />para Apple iOS e Android <br />Smartphones e Tablets"
             fz="32"
             classTitle="c-lh-h1-title"
-            description = "Rastreia ligações, mensagens de texto, localizações e atividades online. <br />
-                           Mantenha seus olhos abertos. Agora disponível no Brasil."
+            description = "Rastreia ligações, mensagens de texto, localizações e atividades online.<br />Mantenha seus olhos abertos. Agora disponível no Brasil."
             promoBuyBlock = "no"
             planPackageBuy = "yes"
 

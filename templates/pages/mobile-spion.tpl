@@ -32,10 +32,21 @@
         {/if}    
         {/nocache *}
         <!-- END FLY -->
-        
+        <style>
+            .page-germany .visual-text p.header-info-descriptions {
+                font-size: 14px;
+            }
+            .page-germany #block-table-header tr, 
+            .page-germany #table-container tr {
+                display: table;
+            }
+        </style>
         <!-- BLOCK HEADER -->
         {include file='../includes/content/info/info-promo.tpl'
             infoBlockMobile="no"
+
+            collg="7"
+            colLeft="col-md-4 col-lg-5"
 
             imgUrl = "header_banners/header-countries.png"
             imgAlt = "Landing Mobile"
@@ -45,8 +56,7 @@
             title = "Mobile Überwachungs-App <br />für Apple iOS und Android <br />Smartphones und Tablets"
             fz="34"
             classTitle="c-lh-h1-title"
-            description = "Verfolgen Sie Anrufe, Textnachrichten, Aufenthaltsorte und Online-Aktivitäten. <br />
-                           Halten Sie die Augen offen. Jetzt auch in Deutschland erhältlich."
+            description = "Verfolgen Sie Anrufe, Textnachrichten, Aufenthaltsorte und Online-Aktivitäten.<br />Halten Sie die Augen offen. Jetzt auch in Deutschland erhältlich."
             promoBuyBlock = "no"
             planPackageBuy = "yes"
 

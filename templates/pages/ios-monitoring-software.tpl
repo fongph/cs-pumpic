@@ -46,8 +46,7 @@
             collg = "7"
             textAlign = "right"
             title = "iOS Parental Control App"
-            description = "Pumpic helps you keep your children safe.<br/>
-Monitor your kid's iOS device with Pumpic."
+            description = "Pumpic helps you keep your children safe.<br/>Monitor your kid's iOS device with Pumpic."
             promoBuyBlock = "no"
             listText = "Follow Calls and SMS|Track GPS location|Monitor online activity"
             planPackageBuy = "yes"

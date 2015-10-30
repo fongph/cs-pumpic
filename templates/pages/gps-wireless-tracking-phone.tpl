@@ -48,8 +48,7 @@
             imgAlign = "right"
             textAlign = "right"
             title = "<b>Compatible with</b> iOS & Android <br />Supported by <b>All Mobile Carriers</b>"
-            description = "Monitor the target device remotely<br />
-            Despite of mobile carrier services"
+            description = "Monitor the target device remotely<br />Despite of mobile carrier services"
             promoBuyBlock = "no"
             planPackageBuy = "yes"
             blockTrial = "no"

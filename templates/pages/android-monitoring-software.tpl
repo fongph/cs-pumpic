@@ -45,8 +45,7 @@
             imgAlign = "right"
             textAlign = "right"
             title = "Android Parental<br />Control App"
-            description = "Pumpic takes care of your children safety.        
-                           <br />Track your kids’ Android device remotely."
+            description = "Pumpic takes care of your children safety.<br />Track your kids’ Android device remotely."
             promoBuyBlock = "no"
             listText = "Follow Calls and SMS|Track GPS location|Monitor online activity"
             planPackageBuy = "yes"

@@ -47,9 +47,8 @@
             imgAlign = "right"
             imgVerticalAlign = "bottom"
             textAlign = "right"
-            title = "Set Geo-fences. Receive Alerts<br /> Location Tracking Application"
-            description = "Specify safety zones and restricted areas on the map. <br />
-            Geofence iPhone, iPad, iPod Touch, and Android."
+            title = "Set Geo-fences. Receive Alerts<br />Location Tracking Application"
+            description = "Specify safety zones and restricted areas on the map.<br />Geofence iPhone, iPad, iPod Touch, and Android."
             promoBuyBlock = "no"
             planPackageBuy = "yes"
         }

@@ -78,8 +78,7 @@
             imgVerticalAlign = "center"
             textAlign = "left"
             title = "Cell Phone Child Locator <br />Parental Control App"
-            description = "Reliable location tracker for Android and iOS. <br />
-                           Monitor real time location and route history."
+            description = "Reliable location tracker for Android and iOS.<br />Monitor real time location and route history."
             promoBuyBlock = "no"
             planPackageBuy = "yes"
             block_video = "yes"

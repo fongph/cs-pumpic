@@ -48,8 +48,7 @@
             imgVerticalAlign = "bottom"
             textAlign = "right"
             title = "Apple Monitoring App<br>iCloud Solution"
-            description = "Enjoy multitask tracking without Jailbreak. 
-                            <br>Control iPhone use. Follow communication and online activity."
+            description = "Enjoy multitask tracking without Jailbreak.<br/>Control iPhone use. Follow communication and online activity."
                          
             promoBuyBlock = "no"
             iCloudSolution = 'no'

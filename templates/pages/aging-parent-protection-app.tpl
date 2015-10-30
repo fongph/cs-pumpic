@@ -48,8 +48,7 @@
             imgVerticalAlign = "bottom"
             textAlign = "right"
             title = "Take Care of Your Elderly Parents<br />Secure Their Safety on Mobile Phones"
-            description = "Block unidentified calls and messages,<br />Track locations, set geo-fences, view alerts.<br />
-            A peace of mind for you and your aging parents."
+            description = "Block unidentified calls and messages,<br />Track locations, set geo-fences, view alerts.<br />A peace of mind for you and your aging parents."
             promoBuyBlock = "no"
             planPackageBuy = "yes"
             block_video = "no"

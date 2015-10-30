@@ -48,8 +48,7 @@
             imgVerticalAlign = "bottom"
             textAlign = "right"
             title = "Apple Mobile<br>Monitoring App"
-            description = "Enjoy iOS multitask tracking with or without Jailbreak. 
-                            <br>Track location. View calls and texts. Follow online activity."
+            description = "Enjoy iOS multitask tracking with or without Jailbreak.<br>Track location. View calls and texts. Follow online activity."
             
             promoBuyBlock = "no"
             planPackageBuy = "no"

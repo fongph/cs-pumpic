@@ -46,8 +46,7 @@
             imgVerticalAlign = "center"
             textAlign = "right"
             title = "Remote Smartphone Monitoring App"
-            description = "Pumpic helps track cell phone activity.<br/>
-Monitor mobile devices remotely with Pumpic."
+            description = "Pumpic helps track cell phone activity.<br/>Monitor mobile devices remotely with Pumpic."
             promoBuyBlock = "no"
             listText = "Follow Calls and SMS|Track GPS location|Monitor online activity"
             planPackageBuy = "yes"

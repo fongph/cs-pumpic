@@ -45,7 +45,7 @@
             imgAlign = "right"
             textAlign = "right"
             title = "Multitask Parental Control<br/>Mobile Monitoring App"
-            description = "Keep your children safe. Secure your family happiness. <br/> Track cell phones across Canada and beyond the borders."
+            description = "Keep your children safe. Secure your family happiness.<br/> Track cell phones across Canada and beyond the borders."
             promoBuyBlock = "no"
             planPackageBuy = "yes"
             block_video = "no"

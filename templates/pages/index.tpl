@@ -48,8 +48,7 @@
             imgVerticalAlign = "center"
             textAlign = "left"
             title = "Cell Phone <br />Monitoring App"
-            description = "Keep your family safe and secured with Pumpic. <br />
-                           Track location. View calls and SMS. Follow online activity."
+            description = "Protect your family with the Pumpic child tracking app.<br />Check location, calls, and SMS. Control online activities."
             promoBuyBlock = "no"
             planPackageBuy = "yes"
             block_video = "yes"
@@ -70,7 +69,7 @@
         
         {Content 
     styleTitle="h2"    
-    title="Why Parental Control Is Essential"
+    title="Why Parental Controls Are Essential"
     blockBg='light'}
         
         <!-- BLOCK STATISTICK -->
@@ -104,7 +103,7 @@
         </div>
         <!-- END -->
 
-        <p class="text-center f-light">Most dangers children face today are closely connected with the use of mobile devices and the Internet.</p>
+        <p class="text-center f-light">Most dangers children face today are closely connected with the use of mobile devices and the Internet. Our cell phone monitoring software helps parents avert all these dangers in the making and protects your family. Install the app on your kids’ phones and be sure they are safe wherever they go. Pumpic is a reliable child tracking solution each careful parent should better use. Keep your eyes open with the Pumpic parental controls.</p>
 		
 		{EndContent}
         
@@ -118,6 +117,7 @@
                 imgAlt = "Android"
                 title = "Easy-to-Use Control Panel"
                 textAlign = "left"
+				description = "Right after installing Pumpic mobile monitoring, all the data from the target mobile phone will be sent to your Control Panel. It can be accessed from any browser and any device, including PCs, smartphones and tablets. In Control Panel, you can not only monitor the information, but also set parent restrictions and block some of activities on your child’s phone remotely."
         }
         
         {* description = "Right after installing Pumpic, all the data from the target mobile phone will be sent to your Control Panel. It can be accessed from any browser and any device, including PCs, smartphones and tablets. In Control Panel you can not only view the information, but also set restrictions and block some of activities on the target device."             
@@ -125,7 +125,7 @@
         
         {include file='../includes/main/main-testimonials.tpl'
                 title = "Trusted by Over 10 000 Customers Worldwide"
-                sliders = "false"
+                sliders = "true"
                 blockBg="dark"} 
         
         {include file='../includes/content/how-get-pumpic.tpl'

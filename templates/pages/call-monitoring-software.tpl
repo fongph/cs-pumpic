@@ -1,7 +1,7 @@
 {include file='../includes/main/main-header.tpl'
     robots="yes" 
-    title="Advanced calls monitoring | Pumpic"
-    description="Pumpic.com is a new solution for parental smartphone monitoring. Track your kid’s cell phone usage, follow incoming and outbound calls, monitor browsing history and text messages, track GPS location and social network activity on Android devices with Pumpic.com"
+    title="Advanced Cell Phone Call Monitoring | Pumpic"
+    description="Monitor your child's calls with the Pumpic smartphone parental controls. Track and block cell phone calls, view call logs - be aware of your kid's communication and suspicious call activity, and stop it for the good."
 }    
     
 <body>
@@ -45,9 +45,8 @@
             imgAlt = "calls monitoring app"
             imgAlign = "right"
             textAlign = "right"
-            title = "Calls Monitoring<br />Parental Control App"
-            description = "Pumpic protects your kids from misgiving callers.
-            <br /> View incoming and outgoing phone calls remotely."
+            title = "Call Monitoring App"
+            description = "Pumpic protects your kids from misgiving callers.<br />Track phone calls on Android and iOS devices remotely."
             promoBuyBlock = "no"
             planPackageBuy = "yes"
             block_video = "yes"
@@ -69,7 +68,8 @@
                 bgTab = "bgIOS"
                 imgUrl = "icons/ipad_android.png"
                 imgAlt = "call monitoring"
-                title = "Calls Monitoring"
+                title = "Cell Phone Call Tracking"
+		description = "Right after installing the Pumpic smartphone parental controls, all the data from the target mobile phone will be sent to your Control Panel. It can be accessed from any browser and any device, including PCs, smartphones and tablets. In Control Panel, you can not only view the information, but also track call logs, <a class='a-default' href='/sms-monitoring-software.html'>check SMS</a>, set restrictions, and block some of activities."
         }
         
         {* description = "Try Control Panel demo to see Pumpic Calls Monitoring in use.<br/>Buy Pumpic to protect your kids and track their calls right now."
@@ -80,10 +80,45 @@
                 blockBg="light"
         }
         
-        {* blockBg="dark" *}
-        {include file='../includes/main/main-testimonials.tpl' 
-                blockBg="light"
-        } 
+        <div class="light">
+    <div class="container">
+            <h2 class="text-center testimonial-title">Trusted by Over 10 000 Customers Worldwide:</h2>
+            <div class="row">
+                
+                <div class="bxSliders only-pc">
+                        <!-- SLIDE #1 -->
+                        <div class="slide">
+                
+                    <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
+                            <img src="{$img}/testimonials/jessica-s-10.png" alt="" class="testimonial-photo">
+                            <div class="testimonial-text">
+                                    <h4>Jessica S. – mother of 10-year-old son</h4>
+                                    <p>“I’ve decided to give my son a cell phone, but wanted to be sure his number wouldn’t get in hands of misgiving people. Thus, I installed Pumpic to monitor his cell phone call logs. The app is great. I can see who reaches him on the phone and whom he calls. It shows phone numbers, contact names, time and duration of each call. I can even block strange phone numbers with this app. Really helpful!”</p>
+                            </div>
+                    </div>
+                    <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
+                            <img src="{$img}/testimonials/alberta-j-14.png" alt="" class="testimonial-photo">
+                            <div class="testimonial-text">
+                                    <h4>Alberta J. – mother of 14-year-old son</h4>
+                                    <p>“I use Pumpic to monitor calls on iPhone of my son very often. With it, I can be sure that strangers don’t call him and he doesn’t try to contact anyone strange as well. It’s very important to have such an app if you give your kid a smartphone and wanna be sure he’s ok every now and then.”</p>
+                            </div>
+                    </div>
+                    <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
+                            <img src="{$img}/testimonials/patrick-l-12.png" alt="" class="testimonial-photo">
+                            <div class="testimonial-text">
+                                    <h4>Patrick L. – father of 12-year-old daughter</h4>
+                                    <p>“I’ve been looking for such a call log Android app for quite a while and was glad to find this particular one. Pumpic is a helping hand for all my family. My wife and I, we use it to control our daughter on the phone and secure her when we can’t be near. It lets us monitor her calls and text messages, and even all Internet activities without taking her cell. Great app.”</p>
+                            </div>
+                    </div>
+                            
+                            
+                    </div>
+                </div> 
+                <div class="bxSliderMobile"></div>        
+                            
+            </div>
+    </div>
+</div> 
 
         {*blockBg="light"*}
         {include file='../includes/content/secures-call-monitoring.tpl' 

@@ -49,8 +49,7 @@
             imgVerticalAlign = "center"
             textAlign = "left"
             title = "Internet Monitoring Software <br />Parental Control Application"
-            description = "View browsing history and bookmarks. Block websites. <br />
-                           Reliable Internet monitoring for parents and children."
+            description = "View browsing history and bookmarks. Block websites.<br />Reliable Internet monitoring for parents and children."
             promoBuyBlock = "no"
             planPackageBuy = "yes"
             block_video = "yes"

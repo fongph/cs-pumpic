@@ -48,8 +48,7 @@
             imgVerticalAlign = "center"
             textAlign = "left"
             title = "iPod Touch Parental Controls <br />Mobile Tracking Application"
-            description = "Secure your kids. Keep your eyes open with Pumpic. <br />
-                           Follow location and online activities. Control iPod use."
+            description = "Secure your kids. Keep your eyes open with Pumpic.<br />Follow location and online activities. Control iPod use."
             promoBuyBlock = "no"
             planPackageBuy = "yes"
             block_video = "yes"

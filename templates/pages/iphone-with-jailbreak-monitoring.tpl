@@ -47,8 +47,7 @@
             imgVerticalAlign = "bottom"
             textAlign = "right"
             title = "Mobile Monitoring App<br>for Jailbroken iOS devices"
-            description = "Enjoy remote tracking of Apple devices. 
-                            <br />Control iPhone use. Follow location and online activity."
+            description = "Enjoy remote tracking of Apple devices.<br />Control iPhone use. Follow location and online activity."
                             
             jailbreak = "true"                
 

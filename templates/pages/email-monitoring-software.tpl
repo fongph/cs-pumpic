@@ -1,6 +1,6 @@
 {include file='../includes/main/main-header.tpl' 
-    title="Pumpic Email Monitoring Software for parents"
-    description="Follow your kids’ communication. Use Pumpic email monitoring software to view sent and received letters, control online registration data, track contact list and get texts sent to email."
+    title="Email Monitoring Software for Parents | Pumpic"
+    description="Use the Pumpic email monitoring software to follow your kids’ communication: view sent and received emails, control online registration data, track email account contacts, and get texts sent to email."
 }    
     
 <body>
@@ -45,7 +45,7 @@
             imgVerticalAlign = "bottom"
             textAlign = "right"
             title = "Pumpic Email<br/>Monitoring Software"
-            description = "Monitor your children’s emails."
+            description = "Monitor your children’s inboxes.</br>Set parental controls on email accounts."
             promoBuyBlock = "no"
             listText = "view sent and received emails|keep track of mailing contact list|follow online registrations"
             planPackageBuy = "yes"
@@ -117,7 +117,7 @@
             By making friendship with your kids via social media, it is not hard to find out their email addresses, which is the key 
             to personal data and identity theft. Unfortunately, not many parents realize how important web protection is. 
             These days’ online reality shifts the world around, making new rules for us. If you really want to secure your kids’ 
-            happiness, it is for you to consider these rules:
+            happiness, it is for you to consider these rules and set parental control on email:
         </p>
         
         <!-- BLOCK LIST -->
@@ -236,9 +236,9 @@
                                         
 {Content 
     styleTitle="h2"
-    title="To Spy or Not To Spy Email"
+    title="To Track or Not To Track Email"
     blockBg='light'}
-    <p>Most parents would better prefer not to spy on their children. They say it violates their rights as individuals, who deserve privacy as well as any adult does. At the same time, parents admit a need for constant control and want their kids protected.</p> 
+    <p>Some parents would better prefer not to use any mobile app for monitoring their children. They say it violates their rights as individuals, who deserve privacy as well as any adult does. At the same time, parents admit a need for constant control and want their kids protected.</p> 
 <p>Taking into consideration that the number of children, who are a footstep from online addiction, grows rapidly, meanwhile cyberbullying remains the main cause of suicide among the underage, mobile phone monitoring is at least the best of a bad lot.</p>  
 <p>By setting parental control software on your kid’s device, you will ensure his or her safety and provide yourself with calm and worriless sleep. A reasonable tracking solution like Pumpic app will reveal the following advantages:</p>
 <ul>
@@ -266,7 +266,7 @@
                             <img src="{$img}/testimonials/email_monitoring_software/testimonials4.png" alt="" class="testimonial-photo">
                             <div class="testimonial-text">
                                     <h4>Steven R. (Fresno, CA)</h4>
-                                    <p>“After a few days that I started to spy on email my son uses, I found that he receives too many spam letters from websites, which seemed strange to me. I opened some of them and realized that he was signed up for 18+ web sources, and that’s why they sent him advertisements. We had a serious talk and both agreed he should stop and sign out. I will keep an eye on him. Thanks Pumpic.”</p>
+                                    <p>“After a few days that I started to apply parental controls on email my son uses, I found that he receives too many spam letters from websites, which seemed strange to me. I opened some of them and realized that he was signed up for 18+ web sources, and that’s why they sent him advertisements. We had a serious talk and both agreed he should stop and sign out. I will keep an eye on him. Thanks Pumpic.”</p>
                             </div>
                     </div>
                     <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">

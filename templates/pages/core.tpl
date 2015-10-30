@@ -99,8 +99,7 @@
             imgVerticalAlign = "bottom"
             textAlign = "left"
             title = "Cell Phone <br />Monitoring Control App"
-            description = "Keep your family safe and secured with Pumpic. <br />
-                           Track location. View calls and SMS. Follow online activity."
+            description = "Keep your family safe and secured with Pumpic.<br />Track location. View calls and SMS. Follow online activity."
             promoBuyBlock = "no"
             planPackageBuy = "yes"
         }
@@ -134,8 +133,7 @@
             imgVerticalAlign = "bottom"
             textAlign = "right"
             title = "Apple Monitoring App  <br>iCloud Solution"
-            description = "Enjoy multitask tracking without Jailbreak 
-                            <br>Control iPhone use. Follow location and online activity"
+            description = "Enjoy multitask tracking without Jailbreak<br>Control iPhone use. Follow location and online activity"
                          
             promoBuyBlock = "no"
             iCloudSolution = 'no'
@@ -184,8 +182,7 @@
             imgVerticalAlign = "bottom"
             textAlign = "right"
             title = "Apple Monitoring App  <br>iCloud Solution"
-            description = "Enjoy multitask tracking without Jailbreak 
-                            <br>Control iPhone use. Follow location and online activity"
+            description = "Enjoy multitask tracking without Jailbreak<br>Control iPhone use. Follow location and online activity"
                      
             promoBuyBlock = "no"
             iCloudSolution = 'yes'
@@ -224,8 +221,7 @@
             imgVerticalAlign = "bottom"
             textAlign = "right"
             title = "Apple Mobile <br>Monitoring App"
-            description = "Enjoy iOS multitask tracking with or without Jailbreak. 
-                            <br>Track location. View calls and texts. Follow online activity."
+            description = "Enjoy iOS multitask tracking with or without Jailbreak.<br>Track location. View calls and texts. Follow online activity."
             
             promoBuyBlock = "no"
             planPackageBuy = "no"
@@ -261,8 +257,7 @@
             imgVerticalAlign = "bottom"
             textAlign = "left"
             title = "Cell Phone <br />Monitoring Control App"
-            description = "Keep your family safe and secured with Pumpic. <br />
-                           Track location. View calls and SMS. Follow online activity."
+            description = "Keep your family safe and secured with Pumpic.<br />Track location. View calls and SMS. Follow online activity."
             promoBuyBlock = "no"
             planPackageBuy = "no"
             blockTrial = "yes"
@@ -294,8 +289,7 @@
             imgVerticalAlign = "bottom"
             textAlign = "left"
             title = "Cell Phone <br />Monitoring Control App"
-            description = "Keep your family safe and secured with Pumpic. <br />
-                           Track location. View calls and SMS. Follow online activity."
+            description = "Keep your family safe and secured with Pumpic.<br />Track location. View calls and SMS. Follow online activity."
             promoBuyBlock = "no"
             planPackageBuy = "no"
             blockTrial = "no"
@@ -314,8 +308,7 @@
             imgAlign = "right"
             textAlign = "right"
             title = "Parental Control Solution<br/>Mobile Monitoring App"
-            description = "Reliable protection all over the United Kingdom.<br />
-            View calls and SMS. Track location and online activities."
+            description = "Reliable protection all over the United Kingdom.<br />View calls and SMS. Track location and online activities."
             promoBuyBlock = "no"
             planPackageBuy = "yes"
             block_video = "no"
@@ -339,8 +332,7 @@
             title = "App de Monitoramento Móvel <br />para Apple iOS e Android <br />Smartphones e Tablets"
             fz="32"
             classTitle="c-lh-h1-title"
-            description = "Rastreia ligações, mensagens de texto, localizações e atividades online. <br />
-                           Mantenha seus olhos abertos. Agora disponível no Brasil."
+            description = "Rastreia ligações, mensagens de texto, localizações e atividades online.<br />Mantenha seus olhos abertos. Agora disponível no Brasil."
             promoBuyBlock = "no"
             planPackageBuy = "yes"
 

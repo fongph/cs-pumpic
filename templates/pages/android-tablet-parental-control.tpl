@@ -48,8 +48,7 @@
             imgVerticalAlign = "center"
             textAlign = "left"
             title = "Android Tablet Monitoring <br />Parental Control App"
-            description = "Provide your children with reliable security. <br />
-                           Track online activities, locations, and even more."
+            description = "Provide your children with reliable security.<br />Track online activities, locations, and even more."
             promoBuyBlock = "no"
             planPackageBuy = "yes"
             block_video = "yes"

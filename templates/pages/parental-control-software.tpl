@@ -46,8 +46,7 @@
             title = "Mobile Monitoring App <br />for Apple iOS and Android <br />Smartphones and Tablets"
             fz="32"
             classTitle="c-lh-h1-title"
-            description = "Track calls, texts, locations, and online activities. <br />
-                           Keep your eyes open. Now available worldwide."
+            description = "Track calls, texts, locations, and online activities.<br />Keep your eyes open. Now available worldwide."
             promoBuyBlock = "no"
             planPackageBuy = "yes"
 

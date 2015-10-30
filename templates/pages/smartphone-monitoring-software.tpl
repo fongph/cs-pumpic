@@ -45,8 +45,7 @@
             imgAlign = "right"
             textAlign = "right"
             title = "Smartphone<br/>Parental Monitoring App"
-            description = "Monitor your kid's smartphone usage remotely<br />
-            on iPhone, iPad, iPod Touch, and Android devices."
+            description = "Monitor your kid's smartphone usage remotely<br />on iPhone, iPad, iPod Touch, and Android devices."
             promoBuyBlock = "no"
             planPackageBuy = "yes"
             block_video = "no"

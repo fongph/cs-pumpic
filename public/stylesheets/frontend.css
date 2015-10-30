@@ -8294,7 +8294,10 @@ div.symbol {
     box-shadow: inset 0 30px 20px -20px rgba(0,0,0,0.2),
     inset 0 -30px 20px -20px rgba(0,0,0,0.2);
 }*/
-
+#block-stickybar {
+    z-index: 9999;
+    vertical-align: top;
+}
 #item-stickybar {
     display: inline-block;
     zoom: 1;
@@ -8302,17 +8305,17 @@ div.symbol {
     vertical-align: top;
 }
 
-#item-stickybar.float {
+#item-stickybar.float, #block-stickybar.float {
     display: block;
     border: 1px solid rgb(255,255,0);
     float: left;
 }
 
-#item-stickybar.float.right {
+#item-stickybar.float.right, #block-stickybar.float.right {
     float: right;
 }
 
-#item-stickybar.block {
+#item-stickybar.block, #block-stickybar.block {
     display: block;
     border: 1px solid rgb(0,255,255);
 }

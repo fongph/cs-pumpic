@@ -8384,6 +8384,9 @@ $(document).ready(function(){
 //      });
     }
     
+    if($('#block-stickybar').length) {
+        $('#block-stickybar').stick_in_parent();
+    }
 
 
     if($('.list_category > li > a[data-toggled="on"]').length) {

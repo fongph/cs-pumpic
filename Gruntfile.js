@@ -99,6 +99,7 @@ module.exports = function (grunt) {
                 src: [
                     './assets/css/bootstrap.css', 
                     './assets/css/fontello.css',
+//                    './assets/css/settings.css',
                     './assets/css/all.css', 
                     './assets/css/parent.css',
                     './assets/css/wp.css',

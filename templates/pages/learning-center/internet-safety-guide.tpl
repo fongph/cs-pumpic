@@ -17,7 +17,6 @@
     
 	<div id="tmp-isg" class="wrapper">
 	{include file='../../includes/main/main-top-menu.tpl' 
-                topmenu_active='faq'
                 cache_id = "includes_main_main-top-menu"
                 nocache
         }
@@ -127,7 +126,7 @@
                                                                     <div class="block-number-green">4</div>
                                                                 </div>
                                                                 <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
-                                                                    <img style="max-width: 141px;max-height: 151px;" src="{$img}/learning_center/internet-safety-guide/step-4.png" />
+                                                                    <img style="max-width: 162px;max-height: 137px;" src="{$img}/learning_center/internet-safety-guide/step-4.png" />
                                                                 </div>
                                                             </div>
                                                             <p><b>Prevent</b> your chidren from <b>sharing personal data</b> like name, school, age, phone number, email, and home address with strangers. Thus, you will avert many dangers like identity theft, robbery, bullying, and even kidnapping.</p>    

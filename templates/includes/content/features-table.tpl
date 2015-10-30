@@ -1,10 +1,11 @@
 {*<div class="{if $blockBg}{$blockBg}{else}dark{/if}">
         <div class="container">
-                <h2 class="text-center">Pumpic Features</h2>
+                <h2 class="text-center">Useful Features for Every Careful Parent</h2>
                 <div class="row">
                     
                     <div id="table-container" class="table-col-3 table-md-col-3 table-sm-col-3">
-                        <h1 class="text-center">To protect your children and secure their happiness Pumpic provides you with a large variety of monitoring functions designed to make remote parenting safe and worriless.</h1>
+                        <h1 class="text-center">Pumpic app is a multifeature parental control application for mobile phones and tablets designed to protect all the family and prevent dangers your kids may face. It comes with more than 24 useful monitoring features, which cover as many parts of your kids’ lives as possible. Both online and during daily activities, our parental control app provides all-round protection and secures family happiness.</h1>
+                        <h1 class="text-center">Are you a careful parent? Then ensure child safety with Pumpic and its useful features listed below.</h1>
                         <section>
                             <div class="tab col-item-3 col-md-item-3 col-sm-item-3">
                                 <ul>
@@ -45,14 +46,14 @@
 
 <div class="{if isset($blockBg)}{$blockBg}{else}dark{/if}">
         <div class="container">
-                <h2 class="text-center">{if isset($title)}{$title}{else}Pumpic Features{/if}</h2>
+                <h2 class="text-center">{if isset($title)}{$title}{else}Useful Features for Every Careful Parent{/if}</h2>
                 <div class="row">
                     <div id="table-container" class="table-col-3 table-md-col-3 table-sm-col-3">
                         <article>
                             {if isset($description)}
                                 {$description}
                             {else}
-                                Pumpic is a reliable parental control application designed to protect children and prevent dangers they may face. It comes with more than 24 useful monitoring features, which cover as many parts of your kid’s life as possible. Both online and during daily activities, the app provides all-round protection and secures family happiness.
+                                Pumpic app is a multifeature parental control application for mobile phones and tablets designed to protect all the family and prevent dangers your kids may face. It comes with more than 24 useful monitoring features, which cover as many parts of your kids’ lives as possible. Both online and during daily activities, our parental control app provides all-round protection and secures family happiness. Are you a careful parent? Then ensure child safety with Pumpic and its useful features listed below.
                                 {*Pumpic is reasonably improved mobile phone tracking software, which comes with a large range of monitoring functions. 
                             They will help you keep track of the target device quickly and quite.*}
                             {/if}

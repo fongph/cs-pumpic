@@ -12,20 +12,22 @@
                         <tr>
                             <td class="col-sm-5 col-md-5 col-lg-6 table-item-col">
                                 <section>
-                                    <span class="img"><img src="{$img}/icons/icon-knowledge-1.png" 
+                                    <span class="img"><a href="http://{$domain}/learning-center/internet-safety-guide.html"><img
+                                                       alt="The Ultimate Internet Safety Guide"
+                                                       src="{$img}/icons/icon-knowledge-1.png" 
                                                        width="123px"
-                                                       height="80px"
-                                                       alt=""></span>
-                                    <label class="knowledge-title text-center">Ultimate safety guide</label>
+                                                       height="80px"></a></span>
+                                    <label class="knowledge-title text-center">Ultimate Safety Guide</label>
                                     <p class="text-center"><a href="http://{$domain}/learning-center/internet-safety-guide.html">Read our guide</a> for the best tips to keep your children safe online.</p>
                                 </section>
                             </td>
                             <td class="col-sm-5 col-md-5 col-lg-6 table-item-col">
                                 <section>
-                                    <span class="img"><img src="{$img}/icons/icon-knowledge-2.png" 
+                                    <span class="img"><a href="http://{$domain}/learning-center/glossary-internet-terms.html"><img
+                                                       alt="Glossary of Internet Terms"
+                                                       src="{$img}/icons/icon-knowledge-2.png" 
                                                        width="103px"
-                                                       height="75px"
-                                                       alt=""></span>
+                                                       height="75px"></a></span>
                                     <label class="knowledge-title text-center">Glossary of Internet Terms</label>
                                     <p class="text-center">Learn about <a href="http://{$domain}/learning-center/glossary-internet-terms.html">common online terms</a> and the most used internet acronyms that your 
                                         children use while communicating online.</p>
@@ -36,22 +38,24 @@
                         <tr>
                             <td class="col-sm-5 col-md-5 col-lg-6 table-item-col">
                                 <section>
-                                    <span class="img"><img src="{$img}/icons/icon-knowledge-3.png" alt=""></span>
+                                    <span class="img"><a href="http://{$domain}/learning-center/ready-solutions/"><img 
+                                            alt="Ready Solutions for Parents"
+                                            src="{$img}/icons/icon-knowledge-3.png"></a></span>
                                     <label class="knowledge-title text-center">Ready Solutions</label>
                                     <p class="text-center">Learn how Pumpic can help you <a href="http://{$domain}/learning-center/ready-solutions/">protect your children</a> in Mobile era.</p>
                                 </section>
                             </td>
                             <td class="col-sm-5 col-md-5 col-lg-6 table-item-col">
                                 <section>
-                                    <span class="img"><a href="http://pumpic.com/security/"><img src="{$img}/icons/icon-knowledge-4.png" alt=""></a></span>
-                                    <label class="knowledge-title text-center"><a href="http://pumpic.com/security/">Blog</a></label>
-                                    <p class="text-center">We update our <a href="http://pumpic.com/security/">blog</a> weekly. Check out the articles' archive or take a look at the last 5 articles:</p>
+                                    <span class="img"><a href="http://pumpic.com/security/"><img alt="Kids' Phone Safety Blog" src="{$img}/icons/icon-knowledge-4.png"></a></span>
+                                    <label class="knowledge-title text-center"><a href="http://{$domain}/security/">Blog</a></label>
+                                    <p class="text-center">We update our <a href="http://{$domain}/security/">blog</a> weekly. Check out the articles' archive or take a look at the last 5 articles:</p>
                                     <ul>
-                                        <li><a href="http://pumpic.com/security/how-to-tell-if-your-kid-has-online-addiction/">Pros and cons of Facebook for children</a></li>
-                                        <li><a href="http://pumpic.com/security/is-facebook-a-secure-place-for-your-child/">Best smartphones for children on 2014</a></li>
-                                        <li><a href="http://pumpic.com/security/how-to-resist-online-predators/">What to do if your identity is stolen</a></li>
-                                        <li><a href="http://pumpic.com/security/what-to-do-if-your-child-is-a-game-addict/">Protecting yourself from identity theft</a></li>
-                                        <li><a href="http://pumpic.com/security/10-signs-of-cyberbullying/">Wearable tracking devices security risks</a></li>
+                                        <li><a class="a-default" href="http://{$domain}/security/how-to-tell-if-your-kid-has-online-addiction/">Pros and cons of Facebook for children</a></li>
+                                        <li><a class="a-default" href="http://{$domain}/security/is-facebook-a-secure-place-for-your-child/">Best smartphones for children on 2014</a></li>
+                                        <li><a class="a-default" href="http://{$domain}/security/what-to-do-if-your-identity-is-stolen/">What to do if your identity is stolen</a></li>
+                                        <li><a class="a-default" href="http://{$domain}/security/protecting-yourself-from-identity-theft/">Protecting yourself from identity theft</a></li>
+                                        <li><a class="a-default" href="http://{$domain}/security/wearable-tracking-devices-security-risks/">Wearable tracking devices security risks</a></li>
                                     </ul>
                                 </section>
                             </td>

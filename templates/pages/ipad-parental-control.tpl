@@ -48,8 +48,7 @@
             imgVerticalAlign = "center"
             textAlign = "left"
             title = "Parental Control for iPad <br />Mobile Monitoring App"
-            description = "Keep your kids safe and protected with Pumpic. <br />
-                           Track location, tablet use, and online activities."
+            description = "Keep your kids safe and protected with Pumpic.<br />Track location, tablet use, and online activities."
             promoBuyBlock = "no"
             planPackageBuy = "yes"
             block_video = "yes"

@@ -5,11 +5,11 @@
                         <div class="col-sm-4 col-md-4 col-lg-4">
                                 <div class="feature">
                                         <img src="{$img}/icons/icon-mobile-secure.gif" alt="">
-                                        <h3>Monitor cell phone usage</h3>
+                                        <h3>Monitor mobile phone usage</h3>
                                         <ul class="feature_list">
                                                 <li>Track calls and text messages</li>
                                                 <li>Monitor, block, and limit SMS</li>
-                                                <li>View contacts and calendar</li>
+                                                <li>Check contacts and calendar</li>
                                         </ul>
                                 </div>
                         </div>
@@ -19,7 +19,7 @@
                                         <h3>Follow online activity</h3>
                                         <ul class="feature_list">
                                                 <li>Monitor browsing history</li>
-                                                <li>Block websites and applications</li>
+                                                <li>Block websites and apps</li>
                                                 <li>Monitor social media and chats </li>
                                         </ul>
                                 </div>

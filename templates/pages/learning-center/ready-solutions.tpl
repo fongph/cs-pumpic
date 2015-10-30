@@ -23,7 +23,7 @@
     <!-- END FLY BLOCKS-->
     
     {* 'block-android' - название вашей страницы латинецей. ОБЯЗАТЕЛЬНОЕ ПОЛЕ *}
-    <div class="wrapper block-ready-solutions">
+    <div class="wrapper block-ready-solutions tmp-lc-rs">
         <!-- TOP MENU -->
         {*
             Template: MENU ( ГЛАВНОЕ МЕНЮ )

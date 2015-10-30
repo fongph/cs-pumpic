@@ -1,6 +1,6 @@
 {include file='../includes/main/main-header.tpl' 
-    title="Best Android Parental Control App for children monitoring"
-    description="Installing parental control on android phones your kids use is a good protection against dangers the Internet and modern world bear. Learn more about android parental monitoring apps."
+    title="Best Android Parental Control App for Child Monitoring | Pumpic"
+    description="Set up parental control software for Android phones your kids use. Protect your children from online dangers with the Pumpic Android parental control app."
 }    
     
 <body>
@@ -73,7 +73,7 @@
     blockBg='dark'}
                    
         <p class="text-center f-light">
-            Using monitoring software to protect kids is an urgent issue of contemporary society. 
+            Using Android monitoring software to protect kids is an urgent issue of contemporary society. 
         On one hand, technological progress opened new doors for the evolution of humanity; on the other one, it has 
         resulted in many dangers in return. And children are exposed to these dangers much more than others.
         </p>
@@ -217,12 +217,12 @@
 </div>   
                                         
 {include file='../includes/content/features-table.tpl'
-        title = "Set Ultimate Parental Control on Android"
+        title = "Set Android Parental Control"
         description = "Mobile technologies have introduced new opportunities to our children. It is rather hard at 
                             once to imagine the entire range of functions a single smartphone can fulfil. That’s why when it comes to features 
                             that an Android parental control app should include, it is very important to consider all of them. Listed below 
                             reflects Pumpic monitoring abilities, and which particular mobile phone options you will cover by using it. 
-                            The app will help you follow each and every aspect of your kids’ lives as well as all spheres of activities remotely."
+                            The parental control software for Android will help you follow each and every aspect of your kids’ lives as well as all spheres of activities remotely."
         blockBg="dark"
 }                                        
                                         
@@ -281,7 +281,7 @@
     blockBg='light'}
     <p>One can hardly imagine his or her life without a mobile phone connected to the Internet these days. When it comes to children, we see that online reality means almost the entire world to them, being an essential part of communication and spare time spending. However, along with great opportunities there comes the issue.</p>
     <ul class="list-images">
-        <li><img src="{$img}/list/lc_1.png" alt="Online Predators" class="lc-1" /><strong>Online predators.</strong> Sexual predators really exist and threaten your kids’ security. Boys and girls, who are more technical than parents, more emotionally vulnerable due to personal issues, are their main target. Most of online predators are masters of manipulation and know how to deceive your children pretending care and friendship. They use anonymity of the Internet and can be whomever they want to get into your kids’ confidence. A threat starts as a harmless online talk and usually turns out to be sexual seduction in the real life. Using parental control apps for Android will let you know, whom your kids chat with online, and thus, you will be able to protect them against attacks of online predators.</li>
+        <li><img src="{$img}/list/lc_1.png" alt="Online Predators" class="lc-1" /><strong>Online predators.</strong> Sexual predators really exist and threaten your kids’ security. Boys and girls, who are more technical than parents, more emotionally vulnerable due to personal issues, are their main target. Most of online predators are masters of manipulation and know how to deceive your children pretending care and friendship. They use anonymity of the Internet and can be whomever they want to get into your kids’ confidence. A threat starts as a harmless online talk and usually turns out to be sexual seduction in the real life. Android child monitoring app will let you know, whom your kids chat with online, and thus, you will be able to protect them against attacks of online predators.</li>
         <li><img src="{$img}/list/lc_2.png" alt="Cyberbullying" class="lc-2" /><strong>Cyberbullies.</strong> Talk to your kids and find out if someone offends them. They might receive text messages with threats or bad words. Cyberbullying images can be posted anonymously in social networks and spread quickly through the Internet. More often than not, it is hard to find the source of cyberbullying, since online an offender can be not even a real person. Parental control apps for Android will allow you to track your kids’ online activity, follow social media, networks, as well as text messages they receive. Such software will let you find out if any threat exists, and take action before it’s too late.</li>   
         <li><img src="{$img}/list/lc_3.png" alt="Sexting. Explicit Content" class="lc-3" /><strong>Sexting.</strong> Today children develop faster than their parents did before. When it comes to sexual life, their development is no less fast moving. Some of them consider exchanging SMS, photos and videos with sexual content a part of growing-up. As the statistics shows, about 22% of underage children are engaged in sexting. They think it will help them build relations with the opposite sex or stand out from their classmates and look more adult. Parental controls on Android phones will help you monitor your children’s communication, view photos and videos they send and receive, and thus, you will be able to intervene.</li> 
     </ul>
@@ -302,7 +302,7 @@
                             <img src="{$img}/testimonials/t_new_1.png" alt="" class="testimonial-photo">
                             <div class="testimonial-text">
                                     <h4>Susan L. (Cheyenne, WY)</h4>
-                                    <p>“Pumpic helped me find out that my daughter, 16 years old, was involved in sexting by her boyfriend. Frankly, the truth was more than ugly. When I saw all those messages full of mean and vulgarity, I was raving with my fury. We had a serious talk with my daughter and parents of this “boyfriend”. We both agreed that it must never ever happen again. Thanks Pumpic for keeping me informed.”</p>
+                                    <p>“Pumpic parental control app for Android helped me find out that my daughter, 16 years old, was involved in sexting by her boyfriend. Frankly, the truth was more than ugly. When I saw all those messages full of mean and vulgarity, I was raving with my fury. We had a serious talk with my daughter and parents of this “boyfriend”. We both agreed that it must never ever happen again. Thanks Pumpic for keeping me informed.”</p>
                             </div>
                     </div>
                     <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">

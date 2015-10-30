@@ -66,7 +66,7 @@
                                                         <article class="text-center">Features</article>
                                                         <section>
                                                             {include file='../includes/content/table-items/feature-items.tpl'
-                                                                notLinks="geo-fences,location-tracking"
+                                                                notLinks="geo-fences,location-tracking,call-monitoring-software"
                                                             } 
                                                            
                                                             <div class="tab rowspan">

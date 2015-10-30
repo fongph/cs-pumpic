@@ -7,7 +7,7 @@
 <div class="tab col-item-3 col-md-item-3 col-sm-item-3">
     <ul>
         <li><i class="i-features-sms"></i> <span onclick="window.location='http://{$domain}/mobile-sms-spy.html'">Monitor SMS and MMS</span></li>
-        <li><i class="i-features-cell-history"></i> Monitor Calls History</li>
+        <li><i class="i-features-cell-history"></i> {if !in_array('call-monitoring-software', $_notVisible)}<span onclick="window.location='http://{$domain}/call-monitoring-software.html'">Monitor Calls History{else}Monitor Calls History{/if}</li>
         <li><i class="i-features-calendar"></i> View Calendar</li>
         <li><i class="i-features-contacts"></i> View Contacts</li>
         <li><i class="i-features-email"></i> <span onclick="window.location='http://{$domain}/email-monitoring-software.html'">View Emails</span></li>

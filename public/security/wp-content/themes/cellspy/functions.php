@@ -247,11 +247,11 @@ function hasUser() {
 
 // has free trial stick
 function hasFreeTrialStick() { 
+    
+    require_once '../../includes/lib/users/ManagerUser.php';
+    $obj = new includes\lib\users\ManagerUser( array() );
     $_result = false;
-//    require_once '../../includes/lib/users/ManagerUser.php';
-//    $obj = new includes\lib\users\ManagerUser( array() );
-//    $_result = false;
-//    if($obj->hasTrial( $obj->getUserIdByAuth() )) $_result = true;
+    if($obj->hasTrial( $obj->getUserIdByAuth() )) $_result = true;
     
 //    $_result = false;
 //    if(isset($_COOKIE['free_trial_stick']) && (int)$_COOKIE['free_trial_stick'] == 1) {
@@ -282,8 +282,9 @@ function userNotice() {
 }
 
 function statistic() {
+    // require_once '../../statistic/scroogefrog_tcp.php';
     // require_once '../../statistic/scroogefrog_udp_tcp.php';
-    require_once '../../statistic/scroogefrog_tcp.php';
+    // require_once '../../statistic/scroogefrog_tcp.php';
 }
 
 function createReferral() {

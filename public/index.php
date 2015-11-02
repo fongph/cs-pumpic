@@ -1,7 +1,7 @@
 <?php
 global $smarty, $config;
 date_default_timezone_set("UTC");
-include __DIR__.'/scroogefrog_tcp.php';
+// include __DIR__.'/scroogefrog_tcp.php';
 require dirname( __DIR__ ).'/vendor/autoload.php';
 require dirname( __DIR__ ).'/includes/config.php';
 require dirname( __DIR__ ).'/includes/functions.php';

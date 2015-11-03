@@ -81,14 +81,22 @@
     */ ?>
     <?php require_once '../../templates/includes/blog-analytics-header.tpl'; ?>
     
+    <?php  if(get_the_ID() == 785) {  
+        add_ga(); 
+    } ?>
+    
 </head>
 
 <body class="wp-blog">
+     <?php 
+        include_once('../../templates/includes/blog-after-body.tpl'); 
+    ?>
+    
     
     <a href="#" class="go_up"></a>
     
     <?php 
-            include_once('../../templates/includes/content/fly/fly_features_v2.tpl'); 
+        include_once('../../templates/includes/content/fly/fly_features_v2.tpl'); 
     ?>
     
     <div class="wrapper">
@@ -96,6 +104,8 @@
 	<?php 
 		include_once('../../templates/includes/blog-top-menu.tpl'); 
 	?>
+        
+        <?php if(hasFreeTrialStick()) include_once('../../templates/includes/content/fly/fly-free-trial.tpl'); ?>
     
         <?php 
 		include_once('../../templates/includes/content/phone/blog-phone.tpl'); 

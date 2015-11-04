@@ -2435,5 +2435,20 @@ $('form[name="send_find_phone"] button.event-submit').click(function(){
             }
         });
     }
+    
+    
+    // якори для липкого меню
+    $('a.anchor-menu-fly').on("click", function(e){
+      e.preventDefault();  
+      var anchor = $(this).attr('href').split('#');
+      if(anchor.length > 1) {
+          var _top = $('#'+anchor[1]).offset().top - $('#block-stickybar').height();
+          $('html, body').stop().animate({
+            scrollTop: _top + 'px'
+          }, 1000);
+      }
+      
+      return false;
+   });
 
 }); 

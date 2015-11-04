@@ -1,7 +1,7 @@
 {strip}
 {include file='../includes/main/main-header.tpl'
-    title="Learn how to use Pumpic"
-    description="Pumpic is easy-to-use and quick-to-install Mobile Phone Monitoring Software. It will not take you long to get used to its functions and even much less to run the app. Find out more about how to use Pumpic."
+    title="How does Pumpic phone monitoring app work?"
+    description="Pumpic is easy-to-use and quick-to-install Mobile Phone Monitoring Software. It will take you less than 5 minutes to get used to its functions. Learn more about how Pumpic works."
 }
 
 <body>
@@ -38,6 +38,8 @@
         
                 {include file='../includes/content/how-get-pumpic.tpl'
                                     blockBg = "very_easy"
+                                    tagTitle="h1"
+                                    classTitle="h2"
                                     title = "How Pumpic Mobile Tracking App Works"
                                     style = "images"} 
         

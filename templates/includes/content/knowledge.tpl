@@ -51,11 +51,18 @@
                                     <label class="knowledge-title text-center"><a href="http://{$domain}/security/">Blog</a></label>
                                     <p class="text-center">We update our <a href="http://{$domain}/security/">blog</a> weekly. Check out the articles' archive or take a look at the last 5 articles:</p>
                                     <ul>
-                                        <li><a class="a-default" href="http://{$domain}/security/how-to-tell-if-your-kid-has-online-addiction/">Pros and cons of Facebook for children</a></li>
+                                        {*<li><a class="a-default" href="http://{$domain}/security/how-to-tell-if-your-kid-has-online-addiction/">Pros and cons of Facebook for children</a></li>
                                         <li><a class="a-default" href="http://{$domain}/security/is-facebook-a-secure-place-for-your-child/">Best smartphones for children on 2014</a></li>
                                         <li><a class="a-default" href="http://{$domain}/security/what-to-do-if-your-identity-is-stolen/">What to do if your identity is stolen</a></li>
                                         <li><a class="a-default" href="http://{$domain}/security/protecting-yourself-from-identity-theft/">Protecting yourself from identity theft</a></li>
-                                        <li><a class="a-default" href="http://{$domain}/security/wearable-tracking-devices-security-risks/">Wearable tracking devices security risks</a></li>
+                                        <li><a class="a-default" href="http://{$domain}/security/wearable-tracking-devices-security-risks/">Wearable tracking devices security risks</a></li>*}
+                                        
+                                        <li><a class="a-default" href="http://{$domain}/security/age-restrictions-on-social-media/">Age Restrictions on Social Media</a></li>
+                                        <li><a class="a-default" href="http://{$domain}/security/cyber-safety-tips/">Cyber Safety Tips</a></li>
+                                        <li><a class="a-default" href="http://{$domain}/security/parents-disagree-over-parental-control-issues/">Parents Disagree Over Parental Control Issues</a></li>
+                                        <li><a class="a-default" href="http://{$domain}/security/protecting-yourself-from-identity-theft/">Protecting Yourself from Identity Theft</a></li>
+                                        <li><a class="a-default" href="http://{$domain}/security/wearable-tracking-devices-security-risks/">Wearable Tracking Devices Security Risks</a></li>
+                                        
                                     </ul>
                                 </section>
                             </td>

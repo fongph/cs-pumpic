@@ -1,8 +1,8 @@
 {strip}
 
 {include file='../includes/main/main-header.tpl'
-    title="Frequently asked questions about Pumpic"
-    description="Pumpic is easy-to-use and user-friendly Cell Phone Tracking App. Learn our FAQ section to find answers to all Pumpic related issues. You can also send your questions to us."
+    title="Frequently Asked Questions | Pumpic Help & Support"
+    description="Pumpic is an easy-to-use Cell Phone Tracking App. Get through our FAQ section to find answers to all questions. Feel free to contact our Support Team if you need help with Pumpic."
 }
 
 <body>
@@ -45,7 +45,8 @@
                                             <!-- ContactUs -->
                                             <div class="row text-center">
                                                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                                    <h2>Contact Us</h2>
+                                                    <h2>Contact Info</h2>
+                                                    <p class="text-justify">Feel free to visit out FAQ section below if you have basic questions about Pumpic installation, compatibility, billing process or technical issues.</p>
                                                     <p class="text-justify">We are a team of talented designers and developers, who joined forces to introduce unique and user-friendly smartphone monitoring solutions. Pumpic app was created to help parents take care of their children and protect them by means of remote mobile tracking. The application runs on iOS and Android devices only.</p> 
                                                     <p class="text-justify">If you have any questions or suggestions, which will help improve our services, please feel free to contact us using the form below or via email.</p>
                                                     <p>
@@ -177,7 +178,7 @@
 												<a id="install" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse8">How to install Pumpic?</a>
 												<div id="collapse8" class="collapse">
                                                                                                     <div>
-                                                                                                        <p>The installation is very easy and stress-free. It will take you no longer than 5 minutes. Once you have made a purchase, follow the guidelines pointed in a subscription email to complete the setup. Note that physical access to the target device is required (unless you choose iCloud solution for monitoring iOS devices). If you run into difficulties, feel free to contact our Customer Support Team for help.</p>
+                                                                                                        <p>Pumpic installation is very easy and stress-free. It will take you no longer than 5 minutes. Once you have made a purchase, follow the guidelines pointed in a subscription email to complete the setup. Note that physical access to the target device is required (unless you choose iCloud solution for monitoring iOS devices). If you run into difficulties, feel free to contact our Customer Support Team for help.</p>
                                                                                                     </div>    
                                                                                                 </div>
                                                                                             </div>    

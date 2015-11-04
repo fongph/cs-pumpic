@@ -1,6 +1,6 @@
 <div class="{if isset($blockBg)}{$blockBg}{else}dark{/if} howtouse-pumpic how-it-works">
     <div class="container">
-        <h2 class="text-center">{if isset($title) && !empty($title)}{$title}{else}How It Works{*How to Get Pumpic*}{/if}</h2>
+        <{if isset($tagTitle)}{$tagTitle}{else}h2{/if} class="{if isset($classTitle)}{$classTitle}{/if} text-center">{if isset($title) && !empty($title)}{$title}{else}How It Works{*How to Get Pumpic*}{/if}</{if isset($tagTitle)}{$tagTitle}{else}h2{/if}>
 
         <div class="row">
             <ul class="thumbs">

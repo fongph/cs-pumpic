@@ -17,11 +17,11 @@
                         
                     <div class='box-cp pull-right mt3'>   
                         {if isset($lang) && $lang == "bra"}
-                            <a href="#store" class="btn btn-sm btn-red visible-lg cp-login"> Comprar Agora</a>
+                            <a href="#store" class="btn btn-sm btn-red visible-lg cp-login anchor-menu-fly"> Comprar Agora</a>
                         {elseif isset($lang) && $lang == "de"}
-                            <a href="#store" class="btn btn-sm btn-red visible-lg cp-login"> Jetzt kaufen</a>
+                            <a href="#store" class="btn btn-sm btn-red visible-lg cp-login anchor-menu-fly"> Jetzt kaufen</a>
                         {else}
-                            <a href="#store" class="btn btn-sm btn-red visible-lg cp-login"> Buy Now</a>
+                            <a href="#store" class="btn btn-sm btn-red visible-lg cp-login anchor-menu-fly"> Buy Now</a>
                         {/if}
                     </div>    
                         
@@ -31,22 +31,22 @@
                             <li {if isset($topmenu_active) && $topmenu_active=='mobile-spy'} class="active"{/if}>
                                 
                                 {if isset($lang) && $lang == "bra"}
-                                    <a href="#mobile-spy">Espião Móvel</a>
+                                    <a href="#mobile-spy" class="anchor-menu-fly">Espião Móvel</a>
                                 {elseif isset($lang) && $lang == "de"}
-                                    <a href="#mobile-spy">Mobile Spy</a>
+                                    <a href="#mobile-spy" class="anchor-menu-fly">Mobile Spy</a>
                                 {else}
-                                    <a href="#mobile-spy">Mobile Spy</a>
+                                    <a href="#mobile-spy" class="anchor-menu-fly">Mobile Spy</a>
                                 {/if}    
                             </li>
                             
                             <li {if isset($topmenu_active) && $topmenu_active=='icloud-spy'} class="active"{/if}>
                                 
                                 {if isset($lang) && $lang == "bra"}
-                                    <a href="#icloud-spy">Espião iCloud</a>
+                                    <a href="#icloud-spy" class="anchor-menu-fly">Espião iCloud</a>
                                 {elseif isset($lang) && $lang == "de"}
-                                    <a href="#icloud-spy">iCloud Spy</a>
+                                    <a href="#icloud-spy" class="anchor-menu-fly">iCloud Spy</a>
                                 {else}
-                                    <a href="#icloud-spy">iCloud Spy</a>
+                                    <a href="#icloud-spy" class="anchor-menu-fly">iCloud Spy</a>
                                 {/if} 
                                 
                             </li>
@@ -54,11 +54,11 @@
                             <li {if isset($topmenu_active) && $topmenu_active=='demo'} class="active"{/if}>
                                 
                                 {if isset($lang) && $lang == "bra"}
-                                    <a href="#ipad">Demonstração</a>
+                                    <a href="#ipad" class="anchor-menu-fly">Demonstração</a>
                                 {elseif isset($lang) && $lang == "de"}
-                                    <a href="#ipad">Demo</a>
+                                    <a href="#ipad" class="anchor-menu-fly">Demo</a>
                                 {else}
-                                    <a href="#ipad">Demo</a>
+                                    <a href="#ipad" class="anchor-menu-fly">Demo</a>
                                 {/if}
                                 
                             </li>
@@ -80,11 +80,11 @@
                             <li>
                                 
                                 {if isset($lang) && $lang == "bra"}
-                                    <a href="#store" class="btn btn-sm btn-red hidden-lg cp-login"> Comprar Agora</a>
+                                    <a href="#store" class="btn btn-sm btn-red hidden-lg cp-login anchor-menu-fly"> Comprar Agora</a>
                                 {elseif isset($lang) && $lang == "de"}
-                                    <a href="#store" class="btn btn-sm btn-red hidden-lg cp-login"> Jetzt kaufen</a>
+                                    <a href="#store" class="btn btn-sm btn-red hidden-lg cp-login anchor-menu-fly"> Jetzt kaufen</a>
                                 {else}
-                                    <a href="#store" class="btn btn-sm btn-red hidden-lg cp-login"> Buy Now</a>
+                                    <a href="#store" class="btn btn-sm btn-red hidden-lg cp-login anchor-menu-fly"> Buy Now</a>
                                 {/if}
                                 
                             </li>

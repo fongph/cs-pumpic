@@ -13937,9 +13937,9 @@ ul.list_category li:first-child {
     }
 }
 
-#tmp-isg *, .tmp-lc-rs * {
+/*#tmp-isg *, .tmp-lc-rs * {
     font-weight: 300;
-}
+}*/
 
 .tmp-lc-rs .box-rsp {
     padding-top: 10px;

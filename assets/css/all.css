@@ -7330,3 +7330,9 @@ ul.list_category li:first-child {
 .tmp-lc-rs .box-rsp {
     padding-top: 10px;
 }
+
+.nav > li > a:focus, .nav > li > a:hover {
+    background: none;
+    outline: none;
+    color: #16a89e;
+}

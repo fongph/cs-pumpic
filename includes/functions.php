@@ -52,8 +52,6 @@ function dispatch($urlParams, $config){
             include 'compatibility_device.php';
         } else {
             $path = buildTplPath($urlParams,$config);
-
-            var_dump($urlParams); die;
             
             if($path['answer'] == 404) {
                 throw new PageNotFoundException;

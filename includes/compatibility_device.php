@@ -38,7 +38,7 @@ if($phoneData){
     }
     header('Last-Modified: '. $LastModified);
     
-    $cache_id = 'compatibility_item_'.md5( $phoneData['rowid'].'-'.$phoneData['cdate'].'-'.$phoneData['alies'] );
+    //$cache_id = 'compatibility_item_'.md5( $phoneData['rowid'].'-'.$phoneData['cdate'].'-'.$phoneData['alies'] );
     $smarty->assign('compatibilityDeviceUri', $_GET['model']);
     $smarty->assign('getSetting', array(
         '_item' => $phoneData,
@@ -46,5 +46,5 @@ if($phoneData){
         'description' => "Parental control software for {$phoneData['name']} monitors and blocks unsafe activity while allowing kids access to the Internet. Geo fencing allows you to be always aware of your child safety.",
         'api' => $config['api_device'],
     ));
-    $smarty->display('compatibility/item.tpl', $cache_id); // $cache_id    
+    $smarty->display('compatibility/item.tpl');//, $cache_id); // $cache_id    
 } else throw new PageNotFoundException;

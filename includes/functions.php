@@ -46,19 +46,13 @@ function dispatch($urlParams, $config){
         
     try {
 
+        
+        
         if (isset($config['php_compile'][$urlParams['uri']])) {
             include $config['php_compile'][$urlParams['uri']];
-        } elseif( isset($_GET['model']) and !empty($_GET['model']) ) {
-            include 'compatibility_device.php';
-  
-        //} elseif($urlParams['uri'] == 'compatibility') {
-        //    throw new PageNotFoundException;
-            
-        //} elseif(strpos($urlParams['uri'], 'compatibility/') === 0) {
-         //   include 'compatibility_device.php';
-            
+        } elseif(($urlParams['uri'] == 'compatibility/') && isset($_GET['model']) && !empty($_GET['model'])) {
+            include 'compatibility_device.php';   
         } else {
-            
             $path = buildTplPath($urlParams,$config);
             if($path['answer'] == 404) {
                 throw new PageNotFoundException;

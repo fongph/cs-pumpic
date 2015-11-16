@@ -48,6 +48,15 @@ function dispatch($urlParams, $config){
 
         if (isset($config['php_compile'][$urlParams['uri']])) {
             include $config['php_compile'][$urlParams['uri']];
+        } elseif( isset($_GET['model']) and !empty($_GET['model']) ) {
+            include 'compatibility_device.php';
+  
+        //} elseif($urlParams['uri'] == 'compatibility') {
+        //    throw new PageNotFoundException;
+            
+        //} elseif(strpos($urlParams['uri'], 'compatibility/') === 0) {
+         //   include 'compatibility_device.php';
+            
         } else {
             
             $path = buildTplPath($urlParams,$config);
@@ -992,7 +1001,7 @@ function smarty_function_Content($params, $template) {
     $_style = (isset($params['blockBg'])) ? $params['blockBg'] : 'dark';
     $_title = (isset($params['title'])) ? $params['title'] : '';
     $_styleTitle = (isset($params['styleTitle'])) ? $params['styleTitle'] : 'h1';
-     
+    
     $html = '<div id="block-content" class="'.$_style.'">
                     <div class="container">';
                     if(!empty($_title))

@@ -44,8 +44,7 @@ function dispatch($urlParams, $config){
         die;
     }
         
-    try {
-        
+    try {        
         if (isset($config['php_compile'][$urlParams['uri']])) {
             include $config['php_compile'][$urlParams['uri']];
         } elseif(preg_match("/^\/compatibility\/(.+)\/$/", $_SERVER['REQUEST_URI'], $matches)) {

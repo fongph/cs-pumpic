@@ -156,14 +156,6 @@ class Order extends ManagerUser
                 ->setReferenceData($order->getId() . '-' . $order->getHash())
                 ->setInstant();
                 // ->setTestMode(); // не обязательно
-
-        if($_COOKIE) {
-            $googleAnalytics = new OrderGoogleAnalyticsRecord($this->_pdo);
-            $googleAnalytics
-                ->setOrderId($order->getId())
-                ->setDataFromCookiesArray($_COOKIE)
-                ->save();
-        }
         
         if($testMode) $this -> _gateway->setTestMode();
                 
@@ -239,14 +231,6 @@ class Order extends ManagerUser
             // auth
             $this -> authUserID( $userID ); 
             
-        }
-
-        if(isset($_COOKIE)) {
-            $googleAnalytics = new OrderGoogleAnalyticsRecord($this->_pdo);
-            $googleAnalytics
-                ->setOrderId($order->getId())
-                ->setDataFromCookiesArray($_COOKIE)
-                ->save();
         }
         
         return true;

@@ -13,7 +13,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:boomersweb/cs-billing.git",
-                "reference": "cbf6c3f6e5c2f14acf9554821f134fd1e9e11e90"
+                "reference": "b778d8c1a065c6614021d41bd7b8081b9e3a8188"
             },
             "require": {
                 "boomers/cs-models": "dev-master",
@@ -32,7 +32,7 @@
             "license": [
                 "MIT"
             ],
-            "time": "2015-09-25 10:54:16"
+            "time": "2015-11-04 15:01:27"
         },
         {
             "name": "boomers/cs-mail",
@@ -40,7 +40,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:boomersweb/cs-mail.git",
-                "reference": "62f4d91205a3f51f4143bc6c7387de808b821f59"
+                "reference": "4cd724cbe87bef9a9b8fd8417423b0adbabeed7b"
             },
             "require": {
                 "guzzlehttp/guzzle": "~5.0",
@@ -59,7 +59,7 @@
             "license": [
                 "MIT"
             ],
-            "time": "2015-10-01 06:26:13"
+            "time": "2015-10-30 11:58:32"
         },
         {
             "name": "boomers/cs-models",
@@ -67,7 +67,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:boomersweb/cs-models.git",
-                "reference": "b8161ceb327d89b6b6072c965eb3171854e98e67"
+                "reference": "25a001087f73c03962827462f0b8863b9386c4ca"
             },
             "require": {
                 "php": ">=5.4.0"
@@ -81,7 +81,7 @@
                     "CS\\Models\\": "src/"
                 }
             },
-            "time": "2015-10-07 09:00:03"
+            "time": "2015-10-26 14:15:18"
         },
         {
             "name": "boomers/cs-settings",
@@ -89,7 +89,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:boomersweb/cs-settings.git",
-                "reference": "f9cca4c552f9b800c6b4f2419a4925585205f89d"
+                "reference": "05c209ba8962025b817886e3e9a8215b0beed906"
             },
             "require": {
                 "php": ">=5.4.0"
@@ -100,7 +100,7 @@
                     "CS\\Settings\\": "src/"
                 }
             },
-            "time": "2015-10-19 12:42:31"
+            "time": "2015-10-28 07:11:02"
         },
         {
             "name": "boomers/cs-users",
@@ -108,7 +108,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:boomersweb/cs-users.git",
-                "reference": "ddd1df2068d8bf7af8fa51529e376269a65ded93"
+                "reference": "c8838d8331691cd1aaee3c889cbf1d1505537e61"
             },
             "require": {
                 "boomers/cs-mail": "dev-master",
@@ -132,7 +132,7 @@
             "license": [
                 "MIT"
             ],
-            "time": "2015-10-21 08:43:12"
+            "time": "2015-10-22 11:10:30"
         },
         {
             "name": "boomers/ip",
@@ -606,16 +606,16 @@
         },
         {
             "name": "rastor/jira-client",
-            "version": "0.3.4.8",
+            "version": "0.3.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/oRastor/jira-client.git",
-                "reference": "c561a80c7bcd0be282a17974fb9fec0d5ce9e68c"
+                "reference": "74724e274aba251d8dc0011c8f62199a31b9e5ee"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/oRastor/jira-client/zipball/c561a80c7bcd0be282a17974fb9fec0d5ce9e68c",
-                "reference": "c561a80c7bcd0be282a17974fb9fec0d5ce9e68c",
+                "url": "https://api.github.com/repos/oRastor/jira-client/zipball/74724e274aba251d8dc0011c8f62199a31b9e5ee",
+                "reference": "74724e274aba251d8dc0011c8f62199a31b9e5ee",
                 "shasum": ""
             },
             "require": {
@@ -644,7 +644,7 @@
                 "jira",
                 "rest"
             ],
-            "time": "2015-10-13 05:38:40"
+            "time": "2015-11-04 07:43:50"
         },
         {
             "name": "rastor/system",
@@ -1140,16 +1140,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "4.8.14",
+            "version": "4.8.16",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "b4900675926860bef091644849305399b986efa2"
+                "reference": "625f8c345606ed0f3a141dfb88f4116f0e22978e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/b4900675926860bef091644849305399b986efa2",
-                "reference": "b4900675926860bef091644849305399b986efa2",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/625f8c345606ed0f3a141dfb88f4116f0e22978e",
+                "reference": "625f8c345606ed0f3a141dfb88f4116f0e22978e",
                 "shasum": ""
             },
             "require": {
@@ -1208,7 +1208,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2015-10-17 15:03:30"
+            "time": "2015-10-23 06:48:33"
         },
         {
             "name": "phpunit/phpunit-mock-objects",
@@ -1639,23 +1639,20 @@
         },
         {
             "name": "symfony/yaml",
-            "version": "v2.7.5",
+            "version": "v2.7.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
-                "reference": "31cb2ad0155c95b88ee55fe12bc7ff92232c1770"
+                "reference": "eca9019c88fbe250164affd107bc8057771f3f4d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/yaml/zipball/31cb2ad0155c95b88ee55fe12bc7ff92232c1770",
-                "reference": "31cb2ad0155c95b88ee55fe12bc7ff92232c1770",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/eca9019c88fbe250164affd107bc8057771f3f4d",
+                "reference": "eca9019c88fbe250164affd107bc8057771f3f4d",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.9"
-            },
-            "require-dev": {
-                "symfony/phpunit-bridge": "~2.7"
             },
             "type": "library",
             "extra": {
@@ -1684,7 +1681,7 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
-            "time": "2015-09-14 14:14:09"
+            "time": "2015-10-11 09:39:48"
         }
     ],
     "aliases": [],

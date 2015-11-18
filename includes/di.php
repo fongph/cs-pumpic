@@ -1,6 +1,6 @@
 <?php
 global $di, $config;
-$config or require __DIR__ . '/config.php';
+$config or require __DIR__ . '/config.development.php';
 
 use CS\Settings\GlobalSettings;
 

@@ -13937,23 +13937,12 @@ ul.list_category li:first-child {
     }
 }
 
-/*#tmp-isg *, .tmp-lc-rs * {
+#tmp-isg *, .tmp-lc-rs * {
     font-weight: 300;
-}*/
+}
 
 .tmp-lc-rs .box-rsp {
     padding-top: 10px;
-}
-
-#block-stickybar nav .btn:focus, #block-stickybar nav .btn:hover {
-    color: #fff;
-    outline: none;
-}
-
-.nav > li > a:focus, .nav > li > a:hover {
-    background: none;
-    outline: none;
-    color: #16a89e;
 }
 
 .banner-header {

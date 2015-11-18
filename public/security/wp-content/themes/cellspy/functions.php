@@ -233,6 +233,12 @@ function getStaticUrl(){
 	
 }
 
+function getVersionOS($version){
+    include('../../includes/config.php');
+    return (isset($config[ $version ])) ? $config[ $version ] : '';
+
+}
+
 function hasUser() {
     require_once '../../includes/lib/users/ManagerUser.php';
     $obj = new includes\lib\users\ManagerUser( array() );

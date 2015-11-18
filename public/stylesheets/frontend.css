@@ -7288,13 +7288,19 @@ a.a-default:hover {
     display: inline-block;
     padding: 10px 30px;
     border-right: 1px solid #cccccc;
-    min-height: 160px;
+    min-height: 200px;
     height: 100%;
 }
 
 .table-statistick .item {
     padding: 10px 15px;
     border-right: 1px solid #cccccc;
+}
+
+@media (max-width: 468px) {
+    .block-statistick .item {
+
+    }
 }
 
 .block-statistick .item:last-child, .table-statistick .item:last-child {
@@ -15685,23 +15691,12 @@ ul.list_category li:first-child {
     }
 }
 
-/*#tmp-isg *, .tmp-lc-rs * {
+#tmp-isg *, .tmp-lc-rs * {
     font-weight: 300;
-}*/
+}
 
 .tmp-lc-rs .box-rsp {
     padding-top: 10px;
-}
-
-#block-stickybar nav .btn:focus, #block-stickybar nav .btn:hover {
-    color: #fff;
-    outline: none;
-}
-
-.nav > li > a:focus, .nav > li > a:hover {
-    background: none;
-    outline: none;
-    color: #16a89e;
 }
 
 .border-top-bottom {

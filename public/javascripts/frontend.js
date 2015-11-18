@@ -3518,6 +3518,19 @@ $(function() {
        }
 });
 
+
+$('a').each(function() {
+	var a = new RegExp('/' + window.location.host + '/');
+	if(!a.test(this.href)) {
+		$(this).click(function(event) {
+			event.preventDefault();
+			event.stopPropagation();
+			window.open(this.href, '_blank');
+		});
+	}
+})
+
+
 //http://stackoverflow.com/questions/12214654/jquery-1-8-find-event-handlers
 //http://james.padolsey.com/javascript/debug-jquery-events-with-listhandlers/
 // $('*').listHandlers('*');

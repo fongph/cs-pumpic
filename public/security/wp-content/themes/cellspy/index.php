@@ -59,11 +59,12 @@
                             <div id="secondary" class="widget-area" role="complementary">
                                 <?php get_sidebar('main'); ?>
                                 <!-- Banner 3 -->
+                                <?php get_sidebar('main'); ?>
                                 <div class="box-right-banners">
-                                <a href="/entrepreneurial-skills-to-teach-your-child.html" alt="8 Entrepreneurial Skills To Teach Your Child" title="8 Entrepreneurial Skills To Teach Your Child"><img
-                                        src="/images/wp/banners/sidebar-infographic-picture.png" alt=""></a>
-                                <!-- Banner 3 end -->
+                                    <a href="/entrepreneurial-skills-to-teach-your-child.html"  title="8 Entrepreneurial Skills To Teach Your Child"><img
+                                            src="/images/wp/banners/sidebar-infographic-picture.png" alt="8 Entrepreneurial Skills To Teach Your Child" ></a>
                                 </div>
+                                <!-- Banner 3 end -->
                             </div>
                         </div>
                     </div>

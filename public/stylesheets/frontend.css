@@ -7762,11 +7762,9 @@ div.symbol {
 }
 
 .list-numbers {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    counter-reset:li; 
-    margin-left:0; 
-    padding-left:0; 
+    padding: 30px 30px 30px 0px;
+    counter-reset:li;
+    margin-left:0;
 }
 .list-numbers > li {
     padding-left: 50px;

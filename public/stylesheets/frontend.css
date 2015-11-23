@@ -7287,9 +7287,13 @@ a.a-default:hover {
 .block-statistick .item {
     display: inline-block;
     padding: 10px 30px;
-    border-right: 1px solid #cccccc;
     min-height: 200px;
     height: 100%;
+}
+
+.block-statistick .item:nth-child(2) {
+    border-right: 1px solid #ccc;
+    border-left: 1px solid #ccc;
 }
 
 .table-statistick .item {
@@ -7297,9 +7301,11 @@ a.a-default:hover {
     border-right: 1px solid #cccccc;
 }
 
-@media (max-width: 468px) {
-    .block-statistick .item {
 
+
+@media (max-width: 768px) {
+    .block-statistick .item:nth-child(2) {
+    border: none;
     }
 }
 

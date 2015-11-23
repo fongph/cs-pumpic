@@ -45,7 +45,7 @@
                         ?>
                         
                         
-                        <?php 
+                        <?php
                         if(function_exists('wp_paginate')) {
                             wp_paginate();
                         } 
@@ -54,17 +54,20 @@
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-12">
                         <?php require_once '../../templates/includes/blog-banner-buy-home.tpl'; ?>
-                        
-                        
-                        
+
                         <div class="feature_list">
                             <div id="secondary" class="widget-area" role="complementary">
                                 <?php get_sidebar('main'); ?>
+                                <!-- Banner 3 -->
+                                <?php get_sidebar('main'); ?>
+                                <div class="box-right-banners">
+                                    <a href="/entrepreneurial-skills-to-teach-your-child.html"  title="8 Entrepreneurial Skills To Teach Your Child"><img
+                                            src="/images/wp/banners/sidebar-infographic-picture.png" alt="8 Entrepreneurial Skills To Teach Your Child" ></a>
+                                </div>
+                                <!-- Banner 3 end -->
                             </div>
                         </div>
                     </div>
-                    
-                    
                 </div> <!-- .row -->
             </div>
         </div> <!-- .row -->

@@ -13,3 +13,4 @@
 npm
 npm-debug.log
 mailSender.log
+.DS_Store

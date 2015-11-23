@@ -161,8 +161,6 @@ RewriteRule ^compatibility/android-devices(.+)$ search.html [L]
 # iOS
 RewriteRule ^compatibility/ios-devices(.+)$ search.html [L]
 
-RewriteRule ^compatibility/(.+)$ compatibility/?model=$1 [L]
-
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 

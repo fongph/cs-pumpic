@@ -34,6 +34,7 @@ define('DB_CHARSET', 'utf8');
 /** The Database Collate type. Don't change this if in doubt. */
 define('DB_COLLATE', '');
 
+
 /**#@+
  * Authentication Unique Keys and Salts.
  *
@@ -77,7 +78,7 @@ define('WP_DEBUG', false);
 if ( !defined('ABSPATH') )
 	define('ABSPATH', dirname(__FILE__) . '/');
 
-//define('WP_HOME', 'http://'.$_SERVER['HTTP_HOST'].'/security/');
-//define('WP_SITEURL', 'http://'.$_SERVER['HTTP_HOST'].'/security/');
+define('WP_HOME', 'http://'.$_SERVER['HTTP_HOST'].'/security/');
+define('WP_SITEURL', 'http://'.$_SERVER['HTTP_HOST'].'/security/');
 /** Sets up WordPress vars and included files. */
 require_once(ABSPATH . 'wp-settings.php');

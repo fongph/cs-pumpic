@@ -227,6 +227,13 @@ class Order extends ManagerUser
             if($license->getId()) {
                 $this -> setUserOption($userID, 'internal-trial-license', $license->getId());
                 $this -> _usersNotes ->licenseAdded($license->getId(), $userID);
+                
+                $eventManager = \EventManager\EventManager::getInstance();
+                
+                $eventManager->emit('license-added', array(
+                    'licenseId' => $license->getId(),
+                    'userId' => $license->getUserId()
+                ));
             }
             // auth
             $this -> authUserID( $userID ); 

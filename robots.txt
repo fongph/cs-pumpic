@@ -4,6 +4,7 @@ Disallow: */tag/*
 Disallow: /restore.html
 Disallow: /login.html
 Disallow: /tos.txt
+Disallow: /toscpapp.txt
 
 Disallow: /wp-content
 Disallow: /wp-admin
@@ -18,3 +19,7 @@ User-agent: Googlebot-Image
 Allow: /wp-content/uploads/
 
 Sitemap: http://pumpic.com/sitemap.xml
+
+
+
+http://pumpic.com

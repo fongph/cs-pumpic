@@ -39,7 +39,7 @@
     "
 }    
     
-<body>
+<body class="phones-for-kids-head">
     <!-- FLY BLOCKS -->
     {include file='../includes/content/fly/fly_blocks.tpl'}
     <!-- END FLY BLOCKS-->
@@ -105,8 +105,8 @@
     blockBg='dark'}
     
     <div id="grid-images" class="row">
-        <div class="col-lg-9 col-md-9 col-sm-9">
-            <h2 class="h2 text-right-important">Choosing Safe Phone for Kids</h2>
+        <div class="col-lg-12 col-md-12 col-sm-12">
+            <h2 class="h2 text-center">Choosing Safe Phone for Kids</h2>
             <div class="pt30 pb20">
                 <p>When choosing a cell phone for children careful parents should make sure that in addition to various opportunities and convenience, such a device also provides safety for your little loved ones.</p>
 				<p>Many producers of mobile gadgets have designed special safe phones for kids. Thus, they maintain necessary functions of an ordinary cell phone and at the same time include some other features you will find helpful for children in case of emergency.</p>

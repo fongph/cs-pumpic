@@ -39,7 +39,7 @@
     "
 }    
     
-<body>
+<body class="youtube-parental">
     <!-- FLY BLOCKS -->
     {include file='../includes/content/fly/fly_blocks.tpl'}
     <!-- END FLY BLOCKS-->
@@ -114,7 +114,7 @@
             </div>
         </div>
         <div class="col-lg-3 col-md-3 col-sm-3 text-center">
-            <img alt="Track YouTube' Location" src="{$img}/landings/limit-youtube-pic.png" width="207px" height="208px" />
+            <img class="limit-youtube-pic" alt="Track YouTube' Location" src="{$img}/landings/limit-youtube-pic.png" width="207px" height="208px" />
         </div>
     </div>    
 {EndContent}
@@ -136,7 +136,7 @@
                         </div>
                         <div class="col-sm-4 col-md-4 col-lg-4">
                                 <div class="feature">
-                                        <img src="{$img}/icons/icon-track-kids.png" alt="remote mobile monitoring">
+                                        <img src="{$img}/icons/youtube.png" alt="remote mobile monitoring">
                                         <h3>Monitor YouTube</h3>
                                         <ul class="feature_list">
                                                 <li>View links and video titles</li>
@@ -164,15 +164,16 @@
         title = "More than 24 Useful Features by Pumpic"
         description = "Pumpic includes reliable monitoring solutions to keep your children safe and secure both online and during daily activities. Thus, you provide your loved ones with comprehensive protection with the ability to monitor every step they take on their smartphones and tablets. Take care of your kids remotely wherever you go with Pumpic parental control."
         blockBg="dark"
-        } 
-        
-        {include file='../includes/content/ipad.tpl' 
-                blockBg="light"
-                imgUrl = "parental_control/ipad.png"
-                imgAlt = "Apple iOS. iPad"
-                title = "Use Control Panel Easily"
-				description = "Log in to your Control Panel to start quick, simple, and smooth monitoring. It can be accessed from any browser and any device including various smartphones, tablets, laptops, and desktop computers. Note that in your Control Panel you can not only view the information tracked, but also set limits, put restrictions, and manipulate the target device distantly."
-                textAlign = "left"
+        }
+
+        {include file='../includes/content/ipad.tpl'
+        blockBg="light"
+        bgTab = "bgIOS"
+        imgUrl = "parental_control/ipad.png"
+        imgAlt = "Android"
+        title = "Control Panel Is Easy to Use"
+        description = "The data tracked by Pumpic on your kids’ Android tablet is sent directly to your Control Panel, where you can view it. To access the Control Panel, you can use any device including desktop computers, laptops, smartphones, and tablets. In addition to data monitoring, the app allows you to control the target Android tablet and manipulate its activities remotely."
+        textAlign = "left"
         }
         
         {* description = "Install the iPad parental control app on your kid’s tablet and start monitoring right away. Log in to your Control Panel and view all the information from the target device. It can be accessed from anywhere including desktop computers, laptops, smartphones, and tablets. In addition to data monitoring, the Control Panel allows you to set limits, block tablet activities, and lock the target device permanently."             

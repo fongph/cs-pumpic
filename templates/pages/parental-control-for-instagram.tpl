@@ -145,7 +145,7 @@
                         </div>
                         <div class="col-sm-4 col-md-4 col-lg-4">
                                 <div class="feature">
-                                        <img src="{$img}/icons/icon-track-kids.png" alt="remote mobile monitoring">
+                                        <img src="{$img}/icons/instagram.png" alt="remote mobile monitoring">
                                         <h3>Monitor Instagram</h3>
                                         <ul class="feature_list">
                                                 <li>View uploaded pics</li>
@@ -168,7 +168,7 @@
                 </div>
         </div>
 </div>
-        
+
         {include file='../includes/content/features-table.tpl'
         title = "Many Useful Features for Reliable Protection"
         description = "In addition to Instagram parental monitoring, Pumpic provides you with more than 24 solutions for child safety. The app allows you to take care of your loved ones remotely covering the Internet and daily activities on smartphones and tablets."
@@ -191,11 +191,11 @@
     <div class="container">
             <h2 class="text-center testimonial-title">Trusted by Over 10 000 Customers Worldwide:</h2>
             <div class="row">
-                
+
                 <div class="bxSliders only-pc">
                         <!-- SLIDE #1 -->
                         <div class="slide">
-                
+
                     <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
                             <img src="{$img}/testimonials/stan-m-14.png" alt="" class="testimonial-photo">
                             <div class="testimonial-text">
@@ -217,11 +217,11 @@
                                     <p>“I didn’t want my son to see what he is not supposed to on the Internet. That’s why I bought Pumpic before giving him a smartphone. The app helps me a lot. I’ve blocked some websites already and keep monitoring his activities for inappropriate content. He asked me to let him use Instagram and though he is too young for that I see no problem as long as I have Pumpic.”</p>
                             </div>
                     </div>
-                            
+
                         </div>
                 </div>
-                <div class="bxSliderMobile"></div>            
-                            
+                <div class="bxSliderMobile"></div>
+
             </div>
     </div>
 </div>

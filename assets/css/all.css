@@ -2886,8 +2886,7 @@ label.r_on:before {
 article {  
   width: 100%;
   overflow: hidden;
-  padding-bottom: 30px;
-  margin-bottom: 35px;
+  margin-bottom: 26px;
 }
 article.artice_bordered {
   border-bottom: 1px solid #cecece;
@@ -7162,7 +7161,7 @@ article.short ul.rounded li:before {
 .share_list li {
     display: inline-block;
     padding: 0;
-    margin-left: .5em !important;
+    margin-left: 4px;
 }
 
 .share_list li a {
@@ -7329,4 +7328,80 @@ ul.list_category li:first-child {
 
 .tmp-lc-rs .box-rsp {
     padding-top: 10px;
+}
+
+
+/*  block-child-location-tracking  */
+
+
+.block-child-location-tracking .h1{
+    font-size: 30px;
+}
+
+
+.block-apps-pic{
+    padding-top: 45px;
+}
+
+
+@media only screen and (max-width: 991px) {
+    .block-apps-pic{
+        padding-top: 130px;
+
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    .block-apps-pic{
+        padding-top: 0;
+    }
+}
+
+.limit-youtube-pic{
+    padding-top: 40px;
+}
+
+
+
+@media only screen and (max-width: 991px) {
+    .limit-youtube-pic{
+        padding-top: 130px;
+
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    .limit-youtube-pic{
+        padding-top: 0;
+    }
+}
+
+
+.youtube-parental .h1{
+    font-size: 25px;
+}
+
+.youtube-parental .header-info-descriptions{
+font-size: 15px;
+}
+
+.phones-for-kids-head .visual-img-pc {
+    position: relative;
+    top: 20px;
+}
+
+@media (max-width: 992px){
+    .phones-for-kids-head .visual-img-pc {
+        top: 25px;
+    }
+
+}
+
+@media (max-width: 768px){
+    .phones-for-kids-head .visual-img-pc {
+        top: 19px;
+    }
+
 }

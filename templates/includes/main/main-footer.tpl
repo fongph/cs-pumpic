@@ -48,6 +48,9 @@
                                     <li>
                                         <a href="/reviews/">Best Mobile Trackers</a>
                                     </li>
+                                    <li>
+                                        <a href="cell-phones-for-kids.html">Cell Phones for Kids</a>
+                                    </li>
                                 </ul>        
                             </div>    
                         </div>
@@ -57,10 +60,10 @@
                         <div class="col-sm-10 col-md-10 col-lg-10 col-sm-offset-1 col-md-offset-1 col-lg-offset-1">
                                 <div class="share">
                                         <ul class="box-socials clearfix">
-                                            <li><a href="https://www.facebook.com/pages/Pumpic/299299196929718?sk=timeline" class="icons-social i-fb"></a></li>
-                                            <li><a href="https://twitter.com/pumpic_com" class="icons-social i-tw"></a></li>
-                                            <li><a href="https://www.youtube.com/user/pumpicapp" class="icons-social i-youtube"></a></li>
-                                            <li><a href="https://plus.google.com/u/2/b/103434324737023434003/103434324737023434003/posts" class="icons-social i-google"></a></li>
+                                            <li><a href="https://www.facebook.com/pages/Pumpic/299299196929718?sk=timeline" target="_blank" class="icons-social i-fb" ></a></li>
+                                            <li><a href="https://twitter.com/pumpic_com" target="_blank" class="icons-social i-tw"></a></li>
+                                            <li><a href="https://www.youtube.com/user/pumpicapp" target="_blank" class="icons-social i-youtube"></a></li>
+                                            <li><a href="https://plus.google.com/u/2/b/103434324737023434003/103434324737023434003/posts" target="_blank" class="icons-social i-google"></a></li>
                                             <li>
                                                 {include file='../../includes/content/phone/block-phone-footer.tpl'}
                                             </li>

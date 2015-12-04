@@ -496,11 +496,11 @@ div.blockquate_bottom {
 }
 
 .limit-youtube-pic{
-    max-height: 280px;
+    max-height: 280px !important;
 }
 
 .block-apps-pic {
-    max-height: 280px;
+    max-height: 280px !important;
 }
 
 .compatibility {

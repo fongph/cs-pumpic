@@ -29,7 +29,7 @@
                                                         </li>
 
                                                         <li>
-                                                            <a href="/contact-us.html">Contact us</a>
+                                                            <a href="/faq.html">Contact us</a>
                                                         </li>
                                                 </ul>
                                         </div>

@@ -25,13 +25,7 @@
             nocache
         }
         
-        <!-- FLY BLOCKS -->
-        {* nocache}
-        {if ''|hasFreeTrialStick}    
-            {include file='../includes/content/fly/fly-free-trial.tpl'}
-        {/if}    
-        {/nocache *}
-        <!-- END FLY -->
+
         <style>
             .page-germany .visual-text p.header-info-descriptions {
                 font-size: 14px;

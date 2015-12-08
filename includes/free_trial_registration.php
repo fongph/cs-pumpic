@@ -1,6 +1,14 @@
 <?php
 // ini_set('display_errors', 1);
 // error_reporting(-1);
+global $di;
+/** @var $auth \System\Auth */
+$auth = $di->get('auth');
+if (!$auth->hasIdentity()) {
+    /** @var $stickBanner includes\lib\users\TrialStick */
+    $stickBanner = $di->get('trialStickBanner');
+    $stickBanner->setCookie(true);
+}
 
 $_inc = dirname(__FILE__); // includes
 $b_dir = dirname( $_inc ); // folder sites directory

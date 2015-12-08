@@ -3519,6 +3519,8 @@ $(function() {
 });
 
 
+
+
 //http://stackoverflow.com/questions/12214654/jquery-1-8-find-event-handlers
 //http://james.padolsey.com/javascript/debug-jquery-events-with-listhandlers/
 // $('*').listHandlers('*');

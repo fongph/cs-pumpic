@@ -102,4 +102,8 @@
 
 {include file="$module"}
 
-{*include file='../../includes/main-popUp.tpl'*}
+{nocache}
+    {if !$hideTrialLinks and $di->get('trialStickBanner')->isVisible()}
+         {include file="../includes/content/fly/fly-free-trial.tpl"}
+    {/if}
+{/nocache}

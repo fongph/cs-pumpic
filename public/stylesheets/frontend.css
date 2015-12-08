@@ -25165,6 +25165,7 @@ body {
     z-index: 999;
     right: 10px;
     position: fixed;
+    top: 60px;
 }
 #fly-free-trial > a {
     display: inline-block;

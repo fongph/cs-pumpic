@@ -81,8 +81,10 @@
                                                                             <?php endif; ?>   
 
                                                                         </li>
-                                                                        
-                                                                        <?php if(hasFreeTrialStick()): ?>
+
+                                                                        <?php
+
+                                                                        if(di()->get('trialStickBanner')->isVisible()): ?>
                                                                         <li class="mobile-free-trial">
                                                                             <a href="/free-trial.html">Free Trial</a>
                                                                         </li>

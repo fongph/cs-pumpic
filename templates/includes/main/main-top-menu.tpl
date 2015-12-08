@@ -86,11 +86,11 @@
                             {/nocache}
 
                             {nocache}
-                                {if ''|hasFreeTrialStick} 
-                            <li>
-                                <span class="mobile-free-trial"><a href="/free-trial.html">Free Trial</a></span>
-                            </li>
-                                {/if}    
+                                {if !$hideTrialLinks and $di->get('trialStickBanner')->isVisible()}
+                                    <li>
+                                        <span class="mobile-free-trial"><a href="/free-trial.html">Free Trial</a></span>
+                                    </li>
+                                {/if}
                             {/nocache}
                             
                             <li>

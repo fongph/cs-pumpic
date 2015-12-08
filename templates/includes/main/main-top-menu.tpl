@@ -85,6 +85,11 @@
                             </li>
                             {/nocache}
 
+                            <li>
+                                <a href="http://demo.{$domain}{if isset($demoHref)}{$demoHref}{else}/setDevice/125?redirect_url=cp/calls{/if}" 
+                                   class="btn btn-sm btn-orange btn-success hidden-lg cp-login"> Demo</a>
+                            </li>
+
                             {nocache}
                                 {if !$hideTrialLinks and $di->get('trialStickBanner')->isVisible()}
                                     <li>
@@ -92,11 +97,6 @@
                                     </li>
                                 {/if}
                             {/nocache}
-                            
-                            <li>
-                                <a href="http://demo.{$domain}{if isset($demoHref)}{$demoHref}{else}/setDevice/125?redirect_url=cp/calls{/if}" 
-                                   class="btn btn-sm btn-orange btn-success hidden-lg cp-login"> Demo</a>
-                            </li>
                             
                             {*if ''|hasUser}
                                 <li>

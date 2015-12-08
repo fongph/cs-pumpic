@@ -485,7 +485,7 @@ div.blockquate_bottom {
   color: white;
 }
 .visual-text p {
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 300;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   margin-bottom: 5px;
@@ -493,6 +493,14 @@ div.blockquate_bottom {
 
 .visual-text .h1 {
     text-align: inherit;
+}
+
+.limit-youtube-pic{
+    max-height: 280px !important;
+}
+
+.block-apps-pic {
+    max-height: 280px !important;
 }
 
 .compatibility {
@@ -1199,6 +1207,21 @@ form.form-faq label.disabled {
     font-size: 18px !important;
     min-height: 40px;
   }
+}
+
+.pump-learn{
+    margin-top: 4px;
+    width: 158px;
+    color: white;
+    background-color: #cf4757;
+    text-shadow: 0 1px 0 rgba(186, 120, 26, 0.4);
+}
+
+
+
+.pump-learn:hover{
+    background-color: #E06473;
+    color: #ffffff;
 }
 
 .btn-default {
@@ -7335,7 +7358,7 @@ ul.list_category li:first-child {
 
 
 .block-child-location-tracking .h1{
-    font-size: 30px;
+    font-size: 28px;
 }
 
 
@@ -7384,7 +7407,7 @@ ul.list_category li:first-child {
 }
 
 .youtube-parental .header-info-descriptions{
-font-size: 15px;
+font-size: 14px;
 }
 
 .phones-for-kids-head .visual-img-pc {
@@ -7404,4 +7427,102 @@ font-size: 15px;
         top: 19px;
     }
 
+}
+
+
+.btn-allreviews{
+    margin-right: 5px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(188, 188, 188);
+}
+.btn-allreviews:hover{
+    color: rgb(255, 255, 255);
+    background-color: rgb(204, 204, 204);
+}
+
+
+.list-rew{
+margin-top: 25px;
+}
+
+.list-rew ul{
+    margin: 0 -5px 40px;
+    padding: 0;
+    list-style: none;
+    font-size: 0;
+
+}
+
+.list-rew li{
+    display: inline-block;
+    vertical-align: top;
+    font-size: 14px;
+    width: 100px;
+    position: relative;
+    margin-left: 11px;
+}
+
+
+
+.list-rew ul li .thumb-ranking {
+    display: block;
+    position: relative;
+    background: #f9f9f9;
+    text-align: center;
+}
+
+.list-rew .thumb-ranking-heading .content-thumb-ranking{
+    border: none;
+}
+
+.list-rew .img-ranking{
+    min-height: 118px;
+    padding: 7px 0;
+}
+
+.list-rew .img-ranking img {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 16px;
+    margin-top: 20px;
+}
+
+
+.list-rew .img-ranking span {
+    display: block;
+    font-weight: 600;
+    font-size: 13px;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+
+.list-rew  .price-ranking {
+    border-top-color: #f4c32c;
+    color: #fff;
+    font-size: 20px;
+    padding: 4px 0 7px;
+}
+
+
+.list-rew .footer-thumb-ranking .btn-ranking .btn {
+    font-size: 14px!important;
+    border-radius: 3px;
+    background-color: #b3b3b3;
+}
+
+
+.list-rew .content-thumb-ranking {
+    border-left: 1px solid #dbdbdb;
+    border-right: 1px solid #dbdbdb;
+}
+
+
+.list-rew .discounted{
+    position: absolute;
+    top: -16px;
 }

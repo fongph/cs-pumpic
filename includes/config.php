@@ -43,7 +43,7 @@ $config = array(
 			//'faq_send.html' => 'faq_send.php',
 
 				'faq.html' => 'faq.php',
-				'contact-us.html' => 'contact_us.php',
+				//'contact-us.html' => 'contact_us.php',
 
 				'contact_us_send.html' => 'contact_us.php',
 

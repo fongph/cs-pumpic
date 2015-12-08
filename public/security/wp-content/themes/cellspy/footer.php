@@ -15,14 +15,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-10 col-lg-offset-1">
-                    <div class="row block-subscribe"> 
-                        <div class="col-lg-8 col-md-8 col-sm-12">
-                            <?php get_sidebar('subscribe'); ?>
-                        </div> 
-                        <div class="col-lg-4 col-md-4 col-sm-12">
 
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>

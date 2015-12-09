@@ -97,6 +97,7 @@
                                 This app coincides more with spy applications rather than with parental control apps. You can’t control anything on the target device, this app fits for monitoring only.
                             </p>
                             <div class="media-btn">
+                                <a href="/reviews/" class="btn btn-sm btn-allreviews">All Review</a>
                                 <a href="/reviews/txtwatcher-mobile-monitoring.html" class="btn btn-sm btn-success">Next Review &rarr;</a>
                             </div>
                         </div>

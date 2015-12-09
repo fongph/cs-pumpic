@@ -98,6 +98,7 @@
                                 ScreenTimeLabs is OK if the only your trouble is a sum of money your children spend buying achievements in applications. It will help you with no other needs – no one talks about online security of children here. 
                             </p>
                             <div class="media-btn">
+                                <a href="/reviews/" class="btn btn-sm btn-allreviews">All Review</a>
                                 <a href="/reviews/safetyweb-mobile-monitoring.html" class="btn btn-sm btn-success">Next Review &rarr;</a>
                             </div>
                         </div>

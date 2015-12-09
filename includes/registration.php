@@ -57,7 +57,8 @@ if($_result['_success']) {
     } else {
         $eventManager = \EventManager\EventManager::getInstance();
         $eventManager->emit('front-registration-completed', array(
-            'email' => $_POST['email']
+            'email' => $_POST['email'],
+            'seller' => 'pumpic.com'
         ));
         
         $obj -> _redirect('/#popUp=registration'); 

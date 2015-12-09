@@ -450,7 +450,8 @@ class ManagerUser extends Manager
         if(!$this ->validateEmail($email)) return false;
         
         if( $eventManager->emit('front-subscription-completed', array(
-            'email' => $email
+            'email' => $email,
+            'seller' => 'pumpic.com'
         )) ) {
             return true;
         } else 

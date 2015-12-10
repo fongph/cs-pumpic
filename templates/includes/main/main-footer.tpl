@@ -101,9 +101,3 @@
 {/if}
 
 {include file="$module"}
-
-{nocache}
-    {if !$hideTrialLinks and $di->get('trialStickBanner')->isVisible()}
-         {include file="../includes/content/fly/fly-free-trial.tpl"}
-    {/if}
-{/nocache}

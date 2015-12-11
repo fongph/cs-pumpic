@@ -92,6 +92,7 @@
                                 Although the app is proposed at a middle price, the functionality of it is really poor in comparison with apps of the same price. It more looks like a demo-version of a parental control app, though some parents may find it useful as it allows them to block inappropriate websites.
                             </p>
                             <div class="media-btn">
+                                <a href="/reviews/" class="btn btn-sm btn-allreviews">All Review</a>
                                 <a href="/reviews/screentime-labs-mobile-monitoring.html" class="btn btn-sm btn-success">Next Review &rarr;</a>
                             </div>
                         </div>

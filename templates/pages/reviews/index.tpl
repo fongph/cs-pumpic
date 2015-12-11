@@ -2,7 +2,7 @@
 
 {include file='../../includes/main/main-header.tpl'
     robots="yes" 
-    title="Best parental control apps for Android and iPhone"
+    title="More Mobile Monitoring App Reviews"
     description="We have manually reviewed 50+ parental control software and handpicked the best products for you. Here's the detailed comparison of parental control apps for Android devices and iPhones that allow parents to block and filter bad content, limit app usage, review calls, texts, and Internet activity."
 }    
     
@@ -869,6 +869,91 @@
                             </tr>
                         </tbody>
                     </table>
+
+
+
+
+
+
+
+
+<div class="mobile-hidden">
+                    <h3 class="heading">More Mobile Monitoring App Reviews</h3>
+                        <div class="list-ranking" id="list-rew">
+                            <ul>
+                                <li>
+                                    <div class="thumb-ranking">
+
+                                        <div class="content-thumb-ranking">
+                                            <div class="discounted">
+                                                <img src="/images/discontinued.png" alt="">
+                                            </div>
+                                            <div class="img-ranking">
+                                                <img src="/images/boxes/boxes_10.png" height="57" width="62" alt="">
+                                                <span>eBlaster</span>
+                                            </div>
+                                            <div class="price-ranking">$199.99</div>
+                                        </div>
+                                        <div class="footer-thumb-ranking">
+                                            <div class="btn-ranking">
+                                                <a href="/reviews/eblaster-mobile-monitoring.html" class="btn btn-info">Read review</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="thumb-ranking">
+
+                                        <div class="content-thumb-ranking">
+                                            <div class="discounted">
+                                                <img src="/images/discontinued.png" alt="">
+                                            </div>
+                                            <div class="img-ranking">
+                                                <img src="/images/boxes/boxes_11.png" height="57" width="62" alt="">
+                                                <span>TopSpyApp</span>
+                                            </div>
+                                            <div class="price-ranking">$199.99</div>
+                                        </div>
+                                        <div class="footer-thumb-ranking">
+                                            <div class="btn-ranking">
+                                                <a href="/reviews/topspyapp-mobile-monitoring.html" class="btn btn-info">Read review</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+
+                                <li>
+                                    <div class="thumb-ranking">
+
+                                        <div class="content-thumb-ranking">
+                                            <div class="discounted">
+                                                <img src="/images/discontinued.png" alt="">
+                                            </div>
+                                            <div class="img-ranking">
+                                                <img src="/images/boxes/boxes_12.png" height="57" width="62" alt="">
+                                                <span>StealthGenie</span>
+                                            </div>
+                                            <div class="price-ranking">$199.99</div>
+                                        </div>
+                                        <div class="footer-thumb-ranking">
+                                            <div class="btn-ranking">
+                                                <a href="/reviews/stealthgenie-mobile-monitoring.html" class="btn btn-info">Read review</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+</div>
+
+
+
+
+
+
+
+
                     {*<table class="table-vertical-striped">
                         <tbody>
                             <tr>
@@ -3010,10 +3095,84 @@
                             </tbody>
                         </table>
                     </div>
+
+                    <div class="desktop-visible">
+                        <h3 class="heading">More Mobile Monitoring App Reviews</h3>
+                        <div class="list-ranking" id="list-rew">
+                            <ul>
+                                <li>
+                                    <div class="thumb-ranking">
+
+                                        <div class="content-thumb-ranking">
+                                            <div class="discounted">
+                                                <img src="/images/discontinued.png" alt="">
+                                            </div>
+                                            <div class="img-ranking">
+                                                <img src="/images/boxes/boxes_10.png" height="57" width="62" alt="">
+                                                <span>eBlaster</span>
+                                            </div>
+                                            <div class="price-ranking">$199.99</div>
+                                        </div>
+                                        <div class="footer-thumb-ranking">
+                                            <div class="btn-ranking">
+                                                <a href="/reviews/eblaster-mobile-monitoring.html" class="btn btn-info">Read review</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="thumb-ranking">
+
+                                        <div class="content-thumb-ranking">
+                                            <div class="discounted">
+                                                <img src="/images/discontinued.png" alt="">
+                                            </div>
+                                            <div class="img-ranking">
+                                                <img src="/images/boxes/boxes_11.png" height="57" width="62" alt="">
+                                                <span>TopSpyApp</span>
+                                            </div>
+                                            <div class="price-ranking">$199.99</div>
+                                        </div>
+                                        <div class="footer-thumb-ranking">
+                                            <div class="btn-ranking">
+                                                <a href="/reviews/topspyapp-mobile-monitoring.html" class="btn btn-info">Read review</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+
+                                <li>
+                                    <div class="thumb-ranking">
+
+                                        <div class="content-thumb-ranking">
+                                            <div class="discounted">
+                                                <img src="/images/discontinued.png" alt="">
+                                            </div>
+                                            <div class="img-ranking">
+                                                <img src="/images/boxes/boxes_12.png" height="57" width="62" alt="">
+                                                <span>StealthGenie</span>
+                                            </div>
+                                            <div class="price-ranking">$199.99</div>
+                                        </div>
+                                        <div class="footer-thumb-ranking">
+                                            <div class="btn-ranking">
+                                                <a href="/reviews/stealthgenie-mobile-monitoring.html" class="btn btn-info">Read review</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        
+
+
+
+
+
         <!-- END CONTENT -->    
         {include file='../../includes/content/banners/index.tpl'}
         <!-- END CONTENT -->    

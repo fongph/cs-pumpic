@@ -91,6 +91,7 @@
                                 The main advantage of this application is a free-of-charge basis. It has some essential features of parental control software; however, security of children is not the thing where you can retrench. It would be better to choose an app with better functionality because Care4Teen has lacks in security.
                             </p>
                             <div class="media-btn">
+                                <a href="/reviews/" class="btn btn-sm btn-allreviews">All Review</a>
                                 <a href="/reviews/pumpic.html" class="btn btn-sm btn-success">Next Review &rarr;</a>
                             </div>
                         </div>

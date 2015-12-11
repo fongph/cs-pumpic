@@ -1,5 +1,6 @@
 {* closeAccess *}
 
+
 {include file='../../includes/main/main-header.tpl'
     robots="yes" 
     title="Pumpic parental control software review"
@@ -76,6 +77,9 @@
                             <span class="img-media">
                                 <img src="{$img}/boxes/boxes_4_2.png" height="219" width="242" alt="">
                             </span>
+                            <div class="media-btn">
+                                <a href="/store.html" class="btn btn-sm pump-learn">Learn More</a>
+                            </div>
                         </div>
                         <div class="media-body">
                             <h4 class="media-heading">Pros </h4>
@@ -90,12 +94,19 @@
                             <p>
                                 The app provides comprehensive mobile monitoring, keeps improving and introducing new features. It involves all those important tracking functions that most of its competitors lack. Pumpic has everything you may need to keep you children safe both in everyday life and online.
                             </p>
+
                             <div class="media-btn">
-                                <a href="/store.html" class="btn btn-sm btn-default">Learn More</a>
+
                                 &nbsp;<a href="/reviews/mobileforcefield-mobile-monitoring.html" class="btn btn-sm btn-success">Next Review &rarr;</a>
                             </div>
                         </div>
+
                     </div>
+
+
+
+
+
                     <h3 class="heading">Summary</h3>
                     <p>Pumpic is a compilation of multitasking, quality and handiness. A large variety of monitoring solutions enables users to keep track of all spheres of their children’s lives from one easy-to-use Control Panel.</p>
                     <p>The application will let you monitor cell phone use (calls, text messages, contacts, calendar etc.), follow online activities (bookmarks, browsing history, emails, social media, and online chats), and control the target device remotely (use SMS commands to lock it or wipe, receive alerts with a SIM card changes, track keystrokes).   </p>
@@ -118,15 +129,17 @@
                     <p>Pumpic proved to be one of the best monitoring apps you can find online. It is trusted by more than 10 000 users worldwide. It includes all features you may need while taking care of your underage children. The app is a solution for safety and protection. Pumpic keeps your eyes open. </p>
                     
                     <!-- Top parental Control Products -->
+
+
                     {include file='../../includes/reviews/list-top-products.tpl'}
                     
                 </div>
             </div>
         </div>
         
-        <!-- END CONTENT -->    
+        <!-- END CONTENT -->
         {include file='../../includes/content/banners/index.tpl'}
-        <!-- END CONTENT -->    
+        <!-- END CONTENT -->
            
         <!-- RECOMMENDED -->
         {*

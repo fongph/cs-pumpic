@@ -25,13 +25,7 @@ description="Read full review on Top Spy App mobile monitoring tool. Learn if us
     nocache
     }
 
-    <!-- FLY BLOCKS -->
-    {nocache}
-        {if ''|hasFreeTrialStick}
-            {include file='../../includes/content/fly/fly-free-trial.tpl'}
-        {/if}
-    {/nocache}
-    <!-- END FLY -->
+
 
     {*
         Template: PHONE

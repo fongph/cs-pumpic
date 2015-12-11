@@ -25,7 +25,6 @@
         }
         
 
-        
         {*
             Template: PHONE
             Переменные:
@@ -91,6 +90,7 @@
                                 This single-purposed application can come in handy to those parents who only want to know a circle of contacts of their children. However, taking into consideration the usage of social media by children it would be better to check their online social networks. Unfortunately, the app has no such possibility. As a result, the app monitors the minority of contacts so it is ineffective.
                             </p>
                             <div class="media-btn">
+                                <a href="/reviews/" class="btn btn-sm btn-allreviews">All Review</a>
                                 <a href="/reviews/care4teen-mobile-monitoring.html" class="btn btn-sm btn-success">Next Review &rarr;</a>
                             </div>
                         </div>

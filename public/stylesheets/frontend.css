@@ -15547,7 +15547,7 @@ article.short ul.rounded li:before {
 }
 .share_list {
     list-style: none;
-    margin: 0 auto 2em auto!important;
+    margin: 0 auto 2em auto !important;
     padding: 0;
     text-align: right;
     max-width: 850px;
@@ -15586,6 +15586,7 @@ article.short ul.rounded li:before {
 .share_list li a.share-pinterest {
     background: url("/images/share/pinterest.png");
 }
+
 .actions {
     max-width: 650px;
     margin: 1.2em auto 0 auto;
@@ -15813,11 +15814,12 @@ font-size: 14px;
 }
 
 
-.list-rew{
+#list-rew{
 margin-top: 25px;
+overflow: visible;
 }
 
-.list-rew ul{
+#list-rew ul{
     margin: 0 -5px 40px;
     padding: 0;
     list-style: none;
@@ -15825,34 +15827,35 @@ margin-top: 25px;
 
 }
 
-.list-rew li{
+#list-rew li{
     display: inline-block;
     vertical-align: top;
     font-size: 14px;
     width: 100px;
     position: relative;
     margin-left: 11px;
+    padding:0;
 }
 
 
 
-.list-rew ul li .thumb-ranking {
+#list-rew ul li .thumb-ranking {
     display: block;
     position: relative;
     background: #f9f9f9;
     text-align: center;
 }
 
-.list-rew .thumb-ranking-heading .content-thumb-ranking{
+#list-rew .thumb-ranking-heading .content-thumb-ranking{
     border: none;
 }
 
-.list-rew .img-ranking{
+#list-rew .img-ranking{
     min-height: 118px;
     padding: 7px 0;
 }
 
-.list-rew .img-ranking img {
+#list-rew .img-ranking img {
     display: inline-block;
     vertical-align: top;
     margin-left: 16px;
@@ -15860,7 +15863,7 @@ margin-top: 25px;
 }
 
 
-.list-rew .img-ranking span {
+#list-rew .img-ranking span {
     display: block;
     font-weight: 600;
     font-size: 13px;
@@ -15873,31 +15876,69 @@ margin-top: 25px;
 }
 
 
-.list-rew  .price-ranking {
-    border-top-color: #f4c32c;
-    color: #fff;
-    font-size: 20px;
-    padding: 4px 0 7px;
-}
 
-
-.list-rew .footer-thumb-ranking .btn-ranking .btn {
-    font-size: 14px!important;
-    border-radius: 3px;
-    background-color: #b3b3b3;
-}
-
-
-.list-rew .content-thumb-ranking {
-    border-left: 1px solid #dbdbdb;
-    border-right: 1px solid #dbdbdb;
-}
-
-
-.list-rew .discounted{
+#list-rew .discounted{
     position: absolute;
     top: -16px;
 }
+
+
+.box-state .pull-left .discounted-pic{
+    position: absolute;
+}
+
+
+
+@media screen and (max-width: 992px) {
+    #list-rew .discounted {
+        position: absolute;
+        width: 50px;
+        left: 10px;
+        top: 19px;
+    }
+
+    #list-rew ul li  .thumb-ranking {
+        display: table;
+        width: 100%;
+        background: 0 0;
+    }
+
+    #list-rew .footer-thumb-ranking {
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+    }
+    #list-rew>ul>li {
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 479px){
+    #list-rew .discounted {
+        position: absolute;
+        width: 50px;
+        left: 64px;
+    }
+
+    #list-rew .footer-thumb-ranking {
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 990px) {
+    .desktop-visible{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 990px) {
+    .mobile-hidden{
+        display: none;
+    }
+}
+
 .border-top-bottom {
     border-color: #e8e8e8 !important;
     border-style: solid !important;
@@ -23373,6 +23414,8 @@ color: #cf4857;
 .block-reviews .table_header span:first-child {
   text-transform: none;
 }
+
+
 /*page4*/
 body {
 	/*background: url(../../images/index.jpg) 50% 0 no-repeat;
@@ -23596,7 +23639,7 @@ body {
        font-size: 25px;
        background: none;
        color: #999;
-   } 
+   }
 }
 .content-thumb-ranking {
 	border-left: 1px solid #dbdbdb;

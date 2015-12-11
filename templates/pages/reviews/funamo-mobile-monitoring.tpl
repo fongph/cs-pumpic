@@ -91,6 +91,7 @@
                                 The application is cheaper than most of its competitors and its utility is of the same value. If you want to save on your kids’ protection, Funamo is probably your choice. However, note that children safety is priceless. 
                             </p>
                             <div class="media-btn">
+                                <a href="/reviews/" class="btn btn-sm btn-allreviews">All Review</a>
                                 <a href="/reviews/parentkit-mobile-monitoring.html" class="btn btn-sm btn-success">Next Review &rarr;</a>
                             </div>
                         </div>

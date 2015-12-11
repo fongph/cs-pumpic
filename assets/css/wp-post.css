@@ -325,7 +325,7 @@ ul.list-image-v1 li img.arrows-play {
 
 
 .wp-blog .share_list{
-    margin: 0 0 15px 0;
+    margin: 0 0 15px 0 !important;
 }
 
 .wp-blog .share_list:nth-of-type(2){

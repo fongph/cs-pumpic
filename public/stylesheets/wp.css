@@ -13789,7 +13789,7 @@ article.short ul.rounded li:before {
 }
 .share_list {
     list-style: none;
-    margin: 0 auto 2em auto;
+    margin: 0 auto 2em auto !important;
     padding: 0;
     text-align: right;
     max-width: 850px;
@@ -16213,7 +16213,7 @@ ul.list-image-v1 li img.arrows-play {
 
 
 .wp-blog .share_list{
-    margin: 0 0 15px 0;
+    margin: 0 0 15px 0 !important;
 }
 
 .wp-blog .share_list:nth-of-type(2){

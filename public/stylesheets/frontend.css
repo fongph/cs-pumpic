@@ -15547,7 +15547,7 @@ article.short ul.rounded li:before {
 }
 .share_list {
     list-style: none;
-    margin: 0 auto 2em auto;
+    margin: 0 auto 2em auto !important;
     padding: 0;
     text-align: right;
     max-width: 850px;

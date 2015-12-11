@@ -23,14 +23,7 @@ description="Learn all pros and cons of StealthGenie spy app. Read editor's revi
     cache_id = "includes_main_main-top-menu"
     nocache
     }
-
-    <!-- FLY BLOCKS -->
-    {nocache}
-        {if ''|hasFreeTrialStick}
-            {include file='../../includes/content/fly/fly-free-trial.tpl'}
-        {/if}
-    {/nocache}
-    <!-- END FLY -->
+    
 
     {*
         Template: PHONE

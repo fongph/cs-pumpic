@@ -19,13 +19,7 @@
                 nocache
         }	
         
-        <!-- FLY BLOCKS -->
-        {nocache}
-        {if ''|hasFreeTrialStick}    
-            {include file='../includes/content/fly/fly-free-trial.tpl'}
-        {/if}    
-        {/nocache}
-        <!-- END FLY -->
+
         
         {*
             Template: PHONE

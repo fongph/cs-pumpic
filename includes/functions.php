@@ -867,22 +867,6 @@ function smarty_function_getUserInfo($params, $template) {
     $template->assign('getUserInfo', (count($user) > 0) ?  $user: false);   
 }
 
-// has free trial stick
-function smarty_modifier_hasFreeTrialStick() { 
-    
-    require_once 'lib/users/ManagerUser.php';
-    $obj = new includes\lib\users\ManagerUser( array() );
-    $_result = false;
-    if($obj->hasTrial( $obj->getUserIdByAuth() )) $_result = true;
-    
-    
-//    $_result = false;
-//    if(isset($_COOKIE['free_trial_stick']) && (int)$_COOKIE['free_trial_stick'] == 1) {
-//        $_result = true;
-//    }
-    
-    return $_result;
-}
 
 function smarty_modifier_hasFbPixel() { 
     $_result = false;

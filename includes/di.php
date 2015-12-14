@@ -155,4 +155,13 @@ $di->setShared('authData', function() use($di) {
         return false;
     }
 });
+
+$di->setShared('localManagerUser', function () {
+    return new includes\lib\users\ManagerUser;
+});
+
+$di->setShared('trialStickBanner', function () use ($di) {
+    return new \includes\lib\users\TrialStick($di->get('auth'), $di->get('config')['session']['cookieParams']['domain']);
+});
+
 return $di;

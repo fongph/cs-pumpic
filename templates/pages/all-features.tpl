@@ -22,13 +22,7 @@
             nocache
         }
         
-        <!-- FLY BLOCKS -->
-        {nocache}
-        {if ''|hasFreeTrialStick}    
-            {include file='../includes/content/fly/fly-free-trial.tpl'}
-        {/if}    
-        {/nocache}
-        <!-- END FLY -->
+
         
         <!-- BLOCK HEADER -->
         <div class="bg_white">

@@ -157,32 +157,12 @@ class ManagerUser extends Manager
             return false;
     }
     
-    
-    public function setFreeTrialStick($user_id = null) {
-        
-        if($this->hasTrial($user_id)) {
-            setcookie("free_trial_stick", '1', time() + 3600 * 24 * 90, '/', '.'.$this -> _di->get('config')['domain']);
-        } else {
-            if(isset($_COOKIE['free_trial_stick']))
-                setcookie("free_trial_stick", '0', time() + 3600 * 24 * 90, '/', '.'.$this -> _di->get('config')['domain']);
-        }
-    }
-    
     public function getOrderLast($userId) {
         if($this -> _pdo === null) return;
         
         $userId = $this -> _pdo->quote($userId);
         $rows = $this -> _pdo-> query("SELECT `id`, `trial` FROM `orders` WHERE `user_id` = {$userId} AND `status` = 'completed' ORDER BY `created_at` DESC LIMIT 1") -> fetch();
         return (is_array($rows) and count($rows) > 0) ? $rows : NULL;
-    }    
-    
-    public function hasTrial($user_id) {
-        if($user_id 
-                && $this->getUserOptions($user_id, 'internal-trial-license') 
-                   && $this->getOrderLast($user_id) && $this->getOrderLast($user_id)['trial'] == 1) 
-                return true;
-        
-        return false;
     }
 
 
@@ -201,7 +181,6 @@ class ManagerUser extends Manager
                     Session::regenerateId();
                 }
                 
-                $this->setFreeTrialStick(self::$_obj -> _data['id']);
                 $this->setCookieNotice( self::$_obj -> _data );
                 // setcookie('s', 1, time() + 3600 * 6, '/', '.pumpic.com');
                 self::$_obj -> _respons['_success'] = true;
@@ -230,7 +209,6 @@ class ManagerUser extends Manager
                 
                 self::$_obj -> _data = $this -> _auth->getIdentity();
                 
-                $this->setFreeTrialStick(self::$_obj -> _data['id']);
                 $this -> setNotice(); // self::$_obj -> _data
                 self::$_obj -> _respons['_success'] = true;
                 
@@ -260,8 +238,6 @@ class ManagerUser extends Manager
         try {
             $user_id = $this -> createUserFreeTrial($params['siteId'], $params['email'], $params['name']);
             self::$_obj -> _respons['user_id'] = $user_id;
-            
-            $this->setFreeTrialStick($user_id);
             
             /*if((int)$user_id) {
                 
@@ -354,7 +330,6 @@ class ManagerUser extends Manager
     public function logout() 
     {
         $this->_auth->clearIdentity();
-        $this->setFreeTrialStick(NULL);   
     }
     
     public function getLoginUser() 
@@ -475,7 +450,8 @@ class ManagerUser extends Manager
         if(!$this ->validateEmail($email)) return false;
         
         if( $eventManager->emit('front-subscription-completed', array(
-            'email' => $email
+            'email' => $email,
+            'seller' => 'pumpic.com'
         )) ) {
             return true;
         } else 

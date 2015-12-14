@@ -111,4 +111,7 @@
         <!-- init popUp -->
         <?php include(dirname(__FILE__).'/blog-popUp.tpl'); ?>
         <?php include(dirname(__FILE__).'/blog-analytics-footer.tpl'); ?>
-        
+
+        <?php if(di()->get('trialStickBanner')->isVisible()): ?>
+        <?php include(dirname(__FILE__).'/content/fly/fly-free-trial.tpl'); ?>
+        <?php endif; ?>

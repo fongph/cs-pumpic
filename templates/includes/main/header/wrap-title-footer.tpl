@@ -71,7 +71,7 @@
 
 {nocache}
 {if (isset($fbTrack) && $fbTrack == 'true' 
-    || isset($smarty.get.fb) && $smarty.get.fb == "1") && ''|hasFreeTrialStick && ''|hasFbPixel}
+    || isset($smarty.get.fb) && $smarty.get.fb == "1") && ''|hasFbPixel}
     {literal}
     <!-- Facebook Conversion Code for Free Trial -->
     <script>(function() {

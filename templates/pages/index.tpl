@@ -2,9 +2,10 @@
     robots="yes" 
     title="Cell Phone Parental Control App for Tracking Children | Pumpic Monitoring Software"
     description="Keep your family safe with Pumpic mobile monitoring app for parents. View calls and text messages. Track GPS location. Follow social media and online activity. Limit or block apps remotely."
-}    
-    
+}
+
 <body>
+
     <!-- BLOCK GTM -->
     {include file='../includes/main/main-after-body.tpl'}
     <!-- END BLOCK GTM -->
@@ -22,13 +23,7 @@
             nocache
         }
     
-        <!-- FLY BLOCKS -->
-        {nocache}
-        {if ''|hasFreeTrialStick}    
-            {include file='../includes/content/fly/fly-free-trial.tpl'}
-        {/if}    
-        {/nocache}
-        <!-- END FLY -->
+
         
         {*
             Template: PHONE
@@ -149,7 +144,7 @@
             Template: RECOMMENDED
         *}    
         {include file='../includes/main/main-recommended.tpl'}
-        
+
         <!-- FOOTER -->
         {*
             Template: FOOTER

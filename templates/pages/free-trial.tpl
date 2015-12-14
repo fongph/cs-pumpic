@@ -1,6 +1,6 @@
 {*registration out="getOut" post=$smarty.post*}
+{nocache}{assign 'hideTrialLinks' true}{/nocache}
 {strip}
-    
 {include file='../includes/main/main-header.tpl'
     robots="no" 
     title="Pumpic.com mobile monitoring software."

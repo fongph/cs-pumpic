@@ -23,13 +23,7 @@
             nocache}
             
            
-        <!-- FLY BLOCKS -->
-        {nocache}
-        {if ''|hasFreeTrialStick}    
-            {include file='../includes/content/fly/fly-free-trial.tpl'}
-        {/if}    
-        {/nocache}
-        <!-- END FLY -->    
+
             
             
 <div class="very_easy page-login">

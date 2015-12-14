@@ -8449,12 +8449,51 @@ div.symbol {
   padding-bottom: 45px;
 }
 
+.light_title{
+    background: #f3f3f3;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
 .dark {
   background: #ececec;
 }
 
 .no_bg {
   background: #fff;
+}
+
+.text-right{
+  text-align: right !important;
+}
+
+.text-left{
+    text-align: left  !important;
+}
+
+.img-align-right {
+    float: right;
+    margin: 0 0 5px 20px;
+}
+
+.img-align-left {
+    float: left;
+    margin: 5px 20px 0 0;
+}
+
+
+@media (max-width: 750px){
+    .img-align-right {
+        float: none;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .img-align-left {
+        float: none;
+        display: block;
+        margin: 0 auto;
+    }
 }
 
 .bg_white {
@@ -11259,7 +11298,6 @@ label.r_on:before {
   width: 100%;
   overflow: hidden;
   font-size: 12px;
-  margin-bottom: 20px;
 }
 .list_tags a {
   font-size: 12px !important;
@@ -15547,7 +15585,7 @@ article.short ul.rounded li:before {
 }
 .share_list {
     list-style: none;
-    margin: 0 auto 2em auto;
+    margin: 0 auto 2em auto !important;
     padding: 0;
     text-align: right;
     max-width: 850px;
@@ -15586,6 +15624,22 @@ article.short ul.rounded li:before {
 .share_list li a.share-pinterest {
     background: url("/images/share/pinterest.png");
 }
+
+
+
+/* Blog start list_tags */
+
+.wp-blog .share_list{
+    margin: 0 0 10px 0 !important;
+}
+
+.wp-blog .share_list:nth-of-type(2){
+    margin: 0;
+}
+
+
+/* Blog end list_tags */
+
 
 .actions {
     max-width: 650px;
@@ -15939,6 +15993,11 @@ overflow: visible;
     }
 }
 
+
+
+.underline{
+    text-decoration: underline;
+}
 .border-top-bottom {
     border-color: #e8e8e8 !important;
     border-style: solid !important;

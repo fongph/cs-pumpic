@@ -137,7 +137,8 @@
 												<a id="start" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse5">Where can I check the captured data?</a>
 												<div id="collapse5" class="collapse">
                                                                                                     <div>
-													<p>Soon after Pumpic is installed on the device you want to monitor and connected to our server, the captured data will be uploaded to the Control Panel of your personal account automatically.</p>
+													<p>Soon after Pumpic is installed on the target device and connected to our server, all the captured data will be uploaded to the Control Panel automatically. You can access your Control Panel in any browser on any device.</p>
+													<p>You can also check the captured data by using Pumpic Control Panel Mobile App. It is a separate free mobile application for the Control Panel. Note that this app is currently available for Android smartphones only and limited to the following features: Call Logs, Text Messages, Location, Browser History, Contacts, Remote Device Reboot, Remote App Reboot, and Remote Device Lock.</p>
                                                                                                     </div>    
                                                                                                 </div>
                                                                                             </div>    
@@ -485,8 +486,19 @@
 													<p>Go to “Device Settings” section of your Control Panel and choose “Unassign Device” on the right corner below.  </p>
 													<p>Note that this action cannot be undone. Your subscription will be deactivated, and you will not be able to use it any longer with any other device. All the data will be deleted from Control Panel immediately.</p>
                                                                                                     </div>
-                                                                                                </div>
+                                                                                                  </div>
                                                                                             </div>    
+											</li>
+											 <li>
+                                                                                            <div>                                                                                                <i class="plus"></i>
+												<a id="other" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse37">Do you have a smartphone app for your Control Panel?</a>
+												<div id="collapse37" class="collapse">
+                                                                                                    <div>
+													<p>Yes, there is a separate free mobile application for the Control Panel of Pumpic Mobile Monitoring. Currently, it is available for Android smartphones only and limited to the following features: Call Logs, Text Messages, Location, Browser History, Contacts, Remote Device Reboot, Remote App Reboot, and Remote Device Lock. However, you can still access a full version of your Control Panel by using any browser at cp.pumpic.com.</p>
+													<p>To use Pumpic Control Panel Mobile App, you must have your Pumpic account connected to the target device. Internet connection is also required for updates of the monitored information.</p>
+                                                                                                    </div>
+                                                                                                  </div>
+                                                                                            </div>
 											</li>
 										</ul>
 									</div>
@@ -502,7 +514,7 @@
                                                                                                 <span class="info"></span>
 												<div class="form-group">
 													<input id="name"
-                                                                                                               type="text" 
+                                                                                                                    type="text"
                                                                                                                class="form-control required" 
                                                                                                                placeholder="Name*" 
                                                                                                                name="name" 

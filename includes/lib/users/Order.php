@@ -128,7 +128,8 @@ class Order extends ManagerUser
             $eventManager = \EventManager\EventManager::getInstance();
             $eventManager->emit('front-order-pending', array(
                 'userId' => $userID,
-                'orderId' => $order->getId()
+                'orderId' => $order->getId(),
+                'seller' => 'pumpic.com'
             ));
         }
          

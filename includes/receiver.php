@@ -22,7 +22,7 @@
             $jira->registerListeners();
 
             $eventManager   = \EventManager\EventManager::getInstance();
-            $eventManager->emit('billing-order-started', $clearData );
+            $eventManager->emit('billing-order-started', $clearData);
 
             header('content-type: text/javascript');
             die( $callback . '('. json_encode( [ 'status' => 'ok' ], JSON_PRETTY_PRINT ) .');' );

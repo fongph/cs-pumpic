@@ -1,6 +1,14 @@
 <?php
 // ini_set('display_errors', 1);
 // error_reporting(-1);
+global $di;
+/** @var $auth \System\Auth */
+$auth = $di->get('auth');
+if (!$auth->hasIdentity()) {
+    /** @var $stickBanner includes\lib\users\TrialStick */
+    $stickBanner = $di->get('trialStickBanner');
+    $stickBanner->setCookie(true);
+}
 
 $_inc = dirname(__FILE__); // includes
 $b_dir = dirname( $_inc ); // folder sites directory
@@ -86,7 +94,8 @@ if(isset($_POST['email']) and !$obj -> validateEmail($_POST['email'])) {
         $eventManager = EventManager\EventManager::getInstance();
         $eventManager->emit('front-registration-trial-completed', array(
             'userId' => $_result['user_id'],
-            'name' => $_name
+            'name' => $_name,
+            'seller' => 'pumpic.com'
         ));
     } 
 }

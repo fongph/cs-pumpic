@@ -15,13 +15,7 @@
 	<div class="wrapper box-404">
 	{include file='../includes/main/main-top-menu.tpl'}
         
-        <!-- FLY BLOCKS -->
-        {nocache}
-        {if ''|hasFreeTrialStick}    
-            {include file='../includes/content/fly/fly-free-trial.tpl'}
-        {/if}    
-        {/nocache}
-        <!-- END FLY -->
+
         
         {*
             Template: PHONE

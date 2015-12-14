@@ -101,5 +101,3 @@
 {/if}
 
 {include file="$module"}
-
-{*include file='../../includes/main-popUp.tpl'*}

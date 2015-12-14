@@ -159,7 +159,8 @@ class Phpmail extends Settings
                     $eventManager = \EventManager\EventManager::getInstance();
                     $eventManager->emit('front-compatibility-completed', array(
                         'email' => $params['email'],
-                        'name' => $params['name']
+                        'name' => $params['name'],
+                        'seller' => 'pumpic.com'
                     ));
 
                     $this ->updateOptionValue('Compatibility_pumpic', $_uid);
@@ -208,7 +209,8 @@ class Phpmail extends Settings
                     $eventManager = \EventManager\EventManager::getInstance();
                     $eventManager->emit('front-carriers-completed', array(
                         'email' => $params['email'],
-                        'name' => $params['name']
+                        'name' => $params['name'],
+                        'seller' => 'pumpic.com'
                     ));
 
                     $this ->updateOptionValue('Mobile_operators_pumpic', $_uid);
@@ -322,7 +324,8 @@ class Phpmail extends Settings
                     $eventManager = \EventManager\EventManager::getInstance();
                     $eventManager->emit('front-contact-us-completed', array(
                         'email' => $params['email'],
-                        'name' => $params['name']
+                        'name' => $params['name'],
+                        'seller' => 'pumpic.com'
                     ));
 
                     $this ->updateOptionValue('contactUs_pumpic', $_uid);

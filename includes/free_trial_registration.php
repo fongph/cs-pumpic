@@ -5,9 +5,9 @@ global $di;
 /** @var $auth \System\Auth */
 $auth = $di->get('auth');
 if (!$auth->hasIdentity()) {
-    /** @var $stickBanner includes\lib\users\TrialStick */
-    $stickBanner = $di->get('trialStickBanner');
-    $stickBanner->setCookie(true);
+    /** @var $stickBanner \CS\Users\FreeTrialLinks */
+    $stickBanner = $di->get('freeTrialLinks');
+    $stickBanner->setAccessCookie(true);
 }
 
 $_inc = dirname(__FILE__); // includes

@@ -10,6 +10,7 @@ require dirname( __DIR__ ).'/includes/lib/Request.php';
 require dirname( __DIR__ ).'/includes/smarty.config.php';
 
 $smarty->assign('di', di(), true);
+$smarty->assign('templatesDir', dirname(__DIR__) . '/templates');
 $_obj = new includes\lib\HTTPRequest;
 $_obj -> init();
 

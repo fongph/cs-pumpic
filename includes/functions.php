@@ -1,7 +1,7 @@
 <?php
 function di() {
     global $di;
-    return $di ?: $di = require __DIR__ . '/di.php';
+    return $di ? $di : $di = require __DIR__ . '/di.php';
 }
 
 function dispatch($urlParams, $config){

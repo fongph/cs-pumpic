@@ -86,7 +86,7 @@
                                                                             <a href="http://demo.pumpic.com/setDevice/125?redirect_url=cp/calls" class="btn btn-sm btn-orange btn-success hidden-lg cp-login{*btn btn-sm btn-orange btn-success hidden-lg cp-login*}"> Demo</a>
                                                                         </li>
 
-                                                                        <?php if(di()->get('trialStickBanner')->isVisible()): ?>
+                                                                        <?php if(di()->get('freeTrialLinks')->isAvailable()): ?>
                                                                         <li class="mobile-free-trial">
                                                                             <a href="/free-trial.html">Free Trial</a>
                                                                         </li>

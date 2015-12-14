@@ -2304,6 +2304,7 @@ label.r_on:before {
   font-size: 12px;
   margin-bottom: 20px;
 }
+
 .list_tags a {
   font-size: 12px !important;
   border-right: 1px solid #999;
@@ -2312,6 +2313,8 @@ label.r_on:before {
 .list_tags a:last-child {
   border-right: none;
 }
+
+
 
 .date {
   font-size: 12px;

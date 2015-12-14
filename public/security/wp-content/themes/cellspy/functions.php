@@ -40,6 +40,7 @@ function add_ga() {
     echo $js;
 }
 
+
 function shailan_redirect_404( $_redirect ) {
     global $wp_query;
     if ( $_redirect ) {
@@ -57,52 +58,6 @@ function shailan_redirect_404( $_redirect ) {
 }
 add_action('template_redirect', 'shailan_redirect_404');
 
-// Add buttons to html editor
-add_action('admin_print_footer_scripts','eg_quicktags');
-function eg_quicktags() {
-?>
-<script type="text/javascript" charset="utf-8">
-    /* Adding Quicktag buttons to the editor Wordpress ver. 3.3 and above
-    * - Button HTML ID (required)
-    * - Button display, value="" attribute (required)
-    * - Opening Tag (required)
-    * - Closing Tag (required)
-    * - Access key, accesskey="" attribute for the button (optional)
-    * - Title, title="" attribute (optional)
-    * - Priority/position on bar, 1-9 = first, 11-19 = second, 21-29 = third, etc. (optional)
-    */
-   
-    var _bannerBuyAndDemo = '';
-        _bannerBuyAndDemo += '<div class="box-wp-banner">';
-            _bannerBuyAndDemo += '<label>you should keep<br />your children safe</label>';
-            _bannerBuyAndDemo += '<div class="clearfix">';
-                _bannerBuyAndDemo += '<div class="block-price col-lg-8 col-md-8 col-sm-8 clearfix text-center">';
-                    _bannerBuyAndDemo += '<div id="basic" class="col-lg-6 col-md-6 col-sm-6 col-xs-sm-6">';
-                        _bannerBuyAndDemo += '<div class="package-basic"></div>';
-                        _bannerBuyAndDemo += '<div class="price"><sub>$</sub>5.33<span class="slash">/</span><span class="month">month</span></div>';
-                    _bannerBuyAndDemo += '</div>';
-                    _bannerBuyAndDemo += '<div id="premium" class="col-lg-6 col-md-6 col-sm-6 col-xs-sm-6">';
-                        _bannerBuyAndDemo += '<div class="package-premium"></div>';
-                        _bannerBuyAndDemo += '<div class="price"><sub>$</sub>6.99<span class="slash">/</span><span class="month">month</span></div>';
-                    _bannerBuyAndDemo += '</div>';
-                _bannerBuyAndDemo += '</div>';
-                    _bannerBuyAndDemo += '<div class="block-buttons col-lg-4 col-md-4 col-sm-4 clearfix text-center">';
-                    _bannerBuyAndDemo += '<a href="http://pumpic.com/store.html" class="btn btn-default">Learn More</a>';
-                    _bannerBuyAndDemo += '<br />';
-                    _bannerBuyAndDemo += '<a href="http://demo.pumpic.com/setDevice/125?redirect_url=cp/calls" class="btn btn-orange">Live Demo</a>'; 
-                    _bannerBuyAndDemo += '</div>';
-                _bannerBuyAndDemo += '</div>';    
-            _bannerBuyAndDemo += '</div>';
-   
-    if ( typeof QTags != 'undefined' ) {
-        QTags.addButton( 'eg_paragraph', 'p', '<p>', '</p>', 'p' );
-        QTags.addButton( 'eg_pre', 'pre','<pre lang="php">', '</pre>', 'q' );
-        QTags.addButton( 'eg_listImages', 'listImages','<ul class="ul-list-images">', '</ul>', 'listImages' );
-        QTags.addButton( 'eg_bannerbuydemo', 'bannerBuyAndDemo', _bannerBuyAndDemo, '', 'bannerBuyAndDemo' );
-    }  
-</script>
-<?php
-}
 
 
 /* --------------- AJAX ----------------- */
@@ -163,8 +118,8 @@ if ( !function_exists('fb_get_cat_related_posts') ) {
         $category = (int) $category[0]->cat_ID;
 
         $_tags = '';
-        
-        if($_dataTags = get_the_tags( (int)get_the_ID() ) 
+
+        if($_dataTags = get_the_tags( (int)get_the_ID() )
                 and is_array($_dataTags) and count($_dataTags) > 0) {
             foreach($_dataTags as $_tag) :
                 $_tags .= $_tag -> slug.' ';
@@ -172,7 +127,7 @@ if ( !function_exists('fb_get_cat_related_posts') ) {
             $_tags = trim($_tags, ' ');
         }
         //$output .= __('<h4>Related articles</h4>');
-        
+
         // if ( $catName )
             // $output .= __( 'Kategorie: ' ) . get_cat_name($category) . ' ';
 
@@ -182,7 +137,7 @@ if ( !function_exists('fb_get_cat_related_posts') ) {
             'tag'           => $_tags,
             // 'tag_id'        => get_the_tag_list(),
         );
-        
+
         $output .= "<ul>";
 
         $recentposts = get_posts( $args );
@@ -197,11 +152,11 @@ if ( !function_exists('fb_get_cat_related_posts') ) {
                     $output .= '<a href="' . get_permalink($post->ID) . '">' . get_the_title($post->ID) . '</a>';
                 $output .= '</li>';
                 $_count ++;
-            }    
+            }
         }
 
         $output .= "</ul>";
-        
+
         $output .= '</div>';
 
     return ($_count > 0) ? $output : '';
@@ -648,7 +603,28 @@ function cellspy_widgets_init() {
 		'before_title' => '',
 		'after_title' => '',
             ) );
-        
+
+
+	register_sidebar(array(
+			'name' => 'Entrepreneurial Skills',
+			'id' => 'homepage-sidebar',
+			'before_widget' => '<div id="%1$s" class="box-sidebar-subscribe sidebar-subscribe-type sidebar-subscribe-item %2$s">',
+			'after_widget' => '</div>',
+			'before_title' => '<h2>',
+			'after_title' => '</h2>',
+	));
+
+
+
+	register_sidebar(array(
+			'name' => 'Children Safe',
+			'id' => 'gfd',
+			'before_widget' => '',
+			'after_widget' => '',
+			'before_title' => '<h2>',
+			'after_title' => '</h2>',
+	));
+
         /*
         // genarated sidevar all pages
         $pages = get_pages_list();

@@ -35,12 +35,20 @@
                             wp_paginate( );
                         } 
                         ?>
+                        <div class="row block-subscribe">
+
+                                <?php get_sidebar('subscribe'); ?>
+
+                            <div class="col-lg-4 col-md-4 col-sm-12">
+
+                            </div>
+                        </div>
                     </div>
-                    
+
                     <?php else : ?>
 			<?php get_template_part( 'content', 'none' ); ?>
                     <?php endif; ?>
-                    
+
                     <div class="col-lg-4 col-md-4 col-sm-12">
                         <?php require_once '../../templates/includes/blog-banner-buy-category.tpl'; ?>
                         <div class="feature_list">
@@ -58,7 +66,7 @@
         </div> <!-- .row -->
     </div> <!-- .container -->
 </div> <!-- .very_easy -->
-
+<?php //get_sidebar('subscribe'); ?>
 <?php get_sidebar(); ?>
 
 <?php get_bottom(); ?>

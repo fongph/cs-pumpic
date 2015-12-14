@@ -19,7 +19,7 @@
                                                         <a href="/policy.html#refund-policy">Refund policy</a>
                                                     </li>
                                                     <li>
-                                                        <a href="/contact-us.html">Contact us</a>
+                                                        <a href="/faq.html">Contact us</a>
                                                     </li> */ ?>
                                                     <li>
                                                         <a href="/security/">Child Security Blog</a>
@@ -38,7 +38,7 @@
 								<a href="<?php echo getStaticUrl();?>/policy.html">Policy</a>
 							</li>
 							<li>
-								<a href="<?php echo getStaticUrl();?>/contact-us.html">Contacts</a>
+								<a href="<?php echo getStaticUrl();?>/faq.html">Contacts</a>
 							</li>
 							<li>
 								<a href="<?php echo getStaticUrl();?>/security/">Blog</a>
@@ -59,6 +59,9 @@
                                                     <li>
                                                         <a href="/reviews/">Best Mobile Trackers</a>
                                                     </li>
+                                                    <li>
+                                                        <a href="cell-phones-for-kids.html">Cell Phones for Kids</a>
+                                                    </li>
                                                 </ul>        
                                             </div>
 					</div>
@@ -71,10 +74,10 @@
 							<img src="<?php echo getStaticUrl();?>/images/social-buttons.png" alt=""> */ ?>
                                                         
                                                         <ul class="box-socials clearfix">
-                                                            <li><a href="https://www.facebook.com/pages/Pumpic/299299196929718?sk=timeline" class="icons-social i-fb"></a></li>
-                                                            <li><a href="https://twitter.com/pumpic_com" class="icons-social i-tw"></a></li>
-                                                            <li><a href="https://www.youtube.com/user/pumpicapp" class="icons-social i-youtube"></a></li>
-                                                            <li><a href="https://plus.google.com/u/2/b/103434324737023434003/103434324737023434003/posts" class="icons-social i-google"></a></li>
+                                                            <li><a href="https://www.facebook.com/pages/Pumpic/299299196929718?sk=timeline" target="_blank" class="icons-social i-fb"></a></li>
+                                                            <li><a href="https://twitter.com/pumpic_com" target="_blank"  class="icons-social i-tw"></a></li>
+                                                            <li><a href="https://www.youtube.com/user/pumpicapp" target="_blank"  class="icons-social i-youtube"></a></li>
+                                                            <li><a href="https://plus.google.com/+Pumpic_com" target="_blank"  class="icons-social i-google"></a></li>
                                                             <li>
                                                                 <?php include(dirname(__FILE__).'/content/phone/blog-phone-footer.tpl'); ?>
                                                             </li>

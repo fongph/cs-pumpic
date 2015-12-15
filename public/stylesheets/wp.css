@@ -17302,7 +17302,7 @@ ul.list-image-v1 li img.arrows-play {
     z-index: 999;
     right: 10px;
     position: fixed;
-    top: 60px;
+    top: 75px;
 }
 #fly-free-trial > a {
     display: inline-block;
@@ -17319,12 +17319,12 @@ ul.list-image-v1 li img.arrows-play {
 }
 
 #fly-free-trial .fft-title {
-    color: #4d4f5b;
+    color: #272727;
     font-size: 12px;
     line-height: 1.2em;
     padding-bottom: 8px;
     text-align: center;
-    
+    text-shadow: 1px 1px 1px #6b8067, 0 0 2em white;
     width: 85px;
 }
 

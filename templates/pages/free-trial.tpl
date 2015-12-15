@@ -1,5 +1,4 @@
 {*registration out="getOut" post=$smarty.post*}
-{nocache}{assign 'hideTrialLinks' true}{/nocache}
 {strip}
 {include file='../includes/main/main-header.tpl'
     robots="no" 
@@ -21,7 +20,7 @@
     
 	<div class="wrapper block-free-trial-form">
 	{include file='../includes/main/main-top-menu.tpl' 
-            topmenu_active="false"
+            topmenu_active="trial"
             cache_id = "includes_main_main-top-menu"
             nocache}	
         
@@ -119,9 +118,10 @@
                     Переменные:
                         our_products (text): Включить выключить блок OUR PRODUCTS (no|yes). * - yes 
                 *}
-                {include file='../includes/main/main-footer.tpl' 
+                {include file='../includes/main/main-footer.tpl'
                     our_products = "no"
-                }
+                    hideFreeTrialBanner = true
+                    nocache}
 	</div>
 	{include file='../includes/main/main-analytics-footer.tpl'}
 </body>

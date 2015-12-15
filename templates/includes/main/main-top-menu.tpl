@@ -91,8 +91,8 @@
                             </li>
 
                             {nocache}
-                                {if !$hideTrialLinks and $di->get('trialStickBanner')->isVisible()}
-                                    <li>
+                                {if $di->get('freeTrialLinks')->isAvailable()}
+                                    <li {if isset($topmenu_active) && $topmenu_active=='trial'} class="active"{/if}>
                                         <span class="mobile-free-trial"><a href="/free-trial.html">Free Trial</a></span>
                                     </li>
                                 {/if}

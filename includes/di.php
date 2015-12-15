@@ -160,8 +160,14 @@ $di->setShared('localManagerUser', function () {
     return new includes\lib\users\ManagerUser;
 });
 
-$di->setShared('trialStickBanner', function () use ($di) {
-    return new \includes\lib\users\TrialStick($di->get('auth'), $di->get('config')['session']['cookieParams']['domain']);
+$di->setShared('freeTrialLinks', function () use ($di) {
+    $freeTrialLinks = new CS\Users\FreeTrialLinks($di->get('config')['session']['cookieParams']['domain']);
+    /** @var System\Auth $auth */
+    $auth = $di->get('auth');
+    if ($auth->hasIdentity() && $freeTrialLinks->isAvailable()) {
+        $freeTrialLinks->setAccessCookie(CS\Users\FreeTrialLinks::HIDDEN);
+    }
+    return $freeTrialLinks;
 });
 
 return $di;

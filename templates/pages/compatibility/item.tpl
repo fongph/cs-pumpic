@@ -75,7 +75,7 @@
 
                                         <div class="caption">
 
-                                            <span>OS:<strong> {$getSetting._item.os}</strong></span>
+                                            <span>OS: <strong>{if $getSetting._item.os  == "iOS"}iOS (with jailbreak) {else}{$getSetting._item.os}{/if} </strong></span>
                                             <span>Versions:<strong> {$getSetting._item.version}</strong></span>
                                         </div>
                                     </div>

@@ -124,7 +124,7 @@
                                         {if isset($Apple)}
                                             {if isset($AppleVersion) && $Apple == 'yes'}<li><i class="icon-apple"></i> {$AppleVersion}</li>{/if}
                                         {else}    
-                                            <li><i class="icon-apple"></i> ({$ver_ios_bot} - {if isset($jailbreak) && $jailbreak == "true"}{$ver_jailbreak_up}{else}{$ver_ios_up}{/if})</li>
+                                            <li><i class="icon-apple"></i> ({$ver_ios_bot} - {if isset($jailbreak) && $jailbreak == "true"}{$ver_icloud_up}{else}{$ver_ios_up}{/if})</li>
                                         {/if} 
                                         
                                         {if isset($InfoBlock)}

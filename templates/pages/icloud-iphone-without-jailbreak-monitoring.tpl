@@ -33,7 +33,7 @@
         {include file='../includes/content/phone/block-phone.tpl'
                  style="blue"   
         }
-        
+
         <!-- CONTENT -->
         {include file='../includes/content/info/info-promo.tpl'
             imgUrl = "header_banners/icloud-iphone-monitoring-without-jailbreak.png"
@@ -50,7 +50,7 @@
             planPackageBuyUrl = '#icloud-solution'
             planPackageBuyType = 'link'
             planPackageBuyClass = 'go_block_scroll'
-
+            jailbreak = true
             TouchPad = 'yes'
             Android = 'no'
             InfoBlock = 'no'

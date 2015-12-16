@@ -131,10 +131,10 @@ $config = array(
 		),
 
 	// version mobiles
-		'ver_jailbreak_up'      => '8.4',
+		'ver_jailbreak_up'      => '9.0.2',
 		'ver_android_up'        => '5.1',
 		'ver_android_bot'       => '2.2',
-		'ver_ios_up'            => '8.4.1',
+		'ver_ios_up'            => '9.0.2',
 		'ver_ios_bot'           => '6.0',
 		'ver_icloud_up'         => '8.4.1',
 		'ver_icloud_bot'        => '6.0',

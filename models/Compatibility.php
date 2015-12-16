@@ -120,7 +120,7 @@ class Compatibility {
             'list' => $data,
         );
     }
-    
+
     public function isPartUppercase($string) {
         return (bool) preg_match('/[A-Z]/', $string);
     }
@@ -153,7 +153,7 @@ class Compatibility {
             ),
             // Instant messengers
             // Socials
-            'Social Media' => array( 
+            'Social Media' => array(
                 'skype' => 'Skype',
                 'viber' => 'Viber',
                 'whatsapp' => 'WhatsApp',
@@ -189,28 +189,31 @@ class Compatibility {
                 // 'reboot_app'  => 'Reboot application',
                 'reboot_device'  => 'Reboot device',
                 'geo_fences'    => 'Geo-fences',
-                'icloud_solution'   => 'iCloud solution',
                 'notes' => 'Notes',
-                
+                'icloud_solution'   => 'iCloud solution',
+
+
 //                    'gps' => 'Current GPS location',
 
             ),
         );
-        
+
         if(isset($data['gsm_module']) and !$data['gsm_module'])
             unset($groups['Calls & SMS']);
-        
+
         // only this OS
         $os_iOS = array(
             'Other features' => array(
-                'icloud_solution'   => 'iCloud monitoring (jailbreak - free)',
-            ),    
+                'icloud_solution'   => '<strong>iCloud monitoring</strong> (without jailbreak up to iOS 8.4.1)',
+            ),
         );
-        
+
         // add commit info 
         $addInfo = array(
             'ios' => [
                 'Calls & SMS' => array(
+
+                    'call_log' => '<strong>iOS: For 8.4.1 and older versions Jailbreak is not needed</strong>',
                     // Calls blocking
                     'lock_device' => '<strong>Jailbreak Needed</strong>',
                     // SMS blocking
@@ -218,6 +221,7 @@ class Compatibility {
                     // SMS daily limiting
                     'sms_daily_limiting' => '<strong>Jailbreak Needed</strong>',
                     'bad_word_sms' => '<strong>Jailbreak Needed</strong>',
+                    'sms_log' => '<strong>iOS: For 8.4.1 and older versions Jailbreak is not needed</strong>'
                 ),
                 'Apps Control' => array(
                     // Applications list
@@ -229,15 +233,18 @@ class Compatibility {
                 'Browsing' => array(
                     // Websites blocking
                     'blocking_sites' => '<strong>Jailbreak Needed</strong>',
+                    'browser_history' => '<strong>iOS: For 8.4.1 and older versions Jailbreak is not needed</strong>',
+                    'browser_bookmarks' => '<strong>iOS: For 8.4.1 and older versions Jailbreak is not needed</strong>',
                 ),
                 
                 'Social Media' => array( 
-                    // 'skype' => '<strong>Jailbreak Needed</strong>',
+                    'skype' => '<strong>iOS: For 8.4.1 and older versions Jailbreak is not needed</strong>',
                     'viber' => '<strong>Jailbreak Needed</strong>',
-                    // 'whatsapp' => '<strong>Jailbreak Needed</strong>',
+                    'whatsapp' => '<strong>iOS: For 8.4.1 and older versions Jailbreak is not needed</strong>',
                     'facebook' => '<strong>Jailbreak Needed</strong>',
                     'instagram' => '<strong>Jailbreak Needed</strong>',
                     'kik'       => '<strong>Jailbreak Needed</strong>',
+                    'snapchat' => '<strong>Jailbreak Needed</strong>',
                 ),
                 
                 'Other features' => array(
@@ -246,7 +253,7 @@ class Compatibility {
                     // Geo-fences
                     'geo_fences'    => '<strong>Jailbreak Needed</strong>',
                     // Photos
-                    'photos' => '<strong>Jailbreak Needed</strong>',
+                    'photos' => '<strong>iOS: For 8.4.1 and older versions Jailbreak is not needed</strong>',
                     // Emails
                     'emails' => '<strong>Jailbreak Needed</strong>',
                     // Videos
@@ -254,6 +261,10 @@ class Compatibility {
                     // SMS commands
                     'sms_commands' => '<strong>Jailbreak Needed</strong>',
                     'sim_change_notification' => '<strong>Jailbreak Needed</strong>',
+                    'contacts' => '<strong>iOS: For 8.4.1 and older versions Jailbreak is not needed</strong>',
+                    'calendar' => '<strong>iOS: For 8.4.1 and older versions Jailbreak is not needed</strong>',
+                    'historical_data'  => '<strong>iOS: For 8.4.1 and older versions Jailbreak is not needed</strong>',
+                    'notes' => '<strong>iOS: For 8.4.1 and older versions Jailbreak is not needed</strong>',
                 ),    
             ],
             'android' => [

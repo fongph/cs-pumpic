@@ -241,7 +241,7 @@
          <!-- BLOCK COMPATIBILITY -->
         {include file='../includes/content/compatibility/compatibility-table.tpl'
             title="Compatibilidade"
-            versionIOS="iOS {$ver_ios_bot} - {$ver_ios_up}"    
+            versionIOS="iOS {$ver_icloud_bot} - {$ver_icloud_up}"
             androidText=""
             iosText="A senha do iCloud é necessária para esta instalação"
             blockBg="light" 
@@ -362,7 +362,7 @@
                                                 </div>
                                                 <div class="table_header text-transform-none text-center">
                                                     <div id="list-price-phones" class="wr_support_new_os">
-                                                        <i class="icon-apple d_green"></i> iOS {$ver_ios_bot} - {$ver_ios_up}
+                                                        <i class="icon-apple d_green"></i> iOS {$ver_icloud_bot} - {$ver_icloud_up}
                                                     </div>
                                                 </div>
                                             </th>

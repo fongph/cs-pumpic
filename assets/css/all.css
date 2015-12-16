@@ -99,30 +99,7 @@
     text-align: left  !important;
 }
 
-.img-align-right {
-    float: right;
-    margin: 0 0 5px 20px;
-}
 
-.img-align-left {
-    float: left;
-    margin: 5px 20px 0 0;
-}
-
-
-@media (max-width: 750px){
-    .img-align-right {
-        float: none;
-        display: block;
-        margin: 0 auto;
-    }
-
-    .img-align-left {
-        float: none;
-        display: block;
-        margin: 0 auto;
-    }   
-}
 
 .bg_white {
   background: #f9f9f9;
@@ -7625,4 +7602,51 @@ overflow: visible;
 
 .underline{
     text-decoration: underline;
+}
+
+
+.app-icon-left{
+    width: 120px !important;
+    float: left;
+    margin: 0px 20px 20px 0px;
+}
+
+.app-icon-right{
+    width: 120px !important;
+    float: right;
+    margin: 0px 0px 20px 20px;
+}
+
+
+.img-align-right {
+    float: right;
+    margin: 0 0 5px 20px;
+}
+
+.img-align-left {
+    float: left;
+    margin: 5px 20px 0 0;
+}
+
+
+@media (max-width: 750px){
+    .img-align-right {
+        float: none;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .img-align-left {
+        float: none;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .app-icon-left{
+        width: 90px !important;
+    }
+
+    .app-icon-right{
+        width: 90px !important;
+    }
 }

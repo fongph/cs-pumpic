@@ -74,7 +74,7 @@
                                                             </a>
                                                             <div class="caption">
                                                                 <h3><a class='a-default' href="/compatibility/{$phone.uri_name}/" {*target="_blank"*}>{$phone.name}</a></h3>
-                                                                <span>OS: <strong>{$phone.os}</strong></span>
+                                                                <span>OS: <strong>{if $phone.os  == "iOS"}iOS (with jailbreak) {else}{$phone.os}{/if}</strong></span>
                                                                 <span>Versions: <strong>{$phone.version}</strong></span>
                                                             </div>
                                                         </div>

@@ -281,7 +281,7 @@
                                   <li href="#" class="list-group-item">
                                     <p class="list-group-item-text">
                                         <span class="title"><i class="icon-cancel"></i> Jailbreak - <span class="text-danger">Not Required</span></span>
-                                        <span>You do not need to jailbreak the target iOS device ({$ver_ios_bot} - {$ver_ios_up}) before installing the app.</span>
+                                        <span>You do not need to jailbreak the target iOS device ({$ver_icloud_bot} - {$ver_icloud_up}) before installing the app.</span>
                                     </p>
                                   </li>
                                   <li href="#" class="list-group-item">

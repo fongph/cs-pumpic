@@ -91,7 +91,7 @@ description="Read full review on Top Spy App mobile monitoring tool. Learn if us
 
                         </p>
                         <div class="media-btn">
-                            <a href="/reviews/" class="btn btn-sm btn-allreviews">All Review</a>
+                            <a href="/reviews/" class="btn btn-sm btn-allreviews">All Reviews</a>
                             <a href="/reviews/stealthgenie-mobile-monitoring.html" class="btn btn-sm btn-success">Next Review &rarr;</a>
                         </div>
                     </div>

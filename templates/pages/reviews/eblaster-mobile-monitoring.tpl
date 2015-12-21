@@ -93,7 +93,7 @@ description="Learn more about eBlaster software - read editor's review on eBlast
                             eBlaster works well within the functions it provides. However, they are not enough to offer all-round child protection. There are many other similar, but legal monitoring solutions.
                         </p>
                         <div class="media-btn">
-                            <a href="/reviews/" class="btn btn-sm btn-allreviews">All Review</a>
+                            <a href="/reviews/" class="btn btn-sm btn-allreviews">All Reviews</a>
                             <a href="/reviews/topspyapp-mobile-monitoring.html" class="btn btn-sm btn-success">Next Review &rarr;</a>
                         </div>
                     </div>

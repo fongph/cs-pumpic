@@ -92,7 +92,7 @@ description="Learn all pros and cons of StealthGenie spy app. Read editor's revi
 
                         </p>
                         <div class="media-btn">
-                            <a href="/reviews/" class="btn btn-sm btn-allreviews">All Review</a>
+                            <a href="/reviews/" class="btn btn-sm btn-allreviews">All Reviews</a>
                             <a href="/reviews/pumpic.html" class="btn btn-sm btn-success">Next Review &rarr;</a>
                         </div>
                     </div>

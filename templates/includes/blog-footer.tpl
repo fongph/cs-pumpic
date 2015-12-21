@@ -60,7 +60,7 @@
                                                         <a href="/reviews/">Best Mobile Trackers</a>
                                                     </li>
                                                     <li>
-                                                        <a href="cell-phones-for-kids.html">Cell Phones for Kids</a>
+                                                        <a href="/cell-phones-for-kids.html">Cell Phones for Kids</a>
                                                     </li>
                                                 </ul>        
                                             </div>

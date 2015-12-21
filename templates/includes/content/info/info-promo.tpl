@@ -74,7 +74,7 @@
                             
                             <div>
                                 <div class="visual-text {if isset($Review)}visual-text-lg visual-text-xlg{else}{if $textAlign}block-text-{$textAlign}{else}block-text-right{/if}{/if}">
-                                    <{$h_title} class="h1 title {if isset($classTitle)}{$classTitle}{/if} {if isset($fz)}fz{$fz}{/if}">{if isset($title)} {$title} {else}Android Parental Control App{/if}</{$h_title}>
+                                    <{$h_title} class="h1 title {if isset($classTitle)}{$classTitle}{/if}{if isset($fz)}fz{$fz}{/if}"  {if isset($titleSize)}style="font-size: {$titleSize};"{/if}">{if isset($title)} {$title} {else}Android Parental Control App{/if}</{$h_title}>
                                     
                                     {if isset($flagName)}
                                     <div class="clearfix">    
@@ -104,7 +104,7 @@
                                         </div>
                                     </div>  
                                     {else}
-                                    <p class="header-info-descriptions">
+                                    <p class="header-info-descriptions" {if isset($descriptionSize)} style="font-size: {$descriptionSize};"{/if} >
                                         {if isset($description)}
                                             {$description}
                                         {else}

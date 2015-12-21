@@ -96,8 +96,10 @@
 										<li>A customer is either unable or unwilling to jailbreak the target iOS device (iPhone, iPad, iPod Touch), or to use iCloud Solution, which comes with Premium subscription only. A refund is not issued if a jailbreak version is not yet available for the given iOS version.</li>
 										<li>A customer is either unable or unwilling to root the target Android device to obtain full functionality of the application, which includes viewing information from Google Chrome, IM activity, or emails.</li>
 										<li>A customer has reached the limit on his or her subscription plan.</li>
-										<li>A customer intended to monitor web activities of non-standard web-browsers, except for Internet and Google Chrome on Android OS), and Safari on iOS.</li>
+										<li>A customer intended to monitor web activities in non-standard web browsers on Android (other than standard Internet and Google Chrome).</li>
+										<li>A customer intended to use the iCloud solution and monitor web activities in non-standard web browsers on iOS (other than Safari).</li>
 										<li>The target device is switched/replaced.</li>
+										<li>A customer intended to monitor browsing activities in the Incognito or Private mode.</li>
 										<li>A customer refuses to update the application or OS version after the technical issues have been resolved successfully.</li>
                                                                                 <li>A client refuses to provide print-screens from the target device required for handling a technical problem or proving proper setup.</li>
                                                                                 <li>A customer cannot utilize the application properly due to the functioning of any anti-virus, other software, or other spyware installed on the target device.</li>

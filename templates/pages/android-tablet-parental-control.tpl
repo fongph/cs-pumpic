@@ -110,7 +110,7 @@
         </table>
         <!-- END -->
 
-        <p class="text-center f-light">Most of threats children face these days are directly connected with the use of the Internet. Cyberbullying, online predator attacks, sexting, inappropriate content, and identity theft constitute a major concern all over the world. The task of Android tablet parental controls by Pumpic is to help parents reveal impending danger and avert it in the making.</p>
+        <p class="text-center f-light">Most of threats children face these days are directly connected with the use of the Internet. Cyberbullying, online predator attacks, sexting, inappropriate content, and identity theft constitute a major concern all over the world. The task of <a href="/how-to-setup-parental-controls-on-android.html" class="a-default">Android tablet parental controls</a> by Pumpic is to help parents reveal impending danger and avert it in the making.</p>
 {EndContent}
         
 <div class="light">

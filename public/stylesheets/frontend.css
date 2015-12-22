@@ -7460,6 +7460,44 @@ legend {
     padding-bottom: 20px;
 }
 
+.parental-controls{
+    margin-top: 22px;
+}
+.parental-controls-list{
+    display: inline-block;
+    position: absolute;
+}
+
+.parental-controls img{
+    float: left;
+    width: 75px !important;
+    height: 79px !important;
+    left: -89px;
+    margin: 0px 10px 21px 0px
+}
+
+.parental-controls li{
+    list-style-type: none;
+    position: relative;
+    margin-left: 18px !important;
+    margin-top: 20px;
+    height: 80px;
+}
+
+
+@media (max-width: 978px) {
+    .parental-controls li{
+        height: auto;
+        margin-left: 0 !important;
+    }
+
+}
+
+
+    .internet-safety .list-images .lc-1{
+    left: -30px !important;
+}
+
 .send_find_phone fieldset > legend,
 .send_mobile_operators_find_phone fieldset > legend,
 .form-contact-us fieldset > legend { 

@@ -61,20 +61,20 @@
 
 
 
-{Content 
-    styleTitle="h2"
-    title="Did You Know?"
-    blockBg='dark'}
-                   
+        {Content
+        styleTitle="h2"
+        title="Did You Know?"
+        blockBg='dark'}
+
         <p class="text-center f-light">
-            Using Android monitoring software to protect kids is an urgent issue of contemporary society. 
-        On one hand, technological progress opened new doors for the evolution of humanity; on the other one, it has 
-        resulted in many dangers in return. And children are exposed to these dangers much more than others.
+            Using Android monitoring software to protect kids is an urgent issue of contemporary society.
+            On one hand, technological progress opened new doors for the evolution of humanity; on the other one, it has
+            resulted in many dangers in return. And children are exposed to these dangers much more than others.
         </p>
-        
+
         <!-- BLOCK STATISTICK -->
         <div class="block-statistick row">
-            
+
             <div class="item col-s-sm-12 col-xs-sm-12 col-sm-4 col-md-4 col-lg-4">
                 <section>
                     <div><strong class="fz50 color-orange">72%</strong></div>
@@ -99,15 +99,15 @@
                     </span>
                 </section>
             </div>
-            
+
         </div>
         <!-- END -->
 
         <p class="text-center f-light">
-            As a parent you should always keep the situation under control, be aware of possible threats coming from the Internet, 
-        how to resist it, and if a reliable Android parental monitoring app can be the way out:
+            As a parent you should always keep the situation under control, be aware of possible threats coming from the Internet,
+            how to resist it, and <a class="a-default" href="/how-to-setup-parental-controls-on-android.html">how to set an Android parental monitoring app</a> to avert all those dangers:
         </p>
-        
+
         <!-- BLOCK LIST -->
         <div class="row pt15">
             <div class="padding-null col-sm-4 col-md-4 col-lg-4">
@@ -127,16 +127,16 @@
             </div>
         </div>
         <!-- END -->
-    
-        {*<p>Using monitoring software to protect kids is an urgent issue of contemporary society. 
-        On one hand, technological progress opened new doors for the evolution of humanity; on the other one, it has 
-        resulted in a lot of dangers in return. And children are exposed to these dangers much more than others.</p> 
+
+        {*<p>Using monitoring software to protect kids is an urgent issue of contemporary society.
+        On one hand, technological progress opened new doors for the evolution of humanity; on the other one, it has
+        resulted in a lot of dangers in return. And children are exposed to these dangers much more than others.</p>
         <ul>
 		    <li>72% of children worldwide use smartphones, 33% of them are under 8 years old</li>
             <li>23% of teenagers report that they feel addicted to games on mobile devices</li>
             <li>69% of boys and girls under 18 have experienced cyberbullying via mobile phones</li>
 		</ul>
-        <p>As a parent you should always keep the situation under control, be aware of possible threats coming from the Internet, 
+        <p>As a parent you should always keep the situation under control, be aware of possible threats coming from the Internet,
         how to resist it, and if a reliable Android parental monitoring app can be the way out:</p>
 
         <ul>
@@ -147,8 +147,8 @@
 
         {* Template: BLOCK IMAGE
             blockAlign (text): позиция блока с изображением. (left|center|right) *default: center
-            
-            imgUrl (text): путь к изображению. *ОБЯЗАТЕЛЬНОЕ ПОЛЕ 
+
+            imgUrl (text): путь к изображению. *ОБЯЗАТЕЛЬНОЕ ПОЛЕ
             imgAlt (text): подпись к изображению.
             // размер изображения
             imgWidth (text): ширина изображения *ОБЯЗАТЕЛЬНОЕ ПОЛЕ
@@ -160,14 +160,14 @@
                 blockAlign = 'center'
 
                 imgUrl = 'parental_control/bg_famaly_mobile.png'
-                imgAlt = 'Alt Test image 1'                
+                imgAlt = 'Alt Test image 1'
                 imgWidth = '537'
                 imgHeight = '312'
 
                 captionText = 'Caption test image 1 Caption test image 1 Caption test image 1 Caption test image 1'
         *}
-                        
-{EndContent}
+
+        {EndContent}
 
 <div class="light">
         <div class="container">
@@ -279,7 +279,8 @@
         <li><img src="{$img}/list/lc_2.png" alt="Cyberbullying" class="lc-2" /><strong>Cyberbullies.</strong> Talk to your kids and find out if someone offends them. They might receive text messages with threats or bad words. Cyberbullying images can be posted anonymously in social networks and spread quickly through the Internet. More often than not, it is hard to find the source of cyberbullying, since online an offender can be not even a real person. Parental control apps for Android will allow you to track your kids’ online activity, follow social media, networks, as well as text messages they receive. Such software will let you find out if any threat exists, and take action before it’s too late.</li>   
         <li><img src="{$img}/list/lc_3.png" alt="Sexting. Explicit Content" class="lc-3" /><strong>Sexting.</strong> Today children develop faster than their parents did before. When it comes to sexual life, their development is no less fast moving. Some of them consider exchanging SMS, photos and <a class="a-default" href="/parental-control-on-youtube-android.html" target="_blank">videos with sexual content</a> a part of growing-up. As the statistics shows, about 22% of underage children are engaged in sexting. They think it will help them build relations with the opposite sex or stand out from their classmates and look more adult. Parental controls on Android phones will help you monitor your children’s communication, view photos and videos they send and receive, and thus, you will be able to intervene.</li>
     </ul>
-    <p>While your children are underage, you as a parent are responsible for them. You should secure their time spending by all means, and sometimes take steps they might consider needless interference. However, as long as safety is your top priority, you should do what is necessary.</p>
+    <p>While your children are underage, you as a parent are responsible for them. You should secure their time spending by all means, and sometimes take steps they might consider needless interference. However, as long as
+        <a class="a-default" target="_blank" href="/online-safety-rules-for-teens.html">safety for kids</a> is your top priority, you should do what is necessary.</p>
 
 {EndContent}    
 

@@ -132,7 +132,7 @@ $config = array(
 
 	// version mobiles
 		'ver_jailbreak_up'      => '9.0.2',
-		'ver_android_up'        => '5.1',
+		'ver_android_up'        => '6.0.1',
 		'ver_android_bot'       => '2.2',
 		'ver_ios_up'            => '9.0.2',
 		'ver_ios_bot'           => '6.0',

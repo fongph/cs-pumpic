@@ -444,12 +444,36 @@
                 </div>
             </div>
             <!-- block upgrade include-->
+
+            <div class="hr-grey"></div>
+
+
+            <div class="container">
+            <div class="apps-store col-xs-12 col-sm-12 col-md-7">
+                <p class="free-pumpic-control"><span>Bonus!</span> FREE Pumpic Control Panel Mobile App with every plan!</p>
+                <div class="apps-store-text">
+                <p>Check the most important data from the target device on the go by using Control Panel Mobile Application! Just purchase any subscription plan, download the FREE application to your mobile device and login with your Control Panel credentials.</p>
+                </div>
+                <div class="store-links">
+                    <a ga-category="Mobile App Buttons" ga-action="click" ga-label="Store GP"  href="https://play.google.com/store/apps/details?id=com.pumpic.mobile.monitoring"><img src="/images/google-play.png" alt="Pumpic Parental Monitoring on Google Play" alt=""></a>
+                </div>
+            </div>
+
+           </div>
+
+
         </div>
-                                    
+        </div>
+
+
+
+
+
         <!-- RECOMMENDED -->
         {*
             Template: RECOMMENDED
-        *}    
+        *}
+
         {include file='../includes/main/main-recommended.tpl'}                            
                                     
         <!-- FOOTER -->

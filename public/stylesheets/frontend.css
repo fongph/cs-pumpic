@@ -8408,6 +8408,48 @@ div.symbol {
         text-align: center !important;
     }
 }
+
+.hr-grey{
+    border-top: 2px solid #e8e8e8;
+    margin: 25px 0px 25px 0;
+}
+
+
+/* Block App Market */
+
+
+.apps-store{
+    margin: auto;
+    float: none;
+}
+
+.store-links{
+    text-align: center;
+}
+
+.free-pumpic-control{
+    font-weight: 300;
+    font-size: 21px;
+    text-align: center;
+    color: black;
+    margin-bottom: 5px;
+}
+
+.free-pumpic-control span{
+    font-weight: 700;
+    font-size: 19px;
+}
+
+
+.apps-store-text{
+    margin: auto;
+    padding: 0 50px 0 50px;
+    font-size: 13px;
+    text-align: center;
+}
+
+
+/* END Block App Market  */
 .position-relative {
     position: relative;
 }

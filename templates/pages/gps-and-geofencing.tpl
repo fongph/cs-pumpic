@@ -54,7 +54,7 @@
         title = "Advanced Monitoring Solutions"
         description = "Pumpic always remains at least a step ahead of modern monitoring technologies providing reliable location tracking and geofencing for iPhone, iPad, iPod Touch, and Android smartphones and tablets.<br /><br />
         The app includes accurate GPS tracker, which allows you to set geo-fences and follow locations. Once the target device leaves safety zones or enter restricted areas, geofence reminders notify you instantly.<br /><br />
-        Pumpic is a multitask monitoring solution with wide variety of useful functions."
+        Pumpic is a multitask monitoring solution with wide variety of useful functions. Its iOS and <a class='a-default' href='/android-phone-child-tracking-software.html'>Android phone tracking software for children</a> is what every careful parent needs to secure family safety and comprehensive protection."
         blockBg="dark"
         } 
     

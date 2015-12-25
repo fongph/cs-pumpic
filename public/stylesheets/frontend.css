@@ -8409,6 +8409,17 @@ div.symbol {
     }
 }
 
+
+
+.usefulness-parental .list-images .lc-1{
+    left: -30px;
+}
+
+.text-center{
+    text-align: center;
+}
+
+
 .hr-grey{
     border-top: 2px solid #e8e8e8;
     margin: 25px 0px 25px 0;

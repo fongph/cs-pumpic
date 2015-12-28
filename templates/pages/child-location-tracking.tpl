@@ -104,7 +104,7 @@
             <div class="pt30 pb20">
                 <p>Why is location tracking so essential, you may wonder? The answer is quite simple. When children go anywhere alone, without parents or adults to come along and protect if needed, they are most likely to be exposed to stranger danger, get lost, or get in trouble.</p>
                 <p>Statistically, 40% of parents are most concerned about their kids’ safety, when they are away from home. In other words, parents worry most of all, when they don’t know exactly where their children are.</p>
-				<p>With the Pumpic parental tracking app, you can find out your kids’ whereabouts in real time as soon as necessary.</p>
+                <p>With <a class="a-default" href="/android-phone-child-tracking-software.html" target="blank">Android phone tracking software for children</a> designed by Pumpic, you can find out your kids’ whereabouts in real time as soon as necessary.</p>
             </div>
         </div>
         <div class="col-lg-3 col-md-3 col-sm-3 text-center">

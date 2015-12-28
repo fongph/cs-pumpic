@@ -30,8 +30,8 @@
                         <span class="img_thumb"><img src="images/thumb_3_new.png" height="184{*216*}" width="308{*360*}" alt="{if isset($imgAlt)}{$imgAlt}{/if}"></span>
                         <div class="caption how-to-step">
                             <h3>Track remotely</h3>
-                            <p>To see the data from the target device, access your <b>Control Panel</b> via cp.pumpic.com or Mobile APP for Android (has a limited amount of features!).
-                                <span class="br"></span>In the <b>Control Panel</b>, you can view logs, media files, location history, set restrictions, manage your devices and subscriptions.</p>
+                            <p>To see the data from the target device, access your Control Panel via cp.pumpic.com or Mobile APP for Android (has a limited amount of features!).
+                                <span class="br"></span>In the Control Panel, you can view logs, media files, location history, set restrictions, manage your devices and subscriptions.</p>
                         </div>
                     </div>
                 </div>

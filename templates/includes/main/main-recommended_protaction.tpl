@@ -7,8 +7,8 @@
             </div>
             <div class='col-sm-12 col-md-12 col-lg-12 text-center'>
                 <ul>
-                    <li><a class='b-o-hover' href='http://www.alzheimers.net/1-16-15-look-after-parent-alzheimers' rel='nofollow'><img class='i-alzheimers' src='/images/recommended/i-alzheimers.png'></a></li>
-                    <li><a class='b-o-hover' href='https://myageingparent.com/online-shop/care/care-options/' rel='nofollow'><img class='i-myageingparent' src='/images/recommended/i-myageingparent.png'></a></li>
+                    <li><a class='b-o-hover' href='http://www.alzheimers.net/1-16-15-look-after-parent-alzheimers' target="_blank" rel='nofollow'><img class='i-alzheimers' src='/images/recommended/i-alzheimers.png'></a></li>
+                    <li><a class='b-o-hover' href='https://myageingparent.com/online-shop/care/care-options/' target="_blank" rel='nofollow'><img class='i-myageingparent' src='/images/recommended/i-myageingparent.png'></a></li>
                 </ul>
             </div>
         </div>

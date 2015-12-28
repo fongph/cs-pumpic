@@ -73,6 +73,7 @@
                                         <li>
                                             <a href="http://demo.{$domain}/setDevice/125?redirect_url=cp/calls"
                                                class="btn-orange featured-link link-hl ga-action-click"
+                                               target="_blank"
                                                 ga-action ="click"
                                                 ga-category="demo link"
                                                 ga-label="body">Live Demo{*<i class="icon-angle-double-right"></i>*}</a>

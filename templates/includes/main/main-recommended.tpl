@@ -14,12 +14,12 @@
                     <div class='col-md-12 col-lg-8 b-item'>
                         <table class='table-recommended-by'>
                             <tr>
-                                <td><a class='b-o-hover' href='http://www.lifehack.org/278272/top-6-apps-help-your-kids-learn-while-you-keep-them-safe' rel='nofollow'><img class='i-lifehack' src='/images/recommended/lifehack.png' /></a></td>
-                                <td><a class='b-o-hover' href='http://appadvice.com/appnn/2015/06/keep-your-family-secure-with-pumpic-mobile-monitoring' rel='nofollow'><img class='i-app-advice' src='/images/recommended/app-advice.png' /></a></td>
+                                <td><a class='b-o-hover' href='http://www.lifehack.org/278272/top-6-apps-help-your-kids-learn-while-you-keep-them-safe' target="_blank" rel='nofollow'><img class='i-lifehack' src='/images/recommended/lifehack.png' /></a></td>
+                                <td><a class='b-o-hover' href='http://appadvice.com/appnn/2015/06/keep-your-family-secure-with-pumpic-mobile-monitoring' target="_blank" rel='nofollow'><img class='i-app-advice' src='/images/recommended/app-advice.png' /></a></td>
                             </tr>
                             <tr>
-                                <td><a class='b-o-hover' href='http://www.androidguys.com/2015/08/14/eye-spy-pumpic-device-monitoring-review/' rel='nofollow'><img class='i-ag' src='/images/recommended/ag.png' /></a></td>
-                                <td><a class='b-o-hover' href='http://ioshacker.com/cydia/pumpic-for-ios-lets-you-monitor-kids-online' rel='nofollow'><img class='i-ios-hacker' src='/images/recommended/ios-hacker.png' /></a></td>
+                                <td><a class='b-o-hover' href='http://www.androidguys.com/2015/08/14/eye-spy-pumpic-device-monitoring-review/' target="_blank" rel='nofollow'><img class='i-ag' src='/images/recommended/ag.png' /></a></td>
+                                <td><a class='b-o-hover' href='http://ioshacker.com/cydia/pumpic-for-ios-lets-you-monitor-kids-online' target="_blank" rel='nofollow'><img class='i-ios-hacker' src='/images/recommended/ios-hacker.png' /></a></td>
                             </tr>
                         </table>
                     </div>

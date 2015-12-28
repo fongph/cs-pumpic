@@ -120,10 +120,10 @@
                                         </ul>
                                     </td>
                                     <td class="col-lg-3 col-md-3 col-sm-3">
-                                        <p>All these issues can be solved easily with help of <a class="color-green {*bold*}" href="https://support.apple.com/en-us/HT201304">iOS built-in parental control settings</a> (Restrictions).</p>
+                                        <p>All these issues can be solved easily with help of <a class="color-green {*bold*}" target="_blank" href="https://support.apple.com/en-us/HT201304">iOS built-in parental control settings</a> (Restrictions).</p>
                                     </td>
                                     <td class="col-lg-3 col-md-3 col-sm-3">
-                                        <p>Android has no general built-in parental control settings, but includes similar <a class="color-green {*bold*}" href="https://support.google.com/googleplay/answer/1075738?hl=en">controls on Google Play</a>.</p>
+                                        <p>Android has no general built-in parental control settings, but includes similar <a class="color-green {*bold*}" target="_blank" href="https://support.google.com/googleplay/answer/1075738?hl=en">controls on Google Play</a>.</p>
                                     </td>
 
                                 </tr>
@@ -241,13 +241,13 @@
                                     <img src="{$img}/icons/icon-iphone.png" width="101px" height="64px" alt="Solutions for iPhones, iPads, and iPods Touch (iOS 6.0+)" />
                                 </div>   
                                 <div class="col-sm-12 col-xs-12 item event">
-                                    <p>All these issues can be solved easily with help of <a class="color-green {*bold*}" href="https://support.apple.com/en-us/HT201304">iOS built-in parental control settings</a> (Restrictions).</p>
+                                    <p>All these issues can be solved easily with help of <a class="color-green {*bold*}" target="_blank" href="https://support.apple.com/en-us/HT201304">iOS built-in parental control settings</a> (Restrictions).</p>
                                 </div>  
                                 <div class="col-sm-12 col-xs-12 bg-black-2 text-center mt-hedaer item">
                                     <img src="{$img}/icons/icon-android.png" width="97px" height="51px" alt="Solutions for Android Phones and Tablets (Android 2.2+)" />
                                 </div>   
                                 <div class="col-sm-12 col-xs-12 item event">
-                                    <p>Android has no general built-in parental control settings, but includes similar <a class="color-green {*bold*}" href="https://support.google.com/googleplay/answer/1075738?hl=en">controls on Google Play</a>.</p>
+                                    <p>Android has no general built-in parental control settings, but includes similar <a class="color-green {*bold*}" target="_blank" href="https://support.google.com/googleplay/answer/1075738?hl=en">controls on Google Play</a>.</p>
                                 </div>
                             </div>
                             <!-- end -->

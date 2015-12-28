@@ -16,7 +16,7 @@
                     </div>
                         
                      <div class='box-cp pull-right'>   
-                        <a href="{if isset($demoHref)}http://demo.{$domain}{$demoHref}{else}{getDemoLink domain=$domain}{/if}" class="btn btn-sm btn-orange btn-success visible-lg cp-login">Demo</a>
+                        <a href="{if isset($demoHref)}http://demo.{$domain}{$demoHref}{else}{getDemoLink domain=$domain}{/if}" target="_blank" class="btn btn-sm btn-orange btn-success visible-lg cp-login">Demo</a>
                     </div>   
                         
                     {*if ''|hasUser} 
@@ -86,7 +86,7 @@
                             {/nocache}
 
                             <li>
-                                <a href="http://demo.{$domain}{if isset($demoHref)}{$demoHref}{else}/setDevice/125?redirect_url=cp/calls{/if}" 
+                                <a href="http://demo.{$domain}{if isset($demoHref)}{$demoHref}{else}/setDevice/125?redirect_url=cp/calls{/if}" target="_blank"
                                    class="btn btn-sm btn-orange btn-success hidden-lg cp-login"> Demo</a>
                             </li>
 

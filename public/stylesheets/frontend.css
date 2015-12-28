@@ -8460,6 +8460,13 @@ div.symbol {
 }
 
 
+@media (max-width: 550px)  {
+    .apps-store-text{
+        padding: 0;
+    }
+}
+
+
 /* END Block App Market  */
 .position-relative {
     position: relative;

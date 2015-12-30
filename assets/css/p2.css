@@ -252,6 +252,14 @@ form > table.pricing-second:after {
     font-size:18px; 
 }
 
+.icon-cloud{
+    position: relative;
+    height: 13px;
+    top: 2px;
+    background: url(../images/icloud-ios.png) no-repeat;
+    margin: 0 4px;
+}
+
 .basic_wr .basic_h{
     width:100%;
     background: #4d4f5b;

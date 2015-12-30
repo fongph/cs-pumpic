@@ -83,41 +83,41 @@
         
         <!-- BLOCK FEATURES -->
         {include file='../includes/content/country/block-features-mobile-spy-de.tpl'}
-        
+
         <!-- BLOCK PRICING -->
         <div id="store" class="dark c-f-border-top box-price-premium-v1">
             <div class="container">
-                
+
                 <div class="row">
                     <div class="col-lg-10 col-lg-offset-1">
                         <div class="row">
                             <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 pt20">
                                 <table class="tb_pricing table-bordered pricing-second">
                                     <thead>
-                                        <tr>
-                                            <th>
-                                                <div class="basic_wr row-pricing-panel w100 icloud-box">
-                                                    <div class="basic_h text-transform-none">
-                                                        Preise
-                                                    </div>
-                                                    <div class="priceb border-none">
-                                                        <div class="dtable">
-                                                            <div class="dtable-cell text-center">
-                                                                <div class="wr_pack">
-                                                                    <img src="images/premium_pack.png">
-                                                                </div>
-                                                                <div class="wr_price_big">
-                                                                    <span></span>
-                                                                    <div class="box-currence">
-                                                                        <div class="symbol" attr-iso="eur">€</div>
-                                                                        <div class="curr" id="premium-price-per-month">{if isset($getDefaultPremiumMoth)}{$getDefaultPremiumMoth}{else}6.99{/if}</div>
-                                                                    </div><span> / Monat</span>
-                                                                </div>
+                                    <tr>
+                                        <th>
+                                            <div class="basic_wr row-pricing-panel w100 icloud-box">
+                                                <div class="basic_h text-transform-none">
+                                                    Preise
+                                                </div>
+                                                <div class="priceb border-none">
+                                                    <div class="dtable">
+                                                        <div class="dtable-cell text-center">
+                                                            <div class="wr_pack">
+                                                                <img src="images/premium_pack.png">
+                                                            </div>
+                                                            <div class="wr_price_big">
+                                                                <span></span>
+                                                                <div class="box-currence">
+                                                                    <div class="symbol" attr-iso="eur">€</div>
+                                                                    <div class="curr" id="premium-price-per-month">{if isset($getDefaultPremiumMoth)}{$getDefaultPremiumMoth}{else}6.99{/if}</div>
+                                                                </div><span> / Monat</span>
                                                             </div>
                                                         </div>
-                                                       
-                                                        <div id="list-plans-premium-package" class="box-plans-package">
-                                                           <section class="full"> 
+                                                    </div>
+
+                                                    <div id="list-plans-premium-package" class="box-plans-package">
+                                                        <section class="full">
 
                                                             <div class="list-plans box-table">
                                                                 <div class="table-rows">
@@ -125,105 +125,104 @@
                                                                         <i class="i-price-plans-big-premium"></i>
                                                                     </div>
                                                                     <div class="item-plan table-column col-xs-sm-8 col-sm-8 col-md-8 col-lg-8">
-                                                                        <p class="full">Kaufen Sie den <strong class="text-red">6</strong> oder <strong class="text-red">12</strong> Monatsabo 
+                                                                        <p class="full">Kaufen Sie den <strong class="text-red">6</strong> oder <strong class="text-red">12</strong> Monatsabo
                                                                             und <strong class="text-red">erhalten Sie 2 kostenlose Pläne</strong></p>
                                                                     </div>
                                                                 </div>
-                                                            </div>  
+                                                            </div>
 
-                                                           </section>        
-                                                        </div>         
-                                                                 
-                                                        <div class="list_price">
-                                                            <form name="price_premium" method="POST" action="/buy.html" autocomplete="off">
-                                                                <input id='product_price_premium' type='hidden' name='price[productID]' value='{if isset($getDefaultPremium)}{$getDefaultPremium}{else}0{/if}' class="product_price" />
-                                                
-                                                                <ul>
-                                                                    {foreach from=$getProducts.premium key=key item=_item}
+                                                        </section>
+                                                    </div>
+
+                                                    <div class="list_price">
+                                                        <form name="price_premium" method="POST" action="/buy.html" autocomplete="off">
+                                                            <input id='product_price_premium' type='hidden' name='price[productID]' value='{if isset($getDefaultPremium)}{$getDefaultPremium}{else}0{/if}' class="product_price" />
+
+                                                            <ul>
+                                                                {foreach from=$getProducts.premium key=key item=_item}
                                                                     <li class="">
                                                                         <label class="label_radio hover_label_radio r_off">
-                                                                            <input class="data-price" data-parent="box-price-premium-v1" data-target="#premium-price-per-month" data-cur="eur" 
-                                                                                   data-price-eur="{$_item.price}" data-period="{$_item.period}" name="optionsRadios" id="optionsRadios{$_item.id}1" 
-                                                                                   value="{$_item.id}" type="radio"  
-                                                                                   {if $_item.period == '12'} checked="checked" {/if} />
+                                                                            <input class="data-price" data-parent="box-price-premium-v1" data-target="#premium-price-per-month" data-cur="eur"
+                                                                                   data-price-eur="{$_item.price}" data-period="{$_item.period}" name="optionsRadios" id="optionsRadios{$_item.id}1"
+                                                                                   value="{$_item.id}" type="radio"
+                                                                                    {if $_item.period == '12'} checked="checked" {/if} />
                                                                             <span class="sp">
                                                                                 <strong>
                                                                                     {$_item.period}
                                                                                 </strong> {if $_item.period == 1}Monat{else}Monate{/if}
                                                                             </span>
-                                                                             
-                                                                            <div class="box-small-package">    
-                                                                                {if $_item.period > 3}<span class="small_package i-price-plans-small-premium"></span>{/if} 
-                                                                            </div>     
-                                                                                
+
+                                                                            <div class="box-small-package">
+                                                                                {if $_item.period > 3}<span class="small_package i-price-plans-small-premium"></span>{/if}
+                                                                            </div>
+
                                                                             <span class="sp_price">
                                                                                 <strong>
                                                                                     <div class="box-currence"><div class="symbol" attr-iso="eur">€</div><div class="curr">{$_item.price}</div></div>
                                                                                 </strong>
-                                                                            </span>     
+                                                                            </span>
                                                                         </label>
                                                                     </li>
-                                                                    {/foreach}
-                                                                </ul>
-                                                                <button class="btn btn-default ga-action-submit mb20"
-                                                                        ga-action ="click"
-                                                                        ga-category="icloud-iphone-without-jailbreak-monitoring"
-                                                                        ga-label="buy premium"
-                                                                        ga-page="/icloud-iphone-without-jailbreak-monitoring.html"
-                                                                        value="true" type="submit" name="price[submit]">Jetzt kaufen</button>
-                                                            </form>
-                                                        </div>
-                                                    </div>
-                                                
-                                                </div>
-                                                
-                                            </th>
-                                        </tr>
-                                        
-                                        <tr>
-                                            <th>
-                                                <div class="refund_10 refund_bg">
-                                                    <div class="wr_refund text-transform-none">
-                                                        <div class="day10">10 TAGE
-                                                            <span class="d_green">Geld-zurück-Garantie</span>
-                                                        </div>
+                                                                {/foreach}
+                                                            </ul>
+                                                            <button class="btn btn-default ga-action-submit mb20"
+                                                                    ga-action ="click"
+                                                                    ga-category="icloud-iphone-without-jailbreak-monitoring"
+                                                                    ga-label="buy premium"
+                                                                    ga-page="/icloud-iphone-without-jailbreak-monitoring.html"
+                                                                    value="true" type="submit" name="price[submit]">Jetzt kaufen</button>
+                                                        </form>
                                                     </div>
                                                 </div>
-                                                <div class="table_header text-transform-none text-center">
-                                                    {*<ul class="list-price-phones text-center">
-                                                        <li><i class="icon-android"></i>Android 2.2 - 5.1</li>
-                                                        <li><i class="icon-apple"></i>iOS 6.0 - 8.4 (with jailbreak)</li>
-                                                    </ul>*}
-                                                    <div id="list-price-phones" class="wr_support_new_os">
-                                                        <i class="icon-android d_green"></i> Android {$ver_android_bot} - {$ver_android_up}
-                                                        <i class="icon-apple d_green"></i> iOS {$ver_ios_bot} - {$ver_jailbreak_up} (mit Jailbreak)
+
+                                            </div>
+
+                                        </th>
+                                    </tr>
+
+                                    <tr>
+                                        <th>
+                                            <div class="refund_10 refund_bg">
+                                                <div class="wr_refund text-transform-none">
+                                                    <div class="day10">10 TAGE
+                                                        <span class="d_green">Geld-zurück-Garantie</span>
                                                     </div>
                                                 </div>
-                                            </th>
-                                        </tr>
-                                        
-                                        
+                                            </div>
+                                            <div class="table_header text-transform-none text-center">
+                                                {*<ul class="list-price-phones text-center">
+                                                    <li><i class="icon-android"></i>Android 2.2 - 5.1</li>
+                                                    <li><i class="icon-apple"></i>iOS 6.0 - 8.4 (with jailbreak)</li>
+                                                </ul>*}
+                                                <div id="list-price-phones" class="wr_support_new_os">
+                                                    <i class="icon-android d_green"></i> Android {$ver_android_bot} - {$ver_android_up}
+                                                    <i class="icon-apple d_green"></i> iOS {$ver_ios_bot} - {$ver_jailbreak_up} (mit Jailbreak)
+                                                </div>
+                                            </div>
+                                        </th>
+                                    </tr>
+
+
                                     </thead>
                                 </table>
 
                                 <div class="space_line">&nbsp;</div>
-                                
+
                                 <div class="link_circle_italic2">
                                     <div class="style-links2">
                                         <span class="circle_ico2"></span>
                                         <label>Apple iOS erfordert einen Jailbreak vor der Installation. Manche Überwachungsfunktionen benötigen rooting Android Geräte. Bitte werfen Sie einen Blick in die oben stehende Tabelle und denken Sie sorgfältig über die einzelnen Möglichkeiten nach. Bitte beachten Sie auch, dass die Pumpic App auf den Zielgeräten sichtbar ist. Gleichzeitig ist sie mit einem geheimen Schlüssel gesichert und kann ohne Erlaubnis weder gelöscht noch angepasst werden.</label>
                                     </div>
                                 </div>
-                                
+
                             </div>
                         </div>
                     </div>
                 </div>
-                
+
             </div>
-        </div>    
-        
-        
+        </div>
+
         <!-- BLOCK TITLE -->
         {include file='../includes/content/country/title.tpl'
             hook="icloud-spy"
@@ -393,7 +392,7 @@
                 imgAlt = "Android"
                 title = "Leicht zu bedienendes Control Panel"
                 textAlign = "left"
-                description="Nach der Pumpic Installation werden sämtliche Daten des Zielgeräts and Ihr Control Panel gesendet. Dieses kann von Ihrem Browser oder jedem anderen Gerät, wie PCs, Smartphones und Tablets geöffnet werden. Im Control Panel können Sie nicht nur die Informationen einsehen, sondern auch Einschränkungen einrichten und spezifische Aktivitäten blockieren."
+                description="Im Control Panel können Sie nicht nur die Informationen einsehen, sondern auch mit Handy Spion Einschränkungen einrichten, ohne Zustimmung Handy orten und spezifische Aktivitäten blockieren."
                 lang="de"
                 language="en"
 

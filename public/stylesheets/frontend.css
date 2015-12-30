@@ -19568,7 +19568,7 @@ form > table.pricing-second:after {
 
 .basic_wr .basic_fe ul{
     list-style-type: none;
-    padding: 0 0 0px 20px;
+    padding: 0 0 0px 10px;
 }
 .basic_wr .basic_fe ul li{
     list-style-type: none;
@@ -19624,7 +19624,7 @@ form > table.pricing-second:after {
 
 .premium_wr .premium_fe ul{
     list-style-type: none;
-    padding: 0 0 0 20px;
+    padding: 0 0 0 10px;
 }
 .premium_wr .premium_fe ul li{
     list-style-type: none;

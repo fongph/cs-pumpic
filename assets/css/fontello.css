@@ -76,6 +76,9 @@
 .icon-angle-down:before { content: '\e80c'; } /* '' */
 .icon-blackberry:before { content: '\e80d'; } /* '' */
 
+
+.icon-apple-fly:before { content: '\e803'; color: #cff1f1;
+    font-size: 16px;  }
 .box-features-header-item div > ul li:before {
   font-family: "fontello_list";
 /*  font-size: 1px;  */

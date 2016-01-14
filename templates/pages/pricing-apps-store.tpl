@@ -202,7 +202,15 @@
                                                                     <li data-toggle="tooltip" data-placement="top" title="View all emails and detailed contact data. <div class='br'><strong>Android: Root Required</strong></div>"><i class="icon-ok"></i> Emails</li>
                                                                     <li data-toggle="tooltip" data-placement="top" title="Monitor, block or set time limits on all applications (games, services etc.) downloaded on a device."><i class="icon-ok"></i> Applications Management</li>
                                                                     <li data-toggle="tooltip" data-placement="top" title="View all videos stored on a device."><i class="icon-cancel"></i> Videos</li>
-                                                                    <li data-toggle="tooltip" data-placement="top" title="Track conversations via Skype, WhatsApp, Viber, and Kik. Monitor Skype and WhatsApp calls.<div class='br'><strong>Android: Root Required</strong></div>"><i class="icon-cancel"></i> Viber/WhatsApp/Skype/Kik</li>
+
+
+                                                                    <li data-toggle="tooltip" data-placement="top" title="Track chats and calls on Skype.<div class='br'><strong>Android: Root Required</strong></div>"><i class="icon-cancel"></i> Skype </li>
+                                                                    <li data-toggle="tooltip" data-placement="top" title="Track chats and calls on WhatsApp.<div class='br'><strong>Android: Root Required</strong></div>"><i class="icon-cancel"></i> WhatsApp </li>
+                                                                    <li data-toggle="tooltip" data-placement="top" title="Track chats and calls on Viber. <div class='br'><strong>Android: Root Required</strong></div>"><i class="icon-cancel"></i> Viber</li>
+                                                                    <li data-toggle="tooltip" data-placement="top" title="Track conversations via Kik.<div class='br'><strong>Android: Root Required</strong></div>"><i class="icon-cancel"></i> Kik</li>
+
+
+
                                                                     <li data-toggle="tooltip" data-placement="top" title="Monitor posted images and comments on Instagram. <div class='br'><strong>Android: Root Required</strong></div>"><i class="icon-cancel"></i> Instagram</li>
                                                                     <li data-toggle="tooltip" data-placement="top" title="Monitor Snapchat photos, videos, and comments. <div class='br'><strong>Not available for iOS 9.0 and newer versions.</strong><br><strong>Android: Root and Xposed Required</strong></div>"><i class="icon-cancel"></i> Snapchat</li>
                                                                     <li data-toggle="tooltip" data-placement="top" title="Track chats and calls on Facebook. <div class='br'><strong>Android: Root Required</strong></div>"><i class="icon-cancel"></i> Facebook{*Messages*}</li>
@@ -355,7 +363,14 @@
                                                                 <li data-toggle="tooltip" data-placement="top" title="View all emails and detailed contact data. <div class='br'><strong>Android: Root Required</strong></div>"><i class="icon-ok"></i> Emails</li>
                                                                 <li data-toggle="tooltip" data-placement="top" title="Monitor, block or set time limits on all applications (games, services etc.) downloaded on a device."><i class="icon-ok"></i> Applications Management</li>
                                                                 <li data-toggle="tooltip" data-placement="top" title="View all videos stored on a device."><i class="icon-ok"></i> Videos</li>
-                                                                <li data-toggle="tooltip" data-placement="top" title="Track conversations via Skype, WhatsApp, Viber, and Kik. Monitor Skype and WhatsApp calls.<div class='br'><strong>Android: Root Required</strong></div>"><i class="icon-ok"></i> Viber/WhatsApp/Skype/Kik</li>
+
+
+                                                                <li data-toggle="tooltip" data-placement="top" title="Track chats and calls on Skype.<div class='br'><strong>Android: Root Required</strong></div>"><i class="icon-ok"></i> Skype <img src="/images/cloud-grey.png"></li>
+                                                                <li data-toggle="tooltip" data-placement="top" title="Track chats and calls on WhatsApp.<div class='br'><strong>Android: Root Required</strong></div>"><i class="icon-ok"></i> WhatsApp <img src="/images/cloud-grey.png"></li>
+                                                                <li data-toggle="tooltip" data-placement="top" title="Track chats and calls on Viber. <div class='br'><strong>Android: Root Required</strong></div>"><i class="icon-ok"></i> Viber</li>
+                                                                <li data-toggle="tooltip" data-placement="top" title="Track conversations via Kik.<div class='br'><strong>Android: Root Required</strong></div>"><i class="icon-ok"></i> Kik</li>
+
+
                                                                 <li data-toggle="tooltip" data-placement="top" title="Monitor posted images and comments on Instagram. <div class='br'><strong>Android: Root Required</strong></div>"><i class="icon-ok"></i> Instagram</li>
                                                                 <li data-toggle="tooltip" data-placement="top" title="Monitor Snapchat photos, videos, and comments. <div class='br'><strong>Not available for iOS 9.0 and newer versions.</strong><br><strong>Android: Root and Xposed Required</strong></div>"><i class="icon-ok"></i> Snapchat</li>
                                                                 <li data-toggle="tooltip" data-placement="top" title="Track chats and calls on Facebook. <div class='br'><strong>Android: Root Required</strong></div>"><i class="icon-ok"></i> Facebook{*Messages*}</li>

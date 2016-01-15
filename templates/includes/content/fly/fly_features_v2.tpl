@@ -12,7 +12,7 @@
                 <img class="fly-pumpic-icon" src="/images/fly_features/pumpic_icon.png">
                 <h2 class="fly-features-h2_2">Pumpic Control Panel <br> Mobile App </h2>
             </div>
-            <a class="fly-features-link ga-action-click"  ga-category="fly-features banner" ga-action="click" ga-label="Pop-up iOS Banner" target="_blank" href="https://play.google.com/store/apps/details?id=com.pumpic.mobile.monitoring"><img src="/images/fly_features/google_play.png"></a>
+            <a class="fly-features-link ga-action-click"  ga-category="Fly Banner" ga-action="click" ga-label="Pop-up iOS Banner" target="_blank" href="https://play.google.com/store/apps/details?id=com.pumpic.mobile.monitoring"><img src="/images/fly_features/google_play.png"></a>
         </div>
     </div>
 </div>

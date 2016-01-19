@@ -3,7 +3,7 @@
         <span class="fly_close close"></span>
         <div id="fly_top">
             <h2 id="fly-features-h2">Compatible with</h2>
-            <p><span class="fly-versions"><span class="icon-apple-fly"></span> iOS {$ver_ios_bot} - {$ver_jailbreak_up}</span> (with Jailbreak)</p>
+            <p><span class="fly-versions"><span class="icon-apple-fly"></span> iOS 6.0 - 9.0.2 </span> (with Jailbreak)</p>
             <a class="features-button ga-action-click"  ga-category="Fly Banner"  ga-action="click" ga-label="Go To Store Button" href="/store.html">Go to Store</a>
         </div>
         <div class="fly-hr"></div>

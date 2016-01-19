@@ -22560,7 +22560,7 @@ dl.table-rows.block-left {
 
 /* ------------- \\ fly-features-v2 -------------- */
 
-.fly-features-h2{
+#fly-features-h2{
     color: #f7efa5;
     line-height: 16px;
     font-size: 14px;
@@ -22568,7 +22568,7 @@ dl.table-rows.block-left {
     margin: 0 0 2px 4px;
 }
 
-.fly-features-h2_2{
+#fly-features-h2_2{
     color: #fff;
     line-height: 16px;
     font-size: 14px;
@@ -22694,7 +22694,7 @@ dl.table-rows.block-left {
     .fly-versions{
         font-size: 15px;
     }
-    .fly-features-h2_2{
+    #fly-features-h2_2{
         font-size: 14px;
         line-height: 17px;
         margin: 0;
@@ -22719,7 +22719,7 @@ dl.table-rows.block-left {
         position: absolute;
     }
 
-    .fly-features-h2{
+    #fly-features-h2{
         font-size: 16px;
     }
 

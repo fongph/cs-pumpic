@@ -87,8 +87,9 @@
 
 <a href="#" class="go_up"></a>
 
+
 <?php
-include_once('../../templates/includes/content/fly/fly_features_v2.tpl');
+include_once('../../templates/includes/content/fly/fly_features_blog.tpl');
 ?>
 
 <div class="wrapper">

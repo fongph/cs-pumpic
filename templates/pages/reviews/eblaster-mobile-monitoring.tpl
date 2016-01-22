@@ -110,7 +110,7 @@ description="Learn more about eBlaster software - read editor's review on eBlast
                 <h3 class="heading">Reports & Logs – <span class="heading-rating">2/10</span></h3>
                 <p>eBlaster provides smooth call and text message monitoring. It allows viewing the time of each call, a phone number, and call duration. The app also logs sent and received SMS. The GPS tracking function also works good letting parents find exact whereabouts of their kids.</p>
                 <p>Unfortunately, the application doesn’t allow monitoring calendar events and contacts. Neither does eBlaster allow keeping track of social networks and online chats, which are a known source of threat for children. Multimedia file monitoring, keylogging, and browsing history/bookmark control are also not supported.</p>
-                <h3 class="heading">Features – <span class="heading-rating">2/10</span></h3>
+                <h3 class="heading">Limits & Restrictions – <span class="heading-rating">2/10</span></h3>
                 <p>The app allows parents to block inappropriate websites. Thus, as soon as you find out that your children view materials restricted for the underage on their devices, you can prevent them from accessing it all in future. eBlaster offers over 150 categories of online content for blocking including alcohol, tobacco, and nudity.
                 </p>
                 <p>eBlaster lets neither set limits on applications nor view downloaded ones on the target device. Phone number and keyword restrictions are unavailable as well. A lack of a daily SMS amount limit is also a serious loss for comprehensive child protection.

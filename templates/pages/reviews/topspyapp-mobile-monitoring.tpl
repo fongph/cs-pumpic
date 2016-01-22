@@ -114,7 +114,7 @@ description="Read full review on Top Spy App mobile monitoring tool. Learn if us
                 <p>However, there are some more features to be desired for more comprehensive security. Thus, it would be reasonable to add Instagram to social media as well as Snapchat and Kik to online chat monitoring. These services are most popular among teenagers these days. At the same time, they are a huge source of online dangers like online predators and cyberbullying. A lack of a geo-fencing option is a considerable loss too.
 
                 </p>
-                <h3 class="heading">Features – <span class="heading-rating">6/10</span></h3>
+                <h3 class="heading">Limits & Restrictions – <span class="heading-rating">6/10</span></h3>
                 <p>TopSpyApp lets you view all downloaded applications and block those you consider inappropriate for your kids. The app also allows blocking websites and restricting callers and message senders, who can reach your children on the phone. Keyword restrictions are supported too.
 
                 </p>

@@ -108,7 +108,7 @@
                     <p>MobileForceField software captures any data your kid sends or receives. Even if he or she decides to hide restricted photos from you or delete messages with inappropriate text content. The app will log it all at once and report right to your console.</p>
                     <p>The app logs only the most common activities like calls, text messages, and media files. It cannot track keystrokes, visited websites, calendars, instant messengers, and social networks, which would let parents protect children more carefully.</p>
                     
-                    <h3 class="heading">Features – <span class="heading-rating">3.5/10</span></h3>
+                    <h3 class="heading">Limits & Restrictions – <span class="heading-rating">3.5/10</span></h3>
                     <p>The application enables parents to use Child Safe Browser, and thus, to determine, which particular websites kids are allowed to visit. Such an option will protect your children from explicit content as well as restricted photos and videos. It also allows application blocking, which is useful if you want to prevent your kid from excessive gaming or using a smartphone while doing homework.</p>
                     <p>On the other hand, using MobileForceField will not allow you to restrict phone numbers that can reach your child. The app does not support limiting the amount of SMS sent during a day, and it will not let you prevent your kid from reading text messages containing bad words or threats.</p>
                     

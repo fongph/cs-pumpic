@@ -106,7 +106,7 @@
                     <h3 class="heading">Reports & Logs – <span class="heading-rating">1/10</span></h3>
                     <p>ScreenTimeLabs enables its users to look through the list of installed applications on a smartphone or a tablet that belongs to their children.   </p>
 					<p>Other features common for any other parental control app like call logs and message reviewing are unavailable here. The possibility of monitoring social media, Viber, WhatsApp, Skype, and Kik is not included. As a result, your kid will be able to surf through the Internet freely and visit any website he or she wants.</p>
-                    <h3 class="heading">Features – <span class="heading-rating">3.5/10</span></h3>
+                    <h3 class="heading">Limits & Restrictions – <span class="heading-rating">3.5/10</span></h3>
                     <p>The app gives a possibility to limit the list of approved applications and block inappropriate ones –ScreenTimeLabs fulfills this task successfully.  In case of any features like limiting SMS amount, website blocking, or phone number restrictions – the situation is pathetic. The app proposes none of that. </p>
                     <h3 class="heading">Security & Management – <span class="heading-rating">5/10</span></h3>
                     <p>Remote monitoring is available here so you can use any device, log in, and get access to the list of installed applications on the target device. After you get access to the apps, you can block them or lock a phone, in case if you want to save personal information on a stolen or lost device. </p>

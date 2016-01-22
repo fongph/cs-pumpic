@@ -43,11 +43,9 @@
             imgVerticalAlign = "bottom"
             textAlign = "left"
             title = "Best of Parental Controls <br>Mobile Monitoring App Reviews"
-            description = "Secure your family. Ensure your children’s safety.
-                           <br>Track calls, text messages, and location. Follow online activity."
+            description = "Check out reviews of the best parental control apps available on the Internet.
+                           <br>Choose the most reliable software to keep your kids safe on smartphones and tablets."
             Review = "yes"   
-            imgWidth = "285"
-            imgHeight = "300"
             promoBuyBlock = "no"
             planPackageBuy = "no"
             infoBlockMobile = "no"
@@ -61,7 +59,24 @@
             buttonBuyNow = 'yes'
             buttonViewDemo = 'no'
             buttonFreeTrial = 'yes'
+
         }
+		
+{Content 
+    styleTitle=""
+    title=""
+    blockBg='dark'}
+    
+
+    <div id="grid-images" class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+            <div class="pt30 pb20">
+                <p>There are many developers calling their child monitoring applications the best parental control software ever. However, this is not true in all cases. An application you get to protect your kids must be reliable and multifunctional. It means it must accurately log information upon which parents would be able to find out if their child is safe, whether he or she is not engaged in any misgiving activity on a smartphone or tablet, and if he or she is not facing any danger online. This raises the question how many features the best parental control app must include, and thus, how many activities on your kid’s smartphone or tablet cover.</p>
+				<p>The table below compares top ten parental control apps available online. You can check major mobile monitoring functions as well as if each particular application clamming the title of the best app for parental control provides its users with them. Note that the more information monitoring software can log, the wider picture on your kids’ security and behavior you have.</p>
+            </div>
+        </div>
+    </div>    
+{EndContent}
         
         
         <div class="darken">
@@ -620,7 +635,7 @@
                     <table class="table-vertical-striped">
                         <thead>
                             <tr>
-                                <th colspan="11" class="table-vertical-striped-title">Features</th>
+                                <th colspan="11" class="table-vertical-striped-title">Limits & Restrictions</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -3165,14 +3180,50 @@
                             </ul>
                         </div>
                     </div>
-                    <p>Also, check out our reviews of the <a href="/best-free-parental-control-apps-for-android.html" class="a-default">best free Android parental control apps</a> and some other <a class="a-default" href="/best-android-parental-control-app.html">parental control software for Android</a>. Find the most reliable monitoring solution for your children’s safety. </p>
+                    <p>Also, check out our reviews of the <a href="/best-free-parental-control-apps-for-android.html" class="a-default">best free Android parental control apps</a> as well as some other <a class="a-default" href="/best-android-parental-control-app.html">parental controls for Android</a>. Find the best monitoring software for your children’s safety. </p>
                 </div>
             </div>
         </div>
 
+        {Content 
+    styleTitle="h2"    
+    title="Parental Control Use Statistics"
+    blockBg='dark'}
+        
+        <!-- BLOCK STATISTICK -->
+        <div class="block-statistick row">
+            
+            <div class="item col-s-sm-12 col-xs-sm-12 col-sm-4 col-md-4 col-lg-4">
+                <section>
+                    <div><strong class="fz50 color-orange">82%</strong></div>
+                    <span class="text-uppercase">
+                        parents find it a problem they can’t constantly be around and see what their children do online.
+                    </span>
+                </section>
+            </div>
+            <div class="item col-s-sm-12 col-xs-sm-12 col-sm-4 col-md-4 col-lg-4">
+                <section>
+                    <div><strong class="fz50 color-orange">55%</strong></div>
+                    <span class="text-uppercase">
+                        children are monitored by parental control applications on their smartphones and tablets.
+                    </span>
+                </section>
+            </div>
+            <div class="item col-s-sm-12 col-xs-sm-12 col-sm-4 col-md-4 col-lg-4">
+                <section>
+                    <div><strong class="fz50 color-orange">78%</strong></div>
+                    <span class="text-uppercase">
+                        parents using monitoring apps admit their kids have improved behavior and school success.
+                    </span>
+                </section>
+            </div>
+            
+        </div>
+        <!-- END -->
 
-
-
+        <p class="text-center f-light">Pumpic parental control is your opportunity to always be near wherever you are and protect your kids’ mobile activities remotely. The app is trusted by more than 10,000 users. Pumpic proved to be one of the best cell phone monitoring software for child safety.</p>
+		
+		{EndContent}
 
         <!-- END CONTENT -->    
         {include file='../../includes/content/banners/index.tpl'}

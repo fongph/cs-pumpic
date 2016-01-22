@@ -105,7 +105,7 @@
                     <h3 class="heading">Reports & Logs – <span class="heading-rating">2/10</span></h3>
                     <p>The application saves reports with all incoming and outgoing calls and messages. Also every time your child enters a prohibited area you get a notification of Geo-fences.</p>
 					<p>However, this app doesn’t monitor multimedia content of the device, browsing history nor social media. As a result, your child can become a victim of online predators.</p>
-                    <h3 class="heading">Features  – <span class="heading-rating">3.5/10</span></h3>
+                    <h3 class="heading">Limits & Restrictions  – <span class="heading-rating">3.5/10</span></h3>
                     <p>Care4Teen enables parents to block inappropriate websites and applications. However, as you can’t view browsing history, you have no possibility to check the effectiveness of this feature. Also you won’t be able to block phone numbers so anyone can call your child.</p>
                     <h3 class="heading">Security & Management – <span class="heading-rating">2.5/10</span></h3>
                     <p>The app accommodates remote access to the target device so you can check call history whenever and wherever you want. Unfortunately, all personal information is at risk because the app can’t lock a phone or wipe an SD card remotely. And you won’t get a notification about a Sim card change.</p>

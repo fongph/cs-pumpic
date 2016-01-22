@@ -112,7 +112,7 @@ description="Learn all pros and cons of StealthGenie spy app. Read editor's revi
                 </p>
                 <p>Unfortunately, StealthGenie doesn’t support social media monitoring. Online chat monitoring is not supported as well. It’s important for such software to provide access to social networks and chats children use, as major dangers the underage face come from these particular sources. A keylogger would be a benefit as well, though it’s missing in StealthGenie’s functionality.
                 </p>
-                <h3 class="heading">Features – <span class="heading-rating">0/10</span></h3>
+                <h3 class="heading">Limits & Restrictions – <span class="heading-rating">0/10</span></h3>
                 <p>The app will not provide you with any abilities to set restrictions or put limits. Thus, you will not be able to block websites, if your children visit inappropriate ones. Neither to block apps or set time limits on their running. Nor restrict phone calls by number. Nor text messages by keywords.
                 </p>
 

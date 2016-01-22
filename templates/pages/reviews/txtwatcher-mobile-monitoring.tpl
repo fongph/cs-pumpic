@@ -104,7 +104,7 @@
                     <h3 class="heading">Reports & Logs – <span class="heading-rating">2/10</span></h3>
                     <p>TXTWatcher reports a parent about any SMS, incoming and outgoing call a child has made. Any new application installed on the target device will also be noticed as you will receive a notification. Unfortunately, these are the only possibilities of this application and, actually speaking, it is possible to find free applications with such options. </p>
 					<p>The application lacks too many options like monitoring emails, contact details, or browsing history. GPS location and Geo-fencing are unavailable here, so you won’t be able to find a lost device. No chats nor social media messages are monitored, so your children will be at risk of online sexual harassment or cyberbullying.  </p>
-                    <h3 class="heading">Features – <span class="heading-rating">0/10</span></h3>
+                    <h3 class="heading">Limits & Restrictions – <span class="heading-rating">0/10</span></h3>
                     <p>The app misses all essential features of a usual parental control application. No possibility to limit or block applications as well as block websites with inappropriate content. Take into consideration that you leave your child in the Internet unkept – it is just the same as to leave a toddler in the street alone. </p>
                     <h3 class="heading">Security & Management – <span class="heading-rating">2.5/10</span></h3>
                     <p>With help of the app parents are able to get remote monitoring of the target device and look through the available information poor as it is. </p>

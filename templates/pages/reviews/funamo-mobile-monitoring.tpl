@@ -105,7 +105,7 @@
                     <h3 class="heading">Reports & Logs – <span class="heading-rating">3.5/10</span></h3>
                     <p>The application monitors incoming and outgoing calls, as well as sent and received SMS. It will also enable you to track GPS location and set geo-fences to find out once your child leaves or enters specific areas on the map. In addition, Funamo allows viewing visited websites, contact and application lists.</p>
 					<p>On the other hand, the parental control app lacks too many useful options. There is no possibility to follow emails, and thus, you will not know about your kid’s subscriptions. The app doesn’t log photos and videos, and you will not be able to prevent your kid from 18+ content. It’s needless to say that social networks are the main source of threats and harassment. Funamo will not let you follow any of them.</p>
-                    <h3 class="heading">Features – <span class="heading-rating">5/10</span></h3>
+                    <h3 class="heading">Limits & Restrictions – <span class="heading-rating">5/10</span></h3>
                     <p>When it comes to controlling smartphone or tablet activities, it is very important to be able to limit or block the use of applications and websites. Funamo will provide you with such a possibility.</p>
 					<p>However, you will not be able to restrict phone numbers and prevent your kid from being reached by misgiving people, filter words and phrases to ban threats and explicit language, nor limit the amount of text messages sent daily. </p>
                     <h3 class="heading">Security & Management – <span class="heading-rating">2.5/10</span></h3>

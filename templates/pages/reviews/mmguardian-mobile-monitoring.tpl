@@ -105,7 +105,7 @@
                     <h3 class="heading">Reports & Logs – <span class="heading-rating">3.5/10</span></h3>
                     <p>The application logs all the tracked data from the target device immediately. Once your child sends or receives a text messages, opens a new tab in a browser, makes or has an incoming call, it all is reflected in your personal account. MMGuardian also allows tracking GPS location on the map and setting Geo-fences. Once your kid leaves or enter a restricted area, the app will let you know.</p>
                     <p>However, there is no possibility to follow emailing activity, follow social media resources, nor view media files like photos and videos. Bookmarks history is also unavailable. And considering that most of dangers come from the Internet, the absence of these functions is a serious lose.</p>
-                    <h3 class="heading">Features – <span class="heading-rating">8.5/10</span></h3>
+                    <h3 class="heading">Limits & Restrictions – <span class="heading-rating">8.5/10</span></h3>
                     <p>The app includes all major options peculiar for mobile monitoring software. It will allow you to limit or block other applications, block websites, prevent particular callers from reaching your child’s cell phone. You will also be able to set specific words and phrases inappropriate for you child, and thus, he or she will never read them again.</p>
                     <p>The only significant feature missing here is SMS amount limiting. This option would let you set the number of text messages that you kid is allowed to send per day.</p>
                     <h3 class="heading">Security & Management – <span class="heading-rating">5/10</span></h3>

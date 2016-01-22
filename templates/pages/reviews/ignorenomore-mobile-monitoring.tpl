@@ -103,7 +103,7 @@
                     </div>
                     <h3 class="heading">Reports & Logs – <span class="heading-rating">1/10</span></h3>
                     <p>The only access you get using the application is contact details. However, you won’t know a list of their online friends on Facebook or Skype and it will be impossible to track the location of your children as there is no such option. </p>
-                    <h3 class="heading">Features – <span class="heading-rating">0/10</span></h3>
+                    <h3 class="heading">Limits & Restrictions – <span class="heading-rating">0/10</span></h3>
                     <p>This parental control application gives you no control at all. You can’t limit or block applications as well as websites. Despite the fact that this app deals with phone numbers and contacts you won’t be able to restrict numbers so your child can receive calls from unknown numbers. Another feature that is missing here is limiting of SMS amount – so your child will get a chance to send unlimited number of messages.</p>
                     <h3 class="heading">Security & Management – <span class="heading-rating">2.5/10</span></h3>
                     <p>IgnoreNoMoreApp proposes a remote access to the target phone so you can easily find the information concerning contacts of a phone’s user. Unfortunately, the app doesn’t protect a phone and personal data from thieves – you can’t block a phone and wipe all content. </p>

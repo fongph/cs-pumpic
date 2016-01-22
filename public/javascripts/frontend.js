@@ -10450,8 +10450,8 @@ $(document).ready(function(){
 //            $('#fly_features').css({'display': 'inline-block'});
 //    }
     
-    if($('#fly_features > span.close').length) {
-        $('#fly_features > span.close').on('click', function() {
+    if($('.fly_close').length) {
+        $('.fly_close').on('click', function() {
             $(this).parent().hide();
             if(typeof $.cookie('fly_features') !== "undefined" 
                 && !parseInt( $.cookie('fly_features') )) {

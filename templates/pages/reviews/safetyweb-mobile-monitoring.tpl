@@ -105,7 +105,7 @@
                     <h3 class="heading">Reports & Logs – <span class="heading-rating">2.5/10</span></h3>
                     <p>The app sends reports concerning incoming and outgoing calls and SMS and creates a list of websites your child has visited recently. </p>
 					<p>Altogether, you will know nothing about emails, Facebook, Viber, and WhatsApp as well as what happens in Instagram of your kid. And without GPS tracking you won’t have a slightest idea where your child is at the moment. Taking into consideration that nowadays cyberbullies are active in social media, the effectiveness of the app’s protection is tentative.</p>
-                    <h3 class="heading">Features – <span class="heading-rating">0/10</span></h3>
+                    <h3 class="heading">Limits & Restrictions – <span class="heading-rating">0/10</span></h3>
                     <p>SafetyWeb has none of the following features – that is simple as that. You can do nothing with the target device. You cannot limit the access to inappropriate websites or block uncontrolled applications. Your child could become a victim of sexting, harassment, or cyberbullying and you can do nothing with that because there are no keyword filters there. All personal information on the target device is on the line because you can’t lock the device or wipe an SD card.</p>
                     <h3 class="heading">Security & Management – <span class="heading-rating">2.5/10</span></h3>
                     <p>With help of SafetyWeb, you can remotely monitor the content of the device as well as the history of calls and browsing.</p>

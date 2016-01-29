@@ -7650,3 +7650,26 @@ overflow: visible;
         width: 90px !important;
     }
 }
+
+
+.lc-3{
+    left: -30px;
+}
+
+.lc-3-last{
+    left: -66px;
+    top: -15px;
+}
+
+
+.list-images-second li{
+    margin-top: 25px !important;
+    padding-left: 15px;
+}
+
+.disclaimer{
+    text-align: center;
+    margin-top: 25px;
+    font-weight: 600;
+    margin-bottom: 0;
+}

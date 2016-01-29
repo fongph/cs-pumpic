@@ -60,4 +60,9 @@
             Start your 7-day free trial <i class='white-arrows-right'></i>
         </button>
     </div>
+    <div>
+        <p class="disclaimer">DISCLAIMER</p>
+        <span> Free Trial subscription is limited to 1 account per person.</span>
+        <p> Unfortunately, you are not eligible for Free trial, if you already have a subscription with Pumpic or used Free Trial before.</p>
+    </div>
 </form>

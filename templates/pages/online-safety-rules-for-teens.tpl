@@ -93,6 +93,49 @@
         
         {*  styleTitle="h2"
     title="Follow Kids Remotely Wherever They Go" *}
+	
+{Content 
+    styleTitle="h2"    
+    title="Internet Safety & Teens: Statistics"
+    blockBg='light'}
+	
+	<p>As reported by Pew Research Center, these days parents find essential supervising their children age 13-17 years old using the Internet. Thus, careful moms and dads tend to apply teen monitoring software to control online behavior, follow communication, and other activities. In addition, parents keep an open conversation on Internet safety for teenagers to encourage them use technologies appropriately and in a responsible way. The statistics shows as follows:</p>
+        
+        <!-- BLOCK STATISTICK -->
+        <div class="block-statistick row">
+            
+            <div class="item col-s-sm-12 col-xs-sm-12 col-sm-4 col-md-4 col-lg-4">
+                <section>
+                    <div><strong class="fz50 color-orange">61%</strong></div>
+                    <span class="text-uppercase">
+                        parents check websites their children visit.
+                    </span>
+                </section>
+            </div>
+            <div class="item col-s-sm-12 col-xs-sm-12 col-sm-4 col-md-4 col-lg-4">
+                <section>
+                    <div><strong class="fz50 color-orange">60%</strong></div>
+                    <span class="text-uppercase">
+                        parents follow kids’ social media profiles and activities.
+                    </span>
+                </section>
+            </div>
+            <div class="item col-s-sm-12 col-xs-sm-12 col-sm-4 col-md-4 col-lg-4">
+                <section>
+                    <div><strong class="fz50 color-orange">39%</strong></div>
+                    <span class="text-uppercase">
+                        parents use parental controls for monitoring teenagers.
+                    </span>
+                </section>
+            </div>
+            
+        </div>
+        <!-- END -->
+
+        <p>When it comes to cell phone use, the same statistics proves that 48% of parents systematically look through children’s incoming and outgoing calls as well as text messages they send or receive. At the same time, at least 16% of parents use a teen monitoring app to set restrictions on cell phones and constantly track places their children visit.</p>
+		<p>Another statistic fact shows that 65% of parents have taken away children’s <a class='a-default' href='/android-parental-monitoring.html'>smartphones and tablets</a> as punishment. However, it is not necessary at all, if you a monitoring app like Pumpic is installed on their devices. The application allows you to control all activities and block them remotely from your Control Panel to not let kids use particular options of a cell phone. It is the easiest way to apply preventive measures, when it comes to online safety for teens, their docility, and protection.</p>
+		
+		{EndContent}
         
 {Content 
     styleTitle=""
@@ -163,7 +206,7 @@
         
         {include file='../includes/content/features-table.tpl'
         title = "Many Useful Features by Pumpic"
-        description = "Taking care of teens and their Internet safety, Pumpic introduces over 24 features for comprehensive monitoring and reliable protection. The app will let you control both online activities and mobile device use remotely."
+        description = "Taking care of teens and their Internet safety, Pumpic introduces over 24 features for comprehensive monitoring and reliable protection. The app will let you control both online activities and mobile device use remotely. Pumpic is perfectly compatible with Android smartphones and tablets as well as <a class='a-default' href='iphone-parental-monitoring.html'>iPhones, iPads, and iPods Touch</a>. It means you can protect your teenage kids no matter which device they use. "
         blockBg="dark"
         } 
         

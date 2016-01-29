@@ -117,26 +117,8 @@
         </div>
     </div>    
 {EndContent}
-
-{Content 
-    styleTitle="h2"
-    title="Opportunities Parental Controls Provide"
-    blockBg='light'}
-    <p>According to Pew Research Center, many parents agree that it is important to know what children do on the Internet. To ensure online safety, many of them use various methods for controlling kids’ activities, namely Android phone tracking software allowing them to follow every step a child takes while surfing the World Wide Web. And it is even more essential to talk to kids and teach them safe behavior on smartphone and tablets.</p>
-    <p>Mobile tracking software designed for Android devices is a powerful tool that can protect children and let parents avert many dangers before any trouble has happened. Let’s take a closer look at what parental controls can do for you as a careful parent.</p>
-	<ul class="list-images list-images-second">
-        <li><img src="{$img}/landings/1-android-phone-child-tracking-software.png" alt="Online Predators" class="lc-3" />First of all, let’s consider cell phone use. Talking on the phone with strangers as well as text communication are potential risks children can be exposed to. A reliable Android app for tracking your kid’s phone will show you who calls them or writes SMS. And as soon as you see that any misbehavior happens, you can intervene and stop the danger.</li>
-        <li><img src="{$img}/landings/2-android-phone-child-tracking-software.png" alt="Cyberbullying" class="lc-3" />Internet activity is another major risk. Cyberbullying keeps taking children’s lives away. Meanwhile, online predators seek for an opportunity to attack and abuse kids, who use online media irresponsibly. Tracking software reveals communication on social media to parents and let them keep an eye on online friends and strangers that may contact children.</li>
-        <li><img src="{$img}/landings/3-android-phone-child-tracking-software.png" alt="Sexting. Explicit Content" class="lc-3" />Parents worry, when children go anywhere alone. Especially, when you don’t know for sure where they go. An Android cell phone locator tracks smartphones and tablets remotely showing exact whereabouts and route history. In addition, there is an option to set geo-fences and receive notifications, when kids leave or enter some specific areas. Thus, you can point ‘home’ or ‘school’ as safety zone and see, when a child comes back or leaves.</li>
-        <li style="margin-top: 45px!important;"><img src="{$img}/landings/4-android-phone-child-tracking-software.png" alt="Online Predators" class="lc-3-last" />Moreover, parental controls like Pumpic allow parents to restrict some activities on mobile phones and even block the target device, until children deserve to use it. Thus, you can block a phone for bedtime or when your kids do their homework so as to not distract them from what is important.</li>
-    </ul>
-    <br>
-    <br>
-    <p>Another important issue is selectin a reliable parental control app. E.g. Pumpic is recognized by TopTenReviews as one of the best Android tracking software. At the same time, it is trusted by more than 10,000 customers all over the world. It mean that parents can rest assured that their children are safe, while Pumpic is installed on their devices. The app provides comprehensive control over what is going on with your little loved ones, when you are not nearby.</p>
-
-{EndContent}
         
-<div class="dark">
+<div class="light">
         <div class="container">
                 <h2 class="text-center">How Pumpic Secures Your Kids</h2>
                 <div class="row">
@@ -181,11 +163,11 @@
         {include file='../includes/content/features-table.tpl'
         title = "Monitoring Features for Android"
         description = "Pumpic is a multifeature mobile application designed for remote parent-kid protection. The software comprises many useful features including <a class='a-default' href='/child-location-tracking.html'>child location tracking</a>, call and text messages monitoring, and online activity control. With Pumpic, you will always know where your children go as well as what they do on their smartphones and tablets."
-        blockBg="light"
+        blockBg="dark"
         } 
         
         {include file='../includes/content/ipad.tpl' 
-                blockBg="dark"
+                blockBg="light"
                 bgTab = "bgIOS"
                 imgUrl = "parental_control/ipad.png"
                 imgAlt = "Android"
@@ -194,7 +176,7 @@
                 textAlign = "left"
         }
         
-        <div class="light">
+        <div class="dark">
     <div class="container">
             <h2 class="text-center testimonial-title">Trusted by Over 10 000 Customers Worldwide:</h2>
             <div class="row">
@@ -234,7 +216,7 @@
 </div>
 
         {include file='../includes/main/main-quick-link.tpl' 
-            blockBg="dark"
+            blockBg="light"
         }        
         
         {*{include file='../includes/content/banners/banner-promo-trial.tpl'}*}

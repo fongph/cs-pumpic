@@ -38,3 +38,5 @@ $smarty ->assign('ver_ios_up', $config['ver_ios_up']);
 $smarty ->assign('ver_ios_bot', $config['ver_ios_bot']);
 $smarty ->assign('ver_icloud_up', $config['ver_icloud_up']);
 $smarty ->assign('ver_icloud_bot', $config['ver_icloud_bot']);
+
+clearstatcache();

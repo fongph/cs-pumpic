@@ -2299,4 +2299,43 @@ $('form[name="send_find_phone"] button.event-submit').click(function(){
       return false;
    });
 
+    if ($('.buy-form').size()) {
+        var symbols = { usd: '$', eur: '€', gbp: '£', cad: '$', aud: '$'};
+
+        $('.buy-form label').click(function(e) {
+            if (e.target.tagName != 'INPUT') {
+                return;
+            }
+
+            var data = $(this).find('input').data();
+            
+            console.log(data);
+
+            var $inputs = $('.buy-form').find('input[data-period=' + data.period + '][data-group=' + data.group + ']');
+
+            $inputs.each(function() {
+                $productField = $(this).closest('form').find('input.product_price');
+
+                $productField.val($(this).val());
+
+                $(this).closest('ul').find('label')
+                        .removeClass('r_on')
+                        .addClass('r_off');
+
+                $(this).closest('label')
+                        .addClass('r_on')
+                        .removeClass('r_off');
+            });
+
+            if (typeof data.target != 'undefined') {
+                var currentValue = $(this).find('input').attr('data-price-'+data.cur) / Number(data.period);
+
+                currentValue = (Math.floor(currentValue * 100) / 100).toFixed(2);
+
+                $(data.target).html(currentValue)
+                        .prev('div.symbol')
+                        .html(symbols[data.cur] ? symbols[data.cur] : '');
+            }
+        });
+    }
 }); 

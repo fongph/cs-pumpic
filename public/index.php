@@ -9,6 +9,9 @@ require dirname( __DIR__ ).'/smarty/Smarty.class.php';
 require dirname( __DIR__ ).'/includes/lib/Request.php';
 require dirname( __DIR__ ).'/includes/smarty.config.php';
 
+ini_set('display_errors', 1);
+error_reporting(E_ALL ^ E_NOTICE);
+
 $smarty->assign('di', di(), true);
 $smarty->assign('templatesDir', dirname(__DIR__) . '/templates');
 $_obj = new includes\lib\HTTPRequest;

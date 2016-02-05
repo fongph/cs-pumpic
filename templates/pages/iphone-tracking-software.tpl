@@ -121,7 +121,7 @@
                                                         <span></span>
                                                         <div class="box-currence">
                                                             <div class="symbol" attr-iso="usd">$</div>
-                                                            <div class="curr" id="basic-price-per-month">5.33{*11.33*}</div>
+                                                            <div class="curr" id="basic-price-per-month">11.65</div>
                                                         </div><span> / month</span>
                                                     </div>
                                                 </div>
@@ -146,14 +146,14 @@
                                             </div>    
                                                     
                                             <div class="list_price">
-                                                <form name="price_basic" method="POST" action="/buy.html" autocomplete="off">
+                                                <form name="price_basic" method="POST" action="/buy.html" class="buy-form" autocomplete="off">
                                                     <input id='product_price_basic' type='hidden' name='price[productID]' value='{if isset($getDefaultBasic)}{$getDefaultBasic}{else}0{/if}' class="product_price" />
                                     
                                                     <ul>
                                                         {foreach from=$getProducts.basic key=key item=_item}
                                                         <li class="">
                                                             <label class="label_radio hover_label_radio r_off">
-                                                                <input class="data-price" data-target="#basic-price-per-month" data-cur="usd" data-price-usd="{$_item.price}" data-period="{$_item.period}" name="optionsRadios" id="optionsRadios{$_item.id}1" 
+                                                                <input class="data-price" data-target="#basic-price-per-month" data-cur="usd" data-price-usd="{$_item.price}" data-group="basic" data-period="{$_item.period}" name="optionsRadios" id="optionsRadios{$_item.id}1" 
                                                                        value="{$_item.id}" type="radio" 
                                                                        {if $_item.period == '12'} checked="checked" {/if} />
                                                                 <span class="sp">
@@ -204,7 +204,7 @@
                                                         <span></span>
                                                         <div class="box-currence">
                                                             <div class="symbol" attr-iso="usd">$</div>
-                                                            <div class="curr" id="premium-price-per-month">6.99{*14.66*}</div>
+                                                            <div class="curr" id="premium-price-per-month">33.33</div>
                                                         </div><span>/ month</span>
                                                     </div>
                                                 </div>
@@ -230,7 +230,7 @@
                                                           
                                                     
                                             <div class="list_price">
-                                                <form name="price_premium" method="POST" action="/buy.html" autocomplete="off">
+                                                <form name="price_premium" method="POST" action="/buy.html" class="buy-form" autocomplete="off">
                                                     <input id='product_price_premium' type='hidden' name='price[productID]' value='{if isset($getDefaultPremium)}{$getDefaultPremium}{else}0{/if}' class="product_price" />
                                     
                                                     <ul>
@@ -238,7 +238,7 @@
                                                         <li class="">
                                                             <label class="label_radio hover_label_radio r_off">
                                                                 <input class="data-price" data-target="#premium-price-per-month" data-cur="usd" 
-                                                                       data-price-usd="{$_item.price}" data-period="{$_item.period}" name="optionsRadios" id="optionsRadios{$_item.id}2" value="{$_item.id}" 
+                                                                       data-price-usd="{$_item.price}" data-period="{$_item.period}" data-group="premium1" name="optionsRadios" id="optionsRadios{$_item.id}2" value="{$_item.id}" 
                                                                        type="radio" {if $_item.period == '12'} checked="checked" {/if} />
                                                                 <span class="sp">
                                                                     <strong>
@@ -334,7 +334,7 @@
                                                         <span></span>
                                                         <div class="box-currence">
                                                             <div class="symbol" attr-iso="usd">$</div>
-                                                            <div class="curr" id="premium-price-bottom-per-month">6.99{*14.66 *}</div>
+                                                            <div class="curr" id="premium-price-bottom-per-month">33.33</div>
                                                         </div><span> / month</span>
                                                     </div>
                                                 </div>
@@ -359,7 +359,7 @@
                                             </div>         
                                                      
                                             <div class="list_price">
-                                                <form name="price_premium_bottom" method="POST" action="/buy.html" autocomplete="off">
+                                                <form name="price_premium_bottom" method="POST" action="/buy.html" class="buy-form" autocomplete="off">
                                                     <input id='product_price_premium' type='hidden' name='price[productID]' value='{if isset($getDefaultPremium)}{$getDefaultPremium}{else}0{/if}' class="product_price" />
                                     
                                                     <ul>
@@ -367,7 +367,7 @@
                                                         <li class="">
                                                             <label class="label_radio hover_label_radio r_off">
                                                                 <input class="data-price" data-target="#premium-price-bottom-per-month" data-cur="usd" 
-                                                                       data-price-usd="{$_item.price}" data-period="{$_item.period}" name="optionsRadios" id="optionsRadios{$_item.id}3" 
+                                                                       data-price-usd="{$_item.price}" data-period="{$_item.period}" data-group="premium2" name="optionsRadios" id="optionsRadios{$_item.id}3" 
                                                                        value="{$_item.id}" type="radio" 
                                                                        {if $_item.period == '12'} checked="checked" {/if} />
                                                                 <span class="sp">
@@ -440,31 +440,7 @@
                                                             </div>
                 </div>
             </div>
-        </div>
-
-        <script type="text/javascript">
-        function roundUsing(func, number, prec) {
-            var tempnumber = number * Math.pow(10, prec);
-            tempnumber = func(tempnumber);
-            return tempnumber / Math.pow(10, prec);
-        }
-        var symbols = { usd: '$', eur: '€', gbp: '£', cad: '$', aud: '$' };
-        $('input[data-target="#basic-price-per-month"], input[data-target="#premium-price-per-month"], input[data-target="#premium-price-bottom-per-month"]').change(function() {
-
-            var currentValue = $(this).attr('data-price-' + $(this).attr('data-cur')) / Number($(this).attr('data-period'));
-
-            // currentValue = roundUsing(Math.round, currentValue, 2);
-            currentValue = (Math.floor(currentValue * 100) / 100).toFixed(2);
-
-            $($(this).attr('data-target'))
-                .html(currentValue)
-                .prev('div.symbol')
-                .html(symbols[$(this).attr('data-cur')] ? symbols[$(this).attr('data-cur')] : '');
-        });
-        
-        </script>                                                
-
-        
+        </div>                                               
         {* include file='../includes/main/main-testimonials.tpl'
                 title = "Trusted by Over 10 000 Customers Worldwide"
                 sliders = "false"

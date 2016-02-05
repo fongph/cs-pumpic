@@ -9874,14 +9874,8 @@ $('form[name="send_find_phone"] button.event-submit').click(function(){
     if ($('.buy-form').size()) {
         var symbols = { usd: '$', eur: '€', gbp: '£', cad: '$', aud: '$'};
 
-        $('.buy-form label').click(function(e) {
-            if (e.target.tagName != 'INPUT') {
-                return;
-            }
-
-            var data = $(this).find('input').data();
-            
-            console.log(data);
+        var updateRadio = function(input) {
+            var data = $(input).data();
 
             var $inputs = $('.buy-form').find('input[data-period=' + data.period + '][data-group=' + data.group + ']');
 
@@ -9900,7 +9894,7 @@ $('form[name="send_find_phone"] button.event-submit').click(function(){
             });
 
             if (typeof data.target != 'undefined') {
-                var currentValue = $(this).find('input').attr('data-price-'+data.cur) / Number(data.period);
+                var currentValue = $(input).attr('data-price-'+data.cur) / Number(data.period);
 
                 currentValue = (Math.floor(currentValue * 100) / 100).toFixed(2);
 
@@ -9908,6 +9902,18 @@ $('form[name="send_find_phone"] button.event-submit').click(function(){
                         .prev('div.symbol')
                         .html(symbols[data.cur] ? symbols[data.cur] : '');
             }
+        };
+
+        $('.buy-form input:checked').each(function() {
+            updateRadio(this);
+        });
+
+        $('.buy-form label').click(function(e) {
+            if (e.target.tagName != 'INPUT') {
+                return;
+            }
+            
+            updateRadio($(this).find('input:first'));
         });
     }
 }); 

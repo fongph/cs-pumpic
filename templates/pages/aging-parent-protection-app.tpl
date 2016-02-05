@@ -116,7 +116,7 @@
                                                                     <span></span>
                                                                     <div class="box-currence">
                                                                         <div class="symbol" attr-iso="usd">$</div>
-                                                                        <div class="curr" id="basic-price-per-month">11.65</div>
+                                                                        <div class="curr" id="basic-price-per-month">5.33{*11.33*}</div>
                                                                     </div><span> / month</span>
                                                                 </div>
                                                             </div>
@@ -200,7 +200,7 @@
                                                                     <span></span>
                                                                     <div class="box-currence">
                                                                         <div class="symbol" attr-iso="usd">$</div>
-                                                                        <div class="curr" id="premium-price-per-month">33.33</div>
+                                                                        <div class="curr" id="premium-price-per-month">6.99{*14.66*}</div>
                                                                     </div><span>/ month</span>
                                                                 </div>
                                                             </div>

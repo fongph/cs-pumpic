@@ -183,18 +183,16 @@ if(is_array($user) || !$user ) {
 // if($smarty ->isCached('compatibility.tpl', $cache_id))
 // $compatibility->getCategoriesCount();
 
-$smarty->cache_lifetime = 3600;
-if(!$smarty ->isCached('compatibility.tpl')) {
-    $cat_phones = $compatibility->getCategoryModels();
-    $smarty->assign('phones', $cat_phones, false);
-    //$cats = $compatibility->getCategories();
-    //$smarty->assign('phones', $cats, false);
-    $smarty->assign("cols_cats", 6);
 
-    // domain
-    $smarty->assign('domain', $config['domain']);
-    $smarty->assign('api_device', $config['api_device']);
-}
+$cat_phones = $compatibility->getCategoryModels();
+$smarty->assign('phones', $cat_phones, false);
+//$cats = $compatibility->getCategories();
+//$smarty->assign('phones', $cats, false);
+$smarty->assign("cols_cats", 6);
+
+// domain
+$smarty->assign('domain', $config['domain']);
+$smarty->assign('api_device', $config['api_device']);
 
 // init output params!
 $smarty->assign('getOut', $_result);

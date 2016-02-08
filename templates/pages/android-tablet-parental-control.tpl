@@ -58,21 +58,66 @@
             buttonViewDemo = 'no'
             buttonFreeTrial = 'yes'
         }
-		
+
 {Content 
+    styleTitle="h2"    
+    title="What Parental Control App for Android Tablet Can Do?"
+    blockBg='light'}
+	
+	<p>The time children spend online staring at a tablet grows each year. As reported by The Guardian, surfing the Internet now even dominates over watching the TV, which has always been a favorite ‘toy’ of any kid for fun and entertainment. However, besides spending at least 3 hours a day with their gadgets in hands, children yet to abandon the television and take their time watching it on average 2 hours daily. If you put this figures together, you will see as many as 5 hours every day – the time wasted for doing nothing without any usefulness, but harm. What is the way out, you may wonder?</p>
+	<p>According to Pew Research Center, 39% of parents find the way out in tablets with parental controls. As soon as a monitoring app is installed on your kid’s device, you have an opportunity to keep track of all activities and time on a device. Moreover, reliable parental control software for an Android tablet, and Pumpic is a sound example here, lets you not only watch what your children are doing on their gadgets, but also intervene and set restrictions to prevent what is not allowed.</p>
+        
+        <!-- BLOCK STATISTICK -->
+        <div class="block-statistick row">
+            
+            <div class="item col-s-sm-12 col-xs-sm-12 col-sm-4 col-md-4 col-lg-4">
+                <section>
+                    <div><strong class="fz50 color-orange">3 hours</strong></div>
+                    <span class="text-uppercase">
+                        average 5 – 15 year-old kid spends on the Internet. Do you really want your children to waste so many hours with no purpose? Applying parental control on a tablet lets you limit the time and apps kids are allowed to use.
+                    </span>
+                </section>
+            </div>
+            <div class="item col-s-sm-12 col-xs-sm-12 col-sm-4 col-md-4 col-lg-4">
+                <section>
+                    <div><strong class="fz50 color-orange">51%</strong></div>
+                    <span class="text-uppercase">
+                        parents worried concerning what their kids can be exposed to online. With Android tablet parental controls, you are sure about your child’s Internet activities. You can easily monitor communication and websites visited.
+                    </span>
+                </section>
+            </div>
+            <div class="item col-s-sm-12 col-xs-sm-12 col-sm-4 col-md-4 col-lg-4">
+                <section>
+                    <div><strong class="fz50 color-orange">30 min</strong></div>
+                    <span class="text-uppercase">
+                        children spend reading books for pleasure. Reliable parental control software for android tablets lets you choose activities your kids are engaged in. You can block distractive apps and allow only reading books on a device.
+                    </span>
+                </section>
+            </div>
+            
+        </div>
+        <!-- END -->
+
+        <p>Also consider that the danger children face on the Internet is more than real. Cyberbullies and online predators do exist with kids being exposed to these threats systematically. In some cases, stranger danger even costs kids’ lives. Parenting is not where you can take chances! A careful parent must be sure his or her child is safe and protected. That’s why if handing your little one a mobile device, setting parental controls on his or her Android tablet or smartphone is a necessity.</p>
+		<p>Finding a reliable application on the Internet among tons of software calming to be the best parental control for any Android tablet may be challenging. A good solution is asking your friends for advice (some of them surely use such an app to protect their own children). Another way is looking through reviews of trustworthy web sources.</p>
+		<p>When it comes to Pumpic, it is important to say that more than 10,000 careful parents all over the world trust this particular application. Moreover, it is on the list of TopTenReviews recognized as one of the best parental control apps for your kid’s Android tablet or smartphone. Sure, you can pass on the idea mentioned here. But for the sake of your kids’ security, it is worth giving a try.</p>
+		
+{EndContent}
+		
+		{Content 
     styleTitle="h2"    
     title="How to Secure Children on Android Tablet"
     blockBg='dark'}
 	
-	    <p class="text-center f-light">Android tablets are introduced in plenty of shapes, colors, and brands to fit any taste. Due to a relatively a low price for many of available models, it is Android that your kids are likely to get as their first tablet. That’s why it is so important to consider its safety in children’s hands.</p>
-		<p class="text-center f-light">Before handing your kids a mobile device connected online, make sure you know of its potential risks and can prevent your little ones from facing them. Educate yourself first and teach your children how to behave securely on the Internet. Choose reliable software and learn <a class="a-default" href="http://pumpic.com/security/how-to-set-parental-controls-on-android-tablet/" target="_blanc">how to set parental controls on Android tablet</a> before you allow your kids to use it.</p>
+	    <p class="text-center f-light">Android tablets are introduced in plenty of shapes, colors, and brands to fit any taste. Due to a relatively low price for many of available models, it is Android that your kids are likely to get as their first tablet. That’s why it is so important to consider its safety in children’s hands.</p>
+		<p class="text-center f-light">Before handing your kids a mobile device connected online, make sure you know of its potential risks and can prevent your little ones from facing them. Educate yourself first and teach your children how to behave securely on the Internet. Choose reliable software and learn <a class="a-default" href="http://pumpic.com/security/how-to-set-parental-controls-on-android-tablet/" target="_blanc">how to set parental controls on an Android tablet</a> before you allow your kids to use it.</p>
         <!-- BLOCK STATISTICK -->
         {*<div class="block-statistick row">
             
             <div class="item col-s-sm-12 col-xs-sm-12 col-sm-4 col-md-4 col-lg-4 border-none">
                 <section>
                     <div class='pb20'><strong class="fz50 color-orange">Built-In Restrictions</strong></div>
-                    <p>Unfortunately, Android has no onboard parental control options to provide comprehensive protection for children. The one and only alternative is setting restrictions on Google Play to prevent your kids from downloading inappropriate games, movies, books, music, and other apps officially. Luckily, you can avert downloading from the Play store as well as by using a direct browser link. However, note that Android OS is flexible enough, which allows installing unauthorized content bypassing parental restrictions.</p>
+                    <p>Unfortunately, Android has no onboard parental control options to provide comprehensive protection for children. The one and only alternative is setting restrictions on Google Play to prevent your kids from downloading inappropriate games, movies, books, music, and other apps officially. Luckily, you can avert downloading from the Play store simply by using a direct browser link. However, note that Android OS is flexible enough, which allows installing unauthorized content bypassing parental restrictions.</p>
 				</section>
             </div>
             <div class="item col-s-sm-12 col-xs-sm-12 col-sm-4 col-md-4 col-lg-4 border-none">
@@ -94,7 +139,7 @@
                 <td class="item col-s-sm-12 col-xs-sm-12 col-sm-12 col-md-4 col-lg-4 border-none">
                     <section>
                         <div class='pb20'><strong class="fz50 color-orange">Built-In Restrictions</strong></div>
-                        <p>Unfortunately, Android has no onboard parental control options to provide comprehensive protection for children. The one and only alternative is setting restrictions on Google Play to prevent your kids from downloading inappropriate games, movies, books, music, and other apps officially. Luckily, you can avert downloading from the Play store as well as by using a direct browser link. However, note that Android OS is flexible enough, which allows installing unauthorized content bypassing parental restrictions.</p>
+                        <p>Unfortunately, Android has no onboard parental control options to provide comprehensive protection for children. The one and only alternative is setting restrictions on Google Play to prevent your kids from downloading inappropriate games, movies, books, music, and other apps officially. Luckily, you can avert downloading from the Play store simply by using a direct browser link. However, note that Android OS is flexible enough, which allows installing unauthorized content bypassing parental restrictions.</p>
                     </section>
                 </td>
                 <td class="item col-s-sm-12 col-xs-sm-12 col-sm-12 col-md-4 col-lg-4 border-none vertical-aligh-bottom text-center">
@@ -160,18 +205,7 @@
         blockBg="dark"
         } 
         
-        {include file='../includes/content/ipad.tpl' 
-                blockBg="light"
-                bgTab = "bgIOS"
-                imgUrl = "parental_control/ipad.png"
-                imgAlt = "Android"
-                title = "Control Panel Is Easy to Use"
-		description = "The data tracked by Pumpic on your kids’ Android tablet is sent directly to your Control Panel, where you can view it. To access the Control Panel, you can use any device including desktop computers, laptops, smartphones, and tablets. In addition to data monitoring, the app allows you to control the target Android tablet and manipulate its activities remotely."
-                textAlign = "left"
-        }
-        {* imgUrl = "icons/ipad_android.png" *}
-        
-        <div class="dark">
+        <div class="light">
     <div class="container">
             <h2 class="text-center testimonial-title">Trusted by Over 10 000 Customers Worldwide:</h2>
             <div class="row">
@@ -184,14 +218,14 @@
                             <img src="{$img}/testimonials/andrea-l-16.png" alt="" class="testimonial-photo">
                             <div class="testimonial-text">
                                     <h4>Andrea L. – mother of 16-year-old son</h4>
-                                    <p>“I learned about Pumpic from a review of best parental control apps for Android tablet. I liked its benefits among other similar applications and decided to try it to secure my own son. He is 16 and this age I suppose is the most dangerous for teens. Pumpic works great. It lets me view all activities on his device and control him remotely. I know where he goes and where he currently is. I can check if he tells me the truth when I ask him questions on his time spending. Which is great too.”</p>
+                                    <p>“I learned about Pumpic from a review of best parental control apps for an Android tablet. I liked its benefits among other similar applications and decided to try it to secure my own son. He is 16 and this age I suppose is the most dangerous for teens. Pumpic works great. It lets me view all activities on his device and control him remotely. I know where he goes and where he currently is. I can check if he tells me the truth when I ask him questions on his time spending. Which is great too.”</p>
                             </div>
                     </div>
                     <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
                             <img src="{$img}/testimonials/martin-s-12.png" alt="" class="testimonial-photo">
                             <div class="testimonial-text">
                                     <h4>Martin S. – father of 12-year-old daughter</h4>
-                                    <p>“I use Pumpic to prevent my little daughter from restricted videos, photos and other content she may come across on the Internet. There are so many things children shouldn’t see and Pumpic shows good results in limiting her access to all this mess. I can block links to 18+ sources, inappropriate games and so on. Also I can control her screen time and prevent her from wasting time on playing games. Very sound solution for careful parents.”</p>
+                                    <p>“I use Pumpic to prevent my little daughter from restricted videos, photos and other content she may come across on the Internet. There are so many things children shouldn’t see and Pumpic shows good results in limiting her access to all this mess. I can block links to 18+ sources, inappropriate games and so on. Also I can control her screen time and prevent her from wasting time on playing games. Very good solution for careful parents.”</p>
                             </div>
                     </div>
                     <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
@@ -210,17 +244,15 @@
     </div>
 </div> 
         
-        {include file='../includes/content/how-get-pumpic.tpl'
-            blockBg="light"
-        } 
 
+		{include file='../includes/content/banners/index.tpl'}
+		
         {include file='../includes/main/main-quick-link.tpl' 
-            blockBg="dark"
+            blockBg="light"
         }        
         
         {*{include file='../includes/content/banners/banner-promo-trial.tpl'}*}
         
-        {include file='../includes/content/banners/index.tpl'}
         <!-- END CONTENT -->    
            
         <!-- RECOMMENDED -->

@@ -3,6 +3,7 @@ $_inc = dirname(__FILE__); // includes
 $b_dir = dirname( $_inc ); // folder sites directory
 
 require_once $_inc.'/config.php';
+require_once $_inc.'/lib/Currency.php';
 require_once $_inc.'/lib/users/Order.php';
 $obj = new includes\lib\users\Order;
 
@@ -10,7 +11,8 @@ $obj = new includes\lib\users\Order;
 require_once 'smarty.config.php';
 
 /* list order */
-$products = $obj ->getProducts();
+$products = $obj ->getProducts('first');
+
 $_sortingProducts = array('basic' => array(), 'premium' => array());
 if(is_array($products)) {
     // Basic
@@ -22,7 +24,6 @@ if(is_array($products)) {
         $_sortingProducts['premium'] = $obj -> _arsort( $products['premium'] );
     }
 }
-    
 
 /* form_order */
 $_request = (isset($_POST['price']) and !empty($_POST['price'])) ? $_POST['price']: false;
@@ -31,6 +32,7 @@ if($_request['productID']) {
 
     if($_request['productID'] and $obj -> getUserIdByAuth()) {
         // $_order ->unsetSession('pumpic_order'); // clear session
+        
         $_url = $obj -> createOrder((int)$_request['productID']);
         if($_url) {
             $obj -> _redirect( $_url );
@@ -42,6 +44,29 @@ if($_request['productID']) {
     }
 
 }
+
+// default
+if(is_array($products)) { 
+    // Basic
+    if(isset($products['basic'])) {
+        foreach($products['basic'] as $item) :
+            if($item['period'] == 12 && $item['id']) $smarty->assign('getDefaultBasic', $item['id']);
+        endforeach;
+    }
+    // Premium
+    if(isset($products['premium'])) {
+        foreach($products['premium'] as $item) :
+            if($item['period'] == 12 && $item['id']) $smarty->assign('getDefaultPremium', $item['id']);
+        endforeach;
+    }
+}
+
+// currency
+$_curr = system\Currency::getInstance();
+$_curr -> setFilter( ['iso' => ['USD','EUR','GBP','CAD','AUD'] ] );
+$_rates = $_curr -> getCurrencies();
+
+$smarty->assign('rates', json_encode($_rates));
 
 // init output params!
 $smarty->assign('getProducts', $_sortingProducts);

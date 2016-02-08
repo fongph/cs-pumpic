@@ -163,6 +163,7 @@ description="Enjoy Pumpic mobile monitoring app on iPhones, iPads and iPods Touc
                                                                 <div class="item-plan table-column col-xs-sm-4 col-sm-4 col-md-4 col-lg-4 vertical-aligh-middle">
                                                                     <i class="i-price-plans-big-premium"></i>
                                                                 </div>
+<<<<<<< HEAD
                                                                 <div class="item-plan table-column col-xs-sm-8 col-sm-8 col-md-8 col-lg-8">
                                                                     <p class="full">Buy <strong class="text-red">6</strong> or <strong class="text-red">12</strong> month plan
                                                                         and <strong class="text-red">get 2 plans for free</strong></p>
@@ -185,6 +186,48 @@ description="Enjoy Pumpic mobile monitoring app on iPhones, iPads and iPods Touc
                                                                                data-price-usd="{$_item.price}" data-period="{$_item.period}" name="optionsRadios" id="optionsRadios{$_item.id}1"
                                                                                value="{$_item.id}" type="radio"
                                                                                 {if $_item.period == '12'} checked="checked" {/if} />
+=======
+                                                                <div class="wr_price_big">
+                                                                    <span></span>
+                                                                    <div class="box-currence">
+                                                                        <div class="symbol" attr-iso="usd">$</div>
+                                                                        <div class="curr" id="premium-price-per-month">33.33</div>
+                                                                    </div><span> / month</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                       
+                                                        <div id="list-plans-premium-package" class="box-plans-package">
+                                                           <section class="full"> 
+
+                                                            <div class="list-plans box-table">
+                                                                <div class="table-rows">
+                                                                    <div class="item-plan table-column col-xs-sm-4 col-sm-4 col-md-4 col-lg-4 vertical-aligh-middle">
+                                                                        <i class="i-price-plans-big-premium"></i>
+                                                                    </div>
+                                                                    <div class="item-plan table-column col-xs-sm-8 col-sm-8 col-md-8 col-lg-8">
+                                                                        <p class="full">Buy <strong class="text-red">6</strong> or <strong class="text-red">12</strong> month plan 
+                                                                           and <strong class="text-red">get 2 plans for free</strong></p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>  
+
+                                                           </section>        
+                                                        </div>         
+                                                                 
+                                                        <div class="list_price">
+                                                            <form name="price_premium" method="POST" action="/buy.html" class="buy-form" autocomplete="off">
+                                                                <input id='product_price_premium' type='hidden' name='price[productID]' value='{if isset($getDefaultPremium)}{$getDefaultPremium}{else}0{/if}' class="product_price" />
+                                                
+                                                                <ul>
+                                                                    {foreach from=$getProducts.premium key=key item=_item}
+                                                                    <li class="">
+                                                                        <label class="label_radio hover_label_radio r_off">
+                                                                            <input class="data-price" data-target="#premium-price-per-month" data-cur="usd" 
+                                                                                   data-price-usd="{$_item.price}" data-period="{$_item.period}" data-group="premium" name="optionsRadios" id="optionsRadios{$_item.id}1" 
+                                                                                   value="{$_item.id}" type="radio"  
+                                                                                   {if $_item.period == '12'} checked="checked" {/if} />
+>>>>>>> 4e52a99952d47908110d02705eef8f5b8637d62e
                                                                             <span class="sp">
                                                                                 <strong>
                                                                                     {$_item.period}
@@ -327,6 +370,7 @@ description="Enjoy Pumpic mobile monitoring app on iPhones, iPads and iPods Touc
                                                 <div class="fulfill-link">
                                                     <span class="store-full-link"><a href="http://pumpic.com/policy.html#refund-policy">if you fulfill these rules <i class="icon-angle-double-right"></i></a></span>
                                                 </div>
+<<<<<<< HEAD
                                             </div>
                                         </div>
                                         <div class="table_header text-transform-none text-center">
@@ -372,6 +416,16 @@ description="Enjoy Pumpic mobile monitoring app on iPhones, iPads and iPods Touc
 
                             </script>
 
+=======
+                                            </th>
+                                        </tr>
+                                        
+                                        
+                                    </thead>
+                                </table>
+
+                            </div>
+>>>>>>> 4e52a99952d47908110d02705eef8f5b8637d62e
                         </div>
                     </div>
                 </div>

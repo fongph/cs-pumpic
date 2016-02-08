@@ -57,19 +57,14 @@ $config = array(
 				'free-trial.html'  => 'free_trial_registration.php',
 
 				'restore.html'  => 'restore.php',
-
-			// pricing
-			// 'store.html'  => 'pricing2.php', // old
-				'store-trial.html'  => 'store-trial.php',
 				'store-test.html'  => 'store-test.php',
 
-				'store.html'  => 'apps-store.php',
+				'store.html'  => 'store.php',
 				'aging-parent-protection-app.html' => 'aging-parent-protection-app.php',
 				'iphone-tracking-software.html'   => 'iphone_tracking_software.php',
 				'iphone-with-jailbreak-monitoring.html' => 'iphone_with_jailbreak_monitoring.php',
 				'icloud-iphone-without-jailbreak-monitoring.html' => 'icloud_iphone_without_jailbreak_monitoring.php',
 
-			//'pricing2.html'  => 'pricing2.php',
 			// opening-soon-thanks.html
 				'opening-soon-thanks.html' => 'opening-soon-thanks.php',
 			// detected rtegion

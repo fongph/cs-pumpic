@@ -122,7 +122,7 @@
                                                                 <img src="{$img}/basic_pack.png">
                                                             </div>
                                                             <div class="wr_price_big">
-                                                                <span></span><div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr" id="basic-price-per-month">11.65</div></div><span> / month</span>
+                                                                <span></span><div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr" id="basic-price-per-month">{$defaultBasicPrice}</div></div><span> / month</span>
                                                             </div>
                                                             
                                                             <div id="list-plans-basic-package" class="box-plans-package mt15">
@@ -145,10 +145,10 @@
                                                             
                                                             <div class="list_price">
                                                             <form name="price_basic" method="POST" action="/buy.html" class="buy-form" autocomplete="off">
-                                                                <input id='product_price_basic' type='hidden' name='price[productID]' value='{if isset($getDefaultBasic)}{$getDefaultBasic}{else}0{/if}' class="product_price" />
+                                                                <input id='product_price_basic' type='hidden' name='price[productID]' value="{$defaultPremiumProduct}" class="product_price" />
                                                                 <ul>
                                                                     {foreach from=$getProducts.basic key=key item=_item}
-                                                                    <li class= "">
+                                                                    <li>
                                                                         <label class="label_radio hover_label_radio {if $_item.period == '12'}r_on{else}r_off{/if}"><input class="data-price" data-target="#basic-price-per-month" data-cur="usd" data-price-usd="{$_item.price}" data-period="{$_item.period}" data-group="basic" name="optionsRadios" id="optionsRadios{$_item.id}1"
                                                                         value="{$_item.id}" type="radio" 
                                                                         {if $_item.period == '12'} checked="checked" {/if}
@@ -229,7 +229,7 @@
                                                             
                                                             
                                                             <form name="price_basic_bottom" method="POST" action="/buy.html" class="buy-form" autocomplete="off">
-                                                                <input id='product_price_basic' type='hidden' name='price[productID]' value='{if isset($getDefaultBasic)}{$getDefaultBasic}{else}0{/if}' class="product_price" />
+                                                                <input id='product_price_basic' type='hidden' name='price[productID]' value="{$defaultBasicProduct}" class="product_price" />
                                                                 
                                                                 <ul>
                                                                     {foreach from=$getProducts.basic key=key item=_item}
@@ -278,7 +278,7 @@
                                                                 <img src="{$img}/premium_pack.png">
                                                             </div>
                                                             <div class="wr_price_big">
-                                                                <span></span><div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr" id="premium-price-per-month">33.33</div></div><span>/ month</span>
+                                                                <span></span><div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr" id="premium-price-per-month">{$defaultPremiumPrice}</div></div><span>/ month</span>
                                                             </div>
                                                             
                                                             

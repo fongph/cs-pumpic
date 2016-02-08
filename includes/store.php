@@ -50,13 +50,19 @@ if(is_array($products)) {
     // Basic
     if(isset($products['basic'])) {
         foreach($products['basic'] as $item) :
-            if($item['period'] == 12 && $item['id']) $smarty->assign('getDefaultBasic', $item['id']);
+            if ($item['period'] == 12 && $item['id']) {
+                $smarty->assign('defaultBasicProduct', $item['id']);
+                $smarty->assign('defaultBasicPrice', round($item['price'] / $item['period'], 2));
+            }
         endforeach;
     }
     // Premium
     if(isset($products['premium'])) {
         foreach($products['premium'] as $item) :
-            if($item['period'] == 12 && $item['id']) $smarty->assign('getDefaultPremium', $item['id']);
+            if ($item['period'] == 12 && $item['id']) {
+                $smarty->assign('defaultPremiumProduct', $item['id']);
+                $smarty->assign('defaultPremiumPrice', round($item['price'] / $item['period'], 2));
+            }
         endforeach;
     }
 }

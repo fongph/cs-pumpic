@@ -22,9 +22,7 @@
             cache_id = "includes_main_main-top-menu"
             nocache
         }
-        
-
-        
+         
         {*
             Template: PHONE
             Переменные:
@@ -42,7 +40,7 @@
             imgVerticalAlign = "bottom"
             textAlign = "right"
             title = "Apple Monitoring App<br>iCloud Solution"
-            description = "Enjoy multitask tracking without Jailbreak.<br/>Control iPhone use. Follow communication and online activity."
+            description = "Reliable tracking with no jailbreak nor physical access required.<br/>Control iPhone use. Follow communication and online activities."
                          
             promoBuyBlock = "no"
             iCloudSolution = 'no'
@@ -77,39 +75,6 @@
             </div>
         </div>
         <!-- END ICLOUD SOLUTION -->
-		
-{Content 
-    styleTitle=""
-    title=""
-    blockBg='dark'}
-    
-    <div id="grid-images" class="row">
-        <div class="col-lg-12 col-md-12 col-sm-12">
-            <h2 class="h3 text-left">What Benefits iCloud Solution Over Jailbreak</h3>
-            <div class="pt30 pb20">
-                <img class="img-align-right" alt="Best Free Parental Controls for Android' Location" src="{$img}/landings/free-android-parental-controls/screenshot4.png" width="207px" height="208px" />
-                <img class="app-icon-left" src="{$img}/landings/free-android-parental-controls/Kids-Place.png" alt="">
-			<p>Apple iCloud tracking allows you to monitor your children on iPhones, iPads, and iPods Touch without jailbreaking their gadgets. Moreover, iCloud parental control doesn’t require any physical access, which means that you don’t need to take the target device in hands and install the app on it to start monitoring. All the tracked information is gathered via the iCloud backup and sent directly to your Control Panel.</p>
-			<p>The iCloud mobile tracker is an option provided by Pumpic as a part of the Premium subscription plan. It lets you monitor 11 activities with even more opportunities to come soon. This feature allows seeing text messages saved on iCloud. Thus, you can view SMS, MMS, and iMessages you children send or receive to prevent them from misgiving communication and cyberbullying, using bad words, and sexting.</p>
-			<p>By monitoring call logs, which is also possible with the iCloud Solution, you can see who calls your children as well as whom they call, at what time, and for how long each conversation lasts. Pumpic iCloud tracking logs history of browsing and bookmarks allowing parents to control kids’ Internet activities.</p>
-			<p>iCloud GPS tracking is also a big advantage. At any time, you can request your kid’s location and find out his or her whereabouts pinpointed accurately on the map. With Pumpic iCloud location tracking, you will always know where your children go and be able to prevent them from visiting places you don’t approve.</p>
-			<p>And even more! You can control Skype and WhatsApp communication endangering children to cyberbullying and online predator attacks. Among iCloud Solution features, you will also find monitoring Calendar, Contacts, Notes, and Photos, which completes the picture of your children’s mobile behavior and safety to the fullest.</p>
-			<p>To perform iCloud tracking of your kid’s device the following requirements must be satisfied:</p>
-			<ul class="list-images">
-			   <li><img src="{$img}/landings/mark.png" alt="Check Mark" class="lc-1" />you must know the iCloud login and password;</li>
-               <li><img src="{$img}/landings/mark.png" alt="Check Mark" class="lc-1" />backup must be enabled on the target device.</li>
-			</ul>
-			<p>For information to be successfully uploaded to your Control Panel, the backup must be performed under the following conditions:</p>
-			<ul class="list-images">
-			   <li><img src="{$img}/landings/mark.png" alt="Check Mark" class="lc-1" />the target device is connected to Wi-Fi;</li>
-               <li><img src="{$img}/landings/mark.png" alt="Check Mark" class="lc-1" />it is connected to the power source (charging);</li>
-			   <li><img src="{$img}/landings/mark.png" alt="Check Mark" class="lc-1" />the screen is locked on the target device. </li>
-			</ul>
-			<p>Pumpic iCloud Solution provides great opportunities for you to monitor and protect your children even if you don’t want to puzzle out how to jailbreak an iOS device, which is needed for all multifeature parental control applications.</p>
-            </div>
-        </div>
-    </div>    
-{EndContent}
         
         <!-- BLOCK HOW IT WORK -->
         <div class="b-how-it-work light">
@@ -120,7 +85,7 @@
                         <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
                             <h3 class="weight-normal"><i class="icons icon-buy"></i>  Buy</h3>
                             <p>
-                                iCloud solution is available with <b>Premium subscription</b> only.
+                                iCloud solution is available with the <b>Premium subscription</b> only.
                             </p>
                             <p>
                                Soon after submitting the payment, you will receive <b>an email</b>. 
@@ -129,7 +94,7 @@
                         <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
                             <h3 class="weight-normal"><i class="icons icon-install"></i>Install</h3>
                             <p>
-                                Follow the guidelines from the email and fill in <b>iCloud login</b> and <b>password</b> of the target device. 
+                                Follow the guidelines from the email and fill in the <b>iCloud login</b> and <b>password</b> of the target device. 
                             </p>
                             <p>
                                 Note that physical access may be required to change device settings (turn iCloud Backup on).
@@ -141,7 +106,7 @@
                                 Enter your <b>Control Panel</b> to monitor the data from the target device.
                             </p>
                             <p>
-                                Use any browser, any computer or mobile gadget to get the access to your Control Panel.
+                                Use any browser, any computer, or mobile gadget to get access to your Control Panel.
                             </p>
                         </div>
                     </div>
@@ -415,6 +380,39 @@
             <!-- block upgrade include-->
         </div>
         <!-- END BLOCK PRICE AND FEATURES -->
+		
+{Content 
+    styleTitle=""
+    title=""
+    blockBg='dark'}
+    
+    <div id="grid-images" class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+            <h2 class="h3 text-left">What Benefits iCloud Solution Over Jailbreak</h3>
+            <div class="pt30 pb20">
+                <img class="img-align-right" alt="Best Free Parental Controls for Android' Location" src="{$img}/landings/icloud-iphone-without-jailbreak-monitoring.png" width="207px" height="208px" />
+                <img class="app-icon-left" src="{$img}/landings/icon-icloud-iphone-without-jailbreak-monitoring.png" alt="">
+			<p>Apple iCloud tracking allows you to monitor your children on iPhones, iPads, and iPods Touch without jailbreaking their gadgets. Moreover, iCloud parental control doesn’t require any physical access, which means that you don’t need to take the target device in hands and install the app on it to start monitoring. All the tracked information is gathered via the iCloud backup and sent directly to your Control Panel.</p>
+			<p>The iCloud mobile tracker is an option provided by Pumpic as a part of the Premium subscription plan. It lets you monitor 11 activities with even more opportunities to come soon. This feature allows seeing text messages saved on iCloud. Thus, you can view SMS, MMS, and iMessages you children send or receive to prevent them from misgiving communication and cyberbullying, using bad words, and sexting.</p>
+			<p>By monitoring call logs, which is also possible with the iCloud Solution, you can see who calls your children as well as whom they call, at what time, and for how long each conversation lasts. Pumpic iCloud tracking logs history of browsing and bookmarks allowing parents to control kids’ Internet activities.</p>
+			<p>iCloud GPS tracking is also a big advantage. At any time, you can request your kid’s location and find out his or her whereabouts pinpointed accurately on the map. With Pumpic iCloud location tracking, you will always know where your children go and be able to prevent them from visiting places you don’t approve.</p>
+			<p>And even more! You can control Skype and WhatsApp communication endangering children to cyberbullying and online predator attacks. Among iCloud Solution features, you will also find monitoring Calendar, Contacts, Notes, and Photos, which completes the picture of your children’s mobile behavior and safety to the fullest.</p>
+			<p>To perform iCloud tracking of your kid’s device the following requirements must be satisfied:</p>
+			<ul class="list-images">
+			   <li><img src="{$img}/landings/mark.png" alt="Check Mark" class="lc-1" />you must know the iCloud login and password;</li>
+               <li><img src="{$img}/landings/mark.png" alt="Check Mark" class="lc-1" />backup must be enabled on the target device.</li>
+			</ul>
+			<p>For information to be successfully uploaded to your Control Panel, the backup must be performed under the following conditions:</p>
+			<ul class="list-images">
+			   <li><img src="{$img}/landings/mark.png" alt="Check Mark" class="lc-1" />the target device is connected to Wi-Fi;</li>
+               <li><img src="{$img}/landings/mark.png" alt="Check Mark" class="lc-1" />it is connected to the power source (charging);</li>
+			   <li><img src="{$img}/landings/mark.png" alt="Check Mark" class="lc-1" />the screen of the target device is locked. </li>
+			</ul>
+			<p>Pumpic iCloud Solution provides great opportunities for you to monitor and protect your children even if you don’t want to puzzle out how to jailbreak an iOS device, which is needed for all multifeature parental control applications.</p>
+            </div>
+        </div>
+    </div>    
+{EndContent}
         
         {*include file='../includes/main/main-testimonials.tpl'
                 title = "Trusted by Over 10 000 Customers Worldwide"

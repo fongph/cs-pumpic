@@ -85,7 +85,7 @@
 										<li>The target device has been reset to the original factory settings or Pumpic app has been removed from the target device.</li>
 										<li>A customer did not follow the installation guidelines provided by our customer support, which resulted in the failure to install the app.</li>
 										<li>A customer does not have physical access to the target device or Apple ID and the password for iCloud account of the target device (in case of using iCloud monitoring solution).</li>
-                                                                                <li>A client uses iCloud solution and refuses to check backup settings or perform a backup manually.</li>
+                                                                                <li>A client uses iCloud solution and is unable to check backup settings or perform a backup manually.</li>
                                                                                 <li>A customer purchased the iCloud solution subscription, but intended to monitor activities beyond the provided jailbreak-free feature list (Text Messages, Calls, Browsing History, Bookmarks, Location, Calendar, Contacts, Photos, Notes, Skype, WhatsApp).</li>
                                                                                 <li>A client intended to use iCloud solution for monitoring the data that had been deleted from the target device before a backup was performed.</li>
                                                                                 <li>A customer didn’t know the app is visible to the user of the target phone.</li>

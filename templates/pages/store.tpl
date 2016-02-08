@@ -432,6 +432,7 @@
                                 <div class="link_circle_italic2">
                                     <div class="style-links2">
                                         <span class="circle_ico2"></span>You need to have physical access to the target device or iCloud password to install the application.
+                                        <br>Physical access might be required for iCloud monitoring solution to check iCloud or backup settings & perform a backup manually.
                                     </div>
                                 </div>
                             </div>

@@ -399,14 +399,14 @@
 			<p>And even more! You can control Skype and WhatsApp communication endangering children to cyberbullying and online predator attacks. Among iCloud Solution features, you will also find monitoring Calendar, Contacts, Notes, and Photos, which completes the picture of your children’s mobile behavior and safety to the fullest.</p>
 			<p>To perform iCloud tracking of your kid’s device the following requirements must be satisfied:</p>
 			<ul class="list-images">
-			   <li><img src="{$img}/landings/mark.png" alt="Check Mark" class="lc-1" />you must know the iCloud login and password;</li>
-               <li><img src="{$img}/landings/mark.png" alt="Check Mark" class="lc-1" />backup must be enabled on the target device.</li>
+			   <li><img src="{$img}/landings/mark.png" alt="Check Mark" class="lc-1" style="left: -29px; height: auto; width: auto; background-size: contain;" />you must know the iCloud login and password;</li>
+               <li><img src="{$img}/landings/mark.png" alt="Check Mark" class="lc-1" style="left: -29px; height: auto; width: auto; background-size: contain;"/>backup must be enabled on the target device.</li>
 			</ul>
 			<p>For information to be successfully uploaded to your Control Panel, the backup must be performed under the following conditions:</p>
 			<ul class="list-images">
-			   <li><img src="{$img}/landings/mark.png" alt="Check Mark" class="lc-1" />the target device is connected to Wi-Fi;</li>
-               <li><img src="{$img}/landings/mark.png" alt="Check Mark" class="lc-1" />it is connected to the power source (charging);</li>
-			   <li><img src="{$img}/landings/mark.png" alt="Check Mark" class="lc-1" />the screen of the target device is locked. </li>
+			   <li><img src="{$img}/landings/mark.png" alt="Check Mark" class="lc-1" style="left: -29px; height: auto; width: auto; background-size: contain;" />the target device is connected to Wi-Fi;</li>
+               <li><img src="{$img}/landings/mark.png" alt="Check Mark" class="lc-1" style="left: -29px; height: auto; width: auto; background-size: contain;" />it is connected to the power source (charging);</li>
+			   <li><img src="{$img}/landings/mark.png" alt="Check Mark" class="lc-1" style="left: -29px; height: auto; width: auto; background-size: contain;" />the screen of the target device is locked. </li>
 			</ul>
 			<p>Pumpic iCloud Solution provides great opportunities for you to monitor and protect your children even if you don’t want to puzzle out how to jailbreak an iOS device, which is needed for all multifeature parental control applications.</p>
             </div>

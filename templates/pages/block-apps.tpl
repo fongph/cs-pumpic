@@ -1,6 +1,6 @@
 {include file='../includes/main/main-header.tpl'
     robots="yes" 
-    title="Block Apps, Limit Screen Time on Child's Device | Pumpic"
+    title="Block Apps, Limit Screen Time on Android and iOS Mobile Devices | Pumpic"
     description="Set screen time limits or block apps on child's cell phone or tablet with Pumpic. Get reliable parental time control software to block apps on Android and iPhone."
     customeStyle="
         .block-child-location-tracking .ipad-text {
@@ -113,8 +113,55 @@
         </div>
     </div>    
 {EndContent}
+
+{Content 
+    styleTitle="h2"    
+    title="Block Apps on Android & iPhone: Ways and Alternatives"
+    blockBg='light'}
+	
+	<img class="app-icon-left" src="{$img}/landings/block-apps.png" alt="">
+	<p>It does not really matter how kind or strict you are as a parent. Kids today can get uncontrollable. This applies especially to mobile device usage. Statistics show that an average teen spends about 3 hours a day staring at the phone or tablet screen. Add here couple hours watching TV and you will get a good part of a day wasted. What can you do to change the situation and push kids' energy towards a useful direction? First of all, reconsider allowed screen time limits.</p>
+	<p>As mentioned, teens get uncontrollable sometimes. It is called awkward age for a reason. And mistakes kids make are believed to be a normal part of growing up. But having outbreaks from time to time and being 24/7 on their phones are two different things. And responsible parents would not let anything bad happen to a kid, even if the limiting and upbringing process might seem rough.</p>
+	<p>What kind of apps does a good control over require? The first reason would be so-called vault apps. These mimic everyday phone tools, which is a secret of their popularity. With a secret password kids can open a secret folder. Most of the time such folders are not used for keeping a personal diary. With several big school scandals that involved such vault apps parents have been more attentive to all the applications that are installed on kids’ phones.</p>
+	<p>Another reason for a stricter apps control is paid in-app content. App Store and Google Play are full of freemium apps. Children can download and even use them for free, which is a good thing. However, they also offer special features and opportunities once you pay a dime or two. Thus, for games you get new characters or extra coins that provide bonuses. Restricting apps on iPhone and Android helps parents save their credit cards from charges made by another Candy Crush app.</p>
         
-<div class="light">
+        <!-- BLOCK STATISTICK -->
+        <div class="block-statistick row">
+            
+            <div class="item col-s-sm-12 col-xs-sm-12 col-sm-4 col-md-4 col-lg-4">
+                <section>
+                    <div><strong class="fz50 color-orange">84%</strong></div>
+                    <span class="text-uppercase">
+                        teenagers go online using smartphones and other mobile devices. Choosing a proper parental control you are sure your kid is not exposed to anything inappropriate online.
+                    </span>
+                </section>
+            </div>
+			<div class="item col-s-sm-12 col-xs-sm-12 col-sm-4 col-md-4 col-lg-4">
+                <section>
+                    <div><strong class="fz50 color-orange">46%</strong></div>
+                    <span class="text-uppercase">
+                        parents limit kids’ time on the Internet due to various reasons. App blocking and limiting is easier with high-quality parental control apps.
+                    </span>
+                </section>
+            </div>
+			<div class="item col-s-sm-12 col-xs-sm-12 col-sm-4 col-md-4 col-lg-4">
+                <section>
+                    <div><strong class="fz50 color-orange">72%</strong></div>
+                    <span class="text-uppercase">
+                        teenagers go online using smartphones and other mobile devices. Choosing a proper parental control you are sure your kid is not exposed to anything inappropriate online.
+                    </span>
+                </section>
+            </div>
+            
+        </div>
+        <!-- END -->
+
+        <p>If you look closer at iPhones and Androids, you will see that built-in parental controls for these two OS are implemented in a different way. As known, iPhones have better pre-installed features that include Family Sharing. But when it comes to broadening the features with control apps, you might come across troubles. Android is an opposite – it does not offer extra good controls at the standard package, but a <a class="a-default" href="/android-parental-monitoring.html" >reliable parental app</a> like Pumpic saves the day.</p>
+		<p>One of the best choices to block apps on Android and iPhone is using a trusted parental control application. Such choice is the Pumpic app that has been on the market for a long time. It offers plenty of features that every parent can use to their liking. With Pumpic, you can keep an eye on all the applications installed on your kid’s phone. Blocking and setting time limits for apps would help controlling screen time easily as ABC.</p>
+		
+{EndContent}
+        
+<div class="dark">
         <div class="container">
                 <h2 class="text-center">How Pumpic Secures Your Kids</h2>
                 <div class="row">
@@ -158,17 +205,8 @@
         {include file='../includes/content/features-table.tpl'
         title = "Pumpic Provides Many Useful Features"
         description = "In addition to restricting apps on iPhone, iPad, iPod Touch, and Android devices, Pumpic allows monitoring all daily activities and Internet use. The app offers accurate location tracking and remote control of the target device. More than 24 features ensure reliable protection for all of life emergencies."
-        blockBg="dark"
+        blockBg="light"
         } 
-        
-        {include file='../includes/content/ipad.tpl' 
-                blockBg="light"
-                imgUrl = "parental_control/ipad.png"
-                imgAlt = "Apple iOS. iPad"
-                title = "Use Control Panel Easily"
-				description = "Install the Pumpic app to limit screen time and control many other activities on your kid’s device. Enter your Control Panel to view all the tracked information. You can log in on desktop computers, laptops, smartphones, and tablets. In your Control Panel, you will be able to not only check the information, but manipulate the target device remotely as well."
-                textAlign = "left"
-        }
         
         {* description = "Install the iPad parental control app on your kid’s tablet and start monitoring right away. Log in to your Control Panel and view all the information from the target device. It can be accessed from anywhere including desktop computers, laptops, smartphones, and tablets. In addition to data monitoring, the Control Panel allows you to set limits, block tablet activities, and lock the target device permanently."             
         *}
@@ -212,13 +250,14 @@
     </div>
 </div>
 
-        {include file='../includes/main/main-quick-link.tpl' 
+        {include file='../includes/content/banners/index.tpl'}
+        
+		{include file='../includes/main/main-quick-link.tpl' 
             blockBg="light"
         }        
         
         {*{include file='../includes/content/banners/banner-promo-trial.tpl'}*}
         
-        {include file='../includes/content/banners/index.tpl'}
         <!-- END CONTENT -->    
            
         <!-- RECOMMENDED -->

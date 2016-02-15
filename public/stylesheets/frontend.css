@@ -16146,6 +16146,38 @@ overflow: visible;
     font-weight: 600;
     margin-bottom: 0;
 }
+
+.spy-items{
+    display: inline-block;
+    padding: 10px 30px;
+    min-height: 200px;
+    height: 100%;
+}
+
+.spy-sections .item:nth-child(2){
+    border: none;
+}
+
+.spy-sections .item:first-child{
+    border-right: 1px solid #ccc;
+}
+
+.spy-sections .item:last-child{
+    border-left: 1px solid #ccc;
+}
+
+@media (max-width: 769px){
+    .spy-sections .item:last-child{
+        border-left: none
+    }
+
+    .spy-sections .item:first-child{
+        border-right:none
+    }
+
+
+}
+
 .border-top-bottom {
     border-color: #e8e8e8 !important;
     border-style: solid !important;

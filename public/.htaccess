@@ -135,6 +135,7 @@ RewriteRule ^(.*)$ http://pumpic.com/$1 [NC,R=301,L]
 RewriteRule ^compatibility/Samsung\-N7100\-Galaxy\-Note\-II/$ compatibility/Samsung\-Galaxy\-Note\-2/ [L,R=301]
 RewriteRule ^compatibility/Motorola\-XT701/$ compatibility/ [L,R=301]
 RewriteRule ^compatibility/HTC\-Aria\-Liberty/$ compatibility/ [L,R=301]
+RewriteRule ^compatibility/samsung\-i9300\-galaxy\-s\-iii\-\(s3\)/$ compatibility/samsung-galaxy-s3/ [L,R=301]
 
 RewriteRule ^GPS-and-geofencing\.html$ gps-and-geofencing\.html [L,R=301]
 RewriteRule ^pricing\.html$ store\.html [L,R=301]

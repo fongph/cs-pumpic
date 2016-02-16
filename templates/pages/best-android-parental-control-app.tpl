@@ -74,7 +74,7 @@
             textAlign = "left"
             title = "Best Parental Control<br /> Software for Android"
             titleSize = "35px"
-            description = "Check popular and widely used Android market parental controls.<br />Use the best Android parental control app. Choose Pumpic."
+            description = "Check popular and widely used Android market parental controls.<br />Use the best parental monitoring app. Choose Pumpic."
             promoBuyBlock = "no"
             planPackageBuy = "yes"
             block_video = "yes"
@@ -95,7 +95,7 @@
         {*  styleTitle="h2"
     title="Follow Kids Remotely Wherever They Go" *}
 
-        <h2 class="h2 text-center" style="margin: 40px 0px 40px 0;">Reviews of Other Best Parental Control Apps for Android</h2>
+        <h2 class="h2 text-center" style="margin: 40px 0px 40px 0;">Reviews of Parental Controls for Android</h2>
 
 {Content 
     styleTitle=""
@@ -108,7 +108,7 @@
             <div class="pt30 pb20">
                 <img class="img-align-right" alt="Best Parental Control Software for Android Screenshot" src="{$img}/landings/best-android-parental-control-app/1-kidslox.png" width="207px" height="208px" />
                 <img class="app-icon-left" src="{$img}/landings/best-android-parental-control-app/kidslox-logo.png" alt="Best Parental Control Software for Android Logo">
-			<p>The first best parental control app for Android to begin <a class='a-default' href='/reviews'>our reviews</a> with is Kidslox. The app allows limiting screen time and blocking other applications on your children’s devices. With Kidslox, parents can block games and other entertainment apps, social media, and web browsers.</p>
+			<p>The first parental control for Android to begin <a class='a-default' href='/reviews'>our reviews</a> with is Kidslox. The app allows limiting screen time and blocking other applications on your children’s devices. With Kidslox, parents can block games and other entertainment apps, social media, and web browsers.</p>
 			<p>This parental control software will also let you specify schedules for using the target device as well as switch it from normal performance to restricted one. Kidslox is protected with a secret key. It means that your child will not be able to brake your limits or apply any other changes without your permission.</p>
 			<p>Kidslox will cost you $6.99. The main benefit of this parental control is also its disadvantage. The app allows blocking software activities, but is doesn’t provide any kind of monitoring. That’s why you will not be able to find out what is going on inside of e.g. social networks. Text message communication as well as visited web sources remain a secret for parents.</p>
 			<p>As soon as the application is downloaded and installed on the target device, a user can find all required support and assistance right from inside the Kidslox app. You should note that some of those who use this app complain of poor app performance and say that Kidslox very often fails to operate the way it is pointed out.  </p>
@@ -231,10 +231,10 @@
             <div class="pt30 pb20">
                 <img class="img-align-right" alt="Best Parental Control Software for Android Screenshot" src="{$img}/landings/best-android-parental-control-app/7-watchdo-task-manager.png" width="207px" height="208px" />
                 <img class="app-icon-left" src="{$img}/landings/best-android-parental-control-app/watchdog-task-manager-logo.png" alt="Best Parental Control Software for Android Logo">
-			<p>Sometimes the only remedy for a misbehaving app that would ‘eat’ the whole CPU is killing it with Android kill command – unless you have prepared for such emergency beforehand and installed Watchdog for Android.</p>
-			<p>Despite the general belief, having a lot of background apps running on the phone does nothing bad to it, unless the apps are actually making something that can be influencing the phone’s performance speed and eat the CPU. Moreover, on the modern Android (and it goes up from the 2.2 version) the kill command influences background apps but they restart immediately.</p>
+			<p>Sometimes the only remedy for a misbehaving app that would ‘eat’ the whole CPU is killing it with a relevant command – unless you have prepared for such emergency beforehand and installed Watchdog for Android.</p>
+			<p>Despite the general belief, having a lot of background apps running on the phone does nothing bad to it, unless the apps are actually making something that can be influencing the phone’s performance speed and eat the CPU. Moreover, on modern Android devices (and up from the 2.2 version) the kill command influences background apps but they restart immediately.</p>
 			<p>The latter is much more damaging to your phone and apps as well – with such a harsh interrupt of the work, you might prevent app from operating properly on your phone. The best idea would be leaving those apps run in the background and you would have a much better experience when you get back to using them.</p>
-			<p>Watchdog app for Android is an alternative way for keeping a track of phone apps. It literally monitors the currently running apps and alerts about any of them behaving badly. If it comes to happen, you can then kill this only app without interrupting other.</p>
+			<p>Watchdog app is an alternative way for keeping a track of phone apps. It literally monitors the currently running apps and alerts about any of them behaving badly. If it comes to happen, you can then kill this only app without interrupting other.</p>
 			<p>Watchdog Android app has some additional features in the paid version, and that is a Blacklist for apps. This includes adding an app you expect to cause troubles into a 24/7 monitoring and set a CPU threshold for it – once the app goes over the % you limited it to, Watchdog would kill it immediately.</p>
             </div>
         </div>
@@ -248,14 +248,14 @@
     
 
         <div class="col-lg-12 col-md-12 col-sm-12">
-            <h2 class="h3 text-right">Net Nanny for Android Review</h3>
+            <h2 class="h3 text-right">Net Nanny Review</h3>
             <div class="pt30 pb20">
                 <img class="img-align-left" alt="Best Parental Control Software for Android Screenshot" src="{$img}/landings/best-android-parental-control-app/8-net-nanny-for-android.png" width="207px" height="208px" />
                 <img class="app-icon-right" src="{$img}/landings/best-android-parental-control-app/net-nanny-for-android-logo.png" alt="Best Parental Control Software for Android Logo">
-                <p>For parents raising kids in modern day technology world their security is one of the biggest headaches to fight with every day. And due to all the risky content there is on the Internet the struggle of whether or not a teen (of even a child) should have a complete freedom in surfing the web is real. But with Net Nanny for Android parents can finally relax and mind their own business, as kids would be safe and sound, and protected from all the inappropriate content.</p>
+                <p>For parents raising kids in modern day technology world their security is one of the biggest headaches to fight with every day. And due to all the risky content there is on the Internet the struggle of whether or not a teen (of even a child) should have a complete freedom in surfing the web is real. But with Net Nanny parents can finally relax and mind their own business, as kids would be safe and sound, and protected from all the inappropriate content.</p>
                 <p>Net Nanny application belongs to the large group of parental monitoring app, but at some points it differs from other ones you might choose. In fact, whenever someone announces they’ve launched Net Nanny alternative, most of the times it would lack a great part of Nanny functions and options.</p>
 				<p>Besides from becoming a child’s default browser working on the predefined user profile (which can be either chosen from default age-based ones, or created on your own), the Net Nanny Android app allows parents manage child’s phone settings and control apps they might or might not use on the phone.</p>
-				<p>From the Net Nanny for Android reviews you will learn about the whole amount of services it provides you with. Or you can try the fully functional trial version for 14 days, and get an annual subscription for $12.99 per device.</p>
+				<p>From Net Nanny reviews you will learn about the whole amount of services it provides you with. Or you can try the fully functional trial version for 14 days, and get an annual subscription for $12.99 per device.</p>
             </div>
     </div>    
     
@@ -304,7 +304,7 @@
 
     {include file='../includes/content/features-table.tpl'
         title = "Pumpic Is More than 24 Monitoring Features "
-        description = "Pumpic stands out among other best Android parental control apps thanks to a large variety of useful features and smooth monitoring process. The application covers all spheres of your children’s lives. Thus, you can protect them both online and during daily activities with <a class='a-default' href='/android-parental-monitoring.html'>Android parental monitoring</a> by Pumpic."
+        description = "Pumpic stands out among other Android parental control apps thanks to a large variety of useful features and smooth monitoring process. The application covers all spheres of your children’s lives. Thus, you can protect them both online and during daily activities with <a class='a-default' href='/android-parental-monitoring.html'>Pumpic parental monitoring for Android</a>."
         blockBg="dark"
     }
         
@@ -321,7 +321,7 @@
                             <img src="{$img}/testimonials/alex-t-12.png" alt="" class="testimonial-photo">
                             <div class="testimonial-text">
                                     <h4>Alex T. – father of twins</h4>
-                                    <p>“I wanted my kids protected in the best way possible, and that’s why I was looking for the best parental control app for their Android phones. I searched a lot and asked other parents for advice. They offered me different software, but most of them used Pumpic and were satisfied with it. I decided to give Pumpic a try too. And you know what? It is great! You can’t even imagine how many useful utilities a careful parent can find in this one app. With it, my kids are protected, I’m sure. I can see who calls them and writes text messages. I can even control all of their activities on the web remotely. It’s fantastic to have such a helper, especially when you’re far away from home.”</p>
+                                    <p>“I wanted my kids protected in the best way possible, and that’s why I was looking for a good parental control app for their cell phones. I searched a lot and asked other parents for advice. They offered me different software, but most of them used Pumpic and were satisfied with it. I decided to give Pumpic a try too. And you know what? It is great! You can’t even imagine how many useful utilities a careful parent can find in this one app. With it, my kids are protected, I’m sure. I can see who calls them and writes text messages. I can even control all of their activities on the web remotely. It’s fantastic to have such a helper, especially when you’re far away from home.”</p>
                             </div>
                     </div>
                     <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
@@ -335,7 +335,7 @@
                             <img src="{$img}/testimonials/nina-l-15.png" alt="" class="testimonial-photo">
                             <div class="testimonial-text">
                                     <h4>Nina L. – mother of 15-year-old son</h4>
-                                    <p>“If you are looking for the best parental control app for Android, you are on the right track. Pumpic is a very helpful application. I work every day and sometimes come back home late. My son stays home alone and no one knows what kind of activities he is engaged in, when I’m not near. With Pumpic I can see it all and control it all. I know where he goes and where he’s been to. I can see every webpage he visits and control each word he types in. I’m sure he won’t get in trouble nor hang out with a bad company. Pumpic is a good opportunity for me to work hard and succeed in parenting. Sure such an app won’t replace you as a mother, but it will keep your child safe. What else could you ask for?!”</p>
+                                    <p>“If you are looking for a reliable parental tracking app, you are on the right track. Pumpic is a very helpful application. I work every day and sometimes come back home late. My son stays home alone and no one knows what kind of activities he is engaged in, when I’m not near. With Pumpic I can see it all and control it all. I know where he goes and where he’s been to. I can see every webpage he visits and control each word he types in. I’m sure he won’t get in trouble nor hang out with a bad company. Pumpic is a good opportunity for me to work hard and succeed in parenting. Sure such an app won’t replace you as a mother, but it will keep your child safe. What else could you ask for?!”</p>
                             </div>
                     </div>
                             

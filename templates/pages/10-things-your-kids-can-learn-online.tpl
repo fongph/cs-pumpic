@@ -102,9 +102,9 @@
                                      width='720'
                                      alt='10 Things Your Kids Can Learn Online'
                                      id='the_img_link'>
-                                <a href='http://{$domain}/entrepreneurial-skills-to-teach-your-child.html' id='the_img_link'>
+                                <a href='http://{$domain}/10-things-your-kids-can-learn-online.html' id='the_img_link'>
                                     <p>
-                                        10 Things Your Kids Can Learn Online[Infographic] by the team at <a href='http://{$domain}/10-things-your-kids-can-learn-online.html'
+                                        10 Things Your Kids Can Learn Online [Infographic] by the team at <a href='http://{$domain}/10-things-your-kids-can-learn-online.html'
                                                                                                        id='the_img_link'>Pumpic</a></p>
                                 </a>
                             </textarea>

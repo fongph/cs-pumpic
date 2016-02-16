@@ -350,7 +350,7 @@
         <div class="container">
                 <h2 class="text-center">Pumpic Provides Reliable Protection</h2>
 				<p>Pumpic is a multifeature parental control application comprehensive enough to provide reliable protection for your children. The app covers all of your kids’ activities online and daily. It is a helping hand for careful parents for all of life emergencies.</p>
-                <p>Pumpic is a pay service and you won’t find it among Android monitoring software for free. However, it is one of the best the <a class="a-default" href="http://pumpic.com/reviews/">best parental controls</a> available online. When you buy Pumpic, you contribute to child safety. And Pumpic is worth the cost. After all, there is always free cheese in a mousetrap.</p>
+                <p>Pumpic is a pay service and you won’t find it among Android monitoring software for free. However, it is one of the <a class="a-default" href="http://pumpic.com/reviews/">best parental controls</a> available online. When you buy Pumpic, you contribute to child safety. And Pumpic is worth the cost. After all, there is always free cheese in a mousetrap.</p>
 				<div class="row">
                         <div class="col-sm-4 col-md-4 col-lg-4">
                                 <div class="feature">

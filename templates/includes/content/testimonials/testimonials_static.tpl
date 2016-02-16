@@ -4,7 +4,7 @@
             <img src="{$img}/testimonials/testimonials_new_1.png" alt="" class="testimonial-photo">
             <div class="testimonial-text">
                 <h4>Jane A. – mother of twins</h4>
-                <p>“Are there such parental controls on Android phones, I wonder? I use Pumpic monitoring software on iPhone now and with it parenting is much easier for me. The app helps me big time. I can monitor my son’s phone calls, texts messages and social media to save him from online predators and misgiving contacts. I would also like to install it on my daughters’ Nexus as well.”</p>
+                <p>“I didn’t know anything about such kids monitoring software before. With it, parenting is easier for me. The app helped me big time. I can monitor kids phone calls, texts messages and social media to save them from online predators and misgiving contacts.”</p>
             </div>
         </div>
         <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
@@ -18,7 +18,7 @@
             <img src="{$img}/testimonials/testimonials_new_3.png" alt="" class="testimonial-photo">
             <div class="testimonial-text">
                 <h4>Logan T – father of 14-year-old son</h4>
-                <p>“Pumpic is a really good mobile tracking software for Android. It has let me feel safer. Now, I can keep an eye on my child, even when I’m far from home. I can block 18+ websites and applications. It’s good to know that my boy is protected wherever I go. This parental monitoring app is just what I needed.”</p>
+                <p>“Pumpic has really let me feel safer. Now, I can keep an eye on my child, even when I’m far from home. I can block 18+ websites and applications. It’s good to know that my boy is protected wherever I go. This parental monitoring app is just what I needed.”</p>
             </div>
         </div>
     </div>    
@@ -34,7 +34,7 @@
             <img src="{$img}/testimonials/testimonials_new_1.png" alt="" class="testimonial-photo">
             <div class="testimonial-text">
                 <h4>Jane A. – mother of twins</h4>
-                <p>“Are there such parental controls on Android phones, I wonder? I use Pumpic monitoring software on iPhone now and with it parenting is much easier for me. The app helps me big time. I can monitor my son’s phone calls, texts messages and social media to save him from online predators and misgiving contacts. I would also like to install it on my daughters’ Nexus as well.”</p>
+                <p>“I didn’t know anything about such kids monitoring software before. With it, parenting is easier for me. The app helped me big time. I can monitor kids phone calls, texts messages and social media to save them from online predators and misgiving contacts.”</p>
             </div>
         </div>
     </div> <!-- .slide-->
@@ -54,7 +54,7 @@
             <img src="{$img}/testimonials/testimonials_new_3.png" alt="" class="testimonial-photo">
             <div class="testimonial-text">
                 <h4>Logan T – father of 14-year-old son</h4>
-                <p>“Pumpic is a really good mobile tracking software for Android. It has let me feel safer. Now, I can keep an eye on my child, even when I’m far from home. I can block 18+ websites and applications. It’s good to know that my boy is protected wherever I go. This parental monitoring app is just what I needed.”</p>
+                <p>“Pumpic has really let me feel safer. Now, I can keep an eye on my child, even when I’m far from home. I can block 18+ websites and applications. It’s good to know that my boy is protected wherever I go. This parental monitoring app is just what I needed.”</p>
             </div>
         </div>
     </div> <!-- .slide-->

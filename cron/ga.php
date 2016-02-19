@@ -53,7 +53,7 @@
         const GA_TYPE_ORGANIC   = 'organic';
         const GA_TYPE_EMAIL     = 'email';
         const GA_TYPE_REFERRAL  = 'referral';
-        const GA_TYPE_ADWORDS   = 'adwords';
+        const GA_TYPE_ADWORDS   = 'paid search';
         const GA_TYPE_MEDIA     = 'media';
         const GA_TYPE_AFFILIATE     = 'affiliate';
         

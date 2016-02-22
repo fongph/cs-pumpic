@@ -83,7 +83,7 @@
 
         } 
 
-        {include file='../includes/main/main-testimonials.tpl'} 
+        {include file='../includes/testimonials.tpl'} 
 
 
         {*include file='../includes/content/banner-promo.tpl'*}

@@ -1631,7 +1631,7 @@
         *}    
         {include file='../includes/main/main-recommended.tpl'}
         
-        {include file='../includes/main/main-testimonials.tpl'
+        {include file='../includes/testimonials.tpl'
                 title = "Trusted by Over 10 000 Customers Worldwide"
                 sliders = "true"
                 blockBg="bg_white pt40"} {* light *} 

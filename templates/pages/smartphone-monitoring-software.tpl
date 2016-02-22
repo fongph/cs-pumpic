@@ -77,7 +77,7 @@
 
 
         {include file='../includes/content/how-get-pumpic.tpl' }    
-        {include file='../includes/main/main-testimonials.tpl' blockBg="light"}       
+        {include file='../includes/testimonials.tpl' blockBg="light"}       
     
         {*include file='../includes/content/banner-promo.tpl'*}
         {*{include file='../includes/content/banners/banner-promo-trial.tpl'}*}

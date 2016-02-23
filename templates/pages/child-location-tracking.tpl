@@ -112,8 +112,56 @@
         </div>
     </div>    
 {EndContent}
+
+{Content 
+    styleTitle="h2"    
+    title="How Child Locator Helps Careful Parents"
+    blockBg='light'}
+	
+	<img class="app-icon-left" src="{$img}/landings/statistics-icon-location.png" alt="">
+	<p>There is something in parenting that makes adults turn into paranoid beings waiting for everything on Earth 24/7 and seeing danger everywhere. But it is almost impossible to experience no stress about what might happen to a child, when you are not near. This might seem overwhelming for kids, but once they grow up and have their own offspring, they will get it all.</p>
+	<p>Even though for the last couple of years the number of crimes involving kidnapping has went down, about a half of teen parents are worried their kids might be kidnapped. In response to the parental concern, the market has boomed with tracking devices. But once smartphones became widespread, a GPS tracking app for iPhone or Android has become a must-have.</p>
+	<p>Can you put a price tag on the peace of mind and feeling of security, when it comes to child safety? Surely, not. And seeing all the notices on children missing is not helping us to calm down. But making the right choice for a kid phone tracking app will be a life changer for all the over-paranoid parents. The best way to make a good choice is looking through reviews and charts, and pay special attention to other features the app might offer. Even though you might look for a way to monitor child’s location, opting for other functions might help you feel calmer.</p>
         
-<div class="light">
+        <!-- BLOCK STATISTICK -->
+        <div class="block-statistick row">
+            
+            <div class="item col-s-sm-12 col-xs-sm-12 col-sm-4 col-md-4 col-lg-4">
+                <section>
+                    <div><strong class="fz50 color-orange">39%</strong></div>
+                    <span class="text-uppercase">
+                        parents filter, block or/and monitor their children’s online activities. Using monitoring and mobile tracking apps ensures kid safety and help parents be calm their family is secure, safe, and sound.
+                    </span>
+                </section>
+            </div>
+			<div class="item col-s-sm-12 col-xs-sm-12 col-sm-4 col-md-4 col-lg-4">
+                <section>
+                    <div><strong class="fz50 color-orange">50%</strong></div>
+                    <span class="text-uppercase">
+                        parents are worried about their children being kidnapped. Even though for the last couple of years the number of crimes involving kidnapping has went down, about a half of teen parents are worried their kids might be kidnapped.
+                    </span>
+                </section>
+            </div>
+			<div class="item col-s-sm-12 col-xs-sm-12 col-sm-4 col-md-4 col-lg-4">
+                <section>
+                    <div><strong class="fz50 color-orange">36%</strong></div>
+                    <span class="text-uppercase">
+                        families track kids’ phones via various resources. Those parents who care about their family safety, but do not want to bother them with phone calls should choose a good GPS cell phone tracker app. Pumpic saves nerves and time.
+                    </span>
+                </section>
+            </div>
+            
+        </div>
+        <!-- END -->
+
+        <p>A cell phone tracker app for an Android or iOS based phone will save the day here. It will help to ensure your kid is right where he or she is supposed to be. Besides from that you can use a location app to check if your teen is not trying to sneak somewhere.</p>
+		<p>If you seek for an easy and effective way to <a class="a-default" href="/iphone-parental-monitoring.html" target="blank">track location on your child’s iPhone</a> or Android device, you are not alone. There are more than 10,000 worried parents out there, who have found their peace of mind in a parental monitoring app Pumpic.</p>
+		<p>Pumpic provides a map with kids’ check-ins throughout the day. This allows you to save time and nerves, and keep an eye on your child via your laptop or mobile device. Setting geo-fences your kid should be at in certain time is a way of ensuring he or she has gotten there in time. The app will send you detailed notifications on whereabouts, and there will be no need to disturb your kids with phone calls and messages.</p>
+		<p>A choice of all wise parents – Pumpic saves the day for you and your family. However, be sure to talk to your child about safety, both online and in real life. This will also protect your kid from harm and your family from worries and terror. </p>
+		
+{EndContent}
+        
+<div class="dark">
         <div class="container">
                 <h2 class="text-center">How Pumpic Secures Your Kids</h2>
                 <div class="row">
@@ -157,20 +205,8 @@
         {include file='../includes/content/features-table.tpl'
         title = "Many Useful Features In Addition to Location Tracking"
         description = "Pumpic is designed to provide your kids with all-round protection wherever they go. Thus, the app allows you to not only find their exact location, but also secure them during daily activities. More than 24 useful monitoring solutions let Pumpic be the best app for tracking kids and a reliable helper for all of life emergencies."
-        blockBg="dark"
+        blockBg="light"
         } 
-        
-        {include file='../includes/content/ipad.tpl' 
-                blockBg="light"
-                imgUrl = "parental_control/ipad.png"
-                imgAlt = "Apple iOS. iPad"
-                title = "Use Control Panel Easily"
-				description = "Install the Pumpic GPS cell phone tracker app on your kid’s smartphone or tablet and utilize effective parental control right away. To view the data from the target device, log in to your Control Panel. It is accessible from any computer, laptop, and mobile gadget. In your Control Panel, you will see all the monitored information divided by relevant categories for your convenience. With its help, you can not only view the data, but set limits, block some activities, and control your children’s devices as well."
-                textAlign = "left"
-        }
-        
-        {* description = "Install the iPad parental control app on your kid’s tablet and start monitoring right away. Log in to your Control Panel and view all the information from the target device. It can be accessed from anywhere including desktop computers, laptops, smartphones, and tablets. In addition to data monitoring, the Control Panel allows you to set limits, block tablet activities, and lock the target device permanently."             
-        *}
         
         <div class="dark">
     <div class="container">
@@ -211,17 +247,14 @@
     </div>
 </div> 
         
-        {include file='../includes/content/how-get-pumpic.tpl'
-            blockBg="light"
-        } 
+        {include file='../includes/content/banners/index.tpl'}
 
         {include file='../includes/main/main-quick-link.tpl' 
-            blockBg="dark"
+            blockBg="light"
         }        
         
         {*{include file='../includes/content/banners/banner-promo-trial.tpl'}*}
         
-        {include file='../includes/content/banners/index.tpl'}
         <!-- END CONTENT -->    
            
         <!-- RECOMMENDED -->

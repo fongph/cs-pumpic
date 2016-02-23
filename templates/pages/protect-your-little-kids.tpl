@@ -126,7 +126,7 @@
         </div>
         <!-- END -->
         
-        {* include file='../includes/main/main-testimonials.tpl' 
+        {* include file='../includes/testimonials.tpl' 
             blockBg="dark"
         *}       
 

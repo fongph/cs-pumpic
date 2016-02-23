@@ -4,9 +4,9 @@
             <div class="row">
                 
                 {if $sliders == "true"}
-                    {include file='../content/testimonials/main/testimonials_sliders.tpl'}
+                    {include file='../includes/content/testimonials/testimonials_sliders.tpl'}
                 {else}
-                    {include file='../content/testimonials/main/testimonials_static.tpl'}
+                    {include file='../includes/content/testimonials/testimonials_static.tpl'}
                 {/if}
                     
             </div>

@@ -8,7 +8,7 @@ function dispatch($urlParams, $config){
     global $smarty;
     
     // Expires
-     header('Expires: '.gmdate('D, d M Y H:i:s \G\M\T', time() + 3600));
+     header('Expires: ' . gmdate('D, d M Y H:i:s \G\M\T', time() + 3600));
     
     if (!empty($_SERVER["HTTP_REFERER"]) ) {
         $_url = parse_url($_SERVER['HTTP_REFERER']);  
@@ -16,22 +16,14 @@ function dispatch($urlParams, $config){
             setcookie("orders_referer", $_SERVER['HTTP_REFERER'], time() + 3600 * 24, '/', '.' . $config['domain'] );
         } 
 
-    }    
+    }  
         
     // landing
     if (!isset($_COOKIE['landing']) && isset($_SERVER['HTTP_HOST'], $_SERVER['REQUEST_URI'])) {
         $url = 'http' . (isset($_SERVER['HTTPS']) ? 's' : '') . '://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
         setcookie("landing", $url, time() + 3600 * 24, '/', '.' . $config['domain']);
     }
-
-
-    // fix url
-    if(is_array($urlParams['uriArr']) 
-            and count($urlParams['uriArr']) > 0
-            and in_array('compatibility', $urlParams['uriArr'])) {
-        $urlParams['uriArr'] = array( array_shift($urlParams['uriArr']) );
-    }
-
+    
     // 301 redirect
     if(preg_match('/\/\?cat=(.*)/is', $_SERVER['REQUEST_URI'])) {
         header301( $config['domain_http'] );
@@ -43,8 +35,8 @@ function dispatch($urlParams, $config){
         $smarty->display('404.tpl');
         die;
     }
-        
-    try {        
+    
+    try {      
         if (isset($config['php_compile'][$urlParams['uri']])) {
             include $config['php_compile'][$urlParams['uri']];
         } elseif(preg_match("/^\/compatibility\/(.+)\/$/", $_SERVER['REQUEST_URI'], $matches)) {

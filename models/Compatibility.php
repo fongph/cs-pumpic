@@ -69,18 +69,18 @@ class Compatibility {
                     
                     $_fileds .= "
                         (
-                           (0.1*(IF((`longname` REGEXP '^". trim($firstWord) ."(.*)') > 0 , 1, 0))) +
-                           (0.1*(IF((`longname` REGEXP '^". trim($searchStr) ."$') > 0 , 1, 0))) +    
-                           (0.6*(MATCH(`longname`) AGAINST ('{$searchStr}' IN BOOLEAN MODE))) +
-                           (0.6*(MATCH(`longname`) AGAINST ('\"{$searchStr}\"' IN BOOLEAN MODE))) +
-                           (0.6*(MATCH(`longname`) AGAINST ('".trim($_rel)."' IN BOOLEAN MODE))) + 
-                           (1.3 * COUNT(IF(MATCH (`longname`) AGAINST ('*{$searchStr}*' IN BOOLEAN MODE),1,0))) +
-                           (1.3 * IF(LOCATE('{$searchStr}',`longname`)>0,1,0)) + 
-                           (1.3 * `longname` LIKE '%{$searchStr}%')    
+                           (0.1*(IF((`longname` REGEXP ". $this->db->quote('^' . trim($firstWord) . '(.*)') . ") > 0 , 1, 0))) +
+                           (0.1*(IF((`longname` REGEXP ". $this->db->quote('^' . trim($searchStr) . '$') .") > 0 , 1, 0))) +    
+                           (0.6*(MATCH(`longname`) AGAINST (" . $this->db->quote($searchStr) . " IN BOOLEAN MODE))) +
+                           (0.6*(MATCH(`longname`) AGAINST (" . $this->db->quote('"' . $searchStr . '"') . " IN BOOLEAN MODE))) +
+                           (0.6*(MATCH(`longname`) AGAINST (" . $this->db->quote(trim($_rel)) . " IN BOOLEAN MODE))) +
+                           (1.3 * COUNT(IF(MATCH (`longname`) AGAINST (" . $this->db->quote('*' . $searchStr . '*') . " IN BOOLEAN MODE),1,0))) +
+                           (1.3 * IF(LOCATE(" . $this->db->quote($searchStr) . ",`longname`)>0,1,0)) + 
+                           (1.3 * `longname` LIKE " . $this->db->quote('%' . $searchStr . '%') . ")    
                         ) as `_sort`,
                     ";
                     
-                    $whereQuery  = "WHERE `longname` REGEXP '".trim($_word, '|')."'";
+                    $whereQuery  = "WHERE `longname` REGEXP " . $this->db->quote(trim($_word, '|'));
                     
                     // $whereQuery  = "WHERE MATCH(`longname`) AGAINST ('{$searchStr}' IN BOOLEAN MODE) OR `longname` REGEXP '".trim($_word)."'";
                     
@@ -95,7 +95,7 @@ class Compatibility {
             default: throw new \ErrorException('Illegal search type');
         }
         
-        $start = (int)$page * self::$perPage;
+        $start = (int)$page * self::$perPage;  
         $data = $this->db->query("
             SELECT SQL_CALC_FOUND_ROWS 
                 rowid as id,

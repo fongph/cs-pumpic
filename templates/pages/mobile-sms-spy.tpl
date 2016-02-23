@@ -71,7 +71,7 @@
         <p class="text-center f-light">
             Nowadays children spend more than 3 hours a day using smartphones for playing games, social media activity and chatting. 
             Being a parent implies a huge responsibility to protect kids from misgiving people they might contact on the web. 
-            Reliable SMS spy software will help you secure your children.
+            Reliable SMS <a class="a-default" href="/spy-apps-for-android.html">spy software</a> will help you secure your children.
         </p>
         
         <!-- BLOCK STATISTICK -->
@@ -335,15 +335,15 @@
              blockBg="light"
         }
 
-
+        {include file='../includes/content/banners/index.tpl'}
+		
         {include file='../includes/main/main-quick-link.tpl' 
-            blockBg="dark"
+            blockBg="light"
         }
 
         {*include file='../includes/content/banner-promo.tpl'*}
         {*{include file='../includes/content/banners/banner-promo-trial.tpl'}*}
         
-        {include file='../includes/content/banners/index.tpl'}
         <!-- END CONTENT -->   
         
         <!-- RECOMMENDED -->

@@ -37,8 +37,9 @@
         imgAlt = "Messages monitoring"
         imgAlign = "right"
         textAlign = "right"
-        title = "SMS Monitoring<br /> Parental Control App"
-        description = "View, block, and limit SMS remotely.<br />Text tracking app for Android and iOS."
+        title = "SMS Monitoring for Child Safety<br /> Multifeature Parental Controls"
+		titleSize = "30px"
+        description = "View and limit SMS remotely. Block texts by keywords.<br />Keep your kids away from dangerous communication."
         promoBuyBlock = "no"
         planPackageBuy = "yes"
         block_video = "yes"
@@ -55,16 +56,55 @@
             buttonFreeTrial = 'yes'
         }
          
-        {include file='../includes/content/ipad.tpl' 
-        blockBg="dark"
-        imgUrl = "icons/lending_features_sms.png"
-        imgAlt = "Easy Texts monitoring"
-        title = "Remote SMS Monitoring"
-        description = "Right after installing the Pumpic child text monitoring app, all the data from the target device will be sent to your Control Panel. It can be accessed from any browser and any gadget, including PCs, smartphones, and tablets. In Control Panel, you can not only read text messages, but also set restrictions, block, and limit some of activities."
-        }
-        <div class="light">
+{Content 
+    styleTitle="h2"    
+    title="Prevent Kids from Misgiving Texting and Dangers It Brings"
+    blockBg='light'}
+	
+	<img class="app-icon-left" src="{$img}/landings/statistics-icon-sms.png" alt="Monitor Text Messages">
+	<p>A great number of parents today are worried about their kids’ online and texting habits. Another concern is whom they are texting with and on what topics. The latter is closely connected with the increased number of cyberbullying stories appearing across the world. Moreover, a dangerous sexting trend – when teens share nude and semi-nude pictures among peers – pops throughout the globe as well.</p>
+	<p>These two components make a great reason why all careful parents should revise their notion of kids’ privacy and switch to text message monitoring. Ensuring your beloved children are safe from a greater part of online dangers is priceless, and with the right technology it is also easy.</p>
+	<p>In fact, text message monitoring has been of huge interest for the last couple of years, and it is natural. According to studies, kids from 8 to 18 years old spend about 7 hours a day being online. And it is natural that you as a parent are concerned about what your child is doing on his or her phone, online, and in the real world. Especially when their kids aren’t always forthcoming with what’s going on in their lives.</p>
+        
+        <!-- BLOCK STATISTICK -->
+        <div class="block-statistick row">
+            
+			<div class="item col-s-sm-12 col-xs-sm-12 col-sm-4 col-md-4 col-lg-4">
+                <section>
+                    <div><strong class="fz50 color-orange">30%</strong></div>
+                    <span class="text-uppercase">
+                        teenagers use messaging apps for keeping in touch with their friends. These apps include WhatsApp, iMessage, and Kik, and are believed to be harder to look over. With a right text monitoring app there should be no problems for a careful parent to look through all incoming and sent messages on a child’s phone. Even if text messages were deleted or blocked, a parent can see them at any time.
+                    </span>
+                </section>
+            </div>
+			<div class="item col-s-sm-12 col-xs-sm-12 col-sm-4 col-md-4 col-lg-4">
+                <section>
+                    <div><strong class="fz50 color-orange">76%</strong></div>
+                    <span class="text-uppercase">
+                        teens today own a smartphone they use for most of online activities. Their digital behavior can be unpredictable, and no matter how strict you are, there might be troubles. Opting for a good parental monitoring app like Pumpic changes the situation for better.
+                    </span>
+                </section>
+            </div>
+			<div class="item col-s-sm-12 col-xs-sm-12 col-sm-4 col-md-4 col-lg-4">
+                <section>
+                    <div><strong class="fz50 color-orange">48%</strong></div>
+                    <span class="text-uppercase">
+                        parents constantly look through their kids’ phone calls and messages. Given the fact that teens today prefer SMS chatting over phone calling, a good SMS monitorigng application is a must for all those parents, who want to keep an eye over kids’ communication. With the increased number of cyberbullying and cases of sexting, the need to monitor children’s phones has increased dramatically.
+                    </span>
+                </section>
+            </div>
+            
+        </div>
+        <!-- END -->
+
+        <p>Looking over a child’s activities is essential and important task for a careful parent. And if there is any hint your kid might be in danger like sexting or bullying, it is the high time for you to opt for a decent SMS tracking application.</p>
+		<p>One of fair choices is the Pumpic app, which has been on the market for quite a while. It has a number of other functions besides SMS tracking: <a class="a-default" target="_blank" href="/how-to-block-texts-on-android.html">blocking text messages</a>, geofencing, location tracking, app control, and much more other useful ones. Pumpic allows SMS tracking without any access to the target phone. With Pumpic, you will always get a full report on your kid’s communication.</p>
+		
+{EndContent}
+		
+        <div class="dark">
             <div class="container">
-                <h2 class="text-center">Text Message Tracking with Pumpic</h2>
+                <h2 class="text-center">Text Message Tracking Protects Your Kids</h2>
                 <div class="row">
                     <div class="col-sm-4 col-md-4 col-lg-4">
                         <div class="feature">
@@ -106,21 +146,14 @@
         </div>
 
         {include file='../includes/content/features-table.tpl'
-        title = "All Pumpic Features"
+        title = "Useful Monitoring Features by Pumpic"
         description = "Pumpic is not only a reliable cell phone SMS tracker, but also a multifunctional tool to protect your kids both online and during daily activities. Monitor text messages on Android and iOS. View calls and multimedia files. Follow your children online and on the go. Check out other amazing features of the Pumpic SMS tracker for remote cell phone monitoring."
-        blockBg="dark"
-        }
-
-        {include file='../includes/content/how-get-pumpic.tpl'
-            title = ""
-            style = "static"
-            blockBg="light"
-
+        blockBg="light"
         }
 
         <div class="dark">
             <div class="container">
-                <h2 class="text-center testimonial-title">Trusted by Over 10 000 Customers Worldwide:</h2>
+                <h2 class="text-center testimonial-title">Trusted by Over 10,000 Customers Worldwide:</h2>
                 <div class="row">
                     <div class="bxSliders only-pc">
                         <!-- SLIDE #1 -->

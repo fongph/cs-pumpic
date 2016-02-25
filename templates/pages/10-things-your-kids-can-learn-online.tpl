@@ -97,17 +97,8 @@
                         </ul>
                         <div class="text-center">
                             <p><strong>Add this infographic to your website by copying and pasting the following embed code:</strong></p>
-                            <textarea class="copy-this" style='margin:0px; height:200px;'>
-                                <img src='http://{$domain}/images/infographic/10-things-your-kids-can-learn-online.jpg'
-                                     width='720'
-                                     alt='10 Things Your Kids Can Learn Online'
-                                     id='the_img_link'>
-                                <a href='http://{$domain}/10-things-your-kids-can-learn-online.html' id='the_img_link'>
-                                    <p>
-                                        10 Things Your Kids Can Learn Online [Infographic] by the team at <a href='http://{$domain}/10-things-your-kids-can-learn-online.html'
-                                                                                                       id='the_img_link'>Pumpic</a></p>
-                                </a>
-                            </textarea>
+                            <textarea class="copy-this" style="margin: 0px; height: 200px; overflow-y: scroll;" readonly="readonly"><img src="http://pumpic.com/images/infographic/10-things-your-kids-can-learn-online.jpg" width="720" height="6063" alt="10 Things Your Kids Can Learn Online" />
+<p><a href="http://pumpic.com/10-things-your-kids-can-learn-online.html">10 Things Your Kids Can Learn Online [Infographic] by the team at Pumpic.</a></p></textarea>
                             
                             <div class="actions clearfix">
                                 <div class="col-mob-12 col-xs-6 col-sm-6 col-md-6 col-lg-6 padding-null">

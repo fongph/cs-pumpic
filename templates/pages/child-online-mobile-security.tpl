@@ -126,17 +126,8 @@
                         </ul>
                         <div class="text-center">
                             <p><strong>Add this infographic to your website by copying and pasting the following embed code:</strong></p>
-                            <textarea class="copy-this" style='margin:0px; height:200px;'>
-                                <img src='http://pumpic.com/images/infographic/v2.png'
-                                     width='540'
-                                     alt='Mobile Phone Security Measures'
-                                     id='the_img_link'>
-                                <a href='http://pumpic.com/child-online-mobile-security.html' id='the_img_link'>
-                                    <p>
-                                        Mobile Phone Security Measures [Infographic] by the team at <a href='http://pumpic.com/child-online-mobile-security.html'
-                                                                                                       id='the_img_link'>Pumpic</a></p>
-                                </a>
-                            </textarea>
+                            <textarea class="copy-this" style="margin: 0px; height: 200px; overflow-y: scroll;" readonly="readonly"><img src="http://pumpic.com/images/infographic/v2.png" width="720" height="6977" alt="How to Keep Your Kids Safe on a Smartphone" />
+<p><a href="http://pumpic.com/child-online-mobile-security.html">How to Keep Your Kids Safe on a Smartphone [Infographic] by the team at Pumpic.</a></p></textarea>
                             
                             <div class="actions clearfix">
                                 <div class="col-mob-12 col-xs-6 col-sm-6 col-md-6 col-lg-6 padding-null">

@@ -521,7 +521,7 @@
                 sliders (string): вкл./ выкл. слайдера (false|true). * default: false
         *}
         {*include file='../includes/testimonials.tpl'
-                title = "Trusted by Over 10 000 Customers Worldwide"
+                title = "Trusted by Over 10,000 Customers Worldwide"
                 sliders = "false"
                 blockBg="light" *} 
                 
@@ -530,7 +530,7 @@
         *}
         <div class="light">
             <div class="container">
-                <h2 class="text-center testimonial-title">Trusted by Over 10 000 Customers Worldwide:</h2>
+                <h2 class="text-center testimonial-title">Trusted by Over 10,000 Customers Worldwide:</h2>
                 <div class="row">
 
                     <div class="bxSliders only-pc">
@@ -572,7 +572,7 @@
         *}    
         <div class="dark">
             <div class="container">
-                <h2 class="text-center testimonial-title">Trusted by Over 10 000 Customers Worldwide:</h2>
+                <h2 class="text-center testimonial-title">Trusted by Over 10,000 Customers Worldwide:</h2>
                 <div class="row">
 
                     <div class="bxSliders only-pc">

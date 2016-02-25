@@ -442,14 +442,14 @@
             </div>
         </div>                                               
         {* include file='../includes/testimonials.tpl'
-                title = "Trusted by Over 10 000 Customers Worldwide"
+                title = "Trusted by Over 10,000 Customers Worldwide"
                 sliders = "false"
                 blockBg="light" *} 
         
         {* BLOCK TESTIMONIALS HTML (sliders) *}    
         <div class="light">
             <div class="container">
-                <h2 class="text-center testimonial-title">Trusted by Over 10 000 Customers Worldwide:</h2>
+                <h2 class="text-center testimonial-title">Trusted by Over 10,000 Customers Worldwide:</h2>
                 <div class="row">
 
                     <div class="bxSliders only-pc">

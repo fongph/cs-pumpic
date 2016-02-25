@@ -126,7 +126,7 @@
                     <p>Pumpic provides its customers with all-round 24/7 support and assistance for free. If you have queries or question on the operation of the app, you can send your request anytime by choosing the most convenient way for you: an email, online form, or a live chat. You can also make a call and contact customer care representatives directly on the phone.</p>
 					<p>The application is updated systematically. In addition, Pumpic keeps improving its tools and introduces new monitoring solution very often. That’s why by purchasing the app today you may be sure it will become even more advanced tomorrow. All innovations are available for all Pumpic clients.    </p>
                     <h3 class="heading">Conclusion – <span class="heading-rating">9.8/10</span></h3>
-                    <p>Pumpic proved to be one of the best monitoring apps you can find online. It is trusted by more than 10 000 users worldwide. It includes all features you may need while taking care of your underage children. The app is a solution for safety and protection. Pumpic keeps your eyes open. </p>
+                    <p>Pumpic proved to be one of the best monitoring apps you can find online. It is trusted by more than 10,000 users worldwide. It includes all features you may need while taking care of your underage children. The app is a solution for safety and protection. Pumpic keeps your eyes open. </p>
                     
                     <!-- Top parental Control Products -->
 

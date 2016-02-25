@@ -132,19 +132,14 @@ RewriteRule .* - [F]
 RewriteCond %{HTTP_HOST} ^www\.pumpic\.com
 RewriteRule ^(.*)$ http://pumpic.com/$1 [NC,R=301,L]
 
-RewriteRule ^compatibility/Samsung\-N7100\-Galaxy\-Note\-II/$ compatibility/Samsung\-Galaxy\-Note\-2/ [L,R=301]
-RewriteRule ^compatibility/Motorola\-XT701/$ compatibility/ [L,R=301]
-RewriteRule ^compatibility/HTC\-Aria\-Liberty/$ compatibility/ [L,R=301]
+
+
 RewriteRule ^compatibility/samsung\-i9300\-galaxy\-s\-iii\-\(s3\)/$ compatibility/samsung-galaxy-s3/ [L,R=301]
 
-RewriteRule ^GPS-and-geofencing\.html$ gps-and-geofencing\.html [L,R=301]
 RewriteRule ^pricing\.html$ store\.html [L,R=301]
 RewriteRule ^index\.html$ http://pumpic.com/ [L,R=301]
 RewriteRule ^features\.html$ all-features\.html [L,R=301]
-RewriteRule ^store-trial\.html$ http://pumpic.com/ [L,R=301]
 RewriteRule ^compatibility\.html$ compatibility/ [L,R=301]
-#RewriteRule ^knowledge-center\.html$ \/learning-center/ [L,R=301]
-RewriteRule ^learning-center/ready\-solutions\.html$ learning-center/ready\-solutions/ [L,R=301]
 
 RewriteCond %{REQUEST_URI} !\?
 RewriteCond %{REQUEST_URI} !\&
@@ -153,8 +148,6 @@ RewriteCond %{REQUEST_URI} !\.
 RewriteCond %{REQUEST_URI} !\/$
 RewriteRule ^(.*[^\/])$ /$1/ [R=301,L]
 
-#redirect devices
-RewriteRule ^compatibility/Samsung\-I9300\-Galaxy\-S\-III/$ http://pumpic.com/compatibility/Samsung\-I9300\-Galaxy\-S\-III\-\(S3\)/ [L,R=301]
 
 RewriteRule ^compatibility/results(.+)$ search.html [L]
 # Android 

@@ -100,7 +100,7 @@
     title="Pumpic App Makes You Even Better Parent"
     blockBg='light'}
 	
-	<img class="app-icon-left" src="{$img}/landings/icon-how-to-block-texts-on-Android.png" alt="Block Texts on Android">
+	<img class="app-icon-left" src="{$img}/landings/icon-how-to-block-texts-on-Android.png" style="margin-top: -18px;" alt="Block Texts on Android">
 	<p>The time minors spend using digital media has ballooned over the recent years. As reported by the CNN, average time a teen or tween spends daily in front of a screen has reached a scandalous number of 9 hours. And in case you are about to turn off your TV as a proof of your good parenting skills, hang on a moment and rethink your impulsive decision. The study also shows that children spend only 1 hour a day in front of that particular screen. The rest is spent on their smartphones and tablets, damaging their eyesight and exposing them to many dangers on the Internet.</p>
         
         <!-- BLOCK STATISTICK -->
@@ -152,9 +152,9 @@
 				<p>Although most devices have some built-in functions to track location and limit phone usage, it's clearly not enough to shield our dear ones from cyberbullying, which is known to be a major reason of teenage suicides. The same goes for explicit web content, which can harm their psychological development.</p>
 				<p>Parents usually try to control web content on devices, but often overlook different ways of communication: Facebook Messenger, Snapchat, WhatsApp, Viber, Kik, Skype, and <a class="a-default" target="_blank" href="/sms-monitoring-software.html">text messaging (SMS, MMS)</a>. Skimming through messages might be a bit too late. Some of the messages should be never seen. Therefore, here what you can prevent once you learn how to block messages on an Android phone.</p>
 				<ul class="list-images">
-				<li><img src="/images/landings/mark.png" alt="Check Mark" class="lc-1" />Cyberbullying. You take your son or daughter away from a bad company of bullies into a safe place called home. But then he or she becomes an easy target of cyberbullies through the phone and different messengers.</li>
-				<li><img src="/images/landings/mark.png" alt="Check Mark" class="lc-1" />Online predators. They search for vulnerable teenagers online, but can reach them through texts later on. And even if a child wants to put an end to such communication, he or she doesn’t know how and is ashamed to ask for help when it’s gone too far.</li>
-				<li><img src="/images/landings/mark.png" alt="Check Mark" class="lc-1" />Identity theft. Teens may text some innocent common things to a new friend or a stranger. However, that information in wrong hands can facilitate child’s identity theft, which is reported to become a fairly common crime nowadays.</li>
+				<li><img src="/images/landings/mark.png" alt="Check Mark" style="left: -30px;" />Cyberbullying. You take your son or daughter away from a bad company of bullies into a safe place called home. But then he or she becomes an easy target of cyberbullies through the phone and different messengers.</li>
+				<li><img src="/images/landings/mark.png" alt="Check Mark" style="left: -30px;" />Online predators. They search for vulnerable teenagers online, but can reach them through texts later on. And even if a child wants to put an end to such communication, he or she doesn’t know how and is ashamed to ask for help when it’s gone too far.</li>
+				<li><img src="/images/landings/mark.png" alt="Check Mark" style="left: -30px;" />Identity theft. Teens may text some innocent common things to a new friend or a stranger. However, that information in wrong hands can facilitate child’s identity theft, which is reported to become a fairly common crime nowadays.</li>
 				<p>Although your children spend more time looking at their screens and texting than listening to you, don't disregard the importance of an honest talk with a minor about probable dangers in both real and digital worlds.</p>
             </div>
         </div>

@@ -31,6 +31,7 @@
                 topmenu_active (test): alias меню, которое будет подсвечиваться активным. 
         *}
 	{include file='../../includes/main/main-top-menu.tpl' 
+                show_control_panel_link="1"
                 cache_id = "includes_main_main-top-menu"
                 nocache    
         }

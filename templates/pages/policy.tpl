@@ -16,6 +16,7 @@
     <!-- END FLY BLOCKS-->
 	<div class="wrapper">
 		{include file='../includes/main/main-top-menu.tpl' 
+                        show_control_panel_link="1"
                         cache_id = "includes_main_main-top-menu"
                         nocache
                 }

@@ -17,6 +17,7 @@
         {nocache}    
             {include file='../includes/main/main-top-menu.tpl' 
                     topmenu_active="compatibility"
+                    show_control_panel_link="1"
             }	
             
             {* cache_id = "includes_main_main-top-menu"

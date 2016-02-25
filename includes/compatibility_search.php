@@ -11,7 +11,8 @@ $b_dir = dirname( $_inc ); // folder sites directory
  // LastModified
 
 $filename = dirname(dirname(__FILE__)).'/templates/pages/compatibility/search.tpl';
-if(file_exists($filename)) {
+
+/*if(file_exists($filename)) {
     $LastModified_unix = filemtime($filename); // время последнего изменения страницы
     $LastModified = gmdate("D, d M Y H:i:s \G\M\T", $LastModified_unix);
     $IfModifiedSince = false;
@@ -24,11 +25,11 @@ if(file_exists($filename)) {
         exit;
     }
     header('Last-Modified: '. $LastModified);   
-}
+}*/
 require_once $_inc.'/functions.php';
 
  $smarty->caching = false;
- $smarty->compile_check = false;
+ $smarty->compile_check = true;
  $smarty->force_compile = false;
  $smarty->debugging = false;
  $smarty->cache_modified_check = true;

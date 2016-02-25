@@ -61,28 +61,17 @@
                                 <a href="/faq.html">Help & Contacts</a>
                             </li>
                             
-                            {* <li>
-                                <a href="http://demo.{$domain}/setDevice/125?redirect_url=cp/calls">Demo</a>
-                            </li> *}
-                            
-                            {* <li>
-                                {if ''|hasUser} 
-                                    <a href="https://cp.{$domain}/" class="btn btn-sm btn-success hidden-lg cp-login"><i class="icon-lock"></i> Control Panel</a>
-                                {else}
-                                    <a href="{if ''|detectedDev}/login.html{else}#{/if}" class="btn btn-sm btn-success hidden-lg cp-login"><i class="icon-lock"></i> Log In</a>
-                                {/if}   
-
-                            </li> *}
-                            
                             {nocache}
-                            <li>
-                                {if ''|hasUser} 
-                                    <a href="https://cp.{$domain}/">Control Panel</a>
-                                {else}
-                                    <a href="{if ''|detectedDev}/login.html{else}#{/if}">Sign in</a>
-                                {/if}   
+                                {if isset($show_control_panel_link) && $show_control_panel_link}
+                                    <li>
+                                        {if ''|hasUser} 
+                                            <a href="https://cp.{$domain}/">Control Panel</a>
+                                        {else}
+                                            <a href="{if ''|detectedDev}/login.html{else}#{/if}">Sign in</a>
+                                        {/if}   
 
-                            </li>
+                                    </li>
+                                {/if}
                             {/nocache}
 
                             <li>

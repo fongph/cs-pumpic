@@ -6516,14 +6516,14 @@ button.close {
   opacity: 0;
 }
 @font-face {
-  font-family: 'fontello';
-  src: url('../fonts/fontello.eot?36379253');
-  src: url('../fonts/fontello.eot?36379253#iefix') format('embedded-opentype'),
-       url('../fonts/fontello.woff?36379253') format('woff'),
-       url('../fonts/fontello.ttf?36379253') format('truetype'),
-       url('../fonts/fontello.svg?36379253#fontello') format('svg');
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'fontello';
+    src: url('../fonts/fontello.eot?11145561');
+    src: url('../fonts/fontello.eot?11145561#iefix') format('embedded-opentype'),
+        url('../fonts/fontello.woff?11145561') format('woff'),
+        url('../fonts/fontello.ttf?11145561') format('truetype'),
+        url('../fonts/fontello.svg?11145561#fontello') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
@@ -6542,11 +6542,11 @@ button.close {
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'fontello';
-    src: url('../font/fontello.svg?36379253#fontello') format('svg');
+    src: url('../font/fontello.svg?11145561#fontello') format('svg');
   }
 }
 */
- 
+
  [class^="icon-"]:before, [class*=" icon-"]:before {
   font-family: "fontello";
   font-style: normal;
@@ -6563,7 +6563,7 @@ button.close {
   /* For safety - reset parent styles, that can break glyph codes*/
   font-variant: normal;
   text-transform: none;
-     
+ 
   /* fix buttons height, for twitter bootstrap */
   line-height: 1em;
  
@@ -6574,46 +6574,59 @@ button.close {
   /* you can be more comfortable with increased icons size */
   /* font-size: 120%; */
  
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+ 
   /* Uncomment for 3D effect */
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
-
  
-.icon-angle-double-right:before { content: '\e800'; } /* '' */
-.icon-lock:before { content: '\e801'; } /* '' */
-.icon-android:before { content: '\e802'; } /* '' */
-.icon-apple:before { content: '\e803'; } /* '' */
-.icon-windows:before { content: '\e804'; } /* '' */
-.icon-info-circled:before { content: '\e805'; } /* '' */
-.icon-mail:before { content: '\e806'; } /* '' */
-.icon-right-open:before { content: '\e807'; } /* '' */
-.icon-ok:before { content: '\e808'; color: #16a89e;} /* '' */
-.icon-down-dir:before { content: '\e809'; } /* '' */
-.icon-cancel:before { content: '\e80b'; color: #cf4857;} /* '' */
-.icon-angle-down:before { content: '\e80c'; } /* '' */
-.icon-blackberry:before { content: '\e80d'; } /* '' */
+.icon-eye-closed:before { content: '\e800'; } /* '' */
+.icon-eye:before { content: '\e801'; } /* '' */
+.icon-angle-double-right:before { content: '\e802'; } /* '' */
+.icon-lock:before { content: '\e803'; } /* '' */
+.icon-android:before { content: '\e804'; } /* '' */
+.icon-apple:before { content: '\e805'; } /* '' */
+.icon-windows:before { content: '\e806'; } /* '' */
+.icon-info-circled:before { content: '\e807'; } /* '' */
+.icon-mail:before { content: '\e808'; } /* '' */
+.icon-right-open:before { content: '\e809'; } /* '' */
+.icon-ok:before { content: '\e80a'; color: #16a89e; } /* '' */
+.icon-down-dir:before { content: '\e80b'; } /* '' */
+.icon-ok-1:before { content: '\e80c'; } /* '' */
+.icon-cancel:before { content: '\e80d'; color: #cf4857; } /* '' */
+.icon-angle-down:before { content: '\e80e'; } /* '' */
+.icon-blackberry:before { content: '\e80f'; } /* '' */
 
+.icon-apple-fly:before {
+    content: '\e805';
+    color: #cff1f1;
+    font-size: 16px;
+}
 
-.icon-apple-fly:before { content: '\e803'; color: #cff1f1;
-    font-size: 16px;  }
+.text-gray:before {
+    color: #9c9c9c;
+}
+
 .box-features-header-item div > ul li:before {
-  font-family: "fontello_list";
-/*  font-size: 1px;  */
-  font-style: normal;
-  font-weight: normal;
-  speak: none;
-  position: relative;
-  display: inline-block;
-  text-decoration: inherit;
-  width: 1em;
-  text-align: center;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1em;
-  font-size: 40%; 
-  content: '\e800';
-  top: -2px;
-  padding: 0px 0px 0px 0px;
+    font-family: "fontello_list";
+    /*  font-size: 1px;  */
+    font-style: normal;
+    font-weight: normal;
+    speak: none;
+    position: relative;
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1em;
+    text-align: center;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1em;
+    font-size: 40%; 
+    content: '\e800';
+    top: -2px;
+    padding: 0px 0px 0px 0px;
 }
 /* Preload images */
 body:after {
@@ -8817,6 +8830,14 @@ div.blockquate_bottom {
 
 .text-danger {
   color: #cf4857;
+}
+
+.text-danger {
+  color: #cf4857;
+}
+
+.text-gray {
+    color: #9c9c9c;
 }
 
 .header .container {
@@ -14441,7 +14462,7 @@ form.form-faq .box-captcha {
     background: #fff;
     position: absolute;
     padding: 10px 0px;
-    top: 575px;
+    top: 580px;
     width: 100%;
     z-index: 9;
     height: 55px;
@@ -16309,7 +16330,7 @@ span.text-success {
   font-size: 27px;
   color: #16a89e;
   height: 37px;
-  padding: 20px 0 0;
+  padding: 5px 0 0;
 }
 .list-group-item-heading small {
   display: block;

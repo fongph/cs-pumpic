@@ -65,31 +65,31 @@
                         <div class="list-group-box">
                             <div class="list-group">
                                 <ul >
-                                  <li href="#" class="list-group-item text-center pb35">
+                                  <li href="#" class="list-group-item text-center">
                                     <h4 class="list-group-item-heading"><i class="icons ico-jailbreak"></i> Jailbreak Solution </h4>
-                                    {*<small>Requirements:</small>*}
+                                    <div><span class="icon-apple text-success"></span> ({$ver_ios_bot} - {$ver_jailbreak_up})</div>
                                   </li>
                                   <li href="#" class="list-group-item">
                                     <p class="list-group-item-text">
-                                        <span class="title"><i class="icon-ok"></i> Jailbreak - <span class="text-success">Required</span></span>
+                                        <span class="title"><i class="icon-ok text-success"></i> Jailbreak - <span class="text-success">Required</span></span>
                                         <span>You need to jailbreak the target iOS device ({$ver_ios_bot} - {$ver_jailbreak_up}) before installing <br />the app.{*You need to jailbreak the target iOS device before installing the app.*}</span>
                                     </p>
                                   </li>
                                   <li href="#" class="list-group-item">
                                     <p class="list-group-item-text">
-                                        <span class="title"><i class="icon-ok"></i> Physical Access - <span class="text-success">Required</span></span>
-                                        <span>You need physical access to the target device to install the app on it.</span>
+                                        <span class="title"><i class="icon-ok text-success"></i> Physical Access - <span class="text-success">Required</span></span>
+                                        <span>You need physical access to the target device to install the app on it.<br>&nbsp;</span>
                                     </p>
                                   </li>
                                   <li href="#" class="list-group-item">
                                     <p class="list-group-item-text">
-                                        <span class="title"><i class="icon-ok"></i> The app is <span class="text-success">Visible</span></span>
+                                        <span class="title"><i class="icon-eye text-success"></i> The app is <span class="text-success">Visible</span></span>
                                         <span>Pumpic is visible on the target device. However, to disable it, change settings, or delete the app a secret code is required.</span>
                                     </p>
                                   </li>
                                   <li href="#" class="list-group-item">
                                     <p class="list-group-item-text">
-                                        <span class="title"><i class="icon-cancel"></i> iCloud Password - <span class="text-danger">Not Required</span></span>
+                                        <span class="title"><i class="icon-cancel text-gray"></i> iCloud Password - <span class="text-gray">Not Required</span></span>
                                         <span>You do not need to know iCloud password of the target iOS device.</span>
                                     </p>
                                   </li>
@@ -274,31 +274,31 @@
                             </div>
                             <div class="list-group list-group-bg">
                                 <ul >
-                                  <li href="#" class="list-group-item text-center pb35">
+                                  <li href="#" class="list-group-item text-center">
                                     <h4 class="list-group-item-heading"><i class="icons ico-cloud"></i> iCloud Solution </h4>
-                                    {*<small>Requirements:</small>*}
+                                    <div><span class="icon-apple text-success"></span> ({$ver_icloud_bot} - {$ver_icloud_up})</div>
                                   </li>
                                   <li href="#" class="list-group-item">
                                     <p class="list-group-item-text">
-                                        <span class="title"><i class="icon-cancel"></i> Jailbreak - <span class="text-danger">Not Required</span></span>
+                                        <span class="title"><i class="icon-cancel text-gray"></i> Jailbreak - <span class="text-gray">Not Required</span></span>
                                         <span>You do not need to jailbreak the target iOS device ({$ver_icloud_bot} - {$ver_icloud_up}) before installing the app.</span>
                                     </p>
                                   </li>
                                   <li href="#" class="list-group-item">
                                     <p class="list-group-item-text">
-                                        <span class="title"><i class="icon-cancel"></i> Physical Access - <span class="text-danger">Not Required</span></span>
-                                        <span>You do not need to install the app on the target device.</span>
+                                        <span class="title"><i class="icon-cancel text-gray"></i> Physical Access - <span class="text-gray">Not Required</span></span>
+                                        <span>You do not need physical access to the target device unless you need to check iCloud or backup settings & perform a backup manually.</span>
                                     </p>
                                   </li>
                                   <li href="#" class="list-group-item">
                                     <p class="list-group-item-text">
-                                        <span class="title"><i class="icon-cancel"></i> The app is <span class="text-danger">Invisible</span></span>
-                                        <span>Pumpic remains invisible on the target device. You don’t need to install the app, and thus, no one will be able to delete it.</span>
+                                        <span class="title"><i class="icon-eye-closed text-gray"></i> The app is <span class="text-gray">Not Required</span></span>
+                                        <span>You don’t need to install the app, and thus, no one will be able to delete it.<br/>&nbsp;</span>
                                     </p>
                                   </li>
                                   <li href="#" class="list-group-item">
                                     <p class="list-group-item-text">
-                                        <span class="title"><i class="icon-ok"></i> iCloud Password - <span class="text-success">Required</span></span>
+                                        <span class="title"><i class="icon-ok text-success"></i> iCloud Password - <span class="text-success">Required</span></span>
                                         <span>You need to know iCloud password of the target iOS device.</span>
                                     </p>
                                   </li>

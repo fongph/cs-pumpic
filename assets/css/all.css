@@ -346,6 +346,14 @@ div.blockquate_bottom {
   color: #cf4857;
 }
 
+.text-danger {
+  color: #cf4857;
+}
+
+.text-gray {
+    color: #9c9c9c;
+}
+
 .header .container {
   padding: 12px 10px;
 }
@@ -5968,7 +5976,7 @@ form.form-faq .box-captcha {
     background: #fff;
     position: absolute;
     padding: 10px 0px;
-    top: 575px;
+    top: 580px;
     width: 100%;
     z-index: 9;
     height: 55px;

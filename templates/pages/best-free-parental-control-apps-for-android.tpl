@@ -74,7 +74,7 @@
             textAlign = "left"
             title = "Best Free Android </br>Parental Control Apps"
             titleSize = "35px"
-            description = "Check out the best free parental control software for Android.<br />Keep an eye on your kids remotely. Secure family happiness."
+            description = "Check out the reviews of free parental control software for Android.<br />Keep an eye on your kids remotely. Secure family happiness."
             promoBuyBlock = "no"
             planPackageBuy = "yes"
             block_video = "yes"
@@ -107,7 +107,7 @@
                 <p>Smartphones and tablets connected to the Internet have become a trivial part of our world. Everyone’s got one. Meanwhile, many children find out how to use mobile devices before they can actually speak. And all these technologies go along kids’ lives, make them more curios, help to educate themselves, and very often expose them to danger.</p>
 				<p>Cyberbullies insult kids on social media; haunt and offend them on instant chats. This horrible issue is known to be a major suicide factor among teens. Online predators try to gain children’s confidence and make them swallow the hook. Sexting is becoming a normal way of communication, while exchanging nude photos – the best way to show one’s feelings. Moreover, the Internet is full of explicit sexuality, violence, and hate. Our kids have unlimited access to all of this. At any time. With one single click. On their smartphone and tablets. And parents don’t know.</p>
 				<p><a class="a-default" href="http://pumpic.com/android-parental-monitoring.html">Android parental monitoring applications</a> allow parents to bring the situation under control and protect their children. Pumpic is a good example of reliable protection in this case. Such software lets you follow kids’ activities on mobile devices as well as the Internet. Apply parental controls and see what your kids are texting, which websites they visit and people they talk to. Block undesired content inappropriate for kids. Block apps and other activities to prevent them from wasting time.</p>
-				<p>Check out our list below and find your best free parental control app for Android.</p>
+				<p>Check out our list below and choose the best Android parental control app.</p>
             </div>
         </div>
     </div>    
@@ -410,7 +410,7 @@
         
         <div class="dark">
     <div class="container">
-            <h2 class="text-center testimonial-title">Trusted by Over 10,000 Customers Worldwide:</h2>
+            <h2 class="text-center testimonial-title">Trusted by Over 10 000 Customers Worldwide:</h2>
             <div class="row">
                 
                 <div class="bxSliders only-pc">

@@ -96,7 +96,7 @@
 {Content 
     styleTitle=""
     title=""
-    blockBg='dark'}
+    blockBg='light'}
     
     <div id="grid-images" class="row">
         <div class="col-lg-12 col-md-12 col-sm-12">
@@ -104,9 +104,32 @@
             <div class="pt30 pb20">
                 <p>When choosing a cell phone for children careful parents should make sure that in addition to various opportunities and convenience, such a device also provides safety for your little loved ones.</p>
 				<p>Many producers of mobile gadgets have designed special safe phones for kids. Thus, they maintain necessary functions of an ordinary cell phone and at the same time include some other features you will find helpful for children in case of emergency.</p>
-				<p>We have selected some cell phones for children considered the best. Have a look at the list below to make you own choice.</p>
 				<p>And remember that Pumpic provides you with even better parental control opportunities and your kids – with more reliable protection. The app allows monitoring your child’s device remotely, control its use, and set all required restrictions for your kids’ security. It can be installed on any cell phone as well as any tablet and used easily from anywhere you are.</p>
-				<p>Kajeet | Firefly glowPhone | Kytephone | LG Migo | Just5 J510 | Samsung Factor | Nokia Lumia 710</p>
+            </div>
+        </div>
+    </div>    
+{EndContent}
+
+{Content 
+    styleTitle=""
+    title=""
+    blockBg='dark'}
+    
+    <div id="grid-images" class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+            <h2 class="h2 text-center">Regular Phone or Safe Phone for Kids: Which One to Choose?</h2>
+            <div class="pt30 pb20">
+                <img src="{$img}/landings/cell-phones-for-kids.png" style="float: right; padding-left: 35px;" alt="" />
+                <p>Like it or not, tablets and smartphones are inherent to your child's’ life. Manufacturers are quick to respond to this trend with devices like Kajeet, Firefly glowPhone, Kytephone, LG Migo, Just5 J510, Samsung Factor, Nokia Lumia 710, etc. Yet, there’s also a trend for kids to use their parent’s old devices before getting a tablet or a smartphone of their own. Besides, kid-friendly products might seem too childish for kids of certain age groups.</p>
+                <p>Do child-friendly tablets suit your child? Or maybe an iPad mini is still a better fit? Here are several practical factors that you might need to consider when deciding on tablets and cell phones for children.</p>
+                <h3>Parent Control Software</h3>
+                <p>Parent control is a must-have feature for connected devices used by children. As you can expect, functionality of this kind is conveniently available out of the box in smartphone that cater to children.</p>
+                <p>For more “grown up” alternatives, consider Pumpic mobile monitoring. While this option implies additional steps and expenses, such an app encourages more proactive protection for your children and ensures parents that kids are safe on their devices.</p>
+                <h3>Durability</h3>
+                <p>Rubberized edges and recessed screens may look unappealing to many, but they actually are the key selling points of cell phones for kids. Given the way younger kids treat their toys, a sturdy case with a bumper is a necessity. To make child-proof features even more lucrative for customers, some companies offer warranties for mechanical damage.</p>
+                <p>You might have noticed that regular phones aren’t as durable. Most of them can survive a drop or two, but this is nothing compared to the battering a child-proof cell can take. However, if your kid is old enough to handle things with care, a standard phone might actually be a better buy that can teach them to value things. Besides, you can always use a protective case for a regular device.</p>
+                <h3>Cell Phones Versus Safe Phones for Kids</h3>
+                <p>So which one is better? A couple a years ago, a regular small-sized cell could actually look like a worthy purchase. Today, you can still consider devices of this type if you are looking for a full-fledged device for a teenager. Yet, the plethora of kid-friendly products provide a wide array of options to choose from, especially if you consider the prices for this category of products.</p>
             </div>
         </div>
     </div>    
@@ -118,7 +141,7 @@
                 <div class="row">
                         <div class="col-sm-4 col-md-4 col-lg-4">
                                 <div class="feature">
-                                        <img src="{$img}/icons/icon-mobile-secure.png" alt="cell phone monitoring">
+                                        <img src="{$img}/icons/icon-mobile-secure.png" alt="cell phone monitoring" />
                                         <h3>Control mobile phone use</h3>
                                         <ul class="feature_list">
                                                 <li>View call logs and SMS</li>
@@ -159,21 +182,9 @@
         blockBg="dark"
         } 
         
-        {include file='../includes/content/ipad.tpl' 
-                blockBg="light"
-                imgUrl = "parental_control/ipad.png"
-                imgAlt = "Apple iOS. iPad"
-                title = "Use Control Panel Easily"
-				description = "Enter your Control Panel to see all the data from the target device. You can log in on any computer, laptop, or mobile gadget. In addition to viewing essential information on cell phones for children, the Pumpic app also lets you control them remotely, set limits, and apply restrictions via your Control Panel."
-                textAlign = "left"
-        }
-        
-        {* description = "Install the iPad parental control app on your kid’s tablet and start monitoring right away. Log in to your Control Panel and view all the information from the target device. It can be accessed from anywhere including desktop computers, laptops, smartphones, and tablets. In addition to data monitoring, the Control Panel allows you to set limits, block tablet activities, and lock the target device permanently."             
-        *}
-        
-        <div class="dark">
+        <div class="light">
     <div class="container">
-            <h2 class="text-center testimonial-title">Trusted by Over 10,000 Customers Worldwide:</h2>
+            <h2 class="text-center testimonial-title">Trusted by Over 10 000 Customers Worldwide:</h2>
             <div class="row">
                 
                 <div class="bxSliders only-pc">
@@ -210,13 +221,14 @@
     </div>
 </div>
 
+        {include file='../includes/content/banners/index.tpl'}
+		
         {include file='../includes/main/main-quick-link.tpl' 
             blockBg="light"
         }        
         
         {*{include file='../includes/content/banners/banner-promo-trial.tpl'}*}
         
-        {include file='../includes/content/banners/index.tpl'}
         <!-- END CONTENT -->    
            
         <!-- RECOMMENDED -->

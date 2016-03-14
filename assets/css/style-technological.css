@@ -891,11 +891,6 @@ dl.table-rows.block-left {
         margin-left: -45px;
     }
     
-    #block-compatibility-table.ios-table .div-table-column,
-    #block-compatibility-table.android-table .div-table-column {
-        border-right: none;
-    }
-    
     #block-compatibility-table.ios-table > .table-body {
         border-left: 1px solid #e7e7e7;
     }

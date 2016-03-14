@@ -5,14 +5,14 @@
     
         <div class="row">
 
-            <div class="{if isset($onlyItem)}block-only-item col-md-4 col-lg-4{else}table-col-12 table-sm-col-3{/if} model-center">
+            <div class="{if isset($onlyItem)}block-only-item col-md-4 col-lg-4{else}table-col-12 table-sm-col-3 table-sm-col-offset-3{/if} model-center">
                 {if isset($descriptions)}
                     <article>{$descriptions}</article>
                 {/if}
                 
                 <!-- left table #1 -->
                 {if !isset($onlyItem) || isset($onlyItem) && $onlyItem == "android"}
-                <div class="{if !isset($onlyItem)}col-md-4 col-lg-4 padding-null{/if}">
+                <div class="{if !isset($onlyItem)}{if isset($lang)}col-md-offset-2{/if} col-md-4 col-lg-4 padding-null{/if}">
 
                     <div id="block-compatibility-table" class="android-table">
 
@@ -172,7 +172,7 @@
                 </div>
                 {/if}
                 
-                {if !isset($onlyItem) || isset($onlyItem) && $onlyItem == "icloud"}
+                {if (!isset($onlyItem) || isset($onlyItem) && $onlyItem == "icloud") && !isset($lang)}
                 <div class="{if !isset($onlyItem)}col-md-4 col-lg-4 padding-null{/if}">
 
                     <div id="block-compatibility-table" class="ios-table">

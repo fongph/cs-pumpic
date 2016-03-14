@@ -6598,6 +6598,7 @@ button.close {
 .icon-cancel:before { content: '\e80d'; color: #cf4857; } /* '' */
 .icon-angle-down:before { content: '\e80e'; } /* '' */
 .icon-blackberry:before { content: '\e80f'; } /* '' */
+.icon-icloud:before { content: '\e810'; } /* '' */
 
 .icon-apple-fly:before {
     content: '\e805';

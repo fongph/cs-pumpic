@@ -6598,6 +6598,7 @@ button.close {
 .icon-cancel:before { content: '\e80d'; color: #cf4857; } /* '' */
 .icon-angle-down:before { content: '\e80e'; } /* '' */
 .icon-blackberry:before { content: '\e80f'; } /* '' */
+.icon-icloud:before { content: '\e810'; } /* '' */
 
 .icon-apple-fly:before {
     content: '\e805';
@@ -21180,9 +21181,6 @@ dl.table-rows.block-left {
 #block-compatibility-table {
     background: #f9f9f9;
 }
-#block-compatibility-table.ios-table > .table-header {
-    border-right: 0px;
-}
 #block-compatibility-table > .table-header {
     background: #16a89e;
     border-right: 1px solid #30c1b7;
@@ -21211,7 +21209,7 @@ dl.table-rows.block-left {
     border-bottom: 1px solid #e7e7e7;
     padding: 15px 10px;
     
-    font-size: 14px;
+    font-size: 12px;
     line-height: 14px;
     color: #c8c8c8;
 }
@@ -21233,17 +21231,17 @@ dl.table-rows.block-left {
 }
 
 #block-compatibility-table .div-table-column {    
-    font-size: 17px;
+    font-size: 13px;
     line-height: 15px;
     color: #4d4f5b;
 }
 
 #block-compatibility-table.android-table .div-table-column { 
-    padding: 25px 20px;
+    padding: 15px 10px;
 }
 #block-compatibility-table.ios-table .div-table-column { 
 /*    padding: 14px 25px;*/
-    padding: 25px 20px;
+    padding: 15px 10px;
 }
 
 #block-compatibility-table.ios-table .div-table-column,
@@ -21264,14 +21262,6 @@ dl.table-rows.block-left {
 
 /* ========= \\ responce ========== */
 @media only screen and (max-width: 480px) {
-    .div-table-row {
-        display: block;
-    }
-    
-    .div-table-row > .div-table-column {
-        display: block;
-    }
-    
     #box-coming-soon-list .item-bottom,
     #box-features-list .item-buttom,
     #box-features-list > .div-table-row > .item-feature-list {
@@ -21337,7 +21327,7 @@ dl.table-rows.block-left {
     
     #block-compatibility-table.ios-table .div-table-column,
     #block-compatibility-table.android-table .div-table-column {
-        border-right: none;
+        border-right: 1px solid #e7e7e7;
     }
     
     #block-compatibility-table.ios-table > .table-body {
@@ -21346,14 +21336,6 @@ dl.table-rows.block-left {
     
 }
 @media (min-width: 468px) { 
-    .div-table-row {
-        display: block;
-    }
-    
-    .div-table-row > .div-table-column {
-        display: block;
-    }
-    
     #box-coming-soon-list .item-bottom,
     #box-features-list .item-buttom,
     #box-features-list > .div-table-row > .item-feature-list {
@@ -21419,7 +21401,7 @@ dl.table-rows.block-left {
     
     #block-compatibility-table.ios-table .div-table-column,
     #block-compatibility-table.android-table .div-table-column {
-        border-right: none;
+        border-right: 1px solid #e7e7e7;
     }
     
     #block-compatibility-table.ios-table > .table-body {
@@ -21427,14 +21409,6 @@ dl.table-rows.block-left {
     }
 }
 @media (min-width: 768px) {
-    .div-table-row {
-        display: block;
-    }
-    
-    .div-table-row > .div-table-column {
-        display: block;
-    }
-    
     #box-coming-soon-list .item-bottom,
     #box-features-list .item-buttom,
     #box-features-list > .div-table-row > .item-feature-list {
@@ -21665,6 +21639,14 @@ dl.table-rows.block-left {
     
     #block-compatibility-table.ios-table > .table-body {
         border-left: 0px;
+    }
+    
+    #block-compatibility-table .div-table-column {
+        font-size: 15px;
+    }
+    
+    #block-compatibility-table > .table-body > div {
+        font-size: 14px;
     }
 }
 

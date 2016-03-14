@@ -1,8 +1,8 @@
 <div class="row">
-    <div class="col-sm-4 col-md-4 col-sm-offset-2 col-md-offset-2 col-lg-offset-2">
+    <div class="col-sm-4 col-md-4">
             <div class="thumb">
                     <span class="ico-left"><i class="icon-apple"></i></span>
-                    <span>OS:<strong> iOS (with jailbreak)</strong></span>
+                    <span>OS:<strong> iOS</strong></span>
                     <span>Versions:<strong> {$ver_ios_bot} - {$ver_ios_up}</strong></span>
                     <span><strong>iPhone, iPad, iPod Touch</strong></span>
                     <a href="/compatibility/ios-devices" 
@@ -19,12 +19,13 @@
                        class="text-succes search-category a-default" data-os="Android">View list of Android devices</a>
             </div>
     </div>
-    {*<div class="col-sm-4 col-md-4">
+    <div class="col-sm-4 col-md-4">
             <div class="thumb">
-                    <span class="ico-left"><i class="icon-blackberry"></i></span>
-                    <span>OS:<strong> BlackBerry</strong></span>
-                    <span>Versions:<strong> 7.0 – 7.1</strong></span>
-                    <a href="#" class="text-succes search-category" attr_os="blackberry">View all supported BlackBerry devices</a>
+                    <span class="ico-left"><i class="icon-icloud"></i></span>
+                    <span>OS: <strong>iOS</strong> (no jailbreak is required)</span>
+                    <span>Versions: <strong>{$ver_icloud_bot} - {$ver_icloud_up}</strong></span>
+                    <span><strong>iPhone, iPad, iPod Touch</strong></span>
+                    <a href="/compatibility/ios-devices" class="text-succes search-category a-default" attr_os="iOS">All devices</a>
             </div>
-    </div>*}
+    </div>
 </div>

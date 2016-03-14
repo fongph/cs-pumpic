@@ -5,14 +5,14 @@
     
         <div class="row">
 
-            <div class="{if isset($onlyItem)}block-only-item col-md-6 col-lg-6{else}table-col-8 table-sm-col-3{/if} model-center">
+            <div class="{if isset($onlyItem)}block-only-item col-md-4 col-lg-4{else}table-col-12 table-sm-col-3{/if} model-center">
                 {if isset($descriptions)}
                     <article>{$descriptions}</article>
                 {/if}
                 
                 <!-- left table #1 -->
                 {if !isset($onlyItem) || isset($onlyItem) && $onlyItem == "android"}
-                <div class="{if !isset($onlyItem)}col-md-6 col-lg-6 padding-null{/if}">
+                <div class="{if !isset($onlyItem)}col-md-4 col-lg-4 padding-null{/if}">
 
                     <div id="block-compatibility-table" class="android-table">
 
@@ -94,7 +94,7 @@
                 {/if}
                 <!-- left table #1 -->
                 {if !isset($onlyItem) || isset($onlyItem) && $onlyItem == "ios"}
-                <div class="{if !isset($onlyItem)}col-md-6 col-lg-6 padding-null{/if}">
+                <div class="{if !isset($onlyItem)}col-md-4 col-lg-4 padding-null{/if}">
 
                     <div id="block-compatibility-table" class="ios-table">
 
@@ -164,13 +164,92 @@
                                 </div>
                             </div>
                             
+                        {/if}
+                        
+                    </div>
+
+
+                </div>
+                {/if}
+                
+                {if !isset($onlyItem) || isset($onlyItem) && $onlyItem == "icloud"}
+                <div class="{if !isset($onlyItem)}col-md-4 col-lg-4 padding-null{/if}">
+
+                    <div id="block-compatibility-table" class="ios-table">
+
+                        {if isset($lang) && $lang == "bra"}
+                            
+                            <div class="table-header">
+                                <section><span class="title">monitoramento iCloud <i class="icon-icloud"></i></span></section>
+                            </div> <!-- .table-header -->
+
+                            <div class="table-body">
+                                <div class="text-center">
+                                    {if isset($iosText)}<p>{$iosText}</p>{else}<p>Sem <b>Jailbreak</b> necessário</p>{/if}
+                                </div>
+                                <div>
+
+                                    <div class="div-table">
+                                        <div class="div-table-row">
+                                            <div class="div-table-column"><span>iPhones / iPads / iPods Touch:</span></div>
+                                            <div class="div-table-column"><span class="color-green">{if isset($versionIOS)}{$versionIOS}{else}iOS {$ver_icloud_bot} - {$ver_icloud_up}{/if}</span></div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            
+                        {elseif isset($lang) && $lang == "de"}
+                            
+                            <div class="table-header">
+                                <section><span class="title">iCloud Überwachung <i class="icon-icloud"></i></span></section>
+                            </div> <!-- .table-header -->
+
+                            <div class="table-body">
+                                <div class="text-center">
+                                    {if isset($iosText)}<p>{$iosText}</p>{else}<p>Kein <b>Jailbreak</b> erforderlich.</p>{/if}
+                                </div>
+                                <div>
+
+                                    <div class="div-table">
+                                        <div class="div-table-row">
+                                            <div class="div-table-column"><span>iPhones / iPads / iPods Touch:</span></div>
+                                            <div class="div-table-column"><span class="color-green">{if isset($versionIOS)}{$versionIOS}{else}iOS {$ver_icloud_bot} - {$ver_icloud_up}{/if}</span></div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            
+                        {else}
+                            
+                            <div class="table-header">
+                                <section><span class="title">iCloud monitoring <i class="icon-icloud"></i></span></section>
+                            </div> <!-- .table-header -->
+
+                            <div class="table-body">
+                                <div class="text-center">
+                                    <p>{if isset($iosText)}{$iosText}{else}No Jailbreak required{/if}</p>
+                                </div>
+                                <div>
+
+                                    <div class="div-table">
+                                        <div class="div-table-row">
+                                            <div class="div-table-column"><span>iPhones / iPads / iPods Touch:</span></div>
+                                            <div class="div-table-column"><span class="color-green">iOS {$ver_icloud_bot} - {$ver_icloud_up}</span></div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            
                         {/if}    
                         
                     </div>
 
 
                 </div>
-                {/if}                
+                {/if}
 
             </div>
 

@@ -499,6 +499,19 @@
             descriptions="The app is compatible with most of modern smartphones and tablets run by iOS and Android. You can check if your particular target device is compatible by finding it in the list on our <a href='/compatibility/'>Compatibility</a> page. Alternatively, you can fill in the form, send us a request, and we will do it for you."
         } 
         
+        {*
+            Template: BLOCK COMPATIBILITY
+            Переменные:
+                blockBg (string): Стиль блока ( dark / light ) *default: dark
+                title (string): название блока.
+                description (string): описание блока.
+                lang: язык (с этим параметром блок icloud отсутствует)
+        *}
+        {include file='../includes/content/compatibility/compatibility-table.tpl'
+            blockBg="dark"
+            lang="esp"
+            descriptions="The app is compatible with most of modern smartphones and tablets run by iOS and Android. You can check if your particular target device is compatible by finding it in the list on our <a href='/compatibility/'>Compatibility</a> page. Alternatively, you can fill in the form, send us a request, and we will do it for you."
+        }
         
         {*
             Template: BLOCK MOBILE OPERATOTS

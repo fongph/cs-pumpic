@@ -204,7 +204,7 @@ class Compatibility {
         // only this OS
         $os_iOS = array(
             'Other features' => array(
-                'icloud_solution'   => '<strong>iCloud monitoring</strong> (without jailbreak up to iOS 8.4.1)',
+                'icloud_solution'   => '<strong>iCloud monitoring</strong> (without jailbreak up to iOS 9.2.1)',
             ),
         );
 
@@ -212,8 +212,7 @@ class Compatibility {
         $addInfo = array(
             'ios' => [
                 'Calls & SMS' => array(
-
-                    'call_log' => '<strong>iOS: For 8.4.1 and older versions Jailbreak is not needed</strong>',
+                    'call_log' => '<strong>iOS: Jailbreak is not needed</strong>',
                     // Calls blocking
                     'lock_device' => '<strong>Jailbreak Needed</strong>',
                     // SMS blocking
@@ -221,7 +220,7 @@ class Compatibility {
                     // SMS daily limiting
                     'sms_daily_limiting' => '<strong>Jailbreak Needed</strong>',
                     'bad_word_sms' => '<strong>Jailbreak Needed</strong>',
-                    'sms_log' => '<strong>iOS: For 8.4.1 and older versions Jailbreak is not needed</strong>'
+                    'sms_log' => '<strong>iOS: Jailbreak is not needed</strong>'
                 ),
                 'Apps Control' => array(
                     // Applications list
@@ -233,14 +232,14 @@ class Compatibility {
                 'Browsing' => array(
                     // Websites blocking
                     'blocking_sites' => '<strong>Jailbreak Needed</strong>',
-                    'browser_history' => '<strong>iOS: For 8.4.1 and older versions Jailbreak is not needed</strong>',
-                    'browser_bookmarks' => '<strong>iOS: For 8.4.1 and older versions Jailbreak is not needed</strong>',
+                    'browser_history' => '<strong>iOS: Jailbreak is not needed</strong>',
+                    'browser_bookmarks' => '<strong>iOS: Jailbreak is not needed</strong>',
                 ),
                 
                 'Social Media' => array( 
-                    'skype' => '<strong>iOS: For 8.4.1 and older versions Jailbreak is not needed</strong>',
+                    'skype' => '<strong>iOS: For 9.0.2 and older versions Jailbreak is not needed</strong>',
                     'viber' => '<strong>Jailbreak Needed</strong>',
-                    'whatsapp' => '<strong>iOS: For 8.4.1 and older versions Jailbreak is not needed</strong>',
+                    'whatsapp' => '<strong>iOS: Jailbreak is not needed</strong>',
                     'facebook' => '<strong>Jailbreak Needed</strong>',
                     'instagram' => '<strong>Jailbreak Needed</strong>',
                     'kik'       => '<strong>Jailbreak Needed</strong>',
@@ -253,7 +252,7 @@ class Compatibility {
                     // Geo-fences
                     'geo_fences'    => '<strong>Jailbreak Needed</strong>',
                     // Photos
-                    'photos' => '<strong>iOS: For 8.4.1 and older versions Jailbreak is not needed</strong>',
+                    'photos' => '<strong>iOS: Jailbreak is not needed</strong>',
                     // Emails
                     'emails' => '<strong>Jailbreak Needed</strong>',
                     // Videos
@@ -261,9 +260,9 @@ class Compatibility {
                     // SMS commands
                     'sms_commands' => '<strong>Jailbreak Needed</strong>',
                     'sim_change_notification' => '<strong>Jailbreak Needed</strong>',
-                    'contacts' => '<strong>iOS: For 8.4.1 and older versions Jailbreak is not needed</strong>',
-                    'calendar' => '<strong>iOS: For 8.4.1 and older versions Jailbreak is not needed</strong>',
-                    'historical_data'  => '<strong>iOS: For 8.4.1 and older versions Jailbreak is not needed</strong>',
+                    'contacts' => '<strong>iOS: Jailbreak is not needed</strong>',
+                    'calendar' => '<strong>iOS: Jailbreak is not needed</strong>',
+                    'historical_data'  => '<strong>iOS: Jailbreak is not needed</strong>',
                     'notes' => '<strong>iOS: For 8.4.1 and older versions Jailbreak is not needed</strong>',
                 ),    
             ],

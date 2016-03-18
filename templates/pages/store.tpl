@@ -173,7 +173,7 @@
                                                                     <li data-toggle="tooltip" data-placement="top" title="Set specific zones and receive alerts once the target device leaves them or enters."><i class="icon-ok"></i> Geo-fences</li>
                                                                     <li data-toggle="tooltip" data-placement="top" title="View contact list including names, addresses, numbers and emails."><i class="icon-ok"></i> Contacts</li>
                                                                     <li data-toggle="tooltip" data-placement="top" title="Monitor scheduled dates and events."><i class="icon-ok"></i> Calendar</li>
-                                                                    <li data-toggle="tooltip" data-placement="top" title="Track Notes on the target iOS device."><i class="icon-ok"></i> Notes</li>
+                                                                    <li data-toggle="tooltip" data-placement="top" title="Track Notes on the target iOS device.<div class='br'><strong>iCloud monitoring up to iOS 8.4.1</strong>"><i class="icon-ok"></i> Notes</li>
                                                                     <li data-toggle="tooltip" data-placement="top" title="View all visited websites."><i class="icon-ok"></i> Browsing history</li>
                                                                     <li data-toggle="tooltip" data-placement="top" title="Block specific websites on a target device."><i class="icon-ok"></i> Websites blocking</li>
 
@@ -308,7 +308,7 @@
                                                                 <li data-toggle="tooltip" data-placement="top" title="Set specific zones and receive alerts once the target device leaves them or enters."><i class="icon-ok"></i> Geo-fences</li>
                                                                 <li data-toggle="tooltip" data-placement="top" title="View contact list including names, addresses, numbers and emails."><i class="icon-ok"></i> Contacts <img src="/images/cloud-grey.png"></li>
                                                                 <li data-toggle="tooltip" data-placement="top" title="Monitor scheduled dates and events."><i class="icon-ok"></i> Calendar <img src="/images/cloud-grey.png"></li>
-                                                                <li data-toggle="tooltip" data-placement="top" title="Track Notes on the target iOS device."><i class="icon-ok"></i> Notes <img src="/images/cloud-grey.png"></li>
+                                                                <li data-toggle="tooltip" data-placement="top" title="Track Notes on the target iOS device.<div class='br'><strong>iCloud monitoring up to iOS 8.4.1</strong>"><i class="icon-ok"></i> Notes <img src="/images/cloud-grey.png"></li>
                                                                 <li data-toggle="tooltip" data-placement="top" title="View all visited websites."><i class="icon-ok"></i> Browsing history <img src="/images/cloud-grey.png"></li>
                                                                 <li data-toggle="tooltip" data-placement="top" title="Block specific websites on a target device."><i class="icon-ok"></i> Websites blocking</li>
 

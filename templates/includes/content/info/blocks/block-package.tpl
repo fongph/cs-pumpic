@@ -1,20 +1,16 @@
 <div class='mt10'>
     <div id='block-promo-buy' class="{if isset($language)}bb-p-buy-{$language}{/if} banner-header-package">
-        <section>
-            <p><i class="plan-header-premium"></i></p>
-            
+        <section class="text-left">
             {if isset($language) && $language == "bra"}
-                <p>Compre o plano de 6 ou 12 
-                <br class="only-pc" />meses e obtenha mais 2 grátis</p>
+                <div class="new-icloud-feature"><img src="{$img}/icons/icon-pumpic-icloud.png" alt="" /><span>NEW!</span></p>
+                <p>Espião iCloud<br class="only-pc" /> para iOS 9.2<br class="only-pc" />&nbsp;</p>
             {elseif isset($language) && $language == "de"}
-                <p>Kaufen Sie den <strong>6</strong> oder <strong>12</strong> Monatsabo 
-                <br class="only-pc" />und <strong>erhalten Sie 2 Monate kostenlos</strong></p>
+                <div class="new-icloud-feature"><img src="{$img}/icons/icon-pumpic-icloud.png" alt="" /><span>NEW!</span></p>
+                <p>Kein Jailbreak iCloud Ausgabe<br class="only-pc" /> Überwachungs <br class="only-pc" /> für iOS 9.2</p>
             {else}
-                <p>Buy <strong>6</strong> or <strong>12</strong> month plan 
-                <br class="only-pc" />and <strong>get 2 plans for free</strong></p>
-            {/if}    
-            
-            
+                <div class="new-icloud-feature"><img src="{$img}/icons/icon-pumpic-icloud.png" alt="" /><span>NEW!</span></p>
+                <p>No Jailbreak iCloud<br class="only-pc" /> Monitoring Edition<br class="only-pc" /> for iOS 9.2</p>
+            {/if}
         </section>
         <section class="vertical-aligh-middle">
             {if isset($planPackageBuyType) && $planPackageBuyType == 'link'}

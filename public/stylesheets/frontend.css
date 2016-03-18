@@ -13381,6 +13381,25 @@ div[id^="attachment_"], div[id*=" attachment_"] {
     line-height: 1.1em;
 }
 
+#block-promo-buy .new-icloud-feature {
+    position: relative;
+    margin: -5px 0 -5px 10px;
+}
+
+#block-promo-buy .new-icloud-feature img {
+    position: absolute;
+    float: left;
+    left: 0px;
+    top: 2px;
+}
+
+#block-promo-buy .new-icloud-feature span {
+    color: #feff8b;
+    font-size: 21px;
+    font-weight: 700;
+    margin-left: 41px;
+}
+
 .btn-yellow, .btn-sm-yellow {
     background: #feff8b;
     color: #4d4f5b;
@@ -17180,7 +17199,7 @@ th .table_title {
 }
 .banner-header-package p:last-child {
     font-size: 14px;
-    line-height: 1.1em;
+    line-height: 1.2em;
 }
 
 .banner-header-package section:last-child {

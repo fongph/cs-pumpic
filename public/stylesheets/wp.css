@@ -11526,13 +11526,16 @@ div[id^="attachment_"], div[id*=" attachment_"] {
 }
 
 #block-promo-buy .new-icloud-feature {
-    position: relative;
     margin: -5px 0 -5px 10px;
+}
+
+#block-promo-buy .new-icloud-feature .label-new {
+    position: relative;
+    display: inline-block;
 }
 
 #block-promo-buy .new-icloud-feature img {
     position: absolute;
-    float: left;
     left: 0px;
     top: 2px;
 }
@@ -11635,6 +11638,7 @@ div[id^="attachment_"], div[id*=" attachment_"] {
     #block-promo-buy section {
         width: auto;
         margin-right: 20px;
+        text-align: left;
     }
     
     #block-promo-buy section:last-child { 

@@ -13382,13 +13382,16 @@ div[id^="attachment_"], div[id*=" attachment_"] {
 }
 
 #block-promo-buy .new-icloud-feature {
-    position: relative;
     margin: -5px 0 -5px 10px;
+}
+
+#block-promo-buy .new-icloud-feature .label-new {
+    position: relative;
+    display: inline-block;
 }
 
 #block-promo-buy .new-icloud-feature img {
     position: absolute;
-    float: left;
     left: 0px;
     top: 2px;
 }
@@ -13491,6 +13494,7 @@ div[id^="attachment_"], div[id*=" attachment_"] {
     #block-promo-buy section {
         width: auto;
         margin-right: 20px;
+        text-align: left;
     }
     
     #block-promo-buy section:last-child { 
@@ -16823,7 +16827,7 @@ th .table_title {
   }
   
   .column-relative > .table_title_v2 {
-      top: 460px;
+      top: 400px;
       left: 0px;
   }
   
@@ -19464,7 +19468,7 @@ form > table.pricing-second:after {
 }
 
 .tb_pricing .refund_new_11{ 
-    top: 566px;
+    top: 482px;
 }
 
 .tb_pricing .support_os,
@@ -19477,7 +19481,7 @@ form > table.pricing-second:after {
 }
 
 .tb_pricing .support_new_os {
-    top: 603px;
+    top: 518px;
 }
 
 .basic_wr{
@@ -19964,7 +19968,7 @@ form > table.pricing-second:after {
         }
         
         .tb_pricing  .refund_new_11 { 
-            top: 584px;
+            top: 482px;
         }
         .tb_pricing .support_os,
         .tb_pricing .support_new_os {
@@ -19976,7 +19980,7 @@ form > table.pricing-second:after {
         }
         
         .tb_pricing .support_new_os { 
-            top: 620px;
+            top: 518px;
         }
         
         .basic_wr .basic_fe{
@@ -20003,7 +20007,7 @@ form > table.pricing-second:after {
     }
     
     .tb_pricing  .refund_new_11 { 
-        top: 584px;
+        top: 482px;
     }
     
     .tb_pricing .support_os,
@@ -20016,7 +20020,7 @@ form > table.pricing-second:after {
     }
     
     .tb_pricing .support_new_os { 
-        top: 619px;
+        top: 518px;
     }
     
         .basic_wr .basic_fe{
@@ -20045,7 +20049,7 @@ form > table.pricing-second:after {
     }
     
     .tb_pricing  .refund_new_11 { 
-        top: 575px;
+        top: 500px;
     }
     
     .tb_pricing .support_os,
@@ -20058,7 +20062,7 @@ form > table.pricing-second:after {
     }
     
     .tb_pricing .support_new_os{ 
-        top: 611px;
+        top: 518px;
     }
 }
 @media only screen and (max-width: 710px) {
@@ -20072,7 +20076,7 @@ form > table.pricing-second:after {
     }
     
     .tb_pricing  .refund_new_11 {
-        top: 575px; 
+        top: 482px; 
     }
     
     .tb_pricing .support_os,
@@ -20085,7 +20089,7 @@ form > table.pricing-second:after {
     }
     
     .tb_pricing .support_new_os { 
-        top: 611px;
+        top: 518px;
     }
     
         .basic_wr .basic_fe{

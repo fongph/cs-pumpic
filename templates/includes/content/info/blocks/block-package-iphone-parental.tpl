@@ -1,8 +1,13 @@
 <div class='mt10'>
     <div id='block-promo-buy' class="banner-header-package">
-        <section class="text-left">
-            <div class="new-icloud-feature"><img src="{$img}/icons/icon-pumpic-icloud.png" alt="" /><span>NEW!</span></p>
-            <p>No Jailbreak iCloud<br class="only-pc" /> Monitoring Edition<br class="only-pc" /> for iOS 9.2</p>
+        <section>
+            <div class="new-icloud-feature">
+                <div class="label-new">
+                    <img src="{$img}/icons/icon-pumpic-icloud.png" alt="" />
+                    <span>NEW!</span>
+                </div>
+                <p>No Jailbreak iCloud<br class="only-pc" /> Monitoring Edition<br class="only-pc" /> for iOS 9.2.1</p>
+            </div>
         </section>
         <section class="vertical-aligh-middle">
             <a class="btn btn-default btn-red-link ga-action-click {if isset($planPackageBuyClass)}{$planPackageBuyClass}{/if}" 

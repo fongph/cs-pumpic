@@ -153,25 +153,7 @@
                                                                     </div><span> / month</span>
                                                                 </div>
                                                             </div>
-                                                        </div>
-                                                       
-                                                        <div id="list-plans-premium-package" class="box-plans-package">
-                                                           <section class="full"> 
-
-                                                            <div class="list-plans box-table">
-                                                                <div class="table-rows">
-                                                                    <div class="item-plan table-column col-xs-sm-4 col-sm-4 col-md-4 col-lg-4 vertical-aligh-middle">
-                                                                        <i class="i-price-plans-big-premium"></i>
-                                                                    </div>
-                                                                    <div class="item-plan table-column col-xs-sm-8 col-sm-8 col-md-8 col-lg-8">
-                                                                        <p class="full">Buy <strong class="text-red">6</strong> or <strong class="text-red">12</strong> month plan 
-                                                                           and <strong class="text-red">get 2 plans for free</strong></p>
-                                                                    </div>
-                                                                </div>
-                                                            </div>  
-
-                                                           </section>        
-                                                        </div>         
+                                                        </div>      
                                                                  
                                                         <div class="list_price">
                                                             <form name="price_premium" method="POST" action="/buy.html" autocomplete="off">
@@ -191,9 +173,7 @@
                                                                                 </strong> {if $_item.period == 1}month{else}months{/if}
                                                                             </span>
                                                                              
-                                                                            <div class="box-small-package">    
-                                                                                {if $_item.period > 3}<span class="small_package i-price-plans-small-premium"></span>{/if} 
-                                                                            </div>     
+                                                                            <div class="box-small-package"></div>     
                                                                                 
                                                                             <span class="sp_price">
                                                                                 <strong>

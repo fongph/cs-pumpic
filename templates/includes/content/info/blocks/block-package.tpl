@@ -1,16 +1,27 @@
 <div class='mt10'>
     <div id='block-promo-buy' class="{if isset($language)}bb-p-buy-{$language}{/if} banner-header-package">
-        <section class="text-left">
+        <section>
+            <div class="new-icloud-feature">
             {if isset($language) && $language == "bra"}
-                <div class="new-icloud-feature"><img src="{$img}/icons/icon-pumpic-icloud.png" alt="" /><span>NEW!</span></p>
-                <p>Espião iCloud<br class="only-pc" /> para iOS 9.2<br class="only-pc" />&nbsp;</p>
+                <div class="label-new">
+                    <img src="{$img}/icons/icon-pumpic-icloud.png" alt="" />
+                    <span>NOVO!</span>
+                </div>
+                <p>Espião iCloud<br class="only-pc" /> para iOS 9.2.1<br class="only-pc" />&nbsp;</p>
             {elseif isset($language) && $language == "de"}
-                <div class="new-icloud-feature"><img src="{$img}/icons/icon-pumpic-icloud.png" alt="" /><span>NEW!</span></p>
-                <p>Kein Jailbreak iCloud Ausgabe<br class="only-pc" /> Überwachungs <br class="only-pc" /> für iOS 9.2</p>
+                <div class="label-new">
+                    <img src="{$img}/icons/icon-pumpic-icloud.png" alt="" />
+                    <span>NEU!</span>
+                </div>
+                <p>Kein Jailbreak iCloud<br class="only-pc" /> Ausgabe Überwachungs<br class="only-pc" /> für iOS 9.2.1</p>
             {else}
-                <div class="new-icloud-feature"><img src="{$img}/icons/icon-pumpic-icloud.png" alt="" /><span>NEW!</span></p>
-                <p>No Jailbreak iCloud<br class="only-pc" /> Monitoring Edition<br class="only-pc" /> for iOS 9.2</p>
+                <div class="label-new">
+                    <img src="{$img}/icons/icon-pumpic-icloud.png" alt="" />
+                    <span>NEW!</span>
+                </div>
+                <p>No Jailbreak iCloud<br class="only-pc" /> Monitoring Edition<br class="only-pc" /> for iOS 9.2.1</p>
             {/if}
+            </div>
         </section>
         <section class="vertical-aligh-middle">
             {if isset($planPackageBuyType) && $planPackageBuyType == 'link'}

@@ -13,7 +13,7 @@
                     <img src="{$img}/icons/icon-pumpic-icloud.png" alt="" />
                     <span>NEU!</span>
                 </div>
-                <p>Kein Jailbreak iCloud<br class="only-pc" /> Ausgabe Überwachungs<br class="only-pc" /> für iOS 9.2.1</p>
+                <p>Kein Jailbreak iCloud<br class="only-pc" /> Überwachungs Ausgabe<br class="only-pc" /> für iOS 9.2.1</p>
             {else}
                 <div class="label-new">
                     <img src="{$img}/icons/icon-pumpic-icloud.png" alt="" />

@@ -10,10 +10,10 @@
 #fly_features {
     position: fixed;
     display: none;
-    background: url('../images/fly_features/bg_fly_features.png') no-repeat;
+    background: url('../images/fly_features/bg_fly_features_big.png') no-repeat;
     background-size: auto;
     width: 207px;
-    height: 185px;
+    height: 214px;
     color: #fff;
     padding: 10px 10px;
     right: 9px;
@@ -59,10 +59,25 @@
     margin: 0 0 0 -10px;
 }
 
-#fly_features p {
-    font-size: 12px;
-    padding: 0px 0px 7px 0px;
-    margin: 0;
+#fly_top p {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 5px;
+    font-size: 13px;
+    line-height: 13px;
+}
+
+#fly_top .fly-label {
+    font-size: 14px;
+}
+
+#fly_top p.last {
+    margin-bottom: 3px;
+}
+
+.fly-versions {
+    font-size: 14px;
 }
 
 .fly_close{
@@ -134,8 +149,8 @@
     margin: 0 0 7px 45px
 }
 
-.fly-features-v2 #fly_features {
-    padding: 12px 7px 0 10px;
+#fly_features {
+    padding: 6px 7px 0 10px;
 }
 
 #fly_features i.i-fly-features-iphone,
@@ -195,8 +210,8 @@
         background: url('../images/fly_features/bg_mobile_fly_features.png') no-repeat;
         background-size: 100% 100%;
         border-radius: 0px;
-          -webkit-border-radius: 0px 0px;
-            -moz-border-radius: 0px 0px;
+        -webkit-border-radius: 0px 0px;
+        -moz-border-radius: 0px 0px;
         border-radius: none;
         width: 100%;
         height: 126px;
@@ -209,26 +224,18 @@
     #fly_features > p > br {
         display: none;
     }
-    
-     #fly_features > p {
-         text-align: center;
-     }
 
-    #fly_top{
+    #fly_features > p {
+        text-align: center;
+    }
+
+    #fly_top {
         width: 49%;
         float: left;
         margin: 0;
     }
 
-    #fly_top p{
-        width: 135px;
-        margin: auto;
-        text-align: center;
-        padding: 4px 0 12px;
-        line-height: 20px;
-    }
-
-    .features-button{
+    .features-button {
         font-size: 16px;
         height: 29px;
         width: 120px;
@@ -249,9 +256,6 @@
         left: 0;
     }
 
-    .fly-versions{
-        font-size: 15px;
-    }
     #fly-features-h2_2{
         font-size: 14px;
         line-height: 17px;
@@ -279,6 +283,7 @@
 
     #fly-features-h2{
         font-size: 16px;
+        margin-bottom: 3px;
     }
 
     .fly_close{

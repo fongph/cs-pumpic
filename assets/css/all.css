@@ -99,7 +99,9 @@
     text-align: left  !important;
 }
 
-
+.text-bold {
+    font-weight: 700;
+}
 
 .bg_white {
   background: #f9f9f9;

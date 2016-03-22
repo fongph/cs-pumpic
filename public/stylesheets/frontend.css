@@ -8586,7 +8586,9 @@ div.symbol {
     text-align: left  !important;
 }
 
-
+.text-bold {
+    font-weight: 700;
+}
 
 .bg_white {
   background: #f9f9f9;
@@ -19968,7 +19970,7 @@ form > table.pricing-second:after {
         }
         
         .tb_pricing  .refund_new_11 { 
-            top: 482px;
+            top: 500px;
         }
         .tb_pricing .support_os,
         .tb_pricing .support_new_os {
@@ -19980,7 +19982,7 @@ form > table.pricing-second:after {
         }
         
         .tb_pricing .support_new_os { 
-            top: 518px;
+            top: 536px;
         }
         
         .basic_wr .basic_fe{
@@ -20007,7 +20009,7 @@ form > table.pricing-second:after {
     }
     
     .tb_pricing  .refund_new_11 { 
-        top: 482px;
+        top: 500px;
     }
     
     .tb_pricing .support_os,
@@ -20020,7 +20022,7 @@ form > table.pricing-second:after {
     }
     
     .tb_pricing .support_new_os { 
-        top: 518px;
+        top: 536px;
     }
     
         .basic_wr .basic_fe{
@@ -20062,47 +20064,20 @@ form > table.pricing-second:after {
     }
     
     .tb_pricing .support_new_os{ 
-        top: 518px;
+        top: 536px;
     }
 }
-@media only screen and (max-width: 710px) {
-    .tb_pricing  .refund_10,
-    .tb_pricing  .refund_new_11{
-        position: absolute;
-        width:100%;
-        top:536px;
-        height: 36px;
-        background-color:#4d4f5b; 
-    }
-    
+
+@media only screen and (min-width: 701px) and (max-width: 767px) {
     .tb_pricing  .refund_new_11 {
-        top: 482px; 
-    }
-    
-    .tb_pricing .support_os,
-    .tb_pricing .support_new_os {
-        position: absolute;
-        width:100%;
-        top:572px;
-        height: 40px;
-        background-color:#f0f0f0; 
+        top: 404px; 
     }
     
     .tb_pricing .support_new_os { 
-        top: 518px;
+        top: 440px;
     }
-    
-        .basic_wr .basic_fe{
-            margin-top:110px;
-            width:100%;
-            
-        }
-        .premium_wr .premium_fe{
-            margin-top:110px;
-            width:100%;
-            
-        }
 }
+
 @media only screen and (max-width: 400px){
         .wr_price_big span {
             display: block;
@@ -21334,8 +21309,7 @@ dl.table-rows.block-left {
     #box-features-list .image-features {
         width: 100%;
     }
-
-    .only-pc, .mobile-off { display: none; }
+    
     .only-mobile { display: inline-block; }
     .div-table-row .div-table-column.text-right {
         text-align: left;
@@ -21417,7 +21391,6 @@ dl.table-rows.block-left {
         width: 80%;
     }
 
-    .only-pc, .mobile-off { display: none; }
     .only-mobile { display: inline-block; }
     .div-table-row .div-table-column.text-right {
         text-align: left;
@@ -21455,6 +21428,11 @@ dl.table-rows.block-left {
         border-left: 1px solid #e7e7e7;
     }
 }
+
+@media (max-width: 767px) {
+    .only-pc, .mobile-off { display: none; }
+}
+
 @media (min-width: 768px) {
     .div-table-row {
         display: block;
@@ -22559,10 +22537,10 @@ dl.table-rows.block-left {
 #fly_features {
     position: fixed;
     display: none;
-    background: url('../images/fly_features/bg_fly_features.png') no-repeat;
+    background: url('../images/fly_features/bg_fly_features_big.png') no-repeat;
     background-size: auto;
     width: 207px;
-    height: 185px;
+    height: 214px;
     color: #fff;
     padding: 10px 10px;
     right: 9px;
@@ -22608,10 +22586,25 @@ dl.table-rows.block-left {
     margin: 0 0 0 -10px;
 }
 
-#fly_features p {
-    font-size: 12px;
-    padding: 0px 0px 7px 0px;
-    margin: 0;
+#fly_top p {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 5px;
+    font-size: 13px;
+    line-height: 13px;
+}
+
+#fly_top .fly-label {
+    font-size: 14px;
+}
+
+#fly_top p.last {
+    margin-bottom: 3px;
+}
+
+.fly-versions {
+    font-size: 14px;
 }
 
 .fly_close{
@@ -22683,8 +22676,8 @@ dl.table-rows.block-left {
     margin: 0 0 7px 45px
 }
 
-.fly-features-v2 #fly_features {
-    padding: 12px 7px 0 10px;
+#fly_features {
+    padding: 6px 7px 0 10px;
 }
 
 #fly_features i.i-fly-features-iphone,
@@ -22744,8 +22737,8 @@ dl.table-rows.block-left {
         background: url('../images/fly_features/bg_mobile_fly_features.png') no-repeat;
         background-size: 100% 100%;
         border-radius: 0px;
-          -webkit-border-radius: 0px 0px;
-            -moz-border-radius: 0px 0px;
+        -webkit-border-radius: 0px 0px;
+        -moz-border-radius: 0px 0px;
         border-radius: none;
         width: 100%;
         height: 126px;
@@ -22758,26 +22751,18 @@ dl.table-rows.block-left {
     #fly_features > p > br {
         display: none;
     }
-    
-     #fly_features > p {
-         text-align: center;
-     }
 
-    #fly_top{
+    #fly_features > p {
+        text-align: center;
+    }
+
+    #fly_top {
         width: 49%;
         float: left;
         margin: 0;
     }
 
-    #fly_top p{
-        width: 135px;
-        margin: auto;
-        text-align: center;
-        padding: 4px 0 12px;
-        line-height: 20px;
-    }
-
-    .features-button{
+    .features-button {
         font-size: 16px;
         height: 29px;
         width: 120px;
@@ -22798,9 +22783,6 @@ dl.table-rows.block-left {
         left: 0;
     }
 
-    .fly-versions{
-        font-size: 15px;
-    }
     #fly-features-h2_2{
         font-size: 14px;
         line-height: 17px;
@@ -22828,6 +22810,7 @@ dl.table-rows.block-left {
 
     #fly-features-h2{
         font-size: 16px;
+        margin-bottom: 3px;
     }
 
     .fly_close{

@@ -664,7 +664,7 @@ form > table.pricing-second:after {
         }
         
         .tb_pricing  .refund_new_11 { 
-            top: 482px;
+            top: 500px;
         }
         .tb_pricing .support_os,
         .tb_pricing .support_new_os {
@@ -676,7 +676,7 @@ form > table.pricing-second:after {
         }
         
         .tb_pricing .support_new_os { 
-            top: 518px;
+            top: 536px;
         }
         
         .basic_wr .basic_fe{
@@ -703,7 +703,7 @@ form > table.pricing-second:after {
     }
     
     .tb_pricing  .refund_new_11 { 
-        top: 482px;
+        top: 500px;
     }
     
     .tb_pricing .support_os,
@@ -716,7 +716,7 @@ form > table.pricing-second:after {
     }
     
     .tb_pricing .support_new_os { 
-        top: 518px;
+        top: 536px;
     }
     
         .basic_wr .basic_fe{
@@ -758,47 +758,20 @@ form > table.pricing-second:after {
     }
     
     .tb_pricing .support_new_os{ 
-        top: 518px;
+        top: 536px;
     }
 }
-@media only screen and (max-width: 710px) {
-    .tb_pricing  .refund_10,
-    .tb_pricing  .refund_new_11{
-        position: absolute;
-        width:100%;
-        top:536px;
-        height: 36px;
-        background-color:#4d4f5b; 
-    }
-    
+
+@media only screen and (min-width: 701px) and (max-width: 767px) {
     .tb_pricing  .refund_new_11 {
-        top: 482px; 
-    }
-    
-    .tb_pricing .support_os,
-    .tb_pricing .support_new_os {
-        position: absolute;
-        width:100%;
-        top:572px;
-        height: 40px;
-        background-color:#f0f0f0; 
+        top: 404px; 
     }
     
     .tb_pricing .support_new_os { 
-        top: 518px;
+        top: 440px;
     }
-    
-        .basic_wr .basic_fe{
-            margin-top:110px;
-            width:100%;
-            
-        }
-        .premium_wr .premium_fe{
-            margin-top:110px;
-            width:100%;
-            
-        }
 }
+
 @media only screen and (max-width: 400px){
         .wr_price_big span {
             display: block;

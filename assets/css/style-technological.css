@@ -726,8 +726,7 @@ dl.table-rows.block-left {
     #box-features-list .image-features {
         width: 100%;
     }
-
-    .only-pc, .mobile-off { display: none; }
+    
     .only-mobile { display: inline-block; }
     .div-table-row .div-table-column.text-right {
         text-align: left;
@@ -809,7 +808,6 @@ dl.table-rows.block-left {
         width: 80%;
     }
 
-    .only-pc, .mobile-off { display: none; }
     .only-mobile { display: inline-block; }
     .div-table-row .div-table-column.text-right {
         text-align: left;
@@ -847,6 +845,11 @@ dl.table-rows.block-left {
         border-left: 1px solid #e7e7e7;
     }
 }
+
+@media (max-width: 767px) {
+    .only-pc, .mobile-off { display: none; }
+}
+
 @media (min-width: 768px) {
     .div-table-row {
         display: block;

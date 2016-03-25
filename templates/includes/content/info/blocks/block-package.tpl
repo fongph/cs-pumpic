@@ -7,19 +7,19 @@
                     <img src="{$img}/icons/icon-pumpic-icloud.png" alt="" />
                     <span>NOVO!</span>
                 </div>
-                <p>Espião iCloud<br class="only-pc" /> para iOS 9.2.1<br class="only-pc" />&nbsp;</p>
+                <p>Espião iCloud<br class="only-pc" /> para iOS {$ver_icloud_up}<br class="only-pc" />&nbsp;</p>
             {elseif isset($language) && $language == "de"}
                 <div class="label-new">
                     <img src="{$img}/icons/icon-pumpic-icloud.png" alt="" />
                     <span>NEU!</span>
                 </div>
-                <p>Kein Jailbreak iCloud<br class="only-pc" /> Überwachungs Ausgabe<br class="only-pc" /> für iOS 9.2.1</p>
+                <p>Kein Jailbreak iCloud<br class="only-pc" /> Überwachungs Ausgabe<br class="only-pc" /> für iOS {$ver_icloud_up}</p>
             {else}
                 <div class="label-new">
                     <img src="{$img}/icons/icon-pumpic-icloud.png" alt="" />
                     <span>NEW!</span>
                 </div>
-                <p>No Jailbreak iCloud<br class="only-pc" /> Monitoring Edition<br class="only-pc" /> for iOS 9.2.1</p>
+                <p>No Jailbreak iCloud<br class="only-pc" /> Monitoring Edition<br class="only-pc" /> for iOS {$ver_icloud_up}</p>
             {/if}
             </div>
         </section>

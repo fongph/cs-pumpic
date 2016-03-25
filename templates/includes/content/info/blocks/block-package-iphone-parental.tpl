@@ -6,7 +6,7 @@
                     <img src="{$img}/icons/icon-pumpic-icloud.png" alt="" />
                     <span>NEW!</span>
                 </div>
-                <p>No Jailbreak iCloud<br class="only-pc" /> Monitoring Edition<br class="only-pc" /> for iOS 9.2.1</p>
+                <p>No Jailbreak iCloud<br class="only-pc" /> Monitoring Edition<br class="only-pc" /> for iOS {$ver_icloud_up}</p>
             </div>
         </section>
         <section class="vertical-aligh-middle">

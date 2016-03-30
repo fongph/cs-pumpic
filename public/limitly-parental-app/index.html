@@ -23,6 +23,8 @@
 	<script type="text/javascript" src="assets/js/jquery.waypoints.min.js"></script>
 	<script type="text/javascript" src="assets/js/animate-css.js"></script>
 </head>
+
+
 <body>
 
 <div id="fullpage">
@@ -33,7 +35,7 @@
 
 <ul class="menu_first">
 	<li><a href="https://ad.apps.fm/zhFYwQWDFH6Kv2bONb26rV5KLoEjTszcQMJsV6-2VnHFDLXitVHB6BlL95nuoNYfibCTd2EwMBNyG7kNkJYg-LyIZ0KtImQbu2bD7vuiHbiMp3dMIQ-AWbYiAs0nmyio"><img class="google-play" src="img/google-play_button.png" alt=""></a></li>
-	<li><a id="moveTo1" href="#">Limitly</a></li>
+	<li><a id="moveTo1" href="#">TRY LIMITLY</a></li>
 	<li><a id="moveTo2" href="#">What Limitly Can Do</a></li>
 	<li><a id="moveTo3" href="#">Look Inside Limitly</a></li>
 	<li><a id="moveTo4" href="#">FAQ</a></li>
@@ -41,7 +43,7 @@
 <div class="menu-collapsed">
 <div class="bar"></div>
 <ul class="menu_full">
-	<li><a href=""></a>Limitly</li>
+	<li><a href=""></a>TRY LIMITLY</li>
 	<li><a href=""></a>What Limitly Can Do</li>
 	<li><a href=""></a>Look Inside Limitly</li>
 	<li><a href=""></a>FAQ</li>
@@ -526,12 +528,11 @@ $(".owl-carousel").owlCarousel({
 })
 
 
-$(".url_accordion li div").hide();
+
 $(".url_accordion li span").css("cursor", "pointer").click(function() {
     $(this).parent().children('div').toggle().toggleClass('active fadeIn animated');
     $(this).parent().toggleClass('minus fadeIn animated');
 });
-
 	
 $(".menu-collapsed").click(function() {
 	$(this).toggleClass("menu-expanded");
@@ -550,7 +551,7 @@ $(".menu-collapsed").click(function() {
 if($('html').hasClass('desktop') || $('html').hasClass('landscape')){
 $('#fullpage').fullpage({
 				navigation: true,
-				navigationTooltips: ['Limitly', 'What Limitly Can Do', 'Look Inside Limitly', 'FAQ'],
+				navigationTooltips: ['TRY LIMITLY', 'What Limitly Can Do', 'Look Inside Limitly', 'FAQ'],
 				scrollingSpeed: 1000,
 				loopHorizontal: false,
 				fixedElements: 'nav',

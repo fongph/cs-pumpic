@@ -23,6 +23,9 @@
         <li>
             <a href="/android-tablet-parental-control.html">Android Tablet Parental Control</a>
         </li>
+        <li>
+            <a href="/limitly-parental-app/">Screen Time Parental Control App</a>
+        </li>
         <?php /*
         <li>
             <a href="/reviews/">Best Mobile Trackers</a>
@@ -41,6 +44,7 @@
         <li>
             <a href="/smartphone-monitoring-software.html">Smartphone monitoring</a>
         </li>
+
         */
         ?>
     </ul>

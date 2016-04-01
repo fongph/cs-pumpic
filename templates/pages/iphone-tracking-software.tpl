@@ -96,7 +96,7 @@
                                   <li href="#" class="list-group-item">
                                     <p class="list-group-item-text">
                                         <span class="title"><label class='block-number'>23</label> Monitoring features</span>
-                                        <span>Multi-featured real-time iOS monitoring with filtering and blocking options.</span>
+                                        <span>Multi-featured real-time <a class="a-default" target="_blank" href="/how-to-setup-parental-controls-on-iphone.html">iOS monitoring</a> with filtering and blocking options.</span>
                                     </p>
                                   </li>
                                   <li href="#" class="list-group-item pc-pb65 text-center">

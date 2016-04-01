@@ -20,7 +20,7 @@
                                 <div class="feature">
                                         <img src="{$img}/icons/icon-block-incoming-sms.png" alt="">
                                         <h3>Block unwanted contacts</h3>
-                                        <p>With Pumpic app, you can block unwanted contacts to ban them and to not let misgiving people reach your children in future. Prevent your kids from dangerous conversations with strangers.</p>
+                                        <p>With Pumpic app, you can <a class="a-default" target="_blank" href="/block-calls.html">block unwanted contacts</a> to ban them and to not let misgiving people reach your children in future. Prevent your kids from dangerous conversations with strangers.</p>
                                 </div>
                         </div>
                 </div>

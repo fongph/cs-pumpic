@@ -1631,13 +1631,44 @@
             Template: RECOMMENDED
         *}    
         {include file='../includes/main/main-recommended.tpl'}
-        
-        {include file='../includes/testimonials.tpl'
-                title = "Trusted by Over 10,000 Customers Worldwide"
-                sliders = "true"
-                blockBg="bg_white pt40"} {* light *} 
-        
-        <!-- FOOTER -->
+
+        <div class="row">
+
+            <div class="bxSliders only-pc">
+                <!-- SLIDE #1 -->
+                <div class="slide">
+                    <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
+                        <img src="{$img}/testimonials/jessica-h-12-1.png" alt="" class="testimonial-photo">
+                        <div class="testimonial-text">
+                            <h4>Jessica H. – mother of 12-year-old son</h4>
+                            <p>“With all the features that Pumpic provides I can easily keep track of what my boy is doing on his smartphone. It is irreplaceable help for parents I think. Kids are addicted to their gadgets today. And considering how many threats there are on the Internet mobile monitoring like this is must have if your kid has a mobile device.”</p>
+                        </div>
+                    </div>
+                    <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
+                        <img src="{$img}/testimonials/steven-b-15-1.png" alt="" class="testimonial-photo">
+                        <div class="testimonial-text">
+                            <h4>Steven B. – father of 15-year-old daughter</h4>
+                            <p>“All parents are concerned of their kids. Especially if you are a dad of a teenage girl. Pumpic leaves me assured that my girl is safe wherever she is. Even if I’m not nearby I know where she is and what she is doing. The app lets me view her online activities and communication with friends. It provides parents with amazing opportunity to stay close from a distance.”</p>
+                        </div>
+                    </div>
+                    <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
+                        <img src="{$img}/testimonials/laura-g-16-1.png" alt="" class="testimonial-photo">
+                        <div class="testimonial-text">
+                            <h4>Laura G. – mother of 16-year-old son</h4>
+                            <p>“As soon as you realize how much time kids spend on their gadgets and how many dangers they might face online your worriless life ends. Pumpic solves the problem of all these worries and gives you a chance to take part in your kids’ activities on the Internet without taking away their gadgets. All parents should have such an app, if they want to protect their kids appropriately.”</p>
+                        </div>
+                    </div>
+                </div> <!-- .slide-->
+
+                
+            </div>
+
+
+        </div>
+    </div>
+    </div>
+
+    <!-- FOOTER -->
         {*
             Template: FOOTER
             Переменные:

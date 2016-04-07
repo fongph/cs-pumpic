@@ -192,22 +192,6 @@
                                             language = (isset($language)) ? $language : ""    
                                         }
                                     {/if}
-
-
-                                {if isset($blockMemberYet) && $blockMemberYet == 'yes'}
-                                    <div class="not-a-member">
-                                        <section>
-                                            <div class="member-yet">Not a Member Yet?</div>
-                                            <div>
-                                                <a href="http://demo.pumpic.com/setDevice/125?redirect_url=cp/calls" class="btn btn-default btn-noy-yet">View demo</a>
-                                                <a href="/store.html" class="btn btn-default">Buy Now</a>
-                                            </div>
-                                        </section>
-                                    </div>
-
-                                {/if}
-
-
                                     
                                     {if isset($planPackageIphoneParental) && $planPackageIphoneParental == 'yes'}
                                         {include './blocks/block-package-iphone-parental.tpl'}

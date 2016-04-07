@@ -63,7 +63,7 @@ description="Learn the difference between the Standard Pumpic Control Panel and 
 
                         </div>
                         <div class="apps-store-text" style="padding: 0;">
-                                <p>Meet a useful and user-friendly addition to the Control Panel of the Pumpic mobile monitoring software for Android and iOS. From now on, you no longer need to open a browser to check your kids’ activities. Run Pumpic Control Panel Mobile App on your smartphone and monitor your children on the go. </p>
+                                <p>Meet a useful and user-friendly addition to the Control Panel of the Pumpic mobile monitoring software for Android. From now on, you no longer need to open a browser to check your kids’ activities. Run Pumpic Control Panel Mobile App on your smartphone and monitor your children on the go. </p>
                         </div>
                 </div>
 
@@ -79,17 +79,17 @@ description="Learn the difference between the Standard Pumpic Control Panel and 
                             <img src="/images/check.png" alt="" style="display: block; margin: auto;padding: 10px 0;">
                             <h3 class="text-center" style="font-size: 18px;font-weight: 400;">Check Your<br> Subscription</h3>
 
-                            <p class="text-center">Make sure that you have at least one active subscription as well as Pumpic <b>Monitoring App for iPhone</b> or Android installed on the target device before using both the full version of the Control Panel and Control Panel App. </p>
+                            <p class="text-center">Make sure that you have at least one active subscription as well as Pumpic <b>Monitoring App for Android</b> installed on the target device before using both the full version of the Control Panel and Control Panel App. </p>
                         </div>
                         <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
                             <img src="/images/magnifier.png" alt="" style="display: block; margin: auto;     padding: 10px 0;">
                             <h3 class="text-center" style="font-size: 18px;font-weight: 400;">Monitor Children<br> via Control Panel</h3>
-                            <p class="text-center">Enter your Control Panel to start monitoring your children. You can find the access in your welcome email. Log in by either using the Standard Control Panel on cp.pumpic.com or downloading our free mobile app on Google Play and App Store for free.   </p>
+                            <p class="text-center">Enter your Control Panel to start monitoring your children. You can find the access in your welcome email. Log in by either using the Standard Control Panel on cp.pumpic.com or downloading our free mobile app on Google Play for free.   </p>
                         </div>
                         <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
                             <img src="/images/close.png" alt="" style="display: block; margin: auto;     padding: 10px 0;">
                             <h3 class="text-center" style="font-size: 18px;font-weight: 400;"> Limited <br>Addition</h3>
-                            <p class="text-center">Pumpic Control Panel Mobile App is currently limited to some selected Android and <b>iPhone parental control features</b>. You can find the comparison of the Standard Control Panel and Control Panel App below to see all supported features. </p>
+                            <p class="text-center">Pumpic Control Panel Mobile App is currently limited to some selected <b>Android parental control features</b>. You can find the comparison of the Standard Control Panel and Control Panel App below to see all supported features. </p>
                         </div>
                     </div>
                 </div>
@@ -316,7 +316,7 @@ description="Learn the difference between the Standard Pumpic Control Panel and 
                    <a class="ga-action-click" ga-category="Mobile App Buttons" ga-action="click" ga-label="Store GP" target="_blank" href="https://play.google.com/store/apps/details?id=com.pumpic.mobile.monitoring"><img src="images/download_google.png" alt="Pumpic Parental Monitoring on Google Play"></a>
                 </div>
                 <div class="apps-download-text">
-                    <p>Get your free Control Panel App for iOS and Android parental control on Google Play.</p>
+                    <p>Get your free Control Panel App for Android parental control on Google Play.</p>
                 </div>
             </div>
 

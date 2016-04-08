@@ -110,7 +110,7 @@
         <p class="text-center f-light">
             Nowadays iPhones are probably the most popular cell phones worldwide. It is hard to find a person, who would not 
             like to have an ultramodern device by Apple. When it comes to kids and teenagers, iOS smartphones appear 
-            to be the top of the mind. To protect your child as well as an expensive gift, use iPhone monitoring software:
+            to be the top of the mind. To protect your child as well as an expensive gift, <a class="a-default" target="_blank" href="/how-to-setup-parental-controls-on-iphone.html">use iPhone monitoring software</a>:
         </p>
         
         <!-- BLOCK LIST -->

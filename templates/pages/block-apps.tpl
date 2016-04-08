@@ -105,7 +105,7 @@
             <div class="pt30 pb20">
                 <p>Children spend too much time on their gadgets these days. If you ask what they do each time they take a smartphone in hands, most probably you will see them playing another mobile game or surfing social network.</p>
 				<p>Smartphones, tablets, and applications installed distract children from important daily activities like doing homework, room cleaning, family affairs etc. Many children keep playing games even after a tardy bell rings, which ultimately results in problems at school. In addition, there are many applications inappropriate for kids. Some of them are restricted for certain ages due to explicit, violent, or bad-word content. Such apps provoke interest among kids most of all.</p>
-				<p>That’s why careful parents should better use parental time control software, monitor what kind of applications their children use, and block inappropriate ones. Pumpic provides comprehensive monitoring and control over activities on kids’ smartphones and tablets.</p>
+				<p>That’s why careful parents should better use parental time control software, monitor what kind of applications their children use, and <a class="a-default" target="_blank" href="/how-to-lock-apps-on-android.html">block inappropriate apps</a>. Pumpic provides comprehensive monitoring and control over activities on kids’ smartphones and tablets.</p>
             </div>
         </div>
         <div class="col-lg-3 col-md-3 col-sm-3 text-center">

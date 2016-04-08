@@ -1,0 +1,13 @@
+{
+  "name": "masterra",
+  "version": "1.0.0",
+  "devDependencies": {
+    "browser-sync": "^2.11.1",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-imagemin": "^2.4.0",
+    "gulp-stylus": "^2.2.0"
+  },
+  "author": "",
+  "license": "ISC"
+}

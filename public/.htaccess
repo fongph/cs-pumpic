@@ -122,10 +122,12 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(.*)?lomb\.co.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?lomb\.co.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(.*)?darodar\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?darodar\.com.*$ [NC,OR]
-RewriteCond %{HTTP_REFERER} ^http(s)?://(.*)?hulfingtonpost\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?hulfingtonpost\.com.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(.*)?rank-checker\.online.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?rank-checker\.online.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(.*)?lumb\.co.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?lumb\.co.*$ [NC]
+
 
 RewriteRule .* - [F]
 
@@ -141,6 +143,7 @@ RewriteRule ^index\.html$ http://pumpic.com/ [L,R=301]
 RewriteRule ^features\.html$ all-features\.html [L,R=301]
 RewriteRule ^compatibility\.html$ compatibility/ [L,R=301]
 RewriteRule ^learning-center/ready\-solutions\.html$ learning-center/ready\-solutions/ [L,R=301]
+RewriteRule ^limitly-parental-app/index\.html$ limitly-parental-app/ [L,R=301]
 
 RewriteCond %{REQUEST_URI} !\?
 RewriteCond %{REQUEST_URI} !\&

@@ -132,7 +132,7 @@
     </ul>
     <br>
     <br>
-    <p>Another important issue is selectin a reliable parental control app. E.g. Pumpic is recognized by TopTenReviews as one of the best Android tracking software. At the same time, it is trusted by more than 10,000 customers all over the world. It mean that parents can rest assured that their children are safe, while Pumpic is installed on their devices. The app provides comprehensive control over what is going on with your little loved ones, when you are not nearby.</p>
+    <p>Another important issue is selecting a reliable parental control app. E.g. Pumpic is recognized by TopTenReviews as one of the best Android tracking software. At the same time, it is trusted by more than 10,000 customers all over the world. It mean that parents can rest assured that their children are safe, while Pumpic is installed on their devices. The app provides comprehensive control over what is going on with your little loved ones, when you are not nearby.</p>
 
 {EndContent}
         

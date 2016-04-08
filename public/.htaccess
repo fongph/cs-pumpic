@@ -123,10 +123,10 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?lomb\.co.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(.*)?darodar\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?darodar\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?hulfingtonpost\.com.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(.*)?rank-checker\.online.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?rank-checker\.online.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(.*)?lumb\.co.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?lumb\.co.*$ [NC]
-RewriteCond %{HTTP_REFERER} ^http(s)?://(.*)?rank-checker.\.online.*$ [NC,OR]
-RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?rank-checker.\.online.*$ [NC]
 
 
 RewriteRule .* - [F]

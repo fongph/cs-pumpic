@@ -23,12 +23,14 @@
             .block-child-location-tracking .ipad-text {
               padding: 10px 0;
             }
+
         }
 
         @media (min-width: 992px) {
             .block-child-location-tracking .ipad-text {
               padding: 10px 0;
             }
+
         }
 
         @media (min-width: 1200px) {
@@ -67,9 +69,10 @@
         <!-- CONTENT -->
 
         {include file='../includes/content/info/info-promo.tpl'
-            imgUrl = "header_banners/header-spyapps-for-android.png"
-            imgAlt = "Spy Apps for Android Phones" 
-            imgAlign = "right bottom"
+            imgUrl = "header_banners/best-spy-apps-for-android_01-04-2016.png"
+            imgAlt = "spy apps for android"
+            imgTitle = "Spy Apps for Android vs Parental Controls"
+            imgAlign = "right"
             imgVerticalAlign = "center"
             textAlign = "right"
             title = "Best Spy Apps for Android <br />VS Legal Parental Control Software"
@@ -80,6 +83,10 @@
             block_video = "yes"
             block_video_src = "http://www.youtube.com/embed/Atg0CbaytAY"
         } {* ?rel=0&wmode=transparent&fs=0&autoplay=1&modestbranding=1&autohide=1 *}
+
+
+
+
 
         {include file='../includes/content/plans.tpl'}
 
@@ -100,7 +107,7 @@
     title="What Is the Best Spy App for Android?"
     blockBg='light'}
 	
-	<img class="app-icon-left" src="{$img}/landings/icon-spyapps-for-android.png" alt="Spy on Android Phones">
+	<img class="app-icon-left" src="{$img}/landings/best-spy-apps-for-android_2_01-04-2016.png" title="Definition of spy apps for Android" alt="android monitoring">
 	<p>According to the security company Lookout, 24% of Android phones scanned in the USA had the installed spying software. The apps attract people by various outstanding traits and software providers do their best to improve the quality of their services. As a result, new monitoring features appear regularly making people install the spying apps.</p>
 	<p>When it comes to choosing to the best <a class="a-default" target="_blank" href="/spy-apps-for-android.html">Android cell phone spy software</a>, most people cannot make a final decision quickly. Easy Spy, Cell Tracker, mSpy, Mobile Stealth, Phone Sheriff are just a few possible options to install. With the help of spy apps, it is possible to follow the incoming and outgoing calls, track messages, check contacts, monitor browsing history, check social media, view photo and media files and much more. It seems that the functions of the best cell phone spy are unlimited.</p>
         
@@ -159,7 +166,7 @@
             </div>
         </div>
         <div class="col-lg-3 col-md-3 col-sm-3 text-center">
-            <img  class="block-apps-pic" alt="Parental Control for Android" src="{$img}/landings/pic-spyapps-for-android.png" width="207px" height="208px" />
+            <img  class="block-apps-pic" alt="parental controls" title="Features of parental controls" src="{$img}/landings/best-spy-apps-for-android_3_01-04-2016.png" width="207px" height="208px" />
         </div>
     </div>    
 {EndContent}

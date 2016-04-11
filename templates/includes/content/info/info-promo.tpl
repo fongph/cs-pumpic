@@ -32,7 +32,7 @@
                                 
                                 <img {if isset($imgWidth)}width='{$imgWidth}'{/if}
                                      {if isset($imgHeight)}height='{$imgHeight}'{/if}                       
-                                    src="{$img}/{$imgUrl}" alt="{$imgAlt}" class="visual-img-pc {if isset($maxWidth)}max-width-{$maxWidth}{/if}">   
+                                    src="{$img}/{$imgUrl}" alt="{$imgAlt}" class="visual-img-pc  {if isset($maxWidth)}max-width-{$maxWidth}{/if}">
                                 {if isset($block_video) && $block_video == "yes" && isset($block_video_src) && $block_video_src != ""}
                                     <div id="block-video">
                                         <div class="block-video-button">
@@ -115,6 +115,7 @@
                                     {/if}
 
                                     {if !isset($infoBlockMobile) || (isset($infoBlockMobile) && $infoBlockMobile == 'yes')}
+                                    <ul class="compatibility compatibility-lg">
                                     <ul class="compatibility compatibility-lg">
                                         {if isset($Android)}
                                             {if isset($AndroidVersion) && $Android == 'yes'}<li><i class="icon-android"></i> {$AndroidVersion}</li>{/if}
@@ -239,7 +240,7 @@
 
                                 </div>
                                 {if $imgAlign == "center"}
-                                    <img src="{$img}/{$imgUrl}" alt="{$imgAlt}" class="visual-img">
+                                    <img src="{$img}/{$imgUrl}" alt="{$imgAlt}" title="{$imgTitle}" class="visual-img">
                                 {/if}    
                             </div>
                             
@@ -249,7 +250,7 @@
                         <td class='col-xs-sm-12 col-s-sm-12 col-sm-12 {if isset($colRight)}{$colRight}{else}col-md-5 col-lg-5{/if}{if $imgVerticalAlign == 'bottom'} vertical-aligh-bottom{/if}'>
                             <div class="visual-images-right {if $block_video}box-video-constructors{/if}">
                                 <div class="mobile-none w100p"> 
-                                    <img src="{$img}/{$imgUrl}" alt="{$imgAlt}" class="visual-img-pc {if isset($maxWidth)}max-width-{$maxWidth}{/if}"> 
+                                    <img src="{$img}/{$imgUrl}" alt="{$imgAlt}" title="{$imgTitle}" class="visual-img-pc {if isset($maxWidth)}max-width-{$maxWidth}{/if}">
                                      {if isset($block_video) && $block_video == "yes" && isset($block_video_src) && $block_video_src != ""}
                                         <div id="block-video">
                                             <div class="block-video-button">
@@ -276,7 +277,7 @@
                                             </a>
                                         </div>
                                     {else}
-                                        <img src="{$img}/{$imgUrl}" alt="{$imgAlt}" class="visual-img-pc {if isset($maxWidth)}max-width-{$maxWidth}{/if}">
+                                        <img src="{$img}/{$imgUrl}" alt="{$imgAlt}" title="{$imgTitle}" class="visual-img-pc {if isset($maxWidth)}max-width-{$maxWidth}{/if}">
                                     {/if}    
                                 </div>
                                 
@@ -289,7 +290,7 @@
                         <td class='col-xs-sm-12 col-s-sm-12 col-sm-12 col-md-6 col-log-5'>
                             <div class="col-xs-sm-8 col-s-sm-10 col-sm-10 visual-images-bottom mobile-version-inline model-center {if $block_video}box-video-constructors{/if}">
                                 <div class="mobile-none">
-                                    <img src="{$img}/{$imgUrl}" alt="{$imgAlt}" class="visual-img-pc">  
+                                    <img src="{$img}/{$imgUrl}" alt="{$imgAlt}" title="{$imgTitle}" class="visual-img-pc">
                                     {if isset($block_video) && $block_video == "yes" && isset($block_video_src) && $block_video_src != ""}
                                         <div id="mobile-block-video" class="row">
                                             <div class="mobile-block-video-button">
@@ -313,7 +314,7 @@
                                             </a>
                                         </div>
                                     {else}
-                                        <img src="{$img}/{$imgUrl}" alt="{$imgAlt}" class="visual-img-pc"> 
+                                        <img src="{$img}/{$imgUrl}" alt="{$imgAlt}" title="{$imgTitle}" class="visual-img-pc">
                                     {/if}    
                                 </div>
                                 

@@ -29,6 +29,10 @@
             .block-child-location-tracking .ipad-text {
               padding: 10px 0;
             }
+               .visual-img-pc {
+                left: 54px;
+                bottom: 10px;
+        }
         }
 
         @media (min-width: 1200px) {
@@ -67,12 +71,13 @@
         <!-- CONTENT -->
 
         {include file='../includes/content/info/info-promo.tpl'
-            imgUrl = "header_banners/header-spyapps-for-android.png"
-            imgAlt = "Spy Apps for Android Phones" 
-            imgAlign = "right bottom"
-            imgVerticalAlign = "center"
+            imgUrl = "header_banners/monitor-phone-contacts_1_05-04-2016.png"
+            imgAlt = "phone contacts monitoring"
+            imgAlign = "right"
+            imgTitle = "Track phone contacts"
+            imgVerticalAlign = "bottom"
             textAlign = "right"
-            title = "Phone Monitoring <br />Parental Control App"
+            title = "Monitor Phone Contacts"
 			titleSize = "25px"
             description = "Be a guardian of your child's security in the digital world.<br />Monitor online behaviour, phone contacts, messages, and apps."
             promoBuyBlock = "no"
@@ -100,7 +105,7 @@
     title="Make Sure Your Teenage Child Is Safe"
     blockBg='light'}
 	
-	<img class="app-icon-left" src="{$img}/landings/icon-spyapps-for-android.png" alt="Spy on Android Phones">
+	<img class="app-icon-left" src="{$img}/landings/monitor-phone-contacts_2_05-04-2016.png" title="Safety of your teenage child" alt="child online safety">
 	<p>A cell phone has become an irreplaceable gadget not only for you but for your children as well. They play, read, study, and entertain while holding their favourite device in hands. Therefore, you should have a frequent conversation with them about the time they spend on phones and tablets, discuss the content they share online, keep track of the websites they visit and monitor their social networks activity. And a lot of parents do so. But talk is often not enough, as it will not stop some strangers from contacting your child on a phone and via social media. It will not prevent identity thefts and cyber bullying, and it will not tell you whereabouts of your child. That is where a trustworthy cell phone parental control app becomes invaluable. Most of the above mentioned dangers can simply be averted with the help of such an app.</p>
         
         <!-- BLOCK STATISTICK -->
@@ -160,7 +165,7 @@
             </div>
         </div>
         <div class="col-lg-3 col-md-3 col-sm-3 text-center">
-            <img  class="block-apps-pic" alt="Parental Control for Android" src="{$img}/landings/pic-spyapps-for-android.png" width="207px" height="208px" />
+            <img  class="block-apps-pic" alt="pumpic monitoring app" title="Pumpic Parental Control" src="{$img}/landings/monitor-phone-contacts_3_05-04-2016.png" width="207px" height="208px" />
         </div>
     </div>    
 {EndContent}

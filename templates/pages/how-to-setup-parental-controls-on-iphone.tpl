@@ -29,13 +29,17 @@
             .block-child-location-tracking .ipad-text {
               padding: 10px 0;
             }
+            .visual-img-pc {
+                left: 54px;
+                bottom: 10px;
+        }
         }
 
         @media (min-width: 1200px) {
             .block-child-location-tracking .ipad-text {
               padding: 10px 0;
             }
-        } 
+        }
     "
 }    
     
@@ -67,10 +71,11 @@
         <!-- CONTENT -->
 
         {include file='../includes/content/info/info-promo.tpl'
-            imgUrl = "header_banners/header-spyapps-for-android.png"
-            imgAlt = "Spy Apps for Android Phones" 
-            imgAlign = "right bottom"
-            imgVerticalAlign = "center"
+            imgUrl = "header_banners/how-to-setup-parental-controls-on-iphone_1_05-04-2016.png"
+            imgAlt = "parental controls installation"
+            imgTitle = "Setting Up Parental Controls"
+            imgAlign = "right"
+            imgVerticalAlign = "bottom"
             textAlign = "right"
             title = "Setting Up Parental Controls <br />on iPhone, iPad, iPod Touch"
 			titleSize = "25px"
@@ -100,7 +105,7 @@
     title="Why Install iPhone Parental Controls App?"
     blockBg='light'}
 	
-	<img class="app-icon-left" src="{$img}/landings/icon-spyapps-for-android.png" alt="Spy on Android Phones">
+	<img class="app-icon-left  research-center" src="{$img}/landings/How-to-Lock-Apps-on-Android-Devices-Easily_1_04-04-2016.png" title="iPhone Parental Controls App" width="100"  alt="iPhone parental controls">
 	<p>Due to the Pew Research Center, about 90% of teens go online on a daily basis. They are exposed to a lot of improper information presented by various websites and services. Children, particularly younger kids, can be bothered by the things they see online and the duty of every parent is to reduce  the chances of coming across something inappropriate.</p>
 	<p><a class="a-default" target="_blank" href="/iphone-parental-monitoring.html">Parental controls</a> can filter the web, blocking access to the wrong sites. There are many ways to do this, from configuring parental controls on your router to using built-in restrictions or monitoring software. Installing parental control apps is the best option to restrict the web from children preventing them from wandering into improper corners of the Internet.</p>
 	<p>Young people face many risks online such as sexting, cyberbullying, social networking with strangers, online predators and many more. Content filtering and online access limiting are the tops things for assuring to stay safe.</p>
@@ -159,7 +164,7 @@
             </div>
         </div>
         <div class="col-lg-3 col-md-3 col-sm-3 text-center">
-            <img  class="block-apps-pic" alt="Parental Control for Android" src="{$img}/landings/pic-spyapps-for-android.png" width="207px" height="208px" />
+            <img  class="block-apps-pic" alt="iPhone parental monitoring" src="{$img}/landings/How-to-Lock-Apps-on-Android-Devices-Easily_2_04-04-2016.png" title="Parental Control for iPhone" width="207px" height="208px" />
         </div>
     </div>    
 {EndContent}
@@ -221,21 +226,21 @@
                         <div class="slide">
                 
                     <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
-                            <img src="{$img}/testimonials/mike-b-15-1.png" alt="" class="testimonial-photo">
+                            <img src="{$img}/testimonials/testimonials_new_40.png" alt="" class="testimonial-photo">
                             <div class="testimonial-text">
                                     <h4>Jeff S. - father of 13-year-old son</h4>
                                     <p>“We together with my wife decided to install Pumpic several months ago. We’re absolutely satisfied with the result. The app provides a lot of functions, but we use just a few of them that meet our need. We check the Internet using history, social media accounts, and monitor current location. I think it’s enough for ensuring that my son isn’t a victim of bullying or any other violent behavior. Thank you a lot for a chance to sleep well not worrying about our boy.”</p>
                             </div>
                     </div>
                     <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
-                            <img src="{$img}/testimonials/richard-s-13-1.png" alt="" class="testimonial-photo">
+                            <img src="{$img}/testimonials/testimonials_new_39.png" alt="" class="testimonial-photo">
                             <div class="testimonial-text">
                                     <h4>Laura F. - mother of two daughters</h4>
                                     <p>“I think modern digital world is full of information which is not appropriate for young children. It’s important for me to know that my girls don’t have access to porn websites and harmful content. That’s why I use Pumpic to block access to particular services and sites. Moreover, I monitor the messages and multimedia files to ensure that my daughters are not the victims of sexting or cyberbullying.”</p>
                             </div>
                     </div>
                     <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
-                            <img src="{$img}/testimonials/john-c-12-1.png" alt="" class="testimonial-photo">
+                            <img src="{$img}/testimonials/testimonials_new_28.png" alt="" class="testimonial-photo">
                             <div class="testimonial-text">
                                     <h4>Mary S. - mother of 14-year old daughter</h4>
                                     <p>“Pumpic works great. It is the best assistant in such busy world. With the help of this app, I can check where my daughter is and call her instantly to find out why she isn’t home yet. I’s a great feature to ensure the best protection. I also monitor the online activities and block some websites with inappropriate content. With Pumpic I’m sure that my girl is secure. Thank you for this opportunity!”</p>

@@ -29,6 +29,12 @@
             .block-child-location-tracking .ipad-text {
               padding: 10px 0;
             }
+
+            .bg_bottom_images .visual-img-pc {
+            left: 54px;
+            bottom: -12px;
+        }
+
         }
 
         @media (min-width: 1200px) {
@@ -37,8 +43,14 @@
             }
         } 
     "
-}    
-    
+}
+<style>
+
+    @media (min-width: 992px) {
+
+    }
+</style>
+
 <body>
     <!-- FLY BLOCKS -->
     {include file='../includes/content/fly/fly_blocks.tpl'}
@@ -67,10 +79,11 @@
         <!-- CONTENT -->
 
         {include file='../includes/content/info/info-promo.tpl'
-            imgUrl = "header_banners/header-spyapps-for-android.png"
-            imgAlt = "Spy Apps for Android Phones" 
-            imgAlign = "right bottom"
-            imgVerticalAlign = "center"
+            imgUrl = "header_banners/How-to-Lock-Apps-on-Android-Devices-Easily_04-04-2016.png"
+            imgAlt = "lock apps on Android"
+            imgAlign = "right"
+            imgTitle = "How to lock apps on Android devices"
+            imgVerticalAlign = "bottom"
             textAlign = "right"
             title = "How to Lock Apps <br />on Android Devices Easily"
 			titleSize = "30px"
@@ -100,7 +113,7 @@
     title="Why Is It Important to Lock Apps on Android?"
     blockBg='light'}
 	
-	<img class="app-icon-left" src="{$img}/landings/icon-spyapps-for-android.png" alt="Spy on Android Phones">
+	<img class="app-icon-left" src="{$img}/landings/How-to-Lock-Apps-on-Android-Devices-Easily_1_04-04-2016.png" title="Locking apps on Android" alt="lock child's apps">
 	<p>The security of your device is an issue that should be taken very seriously. Due to the Pew Research Center, 90% of Americans own a smartphone and 42% use tablet regularly.  No doubt, the devices should be protected from getting into the wrong hands. Most people wonder how to lock Android phone as they use Facebook, Twitter and Skype on their device. Surely, they don’t want anyone messing with their accounts, so try to protect their sensitive data.</p>
 	<p>Now it is very easy to protect apps with Password or Pattern on all devices. The most popular apps are AppLock, Smart App Protector, Smart Lock, and Perfect App Protector. It’s really great that Android OS allows to set a passcode lock on the screen, but most users find it inconvenient. Entering the PIN takes time and makes angry when the first try is not successful.</p>
 	<p>If you wonder whether can you lock apps on Android easily, check the smart alternative – parental control apps. They are easy to install and use and provide parents a wide spectre of functions to protect children.</p>
@@ -158,7 +171,7 @@
             </div>
         </div>
         <div class="col-lg-3 col-md-3 col-sm-3 text-center">
-            <img  class="block-apps-pic" alt="Parental Control for Android" src="{$img}/landings/pic-spyapps-for-android.png" width="207px" height="208px" />
+            <img  class="block-apps-pic" alt="parental monitoring" title="Parental Monitoring Software" src="{$img}/landings/How-to-Lock-Apps-on-Android-Devices-Easily_2_04-04-2016.png"  width="207px" height="208px" />
         </div>
     </div>    
 {EndContent}

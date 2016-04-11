@@ -29,6 +29,10 @@
             .block-child-location-tracking .ipad-text {
               padding: 10px 0;
             }
+            .visual-img-pc {
+                left: 54px;
+                bottom: 10px;
+        }
         }
 
         @media (min-width: 1200px) {
@@ -67,9 +71,10 @@
         <!-- CONTENT -->
 
         {include file='../includes/content/info/info-promo.tpl'
-            imgUrl = "header_banners/header-spyapps-for-android.png"
-            imgAlt = "Spy Apps for Android Phones" 
-            imgAlign = "right bottom"
+            imgUrl = "header_banners/block-calls_1_05-04-2016.png"
+            imgAlt = "block calls feature"
+            imgAlign = "right"
+            imgTitle = "Block calls on Android and iOS devices"
             imgVerticalAlign = "center"
             textAlign = "right"
             title = "Call Blocking App <br />for Android and iOS Devices"
@@ -100,7 +105,7 @@
     title="Looking for a Good App to Block Calls?"
     blockBg='light'}
 	
-	<img class="app-icon-left" src="{$img}/landings/icon-spyapps-for-android.png" alt="Spy on Android Phones">
+	<img class="app-icon-left" src="{$img}/landings/block-calls_2_05-04-2016.png"  alt="blocking calls app" title="Apps for blocking calls">
 	<p>At the root of every discussion about the smartphone privacy is the fact that you often have to give out your number. When it's revealed, it can be purchased and resold many times. Have you ever wondered why different online resources ask you to leave your phone number? Usually they convince you that these are the issues of security process, but don't trust them! Most websites use your number for their tricky purposes and then sell it to different marketing and research firms. Shocked? No doubt, you are! Just think, according to the Pew Research Center, about 90% of Americans own a cell phone. And surely all of them are a possible target for getting income.</p>
 	<p>Adults understand how to behave themselves with people who call them and offer different services or ask questions. Unfortunately, children don't realise the danger and can tell private details to strangers. Today more and more people look for the ways to limit access to such data and search for app to block calls on Android and iOS devices. But finding the path to block calls can be digging. Some old devices don't have the native blocking function. Thankfully, there is a great way to block calls on your kid's device with the help of installing parental control app.</p>
         
@@ -159,7 +164,7 @@
             </div>
         </div>
         <div class="col-lg-3 col-md-3 col-sm-3 text-center">
-            <img  class="block-apps-pic" alt="Parental Control for Android" src="{$img}/landings/pic-spyapps-for-android.png" width="207px" height="208px" />
+            <img  class="block-apps-pic" alt="parental software" title="Parental monitoring Software" src="{$img}/landings/block-calls_3_05-04-2016.png" width="207px" height="208px" />
         </div>
     </div>    
 {EndContent}

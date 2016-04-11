@@ -39,11 +39,12 @@ description="Learn the difference between the Standard Pumpic Control Panel and 
         imgUrl = "header_banners/black-phone.png"
         imgAlt = "Landing Mobile"
         imgAlign = "right"
+        infoBlockMobile = "no"
         bottom_padding_null = "no"
         imgVerticalAlign = "bottom"
         textAlign = "right"
         title = 'Pumpic Control Panel<br><span style="color: #ffd773;font-weight: 600;">FREE</span> Mobile App'
-        description = "Access your Control Panel of the Pumpic monitoring app with your mobile device on the go!"
+        description = "Access your Control Panel of the Pumpic monitoring app<br> with your mobile device on the go!"
         blockMemberYet = "yes"
         block_video = "no"
         block_video_src = "http://www.youtube.com/embed/Atg0CbaytAY"
@@ -238,7 +239,8 @@ description="Learn the difference between the Standard Pumpic Control Panel and 
         <ul>
             <li class="third-title large__li li__title">Control Panel App <br>
                 <span class="third-title__android"><i class="icon-android"></i>(Android)</span></li>
-            <li class="large__li compasion__img"><a class="ga-action-click" ga-category="Mobile App Buttons" ga-action="click" ga-label="Store GP" target="_blank" href="https://play.google.com/store/apps/details?id=com.pumpic.mobile.monitoring"><img src="images/GooglePlay-Icon-150x150.png" alt="Pumpic Parental Monitoring on Google Play"></a></li>
+            <li class="large__li compasion__img"> <a class="ga-action-click" ga-category="Mobile App Buttons" ga-action="click" ga-label="Control Panel Comparison: Desktop vs. Mobile App" target="_blank" href="https://play.google.com/store/apps/details?id=com.pumpic.mobile.monitoring&referrer=utm_source%3Dpumpic.com%26utm_medium%3Dreferral%26utm_campaign%3Dcontrol-panel-comparison-landing"><img src="images/GooglePlay-Icon-150x150.png" alt="Pumpic Parental Monitoring on Google Play"></a>
+</li>
             <li class="main__compasion"></li>
             <li><i class="icon-ok"></i></li>
             <li><i class="icon-cancel"></i></li>
@@ -313,7 +315,10 @@ description="Learn the difference between the Standard Pumpic Control Panel and 
             <div class="apps-download col-xs-10 col-sm-10 col-md-10">
                 <div class="apps-download-block">
                     <p class="free-pumpic-control">Download FREE Control Panel<br>Mobile App now!</p>
-                   <a class="ga-action-click" ga-category="Mobile App Buttons" ga-action="click" ga-label="Store GP" target="_blank" href="https://play.google.com/store/apps/details?id=com.pumpic.mobile.monitoring"><img src="images/download_google.png" alt="Pumpic Parental Monitoring on Google Play"></a>
+
+
+
+                    <a class="ga-action-click" ga-category="Mobile App Buttons" ga-action="click" ga-label="Control Panel Comparison: Desktop vs. Mobile App" target="_blank" href="https://play.google.com/store/apps/details?id=com.pumpic.mobile.monitoring&referrer=utm_source%3Dpumpic.com%26utm_medium%3Dreferral%26utm_campaign%3Dcontrol-panel-comparison-landing"><img src="images/download_google.png" alt="Pumpic Parental Monitoring on Google Play"></a>
                 </div>
                 <div class="apps-download-text">
                     <p>Get your free Control Panel App for Android parental control on Google Play.</p>

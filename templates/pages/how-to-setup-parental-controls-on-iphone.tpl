@@ -105,7 +105,7 @@
     title="Why Install iPhone Parental Controls App?"
     blockBg='light'}
 	
-	<img class="app-icon-left  research-center" src="{$img}/landings/How-to-Lock-Apps-on-Android-Devices-Easily_1_04-04-2016.png" title="iPhone Parental Controls App" width="100"  alt="iPhone parental controls">
+	<img class="app-icon-left  research-center" src="{$img}/landings/how-to-setup-parental-controls-on-iphone_2_05-04-2016.png" title="iPhone Parental Controls App" width="100"  alt="iPhone parental controls">
 	<p>Due to the Pew Research Center, about 90% of teens go online on a daily basis. They are exposed to a lot of improper information presented by various websites and services. Children, particularly younger kids, can be bothered by the things they see online and the duty of every parent is to reduce  the chances of coming across something inappropriate.</p>
 	<p><a class="a-default" target="_blank" href="/iphone-parental-monitoring.html">Parental controls</a> can filter the web, blocking access to the wrong sites. There are many ways to do this, from configuring parental controls on your router to using built-in restrictions or monitoring software. Installing parental control apps is the best option to restrict the web from children preventing them from wandering into improper corners of the Internet.</p>
 	<p>Young people face many risks online such as sexting, cyberbullying, social networking with strangers, online predators and many more. Content filtering and online access limiting are the tops things for assuring to stay safe.</p>
@@ -164,7 +164,7 @@
             </div>
         </div>
         <div class="col-lg-3 col-md-3 col-sm-3 text-center">
-            <img  class="block-apps-pic" alt="iPhone parental monitoring" src="{$img}/landings/How-to-Lock-Apps-on-Android-Devices-Easily_2_04-04-2016.png" title="Parental Control for iPhone" width="207px" height="208px" />
+            <img  class="block-apps-pic" alt="iPhone parental monitoring" src="{$img}/landings/how-to-setup-parental-controls-on-iphone_3_05-04-2016.png" title="Parental Control for iPhone" width="207px" height="208px" />
         </div>
     </div>    
 {EndContent}

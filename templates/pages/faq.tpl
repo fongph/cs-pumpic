@@ -140,6 +140,7 @@
                                                                                                     <div>
 													<p>Soon after Pumpic is installed on the target device and connected to our server, all the captured data will be uploaded to the Control Panel automatically. You can access your Control Panel in any browser on any device.</p>
 													<p>You can also check the captured data by using Pumpic Control Panel Mobile App. It is a separate free mobile application for the Control Panel. Note that this app is currently available for Android smartphones only and limited to the following features: Call Logs, Text Messages, Location, Browser History, Contacts, Remote Device Reboot, Remote App Reboot, and Remote Device Lock.</p>
+             <p>Check <a class="text-link a-default" target="_blank" href="/mobile-monitoring-control-panel-comparison.html"> detailed features comparison here.</a> </p>
                                                                                                     </div>    
                                                                                                 </div>
                                                                                             </div>    

@@ -133,8 +133,8 @@
         <!-- END -->
 
         <p>When it comes to cell phone use, the same statistics proves that 48% of parents systematically look through children’s incoming and outgoing calls as well as text messages they send or receive. At the same time, at least 16% of parents use a teen monitoring app to set restrictions on cell phones and constantly track places their children visit.</p>
-		<p>Another statistic fact shows that 65% of parents have taken away children’s <a class='a-default' href='/android-parental-monitoring.html'>smartphones and tablets</a> as punishment. However, it is not necessary at all, if you a monitoring app like Pumpic is installed on their devices. The application allows you to control all activities and block them remotely from your Control Panel to not let kids use particular options of a cell phone. It is the easiest way to apply preventive measures, when it comes to online safety for teens, their docility, and protection.</p>
-		
+		<p>Another statistic fact shows that 65% of parents have taken away children’s smartphones and tablets as punishment. However, it is not necessary at all, if you a monitoring app like Pumpic is installed on their devices. The application allows you to control all activities and block them remotely from your Control Panel to not let kids use particular options of a cell phone. It is the easiest way to apply preventive measures, when it comes to online safety for teens, their docility, and protection.</p>
+
 		{EndContent}
         
 {Content 

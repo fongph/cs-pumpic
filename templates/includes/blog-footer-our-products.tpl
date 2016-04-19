@@ -31,7 +31,7 @@
             <a href="/reviews/">Best Mobile Trackers</a>
         </li>
         <li>
-            <a href="/child-online-mobile-security.html">Mobile Security Infographic</a>
+            <a href="/infographics/">Pumpic Mobile Infographics</a>
         </li> */ ?>
         <?php
         /*

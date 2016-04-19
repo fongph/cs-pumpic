@@ -1,4 +1,4 @@
-{include file='../includes/main/main-header.tpl'
+{include file='../../includes/main/main-header.tpl'
 robots="yes"
 title="Pumpic Mobile Infographics | Pumpic"
 description="Check out useful infographics on child online security that Pumpic has prepared for you. Learn what it takes to keep your children safe online and during daily living."
@@ -6,18 +6,18 @@ description="Check out useful infographics on child online security that Pumpic 
 
 <body>
 <!-- BLOCK GTM -->
-{include file='../includes/main/main-after-body.tpl'}
+{include file='../../includes/main/main-after-body.tpl'}
 <!-- END BLOCK GTM -->
 
 <!-- FLY BLOCKS -->
-{include file='../includes/main/main-button-help.tpl'}
-{include file='../includes/main/main-button-goup.tpl'}
+{include file='../../includes/main/main-button-help.tpl'}
+{include file='../../includes/main/main-button-goup.tpl'}
 <!-- END FLY BLOCKS-->
 
 <div class="wrapper icloud-iphone-without-jailbreak-monitoring">
     <!-- TOP MENU -->
 
-    {include file='../includes/main/main-top-menu.tpl'
+    {include file='../../includes/main/main-top-menu.tpl'
     topmenu_active='home'
     cache_id = "includes_main_main-top-menu"
     nocache
@@ -28,7 +28,7 @@ description="Check out useful infographics on child online security that Pumpic 
         Переменные:
             style (text): стиль блока Phone (blue|black). * - blue
     *}
-    {include file='../includes/content/phone/block-phone.tpl'
+    {include file='../../includes/content/phone/block-phone.tpl'
     style="blue"
     }
 
@@ -75,115 +75,7 @@ description="Check out useful infographics on child online security that Pumpic 
         <div class="infographics__desc"><a  href="/10-things-your-kids-can-learn-online.html">10 Things Your Kids Can Learn Online</a></div>
 </div>
 </div>
-
-
-
-    {literal}
-        <style>
-            .infographics__main div a{
-                color: #4d4f5b;
-                font-size: 20px;
-                font-weight: 300;
-                text-decoration: none;
-            }
-
-            .infographics__main div a:hover{
-                color: #f5ac43;
-
-            }
-
-            .infographics__block {
-           list-style: none;
-            }
-
-        .infographics__block {
-            position:relative;
-            width:300px;
-            height:189px;
-            overflow:hidden;
-            /*float:left;*/
-            margin-right:20px;
-            background-color:#666770;
-        }
-        .infographics__block p,.infographics__block h2 {
-            color: #000;
-            padding: 10px;
-            left: -22px;
-            top: 109px;
-            position: relative;
-            text-align: center;
-        }
-        .infographics__block p {
-            font-size:13px;
-            line-height:18px;
-            margin:0;
-
-        }
-        .infographics__block h2 {
-            font-size:20px;
-            line-height:24px;
-            margin:0;
-        }
-
-            .infographics__desc{
-                width: 300px;
-            }
-
-         .effect img {
-             position: absolute;
-             left: 0;
-             top: 0;
-             cursor: default;
-             margin: 0px 0;
-             -webkit-transition: bottom .3s ease-in-out;
-             -moz-transition: bottom .3s ease-in-out;
-             -o-transition: bottom .3s ease-in-out;
-             transition: top .3s ease-in-out;
-        }
-
-         .effect img.top:hover {
-             top: -90px;
-             padding-bottom: 100px;
-        }
-        h2.zero,p.zero {
-            margin:0;
-            padding:0;
-            color: #fff;
-            text-align: left;
-        }
-
-        @media only screen and (max-width: 992px) {
-            .infographics__block{
-                margin: 20px auto 6px auto;
-            }
-            .infographics__desc{
-                text-align: center;
-            }
-            .infographics__desc{
-                width: auto;
-            }
-
-            .infographics__main .col-md-4{
-                padding: 0;
-            }
-        }
-
-            @media only screen
-            and (min-device-width : 320px)
-            and (max-device-width : 568px) {
-                .infographics__block{
-                margin: 20px 0 6px -4px;
-            }
-            }
-
-
-
-        </style>
-    {/literal}
-
      {literal}
-
-
          <script>
          $('.infographics__desc a').hover(
 
@@ -200,8 +92,6 @@ description="Check out useful infographics on child online security that Pumpic 
          </script>
      {/literal}
 
-
-
 </div></div>
 
 
@@ -211,10 +101,10 @@ description="Check out useful infographics on child online security that Pumpic 
         Переменные:
             our_products (text): Включить выключить блок OUR PRODUCTS (no|yes). * - yes
     *}
-    {include file='../includes/main/main-footer.tpl'}
+    {include file='../../includes/main/main-footer.tpl'}
 
 </div>
 
-{include file='../includes/main/main-analytics-footer.tpl'}
+{include file='../../includes/main/main-analytics-footer.tpl'}
 </body>
 </html>

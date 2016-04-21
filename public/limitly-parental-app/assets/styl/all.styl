@@ -6,7 +6,7 @@ body
 a
 	color: #888;
 	font-family: Roboto;
-	font-size: 14px;
+	font-size: 14px; 
 	font-weight: 300;
 	text-decoration none
 	&:hover
@@ -33,17 +33,12 @@ nav li
 	&:hover
 		color: #fe8373;
 	
-nav.stickytop 
-	position: fixed;
-	top: 0;
-	width: 100%;
-	z-index: 1;
 
-.second_block
-	position: relative;
-	top: 200px;
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover
+	background-color: rgba(255, 255, 255, 0);
 
-
+.navbar-default .navbar-collapse, .navbar-default .navbar-form
+	border-color: rgba(255, 255, 255, 0);
 
 .menu
 	list-style-type: none;
@@ -64,41 +59,21 @@ h2
 	margin: 5px 0px;
 	
 
+.parallax-window 
+	min-height: 400px;
+	background: transparent;
+
 
 .border-bottom:after
 	content ''	
 	position: absolute;
-	bottom: 0;
+	bottom: -15px;
 	left: 50%;
 	width: 108px;
 	height: 1px;
 	margin-left: -55px;
 	background: $main-color;
 	
-.menu_first 
-	list-style-type: none;
-	text-align: right;
-	width: 100%;
-	position: absolute;
-	right: 25px;
-	top: 0px;	
-	
-.menu_first li 
-	display: inline-block;
-	padding: 0 22px;
-	vertical-align: middle;
-	text-transform: uppercase;
-
-	
-.menu_first li a
-	font-weight: 300;
-	color: #000;
-	font-size: 14px;
-	
-
-.menu_first li a:hover
-	color $main-color
-
 
 .social_buttons ul
 	display: inline-block;
@@ -107,11 +82,12 @@ h2
      
 .social_buttons ul li 
 	float: left;
+	padding: 0 5px;
 
 .social_buttons ul li svg 
 	width: 21px;
 	float: left;
-	padding: 0 5px;
+
 
 ul li
 	list-style-type: none;
@@ -144,6 +120,36 @@ ul li
 	width 100%
 	margin 0 auto
 
+
+
+
+
+.url_accordion .plus
+	background: url("../../../img/plus.png") no-repeat left 26px;
+	padding: 21px 0 0 25px;
+	cursor: pointer;
+
+.url_accordion .minus
+	background: url("../../../img/minus.png") no-repeat left 32px;
+	padding: 21px 0 0 25px;
+	cursor: pointer;
+	
+.url_accordion .minus span
+	font-weight 400
+
+.url_accordion .plus .accordion__text
+	display none
+
+
+.url_accordion .minus .accordion__text
+	display block
+
+	
+
+
+
+
+// Fotter Block Start
 .grid-row  
 	max-width 1170px
 	padding: 0 40px;
@@ -168,11 +174,8 @@ ul li
 footer
 	border-top: 1px solid #ebebeb;
 	padding: 20px 0 10px 0;
-	padding-bottom: 10px;
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	right: 0;
+	margin-top: 20px;	
+
 
 .footer_links
 	margin 0
@@ -202,11 +205,12 @@ footer
 
 .footer-social ul li
 	float:left 
+	padding: 0 5px; 
 
 .footer-social ul li svg
 	width: 21px;    
 	float: left;
-	padding: 0 5px; 
+
 	
 .copyright	
 	clear: both;
@@ -214,25 +218,38 @@ footer
 	font-size 12px
 	font-weight 300
 	color #ababab
+	margin: 5px 0;
 	
+.copyright__first
+	clear: both;
+	font-family Roboto
+	font-size 12px
+	font-weight 300
+	color #ababab
+	margin: 5px 0;
 	
-	
-.url_accordion .plus
-	background: url("../../../img/plus.png") no-repeat left 26px;
-	padding: 21px 0 0 25px;
 
-.url_accordion .minus
-	background: url("../../../img/minus.png") no-repeat left 32px;
-	padding: 21px 0 0 25px;
+
+@media screen and (min-width: 968px){
+		.copyright{
+			display none
+		}
+	}
 	
-.url_accordion .minus span
-	font-weight 400
+		
+	
+// Footer Block End	
+	
+
+
+
 
 
 .first
-	background url("../../../img/backg_1.png")  no-repeat  center;
+	// background url("../../../img/backg_1.png")  no-repeat  center;
 	background-size: cover;
 	overflow: hidden;
+	height 100vh
 
  
 .features__desc	h2
@@ -242,7 +259,7 @@ footer
 	font-weight: 100;
 	line-height: 51px;
 	text-align: left;
-	margin 0
+	margin 70px 0 25px 0;
 	
 .features__h2
 	color: #fe8373; 
@@ -251,20 +268,29 @@ footer
 	font-weight: 100;
 	line-height: 51px;
 	text-align: left;
-	margin: 0;	
+	margin: 0
 
 .features__row    
-	max-width: 830px;
+	width: auto;
 	margin: 0 auto;
 	
-.features__col
+.features__col 
 	float: left;
-	width: 50%;
+	width: 400px;
 	 
 
+.features__img	 
+	width: 206px;
+	margin: 0px 50px 0 90px;
+
 .features__img img
-	width: 206px
-	padding-left: 150px;
+	width: 206px !important;
+
+.slide
+	width: 810px;
+	margin: auto;
+	padding: 70px 0;
+
 
 .features__desc p
 	color #646464
@@ -273,12 +299,13 @@ footer
 	font-weight 300
 	
 .first-row
-	max-width: 1200px;
+	max-width: 1250px;
 	margin: 0 auto;
 	position: relative;
 	display: table;
 	height: 100%;
 	width: 100%;
+	z-index: 0;
     
 .first-col
 	display: table-cell; 
@@ -291,7 +318,7 @@ footer
 	position: absolute;
 	bottom: -130px;
 	right: 0;
-	margin-right: -120px;
+	margin-right: -20px;
 	width: 50%;
  
 	
@@ -300,13 +327,27 @@ footer
 	width: 100%;
 
 	
+@media (max-height: 900px){
+	.second-col img{
+		max-width: 560px;
+	
+	}
+}
+
+@media (max-height: 750px){
+	.second-col img{
+		max-width: 500px;
+	}
+}
+   
+
 .first__h2 h2
 	color white
 	font-size 60px
 	font-weight 100
 	text-align left	
-	line-height: 55px;
-	margin-top: 10px;
+	line-height: 65px;
+	margin-top: 20px;
 	
 
 .first__logo img
@@ -321,16 +362,13 @@ footer
 	padding: 20px 0;
   
 .first__googleplay
-	margin-top: 20px;
+	margin-top: 10px;
 	background-image: url(../../../img/google_normal.png);
 	width: 272px;
 	height: 65px;
 	transition: all .25s;
 	&:hover
-		margin-top: 20px;
 		background-image: url(../../../img/google_hover.png);
-		width: 272px;
-		height: 65px;
 		transition: all .25s;
 
 #fp-nav ul li a.active span
@@ -357,7 +395,7 @@ footer
 
 .social_buttons
 	position: absolute;
-	left: 0;
+	left: 15px;
 	bottom: 0;
 
 .first__logo__mobile
@@ -370,7 +408,6 @@ footer
 .url_accordion
 	padding 0 0 0 13px;
 	
-
 
 @media screen and (max-width: 968px) { 
 	h2{
@@ -398,15 +435,12 @@ footer
 	}
 	
 	.first__googleplay{
-		margin: 70px auto;
+		margin: 40px auto;
 	}
 	.menu-expanded .menu li:last-child{
 		display none
 	}
-	.menu_first{
-		display none
-	}
-	.google-play{
+	.nav>li:last-child{
 		display none
 	}
 	.first__text{
@@ -427,18 +461,28 @@ footer
 		text-align: center;
 		padding: 120px 0 20px 0px;
 	}
+	
+	.first__h2{
+	max-width: 400px;
+	margin: auto;
+	width: 100%;
+	}
 	.second-col{
 		display none
 	}
 	.first__h2 h2{
 	font-size: 38px;
     text-align: center;
+	line-height: 40px;
 	}	
 	.scroll-btn{
 		display:none !important;
 	}
 	.social_buttons{
 		display:none
+	}
+	.btn-down{
+		display:none	
 	}
 	.features__img img{
 		width 160px
@@ -457,7 +501,6 @@ footer
 		text-align: center;
 		}
 	.features__desc h2{
-		text-align: center;
 		font-size: 30px;
 		line-height: 30px;
 	}
@@ -469,13 +512,21 @@ footer
 	footer{
 		position: relative;
 	}
-	.second_block{
-		top:0
+
+	.owl-carousel_1{
+		display none !important
 	}
+	
+	.menu_first{
+		display none
+	}
+
+
+
 
 	}
 
- 	
+
 
 .menu-expanded .menu	
 	text-align: center;
@@ -586,6 +637,9 @@ footer
 	width 100%
 	margin 0 auto
 	
+.container__middle .owl-controls	
+	padding-top: 20px;
+	
 #fp-nav ul li .fp-tooltip
 	color #c8c8c8
 	font-family Roboto
@@ -595,19 +649,342 @@ footer
 	right: 14px;
 
 
-.owl-controls
-	padding-top: 20px;	
+// last section
+.last	 
+	padding: 14px 20px;
+// last section end
+
+
+
+// NavBar
+.container__menu
+	padding: 0px 20px;	
 	
-.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span
-	background $main-color	
+.navbar 
+	min-height: 70px;
+	margin-top: -120px;
+	-webkit-transition: all ease 1.5s;
+	transition: all ease 1.5s;
+	// -webkit-transition: all ease 1s;
+	// transition: all ease 1s;
+		
+ .floating
+	margin-top:0
+
+.navbar-default 
+	background-color: #ffffff;
+	
+
+.navbar-brand
+	padding: 15px 15px;
+
+
+@media (min-width: 768px){
+	.navbar-nav>li>a {
+		padding-top: 26px;
+	}
+	.navbar-nav {
+		float: right;
+		margin: 0;
+}
+}	
+
+.navbar-nav>li:last-child a
+	padding-top: 19px;
+	
+
+
+.navbar-default .navbar-toggle .icon-bar 
+	background-color: #ff7f73;
+	
+.navbar-toggle .icon-bar
+	width: 26px;	
+
+.navbar-toggle
+	padding: 14px 5px;
+	margin-top: 16px;
+	background: none;
+	border: none;
+
+
+.navbar-header
+	min-height: 70px;
+
+.navbar-brand img 
+	width: 112px
+	
+
+.navbar-default .navbar-nav>li>a 
+	text-align: center;
+	font-weight: 300;
+	color: #000;
+	font-size: 14px;
+	
+.navbar-default .navbar-nav>li a:hover 
+	color: #fe8373;
+
+// End Nav-Bar
+
+
+.middle__features
+	max-width: 970px;
+	margin: 46px auto;
+	width: 100%;
+
+
+.middle__features .features__row 
+	width: 250px;
+	margin: 15px 20px;
+	display: inline-block;
+	vertical-align: top;		
+
+
+.middle__features .features__col
+	width: 250px; 
+	float none
+	margin 0
+
+.middle__features .features__img img
+	width 168px !important
+	height 320px
+	margin: auto;
+	display: block;
+	
+.middle__features  .features__desc h2
+	font-size: 35px;
+	line-height: 1;	
+	padding: 15px 0px 5px 0px;
+	margin: 5px 0 10px 0;
+
+.middle__features  .features__desc p
+	font-size: 14px;
+	max-width: 250px;
+	width: 100%;
+	text-align left
+
+
+
+
+// Features block
+ 
+.features
+	height 750px
+	margin: 50px 0 0 0;
+
+
+.features .owl-theme .owl-dots .owl-dot span
+	width: 6px;
+	height: 6px;
+	background-color: #c8c8c8;	
+
+.features .owl-theme .owl-dots .owl-dot.active span, .features .owl-theme .owl-dots .owl-dot:hover span
+	width: 10px;
+	height: 10px;
+	background-color: #fe8373;
+	position: relative;
+	top: 2px;
+	
+
+.features .owl-dots
+	padding: 55px 0 0 0;
+
+.features .owl-dot
+	padding: 0 5px;
+    
+.features .owl-nav
+	position: absolute;
+	right: 0;
+	left: 0;
+	top: 40%;
+
+.features .owl-nav .owl-next
+	position: relative;
+	left: 460px;
+	
+.features .owl-nav .owl-prev 
+	position: relative;
+	right: 460px;
+
+
+.owl-theme .owl-nav [class*=owl-]:first-child
+	background-image: url(../../../img/arrow__grey__left.png);
+	background-color: rgba(255, 255, 255, 0);
+	width: 38px;
+	height: 92px;
+	margin 0
+	padding 0
+	
+.owl-theme .owl-nav [class*=owl-]:hover:first-child
+	background-image: url(../../../img/arrow__grey__left__hover.png); 
+	background-color: rgba(255, 255, 255, 0);
+	width: 38px;
+	height: 92px;
+
+
+
+.owl-theme .owl-nav [class*=owl-]:last-child
+	background-image: url(../../../img/arrow__grey__right.png);
+	background-color: rgba(255, 255, 255, 0);
+	width: 38px;
+	height: 92px;
+	margin 0
+	padding 0
+	
+.owl-theme .owl-nav [class*=owl-]:hover:last-child
+	background-image: url(../../../img/arrow__grey__right__hover.png); 
+	background-color: rgba(255, 255, 255, 0);
+	width: 38px;
+	height: 92px;
+// Features block End 
+
+
+
+
+
+
+
+
+// First block
+.menu_first
+	margin: 0;
+	width: 100%;
+	position: absolute;
+	right: 10px;
+	z-index: 1;
+	text-align: right;
+	top: 20px;
+
+.menu_first li
+	display: inline-block;
+	padding: 0 22px;
+	vertical-align: middle;
+	text-transform: uppercase;
+	
+.menu_first li a
+	font-weight: 300;
+	color: #fff;
+	font-size: 14px;
+	text-decoration none
+	&:hover
+		color: #fe8373;
+		
+// First block end
+
+
+// Look-inside block
+.look-inside	
+	padding: 0 0;
+
+
+.look-inside .owl-theme .owl-dots .owl-dot.active span, .look-inside .owl-theme .owl-dots .owl-dot:hover span 
+	background: #fe8373;
 	width: 54px;
 	height: 3px;
-	
-.owl-theme .owl-dots .owl-dot span  
+
+
+.look-inside .owl-theme .owl-dots .owl-dot span 
 	width: 50px;
 	height: 1px;
-	margin: 15px 0px;
-	background: #c8c8c8;
+	margin: 15px 0;
+	background: #c8c8c8; 
+// Look-inside block END
+
+
+// Btn Down
+ .btn-down 
+	position: absolute;
+	left: 50%;
+	bottom: 4.82456%;
+	width: 20px;
+	height: 34px;
+	padding: 4px 0;
+	margin-left: -10px;
+	text-align: center;
+	border: 2px solid #fff;
+	border-radius: 10px;
+	outline: none;
+	-webkit-box-sizing: border-box;
+	 -moz-box-sizing: border-box;
+	box-sizing: border-box;
+	background-color: transparent; 
+	cursor: default;
+
 	
-.last	
-	padding: 0;
+ .btn-down .disc 
+	display: inline-block;
+	vertical-align: top; 
+	width: 6px;
+	height: 6px;
+	border-radius: 50%;
+	background: #fff;
+
+// Btn Down END
+.mobile .navbar 
+	margin-top 0
+	
+.tablet	.navbar
+	margin-top: 0;
+
+.mobile .features, .tablet .features
+	display none
+
+.desktop .middle__features, .desktop .middle__features
+	display none
+	
+
+//iPhone 5
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) { 
+.first__h2 h2 {
+	font-size: 32px;
+}
+ 
+.look-inside .owl-theme .owl-dots .owl-dot.active span, .look-inside .owl-theme .owl-dots .owl-dot:hover span {
+	width: 42px;
+}
+
+.look-inside .owl-theme .owl-dots .owl-dot span {
+	width: 42px;
+	}
+}
+
+
+//tablet portrait
+
+
+.tablet.portrait .first__logo__mobile img
+	height: 132px;	
+	
+ .tablet.portrait .first__h2 h2 
+	font-size: 42px;
+
+ .tablet.portrait  .first__text 
+	ont-size: 20px;
+  
+	
+
+//Nav
+
+
+.bullet-nav 
+	position: fixed;
+	bottom: 50%;
+	right: 1em;
+	transform: translate(0, 50%);
+
+.bullet-nav a 
+	display: block;
+	margin-bottom: .5em;
+	border: .5em solid green;
+	border-radius: 100%;
+
+.red 
+	border: .5em solid red; 
+
+
+
+//
+@media only screen and (max-height:620px) {
+	.first {
+		height: 100%;
+	}
+}

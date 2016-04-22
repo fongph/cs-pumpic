@@ -67,13 +67,13 @@
         <!-- CONTENT -->
 
         {include file='../includes/content/info/info-promo.tpl'
-            imgUrl = "header_banners/header-how-to-block-texts-on-Android.png"
+            imgUrl = "header_banners/monitor-viber_header.png"
             imgAlt = "Viber monitoring" 
-            imgAlign = "right bottom"
-            imgVerticalAlign = "Viber Monitoring Software"
+            imgAlign = "right"
+            imgVerticalAlign = "bottom"
 			imgTitle = "Viber Monitoring Software"
             textAlign = "right"
-            title = "Monitor Viber Messages <br />on Android and iOS Device"
+            title = "Monitor Viber Messages <br />on Android and iOS Devices"
 			titleSize = "25px"
             description = "Provide your children with reliable protection. <br />Track Viber messages, calls, and shared files."
             promoBuyBlock = "no"
@@ -101,7 +101,7 @@
     title="How to Monitor Viber Calls and Messages"
     blockBg='light'}
 	
-	<img class="app-icon-left" src="{$img}/landings/icon-how-to-block-texts-on-Android.png" style="margin-top: -18px;" title="How to monitor Viber" alt="Viber calls and messages monitoring ">
+	<img class="app-icon-left" src="{$img}/landings/monitor-viber_icon.png" style="margin-top: -18px;" title="How to monitor Viber" alt="Viber calls and messages monitoring ">
 <p>The usage of social media continues to grow around the world. And the growth of mobile devices contributes greatly to this. Social networking sites and different messengers are widely used among adults, teenagers and even young children. Today there are more than 2.1 billion of active social media accounts worldwide, and most people cannot imagine their lives without the opportunities the Internet provides.</p>
 <p>Concerning the messengers, Viber is one of the most popular apps that has about 230 million monthly active users from more than 190 countries. The application provides people with a lot of functions making their communication fun and engaging. With the help of Viber, users can easily share messages, pictures, videos and audio files. The software is available for Android and iOS devices and works on both Wi-Fi and 3G/4G networks.</p>
 	
@@ -163,7 +163,7 @@
 			</div>
         </div>
         <div class="col-lg-3 col-md-3 col-sm-3 text-center">
-            <img  class="block-apps-pic" title="Reasons to Install Parental Controls" alt="Parental Control app" src="{$img}/landings/danger-how-to-block-texts-on-Android.png" width="207px" height="208px" />
+            <img  class="block-apps-pic" title="Reasons to Install Parental Controls" alt="Parental Control app" src="{$img}/landings/parental-control-for-viber.png" width="207px" height="208px" />
         </div>
     </div>    
 {EndContent}
@@ -226,21 +226,21 @@
                         <div class="slide">
                 
                     <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
-                            <img src="{$img}/testimonials/andrea-l-16-2.png" alt="" class="testimonial-photo">
+                            <img src="{$img}/testimonials/Evan_L.png" alt="" class="testimonial-photo">
                             <div class="testimonial-text">
                                     <h4>Evan L. - father of 15-year-old daughter</h4>
                                     <p>“I think that the girls in this age can easily get into trouble. They want to be cool and sometimes do improper things under their peers’ pressure. Pumpic helps me to keep track of my daughter’s activities to be sure she isn’t a victim of sexting or sexual abuse. I can always check her instant position, track calls and messages she sends and receives, and view her social media profiles. I know that she is protected round-the-clock.”</p>
                             </div>
                     </div>
                     <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
-                            <img src="{$img}/testimonials/martin-s-12-2.png" alt="" class="testimonial-photo">
+                            <img src="{$img}/testimonials/Alice_K.png" alt="" class="testimonial-photo">
                             <div class="testimonial-text">
                                     <h4>Alice K. - mother of 12-year-old son</h4>
                                     <p>“I decided to use Pumpic to restrict the usage of the Internet. There is a great number of 18+ information online and my son is too young to see it. With the help of parental control, I block access to adult websites and inappropriate content. I can always check the visited sites and even view the bookmarks. Thanks for helping me to keep my son secured!”</p>
                             </div>
                     </div>
                     <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
-                            <img src="{$img}/testimonials/miranda-p-12.png" alt="" class="testimonial-photo">
+                            <img src="{$img}/testimonials/Connie_A.png" alt="" class="testimonial-photo">
                             <div class="testimonial-text">
                                     <h4>Connie A. - mother of 13-year-old daughter</h4>
                                     <p>“It’s important for me to know where my daughter is all the time. If she is late, and her phone doesn’t answer, I can check her location in a matter of minutes from my personal app’s board. With Pumpic, I shouldn't worry about my girl as I know that she is safe. Thank you for such an amazing opportunity!”</p>

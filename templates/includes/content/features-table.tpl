@@ -90,7 +90,7 @@
                             <div class="tab col-item-3 col-md-item-3 col-sm-item-3">
                                 <ul>
                                     <li><i class="i-features-monitor-viber-whatsapp"></i> <span onclick="window.location='http://{$domain}/whatsapp-monitoring.html'">Monitor WhatsApp</span></li>
-                                    <li><i class="i-features-monitor-skype"></i> Monitor Skype</li>
+                                    <li><i class="i-features-monitor-skype"></i> <span onclick="window.location='http://{$domain}/monitor-skype.html'">Monitor Skype</span></li>
                                     <li><i class="i-features-social"></i> Monitor Facebook IM</li>
                                     <li><i class="i-features-monitor-viber-whatsapp"></i> <span onclick="window.location='http://{$domain}/monitor-viber.html'">Monitor Viber</span></li>
                                     <li><i class="i-features-monitor-instagram"></i> <span onclick="window.location='http://{$domain}/parental-control-for-instagram.html'">Monitor Instagram</span></li>

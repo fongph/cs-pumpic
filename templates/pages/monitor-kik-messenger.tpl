@@ -227,21 +227,21 @@
                         <div class="slide">
                 
                     <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
-                            <img src="{$img}/testimonials/Amelia K.png" alt="" class="testimonial-photo">
+                            <img src="{$img}/testimonials/Amelia_K.png" alt="" class="testimonial-photo">
                             <div class="testimonial-text">
                                     <h4>Amelia K. - mother of twins</h4>
                                     <p>“I’m so happy I’ve started to use Pumpic to monitor my children’s online activities. Now I’m sure they are protected from different online dangers. I constantly track their location, view their social media accounts and use a great function of Kik messenger tracking. I think that using parental controls is essential today as kids are more exposed to different risks. Pumpic allows to prevent negative consequences of Internet usage.”</p>
                             </div>
                     </div>
                     <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
-                            <img src="{$img}/testimonials/Lucas S.png" alt="" class="testimonial-photo">
+                            <img src="{$img}/testimonials/Lucas_S.png" alt="" class="testimonial-photo">
                             <div class="testimonial-text">
                                     <h4>Lucas S. - father of 14-year-old daughter</h4>
                                     <p>“I needed to monitor my daughter’s social life as she started to behave really strange after spending time online. I installed Pumpic to check the messages she got and found out that my girl was a victim of cyberbulling. Some kids are aggressive and cruel and offend others who cannot protect themselves. My girl is 14, and she is very shy. She has never told me about that problem. Thankfully, the monitoring app helped to find the problem at once and solved it out. Thanks a lot!”</p>
                             </div>
                     </div>
                     <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
-                            <img src="{$img}/testimonials/Donald G.png" alt="" class="testimonial-photo">
+                            <img src="{$img}/testimonials/Donald_G.png" alt="" class="testimonial-photo">
                             <div class="testimonial-text">
                                     <h4>Donald G. - father of 15-year-old son</h4>
                                     <p>“Thanks a lot for such a nice app! Pumpic is exactly what all parents need to make sure their kids are safe. I have tried different functions it provides, such as messages monitoring, tracking calls, viewing different files that are shared, checking Facebook and Kik. Surely, I trust my boy and want to give him some freedom to learn from his own mistakes, but I think that small control is useful. And this app gives such an opportunity.”</p>

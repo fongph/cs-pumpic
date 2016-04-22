@@ -225,21 +225,21 @@
                         <div class="slide">
                 
                     <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
-                            <img src="{$img}/testimonials/Patricia M.png" alt="" class="testimonial-photo">
+                            <img src="{$img}/testimonials/Patricia_M.png" alt="" class="testimonial-photo">
                             <div class="testimonial-text">
                                     <h4>Patricia M. - mother of 14-year-old son</h4>
                                     <p>"I was seeking for an app to monitor WhatsApp messages on iPhone as my son spends all evenings chatting with peers. I wanted to make sure he was not cyberbullied, so I started to use Pumpic to follow his WhatsApp experience. I also appreciate the opportunity to check the current location of my son at any time. I can go to my own board and monitor all the son’s activities I’m interested in. Thank you!"</p>
                             </div>
                     </div>
                     <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
-                            <img src="{$img}/testimonials/William R.png" alt="" class="testimonial-photo">
+                            <img src="{$img}/testimonials/William_R.png" alt="" class="testimonial-photo">
                             <div class="testimonial-text">
                                     <h4>William R. - father of three daughters</h4>
                                     <p>"I consulted with my wife and we came to the conclusion to install a monitoring application to check the browsing history of our daughters. We cannot control the websites they go to all the time, so we block improper links and sites with the help of different functions Pumpic provides. This way, I know that my girls can’t visit 18+ links and other information they are too young to check. It’s an unbelievable feeling to know that my daughters are secure when I’m not with them."</p>
                             </div>
                     </div>
                     <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
-                            <img src="{$img}/testimonials/Margaret S.png" alt="" class="testimonial-photo">
+                            <img src="{$img}/testimonials/Margaret_S.png" alt="" class="testimonial-photo">
                             <div class="testimonial-text">
                                     <h4>Margaret S. - mother of 15-year-old girl</h4>
                                     <p>"I apply parental controls for WhatsApp monitoring iPhone and check calls and SMS. I trust my daughter and allow her to check all the resources she’s interested in. But at the same time I want to be sure that she is safe. Luckily, Pumpic gives such an opportunity. I follow some online activities of my daughter to be 100% confident she is happy and not harmed in any way. Thanks a lot for such an amazing chance!"</p>

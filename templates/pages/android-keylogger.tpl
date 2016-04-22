@@ -29,6 +29,9 @@
             .block-child-location-tracking .ipad-text {
               padding: 10px 0;
             }
+            .visual-img-pc{
+              left: 53px;
+            }
         }
 
         @media (min-width: 1200px) {
@@ -69,8 +72,8 @@
         {include file='../includes/content/info/info-promo.tpl'
             imgUrl = "header_banners/android-keylogger_1_19-04-2016.png"
             imgAlt = "Android Keylogger vs Parental Controls" 
-            imgAlign = "right bottom"
-            imgVerticalAlign = "Android Keylogger vs Parental Monitoring Software"
+            imgAlign = "right"
+            imgVerticalAlign = "bottom"
 			imgTitle = "Android Keylogger vs Parental Monitoring Software"
             textAlign = "right"
             title = "Android Keylogger App vs <br />Parental Monitoring Software"

@@ -89,13 +89,13 @@
 
                             <div class="tab col-item-3 col-md-item-3 col-sm-item-3">
                                 <ul>
-                                    <li><i class="i-features-monitor-viber-whatsapp"></i> Monitor WhatsApp</li>
+                                    <li><i class="i-features-monitor-viber-whatsapp"></i> <span onclick="window.location='http://{$domain}/whatsapp-monitoring.htmlgi'">Monitor WhatsApp</span></li>
                                     <li><i class="i-features-monitor-skype"></i> Monitor Skype</li>
                                     <li><i class="i-features-social"></i> Monitor Facebook IM</li>
                                     <li><i class="i-features-monitor-viber-whatsapp"></i> Monitor Viber</li>
                                     <li><i class="i-features-monitor-instagram"></i> <span onclick="window.location='http://{$domain}/parental-control-for-instagram.html'">Monitor Instagram</span></li>
                                     {*<li><i class="i-features-remote-activity-control"></i> Remote Control Panel</li>*}
-                                    <li><i class="i-features-kik-chat"></i> Monitor Kik</li>
+                                    <li><i class="i-features-kik-chat"></i> <span onclick="window.location='http://{$domain}/monitor-kik-messenger.html'">Monitor Kik</span></li>
                                     <li><i class="i-features-monitor-snapchat"></i> Monitor Snapchat</li>
                                     <li><i class="i-features-sms-commands"></i> SMS Commands</li>
                                     {*<li class="hidden-mobile">&nbsp;</li>*}

@@ -226,7 +226,7 @@
     title="How Keylogger Works"
     blockBg='light'}
     <p>When it comes to keylogger software, parents usually get confused due to the obscurity of this function. Let’s shed some light on it to make everything fall into place, where it belongs.</p> 
-<p>When we talk about keylogger, we at the same time mean a keyboard tracker – a special program developed to capture button presses. With its help, a user can view personal text messages, passwords, credit card numbers, and literally everything that an owner of the target device types in.</p> 
+<p>When we talk about <a href="http://pumpic.com/android-keylogger.html">keylogger for Android</a> and iOS devices, we at the same time mean a keyboard tracker – a special program developed to capture button presses. With its help, a user can view personal text messages, passwords, credit card numbers, and literally everything that an owner of the target device types in.</p> 
 <p>Thus, a keylogger app can help you monitor each tap on a touchscreen and every button your kid hits, while using his or her cell phone. After Pumpic keylogger activation you will be able to:</p>
 <ul>
 <li>Control if your kids use dirty language or any other words inappropriate for children;</li>

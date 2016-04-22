@@ -113,7 +113,7 @@
                 <section>
                     <div><strong class="fz50 color-orange">50%</strong></div>
                     <span class="text-uppercase">
-                        teens have experienced some form of cyberbullying, and 10 to 20 per cent experience it regularly
+                        teens have experienced some form of cyberbullying, and 10 to 20 percent experience it regularly
                     </span>
                 </section>
             </div>

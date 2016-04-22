@@ -346,17 +346,6 @@
                         </div>
                 </div>
                 <div class="row text-center">
-                    <div class="refund_10 refund_bg">
-                        <div class="wr_refund">
-                            <div class="day10">
-                                10-DAY 
-                                <span class="d_green">Refund Policy</span>
-                            </div>
-                            <div class="fulfill-link">
-                                <span class="store-full-link"><a href="http://pumpic.com/policy.html#refund-policy">if you fulfill these rules <i class="icon-angle-double-right"></i></a></span>
-                            </div>
-                        </div>
-                    </div>
                     <div class="table_header table_header-border text-center">
                       <span>
                               Payment methods:
@@ -440,7 +429,7 @@
                             </div>
                         </div> <!-- .slide-->
                     </div>
-                    <div class="bxSliderMobile"></div>                  
+                    <div class="bxSliderMobile"></div>
 
                     {*<div class="bxSliders only-mobile">
                         <!-- SLIDE #1 -->
@@ -474,7 +463,7 @@
                                 </div>
                             </div>
                         </div> <!-- .slide-->
-                        
+
                         <!-- SLIDE #4 -->
                         <div class="slide">
                             <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
@@ -485,7 +474,7 @@
                                 </div>
                             </div>
                         </div> <!-- .slide-->
-                        
+
                         <!-- SLIDE #5 -->
                         <div class="slide">
                             <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
@@ -496,7 +485,7 @@
                                 </div>
                             </div>
                         </div> <!-- .slide-->
-                        
+
                         <!-- SLIDE #6 -->
                         <div class="slide">
                             <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
@@ -507,13 +496,13 @@
                                 </div>
                             </div>
                         </div> <!-- .slide-->
-                        
+
                         <!-- END -->
-                    </div>*}    
-                    
+                    </div>*}
+
                 </div>
             </div>
-        </div>        
+        </div>
                 
         <!-- RECOMMENDED -->
         {*

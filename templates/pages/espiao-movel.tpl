@@ -164,16 +164,6 @@
                                         
                                         <tr>
                                             <th>
-                                                <div class="refund_10 refund_bg">
-                                                    <div class="wr_refund text-transform-none">
-                                                        
-                                                        <div class="day10"> 
-                                                            <span class="d_green">Política de Reembolso de</span>
-                                                            10 DIAS
-                                                        </div>
-                                                        
-                                                    </div>
-                                                </div>
                                                 <div class="table_header text-transform-none text-center">
                                                     <div id="list-price-phones" class="wr_support_new_os">
                                                         <i class="icon-android d_green"></i> Android {$ver_android_bot} - {$ver_android_up}
@@ -313,15 +303,6 @@
                                         
                                         <tr>
                                             <th>
-                                                <div class="refund_10 refund_bg">
-                                                    <div class="wr_refund text-transform-none">
-                                                        <div class="day10"> 
-                                                            <span class="d_green">Política de Reembolso de</span>
-                                                            10 DIAS
-                                                        </div>
-                                                        {*<span class="d_green">Política de Reembolso de </span><div class="day10">10 DIAS</div>*}
-                                                    </div>
-                                                </div>
                                                 <div class="table_header text-transform-none text-center">
                                                     <div id="list-price-phones" class="wr_support_new_os">
                                                         <i class="icon-apple d_green"></i> iOS {$ver_icloud_bot} - {$ver_icloud_up}

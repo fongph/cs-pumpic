@@ -162,13 +162,6 @@
 
                                     <tr>
                                         <th>
-                                            <div class="refund_10 refund_bg">
-                                                <div class="wr_refund text-transform-none">
-                                                    <div class="day10">10 TAGE
-                                                        <span class="d_green">Geld-zurück-Garantie</span>
-                                                    </div>
-                                                </div>
-                                            </div>
                                             <div class="table_header text-transform-none text-center">
                                                 {*<ul class="list-price-phones text-center">
                                                     <li><i class="icon-android"></i>Android 2.2 - 5.1</li>
@@ -309,13 +302,6 @@
                                         
                                         <tr>
                                             <th>
-                                                <div class="refund_10 refund_bg">
-                                                    <div class="wr_refund text-transform-none">
-                                                        <div class="day10">10-TAGE 
-                                                            <span class="d_green">Geld-zurück-Garantie</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
                                                 <div class="table_header text-transform-none text-center">
                                                     <div id="list-price-phones" class="wr_support_new_os">
                                                         <i class="icon-apple d_green"></i> iOS {$ver_icloud_bot} - {$ver_icloud_up}

@@ -583,16 +583,6 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="refund_10 refund_bg">
-                                                    <div class="wr_refund text-transform-none">
-                                                        <div class="day10">10-DAY 
-                                                            <span class="d_green">Refund Policy</span>
-                                                        </div>
-                                                        <div class="fulfill-link">
-                                                            <span class="store-full-link"><a href="http://pumpic.com/policy.html#refund-policy">if you fulfill these rules <i class="icon-angle-double-right"></i></a></span>
-                                                        </div>
-                                                    </div>
-                                                </div>
                                             </th>
                                         </tr>
                                         <tr>

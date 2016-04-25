@@ -1580,3 +1580,7 @@
     color: #16a89e;
 }
 
+.ie9 .visual{
+    background: url(../images/bg-visual.jpg) 50% 0 repeat-x #6e9c99;
+    display:none;
+}

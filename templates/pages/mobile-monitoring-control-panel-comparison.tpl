@@ -43,7 +43,7 @@ description="Learn the difference between the Standard Pumpic Control Panel and 
         bottom_padding_null = "no"
         imgVerticalAlign = "bottom"
         textAlign = "right"
-        title = 'Pumpic Control Panel<br><span style="color: #ffd773;font-weight: 600;">FREE</span> Mobile App'
+        title = 'Pumpic Control Panel &#10; <span style="color: #ffd773;font-weight: 600">FREE</span> Mobile App'
         description = "Access your Control Panel of the Pumpic monitoring app<br> with your mobile device on the go!"
         blockMemberYet = "yes"
         block_video = "no"

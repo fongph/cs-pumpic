@@ -29,6 +29,11 @@
             .block-child-location-tracking .ipad-text {
               padding: 10px 0;
             }
+
+            .box-video-constructors div#block-video, .box-video-constructors div#mobile-block-video{
+                right: 58px;
+            }
+
         }
 
         @media (min-width: 1200px) {
@@ -101,7 +106,7 @@
     title="Why You Would Want to Monitor Kik Activity"
     blockBg='light'}
 	
-	<img class="app-icon-left" src="{$img}/landings/monitor-kik-messenger_icon.png" style="margin-top: -18px;" title="How to track Kik messager" alt="Kik messanger tracking">
+	<img class="app-icon-left" src="{$img}/landings/monitor-kik-messenger_icon.png"  title="How to track Kik messager" alt="Kik messanger tracking">
 <p>Kik Messenger is a popular app that allows to connect with friends, groups and the world via chat. It has approximately 240 million registered users and is used by 40 per cent of teenagers in the United States. It lets users send and receive messages, share pictures and videos, mobile webpages and different types of content. </p>
 <p>What makes this app so popular among teens is that it doesn’t require providing telephone number and any other information apart from the username. This feature of preserving anonymity attracts youth, however, has downsides for safety and privacy. That’s why teens using this social networking app will need safety guidance. And you, as a careful parent, should provide it to protect your children from all possible online risks and dangers. </p>
 

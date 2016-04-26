@@ -10,7 +10,7 @@
 #fly_features {
     position: fixed;
     display: none;
-    background: url('../images/fly_features/bg_fly_features_big.png') no-repeat;
+    background: linear-gradient(to left top, rgb(187, 104, 132), rgb(58, 129, 147), rgb(32, 77, 132));
     background-size: auto;
     width: 207px;
     height: 214px;

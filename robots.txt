@@ -5,7 +5,6 @@ Disallow: /restore.html
 Disallow: /login.html
 Disallow: /tos.txt
 Disallow: /toscpapp.txt
-Disallow: /demo/
 
 Disallow: /wp-content
 Disallow: /wp-admin

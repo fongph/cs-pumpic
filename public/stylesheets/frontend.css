@@ -8551,7 +8551,9 @@ div.symbol {
 }
 
 .visual {
-  background: #6e9c99 url(../images/bg-visual.jpg) repeat-x 50% 0;
+  background: #3a8193;
+  background: -webkit-radial-gradient(5px 49px,circle,#bb6884,#3a8193,#204d84);
+  background: radial-gradient(circle at 5px 49px,#bb6884,#3a8193,#204d84);
 }
 
 .plans, .box-discount {
@@ -8850,6 +8852,7 @@ div.blockquate_bottom {
 .logo {
   float: left;
   background: url(../images/logo/logo.png) no-repeat;
+  background-size: cover;
   width: 172px;
   height: 44px;
   overflow: hidden;
@@ -13347,12 +13350,12 @@ div[id^="attachment_"], div[id*=" attachment_"] {
     content: "";
     position: absolute;
     display: block;
-    background: #348292;
+    background: #11191c;
     height: 100%;
     width: 100%;
     left: 0;
     top: 0;
-    opacity: 0.5;
+    opacity: 0.12;
     z-index: 1;
     border-radius: 10px;
     -webkit-border-radius: 10px 10px;
@@ -23075,7 +23078,7 @@ dl.table-rows.block-left {
 #fly_features {
     position: fixed;
     display: none;
-    background: url('../images/fly_features/bg_fly_features_big.png') no-repeat;
+    background: linear-gradient(to left top, rgb(187, 104, 132), rgb(58, 129, 147), rgb(32, 77, 132));
     background-size: auto;
     width: 207px;
     height: 214px;
@@ -23585,7 +23588,9 @@ and open the template in the editor.
 .msie .div-table { display: table; }
 @media (max-width: 992px) { 
     .msie .div-table { display: block; }
-} 
+}
+
+
 /* header */
 .block-reviews table td[class*="col-"], .block-reviews table th[class*="col-"]{
    float: left; 

@@ -111,4 +111,5 @@ and open the template in the editor.
 .msie .div-table { display: table; }
 @media (max-width: 992px) { 
     .msie .div-table { display: block; }
-} 
+}
+

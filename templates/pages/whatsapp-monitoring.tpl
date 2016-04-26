@@ -29,6 +29,9 @@
             .block-child-location-tracking .ipad-text {
               padding: 10px 0;
             }
+            .visual-img-pc  {
+              left: 58px;
+        }
         }
 
         @media (min-width: 1200px) {
@@ -101,7 +104,7 @@
     title="What Is WhatsApp?"
     blockBg='light'}
 	
-	<img class="app-icon-left" src="{$img}/landings/whatsapp-monitoring_2_20-04-2016.png" style="margin-top: -18px;" title="What is Whatsapp" alt="whatsapp features">
+	<img class="app-icon-left" src="{$img}/landings/whatsapp-monitoring_2_20-04-2016.png" title="What is Whatsapp" alt="whatsapp features">
 <p>WhatsApp is a messaging app for smartphones. It allows to send messages, images, and various media files. It is very popular among teenagers as has the cool function of group chatting and the current position sharing. In February 2016, the service had the base of users of one billion. In fact, WhatsApp is the biggest online messenger app on the market, popular in different countries worldwide. </p>
 <p>WhatsApp users can share instant location via messages. They can form group chats and communicate with several people at once. Probably one of the most outstanding features that attracts people is that they can easily communicate with friends and family members who are living abroad. They should not pay for international calls and text messages anymore as WhatsApp allows quick connection via Internet. </p>
 <p>To use this app, you need a smartphone or tablet and the Internet connection. The cost for using WhatsApp is €0.99 a year, and it is free of charge to download the app and use it during the first 12 months. </p>

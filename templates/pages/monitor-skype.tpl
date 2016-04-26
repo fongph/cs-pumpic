@@ -29,6 +29,9 @@
             .block-child-location-tracking .ipad-text {
               padding: 10px 0;
             }
+             .box-video-constructors div#block-video, .box-video-constructors div#mobile-block-video{
+                right: 50px;
+            }
         }
 
         @media (min-width: 1200px) {

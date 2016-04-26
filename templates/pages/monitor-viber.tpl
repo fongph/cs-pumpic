@@ -29,6 +29,9 @@
             .block-child-location-tracking .ipad-text {
               padding: 10px 0;
             }
+            .visual-img-pc{
+                left:50px;
+            }
         }
 
         @media (min-width: 1200px) {
@@ -101,7 +104,7 @@
     title="How to Monitor Viber Calls and Messages"
     blockBg='light'}
 	
-	<img class="app-icon-left" src="{$img}/landings/monitor-viber_icon.png" style="margin-top: -18px;" title="How to monitor Viber" alt="Viber calls and messages monitoring ">
+	<img class="app-icon-left" src="{$img}/landings/monitor-viber_icon.png"  title="How to monitor Viber" alt="Viber calls and messages monitoring ">
 <p>The usage of social media continues to grow around the world. And the growth of mobile devices contributes greatly to this. Social networking sites and different messengers are widely used among adults, teenagers and even young children. Today there are more than 2.1 billion of active social media accounts worldwide, and most people cannot imagine their lives without the opportunities the Internet provides.</p>
 <p>Concerning the messengers, Viber is one of the most popular apps that has about 230 million monthly active users from more than 190 countries. The application provides people with a lot of functions making their communication fun and engaging. With the help of Viber, users can easily share messages, pictures, videos and audio files. The software is available for Android and iOS devices and works on both Wi-Fi and 3G/4G networks.</p>
 	

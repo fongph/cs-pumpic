@@ -206,9 +206,7 @@
 
 
 @media only screen and (max-width: 768px) {
-    #fly_features { 
-        background: url('../images/fly_features/bg_mobile_fly_features.png') no-repeat;
-        background-size: 100% 100%;
+    #fly_features {
         border-radius: 0px;
         -webkit-border-radius: 0px 0px;
         -moz-border-radius: 0px 0px;

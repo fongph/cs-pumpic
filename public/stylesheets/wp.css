@@ -12838,7 +12838,6 @@ form.form-faq .box-captcha {
     padding: 13px;
     margin-bottom: 0px;
     height: 123px;
-    background: url(../images/bg-banner-small-mobile-operators.gif) no-repeat;
     background-size: 100% 100%;
 }
 .mobile-operations-banner .banner-phone {
@@ -17863,9 +17862,7 @@ ul.list-image-v1 li img.arrows-play {
 
 
 @media only screen and (max-width: 768px) {
-    #fly_features { 
-        background: url('../images/fly_features/bg_mobile_fly_features.png') no-repeat;
-        background-size: 100% 100%;
+    #fly_features {
         border-radius: 0px;
         -webkit-border-radius: 0px 0px;
         -moz-border-radius: 0px 0px;

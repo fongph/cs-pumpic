@@ -13,18 +13,6 @@ require_once 'smarty.config.php';
 /* list order */
 $products = $obj ->getProducts('first');
 
-$_sortingProducts = array('basic' => array(), 'premium' => array());
-if(is_array($products)) {
-    // Basic
-    if(isset($products['basic'])) {
-        $_sortingProducts['basic'] = $obj -> _arsort( $products['basic'] );
-    }
-    // Premium
-    if(isset($products['premium'])) {
-        $_sortingProducts['premium'] = $obj -> _arsort( $products['premium'] );
-    }
-}
-
 /* form_order */
 $_request = (isset($_POST['price']) and !empty($_POST['price'])) ? $_POST['price']: false;
 if($_request['productID']) {
@@ -75,7 +63,7 @@ $_rates = $_curr -> getCurrencies();
 $smarty->assign('rates', json_encode($_rates));
 
 // init output params!
-$smarty->assign('getProducts', $_sortingProducts);
+$smarty->assign('getProducts', $products);
 
 // init output params
 $smarty->display($b_dir.'/templates/pages/store.tpl');

@@ -282,21 +282,31 @@ class Order extends ManagerUser
         return $redirectUrl;
     }   
         
+    private static function sortPeriods($a, $b) {
+        return $a['period'] > $b['period'];
+    }
+    
     public function getProducts($namespace) 
     {
-        $_plans = $this -> _billing->getSiteProducts(self::SITE_ID, $namespace);
-        if(is_array($_plans) 
-                and count($_plans) > 0) {
-            
-            foreach($_plans as $_plan => $_data) :
-                if(preg_match('/^basic(.*+)$/is', $_plan)) {
-                    self::$_data['basic'][] = array_merge($_data, ['period' => $this ->_numbers($_plan)]);
-                } else if(preg_match('/^premium(.*+)$/is', $_plan)) {
-                    self::$_data['premium'][] = array_merge($_data, ['period' => $this ->_numbers($_plan)]);
+        $plans = $this->_billing->getSiteProducts(self::SITE_ID, $namespace);
+        
+        if(count($plans) > 0) {
+            foreach($plans as $plan => $data) {
+                if (strpos($plan, 'premium-double') === 0) {
+                    self::$_data['premium-double'][] = array_merge($data, ['period' => $this ->_numbers($plan)]);
+                } elseif (strpos($plan, 'basic-double') === 0) {
+                    self::$_data['basic-double'][] = array_merge($data, ['period' => $this ->_numbers($plan)]);
+                } elseif (strpos($plan, 'premium') === 0) {
+                    self::$_data['premium'][] = array_merge($data, ['period' => $this ->_numbers($plan)]);
+                } elseif (strpos($plan, 'basic') === 0) {
+                    self::$_data['basic'][] = array_merge($data, ['period' => $this ->_numbers($plan)]);
                 }
-                        
-            endforeach;
-            
+            }
+        }
+        
+        foreach (self::$_data as $key => $value) {
+            uasort($value, array('self', 'sortPeriods'));
+            self::$_data[$key] = $value;
         }
         
         return self::$_data;

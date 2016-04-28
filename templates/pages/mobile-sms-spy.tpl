@@ -286,7 +286,8 @@
     <ul>
         <li>find out if your kid is dating someone and prevent him or her from related threats (teenagers chat with their dates pretty often, and thus, SMS tracking will let you be in touch with the situation and take action, if needed);</li>
         <li>control whom your kids communicate with and prevent them from chatting with strangers or misgiving people (swindlers, bullies, and online predators often use text messages to contact their victims);</li>
-        <li>take immediate action, if find out that your kid contacts drug dealers or someone, who might be a bad company for him or her;</li>
+        <li><a href="http://pumpic.com/how-to-block-texts-on-android.html">block texts messages on Android</a> and iOs devices to prevent kids from seeing inappropriate content and communicating with strangers;</li>
+		<li>take immediate action, if find out that your kid contacts drug dealers or someone, who might be a bad company for him or her;</li>
         <li>find out if your kid is up to do something you would not approve, or is going to go anywhere you would not allow;</li>
         <li>find out if your kid uses bad words in his or her communication;</li>
         <li>prevent your kid from being involved in sexting (exchanging messages with sexual content, sometimes including inappropriate photos attached).</li>

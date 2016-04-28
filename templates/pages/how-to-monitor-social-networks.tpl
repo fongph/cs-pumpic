@@ -68,7 +68,7 @@
     
         <p>There are too many children, who communicate via the Internet these days. And though most social networks do not permit the under 13 to view their content, there is no real possibility to restrict the access for kids.</p>
 	<p>Social networks number hundreds of million users. There has never been such an opportunity for children to reach so many people in a short period of time despite of distance and borders. At the same time, there have never been a better opportunity for online predators and cyberbullies to track children, attack them, and stay anonymous.</p>
-	<p class="pb10">It is up to you whether to let your kids use social networks or not. Anyway, you should know some online safety guidelines for parents to be prepared:</p>
+	<p class="pb10">It is up to you whether to let your kids use social networks or not. Anyway, you should know some <a href="http://pumpic.com/online-safety-rules-for-teens.html">online safety guidelines for parents</a> to be prepared:</p>
         
         <div class="pb10">
             <h2 class="incr-number-green">Sing up to social networks</h2>

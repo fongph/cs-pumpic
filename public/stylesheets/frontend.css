@@ -20023,14 +20023,13 @@ form > table.pricing-second:after {
 }
 
 .tb_pricing .support_new_os {
-    top: 480px;
+    top: 585px;
 }
 
 .basic_wr{
     width:49.99%;
     background: #ffffff;
     color:#606060;
-
     float:left;
 }
 .premium_wr{
@@ -20109,7 +20108,7 @@ form > table.pricing-second:after {
     background: #4d4f5b;
     color:#5cbab2;
     line-height:34px; 
-    height:34px;
+    height:35px;
     clear: both;
 }
 .premium_wr .premium_h{
@@ -20128,6 +20127,7 @@ form > table.pricing-second:after {
     border-right:1px solid #dddddd;
     content: "";
     height: auto;
+    margin-top: 55px;
 }
 .premium_wr .pricep{
     width:100%;
@@ -20136,6 +20136,7 @@ form > table.pricing-second:after {
     clear: both;
     content: "";
     height: auto;
+    margin-top: 55px;
 }
 .wr_pack{
     margin:15px 0 0 20%;
@@ -20176,7 +20177,7 @@ form > table.pricing-second:after {
 .label_radio .sp {
     display: block;
     font-size: 14px;
-    font-weight: normal;
+    font-weight: 300;
     text-align: left;
     float:left;
     text-transform: none;
@@ -20193,7 +20194,7 @@ form > table.pricing-second:after {
 .label_radio .sp_price{
     display: block;
     font-size: 14px;
-    font-weight: normal;
+    font-weight: 300;
     text-align: right;
     float:right;
     text-transform: none;
@@ -20202,7 +20203,7 @@ form > table.pricing-second:after {
     font-size: 18px;
 }
 .label_radio .sp_price strong{
-    font-size: 18px;
+    font-size: 17px;
 }
 
 .basic_wr .basic_fe{
@@ -20499,6 +20500,112 @@ form > table.pricing-second:after {
   border-bottom-color: #f8f8f8;
 }
 
+.item__2plan{
+    width: 47px;
+    padding: 0px 0px 4px 17px;
+    vertical-align: middle;
+    font-size: 17px;
+    font-weight: 300;
+    display: none;
+}
+
+.save__2plan{
+    text-transform: initial;
+    background-color: #f0f0f0;
+    position: absolute;
+    width: 100%;
+    top: 157px;
+    z-index: 1;
+    height: 55px;
+}
+
+.save__text{
+    color: #4d4f5b;
+    font-weight: 600;
+    padding-top: 13px;
+}
+
+.save__text span{
+    color: #cf4857;
+    font-weight: 700;
+}
+
+.get__basic p{
+    font-size: 16px;
+    color: #606060;
+    font-weight: 300;
+    display: inline-block;
+    text-transform: initial;
+}
+
+.get__basic p span{
+    color: #cf4857;
+    font-weight: 700;
+}
+
+
+.get__premium p{
+    font-size: 16px;
+    color: #606060;
+    font-weight: 300;
+    display: inline-block;
+    text-transform: initial;
+
+}
+
+.get__premium p span{
+    color: #cf4857;
+    font-weight: 700;
+}
+
+
+
+.wr_pack_basic{
+    background-image: url('/images/basic_pack.png');
+    margin: 15px 0 0 20%;
+    width: 85px;
+    height: 79px;
+    float: left;
+}
+
+.wr_pack__get__basic{
+    background-image: url('/images/double_basic.png');
+    background-repeat: repeat-x;
+    margin: 16px 0 0 20%;
+    width: 115px;
+    height: 79px;
+    display: none;
+    float: left;
+}
+
+.wr_pack_premium{
+    background-image: url('/images/premium_pack.png');
+    margin: 15px 0 0 20%;
+    width: 85px;
+    height: 79px;
+    float: left;
+}
+
+.wr_pack__get__premium{
+    background-image: url('/images/double_premium.png');
+    background-repeat: repeat-x;
+    margin: 15px 0 0 20%;
+    width: 121px;
+    height: 85px;
+    display: none;
+    float: left;
+}
+
+
+
+
+
+.save__2plan.save__second{
+    top: 1577px;
+}
+
+
+
 @media only screen and (max-width: 1200px) {
         .tb_pricing  .refund_10,
         .tb_pricing  .refund_new_11 {
@@ -20516,13 +20623,13 @@ form > table.pricing-second:after {
         .tb_pricing .support_new_os {
             position: absolute;
             width:100%;
-            top:580px; 
+            top:620px;
             height: 40px;
             background-color:#f0f0f0; 
         }
         
         .tb_pricing .support_new_os { 
-            top: 536px;
+            top: 615px;
         }
         
         .basic_wr .basic_fe{
@@ -20535,6 +20642,16 @@ form > table.pricing-second:after {
             width:100%;
             
         }
+
+        .save__2plan {
+            top: 176px;
+        }
+
+        .save__2plan.save__second{
+            top: 1637px;
+        }
+
+
 }
 
 
@@ -20561,8 +20678,8 @@ form > table.pricing-second:after {
         background-color:#f0f0f0; 
     }
     
-    .tb_pricing .support_new_os { 
-        top: 536px;
+    .tb_pricing .support_new_os {
+        top: 621px;
     }
     
         .basic_wr .basic_fe{
@@ -20598,14 +20715,15 @@ form > table.pricing-second:after {
     .tb_pricing .support_new_os{ 
         position: absolute;
         width:100%;
-        top:575px;
+        top:610px;
         height: 40px;
         background-color:#f0f0f0; 
     }
-    
-    .tb_pricing .support_new_os{ 
-        top: 536px;
+
+    .save__2plan.save__second{
+        top: 1627px;
     }
+
 }
 
 @media only screen and (min-width: 701px) and (max-width: 767px) {
@@ -20613,10 +20731,18 @@ form > table.pricing-second:after {
         top: 404px; 
     }
     
-    .tb_pricing .support_new_os { 
-        top: 440px;
+    .tb_pricing .support_new_os {
+        top: 520px;
+    }
+    .save__2plan{
+        top: 85px;
+    }
+
+    .save__2plan.save__second{
+        top: 1535px;
     }
 }
+
 
 @media only screen and (max-width: 400px){
         .wr_price_big span {
@@ -20630,19 +20756,16 @@ form > table.pricing-second:after {
         }
 }
 @media only screen and (max-width: 700px) {
-     
     .basic_wr{
         width:100%;
         background: #ffffff;
         color:#606060;
-
         float:left;
     }
     .premium_wr{
         width:100%;
         background: #f9f7ee;
         color:#606060;
-
         float:left;
     }
     .wr_price_big {
@@ -20656,8 +20779,6 @@ form > table.pricing-second:after {
 
     }
 
-     
-    
     .tb_pricing  .refund_10{
         display: none;
     }
@@ -20668,10 +20789,14 @@ form > table.pricing-second:after {
     .tb_pricing  .refund_new_11{
         display: none;
     }
+    .tb_pricing .qqqqq{
+        display: none;
+    }
+
     .tb_pricing .support_new_os{
         display: none;
     }
-    
+
     #foot_h1, #foot_h2, #foot_h3, #foot_h4{
         display:none;
     }
@@ -20681,6 +20806,9 @@ form > table.pricing-second:after {
     .show_premium_features, .show_basic_features{
        display:block;
        width:100%;
+    }
+    .save__2plan{
+        display: none;
     }
 } 
 
@@ -20711,6 +20839,7 @@ form > table.pricing-second:after {
         padding: 0px 40px;
     }
 }
+
 @media (min-width: 468px) {
     .protected_lk_text { 
         position: relative;

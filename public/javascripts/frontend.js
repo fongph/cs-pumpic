@@ -9889,7 +9889,6 @@ $(document).ready(function () {
             var $form = $(input).closest('form');
 
             var data = $(input).data();
-            console.log(data);
 
             var offerEnabled = $form.find('.double_offer_' + data.group + ' input[type=checkbox]').is(':checked');
 
@@ -9921,8 +9920,6 @@ $(document).ready(function () {
                 if (offerEnabled) {
                     currentValue = $(input).attr('data-offer-price-' + data.cur) / Number(data.period);
                 }
-
-                console.log(data.cur);
 
                 var displayValue = (Math.floor(currentValue * 100) / 100).toFixed(2);
 

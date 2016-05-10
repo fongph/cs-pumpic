@@ -957,7 +957,7 @@ th .table_title {
 }
 
 .box-small-package {
-    width: 47px;
+    width: 75px;
     padding-left: 5px;
     vertical-align: middle;
 }
@@ -1004,7 +1004,7 @@ th .table_title {
     display: inline-block !important;
 }
 .label_radio .sp {
-    width: 76px;
+    width: 75px;
 }
 .label_radio .sp_price {
     width: 70px;

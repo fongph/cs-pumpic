@@ -2,6 +2,11 @@
     display: inline;
 }
 
+
+.strike__currence .curr{
+    text-decoration: line-through;
+}
+
 .list-currencies {
     margin-top: 5px;
 }

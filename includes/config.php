@@ -139,7 +139,7 @@ $config = array(
 		),
 );
 if (is_file(__DIR__ . '/config.development.php')) {
-	define('SITE_ID', 0);
+	define('SITE_ID', 1);
 	$config = array_merge($config, include __DIR__ . '/config.development.php');
 } else {
 	define('SITE_ID', 1);

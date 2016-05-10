@@ -14543,8 +14543,8 @@ form.form-faq .box-captcha {
 .list_price ul li .label_check, 
 .list_price ul li .label_radio{
     margin: auto;
-    width: 230px !important;
-    max-width: 230px;
+    width: 250px !important;
+    max-width: 250px;
 }
 
 .bgIpad {
@@ -17724,7 +17724,7 @@ th .table_title {
 }
 
 .box-small-package {
-    width: 47px;
+    width: 75px;
     padding-left: 5px;
     vertical-align: middle;
 }
@@ -17771,7 +17771,7 @@ th .table_title {
     display: inline-block !important;
 }
 .label_radio .sp {
-    width: 76px;
+    width: 75px;
 }
 .label_radio .sp_price {
     width: 70px;
@@ -20129,6 +20129,14 @@ form > table.pricing-second:after {
     height: auto;
     margin-top: 55px;
 }
+
+
+@media only screen and (max-width: 700px){
+    .basic_wr .priceb, .premium_wr .pricep{
+        margin-top: 0 !important;
+    }
+}
+
 .premium_wr .pricep{
     width:100%;
     color:#fff;
@@ -20506,13 +20514,11 @@ form > table.pricing-second:after {
 }
 
 .offer_old_price {
-    width: 47px;
-    padding: 0px 0px 4px 17px;
+    padding: 0 0 5px 0px;
     vertical-align: middle;
     font-size: 17px;
     font-weight: 300;
     display: none;
-    text-decoration: line-through;
 }
 
 .save__2plan{
@@ -20589,12 +20595,8 @@ form > table.pricing-second:after {
     float: left;
 }
 
-
-
-
-
 .save__2plan.save__second{
-    top: 1577px;
+    top: 1584px;
 }
 
 
@@ -20871,6 +20873,11 @@ form > table.pricing-second:after {
 }
 .box-currence {
     display: inline;
+}
+
+
+.strike__currence .curr{
+    text-decoration: line-through;
 }
 
 .list-currencies {

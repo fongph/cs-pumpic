@@ -1,20 +1,33 @@
 currencyHandler = {
     afterLoad: function(rates){
         $.each($('input.data-price'), function(i, priceTag){
-            
             var usdPrice = $(priceTag).data('price-usd');
             
-            if(typeof usdPrice !== 'undefined')
-
+            if (typeof usdPrice !== 'undefined') {
                 $.each(['gbp', 'eur', 'cad', 'aud'], function(i, currency){
 
                     if(rates[currency.toUpperCase()]){
-                        var priceInCurrency = Number((1/rates[currency.toUpperCase()])*usdPrice).toFixed(2);
-                        $(priceTag).attr('data-price-'+currency, priceInCurrency);
+                        var priceInCurrency = Number((1 / rates[currency.toUpperCase()]) * usdPrice).toFixed(2);
+                        $(priceTag).attr('data-price-' + currency, priceInCurrency);
+                        
                     }
 
                 });
+            }
             
+            var doublePrice = $(priceTag).data('data-offer-price-usd');
+            
+            if (typeof doublePrice !== 'undefined') {
+                $.each(['gbp', 'eur', 'cad', 'aud'], function(i, currency){
+
+                    if(rates[currency.toUpperCase()]){
+                        var priceInCurrency = Number((1 / rates[currency.toUpperCase()]) * doublePrice).toFixed(2);
+                        $(priceTag).attr('data-offer-price-' + currency, priceInCurrency);
+                        
+                    }
+
+                });
+            }
         });
         $('input.data-price:checked').change();
     },
@@ -268,8 +281,9 @@ currencyHandler = {
                        if(methods.getCach('currISO') != curr_convert) {
                            methods.setCach('currISO', curr_convert);
                        } 
-                   } else
+                   } else {
                         methods.setCach('currISO', curr_convert);
+                    }
                    
                    // status
                    $this.find('.store-flags, .store-link-currancy-flag').each(function() {

@@ -292,14 +292,15 @@ class Order extends ManagerUser
         
         if(count($plans) > 0) {
             foreach($plans as $plan => $data) {
+                $period = $this->_numbers($plan);
                 if (strpos($plan, 'premium-double') === 0) {
-                    self::$_data['premium-double'][] = array_merge($data, ['period' => $this ->_numbers($plan)]);
+                    self::$_data['premiumDouble'][$period] = array_merge($data, ['period' => $period]);
                 } elseif (strpos($plan, 'basic-double') === 0) {
-                    self::$_data['basic-double'][] = array_merge($data, ['period' => $this ->_numbers($plan)]);
+                    self::$_data['basicDouble'][$period] = array_merge($data, ['period' => $period]);
                 } elseif (strpos($plan, 'premium') === 0) {
-                    self::$_data['premium'][] = array_merge($data, ['period' => $this ->_numbers($plan)]);
+                    self::$_data['premium'][$period] = array_merge($data, ['period' => $period]);
                 } elseif (strpos($plan, 'basic') === 0) {
-                    self::$_data['basic'][] = array_merge($data, ['period' => $this ->_numbers($plan)]);
+                    self::$_data['basic'][$period] = array_merge($data, ['period' => $period]);
                 }
             }
         }

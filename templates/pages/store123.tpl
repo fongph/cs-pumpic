@@ -134,102 +134,47 @@ description="Pumpic offers high-quality Cell Phone Tracking Software for a good 
                                                 Basic
                                             </div>
                                             <div class="priceb">
-                                                <div class="wr_pack_basic">
-                                                </div>
-                                                <div class="wr_pack__get__basic"></div>
+                                                <div class="wr_pack_basic"></div>
+                                                <div class="wr_pack_double_basic"></div>
                                                 <div class="wr_price_big">
                                                     <span></span><div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr" id="basic-price-per-month">{$defaultBasicPrice}</div></div><span> / month</span>
                                                 </div>
 
                                                 <div class="list_price">
-                                                    {*<form name="price_basic" method="POST" action="/buy.html" class="buy-form" autocomplete="off">*}
-                                                    {*<input id='product_price_basic' type='hidden' name='price[productID]' value="{$defaultPremiumProduct}" class="product_price" />*}
-                                                    {*<ul>*}
-                                                    {*{foreach from=$getProducts.basic key=key item=_item}*}
-                                                    {*<li>*}
-                                                    {*<label class="label_radio hover_label_radio {if $_item.period == '12'}r_on{else}r_off{/if}"><input class="data-price" data-target="#basic-price-per-month" data-cur="usd" data-price-usd="{$_item.price}" data-period="{$_item.period}" data-group="basic" name="optionsRadios" id="optionsRadios{$_item.id}1"*}
-                                                    {*value="{$_item.id}" type="radio"*}
-                                                    {*{if $_item.period == '12'} checked="checked" {/if}*}
-                                                    {*/>*}
-                                                    {*<span class="sp">*}
-                                                    {*<strong>*}
-                                                    {*{$_item.period}*}
-                                                    {*</strong> {if $_item.period == 1}month{else}months{/if}*}
-                                                    {*</span>*}
-
-                                                    {*<div class="box-small-package"></div>*}
-
-                                                    {*<span class="sp_price">*}
-                                                    {*<strong>*}
-                                                    {*<div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr">{$_item.price}</div></div>*}
-                                                    {*</strong>*}
-                                                    {*</span>*}
-                                                    {*</label>*}
-                                                    {*</li>*}
-                                                    {*{/foreach}*}
-                                                    {*</ul>*}
-                                                    {*<div class="get__basic">*}
-                                                    {*<input type="checkbox" class="double__basic">*}
-                                                    {*<p>Get the 2nd plan with <span>40% OFF!</span></p>*}
-                                                    {*</div>*}
-                                                    {*<button class="btn btn-default ga-action-click"*}
-                                                    {*ga-action ="click"*}
-                                                    {*ga-category="store"*}
-                                                    {*ga-label="buy basic"*}
-                                                    {*value="true" type="submit" name="price[submit]">Buy Basic</button>*}
-                                                    {*<div class="show_basic_features"><a href="#">Show Basic features</a></div>*}
-                                                    {*</form>*}
-
-
-
-                                                    <form name="price_basic" method="POST" action="/buy.html" class="buy-form" autocomplete="off">
+                                                    <form name="price_basic" method="POST" action="/buy.html" class="buy-form-with-offer" autocomplete="off">
                                                         <input id='product_price_basic' type='hidden' name='price[productID]' value="{$defaultPremiumProduct}" class="product_price" />
                                                         <ul>
-
-
-
-
-                                                            {foreach from=$getProducts.basic key=key item=_item}
+                                                            {foreach from=$getProducts.basic key=key item=item}
                                                                 <li>
-                                                                    <label class="label_radio hover_label_radio {if $_item.period == '12'}r_on{else}r_off{/if}"><input class="data-price" data-target="#basic-price-per-month" data-cur="usd" data-price-usd="{$_item.price}" data-period="{$_item.period}" data-group="basic"  name="optionsRadios" id="optionsRadios{$_item.id}1"
-                                                                                                                                                                       value="{$_item.id}" type="radio"{if $_item.period == '12'} checked="checked" {/if} />
+                                                                    <label class="label_radio hover_label_radio {if $item.period == '12'}r_on{else}r_off{/if}">
+                                                                        <input class="data-price" data-target="#basic-price-per-month" data-cur="usd" data-price-usd="{$item.price}" data-offer-price-usd="{$getProducts.basicDouble[$key].price}" data-period="{$item.period}" data-product="{$item.id}" data-offer-product="{$getProducts.basicDouble[$key].id}" data-group="basic"  name="optionsRadios" id="optionsRadios{$item.id}1" value="{$item.id}" type="radio"{if $item.period == '12'} checked="checked"{/if} />
+                                                                        <span class="sp">
+                                                                            <strong>{$item.period}</strong> {if $item.period == 1}month{else}months{/if}
+                                                                        </span>
 
-																		<span class="sp">
-																			<strong>
-                                                                                {$_item.period}
-                                                                            </strong> {if $_item.period == 1}month{else}months{/if}
-																		</span>
+                                                                        <div class="box-small-package">
+                                                                            <div class="offer_old_price"><div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr">{$item.price * 2|string_format:"%.2f"}</div></div></div>
+                                                                        </div>
 
-                                                                        <div class="box-small-package"><div class="item__2plan"><strike>{$_item.price}</strike> </div></div>
-
-                    <span class="sp_price">
-                    <strong>
-                        <div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr">{$_item.price}</div></div>
-                    </strong>
-                    </span>
+                                                                        <div class="package_price">
+                                                                            <strong>
+                                                                                <div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr">{$item.price}</div></div>
+                                                                            </strong>
+                                                                        </div>
+                                                                        <div class="package_offer_price">
+                                                                            <strong>
+                                                                                <div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr">{$getProducts.basicDouble[$key].price}</div></div>
+                                                                            </strong>
+                                                                        </div>
                                                                     </label>
                                                                 </li>
                                                             {/foreach}
 
-                                                            {literal}
-                                                                <script>
-                                                                    $(document).ready(function() {
-                                                                        $(".double__basic").on("click", function () {
-                                                                            if ($(this).prop("checked")) {
-                                                                                $('.wr_pack_basic, .wr_pack__get__basic, .item__2plan').toggle();
-                                                                            } else {
-                                                                                $('.wr_pack_basic, .wr_pack__get__basic, .item__2plan').toggle();
-                                                                            }
-                                                                        });
-                                                                    });
-                                                                </script>
-                                                            {/literal}
-
-
-
-                                                            <div class="get__basic">
-                                                                <input type="checkbox" class="double__basic">
-                                                                <p>Get the 2nd plan with <span>40% OFF!</span></p>
+                                                            <div class="double_offer_basic checkbox">
+                                                                <label>
+                                                                    <input type="checkbox" data-group="basic">
+                                                                    Get the 2nd plan with <span>40% OFF!</span>
+                                                                </label>
                                                             </div>
                                                             <button class="btn btn-default ga-action-click"
                                                                     ga-action ="click"
@@ -238,15 +183,7 @@ description="Pumpic offers high-quality Cell Phone Tracking Software for a good 
                                                                     value="true" type="submit" name="price[submit]">Buy Basic</button>
                                                             <div class="show_basic_features"><a href="#">Show Basic features</a></div>
                                                     </form>
-
-
-
                                                 </div>
-
-
-
-
-
                                                 <div class="basic_fe">
                                                     <ul>
                                                         <li data-toggle="tooltip" data-placement="top" title="View detailed data on incoming/outgoing calls: name, phone number, time and duration."><i class="icon-ok"></i> Calls history <span>(700 calls monthly)</span>
@@ -291,40 +228,41 @@ description="Pumpic offers high-quality Cell Phone Tracking Software for a good 
                                                 </div>
                                                 <div class="list_price" id="foot_h2">
                                                     <div class="space_line">&nbsp;</div>
-
-
-
-
-                                                    <form name="price_basic_bottom" method="POST" action="/buy.html" class="buy-form" autocomplete="off" style="margin-top: 55px;">
+                                                    <form name="price_basic_bottom" method="POST" action="/buy.html" class="buy-form-with-offer" autocomplete="off" style="margin-top: 55px;">
                                                         <input id='product_price_basic' type='hidden' name='price[productID]' value="{$defaultBasicProduct}" class="product_price" />
 
                                                         <ul>
-                                                            {foreach from=$getProducts.basic key=key item=_item}
+                                                            {foreach from=$getProducts.basic key=key item=item}
                                                                 <li>
-                                                                    <label class="label_radio hover_label_radio {if $_item.period == '12'}r_on{else}r_off{/if}"><input name="optionsRadios" data-target="#basic-price-per-month" data-cur="usd" data-price-usd="{$_item.price}" data-period="{$_item.period}" data-group="basic" id="optionsRadios{$_item.id}2"
-                                                                                                                                                                       value="{$_item.id}" type="radio"
-                                                                                {if $_item.period == '12'} checked="checked" {/if}
-                                                                        />
-																		<span class="sp">
-																			<strong>
-                                                                                {$_item.period}
-                                                                            </strong> {if $_item.period == 1}month{else}months{/if}
-																		</span>
+                                                                    <label class="label_radio hover_label_radio {if $item.period == '12'}r_on{else}r_off{/if}">
+                                                                        <input class="data-price" data-target="#basic-price-per-month" data-cur="usd" data-price-usd="{$item.price}" data-offer-price-usd="{$getProducts.basicDouble[$key].price}" data-period="{$item.period}" data-product="{$item.id}" data-offer-product="{$getProducts.basicDouble[$key].id}" data-group="basic"  name="optionsRadios" id="optionsRadios{$item.id}2" value="{$item.id}" type="radio"{if $item.period == '12'} checked="checked"{/if} />
+                                                                        <span class="sp">
+                                                                            <strong>{$item.period}</strong> {if $item.period == 1}month{else}months{/if}
+                                                                        </span>
 
-                                                                        <div class="box-small-package"></div>
+                                                                        <div class="box-small-package">
+                                                                            <div class="offer_old_price"><div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr">{$item.price * 2|string_format:"%.2f"}</div></div></div>
+                                                                        </div>
 
-																		<span class="sp_price">
-																			<strong>
-                                                                                <div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr">{$_item.price}</div></div>
+                                                                        <div class="package_price">
+                                                                            <strong>
+                                                                                <div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr">{$item.price}</div></div>
                                                                             </strong>
-																		</span>
+                                                                        </div>
+                                                                        <div class="package_offer_price">
+                                                                            <strong>
+                                                                                <div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr">{$getProducts.basicDouble[$key].price}</div></div>
+                                                                            </strong>
+                                                                        </div>
                                                                     </label>
                                                                 </li>
                                                             {/foreach}
                                                         </ul>
-                                                        <div class="get__basic">
-                                                            <input type="checkbox" class="double__basic">
-                                                            <p>Get the 2nd plan with <span>40% OFF!</span></p>
+                                                        <div class="double_offer_basic checkbox">
+                                                            <label>
+                                                                <input type="checkbox" data-group="basic">
+                                                                Get the 2nd plan with <span>40% OFF!</span>
+                                                            </label>
                                                         </div>
                                                         <button class="btn btn-default ga-action-click"
                                                                 ga-action ="click"
@@ -344,42 +282,47 @@ description="Pumpic offers high-quality Cell Phone Tracking Software for a good 
                                             </div>
                                             <div class="pricep">
                                                 <div class="wr_pack_premium"></div>
-                                                <div class="wr_pack__get__premium"></div>
+                                                <div class="wr_pack_double_premium"></div>
                                                 <div class="wr_price_big">
                                                     <span></span><div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr" id="premium-price-per-month">{$defaultPremiumPrice}</div></div><span>/ month</span>
                                                 </div>
 
                                                 <div class="list_price">
-                                                    <form name="price_premium" method="POST" action="/buy.html" class="buy-form" autocomplete="off" style="margin-top: 55px;">
+                                                    <form name="price_premium" method="POST" action="/buy.html" class="buy-form-with-offer" autocomplete="off" style="margin-top: 55px;">
                                                         <input id='product_price_premium' type='hidden' name='price[productID]' value='{if isset($getDefaultPremium)}{$getDefaultPremium}{else}0{/if}' class="product_price"/>
 
                                                         <ul>
-                                                            {foreach from=$getProducts.premium key=key item=_item}
-                                                                <li class= "">
-                                                                    <label class="label_radio hover_label_radio {if $_item.period == '12'}r_on{else}r_off{/if}"><input class="data-price" data-target="#premium-price-per-month" data-cur="usd" data-price-usd="{$_item.price}" data-period="{$_item.period}" data-group="premium" name="optionsRadios" id="optionsRadios{$_item.id}3"
-                                                                                                                                                                       value="{$_item.id}" type="radio"
-                                                                                {if $_item.period == '12'} checked="checked" {/if}
-                                                                        />
-																		<span class="sp">
-																			<strong>
-                                                                                {$_item.period}
-                                                                            </strong> {if $_item.period == 1}month{else}months{/if}
-																		</span>
+                                                            {foreach from=$getProducts.premium key=key item=item}
+                                                                <li>
+                                                                    <label class="label_radio hover_label_radio {if $item.period == '12'}r_on{else}r_off{/if}">
+                                                                        <input class="data-price" data-target="#premium-price-per-month" data-cur="usd" data-price-usd="{$item.price}" data-offer-price-usd="{$getProducts.premiumDouble[$key].price}" data-period="{$item.period}" data-product="{$item.id}" data-offer-product="{$getProducts.premiumDouble[$key].id}" data-group="premium"  name="optionsRadios" id="optionsRadios{$item.id}1" value="{$item.id}" type="radio"{if $item.period == '12'} checked="checked"{/if} />
+                                                                        <span class="sp">
+                                                                            <strong>{$item.period}</strong> {if $item.period == 1}month{else}months{/if}
+                                                                        </span>
 
-                                                                        <div class="box-small-package"></div>
+                                                                        <div class="box-small-package">
+                                                                            <div class="offer_old_price"><div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr">{$item.price * 2|string_format:"%.2f"}</div></div></div>
+                                                                        </div>
 
-																		<span class="sp_price">
-																			<strong>
-                                                                                <div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr">{$_item.price}</div></div>
+                                                                        <div class="package_price">
+                                                                            <strong>
+                                                                                <div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr">{$item.price}</div></div>
                                                                             </strong>
-																		</span>
+                                                                        </div>
+                                                                        <div class="package_offer_price">
+                                                                            <strong>
+                                                                                <div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr">{$getProducts.premiumDouble[$key].price}</div></div>
+                                                                            </strong>
+                                                                        </div>
                                                                     </label>
                                                                 </li>
                                                             {/foreach}
                                                         </ul>
-                                                        <div class="get__premium">
-                                                            <input type="checkbox" class="double__premium">
-                                                            <p>Get the 2nd plan with <span>40% OFF!</span></p>
+                                                        <div class="double_offer_premium checkbox">
+                                                            <label>
+                                                                <input type="checkbox" data-group="premium">
+                                                                Get the 2nd plan with <span>40% OFF!</span>
+                                                            </label>
                                                         </div>
                                                         <button class="btn btn-default ga-action-click"
                                                                 ga-action ="click"
@@ -435,44 +378,41 @@ description="Pumpic offers high-quality Cell Phone Tracking Software for a good 
                                                 </div>
                                                 <div class="list_price" id="foot_h4">
                                                     <div class="space_line">&nbsp;</div>
-                                                    <form name="price_premium_bottom" method="POST" action="/buy.html" class="buy-form" autocomplete="off" style="margin-top: 57px;">
+                                                    <form name="price_premium_bottom" method="POST" action="/buy.html" class="buy-form-with-offer" autocomplete="off" style="margin-top: 57px;">
                                                         <input id='product_price_premium' type='hidden' name='price[productID]' value='{if isset($getDefaultPremium)}{$getDefaultPremium}{else}0{/if}' class="product_price" />
 
                                                         <ul>
-                                                            {foreach from=$getProducts.premium key=key item=_item}
-                                                                <li class= "">
-                                                                    <label class="label_radio hover_label_radio {if $_item.period == '12'}r_on{else}r_off{/if}"><input name="optionsRadios" data-target="#premium-price-per-month" data-cur="usd" data-price-usd="{$_item.price}" data-period="{$_item.period}" data-group="premium" id="optionsRadios{$_item.id}4"
-                                                                                                                                                                       value="{$_item.id}" type="radio"
-                                                                                {if $_item.period == '12'} checked="checked" {/if}
-                                                                        />
-																		<span class="sp">
-																			<strong>
-                                                                                {$_item.period}
-                                                                            </strong> {if $_item.period == 1}month{else}months{/if}
-																		</span>
+                                                            {foreach from=$getProducts.premium key=key item=item}
+                                                                <li>
+                                                                    <label class="label_radio hover_label_radio {if $item.period == '12'}r_on{else}r_off{/if}">
+                                                                        <input class="data-price" data-target="#premium-price-per-month" data-cur="usd" data-price-usd="{$item.price}" data-offer-price-usd="{$getProducts.premiumDouble[$key].price}" data-period="{$item.period}" data-product="{$item.id}" data-offer-product="{$getProducts.premiumDouble[$key].id}" data-group="premium"  name="optionsRadios" id="optionsRadios{$item.id}2" value="{$item.id}" type="radio"{if $item.period == '12'} checked="checked"{/if} />
+                                                                        <span class="sp">
+                                                                            <strong>{$item.period}</strong> {if $item.period == 1}month{else}months{/if}
+                                                                        </span>
 
-                                                                        <div class="box-small-package"></div>
+                                                                        <div class="box-small-package">
+                                                                            <div class="offer_old_price"><div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr">{$item.price * 2|string_format:"%.2f"}</div></div></div>
+                                                                        </div>
 
-																		<span class="sp_price">
-																			<strong>
-                                                                                <div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr">{$_item.price}</div></div>
+                                                                        <div class="package_price">
+                                                                            <strong>
+                                                                                <div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr">{$item.price}</div></div>
                                                                             </strong>
-																		</span>
+                                                                        </div>
+                                                                        <div class="package_offer_price">
+                                                                            <strong>
+                                                                                <div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr">{$getProducts.premiumDouble[$key].price}</div></div>
+                                                                            </strong>
+                                                                        </div>
                                                                     </label>
                                                                 </li>
                                                             {/foreach}
-
-
-
-
-
-
-
-
                                                         </ul>
-                                                        <div class="get__premium">
-                                                            <input type="checkbox" class="double__basic">
-                                                            <p>Get the 2nd plan with <span>40% OFF!</span></p>
+                                                        <div class="double_offer_premium checkbox">
+                                                            <label>
+                                                                <input type="checkbox" data-group="premium">
+                                                                Get the 2nd plan with <span>40% OFF!</span>
+                                                            </label>
                                                         </div>
                                                         <button class="btn btn-default ga-action-click"
                                                                 ga-action ="click"
@@ -522,16 +462,6 @@ description="Pumpic offers high-quality Cell Phone Tracking Software for a good 
 
     </div>
 </div>
-
-
-
-
-
-
-<!-- RECOMMENDED -->
-{*
-	Template: RECOMMENDED
-	*}
 
 {include file='../includes/main/main-recommended.tpl'}
 

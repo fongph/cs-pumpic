@@ -7265,11 +7265,8 @@ currencyHandler = {
         // afterEvent
         afterEvent: function() {
           currencyHandler.onChange(methods.getCach('currISO'));
-            
-          // body generate price
-            //$_settings.currCode[ methods.getCach('currISO').toLowerCase() ]
-          // jQuery('.list_price').find('.box-currence').each(function() {
-          $.each($('.list_price .box-currence'), function(i, boxCurr) {
+          
+          $.each($('.box-currence'), function(i, boxCurr) {
     
               methods._die(  $(boxCurr)   );
               

@@ -177,7 +177,7 @@ form > table.pricing-second:after {
 }
 
 .tb_pricing .support_new_os {
-    top: 585px;
+    top: 595px;
 }
 
 .basic_wr{
@@ -269,9 +269,9 @@ form > table.pricing-second:after {
     width:100%;
     background: #2cbdb3;
     color:#fff;
-    line-height:34px; 
-    height:34px;
-   clear: both;
+    line-height: 37px;
+    height: 35px;
+    clear: both;
 }
 .basic_wr .priceb{
     width:100%;
@@ -315,20 +315,16 @@ form > table.pricing-second:after {
     list-style-type: none;
     margin-left: 4%;
 }
-.priceb .list_price ul li{
-    width: 84%;
+.priceb .list_price ul li, .pricep .list_price ul li {
+    width: 100%;
     height:38px;
     line-height: 38px;
 }
 .pricep .list_price ul{
     list-style-type: none;
-    margin-left: 4%;
+    padding: 0;
 }
-.pricep .list_price ul li{
-    width: 84%;
-    height: 38px;
-    line-height: 38px;
-}
+
 
 .priceb .list_price ul li,
 .pricep .list_price ul li {
@@ -715,9 +711,10 @@ form > table.pricing-second:after {
 
 .wr_pack_basic {
     background-image: url('/images/basic_pack.png');
+    background-repeat: no-repeat;
     margin: 25px 0 0 20%;
     width: 85px;
-    height: 79px;
+    height: 85px;
     float: left;
 }
 
@@ -726,7 +723,7 @@ form > table.pricing-second:after {
     background-repeat: no-repeat;
     margin: 25px 0 0 20%;
     width: 115px;
-    height: 79px;
+    height: 85px;
     display: none;
     float: left;
 }
@@ -751,7 +748,7 @@ form > table.pricing-second:after {
 }
 
 .save__2plan.save__second{
-    top: 1584px;
+    top: 1588px;
 }
 
 
@@ -779,7 +776,7 @@ form > table.pricing-second:after {
         }
         
         .tb_pricing .support_new_os { 
-            top: 615px;
+            top: 635px;
         }
         
         .basic_wr .basic_fe{
@@ -798,7 +795,7 @@ form > table.pricing-second:after {
         }
 
         .save__2plan.save__second{
-            top: 1637px;
+            top: 1649px;
         }
 
 
@@ -924,7 +921,6 @@ form > table.pricing-second:after {
         font-size: 30px;
         font-weight: bold;
         height: 79px;
-        margin: 25px 0 0 50%;
         position: absolute;
 
     }

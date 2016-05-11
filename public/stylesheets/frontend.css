@@ -17725,6 +17725,7 @@ th .table_title {
 
 .box-small-package {
     width: 75px;
+    height: 40px;
     padding-left: 5px;
     vertical-align: middle;
 }
@@ -17767,7 +17768,6 @@ th .table_title {
 .label_radio .sp,
 .label_radio .sp_price, 
 .box-small-package {
-    float: none !important;
     display: inline-block !important;
 }
 .label_radio .sp {
@@ -20579,9 +20579,10 @@ form > table.pricing-second:after {
 
 .wr_pack_premium {
     background-image: url('/images/premium_pack.png');
+    background-repeat: no-repeat;
     margin: 25px 0 0 20%;
     width: 85px;
-    height: 79px;
+    height: 85px;
     float: left;
 }
 

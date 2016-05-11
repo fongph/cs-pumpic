@@ -241,7 +241,7 @@ description="Pumpic offers high-quality Cell Phone Tracking Software for a good 
                                                                         </span>
 
                                                                         <div class="box-small-package">
-                                                                            <div class="offer_old_price"><div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr">{$item.price * 2|string_format:"%.2f"}</div></div></div>
+                                                                            <div class="offer_old_price"><div class="box-currence strike__currence"><div class="symbol" attr-iso="usd">$</div><div class="curr">{$item.price * 2|string_format:"%.2f"}</div></div></div>
                                                                         </div>
 
                                                                         <div class="package_price">
@@ -394,7 +394,7 @@ description="Pumpic offers high-quality Cell Phone Tracking Software for a good 
                                                                         </span>
 
                                                                         <div class="box-small-package">
-                                                                            <div class="offer_old_price"><div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr">{$item.price * 2|string_format:"%.2f"}</div></div></div>
+                                                                            <div class="offer_old_price"><div class="box-currence strike__currence"><div class="symbol" attr-iso="usd">$</div><div class="curr">{$item.price * 2|string_format:"%.2f"}</div></div></div>
                                                                         </div>
 
                                                                         <div class="package_price">

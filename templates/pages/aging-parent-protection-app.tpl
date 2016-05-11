@@ -107,9 +107,8 @@
                                                     <div class="priceb">
                                                         <div class="dtable">
                                                             <div class="dtable-cell">
-                                                                <div class="wr_pack">
-                                                                    <img src="{$img}/basic_pack.png">
-                                                                </div>
+                                                                <div class="wr_pack_basic"></div>
+                                                                <div class="wr_pack_double_basic"></div>
                                                             </div>
                                                             <div class="dtable-cell">
                                                                 <div class="wr_price_big">
@@ -123,34 +122,42 @@
                                                         </div>     
                                                                 
                                                         <div class="list_price">
-                                                            <form name="price_basic" method="POST" action="/buy.html" class="buy-form" autocomplete="off">
+                                                            <form name="price_basic" method="POST" action="/buy.html" class="buy-form-with-offer" autocomplete="off">
                                                                 <input id='product_price_basic' type='hidden' name='price[productID]' value='0' class="product_price" />
 
                                                                 <ul>
-                                                                    {foreach from=$getProducts.basic key=key item=_item}
-                                                                    <li class="">
-                                                                        <label class="label_radio hover_label_radio r_off">
-                                                                            <input class="data-price" data-target="#basic-price-per-month" data-cur="usd" 
-                                                                                   data-price-usd="{$_item.price}" data-period="{$_item.period}" data-group="basic" name="optionsRadios" id="optionsRadios{$_item.id}3" 
-                                                                                   value="{$_item.id}" type="radio" 
-                                                                                   {if $_item.period == '12'} checked="checked" {/if} />
-                                                                            <span class="sp">
-                                                                                <strong>
-                                                                                    {$_item.period}
-                                                                                </strong> {if $_item.period == 1}month{else}months{/if}
-                                                                            </span>
-                                                                            
-                                                                            <div class="box-small-package"></div>
-                                                                                
-                                                                            <span class="sp_price">
-                                                                                <strong>
-                                                                                    <div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr">{$_item.price}</div></div>
-                                                                                </strong>
-                                                                            </span>    
-                                                                        </label>
-                                                                    </li>
+                                                                    {foreach from=$getProducts.basic key=key item=item}
+                                                                        <li>
+                                                                            <label class="label_radio hover_label_radio {if $item.period == '12'}r_on{else}r_off{/if}">
+                                                                                <input class="data-price" data-target="#basic-price-per-month" data-cur="usd" data-price-usd="{$item.price}" data-offer-price-usd="{$getProducts.basicDouble[$key].price}" data-period="{$item.period}" data-product="{$item.id}" data-offer-product="{$getProducts.basicDouble[$key].id}" data-group="basic"  name="optionsRadios" id="optionsRadios{$item.id}1" value="{$item.id}" type="radio"{if $item.period == '12'} checked="checked"{/if} />
+                                                                                <span class="sp">
+                                                                                    <strong>{$item.period}</strong> {if $item.period == 1}month{else}months{/if}
+                                                                                </span>
+
+                                                                                <div class="box-small-package">
+                                                                                    <div class="offer_old_price"><div class="box-currence strike__currence"><div class="symbol" attr-iso="usd">$</div><div class="curr">{$item.price * 2|string_format:"%.2f"}</div></div></div>
+                                                                                </div>
+
+                                                                                <div class="package_price">
+                                                                                    <strong>
+                                                                                        <div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr">{$item.price}</div></div>
+                                                                                    </strong>
+                                                                                </div>
+                                                                                <div class="package_offer_price">
+                                                                                    <strong>
+                                                                                        <div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr">{$getProducts.basicDouble[$key].price}</div></div>
+                                                                                    </strong>
+                                                                                </div>
+                                                                            </label>
+                                                                        </li>
                                                                     {/foreach}
                                                                 </ul>
+                                                                <div class="double_offer checkbox">
+                                                                    <label>
+                                                                        <input type="checkbox" data-group="basic">
+                                                                        Get the 2nd plan with <span>40% OFF!</span>
+                                                                    </label>
+                                                                </div>
                                                                 <button class="btn btn-default ga-action-submit" 
                                                                         ga-action ="click"
                                                                         ga-category="iphone-with-jailbreak-monitoring"
@@ -171,9 +178,8 @@
                                                     <div class="pricep">
                                                         <div class="dtable">
                                                             <div class="dtable-cell">
-                                                                <div class="wr_pack">
-                                                                    <img src="{$img}/premium_pack.png">
-                                                                </div>
+                                                                <div class="wr_pack_premium"></div>
+                                                                <div class="wr_pack_double_premium"></div>
                                                             </div>
                                                             <div class="dtable-cell">
                                                                 <div class="wr_price_big">
@@ -187,33 +193,42 @@
                                                         </div>   
                                                                 
                                                         <div class="list_price">
-                                                            <form name="price_premium" method="POST" action="/buy.html" class="buy-form" autocomplete="off">
+                                                            <form name="price_premium" method="POST" action="/buy.html" class="buy-form-with-offer" autocomplete="off">
                                                                 <input id='product_price_premium' type='hidden' name='price[productID]' value='0' class="product_price" />
 
                                                                 <ul>
-                                                                    {foreach from=$getProducts.premium key=key item=_item}
-                                                                    <li class="">
-                                                                        <label class="label_radio hover_label_radio r_off">
-                                                                            <input class="data-price" data-target="#premium-price-per-month" data-cur="usd" 
-                                                                                   data-price-usd="{$_item.price}" data-period="{$_item.period}" data-group="premium" name="optionsRadios" id="optionsRadios{$_item.id}4" 
-                                                                                   value="{$_item.id}" type="radio" {if $_item.period == '12'} checked="checked" {/if} />
-                                                                            <span class="sp">
-                                                                                <strong>
-                                                                                    {$_item.period}
-                                                                                </strong> {if $_item.period == 1}month{else}months{/if}
-                                                                            </span>
-                                                                            
-                                                                            <div class="box-small-package"></div>
-                                                                                
-                                                                            <span class="sp_price">
-                                                                                <strong>
-                                                                                    <div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr">{$_item.price}</div></div>
-                                                                                </strong>
-                                                                            </span>   
-                                                                        </label>
-                                                                    </li>
+                                                                    {foreach from=$getProducts.premium key=key item=item}
+                                                                        <li>
+                                                                            <label class="label_radio hover_label_radio {if $item.period == '12'}r_on{else}r_off{/if}">
+                                                                                <input class="data-price" data-target="#premium-price-per-month" data-cur="usd" data-price-usd="{$item.price}" data-offer-price-usd="{$getProducts.premiumDouble[$key].price}" data-period="{$item.period}" data-product="{$item.id}" data-offer-product="{$getProducts.premiumDouble[$key].id}" data-group="premium"  name="optionsRadios" id="optionsRadios{$item.id}1" value="{$item.id}" type="radio"{if $item.period == '12'} checked="checked"{/if} />
+                                                                                <span class="sp">
+                                                                                    <strong>{$item.period}</strong> {if $item.period == 1}month{else}months{/if}
+                                                                                </span>
+
+                                                                                <div class="box-small-package">
+                                                                                    <div class="offer_old_price"><div class="box-currence strike__currence"><div class="symbol" attr-iso="usd">$</div><div class="curr">{$item.price * 2|string_format:"%.2f"}</div></div></div>
+                                                                                </div>
+
+                                                                                <div class="package_price">
+                                                                                    <strong>
+                                                                                        <div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr">{$item.price}</div></div>
+                                                                                    </strong>
+                                                                                </div>
+                                                                                <div class="package_offer_price">
+                                                                                    <strong>
+                                                                                        <div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr">{$getProducts.premiumDouble[$key].price}</div></div>
+                                                                                    </strong>
+                                                                                </div>
+                                                                            </label>
+                                                                        </li>
                                                                     {/foreach}
                                                                 </ul>
+                                                                <div class="double_offer checkbox">
+                                                                    <label>
+                                                                        <input type="checkbox" data-group="premium">
+                                                                        Get the 2nd plan with <span>40% OFF!</span>
+                                                                    </label>
+                                                                </div>
                                                                 <button class="btn btn-default ga-action-submit"
                                                                         ga-action ="click"
                                                                         ga-category="iphone-with-jailbreak-monitoring"
@@ -242,27 +257,6 @@
                                         </tr>
                                     </thead>
                                 </table>
-
-                                <script type="text/javascript">
-                                function roundUsing(func, number, prec) {
-                                    var tempnumber = number * Math.pow(10, prec);
-                                    tempnumber = func(tempnumber);
-                                    return tempnumber / Math.pow(10, prec);
-                                }
-                                var symbols = { usd: '$', eur: '€', gbp: '£', cad: '$', aud: '$' };
-                                $('input[data-target="#basic-price-per-month"], input[data-target="#premium-price-per-month"]').change(function() {
-
-                                    var currentValue = $(this).attr('data-price-' + $(this).attr('data-cur')) / Number($(this).attr('data-period'));
-
-                                    // currentValue = roundUsing(Math.round, currentValue, 2);
-                                    currentValue = (Math.floor(currentValue * 100) / 100).toFixed(2);
-                                    
-                                    $($(this).attr('data-target'))
-                                        .html(currentValue)
-                                        .prev('div.symbol')
-                                        .html(symbols[$(this).attr('data-cur')] ? symbols[$(this).attr('data-cur')] : '');
-                                });
-                                </script>
                                 
                                 <div class="space_line"> </div>
                                 <div class="link_circle_italic2">

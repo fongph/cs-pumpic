@@ -61,6 +61,13 @@
                     <div class='iphones-text-full-width-block'>
                         <h2>Choose Subscription Plan</h2>
                     </div>
+                    <div class="save__2plan">
+                        <div class="save__text">
+                            <span>Save 40%</span> on the 2nd plan. Limited time offer!
+                        </div>
+                    </div>
+
+
                     
                         <div class="list-group-box">
                             <div class="list-group">
@@ -297,8 +304,10 @@
                                                         {*<strong class='none-uppercase'>iCloud Solution</strong><br>*}
                                                          <span>iCloud Solution is provided <br>with Premium subscription only</span>
                                                     </div>
+                                                    <div style="width: 100px; display: inline-block; vertical-align: middle;">
                                                     <div class="wr_pack_premium2"></div>
                                                     <div class="wr_pack_double_premium2"></div>
+                                                    </div>
                                                 </div>
                                                 <div class="dtable-cell">         
                                                     <div class="wr_price_big">
@@ -523,6 +532,92 @@
                 </div>
             </div>
         </div>
+
+
+        <style>
+            .save__2plan{
+            position: absolute;
+            width: 100%;
+            top: 670px;
+            z-index: 3;
+            }
+
+            .row-pricing-panel .priceb .list_price ul li .hover_label_radio, .row-pricing-panel .pricep .list_price ul li .hover_label_radio{
+                max-width: 250px;
+                width: 250px;
+            }
+
+
+             .iphone-tracking-software .dtable-text{
+                display: inline-block;
+                vertical-align: middle;
+                color: #606060;
+                font-size: 13px;
+                line-height: 1;
+                text-transform: none;
+                float: none;
+                 padding: 0 30px 0px 0px;
+            }
+
+
+            .wr_pack_double_premium2 {
+                background-image: url(/images/double_premium.png);
+                background-repeat: no-repeat;
+                margin: 0;
+                width: 121px;
+                height: 85px;
+                display: none;
+                float: none;
+            }
+
+            .wr_pack_basic, .wr_pack_double_basic, .wr_pack_premium, .wr_pack_premium1 {
+                margin: 0;
+                background-repeat: no-repeat;
+                height: 85px;
+                float: right;
+            }
+
+
+            .wr_pack_premium2 {
+                display: inline-block;
+                vertical-align: middle;
+                margin-left: 20px;
+                margin: 0;
+                background-repeat: no-repeat;
+                height: 85px;
+                float: none;
+            }
+
+
+            .wr_pack_double_premium2{
+                display: none;
+                vertical-align: middle;
+                margin-left: 20px;
+                margin: 0;
+                background-repeat: no-repeat;
+                height: 85px;
+                float: none;
+            }
+
+            .iphone-tracking-software .dtable .wr_price_big{
+                min-width: auto;
+            }
+
+            .wr_pack_double_premium1{
+                margin: 0;
+            }
+
+
+            .wr_price_big{
+                font-size: 25px;
+            }
+
+            @media (max-width: 1200px){
+                .save__2plan {
+                    display: none;
+                }
+            }
+        </style>
                 
         <!-- RECOMMENDED -->
         {*

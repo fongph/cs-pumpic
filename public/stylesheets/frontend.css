@@ -20538,7 +20538,7 @@ form > table.pricing-second:after {
     font-weight: 700;
 }
 
-.double_offer_basic label, .double_offer_premium label {
+.double_offer label {
     font-size: 16px;
     color: #606060;
     font-weight: 300;
@@ -20546,12 +20546,12 @@ form > table.pricing-second:after {
     text-transform: initial;
 }
 
-.double_offer_basic label span, .double_offer_premium label span {
+.double_offer label span {
     color: #cf4857;
     font-weight: 700;
 }
 
-.double_offer_basic label input, .double_offer_premium label input {
+.double_offer label input {
     margin-top: 10px;
 }
 
@@ -20574,7 +20574,7 @@ form > table.pricing-second:after {
     float: left;
 }
 
-.wr_pack_premium {
+.wr_pack_premium, .wr_pack_premium1, .wr_pack_premium2 {
     background-image: url('/images/premium_pack.png');
     background-repeat: no-repeat;
     margin: 25px 0 0 20%;
@@ -20583,7 +20583,7 @@ form > table.pricing-second:after {
     float: left;
 }
 
-.wr_pack_double_premium {
+.wr_pack_double_premium, .wr_pack_double_premium1, .wr_pack_double_premium2 {
     background-image: url('/images/double_premium.png');
     background-repeat: no-repeat;
     margin: 25px 0 0 20%;

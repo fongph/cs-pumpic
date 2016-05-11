@@ -2307,7 +2307,7 @@ $(document).ready(function () {
 
             var data = $(input).data();
 
-            var offerEnabled = $form.find('.double_offer_' + data.group + ' input[type=checkbox]').is(':checked');
+            var offerEnabled = $form.find('.double_offer input[type=checkbox][data-group=' + data.group + ']').is(':checked');
 
             var $options = $('.buy-form-with-offer').find('input[type=radio][data-group=' + data.group + '][data-period=' + data.period + ']');
 

@@ -170,7 +170,7 @@ description="Pumpic offers high-quality Cell Phone Tracking Software for a good 
                                                                 </li>
                                                             {/foreach}
 
-                                                            <div class="double_offer_basic checkbox">
+                                                            <div class="double_offer checkbox">
                                                                 <label>
                                                                     <input type="checkbox" data-group="basic">
                                                                     Get the 2nd plan with <span>40% OFF!</span>
@@ -258,7 +258,7 @@ description="Pumpic offers high-quality Cell Phone Tracking Software for a good 
                                                                 </li>
                                                             {/foreach}
                                                         </ul>
-                                                        <div class="double_offer_basic checkbox">
+                                                        <div class="double_offer checkbox">
                                                             <label>
                                                                 <input type="checkbox" data-group="basic">
                                                                 Get the 2nd plan with <span>40% OFF!</span>
@@ -321,7 +321,7 @@ description="Pumpic offers high-quality Cell Phone Tracking Software for a good 
                                                                 </li>
                                                             {/foreach}
                                                         </ul>
-                                                        <div class="double_offer_premium checkbox">
+                                                        <div class="double_offer checkbox">
                                                             <label>
                                                                 <input type="checkbox" data-group="premium">
                                                                 Get the 2nd plan with <span>40% OFF!</span>
@@ -411,7 +411,7 @@ description="Pumpic offers high-quality Cell Phone Tracking Software for a good 
                                                                 </li>
                                                             {/foreach}
                                                         </ul>
-                                                        <div class="double_offer_premium checkbox">
+                                                        <div class="double_offer checkbox">
                                                             <label>
                                                                 <input type="checkbox" data-group="premium">
                                                                 Get the 2nd plan with <span>40% OFF!</span>

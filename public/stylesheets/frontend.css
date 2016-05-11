@@ -20531,6 +20531,8 @@ form > table.pricing-second:after {
     color: #4d4f5b;
     font-weight: 600;
     padding-top: 13px;
+    text-align: center;
+    font-size: 21px;
 }
 
 .save__text span{
@@ -20890,7 +20892,7 @@ form > table.pricing-second:after {
 @media (min-width: 768px) {
 
 }
-@media (min-width: 992px) { 
+@media (min-width: 992px) {
 
 }
 @media (min-width: 1200px) {

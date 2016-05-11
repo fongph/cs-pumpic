@@ -169,6 +169,7 @@ description="Pumpic offers high-quality Cell Phone Tracking Software for a good 
                                                                     </label>
                                                                 </li>
                                                             {/foreach}
+                                                            </ul>
 
                                                             <div class="double_offer checkbox">
                                                                 <label>
@@ -281,9 +282,6 @@ description="Pumpic offers high-quality Cell Phone Tracking Software for a good 
                                                 Premium
                                             </div>
                                             <div class="pricep">
-
-
-
                                                 <div class="wr_pack_premium"></div>
                                                 <div class="wr_pack_double_premium"></div>
                                                 <div class="wr_price_big">

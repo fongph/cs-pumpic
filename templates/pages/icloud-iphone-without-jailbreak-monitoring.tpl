@@ -142,8 +142,10 @@
                                                                 {*<strong class='none-uppercase'>iCloud Solution</strong><br>*}
                                                                  <span class='none-uppercase'>iCloud Solution is provided <br>with Premium subscription only</span>
                                                             </div>
+                                                                <div style="width: 100px; display: inline-block; vertical-align: middle;">
                                                                 <div class="wr_pack_premium"></div>
                                                                 <div class="wr_pack_double_premium"></div>
+                                                                    </div>
                                                                 <div class="wr_price_big">
                                                                     <span></span>
                                                                     <div class="box-currence">
@@ -152,7 +154,7 @@
                                                                     </div><span> / month</span>
                                                                 </div>
                                                             </div>
-                                                        </div>      
+                                                        </div>
                                                                  
                                                         <div class="list_price">
                                                             <form name="price_premium" method="POST" action="/buy.html" class="buy-form-with-offer" autocomplete="off">
@@ -572,5 +574,71 @@
     </div>
        
     {include file='../includes/main/main-analytics-footer.tpl'}
+
+
+    <style>
+        .row-pricing-panel .priceb .list_price ul li .hover_label_radio, .row-pricing-panel .pricep .list_price ul li .hover_label_radio{
+            max-width: 250px;
+            width: 250px;
+        }
+
+        .dtable-text{
+            display: inline-block;
+            vertical-align: middle;
+            color: #606060;
+            font-size: 13px;
+            line-height: 1;
+            text-transform: none;
+            float: none;
+            padding: 0 30px 0px 0px;
+        }
+
+
+       .wr_pack_premium{
+            margin: 0;
+            background-repeat: no-repeat;
+            height: 85px;
+            float: none;
+           display: inline-block;
+        }
+
+
+        .iphone-tracking-software .dtable .wr_price_big{
+            min-width: auto;
+        }
+
+
+        .wr_price_big{
+            font-size: 25px;
+        }
+
+
+        .wr_pack_double_premium {
+            display: none;
+            vertical-align: middle;
+            margin-left: 20px;
+            margin: 0;
+            background-repeat: no-repeat;
+            height: 85px;
+            float: none;
+        }
+
+        .icloud-iphone-without-jailbreak-monitoring .dtable-text {
+            display: inline-block;
+            vertical-align: middle;
+            color: #606060;
+            font-size: 13px;
+            line-height: 1;
+            text-transform: none;
+            float: none;
+            padding: 0 30px 0px 0px;
+        }
+
+        .icloud-iphone-without-jailbreak-monitoring .dtable .wr_price_big{
+            min-width: auto;
+            padding: 0 0 0 15px;
+        }
+
+    </style>
 </body>
 </html>

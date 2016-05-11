@@ -314,8 +314,8 @@ span.text-success {
     background: #fdfbf3;
 }
 .row-pricing-panel .priceb .list_price ul li .hover_label_radio {
-  max-width: 230px;
-  width: 230px;
+  max-width: 250px;
+  width: 250px;
   margin: auto;
 }
 .row-pricing-panel .priceb .list_price ul li .hover_label_radio:hover {
@@ -332,8 +332,8 @@ span.text-success {
     background: #fdfbf3;
 }
 .row-pricing-panel .pricep .list_price ul li .hover_label_radio {
-  max-width: 230px;
-  width: 230px;
+  max-width: 250px;
+  width: 250px;
   margin: auto;
 }
 .row-pricing-panel .pricep .list_price ul li .hover_label_radio:hover {
@@ -603,7 +603,7 @@ th .table_title {
   }
   
   .column-relative > .table_title_v2 {
-      top: 400px;
+      top: 480px;
       left: 0px;
   }
   

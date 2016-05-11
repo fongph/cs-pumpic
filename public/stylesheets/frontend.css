@@ -17081,8 +17081,8 @@ span.text-success {
     background: #fdfbf3;
 }
 .row-pricing-panel .priceb .list_price ul li .hover_label_radio {
-  max-width: 230px;
-  width: 230px;
+  max-width: 250px;
+  width: 250px;
   margin: auto;
 }
 .row-pricing-panel .priceb .list_price ul li .hover_label_radio:hover {
@@ -17099,8 +17099,8 @@ span.text-success {
     background: #fdfbf3;
 }
 .row-pricing-panel .pricep .list_price ul li .hover_label_radio {
-  max-width: 230px;
-  width: 230px;
+  max-width: 250px;
+  width: 250px;
   margin: auto;
 }
 .row-pricing-panel .pricep .list_price ul li .hover_label_radio:hover {
@@ -17370,7 +17370,7 @@ th .table_title {
   }
   
   .column-relative > .table_title_v2 {
-      top: 400px;
+      top: 480px;
       left: 0px;
   }
   
@@ -20042,7 +20042,7 @@ form > table.pricing-second:after {
 .wr_price_big{
     float: left;
     position: relative;
-    margin-top: 35px;
+    margin-top: 43px;
     color:#606060;
     font-size: 36px;
     font-weight: bold;
@@ -20111,6 +20111,7 @@ form > table.pricing-second:after {
     line-height:34px; 
     height:35px;
     clear: both;
+
 }
 .premium_wr .premium_h{
     width:100%;
@@ -20570,7 +20571,7 @@ form > table.pricing-second:after {
 .wr_pack_double_basic {
     background-image: url('/images/double_basic.png');
     background-repeat: no-repeat;
-    margin: 25px 0 0 20%;
+    margin: 25px 10px 0 15%;
     width: 115px;
     height: 85px;
     display: none;
@@ -20580,7 +20581,7 @@ form > table.pricing-second:after {
 .wr_pack_premium, .wr_pack_premium1, .wr_pack_premium2 {
     background-image: url('/images/premium_pack.png');
     background-repeat: no-repeat;
-    margin: 25px 0 0 20%;
+    margin: 25px 10px 0 20%;
     width: 85px;
     height: 85px;
     float: left;
@@ -20589,7 +20590,7 @@ form > table.pricing-second:after {
 .wr_pack_double_premium, .wr_pack_double_premium1, .wr_pack_double_premium2 {
     background-image: url('/images/double_premium.png');
     background-repeat: no-repeat;
-    margin: 25px 0 0 20%;
+    margin: 25px 10px 0 10%;
     width: 121px;
     height: 85px;
     display: none;
@@ -20771,7 +20772,7 @@ form > table.pricing-second:after {
         font-weight: bold;
         height: 79px;
         position: absolute;
-
+        margin: 40px 0 0 55%; 
     }
 
     .tb_pricing  .refund_10{

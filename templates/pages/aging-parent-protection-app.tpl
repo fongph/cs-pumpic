@@ -383,5 +383,12 @@
     </div>
         
     {include file='../includes/main/main-analytics-footer.tpl'}
+
+
+    <style>
+        .basic_wr .priceb, .premium_wr .pricep{
+            margin-top: 0;
+        }
+    </style>
 </body>
 </html>

@@ -535,11 +535,17 @@
 
 
         <style>
+            .iphone-tracking-software .dtable-cell, .iphone-with-jailbreak-monitoring .dtable-cell{
+                padding: 20px 0 10px 0;
+            }
+
             .save__2plan{
             position: absolute;
             width: 100%;
             top: 670px;
             z-index: 3;
+            border-left: 1px solid #ddd;
+            border-right: 1px solid #ddd;
             }
 
             .row-pricing-panel .priceb .list_price ul li .hover_label_radio, .row-pricing-panel .pricep .list_price ul li .hover_label_radio{
@@ -604,13 +610,16 @@
             }
 
             .wr_pack_double_premium1{
-                margin: 0;
+                margin: 0px 0px 0px 12px;
             }
 
 
             .wr_price_big{
                 font-size: 25px;
             }
+
+
+
 
             @media (max-width: 1200px){
                 .save__2plan {

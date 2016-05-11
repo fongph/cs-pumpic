@@ -373,6 +373,20 @@
     </div>
        
     {include file='../includes/main/main-analytics-footer.tpl'}
-    
+
+
+    <style>
+
+        .basic_wr .priceb{
+            margin-top: 0;
+        }
+
+        .wr_pack_double_premium {
+            margin: 25px 10px 0 20%;
+        }
+
+    </style>
+
+
 </body>
 </html>

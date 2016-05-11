@@ -109,7 +109,7 @@
                                                         </div>        
                                                                  
                                                         <div class="list_price">
-                                                            <form name="price_premium" method="POST" action="/buy.html" class="buy-form" autocomplete="off">
+                                                            <form name="price_premium" method="POST" action="/buy.html" class="buy-form-with-offer" autocomplete="off">
                                                                 <input id='product_price_premium' type='hidden' name='price[productID]' value='{if isset($getDefaultPremium)}{$getDefaultPremium}{else}0{/if}' class="product_price" />
                                                 
                                                                 <ul>
@@ -362,7 +362,23 @@
         }
                 
     </div>
-       
+    <style>
+        .basic_wr .priceb{
+            margin-top: 0;
+        }
+
+        .wr_pack_double_premium{
+            background-image: url(/images/double_premium.png);
+            background-repeat: no-repeat;
+            margin: 25px 10px 0 20%;
+            width: 121px;
+            height: 85px;
+            display: none;
+            float: left;
+        }
+    </style>
+
+
     {include file='../includes/main/main-analytics-footer.tpl'}
 </body>
 </html>

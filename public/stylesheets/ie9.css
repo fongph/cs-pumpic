@@ -1510,7 +1510,7 @@
     padding: 13px;
     margin-bottom: 0px;
     height: 123px;
-    background: url(../images/bg-banner-small-mobile-operators.gif) no-repeat;
+    background: url(../images/bg-banner-small-mobile-operators.png) no-repeat;
     background-size: 100% 100%;
 }
 .ie9 .mobile-operations-banner .banner-phone {
@@ -1554,7 +1554,7 @@
     }
     
     .ie9 .mobile-operations-banner { 
-        background: url(../images/bg-banner-small-mobile-operators.gif);
+        background: url(../images/bg-banner-small-mobile-operators.png);
         background-size: 100% 100%;
         padding: 5px;
     }

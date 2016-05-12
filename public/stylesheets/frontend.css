@@ -14737,7 +14737,7 @@ form.form-faq .box-captcha {
     }
     
     .mobile-operations-banner { 
-        background: url(../images/bg-banner-small-mobile-operators.gif);
+        background: url(../images/bg-banner-small-mobile-operators.png);
         background-size: 100% 100%;
         padding: 5px;
     }
@@ -20772,7 +20772,7 @@ form > table.pricing-second:after {
         font-weight: bold;
         height: 79px;
         position: absolute;
-        margin: 40px 0 0 55%; 
+        margin: 40px 0 0 55%;
     }
 
     .tb_pricing  .refund_10{

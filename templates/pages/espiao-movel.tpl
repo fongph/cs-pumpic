@@ -159,7 +159,7 @@
                                                                 <div class="double_offer checkbox">
                                                                     <label>
                                                                         <input type="checkbox" data-group="premium">
-                                                                        Get the 2nd plan with <span>40% OFF!</span>
+                                                                        ¡Conseguir el 2do plano con un <span>40% de descuento!</span>
                                                                     </label>
                                                                 </div>
                                                                 <button class="btn btn-default ga-action-submit mb20"
@@ -305,7 +305,7 @@
                                                                 <div class="double_offer checkbox">
                                                                     <label>
                                                                         <input type="checkbox" data-group="premium">
-                                                                        Get the 2nd plan with <span>40% OFF!</span>
+                                                                        ¡Conseguir el 2do plano con un <span>40% de descuento!</span>
                                                                     </label>
                                                                 </div>
                                                                 <button class="btn btn-default ga-action-submit mb20"

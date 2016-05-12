@@ -12688,13 +12688,13 @@ fieldset[disabled] .button-red.active {
     color: #16a89e !important;
 }
 
-.banner1 {
-    height: 276px;
-    background-color: #4d4f5b;
-    background-image: url('../images/bg_blog_banner1.png');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-}
+/*.banner1 {*/
+    /*height: 276px;*/
+    /*background-color: #4d4f5b;*/
+    /*background-image: url('../images/bg_blog_banner1.png');*/
+    /*background-repeat: no-repeat;*/
+    /*background-size: 100% 100%;*/
+/*}*/
 
 .banner2 {
     height: 276px;
@@ -16999,7 +16999,7 @@ span.text-success {
 .iphone-with-jailbreak-monitoring .dtable .wr_price_big,
 .iphone-tracking-software .dtable .wr_price_big {
   position: static;
-  margin: 0;
+  margin: 15px 0 0 0px;
   height: auto;
   display: inline-block;
   float: none;
@@ -17350,7 +17350,7 @@ th .table_title {
   list-style: none;
 }
 .w100 .dtable {
-  max-width: 500px;
+  max-width: 600px;
   margin: auto;
 }
 .basic_fe_mobile_block {
@@ -17405,6 +17405,163 @@ th .table_title {
   display: inline-block;
   vertical-align: middle;
 }
+
+
+.iphone-tracking-software  .save__2plan{
+  position: absolute;
+  width: 100%;
+  top: 670px;
+  z-index: 3;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+}
+
+.iphone-tracking-software .basic_wr .priceb{
+  margin-top: 55px;
+}
+
+
+.iphone-tracking-software .dtable-cell{
+  padding: 20px 0 10px 0;
+}
+
+
+
+.iphone-tracking-software  .row-pricing-panel .priceb .list_price ul li .hover_label_radio, .row-pricing-panel .pricep .list_price ul li .hover_label_radio{
+  max-width: 250px;
+  width: 250px;
+}
+
+
+.iphone-tracking-software .dtable-text{
+  display: inline-block;
+  vertical-align: middle;
+  color: #606060;
+  font-size: 13px;
+  line-height: 1;
+  text-transform: none;
+  float: none;
+  padding: 0 15px 0px 0px;
+}
+
+
+.iphone-tracking-software  .wr_pack_double_premium2 {
+  background-image: url(/images/double_premium.png);
+  background-repeat: no-repeat;
+  margin: 25px 10px 0 20%;
+  width: 121px;
+  height: 85px;
+  display: none;
+  float: none;
+}
+
+.iphone-tracking-software  .wr_pack_basic, .wr_pack_double_basic {
+  background-repeat: no-repeat;
+  height: 85px;
+  float: right;
+}
+
+
+.iphone-tracking-software .wr_pack_premium1{
+  margin: 25px 10px 0 15%;
+}
+
+
+.iphone-tracking-software .wr_pack_premium2 {
+  display: inline-block;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  height: 85px;
+  float: none;
+}
+
+
+
+
+.iphone-tracking-software .wr_pack_double_premium2{
+  display: none;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  height: 85px;
+  float: none;
+}
+
+.iphone-tracking-software .dtable .wr_price_big{
+  min-width: 0;
+}
+
+/*.iphone-tracking-software  .wr_pack_double_premium1{*/
+  /*margin: 0px 0px 0px 12px;*/
+/*}*/
+
+
+.iphone-tracking-software  .wr_price_big{
+  font-size: 25px;
+}
+
+
+
+.icloud-iphone-without-jailbreak-monitoring  .basic_wr .priceb{
+  margin-top: 25px;
+}
+
+.icloud-iphone-without-jailbreak-monitoring  .row-pricing-panel .priceb .list_price ul li .hover_label_radio, .icloud-iphone-without-jailbreak-monitoring  .row-pricing-panel .pricep .list_price ul li .hover_label_radio{
+  max-width: 250px;
+  width: 250px;
+}
+
+.icloud-iphone-without-jailbreak-monitoring  .dtable-text{
+  display: inline-block;
+  vertical-align: middle;
+  color: #606060;
+  font-size: 13px;
+  line-height: 1;
+  text-transform: none;
+  float: none;
+  padding: 0 30px 0px 0px;
+}
+
+
+.icloud-iphone-without-jailbreak-monitoring  .wr_pack_premium{
+  margin: 0;
+  background-repeat: no-repeat;
+  height: 85px;
+  float: none;
+  display: inline-block;
+}
+
+
+.icloud-iphone-without-jailbreak-monitoring  .wr_price_big{
+  font-size: 25px;
+}
+
+
+.icloud-iphone-without-jailbreak-monitoring .wr_pack_double_premium {
+  display: none;
+  vertical-align: middle;
+  margin-left: 20px;
+  margin: 0;
+  background-repeat: no-repeat;
+  height: 85px;
+  float: none;
+}
+
+.icloud-iphone-without-jailbreak-monitoring .dtable-text {
+  display: inline-block;
+  vertical-align: middle;
+  color: #606060;
+  font-size: 13px;
+  line-height: 1;
+  text-transform: none;
+  float: none;
+  padding: 0 30px 0px 0px;
+}
+
+.icloud-iphone-without-jailbreak-monitoring .dtable .wr_price_big{
+  min-width: auto;
+  padding: 0 0 0 15px;
+}
+
 @media only screen and (max-width: 400px) {
     
     .icloud-iphone-without-jailbreak-monitoring .dtable-cell .wr_price_big span,
@@ -17459,6 +17616,11 @@ th .table_title {
     .list-group-box .list-group+.list-group .list-group-item {
       border-left: 1px solid #dddddd;
     }
+
+  .iphone-tracking-software .save__2plan {
+    display: none;
+  }
+
 }
 
 .list-group .wr_price_big  curr, .dtable .wr_price_big  curr {

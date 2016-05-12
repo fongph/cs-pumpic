@@ -367,14 +367,8 @@
             margin-top: 0;
         }
 
-        .wr_pack_double_premium{
-            background-image: url(/images/double_premium.png);
-            background-repeat: no-repeat;
+        .wr_pack_double_premium {
             margin: 25px 10px 0 20%;
-            width: 121px;
-            height: 85px;
-            display: none;
-            float: left;
         }
     </style>
 

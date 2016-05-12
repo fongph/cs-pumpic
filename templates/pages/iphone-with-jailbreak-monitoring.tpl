@@ -737,10 +737,6 @@
         .basic_wr .priceb, .premium_wr .pricep{
             margin-top: 0;
         }
-
-        .iphone-with-jailbreak-monitoring .dtable .wr_price_big{
-            margin: 15px 0px 0 0px;
-        }
     </style>
 
 </body>

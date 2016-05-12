@@ -4201,13 +4201,13 @@ fieldset[disabled] .button-red.active {
     color: #16a89e !important;
 }
 
-.banner1 {
-    height: 276px;
-    background-color: #4d4f5b;
-    background-image: url('../images/bg_blog_banner1.png');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-}
+/*.banner1 {*/
+    /*height: 276px;*/
+    /*background-color: #4d4f5b;*/
+    /*background-image: url('../images/bg_blog_banner1.png');*/
+    /*background-repeat: no-repeat;*/
+    /*background-size: 100% 100%;*/
+/*}*/
 
 .banner2 {
     height: 276px;

@@ -26,23 +26,7 @@
         }
         
 
-        <style>
-            .page-espiao .visual-text p.header-info-descriptions {
-                font-size: 14px;
-            }
-            .page-espiao #block-table-header tr, 
-            .page-espiao #table-container tr {
-                display: table;
-            }
-            .basic_wr .priceb{
-                margin-top: 0;
-            }
 
-            .wr_pack_double_premium {
-                margin: 25px 10px 0 20%;
-            }
-
-        </style>
         <!-- BLOCK HEADER -->
         {include file='../includes/content/info/info-promo.tpl'
             infoBlockMobile="no"
@@ -382,6 +366,19 @@
     </div>
        
     {include file='../includes/main/main-analytics-footer.tpl'}
-    
+
+    <style>
+
+        .basic_wr .priceb{
+            margin-top: 0;
+        }
+
+        .wr_pack_double_premium {
+            margin: 25px 10px 0 20%;
+        }
+
+    </style>
+
+
 </body>
 </html>

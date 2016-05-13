@@ -2,6 +2,7 @@ const gulp = require('gulp'),
       sass = require('gulp-sass'),
       postcss = require('gulp-postcss'),
       autoprefixer = require('gulp-autoprefixer'),
+      cssmin = require('gulp-cssmin'),
       uglify = require('gulp-uglify'),
       imagemin = require('gulp-imagemin'),
       pngquant = require('imagemin-pngquant'),
@@ -52,6 +53,15 @@ gulp.task('sass', function () {
       .pipe(gulp.dest('./public/stylesheets/'));
 });
 
+
+
+
+gulp.task('min', function () {
+    gulp.src('./public/stylesheets/frontend.min.css')
+        .pipe(cssmin())
+    //    .pipe(rename({suffix: '.min'}))
+        .pipe(gulp.dest('./public/stylesheets/'));
+});
 
 
 gulp.task('uglify_js', function() {

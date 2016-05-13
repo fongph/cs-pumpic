@@ -3,6 +3,7 @@ const gulp = require('gulp'),
       postcss = require('gulp-postcss'),
       autoprefixer = require('gulp-autoprefixer'),
       cssmin = require('gulp-cssmin'),
+      rename = require('gulp-rename'),
       uglify = require('gulp-uglify'),
       imagemin = require('gulp-imagemin'),
       pngquant = require('imagemin-pngquant'),
@@ -45,11 +46,13 @@ gulp.task('images', function () {
 
 
 gulp.task('sass', function () {
-  return gulp.src('./assets/css/frontend.min.scss')
+  return gulp.src('./assets/css/frontend.scss')
       .pipe(sourcemaps.init())
       .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
       .pipe(autoprefixer('last 10 version'))
       .pipe(sourcemaps.write())
+    //  .pipe(cssmin())
+      .pipe(rename({suffix: '.min'}))
       .pipe(gulp.dest('./public/stylesheets/'));
 });
 
@@ -59,7 +62,6 @@ gulp.task('sass', function () {
 gulp.task('min', function () {
     gulp.src('./public/stylesheets/frontend.min.css')
         .pipe(cssmin())
-    //    .pipe(rename({suffix: '.min'}))
         .pipe(gulp.dest('./public/stylesheets/'));
 });
 

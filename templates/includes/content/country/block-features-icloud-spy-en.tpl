@@ -6,7 +6,7 @@
             <div class="col-lg-12">
                 
                 <ul class="row-list c-f-list">
-                    <li class="col-md-3 col-lg-3 padding-null">
+                    <li class="col-md-3 col-lg-3 ">
                         <div id="c-f-block-info">
                             
                             <section>
@@ -18,7 +18,7 @@
                         
                         </div>
                     </li>
-                    <li class="col-md-3 col-lg-3 padding-null">
+                    <li class="col-md-3 col-lg-3 ">
                         <div id="c-f-block-info">
                             
                             <section>
@@ -29,7 +29,7 @@
                         
                         </div>
                     </li>
-                    <li class="col-md-3 col-lg-3 padding-null">
+                    <li class="col-md-3 col-lg-3 ">
                         <div id="c-f-block-info">
                             
                             <section>
@@ -40,7 +40,7 @@
                         
                         </div>
                     </li>
-                    <li class="col-md-3 col-lg-3 padding-null">
+                    <li class="col-md-3 col-lg-3 ">
                         <div id="c-f-block-info">
                             
                             <section>
@@ -54,7 +54,7 @@
                 </ul>
                 
                 <ul class="row-list c-f-list">
-                    <li class="col-md-3 col-lg-3 padding-null">
+                    <li class="col-md-3 col-lg-3 ">
                         <div id="c-f-block-info">
                             
                             <section>
@@ -65,7 +65,7 @@
                         
                         </div>
                     </li>
-                    <li class="col-md-3 col-lg-3 padding-null">
+                    <li class="col-md-3 col-lg-3 ">
                         <div id="c-f-block-info">
                             
                             <section>
@@ -76,7 +76,7 @@
                         
                         </div>
                     </li>
-                    <li class="col-md-3 col-lg-3 padding-null">
+                    <li class="col-md-3 col-lg-3 ">
                         <div id="c-f-block-info">
                             
                             <section>
@@ -87,7 +87,7 @@
                         
                         </div>
                     </li>
-                    <li class="col-md-3 col-lg-3 padding-null">
+                    <li class="col-md-3 col-lg-3 ">
                         <div id="c-f-block-info">
                             
                             <section>
@@ -101,7 +101,7 @@
                 </ul>
                 
                 <ul class="row-list c-f-list">
-                    <li class="col-md-3 col-lg-3 padding-null">
+                    <li class="col-md-3 col-lg-3 ">
                         <div id="c-f-block-info">
                             
                             <section>
@@ -112,7 +112,7 @@
                         
                         </div>
                     </li>
-                    <li class="col-md-3 col-lg-3 padding-null">
+                    <li class="col-md-3 col-lg-3 ">
                         <div id="c-f-block-info">
                             
                             <section>
@@ -123,7 +123,7 @@
                         
                         </div>
                     </li>
-                    <li class="col-md-3 col-lg-3 padding-null">
+                    <li class="col-md-3 col-lg-3 ">
                         <div id="c-f-block-info">
                             
                             <section>
@@ -134,7 +134,7 @@
                         
                         </div>
                     </li>
-                    <li class="col-md-3 col-lg-3 padding-null">
+                    <li class="col-md-3 col-lg-3 ">
                         <div id="c-f-block-info">
                             
                             <section>

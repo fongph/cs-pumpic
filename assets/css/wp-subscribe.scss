@@ -1,0 +1,387 @@
+.box-form-subscribe {
+    padding: 15px 30px;
+    /*    margin-top: 40px;*/
+    .image {
+        display: block;
+        margin: 0 auto;
+        padding-bottom: 0px;
+    }
+    .visual-text {
+        label.title {
+            font-size: 24px;
+            font-weight: 600;
+            padding-bottom: 5px;
+            margin-bottom: 0px;
+            position: relative;
+        }
+        .description {
+            font-size: 17px;
+            font-weight: 600;
+            line-height: 1.2em;
+            margin-bottom: 10px;
+        }
+        section {
+            display: inline-block;
+            margin-bottom: 6px;
+            input {
+                display: inline-block;
+                width: 209px;
+                height: 37px;
+                padding: 12px 13px;
+                margin-right: 9px;
+            }
+        }
+    }
+    .block-error, .block-info {
+        font-size: 12px;
+        line-height: 1.1em;
+    }
+    &.dark {
+        background: url('../images/subscribe/bg_dark.png') no-repeat;
+        background-size: 100% 100%;
+        .title > img {
+            display: inline-block;
+            position: relative;
+            vertical-align: middle;
+            width: 31px;
+            height: 31px;
+            margin: 0px;
+        }
+        .visual-text label.title {
+            color: white;
+        }
+        .description {
+            color: #16a89e;
+        }
+        .block-error {
+            text-shadow: 1px 1px 1px #b54a58;
+            padding: 5px 0px 0px;
+            position: relative;
+            color: #e54a58;
+            width: 100%;
+            font-size: 13px;
+            font-weight: 400;
+        }
+        .block-info {
+            color: #aeafc6;
+        }
+        section input {
+            background: #78798c;
+            color: #aeafc6;
+            border: none;
+            font-size: 13px;
+            line-height: 13px;
+            font-weight: 400;
+        }
+        button {
+            top: 1px;
+            position: relative;
+            background-clip: padding-box;
+            border: medium none;
+            border-radius: 4px;
+            font-family: "Open Sans",Helvetica,Arial,sans-serif;
+            font-size: 15px;
+            line-height: 15px;
+            font-weight: 400;
+            padding: 12px 15px;
+        }
+    }
+    &.light {
+        &:after {
+            border: 1px solid #d0d0d0;
+        }
+        background: #fff;
+        border: 1px solid #252525;
+        border-radius: 10px 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        .visual-text {
+            display: block;
+            text-align: center;
+            label.title, .description {}
+            label.title {
+                color: #ff2e6c;
+            }
+            .description {
+                color: #1a8fff;
+            }
+            label.title, .description {
+                text-shadow: 0px 3px 2px #bbbbbb;
+                -webkit-box-shadow: 0px 4px 6px #bbbbbb;
+                -moz-box-shadow: 0px 4px 6px #bbbbbb;
+            }
+            section {
+                button.btn-border-green {
+                    text-shadow: 0px 3px 2px #bbbbbb;
+                    -webkit-box-shadow: 0px 4px 6px #bbbbbb;
+                    -moz-box-shadow: 0px 4px 6px #bbbbbb;
+                }
+                .block-input {
+                    display: block;
+                    z-index: 10;
+                    position: relative;
+                }
+                input {
+                    background: #fff;
+                    border: 8px solid #1a8fff;
+                    color: #000000;
+                    margin-right: 0px;
+                    padding-right: 44px !important;
+                    width: 100%;
+                }
+                .block-button {
+                    display: block;
+                    z-index: 11;
+                    left: -44px;
+                    position: relative;
+                }
+                button.btn-border-green {
+                    display: block;
+                    background: #fff;
+                    border: 8px solid #00e700;
+                    color: #00e700;
+                    width: 100%;
+                }
+                input, button.btn-border-green {
+                    font-size: 13px;
+                    line-height: 13px;
+                    height: 53px;
+                    padding: 12px 13px;
+                    border-radius: 20px 20px;
+                    -webkit-border-radius: 20px;
+                    -moz-border-radius: 20px;
+                }
+            }
+        }
+        .block-error {
+            color: #000;
+            position: relative;
+            width: 100%;
+        }
+    }
+}
+
+/*i.bg-small-logo {
+    background: url('../images/subscribe/small_logo.png') no-repeat;
+    width: 31px;
+    height: 31px;
+}*/
+
+/* ------------ // dark ------------ */
+
+/*.box-form-subscribe.dark i.bg-small-logo {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+}*/
+
+@media only screen and (max-width: 480px) {
+    .box-form-subscribe {
+        &.dark {
+            background-image: none;
+            background-color: #4c4e5b;
+            background-size: auto auto;
+        }
+        .image {
+            padding-bottom: 10px;
+        }
+        &.dark {
+            .visual-text {
+                text-align: center;
+            }
+            .block-input {
+                margin: 0 auto 10px;
+                position: relative;
+            }
+            .block-button {
+                margin: 0 auto;
+            }
+            .block-input, .block-button {
+                float: none;
+                position: relative;
+                display: inline-block;
+            }
+        }
+    }
+}
+
+@media (min-width: 468px) {
+    .box-form-subscribe {
+        &.dark {
+            background-image: none;
+            background-color: #4c4e5b;
+            background-size: auto auto;
+        }
+        .image {
+            padding-bottom: 10px;
+        }
+        &.dark {
+            .visual-text {
+                text-align: center;
+            }
+            .block-input {
+                margin: 0 auto 10px;
+                position: relative;
+            }
+            .block-button {
+                margin: 0 auto;
+            }
+            .block-input, .block-button {
+                float: none;
+                position: relative;
+                display: inline-block;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .box-form-subscribe {
+        &.dark {
+            background: url('../images/subscribe/bg_dark.png') no-repeat;
+            background-size: 100% 100%;
+        }
+        .image {
+            padding-bottom: 10px;
+        }
+        &.dark {
+            .visual-text {
+                text-align: left;
+            }
+            .block-input {
+                margin: 3px 9px 0px 0px;
+            }
+            .block-button {
+                margin: 0px;
+            }
+            .block-input, .block-button {
+                float: left;
+                position: relative;
+                display: block;
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .box-form-subscribe {
+        &.dark {
+            background: url('../images/subscribe/bg_dark.png') no-repeat;
+            background-size: 100% 100%;
+        }
+        .image {
+            padding-bottom: 0px;
+        }
+        &.dark {
+            .visual-text {
+                text-align: left;
+            }
+            .block-input {
+                margin: 3px 9px 0px 0px;
+            }
+            .block-button {
+                margin: 0px;
+            }
+            .block-input, .block-button {
+                float: left;
+                position: relative;
+                display: block;
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .box-form-subscribe {
+        &.dark {
+            background: url('../images/subscribe/bg_dark.png') no-repeat;
+            background-size: 100% 100%;
+        }
+        .image {
+            padding-bottom: 0px;
+        }
+        &.dark {
+            .visual-text {
+                text-align: left;
+            }
+            .block-input {
+                margin: 3px 9px 0px 0px;
+            }
+            .block-button {
+                margin: 0px;
+            }
+            .block-input, .block-button {
+                float: left;
+                position: relative;
+                display: block;
+            }
+        }
+    }
+}
+
+/* ------------ // light ------------ */
+
+@media only screen and (max-width: 480px) {
+    .box-form-subscribe.light .visual-text section {
+        .block-input {
+            float: none;
+        }
+        .block-button {
+            float: none;
+            margin-top: 10px;
+            left: 0px;
+        }
+    }
+}
+
+@media (min-width: 468px) {
+    .box-form-subscribe.light .visual-text section {
+        .block-input {
+            float: none;
+        }
+        .block-button {
+            float: none;
+            margin-top: 10px;
+            left: 0px;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .box-form-subscribe.light .visual-text section {
+        .block-input {
+            float: left;
+        }
+        .block-button {
+            float: left;
+            margin-top: 0px;
+            left: -44px;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .box-form-subscribe.light .visual-text section {
+        .block-input {
+            float: left;
+        }
+        .block-button {
+            float: left;
+            margin-top: 0px;
+            left: -44px;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .box-form-subscribe.light .visual-text section {
+        .block-input {
+            float: left;
+        }
+        .block-button {
+            float: left;
+            margin-top: 0px;
+            left: -44px;
+        }
+    }
+}

@@ -1,0 +1,54 @@
+#fly-free-trial {
+    z-index: 999;
+    right: 10px;
+    position: fixed;
+    top: 75px;
+    > a {
+        display: inline-block;
+        &:hover {
+            cursor: pointer;
+            text-decoration: none;
+        }
+        cursor: pointer;
+        text-decoration: none;
+        &:active, &:focus {
+            text-decoration: none;
+            border: none;
+        }
+    }
+    .fft-title {
+        color: #272727;
+        font-size: 12px;
+        line-height: 1.2em;
+        padding-bottom: 8px;
+        text-align: center;
+        text-shadow: 1px 1px 1px #6b8067, 0 0 2em white;
+        width: 85px;
+    }
+    .fft-package {
+        padding-left: 5px;
+        position: relative;
+        > {
+            img {
+                position: relative;
+                z-index: 1;
+            }
+            .fft-arrows {
+                display: inline-block;
+                width: 25px;
+                height: 46px;
+                background: url('../images/free-trial-stick/arrows.png') no-repeat;
+                position: absolute;
+                z-index: 10;
+                right: 13px;
+                top: -17px;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    #fly-free-trial {
+        display: none;
+    }
+}

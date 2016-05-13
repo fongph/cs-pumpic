@@ -1,0 +1,64 @@
+.box-currence {
+  display: inline;
+}
+
+.strike__currence .curr {
+  text-decoration: line-through;
+}
+
+.list-currencies {
+  margin-top: 5px;
+  ul {
+    margin: 0px;
+    padding: 0px;
+  }
+  li {
+    &:first-child {
+      margin-left: 0px;
+    }
+    display: block;
+    list-style: none;
+    float: left;
+    margin-left: 2px;
+    height: 21px;
+    overflow: hidden;
+    span {
+      text-decoration: underline;
+      color: #16a89e;
+      font-size: 18px;
+      font-weight: 400;
+      cursor: pointer;
+      margin: 0px !important;
+      padding: 0px !important;
+      opacity: 0.6;
+    }
+    &:hover span, span.active {
+      /*    text-decoration: none;*/
+      color: #606060;
+      opacity: 1;
+    }
+  }
+}
+
+.store-flags {
+  display: inline-block;
+  vertical-align: middle;
+  background: url('../images/icons/flags.png') no-repeat;
+  width: 34px;
+  height: 21px;
+  border-radius: 3px 3px;
+  -webkit-border-radius: 3px 3px;
+  -moz-border-radius: 3px 3px;
+}
+
+.flag-usa {
+  background-position: 0px 0px;
+}
+
+.flag-gbp {
+  background-position: -35px 0px;
+}
+
+.flag-eur {
+  background-position: -70px 0px;
+}

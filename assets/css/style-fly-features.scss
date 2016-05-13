@@ -1,0 +1,271 @@
+#link-fly-features {
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+#fly_features {
+  position: fixed;
+  display: none;
+  background: linear-gradient(to left top, rgb(187, 104, 132), rgb(58, 129, 147), rgb(32, 77, 132));
+  background-size: auto;
+  width: 207px;
+  height: 214px;
+  color: #fff;
+  padding: 10px 10px;
+  right: 9px;
+  bottom: 40px;
+  z-index: 999;
+  border-radius: 5px;
+  -webkit-border-radius: 5px 5px;
+  -moz-border-radius: 5px 5px;
+}
+
+#fly_top {
+  margin: 0 0 10px 0px;
+}
+
+#fly_bottom {
+  padding: 9px 0px 0px 0px;
+  div {
+    display: inline-block;
+    height: 40px;
+  }
+}
+
+.fly-pumpic-icon {
+  position: absolute;
+  left: 13px;
+}
+
+.fly-features-link {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.fly-hr {
+  border-bottom: 1px solid #95aabc;
+  width: 207px;
+  margin: 0 0 0 -10px;
+}
+
+#fly_top {
+  p {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 5px;
+    font-size: 13px;
+    line-height: 13px;
+  }
+  .fly-label {
+    font-size: 14px;
+  }
+  p.last {
+    margin-bottom: 3px;
+  }
+}
+
+.fly-versions {
+  font-size: 14px;
+}
+
+.fly_close {
+  background: url('../images/fly_features/close.png') no-repeat;
+  display: inline-block;
+  height: 24px;
+  opacity: 0.8;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 23px;
+}
+
+#fly_features {
+  > ul {
+    margin: 0px;
+    padding: 0px;
+    li {
+      list-style: none;
+      margin: 0px 0px 8px 0px;
+      font-size: 14px;
+      line-height: 14px;
+    }
+  }
+  i {
+    display: inline-block;
+    position: relative;
+    margin-right: 12px;
+    width: 23px;
+    background: url('../images/fly_features/icons_fly_features.png') no-repeat;
+    &.i-fly-features-monitor-instagram {
+      background-position: 0px 0px;
+      height: 18px;
+      top: 5px;
+    }
+    &.i-fly-features-geo-fences {
+      background-position: 0px -29px;
+      height: 16px;
+      top: 3px;
+    }
+    &.i-fly-features-limit-app {
+      background-position: 0px -53px;
+      height: 23px;
+      top: 6px;
+    }
+    &.i-fly-features-icloud {
+      background-position: 0px -82px;
+      height: 14px;
+      top: 3px;
+    }
+  }
+}
+
+/* ------------- \\ fly-features-v2 -------------- */
+
+#fly-features-h2 {
+  color: #f7efa5;
+  line-height: 16px;
+  font-size: 14px;
+  text-align: center;
+  margin: 0 0 2px 4px;
+}
+
+#fly-features-h2_2 {
+  color: #fff;
+  line-height: 16px;
+  font-size: 14px;
+  text-align: left;
+  margin: 0 0 7px 45px;
+}
+
+#fly_features {
+  padding: 6px 7px 0 10px;
+  i {
+    &.i-fly-features-iphone, &.i-fly-features-ipad {
+      display: inline-block;
+      margin: 0px;
+      top: 6px;
+    }
+    &.i-fly-features-iphone {
+      background: url('../images/fly_features/i-icon-features-iphone.png') no-repeat;
+      width: 13px;
+      height: 22px;
+    }
+    &.i-fly-features-ipad {
+      background: url('../images/fly_features/i-icon-features-ipad.png') no-repeat;
+      width: 18px;
+      height: 22px;
+    }
+  }
+}
+
+.fly-features-v2 #fly_features > p {
+  font-size: 12px;
+  line-height: 1.6em;
+  color: white;
+  margin-top: 5px;
+  margin-bottom: 6px;
+  > span.icon-apple {
+    font-size: 16px;
+    color: #d1f0f0;
+  }
+}
+
+.features-button {
+  background-color: #cf4757;
+  border-radius: 2px;
+  font-size: 15px;
+  color: #fff;
+  font-weight: 100;
+  display: block;
+  width: 100px;
+  text-align: center;
+  height: 25px;
+  padding: 2px 0 0;
+  margin: 0 auto;
+  &:hover {
+    color: #fff;
+    background-color: #d45b69;
+    text-decoration: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #fly_features {
+    border-radius: 0px;
+    -webkit-border-radius: 0px 0px;
+    -moz-border-radius: 0px 0px;
+    border-radius: none;
+    width: 100%;
+    height: 126px;
+    padding: 10px 0px 0 0px !important;
+    right: 0;
+    bottom: 0;
+    h2 > br {
+      display: none;
+    }
+    > p {
+      > br {
+        display: none;
+      }
+      text-align: center;
+    }
+  }
+  #fly_top {
+    width: 49%;
+    float: left;
+    margin: 0;
+  }
+  .features-button {
+    font-size: 16px;
+    height: 29px;
+    width: 120px;
+    padding: 3px 0 0;
+  }
+  #fly_bottom {
+    display: inline-block;
+    width: 50%;
+    padding: 0;
+    text-align: center;
+  }
+  .fly-pumpic-icon {
+    position: relative;
+    display: block;
+    margin: auto;
+    left: 0;
+  }
+  #fly-features-h2_2 {
+    font-size: 14px;
+    line-height: 17px;
+    margin: 0;
+    text-align: center;
+    width: 160px;
+  }
+  .fly-features-link {
+    padding: 6px 0 7px;
+    img {
+      width: 106px;
+      height: 32px;
+    }
+  }
+  .fly-hr {
+    border-left: 1px solid #95aabc;
+    width: 1px;
+    height: 100%;
+    margin: -10px 0 0;
+    display: inline-block;
+    position: absolute;
+  }
+  #fly-features-h2 {
+    font-size: 16px;
+    margin-bottom: 3px;
+  }
+  .fly_close {
+    background: url(../images/fly_features/close-min.png) no-repeat;
+    height: 35px;
+    width: 32px;
+  }
+}

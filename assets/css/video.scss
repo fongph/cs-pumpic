@@ -1,0 +1,593 @@
+.box-video-constructors {
+    position: relative;
+    img {
+        z-index: 10;
+    }
+    .box-hover {
+        display: inline;
+        cursor: pointer;
+    }
+    div {
+        &#block-video, &#mobile-block-video {
+            display: inline-block;
+            position: absolute;
+            top: 0;
+            height: 100%;
+            width: 100%;
+        }
+    }
+    .video-arrows, .video-arrows-v2, .video-buttons, .video-buttons-v2, .mobile-video-arrows, .mobile-video-buttons {
+        display: inline-block;
+        z-index: 20;
+    }
+    .video-arrows {
+        /*    position: relative;
+            background: url('../images/video/video-arrows.png') no-repeat;
+            width: 161px;
+            height: 161px;
+            top: -31px;*/
+        position: absolute;
+        background: url('../images/video/video-arrows.png') no-repeat;
+        height: 161px;
+        width: 161px;
+        left: -146px;
+        top: -101px;
+    }
+    .video-arrows-v2 {
+        position: absolute;
+        background: url('../images/video/arrows_shadows.png') no-repeat;
+        height: 170px;
+        width: 170px;
+        left: -150px;
+        top: -101px;
+    }
+    .mobile-video-arrows {
+        background: url('../images/video/m-video-arrows.png') no-repeat;
+        background-size: 100% 100%;
+        height: 86px;
+        left: -171px;
+        max-width: 161px;
+        position: absolute;
+        top: -52px;
+        width: 161px;
+    }
+}
+
+.visual-images-right.box-video-constructors .mobile-video-arrows {
+    left: -146px;
+    top: -26px;
+}
+
+/* ------------- style youtube ---------------- */
+
+.style-youtube {
+    position: relative;
+    img {}
+}
+
+.visual-images-right .style-youtube img {
+    margin: 12px auto auto;
+}
+
+.block-android .visual-images-right > div.mobile-none {
+    margin-top: 0px;
+}
+
+.style-youtube .visual-img-pc {
+    bottom: 0px;
+}
+
+.icloud-iphone-without-jailbreak-monitoring .visual-images-right {
+    margin-top: 0px;
+}
+
+.style-youtube .box-button-video {
+    top: 0px;
+    left: 0px;
+    display: inline-block;
+    z-index: 50;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    .youtube {
+        display: block;
+        width: 76px;
+        height: 54px;
+        margin: 25px auto 0;
+        background: url('../images/video/v2/m_b_video.png') no-repeat;
+        &:hover {
+            background: url('../images/video/v2/m_b_video_hover.png') no-repeat;
+        }
+    }
+}
+
+/* ----------- response mobile --------- */
+
+/* margin-left: -53.5px;
+    margin-top: -42.5px; */
+
+.box-video-constructors {
+    .block-video-button {
+        display: inline-block;
+        position: relative;
+        left: 50%;
+        top: 50%;
+        /*    margin: -53.5px 0px 0px -69.5px;*/
+        margin-left: -53.5px;
+        margin-top: -69.5px;
+        width: 107px;
+        height: 109px;
+        z-index: 20;
+        /*    cursor: pointer;*/
+    }
+    .mobile-block-video-button {
+        display: block;
+        position: relative;
+        left: 50%;
+        top: 50%;
+        width: 52px;
+        height: 58px;
+        margin: -29px 0px 0px -26px;
+    }
+    .block-video-button {
+        .hover-video-buttons {
+            display: none;
+            position: absolute;
+            left: -2px;
+            top: -3px;
+            width: 107px;
+            height: 109px;
+            z-index: 30;
+        }
+        .video-buttons {
+            display: block;
+            height: 67px;
+            left: 26px;
+            position: relative;
+            top: 22px;
+            width: 59px;
+            z-index: 20;
+        }
+        .video-buttons-v2 {
+            display: block;
+            height: 109px;
+            left: 0px;
+            position: relative;
+            top: 0px;
+            width: 107px;
+            z-index: 20;
+        }
+    }
+}
+
+/*@media (max-width: 360px) {
+    .box-video-constructors .mobile-video-arrows,
+    .visual-images-right.box-video-constructors .mobile-video-arrows {
+        display: none !important;
+    }
+
+    .box-video-constructors .block-video-button {
+        margin-left: -53.5px;
+        margin-top: -42.5px;
+    }
+}*/
+
+@media only screen and (max-width: 468px) {
+    /*    .box-video-constructors .mobile-video-arrows,
+        .visual-images-right.box-video-constructors .mobile-video-arrows {
+            display: none !important;
+        }
+
+        .box-video-constructors .block-video-button {
+            margin-left: -53.5px;
+            margin-top: -42.5px;
+        }*/
+    /*    .visual-images-right.box-video-constructors .mobile-video-arrows {
+            display: block;
+        }
+        .box-video-constructors .mobile-video-arrows {
+               width: 100px;
+               left: -111px;
+        }
+        .visual-images-right.box-video-constructors .mobile-video-arrows {
+            left: -107px;
+            top: -26px;
+            width: 120px;
+        } */
+    .visual-img-video {
+        bottom: 0px;
+        margin: 12px auto 0px;
+        text-align: center;
+    }
+    .block-android .visual-images-right > div.mobile-none {
+        margin-top: 20px;
+        position: relative;
+    }
+}
+
+@media (min-width: 468px) {
+    /*    .visual-images-right.box-video-constructors .mobile-video-arrows {
+            left: -107px;
+            top: -26px;
+            width: 120px;
+        }
+
+        .box-video-constructors .block-video-button {
+            margin-left: -53.5px;
+            margin-top: -42.5px;
+        }*/
+    .visual-img-video {
+        bottom: 0px;
+        margin: 12px auto 0px;
+        text-align: center;
+    }
+    .block-android .visual-images-right > div.mobile-none {
+        margin-top: 20px;
+        position: relative;
+    }
+}
+
+@media (min-width: 500px) {
+    .visual-images-right.box-video-constructors .mobile-video-arrows {
+        display: block;
+    }
+    .box-video-constructors .mobile-video-arrows {
+        width: 161px;
+        left: -171px;
+    }
+    /*    .visual-images-right.box-video-constructors .mobile-video-arrows {
+            left: -86px;
+            top: -26px;
+            width: 120px;
+        } */
+    .visual-images-right.box-video-constructors .mobile-video-arrows {
+        width: 161px;
+        left: -146px;
+        top: -26px;
+    }
+    .box-video-constructors .block-video-button {
+        margin-left: -53.5px;
+        margin-top: -42.5px;
+    }
+}
+
+@media (min-width: 770px) {
+    .visual-img-video {
+        bottom: 0px;
+        margin: 0px auto;
+    }
+}
+
+@media (min-width: 768px) {
+    .visual-images-right.box-video-constructors {
+        .mobile-video-arrows {
+            display: block;
+            width: 161px;
+            left: -146px;
+            top: -26px;
+        }
+        marign-top: 0px;
+    }
+    .box-video-constructors .block-video-button {
+        margin-left: -53.5px;
+        margin-top: -42.5px;
+    }
+    .block-android .visual-images-right > div.mobile-none {
+        margin-top: 20px;
+        position: relative;
+    }
+}
+
+@media (min-width: 992px) {
+    .visual-images-right.box-video-constructors {
+        .mobile-video-arrows {
+            display: block;
+            width: 161px;
+            left: -146px;
+            top: -26px;
+        }
+        margin-top: 30px;
+    }
+    .box-video-constructors .block-video-button {
+        margin-left: -53.5px;
+        margin-top: -69.5px;
+    }
+    .visual-img-video {
+        position: relative;
+        margin: auto 0px;
+    }
+    .block-android .visual-images-right > div.mobile-none {
+        margin-top: 0px;
+        position: relative;
+    }
+}
+
+@media (min-width: 1200px) {
+    .visual-images-right.box-video-constructors {
+        .mobile-video-arrows {
+            display: none;
+            width: 161px;
+            left: -146px;
+            top: -26px;
+        }
+        margin-top: 20px;
+    }
+    .box-video-constructors .block-video-button {
+        margin-left: -53.5px;
+        margin-top: -69.5px;
+    }
+    .visual-img-video {
+        bottom: 0px;
+        margin: auto 0px;
+    }
+    .block-android .visual-images-right > div.mobile-none {
+        margin-top: 20px;
+        position: relative;
+    }
+}
+
+@media (max-width: 768px) {
+    .visual-images-right.box-video-constructors .mobile-video-arrows {
+        left: -107px;
+        top: -26px;
+        width: 120px;
+    }
+    .box-video-constructors .block-video-button {
+        margin-left: -53.5px;
+        margin-top: -42.5px;
+    }
+}
+
+/* --------------- // video popUp ----------------- */
+
+#myModal .modal-content, #YouTubeModal .modal-content {
+    /*    top: 100px;*/
+    border: 0px;
+}
+
+.video-overlay {
+    background: rgba(50, 50, 50, 0.7) none repeat scroll 0 0;
+    bottom: 0;
+    display: none;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1200;
+}
+
+.video-wrapper {
+    position: absolute;
+    width: 100%;
+}
+
+.video-inner {
+    display: block;
+    /*    height: 520px;
+        width: 820px;*/
+    margin: 0 auto;
+    padding: 25px 15px;
+    /*    padding: 25px;*/
+    position: relative;
+}
+
+.video-wrapper {
+    .video-close {
+        background: rgba(0, 0, 0, 0) url("../images/sprite.png") no-repeat scroll -200px -50px;
+        border: 0 none;
+        cursor: pointer;
+        height: 19px;
+        outline: medium none;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 19px;
+    }
+    iframe {
+        display: inline-block;
+        height: 100%;
+        max-width: 100%;
+        width: 100%;
+    }
+    .modal-header {
+        border-bottom: 0px;
+        padding: 10px;
+    }
+    .modal-body {
+        padding: 10px;
+    }
+    .modal-footer {
+        border-top: 0px;
+        padding: 10px;
+        text-align: left;
+    }
+}
+
+/* =================== home-page ========================= */
+@media (min-width: 992px) {
+    .home-page .box-video-constructors .block-video-button {
+        margin: -56.5px 0 0 1.5px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .home-page .box-video-constructors .block-video-button {
+        margin: -61.5px 0 0 1.5px;
+    }
+}
+
+/* =================== call-monitoring ========================= */
+@media (min-width: 992px) {
+    .call-monitoring .box-video-constructors .block-video-button {
+        margin: -7.5px 0 0 25.5px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .call-monitoring .box-video-constructors .block-video-button {
+        margin: -17.5px 0 0 25.5px;
+    }
+}
+
+/* =================== iphone-tracking-software ========================= */
+@media (min-width: 992px) {
+    .iphone-tracking-software .box-video-constructors .block-video-button {
+        margin: -54.5px 0 0 -97px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .iphone-tracking-software .box-video-constructors .block-video-button {
+        margin: -54.5px 0 0 -97px;
+    }
+}
+
+/* =================== keylogging_software, online-monitoring-software ========================= */
+@media (min-width: 992px) {
+    .keylogging_software .box-video-constructors .block-video-button {
+        margin: -17.5px 0 0 19.5px;
+    }
+    .online-monitoring-software .box-video-constructors .block-video-button {
+        margin: -7.5px 0 0 19.5px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .keylogging_software .box-video-constructors .block-video-button {
+        margin: -27.5px 0 0 19.5px;
+    }
+    .online-monitoring-software .box-video-constructors .block-video-button {
+        margin: -17.5px 0 0 19.5px;
+    }
+}
+
+/* =================== smartphone-monitoring-software ========================= */
+@media (min-width: 992px) {
+    .smartphone-monitoring-software .box-video-constructors .block-video-button {
+        margin: -26.5px 0 0 26.5px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .smartphone-monitoring-software .box-video-constructors .block-video-button {
+        margin: -26.5px 0 0 26.5px;
+    }
+}
+
+/* =================== iphone_parental_monitoring ========================= */
+@media (min-width: 992px) {
+    .iphone_parental_monitoring .box-video-constructors .block-video-button, .ios-monitoring-software .box-video-constructors .block-video-button, .mobile_sms_spy .box-video-constructors .block-video-button {
+        margin-left: -83.5px;
+        margin-top: -38.5px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .iphone_parental_monitoring .box-video-constructors .block-video-button, .ios-monitoring-software .box-video-constructors .block-video-button, .mobile_sms_spy .box-video-constructors .block-video-button {
+        margin-left: -83.5px;
+        margin-top: -38.5px;
+    }
+}
+
+/* =================== gps-wireless-tracking-phone ========================= */
+
+.gps-wireless-tracking-phone .box-video-constructors .block-video-button {
+    margin: -100.5px 0 0 -49.5px;
+}
+
+@media (max-width: 360px) {
+    .gps-wireless-tracking-phone .box-video-constructors .block-video-button {
+        margin: -100.5px 0 0 -49.5px;
+    }
+}
+
+@media only screen and (max-width: 410px) {
+    .gps-wireless-tracking-phone .box-video-constructors .block-video-button {
+        margin: -100.5px 0 0 -49.5px;
+    }
+}
+
+@media (min-width: 468px) {
+    .gps-wireless-tracking-phone .box-video-constructors .block-video-button {
+        margin: -100.5px 0 0 -49.5px;
+    }
+}
+
+@media (min-width: 500px) {
+    .gps-wireless-tracking-phone .box-video-constructors .block-video-button {
+        margin: -100.5px 0 0 -49.5px;
+    }
+}
+
+@media (min-width: 768px) {
+    .gps-wireless-tracking-phone .box-video-constructors .block-video-button {
+        margin: -100.5px 0 0 -49.5px;
+    }
+}
+
+@media (min-width: 992px) {
+    .gps-wireless-tracking-phone .box-video-constructors .block-video-button {
+        margin: -74.5px 0 0 -79.5px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .gps-wireless-tracking-phone {
+        .visual-images-right.box-video-constructors {
+            margin-top: 40px;
+        }
+        .box-video-constructors .block-video-button {
+            margin: -69.5px 0 0 -79.5px;
+        }
+    }
+}
+
+/* =================== protect-your-little-kids ========================= */
+
+.protect-your-little-kids .box-video-constructors div#block-video {
+    top: 40px;
+}
+
+@media (max-width: 360px) {
+    .protect-your-little-kids .box-video-constructors div#block-video {
+        top: 0px;
+    }
+}
+
+@media only screen and (max-width: 410px) {
+    .protect-your-little-kids .box-video-constructors div#block-video {
+        top: 20px;
+    }
+}
+
+@media (min-width: 468px) {
+    .protect-your-little-kids .box-video-constructors div#block-video {
+        top: 20px;
+    }
+}
+
+@media (min-width: 500px) {
+    .protect-your-little-kids .box-video-constructors div#block-video {
+        top: 25px;
+    }
+}
+
+@media (min-width: 768px) {
+    .protect-your-little-kids .box-video-constructors div#block-video {
+        top: 30px;
+    }
+}
+
+@media (min-width: 992px) {
+    .protect-your-little-kids .box-video-constructors div#block-video {
+        top: 60px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .protect-your-little-kids .box-video-constructors div#block-video {
+        top: 60px;
+    }
+}

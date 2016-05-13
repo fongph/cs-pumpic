@@ -1,0 +1,229 @@
+
+.block-iphone-with-jailbreak-monitoring h2.title {
+    margin: 23px 0px 26px;
+    font-size: 27px;
+    font-weight: 400;
+    color: #16a89e;
+}
+
+.i-icloud-41_28 {
+    display: inline-block;
+    width: 41px;
+    height: 28px;
+    background: url('../../images/icons/i-icloud_41x28.png') no-repeat;
+    margin-right: 18px;
+}
+
+.border-solid {
+    border: 1px solid #e8e8e8;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.color-gold {
+    color: #f5ac43;
+}
+/* ----- \\ how-it-work ---- */
+.how-it-work h3 {
+    color: #4d4f5b;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 18px;
+}
+.how-it-work p {
+    font-size: 13px;
+    font-weight: lighter;
+}
+
+/* ---------- \\ features --------- */
+#icloud-list-features ul {
+    padding: 40px 0px 36px 28px;
+    list-style: none;
+    margin-bottom: 0px;
+}
+
+#icloud-list-features ul li {
+    position: relative;
+}
+
+#icloud-list-features ul li > i {
+    position: absolute;
+    left: -1.7em;
+}
+
+#icloud-list-features ul li > sapn {
+    font-size: 16px;
+    color: #5e606a;
+    font-weight: 400;
+}
+#icloud-list-features ul li { padding-bottom: 24px; }
+#icloud-list-features ul li:last-child { padding-bottom: 0px; }
+#icloud-list-features ul li > p {
+    font-weight: 300;
+    font-size: 13px;
+    margin: 0px;
+}
+
+#icloud-coming-soon {}
+#icloud-coming-soon > h3 {
+    padding: 30px 0px;
+    font-size: 27px;
+    font-weight: lighter;
+    line-height: 27px;
+}
+
+#icloud-coming-soon > ul {
+    padding: 0px;
+    list-style: none;
+}
+/*#icloud-coming-soon > ul > li {
+    position: relative;
+}*/
+#icloud-coming-soon > ul > li {
+    position: relative;
+    margin-bottom: 20px;
+    padding-left: 40px;
+}
+
+#icloud-coming-soon > ul > li i {
+    position: absolute;
+    left: 0px;
+}
+#icloud-coming-soon > ul > li i.i-features-skype {
+    top: -1px;
+}
+#icloud-coming-soon > ul > li i.i-features-notes {
+    top: -2px;
+}
+
+#icloud-coming-soon > ul > li i.i-features-email-close {
+    top: 1px;
+}
+
+#icloud-coming-soon > ul > li strong {
+    font-size: 19px;
+    line-height: 19px;
+    padding-right: 20px;
+}
+
+#icloud-coming-soon > ul > li span {
+    font-size: 15px;
+    font-weight: lighter;
+    line-height: 15px;
+}
+Your Syntactically Awesome StyleSheets code
+.block-iphone-with-jailbreak-monitoring h2.title {
+    margin: 23px 0px 26px;
+    font-size: 27px;
+    font-weight: 400;
+    color: #16a89e;
+}
+
+.i-icloud-41_28 {
+    display: inline-block;
+    width: 41px;
+    height: 28px;
+    background: url('../../images/icons/i-icloud_41x28.png') no-repeat;
+    margin-right: 18px;
+}
+
+.border-solid {
+    border: 1px solid #e8e8e8;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.color-gold {
+    color: #f5ac43;
+}
+
+/* ----- \\ how-it-work ---- */
+
+.how-it-work {
+    h3 {
+        color: #4d4f5b;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 18px;
+    }
+    p {
+        font-size: 13px;
+        font-weight: lighter;
+    }
+}
+
+/* ---------- \\ features --------- */
+
+#icloud-list-features ul {
+    padding: 40px 0px 36px 28px;
+    list-style: none;
+    margin-bottom: 0px;
+    li {
+        position: relative;
+        > {
+            i {
+                position: absolute;
+                left: -1.7em;
+            }
+            sapn {
+                font-size: 16px;
+                color: #5e606a;
+                font-weight: 400;
+            }
+        }
+        padding-bottom: 24px;
+        &:last-child {
+            padding-bottom: 0px;
+        }
+        > p {
+            font-weight: 300;
+            font-size: 13px;
+            margin: 0px;
+        }
+    }
+}
+
+#icloud-coming-soon > {
+    h3 {
+        padding: 30px 0px;
+        font-size: 27px;
+        font-weight: lighter;
+        line-height: 27px;
+    }
+    ul {
+        padding: 0px;
+        list-style: none;
+        > li {
+            position: relative;
+            margin-bottom: 20px;
+            padding-left: 40px;
+            i {
+                position: absolute;
+                left: 0px;
+                &.i-features-skype {
+                    top: -1px;
+                }
+                &.i-features-notes {
+                    top: -2px;
+                }
+                &.i-features-email-close {
+                    top: 1px;
+                }
+            }
+            strong {
+                font-size: 19px;
+                line-height: 19px;
+                padding-right: 20px;
+            }
+            span {
+                font-size: 15px;
+                font-weight: lighter;
+                line-height: 15px;
+            }
+        }
+    }
+}

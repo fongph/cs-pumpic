@@ -1,0 +1,259 @@
+.block-compatibility {}
+
+/* -- // temp 1 -- */
+
+#temp-1 {
+    .bc-header {
+        /*    display: inline-block;
+            background: #4d4f5b;
+            position: relative;
+            width: 100%;*/
+    }
+    .bc-tabs {
+        /*    display: inline-block;
+            background: #4d4f5b;*/
+        position: relative;
+        width: 100%;
+        section {
+            width: 25%;
+            float: left;
+            background: #4d4f5b;
+            > .item-tab {
+                &.active {
+                    background: #16a89e;
+                }
+                &:first-child {
+                    /*    border-top: 2px solid #61636e;*/
+                }
+                border-right: 1px solid #61636e;
+                border-bottom: 1px solid #61636e;
+                text-align: center;
+                &:last-child {
+                    border-bottom: 0px;
+                }
+            }
+            &:last-child > .item-tab {
+                border-right: 0px;
+            }
+            > .item-tab {
+                &.active a {
+                    color: #fff;
+                }
+                a {
+                    color: #16a89e;
+                    font-size: 17px;
+                    line-height: 17px;
+                    font-weight: 300;
+                    padding: 10px 0px;
+                    display: inline-block;
+                }
+            }
+        }
+    }
+    .bc-body {
+        background: #f9f9f9;
+        display: inline-block;
+        position: relative;
+        width: 100%;
+        ul {
+            /*    display: inline-block;
+                margin: 0px;
+                padding: 0px;*/
+            /*    padding: 5px 0px 10px;*/
+            /*    width: 100%;*/
+            padding: 5px 30px 10px;
+            margin: 0px;
+            /*    float: left;*/
+            /*    border-right: 1px solid #ededed;*/
+        }
+        .tab-pane {
+            position: relative;
+        }
+        table {
+            tr > td {
+                &:nth-child(5n) {
+                    display: none;
+                }
+                width: 25%;
+                border-right: 1px solid #ededed;
+                vertical-align: top;
+                &:last-child {
+                    border-right: 0px;
+                }
+            }
+            width: 100%;
+        }
+        .tab-pane > div {
+            display: inline-flex;
+            height: 100%;
+            min-height: 100%;
+            position: relative;
+            width: 25%;
+        }
+        .b-r-1 {
+            border-right: 1px solid #ededed;
+            content: " ";
+            height: 100%;
+            min-height: 100%;
+            position: absolute;
+            right: 0;
+            width: 10px;
+        }
+        ul > li {
+            list-style: outside;
+            padding: 5px 0px;
+            /*    width: 25%;*/
+            /*    float: left;*/
+            /*    border-right: 1px solid #ededed;*/
+            height: auto;
+            /*    padding-top: 10px;*/
+            /*    min-height: 40px;
+                height: 60px;*/
+            &:nth-child(4n) {
+                border-right: 0px;
+            }
+            &:last-child {
+                /*    padding-bottom: 10px;*/
+            }
+            span, a {
+                text-decoration: none;
+                color: #525252;
+                font-size: 15px;
+                font-weight: 400;
+                line-height: 1em;
+                cursor: default;
+                /*    vertical-align: middle;*/
+            }
+        }
+        .tab-content > .active {
+            display: inline-block;
+            width: 100%;
+        }
+    }
+}
+
+/*#temp-1 .bc-body ul:last-child {
+    border-right: 0px;
+}*/
+
+/* ============ // temp 2 mobile version =============== */
+
+#temp-2 {
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    ul {
+        margin: 0px;
+        padding: 0px;
+        li > {
+            span, a {
+                text-align: center;
+            }
+        }
+    }
+    > ul > li {
+        list-style: none;
+    }
+    > ul > li {
+        > {
+            span, a {
+                display: inline-block;
+                background: #4d4f5b;
+                border-bottom: 1px solid #61636e;
+                padding: 10px;
+                color: #27958f;
+                font-size: 17px;
+                line-height: 17px;
+                font-weight: 300;
+                width: 100%;
+                cursor: default;
+            }
+            span:hover, a:hover {
+                cursor: pointer;
+            }
+        }
+        &.active > {
+            a, span {
+                background: #16a89e;
+                color: #fff;
+            }
+            a, span {
+                border-bottom: 0px;
+            }
+        }
+        &:last-child > {
+            a, span {
+                border-bottom: 0px;
+            }
+        }
+        ul {
+            display: none;
+            background: #f9f9f9;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        &.active ul {
+            display: block;
+        }
+        ul {
+            li {
+                list-style: inside;
+                padding: 6px 20px;
+            }
+            > li > {
+                a, span {
+                    color: #525252;
+                    font-size: 15px;
+                    line-height: 1em;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+}
+
+/* ========= // responsv  ========== */
+@media only screen and (max-width: 480px) {
+    #temp-1 {
+        display: none;
+    }
+    #temp-2 {
+        display: block;
+    }
+}
+
+@media (min-width: 468px) {
+    #temp-1 {
+        display: none;
+    }
+    #temp-2 {
+        display: block;
+    }
+}
+
+@media (min-width: 768px) {
+    #temp-1 {
+        display: none;
+    }
+    #temp-2 {
+        display: block;
+    }
+}
+
+@media (min-width: 992px) {
+    #temp-1 {
+        display: block;
+    }
+    #temp-2 {
+        display: none;
+    }
+}
+
+@media (min-width: 1200px) {
+    #temp-1 {
+        display: block;
+    }
+    #temp-2 {
+        display: none;
+    }
+}

@@ -1,0 +1,274 @@
+.landing-mobile {
+    .visual-text {
+        padding-right: 10px;
+    }
+    .ios .banner-header {
+        padding-top: 81px;
+    }
+    .visual-img-pc {
+        margin-top: 0px;
+        bottom: 0px;
+    }
+    .arrow_bottom h3 {
+        margin-top: 30px;
+        margin-bottom: 42px;
+        padding-bottom: 0px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .landing-mobile {
+        .visual-text {
+            text-align: center;
+        }
+        .ios .banner-header, .android .banner-header {
+            padding: 0px;
+        }
+        .visual-img-pc {
+            margin-top: 20px;
+        }
+    }
+}
+
+@media (min-width: 468px) {
+    .landing-mobile {
+        .visual-text {
+            text-align: center;
+        }
+        .ios .banner-header, .android .banner-header {
+            padding: 0px;
+        }
+        .visual-img-pc {
+            margin-top: 20px;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .landing-mobile {
+        .ios .banner-header {
+            padding: 0px;
+        }
+        .android {
+            .banner-header {
+                padding: 0px;
+            }
+            .visual-img-pc {
+                margin-top: 20px;
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .landing-mobile {
+        .visual-text {
+            text-align: right;
+        }
+        .ios .banner-header {
+            padding-top: 81px;
+        }
+        .android .banner-header {
+            padding: 25px 0px 20px;
+        }
+        .ios .visual-img-pc {
+            margin-top: 0px;
+            bottom: 0px;
+        }
+        .android .visual-img-pc {
+            margin-top: 0px;
+            width: 40%;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .landing-mobile {
+        .visual-text {
+            text-align: right;
+        }
+        .ios .banner-header {
+            padding-top: 81px;
+        }
+        .android .banner-header {
+            padding: 50px 0px 40px;
+        }
+        .ios .visual-img-pc {
+            margin-top: 0px;
+        }
+        .android .visual-img-pc {
+            margin-top: 20px;
+            width: 100%;
+        }
+    }
+}
+
+/* ----------- // landing-features ----- */
+
+.landing-features {
+    .sms .banner-header {
+        padding: 97px 0px 67px;
+    }
+    .smartphone .banner-header {
+        padding-top: 80px;
+    }
+    .call-monitoring .banner-header {
+        padding: 50px 0px;
+    }
+    .smartphone .banner-header {
+        /*    padding: 97px 0px 67px;*/
+    }
+    .visual-img-pc {
+        margin-top: 0px;
+        width: 100%;
+    }
+    .smartphone .visual-img-pc {
+        position: relative;
+        bottom: -10px;
+    }
+    .visual-text {
+        h1 {
+            margin-bottom: 20px;
+        }
+        .compatibility {
+            margin-top: 20px;
+        }
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .landing-features {
+        .visual-text {
+            text-align: center;
+        }
+        .sms .banner-header, .call-monitoring .banner-header, .smartphone .banner-header {
+            padding: 10px 0px 10px;
+        }
+        .sms .visual-img-pc, .call-monitoring .visual-img-pc {
+            margin-top: 20px;
+            max-width: 55%;
+        }
+    }
+}
+
+@media (min-width: 468px) {
+    .landing-features {
+        .visual-text {
+            text-align: center;
+        }
+        .sms .banner-header, .call-monitoring .banner-header, .smartphone .banner-header {
+            padding: 10px 0px 10px;
+        }
+        .sms .visual-img-pc, .call-monitoring .visual-img-pc {
+            max-width: 55%;
+            margin-top: 20px;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .landing-features {
+        .call-monitoring .visual-text {
+            padding: 20px 0px;
+        }
+        .sms .banner-header {
+            padding: 50px 0px 50px;
+        }
+        .smartphone .banner-header {
+            padding-top: 20px;
+        }
+        .call-monitoring .banner-header {
+            padding: 0px;
+        }
+        .sms .visual-img-pc {
+            margin-top: 0px;
+            max-width: 30%;
+        }
+        .call-monitoring .visual-img-pc {
+            max-width: 60%;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .landing-features {
+        .visual-text {
+            text-align: right;
+        }
+        .call-monitoring .visual-text {
+            padding: 50px 0px;
+        }
+        .sms .banner-header {
+            padding: 50px 0px 50px;
+        }
+        .call-monitoring .banner-header {
+            padding: 50px 0px;
+        }
+        .smartphone .banner-header {
+            padding-top: 40px;
+        }
+        .sms .visual-img-pc {
+            bottom: 0px;
+            margin-top: 0px;
+            width: 40%;
+        }
+        .call-monitoring .visual-img-pc {
+            min-width: 80%;
+        }
+        .smartphone .visual-img-pc {
+            bottom: 0px;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .landing-features {
+        .visual-text {
+            text-align: right;
+        }
+        .sms .banner-header {
+            padding: 97px 0px 67px;
+        }
+        .call-monitoring .banner-header {
+            padding: 50px 0px;
+        }
+        .smartphone .banner-header {
+            padding-top: 80px;
+        }
+        .sms .visual-img-pc, .call-monitoring .visual-img-pc {
+            margin-top: 0px;
+            width: 100%;
+            max-width: 100%;
+        }
+        .smartphone .visual-img-pc {
+            bottom: -10px;
+        }
+    }
+}
+
+.landing-mobile .ios {
+    ul.visual-header-dop-info {
+        padding-left: 0;
+    }
+    .visual-text {
+        padding-right: 0;
+    }
+}
+
+.landing-features .sms .visual-img-pc {
+    max-width: 100% !important;
+    width: auto !important;
+    height: auto !important;
+}
+
+@media only screen and (max-width: 991px) {
+    .landing-features .sms .visual-img-pc {
+        max-width: none !important;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .landing-features .sms .visual-img-pc {
+        max-width: 100% !important;
+    }
+}

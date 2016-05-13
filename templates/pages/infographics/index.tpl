@@ -83,7 +83,7 @@ description="Check out useful infographics on child online security that Pumpic 
                  $this = $(this);
                  $new = $this[0];
                  $block = $($new).parent().parent().find('.top');
-                $block.css({"top":"-90px", "padding-bottom":"100px"})
+                 $block.css({"top":"-90px", "padding-bottom":"100px"})
                  },
 
          function(){

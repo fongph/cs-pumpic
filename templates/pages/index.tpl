@@ -67,10 +67,8 @@
     styleTitle="h2"    
     title="Why Parental Controls Are Essential"
     blockBg='light'}
-        
         <!-- BLOCK STATISTICK -->
         <div class="block-statistick row">
-            
             <div class="item col-s-sm-12 col-xs-sm-12 col-sm-4 col-md-4 col-lg-4">
                 <section>
                     <div><strong class="fz50 color-orange">92%</strong></div>

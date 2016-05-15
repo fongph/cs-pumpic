@@ -7,80 +7,148 @@ const gulp = require('gulp'),
       uglify = require('gulp-uglify'),
       imagemin = require('gulp-imagemin'),
       pngquant = require('imagemin-pngquant'),
-      sourcemaps = require('gulp-sourcemaps');
+      sourcemaps = require('gulp-sourcemaps'),
+      concat = require('gulp-concat'),
+      browserSync = require('browser-sync').create(),
+      reload = browserSync.reload;
+
+
+
+const project = "pumpic.dev";
 
 
 
 const path = {
-    build: {
-        html: 'build/',
-        js: 'build/js/',
-        css: 'build/css/',
-        img: 'public/images/',
-        fonts: 'build/fonts/'
+    dev: {
+        tpl: './templates/**/*.tpl',
+        js: './assets/js/**/*.js',
+        sass: './assets/css/frontend.scss',
+        sass_wp:'./public/stylesheets/wp.scss',
+        img: './public/images/**/*.{jpg,jpeg,png}'
     },
 
-    src: {
-        js: 'src/js/scripts.js',
-        style: 'src/style/styles.css',
-        img: 'public/images/**/*.*',
-        fonts: 'src/fonts/**/*.*'
-    },
-
-    clean: './build'
+    public: {
+        js: 'public/javascripts/',
+        style: 'public/stylesheets/',
+        img: 'public/images/'
+    }
 };
 
 
-
-gulp.task('images', function () {
-    gulp.src('public/images/404/**/*.{jpg,jpeg,png}')
+gulp.task('images-min', function () {
+    gulp.src(dev.img)
         .pipe(imagemin({
             progressive: true,
             svgoPlugins: [{removeViewBox: false}],
             use: [pngquant()],
             interlaced: true
         }))
-        .pipe(gulp.dest('public/images/'))
+        .pipe(gulp.dest(public.img))
 });
 
 
 
 gulp.task('sass', function () {
-  return gulp.src('./assets/css/frontend.scss')
+  return gulp.src(path.dev.sass)
       .pipe(sourcemaps.init())
       .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
       .pipe(autoprefixer('last 10 version'))
       .pipe(sourcemaps.write())
-    //  .pipe(cssmin())
+      .pipe(cssmin())
       .pipe(rename({suffix: '.min'}))
-      .pipe(gulp.dest('./public/stylesheets/'));
+      .pipe(reload({stream: true}))
+      .pipe(gulp.dest(path.public.style));
 });
 
 
 
-
-gulp.task('min', function () {
-    gulp.src('./public/stylesheets/frontend.min.css')
+gulp.task('sass-wp', function () {
+    return gulp.src(path.dev.sass_wp)
+        .pipe(sourcemaps.init())
+        .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
+        .pipe(autoprefixer('last 10 version'))
+        .pipe(sourcemaps.write())
         .pipe(cssmin())
-        .pipe(gulp.dest('./public/stylesheets/'));
+        .pipe(rename({suffix: '.min'}))
+        .pipe(reload({stream: true}))
+        .pipe(gulp.dest(path.public.style));
 });
 
 
-gulp.task('uglify_js', function() {
-    return gulp.src('./assets/**/*.js')
+
+gulp.task('sass-dev', function () {
+    return gulp.src('./assets/css/frontend.scss')
+        .pipe(sourcemaps.init())
+        .pipe(sass().on('error', sass.logError))
+        .pipe(sourcemaps.write())
+        .pipe(rename({suffix: '.min'}))
+        .pipe(reload({stream: true}))
+        .pipe(gulp.dest(path.public.style));
+});
+
+gulp.task('sass-wp-dev', function () {
+     return gulp.src(path.dev.sass_wp)
+        .pipe(sourcemaps.init())
+        .pipe(sass().on('error', sass.logError))
+        .pipe(sourcemaps.write())
+        .pipe(rename({suffix: '.min'}))
+        .pipe(reload({stream: true}))
+         .pipe(gulp.dest(path.public.style));
+});
+
+
+gulp.task('js-dev', function() {
+    return gulp.src(path.dev.js)
+        .pipe(sourcemaps.init())
+        .pipe(concat('frontend.js'))
+        .pipe(rename({suffix: '.min'}))
+        .pipe(sourcemaps.write())
+        .pipe(reload({stream: true}))
+        .pipe(gulp.dest(path.public.js));
+});
+
+
+gulp.task('js-min', function() {
+    return gulp.src(path.dev.js)
+        .pipe(sourcemaps.init())
+        .pipe(concat('frontend.js'))
+        .pipe(rename({suffix: '.min'}))
         .pipe(uglify())
-        .pipe(gulp.dest('/public/javascripts/frontend.js'));
+        .pipe(sourcemaps.write())
+        .pipe(reload({stream: true}))
+        .pipe(gulp.dest(path.public.js));
 });
 
 
 
-gulp.task('sass:watch', function () {
-    gulp.watch('./assets/css/**/*.scss', ['sass']);
+gulp.task('browser-sync', function() {
+    browserSync.init({
+        proxy: project
+    });
 });
 
 
 
-gulp.task('default', function () { console.log('Hello Gulp!') });
+gulp.task('watch', function() {
+    gulp.watch(path.dev.sass, ['sass-dev']);
+    gulp.watch(path.public.style, ['sass-wp-dev']);
+    gulp.watch(path.dev.js, ['js-dev']);
+    gulp.watch(path.dev.tpl).on('change', browserSync.reload)
+});
+
+
+
+gulp.task('dev', ['browser-sync', 'watch']);
+
+gulp.task('default', ['sass', 'sass-wp', 'js-min']);
+
+
+
+
+
+
+
+
 
 
 

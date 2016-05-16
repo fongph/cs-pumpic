@@ -11,10 +11,15 @@
         <div class="fly-hr"></div>
         <div id="fly_bottom">
             <div>
-                <img class="fly-pumpic-icon" src="/images/fly_features/pumpic_icon.png">
-                <h2 id="fly-features-h2_2">Pumpic Control Panel <br> Mobile App </h2>
+                <div class="fly_double_premium"></div>
+                <h2 id="fly-features-h2_2"><span class="text-yellow">Save 40%</span> on the 2nd plan. Limited time offer!</h2>
             </div>
-            <a class="fly-features-link ga-action-click"  ga-category="Fly Banner" ga-action="click" ga-label="Pop-up iOS Banner" target="_blank" href="https://play.google.com/store/apps/details?id=com.pumpic.mobile.monitoring"><img src="/images/fly_features/google_play.png"></a>
+            <div class="fly-features_double-block">
+
+            <a class="features-button ga-action-click" ga-category="Fly Banner" ga-action="click" ga-label="Save 40% on the 2nd Plan" target="_blank" href="/store.html">Go to Store</a>
+                <div class="fly_double_premium"></div>
+
+            </div>
         </div>
     </div>
 </div>

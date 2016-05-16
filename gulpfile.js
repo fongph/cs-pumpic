@@ -84,6 +84,9 @@ gulp.task('sass-dev', function () {
         .pipe(gulp.dest(path.public.style));
 });
 
+
+
+
 gulp.task('sass-wp-dev', function () {
      return gulp.src(path.dev.sass_wp)
         .pipe(sourcemaps.init())
@@ -128,7 +131,7 @@ gulp.task('browser-sync', function() {
 
 
 gulp.task('watch', function() {
-    gulp.watch(path.dev.sass_watch, ['sass-dev']);
+    gulp.watch(path.dev.sass_watch, ['sass']);
     gulp.watch(path.public.style, ['sass-wp-dev']);
     gulp.watch(path.dev.js, ['js-dev']);
     gulp.watch(path.dev.tpl).on('change', browserSync.reload)

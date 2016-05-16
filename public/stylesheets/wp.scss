@@ -13903,7 +13903,7 @@ li {
   background: url(../images/banner-operations.png) no-repeat;
 }
 i {
-&.icon-android, &.icon-apple {
+&.icon-android, &.icon-apple, &.icon-icloud {
                    position: relative;
                    top: 1px;
                    font-size: 16px;
@@ -18731,31 +18731,56 @@ i {
 
 #fly-features-h2_2 {
   color: #fff;
-  line-height: 16px;
+  line-height: 18px;
   font-size: 14px;
-  text-align: left;
-  margin: 0 0 7px 45px;
+  text-align: center;
+  margin: 0;
+}
+
+.fly_double_premium{
+  background-image: url(/images/double_premium.png);
+  background-repeat: no-repeat;
+  width: 68px;
+  height: 37px !important;
+  background-size: cover;
+  margin: 0 0 0 8px;
+  display: inline-block;
+}
+
+
+.fly_double_premium:first-child{
+  display: none !important;
+}
+
+.fly_double_premium:last-child{
+  display: block;
+}
+
+
+.fly-features_double-block a{
+  float: right;
+  margin: 7px 0px 0 10px;
 }
 
 #fly_features {
   padding: 6px 7px 0 10px;
-i {
-&.i-fly-features-iphone, &.i-fly-features-ipad {
-                            display: inline-block;
-                            margin: 0px;
-                            top: 6px;
-                          }
-&.i-fly-features-iphone {
-   background: url('../images/fly_features/i-icon-features-iphone.png') no-repeat;
-   width: 13px;
-   height: 22px;
- }
-&.i-fly-features-ipad {
-   background: url('../images/fly_features/i-icon-features-ipad.png') no-repeat;
-   width: 18px;
-   height: 22px;
- }
-}
+  i {
+    &.i-fly-features-iphone, &.i-fly-features-ipad {
+      display: inline-block;
+      margin: 0px;
+      top: 6px;
+    }
+    &.i-fly-features-iphone {
+      background: url('../images/fly_features/i-icon-features-iphone.png') no-repeat;
+      width: 13px;
+      height: 22px;
+    }
+    &.i-fly-features-ipad {
+      background: url('../images/fly_features/i-icon-features-ipad.png') no-repeat;
+      width: 18px;
+      height: 22px;
+    }
+  }
 }
 
 .fly-features-v2 #fly_features > p {
@@ -18764,7 +18789,7 @@ i {
   color: white;
   margin-top: 5px;
   margin-bottom: 6px;
-> span.icon-apple {
+  > span.icon-apple {
     font-size: 16px;
     color: #d1f0f0;
   }
@@ -18782,11 +18807,11 @@ i {
   height: 25px;
   padding: 2px 0 0;
   margin: 0 auto;
-&:hover {
-   color: #fff;
-   background-color: #d45b69;
-   text-decoration: none;
- }
+  &:hover {
+    color: #fff;
+    background-color: #d45b69;
+    text-decoration: none;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -18800,70 +18825,93 @@ i {
     padding: 10px 0px 0 0px !important;
     right: 0;
     bottom: 0;
-  h2 > br {
-    display: none;
+    h2 > br {
+      display: none;
+    }
+    > p {
+      > br {
+        display: none;
+      }
+      text-align: center;
+    }
   }
-> p {
-> br {
-    display: none;
+
+  #fly_bottom div{
+    height: auto;
   }
-  text-align: center;
-}
-}
-#fly_top {
-  width: 49%;
-  float: left;
-  margin: 0;
-}
-.features-button {
-  font-size: 16px;
-  height: 29px;
-  width: 120px;
-  padding: 3px 0 0;
-}
-#fly_bottom {
-  display: inline-block;
-  width: 50%;
-  padding: 0;
-  text-align: center;
-}
-.fly-pumpic-icon {
-  position: relative;
-  display: block;
-  margin: auto;
-  left: 0;
-}
-#fly-features-h2_2 {
-  font-size: 14px;
-  line-height: 17px;
-  margin: 0;
-  text-align: center;
-  width: 160px;
-}
-.fly-features-link {
-  padding: 6px 0 7px;
-img {
-  width: 106px;
-  height: 32px;
-}
-}
-.fly-hr {
-  border-left: 1px solid #95aabc;
-  width: 1px;
-  height: 100%;
-  margin: -10px 0 0;
-  display: inline-block;
-  position: absolute;
-}
-#fly-features-h2 {
-  font-size: 16px;
-  margin-bottom: 3px;
-}
-.fly_close {
-  background: url(../images/fly_features/close-min.png) no-repeat;
-  height: 35px;
-  width: 32px;
-}
+
+  .fly_double_premium:first-child{
+    display: block !important;
+    margin: 0 auto;
+  }
+
+  .fly_double_premium:last-child{
+    display: none !important;
+  }
+
+  .fly-features_double-block{
+    display: block !important;
+  }
+
+  .fly-features_double-block a {
+    float: none;
+    margin: 5px auto 0 auto;
+  }
+
+  #fly_top {
+    width: 49%;
+    float: left;
+    margin: 0;
+  }
+  .features-button {
+    font-size: 16px;
+    height: 29px;
+    width: 120px;
+    padding: 3px 0 0;
+  }
+  #fly_bottom {
+    display: inline-block;
+    width: 50%;
+    padding: 0;
+    text-align: center;
+  }
+  .fly-pumpic-icon {
+    position: relative;
+    display: block;
+    margin: auto;
+    left: 0;
+  }
+  #fly-features-h2_2 {
+    font-size: 14px;
+    line-height: 17px;
+    margin: 0;
+    text-align: center;
+    width: 160px;
+  }
+  .fly-features-link {
+    padding: 6px 0 7px;
+    img {
+      width: 106px;
+      height: 32px;
+    }
+  }
+  .fly-hr {
+    border-left: 1px solid #95aabc;
+    width: 1px;
+    height: 100%;
+    margin: -10px 0 0;
+    display: inline-block;
+    position: absolute;
+  }
+  #fly-features-h2 {
+    font-size: 16px;
+    margin-bottom: 3px;
+  }
+  .fly_close {
+    background: url(../images/fly_features/close-min.png) no-repeat;
+    height: 35px;
+    width: 32px;
+  }
 }
 
 .bg-404 {

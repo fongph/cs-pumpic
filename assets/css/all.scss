@@ -4892,7 +4892,7 @@ div {
 
 .text-yellow {
   font-style: normal;
-  font-weight: bold;
+  font-weight: 600;
   color: #feff8b;
 }
 
@@ -6206,7 +6206,7 @@ form {
     background: url(../images/banner-operations.png) no-repeat;
   }
   i {
-    &.icon-android, &.icon-apple {
+    &.icon-android, &.icon-apple, &.icon-icloud {
       position: relative;
       top: 1px;
       font-size: 16px;

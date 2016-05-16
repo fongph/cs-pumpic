@@ -5,6 +5,7 @@
         <ul>
             <li><i class="icon-android"></i> ({$ver_android_bot} - {$ver_android_up})</li>
             <li><i class="icon-apple"></i> ({$ver_ios_bot} - {$ver_jailbreak_up})</li>
+            <li><i class="icon-icloud"></i> ({$ver_icloud_bot} - {$ver_icloud_up})</li>
         </ul>
     </div>
     <div class="banner-arrow"></div>

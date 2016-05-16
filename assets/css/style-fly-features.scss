@@ -135,10 +135,35 @@
 
 #fly-features-h2_2 {
   color: #fff;
-  line-height: 16px;
+  line-height: 18px;
   font-size: 14px;
-  text-align: left;
-  margin: 0 0 7px 45px;
+  text-align: center;
+  margin: 0;
+}
+
+.fly_double_premium{
+  background-image: url(/images/double_premium.png);
+  background-repeat: no-repeat;
+  width: 68px;
+  height: 37px !important;
+  background-size: cover;
+  margin: 0 0 0 8px;
+  display: inline-block;
+}
+
+
+.fly_double_premium:first-child{
+  display: none !important;
+}
+
+.fly_double_premium:last-child{
+  display: block;
+}
+
+
+.fly-features_double-block a{
+  float: right;
+  margin: 7px 0px 0 10px;
 }
 
 #fly_features {
@@ -214,6 +239,29 @@
       text-align: center;
     }
   }
+
+  #fly_bottom div{
+    height: auto;
+  }
+
+  .fly_double_premium:first-child{
+    display: block !important;
+    margin: 0 auto;
+  }
+
+  .fly_double_premium:last-child{
+    display: none !important;
+  }
+
+  .fly-features_double-block{
+    display: block !important;
+  }
+
+  .fly-features_double-block a {
+    float: none;
+    margin: 5px auto 0 auto;
+  }
+
   #fly_top {
     width: 49%;
     float: left;

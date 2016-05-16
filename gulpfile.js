@@ -25,6 +25,7 @@ const path = {
         js: './assets/js/**/*.js',
         sass: './assets/css/frontend.scss',
         sass_wp:'./public/stylesheets/wp.scss',
+        sass_watch: './assets/css/**/*.scss',
         img: './public/images/**/*.{jpg,jpeg,png}'
     },
 
@@ -51,10 +52,8 @@ gulp.task('images-min', function () {
 
 gulp.task('sass', function () {
   return gulp.src(path.dev.sass)
-      .pipe(sourcemaps.init())
       .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
       .pipe(autoprefixer('last 10 version'))
-      .pipe(sourcemaps.write())
       .pipe(cssmin())
       .pipe(rename({suffix: '.min'}))
       .pipe(reload({stream: true}))
@@ -65,10 +64,8 @@ gulp.task('sass', function () {
 
 gulp.task('sass-wp', function () {
     return gulp.src(path.dev.sass_wp)
-        .pipe(sourcemaps.init())
         .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
         .pipe(autoprefixer('last 10 version'))
-        .pipe(sourcemaps.write())
         .pipe(cssmin())
         .pipe(rename({suffix: '.min'}))
         .pipe(reload({stream: true}))
@@ -96,6 +93,7 @@ gulp.task('sass-wp-dev', function () {
         .pipe(reload({stream: true}))
          .pipe(gulp.dest(path.public.style));
 });
+
 
 
 gulp.task('js-dev', function() {
@@ -130,25 +128,12 @@ gulp.task('browser-sync', function() {
 
 
 gulp.task('watch', function() {
-    gulp.watch(path.dev.sass, ['sass-dev']);
+    gulp.watch(path.dev.sass_watch, ['sass-dev']);
     gulp.watch(path.public.style, ['sass-wp-dev']);
     gulp.watch(path.dev.js, ['js-dev']);
     gulp.watch(path.dev.tpl).on('change', browserSync.reload)
 });
 
-
-
-
-
-gulp.task('compress', function (cb) {
-    pump([
-            gulp.src('public/javascripts/*.js'),
-            uglify(),
-            gulp.dest('123')
-        ],
-        cb
-    );
-});
 
 
 gulp.task('dev', ['browser-sync', 'watch']);

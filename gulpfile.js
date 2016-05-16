@@ -5,6 +5,7 @@ const gulp = require('gulp'),
       cssmin = require('gulp-cssmin'),
       rename = require('gulp-rename'),
       uglify = require('gulp-uglify'),
+      pump = require('pump'),
       imagemin = require('gulp-imagemin'),
       pngquant = require('imagemin-pngquant'),
       sourcemaps = require('gulp-sourcemaps'),
@@ -108,13 +109,12 @@ gulp.task('js-dev', function() {
 });
 
 
+
 gulp.task('js-min', function() {
     return gulp.src(path.dev.js)
-        .pipe(sourcemaps.init())
         .pipe(concat('frontend.js'))
         .pipe(rename({suffix: '.min'}))
-        .pipe(uglify())
-        .pipe(sourcemaps.write())
+        .pipe(uglify({compress: true}))
         .pipe(reload({stream: true}))
         .pipe(gulp.dest(path.public.js));
 });
@@ -136,6 +136,19 @@ gulp.task('watch', function() {
     gulp.watch(path.dev.tpl).on('change', browserSync.reload)
 });
 
+
+
+
+
+gulp.task('compress', function (cb) {
+    pump([
+            gulp.src('public/javascripts/*.js'),
+            uglify(),
+            gulp.dest('123')
+        ],
+        cb
+    );
+});
 
 
 gulp.task('dev', ['browser-sync', 'watch']);

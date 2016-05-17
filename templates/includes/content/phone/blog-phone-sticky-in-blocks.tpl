@@ -8,7 +8,7 @@
             <div class="block-phone right">
                 <div class="bg-phone"></div>
                 <span class="p-flag"></span>
-                <span class="p-number">+1 972 338 4508</span>
+                <span class="p-number">(913) 717-6477</span>
             </div>
         </div>    
 
@@ -22,7 +22,7 @@
                         <div class="block-phone right">
                             <div class="bg-phone"></div>
                             <span class="p-flag"></span>
-                            <span class="p-number">+1 972 338 4508git </span>
+                            <span class="p-number">(913) 717-6477</span>
                         </div>
                     </div>    
                 </div> 

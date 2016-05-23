@@ -127,13 +127,13 @@ $config = array(
 		),
 
 	// version mobiles
-		'ver_jailbreak_up'      => '9.1',
-		'ver_android_up'        => '6.0.1',
-		'ver_android_bot'       => '2.2',
-		'ver_ios_up'            => '9.1',
-		'ver_ios_bot'           => '6.0',
-		'ver_icloud_up'         => '9.3.2',
-		'ver_icloud_bot'        => '6.0',
+    'ver_jailbreak_up'      => '9.0.2',
+    'ver_android_up'        => '6.0.1',
+    'ver_android_bot'       => '2.2',
+    'ver_ios_up'            => '9.0.2',
+    'ver_ios_bot'           => '6.0',
+    'ver_icloud_up'         => '9.3.1',
+    'ver_icloud_bot'        => '6.0',
 
 		'cron' => array(
 				'log_path' => '/var/www/pumpic/www/pumpic.com/current/cron/log',

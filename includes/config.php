@@ -139,7 +139,7 @@ $config = array(
 				'log_path' => '/var/www/pumpic/www/pumpic.com/current/cron/log',
 		),
 );
-if (is_file(__DIR__ . '/config.development.php.sample')) {
+if (is_file(__DIR__ . '/config.development.php')) {
 	define('SITE_ID', 1);
 	$config = array_merge($config, include __DIR__ . '/config.development.php');
 } else {

@@ -120,7 +120,7 @@
             </div>
 			<div class="item col-s-sm-12 col-xs-sm-12 col-sm-4 col-md-4 col-lg-4">
                 <section>
-                    <div><strong class="fz50 color-orange">>50%</strong></div>
+                    <div><strong class="fz50 color-orange">50%</strong></div>
                     <span class="text-uppercase">
                         KIDS 10-17 POSTED RISKY COMMENTS OR PHOTOS ONLINE, INCLUDING BULLYING PEOPLE ON SOCIAL MEDIA
                     </span>

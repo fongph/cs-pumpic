@@ -630,6 +630,8 @@ function cellspy_widgets_init() {
 }
 add_action( 'widgets_init', 'cellspy_widgets_init' );
 
+
+
 function get_pages_list() {
     global $wpdb;
     

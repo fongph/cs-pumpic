@@ -96,7 +96,7 @@
                                     <li><i class="i-features-monitor-instagram"></i> <span onclick="window.location='http://{$domain}/parental-control-for-instagram.html'">Monitor Instagram</span></li>
                                     {*<li><i class="i-features-remote-activity-control"></i> Remote Control Panel</li>*}
                                     <li><i class="i-features-kik-chat"></i> <span onclick="window.location='http://{$domain}/monitor-kik-messenger.html'">Monitor Kik</span></li>
-                                    <li><i class="i-features-monitor-snapchat"></i> Monitor Snapchat</li>
+                                    <li><i class="i-features-monitor-snapchat"></i><span onclick="window.location='http://{$domain}/monitoring-snapchat.html'">Monitor Snapchat</span> </li>
                                     <li><i class="i-features-sms-commands"></i> SMS Commands</li>
                                     {*<li class="hidden-mobile">&nbsp;</li>*}
                                 </ul>

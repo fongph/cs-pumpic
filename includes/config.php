@@ -102,12 +102,12 @@ $config = array(
 						PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC
 				)
 		),
-		'db_blog' => array(
-				'dbname'    => 'pumpic_blog',
-				'host'      => '188.40.64.2',
-				'username'      => 'pumpic_blog_user',
-				'password'  => '57ge8j9SNg9EkhryWA3KV9ZB9NUue6',
-		),
+//		'db_blog' => array(
+//				'dbname'    => 'pumpic_blog',
+//				'host'      => '188.40.64.2',
+//				'username'      => 'pumpic_blog_user',
+//				'password'  => '57ge8j9SNg9EkhryWA3KV9ZB9NUue6',
+//		),
 		'db' => array(
 				'host' => '188.40.64.2',
 				'username' => 'ci_user',
@@ -126,12 +126,12 @@ $config = array(
 		),
 
 	// version mobiles
-		'ver_jailbreak_up'      => '9.0.2',
+		'ver_jailbreak_up'      => '9.1',
 		'ver_android_up'        => '6.0.1',
 		'ver_android_bot'       => '2.2',
-		'ver_ios_up'            => '9.0.2',
+		'ver_ios_up'            => '9.1',
 		'ver_ios_bot'           => '6.0',
-		'ver_icloud_up'         => '9.3.1',
+		'ver_icloud_up'         => '9.3.2',
 		'ver_icloud_bot'        => '6.0',
 
 		'cron' => array(

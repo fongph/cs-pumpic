@@ -50,7 +50,7 @@ description="Check out useful infographics on child online security that Pumpic 
     <div class="col-lg-4 col-md-4">
     <ul class="infographics__block effect">
         <li><p class="zero">Find out potential risks kids may face on smartphones and tablets as well as what it takes to keep them safe on the Internet.</p></li>
-        <li><img class="top" src="/images/infographics/1.png" title="How to Protect Children on Smartphones and Tablets" alt="Infographic shows ways to protect children from potential risks on smartphones and tablets."/></li>
+        <li><a href="/child-online-mobile-security.html"><img class="top" src="/images/infographics/1.png" title="How to Protect Children on Smartphones and Tablets" alt="Infographic shows ways to protect children from potential risks on smartphones and tablets."/></a></li>
     </ul>
         <div class="infographics__desc"><a href="/child-online-mobile-security.html">How to Protect Children on Smartphones and Tablets</a></div>
     </div>
@@ -60,7 +60,7 @@ description="Check out useful infographics on child online security that Pumpic 
     <div class="col-lg-4 col-md-4">
     <ul class="infographics__block effect">
         <li><p class="zero">We have put together eight essential skills you should develop in your kids. Teach your little ones to be creative, curious, and self-confident since early ages.</p></li>
-        <li><img class="top" src="/images/infographics/2.png" title="8 Entrepreneurial Skills You Should Teach Your Kids" alt="Eight entrepreneurial skills you should develop in your kids described in one infographic."/></li>
+        <li><a href="/entrepreneurial-skills-to-teach-your-child.html"><img class="top" src="/images/infographics/2.png" title="8 Entrepreneurial Skills You Should Teach Your Kids" alt="Eight entrepreneurial skills you should develop in your kids described in one infographic."/></a></li>
     </ul>
         <div class="infographics__desc"><a href="/entrepreneurial-skills-to-teach-your-child.html">8 Entrepreneurial Skills You Should Teach Your Kids</a></div>
 </div>
@@ -70,24 +70,30 @@ description="Check out useful infographics on child online security that Pumpic 
     <div class="col-lg-4 col-md-4 test">
     <ul class="infographics__block effect">
         <li><p class="zero">See how to turn your child’s smartphone into a useful tool for study, not a means of wasting time. 20 learning apps and 10 useful things to learn via a cell phone.</p></li>
-        <li><img class="top" src="/images/infographics/3.png" title="10 Things Your Kids Can Learn Online" alt="Infographic with useful references to develop 10 essential skills in your little ones."/></li>
+        <li><a href="/10-things-your-kids-can-learn-online.html"> <img class="top" src="/images/infographics/3.png" title="10 Things Your Kids Can Learn Online" alt="Infographic with useful references to develop 10 essential skills in your little ones."/> </a></li>
     </ul>
-        <div class="infographics__desc"><a  href="/10-things-your-kids-can-learn-online.html">10 Things Your Kids Can Learn Online</a></div>
+        <div class="infographics__desc"><a href="/10-things-your-kids-can-learn-online.html">10 Things Your Kids Can Learn Online</a></div>
 </div>
 </div>
      {literal}
          <script>
-         $('.infographics__desc a').hover(
-
-             function(){
+         $('.infographics__desc a').hover( function(){
                  $this = $(this);
                  $new = $this[0];
                  $block = $($new).parent().parent().find('.top');
                  $block.css({"top":"-90px", "padding-bottom":"100px"})
-                 },
+                 }, function(){
+                $block.css({"top":"", "padding-bottom":""});
+         });
 
-         function(){
-             $block.css({"top":"", "padding-bottom":""})
+         $('.infographics__block').hover( function(){
+             $this = $(this);
+             $new = $this[0];
+             $block = $($new).parent().find('a');
+             console.log($block[0]);
+             $block.css({"color":"#f5ac43"})
+         }, function(){
+             $block.css({"color":""})
          });
          </script>
      {/literal}

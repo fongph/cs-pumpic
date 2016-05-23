@@ -13,6 +13,7 @@ Disallow: /security/tag/
 Disallow: /security/tag/*
 Disallow: *?gclid=*
 Disallow: *?utm*
+Disallow: *?author=*
 Allow: /wp-content/uploads/
 
 User-agent: Googlebot-Image

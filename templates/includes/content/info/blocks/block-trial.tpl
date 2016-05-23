@@ -2,7 +2,7 @@
     <div id='block-promo-buy'>
         <section>
             <span class='text-promo-buy'>
-                <span class="uppercase">Try <i class='text-yellow'>7 days</i></span> 
+                <span class="uppercase">Try <i class='text-yellow'>7 days</i></span>
                 <br /> <i class='text-yellow'>free</i> trial
             </span>
         </section>

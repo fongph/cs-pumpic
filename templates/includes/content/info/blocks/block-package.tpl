@@ -14,6 +14,13 @@
                     <span>NEU!</span>
                 </div>
                 <p>Kein Jailbreak iCloud<br class="only-pc" /> Überwachungs Ausgabe<br class="only-pc" /> für iOS {$ver_icloud_up}</p>
+            {elseif isset($TwoPlans) && $TwoPlans == "yes"}
+                <div class="label-new">
+                    <img src="{$img}/icons/icon-pumpic-icloud.png" alt="" />
+
+                </div>
+                <div class="block-promo-sale"></div>
+                <h2 class="block-promo-h2"><p class="text-yellow">Save 40%</p> on the 2nd plan.<br class="only-pc" /> Limited time offer!</h2>
             {else}
                 <div class="label-new">
                     <img src="{$img}/icons/icon-pumpic-icloud.png" alt="" />

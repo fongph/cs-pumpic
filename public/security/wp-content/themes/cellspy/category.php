@@ -19,10 +19,22 @@
                     <?php if ( have_posts() ) : ?>
                     
                     <h1 class="text-center mt10 mb20"><a class="blog-link" href="/security/">Kids' Phone Safety Blog</a></h1>
-                    <div class="archive">
-                        <span class="title"><?php printf( __( "All posts for '<i>%s</i>' category", 'cellspy' ), single_tag_title( '', false ) ); ?></span>
-                    </div>
-                    
+<!--                    <div class="archive">-->
+<!--                        <span class="title">--><?php //printf( __( "All posts for '<i>%s</i>' category", 'cellspy' ), single_tag_title( '', false ) ); ?><!--</span>-->
+<!--                    </div>-->
+                        <div class="menu_category">
+                            <ul>
+                                <?php $args = array(
+                                    'show_option_all'    => false,
+                                    'style'              => 'list',
+                                    'show_option_none'   => __('No categories'),
+                                    'title_li'           => false,
+                                );
+
+                                wp_list_categories( $args );?>
+                            </ul>
+                        </div>
+
                     <div class="col-lg-8 col-md-8 col-sm-12">
                         <?php
                             while ( have_posts() ) : the_post();

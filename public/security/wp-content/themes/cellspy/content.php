@@ -1,5 +1,17 @@
 
 <h2><a class="blog-link" href="/security/">Kids' Phone Safety Blog</a></h2>
+<div class="menu_category">
+    <ul>
+        <?php $args = array(
+            'show_option_all'    => false,
+            'style'              => 'list',
+            'show_option_none'   => __('No categories'),
+            'title_li'           => false,
+        );
+
+        wp_list_categories( $args );?>
+    </ul>
+</div>
 <div class="col-lg-8 col-md-8 col-sm-12">
     <article>
         <h1 class="h1 h1_post"><?php the_title(); ?></h1>
@@ -53,6 +65,8 @@
     </article>
     <?php get_sidebar('subscribe'); ?>
     <?= fb_get_cat_related_posts() ?>
+
+
     <div class="should-keep">
         <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Children Safe") ) : ?>
         <?php endif; ?>
@@ -65,6 +79,10 @@
     <?php require_once '../../templates/includes/blog-banner-buy-post.tpl'; ?>
     <div class="feature_list">
         <div id="secondary" class="widget-area" role="complementary">
+
+
+
+
             <?php get_sidebar('main'); ?>
         </div>
         <?php /* get_sidebar( 'content' );*/ ?>

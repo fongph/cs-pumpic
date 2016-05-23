@@ -393,6 +393,27 @@ h2.list-group-item-heading {
   }
 }
 
+.block-promo-sale{
+  background-image: url(/images/double_premium.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 68px;
+  height: 37px!important;
+  margin: 0 0 0 20px;
+  display: inline-block;
+}
+
+
+.block-promo-h2{
+  margin: 0;
+  color: #fff;
+  font-size: 14px;
+  .text-yellow{
+  font-weight: 600;
+  color: #feff8b !important;
+  }
+}
+
 .basic_wr .basic_fe .list_price-no-link li:hover, .premium_wr .premium_fe .list_price-no-link li:hover {
   color: #4e4d5b;
   font-size: 16px;
@@ -558,6 +579,9 @@ th .table_title {
 }
 
 @media only screen and (max-width: 768px) {
+  .block-promo-sale{
+    margin: 0;
+  }
   .coming_soon_block ul li {
     > div {
       text-align: center;

@@ -94,7 +94,7 @@ gulp.task('sass-wp-dev', function () {
         .pipe(sourcemaps.write())
         .pipe(rename({suffix: '.min'}))
         .pipe(reload({stream: true}))
-         .pipe(gulp.dest(path.public.style));
+        .pipe(gulp.dest(path.public.style));
 });
 
 
@@ -132,7 +132,7 @@ gulp.task('browser-sync', function() {
 
 gulp.task('watch', function() {
     gulp.watch(path.dev.sass_watch, ['sass']);
-    gulp.watch(path.public.style, ['sass-wp-dev']);
+    gulp.watch(path.public.sass_wp, ['sass-wp-dev']);
     gulp.watch(path.dev.js, ['js-dev']);
     gulp.watch(path.dev.tpl).on('change', browserSync.reload)
 });

@@ -9683,10 +9683,6 @@ a {
 
 
 @media only screen and (max-width: 1199px) {
-  .menu_category {
-  display: none;
-  }
-
   .list_category {
     padding: 0 30px;
   }
@@ -9695,6 +9691,9 @@ a {
 @media only screen and (max-width: 480px) {
   .list_category li a {
     font-size: 14px;
+  }
+  .menu_category {
+    display: none;
   }
 }
 

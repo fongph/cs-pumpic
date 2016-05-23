@@ -36,7 +36,7 @@ description="Check out useful infographics on child online security that Pumpic 
     <div class="b-how-it-work light">
 
  <div class="container">
-    <h1 class="h2 text-center">Online Security for Kids
+    <h1 class="h2 text-center">Online Security for Kids <br>
         Infographics by Pumpic
     </h1>
     <p style="text-align: center;color: #4d4f5b;">When it comes to keeping your child safe on the Internet, it is important to secure all spheres of their lives and always stay up to date. That is why Pumpic provides parents with reliable monitoring solutions on one hand and relevant information on Internet security for children on the other.

@@ -34,6 +34,7 @@
             <?= the_content() ?>
 
         </div>
+
         <ul class="share_list share_bottom">
             <li><a class="share-facebook" href="#" data-location="http://www.facebook.com/sharer/sharer.php?u="></a></li>
             <li><a class="share-google" href="#" data-location="https://plus.google.com/share?url="></a></li>
@@ -43,7 +44,7 @@
         </ul>
 
 
-
+        <?php if ( function_exists( 'get_Sexy_Author_Bio' ) ) echo get_Sexy_Author_Bio(); ?>
         <script>
             $('.share_list a').click(function(e){
                 e.preventDefault();

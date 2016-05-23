@@ -102,12 +102,13 @@ $config = array(
 						PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC
 				)
 		),
-//		'db_blog' => array(
-//				'dbname'    => 'pumpic_blog',
-//				'host'      => '188.40.64.2',
-//				'username'      => 'pumpic_blog_user',
-//				'password'  => '57ge8j9SNg9EkhryWA3KV9ZB9NUue6',
-//		),
+		'db_blog' => array(
+				'dbname'    => 'pumpic_blog',
+				'host'      => '188.40.64.2',
+				'username'      => 'pumpic_blog_user',
+				'password'  => '57ge8j9SNg9EkhryWA3KV9ZB9NUue6',
+		),
+
 		'db' => array(
 				'host' => '188.40.64.2',
 				'username' => 'ci_user',
@@ -138,9 +139,9 @@ $config = array(
 				'log_path' => '/var/www/pumpic/www/pumpic.com/current/cron/log',
 		),
 );
-if (is_file(__DIR__ . '/config.development.php')) {
+if (is_file(__DIR__ . '/config.development.php.sample')) {
 	define('SITE_ID', 1);
-	$config = array_merge($config, include __DIR__ . '/config.development.php');
+	$config = array_merge($config, include __DIR__ . '/config.development.php.sample');
 } else {
 	define('SITE_ID', 1);
 }    

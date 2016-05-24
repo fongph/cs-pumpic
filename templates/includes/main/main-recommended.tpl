@@ -6,7 +6,7 @@
         
         <div class='row'>
             <div class='col-sm-12 col-md-6 col-lg-7 p-item'>
-                
+
                 <div class='row main-block margin-null'>
                     <div class='col-md-12 col-lg-4 b-item'>
                         <label class='title'>Reviewed by:</label>

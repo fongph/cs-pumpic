@@ -4996,6 +4996,10 @@ div {
       margin-top: 20px;
     }
   }
+  .twoplans{
+    margin-top: 0;
+  }
+
 }
 
 @media (min-width: 768px) {
@@ -5028,7 +5032,14 @@ div {
       margin-top: 0px;
       margin-right: 0px;
     }
+    &.twoplans{
+      margin-top: 4px;
+    }
   }
+}
+
+#block-promo-buy .twoplans{
+  margin-top: 4px;
 }
 
 .promo-blue {

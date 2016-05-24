@@ -37,6 +37,7 @@
             imgUrl = "header_banners/bg_header_android_437x262.png"
             imgAlt = "Landing Mobile"
             imgAlign = "right"
+            imgVerticalAlign = "bottom"
             textAlign = "right"
             title = "Android Child Monitoring App<br/>for Concerned Parents"
             description = "Keep an eye on your kid’s phone or tablet<br/>to avert any digital threat or danger."

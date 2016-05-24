@@ -30,7 +30,7 @@
             {/if}
             </div>
         </section>
-        <section class="vertical-aligh-middle">
+        <section class="vertical-aligh-middle {if isset($TwoPlans) && $TwoPlans == "yes"}twoplans{/if}">
             {if isset($planPackageBuyType) && $planPackageBuyType == 'link'}
                 <a class="btn btn-default btn-red-link ga-action-click {if isset($planPackageBuyClass)}{$planPackageBuyClass}{/if}" 
                    ga-action ="click"

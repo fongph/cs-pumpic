@@ -35,7 +35,9 @@
             .block-child-location-tracking .ipad-text {
               padding: 10px 0;
             }
-        } 
+             .banner-header {
+            padding-top: 20px;
+             }
     "
 }    
     
@@ -70,7 +72,7 @@
             imgUrl = "header_banners/header-how-to-block-texts-on-Android.png"
             imgAlt = "How to Block Texts on Android" 
             imgAlign = "right"
-            imgVerticalAlign = "center"
+            imgVerticalAlign = "bottom"
             textAlign = "right"
             title = "Track Texts, SMS on Android Devices<br/>First-Rate Mobile Monitoring Solution"
 			titleSize = "30px"

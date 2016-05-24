@@ -73,7 +73,7 @@
 
             <div class="item col-s-sm-12 col-xs-sm-12 col-sm-4 col-md-4 col-lg-4">
                 <section>
-                    <div><strong class="fz50 color-orange">>30%</strong></div>
+                    <div><strong class="fz50 color-orange">30%</strong></div>
                     <span class="text-uppercase">
 					
                         US TEENS (aged 13-17) USE SNAPCHAT ON A MOBILE PHONE

@@ -1,5 +1,5 @@
 {include file='../includes/main/main-header.tpl'
-    robots="yes"
+    robots="no"
     title="Track Texts, SMS on Android Phones and Tablets | Pumpic"
     description="Pumpic is an ultimate monitoring app to follow online activities and locations, view multimedia files, track texts, SMS on Android smartphones and tablets."
     customeStyle="
@@ -42,6 +42,10 @@
 }    
     
 <body>
+    <!-- BLOCK GTM -->
+    {include file='../includes/main/main-after-body.tpl'}
+    <!-- END BLOCK GTM -->
+
     <!-- FLY BLOCKS -->
     {include file='../includes/content/fly/fly_blocks.tpl'}
     <!-- END FLY BLOCKS-->

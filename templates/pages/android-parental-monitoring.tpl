@@ -1,5 +1,6 @@
-{include file='../includes/main/main-header.tpl' 
-    title="Ultimate Android Parental Control App | Pumpic Monitoring Software"
+{include file='../includes/main/main-header.tpl'
+robots="yes"
+title="Ultimate Android Parental Control App | Pumpic Monitoring Software"
     description="Install parental controls for Android phones and forget about all your worries. Pumpic Android monitoring software is #1 choice to keep your child safe - more than 30 features for reliable Android parental control."
 }    
     

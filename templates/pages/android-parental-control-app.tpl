@@ -1,6 +1,6 @@
-{include file='../includes/main/main-header.tpl' 
-    robots="no"
-	title="Android Parental Control App for Ultimate Monitoring | Pumpic"
+{include file='../includes/main/main-header.tpl'
+robots="yes"
+title="Android Parental Control App for Ultimate Monitoring | Pumpic"
     description="Android parental control app by Pumpic is a one-stop solution for comprehensive, reliable, and accurate monitoring of your kid’s smartphone or tablet."
 }    
     

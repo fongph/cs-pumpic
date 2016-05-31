@@ -7,7 +7,7 @@
 }
 
 .item_link img{
-    margin: 15px 15px
+    margin: 15px 20px 15px 18px;
 }
 
 
@@ -57,9 +57,15 @@
         width: 100%;
         margin: 10px auto 0 auto
     }
+    .recommended_member .title{
+        padding-top: 15px
+    }
 
     .item_link img{
-        margin: 15px 20px 15px 18px
+        margin: 15px;
+    }
+    .recommended_member .ri-anti-bullying{
+        margin:0;
     }
 
 }

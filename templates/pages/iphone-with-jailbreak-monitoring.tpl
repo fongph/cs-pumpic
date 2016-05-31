@@ -54,6 +54,7 @@
             TouchPad = 'yes'
             Android = 'no'
             Apple = 'yes'
+            Icloud = 'no'
             AppleVersion = "iOS {$ver_ios_bot} - {$ver_jailbreak_up}"
             InfoBlock = 'no'
             block_video = "yes"

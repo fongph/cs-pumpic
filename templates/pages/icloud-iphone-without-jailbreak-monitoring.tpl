@@ -51,6 +51,7 @@
             jailbreak = true
             TouchPad = 'yes'
             Android = 'no'
+            Apple = 'no'
             InfoBlock = 'no'
 
             block_video = "yes"
@@ -232,7 +233,7 @@
                                                                 </li>
                                                                 <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Contacts <span>View existing contacts.</span></li>
                                                                 <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Photos <span>View camera shots and downloaded photos.</span></li>
-                                                                <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Skype <span>Monitor personal, group messages, and calls.<br/> (up to iOS 9.0.2)</span></li>
+                                                                <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Skype <span>Monitor personal, group messages, and calls.<br/> (up to iOS 8.4.1)</span></li>
                                                                 
                                                                 <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Location <span>Track the exact location on the map.</span></li>
                                                             </ul>
@@ -247,10 +248,11 @@
                                                             <ul class="list_price-no-link list_price-no-link-inline">
 
                                                                 <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Browser <span>View visited websites.</span></li>
-                                                                <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Bookmarks <span>View bookmarked websites.</span></li>
+                                                                <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Bookmarks <span>View bookmarked websites. <br/> (up to iOS 8.4.1) </span></li>
                                                                 <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Calendar  <span>Follow scheduled events.</span></li>
                                                                 <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> WhatsApp  <span>Follow personal messages and group chats.</span></li>
                                                                 <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Notes  <span>View notes kept on the target device.<br/> (up to iOS 8.4.1)</span></li>
+                                                                <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Videos  <span>View all videos stored on a device.<br/> (from 9.0 and up)</span></li>
                                                             </ul>
                                                         </div>
                                                     </div>

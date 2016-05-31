@@ -119,24 +119,40 @@
                                     <ul class="compatibility compatibility-lg">
                                         {if isset($Android)}
                                             {if isset($AndroidVersion) && $Android == 'yes'}<li><i class="icon-android"></i> {$AndroidVersion}</li>{/if}
-                                        {else}    
+                                        {else}
                                             <li><i class="icon-android"></i> ({$ver_android_bot} - {$ver_android_up})</li>
-                                        {/if} 
+                                        {/if}
                                         {if isset($Apple)}
-                                            {if isset($AppleVersion) && $Apple == 'yes'}<li><i class="icon-apple"></i> {$AppleVersion}</li>{/if}
-                                        {else}    
-                                            <li><i class="icon-apple"></i> ({$ver_ios_bot} - {if isset($jailbreak) && $jailbreak == "true"}{$ver_icloud_up}{else}{$ver_ios_up}{/if})</li>
-                                        {/if} 
-                                        
+                                            {if isset($AppleVersion) && $Apple == 'yes'}<li><i class="icon-apple"></i> <img class="icon-lock" src="images/lock.png" alt=""> ({$AppleVersion})</li>{/if}
+                                        {else}
+                                            <li><i class="icon-apple"></i> <img class="icon-lock" src="images/lock.png" alt=""> ({$ver_ios_bot} - {if isset($jailbreak) && $jailbreak == "true"}{$ver_icloud_up}{else}{$ver_ios_up}{/if})</li>
+                                        {/if}
+
+
+
+                                        {if isset($Icloud)}
+                                            {if isset($IcloudVersion) && $Icloud == 'yes'}<li><i class="icon-icloud"></i> {$AppleIcloud}</li>{/if}
+                                        {else}
+                                            <li><i class="icon-icloud"></i> ({$ver_icloud_bot} - {$ver_icloud_up})</li>
+                                        {/if}
+
+
+
+
+
+
+
+
+
                                         {if isset($InfoBlock)}
                                             {if isset($InfoBlockText) && $InfoBlock == 'yes'}
                                                 <li><i class="i-header-info"></i> <a href="/compatibility/">{$InfoBlockText}</a></li>
-                                            {/if}    
-                                        {else}    
-                                            <li>
-                                                <i class="i-header-info"></i> <a href="/compatibility/">platform compatibility</a>
-                                            </li>
-                                        {/if} 
+                                            {/if}
+                                        {else}
+                                            {*<li>*}
+                                                {*<i class="i-header-info"></i> <a href="/compatibility/">platform compatibility</a>*}
+                                            {*</li>*}
+                                        {/if}
                                         {if isset($TouchPad) && $TouchPad == 'yes'}
                                             <li><i class="icons ico-iphones"></i>iPhone</li>
                                             <li><i class="icons ico-ipads"></i>iPad</li>

@@ -1380,13 +1380,14 @@
                                             <li>Call monitoring</li>
                                             <li>Contact list</li>
                                             <li>Browsing history</li>
-                                            <li>Bookmarks list</li>
+                                            <li>Bookmarks list <span>(up to iOS 8.4.1)</span></li>
                                             <li>Calendar events</li>
                                             <li>Location</li>
                                             <li>Photos</li>
-                                            <li>Notes</li>
+                                            <li>Video <span>(from 9.0 and up)</span></li>
+                                            <li>Notes <span>(up to iOS 8.4.1)</span></li>
                                             <li>WhatsApp</li>
-                                            <li>Skype</li>
+                                            <li>Skype <span>(up to iOS 8.4.1)</span></li>
                                         </ul>
                                         <div><a class="btn-orange" target="_blank"  href="http://demo.{$domain}/setDevice/126?redirect_url=cp/call">View Demo</a></div>
                                         <label class="color-orange">(no registration required)</label>

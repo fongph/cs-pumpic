@@ -197,7 +197,7 @@ description="Pumpic offers high-quality Cell Phone Tracking Software for a good 
                                                         <li data-toggle="tooltip" data-placement="top" title="Set specific zones and receive alerts once the target device leaves them or enters."><i class="icon-ok"></i> Geo-fences</li>
                                                         <li data-toggle="tooltip" data-placement="top" title="View contact list including names, addresses, numbers and emails."><i class="icon-ok"></i> Contacts</li>
                                                         <li data-toggle="tooltip" data-placement="top" title="Monitor scheduled dates and events."><i class="icon-ok"></i> Calendar</li>
-                                                        <li data-toggle="tooltip" data-placement="top" title="Track Notes on the target iOS device.<div class='br'><strong>iCloud monitoring up to iOS 8.4.1</strong>"><i class="icon-ok"></i> Notes</li>
+                                                        <li data-toggle="tooltip" data-placement="top" title="Track Notes on the target iOS device."><i class="icon-ok"></i> Notes</li>
                                                         <li data-toggle="tooltip" data-placement="top" title="View all visited websites."><i class="icon-ok"></i> Browsing history</li>
                                                         <li data-toggle="tooltip" data-placement="top" title="Block specific websites on a target device."><i class="icon-ok"></i> Websites blocking</li>
 
@@ -349,12 +349,12 @@ description="Pumpic offers high-quality Cell Phone Tracking Software for a good 
                                                         <li data-toggle="tooltip" data-placement="top" title="View all visited websites."><i class="icon-ok"></i> Browsing history <img src="/images/cloud-grey.png"></li>
                                                         <li data-toggle="tooltip" data-placement="top" title="Block specific websites on a target device."><i class="icon-ok"></i> Websites blocking</li>
 
-                                                        <li data-toggle="tooltip" data-placement="top" title="View all websites visited and bookmarked as preferred ones."><i class="icon-ok"></i> Bookmarks <img src="/images/cloud-grey.png"> </li>
+                                                        <li data-toggle="tooltip" data-placement="top" title="View all websites visited and bookmarked as preferred ones. <div class='br'><strong>iCloud monitoring up to iOS 8.4.1</strong>"><i class="icon-ok"></i> Bookmarks <img src="/images/cloud-grey.png"> </li>
                                                         <li data-toggle="tooltip" data-placement="top" title="View all photos stored on a device."><i class="icon-ok"></i> Photos <img src="/images/cloud-grey.png"></li>
 
                                                         <li data-toggle="tooltip" data-placement="top" title="View all emails and detailed contact data. <div class='br'><strong>Android: Root Required</strong></div>"><i class="icon-ok"></i> Emails</li>
                                                         <li data-toggle="tooltip" data-placement="top" title="Monitor, block or set time limits on all applications (games, services etc.) downloaded on a device."><i class="icon-ok"></i> Applications Management</li>
-                                                        <li data-toggle="tooltip" data-placement="top" title="View all videos stored on a device."><i class="icon-ok"></i> Videos</li>
+                                                        <li data-toggle="tooltip" data-placement="top" title="View all videos stored on a device.<div class='br'><strong>iCloud monitoring starting from <br> iOS 9.0</strong>"><i class="icon-ok"></i> Videos  <img src="/images/cloud-grey.png"></li>
 
 
                                                         <li data-toggle="tooltip" data-placement="top" title="Track chats and calls on Skype.<div class='br'><strong>iCloud monitoring up to iOS 9.0.2</strong><div class='br'><strong>Android: Root Required</strong></div>"><i class="icon-ok"></i> Skype <img src="/images/cloud-grey.png"></li>
@@ -481,7 +481,7 @@ our_products (text): Включить выключить блок OUR PRODUCTS (
         $('[data-toggle="tooltip"]').tooltip({
             placement:'top',
             animation:false,
-            html: true,
+            html: true
 
         });
         //$('[data-toggle="tooltip"]').tooltip('show');//for debug

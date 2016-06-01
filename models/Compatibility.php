@@ -233,11 +233,11 @@ class Compatibility {
                     // Websites blocking
                     'blocking_sites' => '<strong>Jailbreak Needed</strong>',
                     'browser_history' => '<strong>iOS: Jailbreak is not needed</strong>',
-                    'browser_bookmarks' => '<strong>iOS: Jailbreak is not needed</strong>',
+                    'browser_bookmarks' => '<strong>For 8.4.1 and older versions Jailbreak is not needed</strong>',
                 ),
                 
                 'Social Media' => array( 
-                    'skype' => '<strong>iOS: For 9.0.2 and older versions Jailbreak is not needed</strong>',
+                    'skype' => '<strong>For 8.4.1 and older versions Jailbreak is not needed</strong>',
                     'viber' => '<strong>Jailbreak Needed</strong>',
                     'whatsapp' => '<strong>iOS: Jailbreak is not needed</strong>',
                     'facebook' => '<strong>Jailbreak Needed</strong>',
@@ -256,14 +256,14 @@ class Compatibility {
                     // Emails
                     'emails' => '<strong>Jailbreak Needed</strong>',
                     // Videos
-                    'video' => '<strong>Jailbreak Needed</strong>',
+                    'video' => '<strong>From 9.0 and up Jailbreak is not needed</strong>',
                     // SMS commands
                     'sms_commands' => '<strong>Jailbreak Needed</strong>',
                     'sim_change_notification' => '<strong>Jailbreak Needed</strong>',
                     'contacts' => '<strong>iOS: Jailbreak is not needed</strong>',
                     'calendar' => '<strong>iOS: Jailbreak is not needed</strong>',
                     'historical_data'  => '<strong>iOS: Jailbreak is not needed</strong>',
-                    'notes' => '<strong>iOS: For 8.4.1 and older versions Jailbreak is not needed</strong>',
+                    'notes' => '<strong>For 8.4.1 and older versions Jailbreak is not needed</strong>',
                 ),    
             ],
             'android' => [

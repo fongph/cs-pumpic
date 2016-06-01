@@ -2,7 +2,7 @@
 <div class="container">
 
 <div class="recommended_links">
-    <div class="title">In the news:</div>
+    <div class="title">In the News:</div>
     <div class="item">
         <a class="b-o-hover item_link" href="http://www.lifehack.org/278272/top-6-apps-help-your-kids-learn-while-you-keep-them-safe" alt="pumpic on lifehack.org" target="_blank" rel="nofollow"><img alt="" class="i-ios-hacker" src="/images/recommended/lifehack.png"></a>
         <a class="b-o-hover item_link" href="http://appadvice.com/appnn/2015/06/keep-your-family-secure-with-pumpic-mobile-monitoring" alt="pumpic on appadvice.com" target="_blank" rel="nofollow"><img class="i-ios-hacker" src="/images/recommended/appadvice.png"></a>

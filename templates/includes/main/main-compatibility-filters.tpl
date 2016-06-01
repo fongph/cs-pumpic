@@ -25,6 +25,8 @@
                     <span>OS: <strong>iOS</strong> (no jailbreak is required)</span>
                     <span>Versions: <strong>{$ver_icloud_bot} - {$ver_icloud_up}</strong></span>
                     <span><strong>iPhone, iPad, iPod Touch</strong></span>
+                <a href="/compatibility/ios-devices"
+                   class="text-succes search-category a-default" data-os="iOS">View list of iOS devices</a>
             </div>
     </div>
 </div>

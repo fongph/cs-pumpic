@@ -143,7 +143,7 @@ class Compatibility {
         $groups = array(
             // Calls & Texts
             'Calls & SMS' => array(
-                'call_log' => 'Call history <i class="icon-icloud"></i>',
+                'call_log' => 'Call history <!--i class="icon-icloud"></i-->',
                 'lock_device' => 'Call blocking',
                 'sms_log' => 'Text message history', // SMS history
                 'block_word' => 'SMS blocking',

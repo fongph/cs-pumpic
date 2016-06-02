@@ -78,8 +78,8 @@
                                             <span>Versions:<strong> {$getSetting._item.version}</strong></span>
 
 
-                                            <span>OS: <strong>{if $getSetting._item.os  == "iOS"}iOS iCloud {else}{$getSetting._item.os}{/if} </strong></span>
-                                            <span>Versions:<strong> {$ver_icloud_bot} - {$ver_icloud_up}</strong></span>
+                                            {*<span>OS: <strong>{if $getSetting._item.os  == "iOS"}iOS iCloud {else}{$getSetting._item.os}{/if} </strong></span>*}
+                                            {*<span>Versions:<strong> {$ver_icloud_bot} - {$ver_icloud_up}</strong></span>*}
 
                                         </div>
                                     </div>

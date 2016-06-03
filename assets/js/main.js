@@ -67,7 +67,18 @@ $(function() {
 		}, 800);
 		return false;
 	});
-        
+    
+
+    $('.learn-about-link').click(function(event) {
+        event.preventDefault();
+        var href=$(this).attr('href');
+        var target=$(href);
+        var top=target.offset().top;
+        $('html,body').animate({
+            scrollTop: top
+        }, 800);
+    });
+
         // scroll body on click
         if($('.go_block_scroll').length) {
            $('.go_block_scroll').on('click', function() {

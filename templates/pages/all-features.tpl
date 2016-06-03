@@ -221,6 +221,7 @@
                                             
                         <!-- block buttons -->                    
                         <div class="row">
+                            <div class="learn-about">
                             <div class="col-xs-sm-12 col-sm-12 col-md-12 col-lg-12 text-center bth-buttons">
                                 <ul>
                                     <li>
@@ -249,11 +250,13 @@
                                        >Free Trial</a>
                                     </li>*}    
                                 </ul>
+                                <a href="#icloud" class="learn-about-link" >Learn more about iCloud monitoring (Jailbreak-Free up to iOS 9.3.2)</a>
                                 <p>Enjoy more than <strong>20 features</strong> of <strong>remote mobile tracking</strong> with Pumpic.</p>
                                 <p>View, track and block mobile activity remotely with Pumpic.<br class='only-mobile' />
                                     Keep your eyes open!
                                     {*Keep your family safe and secured with Pumpic. 
                                     <br />Track location. View calls and SMS. Follow online activity.*}</p>
+                            </div>
                             </div>
                         </div>  
                                 
@@ -1345,6 +1348,7 @@
                         </div>*}
                         
                         <!-- \\ #14 iCloud monitoring: (even) -->
+
                         <div id="icloud" class="div-table-row even">
                             <div class="item-feature-list div-table-column col-sm-12 col-md-4 col-lg-4 text-right">
                                 <img style='max-width: 284{*398*}px' class="image-features model-mobile-center" src='../images/technological/image-icloud_v2.png' />

@@ -9,7 +9,7 @@
                        class="text-succes search-category a-default" data-os="iOS">View list of iOS devices</a>
             </div>
     </div>
-    <div class="col-sm-4 col-md-4">
+    <div class="col-sm-4 col-md-4 table-resp">
             <div class="thumb">
                     <span class="ico-left"><i class="icon-android"></i></span>
                     <span>OS:<strong> Android</strong></span>
@@ -25,8 +25,8 @@
                     <span>OS: <strong>iOS</strong> (no jailbreak is required)</span>
                     <span>Versions: <strong>{$ver_icloud_bot} - {$ver_icloud_up}</strong></span>
                     <span><strong>iPhone, iPad, iPod Touch</strong></span>
-                {*<a href="/compatibility/ios-devices"*}
-                   {*class="text-succes search-category a-default" data-os="iOS">View list of iOS devices</a>*}
+                <a href="/compatibility/ios-devices"
+                   class="text-succes search-category a-default" data-os="iOS">View list of iOS devices</a>
             </div>
     </div>
 </div>

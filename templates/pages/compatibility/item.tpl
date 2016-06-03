@@ -73,18 +73,39 @@
                                         </div>
 
                                         <div class="caption">
+                                            <section>
 
                                             <span>OS: <strong>{if $getSetting._item.os  == "iOS"}iOS (with jailbreak) {else}{$getSetting._item.os}{/if} </strong></span>
                                             <span>Versions:<strong> {$getSetting._item.version}</strong></span>
 
+                                            </section>
 
-                                            {*<span>OS: <strong>{if $getSetting._item.os  == "iOS"}iOS iCloud {else}{$getSetting._item.os}{/if} </strong></span>*}
-                                            {*<span>Versions:<strong> {$ver_icloud_bot} - {$ver_icloud_up}</strong></span>*}
+                                                {if $getSetting._item.name  == "Apple iPhone 4"}
+                                                    <section style="padding-top: 7px">
+                                                        <span>OS: <strong>{if $getSetting._item.os  == "iOS"}iOS iCloud {else}{$getSetting._item.os}{/if} </strong></span>
+                                                        <span>Versions:<strong> {$ver_icloud_bot} - 7.1.2 </strong></span>
+                                                    </section>
+
+                                                    {elseif $getSetting._item.name  == "Apple iPhone 3GS" || $getSetting._item.name  == "Apple iPod touch 4th"}
+
+                                                    <section style="padding-top: 7px">
+                                                        <span>OS: <strong>{if $getSetting._item.os  == "iOS"}iOS iCloud {else}{$getSetting._item.os}{/if} </strong></span>
+                                                        <span>Versions:<strong> {$ver_icloud_bot} - 6.1.6 </strong></span>
+                                                    </section>
+
+                                                        {else}
+
+                                                    <section style="padding-top: 7px">
+                                                        <span>OS: <strong>{if $getSetting._item.os  == "iOS"}iOS iCloud {else}{$getSetting._item.os}{/if} </strong></span>
+                                                        <span>Versions:<strong> {$ver_icloud_bot} - {$ver_icloud_up}</strong></span>
+                                                    </section>
+                                                {/if}
 
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-sm-8 col-md-8">
+
+                                <div class="col-sm-8 col-md-8 table-resp">
                                     {foreach from=$getSetting._item.features key=name item=params}
                                         <ul class="{if $getSetting._item.features|@count < 5}option_list w25p{else}option_list{/if}">
                                             <li>

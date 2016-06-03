@@ -284,7 +284,6 @@ function cookie_init() {
 
     // save cookie screen window
     if (!getCookie('_screen')) {
-        console.log('Save Cookie!');
         $.cookie('_screen', $(window).width() + 'x' + $(window).height(), {expires: 7, path: '/', domain: '.pumpic.com'});
     }
 
@@ -541,11 +540,9 @@ function getAjaxForm(path, params, options) {
         'type': 'POST',
         'cache': true
     }, options || {});
-
-    console.log(settings);
+    
 
     if (!path) {
-        console.log('enter url AJAX!');
         return null;
     }
     var res = $.ajax({

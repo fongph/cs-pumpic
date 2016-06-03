@@ -143,9 +143,9 @@ class Compatibility {
         $groups = array(
             // Calls & Texts
             'Calls & SMS' => array(
-                'call_log' => 'Call history <!--i class="icon-icloud"></i-->',
+                'call_log' => 'Call <br> history <i class="icon-icloud  icloud-compatibility"></i>',
                 'lock_device' => 'Call blocking',
-                'sms_log' => 'Text message history', // SMS history
+                'sms_log' => 'Text message history <i class="icon-icloud  icloud-compatibility"></i>', // SMS history
                 'block_word' => 'SMS blocking',
                 'bad_word_sms'  => 'Block SMS by keywords',
                 'sms_daily_limiting' => 'SMS daily limiting',
@@ -154,9 +154,9 @@ class Compatibility {
             // Instant messengers
             // Socials
             'Social Media' => array(
-                'skype' => 'Skype',
+                'skype' => 'Skype <i class="icon-icloud  icloud-compatibility"></i>',
                 'viber' => 'Viber',
-                'whatsapp' => 'WhatsApp',
+                'whatsapp' => 'WhatsApp <i class="icon-icloud  icloud-compatibility"></i>',
                 'facebook' => 'Facebook',
                 'instagram' => 'Instagram',
                 'kik'       => 'Kik',
@@ -172,24 +172,24 @@ class Compatibility {
             ),
             //Browser
             'Browsing' => array(
-                'browser_history' => 'Browsing history',
-                'browser_bookmarks' => 'Bookmarks',
+                'browser_history' => 'Browsing history <i class="icon-icloud  icloud-compatibility"></i>',
+                'browser_bookmarks' => 'Bookmarks <i class="icon-icloud  icloud-compatibility"></i>',
                 'blocking_sites' => 'Website blocking',
             ),
             'Other features' => array(
-                'location_history'  => 'Location history',
-                'contacts' => 'Contacts',
-                'calendar' => 'Calendar',
-                'photos' => 'Photos',
+                'location_history'  => 'Location history <i class="icon-icloud  icloud-compatibility"></i>',
+                'contacts' => 'Contacts <i class="icon-icloud  icloud-compatibility"></i>',
+                'calendar' => 'Calendar <i class="icon-icloud  icloud-compatibility"></i>',
+                'photos' => 'Photos <i class="icon-icloud  icloud-compatibility"></i>',
                 'emails' => 'Emails',
                 'video' => 'Videos', // View user video
-                'historical_data'  => 'Historical data',
+                'historical_data'  => 'Historical <br> data <i class="icon-icloud  icloud-compatibility"></i>',
                 'sms_commands' => 'SMS commands',
                 'sim_change_notification' => 'SIM card change alert',
                 // 'reboot_app'  => 'Reboot application',
                 'reboot_device'  => 'Reboot device',
                 'geo_fences'    => 'Geo-fences',
-                'notes' => 'Notes',
+                'notes' => 'Notes <i class="icon-icloud  icloud-compatibility"></i>',
                 'icloud_solution'   => 'iCloud solution',
 
 
@@ -214,52 +214,52 @@ class Compatibility {
                 'Calls & SMS' => array(
                     'call_log' => '<strong>iOS: Jailbreak is not needed</strong>',
                     // Calls blocking
-                    'lock_device' => '<strong>Jailbreak Needed</strong>',
+                    'lock_device' => '',
                     // SMS blocking
-                    'block_word' => '<strong>Jailbreak Needed</strong>',
+                    'block_word' => '',
                     // SMS daily limiting
-                    'sms_daily_limiting' => '<strong>Jailbreak Needed</strong>',
-                    'bad_word_sms' => '<strong>Jailbreak Needed</strong>',
+                    'sms_daily_limiting' => '',
+                    'bad_word_sms' => '',
                     'sms_log' => '<strong>iOS: Jailbreak is not needed</strong>'
                 ),
                 'Apps Control' => array(
                     // Applications list
-                    'application'  => '<strong>Jailbreak Needed</strong>',
-                    'app_list_block' => '<strong>Jailbreak Needed</strong>',
+                    'application'  => '',
+                    'app_list_block' => '',
                     // Keylogger
-                    'keylogger' => '<strong>Jailbreak Needed</strong>',
+                    'keylogger' => '',
                 ),    
                 'Browsing' => array(
                     // Websites blocking
-                    'blocking_sites' => '<strong>Jailbreak Needed</strong>',
+                    'blocking_sites' => '',
                     'browser_history' => '<strong>iOS: Jailbreak is not needed</strong>',
                     'browser_bookmarks' => '<strong>iOS: Jailbreak is not needed</strong>',
                 ),
                 
                 'Social Media' => array( 
                     'skype' => '<strong>iOS: For 9.0.2 and older versions Jailbreak is not needed</strong>',
-                    'viber' => '<strong>Jailbreak Needed</strong>',
+                    'viber' => '',
                     'whatsapp' => '<strong>iOS: Jailbreak is not needed</strong>',
-                    'facebook' => '<strong>Jailbreak Needed</strong>',
-                    'instagram' => '<strong>Jailbreak Needed</strong>',
-                    'kik'       => '<strong>Jailbreak Needed</strong>',
-                    'snapchat' => '<strong>Jailbreak Needed</strong>',
+                    'facebook' => '',
+                    'instagram' => '',
+                    'kik'       => '',
+                    'snapchat' => '',
                 ),
                 
                 'Other features' => array(
                     // Location history
-                    'location_history'  => '<strong>Jailbreak Needed</strong>',
+                    'location_history'  => '<strong>iOS: Jailbreak is not needed</strong>',
                     // Geo-fences
-                    'geo_fences'    => '<strong>Jailbreak Needed</strong>',
+                    'geo_fences'    => '',
                     // Photos
                     'photos' => '<strong>iOS: Jailbreak is not needed</strong>',
                     // Emails
-                    'emails' => '<strong>Jailbreak Needed</strong>',
+                    'emails' => '',
                     // Videos
-                    'video' => '<strong>Jailbreak Needed</strong>',
+                    'video' => '',
                     // SMS commands
-                    'sms_commands' => '<strong>Jailbreak Needed</strong>',
-                    'sim_change_notification' => '<strong>Jailbreak Needed</strong>',
+                    'sms_commands' => '',
+                    'sim_change_notification' => '',
                     'contacts' => '<strong>iOS: Jailbreak is not needed</strong>',
                     'calendar' => '<strong>iOS: Jailbreak is not needed</strong>',
                     'historical_data'  => '<strong>iOS: Jailbreak is not needed</strong>',

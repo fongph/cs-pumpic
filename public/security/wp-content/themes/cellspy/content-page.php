@@ -6,14 +6,14 @@
     </div>
     <div class="pull-left">
         <?php the_post_thumbnail(); ?>
-    </div>   
+    </div>
     <p>
-    <?php 
+    <?php
         if(get_post_content()) {
-            $content = strip_tags(get_post_content()); 
+            $content = strip_tags(get_post_content());
             echo substr((string)$content, 0, 309).' …';
-        }    
-        ?> 
+        }
+        ?>
     </p>
     <?php /*<a href="<?php the_permalink(); ?>">Read more</a>*/ ?>
 </article> <!-- .artice_bordered 2 -->

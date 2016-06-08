@@ -1,1 +1,1 @@
-<?php // Simple Wp Sitemap
+<?php // silence is golden

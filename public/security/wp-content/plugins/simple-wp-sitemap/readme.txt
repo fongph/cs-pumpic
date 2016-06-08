@@ -1,18 +1,15 @@
 === Simple Wp Sitemap ===
 Contributors: Webbjocke
-Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=UH6ANJA7M8DNS
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl.html
-Tags: sitemap, google sitemap, xml, simple sitemap, html, xml sitemap, html sitemap, seo, seo sitemap, sitemaps, site map, sitemap html, sitemap xml, sitemap plugin, wordpress sitemap
+Tags: sitemap, google sitemap, xml, simple sitemap, html, xml sitemap, html sitemap, seo, seo sitemap
 Requires at least: 4.0
-Tested up to: 4.6
-Stable tag: 1.1.4
+Tested up to: 4.2.1
+Stable tag: 1.0.8
 
 An easy, fast and secure plugin that adds both an xml and an html sitemap to your site, which updates and maintains themselves so you dont have to!
 
 == Description ==
-
-= A Wordpress sitemap plugin =
 
 Simple Wp Sitemap is a plugin that generates both an xml and an html sitemap to your site dynamically. These two are updated automatically everytime someone's visiting them, and makes sure they're easily indexed. What this means you only have to install and activate the plugin once, and it will just work for you without you ever having to worry.
 
@@ -20,25 +17,19 @@ Reason the sitemaps are generated dynamically instead of being created as actual
 
 Also supports the option to add pages to the sitemaps that aren't part of your original wordpress site. For instance if you create a little html file and upload to your server and want it to be included in them, it's easily done. You can also block pages that you don't want to be included, and much more.
 
-= What it does =
-
-So what the plugin actually does is making one sitemap.xml and one sitemap.html available directly on your site. These aren't actually real files that can be found in a folder or anything, instead they get generated when visited and can be found at like yourpage.com/sitemap.xml and yourpage.com/sitemap.html.
+So what the plugin actually does is making one sitemap.xml and one sitemap.html available directly on your site. These aren't actually real files that can be found in a folder or something, instead they get generated when visited and can be found at like yourpage.com/sitemap.xml and yourpage.com/sitemap.html.
 
 And yes, of course the sitemaps are mobile friendly. They also work well with caching plugins :)
-
-= Extra info =
-
-The sitemaps are multisite and multilanguage compatible. Every site gets their own sitemap, and all multilanguage urls are included in the sitemaps!
 
 == Installation ==
 
 1. 1. Go to the plugins page in your wordpress admin area and hit "add new".
-   2. Either search for "simple wp sitemap" and click install, or hit "upload plugin" and upload the zip file.
+   2. Either search for "simple-wp-sitemap" and click install, or hit "upload plugin" and upload the zip file.
    3. Another way is by just uploading the "simple-wp-sitemap" folder via ftp to the /wp-content/plugins/ directory.
 
-2. Activate the plugin and that's it, done. Your xml and html sitemaps will be generated when visited, and can be found at like yourpage.com/sitemap.xml and yourpage.com/sitemap.html.
+2. Activate the plugin and thats it, done. The two sitemaps will be generated when visited, and can be found at like yourpage.com/sitemap.xml and yourpage.com/sitemap.html.
 
-3. Customize the plugin and change titles or add/block pages by hitting the "Simple Wp Sitemap" option in the settings menu.
+3. Customize the plugin and add/block pages by hitting the "Simple Wp Sitemap" option in the settings menu.
 
 == Frequently Asked Questions ==
 
@@ -81,40 +72,6 @@ When you deactivate the plugin they get removed automatically.
 3. Xml sitemap
 
 == Changelog ==
-
-= 1.1.4 (May 16, 2016) =
-* Bugfix for old php versions
-
-= 1.1.3 (May 15, 2016) =
-* Added option to change titles in html sitemap
-* Fixed bug when upgrading to premium
-* Fixed bug that made admin submit button invisible
-* Moved admin settings page to it's own file
-* Made all previous private functions in "builder" public
-
-= 1.1.2 (Jan 20, 2016) =
-* Premium version of the plugin has been developed
-* Integrated option to upgrade
-* Couple changes in php
-* Made html sitemap header a link back to homepage
-* Removed title tags from links
-* Added license document
-
-= 1.1.1 (Nov 11, 2015) =
-* Messed up the update, new try
-
-= 1.1.0 (Nov 11, 2015) =
-* Changed date format in html sitemap to (Y-m-d H:i:s)
-* Added lang attribute and to be automatically set
-* Added some tags and updated the plugin page
-* Removed unnecessary fixes for old versions of the plugin
-* Changes done "under the hood" in php for performance etc
-* Also tested with wordpress 4.4
-
-= 1.0.9 (Jun 23, 2015) =
-* Added donation link
-* Made the sitemaps compatible down to ie7
-* Minor changes in php, css and js
 
 = 1.0.8 (April 29, 2015) =
 * Now generates dynamic sitemaps instead of static files

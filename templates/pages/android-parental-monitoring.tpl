@@ -39,9 +39,9 @@ title="Ultimate Android Parental Control App | Pumpic Monitoring Software"
             imgAlign = "right"
             imgVerticalAlign = "bottom"
             textAlign = "right"
-            title = "Monitoring Software for Android<br/>Oversee Your Kid’s Mobile Device"
+            title = "Android Parental Monitoring Software<br/>Oversee Your Kid’s Mobile Device"
 			titleSize = "25px"
-            description = "Track your kid’s Android mobile phone and tablet remotely.<br/>Set up reliable parental control app. Keep your eyes open!"
+            description = "Track your kid’s Android mobile phone and tablet remotely.<br/>Set up reliable parental monitoring app. Keep your eyes open!"
             promoBuyBlock = "no"
             listText = "control cell phone usage|follow online activity|track routes and location"
             planPackageBuy = "yes"
@@ -69,7 +69,7 @@ title="Ultimate Android Parental Control App | Pumpic Monitoring Software"
         blockBg='dark'}
 
         <p>Using Android monitoring software to protect kids is an urgent necessity of the contemporary society. On one hand, technological progress has opened new doors for the evolution of humanity; on the other one, it has resulted in many dangers in return. And children are exposed to these risks much more than others. That’s why if handing them smartphones or tablets, you should know how to protect their mobile activities.</p> 
-	    <p>Parental control apps allow you to monitor kids' time spending, restrict misgiving communication, and limit device usage. Pumpic proved to be among the most reliable applications for child safety. With it, you will always know what your kids are texting, who calls them, which websites they visit, as well as any content they see, send, or receive. You will always know where your children go and be notified as soon as they enter any restricted areas or leave safety zones (home, school, etc.) without your permission. Android parental control by Pumpic will let you have no worries about your loved ones when you are not nearby.</p>
+	    <p>Parental control apps allow you to monitor kids' time spending, restrict misgiving communication, and limit device usage. Pumpic proved to be among the most reliable applications for child safety. With it, you will always know what your kids are texting, who calls them, which websites they visit, as well as any content they see, send, or receive. You will always know where your children go and be notified as soon as they enter any restricted areas or leave safety zones (home, school, etc.) without your permission. Android parental monitoring by Pumpic will let you have no worries about your loved ones when you are not nearby.</p>
 		<p>The statistics below briefly shows how many children use smartphones and tablets as well as how many of them come across dangers connected with such device usage.</p>
 		
         <!-- BLOCK STATISTICK -->
@@ -204,7 +204,7 @@ title="Ultimate Android Parental Control App | Pumpic Monitoring Software"
                                         
 {include file='../includes/content/features-table.tpl'
         title = "Over 24 Monitoring Features to Protect Your Kids"
-        description = "Mobile technologies have introduced new opportunities to our children. It is rather hard to imagine the entire range of functions a single smartphone can fulfill. That’s why when it comes to features that an Android parental control app should include, it is crucial to consider as many as possible. The list below reflects Pumpic monitoring abilities and also which particular mobile phone functions you will be able to cover by using the app. They will help you follow each and every aspect of your kids’ lives and all of their activities remotely."
+        description = "Mobile technologies have introduced new opportunities to our children. It is rather hard to imagine the entire range of functions a single smartphone can fulfill. That’s why when it comes to features that an Android monitoring software should include, it is crucial to consider as many as possible. The list below reflects Pumpic monitoring abilities and also which particular mobile phone functions you will be able to cover by using the app. They will help you follow each and every aspect of your kids’ lives and all of their activities remotely."
         blockBg="light"
 }                                        
                                         
@@ -216,7 +216,7 @@ title="Ultimate Android Parental Control App | Pumpic Monitoring Software"
                     <div id="table-container" class="table-col-3 table-md-col-3 table-sm-col-3">
                         <article class="text-center">Mobile technologies introduced new opportunities to our children. It is rather hard at 
                             once to imagine the entire range of functions a single smartphone can fulfil. That’s why when it comes to features 
-                            that an Android parental control app should include, it is very important to consider all of them. Listed below 
+                            that an Android parental monitoring app should include, it is very important to consider all of them. Listed below 
                             reflects Pumpic monitoring abilities, and which particular mobile phone options you will cover by using it. 
                             The app will help you follow each and every aspect of your kids’ lives as well as all spheres of activity remotely.</article>
                         <section>
@@ -284,7 +284,7 @@ title="Ultimate Android Parental Control App | Pumpic Monitoring Software"
                             <img src="{$img}/testimonials/t_new_3.png" alt="" class="testimonial-photo">
                             <div class="testimonial-text">
                                     <h4>Sandy and Patrick K. (Sacramento, CA)</h4>
-                                    <p>“My husband and I presented our son a brand new Android tablet for his birthday. It was an expensive present, but Mike did a great job at school and really deserved to have it. It happened that he lost it a few days after. My husband had predicted such situation, so we installed Pumpic parental control software for Android right after the purchase. We tracked the cell phone and found it quickly. Very useful app!”</p>
+                                    <p>“My husband and I presented our son a brand new Android tablet for his birthday. It was an expensive present, but Mike did a great job at school and really deserved to have it. It happened that he lost it a few days after. My husband had predicted such situation, so we installed Pumpic parental monitoring for Android right after the purchase. We tracked the cell phone and found it quickly. Very useful app!”</p>
                             </div>
                     </div>
                             

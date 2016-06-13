@@ -8,9 +8,6 @@
             <a href="/iphone-parental-monitoring.html">iPhone Parental Control</a>
         </li>
         <li>
-            <a href="/icloud-iphone-without-jailbreak-monitoring.html">iPhone Monitoring without Jailbreak</a>
-        </li>
-        <li>
             <a href="/iphone-tracking-software.html">iPhone Tracking Software</a>
         </li>
         <li>

@@ -270,7 +270,7 @@
                                                         {*<li><div><b>Notes</b><i class="coming-soon-icons cs-ico-notes"></i></div><span>View notes kept on the target device.</span></li>*}
                                         {*<li><div><b>Kik</b><i class="coming-soon-icons cs-ico-kik"></i></div><span>Monitor online text communication.</span></li>*}
                                         {*<li><b>Skype</b><i class="icons ico-skype"></i> <span>Follow personal, group messages and calls.</span></li> *}
-                                       {* <li><b>Notes</b> <i class="icons ico-notes"></i> <span> View notes kept on the target device.</span></li> *}d
+                                       {* <li><b>Notes</b> <i class="icons ico-notes"></i> <span> View notes kept on the target device.</span></li> *}
                                        {* <li><b>Emails</b> <i class="icons ico-emails"></i> <span>Monitor sent and received emails.</span></li>*}
                                         {*   </ul> *}
                                                 {*<h3 class="text-warning font-weight400">And Even More Features!</h3>*}

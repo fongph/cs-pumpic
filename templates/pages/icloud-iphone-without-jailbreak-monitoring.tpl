@@ -234,8 +234,8 @@
                                                                 <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Contacts <span>View existing contacts.</span></li>
                                                                 <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Photos <span>View camera shots and downloaded photos.</span></li>
                                                                 <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Skype <span>Monitor personal, group messages, and calls.<br/> (up to iOS 8.4.1)</span></li>
-                                                                
                                                                 <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Location <span>Track the exact location on the map.</span></li>
+                                                                <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Browser <span>View visited websites.</span></li>
                                                             </ul>
                                                         </div>
                                                     </div>
@@ -246,10 +246,9 @@
                                                     <div class="pricep">
                                                         <div class="basic_fe reset-list media-sm-block">
                                                             <ul class="list_price-no-link list_price-no-link-inline">
-
-                                                                <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Browser <span>View visited websites.</span></li>
                                                                 <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Bookmarks <span>View bookmarked websites. <br/> (up to iOS 8.4.1) </span></li>
                                                                 <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Calendar  <span>Follow scheduled events.</span></li>
+                                                                <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> KiK <span>Monitor online text communication. <br/> (from 9.0 and up)</span></li>
                                                                 <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> WhatsApp  <span>Follow personal messages and group chats.</span></li>
                                                                 <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Notes  <span>View notes kept on the target device.<br/> (up to iOS 8.4.1)</span></li>
                                                                 <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Videos  <span>View all videos stored on a device.<br/> (from 9.0 and up)</span></li>
@@ -260,24 +259,24 @@
                                                 <p class="inline-block text-center none-uppercase"><i class='fz15 inline-block'>If there is not enough functionality of Pumpic iCloud solution, you can try full featured <a class='a-default' href="http://{$domain}/iphone-with-jailbreak-monitoring.html">Pumpic jailbreak solution</a>.</i></p>
                                             </th>
                                         </tr>
-                                        <tr>
-                                            <th>
-                                                <div class="coming_soon_block">
-                                                <h2 class="text-warning font-weight400">Coming soon:</h2>
-                                                    <ul>
-                                                        {*<li><b>Skype</b><i class="coming-soon-icons cs-ico-skype"></i><span>Follow personal, group messages and calls.</span></li>
-                                                        <li><b>WhatsApp</b><i class="coming-soon-icons cs-ico-whatsapp"></i><span>Follow personal messages and group chats.</span></li>*}
+                                        {* <tr> *}
+                                            {* <th> *}
+                                                {* <div class="coming_soon_block"> *}
+                                                {* <h2 class="text-warning font-weight400">Coming soon:</h2> *}
+                                                    {* <ul> *}
+                                                         {*<li><b>Skype</b><i class="coming-soon-icons cs-ico-skype"></i><span>Follow personal, group messages and calls.</span></li> *}
+                                                         {*<li><b>WhatsApp</b><i class="coming-soon-icons cs-ico-whatsapp"></i><span>Follow personal messages and group chats.</span></li>*}
                                                         {*<li><div><b>Photos</b><i class="coming-soon-icons cs-ico-photos"></i></div><span>View camera shots and downloaded photos.</span></li>*}
                                                         {*<li><div><b>Notes</b><i class="coming-soon-icons cs-ico-notes"></i></div><span>View notes kept on the target device.</span></li>*}
-                                                        <li><div><b>Kik</b><i class="coming-soon-icons cs-ico-kik"></i></div><span>Monitor online text communication.</span></li>
-                                                        {*<li><b>Skype</b><i class="icons ico-skype"></i> <span>Follow personal, group messages and calls.</span></li>
-                                                        <li><b>Notes</b> <i class="icons ico-notes"></i> <span> View notes kept on the target device.</span></li>
-                                                        <li><b>Emails</b> <i class="icons ico-emails"></i> <span>Monitor sent and received emails.</span></li>*}
-                                                    </ul>
+                                        {*<li><div><b>Kik</b><i class="coming-soon-icons cs-ico-kik"></i></div><span>Monitor online text communication.</span></li>*}
+                                        {*<li><b>Skype</b><i class="icons ico-skype"></i> <span>Follow personal, group messages and calls.</span></li> *}
+                                       {* <li><b>Notes</b> <i class="icons ico-notes"></i> <span> View notes kept on the target device.</span></li> *}d
+                                       {* <li><b>Emails</b> <i class="icons ico-emails"></i> <span>Monitor sent and received emails.</span></li>*}
+                                        {*   </ul> *}
                                                 {*<h3 class="text-warning font-weight400">And Even More Features!</h3>*}
-                                                </div>
-                                            </th>
-                                        </tr>
+                                            {*  </div>*}
+                                            {*   </th>*}
+                                        {*   </tr> *}
                                         <tr>
                                             <th >
                                             <div class="table_title">

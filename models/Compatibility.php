@@ -159,7 +159,7 @@ class Compatibility {
                 'whatsapp' => 'WhatsApp <i class="icon-icloud  icloud-compatibility"></i>',
                 'facebook' => 'Facebook',
                 'instagram' => 'Instagram',
-                'kik'       => 'Kik',
+                'kik'       => 'Kik <i class="icon-icloud  icloud-compatibility"></i>',
                 'snapchat' => 'Snapchat',
 //                    'bb_messenger' => 'BlackBerry Messenger',
 //                    'pin_message' => 'PIN Message',
@@ -242,7 +242,7 @@ class Compatibility {
                     'whatsapp' => '<strong>iOS: Jailbreak is not needed</strong>',
                     'facebook' => '',
                     'instagram' => '',
-                    'kik'       => '',
+                    'kik'       => '<strong>From 9.0 and up Jailbreak is not needed</strong>',
                     'snapchat' => '',
                 ),
                 
@@ -323,8 +323,8 @@ class Compatibility {
                         $_add_info = '<br />';
                         if($_os and isset($addInfo[ $_os ][$key][$id])) {
                             $_add_info .= $addInfo[ $_os ][$key][$id];
-                        } 
-                        
+                        }
+
                         $group[$name] = $data[$id . '_comment'].$_add_info;
                     } else {
                         $group[$name] = false;

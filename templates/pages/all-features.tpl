@@ -1384,14 +1384,14 @@
                                             <li>Call monitoring</li>
                                             <li>Contact list</li>
                                             <li>Browsing history</li>
-                                            <li>Bookmarks list</li>
+                                            <li>Bookmarks list (up to iOS 8.4.1)</li>
                                             <li>Calendar events</li>
                                             <li>Location</li>
                                             <li>Photos</li>
-                                            <li>Notes</li>
-                                            <li>Kik</li>
+                                            <li>Notes (up to iOS 8.4.1)</li>
+                                            <li>Kik (from 9.0 and up)</li>
                                             <li>WhatsApp</li>
-                                            <li>Skype</li>
+                                            <li>Skype (up to iOS 8.4.1)</li>
                                         </ul>
                                         <div><a class="btn-orange" target="_blank"  href="http://demo.{$domain}/setDevice/126?redirect_url=cp/call">View Demo</a></div>
                                         <label class="color-orange">(no registration required)</label>

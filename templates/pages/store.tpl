@@ -345,7 +345,7 @@ description="Pumpic offers high-quality Cell Phone Tracking Software for a good 
                                                         <li data-toggle="tooltip" data-placement="top" title="Set specific zones and receive alerts once the target device leaves them or enters."><i class="icon-ok"></i> Geo-fences</li>
                                                         <li data-toggle="tooltip" data-placement="top" title="View contact list including names, addresses, numbers and emails."><i class="icon-ok"></i> Contacts <img src="/images/cloud-grey.png"></li>
                                                         <li data-toggle="tooltip" data-placement="top" title="Monitor scheduled dates and events."><i class="icon-ok"></i> Calendar <img src="/images/cloud-grey.png"></li>
-                                                        <li data-toggle="tooltip" data-placement="top" title="Track Notes on the target iOS device.<div class='br'><strong>iCloud monitoring up to iOS 8.4.1</strong>"><i class="icon-ok"></i> Notes <img src="/images/cloud-grey.png"></li>
+                                                        <li data-toggle="tooltip" data-placement="top" title="Track Notes on the target iOS device.<div class='br'><strong>iCloud monitoring up to iOS 8.4.1</strong></div>"><i class="icon-ok"></i> Notes <img src="/images/cloud-grey.png"></li>
                                                         <li data-toggle="tooltip" data-placement="top" title="View all visited websites."><i class="icon-ok"></i> Browsing history <img src="/images/cloud-grey.png"></li>
                                                         <li data-toggle="tooltip" data-placement="top" title="Block specific websites on a target device."><i class="icon-ok"></i> Websites blocking</li>
 
@@ -360,7 +360,8 @@ description="Pumpic offers high-quality Cell Phone Tracking Software for a good 
                                                         <li data-toggle="tooltip" data-placement="top" title="Track chats and calls on Skype.<div class='br'><strong>iCloud monitoring up to iOS 9.0.2</strong><div class='br'><strong>Android: Root Required</strong></div>"><i class="icon-ok"></i> Skype <img src="/images/cloud-grey.png"></li>
                                                         <li data-toggle="tooltip" data-placement="top" title="Track chats and calls on WhatsApp.<div class='br'><strong>Android: Root Required</strong></div>"><i class="icon-ok"></i> WhatsApp <img src="/images/cloud-grey.png"></li>
                                                         <li data-toggle="tooltip" data-placement="top" title="Track chats and calls on Viber. <div class='br'><strong>Android: Root Required</strong></div>"><i class="icon-ok"></i> Viber</li>
-                                                        <li data-toggle="tooltip" data-placement="top" title="Track conversations via Kik.<div class='br'><strong>Android: Root Required</strong></div>"><i class="icon-ok"></i> Kik</li>
+
+                                                        <li data-toggle="tooltip" data-placement="top" title="Track conversations via Kik.<div class='br'><strong>Android: Root Required</strong></div><div class='br'><strong>iCloud monitoring starting from iOS 9.0</strong></div>"> <i class="icon-ok"></i> Kik <img src="/images/cloud-grey.png"></li>
 
 
                                                         <li data-toggle="tooltip" data-placement="top" title="Monitor posted images and comments on Instagram. <div class='br'><strong>Android: Root Required</strong></div>"><i class="icon-ok"></i> Instagram</li>

@@ -1,3 +1,33 @@
+<style>
+    .box_category > ul > li > div{
+        padding-left: 0 !important;
+    }
+
+    .share-link{
+        color:#16a89e !important;
+        font-size: 13.5px !important;
+        float: left;
+        padding-top: 10px !important;
+        margin-bottom: 10px !important;
+    }
+
+    .share_list-infographic{
+        float: right;
+    }
+
+
+    .text-commandments{
+        padding: 0 100px;
+    }
+    @media (max-width: 992px){
+        .text-commandments{
+            padding: 0;
+        }
+        .share_list-infographic{
+            float: none;
+        }
+    }
+</style>
 {include file='../includes/main/main-header.tpl'
     robots="yes" 
     title="Entrepreneurial Skills to Teach Your Child | Pumpiс"
@@ -42,10 +72,14 @@
         {Content 
             title="8 Entrepreneurial Skills You Should Teach Your Kids"
            blockBg='dark'}
-                 {* свой HTML код *}               
+                 {* свой HTML код *}
+
+
+        <div class="text-commandments">
                 <p class="text-justify">Entrepreneurial skills are the same talent as painting, dancing, sport makings etc. Thus, you can notice them in your kids at early stages and develop through their growing up. Below you will find some leadership activities for kids. They will help you teach your children creativity, self-confidence, positive thinking, and motivation, so that they could form the next generation of geniuses and leaders.</p>
                 <p class="text-justify">But before getting down to all these things to teach your child, try to realize that each and every kid can be taught anything. Thus, if a child can’t learn the way that you teach, you should teach the way that a child can learn.</p>
-                
+
+            </div>
                 {*<ul class="list_category" save-state>
                     <li>
                         <a data-toggled="off" href="#infographic">View Infographic</a>
@@ -66,14 +100,22 @@
                 <ul class="no-left-padding">
                     <li style="display: list-item;">
                         <div id="infographic" class="text-center">
-                            <ul class="share_list">
-                                <li><a class="share-facebook" href="#" data-location="http://www.facebook.com/sharer/sharer.php?u="></a></li>
-                                <li><a class="share-google" href="#" data-location="https://plus.google.com/share?url="></a></li>
-                                <li><a class="share-digg" href="#" data-location="http://digg.com/submit?url="></a></li>
-                                <li><a class="share-twitter" href="#" data-location="https://twitter.com/share?url="></a></li>
-                                <li><a class="share-reddit" href="#" data-location="//www.reddit.com/submit?url="></a></li>
-                                <li><a class="share-pinterest" href="#" data-location="http://pinterest.com/pin/create/link/?url=" data-media="http://{$domain}/images/infographic/8-entrepreneurial-skills-you-should-teach-your-kids.png"></a></li>
-                            </ul>
+
+                            <div class="col-md-8 col-md-offset-2">
+                                <ul class="share_list share_list-infographic">
+                                    <li><a class="share-facebook" href="#" data-location="http://www.facebook.com/sharer/sharer.php?u="></a></li>
+                                    <li><a class="share-google" href="#" data-location="https://plus.google.com/share?url="></a></li>
+                                    <li><a class="share-digg" href="#" data-location="http://digg.com/submit?url="></a></li>
+                                    <li><a class="share-twitter" href="#" data-location="https://twitter.com/share?url="></a></li>
+                                    <li><a class="share-reddit" href="#" data-location="//www.reddit.com/submit?url="></a></li>
+                                    <li><a class="share-pinterest" href="#" data-location="http://pinterest.com/pin/create/link/?url=" data-media="http://pumpic.com/images/socials/social-icon.jpg"></a></li>
+                                </ul>
+
+
+                                <a href="/infographics/" class="share-link"><img src="/images/icon-left.png">  Back to Pumpic Mobile Infographics</a>
+                            </div>
+
+                            <div class="clearfix"></div>
                             <img src='http://{$domain}/images/infographic/8-entrepreneurial-skills-you-should-teach-your-kids.png'
                                  width='720'
                                  alt='8 Entrepreneurial Skills To Teach Your Child'

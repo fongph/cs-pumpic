@@ -80,6 +80,8 @@
 
                                             </section>
 
+
+                                            {if $getSetting._item.os  == "iOS"}
                                                 {if $getSetting._item.name  == "Apple iPhone 4"}
                                                     <section style="padding-top: 7px">
                                                         <span>OS: <strong>{if $getSetting._item.os  == "iOS"}iOS iCloud {else}{$getSetting._item.os}{/if} </strong></span>
@@ -100,6 +102,7 @@
                                                         <span>Versions:<strong> {$ver_icloud_bot} - {$ver_icloud_up}</strong></span>
                                                     </section>
                                                 {/if}
+                                            {/if}
 
                                         </div>
                                     </div>

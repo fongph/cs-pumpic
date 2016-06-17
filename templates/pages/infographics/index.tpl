@@ -67,13 +67,21 @@ description="Check out useful infographics on child online security that Pumpic 
 
 
 
-    <div class="col-lg-4 col-md-4 test">
+    <div class="col-lg-4 col-md-4">
     <ul class="infographics__block effect">
         <li><p class="zero">See how to turn your child’s smartphone into a useful tool for study, not a means of wasting time. 20 learning apps and 10 useful things to learn via a cell phone.</p></li>
         <li><a href="/10-things-your-kids-can-learn-online.html"> <img class="top" src="/images/infographics/3.png" title="10 Things Your Kids Can Learn Online" alt="Infographic with useful references to develop 10 essential skills in your little ones."/> </a></li>
     </ul>
         <div class="infographics__desc"><a href="/10-things-your-kids-can-learn-online.html">10 Things Your Kids Can Learn Online</a></div>
 </div>
+
+    <div class="col-lg-4 col-md-4">
+        <ul class="infographics__block effect">
+            <li><p class="zero">Uncover 10 fundamental rules for kids going online. They will help your young ones learn to look after themselves when using the Web and avert any risks.</p></li>
+            <li><a href="/internet-safety-rules-for-kids.html"> <img class="top" src="/images/infographics/4.png" title="10 Internet commandments for kids going online" alt="10 Internet commandments for kids going online"/> </a></li>
+        </ul>
+        <div class="infographics__desc"><a href="/internet-safety-rules-for-kids.html">10 Internet commandments for kids going online</a></div>
+    </div>
 </div>
      {literal}
          <script>

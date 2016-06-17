@@ -1,3 +1,33 @@
+<style>
+    .box_category > ul > li > div{
+        padding-left: 0 !important;
+    }
+
+    .share-link{
+        color:#16a89e !important;
+        font-size: 13.5px !important;
+        float: left;
+        padding-top: 10px !important;
+        margin-bottom: 10px !important;
+    }
+
+    .share_list-infographic{
+        float: right;
+    }
+
+
+    .text-commandments{
+        padding: 0 100px;
+    }
+    @media (max-width: 992px){
+        .text-commandments{
+            padding: 0;
+        }
+        .share_list-infographic{
+            float: none;
+        }
+    }
+</style>
 {include file='../includes/main/main-header.tpl'
     robots="yes" 
     title="Mobile Phone Security Measures"
@@ -55,12 +85,15 @@
         {Content 
             title="How to Protect Children on Smartphones and Tablets"
            blockBg='dark'}
-                 {* свой HTML код *}               
+                 {* свой HTML код *}
+
+        <div class="text-commandments">
                 <p class="text-justify">Nowadays children are inseparable from their smartphones and tablets. These gadgets may be useful, and at the
                     same time bear hidden dangers like attacks of online predators, threats of cyberbullies, 18+ content, and identity 
                     theft. However, not many adults know of security measures it is necessary to consider here. Pumpic is designed 
                     to take care of children. Our team did a great job and gathered essential information on mobile phone safety 
                     practice. Have a look at infographics below and find out how to protect your kids on smartphones and tablets.</p>
+            </div>
 
                 {* Template: BLOCK IMAGE
                     blockAlign (text): позиция блока с изображением. (left|center|right) *default: center
@@ -97,14 +130,22 @@
                 <ul class="no-left-padding">
                     <li style="display: list-item;">
                         <div id="infographic" class="text-center">
-                            <ul class="share_list">
-                                <li><a class="share-facebook" href="#" data-location="http://www.facebook.com/sharer/sharer.php?u="></a></li>
-                                <li><a class="share-google" href="#" data-location="https://plus.google.com/share?url="></a></li>
-                                <li><a class="share-digg" href="#" data-location="http://digg.com/submit?url="></a></li>
-                                <li><a class="share-twitter" href="#" data-location="https://twitter.com/share?url="></a></li>
-                                <li><a class="share-reddit" href="#" data-location="//www.reddit.com/submit?url="></a></li>
-                                <li><a class="share-pinterest" href="#" data-location="http://pinterest.com/pin/create/link/?url=" data-media="http://pumpic.com/images/socials/social-icon.jpg"></a></li>
-                            </ul>
+
+                            <div class="col-md-8 col-md-offset-2">
+                                <ul class="share_list share_list-infographic">
+                                    <li><a class="share-facebook" href="#" data-location="http://www.facebook.com/sharer/sharer.php?u="></a></li>
+                                    <li><a class="share-google" href="#" data-location="https://plus.google.com/share?url="></a></li>
+                                    <li><a class="share-digg" href="#" data-location="http://digg.com/submit?url="></a></li>
+                                    <li><a class="share-twitter" href="#" data-location="https://twitter.com/share?url="></a></li>
+                                    <li><a class="share-reddit" href="#" data-location="//www.reddit.com/submit?url="></a></li>
+                                    <li><a class="share-pinterest" href="#" data-location="http://pinterest.com/pin/create/link/?url=" data-media="http://pumpic.com/images/socials/social-icon.jpg"></a></li>
+                                </ul>
+
+
+                                <a href="/infographics/" class="share-link"><img src="/images/icon-left.png">  Back to Pumpic Mobile Infographics</a>
+                            </div>
+
+                            <div class="clearfix"></div>
                             <img src='http://pumpic.com/images/infographic/v2.png'
                                  width='540'
                                  alt='Mobile Phone Security Measures'

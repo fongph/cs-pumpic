@@ -78,7 +78,7 @@ description="Check out useful infographics on child online security that Pumpic 
     <div class="col-lg-4 col-md-4">
         <ul class="infographics__block effect">
             <li><p class="zero">Uncover 10 fundamental rules for kids going online. They will help your young ones learn to look after themselves when using the Web and avert any risks.</p></li>
-            <li><a href="/internet-safety-rules-for-kids.html"> <img class="top" src="/images/infographics/4.png" title="10 Things Your Kids Can Learn Online" alt="10 Internet commandments for kids going online"/> </a></li>
+            <li><a href="/internet-safety-rules-for-kids.html"> <img class="top" src="/images/infographics/4.png" title="10 Internet commandments for kids going online" alt="10 Internet commandments for kids going online"/> </a></li>
         </ul>
         <div class="infographics__desc"><a href="/internet-safety-rules-for-kids.html">10 Internet commandments for kids going online</a></div>
     </div>

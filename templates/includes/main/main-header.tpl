@@ -17,6 +17,11 @@
 {assign '_test' 'false'}
 {if isset($test) && $test == 'true'} {assign '_test' 'true'} {/if}
 
+{if isset($amp)}
+    <link rel="amphtml" href="{$amp}">
+{/if}
+
+
 {if isset($metaTags)}
 <meta property='og:title' content='{if isset($ogTitle)}{$ogTitle}{else}Mobile Phone Security Measures{/if}'>
 <meta property='og:description' content='{if isset($ogDesc)}{$ogDesc}{else}How to protect children from online predators, cyberbullies, 18+ content, and identity theft. Pumpic gathered essential information on mobile phone safety practice. Learn more to keep kids safe.{/if}'>

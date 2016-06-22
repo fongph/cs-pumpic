@@ -135,7 +135,7 @@
         <!-- END -->
 
         <p>It's natural that you would like to cut that time by half at least and protect your kids’ lives. However, child safety is not only about the amount of time they spend using screen media, but also about what they do in their digital world.</p>
-		<p>Can I restrict time kids spend playing video games? Is their communication appropriate? And how do I block texts on Android or <a class="a-default" target="_blank" href="/best-internet-filter-for-android.html">filter content</a> if they happen to be explicit? In addition to showing you the exact location of your kid, the Pumpic mobile monitoring app  answers your numerous questions and allows you to control the target device usage in various possible ways.</p>
+		<p>Can I restrict time kids spend playing video games? Is their communication appropriate? And how do I block texts on Android or <a class="a-default" href="/best-internet-filter-for-android.html">filter content</a> if they happen to be explicit? In addition to showing you the exact location of your kid, the Pumpic mobile monitoring app  answers your numerous questions and allows you to control the target device usage in various possible ways.</p>
 		
 {EndContent}
 		
@@ -150,7 +150,7 @@
             <div class="pt30 pb20">
                 <p>It's time to face it, 9 hours in front of screen media definitely beats those few hours you have face to face with your kid daily. In the modern world, where 67% of teens own a smartphone, 53% of tweens possess their own tablet, there is no way you can watch over you children without a mobile monitoring app.</p>
 				<p>Although most devices have some built-in functions to track location and limit phone usage, it's clearly not enough to shield our dear ones from cyberbullying, which is known to be a major reason of teenage suicides. The same goes for explicit web content, which can harm their psychological development.</p>
-				<p>Parents usually try to control web content on devices, but often overlook different ways of communication: Facebook Messenger, Snapchat, WhatsApp, Viber, Kik, Skype, and <a class="a-default" target="_blank" href="/sms-monitoring-software.html">text messaging (SMS, MMS)</a>. Skimming through messages might be a bit too late. Some of the messages should be never seen. Therefore, here what you can prevent once you learn how to block messages on an Android phone.</p>
+				<p>Parents usually try to control web content on devices, but often overlook different ways of communication: Facebook Messenger, Snapchat, WhatsApp, Viber, Kik, Skype, and <a class="a-default" href="/sms-monitoring-software.html">text messaging (SMS, MMS)</a>. Skimming through messages might be a bit too late. Some of the messages should be never seen. Therefore, here what you can prevent once you learn how to block messages on an Android phone.</p>
 				<ul class="list-images">
 				<li><img src="/images/landings/mark.png" alt="Check Mark" style="left: -30px;" />Cyberbullying. You take your son or daughter away from a bad company of bullies into a safe place called home. But then he or she becomes an easy target of cyberbullies through the phone and different messengers.</li>
 				<li><img src="/images/landings/mark.png" alt="Check Mark" style="left: -30px;" />Online predators. They search for vulnerable teenagers online, but can reach them through texts later on. And even if a child wants to put an end to such communication, he or she doesn’t know how and is ashamed to ask for help when it’s gone too far.</li>

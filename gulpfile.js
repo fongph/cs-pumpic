@@ -11,6 +11,7 @@ const gulp = require('gulp'),
       sourcemaps = require('gulp-sourcemaps'),
       concat = require('gulp-concat'),
       browserSync = require('browser-sync').create(),
+      uncss = require('gulp-uncss'),
       reload = browserSync.reload;
 
 
@@ -137,7 +138,13 @@ gulp.task('watch', function() {
     gulp.watch(path.dev.tpl).on('change', browserSync.reload)
 });
 
-
+gulp.task('uncss', function () {
+    return gulp.src('123.css')
+        .pipe(uncss({
+            html: ['http://pumpic.dev/amp/best-free-parental-control-apps-for-android.html']
+        }))
+        .pipe(gulp.dest('out'));
+});
 
 gulp.task('dev', ['browser-sync', 'watch']);
 

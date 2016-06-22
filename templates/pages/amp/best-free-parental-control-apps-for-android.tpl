@@ -47,8 +47,6 @@
 
 
 <div class="wrapper  block-child-location-tracking home-page">
-    <!-- TOP MENU -->
-
 
 
     <div class="header-layout">
@@ -127,7 +125,7 @@
                                     <div class="visual-text block-text-left">
                                         <h1 class="h1 title"> Best Free Android <br>Parental Control Apps </h1>
 
-                                        <p class="header-info-descriptions"  >
+                                        <p class="header-info-descriptions" >
                                             Check out the reviews of free parental control software for Android.<br>Keep an eye on your kids remotely. Secure family happiness.
                                         </p>
 

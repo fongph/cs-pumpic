@@ -157,7 +157,7 @@
         
         {include file='../includes/content/features-table.tpl'
         title = "Many Useful Monitoring Features"
-        description = "Pumpic lets you utilize remote mobile monitoring to the fullest. The app includes more than 24 parental control solutions that provide comprehensive protection comprising Internet monitoring and safety during daily activities on smartphone and tablets. Pumpic provides reliable security to all family on guard of your happiness."
+        description = "Pumpic lets you utilize remote mobile monitoring to the fullest. The app includes more than 24 parental control solutions that provide comprehensive protection comprising <a class="a-default" href="/internet-monitoring-software.html" target="blank">Internet monitoring</a> and safety during daily activities on smartphone and tablets. Pumpic provides reliable security to all family on guard of your happiness."
         blockBg="dark"
         } 
         

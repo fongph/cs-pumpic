@@ -135,7 +135,7 @@
         <!-- END -->
 
         <p>It's natural that you would like to cut that time by half at least and protect your kids’ lives. However, child safety is not only about the amount of time they spend using screen media, but also about what they do in their digital world.</p>
-		<p>Can I restrict time kids spend playing video games? Is their communication appropriate? And how do I block texts on Android if they happen to be vulgar? In addition to showing you the exact location of your kid, the Pumpic mobile monitoring app  answers your numerous questions and allows you to control the target device usage in various possible ways.</p>
+		<p>Can I restrict time kids spend playing video games? Is their communication appropriate? And how do I block texts on Android or <a class="a-default" target="_blank" href="/best-internet-filter-for-android.html">filter content</a> if they happen to be explicit? In addition to showing you the exact location of your kid, the Pumpic mobile monitoring app  answers your numerous questions and allows you to control the target device usage in various possible ways.</p>
 		
 {EndContent}
 		

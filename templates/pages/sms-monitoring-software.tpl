@@ -63,7 +63,7 @@
 	
 	<img class="app-icon-left" src="{$img}/landings/statistics-icon-sms.png" alt="Monitor Text Messages">
 	<p>A great number of parents today are worried about their kids’ online and texting habits. Another concern is whom they are texting with and on what topics. The latter is closely connected with the increased number of cyberbullying stories appearing across the world. Moreover, a dangerous sexting trend – when teens share nude and semi-nude pictures among peers – pops throughout the globe as well.</p>
-	<p>These two components make a great reason why all careful parents should revise their notion of kids’ privacy and switch to text message monitoring. Ensuring your beloved children are safe from a greater part of online dangers is priceless, and with the right technology it is also easy.</p>
+	<p>These two components make a great reason why all careful parents should revise their notion of kids’ privacy and switch to <a class="a-default" href="/cell-phone-text-tracker.html" target="blank">text message monitoring</a>. Ensuring your beloved children are safe from a greater part of online dangers is priceless, and with the right technology it is also easy.</p>
 	<p>In fact, text message monitoring has been of huge interest for the last couple of years, and it is natural. According to studies, kids from 8 to 18 years old spend about 7 hours a day being online. And it is natural that you as a parent are concerned about what your child is doing on his or her phone, online, and in the real world. Especially when their kids aren’t always forthcoming with what’s going on in their lives.</p>
         
         <!-- BLOCK STATISTICK -->

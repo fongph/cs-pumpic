@@ -26,10 +26,28 @@
 
     <section style="margin-top: 50px;">
         <b>Sources</b>
-        <p> http://www.theguardian.com/education/2011/may/21/children-internet-access-exam-advantage Boffey, D. (2011). Children with Internet access at home gain exam advantage, charity says. <b>guardian.com</b></p>
-        <p>http://www.saferinternet.org.uk/advice-and-resources/parents-and-carers/parental-controls UK Safer Internet Centre (2016). Parental controls offered by your home Internet provider. <b>saferInternet.org.uk</b></p>
-        <p>http://us.norton.com/transactsafely/phishingscam.jsp Norton (2016). How to Protect Against Phishing. <b>norton.com</b></p>
-        <p>http://www.wiredsafety.com/#!gethelp/c6v5 Wired Safety (2015). Get Help! <b>wiredsafety.com</b></p>
+        <p>NSPCC. (2016). Share aware. <b>nspcc.org.uk</b></p>
+        <p>Twitter. (2016). Protecting and unprotecting your tweets. <b>twitter.com</b></p>
+        <p>Instagram. (2016). Controlling your Visibility. <b>instagram.com</b></p>
+        <p>Microsoft. (2016). How to recognize phishing email messages, links, or phone calls. <b>microsoft.com</b></p>
+        <p>Zone Alarm. (2013). How to turn on two-factor authentication for your email accounts. <b>zonealarm.com</b></p>
+        <p>Guardian. (2014). Number of children who are victims of cyberbullying doubles in a year. <b>theguardian.com</b></p>
+        <p>Net Aware. (2016). Ask.fm. <b>net-aware.org.uk</b></p>
+        <p>Crisis Call Centre. <b>crisiscallcenter.org</b></p>
+        <p>Get Safe Online. (2016). Children reveal riskiest social media sites. <b>getsafeonline.org</b></p>
+        <p>Ofcom. (2013). UK adults taking online password security risks. <b>ofcom.org.uk</b></p>
+        <p>Norton. Password Generator. <b>identitysafe.norton.com</b></p>
+        <p>PR Newswire. (2015). As digital and offline lives merge, 8 out of 10 us teens post to social media without a second thought. <b>prnewswire.com</b></p>
+        <p>D’Costa, K. (2014). Catfishing – the truth about deception online.<b>scientificamerican.com</b></p>
+        <p>Do Something. (2016). 11 facts about sexting. <b>dosomething.org</b></p>
+        <p>Dredge, S. (2014). How do I keep my children safe online? What the security experts tell their kids. <b>theguardian.com</b></p>
+        <p>Merritt, M. (2015). Ten tips to keep kids safe online. <b>norton.com</b></p>
+        <p>Talbot, B. (2013). ‘My 6yr-old spent £3,200 playing iPhone game' – how to stop it. <b>moneysavingexpert.com</b></p>
+        <p>Zaharia, A. (2015). Analysis: how malware creators use spam to maximize their impact. <b>heimdalsecurity.com</b></p>
+        <p>Boffey, D. (2011). Children with Internet access at home gain exam advantage, charity says. <b>guardian.com</b></p>
+        <p>UK Safer Internet Centre (2016). Parental controls offered by your home Internet provider. <b>saferInternet.org.uk</b></p>
+        <p>Norton (2016). How to Protect Against Phishing. <b>norton.com</b></p>
+        <p>Wired Safety (2015). Get Help! <b>wiredsafety.com</b></p>
     </section>
 
 

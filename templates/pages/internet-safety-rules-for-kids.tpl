@@ -140,7 +140,7 @@ metaTags="true"
                         </div>
 
                       <div class="clearfix"></div>
-                        <img src='/images/infographic/X-Internet-Commandments-for-Kids-Going-Online-for-First-Time.jpg'
+                        <img src='/images/infographic/X-Internet-Commandments-for-Kids-Going-Online-for-First-Time-DV4.png'
                              width='540'
                              alt='Mobile Phone Security Measures'
                              id='the_img_link'>

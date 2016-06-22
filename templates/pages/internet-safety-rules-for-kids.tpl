@@ -37,6 +37,11 @@ robots="yes"
 title="Internet Safety Rules for Kids | Pumpic"
 description="Infographic features 10 fundamental internet safety rules for kids. Following these commandments will ensure your child is both safe and responsible online."
 metaTags="true"
+
+
+ogTitle="Internet Safety Rules for Kids | Pumpic"
+ogDesc="Infographic features 10 fundamental internet safety rules for kids. Following these commandments will ensure your child is both safe and responsible online."
+ogImg="/images/infographic/X-Internet-Commandments-for-Kids-Going-Online-for-First-Time-DV4.png'"
 }
 
 <body>

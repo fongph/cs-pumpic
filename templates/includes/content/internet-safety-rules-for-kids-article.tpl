@@ -25,7 +25,7 @@
     <div class="clearfix"></div>
 
     <section style="margin-top: 50px;">
-        <b>Sources</b>
+        <h3>Sources</h3>
         <p>NSPCC. (2016). Share aware. <b>nspcc.org.uk</b></p>
         <p>Twitter. (2016). Protecting and unprotecting your tweets. <b>twitter.com</b></p>
         <p>Instagram. (2016). Controlling your Visibility. <b>instagram.com</b></p>

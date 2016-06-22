@@ -41,7 +41,7 @@ metaTags="true"
 
 ogTitle="Internet Safety Rules for Kids | Pumpic"
 ogDesc="Infographic features 10 fundamental internet safety rules for kids. Following these commandments will ensure your child is both safe and responsible online."
-ogImg="/images/infographic/X-Internet-Commandments-for-Kids-Going-Online-for-First-Time-DV4.png'"
+ogImg="/images/infographic/X-Internet-Commandments-for-Kids-Going-Online-for-First-Time-DV4.jpg"
 }
 
 <body>
@@ -145,7 +145,7 @@ ogImg="/images/infographic/X-Internet-Commandments-for-Kids-Going-Online-for-Fir
                         </div>
 
                       <div class="clearfix"></div>
-                        <img src='/images/infographic/X-Internet-Commandments-for-Kids-Going-Online-for-First-Time-DV4.png'
+                        <img src='/images/infographic/X-Internet-Commandments-for-Kids-Going-Online-for-First-Time-DV4.jpg'
                              width='540'
                              alt='Mobile Phone Security Measures'
                              id='the_img_link'>

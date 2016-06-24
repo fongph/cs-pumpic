@@ -2352,12 +2352,12 @@ $(document).ready(function () {
 
             $checkboxes.each(function () {
                 var $form = $(this).closest('form');
-                
+
                 if (offerEnabled) {
                     if (!$(this).is(":checked")) {
                         $(this).prop('checked', offerEnabled);
                     }
-                    
+
                     $('.wr_pack_' + data.group).hide();
                     $('.wr_pack_double_' + data.group).show();
                     $form.find('.offer_old_price').show();
@@ -2367,7 +2367,7 @@ $(document).ready(function () {
                     if ($(this).is(":checked")) {
                         $(this).prop('checked', offerEnabled);
                     }
-                    
+
                     $('.wr_pack_double_' + data.group).hide();
                     $('.wr_pack_' + data.group).show();
                     $form.find('.offer_old_price').hide();
@@ -2375,7 +2375,7 @@ $(document).ready(function () {
                     $form.find('.package_price').show();
                 }
             });
-            
+
             $(input).closest('form').find('input[type=radio]:checked').each(function () {
                 updateRadio(this);
             });
@@ -2393,7 +2393,7 @@ $(document).ready(function () {
             $input = $(this).find('input:first');
             updateRadio($input);
         });
-        
+
         $('.buy-form-with-offer input[type=checkbox]').change(function(){
             updateCheckbox(this);
         });

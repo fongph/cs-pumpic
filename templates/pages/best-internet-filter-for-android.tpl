@@ -47,7 +47,7 @@
             description = "Pumpic app helps you protect your child from explicit content. </br> View web history, block inappropriate websites and more."
             promoBuyBlock = "no"
             planPackageBuy = "yes"
-            block_video = "yes"
+            block_video = "no"
             block_video_src = "http://www.youtube.com/embed/Atg0CbaytAY"
         } {* ?rel=0&wmode=transparent&fs=0&autoplay=1&modestbranding=1&autohide=1 *}
         

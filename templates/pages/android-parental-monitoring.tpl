@@ -66,7 +66,7 @@ title="Ultimate Android Parental Control App | Pumpic Monitoring Software"
         {Content
         styleTitle="h2"
         title="Did You Know?"
-        blockBg='dark'}
+        blockBg='light'}
 
         <p>Using Android monitoring software to protect kids is an urgent necessity of the contemporary society. On one hand, technological progress has opened new doors for the evolution of humanity; on the other one, it has resulted in many dangers in return. And children are exposed to these risks much more than others. That’s why if handing them smartphones or tablets, you should know how to protect their mobile activities.</p> 
 	    <p>Parental control apps allow you to monitor kids' time spending, restrict misgiving communication, and limit device usage. Pumpic proved to be among the most reliable applications for child safety. With it, you will always know what your kids are texting, who calls them, which websites they visit, as well as any content they see, send, or receive. You will always know where your children go and be notified as soon as they enter any restricted areas or leave safety zones (home, school, etc.) without your permission. Android parental monitoring by Pumpic will let you have no worries about your loved ones when you are not nearby.</p>
@@ -145,6 +145,21 @@ title="Ultimate Android Parental Control App | Pumpic Monitoring Software"
         *}
 
         {EndContent}
+
+{Content 
+    styleTitle="h2"
+    title="Every Parent Should Know That: How Kids Use Their Smartphones"
+    blockBg='dark'}  
+    		<p>As we’ve already mentioned, smartphones play a huge role in how modern kids and teens communicate with each other and interact with the world around them nowadays. Remarkably, according to Pew Research Center study, 57% of US teens have met new friends online, mostly via social media. Upon that, almost 80% of these relationships remain “virtual”, with only 20% of teens actually ever meeting these connections in real life.</p>
+			<p>Hence, knowing what exactly they use their devices for is crucial to ensure the most effective protection from apparent and hidden perils. Here are top-3 daily smartphone uses by kids that parents should pay closer attention to:</p>			
+				<ul class="list-images">
+				<li><img src="/images/landings/mark.png" alt="Check Mark" style="left: -30px;" /><strong>Texting.</strong> 55% of teens communicate via text messages every single day. It is clearly the dominant option with nothing else even coming somewhat close.</li>
+				<li><img src="/images/landings/mark.png" alt="Check Mark" style="left: -30px;" /><strong>Instant messaging.</strong> 27% of teens connect with friends via instant online chats and messengers like Snapchat, Facebook Messenger, Kik, WhatsApp, etc.</li>
+				<li><img src="/images/landings/mark.png" alt="Check Mark" style="left: -30px;" /><strong>Social media.</strong> 23% of teens keep in touch via social networks. They say social media helps them feel more connected to their friends’ lives. Also, this is a place where teens receive support from others during tough times.</li>			
+				</ul>
+				<p>Considering the data above, the simple logic will make it pretty clear that most cyber dangers kids face come from the most popular device usage practices. That’s why concerned parents should consider monitoring their children smartphones and tablets and pay the paramount attention to text communication. Thankfully, Pumpic monitoring software provides exhaustive opportunity to keep an eye on with whom your kid interacts and what is he or she up to. Thus, preventing the child from any wrongdoing becomes a mere matter of skills.</p>
+				<p>At the same time, monitoring software is just a supplementary tool to facilitate your parental duties. Hence, we urge you to have a frank talk to your little ones about dangers and pitfalls they may encounter when being online. Read more about the most widespread digital hazards that lay in wait for the kids in the next chapter.</p>
+{EndContent}
 		
 {Content 
     styleTitle="h2"

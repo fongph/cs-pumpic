@@ -105,7 +105,7 @@
             <h2>Simple Reasons for Installing Android Child Tracking App</h2>
             <div class="pt30 pb20">
                 <img class="img-align-right" alt="Android App for Tracking Phone" src="{$img}/landings/android-phone-child-tracking-software-text.png" width="207px" height="208px" />
-                <p>With the significant amount of time every child spends on the Internet via a mobile device the need for control is becoming urgent. Thankfully, there are <a class="a-default" href="http://pumpic.com/android-parental-monitoring.html" target="blank">Android parental monitoring</a> apps to help us with kids’ security.</p>
+                <p>With the significant amount of time every child spends on the Internet via a mobile device the need for control is becoming urgent. Thankfully, there are lots of monitoring apps to help us with kids’ security, including the ones <a class="a-default" href="/android-parental-monitoring.html">for Android platform</a>.</p>
 				<p>There are three main reasons to choose a reliable Android parental control app for your child’s safety:</p>
 				<ul class="list-images">
 				   <li><img src="{$img}/landings/mark.png" alt="Check Mark" class="lc-1" />It is legal – such software is allowed for usage by parents towards their underage children, and unlike with spy programs you will have no troubles here.</li>

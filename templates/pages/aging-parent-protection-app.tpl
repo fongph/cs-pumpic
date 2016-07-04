@@ -1,36 +1,36 @@
 {include file='../includes/main/main-header.tpl'
-    robots="yes" 
+    robots="yes"
     title="Aging Parent Protection App"
     description="Pumpic helps you take care of your elderly parents. Monitor calls and text messages. Track locations and geo-fences. Prevent dangers remotely."
-}    
-    
+}
+
 <body>
     <!-- BLOCK GTM -->
     {include file='../includes/main/main-after-body.tpl'}
     <!-- END BLOCK GTM -->
-    
+
     <!-- FLY BLOCKS -->
     {include file='../includes/content/fly/fly_blocks.tpl'}
     <!-- END FLY BLOCKS-->
-    
+
     <div class="wrapper {*box-bottom-images*} prevent-online-dangers protect-your-little-kids">
         <!-- TOP MENU -->
- 	{include file='../includes/main/main-top-menu.tpl' 
+ 	{include file='../includes/main/main-top-menu.tpl'
                 cache_id = "includes_main_main-top-menu"
                 nocache
         }
-        
 
-        
+
+
         {*
             Template: PHONE
             Переменные:
-                style (text): стиль блока Phone (blue|black). * - blue 
+                style (text): стиль блока Phone (blue|black). * - blue
         *}
         {include file='../includes/content/phone/block-phone.tpl'
-                 style="blue"   
+                 style="blue"
         }
-        
+
         <!-- CONTENT -->
         {include file='../includes/content/info/info-promo.tpl'
             fz="28"
@@ -72,20 +72,20 @@
         description="Pumpic is unique mobile monitoring and an accurate GPS tracker for old people. The app comprises many useful features that allow taking care of your elderly parents remotely. It will help you protect your aging parents and ensure their welfare. Pumpic is available for Android and iOS smartphones and tablets, and includes the jailbreak-free iCloud monitoring solution."
         }
 
-        {*include file='../includes/content/ipad.tpl' 
+        {*include file='../includes/content/ipad.tpl'
                     blockBg="dark"
                     imgUrl = "parental_control/ipad.png"
                     imgAlt = "remote control"
                     title = "Easy-to-Use Control Panel"
         *}
-        
+
         {* description = "Right after installing Pumpic, all the data from the target device will be sent to your Control Panel. It can be accessed from any browser and any gadget, including PCs, mobile phones and tablets. In Control Panel, you can not only view the information, but also set restrictions, block, and limit some of activities."
          *}
-        
+
         {include file='../includes/content/how-get-pumpic.tpl'
              blockBg="dark"
         }
-         
+
         <!-- BLOCK CHOOSE SUBSCRIPTION PLAN -->
         <div id='choose-subscription-plan' class="light prices-padding {*padding-reset*}">
             <div class="container">
@@ -94,12 +94,12 @@
                     <div class="col-lg-10 col-lg-offset-1">
                         <div class="row">
                             <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1">
-                                
+
                                 <table class="tb_pricing table-bordered pricing-second">
                                     <thead>
                                         <tr>
                                             <th class="{*hidden-media-box*}">
-                                            
+
                                                 <div class="basic_wr row-pricing-panel">
                                                     <div class="basic_h">
                                                         Basic
@@ -119,8 +119,8 @@
                                                                     </div><span> / month</span>
                                                                 </div>
                                                             </div>
-                                                        </div>     
-                                                                
+                                                        </div>
+
                                                         <div class="list_price">
                                                             <form name="price_basic" method="POST" action="/buy.html" class="buy-form-with-offer" autocomplete="off">
                                                                 <input id='product_price_basic' type='hidden' name='price[productID]' value='0' class="product_price" />
@@ -158,7 +158,7 @@
                                                                         Get the 2nd plan with <span>40% OFF!</span>
                                                                     </label>
                                                                 </div>
-                                                                <button class="btn btn-default ga-action-submit" 
+                                                                <button class="btn btn-default ga-action-submit"
                                                                         ga-action ="click"
                                                                         ga-category="iphone-with-jailbreak-monitoring"
                                                                         ga-label="buy basic"
@@ -190,8 +190,8 @@
                                                                     </div><span>/ month</span>
                                                                 </div>
                                                             </div>
-                                                        </div>   
-                                                                
+                                                        </div>
+
                                                         <div class="list_price">
                                                             <form name="price_premium" method="POST" action="/buy.html" class="buy-form-with-offer" autocomplete="off">
                                                                 <input id='product_price_premium' type='hidden' name='price[productID]' value='0' class="product_price" />
@@ -257,14 +257,14 @@
                                         </tr>
                                     </thead>
                                 </table>
-                                
+
                                 <div class="space_line"> </div>
                                 <div class="link_circle_italic2">
                                     <div class="style-links2">
                                         <span class="circle_ico2"></span>You need to have physical access to the target device or iCloud password to install the application.
                                     </div>
                                 </div>
-                                
+
                             </div>
                         </div>
                     </div>
@@ -273,7 +273,7 @@
             <!-- block upgrade include-->
         </div>
         <!-- END -->
-        
+
         <!-- TESTIMONIALS -->
         <div class="light">
             <div class="container">
@@ -336,24 +336,20 @@
         </div>
     </div>
     <!-- END -->
-        
-        {*include file='../includes/content/how-get-pumpic.tpl' 
+
+        {*include file='../includes/content/how-get-pumpic.tpl'
              blockBg="light"
-        *} 
-        
-        {* include file='../includes/testimonials.tpl' 
-            blockBg="dark"
-        *}       
-
-        
-
-        {*include file='../includes/content/why-pumpic.tpl' 
-            blockBg="light"
         *}
 
-        {include file='../includes/main/main-quick-link.tpl' 
+        {* include file='../includes/testimonials.tpl'
+            blockBg="dark"
+        *}
+
+
+
+        {*include file='../includes/content/why-pumpic.tpl'
             blockBg="light"
-        }
+        *}
 
 
         {*include file='../includes/main/main-footer-promo-v2.tpl'
@@ -362,26 +358,31 @@
             bannerImg="image_banners_2.png"
         *}
         {*{include file='../includes/content/banners/banner-promo-trial.tpl'}*}
-        
+
         {*include file='../includes/content/banners/index.tpl'*}
-        <!-- END CONTENT -->    
-        
+        <!-- END CONTENT -->
+
         <!-- RECOMMENDED -->
         {*
             Template: RECOMMENDED
-        *}    
+        *}
         {include file='../includes/main/main-recommended_protaction.tpl'}
-        
+
         <!-- FOOTER -->
         {*
             Template: FOOTER
             Переменные:
-                our_products (text): Включить выключить блок OUR PRODUCTS (no|yes). * - yes 
+                our_products (text): Включить выключить блок OUR PRODUCTS (no|yes). * - yes
         *}
+
+        {include file='../includes/main/main-quick-link.tpl'
+        blockBg="light"
+        }
+
         {include file='../includes/main/main-footer.tpl'}
-                
+
     </div>
-        
+
     {include file='../includes/main/main-analytics-footer.tpl'}
 
 

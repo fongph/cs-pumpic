@@ -91,9 +91,7 @@
         }
 
         {* blockBg="dark" *}
-        {include file='../includes/main/main-quick-link.tpl' 
-            blockBg="light"
-        }
+
 
 
         {*include file='../includes/main/main-footer-promo-v2.tpl'
@@ -109,8 +107,12 @@
         <!-- RECOMMENDED -->
         {*
             Template: RECOMMENDED
-        *}    
-        {include file='../includes/main/main-recommended.tpl'}
+        *}
+        {include file='../includes/main/main-quick-link.tpl'
+        blockBg="light"
+        }
+
+        {include file='../includes/main/main-footer.tpl'}
         
         <!-- FOOTER -->
         {*

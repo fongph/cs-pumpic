@@ -238,8 +238,24 @@ description="Learn the difference between the Standard Pumpic Control Panel and 
     <div class="tab col-item-3 col-md-item-3 col-sm-item-3">
         <ul>
             <li class="third-title large__li li__title">Control Panel App <br>
-                <span class="third-title__android"><i class="icon-android"></i>(Android)</span></li>
-            <li class="large__li compasion__img"> <a class="ga-action-click" ga-category="Mobile App Buttons" ga-action="click" ga-label="Control Panel Comparison: Desktop vs. Mobile App" target="_blank" href="https://play.google.com/store/apps/details?id=com.pumpic.mobile.monitoring&referrer=utm_source%3Dpumpic.com%26utm_medium%3Dreferral%26utm_campaign%3Dcontrol-panel-comparison-landing"><img src="images/GooglePlay-Icon-150x150.png" alt="Pumpic Parental Monitoring on Google Play"></a>
+                <span class="third-title__android"><i class="icon-android"></i>(Android) <i class="icon-apple"></i>(iOS)</span>
+
+            </li>
+
+            <li class="large__li compasion__img">
+
+
+                <a class="ga-action-click" ga-category="Mobile App Buttons" ga-action="click" ga-label="Control Panel Comparison: Desktop vs. Mobile App" target="_blank" href="https://play.google.com/store/apps/details?id=com.pumpic.mobile.monitoring&referrer=utm_source%3Dpumpic.com%26utm_medium%3Dreferral%26utm_campaign%3Dcontrol-panel-comparison-landing"><img src="images/GooglePlay-Icon-150x150.png" alt="Pumpic Parental Monitoring on Google Play"></a>
+
+
+                <a class="ga-action-click" ga-category="Mobile App Buttons" ga-action="click" ga-label="Control Panel AS"
+                   target="_blank" href="https://itunes.apple.com/us/app/pumpic-control-panel/id1126835967"><img src="images/app-store-icon-min.png" alt="Pumpic Parental Monitoring on Google Play"></a>
+
+
+
+
+
+
 </li>
             <li class="main__compasion"></li>
             <li><i class="icon-ok"></i></li>
@@ -314,11 +330,18 @@ description="Learn the difference between the Standard Pumpic Control Panel and 
         <div class="container">
             <div class="apps-download col-xs-10 col-sm-10 col-md-10">
                 <div class="apps-download-block">
+
+
                     <p class="free-pumpic-control">Download FREE Control Panel<br>Mobile App now!</p>
+                    <div class="apps-block">
+                        <a target="_blank" href="https://itunes.apple.com/us/app/pumpic-control-panel/id1126835967">
+                        <img src="images/icon-app-store-black.png" alt="Pumpic Parental Monitoring on App Store">
+                        </a>
+                        <a class="ga-action-click" ga-category="Mobile App Buttons" ga-action="click" ga-label="Control Panel Comparison: Desktop vs. Mobile App" target="_blank" href="https://play.google.com/store/apps/details?id=com.pumpic.mobile.monitoring&referrer=utm_source%3Dpumpic.com%26utm_medium%3Dreferral%26utm_campaign%3Dcontrol-panel-comparison-landing">
+                            <img src="images/download_google.png" alt="Pumpic Parental Monitoring on Google Play">
+                         </a>
+                    </div>
 
-
-
-                    <a class="ga-action-click" ga-category="Mobile App Buttons" ga-action="click" ga-label="Control Panel Comparison: Desktop vs. Mobile App" target="_blank" href="https://play.google.com/store/apps/details?id=com.pumpic.mobile.monitoring&referrer=utm_source%3Dpumpic.com%26utm_medium%3Dreferral%26utm_campaign%3Dcontrol-panel-comparison-landing"><img src="images/download_google.png" alt="Pumpic Parental Monitoring on Google Play"></a>
                 </div>
                 <div class="apps-download-text">
                     <p>Get your free Control Panel App for Android parental control on Google Play.</p>
@@ -334,22 +357,10 @@ description="Learn the difference between the Standard Pumpic Control Panel and 
 
 </div>
 <style>
-        .visual {
-                background: #3a8193;
-                background: radial-gradient(circle at 90px 180px, #bb6884, #3a8193, #204d84);
-        }
-        #block-promo-buy:before {
-                background: #3e9caf;
-        }
-        .box-video-constructors{
-            margin-left: 0;
-        }
-    @media (min-width: 992px ){
-        .box-video-constructors{
-            margin-left: 30px;
-        }
+    .apps-block{
+        display: inline-block;
+        vertical-align: bottom;
     }
-
 </style>
 
 {include file='../includes/main/main-analytics-footer.tpl'}

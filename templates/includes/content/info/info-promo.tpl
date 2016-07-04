@@ -160,7 +160,41 @@
                                         {/if}
                                     </ul>
                                     {/if}
-                                    
+
+                                        {if isset($block_video) && $block_video == "yes" && isset($block_video_src) && $block_video_src != ""}
+                                            <section class="mobile-block">
+                                            <div class="watch-about">
+                                                <span class="play-button">
+                                                <span></span>
+                                                 </span>
+                                                <a class="youtube youtube-link" href="http://www.youtube.com/embed/Atg0CbaytAY" rel="nofollow" id="openBtnVideo">watch about pumpic</a>
+                                            </div>
+                                            </section>
+                                            {/if}
+
+
+
+
+                                        <style>
+                                            .watch-about {
+                                                position: relative;
+                                                display: inline-block;
+                                            }
+                                            .play-button span {
+                                                position: absolute;
+                                                left: -15px;
+                                                width: 0;
+                                                height: 0;
+                                                border-top: 6px solid transparent;
+                                                border-bottom: 6px solid transparent;
+                                                border-left: 9px solid #fff;
+                                                top: 4px;
+                                            }
+                                            .youtube-link{
+                                                text-decoration: underline;
+                                            }
+                                        </style>
+
                                     {*if $os_versions == 'os_v2' || $os_versions == 'icloud_v2' || $os_versions == 'os_v2_its'}
                                         {if $os_versions == 'icloud_v2'} 
                                             <ul class="compatibility compatibility-lg">
@@ -284,18 +318,18 @@
                                     {/if}
                                 </div>
                                 
-                                <div class="mobile-block style-youtube">
-                                    {if isset($block_video) && $block_video == "yes" && isset($block_video_src) && $block_video_src != ""}
-                                        <img src="{$img}/video/v2/m_bg_video.jpg" class="visual-img-pc pb20" width="206px" height="116px" />    
-                                        <div class="box-button-video">
-                                            <a class="youtube" href="{$block_video_src}" rel="nofollow"
-                                                id="openBtnVideo">
-                                            </a>
-                                        </div>
-                                    {else}
-                                        <img src="{$img}/{$imgUrl}" alt="{$imgAlt}" title="{$imgTitle}" class="visual-img-pc {if isset($maxWidth)}max-width-{$maxWidth}{/if}">
-                                    {/if}    
-                                </div>
+                                {*<div class="mobile-block style-youtube">*}
+                                    {*{if isset($block_video) && $block_video == "yes" && isset($block_video_src) && $block_video_src != ""}*}
+                                        {*<img src="{$img}/video/v2/m_bg_video.jpg" class="visual-img-pc pb20" width="206px" height="116px" />*}
+                                        {*<div class="box-button-video">*}
+                                            {*<a class="youtube" href="{$block_video_src}" rel="nofollow"*}
+                                                {*id="openBtnVideo">*}
+                                            {*</a>*}
+                                        {*</div>*}
+                                    {*{else}*}
+                                        {*<img src="{$img}/{$imgUrl}" alt="{$imgAlt}" title="{$imgTitle}" class="visual-img-pc {if isset($maxWidth)}max-width-{$maxWidth}{/if}">*}
+                                    {*{/if}*}
+                                {*</div>*}
                                 
                             </div>
                         </td>
@@ -321,7 +355,7 @@
                                 </div>
                                 
                                 <div class="mobile-block style-youtube">
-                                    
+
                                     {if isset($block_video) && $block_video == "yes" && isset($block_video_src) && $block_video_src != ""}
                                         <img src="{$img}/video/v2/m_bg_video.jpg" class="visual-img-pc pb20" width="206px" height="116px" />
                                         <div class="box-button-video">
@@ -331,7 +365,7 @@
                                         </div>
                                     {else}
                                         <img src="{$img}/{$imgUrl}" alt="{$imgAlt}" title="{$imgTitle}" class="visual-img-pc">
-                                    {/if}    
+                                    {/if}
                                 </div>
                                 
                                 {* 

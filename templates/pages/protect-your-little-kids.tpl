@@ -136,10 +136,6 @@
             blockBg="light"
         *}
 
-        {include file='../includes/main/main-quick-link.tpl' 
-            blockBg="light"
-        }
-
 
         {*include file='../includes/main/main-footer-promo-v2.tpl'
             sloganFirst="Prevent Troubles Remotely"
@@ -163,6 +159,10 @@
             Переменные:
                 our_products (text): Включить выключить блок OUR PRODUCTS (no|yes). * - yes 
         *}
+        {include file='../includes/main/main-quick-link.tpl'
+        blockBg="light"
+        }
+
         {include file='../includes/main/main-footer.tpl'}
                 
     </div>

@@ -7846,9 +7846,10 @@ ul.list_category li:first-child {
   }
   img {
     display: inline-block;
-    margin: 15px 20px;
+    margin: 0px 0px 11px 11px;
     vertical-align: bottom;
   }
+
 }
 
 .apps-download-text {
@@ -8230,7 +8231,7 @@ ul.list_category li:first-child {
     margin: 0px 0px 8px 0px;
   }
   .compasion__img img {
-    width: 30px;
+    width: 24px;
     padding-top: 12px;
   }
   .third-title__android {
@@ -8278,4 +8279,9 @@ ul.list_category li:first-child {
   width: 10px;
   min-width: 0;
   margin: 0 5px 3px 0px
+}
+
+
+.store-links img {
+  margin: 5px 5px 0px 0px;
 }

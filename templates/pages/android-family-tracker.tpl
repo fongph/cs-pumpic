@@ -260,10 +260,8 @@
 </div>
 
         {include file='../includes/content/banners/index.tpl'}
-        
-		{include file='../includes/main/main-quick-link.tpl' 
-            blockBg="light"
-        }        
+
+
         
         {*{include file='../includes/content/banners/banner-promo-trial.tpl'}*}
         
@@ -272,7 +270,7 @@
         <!-- RECOMMENDED -->
         {*
             Template: RECOMMENDED
-        *}    
+        *}
         {include file='../includes/main/main-recommended.tpl'}
         
         <!-- FOOTER -->
@@ -281,6 +279,10 @@
             Переменные:
                 our_products (text): Включить выключить блок OUR PRODUCTS (no|yes). * - yes 
         *}
+        {include file='../includes/main/main-quick-link.tpl'
+        blockBg="light"
+        }
+
         {include file='../includes/main/main-footer.tpl'}
                 
     </div>

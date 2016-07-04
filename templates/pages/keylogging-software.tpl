@@ -282,10 +282,6 @@
         }
 
 
-        {include file='../includes/main/main-quick-link.tpl' 
-            blockBg="dark"
-        }
-
         {*include file='../includes/content/banner-promo.tpl'*}
         {*{include file='../includes/content/banners/banner-promo-trial.tpl'}*}
         
@@ -295,8 +291,12 @@
         <!-- RECOMMENDED -->
         {*
             Template: RECOMMENDED
-        *}    
-        {include file='../includes/main/main-recommended.tpl'}
+        *}
+        {include file='../includes/main/main-quick-link.tpl'
+        blockBg="light"
+        }
+
+        {include file='../includes/main/main-footer.tpl'}
            
         <!-- FOOTER -->
         {*

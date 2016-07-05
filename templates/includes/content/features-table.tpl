@@ -44,7 +44,7 @@
         </div>
 </div>*}
 
-<div class="{if isset($blockBg)}{$blockBg}{else}dark{/if}">
+<div class="{if isset($blockBg)}{$blockBg}{else}dark{/if} table-padding">
         <div class="container">
                 <h2 class="text-center">{if isset($title)}{$title}{else}Useful Features for Every Careful Parent{/if}</h2>
                 <div class="row">
@@ -98,6 +98,8 @@
                                     <li><i class="i-features-kik-chat"></i> <span onclick="window.location='http://{$domain}/monitor-kik-messenger.html'">Monitor Kik</span></li>
                                     <li><i class="i-features-monitor-snapchat"></i><span onclick="window.location='http://{$domain}/monitor-snapchat.html'">Monitor Snapchat</span> </li>
                                     <li><i class="i-features-sms-commands"></i> SMS Commands</li>
+                                    <li class="last-child-hidden"><img src="/images/icon-ph.png" class="img-ph" alt="">
+                                        <a href="/all-features.html">View All Features  <i class="icon-right-open"></i> </a> </li>
                                     {*<li class="hidden-mobile">&nbsp;</li>*}
                                 </ul>
                             </div>
@@ -110,4 +112,36 @@
                     </div>
                 </div>
         </div>
-</div> 
+</div>
+
+
+<style>
+
+    .img-ph{
+        vertical-align: bottom;
+        margin: 0px 8px 0px 6px;
+    }
+
+    .last-child-hidden a{
+        color: #16a89e !important;
+        cursor: pointer !important;
+    }
+
+
+    @media (max-width: 480px){
+        .button-more-detailes{
+            display: none;
+        }
+
+    }
+
+
+    @media (min-width: 480px){
+        .last-child-hidden{
+            display: none !important;
+        }
+    }
+
+
+
+</style>

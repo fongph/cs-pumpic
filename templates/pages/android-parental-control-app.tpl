@@ -202,9 +202,7 @@ title="Android Parental Control App for Ultimate Monitoring | Pumpic"
 </div>
 
         {include file='../includes/content/banners/index.tpl'}
-        {include file='../includes/main/main-quick-link.tpl' 
-            blockBg="light"
-        }
+
 
         {*include file='../includes/content/banner-promo.tpl'*}
         {*{include file='../includes/content/banners/banner-promo-trial.tpl'}*}
@@ -223,6 +221,10 @@ title="Android Parental Control App for Ultimate Monitoring | Pumpic"
             Переменные:
                 our_products (text): Включить выключить блок OUR PRODUCTS (no|yes). * - yes 
         *}
+        {include file='../includes/main/main-quick-link.tpl'
+        blockBg="light"
+        }
+
         {include file='../includes/main/main-footer.tpl'}
                 
     </div>

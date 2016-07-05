@@ -297,16 +297,7 @@
         }
 
         {include file='../includes/main/main-footer.tpl'}
-           
-        <!-- FOOTER -->
-        {*
-            Template: FOOTER
-            Переменные:
-                our_products (text): Включить выключить блок OUR PRODUCTS (no|yes). * - yes 
-        *}
-        {include file='../includes/main/main-footer.tpl' 
-            our_products = "no"
-        }
+
                 
     </div>
       

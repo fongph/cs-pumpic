@@ -1535,7 +1535,26 @@ form {
   .promo-text:after {
     display: none;
   }
+
+  .list_grey li{
+    margin-top: 15px;
+  }
+
+  .bg-footer h3{
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+
+  .share{
+    padding-top: 20px;
+  }
+
 }
+
+
+
+
+
 
 .list_grey {
   list-style: none;
@@ -2334,6 +2353,11 @@ textarea {
       text-align: center;
       width: 70px;
     }
+    @media (max-width: 480px){
+      .how-to-step:before {
+        display: none;
+      }
+    }
   }
   .how-to-step {
     float: left;
@@ -2349,10 +2373,40 @@ textarea {
   }
 }
 
+
+
+
+
+
 @media only screen and (max-width: 991px) {
   .thumbs .thumbnail {
     padding: 0;
   }
+}
+
+
+
+
+
+
+
+@media (max-width: 480px){
+  .thumbs .thumbnail .caption {
+    text-align: center;
+  }
+  .thumbs .how-to-step{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .thumbs .thumbnail h3:before{
+    color: #16a89e;
+    content: counter(list2,decimal) ". ";
+    counter-increment: list2;
+    font-family: "Open Sans",Helvetica,Arial,sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+  }
+
 }
 
 .thumbnail .caption {
@@ -2380,9 +2434,6 @@ textarea {
 
 @media only screen and (max-width: 991px) {
   .thumbs .thumbnail {
-    .caption {
-      text-align: initial;
-    }
     .img_thumb {
       min-height: auto;
     }
@@ -6197,6 +6248,13 @@ form {
       text-decoration: none;
     }
   }
+  @media (max-width: 640px){
+    .banner-btn{
+      padding: 8px 56px;
+      font-size: 24px;
+    }
+
+  }
   .button-holder {
     display: inline-block;
     .btn {
@@ -6204,6 +6262,10 @@ form {
     }
   }
 }
+
+
+
+
 
 .mobile-operations-banner {
   padding: 13px;
@@ -6238,7 +6300,7 @@ form {
 
 @media (max-width: 640px) {
   .demo-banner {
-    height: 150px;
+    height: 158px;
     background: url(../images/demo-banner/bg-xs.png) 0 0 no-repeat #398fa7;
     .button-holder {
       margin-top: 10px;
@@ -6368,6 +6430,14 @@ form {
     width: 88px;
   }
 }
+
+
+
+@media only screen and (max-width: 480px) {
+
+}
+
+
 
 @media only screen and (max-width: 991px) {
   .block-how-it-works-old .thumbs .thumbnail {
@@ -8273,8 +8343,6 @@ ul.list_category li:first-child {
   }
 }
 
-
-
 .icon-lock{
   width: 10px;
   min-width: 0;
@@ -8284,4 +8352,38 @@ ul.list_category li:first-child {
 
 .store-links img {
   margin: 5px 5px 0px 0px;
+}
+
+
+
+.keep-eyes{
+  text-align: center;
+  padding: 25px 0 25px 0px;
+  overflow: auto;
+  margin: 0 -15px;
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.learn-more-link{
+  color: #7b7b7b;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+
+@media (max-width: 480px){
+  .learn-more{
+    padding-top: 30px;
+  }
+  .learn-more {
+    display: none;
+  }
+}
+@media (min-width: 480px) {
+  .keep-eyes {
+    display: none;
+  }
+  .learn-more {
+    display: block;
+  }
 }

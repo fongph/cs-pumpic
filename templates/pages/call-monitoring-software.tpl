@@ -120,9 +120,9 @@
         }                                
 
         {* blockBg="dark" *}
-        {include file='../includes/content/features-table.tpl' 
+        {include file='../includes/content/features-table.tpl'
                 blockBg="light"
-        }  
+        }
 
         {*include file='../includes/content/banner-promo.tpl'*}
         {*{include file='../includes/content/banners/banner-promo-trial.tpl'}*}

@@ -354,19 +354,19 @@
                                     {/if}
                                 </div>
                                 
-                                <div class="mobile-block style-youtube">
+                                {*<div class="mobile-block style-youtube">*}
 
-                                    {if isset($block_video) && $block_video == "yes" && isset($block_video_src) && $block_video_src != ""}
-                                        <img src="{$img}/video/v2/m_bg_video.jpg" class="visual-img-pc pb20" width="206px" height="116px" />
-                                        <div class="box-button-video">
-                                            <a class="youtube" href="{$block_video_src}" rel="nofollow"
-                                                id="openBtnVideo">
-                                            </a>
-                                        </div>
-                                    {else}
-                                        <img src="{$img}/{$imgUrl}" alt="{$imgAlt}" title="{$imgTitle}" class="visual-img-pc">
-                                    {/if}
-                                </div>
+                                    {*{if isset($block_video) && $block_video == "yes" && isset($block_video_src) && $block_video_src != ""}*}
+                                        {*<img src="{$img}/video/v2/m_bg_video.jpg" class="visual-img-pc pb20" width="206px" height="116px" />*}
+                                        {*<div class="box-button-video">*}
+                                            {*<a class="youtube" href="{$block_video_src}" rel="nofollow"*}
+                                                {*id="openBtnVideo">*}
+                                            {*</a>*}
+                                        {*</div>*}
+                                    {*{else}*}
+                                        {*<img src="{$img}/{$imgUrl}" alt="{$imgAlt}" title="{$imgTitle}" class="visual-img-pc">*}
+                                    {*{/if}*}
+                                {*</div>*}
                                 
                                 {* 
                                 <img src="{$img}/{$imgUrl}" alt="{$imgAlt}" class="visual-img-pc">   

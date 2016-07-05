@@ -276,6 +276,13 @@
         </div>
 </div>*}
 
+
+        <div class="keep-eyes">
+            <a href="#" class="learn-more-link"> Learn More<img src="/images/arrow-down.png" alt=""></a>
+        </div>
+
+        <div class="learn-more">
+
 {Content 
     styleTitle="h2"
     title="Keep Your Eyes Open"
@@ -305,10 +312,14 @@
             </ul>
         </li>
     </ul>
-    
+
     <p>However, the real world hides not less dangers that it does online. On any hand, there is a possibility to control your children’s lives on the web. Pumpic sets parental control on your kid’s cell phone and monitors every step he or she takes as well as each decision made via a smartphone or tablet.</p>
     <p>Nowadays your responsibility is not to take your kid’s mobile phone away to protect him, or forbid doing things you do not approve. All you need is to keep your eyes open and take action, when the situation requires. Thus, if you have decided to present your child an iPhone, learn more about iOS monitoring for kids.</p>
-{EndContent}    
+
+
+{EndContent}
+
+        </div>
 
 <div class="dark">
     <div class="container">
@@ -350,6 +361,29 @@
             </div>
     </div>
 </div>
+
+        <script>
+            $('.learn-more-link').click(function(e){
+                e.preventDefault();
+                $('.learn-more').toggle(300);
+            })
+        </script>
+
+
+        <style>
+            @media (max-width: 480px){
+                .table-padding{
+                    padding-bottom: 0;
+                }
+                #block-content{
+                    padding-top: 0;
+                }
+            }
+
+
+        </style>
+
+
         {include file='../includes/content/how-get-pumpic.tpl' 
              blockBg="light"
         }

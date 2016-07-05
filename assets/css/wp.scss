@@ -4,6 +4,8 @@
 
 /* ==== // banners ====== */
 
+
+
 .box-right-banners {
     text-align: center;
     label {
@@ -35,6 +37,15 @@
     }
     .list_grey li a:hover {
         text-decoration: underline;
+    }
+}
+
+
+
+
+@media only screen and (max-width: 768px){
+    .list_grey li{
+        margin-top: 15px;
     }
 }
 

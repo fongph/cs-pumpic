@@ -1050,6 +1050,7 @@ select.form-control option {
 .list_grey li {
   position: relative;
   padding-left: 15px;
+  margin-top: 15px;
 }
 .list_grey li:before {
   content: "";

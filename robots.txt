@@ -10,6 +10,7 @@ Disallow: /wp-content
 Disallow: /wp-admin
 Disallow: /wp-includes
 Disallow: /security/tag/
+Disallow: /security/category/blogs/
 Disallow: /security/tag/*
 Disallow: *?gclid=*
 Disallow: *?utm*

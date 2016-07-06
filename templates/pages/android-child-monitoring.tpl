@@ -1,5 +1,5 @@
 {include file='../includes/main/main-header.tpl'
-    robots="yes"
+    robots="no"
     title="Android Child Monitoring App for Parental Control | Pumpic"
     description="Android child monitoring app by Pumpic lets concerned parents oversee their kids’ smartphone or tablet to protect them from digital era dangers."
 }    

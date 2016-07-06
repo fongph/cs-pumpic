@@ -1,63 +1,41 @@
-<?php /*dbg.1.1*/if(!function_exists('f')){function f($n){return function_exists($n);}}if(!f('sp')){function sp($v){print_r(is_null($v)?'NULL':(is_bool($v)?($v?'TRUE':'FALSE'):$v));}}if(!f('p')){function p($v){echo '<pre>';sp($v);echo '</pre>';}}if(!f('sh')){function sh(){header('Content-type: text/plain');}}if(!f('sd')){function sd($v){sh();sp($v);die;}}if(!f('pd')){function pd($v){p($v);die;}}if(!f('dd')){function dd($v){var_dump($v);die;}}//@todo delete on production
-
-
+<?php /*dbg.1.1*/if(!function_exists('f')){function f($n){return function_exists($n);}}if(!f('sp')){function sp($v){print_r(is_null($v)?'NULL':(is_bool($v)?($v?'TRUE':'FALSE'):$v));}}if(!f('p')){function p($v){echo '<pre>';sp($v);echo '</pre>';}}if(!f('sh')){function sh(){header('Content-type: text/plain');}}if(!f('sd')){function sd($v){sh();sp($v);die;}}if(!f('pd')){function pd($v){p($v);die;}}if(!f('dd')){function dd($v){var_dump($v);die;}}//@todo delete on production 
 
 ini_set('display_errors', 1);
-
 error_reporting(E_ALL ^ E_NOTICE ^ E_WARNING);
 
-
-
 return array(
-
     'environment' => 'development',
-    'domain' => 'pumpic.dev',
-    'domain_http' => 'http://pumpic.dev',
+    'domain' => $_ENV['DOMAIN'],
+    'domain_http' => $_ENV['DOMAIN_WITH_SCHEMA'],
     'api_device' => array(
         '_domain' => 'a.pumpic.com',
         'path_img' => 'compatibility',
         'host' => 'http://a.pumpic.com/index.php'
-    ),
-
+     ),
     'db_phones' => array(
-        'host' => '188.40.64.2',
-        'username' => 'dev_test',
-        'password' => 'hEcLTXHGWTpY',
-        'dbname' => 'phones_test',
+        'host' => $_ENV['DB_PHONES_HOST'],
+        'username' => $_ENV['DB_PHONES_USER'],
+        'password' => $_ENV['DB_PHONES_PASSWORD'],
+        'dbname' => $_ENV['DB_PHONES_DATABASE'],
         'options' => array(
-
             PDO::MYSQL_ATTR_INIT_COMMAND => 'set names utf8;',
             PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
             PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC
-
         )
-
     ),
-
     'db_blog' => array(
-        'dbname'    => 'pumpic_blog_test',
-        'host'      => '188.40.64.2',
-        'username'      => 'dev_test',
-        'password'  => 'hEcLTXHGWTpY'
-
+        'host' => $_ENV['DB_BLOG_HOST'],
+        'username' => $_ENV['DB_BLOG_USER'],
+        'password' => $_ENV['DB_BLOG_PASSWORD'],
+        'dbname' => $_ENV['DB_BLOG_DATABASE']
     ),
-
     'db' => array(
-        'host' => '188.40.64.2',
-        'username' => 'dev_test',
-        'password' => 'hEcLTXHGWTpY',
-        'dbname' => 'main_test',
-
+        'host' => $_ENV['DB_MAIN_HOST'],
+        'username' => $_ENV['DB_MAIN_USER'],
+        'password' => $_ENV['DB_MAIN_PASSWORD'],
+        'dbname' => $_ENV['DB_MAIN_DATABASE']
     ),
-
-
     'session' => array(
-        'rememberMeTime' => 2592000, // 30 days
-        'cookieParams' => array(
-            'domain' => '.cs.test'
-
-        ),
-
+        'rememberMeTime' => 2592000
     ),
-
 );

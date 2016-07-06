@@ -1381,6 +1381,7 @@
                                             Supported features:</p>
                                         <ul>
                                             <li><span class="block ltr">Text message monitoring <br /><span class='text-normal'>&lpar;SMS, MMS, and iMessages&rpar;</span></span></li>
+                                            <li>Deleted SMS (previously backed up)</li>
                                             <li>Call monitoring</li>
                                             <li>Contact list</li>
                                             <li>Browsing history</li>

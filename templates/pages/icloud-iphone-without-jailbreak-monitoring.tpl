@@ -246,6 +246,7 @@
                                                     <div class="pricep">
                                                         <div class="basic_fe reset-list media-sm-block">
                                                             <ul class="list_price-no-link list_price-no-link-inline">
+                                                                <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Deleted SMS <span>Track deleted SMS that were backed up before being deleted</span></li>
                                                                 <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Bookmarks <span>View bookmarked websites. <br/> (up to iOS 8.4.1) </span></li>
                                                                 <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Calendar  <span>Follow scheduled events.</span></li>
                                                                 <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> KiK <span>Monitor online text communication. <br/> (from 9.0 and up)</span></li>

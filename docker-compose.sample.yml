@@ -5,14 +5,14 @@ services:
         command: sh -c "cd public && env php -d xdebug.idekey=$$XDEBUG_KEY -d xdebug.remote_host=$$XDEBUG_HOST -S 0.0.0.0:8000 index.php"
         user: www-data
         ports:
-            - "8100:8000"
-            - "8101:9000"
+            - "8300:8000"
+            - "8301:9000"
         volumes:
             - .:/code
             - ~/.ssh:/home/www-data/.ssh
         environment:
-            - DOMAIN=http://localhost:8100
-            - DOMAIN_STATIC=http://localhost:8100/static
+            - DOMAIN=localhost:8300
+            - DOMAIN_WITH_SCHEMA=http://localhost:8300
             #- DOMAIN_COOKIE=localhost
             - SUPPORT_EMAIL=support@google.com
             - URL_DEMO=http://google.com/demo
@@ -28,9 +28,13 @@ services:
             - DB_MAIN_DATABASE=main_test
             - DB_MAIN_USER=dev_test
             - DB_MAIN_PASSWORD=hEcLTXHGWTpY
-            - DB_DATA_1_HOST=188.40.64.2
-            - DB_DATA_1_DATABASE=data_test
-            - DB_DATA_1_USER=dev_test
-            - DB_DATA_1_PASSWORD=hEcLTXHGWTpY
+            - DB_PHONES_HOST=188.40.64.2
+            - DB_PHONES_DATABASE=phones_test
+            - DB_PHONES_USER=dev_test
+            - DB_PHONES_PASSWORD=hEcLTXHGWTpY
+            - DB_BLOG_HOST=188.40.64.2
+            - DB_BLOG_DATABASE=pumpic_blog_test
+            - DB_BLOG_USER=dev_test
+            - DB_BLOG_PASSWORD=hEcLTXHGWTpY
             - XDEBUG_KEY=netbeans-xdebug
             - XDEBUG_HOST=localhost

@@ -35,7 +35,9 @@
         {include file='../includes/content/phone/block-phone.tpl'
                  style="black"   
         }
-        
+
+
+
 <div class="very_easy">
     <div class="container">
         <div class="row">

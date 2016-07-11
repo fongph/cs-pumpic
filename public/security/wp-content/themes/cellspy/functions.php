@@ -62,16 +62,16 @@ add_action('template_redirect', 'shailan_redirect_404');
 
 /* --------------- AJAX ----------------- */
 // Include the Ajax library on the front end
-function add_ajax_library() {
- 
-//    $html = '<script type="text/javascript">';
-//        $html .= 'var ajaxurl = "' . site_url( '/wp-content/themes/dist/ajax/ajax.php' ) . '"';
-//    $html .= '</script>';
-// 
-//    echo $html;
- 
-} // end add_ajax_library
-add_action( 'wp_head',  'add_ajax_library' );
+//function add_ajax_library() {
+//
+////    $html = '<script type="text/javascript">';
+////        $html .= 'var ajaxurl = "' . site_url( '/wp-content/themes/dist/ajax/ajax.php' ) . '"';
+////    $html .= '</script>';
+////
+////    echo $html;
+//
+//} // end add_ajax_library
+//add_action( 'wp_head',  'add_ajax_library' );
 
 if ( !function_exists('cellspy_r_banner_buy_1') ) {
     function cellspy_r_banner_buy_1() {

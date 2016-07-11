@@ -100,7 +100,7 @@
                     <p>Funamo is no different from most of parental control apps you can find online. It tracks incoming and outgoing calls, text messages, and location. In addition, it will let you view visited websites, block or limit applications from the list of downloaded ones.</p>
 					<p>However, such range of features is poor enough to provide children with appropriate security. As you know, a great majority of dangers that kids face come from the Internet, especially social media. Funamo doesn’t log this kind of online activity, which is a huge lack, when it comes to all-round protection, online predators, and cyberbullying issues.</p>
                     <div class="box-graph">
-                        <img src="{$img}/diagrams/funamo_new.jpg" height="368" width="690" alt="">
+                        <img src="{$img}/diagrams/chart/04-pumpic-review-funamo-min.png" height="368" width="690" alt="">
                     </div>
                     <h3 class="heading">Reports & Logs – <span class="heading-rating">3.5/10</span></h3>
                     <p>The application monitors incoming and outgoing calls, as well as sent and received SMS. It will also enable you to track GPS location and set geo-fences to find out once your child leaves or enters specific areas on the map. In addition, Funamo allows viewing visited websites, contact and application lists.</p>
@@ -122,16 +122,7 @@
                 </div>
             </div>
         </div>
-        
-        <!-- END CONTENT -->    
-        {include file='../../includes/content/banners/index.tpl'}
-        <!-- END CONTENT -->    
-           
-        <!-- RECOMMENDED -->
-        {*
-            Template: RECOMMENDED
-        *}    
-        {include file='../../includes/main/main-recommended.tpl'}   
+
         
         <!-- FOOTER -->
         {*

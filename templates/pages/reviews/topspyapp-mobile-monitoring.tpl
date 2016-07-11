@@ -102,11 +102,6 @@ description="Read full review on Top Spy App mobile monitoring tool. Learn if us
                 </p>
                 <p>Despite all those helpful opportunities that the app provides, TopSpy has one serious disadvantage – the app operates illegally. Thus, it allows users record phone conversations and surroundings that violates personal rights and breaks the law.
                 </p>
-
-                <div class="box-graph">
-                    <img src="{$img}/diagrams/mobileforcefield.png" height="368" width="686" alt="">
-                </div>
-
                 <h3 class="heading">Reports & Logs – <span class="heading-rating">7/10</span></h3>
                 <p> The app logs all required cell phone data including calls, text messages, emails, location, multimedia files, websites visited, contacts, calendar, bookmarks, apps, Skype, Viber, WhatsApp, and Facebook. In addition, a keylogger allows parents to view kids’ online activities performed via a private browser mode.
 
@@ -143,15 +138,6 @@ description="Read full review on Top Spy App mobile monitoring tool. Learn if us
         </div>
     </div>
 
-    <!-- END CONTENT -->
-    {include file='../../includes/content/banners/index.tpl'}
-    <!-- END CONTENT -->
-
-    <!-- RECOMMENDED -->
-    {*
-        Template: RECOMMENDED
-    *}
-    {include file='../../includes/main/main-recommended.tpl'}
 
     <!-- FOOTER -->
     {*

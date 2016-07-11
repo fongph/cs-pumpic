@@ -93,7 +93,7 @@
                             </p>
                             <div class="media-btn">
                                 <a href="/reviews/" class="btn btn-sm btn-allreviews">All Reviews</a>
-                                <a href="/reviews/safetyweb-mobile-monitoring.html" class="btn btn-sm btn-success">Next Review &rarr;</a>
+                                <a href="/reviews/kidlox-mobile-monitoring.html" class="btn btn-sm btn-success">Next Review &rarr;</a>
                             </div>
                         </div>
                     </div>
@@ -101,7 +101,7 @@
                     <p>ScreenTimeLabs looks more like a supplement to another parental control application. The scarcity of features is unanswerable and it is hard to explain such high price for such poor functionality. </p>
 					<p>An application that can monitor other applications on the target device is useful, right, however, it doesn’t fulfill the main purpose of parental control apps – to secure children. Online protection is essential, but this app can’t block websites or check online activity of kids. Nor can it monitor calls, emails, text messages, and social media. With this app you can forget about GPS locating and geo-fencing, so the security of your children will be up in the air. </p>
                     <div class="box-graph">
-                        <img src="{$img}/diagrams/screentime-labs_new.jpg" height="368" width="690" alt="">
+                        <img src="{$img}/diagrams/chart/06-pumpic-review-screentime-labs-min.png" height="368" width="686" alt="">
                     </div>
                     <h3 class="heading">Reports & Logs – <span class="heading-rating">1/10</span></h3>
                     <p>ScreenTimeLabs enables its users to look through the list of installed applications on a smartphone or a tablet that belongs to their children.   </p>
@@ -123,16 +123,7 @@
             </div>
         </div>
         
-        <!-- END CONTENT -->    
-        {include file='../../includes/content/banners/index.tpl'}
-        <!-- END CONTENT -->    
-           
-        <!-- RECOMMENDED -->
-        {*
-            Template: RECOMMENDED
-        *}    
-        {include file='../../includes/main/main-recommended.tpl'}   
-        
+
         <!-- FOOTER -->
         {*
             Template: FOOTER

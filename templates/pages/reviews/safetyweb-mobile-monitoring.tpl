@@ -74,6 +74,7 @@
                                 <img src="{$img}/boxes/boxes_4_9.png" height="219" width="242" alt="">
                             </a>*}
                             <span class="img-media">
+                                <img src="/images/boxes/disconted.png" class="discounted-pic">
                                 <img src="{$img}/boxes/boxes_4_9.png" height="219" width="242" alt="">
                             </span>
                         </div>
@@ -92,16 +93,13 @@
                             </p>
                             <div class="media-btn">
                                 <a href="/reviews/" class="btn btn-sm btn-allreviews">All Reviews</a>
-                                <a href="/reviews/txtwatcher-mobile-monitoring.html" class="btn btn-sm btn-success">Next Review &rarr;</a>
+                                <a href="/reviews/care4teen-mobile-monitoring.html" class="btn btn-sm btn-success">Next Review &rarr;</a>
                             </div>
                         </div>
                     </div>
                     <h3 class="heading">Summary</h3>
                     <p>With help of SafetyWeb, you will be able to monitor calls, SMS, multimedia content on the target device, and look through the history of visited websites. </p>
 					<p>On the contrary, a user of the app will be able to supervise activities of his or her children without controlling them, because the app has no such options. Moreover, there is no possibility of monitoring emails, contact details and calendar events. In addition, there are no anti-theft features as well as GPS tracking.</p>
-                    <div class="box-graph">
-                        <img src="{$img}/diagrams/safetyweb_new.jpg" height="368" width="690" alt="">
-                    </div>
                     <h3 class="heading">Reports & Logs – <span class="heading-rating">2.5/10</span></h3>
                     <p>The app sends reports concerning incoming and outgoing calls and SMS and creates a list of websites your child has visited recently. </p>
 					<p>Altogether, you will know nothing about emails, Facebook, Viber, and WhatsApp as well as what happens in Instagram of your kid. And without GPS tracking you won’t have a slightest idea where your child is at the moment. Taking into consideration that nowadays cyberbullies are active in social media, the effectiveness of the app’s protection is tentative.</p>
@@ -120,18 +118,8 @@
                 </div>
             </div>
         </div>
-        
-        <!-- END CONTENT -->    
-        {include file='../../includes/content/banners/index.tpl'}
-        <!-- END CONTENT -->    
-           
-        <!-- RECOMMENDED -->
-        {*
-            Template: RECOMMENDED
-        *}    
-        {include file='../../includes/main/main-recommended.tpl'}   
-        
-        <!-- FOOTER -->
+
+     <!-- FOOTER -->
         {*
             Template: FOOTER
             Переменные:

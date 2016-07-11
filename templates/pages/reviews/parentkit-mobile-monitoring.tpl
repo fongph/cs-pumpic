@@ -101,7 +101,7 @@
                     <p>ParentKit is one among many parental control applications available in the Internet. And, as many other apps, it does not meet requirements of thoughtful parents. The only features of this app concern browsing history and applications installed on the target device. Perhaps, it could fit parents, whose children have no notion of social media. With its help, you can remotely manipulate a child’s device by blocking certain applications and access to websites.</p>
 					<p>It is safe to say that this app defaults on a duty of a parental control app. ParentKit has so many gaps in the protection of kids that it can be used as an addition to the main defensive application. </p>
                     <div class="box-graph">
-                        <img src="{$img}/diagrams/parentkit_new.jpg" height="368" width="690" alt="">
+                        <img src="{$img}/diagrams/chart/05-pumpic-review-parentkit-min.png" height="368" width="686" alt="">
                     </div>
                     <h3 class="heading">Reports & Logs – <span class="heading-rating">2/10</span></h3>
                     <p>With help of this application you will be able to look through websites your children have visited recently and see the list of applications they installed on their gadgets. And that are the only fields of the app’s activity. Calls, texts, emails, and multimedia content stored on the device – you will know nothing of that. For sure, Skype, Kik, Facebook, and WhatsApp messages, Viber and Instagram are also wrapped in obscurity. And forget about keylogger – there is none of that. </p>
@@ -120,17 +120,7 @@
                 </div>
             </div>
         </div>
-                                
-        <!-- END CONTENT -->    
-        {include file='../../includes/content/banners/index.tpl'}
-        <!-- END CONTENT -->    
-           
-        <!-- RECOMMENDED -->
-        {*
-            Template: RECOMMENDED
-        *}    
-        {include file='../../includes/main/main-recommended.tpl'}   
-        
+
         <!-- FOOTER -->
         {*
             Template: FOOTER

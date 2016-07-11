@@ -93,7 +93,7 @@ description="Learn all pros and cons of StealthGenie spy app. Read editor's revi
                         </p>
                         <div class="media-btn">
                             <a href="/reviews/" class="btn btn-sm btn-allreviews">All Reviews</a>
-                            <a href="/reviews/pumpic.html" class="btn btn-sm btn-success">Next Review &rarr;</a>
+                            <a href="/reviews/mobileforcefield-mobile-monitoring.html" class="btn btn-sm btn-success">Next Review &rarr;</a>
                         </div>
                     </div>
                 </div>
@@ -102,11 +102,6 @@ description="Learn all pros and cons of StealthGenie spy app. Read editor's revi
                 <p>This monitoring application comprises many really workable monitoring solutions. Thus, you can keep control over cell phone usage and track website surfing. It is compatible with all major OS like Android, BlackBerry, and iOS. Geo-fencing is another bonus you will surely appreciate.
                 </p>
                 <p>Nevertheless, there are some functions the application lacks. Thus, you will not find either website or app restrictions among options that StealthGenie provides. It will not allow you to monitor social media and chats too. Moreover, StealthGenie violates human rights by allowing voice and surroundings recording as well as stealth mode operation.         </p>
-
-                <div class="box-graph">
-                    <img src="{$img}/diagrams/mobileforcefield.png" height="368" width="686" alt="">
-                </div>
-
                 <h3 class="heading">Reports & Logs – <span class="heading-rating">4/10</span></h3>
                 <p>The app lets you track cell phone activities quite precisely. Thus, you can monitor calls and text messages, emails and websites visited, location (plus geo-fencing), calendar, contacts, and multimedia files.
                 </p>
@@ -135,15 +130,6 @@ description="Learn all pros and cons of StealthGenie spy app. Read editor's revi
         </div>
     </div>
 
-    <!-- END CONTENT -->
-    {include file='../../includes/content/banners/index.tpl'}
-    <!-- END CONTENT -->
-
-    <!-- RECOMMENDED -->
-    {*
-        Template: RECOMMENDED
-    *}
-    {include file='../../includes/main/main-recommended.tpl'}
 
     <!-- FOOTER -->
     {*

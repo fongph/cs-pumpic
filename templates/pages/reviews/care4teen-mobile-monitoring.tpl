@@ -74,6 +74,7 @@
                                 <img src="{$img}/boxes/boxes_4_12.png" height="219" width="242" alt="">
                             </a>*}
                             <span class="img-media">
+                             <img src="/images/boxes/disconted.png" class="discounted-pic">
                                 <img src="{$img}/boxes/boxes_4_12.png" height="219" width="242" alt="">
                             </span>
                         </div>
@@ -99,9 +100,6 @@
                     <h3 class="heading">Summary</h3>
                     <p>Care4Teen proposes a possibility to track incoming and outgoing calls and messages, find the GPS location of the target device and set Geo-fences.</p>
 					<p>On the other hand, there are no email reviews as well as social media and chat monitoring. Also the app has no anti-theft security features.</p>
-                    <div class="box-graph">
-                        <img src="{$img}/diagrams/care4teen_new.jpg" height="368" width="690" alt="">
-                    </div>
                     <h3 class="heading">Reports & Logs – <span class="heading-rating">2/10</span></h3>
                     <p>The application saves reports with all incoming and outgoing calls and messages. Also every time your child enters a prohibited area you get a notification of Geo-fences.</p>
 					<p>However, this app doesn’t monitor multimedia content of the device, browsing history nor social media. As a result, your child can become a victim of online predators.</p>
@@ -120,16 +118,7 @@
                 </div>
             </div>
         </div>
-        
-        <!-- END CONTENT -->    
-        {include file='../../includes/content/banners/index.tpl'}
-        <!-- END CONTENT -->    
-           
-        <!-- RECOMMENDED -->
-        {*
-            Template: RECOMMENDED
-        *}    
-        {include file='../../includes/main/main-recommended.tpl'}   
+
         
         <!-- FOOTER -->
         {*

@@ -99,7 +99,7 @@
                     <h3 class="heading">Summary</h3>
                     <p>The application will come in handy, in case if you want just to keep track of cell phone activities of your children without active involvement. However, the price of the app diminishes any advantages of it, if there are any. This is not about children’s online security – it is about monitoring only. </p>
                     <div class="box-graph">
-                        <img src="{$img}/diagrams/txtwatcher_new.jpg" height="368" width="690" alt="">
+                        <img src="{$img}/diagrams/chart/08-pumpic-review-txtwatcher-min.png" height="368" width="686" alt="">
                     </div>
                     <h3 class="heading">Reports & Logs – <span class="heading-rating">2/10</span></h3>
                     <p>TXTWatcher reports a parent about any SMS, incoming and outgoing call a child has made. Any new application installed on the target device will also be noticed as you will receive a notification. Unfortunately, these are the only possibilities of this application and, actually speaking, it is possible to find free applications with such options. </p>
@@ -120,16 +120,7 @@
             </div>
         </div>
         
-        <!-- END CONTENT -->    
-        {include file='../../includes/content/banners/index.tpl'}
-        <!-- END CONTENT -->    
-           
-        <!-- RECOMMENDED -->
-        {*
-            Template: RECOMMENDED
-        *}    
-        {include file='../../includes/main/main-recommended.tpl'}   
-        
+
         <!-- FOOTER -->
         {*
             Template: FOOTER

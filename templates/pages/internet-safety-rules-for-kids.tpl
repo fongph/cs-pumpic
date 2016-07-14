@@ -139,7 +139,7 @@ ogImg="/images/infographic/X-Internet-Commandments-for-Kids-Going-Online-for-Fir
                             <li><a class="share-digg" href="#" data-location="http://digg.com/submit?url="></a></li>
                             <li><a class="share-twitter" href="#" data-location="https://twitter.com/share?url="></a></li>
                             <li><a class="share-reddit" href="#" data-location="//www.reddit.com/submit?url="></a></li>
-                            <li><a class="share-pinterest" href="#" data-location="http://pinterest.com/pin/create/link/?url=" data-media="http://pumpic.com/images/socials/social-icon.jpg"></a></li>
+                            <li><a class="share-pinterest" href="#" data-location="http://pinterest.com/pin/create/link/?url=" data-media="http://{$domain}/images/infographic/X-Internet-Commandments-for-Kids-Going-Online-for-First-Time-DV4.jpg"></a></li>
                         </ul>
 
 
@@ -165,7 +165,7 @@ ogImg="/images/infographic/X-Internet-Commandments-for-Kids-Going-Online-for-Fir
                         <li><a class="share-digg" href="#" data-location="http://digg.com/submit?url="></a></li>
                         <li><a class="share-twitter" href="#" data-location="https://twitter.com/share?url="></a></li>
                         <li><a class="share-reddit" href="#" data-location="//www.reddit.com/submit?url="></a></li>
-                        <li><a class="share-pinterest" href="#" data-location="http://pinterest.com/pin/create/link/?url=" data-media="http://pumpic.com/images/socials/social-icon.jpg"></a></li>
+                        <li><a class="share-pinterest" href="#" data-location="http://pinterest.com/pin/create/link/?url=" data-media="http://{$domain}/images/infographic/X-Internet-Commandments-for-Kids-Going-Online-for-First-Time-DV4.jpg"></a></li>
                     </ul>
                     <div class="text-center">
                         <p><strong>Add this infographic to your website by copying and pasting the following embed code:</strong></p>

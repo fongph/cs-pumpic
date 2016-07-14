@@ -112,8 +112,13 @@ function buildTplPath($arr,$config){
 		if(!$arr['html']){
 			$part_path = $config['smarty']['tpl_path'].$path.'/index';
 		}else{
-                        $_url = str_replace($_ext, "", $path);
-			$part_path = $config['smarty']['tpl_path'].$_url;
+            $countHtm = substr_count($path, 'htm');
+            if ($countHtm > 1) {
+                return array('answer' => 404, 'tpl' => "404.tpl");
+            }else{
+                $_url = str_replace($_ext, "", $path);
+                $part_path = $config['smarty']['tpl_path'].$_url;
+            }
 		}
 		if(file_exists($part_path.".tpl")){
 			return 	array('answer' => 200, 'tpl' => $part_path.".tpl");

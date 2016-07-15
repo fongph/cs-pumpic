@@ -42,7 +42,7 @@
             imgVerticalAlign = "bottom"
 			imgTitle = "Content filtering parental control tool for iOS"
             textAlign = "left"
-            title = "Best Internet Filter for iPhone. </br> Avert Online Dangers."
+            title = "Best Internet Filter for iPhone </br> Avert Online Dangers"
 			titleSize = "25px"
             description = "Keep objectionable content away from your kid. </br> Filter websites and block pages. "
             promoBuyBlock = "no"
@@ -90,7 +90,7 @@
             </div>
             <div class="item col-s-sm-12 col-xs-sm-12 col-sm-4 col-md-4 col-lg-4">
                 <section>
-                    <div><strong class="fz50 color-orange"><35%</strong></div>
+                    <div><strong class="fz50 color-orange">35%</strong></div>
                     <span class="text-uppercase">
                         parents use technology-based means to monitor their children’s digital activity and track their Internet use.
                     </span>
@@ -193,21 +193,21 @@
                         <div class="slide">
                 
                     <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
-                            <img src="{$img}/testimonials/angie-c.png" alt="" class="testimonial-photo">
+                            {*<img src="{$img}/testimonials/angie-c.png" alt="" class="testimonial-photo">*}
                             <div class="testimonial-text">
                                     <h4>Angie C. - mother of 15–year-old daughter</h4>
                                     <p>“Awesome app! My daughter goes through her teenage rebellion stage. We’ve all been through this when we were kids, so I’m trying not to put much pressure on her. She’s good girl, but I still decided to install parental control on her iPhone – just in case. Knowing the mistakes she makes helps me to help her live through the hard times in her life.”</p>
                             </div>
                     </div>
                     <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
-                            <img src="{$img}/testimonials/phillip-h.png" alt="" class="testimonial-photo">
+                            {*<img src="{$img}/testimonials/phillip-h.png" alt="" class="testimonial-photo">*}
                             <div class="testimonial-text">
                                     <h4>Phillip H. - father of 14–year-old daughter</h4>
                                     <p>“This app is right what a parent needs. At first, I thought that standard restrictions would be enough to keep my son away from the content teens are not supposed to see just yet. By accident, I found out that he worked his way around all limitations by resetting his iPhone somehow specifically. Guess, I didn’t have much choice after that :). Pumpic came in very handy!”</p>
                             </div>
                     </div>
                     <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
-                            <img src="{$img}/testimonials/sally-n.png" alt="" class="testimonial-photo">
+                            {*<img src="{$img}/testimonials/sally-n.png" alt="" class="testimonial-photo">*}
                             <div class="testimonial-text">
                                     <h4>Sally N. - mother of 17–year-old son</h4>
                                     <p>“Nice and helpful app. I tried out several monitoring applications, but none of them has so many functions as Pumpic. Just keep in mind that such tools are supplementary, they won’t do your parenting job for you. My son and I came to an agreement: we get Pumpic on his iPhone, he gets more freedom – online and offline. Guess, just the fact that he is being monitored makes him think twice about his actions.”</p>

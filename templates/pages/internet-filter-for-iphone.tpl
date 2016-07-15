@@ -116,8 +116,8 @@
             <tr>
                 <td class="item col-s-sm-12 col-xs-sm-12 col-sm-12 col-md-4 col-lg-4 border-none">
                     <section>
-                        <div class='pb20'><strong class="fz50 color-orange">iPhone ‘Restrictions'</strong></div>
-                        <p>‘Restrictions’ are Apple’s branded built-in parental controls. It can be quite effectively used for blocking or filtering things like adult-themed materials, games, social media and other applications. With ‘Restrictions’, parents can also monitor their kids’ calls, SMS, contacts, calendar as well as track GPS location and view route history. Yet, like almost any onboard software, ‘Restrictions’ have limited functionality, and it is, in fact, pretty easy for a tech-savvy teen to work around them.</p>
+                        <div class='pb20'><strong class="fz50 color-orange">iPhone "Restrictions"</strong></div>
+                        <p>"Restrictions" are Apple’s branded built-in parental controls. It can be quite effectively used for blocking or filtering things like adult-themed materials, games, social media and other applications. With ‘Restrictions’, parents can also monitor their kids’ calls, SMS, contacts, calendar as well as track GPS location and view route history. Yet, like almost any onboard software, ‘Restrictions’ have limited functionality, and it is, in fact, pretty easy for a tech-savvy teen to work around them.</p>
                     </section>
                 </td>
                 <td class="item col-s-sm-12 col-xs-sm-12 col-sm-12 col-md-4 col-lg-4 border-none vertical-aligh-bottom text-center">

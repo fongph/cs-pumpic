@@ -36,9 +36,9 @@
         {* bg_famaly_427x254.png imgVerticalAlign = "bottom"*}
         <!-- CONTENT -->
         {include file='../includes/content/info/info-promo.tpl'
-            imgUrl = "header_banners/best-internet-filter-for-android_header.png"
+            imgUrl = "header_banners/internet-filter-for-iphone_icon.png"
             imgAlt = "Internet Filter for iPhone"
-            imgAlign = "left"
+            imgAlign = "right"
             imgVerticalAlign = "bottom"
 			imgTitle = "Content filtering parental control tool for iOS"
             textAlign = "left"
@@ -109,7 +109,7 @@
     title="How to Filter Out Internet Content on iPhone"
     blockBg='dark'}
 	
-	    <p class="text-center f-light">Having an iPhone is a sacred dream of many kids and teenagers. Apple, Inc. is so good at marketing its products to the younger generation that 74% of teens want their next phone to be specifically an iPhone (according to investment bank Piper Jaffray survey conducted in October 2015). So if you – as a parent – decide to fulfill your kid’s dream, be sure to take care of some precaution measures that will protect your little ones from online perils mentioned above by setting up content filters for iPhone with the help of built-in tools or additional software.</p>
+	    <p class="text-center f-light">Having an iPhone is a sacred dream of many kids and teenagers. Apple, Inc. is so good at marketing its products to the younger generation that 74% of teens want their next phone to be specifically an iPhone (according to investment bank Piper Jaffray survey conducted in October 2015). So if you – as a parent – decide to fulfil your kid’s dream, be sure to take care of some precaution measures that will protect your little ones from online perils mentioned above by setting up content filters for iPhone with the help of built-in tools or additional software.</p>
         <!-- BLOCK STATISTICK -->
         
         <table class="table-statistick">
@@ -117,11 +117,11 @@
                 <td class="item col-s-sm-12 col-xs-sm-12 col-sm-12 col-md-4 col-lg-4 border-none">
                     <section>
                         <div class='pb20'><strong class="fz50 color-orange">iPhone "Restrictions"</strong></div>
-                        <p>"Restrictions" are Apple’s branded built-in parental controls. It can be quite effectively used for blocking or filtering things like adult-themed materials, games, social media and other applications. With ‘Restrictions’, parents can also monitor their kids’ calls, SMS, contacts, calendar as well as track GPS location and view route history. Yet, like almost any onboard software, ‘Restrictions’ have limited functionality, and it is, in fact, pretty easy for a tech-savvy teen to work around them.</p>
+                        <p>"Restrictions" are Apple’s branded built-in parental controls. It can be quite effectively used for blocking or filtering things like adult-themed materials, games, social media and other applications. With "Restrictions", parents can also monitor their kids’ calls, SMS, contacts, calendar as well as track GPS location and view route history. Yet, like almost any onboard software, "Restrictions" have limited functionality, and it is, in fact, pretty easy for a tech-savvy teen to work around them.</p>
                     </section>
                 </td>
                 <td class="item col-s-sm-12 col-xs-sm-12 col-sm-12 col-md-4 col-lg-4 border-none vertical-aligh-bottom text-center">
-                    <img class="statistick-images" alt="Filter objectionable content with Pumpic" title = "Filter content on iPhone to protect kids from online hazards" src="{$img}/landings/best-internet-filter-for-android_icon.png" style="margin-bottom: 70px;"/>
+                    <img class="statistick-images" alt="Filter objectionable content with Pumpic" title = "Filter content on iPhone to protect kids from online hazards" src="{$img}/landings/internet-filter-for-iphone_header.png" style="margin-bottom: 60px;"/>
                 </td>
                 <td class="item col-s-sm-12 col-xs-sm-12 col-sm-12 col-md-4 col-lg-4 border-none">
                     <section>
@@ -193,21 +193,21 @@
                         <div class="slide">
                 
                     <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
-                            {*<img src="{$img}/testimonials/angie-c.png" alt="" class="testimonial-photo">*}
+                            <img src="{$img}/testimonials/angie-c.png" alt="" class="testimonial-photo">
                             <div class="testimonial-text">
                                     <h4>Angie C. - mother of 15–year-old daughter</h4>
                                     <p>“Awesome app! My daughter goes through her teenage rebellion stage. We’ve all been through this when we were kids, so I’m trying not to put much pressure on her. She’s good girl, but I still decided to install parental control on her iPhone – just in case. Knowing the mistakes she makes helps me to help her live through the hard times in her life.”</p>
                             </div>
                     </div>
                     <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
-                            {*<img src="{$img}/testimonials/phillip-h.png" alt="" class="testimonial-photo">*}
+                            <img src="{$img}/testimonials/phillip-h.png" alt="" class="testimonial-photo">
                             <div class="testimonial-text">
                                     <h4>Phillip H. - father of 14–year-old daughter</h4>
-                                    <p>“This app is right what a parent needs. At first, I thought that standard restrictions would be enough to keep my son away from the content teens are not supposed to see just yet. By accident, I found out that he worked his way around all limitations by resetting his iPhone somehow specifically. Guess, I didn’t have much choice after that :). Pumpic came in very handy!”</p>
+                                    <p>“This app is right what a parent needs. At first, I thought that standard restrictions would be enough to keep my son away from the content teens are not supposed to see just yet. By accident, I found out that he worked his way around all limitations by resetting his iPhone somehow specifically. Guess, I didn’t have much choice after that:). Pumpic came in very handy!”</p>
                             </div>
                     </div>
                     <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
-                            {*<img src="{$img}/testimonials/sally-n.png" alt="" class="testimonial-photo">*}
+                            <img src="{$img}/testimonials/sally-n.png" alt="" class="testimonial-photo">
                             <div class="testimonial-text">
                                     <h4>Sally N. - mother of 17–year-old son</h4>
                                     <p>“Nice and helpful app. I tried out several monitoring applications, but none of them has so many functions as Pumpic. Just keep in mind that such tools are supplementary, they won’t do your parenting job for you. My son and I came to an agreement: we get Pumpic on his iPhone, he gets more freedom – online and offline. Guess, just the fact that he is being monitored makes him think twice about his actions.”</p>

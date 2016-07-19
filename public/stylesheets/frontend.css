@@ -10275,6 +10275,7 @@ form.form-faq label.disabled {
 }
 .form legend {
   text-transform: none;
+  text-align: center;
 }
 .form button {
   min-width: 195px;

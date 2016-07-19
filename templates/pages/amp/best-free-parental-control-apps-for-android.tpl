@@ -1,6 +1,7 @@
 <!doctype html>
 <html amp>
 <head>
+    <title>Best Free Parental Control Apps for Android | Pumpic</title>
     <meta charset="utf-8">
     <link rel="canonical" href="http://pumpic.com/best-free-parental-control-apps-for-android.html">
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">

@@ -318,7 +318,7 @@ class Compatibility {
                 if (isset($data[$id]) and !empty($data[$id])) {
                     $_os = (isset($data['os'])) ? trim(strtolower($data['os']) ) : false;
                     $name = (isset($os_iOS[$key][$id])) ? $os_iOS[$key][$id] : $name;
-                    
+
                     if (isset($data[$id . '_comment']) && strlen($data[$id . '_comment'])) {
                         $_add_info = '<br />';
                         if($_os and isset($addInfo[ $_os ][$key][$id])) {

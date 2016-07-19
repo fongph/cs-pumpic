@@ -163,6 +163,10 @@ if ( !function_exists('fb_get_cat_related_posts') ) {
     }
 }
 
+remove_action('wp_head', 'wp_shortlink_wp_head', 10, 0);
+remove_action( 'wp_head', 'adjacent_posts_rel_link_wp_head' );
+
+
 function get_content_template() {
     $_slug = this_Slug();  
     $_path = get_template_directory(). '/cellspy-pages/'. strtolower( $_slug ).'.php';

@@ -252,7 +252,6 @@
                                                                 <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> KiK <span>Monitor online text communication. <br/> (from 9.0 and up)</span></li>
                                                                 <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> WhatsApp  <span>Follow personal messages and group chats.</span></li>
                                                                 <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Notes  <span>View notes kept on the target device.<br/> (up to iOS 8.4.1)</span></li>
-                                                                <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Videos  <span>View all videos stored on a device.<br/> (from 9.0 and up)</span></li>
                                                             </ul>
                                                         </div>
                                                     </div>

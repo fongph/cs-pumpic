@@ -15,14 +15,15 @@
 <!-- itemscope, itemprop and itemid are used for snippets -->
 
 <div class="col-lg-8 col-md-8 col-sm-12">
-    <article>
+    <article itemscope itemtype="http://schema.org/Article">
         <meta itemscope itemprop="mainEntityOfPage"  itemType="https://schema.org/WebPage" itemid="http://pumpic.com/security/<?php echo get_the_name() ;?>/"/>
+
         <h1 class="h1 h1_post" itemprop="headline"><?php the_title(); ?></h1>
+        
         <div class="list_tags">
             <span class="date"><?php echo get_the_date();  // wp_date_format() ?></span>
             <?php /* the_tags(__('<strong>Posted by to</strong>'), '')*/ ?>
-            <meta itemprop="datePublished" content="<?php echo get_the_date();?>"/>
-            <meta itemprop="dateModified" content="<?php echo get_the_modified_date(); ?>"/>
+
         </div>
 
 
@@ -55,6 +56,9 @@
 
 
         <?php if ( function_exists( 'get_Sexy_Author_Bio' ) ) echo get_Sexy_Author_Bio(); ?>
+
+        <meta itemprop="datePublished" content="<?php echo get_the_date();?>"/>
+        <meta itemprop="dateModified" content="<?php echo get_the_modified_date(); ?>"/>
         <script>
             $('.share_list a').click(function(e){
                 e.preventDefault();

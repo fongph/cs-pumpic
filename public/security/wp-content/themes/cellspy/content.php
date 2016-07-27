@@ -12,9 +12,10 @@
         wp_list_categories( $args );?>
     </ul>
 </div>
-<!-- itemscope, itemprop and itemid are used for snippets -->
+
 
 <div class="col-lg-8 col-md-8 col-sm-12">
+    <!-- itemscope, itemprop and itemid are used for snippets -->
     <article itemscope itemtype="http://schema.org/Article">
         <meta itemscope itemprop="mainEntityOfPage"  itemType="https://schema.org/WebPage" itemid="http://pumpic.com/security/<?php echo get_the_name() ;?>/"/>
 

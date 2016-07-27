@@ -82,8 +82,8 @@
     <?php require_once '../../templates/includes/blog-analytics-header.tpl'; ?>
 
 </head>
-
-<body class="wp-blog">
+<!-- shows snippets -->
+<body <?php if(is_single()){echo "itemscope itemtype=\"http://schema.org/Article\"" ;} ?> class="wp-blog">
 
 <a href="#" class="go_up"></a>
 

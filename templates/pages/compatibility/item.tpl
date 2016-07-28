@@ -50,6 +50,14 @@
                         </div>
                         <!-- end -->
 
+                        {if $getSetting._item.os  == "Android"}
+                            <style>
+                                .icon-icloud, .icloud-compatibility {
+                                    display: none;
+                                }
+                            </style>
+                        {/if}
+
                         {if $getSetting._item}
                             <!-- item device -->
                             <div class="row">
@@ -107,10 +115,12 @@
                                         </div>
                                     </div>
                                 </div>
-
                                 <div class="col-sm-8 col-md-8 table-resp">
                                     {foreach from=$getSetting._item.features key=name item=params}
                                         <ul class="{if $getSetting._item.features|@count < 5}option_list w25p{else}option_list{/if}">
+
+
+
                                             <li>
                                                 <span>{$name}</span>
                                                 <ul>
@@ -135,10 +145,6 @@
                             {/if}
 
                         {/if}
-
-
-
-
                         <!-- end -->
                     </div>
                 </div>

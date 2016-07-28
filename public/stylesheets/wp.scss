@@ -19217,6 +19217,24 @@ img {
 }
 }
 }
+#snippet-box {
+  background: #F0F0F0;
+  background: linear-gradient(top, #FFF 50%, #E7E7E7 100%);
+  background: -o-linear-gradient(top, #FFF 50%, #E7E7E7 100%);
+  background: -moz-linear-gradient(top, #FFF 50%, #E7E7E7 100%);
+  background: -webkit-linear-gradient(top, #FFF 50%, #E7E7E7 100%);
+  background: -ms-linear-gradient(top, #FFF 50%, #E7E7E7 100%);
+  border: 1px solid #ACACAC;
+  font-family:inherit;
+  font-size: 13px;
+  padding: 0;
+  margin: 0 0 15px 0;
+  float: left;
+  width: 600px;
+  clear: both;
+  box-sizing: content-box;
+  display: none;
+}
 
 @media (max-width: 768px) {
   #fly-free-trial {

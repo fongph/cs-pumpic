@@ -4,8 +4,22 @@
     robots="yes" 
     title="Best parental control apps for Android and iPhone"
     description="We have manually reviewed 50+ parental control software and handpicked the best products for you. Here's the detailed comparison of parental control apps for Android devices and iPhones that allow parents to block and filter bad content, limit app usage, review calls, texts, and Internet activity."
-}    
-    
+}
+
+
+<style>
+
+    .table-pumpic-reviews .icon-ok:before{
+        color: #f5ac43;
+    }
+
+    @media (min-width: 992px) {
+        .table-vertical-striped tr td:nth-child(2) .icon-ok:before {
+                     color: #f5ac43;
+        }
+    }
+</style>
+
 <body>
     <!-- BLOCK GTM -->
     {include file='../../includes/main/main-after-body.tpl'}
@@ -71,13 +85,19 @@
     <div id="grid-images" class="row">
         <div class="col-lg-12 col-md-12 col-sm-12">
             <div class="pt30 pb20">
-                <p>There are many developers calling their child monitoring applications the best parental control software ever. However, this is not true in all cases. An application you get to protect your kids must be reliable and multifunctional. It means it must accurately log information upon which parents would be able to find out if their child is safe, whether he or she is not engaged in any misgiving activity on a smartphone or tablet, and if he or she is not facing any danger online. This raises the question how many features the best parental control app must include, and thus, how many activities on your kid’s smartphone or tablet cover.</p>
-				<p>The table below compares top ten parental control apps available online. You can check major mobile monitoring functions as well as if each particular application clamming the title of the best app for parental control provides its users with them. Note that the more information monitoring software can log, the wider picture on your kids’ security and behavior you have.</p>
+                <p>Many developers are calling their child monitoring applications the best parental control software ever. There are many cell phone monitoring reviews written by order to impose this idea. However, this is not true in most cases. An application you get to protect your kids must be reliable and multifunctional. It means it must accurately log information upon which parents would be able to find out if their child is safe, whether he or she is not engaged in any misgiving activity on a smartphone or tablet, and if he or she is not facing any danger online. This raises the question how many features the best parental control app must include, and thus, how many activities on your kid’s smartphone or tablet cover.
+                </p>
+				<p>The table below compares top ten parental control apps available online. You can check primary mobile monitoring functions as well as if each particular application claiming the title of the best app for parental control provides its users with them. Note that the more information monitoring software can log, the wider picture on your kids’ security and behavior you have.</p>
+
+                <p>Check out the below comparison in addition to other parental control software reviews you can find online. Make your wise decision from reliable and multiple facts only.</p>
+                <p> Also, check out our smartphone monitoring software reviews of the best free Android parental control apps as well as some other parental controls for Android. Find the best monitoring software for your children’s safety.</p>
             </div>
         </div>
     </div>    
 {EndContent}
-        
+
+
+
         
         <div class="darken">
             <div class="container">
@@ -111,14 +131,14 @@
                                     </div>
                                     <div class="content-thumb-ranking">
                                         <div class="img-ranking">
-                                            <img src="{$img}/boxes/boxes_1_11.png" height="57" width="62" alt="">
-                                            <span>Mobile <br />Force Field</span>
+                                            <img src="{$img}/boxes/boxes_3_1-min.png" height="57" width="62" alt="">
+                                            <span>uKnowKids</span>
                                         </div>
-                                        <div class="price-ranking">$31.95</div>
+                                        <div class="price-ranking">$10</div>
                                     </div>
                                     <div class="footer-thumb-ranking">
                                         <div class="btn-ranking">
-                                            <a href="/reviews/mobileforcefield-mobile-monitoring.html" class="btn btn-info">Read review</a>
+                                            <a href="/reviews/uknowkids-mobile-monitoring.html" class="btn btn-info">Read review</a>
                                         </div>
                                     </div>
                                 </div>
@@ -206,14 +226,14 @@
                                     </div>
                                     <div class="content-thumb-ranking">
                                         <div class="img-ranking">
-                                            <img src="{$img}/boxes/boxes_1_9.png" height="57" width="62" alt="">
-                                            <span>SafetyWeb</span>
+                                            <img src="{$img}/boxes/boxes_2_2-min.png" height="57" width="62" alt="">
+                                            <span>Kidlox</span>
                                         </div>
-                                        <div class="price-ranking">$4.99</div>
+                                        <div class="price-ranking">$6.99</div>
                                     </div>
                                     <div class="footer-thumb-ranking">
                                         <div class="btn-ranking">
-                                            <a href="/reviews/safetyweb-mobile-monitoring.html" class="btn btn-info">Read review</a>
+                                            <a href="/reviews/kidlox-mobile-monitoring.html" class="btn btn-info">Read review</a>
                                         </div>
                                     </div>
                                 </div>
@@ -263,14 +283,14 @@
                                     </div>
                                     <div class="content-thumb-ranking">
                                         <div class="img-ranking">
-                                            <img src="{$img}/boxes/boxes_1_12.png" height="57" width="62" alt="">
-                                            <span>Care4Teen</span>
+                                            <img src="{$img}/boxes/boxes_3_3-min.png" height="57" width="62" alt="">
+                                            <span>Abeona</span>
                                         </div>
                                         <div class="price-ranking">Free</div>
                                     </div>
                                     <div class="footer-thumb-ranking">
                                         <div class="btn-ranking">
-                                            <a href="/reviews/care4teen-mobile-monitoring.html" class="btn btn-info">Read review</a>
+                                            <a href="/reviews/abeona-mobile-monitoring.html" class="btn btn-info">Read review</a>
                                         </div>
                                     </div>
                                 </div>
@@ -290,7 +310,7 @@
                                 <th>
                                     <div class="boxes-img">
                                         <span>#2</span>
-                                        <img src="{$img}/boxes/boxes_1_11.png" height="46" width="51" alt="">
+                                        <img src="{$img}/boxes/boxes_3_1-min.png" height="46" width="51" alt="">
                                     </div>
                                 </th>
                                 <th>
@@ -320,7 +340,7 @@
                                 <th>
                                     <div class="boxes-img">
                                         <span>#7</span>
-                                        <img src="{$img}/boxes/boxes_2_9.png" height="46" width="51" alt="">
+                                        <img src="{$img}/boxes/boxes_2_2-min.png" height="46" width="51" alt="">
                                     </div>
                                 </th>
                                 <th>
@@ -338,7 +358,7 @@
                                 <th>
                                     <div class="boxes-img">
                                         <span>#10</span>
-                                        <img src="{$img}/boxes/boxes_1_12.png" height="46" width="51" alt="">
+                                        <img src="{$img}/boxes/boxes_3_3-min.png" height="46" width="51" alt="">
                                     </div>
                                 </th>
                             </tr>
@@ -354,7 +374,7 @@
                                 <td><i class="icon-ok"></i></td>
                                 <td><i class="icon-cancel"></i></td>
                                 <td><i class="icon-cancel"></i></td>
-                                <td><i class="icon-ok"></i></td>
+                                <td><i class="icon-cancel"></i></td>
                                 <td><i class="icon-ok"></i></td>
                                 <td><i class="icon-cancel"></i></td>
                                 <td><i class="icon-ok"></i></td>
@@ -369,10 +389,10 @@
                                 <td><i class="icon-ok"></i></td>
                                 <td><i class="icon-cancel"></i></td>
                                 <td><i class="icon-cancel"></i></td>
-                                <td><i class="icon-ok"></i></td>
-                                <td><i class="icon-ok"></i></td>
                                 <td><i class="icon-cancel"></i></td>
                                 <td><i class="icon-ok"></i></td>
+                                <td><i class="icon-cancel"></i></td>
+                                <td><i class="icon-cancel"></i></td>
                             </tr>
                             <tr>
                                 <td>
@@ -414,7 +434,7 @@
                                 <td><i class="icon-cancel"></i></td>
                                 <td><i class="icon-cancel"></i></td>
                                 <td><i class="icon-cancel"></i></td>
-                                <td><i class="icon-ok"></i></td>
+                                <td><i class="icon-cancel"></i></td>
                                 <td><i class="icon-cancel"></i></td>
                                 <td><i class="icon-cancel"></i></td>
                                 <td><i class="icon-cancel"></i></td>
@@ -429,10 +449,10 @@
                                 <td><i class="icon-ok"></i></td>
                                 <td><i class="icon-ok"></i></td>
                                 <td><i class="icon-cancel"></i></td>
+                                <td><i class="icon-cancel"></i></td>
+                                <td><i class="icon-cancel"></i></td>
+                                <td><i class="icon-cancel"></i></td>
                                 <td><i class="icon-ok"></i></td>
-                                <td><i class="icon-cancel"></i></td>
-                                <td><i class="icon-cancel"></i></td>
-                                <td><i class="icon-cancel"></i></td>
                             </tr>
                             <tr>
                                 <td>
@@ -492,7 +512,7 @@
                                 <td><i class="icon-cancel"></i></td>
                                 <td><i class="icon-ok"></i></td>
                                 <td><i class="icon-cancel"></i></td>
-                                <td><i class="icon-cancel"></i></td>
+                                <td><i class="icon-ok"></i></td>
                             </tr>
                             <tr>
                                 <td>
@@ -529,7 +549,7 @@
                                     <span class="title-table">Facebook Messenger</span>
                                 </td>
                                 <td><i class="icon-ok"></i></td>
-                                <td><i class="icon-cancel"></i></td>
+                                <td><i class="icon-ok"></i></td>
                                 <td><i class="icon-cancel"></i></td>
                                 <td><i class="icon-cancel"></i></td>
                                 <td><i class="icon-cancel"></i></td>
@@ -574,7 +594,7 @@
                                     <span class="title-table">Instagram</span>
                                 </td>
                                 <td><i class="icon-ok"></i></td>
-                                <td><i class="icon-cancel"></i></td>
+                                <td><i class="icon-ok"></i></td>
                                 <td><i class="icon-cancel"></i></td>
                                 <td><i class="icon-cancel"></i></td>
                                 <td><i class="icon-cancel"></i></td>
@@ -649,22 +669,22 @@
                                 <td><i class="icon-ok"></i></td>
                                 <td><i class="icon-ok"></i></td>
                                 <td><i class="icon-ok"></i></td>
+                                <td><i class="icon-ok"></i></td>
                                 <td><i class="icon-cancel"></i></td>
                                 <td><i class="icon-cancel"></i></td>
-                                <td><i class="icon-cancel"></i></td>
-                                <td><i class="icon-cancel"></i></td>
+                                <td><i class="icon-ok"></i></td>
                             </tr>
                             <tr>
                                 <td>
                                     <span class="title-table">Application Blocking</span>
                                 </td>
                                 <td><i class="icon-ok"></i></td>
-                                <td><i class="icon-ok"></i></td>
-                                <td><i class="icon-ok"></i></td>
-                                <td><i class="icon-ok"></i></td>
-                                <td><i class="icon-ok"></i></td>
-                                <td><i class="icon-ok"></i></td>
                                 <td><i class="icon-cancel"></i></td>
+                                <td><i class="icon-ok"></i></td>
+                                <td><i class="icon-ok"></i></td>
+                                <td><i class="icon-ok"></i></td>
+                                <td><i class="icon-ok"></i></td>
+                                <td><i class="icon-ok"></i></td>
                                 <td><i class="icon-cancel"></i></td>
                                 <td><i class="icon-cancel"></i></td>
                                 <td><i class="icon-ok"></i></td>
@@ -674,15 +694,15 @@
                                     <span class="title-table">Website Blocking</span>
                                 </td>
                                 <td><i class="icon-ok"></i></td>
-                                <td><i class="icon-ok"></i></td>
+                                <td><i class="icon-cancel"></i></td>
                                 <td><i class="icon-ok"></i></td>
                                 <td><i class="icon-ok"></i></td>
                                 <td><i class="icon-ok"></i></td>
                                 <td><i class="icon-cancel"></i></td>
-                                <td><i class="icon-cancel"></i></td>
-                                <td><i class="icon-cancel"></i></td>
-                                <td><i class="icon-cancel"></i></td>
                                 <td><i class="icon-ok"></i></td>
+                                <td><i class="icon-cancel"></i></td>
+                                <td><i class="icon-cancel"></i></td>
+                                <td><i class="icon-cancel"></i></td>
                             </tr>
                             <tr>
                                 <td>
@@ -793,7 +813,7 @@
                                 <td><i class="icon-cancel"></i></td>
                                 <td><i class="icon-cancel"></i></td>
                                 <td><i class="icon-ok"></i></td>
-                                <td><i class="icon-cancel"></i></td>
+                                <td><i class="icon-ok"></i></td>
                                 <td><i class="icon-cancel"></i></td>
                                 <td><i class="icon-cancel"></i></td>
                                 <td><i class="icon-cancel"></i></td>
@@ -807,21 +827,6 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td>
-                                    <span class="title-table">Free 24/7 Support</span>
-                                </td>
-                                <td><i class="icon-ok"></i></td>
-                                <td><i class="icon-cancel"></i></td>
-                                <td><i class="icon-cancel"></i></td>
-                                <td><i class="icon-cancel"></i></td>
-                                <td><i class="icon-cancel"></i></td>
-                                <td><i class="icon-cancel"></i></td>
-                                <td><i class="icon-cancel"></i></td>
-                                <td><i class="icon-cancel"></i></td>
-                                <td><i class="icon-cancel"></i></td>
-                                <td><i class="icon-cancel"></i></td>
-                            </tr>
                             <tr>
                                 <td>
                                     <span class="title-table">Email / Form</span>
@@ -847,7 +852,7 @@
                                 <td><i class="icon-cancel"></i></td>
                                 <td><i class="icon-cancel"></i></td>
                                 <td><i class="icon-cancel"></i></td>
-                                <td><i class="icon-ok"></i></td>
+                                <td><i class="icon-cancel"></i></td>
                                 <td><i class="icon-cancel"></i></td>
                                 <td><i class="icon-cancel"></i></td>
                                 <td><i class="icon-cancel"></i></td>
@@ -872,12 +877,12 @@
                                     <span class="title-table">Software Updates</span>
                                 </td>
                                 <td><i class="icon-ok"></i></td>
-                                <td><i class="icon-cancel"></i></td>
+                                <td><i class="icon-ok"></i></td>
                                 <td><i class="icon-cancel"></i></td>
                                 <td><i class="icon-cancel"></i></td>
                                 <td><i class="icon-cancel"></i></td>
                                 <td><i class="icon-ok"></i></td>
-                                <td><i class="icon-cancel"></i></td>
+                                <td><i class="icon-ok"></i></td>
                                 <td><i class="icon-cancel"></i></td>
                                 <td><i class="icon-cancel"></i></td>
                                 <td><i class="icon-cancel"></i></td>
@@ -958,38 +963,82 @@
                                         </div>
                                     </div>
                                 </li>
+
+                                <li>
+                                    <div class="thumb-ranking">
+
+                                        <div class="content-thumb-ranking">
+                                            <div class="discounted">
+                                                <img src="/images/discontinued.png" alt="">
+                                            </div>
+                                            <div class="img-ranking">
+                                                <img src="/images/boxes/boxes_1_11.png" height="57" width="62" alt="">
+                                                <span>Mobile Force Field</span>
+                                            </div>
+                                            <div class="price-ranking">$99.99</div>
+                                        </div>
+                                        <div class="footer-thumb-ranking">
+                                            <div class="btn-ranking">
+                                                <a href="/reviews/mobileforcefield-mobile-monitoring.html" class="btn btn-info">Read review</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+
+
+
+
+                                <li>
+                                    <div class="thumb-ranking">
+
+                                        <div class="content-thumb-ranking">
+                                            <div class="discounted">
+                                                <img src="/images/discontinued.png" alt="">
+                                            </div>
+                                            <div class="img-ranking">
+                                                <img src="/images/boxes/boxes_1_9.png" height="57" width="62" alt="">
+                                                <span>SafetyWeb</span>
+                                            </div>
+                                            <div class="price-ranking">$99.99</div>
+                                        </div>
+                                        <div class="footer-thumb-ranking">
+                                            <div class="btn-ranking">
+                                                <a href="/reviews/safetyweb-mobile-monitoring.html" class="btn btn-info">Read review</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+
+
+
+                                <li>
+                                    <div class="thumb-ranking">
+
+                                        <div class="content-thumb-ranking">
+                                            <div class="discounted">
+                                                <img src="/images/discontinued.png" alt="">
+                                            </div>
+                                            <div class="img-ranking">
+                                                <img src="/images/boxes/boxes_1_12.png" height="57" width="62" alt="">
+                                                <span>Care4Teen</span>
+                                            </div>
+                                            <div class="price-ranking">$99.99</div>
+                                        </div>
+                                        <div class="footer-thumb-ranking">
+                                            <div class="btn-ranking">
+                                                <a href="/reviews/care4teen-mobile-monitoring.html" class="btn btn-info">Read review</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
                             </ul>
                         </div>
 </div>
 
-
-
-
-
-
-
-
-                    {*<table class="table-vertical-striped">
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <span class="title-table">Price</span>
-                                </td>
-                                <td>$39.99</td>
-                                <td>$31.95</td>
-                                <td>$49.99</td>
-                                <td>$19.99</td>
-                                <td>$39.99</td>
-                                <td>$39.99</td>
-                                <td>$4.99</td>
-                                <td>$65.88</td>
-                                <td>$5.99</td>
-                                <td>Free</td>
-                            </tr>
-                        </tbody>
-                    </table>*}       
                     <div class="table-vertical-striped-mobile">
-                        <table class="table-vertical-striped">
+                        <table class="table-vertical-striped table-pumpic-reviews">
                             <thead>
                                 <tr>
                                     <th colspan="2" class="boxes-img-heading">
@@ -1111,6 +1160,12 @@
                                 </tr>
                                 <tr>
                                     <td>
+                                        <span class="title-table">Snapchat</span>
+                                    </td>
+                                    <td><i class="icon-ok"></i></td>
+                                </tr>
+                                <tr>
+                                    <td>
                                         <span class="title-table">Application Limiting</span>
                                     </td>
                                     <td><i class="icon-ok"></i></td>
@@ -1171,12 +1226,6 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <span class="title-table">Free 24/7 Support</span>
-                                    </td>
-                                    <td><i class="icon-ok"></i></td>
-                                </tr>
-                                <tr>
-                                    <td>
                                         <span class="title-table">Email / Form</span>
                                     </td>
                                     <td><i class="icon-ok"></i></td>
@@ -1207,7 +1256,7 @@
                                     <th colspan="2">
                                         <div class="boxes-img">
                                             <span>#2</span>
-                                            <img src="{$img}/boxes/6.png" height="45" width="152" alt="">
+                                            <img src="{$img}/boxes/uknowkids.png" height="45" width="152" alt="">
                                         </div>
                                     </th>
                                 </tr>
@@ -1289,7 +1338,7 @@
                                     <td>
                                         <span class="title-table">Facebook Messenger</span>
                                     </td>
-                                    <td><i class="icon-cancel"></i></td>
+                                    <td><i class="icon-ok"></i></td>
                                 </tr>
                                 <tr>
                                     <td>
@@ -1307,7 +1356,7 @@
                                     <td>
                                         <span class="title-table">Instagram</span>
                                     </td>
-                                    <td><i class="icon-cancel"></i></td>
+                                    <td><i class="icon-ok"></i></td>
                                 </tr>
                                 {*<tr>
                                     <td>
@@ -1323,6 +1372,12 @@
                                 </tr>
                                 <tr>
                                     <td>
+                                        <span class="title-table">Snapchat</span>
+                                    </td>
+                                    <td><i class="icon-cancel"></i></td>
+                                </tr>
+                                <tr>
+                                    <td>
                                         <span class="title-table">Application Limiting</span>
                                     </td>
                                     <td><i class="icon-cancel"></i></td>
@@ -1331,13 +1386,13 @@
                                     <td>
                                         <span class="title-table">Application Blocking</span>
                                     </td>
-                                    <td><i class="icon-ok"></i></td>
+                                    <td><i class="icon-cancel"></i></td>
                                 </tr>
                                 <tr>
                                     <td>
                                         <span class="title-table">Website Blocking</span>
                                     </td>
-                                    <td><i class="icon-ok"></i></td>
+                                    <td><i class="icon-cancel"></i></td>
                                 </tr>
                                 <tr>
                                     <td>
@@ -1383,12 +1438,6 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <span class="title-table">Free 24/7 Support</span>
-                                    </td>
-                                    <td><i class="icon-cancel"></i></td>
-                                </tr>
-                                <tr>
-                                    <td>
                                         <span class="title-table">Email / Form</span>
                                     </td>
                                     <td><i class="icon-ok"></i></td>
@@ -1409,7 +1458,7 @@
                                     <td>
                                         <span class="title-table">Software Updates</span>
                                     </td>
-                                    <td><i class="icon-cancel"></i></td>
+                                    <td><i class="icon-ok"></i></td>
                                 </tr>
                             </tbody>
                         </table>
@@ -1535,6 +1584,12 @@
                                 </tr>
                                 <tr>
                                     <td>
+                                        <span class="title-table">Snapchat</span>
+                                    </td>
+                                    <td><i class="icon-cancel"></i></td>
+                                </tr>
+                                <tr>
+                                    <td>
                                         <span class="title-table">Application Limiting</span>
                                     </td>
                                     <td><i class="icon-ok"></i></td>
@@ -1592,12 +1647,6 @@
                                         <span class="title-table">Remote Lock</span>
                                     </td>
                                     <td><i class="icon-ok"></i></td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <span class="title-table">Free 24/7 Support</span>
-                                    </td>
-                                    <td><i class="icon-cancel"></i></td>
                                 </tr>
                                 <tr>
                                     <td>
@@ -1747,6 +1796,12 @@
                                 </tr>
                                 <tr>
                                     <td>
+                                        <span class="title-table">Snapchat</span>
+                                    </td>
+                                    <td><i class="icon-cancel"></i></td>
+                                </tr>
+                                <tr>
+                                    <td>
                                         <span class="title-table">Application Limiting</span>
                                     </td>
                                     <td><i class="icon-ok"></i></td>
@@ -1802,12 +1857,6 @@
                                 <tr>
                                     <td>
                                         <span class="title-table">Remote Lock</span>
-                                    </td>
-                                    <td><i class="icon-cancel"></i></td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <span class="title-table">Free 24/7 Support</span>
                                     </td>
                                     <td><i class="icon-cancel"></i></td>
                                 </tr>
@@ -1959,6 +2008,12 @@
                                 </tr>
                                 <tr>
                                     <td>
+                                        <span class="title-table">Snapchat</span>
+                                    </td>
+                                    <td><i class="icon-cancel"></i></td>
+                                </tr>
+                                <tr>
+                                    <td>
                                         <span class="title-table">Application Limiting</span>
                                     </td>
                                     <td><i class="icon-ok"></i></td>
@@ -2014,12 +2069,6 @@
                                 <tr>
                                     <td>
                                         <span class="title-table">Remote Lock</span>
-                                    </td>
-                                    <td><i class="icon-cancel"></i></td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <span class="title-table">Free 24/7 Support</span>
                                     </td>
                                     <td><i class="icon-cancel"></i></td>
                                 </tr>
@@ -2171,6 +2220,12 @@
                                 </tr>
                                 <tr>
                                     <td>
+                                        <span class="title-table">Snapchat</span>
+                                    </td>
+                                    <td><i class="icon-cancel"></i></td>
+                                </tr>
+                                <tr>
+                                    <td>
                                         <span class="title-table">Application Limiting</span>
                                     </td>
                                     <td><i class="icon-ok"></i></td>
@@ -2231,12 +2286,6 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <span class="title-table">Free 24/7 Support</span>
-                                    </td>
-                                    <td><i class="icon-cancel"></i></td>
-                                </tr>
-                                <tr>
-                                    <td>
                                         <span class="title-table">Email / Form</span>
                                     </td>
                                     <td><i class="icon-ok"></i></td>
@@ -2267,7 +2316,7 @@
                                     <th colspan="2">
                                         <div class="boxes-img">
                                             <span>#7</span>
-                                            <img src="{$img}/boxes/4.png" height="45" width="152" alt="">
+                                            <img src="{$img}/boxes/kisdslox.png" height="45" width="115" alt="">
                                         </div>
                                     </th>
                                 </tr>
@@ -2277,13 +2326,13 @@
                                     <td>
                                         <span class="title-table">Calls</span>
                                     </td>
-                                    <td><i class="icon-ok"></i></td>
+                                    <td><i class="icon-cancel"></i></td>
                                 </tr>
                                 <tr>
                                     <td>
                                         <span class="title-table">Text Messages{*Texts*}</span>
                                     </td>
-                                    <td><i class="icon-ok"></i></td>
+                                    <td><i class="icon-cancel"></i></td>
                                 </tr>
                                 <tr>
                                     <td>
@@ -2301,13 +2350,13 @@
                                     <td>
                                         <span class="title-table">Photos & Videos</span>
                                     </td>
-                                    <td><i class="icon-ok"></i></td>
+                                    <td><i class="icon-cancel"></i></td>
                                 </tr>
                                 <tr>
                                     <td>
                                         <span class="title-table">Websites Visited</span>
                                     </td>
-                                    <td><i class="icon-ok"></i></td>
+                                    <td><i class="icon-cancel"></i></td>
                                 </tr>
                                 <tr>
                                     <td>
@@ -2383,21 +2432,27 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <span class="title-table">Application Limiting</span>
+                                        <span class="title-table">Snapchat</span>
                                     </td>
                                     <td><i class="icon-cancel"></i></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="title-table">Application Limiting</span>
+                                    </td>
+                                    <td><i class="icon-ok"></i></td>
                                 </tr>
                                 <tr>
                                     <td>
                                         <span class="title-table">Application Blocking</span>
                                     </td>
-                                    <td><i class="icon-cancel"></i></td>
+                                    <td><i class="icon-ok"></i></td>
                                 </tr>
                                 <tr>
                                     <td>
                                         <span class="title-table">Website Blocking</span>
                                     </td>
-                                    <td><i class="icon-cancel"></i></td>
+                                    <td><i class="icon-ok"></i></td>
                                 </tr>
                                 <tr>
                                     <td>
@@ -2439,13 +2494,7 @@
                                     <td>
                                         <span class="title-table">Remote Lock</span>
                                     </td>
-                                    <td><i class="icon-cancel"></i></td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <span class="title-table">Free 24/7 Support</span>
-                                    </td>
-                                    <td><i class="icon-cancel"></i></td>
+                                    <td><i class="icon-ok"></i></td>
                                 </tr>
                                 <tr>
                                     <td>
@@ -2457,7 +2506,7 @@
                                     <td>
                                         <span class="title-table">Phone</span>
                                     </td>
-                                    <td><i class="icon-ok"></i></td>
+                                    <td><i class="icon-cancel"></i></td>
                                 </tr>
                                 <tr>
                                     <td>
@@ -2469,7 +2518,7 @@
                                     <td>
                                         <span class="title-table">Software Updates</span>
                                     </td>
-                                    <td><i class="icon-cancel"></i></td>
+                                    <td><i class="icon-ok"></i></td>
                                 </tr>
                             </tbody>
                         </table>
@@ -2595,6 +2644,12 @@
                                 </tr>
                                 <tr>
                                     <td>
+                                        <span class="title-table">Snapchat</span>
+                                    </td>
+                                    <td><i class="icon-cancel"></i></td>
+                                </tr>
+                                <tr>
+                                    <td>
                                         <span class="title-table">Application Limiting</span>
                                     </td>
                                     <td><i class="icon-cancel"></i></td>
@@ -2650,12 +2705,6 @@
                                 <tr>
                                     <td>
                                         <span class="title-table">Remote Lock</span>
-                                    </td>
-                                    <td><i class="icon-cancel"></i></td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <span class="title-table">Free 24/7 Support</span>
                                     </td>
                                     <td><i class="icon-cancel"></i></td>
                                 </tr>
@@ -2807,6 +2856,12 @@
                                 </tr>
                                 <tr>
                                     <td>
+                                        <span class="title-table">Snapchat</span>
+                                    </td>
+                                    <td><i class="icon-cancel"></i></td>
+                                </tr>
+                                <tr>
+                                    <td>
                                         <span class="title-table">Application Limiting</span>
                                     </td>
                                     <td><i class="icon-cancel"></i></td>
@@ -2867,12 +2922,6 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <span class="title-table">Free 24/7 Support</span>
-                                    </td>
-                                    <td><i class="icon-cancel"></i></td>
-                                </tr>
-                                <tr>
-                                    <td>
                                         <span class="title-table">Email / Form</span>
                                     </td>
                                     <td><i class="icon-ok"></i></td>
@@ -2903,7 +2952,7 @@
                                     <th colspan="2">
                                         <div class="boxes-img">
                                             <span>#10</span>
-                                            <img src="{$img}/boxes/10.png" height="45" width="152" alt="">
+                                            <img src="{$img}/boxes/abeona.png" height="45" width="152" alt="">
                                         </div>
                                     </th>
                                 </tr>
@@ -2919,7 +2968,7 @@
                                     <td>
                                         <span class="title-table">Text Messages{*Texts*}</span>
                                     </td>
-                                    <td><i class="icon-ok"></i></td>
+                                    <td><i class="icon-cancel"></i></td>
                                 </tr>
                                 <tr>
                                     <td>
@@ -2943,7 +2992,7 @@
                                     <td>
                                         <span class="title-table">Websites Visited</span>
                                     </td>
-                                    <td><i class="icon-cancel"></i></td>
+                                    <td><i class="icon-ok"></i></td>
                                 </tr>
                                 <tr>
                                     <td>
@@ -2967,7 +3016,7 @@
                                     <td>
                                         <span class="title-table">Application List</span>
                                     </td>
-                                    <td><i class="icon-cancel"></i></td>
+                                    <td><i class="icon-ok"></i></td>
                                 </tr>
                                 <tr>
                                     <td>
@@ -3019,9 +3068,15 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <span class="title-table">Application Limiting</span>
+                                        <span class="title-table">Snapchat</span>
                                     </td>
                                     <td><i class="icon-cancel"></i></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="title-table">Application Limiting</span>
+                                    </td>
+                                    <td><i class="icon-ok"></i></td>
                                 </tr>
                                 <tr>
                                     <td>
@@ -3033,7 +3088,7 @@
                                     <td>
                                         <span class="title-table">Website Blocking</span>
                                     </td>
-                                    <td><i class="icon-ok"></i></td>
+                                    <td><i class="icon-cancel"></i></td>
                                 </tr>
                                 <tr>
                                     <td>
@@ -3074,12 +3129,6 @@
                                 <tr>
                                     <td>
                                         <span class="title-table">Remote Lock</span>
-                                    </td>
-                                    <td><i class="icon-cancel"></i></td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <span class="title-table">Free 24/7 Support</span>
                                     </td>
                                     <td><i class="icon-cancel"></i></td>
                                 </tr>
@@ -3177,6 +3226,68 @@
                                         </div>
                                     </div>
                                 </li>
+
+                                <li>
+                                    <div class="thumb-ranking">
+
+                                        <div class="content-thumb-ranking">
+                                            <div class="discounted">
+                                                <img src="/images/discontinued.png" alt="">
+                                            </div>
+                                            <div class="img-ranking">
+                                                <img src="/images/boxes/boxes_1_11.png" height="57" width="62" alt="">
+                                                <span>Mobile Force Field</span>
+                                            </div>
+                                            <div class="price-ranking">$31.95</div>
+                                        </div>
+                                        <div class="footer-thumb-ranking">
+                                            <div class="btn-ranking">
+                                                <a href="/reviews/mobileforcefield-mobile-monitoring.html" class="btn btn-info">Read review</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="thumb-ranking">
+
+                                        <div class="content-thumb-ranking">
+                                            <div class="discounted">
+                                                <img src="/images/discontinued.png" alt="">
+                                            </div>
+                                            <div class="img-ranking">
+                                                <img src="/images/boxes/boxes_1_9.png" height="57" width="62" alt="">
+                                                <span>SafetyWeb</span>
+                                            </div>
+                                            <div class="price-ranking">$4.99</div>
+                                        </div>
+                                        <div class="footer-thumb-ranking">
+                                            <div class="btn-ranking">
+                                                <a href="/reviews/safetyweb-mobile-monitoring.html" class="btn btn-info">Read review</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="thumb-ranking">
+
+                                        <div class="content-thumb-ranking">
+                                            <div class="discounted">
+                                                <img src="/images/discontinued.png" alt="">
+                                            </div>
+                                            <div class="img-ranking">
+                                                <img src="/images/boxes/boxes_1_12.png" height="57" width="62" alt="">
+                                                <span>Care4Teen</span>
+                                            </div>
+                                            <div class="price-ranking">Free</div>
+                                        </div>
+                                        <div class="footer-thumb-ranking">
+                                            <div class="btn-ranking">
+                                                <a href="/reviews/care4teen-mobile-monitoring.html" class="btn btn-info">Read review</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -3221,20 +3332,11 @@
         </div>
         <!-- END -->
 
-        <p class="text-center f-light">Pumpic parental control is your opportunity to always be near wherever you are and protect your kids’ mobile activities remotely. The app is trusted by more than 10,000 users. Pumpic proved to be one of the best cell phone monitoring software for child safety.</p>
+        <p class="text-center f-light">Pumpic parental control is your opportunity always to be near wherever you are and protect your kids’ mobile activities remotely. More than 10,000 users trust the app. Pumpic proved to be one of the best cell phone monitoring software for child safety. It hits high positions in many Android and iPhone monitoring software reviews. E.g., the app is recognized by TopTenReviews. Trust your children’s safety to reliable apps only. Protect them with Pumpic. Make your decision wisely.
+        </p>
 		
 		{EndContent}
 
-        <!-- END CONTENT -->    
-        {include file='../../includes/content/banners/index.tpl'}
-        <!-- END CONTENT -->    
-           
-        <!-- RECOMMENDED -->
-        {*
-            Template: RECOMMENDED
-        *}    
-        {include file='../../includes/main/main-recommended.tpl'}   
-        
         <!-- FOOTER -->
         {*
             Template: FOOTER

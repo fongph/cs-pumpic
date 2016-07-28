@@ -1,4 +1,6 @@
 <style>
+
+
     .box_category > ul > li > div{
         padding-left: 0 !important;
     }
@@ -27,6 +29,15 @@
             float: none;
         }
     }
+
+
+
+/*
+
+ ¯\_(ツ)_/¯
+
+
+*/
 </style>
 {include file='../includes/main/main-header.tpl'
     robots="yes" 
@@ -138,7 +149,7 @@
                                     <li><a class="share-digg" href="#" data-location="http://digg.com/submit?url="></a></li>
                                     <li><a class="share-twitter" href="#" data-location="https://twitter.com/share?url="></a></li>
                                     <li><a class="share-reddit" href="#" data-location="//www.reddit.com/submit?url="></a></li>
-                                    <li><a class="share-pinterest" href="#" data-location="http://pinterest.com/pin/create/link/?url=" data-media="http://pumpic.com/images/socials/social-icon.jpg"></a></li>
+                                    <li><a class="share-pinterest" href="#" data-location="http://pinterest.com/pin/create/link/?url=" data-media="http://{$domain}/images/infographic/v2.png"></a></li>
                                 </ul>
 
 
@@ -164,7 +175,7 @@
                             <li><a class="share-digg" href="#" data-location="http://digg.com/submit?url="></a></li>
                             <li><a class="share-twitter" href="#" data-location="https://twitter.com/share?url="></a></li>
                             <li><a class="share-reddit" href="#" data-location="//www.reddit.com/submit?url="></a></li>
-                            <li><a class="share-pinterest" href="#" data-location="http://pinterest.com/pin/create/link/?url=" data-media="http://pumpic.com/images/socials/social-icon.jpg"></a></li>
+                            <li><a class="share-pinterest" href="#" data-location="http://pinterest.com/pin/create/link/?url=" data-media="http://{$domain}/images/infographic/v2.png"></a></li>
                         </ul>
                         <div class="text-center">
                             <p><strong>Add this infographic to your website by copying and pasting the following embed code:</strong></p>

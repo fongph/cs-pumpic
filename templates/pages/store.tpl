@@ -220,7 +220,7 @@ description="Pumpic offers high-quality Cell Phone Tracking Software for a good 
                                                         <li data-toggle="tooltip" data-placement="top" title="Control devices remotely.<div class='br'><strong>Not supported: Android 5.0 and higher.</strong></div>"><i class="icon-cancel"></i> SMS commands
                                                         </li>
                                                         <li data-toggle="tooltip" data-placement="top" title="View every keystroke typed on a target device."><i class="icon-cancel"></i> Keylogger</li>
-                                                        <li data-toggle="tooltip" data-placement="top" title="Monitor Apple devices without jailbreak. View Calls, Text messages, Photos, Location, Notes, Contacts, Browsing History, Bookmarks, Calendar, Skype, and WhatsApp.<div class='br'><strong>Note: Two-step verification must be disabled in the account of the target device.</strong></div>"><i class="icon-cancel"></i>  <strong style="font-size: 14px">iCloud Monitoring</strong> (<span class="fz13">without jailbreak up to iOS {$ver_icloud_up}</span>)</li>
+                                                        <li data-toggle="tooltip" data-placement="top" title="Monitor Apple devices without jailbreak. View Calls, Text messages, Photos, Location, Notes, Contacts, Browsing History, Bookmarks, Calendar, Skype, and WhatsApp.<div class='br'><strong>Note: Two-step verification must be disabled in the account of the target device.</strong></div>"><i class="icon-cancel"></i>  <strong style="font-size: 14px">iCloud Monitoring</strong>  <span class="fz13">(without jailbreak up to iOS {$ver_icloud_up})</span></li>
 
                                                     </ul>
                                                 </div>
@@ -357,7 +357,7 @@ description="Pumpic offers high-quality Cell Phone Tracking Software for a good 
                                                         <li data-toggle="tooltip" data-placement="top" title="View all videos stored on a device."><i class="icon-ok"></i> Videos</li>
 
 
-                                                        <li data-toggle="tooltip" data-placement="top" title="Track chats and calls on Skype.<div class='br'><strong>iCloud monitoring up to iOS 9.0.2</strong><div class='br'><strong>Android: Root Required</strong></div>"><i class="icon-ok"></i> Skype <img src="/images/cloud-grey.png"></li>
+                                                        <li data-toggle="tooltip" data-placement="top" title="Track chats and calls on Skype.<div class='br'><strong>iCloud monitoring up to iOS 8.4.1</strong><div class='br'><strong>Android: Root Required</strong></div>"><i class="icon-ok"></i> Skype <img src="/images/cloud-grey.png"></li>
                                                         <li data-toggle="tooltip" data-placement="top" title="Track chats and calls on WhatsApp.<div class='br'><strong>Android: Root Required</strong></div>"><i class="icon-ok"></i> WhatsApp <img src="/images/cloud-grey.png"></li>
                                                         <li data-toggle="tooltip" data-placement="top" title="Track chats and calls on Viber. <div class='br'><strong>Android: Root Required</strong></div>"><i class="icon-ok"></i> Viber</li>
 
@@ -371,7 +371,7 @@ description="Pumpic offers high-quality Cell Phone Tracking Software for a good 
                                                         <li data-toggle="tooltip" data-placement="top" title="Control devices remotely.<div class='br'><strong>Not supported: Android 5.0 and higher.</strong></div>"><i class="icon-ok"></i> SMS commands
                                                         </li>
                                                         <li data-toggle="tooltip" data-placement="top" title="View every keystroke typed on a target device."><i class="icon-ok"></i> Keylogger</li>
-                                                        <li data-toggle="tooltip" data-placement="top" title="Monitor Apple devices without jailbreak. View Calls, Text messages, Photos, Location, Notes, Contacts, Browsing History, Bookmarks, Calendar, Skype, and WhatsApp.<div class='br'><strong>Note: Two-step verification must be disabled in the account of the target device.</strong></div>"><i class="icon-ok"></i>  <strong style="font-size: 14px">iCloud Monitoring</strong> (<span class="fz13">without jailbreak up to iOS {$ver_icloud_up}</span>)</li>
+                                                        <li data-toggle="tooltip" data-placement="top" title="Monitor Apple devices without jailbreak. View Calls, Text messages, Photos, Location, Notes, Contacts, Browsing History, Bookmarks, Calendar, Skype, and WhatsApp.<div class='br'><strong>Note: Two-step verification must be disabled in the account of the target device.</strong></div>"><i class="icon-ok"></i>  <strong style="font-size: 14px">iCloud Monitoring</strong>  <span class="fz13">(without jailbreak up to iOS {$ver_icloud_up})</span></li>
 
                                                     </ul>
                                                 </div>

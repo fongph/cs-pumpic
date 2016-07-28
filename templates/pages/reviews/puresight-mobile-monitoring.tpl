@@ -125,16 +125,7 @@
             </div>
         </div>
         
-        <!-- END CONTENT -->    
-        {include file='../../includes/content/banners/index.tpl'}
-        <!-- END CONTENT -->    
-           
-        <!-- RECOMMENDED -->
-        {*
-            Template: RECOMMENDED
-        *}    
-        {include file='../../includes/main/main-recommended.tpl'}   
-        
+
         <!-- FOOTER -->
         {*
             Template: FOOTER

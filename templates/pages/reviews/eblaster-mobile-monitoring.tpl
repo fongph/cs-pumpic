@@ -102,11 +102,6 @@ description="Learn more about eBlaster software - read editor's review on eBlast
                 <h3 class="heading">Summary</h3>
                 <p>Though the application provides very useful features of remote monitoring, they are not enough to provide your kids with reliable and comprehensive protection. All the app can do it does really good. However, there are many apps offering much more opportunities for the same price.</p>
                 <p>In addition, the app operates in a stealth mode and records voice logs, which is illegal. In the list provided on our website, you can find the same monitoring solutions operating on a legal basis. Available for BlackBerry and Android only, eBlaster cannot cover all the variety of consumer needs. The app doesn&rsquo;t allow monitoring social networks and online chats.</p>
-
-                <div class="box-graph">
-                    <img src="{$img}/diagrams/mobileforcefield.png" height="368" width="686" alt="">
-                </div>
-
                 <h3 class="heading">Reports & Logs – <span class="heading-rating">2/10</span></h3>
                 <p>eBlaster provides smooth call and text message monitoring. It allows viewing the time of each call, a phone number, and call duration. The app also logs sent and received SMS. The GPS tracking function also works good letting parents find exact whereabouts of their kids.</p>
                 <p>Unfortunately, the application doesn’t allow monitoring calendar events and contacts. Neither does eBlaster allow keeping track of social networks and online chats, which are a known source of threat for children. Multimedia file monitoring, keylogging, and browsing history/bookmark control are also not supported.</p>
@@ -135,15 +130,7 @@ description="Learn more about eBlaster software - read editor's review on eBlast
         </div>
     </div>
 
-    <!-- END CONTENT -->
-    {include file='../../includes/content/banners/index.tpl'}
-    <!-- END CONTENT -->
 
-    <!-- RECOMMENDED -->
-    {*
-        Template: RECOMMENDED
-    *}
-    {include file='../../includes/main/main-recommended.tpl'}
 
     <!-- FOOTER -->
     {*

@@ -91,7 +91,7 @@
                             </p>
                             <div class="media-btn">
                                 <a href="/reviews/" class="btn btn-sm btn-allreviews">All Reviews</a>
-                                <a href="/reviews/care4teen-mobile-monitoring.html" class="btn btn-sm btn-success">Next Review &rarr;</a>
+                                <a href="/reviews/abeona-mobile-monitoring.html" class="btn btn-sm btn-success">Next Review &rarr;</a>
                             </div>
                         </div>
                     </div>
@@ -99,7 +99,7 @@
                     <p>This application enables you to remotely monitor contact details of the target device.</p>
 					<p>IgnoreNoMoreApp reminds just a part of usual parental control applications and rather its inferior part. There are no usual options like call logs or social media monitoring. This app cannot be considered as protecting one because it proposes no features of this kind.</p>
                     <div class="box-graph">
-                        <img src="{$img}/diagrams/ignore_nomore_new.jpg" height="368" width="690" alt="">
+                        <img src="{$img}/diagrams/chart/09-pumpic-review-ignorenomore-min.png" height="368" width="686" alt="">
                     </div>
                     <h3 class="heading">Reports & Logs – <span class="heading-rating">1/10</span></h3>
                     <p>The only access you get using the application is contact details. However, you won’t know a list of their online friends on Facebook or Skype and it will be impossible to track the location of your children as there is no such option. </p>
@@ -117,16 +117,7 @@
                 </div>
             </div>
         </div>
-        
-        <!-- END CONTENT -->    
-        {include file='../../includes/content/banners/index.tpl'}
-        <!-- END CONTENT -->    
-           
-        <!-- RECOMMENDED -->
-        {*
-            Template: RECOMMENDED
-        *}    
-        {include file='../../includes/main/main-recommended.tpl'}   
+
         
         <!-- FOOTER -->
         {*

@@ -96,8 +96,8 @@
                             </p>
 
                             <div class="media-btn">
-
-                                &nbsp;<a href="/reviews/mobileforcefield-mobile-monitoring.html" class="btn btn-sm btn-success">Next Review &rarr;</a>
+                                <a href="/reviews/" class="btn btn-sm btn-allreviews">All Reviews</a>
+                                &nbsp;<a href="/reviews/uknowkids-mobile-monitoring.html" class="btn btn-sm btn-success">Next Review &rarr;</a>
                             </div>
                         </div>
 
@@ -111,7 +111,7 @@
                     <p>Pumpic is a compilation of multitasking, quality and handiness. A large variety of monitoring solutions enables users to keep track of all spheres of their children’s lives from one easy-to-use Control Panel.</p>
                     <p>The application will let you monitor cell phone use (calls, text messages, contacts, calendar etc.), follow online activities (bookmarks, browsing history, emails, social media, and online chats), and control the target device remotely (use SMS commands to lock it or wipe, receive alerts with a SIM card changes, track keystrokes).   </p>
                     <div class="box-graph">
-                        <img src="{$img}/diagrams/pumpic.png" height="368" width="686" alt="">
+                        <img src="{$img}/diagrams/chart/01-pumpic-review-pumpic-min.png" height="368" width="686" alt="">
                     </div>
                     <h3 class="heading">Reports & Logs – <span class="heading-rating">9/10</span></h3>
                     <p>Pumpic logs all essential data at once and sends it right to your Control Panel immediately. The app will let you monitor calls, SMS, contacts, calendar, emails, GPS location (including Geo-fences), photo and video files, visited websites, bookmarks, and applications. </p>
@@ -136,17 +136,7 @@
                 </div>
             </div>
         </div>
-        
-        <!-- END CONTENT -->
-        {include file='../../includes/content/banners/index.tpl'}
-        <!-- END CONTENT -->
-           
-        <!-- RECOMMENDED -->
-        {*
-            Template: RECOMMENDED
-        *}    
-        {include file='../../includes/main/main-recommended.tpl'}   
-        
+
         <!-- FOOTER -->
         {*
             Template: FOOTER

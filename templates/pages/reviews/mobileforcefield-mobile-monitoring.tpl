@@ -74,6 +74,7 @@
                                 <img src="{$img}/boxes/boxes_4_11.png" height="219" width="242" alt="">
                             </a>*}
                             <span class="img-media">
+                                <img src="/images/boxes/disconted.png" class="discounted-pic">
                                 <img src="{$img}/boxes/boxes_4_11.png" height="219" width="242" alt="">
                             </span>
                         </div>
@@ -92,7 +93,7 @@
                             </p>
                             <div class="media-btn">
                                 <a href="/reviews/" class="btn btn-sm btn-allreviews">All Reviews</a>
-                                <a href="/reviews/mmguardian-mobile-monitoring.html" class="btn btn-sm btn-success">Next Review &rarr;</a>
+                                <a href="/reviews/safetyweb-mobile-monitoring.html" class="btn btn-sm btn-success">Next Review &rarr;</a>
                             </div>
                         </div>
                     </div>
@@ -100,14 +101,10 @@
                     <h3 class="heading">Summary</h3>
                     <p>The app enables parents to take care of children remotely by providing them (parents) with an ability to monitor calls, text messages, {*sent and received emails,*} photos, video files, and applications. In addition, it lets you specify the websites that kids are allowed to visit.</p>
                     <p>Regardless the aforementioned options, there are a lot of them missing. MobileForceField doesn’t support monitoring of popular online chats like Skype, Viber, WhatsApp, and Kik, as well as social media like Facebook, Instagram, and Twitter. Considering that most dangers that children face come from these particular sources, it is a reasonable failure.</p>
-                    <div class="box-graph">
-                        <img src="{$img}/diagrams/mobileforcefield.png" height="368" width="686" alt="">
-                    </div>
                     
                     <h3 class="heading">Reports & Logs – <span class="heading-rating">4/10</span></h3>
                     <p>MobileForceField software captures any data your kid sends or receives. Even if he or she decides to hide restricted photos from you or delete messages with inappropriate text content. The app will log it all at once and report right to your console.</p>
                     <p>The app logs only the most common activities like calls, text messages, and media files. It cannot track keystrokes, visited websites, calendars, instant messengers, and social networks, which would let parents protect children more carefully.</p>
-                    
                     <h3 class="heading">Limits & Restrictions – <span class="heading-rating">3.5/10</span></h3>
                     <p>The application enables parents to use Child Safe Browser, and thus, to determine, which particular websites kids are allowed to visit. Such an option will protect your children from explicit content as well as restricted photos and videos. It also allows application blocking, which is useful if you want to prevent your kid from excessive gaming or using a smartphone while doing homework.</p>
                     <p>On the other hand, using MobileForceField will not allow you to restrict phone numbers that can reach your child. The app does not support limiting the amount of SMS sent during a day, and it will not let you prevent your kid from reading text messages containing bad words or threats.</p>
@@ -133,18 +130,7 @@
                 </div>
             </div>
         </div>
-        
-        <!-- END CONTENT -->    
-        {include file='../../includes/content/banners/index.tpl'}
-        <!-- END CONTENT -->    
-           
-        <!-- RECOMMENDED -->
-        {*
-            Template: RECOMMENDED
-        *}    
-        {include file='../../includes/main/main-recommended.tpl'}   
-        
-        <!-- FOOTER -->
+
         {*
             Template: FOOTER
             Переменные:

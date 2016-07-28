@@ -1,5 +1,5 @@
 {include file='../includes/main/main-header.tpl'
-    robots="no" 
+    robots="yes"
     title="Smartphone monitoring app for Android"
     description="Pumpic for Android is a new solution for parental control mobile monitoring. Track your children’s smartphone usage, follow incoming and outbound calls, monitor browsing history and text messages, track GPS location and social network activity on Android devices with Pumpic."
 }    

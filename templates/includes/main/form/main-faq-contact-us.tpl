@@ -13,7 +13,7 @@
                 {/if}
             </div>
             
-                <legend class="uppercase">Send Your Questions to Us</legend>
+                <legend class="uppercase" style="text-align: center">Send Your Questions to Us</legend>
                 <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3">
                         <span class="info"></span>
                         {nocache}

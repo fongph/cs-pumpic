@@ -1,6 +1,7 @@
 <!doctype html>
 <html amp>
 <head>
+    <title>Best Free Parental Control Apps for Android | Pumpic</title>
     <meta charset="utf-8">
     <link rel="canonical" href="http://pumpic.com/best-free-parental-control-apps-for-android.html">
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
@@ -25,7 +26,7 @@
             <div id="fly_top">
                 <h2 id="fly-features-h2" class="text-yellow">NEW!</h2>
                 <p class="fly-label">iCloud monitoring</p>
-                <p><span class="fly-versions"><span class="icon-apple-fly"></span> iOS 6.0 - 9.3.2</span></p>
+                <p><span class="fly-versions"><span class="icon-apple-fly"></span> iOS 6.0 - 9.3.3</span></p>
                 <p class="text-yellow last">No Jailbreak Solution!</p>
                 <a class="features-button"  href="/icloud-iphone-without-jailbreak-monitoring.html">See Details</a>
             </div>
@@ -130,7 +131,7 @@
                                             <ul class="compatibility compatibility-lg">
                                                 <li><i class="icon-android"></i> (2.2 - 6.0.1)</li>
                                                 <li><i class="icon-apple"></i> <amp-img class="lock" src="/images/lock.png"  width="10" height="13" alt=""></amp-img> (6.0 - 9.1)</li>
-                                                <li><i class="icon-icloud"></i> (6.0 - 9.3.2)</li>
+                                                <li><i class="icon-icloud"></i> (6.0 - 9.3.3)</li>
                                             </ul>
                                             <div class='mt10'>
                                                 <div id='block-promo-buy' class="bb-p-buy- banner-header-package">

@@ -75,6 +75,36 @@
                                                                 <h3><a class='a-default' href="/compatibility/{$phone.uri_name}/" {*target="_blank"*}>{$phone.name}</a></h3>
                                                                 <span>OS: <strong>{if $phone.os  == "iOS"}iOS (with jailbreak) {else}{$phone.os}{/if}</strong></span>
                                                                 <span>Versions: <strong>{$phone.version}</strong></span>
+
+
+
+
+                                                                {if $phone.os  == "iOS"}
+                                                                    {if $phone.name  == "Apple iPhone 4"}
+                                                                        <section style="padding-top: 7px">
+                                                                            <span>OS: <strong>{if $phone.os  == "iOS"}iOS iCloud {else}{$phone.os}{/if} </strong></span>
+                                                                            <span>Versions:<strong> {$ver_icloud_bot} - 7.1.2 </strong></span>
+                                                                        </section>
+
+                                                                    {elseif $phone.name  == "Apple iPhone 3GS" || $phone.name  == "Apple iPod touch 4th"}
+
+                                                                        <section style="padding-top: 7px">
+                                                                            <span>OS: <strong>{if $phone.os  == "iOS"}iOS iCloud {else}{$phone.os}{/if} </strong></span>
+                                                                            <span>Versions:<strong> {$ver_icloud_bot} - 6.1.6 </strong></span>
+                                                                        </section>
+
+                                                                    {else}
+
+                                                                        <section style="padding-top: 7px">
+                                                                            <span>OS: <strong>{if $phone.os  == "iOS"}iOS iCloud {else}{$phone.os}{/if} </strong></span>
+                                                                            <span>Versions:<strong> {$ver_icloud_bot} - {$ver_icloud_up}</strong></span>
+                                                                        </section>
+                                                                    {/if}
+                                                                {/if}
+
+
+
+
                                                             </div>
                                                         </div>
                                                     </div>

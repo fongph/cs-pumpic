@@ -12,13 +12,22 @@
         wp_list_categories( $args );?>
     </ul>
 </div>
+
+
 <div class="col-lg-8 col-md-8 col-sm-12">
-    <article>
-        <h1 class="h1 h1_post"><?php the_title(); ?></h1>
+    <!-- itemscope, itemprop and itemid are used for snippets -->
+    <article itemscope itemtype="http://schema.org/Article">
+        <meta itemscope itemprop="mainEntityOfPage"  itemType="https://schema.org/WebPage" itemid="http://pumpic.com/security/<?php echo get_the_name() ;?>/"/>
+
+        <h1 class="h1 h1_post" itemprop="headline"><?php the_title(); ?></h1>
+        
         <div class="list_tags">
             <span class="date"><?php echo get_the_date();  // wp_date_format() ?></span>
             <?php /* the_tags(__('<strong>Posted by to</strong>'), '')*/ ?>
+
         </div>
+
+
         <ul class="share_list share_top">
             <li><a class="share-facebook" href="#" data-location="http://www.facebook.com/sharer/sharer.php?u="></a></li>
             <li><a class="share-google" href="#" data-location="https://plus.google.com/share?url="></a></li>
@@ -27,8 +36,11 @@
             <li><a class="share-reddit" href="#" data-location="//www.reddit.com/submit?url="></a></li>
         </ul>
         <div id="box-content-post">
-            <div class="pull-left">
-                <?php the_post_thumbnail(); ?>
+            <div class="pull-left" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+                <?php  the_post_thumbnail(); ?>
+                <meta itemprop="url" content="<?php the_post_thumbnail_url(); ?>">
+                <meta itemprop="width" content="100">
+                <meta itemprop="height" content="100">
             </div>
 
             <?= the_content() ?>
@@ -45,6 +57,9 @@
 
 
         <?php if ( function_exists( 'get_Sexy_Author_Bio' ) ) echo get_Sexy_Author_Bio(); ?>
+
+        <meta itemprop="datePublished" content="<?php echo get_the_date();?>"/>
+        <meta itemprop="dateModified" content="<?php echo get_the_modified_date(); ?>"/>
         <script>
             $('.share_list a').click(function(e){
                 e.preventDefault();
@@ -60,6 +75,14 @@
                 //}
                 return false
             });
+
+
+            $('#sexy-author-bio').attr("itemtype", "https://schema.org/Person");
+            $('#sexy-author-bio').attr("itemprop", "author");
+            $('#sexy-author-bio').attr(" itemscope");
+            $('#sab-author').attr("itemprop", "name");
+
+
         </script>
 
 

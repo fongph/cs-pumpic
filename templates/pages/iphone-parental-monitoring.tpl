@@ -314,7 +314,7 @@
     </ul>
 
     <p>However, the real world hides not less dangers that it does online. On any hand, there is a possibility to control your children’s lives on the web. Pumpic sets parental control on your kid’s cell phone and monitors every step he or she takes as well as each decision made via a smartphone or tablet.</p>
-    <p>Nowadays your responsibility is not to take your kid’s mobile phone away to protect him, or forbid doing things you do not approve. All you need is to keep your eyes open and take action, when the situation requires. Thus, if you have decided to present your child an iPhone, learn more about iOS monitoring for kids.</p>
+    <p>Nowadays your responsibility is not to take your kid’s mobile phone away to protect him, or forbid doing things you do not approve. All you need is to keep your eyes open, <a class="a-default" href="/internet-filter-for-iphone.html">sort out the content</a> your kid sees, and take action, when the situation requires. Thus, if you have decided to present your child an iPhone, learn more about iOS monitoring for kids.</p>
 
 
 {EndContent}

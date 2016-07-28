@@ -10,10 +10,18 @@
 									<span class="icon-bar"></span>
 									<span class="icon-bar"></span>
 								</button>
-								<div class="logo">
-									<a href="<?php echo getStaticUrl();?>">pumpic</a>
+                                <div class="logo">
+                                    <a href="<?php echo getStaticUrl();?>">pumpic</a>
+                                </div>
+                                <!-- shows snippets for articles
+                                <?php if(is_single()){echo "<div itemprop='publisher' itemscope itemtype='https://schema.org/Organization'><meta itemprop='name' content='Pumpic'>" ;} ?>
+								<div class="logo"<?php if(is_single()){echo "itemprop='logo' itemscope itemtype='https://schema.org/ImageObject'" ;} ?>>
+									<a href="<?php echo getStaticUrl();?>"  >pumpic</a>
+                                <?php if(is_single()){echo "<meta itemprop='url' content='http://pumpic.com/images/logo/logo.png'><meta itemprop='width' content='344'><meta itemprop='height' content='88'>" ;} ?>
 								</div>
-							</div>
+                            <?php if(is_single()){echo "</div>" ;} ?>-->
+
+                    </div>
                                                         
                                                         <div class='box-cp pull-right'>   
                                                             <a href="http://demo.pumpic.com/setDevice/125?redirect_url=cp/calls" target="_blank" class="btn btn-sm btn-orange btn-success visible-lg cp-login">Demo</a>

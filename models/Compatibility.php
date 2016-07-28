@@ -204,7 +204,7 @@ class Compatibility {
         // only this OS
         $os_iOS = array(
             'Other features' => array(
-                'icloud_solution'   => '<strong>iCloud monitoring</strong> (without jailbreak up to iOS 9.3.2)',
+                'icloud_solution'   => '<strong>iCloud monitoring</strong> (without jailbreak up to iOS 9.3.3)',
             ),
         );
 
@@ -318,7 +318,7 @@ class Compatibility {
                 if (isset($data[$id]) and !empty($data[$id])) {
                     $_os = (isset($data['os'])) ? trim(strtolower($data['os']) ) : false;
                     $name = (isset($os_iOS[$key][$id])) ? $os_iOS[$key][$id] : $name;
-                    
+
                     if (isset($data[$id . '_comment']) && strlen($data[$id . '_comment'])) {
                         $_add_info = '<br />';
                         if($_os and isset($addInfo[ $_os ][$key][$id])) {

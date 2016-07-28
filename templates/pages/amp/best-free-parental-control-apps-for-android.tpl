@@ -142,8 +142,7 @@
                                                         </div>
                                                     </section>
                                                     <section class="vertical-aligh-middle">
-                                                        <a href="/store.html">
-                                                        <button class="btn btn-default">Learn More</button></a>
+                                                        <a href="/store.html" id="learn-more-link"><button class="btn btn-default">Learn More</button></a>
                                                     </section>
                                                 </div>
                                             </div>
@@ -493,19 +492,29 @@
 
 </main>
 {literal}
-    <amp-analytics type="googleanalytics" id="analytics1"><script type="application/json">
-            {
-                "vars": {
-                    "account": "UA-56492507-1"
+    <amp-analytics type="googleanalytics" id="analytics">
+    <script type="application/json">
+        {
+            "vars": {"account": "UA-56492507-1"{/literal}{if ''|hasUser}, "userId": "{getUserID}"{/if}{literal}},
+            "triggers": {
+                "trackPageview": {
+                    "on": "visible",
+                    "request": "pageview"
                 },
-                "triggers": {
-                    "trackPageview": {
-                        "on": "visible",
-                        "request": "pageview"
+                "learnMoreLink": {
+                    "on": "click",
+                    "selector": "#learn-more-link",
+                    "request": "event",
+                    "vars": {
+                        "eventCategory": "AMP",
+                        "eventAction": "click",
+                        "eventLabel": "LearnMore-AMP"
                     }
                 }
             }
-        </script></amp-analytics>
+        }
+    </script>
+    </amp-analytics>
 {/literal}
 </body>
 </html>

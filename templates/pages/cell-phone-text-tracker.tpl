@@ -220,7 +220,7 @@
         
         {include file='../includes/content/features-table.tpl'
         title = "Benefit from Using All Pumpic Features"
-        description = "There are dozens if not hundreds of tracking apps that enable parents to follow their kids’ activity remotely. But Pumpic’s 24 outstanding features (with text monitoring being one of their major functions) make it stand out from the crowd. This parental control app is designed to help keep your children safe both in digital and the real world. Take a look at the full list of Pumpic’s features – and see how easy you can provide all-round protection for your little ones."
+        description = "There are dozens if not hundreds of tracking apps that enable parents to follow their kids’ activity remotely. But Pumpic’s 24 outstanding features (with text monitoring and <a class='a-default' href='/block-words.html'>keyword blocking</a> being one of their major functions) make it stand out from the crowd. This parental control app is designed to help keep your children safe both in digital and the real world. Take a look at the full list of Pumpic’s features – and see how easy you can provide all-round protection for your little ones."
         blockBg="dark"
         } 
         

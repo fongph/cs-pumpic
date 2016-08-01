@@ -13,13 +13,6 @@
                                 <div class="logo">
                                     <a href="<?php echo getStaticUrl();?>">pumpic</a>
                                 </div>
-                                <!-- shows snippets for articles
-                                <?php if(is_single()){echo "<div itemprop='publisher' itemscope itemtype='https://schema.org/Organization'><meta itemprop='name' content='Pumpic'>" ;} ?>
-								<div class="logo"<?php if(is_single()){echo "itemprop='logo' itemscope itemtype='https://schema.org/ImageObject'" ;} ?>>
-									<a href="<?php echo getStaticUrl();?>"  >pumpic</a>
-                                <?php if(is_single()){echo "<meta itemprop='url' content='http://pumpic.com/images/logo/logo.png'><meta itemprop='width' content='344'><meta itemprop='height' content='88'>" ;} ?>
-								</div>
-                            <?php if(is_single()){echo "</div>" ;} ?>-->
 
                     </div>
                                                         

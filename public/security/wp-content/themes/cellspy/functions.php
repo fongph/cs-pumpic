@@ -40,6 +40,25 @@ function add_ga() {
     echo $js;
 }
 
+function amp_analytics_footer() {
+    ?>
+<amp-analytics type="googleanalytics" id="analytics">
+<script type="application/json">
+    {
+        "vars": {"account": "UA-56492507-1"},
+        "triggers": {
+            "trackPageview": {
+                "on": "visible",
+                "request": "pageview"
+            }
+        }
+    }
+</script>
+</amp-analytics>
+    <?php
+}
+
+add_action( 'amp_post_template_footer', 'amp_analytics_footer' );
 
 function shailan_redirect_404( $_redirect ) {
     global $wp_query;

@@ -26,7 +26,7 @@
             <div id="fly_top">
                 <h2 id="fly-features-h2" class="text-yellow">NEW!</h2>
                 <p class="fly-label">iCloud monitoring</p>
-                <p><span class="fly-versions"><span class="icon-apple-fly"></span> iOS 6.0 - 9.3.2</span></p>
+                <p><span class="fly-versions"><span class="icon-apple-fly"></span> iOS 6.0 - 9.3.3</span></p>
                 <p class="text-yellow last">No Jailbreak Solution!</p>
                 <a class="features-button"  href="/icloud-iphone-without-jailbreak-monitoring.html">See Details</a>
             </div>
@@ -131,7 +131,7 @@
                                             <ul class="compatibility compatibility-lg">
                                                 <li><i class="icon-android"></i> (2.2 - 6.0.1)</li>
                                                 <li><i class="icon-apple"></i> <amp-img class="lock" src="/images/lock.png"  width="10" height="13" alt=""></amp-img> (6.0 - 9.1)</li>
-                                                <li><i class="icon-icloud"></i> (6.0 - 9.3.2)</li>
+                                                <li><i class="icon-icloud"></i> (6.0 - 9.3.3)</li>
                                             </ul>
                                             <div class='mt10'>
                                                 <div id='block-promo-buy' class="bb-p-buy- banner-header-package">
@@ -143,8 +143,7 @@
                                                         </div>
                                                     </section>
                                                     <section class="vertical-aligh-middle">
-                                                        <a href="/store.html">
-                                                        <button class="btn btn-default">Learn More</button></a>
+                                                        <a href="/store.html" id="learn-more-link"><button class="btn btn-default">Learn More</button></a>
                                                     </section>
                                                 </div>
                                             </div>
@@ -494,19 +493,29 @@
 
 </main>
 {literal}
-    <amp-analytics type="googleanalytics" id="analytics1"><script type="application/json">
-            {
-                "vars": {
-                    "account": "UA-56492507-1"
+    <amp-analytics type="googleanalytics" id="analytics">
+    <script type="application/json">
+        {
+            "vars": {"account": "UA-56492507-1"{/literal}{if ''|hasUser}, "userId": "{getUserID}"{/if}{literal}},
+            "triggers": {
+                "trackPageview": {
+                    "on": "visible",
+                    "request": "pageview"
                 },
-                "triggers": {
-                    "trackPageview": {
-                        "on": "visible",
-                        "request": "pageview"
+                "learnMoreLink": {
+                    "on": "click",
+                    "selector": "#learn-more-link",
+                    "request": "event",
+                    "vars": {
+                        "eventCategory": "AMP",
+                        "eventAction": "click",
+                        "eventLabel": "LearnMore-AMP"
                     }
                 }
             }
-        </script></amp-analytics>
+        }
+    </script>
+    </amp-analytics>
 {/literal}
 </body>
 </html>

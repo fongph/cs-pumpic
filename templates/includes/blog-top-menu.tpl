@@ -10,10 +10,11 @@
 									<span class="icon-bar"></span>
 									<span class="icon-bar"></span>
 								</button>
-								<div class="logo">
-									<a href="<?php echo getStaticUrl();?>">pumpic</a>
-								</div>
-							</div>
+                                <div class="logo">
+                                    <a href="<?php echo getStaticUrl();?>">pumpic</a>
+                                </div>
+
+                    </div>
                                                         
                                                         <div class='box-cp pull-right'>   
                                                             <a href="http://demo.pumpic.com/setDevice/125?redirect_url=cp/calls" target="_blank" class="btn btn-sm btn-orange btn-success visible-lg cp-login">Demo</a>

@@ -1387,7 +1387,7 @@
                                             <li>Browsing history</li>
                                             <li>Bookmarks list (up to iOS 8.4.1)</li>
                                             <li>Calendar events</li>
-                                            <li>Location</li>
+                                            <li>Location History</li>
                                             <li>Photos</li>
                                             <li>Notes (up to iOS 8.4.1)</li>
                                             <li>Kik (from 9.0 and up)</li>

@@ -68,8 +68,14 @@
                                             <li>
                                                 {include file='../../includes/content/phone/block-phone-footer.tpl'}
                                             </li>
+                                            <li class="positivessl">
+                                                <span>Secured by:</span>
+                                                <img src="https://www.positivessl.com/images-new/PositiveSSL_tl_trans.png" alt="SSL Certificate" title="SSL Certificate" border="0" />
+
+
+                                            </li>
                                         </ul>
-                                        
+
                                 </div>
                         </div>
                 </div>

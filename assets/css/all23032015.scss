@@ -1010,7 +1010,18 @@ th .table_title {
 .premium_wr, .basic_wr {
   width: 50%;
 }
+@-moz-document url-prefix() {
+  .bg_bottom_images .visual-img-pc {bottom: -9px !important;}
 
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  @-moz-document url-prefix() {
+    .bg_bottom_images .visual-img-pc {
+      bottom: -23px !important;
+
+    }
+  }
+}
 .bg_bottom_images .visual-img-pc {
   bottom: -6px;
   /* -1 */

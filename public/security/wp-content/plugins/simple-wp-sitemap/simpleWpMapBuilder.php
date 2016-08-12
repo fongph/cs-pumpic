@@ -1,299 +1,208 @@
-<?php if (!defined( 'ABSPATH' )){ die(); }
+<?php defined('ABSPATH') || exit;
 
 /*
  * The sitemap creating class
  */
+
 class SimpleWpMapBuilder {
-	private $home = null;
-	private $xml = false;
-	private $html = false;
-	private $posts = '';
-	private $pages = '';
-	private $content = '';
-	private $url;
-	private $tags;
-	private $order;
-	private $homeUrl;
-	private $authors;
-	private $categories;
-	private $blockedUrls;
-        private $_publicUrl = null;
-	
-	// Constructor
-	public function __construct($command) {
-		$this->url = esc_url(plugins_url() . '/simple-wp-sitemap');
-		$this->homeUrl = esc_url(get_home_url() . (substr(get_home_url(), -1) === '/' ? '' : '/'));
-                $this -> _publicUrl = $_SERVER['DOCUMENT_ROOT'];
-                
-		switch ($command) {
-			case 'xml':
-				$this->xml = true;
-				$this->generateSitemaps();
-				break;
-			case 'html':
-				$this->html = true;
-				$this->generateSitemaps();
-				break;
-			case 'delete':
-				$this->deleteFiles();
-		}
-	}
-	
-	// Get method for content
-	public function getContent() {
-		return $this->content;
-	}
-	
-        public function savePublicSitemap( $content ) {
-            // echo $this -> _publicUrl.'sitemap.xml';
-//            if(!file_exists($this -> _publicUrl.'sitemap.xml')) @fopen ($this -> _publicUrl.'sitemap.xml', 'w+');
-//            chmod($this -> _publicUrl.'sitemap.xml', 0644, true);
-            
-            //$fp = fopen ($this -> _publicUrl.'sitemap.xml', 'w+');
-            //fwrite($fp, $content);
-            //fclose($fp);
-            
-            //echo "Put = ".$this -> _publicUrl.'sitemap.xml';
-            // echo $this -> _publicUrl.'sitemap.xml';
-            @file_put_contents($this -> _publicUrl.'/sitemap.xml', $content);
-//            chmod($this -> _publicUrl.'sitemap.xml', 0755, true);
+    public $home = null;
+    private $xml = false;
+    private $html = false;
+    private $posts = '';
+    private $pages = '';
+    private $blockedUrls = null;
+    private $url;
+    private $tags;
+    private $other;
+    private $homeUrl;
+    private $authors;
+    private $pattern;
+    private $categories;
+    private $lastUpdated;
+
+    // Constructor
+    public function __construct () {
+        $this->url = esc_url(plugins_url() . '/simple-wp-sitemap');
+        $this->homeUrl = esc_url(get_home_url() . (substr(get_home_url(), -1) === '/' ? '' : '/'));
+        $this->categories = get_option('simple_wp_disp_categories') ? array(0 => 0) : false;
+        $this->tags = get_option('simple_wp_disp_tags') ? array(0 => 0) : false;
+        $this->authors = get_option('simple_wp_disp_authors') ? array(0 => 0) : false;
+        $this->blockedUrls = get_option('simple_wp_block_urls');
+        @date_default_timezone_set(get_option('timezone_string'));
+    }
+
+    // Generates the sitemaps and returns the content
+    public function getContent ($type) {
+        if ($type === 'xml' || $type === 'html') {
+            $this->$type = true;
+            $this->pattern = ($this->xml ? 'Y-m-d\TH:i:sP' : 'Y-m-d H:i');
+            $this->other = $this->getOtherPages();
+            $this->setUpBlockedUrls();
+            //commented for unshowing last updated data
+//            $this->setLastUpdated();
+            $this->generateContent();
+            $this->mergeAndPrint();
         }
-        
-	// Generates the maps
-	private function generateSitemaps() {
-		$this->categories = (get_option('simple_wp_disp_categories') ? array(0 => 0) : false);
-		$this->tags = (get_option('simple_wp_disp_tags') ? array(0 => 0) : false);
-		$this->authors = (get_option('simple_wp_disp_authors') ? array(0 => 0) : false);
-		$this->order = get_option('simple_wp_disp_sitemap_order');
-		
-		$this->setUpBlockedUrls();
-		$this->generateContent();
-	}
-	
-	// Returns other urls user has submitted
-	private function getOtherPages() {
-		$xml = '';
-		
-		if ($options = get_option('simple_wp_other_urls')) {
-			foreach ($options as $option) {
-				if ($option && is_array($option)) {
-					$xml .= $this->getXml(esc_url($option['url'])); // , esc_html($option['date'])
-				}
-			}
-		}
-		return $xml;
-	}
-	
-	// Sets up blocked urls into an array
-	private function setUpBlockedUrls() {
-		$blocked = get_option('simple_wp_block_urls');
-		if ($blocked && is_array($blocked)) {
-			$this->blockedUrls = array();
-			
-			foreach ($blocked as $block) {
-				$this->blockedUrls[$block['url']] = 'blocked';
-			}
-		}
-		else {
-			$this->blockedUrls = null;
-		}
-	}
-	
-	// Matches url against blocked ones that shouldn't be displayed
-	private function isBlockedUrl($url) {
-		return $this->blockedUrls && isset($this->blockedUrls[$url]);
-	}
-	
-	
-	// Returns an xml or html string
-	private function getXml($link, $date = false) {
-		if ($this->xml) {
-			return "<url>\n\t<loc>$link</loc>\n</url>\n"; // \n\t<lastmod>$date</lastmod>
-		}
-		else{
-			return "<li><a title=\"$link\" href=\"$link\">$link</a></li>"; // <span class=\"date\">$date</span>
-		}
-	}
-	
-	// Returns table headers with specific names (has been changed to div)
-	private function htmlTableH($name) {
-		return '<div class="header"><p class="header-txt">' . $name . ':</p></div>'; // <p class="header-date">Last modified:</p>
-	}
-	
-	// Gets the actual sitemaps content, and querys the database
-	private function generateContent() {
-		$q = new WP_Query(array('post_type' => 'any', 'post_status' => 'publish', 'posts_per_page' => -1, 'has_password' => false));
-				
-		global $post;
-		$localPost = $post;
-		
-		if ($q->have_posts()) {
-			while ($q->have_posts()) {
-				$q->the_post();
-				
-				$link = esc_url(get_permalink());
-				$date = esc_html(get_the_modified_date('Y-m-d\TH:i:sP'));
-				
-				$this->getCategoriesTagsAndAuthor($date);
-				
-				if (!$this->isBlockedUrl($link)) {
-					if (!$this->home && $link === $this->homeUrl) {
-						$this->home = $this->getXml($link, $date);
-					}
-					elseif ('page' === get_post_type()) {
-						$this->pages .= $this->getXml($link, $date);
-					}
-					else { // posts (also all custom post types are added here)
-						$this->posts .= $this->getXml($link, $date);
-					}
-				}
-			}
-		}
-		
-		$this->mergeArraysAndGetOtherPages();
-		wp_reset_postdata();
-		
-		$post = $localPost; // reset global post to its value before the loop
-	}
-	
-	// Gets a posts categories, tags and author, and compares for last modified date
-	private function getCategoriesTagsAndAuthor($date) {
-		if ($this->categories && ($postCats = get_the_category())) {
-			foreach ($postCats as $category) {
-				$id = $category->term_id;
-				if (!isset($this->categories[$id]) || $this->categories[$id] < $date) {
-					$this->categories[$id] = $date;
-				}
-			}
-		}
-		if ($this->tags && ($postTags = get_the_tags())) {
-			foreach ($postTags as $tag) {
-				$id = $tag->term_id;
-				if (!isset($this->tags[$id]) || $this->tags[$id] < $date) {
-					$this->tags[$id] = $date;
-				}
-			}
-		}
-		if ($this->authors && ($id = get_the_author_meta('ID'))) {
-			if (is_int($id) && (!isset($this->authors[$id]) || $this->authors[$id] < $date)) {
-				$this->authors[$id] = $date;
-			}
-		}
-	}
-	
-	// Merges the arrays with post data into strings and gets user submitted pages, categories, tags and author pages
-	private function mergeArraysAndGetOtherPages() {
-		$xml = '';
-		$name = get_bloginfo('name');
-		$sections = $this->getSortedArray();
-		
-		foreach ($sections as $title => $content) {
-			if ($content) {
-				if ($title === 'Categories' || $title === 'Tags' || $title === 'Authors') {
-					$content = $this->stringifyCatsTagsAuths($title, $content);
-					if ($title === 'Authors' && count($this->authors) <= 2) { // only one author
-						$title = 'Author';
-					}
-				}
-				
-				if ($content) {
-					$xml .= $this->xml ? $content : $this->htmlTableH($title) . "<ul>$content</ul>";
-				}
-			}
-		}
-				
-		if ($this->xml) {
-			//   <?xml version="1.0" encoding="UTF-8
-// <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"> -->
-    
-                        /* $this->content = sprintf("<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<?xml-stylesheet type=\"text/css\" href=\"%s/css/xml.css\"?>\n<urlset xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"http://www.sitemaps.org/schemas/sitemap/0.9\n\thttp://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd\" xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">\n%s</urlset>", $this->url, $xml);
-                       */
-                    
-                        $this->content = sprintf("<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<?xml-stylesheet type=\"text/css\" href=\"%s/css/xml.css\"?>\n<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">\n%s</urlset>", $this->url, $xml);
-                       
-    
+    }
+
+    // Returns custom urls user has added
+    public function getOtherPages () {
+        $xml = '';
+        if ($options = get_option('simple_wp_other_urls')) {
+            foreach ($options as $option) {
+                if ($option && is_array($option)) {
+                    if (!is_int($option['date'])) { // fix for old versions of the plugin when date was stored in clear text
+                        $option['date'] = strtotime($option['date']);
+                    }
+                    $xml .= $this->getXml(esc_url($option['url']), date($this->pattern, $option['date']));
                 }
-		else {
-			$this->content = sprintf('<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>%s Html Sitemap</title><link rel="stylesheet" href="%s/css/html.css"></head><body><div id="wrapper"><h1>%s Html Sitemap</h1>%s%s</div></body></html>', $name, $this->url, $name, $xml, $this->attributionLink());
-		}
-	}
-	
-	// Displays attribution link if admin has checked the checkbox
-	private function attributionLink() {
-		if (get_option('simple_wp_attr_link')) {
-			return '<p id="attr">Generated by: <a href="http://www.webbjocke.com/simple-wp-sitemap/">Simple Wp Sitemap</a></p>';
-		}
-		return '';
-	}
-	
-	// Gets sorted array according to specified order
-	private function getSortedArray() {
-		if (!($arr = $this->order)) {
-			$arr = array('Other' => null,
-                                     'Home' => null, 
-                                     'Posts' => null, 
-                                     'Pages' => null,  
-                                     'Categories' => null, 
-                                     'Tags' => null, 
-                                     'Authors' => null);
-		}
-		
-		if (!$this->home) { // if homepage isn't found in the query (for instance if it's not a real "page" it wont be found)
-			@date_default_timezone_set(get_option('timezone_string'));
-			$this->home = $this->getXml($this->homeUrl, date('Y-m-d\TH:i:sP'));
-		}
-		
-		// copy to array and also clear some memory (some sites have a huge amount of posts)
-		$arr['Other'] = $this->getOtherPages();
-                $arr['Home'] = $this->home; $this->home = null;
-		$arr['Posts'] = $this->posts; $this->posts = null;
-		$arr['Pages'] = $this->pages; $this->pages = null;
-		$arr['Categories'] = $this->categories; $this->categories = null;
-		$arr['Tags'] = $this->tags; $this->tags = null;
-		$arr['Authors'] = $this->authors; $this->authors = null;
-		
-		return $arr;
-	}
-	
-	// Returns category, tag and author links as ready xml and html strings
-	private function stringifyCatsTagsAuths($type, $content) {
-		$xml = '';
-		
-		foreach ($content as $id => $date) {
-			if ($date) {
-				$link = esc_url($this->getLink($id, $type));
-				if (!$this->isBlockedUrl($link)) {
-					$xml .= $this->getXml($link, $date);
-				}
-			}
-		}
-		return $xml;
-	}
-	
-	// Returns either a category, tag or an author link
-	private function getLink($id, $type) {
-		switch ($type) {
-			case 'Tags': return get_tag_link($id);
-			case 'Categories': return get_category_link($id);
-			default: return get_author_posts_url($id); // Authors
-		}
-	}
-	
-	// Deletes the sitemap files from old versions of the plugin
-	private function deleteFiles() {
-		if (function_exists('get_home_path')) {
-			$path = sprintf('%s%ssitemap', get_home_path(), (substr(get_home_path(), -1) === '/' ? '' : '/'));
-			try {
-				if (file_exists($path . '.xml')) {
-					unlink($path . '.xml');
-				}
-				if (file_exists($path . '.html')) {
-					unlink($path . '.html');
-				}
-			}
-			catch (Exception $ex) {
-				return;
-			}
-		}
-	}
+            }
+        }
+        return $xml;
+    }
+
+    // Sets up blocked urls into an array
+    public function setUpBlockedUrls () {
+        if (($blocked = get_option('simple_wp_block_urls')) && is_array($blocked)) {
+            $this->blockedUrls = array();
+            foreach ($blocked as $block) {
+                $this->blockedUrls[$block['url']] = true;
+            }
+        }
+    }
+
+    // Sets the "last updated" text
+    public function setLastUpdated () {
+        $this->lastUpdated = ($updated = get_option('simple_wp_last_updated')) ? esc_html($updated) : 'Last updated';
+    }
+
+    // Matches url against blocked ones that shouldn't be displayed
+    public function isBlockedUrl($url) {
+        return $this->blockedUrls && isset($this->blockedUrls[$url]);
+    }
+
+    // Returns xml or html
+    public function getXml ($link, $date) {
+        if ($this->xml) {
+            return "<url>\n\t<loc>$link</loc>\n\t\n</url>\n";
+        } else {
+            return "<li><a href=\"$link\"><span class=\"link\">$link</span></a></li>";
+        }
+    }
+
+    // Querys the database and gets the actual sitemaps content
+    public function generateContent () {
+        $q = new WP_Query(array('post_type' => 'any', 'post_status' => 'publish', 'posts_per_page' => 50000, 'has_password' => false));
+
+        if ($q->have_posts()) {
+            while ($q->have_posts()) {
+                $q->the_post();
+
+                $link = esc_url(get_permalink());
+                $date = get_the_modified_date($this->pattern);
+                $this->getCategoriesTagsAndAuthor($date);
+
+                if (!$this->isBlockedUrl($link)) {
+                    if (!$this->home && $link === $this->homeUrl) {
+                        $this->home = $this->getXml($link, $date);
+                    } elseif (get_post_type() === 'page') {
+                        $this->pages .= $this->getXml($link, $date);
+                    } else { // posts (also all custom post types are added here)
+                        $this->posts .= $this->getXml($link, $date);
+                    }
+                }
+            }
+        }
+        wp_reset_postdata();
+    }
+
+    // Gets a posts categories, tags and author, and compares for last modified date
+    public function getCategoriesTagsAndAuthor ($date) {
+        if ($this->categories && ($postCategories = get_the_category())) {
+            foreach ($postCategories as $category) {
+                if (!isset($this->categories[($id = $category->term_id)]) || $this->categories[$id] < $date) {
+                    $this->categories[$id] = $date;
+                }
+            }
+        }
+        if ($this->tags && ($postTags = get_the_tags())) {
+            foreach ($postTags as $tag) {
+                if (!isset($this->tags[($id = $tag->term_id)]) || $this->tags[$id] < $date) {
+                    $this->tags[$id] = $date;
+                }
+            }
+        }
+        if ($this->authors && ($id = get_the_author_meta('ID'))) {
+            if (!isset($this->authors[$id]) || $this->authors[$id] < $date) {
+                $this->authors[$id] = $date;
+            }
+        }
+    }
+
+    // Merges the arrays with post data into strings and gets user submitted pages, categories, tags and author pages
+    public function mergeAndPrint () {
+        if ($this->xml) {
+            echo "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<?xml-stylesheet type=\"text/css\" href=\"" . $this->url . "/css/xml.css\"?>\n<urlset xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"http://www.sitemaps.org/schemas/sitemap/0.9\n\thttp://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd\" xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">\n" . $this->sortAndGetString() . "</urlset>\n<!-- Sitemap content by Simple Wp Sitemap -->";
+        } else {
+            echo '<!doctype html><html lang="' . get_locale() . '"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>' . get_bloginfo('name') . ' Html Sitemap</title><link rel="stylesheet" href="' . $this->url . '/css/html.css"></head><body><div id="wrapper"><h1><a href="' . $this->homeUrl . '">' . get_bloginfo('name') . '</a> Html Sitemap</h1>' . $this->sortAndGetString() . $this->attributionLink() . "</div></body></html>\n<!-- Sitemap content by Simple Wp Sitemap -->";
+        }
+    }
+
+    // Displays attribution link if user has checked the checkbox
+    public function attributionLink () {
+        if (get_option('simple_wp_attr_link')) {
+            return '<p id="attr"><a id="attr-a" href="http://www.webbjocke.com/simple-wp-sitemap/" title="http://www.webbjocke.com/simple-wp-sitemap/">Generated by: Simple Wp Sitemap</a></p>';
+        }
+        return '';
+    }
+
+    // Sorts, builds up and returns the content in xml or html
+    public function sortAndGetString () {
+        if (!($orderArray = get_option('simple_wp_disp_sitemap_order')) || !isset($orderArray['home'])) {
+            require_once 'simpleWpMapOptions.php'; $ops = new SimpleWpMapOptions(); $orderArray = $ops->migrateFromOld();
+        }
+        if (!$this->home) {
+            $this->home = $this->getXml($this->homeUrl, date($this->pattern));
+        }
+
+        $str = '';
+        foreach ($orderArray as $key => $arr) {
+            $str .= $this->getTitleStr($key, $arr);
+        }
+        return $str;
+    }
+
+    // Gets titles xml or html
+    public function getTitleStr ($title, $arr) {
+        if ($xml = $this->$title ? $this->$title : '') {
+            if (in_array($title, array('categories', 'tags', 'authors'))) {
+                $xml = $this->stringifyCatsTagsAuths($xml, $title);
+            }
+            if ($xml) {
+                $xml = $this->xml ? $xml : '<div class="header"><p class="header-txt">' . (($arr['title'] === 'Authors' && count($this->authors) <= 2) ? 'Author' : $arr['title']) . '</p><p class="header-date">' . $this->lastUpdated . '</p></div><ul>' . $xml . '</ul>';
+                $this->$title = null;
+            }
+        }
+        return $xml;
+    }
+
+    // Gets categories, tags and author links
+    public function stringifyCatsTagsAuths ($content, $title) {
+        $xml = '';
+        if ($content) {
+            foreach ($content as $id => $date) {
+                if ($date) {
+                    switch ($title) {
+                        case 'tags': $link = esc_url(get_tag_link($id)); break;
+                        case 'categories': $link = esc_url(get_category_link($id)); break;
+                        default: $link = esc_url(get_author_posts_url($id)); // Authors
+                    }
+                    if (!$this->isBlockedUrl($link)) {
+                        $xml .= $this->getXml($link, $date);
+                    }
+                }
+            }
+        }
+        return $xml;
+    }
 }

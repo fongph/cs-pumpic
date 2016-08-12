@@ -3922,6 +3922,13 @@ span {
   background-position: -102px 0px;
 }
 
+.i-pinterest{
+  background: url('../images/icons/pinterest.png') no-repeat;
+  width: 27px;
+  height: 27px;
+  display: block;
+  background-position: 0px 0px;
+}
 .style-links {
   color: #16a89e;
 }
@@ -6742,6 +6749,14 @@ form {
       text-align: left;
     }
   }
+  .box-socials li.positivessl{
+    top: -40px;
+    left: 170px;
+  }
+  .box-socials li.positivessl img{
+    width: 20%;
+  }
+
 }
 
 .bgBlue {
@@ -8386,4 +8401,10 @@ ul.list_category li:first-child {
   .learn-more {
     display: block;
   }
+}
+.positivessl{
+  position: relative;
+  top: -30px;
+  left: 20px;
+  color: #606060;
 }

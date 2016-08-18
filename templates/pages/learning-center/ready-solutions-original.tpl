@@ -54,7 +54,7 @@
             <div class="container">
                 <ul id="breadcrumbs">
                     <li><a class="color-green" href="http://{$domain}/learning-center/">Learning Center</a><span class="arrows icon-right-open"></span>{*<span class="arrows_green"></span>*}</li>
-                    <li><span>'Turn-key' Solutions for Parents</span></li>
+                    <li><span>Ready Solutions for Parents</span></li>
                 </ul>
             </div>
         </div>
@@ -63,13 +63,17 @@
         <!-- TABLE RSP -->
         <div class="light box-rsp">
             <div class="container">
-                <h1 class="h2 title text-center mt0">'Turn-key' Solutions for Parents</h1>
+                <h1 class="h2 title text-center mt0">Ready Solutions for Parents</h1>
                 <div class="row">
                     <div class="desc col-lg-12 col-md-12 col-sm-12">
                         {if isset($descriptions)}
                             {$descriptions}
                         {else}
-                            Your children require protection constantly. Since the very first day they are born, until the time they come of age and leave home, you should take care of them, keep them safe and secured. Especially when it comes to the use of the Internet and communication with strangers. Pumpic provides children with all-round protection daily. The table below introduces potential sources of dangers kids may face as well as matching 'turn-key' solutions for you to consider.
+                            Your children require protection constantly. Since the very first day they are born, until the time 
+                            they come of age and leave home, you should take care of them, keep them safe and secured. Especially when 
+                            it comes to the use of the Internet and communication with strangers. Pumpic provides children with all-round 
+                            protection daily. The table below introduces potential sources of danger kids may face and corresponding ready 
+                            solutions for you to consider.
                         {/if}
                     </div>
                 </div>
@@ -117,10 +121,10 @@
                                         </ul>
                                     </td>
                                     <td class="col-lg-3 col-md-3 col-sm-3">
-                                        <p>All these issues can be solved easily with the help of <a class="color-green {*bold*}" target="_blank" href="https://support.apple.com/en-us/HT201304">iOS built-in parental control settings</a> (Restrictions).</p>
+                                        <p>All these issues can be solved easily with help of <a class="color-green {*bold*}" target="_blank" href="https://support.apple.com/en-us/HT201304">iOS built-in parental control settings</a> (Restrictions).</p>
                                     </td>
                                     <td class="col-lg-3 col-md-3 col-sm-3">
-                                        <p>Android has no general built-in parental control settings but includes similar <a class="color-green {*bold*}" target="_blank" href="https://support.google.com/googleplay/answer/1075738?hl=en">controls on Google Play</a>.</p>
+                                        <p>Android has no general built-in parental control settings, but includes similar <a class="color-green {*bold*}" target="_blank" href="https://support.google.com/googleplay/answer/1075738?hl=en">controls on Google Play</a>.</p>
                                     </td>
 
                                 </tr>
@@ -143,10 +147,10 @@
                                     </td>
                                     <td class="col-lg-3 col-md-3 col-sm-3">
                                         <p>All the functions that can help solve these issues are <a class="color-green {*bold*}" href="http://{$domain}/iphone-with-jailbreak-monitoring.html">introduced in Pumpic Basic</a>.</p> 
-                                        <p>If your primary goal is to track your kids’ location, you can use <a class="color-green {*bold*}" href="http://{$domain}/icloud-iphone-without-jailbreak-monitoring.html">Pumpic iCloud Solution</a> without a need to jailbreak the target device.</p>
+                                        <p>If your main goal is to track your kids’ location, you can use <a class="color-green {*bold*}" href="http://{$domain}/icloud-iphone-without-jailbreak-monitoring.html">Pumpic iCloud Solution</a> without a need to jailbreak the target device.</p>
                                     </td>
                                     <td class="col-lg-3 col-md-3 col-sm-3">
-                                        <p><a class="color-green {*bold*}" href="http://{$domain}/store.html">Pumpic Basic</a> is the best and most effective solution for these purposes.</p>
+                                        <p><a class="color-green {*bold*}" href="http://{$domain}/store.html">Pumpic Basic</a> is the best effective solution for these purposes.</p>
                                     </td>
 
                                 </tr>
@@ -162,17 +166,17 @@
                                     </td>
                                     <td class="col-lg-3 col-md-3 col-sm-3">
                                         <ul class="rsp-list">
-                                            <li>First messenger use experience (Skype, WhatsApp, Viber, Kik, etc.)</li>
+                                            <li>First messenger use experience (Skype, WhatsApp, Viber, Kik etc.)</li>
                                             <li>Exposure to social networks</li>
                                             <li>Active camera use</li>
                                             <li>Location tracking</li>
                                         </ul>
                                     </td>
                                     <td class="col-lg-3 col-md-3 col-sm-3">
-                                        <p><a class="color-green {*bold*}" href="http://{$domain}/icloud-iphone-without-jailbreak-monitoring.html">Pumpic Premium</a> is the best and most effective solution for these purposes.</p>
+                                        <p><a class="color-green {*bold*}" href="http://{$domain}/icloud-iphone-without-jailbreak-monitoring.html">Pumpic Premium</a> is the best effective solution for these purposes.</p>
                                     </td>
                                     <td class="col-lg-3 col-md-3 col-sm-3">
-                                        <p><a class="color-green {*bold*}" href="http://{$domain}/store.html">Pumpic Premium</a> is the best and most effective solution for these purposes.</p>
+                                        <p><a class="color-green {*bold*}" href="http://{$domain}/store.html">Pumpic Premium</a> is the best effective solution for these purposes.</p>
                                     </td>
 
                                 </tr>
@@ -238,13 +242,13 @@
                                     <img src="{$img}/icons/icon-iphone.png" width="101px" height="64px" alt="Solutions for iPhones, iPads, and iPods Touch (iOS 6.0+)" />
                                 </div>   
                                 <div class="col-sm-12 col-xs-12 item event">
-                                    <p>All these issues can be solved easily with the help of <a class="color-green {*bold*}" target="_blank" href="https://support.apple.com/en-us/HT201304">iOS built-in parental control settings</a> (Restrictions).</p>
+                                    <p>All these issues can be solved easily with help of <a class="color-green {*bold*}" target="_blank" href="https://support.apple.com/en-us/HT201304">iOS built-in parental control settings</a> (Restrictions).</p>
                                 </div>  
                                 <div class="col-sm-12 col-xs-12 bg-black-2 text-center mt-hedaer item">
                                     <img src="{$img}/icons/icon-android.png" width="97px" height="51px" alt="Solutions for Android Phones and Tablets (Android 2.2+)" />
                                 </div>   
                                 <div class="col-sm-12 col-xs-12 item event">
-                                    <p>Android has no general built-in parental control settings but includes similar <a class="color-green {*bold*}" target="_blank" href="https://support.google.com/googleplay/answer/1075738?hl=en">controls on Google Play</a>.</p>
+                                    <p>Android has no general built-in parental control settings, but includes similar <a class="color-green {*bold*}" target="_blank" href="https://support.google.com/googleplay/answer/1075738?hl=en">controls on Google Play</a>.</p>
                                 </div>
                             </div>
                             <!-- end -->
@@ -276,13 +280,13 @@
                                 </div>   
                                 <div class="col-sm-12 col-xs-12 item event">
                                     <p>All the functions that can help solve these issues are <a class="color-green {*bold*}" href="http://{$domain}/iphone-with-jailbreak-monitoring.html">introduced in Pumpic Basic</a>.</p> 
-                                    <p>If your primary goal is to track your kids’ location, you can use <a class="color-green {*bold*}" href="http://{$domain}/icloud-iphone-without-jailbreak-monitoring.html">Pumpic iCloud Solution</a> without a need to jailbreak the target device.</p>
+                                    <p>If your main goal is to track your kids’ location, you can use <a class="color-green {*bold*}" href="http://{$domain}/icloud-iphone-without-jailbreak-monitoring.html">Pumpic iCloud Solution</a> without a need to jailbreak the target device.</p>
                                 </div>  
                                 <div class="col-sm-12 col-xs-12 bg-black-2 text-center mt-hedaer item">
                                     <img src="{$img}/icons/icon-android.png" width="97px" height="51px" alt="Solutions for Android Phones and Tablets (Android 2.2+)" >
                                 </div>   
                                 <div class="col-sm-12 col-xs-12 item event">
-                                    <p><a class="color-green {*bold*}" href="http://{$domain}/store.html">Pumpic Basic</a> is the best and most effective solution for these purposes.</p>
+                                    <p><a class="color-green {*bold*}" href="http://{$domain}/store.html">Pumpic Basic</a> is the best effective solution for these purposes.</p>
                                 </div>
                             </div>
                             <!-- end -->
@@ -304,7 +308,7 @@
                                 </div>
                                 <div class="col-sm-12 col-xs-12 item event">
                                     <ul class="rsp-list">
-                                        <li>First messenger use experience (Skype, WhatsApp, Viber, Kik, etc.)</li>
+                                        <li>First messenger use experience (Skype, WhatsApp, Viber, Kik etc.)</li>
                                         <li>Exposure to social networks</li>
                                         <li>Active camera use</li>
                                         <li>Location tracking</li>
@@ -314,13 +318,13 @@
                                     <img src="{$img}/icons/icon-iphone.png" width="101px" height="64px" alt="Solutions for iPhones, iPads, and iPods Touch (iOS 6.0+)" />
                                 </div>   
                                 <div class="col-sm-12 col-xs-12 item event">
-                                    <p><a class="color-green {*bold*}" href="http://{$domain}/icloud-iphone-without-jailbreak-monitoring.html">Pumpic Premium</a> is the best and most effective solution for these purposes.</p>
+                                    <p><a class="color-green {*bold*}" href="http://{$domain}/icloud-iphone-without-jailbreak-monitoring.html">Pumpic Premium</a> is the best effective solution for these purposes.</p>
                                 </div>  
                                 <div class="col-sm-12 col-xs-12 bg-black-2 text-center mt-hedaer item">
                                     <img src="{$img}/icons/icon-android.png" width="97px" height="51px" alt="Solutions for Android Phones and Tablets (Android 2.2+)" />
                                 </div>   
                                 <div class="col-sm-12 col-xs-12 item event">
-                                    <p><a class="color-green {*bold*}" href="http://{$domain}/store.html">Pumpic Premium</a> is the best and most effective solution for these purposes.</p>
+                                    <p><a class="color-green {*bold*}" href="http://{$domain}/store.html">Pumpic Premium</a> is the best effective solution for these purposes.</p>
                                 </div>
                             </div>
                             <!-- end -->

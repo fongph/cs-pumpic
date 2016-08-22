@@ -204,7 +204,7 @@ class Compatibility {
         // only this OS
         $os_iOS = array(
             'Other features' => array(
-                'icloud_solution'   => '<strong>iCloud monitoring</strong> (without jailbreak up to iOS 9.3.3)',
+                'icloud_solution'   => '<strong>iCloud monitoring</strong> (without jailbreak up to iOS 9.3.4)',
             ),
         );
 
@@ -237,7 +237,7 @@ class Compatibility {
                 ),
                 
                 'Social Media' => array( 
-                    'skype' => '<strong>iOS: For 9.0.2 and older versions Jailbreak is not needed</strong>',
+                    'skype' => '<strong>iOS: For 8.4.1 and older versions Jailbreak is not needed</strong>',
                     'viber' => '',
                     'whatsapp' => '<strong>iOS: Jailbreak is not needed</strong>',
                     'facebook' => '',

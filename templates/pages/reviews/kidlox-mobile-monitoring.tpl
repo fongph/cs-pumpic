@@ -19,7 +19,6 @@ description="Read editor's reviews, view a features comparison table, and learn 
     <!-- TOP MENU -->
 
     {include file='../../includes/main/main-top-menu.tpl'
-    topmenu_active='home'
     cache_id = "includes_main_main-top-menu"
     nocache
     }

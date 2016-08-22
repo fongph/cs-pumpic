@@ -100,7 +100,7 @@
         </div>
         <!-- END -->
 
-        <p>When considering to monitor children or not, parents would inevitably face an ethical issue of finding a balance between protecting their kids and not violating their privacy. This is the question that parents must answer themselves. Keep in mind, however that no technology has been yet invented that can read a teenager’s mind. On the other hand, as the old saying goes, little knowledge is a dangerous thing.</p>
+        <p>When considering to monitor children or not, parents would inevitably face an ethical issue of finding a balance between protecting their kids and not violating their privacy. This is the question that parents must answer themselves. Keep in mind, however that no <a class="a-default" href="/child-internet-safety-software.html">child internet safety software</a> has been yet invented that can read a teenager’s mind. On the other hand, as the old saying goes, little knowledge is a dangerous thing.</p>
 		<p>If you do decide to monitor your kids via digital means, we urge you to have a frank and detailed talk with them to explain why and how you’re going to keep an eye on them. 93% of parents claim having talked to their teens about online safety, while only 61% of children report really having this conversation.</p>
 		
 {EndContent}

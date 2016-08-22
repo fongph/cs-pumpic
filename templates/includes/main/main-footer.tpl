@@ -65,8 +65,15 @@
                                             <li><a itemprop="sameAs" href="https://twitter.com/pumpic_com" target="_blank" class="icons-social i-tw"></a></li>
                                             <li><a itemprop="sameAs" href="https://www.youtube.com/user/pumpicapp" target="_blank" class="icons-social i-youtube"></a></li>
                                             <li><a itemprop="sameAs" href="https://plus.google.com/+Pumpic_com" target="_blank" class="icons-social i-google"></a></li>
+
                                             <li>
                                                 {include file='../../includes/content/phone/block-phone-footer.tpl'}
+                                            </li>
+                                            <li class="positivessl">
+                                                <span>Secured by:</span>
+                                                <img src="https://www.positivessl.com/images-new/PositiveSSL_tl_trans.png" alt="SSL Certificate" title="SSL Certificate" border="0" />
+
+
                                             </li>
                                         </ul>
 

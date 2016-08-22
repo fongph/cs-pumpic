@@ -65,7 +65,7 @@
     title="How to Secure Kids on the Internet"
     blockBg='dark'}
 	
-	    <p class="text-center f-light">Internet is a great storage of information of all kinds. With its help any person can find anything he or she wants in a click. However, in addition to many benefits there is danger that sometimes is hidden from our sight. Our kids, they are most vulnerable to these online dangers. That’s why if handing them mobile devices and allowing access the web, you should do your best to take care of their safety.</p>
+	    <p class="text-center f-light">Internet is a great storage of information of all kinds. With its help any person can find anything he or she wants in a click. However, in addition to many benefits there is danger that sometimes is hidden from our sight. Our kids, they are most vulnerable to these online dangers. That’s why if handing them mobile devices and allowing access the web, you should do your best to take care of their <a class="a-default" href="/family-safe-browsing.html">safe browsing</a>.</p>
 		<p class="text-center f-light">Pumpic provides comprehensive Internet monitoring and reliable online security.</p>
         <!-- BLOCK STATISTICK -->
         {*<div class="block-statistick row">

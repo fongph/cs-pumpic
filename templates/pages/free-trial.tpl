@@ -79,6 +79,10 @@
                                                                         <i class="icon-apple"></i>
                                                                         ({$ver_ios_bot} - {$ver_ios_up})
                                                                     </li>
+                                                                    <li>
+                                                                        <i class="icon-icloud"></i>
+                                                                        ({$ver_icloud_bot} - {$ver_icloud_up})
+                                                                    </li>
                                                                 </ul>    
                                                             </div>
                                                         </section>

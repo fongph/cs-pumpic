@@ -79,6 +79,7 @@
                                             <li><a itemprop="sameAs" href="https://twitter.com/pumpic_com" class="icons-social i-tw"></a></li>
                                             <li><a itemprop="sameAs" href="https://www.youtube.com/user/pumpicapp" class="icons-social i-youtube"></a></li>
                                             <li><a itemprop="sameAs" href="https://plus.google.com/u/2/b/103434324737023434003/103434324737023434003/posts" class="icons-social i-google"></a></li>
+
                                             <li>
                                                 {include file='../../includes/content/phone/block-phone-footer.tpl'}
                                             </li>

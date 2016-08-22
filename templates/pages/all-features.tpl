@@ -250,7 +250,7 @@
                                        >Free Trial</a>
                                     </li>*}    
                                 </ul>
-                                <a href="#icloud" class="learn-about-link" >Learn more about iCloud monitoring (Jailbreak-Free up to iOS 9.3.3)</a>
+                                <a href="#icloud" class="learn-about-link" >Learn more about iCloud monitoring (Jailbreak-Free up to iOS 9.3.4)</a>
                                 <p>Enjoy more than <strong>20 features</strong> of <strong>remote mobile tracking</strong> with Pumpic.</p>
                                 <p>View, track and block mobile activity remotely with Pumpic.<br class='only-mobile' />
                                     Keep your eyes open!
@@ -1387,7 +1387,7 @@
                                             <li>Browsing history</li>
                                             <li>Bookmarks list (up to iOS 8.4.1)</li>
                                             <li>Calendar events</li>
-                                            <li>Location</li>
+                                            <li>Location History</li>
                                             <li>Photos</li>
                                             <li>Notes (up to iOS 8.4.1)</li>
                                             <li>Kik (from 9.0 and up)</li>

@@ -234,7 +234,7 @@
                                                                 <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Contacts <span>View existing contacts.</span></li>
                                                                 <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Photos <span>View camera shots and downloaded photos.</span></li>
                                                                 <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Skype <span>Monitor personal, group messages, and calls.<br/> (up to iOS 8.4.1)</span></li>
-                                                                <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Location <span>Track the exact location on the map.</span></li>
+                                                                <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Location History<span>Track current location as well as the entire route history.</span></li>
                                                                 <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Browser <span>View visited websites.</span></li>
                                                             </ul>
                                                         </div>

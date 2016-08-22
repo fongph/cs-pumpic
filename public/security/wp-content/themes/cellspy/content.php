@@ -36,6 +36,7 @@
             <li><a class="share-reddit" href="#" data-location="//www.reddit.com/submit?url="></a></li>
         </ul>
         <div id="box-content-post">
+        
             <div class="pull-left" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
                 <?php  the_post_thumbnail(); ?>
                 <meta itemprop="url" content="<?php the_post_thumbnail_url(); ?>">
@@ -57,7 +58,15 @@
 
 
         <?php if ( function_exists( 'get_Sexy_Author_Bio' ) ) echo get_Sexy_Author_Bio(); ?>
-
+        
+        <div itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+            <div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+                <meta itemprop="url" content="http://pumpic.com/images/logo/logo.png">
+                <meta itemprop="width" content="344">
+                <meta itemprop="height" content="88">
+            </div>
+            <meta itemprop="name" content="Pumpic">
+        </div>
         <meta itemprop="datePublished" content="<?php echo get_the_date();?>"/>
         <meta itemprop="dateModified" content="<?php echo get_the_modified_date(); ?>"/>
         <script>
@@ -76,16 +85,7 @@
                 return false
             });
 
-
-            $('#sexy-author-bio').attr("itemtype", "https://schema.org/Person");
-            $('#sexy-author-bio').attr("itemprop", "author");
-            $('#sexy-author-bio').attr(" itemscope");
-            $('#sab-author').attr("itemprop", "name");
-
-
         </script>
-
-
     </article>
     <?php get_sidebar('subscribe'); ?>
     <?= fb_get_cat_related_posts() ?>

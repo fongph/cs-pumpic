@@ -33,7 +33,6 @@
         <!-- TOP MENU -->
 
 	{include file='../../includes/main/main-top-menu.tpl'
-            topmenu_active='home'
             cache_id = "includes_main_main-top-menu"
             nocache
         }

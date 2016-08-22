@@ -82,6 +82,14 @@ description="Check out useful infographics on child online security that Pumpic 
         </ul>
         <div class="infographics__desc"><a href="/internet-safety-rules-for-kids.html">10 Internet commandments for kids going online</a></div>
     </div>
+
+    <div class="col-lg-4 col-md-4">
+        <ul class="infographics__block effect">
+            <li><p class="zero">How much screen time is too much for youngsters? Find out the answer and check out 8 tips to help parents reduce the screen time in this infographic.</p></li>
+            <li><a href="/how-to-manage-kids-screen-time.html"> <img class="top" src="/images/infographics/5.png" title="8 Must-Follow Tips to Manage Kids’ Screen Time" alt="8 Must-Follow Tips to Manage Kids’ Screen Time"/> </a></li>
+        </ul>
+        <div class="infographics__desc"><a href="/how-to-manage-kids-screen-time.html">8 Must-Follow Tips to Manage Kids’ Screen Time</a></div>
+    </div>
 </div>
      {literal}
          <script>

@@ -1,6 +1,7 @@
 FROM php:5.5-fpm
 
 RUN apt-get update && apt-get install -y \
+    git-core \
     libfreetype6-dev \
     libcurl4-gnutls-dev \
     curl \

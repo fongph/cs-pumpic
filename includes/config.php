@@ -144,4 +144,16 @@ if (is_file(__DIR__ . '/config.development.php')) {
 	$config = array_merge($config, include __DIR__ . '/config.development.php');
 } else {
 	define('SITE_ID', 1);
-}    
+}
+
+if ($config['environment'] == 'production') {
+	$smarty->caching = true;
+	$smarty->compile_check = true;
+	$smarty->force_compile = false;
+	$smarty->debugging = false;
+} else {
+	$smarty->caching = false;
+	$smarty->compile_check = true;
+	$smarty->force_compile = true;
+	$smarty->debugging = true;
+}

@@ -6,20 +6,20 @@
     Template: hedaer HEADER ( ШАПКА СТРАНИЦЫ )
     Переменные:
         robots (string): сключить или выключить индексацию от роботов ( yes | no ) * - default: yes
-        title (string): вносим title - страницы. 
+        title (string): вносим title - страницы.
         description (string): вносим meta description ( описание страницы )
 *}
 {include file='../includes/main/main-header.tpl'
-    robots="yes" 
+    robots="yes"
     title="Title"
     description="Description"
-}  
+}
 
 <body>
     <!-- BLOCK GTM -->
     {include file='../includes/main/main-after-body.tpl'}
     <!-- END BLOCK GTM -->
-    
+
     <!-- FLY BLOCKS -->
     {*
         Template: FLY BLOCKS ( Добавляет на странице плавающие блоки )
@@ -40,13 +40,13 @@
         {* include file='../includes/main/main-button-goup.tpl' *}
         <!-- end templates fly blocks -->
     <!-- END FLY BLOCKS-->
-    
+
     <div class="wrapper {*bg_bottom_images*} block-free-trial">
         <!-- TOP MENU -->
         {*
             Template: MENU ( ГЛАВНОЕ МЕНЮ )
             Переменные:
-                topmenu_active (string): alias меню, которое будет подсвечиваться активным. 
+                topmenu_active (string): alias меню, которое будет подсвечиваться активным.
                 cache_id (string): id - шаблона по которому будет производится кеширование.
                 nocache (tag): - говорим смарти не кешировать.
         *}
@@ -55,18 +55,18 @@
             cache_id = "includes_main_main-top-menu"
             nocache
         }
-        
 
-        
+
+
         {*
             Template: PHONE
             Переменные:
-                style (text): стиль блока Phone (blue|black). * - blue 
+                style (text): стиль блока Phone (blue|black). * - blue
         *}
         {include file='../includes/content/phone/block-phone.tpl'
-                 style="blue"   
+                 style="blue"
         }
-        
+
         <!-- CONTENT -->
         <!-- CONTENT -->
         {*
@@ -107,17 +107,17 @@
                 textAlign (string): позиция текста. ( left|center|right ) *default: right
                 title (string): название блока.
                 description (string): описание баннера.
-                
+
                 promoBuyBlock (string): Включает/Выключает кнопку PromoBuy (yes|no) *default: переменная не инцелезирована
                 planPackageBuy (sting): Включает/Выключает банер пакетов (yes|no) *default: переменная не инцелезирована
-                planPackageBuyUrl (sting): url - куда будет вести красная кнопка. 
+                planPackageBuyUrl (sting): url - куда будет вести красная кнопка.
                 planPackageBuyType (sting): тип блока ( link - ссылка|button - кнопка) *-default: button
                 planPackageBuyClass (sting): класс блока. ( Добовлять custom - стиль ). *-default: false
-                
+
                 iCloudSolution (sting): Включает/Выключает синию кнопку. *-default: no
-                
+
                 InfoBlock (sting): Включает/Выключает инфо блок. *-default: no
-                TouchPad (sting): Включает/Выключает табы в инфо-блоке. *-default: no 
+                TouchPad (sting): Включает/Выключает табы в инфо-блоке. *-default: no
                 Android (sting): Включает/Выключает андройд в инфо-блоке. *-default: no
         *}
         {include file='../includes/content/info/info-promo.tpl'
@@ -128,7 +128,7 @@
             textAlign = "right"
             title = "Apple Monitoring App  <br>iCloud Solution"
             description = "Enjoy multitask tracking without Jailbreak<br>Control iPhone use. Follow location and online activity"
-                         
+
             promoBuyBlock = "no"
             iCloudSolution = 'no'
             planPackageBuy = "yes"
@@ -140,7 +140,7 @@
             Android = 'no'
             InfoBlock = 'no'
         }
-        
+
         {*
             Template: INFORMATION iCLOUD ( SUBMIT BLUE ) * - iCloud
             Переменные:
@@ -151,21 +151,21 @@
                 textAlign (string): позиция текста. ( left|center|right ) *default: right
                 title (string): название блока.
                 description (string): описание баннера.
-                
+
                 listText (string): список параметров. * - разделитель "|"
-                
+
                 promoBuyBlock (string): Включает/Выключает кнопку PromoBuy (yes|no) *default: переменная не инцелезирована
                 planPackageBuy (sting): Включает/Выключает банер пакетов (yes|no) *default: переменная не инцелезирована
-                
+
                 iCloudSolution (sting): Включает/Выключает синию кнопку. *-default: no
                 iCloudSolutionButtonClass (string) класс кнопки. default: 'btn-default'
                 iCloudSolutionUrl (string): url - куда будет вести красная кнопка.
                 iCloudSolutionDescription (string) - описание блока. default: 'Want more monitoring <br />features?'
                 iCloudSolutionBTitle (string) - текст кгопки.
                 iCloudSolutionIButton (string) - иконка на кнопке. *-default: 'ico-cloud-lock'
-                
+
                 InfoBlock (sting): Включает/Выключает инфо блок. *-default: no
-                TouchPad (sting): Включает/Выключает табы в инфо-блоке. *-default: no 
+                TouchPad (sting): Включает/Выключает табы в инфо-блоке. *-default: no
                 Android (sting): Включает/Выключает андройд в инфо-блоке. *-default: no
                 Apple (sting): Включает/Выключает apple в инфо-блоке. *-default: no
         *}
@@ -177,7 +177,7 @@
             textAlign = "right"
             title = "Apple Monitoring App  <br>iCloud Solution"
             description = "Enjoy multitask tracking without Jailbreak<br>Control iPhone use. Follow location and online activity"
-                     
+
             promoBuyBlock = "no"
             iCloudSolution = 'yes'
             planPackageBuy = "no"
@@ -187,7 +187,7 @@
             Apple = 'no'
             InfoBlock = 'no'
         }
-        
+
         {*
             Template: INFORMATION BLOCK ( NOT SUBMIT )
             Переменные:
@@ -198,15 +198,15 @@
                 textAlign (string): позиция текста. ( left|center|right ) *default: right
                 title (string): название блока.
                 description (string): описание баннера.
-                
+
                 promoBuyBlock (string): Включает/Выключает кнопку PromoBuy (yes|no) *default: переменная не инцелезирована
                 planPackageBuy (sting): Включает/Выключает банер пакетов (yes|no) *default: переменная не инцелезирована
-                
+
                 InfoBlock (sting): Включает/Выключает инфо блок. *-default: no
-                TouchPad (sting): Включает/Выключает табы в инфо-блоке. *-default: no 
+                TouchPad (sting): Включает/Выключает табы в инфо-блоке. *-default: no
                 Android (sting): Включает/Выключает андройд в инфо-блоке. *-default: no
                 Apple (sting): Включает/Выключает apple в инфо-блоке. *-default: no
-                
+
         *}
         {include file='../includes/content/info/info-promo.tpl'
             imgUrl = "header_banners/iphone-tracking-software.png"
@@ -216,16 +216,16 @@
             textAlign = "right"
             title = "Apple Mobile <br>Monitoring App"
             description = "Enjoy iOS multitask tracking with or without Jailbreak.<br>Track location. View calls and texts. Follow online activity."
-            
+
             promoBuyBlock = "no"
             planPackageBuy = "no"
-            
+
             TouchPad = 'yes'
             Android = 'no'
             Apple = 'no'
             InfoBlock = 'no'
         }
-        
+
         {*
             Template: INFORMATION BLOCK ( BUTTON TRIAL )
             Переменные:
@@ -240,7 +240,7 @@
                 trial (string): "yes" -  триал баннер. (yes|no)
                 promoBuyBlock (string): Включает кнопку PromoBuy (yes|no) *default: переменная не инцелезирована
                 planPackageBuy (sting): Включает банер пакетов (yes|no) *default: переменная не инцелезирована
-                flagPosition (string): 'left' * - позиция флага относительно тексиа ( описания ). (left|right) default: ''
+                flagPosition (string): 'left' * - позиция флага относительно текста ( описания ). (left|right) default: ''
                 flagName (string): 'gb' * - назначение флага. ( au - Австралия | gb - Великобритания | ca - Канада ) default: ''
                 blockTrial (string): Включает кнопку Trial (yes|no) *default: переменная не инцелезирована
         *}
@@ -256,7 +256,7 @@
             planPackageBuy = "no"
             blockTrial = "yes"
         }
-        
+
         {*
             Template: INFORMATION BLOCK ( BUTTON QUICK AND SIMPLE )
             Переменные:
@@ -289,7 +289,7 @@
             blockTrial = "no"
             blockQuickAndSimple = "yes"
         }
-        
+
         {*
             Template: LANGUAGE BLOCK
             Переменные:
@@ -309,11 +309,11 @@
             flagPosition = 'right'
             flagName = 'gb'
         }
-        
+
         {*
             Template: COUNTRY BLOCK
             Переменные:
-                language(string): - код страны (bra|de|en). *default: false 
+                language(string): - код страны (bra|de|en). *default: false
         *}
         {include file='../includes/content/info/info-promo.tpl'
             infoBlockMobile="no"
@@ -335,7 +335,7 @@
 
             language="bra"
         } {* bottom *}
-        
+
         {*
             Template: BLOCK PLANS
             Переменные:
@@ -343,30 +343,30 @@
         *}
         {include file='../includes/content/plans.tpl'
             visible = "true"}
-        
+
         {*
             Template: DID YOU KNOW
             Переменные:
                 blockBg (string): Стиль блока ( dark / light ) *default: dark
         *}
-        {include file='../includes/content/did_you_know.tpl' 
+        {include file='../includes/content/did_you_know.tpl'
                     blockBg="light"
         }
-        
+
         {*
             Template: TEMPLATE TEENAGERS
             Переменные:
                 blockBg (string): Стиль блока ( dark / light ) *default: dark
         *}
-        {include file='../includes/content/teenagers.tpl' 
+        {include file='../includes/content/teenagers.tpl'
                     blockBg="light"
         }
-        
+
         {*
             Template: BLOCK DISCOUNT
         *}
         {include file='../includes/content/discount_50_v2.tpl'}
-                
+
         {*
             Template: SAMPLE BLOCK SECURES
             Переменные:
@@ -375,19 +375,19 @@
         {include file='../includes/content/secures.tpl'
                 blockBg="light"
         }
-        
+
         {*
             Template: BLOCK FEATURES LIST
             Переменные:
                 blockBg (string): Стиль блока ( dark / light ) *default: dark
         *}
         {include file='../includes/content/features.tpl'}
-        
+
         {* Template: BLOCK TEXT(HTML)
              title (string): название блока
             blockBg (string): Стиль блока ( dark / light ) *default: dark
         *}
-        {* Content 
+        {* Content
             title="Email using statistics"
             blockBg='light'}
 
@@ -401,8 +401,8 @@
 
                 <p>The Internet is the easiest way for online predators, web swindlers and cyberbullies to contact your children. By making friendship with your kids via social media, it is not hard to find out their email addresses, which is the key to personal data and identity theft. Unfortunately, not many parents realize how important web protection is. These days’ online reality shifts the world around, making new rules for us. If you really want to secure your kids’ happiness, it is for you to consider these rules.</p>
         {EndContent *}
-        
-        
+
+
         {*
             Template: FLY BUTTONS
             Переменные:
@@ -416,7 +416,7 @@
             buttonViewDemo = 'no'
             buttonFreeTrial = 'yes'
         }
-        
+
         {*
             Template: SECURES MOBILE PHONES MONITORING
             Переменные:
@@ -424,17 +424,17 @@
         *}
         {include file='../includes/content/secures-mobile-phones-monitoring.tpl'
             blockBg='light'}
-        
+
         {*
             Template: BLOCK FEATURES TEBLE
             Переменные:
                 blockBg (string): Стиль блока ( dark / light ) *default: dark
                 description (string) описание блока.
         *}
-        {include file='../includes/content/features-table.tpl' 
+        {include file='../includes/content/features-table.tpl'
                 blockBg="dark"
-        } 
-        
+        }
+
         {*
             Template: BLOCK Easy-to-Use 'ipad'
             Переменные:
@@ -445,7 +445,7 @@
                 textAlign (string): позиция текста (left|center|right). * default: left
                 description (string): описание блока.
         *}
-        {include file='../includes/content/ipad.tpl' 
+        {include file='../includes/content/ipad.tpl'
                 blockBg="light"
                 imgUrl = "parental_control/ipad.png"
                 imgAlt = "Android"
@@ -454,7 +454,7 @@
                 description = "Try Control Panel demo to see Pumpic app in use.
                                <br />Buy Pumpic to protect your family and secure your happiness right now."
         }
-        
+
         {*
             Template: BLOCK Easy-to-Use 'ipad_android'
             Переменные:
@@ -465,7 +465,7 @@
                 textAlign (string): позиция текста (left|center|right). * default: left
                 description (string): описание блока.
         *}
-        {include file='../includes/content/ipad.tpl' 
+        {include file='../includes/content/ipad.tpl'
                 blockBg="dark"
                 paginations = 'no'
                 imgUrl = "icons/ipad_android.png"
@@ -475,7 +475,7 @@
                 description = "Try Control Panel demo to see Pumpic Calls Monitoring in use.<br/>Buy Pumpic to protect your kids and track their calls right now."
 
         }
-        
+
         {*
             Template: BLOCK BLUE
             Переменные:
@@ -486,7 +486,7 @@
             title = "Pumpic app is attached to the target device itself. <br />It does not depend on a mobile carrier that is used."
             description = "Descriptions"
         }
-        
+
         {*
             Template: BLOCK COMPATIBILITY
             Переменные:
@@ -497,8 +497,8 @@
         {include file='../includes/content/compatibility/compatibility-table.tpl'
             blockBg="light"
             descriptions="The app is compatible with most of modern smartphones and tablets run by iOS and Android. You can check if your particular target device is compatible by finding it in the list on our <a href='/compatibility/'>Compatibility</a> page. Alternatively, you can fill in the form, send us a request, and we will do it for you."
-        } 
-        
+        }
+
         {*
             Template: BLOCK COMPATIBILITY
             Переменные:
@@ -512,7 +512,7 @@
             lang="esp"
             descriptions="The app is compatible with most of modern smartphones and tablets run by iOS and Android. You can check if your particular target device is compatible by finding it in the list on our <a href='/compatibility/'>Compatibility</a> page. Alternatively, you can fill in the form, send us a request, and we will do it for you."
         }
-        
+
         {*
             Template: BLOCK MOBILE OPERATOTS
             Переменные:
@@ -524,8 +524,8 @@
             blockBg="dark"
             title = "Mobile Wireless Carriers Worldwide"
             descriptions="When searching for a relevant mobile monitoring app online, many people tend to use key words like “how to track my Verizon phone”, “Vodafone tracking”, or “at&t mobile monitoring”. However, it is important to note that Pumpic app works independently; our monitoring software does not depend on any mobile carrier as well as services it provides."
-        } 
-        
+        }
+
         {*
             Template: TESTIMONIALS
             Переменные:
@@ -536,10 +536,10 @@
         {*include file='../includes/testimonials.tpl'
                 title = "Trusted by Over 10,000 Customers Worldwide"
                 sliders = "false"
-                blockBg="light" *} 
-                
-        {* 
-            Template: BLOCK TESTIMONIALS HTML (static) 
+                blockBg="light" *}
+
+        {*
+            Template: BLOCK TESTIMONIALS HTML (static)
         *}
         <div class="light">
             <div class="container">
@@ -549,7 +549,7 @@
                     <div class="bxSliders only-pc">
                         <!-- SLIDE #1 -->
                         <div class="slide">
-                    
+
                     <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
                             <img src="{$img}/testimonials/testimonials_new_1.png" alt="" class="testimonial-photo">
                             <div class="testimonial-text">
@@ -572,17 +572,17 @@
                             </div>
                     </div>
 
-                    </div>         
-                </div> 
-                <div class="bxSliderMobile"></div>        
-                            
+                    </div>
+                </div>
+                <div class="bxSliderMobile"></div>
+
                 </div>
             </div>
         </div>
-                                
-        {* 
-            Template: BLOCK TESTIMONIALS HTML (sliders) 
-        *}    
+
+        {*
+            Template: BLOCK TESTIMONIALS HTML (sliders)
+        *}
         <div class="dark">
             <div class="container">
                 <h2 class="text-center testimonial-title">Trusted by Over 10,000 Customers Worldwide:</h2>
@@ -647,7 +647,7 @@
                 </div>
             </div>
         </div>
-        
+
         {*
             Template: BLOCK HOW-GET-PUMPIC
             Переменные:
@@ -658,8 +658,8 @@
         {include file='../includes/content/how-get-pumpic.tpl'
             blockBg = 'light'
             style = "static"
-        }  
-        
+        }
+
         {*
             Template: BLOCK HOW-GET-PUMPIC-OLD
             Переменные:
@@ -669,16 +669,16 @@
         {include file='../includes/content/how-get-pumpic_old.tpl'
             blockBg = 'dark'
             title = ""
-        } 
-        
+        }
+
         {*
             Template: BLOCK HOW-PUMPIC-SECURES
             Переменные:
                 blockBg (string): Стиль блока ( dark / light ) *default: dark
         *}
         {include file='../includes/content/how-pumpic-secures.tpl'
-            blockBg = 'light'} 
-          
+            blockBg = 'light'}
+
         {*
             Template: BLOCK HOT-IT-WORK (old)
         *}
@@ -721,7 +721,7 @@
                     </div>*}
                 </div>
             </div>
-        </div>                
+        </div>
         {*
             Template: BLOCK WHY PUMPIC
             Переменные:
@@ -749,27 +749,27 @@
                             </div>
                         </div>
                     </div>
-                </div> 
+                </div>
 
             </div>
 
-        </div>        
-  
+        </div>
+
         {*
             Template: BLOCK QUICK LINK
             Переменные:
                 blockBg (string): Стиль блока ( dark / light ) *default: dark
         *}
-        {include file='../includes/main/main-quick-link.tpl' 
+        {include file='../includes/main/main-quick-link.tpl'
             blockBg="dark"
-        }        
-        
-        
-        {* 
-            Template: BLOCK BANNERS 
+        }
+
+
+        {*
+            Template: BLOCK BANNERS
         *}
         {* include file='../includes/content/banners/index.tpl' *}
-        
+
         <!-- TEMPLATES BANNERS -->
         {* Template: BLOCK BANNER #1 'PROMO-BUY' *}
         {include file='../includes/content/banners/lib/banner-promo-buy.tpl'}
@@ -784,23 +784,23 @@
         <div>
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-12 col-md-12 col-lg-12">    
+                    <div class="col-sm-12 col-md-12 col-lg-12">
                         {* Template: BLOCK BANNER #5 'PROMO-DEMO' *}
                         {include file='../includes/content/banners/lib/banner-promo-demo.tpl'}
                     </div>
                 </div>
             </div>
-        </div>    
+        </div>
         <!-- END TEMPLATES BANNERS -->
-        
+
         <!-- TEMPLATES VIDEO -->
-        {* Template: VIDEO 
+        {* Template: VIDEO
             Переменные:
                 blockBg (string): Стиль блока ( dark / light ) *default: dark
         *}
         {include file='../includes/content/video-pumpic.tpl'}
         <!-- END TEMPLATES VIDEO -->
-        
+
         <!-- TEMPLATES PLANS WHITE -->
         {* Template: PLANS WHITE
             Переменные:
@@ -808,15 +808,15 @@
         *}
         {include file='../includes/content/plans-white.tpl'}
         <!-- END TEMPLATES PLANS WHITE -->
-        
+
         <!-- TEMPLATES BLOG BANNERS -->
         <div class="pt15">
             <div class="container">
                 <div class="row">
-                    
+
                     <div class="col-sm-12 col-md-10 col-lg-10">
                         <div class="row">
-                        
+
                     <div class="col-sm-12 col-md-4 col-lg-4">
                         <!-- #1 Banner BUY -->
                         <div class="thumb_sidebar banner1 banner2"> <!-- banner2 -->
@@ -825,10 +825,10 @@
                                     <a href="http://pumpic.com/store.html" class='btn btn-default btn-banner-red'>Start Now</a>
                                 </p>
                             </div> <!-- .caption -->
-                        </div>  
-                        
+                        </div>
+
                         <!-- #2 -->
-                        
+
                         <div class="thumb_sidebar">
                             <span class="img_thumb"><img src="{$img}/img_photo.png" height="72" width="138" alt=""></span>
                             <div class="caption">
@@ -840,7 +840,7 @@
                                 </p>
                             </div>
                         </div>
-                    </div> 
+                    </div>
                     <div class="col-sm-12 col-md-4 col-lg-4">
                         <!-- #3 -->
                         <div class="thumb_sidebar thumb_warning">
@@ -854,17 +854,17 @@
                                 </p>
                             </div>
                         </div>
-                    </div>        
-                       
-                        </div>        
-                    </div>  
-                            
+                    </div>
+
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
         <!-- END TEMPLATES BLOG BANNERS -->
-        <!-- END CONTENT -->    
-           
+        <!-- END CONTENT -->
+
         <!-- COUNTRY BLOCK TITLE -->
         {include file='../includes/content/country/title.tpl'
             hook="mobile-spy"
@@ -872,25 +872,25 @@
             icon="false"
             iconName=""
             title="Mobile Spy"
-        } 
-        
+        }
+
         <!-- COUNTRY BLOCK COMPATIBILITY -->
         {include file='../includes/content/compatibility/compatibility-table.tpl'
             lang="en"
-            blockBg="light" 
+            blockBg="light"
         }  {* no_bg bg-wite *}
-        
+
         <!-- COUNTRY BLOCK FEATURES -->
         {include file='../includes/content/country/block-features-mobile-spy-en.tpl'
             title="Features"
         }
-        
+
         <!-- COUNTRY BLOCK HOW-IT-WORK -->
         {include file='../includes/content/country/how-it-work-en.tpl'
                 blockBg="light"
-        } 
-        
-        <!-- RECOMMENDED -->  
+        }
+
+        <!-- RECOMMENDED -->
         {*
             Template: RECOMMENDED
             Переменные:
@@ -898,19 +898,23 @@
         *}
         {include file='../includes/main/main-recommended.tpl'}
         {include file='../includes/main/main-recommended_protaction.tpl' blockBg="light"}
-        
+
         <!-- FOOTER -->
         {*
             Template: FOOTER
             Переменные:
-                our_products (text): Включить выключить блок OUR PRODUCTS (no|yes). * - yes 
+                our_products (text): Включить выключить блок OUR PRODUCTS (no|yes). * - yes
         *}
         {include file='../includes/main/main-footer.tpl'}
-                
+
     </div>
     {*
         Template: ANALYTICS
-    *}   
+    *}
     {include file='../includes/main/main-analytics-footer.tpl'}
+    {*
+        Template: ADDITIONAL RESOURCES
+    *}
+    {include file='../../includes/content/add-resources.tpl'}
 </body>
 </html>

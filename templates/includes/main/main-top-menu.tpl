@@ -10,23 +10,25 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <div class="logo">
-                            <a href="{$domain_http}">pumpic</a>
+                        <div itemscope itemtype="http://schema.org/Organization" class="logo">
+                          <meta itemprop="name" content="Pumpic">
+                            <a href="http://pumpic.com" itemprop="url">pumpic</a>
+                            <img itemprop="logo" src="http://pumpic.com/images/logo/logo.png" alt="pumpic" />
                         </div>
                     </div>
-                        
-                     <div class='box-cp pull-right'>   
+
+                     <div class='box-cp pull-right'>
                         <a href="{if isset($demoHref)}http://demo.{$domain}{$demoHref}{else}{getDemoLink domain=$domain}{/if}" target="_blank" class="btn btn-sm btn-orange btn-success visible-lg cp-login">Demo</a>
-                    </div>   
-                        
-                    {*if ''|hasUser} 
-                        <div class='box-cp pull-right'>   
+                    </div>
+
+                    {*if ''|hasUser}
+                        <div class='box-cp pull-right'>
                             <a href="/logout.html" class="pull-right visible-lg cp-logout">Log Out</a>
                             <a href="https://cp.{$domain}/" class="btn btn-sm btn-success visible-lg cp-login"><i class="icon-lock"></i>Control Panel</a>
-                        </div>    
+                        </div>
                     {else}
                         <a href="{if ''|detectedDev}/login.html{else}#{/if}" class="btn btn-sm btn-success pull-right visible-lg cp-login"><i class="icon-lock"></i> Log In</a>
-                    {/if*}    
+                    {/if*}
 
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse pl15-imp" id="bs-example-navbar-collapse-1">
@@ -34,14 +36,14 @@
                             <li {if isset($topmenu_active) && $topmenu_active=='home'} class="active"{/if}>
                                 <a href="/">Home</a>
                             </li>
-                            
+
                             {if 'iphone-tracking-software.html,iphone-with-jailbreak-monitoring.html,icloud-iphone-without-jailbreak-monitoring.html'|@getCloseLink}
                             <li {if isset($topmenu_active) && $topmenu_active=='all-features'} class="active"{/if}>
                                 <a href="/all-features.html">Features</a>
                             </li>
                             {/if}
-                            
-                            <li class="{if isset($topmenu_active) && $topmenu_active=='pricing'}active{/if} ga-action-click" 
+
+                            <li class="{if isset($topmenu_active) && $topmenu_active=='pricing'}active{/if} ga-action-click"
                                 id="header-menu-store-link"
                                 ga-action ="click"
                                 ga-category="store link"
@@ -49,26 +51,26 @@
                                 >
                                 <a href="{if isset($storeHref)}{$storeHref}{else}/store.html{/if}">Store</a>
                             </li>
-                            
+
                             <li {if isset($topmenu_active) && $topmenu_active=='compatibility'} class="active"{/if}>
                                 <a href="/compatibility/">Compatibility</a>
                             </li>
-                            
+
                             {*<li {if $topmenu_active=='how-to'} class="active"{/if}>
                                 <a href="/how-to.html">How to</a>
                             </li>*}
                             <li {if isset($topmenu_active) && $topmenu_active=='faq'} class="active"{/if}>
                                 <a href="/faq.html">Help & Contacts</a>
                             </li>
-                            
+
                             {nocache}
                                 {if isset($show_control_panel_link) && $show_control_panel_link}
                                     <li>
-                                        {if ''|hasUser} 
+                                        {if ''|hasUser}
                                             <a href="https://cp.{$domain}/">Control Panel</a>
                                         {else}
                                             <a href="{if ''|detectedDev}/login.html{else}#{/if}">Sign in</a>
-                                        {/if}   
+                                        {/if}
 
                                     </li>
                                 {/if}
@@ -86,7 +88,7 @@
                                     </li>
                                 {/if}
                             {/nocache}
-                            
+
                             {*if ''|hasUser}
                                 <li>
                                     <a href="/logout.html" class="hidden-lg cp-logout">Log Out</a>
@@ -100,4 +102,4 @@
             </div>
         </div>
     </div>
-</div>                           
+</div>

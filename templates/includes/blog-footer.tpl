@@ -32,7 +32,7 @@
                                                         <a href="/gps-wireless-tracking-phone.html">Wireless Phone Tracking</a>
                                                     </li>
                                                     */ ?>
-                                                    
+
                                                         <?php /*
 							<li>
 								<a href="<?php echo getStaticUrl();?>/policy.html">Policy</a>
@@ -44,7 +44,7 @@
 								<a href="<?php echo getStaticUrl();?>/security/">Blog</a>
 							</li>
                                                         */ ?>
-                                                        
+
 						</ul>
                                             </div>
                                             <div>
@@ -62,7 +62,7 @@
                                                     <li>
                                                         <a href="/cell-phones-for-kids.html">Cell Phones for Kids</a>
                                                     </li>
-                                                </ul>        
+                                                </ul>
                                             </div>
 					</div>
                     <?php include(dirname(__FILE__).'/blog-footer-our-products.tpl'); ?>
@@ -72,7 +72,7 @@
 						<div class="share">
 							<?php /*Share:
 							<img src="<?php echo getStaticUrl();?>/images/social-buttons.png" alt=""> */ ?>
-                                                        
+
                                                         <ul class="box-socials clearfix">
                                                             <li><a href="https://www.facebook.com/pumpicapp/" target="_blank" class="icons-social i-fb"></a></li>
                                                             <li><a href="https://twitter.com/pumpic_com" target="_blank"  class="icons-social i-tw"></a></li>
@@ -82,12 +82,12 @@
                                                                 <?php include(dirname(__FILE__).'/content/phone/blog-phone-footer.tpl'); ?>
                                                             </li>
                                                         </ul>
-                                                        
+
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>		
+		</div>
 		<div class="footer">
 			<div class="container">
 				<div class="footer-text text-center">
@@ -97,7 +97,7 @@
 				</div>
 			</div>
 		</div>
-        <?php 
+        <?php
         if (di()->get('isDirectLogin') == true): ?>
             <div class="direct-login-footer">
                 <div class="container">
@@ -107,7 +107,7 @@
             </div>
         <?php endif; ?>
 	</div>
-        
+
         <!-- init popUp -->
         <?php include(dirname(__FILE__).'/blog-popUp.tpl'); ?>
         <?php include(dirname(__FILE__).'/blog-analytics-footer.tpl'); ?>

@@ -342,15 +342,16 @@ div.blockquate_bottom {
 
 .logo {
   float: left;
-  background: url(../images/logo/logo.png) no-repeat;
-  background-size: cover;
+  //background: url(../images/logo/logo.png) no-repeat;
+  //background-size: cover;
   width: 172px;
   height: 44px;
   overflow: hidden;
-  text-indent: -9999px;
+  font-size: 0;
+  //text-indent: -9999px;
   a {
-    display: block;
-    height: 100%;
+    //display: block;
+    //height: 100%;
   }
 }
 
@@ -1004,6 +1005,21 @@ form {
       margin-top: 0;
       border: 1px solid #ffba60;
       border-radius: 5px;
+    }
+  }
+}
+
+.additional {
+  &-feature {
+    padding-top: 35px;
+    padding-bottom: 0;
+  }
+  &-list {
+    li {
+    margin-left: 0 !important;
+    &:before {
+      background-color: #ffba60;
+    }
     }
   }
 }
@@ -1798,6 +1814,10 @@ form {
       display: block;
     }
   }
+}
+
+.init-height {
+  height: 100% !important;
 }
 
 .caption {
@@ -6472,7 +6492,11 @@ form {
     width: 50px;
   }
 }
-
+.thumpnail_info {
+  width: 202px;
+  margin: 10px auto;
+  font-size: 13px;
+}
 .box-faq-images {
   clear: both;
   display: block;
@@ -7535,7 +7559,7 @@ ul.list_category li:first-child {
 }
 
 /*#block-bottom {
-    height: 160px;  
+    height: 160px;
     vertical-align: bottom;
     display: table-cell;
 }*/
@@ -7546,7 +7570,7 @@ ul.list_category li:first-child {
     bottom: 20px;
 }
 
-@media (max-width: 992px) { 
+@media (max-width: 992px) {
     .b-s-image {
         position: relative;
         bottom: 0px;

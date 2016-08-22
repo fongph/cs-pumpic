@@ -1,19 +1,19 @@
 {include file='../includes/main/main-header.tpl'
-    robots="yes" 
+    robots="yes"
     title="Limit Internet Time for Your Kids | Pumpic"
     description="Modern kids and teens every day waste hours surfing the Web. Lately, limiting Internet time for kids has turned into real battle between parents and kids."
     customeStyle="
         .block-child-location-tracking .ipad-text {
             padding: 10px 0;
         }
-        
+
         @media only screen and (max-width: 480px) {
             .block-child-location-tracking .ipad-text {
                 padding: 10px 0px 50px 0px;
             }
         }
 
-        @media (min-width: 468px) { 
+        @media (min-width: 468px) {
             .block-child-location-tracking .ipad-text {
                 padding: 10px 0px 50px 0px;
             }
@@ -38,15 +38,15 @@
             .block-child-location-tracking .ipad-text {
               padding: 10px 0;
             }
-        } 
+        }
     "
-}    
-    
+}
+
 <body>
     <!-- FLY BLOCKS -->
     {include file='../includes/content/fly/fly_blocks.tpl'}
     <!-- END FLY BLOCKS-->
-    
+
     <div class="wrapper {*bg_bottom_images*} block-child-location-tracking home-page">
         <!-- TOP MENU -->
 
@@ -56,22 +56,22 @@
         }
 
 
-        
+
         {*
             Template: PHONE
             Переменные:
-                style (text): стиль блока Phone (blue|black). * - blue 
+                style (text): стиль блока Phone (blue|black). * - blue
         *}
         {include file='../includes/content/phone/block-phone.tpl'
-                 style="blue"   
+                 style="blue"
         }
-        
+
         {* bg_famaly_427x254.png imgVerticalAlign = "bottom"*}
         <!-- CONTENT -->
 
         {include file='../includes/content/info/info-promo.tpl'
             imgUrl = "header_banners/limit-internet-time_header.png"
-            imgAlt = "Limit Internet Use" 
+            imgAlt = "Limit Internet Use"
             imgAlign = "right"
             imgVerticalAlign = "bottom"
 			imgTitle = "Limit the time your kid spends online"
@@ -94,21 +94,21 @@
             buttonViewDemo = 'no'
             buttonFreeTrial = 'yes'
         }
-		
-        
-        
-        
-{Content 
-    styleTitle="h2"    
+
+
+
+
+{Content
+    styleTitle="h2"
     title="The Battle over Screen Time"
     blockBg='light'}
-	
+
 <p>Nowadays, roughly every teen out there has a smartphone or tablet or both. Of course, they are Internet-enabled. For modern children, these gadgets became the primary mean of communication with the peers. Add here PCs and TV and you’ll get the number of up to 9 hours per day – that’s how much time kids spend on different types of screens. It’s probably more than many parents spend on their working places! This resulted in the real war between parents and children over screen time with the fight to limit Internet access time being one of the major battles.</p>
 <p>Naturally, parents worry about how youngsters use their time. They often consider online games, social media, Internet messengers, and all similar activities a waste of precious time resource. Children, on the contrary, see those things as vital part of their lives. Admittedly, it is at least partly true, because interaction via the Internet lets them stay connected with friends and even helps to socialize. But you will hardly find mom or dad who would put up with their kids being literally glued to mobile phones every spare minute.</p>
-    
+
 		<!-- BLOCK STATISTICK -->
         <div class="block-statistick row">
-            
+
             <div class="item col-s-sm-12 col-xs-sm-12 col-sm-4 col-md-4 col-lg-4">
                 <section>
                     <div><strong class="fz50 color-orange">92%</strong></div>
@@ -133,19 +133,19 @@
                     </span>
                 </section>
             </div>
-            
+
         </div>
         <!-- END -->
-		
-<p>The issue of Internet overuse is closely connected to the problem of children’s online safety. Simple logic: the more time a kid spends browsing the Web, the more probability is he or she may fall victim of various online threats. Cyberbullying, inappropriate content, sexual predators, identity thieves – this list of the Internet hazards can be very long. Together, they make a substantial reason for parents to pay close attention to their kids’ online activities. This goal is easiest to achieve by utilizing monitoring and limiting software that became today arguably the best way to prevent web dangers as well as the development of Internet addiction.</p>  
-		
+
+<p>The issue of Internet overuse is closely connected to the problem of children’s online safety. Simple logic: the more time a kid spends browsing the Web, the more probability is he or she may fall victim of various online threats. Cyberbullying, inappropriate content, sexual predators, identity thieves – this list of the Internet hazards can be very long. Together, they make a substantial reason for parents to pay close attention to their kids’ online activities. This goal is easiest to achieve by utilizing monitoring and limiting software that became today arguably the best way to prevent web dangers as well as the development of Internet addiction.</p>
+
 {EndContent}
-		
-{Content 
+
+{Content
     styleTitle=""
     title=""
     blockBg='dark'}
-    
+
     <div id="grid-images" class="row">
         <div class="col-lg-9 col-md-9 col-sm-9">
             <h2 class="h2 text-right-important">Tips & Tricks to Limit Browsing Time</h2>
@@ -165,11 +165,11 @@
 			</div>
         </div>
         <div class="col-lg-3 col-md-3 col-sm-3 text-center">
-            <img  class="block-apps-pic" title="Limit access to the Internet" style="margin-top: 200px;" alt="Tips to limit screen time for kids" src="{$img}/landings/limit-internet-time_icon.png" width="207px" height="208px" />
+            <img  class="block-apps-pic" title="Limit access to the Internet" style="margin-top: 50px;" alt="Tips to limit screen time for kids" src="{$img}/landings/limit-internet-time_icon.png" width="207px" height="208px" />
         </div>
-    </div>    
+    </div>
 {EndContent}
-        
+
 <div class="light">
         <div class="container">
                 <h2 class="text-center">Manage Your Kids’ Internet and Device Time with Pumpic</h2>
@@ -210,23 +210,23 @@
                 </div>
         </div>
 </div>
-        
+
         {include file='../includes/content/features-table.tpl'
         title = "Advanced Monitoring with Pumpic’s Outstanding Features"
         description = "Pumpic parental control app is a state-of-the-art monitoring software. Its two dozen comprehensive tracking features help concerned parents ensure their kids’ safety both online and offline. The app’s functionality provides broad device management options so that parents can go far beyond “Turn it off!” request. Pumpic is available for Android and iOS mobile devices; for the latter ones, you can choose a solution with or without jailbreak. In any form, this parental app will let you detect and avert possible dangers that threaten your little loved ones."
         blockBg="dark"
-        } 
-        
-               
+        }
+
+
         <div class="light">
     <div class="container">
             <h2 class="text-center testimonial-title">Over 10 000 Thankful Customers around the Globe</h2>
             <div class="row">
-                
+
                 <div class="bxSliders only-pc">
                         <!-- SLIDE #1 -->
                         <div class="slide">
-                
+
                     <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
                             <img src="{$img}/testimonials/jermaine-s.png" alt="" class="testimonial-photo">
                             <div class="testimonial-text">
@@ -248,11 +248,11 @@
                                     <p>“Terrific app. My daughter is literally obsessed with her new smartphone. She used to spend hours playing Farm Heroes instead of studying or hanging out with friends. Persuasion didn’t work. After trying several parental apps, I knew that Pumpic suits best for me. It has neat interface and many useful features. I believe this app is right what she needs now to stay focused on important things.”</p>
                             </div>
                     </div>
-                            
+
                         </div>
                 </div>
-                <div class="bxSliderMobile"></div>            
-                            
+                <div class="bxSliderMobile"></div>
+
             </div>
     </div>
 </div>
@@ -260,31 +260,31 @@
         {include file='../includes/content/banners/index.tpl'}
 
 
-        
+
         {*{include file='../includes/content/banners/banner-promo-trial.tpl'}*}
-        
-        <!-- END CONTENT -->    
-           
+
+        <!-- END CONTENT -->
+
         <!-- RECOMMENDED -->
         {*
             Template: RECOMMENDED
         *}
         {include file='../includes/main/main-recommended.tpl'}
-        
+
         <!-- FOOTER -->
         {*
             Template: FOOTER
             Переменные:
-                our_products (text): Включить выключить блок OUR PRODUCTS (no|yes). * - yes 
+                our_products (text): Включить выключить блок OUR PRODUCTS (no|yes). * - yes
         *}
         {include file='../includes/main/main-quick-link.tpl'
         blockBg="light"
         }
 
         {include file='../includes/main/main-footer.tpl'}
-                
+
     </div>
-       
+
     {include file='../includes/main/main-analytics-footer.tpl'}
 </body>
 </html>

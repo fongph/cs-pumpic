@@ -755,117 +755,117 @@ form > table.pricing-second {
 }
 
 .save__2plan.save__second {
-  display: none;
-  top: 1742px;
+//  display: none;
+  top: 1592px;
 }
 
 
 // ___-FILTER-___
 
-.android-filter,.ios-jb-filter {
-  display: none;
-}
-
-.support_new_os {
-  display: none;
-}
-
-.wide-wr {
-  width: 100%;
-}
-
-.mt0 {
-  margin-top: 0 !important;
-}
-
-.mt20 {
-  margin-top: 20px !important;
-}
-
-.ios_jb-filter {
-  display: none;
-}
-.filter {
-
-  &_fe {
-    background-color: #f0f0f0;
-    width: 100%;
-    float: left;
-    padding: 20px 0 25px;
-    border-top: 1px solid #e8e8e8;
-    border-bottom: 1px solid #e8e8e8;
-  }
-  &_text {
-    text-transform: none;
-    font-size: 16px;
-  }
-  &_list {
-    padding: 0;
-    width: 100%;
-    text-align: center;
-    margin: 0 auto;
-    border-radius: 10px;
-    font-size: 0;
-    overflow: hidden;
-  }
-  &_icon {
-    font-size: 16px !important;
-    color: #f2f6ff !important;
-  }
-  &_item {
-    cursor: pointer;
-    color: #f2f6ff;
-    font-weight: 600;
-    background-color: #43778f;
-    text-transform: none;
-    display: inline-block;
-    font-size: 14px;
-    padding: 20px 25px;
-    margin: 0;
-    -webkit-transition: background-color .2s ease-out;
-    -o-transition: background-color .2s ease-out;
-    transition: background-color .2s ease-out;
-    &:first-child {
-      border-radius: 32px 0 0 32px;
-      border-right: 1px solid  #2f5464;
-    }
-    &:last-child {
-      border-radius: 0 32px 32px 0;
-      border-left: 1px solid  #2f5464;
-      padding: 14px 25px;
-      font-size: 12px;
-      vertical-align: top;
-    }
-    &:hover {
-      background-color: #2b5b71;
-    }
-  }
-  &_version {
-    font-size: 12px;
-    font-weight: normal;
-  }
-  &-active {
-    background-color: #2f5464;
-  }
-}
- .premium_only, .basic_only {
-  margin-top: 20px !important;
-  ul {
-    width: 255px;
-    margin: 0 auto;
-  }
-  li {
-    //text-align: center !important;
-  }
-  // .tooltip.top .tooltip-arrow {
-  //   left: 50%;
-  //   margin-left: -5px;
-  // }
-}
-
-.list_price .btn-default[disabled] {
-  background-color: #cf4757;
-}
+// .android-filter,.ios-jb-filter {
+//   display: none;
+// }
+//
+// .support_new_os {
+//   display: none;
+// }
+//
+// .wide-wr {
+//   width: 100%;
+// }
+//
+// .mt0 {
+//   margin-top: 0 !important;
+// }
+//
+// .mt20 {
+//   margin-top: 20px !important;
+// }
+//
+// .ios_jb-filter {
+//   display: none;
+// }
+// .filter {
+//
+//   &_fe {
+//     background-color: #f0f0f0;
+//     width: 100%;
+//     float: left;
+//     padding: 20px 0 25px;
+//     border-top: 1px solid #e8e8e8;
+//     border-bottom: 1px solid #e8e8e8;
+//   }
+//   &_text {
+//     text-transform: none;
+//     font-size: 16px;
+//   }
+//   &_list {
+//     padding: 0;
+//     width: 100%;
+//     text-align: center;
+//     margin: 0 auto;
+//     border-radius: 10px;
+//     font-size: 0;
+//     overflow: hidden;
+//   }
+//   &_icon {
+//     font-size: 16px !important;
+//     color: #f2f6ff !important;
+//   }
+//   &_item {
+//     cursor: pointer;
+//     color: #f2f6ff;
+//     font-weight: 600;
+//     background-color: #43778f;
+//     text-transform: none;
+//     display: inline-block;
+//     font-size: 14px;
+//     padding: 20px 25px;
+//     margin: 0;
+//     -webkit-transition: background-color .2s ease-out;
+//     -o-transition: background-color .2s ease-out;
+//     transition: background-color .2s ease-out;
+//     &:first-child {
+//       border-radius: 32px 0 0 32px;
+//       border-right: 1px solid  #2f5464;
+//     }
+//     &:last-child {
+//       border-radius: 0 32px 32px 0;
+//       border-left: 1px solid  #2f5464;
+//       padding: 14px 25px;
+//       font-size: 12px;
+//       vertical-align: top;
+//     }
+//     &:hover {
+//       background-color: #2b5b71;
+//     }
+//   }
+//   &_version {
+//     font-size: 12px;
+//     font-weight: normal;
+//   }
+//   &-active {
+//     background-color: #2f5464;
+//   }
+// }
+//  .premium_only, .basic_only {
+//   margin-top: 20px !important;
+//   ul {
+//     width: 255px;
+//     margin: 0 auto;
+//   }
+//   li {
+//     //text-align: center !important;
+//   }
+//   // .tooltip.top .tooltip-arrow {
+//   //   left: 50%;
+//   //   margin-left: -5px;
+//   // }
+// }
+//
+// .list_price .btn-default[disabled] {
+//   background-color: #cf4757;
+// }
 
 @media only screen and (max-width:600px) {
   .filter_item {
@@ -999,7 +999,8 @@ form > table.pricing-second {
     }
   }
   .save__2plan.save__second {
-    top: 1752px;
+    top: 1642px;
+    //top: 1752px;
   }
 }
 

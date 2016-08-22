@@ -1,31 +1,25 @@
-FROM ubuntu:14.04
+FROM php:5.5-fpm
 
 RUN apt-get update && apt-get install -y \
-    git-core \
+    libfreetype6-dev \
+    libcurl4-gnutls-dev \
     curl \
-    php5 \
-    php5-mysql \
-    php5-intl \
-    php5-curl \
-    php5-gd \
-    php5-xdebug \
-    nodejs \
-    npm
+    zlib1g-dev \
+    libicu-dev \
+    libgd-dev \
+    && docker-php-ext-configure intl \
+    && docker-php-ext-configure gd --with-freetype-dir=/usr \
+    && docker-php-ext-install -j$(nproc) pdo pdo_mysql mysqli intl curl gd \
+    && rm -r /var/lib/apt/lists/*
 
-RUN ln -s /usr/bin/nodejs /usr/bin/node
-
-RUN npm install --global gulp-cli
-RUN npm install --save-dev gulp
-
-RUN usermod -u 1000 -d /home/www-data www-data
-RUN mkdir /home/www-data
-RUN chown -R www-data:www-data /home/www-data
+#ADD environment.conf /usr/local/etc/php-fpm.d/
+ADD application.ini /usr/local/etc/php/conf.d/
+ADD browscap.ini /etc/browscap.ini
 
 RUN curl -sS https://getcomposer.org/installer | php
 RUN mv composer.phar /usr/local/bin/composer
 RUN chmod +x /usr/local/bin/composer
 
-ADD application.ini /etc/php5/cli/conf.d/
-ADD browscap.ini /etc/browscap.ini
+RUN mkdir /code && chown -R www-data:www-data /code
 
 WORKDIR /code

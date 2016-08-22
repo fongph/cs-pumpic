@@ -2,11 +2,8 @@ version: '2'
 services:
     application:
         build: compose/application
-        command: sh -c "cd public && env php -d xdebug.idekey=$$XDEBUG_KEY -d xdebug.remote_host=$$XDEBUG_HOST -S 0.0.0.0:8000 index.php"
-        user: www-data
         ports:
-            - "8300:8000"
-            - "8301:9000"
+            - "9000"
         volumes:
             - .:/code
             - ~/.ssh:/home/www-data/.ssh
@@ -37,4 +34,20 @@ services:
             - DB_BLOG_USER=dev_test
             - DB_BLOG_PASSWORD=hEcLTXHGWTpY
             - XDEBUG_KEY=netbeans-xdebug
-            - XDEBUG_HOST=localhost
+            - XDEBUG_HOST=localhost\
+    nginx:
+        build: compose/nginx
+        ports:
+            - "8300:80"
+        links:
+            - application
+        volumes_from:
+            - application
+    node:
+        build: compose/node
+        command: "echo privet"
+        ports:
+            - "8302:3000"
+            - "8303:3001"
+        volumes_from:
+            - application

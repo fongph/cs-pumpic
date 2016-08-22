@@ -12,8 +12,9 @@
                         </button>
                         <div itemscope itemtype="http://schema.org/Organization" class="logo">
                           <meta itemprop="name" content="Pumpic Parental Monitoring">
-                            <a href="http://pumpic.com" itemprop="url">pumpic</a>
+                            <a href="/" itemprop="url">pumpic
                             <img itemprop="logo" src="http://pumpic.com/images/logo/logo.png" alt="pumpic" />
+                            </a>
                         </div>
                     </div>
 

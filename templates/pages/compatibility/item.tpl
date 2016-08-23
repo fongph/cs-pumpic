@@ -160,10 +160,11 @@
                                     <div class="col-lg-10">
                                             <div class="row">
                                                 <div class="form" style="margin-bottom:40px;">
-                                                {include file='../../includes/main/form/main-compatibility-send-find-phone.tpl'
-                                                    cache_id = "main-compatibility-send-find-phone"
-                                                    inputHidden = "true"
-                                                    nocache}
+                                                  {nocache}
+                                                  {include file='../../includes/main/form/main-compatibility-send-find-phone.tpl'
+                                                  cache_id = "main-compatibility-send-find-phone"
+                                                  inputHidden = "true" }
+                                                  {/nocache}
                                                 </div>
                                             </div>
                                     </div>
@@ -172,7 +173,6 @@
                         </div>
                       </div>
 
-                            {include file='../../includes/content/add-resources.tpl'}
 
                           <div class="container">
                             <div class="col-lg-10 col-lg-offset-1">
@@ -192,6 +192,8 @@
                             </div>
                           </div>
                 </div>
+                {include file='../../includes/content/add-resources.tpl'}
+
             </div>
             {*include file='../../includes/compatibility-footer-promo.tpl' model=$compatibilityDeviceUri*}
 

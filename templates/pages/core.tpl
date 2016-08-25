@@ -915,6 +915,6 @@
     {*
         Template: ADDITIONAL RESOURCES
     *}
-    {include file='../../includes/content/add-resources.tpl'}
+    {include file='../includes/content/add-resources.tpl'}
 </body>
 </html>

@@ -46,7 +46,7 @@
     metaTags="true"
     ogTitle="Kids’ Screen Time Management | Pumpiс"
     ogDesc="How much screen time for kids is too much? Find out the answer and check this infographic for 8 screen time recommendations to help parents deal with the issue."
-    ogImg="/images/infographic/how-to-manage-kids-screen-time.png"
+    ogImg="images/infographic/how-to-manage-kids-screen-time.png"
 }
 
 <body>

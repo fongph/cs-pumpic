@@ -897,7 +897,12 @@
                 blockBg (string): Стиль блока ( dark / light ) *default: dark
         *}
         {include file='../includes/main/main-recommended.tpl'}
-        {include file='../includes/main/main-recommended_protaction.tpl' blockBg="light"}
+
+        <hr>
+        {*
+            Template: ADDITIONAL RESOURCES
+        *}
+        {include file='../includes/content/add-resources.tpl'}
 
         <!-- FOOTER -->
         {*
@@ -912,9 +917,6 @@
         Template: ANALYTICS
     *}
     {include file='../includes/main/main-analytics-footer.tpl'}
-    {*
-        Template: ADDITIONAL RESOURCES
-    *}
-    {include file='../includes/content/add-resources.tpl'}
+
 </body>
 </html>

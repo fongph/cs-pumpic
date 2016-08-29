@@ -1,7 +1,7 @@
 {include file='../includes/main/main-header.tpl'
     robots="yes" 
-    title="Best Spy Apps for Android | Pumpic"
-    description="Looking for the best spy apps for Android? Do you know they are illegal? Features of best spying apps and why it is better to use lawful parental controls."
+    title="Best Spying Apps for Android | Pumpic"
+    description="Looking for the best text spyware for Android? Do you know they are illegal? Features of best spying apps and why it is better to use lawful parental controls."
     customeStyle="
         .block-child-location-tracking .ipad-text {
             padding: 10px 0;
@@ -75,7 +75,7 @@
             imgAlign = "right"
             imgVerticalAlign = "center"
             textAlign = "right"
-            title = "Best Spy Apps for Android <br />VS Legal Parental Control Software"
+            title = "Best Spying Applications for Android <br />VS Legal Parental Control Software"
 			titleSize = "25px"
             description = "What are the main features of best spying apps?<br />Track calls and messages, monitor location, and much more."
             promoBuyBlock = "no"
@@ -104,11 +104,11 @@
         
 {Content 
     styleTitle="h2"    
-    title="What Is the Best Spy App for Android?"
+    title="What Is the Alternative to Using a Spy App?"
     blockBg='light'}
 	
 	<img class="app-icon-left" src="{$img}/landings/best-spy-apps-for-android_2_01-04-2016.png" title="Definition of spy apps for Android" alt="android monitoring">
-	<p>According to the security company Lookout, 24% of Android phones scanned in the USA had the installed spying software. The apps attract people by various outstanding traits and software providers do their best to improve the quality of their services. As a result, new monitoring features appear regularly making people install the spying apps.</p>
+	<p>According to the security company Lookout, 24% of Android phones scanned in the USA had the installed spying software. The apps attract people by various outstanding traits, and software providers do their best to improve the quality of their services. As a result, new monitoring features appear regularly making people install the spying apps.</p>
 	<p>When it comes to choosing to the best <a class="a-default" target="_blank" href="/spy-apps-for-android.html">Android cell phone spy software</a>, most people cannot make a final decision quickly. Easy Spy, Cell Tracker, mSpy, Mobile Stealth, Phone Sheriff are just a few possible options to install. With the help of spy apps, it is possible to follow the incoming and outgoing calls, track messages, check contacts, monitor browsing history, check social media, view photo and media files and much more. It seems that the functions of the best cell phone spy are unlimited.</p>
         
         <!-- BLOCK STATISTICK -->
@@ -142,8 +142,8 @@
         </div>
         <!-- END -->
 
-        <p>Studies have proven that today people are more open to share their personal information via social media networks. This fact makes jealous partners seriously consider using spy apps to follow all the activities of their spouse. It is easy to monitor the Facebook and Instagram activity, view all photos and video uploaded and even the comments posted below.</p>
-		<p>However, you should note that using the spy apps is not lawful as it violates the personal freedom and ignores all legal requirements of the most countries. But how to protect the loved one without breaking any regulations? The answer is simple: to use parental control apps such as Pumpic that are legal. Today the third of parents successfully use tracking apps on their teen’s phone to protect their children.</p>
+        <p>Studies have proven that today people are more open to share their personal information via social media networks. This fact makes jealous partners seriously consider using spy apps to follow all the activities of their spouse. Once you know how to install a spy app on Android, it becomes very easy to monitor the Facebook and Instagram activity, view all photos and video uploaded and even the comments posted below.</p>
+		<p>However, you should note that using the spy apps is not lawful as it violates the personal freedom and ignores all legal requirements of the most countries. But how to protect the loved one without breaking any regulations? The answer is simple: to use parental control apps such as Pumpic that are legal. Today  one third of parents successfully use tracking apps on their teen’s phone to protect their children.</p>
 		
 {EndContent}
 		

@@ -5,7 +5,7 @@ Deny from 49.199.27.18
 Deny from 49.199.31.93
 Deny from 49.183.190.197
 Deny from 54.186.60.77
- 
+
 RewriteEngine on
 RewriteBase /
 
@@ -144,6 +144,7 @@ RewriteRule ^features\.html$ all-features\.html [L,R=301]
 RewriteRule ^compatibility\.html$ compatibility/ [L,R=301]
 RewriteRule ^learning-center/ready\-solutions\.html$ learning-center/ready\-solutions/ [L,R=301]
 RewriteRule ^limitly-parental-app/index\.html$ limitly-parental-app/ [L,R=301]
+RewriteRule ^best-spy-apps-for-android\.html$ best-spying-apps-for-android\.html$ [L,R=301]
 
 RewriteCond %{REQUEST_URI} !\?
 RewriteCond %{REQUEST_URI} !\&
@@ -154,7 +155,7 @@ RewriteRule ^(.*[^\/])$ /$1/ [R=301,L]
 
 
 RewriteRule ^compatibility/results(.+)$ search.html [L]
-# Android 
+# Android
 RewriteRule ^compatibility/android-devices(.+)$ search.html [L]
 # iOS
 RewriteRule ^compatibility/ios-devices(.+)$ search.html [L]
@@ -165,26 +166,26 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule (.*) index.php
 
 #add cache images
-<IfModule mod_expires.c>     
-    ExpiresActive On     
-    ExpiresDefault "access plus 1 month"      
-    ExpiresByType image/gif "access plus 2 months"     
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresDefault "access plus 1 month"
+    ExpiresByType image/gif "access plus 2 months"
     ExpiresByType image/jpeg "access plus 2 months"
     ExpiresByType image/png "access plus 2 months"
     ExpiresByType text/html  "access plus 2 months"
-    ExpiresByType text/plain  "access plus 2 months"  
+    ExpiresByType text/plain  "access plus 2 months"
     ExpiresByType text/xml  "access plus 2 months"
-    ExpiresByType ttext/css  "access plus 2 months"
+    ExpiresByType text/css  "access plus 2 months"
     ExpiresByType application/javascript  "access plus 2 months"
-</IfModule> 
+</IfModule>
 
 <IfModule mod_deflate.c>
    SetOutputFilter DEFLATE
 
    # example of how to compress ONLY html, plain text and xml
     AddOutputFilterByType DEFLATE text/plain
-    AddOutputFilterByType DEFLATE text/html 
-    AddOutputFilterByType DEFLATE text/xml 
+    AddOutputFilterByType DEFLATE text/html
+    AddOutputFilterByType DEFLATE text/xml
     AddOutputFilterByType DEFLATE text/css
     AddOutputFilterByType DEFLATE application/xml
     AddOutputFilterByType DEFLATE application/xhtml+xml

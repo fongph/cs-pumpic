@@ -1,18 +1,18 @@
 {include file='../includes/main/main-header.tpl'
-    robots="yes" 
+    robots="yes"
     title="Professional mobile tracking app | Pumpic"
     description="Pumpic is an innovative solution, which takes Mobile Phone Monitoring on a reasonably new level. Find out more functions of Pumpic and evaluate the progress it made."
-}    
-    
+}
+
 <body>
     <!-- BLOCK GTM -->
     {include file='../includes/main/main-after-body.tpl'}
     <!-- END BLOCK GTM -->
-    
+
     <!-- FLY BLOCKS -->
     {include file='../includes/content/fly/fly_blocks.tpl'}
     <!-- END FLY BLOCKS-->
-    
+
     <div class="wrapper block-technological">
         <!-- TOP MENU -->
 
@@ -22,31 +22,31 @@
             cache_id = "includes_main_main-top-menu"
             nocache
         }
-        
 
-        
+
+
         <!-- BLOCK HEADER -->
         <div class="bg_white">
             <div class="container">
-                
+
                 {*
                     Template: PHONE
                     Переменные:
-                        style (text): стиль блока Phone (blue|black). * - blue 
+                        style (text): стиль блока Phone (blue|black). * - blue
                 *}
                 {include file='../includes/content/phone/block-phone.tpl'
-                         style="black block"   
-                } 
-                
-                <div id="block-technological-header"> 
+                         style="black block"
+                }
+
+                <div id="block-technological-header">
                     <div class="box-hedaer-title">
                         <h1 class="h2 text-center">Cell Phone Monitoring Features</h1>
                     </div>
-                    
+
                     <div class="box-hedaer-body">
                         <div class="row">
                             <div class="col-sm-3 col-md-3 col-lg-3">
-                                
+
                                 <ul class="list-features text-right">
                                     <li class="i-l-features">
                                         <div class="row">
@@ -56,16 +56,16 @@
                                                     <ul>
                                                         <li>in- and outbound call logs</li>
                                                         <li>name, number and time data</li>
-                                                    </ul>  
+                                                    </ul>
                                                 </div>
                                             </div>
                                             <div class="col-sm-2 col-md-2 col-lg-2 padding-null">
                                                 <img class="model-center" src="{$img}/technological/header/icon/icon-call.png" width="27px" height="27px" />
                                             </div>
                                         </div>
-                                        
+
                                     </li>
-                                    
+
                                     <li class="i-l-features">
                                         <div class="row">
                                             <div class="col-sm-10 col-md-10 col-lg-10 plr5">
@@ -82,7 +82,7 @@
                                             </div>
                                         </div>
                                     </li>
-                                    
+
                                     <li class="i-l-features">
                                         <div class="row">
                                             <div class="col-sm-10 col-md-10 col-lg-10 plr5">
@@ -99,7 +99,7 @@
                                             </div>
                                         </div>
                                     </li>
-                                    
+
                                     <li class="i-l-features">
                                         <div class="row">
                                             <div class="col-sm-10 col-md-10 col-lg-10 plr5">
@@ -116,34 +116,34 @@
                                             </div>
                                         </div>
                                     </li>
-                                    
+
                                 </ul>
-                                
+
                             </div>
                             <div class="col-sm-6 col-md-6 col-lg-6 padding-null text-center mt10">
-                                
+
                                 <div class="box-images">
                                     <div class="box-middle" style="max-width: 510px;">
                                         <div class="line-middle"></div>
                                         <img src="images/technological/header/img_header_middle.png" />
                                     </div>
-                                    
+
                                     <div class="box-big" style="max-width: 622px;">
                                         <div class="line-big"></div>
                                         <img src="images/technological/header/img_header_big.png" />
                                     </div>
                                 </div>
-                                
+
                             </div>
                             <div class="col-sm-3 col-md-3 col-lg-3">
                                 <ul class="list-features text-left">
-                                    
+
                                     <li class="i-l-features p-b-item-1">
                                         <div class="row">
                                             <div class="col-sm-2 col-md-2 col-lg-2 padding-null">
                                                 <img class="model-center" src="{$img}/technological/header/icon/icon-sms.png" width="33px" height="29px" />
                                             </div>
-                                            
+
                                             <div class="col-sm-10 col-md-10 col-lg-10 plr5">
                                                 <a class="underline go_block_scroll" href="#sms">Texts</a>
                                                 <div class="bth-info">
@@ -155,14 +155,14 @@
                                             </div>
                                         </div>
                                     </li>
-                                    
-                                    
+
+
                                     <li class="i-l-features p-b-item-2">
                                         <div class="row">
                                             <div class="col-sm-2 col-md-2 col-lg-2 padding-null">
                                                 <img class="model-center" src="{$img}/technological/header/icon/icon-photos.png" width="29px" height="24px" />
                                             </div>
-                                            
+
                                             <div class="col-sm-10 col-md-10 col-lg-10 plr5">
                                                 <a class="underline go_block_scroll" href="#media">Photos & Videos</a>
                                                 <div class="bth-info">
@@ -173,15 +173,15 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        
+
                                     </li>
-                                    
+
                                     <li class="i-l-features p-b-item-3">
                                         <div class="row">
                                             <div class="col-sm-2 col-md-2 col-lg-2 padding-null">
                                                 <img class="model-center" src="{$img}/technological/header/icon/icon-browser.png" width="31px" height="31px" />
                                             </div>
-                                            
+
                                             <div class="col-sm-10 col-md-10 col-lg-10 plr5">
                                                 <a class="underline go_block_scroll" href="#applications">Browsers & Applications</a>
                                                 <div class="bth-info">
@@ -192,16 +192,16 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        
+
                                     </li>
-                                    
-                                    
+
+
                                     <li class="i-l-features">
                                         <div class="row">
                                             <div class="col-sm-2 col-md-2 col-lg-2 padding-null">
                                                 <img class="model-center" src="{$img}/technological/header/icon/icon-calendar.png" width="31px" height="31px" />
                                             </div>
-                                            
+
                                             <div class="col-sm-10 col-md-10 col-lg-10 plr5">
                                                 <a class="underline go_block_scroll" href="#organiser">Calendar & Contacts</a>
                                                 <div class="bth-info">
@@ -212,14 +212,14 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        
+
                                     </li>
-                                    
+
                                 </ul>
                             </div>
                         </div>
-                                            
-                        <!-- block buttons -->                    
+
+                        <!-- block buttons -->
                         <div class="row">
                             <div class="learn-about">
                             <div class="col-xs-sm-12 col-sm-12 col-md-12 col-lg-12 text-center bth-buttons">
@@ -232,9 +232,9 @@
                                         ga-label="demo"
                                        >View Demo</a>
                                     </li>
-                                    
+
                                     <li>
-                                      <a class="btn-red ga-action-click btn-buy-now" 
+                                      <a class="btn-red ga-action-click btn-buy-now"
                                        href="http://{$domain}/store.html"
                                         ga-action ="click"
                                         ga-category="techological"
@@ -242,35 +242,35 @@
                                        >Buy Now</a>
                                     </li>
                                     {*<li>
-                                    <a class="btn-yellow ga-action-click btn-free-trial" 
+                                    <a class="btn-yellow ga-action-click btn-free-trial"
                                        href="http://{$domain}/free-trial.html"
                                         ga-action ="click"
                                         ga-category="techological"
                                         ga-label="trial"
                                        >Free Trial</a>
-                                    </li>*}    
+                                    </li>*}
                                 </ul>
-                                <a href="#icloud" class="learn-about-link" >Learn more about iCloud monitoring (Jailbreak-Free up to iOS 9.3.4)</a>
+                                <a href="#icloud" class="learn-about-link" >Learn more about iCloud monitoring (Jailbreak-Free up to iOS 9.3.5)</a>
                                 <p>Enjoy more than <strong>20 features</strong> of <strong>remote mobile tracking</strong> with Pumpic.</p>
                                 <p>View, track and block mobile activity remotely with Pumpic.<br class='only-mobile' />
                                     Keep your eyes open!
-                                    {*Keep your family safe and secured with Pumpic. 
+                                    {*Keep your family safe and secured with Pumpic.
                                     <br />Track location. View calls and SMS. Follow online activity.*}</p>
                             </div>
                             </div>
-                        </div>  
-                                
-                        <!-- features lists only mobile -->  
+                        </div>
+
+                        <!-- features lists only mobile -->
                         <div class='row'>
                             <div class='col-sm-12'>
-                                
+
                                 <ul class='box-features-header-lists features-mobile'>
                                     <!-- calls -->
                                     <li>
                                         <div class="row">
-                                            
+
                                             <div class='col-sm-12 col-md-12'>
-                                                
+
                                                 <div class='box-features-header-item'>
                                                     <div>
                                                         <i class='i-header-feature-call'></i>
@@ -280,21 +280,21 @@
                                                         <ul>
                                                             <li>in- and outbound call logs</li>
                                                             <li>name, number and time data</li>
-                                                        </ul> 
-                                                    </div>        
+                                                        </ul>
+                                                    </div>
                                                 </div>
-                                                
+
                                             </div>
-                                            
+
                                         </div>
                                     </li>
-                                    
+
                                     <!-- Location & Geo-fences -->
                                     <li>
                                         <div class="row">
-                                            
+
                                             <div class='col-sm-12 col-md-12'>
-                                                
+
                                                 <div class='box-features-header-item'>
                                                     <div>
                                                         <i class='i-header-feature-location-history min-t5'></i>
@@ -305,20 +305,20 @@
                                                             <li>current GPS location & history</li>
                                                             <li>geo-fences and alerts</li>
                                                         </ul>
-                                                    </div>        
+                                                    </div>
                                                 </div>
-                                                
+
                                             </div>
-                                            
+
                                         </div>
                                     </li>
-                                    
+
                                     <!-- Online Chats -->
                                     <li>
                                         <div class="row">
-                                            
+
                                             <div class='col-sm-12 col-md-12'>
-                                                
+
                                                 <div class='box-features-header-item'>
                                                     <div>
                                                         <i class='i-header-feature-chat min-t5'></i>
@@ -329,20 +329,20 @@
                                                             <li>Facebook Messenger, Snapchat</li>
                                                             <li>WhatsApp, Viber, Skype, Kik</li>
                                                         </ul>
-                                                    </div>        
+                                                    </div>
                                                 </div>
-                                                
+
                                             </div>
-                                            
+
                                         </div>
                                     </li>
-                                    
+
                                     <!-- Email -->
                                     <li>
                                         <div class="row">
-                                            
+
                                             <div class='col-sm-12 col-md-12'>
-                                                
+
                                                 <div class='box-features-header-item'>
                                                     <div>
                                                         <i class='i-header-feature-email'></i>
@@ -353,20 +353,20 @@
                                                             <li>inbox and sent emails</li>
                                                             <li>precise contact data</li>
                                                         </ul>
-                                                    </div>        
+                                                    </div>
                                                 </div>
-                                                
+
                                             </div>
-                                            
+
                                         </div>
                                     </li>
-                                    
+
                                     <!-- Text -->
                                     <li>
                                         <div class="row">
-                                            
+
                                             <div class='col-sm-12 col-md-12'>
-                                                
+
                                                 <div class='box-features-header-item'>
                                                     <div>
                                                         <i class='i-header-feature-sms'></i>
@@ -377,20 +377,20 @@
                                                             <li>SMS, MMS, iMessage text content</li>
                                                             <li>block or limit messages</li>
                                                         </ul>
-                                                    </div>        
+                                                    </div>
                                                 </div>
-                                                
+
                                             </div>
-                                            
+
                                         </div>
                                     </li>
-                                    
+
                                     <!-- SMS -->
                                     {*<li>
                                         <div class="row">
-                                            
+
                                             <div class='col-sm-12 col-md-12'>
-                                                
+
                                                 <div class='box-features-header-item'>
                                                     <div>
                                                         <i class='i-header-feature-sms min-t5'></i>
@@ -401,20 +401,20 @@
                                                             <li>sent, received and deleted text messages</li>
                                                             <li>block by senders or bad words</li>
                                                         </ul>
-                                                    </div>        
+                                                    </div>
                                                 </div>
-                                                
+
                                             </div>
-                                            
+
                                         </div>
                                     </li>*}
-                                    
+
                                     <!-- Photos & Videos -->
                                     <li>
                                         <div class="row">
-                                            
+
                                             <div class='col-sm-12 col-md-12'>
-                                                
+
                                                 <div class='box-features-header-item'>
                                                     <div>
                                                         <i class='i-header-feature-photos min-t5'></i>
@@ -425,20 +425,20 @@
                                                             <li>camera shots, downloaded files</li>
                                                             <li>follow Instagram</li>
                                                         </ul>
-                                                    </div>        
+                                                    </div>
                                                 </div>
-                                                
+
                                             </div>
-                                            
+
                                         </div>
                                     </li>
-                                    
+
                                     <!-- Browsers & Applications -->
                                     <li>
                                         <div class="row">
-                                            
+
                                             <div class='col-sm-12 col-md-12'>
-                                                
+
                                                 <div class='box-features-header-item'>
                                                     <div>
                                                         <i class='i-header-feature-browser min-t5'></i>
@@ -451,20 +451,20 @@
                                                             {*<li>browsing history and bookmarks</li>
                                                             <li>block websites and limit applications</li>*}
                                                         </ul>
-                                                    </div>        
+                                                    </div>
                                                 </div>
-                                                
+
                                             </div>
-                                            
+
                                         </div>
                                     </li>
-                                    
+
                                     <!-- Calendar & Contacts -->
                                     <li>
                                         <div class="row">
-                                            
+
                                             <div class='col-sm-12 col-md-12'>
-                                                
+
                                                 <div class='box-features-header-item'>
                                                     <div>
                                                         <i class='i-header-feature-calendar min-t5'></i>
@@ -475,28 +475,28 @@
                                                             <li>scheduled plans and events</li>
                                                             <li>existing and deleted contacts</li>
                                                         </ul>
-                                                    </div>        
+                                                    </div>
                                                 </div>
-                                                
+
                                             </div>
-                                            
+
                                         </div>
                                     </li>
-                                    
+
                                 </ul>
-                                
+
                             </div>
                         </div>
-                        <!-- end -->        
-                                
+                        <!-- end -->
+
                     </div>
-                    
+
                 </div>
-                
-                
+
+
             </div>
-        </div>    
-        
+        </div>
+
          <!-- BLOCK FEATURES -->
         <div class="dark">
                 <div class="container">
@@ -504,16 +504,16 @@
                         <div class="row">
 
                             <div id="table-container" class="table-col-8 table-sm-col-3">
-                                
+
                                 <section>
                                     <div class="tab col-item-3 col-md-item-3 col-sm-item-3">
                                         <ul>
                                             <li {*class="text-uppercase"*}>
-                                                <i class="i-features-keyloger"></i> 
+                                                <i class="i-features-keyloger"></i>
                                                 <div>
                                                     Keylogger<br />
                                                     {*<span class="text-normal">(passwords, apps behaviour, incognito)</span>*}
-                                                </div>    
+                                                </div>
                                             </li>
                                             <li>
                                                 <i class="i-features-reboot"></i>
@@ -529,7 +529,7 @@
                                     <div class="tab col-item-3 col-md-item-3 col-sm-item-3">
                                         <ul>
                                             <li {*class="text-uppercase"*}>
-                                                <i class="i-features-sms-commands"></i> 
+                                                <i class="i-features-sms-commands"></i>
                                                 <div>SMS Commands</div>
                                             </li>
                                             <li>
@@ -561,33 +561,33 @@
                                     </div>
                                 </section>
 
-                            </div>    
+                            </div>
 
                         </div>
                 </div>
         </div>
-              
+
         {include file='../includes/content/how-get-pumpic.tpl'
             blockBg="bg_white pt40"
             title = ""
             style = "images"
-        }  
-         
+        }
+
         <!-- BLOCK COMPATIBILITY -->
         {include file='../includes/content/compatibility/compatibility-table.tpl'
             blockBg="dark"
-        } 
-        
+        }
+
         <!-- BLOCK LIST FEATURES -->
         <div class="bg_white">
             <div class="container">
-                
+
                 <div class='row'>
                     <h2 class="text-center box-features-list-title">Features</h2>
-                    
+
                     <!-- \\ list -->
                     <div id='box-features-list' class="div-table col-sm-12 col-md-12 col-lg-12">
-                        
+
                         <!-- \\ #2 Calls: (even)-->
                         <div id="calls" class="div-table-row even">
                             <div class="item-feature-list div-table-column col-sm-12 col-md-4 col-lg-4 text-right">
@@ -600,26 +600,26 @@
                                 </div>
                             </div>
                             <div class="item-feature-list div-table-column col-sm-12 col-md-4 col-lg-4 text-left">
-                                
+
                                 <div class='feature-item-info'>
                                     <ul>
                                         <li><i class='i-list-features-call'></i><strong>Calls</strong></li>
                                     </ul>
                                     <div class='block-info'>
                                         <p>Follow <b>incoming</b> and <b>outgoing</b> call logs with precise contact data including <b>name</b>, <b>number</b>, <b>time</b> of the call and its <b>duration</b>. Find out, who reaches the target phone, at what time and for how long.</p>
-                                        
+
                                         <div><a class="btn-orange" target="_blank" href="http://demo.{$domain}/setDevice/125?redirect_url=cp/calls">View Demo</a></div>
                                         <label class="color-orange">(no registration required)</label>
                                     </div>
                                 </div>
-                                
+
                             </div>
                         </div>
-                        
+
                         <!-- \\ #3 SMS: (odd) -->
                         <div id="sms" class="div-table-row odd">
                             <div class="item-feature-list div-table-column col-lg-4 text-right">
-                                
+
                                 <div class='feature-item-info'>
                                     <ul>
                                         <li>
@@ -641,7 +641,7 @@
                                         <label class="color-orange">(no registration required)</label>
                                     </div>
                                 </div>
-                                
+
                             </div>
                             <div class="item-feature-list div-table-column col-lg-1 text-center">
                                 <div class='box-line-solid only-pc'>
@@ -653,7 +653,7 @@
                                 <img style='max-width: 302px' class="image-features model-mobile-center" src='../images/technological/image-sms.png' />
                             </div>
                         </div>
-                        
+
                         <!-- \\ #1 Location: (even) -->
                         <div id="location" class="div-table-row even">
                             <div class="item-feature-list div-table-column col-sm-12 col-md-4 col-lg-4 text-right">
@@ -662,14 +662,14 @@
                             <div class="item-feature-list div-table-column col-sm-12 col-md-1 col-lg-1 text-center">
                                 {*<i class='i-bubble'></i>*}
                                 {*<div class='box-solid-1'></div>*}
-                                    
+
                                 <div class='box-line-solid only-pc'>
                                     <i class='i-bubble'></i>
                                     <span class='box-solid-1'></span>
                                 </div>
                             </div>
                             <div class="item-feature-list div-table-column col-sm-12 col-md-4 col-lg-4 text-left">
-                              
+
                                 <div class='feature-item-info'>
                                     <ul>
                                         <li><i class="i-list-features-location-history"></i><strong> Location</strong></li>
@@ -678,21 +678,21 @@
                                         <p>Instantly <b>locate</b> the target device <b>on the map</b>. Keep track of current position as well as the <b>entire route history</b> by using GPS. Find the target device, if lost or stolen.</p>
                                         {*<ul>
                                             <li>Pumpic allows you to tell the exact location of your children. </li>
-                                            <li>Find your children by using GPS. The application identifies the current position together with the 
+                                            <li>Find your children by using GPS. The application identifies the current position together with the
                                                 precise route of recent movements.</li>
                                         </ul>*}
                                         <div><a class="btn-orange" target="_blank"  href="http://demo.{$domain}/setDevice/125?redirect_url=cp/locations">View Demo</a></div>
                                         <label class="color-orange">(no registration required)</label>
                                     </div>
                                 </div>
-                                
+
                             </div>
                         </div>
-                        
+
                         <!-- \\ #4 Applications: (odd) -->
                         <div id="applications" class="div-table-row odd">
                             <div class="item-feature-list div-table-column col-lg-4 text-right">
-                                
+
                                 <div class='feature-item-info'>
                                     <ul>
                                         <li>
@@ -701,15 +701,15 @@
                                             <i class='i-list-features-applications only-pc'></i>
                                         </li>
                                     </ul>
-                                    
+
                                     <div class='block-info'>
                                         <p>Keep track of <b>installed applications</b> on the target device. <b>Block</b> and <b>set time limits</b> on running particular apps installed on the target device.</p>
-                                        
+
                                         <div><a class="btn-orange" target="_blank" href="http://demo.{$domain}/setDevice/125?redirect_url=cp/applications">View Demo</a></div>
                                         <label class="color-orange">(no registration required)</label>
                                     </div>
                                 </div>
-                                
+
                             </div>
                             <div class="item-feature-list div-table-column col-lg-1 text-center">
                                 <div class='box-line-solid only-pc'>
@@ -721,10 +721,10 @@
                                 <img style='max-width: 326px' class="image-features model-mobile-center" src='../images/technological/image-applications.png' />
                             </div>
                         </div>
-                        
+
                         {*<div class="div-table-row odd">
                             <div class="item-feature-list div-table-column col-lg-4 text-right">
-                                
+
                                 <div class='feature-item-info'>
                                     <ul>
                                         <li>
@@ -738,15 +738,15 @@
                                             <i class='i-list-features-video only-pc'></i>
                                         </li>
                                     </ul>
-                                    
+
                                     <div class='block-info'>
                                         <p>View each <b>photo</b> or <b>video</b> shot <b>by the camera</b> of the target smartphone or <b>downloaded</b> from the Internet. Monitor all multimedia files stored on the target device.</p>
-                                        
+
                                         <div><a class="btn-orange" href="http://demo.{$domain}/setDevice/125?redirect_url=cp/photos">View Demo</a></div>
                                         <label class="color-orange">(no registration required)</label>
                                     </div>
                                 </div>
-                                
+
                             </div>
                             <div class="item-feature-list div-table-column col-lg-1 text-center">
                                 <div class='box-line-solid only-pc'>
@@ -758,7 +758,7 @@
                                 <img style='max-width: 300px' class="image-features model-mobile-center" src='../images/technological/image-video-and-photos.png' />
                             </div>
                         </div>*}
-                        
+
                         <!-- \\ #5 Facebook IM/Viber/Skype/WhatsApp: (even) -->
                         <div id="social" class="div-table-row even">
                             <div class="item-feature-list div-table-column col-sm-12 col-md-4 col-lg-4 text-right">
@@ -779,7 +779,7 @@
                                         <li><i class='i-list-features-whatsapp'></i><strong>WhatsApp</strong></li>
                                         <li><i class='i-list-features-kik-chat'></i><strong>Kik</strong></li>
                                     </ul>
-                                    
+
                                     <div class='block-info'>
                                         <p>
                                             Follow online communication activities. View <b>messages</b> sent and received via popular instant messengers like Facebook Messenger, Viber, Skype, WhatsApp, and Kik.
@@ -797,14 +797,14 @@
                                         <label class="color-orange">(no registration required)</label>
                                     </div>
                                 </div>
-                                
+
                             </div>
                         </div>
-                        
+
                         <!-- \\ #14 Snapchat: (odd) -->
                         <div id="snapchat" class="div-table-row odd">
                             <div class="item-feature-list div-table-column col-lg-4 text-right">
-                                
+
                                 <div class='feature-item-info'>
                                     <ul>
                                         <li>
@@ -813,15 +813,15 @@
                                             <i class='i-list-features-snapchat only-pc'></i>
                                         </li>
                                     </ul>
-                                    
+
                                     <div class='block-info'>
                                         <p>Monitor temporary <b>photos</b>, <b>videos</b>, and <b>comments</b> posted on Snapchat. Prevent your children from inappropriate <b>content sharing</b> and <b>viewing</b>.</p>
-                                        
+
                                         <div><a class="btn-orange" target="_blank"  href="http://demo.{$domain}/setDevice/126?redirect_url=cp/call">View Demo</a></div>
                                         <label class="color-orange">(no registration required)</label>
                                     </div>
                                 </div>
-                                
+
                             </div>
                             <div class="item-feature-list div-table-column col-lg-1 text-center">
                                 <div class='box-line-solid only-pc'>
@@ -832,9 +832,9 @@
                             <div class="item-feature-list div-table-column col-lg-4 text-left">
                                 <img style='max-width: 302px' class="image-features model-mobile-center" src='../images/technological/image-snapchat.png' />
                             </div>
-                        </div> <!-- #snapchat -->              
-                                        
-                                        
+                        </div> <!-- #snapchat -->
+
+
                         <!-- \\ #6 Browser control: (even) -->
                         <div id="browser_control" class="div-table-row even">
                             <div class="item-feature-list div-table-column col-sm-12 col-md-4 col-lg-4 text-right">
@@ -851,22 +851,22 @@
                                     <ul>
                                         <li><i class='i-list-features-browser'></i><strong>Browser control</strong></li>
                                     </ul>
-                                    
+
                                     <div class='block-info'>
-                                        <p>Monitor <b>browsing history</b> and view websites visited from the target device. 
+                                        <p>Monitor <b>browsing history</b> and view websites visited from the target device.
                                             Check <b>bookmarks</b>. <b>Block websites</b> containing inappropriate content.</p>
-                                        
+
                                         <div><a class="btn-orange" target="_blank"  href="http://demo.{$domain}/setDevice/125?redirect_url=cp/browserHistory">View Demo</a></div>
                                         <label class="color-orange">(no registration required)</label>
                                     </div>
                                 </div>
-                                
+
                             </div>
                         </div> <!-- #browser_control -->
-                        
+
                         {*<div id="browser_control" class="div-table-row odd">
                             <div class="item-feature-list div-table-column col-lg-4 text-right">
-                                
+
                                 <div class='feature-item-info'>
                                     <ul>
                                         <li>
@@ -875,15 +875,15 @@
                                             <i class='i-list-features-browser only-pc'></i>
                                         </li>
                                     </ul>
-                                    
+
                                     <div class='block-info'>
                                         <p>Monitor <b>browsing history</b> and view websites visited from the target device. Check <b>bookmarks</b>. <b>Block websites</b> containing inappropriate content.</p>
-                                        
+
                                         <div><a class="btn-orange" href="http://demo.{$domain}/setDevice/125?redirect_url=cp/browserHistory">View Demo</a></div>
                                         <label class="color-orange">(no registration required)</label>
                                     </div>
                                 </div>
-                                
+
                             </div>
                             <div class="item-feature-list div-table-column col-lg-1 text-center">
                                 <div class='box-line-solid only-pc'>
@@ -895,11 +895,11 @@
                                 <img style='max-width: 302px' class="image-features model-mobile-center" src='../images/technological/image-browser.png' />
                             </div>
                         </div>*}
-                        
+
                        <!-- \\ #11 Photos/Videos: (odd)-->
                        <div id="media" class="div-table-row odd">
                             <div class="item-feature-list div-table-column col-lg-4 text-right">
-                                
+
                                 <div class='feature-item-info'>
                                     <ul>
                                         <li>
@@ -913,15 +913,15 @@
                                             <i class='i-list-features-video only-pc'></i>
                                         </li>
                                     </ul>
-                                    
+
                                     <div class='block-info'>
                                         <p>View each <b>photo</b> or <b>video</b> file <b>shot by the camera</b> of the target smartphone or <b>downloaded</b> from the Internet. Monitor all multimedia files stored on the target device.</p>
-                                        
+
                                         <div><a class="btn-orange" target="_blank" href="http://demo.{$domain}/setDevice/125?redirect_url=cp/photos">View Demo</a></div>
                                         <label class="color-orange">(no registration required)</label>
                                     </div>
                                 </div>
-                                
+
                             </div>
                             <div class="item-feature-list div-table-column col-lg-1 text-center">
                                 <div class='box-line-solid only-pc'>
@@ -933,7 +933,7 @@
                                 <img style='max-width: 300px' class="image-features model-mobile-center" src='../images/technological/image-video-and-photos_v2.png' />
                             </div>
                         </div> <!-- #media -->
-                        
+
                        {*<div id="media" class="div-table-row even">
                             <div class="item-feature-list div-table-column col-sm-12 col-md-4 col-lg-4 text-right">
                                 <img style='max-width: 300px' class="image-features model-mobile-center" src='../images/technological/image-video-and-photos_v2.png' />
@@ -945,7 +945,7 @@
                                 </div>
                             </div>
                             <div class="item-feature-list div-table-column col-sm-12 col-md-4 col-lg-4 text-left">
-                                
+
                                 <div class='feature-item-info'>
                                     <ul>
                                         <li><i class='i-list-features-photos'></i><strong>Photos</strong></li>
@@ -953,15 +953,15 @@
                                     </ul>
                                     <div class='block-info'>
                                         <p>View each <b>photo</b> or <b>video</b> file <b>shot by the camera</b> of the target smartphone or <b>downloaded</b> from the Internet. Monitor all multimedia files stored on the target device.</p>
-                                        
+
                                         <div><a class="btn-orange" href="http://demo.{$domain}/setDevice/125?redirect_url=cp/photos">View Demo</a></div>
                                         <label class="color-orange">(no registration required)</label>
                                     </div>
                                 </div>
-                                
+
                             </div>
                         </div>*}
-                                        
+
                        <!-- \\ #7 Email: (even) -->
                        <div id="email" class="div-table-row even">
                             <div class="item-feature-list div-table-column col-sm-12 col-md-4 col-lg-4 text-right">
@@ -978,21 +978,21 @@
                                     <ul>
                                         <li><i class='i-list-features-email'></i><strong>Email</strong></li>
                                     </ul>
-                                    
+
                                     <div class='block-info'>
                                         <p>View <b>incoming</b>, <b>sent</b> and <b>deleted</b> emails. Find out precise communication data, including <b>names</b>, <b>addresses</b> and writing <b>time</b>. Monitor online correspondence, subscriptions and registrations.</p>
-                                        
+
                                         <div><a class="btn-orange" target="_blank"  href="http://demo.{$domain}/setDevice/125?redirect_url=cp/emails">View Demo</a></div>
                                         <label class="color-orange">(no registration required)</label>
                                     </div>
                                 </div>
-                                
+
                             </div>
                         </div> <!-- #email -->
-                       
+
                         {*<div id="email" class="div-table-row odd">
                             <div class="item-feature-list div-table-column col-lg-4 text-right">
-                                
+
                                 <div class='feature-item-info'>
                                     <ul>
                                         <li>
@@ -1001,15 +1001,15 @@
                                             <i class='i-list-features-email only-pc'></i>
                                         </li>
                                     </ul>
-                                    
+
                                     <div class='block-info'>
                                         <p>View <b>incoming</b>, <b>sent</b> and <b>deleted</b> emails. Find out precise communication data, including <b>names</b>, <b>addresses</b> and writing <b>time</b>. Monitor online correspondence, subscriptions and registrations.</p>
-                                        
+
                                         <div><a class="btn-orange" href="http://demo.{$domain}/setDevice/125?redirect_url=cp/emails">View Demo</a></div>
                                         <label class="color-orange">(no registration required)</label>
                                     </div>
                                 </div>
-                                
+
                             </div>
                             <div class="item-feature-list div-table-column col-lg-1 text-center">
                                 <div class='box-line-solid only-pc'>
@@ -1020,13 +1020,13 @@
                             <div class="item-feature-list div-table-column col-lg-4 text-left">
                                 <img style='max-width: 302px' class="image-features model-mobile-center" src='../images/technological/image-email.png' />
                             </div>
-                        </div> *}                
-                                        
-                                        
+                        </div> *}
+
+
                         <!-- \\ #8 Calendar/Contacts/Notes: (odd) -->
                         <div id="organiser" class="div-table-row odd">
                             <div class="item-feature-list div-table-column col-lg-4 text-right">
-                                
+
                                 <div class='feature-item-info'>
                                     <ul>
                                         <li>
@@ -1045,15 +1045,15 @@
                                             <i class='i-list-features-notes only-pc'></i>
                                         </li>
                                     </ul>
-                                    
+
                                     <div class='block-info'>
                                         <p>View Notes on iPhones, iPads, and iPods Touch. Find out <b>plans</b> and <b>intentions</b>. Follow <b>important information, to-do lists</b>, as well as written down <b>thoughts</b>.</p>
-                                        
+
                                         <div><a class="btn-orange" target="_blank" href="http://demo.{$domain}/setDevice/125?redirect_url=cp/calendar">View Demo</a></div>
                                         <label class="color-orange">(no registration required)</label>
                                     </div>
                                 </div>
-                                
+
                             </div>
                             <div class="item-feature-list div-table-column col-lg-1 text-center">
                                 <div class='box-line-solid only-pc'>
@@ -1065,7 +1065,7 @@
                                 <img style='max-width: 302px' class="image-features model-mobile-center" src='../images/technological/image-calendar-and-contacts.png' />
                             </div>
                         </div> <!-- #organiser -->
-                        
+
                         {*<div id="organiser" class="div-table-row even">
                             <div class="item-feature-list div-table-column col-sm-12 col-md-4 col-lg-4 text-right">
                                 <img style='max-width: 302px' class="image-features model-mobile-center" src='../images/technological/image-calendar-and-contacts.png' />
@@ -1077,7 +1077,7 @@
                                 </div>
                             </div>
                             <div class="item-feature-list div-table-column col-sm-12 col-md-4 col-lg-4 text-left">
-                                
+
                                 <div class='feature-item-info'>
                                     <ul>
                                         <li>
@@ -1095,15 +1095,15 @@
                                     </ul>
                                     <div class='block-info'>
                                         <p>View Notes on iPhones, iPads, and iPods Touch. Find out <b>plans</b> and <b>intentions</b>. Follow <b>important information, to-do lists</b>, as well as written down <b>thoughts</b>.</p>
-                                        
+
                                         <div><a class="btn-orange" href="http://demo.{$domain}/setDevice/125?redirect_url=cp/calendar">View Demo</a></div>
                                         <label class="color-orange">(no registration required)</label>
                                     </div>
                                 </div>
-                                
+
                             </div>
                         </div>*}
-                        
+
                         <!-- \\ #9 Keylogger: (even) -->
                         <div id="keylogger" class="div-table-row even">
                             <div class="item-feature-list div-table-column col-sm-12 col-md-4 col-lg-4 text-right">
@@ -1120,21 +1120,21 @@
                                     <ul>
                                         <li><i class='i-list-features-keylogger'></i><strong>Keylogger</strong></li>
                                     </ul>
-                                    
+
                                     <div class='block-info'>
                                         <p>Keep track of <b>each keystroke typed</b> and every tap on the touchscreen of the target device. Follow <b>logins</b> and <b>passwords</b>, as well as words written in browser in <b>incognito mode</b>. Monitor texts written <b>in any app</b>.</p>
-                                        
+
                                         <div><a class="btn-orange" target="_blank"  href="http://demo.{$domain}/setDevice/125?redirect_url=cp/keylogger">View Demo</a></div>
                                         <label class="color-orange">(no registration required)</label>
                                     </div>
                                 </div>
-                                
+
                             </div>
                         </div> <!-- #keylogger -->
-                        
+
                         {*<div id="keylogger" class="div-table-row odd">
                             <div class="item-feature-list div-table-column col-lg-4 text-right">
-                                
+
                                 <div class='feature-item-info'>
                                     <ul>
                                         <li>
@@ -1143,15 +1143,15 @@
                                             <i class='i-list-features-keylogger only-pc'></i>
                                         </li>
                                     </ul>
-                                    
+
                                     <div class='block-info'>
                                         <p>Keep track of <b>each keystroke typed</b> and every tap on the touchscreen of the target device. Follow <b>logins</b> and <b>passwords</b>, as well as words written in browser in <b>incognito mode</b>. Monitor texts written <b>in any app</b>.</p>
-                                        
+
                                         <div><a class="btn-orange" href="http://demo.{$domain}/setDevice/125?redirect_url=cp/keylogger">View Demo</a></div>
                                         <label class="color-orange">(no registration required)</label>
                                     </div>
                                 </div>
-                                
+
                             </div>
                             <div class="item-feature-list div-table-column col-lg-1 text-center">
                                 <div class='box-line-solid only-pc'>
@@ -1163,11 +1163,11 @@
                                 <img style='max-width: 304px' class="image-features model-mobile-center" src='../images/technological/image-keylogger.png' />
                             </div>
                         </div>*}
-                        
+
                         <!-- \\ #10 SMS commands: (odd)-->
                         <div id="sms_commands" class="div-table-row odd">
                             <div class="item-feature-list div-table-column col-lg-4 text-right">
-                                
+
                                 <div class='feature-item-info'>
                                     <ul>
                                         <li>
@@ -1176,15 +1176,15 @@
                                             <i class='i-list-features-sms-command only-pc'></i>
                                         </li>
                                     </ul>
-                                    
+
                                     <div class='block-info'>
                                         <p>Control the target device remotely. <b>Lock</b> or <b>wipe</b> it out even <b>without Internet connection</b>. Manipulate the target smartphone or tablet <b>by sending text messages</b>.</p>
-                                        
+
                                         <div><a class="btn-orange" target="_blank"  href="http://demo.{$domain}/setDevice/125?redirect_url=cp/smsCommands">View Demo</a></div>
                                         <label class="color-orange">(no registration required)</label>
                                     </div>
                                 </div>
-                                
+
                             </div>
                             <div class="item-feature-list div-table-column col-lg-1 text-center">
                                 <div class='box-line-solid only-pc'>
@@ -1196,7 +1196,7 @@
                                 <img style='max-width: 187px' class="image-features model-mobile-center" src='../images/technological/image-sms-command.png' />
                             </div>
                         </div> <!-- #sms_commands -->
-                        
+
                         {*<div id="sms_commands" class="div-table-row even">
                             <div class="item-feature-list div-table-column col-sm-12 col-md-4 col-lg-4 text-right">
                                 <img style='max-width: 187px' class="image-features model-mobile-center" src='../images/technological/image-sms-command.png' />
@@ -1208,7 +1208,7 @@
                                 </div>
                             </div>
                             <div class="item-feature-list div-table-column col-sm-12 col-md-4 col-lg-4 text-left">
-                                
+
                                 <div class='feature-item-info'>
                                     <ul>
                                         <li>
@@ -1218,15 +1218,15 @@
                                     </ul>
                                     <div class='block-info'>
                                         <p>Control the target device remotely. <b>Lock</b> or <b>wipe</b> it out even <b>without Internet connection</b>. Manipulate the target smartphone or tablet <b>by sending text messages</b>.</p>
-                                        
+
                                         <div><a class="btn-orange" href="http://demo.{$domain}/setDevice/125?redirect_url=cp/smsCommands">View Demo</a></div>
                                         <label class="color-orange">(no registration required)</label>
                                     </div>
                                 </div>
-                                
+
                             </div>
                         </div>*}
-                        
+
                         <!-- \\ #12 Instagram Monitoring: (even) -->
                         <div id="instagram" class="div-table-row even">
                             <div class="item-feature-list div-table-column col-sm-12 col-md-4 col-lg-4 text-right">
@@ -1243,21 +1243,21 @@
                                     <ul>
                                         <li><i class='i-list-features-instagram'></i><strong>Instagram</strong></li>
                                     </ul>
-                                    
+
                                     <div class='block-info'>
                                         <p>Follow Instagram activity. View all <b>photos</b> and <b>videos</b> uploaded, as well as comments posted below.</p>
-                                        
+
                                         <div><a class="btn-orange" target="_blank" href="http://demo.{$domain}/setDevice/125?redirect_url=cp/instagram">View Demo</a></div>
                                         <label class="color-orange">(no registration required)</label>
                                     </div>
                                 </div>
-                                
+
                             </div>
                         </div> <!-- #instagram -->
-                        
+
                         {*<div id="instagram" class="div-table-row odd">
                             <div class="item-feature-list div-table-column col-lg-4 text-right">
-                                
+
                                 <div class='feature-item-info'>
                                     <ul>
                                         <li>
@@ -1266,15 +1266,15 @@
                                             <i class='i-list-features-instagram only-pc'></i>
                                         </li>
                                     </ul>
-                                    
+
                                     <div class='block-info'>
                                         <p>Follow Instagram activity. View all <b>photos</b> and <b>videos</b> uploaded, as well as comments posted below.</p>
-                                        
+
                                         <div><a class="btn-orange" href="http://demo.{$domain}/setDevice/125?redirect_url=cp/instagram">View Demo</a></div>
                                         <label class="color-orange">(no registration required)</label>
                                     </div>
                                 </div>
-                                
+
                             </div>
                             <div class="item-feature-list div-table-column col-lg-1 text-center">
                                 <div class='box-line-solid only-pc'>
@@ -1286,11 +1286,11 @@
                                 <img style='max-width: 302px' class="image-features model-mobile-center" src='../images/technological/image-instagram.png' />
                             </div>
                         </div>*}
-                        
+
                         <!-- \\ #13 Geo-fencing: (odd)-->
                         <div id="geo_fencing" class="div-table-row odd">
                             <div class="item-feature-list div-table-column col-lg-4 text-right">
-                                
+
                                 <div class='feature-item-info'>
                                     <ul>
                                         <li>
@@ -1299,15 +1299,15 @@
                                             <i class='i-list-features-geo-fencing only-pc'></i>
                                         </li>
                                     </ul>
-                                    
+
                                     <div class='block-info'>
                                         <p>Define and <b>set specific zones</b> on the <b>map</b>. <b>Receive notifications</b>, once the target device <b>leaves</b> or <b>enters</b> a restricted area.</p>
-                                        
+
                                         <div><a class="btn-orange" target="_blank"  href="http://demo.{$domain}/setDevice/125?redirect_url=cp/locations">View Demo</a></div>
                                         <label class="color-orange">(no registration required)</label>
                                     </div>
                                 </div>
-                                
+
                             </div>
                             <div class="item-feature-list div-table-column col-lg-1 text-center">
                                 <div class='box-line-solid only-pc'>
@@ -1319,7 +1319,7 @@
                                 <img style='max-width: 381px' class="image-features model-mobile-center" src='../images/technological/image-geo-fencing.png' />
                             </div>
                         </div> <!-- #geo_fencing -->
-                        
+
                         {*<div id="geo_fencing" class="div-table-row even">
                             <div class="item-feature-list div-table-column col-sm-12 col-md-4 col-lg-4 text-right">
                                 <img style='max-width: 381px' class="image-features model-mobile-center" src='../images/technological/image-geo-fencing.png' />
@@ -1331,22 +1331,22 @@
                                 </div>
                             </div>
                             <div class="item-feature-list div-table-column col-sm-12 col-md-4 col-lg-4 text-left">
-                                
+
                                 <div class='feature-item-info'>
                                     <ul>
                                         <li><i class='i-list-features-geo-fencing'></i><strong>Geo-fencing</strong></li>
                                     </ul>
                                     <div class='block-info'>
                                         <p>Define and <b>set specific zones</b> on the <b>map</b>. <b>Receive notifications</b>, once the target device <b>leaves</b> or <b>enters</b> a restricted area.</p>
-                                        
+
                                         <div><a class="btn-orange" href="http://demo.{$domain}/setDevice/125?redirect_url=cp/locations">View Demo</a></div>
                                         <label class="color-orange">(no registration required)</label>
                                     </div>
                                 </div>
-                                
+
                             </div>
                         </div>*}
-                        
+
                         <!-- \\ #14 iCloud monitoring: (even) -->
 
                         <div id="icloud" class="div-table-row even">
@@ -1370,14 +1370,14 @@
                                             </strong>
                                         </li>
                                     </ul>
-                                    
+
                                     <div class='block-info'>
                                         {*<ul>
-                                            <li>Track every single email your kid sends or receives.</li> 
-                                            <li>Check email correspondence history and prevent you children</li> 
+                                            <li>Track every single email your kid sends or receives.</li>
+                                            <li>Check email correspondence history and prevent you children</li>
                                             <li>from ambiguous communications and online predators.</li>
                                         </ul>*}
-                                        <p>Enjoy Pumpic application on iPhones, iPads and iPods Touch with no need to jailbreak the target device. 
+                                        <p>Enjoy Pumpic application on iPhones, iPads and iPods Touch with no need to jailbreak the target device.
                                             Supported features:</p>
                                         <ul>
                                             <li><span class="block ltr">Text message monitoring <br /><span class='text-normal'>&lpar;SMS, MMS, and iMessages&rpar;</span></span></li>
@@ -1398,13 +1398,13 @@
                                         <label class="color-orange">(no registration required)</label>
                                     </div>
                                 </div>
-                                
+
                             </div>
                         </div> <!-- #icloud -->
-                        
+
                         {*<div id="icloud" class="div-table-row odd">
                             <div class="item-feature-list div-table-column col-lg-4 text-right">
-                                
+
                                 <div class='feature-item-info'>
                                     <ul>
                                         <li>
@@ -1413,9 +1413,9 @@
                                             <i class='i-list-features-icloud only-pc'></i>
                                         </li>
                                     </ul>
-                                    
+
                                     <div class='block-info'>
-                                        <p>Enjoy Pumpic application on iPhones, iPads and iPods Touch with no need to jailbreak the target device. 
+                                        <p>Enjoy Pumpic application on iPhones, iPads and iPods Touch with no need to jailbreak the target device.
                                             Supported features:</p>
                                         <ul>
                                             <li><span class="block ltr">Text message monitoring <br /><span class='text-normal'>&lpar;SMS, MMS, and iMessages&rpar;</span></span></li>
@@ -1433,7 +1433,7 @@
                                         <label class="color-orange">(no registration required)</label>
                                     </div>
                                 </div>
-                                
+
                             </div>
                             <div class="item-feature-list div-table-column col-lg-1 text-center">
                                 <div class='box-line-solid only-pc'>
@@ -1444,12 +1444,12 @@
                             <div class="item-feature-list div-table-column col-lg-4 text-left">
                                 <img style='max-width: 398px' class="image-features model-mobile-center" src='../images/technological/image-icloud.png' />
                             </div>
-                        </div> *}   
-                            
+                        </div> *}
+
                         <!-- \\ #15 Other features: (odd) -->
                         <div id="other_features" class="div-table-row odd">
                             <div class="item-feature-list div-table-column col-lg-4 text-right">
-                                
+
                                 <div class='feature-item-info'>
                                     <ul>
                                         <li>
@@ -1458,7 +1458,7 @@
                                             <i class='i-list-features-sim-change only-pc'></i>
                                         </li>
                                     </ul>
-                                    
+
                                     <div class='block-info'>
                                          <ul>
                                             <li>Receive notifications on a SIM card change</li>
@@ -1470,7 +1470,7 @@
                                         <label class="color-orange">(no registration required)</label>
                                     </div>
                                 </div>
-                                
+
                             </div>
                             <div class="item-feature-list div-table-column col-lg-1 text-center">
                                 <div class='box-line-solid only-pc'>
@@ -1482,7 +1482,7 @@
                                 <img style='max-width: 167px' class="image-features model-mobile-center" src='../images/technological/image-sim-change.png' />
                             </div>
                         </div> <!-- #other_features -->
-                        
+
                         {*<div id="other_features" class="div-table-row even">
                             <div class="item-feature-list div-table-column col-sm-12 col-md-4 col-lg-4 text-right">
                                 <img style='max-width: 167px' class="image-features model-mobile-center" src='../images/technological/image-sim-change.png' />
@@ -1494,7 +1494,7 @@
                                 </div>
                             </div>
                             <div class="item-feature-list div-table-column col-sm-12 col-md-4 col-lg-4 text-left">
-                                
+
                                 <div class='feature-item-info'>
                                     <ul>
                                         <li>
@@ -1505,7 +1505,7 @@
                                                 <li><strong>Reboot application</strong></li>
                                                 <li><strong>Reboot device</strong></li>
                                             </ul> -->
-                                            
+
                                         </li>
                                     </ul>
                                     <div class='block-info'>
@@ -1519,62 +1519,62 @@
                                         <label class="color-orange">(no registration required)</label>
                                     </div>
                                 </div>
-                                
+
                             </div>
                         </div>*}
-                        
-                                        
-                                        
+
+
+
                     </div>
                     <!-- \\ end -->
-                    
+
                     <!-- \\ #button all -->
                     <div id='box-features-list' class="div-table col-xs-12 col-sm-12 col-md-12 col-lg-12">
                         <div class="div-table-row">
                             <div class="item item-buttom div-table-column col-sm-12 col-md-4 col-lg-4 text-right"></div>
                             <div class="item item-buttom div-table-column col-sm-12 col-md-3 col-lg-2 text-center">
-                                
+
                                 <div class='box-all-features'>
                                     <a class='btn-red{*btn-green*}' href='http://{$domain}/store.html' >Try now!</a>
                                 </div>
                                 {*<div class='box-line-solid only-pc'>
                                     <span class='box-solid-1'></span>
                                 </div>*}
-                                
+
                             </div>
                             <div class="item item-buttom div-table-column col-sm-12 col-md-4 col-lg-4 text-left"></div>
                         </div>
                     </div>
-                    
+
                     <!-- \\ coming soon -->
                     {*<div id='box-coming-soon-list' class="div-table col-md-12 col-lg-12">
-                        
+
                         <!-- \\ coming soon -->
                         <div class="div-table-row">
                             <div class="item div-table-column col-sm-12 col-md-4 col-lg-4 text-right"></div>
                             <div class="item div-table-column col-sm-12 col-md-4 col-lg-2 text-center">
-                                
+
                                 <h2 class='color-orange'>Coming soon:</h2>
-                                
+
                             </div>
                             <div class="item div-table-column col-sm-12 col-md-4 col-lg-4 text-left"></div>
                         </div>
-                        
-                    </div>      
-                    <div id='box-coming-soon-list' class="div-table col-sm-12 col-md-12 col-lg-12">    
+
+                    </div>
+                    <div id='box-coming-soon-list' class="div-table col-sm-12 col-md-12 col-lg-12">
                         <div class="div-table-row">
-                            
+
                             <div class="item item-bottom div-table-column col-sm-12 col-md-4 col-lg-4 text-right">
-                                
+
                                 <dl class="table-rows block-right">
-                                    <dt class="table-column"><i class='i-coming-soon-instagram t10 only-mobile'></i></dt>    
+                                    <dt class="table-column"><i class='i-coming-soon-instagram t10 only-mobile'></i></dt>
                                     <dd class="table-column">
                                         <strong>instagram</strong>
                                         <p>(see what is picctures and comment)</p>
                                     </dd>
                                     <dt class="table-column"><i class='i-coming-soon-instagram t10 only-pc'></i></dt>
-                                </dl>    
-                                <dl class="table-rows block-right">    
+                                </dl>
+                                <dl class="table-rows block-right">
                                     <dt class="table-column"><i class='i-coming-soon-applications ml10 t10 only-mobile'></i></dt>
                                     <dd class="table-column">
                                         <strong>applications management</strong>
@@ -1582,60 +1582,60 @@
                                     </dd>
                                     <dt class="table-column"><i class='i-coming-soon-applications t10 only-pc'></i></dt>
                                 </dl>
-                                
+
                             </div>
                             <div class="item item-bottom div-table-column col-sm-12 col-md-1 col-lg-1 text-center">
-                                
+
                                 <div class='box-line-solid only-pc'>
                                     <span class='box-dashed-1'></span>
                                 </div>
-                                
+
                             </div>
                             <div class="item item-bottom div-table-column col-sm-12 col-md-4 col-lg-4 text-left">
-                                
+
                                 <dl class="table-rows block-left">
-                                    <dt class="table-column"><i class='i-coming-soon-geo-fencing t10'></i></dt>    
+                                    <dt class="table-column"><i class='i-coming-soon-geo-fencing t10'></i></dt>
                                     <dd class="table-column">
                                         <strong>geo-fencing</strong>
                                         <p>(define zones on the map and receive alerts when monitored device enters and leave these zones)</p>
                                     </dd>
-                                    
-                                </dl>    
+
+                                </dl>
                                 <dl class="table-rows block-left">
                                     <dt class="table-column"><i class='i-coming-soon-icloud t5'></i></dt>
                                     <dd class="table-column">
                                         <strong>iCloud</strong>
                                         <p>(iPhone without jailbreak)</p>
                                     </dd>
-                                    
+
                                 </dl>
-                                
+
                             </div>
                         </div>
-                        
-                        
+
+
                     </div>*}
-                    
-                    
+
+
                 </div>
-                
-                
-                
-                
+
+
+
+
             </div>
         </div>
-        
+
         <!-- BLOCK LINE -->
-        <div class="border-dark-line"></div>    
-        
-        {*include file='../includes/main/main-quick-link.tpl' 
+        <div class="border-dark-line"></div>
+
+        {*include file='../includes/main/main-quick-link.tpl'
             blockBg="light"
-        *} 
-        
+        *}
+
         <!-- RECOMMENDED -->
         {*
             Template: RECOMMENDED
-        *}    
+        *}
         {include file='../includes/main/main-recommended.tpl'}
 
         <!-- TESTIMONIALS -->
@@ -1683,12 +1683,12 @@
         {*
             Template: FOOTER
             Переменные:
-                our_products (text): Включить выключить блок OUR PRODUCTS (no|yes). * - yes 
+                our_products (text): Включить выключить блок OUR PRODUCTS (no|yes). * - yes
         *}
         {include file='../includes/main/main-footer.tpl'}
-                
+
     </div>
-       
+
     {include file='../includes/main/main-analytics-footer.tpl'}
 </body>
 </html>

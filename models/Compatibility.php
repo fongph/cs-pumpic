@@ -7,14 +7,14 @@ class Compatibility {
     const FIND_ALL = 1;
     const FIND_BY_OS = 2;
     const FIND_BY_QUERY = 3;
-    
+
     protected static $perPage = 12;
-    
+
     public function __construct(PDO $db)
     {
         $this->db = $db;
     }
-    
+
     public static function devicesPerPage()
     {
         return self::$perPage;
@@ -28,7 +28,7 @@ class Compatibility {
             case self::FIND_ALL:
                 $whereQuery = '';
                 break;
-            
+
             case self::FIND_BY_OS:
                 $whereQuery  = "WHERE `os` = {$this->db->quote($searchStr)} ";
                 break;
@@ -37,22 +37,22 @@ class Compatibility {
                 $_word = '';
                 $_one_word = '';
                 $_rel = '';
-                
+
                 if(!empty($searchStr)) {
                     $firstWord = trim($searchStr);
                     $_exp = explode(' ', trim($searchStr));
-                    
+
                     $_word .= '^'.  str_replace(' ', '*', trim($searchStr)) .'$|';
                     $_word .= str_replace(' ', '(.*)', trim($searchStr)) .'(.*)|';
-                    
+
                     if(count($_exp) > 1):
                         // v1
                         foreach($_exp as $_key => $_item) :
-                            
+
                             if(strlen($_item) > 1) :
                                 if(!empty($_exp[0]))
                                     $firstWord = $_exp[0];
-                                
+
                                 $_rel .= " +". $_item;
                                 if($_key == count($_exp) - 1) {
                                     $_word .= $_item.'(.*)+|';
@@ -60,33 +60,33 @@ class Compatibility {
                                     $_word .= $_item.'(.*)+|';
                                 }
                             endif;
-                            
+
                         endforeach;
-                        
+
                     else:
                         $_rel .= " +". trim($searchStr);
                     endif;
-                    
+
                     $_fileds .= "
                         (
                            (0.1*(IF((`longname` REGEXP ". $this->db->quote('^' . trim($firstWord) . '(.*)') . ") > 0 , 1, 0))) +
-                           (0.1*(IF((`longname` REGEXP ". $this->db->quote('^' . trim($searchStr) . '$') .") > 0 , 1, 0))) +    
+                           (0.1*(IF((`longname` REGEXP ". $this->db->quote('^' . trim($searchStr) . '$') .") > 0 , 1, 0))) +
                            (0.6*(MATCH(`longname`) AGAINST (" . $this->db->quote($searchStr) . " IN BOOLEAN MODE))) +
                            (0.6*(MATCH(`longname`) AGAINST (" . $this->db->quote('"' . $searchStr . '"') . " IN BOOLEAN MODE))) +
                            (0.6*(MATCH(`longname`) AGAINST (" . $this->db->quote(trim($_rel)) . " IN BOOLEAN MODE))) +
                            (1.3 * COUNT(IF(MATCH (`longname`) AGAINST (" . $this->db->quote('*' . $searchStr . '*') . " IN BOOLEAN MODE),1,0))) +
-                           (1.3 * IF(LOCATE(" . $this->db->quote($searchStr) . ",`longname`)>0,1,0)) + 
-                           (1.3 * `longname` LIKE " . $this->db->quote('%' . $searchStr . '%') . ")    
+                           (1.3 * IF(LOCATE(" . $this->db->quote($searchStr) . ",`longname`)>0,1,0)) +
+                           (1.3 * `longname` LIKE " . $this->db->quote('%' . $searchStr . '%') . ")
                         ) as `_sort`,
                     ";
-                    
+
                     $whereQuery  = "WHERE `longname` REGEXP " . $this->db->quote(trim($_word, '|'));
-                    
+
                     // $whereQuery  = "WHERE MATCH(`longname`) AGAINST ('{$searchStr}' IN BOOLEAN MODE) OR `longname` REGEXP '".trim($_word)."'";
-                    
+
                     // $_fileds .= "`longname` REGEXP '".trim($_word)."|".trim($_one_word, '|')."' as `rale3`,";
                     // $whereQuery  = "WHERE MATCH(`longname`) AGAINST ('{$searchStr}' IN BOOLEAN MODE) OR `longname` REGEXP '".trim($_word)."|".trim($_one_word, '|')."'";
-                    
+
                     $groupBy = 'GROUP BY `id`';
                     $orderBy = "ORDER BY `_sort` DESC";
                 } else $whereQuery = '';
@@ -94,24 +94,24 @@ class Compatibility {
 
             default: throw new \ErrorException('Illegal search type');
         }
-        
-        $start = (int)$page * self::$perPage;  
+
+        $start = (int)$page * self::$perPage;
         $data = $this->db->query("
-            SELECT SQL_CALC_FOUND_ROWS 
+            SELECT SQL_CALC_FOUND_ROWS
                 rowid as id,
                 rowid as url,
                 longname as name,
                 LOWER( REPLACE( REPLACE( `longname`, ' ', '-'), '/', '-') ) as uri_name,
-                path_small as img, 
+                path_small as img,
                 path_big as b_img,
                 path_middle as m_img,
-                os, 
+                os,
                 os_ver as version,
                 gsm_module,
-                {$_fileds}    
+                {$_fileds}
                 tested FROM `phones`
-            {$whereQuery} 
-            {$groupBy}    
+            {$whereQuery}
+            {$groupBy}
             {$orderBy}
             LIMIT {$start}, " . self::$perPage)->fetchAll(); // LIMIT {$start}, " . self::$perPage
 
@@ -124,14 +124,14 @@ class Compatibility {
     public function isPartUppercase($string) {
         return (bool) preg_match('/[A-Z]/', $string);
     }
-    
+
     public function getModel( $modelName ) {
         $found = $this->db->query("
             SELECT *,
                  LOWER( REPLACE( REPLACE( `longname`, ' ', '-'), '/', '-') ) as alies
-            FROM `phones`  
+            FROM `phones`
             WHERE LOWER( REPLACE( REPLACE( `longname`, ' ', '-'), '/', '-') ) = {$this->db->quote($modelName)}")->fetch();
-        
+
         if($found)
             $found = self::phoneDataPrepare($found);
 
@@ -204,11 +204,11 @@ class Compatibility {
         // only this OS
         $os_iOS = array(
             'Other features' => array(
-                'icloud_solution'   => '<strong>iCloud monitoring</strong> (without jailbreak up to iOS 9.3.4)',
+                'icloud_solution'   => '<strong>iCloud monitoring</strong> (without jailbreak up to iOS 9.3.5)',
             ),
         );
 
-        // add commit info 
+        // add commit info
         $addInfo = array(
             'ios' => [
                 'Calls & SMS' => array(
@@ -228,15 +228,15 @@ class Compatibility {
                     'app_list_block' => '',
                     // Keylogger
                     'keylogger' => '',
-                ),    
+                ),
                 'Browsing' => array(
                     // Websites blocking
                     'blocking_sites' => '',
                     'browser_history' => '<strong>iOS: Jailbreak is not needed</strong>',
                     'browser_bookmarks' => '<strong>iOS: Jailbreak is not needed</strong>',
                 ),
-                
-                'Social Media' => array( 
+
+                'Social Media' => array(
                     'skype' => '<strong>iOS: For 8.4.1 and older versions Jailbreak is not needed</strong>',
                     'viber' => '',
                     'whatsapp' => '<strong>iOS: Jailbreak is not needed</strong>',
@@ -245,7 +245,7 @@ class Compatibility {
                     'kik'       => '<strong>From 9.0 and up Jailbreak is not needed</strong>',
                     'snapchat' => '',
                 ),
-                
+
                 'Other features' => array(
                     // Location history
                     'location_history'  => '<strong>iOS: Jailbreak is not needed</strong>',
@@ -264,7 +264,7 @@ class Compatibility {
                     'calendar' => '<strong>iOS: Jailbreak is not needed</strong>',
                     'historical_data'  => '<strong>iOS: Jailbreak is not needed</strong>',
                     'notes' => '<strong>iOS: For 8.4.1 and older versions Jailbreak is not needed</strong>',
-                ),    
+                ),
             ],
             'android' => [
                 'Calls & SMS' => array(
@@ -274,19 +274,19 @@ class Compatibility {
                     'sms_daily_limiting' => '<strong>Activated Keylogger Needed</strong>',
                     'bad_word_sms'  => '<strong>Not available for Android 5.0 and newer versions.</strong>',
                 ),
-//                'Apps Control' => array( 
+//                'Apps Control' => array(
 //                    'keylogger' => '<strong>Activated Keylogger Needed</strong>',
 //                ),
-                'Social Media' => array( 
+                'Social Media' => array(
                     'skype' => '<strong>Root Required</strong>',
                     'viber' => '<strong>Root Required</strong>',
                     'whatsapp' => '<strong>Root Required</strong>',
                     'facebook' => '<strong>Root Required</strong>',
                     'instagram' => '<strong>Root Required</strong>',
                     'kik'       => '<strong>Root Required</strong>',
-                   
+
                 ),
-                'Other features' => array( 
+                'Other features' => array(
                     // Emails
                     'emails' => '<strong>Root Required</strong>',
                     'snapchat' => '<strong>Root and Xposed Required</strong>',
@@ -295,8 +295,8 @@ class Compatibility {
                 ),
             ],
         );
-        
-        
+
+
         $result = array(
             'rowid' => $data['rowid'],
             'cdate' => $data['cdate'],
@@ -338,57 +338,57 @@ class Compatibility {
         }
         return $result;
     }
-    
+
     public function getCategoriesCount() {
         $cat_count = $this->db->query("
             SELECT COUNT(id) as count
-            FROM `phones_category`  
+            FROM `phones_category`
             WHERE `hidden` = 0 ORDER BY `sort`")->fetch();
         if(is_array($cat_count) and count($cat_count) > 0) {
             return $cat_count['count'];
         } else
             return false;
     }
-    
+
     public function getCategories() {
         $categoties = $this->db->query("
             SELECT *
-            FROM `phones_category`  
-            WHERE `hidden` = 0 ORDER BY `name`, `sort`")->fetchAll(); // 
+            FROM `phones_category`
+            WHERE `hidden` = 0 ORDER BY `name`, `sort`")->fetchAll(); //
         if(is_array($categoties) and count($categoties) > 0) {
             return $categoties;
         } else
             return false;
-            
+
     }
-    
+
     public function getModelCatID( $cat_id ) {
         $_res = array();
         if(!$cat_id) return false;
-        
+
         $_models = $this->db->query("
             SELECT *,
                 LOWER( REPLACE( REPLACE( `longname`, ' ', '-'), '/', '-') ) as alies
-            FROM `phones`  
+            FROM `phones`
             WHERE `cat_id` = ".$cat_id." ORDER BY `popularity`")->fetchAll();
         if(is_array($_models) and count($_models) > 0) {
-            
+
             // add features
             foreach($_models as $key => $_item):
                 //$_res[$key]['count'] = ceil(count( $_models )/4);
                 $_res[$key] = self::phoneDataPrepare($_item);
             endforeach;
-            
+
             return $_res;
         } else
             return false;
     }
-    
+
     public function getCategoryModels() {
         $_data = false;
         $cats = $this -> getCategories();
         if($cats) {
-            
+
             foreach($cats as $_item) {
                 if($models = $this ->getModelCatID((int)$_item['id'])) {
                     $_data[] = array(
@@ -399,12 +399,12 @@ class Compatibility {
                         'models' => $models,
                     );
                 }
-                
-                
+
+
             }
         }
-        
+
         return $_data;
     }
-    
+
 }

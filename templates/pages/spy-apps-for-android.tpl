@@ -1,7 +1,7 @@
 {include file='../includes/main/main-header.tpl'
     robots="yes" 
-    title="Spy Apps for Android Phones: What are they? Are they legal? | Pumpic"
-    description="Learn more about spyware for Android: history, features, popular Android spy apps. Find out if you violate law, when applying another spy app. Why text spyware for Android is illegal?"
+    title="Spy Apps for Android: What are they? Are they legal? | Pumpic"
+    description="Learn more about history, features, and usage of popular Android spy apps. Find out if you violate law when applying such app and why it is illegal."
     customeStyle="
         .block-child-location-tracking .ipad-text {
             padding: 10px 0;
@@ -72,7 +72,7 @@
             imgAlign = "right bottom"
             imgVerticalAlign = "center"
             textAlign = "right"
-            title = "Spy Apps for Android Mobile Devices <br />Are Not Legal Monitoring Software"
+            title = "Best Spy Apps for Android Devices<br/>Are They Legal Monitoring Software?"
 			titleSize = "25px"
             description = "Kinds and features of spy software for Android. Why not to spy?<br />Monitoring text messages, browsing history, social websites, etc."
             promoBuyBlock = "no"
@@ -97,12 +97,12 @@
         
 {Content 
     styleTitle="h2"    
-    title="What Spyware for Android Is Used For?"
+    title="Covert Surveillance and Parental Monitoring: What is the Difference?"
     blockBg='light'}
 	
 	<img class="app-icon-left" src="{$img}/landings/icon-spyapps-for-android.png" alt="Spy on Android Phones">
 	<p>Due to the survey data from the Pew Research Center, 92% of U.S. adults own a cellphone, 73% have a computer and 45% own a tablet. Obviously, it makes the software providers compete really fierce to present more advanced options for monitoring.</p>
-	<p>However, you should understand the difference between spy apps and parental monitoring apps like Pumpic. When the first spy apps came out, they were advertised like “Catch a cheating spouse!” With the help of modern spy apps, it is possible to monitor almost all activities, which take place on a cell phone or tablet. Spy software for Android traces SMS, Skype, Facebook, Snapchat, GPS location, browsing history, and much more in a stealth mode and illegal way.</p>
+	<p>However, you should understand the difference between spy apps and parental monitoring apps like Pumpic. When the first ”mobile spies” came out, they were advertised like “Catch a cheating spouse!” Today, with the help of such apps, it is possible to monitor almost all activities, which take place on a cell phone or tablet. Spy software for Android traces SMS, Skype, Facebook, Snapchat, GPS location, browsing history, and much more in a stealth mode and illegal way.</p>
 	<p>On the contrary, parental control apps like Pumpic serve to protect children from inappropriate information. Do you know that about a third of parents use parental controls on their teens’ cell phones? Parents of younger teens (age 12-13) are most likely to restrict their children’s phone use.</p>
         
         <!-- BLOCK STATISTICK -->
@@ -137,7 +137,7 @@
         <!-- END -->
 
         <p>There are many companies providing you with an opportunity to secretly view remote activities of another person. You can check a list of the <a href="/best-spy-apps-for-android.html">best spy apps for Android</a> to know more about tracking apps and their features. The most know among them are mSpy, Mobile Spy, SpyEra, Phone Tracker, and MobiStealth. By the way, SMS spy is the most widespread kind of spying. SMS tracking apps allow monitoring incoming, outgoing, and even deleted messages.</p>
-		<p>However, you should note that it is against the laws of most countries to spy on someone's device. Do doubt, it is illegal and unethical to use an SMS spy app for Android. Some advertisements make people believe that monitoring text messages and checking phone calls is normal, but in fact, it ignores legal requirements.</p>
+		<p>However, you should note that it is against the laws of most countries to spy on someone's device. Do doubt, it is illegal and unethical to use even the best spy app for Android. Some advertisements make people believe that monitoring text messages and checking phone calls is normal, but in fact, it ignores legal requirements.</p>
 		
 {EndContent}
 		
@@ -154,7 +154,7 @@
 				<p>Here are five main reasons to set up parental control app like Pumpic:</p>
 				<ul class="list-images">
 				<li><img src="/images/landings/mark.png" alt="Check Mark" class="lc-1" style="left: -29px;"/>It has diverse functions – some of the most useful protection measures are monitoring calls, text messages, online activities, blocking apps, websites as well as all inappropriate links.</li>
-				<li><img src="/images/landings/mark.png" alt="Check Mark" class="lc-1" style="left: -29px;"/>It is legal – parental controls are absolutely legal to use, unlike text spyware for Android. Monitoring software is allowed and you won't have any problems.</li>
+				<li><img src="/images/landings/mark.png" alt="Check Mark" class="lc-1" style="left: -29px;"/>It is legal – parental controls are absolutely legal to use, unlike spying programs for Android. Monitoring software is allowed and you won't have any problems.</li>
 				<li><img src="/images/landings/mark.png" alt="Check Mark" class="lc-1" style="left: -29px;"/>Is it easy to use – a tracking app can be easily installed and you can monitor your child with the help of a simple Control Panel.</li>
 				<li><img src="/images/landings/mark.png" alt="Check Mark" class="lc-1" style="left: -29px;"/>It is convenient – you can monitor your kid's activities remotely from any browser and any device.</li>
 				<li><img src="/images/landings/mark.png" alt="Check Mark" class="lc-1" style="left: -29px;"/>It can prevent unacceptable online behavior and many dangers (cyberbullying, online predator attacks, sexting, identity theft etc.) </li>

@@ -56,8 +56,8 @@
                         <div class="row text-center">
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                 <h2>The Ultimate Internet Safety Guide</h2>
-                                <p class="text-justify">Today it is obvious that children spend very much time online. They do homework, play games, watch movies, and communicate with one another via the Internet. Being a parent, you should <strong>protect your kids’ time spending</strong>. As the statistics shows, <i>79% of kids learned about online security from their parents</i>. Thus, you should know and teach your little ones <strong>how to behave safely on the web</strong>.</p> 
-                                <p class="text-justify">We have prepared a list of <strong>guidelines on Internet security</strong>, privacy and identity protection for you to <strong>form safe habits</strong> and your kids to follow them.</p>
+                                <p class="text-justify">Today it is evident that children spend too much time online. They do homework, play games, watch movies, and communicate with one another via the Internet. Being a parent, you should <strong>protect your kids’ pastime</strong>. As the statistics show, <i>79% of kids learned about online security from their parents</i>. Thus, you should know and teach your little ones <strong>how to behave safely on the Web</strong>.</p> 
+                                <p class="text-justify">We have put together a list of <strong>guidelines on the Internet security</strong>, privacy and identity protection. They will help you <strong>form safe habits</strong> so that you can impell your kids follow them carefully.</p>
                             </div>
                         </div>
                         <!-- END -->
@@ -107,7 +107,7 @@
                                                                     <img style="max-width: 234px;max-height: 124px;" src="{$img}/learning_center/internet-safety-guide/step-3.png" />
                                                                 </div>
                                                             </div>
-                                                            <p><b>Set privacy settings</b> on social networks. Most of them have a public and private mode for publications. By setting the private one you will prevent your kids from being contacted by strangers.</p>
+                                                            <p><b>Set privacy settings</b> on social networks. Most of them have a public and private publish modes. By setting the private one, you will prevent your kids from being contacted by strangers.</p>
                                                             
                                                         </div>
                                                         
@@ -124,7 +124,7 @@
                                                                     <img style="max-width: 162px;max-height: 137px;" src="{$img}/learning_center/internet-safety-guide/step-4.png" />
                                                                 </div>
                                                             </div>
-                                                            <p><b>Prevent</b> your chidren from <b>sharing personal data</b> like name, school, age, phone number, email, and home address with strangers. Thus, you will avert many dangers like identity theft, robbery, bullying, and even kidnapping.</p>    
+                                                            <p><b>Prevent</b> your children from <b>sharing personal data</b> like name, school, age, phone number, email, and home address with strangers. Thus, you will avert many dangers like identity theft, robbery, bullying, and even kidnapping.</p>    
                                                         </div>
                                                         <div class="col-lg-6 col-md-6 col-sm-12 item-column">
                                                             <div class="row">
@@ -135,7 +135,7 @@
                                                                     <img style="max-width: 157px;max-height: 132px;" src="{$img}/learning_center/internet-safety-guide/step-5.png" />
                                                                 </div>
                                                             </div>
-                                                            <p><b>Prevent</b> your kids from <b>posting photos of themselves</b>. Some shots, especially sefies, may contain information like a school location or home address that can be used by online predators to track your child.</p>
+                                                            <p><b>Prevent</b> your kids from <b>posting photos of themselves</b>. Some shots, especially sefies, may contain information like school location or home address, and can be used by online predators to track your child.</p>
                                                         </div>
                                                         
                                                     </div>
@@ -144,7 +144,7 @@
                                                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 item-number">
                                                             <div class="block-number-green">6</div>
                                                             <div id="descriptions">
-                                                                Do not let kids either <b>send or open messages</b> (including photo and video content) coming <b>from strangers</b>. They may contain viruses or have some other fraudulent motives.
+                                                                Do not let kids either <b>send or open messages</b> (including photo and video content) coming <b>from strangers</b>. They may contain viruses or be used for some other fraudulent motives.
                                                             </div>
                                                         </div>
                                                     </div>
@@ -168,7 +168,7 @@
                                                                         <img style="max-width: 178px;max-height: 94px;" src="{$img}/learning_center/internet-safety-guide/step-8.png" />
                                                                     </div>
                                                                 </div>
-                                                                <p class="mt30">Tell your kids about the importance of <b>keeping logins and passwords private</b>. Explain that such data should not be shared even with friends. If already shared with someone, it would be better to change all passwords as soon as possible.</p>
+                                                                <p class="mt30">Tell your kids about the importance of <b>keeping logins and passwords private</b>. Explain that such data should not be shared even with friends. If a password had already been shared with someone, it should be changed as soon as possible.</p>
                                                             </div>
                                                             <div class="v-tb-item only-pc">
                                                                 <div class="row">
@@ -179,7 +179,7 @@
                                                                         <img style="max-width: 203px;max-height: 205px;" src="{$img}/learning_center/internet-safety-guide/step-9.png" />
                                                                     </div>
                                                                 </div>
-                                                                <p class="mt30">Children should <b>be polite and respectful</b> when communicating with others on the web. Though you can’t see the one you chat with, there is a human being at the other end, who shouldn’t be offended anyway.</p>
+                                                                <p class="mt30">Children should <b>be polite and respectful</b> when communicating with others on the Web. Though you can’t see the one you chat with, there is a human being at the other end, who should not be offended in any anyway.</p>
                                                             </div>
                                                             
                                                         </div>
@@ -195,7 +195,7 @@
                                                                         <img style="max-width: 203px;max-height: 205px;" src="{$img}/learning_center/internet-safety-guide/step-9.png" />
                                                                     </div>
                                                                 </div>
-                                                                <p class="mt30">Children should <b>be polite and respectful</b> when communicating with others on the web. Though you can’t see the one you chat with, there is a human being at the other end, who shouldn’t be offended anyway.</p>
+                                                                <p class="mt30">Children should <b>be polite and respectful</b> when communicating with others on the Web. Though you can’t see the one you chat with, there is a human being at the other end, who should not be offended in any anyway.</p>
                                                             </div>
                                                             
                                                             <div class="v-tb-item only-pc">
@@ -207,7 +207,7 @@
                                                                         <img style="max-width: 178px;max-height: 94px;" src="{$img}/learning_center/internet-safety-guide/step-8.png" />
                                                                     </div>
                                                                 </div>
-                                                                <p class="mt30">Tell your kids about the importance of <b>keeping logins and passwords private</b>. Explain that such data should not be shared even with friends. If already shared with someone, it would be better to change all passwords as soon as possible.</p>
+                                                                <p class="mt30">Tell your kids about the importance of <b>keeping logins and passwords private</b>. Explain that such data should not be shared even with friends. If a password had already been shared with someone, it should be changed as soon as possible.</p>
                                                             </div>
                                                             <div class="v-tb-item">
                                                                 <div class="row">
@@ -218,7 +218,7 @@
                                                                         <img style="max-width: 141px;max-height: 141px;" src="{$img}/learning_center/internet-safety-guide/step-10.png" />
                                                                     </div>
                                                                 </div>
-                                                                <p class="mt30">Let them <b>know the danger in the face</b>. Tell your kids about cyberbullying, online predators, scammers, and other perils they may face while surfing the web. Informed means prepared.</p>
+                                                                <p class="mt30">Let them <b>know the danger</b>. Tell your kids about cyberbullying, online predators, scammers, and other perils they may face while surfing the Web. Informed means prepared.</p>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -287,7 +287,7 @@
                                                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 item-number">
                                                             <div class="block-number-green">!</div>
                                                             <div id="descriptions">
-                                                                In addition, consider applying parental control software, so as you could <b>monitor each step taken</b>, every website visited or a message received. Thus, you will be able to ensure that nothing endangers your kids’ security. Build your relations on a trust basis and never leave your kids one on one with possible threats. <i>Keep your eyes open!</i>
+                                                                Also, consider applying parental control software so that you could <b>monitor each step taken</b>, every website visited or a message received. Thus, you will be able to ensure that nothing puts your kids in danger. Build your relations on trust and never leave your kids face-to-face with possible threats. <i>Keep your eyes open!</i>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -302,13 +302,13 @@
                                                 <div id="useful-links">
                                                     
                                                     <ol class="list-numbers">
-                                                        <li><a href="https://www.ftc.gov/tips-advice/business-center/privacy-and-security/children%27s-privacy" target="_blank" class="green">Children’s Online Privacy Protection Act</a>. Federal Trade Commission explains the main child online privacy law of the United States, including the information that websites can collect from kids.</li>
+                                                        <li><a href="https://www.ftc.gov/tips-advice/business-center/privacy-and-security/children%27s-privacy" target="_blank" class="green">Children’s Online Privacy Protection Act</a>. Federal Trade Commission explains the US fundamental child online privacy law, including the information that websites can collect from kids.</li>
                                                         <li><a href="https://www.fbi.gov/stats-services/publications/parent-guide" target="_blank" class="green">The Parent’s Guide to Internet Safety</a>. The Federal Bureau of Investigation has a lot of experience against online predators, kidnappers, and child abusers. The FBI specialists bring a number of rules and cases that help parents understand the complexities of online child exploitation.</li>
-                                                        <li><a href="https://www.usa.gov/online-safety" target="_blank" class="green">Types and tips on avoiding Internet fraud</a>. The information provided by U.S. Government as well as preventative measures mentioned will make you informed prior to entering into transactions over the Internet.</li>
-                                                        <li><a href="https://www.us-cert.gov/ncas/tips/ST05-002" target="_blank" class="green">Online risks associated with children and what can be done for protection</a>. You should consider these characteristics when deciding how to secure your data and your child.</li>
-                                                        <li><a href="https://www.fcc.gov/guides/childrens-internet-protection-act" target="_blank" class="green">Children's Internet Protection Act</a>. Enacted by Congress, this document imposes certain requirements on schools or libraries to adopt and implement an Internet safety policy addressing.</li>
-                                                        <li><a href="http://www.consumer.ftc.gov/topics/kids-online-safety" target="_blank" class="green">Benefits and risks kids may face on the Internet</a>. Adults can help reduce such risks by talking to kids about making safe and responsible decisions.</li>
-                                                        <li><a href="http://www.justice.gov/sites/default/files/usao-mn/legacy/2012/09/10/PSC%20Elementary%20Safety%20Tips%20Parents.pdf" target="_blank" class="green">Internet, mobile phones, and texting safety tips for parents</a>. The list of what you should better do to secure your children on the web and avert possible online dangers.</li>
+                                                        <li><a href="https://www.usa.gov/online-safety" target="_blank" class="green">Types and tips on avoiding Internet fraud</a>. Here you will find valuable information and preventative measures provided by the U.S. Government that you should familiarize yourself with before entering into transactions over the Internet.</li>
+                                                        <li><a href="https://www.us-cert.gov/ncas/tips/ST05-002" target="_blank" class="green">Online risks associated with children and what can be done to protect your little ones</a>. You should consider these aspects when deciding how to secure your and your child’s data.</li>
+                                                        <li><a href="https://www.fcc.gov/guides/childrens-internet-protection-act" target="_blank" class="green">Children's Internet Protection Act</a>. Enacted by Congress, this document imposes certain requirements on schools and libraries to adopt and implement an Internet safety policy.</li>
+                                                        <li><a href="http://www.consumer.ftc.gov/topics/kids-online-safety" target="_blank" class="green">Risks kids may face on the Internet</a>. Adults can help reduce online risks by talking to kids about making safe and responsible decisions.</li>
+                                                        <li><a href="http://www.justice.gov/sites/default/files/usao-mn/legacy/2012/09/10/PSC%20Elementary%20Safety%20Tips%20Parents.pdf" target="_blank" class="green">Internet, mobile phones, and texting safety tips for parents</a>. The list of what you should do to secure your children on the Web and avert possible online dangers.</li>
                                                         
                                                         {*<li><span class="green">Children’s Online Privacy Protection Act</span>. Federal Trade Commission explains the main child online privacy law of the United States, including the information that websites can collect from kids.</li>
                                                         <li class="n00"><span class="green">Children’s Online Privacy Protection Act</span>. Federal Trade Commission explains the main child online privacy law of the United States, including the information that websites can collect from kids.</li>

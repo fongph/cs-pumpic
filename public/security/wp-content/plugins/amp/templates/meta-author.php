@@ -5,5 +5,5 @@
 		'size' => 24,
 	) ) ); ?>" width="24" height="24" layout="fixed"></amp-img>
 	<?php endif; ?>
-	<span class="amp-wp-author"><?php echo esc_html( $post_author->display_name ); ?></span>
+	<span class="amp-wp-author"><a href="<?php echo esc_url($post_author->user_url); ?>"><?php echo esc_html( $post_author->display_name ); ?></a></span>
 </li>

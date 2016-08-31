@@ -153,8 +153,8 @@ class Phpmail extends Settings
                 $browserInfo = $this->getBrowser();
 
                 try {
-                    $this->sender->sendSystemCompatibility(self::mail_support, $params['name'], $params['email'], $params['device-model'], $_uid, $params['os-version'], $browserInfo);
-                    $this->sender->sendCompatibility($params['name'], $params['email'], $params['device-model'], $_uid, $params['os-version'],  $browserInfo);
+                    $this->sender->sendSystemCompatibility(self::mail_support, $params['name'], $params['email'], $params['device-model'], $params['os-version'], $_uid, $browserInfo);
+                    $this->sender->sendCompatibility($params['name'], $params['email'], $params['device-model'], $params['os-version'], $_uid,  $browserInfo);
 
                     $eventManager = \EventManager\EventManager::getInstance();
                     $eventManager->emit('front-compatibility-completed', array(

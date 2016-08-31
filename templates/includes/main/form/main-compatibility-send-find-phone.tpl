@@ -40,6 +40,22 @@
                         <input id="name" class="form-control required" type="hidden" name="name" value="{if isset($getUserInfo.name)}{$getUserInfo.name}{/if}">
                         {/if}
 
+                        {if !isset($getUserInfo.login) || empty($getUserInfo.login)}
+                        <div class="form-group {*has-error*}">
+                                <input id="email" type="email"
+                                       class="form-control required"
+                                       name="email"
+                                       value="{* if isset($smarty.post.email)}{$smarty.post.email}{/if *}"
+                                       placeholder="Email*">
+                                {if isset($getOut) && is_array($getOut.error) && $getOut.error.email}
+                                    <label class="error show">{$getOut.error.email|escape}</label>
+                                {/if}
+                                {*<p class="bg-danger"></p>*}
+                        </div>
+                        {else}
+                        <input id="email" class="form-control required" type="hidden" name="email" value="{if isset($getUserInfo.login)}{$getUserInfo.login}{/if}">
+                        {/if}
+
                         <div class="form-group">
                                 <input id="device-model"
                                        name="device-model"
@@ -59,22 +75,12 @@
                                 {*<p class="bg-danger"></p>*}
                         </div>
 
-                        {if !isset($getUserInfo.login) || empty($getUserInfo.login)}
-                        <div class="form-group {*has-error*}">
-                                <input id="email" type="email"
-                                       class="form-control required"
-                                       name="email"
-                                       value="{* if isset($smarty.post.email)}{$smarty.post.email}{/if *}"
-                                       placeholder="Email*">
-                                {if isset($getOut) && is_array($getOut.error) && $getOut.error.email}
-                                    <label class="error show">{$getOut.error.email|escape}</label>
-                                {/if}
-                                {*<p class="bg-danger"></p>*}
+                        <div class="form-group">
+                        <input id="os-version" type="text"
+                               class="form-control"
+                               name="os-version"
+                               placeholder="OS Version">
                         </div>
-                        {else}
-                        <input id="email" class="form-control required" type="hidden" name="email" value="{if isset($getUserInfo.login)}{$getUserInfo.login}{/if}">
-                        {/if}
-
 
                         <div class="form-group form-box-captcha">
                             <div class="box-captcha">

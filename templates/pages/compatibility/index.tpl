@@ -2,21 +2,21 @@
 
 	<title>Compatibility search results</title>
 	<meta name="description" content="Ensure the phone you want to track is mentioned in the Compatibility list and OS Requirements. If it meets the requirements, you can install pumpic monitoring app." />
-	
+
         <meta name="robots" content="noindex,nofollow" />
-        
+
 {include file='../../includes/main/header/wrap-title-footer.tpl'}
 <body>
     <!-- BLOCK GTM -->
     {include file='../../includes/main/main-after-body.tpl'}
     <!-- END BLOCK GTM -->
-    
+
         <!-- FLY BLOCKS -->
     {include file='../../includes/content/fly/fly_blocks.tpl'}
     <!-- END FLY BLOCKS-->
-    
+
 	<div class="wrapper">
-	{include file='../../includes/main/main-top-menu.tpl' 
+	{include file='../../includes/main/main-top-menu.tpl'
                 topmenu_active="compatibility"
                 cache_id = "includes_main_main-top-menu"
                 show_control_panel_link="1"
@@ -40,10 +40,10 @@
                                                                 <span class="input-group-btn"><button class="btn btn-warning" type="submit">Search</button></span>
                                                         </div>
                                                         <div id="compatibility-search-error" class="fatal-error"></div>
-                                                     </form>    
+                                                     </form>
                                                 </div>
                                         </div>
-                                    
+
                                         <div class="row">
                                                 <div class="col-sm-4 col-md-4 col-lg-offset-2">
                                                         <div class="thumb">
@@ -70,14 +70,14 @@
                                                         </div>
                                                 </div>*}
                                         </div>
-                                    
+
                                         <!-- #log -->
                                         <div class="row">
                                             <div id="log"></div>
                                         </div>
                                         <!-- end -->
-                                    
-                                        
+
+
                                         <!-- BLOCK NEW LIST COMPATIBILYTI -->
                                         <div class='row'>
                                             <div class="col-sm-12 col-md-12 col-lg-12">
@@ -86,7 +86,7 @@
                                                         <ul>
                                                             <li class="mobile_tooltip"> Call History</li>
                                                         </ul>
-                                                            
+
                                                     </li>
                                                 </ul>
                                                 <ul class="option_list">
@@ -94,7 +94,7 @@
                                                         <ul>
                                                             <li class="mobile_tooltip"> Skype</li>
                                                         </ul>
-                                                            
+
                                                     </li>
                                                 </ul>
                                                 <ul class="option_list">
@@ -102,7 +102,7 @@
                                                         <ul>
                                                             <li class="mobile_tooltip"> SMS History</li>
                                                         </ul>
-                                                            
+
                                                     </li>
                                                 </ul>
                                                 <ul class="option_list">
@@ -110,7 +110,7 @@
                                                         <ul>
                                                             <li class="mobile_tooltip"> Browser history</li>
                                                         </ul>
-                                                            
+
                                                     </li>
                                                 </ul>
                                                 <ul class="option_list">
@@ -118,18 +118,18 @@
                                                         <ul>
                                                             <li class="mobile_tooltip"> Location history</li>
                                                         </ul>
-                                                            
+
                                                     </li>
                                                 </ul>
                                             </div>
-                                            
+
                                             <div class="col-sm-12 col-md-12 col-lg-12">
                                                 <ul class="option_list">
                                                     <li><span>Manage calls</span>
                                                         <ul>
                                                             <li class="mobile_tooltip"> Call History</li>
                                                         </ul>
-                                                            
+
                                                     </li>
                                                 </ul>
                                                 <ul class="option_list">
@@ -137,7 +137,7 @@
                                                         <ul>
                                                             <li class="mobile_tooltip"> Skype</li>
                                                         </ul>
-                                                            
+
                                                     </li>
                                                 </ul>
                                                 <ul class="option_list">
@@ -145,7 +145,7 @@
                                                         <ul>
                                                             <li class="mobile_tooltip"> SMS History</li>
                                                         </ul>
-                                                            
+
                                                     </li>
                                                 </ul>
                                                 <ul class="option_list">
@@ -153,7 +153,7 @@
                                                         <ul>
                                                             <li class="mobile_tooltip"> Browser history</li>
                                                         </ul>
-                                                            
+
                                                     </li>
                                                 </ul>
                                                 <ul class="option_list">
@@ -161,18 +161,18 @@
                                                         <ul>
                                                             <li class="mobile_tooltip"> Location history</li>
                                                         </ul>
-                                                            
+
                                                     </li>
                                                 </ul>
                                             </div>
-                                            
+
                                         </div>
-                                        
+
                                         {*<!-- search result -->
                                         <div class="row">
                                             <h2 class="result-title">Most popular smartphones</h2>
                                             <div class="box-get-search-result clearfix">
-                                            {nocache}    
+                                            {nocache}
                                                 {foreach from=$phones item=phone}
                                                     <div class="col-sm-3 col-md-3 col-xs-6" id="search-result-item">
                                                         <div class="thumbnail">
@@ -187,11 +187,11 @@
                                                         </div>
                                                     </div>
                                                 {/foreach}
-                                            {/nocache}    
+                                            {/nocache}
                                             </div>
                                             <div class="box-navigations">
                                                 <ul class="pagination">
-                                                {nocache}    
+                                                {nocache}
                                                     {foreach from=$pages item=page}
                                                         {if $page === false}
                                                             <li class="disabled"><span class="ellipse">…</span></li>
@@ -201,7 +201,7 @@
                                                             <li><a href="/compatibility.html{if $page}?page={$page}{/if}" class="page-link" href="#page={$page+1}">{$page+1}</a></li>
                                                         {/if}
                                                     {/foreach}
-                                                {/nocache}    
+                                                {/nocache}
                                                 </ul>
                                             </div>
                                         </div>
@@ -214,32 +214,38 @@
                                 <div class="col-lg-10 col-lg-offset-1">
                                         <div class="row">
                                                         <div class="form">
+																													{nocache}
+																													{include file='../../includes/main/form/main-compatibility-send-find-phone.tpl'
+																													cache_id = "main-compatibility-send-find-phone"
+																													inputHidden = "true" }
+																													{/nocache}
+																													{*
                                                             <form class="send_find_phone" method="POST" action="" name="send_find_phone">
                                                                         <fieldset>
                                                                                 <legend>
                                                                                     Can’t Find Your Device Here?<span>Let’s Check if it is Compatible:</span>
                                                                                     {*CAN’T FIND YOUR DEVICE HERE?<span>LET’S CHECK IF IT IS COMPATIBLE:</span>*}
                                                                                 </legend>
-                                                                                
+
                                                                                 <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3">
                                                                                         <span class="info"></span>
-                                                                                    
+
                                                                                         <div class="form-group">
-                                                                                                <input id="device-model" type="text" 
-                                                                                                       class="form-control required" 
-                                                                                                       name="device-model" 
+                                                                                                <input id="device-model" type="text"
+                                                                                                       class="form-control required"
+                                                                                                       name="device-model"
                                                                                                        value=""
                                                                                                        placeholder="Device model*">
-                                                                                                
+
                                                                                                 {*<p class="bg-danger"></p>*}
                                                                                         </div>
                                                                                         <div class="form-group has-error">
-                                                                                                <input id="email" type="email" 
-                                                                                                       class="form-control required" 
+                                                                                                <input id="email" type="email"
+                                                                                                       class="form-control required"
                                                                                                        name="email"
                                                                                                        value=""
                                                                                                        placeholder="Email*">
-                                                                                                
+
                                                                                                 {*<p class="bg-danger"></p>*}
                                                                                         </div>
                                                                                         <div class="fatal-error"></div>
@@ -247,22 +253,22 @@
                                                                                         </button>
                                                                                 </div>
                                                                         </fieldset>
-                                                                </form>
+                                                                </form>*}
                                                         </div>
                                         </div>
                                 </div>
                         </div>
                 </div>
         </div>
-    
+
                 <!-- FOOTER -->
                 {*
                     Template: FOOTER
                     Переменные:
-                        our_products (text): Включить выключить блок OUR PRODUCTS (no|yes). * - yes 
+                        our_products (text): Включить выключить блок OUR PRODUCTS (no|yes). * - yes
                 *}
                 {include file='../../includes/main/main-footer.tpl'}
-                                                   
+
 	</div>
         {include file='../../includes/main/main-analytics-footer.tpl'}
 
@@ -274,20 +280,20 @@
             $paginationBlock: $('.box-navigations'),
             $log: $('#log'),
             search: function(request, params){
-    
+
                 Devices.$titleBlock.html('');
                 Devices.$resBlock.html('');
                 Devices.$paginationBlock.html('');
                 Devices.$log.html('');
-    
+
                 $.get('/compatibility.html', request, function(result){
-    
+
                     if(Number(result.count) > 0) {
                         Devices.$titleBlock.html(params.title);
                         $.each(result.list, function(i, deviceData){
                             Devices.$resBlock.append(Devices.getRenderDeviceItem(deviceData))
                         });
-    
+
                         if(Number(result.count) > 12){
                             Devices.$paginationBlock.pagination({
                                 currentPage: Number(request.page)+1,
@@ -299,11 +305,11 @@
                                     Devices.search(request, params);
                                 }
                             });
-    
+
                         } else Devices.$paginationBlock.html('');
-    
+
                     } else Devices.$log.html(params.hasOwnProperty('notFound') ? params.notFound : 'No results were found. In case of any questions, contact us using the form below.');
-    
+
                 });
             },
             getRenderDeviceItem: function(devData) {
@@ -320,14 +326,14 @@
                         '</div>' +
                         '</div>';
             }
-    
+
         };
         $('.search-category').on('click', function(){
             var request = $(this).data();
             var params = {
                 title: "All " + request.os + " phones"
             };
-    
+
             Devices.search(request, params);
             return false;
         });

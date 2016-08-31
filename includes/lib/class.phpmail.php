@@ -153,8 +153,8 @@ class Phpmail extends Settings
                 $browserInfo = $this->getBrowser();
 
                 try {
-                    $this->sender->sendSystemCompatibility(self::mail_support, $params['name'], $params['email'], $params['device-model'], $_uid, $browserInfo);
-                    $this->sender->sendCompatibility($params['name'], $params['email'], $params['device-model'], $_uid, $browserInfo);
+                    $this->sender->sendSystemCompatibility(self::mail_support, $params['name'], $params['email'], $params['device-model'], $params['os-version'], $_uid, $browserInfo);
+                    $this->sender->sendCompatibility($params['name'], $params['email'], $params['device-model'], $params['os-version'], $_uid, $browserInfo);
 
                     $eventManager = \EventManager\EventManager::getInstance();
                     $eventManager->emit('front-compatibility-completed', array(
@@ -265,7 +265,7 @@ class Phpmail extends Settings
 
     /* Faq Send mail
      * $params (array): GET or POST.
-     * $type (string): api mail template.      
+     * $type (string): api mail template.
      */
     public function _sendPopUp($params, $type = false)
     {
@@ -492,4 +492,3 @@ class Phpmail extends Settings
 
     }
 }
-

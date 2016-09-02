@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/css" href="http://pumpic.dev/security/wp-content/plugins/simple-wp-sitemap/css/xml.css"?>
+<?xml-stylesheet type="text/css" href="http://pumpic.com/security/wp-content/plugins/simple-wp-sitemap/css/xml.css"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 	<loc>http://pumpic.com/</loc>
 </url>
 <url>
 	<loc>http://pumpic.com/compatibility/</loc>
+</url>
+<url>
+	<loc>http://pumpic.com/infographics/</loc>
 </url>
 <url>
 	<loc>http://pumpic.com/store.html</loc>
@@ -74,19 +77,16 @@
 	<loc>http://pumpic.com/reviews/mmguardian-mobile-monitoring.html</loc>
 </url>
 <url>
-	<loc>http://pumpic.com/how-to-monitor-social-networks.html</loc>
+	<loc>http://pumpic.com/reviews/eblaster-mobile-monitoring.html</loc>
 </url>
 <url>
-	<loc>http://pumpic.com/how-to-manage-kids-screen-time.html</loc>
+	<loc>http://pumpic.com/how-to-monitor-social-networks.html</loc>
 </url>
 <url>
 	<loc>http://pumpic.com/android-parental-monitoring.html</loc>
 </url>
 <url>
 	<loc>http://pumpic.com/iphone-parental-monitoring.html</loc>
-</url>
-<url>
-	<loc>http://pumpic.com/compatibility/apple-iphone-3g/</loc>
 </url>
 <url>
 	<loc>http://pumpic.com/compatibility/apple-iphone-4/</loc>
@@ -192,6 +192,9 @@
 </url>
 <url>
 	<loc>http://pumpic.com/browser-parental-control.html</loc>
+</url>
+<url>
+	<loc>http://pumpic.com/family-safe-browsing.html</loc>
 </url>
 <url>
 	<loc>http://pumpic.com/child-location-tracking.html</loc>
@@ -317,285 +320,132 @@
 	<loc>http://pumpic.com/block-apps.html</loc>
 </url>
 <url>
-	<loc>http://pumpic.dev/security/</loc>
+	<loc>http://pumpic.com/limit-internet-time.html</loc>
 </url>
 <url>
-	<loc>http://pumpic.dev/security/where-to-find-pumpic-coupons-pumpic-trial/</loc>
+	<loc>http://pumpic.com/best-free-parental-control-apps-for-android.html</loc>
 </url>
 <url>
-	<loc>http://pumpic.dev/security/multitasking-damages-kids-brains-and-productivity/</loc>
+	<loc>http://pumpic.com/compatibility/apple-iphone-6s/</loc>
 </url>
 <url>
-	<loc>http://pumpic.dev/security/how-to-block-access-to-personal-data-on-facebook/</loc>
+	<loc>http://pumpic.com/compatibility/apple-iphone-6s-plus/</loc>
 </url>
 <url>
-	<loc>http://pumpic.dev/security/age-restrictions-on-social-media/</loc>
+	<loc>http://pumpic.com/how-to-setup-parental-controls-on-android.html</loc>
 </url>
 <url>
-	<loc>http://pumpic.dev/security/helpful-apps-for-parents-to-handle-daily-routine/</loc>
+	<loc>http://pumpic.com/online-safety-rules-for-teens.html</loc>
 </url>
 <url>
-	<loc>http://pumpic.dev/security/snapchat-like-apps-parents-should-beware/</loc>
+	<loc>http://pumpic.com/android-phone-child-tracking-software.html</loc>
 </url>
 <url>
-	<loc>http://pumpic.dev/security/cyber-safety-tips/</loc>
+	<loc>http://pumpic.com/parental-control-apps-android-2.3-vs-4.html</loc>
 </url>
 <url>
-	<loc>http://pumpic.dev/security/social-media-monitoring-for-parents/</loc>
+	<loc>http://pumpic.com/best-android-parental-control-app.html</loc>
 </url>
 <url>
-	<loc>http://pumpic.dev/security/what-is-parental-control/</loc>
+	<loc>http://pumpic.com/10-things-your-kids-can-learn-online.html</loc>
 </url>
 <url>
-	<loc>http://pumpic.dev/security/national-bullying-prevention-month/</loc>
+	<loc>http://pumpic.com/spy-apps-for-android.html</loc>
 </url>
 <url>
-	<loc>http://pumpic.dev/security/why-better-not-update-to-ios-9-yet/</loc>
+	<loc>http://pumpic.com/best-spy-apps-for-android.html</loc>
 </url>
 <url>
-	<loc>http://pumpic.dev/security/halloween-safety-tips-for-parents-and-children/</loc>
+	<loc>http://pumpic.com/how-to-lock-apps-on-android.html</loc>
 </url>
 <url>
-	<loc>http://pumpic.dev/security/useful-digital-recipes-for-careful-parents/</loc>
+	<loc>http://pumpic.com/block-calls.html</loc>
 </url>
 <url>
-	<loc>http://pumpic.dev/security/list-of-websites-to-block-for-kids/</loc>
+	<loc>http://pumpic.com/monitor-phone-contacts.html</loc>
 </url>
 <url>
-	<loc>http://pumpic.dev/security/is-there-a-keylogger-for-cell-phones/</loc>
+	<loc>http://pumpic.com/how-to-setup-parental-controls-on-iphone.html</loc>
 </url>
 <url>
-	<loc>http://pumpic.dev/security/it-took-kids-lives-away-cyberbullying-stories-that-really-happened/</loc>
+	<loc>http://pumpic.com/limitly-parental-app/</loc>
 </url>
 <url>
-	<loc>http://pumpic.dev/security/can-i-monitor-my-kids-ipod-touch/</loc>
+	<loc>http://pumpic.com/how-to-block-texts-on-android.html</loc>
 </url>
 <url>
-	<loc>http://pumpic.dev/security/how-to-set-parental-controls-on-android-tablet/</loc>
+	<loc>http://pumpic.com/spy-apps-vs-parental-monitoring.html</loc>
 </url>
 <url>
-	<loc>http://pumpic.dev/security/how-to-set-parental-controls-on-ipad/</loc>
+	<loc>http://pumpic.com/mobile-monitoring-control-panel-comparison.html</loc>
 </url>
 <url>
-	<loc>http://pumpic.dev/security/parents-handmades-and-inventions-for-child-safety-and-protection/</loc>
+	<loc>http://pumpic.com/android-keylogger.html</loc>
 </url>
 <url>
-	<loc>http://pumpic.dev/security/combination-of-cyberbullying-and-identity-theft-new-shocking-trend-of-online-bullying/</loc>
+	<loc>http://pumpic.com/whatsapp-monitoring.html</loc>
 </url>
 <url>
-	<loc>http://pumpic.dev/security/british-government-considers-laws-allowing-kids-delete-inappropriate-content-posted-when-they-hit-18/</loc>
+	<loc>http://pumpic.com/monitor-kik-messenger.html</loc>
 </url>
 <url>
-	<loc>http://pumpic.dev/security/internet-safety-pushes-out-smoking-and-teen-pregnancy-from-parents-top-concerns-list/</loc>
+	<loc>http://pumpic.com/monitor-skype.html</loc>
 </url>
 <url>
-	<loc>http://pumpic.dev/security/smartphone-and-tablets-hit-back-to-school-list/</loc>
+	<loc>http://pumpic.com/monitor-viber.html</loc>
 </url>
 <url>
-	<loc>http://pumpic.dev/security/useful-educational-ios-apps-for-your-children/</loc>
+	<loc>http://pumpic.com/keylogger-for-iphone.html</loc>
 </url>
 <url>
-	<loc>http://pumpic.dev/security/spanking-necessary-disciplinary-measure-or-emotional-trauma/</loc>
+	<loc>http://pumpic.com/monitor-snapchat.html</loc>
 </url>
 <url>
-	<loc>http://pumpic.dev/security/australian-government-leads-the-way-against-cyberbullying/</loc>
+	<loc>http://pumpic.com/how-to-trace-cell-phones.html</loc>
 </url>
 <url>
-	<loc>http://pumpic.dev/security/omegle-app-encourages-talking-to-strangers/</loc>
+	<loc>http://pumpic.com/compatibility/apple-ipad-2/</loc>
 </url>
 <url>
-	<loc>http://pumpic.dev/security/mobile-learning-via-smartphones-and-tablets/</loc>
+	<loc>http://pumpic.com/compatibility/apple-ipod-touch-5th/</loc>
 </url>
 <url>
-	<loc>http://pumpic.dev/security/how-to-jailbreak-iphone-4s-5-5s-5c-6-6-plus-ios-8/</loc>
+	<loc>http://pumpic.com/compatibility/apple-ipad-air/</loc>
 </url>
 <url>
-	<loc>http://pumpic.dev/security/child-online-protection-measures-across-the-states-of-america/</loc>
+	<loc>http://pumpic.com/compatibility/apple-iphone-5c/</loc>
 </url>
 <url>
-	<loc>http://pumpic.dev/security/daily-dangers-and-safety-tips-for-parents-and-little-kids/</loc>
+	<loc>http://pumpic.com/compatibility/apple-ipod-touch-4th/</loc>
 </url>
 <url>
-	<loc>http://pumpic.dev/security/kids-learned-to-avoid-parental-control-online/</loc>
+	<loc>http://pumpic.com/compatibility/apple-ipad-3/</loc>
 </url>
 <url>
-	<loc>http://pumpic.dev/security/tips-on-child-security-in-summer/</loc>
+	<loc>http://pumpic.com/internet-safety-rules-for-kids.html</loc>
 </url>
 <url>
-	<loc>http://pumpic.dev/security/the-public-concerned-sexting-is-becoming-normal-for-kids/</loc>
+	<loc>http://pumpic.com/best-internet-filter-for-android.html</loc>
 </url>
 <url>
-	<loc>http://pumpic.dev/security/kik-for-kids/</loc>
+	<loc>http://pumpic.com/internet-monitoring-software.html</loc>
 </url>
 <url>
-	<loc>http://pumpic.dev/security/how-to-block-websites-on-android-device/</loc>
+	<loc>http://pumpic.com/cell-phone-text-tracker.html</loc>
 </url>
 <url>
-	<loc>http://pumpic.dev/security/how-to-block-applications-on-android/</loc>
+	<loc>http://pumpic.com/android-family-tracker.html</loc>
 </url>
 <url>
-	<loc>http://pumpic.dev/security/parents-disagree-over-parental-control-issues/</loc>
+	<loc>http://pumpic.com/internet-filter-for-iphone.html</loc>
 </url>
 <url>
-	<loc>http://pumpic.dev/security/national-cellphone-courtesy-month/</loc>
+	<loc>http://pumpic.com/content-filtering-software.html</loc>
 </url>
 <url>
-	<loc>http://pumpic.dev/security/meet-family-safety-in-windows-10/</loc>
+	<loc>http://pumpic.com/child-internet-safety-software.html</loc>
 </url>
 <url>
-	<loc>http://pumpic.dev/security/50-abbreviations-all-parents-should-know/</loc>
-</url>
-<url>
-	<loc>http://pumpic.dev/security/kids-tablets-issues/</loc>
-</url>
-<url>
-	<loc>http://pumpic.dev/security/useful-apps-against-cyberbullying/</loc>
-</url>
-<url>
-	<loc>http://pumpic.dev/security/google-introduced-new-parental-control-options-for-play-market/</loc>
-</url>
-<url>
-	<loc>http://pumpic.dev/security/how-to-struggle-with-potential-data-leakage/</loc>
-</url>
-<url>
-	<loc>http://pumpic.dev/security/national-internet-safety-month/</loc>
-</url>
-<url>
-	<loc>http://pumpic.dev/security/engage-a-teen-save-mode/</loc>
-</url>
-<url>
-	<loc>http://pumpic.dev/security/to-monitor-or-not-to-monitor/</loc>
-</url>
-<url>
-	<loc>http://pumpic.dev/security/eastern-issues-of-cell-phone-surveillance/</loc>
-</url>
-<url>
-	<loc>http://pumpic.dev/security/student-digital-privacy-bill/</loc>
-</url>
-<url>
-	<loc>http://pumpic.dev/security/supernatural-social-media/</loc>
-</url>
-<url>
-	<loc>http://pumpic.dev/security/why-you-should-use-a-locator-app-for-iphone/</loc>
-</url>
-<url>
-	<loc>http://pumpic.dev/security/best-emergency-cell-phones-for-kids/</loc>
-</url>
-<url>
-	<loc>http://pumpic.dev/security/how-parental-control-can-block-an-iphone/</loc>
-</url>
-<url>
-	<loc>http://pumpic.dev/security/is-keylogging-legal/</loc>
-</url>
-<url>
-	<loc>http://pumpic.dev/security/to-track-or-not-to-track-your-sons-iphone/</loc>
-</url>
-<url>
-	<loc>http://pumpic.dev/security/tips-on-tracking-iphone-with-android/</loc>
-</url>
-<url>
-	<loc>http://pumpic.dev/security/how-to-set-parental-controls-on-iphone/</loc>
-</url>
-<url>
-	<loc>http://pumpic.dev/security/how-to-block-porn-on-kids-iphones/</loc>
-</url>
-<url>
-	<loc>http://pumpic.dev/security/how-to-tell-if-your-iphone-is-being-tapped/</loc>
-</url>
-<url>
-	<loc>http://pumpic.dev/security/protecting-kids-with-mobile-monitoring/</loc>
-</url>
-<url>
-	<loc>http://pumpic.dev/security/how-to-track-your-daughters-iphone/</loc>
-</url>
-<url>
-	<loc>http://pumpic.dev/security/is-it-possible-to-track-android-with-iphone/</loc>
-</url>
-<url>
-	<loc>http://pumpic.dev/security/autism-tracking-devices/</loc>
-</url>
-<url>
-	<loc>http://pumpic.dev/security/kids-and-social-media-pros-and-cons/</loc>
-</url>
-<url>
-	<loc>http://pumpic.dev/security/tech-talk-before-the-sex-talk/</loc>
-</url>
-<url>
-	<loc>http://pumpic.dev/security/periscope-app-a-new-parents-nightmare/</loc>
-</url>
-<url>
-	<loc>http://pumpic.dev/security/best-iphone-parental-monitoring/</loc>
-</url>
-<url>
-	<loc>http://pumpic.dev/security/new-barbie-connects-your-kid-to-the-internet/</loc>
-</url>
-<url>
-	<loc>http://pumpic.dev/security/buy-1-get-2-for-free/</loc>
-</url>
-<url>
-	<loc>http://pumpic.dev/security/new-monitoring-features/</loc>
-</url>
-<url>
-	<loc>http://pumpic.dev/security/how-to-monitor-your-kids-facebook/</loc>
-</url>
-<url>
-	<loc>http://pumpic.dev/security/how-to-monitor-your-kids-viber/</loc>
-</url>
-<url>
-	<loc>http://pumpic.dev/security/how-to-monitor-your-kids-skype/</loc>
-</url>
-<url>
-	<loc>http://pumpic.dev/security/how-to-monitor-your-kids-instagram/</loc>
-</url>
-<url>
-	<loc>http://pumpic.dev/security/how-to-tell-if-your-kid-has-online-addiction/</loc>
-</url>
-<url>
-	<loc>http://pumpic.dev/security/what-to-do-if-your-child-is-a-game-addict/</loc>
-</url>
-<url>
-	<loc>http://pumpic.dev/security/is-facebook-a-secure-place-for-your-child/</loc>
-</url>
-<url>
-	<loc>http://pumpic.dev/security/how-to-resist-online-predators/</loc>
-</url>
-<url>
-	<loc>http://pumpic.dev/security/10-signs-of-cyberbullying/</loc>
-</url>
-<url>
-	<loc>http://pumpic.dev/security/identity-security-tips-dating-advice/</loc>
-</url>
-<url>
-	<loc>http://pumpic.dev/security/advanced-child-cell-phone-monitoring-app/</loc>
-</url>
-<url>
-	<loc>http://pumpic.dev/security/what-to-do-if-your-identity-is-stolen/</loc>
-</url>
-<url>
-	<loc>http://pumpic.dev/security/protecting-yourself-from-identity-theft/</loc>
-</url>
-<url>
-	<loc>http://pumpic.dev/security/wearable-tracking-devices-security-risks/</loc>
-</url>
-<url>
-	<loc>http://pumpic.dev/security/how-to-jailbreak-iphone-3gs-4-4s-ios-6/</loc>
-</url>
-<url>
-	<loc>http://pumpic.dev/security/child-smartphone-monitoring-software/</loc>
-</url>
-<url>
-	<loc>http://pumpic.dev/security/how-to-jailbreak-iphone-4-4s-5-5s-5c-ios-7/</loc>
-</url>
-<url>
-	<loc>http://pumpic.dev/security/category/news/</loc>
-</url>
-<url>
-	<loc>http://pumpic.dev/security/category/children/</loc>
-</url>
-<url>
-	<loc>http://pumpic.dev/security/category/security/</loc>
-</url>
-<url>
-	<loc>http://pumpic.dev/security/category/tutorials/</loc>
+	<loc>http://pumpic.com/block-words.html</loc>
 </url>
 </urlset>

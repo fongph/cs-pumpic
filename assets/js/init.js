@@ -276,11 +276,11 @@ jQuery(function () {
 // init cookies
 function cookie_init() {
 //    if(!getCookie('popUp')) {
-//        $.cookie('popUp', false, { 
-//                        expires: 7, 
-//                        path: '/' 
+//        $.cookie('popUp', false, {
+//                        expires: 7,
+//                        path: '/'
 //                    });
-//    }         
+//    }
 
     // save cookie screen window
     if (!getCookie('_screen')) {
@@ -540,7 +540,7 @@ function getAjaxForm(path, params, options) {
         'type': 'POST',
         'cache': true
     }, options || {});
-    
+
 
     if (!path) {
         return null;
@@ -571,7 +571,7 @@ function getAjaxForm(path, params, options) {
 
 /*
  * JSONP
- * 
+ *
  */
 function _getAJAX(path, params, options) {
     if (!options)
@@ -608,7 +608,7 @@ function _getAJAX(path, params, options) {
 }
 
 /*
- * 
+ *
  * @param {type} $_msg
  * @returns {undefined}
  */
@@ -632,7 +632,7 @@ function getJsonp(_data) {
 
 
 /*
- * 
+ *
  * @param {type} $_msg
  * @returns {undefined}
  */
@@ -704,7 +704,7 @@ $(document).ready(function () {
 //        FB.init({
 //            // appId: '{your-app-id}',
 //            version: 'v2.4' // or v2.0, v2.1, v2.2, v2.3
-//        });     
+//        });
 //        //$('#loginbutton,#feedbutton').removeAttr('disabled');
 //        // FB.getLoginStatus(updateStatusCallback);
 //    });
@@ -730,9 +730,9 @@ $(document).ready(function () {
 
         // facebook
 //        if($(this).hasClass('share-facebook')) {
-//           window.open("http://www.facebook.com/sharer/sharer.php?s=100&p[url]="+encodeURIComponent(window.location)+"&p[images][0]=http://pumpic.com/images/socials/social-icon.jpg&p[title]=Mobile Phone Security Measures&p[summary]=How to protect children from online predators, cyberbullies, 18+ content, and identity theft. Pumpic gathered essential information on mobile phone safety practice. Learn more to keep kids safe.", 
-//           'Share', 
-//           'height=300,width=500'); 
+//           window.open("http://www.facebook.com/sharer/sharer.php?s=100&p[url]="+encodeURIComponent(window.location)+"&p[images][0]=http://pumpic.com/images/socials/social-icon.jpg&p[title]=Mobile Phone Security Measures&p[summary]=How to protect children from online predators, cyberbullies, 18+ content, and identity theft. Pumpic gathered essential information on mobile phone safety practice. Learn more to keep kids safe.",
+//           'Share',
+//           'height=300,width=500');
 //           // fb_share();
 //        } else {
 
@@ -821,7 +821,6 @@ $(document).ready(function () {
         $('#block-stickybar').stick_in_parent();
     }
 
-
     if ($('.list_category > li > a[data-toggled="on"]').length) {
         $.each($('.list_category > li > a[data-toggled="on"]'), function () {
             $('.box_category > ul > li').hide();
@@ -835,9 +834,29 @@ $(document).ready(function () {
         });
     }
 
+
+    //check if link is with hash
+    var currUrl = window.location.hash;
+    if(currUrl) {
+      $('.list_category > li:first-child').removeClass('active')
+    }
+    function offsetAnchor() {
+        if(location.hash.length !== 0) {
+            window.scrollTo(window.scrollX, window.scrollY - 90);
+        }
+    }
+
+    // This will capture hash changes while on the page
+    $(window).on("hashchange",offsetAnchor);
+
+    // This is here so that when you enter the page with a hash,
+    // it can provide the offset in that case too. Having a timeout
+    // seems necessary to allow the browser to jump to the anchor first.
+    window.setTimeout(offsetAnchor, 1);
     // choose categoey
+    //$('.list_category > li:first-child').addClass('active');
     $('.list_category > li > a').on('click', function (event) {
-        event.preventDefault();
+        //event.preventDefault();
         var _hash = $(this).attr('href').split('#'),
                 _index = $(this).closest('li').index(),
                 $holder = $(this).parent().parent();
@@ -850,7 +869,7 @@ $(document).ready(function () {
             window.location.hash = $(this).attr('href');
         }
 
-        // clear all active 
+        // clear all active
         $.each($('.list_category > li').not(":eq(" + _index + ")"), function () {
             if ($(this).hasClass('active'))
                 $(this).removeClass('active');
@@ -858,7 +877,7 @@ $(document).ready(function () {
             if ($(this).children('a').attr('data-toggled') == 'on') {
                 $(this).children('a').attr('data-toggled', 'off');
             }
-        }); // clear active 
+        }); // clear active
 
         // all add attr off
 
@@ -880,9 +899,9 @@ $(document).ready(function () {
                 }
 
                 if ($('.box_category > ul > li').find('#' + _hash[1]).length) {
-                    $('html, body').animate({
-                        scrollTop: Math.ceil($('.box_category > ul > li').find('#' + _hash[1]).offset().top) // Math.ceil((target_top * $(window).outerHeight(true)) / $('html, body').height())
-                    }, 'linear');
+                    // $('html, body').animate({
+                    //     scrollTop: Math.ceil($('.box_category > ul > li').find('#' + _hash[1]).offset().top) // Math.ceil((target_top * $(window).outerHeight(true)) / $('html, body').height())
+                    // }, 'linear');
                 }
 
             }
@@ -904,16 +923,16 @@ $(document).ready(function () {
         return false;
     });
 
-//    
+//
 //     $('.list_category > li > a').on('click', function(event) {
 //         event.preventDefault();
 //         var _hash = $(this).attr('href').split('#');
-//         
+//
 //         $.each($('.list_category > li'), function() {
 //            if($(this).hasClass('active'))
 //                $(this).removeClass('active');
 //         }); // clear active
-//         
+//
 //         if($(this).parent().hasClass('active')) {
 //             $(this).parent().removeClass('active');
 //             $('.box_category > ul > li').show();
@@ -926,11 +945,11 @@ $(document).ready(function () {
 //                } else {
 //                    $('.box_category > ul > li').find('#'+_hash[1]).closest('li').show();
 //                }
-//                 
-//                
+//
+//
 //             }
-//         }     
-//         
+//         }
+//
 //         return false;
 //     });
 
@@ -951,7 +970,7 @@ $(document).ready(function () {
 
 //   $('.search-category').on('click', function(e) {
 //       e.preventDefault();
-//       var _os = $(this).attr('attr_os'); 
+//       var _os = $(this).attr('attr_os');
 //       if( _os) {
 //           $.fn.PumpicList('search', {
 //               'search_method': 'getPhonesByOS',
@@ -959,7 +978,7 @@ $(document).ready(function () {
 //               '_query': _os
 //           });
 //       }
-//       
+//
 //       return false;
 //   });
 
@@ -1078,7 +1097,7 @@ $(document).ready(function () {
                         $('form[name="send_find_phone"] .fatal-error').html(_res.error);
                     }
 
-                    reloadCaptcha($form.find('.box-captcha > img'), true); // reload captcha 
+                    reloadCaptcha($form.find('.box-captcha > img'), true); // reload captcha
                     return false;
                 } else if (_res.success) {
                     $('form[name="send_find_phone"] span.info').html(_res.success).css({'display': 'inline-block'});
@@ -1096,24 +1115,24 @@ $(document).ready(function () {
 
                 } else {
                     $('form[name="send_find_phone"] .fatal-error').html('Your email was not sent');
-                    reloadCaptcha($form.find('.box-captcha > img'), true); // reload captcha 
+                    reloadCaptcha($form.find('.box-captcha > img'), true); // reload captcha
                     return false;
                 }
 
             } else {
                 $('form[name="send_find_phone"] .fatal-error').html('Your email was not sent');
-                reloadCaptcha($form.find('.box-captcha > img'), true); // reload captcha 
+                reloadCaptcha($form.find('.box-captcha > img'), true); // reload captcha
                 return false;
             }
 
-            reloadCaptcha($form.find('.box-captcha > img'), false); // reload captcha        
+            reloadCaptcha($form.find('.box-captcha > img'), false); // reload captcha
             $form.trigger("reset");
 
-            // return false;  
+            // return false;
         }
     });
 
-    // clear info in focus   
+    // clear info in focus
     $('form[name="send_find_phone"] input, form[name="send_find_phone"] textarea').focus(function () {
         //if($('form[name="send_find_phone"] span.info').length)
         //    $('form[name="send_find_phone"] span.info').html( " " ).hide();
@@ -1211,7 +1230,7 @@ $(document).ready(function () {
                         $('form[name="send_mobile_operators_find_phone"] .fatal-error').html(_res.error);
                     }
 
-                    reloadCaptcha($form.find('.box-captcha > img'), true); // reload captcha 
+                    reloadCaptcha($form.find('.box-captcha > img'), true); // reload captcha
                     return false;
                 } else if (_res.success) {
                     $('form[name="send_mobile_operators_find_phone"] span.info').html(_res.success).css({'display': 'inline-block'});
@@ -1229,24 +1248,24 @@ $(document).ready(function () {
 
                 } else {
                     $('form[name="send_mobile_operators_find_phone"] .fatal-error').html('Your email was not sent');
-                    reloadCaptcha($form.find('.box-captcha > img'), true); // reload captcha 
+                    reloadCaptcha($form.find('.box-captcha > img'), true); // reload captcha
                     return false;
                 }
 
             } else {
                 $('form[name="send_mobile_operators_find_phone"] .fatal-error').html('Your email was not sent');
-                reloadCaptcha($form.find('.box-captcha > img'), true); // reload captcha 
+                reloadCaptcha($form.find('.box-captcha > img'), true); // reload captcha
                 return false;
             }
 
-            reloadCaptcha($form.find('.box-captcha > img'), false); // reload captcha        
+            reloadCaptcha($form.find('.box-captcha > img'), false); // reload captcha
             $form.trigger("reset");
 
-            // return false;  
+            // return false;
         }
     });
 
-    // clear info in focus   
+    // clear info in focus
     $('form[name="send_mobile_operators_find_phone"] input, form[name="send_mobile_operators_find_phone"] textarea').focus(function () {
         //if($('form[name="send_mobile_operators_find_phone"] span.info').length)
         //    $('form[name="send_mobile_operators_find_phone"] span.info').html( " " ).hide();
@@ -1341,7 +1360,7 @@ $(document).ready(function () {
         }
     });
 
-    // clear info in focus 
+    // clear info in focus
     $('form.form-faq-send input, form.form-faq-send textarea').focus(function () {
 //        if($('form.form-faq-send span.info').length)
 //            $('form.form-faq-send span.info').html( " " ).hide();
@@ -1465,7 +1484,7 @@ $(document).ready(function () {
                         $('form.form-contact-us .fatal-error').html(_res.error);
                     }
 
-                    reloadCaptcha($form.find('.box-captcha > img'), true); // reload captcha 
+                    reloadCaptcha($form.find('.box-captcha > img'), true); // reload captcha
                     return false;
                 } else if (_res.success) {
 
@@ -1484,17 +1503,17 @@ $(document).ready(function () {
 
                 } else {
                     $('form.form-contact-us .fatal-error').html('Your email was not sent');
-                    reloadCaptcha($form.find('.box-captcha > img'), true); // reload captcha 
+                    reloadCaptcha($form.find('.box-captcha > img'), true); // reload captcha
                     return false;
                 }
 
             } else {
                 $('form.form-contact-us .fatal-error').html('Your email was not sent');
-                reloadCaptcha($form.find('.box-captcha > img'), true); // reload captcha 
+                reloadCaptcha($form.find('.box-captcha > img'), true); // reload captcha
                 return false;
             }
 
-            reloadCaptcha($form.find('.box-captcha > img')); // reload captcha     
+            reloadCaptcha($form.find('.box-captcha > img')); // reload captcha
             $form.trigger("reset");
         }
     });
@@ -1625,7 +1644,7 @@ $(document).ready(function () {
                         $('form.form-faq .fatal-error').html(_res.error);
                     }
 
-                    reloadCaptcha($form.find('.box-captcha > img'), true); // reload captcha 
+                    reloadCaptcha($form.find('.box-captcha > img'), true); // reload captcha
                     return false;
                 } else if (_res.success) {
 
@@ -1644,17 +1663,17 @@ $(document).ready(function () {
 
                 } else {
                     $('form.form-faq .fatal-error').html('Your email was not sent');
-                    reloadCaptcha($form.find('.box-captcha > img'), true); // reload captcha 
+                    reloadCaptcha($form.find('.box-captcha > img'), true); // reload captcha
                     return false;
                 }
 
             } else {
                 $('form.form-faq .fatal-error').html('Your email was not sent');
-                reloadCaptcha($form.find('.box-captcha > img'), true); // reload captcha 
+                reloadCaptcha($form.find('.box-captcha > img'), true); // reload captcha
                 return false;
             }
 
-            reloadCaptcha($form.find('.box-captcha > img')); // reload captcha     
+            reloadCaptcha($form.find('.box-captcha > img')); // reload captcha
             $form.trigger("reset");
         }
     });
@@ -1837,7 +1856,7 @@ $(document).ready(function () {
             focusInvalid: false,
             focusCleanup: false,
             messages: {
-                'captcha': "Invalid CAPTCHA.", // The CAPTCHA field is empty. 
+                'captcha': "Invalid CAPTCHA.", // The CAPTCHA field is empty.
                 'discount[name]': "The Name field is empty.",
                 'discount[email]': {
                     required: "The Password field is empty.",
@@ -1869,7 +1888,7 @@ $(document).ready(function () {
     }
 
     /**
-     * CAPACHA 
+     * CAPACHA
      */
     if ($('.box-captcha').length) {
         $('.update-captcha, .a-update-captcha').on('click', function (event) {
@@ -1879,7 +1898,7 @@ $(document).ready(function () {
 //           if($(this).attr('attr-width') && $(this).attr('attr-height')) {
 //               _src = '/captcha.html?width='+$(this).attr('attr-width')+'&height='+$(this).attr('attr-height')+'&'+Math.random();
 //           }
-//           
+//
 //           $('.box-captcha').find('#img-captcha').attr('src', _src);
 //           $('form[name="form-registration"], form[name="free_trial_registration"]').find('input[name="captcha"]').focus();
             return false;
@@ -1921,16 +1940,16 @@ $(document).ready(function () {
     });
 
     /*$("input[name='optionsRadios']").filter(':checked').each(function(){
-     
+
      var curr  = $(this);
-     
-     
-     
+
+
+
      curr.parent('.label_radio').removeClass('r_off');
      curr.parent('.label_radio').addClass('r_on');
-     
+
      curr.parents('form').children('.product_price').val(curr.val());
-     
+
      });   */
     /* hashchange_AfterInit */
 
@@ -1945,7 +1964,7 @@ $(document).ready(function () {
             $('#viber-whatsapp-skype').removeClass('w16p').addClass('w30p');
     }
 
-// ga click 
+// ga click
 // faq
     $('form[name="form-faq"] button.event-submit').click(function () {
         ga('send', 'event', 'form', 'submit', 'faq-request');
@@ -2046,7 +2065,7 @@ $(document).ready(function () {
 
 //      if($('#temp-2 > ul > li ul').is(':visible')) {
 //          $('#temp-2 > ul > li ul').slideUp('slow');
-//      } 
+//      }
 
         if (_itab.children('ul').is(':not(visible)')) {
             _itab.children('ul').slideDown('slow', function () {
@@ -2087,10 +2106,10 @@ $(document).ready(function () {
     $('.box-video-constructors .block-video-button > .box-hover').hover(
             function () {
                 // console.log( $rs_width );
-                if ($rs_width > 992) // !$rs_width || 
+                if ($rs_width > 992) // !$rs_width ||
                     $(this).find('.hover-video-buttons').show();
             }, function () {
-        if ($rs_width > 992) // !$rs_width || 
+        if ($rs_width > 992) // !$rs_width ||
             $(this).find('.hover-video-buttons').hide();
     }
     );
@@ -2126,8 +2145,8 @@ $(document).ready(function () {
 //        function onScroll(e) {
 //            window.scrollY >= origOffsetY ? sticky.classList.add('fixed') :
 //                                          sticky.classList.remove('fixed');
-//                                  
-//            console.log(window.scrollY+' = '+ origOffsetY);                      
+//
+//            console.log(window.scrollY+' = '+ origOffsetY);
 //        }
 //
 //        document.addEventListener('scroll', onScroll);
@@ -2141,9 +2160,9 @@ $(document).ready(function () {
 
     /*
      if($(".phone-sticky").length) {
-     
+
      if($(".phone-sticky").is(':visible')) {
-     
+
      $(window).on('scroll', function() {
      var windowTop = $(window).scrollTop();
      if(windowTop > 68) {
@@ -2152,9 +2171,9 @@ $(document).ready(function () {
      $(".phone-sticky").css({'position': 'static'});
      }
      });
-     
+
      }
-     
+
      }
      */
 
@@ -2164,31 +2183,31 @@ $(document).ready(function () {
      var src = $(this).attr('data-src');
      var height = $(this).attr('data-height') || 520;
      var width = $(this).attr('data-width') || 820;
-     
+
      var p_w = parseInt( width ) + 15;
      var p_h = parseInt( height ) + 25;
-     
+
      // $("#myModal .modal-dialog").css({'max-width': p_w+'px'}); // 'height': p_h+'px'
      $("#myModal .modal-body").css({'max-width': width+'px', 'height': height+'px'});
-     
+
      $("#myModal iframe").attr({ 'height': height,
      'width': width});
-     
+
      $('#myModal').on('shown.bs.modal', function (e) {
      $("#myModal iframe").attr({'src':src});
      });
-     
-     $('#myModal').on('hidden.bs.modal', function (e) { 
+
+     $('#myModal').on('hidden.bs.modal', function (e) {
      $("#myModal iframe").attr({'src': '#'});
      });
-     
+
      $('#myModal').modal({show:true});
      return false;
      });
-     
+
      $('#myModal').on('shown.bs.modal', function (e) {
      });
-     $('#myModal').on('hidden.bs.modal', function (e) { 
+     $('#myModal').on('hidden.bs.modal', function (e) {
      });
      */
 
@@ -2197,10 +2216,10 @@ $(document).ready(function () {
 //        var src = $(this).attr('data-src');
 //        var height = $(this).attr('data-height') || 520;
 //        var width = $(this).attr('data-width') || 820;
-//        
+//
 //        var p_w = parseInt( width ) + 15;
 //        var p_h = parseInt( height ) + 25;
-//        
+//
 //        $("#myModal .modal-dialog").css({'width': p_w+'px', 'height': p_h+'px'});
 //        $("#myModal .modal-body").css({'width': width+'px', 'height': height+'px'});
 //        $("#myModal iframe").attr({'src':src,
@@ -2212,7 +2231,7 @@ $(document).ready(function () {
 
 //    $(window).on('load resize', function() {
 //         console.log($(this).width());
-//    });    
+//    });
 
 
     // countries
@@ -2262,7 +2281,7 @@ $(document).ready(function () {
 //       } else if(_class == 'minus') {
 //           $(this).parent('div.minus').attr('class', 'plus'); //.removeClass('minus').addClass('plus');
 //       }
-//       
+//
 //    });
 
     if ($('.block-child-location-tracking .feature').length) {

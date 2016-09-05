@@ -10,17 +10,17 @@ function _LC_OPEN() {
 // LC_API.on_after_load = function()
 LC_API.on_before_load = function()
 {
-    
+
     var custom_variables = [
        { name: 'visit', value: '1' }
     ];
     LC_API.set_custom_variables(custom_variables);
-    
-//    console.log('LC_API:BEFORE'); 
+
+//    console.log('LC_API:BEFORE');
 //    if(!LC_API.chat_window_maximized()) {
 //        setTimeout( _LC_OPEN, 1000*60*10); // 1000 - 1cек.
 //    }
-    
+
 //	if(LC_API.chat_window_maximized()) {
 //            // LC_API.hide_chat_window();
 //            LC_API.minimize_chat_window();
@@ -28,14 +28,14 @@ LC_API.on_before_load = function()
 };
 
 LC_API.on_after_load = function() {
-//    console.log('LC_API:AFTER');    
-    
+//    console.log('LC_API:AFTER');
+
     if(LC_API.chat_window_maximized()) {
 //            // LC_API.hide_chat_window();
         LC_API.minimize_chat_window();
     }
-        
-     setTimeout( _LC_OPEN, 1000*60*10); // 1000 - 1cек.   
+
+     setTimeout( _LC_OPEN, 1000*60*10); // 1000 - 1cек.
 }
 */
 
@@ -67,7 +67,7 @@ $(function() {
 		}, 800);
 		return false;
 	});
-    
+
 
     $('.learn-about-link').click(function(event) {
         event.preventDefault();
@@ -82,16 +82,16 @@ $(function() {
         // scroll body on click
         if($('.go_block_scroll').length) {
            $('.go_block_scroll').on('click', function() {
-                var id = ($(this).attr('data-go-block')) ? '#'.$(this).attr('data-go-block') : ($(this).attr('href')) ? $(this).attr('href') : false;  
+                var id = ($(this).attr('data-go-block')) ? '#'.$(this).attr('data-go-block') : ($(this).attr('href')) ? $(this).attr('href') : false;
                 if(id && $( id ).length) {
-                    $('html, body').animate( { 
+                    $('html, body').animate( {
                         scrollTop: Math.ceil( $( id ).offset().top ) // Math.ceil((target_top * $(window).outerHeight(true)) / $('html, body').height())
                     },'linear');
                     return false;
-                } 
-           }); 
+                }
+           });
         }
-        
+
         // ga form
         // вариант 1
 //        ga(function(tracker) {
@@ -105,6 +105,3 @@ $(function() {
         });
        }
 });
-
-
-

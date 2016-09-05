@@ -815,7 +815,7 @@
                                     </ul>
 
                                     <div class='block-info'>
-                                        <p>Monitor temporary <b>photos</b>, <b>videos</b>, and <b>comments</b> posted on Snapchat. Prevent your children from inappropriate <b>content sharing</b> and <b>viewing</b>.</p>
+                                        <p>Monitor chat messages on Snapchat <br> (limited functionality).</p>
 
                                         <div><a class="btn-orange" target="_blank"  href="http://demo.{$domain}/setDevice/126?redirect_url=cp/call">View Demo</a></div>
                                         <label class="color-orange">(no registration required)</label>

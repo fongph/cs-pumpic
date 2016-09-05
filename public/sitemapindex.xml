@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/css" href="http://pumpic.com/security/wp-content/plugins/simple-wp-sitemap/css/xml.css"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-	<loc>http://pumpic.com/sitemap.xml</loc>
+	<loc>http://pumpic.com/sitemaproot.xml</loc>
 </url>
 <url>
 	<loc>http://pumpic.com/security/sitemap.xml</loc>

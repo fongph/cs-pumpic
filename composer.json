@@ -37,6 +37,7 @@
     ],
     "require": {
         "php": ">=5.4.0",
+        "symfony/options-resolver": "2.3.42",
         "rastor/system": "~0.5",
         "predis/predis": "~1.0",
         "boomers/seller": "dev-master",

@@ -52,10 +52,10 @@ $di->setShared('mailSender', function() use ($di) {
     if ($di['config']['environment'] == 'development') {
         $mailSender = new CS\Mail\MailSender(new \CS\Mail\Processor\FileProcessor(dirname(__DIR__) . '/mailSender.log'));
     } else {
-        $mailSender = new CS\Mail\MailSender(new \CS\Mail\Processor\RemoteProcessor(
-            GlobalSettings::getMailSenderURL(SITE_ID),
-            GlobalSettings::getMailSenderSecret(SITE_ID)
-        ));
+        $queue = GlobalSettings::getQueueConfig();
+        
+        $processor = new CS\Mail\Processor\QueueProcessor($queue['host'], $queue['port'], $queue['user'], $queue['password'], 'mail');
+        $mailSender = new CS\Mail\MailSender($processor);
     }
     /** @var \System\Auth $auth */
     $auth = $di['auth'];

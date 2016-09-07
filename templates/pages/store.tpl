@@ -95,7 +95,7 @@ description="Pumpic offers high-quality Cell Phone Tracking Software for a good 
 									</span>
 									<span>
 										<i class="icon-ok">
-                                        </i>Remote Device Lock
+                    </i>Remote device lock
 									</span>
 									<span>
 										<i class="icon-ok">
@@ -214,7 +214,7 @@ description="Pumpic offers high-quality Cell Phone Tracking Software for a good 
                                                         <li data-toggle="tooltip" data-placement="top" title="Track chats and calls on Viber. <div class='br'><strong>Android: Root Required</strong></div>"><i class="icon-cancel"></i> Viber</li>
                                                         <li data-toggle="tooltip" data-placement="top" title="Track conversations via Kik.<div class='br'><strong>Android: Root Required</strong></div>"><i class="icon-cancel"></i> Kik</li>
                                                         <li data-toggle="tooltip" data-placement="top" title="Monitor posted images and comments on Instagram. <div class='br'><strong>Android: Root Required</strong></div>"><i class="icon-cancel"></i> Instagram</li>
-                                                        <li data-toggle="tooltip" data-placement="top" title="Limited monitoring of chat messages. <div class='br'><strong>Android: Root required.</strong></div>"><i class="icon-cancel"></i> Snapchat</li>
+                                                        <li data-toggle="tooltip" data-placement="top" title="Monitor Snapchat photos, videos, and comments. <div class='br'><strong>Android: Root and Xposed Required</strong></div>"><i class="icon-cancel"></i> Snapchat</li>
                                                         <li data-toggle="tooltip" data-placement="top" title="Track chats and calls on Facebook. <div class='br'><strong>Android: Root Required</strong></div>"><i class="icon-cancel"></i> Facebook{*Messages*}</li>
                                                         <li data-toggle="tooltip" data-placement="top" title="View all the previouse data ever stored on a device."><i class="icon-cancel"></i> Historical data</li>
                                                         <li data-toggle="tooltip" data-placement="top" title="Control devices remotely.<div class='br'><strong>Not supported: Android 5.0 and higher.</strong></div>"><i class="icon-cancel"></i> SMS commands
@@ -365,7 +365,7 @@ description="Pumpic offers high-quality Cell Phone Tracking Software for a good 
 
 
                                                         <li data-toggle="tooltip" data-placement="top" title="Monitor posted images and comments on Instagram. <div class='br'><strong>Android: Root Required</strong></div>"><i class="icon-ok"></i> Instagram</li>
-                                                        <li data-toggle="tooltip" data-placement="top" title="Limited monitoring of chat messages. <div class='br'><strong>Android: Root required.</strong></div>"><i class="icon-ok"></i> Snapchat</li>
+                                                        <li data-toggle="tooltip" data-placement="top" title="Monitor Snapchat photos, videos, and comments.<br><strong>Android: Root and Xposed Required</strong></div>"><i class="icon-ok"></i> Snapchat</li>
                                                         <li data-toggle="tooltip" data-placement="top" title="Track chats and calls on Facebook. <div class='br'><strong>Android: Root Required</strong></div>"><i class="icon-ok"></i> Facebook{*Messages*}</li>
                                                         <li data-toggle="tooltip" data-placement="top" title="View all the previouse data ever stored on a device."><i class="icon-ok"></i> Historical data <img src="/images/cloud-grey.png"></li>
                                                         <li data-toggle="tooltip" data-placement="top" title="Control devices remotely.<div class='br'><strong>Not supported: Android 5.0 and higher.</strong></div>"><i class="icon-ok"></i> SMS commands
@@ -435,8 +435,7 @@ description="Pumpic offers high-quality Cell Phone Tracking Software for a good 
                             <div class="space_line">&nbsp;</div>
                             <div class="link_circle_italic2">
                                 <div class="style-links2">
-                                    <span class="circle_ico2"></span>You need to have physical access to the target device or iCloud password to install the application.
-                                    Physical access might be required for iCloud monitoring solution to check iCloud or backup settings & perform a backup manually.
+                                    <span class="circle_ico2"></span>You need to have physical access to the target device or the iCloud password to install the application. Physical access might be required for iCloud monitoring solution to check iCloud or backup settings & perform a backup manually.
                                 </div>
                             </div>
                         </div>
@@ -452,7 +451,7 @@ description="Pumpic offers high-quality Cell Phone Tracking Software for a good 
             <div class="apps-store col-xs-12 col-sm-12 col-md-7">
                 <p class="free-pumpic-control"><span>Bonus!</span> FREE Pumpic Control Panel Mobile App with every plan!</p>
                 <div class="apps-store-text">
-                    <p>Check the most important data from the target device on the go by using Control Panel Mobile Application! Just purchase any subscription plan, download the FREE application to your mobile device and login with your Control Panel credentials.</p>
+                    <p>Check the most important data from the target device on the go by using Control Panel Mobile Application! Just purchase any subscription plan, download the FREE application to your mobile device and log in with your Control Panel credentials.</p>
                 </div>
                 <div class="store-links">
                     <a class="ga-action-click" ga-category="Mobile App Buttons" ga-action="click" ga-label="Store AS" target="_blank" href="https://itunes.apple.com/us/app/pumpic-control-panel/id1126835967"><img src="/images/app-store.png" alt="Pumpic Parental Monitoring on App Store" alt=""></a>

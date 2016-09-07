@@ -5,12 +5,8 @@
  * @var $urlParams array
  */
 
- $smarty->caching = true;
- $smarty->compile_check = false;
- $smarty->force_compile = false;
- $smarty->debugging = false;
- $smarty->cache_modified_check = false;
- 
+smarty_function_getUserInfo(array(), $smarty);
+
 $compatibility = new Models\Compatibility(di()->get('dbPhones'));
 
 list(,$modelName) = explode('/', $urlParams['uri']);
@@ -29,7 +25,7 @@ if($phoneData){
     $LastModified = gmdate("D, d M Y H:i:s \G\M\T", $LastModified_unix);
     $IfModifiedSince = false;
     if (isset($_ENV['HTTP_IF_MODIFIED_SINCE']))
-        $IfModifiedSince = strtotime(substr($_ENV['HTTP_IF_MODIFIED_SINCE'], 5));  
+        $IfModifiedSince = strtotime(substr($_ENV['HTTP_IF_MODIFIED_SINCE'], 5));
     if (isset($_SERVER['HTTP_IF_MODIFIED_SINCE']))
         $IfModifiedSince = strtotime(substr($_SERVER['HTTP_IF_MODIFIED_SINCE'], 5));
     if ($IfModifiedSince && $IfModifiedSince >= $LastModified_unix) {
@@ -37,7 +33,7 @@ if($phoneData){
         exit;
     }
     header('Last-Modified: '. $LastModified);
-    
+
     $cache_id = 'compatibility_item_'.md5( $phoneData['rowid'].'-'.$phoneData['cdate'].'-'.$phoneData['alies'] );
     $smarty->assign('compatibilityDeviceUri', $_GET['model']);
     $smarty->assign('getSetting', array(
@@ -46,5 +42,5 @@ if($phoneData){
         'description' => "Parental control software for {$phoneData['name']} monitors and blocks unsafe activity while allowing kids access to the Internet. Geo fencing allows you to be always aware of your child safety.",
         'api' => $config['api_device'],
     ));
-    $smarty->display('compatibility/item.tpl', $cache_id); // $cache_id    
+    $smarty->display('compatibility/item.tpl', $cache_id); // $cache_id
 } else throw new PageNotFoundException;

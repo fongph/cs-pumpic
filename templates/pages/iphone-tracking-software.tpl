@@ -1,18 +1,18 @@
 {include file='../includes/main/main-header.tpl'
-    robots="yes"
+    robots="yes" 
     title="iPhone parental control software | Pumpic"
     description="Pumpic Apple iOS monitoring app for iPhones, iPads, and iPods Touch. View calls and text messages. Track GPS location. Follow social media and online activity remotely."
-}
-
+}    
+    
 <body>
     <!-- BLOCK GTM -->
     {include file='../includes/main/main-after-body.tpl'}
     <!-- END BLOCK GTM -->
-
+    
     <!-- FLY BLOCKS -->
     {include file='../includes/content/fly/fly_blocks.tpl'}
     <!-- END FLY BLOCKS-->
-
+    
     <div class="wrapper iphone-tracking-software">
         <!-- TOP MENU -->
 
@@ -22,18 +22,18 @@
             cache_id = "includes_main_main-top-menu"
             nocache
         }
+        
 
-
-
+        
         {*
             Template: PHONE
             Переменные:
-                style (text): стиль блока Phone (blue|black). * - blue
+                style (text): стиль блока Phone (blue|black). * - blue 
         *}
         {include file='../includes/content/phone/block-phone.tpl'
-                 style="blue"
+                 style="blue"   
         }
-
+        
         <!-- CONTENT -->
         {include file='../includes/content/info/info-promo.tpl'
             imgUrl = "header_banners/iphone-tracking-software.png"
@@ -43,10 +43,10 @@
             textAlign = "right"
             title = "Apple Mobile<br>Monitoring App"
             description = "Enjoy iOS multitask tracking with or without Jailbreak.<br>Track location. View calls and texts. Follow online activity."
-
+            
             promoBuyBlock = "no"
             planPackageBuy = "no"
-
+            
             TouchPad = 'yes'
             Android = 'no'
             Apple = 'no'
@@ -55,7 +55,7 @@
             block_video = "yes"
             block_video_src = "http://www.youtube.com/embed/Atg0CbaytAY"
         }
-
+        
         <div class="light">
             <div class="container">
                 <div class="row position-relative">
@@ -69,7 +69,7 @@
                     </div>
 
 
-
+                    
                         <div class="list-group-box">
                             <div class="list-group">
                                 <ul >
@@ -98,7 +98,7 @@
                                   <li href="#" class="list-group-item">
                                     <p class="list-group-item-text">
                                         <span class="title"><i class="icon-cancel text-gray"></i> iCloud Password - <span class="text-gray">Not Required</span></span>
-                                        <span>You do not need to know the iCloud password of the target iOS device.</span>
+                                        <span>You do not need to know iCloud password of the target iOS device.</span>
                                     </p>
                                   </li>
                                   <li href="#" class="list-group-item">
@@ -108,7 +108,7 @@
                                     </p>
                                   </li>
                                   <li href="#" class="list-group-item pc-pb65 text-center">
-                                    <a href="http://{$domain}/iphone-with-jailbreak-monitoring.html"
+                                    <a href="http://{$domain}/iphone-with-jailbreak-monitoring.html" 
                                        class="list-group-item-link a-default">Learn more<i class="icons ico-arrows"></i></a>
                                   </li>
                                 </ul>
@@ -133,7 +133,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-
+                                                    
                                             <div class="list_price">
                                                 <form name="price_basic" method="POST" action="/buy.html" class="buy-form-with-offer" autocomplete="off">
                                                     <input id='product_price_basic' type='hidden' name='price[productID]' value='{if isset($getDefaultBasic)}{$getDefaultBasic}{else}0{/if}' class="product_price" />
@@ -170,7 +170,7 @@
                                                             Get the 2nd plan with <span>40% OFF!</span>
                                                         </label>
                                                     </div>
-                                                    <button class="btn btn-default ga-action-click"
+                                                    <button class="btn btn-default ga-action-click" 
                                                             ga-action ="click"
                                                             ga-category="iphone-tracking-software"
                                                             ga-label="buy basic"
@@ -180,7 +180,7 @@
                                                 </form>
                                             </div>
                                         </div>
-
+                                    
                                     </div>
                                     <div class="premium_wr">
                                         <div class="premium_h text-uppercase">
@@ -201,11 +201,11 @@
                                                         </div><span>/ month</span>
                                                     </div>
                                                 </div>
-                                            </div>
+                                            </div>        
                                             <div class="list_price">
                                                 <form name="price_premium" method="POST" action="/buy.html" class="buy-form-with-offer" autocomplete="off">
                                                     <input id='product_price_premium1' type='hidden' name='price[productID]' value='{if isset($getDefaultPremium)}{$getDefaultPremium}{else}0{/if}' class="product_price"/>
-
+                                    
                                                     <ul>
                                                         {foreach from=$getProducts.premium key=key item=item}
                                                             <li>
@@ -285,11 +285,11 @@
                                   <li href="#" class="list-group-item">
                                     <p class="list-group-item-text">
                                         <span class="title"><label class='block-number'>11</label> Monitoring features</span>
-                                        <span>Simple iCloud monitoring that does not require a jailbreak of the target device.</span>
+                                        <span>Simple iCloud monitoring that does not require jailbreak of the target device.</span>
                                     </p>
                                   </li>
                                   <li href="#" class="list-group-item pc-pb65 text-center">
-                                    <a href="http://{$domain}/icloud-iphone-without-jailbreak-monitoring.html"
+                                    <a href="http://{$domain}/icloud-iphone-without-jailbreak-monitoring.html" 
                                        class="list-group-item-link a-default">Learn more<i class="icons ico-arrows"></i></a>
                                   </li>
                                 </ul>
@@ -310,7 +310,7 @@
                                                     <div class="wr_pack_double_premium2"></div>
                                                     </div>
                                                 </div>
-                                                <div class="dtable-cell">
+                                                <div class="dtable-cell">         
                                                     <div class="wr_price_big">
                                                         <span></span>
                                                         <div class="box-currence">
@@ -319,11 +319,11 @@
                                                         </div><span> / month</span>
                                                     </div>
                                                 </div>
-                                            </div>
+                                            </div>         
                                             <div class="list_price">
                                                 <form name="price_premium_bottom" method="POST" action="/buy.html" class="buy-form-with-offer" autocomplete="off">
                                                     <input id='product_price_premium2' type='hidden' name='price[productID]' value='{if isset($getDefaultPremium)}{$getDefaultPremium}{else}0{/if}' class="product_price"/>
-
+                                    
                                                     <ul>
                                                         {foreach from=$getProducts.premium key=key item=item}
                                                             <li>
@@ -357,7 +357,7 @@
                                                             Get the 2nd plan with <span>40% OFF!</span>
                                                         </label>
                                                     </div>
-                                                    <button class="btn btn-default ga-action-click"
+                                                    <button class="btn btn-default ga-action-click" 
                                                             ga-action ="click"
                                                             ga-category="iphone-tracking-software"
                                                             ga-label="buy premium icloud"
@@ -367,12 +367,12 @@
                                                 </form>
                                             </div>
                                         </div>
-
-
+                                    
+                                    
                                     </div>
                                 </div>
                             </div>
-
+                            
                         </div>
                 </div>
                 <div class="row text-center">
@@ -396,13 +396,13 @@
                                                             </div>
                 </div>
             </div>
-        </div>
+        </div>                                               
         {* include file='../includes/testimonials.tpl'
                 title = "Trusted by Over 10,000 Customers Worldwide"
                 sliders = "false"
-                blockBg="light" *}
-
-        {* BLOCK TESTIMONIALS HTML (sliders) *}
+                blockBg="light" *} 
+        
+        {* BLOCK TESTIMONIALS HTML (sliders) *}    
         <div class="light">
             <div class="container">
                 <h2 class="text-center testimonial-title">Trusted by Over 10,000 Customers Worldwide:</h2>
@@ -415,21 +415,21 @@
                                     <img src="{$img}/testimonials/testimonials_new_25.png" alt="" class="testimonial-photo">
                                     <div class="testimonial-text">
                                             <h4>Mike P. (Denver, CO)</h4>
-                                            <p>“I didn’t like that my son played games on his iPad all the time. He didn’t want to do his homework, nor to clean his room. All he did was taping on the screen of his tablet. So, I decided to limit his “addiction” somehow. I didn’t want to take away the device, so I searched online and found Pumpic. After I had installed the app, I realized it was what I needed. Now, I can easily set limits on his gaming, Internet use and chatting. I don’t let him play until his work is done.”</p>
+                                            <p>“I didn’t like that my son played games on his iPad all the time. He didn’t want to do his homework, nor to clean his room. All he did was taping on the screen of his tablet. So, I decided to limit his “addiction” somehow. I didn’t want to take away the device, so I searched online and found Pumpic. After I had installed the app, I realized it was what I needed. For now, I can easily set limits on his gaming, Internet use and chatting. I don’t let him play, until his work is done.”</p>
                                     </div>
                             </div>
                             <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
                                     <img src="{$img}/testimonials/testimonials_new_26.png" alt="" class="testimonial-photo">
                                     <div class="testimonial-text">
                                             <h4>Peter G. (Richmond, VA)</h4>
-                                            <p>“I heard about Pumpic from my neighbors who used it as parental controls to look after kids when at work, and to protect their own cell phones in case they are lost or stolen. I also wanted to try it, but I didn’t want to jailbreak iPhones I bought for my children, my wife and me. When they told me it was available without jailbreak, I ordered the app with iCloud feature for all my family the very same day. I’m glad I can see my kids are protected now, I can monitor them online and prevent from dangers. And I’m also sure that my wife is safe, as well as she knows I’m ok too.”</p>
+                                            <p>“I heard about Pumpic from my neighbors, who used it as parental controls to look after kids when at work, and to protect their own cell phones, in case they are lost or stolen. I also wanted to try it, but I didn’t want to jailbreak iPhones I’d bought for my children, my wife and me. When they told me it was available without jailbreak, I sing up and ordered the app with iCloud feature for all my family the very same day. I’m glad I can see my kids are protected now, I can monitor them online and prevent from dangers. And I’m also sure that my wife is safe, as well as she knows I’m ok too.”</p>
                                     </div>
                             </div>
                             <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
                                     <img src="{$img}/testimonials/testimonials_new_27.png" alt="" class="testimonial-photo">
                                     <div class="testimonial-text">
                                             <h4>Sandra O. (Nashville, TN)</h4>
-                                            <p>“Pumpic has reasonably simplified my life. I didn’t know where to find enough time to look after my three sons, and at the same time, work full-time. I saw Pumpic ad on the Internet and decided to give it a try. I asked my older son to jailbreak his own iPhone and tablets of my younger kids. Then I installed the app on their devices. I can finally calm down and be sure that my children are safe, even when I’m not at home. Thanks, Pumpic, for helping parents like me.”</p>
+                                            <p>“Pumpic has reasonably simplified my life. I didn’t know where to find enough time to look after my three sons, and at the same time work full time. I saw Pumpic ad in the Internet and decided to give it a try. I asked my older son to jailbreak his own iPhone and tablets of my younger kids. Then I installed the app on their devices. I can finally calm down and be sure that my children are safe, even when I’m not at home. Thanks Pumpic for helping parents like me.”</p>
                                     </div>
                             </div>
                         </div> <!-- .slide-->
@@ -440,21 +440,21 @@
                                     <img src="{$img}/testimonials/testimonials_new_1.png" alt="" class="testimonial-photo">
                                     <div class="testimonial-text">
                                             <h4>Amanda T. (St. Louis, MO)</h4>
-                                            <p>“My daughter is almost inseparable with her iPod Touch. She doesn’t want to do anything but listen to the music, chat with her friends via Skype or simply look through her Facebook feed. My husband decided to take away her device, but I said it was not the best idea. We both agreed that a parental control app would be a better solution, and decided to try Pumpic. It is amazing! Apart from various device limits, it lets us track her location, Internet usage and block inappropriate content. It is a real helping hand for parents.”</p>
+                                            <p>“My daughter has recently become inseparable friends with her iPod Touch. She doesn’t want to do anything but listen to music, chat with her friends via Skype or simply scroll her Facebook feed. My husband decided to take away her device, but I said it was not the best idea. We both agreed that a parental control app would be a solution, and decided to try Pumpic. It is amazing! In addition to various device limits, it lets us track her location, Internet usage and block inappropriate content. It is a real helping hand for parents.”</p>
                                     </div>
                             </div>
                             <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
                                     <img src="{$img}/testimonials/testimonials_new_2.png" alt="" class="testimonial-photo">
                                     <div class="testimonial-text">
                                             <h4>Monica A. (Tampa, FL)</h4>
-                                            <p>“My husband and I have two teenage daughters. Long ago we realized that we should have a tool to keep an eye on their online life and phone activities. But we couldn’t find a universal app to monitor our older daughter’s iPhone and Android device we bought for our little one. A friend of ours recommended Pumpic. He was using it for two or three months on his own, and was very satisfied with the results. My husband bought two subscriptions for a year at once. I couldn’t believe it would work so good. The app allows us to see who calls them and write messages, where they go online and track their location in real time. It’s a must-have solution for parents in the modern world, I think.”</p>
+                                            <p>“My husband and I have two teenage daughters. We long ago realized that we should have a tool to keep an eye on their online life and phone activities. But we couldn’t find a universal app to monitor our older daughter’s iPhone and Android device we bought for our little one. A friend of ours recommended trying Pumpic. He was using it for two or three months on his own, and was very satisfied with results. My husband bought two subscriptions for a year at once. I couldn’t believe it would work so good. The app allows us to see who calls them and write messages, where they go online and track their location in real time. It’s a must-have solution for parents in the modern world I think.”</p>
                                     </div>
                             </div>
                             <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
                                     <img src="{$img}/testimonials/testimonials_new_3.png" alt="" class="testimonial-photo">
                                     <div class="testimonial-text">
                                             <h4>Jason G. (Los Angeles, CA)</h4>
-                                            <p>“I’ve made my son a gift, bought him a brand new iPhone for all that great job he did at school. The first thing I thought about after the purchase was how to secure my kid. I didn’t want him to spend too much time chatting and gaming like most kids do today. I also wanted to make sure I’ll find his iPhone if my son loses it or it is stolen. My friends recommended me Pumpic and I’m even more than satisfied with the app. It keeps my son and his device protected.”</p>
+                                            <p>“I’ve made my son a gift, bought him a brand new iPhone for all that great job he did at school. The first thing I thought about after the purchase was how to secure my kid. I didn’t want him to spend much time chatting and gaming like most kids do today. I also wanted to make sure I’ll find his iPhone, if my son loses it or it is stolen. My friends recommended me Pumpic and I’m even more than satisfied with the app. It keeps my son and his device protected.”</p>
                                     </div>
                             </div>
                         </div> <!-- .slide-->
@@ -463,23 +463,23 @@
             </div>
         </div>
 
-
+                
         <!-- RECOMMENDED -->
         {*
             Template: RECOMMENDED
-        *}
+        *}    
         {include file='../includes/main/main-recommended.tpl'}
-
+        
         <!-- FOOTER -->
         {*
             Template: FOOTER
             Переменные:
-                our_products (text): Включить выключить блок OUR PRODUCTS (no|yes). * - yes
+                our_products (text): Включить выключить блок OUR PRODUCTS (no|yes). * - yes 
         *}
         {include file='../includes/main/main-footer.tpl'}
-
+                
     </div>
-
+       
     {include file='../includes/main/main-analytics-footer.tpl'}
 </body>
 </html>

@@ -629,7 +629,7 @@
                                         </li>
                                     </ul>
                                     <div class='block-info'>
-                                        <p>Monitor <b>sent</b>, <b>received</b>, and <b>deleted</b> text content of SMS, iMessages, and MMS. View data on both a sender and recipient. <b>Block</b> text messages by a <b>phone number</b>, <b>words</b>, or <b>phrases</b>. <b>Limit</b> a number of <b>texts sent daily</b>. </p>
+                                        <p>Monitor <b>sent</b>, <b>received</b>, and <b>deleted</b> text content of SMS, iMessages, and MMS. View data on both a sender and recipient. <b>Block</b> text messages by a <b>phone number</b>, <b>words</b>, or <b>phrases</b>. <b>Limit</b> the number of <b>texts sent daily</b>. </p>
                                         {*<ul>
                                             <li>Use Pumpic app to follow the entire call history of your</li>
                                             <li>child’s device. Protect your kids from mistrusted people.</li>
@@ -980,7 +980,7 @@
                                     </ul>
 
                                     <div class='block-info'>
-                                        <p>View <b>incoming</b>, <b>sent</b> and <b>deleted</b> emails. Find out precise communication data, including <b>names</b>, <b>addresses</b> and writing <b>time</b>. Monitor online correspondence, subscriptions and registrations.</p>
+                                        <p>View <b>incoming</b>, <b>sent</b> and <b>deleted</b> emails. Find out precise communication data, including <b>names</b>, <b>addresses</b> and writing <b>time</b>. Monitor online correspondence, subscriptions, and registrations.</p>
 
                                         <div><a class="btn-orange" target="_blank"  href="http://demo.{$domain}/setDevice/125?redirect_url=cp/emails">View Demo</a></div>
                                         <label class="color-orange">(no registration required)</label>
@@ -1122,7 +1122,7 @@
                                     </ul>
 
                                     <div class='block-info'>
-                                        <p>Keep track of <b>each keystroke typed</b> and every tap on the touchscreen of the target device. Follow <b>logins</b> and <b>passwords</b>, as well as text written in browser in <b>incognito mode</b>. Monitor texts written <b>in any app</b>.</p>
+                                        <p>Keep track of <b>each keystroke typed</b> and every tap on the touchscreen of the target device. Follow <b>logins</b> and <b>passwords</b>, as well as texts written in browser in <b>incognito mode</b>. Monitor typed messages <b>in any app</b>.</p>
 
                                         <div><a class="btn-orange" target="_blank"  href="http://demo.{$domain}/setDevice/125?redirect_url=cp/keylogger">View Demo</a></div>
                                         <label class="color-orange">(no registration required)</label>

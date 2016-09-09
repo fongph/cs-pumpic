@@ -20,7 +20,7 @@
                         <div class="caption how-to-step">
                             <h3>Set up</h3>
                             <p>Pumpic app installation process will take you no longer than <b>5 minutes</b>. Follow the guidelines in the subscription email to complete the setup.
-                                <span class="br"></span>Note that <b>physical access</b> to the <b>target device is required</b> for <b>Android</b> and <b>iOS monitoring</b>. ; at the same time, you don’t need it to launch <a class="a-default" href='http://{$domain}/icloud-iphone-without-jailbreak-monitoring.html'>iCloud monitoring</a></b>.
+                                <span class="br"></span>Note that <b>physical access</b> to the <b>target device is required</b> for <b>Android</b> and <b>iOS monitoring</b>; at the same time, you don’t need it to launch <a class="a-default" href='http://{$domain}/icloud-iphone-without-jailbreak-monitoring.html'>iCloud monitoring</a></b>.
                             </p>
                         </div>
                     </div>

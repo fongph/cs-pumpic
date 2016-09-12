@@ -1122,7 +1122,7 @@
                                     </ul>
 
                                     <div class='block-info'>
-                                        <p>Keep track of <b>each keystroke typed</b> and every tap on the touchscreen of the target device. Follow <b>logins</b> and <b>passwords</b>, as well as texts written in browser in <b>incognito mode</b>. Monitor typed messages <b>in any app</b>.</p>
+                                        <p>Keep track of <b>each keystroke typed</b> and every tap on the touchscreen of the target device. Follow <b>logins</b> and <b>passwords</b>, as well as texts written in the browser in <b>incognito mode</b>. Monitor typed messages <b>in any app</b>.</p>
 
                                         <div><a class="btn-orange" target="_blank"  href="http://demo.{$domain}/setDevice/125?redirect_url=cp/keylogger">View Demo</a></div>
                                         <label class="color-orange">(no registration required)</label>
@@ -1178,7 +1178,7 @@
                                     </ul>
 
                                     <div class='block-info'>
-                                        <p>Control the target device remotely. <b>Lock</b> or <b>wipe</b> it out even <b>without Internet connection</b>. Manipulate the target smartphone or tablet <b>by sending text messages</b>.</p>
+                                        <p>Control the target device remotely. <b>Lock</b> or <b>wipe</b> it out even <b>without Internet connection</b>. Manipulate the target smartphone or tablet <b>by sending command text messages</b>.</p>
 
                                         <div><a class="btn-orange" target="_blank"  href="http://demo.{$domain}/setDevice/125?redirect_url=cp/smsCommands">View Demo</a></div>
                                         <label class="color-orange">(no registration required)</label>

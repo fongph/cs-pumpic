@@ -2,7 +2,7 @@
         <div class="container">
                 <h2 class="text-center">Useful Features for Every Careful Parent</h2>
                 <div class="row">
-                    
+
                     <div id="table-container" class="table-col-3 table-md-col-3 table-sm-col-3">
                         <h1 class="text-center">Pumpic app is a multifeature parental control application for mobile phones and tablets designed to protect all the family and prevent dangers your kids may face. It comes with more than 24 useful monitoring features, which cover as many parts of your kids’ lives as possible. Both online and during daily activities, our parental control app provides all-round protection and secures family happiness.</h1>
                         <h1 class="text-center">Are you a careful parent? Then ensure child safety with Pumpic and its useful features listed below.</h1>
@@ -37,9 +37,9 @@
                                 </ul>
                             </div>
                         </section>
-                        
-                    </div>    
-                    
+
+                    </div>
+
                 </div>
         </div>
 </div>*}
@@ -53,8 +53,8 @@
                             {if isset($description)}
                                 {$description}
                             {else}
-                                Pumpic app is a multifeature parental control application for mobile phones and tablets designed to protect all the family and prevent dangers your kids may face. It comes with more than 24 useful monitoring features, which cover as many parts of your kids’ lives as possible. Both online and during daily activities, our parental control app provides all-round protection and secures family happiness. Are you a careful parent? Then ensure child safety with Pumpic and its useful features listed below.
-                                {*Pumpic is reasonably improved mobile phone tracking software, which comes with a large range of monitoring functions. 
+                                Pumpic app is a multi-featured parental control application for mobile phones and tablets designed to protect the entire family and prevent dangers your kids may face both in the real and digital worlds. It comes with more than 24 useful monitoring features that cover as many parts of your kids’ lives as possible. Both online and during daily activities, our parental control app provides all-round protection and secures family well-being. Are you a careful parent? Then ensure child safety with Pumpic and its useful features listed below.
+                                {*Pumpic is reasonably improved mobile phone tracking software, which comes with a large range of monitoring functions.
                             They will help you keep track of the target device quickly and quite.*}
                             {/if}
                         </article>
@@ -104,11 +104,11 @@
                                 </ul>
                             </div>
                         </section>
-                        
+
                         <div class="text-center button-more-detailes">
                             <a href="/all-features.html" class="btn-gree" rel="nofollow">More Details</a>
                         </div>
-                        
+
                     </div>
                 </div>
         </div>

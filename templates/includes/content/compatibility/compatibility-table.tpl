@@ -2,22 +2,22 @@
 <div id="compatibility-table" class="{if isset($blockBg)}{$blockBg}{else}dark{/if} {if isset($lang)}b-c-table-{$lang}{/if}">
     <div class="container">
         <h2 class="text-center">{if isset($title)}{$title}{else}Compatibility{/if}</h2>
-    
+
         <div class="row">
 
             <div class="{if isset($onlyItem)}block-only-item col-md-4 col-lg-4{else}table-col-12 table-sm-col-3 table-sm-col-offset-3{/if} model-center">
                 {if isset($descriptions)}
                     <article>{$descriptions}</article>
                 {/if}
-                
+
                 <!-- left table #1 -->
                 {if !isset($onlyItem) || isset($onlyItem) && $onlyItem == "android"}
                 <div class="{if !isset($onlyItem)}{if isset($lang)}col-md-offset-2{/if} col-md-4 col-lg-4 padding-null{/if}">
 
                     <div id="block-compatibility-table" class="android-table">
 
-                        {if isset($lang) && $lang == "bra"} 
-                    
+                        {if isset($lang) && $lang == "bra"}
+
                             <div class="table-header">
                                 <section><span class="title">Android <i class="icon-android"></i></span></section>
                             </div> <!-- .table-header -->
@@ -37,9 +37,9 @@
 
                                 </div>
                             </div>
-                    
-                        {elseif isset($lang) && $lang == "de"} 
-                    
+
+                        {elseif isset($lang) && $lang == "de"}
+
                             <div class="table-header">
                                 <section><span class="title">Android <i class="icon-android"></i></span></section>
                             </div> <!-- .table-header -->
@@ -59,16 +59,16 @@
 
                                 </div>
                             </div>
-                            
+
                         {else}
-                        
+
                             <div class="table-header">
                                 <section><span class="title">Android <i class="icon-android"></i></span></section>
                             </div> <!-- .table-header -->
 
                             <div class="table-body">
                                 <div class="text-center">
-                                    <p>{if isset($androidText)}{$androidText}{else}Rooting is required to use some extended features{/if}</p>
+                                    <p>{if isset($androidText)}{$androidText}{else}Rooting is required to for extended functionality{/if}</p>
                                 </div>
                                 <div>
 
@@ -81,10 +81,10 @@
 
                                 </div>
                             </div>
-                            
+
                         {/if}
-                        
-                        
+
+
 
 
                     </div>
@@ -99,7 +99,7 @@
                     <div id="block-compatibility-table" class="ios-table">
 
                         {if isset($lang) && $lang == "bra"}
-                            
+
                             <div class="table-header">
                                 <section><span class="title">iOS <i class="icon-apple"></i></span></section>
                             </div> <!-- .table-header -->
@@ -119,9 +119,9 @@
 
                                 </div>
                             </div>
-                            
+
                         {elseif isset($lang) && $lang == "de"}
-                            
+
                             <div class="table-header">
                                 <section><span class="title">iOS <i class="icon-apple"></i></span></section>
                             </div> <!-- .table-header -->
@@ -141,9 +141,9 @@
 
                                 </div>
                             </div>
-                            
+
                         {else}
-                            
+
                             <div class="table-header">
                                 <section><span class="title">iOS <i class="icon-apple"></i></span></section>
                             </div> <!-- .table-header -->
@@ -163,22 +163,22 @@
 
                                 </div>
                             </div>
-                            
+
                         {/if}
-                        
+
                     </div>
 
 
                 </div>
                 {/if}
-                
+
                 {if (!isset($onlyItem) || isset($onlyItem) && $onlyItem == "icloud") && !isset($lang)}
                 <div class="{if !isset($onlyItem)}col-md-4 col-lg-4 padding-null{/if}">
 
                     <div id="block-compatibility-table" class="ios-table">
 
                         {if isset($lang) && $lang == "bra"}
-                            
+
                             <div class="table-header">
                                 <section><span class="title">monitoramento iCloud <i class="icon-icloud"></i></span></section>
                             </div> <!-- .table-header -->
@@ -198,9 +198,9 @@
 
                                 </div>
                             </div>
-                            
+
                         {elseif isset($lang) && $lang == "de"}
-                            
+
                             <div class="table-header">
                                 <section><span class="title">iCloud Überwachung <i class="icon-icloud"></i></span></section>
                             </div> <!-- .table-header -->
@@ -220,9 +220,9 @@
 
                                 </div>
                             </div>
-                            
+
                         {else}
-                            
+
                             <div class="table-header">
                                 <section><span class="title">iCloud monitoring <i class="icon-icloud"></i></span></section>
                             </div> <!-- .table-header -->
@@ -242,9 +242,9 @@
 
                                 </div>
                             </div>
-                            
-                        {/if}    
-                        
+
+                        {/if}
+
                     </div>
 
 
@@ -255,4 +255,4 @@
 
         </div>
     </div>
-</div> 
+</div>

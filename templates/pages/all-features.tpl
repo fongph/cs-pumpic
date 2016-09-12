@@ -606,7 +606,7 @@
                                         <li><i class='i-list-features-call'></i><strong>Calls</strong></li>
                                     </ul>
                                     <div class='block-info'>
-                                        <p>Follow <b>incoming</b> and <b>outgoing</b> call logs with precise contact data including <b>name</b>, <b>number</b>, <b>time</b> of the call and its <b>duration</b>. Find out, who reaches the target phone, at what time and for how long.</p>
+                                        <p>Follow <b>incoming</b> and <b>outgoing</b> call logs with precise contact data including <b>name</b>, <b>number</b>, <b>time</b> of the call and its <b>duration</b>. Find out who reaches the target phone, at what time and for how long.</p>
 
                                         <div><a class="btn-orange" target="_blank" href="http://demo.{$domain}/setDevice/125?redirect_url=cp/calls">View Demo</a></div>
                                         <label class="color-orange">(no registration required)</label>
@@ -629,7 +629,7 @@
                                         </li>
                                     </ul>
                                     <div class='block-info'>
-                                        <p>Monitor <b>sent</b>, <b>received</b>, and <b>deleted</b> text content of SMS, iMessages, and MMS. View data on both a sender and recipient. <b>Block</b> text messages by a <b>phone number</b>, <b>words</b>, or <b>phrases</b>. <b>Limit</b> a number of <b>texts sent daily</b>. </p>
+                                        <p>Monitor <b>sent</b>, <b>received</b>, and <b>deleted</b> text content of SMS, iMessages, and MMS. View data on both a sender and recipient. <b>Block</b> text messages by a <b>phone number</b>, <b>words</b>, or <b>phrases</b>. <b>Limit</b> the number of <b>texts sent daily</b>. </p>
                                         {*<ul>
                                             <li>Use Pumpic app to follow the entire call history of your</li>
                                             <li>child’s device. Protect your kids from mistrusted people.</li>
@@ -703,7 +703,7 @@
                                     </ul>
 
                                     <div class='block-info'>
-                                        <p>Keep track of <b>installed applications</b> on the target device. <b>Block</b> and <b>set time limits</b> on running particular apps installed on the target device.</p>
+                                        <p>Keep track of <b>applications installed</b> on the target device. <b>Block</b> and <b>set time limits</b> on running particular apps.</p>
 
                                         <div><a class="btn-orange" target="_blank" href="http://demo.{$domain}/setDevice/125?redirect_url=cp/applications">View Demo</a></div>
                                         <label class="color-orange">(no registration required)</label>
@@ -980,7 +980,7 @@
                                     </ul>
 
                                     <div class='block-info'>
-                                        <p>View <b>incoming</b>, <b>sent</b> and <b>deleted</b> emails. Find out precise communication data, including <b>names</b>, <b>addresses</b> and writing <b>time</b>. Monitor online correspondence, subscriptions and registrations.</p>
+                                        <p>View <b>incoming</b>, <b>sent</b> and <b>deleted</b> emails. Find out precise communication data, including <b>names</b>, <b>addresses</b> and writing <b>time</b>. Monitor online correspondence, subscriptions, and registrations.</p>
 
                                         <div><a class="btn-orange" target="_blank"  href="http://demo.{$domain}/setDevice/125?redirect_url=cp/emails">View Demo</a></div>
                                         <label class="color-orange">(no registration required)</label>
@@ -1122,7 +1122,7 @@
                                     </ul>
 
                                     <div class='block-info'>
-                                        <p>Keep track of <b>each keystroke typed</b> and every tap on the touchscreen of the target device. Follow <b>logins</b> and <b>passwords</b>, as well as words written in browser in <b>incognito mode</b>. Monitor texts written <b>in any app</b>.</p>
+                                        <p>Keep track of <b>each keystroke typed</b> and every tap on the touchscreen of the target device. Follow <b>logins</b> and <b>passwords</b>, as well as texts written in the browser in <b>incognito mode</b>. Monitor typed messages <b>in any app</b>.</p>
 
                                         <div><a class="btn-orange" target="_blank"  href="http://demo.{$domain}/setDevice/125?redirect_url=cp/keylogger">View Demo</a></div>
                                         <label class="color-orange">(no registration required)</label>
@@ -1178,7 +1178,7 @@
                                     </ul>
 
                                     <div class='block-info'>
-                                        <p>Control the target device remotely. <b>Lock</b> or <b>wipe</b> it out even <b>without Internet connection</b>. Manipulate the target smartphone or tablet <b>by sending text messages</b>.</p>
+                                        <p>Control the target device remotely. <b>Lock</b> or <b>wipe</b> it out even <b>without Internet connection</b>. Manipulate the target smartphone or tablet <b>by sending command text messages</b>.</p>
 
                                         <div><a class="btn-orange" target="_blank"  href="http://demo.{$domain}/setDevice/125?redirect_url=cp/smsCommands">View Demo</a></div>
                                         <label class="color-orange">(no registration required)</label>
@@ -1301,7 +1301,7 @@
                                     </ul>
 
                                     <div class='block-info'>
-                                        <p>Define and <b>set specific zones</b> on the <b>map</b>. <b>Receive notifications</b>, once the target device <b>leaves</b> or <b>enters</b> a restricted area.</p>
+                                        <p>Define and <b>set specific zones</b> on the <b>map</b>. <b>Receive notifications</b>, once the target device <b>leaves</b> a safe territory or <b>enters a restricted area</b>.</p>
 
                                         <div><a class="btn-orange" target="_blank"  href="http://demo.{$domain}/setDevice/125?redirect_url=cp/locations">View Demo</a></div>
                                         <label class="color-orange">(no registration required)</label>
@@ -1461,7 +1461,7 @@
 
                                     <div class='block-info'>
                                          <ul>
-                                            <li>Receive notifications on a SIM card change</li>
+                                            <li>Receive notifications when a SIM card is changed</li>
                                             <li>Reboot the target device or the applications remotely</li>
                                             <li>Protect Pumpic app with a password from being removed</li>
                                             <li>Lock the target device and control its activity remotely</li>

@@ -20,3 +20,4 @@ User-agent: Googlebot-Image
 Allow: /wp-content/uploads/
 
 Sitemap: http://pumpic.com/sitemap.xml
+Sitemap: http://pumpic.com/security/sitemap.xml

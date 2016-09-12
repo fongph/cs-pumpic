@@ -70,10 +70,7 @@
     blockBg='dark'}
        
         <p class="text-center f-light">
-            Since iPhones have hit the market in 2007, there are over 500 million devices sold. And sale performance grows rapidly 
-            until now, as well as figures of Apple smartphones stolen. That’s why upgrading your kid’s device with an app to monitor 
-            iPhone is a must-have security measure. With its help, you will easily locate, lock or wipe an iOS mobile phone remotely, 
-            if lost or stolen.
+            Since iPhones hit the market in 2007, there have been over 500 million devices sold, and sales have continued to grow rapidly, as well as the number of Apple smartphones stolen. That’s why upgrading your kid’s device with an app to monitor iPhone is an essential security measure. With its help, you will easily locate, lock or wipe an iOS mobile phone remotely, if lost or stolen.
         </p>
         
         <!-- BLOCK STATISTICK -->
@@ -83,7 +80,7 @@
                 <section>
                     <div><strong class="fz50 color-orange">44%</strong></div>
                     <span class="text-uppercase">
-                        of lost iPhones were simply left in public places
+                        lost iPhones were simply left in public places
                     </span>
                 </section>
             </div>
@@ -91,7 +88,7 @@
                 <section>
                     <div><strong class="fz50 color-orange">14%</strong></div>
                     <span class="text-uppercase">
-                        of stolen Apple devices were taken from a house or car
+                        stolen Apple devices were taken from a house or car
                     </span>
                 </section>
             </div>
@@ -99,7 +96,7 @@
                 <section>
                     <div><strong class="fz50 color-orange">11%</strong></div>
                     <span class="text-uppercase">
-                        of all stolen iOS smartphones were pickpocketed
+                        all stolen iOS smartphones were pickpocketed
                     </span>
                 </section>
             </div>
@@ -108,9 +105,7 @@
         <!-- END -->
 
         <p class="text-center f-light">
-            Nowadays iPhones are probably the most popular cell phones worldwide. It is hard to find a person, who would not 
-            like to have an ultramodern device by Apple. When it comes to kids and teenagers, iOS smartphones appear 
-            to be the top of the mind. To protect your child as well as an expensive gift, <a class="a-default" target="_blank" href="/how-to-setup-parental-controls-on-iphone.html">use iPhone monitoring software</a>:
+            Nowadays, iPhones are probably the most popular cell phones worldwide. It is hard to find a person who would not like to have an ultramodern device by Apple. When it comes to kids and teenagers, iOS smartphones appear to be the top of the mind. To protect your child as well as an expensive gift, <a class="a-default" target="_blank" href="/how-to-setup-parental-controls-on-iphone.html">use iPhone monitoring software</a>:
         </p>
         
         <!-- BLOCK LIST -->
@@ -219,11 +214,7 @@
                                         
 {include file='../includes/content/features-table.tpl'
         title = "Parental Control Features by Pumpic"
-        description = "Your children live their full lives and mobile devices help them explore the world around. Photo and video 
-                            shooting, distant communication, mailing, game playing and social connections are some of options these gadgets 
-                            provide. Pumpic covers all spheres of your kids’ activity and enables you to take care of them remotely. 
-                            The features listed below show the variety of iPhone parental control abilities, which will let you secure your 
-                            children’s happiness."
+        description = "Your children live their full lives, and mobile devices help them explore the world around. Photo and video shooting, remote communication, emailing, gaming, and social connections are some of the options these gadgets provide. Pumpic covers all spheres of your kids’ activity and enables you to take care of them remotely. The features listed below show the variety of iPhone parental control abilities, which will let you secure your children’s well-being."
         blockBg="dark"
 }                                        
                                         
@@ -288,33 +279,32 @@
     title="Keep Your Eyes Open"
     blockBg='light'}
     <p>As a parent, you always take care of your kids and do your best to protect them from any possible danger. However, when they grow up and get stronger day by day, you become less and less engaged in their lives. Meanwhile, your children become more and more independent.</p>
-    <p>Nevertheless, no matter how old and independent your kids are, they will always remain the same in your eyes. You will always try to be there, when help is needed; provide support and assistance whatever it will take.</p>
-    <p>To be at hand each and every moment, you give your kid a cell phone. From now on, this small device will define your communication and interaction. In addition, it will open larger horizons for your little child; will show him/her the world as it is or should be, and help explore it through online reality.</p>
+    <p>Nevertheless, no matter how old and independent your kids are, they will always remain the same in your eyes. You will always try to be there when help is needed; provide support and assistance whatever it will take.</p>
+    <p>To be at hand each and every moment, you give your kid a cell phone. From now on, this small device will define your communication and interaction. Also, it will open larger horizons for your little child; it will show him/her the world as it is or should be, and help explore it through online reality.</p>
     
     <ul class="list-content">
-        <li class="img-plus"><img src="{$img}/list/plus.png" width="30" height="29" alt="Mobile Phone Benefits">If you still hesitating to give or not to give your child a mobile phone, note that there 
-            really are a lot of benefits:
+        <li class="img-plus"><img src="{$img}/list/plus.png" width="30" height="29" alt="Mobile Phone Benefits">If you still hesitate whether to give your child a mobile phone or not, note that this step can bring many benefits:
             <ul class="list-green">
                 <li><img class="l-phone" width="24" height="22" src="{$img}/list/l-g-1.png" alt="Be Within a Call" /> you will always be within a call and know what happens to your kid;</li>
                 <li><img class="l-messange" width="24" height="20" src="{$img}/list/l-g-2.png" alt="Children Communication" /> your child will be able to stay up to date and communicate with his friends and relatives;</li>
-                <li><img class="l-social" width="19" height="19" src="{$img}/list/l-g-3.png" alt="Online Connection" /> having online connection your kid will always stay tuned and current;</li>
-                <li><img class="l-write" width="19" height="19" src="{$img}/list/l-g-4.png" alt="Daily Task Schedule" /> smartphones can help kids perform and follow their daily tasks;</li>
-                <li><img class="l-study" width="22" height="17" src="{$img}/list/l-g-5.png" alt="Learning Online" /> modern mobile phones help children advance their skills, and thus, determine their future profession.</li>
+                <li><img class="l-social" width="19" height="19" src="{$img}/list/l-g-3.png" alt="Online Connection" /> with the online connection, your kid will always stay tuned and current;</li>
+                <li><img class="l-write" width="19" height="19" src="{$img}/list/l-g-4.png" alt="Daily Task Schedule" /> smartphones can help kids perform better and follow their daily tasks;</li>
+                <li><img class="l-study" width="22" height="17" src="{$img}/list/l-g-5.png" alt="Learning Online" /> modern mobile phones help children advance their skills, and thus, affect the choice of their future profession.</li>
             </ul>
         </li>
-        <li class="img-minus"><img src="{$img}/list/minus.png" width="30" height="29" alt="Cell Phone Issues">On the other hand, together with mobility and opportunities there come some issues:
+        <li class="img-minus"><img src="{$img}/list/minus.png" width="30" height="29" alt="Cell Phone Issues">On the other hand, together with mobility and opportunities there are some issues to be considered:
             <ul class="list-red">
-                <li><img class="l-mobile" width="18" height="21" src="{$img}/list/l-r-1.png" alt="Online Predators" /> mobile swindlers and online predators might attack your kid through the web;</li>
+                <li><img class="l-mobile" width="18" height="21" src="{$img}/list/l-r-1.png" alt="Online Predators" /> mobile swindlers and online predators might attack your kid through the Web;</li>
                 <li><img class="l-play" width="22" height="22" src="{$img}/list/l-r-2.png" alt="Excessive Gaming" /> your kid might waste a lot of time playing games, chatting online, or using social networks;</li>
-                <li><img class="l-smile" width="19" height="19" src="{$img}/list/l-r-3.png" alt="Explicit Internet Content" /> your child might strike inappropriate content in the Internet: watch videos containing 18+ content, read articles with bad words or messages with threats etc.;</li>
-                <li><img class="l-close" width="19" height="19" src="{$img}/list/l-r-4.png" alt="Harmful Web Activity" /> your kid might be involved in activity you would not approve: commit a crime, form connections with a sect or be forced to go the limit;</li>
-                <li><img class="l-list" width="19" height="19" src="{$img}/list/l-r-5.png" alt="Drugs Online" /> your child might fall under bad influence and start using drugs or alcohol.</li>
+                <li><img class="l-smile" width="19" height="19" src="{$img}/list/l-r-3.png" alt="Explicit Internet Content" /> your child might strike inappropriate content on the Internet: watch videos containing 18+ content, read articles with bad words or messages with threats, etc.;</li>
+                <li><img class="l-close" width="19" height="19" src="{$img}/list/l-r-4.png" alt="Harmful Web Activity" /> your kid might become involved in an activity you would not approve: commit a crime, form connections with a sect or be forced to go the limit;</li>
+                <li><img class="l-list" width="19" height="19" src="{$img}/list/l-r-5.png" alt="Drugs Online" /> your child might fall under the bad influence and start using drugs or alcohol.</li>
             </ul>
         </li>
     </ul>
 
-    <p>However, the real world hides not less dangers that it does online. On any hand, there is a possibility to control your children’s lives on the web. Pumpic sets parental control on your kid’s cell phone and monitors every step he or she takes as well as each decision made via a smartphone or tablet.</p>
-    <p>Nowadays your responsibility is not to take your kid’s mobile phone away to protect him, or forbid doing things you do not approve. All you need is to keep your eyes open, <a class="a-default" href="/internet-filter-for-iphone.html">sort out the content</a> your kid sees, and take action, when the situation requires. Thus, if you have decided to present your child an iPhone, learn more about iOS monitoring for kids.</p>
+    <p>However, the real world hides no fewer dangers than the online one does. Anyway, there is a possibility to control your children’s lives on the Web. Pumpic sets parental control on your kid’s cell phone and monitors every step he or she takes as well as each decision made via a smartphone or tablet.</p>
+    <p>Nowadays, your responsibility as a parent is not to take your kid’s mobile phone away to protect him or forbid doing things you do not approve. All you need is to keep your eyes open, <a class="a-default" href="/internet-filter-for-iphone.html">sort out the content</a> your kid sees, and take action when the situation requires. Thus, if you have decided to present your child an iPhone, learn more about iOS monitoring for kids.</p>
 
 
 {EndContent}
@@ -335,21 +325,21 @@
                             <img src="{$img}/testimonials/t_new_19.png" alt="" class="testimonial-photo">
                             <div class="testimonial-text">
                                     <h4>Joan L. (Omaha, NE)</h4>
-                                    <p>“The app helps me control my children, while I’m at work. I have to work overtime to support my family, that’s why my kids are on their own more often than not. With Pumpic, I’m sure they are safe. I know that wherever my kids go and whatever they do, they take their cells with them. So, I can track them, find out who calls or writes them, how much time they spend online and for which purposes. I suppose it is one of the most useful apps I’ve ever used.”</p>
+                                    <p>“The app helps me control my children, while I’m at work. I have to work overtime to support my family; that’s why my kids are on their own more often than not. I know that wherever my kids go, they take their cells with them. So, I can track them, find out who calls them, how much time they spend online and for which purposes. Also, Pumpic lets me monitor texts on iPhone. I suppose it is one of the most useful apps I’ve ever used.”</p>
                             </div>
                     </div>
                     <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
                             <img src="{$img}/testimonials/t_new_20.png" alt="" class="testimonial-photo">
                             <div class="testimonial-text">
                                     <h4>Katy O. (Reno, NV)</h4>
-                                    <p>“I presented my daughter an iPhone for her last birthday and installed apple parental control right after the purchase. Frankly, it is amazing! I can see how good my daughter is. I can see that she never visits bad websites, never answers strange people, who contact her on Facebook. The app helps be sure that even when I’m far away, my daughter is safe. I can trust her more than ever. And this is the most precious thing I’ve ever had.”</p>
+                                    <p>“I presented my daughter an iPhone for her last birthday and installed Apple parental control right after the purchase. Frankly, it is amazing! I can see how good my daughter is. Now I know that she never visits bad websites, never answers strange people who contact her on Facebook. The app helps me be sure that even when I’m far away, my daughter is safe. I can trust her more than ever. And this is the most precious thing I’ve ever had.”</p>
                             </div>
                     </div>
                     <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
                             <img src="{$img}/testimonials/t_new_21.png" alt="" class="testimonial-photo">
                             <div class="testimonial-text">
                                     <h4>Morgana H. (San Angelo, TX)</h4>
-                                    <p>“The app helped me find out that my son started smoking and sometimes drank beer with his friends. I am a single mom, and thus work days and nights to keep my son and little daughter. I can read his text messages, his social media communication, know who calls him and why. That’s a great help for me. Thanks!”</p>
+                                    <p>“The app helped me find out that my son started smoking and sometimes drank beer with his friends. I am a single mom, and thus work days and nights to keep my son and little daughter. With Pumpic iPhone parental monitoring, text messages my son sends and receives are no longer a secret for me. I can read his SMS, his social media communication, know who calls him and why. That’s a great help for me. Thanks!”</p>
                             </div>
                     </div>
                             

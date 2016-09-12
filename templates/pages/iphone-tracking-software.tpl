@@ -98,7 +98,7 @@
                                   <li href="#" class="list-group-item">
                                     <p class="list-group-item-text">
                                         <span class="title"><i class="icon-cancel text-gray"></i> iCloud Password - <span class="text-gray">Not Required</span></span>
-                                        <span>You do not need to know iCloud password of the target iOS device.</span>
+                                        <span>You do not need to know the iCloud password of the target iOS device.</span>
                                     </p>
                                   </li>
                                   <li href="#" class="list-group-item">

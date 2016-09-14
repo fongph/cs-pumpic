@@ -511,7 +511,7 @@
 												<a id="other" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse37">Do you have a smartphone app for your Control Panel?</a>
 												<div id="collapse37" class="collapse">
                                                                                                     <div>
-													<p>Yes, there is a separate free mobile application for the Control Panel of Pumpic Mobile Monitoring. Currently, it is available for Android smartphones only and limited to the following features: Call Logs, Text Messages, Location, Browser History, Contacts, Remote Device Reboot, Remote App Reboot, and Remote Device Lock. However, you can still access a full version of your Control Panel by using any browser at cp.pumpic.com.</p>
+													<p>Yes, there is a separate free mobile application for the Control Panel of Pumpic Mobile Monitoring. It is available both for iOS and Android smartphones and limited to the following features: Call Logs, Text Messages, Location, Browser History, Contacts, Remote Device Reboot, Remote App Reboot, and Remote Device Lock. However, you can still access a full version of your Control Panel by using any browser at cp.pumpic.com.</p>
 													<p>To use Pumpic Control Panel Mobile App, you must have your Pumpic account connected to the target device. Internet connection is also required for updates of the monitored information.</p>
                                                                                                     </div>
                                                                                                   </div>

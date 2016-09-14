@@ -130,9 +130,17 @@
 
             <div class="item col-s-sm-12 col-xs-sm-12 col-sm-4 col-md-4 col-lg-4">
                 <section>
-                    <div><strong class="fz50 color-orange">84%</strong></div>
+                    <div><strong class="fz50 color-orange">91%</strong></div>
                     <span class="text-uppercase">
-                        teenagers go online using smartphones and other mobile devices. Choosing a proper parental control you are sure your kid is not exposed to anything inappropriate online.
+                        teens go online using mobile devices. A proper parental control ensures that your kid is not exposed to anything inappropriate online.
+                    </span>
+                </section>
+            </div>
+			<div class="item col-s-sm-12 col-xs-sm-12 col-sm-4 col-md-4 col-lg-4">
+                <section>
+                    <div><strong class="fz50 color-orange">46%</strong></div>
+                    <span class="text-uppercase">
+                        teens play games on mobile devices. This number is only expected to grow as games are going more mobile and phones are becoming more powerful.
                     </span>
                 </section>
             </div>
@@ -141,14 +149,6 @@
                     <div><strong class="fz50 color-orange">46%</strong></div>
                     <span class="text-uppercase">
                         parents limit kids’ time on the Internet due to various reasons. App blocking and limiting is easier with high-quality parental control apps.
-                    </span>
-                </section>
-            </div>
-			<div class="item col-s-sm-12 col-xs-sm-12 col-sm-4 col-md-4 col-lg-4">
-                <section>
-                    <div><strong class="fz50 color-orange">72%</strong></div>
-                    <span class="text-uppercase">
-                        teenagers go online using smartphones and other mobile devices. Choosing a proper parental control you are sure your kid is not exposed to anything inappropriate online.
                     </span>
                 </section>
             </div>

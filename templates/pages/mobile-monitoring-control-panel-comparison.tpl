@@ -334,7 +334,7 @@ description="Learn the difference between the Standard Pumpic Control Panel and 
 
                     <p class="free-pumpic-control">Download FREE Control Panel<br>Mobile App now!</p>
                     <div class="apps-block">
-                        <a target="_blank" href="https://itunes.apple.com/us/app/pumpic-control-panel/id1126835967">
+                        <a class="ga-action-click" ga-category="Mobile App Buttons" ga-action="click" ga-label="Control Panel Comparison: Desktop vs. Mobile App(Apple)"  target="_blank" href="https://itunes.apple.com/us/app/pumpic-control-panel/id1126835967">
                         <img src="images/icon-app-store-black.png" alt="Pumpic Parental Monitoring on App Store">
                         </a>
                         <a class="ga-action-click" ga-category="Mobile App Buttons" ga-action="click" ga-label="Control Panel Comparison: Desktop vs. Mobile App" target="_blank" href="https://play.google.com/store/apps/details?id=com.pumpic.mobile.monitoring&referrer=utm_source%3Dpumpic.com%26utm_medium%3Dreferral%26utm_campaign%3Dcontrol-panel-comparison-landing">

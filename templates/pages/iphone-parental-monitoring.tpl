@@ -110,17 +110,22 @@
         
         <!-- BLOCK LIST -->
         <div class="row pt15">
-            <div class="padding-null col-sm-4 col-md-4 col-lg-4">
+            <div class="padding-null col-sm-3 col-md-3 col-lg-3">
                 <ul class="block-list">
                     <li><i class="item-list-css-orange"></i> control mobile phone usage</li>
                 </ul>
             </div>
-            <div class="padding-null col-sm-4 col-md-4 col-lg-4">
+            <div class="padding-null col-sm-3 col-md-3 col-lg-3">
+                <ul class="block-list">
+                    <li><i class="item-list-css-orange"></i> <a class="a-default" href="/monitor-imessage.html">view iMessage</a>, SMS, and MMS</li>
+                </ul>
+            </div>
+			<div class="padding-null col-sm-3 col-md-3 col-lg-3">
                 <ul class="block-list">
                     <li><i class="item-list-css-orange"></i> monitor Internet activity</li>
                 </ul>
             </div>
-            <div class="padding-null col-sm-4 col-md-4 col-lg-4">
+            <div class="padding-null col-sm-3 col-md-3 col-lg-3">
                 <ul class="block-list">
                     <li><i class="item-list-css-orange"></i> follow location and route history</li>
                 </ul>

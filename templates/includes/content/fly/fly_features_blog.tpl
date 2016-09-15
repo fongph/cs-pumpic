@@ -4,7 +4,7 @@
         <div id="fly_top">
             <h2 id="fly-features-h2" class="text-yellow">NEW!</h2>
             <p class="fly-label">iCloud monitoring</p>
-            <p><span class="fly-versions"><span class="icon-apple-fly"></span> iOS 6.0 - 9.3.5</span></p>
+            <p><span class="fly-versions"><span class="icon-apple-fly"></span> iOS 6.0 - 10</span></p>
             <p class="text-yellow last" style="font-size: 13px;">No Jailbreak Solution!</p>
             <a class="features-button ga-action-click"  ga-category="Fly Banner"  ga-action="click" ga-label="iOS 9+ iCloud Update - Button" href="/icloud-iphone-without-jailbreak-monitoring.html">See Details</a>
         </div>

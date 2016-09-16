@@ -251,7 +251,7 @@
 	{include file='../includes/main/main-analytics-footer.tpl'}
 
     <script type="text/javascript">
-        
+
         {*var Devices = {
             imgPath: 'http://{$api_device._domain}/{$api_device.path_img}/',
             $titleBlock:  $('.result-title'),
@@ -259,20 +259,20 @@
             $paginationBlock: $('.box-navigations'),
             $log: $('#log'),
             search: function(request, params){
-    
+
                 Devices.$titleBlock.html('');
                 Devices.$resBlock.html('');
                 Devices.$paginationBlock.html('');
                 Devices.$log.html('');
-    
+
                 $.get('/compatibility/', request, function(result){
-    
+
                     if(Number(result.count) > 0) {
                         Devices.$titleBlock.html(params.title);
                         $.each(result.list, function(i, deviceData){
                             Devices.$resBlock.append(Devices.getRenderDeviceItem(deviceData))
                         });
-    
+
                         if(Number(result.count) > 12){
                             Devices.$paginationBlock.pagination({
                                 currentPage: Number(request.page)+1,
@@ -284,11 +284,11 @@
                                     Devices.search(request, params);
                                 }
                             });
-    
+
                         } else Devices.$paginationBlock.html('');
-    
+
                     } else Devices.$log.html(params.hasOwnProperty('notFound') ? params.notFound : 'No results were found. In case of any questions, contact us using the form below.');
-    
+
                 });
             },
             getRenderDeviceItem: function(devData) {
@@ -305,14 +305,14 @@
                         '</div>' +
                         '</div>';
             }
-    
+
         };
         $('.search-category').on('click', function(){
             var request = $(this).data();
             var params = {
                 title: "All " + request.os + " phones"
             };
-    
+
             Devices.search(request, params);
             return false;
         }); *}

@@ -39,13 +39,12 @@ if(isset($_SERVER['HTTP_X_REQUESTED_WITH']) && !empty($_SERVER['HTTP_X_REQUESTED
     // init output params
     $smarty->display($b_dir.'/templates/json/compatibility_json.tpl');
 } else {
-    
     // validate
     if(isset($_POST['name']) and empty($_POST['name']))
         $_result['error']['name'] = "The Name field is empty";
     
     if(isset($_POST['device-model']) and empty($_POST['device-model']))
-        $_result['error']['device-model'] = "The Name field is empty";
+        $_result['error']['device-model'] = "The Device field is empty";
 
     if(isset($_POST['email']) and !$_mail->validateEmail($_POST['email'])) 
        $_result['error']['email'] = "The Email field is empty";

@@ -1028,9 +1028,13 @@ $(document).ready(function () {
             required: true,
             email: true
         },
+        name: {
+            required: true
+        },
         messages: {
             'captcha': "Invalid CAPTCHA.", // The CAPTCHA field is empty.
-            name: "The Device Model field is empty",
+            name: "The Name field is empty",
+            'device-model': "The Device Model field is empty",
             email: {
                 required: "The Email field is empty",
                 email: "Invalid email format"

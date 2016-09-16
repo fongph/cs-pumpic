@@ -250,7 +250,7 @@
                                        >Free Trial</a>
                                     </li>*}
                                 </ul>
-                                <a href="#icloud" class="learn-about-link" >Learn more about iCloud monitoring (Jailbreak-Free up to iOS 10)</a>
+                                <a href="#icloud" class="learn-about-link" >Learn more about iCloud monitoring (Jailbreak-Free up to iOS 10.0.1)</a>
                                 <p>Enjoy more than <strong>20 features</strong> of <strong>remote mobile tracking</strong> with Pumpic.</p>
                                 <p>View, track and block mobile activity remotely with Pumpic.<br class='only-mobile' />
                                     Keep your eyes open!

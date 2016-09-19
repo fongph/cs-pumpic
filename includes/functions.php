@@ -30,7 +30,7 @@ function dispatch($urlParams, $config){
     }
 
     // 404 redirect
-    if(preg_match('/\/compatibility\/\?page=(.*)/is', $_SERVER['REQUEST_URI'])) {
+    if(preg_match('/\/compatibility\/\?page=(.*)/is', $_SERVER['REQUEST_URI']) ||  preg_match('/\/compatibility\/\?=(.*)/is', $_SERVER['REQUEST_URI'])) {
         header404();
         $smarty->display('404.tpl');
         die;

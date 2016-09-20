@@ -201,7 +201,7 @@ description="Pumpic offers high-quality Cell Phone Tracking Software for a good 
                                                         <li data-toggle="tooltip" data-placement="top" title="View all visited websites.<br><b>Android 6.0 and newer vesions: Root Required</b>"><i class="icon-ok"></i> Browsing history</li>
                                                         <li data-toggle="tooltip" data-placement="top" title="Block specific websites on a target device."><i class="icon-ok"></i> Websites blocking</li>
 
-                                                        <li data-toggle="tooltip" data-placement="top" title="View all websites visited and bookmarked as preferred ones."><i class="icon-ok"></i> Bookmarks</li>
+                                                        <li data-toggle="tooltip" data-placement="top" title="View all websites visited and bookmarked as preferred ones.<br><b>iCloud Monitoring up to iOS 8.4.1</b>"><i class="icon-ok"></i> Bookmarks</li>
                                                         <li data-toggle="tooltip" data-placement="top" title="View all photos stored on a device."><i class="icon-ok"></i> Photos</li>
 
                                                         <li data-toggle="tooltip" data-placement="top" title="View all emails and detailed contact data. <div class='br'><strong>Android: Root Required</strong></div>"><i class="icon-ok"></i> Emails</li>
@@ -214,7 +214,7 @@ description="Pumpic offers high-quality Cell Phone Tracking Software for a good 
                                                         <li data-toggle="tooltip" data-placement="top" title="Track chats and calls on Viber. <div class='br'><strong>Android: Root Required</strong></div>"><i class="icon-cancel"></i> Viber</li>
                                                         <li data-toggle="tooltip" data-placement="top" title="Track conversations via Kik.<div class='br'><strong>Android: Root Required</strong></div>"><i class="icon-cancel"></i> Kik</li>
                                                         <li data-toggle="tooltip" data-placement="top" title="Monitor posted images and comments on Instagram. <div class='br'><strong>Android: Root Required</strong></div>"><i class="icon-cancel"></i> Instagram</li>
-                                                        <li data-toggle="tooltip" data-placement="top" title="Monitor Snapchat photos, videos, and comments. <div class='br'><strong>Android: Root and Xposed Required</strong></div>"><i class="icon-cancel"></i> Snapchat</li>
+                                                        <li data-toggle="tooltip" data-placement="top" title="Monitor Snapchat chat messages. <div class='br'><strong>Android: Root Required</strong></div>"><i class="icon-cancel"></i> Snapchat</li>
                                                         <li data-toggle="tooltip" data-placement="top" title="Track chats and calls on Facebook. <div class='br'><strong>Android: Root Required</strong></div>"><i class="icon-cancel"></i> Facebook{*Messages*}</li>
                                                         <li data-toggle="tooltip" data-placement="top" title="View all the previouse data ever stored on a device."><i class="icon-cancel"></i> Historical data</li>
                                                         <li data-toggle="tooltip" data-placement="top" title="Control devices remotely.<div class='br'><strong>Not supported: Android 5.0 and higher.</strong></div>"><i class="icon-cancel"></i> SMS commands
@@ -349,7 +349,7 @@ description="Pumpic offers high-quality Cell Phone Tracking Software for a good 
                                                         <li data-toggle="tooltip" data-placement="top" title="View all visited websites.<br><b>Android 6.0 and newer vesions: Root Required</b>"><i class="icon-ok"></i> Browsing history <img src="/images/cloud-grey.png"></li>
                                                         <li data-toggle="tooltip" data-placement="top" title="Block specific websites on a target device."><i class="icon-ok"></i> Websites blocking</li>
 
-                                                        <li data-toggle="tooltip" data-placement="top" title="View all websites visited and bookmarked as preferred ones."><i class="icon-ok"></i> Bookmarks <img src="/images/cloud-grey.png"> </li>
+                                                        <li data-toggle="tooltip" data-placement="top" title="View all websites visited and bookmarked as preferred ones.<br><b>iCloud Monitoring up to iOS 8.4.1</b>"><i class="icon-ok"></i> Bookmarks <img src="/images/cloud-grey.png"> </li>
                                                         <li data-toggle="tooltip" data-placement="top" title="View all photos stored on a device."><i class="icon-ok"></i> Photos <img src="/images/cloud-grey.png"></li>
 
                                                         <li data-toggle="tooltip" data-placement="top" title="View all emails and detailed contact data. <div class='br'><strong>Android: Root Required</strong></div>"><i class="icon-ok"></i> Emails</li>
@@ -365,7 +365,7 @@ description="Pumpic offers high-quality Cell Phone Tracking Software for a good 
 
 
                                                         <li data-toggle="tooltip" data-placement="top" title="Monitor posted images and comments on Instagram. <div class='br'><strong>Android: Root Required</strong></div>"><i class="icon-ok"></i> Instagram</li>
-                                                        <li data-toggle="tooltip" data-placement="top" title="Monitor Snapchat photos, videos, and comments.<br><strong>Android: Root and Xposed Required</strong></div>"><i class="icon-ok"></i> Snapchat</li>
+                                                        <li data-toggle="tooltip" data-placement="top" title="Monitor Snapchat chat messages.<br><strong>Android: Root Required</strong></div>"><i class="icon-ok"></i> Snapchat</li>
                                                         <li data-toggle="tooltip" data-placement="top" title="Track chats and calls on Facebook. <div class='br'><strong>Android: Root Required</strong></div>"><i class="icon-ok"></i> Facebook{*Messages*}</li>
                                                         <li data-toggle="tooltip" data-placement="top" title="View all the previouse data ever stored on a device."><i class="icon-ok"></i> Historical data <img src="/images/cloud-grey.png"></li>
                                                         <li data-toggle="tooltip" data-placement="top" title="Control devices remotely.<div class='br'><strong>Not supported: Android 5.0 and higher.</strong></div>"><i class="icon-ok"></i> SMS commands

@@ -30,16 +30,17 @@ function dispatch($urlParams, $config){
     }
 
     // 404 redirect
-    if(preg_match('/\/compatibility\/\?page=(.*)/is', $_SERVER['REQUEST_URI'])) {
+    if(preg_match('/\/compatibility\/\?page=(.*)/is', $_SERVER['REQUEST_URI']) ||  preg_match('/\/compatibility\/\?(.*)/is', $_SERVER['REQUEST_URI'])) {
         header404();
         $smarty->display('404.tpl');
         die;
     }
     
-    try {      
+    try {
+
         if (isset($config['php_compile'][$urlParams['uri']])) {
             include $config['php_compile'][$urlParams['uri']];
-        } elseif(preg_match("/^\/compatibility\/(.+)\/$/", $_SERVER['REQUEST_URI'], $matches)) {
+        } elseif(preg_match("/^\/compatibility\/(.+)$/", $_SERVER['REQUEST_URI'], $matches) && !preg_match("/^\/compatibility\/(.+)\/(.+)/", $_SERVER['REQUEST_URI'], $matches)) {
             $_GET['model'] = $matches[1];
             include 'compatibility_device.php';
         } else {

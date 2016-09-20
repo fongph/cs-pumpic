@@ -97,7 +97,6 @@ $_result = array(
     );
 
 if(isset($_POST['submit']) and $_POST['submit']) {
-
     
     // validate
     if(isset($_POST['device-model']) and empty($_POST['device-model']))

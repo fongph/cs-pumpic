@@ -1,5 +1,5 @@
 {include file='../includes/main/main-header.tpl'
-    robots="yes" 
+    robots="no"
     title="Rastreador de celular | Pumpic"
     description="Pumpic rastreador de celular. Espiao movel e compativel com todos os dispositivos IOS e Android."
 }    

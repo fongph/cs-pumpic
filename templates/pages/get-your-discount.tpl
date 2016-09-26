@@ -1,7 +1,7 @@
 {strip}
 
 {include file='../includes/main/main-header.tpl'
-    robots="yes" 
+    robots="no"
     title="Get your 50% discount on your first purchase!"
     description="Thank you for choosing pumpic.com"
 }

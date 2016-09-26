@@ -1,4 +1,4 @@
-<div class="fly-features-v2 fly-features-v1">
+<div class="fly-features-v2 fly-features-v1" style="display: none;">
     <div id="fly_features">
         <span class="fly_close close"></span>
         <div id="fly_top">

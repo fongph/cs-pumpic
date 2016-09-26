@@ -39,10 +39,11 @@
             imgVerticalAlign = "bottom"
             textAlign = "right"
             title = "Monitor Snapchat<br/>on Mobile Devices"
-            description = "Track Snapchat videos and photos<br/>to protect your kid from online dangers"
+            description = "Track Snapchat text messages<br/>to protect your kid from online dangers"
             promoBuyBlock = "no"
             listText = "control cell phone usage|follow online activity|track routes and location"
             planPackageBuy = "yes"
+            Icloud = "no"
           }
           {* ?rel=0&wmode=transparent&fs=0&autoplay=1&modestbranding=1&autohide=1 *}
          {*listText = "control cell phone usage|follow online activity|track routes and location"*}    
@@ -102,55 +103,15 @@
         </div>
         <!-- END -->
 		
-        <p>As you can see, many teens love Snapchat simply because they consider it as a mean of carrying on private conversations escaping “unnecessary” parents’ attention. Generally, kids use it to exchange jokes, funny pictures and videos without commonly adopted feedback similar to Facebook “likes” or comments.</p>
-		<p>At the same time, Snapchat’s peculiar feature of photos and videos that vanish in a matter of seconds makes the app an opportune tool for online predators and pedophiles. That’s why having Snapchat monitoring software installed on kids’ mobile devices is what every concerned parent should do.</p>
-
-        {*<p>Using monitoring software to protect kids is an urgent issue of contemporary society.
-        On one hand, technological progress opened new doors for the evolution of humanity; on the other one, it has
-        resulted in a lot of dangers in return. And children are exposed to these dangers much more than others.</p>
-        <ul>
-		    <li>72% of children worldwide use smartphones, 33% of them are under 8 years old</li>
-            <li>23% of teenagers report that they feel addicted to games on mobile devices</li>
-            <li>69% of boys and girls under 18 have experienced cyberbullying via mobile phones</li>
-		</ul>
-        <p>As a parent you should always keep the situation under control, be aware of possible threats coming from the Internet,
-        how to resist it, and if a reliable Android parental monitoring app can be the way out:</p>
-
-        <ul>
-            <li>control cell phone usage</li>
-            <li>follow online activity</li>
-            <li>track routes and location</li>
-        </ul>*}
-
-        {* Template: BLOCK IMAGE
-            blockAlign (text): позиция блока с изображением. (left|center|right) *default: center
-
-            imgUrl (text): путь к изображению. *ОБЯЗАТЕЛЬНОЕ ПОЛЕ
-            imgAlt (text): подпись к изображению.
-            // размер изображения
-            imgWidth (text): ширина изображения *ОБЯЗАТЕЛЬНОЕ ПОЛЕ
-            imgHeight (text): высота изображения *ОБЯЗАТЕЛЬНОЕ ПОЛЕ
-            // Подпись к изображению
-            captionText (text): подпись к изображению
-        *}
-        {*include file='../includes/content/block/image.tpl'
-                blockAlign = 'center'
-
-                imgUrl = 'parental_control/bg_famaly_mobile.png'
-                imgAlt = 'Alt Test image 1'
-                imgWidth = '537'
-                imgHeight = '312'
-
-                captionText = 'Caption test image 1 Caption test image 1 Caption test image 1 Caption test image 1'
-        *}
-
-        {EndContent}
+        <p>As you can see, many teens love Snapchat simply because they consider it as a mean of carrying on private conversations escaping “unnecessary” parents’ attention. Generally, kids use it to exchange messages, jokes, funny pictures, and videos without commonly adopted feedback similar to Facebook “likes” or comments.</p>
+		<p>At the same time, Snapchat’s peculiar feature of messages that vanish in a matter of seconds makes the app an opportune tool for online predators and pedophiles. That’s why having Snapchat monitoring software installed on kids’ mobile devices is what every concerned parent should do. Although due to Snapchat's technical specifications, tracking multimedia files is now impossible, we still recommend keeping an eye on at least text messages to give you the sense of what kids talk about.</p>
+{EndContent}
 		
 {Content 
     styleTitle="h2"
     title="Critical Reasons for Snapchat Parental Monitoring"
     blockBg='light'}
-    <p>In Snapchat, short ”snaps” (2-10 seconds) are quickly deleted after the user looked them through, and there’s no log of their correspondence. This makes many teens feel that interactions in Snapchat are “safe” and they may send pictures and messages that they would not otherwise send if their activity could be tracked. These are the most important reasons why following kids’ Snapchat activity must be practiced:</p>
+    <p>In Snapchat, short ”snaps” (2-10 seconds) are quickly deleted after the user looked them through, and there’s no log of their correspondence. This makes many teens feel that interactions in Snapchat are “safe” and they may send messages that they would not otherwise send if their activity could be tracked. These are the most important reasons why following kids’ Snapchat activity must be practiced:</p>
     <ul class="list-images">
         <li><img src="{$img}/list/monitor-snapchat_bullet1.png" alt="Sexting. Explicit Content" class="lc-3" /><strong>Sexting.</strong> To prevent sexting, that is sending sexually explicit messages and pictures. The issue is of particular importance because over one-third of Snapchat users are under the age of 18, and online predators try to take advantage of it. By pretending to be somebody they aren't, they gain kids' confidence in an underhand way.</li>
         <li><img src="{$img}/list/monitor-snapchat_bullet2.png" alt="Cyberbullying" class="lc-2" /><strong>Cyberbullies.</strong> To avert cyberbullies who enjoy the feeling of impunity for sending hateful messages to their victims because there is no “trail” of their actions. Cyberbullying is one of the most troublesome consequences of using social media or online messengers that is extremely difficult for parents to identify and address to. According to Cybersmile Foundation poll, 55% of children suffer online bullying.</li>        
@@ -191,7 +152,7 @@
 										<img src="{$img}/icons/icon-mobile-secure.png" alt="cell phone monitoring">
                                         <h3>Control Phone or Tablet Usage</h3>
                                         <ul class="feature_list">
-                                                <li>Keep track of multimedia files</li>
+                                                <li>Lock entire device</li>
                                                 <li>Block links and apps</li>
                                                 <li>Track location via GPS</li>
                                         </ul>
@@ -205,56 +166,7 @@
         title = "One Stop Solution for Tracking and Protection"
         description = "Pumpic provides an invaluable feeling of confidence that your kids are safe. Its 24 spectacular features can greatly contribute to ensuring comprehensive protection from virtually any digital threat that originates from smartphone or tablet usage. With the help of monitoring software, you’ll be able to monitor your kids’ activity constantly and remotely from any spot of the world. Just check these Pumpic features and see for yourself."
         blockBg="light"
-}                                        
-                                        
-{*<div class="dark">
-        <div class="container">
-                <h2 class="text-center">Set Ultimate Parental Control on Android</h2>
-                <div class="row">
-                    
-                    <div id="table-container" class="table-col-3 table-md-col-3 table-sm-col-3">
-                        <article class="text-center">Mobile technologies introduced new opportunities to our children. It is rather hard at 
-                            once to imagine the entire range of functions a single smartphone can fulfil. That’s why when it comes to features 
-                            that an Android parental control app should include, it is very important to consider all of them. Listed below 
-                            reflects Pumpic monitoring abilities, and which particular mobile phone options you will cover by using it. 
-                            The app will help you follow each and every aspect of your kids’ lives as well as all spheres of activity remotely.</article>
-                        <section>
-                            <div class="tab col-item-3 col-md-item-3 col-sm-item-3">
-                                <ul>
-                                    <li><i class="i-features-sms"></i> <span onclick="window.location='http://{$domain}/mobile-sms-spy.html'">View SMS</span></li>
-                                    <li><i class="i-features-cell-history"></i> View Call History</li>
-                                    <li><i class="i-features-calendar"></i> View Calendar</li>
-                                    <li><i class="i-features-contacts"></i> View Contacts</li>
-                                    <li><i class="i-features-email"></i> View Emails</li>
-                                </ul>
-                            </div>
-
-                            <div class="tab col-item-3 col-md-item-3 col-sm-item-3">
-                                <ul>
-                                    <li><i class="i-features-videocam"></i> View Videos</li>
-                                    <li><i class="i-features-photos"></i> View Photos</li>
-                                    <li><i class="i-features-browser"></i> Control Browser</li>
-                                    <li><i class="i-features-app"></i> Control Applications</li>
-                                    <li><i class="i-features-social"></i> Control Social Networks</li>
-                                </ul>
-                            </div>
-
-                            <div class="tab col-item-3 col-md-item-3 col-sm-item-3">
-                                <ul>
-                                    <li><i class="i-features-location"></i> Location Tracking</li>
-                                    <li><i class="i-features-keyloger"></i> Keylogger</li>
-                                    <li><i class="i-features-sms-commands"></i> SMS Commands</li>
-                                    <li class="hidden-mobile"></li>
-                                    <li class="hidden-mobile"></li>
-                                </ul>
-                            </div>
-                        </section>
-                        
-                    </div>    
-                    
-                </div>
-        </div>
-</div> *}    
+}                                          
 
 <div class="dark">
     <div class="container">

@@ -90,6 +90,14 @@ description="Check out useful infographics on child online security that Pumpic 
         </ul>
         <div class="infographics__desc"><a href="/how-to-manage-kids-screen-time.html">8 Must-Follow Tips to Manage Kids’ Screen Time</a></div>
     </div>
+
+    <div class="col-lg-4 col-md-4">
+        <ul class="infographics__block effect">
+            <li><p class="zero">Check this infographic to find out 10 best ways to use smartphones and tablets for educational purposes in schools and at home.</p></li>
+            <li><a href="/kids-education-in-mobile-era.html"> <img class="top" src="/images/infographics/6.png" title="How to Use Smartphones & Tablets to Boost Your Kid’s Education" alt="How to Use Smartphones & Tablets to Boost Your Kid’s Education"/> </a></li>
+        </ul>
+        <div class="infographics__desc"><a href="/kids-education-in-mobile-era.html">How to Use Smartphones & Tablets to Boost Your Kid’s Education</a></div>
+    </div>
 </div>
      {literal}
          <script>

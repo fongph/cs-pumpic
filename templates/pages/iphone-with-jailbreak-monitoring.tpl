@@ -698,7 +698,7 @@
                                     <img src="{$img}/testimonials/anna-h.png" alt="" class="testimonial-photo">
                                     <div class="testimonial-text">
                                             <h4>Anna H. – mother of 14-year-old daughter</h4>
-                                            <p>“My daughter is what you call “a popular girl” at school. She is active, cheerful and has many friends. And though I know she is a mature and reasonable teen I still prefer to monitor her contacts using this great app. My daughter and I are best friends, but girls happen not to tell some things to their parents, especially about boys...”</p>											
+                                            <p>“My daughter&nbsp;is what you call “a popular girl” at school. She is active, cheerful and has many friends. And though I know she is a mature and reasonable teen I still prefer to monitor her contacts using this great app. My daughter and I are best friends, but girls happen not to tell some things to their parents, especially about boys...”</p>
                                     </div>
                             </div>
                             <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">

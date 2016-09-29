@@ -105,7 +105,7 @@
                             <img src="{$img}/testimonials/lawrence-g.png" alt="" class="testimonial-photo">
                             <div class="testimonial-text">
                                     <h4>Lawrence G. – father of 17-year-old daughter</h4>
-                                    <p>“The Internet is hiding many threats for the underage kids. That’s why I’m sure that parental control apps are a must-have nowadays when the popularity of the Web among our youngsters is growing constantly. While looking for the best software to monitor my child’s mobile phone, I compared many different apps and realized that Pumpic is just what I need. Although this software demands rooting Android devices, I think that the result is totally worth it.”</p>
+                                    <p>“The Internet is hiding many threats for the underage kids. That’s why I’m sure that parental control apps are a must-have nowadays when the popularity of the Web among our youngsters is growing constantly. While looking for the best software to monitor my child’s mobile phone, I compared many different apps and realized that Pumpic&nbsp;is just what I need. Although this software demands rooting Android devices, I think that the result is totally worth it.”</p>
                             </div>
                     </div>
                     <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
@@ -118,7 +118,7 @@
                             
                         </div>
                 </div>
-                <div class="bxSliderMobile"></div>            
+                <div class="bxSliderMobile"></div>
                             
             </div>
     </div>

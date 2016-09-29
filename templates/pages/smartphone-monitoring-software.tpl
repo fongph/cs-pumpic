@@ -77,7 +77,46 @@
 
 
         {include file='../includes/content/how-get-pumpic.tpl' }    
-        {include file='../includes/testimonials.tpl' blockBg="light"}       
+        {*include file='../includes/testimonials.tpl' blockBg="light"*}
+
+<div class="light">
+    <div class="container">
+            <h2 class="text-center testimonial-title">Trusted by Over 10,000 Parents Around the Globe:</h2>
+            <div class="row">
+                
+                <div class="bxSliders only-pc">
+                        <!-- SLIDE #1 -->
+                        <div class="slide">
+                
+                    <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
+                            <img src="{$img}/testimonials/liz-i.png" alt="" class="testimonial-photo">
+                            <div class="testimonial-text">
+                                    <h4>Liz I. – mother of two</h4>
+                                    <p>“Pumpic is the all-in-one parental control app, and I cannot express how grateful I am for the work this app does! At first, I was a bit suspicious about the number of functions that Pumpic offers, but it turned out that all of them work as they should. Kids know that I monitor all their online activities, and I have to admit that their online behavior has become more responsible. Another nice thing is that Pumpic supports both iOS and Android as we have devices with both platforms.”</p>
+                            </div>
+                    </div>
+                    <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
+                            <img src="{$img}/testimonials/jeffrey-b.png" alt="" class="testimonial-photo">
+                            <div class="testimonial-text">
+                                    <h4>Jeffrey B. – father of 14-year-old daughter</h4>
+                                    <p>“We have tried several monitoring apps (I believe it’s a must when you have a teen daughter). However, I wasn’t satisfied with the amount of information those apps provided. Pumpic turned out to be different. My wife is definitely a non-tech-savvy person; still, she can manage the Control Panel of the app with ease. Our girl knows that parents are watching and feels safe as there are so many dangerous situations she can face, and we will be able to protect her.”</p>
+                            </div>
+                    </div>
+                    <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
+                            <img src="{$img}/testimonials/olivia-w.png" alt="" class="testimonial-photo">
+                            <div class="testimonial-text">
+                                    <h4>Olivia W. – mother of 16-year-old son</h4>
+                                    <p>“I’ve tried several parental control apps and didn’t expect much from Pumpic as I was really disappointed with the monitoring apps in the whole. But Pumpic did surprise me with one of the most precise GPS-tracking features. I’ve caught my son skipping school for two times, and now he knows that such behavior will have serious consequences. The app is user-friendly and simple to use, and I will definitely recommend it to my friends.”</p>
+                            </div>
+                    </div>
+                            
+                        </div>
+                </div>
+                <div class="bxSliderMobile"></div>            
+                            
+            </div>
+    </div>
+</div>		
     
         {*include file='../includes/content/banner-promo.tpl'*}
         {*{include file='../includes/content/banners/banner-promo-trial.tpl'}*}

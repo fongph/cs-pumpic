@@ -1137,9 +1137,10 @@ a {
   &:focus {
     color: #2a6496;
     text-decoration: underline;
-    outline: thin dotted;
-    outline: 5px auto -webkit-focus-ring-color;
-    outline-offset: -2px;
+    // outline: thin dotted;
+    // outline: 5px auto -webkit-focus-ring-color;
+    // outline-offset: -2px;
+    outline: none !important;
   }
 }
 

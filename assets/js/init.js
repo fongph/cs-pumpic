@@ -2327,8 +2327,7 @@ $(document).ready(function () {
 
             var data = $(input).data();
 
-            var offerEnabled = $form.find('.double_offer input[type=checkbox][data-group=' + data.group + ']').is(':checked');
-
+            var offerEnabled = $form.find('input[type=checkbox][name=android-40off][data-group=' + data.group + ']').is(':checked');
             var $options = $('.buy-form-with-offer').find('input[type=radio][data-group=' + data.group + '][data-period=' + data.period + ']');
 
             $options.each(function () {
@@ -2352,6 +2351,7 @@ $(document).ready(function () {
             });
 
             if (typeof data.target != 'undefined') {
+
                 var currentValue = $(input).attr('data-price-' + data.cur) / Number(data.period);
 
                 if (offerEnabled) {
@@ -2465,4 +2465,15 @@ $(document).ready(function () {
             updateRadio($(this).find('input:first'));
         });
     }
+    $("input[data-checkboxes=android-40off-main]").click(function(){
+        $('input[name=android-40off]').attr('checked', this.checked);
+        // if($("input[name=android-40off]").length == $("input[name=android-40off]:checked").length) {
+        //     $("input[name=android-40off]").attr("checked", "checked");
+        // } else {
+        //     $("input[name=android-40off]").removeAttr("checked");
+        // }
+        var $inputs = $("input[name=android-40off]")
+        //console.log($inputs)
+        $.each($inputs, function() {updateCheckbox(this)})
+    });
 });

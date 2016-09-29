@@ -2657,7 +2657,7 @@ textarea {
   border: 1px solid #e8e8e8;
   span {
     display: inline-block;
-    font-size: 13px;
+    font-size: 14px;
   }
   h3 {
     color: #16a89e;
@@ -2665,11 +2665,11 @@ textarea {
     font-size: 18px;
   }
 }
-
+.free-label .icon-ok {
+  font-size: 14px;
+}
 @media only screen and (max-width: 1199px) {
-  .table_title {
-    padding: 10px 150px;
-  }
+  top: 176px
 }
 
 @media only screen and (max-width: 991px) {

@@ -1,5 +1,5 @@
 {include file='../includes/main/main-header.tpl'
-    robots="no"
+    robots="yes" 
     title="Child Safety Monitoring App"
     description="Little kids are exposed to dangers more than others. Pumpic app leaves no chances to online predators, cyberbullies, kidnappers, and other abusers."
 }    
@@ -95,10 +95,10 @@
                     
                     
                     <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
-                        <img src="{$img}/testimonials/t_new_19.png" alt="" class="testimonial-photo">
+                        <img src="{$img}/testimonials/caroline-i.png" alt="" class="testimonial-photo">
                         <div class="testimonial-text">
-                            <h4>Joan L. (Omaha, NE)</h4>
-                            <p>“The app helps me control my children, while I’m at work. I have to work overtime to support my family, that’s why my kids are on their own more often than not. With Pumpic, I’m sure they are safe. I know that wherever my kids go and whatever they do, they take their cells with them. So, I can track them, find out who calls or writes them, how much time they spend online and for which purposes. I suppose it is one of the most useful apps I’ve ever used.”</p>
+                            <h4>Caroline I. (Miami, FL)</h4>
+                            <p>“It is never too early for a “sex talk” and we had realized it when Pumpic helped us to catch our 12-year old son red-handed browsing the adult content site. After that, we immediately set up the age-appropriate content filtering and always look through the browsing history on his smartphone. Of course, that didn’t cancel the necessity to talk about birds and bees, but Pumpic let us know that we really have to discuss it.”</p>
                         </div>
                     </div>
                     <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
@@ -109,10 +109,10 @@
                         </div>
                     </div>
                     <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
-                        <img src="{$img}/testimonials/t_new_2.png" alt="" class="testimonial-photo">
+                        <img src="{$img}/testimonials/ruth-s.png" alt="" class="testimonial-photo">
                         <div class="testimonial-text">
-                            <h4>Melinda J. (St. Louis, MO)</h4>
-                            <p>“I decided to install Android smartphone monitoring on my son’s cell since he started acting weird. He became very shy and scary. I tried to talk to him, but he said everything was fine. Pumpic helped me find out that my son was bullied by his schoolmates. They sent him messages with threats and posted offensive pictures online. I went to school, talked to teachers and parents of the offenders. I’m happy that we found the way out. Finally, my son and I can sleep without worries.”</p>
+                            <h4>Ruth S. (Laconia, NH)</h4>
+                            <p>“I’m thankful to the team of Pumpic because with the help of their app I was able to protect my boy from an identity theft. My son received a text from an unknown person who claimed to be a representative of a bank that my family has nothing to do with. The fraudster was demanding to send him his Social Security Number. I was lucky to warn my son just on time and avoid possible consequences.”</p>
                         </div>
                     </div>
                         

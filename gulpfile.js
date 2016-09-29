@@ -22,8 +22,6 @@ const project = "pumpic.dev";
 
 const path = {
     dev: {
-        //html: './public',
-
         tpl: './templates/**/*.tpl',
         js: './assets/js/**/*.js',
         sass: './assets/css/frontend.scss',
@@ -39,10 +37,6 @@ const path = {
     }
 };
 
-gulp.task('html', function(){
-gulp.src('./assets/html/*.html')
-.pipe(browserSync.reload({stream:true}));
-});
 
 gulp.task('images-min', function () {
     gulp.src(dev.img)
@@ -131,11 +125,7 @@ gulp.task('js-min', function() {
 
 gulp.task('browser-sync', function() {
     browserSync.init({
-        // proxy: project,
-        server: {
-            baseDir: "./",
-        },
-        port:3000
+        proxy: project
     });
 });
 
@@ -145,7 +135,6 @@ gulp.task('watch', function() {
     gulp.watch(path.dev.sass_watch, ['sass']);
     gulp.watch(path.public.sass_wp, ['sass-wp-dev']);
     gulp.watch(path.dev.js, ['js-dev']);
-    //gulp.watch(path.dev.html, ['html']);
     gulp.watch(path.dev.tpl).on('change', browserSync.reload)
 });
 

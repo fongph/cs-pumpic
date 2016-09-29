@@ -663,24 +663,24 @@
                         <!-- SLIDE #1 -->
                         <div class="slide">
                             <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
-                                    <img src="{$img}/testimonials/testimonials_new_25.png" alt="" class="testimonial-photo">
+                                    <img src="{$img}/testimonials/jeff-b.png" alt="" class="testimonial-photo">
                                     <div class="testimonial-text">
-                                            <h4>Mike P. (Denver, CO)</h4>
-                                            <p>“I didn’t like that my son played games on his iPad all the time. He didn’t want to do his homework, nor to clean his room. All he did was taping on the screen of his tablet. So, I decided to limit his “addiction” somehow. I didn’t want to take away the device, so I searched online and found Pumpic. After I had installed the app, I realized it was what I needed. For now, I can easily set limits on his gaming, Internet use and chatting. I don’t let him play, until his work is done.”</p>
+                                            <h4>Jeff B. – father of two</h4>
+                                            <p>“Our elder daughter got her first smartphone three years ago, and the younger son got his one last year. My wife and I set limits on their use of the Internet but yet we wanted to be aware of what sites our kids are viewing and to whom they talk. My sister recommended using Pumpic as it appeared to be very helpful with her own children. She was right – this app is easy to install and use. For extended monitoring, it may require jailbreaking iPhone, but it’s restorable anyway.”</p>
                                     </div>
                             </div>
                             <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
-                                    <img src="{$img}/testimonials/testimonials_new_26.png" alt="" class="testimonial-photo">
+                                    <img src="{$img}/testimonials/ava-t.png" alt="" class="testimonial-photo">
                                     <div class="testimonial-text">
-                                            <h4>Peter G. (Richmond, VA)</h4>
-                                            <p>“I heard about Pumpic from my neighbors, who used it as parental controls to look after kids when at work, and to protect their own cell phones, in case they are lost or stolen. I also wanted to try it, but I didn’t want to jailbreak iPhones I’d bought for my children, my wife and me. When they told me it was available without jailbreak, I sing up and ordered the app with iCloud feature for all my family the very same day. I’m glad I can see my kids are protected now, I can monitor them online and prevent from dangers. And I’m also sure that my wife is safe, as well as she knows I’m ok too.”</p>
+                                            <h4>Ava T. – mother of 16-year-old daughter</h4>
+                                            <p>“My daughter is a real chatterbox, and I was afraid that sooner or later she would share too personal information about herself or our family on the social media or in conversations with her friends. Once she had a problem because of gossips and then I’ve installed Pumpic to see what she was talking about with her friends. Because of this, she thinks twice before sending a message to someone, and I regularly check her texting and explain to her how the information she shares can influence her in future.”</p>
                                     </div>
                             </div>
                             <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
-                                    <img src="{$img}/testimonials/testimonials_new_27.png" alt="" class="testimonial-photo">
+                                    <img src="{$img}/testimonials/ben-h.png" alt="" class="testimonial-photo">
                                     <div class="testimonial-text">
-                                            <h4>Sandra O. (Nashville, TN)</h4>
-                                            <p>“Pumpic has reasonably simplified my life. I didn’t know where to find enough time to look after my three sons, and at the same time work full time. I saw Pumpic ad in the Internet and decided to give it a try. I asked my older son to jailbreak his own iPhone and tablets of my younger kids. Then I installed the app on their devices. I can finally calm down and be sure that my children are safe, even when I’m not at home. Thanks Pumpic for helping parents like me.”</p>
+                                            <h4>Ben H. – father of 11-year-old son</h4>
+                                            <p>“Pumpic is my right hand today. Although my son is 11 years old and it seems that it is too early for teen problems, I already use monitoring app as he spends too much time with his smartphone playing games and trying to download more and more new apps (Applications Control was the first tool I have mastered). My kid knows that I have a possibility to check everything that he does online and where he goes, and it is clear that after Pumpic installation his habits have improved.”</p>
                                     </div>
                             </div>
                         </div> <!-- .slide-->
@@ -688,24 +688,24 @@
                         <!-- SLIDE #2 -->
                         <div class="slide">
                             <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
-                                    <img src="{$img}/testimonials/testimonials_new_44.png" alt="" class="testimonial-photo">
+                                    <img src="{$img}/testimonials/flora-l.png" alt="" class="testimonial-photo">
                                     <div class="testimonial-text">
-                                            <h4>Amanda T. (St. Louis, MO)</h4>
-                                            <p>“My daughter has recently become inseparable friends with her iPod Touch. She doesn’t want to do anything but listen to music, chat with her friends via Skype or simply scroll her Facebook feed. My husband decided to take away her device, but I said it was not the best idea. We both agreed that a parental control app would be a solution, and decided to try Pumpic. It is amazing! In addition to various device limits, it lets us track her location, Internet usage and block inappropriate content. It is a real helping hand for parents.”</p>
+                                            <h4>Flora L. – mother of twins</h4>
+                                            <p>“I’m a single mom of twins. My working schedule is quite tensing, and often I can’t give my kids as much of my time as I wish to. Installing a parental control app appeared to be a necessity. Choosing out of a long list of software, I fixed on Pumpic and never regretted it. The information about any activities of my kids updates within some moments and location tracking is very accurate. Moreover, I’ve set geofences and if my children would go further than their usual way from school to home I would know just at once.”</p>
                                     </div>
                             </div>
                             <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
-                                    <img src="{$img}/testimonials/testimonials_new_45.png" alt="" class="testimonial-photo">
+                                    <img src="{$img}/testimonials/anna-h.png" alt="" class="testimonial-photo">
                                     <div class="testimonial-text">
-                                            <h4>Monica A. (Tampa, FL)</h4>
-                                            <p>“My husband and I have two teenage daughters. We long ago realized that we should have a tool to keep an eye on their online life and phone activities. But we couldn’t find a universal app to monitor our older daughter’s iPhone and Android device we bought for our little one. A friend of ours recommended trying Pumpic. He was using it for two or three months on his own, and was very satisfied with results. My husband bought two subscriptions for a year at once. I couldn’t believe it would work so good. The app allows us to see who calls them and write messages, where they go online and track their location in real time. It’s a must-have solution for parents in the modern world I think.”</p>
+                                            <h4>Anna H. – mother of 14-year-old daughter</h4>
+                                            <p>“My daughter is what you call “a popular girl” at school. She is active, cheerful and has many friends. And though I know she is a mature and reasonable teen I still prefer to monitor her contacts using this great app. My daughter and I are best friends, but girls happen not to tell some things to their parents, especially about boys...”</p>											
                                     </div>
                             </div>
                             <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
-                                    <img src="{$img}/testimonials/testimonials_new_46.png" alt="" class="testimonial-photo">
+                                    <img src="{$img}/testimonials/logan-k.png" alt="" class="testimonial-photo">
                                     <div class="testimonial-text">
-                                            <h4>Jason G. (Los Angeles, CA)</h4>
-                                            <p>“I’ve made my son a gift, bought him a brand new iPhone for all that great job he did at school. The first thing I thought about after the purchase was how to secure my kid. I didn’t want him to spend much time chatting and gaming like most kids do today. I also wanted to make sure I’ll find his iPhone, if my son loses it or it is stolen. My friends recommended me Pumpic and I’m even more than satisfied with the app. It keeps my son and his device protected.”</p>
+                                            <h4>Logan K. – father of 11-year-old son</h4>
+                                            <p>“I do not allow my son to create a Facebook account as I do not think that he is ready for that online reality. But my son has broken a ban and created a page with fake age information. The installation of Pumpic revealed that. On the one hand, I was disappointed with such disobedience; on the other, slightly proud for all precautions son have taken to hide this activity from us. But Pumpic with the social media monitoring feature brought him out into the open.”</p>
                                     </div>
                             </div>
                         </div> <!-- .slide-->

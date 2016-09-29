@@ -78,10 +78,50 @@
         {* description = "Right after installing Pumpic, all the data from the target device will be sent to your Control Panel. It can be accessed from any browser and any gadget, including PCs, mobile phones and tablets. In Control Panel, you can not only view the information, but also set restrictions, block, and limit some of activities."
          *}
         
-        {include file='../includes/testimonials.tpl' 
+        {*include file='../includes/testimonials.tpl' 
             blockBg="light"
-        }       
+        *}       
 
+<div class="light">
+    <div class="container">
+            <h2 class="text-center testimonial-title">Over 10,000 Parents Trust Us:</h2>
+            <div class="row">
+                
+                <div class="bxSliders only-pc">
+                        <!-- SLIDE #1 -->
+                        <div class="slide">
+                
+                    <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
+                            <img src="{$img}/testimonials/noah-n.png" alt="" class="testimonial-photo">
+                            <div class="testimonial-text">
+                                    <h4>Noah N. – father of 15-year-old daughter</h4>
+                                    <p>“We had the online predator problem with our daughter. I noticed that she constantly types messages on her tablet, but she said that she messaged her friends from class only. I’ve installed Pumpic and the very first report on the IM messengers showed that our daughter communicates with someone who calls himself her peer and encourages her to meet in person without parents knowing. We had a serious talk, and now she’s much more careful with her communications.”</p>
+                            </div>
+                    </div>
+                    <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
+                            <img src="{$img}/testimonials/ashley-n.png" alt="" class="testimonial-photo">
+                            <div class="testimonial-text">
+                                    <h4>Ashley N. – mother of 15-year-old son</h4>
+                                    <p>“Pumpic is the thing any parent needs to have a keen sense of kids’ activities. I must confess that I don’t even use the whole bunch of the features that Pumpic offers. But, who knows, maybe one day I will need them all as my son uses spends more and more time online every day. The app is really helpful, and I constantly monitor and managehis device – content filtering is a salvation, honestly, kids are too curious today.”</p>
+                            </div>
+                    </div>
+                    <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
+                            <img src="{$img}/testimonials/tom-m.png" alt="" class="testimonial-photo">
+                            <div class="testimonial-text">
+                                    <h4>Tom M. – father of 13-year-ild daughter</h4>
+                                    <p>“I don’t want to forbid my daughter to use the Internet, but I have to be sure that she’s using it appropriately and that no fraudsters or bullies threaten her. That’s why about two years ago I started monitoring her mobile phone with parental control software, namely Pumpic. It appears to have the most powerful and diverse features. Though the price of the app might seem quite high, I don’t want to change it because it’s absolutely up to quality.”</p>
+                            </div>
+                    </div>
+                            
+                        </div>
+                </div>
+                <div class="bxSliderMobile"></div>            
+                            
+            </div>
+    </div>
+</div>
+		
+		
         {include file='../includes/content/how-get-pumpic.tpl' 
              blockBg="dark"
         }

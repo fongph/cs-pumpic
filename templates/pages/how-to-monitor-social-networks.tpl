@@ -203,10 +203,49 @@
 </div>   
                                           
 
-		{include file='../includes/testimonials.tpl'
+		{*include file='../includes/testimonials.tpl'
                 title = "Trusted by Over 10,000 Customers Worldwide"
                 sliders = "false"
-                blockBg="light"}
+                blockBg="light"*}
+				
+<div class="light">
+    <div class="container">
+            <h2 class="text-center testimonial-title">Trusted by Over 10,000 Parents Worldwide:</h2>
+            <div class="row">
+                
+                <div class="bxSliders only-pc">
+                        <!-- SLIDE #1 -->
+                        <div class="slide">
+                
+                    <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
+                            <img src="{$img}/testimonials/simona-f.png" alt="" class="testimonial-photo">
+                            <div class="testimonial-text">
+                                    <h4>Simona F. - mother of 13-year-old daughter</h4>
+                                    <p>“Three months ago I started using Pumpic because wanted to track my daughter’s transfers to and from school by GPS and generally to check her texts and calls. What I found out was something unexpected. Daughter appeared to bully the other girl through the messages on a social site, mocking and saying offensive things to her. Of course, I had a serious talk with my daughter and made her apologize to the girl. Hope she learned the lesson.”</p>
+                            </div>
+                    </div>
+                    <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
+                            <img src="{$img}/testimonials/wade-q.png" alt="" class="testimonial-photo">
+                            <div class="testimonial-text">
+                                    <h4>Wade Q. - father of a 15-year-old daughter</h4>
+                                    <p>“Recently my daughter started dating a guy; he is her first boyfriend. Though they haven’t had one-to-one dates yet and see each other in a company of friends or our house, they also spend much time texting each other or talking through the social sites. Of course, as a father, I want to be sure that this boy is treating my daughter nicely. To control it I installed Pumpic and warned them both about it. I believe this fact alone sets boundaries for both of them.”</p>
+                            </div>
+                    </div>
+                    <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
+                            <img src="{$img}/testimonials/emma-j.png" alt="" class="testimonial-photo">
+                            <div class="testimonial-text">
+                                    <h4>Emma J. – mother of 15-year-old son</h4>
+                                    <p>“I’m so happy for founding Pumpic! The best feature, as for me, is remote social media monitoring. Keeping track of my son’s online life has helped me to learn more about his hobbies, interests, and friends. I cannot say that all information was pleasant to know, but at least I am sure that he doesn’t do drugs or something like that. Pumpic is incredible, thank you!”</p>
+                            </div>
+                    </div>
+                            
+                        </div>
+                </div>
+                <div class="bxSliderMobile"></div>            
+                            
+            </div>
+    </div>
+</div>
 										  
         {include file='../includes/content/how-get-pumpic.tpl' 
              blockBg="dark"

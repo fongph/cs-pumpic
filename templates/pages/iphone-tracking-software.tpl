@@ -437,28 +437,30 @@
                         <!-- SLIDE #2 -->
                         <div class="slide">
                             <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
-                                    <img src="{$img}/testimonials/testimonials_new_1.png" alt="" class="testimonial-photo">
+                                    <img src="{$img}/testimonials/marsha-h.png" alt="" class="testimonial-photo">
                                     <div class="testimonial-text">
-                                            <h4>Amanda T. (St. Louis, MO)</h4>
+                                            <h4>Marsha H. (Ellensburg, WA)</h4>
                                             <p>“My daughter has recently become inseparable friends with her iPod Touch. She doesn’t want to do anything but listen to music, chat with her friends via Skype or simply scroll her Facebook feed. My husband decided to take away her device, but I said it was not the best idea. We both agreed that a parental control app would be a solution, and decided to try Pumpic. It is amazing! In addition to various device limits, it lets us track her location, Internet usage and block inappropriate content. It is a real helping hand for parents.”</p>
                                     </div>
                             </div>
                             <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
-                                    <img src="{$img}/testimonials/testimonials_new_2.png" alt="" class="testimonial-photo">
+                                    <img src="{$img}/testimonials/vickie-l.png" alt="" class="testimonial-photo">
                                     <div class="testimonial-text">
-                                            <h4>Monica A. (Tampa, FL)</h4>
-                                            <p>“My husband and I have two teenage daughters. We long ago realized that we should have a tool to keep an eye on their online life and phone activities. But we couldn’t find a universal app to monitor our older daughter’s iPhone and Android device we bought for our little one. A friend of ours recommended trying Pumpic. He was using it for two or three months on his own, and was very satisfied with results. My husband bought two subscriptions for a year at once. I couldn’t believe it would work so good. The app allows us to see who calls them and write messages, where they go online and track their location in real time. It’s a must-have solution for parents in the modern world I think.”</p>
+                                            <h4>Vickie L. (North Platte, NE)</h4>
+                                            <p>“My husband and&nbsp;I have two teenage daughters. We long ago realized that we should have a tool to keep an eye on their online life and phone activities. But we couldn’t find a universal app to monitor our older daughter’s iPhone and Android device we bought for our little one. A friend of ours recommended trying Pumpic. He was using it for two or three months on his own, and was very satisfied with results. My husband bought two subscriptions for a year at once. I couldn’t believe it would work so good. The app allows us to see who calls them and write messages, where they go online and track their location in real time. It’s a must-have solution for parents in the modern world I think.”</p>
                                     </div>
                             </div>
                             <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
-                                    <img src="{$img}/testimonials/testimonials_new_3.png" alt="" class="testimonial-photo">
+                                    <img src="{$img}/testimonials/david-p.png" alt="" class="testimonial-photo">
                                     <div class="testimonial-text">
-                                            <h4>Jason G. (Los Angeles, CA)</h4>
+                                            <h4>David P. (Louisville, KY)</h4>
                                             <p>“I’ve made my son a gift, bought him a brand new iPhone for all that great job he did at school. The first thing I thought about after the purchase was how to secure my kid. I didn’t want him to spend much time chatting and gaming like most kids do today. I also wanted to make sure I’ll find his iPhone, if my son loses it or it is stolen. My friends recommended me Pumpic and I’m even more than satisfied with the app. It keeps my son and his device protected.”</p>
                                     </div>
                             </div>
                         </div> <!-- .slide-->
                     </div>
+                    <div class="bxSliderMobile"></div>
+
                 </div>
             </div>
         </div>

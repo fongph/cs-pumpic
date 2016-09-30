@@ -6,7 +6,7 @@
         .block-child-location-tracking .ipad-text {
             padding: 10px 0;
         }
-        
+
         @media only screen and (max-width: 480px) {
             .block-child-location-tracking .ipad-text {
                 padding: 10px 0px 50px 0px;
@@ -136,7 +136,7 @@
         </div>
         <!-- END -->
 
-        <p>There are many companies providing you with an opportunity to secretly view remote activities of another person. You can check a list of the <a href="/best-spy-apps-for-android.html">best spy apps for Android</a> to know more about tracking apps and their features. The most know among them are mSpy, Mobile Spy, SpyEra, Phone Tracker, and MobiStealth. By the way, SMS spy is the most widespread kind of spying. SMS tracking apps allow monitoring incoming, outgoing, and even deleted messages.</p>
+        <p>There are many companies providing you with an opportunity to secretly view remote activities of another person. You can check a list of the <a href="/best-spy-apps-for-android.html">best spy apps&nbsp;for Android</a> to know more about tracking apps and their features. The most know among them are mSpy, Mobile Spy, SpyEra, Phone Tracker, and MobiStealth. By the way, SMS spy is the most widespread kind of spying. SMS tracking apps allow monitoring incoming, outgoing, and even deleted messages.</p>
 		<p>However, you should note that it is against the laws of most countries to spy on someone's device. Do doubt, it is illegal and unethical to use even the best spy app for Android. Some advertisements make people believe that monitoring text messages and checking phone calls is normal, but in fact, it ignores legal requirements.</p>
 		
 {EndContent}
@@ -219,7 +219,7 @@
         
         <div class="light">
     <div class="container">
-            <h2 class="text-center testimonial-title">Trusted by Over 10,000 Customers Worldwide:</h2>
+            <h2 class="text-center testimonial-title">Trusted by 10,000 Customers All Over the World:</h2>
             <div class="row">
                 
                 <div class="bxSliders only-pc">
@@ -227,24 +227,24 @@
                         <div class="slide">
                 
                     <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
-                            <img src="{$img}/testimonials/david-g-14.png" alt="" class="testimonial-photo">
+                            <img src="{$img}/testimonials/charlie-s.png" alt="" class="testimonial-photo">
                             <div class="testimonial-text">
-                                    <h4>David G. – father of 14-year-old son</h4>
-                                    <p>“I want my son to be safe. That is the reason why I use Pumpic. My boy spends too much time online and I want to be sure that he has no access to inappropriate things posted. With the help of tracking app, I can monitor browsing history and block 18+ websites. I think this app is for careful parents. Blocking some activities and setting restrictions is necessary in today's reality.”</p>
+                                    <h4>Charlie S. – father of 14-year-old daughter</h4>
+                                    <p>“After the installation of the Pumpic app, I was unpleasantly surprised by the ease my daughter communicates with strangers in the chat rooms and on the social media. It was a sign that we had to discuss the basics of the proper online behavior and as a precaution, I temporarily blocked the access to the social media and IM messengers to make sure that she understands the rules of safe communication online.”</p>
                             </div>
                     </div>
                     <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
-                            <img src="{$img}/testimonials/maria-p-2.png" alt="" class="testimonial-photo">
+                            <img src="{$img}/testimonials/jody-p.png" alt="" class="testimonial-photo">
                             <div class="testimonial-text">
-                                    <h4>Maria P. – mother of twins</h4>
-                                    <p>“My girls are 16 now and I think this age is the most dangerous for teens. They are constantly hanging on the phone and chatting with peers. I've realized that I need to restrict it somehow. Thankfully, I've found information about parental control software that allows monitoring kids' activities. Pumpic works great. Now I can care of my girls remotely by monitoring call history, SMS and MMS, Snapchat and Skype. I can view emails and even block their devices. This app is what I needed. Thanks!”</p>
+                                    <h4>Jody P. - mother of 9-year-old son</h4>
+                                    <p>“A few months ago our family moved to Chicago. My son found himself in a large new city using an unfamiliar route when going to his new school. I decided to buy him his first phone and installed parental control software. Pumpic always shows me the location of my son by GPS and also enables to set geofences. I'll probably check his texts and Internet activity once he starts using his smartphone to the fullest.”</p>
                             </div>
                     </div>
                     <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
-                            <img src="{$img}/testimonials/michelle-n-12.png" alt="" class="testimonial-photo">
+                            <img src="{$img}/testimonials/jack-p.png" alt="" class="testimonial-photo">
                             <div class="testimonial-text">
-                                    <h4>Michelle N. – mother of 12-year-old daughter</h4>
-                                    <p>“I've learned about Pumpic not so long time ago. I know that there is an Android app to spy on spouses used by jealous partners. But actually, it is illegal. On the contrary, Pumpic is a legal application for parents, who want to protect their kids from dangers of using a cell phone or tablet. Now I know that my girl is not exposed to cyberbullying, online predators, sexting, etc. The app even allows finding out where my girl currently is and where she was at any particular period. It's important to know that my family is protected.”</p>
+                                    <h4>Jack P. – father of 15-year-old son</h4>
+                                    <p>“We were very surprised when son’s teacher told us that our kid skipped lessons several times, though returned home in time. We installed Pumpic, and the very first report on the social media showed that our son made an arrangement with a classmate on the sick leave to go to him and play video games instead of going to school. GPS tracking confirmed that. We are really grateful to all Pumpic team for the work you do!”</p>
                             </div>
                     </div>
                             

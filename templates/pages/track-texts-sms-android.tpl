@@ -6,7 +6,7 @@
         .block-child-location-tracking .ipad-text {
             padding: 10px 0;
         }
-        
+
         @media only screen and (max-width: 480px) {
             .block-child-location-tracking .ipad-text {
                 padding: 10px 0px 50px 0px;
@@ -165,24 +165,24 @@
                         <div class="slide">
                 
                     <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
-                            <img src="{$img}/testimonials/andrea-l-16-2.png" alt="" class="testimonial-photo">
+                            <img src="{$img}/testimonials/brendon-l.png" alt="" class="testimonial-photo">
                             <div class="testimonial-text">
-                                    <h4>Andrea L. – mother of 16-year-old son</h4>
-                                    <p>“Watching my son spending most of his time with his tablet, I needed to make sure he is safe there, online. Teenagers don't share all their problems with parents, but I just wanted to make sure everything is fine in his life. I've learned about Pumpic from a friend of mine. She once showed me how to block texts on Android, her son has one. And I got curious. After that sexting scandal in Colorado, I wanted to be armed when dealing with my teenager and his phone.”</p>
+                                    <h4>Brendon L. – father of 13-year-old daughter</h4>
+                                    <p>“Pumpic has literally&nbsp;saved my daughter – luckily for us, I have installed the app in time. Within a few days, a stranger started sending her emails, and I was horrified to see that she answered him without telling us about this. After a couple of messages, he sent her nude photos with a proposition to meet in person, and then we interfered in. Blocked that contact, sent screenshots to the police and the Internet provider and had a really serious talk with a daughter. Shudder to think how that situation could end up!”</p>
                             </div>
                     </div>
                     <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
-                            <img src="{$img}/testimonials/martin-s-12-2.png" alt="" class="testimonial-photo">
+                            <img src="{$img}/testimonials/bella-o.png" alt="" class="testimonial-photo">
                             <div class="testimonial-text">
-                                    <h4>Martin S. – father of 12-year-old daughter</h4>
-                                    <p>“My little girl is naturally so curious about everything and, surprisingly, about technology. She sometimes accidentally changes some settings in the phone, so I decided to prevent some other accidental and inappropriate discoveries by installing Pumpic. Cause, you know, an innocent search online can result in really explicit content. So, I block potential harm like links to 18+ sites and games. And besides, I teach her a great deal of time management, restricting how long she plays Angry Birds and watches cartoons. I allow her to doodle as much as she wants, though.”</p>
+                                    <h4>Bella O. – mother of 15-year-old son</h4>
+                                    <p>“Pumpic did its best to help us figure out that many parties our son visited took place with alcohol drinks. Before a family meeting, we have gathered a lot of evidence: hidden photos, IM chats communications. More than that, with the help of GPS tracking we found out that several times he lied to us about his destinations. I still wonder how could he be so irresponsible even knowing that we’re monitoring his iPhone.”</p>
                             </div>
                     </div>
                     <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
-                            <img src="{$img}/testimonials/miranda-p-12.png" alt="" class="testimonial-photo">
+                            <img src="{$img}/testimonials/james-r.png" alt="" class="testimonial-photo">
                             <div class="testimonial-text">
-                                    <h4>Miranda P. – mother of 14-year-old son</h4>
-                                    <p>“My husband got Pumpic and we decided that it needed to be tried and tested before we buy a long-term subscription. Well, I was really astonished by all the options, like monitoring Messenger, Snapchat, and video games. We thought something was wrong with our son. He spent so much time doing homework, but still was doing not so good at school. Well, in fact, he was playing on his phone half the time he said he was studying.”</p>
+                                    <h4>James R. – father of 15-year-old daughter</h4>
+                                    <p>“The very first thing I did after Pumpic installation was setting up GPS tracking of my daughter’s smartphone. At that time she was on her first date with a boyfriend who told me that they are going to the cinema. However, this statement was far from the truth and after she had returned home, we had a very serious talk. Now I still use Pumpic to make sure that that lesson was not in vain for her. We had a geo-fencing alarm once, but it turned out to be fake, so I am more than satisfied.”</p>
                             </div>
                     </div>
                             

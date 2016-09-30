@@ -8,7 +8,7 @@ title="Android Parental Control App for Ultimate Monitoring | Pumpic"
     <!-- BLOCK GTM -->
     {include file='../includes/main/main-after-body.tpl'}
     <!-- END BLOCK GTM -->
-    
+
     <!-- FLY BLOCKS -->
     {include file='../includes/content/fly/fly_blocks.tpl'}
     <!-- END FLY BLOCKS-->
@@ -106,7 +106,7 @@ title="Android Parental Control App for Ultimate Monitoring | Pumpic"
                                         
 {include file='../includes/content/features-table.tpl'
         title = "Over 24 Monitoring Features to Protect Your Kids"
-        description = "Mobile technologies have introduced new opportunities to our children. It is rather hard to imagine the entire range of functions a single smartphone can fulfil. That’s why when it comes to features 
+        description = "Mobile technologies have introduced new opportunities to our children. It is rather hard to imagine the entire range of functions a single smartphone can fulfil. That’s why when it comes to features
                             that an Android parental control app should include, it is very important to consider as many as possible. Listed below 
                             reflects Pumpic monitoring abilities and also which particular mobile phone functions you will be able to cover by using the app. 
                             Our parental control software for Android will help you follow each and every aspect of your kids’ lives and all of their activities remotely."
@@ -172,24 +172,24 @@ title="Android Parental Control App for Ultimate Monitoring | Pumpic"
                         <div class="slide">
                 
                     <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
-                            <img src="{$img}/testimonials/t_new_1.png" alt="" class="testimonial-photo">
+                            <img src="{$img}/testimonials/donna-c.png" alt="" class="testimonial-photo">
                             <div class="testimonial-text">
-                                    <h4>Susan L. (Cheyenne, WY)</h4>
-                                    <p>“Pumpic parental control app for Android helped me find out that my daughter, 16 years old, was involved in sexting by her boyfriend. Frankly, the truth was more than ugly. When I saw all those messages full of mean and vulgarity, I was raving with my fury. We had a serious talk with my daughter and parents of this “boyfriend”. We both agreed that it must never ever happen again. Thanks Pumpic for keeping me informed.”</p>
+                                    <h4>Donna C. - mother of 10-year-old son</h4>
+                                    <p>“My little son can’t imagine his life without a mobile device. He is just 10 but he started asking for a smartphone as a Birthday gift a couple years ago. More than half of his classmates already have phones. For the Birthday this year he got one too. It’s a simple phone, but it still has Internet access. Thanks to Pumpic I can control my son’s location, check incoming calls and texts, see the sites that he may view and block those that I suppose to be inappropriate for a child. Pumpic is really helpful.”</p>
                             </div>
                     </div>
                     <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
-                            <img src="{$img}/testimonials/t_new_2.png" alt="" class="testimonial-photo">
+                            <img src="{$img}/testimonials/horace-s.png" alt="" class="testimonial-photo">
                             <div class="testimonial-text">
-                                    <h4>Melinda J. (St. Louis, MO)</h4>
-                                    <p>“I decided to install Android smartphone monitoring on my son’s cell since he had started acting weird. He became very shy and scary. I tried to talk to him, but he said everything was fine. Pumpic helped me find out that my son was bullied by his schoolmates. They sent him messages with threats and posted offensive pictures online. I went to school, talked to teachers and parents of the offenders. I’m happy that we found the way out. Finally, my son and I can sleep without worries.”</p>
+                                    <h4>Horace S. - father of a 13-year-old boy</h4>
+                                    <p>“Having started to monitor my son’s phone with Pumpic, I found out that he was visiting a few adult sites. The thing is Pumpic gives an opportunity to view browsing history even if the searching was done in an incognito mode. The problem is not new, but good that I knew about it and could plan how we were going to deal with it. I discussed the problem with my son and set strict limits on his using the Internet.”</p>
                             </div>
                     </div>
                     <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
-                            <img src="{$img}/testimonials/t_new_3.png" alt="" class="testimonial-photo">
+                            <img src="{$img}/testimonials/travis-f.png" alt="" class="testimonial-photo">
                             <div class="testimonial-text">
-                                    <h4>Sandy and Patrick K. (Sacramento, CA)</h4>
-                                    <p>“My husband and I presented our son a brand new Android tablet for his birthday. It was an expensive present but Mike did a great job at school and really deserved to have it. It happened that he lost it a few days after. My husband had predicted such situation, so we installed Pumpic right after the purchase. We tracked the cell phone and found it quickly. Very useful app!”</p>
+                                    <h4>Travis F. – father of three</h4>
+                                    <p>“Back in my school years, I could not imagine that someday children will become so much obsessed with the Internet and communicating with their friends through the texts and social&nbsp;sites instead of meeting for real and spending free time together. Monitoring Internet activity of my own children appeared to be a need. Pumpic is making it easy and lets me control all I need – starting with the tracking of a mobile phone through GPS and up to seeing any keys that were typed in.”</p>
                             </div>
                     </div>
                             

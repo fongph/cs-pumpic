@@ -55,7 +55,7 @@
                                         <section class="fll">
                                             <p>Check out what else you can do with Pumpic</p>
                                             <div class="clearfix">
-                                                <a class="btn-green btn-404 ga-action-click" ga-category="404-CTA-Buttons" ga-action="click" ga-label="features-button" href="/all-features.html">View all Parental Control Features</a>
+                                                <a class="btn-green btn-404 ga-action-click" ga-category="404 CTA Buttons" ga-action="click" ga-label="features-button" href="/all-features.html">View all Parental Control Features</a>
                                             </div>
                                         </section>
                                         <div class="clear"></div>
@@ -64,7 +64,7 @@
                                         <section class="flr">
                                             <p>Learn more about child safety</p>
                                             <div class="clearfix">
-                                                <a class="btn-green btn-404 ga-action-click" href="/security/" ga-category="404-CTA-Buttons" ga-action="click" ga-label="blog-button">Visit Child Security Blog</a>
+                                                <a class="btn-green btn-404 ga-action-click" href="/security/" ga-category="404 CTA Buttons" ga-action="click" ga-label="blog-button">Visit Child Security Blog</a>
                                             </div>
                                         </section>
                                         <div class="clear"></div>

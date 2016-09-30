@@ -166,12 +166,12 @@ description="Pumpic offers high-quality Cell Phone Tracking Software for a good 
                                                                 <span>Save 40%</span> on the 2nd plan. Limited time offer!
                                                             </div>
                                                         </div>
-                                                        <input id='product_price_premium' type='hidden' name='price[productID]' value='{if isset($getDefaultPremium)}{$getDefaultPremium}{else}0{/if}' class="product_price"/>
+                                                        <input id='product_price_premium' type='hidden' name='price[productID]' value='{if isset($defaultIosiCloud)}{$defaultIosiCloud}{else}0{/if}' class="product_price"/>
                                                         <ul>
-                                                            {foreach from=$getProducts.premium key=key item=item}
+                                                            {foreach from=$getProducts.iosiCloud key=key item=item}
                                                                 <li>
                                                                     <label class="label_radio hover_label_radio {if $item.period == '12'}r_on{else}r_off{/if}">
-                                                                        <input class="data-price" data-target=".premium-price-per-month" data-cur="usd" data-price-usd="{$item.price}" data-offer-price-usd="{$getProducts.premiumDouble[$key].price}" data-period="{$item.period}" data-product="{$item.id}" data-offer-product="{$getProducts.premiumDouble[$key].id}" data-group="premium" name="optionsRadios" id="optionsRadios{$item.id}1" value="{$item.id}" type="radio"{if $item.period == '12'} checked="checked"{/if} />
+                                                                        <input class="data-price" data-target=".premium-price-per-month" data-cur="usd" data-price-usd="{$item.price}" data-offer-price-usd="{$getProducts.iosiCloudDouble[$key].price}" data-period="{$item.period}" data-product="{$item.id}" data-offer-product="{$getProducts.iosiCloudDouble[$key].id}" data-group="premium" name="optionsRadios" id="optionsRadios{$item.id}1" value="{$item.id}" type="radio"{if $item.period == '12'} checked="checked"{/if} />
                                                                         <span class="sp">
                                                                             <strong>{$item.period}</strong> {if $item.period == 1}month{else}months{/if}
                                                                         </span>
@@ -187,7 +187,7 @@ description="Pumpic offers high-quality Cell Phone Tracking Software for a good 
                                                                         </div>
                                                                         <div class="package_offer_price">
                                                                             <strong>
-                                                                                <div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr">{$getProducts.premiumDouble[$key].price}</div></div>
+                                                                                <div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr">{$getProducts.iosiCloudDouble[$key].price}</div></div>
                                                                             </strong>
                                                                         </div>
                                                                     </label>
@@ -319,7 +319,7 @@ description="Pumpic offers high-quality Cell Phone Tracking Software for a good 
                                                         <div class="wr_pack_premium wr_icloud"></div>
                                                         <div class="wr_pack_double_premium wr_icloud-double"></div>
                                                         <div class="wr_price_big">
-                                                            <span></span><div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr premium-price-per-month">{$defaultPremiumPrice}</div></div><span>/ month</span>
+                                                            <span></span><div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr premium-price-per-month">{$defaultiCloudProduct}</div></div><span>/ month</span>
                                                         </div>
                                                     </div>
                                                 <div class="list_price icloud-list_price" id="foot_h4">
@@ -330,12 +330,12 @@ description="Pumpic offers high-quality Cell Phone Tracking Software for a good 
                                                                 <span>Save 40%</span> on the 2nd plan. Limited time offer!
                                                             </div>
                                                         </div>
-                                                        <input id='product_price_premium' type='hidden' name='price[productID]' value='{if isset($getDefaultPremium)}{$getDefaultPremium}{else}0{/if}' class="product_price" />
+                                                        <input id='product_price_premium' type='hidden' name='price[productID]' value='{if isset($defaultIosiCloud)}{$defaultIosiCloud}{else}0{/if}' class="product_price" />
                                                         <ul>
-                                                            {foreach from=$getProducts.premium key=key item=item}
+                                                            {foreach from=$getProducts.iosiCloud key=key item=item}
                                                                 <li>
                                                                     <label class="label_radio hover_label_radio {if $item.period == '12'}r_on{else}r_off{/if}">
-                                                                        <input class="data-price" data-target=".premium-price-per-month" data-cur="usd" data-price-usd="{$item.price}" data-offer-price-usd="{$getProducts.premiumDouble[$key].price}" data-period="{$item.period}" data-product="{$item.id}" data-offer-product="{$getProducts.premiumDouble[$key].id}" data-group="premium"  name="optionsRadios" id="optionsRadios{$item.id}2" value="{$item.id}" type="radio"{if $item.period == '12'} checked="checked"{/if} />
+                                                                        <input class="data-price" data-target=".premium-price-per-month" data-cur="usd" data-price-usd="{$item.price}" data-offer-price-usd="{$getProducts.iosiCloudDouble[$key].price}" data-period="{$item.period}" data-product="{$item.id}" data-offer-product="{$getProducts.iosiCloudDouble[$key].id}" data-group="premium"  name="optionsRadios" id="optionsRadios{$item.id}2" value="{$item.id}" type="radio"{if $item.period == '12'} checked="checked"{/if} />
                                                                         <span class="sp">
                                                                             <strong>{$item.period}</strong> {if $item.period == 1}month{else}months{/if}
                                                                         </span>
@@ -351,7 +351,7 @@ description="Pumpic offers high-quality Cell Phone Tracking Software for a good 
                                                                         </div>
                                                                         <div class="package_offer_price">
                                                                             <strong>
-                                                                                <div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr">{$getProducts.premiumDouble[$key].price}</div></div>
+                                                                                <div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr">{$getProducts.iosiCloudDouble[$key].price}</div></div>
                                                                             </strong>
                                                                         </div>
                                                                     </label>
@@ -388,18 +388,18 @@ description="Pumpic offers high-quality Cell Phone Tracking Software for a good 
                                                 <div class="wr_pack_basic android_basic_pack"></div>
                                                 <div class="wr_pack_double_basic android_basic_pack2"></div>
                                                 <div class="wr_price_big">
-                                                    <span></span><div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr andr-basic-price-per-month">{$defaultBasicPrice}</div></div><span> / month</span>
+                                                    <span></span><div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr andr-basic-price-per-month">{$defaultAndriodBasic}</div></div><span> / month</span>
                                                 </div>
 
                                                 <div class="list_price">
                                                     <form name="price_basic" method="POST" action="/buy.html" class="buy-form-with-offer" autocomplete="off">
 
-                                                        <input id='product_price_basic' type='hidden' name='price[productID]' value="{$defaultPremiumProduct}" class="product_price" />
+                                                        <input id='product_price_basic' type='hidden' name='price[productID]' value="{$defaultAndriodBasic}" class="product_price" />
                                                         <ul>
-                                                            {foreach from=$getProducts.basic key=key item=item}
+                                                            {foreach from=$getProducts.androidBasic key=key item=item}
                                                                 <li>
                                                                     <label class="label_radio hover_label_radio {if $item.period == '12'}r_on{else}r_off{/if}">
-                                                                        <input class="data-price" data-target=".andr-basic-price-per-month" data-cur="usd" data-price-usd="{$item.price}" data-offer-price-usd="{$getProducts.basicDouble[$key].price}" data-period="{$item.period}" data-product="{$item.id}" data-offer-product="{$getProducts.basicDouble[$key].id}" data-group="basic"  name="optionsRadios" id="optionsRadios{$item.id}1" value="{$item.id}" type="radio"{if $item.period == '12'} checked="checked"{/if} />
+                                                                        <input class="data-price" data-target=".andr-basic-price-per-month" data-cur="usd" data-price-usd="{$item.price}" data-offer-price-usd="{$getProducts.androidBasicDouble[$key].price}" data-period="{$item.period}" data-product="{$item.id}" data-offer-product="{$getProducts.androidBasicDouble[$key].id}" data-group="basic"  name="optionsRadios" id="optionsRadios{$item.id}1" value="{$item.id}" type="radio"{if $item.period == '12'} checked="checked"{/if} />
                                                                         <span class="sp">
                                                                             <strong>{$item.period}</strong> {if $item.period == 1}month{else}months{/if}
                                                                         </span>
@@ -415,7 +415,7 @@ description="Pumpic offers high-quality Cell Phone Tracking Software for a good 
                                                                         </div>
                                                                         <div class="package_offer_price">
                                                                             <strong>
-                                                                                <div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr">{$getProducts.basicDouble[$key].price}</div></div>
+                                                                                <div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr">{$getProducts.androidBasicDouble[$key].price}</div></div>
                                                                             </strong>
                                                                         </div>
                                                                     </label>
@@ -441,18 +441,18 @@ description="Pumpic offers high-quality Cell Phone Tracking Software for a good 
                                                     <div class="wr_pack_premium android_prem_pack"></div>
                                                     <div class="wr_pack_double_premium android_prem_pack2"></div>
                                                     <div class="wr_price_big">
-                                                        <span></span><div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr andr-premium-price-per-month">{$defaultPremiumPrice}</div></div><span>/ month</span>
+                                                        <span></span><div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr andr-premium-price-per-month">{$defaultAndroidPremiumPrice}</div></div><span>/ month</span>
                                                     </div>
 
                                                     <div class="list_price">
                                                         <form name="price_premium" method="POST" action="/buy.html" class="buy-form-with-offer" autocomplete="off" style="margin-top: 55px;">
-                                                            <input id='product_price_premium' type='hidden' name='price[productID]' value='{if isset($getDefaultPremium)}{$getDefaultPremium}{else}0{/if}' class="product_price"/>
+                                                            <input id='product_price_premium' type='hidden' name='price[productID]' value='{if isset($getDefaultAndroidPremium)}{$getDefaultAndroidPremium}{else}0{/if}' class="product_price"/>
 
                                                             <ul>
-                                                                {foreach from=$getProducts.premium key=key item=item}
+                                                                {foreach from=$getProducts.androidPremium key=key item=item}
                                                                     <li>
                                                                         <label class="label_radio hover_label_radio {if $item.period == '12'}r_on{else}r_off{/if}">
-                                                                            <input class="data-price" data-target=".andr-premium-price-per-month" data-cur="usd" data-price-usd="{$item.price}" data-offer-price-usd="{$getProducts.premiumDouble[$key].price}" data-period="{$item.period}" data-product="{$item.id}" data-offer-product="{$getProducts.premiumDouble[$key].id}" data-group="premium"  name="optionsRadios" id="optionsRadios{$item.id}1" value="{$item.id}" type="radio"{if $item.period == '12'} checked="checked"{/if} />
+                                                                            <input class="data-price" data-target=".andr-premium-price-per-month" data-cur="usd" data-price-usd="{$item.price}" data-offer-price-usd="{$getProducts.androidPremiumDouble[$key].price}" data-period="{$item.period}" data-product="{$item.id}" data-offer-product="{$getProducts.androidPremiumDouble[$key].id}" data-group="premium"  name="optionsRadios" id="optionsRadios{$item.id}1" value="{$item.id}" type="radio"{if $item.period == '12'} checked="checked"{/if} />
                                                                             <span class="sp">
                                                                             <strong>{$item.period}</strong> {if $item.period == 1}month{else}months{/if}
                                                                         </span>
@@ -468,7 +468,7 @@ description="Pumpic offers high-quality Cell Phone Tracking Software for a good 
                                                                             </div>
                                                                             <div class="package_offer_price">
                                                                                 <strong>
-                                                                                    <div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr">{$getProducts.premiumDouble[$key].price}</div></div>
+                                                                                    <div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr">{$getProducts.androidPremiumDouble[$key].price}</div></div>
                                                                                 </strong>
                                                                             </div>
                                                                         </label>
@@ -601,13 +601,13 @@ description="Pumpic offers high-quality Cell Phone Tracking Software for a good 
                                                 <div class="list_price" id="foot_h2">
                                                     <div class="space_line">&nbsp;</div>
                                                     <form name="price_basic_bottom" method="POST" action="/buy.html" class="buy-form-with-offer" autocomplete="off">
-                                                        <input id='product_price_basic' type='hidden' name='price[productID]' value="{$defaultBasicProduct}" class="product_price" />
+                                                        <input id='product_price_basic' type='hidden' name='price[productID]' value="{$defaultAndroidBasicProduct}" class="product_price" />
 
                                                         <ul>
-                                                            {foreach from=$getProducts.basic key=key item=item}
+                                                            {foreach from=$getProducts.androidBasic key=key item=item}
                                                                 <li>
                                                                     <label class="label_radio hover_label_radio {if $item.period == '12'}r_on{else}r_off{/if}">
-                                                                        <input class="data-price" data-target=".andr-basic-price-per-month" data-cur="usd" data-price-usd="{$item.price}" data-offer-price-usd="{$getProducts.basicDouble[$key].price}" data-period="{$item.period}" data-product="{$item.id}" data-offer-product="{$getProducts.basicDouble[$key].id}" data-group="basic"  name="optionsRadios" id="optionsRadios{$item.id}2" value="{$item.id}" type="radio"{if $item.period == '12'} checked="checked"{/if} />
+                                                                        <input class="data-price" data-target=".andr-basic-price-per-month" data-cur="usd" data-price-usd="{$item.price}" data-offer-price-usd="{$getProducts.androidBasicDouble[$key].price}" data-period="{$item.period}" data-product="{$item.id}" data-offer-product="{$getProducts.androidBasicDouble[$key].id}" data-group="basic"  name="optionsRadios" id="optionsRadios{$item.id}2" value="{$item.id}" type="radio"{if $item.period == '12'} checked="checked"{/if} />
                                                                         <span class="sp">
                                                                             <strong>{$item.period}</strong> {if $item.period == 1}month{else}months{/if}
                                                                         </span>
@@ -623,7 +623,7 @@ description="Pumpic offers high-quality Cell Phone Tracking Software for a good 
                                                                         </div>
                                                                         <div class="package_offer_price">
                                                                             <strong>
-                                                                                <div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr">{$getProducts.basicDouble[$key].price}</div></div>
+                                                                                <div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr">{$getProducts.androidBasicDouble[$key].price}</div></div>
                                                                             </strong>
                                                                         </div>
                                                                     </label>
@@ -650,18 +650,18 @@ description="Pumpic offers high-quality Cell Phone Tracking Software for a good 
                                                 <div class="wr_pack_premium android_prem_pack"></div>
                                                 <div class="wr_pack_double_premium android_prem_pack2"></div>
                                                 <div class="wr_price_big">
-                                                    <span></span><div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr andr-premium-price-per-month">{$defaultPremiumPrice}</div></div><span>/ month</span>
+                                                    <span></span><div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr andr-premium-price-per-month">{$defaultAndroidPremiumPrice}</div></div><span>/ month</span>
                                                 </div>
                                                 <div class="list_price" id="foot_h4">
                                                     <div class="space_line">&nbsp;</div>
                                                     <form name="price_premium_bottom" method="POST" action="/buy.html" class="buy-form-with-offer" autocomplete="off">
-                                                        <input id='product_price_premium' type='hidden' name='price[productID]' value='{if isset($getDefaultPremium)}{$getDefaultPremium}{else}0{/if}' class="product_price" />
+                                                        <input id='product_price_premium' type='hidden' name='price[productID]' value='{if isset($getDefaultAndroidPremium)}{$getDefaultAndroidPremium}{else}0{/if}' class="product_price" />
 
                                                         <ul>
-                                                            {foreach from=$getProducts.premium key=key item=item}
+                                                            {foreach from=$getProducts.androidPremium key=key item=item}
                                                                 <li>
                                                                     <label class="label_radio hover_label_radio {if $item.period == '12'}r_on{else}r_off{/if}">
-                                                                        <input class="data-price" data-target=".andr-premium-price-per-month" data-cur="usd" data-price-usd="{$item.price}" data-offer-price-usd="{$getProducts.premiumDouble[$key].price}" data-period="{$item.period}" data-product="{$item.id}" data-offer-product="{$getProducts.premiumDouble[$key].id}" data-group="premium"  name="optionsRadios" id="optionsRadios{$item.id}2" value="{$item.id}" type="radio"{if $item.period == '12'} checked="checked"{/if} />
+                                                                        <input class="data-price" data-target=".andr-premium-price-per-month" data-cur="usd" data-price-usd="{$item.price}" data-offer-price-usd="{$getProducts.androidPremiumDouble[$key].price}" data-period="{$item.period}" data-product="{$item.id}" data-offer-product="{$getProducts.androidPremiumDouble[$key].id}" data-group="premium"  name="optionsRadios" id="optionsRadios{$item.id}2" value="{$item.id}" type="radio"{if $item.period == '12'} checked="checked"{/if} />
                                                                         <span class="sp">
                                                                             <strong>{$item.period}</strong> {if $item.period == 1}month{else}months{/if}
                                                                         </span>
@@ -677,7 +677,7 @@ description="Pumpic offers high-quality Cell Phone Tracking Software for a good 
                                                                         </div>
                                                                         <div class="package_offer_price">
                                                                             <strong>
-                                                                                <div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr">{$getProducts.premiumDouble[$key].price}</div></div>
+                                                                                <div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr">{$getProducts.androidPremiumDouble[$key].price}</div></div>
                                                                             </strong>
                                                                         </div>
                                                                     </label>
@@ -718,13 +718,13 @@ description="Pumpic offers high-quality Cell Phone Tracking Software for a good 
                                                     <span>Save 40%</span> on the 2nd plan. Limited time offer!
                                                 </div>
                                             </div>
-                                            <input id='product_price_premium' type='hidden' name='price[productID]' value='{if isset($getDefaultPremium)}{$getDefaultPremium}{else}0{/if}' class="product_price"/>
+                                            <input id='product_price_premium' type='hidden' name='price[productID]' value='{if isset($getDefaultIosJailbreak)}{$getDefaultiosJailbreak}{else}0{/if}' class="product_price"/>
 
                                             <ul>
-                                                {foreach from=$getProducts.premium key=key item=item}
+                                                {foreach from=$getProducts.iosJailbreak key=key item=item}
                                                     <li>
                                                         <label class="label_radio hover_label_radio {if $item.period == '12'}r_on{else}r_off{/if}">
-                                                            <input class="data-price" data-target=".premium-price-per-month" data-cur="usd" data-price-usd="{$item.price}" data-offer-price-usd="{$getProducts.premiumDouble[$key].price}" data-period="{$item.period}" data-product="{$item.id}" data-offer-product="{$getProducts.premiumDouble[$key].id}" data-group="premium"  name="optionsRadios" id="optionsRadios{$item.id}1" value="{$item.id}" type="radio"{if $item.period == '12'} checked="checked"{/if} />
+                                                            <input class="data-price" data-target=".premium-price-per-month" data-cur="usd" data-price-usd="{$item.price}" data-offer-price-usd="{$getProducts.iosJailbreakDouble[$key].price}" data-period="{$item.period}" data-product="{$item.id}" data-offer-product="{$getProducts.iosJailbreakDouble[$key].id}" data-group="premium"  name="optionsRadios" id="optionsRadios{$item.id}1" value="{$item.id}" type="radio"{if $item.period == '12'} checked="checked"{/if} />
                                                             <span class="sp">
                                                                             <strong>{$item.period}</strong> {if $item.period == 1}month{else}months{/if}
                                                                         </span>
@@ -740,7 +740,7 @@ description="Pumpic offers high-quality Cell Phone Tracking Software for a good 
                                                             </div>
                                                             <div class="package_offer_price">
                                                                 <strong>
-                                                                    <div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr">{$getProducts.premiumDouble[$key].price}</div></div>
+                                                                    <div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr">{$getProducts.iosJailbreakDouble[$key].price}</div></div>
                                                                 </strong>
                                                             </div>
                                                         </label>
@@ -924,7 +924,7 @@ description="Pumpic offers high-quality Cell Phone Tracking Software for a good 
                                             <div class="wr_pack_premium wr_icloud_jb"></div>
                                             <div class="wr_pack_double_premium wr_icloud_jb-double"></div>
                                             <div class="wr_price_big">
-                                                <span></span><div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr premium-price-per-month">{$defaultPremiumPrice}</div></div><span>/ month</span>
+                                                <span></span><div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr premium-price-per-month">{$defaultIosJailbreakPrice}</div></div><span>/ month</span>
                                             </div>
                                         </div>
                                         <div class="list_price icloud-list_price" id="foot_h4">
@@ -935,12 +935,12 @@ description="Pumpic offers high-quality Cell Phone Tracking Software for a good 
                                                         <span>Save 40%</span> on the 2nd plan. Limited time offer!
                                                     </div>
                                                 </div>
-                                                <input id='product_price_premium' type='hidden' name='price[productID]' value='{if isset($getDefaultPremium)}{$getDefaultPremium}{else}0{/if}' class="product_price" />
+                                                <input id='product_price_premium' type='hidden' name='price[productID]' value='{if isset($getDefaultIosJailbreak)}{$getDefaultIosJailbreak}{else}0{/if}' class="product_price" />
                                                 <ul>
-                                                    {foreach from=$getProducts.premium key=key item=item}
+                                                    {foreach from=$getProducts.iosJailbreak key=key item=item}
                                                         <li>
                                                             <label class="label_radio hover_label_radio {if $item.period == '12'}r_on{else}r_off{/if}">
-                                                                <input class="data-price" data-target=".premium-price-per-month" data-cur="usd" data-price-usd="{$item.price}" data-offer-price-usd="{$getProducts.premiumDouble[$key].price}" data-period="{$item.period}" data-product="{$item.id}" data-offer-product="{$getProducts.premiumDouble[$key].id}" data-group="premium"  name="optionsRadios" id="optionsRadios{$item.id}2" value="{$item.id}" type="radio"{if $item.period == '12'} checked="checked"{/if} />
+                                                                <input class="data-price" data-target=".premium-price-per-month" data-cur="usd" data-price-usd="{$item.price}" data-offer-price-usd="{$getProducts.iosJailbreakDouble[$key].price}" data-period="{$item.period}" data-product="{$item.id}" data-offer-product="{$getProducts.iosJailbreakDouble[$key].id}" data-group="premium"  name="optionsRadios" id="optionsRadios{$item.id}2" value="{$item.id}" type="radio"{if $item.period == '12'} checked="checked"{/if} />
                                                                 <span class="sp">
                                                                             <strong>{$item.period}</strong> {if $item.period == 1}month{else}months{/if}
                                                                         </span>
@@ -956,7 +956,7 @@ description="Pumpic offers high-quality Cell Phone Tracking Software for a good 
                                                                 </div>
                                                                 <div class="package_offer_price">
                                                                     <strong>
-                                                                        <div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr">{$getProducts.premiumDouble[$key].price}</div></div>
+                                                                        <div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr">{$getProducts.iosJailbreakDouble[$key].price}</div></div>
                                                                     </strong>
                                                                 </div>
                                                             </label>

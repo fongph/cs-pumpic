@@ -1,5 +1,5 @@
 .bg-404 {
-  background: #6e9c99 url("../images/404/bg_404.png") no-repeat scroll 50% 0;
+  background: #6e9c99 url("../images/404/bg-404.png") no-repeat scroll 50% 0;
   background-size: cover;
   padding: 58px 0px 110px;
 }
@@ -7,13 +7,21 @@
 .img-404 {
   display: block;
   margin: 0 auto;
-  max-width: 476px;
-  max-height: 266px;
-  padding-bottom: 20px;
+  //max-width: 476px;
+  //max-height: 266px;
+  //padding-bottom: 20px;
   position: relative;
   text-align: center;
   width: 100%;
 }
+.heading-404 {
+  font-size: 23px;
+  color: #ffffff;
+  font-weight: 300;
+  text-align: center;
+  max-width: 665px;
+  margin: 0 auto 20px;
+   }
 
 .box-404 .item-404 {
   position: relative;
@@ -31,7 +39,11 @@
   span.title, p {
     text-align: center;
     display: block;
-    font-size: 20px;
+    font-size: 16px;
+  }
+  .btn-green {
+    font-size: 16px;
+    font-weight: normal;
   }
   span.title {
     color: #4d4f5b;
@@ -80,6 +92,20 @@
     padding: 20px 0px;
   }
   .box-404 .item-404 {
+    p {
+      font-size: 14px;
+    }
+  }
+  .box-404 .item-404 .btn-green.btn-404 {
+    font-size: 14px;
+    margin-bottom: 5px;
+    display: inline-block;
+  }
+  .heading-404 {
+    font-size: 16px;
+  }
+
+  .box-404 .item-404 {
     margin-top: 10px;
     padding-right: 15px;
     padding-left: 15px;
@@ -113,6 +139,10 @@
   .bg-404 {
     padding: 20px 0px;
   }
+  .box-404 .item-404 .btn-green.btn-404 {
+    display: inline-block;
+  }
+
   .box-404 .item-404 {
     margin-top: 10px;
     padding-right: 15px;
@@ -149,7 +179,7 @@
   }
   .box-404 .item-404 {
     margin-top: 0px;
-    padding-right: 65px;
+    //padding-right: 65px;
     padding-left: 20px;
     &:first-child {
       padding-left: 0px;

@@ -317,6 +317,15 @@ class Order extends ManagerUser
                 elseif (strpos($plan, 'android-premium') === 0) {
                     self::$_data['androidPremium'][$period] = array_merge($data, ['period' => $period]);
                 }
+                elseif (strpos($plan, 'premium-double') === 0) {
+                    self::$_data['premiumDouble'][$period] = array_merge($data, ['period' => $period]);
+                } elseif (strpos($plan, 'basic-double') === 0) {
+                    self::$_data['basicDouble'][$period] = array_merge($data, ['period' => $period]);
+                } elseif (strpos($plan, 'premium') === 0) {
+                    self::$_data['premium'][$period] = array_merge($data, ['period' => $period]);
+                } elseif (strpos($plan, 'basic') === 0) {
+                    self::$_data['basic'][$period] = array_merge($data, ['period' => $period]);
+                }
             }
         }
 

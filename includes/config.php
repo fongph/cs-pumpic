@@ -132,7 +132,7 @@ $config = array(
 		'ver_android_bot'       => '2.2',
 		'ver_ios_up'            => '9.1',
 		'ver_ios_bot'           => '6.0',
-		'ver_icloud_up'         => '10.0.1',
+		'ver_icloud_up'         => '10.0.2',
 		'ver_icloud_bot'        => '6.0',
 
 		'cron' => array(

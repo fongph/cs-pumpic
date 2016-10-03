@@ -43,8 +43,6 @@ description="Pumpic offers high-quality Cell Phone Tracking Software for a good 
 
     {**}
     {*{$getProducts.basicDouble|@debug_print_var}*}
-    {if $deviceType == 'computer'} HEKJFFJFJJF {/if}
-
     <div class="no_bg">
         <div class="container">
             <div class="row">

@@ -5,16 +5,10 @@ $b_dir = dirname( $_inc ); // folder sites directory
 require_once $_inc.'/config.php';
 require_once $_inc.'/lib/Currency.php';
 require_once $_inc.'/lib/users/Order.php';
-require_once $_inc.'/../vendor/mobiledetect/mobiledetectlib/Mobile_Detect.php';
 $obj = new includes\lib\users\Order;
 
 // smarty config
 require_once 'smarty.config.php';
-
-/* get device */
-$detect = new Mobile_Detect;
-$deviceType = ($detect->isMobile() ? ($detect->isTablet() ? 'tablet' : 'phone') : 'computer');
-// init output params!
 
 
 /* list order */

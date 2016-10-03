@@ -19019,6 +19019,7 @@ i {
   background: #6e9c99 url("../images/404/bg-404.png") no-repeat scroll 50% 0;
   background-size: cover;
   padding: 58px 0px 110px;
+  line-height: 1.4;
 }
 
 .img-404 {
@@ -19052,6 +19053,9 @@ i {
   }
   > section {
     position: relative;
+  }
+  p {
+    color: #ffffff;
   }
   span.title, p {
     text-align: center;

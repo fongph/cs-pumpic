@@ -41,7 +41,7 @@
                 <div class="row">
                     <div class="col-lg-10 col-md-12 col-sm-12 col-lg-offset-1 col-md-offset-0 col-sm-offset-0">
                         <div class="row">
-                            <div class="col-lg-offset-2 col-lg-8 col-md-offset-3 col-md-6 col-sm-offset-3 col-sm-6">
+                            <div class="col-lg-offset-3 col-lg-6 col-md-offset-3 col-md-6 col-sm-offset-3 col-sm-6">
                                 <img class="img-404" src="{$img}/404/img-404.png" />
                             </div>
                         </div>

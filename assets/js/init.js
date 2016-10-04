@@ -1919,18 +1919,23 @@ $(document).ready(function () {
         event.preventDefault();
         $('.basic_fe').css("margin-top", "90px");
         $('.basic_fe').hide();
-    }
-    );
+    });
     $('.show_premium_features a').toggle(
             function (event) {
                 event.preventDefault();
                 $('.premium_fe').css("margin-top", "10px");
                 $('.premium_fe').show();
+                $('.show-f').hide();
+                $('.hide-f').show();
+                $('.prod-2').show();
             }, function (event) {
         event.preventDefault();
         $('.premium_fe').css("margin-top", "90px");
         $('.premium_fe').hide();
-    }
+        $('.show-f').show();
+        $('.hide-f').hide();
+        $('.prod-2').hide();
+        }
     );
     $("input[name='optionsRadios']").each(function () {
         //console.log(this.getAttribute("checked"));
@@ -1942,7 +1947,23 @@ $(document).ready(function () {
             $(this).parents('form').children('.product_price').val($(this).val());
         }
     });
-
+    
+    // function stickyHeader(header, currentPos) {
+    //     window.addEventListener('scroll', function (e) {
+    //         var distanceY = window.pageYOffset || document.documentElement.scrollTop;
+    //
+    //         if (distanceY > currentPos) {
+    //             header.addClass("sticky");
+    //         }
+    //         else {
+    //             header.removeClass("sticky");
+    //         }
+    //     });
+    // }
+    //
+    // var myheader = $("#save_1");
+    // console.log(myheader)
+    // stickyHeader(myheader, myheader.offset.top());
     /*$("input[name='optionsRadios']").filter(':checked').each(function(){
 
      var curr  = $(this);

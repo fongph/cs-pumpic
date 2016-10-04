@@ -58,18 +58,19 @@ description="Pumpic offers high-quality Cell Phone Tracking Software for a good 
                                 <caption>
                                     <div class="filter_fe">
                                         <ul class="filter_list">
-                                            <li id="filter-ios" class="filter_item filter-active"><i class="icon-apple filter_icon"></i><b>iOS</b> <span class="filter_version">{$ver_icloud_bot} - {$ver_icloud_up} (iCloud solution)</span></li>
-                                            <li id="filter-android" class="filter_item"><i class="icon-android filter_icon"></i><b>Android</b> <span class="filter_version">({$ver_android_bot} - {$ver_android_up})</span></li>
-                                            <li id="filter-ios-jb" class="filter_item"><i class="icon-apple filter_icon"></i><b>iOS</b><span class="filter_version"> {$ver_ios_bot} - {$ver_jailbreak_up} (jailbreak solution)</span></li>
+                                            <li id="filter-ios" class="filter_item filter-active"><i class="icon-apple filter_icon"></i><b>iOS</b> <span class="filter_version _version-hide-xs">{$ver_icloud_bot} - {$ver_icloud_up}</span><span class="filter_version"> (iCloud)</span></li>
+                                            <li id="filter-android" class="filter_item"><i class="icon-android filter_icon"></i><b>Android</b> <span class="filter_version _version-hide-xs">({$ver_android_bot} - {$ver_android_up})</span></li>
+                                            <li id="filter-ios-jb" class="filter_item"><i class="icon-apple filter_icon"></i><b>iOS</b><span class="filter_version _version-hide-xs"> {$ver_ios_bot} - {$ver_jailbreak_up}</span><span class="filter_version"> (jailbreak)</span></li>
                                         </ul>
                                     </div>
-                                    <div class="prod-head">
+                                    <div class="prod-head clearfix">
                                         {*---LIST ICLOUD---*}
                                         <div id="prod-list-ios">
-                                            <div class="row m0">
-                                                <div class="col-sm-6 col-md-5 col-md-offset-1">
+                                                <div class="col-sm-6 small-mobile-pd">
+                                                <div class="prod-wrap">
+                                                <div class="prod-short-inf">
                                                     <div class="prod-head__img"><img src="/images/icloud-pack.png" alt="..."></div>
-                                                <p class="prod-head__version"><i class="icon-apple filter_icon"></i><b>iOS {$ver_icloud_bot} - {$ver_icloud_up}</b></p>
+                                                    <p class="prod-head__version"><i class="icon-apple filter_icon"></i><b>iOS {$ver_icloud_bot} - {$ver_icloud_up}</b></p>
                                                     <p>
                                                         <span class="prod-head__device phone">iPhone</span>
                                                         <span class="prod-head__device tablet">iPad</span>
@@ -77,48 +78,51 @@ description="Pumpic offers high-quality Cell Phone Tracking Software for a good 
                                                     </p>
                                                     <p class="prod-head__price"><span>starting from </span><b>$6.99/</b><span> month</span></p>
                                                 </div>
-                                                <div class="col-sm-6">
-
-                                                    <ul class="prod-list">
-                                                        <li><span>Monitor iPhone, iPad, iPod Touch without jailbreak</span></li>
-                                                        <li><span>Needs NO APP to be installed on the monitored device</span></li>
-                                                        <li><span>Target iCloud (Apple ID) password is required</span></li>
-                                                        <li><span>Might require physical access to check/adjust settings</span></li>
-                                                    </ul>
-                                                    <a href="#icloud-features-h" class="a-default prod-features">features</a>
                                                     </div>
-                                                </div>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                    <ul class="prod-list">
+                                                    <li><span>Monitor iPhone, iPad, iPod Touch without jailbreak</span></li>
+                                                    <li><span>Needs NO APP to be installed on the monitored device</span></li>
+                                                    <li><span>Target iCloud (Apple ID) password is required</span></li>
+                                                    <li><span>Might require physical access to check/adjust settings</span></li>
+                                                </ul>
+                                                <a href="#icloud-features-h" class="a-default prod-features hidden-xs">features</a>
                                             </div>
+                                        </div>
                                         {*---LIST ICLOUD---*}
                                         {*---LIST ANDROID---*}
                                         <div id="prod-list-android" style="display: none;">
-                                            <div class="row m0">
-                                                <div class="col-sm-6 col-md-5 col-md-offset-1">
+                                            <div class="col-sm-6 small-mobile-pd">
+                                            <div class="prod-wrap">
+                                                <div class="prod-short-inf">
                                                     <div class="prod-head__img"><img src="/images/android-pack.png" alt="..."></div>
-                                                <p class="prod-head__version"><i class="icon-android filter_icon"></i><b>Android {$ver_android_bot} - {$ver_android_up}</b></p>
+                                                    <p class="prod-head__version"><i class="icon-android filter_icon"></i><b>Android {$ver_android_bot} - {$ver_android_up}</b></p>
                                                     <p>
                                                         <span class="prod-head__device phone">Smartphone</span>
                                                         <span class="prod-head__device tablet">Tablet</span>
                                                     </p>
-                                                    <p class="prod-head__price"><span>starting from </span><b>$6.99/</b><span> month</span></p>
+                                                    <p class="prod-head__price"><span>starting from </span><b>$5.33/</b><span> month</span></p>
+                                                </div>
+                                                </div>
                                                 </div>
                                                 <div class="col-sm-6">
-
-                                                    <ul class="prod-list">
-                                                        <li><span>Monitor and manage Android smartphones & tablets</span></li>
-                                                        <li><span>Physical access to install the app on the target device is required</span></li>
-                                                        <li><span>The app is visible but password-protected</span></li>
-                                                        <li><span>Root might be needed for <a href="#root-h" class="prod-list__link">some monitoring features</a></span></li>
-                                                    </ul>
-                                                    <a href="#android-features-h" class="a-default prod-features">features</a>
-                                                    </div>
-                                                </div>
+                                                <ul class="prod-list">
+                                                    <li><span>Monitor and manage Android smartphones & tablets</span></li>
+                                                    <li><span>Physical access to install the app on the target device is required</span></li>
+                                                    <li><span>The app is visible but password-protected</span></li>
+                                                    <li class="hidden-xs"><span>Root might be needed for <a href="#root-h" class="prod-list__link hidden-xs">some monitoring features</a><span class="visible-xs">some monitoring features</span></span></li>
+                                                    <li class="visible-xs"><span>Root might be needed for some monitoring features</span></span></li>
+                                                </ul>
+                                                <a href="#android-features-h" class="a-default prod-features hidden-xs">features</a>
                                             </div>
+                                        </div>
                                         {*---LIST ANDROID---*}
                                         {*---LIST-IOS-JB---*}
                                         <div id="prod-list-ios-jb" style="display: none;">
-                                            <div class="row m0">
-                                                <div class="col-sm-6 col-md-5 col-md-offset-1">
+                                            <div class="col-sm-6 small-mobile-pd">
+                                            <div class="prod-wrap">
+                                                <div class="prod-short-inf">
                                                     <div class="prod-head__img"><img src="/images/jb-pack.png" alt="..."></div>
                                                     <p class="prod-head__version"><i class="icon-apple filter_icon"></i><b>iOS {$ver_ios_bot} - {$ver_jailbreak_up}</b></p>
                                                     <p>
@@ -128,14 +132,15 @@ description="Pumpic offers high-quality Cell Phone Tracking Software for a good 
                                                     </p>
                                                     <p class="prod-head__price"><span>starting from </span><b>$6.99/</b><span> month</span></p>
                                                 </div>
-                                                <div class="col-sm-6">
-                                                    <ul class="prod-list">
-                                                        <li><span>Extended iOS devices monitoring and control options</span></li>
-                                                        <li><span>Physical access and target device jailbreak are required</span></li>
-                                                        <li><span>The app is visible but password-protected</span></li>
-                                                    </ul>
-                                                    <a href="#jb-features-h" class="a-default prod-features">features</a>
                                                 </div>
+                                                </div>
+                                            <div class="col-sm-6">
+                                            <ul class="prod-list">
+                                                    <li><span>Extended iOS devices monitoring and control options</span></li>
+                                                    <li><span>Physical access and target device jailbreak are required</span></li>
+                                                    <li><span>The app is visible but password-protected</span></li>
+                                                </ul>
+                                                <a href="#jb-features-h" class="a-default prod-features hidden-xs">features</a>
                                             </div>
                                         </div>
                                         {*---LIST-IOS-JB---*}
@@ -163,7 +168,7 @@ description="Pumpic offers high-quality Cell Phone Tracking Software for a good 
                                                         <div class="save__2plan">
                                                             <div class="save__text">
                                                                 <input type="checkbox" data-group="premium" name="android-40off" id="android-40off-main">
-                                                                <span>Save 40%</span> on the 2nd plan. Limited time offer!
+                                                                <span>Save 40%</span> on the 2nd plan. <div>Limited time offer!</div>
                                                             </div>
                                                         </div>
                                                         <input id='product_price_premium' type='hidden' name='price[productID]' value='{if isset($defaultIosiCloud)}{$defaultIosiCloud}{else}0{/if}' class="product_price"/>
@@ -200,8 +205,9 @@ description="Pumpic offers high-quality Cell Phone Tracking Software for a good 
                                                                 ga-category="store"
                                                                 ga-label="buy premium"
                                                                 value="true" type="submit" name="price[submit]">Buy</button>
-                                                        <div class="show_premium_features"><a href="#">Show Premium features</a></div>
                                                     </form>
+                                                    <div class="show_premium_features"><a href="#"><span class="show-f">Show Premium features <i class="fa fa-chevron-down"></i></span><span class="hide-f" style="display: none;">Hide Premium features  <i class="fa fa-chevron-up"></i></span></a></div>
+
                                                 </div>
                                                 <div class="premium_fe">
                                                     <div class="premium_h" style="text-transform: none;" id="icloud-features-h">
@@ -308,13 +314,16 @@ description="Pumpic offers high-quality Cell Phone Tracking Software for a good 
                                                         <li data-toggle="tooltip" data-placement="top" title="Monitor Apple devices without jailbreak. View Calls, Text messages, Photos, Location, Notes, Contacts, Browsing History, Bookmarks, Calendar, Skype, and WhatsApp.<div class='br'><strong>Note: Two-step verification must be disabled in the account of the target device.</strong></div>"><i class="icon-ok"></i>  <strong style="font-size: 14px">iCloud Monitoring</strong>  <span class="fz13">(without jailbreak up to iOS {$ver_icloud_up})</span></li>
 
                                                     </ul>
+                                                    <div class="table_title free-label">
+                                                        <h3 class="free-label__headname">FREE:</h3>
+                                                        <span class="free-label__item"><i class="icon-ok"></i>Remote control panel</span>
+                                                        <span class="free-label__item"><i class="icon-ok"></i>Software updates</span>
+                                                    </div>
+                                                    <div class="show_premium_features"><a href="#"><span class="show-f">Show Premium features <i class="fa fa-chevron-down"></i></span><span class="hide-f" style="display: none;">Hide Premium features  <i class="fa fa-chevron-up"></i></span></a></div>
+
                                                 </div>
-                                                <div class="table_title mobile-off free-label">
-                                                    <h3 class="free-label__headname">FREE:</h3>
-                                                    <span class="free-label__item"><i class="icon-ok"></i>Remote control panel</span>
-                                                    <span class="free-label__item"><i class="icon-ok"></i>Software updates</span>
-                                                </div>
-                                                <div class="prod-icloud">
+
+                                                <div class="prod-icloud prod-2">
                                                     <div class="wrapper_pack wrapper_pack2 clearfix">
                                                         <div class="wr_pack_premium wr_icloud"></div>
                                                         <div class="wr_pack_double_premium wr_icloud-double"></div>
@@ -327,7 +336,7 @@ description="Pumpic offers high-quality Cell Phone Tracking Software for a good 
                                                         <div class="save__2plan save__second" style="top: 0;">
                                                             <div class="save__text">
                                                                 <input type="checkbox" data-group="premium" name="android-40off">
-                                                                <span>Save 40%</span> on the 2nd plan. Limited time offer!
+                                                                <span>Save 40%</span> on the 2nd plan. <div>Limited time offer!</div>
                                                             </div>
                                                         </div>
                                                         <input id='product_price_premium' type='hidden' name='price[productID]' value='{if isset($defaultIosiCloud)}{$defaultIosiCloud}{else}0{/if}' class="product_price" />
@@ -377,7 +386,7 @@ description="Pumpic offers high-quality Cell Phone Tracking Software for a good 
                                             <div class="save__2plan">
                                                 <div class="save__text">
                                                     <input type="checkbox" data-group="basic" name="android-40off" data-checkboxes="android-40off-main">
-                                                    <span>Save 40%</span> on the 2nd plan. Limited time offer!
+                                                    <span>Save 40%</span> on the 2nd plan. <div>Limited time offer!</div>
                                                 </div>
                                             </div>
                                         <div class="basic_wr">
@@ -385,12 +394,13 @@ description="Pumpic offers high-quality Cell Phone Tracking Software for a good 
                                                 Basic
                                             </div>
                                             <div class="priceb">
+                                                <div class="wrapper_pack clearfix">
                                                 <div class="wr_pack_basic android_basic_pack"></div>
                                                 <div class="wr_pack_double_basic android_basic_pack2"></div>
                                                 <div class="wr_price_big">
                                                     <span></span><div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr andr-basic-price-per-month">{$defaultAndriodBasic}</div></div><span> / month</span>
                                                 </div>
-
+                                                </div>
                                                 <div class="list_price">
                                                     <form name="price_basic" method="POST" action="/buy.html" class="buy-form-with-offer" autocomplete="off">
 
@@ -438,14 +448,15 @@ description="Pumpic offers high-quality Cell Phone Tracking Software for a good 
                                                     Premium
                                                 </div>
                                                 <div class="pricep">
+                                                    <div class="wrapper_pack clearfix">
                                                     <div class="wr_pack_premium android_prem_pack"></div>
                                                     <div class="wr_pack_double_premium android_prem_pack2"></div>
                                                     <div class="wr_price_big">
                                                         <span></span><div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr andr-premium-price-per-month">{$defaultAndroidPremiumPrice}</div></div><span>/ month</span>
                                                     </div>
-
+                                                    </div>
                                                     <div class="list_price">
-                                                        <form name="price_premium" method="POST" action="/buy.html" class="buy-form-with-offer" autocomplete="off" style="margin-top: 55px;">
+                                                        <form name="price_premium" method="POST" action="/buy.html" class="buy-form-with-offer" autocomplete="off">
                                                             <input id='product_price_premium' type='hidden' name='price[productID]' value='{if isset($getDefaultAndroidPremium)}{$getDefaultAndroidPremium}{else}0{/if}' class="product_price"/>
 
                                                             <ul>
@@ -584,7 +595,7 @@ description="Pumpic offers high-quality Cell Phone Tracking Software for a good 
                                             <div class="save__2plan">
                                                 <div class="save__text">
                                                     <input type="checkbox" data-group="basic" name="android-40off" data-checkboxes="android-40off-main">
-                                                    <span>Save 40%</span> on the 2nd plan. Limited time offer!
+                                                    <span>Save 40%</span> on the 2nd plan. <div>Limited time offer!</div>
                                                 </div>
                                             </div>
                                         <div class="basic_wr">
@@ -593,11 +604,14 @@ description="Pumpic offers high-quality Cell Phone Tracking Software for a good 
                                             </div>
 
                                             <div class="priceb">
+                                                <div class="wrapper_pack clearfix">
+
                                                 <div class="wr_pack_basic android_basic_pack"></div>
                                                 <div class="wr_pack_double_basic android_basic_pack2"></div>
                                                 <div class="wr_price_big">
                                                     <span></span><div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr andr-basic-price-per-month">{$defaultBasicPrice}</div></div><span> / month</span>
                                                 </div>
+                                                    </div>
                                                 <div class="list_price" id="foot_h2">
                                                     <div class="space_line">&nbsp;</div>
                                                     <form name="price_basic_bottom" method="POST" action="/buy.html" class="buy-form-with-offer" autocomplete="off">
@@ -647,11 +661,13 @@ description="Pumpic offers high-quality Cell Phone Tracking Software for a good 
                                                 Premium
                                             </div>
                                             <div class="pricep">
+                                                <div class="wrapper_pack clearfix">
                                                 <div class="wr_pack_premium android_prem_pack"></div>
                                                 <div class="wr_pack_double_premium android_prem_pack2"></div>
                                                 <div class="wr_price_big">
                                                     <span></span><div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr andr-premium-price-per-month">{$defaultAndroidPremiumPrice}</div></div><span>/ month</span>
                                                 </div>
+                                                    </div>
                                                 <div class="list_price" id="foot_h4">
                                                     <div class="space_line">&nbsp;</div>
                                                     <form name="price_premium_bottom" method="POST" action="/buy.html" class="buy-form-with-offer" autocomplete="off">
@@ -715,7 +731,7 @@ description="Pumpic offers high-quality Cell Phone Tracking Software for a good 
                                             <div class="save__2plan">
                                                 <div class="save__text">
                                                     <input type="checkbox" data-group="premium" name="android-40off" id="android-40off-main">
-                                                    <span>Save 40%</span> on the 2nd plan. Limited time offer!
+                                                    <span>Save 40%</span> on the 2nd plan. <div>Limited time offer!</div>
                                                 </div>
                                             </div>
                                             <input id='product_price_premium' type='hidden' name='price[productID]' value='{if isset($getDefaultIosJailbreak)}{$getDefaultiosJailbreak}{else}0{/if}' class="product_price"/>
@@ -932,7 +948,7 @@ description="Pumpic offers high-quality Cell Phone Tracking Software for a good 
                                                 <div class="save__2plan save__second" style="top: 0;">
                                                     <div class="save__text">
                                                         <input type="checkbox" data-group="premium" name="android-40off">
-                                                        <span>Save 40%</span> on the 2nd plan. Limited time offer!
+                                                        <span>Save 40%</span> on the 2nd plan. <div>Limited time offer!</div>
                                                     </div>
                                                 </div>
                                                 <input id='product_price_premium' type='hidden' name='price[productID]' value='{if isset($getDefaultIosJailbreak)}{$getDefaultIosJailbreak}{else}0{/if}' class="product_price" />
@@ -979,7 +995,6 @@ description="Pumpic offers high-quality Cell Phone Tracking Software for a good 
                                         {* ---JAILBREAK---*}
                                     </th>
                                 </tr>
-
                                 </thead>
                             </table>
                             <div class="table_header">

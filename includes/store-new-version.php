@@ -10,7 +10,6 @@ $obj = new includes\lib\users\Order;
 // smarty config
 require_once 'smarty.config.php';
 
-
 /* list order */
 $products = $obj ->getProducts('second');
 
@@ -82,7 +81,5 @@ $smarty->assign('rates', json_encode($_rates));
 // init output params!
 $smarty->assign('getProducts', $products);
 
-$smarty->assign('deviceType', $deviceType);
-
 // init output params
-$smarty->display($b_dir.'/templates/pages/store-new-version.tpl');
+$smarty->display($b_dir.'/templates/pages/store.tpl');

@@ -1,7 +1,7 @@
-@media (min-width: 768px) {
-.save__text div {
+.save__text .limited-time {
   display: inline;
 }
+@media (min-width: 768px) {
   .prod-icloud {
     padding-top: 70px;
   }
@@ -63,9 +63,6 @@
   }
   .icloud-features {
     background-color: transparent;
-  }
-  .save__text div {
-    display: inline;
   }
   .show_premium_features a,.show_basic_features a {
     display: block;
@@ -133,8 +130,17 @@
     min-width: 280px;
     width: 40%;
   }
-  .save__text div {
-    display: block;
+}
+@media (max-width: 540px) {
+  .save__text {
+    font-size: 18px;
+    line-height: 1.4;
+    .limited-time {
+      display: block;
+    }
+  }
+  .premium_wr .pricep, .basic_wr .priceb {
+    padding-top: 80px;
   }
 }
 @media (max-width: 355px) {

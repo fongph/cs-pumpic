@@ -70,7 +70,8 @@ if(is_array($products)) {
     }
 
 }
-
+//var_dump($products);
+//die();
 // currency
 $_curr = system\Currency::getInstance();
 $_curr -> setFilter( ['iso' => ['USD','EUR','GBP','CAD','AUD'] ] );
@@ -82,4 +83,4 @@ $smarty->assign('rates', json_encode($_rates));
 $smarty->assign('getProducts', $products);
 
 // init output params
-$smarty->display($b_dir.'/templates/pages/store.tpl');
+$smarty->display($b_dir.'/templates/pages/store-new-version.tpl');

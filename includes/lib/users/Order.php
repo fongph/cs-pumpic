@@ -289,11 +289,35 @@ class Order extends ManagerUser
     public function getProducts($namespace) 
     {
         $plans = $this->_billing->getSiteProducts(self::SITE_ID, $namespace);
-        
+
         if(count($plans) > 0) {
             foreach($plans as $plan => $data) {
                 $period = $this->_numbers($plan);
-                if (strpos($plan, 'premium-double') === 0) {
+                if (strpos($plan, 'ios-icloud-double') === 0) {
+                    self::$_data['iosiCloudDouble'][$period] = array_merge($data, ['period' => $period]);
+                }
+                elseif (strpos($plan, 'ios-jailbreak-double') === 0) {
+                    self::$_data['iosJailbreakDouble'][$period] = array_merge($data, ['period' => $period]);
+                }
+                elseif (strpos($plan, 'android-basic-double') === 0) {
+                    self::$_data['androidBasicDouble'][$period] = array_merge($data, ['period' => $period]);
+                }
+                elseif (strpos($plan, 'android-premium-double') === 0) {
+                    self::$_data['androidPremiumDouble'][$period] = array_merge($data, ['period' => $period]);
+                }
+                elseif (strpos($plan, 'ios-icloud') === 0) {
+                    self::$_data['iosiCloud'][$period] = array_merge($data, ['period' => $period]);
+                }
+                elseif (strpos($plan, 'ios-jailbreak') === 0) {
+                    self::$_data['iosJailbreak'][$period] = array_merge($data, ['period' => $period]);
+                }
+                elseif (strpos($plan, 'android-basic') === 0) {
+                    self::$_data['androidBasic'][$period] = array_merge($data, ['period' => $period]);
+                }
+                elseif (strpos($plan, 'android-premium') === 0) {
+                    self::$_data['androidPremium'][$period] = array_merge($data, ['period' => $period]);
+                }
+                elseif (strpos($plan, 'premium-double') === 0) {
                     self::$_data['premiumDouble'][$period] = array_merge($data, ['period' => $period]);
                 } elseif (strpos($plan, 'basic-double') === 0) {
                     self::$_data['basicDouble'][$period] = array_merge($data, ['period' => $period]);

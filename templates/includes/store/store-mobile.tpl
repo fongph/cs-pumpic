@@ -1,31 +1,24 @@
 <script>
-    $(document).load({
-        //get Android page depended of client width
-        var deviceWidth = $(window).width();
-    $.get('store-new-version.php', { deviceWidth: deviceWidth })
-            .done(function(data) {
-                $('.prod-list-android').append(data);
-            });
-    });
-    $(function() {
-        var stickyHeader = function() {
-            var sticky = $('.save__2plan'),
-                    stickyHeight = sticky.height(),
-                    translateYVal = "-"+ stickyHeight,
-                    offset = sticky.offset().top + stickyHeight;
-            console.log(offset)
-            sticky.css({'translateY':translateYVal});
-            $(window).scroll(function(){
-                var scroll = $(window).scrollTop();
-                if (scroll >= offset) {
-                    sticky.addClass('sticky');
-                } else {
-                    sticky.removeClass('sticky');
-                }
-            });
-        }
-        stickyHeader();
-    });
+    {**}
+    {*$(function() {*}
+        {*var stickyHeader = function() {*}
+            {*var sticky = $('.save__2plan'),*}
+                    {*stickyHeight = sticky.height(),*}
+                    {*translateYVal = "-"+ stickyHeight,*}
+                    {*offset = sticky.offset().top + stickyHeight;*}
+            {*console.log(offset)*}
+            {*sticky.css({'translateY':translateYVal});*}
+            {*$(window).scroll(function(){*}
+                {*var scroll = $(window).scrollTop();*}
+                {*if (scroll >= offset) {*}
+                    {*sticky.addClass('sticky');*}
+                {*} else {*}
+                    {*sticky.removeClass('sticky');*}
+                {*}*}
+            {*});*}
+        {*}*}
+        {*stickyHeader();*}
+    {*});*}
 </script>
 
 <div class="save__2plan">
@@ -43,7 +36,7 @@
             <div class="wr_pack_basic android_basic_pack"></div>
             <div class="wr_pack_double_basic android_basic_pack2"></div>
             <div class="wr_price_big">
-                <span></span><div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr andr-basic-price-per-month">{$defaultAndriodBasic}</div></div><span> / month</span>
+                <span></span><div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr andr-basic-price-per-month">{$defaultAndriodBasicPrice}</div></div><span> / month</span>
             </div>
         </div>
         <div class="show_basic_features _android-f"><a href="#"><span class="show-f _android-f">Show Basic features <i class="fa fa-chevron-down"></i></span><span class="hide-f _android-f" style="display: none;">Hide Basic features  <i class="fa fa-chevron-up"></i></span></a></div>

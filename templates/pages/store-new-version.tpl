@@ -8,10 +8,23 @@ description="Pumpic offers high-quality Cell Phone Tracking Software for a good 
 }
 
 <body>
+
 <!-- BLOCK GTM -->
 {include file='../includes/main/main-after-body.tpl'}
 <!-- END BLOCK GTM -->
+<script>
+    $(document).ready( function () {
+        //get Android page depended of client width
+        var deviceWidth = $(window).width();
+        console.log(deviceWidth);
+        if (deviceWidth > 700) {
+            $(".prod-list-android").load('store-desktop.html');
+        } else if (deviceWidth < 700) {
+            $(".prod-list-android").load('store-mobile.html');
+        }
+    });
 
+</script>
 <!-- FLY BLOCKS -->
 {include file='../includes/main/main-button-help.tpl'}
 <!-- END FLY BLOCKS-->
@@ -385,7 +398,7 @@ description="Pumpic offers high-quality Cell Phone Tracking Software for a good 
 
                                         <!-- ANDROID DESKTOP -->
                                         <div class="prod-list-android clearfix" data-info-block="android" style="display: none;">
-                                            {include file='../includes/store/store-desktop.tpl'}
+
                                         </div>
                                         <!-- ANDROID RESPONSE -->
 

@@ -60,6 +60,8 @@ $config = array(
 				'store-test.html'  => 'store-test.php',
 
 				'store.html'  => 'store.php',
+				'store-desktop.html'  => 'store-new-version.php',
+				'store-mobile.html'  => 'store-new-version.php',
 				'store-new-version.html'  => 'store-new-version.php',
 				'aging-parent-protection-app.html' => 'aging-parent-protection-app.php',
 				'iphone-tracking-software.html'   => 'iphone_tracking_software.php',

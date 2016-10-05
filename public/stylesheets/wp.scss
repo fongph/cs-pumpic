@@ -10440,7 +10440,7 @@ iframe {
   border: none;
 }
 .table {
-  thead tr th {
+  thead tr th,tbody tr th {
     font-weight: normal;
     text-align: center;
     vertical-align: middle;

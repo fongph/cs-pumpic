@@ -13,7 +13,8 @@ if (typeof console === "undefined" || typeof console.log === "undefined") {
 }
 
 (function ($) {
-    var $_result = {
+	
+	var $_result = {
         '_plans': false,
         '_mobile': false
     };
@@ -1909,32 +1910,73 @@ $(document).ready(function () {
         });
     }
 
-    // switch features
-    $('.show_basic_features a').toggle(
+    
+    // switch features Android basic
+    $('.show_basic_features._android-f a').toggle(
             function (event) {
                 event.preventDefault();
-                $('.basic_fe').css("margin-top", "10px");
-                $('.basic_fe').show();
+                $('.basic_fe._android-f').css("margin-top", "10px");
+                $('.basic_fe._android-f').show();
+                $('.basic_wr .show-f._android-f').hide();
+                $('.basic_wr .hide-f._android-f').show();
             }, function (event) {
         event.preventDefault();
-        $('.basic_fe').css("margin-top", "90px");
-        $('.basic_fe').hide();
-    });
-    $('.show_premium_features a').toggle(
+        $('.basic_fe._android-f').css("margin-top", "90px");
+        $('.basic_fe._android-f').hide();
+				$('.basic_wr .show-f._android-f').show();
+				$('.basic_wr .hide-f._android-f').hide();
+				});
+	
+    // switch features Android premium
+    $('.show_premium_features._android-f a').toggle(
             function (event) {
                 event.preventDefault();
-                $('.premium_fe').css("margin-top", "10px");
-                $('.premium_fe').show();
-                $('.show-f').hide();
-                $('.hide-f').show();
-                $('.prod-2').show();
+                $('.premium_fe._android-f').css("margin-top", "10px");
+                $('.premium_fe._android-f').show();
+                $('.premium_wr .show-f._android-f').hide();
+                $('.premium_wr .hide-f._android-f').show();
             }, function (event) {
         event.preventDefault();
-        $('.premium_fe').css("margin-top", "90px");
-        $('.premium_fe').hide();
-        $('.show-f').show();
-        $('.hide-f').hide();
-        $('.prod-2').hide();
+        $('.premium_fe._android-f').css("margin-top", "90px");
+        $('.premium_fe._android-f').hide();
+				$('.premium_wr .show-f._android-f').show();
+				$('.premium_wr .hide-f._android-f').hide();
+				});
+	
+		// switch features iOS
+    $('.show_premium_features._icloud-f a').toggle(
+            function (event) {
+                event.preventDefault();
+                $('.premium_fe._icloud-f').css("margin-top", "10px");
+                $('.premium_fe._icloud-f').show();
+                $('.show-f._icloud-f').hide();
+                $('.hide-f._icloud-f').show();
+                $('.prod-icloud.prod-2').show();
+            }, function (event) {
+        event.preventDefault();
+        $('.premium_fe._icloud-f').css("margin-top", "90px");
+        $('.premium_fe._icloud-f').hide();
+        $('.show-f._icloud-f').show();
+        $('.hide-f._icloud-f').hide();
+        $('.prod-icloud.prod-2').hide();
+        }
+    );
+		// switch features Jailbreak
+    $('.show_premium_features._jailbreak-f a').toggle(
+            function (event) {
+                event.preventDefault();
+                $('.premium_fe._jailbreak-f').css("margin-top", "10px");
+                $('.premium_fe._jailbreak-f').show();
+                $('.show-f._jailbreak-f').hide();
+                $('.hide-f._jailbreak-f').show();
+                $('._prod-icloud.prod-2._jailbreak-f').show();
+            }, function (event) {
+        event.preventDefault();
+        $('.premium_fe._jailbreak-f').css("margin-top", "90px");
+        $('.premium_fe._jailbreak-f').hide();
+        $('.show-f._jailbreak-f').show();
+        $('.hide-f._jailbreak-f').hide();
+        $('.prod-icloud.prod-2._jailbreak-f').hide();
         }
     );
     $("input[name='optionsRadios']").each(function () {
@@ -2497,4 +2539,7 @@ $(document).ready(function () {
         //console.log($inputs)
         $.each($inputs, function() {updateCheckbox(this)})
     });
+	
+	//sticky header
+
 });

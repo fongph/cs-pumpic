@@ -79,17 +79,15 @@ require_once 'smarty.config.php';
 
 // init output params!
     $smarty->assign('getProducts', $products);
-
-if ($_SERVER['REQUEST_URI'] == '/store-desktop.html')
-    $smarty->display($b_dir.'/templates/includes/store/store-desktop.tpl');
-    
-elseif ($_SERVER['REQUEST_URI'] == '/store-mobile.html'){
+$device = $_GET['deviceWidth'];
+if ($device < 700){
     $smarty->display($b_dir.'/templates/includes/store/store-mobile.tpl');
-} else {
-// init output params
-    $smarty->display($b_dir . '/templates/pages/store-new-version.tpl');
+
+} elseif ($device > 700){
+    $smarty->display($b_dir.'/templates/includes/store/store-desktop.tpl');
 
 }
+
 
 
 

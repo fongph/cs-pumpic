@@ -224,7 +224,7 @@
                     <div class="wr_pack_basic android_basic_pack"></div>
                     <div class="wr_pack_double_basic android_basic_pack2"></div>
                     <div class="wr_price_big">
-                        <span></span><div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr andr-basic-price-per-month">{$defaultBasicPrice}</div></div><span> / month</span>
+                        <span></span><div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr andr-basic-price-per-month">{$defaultAndriodBasicPrice}</div></div><span> / month</span>
                     </div>
                 </div>
                 <div class="list_price" id="foot_h2">

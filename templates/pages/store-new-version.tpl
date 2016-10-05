@@ -6,25 +6,23 @@ showRand="true"
 title="Phone Tracker Prices and Subscription Plans | Pumpic"
 description="Pumpic offers high-quality Cell Phone Tracking Software for a good price. Find out more about Pumpic cost and subscription plan types to choose the one suitable for your monitoring needs."
 }
-
+<script>
+    $(document).ready( function () {
+        //get Android page depended of client width
+        var deviceWidth =  $(window).width();
+        console.log(deviceWidth);
+        $.get('/store-android.php', { deviceWidth: deviceWidth })
+                .done(function(data) {
+                    $(".prod-list-android").append(data);
+                });
+    });
+</script>
 <body>
 
 <!-- BLOCK GTM -->
 {include file='../includes/main/main-after-body.tpl'}
 <!-- END BLOCK GTM -->
-<script>
-    $(document).ready( function () {
-        //get Android page depended of client width
-        var deviceWidth = $(window).width();
-        console.log(deviceWidth);
-        if (deviceWidth > 700) {
-            $(".prod-list-android").load('store-desktop.html');
-        } else if (deviceWidth < 700) {
-            $(".prod-list-android").load('store-mobile.html');
-        }
-    });
 
-</script>
 <!-- FLY BLOCKS -->
 {include file='../includes/main/main-button-help.tpl'}
 <!-- END FLY BLOCKS-->

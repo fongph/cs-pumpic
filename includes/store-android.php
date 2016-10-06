@@ -78,7 +78,7 @@ require_once 'smarty.config.php';
     $smarty->assign('rates', json_encode($_rates));
 
 // init output params!
-    $smarty->assign('getProducts', $products);
+$smarty->assign('getProducts', $products);
 $device = $_GET['deviceWidth'];
 if ($device < 700){
     $smarty->display($b_dir.'/templates/includes/store/store-mobile.tpl');

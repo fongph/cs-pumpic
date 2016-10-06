@@ -80,12 +80,12 @@ require_once 'smarty.config.php';
 // init output params!
 $smarty->assign('getProducts', $products);
 $device = $_GET['deviceWidth'];
+header("HTTP/1.0 200 OK");
+header("Access-Control-Allow-Origin: *");
 if ($device < 700){
     $smarty->display($b_dir.'/templates/includes/store/store-mobile.tpl');
-
 } elseif ($device > 700){
     $smarty->display($b_dir.'/templates/includes/store/store-desktop.tpl');
-
 }
 
 

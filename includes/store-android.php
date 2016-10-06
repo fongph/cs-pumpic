@@ -89,15 +89,18 @@ $smarty->force_compile = 1;
 // init output params!
 $smarty->assign('getProducts', $products);
 
-
-$device = @($_REQUEST['deviceWidth']);
+echo 'dfbjdfhbbjhfvbhdfv';
+exit;
+//$device = @($_REQUEST['deviceWidth']);
 //$smarty->assign("device", $device);
-
-    if ($device < 700){
-        $smarty->display( $b_dir.'/templates/includes/store/store-mobile.tpl' );
-    } elseif ($device > 700){
-        $smarty->display($b_dir.'/templates/includes/store/store-desktop.tpl');
-    }
+//var_dump($_SERVER['HTTP_X_REQUESTED_WITH']);
+//var_dump(getallheaders());
+//    if ($device < 700){
+//        $smarty->display( $b_dir.'/templates/includes/store/store-mobile.tpl' );
+//    } elseif ($device > 700){
+//
+////        $smarty->display($b_dir.'/templates/includes/store/store-desktop.tpl');
+//    }
 
 
 

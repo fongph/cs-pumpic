@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-10-06 08:05:52
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-10-06 08:22:09
          compiled from "/code/templates/includes/store/store-desktop.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:127891379857f605e0586c84-57834073%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:158322102657f609b19c3445-35282732%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '127891379857f605e0586c84-57834073',
+  'nocache_hash' => '158322102657f609b19c3445-35282732',
   'function' => 
   array (
   ),
@@ -28,9 +28,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.21-dev',
-  'unifunc' => 'content_57f605e083f3f2_13867964',
+  'unifunc' => 'content_57f609b1c094c6_50133785',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_57f605e083f3f2_13867964')) {function content_57f605e083f3f2_13867964($_smarty_tpl) {?>    <div class="save__2plan">
+<?php if ($_valid && !is_callable('content_57f609b1c094c6_50133785')) {function content_57f609b1c094c6_50133785($_smarty_tpl) {?>    <div class="save__2plan">
         <div class="save__text">
             <input type="checkbox" data-group="basic" name="android-40off" data-checkboxes="android-40off-main">
             <span>Save 40%</span> on the 2nd plan. <div class="limited-time">Limited time offer!</div>

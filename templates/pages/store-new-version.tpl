@@ -10,14 +10,34 @@ description="Pumpic offers high-quality Cell Phone Tracking Software for a good 
     $(document).ready( function () {
         //get Android page depended of client width
         var deviceWidth =  $(window).width();
-        console.log(deviceWidth);
-        $.get('/store-android.php', { deviceWidth: deviceWidth })
-                .done(function(data) {
-                    console.dir(data);
-                    $(".prod-list-android").append(data);
+//        console.log(deviceWidth);
+//        $.get('/store-android.php', { deviceWidth: deviceWidth })
+//                .done(function(data) {
+//                    console.dir(data);
+//                    console.dir(data.getAllResponseHeaders);
+//                    $(".prod-list-android").append(data);
+//
+//                });
+        $.ajax({
+            url:'/store-android.php',
+            data: {
+                deviceWidth: deviceWidth
+            },
+            success: function(data, textStatus, jqXHR) {
+                console.dir(data);
+                $(".prod-list-android").append(data);
+                console.log(jqXHR.getAllResponseHeaders());
 
-                });
+            },
+            statusCode: {
+                404: function(resp) {
+                    resp.getAllResponseHeaders()
+                    console.log(resp.getAllResponseHeaders());
+                }
+            }
+        });
     });
+
 </script>
 <body>
 

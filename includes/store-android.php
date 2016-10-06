@@ -2,6 +2,10 @@
 $_inc = dirname(__FILE__); // includes
 $b_dir = dirname( $_inc ); // folder sites directory
 
+header("Cache-Control: no-cache");
+header("Pragma: no-cache");
+header("HTTP/1.0 200 OK");
+
 require_once $_inc.'/config.php';
 require_once $_inc.'/lib/Currency.php';
 require_once $_inc.'/lib/users/Order.php';
@@ -9,6 +13,11 @@ $obj = new includes\lib\users\Order;
 
 // smarty config
 require_once 'smarty.config.php';
+
+$smarty = new Smarty();
+$smarty->compile_check = true;
+$smarty->debugging = false;
+$smarty->force_compile = 1;
 
 
     /* list order */
@@ -79,14 +88,18 @@ require_once 'smarty.config.php';
 
 // init output params!
 $smarty->assign('getProducts', $products);
-$device = $_GET['deviceWidth'];
-header("HTTP/1.0 200 OK");
-header("Access-Control-Allow-Origin: *");
-if ($device < 700){
-    $smarty->display($b_dir.'/templates/includes/store/store-mobile.tpl');
-} elseif ($device > 700){
-    $smarty->display($b_dir.'/templates/includes/store/store-desktop.tpl');
-}
+
+
+$device = @($_REQUEST['deviceWidth']);
+//$smarty->assign("device", $device);
+
+    if ($device < 700){
+        $smarty->display( $b_dir.'/templates/includes/store/store-mobile.tpl' );
+    } elseif ($device > 700){
+        $smarty->display($b_dir.'/templates/includes/store/store-desktop.tpl');
+    }
+
+
 
 
 

@@ -250,7 +250,7 @@
                                         <section>
                                             <div class="member-yet">Not a Member Yet?</div>
                                             <div>
-                                                <a href="http://demo.pumpic.com/setDevice/125?redirect_url=cp/calls" class="btn btn-default btn-noy-yet">View demo</a>
+                                                <a href="http://demo.pumpic.com/setDevice/126?redirect_url=cp/calls" class="btn btn-default btn-noy-yet">View demo</a>
                                                 <a href="/store.html" class="btn btn-default">Buy Now</a>
                                             </div>
                                         </section>

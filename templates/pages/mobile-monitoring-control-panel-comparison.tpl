@@ -177,7 +177,7 @@ description="Learn the difference between the Standard Pumpic Control Panel and 
     <div class="tab col-item-3 col-md-item-3 col-sm-item-3">
         <ul>
             <li class="second-title large__li li__title">Standard<br> Control Panel</li>
-            <li class="large__li compasion__img"><a href="http://demo.pumpic.com/setDevice/125?redirect_url=cp/calls"> <img src="images/android-icon.png" alt=""></a></li>
+            <li class="large__li compasion__img"><a href="http://demo.pumpic.com/setDevice/126?redirect_url=cp/calls"> <img src="images/android-icon.png" alt=""></a></li>
             <li class="main__compasion"></li>
             <li><i class="icon-ok"></i></li>
             <li><i class="icon-ok"></i></li>

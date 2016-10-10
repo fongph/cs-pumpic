@@ -6,7 +6,7 @@
             and increase your business safety.</p>
         <p class="text-center">
             <a href="http://pumpic.com/store.html" class="btn btn-default" role="button">Buy NOW</a>
-            <a href="http://demo.pumpic.com/setDevice/125?redirect_url=cp/calls" class="btn btn-warning" role="button">View DEMO</a>
+            <a href="http://demo.pumpic.com/setDevice/126?redirect_url=cp/calls" class="btn btn-warning" role="button">View DEMO</a>
         </p>
     </div> <!-- .caption -->
 </div>*/ ?>

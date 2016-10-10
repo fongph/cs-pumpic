@@ -78,7 +78,7 @@
                             {/nocache}
 
                             <li>
-                                <a href="http://demo.{$domain}{if isset($demoHref)}{$demoHref}{else}/setDevice/125?redirect_url=cp/calls{/if}" target="_blank"
+                                <a href="http://demo.{$domain}{if isset($demoHref)}{$demoHref}{else}/setDevice/126?redirect_url=cp/calls{/if}" target="_blank"
                                    class="btn btn-sm btn-orange btn-success hidden-lg cp-login"> Demo</a>
                             </li>
 

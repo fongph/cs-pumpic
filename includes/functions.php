@@ -86,7 +86,7 @@ function smarty_modifier_getCloseLink($links) {
 function smarty_function_getDemoLink($params, $template) {
     $uri = getURI();
     $domain = (isset($params['domain'])) ? $params['domain'] : $_SERVER['HTTP_HOST']; 
-    $_id = 125;
+    $_id = 126;
     $_get = "?redirect_url=cp/calls";
     if(in_array('icloud-iphone-without-jailbreak-monitoring.html', $uri['uriArr'])) {
         $_id = 126; 

@@ -6,7 +6,7 @@
         .block-child-location-tracking .ipad-text {
             padding: 10px 0;
         }
-
+        
         @media only screen and (max-width: 480px) {
             .block-child-location-tracking .ipad-text {
                 padding: 10px 0px 50px 0px;
@@ -168,7 +168,7 @@
                             <img src="{$img}/testimonials/brendon-l.png" alt="" class="testimonial-photo">
                             <div class="testimonial-text">
                                     <h4>Brendon L. – father of 13-year-old daughter</h4>
-                                    <p>“Pumpic has literally&nbsp;saved my daughter – luckily for us, I have installed the app in time. Within a few days, a stranger started sending her emails, and I was horrified to see that she answered him without telling us about this. After a couple of messages, he sent her nude photos with a proposition to meet in person, and then we interfered in. Blocked that contact, sent screenshots to the police and the Internet provider and had a really serious talk with a daughter. Shudder to think how that situation could end up!”</p>
+                                    <p>“Pumpic has literally saved my daughter – luckily for us, I have installed the app in time. Within a few days, a stranger started sending her emails, and I was horrified to see that she answered him without telling us about this. After a couple of messages, he sent her nude photos with a proposition to meet in person, and then we interfered in. Blocked that contact, sent screenshots to the police and the Internet provider and had a really serious talk with a daughter. Shudder to think how that situation could end up!”</p>
                             </div>
                     </div>
                     <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">

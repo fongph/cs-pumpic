@@ -60,6 +60,15 @@
             block_video = "yes"
             block_video_src = "http://www.youtube.com/embed/Atg0CbaytAY"
         }
+        <style>
+            .features-center li{
+                max-width: 400px;
+                margin: 0 auto;
+            }
+            .basic_h {
+                text-transform: none;
+            }
+        </style>
         {*
             iCloudSolution = 'yes'
             iCloudSolutionUrl = '/icloud-iphone-without-jailbreak-monitoring.html#icloud-solution'
@@ -121,11 +130,6 @@
                         <div class="row">
                             <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1">
                                 <table class="tb_pricing table-bordered pricing-second">
-                                    <caption>
-                                        <div class="table_title">
-                                            <h2 class="text-success h2-sm"> Choose Subscription Plan </h2>
-                                        </div>
-                                    </caption>
                                     <thead>
                                         <tr>
                                             <th>
@@ -133,22 +137,22 @@
                                                 <div class="table_title table_title_v2 border-top-bottom">
                                                     <h2 class="h2-sm">Features</h2>
                                                 </div>
-                                                    <div class="basic_wr row-pricing-panel">
+                                                    <div class="basic_wr w100 row-pricing-panel">
                                                         <div class="basic_h">
-                                                            Basic
+                                                            Jailbreak solution
                                                         </div>
-                                                        <div class="priceb border-none-sm">
+                                                        <div class="priceb border-none-sm" style="border-right: none;">
                                                             <div class="dtable">
                                                                 <div class="dtable-cell">
-                                                                    <div class="wr_pack_basic"></div>
-                                                                    <div class="wr_pack_double_basic"></div>
+                                                                    <div class="wr_pack_basic wr_icloud_jb _single-pack-jailbreak"></div>
+                                                                    <div class="wr_pack_double_basic wr_icloud_jb-double _double-pack-jailbreak"></div>
                                                                 </div>
                                                                 <div class="dtable-cell">
                                                                     <div class="wr_price_big">
                                                                         <span></span>
                                                                         <div class="box-currence">
                                                                             <div class="symbol" attr-iso="usd">$</div>
-                                                                            <div class="curr basic-price-per-month">11.65</div>
+                                                                            <div class="curr jailbreak-price-per-month">11.65</div>
                                                                         </div><span> / month</span>
                                                                     </div>
                                                                 </div>
@@ -156,13 +160,13 @@
                                                             
                                                             <div class="list_price">
                                                                 <form name="price_basic" method="POST" action="/buy.html" class="buy-form-with-offer" autocomplete="off">
-                                                                    <input id='product_price_basic' type='hidden' name='price[productID]' value='{if isset($getDefaultBasic)}{$getDefaultBasic}{else}0{/if}' class="product_price" />
+                                                                    <input id='product_price_basic' type='hidden' name='price[productID]' value='{if isset($getDefaultiosJailbreak)}{$getDefaultiosJailbreak}{else}0{/if}' class="product_price" />
                                                 
                                                                     <ul>
-                                                                    {foreach from=$getProducts.basic key=key item=item}
+                                                                    {foreach from=$getProducts.iosJailbreak key=key item=item}
                                                                         <li>
                                                                             <label class="label_radio hover_label_radio {if $item.period == '12'}r_on{else}r_off{/if}">
-                                                                                <input class="data-price" data-target=".basic-price-per-month" data-cur="usd" data-price-usd="{$item.price}" data-offer-price-usd="{$getProducts.basicDouble[$key].price}" data-period="{$item.period}" data-product="{$item.id}" data-offer-product="{$getProducts.basicDouble[$key].id}" data-group="basic"  name="optionsRadios" id="optionsRadios{$item.id}1" value="{$item.id}" type="radio"{if $item.period == '12'} checked="checked"{/if} />
+                                                                                <input class="data-price" data-target="jailbreak-price-per-month" data-cur="usd" data-price-usd="{$item.price}" data-offer-price-usd="{$getProducts.iosJailbreakDouble[$key].price}" data-period="{$item.period}" data-product="{$item.id}" data-offer-product="{$getProducts.iosJailbreakDouble[$key].id}" data-group="jailbreak"  name="optionsRadios" id="optionsRadios{$item.id}1" value="{$item.id}" type="radio"{if $item.period == '12'} checked="checked"{/if} />
                                                                                 <span class="sp">
                                                                                     <strong>{$item.period}</strong> {if $item.period == 1}month{else}months{/if}
                                                                                 </span>
@@ -178,7 +182,7 @@
                                                                                 </div>
                                                                                 <div class="package_offer_price">
                                                                                     <strong>
-                                                                                        <div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr">{$getProducts.basicDouble[$key].price}</div></div>
+                                                                                        <div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr">{$getProducts.iosJailbreakDouble[$key].price}</div></div>
                                                                                     </strong>
                                                                                 </div>
                                                                             </label>
@@ -187,26 +191,26 @@
                                                                     </ul>
                                                                     <div class="double_offer checkbox">
                                                                         <label>
-                                                                            <input type="checkbox" data-group="basic">
+                                                                            <input type="checkbox" data-group="jailbreak">
                                                                             Get the 2nd plan with <span>40% OFF!</span>
                                                                         </label>
                                                                     </div>
                                                                     <button class="btn btn-default ga-action-submit" 
                                                                             ga-action ="click"
                                                                             ga-category="iphone-with-jailbreak-monitoring"
-                                                                            ga-label="buy basic"
+                                                                            ga-label="buy jailbreak"
                                                                             value="true" type="submit" name="price[submit]">Buy Now</button>
                                                                     <!-- <div class="show_basic_features"><a href="#">Show Basic features</a>
                                                                     </div> -->
                                                                 </form>
                                                             </div>
                                                         </div>
-                                                        <div class="priceb border-none-sm">
+                                                        <div class="priceb border-none-sm" style="border-right: none;">
                                                         <div class="table_title table_title_v2 show_basic_features border-top-bottom">
                                                             <h2 class="h2-sm">Features</h2>
                                                         </div>
                                                             <div class="basic_fe reset-list">
-                                                                <ul class="list_price-no-link">
+                                                                <ul class="list_price-no-link features-center" style="border-right: none;">
                                                 
                                                                     <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Text Messages <span>View text content sent or received via SMS, MMS, and iMessages.{*SMS View sent and received messages. Block senders and bad-word SMS. Limit daily amount of outgoing texts.*}</span>
                                                                     </li>
@@ -281,153 +285,6 @@
                                                         </div>
                                                 
                                                     </div>
-                                                    <div class="premium_wr row-pricing-panel"> 
-                                                        <div class="premium_h">
-                                                            Premium
-                                                        </div>
-                                                        <div class="pricep">
-                                                            <div class="dtable">
-                                                                <div class="dtable-cell">
-                                                                    <div class="wr_pack_premium"></div>
-                                                                    <div class="wr_pack_double_premium"></div>
-                                                                </div>
-                                                                <div class="dtable-cell">
-                                                                    <div class="wr_price_big">
-                                                                        <span></span>
-                                                                        <div class="box-currence">
-                                                                            <div class="symbol" attr-iso="usd">$</div>
-                                                                            <div class="curr premium-price-per-month">33.33</div>
-                                                                        </div><span>/ month</span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                                     
-                                                            <div class="list_price">
-                                                                <form name="price_premium" method="POST" action="/buy.html" class="buy-form-with-offer" autocomplete="off">
-                                                                    <input id='product_price_premium' type='hidden' name='price[productID]' value='{if isset($getDefaultPremium)}{$getDefaultPremium}{else}0{/if}' class="product_price" />
-                                                
-                                                                    <ul>
-                                                                        {foreach from=$getProducts.premium key=key item=item}
-                                                                            <li>
-                                                                                <label class="label_radio hover_label_radio {if $item.period == '12'}r_on{else}r_off{/if}">
-                                                                                    <input class="data-price" data-target=".premium-price-per-month" data-cur="usd" data-price-usd="{$item.price}" data-offer-price-usd="{$getProducts.premiumDouble[$key].price}" data-period="{$item.period}" data-product="{$item.id}" data-offer-product="{$getProducts.premiumDouble[$key].id}" data-group="premium"  name="optionsRadios" id="optionsRadios{$item.id}2" value="{$item.id}" type="radio"{if $item.period == '12'} checked="checked"{/if} />
-                                                                                    <span class="sp">
-                                                                                        <strong>{$item.period}</strong> {if $item.period == 1}month{else}months{/if}
-                                                                                    </span>
-
-                                                                                    <div class="box-small-package">
-                                                                                        <div class="offer_old_price"><div class="box-currence strike__currence"><div class="symbol" attr-iso="usd">$</div><div class="curr">{$item.price * 2|string_format:"%.2f"}</div></div></div>
-                                                                                    </div>
-
-                                                                                    <div class="package_price">
-                                                                                        <strong>
-                                                                                            <div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr">{$item.price}</div></div>
-                                                                                        </strong>
-                                                                                    </div>
-                                                                                    <div class="package_offer_price">
-                                                                                        <strong>
-                                                                                            <div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr">{$getProducts.premiumDouble[$key].price}</div></div>
-                                                                                        </strong>
-                                                                                    </div>
-                                                                                </label>
-                                                                            </li>
-                                                                        {/foreach}
-                                                                    </ul>
-                                                                    <div class="double_offer checkbox">
-                                                                        <label>
-                                                                            <input type="checkbox" data-group="premium">
-                                                                            Get the 2nd plan with <span>40% OFF!</span>
-                                                                        </label>
-                                                                    </div>
-                                                                    <button class="btn btn-default ga-action-submit" 
-                                                                            ga-action ="click"
-                                                                            ga-category="iphone-with-jailbreak-monitoring"
-                                                                            ga-label="buy premium"
-                                                                            value="true" type="submit" name="price[submit]">Buy Now</button>
-                                                                    <!-- <div class="show_premium_features"><a href="#">Show Premium features</a>
-                                                                    </div> -->
-                                                                </form>
-                                                            </div>
-                                                        </div>
-                                                        <div class="pricep ">
-                                                        <div class="table_title table_title_v2 show_basic_features border-top-bottom">
-                                                            <h2 class="h2-sm">Features</h2>
-                                                        </div>
-                                                            <div class="premium_fe reset-list">
-                                                                <ul class="list_price-no-link">
-                                                
-                                                                    <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Text Messages <span>View text content sent or received via SMS, MMS, and iMessages.{*SMS View sent and received messages. Block senders and bad-word SMS. Limit daily amount of outgoing texts.*}</span>
-                                                                    </li>
-                                                                    <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Calls <span>Follow in- and outbound calls. Block callers by phone numbers.</span>
-                                                                    </li>
-                                                                    <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Photos <span>View shot and downloaded photos, including deleted ones.</span></li>
-                                                                    <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Calendar  <span>Follow scheduled events.</span></li>
-                                                                    <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Notes  <span>Track Notes on the target iOS device.</span></li>
-                                                                    <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Contacts <span>View new, existing and deleted contacts.</span></li>
-                                                                    <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Location <span>Track current location and route history in table format or on the map.</span></li>
-                                                                    <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Emails <span>Monitor sent and received emails, including deleted ones.</span></li>
-                                                                    <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Browser <span>Follow visited websites and block those with inappropriate content.</span></li>
-                                                                    <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Applications <span>View installed applications. Set time limits to prevent excessive use.</span></li>
-                                                                    <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Bookmarks <span>View preferred (bookmarked) websites. </span></li>
-                                                
-                                                                    <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Remote Control <span>Block the target device with a password. Reboot or wipe it remotely.</span></li>
-                                                                    <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Geo-fences <span>Set specified zones on the map and receive alerts, when they are left or entered.</span></li>
-                                                                    
-                                                                    <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Videos <span>View shot and downloaded videos, including deleted ones.</span></li>
-                                           
-                                                                    <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Facebook IM <span>Follow group, personal Messenger chats, and calls.</span></li>
-                                                                    <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Skype <span>Monitor personal, group messages and calls. </span></li>
-                                                                    <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Viber <span>View personal messages and group chats.</span></li>
-                                                                    <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> WhatsApp <span>Follow personal messages, group chats, and calls.</span></li>
-                                                                    <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Kik <span>Monitor text messages.</span></li>
-                                                                    <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Instagram <span>View uploaded images and posted comments.</span></li>
-                                                                    <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Snapchat <span>Monitor photos, videos, and comments.</span></li>
-                                                                    <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Keylogger <span>Keep track of each button pressed or taped. View passwords, keystrokes and words input.</span></li>
-                                                                    <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Historical Data <span>Monitor the information from the target device prior to the date, when Pumpic was installed.</span></li>
-                                                
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                                    
-                                                        <div class="visible-sm-box">
-                                                            <div class="table_title border-top-bottom">
-                                                                <h2 class="text-success h2-sm">
-                                                                                                Additional Benefits
-                                                                                            </h2>
-                                                            </div>
-                                                                <div class="premium_wr">
-                                                                    <div class="priceb border-none">
-                                                                        <div class="premium_fe basic_fe_mobile_block reset-list">
-                                                                            <ul class="list_price-no-link">
-                                                            
-                                                                                <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Removal Protection <span>The app is protected with password. Thus, no one else but you can remove it.</span></li>
-                                                                                <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> SMS Commands  <span>Sent text messages to manipulate the target device remotely, even without Internet connection:</span>
-                                                                                <ul class="feature_list">
-                                                                                    <li>instant location</li>
-                                                                                    <li>wipe phone</li>
-                                                                                    <li>block and unblock device</li>
-                                                                                </ul>
-                                                                                </li>
-                                                                            </ul>
-                                                                        </div>
-                                                                    </div>
-                                                            
-                                                            
-                                                                </div>
-                                                                <div class="premium_wr bb-media-sm">
-                                                                    <div class="pricep">
-                                                                        <div class="premium_fe basic_fe_mobile_block reset-list">
-                                                                            <ul class="list_price-no-link">
-                                                            
-                                                                                <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i>Removal Protection <span>Control Panel can be accessed from any browser and any computer or mobile gadget (smartphones and tablets).</span></li>
-                                                                                <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i>SIM-Card Change Alert <span>In case a SIM-card on the target device is changed, you will receive an email notification.</span>
-                                                                                </li>
-                                                                            </ul>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                        </div>
-                                                    </div>
                                             </div>
                                             </th>
                                         </tr>
@@ -474,22 +331,22 @@
                                             <div class="table_title border-top-bottom">
                                                 <h2 class="text-success h2-sm">Choose Subscription Plan</h2>
                                             </div>
-                                                <div class="basic_wr row-pricing-panel">
+                                                <div class="basic_wr row-pricing-panel w100">
                                                     <div class="basic_h">
-                                                        Basic
+                                                        Jailbreak solution
                                                     </div>
-                                                    <div class="priceb">
+                                                    <div class="priceb" style="border-right: none;">
                                                         <div class="dtable">
                                                             <div class="dtable-cell">
-                                                                <div class="wr_pack_basic"></div>
-                                                                <div class="wr_pack_double_basic"></div>
+                                                                <div class="wr_pack_basic wr_icloud_jb _single-pack-jailbreak"></div>
+                                                                <div class="wr_pack_double_basic wr_icloud_jb-double _double-pack-jailbreak"></div>
                                                             </div>
                                                             <div class="dtable-cell">
                                                                 <div class="wr_price_big">
                                                                     <span></span>
                                                                     <div class="box-currence">
                                                                         <div class="symbol" attr-iso="usd">$</div>
-                                                                        <div class="curr basic-price-per-month">11.65</div>
+                                                                        <div class="curr jailbreak-price-per-month">{$getDefaultiosJailbreak}</div>
                                                                     </div><span> / month</span>
                                                                 </div>
                                                             </div>
@@ -500,10 +357,10 @@
                                                                 <input id='product_price_basic' type='hidden' name='price[productID]' value='{if isset($getDefaultBasic)}{$getDefaultBasic}{else}0{/if}' class="product_price" />
 
                                                                 <ul>
-                                                                {foreach from=$getProducts.basic key=key item=item}
+                                                                {foreach from=$getProducts.iosJailbreak key=key item=item}
                                                                     <li>
                                                                         <label class="label_radio hover_label_radio {if $item.period == '12'}r_on{else}r_off{/if}">
-                                                                            <input class="data-price" data-target=".basic-price-per-month" data-cur="usd" data-price-usd="{$item.price}" data-offer-price-usd="{$getProducts.basicDouble[$key].price}" data-period="{$item.period}" data-product="{$item.id}" data-offer-product="{$getProducts.basicDouble[$key].id}" data-group="basic"  name="optionsRadios" id="optionsRadios{$item.id}1" value="{$item.id}" type="radio"{if $item.period == '12'} checked="checked"{/if} />
+                                                                            <input class="data-price" data-target=".jailbreak-price-per-month" data-cur="usd" data-price-usd="{$item.price}" data-offer-price-usd="{$getProducts.iosJailbreakDouble[$key].price}" data-period="{$item.period}" data-product="{$item.id}" data-offer-product="{$getProducts.iosJailbreakDouble[$key].id}" data-group="jailbreak"  name="optionsRadios" id="optionsRadios{$item.id}1" value="{$item.id}" type="radio"{if $item.period == '12'} checked="checked"{/if} />
                                                                             <span class="sp">
                                                                                 <strong>{$item.period}</strong> {if $item.period == 1}month{else}months{/if}
                                                                             </span>
@@ -519,7 +376,7 @@
                                                                             </div>
                                                                             <div class="package_offer_price">
                                                                                 <strong>
-                                                                                    <div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr">{$getProducts.basicDouble[$key].price}</div></div>
+                                                                                    <div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr">{$getProducts.iosJailbreakDouble[$key].price}</div></div>
                                                                                 </strong>
                                                                             </div>
                                                                         </label>
@@ -528,14 +385,14 @@
                                                                 </ul>
                                                                 <div class="double_offer checkbox">
                                                                     <label>
-                                                                        <input type="checkbox" data-group="basic">
+                                                                        <input type="checkbox" data-group="jailbreak">
                                                                         Get the 2nd plan with <span>40% OFF!</span>
                                                                     </label>
                                                                 </div>
                                                                 <button class="btn btn-default ga-action-submit" 
                                                                         ga-action ="click"
                                                                         ga-category="iphone-with-jailbreak-monitoring"
-                                                                        ga-label="buy basic"
+                                                                        ga-label="buy jailbreak"
                                                                         value="true" type="submit" name="price[submit]">Buy Now</button>
                                                                 <!-- <div class="show_basic_features"><a href="#">Show Basic features</a>
                                                                 </div> -->
@@ -544,75 +401,6 @@
                                                     </div>
 
 
-                                                </div>
-                                                <div class="premium_wr row-pricing-panel">
-                                                    <div class="premium_h">
-                                                        Premium
-                                                    </div>
-                                                    <div class="pricep">
-                                                        <div class="dtable">
-                                                            <div class="dtable-cell">
-                                                                <div class="wr_pack_premium"></div>
-                                                                <div class="wr_pack_double_premium"></div>
-                                                            </div>
-                                                            <div class="dtable-cell">
-                                                                <div class="wr_price_big">
-                                                                    <span></span>
-                                                                    <div class="box-currence">
-                                                                        <div class="symbol" attr-iso="usd">$</div>
-                                                                        <div class="curr premium-price-per-month">33.33</div>
-                                                                    </div><span>/ month</span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                                
-                                                        <div class="list_price">
-                                                            <form name="price_premium_bottom" method="POST" action="/buy.html" class="buy-form-with-offer" autocomplete="off">
-                                                                <input id='product_price_premium' type='hidden' name='price[productID]' value='{if isset($getDefaultPremium)}{$getDefaultPremium}{else}0{/if}' class="product_price" />
-
-                                                                <ul>
-                                                                    {foreach from=$getProducts.premium key=key item=item}
-                                                                        <li>
-                                                                            <label class="label_radio hover_label_radio {if $item.period == '12'}r_on{else}r_off{/if}">
-                                                                                <input class="data-price" data-target=".premium-price-per-month" data-cur="usd" data-price-usd="{$item.price}" data-offer-price-usd="{$getProducts.premiumDouble[$key].price}" data-period="{$item.period}" data-product="{$item.id}" data-offer-product="{$getProducts.premiumDouble[$key].id}" data-group="premium"  name="optionsRadios" id="optionsRadios{$item.id}2" value="{$item.id}" type="radio"{if $item.period == '12'} checked="checked"{/if} />
-                                                                                <span class="sp">
-                                                                                    <strong>{$item.period}</strong> {if $item.period == 1}month{else}months{/if}
-                                                                                </span>
-
-                                                                                <div class="box-small-package">
-                                                                                    <div class="offer_old_price"><div class="box-currence strike__currence"><div class="symbol" attr-iso="usd">$</div><div class="curr">{$item.price * 2|string_format:"%.2f"}</div></div></div>
-                                                                                </div>
-
-                                                                                <div class="package_price">
-                                                                                    <strong>
-                                                                                        <div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr">{$item.price}</div></div>
-                                                                                    </strong>
-                                                                                </div>
-                                                                                <div class="package_offer_price">
-                                                                                    <strong>
-                                                                                        <div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr">{$getProducts.premiumDouble[$key].price}</div></div>
-                                                                                    </strong>
-                                                                                </div>
-                                                                            </label>
-                                                                        </li>
-                                                                    {/foreach}
-                                                                </ul>
-                                                                <div class="double_offer checkbox">
-                                                                    <label>
-                                                                        <input type="checkbox" data-group="premium">
-                                                                        Get the 2nd plan with <span>40% OFF!</span>
-                                                                    </label>
-                                                                </div>
-                                                                <button class="btn btn-default ga-action-submit"
-                                                                        ga-action ="click"
-                                                                        ga-category="iphone-with-jailbreak-monitoring"
-                                                                        ga-label="buy premium"
-                                                                        value="true" type="submit" name="price[submit]">Buy Now</button>
-                                                                <!-- <div class="show_premium_features"><a href="#">Show Premium features</a>
-                                                                </div> -->
-                                                            </form>
-                                                        </div>
-                                                    </div>
                                                 </div>
                                             </th>
                                         </tr>
@@ -698,7 +486,7 @@
                                     <img src="{$img}/testimonials/anna-h.png" alt="" class="testimonial-photo">
                                     <div class="testimonial-text">
                                             <h4>Anna H. – mother of 14-year-old daughter</h4>
-                                            <p>“My daughter&nbsp;is what you call “a popular girl” at school. She is active, cheerful and has many friends. And though I know she is a mature and reasonable teen I still prefer to monitor her contacts using this great app. My daughter and I are best friends, but girls happen not to tell some things to their parents, especially about boys...”</p>
+                                            <p>“My daughter is what you call “a popular girl” at school. She is active, cheerful and has many friends. And though I know she is a mature and reasonable teen I still prefer to monitor her contacts using this great app. My daughter and I are best friends, but girls happen not to tell some things to their parents, especially about boys...”</p>											
                                     </div>
                             </div>
                             <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">

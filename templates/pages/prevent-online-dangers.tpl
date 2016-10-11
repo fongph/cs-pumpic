@@ -3,7 +3,7 @@
     title="Child cell phone monitoring software"
     description="Protect Your Kids Before It Is Too Late. Track location. View calls and SMS. Monitor online activity."
 }    
-
+    
 <body>
     <!-- BLOCK GTM -->
     {include file='../includes/main/main-after-body.tpl'}
@@ -102,7 +102,7 @@
                             <img src="{$img}/testimonials/ashley-n.png" alt="" class="testimonial-photo">
                             <div class="testimonial-text">
                                     <h4>Ashley N. – mother of 15-year-old son</h4>
-                                    <p>“Pumpic is the&nbsp;thing any parent needs to have a keen sense of kids’ activities. I must confess that I don’t even use the whole bunch of the features that Pumpic offers. But, who knows, maybe one day I will need them all as my son uses spends more and more time online every day. The app is really helpful, and I constantly monitor and managehis device – content filtering is a salvation, honestly, kids are too curious today.”</p>
+                                    <p>“Pumpic is the thing any parent needs to have a keen sense of kids’ activities. I must confess that I don’t even use the whole bunch of the features that Pumpic offers. But, who knows, maybe one day I will need them all as my son uses spends more and more time online every day. The app is really helpful, and I constantly monitor and managehis device – content filtering is a salvation, honestly, kids are too curious today.”</p>
                             </div>
                     </div>
                     <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">

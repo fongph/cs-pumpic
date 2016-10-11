@@ -321,6 +321,9 @@ span.text-success {
 }
 
 .row-pricing-panel {
+  .premium_wr {
+    width: 100%;
+  }
   .basic_wr .priceb, .premium_wr .pricep {
     padding-bottom: 10px;
   }
@@ -623,7 +626,7 @@ th .table_title {
 }
 
 .w100 .dtable {
-  max-width: 600px;
+ //max-width: 600px;
   margin: auto;
 }
 

@@ -2683,6 +2683,18 @@ textarea {
     padding: 10px 0px;
   }
 }
+@media (max-width: 400px) {
+  .table_title {
+    span {
+      text-align: left;
+      min-width: 255px;
+      width: 90%;
+      margin: 0 auto;
+      display: block;
+    }
+
+  }
+}
 
 .table {
   color: #4d4f5b;
@@ -6774,8 +6786,8 @@ form {
     }
   }
   .box-socials li.positivessl{
-    top: -40px;
-    left: 170px;
+    top: 20px;
+    left: 0;
   }
   .box-socials li.positivessl img{
     width: 20%;

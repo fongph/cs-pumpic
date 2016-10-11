@@ -10,8 +10,8 @@ $obj = new includes\lib\users\Order;
 require_once 'smarty.config.php';
 
 /* list order */
-$products = $obj ->getProducts('first');
-    
+$products = $obj ->getProducts('second');
+
 /* form_order */
 $_request = (isset($_POST['price']) and !empty($_POST['price'])) ? $_POST['price']: false;
 if($_request['productID']) {
@@ -19,34 +19,55 @@ if($_request['productID']) {
 
     if($_request['productID'] and $obj -> getUserIdByAuth()) {
         // $_order ->unsetSession('pumpic_order'); // clear session
+
         $_url = $obj -> createOrder((int)$_request['productID']);
         if($_url) {
             $obj -> _redirect( $_url );
-        } 
+        }
         // create order
     } else if((int)$_request['productID']) {
         $obj -> _redirect('/buy.html?productID='.$_request['productID']);
-        
+
     }
 
 }
 
 // default
-if(is_array($products)) { 
-    // Basic
-    if(isset($products['basic'])) {
-        foreach($products['basic'] as $item) :
-            if($item['period'] == 12 && $item['id']) $smarty->assign('getDefaultBasic', $item['id']);
+if(is_array($products)) {
+    if(isset($products['iosiCloud'])) {
+        foreach($products['iosiCloud'] as $item) :
+            if ($item['period'] == 12 && $item['id']) {
+                $smarty->assign('defaultIosiCloudProduct', $item['id']);
+                $smarty->assign('defaultIosiCloudPrice', round($item['price'] / $item['period'], 2));
+            }
         endforeach;
     }
-    // Premium
-    if(isset($products['premium'])) {
-        foreach($products['premium'] as $item) :
-            if($item['period'] == 12 && $item['id']) $smarty->assign('getDefaultPremium', $item['id']);
+    if(isset($products['iosJailbreak'])) {
+        foreach($products['iosJailbreak'] as $item) :
+            if ($item['period'] == 12 && $item['id']) {
+                $smarty->assign('defaultJailbreakProduct', $item['id']);
+                $smarty->assign('defaultJailbreakPrice', round($item['price'] / $item['period'], 2));
+            }
+        endforeach;
+    }
+    // Basic
+    if(isset($products['androidBasic'])) {
+        foreach($products['androidBasic'] as $item) :
+            if ($item['period'] == 12 && $item['id']) {
+                $smarty->assign('defaultAndriodBasicProduct', $item['id']);
+                $smarty->assign('defaultAndriodBasicPrice', round($item['price'] / $item['period'], 2));
+            }
+        endforeach;
+    }
+    if(isset($products['androidPremium'])) {
+        foreach($products['androidPremium'] as $item) :
+            if ($item['period'] == 12 && $item['id']) {
+                $smarty->assign('defaultAndroidPremiumProduct', $item['id']);
+                $smarty->assign('defaultAndroidPremiumPrice', round($item['price'] / $item['period'], 2));
+            }
         endforeach;
     }
 }
-
 // init output params!
 $smarty->assign('getProducts', $products);
 // $smarty->assign('_ga', (isset($_COOKIE['_ga'])) ? trim( strtolower($_COOKIE['_ga']), 'ga') : '' );

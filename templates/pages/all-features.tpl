@@ -226,7 +226,7 @@
                                 <ul>
                                     <li>
                                      <a class="btn-orange ga-action-click btn-view-demo" target="_blank"
-                                        href="http://demo.{$domain}/setDevice/125?redirect_url=cp/calls"
+                                        href="http://demo.{$domain}/setDevice/126?redirect_url=cp/calls"
                                         ga-action ="click"
                                         ga-category="techological"
                                         ga-label="demo"

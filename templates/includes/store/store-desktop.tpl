@@ -1,7 +1,9 @@
     <div class="save__2plan">
-        <div class="save__text">
-            <input type="checkbox" data-group="basic" name="android-40off" data-checkboxes="android-40off-main">
+        <div class="save__text label-touch">
+            <input type="checkbox" id="android-40off-main" data-checkboxes="android-40off">
+            <label for="android-40off-main">
             <span>Save 40%</span> on the 2nd plan. <div class="limited-time">Limited time offer!</div>
+            </label>
         </div>
     </div>
     <div class="basic_wr">
@@ -10,8 +12,8 @@
         </div>
         <div class="priceb">
             <div class="wrapper_pack clearfix">
-                <div class="wr_pack_basic android_basic_pack"></div>
-                <div class="wr_pack_double_basic android_basic_pack2"></div>
+                <div class="wr_pack_basic android_basic_pack _single-pack-android-basic"></div>
+                <div class="wr_pack_double_basic android_basic_pack2 _double-pack-android-basic"></div>
                 <div class="wr_price_big">
                     <span></span><div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr andr-basic-price-per-month">{$defaultAndriodBasicPrice}</div></div><span> / month</span>
                 </div>
@@ -24,7 +26,7 @@
                         {foreach from=$getProducts.androidBasic key=key item=item}
                             <li>
                                 <label class="label_radio hover_label_radio {if $item.period == '12'}r_on{else}r_off{/if}">
-                                    <input class="data-price" data-target=".andr-basic-price-per-month" data-cur="usd" data-price-usd="{$item.price}" data-offer-price-usd="{$getProducts.androidBasicDouble[$key].price}" data-period="{$item.period}" data-product="{$item.id}" data-offer-product="{$getProducts.androidBasicDouble[$key].id}" data-group="basic"  name="optionsRadios" id="optionsRadios{$item.id}1" value="{$item.id}" type="radio"{if $item.period == '12'} checked="checked"{/if} />
+                                    <input class="data-price" data-target=".andr-basic-price-per-month" data-cur="usd" data-price-usd="{$item.price}" data-offer-price-usd="{$getProducts.androidBasicDouble[$key].price}" data-period="{$item.period}" data-product="{$item.id}" data-offer-product="{$getProducts.androidBasicDouble[$key].id}" data-group="android-basic"  name="optionsRadios" id="optionsRadios{$item.id}1" value="{$item.id}" type="radio"{if $item.period == '12'} checked="checked"{/if} />
                                     <span class="sp">
                                                                             <strong>{$item.period}</strong> {if $item.period == 1}month{else}months{/if}
                                                                         </span>
@@ -47,11 +49,11 @@
                             </li>
                         {/foreach}
                     </ul>
-                    <input type="checkbox" data-group="basic" name="android-40off" class="hidden">
+                    <input type="checkbox" data-group="android-basic" name="android-40off" class="hidden">
                     <button class="btn btn-default ga-action-click"
                             ga-action ="click"
                             ga-category="store"
-                            ga-label="buy basic"
+                            ga-label="buy android basic"
                             value="true" type="submit" name="price[submit]">Buy Basic</button>
                     <div class="show_basic_features"><a href="#">Show Basic features</a></div>
                 </form>
@@ -64,8 +66,8 @@
         </div>
         <div class="pricep">
             <div class="wrapper_pack clearfix">
-                <div class="wr_pack_premium android_prem_pack"></div>
-                <div class="wr_pack_double_premium android_prem_pack2"></div>
+                <div class="wr_pack_premium android_prem_pack _single-pack-android-prem"></div>
+                <div class="wr_pack_double_premium android_prem_pack2 _double-pack-android-prem"></div>
                 <div class="wr_price_big">
                     <span></span><div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr andr-premium-price-per-month">{$defaultAndroidPremiumPrice}</div></div><span>/ month</span>
                 </div>
@@ -78,7 +80,7 @@
                         {foreach from=$getProducts.androidPremium key=key item=item}
                             <li>
                                 <label class="label_radio hover_label_radio {if $item.period == '12'}r_on{else}r_off{/if}">
-                                    <input class="data-price" data-target=".andr-premium-price-per-month" data-cur="usd" data-price-usd="{$item.price}" data-offer-price-usd="{$getProducts.androidPremiumDouble[$key].price}" data-period="{$item.period}" data-product="{$item.id}" data-offer-product="{$getProducts.androidPremiumDouble[$key].id}" data-group="premium"  name="optionsRadios" id="optionsRadios{$item.id}1" value="{$item.id}" type="radio"{if $item.period == '12'} checked="checked"{/if} />
+                                    <input class="data-price" data-target=".andr-premium-price-per-month" data-cur="usd" data-price-usd="{$item.price}" data-offer-price-usd="{$getProducts.androidPremiumDouble[$key].price}" data-period="{$item.period}" data-product="{$item.id}" data-offer-product="{$getProducts.androidPremiumDouble[$key].id}" data-group="android-prem"  name="optionsRadios" id="optionsRadios{$item.id}1" value="{$item.id}" type="radio"{if $item.period == '12'} checked="checked"{/if} />
                                     <span class="sp">
                                                                             <strong>{$item.period}</strong> {if $item.period == 1}month{else}months{/if}
                                                                         </span>
@@ -101,12 +103,12 @@
                             </li>
                         {/foreach}
                     </ul>
-                    <input type="checkbox" data-group="premium" name="android-40off" class="hidden">
+                    <input type="checkbox" data-group="android-prem" name="android-40off" class="hidden">
 
                     <button class="btn btn-default ga-action-click"
                             ga-action ="click"
                             ga-category="store"
-                            ga-label="buy premium"
+                            ga-label="buy android premium"
                             value="true" type="submit" name="price[submit]">Buy Premium</button>
                     <div class="show_premium_features"><a href="#">Show Premium features</a></div>
                 </form>
@@ -124,7 +126,7 @@
                     <ul>
                         <li data-toggle="tooltip" data-placement="top" title="View detailed data on incoming/outgoing calls: name, phone number, time and duration."><i class="icon-ok"></i> Calls history <span>(<b>700</b> calls monthly)</span>
                         </li>
-                        <li data-toggle="tooltip" data-placement="top" title="View text content sent or received via SMS, MMS, and iMessages.</div>"><i class="icon-ok"></i> Text message history <span>(<b>300</b> SMS monthly)</span></li>
+                        <li data-toggle="tooltip" data-placement="top" title="View text content sent or received via SMS, MMS.</div>"><i class="icon-ok"></i> Text message history <span>(<b>300</b> SMS monthly)</span></li>
                         <li data-toggle="tooltip" data-placement="top" title="Block calls from specific numbers."><i class="icon-ok"></i> Calls blocking </li>
                         <li data-toggle="tooltip" data-placement="top" title="Set a number of SMS a user can send daily. <div class='br'><strong>Activated Keylogger Needed</strong></div>"><i class="icon-ok"></i> SMS limiting <i class="icon-info-circled"></i></li>
                         <li data-toggle="tooltip" data-placement="top" title="Track current location as well as the entire route history. Map view available."><i class="icon-ok"></i> Location history</li>
@@ -164,7 +166,7 @@
                     <ul>
                         <li data-toggle="tooltip" data-placement="top" title="View detailed data on incoming/outgoing calls: name, phone number, time and duration."><i class="icon-ok"></i> Calls history <span>(unlimited)</span>
                         </li>
-                        <li data-toggle="tooltip" data-placement="top" title="View text content sent or received via SMS, MMS, and iMessages.</div>"><i class="icon-ok"></i> Text message history <span>(unlimited)</span></li>
+                        <li data-toggle="tooltip" data-placement="top" title="View text content sent or received via SMS, MMS.</div>"><i class="icon-ok"></i> Text message history <span>(unlimited)</span></li>
                         <li data-toggle="tooltip" data-placement="top" title="Block calls from specific numbers."><i class="icon-ok"></i> Calls blocking </li>
                         <li data-toggle="tooltip" data-placement="top" title="Set a number of SMS a user can send daily. <div class='br'><strong>Activated Keylogger Needed</strong></div>"><i class="icon-ok"></i> SMS limiting <i class="icon-info-circled"></i></li>
                         <li data-toggle="tooltip" data-placement="top" title="Track current location as well as the entire route history. Map view available."><i class="icon-ok"></i> Location history</li>
@@ -208,9 +210,11 @@
     </div>
     <div class="clearfix" style="position: relative;">
         <div class="save__2plan">
-            <div class="save__text">
-                <input type="checkbox" data-group="basic" name="android-40off" data-checkboxes="android-40off-main">
+            <div class="save__text label-touch">
+                <input type="checkbox" name="android-40off" id="android-40off-main" data-checkboxes="android-40off">
+                <label for="android-40off-main">
                 <span>Save 40%</span> on the 2nd plan. <div class="limited-time">Limited time offer!</div>
+                </label>
             </div>
         </div>
         <div class="basic_wr">
@@ -221,14 +225,13 @@
             <div class="priceb">
                 <div class="wrapper_pack clearfix">
 
-                    <div class="wr_pack_basic android_basic_pack"></div>
-                    <div class="wr_pack_double_basic android_basic_pack2"></div>
+                    <div class="wr_pack_basic android_basic_pack _single-pack-android-basic"></div>
+                    <div class="wr_pack_double_basic android_basic_pack2 _double-pack-android-basic"></div>
                     <div class="wr_price_big">
                         <span></span><div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr andr-basic-price-per-month">{$defaultAndriodBasicPrice}</div></div><span> / month</span>
                     </div>
                 </div>
                 <div class="list_price" id="foot_h2">
-                    <div class="space_line">&nbsp;</div>
                     <form name="price_basic_bottom" method="POST" action="/buy.html" class="buy-form-with-offer" autocomplete="off">
                         <input id='product_price_basic' type='hidden' name='price[productID]' value="{$defaultAndroidBasicProduct}" class="product_price" />
 
@@ -236,7 +239,7 @@
                             {foreach from=$getProducts.androidBasic key=key item=item}
                                 <li>
                                     <label class="label_radio hover_label_radio {if $item.period == '12'}r_on{else}r_off{/if}">
-                                        <input class="data-price" data-target=".andr-basic-price-per-month" data-cur="usd" data-price-usd="{$item.price}" data-offer-price-usd="{$getProducts.androidBasicDouble[$key].price}" data-period="{$item.period}" data-product="{$item.id}" data-offer-product="{$getProducts.androidBasicDouble[$key].id}" data-group="basic"  name="optionsRadios" id="optionsRadios{$item.id}2" value="{$item.id}" type="radio"{if $item.period == '12'} checked="checked"{/if} />
+                                        <input class="data-price" data-target=".andr-basic-price-per-month" data-cur="usd" data-price-usd="{$item.price}" data-offer-price-usd="{$getProducts.androidBasicDouble[$key].price}" data-period="{$item.period}" data-product="{$item.id}" data-offer-product="{$getProducts.androidBasicDouble[$key].id}" data-group="android-basic"  name="optionsRadios" id="optionsRadios{$item.id}2" value="{$item.id}" type="radio"{if $item.period == '12'} checked="checked"{/if} />
                                         <span class="sp">
                                                                             <strong>{$item.period}</strong> {if $item.period == 1}month{else}months{/if}
                                                                         </span>
@@ -259,11 +262,11 @@
                                 </li>
                             {/foreach}
                         </ul>
-                        <input type="checkbox" data-group="basic" name="android-40off" class="hidden">
+                        <input type="checkbox" data-group="android-basic" name="android-40off" class="hidden">
                         <button class="btn btn-default ga-action-click"
                                 ga-action ="click"
                                 ga-category="store"
-                                ga-label="buy basic"
+                                ga-label="buy android basic"
                                 value="true" type="submit" name="price[submit]">Buy Basic</button>
                     </form>
                     <div class="space_line">&nbsp;</div>
@@ -277,14 +280,13 @@
             </div>
             <div class="pricep">
                 <div class="wrapper_pack clearfix">
-                    <div class="wr_pack_premium android_prem_pack"></div>
-                    <div class="wr_pack_double_premium android_prem_pack2"></div>
+                    <div class="wr_pack_premium android_prem_pack _single-pack-android-prem"></div>
+                    <div class="wr_pack_double_premium android_prem_pack2 _double-pack-android-prem"></div>
                     <div class="wr_price_big">
                         <span></span><div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr andr-premium-price-per-month">{$defaultAndroidPremiumPrice}</div></div><span>/ month</span>
                     </div>
                 </div>
                 <div class="list_price" id="foot_h4">
-                    <div class="space_line">&nbsp;</div>
                     <form name="price_premium_bottom" method="POST" action="/buy.html" class="buy-form-with-offer" autocomplete="off">
                         <input id='product_price_premium' type='hidden' name='price[productID]' value='{if isset($getDefaultAndroidPremium)}{$getDefaultAndroidPremium}{else}0{/if}' class="product_price" />
 
@@ -292,7 +294,7 @@
                             {foreach from=$getProducts.androidPremium key=key item=item}
                                 <li>
                                     <label class="label_radio hover_label_radio {if $item.period == '12'}r_on{else}r_off{/if}">
-                                        <input class="data-price" data-target=".andr-premium-price-per-month" data-cur="usd" data-price-usd="{$item.price}" data-offer-price-usd="{$getProducts.androidPremiumDouble[$key].price}" data-period="{$item.period}" data-product="{$item.id}" data-offer-product="{$getProducts.androidPremiumDouble[$key].id}" data-group="premium"  name="optionsRadios" id="optionsRadios{$item.id}2" value="{$item.id}" type="radio"{if $item.period == '12'} checked="checked"{/if} />
+                                        <input class="data-price" data-target=".andr-premium-price-per-month" data-cur="usd" data-price-usd="{$item.price}" data-offer-price-usd="{$getProducts.androidPremiumDouble[$key].price}" data-period="{$item.period}" data-product="{$item.id}" data-offer-product="{$getProducts.androidPremiumDouble[$key].id}" data-group="android-prem"  name="optionsRadios" id="optionsRadios{$item.id}2" value="{$item.id}" type="radio"{if $item.period == '12'} checked="checked"{/if} />
                                         <span class="sp">
                                                                             <strong>{$item.period}</strong> {if $item.period == 1}month{else}months{/if}
                                                                         </span>
@@ -315,11 +317,11 @@
                                 </li>
                             {/foreach}
                         </ul>
-                        <input type="checkbox" data-group="premium" name="android-40off" class="hidden">
+                        <input type="checkbox" data-group="android-prem" name="android-40off" class="hidden">
                         <button class="btn btn-default ga-action-click"
                                 ga-action ="click"
                                 ga-category="store"
-                                ga-label="buy premium"
+                                ga-label="buy android premium"
                                 value="true" type="submit" name="price[submit]">Buy Premium</button>
                     </form>
                     <div class="space_line">&nbsp;</div>
@@ -327,3 +329,4 @@
             </div>
         </div>
     </div>
+    {*<script src='/public/javascripts/frontend.min.js'></script>*}

@@ -2,10 +2,6 @@
 $_inc = dirname(__FILE__); // includes
 $b_dir = dirname( $_inc ); // folder sites directory
 
-header("Cache-Control: no-cache");
-header("Pragma: no-cache");
-header("HTTP/1.0 200 OK");
-
 require_once $_inc.'/config.php';
 require_once $_inc.'/lib/Currency.php';
 require_once $_inc.'/lib/users/Order.php';
@@ -89,18 +85,13 @@ $smarty->force_compile = 1;
 // init output params!
 $smarty->assign('getProducts', $products);
 
-echo 'dfbjdfhbbjhfvbhdfv';
-exit;
-//$device = @($_REQUEST['deviceWidth']);
-//$smarty->assign("device", $device);
-//var_dump($_SERVER['HTTP_X_REQUESTED_WITH']);
-//var_dump(getallheaders());
-//    if ($device < 700){
-//        $smarty->display( $b_dir.'/templates/includes/store/store-mobile.tpl' );
-//    } elseif ($device > 700){
-//
-////        $smarty->display($b_dir.'/templates/includes/store/store-desktop.tpl');
-//    }
+$device = $_GET['deviceWidth'];
+
+    if ($device < 700) {
+        $smarty->display( $b_dir.'/templates/includes/store/store-mobile.tpl' );
+    } elseif ($device > 700){
+        $smarty->display($b_dir.'/templates/includes/store/store-desktop.tpl');
+    }
 
 
 

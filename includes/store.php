@@ -11,7 +11,7 @@ $obj = new includes\lib\users\Order;
 require_once 'smarty.config.php';
 
 /* list order */
-$products = $obj ->getProducts('first');
+$products = $obj ->getProducts('second');
 
 /* form_order */
 $_request = (isset($_POST['price']) and !empty($_POST['price'])) ? $_POST['price']: false;
@@ -33,29 +33,43 @@ if($_request['productID']) {
 
 }
 
-
 // default
 if(is_array($products)) {
+    if(isset($products['iosiCloud'])) {
+        foreach($products['iosiCloud'] as $item) :
+            if ($item['period'] == 12 && $item['id']) {
+                $smarty->assign('defaultIosiCloudProduct', $item['id']);
+                $smarty->assign('defaultIosiCloudPrice', round($item['price'] / $item['period'], 2));
+            }
+        endforeach;
+    }
+    if(isset($products['iosJailbreak'])) {
+        foreach($products['iosJailbreak'] as $item) :
+            if ($item['period'] == 12 && $item['id']) {
+                $smarty->assign('defaultJailbreakProduct', $item['id']);
+                $smarty->assign('defaultJailbreakPrice', round($item['price'] / $item['period'], 2));
+            }
+        endforeach;
+    }
     // Basic
-    if(isset($products['basic'])) {
-        foreach($products['basic'] as $item) :
+    if(isset($products['androidBasic'])) {
+        foreach($products['androidBasic'] as $item) :
             if ($item['period'] == 12 && $item['id']) {
-                $smarty->assign('defaultBasicProduct', $item['id']);
-                $smarty->assign('defaultBasicPrice', round($item['price'] / $item['period'], 2));
+                $smarty->assign('defaultAndriodBasicProduct', $item['id']);
+                $smarty->assign('defaultAndriodBasicPrice', round($item['price'] / $item['period'], 2));
             }
         endforeach;
     }
-    // Premium
-    if(isset($products['premium'])) {
-        foreach($products['premium'] as $item) :
+    if(isset($products['androidPremium'])) {
+        foreach($products['androidPremium'] as $item) :
             if ($item['period'] == 12 && $item['id']) {
-                $smarty->assign('defaultPremiumProduct', $item['id']);
-                $smarty->assign('defaultPremiumPrice', round($item['price'] / $item['period'], 2));
+                $smarty->assign('defaultAndroidPremiumProduct', $item['id']);
+                $smarty->assign('defaultAndroidPremiumPrice', round($item['price'] / $item['period'], 2));
             }
         endforeach;
     }
+
 }
-// currency
 $_curr = system\Currency::getInstance();
 $_curr -> setFilter( ['iso' => ['USD','EUR','GBP','CAD','AUD'] ] );
 $_rates = $_curr -> getCurrencies();
@@ -65,5 +79,7 @@ $smarty->assign('rates', json_encode($_rates));
 // init output params!
 $smarty->assign('getProducts', $products);
 
-// init output params
-$smarty->display($b_dir.'/templates/pages/store.tpl');
+$smarty->display($b_dir . '/templates/pages/store.tpl');
+
+
+

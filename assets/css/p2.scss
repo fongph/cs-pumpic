@@ -210,7 +210,9 @@ form > table.pricing-second {
 }
 
 .wr_price_big {
-  float: left;
+  //float: left;
+  display: inline-block;
+  vertical-align: top;
   position: relative;
   margin-top: 43px;
   color: #606060;
@@ -732,18 +734,17 @@ form > table.pricing-second {
 .wr_pack_basic {
   background-image: url('/images/basic_pack.png');
   background-repeat: no-repeat;
-  //margin: 25px 0 0 20%;
   margin: 15px 0 0 0;
   width: 85px;
   height: 85px;
-  float: left;
+  display: inline-block;
+  //float: left;
 }
 
 .wr_pack_double_basic {
   background-image: url('/images/double_basic.png');
   background-repeat: no-repeat;
-  //margin: 25px 10px 0 15%;
-  margin: 15px 0 0 0;
+  margin: 12px 0;
   width: 115px;
   height: 85px;
   display: none;
@@ -757,14 +758,15 @@ form > table.pricing-second {
   margin-top: 15px;
   width: 85px;
   height: 85px;
-  float: left;
+  //float: left;
+  display: inline-block;
 }
 
 .wr_pack_double_premium, .wr_pack_double_premium1, .wr_pack_double_premium2 {
   background-image: url('/images/double_premium.png');
   background-repeat: no-repeat;
   //margin: 25px 10px 0 10%;
-  margin-top: 15px;
+  margin: 12px 0;
   width: 121px;
   height: 85px;
   display: none;
@@ -871,7 +873,7 @@ form > table.pricing-second {
      &:after {
        content: '';
        position: absolute;
-       top: 100%;
+       top: 99%;
        left: 0;
        right: 0;
        margin: 0 auto;
@@ -974,21 +976,18 @@ form > table.pricing-second {
    background-image: url(/images/icloud-pack.png);
    background-position: 12px 0;
    &-double {
-     margin: 0;
      background-image: url(/images/icloud-2pack.png);
-     background-position: 6px 20px;
-     background-size: 91%;
+     background-position: 6px 10px;
+     background-size: 98%;
    }
    }
 .wr_icloud_jb {
-  margin: 0;
   background-image: url(/images/jb-pack.png);
   background-position: 12px 0;
   &-double {
-    margin: 0;
     background-image: url(/images/jb-pack2.png);
-    background-position: 6px 20px;
-    background-size: 91%;
+    background-position: 6px 10px;
+    background-size: 98%;
   }
 }
  .save__text input[type=checkbox] {
@@ -1278,7 +1277,7 @@ form > table.pricing-second {
   }
   .wr_price_big {
     color: #606060;
-    float: left;
+    //float: left;
     font-size: 30px;
     font-weight: bold;
     //height: 79px;
@@ -1299,6 +1298,7 @@ form > table.pricing-second {
     //margin-top: 20px;
     display: block;
     width: 100%;
+
   }
   .save__2plan {
    // display: none;

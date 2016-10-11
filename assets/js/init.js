@@ -13,7 +13,8 @@ if (typeof console === "undefined" || typeof console.log === "undefined") {
 }
 
 (function ($) {
-    var $_result = {
+	
+	var $_result = {
         '_plans': false,
         '_mobile': false
     };
@@ -1909,40 +1910,88 @@ $(document).ready(function () {
         });
     }
 
-    // switch features
-    $('.show_basic_features a').toggle(
+    //scroll to target
+    function scrollTo(selector,speed) {
+        $('html,body').animate({scrollTop: $(selector).offset().top -50 }, speed);
+    }
+    // switch features Android basic
+    $('.show_basic_features._android-f a').toggle(
             function (event) {
                 event.preventDefault();
-                $('.basic_fe').css("margin-top", "10px");
-                $('.basic_fe').show();
+                $('.basic_fe._android-f').css("margin-top", "10px");
+                $('.basic_fe._android-f').slideDown();
+                $('.basic_wr .show-f._android-f').hide();
+                $('.basic_wr .hide-f._android-f').show();
             }, function (event) {
         event.preventDefault();
-        $('.basic_fe').css("margin-top", "90px");
-        $('.basic_fe').hide();
-    }
+        //$('.basic_fe._android-f').css("margin-top", "90px");
+        $('.basic_fe._android-f').slideUp();
+        scrollTo('.basic_h', 'fast');
+				$('.basic_wr .show-f._android-f').show();
+				$('.basic_wr .hide-f._android-f').hide();
+				});
+	
+    // switch features Android premium
+    $('.show_premium_features._android-f a').toggle(
+            function (event) {
+                event.preventDefault();
+                $('.premium_fe._android-f').css("margin-top", "10px");
+                $('.premium_fe._android-f').slideDown();
+                $('.premium_wr .show-f._android-f').hide();
+                $('.premium_wr .hide-f._android-f').show();
+            }, function (event) {
+        event.preventDefault();
+        $('.premium_fe._android-f').slideUp();
+        scrollTo('#prem-header', 'fast');
+				$('.premium_wr .show-f._android-f').show();
+				$('.premium_wr .hide-f._android-f').hide();
+				});
+	
+		// switch features iOS
+    $('.show_premium_features._icloud-f a').toggle(
+            function (event) {
+                event.preventDefault();
+                $('.premium_fe._icloud-f').css("margin-top", "10px");
+                $('.premium_fe._icloud-f').slideDown();
+                $('.show-f._icloud-f').hide();
+                $('.hide-f._icloud-f').show();
+                $('.prod-icloud.prod-2').show();
+            }, function (event) {
+        event.preventDefault();
+        $('.premium_fe._icloud-f').slideUp();
+        scrollTo('.prod-icloud', 'fast');
+        $('.show-f._icloud-f').show();
+        $('.hide-f._icloud-f').hide();
+        $('.prod-icloud.prod-2').hide();
+        }
     );
-    $('.show_premium_features a').toggle(
+		// switch features Jailbreak
+    $('.show_premium_features._jailbreak-f a').toggle(
             function (event) {
                 event.preventDefault();
-                $('.premium_fe').css("margin-top", "10px");
-                $('.premium_fe').show();
+                $('.premium_fe._jailbreak-f').css("margin-top", "10px");
+                $('.premium_fe._jailbreak-f').slideDown();
+                $('.show-f._jailbreak-f').hide();
+                $('.hide-f._jailbreak-f').show();
+                $('._prod-icloud.prod-2._jailbreak-f').show();
             }, function (event) {
         event.preventDefault();
-        $('.premium_fe').css("margin-top", "90px");
-        $('.premium_fe').hide();
-    }
+        $('.premium_fe._jailbreak-f').slideUp();
+        scrollTo('div[data-info-block=ios-jb]', 'fast');
+        $('.show-f._jailbreak-f').show();
+        $('.hide-f._jailbreak-f').hide();
+        $('.prod-icloud.prod-2._jailbreak-f').hide();
+        }
     );
     $("input[name='optionsRadios']").each(function () {
-        //console.log(this.getAttribute("checked"));
         if (this.getAttribute("checked")) {
-            // alert($(this).val());
 
             $(this).parent('.label_radio').addClass('r_on');
             $(this).parent('.label_radio').removeClass('r_off');
             $(this).parents('form').children('.product_price').val($(this).val());
         }
     });
-
+    
     /*$("input[name='optionsRadios']").filter(':checked').each(function(){
 
      var curr  = $(this);
@@ -2326,9 +2375,10 @@ $(document).ready(function () {
             var $form = $(input).closest('form');
 
             var data = $(input).data();
-
-            var offerEnabled = $form.find('.double_offer input[type=checkbox][data-group=' + data.group + ']').is(':checked');
-
+            
+            //old store
+            //var offerEnabled = $form.find('input[type=checkbox][name=android-40off][data-group=' + data.group + ']').is(':checked');
+            var offerEnabled = $form.find('input[type=checkbox][data-group=' + data.group + ']').is(':checked');
             var $options = $('.buy-form-with-offer').find('input[type=radio][data-group=' + data.group + '][data-period=' + data.period + ']');
 
             $options.each(function () {
@@ -2352,6 +2402,7 @@ $(document).ready(function () {
             });
 
             if (typeof data.target != 'undefined') {
+
                 var currentValue = $(input).attr('data-price-' + data.cur) / Number(data.period);
 
                 if (offerEnabled) {
@@ -2380,19 +2431,31 @@ $(document).ready(function () {
                     if (!$(this).is(":checked")) {
                         $(this).prop('checked', offerEnabled);
                     }
-
-                    $('.wr_pack_' + data.group).hide();
-                    $('.wr_pack_double_' + data.group).show();
+                    //old store
+                    // $('.wr_pack_' + data.group).hide();
+                    // $('.wr_pack_double_' + data.group).show();
+                    // $form.find('.offer_old_price').show();
+                    // $form.find('.package_price').hide();
+                    // $form.find('.package_offer_price').show();
+                    $('._single-pack-' + data.group).hide();
+                    $('._double-pack-' + data.group).show();
                     $form.find('.offer_old_price').show();
                     $form.find('.package_price').hide();
                     $form.find('.package_offer_price').show();
+                    
                 } else {
                     if ($(this).is(":checked")) {
                         $(this).prop('checked', offerEnabled);
                     }
-
-                    $('.wr_pack_double_' + data.group).hide();
-                    $('.wr_pack_' + data.group).show();
+                    
+                    //old store
+                    // $('.wr_pack_double_' + data.group).hide();
+                    // $('.wr_pack_' + data.group).show();
+                    // $form.find('.offer_old_price').hide();
+                    // $form.find('.package_offer_price').hide();
+                    // $form.find('.package_price').show();
+                    $('._double-pack-' + data.group).hide();
+                    $('._single-pack-' + data.group).show();
                     $form.find('.offer_old_price').hide();
                     $form.find('.package_offer_price').hide();
                     $form.find('.package_price').show();
@@ -2465,4 +2528,20 @@ $(document).ready(function () {
             updateRadio($(this).find('input:first'));
         });
     }
+    function updateCheckboxes(attrVal) {
+        $("input[data-checkboxes="+attrVal+"]").change(function(){
+            var $inputs = $("input[name="+attrVal+"]")
+            $inputs.attr('checked', this.checked);
+            $.each($inputs, function() {updateCheckbox(this)})
+        });
+    }
+    updateCheckboxes('jailbreak-40off');
+    updateCheckboxes('android-40off');
+    updateCheckboxes('icloud-40off');
+    
+    if($('input[name=get-40off]')) {
+     updateCheckboxes('get-40off');
+    }
+    
+
 });

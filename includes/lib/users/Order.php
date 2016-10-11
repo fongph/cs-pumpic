@@ -328,11 +328,14 @@ class Order extends ManagerUser
                 }
             }
         }
-        
+
+
         foreach (self::$_data as $key => $value) {
             uasort($value, array('self', 'sortPeriods'));
             self::$_data[$key] = $value;
         }
+//        var_dump(self::$_data);
+//        die();
         
         return self::$_data;
     }

@@ -61,12 +61,21 @@
                 <div class="row position-relative">
                     <div class='iphones-text-full-width-block'>
                         <h2>Choose Subscription Plan</h2>
-                    </div>
-                    <div class="save__2plan">
-                        <div class="save__text">
-                            <span>Save 40%</span> on the 2nd plan. Limited time offer!
+                        <div class="save__2plan" style="top: 90px; display: block;">
+                            <div class="save__text">
+                                <input type="checkbox" data-group="icloud" name="get-40off" id="get-40off-main" data-checkboxes="get-40off">
+                                <label for="get-40off-main"></label>
+                                <span>Save 40%</span> on the 2nd plan. Limited time offer!
+                            </div>
                         </div>
                     </div>
+                    {*<div class="save__2plan">*}
+                        {*<div class="save__text">*}
+                            {*<input type="checkbox" data-group="icloud" name="get-40off" id="get-40off-main" data-checkboxes="get-40off">*}
+                            {*<label for="get-40off-main"></label>*}
+                            {*<span>Save 40%</span> on the 2nd plan. Limited time offer!*}
+                        {*</div>*}
+                    {*</div>*}
 
 
                     
@@ -113,104 +122,37 @@
                                   </li>
                                 </ul>
                                 <div class="row-pricing-panel">
-                                    <div class="basic_wr">
-                                        <div class="basic_h text-uppercase">
-                                            Basic
-                                        </div>
-                                        <div class="priceb border-left">
-                                            <div class="dtable">
-                                                <div class="dtable-cell">
-                                                    <div class="wr_pack_basic"></div>
-                                                    <div class="wr_pack_double_basic"></div>
-                                                </div>
-                                                <div class="dtable-cell">
-                                                    <div class="wr_price_big">
-                                                        <span></span>
-                                                        <div class="box-currence">
-                                                            <div class="symbol" attr-iso="usd">$</div>
-                                                            <div class="curr" id="basic-price-per-month">5.33</div>
-                                                        </div><span> / month</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                                    
-                                            <div class="list_price">
-                                                <form name="price_basic" method="POST" action="/buy.html" class="buy-form-with-offer" autocomplete="off">
-                                                    <input id='product_price_basic' type='hidden' name='price[productID]' value='{if isset($getDefaultBasic)}{$getDefaultBasic}{else}0{/if}' class="product_price" />
-                                                    <ul>
-                                                        {foreach from=$getProducts.basic key=key item=item}
-                                                            <li>
-                                                                <label class="label_radio hover_label_radio {if $item.period == '12'}r_on{else}r_off{/if}">
-                                                                    <input class="data-price" data-target="#basic-price-per-month" data-cur="usd" data-price-usd="{$item.price}" data-offer-price-usd="{$getProducts.basicDouble[$key].price}" data-period="{$item.period}" data-product="{$item.id}" data-offer-product="{$getProducts.basicDouble[$key].id}" data-group="basic"  name="optionsRadios" id="optionsRadios{$item.id}1" value="{$item.id}" type="radio"{if $item.period == '12'} checked="checked"{/if} />
-                                                                    <span class="sp">
-                                                                        <strong>{$item.period}</strong> {if $item.period == 1}month{else}months{/if}
-                                                                    </span>
-
-                                                                    <div class="box-small-package">
-                                                                        <div class="offer_old_price"><div class="box-currence strike__currence"><div class="symbol" attr-iso="usd">$</div><div class="curr">{$item.price * 2|string_format:"%.2f"}</div></div></div>
-                                                                    </div>
-
-                                                                    <div class="package_price">
-                                                                        <strong>
-                                                                            <div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr">{$item.price}</div></div>
-                                                                        </strong>
-                                                                    </div>
-                                                                    <div class="package_offer_price">
-                                                                        <strong>
-                                                                            <div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr">{$getProducts.basicDouble[$key].price}</div></div>
-                                                                        </strong>
-                                                                    </div>
-                                                                </label>
-                                                            </li>
-                                                        {/foreach}
-                                                    </ul>
-                                                    <div class="double_offer checkbox">
-                                                        <label>
-                                                            <input type="checkbox" data-group="basic">
-                                                            Get the 2nd plan with <span>40% OFF!</span>
-                                                        </label>
-                                                    </div>
-                                                    <button class="btn btn-default ga-action-click" 
-                                                            ga-action ="click"
-                                                            ga-category="iphone-tracking-software"
-                                                            ga-label="buy basic"
-                                                            value="true" type="submit" name="price[submit]">Buy Now</button>
-                                                <!--     <div class="show_basic_features"><a href="#">Show Basic features</a>
-                                                    </div> -->
-                                                </form>
-                                            </div>
-                                        </div>
-                                    
-                                    </div>
-                                    <div class="premium_wr">
-                                        <div class="premium_h text-uppercase">
-                                            Premium
+                                    <div class="premium_wr" style="">
+                                        <div class="premium_h">
+                                            Jailbreak Solution
                                         </div>
                                         <div class="pricep border-right-sm {*border-right-ddd*}">
                                             <div class="dtable">
                                                 <div class="dtable-cell">
-                                                    <div class="wr_pack_premium1"></div>
-                                                    <div class="wr_pack_double_premium1"></div>
+                                                    <div class="wrapper_pack">
+                                                    <div class="wr_pack_premium wr_icloud_jb _single-pack-jailbreak" style="margin-top: 12px;"></div>
+                                                    <div class="wr_pack_double_premium wr_icloud_jb-double _double-pack-jailbreak"></div>
+                                                    </div>
                                                 </div>
                                                 <div class="dtable-cell">
                                                     <div class="wr_price_big">
                                                         <span></span>
                                                         <div class="box-currence">
                                                             <div class="symbol" attr-iso="usd">$</div>
-                                                            <div class="curr" id="premium-price-per-month">6.99</div>
+                                                            <div class="curr" id="jailbreak-price-per-month">{$getDefaultiosJailbreak}</div>
                                                         </div><span>/ month</span>
                                                     </div>
                                                 </div>
                                             </div>        
                                             <div class="list_price">
                                                 <form name="price_premium" method="POST" action="/buy.html" class="buy-form-with-offer" autocomplete="off">
-                                                    <input id='product_price_premium1' type='hidden' name='price[productID]' value='{if isset($getDefaultPremium)}{$getDefaultPremium}{else}0{/if}' class="product_price"/>
+                                                    <input id='product_price_premium1' type='hidden' name='price[productID]' value='{if isset($getDefaultiosJailbreak)}{$getDefaultiosJailbreak}{else}0{/if}' class="product_price"/>
                                     
                                                     <ul>
-                                                        {foreach from=$getProducts.premium key=key item=item}
+                                                        {foreach from=$getProducts.iosJailbreak key=key item=item}
                                                             <li>
                                                                 <label class="label_radio hover_label_radio {if $item.period == '12'}r_on{else}r_off{/if}">
-                                                                    <input class="data-price" data-target="#premium-price-per-month" data-cur="usd" data-price-usd="{$item.price}" data-offer-price-usd="{$getProducts.premiumDouble[$key].price}" data-period="{$item.period}" data-product="{$item.id}" data-offer-product="{$getProducts.premiumDouble[$key].id}" data-group="premium1"  name="optionsRadios" id="optionsRadios{$item.id}1" value="{$item.id}" type="radio"{if $item.period == '12'} checked="checked"{/if} />
+                                                                    <input class="data-price" data-target="#jailbreak-price-per-month" data-cur="usd" data-price-usd="{$item.price}" data-offer-price-usd="{$getProducts.iosJailbreakDouble[$key].price}" data-period="{$item.period}" data-product="{$item.id}" data-offer-product="{$getProducts.iosJailbreakDouble[$key].id}" data-group="jailbreak"  name="optionsRadios" id="optionsRadios{$item.id}1" value="{$item.id}" type="radio"{if $item.period == '12'} checked="checked"{/if} />
                                                                     <span class="sp">
                                                                         <strong>{$item.period}</strong> {if $item.period == 1}month{else}months{/if}
                                                                     </span>
@@ -226,23 +168,24 @@
                                                                     </div>
                                                                     <div class="package_offer_price">
                                                                         <strong>
-                                                                            <div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr">{$getProducts.premiumDouble[$key].price}</div></div>
+                                                                            <div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr">{$getProducts.iosJailbreakDouble[$key].price}</div></div>
                                                                         </strong>
                                                                     </div>
                                                                 </label>
                                                             </li>
                                                         {/foreach}
                                                     </ul>
-                                                    <div class="double_offer checkbox">
+                                                    <div class="double_offer checkbox hidden-lg">
                                                         <label>
-                                                            <input type="checkbox" data-group="premium1">
+                                                            <input type="checkbox" data-group="jailbreak" name="get-40off">
                                                             Get the 2nd plan with <span>40% OFF!</span>
                                                         </label>
                                                     </div>
+
                                                     <button class="btn btn-default ga-action-click"
                                                             ga-action ="click"
                                                             ga-category="iphone-tracking-software"
-                                                            ga-label="buy premium"
+                                                            ga-label="buy jailbreak"
                                                             value="true" type="submit" name="price[submit]">Buy Now</button>
                                                   <!--   <div class="show_premium_features"><a href="#">Show Premium features</a>
                                                     </div> -->
@@ -301,34 +244,31 @@
                                         <div class="priceb">
                                             <div class="dtable">
                                                 <div class="dtable-cell">
-                                                    <div class="dtable-text text-right">
-                                                        {*<strong class='none-uppercase'>iCloud Solution</strong><br>*}
-                                                         <span>iCloud Solution is provided <br>with Premium subscription only</span>
-                                                    </div>
-                                                    <div style="width: 0; display: inline-block; vertical-align: middle;">
-                                                    <div class="wr_pack_premium2"></div>
-                                                    <div class="wr_pack_double_premium2"></div>
-                                                    </div>
+                                                <div class="wrapper_pack">
+                                                    <div class="wr_pack_premium wr_icloud _single-pack-icloud" style="margin-top: 12px;"></div>
+                                                    <div class="wr_pack_double_premium wr_icloud-double _double-pack-icloud"></div>
+
                                                 </div>
-                                                <div class="dtable-cell">         
+                                                </div>
+                                                <div class="dtable-cell">
                                                     <div class="wr_price_big">
                                                         <span></span>
                                                         <div class="box-currence">
                                                             <div class="symbol" attr-iso="usd">$</div>
-                                                            <div class="curr" id="premium-price-bottom-per-month">6.99</div>
+                                                            <div class="curr" id="icloud-price-per-month">{$defaultIosiCloudPrice}</div>
                                                         </div><span> / month</span>
                                                     </div>
                                                 </div>
                                             </div>         
                                             <div class="list_price">
                                                 <form name="price_premium_bottom" method="POST" action="/buy.html" class="buy-form-with-offer" autocomplete="off">
-                                                    <input id='product_price_premium2' type='hidden' name='price[productID]' value='{if isset($getDefaultPremium)}{$getDefaultPremium}{else}0{/if}' class="product_price"/>
+                                                    <input id='product_price_premium2' type='hidden' name='price[productID]' value='{if isset($defaultIosiCloud)}{$defaultIosiCloud}{else}0{/if}' class="product_price"/>
                                     
                                                     <ul>
-                                                        {foreach from=$getProducts.premium key=key item=item}
+                                                        {foreach from=$getProducts.iosiCloud key=key item=item}
                                                             <li>
                                                                 <label class="label_radio hover_label_radio {if $item.period == '12'}r_on{else}r_off{/if}">
-                                                                    <input class="data-price" data-target="#premium-price-bottom-per-month" data-cur="usd" data-price-usd="{$item.price}" data-offer-price-usd="{$getProducts.premiumDouble[$key].price}" data-period="{$item.period}" data-product="{$item.id}" data-offer-product="{$getProducts.premiumDouble[$key].id}" data-group="premium2"  name="optionsRadios" id="optionsRadios{$item.id}2" value="{$item.id}" type="radio"{if $item.period == '12'} checked="checked"{/if} />
+                                                                    <input class="data-price" data-target="#icloud-price-per-month" data-cur="usd" data-price-usd="{$item.price}" data-offer-price-usd="{$getProducts.iosiCloudDouble[$key].price}" data-period="{$item.period}" data-product="{$item.id}" data-offer-product="{$getProducts.iosiCloudDouble[$key].id}" data-group="icloud"  name="optionsRadios" id="optionsRadios{$item.id}2" value="{$item.id}" type="radio"{if $item.period == '12'} checked="checked"{/if} />
                                                                     <span class="sp">
                                                                         <strong>{$item.period}</strong> {if $item.period == 1}month{else}months{/if}
                                                                     </span>
@@ -344,31 +284,30 @@
                                                                     </div>
                                                                     <div class="package_offer_price">
                                                                         <strong>
-                                                                            <div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr">{$getProducts.premiumDouble[$key].price}</div></div>
+                                                                            <div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr">{$getProducts.iosiCloudDouble[$key].price}</div></div>
                                                                         </strong>
                                                                     </div>
                                                                 </label>
                                                             </li>
                                                         {/foreach}
                                                     </ul>
-                                                    <div class="double_offer checkbox">
+                                                    <div class="double_offer checkbox hidden-lg">
                                                         <label>
-                                                            <input type="checkbox" data-group="premium2">
+                                                            <input type="checkbox" data-group="icloud" name="get-40off">
                                                             Get the 2nd plan with <span>40% OFF!</span>
                                                         </label>
                                                     </div>
                                                     <button class="btn btn-default ga-action-click" 
                                                             ga-action ="click"
                                                             ga-category="iphone-tracking-software"
-                                                            ga-label="buy premium icloud"
+                                                            ga-label="buy icloud"
                                                             value="true" type="submit" name="price[submit]">Buy Now</button>
                                                     <!-- <div class="show_basic_features"><a href="#">Show Basic features</a>
                                                     </div> -->
                                                 </form>
                                             </div>
                                         </div>
-                                    
-                                    
+
                                     </div>
                                 </div>
                             </div>
@@ -447,7 +386,7 @@
                                     <img src="{$img}/testimonials/vickie-l.png" alt="" class="testimonial-photo">
                                     <div class="testimonial-text">
                                             <h4>Vickie L. (North Platte, NE)</h4>
-                                            <p>“My husband and&nbsp;I have two teenage daughters. We long ago realized that we should have a tool to keep an eye on their online life and phone activities. But we couldn’t find a universal app to monitor our older daughter’s iPhone and Android device we bought for our little one. A friend of ours recommended trying Pumpic. He was using it for two or three months on his own, and was very satisfied with results. My husband bought two subscriptions for a year at once. I couldn’t believe it would work so good. The app allows us to see who calls them and write messages, where they go online and track their location in real time. It’s a must-have solution for parents in the modern world I think.”</p>
+                                            <p>“My husband and I have two teenage daughters. We long ago realized that we should have a tool to keep an eye on their online life and phone activities. But we couldn’t find a universal app to monitor our older daughter’s iPhone and Android device we bought for our little one. A friend of ours recommended trying Pumpic. He was using it for two or three months on his own, and was very satisfied with results. My husband bought two subscriptions for a year at once. I couldn’t believe it would work so good. The app allows us to see who calls them and write messages, where they go online and track their location in real time. It’s a must-have solution for parents in the modern world I think.”</p>
                                     </div>
                             </div>
                             <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">

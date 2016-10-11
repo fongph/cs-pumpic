@@ -57,11 +57,9 @@ $config = array(
 				'free-trial.html'  => 'free_trial_registration.php',
 
 				'restore.html'  => 'restore.php',
-				'store-test.html'  => 'store-test.php',
 
 				'store.html'  => 'store.php',
-				'store-test-products-android.html'  => 'store-new-version.php',
-				'store-test-products-ios.html'  => 'store-new-version.php',
+				'store-android.php'  => 'store-android.php',
 				'aging-parent-protection-app.html' => 'aging-parent-protection-app.php',
 				'iphone-tracking-software.html'   => 'iphone_tracking_software.php',
 				'iphone-with-jailbreak-monitoring.html' => 'iphone_with_jailbreak_monitoring.php',

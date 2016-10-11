@@ -8,7 +8,7 @@
     <!-- BLOCK GTM -->
     {include file='../includes/main/main-after-body.tpl'}
     <!-- END BLOCK GTM -->
-
+    
     <!-- FLY BLOCKS -->
     {include file='../includes/content/fly/fly_blocks.tpl'}
     <!-- END FLY BLOCKS-->
@@ -112,7 +112,7 @@
                         <img src="{$img}/testimonials/ruth-s.png" alt="" class="testimonial-photo">
                         <div class="testimonial-text">
                             <h4>Ruth S. (Laconia, NH)</h4>
-                            <p>“I’m thankful to the team of&nbsp;Pumpic because with the help of their app I was able to protect my boy from an identity theft. My son received a text from an unknown person who claimed to be a representative of a bank that my family has nothing to do with. The fraudster was demanding to send him his Social Security Number. I was lucky to warn my son just on time and avoid possible consequences.”</p>
+                            <p>“I’m thankful to the team of Pumpic because with the help of their app I was able to protect my boy from an identity theft. My son received a text from an unknown person who claimed to be a representative of a bank that my family has nothing to do with. The fraudster was demanding to send him his Social Security Number. I was lucky to warn my son just on time and avoid possible consequences.”</p>
                         </div>
                     </div>
                         

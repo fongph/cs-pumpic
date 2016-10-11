@@ -83,17 +83,17 @@
 
         } 
 
-        {*include file='../includes/testimonials.tpl'*} 
-        
+        {*include file='../includes/testimonials.tpl'*}
+
 <div class="dark">
     <div class="container">
             <h2 class="text-center testimonial-title">Approved by Over 10,000 Parents:</h2>
             <div class="row">
-                
+
                 <div class="bxSliders only-pc">
                         <!-- SLIDE #1 -->
                         <div class="slide">
-                
+
                     <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
                             <img src="{$img}/testimonials/kate-u.png" alt="" class="testimonial-photo">
                             <div class="testimonial-text">
@@ -105,7 +105,7 @@
                             <img src="{$img}/testimonials/lawrence-g.png" alt="" class="testimonial-photo">
                             <div class="testimonial-text">
                                     <h4>Lawrence G. – father of 17-year-old daughter</h4>
-                                    <p>“The Internet is hiding many threats for the underage kids. That’s why I’m sure that parental control apps are a must-have nowadays when the popularity of the Web among our youngsters is growing constantly. While looking for the best software to monitor my child’s mobile phone, I compared many different apps and realized that Pumpic&nbsp;is just what I need. Although this software demands rooting Android devices, I think that the result is totally worth it.”</p>
+                                    <p>“The Internet is hiding many threats for the underage kids. That’s why I’m sure that parental control apps are a must-have nowadays when the popularity of the Web among our youngsters is growing constantly. While looking for the best software to monitor my child’s mobile phone, I compared many different apps and realized that Pumpic is just what I need. Although this software demands rooting Android devices, I think that the result is totally worth it.”</p>
                             </div>
                     </div>
                     <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
@@ -115,11 +115,11 @@
                                     <p>“My daughter loves music and started attending piano classes this year. She’s just a small 9-year-old kid but already learns to be responsible and independent staying at school after classes and going home by bus on her own. I gave her the first phone to always stay in touch but still worry about her as moms always do. That’s why I decided to install Pumpic and now can track my girl’s location by GPS. Moreover, even now I see that soon this app will help me to monitor her Internet activity.”</p>
                             </div>
                     </div>
-                            
+
                         </div>
                 </div>
                 <div class="bxSliderMobile"></div>
-                            
+
             </div>
     </div>
 </div>

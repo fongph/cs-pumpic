@@ -8,7 +8,7 @@ title="Android Parental Control App for Ultimate Monitoring | Pumpic"
     <!-- BLOCK GTM -->
     {include file='../includes/main/main-after-body.tpl'}
     <!-- END BLOCK GTM -->
-
+    
     <!-- FLY BLOCKS -->
     {include file='../includes/content/fly/fly_blocks.tpl'}
     <!-- END FLY BLOCKS-->
@@ -106,7 +106,7 @@ title="Android Parental Control App for Ultimate Monitoring | Pumpic"
                                         
 {include file='../includes/content/features-table.tpl'
         title = "Over 24 Monitoring Features to Protect Your Kids"
-        description = "Mobile technologies have introduced new opportunities to our children. It is rather hard to imagine the entire range of functions a single smartphone can fulfil. That’s why when it comes to features
+        description = "Mobile technologies have introduced new opportunities to our children. It is rather hard to imagine the entire range of functions a single smartphone can fulfil. That’s why when it comes to features 
                             that an Android parental control app should include, it is very important to consider as many as possible. Listed below 
                             reflects Pumpic monitoring abilities and also which particular mobile phone functions you will be able to cover by using the app. 
                             Our parental control software for Android will help you follow each and every aspect of your kids’ lives and all of their activities remotely."
@@ -189,7 +189,7 @@ title="Android Parental Control App for Ultimate Monitoring | Pumpic"
                             <img src="{$img}/testimonials/travis-f.png" alt="" class="testimonial-photo">
                             <div class="testimonial-text">
                                     <h4>Travis F. – father of three</h4>
-                                    <p>“Back in my school years, I could not imagine that someday children will become so much obsessed with the Internet and communicating with their friends through the texts and social&nbsp;sites instead of meeting for real and spending free time together. Monitoring Internet activity of my own children appeared to be a need. Pumpic is making it easy and lets me control all I need – starting with the tracking of a mobile phone through GPS and up to seeing any keys that were typed in.”</p>
+                                    <p>“Back in my school years, I could not imagine that someday children will become so much obsessed with the Internet and communicating with their friends through the texts and social sites instead of meeting for real and spending free time together. Monitoring Internet activity of my own children appeared to be a need. Pumpic is making it easy and lets me control all I need – starting with the tracking of a mobile phone through GPS and up to seeing any keys that were typed in.”</p>
                             </div>
                     </div>
                             

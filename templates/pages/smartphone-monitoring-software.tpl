@@ -4,7 +4,7 @@
     description="Pumpic app is a new software solution for parents to control mobile phones of their children. Tracking kid's smartphone usage, incoming and outbound calls, monitor browsing history and text messages, GPS location and social network activity on Android and iOS devices with."
     keywords="track kids phone tracking parental controls iphone app child android monitoring mobile"
 }    
-
+    
 <body>
     <!-- BLOCK GTM -->
     {include file='../includes/main/main-after-body.tpl'}
@@ -106,7 +106,7 @@
                             <img src="{$img}/testimonials/olivia-w.png" alt="" class="testimonial-photo">
                             <div class="testimonial-text">
                                     <h4>Olivia W. – mother of 16-year-old son</h4>
-                                    <p>“I’ve tried several parental control apps and didn’t expect much from Pumpic as I was really disappointed with the monitoring apps in the whole. But Pumpic did surprise&nbsp;me with one of the most precise GPS-tracking features. I’ve caught my son skipping school for two times, and now he knows that such behavior will have serious consequences. The app is user-friendly and simple to use, and I will definitely recommend it to my friends.”</p>
+                                    <p>“I’ve tried several parental control apps and didn’t expect much from Pumpic as I was really disappointed with the monitoring apps in the whole. But Pumpic did surprise me with one of the most precise GPS-tracking features. I’ve caught my son skipping school for two times, and now he knows that such behavior will have serious consequences. The app is user-friendly and simple to use, and I will definitely recommend it to my friends.”</p>
                             </div>
                     </div>
                             

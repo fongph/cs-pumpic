@@ -313,7 +313,7 @@
                                                     <div class="wr_pack_premium wr_icloud_jb _single-pack-jailbreak"></div>
                                                     <div class="wr_pack_double_premium wr_icloud_jb-double _double-pack-jailbreak"></div>
                                                     <div class="wr_price_big">
-                                                        <span></span><div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr jailbreak-price-per-month" >{$defaultPremiumPrice}</div></div><span>/ month</span>
+                                                        <span></span><div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr jailbreak-price-per-month" >{$defaultPremiumPrice}</div></div><span>/&npsp;month</span>
                                                     </div>
                                                 </div>
                                                 <div class="list_price icloud-list_price">

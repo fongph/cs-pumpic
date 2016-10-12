@@ -1,7 +1,16 @@
 .save__text .limited-time {
   display: inline;
 }
-
+.show-f, .hide-f {
+  color: #2ebcb0;
+  font-size: 14px;
+  font-weight: 400;
+  text-decoration: underline;
+  padding: 8px 0;
+  text-transform: none !important;
+  border-top: 1px solid #e8e8e8;
+  border-bottom: 1px solid #e8e8e8;
+}
   .save__text.label-touch {
     padding-top: 10px;
     input[type=checkbox]:not(:checked)+label {
@@ -151,7 +160,7 @@
     min-width: 275px;
   }
   .prod-list-android {
-    padding-top: 55px;
+    padding-top: 53px;
     .save__2plan {
       top: 0;
     }

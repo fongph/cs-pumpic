@@ -19,7 +19,7 @@
                 <span></span><div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr andr-basic-price-per-month">{$defaultAndriodBasicPrice}</div></div><span> / month</span>
             </div>
         </div>
-        <div class="show_basic_features _android-f"><a href="#"><span class="show-f _android-f">Show Basic features <i class="fa fa-chevron-down"></i></span><span class="hide-f _android-f" style="display: none;">Hide Basic features  <i class="fa fa-chevron-up"></i></span></a></div>
+        <div class="show_basic_features _android-f"><div class="show-f _android-f">Show Basic features <i class="fa fa-chevron-down"></i></div><div class="hide-f _android-f" style="display: none;">Hide Basic features  <i class="fa fa-chevron-up"></i></div></div>
         <div class="basic_wr">
             <div class="priceb" style="padding: 0; border-right: none;">
                 <div class="basic_fe _android-f" style="margin-top: 0;">
@@ -65,7 +65,7 @@
                         <span class="free-label__item"><i class="icon-ok"></i>Sim card change alert</span>
                     </div>
 
-                    <div class="show_basic_features _android-f"><a href="#"><span class="show-f _android-f">Show Basic features <i class="fa fa-chevron-down"></i></span><span class="hide-f _android-f" style="display: none;">Hide Basic features  <i class="fa fa-chevron-up"></i></span></a></div>
+                    <div class="show_basic_features _android-f"><div class="show-f _android-f">Show Basic features <i class="fa fa-chevron-down"></i></div><div class="hide-f _android-f" style="display: none;">Hide Basic features  <i class="fa fa-chevron-up"></i></div></div>
 
                 </div>
             </div>
@@ -124,7 +124,7 @@
                 <span></span><div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr andr-premium-price-per-month">{$defaultAndroidPremiumPrice}</div></div><span>/ month</span>
             </div>
         </div>
-        <div class="show_premium_features _android-f"><a href="#"><span class="show-f _android-f">Show Premium features <i class="fa fa-chevron-down"></i></span><span class="hide-f _android-f" style="display: none;">Hide Premium features  <i class="fa fa-chevron-up"></i></span></a></div>
+        <div class="show_premium_features _android-f"><div class="show-f _android-f">Show Premium features <i class="fa fa-chevron-down"></i></div><div class="hide-f _android-f" style="display: none;">Hide Premium features  <i class="fa fa-chevron-up"></i></div></div>
 
         <div class="premium_wr">
             <div class="pricep" style="margin-top: 0px; padding: 0;">
@@ -170,7 +170,7 @@
                         <span class="free-label__item"><i class="icon-ok"></i>Remove device lock</span>
                         <span class="free-label__item"><i class="icon-ok"></i>Sim card change alert</span>
                     </div>
-                    <div class="show_premium_features _android-f"><a href="#"><span class="show-f _android-f">Show Premium features <i class="fa fa-chevron-down"></i></span><span class="hide-f _android-f" style="display: none;">Hide Premium features  <i class="fa fa-chevron-up"></i></span></a></div>
+                    <div class="show_premium_features _android-f"><div class="show-f _android-f">Show Premium features <i class="fa fa-chevron-down"></i></div><div class="hide-f _android-f" style="display: none;">Hide Premium features  <i class="fa fa-chevron-up"></i></div></div>
 
                 </div>
             </div>

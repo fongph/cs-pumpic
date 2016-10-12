@@ -161,7 +161,7 @@
                                                                 ga-label="buy icloud"
                                                                 value="true" type="submit" name="price[submit]">Buy</button>
                                                     </form>
-                                                    <div class="show_premium_features _icloud-f"><a href="#"><span class="show-f _icloud-f">Show features <i class="fa fa-chevron-down"></i></span><span class="hide-f _icloud-f" style="display: none;">Hide features  <i class="fa fa-chevron-up"></i></span></a></div>
+                                                    <div class="show_premium_features _icloud-f"><div class="show-f _icloud-f">Show features <i class="fa fa-chevron-down"></i></div><div class="hide-f _icloud-f" style="display: none;">Hide features  <i class="fa fa-chevron-up"></i></div></div>
 
                                                 </div>
                                                 <div class="premium_fe _icloud-f">
@@ -230,7 +230,7 @@
                                                         <span class="free-label__item"><i class="icon-ok"></i>Remote control panel</span>
                                                         <span class="free-label__item"><i class="icon-ok"></i>Software updates</span>
                                                     </div>
-                                                    <div class="show_premium_features _icloud-f"><a href="#"><span class="show-f _icloud-f">Show features <i class="fa fa-chevron-down"></i></span><span class="hide-f _icloud-f" style="display: none;">Hide features  <i class="fa fa-chevron-up"></i></span></a></div>
+                                                    <div class="show_premium_features _icloud-f"><div class="show-f _icloud-f">Show features <i class="fa fa-chevron-down"></i></div><div class="hide-f _icloud-f" style="display: none;">Hide features  <i class="fa fa-chevron-up"></i></div></div>
 
                                                 </div>
 
@@ -359,7 +359,7 @@
                                                                 value="true" type="submit" name="price[submit]">Buy</button>
                                                     </form>
                                                 </div>
-                                                <div class="show_premium_features _jailbreak-f"><a href="#"><span class="show-f _jailbreak-f">Show features <i class="fa fa-chevron-down"></i></span><span class="hide-f _jailbreak-f" style="display: none;">Hide features  <i class="fa fa-chevron-up"></i></span></a></div>
+                                                <div class="show_premium_features _jailbreak-f"><div class="show-f _jailbreak-f">Show features <i class="fa fa-chevron-down"></i></div><div class="hide-f _jailbreak-f" style="display: none;">Hide features  <i class="fa fa-chevron-up"></i></div></div>
 
                                                 <div class="premium_fe _jailbreak-f">
                                                     <div class="premium_h" style="text-transform: none;" id="jb-features-h">
@@ -483,7 +483,7 @@
                                                         <span class="free-label__item"><i class="icon-ok"></i>Remote device lock</span>
                                                         <span class="free-label__item"><i class="icon-ok"></i>Sim card change alert</span>
                                                     </div>
-                                                    <div class="show_premium_features _jailbreak-f"><a href="#"><span class="show-f _jailbreak-f">Show features <i class="fa fa-chevron-down"></i></span><span class="hide-f _jailbreak-f" style="display: none;">Hide features  <i class="fa fa-chevron-up"></i></span></a></div>
+                                                    <div class="show_premium_features _jailbreak-f"><div class="show-f _jailbreak-f">Show features <i class="fa fa-chevron-down"></i></div><div class="hide-f _jailbreak-f" style="display: none;">Hide features  <i class="fa fa-chevron-up"></i></div></div>
 
                                                 </div>
 

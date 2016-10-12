@@ -188,12 +188,12 @@
                                                         <li class="icloud-features__item">
                                                             <p class="icloud-features__name"><i class="icon-ok"></i>Notes</p>
                                                             <p class="icloud-features__info m0">Track Notes on the target iOS device.
-                                                                <br><b>iCloud monitoring up to iOS 8.4.1</b>
+                                                                <br><b>Up to iOS 8.4.1</b>
                                                             </p>
                                                         </li>
                                                         <li class="icloud-features__item">
                                                             <p class="icloud-features__name"><i class="icon-ok"></i>Bookmarks</p>
-                                                            <p class="icloud-features__info m0">View all websites visited and bookmarked as preferred ones.<br><b>iCloud Monitoring up to iOS 8.4.1</b></p>
+                                                            <p class="icloud-features__info m0">View all websites visited and bookmarked as preferred ones.<br><b>Up to iOS 8.4.1</b></p>
                                                         </li>
                                                         <li class="icloud-features__item">
                                                             <p class="icloud-features__name"><i class="icon-ok"></i>Browsing history</p>
@@ -205,11 +205,11 @@
                                                         </li>
                                                         <li class="icloud-features__item">
                                                             <p class="icloud-features__name"><i class="icon-ok"></i>Skype</p>
-                                                            <p class="icloud-features__info m0">Track chats and calls on Skype.<br><b>iCloud monitoring up to iOS 8.4.1</b></p>
+                                                            <p class="icloud-features__info m0">Track chats and calls on Skype.<br><b>Up to iOS 8.4.1</b></p>
                                                         </li>
                                                         <li class="icloud-features__item">
                                                             <p class="icloud-features__name"><i class="icon-ok"></i>Kik</p>
-                                                            <p class="icloud-features__info m0">Track conversations via Kik.<br><b>iCloud monitoring starting from iOS 9.0</b></p>
+                                                            <p class="icloud-features__info m0">Track conversations via Kik.<br><b>Starting from iOS 9.0</b></p>
                                                         </li>
                                                         <li class="icloud-features__item">
                                                             <p class="icloud-features__name"><i class="icon-ok"></i>Historical data</p>
@@ -223,11 +223,7 @@
                                                             <p class="icloud-features__name"><i class="icon-ok"></i>Contacts</p>
                                                             <p class="icloud-features__info m0">View contact list including names, addresses, numbers and emails.</p>
                                                         </li>
-                                                        <li class="icloud-features__item">
-                                                            <p class="icloud-features__name"><i class="icon-ok"></i>iCloud Monitoring</p>
-                                                            <p class="icloud-features__info m0">Monitor Apple devices without jailbreak. View Calls, Text messages, Photos, Location, Notes, Contacts, Browsing History, Bookmarks, Calendar, Skype, and WhatsApp.
-                                                                <br><b>Note: Two-step verification must be disabled in the account of the target device.</b></p>
-                                                        </li>
+
                                                     </ul>
                                                     <div class="table_title free-label">
                                                         <h3 class="free-label__headname">FREE:</h3>
@@ -389,12 +385,12 @@
                                                         <li class="icloud-features__item">
                                                             <p class="icloud-features__name"><i class="icon-ok"></i>Notes</p>
                                                             <p class="icloud-features__info m0">Track Notes on the target iOS device.
-                                                                <br><b>iCloud monitoring up to iOS 8.4.1</b>
+                                                                <br><b>Up to iOS 8.4.1</b>
                                                             </p>
                                                         </li>
                                                         <li class="icloud-features__item">
                                                             <p class="icloud-features__name"><i class="icon-ok"></i>Bookmarks</p>
-                                                            <p class="icloud-features__info m0">View all websites visited and bookmarked as preferred ones.<br><b>iCloud Monitoring up to iOS 8.4.1</b></p>
+                                                            <p class="icloud-features__info m0">View all websites visited and bookmarked as preferred ones.<br><b>Up to iOS 8.4.1</b></p>
                                                         </li>
                                                         <li class="icloud-features__item">
                                                             <p class="icloud-features__name"><i class="icon-ok"></i>Browsing history</p>
@@ -406,11 +402,11 @@
                                                         </li>
                                                         <li class="icloud-features__item">
                                                             <p class="icloud-features__name"><i class="icon-ok"></i>Skype</p>
-                                                            <p class="icloud-features__info m0">Track chats and calls on Skype.<br><b>iCloud monitoring up to iOS 8.4.1</b></p>
+                                                            <p class="icloud-features__info m0">Track chats and calls on Skype.<br><b>Up to iOS 8.4.1</b></p>
                                                         </li>
                                                         <li class="icloud-features__item">
                                                             <p class="icloud-features__name"><i class="icon-ok"></i>Kik</p>
-                                                            <p class="icloud-features__info m0">Track conversations via Kik.<br><b>iCloud monitoring starting from iOS 9.0</b></p>
+                                                            <p class="icloud-features__info m0">Track conversations via Kik.<br><b>Starting from iOS 9.0</b></p>
                                                         </li>
                                                         <li class="icloud-features__item">
                                                             <p class="icloud-features__name"><i class="icon-ok"></i>Historical data</p>

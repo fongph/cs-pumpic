@@ -343,6 +343,7 @@ description="Pumpic offers high-quality Cell Phone Tracking Software for a good 
 
                                         <div class="prod-list-android clearfix" data-info-block="android" style="display: none;">
                                         {* ANDROID AJAX LOADING*}
+                                            <div id="loader"><img src="/images/loader.svg"></div>
                                             {*{include file='../includes/store/store-desktop.tpl'} for debug*}
                                         </div>
                                         {* ---ANDROID---*}
@@ -694,6 +695,7 @@ emptyScript="true"}
         var deviceWidth =  $(window).width();
         $.get('/store-android.php', { deviceWidth: deviceWidth })
                 .done(function(data) {
+                    $('#loader').fadeOut()
                     $(".prod-list-android").html(data);
                     var s = document.createElement("script");
                     s.type = "text/javascript";
@@ -702,8 +704,8 @@ emptyScript="true"}
                     if(deviceWidth < 700) {
                         var stickyHeader = function() {
                             var sticky = $('.save__2plan'),
-                                    stickyHeight = sticky.height(),
-                                    offset = sticky.offset().top + stickyHeight + 20;
+                                parentOffset = $('thead'),
+                                offset = parentOffset.offset().top + 50;
                             $(window).scroll(function(){
                                 var scroll = $(window).scrollTop();
                                 if (scroll >= offset) {

@@ -2531,5 +2531,4 @@ $(document).ready(function () {
      updateCheckboxes('get-40off');
     }
     
-
 });

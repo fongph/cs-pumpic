@@ -261,7 +261,7 @@
 }
 
 .ie9 .premium_wr{
-    width:49.99%;
+    /*width:49.99%;*/
     background: #f9f7ee;
     color:#606060;
     float:left;

@@ -54,6 +54,7 @@ gulp.task('images-min', function () {
 gulp.task('sass', function () {
     return gulp.src(path.dev.sass)
         .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
+        .pipe(postcss([ require('postcss-flexibility') ]))
         .pipe(autoprefixer('last 10 version'))
         .pipe(cssmin())
         .pipe(rename({suffix: '.min'}))

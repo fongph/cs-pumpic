@@ -20,7 +20,7 @@
                     <tr>
                         {if in_array('left', $position)}
                         <td class='{if isset($Review)}col-s-sm-6 col-xs-sm-5 col-md-4 col-lg-4 {else}col-s-sm-6 col-xs-sm-5 {if isset($colLeft)}{$colLeft}{else}col-md-5 col-lg-6{/if}{/if} {if in_array('bottom', $position)}vertical-aligh-bottom{/if}'>
-                            
+
                             <div class="visual-images-left {if isset($Review)}visual-images-left-lg{/if} {if $block_video}box-video-constructors{/if}">
                                 
                                 {if isset($language)}

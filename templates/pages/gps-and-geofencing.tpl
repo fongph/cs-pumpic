@@ -35,7 +35,6 @@
         <!-- CONTENT -->
         {include file='../includes/content/info/info-promo.tpl'
             fz="33"
-            collg="7"
             imgUrl = "header_banners/bg_GPS_437x226.png"
             imgAlt = "Cell Phone GPS Tracking"
             imgAlign = "right"

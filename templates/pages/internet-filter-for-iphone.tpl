@@ -41,7 +41,7 @@
             imgAlign = "right"
             imgVerticalAlign = "bottom"
 			imgTitle = "Content filtering parental control tool for iOS"
-            textAlign = "left"
+            textAlign = "right"
             title = "Best Internet Filter for iPhone </br> Avert Online Dangers"
 			titleSize = "25px"
             description = "Keep objectionable content away from your kid. </br> Filter websites and block pages. "

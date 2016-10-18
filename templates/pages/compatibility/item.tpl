@@ -144,7 +144,7 @@
 
                                             {if $getSetting._item.os  == "iOS"}
                                                 {if $getSetting._item.name  == "Apple iPhone 4"}
-                                                    <section class="text-center" data-filter="icloud" style="padding-top: 7px">
+                                                    <section class="text-center" data-filter="icloud">
                                                         <span>OS: <strong>{if $getSetting._item.os  == "iOS"}iOS iCloud {else}{$getSetting._item.os}{/if} </strong></span>
                                                         <span>Versions:<strong> {$ver_icloud_bot} - 7.1.2 </strong></span>
                                                     </section>

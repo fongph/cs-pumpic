@@ -1845,7 +1845,7 @@ form {
 .option_list {
   align-items: stretch;
   align-content: stretch;
-  flex: 1;
+  flex: 1 1 100px;
   position: relative;
   padding: 0;
   margin-bottom: 0;
@@ -1922,7 +1922,21 @@ form {
     }
   }
 }
-
+@supports not(flex-grow:1) {
+  .option-wrap {
+    background-color: #ffff00;
+    display: block;
+    border: none;
+    position: relative;}
+  .option_list {
+    display: block;
+    float: left;
+    padding: 0;
+    width: 20%;
+    list-style: none;}
+  .option_list:before {
+    display: none;}
+}
 @media only screen and (max-width: 991px) {
   .option_list {
     width: 100%;
@@ -6540,7 +6554,7 @@ form {
 }
 .thumpnail_info {
   width: 202px;
-  margin: 10px auto;
+  margin: 0 auto 10px;
   font-size: 13px;
 }
 .box-faq-images {

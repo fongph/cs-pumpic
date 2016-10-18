@@ -89,7 +89,8 @@ $(function () {
 	var iosInThumbnails = thumbnail.find('[data-filter=icloud]');
 	function changeHref() {
 		var buyBtn = $('#buy-btn'),
-				demoBtn = $('#demo-btn');
+				demoBtn = $('#demo-btn'),
+				domain = window.location.hostname;
 		buyBtn.attr('href', function (i, origValue) {
 			var result;
 			origValue == '/store.html' ? result='/store.html#jailbreak' : result='/store.html';
@@ -97,7 +98,7 @@ $(function () {
 		});
 		demoBtn.attr('href', function(i, origValue) {
 			var result;
-			this.pathname == '/setDevice/126' ? result='/setDevice/125?redirect_url=cp/calls' : result='/setDevice/126?redirect_url=cp/calls';
+			this.pathname == '/setDevice/126' ? result='http://demo.'+domain+'/setDevice/125?redirect_url=cp/calls' : result='http://demo.'+domain+'/setDevice/126?redirect_url=cp/calls';
 			return origValue.pathname = result;
 		});
 	}

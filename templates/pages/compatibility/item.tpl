@@ -13,9 +13,11 @@
 <body>
 <!--[if lte IE 11]><style>
     .option-wrap {
+        display: block;
         border: none;
         position: relative;}
     .option_list {
+        display: block;
         float: left;
         padding: 0;
         width: 20%;
@@ -127,7 +129,7 @@
                                 </div>
                                 {/if}
                                 <div class="col-sm-4 col-md-4">
-                                    <div class="thumbnail">
+                                    <div class="thumbnail" style="margin-bottom: 40px;">
 
                                         <div class="img_thumb">
                                             <img src="http://{$getSetting.api._domain}/{$getSetting.api.path_img}/{$getSetting._item.m_img}" height="202" width="90" alt="">
@@ -227,7 +229,7 @@
                             <div class="container">
                                     <div class="col-lg-10">
                                             <div class="row">
-                                                <div class="form" style="margin-bottom:40px;">
+                                                <div class="form" style="margin:25px 0;">
                                                   {nocache}
                                                   {include file='../../includes/main/form/main-compatibility-send-find-phone.tpl'
                                                   cache_id = "main-compatibility-send-find-phone"

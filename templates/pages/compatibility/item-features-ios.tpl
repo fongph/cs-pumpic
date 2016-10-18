@@ -5,13 +5,13 @@
             <li class="mobile_tooltip _filter-feature"
                 title="View detailed data on incoming/outgoing calls: name, phone number, time and duration.">Call history
             </li>
-            <li class="mobile_tooltip _filter-feature"
+            <li class="mobile_tooltip _filter-feature" data-filter="jailbreak"
                 title="Put all unwelcome callers and message senders on the blocked list.<br />">Call blocking
             </li>
             <li class="mobile_tooltip _filter-feature"
                 title="View text content sent or received via SMS, MMS, and iMessages.">Text message history
             </li>
-            <li class="mobile_tooltip _filter-feature"
+            <li class="mobile_tooltip _filter-feature" data-filter="jailbreak"
                 title="Block specific numbers. Protect your children from chatting with strangers.<br />">SMS blocking
             </li>
             <li class="mobile_tooltip _filter-feature" data-filter="jailbreak"
@@ -27,7 +27,7 @@
     <li><span>Social Media</span>
         <ul>
             <li class="mobile_tooltip _filter-feature"
-                title="Monitoring up to 8.4.1">Skype
+                title="Monitor text chats and calls on Skype.<br><b>Monitoring up to 8.4.1</b>">Skype
             </li>
             <li class="mobile_tooltip _filter-feature" data-filter="jailbreak"
                 title="Monitor text chats on Viber.<br />">Viber
@@ -35,14 +35,14 @@
             <li class="mobile_tooltip _filter-feature"
                 title="Monitor text chats and calls on WhatsApp.">WhatsApp
             </li>
-            <li class="mobile_tooltip _filter-feature"
+            <li class="mobile_tooltip _filter-feature" data-filter="jailbreak"
                     title="Monitor text chats and calls on Facebook.">Facebook
             </li>
             <li class="mobile_tooltip _filter-feature" data-filter="jailbreak"
                 title="Monitor photos and comments on Instagram.">Instagram
             </li>
             <li class="mobile_tooltip _filter-feature"
-                title="Monitoring starting from 9.0">Kik
+                title="Monitor text chats on Kik.<br /><b>Monitoring starting from 9.0</b>">Kik
             </li>
             <li class="mobile_tooltip _filter-feature" data-filter="jailbreak"
                 title="Monitor Snapchat photos, videos, and comments.">Snapchat
@@ -72,7 +72,7 @@
                 title="View all websites that your kid visits.">Browsing history
             </li>
             <li class="mobile_tooltip _filter-feature"
-                title="Monitoring up to 8.4.1">Bookmarks
+                title="View all websites that your child visited and bookmarked.<br /><b>Monitoring up to 8.4.1</b>">Bookmarks
             </li>
             <li class="mobile_tooltip _filter-feature" data-filter="jailbreak"
                 title="Block 18+ websites.<br />">Website blocking
@@ -114,7 +114,7 @@
                 title="Set specified zones on the map and receive alerts, when they are left or entered.">Geo-fences
             </li>
             <li class="mobile_tooltip _filter-feature"
-                title="Monitoring up to 8.4.1.">Notes</i>
+                title="Track Notes on the target iOS device.<br> <b>Monitoring up to 8.4.1.</b>">Notes</i>
             </li>
         </ul>
     </li>

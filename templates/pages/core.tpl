@@ -10,7 +10,7 @@
         description (string): вносим meta description ( описание страницы )
 *}
 {include file='../includes/main/main-header.tpl'
-
+    robots="no"
     title="Title"
     description="Description"
 }

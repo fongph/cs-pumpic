@@ -1,5 +1,5 @@
 {include file='../includes/main/main-header.tpl'
-    robots="yes" 
+
     title="Child Location Tracking | Pumpic Parental Control"
     description="GPS location tracker for Android and iOS. Monitor current whereabouts in real time and the entire route history. Multifeature cell phone tracker app for Android, iPhone, iPad, and iPod Touch."
     customeStyle="

@@ -1,5 +1,5 @@
 {include file='../includes/main/main-header.tpl'
-    robots="yes" 
+
     title="Ultimate Cell Phone Text Message Tracker | Pumpic"
     description="Pumpic is a state-of-art app for all-round parental control: text messages on Android and iOS monitoring, GPS tracking, online activity control, and much more."
     customeStyle="

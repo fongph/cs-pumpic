@@ -1,5 +1,5 @@
 {include file='../includes/main/main-header.tpl'
-    robots="yes" 
+
     title="Best Android Parental Control Apps Review | Pumpic"
     description="Check out the best parental control apps for Android. Read our reviews on popular parental control software for Android and choose the best one to protect your children."
     customeStyle="

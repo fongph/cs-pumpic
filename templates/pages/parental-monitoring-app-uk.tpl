@@ -1,6 +1,6 @@
 
 {include file='../includes/main/main-header.tpl'
-    robots="yes" 
+
     title="Mobile Phone Monitoring Software in UK"
     description="Reliable parental monitoring software in UK. Ensure child mobile security and online safety. Track calls, text messages, location, social networks, online chats, and even more."
 }    

@@ -1,7 +1,7 @@
 {* closeAccess *}
 
 {include file='../../includes/main/main-header.tpl'
-robots="yes"
+
 title="TopSpyApp: Cell Phone Spy Review"
 description="Read full review on Top Spy App mobile monitoring tool. Learn if using TopSpyApp software is a right choice for you.
 "

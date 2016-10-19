@@ -1,5 +1,5 @@
 {include file='../includes/main/main-header.tpl'
-    robots="yes" 
+
     title="Instagram Monitoring App for Parents | Pumpic"
     description="Monitor uploaded pictures, comments, and friends posts on Instagram. Protect your children with reliable Instagram parental monitoring by Pumpic."
     customeStyle="

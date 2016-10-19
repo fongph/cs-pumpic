@@ -1,5 +1,5 @@
 {include file='../../includes/main/main-header.tpl'
-robots="yes"
+
 title="Pumpic Mobile Infographics | Pumpic"
 description="Check out useful infographics on child online security that Pumpic has prepared for you. Learn what it takes to keep your children safe online and during daily living."
 }

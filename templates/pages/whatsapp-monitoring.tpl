@@ -1,5 +1,5 @@
 {include file='../includes/main/main-header.tpl'
-    robots="yes" 
+
     title="WhatsApp Monitoring for Android and iOS devices | Pumpic"
     description="Check out how to monitor WhatsApp messages on Android and iOS devices online. Protect your child from all possible online dangers with the help of WhatsApp Monitoring."
     customeStyle="

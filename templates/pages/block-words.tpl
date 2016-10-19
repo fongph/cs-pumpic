@@ -1,5 +1,5 @@
 {include file='../includes/main/main-header.tpl'
-    robots="yes" 
+
     title="Block Words in Text Messages to Protect Your Kid | Pumpic"
     description="Texting is the most popular way among teens to interact via smartphone. Bad people can use this fact to harm kids. Protect them by blocking SMS by keywords."
 }    

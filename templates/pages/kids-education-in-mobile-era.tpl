@@ -43,7 +43,7 @@
 */
 </style>
 {include file='../includes/main/main-header.tpl'
-    robots="yes"
+
     title="Smartphones and Tablets in Kids' Education | Pumpic"
     description="The Internet and handheld devices revolutionized kids’ learning experience. Today, mobile education is a reality that helps caring parents raise a genius."
     metaTags="true"

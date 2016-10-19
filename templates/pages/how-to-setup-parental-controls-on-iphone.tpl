@@ -1,5 +1,5 @@
 {include file='../includes/main/main-header.tpl'
-    robots="yes" 
+
     title="How to Set Up Parental Controls on iPhone | Pumpic"
     description="Setting up parental controls on iPhone protects your kids from online dangers. Use reliable monitoring software to keep your children safe."
     customeStyle="

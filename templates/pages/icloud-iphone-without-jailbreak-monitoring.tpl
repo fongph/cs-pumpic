@@ -1,5 +1,5 @@
 {include file='../includes/main/main-header.tpl'
-    robots="yes"
+
     title="iPhone tracking without jailbreak | Pumpic"
     description="Enjoy Pumpic mobile monitoring app on iPhones, iPads and iPods Touch without jailbreak. Monitor calls, text messages, contacts, browsing history, bookmarks, and calendar via iCloud."
 }

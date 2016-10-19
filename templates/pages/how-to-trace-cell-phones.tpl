@@ -1,5 +1,5 @@
 {include file='../includes/main/main-header.tpl'
-    robots="yes" 
+
     title="How to trace a cell phone location | Pumpic"
     description="Ever wondered how to trace cell phones? There’s a simple solution to this issue: Pumpic parental monitoring app for iOS and Android with GPS tracker."
     customeStyle="

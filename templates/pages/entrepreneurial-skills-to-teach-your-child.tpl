@@ -34,7 +34,7 @@
     }
 </style>
 {include file='../includes/main/main-header.tpl'
-    robots="yes" 
+
     title="Entrepreneurial Skills to Teach Your Child | Pumpiс"
     description="Develop your children’s entrepreneurial skills with Pumpic. View an educational infographics and teach your children how to become an entrepreneur."
     metaTags="true"

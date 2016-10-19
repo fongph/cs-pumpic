@@ -1,5 +1,5 @@
 {include file='../includes/main/main-header.tpl'
-    robots="yes" 
+
     title="Best Spying Apps for Android | Pumpic"
     description="Looking for the best text spyware for Android? Do you know they are illegal? Features of best spying apps and why it is better to use lawful parental controls."
     customeStyle="

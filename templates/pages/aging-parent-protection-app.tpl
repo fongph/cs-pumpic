@@ -1,5 +1,5 @@
 {include file='../includes/main/main-header.tpl'
-    robots="yes"
+
     title="Aging Parent Protection App"
     description="Pumpic helps you take care of your elderly parents. Monitor calls and text messages. Track locations and geo-fences. Prevent dangers remotely."
 }

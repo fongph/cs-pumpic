@@ -1,5 +1,5 @@
 {include file='../includes/main/main-header.tpl'
-    robots="yes" 
+
     title="Skype Monitoring for Android and iOS devices | Pumpic"
     description="Monitor Skype messages and video calls easily with the help of parental tracking app. Protect your kids from online dangers and risks!"
     customeStyle="

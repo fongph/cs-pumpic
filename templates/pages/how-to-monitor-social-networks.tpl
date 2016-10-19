@@ -1,5 +1,5 @@
 {include file='../includes/main/main-header.tpl' 
-    robots="yes"
+
     title="How to Monitor Social Networks"
     description="Most of dangers that kids face come from the Internet. That's why it is so important to know how to monitor social media your children use."
 }    

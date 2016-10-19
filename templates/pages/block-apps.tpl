@@ -1,5 +1,5 @@
 {include file='../includes/main/main-header.tpl'
-    robots="yes"
+
     title="Block Apps on Android and iOS Mobile Devices | Pumpic"
     description="Set screen time limits or block apps on child's cell phone or tablet with Pumpic. Get reliable parental time control software to block apps on Android and iPhone."
     customeStyle="

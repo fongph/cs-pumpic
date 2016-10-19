@@ -1,5 +1,5 @@
 {include file='../includes/main/main-header.tpl'
-    robots="yes" 
+
     title="iPhone Location Tracking App | Pumpic"
     description="Child abduction is one of the biggest parent’s worries. To enhance your child’s security, consider utilizing phone tracker for iPhone, iPad, and iPod Touch."
 }    

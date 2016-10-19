@@ -1,5 +1,5 @@
 {include file='../includes/main/main-header.tpl'
-    robots="yes" 
+
     title="Internet Filter for iPhone | Pumpic"
     description="Preventing misdeeds is more effective than overcoming its consequences. iPhone Internet filter is the best way to avert online perils threatening kids on the Web."
 }    

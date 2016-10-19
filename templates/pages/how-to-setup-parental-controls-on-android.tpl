@@ -1,5 +1,5 @@
 {include file='../includes/main/main-header.tpl'
-    robots="yes" 
+
     title="How to SetUp Parental Controls on Android | Pumpic"
     description="Learn how to put parental controls on an Android phone or tablet easily and quickly. Set Android parental controls to protect you children."
     customeStyle="

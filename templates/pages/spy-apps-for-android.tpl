@@ -1,5 +1,5 @@
 {include file='../includes/main/main-header.tpl'
-    robots="yes" 
+
     title="Spy Apps for Android: What are they? Are they legal? | Pumpic"
     description="Learn more about history, features, and usage of popular Android spy apps. Find out if you violate law when applying such app and why it is illegal."
     customeStyle="

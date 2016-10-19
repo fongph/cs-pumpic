@@ -1,5 +1,5 @@
 {include file='../includes/main/main-header.tpl'
-    robots="yes" 
+
     title="YouTube Parental Controls for Android | Pumpic App"
     description="Set Pumpic parental controls on YouTube. Monitor search queries, links, video titles, and comments. Protect your kids from inappropriate YouTube video content on Android."
     customeStyle="

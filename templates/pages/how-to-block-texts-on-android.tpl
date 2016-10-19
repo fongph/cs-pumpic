@@ -1,5 +1,5 @@
 {include file='../includes/main/main-header.tpl'
-    robots="yes" 
+
     title="How to Block Texts on Android | Pumpic"
     description="Learn how to block text messages on an Android phone and tablet. Prevent your kids from misgiving communication, threats, bad words, and explicit talks. Monitor SMS, MMS, and online chats."
     customeStyle="

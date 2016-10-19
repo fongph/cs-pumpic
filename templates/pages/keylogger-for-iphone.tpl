@@ -1,5 +1,5 @@
 {include file='../includes/main/main-header.tpl'
-    robots="yes" 
+
     title="Keylogger for iPhone as Parental Controls | Pumpic"
     description="iPhone keylogger runs hidden in the background and captures everything your kid types on the monitored device. It’s a must-have for concerned parents."
     customeStyle="

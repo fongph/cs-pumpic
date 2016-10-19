@@ -25,7 +25,7 @@
     }
 </style>
 {include file='../includes/main/main-header.tpl'
-    robots="yes"
+
     title="10 Things Your Kids Can Learn Online | Pumpiс"
     description="Teach your child 10 essential skills with learning apps and educational websites. 20 interactive science games and apps to develop kid's reading, maths, creativity, grammar, planning and problem solving skills."
     metaTags="true"

@@ -1,5 +1,5 @@
 {include file='../includes/main/main-header.tpl'
-    robots="yes" 
+
     title="Parental Control Apps for Android 2.3 VS 4.0 and Up | Pumpic"
     description="Parental controls for Android 2.3 – 4.0 and newer versions. Choose the best parental control software for Android to protect your kids."
     customeStyle="

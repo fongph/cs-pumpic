@@ -1,5 +1,5 @@
 {include file='../includes/main/main-header.tpl'
-    robots="yes" 
+
     title="Advanced Cell Phone Call Monitoring | Pumpic"
     description="Monitor your child's calls with the Pumpic smartphone parental controls. Track and block cell phone calls, view call logs - be aware of your kid's communication and suspicious call activity, and stop it for the good."
 }    

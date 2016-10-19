@@ -1,5 +1,5 @@
 {include file='../includes/main/main-header.tpl'
-    robots="yes" 
+
     title="How to Lock Apps on Android | Pumpic"
     description="See how app locks for Android work. Protect your children with reliable parental control software. Block distracting apps easily."
     customeStyle="

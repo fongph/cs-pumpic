@@ -1,5 +1,5 @@
 {include file='../includes/main/main-header.tpl'
-    robots="yes" 
+
     title="Online Safety Rules for Teens | Pumpic"
     description="Check out essential rules on Internet safety for teens. Know how to prevent potential online risks with teen monitoring software."
     customeStyle="

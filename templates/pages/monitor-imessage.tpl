@@ -1,5 +1,5 @@
 {include file='../includes/main/main-header.tpl'
-    robots="yes" 
+
     title="Monitor iMessage to Secure Your Kids | Pumpic"
     description="Texting is one of the most popular communication methods among modern teenagers. iMessage monitoring on Apple devices has never been easier. Keep your eyes open!"
 }    

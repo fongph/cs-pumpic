@@ -1,6 +1,6 @@
 
 {include file='../includes/main/main-header.tpl'
-    robots="yes" 
+
     title="Parental Monitoring App in Canada"
     description="Enjoy reliable kid tracking in Canada. Monitor calls, text messages, online chats, social media, and apps. Track location and even more. Use child phone monitoring all over Canada and abroad."
 }    

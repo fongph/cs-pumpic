@@ -1,5 +1,5 @@
 {include file='../includes/main/main-header.tpl'
-    robots="yes" 
+
     title="Viber Monitoring for Android and iOS Devices | Pumpic"
     description="Looking for a reliable and legal way to monitor Viber calls and messages? Check out all the features and functions the parental monitoring software provides."
     customeStyle="

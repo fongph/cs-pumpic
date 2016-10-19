@@ -2,7 +2,7 @@
 
 
 {include file='../../includes/main/main-header.tpl'
-    robots="yes" 
+
     title="Pumpic parental control software review"
     description="Read editor's reviews, view a features comparison table, and learn more about Pumpic mobile monitoring solution."
 }    

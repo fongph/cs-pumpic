@@ -2360,19 +2360,22 @@ $(document).ready(function () {
         var symbols = {usd: '$', eur: '€', gbp: '£', cad: '$', aud: '$'};
 
         var updateRadio = function (input) {
+            
             var $form = $(input).closest('form');
 
-            var data = $(input).data();
+            var data = {
+                group: $(input).attr('data-group'),
+                period: $(input).attr('data-period'),
+                cur: $(input).attr('data-cur'),
+                target: $(input).attr('data-target')
+            }
             
-            //old store
-            //var offerEnabled = $form.find('input[type=checkbox][name=android-40off][data-group=' + data.group + ']').is(':checked');
             var offerEnabled = $form.find('input[type=checkbox][data-group=' + data.group + ']').is(':checked');
             var $options = $('.buy-form-with-offer').find('input[type=radio][data-group=' + data.group + '][data-period=' + data.period + ']');
 
             $options.each(function () {
                 var optionData = $(this).data();
-
-                $productField = $(this).closest('form').find('input.product_price');
+                var $productField = $(this).closest('form').find('input.product_price');
 
                 if (offerEnabled) {
                     $productField.val(optionData.offerProduct);
@@ -2391,10 +2394,10 @@ $(document).ready(function () {
 
             if (typeof data.target != 'undefined') {
 
-                var currentValue = $(input).attr('data-price-' + data.cur) / Number(data.period);
+                var currentValue = $(input).attr('data-price-' + data.cur) / data.period;
 
                 if (offerEnabled) {
-                    currentValue = $(input).attr('data-offer-price-' + data.cur) / Number(data.period);
+                    currentValue = $(input).attr('data-offer-price-' + data.cur) / data.period;
                 }
 
                 var displayValue = (Math.floor(currentValue * 100) / 100).toFixed(2);
@@ -2403,6 +2406,7 @@ $(document).ready(function () {
                         .prev('div.symbol')
                         .html(symbols[data.cur] ? symbols[data.cur] : '');
             }
+
         };
 
         var updateCheckbox = function (input) {
@@ -2459,12 +2463,12 @@ $(document).ready(function () {
             updateRadio(this);
         });
 
-        $('.buy-form-with-offer label').has('input[type=radio]').click(function (e) {
+        $('.buy-form-with-offer label').has('input[type=radio]').on('click', function (e) {
             if (e.target.tagName != 'INPUT') {
                 return;
             }
 
-            $input = $(this).find('input:first');
+            var $input = $(this).find('input:first');
             updateRadio($input);
         });
 
@@ -2476,11 +2480,10 @@ $(document).ready(function () {
 
         var updateRadio = function (input) {
             var data = $(input).data();
-
             var $inputs = $('.buy-form').find('input[data-period=' + data.period + '][data-group=' + data.group + ']');
 
             $inputs.each(function () {
-                $productField = $(this).closest('form').find('input.product_price');
+                var $productField = $(this).closest('form').find('input.product_price');
 
                 $productField.val($(this).val());
 
@@ -2494,7 +2497,7 @@ $(document).ready(function () {
             });
 
             if (typeof data.target != 'undefined') {
-                var currentValue = $(input).attr('data-price-' + data.cur) / Number(data.period);
+                var currentValue = $(input).attr('data-price-' + data.cur) / data.period;
 
                 currentValue = (Math.floor(currentValue * 100) / 100).toFixed(2);
 

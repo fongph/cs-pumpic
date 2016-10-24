@@ -58,7 +58,9 @@
 
         right: -3px;
     }
-
+    .mobile-apps:hover {
+        opacity: .6;
+    }
     .cpa-images{
         padding-top: 5px;
         text-align: center;
@@ -78,9 +80,6 @@
 
         .mobile-apps {
             margin: 0 0 0 4px;
-        }
-        .mobile-apps:hover {
-            opacity: .6;
         }
         .mobile-apps-app-store{
             width: 75px;

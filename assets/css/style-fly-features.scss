@@ -11,7 +11,7 @@
   background: linear-gradient(to left top, rgb(187, 104, 132), rgb(58, 129, 147), rgb(32, 77, 132));
   background-size: auto;
   width: 207px;
-  height: 214px;
+  height: 218px;
   color: #fff;
   padding: 10px 10px;
   right: 9px;
@@ -30,7 +30,9 @@
   padding: 9px 0px 0px 0px;
   div {
     display: inline-block;
-    height: 40px;
+    float: none;
+    margin-left: 2px;
+    //height: 40px;
   }
 }
 
@@ -126,11 +128,13 @@
 /* ------------- \\ fly-features-v2 -------------- */
 
 #fly-features-h2 {
-  color: #f7efa5;
-  line-height: 16px;
-  font-size: 14px;
+  color: #fff;
+  line-height: 20px;
+  font-size: 15px;
+  font-weight: 600;
   text-align: center;
-  margin: 0 0 2px 4px;
+  max-width: 160px;
+  margin: 2px auto;
 }
 
 #fly-features-h2_2 {
@@ -204,9 +208,9 @@
   border-radius: 2px;
   font-size: 15px;
   color: #fff;
-  font-weight: 100;
+  font-weight: 300;
   display: block;
-  width: 100px;
+  width: 132px;
   text-align: center;
   height: 25px;
   padding: 2px 0 0;
@@ -240,10 +244,6 @@
     }
   }
 
-  #fly_bottom div{
-    height: auto;
-  }
-
   .fly_double_premium:first-child{
     display: block !important;
     margin: 0 auto;
@@ -270,7 +270,7 @@
   .features-button {
     font-size: 16px;
     height: 29px;
-    width: 120px;
+    width: 140px;
     padding: 3px 0 0;
   }
   #fly_bottom {
@@ -278,6 +278,10 @@
     width: 50%;
     padding: 0;
     text-align: center;
+    margin-top: 7px;
+    div {
+      margin: 4px 0 2px;
+    }
   }
   .fly-pumpic-icon {
     position: relative;
@@ -286,11 +290,11 @@
     left: 0;
   }
   #fly-features-h2_2 {
+    color: #f7efa5;
+    line-height: 16px;
     font-size: 14px;
-    line-height: 17px;
-    margin: 0;
     text-align: center;
-    width: 160px;
+    margin: 0 0 2px 4px;
   }
   .fly-features-link {
     padding: 6px 0 7px;

@@ -224,7 +224,7 @@
                                                                     <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Emails <span>Monitor sent and received emails, including deleted ones.</span></li>
                                                                     <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Browser <span>Follow visited websites and block those with inappropriate content.</span></li>
                                                                     <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Applications <span>View installed applications. Set time limits to prevent excessive use.</span></li>
-                                                                    <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Bookmarks <span>View preferred (bookmarked) websites. </span></li>
+                                                                    <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Bookmarks <span>View preferred (bookmarked) websites.</span></li>
                                                 
                                                                     <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Remote Control <span>Block the target device with a password. Reboot or wipe it remotely.</span></li>
                                                                     <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Geo-fences <span>Set specified zones on the map and receive alerts, when they are left or entered.</span></li>

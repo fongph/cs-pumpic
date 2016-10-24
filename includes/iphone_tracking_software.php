@@ -3,6 +3,7 @@ $_inc = dirname(__FILE__); // includes
 $b_dir = dirname( $_inc ); // folder sites directory
 
 require_once $_inc.'/config.php';
+require_once $_inc.'/lib/Currency.php';
 require_once $_inc.'/lib/users/Order.php';
 $obj = new includes\lib\users\Order;
 
@@ -69,6 +70,9 @@ if(is_array($products)) {
     }
 
 }
+$_curr = system\Currency::getInstance();
+$_curr -> setFilter( ['iso' => ['USD','EUR','GBP','CAD','AUD'] ] );
+$_rates = $_curr -> getCurrencies();
 
 $smarty->assign('rates', json_encode($_rates));
 

@@ -1,10 +1,15 @@
 {include file='../includes/main/main-header.tpl'
-
+    showRand="true"
     title="iPhone tracking without jailbreak | Pumpic"
     description="Enjoy Pumpic mobile monitoring app on iPhones, iPads and iPods Touch without jailbreak. Monitor calls, text messages, contacts, browsing history, bookmarks, and calendar via iCloud."
 }
 
 <body>
+<style>
+    .table_header .list-currencies>a {
+        line-height: 0.7;
+    }
+</style>
     <!-- BLOCK GTM -->
     {include file='../includes/main/main-after-body.tpl'}
     <!-- END BLOCK GTM -->
@@ -309,7 +314,11 @@
 
                                         <tr>
                                             <th>
-                                                <div class="table_header text-transform-none text-center">
+                                                <div class="table_header text-transform-none">
+                                                    <div class="pull-left">
+                                                        <div class="list-currencies clearfix"></div>
+                                                    </div>
+                                                <div class="pull-right">
                                                   <span class='none-uppercase'>Payment methods:</span>
                                                   <i class="ico-cart-visa"></i>
                                                   <i class="ico-cart-mcart"></i>
@@ -318,12 +327,25 @@
                                                   <i class="ico-cart-descover-new"></i>
                                                   <i class="ico-cart-paypal-new"></i>
                                                 </div>
+                                                </div>
                                             </th>
                                         </tr>
 
 
                                     </thead>
                                 </table>
+                                <script>
+                                    $(document).ready(function(){
+                                        if($('.list-currencies').length) {
+                                            $('.list-currencies').currancy({
+                                                onOpen: function(rates) {
+                                                    currencyHandler.afterLoad(rates);
+                                                }
+                                            },'show');
+                                        }
+
+                                    });
+                                </script>
                             </div>
                         </div>
                     </div>

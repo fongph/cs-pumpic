@@ -1,10 +1,15 @@
 {include file='../includes/main/main-header.tpl'
-
+    showRand="true"
     title="iPhone parental control software | Pumpic"
     description="Pumpic Apple iOS monitoring app for iPhones, iPads, and iPods Touch. View calls and text messages. Track GPS location. Follow social media and online activity remotely."
 }    
     
 <body>
+<style>
+    .priceb,.pricep {
+        margin-top: 0!important;
+    }
+</style>
     <!-- BLOCK GTM -->
     {include file='../includes/main/main-after-body.tpl'}
     <!-- END BLOCK GTM -->
@@ -61,13 +66,6 @@
                 <div class="row position-relative">
                     <div class='iphones-text-full-width-block'>
                         <h2>Choose Subscription Plan</h2>
-                        <div class="save__2plan" style="top: 90px; display: block;">
-                            <div class="save__text">
-                                <input type="checkbox" data-group="icloud" name="get-40off" id="get-40off-main" data-checkboxes="get-40off">
-                                <label for="get-40off-main"></label>
-                                <span>Save 40%</span> on the 2nd plan. Limited time offer!
-                            </div>
-                        </div>
                     </div>
                     {*<div class="save__2plan">*}
                         {*<div class="save__text">*}
@@ -175,7 +173,7 @@
                                                             </li>
                                                         {/foreach}
                                                     </ul>
-                                                    <div class="double_offer checkbox hidden-lg">
+                                                    <div class="double_offer checkbox">
                                                         <label>
                                                             <input type="checkbox" data-group="jailbreak" name="get-40off">
                                                             Get the 2nd plan with <span>40% OFF!</span>
@@ -291,7 +289,7 @@
                                                             </li>
                                                         {/foreach}
                                                     </ul>
-                                                    <div class="double_offer checkbox hidden-lg">
+                                                    <div class="double_offer checkbox">
                                                         <label>
                                                             <input type="checkbox" data-group="icloud" name="get-40off">
                                                             Get the 2nd plan with <span>40% OFF!</span>
@@ -316,6 +314,10 @@
                 </div>
                 <div class="row text-center">
                     <div class="table_header table_header-border text-center">
+                        <div class="pull-left">
+                            <div class="list-currencies clearfix"></div>
+                        </div>
+                        <div class="pull-right">
                       <span>
                               Payment methods:
                           </span>
@@ -332,10 +334,23 @@
                           </i>
                       <i class="ico-cart-paypal-new">
                           </i>
+                        </div>
                                                             </div>
                 </div>
             </div>
-        </div>                                               
+        </div>
+        <script>
+             $(document).ready(function(){
+               if($('.list-currencies').length) {
+                 $('.list-currencies').currancy({
+                   onOpen: function(rates) {
+                     currencyHandler.afterLoad(rates);
+                   }
+                 },'show');
+               }
+
+             });
+        </script>
         {* include file='../includes/testimonials.tpl'
                 title = "Trusted by Over 10,000 Customers Worldwide"
                 sliders = "false"

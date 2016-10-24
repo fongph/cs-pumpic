@@ -79,7 +79,9 @@
         .mobile-apps {
             margin: 0 0 0 4px;
         }
-
+        .mobile-apps:hover {
+            opacity: .6;
+        }
         .mobile-apps-app-store{
             width: 75px;
             left: 0;

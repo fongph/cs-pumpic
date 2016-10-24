@@ -58,7 +58,9 @@
 
         right: -3px;
     }
-
+    .mobile-apps:hover {
+        opacity: .6;
+    }
     .cpa-images{
         padding-top: 5px;
         text-align: center;

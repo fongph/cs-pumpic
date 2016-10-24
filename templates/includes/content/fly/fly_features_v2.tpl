@@ -2,7 +2,7 @@
     <div id="fly_features">
         <span class="fly_close close"></span>
         <div id="fly_top">
-            <h2 id="fly-features-h2">iCloud Monitoring<div class="br"></div>for iOS <img src="/images/fly_features/IOS10_logo.svg" width="20" height="20" alt=""><div class="br"></div>With Jailbreak</h2>
+            <h2 id="fly-features-h2">iCloud Monitoring<div class="br"></div>for iOS <img src="/images/fly_features/IOS10_logo.svg" width="20" height="20" alt=""><div class="br"></div>Without Jailbreak</h2>
             <p class="fly-label"></p>
             <a class="features-button ga-action-click"  ga-category="Fly Banner"  ga-action="click" ga-label="iOS 10 iCloud Update" href="/icloud-iphone-without-jailbreak-monitoring.html">Start Monitoring</a>
         </div>

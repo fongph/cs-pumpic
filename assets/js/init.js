@@ -2415,15 +2415,21 @@ $(document).ready(function () {
             var offerEnabled = $(input).is(":checked");
 
             var $checkboxes = $('.buy-form-with-offer').find('input[type=checkbox][data-group=' + data.group + ']');
-
+ 
             $checkboxes.each(function () {
                 var $form = $(this).closest('form');
-
+                var radioWith12 = $form.find('input[type=radio][data-period=12]');
+                    radioWith12.attr('checked', true)
+                
+                $(radioWith12).closest('form').find('input[type=radio]:checked').each(function () {
+                    updateRadio(this);
+                });
+                
                 if (offerEnabled) {
                     if (!$(this).is(":checked")) {
                         $(this).prop('checked', offerEnabled);
                     }
-                    //old store
+                    //old store1
                     // $('.wr_pack_' + data.group).hide();
                     // $('.wr_pack_double_' + data.group).show();
                     // $form.find('.offer_old_price').show();

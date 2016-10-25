@@ -1,10 +1,15 @@
 {include file='../includes/main/main-header.tpl'
-
+    showRand="true"
     title="iPhone remote sms, calls and Facebook tracker"
     description="Advanced mobile monitoring app for iOS. Compatible with iPhones, iPads and iPods Touch. Discover more than 22 monitoring features in one app."
 }    
     
 <body>
+<style>
+    .table_header .list-currencies>a {
+        line-height: 0.7;
+    }
+</style>
     <!-- BLOCK GTM -->
     {include file='../includes/main/main-after-body.tpl'}
     <!-- END BLOCK GTM -->
@@ -328,9 +333,6 @@
                                         </tr>
                                         <tr>
                                             <th class="hidden-media-box">
-                                            <div class="table_title border-top-bottom">
-                                                <h2 class="text-success h2-sm">Choose Subscription Plan</h2>
-                                            </div>
                                                 <div class="basic_wr row-pricing-panel w100">
                                                     <div class="basic_h">
                                                         Jailbreak solution
@@ -407,6 +409,10 @@
                                         <tr>
                                             <th>
                                                 <div class="table_header text-center">
+                                                    <div class="pull-left">
+                                                        <div class="list-currencies clearfix"></div>
+                                                    </div>
+                                                  <div class="pull-right" style="margin-top: 3px;">
                                                   <span class='none-uppercase'>Payment methods:</span>
 
                                                   <i class="ico-cart-visa"></i>
@@ -416,11 +422,12 @@
                                                   <i class="ico-cart-descover-new"></i>
                                                   <i class="ico-cart-paypal-new"></i>
                                                 </div>
+                                                </div>
                                             </th>
                                         </tr>
                                     </thead>
                                 </table>
-                                
+
                                 <div class="space_line"> </div>
                                 <div class="link_circle_italic2">
                                     <div class="style-links2">
@@ -527,6 +534,16 @@
             margin-top: 0;
         }
     </style>
-
+    <script>
+        $(document).ready(function(){
+            if($('.list-currencies').length) {
+                $('.list-currencies').currancy({
+                    onOpen: function(rates) {
+                        currencyHandler.afterLoad(rates);
+                    }
+                },'show');
+            }
+        });
+    </script>
 </body>
 </html>

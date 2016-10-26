@@ -104,7 +104,7 @@
                             <div id="log"></div>
                         </div>
                         <!-- end -->
-
+{*
                         {if $getSetting._item.os  == "Android"}
                             <style>
                                 .icon-icloud, .icloud-compatibility {
@@ -112,7 +112,7 @@
                                 }
                             </style>
                         {/if}
-
+*}
                         {if $getSetting._item}
                             <!-- item device -->
                             <div class="row">

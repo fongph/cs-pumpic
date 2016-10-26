@@ -1,7 +1,7 @@
 {* closeAccess *}
 
 {include file='../../includes/main/main-header.tpl'
-robots="yes"
+
 title="StealthGenie Mobile Monitoring App Review"
 description="Learn all pros and cons of StealthGenie spy app. Read editor's review on StealthGenie mobile monitoring software."
 }

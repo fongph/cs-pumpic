@@ -1,5 +1,5 @@
 {include file='../includes/main/main-header.tpl'
-    robots="yes" 
+
     title="How to Monitor Phone Contacts on Android and iOS | Pumpic"
     description="Install a cell phone parental control app. Avoid misgiving phone contacts for your kids. Track incoming and outgoing calls and even deleted contacts."
     customeStyle="

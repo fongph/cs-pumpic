@@ -1,5 +1,5 @@
 {include file='../includes/main/main-header.tpl'
-    robots="yes" 
+
     title="Safe Browser App to Protect Kids from Online Dangers | Pumpic"
     description="Internet is full of dangers that lie in wait for careless kids. That’s why parental control web browser is needed to ensure safe online experience for children."
 }    

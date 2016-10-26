@@ -1,10 +1,15 @@
 {include file='../includes/main/main-header.tpl'
-    robots="yes"
+    showRand="true"
     title="iPhone tracking without jailbreak | Pumpic"
     description="Enjoy Pumpic mobile monitoring app on iPhones, iPads and iPods Touch without jailbreak. Monitor calls, text messages, contacts, browsing history, bookmarks, and calendar via iCloud."
 }
 
 <body>
+<style>
+    .table_header .list-currencies>a {
+        line-height: 0.7;
+    }
+</style>
     <!-- BLOCK GTM -->
     {include file='../includes/main/main-after-body.tpl'}
     <!-- END BLOCK GTM -->
@@ -151,7 +156,7 @@
                                                                     <span></span>
                                                                     <div class="box-currence">
                                                                         <div class="symbol" attr-iso="usd">$</div>
-                                                                        <div class="curr" id="icloud-price-per-month">{$defaultIosiCloudPrice}</div>
+                                                                        <div class="curr icloud-price-per-month">{$defaultIosiCloudPrice}</div>
                                                                     </div><span> / month</span>
                                                                 </div>
                                                             </div>
@@ -165,7 +170,7 @@
                                                                     {foreach from=$getProducts.iosiCloud key=key item=item}
                                                                         <li>
                                                                             <label class="label_radio hover_label_radio {if $item.period == '12'}r_on{else}r_off{/if}">
-                                                                                <input class="data-price" data-target="#icloud-price-per-month" data-cur="usd" data-price-usd="{$item.price}" data-offer-price-usd="{$getProducts.iosiCloudDouble[$key].price}" data-period="{$item.period}" data-product="{$item.id}" data-offer-product="{$getProducts.iosiCloudDouble[$key].id}" data-group="icloud"  name="optionsRadios" id="optionsRadios{$item.id}1" value="{$item.id}" type="radio"{if $item.period == '12'} checked="checked"{/if} />
+                                                                                <input class="data-price" data-target=".icloud-price-per-month" data-cur="usd" data-price-usd="{$item.price}" data-offer-price-usd="{$getProducts.iosiCloudDouble[$key].price}" data-period="{$item.period}" data-product="{$item.id}" data-offer-product="{$getProducts.iosiCloudDouble[$key].id}" data-group="icloud"  name="optionsRadios" id="optionsRadios{$item.id}1" value="{$item.id}" type="radio"{if $item.period == '12'} checked="checked"{/if} />
                                                                                 <span class="sp">
                                                                                     <strong>{$item.period}</strong> {if $item.period == 1}month{else}months{/if}
                                                                                 </span>
@@ -304,13 +309,93 @@
                                                         </div>
                                                     </div>
                                                 </div>
+                                                <div class="basic_wr row-pricing-panel w100 icloud-box">
+                                                    <div class="basic_h text-transform-none">
+                                                        iCloud Solution
+                                                    </div>
+                                                    <div class="priceb border-none" style="padding-top: 0;">
+                                                        <div class="dtable">
+                                                            <div class="dtable-cell text-center" style="padding: 0;">
+                                                                {*<div class="dtable-text text-right">*}
+                                                                {*<strong class='none-uppercase'>iCloud Solution</strong><br>*}
+                                                                {*<span class='none-uppercase'>iCloud Solution is provided <br>with Premium subscription only</span>*}
+                                                                {*</div>*}
+                                                                <div style="width: 100px; display: inline-block; vertical-align: middle;">
+                                                                    <div class="wr_pack_premium wr_icloud _single-pack-icloud"></div>
+                                                                    <div class="wr_pack_double_premium wr_icloud-double _double-pack-icloud" style="margin-top: 9px;"></div>
+                                                                </div>
+                                                                <div class="wr_price_big" style="vertical-align: middle;">
+                                                                    <span></span>
+                                                                    <div class="box-currence">
+                                                                        <div class="symbol" attr-iso="usd">$</div>
+                                                                        <div class="curr icloud-price-per-month">{$defaultIosiCloudPrice}</div>
+                                                                    </div><span> / month</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="list_price">
+                                                            <form name="price_premium" method="POST" action="/buy.html" class="buy-form-with-offer" autocomplete="off">
+                                                                <input id='product_price_premium' type='hidden' name='price[productID]' value='{if isset($defaultIosiCloud)}{$defaultIosiCloud}{else}0{/if}' class="product_price" />
+
+                                                                <ul>
+                                                                    {foreach from=$getProducts.iosiCloud key=key item=item}
+                                                                        <li>
+                                                                            <label class="label_radio hover_label_radio {if $item.period == '12'}r_on{else}r_off{/if}">
+                                                                                <input class="data-price" data-target=".icloud-price-per-month" data-cur="usd" data-price-usd="{$item.price}" data-offer-price-usd="{$getProducts.iosiCloudDouble[$key].price}" data-period="{$item.period}" data-product="{$item.id}" data-offer-product="{$getProducts.iosiCloudDouble[$key].id}" data-group="icloud"  name="optionsRadios" id="optionsRadios{$item.id}1" value="{$item.id}" type="radio"{if $item.period == '12'} checked="checked"{/if} />
+                                                                                <span class="sp">
+                                                                                    <strong>{$item.period}</strong> {if $item.period == 1}month{else}months{/if}
+                                                                                </span>
+
+                                                                                <div class="box-small-package">
+                                                                                    <div class="offer_old_price"><div class="box-currence strike__currence"><div class="symbol" attr-iso="usd">$</div><div class="curr">{$item.price * 2|string_format:"%.2f"}</div></div></div>
+                                                                                </div>
+
+                                                                                <div class="package_price">
+                                                                                    <strong>
+                                                                                        <div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr">{$item.price}</div></div>
+                                                                                    </strong>
+                                                                                </div>
+                                                                                <div class="package_offer_price">
+                                                                                    <strong>
+                                                                                        <div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr">{$getProducts.iosiCloudDouble[$key].price}</div></div>
+                                                                                    </strong>
+                                                                                </div>
+                                                                            </label>
+                                                                        </li>
+                                                                    {/foreach}
+                                                                </ul>
+                                                                <div class="double_offer checkbox">
+                                                                    <label>
+                                                                        <input type="checkbox" data-group="icloud">
+                                                                        Get the 2nd plan with <span>40% OFF!</span>
+                                                                    </label>
+                                                                </div>
+                                                                <button class="btn btn-default ga-action-submit"
+                                                                        ga-action ="click"
+                                                                        ga-category="icloud-iphone-without-jailbreak-monitoring"
+                                                                        ga-label="buy icloud"
+                                                                        ga-page="/icloud-iphone-without-jailbreak-monitoring.html"
+                                                                        value="true" type="submit" name="price[submit]">Buy Now</button>
+                                                                <!-- <div class="show_basic_features"><a href="#">Show Basic features</a>
+                                                                </div> -->
+                                                            </form>
+                                                        </div>
+                                                    </div>
+
+
+                                                </div>
                                             </th>
                                         </tr>
 
                                         <tr>
                                             <th>
-                                                <div class="table_header text-transform-none text-center">
-                                                  <span class='none-uppercase'>Payment methods:</span>
+                                                <div class="table_header text-transform-none">
+                                                    <div class="pull-left">
+                                                        <div class="list-currencies clearfix"></div>
+                                                    </div>
+                                                <div class="pull-right" style="margin-top: 3px;">
+                                                  <span class='none-uppercase'">Payment methods:</span>
                                                   <i class="ico-cart-visa"></i>
                                                   <i class="ico-cart-mcart"></i>
                                                   <i class="ico-cart-maestro"></i>
@@ -318,12 +403,25 @@
                                                   <i class="ico-cart-descover-new"></i>
                                                   <i class="ico-cart-paypal-new"></i>
                                                 </div>
+                                                </div>
                                             </th>
                                         </tr>
 
 
                                     </thead>
                                 </table>
+                                <script>
+                                    $(document).ready(function(){
+                                        if($('.list-currencies').length) {
+                                            $('.list-currencies').currancy({
+                                                onOpen: function(rates) {
+                                                    currencyHandler.afterLoad(rates);
+                                                }
+                                            },'show');
+                                        }
+
+                                    });
+                                </script>
                             </div>
                         </div>
                     </div>

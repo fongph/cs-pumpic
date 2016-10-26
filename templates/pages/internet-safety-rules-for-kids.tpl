@@ -35,7 +35,7 @@
     }
 </style>
 {include file='../includes/main/main-header.tpl'
-robots="yes"
+
 title="Internet Safety Rules for Kids | Pumpic"
 description="Infographic features 10 fundamental internet safety rules for kids. Following these commandments will ensure your child is both safe and responsible online."
 metaTags="true"

@@ -161,7 +161,7 @@
                                                                 ga-label="buy icloud"
                                                                 value="true" type="submit" name="price[submit]">Buy</button>
                                                     </form>
-                                                    <div class="show_premium_features _icloud-f"><a href="#"><span class="show-f _icloud-f">Show features <i class="fa fa-chevron-down"></i></span><span class="hide-f _icloud-f" style="display: none;">Hide features  <i class="fa fa-chevron-up"></i></span></a></div>
+                                                    <div class="show_premium_features _icloud-f"><div class="show-f _icloud-f">Show features <i class="fa fa-chevron-down"></i></div><div class="hide-f _icloud-f" style="display: none;">Hide features  <i class="fa fa-chevron-up"></i></div></div>
 
                                                 </div>
                                                 <div class="premium_fe _icloud-f">
@@ -188,12 +188,12 @@
                                                         <li class="icloud-features__item">
                                                             <p class="icloud-features__name"><i class="icon-ok"></i>Notes</p>
                                                             <p class="icloud-features__info m0">Track Notes on the target iOS device.
-                                                                <br><b>iCloud monitoring up to iOS 8.4.1</b>
+                                                                <br><b>Up to iOS 8.4.1</b>
                                                             </p>
                                                         </li>
                                                         <li class="icloud-features__item">
                                                             <p class="icloud-features__name"><i class="icon-ok"></i>Bookmarks</p>
-                                                            <p class="icloud-features__info m0">View all websites visited and bookmarked as preferred ones.<br><b>iCloud Monitoring up to iOS 8.4.1</b></p>
+                                                            <p class="icloud-features__info m0">View all websites visited and bookmarked as preferred ones.<br><b>Up to iOS 8.4.1</b></p>
                                                         </li>
                                                         <li class="icloud-features__item">
                                                             <p class="icloud-features__name"><i class="icon-ok"></i>Browsing history</p>
@@ -205,11 +205,11 @@
                                                         </li>
                                                         <li class="icloud-features__item">
                                                             <p class="icloud-features__name"><i class="icon-ok"></i>Skype</p>
-                                                            <p class="icloud-features__info m0">Track chats and calls on Skype.<br><b>iCloud monitoring up to iOS 8.4.1</b></p>
+                                                            <p class="icloud-features__info m0">Track chats and calls on Skype.<br><b>Up to iOS 8.4.1</b></p>
                                                         </li>
                                                         <li class="icloud-features__item">
                                                             <p class="icloud-features__name"><i class="icon-ok"></i>Kik</p>
-                                                            <p class="icloud-features__info m0">Track conversations via Kik.<br><b>iCloud monitoring starting from iOS 9.0</b></p>
+                                                            <p class="icloud-features__info m0">Track conversations via Kik.<br><b>Starting from iOS 9.0</b></p>
                                                         </li>
                                                         <li class="icloud-features__item">
                                                             <p class="icloud-features__name"><i class="icon-ok"></i>Historical data</p>
@@ -223,18 +223,14 @@
                                                             <p class="icloud-features__name"><i class="icon-ok"></i>Contacts</p>
                                                             <p class="icloud-features__info m0">View contact list including names, addresses, numbers and emails.</p>
                                                         </li>
-                                                        <li class="icloud-features__item">
-                                                            <p class="icloud-features__name"><i class="icon-ok"></i>iCloud Monitoring</p>
-                                                            <p class="icloud-features__info m0">Monitor Apple devices without jailbreak. View Calls, Text messages, Photos, Location, Notes, Contacts, Browsing History, Bookmarks, Calendar, Skype, and WhatsApp.
-                                                                <br><b>Note: Two-step verification must be disabled in the account of the target device.</b></p>
-                                                        </li>
+
                                                     </ul>
                                                     <div class="table_title free-label">
                                                         <h3 class="free-label__headname">FREE:</h3>
                                                         <span class="free-label__item"><i class="icon-ok"></i>Remote control panel</span>
                                                         <span class="free-label__item"><i class="icon-ok"></i>Software updates</span>
                                                     </div>
-                                                    <div class="show_premium_features _icloud-f"><a href="#"><span class="show-f _icloud-f">Show features <i class="fa fa-chevron-down"></i></span><span class="hide-f _icloud-f" style="display: none;">Hide features  <i class="fa fa-chevron-up"></i></span></a></div>
+                                                    <div class="show_premium_features _icloud-f"><div class="show-f _icloud-f">Show features <i class="fa fa-chevron-down"></i></div><div class="hide-f _icloud-f" style="display: none;">Hide features  <i class="fa fa-chevron-up"></i></div></div>
 
                                                 </div>
 
@@ -313,7 +309,7 @@
                                                     <div class="wr_pack_premium wr_icloud_jb _single-pack-jailbreak"></div>
                                                     <div class="wr_pack_double_premium wr_icloud_jb-double _double-pack-jailbreak"></div>
                                                     <div class="wr_price_big">
-                                                        <span></span><div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr jailbreak-price-per-month" >{$defaultPremiumPrice}</div></div><span>/ month</span>
+                                                        <span></span><div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr jailbreak-price-per-month" >{$defaultPremiumPrice}</div></div><span>/&npsp;month</span>
                                                     </div>
                                                 </div>
                                                 <div class="list_price icloud-list_price">
@@ -363,7 +359,7 @@
                                                                 value="true" type="submit" name="price[submit]">Buy</button>
                                                     </form>
                                                 </div>
-                                                <div class="show_premium_features _jailbreak-f"><a href="#"><span class="show-f _jailbreak-f">Show features <i class="fa fa-chevron-down"></i></span><span class="hide-f _jailbreak-f" style="display: none;">Hide features  <i class="fa fa-chevron-up"></i></span></a></div>
+                                                <div class="show_premium_features _jailbreak-f"><div class="show-f _jailbreak-f">Show features <i class="fa fa-chevron-down"></i></div><div class="hide-f _jailbreak-f" style="display: none;">Hide features  <i class="fa fa-chevron-up"></i></div></div>
 
                                                 <div class="premium_fe _jailbreak-f">
                                                     <div class="premium_h" style="text-transform: none;" id="jb-features-h">
@@ -389,12 +385,12 @@
                                                         <li class="icloud-features__item">
                                                             <p class="icloud-features__name"><i class="icon-ok"></i>Notes</p>
                                                             <p class="icloud-features__info m0">Track Notes on the target iOS device.
-                                                                <br><b>iCloud monitoring up to iOS 8.4.1</b>
+                                                                <br><b>Up to iOS 8.4.1</b>
                                                             </p>
                                                         </li>
                                                         <li class="icloud-features__item">
                                                             <p class="icloud-features__name"><i class="icon-ok"></i>Bookmarks</p>
-                                                            <p class="icloud-features__info m0">View all websites visited and bookmarked as preferred ones.<br><b>iCloud Monitoring up to iOS 8.4.1</b></p>
+                                                            <p class="icloud-features__info m0">View all websites visited and bookmarked as preferred ones.<br><b>Up to iOS 8.4.1</b></p>
                                                         </li>
                                                         <li class="icloud-features__item">
                                                             <p class="icloud-features__name"><i class="icon-ok"></i>Browsing history</p>
@@ -406,11 +402,11 @@
                                                         </li>
                                                         <li class="icloud-features__item">
                                                             <p class="icloud-features__name"><i class="icon-ok"></i>Skype</p>
-                                                            <p class="icloud-features__info m0">Track chats and calls on Skype.<br><b>iCloud monitoring up to iOS 8.4.1</b></p>
+                                                            <p class="icloud-features__info m0">Track chats and calls on Skype.<br><b>Up to iOS 8.4.1</b></p>
                                                         </li>
                                                         <li class="icloud-features__item">
                                                             <p class="icloud-features__name"><i class="icon-ok"></i>Kik</p>
-                                                            <p class="icloud-features__info m0">Track conversations via Kik.<br><b>iCloud monitoring starting from iOS 9.0</b></p>
+                                                            <p class="icloud-features__info m0">Track conversations via Kik.<br><b>Starting from iOS 9.0</b></p>
                                                         </li>
                                                         <li class="icloud-features__item">
                                                             <p class="icloud-features__name"><i class="icon-ok"></i>Historical data</p>
@@ -487,7 +483,7 @@
                                                         <span class="free-label__item"><i class="icon-ok"></i>Remote device lock</span>
                                                         <span class="free-label__item"><i class="icon-ok"></i>Sim card change alert</span>
                                                     </div>
-                                                    <div class="show_premium_features _jailbreak-f"><a href="#"><span class="show-f _jailbreak-f">Show features <i class="fa fa-chevron-down"></i></span><span class="hide-f _jailbreak-f" style="display: none;">Hide features  <i class="fa fa-chevron-up"></i></span></a></div>
+                                                    <div class="show_premium_features _jailbreak-f"><div class="show-f _jailbreak-f">Show features <i class="fa fa-chevron-down"></i></div><div class="hide-f _jailbreak-f" style="display: none;">Hide features  <i class="fa fa-chevron-up"></i></div></div>
 
                                                 </div>
 

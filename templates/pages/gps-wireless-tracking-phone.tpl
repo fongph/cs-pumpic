@@ -1,6 +1,6 @@
 {*closeAccess*}
 {include file='../includes/main/main-header.tpl'
-    robots="yes"
+
     title="Track iPhones and Android Smartphones with any Mobile Carrier"
     description="Learn how you can locate your kids via their phones and stay connected with them on the go. Receive alerts whenever they enter or leave specified GPS zones. Pumpic app is compatible with any carrier and works on Android and Apple mobile devices."
 }

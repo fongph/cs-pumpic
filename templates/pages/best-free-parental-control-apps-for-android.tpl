@@ -1,5 +1,5 @@
 {include file='../includes/main/main-header.tpl'
-    robots="yes" 
+
     title="Best Free Parental Control Apps for Android | Pumpic"
     description="Check out a list of free parental control software for Android. Choose the best free parental control app for Android smartphones and tablets to protect your kids."
     amp = "http://pumpic.com/amp/best-free-parental-control-apps-for-android.html"

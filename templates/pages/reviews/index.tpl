@@ -1,7 +1,7 @@
 {* closeAccess *}
 
 {include file='../../includes/main/main-header.tpl'
-    robots="yes" 
+
     title="Best parental control apps for Android and iPhone"
     description="We have manually reviewed 50+ parental control software and handpicked the best products for you. Here's the detailed comparison of parental control apps for Android devices and iPhones that allow parents to block and filter bad content, limit app usage, review calls, texts, and Internet activity."
 }

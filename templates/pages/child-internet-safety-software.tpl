@@ -1,5 +1,5 @@
 {include file='../includes/main/main-header.tpl'
-    robots="yes" 
+
     title="Best Internet Safety Software for Concerned Parents | Pumpic"
     description="Nowadays, having children Internet safety software installed on all devices that a kid can access is a must. With it, you always stay aware of your child is up to."
     customeStyle="

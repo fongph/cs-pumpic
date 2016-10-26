@@ -1,5 +1,5 @@
 {include file='../includes/main/main-header.tpl'
-    robots="yes" 
+
     title="Keylogger Monitoring for Android Devices | Pumpic"
     description="Looking for Android keylogger? You’re in the right place! Check out the main functions of monitoring software to control the smartphone and tablet usage."
     customeStyle="

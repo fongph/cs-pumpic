@@ -16,11 +16,11 @@
                     {assign var="h_title" value=$styleTitle}
                 {/if}
                 
-                <table id='block-table-header'>
+                <table id='block-table-header' style="width: 100%;">
                     <tr>
                         {if in_array('left', $position)}
                         <td class='{if isset($Review)}col-s-sm-6 col-xs-sm-5 col-md-4 col-lg-4 {else}col-s-sm-6 col-xs-sm-5 {if isset($colLeft)}{$colLeft}{else}col-md-5 col-lg-6{/if}{/if} {if in_array('bottom', $position)}vertical-aligh-bottom{/if}'>
-                            
+
                             <div class="visual-images-left {if isset($Review)}visual-images-left-lg{/if} {if $block_video}box-video-constructors{/if}">
                                 
                                 {if isset($language)}
@@ -297,7 +297,7 @@
                         </td>
                         
                         {if in_array('right', $position)}
-                        <td class='col-xs-sm-12 col-s-sm-12 col-sm-12 {if isset($colRight)}{$colRight}{else}col-md-5 col-lg-5{/if}{if $imgVerticalAlign == 'bottom'} vertical-aligh-bottom{/if}'>
+                        <td class='col-xs-sm-12 col-s-sm-12 col-sm-12 {if isset($colRight)}{$colRight}{else}col-md-6 col-lg-6{/if}{if $imgVerticalAlign == 'bottom'} vertical-aligh-bottom{/if}'>
                             <div class="visual-images-right {if $block_video}box-video-constructors{/if}">
                                 <div class="mobile-none w100p"> 
                                     <img src="{$img}/{$imgUrl}" alt="{$imgAlt}" title="{$imgTitle}" class="visual-img-pc {if isset($maxWidth)}max-width-{$maxWidth}{/if}">

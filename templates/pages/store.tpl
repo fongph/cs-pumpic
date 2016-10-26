@@ -6,21 +6,7 @@ showRand="true"
 title="Phone Tracker Prices and Subscription Plans | Pumpic"
 description="Pumpic offers high-quality Cell Phone Tracking Software for a good price. Find out more about Pumpic cost and subscription plan types to choose the one suitable for your monitoring needs."
 }
-<script>
-//    $(document).ready( function () {
-//        var deviceWidth =  $(window).width();
-//        console.log(deviceWidth);
-//        $.get('/store-android.php', { deviceWidth: deviceWidth })
-//                .done(function(data) {
-//                    $(".prod-list-android").html(data);
-//                    initStore();
-////                    var s = document.createElement("script");
-////                    s.type = "text/javascript";
-////                    s.src = "/javascripts/frontend.min.js";
-////                    $("body").append(s);
-//                });
-//    });
-</script>
+
 <body>
 
 <!-- BLOCK GTM -->
@@ -222,7 +208,7 @@ description="Pumpic offers high-quality Cell Phone Tracking Software for a good 
                                                                     ga-label="buy icloud"
                                                                     value="true" type="submit" name="price[submit]">Buy</button>
                                                         </form>
-                                                        <div class="show_premium_features _icloud-f"><a href="#"><span class="show-f _icloud-f">Show features <i class="fa fa-chevron-down"></i></span><span class="hide-f _icloud-f" style="display: none;">Hide features  <i class="fa fa-chevron-up"></i></span></a></div>
+                                                        <div class="show_premium_features _icloud-f"><div class="show-f _icloud-f">Show features <i class="fa fa-chevron-down"></i></div><div class="hide-f _icloud-f" style="display: none;">Hide features  <i class="fa fa-chevron-up"></i></div></div>
 
                                                     </div>
                                                     <div class="premium_fe _icloud-f">
@@ -249,12 +235,12 @@ description="Pumpic offers high-quality Cell Phone Tracking Software for a good 
                                                             <li class="icloud-features__item">
                                                                 <p class="icloud-features__name"><i class="icon-ok"></i>Notes</p>
                                                                 <p class="icloud-features__info m0">Track Notes on the target iOS device.
-                                                                    <br><b>iCloud monitoring up to iOS 8.4.1</b>
+                                                                    <br><b>Up to iOS 8.4.1</b>
                                                                 </p>
                                                             </li>
                                                             <li class="icloud-features__item">
                                                                 <p class="icloud-features__name"><i class="icon-ok"></i>Bookmarks</p>
-                                                                <p class="icloud-features__info m0">View all websites visited and bookmarked as preferred ones.<br><b>iCloud Monitoring up to iOS 8.4.1</b></p>
+                                                                <p class="icloud-features__info m0">View all websites visited and bookmarked as preferred ones.<br><b>Up to iOS 8.4.1</b></p>
                                                             </li>
                                                             <li class="icloud-features__item">
                                                                 <p class="icloud-features__name"><i class="icon-ok"></i>Browsing history</p>
@@ -266,11 +252,11 @@ description="Pumpic offers high-quality Cell Phone Tracking Software for a good 
                                                             </li>
                                                             <li class="icloud-features__item">
                                                                 <p class="icloud-features__name"><i class="icon-ok"></i>Skype</p>
-                                                                <p class="icloud-features__info m0">Track chats and calls on Skype.<br><b>iCloud monitoring up to iOS 8.4.1</b></p>
+                                                                <p class="icloud-features__info m0">Track chats and calls on Skype.<br><b>Up to iOS 8.4.1</b></p>
                                                             </li>
                                                             <li class="icloud-features__item">
                                                                 <p class="icloud-features__name"><i class="icon-ok"></i>Kik</p>
-                                                                <p class="icloud-features__info m0">Track conversations via Kik.<br><b>iCloud monitoring starting from iOS 9.0</b></p>
+                                                                <p class="icloud-features__info m0">Track conversations via Kik.<br><b>Starting from iOS 9.0</b></p>
                                                             </li>
                                                             <li class="icloud-features__item">
                                                                 <p class="icloud-features__name"><i class="icon-ok"></i>Historical data</p>
@@ -284,18 +270,13 @@ description="Pumpic offers high-quality Cell Phone Tracking Software for a good 
                                                                 <p class="icloud-features__name"><i class="icon-ok"></i>Contacts</p>
                                                                 <p class="icloud-features__info m0">View contact list including names, addresses, numbers and emails.</p>
                                                             </li>
-                                                            <li class="icloud-features__item">
-                                                                <p class="icloud-features__name"><i class="icon-ok"></i>iCloud Monitoring</p>
-                                                                <p class="icloud-features__info m0">Monitor Apple devices without jailbreak. View Calls, Text messages, Photos, Location, Notes, Contacts, Browsing History, Bookmarks, Calendar, Skype, and WhatsApp.
-                                                                    <br><b>Note: Two-step verification must be disabled in the account of the target device.</b></p>
-                                                            </li>
                                                         </ul>
                                                         <div class="table_title free-label">
                                                             <h3 class="free-label__headname">FREE:</h3>
                                                             <span class="free-label__item"><i class="icon-ok"></i>Remote control panel</span>
                                                             <span class="free-label__item"><i class="icon-ok"></i>Software updates</span>
                                                         </div>
-                                                        <div class="show_premium_features _icloud-f"><a href="#"><span class="show-f _icloud-f">Show features <i class="fa fa-chevron-down"></i></span><span class="hide-f _icloud-f" style="display: none;">Hide features  <i class="fa fa-chevron-up"></i></span></a></div>
+                                                        <div class="show_premium_features _icloud-f"><div class="show-f _icloud-f">Show features <i class="fa fa-chevron-down"></i></div><div class="hide-f _icloud-f" style="display: none;">Hide features  <i class="fa fa-chevron-up"></i></div></div>
 
                                                     </div>
 
@@ -362,6 +343,7 @@ description="Pumpic offers high-quality Cell Phone Tracking Software for a good 
 
                                         <div class="prod-list-android clearfix" data-info-block="android" style="display: none;">
                                         {* ANDROID AJAX LOADING*}
+                                            <div id="loader"><img src="/images/loader.svg"></div>
                                             {*{include file='../includes/store/store-desktop.tpl'} for debug*}
                                         </div>
                                         {* ---ANDROID---*}
@@ -422,7 +404,7 @@ description="Pumpic offers high-quality Cell Phone Tracking Software for a good 
                                                                     value="true" type="submit" name="price[submit]">Buy</button>
                                                         </form>
                                                     </div>
-                                                    <div class="show_premium_features _jailbreak-f"><a href="#"><span class="show-f _jailbreak-f">Show features <i class="fa fa-chevron-down"></i></span><span class="hide-f _jailbreak-f" style="display: none;">Hide features  <i class="fa fa-chevron-up"></i></span></a></div>
+                                                    <div class="show_premium_features _jailbreak-f"><div class="show-f _jailbreak-f">Show features <i class="fa fa-chevron-down"></i></div><div class="hide-f _jailbreak-f" style="display: none;">Hide features  <i class="fa fa-chevron-up"></i></div></div>
 
                                                     <div class="premium_fe _jailbreak-f">
                                                         <div class="premium_h" style="text-transform: none;" id="jb-features-h">
@@ -448,12 +430,11 @@ description="Pumpic offers high-quality Cell Phone Tracking Software for a good 
                                                             <li class="icloud-features__item">
                                                                 <p class="icloud-features__name"><i class="icon-ok"></i>Notes</p>
                                                                 <p class="icloud-features__info m0">Track Notes on the target iOS device.
-                                                                    <br><b>iCloud monitoring up to iOS 8.4.1</b>
                                                                 </p>
                                                             </li>
                                                             <li class="icloud-features__item">
                                                                 <p class="icloud-features__name"><i class="icon-ok"></i>Bookmarks</p>
-                                                                <p class="icloud-features__info m0">View all websites visited and bookmarked as preferred ones.<br><b>iCloud Monitoring up to iOS 8.4.1</b></p>
+                                                                <p class="icloud-features__info m0">View all websites visited and bookmarked as preferred ones.</p>
                                                             </li>
                                                             <li class="icloud-features__item">
                                                                 <p class="icloud-features__name"><i class="icon-ok"></i>Browsing history</p>
@@ -465,11 +446,11 @@ description="Pumpic offers high-quality Cell Phone Tracking Software for a good 
                                                             </li>
                                                             <li class="icloud-features__item">
                                                                 <p class="icloud-features__name"><i class="icon-ok"></i>Skype</p>
-                                                                <p class="icloud-features__info m0">Track chats and calls on Skype.<br><b>iCloud monitoring up to iOS 8.4.1</b></p>
+                                                                <p class="icloud-features__info m0">Track chats and calls on Skype.</p>
                                                             </li>
                                                             <li class="icloud-features__item">
                                                                 <p class="icloud-features__name"><i class="icon-ok"></i>Kik</p>
-                                                                <p class="icloud-features__info m0">Track conversations via Kik.<br><b>iCloud monitoring starting from iOS 9.0</b></p>
+                                                                <p class="icloud-features__info m0">Track conversations via Kik.</p>
                                                             </li>
                                                             <li class="icloud-features__item">
                                                                 <p class="icloud-features__name"><i class="icon-ok"></i>Historical data</p>
@@ -546,7 +527,7 @@ description="Pumpic offers high-quality Cell Phone Tracking Software for a good 
                                                             <span class="free-label__item"><i class="icon-ok"></i>Remote device lock</span>
                                                             <span class="free-label__item"><i class="icon-ok"></i>Sim card change alert</span>
                                                         </div>
-                                                        <div class="show_premium_features _jailbreak-f"><a href="#"><span class="show-f _jailbreak-f">Show features <i class="fa fa-chevron-down"></i></span><span class="hide-f _jailbreak-f" style="display: none;">Hide features  <i class="fa fa-chevron-up"></i></span></a></div>
+                                                        <div class="show_premium_features _jailbreak-f"><div class="show-f _jailbreak-f">Show features <i class="fa fa-chevron-down"></i></div><div class="hide-f _jailbreak-f" style="display: none;">Hide features  <i class="fa fa-chevron-up"></i></div></div>
 
                                                     </div>
 
@@ -706,14 +687,16 @@ our_products (text): Включить выключить блок OUR PRODUCTS (
 {include file='../includes/main/main-analytics-footer.tpl'
 emptyScript="true"}
 
-<script src="/javascripts/frontend.min.js?1423094400"></script>
+<script src="/javascripts/frontend.min.js?1423094400" data-delete="delete"></script>
 <script>
     {literal}
     $(document).ready( function () {
         var deviceWidth =  $(window).width();
         $.get('/store-android.php', { deviceWidth: deviceWidth })
                 .done(function(data) {
+                    $('#loader').fadeOut()
                     $(".prod-list-android").html(data);
+                    $('script[data-delete=delete]').remove();
                     var s = document.createElement("script");
                     s.type = "text/javascript";
                     s.src = "/javascripts/frontend.min.js";
@@ -721,8 +704,8 @@ emptyScript="true"}
                     if(deviceWidth < 700) {
                         var stickyHeader = function() {
                             var sticky = $('.save__2plan'),
-                                    stickyHeight = sticky.height(),
-                                    offset = sticky.offset().top + stickyHeight + 20;
+                                parentOffset = $('thead'),
+                                offset = parentOffset.offset().top + 50;
                             $(window).scroll(function(){
                                 var scroll = $(window).scrollTop();
                                 if (scroll >= offset) {

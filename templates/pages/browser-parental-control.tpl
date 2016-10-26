@@ -1,5 +1,5 @@
 {include file='../includes/main/main-header.tpl'
-    robots="yes" 
+
     title="Browser Parental Control | Pumpic Monitoring Software"
     description=""
 }    

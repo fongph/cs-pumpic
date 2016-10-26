@@ -1,5 +1,5 @@
 {include file='../includes/main/main-header.tpl'
-    robots="yes" 
+
     title="Android Phone Tracking Software for Children | Pumpic"
     description="See how useful Android cell phone locator is for your children. Learn how mobile tracking software helps to protect your family. Choose Pumpic – the best Android tracking software!"
     customeStyle="

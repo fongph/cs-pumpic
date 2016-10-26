@@ -1,5 +1,5 @@
 {include file='../includes/main/main-header.tpl'
-    robots="yes"
+
     title="Limit Internet Time for Your Kids | Pumpic"
     description="Modern kids and teens every day waste hours surfing the Web. Lately, limiting Internet time for kids has turned into real battle between parents and kids."
     customeStyle="

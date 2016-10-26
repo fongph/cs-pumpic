@@ -1,5 +1,5 @@
 {include file='../includes/main/main-header.tpl'
-robots="yes"
+
 title="Ultimate Android Parental Control App | Pumpic Monitoring Software"
     description="Install Pumpic and forget all your worries. Our monitoring app is #1 choice to keep your child safe - over 20 features for reliable Android parental control."
 }    

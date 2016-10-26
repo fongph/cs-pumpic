@@ -1,7 +1,7 @@
 {* closeAccess *}
 
 {include file='../../includes/main/main-header.tpl'
-robots="yes"
+
 title="eBlaster Mobile Monitoring Software Review"
 description="Learn more about eBlaster software - read editor's review on eBlaster mobile monitoring app. Find out all pros and cons of eBlaster app and make your decision."
 }

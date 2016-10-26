@@ -1,5 +1,5 @@
 {include file='../includes/main/main-header.tpl'
-    robots="yes" 
+
     title="Android Tablet Parental Control | Pumpic Mobile Monitoring"
     description="Set parental restrictions on the Android tablet with Pumpic. Monitor device use, online activities, and locations. Specify geo-fences. Protect your children."
 }    

@@ -1,5 +1,5 @@
 {include file='../includes/main/main-header.tpl'
-    robots="yes" 
+
     title="Cell Phones for Kids | Pumpic Parental Control"
     description="Choose the best cell phones for kids. Install the Pumpic app and protect them. Control cell phone use, track location, monitor online activities on a safe phone."
     customeStyle="

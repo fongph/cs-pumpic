@@ -1,5 +1,5 @@
 {include file='../includes/main/main-header.tpl'
-    robots="yes"
+
     title="Cell Phone Geo-fencing App | Pumpic Parental Control"
     description="Reliable geofencing for iPhone, iPad, iPod Touch and Android. Set safety zones and danger areas. Receive alerts, when children enter or leave them. Track GPS location remotely."
     keywords="geofence iphone, geofence android, geofencing iphone, geofence alerts iphone, geofence apple, iphone geofence app, geofence app android, geofence reminders"
@@ -35,7 +35,6 @@
         <!-- CONTENT -->
         {include file='../includes/content/info/info-promo.tpl'
             fz="33"
-            collg="7"
             imgUrl = "header_banners/bg_GPS_437x226.png"
             imgAlt = "Cell Phone GPS Tracking"
             imgAlign = "right"

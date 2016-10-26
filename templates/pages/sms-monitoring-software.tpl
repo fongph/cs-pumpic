@@ -1,5 +1,5 @@
 {include file='../includes/main/main-header.tpl'
-    robots="yes" 
+
     title="Monitor Text Messages on Your Child's Phone with the Pumpic App"
     description="Track your kid's text messages with the Pumpic parental control app. Monitor, limit, or block texts on your child's phone, view deleted messages. Secure your child's text communication."
 }    

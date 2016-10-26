@@ -1,5 +1,5 @@
 {include file='../includes/main/main-header.tpl'
-    robots="yes" 
+
     title="Internet Filter for iPhone | Pumpic"
     description="Preventing misdeeds is more effective than overcoming its consequences. iPhone Internet filter is the best way to avert online perils threatening kids on the Web."
 }    
@@ -41,7 +41,7 @@
             imgAlign = "right"
             imgVerticalAlign = "bottom"
 			imgTitle = "Content filtering parental control tool for iOS"
-            textAlign = "left"
+            textAlign = "right"
             title = "Best Internet Filter for iPhone </br> Avert Online Dangers"
 			titleSize = "25px"
             description = "Keep objectionable content away from your kid. </br> Filter websites and block pages. "

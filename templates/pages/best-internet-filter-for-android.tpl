@@ -1,5 +1,5 @@
 {include file='../includes/main/main-header.tpl'
-    robots="yes" 
+
     title="Best Internet Content Filter for Android | Pumpic"
     description="The Internet carries many hidden dangers for children. Parental control apps for Android allow parents to prevent kids from viewing inappropriate content online."
 }    

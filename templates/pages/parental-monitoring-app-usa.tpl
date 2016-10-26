@@ -1,6 +1,6 @@
 
 {include file='../includes/main/main-header.tpl'
-    robots="yes" 
+
     title="Internet Safety for Children All Over USA"
     description="Prevent your kids from dangers of the Internet. Keep kids safe and protected everywhere they go. Monitor calls, text messages, online chats, and social media. Track location and even more."
 }    

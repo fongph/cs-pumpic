@@ -1,5 +1,5 @@
 {include file='../includes/main/main-header.tpl'
-    robots="yes" 
+
     title="Child Safety Monitoring App"
     description="Little kids are exposed to dangers more than others. Pumpic app leaves no chances to online predators, cyberbullies, kidnappers, and other abusers."
 }    

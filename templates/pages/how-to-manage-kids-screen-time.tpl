@@ -40,7 +40,7 @@
 */
 </style>
 {include file='../includes/main/main-header.tpl'
-    robots="yes"
+
     title="Kids’ Screen Time Management | Pumpiс"
     description="How much screen time for kids is too much? Find out the answer and check this infographic for 8 screen time recommendations to help parents deal with the issue."
     metaTags="true"

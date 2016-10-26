@@ -1,7 +1,7 @@
 {* closeAccess *}
 
 {include file='../../includes/main/main-header.tpl'
-    robots="yes" 
+
     title="IgnoreNoMore parental control software review"
     description="Read editor's reviews, view a features comparison table, and learn more about IgnoreNoMore mobile monitoring solution."
 }    

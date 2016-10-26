@@ -2,26 +2,26 @@ currencyHandler = {
   afterLoad: function(rates){
     $.each($('input.data-price'), function(i, priceTag){
       var usdPrice = $(priceTag).data('price-usd');
-      
+  
       if (typeof usdPrice !== 'undefined') {
         $.each(['gbp', 'eur', 'cad', 'aud'], function(i, currency){
-          
+
           if(rates[currency.toUpperCase()]){
-            var priceInCurrency = Number((1 / rates[currency.toUpperCase()]) * usdPrice).toFixed(2);
-            $(priceTag).attr('data-price-' + currency, priceInCurrency);
-            
+						var priceInCurrency = (Number(((1*100 / rates[currency.toUpperCase()]) )* usdPrice)/100).toFixed(2);
+						$(priceTag).attr('data-price-' + currency, priceInCurrency);
+             
           }
           
         });
       }
       
-      var doublePrice = $(priceTag).data('data-offer-price-usd');
-      
+      var doublePrice = $(priceTag).data('offer-price-usd');
+
       if (typeof doublePrice !== 'undefined') {
         $.each(['gbp', 'eur', 'cad', 'aud'], function(i, currency){
           
           if(rates[currency.toUpperCase()]){
-            var priceInCurrency = Number((1 / rates[currency.toUpperCase()]) * doublePrice).toFixed(2);
+            var priceInCurrency = (Number(((1 / rates[currency.toUpperCase()])*100 )* doublePrice)/100).toFixed(2);
             $(priceTag).attr('data-offer-price-' + currency, priceInCurrency);
             
           }
@@ -34,7 +34,7 @@ currencyHandler = {
   onChange: function(currentCurrency){
     $('input.data-price')
         .attr('data-cur', currentCurrency)
-        .filter(':checked')
+				.filter(':checked')
         .change();
   }
 };
@@ -249,7 +249,7 @@ currencyHandler = {
             _rates[ val.iso.toUpperCase() ] = parseFloat( val.rates );
         });
       }
-      
+       
       methods._die(  _rates   );
       
       // init money
@@ -343,7 +343,6 @@ currencyHandler = {
       currencyHandler.onChange(methods.getCach('currISO'));
       
       $.each($('.box-currence'), function(i, boxCurr) {
-        
         methods._die(  $(boxCurr)   );
         
         var _symbol = $( boxCurr ).find('div.symbol'),
@@ -351,17 +350,17 @@ currencyHandler = {
             symbol = (_symbol) ? _symbol.text() : false,
             price = (_price) ? _price.text() : false,
             iso = (_price) ? _symbol.attr('attr-iso') : false;
-        
+
         methods._die(  'afterEvent...'   );
         methods._die(  symbol   );
         methods._die(  price   );
         methods._die(  iso   );
-        
+        //console.log()
         if(price) {
-          _price.html( methods._convert( parseFloat(price),
+          var converts = methods._convert( Number(price),
               methods.getCach('currISO') || $_settings.currBase,
-              iso
-          ).toFixed(2)  ); // ).toFixed(2)
+              iso )
+          _price.html( converts.toFixed(2)  ); // ).toFixed(2)
           _symbol.attr('attr-iso', methods.getCach('currISO'));
           _symbol.text( $_settings.currCode[ methods.getCach('currISO').toLowerCase() ] )
         }

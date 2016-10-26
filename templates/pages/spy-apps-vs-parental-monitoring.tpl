@@ -1,5 +1,5 @@
 {include file='../includes/main/main-header.tpl'
-robots="yes"
+
 title="Spy Apps for Android VS Parental Monitoring | Pumpic"
 description="What is the difference between cell phone spy software for android and a parental control app? Find a legal and reliable Android phone monitoring app for parents."
 customeStyle="

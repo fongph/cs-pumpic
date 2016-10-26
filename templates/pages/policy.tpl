@@ -1,7 +1,6 @@
 {strip}
     
 {include file='../includes/main/main-header.tpl'
-    robots="yes" 
     title="Privacy Policy, Refunds, Terms & Conditions"
     description="Pumpic is a Mobile Phone Monitoring Application with limitless possibilities. Learn more about the legal policy of the software usage. Pumpic is for legitimate use only."
 }    
@@ -94,7 +93,7 @@
 										<li>The target device is run by an operating system (or its version), which is not specified on our <a href="http://pumpic.com/compatibility/" target="blank">Compatibility page</a>.</li>
 										<li>A customer planned to use one Pumpic subscription plan on more than one target device.</li>
 										<li>Other personal reasons (“I’ve changed my mind”, “I’ve made a purchase by mistake”, etc.)</li>
-										<li>A customer is either unable or unwilling to jailbreak the target iOS device (iPhone, iPad, iPod Touch), or to use iCloud Solution, which comes with Premium subscription only. A refund is not issued if a jailbreak version is not yet available for the given iOS version.</li>
+										<li>A customer is either unable or unwilling to jailbreak the target iOS device (iPhone, iPad, iPod Touch), or to use iCloud Solution. A refund is not issued if a jailbreak version is not yet available for the given iOS version.</li>
 										<li>A customer is either unable or unwilling to root the target Android device to obtain full functionality of the application, which includes viewing information from Google Chrome, IM activity, or emails.</li>
 										<li>A customer has reached the limit on his or her subscription plan.</li>
 										<li>A customer intended to monitor web activities in non-standard web browsers on Android (other than standard Internet and Google Chrome).</li>

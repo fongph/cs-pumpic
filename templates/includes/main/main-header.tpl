@@ -10,7 +10,7 @@
 {/if}
 
 {robotsClose}
-{if isset($robots) && $robots == "no" || $robotClose == "true"} 
+{if $robots == "no" || $robotClose == "true"}
     <meta name="robots" content="noindex,nofollow" />
 {/if}
 

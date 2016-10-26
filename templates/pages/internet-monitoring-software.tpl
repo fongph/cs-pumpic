@@ -1,5 +1,5 @@
 {include file='../includes/main/main-header.tpl'
-    robots="yes" 
+
     title="Internet Monitoring – Comprehensive Solution for Mobile | Pumpic"
     description="To ensure your kids’ safe web browsing protected from any online dangers, you’ll need to install on target mobile device an extensive Internet parental controls."
 }    

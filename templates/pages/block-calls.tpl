@@ -1,5 +1,5 @@
 {include file='../includes/main/main-header.tpl'
-    robots="yes" 
+
     title="How to Block Calls on Android and iOS | Pumpic"
     description="Install an iOS and Android app to block calls. Protect your kids from misgiving contacts. Use a reliable call blocking app for Android, iPhones, iPads, and iPods Touch."
     customeStyle="

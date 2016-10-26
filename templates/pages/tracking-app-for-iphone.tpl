@@ -1,5 +1,5 @@
 {include file='../includes/main/main-header.tpl'
-    robots="yes" 
+
     title="iPhone Tracking App for Concerned Parents | Pumpic"
     description="Tracking an iPhone is not a problem nowadays – there are dozens of programs available. But nobody does it better and more comprehensive than Pumpic. See for yourself."
 }    

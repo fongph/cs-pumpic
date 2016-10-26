@@ -1,5 +1,5 @@
 {include file='../includes/main/main-header.tpl'
-    robots="yes" 
+
     title="Family Tracker for Kids and Parents | Pumpic"
     description="If you are looking for a reliable family tracker for Android, search no more – Pumpic monitoring app can provide you with this feature and much more."
     customeStyle="

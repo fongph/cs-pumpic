@@ -1,10 +1,15 @@
 {include file='../includes/main/main-header.tpl'
-    robots="yes" 
+    showRand="true"
     title="iPhone remote sms, calls and Facebook tracker"
     description="Advanced mobile monitoring app for iOS. Compatible with iPhones, iPads and iPods Touch. Discover more than 22 monitoring features in one app."
 }    
     
 <body>
+<style>
+    .table_header .list-currencies>a {
+        line-height: 0.7;
+    }
+</style>
     <!-- BLOCK GTM -->
     {include file='../includes/main/main-after-body.tpl'}
     <!-- END BLOCK GTM -->
@@ -166,7 +171,7 @@
                                                                     {foreach from=$getProducts.iosJailbreak key=key item=item}
                                                                         <li>
                                                                             <label class="label_radio hover_label_radio {if $item.period == '12'}r_on{else}r_off{/if}">
-                                                                                <input class="data-price" data-target="jailbreak-price-per-month" data-cur="usd" data-price-usd="{$item.price}" data-offer-price-usd="{$getProducts.iosJailbreakDouble[$key].price}" data-period="{$item.period}" data-product="{$item.id}" data-offer-product="{$getProducts.iosJailbreakDouble[$key].id}" data-group="jailbreak"  name="optionsRadios" id="optionsRadios{$item.id}1" value="{$item.id}" type="radio"{if $item.period == '12'} checked="checked"{/if} />
+                                                                                <input class="data-price" data-target=".jailbreak-price-per-month" data-cur="usd" data-price-usd="{$item.price}" data-offer-price-usd="{$getProducts.iosJailbreakDouble[$key].price}" data-period="{$item.period}" data-product="{$item.id}" data-offer-product="{$getProducts.iosJailbreakDouble[$key].id}" data-group="jailbreak"  name="optionsRadios" id="optionsRadios{$item.id}1" value="{$item.id}" type="radio"{if $item.period == '12'} checked="checked"{/if} />
                                                                                 <span class="sp">
                                                                                     <strong>{$item.period}</strong> {if $item.period == 1}month{else}months{/if}
                                                                                 </span>
@@ -224,7 +229,7 @@
                                                                     <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Emails <span>Monitor sent and received emails, including deleted ones.</span></li>
                                                                     <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Browser <span>Follow visited websites and block those with inappropriate content.</span></li>
                                                                     <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Applications <span>View installed applications. Set time limits to prevent excessive use.</span></li>
-                                                                    <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Bookmarks <span>View preferred (bookmarked) websites. </span></li>
+                                                                    <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Bookmarks <span>View preferred (bookmarked) websites.</span></li>
                                                 
                                                                     <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Remote Control <span>Block the target device with a password. Reboot or wipe it remotely.</span></li>
                                                                     <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Geo-fences <span>Set specified zones on the map and receive alerts, when they are left or entered.</span></li>
@@ -328,9 +333,6 @@
                                         </tr>
                                         <tr>
                                             <th class="hidden-media-box">
-                                            <div class="table_title border-top-bottom">
-                                                <h2 class="text-success h2-sm">Choose Subscription Plan</h2>
-                                            </div>
                                                 <div class="basic_wr row-pricing-panel w100">
                                                     <div class="basic_h">
                                                         Jailbreak solution
@@ -407,6 +409,10 @@
                                         <tr>
                                             <th>
                                                 <div class="table_header text-center">
+                                                    <div class="pull-left">
+                                                        <div class="list-currencies clearfix"></div>
+                                                    </div>
+                                                  <div class="pull-right" style="margin-top: 3px;">
                                                   <span class='none-uppercase'>Payment methods:</span>
 
                                                   <i class="ico-cart-visa"></i>
@@ -416,11 +422,12 @@
                                                   <i class="ico-cart-descover-new"></i>
                                                   <i class="ico-cart-paypal-new"></i>
                                                 </div>
+                                                </div>
                                             </th>
                                         </tr>
                                     </thead>
                                 </table>
-                                
+
                                 <div class="space_line"> </div>
                                 <div class="link_circle_italic2">
                                     <div class="style-links2">
@@ -527,6 +534,16 @@
             margin-top: 0;
         }
     </style>
-
+    <script>
+        $(document).ready(function(){
+            if($('.list-currencies').length) {
+                $('.list-currencies').currancy({
+                    onOpen: function(rates) {
+                        currencyHandler.afterLoad(rates);
+                    }
+                },'show');
+            }
+        });
+    </script>
 </body>
 </html>

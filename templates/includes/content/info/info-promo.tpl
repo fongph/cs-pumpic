@@ -131,9 +131,9 @@
 
 
                                         {if isset($Icloud)}
-                                            {if isset($IcloudVersion) && $Icloud == 'yes'}<li><i class="icon-icloud"></i>iOS {$AppleIcloud}</li>{/if}
+                                            {if isset($IcloudVersion) && $Icloud == 'yes'}<li><i class="icon-icloud"></i> {$AppleIcloud}</li>{/if}
                                         {else}
-                                            <li><i class="icon-icloud"></i>iOS ({$ver_icloud_bot} - {$ver_icloud_up})</li>
+                                            <li><i class="icon-icloud"></i> ({$ver_icloud_bot} - {$ver_icloud_up})</li>
                                         {/if}
 
 

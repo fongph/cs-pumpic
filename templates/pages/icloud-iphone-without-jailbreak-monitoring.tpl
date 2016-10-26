@@ -40,7 +40,7 @@
             imgVerticalAlign = "bottom"
             textAlign = "right"
             title = "Apple Monitoring App<br>iCloud Solution"
-            description = "Reliable tracking with no jailbreak or physical access required."
+            description = "Reliable tracking with no jailbreak required."
 
             promoBuyBlock = "no"
             iCloudSolution = 'no'
@@ -344,15 +344,16 @@
             <div class="pt30 pb20">
                 <img class="img-align-right" alt="Best Free Parental Controls for Android' Location" src="{$img}/landings/icloud-iphone-without-jailbreak-monitoring.png" width="207px" height="208px" />
                 <img class="app-icon-left" src="{$img}/landings/icon-icloud-iphone-without-jailbreak-monitoring.png" alt="">
-			<p>Apple iCloud tracking allows you to monitor your children on iPhones, iPads, and iPods Touch without jailbreaking their gadgets. Moreover, iCloud parental control doesn’t require any physical access, which means that you don’t need to take the target device in hands and install the app on it to start monitoring. All the tracked information is gathered via the iCloud backup and sent directly to your Control Panel.</p>
-			<p>The iCloud mobile tracker is an option provided by Pumpic as a part of the Premium subscription plan. It lets you monitor 11 activities with even more opportunities to come soon. This feature allows seeing text messages saved on iCloud. Thus, you can view SMS, MMS, and iMessages your children send or receive to prevent them from misgiving communication and cyberbullying, using bad words, and sexting.</p>
+			<p>Apple iCloud tracking allows you to monitor your children on iPhones, iPads, and iPods Touch without jailbreaking their gadgets. Moreover, iCloud parental control does not require an app to be installed on the target device, which means that you don’t need to take the target device in hands to install the app on it to start monitoring. All the tracked information is gathered via the iCloud backup and sent directly to your Control Panel.</p>
+			<p>The iCloud mobile tracker is an option provided by Pumpic with iOS (iCloud) solution subscription plan. It lets you monitor 11+ activities with even more opportunities to come soon. This feature allows seeing text messages saved on iCloud. Thus, you can view SMS, MMS, and iMessages your children send or receive to prevent them from misgiving communication and cyberbullying, using bad words, and sexting.</p>
 			<p>By monitoring call logs, which is also possible with the iCloud Solution, you can see who calls your children as well as whom they call, at what time, and for how long each conversation lasts. Pumpic iCloud tracking logs browsing history and bookmarks allowing parents to control kids’ Internet activities.</p>
 			<p>iCloud GPS tracking is also a significant advantage. At any time, you can request your kid’s location and find out his or her whereabouts pinpointed accurately on the map. With Pumpic iCloud <a class="a-default" href="/iphone-location-tracking.html">location tracking</a>, you will always know where your children go and be able to prevent them from visiting places you don’t approve.</p>
-			<p>And even more! You can oversee kids’ communication over Skype, WhatsApp, Kik, and other messengers where children are highly exposed to cyberbullying and online predator attacks. Among iCloud Solution features, you will also find monitoring Calendar, Contacts, Notes, and Photos, which completes the picture of your children’s mobile behavior and safety to the fullest.</p>
+			<p>And even more! You can oversee kids’ communication over WhatsApp, Kik, and other messengers where children are highly exposed to cyberbullying and online predator attacks. Among iCloud Solution features, you will also find monitoring Calendar, Contacts, Photos, which completes the picture of your children’s mobile behavior and safety to the fullest.</p>
 			<p>To perform iPhone tracking of your kid’s device through iCloud the following requirements must be satisfied:</p>
 			<ul class="list-images">
 			   <li><img src="{$img}/landings/mark.png" alt="Check Mark" class="lc-1" style="left: -29px; height: auto; width: auto; background-size: contain;" />you must know the iCloud login and password;</li>
                <li><img src="{$img}/landings/mark.png" alt="Check Mark" class="lc-1" style="left: -29px; height: auto; width: auto; background-size: contain;"/>backup must be enabled on the target device.</li>
+			   <li><img src="{$img}/landings/mark.png" alt="Check Mark" class="lc-1" style="left: -29px; height: auto; width: auto; background-size: contain;"/>two-step verification must be disabled on the target device.</li>
 			</ul>
 			<p>For information to be successfully uploaded to your Control Panel, the backup must be performed under the following conditions:</p>
 			<ul class="list-images">

@@ -104,8 +104,8 @@
 												<a id="what-is-pumpic-app" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse3">Is Pumpic parental monitoring stealth? Can the app be detected on the target device?</a>
 												<div id="collapse3" class="collapse">
                                                                                                     <div>
-                                                                                                        <p>Pumpic is a visible application, which means that its icon can be detected on the screen of the target device and viewed by a user. In addition, there are alerts, notifications, and badges that trace the operation of the app.</p>
-                                                                                                        <p>However, if you choose <a class="text-link a-default" href="http://{$domain}/icloud-iphone-without-jailbreak-monitoring.html">iCloud solution</a> for iOS device surveillance, you will not need to install the app on the target device, and thus, Pumpic will remain undetected. The operation of the app is invisible in this case as well.</p>
+                                                                                                        <p>Pumpic Android and iOS (with jailbreak) solutions need to be installed on the target devices and have visible applications, which means that their icons can be detected on the screen of the target device and viewed by a user. In addition, there are alerts, notifications, and badges that trace the operation of the app.</p>
+                                                                                                        <p>However, if you choose <a class="text-link a-default" href="http://{$domain}/icloud-iphone-without-jailbreak-monitoring.html">iCloud solution</a> or iOS device monitoring, you will not need to install the app on the target device.</p>
 
                                                                                                         <div class="box-faq-images">
                                                                                                             <div class="faq-img">
@@ -139,8 +139,8 @@
 												<div id="collapse5" class="collapse">
                                                                                                     <div>
 													<p>Soon after Pumpic is installed on the target device and connected to our server, all the captured data will be uploaded to the Control Panel automatically. You can access your Control Panel in any browser on any device.</p>
-													<p>You can also check the captured data by using Pumpic Control Panel Mobile App. It is a separate free mobile application for the Control Panel. Note that this app is currently available for Android smartphones only and limited to the following features: Call Logs, Text Messages, Location, Browser History, Contacts, Remote Device Reboot, Remote App Reboot, and Remote Device Lock.</p>
-             <p>Check <a class="text-link a-default" target="_blank" href="/mobile-monitoring-control-panel-comparison.html"> detailed features comparison here.</a> </p>
+													<p>You can also check the captured data by using Pumpic Control Panel Mobile App. It is a separate free mobile application for the Control Panel. The app is available both for iOS and Android smartphones and it is limited to the following features: Call Logs, Text Messages, Location, Browser History, Contacts, Remote Device Reboot, Remote App Reboot, and Remote Device Lock.</p>
+             <p>Check detailed <a class="text-link a-default" target="_blank" href="/mobile-monitoring-control-panel-comparison.html">features comparison here</a>. </p>
                                                                                                     </div>
                                                                                                 </div>
                                                                                             </div>
@@ -150,8 +150,8 @@
 												<a id="start" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse6">Do I need to jailbreak/root the target device to install Pumpic?</a>
 												<div id="collapse6" class="collapse">
                                                                                                     <div>
-                                                                                                        <p><b>iOS:</b> The app can be used to monitor devices both with jailbreak and without. To track devices without jailbreak, you can use iCloud solution provided with Premium subscription. Otherwise, the target device must be jailbroken. Please note that monitoring of jailbreak-free iOS devices is currently limited to the following features: Text Messages, Calls, {*Contacts,*} Browsing History, Bookmarks, Location, Calendar, Contacts, Photos, Notes, Skype, and WhatsApp.</p>
-                                                                                                        <p><b>Android:</b> The target device requires rooting to get access to the following features: Email and Social Network monitoring.</p>
+                                                                                                        <p><b>iOS:</b> The app can be used to monitor devices both with jailbreak and without. To track devices without jailbreak, you can use iCloud solution provided. Otherwise, the target device must be jailbroken. Please note that monitoring of jailbreak-free iOS devices (iCloud monitoring) is currently limited to the following features: Text Messages (SMS, MMS, and iMessages), Calls, Browsing History, Bookmarks (up to iOS 8.4.1), Location, Calendar, Contacts, Photos, Notes (up to iOS 8.4.1), Skype (up to iOS 8.4.1), Kik and WhatsApp.</p>
+                                                                                                        <p><b>Android:</b> The target device requires rooting to get access to the following features: Email, Instant Messеngers and Social Networks monitoring.</p>
                                                                                                         {*<p>To install Pumpic, the target iOS device must be jailbroken.</p>
                                                                                                         <p>Android devices require rooting to get access to all the features of the app.</p>*}
                                                                                                     </div>
@@ -175,7 +175,7 @@
 												<a id="install" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse8">How to install Pumpic?</a>
 												<div id="collapse8" class="collapse">
                                                                                                     <div>
-                                                                                                        <p>Pumpic installation is very easy and stress-free. It will take you no longer than 5 minutes. Once you have made a purchase, follow the guidelines pointed in a subscription email to complete the setup. Note that physical access to the target device is required (unless you choose iCloud solution for monitoring iOS devices). If you run into difficulties, feel free to contact our Customer Support Team for help.</p>
+                                                                                                        <p>Pumpic installation is very easy and stress-free. It will take you no longer than 5 minutes. Once you have made a purchase, follow the guidelines pointed in a subscription email to complete the setup. Note that physical access to the target device is required to install Android and iOS (Jailbreak) solutions and might be required to adjust settings or perform a backup manually if choose iCloud solution for monitoring iOS devices. If you run into difficulties, feel free to contact our Customer Support Team for help.</p>
                                                                                                     </div>
                                                                                                 </div>
                                                                                             </div>
@@ -186,7 +186,7 @@
 												<div id="collapse9" class="collapse">
                                                                                                     <div>
                                                                                                         <b>Uninstall the app on iOS:</b>
-                                                                                                        <p>Go to Cydia > Manage > Sources > Click on apps.pumpic.com (the Developer’s Repo) > Updated > Modify > Uninstall > Uninstall will be completed > Go to the Cydia once again > Manage > Sources > Edit > Click on “remove” Next to the Developer’s Repo.</p>
+                                                                                                        <p>Go to Cydia > Sources > Click on Development API (http://ios.loadapps.org/) > All Packages > Updated > Modify > Remove > Uninstall will be completed > Go to the Cydia once again > Manage > Sources > Edit > Click on “remove” Next to the Developer’s Repo.</p>
                                                                                                         <b>Uninstall the app on Android:</b>
                                                                                                         <p>Go to Phone > Settings > Security > Device administrators > Uncheck the box next to the app > Get back to settings > Apps > com.pumpic > Uninstall.</p>
                                                                                                         <b>Uninstall within the app:</b>
@@ -201,8 +201,8 @@
 												<div id="collapse10" class="collapse">
                                                                                                     <div>
                                                                                                         <p>Both installation and removal of Pumpic app is performed manually (unless you choose iCloud solution for monitoring iOS devices, which does not require installation at all). Please, make sure you have physical access to the target device before purchasing a subscription.</p>
-													<p>Note that if you use iCloud solution provided with Premium subscription and designed for iOS devices without jailbreak, you do not need to install the app on the target device at all. At the same time, you do not need physical access to the target device, meanwhile all the data is monitored through iCloud backup. </p>
-													<p>In this case, you will need to know iCloud login and password of the target device to connect it to your Control Panel. </p>
+													<p>Note that if you use iCloud solution designed for iOS devices without jailbreak, you do not need to install the app on the target device at all. At the same time, you do not need physical access to the target device, meanwhile all the data is monitored through iCloud backup.</p>
+													<p>In this case, you will need to know iCloud login and password of the target device to connect it to your Control Panel.</p>
                                                                                                     </div>
                                                                                                 </div>
                                                                                             </div>
@@ -232,7 +232,7 @@
 												<a id="install" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse12">How often is the information updated?</a>
 												<div id="collapse12" class="collapse">
                                                                                                     <div>
-													<p>The information update frequency depends on each particular feature. At average, information is updated at least every 20 minutes.</p>
+													<p>The information update frequency depends on each particular feature and monitoring solution you use. The information update frequency depends on each particular feature. At average, information is updated at least every 20 minutes.</p>
                                                                                                     </div>
                                                                                                 </div>
                                                                                             </div>
@@ -263,7 +263,7 @@
 												<div id="collapse15" class="collapse">
                                                                                                     <div>
 													<p>During the installation you will be provided with links to off-site sources, where you will find instructions on how to jailbreak iOS devices. Pumpic is not connected with such sources. Feel free to find relevant information on iOS jailbreak online on your own as well.</p>
-													<p>If you do not want to jailbreak the target iPhone, iPad, or iPod Touch, you can use <a class="text-link a-default" href="http://{$domain}/icloud-iphone-without-jailbreak-monitoring.html">Pumpic iCloud solution</a>. With its help you will be able to control iPhone from another iPhone without a need to jailbreak any of them. Note that it is provided with Premium subscription only.</p>
+													<p>If you do not want to jailbreak the target iPhone, iPad, or iPod Touch, you can use <a class="text-link a-default" href="http://{$domain}/icloud-iphone-without-jailbreak-monitoring.html">Pumpic iCloud solution</a>. With its help you will be able to control iPhone from another iPhone without a need to jailbreak any of them.</p>
                                                                                                     </div>
                                                                                                 </div>
                                                                                             </div>
@@ -273,8 +273,8 @@
 												<a id="install" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse16">Is there any daily limit? How to find out if I have reached the limit on my plan?</a>
 												<div id="collapse16" class="collapse">
                                                                                                     <div>
-													<p>Pumpic has no particular daily limits. There only are limits coming with Basic subscription plan, which allow you to monitor up to 700 calls and 300 SMS per month. However, you can reach these limits much earlier than a month.</p>
-                                                                                                        <p>If you notice that the data in your Control Panel has stopped updating, that might be a sign that you have reached a limit. Contact our Customer Support Team to make sure. In this case, you can either buy the same Basic subscription, upgrade to Premium or additionally order unlimited calls or SMS within your Basic subscription plan.</p>
+													<p>Pumpic has no particular daily limits. There only are limits coming with Android Basic subscription plan, which allow you to monitor up to 700 calls and 300 SMS per month. However, you can reach these limits much earlier than a month.</p>
+                                                                                                        <p>If you notice that the data in your Control Panel has stopped updating, that might be a sign that you have reached a limit. Contact our Customer Support Team to make sure. In this case, you can either buy the same Android Basic subscription, upgrade to Premium or additionally order unlimited calls or SMS within your Android Basic subscription plan.</p>
                                                                                                     </div>
                                                                                                 </div>
                                                                                             </div>
@@ -322,7 +322,7 @@
 												<a id="compatibility" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse19">Does jailbreak void a warranty? Can I delete jailbreak from the target iOS device to restore my warranty?</a>
 												<div id="collapse19" class="collapse">
                                                                                                     <div>
-													<p>Yes, jailbreak voids iOS warranty. However, it is completely restorable. To recover your warranty you should either update your gadget to the latest iOS version or restore it to primary settings. Please consider that in this case Pumpic will not function.</p>
+													<p>Yes, jailbreak voids iOS warranty. However, it is completely restorable. To recover your warranty you should either update your gadget to the latest iOS version or restore it to primary settings. If you are using Pumpic iOS (jailbreak) solution, please consider that in this case Pumpic will not function.</p>
                                                                                                     </div>
                                                                                                 </div>
                                                                                             </div>
@@ -399,12 +399,8 @@
                                                                                                         <ul class='list-items'>
                                                                                                             <li>Visa/MasterCard</li>
                                                                                                             <li>PayPal</li>
-                                                                                                            <li>Bank/Wire Transfer</li>
                                                                                                             <li>American Express</li>
                                                                                                             <li>Discover/Novus</li>
-                                                                                                            <li>Diners Club</li>
-                                                                                                            <li>Fax</li>
-                                                                                                            <li>JCB</li>
                                                                                                         </ul>
                                                                                                     </div>
 												</div>

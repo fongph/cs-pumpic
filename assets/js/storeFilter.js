@@ -98,7 +98,7 @@ $(function () {
 		});
 		demoBtn.attr('href', function(i, origValue) {
 			var result;
-			this.pathname == '/setDevice/126' ? result='http://demo.'+domain+'/setDevice/125?redirect_url=cp/calls' : result='http://demo.'+domain+'/setDevice/126?redirect_url=cp/calls';
+			this.pathname == '/setDevice/126' ? result='http://demo.'+domain+'/setDevice/5059?redirect_url=cp/calls' : result='http://demo.'+domain+'/setDevice/126?redirect_url=cp/calls';
 			return origValue.pathname = result;
 		});
 	}

@@ -12,13 +12,13 @@
                 message history
             </li>
             <li class="mobile_tooltip"
-                title="Block SMS from specific senders. <br /><b>Not available for Android 5.0 and newer versions.</b><br />">SMS blocking
+                title="Block SMS from specific senders. <br /><b>Up to Android 5.1.1</b><br /><b>Pumpic keyboard activation required. Root required.</b>">SMS blocking
             </li>
             <li class="mobile_tooltip"
-                title="Prevent your kid from reading text messages containing personally included bad words.<br /><strong>Not available for Android 5.0 and newer versions.</strong>">Block SMS by keywords
+                title="Prevent your kid from reading text messages containing personally included bad words.<br /><strong>Up to Android 4.4.4<br>Pumpic keyboard activation required. Root required</strong>">Block SMS by keywords
             </li>
             <li class="mobile_tooltip"
-                title="Set amount of SMS that can be sent during a day.<br /><strong>Activated Keylogger Needed</strong>">SMS daily limiting
+                title="Set amount of SMS that can be sent during a day.<br /><strong>Pumpic keyboard activation required.</strong>">SMS daily limiting
             </li>
         </ul>
     </li>
@@ -54,7 +54,7 @@
             <li class="mobile_tooltip" title="Block or limit distracting applications.<br />">App blocking
             </li>
             <li class="mobile_tooltip"
-                title="Keep track of each button pressed or taped. View passwords, keystrokes and words input.<br />">Keylogger
+                title="Keep track of each button pressed or taped. View passwords, keystrokes and words input.<br /><b>Pumpic keyboard activation required.</b>">Keylogger
             </li>
         </ul>
     </li>
@@ -91,14 +91,14 @@
             <li class="mobile_tooltip" title="View all the data ever stored on your kid’s device.<br />">Historical
                 <br> data</li>
             <li class="mobile_tooltip"
-                title="Control your kid’s device remotely. <br /><b>Not available for Android 5.0 and newer versions.</b><br />">SMS commands
+                title="Control your kid’s device remotely. <br /><b>Up to Android 4.4.4</b><br />">SMS commands
             </li>
             <li class="mobile_tooltip"
                 title="Take notice once your kid’s SIM card is changed, and keep monitoring the device.<br />">SIM
                 card change alert
             </li>
             <li class="mobile_tooltip"
-                title="Reboot your kid’s device remotely without physical access. Root is required.<br />">Reboot
+                title="Reboot your kid’s device remotely without physical access. Root required.<br />">Reboot
                 device
             </li>
             <li class="mobile_tooltip"

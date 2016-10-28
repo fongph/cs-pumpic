@@ -188,12 +188,12 @@
                                                         <li class="icloud-features__item">
                                                             <p class="icloud-features__name"><i class="icon-ok"></i>Notes</p>
                                                             <p class="icloud-features__info m0">Track Notes on the target iOS device.
-                                                                <br><b>Up to iOS 8.4.1</b>
+                                                                <br>Up to iOS 8.4.1
                                                             </p>
                                                         </li>
                                                         <li class="icloud-features__item">
                                                             <p class="icloud-features__name"><i class="icon-ok"></i>Bookmarks</p>
-                                                            <p class="icloud-features__info m0">View all websites visited and bookmarked as preferred ones.<br><b>Up to iOS 8.4.1</b></p>
+                                                            <p class="icloud-features__info m0">View all websites visited and bookmarked as preferred ones.<br>Up to iOS 8.4.1</p>
                                                         </li>
                                                         <li class="icloud-features__item">
                                                             <p class="icloud-features__name"><i class="icon-ok"></i>Browsing history</p>
@@ -205,11 +205,11 @@
                                                         </li>
                                                         <li class="icloud-features__item">
                                                             <p class="icloud-features__name"><i class="icon-ok"></i>Skype</p>
-                                                            <p class="icloud-features__info m0">Track chats and calls on Skype.<br><b>Up to iOS 8.4.1</b></p>
+                                                            <p class="icloud-features__info m0">Track chats and calls on Skype.<br>Up to iOS 8.4.1</p>
                                                         </li>
                                                         <li class="icloud-features__item">
                                                             <p class="icloud-features__name"><i class="icon-ok"></i>Kik</p>
-                                                            <p class="icloud-features__info m0">Track conversations via Kik.<br><b>Starting from iOS 9.0</b></p>
+                                                            <p class="icloud-features__info m0">Track conversations via Kik.<br>iOS 9.0 and up</p>
                                                         </li>
                                                         <li class="icloud-features__item">
                                                             <p class="icloud-features__name"><i class="icon-ok"></i>Historical data</p>
@@ -309,7 +309,7 @@
                                                     <div class="wr_pack_premium wr_icloud_jb _single-pack-jailbreak"></div>
                                                     <div class="wr_pack_double_premium wr_icloud_jb-double _double-pack-jailbreak"></div>
                                                     <div class="wr_price_big">
-                                                        <span></span><div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr jailbreak-price-per-month" >{$defaultPremiumPrice}</div></div><span>/&npsp;month</span>
+                                                        <span></span><div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr jailbreak-price-per-month" >{$defaultPremiumPrice}</div></div><span>/ month</span>
                                                     </div>
                                                 </div>
                                                 <div class="list_price icloud-list_price">
@@ -385,12 +385,11 @@
                                                         <li class="icloud-features__item">
                                                             <p class="icloud-features__name"><i class="icon-ok"></i>Notes</p>
                                                             <p class="icloud-features__info m0">Track Notes on the target iOS device.
-                                                                <br><b>Up to iOS 8.4.1</b>
                                                             </p>
                                                         </li>
                                                         <li class="icloud-features__item">
                                                             <p class="icloud-features__name"><i class="icon-ok"></i>Bookmarks</p>
-                                                            <p class="icloud-features__info m0">View all websites visited and bookmarked as preferred ones.<br><b>Up to iOS 8.4.1</b></p>
+                                                            <p class="icloud-features__info m0">View all websites visited and bookmarked as preferred ones.</p>
                                                         </li>
                                                         <li class="icloud-features__item">
                                                             <p class="icloud-features__name"><i class="icon-ok"></i>Browsing history</p>
@@ -402,11 +401,11 @@
                                                         </li>
                                                         <li class="icloud-features__item">
                                                             <p class="icloud-features__name"><i class="icon-ok"></i>Skype</p>
-                                                            <p class="icloud-features__info m0">Track chats and calls on Skype.<br><b>Up to iOS 8.4.1</b></p>
+                                                            <p class="icloud-features__info m0">Track chats and calls on Skype.</p>
                                                         </li>
                                                         <li class="icloud-features__item">
                                                             <p class="icloud-features__name"><i class="icon-ok"></i>Kik</p>
-                                                            <p class="icloud-features__info m0">Track conversations via Kik.<br><b>Starting from iOS 9.0</b></p>
+                                                            <p class="icloud-features__info m0">Track conversations via Kik.</p>
                                                         </li>
                                                         <li class="icloud-features__item">
                                                             <p class="icloud-features__name"><i class="icon-ok"></i>Historical data</p>

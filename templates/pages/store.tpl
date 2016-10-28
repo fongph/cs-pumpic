@@ -235,12 +235,12 @@ description="Pumpic offers high-quality Cell Phone Tracking Software for a good 
                                                             <li class="icloud-features__item">
                                                                 <p class="icloud-features__name"><i class="icon-ok"></i>Notes</p>
                                                                 <p class="icloud-features__info m0">Track Notes on the target iOS device.
-                                                                    <br><b>Up to iOS 8.4.1</b>
+                                                                    <br>Up to iOS 8.4.1
                                                                 </p>
                                                             </li>
                                                             <li class="icloud-features__item">
                                                                 <p class="icloud-features__name"><i class="icon-ok"></i>Bookmarks</p>
-                                                                <p class="icloud-features__info m0">View all websites visited and bookmarked as preferred ones.<br><b>Up to iOS 8.4.1</b></p>
+                                                                <p class="icloud-features__info m0">View all websites visited and bookmarked as preferred ones.<br>Up to iOS 8.4.1</p>
                                                             </li>
                                                             <li class="icloud-features__item">
                                                                 <p class="icloud-features__name"><i class="icon-ok"></i>Browsing history</p>
@@ -252,11 +252,11 @@ description="Pumpic offers high-quality Cell Phone Tracking Software for a good 
                                                             </li>
                                                             <li class="icloud-features__item">
                                                                 <p class="icloud-features__name"><i class="icon-ok"></i>Skype</p>
-                                                                <p class="icloud-features__info m0">Track chats and calls on Skype.<br><b>Up to iOS 8.4.1</b></p>
+                                                                <p class="icloud-features__info m0">Track chats and calls on Skype.<br>Up to iOS 8.4.1</p>
                                                             </li>
                                                             <li class="icloud-features__item">
                                                                 <p class="icloud-features__name"><i class="icon-ok"></i>Kik</p>
-                                                                <p class="icloud-features__info m0">Track conversations via Kik.<br><b>Starting from iOS 9.0</b></p>
+                                                                <p class="icloud-features__info m0">Track conversations via Kik.<br>iOS 9.0 and up</p>
                                                             </li>
                                                             <li class="icloud-features__item">
                                                                 <p class="icloud-features__name"><i class="icon-ok"></i>Historical data</p>

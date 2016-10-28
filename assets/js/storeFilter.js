@@ -59,13 +59,13 @@ $(document).ready(function() {
 	var hash = window.location.hash;
 		if(hash) {
 			$('.filter_list li.filter-active').removeClass('filter-active');
-			if(hash === '#jailbreak') {
+			if(hash.indexOf('#jailbreak') != -1) {
 				$iosJbBtn.addClass('filter-active');
 				var iosJbBlock = $('th').find('[data-info-block='+ prods.iosJb +']')
 				toggleProdList(prodList.iosJb);
 				toggleProdList(iosJbBlock);
 			}
-			if(hash === '#android') {
+			if(hash.indexOf('#android') != -1 ) {
 				$andrBtn.addClass('filter-active');
 				var androidBlock = $('th').find('[data-info-block='+ prods.android +']')
 				toggleProdList(prodList.android);
@@ -79,9 +79,9 @@ $(function () {
 	var $filterBtns = $('._filter-btn'),
 			featuresList = $('._filter-feature'),
 			thumbnail = $('.thumbnail');
-	// var featuresIos = featuresList.filter(function () {
-	// 	return $(this).data('filter') === 'icloud'
-	// });
+	var featuresIos = featuresList.filter(function () {
+		return $(this).data('filter') === 'icloud'
+	});
 	var featuresJb = featuresList.filter(function () {
 		return $(this).data('filter') === 'jailbreak'
 	});
@@ -108,6 +108,7 @@ $(function () {
 			if(!$(this).hasClass('filter-active')) {
 				changeHref();
 				featuresJb.toggle();
+				featuresIos.toggle();
 				jbInThumbnails.toggle();
 				iosInThumbnails.toggle();
 		}

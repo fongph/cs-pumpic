@@ -382,7 +382,6 @@
         {include file='../includes/main/main-footer.tpl'}
 
     </div>
-
     {include file='../includes/main/main-analytics-footer.tpl'}
 
 
@@ -391,5 +390,6 @@
             margin-top: 0;
         }
     </style>
+
 </body>
 </html>

@@ -19,7 +19,7 @@
 		// default configuration properties
 		var defaults = {	
 			xOffset: 10,
-			yOffset: 25,
+			yOffset: 15,
 			tooltipId: "easyTooltip",
 			clickRemove: false,
 			content: "",
@@ -28,21 +28,31 @@
 			
 		var options = $.extend(defaults, options);  
 		var content;
-				
+		var deviceWidth = $(window).width();
 		this.each(function() {  				
 			var title = $(this).attr("title");				
 			$(this).hover(function(e){											 							   
 				content = (options.content != "") ? options.content : title;
 				content = (options.useElement != "") ? $("#" + options.useElement).html() : content;
-				$(this).attr("title","");									  				
+				$(this).attr("title","");
+				var condition = deviceWidth<(e.pageX + options.xOffset+200);
 				if (content != "" && content != undefined){			
-					$("body").append("<div id='"+ options.tooltipId +"'>"+ content +"</div>");		
+					$("body").append("<div id='"+ options.tooltipId +"'>"+ content +"</div>");
+					if(condition) {
+						$("#" + options.tooltipId)
+								.css("position","absolute")
+								.css("top",((deviceWidth<410) ? e.pageY + options.yOffset : e.pageY - options.yOffset) + "px")
+								.css("left",((deviceWidth<410 ? ((deviceWidth/2)-100) : e.pageX - options.xOffset - 200)) + "px")
+								.css("display","none")
+								.fadeIn("fast")
+					} else {
 					$("#" + options.tooltipId)
 						.css("position","absolute")
-						.css("top",(e.pageY - options.yOffset) + "px")
-						.css("left",(e.pageX + options.xOffset) + "px")						
+						.css("top",((deviceWidth<410) ? e.pageY + options.yOffset : e.pageY - options.yOffset) + "px")
+						.css("left",((deviceWidth<410) ? ((deviceWidth/2)-100) : e.pageX + options.xOffset) + "px")
 						.css("display","none")
 						.fadeIn("fast")
+					}
 				}
 			},
 			function(){	
@@ -50,10 +60,17 @@
 				$(this).attr("title",title);
 			});	
 			$(this).mousemove(function(e){
+				var condition = deviceWidth<(e.pageX + options.xOffset+200);
+				if(condition) {
+					$("#" + options.tooltipId)
+							.css("top", ((deviceWidth<410) ? e.pageY + options.yOffset : e.pageY - options.yOffset) + "px")
+							.css("left",((deviceWidth<410 ? ((deviceWidth/2)-100) : e.pageX - options.xOffset - 200)) + "px")
+				} else {
 				$("#" + options.tooltipId)
-					.css("top",(e.pageY - options.yOffset) + "px")
-					.css("left",(e.pageX + options.xOffset) + "px")					
-			});	
+					.css("top",((deviceWidth<410) ? e.pageY + options.yOffset : e.pageY - options.yOffset) + "px")
+					.css("left",((deviceWidth<410) ? ((deviceWidth/2)-100) : e.pageX + options.xOffset) + "px")
+				}
+			});
 			if(options.clickRemove){
 				$(this).mousedown(function(e){
 					$("#" + options.tooltipId).remove();

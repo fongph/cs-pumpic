@@ -105,7 +105,7 @@
                                                     <div id="collapse3" class="collapse">
                                                         <div>
                                                             <p>Pumpic Android and iOS (with jailbreak) solutions need to be installed on the target devices and have visible applications, which means that their icons can be detected on the screen of the target device and viewed by a user. In addition, there are alerts, notifications, and badges that trace the operation of the app.</p>
-                                                            <p>However, if you choose <a class="text-link a-default" href="http://{$domain}/icloud-iphone-without-jailbreak-monitoring.html">iCloud solution</a> or iOS device monitoring, you will not need to install the app on the target device.</p>
+                                                            <p>However, if you choose <a class="text-link a-default" href="http://{$domain}/icloud-iphone-without-jailbreak-monitoring.html">iCloud solution</a> for iOS device monitoring, you will not need to install the app on the target device.</p>
 
                                                             <div class="box-faq-images">
                                                                 <div class="faq-img">

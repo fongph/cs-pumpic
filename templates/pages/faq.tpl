@@ -187,7 +187,7 @@
                                                         <div>
                                                             <b>Uninstall the app on iOS:</b>
                                                             <p>Go to Cydia > Sources > Click on Development API (http://ios.loadapps.org/) > All Packages > Updated > Modify > Remove > Uninstall will be completed > Go to the Cydia once again > Manage > Sources > Edit > Click on “remove” Next to the Developer’s Repo.</p>
-                                                            <b>Uninstall the app on Android:</b>
+                                                            <p><b>Uninstall the app on Android:</b></p>
                                                             <p>Go to Phone > Settings > Security > Device administrators > Uncheck the box next to the app > Get back to settings > Apps > com.pumpic > Uninstall.</p>
                                                             <b>Uninstall within the app:</b>
                                                             <p>Run Pumpic App > Enter your Secret Key to proceed to Settings > Tap button “Delete”. </p>

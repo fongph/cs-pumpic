@@ -2406,13 +2406,14 @@ textarea {
       counter-increment: list2;
       float: left;
       font-family: "Open Sans",Helvetica,Arial,sans-serif;
-      font-size: 42px;
+      font-size: 30px;
       font-weight: 300;
-      height: 70px;
+      height: 45px;
       left: 10px;
       position: absolute;
       text-align: center;
-      width: 70px;
+      width: 45px;
+      border-radius: 50%;
     }
     @media (max-width: 480px){
       .how-to-step:before {
@@ -2422,12 +2423,12 @@ textarea {
   }
   .how-to-step {
     float: left;
-    margin-bottom: 10px;
-    padding-left: 100px;
+    margin-bottom: 18px;
+    padding-left: 80px;
     padding-right: 10px;
     position: relative;
     width: 100%;
-    padding-bottom: 2px;
+    padding-bottom: 40px;
   }
   .thumbnail .caption h3 {
     font-size: 21px;

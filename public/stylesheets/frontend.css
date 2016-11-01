@@ -10837,13 +10837,13 @@ textarea {
     counter-increment: list2;
     float: left;
     font-family: "Open Sans",Helvetica,Arial,sans-serif;
-    font-size: 42px;
+    font-size: 30px;
     font-weight: 300;
-    height: 70px;
+    height: 45px;
     left: 10px;
     position: absolute;
     text-align: center;
-    width: 70px;
+    width: 45px;
 }
 
 .thumbs .how-to-step {
@@ -23829,7 +23829,7 @@ and open the template in the editor.
 }
 .msie .odd .feature-item-info .block-info > ul > li:before,
 .text-right.list-features > li ul > li:before {
-   margin: 0px -1.4em 0px 0px; 
+   margin: 0px -1.4em 0px 0px;
    right: -1.4em;
 }
 

@@ -27,7 +27,7 @@
     <li><span>Social Media</span>
         <ul>
             <li class="mobile_tooltip _filter-feature" data-filter="icloud"
-                title="Monitor text chats and calls on Skype.<br><b>Up to 8.4.1</b>">Skype
+                title="Monitor text chats and calls on Skype.<br><b>Up to iOS 8.4.1</b>">Skype
             </li>
             <li class="mobile_tooltip _filter-feature" data-filter="jailbreak"
                 title="Monitor text chats and calls on Skype.">Skype
@@ -78,7 +78,7 @@
                 title="View all websites that your kid visits.">Browsing history
             </li>
             <li class="mobile_tooltip _filter-feature" data-filter="icloud"
-                title="View all websites that your child visited and bookmarked.<br /><b>Up to 8.4.1</b>">Bookmarks
+                title="View all websites that your child visited and bookmarked.<br /><b>Up to iOS 8.4.1</b>">Bookmarks
             </li>
             <li class="mobile_tooltip _filter-feature" data-filter="jailbreak"
                 title="View all websites that your child visited and bookmarked.">Bookmarks
@@ -123,7 +123,7 @@
                 title="Set specified zones on the map and receive alerts, when they are left or entered.">Geo-fences
             </li>
             <li class="mobile_tooltip _filter-feature" data-filter="icloud"
-                title="Track Notes on the target iOS device.<br> <b>Up to 8.4.1.</b>">Notes</i>
+                title="Track Notes on the target iOS device.<br> <b>Up to iOS 8.4.1</b>">Notes</i>
             </li>
             <li class="mobile_tooltip _filter-feature" data-filter="jailbreak"
                 title="Track Notes on the target iOS device.">Notes</i>

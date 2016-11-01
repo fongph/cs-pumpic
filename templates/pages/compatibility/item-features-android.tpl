@@ -12,13 +12,13 @@
                 message history
             </li>
             <li class="mobile_tooltip"
-                title="Block SMS from specific senders. <br /><b>Up to Android 5.1.1</b><br /><b>Pumpic keyboard activation required. Root required.</b>">SMS blocking
+                title="Block SMS from specific senders. <br /><b>Up to Android 5.1.1</b>">SMS blocking
             </li>
             <li class="mobile_tooltip"
-                title="Prevent your kid from reading text messages containing personally included bad words.<br /><strong>Up to Android 4.4.4<br>Pumpic keyboard activation required. Root required</strong>">Block SMS by keywords
+                title="Prevent your kid from reading text messages containing personally included bad words.<br /><strong>Up to Android 4.4.4</strong>">Block SMS by keywords
             </li>
             <li class="mobile_tooltip"
-                title="Set amount of SMS that can be sent during a day.<br /><strong>Pumpic keyboard activation required.</strong>">SMS daily limiting
+                title="Set amount of SMS that can be sent during a day.<br /><strong>Pumpic keyboard activation required</strong>">SMS daily limiting
             </li>
         </ul>
     </li>
@@ -54,7 +54,7 @@
             <li class="mobile_tooltip" title="Block or limit distracting applications.<br />">App blocking
             </li>
             <li class="mobile_tooltip"
-                title="Keep track of each button pressed or taped. View passwords, keystrokes and words input.<br /><b>Pumpic keyboard activation required.</b>">Keylogger
+                title="Keep track of each button pressed or taped. View passwords, keystrokes and words input.<br /><b>Pumpic keyboard activation required</b>">Keylogger
             </li>
         </ul>
     </li>
@@ -63,9 +63,9 @@
     <li><span>Browsing</span>
         <ul>
             <li class="mobile_tooltip"
-                title="View all websites that your kid visits. Available for Chrome and default browser only.</br> <b>Android 6.0 and newer vesions: Root Required</b><br />">Browsing history</li>
-            <li class="mobile_tooltip" title="View all websites that your child visited and bookmarked.<br />">Bookmarks</li>
-            <li class="mobile_tooltip" title="Block 18+ websites.<br />">Website blocking</li>
+                title="View all websites that your kid visits. Available for Chrome and default browser only.</br> <b>Root required starting from Adnroid 6.0</b>">Browsing history</li>
+            <li class="mobile_tooltip" title="View all websites that your child visited and bookmarked.</br> <b>Root required starting from Adnroid 6.0</b>">Bookmarks</li>
+            <li class="mobile_tooltip" title="Block 18+ websites.</br> <b>Root required starting from Adnroid 6.0</b>">Website blocking</li>
         </ul>
     </li>
 </ul>
@@ -98,7 +98,7 @@
                 card change alert
             </li>
             <li class="mobile_tooltip"
-                title="Reboot your kid’s device remotely without physical access. Root required.<br />">Reboot
+                title="Reboot your kid’s device remotely without physical access. <br /><b>Root required</b>">Reboot
                 device
             </li>
             <li class="mobile_tooltip"

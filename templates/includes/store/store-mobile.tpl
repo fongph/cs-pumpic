@@ -28,11 +28,12 @@
                         </li>
                         <li data-toggle="tooltip" data-placement="top" title="View text content sent or received via SMS, MMS.</div>"><i class="icon-ok"></i> Text message history <span>(<b>300</b> SMS monthly)</span></li>
                         <li data-toggle="tooltip" data-placement="top" title="Block calls from specific numbers."><i class="icon-ok"></i> Calls blocking </li>
-                        <li data-toggle="tooltip" data-placement="top" title="Set a number of SMS a user can send daily. <div class='br'><strong>Pumpic keyboard activation required.</strong></div>"><i class="icon-ok"></i> SMS limiting <i class="icon-info-circled"></i></li>
+                        <li data-toggle="tooltip" data-placement="top" title="Set a number of SMS a user can send daily. <div class='br'><strong>Pumpic keyboard activation required</strong></div>"><i class="icon-ok"></i> SMS limiting <i class="icon-info-circled"></i></li>
                         <li data-toggle="tooltip" data-placement="top" title="Track current location as well as the entire route history. Map view available."><i class="icon-ok"></i> Location history</li>
                         <li data-toggle="tooltip" data-placement="top" title="Set specific zones and receive alerts once the target device leaves them or enters."><i class="icon-ok"></i> Geo-fences</li>
                         <li data-toggle="tooltip" data-placement="top" title="View contact list including names, addresses, numbers and emails."><i class="icon-ok"></i> Contacts</li>
                         <li data-toggle="tooltip" data-placement="top" title="Monitor scheduled dates and events."><i class="icon-ok"></i> Calendar</li>
+                        <li data-toggle="tooltip" data-placement="top" title="View all visited websites.<br><b>Root required starting from Adnroid 6.0</b>"><i class="icon-ok"></i> Browsing history</li>
                         <li data-toggle="tooltip" data-placement="top" title="Block specific websites on a target device."><i class="icon-ok"></i> Websites blocking</li>
 
                         <li data-toggle="tooltip" data-placement="top" title="View all websites visited and bookmarked as preferred ones.<br><b>Root required starting from Adnroid 6.0</b>"><i class="icon-ok"></i> Bookmarks</li>
@@ -46,7 +47,6 @@
                         </li>
                         <li data-toggle="tooltip" data-placement="top" title="View every keystroke typed on a target device."><i class="icon-cancel"></i> Keylogger <i class="icon-info-circled"></i></li>
                         <p class="root_text">Root required:</p>
-                        <li data-toggle="tooltip" data-placement="top" title="Block SMS from specific senders and/or containing specific keywords.</div><div class='br'><strong>Up to Android 4.4.4</strong></div>"><i class="icon-ok"></i> SMS blocking <i class="icon-info-circled"></i></li>
                         <li data-toggle="tooltip" data-placement="top" title="View all visited websites.<b>Root required starting from Adnroid 6.0</b>"><i class="icon-ok"></i> Browsing history</li>
                         <li data-toggle="tooltip" data-placement="top" title="View all emails and detailed contact data. </div>"><i class="icon-ok"></i> Emails</li>
                         <li data-toggle="tooltip" data-placement="top" title="Track chats and calls on Skype.</div>"><i class="icon-cancel"></i> Skype </li>
@@ -134,12 +134,13 @@
                         </li>
                         <li data-toggle="tooltip" data-placement="top" title="View text content sent or received via SMS, MMS.</div>"><i class="icon-ok"></i> Text message history <span>(unlimited)</span></li>
                         <li data-toggle="tooltip" data-placement="top" title="Block calls from specific numbers."><i class="icon-ok"></i> Calls blocking </li>
-                        <li data-toggle="tooltip" data-placement="top" title="Set a number of SMS a user can send daily. <div class='br'><strong>Pumpic keyboard activation required.</strong></div>"><i class="icon-ok"></i> SMS limiting <i class="icon-info-circled"></i></li>
+                        <li data-toggle="tooltip" data-placement="top" title="Block SMS from specific senders and/or containing specific keywords.</div><div class='br'><strong>Up to Android 4.4.4</strong></div>"><i class="icon-ok"></i> SMS blocking <i class="icon-info-circled"></i></li>
+                        <li data-toggle="tooltip" data-placement="top" title="Set a number of SMS a user can send daily. <div class='br'><strong>Pumpic keyboard activation required</strong></div>"><i class="icon-ok"></i> SMS limiting <i class="icon-info-circled"></i></li>
                         <li data-toggle="tooltip" data-placement="top" title="Track current location as well as the entire route history. Map view available."><i class="icon-ok"></i> Location history</li>
                         <li data-toggle="tooltip" data-placement="top" title="Set specific zones and receive alerts once the target device leaves them or enters."><i class="icon-ok"></i> Geo-fences</li>
                         <li data-toggle="tooltip" data-placement="top" title="View contact list including names, addresses, numbers and emails."><i class="icon-ok"></i> Contacts</li>
                         <li data-toggle="tooltip" data-placement="top" title="Monitor scheduled dates and events."><i class="icon-ok"></i> Calendar</li>
-                        <li data-toggle="tooltip" data-placement="top" title="Block specific websites on a target device."><i class="icon-ok"></i> Websites blocking</li>
+                        <li data-toggle="tooltip" data-placement="top" title="Block specific websites on a target device.<br><b>Root required starting from Adnroid 6.0</b>"><i class="icon-ok"></i> Websites blocking</li>
 
                         <li data-toggle="tooltip" data-placement="top" title="View all websites visited and bookmarked as preferred ones.<br><b>Root required starting from Adnroid 6.0</b>"><i class="icon-ok"></i> Bookmarks</li>
                         <li data-toggle="tooltip" data-placement="top" title="View all photos stored on a device."><i class="icon-ok"></i> Photos</li>
@@ -152,8 +153,7 @@
                         </li>
                         <li data-toggle="tooltip" data-placement="top" title="View every keystroke typed on a target device."><i class="icon-ok"></i> Keylogger <i class="icon-info-circled"></i></li>
                         <p class="root_text" id="root-h">Root required:</p>
-                        <li data-toggle="tooltip" data-placement="top" title="Block SMS from specific senders and/or containing specific keywords.</div><div class='br'><strong>Up to Android 4.4.4<br>Pumpic keyboard activation required.</strong></div>"><i class="icon-ok"></i> SMS blocking <i class="icon-info-circled"></i></li>
-                        <li data-toggle="tooltip" data-placement="top" title="View all visited websites.<br><b>Root required starting from Adnroid 6.0</b>"><i class="icon-ok"></i> Browsing history</li>
+                        <li data-toggle="tooltip" data-placement="top" title="Block SMS from specific senders and/or containing specific keywords.</div><div class='br'><strong>Up to Android 4.4.4</div>"><i class="icon-ok"></i> SMS blocking <i class="icon-info-circled"></i></li>
                         <li data-toggle="tooltip" data-placement="top" title="View all emails and detailed contact data. </div>"><i class="icon-ok"></i> Emails</li>
                         <li data-toggle="tooltip" data-placement="top" title="Track chats and calls on Skype.</div>"><i class="icon-ok"></i> Skype </li>
                         <li data-toggle="tooltip" data-placement="top" title="Track chats and calls on WhatsApp.</div>"><i class="icon-ok"></i> WhatsApp </li>

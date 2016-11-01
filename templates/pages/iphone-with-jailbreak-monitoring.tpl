@@ -410,7 +410,24 @@
                                             <th>
                                                 <div class="table_header text-center">
                                                     <div class="pull-left">
-                                                        <div class="list-currencies clearfix"></div>
+                                                        <div class="list-currencies clearfix">
+                                                            <span>Currency:</span>
+                                                            <a class="store-link-currancy-flag active">
+                                                                <i class="ico-flag-usd"></i><span>USD</span>
+                                                            </a>
+                                                            <a class="store-link-currancy-flag active">
+                                                                <i class="ico-flag-gbp"></i><span>GBP</span>
+                                                            </a>
+                                                            <a class="store-link-currancy-flag active">
+                                                                <i class="ico-flag-eur"></i><span>EUR</span>
+                                                            </a>
+                                                            <a class="store-link-currancy-flag active">
+                                                                <i class="ico-flag-cad"></i><span>CAD</span>
+                                                            </a>
+                                                            <a class="store-link-currancy-flag active">
+                                                                <i class="ico-flag-aud"></i><span>AUD</span>
+                                                            </a>
+                                                        </div>
                                                     </div>
                                                   <div class="pull-right" style="margin-top: 3px;">
                                                   <span class='none-uppercase'>Payment methods:</span>
@@ -534,16 +551,5 @@
             margin-top: 0;
         }
     </style>
-    <script>
-        $(document).ready(function(){
-            if($('.list-currencies').length) {
-                $('.list-currencies').currancy({
-                    onOpen: function(rates) {
-                        currencyHandler.afterLoad(rates);
-                    }
-                },'show');
-            }
-        });
-    </script>
 </body>
 </html>

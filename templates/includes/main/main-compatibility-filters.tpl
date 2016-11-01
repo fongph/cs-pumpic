@@ -5,7 +5,7 @@
                     <span>OS:<strong> iOS</strong></span>
                     <span>Versions:<strong> {$ver_ios_bot} - {$ver_jailbreak_up}</strong></span>
                     <span><strong>iPhone, iPad, iPod Touch</strong></span>
-                    <a href="/compatibility/ios-devices" 
+                    <a href="/compatibility/ios-devices/"
                        class="text-succes search-category a-default" data-os="iOS">View list of iOS devices</a>
             </div>
     </div>
@@ -15,7 +15,7 @@
                     <span>OS:<strong> Android</strong></span>
                     <span>Versions:<strong> {$ver_android_bot} - {$ver_android_up}</strong></span>
                     <span><strong>Smartphones and Tablets</strong></span>
-                    <a href="/compatibility/android-devices" 
+                    <a href="/compatibility/android-devices/"
                        class="text-succes search-category a-default" data-os="Android">View list of Android devices</a>
             </div>
     </div>
@@ -25,7 +25,7 @@
                     <span>OS: <strong>iOS</strong> (no jailbreak is required)</span>
                     <span>Versions: <strong>{$ver_icloud_bot} - {$ver_icloud_up}</strong></span>
                     <span><strong>iPhone, iPad, iPod Touch</strong></span>
-                <a href="/compatibility/ios-devices"
+                <a href="/compatibility/ios-devices/"
                    class="text-succes search-category a-default" data-os="iOS">View list of iOS devices</a>
             </div>
     </div>

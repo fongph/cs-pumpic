@@ -7,6 +7,7 @@
 <body>
 <style>
     .table_header .list-currencies>a {
+        margin-left: 0;
         line-height: 0.7;
     }
 </style>

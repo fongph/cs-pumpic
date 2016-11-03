@@ -167,7 +167,7 @@
                                                 <span class="play-button">
                                                 <span></span>
                                                  </span>
-                                                <a class="youtube youtube-link" href="http://www.youtube.com/embed/Atg0CbaytAY" rel="nofollow" id="openBtnVideo">watch about pumpic</a>
+                                                <a class="youtube youtube-link" href="https://www.youtube.com/embed/Atg0CbaytAY" rel="nofollow" id="openBtnVideo">watch about pumpic</a>
                                             </div>
                                             </section>
                                             {/if}

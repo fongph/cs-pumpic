@@ -64,7 +64,7 @@
             AppleVersion = "iOS {$ver_ios_bot} - {$ver_jailbreak_up}"
             InfoBlock = 'no'
             block_video = "yes"
-            block_video_src = "http://www.youtube.com/embed/Atg0CbaytAY"
+            block_video_src = "https://www.youtube.com/embed/Atg0CbaytAY"
         }
         <style>
             .features-center li{

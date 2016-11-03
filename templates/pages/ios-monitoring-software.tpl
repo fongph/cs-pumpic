@@ -45,7 +45,7 @@
             listText = "Follow Calls and SMS|Track GPS location|Monitor online activity"
             planPackageBuy = "yes"
             block_video = "yes"
-            block_video_src = "http://www.youtube.com/embed/Atg0CbaytAY"
+            block_video_src = "https://www.youtube.com/embed/Atg0CbaytAY"
         }
         {* header_banners/bg-header-mobile_ios_400x325.png *}
         {* ?rel=0&wmode=transparent&fs=0&autoplay=1&modestbranding=1&autohide=1 *}

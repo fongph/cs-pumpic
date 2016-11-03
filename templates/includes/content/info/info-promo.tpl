@@ -117,24 +117,25 @@
                                     {if !isset($infoBlockMobile) || (isset($infoBlockMobile) && $infoBlockMobile == 'yes')}
                                     <ul class="compatibility compatibility-lg">
                                     <ul class="compatibility compatibility-lg">
-                                        {if isset($Android)}
-                                            {if isset($AndroidVersion) && $Android == 'yes'}<li><i class="icon-android"></i> {$AndroidVersion}</li>{/if}
-                                        {else}
-                                            <li><i class="icon-android"></i> ({$ver_android_bot} - {$ver_android_up})</li>
-                                        {/if}
-                                        {if isset($Apple)}
-                                            {if isset($AppleVersion) && $Apple == 'yes'}<li><i class="icon-apple"></i> <img class="icon-lock" src="images/lock.png" alt=""> ({$AppleVersion})</li>{/if}
-                                        {else}
-                                            <li><i class="icon-apple"></i> <img class="icon-lock" src="images/lock.png" alt=""> ({$ver_ios_bot} - {if isset($jailbreak) && $jailbreak == "yes"}({$JailbreakVersion}){else}{$ver_jailbreak_up}{/if})</li>
-                                        {/if}
-
-
-
                                         {if isset($Icloud)}
                                             {if isset($IcloudVersion) && $Icloud == 'yes'}<li><i class="icon-icloud"></i> {$AppleIcloud}</li>{/if}
                                         {else}
-                                            <li><i class="icon-icloud"></i> ({$ver_icloud_bot} - {$ver_icloud_up})</li>
+                                            <li><i class="icon-apple fa-lg"></i> ({$ver_icloud_bot} - {$ver_icloud_up})</li>
                                         {/if}
+
+                                        {if isset($Android)}
+                                            {if isset($AndroidVersion) && $Android == 'yes'}<li><i class="icon-android"></i>Android {$AndroidVersion}</li>{/if}
+                                        {else}
+                                            <li><i class="icon-android fa-lg"></i>Android {$ver_android_bot} - {$ver_android_up}</li>
+                                        {/if}
+                                        {if isset($Apple)}
+                                            {if isset($AppleVersion) && $Apple == 'yes'}<li><i class="icon-apple"></i> {$AppleVersion} (iCloud)</li>{/if}
+                                        {else}
+                                            <li><i class="fa fa-unlock-alt fa-lg"></i> {$ver_ios_bot} - {if isset($jailbreak) && $jailbreak == "yes"}{$JailbreakVersion}{else}{$ver_jailbreak_up}{/if} (jailbreak)</li>
+                                        {/if}
+
+
+
 
 
 

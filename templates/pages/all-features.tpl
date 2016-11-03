@@ -285,7 +285,7 @@
                                        >Free Trial</a>
                                     </li>*}
                                 </ul>
-                                <p style="font-weight: 600;color: #16a89e;">Compatible with iOS {$ver_icloud_bot} - {$ver_icloud_up} (iCloud) on iPhones / iPads / iPods Touch</p>
+                                <p style="font-weight: 600;color: #16a89e;">Compatible with iOS {$ver_icloud_bot} - {$ver_icloud_up} (iCloud) on iPhones, iPads, iPods Touch</p>
                                 <p>more than <b>11 features</b> of remote mobile tracking with Pumpic.</p>
                                 <p>View, track mobile activity remotely with Pumpic.<br class='only-mobile' />
                                     Keep your eyes open!
@@ -723,7 +723,7 @@
                                        >Free Trial</a>
                                     </li>*}
                                 </ul>
-                                <p style="font-weight: 600;color: #16a89e;">Compatible with iOS {$ver_ios_bot} - {$ver_jailbreak_up} (jailbreak) on iPhones / iPads / iPods Touch</p>
+                                <p style="font-weight: 600;color: #16a89e;">Compatible with iOS {$ver_ios_bot} - {$ver_jailbreak_up} (jailbreak) on iPhones, iPads, iPods Touch</p>
                                 <p>Enjoy more than <b>20 features</b> of remote mobile tracking with Pumpic.</p>
                                 <p>View, track and block mobile activity remotely with Pumpic.<br class='only-mobile' />
                                     Keep your eyes open!
@@ -854,7 +854,7 @@
                                         <p>Follow <b>incoming</b> and <b>outgoing</b> call logs with precise contact data including <b>name</b>, <b>number</b>, <b>time</b> of the call and its <b>duration</b>. Find out who reaches the target phone, at what time and for how long.</p>
 
                                         <div><a class="btn-orange" target="_blank" href="http://demo.{$domain}/setDevice/126?redirect_url=cp/calls">View Demo</a></div>
-                                        <label class="color-orange">(no registration required)</label>
+
                                     </div>
                                 </div>
 
@@ -883,7 +883,7 @@
                                             <li>conversation</li>
                                         </ul>*}
                                         <div><a class="btn-orange"target="_blank" href="http://demo.{$domain}/setDevice/126?redirect_url=cp/sms">View Demo</a></div>
-                                        <label class="color-orange">(no registration required)</label>
+
                                     </div>
                                 </div>
 
@@ -927,29 +927,31 @@
                                                 precise route of recent movements.</li>
                                         </ul>*}
                                         <div><a class="btn-orange" target="_blank"  href="http://demo.{$domain}/setDevice/126?redirect_url=cp/locations">View Demo</a></div>
-                                        <label class="color-orange">(no registration required)</label>
+
                                     </div>
                                 </div>
 
                             </div>
                         </div>
 
-                        <div id="social-ios" class="div-table-row even">
-                            <div class="item-feature-list div-table-column col-sm-12 col-md-4 col-lg-4 text-right">
-                                <img style='max-width: 306px' class="image-features model-mobile-center" src='../images/technological/image-messanges.png' />
-                            </div>
-                            <div class="item-feature-list div-table-column col-sm-12 col-md-1 col-lg-1 text-center">
-                                <div class='box-line-solid only-pc'>
-                                    <i class='i-bubble'></i>
-                                    <span class='box-solid-1'></span>
-                                </div>
-                            </div>
-                            <div class="item-feature-list div-table-column col-sm-12 col-md-4 col-lg-4 text-left">
+
+                        <!-- \\ #5 Facebook IM/Viber/Skype/WhatsApp: (even) -->
+                        <div id="social-ios" class="div-table-row odd featured-item">
+                            <div class="item-feature-list div-table-column col-lg-4">
+
                                 <div class='feature-item-info'>
                                     <ul>
-                                        <li><i class='i-list-features-skype'></i><strong>Skype</strong></li>
-                                        <li><i class='i-list-features-whatsapp'></i><strong>WhatsApp</strong></li>
-                                        <li><i class='i-list-features-kik-chat'></i><strong>Kik</strong></li>
+                                        <li><i class='i-list-features-skype only-mobile'></i>
+                                            <strong>Skype</strong>
+                                            <i class='i-list-features-skype only-pc'></i></li>
+                                        <li><i class='i-list-features-whatsapp only-mobile'></i>
+                                            <strong>WhatsApp</strong>
+                                            <i class='i-list-features-whatsapp only-pc'></i>
+                                            </li>
+                                        <li><i class='i-list-features-kik-chat only-mobile'></i>
+                                            <strong>Kik</strong>
+                                            <i class='i-list-features-kik-chat only-pc'></i>
+                                        </li>
                                     </ul>
 
                                     <div class='block-info'>
@@ -959,21 +961,23 @@
                                         <p>
                                             Monitor <b>Skype</b> <em>(up to iOS 8.4.1)</em> and <b>WhatsApp</b> calls.
                                         </p>
-                                        {*<ul>
-                                            <li>Pumpic allows you to monitor your child’s device activity in</li>
-                                            <li>the most widely used communication applications like</li>
-                                            <li>WhatsApp, Viber and Skype. Prevent your children from</li>
-                                            <li>conversations with misgiving people.</li>
-                                        </ul>*}
-                                        <div><a class="btn-orange" target="_blank" href="http://demo.{$domain}/setDevice/126?redirect_url=cp/facebook">View Demo</a></div>
-                                        <label class="color-orange">(no registration required)</label>
+
+                                        <div><a class="btn-orange" target="_blank" href="http://demo.{$domain}/setDevice/126?redirect_url=cp/whatsapp">View Demo</a></div>
+
                                     </div>
                                 </div>
 
                             </div>
-                        </div>
-
-                        <!-- \\ #5 Facebook IM/Viber/Skype/WhatsApp: (even) -->
+                            <div class="item-feature-list div-table-column col-lg-1 text-center">
+                                <div class='box-line-solid only-pc'>
+                                    <i class='i-bubble'></i>
+                                    <span class='box-solid-1'></span>
+                                </div>
+                            </div>
+                            <div class="item-feature-list div-table-column col-lg-4 text-left">
+                                <img style='max-width: 306px' class="image-features model-mobile-center" src='../images/technological/image-messanges-icloud.png' />
+                            </div>
+                        </div> <!-- #media -->
 
                         <!-- \\ #6 Browser control: (even) -->
                         <div id="browser_control-ios" class="div-table-row even">
@@ -990,13 +994,14 @@
                                 <div class='feature-item-info'>
                                     <ul>
                                         <li><i class='i-list-features-browser'></i><strong>Browser control</strong></li>
+                                        <li><i class='i-list-features-star fa fa-star-o fa-2x'></i><strong>Bookmarks</strong></li>
                                     </ul>
 
                                     <div class='block-info'>
                                         <p>Monitor <b>browsing history</b> and view websites visited from the target device. Check <b>bookmarks</b> <em>(up to iOS 8.4.1)</em>.</p>
 
                                         <div><a class="btn-orange" target="_blank"  href="http://demo.{$domain}/setDevice/126?redirect_url=cp/browserHistory">View Demo</a></div>
-                                        <label class="color-orange">(no registration required)</label>
+
                                     </div>
                                 </div>
 
@@ -1020,7 +1025,7 @@
                                         <p>Monitor <b>browsing history</b> and view websites visited from the target device. Check <b>bookmarks</b>. <b>Block websites</b> containing inappropriate content.</p>
 
                                         <div><a class="btn-orange" href="http://demo.{$domain}/setDevice/125?redirect_url=cp/browserHistory">View Demo</a></div>
-                                        <label class="color-orange">(no registration required)</label>
+
                                     </div>
                                 </div>
 
@@ -1053,7 +1058,7 @@
                                         <p>View each <b>photo</b> file <b>shot by the camera</b> of the target smartphone or <b>downloaded</b> from the Internet. Monitor all multimedia files stored on the target device.</p>
 
                                         <div><a class="btn-orange" target="_blank" href="http://demo.{$domain}/setDevice/126?redirect_url=cp/photos">View Demo</a></div>
-                                        <label class="color-orange">(no registration required)</label>
+
                                     </div>
                                 </div>
 
@@ -1087,7 +1092,7 @@
                                         <p>View <b>incoming</b>, <b>sent</b> and <b>deleted</b> emails. Find out precise communication data, including <b>names</b>, <b>addresses</b> and writing <b>time</b>. Monitor online correspondence, subscriptions and registrations.</p>
 
                                         <div><a class="btn-orange" href="http://demo.{$domain}/setDevice/125?redirect_url=cp/emails">View Demo</a></div>
-                                        <label class="color-orange">(no registration required)</label>
+
                                     </div>
                                 </div>
 
@@ -1131,7 +1136,7 @@
                                         {*<p>View Notes on iPhones, iPads, and iPods Touch. Find out <b>plans</b> and <b>intentions</b>. Follow <b>important information, to-do lists</b>, as well as written down <b>thoughts</b>.</p>*}
 
                                         {*<div><a class="btn-orange" target="_blank" href="http://demo.{$domain}/setDevice/125?redirect_url=cp/calendar">View Demo</a></div>*}
-                                        {*<label class="color-orange">(no registration required)</label>*}
+                                        {**}
                                     {*</div>*}
                                 {*</div>*}
 
@@ -1180,7 +1185,7 @@
                                         <p>View Notes on iPhones, iPads, and iPods Touch <em>(up to iOS 8.4.1)</em>. Find out <b>plans</b> and <b>intentions</b>. Follow <b>important information</b>, <b>to-do lists</b>, as well as written down <b>thoughts</b>.</p>
 
                                         <div><a class="btn-orange" href="http://demo.{$domain}/setDevice/126?redirect_url=cp/calendar">View Demo</a></div>
-                                        <label class="color-orange">(no registration required)</label>
+
                                     </div>
                                 </div>
 
@@ -1208,7 +1213,7 @@
                                         {*<p>Keep track of <b>each keystroke typed</b> and every tap on the touchscreen of the target device. Follow <b>logins</b> and <b>passwords</b>, as well as texts written in the browser in <b>incognito mode</b>. Monitor typed messages <b>in any app</b>.</p>*}
 
                                         {*<div><a class="btn-orange" target="_blank"  href="http://demo.{$domain}/setDevice/125?redirect_url=cp/keylogger">View Demo</a></div>*}
-                                        {*<label class="color-orange">(no registration required)</label>*}
+                                        {**}
                                     {*</div>*}
                                 {*</div>*}
 
@@ -1231,7 +1236,7 @@
                                         <p>Keep track of <b>each keystroke typed</b> and every tap on the touchscreen of the target device. Follow <b>logins</b> and <b>passwords</b>, as well as words written in browser in <b>incognito mode</b>. Monitor texts written <b>in any app</b>.</p>
 
                                         <div><a class="btn-orange" href="http://demo.{$domain}/setDevice/125?redirect_url=cp/keylogger">View Demo</a></div>
-                                        <label class="color-orange">(no registration required)</label>
+
                                     </div>
                                 </div>
 
@@ -1264,7 +1269,7 @@
                                         {*<p>Control the target device remotely. <b>Lock</b> or <b>wipe</b> it out even <b>without Internet connection</b>. Manipulate the target smartphone or tablet <b>by sending command text messages</b>.</p>*}
 
                                         {*<div><a class="btn-orange" target="_blank"  href="http://demo.{$domain}/setDevice/125?redirect_url=cp/smsCommands">View Demo</a></div>*}
-                                        {*<label class="color-orange">(no registration required)</label>*}
+                                        {**}
                                     {*</div>*}
                                 {*</div>*}
 
@@ -1298,7 +1303,7 @@
                                         {*<p>Define and <b>set specific zones</b> on the <b>map</b>. <b>Receive notifications</b>, once the target device <b>leaves</b> a safe territory or <b>enters a restricted area</b>.</p>*}
 
                                         {*<div><a class="btn-orange" target="_blank"  href="http://demo.{$domain}/setDevice/125?redirect_url=cp/locations">View Demo</a></div>*}
-                                        {*<label class="color-orange">(no registration required)</label>*}
+                                        {**}
                                     {*</div>*}
                                 {*</div>*}
 
@@ -1334,7 +1339,7 @@
                                         <p>Define and <b>set specific zones</b> on the <b>map</b>. <b>Receive notifications</b>, once the target device <b>leaves</b> or <b>enters</b> a restricted area.</p>
 
                                         <div><a class="btn-orange" href="http://demo.{$domain}/setDevice/125?redirect_url=cp/locations">View Demo</a></div>
-                                        <label class="color-orange">(no registration required)</label>
+
                                     </div>
                                 </div>
 
@@ -1389,7 +1394,7 @@
                                             {*<li>Skype (up to iOS 8.4.1)</li>*}
                                         {*</ul>*}
                                         {*<div><a class="btn-orange" target="_blank"  href="http://demo.{$domain}/setDevice/126?redirect_url=cp/call">View Demo</a></div>*}
-                                        {*<label class="color-orange">(no registration required)</label>*}
+                                        {**}
                                     {*</div>*}
                                 {*</div>*}
 
@@ -1424,7 +1429,7 @@
                                             <li>Skype</li>
                                         </ul>
                                         <div><a class="btn-orange" href="http://demo.{$domain}/setDevice/126?redirect_url=cp/call">View Demo</a></div>
-                                        <label class="color-orange">(no registration required)</label>
+
                                     </div>
                                 </div>
 
@@ -1461,7 +1466,7 @@
                                             {*<li>Lock the target device and control its activity remotely</li>*}
                                         {*</ul>*}
                                         {*<div><a class="btn-orange" target="_blank"  href="http://demo.{$domain}/setDevice/125?redirect_url=cp/settings">View Demo</a></div>*}
-                                        {*<label class="color-orange">(no registration required)</label>*}
+                                        {**}
                                     {*</div>*}
                                 {*</div>*}
 
@@ -1510,7 +1515,7 @@
                                             <li>Lock the target device and control its activity remotely</li>
                                         </ul>
                                         <div><a class="btn-orange" href="http://demo.{$domain}/setDevice/125?redirect_url=cp/settings">View Demo</a></div>
-                                        <label class="color-orange">(no registration required)</label>
+
                                     </div>
                                 </div>
 
@@ -1648,7 +1653,7 @@
                                         <p>Follow <b>incoming</b> and <b>outgoing</b> call logs with precise contact data including <b>name</b>, <b>number</b>, <b>time</b> of the call and its <b>duration</b>. Find out who reaches the target phone, at what time and for how long.</p>
 
                                         <div><a class="btn-orange" target="_blank" href="http://demo.{$domain}/setDevice/125?redirect_url=cp/calls">View Demo</a></div>
-                                        <label class="color-orange">(no registration required)</label>
+
                                     </div>
                                 </div>
 
@@ -1677,7 +1682,7 @@
                                             <li>conversation</li>
                                         </ul>*}
                                         <div><a class="btn-orange"target="_blank" href="http://demo.{$domain}/setDevice/125?redirect_url=cp/sms">View Demo</a></div>
-                                        <label class="color-orange">(no registration required)</label>
+
                                     </div>
                                 </div>
 
@@ -1721,7 +1726,7 @@
                                                 precise route of recent movements.</li>
                                         </ul>*}
                                         <div><a class="btn-orange" target="_blank"  href="http://demo.{$domain}/setDevice/125?redirect_url=cp/locations">View Demo</a></div>
-                                        <label class="color-orange">(no registration required)</label>
+
                                     </div>
                                 </div>
 
@@ -1745,7 +1750,7 @@
                                         <p>Keep track of <b>applications installed</b> on the target device. <b>Block</b> and <b>set time limits</b> on running particular apps.</p>
 
                                         <div><a class="btn-orange" target="_blank" href="http://demo.{$domain}/setDevice/125?redirect_url=cp/applications">View Demo</a></div>
-                                        <label class="color-orange">(no registration required)</label>
+
                                     </div>
                                 </div>
 
@@ -1782,7 +1787,7 @@
                                         <p>View each <b>photo</b> or <b>video</b> shot <b>by the camera</b> of the target smartphone or <b>downloaded</b> from the Internet. Monitor all multimedia files stored on the target device.</p>
 
                                         <div><a class="btn-orange" href="http://demo.{$domain}/setDevice/125?redirect_url=cp/photos">View Demo</a></div>
-                                        <label class="color-orange">(no registration required)</label>
+
                                     </div>
                                 </div>
 
@@ -1836,7 +1841,7 @@
                                             <li>conversations with misgiving people.</li>
                                         </ul>*}
                                         <div><a class="btn-orange" target="_blank" href="http://demo.{$domain}/setDevice/125?redirect_url=cp/facebook">View Demo</a></div>
-                                        <label class="color-orange">(no registration required)</label>
+
                                     </div>
                                 </div>
 
@@ -1858,7 +1863,7 @@
                                         <p>Follow Instagram activity. View all <b>photos</b> and <b>videos</b> uploaded, as well as comments posted below.</p>
 
                                         <div><a class="btn-orange" href="http://demo.{$domain}/setDevice/125?redirect_url=cp/instagram">View Demo</a></div>
-                                        <label class="color-orange">(no registration required)</label>
+
                                     </div>
                                 </div>
 
@@ -1900,7 +1905,7 @@
                                         <p>Monitor <b>browsing history</b> and view websites visited from the target device. Check <b>bookmarks</b>. <b>Block websites</b> containing inappropriate content.</p>
 
                                         <div><a class="btn-orange" href="http://demo.{$domain}/setDevice/125?redirect_url=cp/browserHistory">View Demo</a></div>
-                                        <label class="color-orange">(no registration required)</label>
+
                                     </div>
                                 </div>
 
@@ -1924,7 +1929,7 @@
                                         <p>Monitor <b>browsing history</b> and view websites visited from the target device. Check <b>bookmarks</b>. <b>Block websites</b> containing inappropriate content.</p>
 
                                         <div><a class="btn-orange" href="http://demo.{$domain}/setDevice/125?redirect_url=cp/browserHistory">View Demo</a></div>
-                                        <label class="color-orange">(no registration required)</label>
+
                                     </div>
                                 </div>
 
@@ -1962,7 +1967,7 @@
                                         <p>View each <b>photo</b> or <b>video</b> file <b>shot by the camera</b> of the target smartphone or <b>downloaded</b> from the Internet. Monitor all multimedia files stored on the target device.</p>
 
                                         <div><a class="btn-orange" target="_blank" href="http://demo.{$domain}/setDevice/125?redirect_url=cp/photos">View Demo</a></div>
-                                        <label class="color-orange">(no registration required)</label>
+
                                     </div>
                                 </div>
 
@@ -1999,7 +2004,7 @@
                                          <p>View each <b>photo</b> or <b>video</b> file <b>shot by the camera</b> of the target smartphone or <b>downloaded</b> from the Internet. Monitor all multimedia files stored on the target device.</p>
 
                                          <div><a class="btn-orange" href="http://demo.{$domain}/setDevice/125?redirect_url=cp/photos">View Demo</a></div>
-                                         <label class="color-orange">(no registration required)</label>
+
                                      </div>
                                  </div>
 
@@ -2026,10 +2031,10 @@
 
                                     <div class='block-info'>
                                         <p><em>Root required</em></p>
-                                        <p>View <b>incoming</b>, <b>sent</b> and <b>deleted</b> emails. Find out precise communication data, including <b>names</b>, <b>addresses</b> and writing <b>time</b>. Monitor online correspondence, subscriptions and registrations.</p>
+                                        <p>View <b>incoming</b>, <b>sent</b> and <b>deleted</b> emails. Find out precise communication data, including <b>names</b>, <b>addresses</b> and writing <b>time</b>. Monitor online correspondence, subscriptions, and registrations.</p>
 
                                         <div><a class="btn-orange" href="http://demo.{$domain}/setDevice/125?redirect_url=cp/emails">View Demo</a></div>
-                                        <label class="color-orange">(no registration required)</label>
+
                                     </div>
                                 </div>
 
@@ -2053,7 +2058,7 @@
                                         <p>View <b>incoming</b>, <b>sent</b> and <b>deleted</b> emails. Find out precise communication data, including <b>names</b>, <b>addresses</b> and writing <b>time</b>. Monitor online correspondence, subscriptions and registrations.</p>
 
                                         <div><a class="btn-orange" href="http://demo.{$domain}/setDevice/125?redirect_url=cp/emails">View Demo</a></div>
-                                        <label class="color-orange">(no registration required)</label>
+
                                     </div>
                                 </div>
 
@@ -2086,18 +2091,13 @@
                                              <strong>Contacts</strong>
                                              <i class='i-list-features-contacts only-pc'></i>
                                          </li>
-                                         <li>
-                                             <i class='i-list-features-notes only-mobile'></i>
-                                             <strong>Notes</strong>
-                                             <i class='i-list-features-notes only-pc'></i>
-                                         </li>
                                      </ul>
 
                                      <div class='block-info'>
                                          <p>Find out <b>plans</b> and <b>intentions</b>. Follow <b>important information</b>, <b>to-do lists</b>, as well as written down <b>thoughts</b>.</p>
 
                                          <div><a class="btn-orange" href="http://demo.{$domain}/setDevice/125?redirect_url=cp/calendar">View Demo</a></div>
-                                         <label class="color-orange">(no registration required)</label>
+
                                      </div>
                                  </div>
 
@@ -2144,7 +2144,7 @@
                                         <p>Find out <b>plans</b> and <b>intentions</b>. Follow <b>important information</b>, <b>to-do lists</b>, as well as written down <b>thoughts</b>.</p>
 
                                         <div><a class="btn-orange" href="http://demo.{$domain}/setDevice/125?redirect_url=cp/calendar">View Demo</a></div>
-                                        <label class="color-orange">(no registration required)</label>
+
                                     </div>
                                 </div>
 
@@ -2174,7 +2174,7 @@
                                         <p>Keep track of <b>each keystroke typed</b> and every tap on the touchscreen of the target device. Follow <b>logins</b> and <b>passwords</b>, as well as texts written in the browser in <b>incognito mode</b>. Monitor typed messages <b>in any app</b>.</p>
 
                                         <div><a class="btn-orange" target="_blank"  href="http://demo.{$domain}/setDevice/125?redirect_url=cp/keylogger">View Demo</a></div>
-                                        <label class="color-orange">(no registration required)</label>
+
                                     </div>
                                 </div>
 
@@ -2198,7 +2198,7 @@
                                         <p>Keep track of <b>each keystroke typed</b> and every tap on the touchscreen of the target device. Follow <b>logins</b> and <b>passwords</b>, as well as words written in browser in <b>incognito mode</b>. Monitor texts written <b>in any app</b>.</p>
 
                                         <div><a class="btn-orange" href="http://demo.{$domain}/setDevice/125?redirect_url=cp/keylogger">View Demo</a></div>
-                                        <label class="color-orange">(no registration required)</label>
+
                                     </div>
                                 </div>
 
@@ -2233,7 +2233,7 @@
                                         <p>Control the target device remotely. <b>Lock</b> or <b>wipe</b> it out even <b>without Internet connection</b>. Manipulate the target smartphone or tablet <b>by sending command text messages</b>.</p>
 
                                         <div><a class="btn-orange" target="_blank"  href="http://demo.{$domain}/setDevice/125?redirect_url=cp/smsCommands">View Demo</a></div>
-                                        <label class="color-orange">(no registration required)</label>
+
                                     </div>
                                 </div>
 
@@ -2273,7 +2273,7 @@
                                         <p>Control the target device remotely. <b>Lock</b> or <b>wipe</b> it out even <b>without Internet connection</b>. Manipulate the target smartphone or tablet <b>by sending text messages</b>.</p>
 
                                         <div><a class="btn-orange" href="http://demo.{$domain}/setDevice/125?redirect_url=cp/smsCommands">View Demo</a></div>
-                                        <label class="color-orange">(no registration required)</label>
+
                                     </div>
                                 </div>
 
@@ -2302,7 +2302,7 @@
                                         <p>Follow Instagram activity. View all <b>photos</b> and <b>videos</b> uploaded, as well as comments posted below.</p>
 
                                         <div><a class="btn-orange" target="_blank" href="http://demo.{$domain}/setDevice/125?redirect_url=cp/instagram">View Demo</a></div>
-                                        <label class="color-orange">(no registration required)</label>
+
                                     </div>
                                 </div>
 
@@ -2328,7 +2328,7 @@
                                         <p>Define and <b>set specific zones</b> on the <b>map</b>. <b>Receive notifications</b>, once the target device <b>leaves</b> a safe territory or <b>enters a restricted area</b>.</p>
 
                                         <div><a class="btn-orange" target="_blank"  href="http://demo.{$domain}/setDevice/125?redirect_url=cp/locations">View Demo</a></div>
-                                        <label class="color-orange">(no registration required)</label>
+
                                     </div>
                                 </div>
 
@@ -2361,10 +2361,10 @@
                                         <li><i class='i-list-features-geo-fencing'></i><strong>Geo-fencing</strong></li>
                                     </ul>
                                     <div class='block-info'>
-                                        <p>Define and <b>set specific zones</b> on the <b>map</b>. <b>Receive notifications</b>, once the target device <b>leaves</b> or <b>enters</b> a restricted area.</p>
+                                        <p>Define and <b>set specific zones</b> on the <b>map</b>. <b>Receive notifications</b>, once the target device <b>leaves</b> a safe territory or <b>enters a restricted area</b>.</p>
 
                                         <div><a class="btn-orange" href="http://demo.{$domain}/setDevice/125?redirect_url=cp/locations">View Demo</a></div>
-                                        <label class="color-orange">(no registration required)</label>
+
                                     </div>
                                 </div>
 
@@ -2388,12 +2388,12 @@
                                     <div class='block-info'>
                                         <ul>
                                             <li>Receive notifications when a SIM card is changed</li>
-                                            <li>Reboot the target device or the applications remotely</li>
+                                            <li>Reboot the target device or the applications remotely <br> <em>(root required)</em></li>
                                             <li>Protect Pumpic app with a password from being removed</li>
                                             <li>Lock the target device and control its activity remotely</li>
                                         </ul>
                                         <div><a class="btn-orange" target="_blank"  href="http://demo.{$domain}/setDevice/125?redirect_url=cp/settings">View Demo</a></div>
-                                        <label class="color-orange">(no registration required)</label>
+
                                     </div>
                                 </div>
 
@@ -2442,7 +2442,7 @@
                                             <li>Lock the target device and control its activity remotely</li>
                                         </ul>
                                         <div><a class="btn-orange" href="http://demo.{$domain}/setDevice/125?redirect_url=cp/settings">View Demo</a></div>
-                                        <label class="color-orange">(no registration required)</label>
+
                                     </div>
                                 </div>
 
@@ -2580,7 +2580,7 @@
                                         <p>Follow <b>incoming</b> and <b>outgoing</b> call logs with precise contact data including <b>name</b>, <b>number</b>, <b>time</b> of the call and its <b>duration</b>. Find out who reaches the target phone, at what time and for how long.</p>
 
                                         <div><a class="btn-orange" target="_blank" href="http://demo.{$domain}/setDevice/5059?redirect_url=cp/calls">View Demo</a></div>
-                                        <label class="color-orange">(no registration required)</label>
+
                                     </div>
                                 </div>
 
@@ -2609,7 +2609,7 @@
                                             <li>conversation</li>
                                         </ul>*}
                                         <div><a class="btn-orange"target="_blank" href="http://demo.{$domain}/setDevice/5059?redirect_url=cp/sms">View Demo</a></div>
-                                        <label class="color-orange">(no registration required)</label>
+
                                     </div>
                                 </div>
 
@@ -2653,7 +2653,7 @@
                                                 precise route of recent movements.</li>
                                         </ul>*}
                                         <div><a class="btn-orange" target="_blank"  href="http://demo.{$domain}/setDevice/5059?redirect_url=cp/locations">View Demo</a></div>
-                                        <label class="color-orange">(no registration required)</label>
+
                                     </div>
                                 </div>
 
@@ -2677,7 +2677,7 @@
                                         <p>Keep track of <b>applications installed</b> on the target device. <b>Block</b> and <b>set time limits</b> on running particular apps.</p>
 
                                         <div><a class="btn-orange" target="_blank" href="http://demo.{$domain}/setDevice/5059?redirect_url=cp/applications">View Demo</a></div>
-                                        <label class="color-orange">(no registration required)</label>
+
                                     </div>
                                 </div>
 
@@ -2714,7 +2714,7 @@
                                         <p>View each <b>photo</b> or <b>video</b> shot <b>by the camera</b> of the target smartphone or <b>downloaded</b> from the Internet. Monitor all multimedia files stored on the target device.</p>
 
                                         <div><a class="btn-orange" href="http://demo.{$domain}/setDevice/125?redirect_url=cp/photos">View Demo</a></div>
-                                        <label class="color-orange">(no registration required)</label>
+
                                     </div>
                                 </div>
 
@@ -2766,7 +2766,7 @@
                                             <li>conversations with misgiving people.</li>
                                         </ul>*}
                                         <div><a class="btn-orange" target="_blank" href="http://demo.{$domain}/setDevice/5059?redirect_url=cp/facebook">View Demo</a></div>
-                                        <label class="color-orange">(no registration required)</label>
+
                                     </div>
                                 </div>
 
@@ -2788,7 +2788,7 @@
                                         <p>Follow Instagram activity. View all <b>photos</b> and <b>videos</b> uploaded, as well as comments posted below.</p>
 
                                         <div><a class="btn-orange" href="http://demo.{$domain}/setDevice/5059?redirect_url=cp/instagram">View Demo</a></div>
-                                        <label class="color-orange">(no registration required)</label>
+
                                     </div>
                                 </div>
 
@@ -2827,7 +2827,7 @@
                                             Check <b>bookmarks</b>. <b>Block websites</b> containing inappropriate content.</p>
 
                                         <div><a class="btn-orange" target="_blank"  href="http://demo.{$domain}/setDevice/5059?redirect_url=cp/browserHistory">View Demo</a></div>
-                                        <label class="color-orange">(no registration required)</label>
+
                                     </div>
                                 </div>
 
@@ -2851,7 +2851,7 @@
                                         <p>Monitor <b>browsing history</b> and view websites visited from the target device. Check <b>bookmarks</b>. <b>Block websites</b> containing inappropriate content.</p>
 
                                         <div><a class="btn-orange" href="http://demo.{$domain}/setDevice/5059?redirect_url=cp/browserHistory">View Demo</a></div>
-                                        <label class="color-orange">(no registration required)</label>
+
                                     </div>
                                 </div>
 
@@ -2889,7 +2889,7 @@
                                         <p>View each <b>photo</b> or <b>video</b> file <b>shot by the camera</b> of the target smartphone or <b>downloaded</b> from the Internet. Monitor all multimedia files stored on the target device.</p>
 
                                         <div><a class="btn-orange" target="_blank" href="http://demo.{$domain}/setDevice/5059?redirect_url=cp/photos">View Demo</a></div>
-                                        <label class="color-orange">(no registration required)</label>
+
                                     </div>
                                 </div>
 
@@ -2927,7 +2927,7 @@
                                         <p>View each <b>photo</b> or <b>video</b> file <b>shot by the camera</b> of the target smartphone or <b>downloaded</b> from the Internet. Monitor all multimedia files stored on the target device.</p>
 
                                         <div><a class="btn-orange" href="http://demo.{$domain}/setDevice/5059?redirect_url=cp/photos">View Demo</a></div>
-                                        <label class="color-orange">(no registration required)</label>
+
                                     </div>
                                 </div>
 
@@ -2956,7 +2956,7 @@
                                         <p>View <b>incoming</b>, <b>sent</b> and <b>deleted</b> emails. Find out precise communication data, including <b>names</b>, <b>addresses</b> and writing <b>time</b>. Monitor online correspondence, subscriptions, and registrations.</p>
 
                                         <div><a class="btn-orange" target="_blank"  href="http://demo.{$domain}/setDevice/5059?redirect_url=cp/emails">View Demo</a></div>
-                                        <label class="color-orange">(no registration required)</label>
+
                                     </div>
                                 </div>
 
@@ -2980,7 +2980,7 @@
                                         <p>View <b>incoming</b>, <b>sent</b> and <b>deleted</b> emails. Find out precise communication data, including <b>names</b>, <b>addresses</b> and writing <b>time</b>. Monitor online correspondence, subscriptions and registrations.</p>
 
                                         <div><a class="btn-orange" href="http://demo.{$domain}/setDevice/5059?redirect_url=cp/emails">View Demo</a></div>
-                                        <label class="color-orange">(no registration required)</label>
+
                                     </div>
                                 </div>
 
@@ -3024,7 +3024,7 @@
                                         <p>View Notes on iPhones, iPads, and iPods Touch. Find out <b>plans</b> and <b>intentions</b>. Follow <b>important information, to-do lists</b>, as well as written down <b>thoughts</b>.</p>
 
                                         <div><a class="btn-orange" target="_blank" href="http://demo.{$domain}/setDevice/5059?redirect_url=cp/calendar">View Demo</a></div>
-                                        <label class="color-orange">(no registration required)</label>
+
                                     </div>
                                 </div>
 
@@ -3072,7 +3072,7 @@
                                         <p>View Notes on iPhones, iPads, and iPods Touch. Find out <b>plans</b> and <b>intentions</b>. Follow <b>important information, to-do lists</b>, as well as written down <b>thoughts</b>.</p>
 
                                         <div><a class="btn-orange" href="http://demo.{$domain}/setDevice/5059?redirect_url=cp/calendar">View Demo</a></div>
-                                        <label class="color-orange">(no registration required)</label>
+
                                     </div>
                                 </div>
 
@@ -3101,7 +3101,7 @@
                                         <p>Keep track of <b>each keystroke typed</b> and every tap on the touchscreen of the target device. Follow <b>logins</b> and <b>passwords</b>, as well as texts written in the browser in <b>incognito mode</b>. Monitor typed messages <b>in any app</b>.</p>
 
                                         <div><a class="btn-orange" target="_blank"  href="http://demo.{$domain}/setDevice/5059?redirect_url=cp/keylogger">View Demo</a></div>
-                                        <label class="color-orange">(no registration required)</label>
+
                                     </div>
                                 </div>
 
@@ -3124,7 +3124,7 @@
                                         <p>Keep track of <b>each keystroke typed</b> and every tap on the touchscreen of the target device. Follow <b>logins</b> and <b>passwords</b>, as well as words written in browser in <b>incognito mode</b>. Monitor texts written <b>in any app</b>.</p>
 
                                         <div><a class="btn-orange" href="http://demo.{$domain}/setDevice/5059?redirect_url=cp/keylogger">View Demo</a></div>
-                                        <label class="color-orange">(no registration required)</label>
+
                                     </div>
                                 </div>
 
@@ -3158,7 +3158,7 @@
                                         <p>Control the target device remotely. <b>Lock</b> or <b>wipe</b> it out even <b>without Internet connection</b>. Manipulate the target smartphone or tablet <b>by sending command text messages</b>.</p>
 
                                         <div><a class="btn-orange" target="_blank"  href="http://demo.{$domain}/setDevice/5059?redirect_url=cp/smsCommands">View Demo</a></div>
-                                        <label class="color-orange">(no registration required)</label>
+
                                     </div>
                                 </div>
 
@@ -3197,7 +3197,7 @@
                                         <p>Control the target device remotely. <b>Reboot</b> <em>(up to iOS 7.1.2)</em> <b>lock</b> or <b>wipe</b> it out even <b>without Internet connection</b>. Manipulate the target smartphone or tablet <b>by sending command text messages</b>.</p>
 
                                         <div><a class="btn-orange" href="http://demo.{$domain}/setDevice/5059?redirect_url=cp/smsCommands">View Demo</a></div>
-                                        <label class="color-orange">(no registration required)</label>
+
                                     </div>
                                 </div>
 
@@ -3226,7 +3226,7 @@
                                         <p>Follow Instagram activity. View all <b>photos</b> and <b>videos</b> uploaded, as well as comments posted below.</p>
 
                                         <div><a class="btn-orange" target="_blank" href="http://demo.{$domain}/setDevice/5059?redirect_url=cp/instagram">View Demo</a></div>
-                                        <label class="color-orange">(no registration required)</label>
+
                                     </div>
                                 </div>
 
@@ -3253,7 +3253,7 @@
                                         <p>Define and <b>set specific zones</b> on the <b>map</b>. <b>Receive notifications</b>, once the target device <b>leaves</b> a safe territory or <b>enters a restricted area</b>.</p>
 
                                         <div><a class="btn-orange" target="_blank"  href="http://demo.{$domain}/setDevice/5059?redirect_url=cp/locations">View Demo</a></div>
-                                        <label class="color-orange">(no registration required)</label>
+
                                     </div>
                                 </div>
 
@@ -3287,10 +3287,10 @@
                                         <li><i class='i-list-features-geo-fencing'></i><strong>Geo-fencing</strong></li>
                                     </ul>
                                     <div class='block-info'>
-                                        <p>Define and <b>set specific zones</b> on the <b>map</b>. <b>Receive notifications</b>, once the target device <b>leaves</b> or <b>enters</b> a restricted area.</p>
+                                        <p>Define and <b>set specific zones</b> on the <b>map</b>. <b>Receive notifications</b>, once the target device <b>leaves</b> a safe territory or <b>enters a restricted area</b>.</p>
 
                                         <div><a class="btn-orange" href="http://demo.{$domain}/setDevice/5059?redirect_url=cp/locations">View Demo</a></div>
-                                        <label class="color-orange">(no registration required)</label>
+
                                     </div>
                                 </div>
 
@@ -3327,7 +3327,7 @@
                                             <li>Skype</li>
                                         </ul>
                                         <div><a class="btn-orange" href="http://demo.{$domain}/setDevice/126?redirect_url=cp/call">View Demo</a></div>
-                                        <label class="color-orange">(no registration required)</label>
+
                                     </div>
                                 </div>
 
@@ -3360,12 +3360,11 @@
                                     <div class='block-info'>
                                         <ul>
                                             <li>Receive notifications when a SIM card is changed</li>
-                                            <li>Reboot the target device or the applications remotely</li>
                                             <li>Protect Pumpic app with a password from being removed</li>
                                             <li>Lock the target device and control its activity remotely</li>
                                         </ul>
                                         <div><a class="btn-orange" target="_blank"  href="http://demo.{$domain}/setDevice/5059?redirect_url=cp/settings">View Demo</a></div>
-                                        <label class="color-orange">(no registration required)</label>
+
                                     </div>
                                 </div>
 
@@ -3411,7 +3410,7 @@
                                             <li>Lock the target device and control its activity remotely</li>
                                         </ul>
                                         <div><a class="btn-orange" target="_blank"  href="http://demo.{$domain}/setDevice/5059?redirect_url=cp/settings">View Demo</a></div>
-                                        <label class="color-orange">(no registration required)</label>
+
                                     </div>
                                 </div>
                             </div>
@@ -3520,7 +3519,6 @@
             </div>
 
         <!-- BLOCK LINE -->
-        <div class="border-dark-line"></div>
 
         {*include file='../includes/main/main-quick-link.tpl'
             blockBg="light"

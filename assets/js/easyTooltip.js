@@ -59,19 +59,7 @@
 			// 	$("#" + options.tooltipId).remove();
 			// 	$(this).attr("title",title);
 			// });
-			// $(this).mousemove(function(e){
-			// 	var condition = deviceWidth<(e.pageX + options.xOffset+200);
-			// 	if(condition) {
-			// 		$("#" + options.tooltipId)
-			// 				.css("top", ((deviceWidth<410) ? e.pageY + options.yOffset : e.pageY - options.yOffset) + "px")
-			// 				.css("left",((deviceWidth<410 ? ((deviceWidth/2)-100) : e.pageX - options.xOffset - 200)) + "px")
-			// 	} else {
-			// 	$("#" + options.tooltipId)
-			// 		.css("top",((deviceWidth<410) ? e.pageY + options.yOffset : e.pageY - options.yOffset) + "px")
-			// 		.css("left",((deviceWidth<410) ? ((deviceWidth/2)-100) : e.pageX + options.xOffset) + "px")
-			// 	}
-			// });
-			$(this).on('mouseenter', function(e){
+			$(this).on('mouseenter touchstart', function(e){
 				content = (options.content != "") ? options.content : title;
 				content = (options.useElement != "") ? $("#" + options.useElement).html() : content;
 				$(this).attr("title","");
@@ -95,7 +83,7 @@
 					}
 				}
 			});
-			$(this).on('mouseleave',function(){
+			$(this).on('mouseleave touchend',function(){
 				$("#" + options.tooltipId).remove();
 				$(this).attr("title",title);
 			});

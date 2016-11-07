@@ -58,7 +58,7 @@
             Icloud = 'no'
             InfoBlock = 'no'
             block_video = "yes"
-            block_video_src = "http://www.youtube.com/embed/Atg0CbaytAY"
+            block_video_src = "https://www.youtube.com/embed/Atg0CbaytAY"
         }
         
         <div class="light">

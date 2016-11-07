@@ -47,7 +47,7 @@
             listText = "control mobile phone usage|monitor Internet activity|follow location and route history"
             planPackageIphoneParental = "yes"
             block_video = "yes"
-            block_video_src = "http://www.youtube.com/embed/Atg0CbaytAY"
+            block_video_src = "https://www.youtube.com/embed/Atg0CbaytAY"
         }
          {* header_banners/bg_iphone-parental-monitoring.png *}
          {*listText = "control mobile phone usage|monitor Internet activity|follow location and route history"*}    

@@ -43,7 +43,7 @@ metaTags="true"
 
 ogTitle="Internet Safety Rules for Kids | Pumpic"
 ogDesc="Infographic features 10 fundamental internet safety rules for kids. Following these commandments will ensure your child is both safe and responsible online."
-ogImg="/images/infographic/X-Internet-Commandments-for-Kids-Going-Online-for-First-Time-DV4.jpg"
+ogImg="/images/infographic/Internet-Commandments-for-Kids-Going-Online-for-First-Time.jpg"
 }
 
 <body>
@@ -139,7 +139,7 @@ ogImg="/images/infographic/X-Internet-Commandments-for-Kids-Going-Online-for-Fir
                             <li><a class="share-digg" href="#" data-location="http://digg.com/submit?url="></a></li>
                             <li><a class="share-twitter" href="#" data-location="https://twitter.com/share?url="></a></li>
                             <li><a class="share-reddit" href="#" data-location="//www.reddit.com/submit?url="></a></li>
-                            <li><a class="share-pinterest" href="#" data-location="http://pinterest.com/pin/create/link/?url=" data-media="http://{$domain}/images/infographic/X-Internet-Commandments-for-Kids-Going-Online-for-First-Time-DV4.jpg"></a></li>
+                            <li><a class="share-pinterest" href="#" data-location="http://pinterest.com/pin/create/link/?url=" data-media="http://{$domain}/images/infographic/Internet-Commandments-for-Kids-Going-Online-for-First-Time.jpg"></a></li>
                         </ul>
 
 
@@ -147,7 +147,7 @@ ogImg="/images/infographic/X-Internet-Commandments-for-Kids-Going-Online-for-Fir
                         </div>
 
                       <div class="clearfix"></div>
-                        <img src='/images/infographic/X-Internet-Commandments-for-Kids-Going-Online-for-First-Time-DV4.jpg'
+                        <img src='/images/infographic/Internet-Commandments-for-Kids-Going-Online-for-First-Time.jpg'
                              width='540'
                              alt='Mobile Phone Security Measures'
                              id='the_img_link'>
@@ -165,11 +165,11 @@ ogImg="/images/infographic/X-Internet-Commandments-for-Kids-Going-Online-for-Fir
                         <li><a class="share-digg" href="#" data-location="http://digg.com/submit?url="></a></li>
                         <li><a class="share-twitter" href="#" data-location="https://twitter.com/share?url="></a></li>
                         <li><a class="share-reddit" href="#" data-location="//www.reddit.com/submit?url="></a></li>
-                        <li><a class="share-pinterest" href="#" data-location="http://pinterest.com/pin/create/link/?url=" data-media="http://{$domain}/images/infographic/X-Internet-Commandments-for-Kids-Going-Online-for-First-Time-DV4.jpg"></a></li>
+                        <li><a class="share-pinterest" href="#" data-location="http://pinterest.com/pin/create/link/?url=" data-media="http://{$domain}/images/infographic/Internet-Commandments-for-Kids-Going-Online-for-First-Time.jpg"></a></li>
                     </ul>
                     <div class="text-center">
                         <p><strong>Add this infographic to your website by copying and pasting the following embed code:</strong></p>
-                            <textarea class="copy-this" style="margin: 0px; height: 200px; overflow-y: scroll;" readonly="readonly"><img src="http://pumpic.com/images/infographic/X-Internet-Commandments-for-Kids-Going-Online-for-First-Time.jpg" width="720" height="6977" alt="10 Internet Commandments for Kids Going Online" />
+                            <textarea class="copy-this" style="margin: 0px; height: 200px; overflow-y: scroll;" readonly="readonly"><img src="http://pumpic.com/images/infographic/Internet-Commandments-for-Kids-Going-Online-for-First-Time.jpg" width="720" height="6977" alt="10 Internet Commandments for Kids Going Online" />
 <p><a href="http://pumpic.com/internet-safety-rules-for-kids.html">10 Internet Commandments for Kids Going Online [Infographic] by the team at Pumpic.</a></p></textarea>
 
                         <div class="actions clearfix">

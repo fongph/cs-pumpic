@@ -45,7 +45,7 @@
             listText = "monitor SMS messages sent and received|control contacts, block misgiving senders|prevent children from bullies and online predators"
             planPackageBuy = "yes"   
             block_video = "yes"
-            block_video_src = "http://www.youtube.com/embed/Atg0CbaytAY"
+            block_video_src = "https://www.youtube.com/embed/Atg0CbaytAY"
          }
         {* header_banners/bg_mobile_sms_spy.png *}
         {* ?rel=0&wmode=transparent&fs=0&autoplay=1&modestbranding=1&autohide=1 *}

@@ -44,7 +44,7 @@
             listText = "keep track of all keystrokes|follow password inputs|monitor Internet activity"
             planPackageBuy = "yes"
             block_video = "yes"
-            block_video_src = "http://www.youtube.com/embed/Atg0CbaytAY"
+            block_video_src = "https://www.youtube.com/embed/Atg0CbaytAY"
         }
         {*listText = "keep track of all keystrokes|follow password inputs|monitor Internet activity"*}
         {include file='../includes/content/plans.tpl'}

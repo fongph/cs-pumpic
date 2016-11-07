@@ -619,7 +619,7 @@
 				}
 				// var linkContent = slider.settings.buildPager && $.isFunction(slider.settings.buildPager) ? slider.settings.buildPager(i) : i + 1;
 				// add the markup to the string
-				pagerHtml += '<div class="bx-pager-item"><a href="" data-slide-index="' + i + '" class="bx-pager-link">' + linkContent + '</a></div>';
+				pagerHtml += '<div class="bx-pager-item"><a href="#" data-slide-index="' + i + '" class="bx-pager-link">' + linkContent + '</a></div>';
 			}
 			// populate the pager element with pager links
                         if(pagerQty > 1)
@@ -653,8 +653,8 @@
 		 * Appends prev / next controls to the controls element
 		 */
 		var appendControls = function(){
-			slider.controls.next = $('<a class="bx-next" href="">' + slider.settings.nextText + '</a>');
-			slider.controls.prev = $('<a class="bx-prev" href="">' + slider.settings.prevText + '</a>');
+			slider.controls.next = $('<a class="bx-next" href="#">' + slider.settings.nextText + '</a>');
+			slider.controls.prev = $('<a class="bx-prev" href="#">' + slider.settings.prevText + '</a>');
 			// bind click actions to the controls
 			slider.controls.next.bind('click touchend', clickNextBind);
 			slider.controls.prev.bind('click touchend', clickPrevBind);

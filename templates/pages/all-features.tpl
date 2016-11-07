@@ -79,7 +79,7 @@
                             <div class="filter_fe">
                                 <ul class="filter_list">
                                     <li class="filter_item filter-active _features-filter" data-filter="os-ios"><i class="icon-apple filter_icon"></i><b>iOS</b> <span class="filter_version _version-hide-xs">{$ver_icloud_bot} - {$ver_icloud_up}</span><span class="filter_version"> (iCloud)</span></li>
-                                    <li class="filter_item _features-filter" data-filter="os-android"><i class="icon-android filter_icon"></i><b>Android</b> <span class="filter_version _version-hide-xs">({$ver_android_bot} - {$ver_android_up})</span></li>
+                                    <li class="filter_item _features-filter" data-filter="os-android"><i class="icon-android filter_icon"></i><b>Android</b> <span class="filter_version _version-hide-xs"> {$ver_android_bot} - {$ver_android_up}</span></li>
                                     <li class="filter_item _features-filter" data-filter="os-jailbreak"><i class="icon-apple filter_icon"></i><b>iOS</b><span class="filter_version _version-hide-xs"> {$ver_ios_bot} - {$ver_jailbreak_up}</span><span class="filter_version"> (jailbreak)</span></li>
                                 </ul>
                             </div>
@@ -302,7 +302,7 @@
                             <div class="col-sm-3 col-md-3 col-lg-3">
 
                                 <ul class="list-features list-features-right">
-                                    <li class="i-l-features">
+                                    <li class="i-l-features i-l-features-jb">
                                         <div class="row">
                                             <div class="col-sm-2 col-md-2 col-lg-2 padding-null features-icon">
                                                 <img class="model-center" src="{$img}/technological/header/icon/icon-call.png" width="27px" height="27px" />
@@ -320,7 +320,7 @@
 
                                     </li>
 
-                                    <li class="i-l-features">
+                                    <li class="i-l-features i-l-features-jb ">
                                         <div class="row">
                                             <div class="col-sm-2 col-md-2 col-lg-2 padding-null features-icon">
                                                 <img class="model-center" src="{$img}/technological/header/icon/icon-location-history.png" width="24px" height="31px" />
@@ -337,7 +337,7 @@
                                         </div>
                                     </li>
 
-                                    <li class="i-l-features">
+                                    <li class="i-l-features i-l-features-jb ">
                                         <div class="row">
                                             <div class="col-sm-2 col-md-2 col-lg-2 padding-null features-icon">
                                                 <img class="model-center" src="{$img}/technological/header/icon/icon-chat.png" width="13px" height="28px" />
@@ -354,7 +354,7 @@
                                         </div>
                                     </li>
 
-                                    <li class="i-l-features">
+                                    <li class="i-l-features i-l-features-jb ">
                                         <div class="row">
                                             <div class="col-sm-2 col-md-2 col-lg-2 padding-null features-icon">
                                                 <img class="model-center" src="{$img}/technological/header/icon/icon-email.png" width="29px" height="20px" />
@@ -521,7 +521,7 @@
                             <div class="col-sm-3 col-md-3 col-lg-3">
 
                                 <ul class="list-features list-features-right">
-                                    <li class="i-l-features">
+                                    <li class="i-l-features i-l-features-jb ">
                                         <div class="row">
                                             <div class="col-sm-2 col-md-2 col-lg-2 padding-null features-icon">
                                                 <img class="model-center" src="{$img}/technological/header/icon/icon-call.png" width="27px" height="27px" />
@@ -539,7 +539,7 @@
 
                                     </li>
 
-                                    <li class="i-l-features">
+                                    <li class="i-l-features i-l-features-jb ">
                                         <div class="row">
                                             <div class="col-sm-2 col-md-2 col-lg-2 padding-null features-icon">
                                                 <img class="model-center" src="{$img}/technological/header/icon/icon-location-history.png" width="24px" height="31px" />
@@ -556,7 +556,7 @@
                                         </div>
                                     </li>
 
-                                    <li class="i-l-features">
+                                    <li class="i-l-features i-l-features-jb ">
                                         <div class="row">
                                             <div class="col-sm-2 col-md-2 col-lg-2 padding-null features-icon">
                                                 <img class="model-center" src="{$img}/technological/header/icon/icon-chat.png" width="13px" height="28px" />
@@ -573,7 +573,7 @@
                                         </div>
                                     </li>
 
-                                    <li class="i-l-features">
+                                    <li class="i-l-features i-l-features-jb ">
                                         <div class="row">
                                             <div class="col-sm-2 col-md-2 col-lg-2 padding-null features-icon">
                                                 <img class="model-center" src="{$img}/technological/header/icon/icon-email.png" width="29px" height="20px" />
@@ -741,7 +741,7 @@
         </div>
 
          <!-- BLOCK FEATURES -->
-        <div class="dark">
+        <div class="dark _features-content" style="display: none;border-top: 1px solid  #e3e3e3;" data-feature="os-android">
                 <div class="container">
                         <h2 class="text-center">Other Features</h2>
                         <div class="row">
@@ -811,11 +811,76 @@
                         </div>
                 </div>
         </div>
-        {include file='../includes/content/how-get-pumpic.tpl'
-            blockBg="bg_white pt40"
-            title = ""
-            style = "images"
-        }
+        <div class="dark _features-content" style="display: none;border-top: 1px solid  #e3e3e3;" data-feature="os-jailbreak">
+                <div class="container">
+                        <h2 class="text-center">Other Features</h2>
+                        <div class="row">
+
+                            <div id="table-container" class="table-col-8 table-sm-col-3">
+
+                                <section>
+                                    <div class="tab col-item-3 col-md-item-3 col-sm-item-3">
+                                        <ul>
+                                            <li {*class="text-uppercase"*}>
+                                                <i class="i-features-keyloger"></i>
+                                                <div>
+                                                    Keylogger<br />
+                                                    {*<span class="text-normal">(passwords, apps behaviour, incognito)</span>*}
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <i class="i-features-reboot"></i>
+                                                <div>Reboot Application{*REBOOT APPLICATION*}</div>
+                                            </li>
+                                            <li>
+                                                <i class="i-features-remote-activity-control"></i>
+                                                <div>Remote Activity Control{*Remote activity control*}</div>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="tab col-item-3 col-md-item-3 col-sm-item-3">
+                                        <ul>
+                                            <li {*class="text-uppercase"*}>
+                                                <i class="i-features-sms-commands"></i>
+                                                <div>SMS Commands</div>
+                                            </li>
+                                            <li>
+                                                <i class="i-features-reboot"></i>
+                                                <div>Reboot Device{*REBOOT DEVICE*}</div>
+                                            </li>
+                                            <li>
+                                                <i class="i-features-remote-device-lock"></i>
+                                                <div>Remote Device Lock</div>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="tab col-item-3 col-md-item-3 col-sm-item-3">
+                                        <ul>
+                                            <li>
+                                                <i class="i-features-sim-card"></i>
+                                                <div>SIM Change Notification{*SIM CHANGE <span class="text-normal">notification</span>*}</div>
+                                            </li>
+                                            <li>
+                                                <i class="i-features-removal-protection"></i>
+                                                <div>Removal Protection{*Removal protection*}</div>
+                                            </li>
+                                            <li class="other-feat-last">
+                                                <div class="other-feat-last-wrapper">
+                                                <i class="i-features-instant-location"></i>
+                                                <div>Instant Location{*Instant location*}</div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </section>
+
+                            </div>
+
+                        </div>
+                </div>
+        </div>
 
         {*<!-- BLOCK COMPATIBILITY -->*}
         {*{include file='../includes/content/compatibility/compatibility-table.tpl'*}

@@ -54,7 +54,6 @@
             planPackageBuyUrl = '#icloud-solution'
             planPackageBuyType = 'link'
             planPackageBuyClass = 'go_block_scroll'
-            jailbreak = true
             TouchPad = 'yes'
             Android = 'no'
             Apple = 'no'
@@ -78,7 +77,7 @@
         <!-- BLOCK ICLOUD SOLUTION -->
         <div class="row-white">
             <div class="container">
-                <h2 class="list-group-item-heading text-center"><i class="icons ico-cloud{*ico-jailbreak*}"></i> iCloud Solution</h2>
+                <h2 class="list-group-item-heading text-center"><i class="icon icon-apple" style="margin-right: 5px;"></i> iCloud Solution</h2>
             </div>
         </div>
         <!-- END ICLOUD SOLUTION -->

@@ -3,9 +3,9 @@
     <div class="banner-text">
         <span>Smartphone Monitoring App</span>
         <ul>
-            <li><i class="icon-android"></i> ({$ver_android_bot} - {$ver_android_up})</li>
-            <li><i class="icon-apple"></i> ({$ver_ios_bot} - {$ver_jailbreak_up})</li>
-            <li><i class="icon-icloud"></i> ({$ver_icloud_bot} - {$ver_icloud_up})</li>
+            <li><i class="icon-icloud"></i> <b>IOS</b> {$ver_icloud_bot} - {$ver_icloud_up} (iCloud)</li>
+            <li><i class="icon-android"></i> <b>Android</b> {$ver_android_bot} - {$ver_android_up}</li>
+            <li><i class="fa fa-unlock-alt fa-lg"></i> <b>IOS</b> {$ver_ios_bot} - {$ver_jailbreak_up} (jailbreak)</li>
         </ul>
     </div>
     <div class="banner-arrow"></div>

@@ -70,18 +70,19 @@
                                                            
                                                             <div class="tab rowspan">
                                                                 <span>Avaliable on Apple & Android devices</span>
-                                                                <ul>   
-                                                                    <li> 
-                                                                        <i class="icon-android"></i>
-                                                                        ({$ver_android_bot} - {$ver_android_up})
-                                                                    </li>
-                                                                    <li> 
-                                                                        <i class="icon-apple"></i>
-                                                                        ({$ver_ios_bot} - {$ver_ios_up})
-                                                                    </li>
+                                                                <ul>
                                                                     <li>
-                                                                        <i class="icon-icloud"></i>
-                                                                        ({$ver_icloud_bot} - {$ver_icloud_up})
+                                                                        <i class="fa fa-apple"></i>
+                                                                        iOS {$ver_icloud_bot} - {$ver_icloud_up} (iCloud)
+                                                                    </li>
+                                                                    <li> 
+                                                                        <i class="fa fa-android"></i>
+                                                                        Android {$ver_android_bot} - {$ver_android_up}
+                                                                    </li>
+
+                                                                    <li>
+                                                                        <i class="fa fa-unlock-alt"></i>
+                                                                        iOS {$ver_ios_bot} - {$ver_ios_up} (jailbreak)
                                                                     </li>
                                                                 </ul>    
                                                             </div>

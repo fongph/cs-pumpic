@@ -833,6 +833,7 @@ form > table.pricing-second {
      color: inherit;
    }
    &_item {
+     min-height: 47px;
      position: relative;
      cursor: pointer;
      color: #9b9b9b;

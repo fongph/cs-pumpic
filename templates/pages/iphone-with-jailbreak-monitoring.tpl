@@ -48,20 +48,15 @@
             textAlign = "right"
             title = "Mobile Monitoring App<br>for Jailbroken iOS devices"
             description = "Enjoy remote tracking of Apple devices.<br />Control iPhone use. Follow location and online activity."
-                            
-            jailbreak = "true"                
-
             promoBuyBlock = "no"
             planPackageBuy = "yes"
             planPackageBuyUrl = '#choose-subscription-plan'
             planPackageBuyType = 'link'
             planPackageBuyClass = 'go_block_scroll'
-
             TouchPad = 'yes'
             Android = 'no'
             Apple = 'yes'
             Icloud = 'no'
-            AppleVersion = "iOS {$ver_ios_bot} - {$ver_jailbreak_up}"
             InfoBlock = 'no'
             block_video = "yes"
             block_video_src = "http://www.youtube.com/embed/Atg0CbaytAY"
@@ -84,7 +79,7 @@
         <!-- BLOCK JAILBREAL SOLUTION -->
         <div class="row-white">
             <div class="container">
-                <h2 class="list-group-item-heading text-center"><i class="icons ico-jailbreak"></i> Jailbreak Solution</h2>
+                <h2 class="list-group-item-heading text-center"><i class="fa fa-unlock-alt" style="margin-right: 5px;"></i>  Jailbreak Solution</h2>
             </div>
         </div>
         <!-- END -->

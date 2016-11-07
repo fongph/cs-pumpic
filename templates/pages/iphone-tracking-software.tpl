@@ -78,126 +78,10 @@
 
                     
                         <div class="list-group-box">
-                            <div class="list-group">
-                                <ul >
-                                  <li href="#" class="list-group-item text-center">
-                                    <h4 class="list-group-item-heading"><i class="icons ico-jailbreak"></i> Jailbreak Solution </h4>
-                                    <div><span class="icon-apple text-success"></span> ({$ver_ios_bot} - {$ver_jailbreak_up})</div>
-                                  </li>
-                                  <li href="#" class="list-group-item">
-                                    <p class="list-group-item-text">
-                                        <span class="title"><i class="icon-ok text-success"></i> Jailbreak - <span class="text-success">Required</span></span>
-                                        <span>You need to jailbreak the target iOS device ({$ver_ios_bot} - {$ver_jailbreak_up}) before installing <br />the app.{*You need to jailbreak the target iOS device before installing the app.*}</span>
-                                    </p>
-                                  </li>
-                                  <li href="#" class="list-group-item">
-                                    <p class="list-group-item-text">
-                                        <span class="title"><i class="icon-ok text-success"></i> Physical Access - <span class="text-success">Required</span></span>
-                                        <span>You need physical access to the target device to install the app on it.<br>&nbsp;</span>
-                                    </p>
-                                  </li>
-                                  <li href="#" class="list-group-item">
-                                    <p class="list-group-item-text">
-                                        <span class="title"><i class="icon-eye text-success"></i> The app is <span class="text-success">Visible</span></span>
-                                        <span>Pumpic is visible on the target device. However, to disable it, change settings, or delete the app a secret code is required.</span>
-                                    </p>
-                                  </li>
-                                  <li href="#" class="list-group-item">
-                                    <p class="list-group-item-text">
-                                        <span class="title"><i class="icon-cancel text-gray"></i> iCloud Password - <span class="text-gray">Not Required</span></span>
-                                        <span>You do not need to know the iCloud password of the target iOS device.</span>
-                                    </p>
-                                  </li>
-                                  <li href="#" class="list-group-item">
-                                    <p class="list-group-item-text">
-                                        <span class="title"><label class='block-number'>23</label> Monitoring features</span>
-                                        <span>Multi-featured real-time <a class="a-default" target="_blank" href="/how-to-setup-parental-controls-on-iphone.html">iOS monitoring</a> with filtering and blocking options.</span>
-                                    </p>
-                                  </li>
-                                  <li href="#" class="list-group-item pc-pb60 text-center">
-                                    <a href="http://{$domain}/iphone-with-jailbreak-monitoring.html" 
-                                       class="list-group-item-link a-default">Learn more<i class="icons ico-arrows"></i></a>
-                                  </li>
-                                </ul>
-                                <div class="row-pricing-panel">
-                                    <div class="premium_wr" style="">
-                                        <div class="premium_h">
-                                            Jailbreak Solution
-                                        </div>
-                                        <div class="pricep border-right-sm {*border-right-ddd*}">
-                                            <div class="dtable">
-                                                <div class="dtable-cell">
-                                                    <div class="wrapper_pack">
-                                                    <div class="wr_pack_premium wr_icloud_jb _single-pack-jailbreak" style="margin-top: 12px;"></div>
-                                                    <div class="wr_pack_double_premium wr_icloud_jb-double _double-pack-jailbreak"></div>
-                                                    </div>
-                                                </div>
-                                                <div class="dtable-cell">
-                                                    <div class="wr_price_big">
-                                                        <span></span>
-                                                        <div class="box-currence">
-                                                            <div class="symbol" attr-iso="usd">$</div>
-                                                            <div class="curr" id="jailbreak-price-per-month">{$getDefaultiosJailbreak}</div>
-                                                        </div><span>/ month</span>
-                                                    </div>
-                                                </div>
-                                            </div>        
-                                            <div class="list_price">
-                                                <form name="price_premium" method="POST" action="/buy.html" class="buy-form-with-offer" autocomplete="off">
-                                                    <input id='product_price_premium1' type='hidden' name='price[productID]' value='{if isset($getDefaultiosJailbreak)}{$getDefaultiosJailbreak}{else}0{/if}' class="product_price"/>
-                                    
-                                                    <ul>
-                                                        {foreach from=$getProducts.iosJailbreak key=key item=item}
-                                                            <li>
-                                                                <label class="label_radio hover_label_radio {if $item.period == '12'}r_on{else}r_off{/if}">
-                                                                    <input class="data-price" data-target="#jailbreak-price-per-month" data-cur="usd" data-price-usd="{$item.price}" data-offer-price-usd="{$getProducts.iosJailbreakDouble[$key].price}" data-period="{$item.period}" data-product="{$item.id}" data-offer-product="{$getProducts.iosJailbreakDouble[$key].id}" data-group="jailbreak"  name="optionsRadios" id="optionsRadios{$item.id}1" value="{$item.id}" type="radio"{if $item.period == '12'} checked="checked"{/if} />
-                                                                    <span class="sp">
-                                                                        <strong>{$item.period}</strong> {if $item.period == 1}month{else}months{/if}
-                                                                    </span>
-
-                                                                    <div class="box-small-package">
-                                                                        <div class="offer_old_price"><div class="box-currence strike__currence"><div class="symbol" attr-iso="usd">$</div><div class="curr">{$item.price * 2|string_format:"%.2f"}</div></div></div>
-                                                                    </div>
-
-                                                                    <div class="package_price">
-                                                                        <strong>
-                                                                            <div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr">{$item.price}</div></div>
-                                                                        </strong>
-                                                                    </div>
-                                                                    <div class="package_offer_price">
-                                                                        <strong>
-                                                                            <div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr">{$getProducts.iosJailbreakDouble[$key].price}</div></div>
-                                                                        </strong>
-                                                                    </div>
-                                                                </label>
-                                                            </li>
-                                                        {/foreach}
-                                                    </ul>
-                                                    <div class="double_offer checkbox">
-                                                        <label>
-                                                            <input type="checkbox" data-group="jailbreak" name="get-40off">
-                                                            Get the 2nd plan with <span>40% OFF!</span>
-                                                        </label>
-                                                    </div>
-
-                                                    <button class="btn btn-default ga-action-click"
-                                                            ga-action ="click"
-                                                            ga-category="iphone-tracking-software"
-                                                            ga-label="buy jailbreak"
-                                                            value="true" type="submit" name="price[submit]">Buy Now</button>
-                                                  <!--   <div class="show_premium_features"><a href="#">Show Premium features</a>
-                                                    </div> -->
-                                                </form>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
                             <div class="list-group list-group-bg">
                                 <ul >
                                   <li href="#" class="list-group-item text-center">
-                                    <h4 class="list-group-item-heading"><i class="icons ico-cloud"></i> iCloud Solution </h4>
-                                    <div><span class="icon-apple text-success"></span> ({$ver_icloud_bot} - {$ver_icloud_up})</div>
+                                    <h4 class="list-group-item-heading"><i class="fa fa-apple"></i> iOS <span style="font-size: 16px;">(iCloud Solution)</span></h4>
                                   </li>
                                   <li href="#" class="list-group-item">
                                     <p class="list-group-item-text">
@@ -229,7 +113,7 @@
                                         <span>Simple iCloud monitoring that does not require jailbreak of the target device.</span>
                                     </p>
                                   </li>
-                                  <li href="#" class="list-group-item pc-pb60 text-center">
+                                  <li href="#" class="list-group-item pc-pb65 text-center">
                                     <a href="http://{$domain}/icloud-iphone-without-jailbreak-monitoring.html" 
                                        class="list-group-item-link a-default">Learn more<i class="icons ico-arrows"></i></a>
                                   </li>
@@ -309,7 +193,121 @@
                                     </div>
                                 </div>
                             </div>
-                            
+                            <div class="list-group">
+                                <ul >
+                                    <li href="#" class="list-group-item text-center">
+                                        <h4 class="list-group-item-heading"><i class="fa fa-unlock-alt"></i> iOS <span style="font-size: 16px;">(Jailbreak Solution)</span></h4>
+                                    </li>
+                                    <li href="#" class="list-group-item">
+                                        <p class="list-group-item-text">
+                                            <span class="title"><i class="icon-ok text-success"></i> Jailbreak - <span class="text-success">Required</span></span>
+                                            <span>You need to jailbreak the target iOS device ({$ver_ios_bot} - {$ver_jailbreak_up}) before installing <br />the app.{*You need to jailbreak the target iOS device before installing the app.*}</span>
+                                        </p>
+                                    </li>
+                                    <li href="#" class="list-group-item">
+                                        <p class="list-group-item-text">
+                                            <span class="title"><i class="icon-ok text-success"></i> Physical Access - <span class="text-success">Required</span></span>
+                                            <span>You need physical access to the target device to install the app on it.<br>&nbsp;</span>
+                                        </p>
+                                    </li>
+                                    <li href="#" class="list-group-item">
+                                        <p class="list-group-item-text">
+                                            <span class="title"><i class="icon-eye text-success"></i> The app is <span class="text-success">Visible</span></span>
+                                            <span>Pumpic is visible on the target device. However, to disable it, change settings, or delete the app a secret code is required.</span>
+                                        </p>
+                                    </li>
+                                    <li href="#" class="list-group-item">
+                                        <p class="list-group-item-text">
+                                            <span class="title"><i class="icon-cancel text-gray"></i> iCloud Password - <span class="text-gray">Not Required</span></span>
+                                            <span>You do not need to know the iCloud password of the target iOS device.</span>
+                                        </p>
+                                    </li>
+                                    <li href="#" class="list-group-item">
+                                        <p class="list-group-item-text">
+                                            <span class="title"><label class='block-number'>23</label> Monitoring features</span>
+                                            <span>Multi-featured real-time <a class="a-default" target="_blank" href="/how-to-setup-parental-controls-on-iphone.html">iOS monitoring</a> with filtering and blocking options.</span>
+                                        </p>
+                                    </li>
+                                    <li href="#" class="list-group-item pc-pb65 text-center">
+                                        <a href="http://{$domain}/iphone-with-jailbreak-monitoring.html"
+                                           class="list-group-item-link a-default">Learn more<i class="icons ico-arrows"></i></a>
+                                    </li>
+                                </ul>
+                                <div class="row-pricing-panel">
+                                    <div class="premium_wr" style="">
+                                        <div class="premium_h">
+                                            Jailbreak Solution
+                                        </div>
+                                        <div class="pricep border-right-sm {*border-right-ddd*}">
+                                            <div class="dtable">
+                                                <div class="dtable-cell">
+                                                    <div class="wrapper_pack">
+                                                        <div class="wr_pack_premium wr_icloud_jb _single-pack-jailbreak" style="margin-top: 12px;"></div>
+                                                        <div class="wr_pack_double_premium wr_icloud_jb-double _double-pack-jailbreak"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="dtable-cell">
+                                                    <div class="wr_price_big">
+                                                        <span></span>
+                                                        <div class="box-currence">
+                                                            <div class="symbol" attr-iso="usd">$</div>
+                                                            <div class="curr" id="jailbreak-price-per-month">{$getDefaultiosJailbreak}</div>
+                                                        </div><span>/ month</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="list_price">
+                                                <form name="price_premium" method="POST" action="/buy.html" class="buy-form-with-offer" autocomplete="off">
+                                                    <input id='product_price_premium1' type='hidden' name='price[productID]' value='{if isset($getDefaultiosJailbreak)}{$getDefaultiosJailbreak}{else}0{/if}' class="product_price"/>
+
+                                                    <ul>
+                                                        {foreach from=$getProducts.iosJailbreak key=key item=item}
+                                                            <li>
+                                                                <label class="label_radio hover_label_radio {if $item.period == '12'}r_on{else}r_off{/if}">
+                                                                    <input class="data-price" data-target="#jailbreak-price-per-month" data-cur="usd" data-price-usd="{$item.price}" data-offer-price-usd="{$getProducts.iosJailbreakDouble[$key].price}" data-period="{$item.period}" data-product="{$item.id}" data-offer-product="{$getProducts.iosJailbreakDouble[$key].id}" data-group="jailbreak"  name="optionsRadios" id="optionsRadios{$item.id}1" value="{$item.id}" type="radio"{if $item.period == '12'} checked="checked"{/if} />
+                                                                    <span class="sp">
+                                                                        <strong>{$item.period}</strong> {if $item.period == 1}month{else}months{/if}
+                                                                    </span>
+
+                                                                    <div class="box-small-package">
+                                                                        <div class="offer_old_price"><div class="box-currence strike__currence"><div class="symbol" attr-iso="usd">$</div><div class="curr">{$item.price * 2|string_format:"%.2f"}</div></div></div>
+                                                                    </div>
+
+                                                                    <div class="package_price">
+                                                                        <strong>
+                                                                            <div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr">{$item.price}</div></div>
+                                                                        </strong>
+                                                                    </div>
+                                                                    <div class="package_offer_price">
+                                                                        <strong>
+                                                                            <div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr">{$getProducts.iosJailbreakDouble[$key].price}</div></div>
+                                                                        </strong>
+                                                                    </div>
+                                                                </label>
+                                                            </li>
+                                                        {/foreach}
+                                                    </ul>
+                                                    <div class="double_offer checkbox">
+                                                        <label>
+                                                            <input type="checkbox" data-group="jailbreak" name="get-40off">
+                                                            Get the 2nd plan with <span>40% OFF!</span>
+                                                        </label>
+                                                    </div>
+
+                                                    <button class="btn btn-default ga-action-click"
+                                                            ga-action ="click"
+                                                            ga-category="iphone-tracking-software"
+                                                            ga-label="buy jailbreak"
+                                                            value="true" type="submit" name="price[submit]">Buy Now</button>
+                                                    <!--   <div class="show_premium_features"><a href="#">Show Premium features</a>
+                                                      </div> -->
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                 </div>
                 <div class="row text-center">

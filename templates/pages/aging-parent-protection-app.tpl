@@ -46,6 +46,9 @@
             promoBuyBlock = "no"
             planPackageBuy = "yes"
             block_video = "no"
+            Apple = "yes"
+            Icloud = "yes"
+            Android = "yes"
         }
 
         {include file='../includes/content/plans.tpl' }

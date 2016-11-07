@@ -7,6 +7,7 @@
         
 {include file='../../includes/main/header/wrap-title-footer.tpl'}
 <body>
+
     <!-- BLOCK GTM -->
     {include file='../../includes/main/main-after-body.tpl'}
     <!-- END BLOCK GTM -->
@@ -71,36 +72,37 @@
                                                             <a class="img_thumb" href="/compatibility/{$phone.uri_name}/" {*target="_blank"*} >
                                                                 <img height="202" width="90" alt="{$phone.name}" title="{$phone.name}" src="//{$api_device._domain}/{$api_device.path_img}/{$phone.m_img}">
                                                             </a>
-                                                            <div class="caption">
+                                                            <div class="caption" style="font-size: 13px;{if $phone.os  == "Android"}height:90px;{/if}">
                                                                 <h3><a class='a-default' href="/compatibility/{$phone.uri_name}/" {*target="_blank"*}>{$phone.name}</a></h3>
-                                                                <span>OS: <strong>{if $phone.os  == "iOS"}iOS (with jailbreak) {else}{$phone.os}{/if}</strong></span>
-                                                                <span>Versions: <strong>{$phone.version}</strong></span>
-
-
-
-
                                                                 {if $phone.os  == "iOS"}
                                                                     {if $phone.name  == "Apple iPhone 4"}
-                                                                        <section style="padding-top: 7px">
-                                                                            <span>OS: <strong>{if $phone.os  == "iOS"}iOS iCloud {else}{$phone.os}{/if} </strong></span>
-                                                                            <span>Versions:<strong> {$ver_icloud_bot} - 7.1.2 </strong></span>
+                                                                        <section>
+                                                                            <span><strong>{if $phone.os  == "iOS"}iOS{else}{$phone.os}{/if} </strong>
+                                                                                {if $phone.os == "iOS"}(iCloud) <b>{$ver_icloud_bot} -7.1.2</b>{/if}</span>
                                                                         </section>
 
                                                                     {elseif $phone.name  == "Apple iPhone 3GS" || $phone.name  == "Apple iPod touch 4th"}
 
-                                                                        <section style="padding-top: 7px">
-                                                                            <span>OS: <strong>{if $phone.os  == "iOS"}iOS iCloud {else}{$phone.os}{/if} </strong></span>
-                                                                            <span>Versions:<strong> {$ver_icloud_bot} - 6.1.6 </strong></span>
+                                                                        <section>
+                                                                            <span><strong>{if $phone.os  == "iOS"}iOS{else}{$phone.os}{/if} </strong>
+                                                                                {if $phone.os == "iOS"}(iCloud) <b>{$ver_icloud_bot} - 6.1.6</b>{/if}</span>
                                                                         </section>
 
                                                                     {else}
 
-                                                                        <section style="padding-top: 7px">
-                                                                            <span>OS: <strong>{if $phone.os  == "iOS"}iOS iCloud {else}{$phone.os}{/if} </strong></span>
-                                                                            <span>Versions:<strong> {$ver_icloud_bot} - {$ver_icloud_up}</strong></span>
+                                                                        <section>
+                                                                            <span><strong>{if $phone.os  == "iOS"}iOS{else}{$phone.os}{/if} </strong> {if $phone.os  == "iOS"}(iCloud) <b>{$ver_icloud_bot} - {$ver_icloud_up}</b>{/if}</span>
                                                                         </section>
                                                                     {/if}
                                                                 {/if}
+                                                                {if $phone.os  == "iOS"}<span style="padding-top: 7px;"><strong>iOS</strong> (jailbreak) <b>{$phone.version}</b>
+                                                                    {else}
+                                                                    <span>
+                                                                    <b>{$phone.os} {$ver_android_bot} - {$ver_android_up}</b>
+                                                                    </span>
+                                                                    {/if}
+
+
 
 
 

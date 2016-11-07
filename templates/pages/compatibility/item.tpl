@@ -84,14 +84,14 @@
                         {if $getSetting._item.os  == "iOS"}
                             <div class="row">
                                 <div class="col-sm-offset-3 col-sm-6">
-                                    <p style="font-size: 16px; color: #4d4f5b; text-align: center;">Choose your <i class="icon-apple filter_icon"></i> iOS solution type to see supported features</p>
+                                    <p style="font-size: 16px; color: #4d4f5b; text-align: center;">Choose your <i class="fa fa-apple filter_icon"></i> iOS solution type to see supported features</p>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-sm-offset-3 col-sm-6">
                                     <div class="filter_fe" style="margin-bottom: 30px;">
                                         <ul class="filter_list">
-                                            <li class="_filter-btn filter_item filter-active"><i class="icon-apple filter_icon"></i><b>iOS</b> <span class="filter_version"> (iCloud solution)</span></li>
+                                            <li class="_filter-btn filter_item filter-active"><i class="fa fa-apple filter_icon"></i><b>iOS</b> <span class="filter_version"> (iCloud solution)</span></li>
                                             <li class="_filter-btn filter_item"><i class="fa fa-unlock-alt filter_icon"></i><b>iOS</b> <span class="filter_version"> (jailbreak solution)</span></li>
                                         </ul>
                                     </div>
@@ -134,15 +134,23 @@
                                     <div class="img_thumb">
                                         <img src="http://{$getSetting.api._domain}/{$getSetting.api.path_img}/{$getSetting._item.m_img}" height="202" width="90" alt="">
                                     </div>
-
+                                    {if $getSetting._item.os  == "iOS"}
                                     <div class="caption init-height">
                                         <section class="text-center" data-filter="jailbreak">
 
-                                            <span>OS: <strong>{if $getSetting._item.os  == "iOS"}iOS (with jailbreak) {else}{$getSetting._item.os}{/if} </strong></span>
+                                            <span>OS: <strong>iOS (with jailbreak)  </strong></span>
                                             <span >Versions:<strong> {$getSetting._item.version}</strong></span>
 
                                         </section>
+                                        {elseif $getSetting._item.os  == "Android"}
+                                        <div class="caption init-height">
+                                            <section class="text-center">
 
+                                                <span>OS: <strong>{$getSetting._item.os}</strong></span>
+                                                <span >Versions:<strong> {$ver_android_bot} - {$ver_android_up}</strong></span>
+
+                                            </section>
+                                        {/if}
 
                                         {if $getSetting._item.os  == "iOS"}
                                             {if $getSetting._item.name  == "Apple iPhone 4"}

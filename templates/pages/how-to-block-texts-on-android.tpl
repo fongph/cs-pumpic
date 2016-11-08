@@ -226,21 +226,21 @@
                     <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
                             <img src="{$img}/testimonials/andrea-l-16-2.png" alt="" class="testimonial-photo">
                             <div class="testimonial-text">
-                                    <h4>Andrea L. – mother of 16-year-old son</h4>
+                                    <h4>Kari J. – mother of 16-year-old son</h4>
                                     <p>“Watching my son spending most of his time with his tablet, I needed to make sure he is safe there, online. Teenagers don't share all their problems with parents, but I just wanted to make sure everything is fine in his life. I've learned about Pumpic from a friend of mine. She once showed me how to block texts on Android, her son has one. And I got curious. After that sexting scandal in Colorado, I wanted to be armed when dealing with my teenager and his phone.”</p>
                             </div>
                     </div>
                     <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
                             <img src="{$img}/testimonials/martin-s-12-2.png" alt="" class="testimonial-photo">
                             <div class="testimonial-text">
-                                    <h4>Martin S. – father of 12-year-old daughter</h4>
+                                    <h4>Melvin N. – father of 12-year-old daughter</h4>
                                     <p>“My little girl is naturally so curious about everything and, surprisingly, about technology. She sometimes accidentally changes some settings in the phone, so I decided to prevent some other accidental and inappropriate discoveries by installing Pumpic. Cause, you know, an innocent search online can result in really explicit content. So, I block potential harm like links to 18+ sites and games. And besides, I teach her a great deal of time management, restricting how long she plays Angry Birds and watches cartoons. I allow her to doodle as much as she wants, though.”</p>
                             </div>
                     </div>
                     <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
                             <img src="{$img}/testimonials/miranda-p-12.png" alt="" class="testimonial-photo">
                             <div class="testimonial-text">
-                                    <h4>Miranda P. – mother of 14-year-old son</h4>
+                                    <h4>Erin B. – mother of 14-year-old son</h4>
                                     <p>“My husband got Pumpic and we decided that it needed to be tried and tested before we buy a long-term subscription. Well, I was really astonished by all the options, like monitoring Messenger, Snapchat, and video games. We thought something was wrong with our son. He spent so much time doing homework, but still was doing not so good at school. Well, in fact, he was playing on his phone half the time he said he was studying.”</p>
                             </div>
                     </div>

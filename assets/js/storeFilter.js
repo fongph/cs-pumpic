@@ -57,21 +57,24 @@ $(document).ready(function() {
 	// 	}
 	var toggleStorePages = function() {
 	var hash = window.location.hash;
-		if(hash) {
-			$('.filter_list li.filter-active').removeClass('filter-active');
 			if(hash.indexOf('#jailbreak') != -1) {
+				if($iosJbBtn.length) {
+				$('.filter_list li.filter-active').removeClass('filter-active');
 				$iosJbBtn.addClass('filter-active');
 				var iosJbBlock = $('th').find('[data-info-block='+ prods.iosJb +']')
 				toggleProdList(prodList.iosJb);
 				toggleProdList(iosJbBlock);
+				}
 			}
 			if(hash.indexOf('#android') != -1 ) {
+				if($andrBtn.length) {
+				$('.filter_list li.filter-active').removeClass('filter-active');
 				$andrBtn.addClass('filter-active');
 				var androidBlock = $('th').find('[data-info-block='+ prods.android +']')
 				toggleProdList(prodList.android);
 				toggleProdList(androidBlock);
+				}
 			}
-		}
 	}();
 	});
 

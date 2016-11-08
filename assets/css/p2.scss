@@ -874,6 +874,7 @@ form > table.pricing-second {
      &:after {
        content: '';
        position: absolute;
+       z-index: 100;
        top: 99%;
        left: 0;
        right: 0;

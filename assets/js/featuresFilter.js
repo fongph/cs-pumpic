@@ -11,5 +11,20 @@ $(function () {
 		filterItems.show();
 		}
 	});
-	 
+	
+	var toggleAllFeaturesFilter = function() {
+	var hash = window.location.hash;
+		if(hash.indexOf('#jailbreak') != -1) {
+			filterButtons.removeClass('filter-active');
+			$('[data-filter=os-jailbreak]').addClass('filter-active');
+			filterContent.hide();
+			$('[data-feature=os-jailbreak]').show();
+		} else if(hash.indexOf('#android') != -1) {
+			filterButtons.removeClass('filter-active');
+			$('[data-filter=os-android]').addClass('filter-active');
+			filterContent.hide();
+			$('[data-feature=os-android]').show();
+		}
+	}
+	toggleAllFeaturesFilter();
 });

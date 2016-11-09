@@ -145,6 +145,7 @@ RewriteRule ^compatibility\.html$ compatibility/ [L,R=301]
 RewriteRule ^learning-center/ready\-solutions\.html$ learning-center/ready\-solutions/ [L,R=301]
 RewriteRule ^limitly-parental-app/index\.html$ limitly-parental-app/ [L,R=301]
 RewriteRule ^best-spy-apps-for-android\.html$ best-spying-apps-for-android\.html [L,R=301]
+RewriteRule ^internet-safety-rules-for-kids\.html%25E2%2580%259D$ internet-safety-rules-for-kids\.html [L,R=302]
 
 RewriteCond %{REQUEST_URI} !\?
 RewriteCond %{REQUEST_URI} !\&

@@ -148,7 +148,7 @@
                             
                             <div class="actions clearfix">
                                 <div class="col-mob-12 col-xs-6 col-sm-6 col-md-6 col-lg-6 padding-null">
-                                <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="nofollow" title="Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License" class="copyright"></a>
+                                <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="nofollow" title="Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License" class="copyright"></a>
                                 </div>
                                 <div class="col-mob-12 col-xs-6 col-sm-6 col-md-6 col-lg-6 padding-null">
                                 <div class="copy-to-clipboard">Copy to clipboard</div>

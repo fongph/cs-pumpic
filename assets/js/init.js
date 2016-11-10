@@ -2147,22 +2147,22 @@ $(document).ready(function () {
     $('.box-video-constructors .block-video-button > .box-hover').hover(
             function () {
                 // console.log( $rs_width );
-                if ($rs_width > 992) // !$rs_width ||
+                if ($rs_width > 1024) // !$rs_width ||
                     $(this).find('.hover-video-buttons').show();
             }, function () {
-        if ($rs_width > 992) // !$rs_width ||
+        if ($rs_width > 1024) // !$rs_width ||
             $(this).find('.hover-video-buttons').hide();
     }
     );
 
 
-    // bootstrap clic popUp
+    // bootstrap click popUp
     if ($(".youtube").length) {
         $(".youtube").YouTubeModal({
             autoplay: 1,
             autohide: 1,
-            width: 820,
-            height: 520,
+            // width: 820,
+            // height: 520,
             theme: 'darck'
         });
     }
@@ -2539,5 +2539,4 @@ $(document).ready(function () {
     if($('input[name=get-40off]')) {
      updateCheckboxes('get-40off');
     }
-    
 });

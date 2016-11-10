@@ -20,13 +20,13 @@
       // initialize YouTube Player Modal
       if ($YouTubeModal == null) {
         $YouTubeModal = $('<div class="modal fade ' + options.cssClass + '" id="YouTubeModal" role="dialog" aria-hidden="true">');
-        var modalContent = '<div class="modal-dialog" id="YouTubeModalDialog">' +
+        var modalContent = '<div class="modal-dialog modal-video-dialog" id="YouTubeModalDialog">' +
                               '<div class="modal-content" id="YouTubeModalContent">' +
                                 '<div class="modal-header">' +
                                   '<button type="button" class="close" data-dismiss="modal">&times;</button>' +
                                   '<h4 class="modal-title" id="YouTubeModalTitle"></h4>' +
                                 '</div>' +
-                                '<div class="modal-body" id="YouTubeModalBody" style="padding:0;"></div>' +
+                                '<div class="modal-body videowrapper" id="YouTubeModalBody"></div>' +
                               '</div>' +
                             '</div>';
         $YouTubeModal.html(modalContent).hide().appendTo('body');
@@ -62,7 +62,7 @@
               setModalTitle(videoTitle);
             }
 
-            resizeModal(options.width);
+            //resizeModal(options.width);
 
             //Setup YouTube Modal
             var YouTubeURL = getYouTubeUrl(youtubeId, options);
@@ -110,7 +110,7 @@
 
   function getYouTubePlayer(URL, width, height) {
     return ['<iframe title="YouTube video player" width="', width, '" height="', height, '" ',
-      'style="margin:0; padding:0; box-sizing:border-box; border:0; -webkit-border-radius:5px; -moz-border-radius:5px; border-radius:5px; margin:', (margin - 1), 'px;" ',
+      'style="margin:0; padding:0; box-sizing:border-box; border:0; -webkit-border-radius:5px; -moz-border-radius:5px; border-radius:5px; padding:', (margin - 1), 'px;" ',
       'src="', URL, '" frameborder="0" allowfullscreen seamless></iframe>'
     ].join('');
   }

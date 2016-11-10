@@ -581,7 +581,7 @@ dl.table-rows {
 }
 
 .box-features-list-title {
-    margin: 70px 0px 125px 0px;
+    margin: 60px 0px 120px;
 }
 
 /* ---- \\ button ---- */
@@ -1585,13 +1585,25 @@ dl.table-rows {
     .list-features {
         display: block;
         .p-b-item-1 {
-            padding-bottom: 25px;
+            padding-bottom: 40px;
         }
         .p-b-item-2 {
             padding-bottom: 30px;
         }
+        .p-b-item-2-ios {
+            padding-bottom: 36px;
+        }
+        .p-b-item-1-ios {
+            padding-bottom: 60px;
+        }
+        .p-b-item-2-ios {
+            padding-bottom: 40px;
+        }
         .p-b-item-3 {
             padding-bottom: 40px;
+        }
+        .p-b-item-3-ios {
+            padding-bottom: 50px;
         }
         .p-b40 {
             padding-bottom: 20px;
@@ -1611,6 +1623,9 @@ dl.table-rows {
     }
     .i-l-features {
         padding-bottom: 50px;
+    }
+    .i-l-features-jb {
+        padding-bottom: 40px;
     }
     .bth-buttons > ul > li {
         margin-right: 30px;

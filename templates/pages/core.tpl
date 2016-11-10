@@ -434,7 +434,17 @@
         {include file='../includes/content/features-table.tpl'
                 blockBg="dark"
         }
-
+        {*
+            Template: BLOCK FEATURES TABLE NEW
+            Переменные:
+                blockBg (string): Стиль блока ( dark / light ) *default: dark
+                description (string) описание блока.
+                android = yes: отображение вкладки по-умолчанию, скрытие контента iCloud и Jailbreak от индексирования
+                jailbreak = yes: отображение вкладки по-умолчанию, скрытие контента iCloud и Android от индексирования
+        *}
+        {include file='../includes/content/features-table-new.tpl'
+        blockBg="light"
+        }
         {*
             Template: BLOCK Easy-to-Use 'ipad'
             Переменные:

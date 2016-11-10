@@ -7160,8 +7160,45 @@ div.curr {
     display: table;
   }
 }
+@media (min-width: 500px) {
+  .tab-half {
+    width: 50% !important;
+  }
+  .tab-bdr {
+    border-right: 1px solid #dbdbdb!important;
+  }
+}
+@media (max-width: 767px) {
+  #table-container .tab.tab-half {
+    width: 100%!important;
+    >ul {
+      background: #f9f9f9;
+      width: 100%;
+      border-bottom: 1px solid #dbdbdb;
+      >li {
+        max-width: 240px;
+        margin: 0 auto;
+        border: none!important;
+      }
+    }
+  }
+}
+@media (max-width: 500px) {
+  #table-container .tab.tab-half {
+    >ul {
+      >li {
+        &:first-child {
+          border-bottom: 1px solid #dbdbdb!important;
+        }
+        max-width: 100%;
+        border: none!important;
+      }
+    }
+  }
+}
 
 @media (min-width: 992px) {
+
   .block-table-mobile {
     display: none;
   }
@@ -8063,6 +8100,7 @@ ul.list_category li:first-child {
     border: 1px solid #dbdbdb;
     width: 100%;
     position: relative;
+    z-index: 1;
   }
   .tab > ul {
     margin: 0px;
@@ -8310,7 +8348,14 @@ ul.list_category li:first-child {
     }
   }
 }
-
+.col-item-12 {
+  float: left;
+  width: 100%;
+}
+.col-item-6 {
+  width: 50%;
+  float: left;
+}
 @media (min-width: 992px) {
   #table-compasion div.tab {
     border-right: 1px solid #dbdbdb;
@@ -8485,4 +8530,50 @@ ul.list_category li:first-child {
   top: -30px;
   left: 20px;
   color: #606060;
+}
+
+.filter-descr {
+  text-align: center;
+  padding: 0 0 25px;
+  border-right: 1px solid #dbdbdb;
+  border-left: 1px solid #dbdbdb;
+  border-top: 1px solid #dbdbdb;
+  border-radius: 8px 8px 0 0;
+  background-color: #f9f9f9;
+}
+.prod-head__wrapper {
+  padding-top: 28px;
+  min-height: 2em;
+}
+.filter-comment {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 14px;
+  padding-right: 10px;
+  margin-right: 6px;
+  border-right: 1px solid #c4c4c4;
+}
+
+@media (max-width: 455px) {
+  .filter-comment {
+    display: block;
+    border-right: none;
+    margin-bottom: 15px;
+  }
+}
+.videowrapper {
+  float: none;
+  clear: both;
+  width: 100%;
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 25px;
+  height: 0;
+}
+.videowrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }

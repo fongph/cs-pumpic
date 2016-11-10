@@ -87,7 +87,7 @@
                                 </ul>
                             </div>
 
-                            <div class="tab col-item-3 col-md-item-3 col-sm-item-3">
+                            <div class="tab col-item-3 col-md-item-3 col-sm-item-3 last">
                                 <ul>
                                     <li><i class="i-features-monitor-viber-whatsapp"></i> <span onclick="window.location='http://{$domain}/whatsapp-monitoring.html'">Monitor WhatsApp</span></li>
                                     <li><i class="i-features-monitor-skype"></i> <span onclick="window.location='http://{$domain}/monitor-skype.html'">Monitor Skype</span></li>

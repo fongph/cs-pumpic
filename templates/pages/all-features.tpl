@@ -195,7 +195,7 @@
                                     </li>
 
 
-                                    <li class="i-l-features p-b-item-2">
+                                    <li class="i-l-features p-b-item-2 p-b-item-2-ios">
                                         <div class="row">
                                             <div class="col-sm-2 col-md-2 col-lg-2 padding-null features-icon">
                                                 <img class="model-center" src="{$img}/technological/header/icon/icon-photos.png" width="29px" height="24px" />
@@ -213,7 +213,7 @@
 
                                     </li>
 
-                                    <li class="i-l-features p-b-item-3">
+                                    <li class="i-l-features p-b-item-3 p-b-item-3-ios">
                                         <div class="row">
                                             <div class="col-sm-2 col-md-2 col-lg-2 padding-null features-icon">
                                                 <img class="model-center" src="{$img}/technological/header/icon/icon-browser.png" width="31px" height="31px" />
@@ -786,7 +786,7 @@
                                         </ul>
                                     </div>
 
-                                    <div class="tab col-item-3 col-md-item-3 col-sm-item-3">
+                                    <div class="tab col-item-3 col-md-item-3 col-sm-item-3 last">
                                         <ul>
                                             <li>
                                                 <i class="i-features-sim-card"></i>
@@ -856,7 +856,7 @@
                                         </ul>
                                     </div>
 
-                                    <div class="tab col-item-3 col-md-item-3 col-sm-item-3">
+                                    <div class="tab col-item-3 col-md-item-3 col-sm-item-3 last">
                                         <ul>
                                             <li>
                                                 <i class="i-features-sim-card"></i>

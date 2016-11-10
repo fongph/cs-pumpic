@@ -197,7 +197,7 @@
             height: 42px;
             list-style: none;
             border-bottom: 1px solid #dbdbdb;
-            padding: 12px 24px;
+            padding: 12px;
             color: #4d4f5b;
             font-family: "Open Sans", Helvetica, Arial, sans-serif;
             font-size: 13px;
@@ -237,7 +237,7 @@
     }
     #table-container {
         .tab > ul > li:last-child {
-            border-bottom: 1px solid #dbdbdb !important;
+            border-bottom: 1px solid #dbdbdb;
         }
         div.tab {
             border-right: none;
@@ -271,7 +271,7 @@
             border-right: none;
         }
         .tab > ul > li:last-child {
-            border-bottom: 1px solid #dbdbdb !important;
+            border-bottom: 1px solid #dbdbdb;
         }
         section {
             border-bottom: none;
@@ -288,14 +288,9 @@
     }
 }
 
-@media (min-width: 500px) {
-    #table-container div.tab {
-        border-right: 1px solid #dbdbdb;
-    }
-    .col-sm-item-3 {
-        width: 50%;
-    }
-    #table-container .tab:last-child {
+
+@media (max-width: 767px) {
+    #table-container .tab.last {
         width: 100%;
         border-right: none;
         > ul > li {
@@ -307,7 +302,48 @@
         }
     }
 }
+#table-container .tab.last-one {
+    width: 100%;
+        > ul {
+            background: #f9f9f9;
+            width: 100%;
+            border-bottom: 1px solid #dbdbdb;
+            > li {
+                max-width: 240px;
+                margin: 0 auto;
+                border: none !important;
+            }
+    }
+}
+@media (max-width: 500px) {
+    #table-container .tab.last-one>ul {
+        >li {
+            max-width: 100%;
+            &:first-child {
+                border-bottom: 1px solid #dbdbdb!important;
+            }
+        }
+    }
+}
+@media (max-width: 500px) {
 
+    #table-container .tab.last {
+        > ul > li {
+            width: 100%;
+            &:nth-child(2n) {
+                border-left: none;
+            }
+        }
+    }
+}
+@media (min-width: 500px) {
+    #table-container div.tab {
+        border-right: 1px solid #dbdbdb;
+    }
+    .col-sm-item-3 {
+        width: 50%;
+    }
+}
 /* -- // col-item */
 @media (min-width: 768px) {
     .table-sm-col-5 {
@@ -330,7 +366,7 @@
                 width: 33.33333333%;
             }
             > ul > li:last-child {
-                border-bottom: 1px solid #dbdbdb !important;
+                border-bottom: 1px solid #dbdbdb;
             }
         }
         section {

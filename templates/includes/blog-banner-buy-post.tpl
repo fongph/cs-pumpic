@@ -12,8 +12,11 @@
 
 <div class="thumb_sidebar banner1 banner2">
     <div class='caption'>
+        <p class="headline-text">
+            is your kid safe on-line?
+        </p>
         <p class='buttons'>
-            <a href="http://pumpic.com/store.html" class='btn btn-default btn-banner-red'>Start Now</a>
+            <a href="http://pumpic.com/store.html" class='btn btn-default btn-banner-yellow'>Tell Me</a>
         </p>
     </div> <!-- .caption -->
 </div> 

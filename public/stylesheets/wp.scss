@@ -12041,6 +12041,8 @@ fieldset[disabled] .button-red.active {
 
 .banner2 {
   height: 276px;
+  padding-top: 45px;
+  padding-left: 20px;
   background-color: #4d4f5b;
   background-image: url('../images/blog_banners/banner_2.png');
   background-repeat: no-repeat;
@@ -12052,6 +12054,22 @@ fieldset[disabled] .button-red.active {
     min-height: 46px;
     text-transform: none;
     padding: 8px;
+  }
+  .btn-banner-yellow {
+    background-color: #ffc72f;
+    color: #373737;
+    font-weight: normal;
+  }
+  .caption {
+    .headline-text {
+      font-size: 30px;
+      font-weight: 600;
+      max-width: 140px;
+      text-align: left;
+      line-height: 1.2;
+      color: #fff;
+      text-transform: uppercase;
+    }
   }
 }
 
@@ -12078,7 +12096,7 @@ fieldset[disabled] .button-red.active {
 .banner2 .buttons {
   bottom: 0px;
   position: absolute;
-  margin-bottom: 38px;
+  margin-bottom: 30px;
 }
 
 #box-content-post {
@@ -18098,19 +18116,26 @@ ul.list-image-v1 {
   padding: 10px 0 10px 0;
   clear: both;
 }
-
+.should-keep {
+  .box-wp-banner {
+    max-width: 100%;
+    //margin: 0 auto;
+  }
+}
 #children-safe {
   display: inline-block;
-  width: 280px;
+  width: 195px;
   position: relative;
-  top: -15px;
+  vertical-align: top;
+  //top: -15px;
   p {
     color: #fff;
+    max-width: 195px;
+    margin: 5px auto 0;
     text-align: center;
-    font-size: 24px;
-    line-height: 1.4em;
+    font-size: 23px;
+    line-height: 1.3em;
     font-weight: 300;
-    text-transform: uppercase;
   }
 }
 
@@ -18128,7 +18153,21 @@ ul.list-image-v1 {
     font-weight: 300;
   }
 }
-
+.block-price.block-banner {
+  padding-top: 15px;
+  padding-bottom: 0;
+  #basic {
+    vertical-align: bottom;
+    width: 185px;
+    margin-right: 10px;
+  }
+  #premium {
+    margin-left: 15px;
+    margin-bottom: 3%;
+    width: 160px;
+    vertical-align: middle;
+  }
+}
 .block-price {
   #basic > .price_both sub, #premium > .price_both sub {
     font-size: 11px;
@@ -18188,6 +18227,17 @@ ul.list-image-v1 {
   background-clip: padding-box;
 }
 
+.btn-wrapper {
+  height: 80px;
+  .btn-sale {
+    padding: 10px;
+    height: 33px;
+    width: 100%;
+    &:first-child {
+      margin-bottom: 10px;
+    }
+  }
+}
 .btn-demo {
   color: #fff;
   border: none;

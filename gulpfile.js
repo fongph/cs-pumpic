@@ -134,6 +134,7 @@ gulp.task('browser-sync', function() {
 
 gulp.task('watch', function() {
     gulp.watch(path.dev.sass_watch, ['sass']);
+    gulp.watch(path.dev.sass_wp, ['sass-wp']);
     gulp.watch(path.public.sass_wp, ['sass-wp-dev']);
     gulp.watch(path.dev.js, ['js-dev']);
     gulp.watch(path.dev.tpl).on('change', browserSync.reload)
@@ -147,6 +148,7 @@ gulp.task('uncss', function () {
         .pipe(gulp.dest('out'));
 });
 
-gulp.task('dev', ['browser-sync', 'watch']);
+
+gulp.task('dev', ['watch']);
 
 gulp.task('default', ['sass', 'sass-wp', 'js-min']);

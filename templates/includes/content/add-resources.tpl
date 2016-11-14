@@ -25,7 +25,7 @@
                                                     </li>
 
                                                     <li>
-                                                    <a href="https://cp.pumpic.com/instructions/rooting-android">
+                                                    <a href="https://cp.pumpic.com/instructions/rooting-android.html">
                                                     What is Rooting for Android devices?
                                                     </a>
                                                     </li>

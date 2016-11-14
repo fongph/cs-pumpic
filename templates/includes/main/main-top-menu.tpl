@@ -68,9 +68,11 @@
                                 {if isset($show_control_panel_link) && $show_control_panel_link}
                                     <li>
                                         {if ''|hasUser}
+                                            {*<a href="https://cp.{$domain}/">Control Panel</a>*}
                                             <a href="https://cp.{$domain}/">Control Panel</a>
                                         {else}
-                                            <a href="{if ''|detectedDev}/login.html{else}#{/if}">Sign in</a>
+                                            <a href="https://cp.{$domain}/">Sign in</a>
+                                            {*<a href="{if ''|detectedDev}/login.html{else}#{/if}">Sign in</a>*}
                                         {/if}
 
                                     </li>

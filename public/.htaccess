@@ -140,6 +140,7 @@ RewriteRule ^compatibility/samsung\-i9300\-galaxy\-s\-iii\-\(s3\)/$ compatibilit
 
 RewriteRule ^pricing\.html$ store\.html [L,R=301]
 RewriteRule ^index\.html$ http://pumpic.com/ [L,R=301]
+RewriteRule ^login\.html$ https://cp.pumpic.com/ [L,R=301]
 RewriteRule ^features\.html$ all-features\.html [L,R=301]
 RewriteRule ^compatibility\.html$ compatibility/ [L,R=301]
 RewriteRule ^learning-center/ready\-solutions\.html$ learning-center/ready\-solutions/ [L,R=301]

@@ -91,7 +91,7 @@
                         <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
                             <h3 class="weight-normal"><i class="icons icon-buy"></i>  Buy</h3>
                             <p>
-                                iCloud solution is available with the <b>Premium subscription</b> only.
+                                Purchase the <b>iCloud Solution</b> subscription.
                             </p>
                             <p>
                                Soon after submitting the payment, you will receive <b>an email</b>.

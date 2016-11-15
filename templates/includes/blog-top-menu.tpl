@@ -26,7 +26,7 @@
                                                                 <a href="https://cp.pumpic.com/" class="btn btn-sm btn-success visible-lg cp-login"><i class="icon-lock"></i>Control Panel</a>
                                                             </div>    
                                                         <?php else: ?>
-                                                            <a href="<?php echo getStaticUrl();?>/login.html" class="btn btn-sm btn-success pull-right visible-lg cp-login"><i class="icon-lock"></i> Log In</a>
+                                                            <a href="https://cp.pumpic.com/" class="btn btn-sm btn-success pull-right visible-lg cp-login"><i class="icon-lock"></i> Log In</a>
                                                         <?php endif; */ ?>
                                                         
 							<!-- <a href="<?php echo getStaticUrl();?>/login.html" class="btn btn-sm btn-success pull-right visible-lg"><i class="icon-lock"></i> Log In</a> -->
@@ -68,7 +68,7 @@
                                                                             <?php if (hasUser()) : ?> 
                                                                                 <a href="https://cp.pumpic.com/" class="btn btn-sm btn-success hidden-lg cp-login"><i class="icon-lock"></i> Control Panel</a>
                                                                             <?php else: ?>
-                                                                                <a href="<?php echo getStaticUrl();?>/login.html" class="btn btn-sm btn-success hidden-lg cp-login"><i class="icon-lock"></i> Log In</a>
+                                                                                <a href="https://cp.pumpic.com/" class="btn btn-sm btn-success hidden-lg cp-login"><i class="icon-lock"></i> Log In</a>
                                                                             <?php endif; ?>   
 
                                                                         </li>
@@ -78,7 +78,7 @@
                                                                             <?php if (hasUser()) : ?>
                                                                                 <a href="https://cp.pumpic.com/">Control Panel</a>
                                                                             <?php else: ?>
-                                                                                <a href="<?php echo getStaticUrl();?>/login.html">Sign in</a>
+                                                                                <a href="https://cp.pumpic.com/">Sign in</a>
                                                                             <?php endif; ?>   
 
                                                                         </li>

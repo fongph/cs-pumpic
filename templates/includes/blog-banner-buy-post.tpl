@@ -16,7 +16,7 @@
             is your kid safe on-line?
         </p>
         <p class='buttons'>
-            <a href="http://pumpic.com/store.html" class='btn btn-default btn-banner-yellow'>Tell Me</a>
+            <a href="http://pumpic.com/store.html" class="btn btn-default btn-banner-yellow ga-action-click" ga-category="blog" ga-action="click" ga-label="tell_me">Tell Me</a>
         </p>
     </div> <!-- .caption -->
 </div> 

@@ -12050,15 +12050,18 @@ fieldset[disabled] .button-red.active {
   .btn {
     font-size: 22px;
     margin-left: 20px;
-    min-width: 142px;
+    //min-width: 142px;
     min-height: 46px;
     text-transform: none;
     padding: 8px;
   }
   .btn-banner-yellow {
-    background-color: #ffc72f;
+    background: #ffc72f;
     color: #373737;
     font-weight: normal;
+    &:hover {
+      background: lighten(#ffc72f, 12%);
+     }
   }
   .caption {
     .headline-text {
@@ -12075,7 +12078,7 @@ fieldset[disabled] .button-red.active {
 
 @media only screen and (max-width: 991px) {
   .banner1, .banner2 {
-    width: 300px;
+    width: 290px;
     margin: 0 auto;
   }
   .feature_list {
@@ -18139,6 +18142,23 @@ ul.list-image-v1 {
   }
 }
 
+@media (max-width: 610px) {
+  .box-wp-banner .block-price.block-banner {
+    #basic {
+      display: none;
+    }
+    #premium {
+      margin-left: 0;
+    }
+    #children-safe {
+      padding-top: 0;
+      p {
+        margin-top: 0;
+      }
+    }
+  }
+
+}
 .box-wp-banner .block-price #basic > .package-basic, .package-basic {
   background: url('../images/wp/basic-v3.png') no-repeat;
 }

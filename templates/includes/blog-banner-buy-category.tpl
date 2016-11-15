@@ -10,6 +10,7 @@
         </p>
     </div> <!-- .caption -->
 </div>*/ ?>
+
 <div class="thumb_sidebar banner1 banner2">
     <div class='caption'>
         <p class="headline-text">
@@ -19,4 +20,4 @@
             <a href="http://pumpic.com/store.html" class="btn btn-default btn-banner-yellow ga-action-click" ga-category="blog" ga-action="click" ga-label="tell_me">Tell Me</a>
         </p>
     </div> <!-- .caption -->
-</div> 
+</div>

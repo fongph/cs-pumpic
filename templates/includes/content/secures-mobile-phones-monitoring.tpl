@@ -4,7 +4,7 @@
                 <div class="row">
                         <div class="col-sm-4 col-md-4 col-lg-4">
                                 <div class="feature">
-                                        <img src="{$img}/icons/icon-mobile-secure.gif" alt="">
+                                        <img src="{$img}/icons/icon-mobile-secure.png" alt="">
                                         <h3>Monitor mobile phone usage</h3>
                                         <ul class="feature_list">
                                                 <li>Track calls and text messages</li>
@@ -15,7 +15,7 @@
                         </div>
                         <div class="col-sm-4 col-md-4 col-lg-4">
                                 <div class="feature">
-                                        <img src="{$img}/icons/icon-online-activity.gif" alt="">
+                                        <img src="{$img}/icons/icon-online-activity.png" alt="">
                                         <h3>Follow online activity</h3>
                                         <ul class="feature_list">
                                                 <li>Monitor browsing history</li>
@@ -26,7 +26,7 @@
                         </div>
                         <div class="col-sm-4 col-md-4 col-lg-4">
                                 <div class="feature">
-                                        <img src="{$img}/icons/icon-track-kids.gif" alt="">
+                                        <img src="{$img}/icons/icon-track-kids.png" alt="">
                                         <h3>Control the device remotely</h3>
                                         <ul class="feature_list">
                                                 <li>Use SMS commands to control</li>

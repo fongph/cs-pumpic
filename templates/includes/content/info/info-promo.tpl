@@ -84,7 +84,6 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <a href="mailto:?subject=You%E2%80%99ve%20got%20to%20see%20this&body=Hi%0D%0AHere%27s%20a%20deal%20that%20might%20interest%20you.%20I%20use%20Pumpic%20app%20to%20monitor%20my%20kid%27s%20phone.%20In%20short%2C%20you%20can%20track%20kid%27s%20calls%2C%20SMS%2C%20online%20chats%2C%20location%2C%20browsing%20history%2C%20etc.%0D%0ANow%2C%20you%20can%20get%20a%20free%207-days%20trial%2C%20and%20then%20buy%20any%20subscription%20with%2010%25%20OFF.%20You%27ll%20just%20need%20to%20enter%20the%20code%20PUMPIC10%20while%20making%20a%20purchase%20in%20the%20Store%20%28pumpic.com%2Fstore.html%29.%0D%0AIf%20you%20have%20any%20questions%20-%20talk%20to%20their%20Support%20%28support%40pumpic.com%29%2C%20they%27re%20really%20helpful.">Share with a friend!</a>
                                 {else}
                                     <p class="header-info-descriptions" {if isset($descriptionSize)} style="font-size: {$descriptionSize};"{/if} >
                                         {if isset($description)}

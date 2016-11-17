@@ -27,7 +27,7 @@ const path = {
         sass: './assets/css/frontend.scss',
         sass_wp:'./public/stylesheets/wp.scss',
         sass_watch: './assets/css/**/*.scss',
-        img: './public/images/**/*.{jpg,jpeg,png}'
+        img: './public/images/**/*'
     },
 
     public: {
@@ -39,14 +39,14 @@ const path = {
 
 
 gulp.task('images-min', function () {
-    gulp.src(dev.img)
+    gulp.src(path.dev.img)
         .pipe(imagemin({
             progressive: true,
             svgoPlugins: [{removeViewBox: false}],
             use: [pngquant()],
             interlaced: true
         }))
-        .pipe(gulp.dest(public.img))
+        .pipe(gulp.dest(path.public.img))
 });
 
 
@@ -133,11 +133,10 @@ gulp.task('browser-sync', function() {
 
 
 gulp.task('watch', function() {
-    gulp.watch(path.dev.sass_watch, ['sass']);
-    gulp.watch(path.dev.sass_wp, ['sass-wp']);
-    gulp.watch(path.public.sass_wp, ['sass-wp-dev']);
+    gulp.watch(path.dev.sass_watch, ['sass-dev']);
+    gulp.watch(path.dev.sass_wp, ['sass-wp-dev']);
     gulp.watch(path.dev.js, ['js-dev']);
-    gulp.watch(path.dev.tpl).on('change', browserSync.reload)
+    //gulp.watch(path.dev.tpl).on('change', browserSync.reload)
 });
 
 gulp.task('uncss', function () {

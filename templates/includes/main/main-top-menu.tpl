@@ -103,6 +103,7 @@
                     <!-- /.navbar-collapse -->
                 </nav>
             </div>
+            {*<div id="snow"></div>*}
         </div>
     </div>
 </div>

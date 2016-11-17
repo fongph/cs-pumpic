@@ -38,27 +38,8 @@
                                             <div class="block-video-button">
                                                 <div class="video-arrows-v2"></div>
                                                 <div class="box-hover">
-                                                    <a class="youtube" href="{$block_video_src}" rel="nofollow"
-                                                            {*data-toggle="modal" *}
-
-                                                            {*data-src="{$block_video_src}"
-                                                            data-height="520"
-                                                            data-width="820"*}
-
-                                                            {*data-target="#myModal"*} id="openBtnVideo">
-                                                        {* if $typeVideoImg == "standart" || !isset($typeVideoImg) *}
-                                                        {*<img src="{$img}/video/video-button-play.png" class="video-buttons" />*}
+                                                    <a class="youtube" href="{$block_video_src}" rel="nofollow">
                                                         <img src="{$img}/video/button_shadows.png" class="video-buttons-v2" />
-                                                        {* /if *}
-                                                        {*{if $typeVideoImg == "black_orange"}
-                                                            <img src="{$img}/video/arrows_black_orange.png" class="video-buttons" />
-                                                        {/if}
-                                                        {if $typeVideoImg == "orange"}
-                                                            <img src="{$img}/video/arrows_orange.png" class="video-buttons" />
-                                                        {/if}
-                                                        {if $typeVideoImg == "yellow"}
-                                                            <img src="{$img}/video/arrows_yellow.png" class="video-buttons" />
-                                                        {/if}*}
                                                         <img src="{$img}/video/hover-video-button-play.png" class="hover-video-buttons" />
                                                     </a>
                                                 </div>
@@ -115,7 +96,7 @@
                                     </p>
                                 {/if}
 
-                                <ul class="compatibility compatibility-lg">
+                                {*<ul class="compatibility compatibility-lg">*}
                                     <ul class="compatibility compatibility-lg">
 
                                         {if !isset($Icloud) || $Icloud != "no"}
@@ -168,14 +149,14 @@
                                     </ul>
 
                                     {if isset($block_video) && $block_video == "yes" && isset($block_video_src) && $block_video_src != ""}
-                                        <section class="mobile-block">
+                                        <div class="mobile-block">
                                             <div class="watch-about">
                                                 <span class="play-button">
                                                 <span></span>
                                                  </span>
-                                                <a class="youtube youtube-link" href="https://www.youtube.com/embed/Atg0CbaytAY" rel="nofollow" id="openBtnVideo">watch about pumpic</a>
+                                                <a class="youtube youtube-link" href="https://www.youtube.com/embed/Atg0CbaytAY" rel="nofollow">watch about pumpic</a>
                                             </div>
-                                        </section>
+                                        </div>
                                     {/if}
 
 
@@ -313,8 +294,7 @@
                                         <div class="video-arrows-v2 pc-version"></div>
                                         <div class="mobile-video-arrows"></div>
                                         <div class="box-hover">
-                                            <a class="youtube" href="{$block_video_src}" rel="nofollow"
-                                               id="openBtnVideo">
+                                            <a class="youtube" href="{$block_video_src}" rel="nofollow">
                                                 <img src="{$img}/video/button_shadows.png" class="video-buttons-v2" />
                                                 <img src="{$img}/video/hover-video-button-play.png" class="hover-video-buttons" />
                                             </a>
@@ -351,8 +331,7 @@
                                     <div id="mobile-block-video" class="row">
                                         <div class="mobile-block-video-button">
                                             <div class="mobile-video-arrows"></div>
-                                            <a class="youtube" href="{$block_video_src}" rel="nofollow"
-                                               id="openBtnVideo">
+                                            <a class="youtube" href="{$block_video_src}" rel="nofollow">
                                                 <img src="{$img}/video/m-video-button-play.png" class="mobile-video-buttons" />
                                             </a>
                                         </div>

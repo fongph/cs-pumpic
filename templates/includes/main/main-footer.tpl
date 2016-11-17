@@ -71,7 +71,7 @@
                                             </li>
                                             <li class="positivessl">
                                                 <span>Secured by:</span>
-                                                <img src="https://www.positivessl.com/images-new/PositiveSSL_tl_trans.png" alt="SSL Certificate" title="SSL Certificate" border="0" />
+                                                <img src="{$img}/PositiveSSL_tl_trans.png" alt="SSL Certificate" title="SSL Certificate" border="0" />
 
 
                                             </li>

@@ -15,7 +15,7 @@
                         </div>
                         <div class="col-sm-4 col-md-4 col-lg-4">
                                 <div class="feature">
-                                        <img src="{$img}/icons/icon-online-activity.gif" alt="">
+                                        <img src="{$img}/icons/icon-online-activity.png" alt="">
                                         <h3>Follow online activity</h3>
                                         <ul class="feature_list">
                                                 <li>Monitor browsing history</li>

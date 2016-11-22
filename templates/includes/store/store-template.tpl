@@ -74,7 +74,7 @@
                                                 <li class="hidden-xs"><span>Root might be needed for <a href="#root-h" class="prod-list__link hidden-xs">some monitoring features</a><span class="visible-xs">some monitoring features</span></span></li>
                                                 <li class="visible-xs"><span>Root might be needed for some monitoring features</span></span></li>
                                             </ul>
-                                            <a href="#android-features-h" class="a-default prod-features hidden-xs">Show all 24 features</a>
+                                            <a href="#android-features-h" class="a-default prod-features hidden-xs">Show all 26 features</a>
                                         </div>
                                     </div>
                                     {*---LIST ANDROID---*}
@@ -100,7 +100,7 @@
                                                 <li><span>Physical access and target device jailbreak are required</span></li>
                                                 <li><span>The app is visible but password-protected</span></li>
                                             </ul>
-                                            <a href="#jb-features-h" class="a-default prod-features hidden-xs">Show all 24 features</a>
+                                            <a href="#jb-features-h" class="a-default prod-features hidden-xs">Show all 27 features</a>
                                         </div>
                                     </div>
                                     {*---LIST-IOS-JB---*}

@@ -9,7 +9,7 @@ function dispatch($urlParams, $config){
     
     // Expires
      header('Expires: ' . gmdate('D, d M Y H:i:s \G\M\T', time() + 3600));
-    
+    $smarty->loadFilter('output', 'trimwhitespace');
     if (!empty($_SERVER["HTTP_REFERER"]) ) {
         $_url = parse_url($_SERVER['HTTP_REFERER']);  
         if(!isset($_COOKIE['orders_referer']) and isset($_url['host']) and !preg_match('/((.*)\.|^)'. str_replace('.', '\.', $config['domain']) .'/i', trim($_url['host'])) ) {
@@ -51,7 +51,7 @@ function dispatch($urlParams, $config){
             }    
             
             try{
-                
+
                 $smarty->display($path['tpl']); 
             } catch(Exception $e){
                 echo $e->getMessage() . '<br />';

@@ -176,10 +176,12 @@
         </div>
 </div>
         
-        {include file='../includes/content/features-table.tpl'
+        {include file='../includes/content/features-table-new.tpl'
         title = "Features Ensuring Safe Phone Use for Kids"
         description = "Pumpic comprises many useful features to make your children’s mobile devices safe. The app lets you monitor them both online and during daily activities. Comprehensive protection, accuracy, and reliability are what make Pumpic an irreplaceable helper for careful parents. Utilize all the 24 features to the fullest and keep your family safe remotely."
         blockBg="dark"
+        icloud = "yes"
+        storeLinkText = "Go to Store"
         } 
         
         <div class="light">

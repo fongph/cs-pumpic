@@ -210,10 +210,12 @@
         </div>
 </div>
         
-        {include file='../includes/content/features-table.tpl'
+        {include file='../includes/content/features-table-new.tpl'
         title = "Discover More Pumpic’s Features"
         description = "Pumpic’s is location tracking and geofencing is accurate and reliable. The monitoring app is compatible with iOS devices (iPhone, iPad, iPod Touch) as well as Android smartphones and tablets. So stop wondering how to trace cell phones – just start doing it with Pumpic. Along with tracking solution, Pumpic monitoring app has over 20 other useful features to ensure comprehensive protection for children that every careful parent dreams of. Look at the complete list of the app’s functions in the table below."
         blockBg="dark"
+            icloud = "yes"
+            storeLinkText = "Start Tracking"
         } 
         
                

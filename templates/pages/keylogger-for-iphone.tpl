@@ -83,6 +83,8 @@
             planPackageBuy = "yes"
             block_video = "yes"
             block_video_src = "https://www.youtube.com/embed/Atg0CbaytAY"
+            Icloud = "no"
+            Android = "no"
         } {* ?rel=0&wmode=transparent&fs=0&autoplay=1&modestbranding=1&autohide=1 *}
 
         {include file='../includes/content/plans.tpl'}
@@ -212,10 +214,12 @@
         </div>
 </div>
         
-        {include file='../includes/content/features-table.tpl'
+        {include file='../includes/content/features-table-new.tpl'
         title = "All-Round Protection, Outstanding Experience"
         description = "Pumpic is reliable parental control software with wide range of impressive features, specially designed to protect kids by monitoring their mobile devices. Apart from keylogger on iPhone, the app lets you follow all aspects of your kid’s life. Bearing in mind that children and their smartphones are nearly impossible to separate these days, Pumpic enables parents to monitor their kids’ activity constantly and remotely anytime, anywhere."
         blockBg="dark"
+            jailbreak = "yes"
+            storeLink = "no"
         } 
         
                

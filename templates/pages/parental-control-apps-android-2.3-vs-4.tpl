@@ -79,6 +79,8 @@
             planPackageBuy = "yes"
             block_video = "yes"
             block_video_src = "https://www.youtube.com/embed/Atg0CbaytAY"
+            Icloud = "no"
+            Apple = "no"
         } {* ?rel=0&wmode=transparent&fs=0&autoplay=1&modestbranding=1&autohide=1 *}
 
         {include file='../includes/content/plans.tpl'}
@@ -152,7 +154,7 @@
                         </div>
                         <div class="col-sm-4 col-md-4 col-lg-4">
                                 <div class="feature">
-                                        <img src="{$img}/icons/icon-track-kids.gif" alt="remote mobile monitoring">
+                                        <img src="{$img}/icons/icon-track-kids.png" alt="remote mobile monitoring">
                                         <h3>Track routes and location</h3>
                                         <ul class="feature_list">
                                                 <li>Track whereabouts in real time</li>
@@ -176,10 +178,11 @@
         </div>
 </div>
         
-        {include file='../includes/content/features-table.tpl'
+        {include file='../includes/content/features-table-new.tpl'
         title = "Monitoring Features for Android"
         description = "Pumpic boasts the widest range of features among other parental control Android applications. It includes over 24 monitoring solutions to protect your children at each and every step of their growing up, online and during daily activities. Pumpic provides comprehensive supervision and reliable security."
         blockBg="light"
+            android = "yes"
         } 
         
         {include file='../includes/content/ipad.tpl' 

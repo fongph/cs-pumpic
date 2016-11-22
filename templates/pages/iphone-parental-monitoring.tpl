@@ -48,6 +48,7 @@
             planPackageIphoneParental = "yes"
             block_video = "yes"
             block_video_src = "https://www.youtube.com/embed/Atg0CbaytAY"
+            Android = "no"
         }
          {* header_banners/bg_iphone-parental-monitoring.png *}
          {*listText = "control mobile phone usage|monitor Internet activity|follow location and route history"*}    
@@ -217,10 +218,12 @@
         </div>
 </div>   
                                         
-{include file='../includes/content/features-table.tpl'
+{include file='../includes/content/features-table-new.tpl'
         title = "Parental Control Features by Pumpic"
         description = "Your children live their full lives, and mobile devices help them explore the world around. Photo and video shooting, remote communication, emailing, gaming, and social connections are some of the options these gadgets provide. Pumpic covers all spheres of your kids’ activity and enables you to take care of them remotely. The features listed below show the variety of iPhone parental control abilities, which will let you secure your children’s well-being."
         blockBg="dark"
+        icloud = "yes"
+
 }                                        
                                         
 {*<div class="dark">

@@ -83,6 +83,8 @@
             planPackageBuy = "yes"
             block_video = "yes"
             block_video_src = "https://www.youtube.com/embed/Atg0CbaytAY"
+            Icloud = "no"
+            Apple = "no"
         } {* ?rel=0&wmode=transparent&fs=0&autoplay=1&modestbranding=1&autohide=1 *}
 
         {include file='../includes/content/plans.tpl'}
@@ -212,10 +214,12 @@
         </div>
 </div>
         
-        {include file='../includes/content/features-table.tpl'
+        {include file='../includes/content/features-table-new.tpl'
         title = "Unique Features for Topnotch Security"
         description = "Pumpic is proud to have more than 24 supreme features that ensure the best possible protection from all online threats. From now on, parents can get the most of this parental monitoring application and sleep well without worrying about their kids. Pumpic is an extremely valuable app when it comes to finding the truth about using mobile phone or tablet. Its unique Android keystroke logger will help to monitor all activities on a particular device at the chosen moment. Get acquainted with the following features and functions that guarantee the best protection."
         blockBg="dark"
+            android = "yes"
+            storeLinkText = "Go to Store"
         } 
         
                

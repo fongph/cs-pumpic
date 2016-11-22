@@ -48,6 +48,7 @@
             planPackageBuy = "yes"
             block_video = "yes"
             block_video_src = "https://www.youtube.com/embed/Atg0CbaytAY"
+            Icloud = "no"
           }
           {* ?rel=0&wmode=transparent&fs=0&autoplay=1&modestbranding=1&autohide=1 *}
          {*listText = "control cell phone usage|follow online activity|track routes and location"*}    
@@ -110,10 +111,11 @@
         </div>
 {EndContent}
 
-{include file='../includes/content/features-table.tpl'
+{include file='../includes/content/features-table-new.tpl'
         title = "Pumpic Features"
         description = "Since most of dangers that children face come from the Internet, it is very important to know how to monitor social networks as the main source of threats and abuse. Pumpic includes a large range of tracking features that will let you follow Facebook, Instagram, Skype, Viber, WhatsApp, Kik, and even more."
         blockBg="light"
+        android = "yes"
 }                                        
                                         
 {*<div class="dark">

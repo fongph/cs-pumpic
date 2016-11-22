@@ -49,6 +49,7 @@
             planPackageBuy = "yes"
             block_video = "no"
             block_video_src = "https://www.youtube.com/embed/Atg0CbaytAY"
+            Android = "no"
         } {* ?rel=0&wmode=transparent&fs=0&autoplay=1&modestbranding=1&autohide=1 *}
         
         {include file='../includes/content/plans.tpl'}
@@ -184,10 +185,12 @@
     </div>    
 {EndContent}
         
-        {include file='../includes/content/features-table.tpl'
+        {include file='../includes/content/features-table-new.tpl'
         title = "Many Dangers – One Solution"
         description = "Thanks to its 24 exceptional monitoring features, Pumpic parental app is a state-of-the-art solution to protect your kids from multiple online and offline dangers of the modern world. Cyberbullying, Internet predators, identity theft, child abduction – these are just some threats that lie in wait for your kids. You don’t have to hire a bodyguard and a cyber security expert to secure your little one, though. All you need to do is to choose Pumpic subscription plan and set up the protection. Yes, decreasing risks of your kids getting in troubles is that easy."
         blockBg="light"
+            icloud = "yes"
+            storeLinkText = "Start Tracking"
         } 
  
 

@@ -79,6 +79,8 @@
             planPackageBuy = "yes"
             block_video = "yes"
             block_video_src = "https://www.youtube.com/embed/Atg0CbaytAY"
+            Icloud = "no"
+            Apple = "no"
         } {* ?rel=0&wmode=transparent&fs=0&autoplay=1&modestbranding=1&autohide=1 *}
 
         {include file='../includes/content/plans.tpl'}
@@ -205,10 +207,11 @@
         </div>
 </div>
         
-        {include file='../includes/content/features-table.tpl'
+        {include file='../includes/content/features-table-new.tpl'
         title = "Features for Care, Monitoring, and Protection"
         description = "With more than 24 monitoring features the Pumpic parental control app allows you to stand up for your kid in this digital world and tailor your mobile tracking experience to your own needs. Get the app now to make sure that a gadget is not just a distraction in your child's hands, but a powerful guardian, which you can control."
         blockBg="dark"
+            android = "yes"
         } 
         
         {* description = "Install the iPad parental control app on your kid’s tablet and start monitoring right away. Log in to your Control Panel and view all the information from the target device. It can be accessed from anywhere including desktop computers, laptops, smartphones, and tablets. In addition to data monitoring, the Control Panel allows you to set limits, block tablet activities, and lock the target device permanently."             

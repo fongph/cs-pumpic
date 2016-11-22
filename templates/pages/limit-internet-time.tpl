@@ -80,9 +80,12 @@
 			titleSize = "25px"
             description = "Reduce the time your children spend online. </br> Keep them focused and take care of their health."
             promoBuyBlock = "no"
-            planPackageBuy = "yes"
+            planPackageBuy = "no"
             block_video = "no"
             block_video_src = "https://www.youtube.com/embed/Atg0CbaytAY"
+            Icloud = "no"
+            Apple = "no"
+            Android = "no"
         } {* ?rel=0&wmode=transparent&fs=0&autoplay=1&modestbranding=1&autohide=1 *}
 
         {include file='../includes/content/plans.tpl'}
@@ -211,10 +214,12 @@
         </div>
 </div>
 
-        {include file='../includes/content/features-table.tpl'
+        {include file='../includes/content/features-table-new.tpl'
         title = "Advanced Monitoring with Pumpic’s Outstanding Features"
         description = "Pumpic parental control app is a state-of-the-art monitoring software. Its two dozen comprehensive tracking features help concerned parents ensure their kids’ safety both online and offline. The app’s functionality provides broad device management options so that parents can go far beyond “Turn it off!” request. Pumpic is available for Android and iOS mobile devices; for the latter ones, you can choose a solution with or without jailbreak. In any form, this parental app will let you detect and avert possible dangers that threaten your little loved ones."
         blockBg="dark"
+            icloud = "yes"
+            storeLink = "no"
         }
 
 

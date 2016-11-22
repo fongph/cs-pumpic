@@ -178,10 +178,11 @@
         </div>
 </div>
         
-        {include file='../includes/content/features-table.tpl'
+        {include file='../includes/content/features-table-new.tpl'
         title = "A Guide to More Pumpic Features"
         description = "Since many modern-day dangers that children face originate from the Internet, it is crucial to keep an eye on this aspect of kids’ activity. Pumpic enables you to embed inside every iOS or Android device that children are using and gather important information on them wherever they go. However, Pumpic is not only an Internet monitoring app – it is a comprehensive solution for parental control. The app has 24 impressive tracking features to ensure the all-round protection of your kids and teens."
         blockBg="dark"
+            icloud = "yes"
         } 
         
         <div class="light">

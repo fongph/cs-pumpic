@@ -101,11 +101,9 @@
 
 		{EndContent}
 
-        {include file='../includes/content/features-table-new.tpl'
+        {include file='../includes/content/features-table.tpl'
                 blockBg="dark"
                 android="yes"
-                storeLink="yes"
-                storeLinkText="Visit Store"
         }
 
         {include file='../includes/content/ipad.tpl'

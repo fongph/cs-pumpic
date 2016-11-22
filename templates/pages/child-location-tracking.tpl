@@ -202,10 +202,12 @@
         </div>
 </div>
         
-        {include file='../includes/content/features-table.tpl'
+        {include file='../includes/content/features-table-new.tpl'
         title = "Many Useful Features In Addition to Location Tracking"
         description = "Pumpic is designed to provide your kids with all-round protection wherever they go. Thus, the app allows you to not only find their exact location, but also secure them during daily activities. More than 24 useful monitoring solutions let Pumpic be the best app for tracking kids and a reliable helper for all of life emergencies."
         blockBg="light"
+        icloud = "yes"
+        storeLinkText = "Start Tracking"
         } 
         
         <div class="dark">

@@ -211,10 +211,11 @@
         </div>
 </div>
         
-        {include file='../includes/content/features-table.tpl'
+        {include file='../includes/content/features-table-new.tpl'
         title = "Outstanding Features for Supreme Protection"
         description = "Pumpic is a parental monitoring app that enables to follow your child’s activities to ensure he/she is secure. With more than 24 unique features, the tracking experience becomes an enjoyable and easy process. You can monitor your kids remotely and always be sure that they are not the victims of bullying, or any other harmful behavior. Are you an attentive parent? Then check out the following features that will ensure the topnotch protection."
         blockBg="dark"
+            icloud = "yes"
         } 
         
                

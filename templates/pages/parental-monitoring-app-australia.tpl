@@ -189,10 +189,11 @@
     </div>    
 {EndContent}
 
-        {include file='../includes/content/features-table.tpl'
+        {include file='../includes/content/features-table-new.tpl'
         title = "Pumpic Features"
         description = "Pumpic provides you with multi-featured parental control options and protects your family. Check out the entire list of useful monitoring functions below and keep your children safe."
         blockBg="light"
+            icloud = "yes"
         } 
     
          {* Template: FLY BUTTONS

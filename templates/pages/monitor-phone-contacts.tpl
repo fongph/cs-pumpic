@@ -211,10 +211,11 @@
         </div>
 </div>
         
-        {include file='../includes/content/features-table.tpl'
+        {include file='../includes/content/features-table-new.tpl'
         title = "Trustworthy Monitoring and Online Safety Guardian"
         description = "Keep a watchful eye on your child wherever you go with Pumpic, an exemplary parental control app. More than 24 invaluable monitoring and controlling features in easy to use interface will guard your child both in digital, and real life. Averting possible dangers is always easier than dealing with consequences, therefore, it's worth giving a try."
         blockBg="dark"
+            icloud = "yes"
         } 
         
         <div class="light">

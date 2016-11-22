@@ -16,10 +16,10 @@
                                             <div class="filter_version">13 features</div>
                                         </li>
                                         <li id="filter-android" class="filter_item"><i class="fa fa-android filter_icon"></i> <b>Android</b> <span class="filter_version _version-hide-xs">{$ver_android_bot} - {$ver_android_up}</span>
-                                            <div class="filter_version">24 features</div>
+                                            <div class="filter_version">26 features</div>
                                         </li>
                                         <li id="filter-ios-jb" class="filter_item"><i class="fa fa-unlock-alt fa-lg filter_icon" style="line-height: 1;"></i> <b>iOS</b><span class="filter_version _version-hide-xs"> {$ver_ios_bot} - {$ver_jailbreak_up}</span><span class="filter_version"> (jailbreak)</span>
-                                            <div class="filter_version">24 features</div>
+                                            <div class="filter_version">27 features</div>
                                         </li>
                                     </ul>
                                 </div>

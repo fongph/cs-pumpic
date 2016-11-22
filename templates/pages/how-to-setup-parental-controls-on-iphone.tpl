@@ -84,6 +84,7 @@
             planPackageBuy = "yes"
             block_video = "yes"
             block_video_src = "https://www.youtube.com/embed/Atg0CbaytAY"
+            Android = "no"
         } {* ?rel=0&wmode=transparent&fs=0&autoplay=1&modestbranding=1&autohide=1 *}
 
         {include file='../includes/content/plans.tpl'}
@@ -210,10 +211,11 @@
         </div>
 </div>
         
-        {include file='../includes/content/features-table.tpl'
+        {include file='../includes/content/features-table-new.tpl'
         title = "Topnotch Monitoring Functions for Superior Protection"
         description = "Pumpic is the best possible solution for children security. It offers more than 20 distinguished features that enable parents to monitor all spheres of a kid’s social life. Protect your child from all possible dangers and be sure that he/she is in safe at any time. Your task as a careful parent is to make everything possible to save your little darling from unpleasant experience of this cruel world. Install parental tracking app and get the most of the following functions."
         blockBg="dark"
+            icloud = "yes"
         } 
         
         <div class="light">

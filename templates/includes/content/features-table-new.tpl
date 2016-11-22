@@ -345,7 +345,7 @@
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="last-child-hidden all-features-item"><img src="/images/icon-ph.png" class="img-ph" alt="">
+                                    {*<li class="last-child-hidden all-features-item"><img src="/images/icon-ph.png" class="img-ph" alt="">*}
                                         {*<a href="/all-features.html">View All Features  <i class="icon-right-open"></i> </a> </li>*}
                                     {*<li class="hidden-mobile">&nbsp;</li>*}
                                 </ul>
@@ -354,27 +354,27 @@
 
                         <div class="text-center button-more-detailes">
                             {if $icloud == "yes"}
-                            <a href="/all-features.html" class="btn btn-default" rel="nofollow">
+                            <a href="/all-features.html" class="btn btn-green ga-action-click" ga-category="features-block" ga-action="click" ga-label="all-features" rel="nofollow">
                                 All Features</a>
-                                {if $storeLink == "yes"}
-                                <a href="/store.html" class="btn btn-green" rel="nofollow">
-                                    {if isset($storeLinkText)}{$storeLinkText}{else}Go to Store{/if}</a>
+                                {if $storeLink != "no"}
+                                <a href="/store.html" class="btn btn-default ga-action-click" ga-category="features-block" ga-action="click" ga-label="store" rel="nofollow">
+                                    {if isset($storeLinkText)}{$storeLinkText}{else}Start Monitoring{/if}</a>
                                 {/if}
                             {/if}
                             {if $android == "yes"}
-                            <a href="/all-features.html#android" class="btn btn-default" rel="nofollow"}>
+                            <a href="/all-features.html#android" class="btn btn-green ga-action-click" ga-category="features-block" ga-action="click" ga-label="all-features" rel="nofollow"}>
                                 All Features</a>
-                                {if $storeLink == "yes"}
-                                    <a href="/store.html#android" class="btn btn-green" rel="nofollow">
-                                        {if isset($storeLinkText)}{$storeLinkText}{else}Go to Store{/if}</a>
+                                {if $storeLink != "no"}
+                                    <a href="/store.html#android" class="btn btn-default ga-action-click" ga-category="features-block" ga-action="click" ga-label="store" rel="nofollow">
+                                        {if isset($storeLinkText)}{$storeLinkText}{else}Start Monitoring{/if}</a>
                                 {/if}
                             {/if}
                             {if $jailbreak == "yes"}
-                            <a href="/all-features.html#jailbreak" class="btn btn-default" rel="nofollow">
+                            <a href="/all-features.html#jailbreak" class="btn btn-green ga-action-click" ga-category="features-block" ga-action="click" ga-label="all-features" rel="nofollow">
                                 All Features</a>
-                                {if $storeLink == "yes"}
-                                    <a href="/store.html#jailbreak" class="btn btn-green" rel="nofollow">
-                                        {if isset($storeLinkText)}{$storeLinkText}{else}Go to Store{/if}</a>
+                                {if $storeLink != "no"}
+                                    <a href="/store.html#jailbreak" class="btn btn-default ga-action-click" ga-category="features-block" ga-action="click" ga-label="store" rel="nofollow">
+                                        {if isset($storeLinkText)}{$storeLinkText}{else}Start Monitoring{/if}</a>
                                 {/if}
                             {/if}
                         </div>

@@ -162,10 +162,12 @@
         </div>
 </div>   
                                         
-{include file='../includes/content/features-table.tpl'
+{include file='../includes/content/features-table-new.tpl'
         title = "One Stop Solution for Tracking and Protection"
         description = "Pumpic provides an invaluable feeling of confidence that your kids are safe. Its 24 spectacular features can greatly contribute to ensuring comprehensive protection from virtually any digital threat that originates from smartphone or tablet usage. With the help of monitoring software, you’ll be able to monitor your kids’ activity constantly and remotely from any spot of the world. Just check these Pumpic features and see for yourself."
         blockBg="light"
+        android = "yes"
+        storeLinkText = "Go to Store"
 }                                          
 
 <div class="dark">

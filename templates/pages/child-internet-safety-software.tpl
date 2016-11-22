@@ -206,10 +206,11 @@
         </div>
 </div>
         
-        {include file='../includes/content/features-table.tpl'
+        {include file='../includes/content/features-table-new.tpl'
         title = "One-Stop Solution with Multiple Features"
         description = "With its 24 outstanding features, Pumpic is the perfect child Internet security software for responsible parents to ensure their little ones’ safety. The app makes parenting in today’s connected world simpler and enables you to stay on the same level with your tech-savvy kids. Whether you want to protect your children from cyberbullying or online predators, safeguard their privacy or simply be informed of their current location – Pumpic monitoring app is the key."
         blockBg="dark"
+            icloud = "yes"
         } 
         
         <div class="light">

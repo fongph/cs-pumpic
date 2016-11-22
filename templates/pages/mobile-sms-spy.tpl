@@ -213,7 +213,7 @@
         </div>
 </div>   
                                         
-{include file='../includes/content/features-table.tpl'
+{include file='../includes/content/features-table-new.tpl'
         title = "More of Pumpic Features"
         description = "In a large variety of available software, it is rather a challenge to find a reliable app 
                             for parents to monitor text messages on their kids’ cell phones. The very first thing to consider here is features 
@@ -221,7 +221,9 @@
                             online activity and control the time they spend playing games. Below is the entire list of functions Pumpic 
                             provides to protect your kids and secure their happiness."
         blockBg="dark"
-} 
+        icloud="yes"
+        storeLink="yes"
+}
                                         
 {*<div class="dark">
         <div class="container">

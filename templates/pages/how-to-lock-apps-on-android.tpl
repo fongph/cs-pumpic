@@ -92,6 +92,8 @@
             planPackageBuy = "yes"
             block_video = "yes"
             block_video_src = "https://www.youtube.com/embed/Atg0CbaytAY"
+            Icloud = "no"
+            Apple = "no"
         } {* ?rel=0&wmode=transparent&fs=0&autoplay=1&modestbranding=1&autohide=1 *}
 
         {include file='../includes/content/plans.tpl'}
@@ -217,10 +219,11 @@
         </div>
 </div>
         
-        {include file='../includes/content/features-table.tpl'
+        {include file='../includes/content/features-table-new.tpl'
         title = "Exceptional Features for Perfect Supervision"
         description = "Are you a careful parent? Do you want to be sure that your child is protected round-the-clock? Pumpic provides you with more than 24 impressive features to ensure the safety of all your family members. Keep your child away from unsuitable materials and sites and scan all the activities to make sure they are not bullied or harmed. The following features serve to protect your little darlings from all potential dangers."
         blockBg="dark"
+            android = "yes"
         } 
         
         <div class="light">

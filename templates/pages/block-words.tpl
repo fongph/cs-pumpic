@@ -49,6 +49,7 @@
             planPackageBuy = "yes"
             block_video = "no"
             block_video_src = "https://www.youtube.com/embed/Atg0CbaytAY"
+            Icloud = "no"
         } {* ?rel=0&wmode=transparent&fs=0&autoplay=1&modestbranding=1&autohide=1 *}
         
         {include file='../includes/content/plans.tpl'}
@@ -200,10 +201,12 @@
         </div>
 </div>
         
-        {include file='../includes/content/features-table.tpl'
+        {include file='../includes/content/features-table-new.tpl'
         title = "Pumpic Extended Functionality Keeps It on Guard for Your Kids"
         description = "In today’s tech era, parents must take care of their kids’ protection not only from the dangers of the real world but also from hazards that originate from the digital sphere. Pumpic is a one-stop solution to deal with multiple perils that lie in wait for inexperienced gadget and Internet users. Its 24 superb monitoring features make Pumpic a reliable guardian for your child that lends you a helping hand when you wish to ensure all-round protection for the most precious thing you have in life. Check the full list of functions in the table below."
         blockBg="dark"
+            android = "yes"
+            storeLinkText = "Go to Store"
         } 
         
         <div class="light">

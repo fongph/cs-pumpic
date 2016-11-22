@@ -80,6 +80,8 @@
             planPackageBuy = "yes"
             block_video = "yes"
             block_video_src = "https://www.youtube.com/embed/Atg0CbaytAY"
+            Apple = "no"
+            Icloud = "no"
         } {* ?rel=0&wmode=transparent&fs=0&autoplay=1&modestbranding=1&autohide=1 *}
         
         {include file='../includes/content/plans.tpl'}
@@ -390,10 +392,12 @@
         </div>
 </div>
         
-        {include file='../includes/content/features-table.tpl'
+        {include file='../includes/content/features-table-new.tpl'
         title = "Over 24 Features for Child Safety "
         description = "Each and every feature the Pumpic app includes allows you to monitor various spheres of your children’s lives. All together, they show you a wide picture of what is going on with your kids, so as you could detect potential risks and avert them in the making."
         blockBg="dark"
+            android = "yes"
+            storeLinkText = "Go to Store"
         }
 
         {include file='../includes/content/ipad.tpl'

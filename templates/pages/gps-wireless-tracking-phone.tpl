@@ -66,9 +66,11 @@
 
         {include file='../includes/content/secures-mobile-operators.tpl'}
 
-        {include file='../includes/content/features-table.tpl'
+        {include file='../includes/content/features-table-new.tpl'
                 blockBg="light"
                 description = "Pumpic is a reasonably improved mobile phone application, which comes with a large range of monitoring functions. The app runs independently of mobile carriers and services they provide."
+            icloud = "yes"
+        storeLinkText = "Start Tracking"
         }
 
         {include file='../includes/content/ipad.tpl'

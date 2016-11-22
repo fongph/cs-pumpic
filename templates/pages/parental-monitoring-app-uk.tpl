@@ -186,10 +186,11 @@
     </div> 
 {EndContent}
 
-        {include file='../includes/content/features-table.tpl'
+        {include file='../includes/content/features-table-new.tpl'
         title = "Pumpic Features"
         description = "The app provides you with the widest possible range of useful monitoring solutions. You will hardly find its peers across Great Britain and overseas. Track the target devices remotely at the click of a button. Protect from dangers those you care. Secure your business and personal data."
         blockBg="light"
+            icloud = "yes"
         } 
     
          {* Template: FLY BUTTONS

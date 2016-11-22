@@ -183,10 +183,11 @@
     </div>    
 {EndContent}
 
-        {include file='../includes/content/features-table.tpl'
+        {include file='../includes/content/features-table-new.tpl'
         title = "Pumpic Features"
         description = "Pumpic provides you with multitask monitoring software designed to protect your family. You will hardly find a better solution containing more than 22 tracking features in one simple app."
         blockBg="light"
+            icloud = "yes"
         } 
     
          {* Template: FLY BUTTONS

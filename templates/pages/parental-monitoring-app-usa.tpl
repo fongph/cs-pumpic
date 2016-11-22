@@ -185,10 +185,11 @@
     </div> 
 {EndContent}
 
-        {include file='../includes/content/features-table.tpl'
+        {include file='../includes/content/features-table-new.tpl'
         title = "Pumpic Features"
         description = "If you need a reliable tool to protect your children remotely from any spot of the United Sates or abroad, Pumpic will provide you with a relevant solution with more than 22 tracking features and convenient user interface. Learn more about Pumpic monitoring abilities from the table below."
         blockBg="light"
+            icloud = "yes"
         } 
     
          {* Template: FLY BUTTONS

@@ -84,6 +84,8 @@
             planPackageBuy = "yes"
             block_video = "yes"
             block_video_src = "https://www.youtube.com/embed/Atg0CbaytAY"
+            Icloud = "no"
+            Apple = "no"
         } {* ?rel=0&wmode=transparent&fs=0&autoplay=1&modestbranding=1&autohide=1 *}
 
         {include file='../includes/content/plans.tpl'}
@@ -210,10 +212,11 @@
         </div>
 </div>
         
-        {include file='../includes/content/features-table.tpl'
+        {include file='../includes/content/features-table-new.tpl'
         title = "Impressive Features for Unsurpassed Security"
         description = "If you are an attentive and mindful parent and you child's safety is the most important thing for you, you’ll appreciate those opportunities Pumpic provides. The app for parental control suggests about 25 distinguished features for kids’ protection. The app is developed in a way to cover all the spheres of youth life and make them safe from online predators, sexting, cyberbullying and other possible online dangers. Below are the most exceptional options you will get with installing Pumpic."
         blockBg="dark"
+            android = "yes"
         } 
         
         <div class="light">

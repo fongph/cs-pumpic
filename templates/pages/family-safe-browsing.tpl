@@ -48,6 +48,7 @@
             planPackageBuy = "yes"
             block_video = "no"
             block_video_src = "https://www.youtube.com/embed/Atg0CbaytAY"
+            Icloud = "no"
         } {* ?rel=0&wmode=transparent&fs=0&autoplay=1&modestbranding=1&autohide=1 *}
         
         {include file='../includes/content/plans.tpl'}
@@ -196,10 +197,12 @@
         <p class="text-center f-light">If you come to a decision to install parental control software on your kid’s mobile device, be sure to remember that this is just a supplementary tool. By no means it implies that you’re done with parenting work now. For starters, don’t become a control freak – being too authoritative doesn’t have anything in common with being a caring parent. Better use the information you get from monitoring app to discover topics your kid is interested in or issues that bother him or her. And then find a way to talk about it – not straightforwardly but gently; for instance, don’t explain what not to do – explain the options and consequences of certain actions. Thus, you’ll be able to keep children’s trust and respect.</p>
 {EndContent}
         
-        {include file='../includes/content/features-table.tpl'
+        {include file='../includes/content/features-table-new.tpl'
         title = "Pumpic Has Everything a Parent Needs to Ensure Kid’s Protection"
         description = "According to Pew Research Center, fears that the child is bullied, suffers depression, and can be kidnapped are top three US parents’ worries these days. Pumpic parental control app provides you with 24 outstanding monitoring features that allow you to minimize these risks. It is a state-of-the-art solution that helps parents to keep kids protected both in digital and the real worlds, thus ensuring your peace of mind. Check out the full list of Pumpic’s virtues in the table below."
         blockBg="light"
+            android = "yes"
+            storeLinkText = "Go to Store"
         } 
  
 

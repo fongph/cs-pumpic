@@ -47,6 +47,7 @@
             planPackageBuy = "yes"
             block_video = "yes"
             block_video_src = "https://www.youtube.com/embed/Atg0CbaytAY"
+            Android = "no"
         } {* ?rel=0&wmode=transparent&fs=0&autoplay=1&modestbranding=1&autohide=1 *}
         
         {include file='../includes/content/plans.tpl'}
@@ -160,10 +161,11 @@
         </div>
 </div>
         
-        {include file='../includes/content/features-table.tpl'
+        {include file='../includes/content/features-table-new.tpl'
         title = "Utilize Pumpic Monitoring Features"
         description = "Pumpic provides reliable iPad parental control solutions that allow remote monitoring and instant device control. Designed for child safety, the application includes more than 24 useful tracking features for all life emergencies both online and during daily activities. Pumpic ensures comprehensive protection for kids and secures happiness for all family."
         blockBg="dark"
+            icloud = "yes"
         } 
         
         {include file='../includes/content/ipad.tpl' 

@@ -49,6 +49,8 @@
             planPackageBuy = "yes"
             block_video = "no"
             block_video_src = "https://www.youtube.com/embed/Atg0CbaytAY"
+            Icloud = "no"
+            Apple = "no"
         } {* ?rel=0&wmode=transparent&fs=0&autoplay=1&modestbranding=1&autohide=1 *}
         
         {include file='../includes/content/plans.tpl'}
@@ -179,10 +181,12 @@
         </div>
 </div>
         
-        {include file='../includes/content/features-table.tpl'
+        {include file='../includes/content/features-table-new.tpl'
         title = "More Features, More Control, More Protection"
         description = "Thorough Internet content filtering is just one of over two dozen Pumpic’s exceptional features. All at once, they enable concerned parents to ensure their children’s safety via monitoring various spheres of their lives. With Pumpic parental control software for Android, you will quickly identify potential dangers and avert them at early stages, thus, making your kid’s mobile device usage a safe and pleasant experience."
         blockBg="dark"
+            android = "yes"
+            storeLinkText = "Go to Store"
         } 
         
         <div class="light">

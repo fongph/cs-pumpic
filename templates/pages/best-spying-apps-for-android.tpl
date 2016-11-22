@@ -82,6 +82,8 @@
             planPackageBuy = "yes"
             block_video = "yes"
             block_video_src = "https://www.youtube.com/embed/Atg0CbaytAY"
+            Icloud = "no"
+            Apple = "no"
         } {* ?rel=0&wmode=transparent&fs=0&autoplay=1&modestbranding=1&autohide=1 *}
 
 
@@ -212,10 +214,11 @@
         </div>
 </div>
         
-        {include file='../includes/content/features-table.tpl'
+        {include file='../includes/content/features-table-new.tpl'
         title = "Outstanding Features for You as a Careful Parent"
         description = "Pumpic is a solution of all your worries concerning the safety of your child. It provides more than 24 notable features for the best protection. You can take care of your children remotely and always be sure that they are not bullied, offended, or harmed by inappropriate information found online. If you are a careful parent and we do know that you are, check the features that will help to prevent the possible dangers."
         blockBg="dark"
+            android = "yes"
         } 
         
         <div class="light">

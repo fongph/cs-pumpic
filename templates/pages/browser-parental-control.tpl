@@ -48,6 +48,7 @@
             planPackageBuy = "yes"
             block_video = "yes"
             block_video_src = "https://www.youtube.com/embed/Atg0CbaytAY"
+            Icloud = "no"
         } {* ?rel=0&wmode=transparent&fs=0&autoplay=1&modestbranding=1&autohide=1 *}
         
         {include file='../includes/content/plans.tpl'}
@@ -155,10 +156,11 @@
         </div>
 </div>
         
-        {include file='../includes/content/features-table.tpl'
+        {include file='../includes/content/features-table-new.tpl'
         title = "Many Useful Monitoring Features"
         description = 'Pumpic lets you utilize remote mobile monitoring to the fullest. The app includes more than 24 parental control solutions that provide comprehensive protection comprising <a class="a-default" href="/internet-monitoring-software.html">Internet monitoring</a> and safety during daily activities on smartphone and tablets. Pumpic provides reliable security to all family on guard of your happiness.'
         blockBg="dark"
+        android = "yes"
         } 
         
         {include file='../includes/content/ipad.tpl' 

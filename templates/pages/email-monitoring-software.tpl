@@ -45,6 +45,7 @@
             planPackageBuy = "yes"
             block_video = "yes"
             block_video_src = "https://www.youtube.com/embed/Atg0CbaytAY"
+             Icloud = "no"
          }
          {*?rel=0&wmode=transparent&fs=0&autoplay=1&modestbranding=1&autohide=1*}
          {*listText = "view sent and received emails|keep track of mailing contact list|follow online registrations"*}    
@@ -222,10 +223,11 @@
         </div>
 </div>      
                                         
-{include file='../includes/content/features-table.tpl' 
+{include file='../includes/content/features-table-new.tpl'
         title = "Features to Monitor Email"
         description = "When it comes to children’s safety, parents should take all possible measures to protect them. Especially when it concerns online activity. Pumpic monitoring features will enable you to provide comprehensive security and cover all spheres of your kids’ time spending. Starting from tracking precise location and up to daily calls and text message reports, you will keep your children safe in a click."
-        blockBg="dark"
+        blockBg = "dark"
+        android = "yes"
 } 
                                         
 {Content 

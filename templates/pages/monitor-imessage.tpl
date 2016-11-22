@@ -41,6 +41,7 @@
             planPackageBuy = "yes"
             block_video = "yes"
             block_video_src = "https://www.youtube.com/embed/Atg0CbaytAY"
+            Android = "no"
         }
         
         {include file='../includes/content/plans.tpl'}
@@ -169,10 +170,11 @@
         </div>
 </div>
         
-        {include file='../includes/content/features-table.tpl'
+        {include file='../includes/content/features-table-new.tpl'
         title = "Wider Monitoring Features – Better Protection"
         description = "In today’s digital era, parents’ duty is to protect them not only from the dangers of the offline world but also from perils of online space. The situation is often complicated by the fact that nowadays kids mostly use mobile devices for their Internet activities, which makes thorough parental control almost an impossible mission. Pumpic’s 24 outstanding monitoring features allow parents to deal with this challenge decently. Thus, ensuring your kids’ all-round protection is a matter of technique."
         blockBg="dark"
+            icloud = "yes"
         } 
         
         <div class="light">

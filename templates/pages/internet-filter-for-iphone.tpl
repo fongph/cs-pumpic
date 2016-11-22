@@ -49,6 +49,8 @@
             planPackageBuy = "yes"
             block_video = "no"
             block_video_src = "https://www.youtube.com/embed/Atg0CbaytAY"
+            Icloud = "no"
+            Android = "no"
         } {* ?rel=0&wmode=transparent&fs=0&autoplay=1&modestbranding=1&autohide=1 *}
         
         {include file='../includes/content/plans.tpl'}
@@ -177,10 +179,12 @@
         </div>
 </div>
         
-        {include file='../includes/content/features-table.tpl'
+        {include file='../includes/content/features-table-new.tpl'
         title = "Extended Functionality for Comprehensive Protection"
         description = "In case you need to set up Internet content filter for iPhone, Pumpic app has all the functionality you need – and much more! It is a state-of-the-art solution to ensure your kids’ full protection not only from explicit content but also from cyberbullying and online predators. Pumpic’s 24 striking features cover all aspects of child’s digital life, thus, allowing parents to keep their eyes open and be ready to avert any possible threat. Check the table below and see how much Pumpic can do."
         blockBg="dark"
+            jailbreak = "yes"
+            storeLink = "no"
         } 
         
         <div class="light">

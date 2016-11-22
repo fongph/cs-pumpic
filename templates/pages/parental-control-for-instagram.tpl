@@ -77,6 +77,7 @@
             planPackageBuy = "yes"
             block_video = "yes"
             block_video_src = "https://www.youtube.com/embed/Atg0CbaytAY"
+            Icloud = "no"
         } {* ?rel=0&wmode=transparent&fs=0&autoplay=1&modestbranding=1&autohide=1 *}
         
         {include file='../includes/content/plans.tpl'}
@@ -163,10 +164,12 @@
         </div>
 </div>
 
-        {include file='../includes/content/features-table.tpl'
-        title = "Many Useful Features for Reliable Protection"
-        description = "In addition to Instagram parental monitoring, Pumpic provides you with more than 24 solutions for child safety. The app allows you to take care of your loved ones remotely covering the Internet and daily activities on smartphones and tablets."
-        blockBg="dark"
+        {include file='../includes/content/features-table-new.tpl'
+            title = "Many Useful Features for Reliable Protection"
+            description = "In addition to Instagram parental monitoring, Pumpic provides you with more than 24 solutions for child safety. The app allows you to take care of your loved ones remotely covering the Internet and daily activities on smartphones and tablets."
+            blockBg="dark"
+            android = "yes"
+            storeLinkText = "Go to Store"
         } 
         
         {include file='../includes/content/ipad.tpl' 

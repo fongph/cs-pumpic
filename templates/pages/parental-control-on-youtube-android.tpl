@@ -77,6 +77,8 @@
             planPackageBuy = "yes"
             block_video = "yes"
             block_video_src = "https://www.youtube.com/embed/Atg0CbaytAY"
+            Apple = "no"
+            Icloud = "no"
         } {* ?rel=0&wmode=transparent&fs=0&autoplay=1&modestbranding=1&autohide=1 *}
         
         {include file='../includes/content/plans.tpl'}
@@ -194,10 +196,12 @@
 		
 		{EndContent}
         
-        {include file='../includes/content/features-table.tpl'
-        title = "More than 24 Features for Child Protection"
-        description = "Pumpic offers <a class='a-default' href='/android-parental-monitoring.html'>reliable monitoring solutions for Android</a> to keep your children safe and secure both online and during daily activities. Thus, you provide your loved ones with comprehensive protection with an ability to monitor every step they take on their smartphones and tablets. Take care of your kids remotely wherever you go with Pumpic parental control."
-        blockBg="light"
+        {include file='../includes/content/features-table-new.tpl'
+            title = "More than 24 Features for Child Protection"
+            description = "Pumpic offers <a class='a-default' href='/android-parental-monitoring.html'>reliable monitoring solutions for Android</a> to keep your children safe and secure both online and during daily activities. Thus, you provide your loved ones with comprehensive protection with an ability to monitor every step they take on their smartphones and tablets. Take care of your kids remotely wherever you go with Pumpic parental control."
+            blockBg="light"
+            android = "yes"
+            storeLinkText = "Go to Store"
         }
         
         <div class="dark">

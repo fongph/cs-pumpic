@@ -83,6 +83,7 @@
             planPackageBuy = "yes"
             block_video = "yes"
             block_video_src = "https://www.youtube.com/embed/Atg0CbaytAY"
+            Icloud = "no"
         } {* ?rel=0&wmode=transparent&fs=0&autoplay=1&modestbranding=1&autohide=1 *}
 
         {include file='../includes/content/plans.tpl'}
@@ -212,10 +213,12 @@
         </div>
 </div>
         
-        {include file='../includes/content/features-table.tpl'
+        {include file='../includes/content/features-table-new.tpl'
         title = "Outstanding Tracking Practice and Protection"
         description = "Pumpic ensures the best protection thanks to its 24 supreme functions. The monitoring app is designed to keep the kids away from all the possible online dangers. With the help of tracking app, you can oversee your child remotely and keep all his/her activities under control. More than 10,000 parents have already tried this app and are fully satisfied with the result. If you wonder how you can save your child from unpleasant online experience and various risks, check the following functions Pumpic provides."
         blockBg="dark"
+        android = "yes"
+        storeLinkText = "Go to Store"
         } 
         
                

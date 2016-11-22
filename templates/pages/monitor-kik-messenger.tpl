@@ -215,10 +215,11 @@
         </div>
 </div>
         
-        {include file='../includes/content/features-table.tpl'
+        {include file='../includes/content/features-table-new.tpl'
         title = "Exclusive Functions for Perfect Care"
         description = "Pumpic has more than 24 unique features that guarantee monitoring of all the aspects of child’s online experience. With its help, you can be sure that your little darling is secured round-the-clock. Every careful parent would be happy to use the monitoring software to protect their children from online predators, sexting, cyberbullying, and other dangers connected with the excessive use of smartphones and tablets. Check out the following functions to ensure you kid will be safe."
         blockBg="dark"
+            icloud = "yes"
         } 
         
                

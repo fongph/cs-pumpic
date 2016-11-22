@@ -83,6 +83,7 @@
             planPackageBuy = "yes"
             block_video = "yes"
             block_video_src = "https://www.youtube.com/embed/Atg0CbaytAY"
+            Icloud = "no"
         } {* ?rel=0&wmode=transparent&fs=0&autoplay=1&modestbranding=1&autohide=1 *}
 
         {include file='../includes/content/plans.tpl'}
@@ -213,10 +214,12 @@
         </div>
 </div>
         
-        {include file='../includes/content/features-table.tpl'
+        {include file='../includes/content/features-table-new.tpl'
         title = "Unique Functions to Ensure the Best Protection"
         description = "Pumpic is a parental monitoring application that allows to check all the activity that takes place on Android or iOS device, whether it is a smartphone or tablet. It provides more than 20 outstanding features that ensure the highest level of security. With the help of monitoring software, you’ll always know where you kids are and what they are doing. Are you a careful parent? Do you want to protect your little one from all dangers and risks available online? Then check out the following functions Pumpic offers."
         blockBg="dark"
+            android = "yes"
+            storeLinkText = "Go to Store"
         } 
         
                

@@ -79,6 +79,8 @@
             planPackageBuy = "yes"
             block_video = "yes"
             block_video_src = "https://www.youtube.com/embed/Atg0CbaytAY"
+            Apple = "no"
+            Icloud = "no"
         } {* ?rel=0&wmode=transparent&fs=0&autoplay=1&modestbranding=1&autohide=1 *}
         
         {include file='../includes/content/plans.tpl'}
@@ -302,10 +304,12 @@
     
 {EndContent}
 
-    {include file='../includes/content/features-table.tpl'
+    {include file='../includes/content/features-table-new.tpl'
         title = "Pumpic Is More than 24 Monitoring Features "
         description = "Pumpic stands out among other Android parental control apps thanks to a large variety of useful features and smooth monitoring process. The application covers all spheres of your children’s lives. Thus, you can protect them both online and during daily activities with <a class='a-default' href='/android-parental-monitoring.html'>Pumpic parental monitoring for Android</a>."
         blockBg="dark"
+        android = "yes"
+        storeLinkText = "Go to Store"
     }
         
 <div class="light">

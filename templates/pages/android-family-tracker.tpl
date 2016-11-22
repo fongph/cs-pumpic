@@ -83,6 +83,8 @@
             planPackageBuy = "yes"
             block_video = "no"
             block_video_src = "https://www.youtube.com/embed/Atg0CbaytAY"
+            Icloud = "no"
+            Apple = "no"
         } {* ?rel=0&wmode=transparent&fs=0&autoplay=1&modestbranding=1&autohide=1 *}
 
         {include file='../includes/content/plans.tpl'}
@@ -212,12 +214,14 @@
         </div>
 </div>
         
-        {include file='../includes/content/features-table.tpl'
+        {include file='../includes/content/features-table-new.tpl'
         title = "Advanced Features for Comprehensive Tracking and Monitoring"
         description = "Knowing your kids’ whereabouts is a great thing for concerned parents – and Pumpic provides you with that kind of information. With Pumpic family tracker, Android or iOS device can be easily turned into powerful all-round protection tool, because nowadays simply tracing a phone is just not enough. Today, kids are facing not only real-world dangers but also a number of digital threats as they use smartphones for Internet surfing and instant messaging.<br /><br />
 		Pumpic parental monitoring app is a state-of-the-art software to ensure your kid’s exhaustive protection from virtually all possible risks. Its 24 outstanding features include GPS tracking, text messages monitoring, following any online activity, and controlling specific apps or a device usage on the whole. By utilizing Pumpic components, you will be enabled to deal with cyberbullying, avert online predators and prevent your kid from viewing inappropriate content. Check out the full list of features below."
         blockBg="dark"
-        } 
+        android = "yes"
+        storeLinkText = "Start Tracking"
+        }
         
                
         <div class="light">

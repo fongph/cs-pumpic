@@ -47,6 +47,8 @@
             planPackageBuy = "yes"
             block_video = "yes"
             block_video_src = "https://www.youtube.com/embed/Atg0CbaytAY"
+            Apple = "no"
+            Icloud = "no"
         } {* ?rel=0&wmode=transparent&fs=0&autoplay=1&modestbranding=1&autohide=1 *}
         
         {include file='../includes/content/plans.tpl'}
@@ -199,10 +201,11 @@
         </div>
 </div>
         
-        {include file='../includes/content/features-table.tpl'
+        {include file='../includes/content/features-table-new.tpl'
         title = "Outstanding Monitoring Experience and Protection"
         description = "Pumpic is the all-in-one solution for parental control and child protection. The app comprises more than 24 useful monitoring features that allow parents to take care of their children remotely. Protect your kids once and for all. With Pumpic tracking you will be able to keep Android tablet activities under personal control and prevent online dangers at early stages."
         blockBg="dark"
+        android = "yes"
         } 
         
         <div class="light">

@@ -47,6 +47,8 @@ title="Ultimate Android Parental Control App | Pumpic Monitoring Software"
             planPackageBuy = "yes"
             block_video = "yes"
             block_video_src = "https://www.youtube.com/embed/Atg0CbaytAY"
+             Icloud = "no"
+             Apple = "no"
           }
           {* ?rel=0&wmode=transparent&fs=0&autoplay=1&modestbranding=1&autohide=1 *}
          {*listText = "control cell phone usage|follow online activity|track routes and location"*}    
@@ -216,10 +218,11 @@ title="Ultimate Android Parental Control App | Pumpic Monitoring Software"
         </div>
 </div>   
                                         
-{include file='../includes/content/features-table.tpl'
+{include file='../includes/content/features-table-new.tpl'
         title = "Over 24 Monitoring Features to Protect Your Kids"
         description = "Mobile technologies have introduced new opportunities to our children. It is rather hard to imagine the entire range of functions a single smartphone can fulfill. That’s why when it comes to features that an Android monitoring software should include, it is crucial to consider as many as possible. The list below reflects Pumpic monitoring abilities and particular mobile phone functions you will be able to cover by using the app. They will help you follow each and every aspect of your kids’ lives and all of their activities remotely."
         blockBg="light"
+        android = "yes"
 }                                        
                                         
 {*<div class="dark">

@@ -120,8 +120,9 @@
         }                                
 
         {* blockBg="dark" *}
-        {include file='../includes/content/features-table.tpl'
-                blockBg="light"
+        {include file='../includes/content/features-table-new.tpl'
+            blockBg="light"
+            icloud= "yes"
         }
 
         {*include file='../includes/content/banner-promo.tpl'*}

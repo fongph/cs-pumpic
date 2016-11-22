@@ -77,6 +77,8 @@
             planPackageBuy = "yes"
             block_video = "yes"
             block_video_src = "https://www.youtube.com/embed/Atg0CbaytAY"
+            Icloud = "no"
+            Apple = "no"
         } {* ?rel=0&wmode=transparent&fs=0&autoplay=1&modestbranding=1&autohide=1 *}
         
         {include file='../includes/content/plans.tpl'}
@@ -159,10 +161,12 @@
         </div>
 </div>
         
-        {include file='../includes/content/features-table.tpl'
+        {include file='../includes/content/features-table-new.tpl'
         title = "Essential Features for Child Safety"
         description = "Pumpic comprises more than 24 features helping protect you children and secure your family happiness. All these available monitoring opportunities allow taking care of your loved ones both online and during daily activities."
         blockBg="dark"
+            android = "yes"
+            storeLinkText = "Go to Store"
         } 
         
         {include file='../includes/content/ipad.tpl' 

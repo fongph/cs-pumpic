@@ -145,10 +145,11 @@
             </div>
         </div>
 
-        {include file='../includes/content/features-table.tpl'
+        {include file='../includes/content/features-table-new.tpl'
         title = "Useful Monitoring Features by Pumpic"
         description = "Pumpic is not only a reliable cell phone SMS tracker, but also a multifunctional tool to protect your kids both online and during daily activities. Monitor text messages on Android and iOS. View calls and multimedia files. Follow your children online and on the go. Check out other amazing features of the Pumpic SMS tracker for remote cell phone monitoring."
         blockBg="light"
+        icloud = "yes"
         }
 
         <div class="dark">

@@ -78,6 +78,7 @@
             planPackageBuy = "yes"
             block_video = "yes"
             block_video_src = "https://www.youtube.com/embed/Atg0CbaytAY"
+            Icloud = "no"
         } {* ?rel=0&wmode=transparent&fs=0&autoplay=1&modestbranding=1&autohide=1 *}
 
         {include file='../includes/content/plans.tpl'}
@@ -202,10 +203,12 @@
         </div>
 </div>
 
-        {include file='../includes/content/features-table.tpl'
+        {include file='../includes/content/features-table-new.tpl'
         title = "Pumpic Provides Many Useful Features"
         description = "In addition to restricting apps on iPhone, iPad, iPod Touch, and Android devices, Pumpic allows monitoring all daily activities and Internet use. The app offers accurate location tracking and remote control of the target device. More than 24 features ensure reliable protection for all of life emergencies."
         blockBg="light"
+        android = "yes"
+        storeLinkText = "Go to Store"
         }
 
         {* description = "Install the iPad parental control app on your kid’s tablet and start monitoring right away. Log in to your Control Panel and view all the information from the target device. It can be accessed from anywhere including desktop computers, laptops, smartphones, and tablets. In addition to data monitoring, the Control Panel allows you to set limits, block tablet activities, and lock the target device permanently."

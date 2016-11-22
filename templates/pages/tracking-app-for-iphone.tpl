@@ -49,6 +49,7 @@
             planPackageBuy = "yes"
             block_video = "no"
             block_video_src = "https://www.youtube.com/embed/Atg0CbaytAY"
+            Android = "no"
         } {* ?rel=0&wmode=transparent&fs=0&autoplay=1&modestbranding=1&autohide=1 *}
         
         {include file='../includes/content/plans.tpl'}
@@ -184,10 +185,12 @@
 		<p>At the same time, it is important to say that the parental monitoring apps, no matter how useful they are, can’t replace the real parental guidance and may just assist in parenting in terms of a busy pace of the modern life. The attention and care of moms and dads expressed towards their children are priceless. So, do your best and spend as much time with your beloved little ones as possible.</p>
 {EndContent}
         
-        {include file='../includes/content/features-table.tpl'
+        {include file='../includes/content/features-table-new.tpl'
         title = "Multiple Threats – One Solution"
         description = "Pumpic is a state-of-the-art parental control app. Its 24 magnificent monitoring features ensure all-round protection for your kids from online and offline dangers of the modern world. You can seamlessly use it on Apple devices, including the latest iPhone 7. Utilizing Pumpic provides you with the alternative to taking your kids’ mobile phone away or forbidding them to do things you do not approve. Instead, you are empowered to keep your eyes open and act according to the situation."
         blockBg="light"
+            icloud = "yes"
+            storeLinkText = "Start Tracking"
         } 
  
 

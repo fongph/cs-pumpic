@@ -47,6 +47,7 @@
 			block_video_src = "https://www.youtube.com/embed/Atg0CbaytAY"
             listText = "control cell phone usage|follow online activity|track routes and location"
             planPackageBuy = "yes"
+             Icloud = "no"
           }
           {* ?rel=0&wmode=transparent&fs=0&autoplay=1&modestbranding=1&autohide=1 *}
          {*listText = "control cell phone usage|follow online activity|track routes and location"*}    
@@ -204,10 +205,12 @@
         </div>
 </div>   
                                         
-{include file='../includes/content/features-table.tpl'
+{include file='../includes/content/features-table-new.tpl'
         title = "One Solution to Many Problems"
         description = "Pumpic is designed to deal with any monitoring option you might need and provides multiple activity control functions including content and media filtering software. The list of its features currently counts 24 components, and they keep coming in making the app one-stop solution for many problems that concerned parents may face. From calls and text messages to browsers and chats, from contacts and calendar to multimedia and GPS location – Pumpic covers it all to ensure your loved ones are safe and sound."
         blockBg="light"
+    android = "yes"
+    storeLinkText = "Go to Store"
 }                                        
                                         
 {*<div class="dark">

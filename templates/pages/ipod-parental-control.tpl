@@ -47,6 +47,7 @@
             planPackageBuy = "yes"
             block_video = "yes"
             block_video_src = "https://www.youtube.com/embed/Atg0CbaytAY"
+            Android = "no"
         } {* ?rel=0&wmode=transparent&fs=0&autoplay=1&modestbranding=1&autohide=1 *}
         
         {include file='../includes/content/plans.tpl'}
@@ -159,10 +160,11 @@
         </div>
 </div>
         
-        {include file='../includes/content/features-table.tpl'
+        {include file='../includes/content/features-table-new.tpl'
         title = "Use Monitoring Benefits to the Fullest"
         description = "Pumpic provides reliable iPod monitoring for parents. The app includes more than 24 monitoring features that allow all-round security remotely. Device use, games, online activities, and even more become visible to you as soon as you install Pumpic on your kids’ iPod."
         blockBg="dark"
+        icloud = "yes"
         } 
         
         {include file='../includes/content/ipad.tpl' 

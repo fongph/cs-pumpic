@@ -370,9 +370,9 @@
 
         <style>
             @media (max-width: 480px){
-                .table-padding{
-                    padding-bottom: 0;
-                }
+                /*.table-padding{*/
+                    /*padding-bottom: 0;*/
+                /*}*/
                 #block-content{
                     padding-top: 0;
                 }

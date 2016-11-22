@@ -362,7 +362,7 @@
                                 {/if}
                             {/if}
                             {if $android == "yes"}
-                            <a href="/all-features.html#android" class="btn btn-green ga-action-click" ga-category="features-block" ga-action="click" ga-label="all-features" rel="nofollow"}>
+                            <a href="/all-features.html#android" class="btn btn-green ga-action-click" ga-category="features-block" ga-action="click" ga-label="all-features" rel="nofollow">
                                 All Features</a>
                                 {if $storeLink != "no"}
                                     <a href="/store.html#android" class="btn btn-default ga-action-click" ga-category="features-block" ga-action="click" ga-label="store" rel="nofollow">

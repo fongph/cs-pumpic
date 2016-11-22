@@ -269,7 +269,6 @@
                                 ga-label="buy android basic"
                                 value="true" type="submit" name="price[submit]">Buy Basic</button>
                     </form>
-                    <div class="space_line">&nbsp;</div>
                 </div>
             </div>
         </div>
@@ -324,7 +323,6 @@
                                 ga-label="buy android premium"
                                 value="true" type="submit" name="price[submit]">Buy Premium</button>
                     </form>
-                    <div class="space_line">&nbsp;</div>
                 </div>
             </div>
         </div>

@@ -1756,14 +1756,19 @@ div.symbol {
     margin: 0px 8px 0px 6px;
 }
 
-.last-child-hidden a{
+.last-child-hidden {
+    a {
     color: #16a89e !important;
+    }
 }
 
 
-@media (max-width: 480px){
-    .button-more-detailes{
-        display: none;
+@media (max-width: 333px){
+    .button-more-detailes {
+        display: block;
+        > .btn:not(:last-child) {
+            margin-bottom: 10px;
+        }
     }
 
 }

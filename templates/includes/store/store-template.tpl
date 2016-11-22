@@ -12,9 +12,15 @@
                             <caption>
                                 <div class="filter_fe">
                                     <ul class="filter_list">
-                                        <li id="filter-ios" class="filter_item filter-active"><i class="fa fa-apple filter_icon"></i> <b>iOS</b> <span class="filter_version _version-hide-xs">{$ver_icloud_bot} - {$ver_icloud_up}</span><span class="filter_version"> (iCloud)</span></li>
-                                        <li id="filter-android" class="filter_item"><i class="fa fa-android filter_icon"></i> <b>Android</b> <span class="filter_version _version-hide-xs">{$ver_android_bot} - {$ver_android_up}</span></li>
-                                        <li id="filter-ios-jb" class="filter_item"><i class="fa fa-unlock-alt fa-lg filter_icon" style="line-height: 1;"></i> <b>iOS</b><span class="filter_version _version-hide-xs"> {$ver_ios_bot} - {$ver_jailbreak_up}</span><span class="filter_version"> (jailbreak)</span></li>
+                                        <li id="filter-ios" class="filter_item filter-active"><i class="fa fa-apple filter_icon"></i> <b>iOS</b> <span class="filter_version _version-hide-xs">{$ver_icloud_bot} - {$ver_icloud_up}</span><span class="filter_version"> (iCloud)</span>
+                                            <div class="filter_version">13 features</div>
+                                        </li>
+                                        <li id="filter-android" class="filter_item"><i class="fa fa-android filter_icon"></i> <b>Android</b> <span class="filter_version _version-hide-xs">{$ver_android_bot} - {$ver_android_up}</span>
+                                            <div class="filter_version">24 features</div>
+                                        </li>
+                                        <li id="filter-ios-jb" class="filter_item"><i class="fa fa-unlock-alt fa-lg filter_icon" style="line-height: 1;"></i> <b>iOS</b><span class="filter_version _version-hide-xs"> {$ver_ios_bot} - {$ver_jailbreak_up}</span><span class="filter_version"> (jailbreak)</span>
+                                            <div class="filter_version">24 features</div>
+                                        </li>
                                     </ul>
                                 </div>
                                 <div class="prod-head clearfix">
@@ -41,7 +47,7 @@
                                                 <li><span>Target iCloud (Apple ID) password is required</span></li>
                                                 <li><span>Might require physical access to check/adjust settings</span></li>
                                             </ul>
-                                            <a href="#icloud-features-h" class="a-default prod-features hidden-xs">features</a>
+                                            <a href="#icloud-features-h" class="a-default prod-features hidden-xs">Show all 13 features</a>
                                         </div>
                                     </div>
                                     {*---LIST ICLOUD---*}
@@ -68,7 +74,7 @@
                                                 <li class="hidden-xs"><span>Root might be needed for <a href="#root-h" class="prod-list__link hidden-xs">some monitoring features</a><span class="visible-xs">some monitoring features</span></span></li>
                                                 <li class="visible-xs"><span>Root might be needed for some monitoring features</span></span></li>
                                             </ul>
-                                            <a href="#android-features-h" class="a-default prod-features hidden-xs">features</a>
+                                            <a href="#android-features-h" class="a-default prod-features hidden-xs">Show all 24 features</a>
                                         </div>
                                     </div>
                                     {*---LIST ANDROID---*}
@@ -94,7 +100,7 @@
                                                 <li><span>Physical access and target device jailbreak are required</span></li>
                                                 <li><span>The app is visible but password-protected</span></li>
                                             </ul>
-                                            <a href="#jb-features-h" class="a-default prod-features hidden-xs">features</a>
+                                            <a href="#jb-features-h" class="a-default prod-features hidden-xs">Show all 24 features</a>
                                         </div>
                                     </div>
                                     {*---LIST-IOS-JB---*}
@@ -109,60 +115,67 @@
                                     <div data-info-block="ios">
                                         <div class="premium_wr prod-icloud">
                                             <div class="pricep">
-                                                <div class="wrapper_pack clearfix">
-                                                    <div class="wr_pack_premium wr_icloud _single-pack-icloud"></div>
-                                                    <div class="wr_pack_double_premium wr_icloud-double _double-pack-icloud"></div>
-                                                    <div class="wr_price_big">
-                                                        <span></span><div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr icloud-price-per-month" >{$defaultIosiCloudPrice}</div></div><span>/ month</span>
-                                                    </div>
-                                                </div>
-                                                <div class="list_price icloud-list_price">
-                                                    <form name="price_premium" method="POST" action="/buy.html" class="buy-form-with-offer" autocomplete="off" >
-                                                        <div class="save__2plan">
-                                                            <div class="save__text label-touch">
-                                                                <input type="checkbox" data-group="icloud" name="icloud-40off" id="icloud-40off-main" data-checkboxes="icloud-40off">
-                                                                <label for="icloud-40off-main">
-                                                                <span>Save 40%</span> on the 2nd plan. <div class="limited-time">Limited time offer!</div>
-                                                                </label>
-                                                            </div>
+                                                <div class="buy-wrapper">
+                                                    <div class="wrapper_pack clearfix">
+                                                        <div class="wr_pack_premium wr_icloud _single-pack-icloud"></div>
+                                                        <div class="wr_pack_double_premium wr_icloud-double _double-pack-icloud"></div>
+                                                        <div class="wr_price_big">
+                                                            <span></span><div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr icloud-price-per-month" >{$defaultIosiCloudPrice}</div></div><span>/ month</span>
                                                         </div>
-                                                        <input id='product_price_icloud' type='hidden' name='price[productID]' value='{if isset($defaultIosiCloud)}{$defaultIosiCloud}{else}0{/if}' class="product_price"/>
-                                                        <ul>
-                                                            {foreach from=$getProducts.iosiCloud key=key item=item}
-                                                                <li>
-                                                                    <label class="label_radio hover_label_radio {if $item.period == '12'}r_on{else}r_off{/if}">
-                                                                        <input class="data-price" data-target=".icloud-price-per-month" data-cur="usd" data-price-usd="{$item.price}" data-offer-price-usd="{$getProducts.iosiCloudDouble[$key].price}" data-period="{$item.period}" data-product="{$item.id}" data-offer-product="{$getProducts.iosiCloudDouble[$key].id}" data-group="icloud" name="optionsRadios" id="optionsRadios{$item.id}1" value="{$item.id}" type="radio"{if $item.period == '12'} checked="checked"{/if} />
-                                                                        <span class="sp">
+                                                    </div>
+                                                    <div class="list_price icloud-list_price">
+                                                        <form name="price_premium" method="POST" action="/buy.html" class="buy-form-with-offer" autocomplete="off" >
+                                                            {*<div class="save__2plan">*}
+                                                            {*<div class="save__text label-touch">*}
+                                                            {*<input type="checkbox" data-group="icloud" name="icloud-40off" id="icloud-40off-main" data-checkboxes="icloud-40off">*}
+                                                            {*<label for="icloud-40off-main">*}
+                                                            {*<span>Save 40%</span> on the 2nd plan. <div class="limited-time">Limited time offer!</div>*}
+                                                            {*</label>*}
+                                                            {*</div>*}
+                                                            {*</div>*}
+                                                            <input id='product_price_icloud' type='hidden' name='price[productID]' value='{if isset($defaultIosiCloud)}{$defaultIosiCloud}{else}0{/if}' class="product_price"/>
+                                                            <ul>
+                                                                {foreach from=$getProducts.iosiCloud key=key item=item}
+                                                                    <li>
+                                                                        <label class="label_radio hover_label_radio {if $item.period == '12'}r_on{else}r_off{/if}">
+                                                                            <input class="data-price" data-target=".icloud-price-per-month" data-cur="usd" data-price-usd="{$item.price}" data-offer-price-usd="{$getProducts.iosiCloudDouble[$key].price}" data-period="{$item.period}" data-product="{$item.id}" data-offer-product="{$getProducts.iosiCloudDouble[$key].id}" data-group="icloud" name="optionsRadios" id="optionsRadios{$item.id}1" value="{$item.id}" type="radio"{if $item.period == '12'} checked="checked"{/if} />
+                                                                            <span class="sp">
                                                                             <strong>{$item.period}</strong> {if $item.period == 1}month{else}months{/if}
                                                                         </span>
 
-                                                                        <div class="box-small-package">
-                                                                            <div class="offer_old_price"><div class="box-currence strike__currence"><div class="symbol" attr-iso="usd">$</div><div class="curr">{$item.price * 2|string_format:"%.2f"}</div></div></div>
-                                                                        </div>
+                                                                            <div class="box-small-package">
+                                                                                <div class="offer_old_price"><div class="box-currence strike__currence"><div class="symbol" attr-iso="usd">$</div><div class="curr">{$item.price * 2|string_format:"%.2f"}</div></div></div>
+                                                                            </div>
 
-                                                                        <div class="package_price">
-                                                                            <strong>
-                                                                                <div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr">{$item.price}</div></div>
-                                                                            </strong>
-                                                                        </div>
-                                                                        <div class="package_offer_price">
-                                                                            <strong>
-                                                                                <div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr">{$getProducts.iosiCloudDouble[$key].price}</div></div>
-                                                                            </strong>
-                                                                        </div>
-                                                                    </label>
-                                                                </li>
-                                                            {/foreach}
-                                                        </ul>
-                                                        {*<input type="checkbox" data-group="premium" name="icloud-40off" class="">*}
-                                                        <button class="btn btn-default ga-action-click"
-                                                                ga-action ="click"
-                                                                ga-category="store"
-                                                                ga-label="buy icloud"
-                                                                value="true" type="submit" name="price[submit]">Buy</button>
-                                                    </form>
-                                                    <div class="show_premium_features _icloud-f"><div class="show-f _icloud-f">Show features <i class="fa fa-chevron-down"></i></div><div class="hide-f _icloud-f" style="display: none;">Hide features  <i class="fa fa-chevron-up"></i></div></div>
+                                                                            <div class="package_price">
+                                                                                <strong>
+                                                                                    <div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr">{$item.price}</div></div>
+                                                                                </strong>
+                                                                            </div>
+                                                                            <div class="package_offer_price">
+                                                                                <strong>
+                                                                                    <div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr">{$getProducts.iosiCloudDouble[$key].price}</div></div>
+                                                                                </strong>
+                                                                            </div>
+                                                                        </label>
+                                                                    </li>
+                                                                {/foreach}
+                                                            </ul>
+                                                            <div class="double_offer checkbox">
+                                                                <label>
+                                                                    <input type="checkbox" data-group="icloud" name="get-40off">
+                                                                    Get the 2nd plan with <span>40% OFF!</span>
+                                                                </label>
+                                                            </div>
+                                                            <button class="btn btn-default ga-action-click"
+                                                                    ga-action ="click"
+                                                                    ga-category="store"
+                                                                    ga-label="buy icloud"
+                                                                    value="true" type="submit" name="price[submit]">Buy</button>
+                                                        </form>
+                                                        {*<div class="show_premium_features _icloud-f"><div class="show-f _icloud-f">Show features <i class="fa fa-chevron-down"></i></div><div class="hide-f _icloud-f" style="display: none;">Hide features  <i class="fa fa-chevron-up"></i></div></div>*}
 
+                                                    </div>
                                                 </div>
                                                 <div class="premium_fe _icloud-f">
                                                     <div class="premium_h" style="text-transform: none;" id="icloud-features-h">
@@ -223,14 +236,13 @@
                                                             <p class="icloud-features__name"><i class="icon-ok"></i>Contacts</p>
                                                             <p class="icloud-features__info m0">View contact list including names, addresses, numbers and emails.</p>
                                                         </li>
-
                                                     </ul>
                                                     <div class="table_title free-label">
                                                         <h3 class="free-label__headname">FREE:</h3>
                                                         <span class="free-label__item"><i class="icon-ok"></i>Remote control panel</span>
                                                         <span class="free-label__item"><i class="icon-ok"></i>Software updates</span>
                                                     </div>
-                                                    <div class="show_premium_features _icloud-f"><div class="show-f _icloud-f">Show features <i class="fa fa-chevron-down"></i></div><div class="hide-f _icloud-f" style="display: none;">Hide features  <i class="fa fa-chevron-up"></i></div></div>
+                                                    {*<div class="show_premium_features _icloud-f"><div class="show-f _icloud-f">Show features <i class="fa fa-chevron-down"></i></div><div class="hide-f _icloud-f" style="display: none;">Hide features  <i class="fa fa-chevron-up"></i></div></div>*}
 
                                                 </div>
 
@@ -244,14 +256,13 @@
                                                     </div>
                                                     <div class="list_price icloud-list_price" id="foot_h4">
                                                         <form name="price_premium_bottom" method="POST" action="/buy.html" class="buy-form-with-offer" autocomplete="off">
-                                                            <div class="save__2plan save__second" style="top: 0;">
-                                                                <div class="save__text label-touch">
-                                                                    <input type="checkbox" data-group="icloud" name="icloud-40off" id="icloud-40off-main" data-checkboxes="icloud-40off">
-                                                                    <label for="icloud-40off-main">
-                                                                    <span>Save 40%</span> on the 2nd plan. <div class="limited-time">Limited time offer!</div>
-                                                                    </label>
-                                                                </div>
-                                                            </div>
+                                                            {*<div class="save__2plan save__second" style="top: 0;">*}
+                                                            {*<div class="save__text label-touch">*}
+                                                            {*<input type="checkbox" data-group="icloud" name="icloud-40off" id="icloud-40off-main" data-checkboxes="icloud-40off">*}
+                                                            {*<label for="icloud-40off-main">*}
+                                                            {*<span>Save 40%</span> on the 2nd plan. <div class="limited-time">Limited time offer!</div></label>*}
+                                                            {*</div>*}
+                                                            {*</div>*}
                                                             <input id='product_price_premium' type='hidden' name='price[productID]' value='{if isset($defaultIosiCloud)}{$defaultIosiCloud}{else}0{/if}' class="product_price" />
                                                             <ul>
                                                                 {foreach from=$getProducts.iosiCloud key=key item=item}
@@ -280,14 +291,19 @@
                                                                     </li>
                                                                 {/foreach}
                                                             </ul>
-                                                            {*<input type="checkbox" data-group="premium" name="icloud-40off" class="">*}
+                                                            <div class="double_offer checkbox">
+                                                                <label>
+                                                                    <input type="checkbox" data-group="icloud" name="get-40off">
+                                                                    Get the 2nd plan with <span>40% OFF!</span>
+                                                                </label>
+                                                            </div>
                                                             <button class="btn btn-default ga-action-click"
                                                                     ga-action ="click"
                                                                     ga-category="store"
                                                                     ga-label="buy icloud"
                                                                     value="true" type="submit" name="price[submit]">Buy</button>
                                                         </form>
-                                                        <div class="space_line">&nbsp;</div>
+                                                        {*<div class="space_line">&nbsp;</div>*}
                                                     </div>
                                                 </div>
                                             </div>
@@ -305,61 +321,67 @@
                                     <div data-info-block="ios-jb" style="display: none;">
                                         <div class="premium_wr prod-icloud">
                                             <div class="pricep">
-                                                <div class="wrapper_pack clearfix">
-                                                    <div class="wr_pack_premium wr_icloud_jb _single-pack-jailbreak"></div>
-                                                    <div class="wr_pack_double_premium wr_icloud_jb-double _double-pack-jailbreak"></div>
-                                                    <div class="wr_price_big">
-                                                        <span></span><div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr jailbreak-price-per-month" >{$defaultPremiumPrice}</div></div><span>/ month</span>
-                                                    </div>
-                                                </div>
-                                                <div class="list_price icloud-list_price">
-                                                    <form name="price_premium" method="POST" action="/buy.html" class="buy-form-with-offer" autocomplete="off" >
-                                                        <div class="save__2plan">
-                                                            <div class="save__text label-touch">
-                                                                <input type="checkbox" name="jailbreak-40off" id="jailbreak-40off-main" data-checkboxes="jailbreak-40off">
-                                                                <label for="jailbreak-40off-main">
-                                                                <span>Save 40%</span> on the 2nd plan. <div class="limited-time">Limited time offer!</div>
-                                                                </label>
-                                                            </div>
+                                                <div class="buy-wrapper hidden-mobile">
+                                                    <div class="wrapper_pack clearfix">
+                                                        <div class="wr_pack_premium wr_icloud_jb _single-pack-jailbreak"></div>
+                                                        <div class="wr_pack_double_premium wr_icloud_jb-double _double-pack-jailbreak"></div>
+                                                        <div class="wr_price_big">
+                                                            <span></span><div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr jailbreak-price-per-month" >{$defaultPremiumPrice}</div></div><span>/ month</span>
                                                         </div>
-                                                        <input id='product_price_premium' type='hidden' name='price[productID]' value='{if isset($getDefaultIosJailbreak)}{$getDefaultiosJailbreak}{else}0{/if}' class="product_price"/>
+                                                    </div>
+                                                    <div class="list_price icloud-list_price">
+                                                        <form name="price_premium" method="POST" action="/buy.html" class="buy-form-with-offer" autocomplete="off" >
+                                                            {*<div class="save__2plan">*}
+                                                            {*<div class="save__text label-touch">*}
+                                                            {*<input type="checkbox" name="jailbreak-40off" id="jailbreak-40off-main" data-checkboxes="jailbreak-40off">*}
+                                                            {*<label for="jailbreak-40off-main">*}
+                                                            {*<span>Save 40%</span> on the 2nd plan. <div class="limited-time">Limited time offer!</label></div>*}
+                                                            {*</div>*}
+                                                            {*</div>*}
+                                                            <input id='product_price_premium' type='hidden' name='price[productID]' value='{if isset($getDefaultIosJailbreak)}{$getDefaultiosJailbreak}{else}0{/if}' class="product_price"/>
 
-                                                        <ul>
-                                                            {foreach from=$getProducts.iosJailbreak key=key item=item}
-                                                                <li>
-                                                                    <label class="label_radio hover_label_radio {if $item.period == '12'}r_on{else}r_off{/if}">
-                                                                        <input class="data-price" data-target=".jailbreak-price-per-month" data-cur="usd" data-price-usd="{$item.price}" data-offer-price-usd="{$getProducts.iosJailbreakDouble[$key].price}" data-period="{$item.period}" data-product="{$item.id}" data-offer-product="{$getProducts.iosJailbreakDouble[$key].id}" data-group="jailbreak"  name="optionsRadios" id="optionsRadios{$item.id}1" value="{$item.id}" type="radio"{if $item.period == '12'} checked="checked"{/if} />
-                                                                        <span class="sp">
+                                                            <ul>
+                                                                {foreach from=$getProducts.iosJailbreak key=key item=item}
+                                                                    <li>
+                                                                        <label class="label_radio hover_label_radio {if $item.period == '12'}r_on{else}r_off{/if}">
+                                                                            <input class="data-price" data-target=".jailbreak-price-per-month" data-cur="usd" data-price-usd="{$item.price}" data-offer-price-usd="{$getProducts.iosJailbreakDouble[$key].price}" data-period="{$item.period}" data-product="{$item.id}" data-offer-product="{$getProducts.iosJailbreakDouble[$key].id}" data-group="jailbreak"  name="optionsRadios" id="optionsRadios{$item.id}1" value="{$item.id}" type="radio"{if $item.period == '12'} checked="checked"{/if} />
+                                                                            <span class="sp">
                                                                             <strong>{$item.period}</strong> {if $item.period == 1}month{else}months{/if}
                                                                         </span>
 
-                                                                        <div class="box-small-package">
-                                                                            <div class="offer_old_price"><div class="box-currence strike__currence"><div class="symbol" attr-iso="usd">$</div><div class="curr">{$item.price * 2|string_format:"%.2f"}</div></div></div>
-                                                                        </div>
+                                                                            <div class="box-small-package">
+                                                                                <div class="offer_old_price"><div class="box-currence strike__currence"><div class="symbol" attr-iso="usd">$</div><div class="curr">{$item.price * 2|string_format:"%.2f"}</div></div></div>
+                                                                            </div>
 
-                                                                        <div class="package_price">
-                                                                            <strong>
-                                                                                <div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr">{$item.price}</div></div>
-                                                                            </strong>
-                                                                        </div>
-                                                                        <div class="package_offer_price">
-                                                                            <strong>
-                                                                                <div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr">{$getProducts.iosJailbreakDouble[$key].price}</div></div>
-                                                                            </strong>
-                                                                        </div>
-                                                                    </label>
-                                                                </li>
-                                                            {/foreach}
-                                                        </ul>
-                                                        <input type="checkbox" data-group="jailbreak" name="jailbreak-40off" class="hidden">
-                                                        <button class="btn btn-default ga-action-click"
-                                                                ga-action ="click"
-                                                                ga-category="store"
-                                                                ga-label="buy jailbreak"
-                                                                value="true" type="submit" name="price[submit]">Buy</button>
-                                                    </form>
+                                                                            <div class="package_price">
+                                                                                <strong>
+                                                                                    <div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr">{$item.price}</div></div>
+                                                                                </strong>
+                                                                            </div>
+                                                                            <div class="package_offer_price">
+                                                                                <strong>
+                                                                                    <div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr">{$getProducts.iosJailbreakDouble[$key].price}</div></div>
+                                                                                </strong>
+                                                                            </div>
+                                                                        </label>
+                                                                    </li>
+                                                                {/foreach}
+                                                            </ul>
+                                                            <div class="double_offer checkbox">
+                                                                <label>
+                                                                    <input type="checkbox" data-group="jailbreak" name="get-40off">
+                                                                    Get the 2nd plan with <span>40% OFF!</span>
+                                                                </label>
+                                                            </div>
+                                                            <button class="btn btn-default ga-action-click"
+                                                                    ga-action ="click"
+                                                                    ga-category="store"
+                                                                    ga-label="buy jailbreak"
+                                                                    value="true" type="submit" name="price[submit]">Buy</button>
+                                                        </form>
+                                                    </div>
                                                 </div>
-                                                <div class="show_premium_features _jailbreak-f"><div class="show-f _jailbreak-f">Show features <i class="fa fa-chevron-down"></i></div><div class="hide-f _jailbreak-f" style="display: none;">Hide features  <i class="fa fa-chevron-up"></i></div></div>
+                                                {*<div class="show_premium_features _jailbreak-f"><div class="show-f _jailbreak-f">Show features <i class="fa fa-chevron-down"></i></div><div class="hide-f _jailbreak-f" style="display: none;">Hide features  <i class="fa fa-chevron-up"></i></div></div>*}
 
                                                 <div class="premium_fe _jailbreak-f">
                                                     <div class="premium_h" style="text-transform: none;" id="jb-features-h">
@@ -482,11 +504,11 @@
                                                         <span class="free-label__item"><i class="icon-ok"></i>Remote device lock</span>
                                                         <span class="free-label__item"><i class="icon-ok"></i>Sim card change alert</span>
                                                     </div>
-                                                    <div class="show_premium_features _jailbreak-f"><div class="show-f _jailbreak-f">Show features <i class="fa fa-chevron-down"></i></div><div class="hide-f _jailbreak-f" style="display: none;">Hide features  <i class="fa fa-chevron-up"></i></div></div>
+                                                    {*<div class="show_premium_features _jailbreak-f"><div class="show-f _jailbreak-f">Show features <i class="fa fa-chevron-down"></i></div><div class="hide-f _jailbreak-f" style="display: none;">Hide features  <i class="fa fa-chevron-up"></i></div></div>*}
 
                                                 </div>
 
-                                                <div class="prod-icloud prod-2 _jailbreak-f">
+                                                <div class="prod-icloud _jailbreak-f">
                                                     <div class="wrapper_pack wrapper_pack2 clearfix">
                                                         <div class="wr_pack_premium wr_icloud_jb _single-pack-jailbreak"></div>
                                                         <div class="wr_pack_double_premium wr_icloud_jb-double _double-pack-jailbreak"></div>
@@ -496,14 +518,14 @@
                                                     </div>
                                                     <div class="list_price icloud-list_price">
                                                         <form name="price_premium" method="POST" action="/buy.html" class="buy-form-with-offer" autocomplete="off" >
-                                                            <div class="save__2plan">
-                                                                <div class="save__text label-touch">
-                                                                    <input type="checkbox" name="jailbreak-40off" id="jailbreak-40off-main" data-checkboxes="jailbreak-40off">
-                                                                    <label for="jailbreak-40off-main">
-                                                                    <span>Save 40%</span> on the 2nd plan. <div class="limited-time">Limited time offer!</div>
-                                                                    </label>
-                                                                </div>
-                                                            </div>
+                                                            {*<div class="save__2plan">*}
+                                                            {*<div class="save__text label-touch">*}
+                                                            {*<input type="checkbox" name="jailbreak-40off" id="jailbreak-40off-main" data-checkboxes="jailbreak-40off">*}
+                                                            {*<label for="jailbreak-40off-main">*}
+                                                            {*<span>Save 40%</span> on the 2nd plan. <div class="limited-time">Limited time offer!</div>*}
+                                                            {*</label>*}
+                                                            {*</div>*}
+                                                            {*</div>*}
                                                             <input id='product_price_premium' type='hidden' name='price[productID]' value='{if isset($getDefaultIosJailbreak)}{$getDefaultiosJailbreak}{else}0{/if}' class="product_price"/>
 
                                                             <ul>
@@ -533,14 +555,19 @@
                                                                     </li>
                                                                 {/foreach}
                                                             </ul>
-                                                            <input type="checkbox" data-group="jailbreak" name="jailbreak-40off" class="hidden">
+                                                            <div class="double_offer checkbox">
+                                                                <label>
+                                                                    <input type="checkbox" data-group="jailbreak" name="get-40off">
+                                                                    Get the 2nd plan with <span>40% OFF!</span>
+                                                                </label>
+                                                            </div>
                                                             <button class="btn btn-default ga-action-click"
                                                                     ga-action ="click"
                                                                     ga-category="store"
                                                                     ga-label="buy jailbreak"
                                                                     value="true" type="submit" name="price[submit]">Buy</button>
                                                         </form>
-                                                        <div class="space_line">&nbsp;</div>
+                                                        {*<div class="space_line">&nbsp;</div>*}
                                                     </div>
                                                 </div>
 

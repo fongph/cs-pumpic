@@ -43,9 +43,6 @@
             .filter_icon:before {
                 margin-right: .2em;
             }
-            .filter-active {
-                background-color: #e0e0e0;
-            }
             .filter-active:after {
                 display: none;
             }

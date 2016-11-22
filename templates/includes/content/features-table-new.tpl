@@ -8,7 +8,7 @@
         <div class="container">
                 <h2 class="text-center">{if isset($title)}{$title}{else}Useful Features for Every Careful Parent{/if}</h2>
                 <div class="row">
-                    <div id="table-container" class="table-col-3 table-md-col-3 table-sm-col-3">
+                    <div id="table-container" class="ft-table__wrapper table-md-col-3 table-sm-col-3">
                         <article>
                             {if isset($description)}
                                 {$description}
@@ -17,221 +17,367 @@
                             {/if}
                         </article>
 
-                        <div class="filter-descr">
-                            <div class="filter_fe">
-                                <ul class="filter_list">
-                                    <li class="filter_item _features-filter{if !$android  && !$jailbreak} filter-active{/if}" data-filter="os-ios"><i class="fa fa-apple filter_icon"></i> <b>iOS</b> <span class="filter_version _version-hide-xs">{$ver_icloud_bot} - {$ver_icloud_up}</span><span class="filter_version"> (iCloud)</span></li>
-                                    <li class="filter_item _features-filter{if $android == "yes"} filter-active{/if}" data-filter="os-android"><i class="fa fa-android filter_icon"></i> <b>Android</b> <span class="filter_version _version-hide-xs">{$ver_android_bot} - {$ver_android_up}</span></li>
-                                    <li class="filter_item _features-filter{if $jailbreak == "yes"} filter-active{/if}" data-filter="os-jailbreak"><i class="fa fa-unlock-alt filter_icon"></i> <b>iOS</b><span class="filter_version _version-hide-xs"> {$ver_ios_bot} - {$ver_jailbreak_up}</span><span class="filter_version"> (jailbreak)</span></li>
+                            <div class="ft-table">
+                                <h2 class="ft-table__headline">
+                                    Supported OS Versions:
+                                </h2>
+                                <ul class="ft-table__list">
+                                    <li class="ft-table__item">
+                                        <div class="os-label label-black">
+                                            <i class="fa fa-apple"></i>IOS
+                                        </div>
+                                        &mdash;
+                                        <span class="ft-table__os"><i class="fa fa-apple fa-lg"></i> IOS </span>
+                                        <span class="ft-table__os-version">{$ver_icloud_bot} - {$ver_icloud_up}</span>
+                                        <div class="ft-table__descr">iCloud password required</div>
+                                    </li>
+                                    <li class="ft-table__item">
+                                        <div class="os-label label-green large">
+                                            <i class="fa fa-android"></i>
+                                        </div>
+                                        &mdash;
+                                        <span class="ft-table__os"><i class="fa fa-android fa-lg"></i> Android </span>
+                                        <span class="ft-table__os-version">{$ver_android_bot} - {$ver_android_up}</span>
+                                        <div class="ft-table__descr">Some features require root</div>
+                                    </li>
+                                    <li class="ft-table__item">
+                                        <div class="os-label label-gray">
+                                            <i class="fa fa-unlock-alt"></i>IOS
+                                        </div>
+                                        &mdash;
+                                        <span class="ft-table__os"><i class="fa fa-apple fa-lg"></i> IOS </span>
+                                        <span class="ft-table__os-version">{$ver_ios_bot} - {$ver_jailbreak_up}</span>
+                                        <div class="ft-table__descr">Jailbreak is required</div>
+                                    </li>
                                 </ul>
                             </div>
-                            {if $android == "yes" || $jailbreak == "yes"}
-                                {*noindex ios*}
-                            {/if}
-                            <div class="prod-head__wrapper _features-content" data-feature="os-ios"
-                                 {if $android == "yes" || $jailbreak == "yes"}style="display: none;"{/if}>
-                                <div class="filter-comment">No Jailbreak required</div>
-                                <span class="prod-head__device phone">iPhone</span>
-                                <span class="prod-head__device tablet">iPad</span>
-                                <span class="prod-head__device smart">iPod Touch</span>
-                            </div>
-                            {if $android == "yes" || $jailbreak == "yes"}
-                                {*noindex ios*}
-                            {/if}
-                            {if !$android}
-                                {*noindex android*}
-                            {/if}
-                            <div class="prod-head__wrapper _features-content" data-feature="os-android" {if !$android}style="display: none;"{/if}>
-                                <div class="filter-comment">Rooting is required for extended functionality</div>
-                                <span class="prod-head__device phone">Smartphone</span>
-                                <span class="prod-head__device tablet">Tablet</span>
-                            </div>
-                            {if !$android}
-                                {*noindex android*}
-                            {/if}
-                            {if !$jailbreak}
-                                {*noindex jailbreak*}
-                            {/if}
-                            <div class="prod-head__wrapper _features-content" data-feature="os-jailbreak" {if !$jailbreak}style="display: none;"{/if}>
-                                <div class="filter-comment">Jailbreak required</div>
-                                <span class="prod-head__device phone">iPhone</span>
-                                <span class="prod-head__device tablet">iPad</span>
-                                <span class="prod-head__device smart">iPod Touch</span>
-                            </div>
-                            {if !$jailbreak}
-                                {*noindex jailbreak*}
-                            {/if}
-                        </div>
-                        {if $android == "yes" || $jailbreak == "yes"}
-                            {*noindex ios*}
-                        {/if}
-                        <section class="_features-content" data-feature="os-ios"
-                             {if $android == "yes" || $jailbreak == "yes"}style="display: none;"{/if}>
-                            <div class="tab col-item-3 col-md-item-3 col-sm-item-3">
+
+                        <section class="_features-content">
+                            <div class="tab col-item-3 col-md-item-3 col-sm-item-3 last">
                                 <ul>
-                                    <li><i class="i-features-sms"></i> <span onclick="window.location='http://{$domain}/mobile-sms-spy.html'">Monitor SMS and iMessages</span></li>
-                                    <li><i class="i-features-cell-history"></i> {if !in_array('call-monitoring-software', $_notVisible)}<span onclick="window.location='http://{$domain}/call-monitoring-software.html'">Monitor Calls History{else}Monitor Calls History{/if}</li>
-                                    <li><i class="i-features-calendar"></i> View Calendar</li>
-                                    <li><i class="i-features-contacts"></i> <span onclick="window.location='http://{$domain}/monitor-phone-contacts.html'"> View Contacts</span></li>
+                                    <li><i class="i-features-sms"></i> <span onclick="window.location='http://{$domain}/mobile-sms-spy.html'">Monitor SMS and MMS</span>
+                                        <div class="os-label__wrapper">
+                                            <div class="os-label label-black">
+                                                <i class="fa fa-apple"></i>IOS
+                                            </div>
+                                            <div class="os-label label-green large">
+                                                <i class="fa fa-android"></i>
+                                            </div>
+                                            <div class="os-label label-gray">
+                                                <i class="fa fa-unlock-alt"></i>IOS
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li><i class="i-features-cell-history"></i> {if !in_array('call-monitoring-software', $_notVisible)}<span onclick="window.location='http://{$domain}/call-monitoring-software.html'">Monitor Calls History{else}Monitor Calls History{/if}
+                                        <div class="os-label__wrapper">
+                                            <div class="os-label label-black">
+                                                <i class="fa fa-apple"></i>IOS
+                                            </div>
+                                            <div class="os-label label-green large">
+                                                <i class="fa fa-android"></i>
+                                            </div>
+                                            <div class="os-label label-gray">
+                                                <i class="fa fa-unlock-alt"></i>IOS
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li><i class="i-features-calendar"></i> View Calendar
+                                        <div class="os-label__wrapper">
+                                            <div class="os-label label-black">
+                                                <i class="fa fa-apple"></i>IOS
+                                            </div>
+                                            <div class="os-label label-green large">
+                                                <i class="fa fa-android"></i>
+                                            </div>
+                                            <div class="os-label label-gray">
+                                                <i class="fa fa-unlock-alt"></i>IOS
+                                            </div>
+                                        </div>
+
+                                    </li>
+                                    <li><i class="i-features-contacts"></i> <span onclick="window.location='http://{$domain}/monitor-phone-contacts.html'"> View Contacts</span>
+                                        <div class="os-label__wrapper">
+                                            <div class="os-label label-black">
+                                                <i class="fa fa-apple"></i>IOS
+                                            </div>
+                                            <div class="os-label label-green large">
+                                                <i class="fa fa-android"></i>
+                                            </div>
+                                            <div class="os-label label-gray">
+                                                <i class="fa fa-unlock-alt"></i>IOS
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li><i class="i-features-email"></i> <span onclick="window.location='http://{$domain}/email-monitoring-software.html'">View Emails</span>
+                                        <div class="os-label__wrapper">
+                                            <div class="os-label label-green">
+                                                <i class="fa fa-android"></i>root
+                                            </div>
+                                            <div class="os-label label-gray">
+                                                <i class="fa fa-unlock-alt"></i>IOS
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li><i class="i-features-photos"></i> View Photos
+                                        <div class="os-label__wrapper">
+                                            <div class="os-label label-black">
+                                                <i class="fa fa-apple"></i>IOS
+                                            </div>
+                                            <div class="os-label label-green large">
+                                                <i class="fa fa-android"></i>
+                                            </div>
+                                            <div class="os-label label-gray">
+                                                <i class="fa fa-unlock-alt"></i>IOS
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li><i class="i-features-videocam"></i> View Videos
+                                        <div class="os-label__wrapper">
+                                            <div class="os-label label-green large">
+                                                <i class="fa fa-android"></i>
+                                            </div>
+                                            <div class="os-label label-gray">
+                                                <i class="fa fa-unlock-alt"></i>IOS
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li><i class="i-features-remote-activity-control-v2"></i> Remote Control Panel
+                                        <div class="os-label__wrapper">
+                                            <div class="os-label label-black">
+                                                <i class="fa fa-apple"></i>IOS
+                                            </div>
+                                            <div class="os-label label-green large">
+                                                <i class="fa fa-android"></i>
+                                            </div>
+                                            <div class="os-label label-gray">
+                                                <i class="fa fa-unlock-alt"></i>IOS
+                                            </div>
+                                        </div>
+                                    </li>
                                     {*<li><i class="i-features-kik-chat"></i> Monitor Kik</li>*}
                                 </ul>
                             </div>
 
                             <div class="tab col-item-3 col-md-item-3 col-sm-item-3">
                                 <ul>
-                                    <li><i class="i-features-browser"></i> <span onclick="window.location='http://{$domain}/browser-parental-control.html'">Control Browser</span></li>
-                                    {*<li><i class="i-features-app"></i> <span onclick="window.location='http://{$domain}/block-apps.html'">Control Applications</span></li>*}
-                                    <li><i class="i-features-view-bookmarks"></i> View Bookmarks</li>
-                                    <li><i class="i-features-view-notes"></i> View Notes</li>
-                                    <li><i class="i-features-photos"></i> View Photos</li>
+                                    <li><i class="i-features-browser"></i> <span onclick="window.location='http://{$domain}/browser-parental-control.html'">Control Browser</span>
+                                        <div class="os-label__wrapper">
+                                            <div class="os-label label-black">
+                                                <i class="fa fa-apple"></i>IOS
+                                            </div>
+                                            <div class="os-label label-green large">
+                                                <i class="fa fa-android"></i>
+                                            </div>
+                                            <div class="os-label label-gray">
+                                                <i class="fa fa-unlock-alt"></i>IOS
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li><i class="i-features-app"></i> <span onclick="window.location='http://{$domain}/block-apps.html'">Control Applications</span>
+                                        <div class="os-label__wrapper">
+                                            <div class="os-label label-green large">
+                                                <i class="fa fa-android"></i>
+                                            </div>
+                                            <div class="os-label label-gray">
+                                                <i class="fa fa-unlock-alt"></i>IOS
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li><i class="i-features-view-bookmarks"></i> View Bookmarks
+                                        <div class="os-label__wrapper">
+                                            <div class="os-label label-black">
+                                                <i class="fa fa-apple"></i>IOS
+                                            </div>
+                                            <div class="os-label label-green large">
+                                                <i class="fa fa-android"></i>
+                                            </div>
+                                            <div class="os-label label-gray">
+                                                <i class="fa fa-unlock-alt"></i>IOS
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li><i class="i-features-view-notes"></i> View Notes
+                                        <div class="os-label__wrapper">
+                                            <div class="os-label label-black">
+                                                <i class="fa fa-apple"></i>IOS
+                                            </div>
+                                            <div class="os-label label-gray">
+                                                <i class="fa fa-unlock-alt"></i>IOS
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li><i class="i-features-block-device"></i> Block Device
+                                        <div class="os-label__wrapper">
+                                            <div class="os-label label-green large">
+                                                <i class="fa fa-android"></i>
+                                            </div>
+                                            <div class="os-label label-gray">
+                                                <i class="fa fa-unlock-alt"></i>IOS
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li><i class="i-features-location"></i> {if !in_array('location-tracking', $_notVisible)}<span onclick="window.location='http://{$domain}/child-location-tracking.html'">Location Tracking</span>{else}Location Tracking{/if}
+                                        <div class="os-label__wrapper">
+                                            <div class="os-label label-black">
+                                                <i class="fa fa-apple"></i>IOS
+                                            </div>
+                                            <div class="os-label label-green large">
+                                                <i class="fa fa-android"></i>
+                                            </div>
+                                            <div class="os-label label-gray">
+                                                <i class="fa fa-unlock-alt"></i>IOS
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li><i class="i-features-geo-fences"></i> {if !in_array('geo-fences', $_notVisible)}<span onclick="window.location='http://{$domain}/gps-and-geofencing.html'">Geo-fences</span>{else}Geo-fences{/if}
+                                        <div class="os-label__wrapper">
+                                            <div class="os-label label-green large">
+                                                <i class="fa fa-android"></i>
+                                            </div>
+                                            <div class="os-label label-gray">
+                                                <i class="fa fa-unlock-alt"></i>IOS
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li><i class="i-features-keyloger"></i> <span onclick="window.location='http://{$domain}/keylogging-software.html'">Keylogger</span>
+                                        <div class="os-label__wrapper">
+                                            <div class="os-label label-green large">
+                                                <i class="fa fa-android"></i>
+                                            </div>
+                                            <div class="os-label label-gray">
+                                                <i class="fa fa-unlock-alt"></i>IOS
+                                            </div>
+                                        </div>
+                                    </li>
+                                    {*<li class="hidden-mobile">&nbsp;</li>*}
                                 </ul>
                             </div>
 
-                            <div class="tab col-item-3 col-md-item-3 col-sm-item-3 last">
-
+                            <div class="tab col-item-3 col-md-item-3 col-sm-item-3">
                                 <ul>
-                                    <li><i class="i-features-monitor-viber-whatsapp"></i> <span onclick="window.location='http://{$domain}/whatsapp-monitoring.html'">Monitor WhatsApp</span></li>
-                                    <li><i class="i-features-monitor-skype"></i> <span onclick="window.location='http://{$domain}/monitor-skype.html'">Monitor Skype</span></li>
-                                    {*<li><i class="i-features-social"></i> Monitor Facebook IM</li>*}
+                                    <li><i class="i-features-monitor-viber-whatsapp"></i> <span onclick="window.location='http://{$domain}/whatsapp-monitoring.html'">Monitor WhatsApp</span>
+                                        <div class="os-label__wrapper">
+                                            <div class="os-label label-black">
+                                                <i class="fa fa-apple"></i>IOS
+                                            </div>
+                                            <div class="os-label label-green">
+                                                <i class="fa fa-android"></i>root
+                                            </div>
+                                            <div class="os-label label-gray">
+                                                <i class="fa fa-unlock-alt"></i>IOS
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li><i class="i-features-monitor-skype"></i> <span onclick="window.location='http://{$domain}/monitor-skype.html'">Monitor Skype</span>
+                                        <div class="os-label__wrapper">
+                                            <div class="os-label label-black">
+                                                <i class="fa fa-apple"></i>IOS
+                                            </div>
+                                            <div class="os-label label-green">
+                                                <i class="fa fa-android"></i>root
+                                            </div>
+                                            <div class="os-label label-gray">
+                                                <i class="fa fa-unlock-alt"></i>IOS
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li><i class="i-features-social"></i> Monitor Facebook IM
+                                        <div class="os-label__wrapper">
+                                            <div class="os-label label-green">
+                                                <i class="fa fa-android"></i>root
+                                            </div>
+                                            <div class="os-label label-gray">
+                                                <i class="fa fa-unlock-alt"></i>IOS
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li><i class="i-features-monitor-viber-whatsapp"></i> <span onclick="window.location='http://{$domain}/monitor-viber.html'">Monitor Viber</span>
+                                        <div class="os-label__wrapper">
+                                            <div class="os-label label-green">
+                                                <i class="fa fa-android"></i>root
+                                            </div>
+                                            <div class="os-label label-gray">
+                                                <i class="fa fa-unlock-alt"></i>IOS
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li><i class="i-features-monitor-instagram"></i> <span onclick="window.location='http://{$domain}/parental-control-for-instagram.html'">Monitor Instagram</span>
+                                        <div class="os-label__wrapper">
+                                            <div class="os-label label-green">
+                                                <i class="fa fa-android"></i>root
+                                            </div>
+                                            <div class="os-label label-gray">
+                                                <i class="fa fa-unlock-alt"></i>IOS
+                                            </div>
+                                        </div>
+                                    </li>
                                     {*<li><i class="i-features-remote-activity-control"></i> Remote Control Panel</li>*}
-                                    <li><i class="i-features-kik-chat"></i> <span onclick="window.location='http://{$domain}/monitor-kik-messenger.html'">Monitor Kik</span></li>
-                                    <li><i class="i-features-location"></i> {if !in_array('location-tracking', $_notVisible)}<span onclick="window.location='http://{$domain}/child-location-tracking.html'">Location Tracking</span>{else}Location Tracking{/if}</li>
-                                    {*<li class="hidden-mobile">&nbsp;</li>*}
-                                </ul>
-                            </div>
-                            <div class="tab last-one" style="width: 100%;">
-                            <ul><li><i class="i-features-remote-activity-control-v2"></i> Remote Control Panel</li>
-                                <li class="last-child-hidden"><img src="/images/icon-ph.png" class="img-ph" alt="">
-                                    <a href="/all-features.html">View All Features  <i class="icon-right-open"></i> </a> </li></ul>
-
-                            </div>
-
-
-                        </section>
-                        {if $android == "yes" || $jailbreak == "yes"}
-                            {*noindex ios*}
-                        {/if}
-                        {if !$android}
-                            {*noindex android*}
-                        {/if}
-                        <section class="_features-content" data-feature="os-android" {if !$android}style="display: none;"{/if}>
-                            <div class="tab col-item-3 col-md-item-3 col-sm-item-3">
-                                <ul>
-                                    <li><i class="i-features-sms"></i> <span onclick="window.location='http://{$domain}/mobile-sms-spy.html'">Monitor SMS and MMS</span></li>
-                                    <li><i class="i-features-cell-history"></i> {if !in_array('call-monitoring-software', $_notVisible)}<span onclick="window.location='http://{$domain}/call-monitoring-software.html'">Monitor Calls History{else}Monitor Calls History{/if}</li>
-                                    <li><i class="i-features-calendar"></i> View Calendar</li>
-                                    <li><i class="i-features-contacts"></i> <span onclick="window.location='http://{$domain}/monitor-phone-contacts.html'"> View Contacts</span></li>
-                                    <li><i class="i-features-email"></i> <span onclick="window.location='http://{$domain}/email-monitoring-software.html'">View Emails</span></li>
-                                    <li><i class="i-features-photos"></i> View Photos</li>
-                                    <li><i class="i-features-videocam"></i> View Videos</li>
-                                    {*<li><i class="i-features-kik-chat"></i> Monitor Kik</li>*}
-                                </ul>
-                            </div>
-
-                            <div class="tab col-item-3 col-md-item-3 col-sm-item-3">
-                                <ul>
-                                    <li><i class="i-features-browser"></i> <span onclick="window.location='http://{$domain}/browser-parental-control.html'">Control Browser</span></li>
-                                    <li><i class="i-features-app"></i> <span onclick="window.location='http://{$domain}/block-apps.html'">Control Applications</span></li>
-                                    <li><i class="i-features-view-bookmarks"></i> View Bookmarks</li>
-                                    <li><i class="i-features-block-device"></i> Block Device</li>
-                                    <li><i class="i-features-location"></i> {if !in_array('location-tracking', $_notVisible)}<span onclick="window.location='http://{$domain}/child-location-tracking.html'">Location Tracking</span>{else}Location Tracking{/if}</li>
-                                    <li><i class="i-features-geo-fences"></i> {if !in_array('geo-fences', $_notVisible)}<span onclick="window.location='http://{$domain}/gps-and-geofencing.html'">Geo-fences</span>{else}Geo-fences{/if}</li>
-                                    <li><i class="i-features-keyloger"></i> <span onclick="window.location='http://{$domain}/keylogging-software.html'">Keylogger</span></li>
-                                    {*<li class="hidden-mobile">&nbsp;</li>*}
-                                </ul>
-                            </div>
-
-                            <div class="tab col-item-3 col-md-item-3 col-sm-item-3 last">
-                                <ul>
-                                    <li><i class="i-features-monitor-viber-whatsapp"></i> <span onclick="window.location='http://{$domain}/whatsapp-monitoring.html'">Monitor WhatsApp</span></li>
-                                    <li><i class="i-features-monitor-skype"></i> <span onclick="window.location='http://{$domain}/monitor-skype.html'">Monitor Skype</span></li>
-                                    <li><i class="i-features-social"></i> Monitor Facebook IM</li>
-                                    <li><i class="i-features-monitor-viber-whatsapp"></i> <span onclick="window.location='http://{$domain}/monitor-viber.html'">Monitor Viber</span></li>
-                                    <li><i class="i-features-monitor-instagram"></i> <span onclick="window.location='http://{$domain}/parental-control-for-instagram.html'">Monitor Instagram</span></li>
-                                    {*<li><i class="i-features-remote-activity-control"></i> Remote Control Panel</li>*}
-                                    <li><i class="i-features-kik-chat"></i> <span onclick="window.location='http://{$domain}/monitor-kik-messenger.html'">Monitor Kik</span></li>
-                                    <li><i class="i-features-monitor-snapchat"></i><span onclick="window.location='http://{$domain}/monitor-snapchat.html'">Monitor Snapchat</span> </li>
-                                    <li class="visible-xs"><i class="i-features-sms-commands"></i> SMS Commands</li>
-                                    {*<li class="hidden-mobile">&nbsp;</li>*}
-                                </ul>
-                            </div>
-                            <div class="tab tab-half tab-bdr">
-                                <ul>
-                                    <li><i class="i-features-remote-activity-control-v2"></i> Remote Control Panel</li>
-                                    <li class="last-child-hidden"><img src="/images/icon-ph.png" class="img-ph" alt="">
-                                        <a href="/all-features.html">View All Features  <i class="icon-right-open"></i> </a> </li>
-                                </ul>
-                            </div>
-                            <div class="tab tab-half hidden-xs">
-                                <ul>
-                                    <li><i class="i-features-sms-commands"></i> SMS Commands</li>
-                                </ul>
-                            </div>
-
-                        </section>
-                        {if !$android}
-                            {*noindex android*}
-                        {/if}
-                        {if !$jailbreak}
-                            {*noindex jailbreak*}
-                        {/if}
-                        <section class="_features-content" data-feature="os-jailbreak" {if !$jailbreak}style="display: none;"{/if}>
-                            <div class="tab col-item-3 col-md-item-3 col-sm-item-3 last">
-                                <ul>
-                                    <li><i class="i-features-sms"></i> <span onclick="window.location='http://{$domain}/mobile-sms-spy.html'">Monitor SMS and iMessages</span></li>
-                                    <li><i class="i-features-cell-history"></i> {if !in_array('call-monitoring-software', $_notVisible)}<span onclick="window.location='http://{$domain}/call-monitoring-software.html'">Monitor Calls History{else}Monitor Calls History{/if}</li>
-                                    <li><i class="i-features-calendar"></i> View Calendar</li>
-                                    <li><i class="i-features-contacts"></i> <span onclick="window.location='http://{$domain}/monitor-phone-contacts.html'"> View Contacts</span></li>
-                                    <li><i class="i-features-email"></i> <span onclick="window.location='http://{$domain}/email-monitoring-software.html'">View Emails</span></li>
-                                    <li><i class="i-features-photos"></i> View Photos</li>
-                                    <li><i class="i-features-videocam"></i> View Videos</li>
-                                    <li><i class="i-features-remote-activity-control-v2"></i> Remote Control Panel</li>
-                                    {*<li><i class="i-features-kik-chat"></i> Monitor Kik</li>*}
-                                </ul>
-                            </div>
-
-                            <div class="tab col-item-3 col-md-item-3 col-sm-item-3">
-                                <ul>
-                                    <li><i class="i-features-browser"></i> <span onclick="window.location='http://{$domain}/browser-parental-control.html'">Control Browser</span></li>
-                                    <li><i class="i-features-app"></i> <span onclick="window.location='http://{$domain}/block-apps.html'">Control Applications</span></li>
-                                    <li><i class="i-features-view-bookmarks"></i> View Bookmarks</li>
-                                    <li><i class="i-features-view-notes"></i> View Notes</li>
-                                    <li><i class="i-features-block-device"></i> Block Device</li>
-                                    <li><i class="i-features-location"></i> {if !in_array('location-tracking', $_notVisible)}<span onclick="window.location='http://{$domain}/child-location-tracking.html'">Location Tracking</span>{else}Location Tracking{/if}</li>
-                                    <li><i class="i-features-geo-fences"></i> {if !in_array('geo-fences', $_notVisible)}<span onclick="window.location='http://{$domain}/gps-and-geofencing.html'">Geo-fences</span>{else}Geo-fences{/if}</li>
-                                    <li><i class="i-features-keyloger"></i> <span onclick="window.location='http://{$domain}/keylogging-software.html'">Keylogger</span></li>
-                                    {*<li class="hidden-mobile">&nbsp;</li>*}
-                                </ul>
-                            </div>
-
-                            <div class="tab col-item-3 col-md-item-3 col-sm-item-3">
-                                <ul>
-                                    <li><i class="i-features-monitor-viber-whatsapp"></i> <span onclick="window.location='http://{$domain}/whatsapp-monitoring.html'">Monitor WhatsApp</span></li>
-                                    <li><i class="i-features-monitor-skype"></i> <span onclick="window.location='http://{$domain}/monitor-skype.html'">Monitor Skype</span></li>
-                                    <li><i class="i-features-social"></i> Monitor Facebook IM</li>
-                                    <li><i class="i-features-monitor-viber-whatsapp"></i> <span onclick="window.location='http://{$domain}/monitor-viber.html'">Monitor Viber</span></li>
-                                    <li><i class="i-features-monitor-instagram"></i> <span onclick="window.location='http://{$domain}/parental-control-for-instagram.html'">Monitor Instagram</span></li>
-                                    {*<li><i class="i-features-remote-activity-control"></i> Remote Control Panel</li>*}
-                                    <li><i class="i-features-kik-chat"></i> <span onclick="window.location='http://{$domain}/monitor-kik-messenger.html'">Monitor Kik</span></li>
-                                    <li><i class="i-features-monitor-snapchat"></i><span onclick="window.location='http://{$domain}/monitor-snapchat.html'">Monitor Snapchat</span> </li>
-                                    <li><i class="i-features-sms-commands"></i> SMS Commands</li>
-                                    <li class="last-child-hidden"><img src="/images/icon-ph.png" class="img-ph" alt="">
-                                        <a href="/all-features.html">View All Features  <i class="icon-right-open"></i> </a> </li>
+                                    <li><i class="i-features-kik-chat"></i> <span onclick="window.location='http://{$domain}/monitor-kik-messenger.html'">Monitor Kik</span>
+                                        <div class="os-label__wrapper">
+                                            <div class="os-label label-black">
+                                                <i class="fa fa-apple"></i>IOS
+                                            </div>
+                                            <div class="os-label label-green">
+                                                <i class="fa fa-android"></i>root
+                                            </div>
+                                            <div class="os-label label-gray">
+                                                <i class="fa fa-unlock-alt"></i>IOS
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li><i class="i-features-monitor-snapchat"></i><span onclick="window.location='http://{$domain}/monitor-snapchat.html'">Monitor Snapchat</span>
+                                        <div class="os-label__wrapper">
+                                            <div class="os-label label-green">
+                                                <i class="fa fa-android"></i>root
+                                            </div>
+                                            <div class="os-label label-gray">
+                                                <i class="fa fa-unlock-alt"></i>IOS
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li><i class="i-features-sms-commands"></i> SMS Commands
+                                        <div class="os-label__wrapper">
+                                            <div class="os-label label-green large">
+                                                <i class="fa fa-android"></i>
+                                            </div>
+                                            <div class="os-label label-gray">
+                                                <i class="fa fa-unlock-alt"></i>IOS
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="last-child-hidden all-features-item"><img src="/images/icon-ph.png" class="img-ph" alt="">
+                                        {*<a href="/all-features.html">View All Features  <i class="icon-right-open"></i> </a> </li>*}
                                     {*<li class="hidden-mobile">&nbsp;</li>*}
                                 </ul>
                             </div>
                         </section>
-                        {if !$jailbreak}
-                            {*noindex jailbreak*}
-                        {/if}
+
                         <div class="text-center button-more-detailes">
-                            <a href="/all-features.html" data-feature="os-ios" class="btn btn-default _features-content" rel="nofollow"
-                               {if $android == "yes" || $jailbreak == "yes"}style="display: none;"{/if}>
-                                More Details</a>
-                            <a href="/all-features.html#android" data-feature="os-android" class="btn btn-default _features-content" rel="nofollow" {if !$android}style="display: none;"{/if}>More Details</a>
-                            <a href="/all-features.html#jailbreak" data-feature="os-jailbreak" class="btn btn-default _features-content" rel="nofollow" {if !$jailbreak}style="display: none;"{/if}>More Details</a>
+                            {if $icloud == "yes"}
+                            <a href="/all-features.html" class="btn btn-default" rel="nofollow">
+                                All Features</a>
+                                {if $storeLink == "yes"}
+                                <a href="/store.html" class="btn btn-green" rel="nofollow">
+                                    {if isset($storeLinkText)}{$storeLinkText}{else}Go to Store{/if}</a>
+                                {/if}
+                            {/if}
+                            {if $android == "yes"}
+                            <a href="/all-features.html#android" class="btn btn-default" rel="nofollow"}>
+                                All Features</a>
+                                {if $storeLink == "yes"}
+                                    <a href="/store.html#android" class="btn btn-green" rel="nofollow">
+                                        {if isset($storeLinkText)}{$storeLinkText}{else}Go to Store{/if}</a>
+                                {/if}
+                            {/if}
+                            {if $jailbreak == "yes"}
+                            <a href="/all-features.html#jailbreak" class="btn btn-default" rel="nofollow">
+                                All Features</a>
+                                {if $storeLink == "yes"}
+                                    <a href="/store.html#jailbreak" class="btn btn-green" rel="nofollow">
+                                        {if isset($storeLinkText)}{$storeLinkText}{else}Go to Store{/if}</a>
+                                {/if}
+                            {/if}
                         </div>
-
                     </div>
                 </div>
         </div>
@@ -250,13 +396,6 @@
         cursor: pointer !important;
     }
 
-
-    @media (max-width: 480px){
-        .button-more-detailes{
-            display: none;
-        }
-
-    }
 
 
     @media (min-width: 480px){

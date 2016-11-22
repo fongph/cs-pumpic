@@ -28,17 +28,12 @@
     <style>
         .filter_item {
             width: 50%;
-            background-color: #f6f6f6;
-            border-bottom: 1px solid #e8e8e8;
         }
         .filter_icon {
             line-height: 1.4;
         }
         .filter_icon:before {
             margin-right: .2em;
-        }
-        .filter-active {
-            background-color: #e0e0e0;
         }
         .filter-active:after {
             display: none;

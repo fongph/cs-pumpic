@@ -1,4 +1,9 @@
-
+<style>
+    @media (max-width: 767px) {
+    .filter_fe .filter_icon {
+        display: none;
+    }
+</style>
 <div class="no_bg">
     <div class="container">
         <div class="row">

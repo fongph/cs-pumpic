@@ -163,7 +163,7 @@
                                                     <a id="start" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse7">Is physical access required or can I install the app remotely?</a>
                                                     <div id="collapse7" class="collapse">
                                                         <div>
-                                                            <p>Physical access is required to install the app on the target device. However, iCloud solution provided with Premium subscription and designed for monitoring iOS devices does not require jailbreak; physical access is not required as well unless you need to check iCloud or backup settings & perform a backup manually.</p>
+                                                            <p>Physical access is required to install the app on the target device. However, iCloud solution designed for monitoring iOS devices does not require jailbreak; physical access is not required as well unless you need to check iCloud or backup settings & perform a backup manually.</p>
                                                         </div>
                                                     </div>
                                                 </div>

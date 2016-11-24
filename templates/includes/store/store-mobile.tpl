@@ -102,7 +102,12 @@
                         </li>
                     {/foreach}
                 </ul>
-                <input type="checkbox" data-group="android-basic" name="android-40off" class="hidden">
+                <div class="double_offer checkbox">
+                    <label>
+                        <input type="checkbox" data-group="android-basic" name="android-40off">
+                        Get the 2nd plan with <span>40% OFF!</span>
+                    </label>
+                </div>
                 <button class="btn btn-default ga-action-click"
                         ga-action ="click"
                         ga-category="store"
@@ -207,7 +212,12 @@
                         </li>
                     {/foreach}
                 </ul>
-                <input type="checkbox" data-group="android-prem" name="android-40off" class="hidden">
+                <div class="double_offer checkbox">
+                    <label>
+                        <input type="checkbox" data-group="android-prem" name="android-40off">
+                        Get the 2nd plan with <span>40% OFF!</span>
+                    </label>
+                </div>
                 <button class="btn btn-default ga-action-click"
                         ga-action ="click"
                         ga-category="store"

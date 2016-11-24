@@ -167,6 +167,14 @@ description="Pumpic offers high-quality Cell Phone Tracking Software for a good 
                                         <div data-info-block="ios">
                                             <div class="premium_wr prod-icloud">
                                                 <div class="pricep">
+                                                    <div class="save__2plan">
+                                                        <div class="save__text label-touch">
+                                                            <input type="checkbox" id="icloud-40off-main" data-checkboxes="get-40off">
+                                                            <label for="icloud-40off-main">
+                                                                <span>Save 40%</span> on the 2nd plan. <div class="limited-time">Limited time offer!</div>
+                                                            </label>
+                                                        </div>
+                                                    </div>
                                                     <div class="buy-wrapper hidden-xs">
                                                     <div class="wrapper_pack clearfix">
                                                         <div class="wr_pack_premium wr_icloud _single-pack-icloud"></div>
@@ -175,7 +183,7 @@ description="Pumpic offers high-quality Cell Phone Tracking Software for a good 
                                                             <span></span><div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr icloud-price-per-month" >{$defaultIosiCloudPrice}</div></div><span>/ month</span>
                                                         </div>
                                                     </div>
-                                                    <div class="list_price icloud-list_price">
+                                                        <div class="list_price icloud-list_price">
                                                         <form name="price_premium" method="POST" action="/buy.html" class="buy-form-with-offer" autocomplete="off" >
                                                             {*<div class="save__2plan">*}
                                                                 {*<div class="save__text label-touch">*}
@@ -308,13 +316,13 @@ description="Pumpic offers high-quality Cell Phone Tracking Software for a good 
                                                         </div>
                                                         <div class="list_price icloud-list_price" id="foot_h4">
                                                             <form name="price_premium_bottom" method="POST" action="/buy.html" class="buy-form-with-offer" autocomplete="off">
-                                                                {*<div class="save__2plan save__second" style="top: 0;">*}
-                                                                    {*<div class="save__text label-touch">*}
-                                                                        {*<input type="checkbox" data-group="icloud" name="icloud-40off" id="icloud-40off-main" data-checkboxes="icloud-40off">*}
-                                                                        {*<label for="icloud-40off-main">*}
-                                                                        {*<span>Save 40%</span> on the 2nd plan. <div class="limited-time">Limited time offer!</div></label>*}
-                                                                    {*</div>*}
-                                                                {*</div>*}
+                                                                <div class="save__2plan save__second" style="top: 0;">
+                                                                    <div class="save__text label-touch">
+                                                                        <input type="checkbox" data-group="icloud" name="icloud-40off" id="icloud-40off-main" data-checkboxes="icloud-40off">
+                                                                        <label for="icloud-40off-main">
+                                                                        <span>Save 40%</span> on the 2nd plan. <div class="limited-time">Limited time offer!</div></label>
+                                                                    </div>
+                                                                </div>
                                                                 <input id='product_price_premium' type='hidden' name='price[productID]' value='{if isset($defaultIosiCloud)}{$defaultIosiCloud}{else}0{/if}' class="product_price" />
                                                                 <ul>
                                                                     {foreach from=$getProducts.iosiCloud key=key item=item}
@@ -383,14 +391,15 @@ description="Pumpic offers high-quality Cell Phone Tracking Software for a good 
                                                         </div>
                                                     </div>
                                                     <div class="list_price icloud-list_price">
+
                                                         <form name="price_premium" method="POST" action="/buy.html" class="buy-form-with-offer" autocomplete="off" >
-                                                            {*<div class="save__2plan">*}
-                                                                {*<div class="save__text label-touch">*}
-                                                                    {*<input type="checkbox" name="jailbreak-40off" id="jailbreak-40off-main" data-checkboxes="jailbreak-40off">*}
-                                                                    {*<label for="jailbreak-40off-main">*}
-                                                                    {*<span>Save 40%</span> on the 2nd plan. <div class="limited-time">Limited time offer!</label></div>*}
-                                                                {*</div>*}
-                                                            {*</div>*}
+                                                            <div class="save__2plan">
+                                                                <div class="save__text label-touch">
+                                                                    <input type="checkbox" name="jailbreak-40off" id="jailbreak-40off-main" data-checkboxes="jailbreak-40off">
+                                                                    <label for="jailbreak-40off-main">
+                                                                    <span>Save 40%</span> on the 2nd plan. <div class="limited-time">Limited time offer!</label></div>
+                                                                </div>
+                                                            </div>
                                                             <input id='product_price_premium' type='hidden' name='price[productID]' value='{if isset($getDefaultIosJailbreak)}{$getDefaultiosJailbreak}{else}0{/if}' class="product_price"/>
 
                                                             <ul>
@@ -422,7 +431,7 @@ description="Pumpic offers high-quality Cell Phone Tracking Software for a good 
                                                             </ul>
                                                             <div class="double_offer checkbox">
                                                                 <label>
-                                                                    <input type="checkbox" data-group="jailbreak" name="get-40off">
+                                                                    <input type="checkbox" data-group="jailbreak" name="jailbreak-40off">
                                                                     Get the 2nd plan with <span>40% OFF!</span>
                                                                 </label>
                                                             </div>
@@ -571,14 +580,14 @@ description="Pumpic offers high-quality Cell Phone Tracking Software for a good 
                                                         </div>
                                                         <div class="list_price icloud-list_price">
                                                             <form name="price_premium" method="POST" action="/buy.html" class="buy-form-with-offer" autocomplete="off" >
-                                                                {*<div class="save__2plan">*}
-                                                                    {*<div class="save__text label-touch">*}
-                                                                        {*<input type="checkbox" name="jailbreak-40off" id="jailbreak-40off-main" data-checkboxes="jailbreak-40off">*}
-                                                                        {*<label for="jailbreak-40off-main">*}
-                                                                        {*<span>Save 40%</span> on the 2nd plan. <div class="limited-time">Limited time offer!</div>*}
-                                                                            {*</label>*}
-                                                                    {*</div>*}
-                                                                {*</div>*}
+                                                                <div class="save__2plan">
+                                                                    <div class="save__text label-touch">
+                                                                        <input type="checkbox" name="jailbreak-40off" id="jailbreak-40off-main" data-checkboxes="jailbreak-40off">
+                                                                        <label for="jailbreak-40off-main">
+                                                                        <span>Save 40%</span> on the 2nd plan. <div class="limited-time">Limited time offer!</div>
+                                                                            </label>
+                                                                    </div>
+                                                                </div>
                                                                 <input id='product_price_premium' type='hidden' name='price[productID]' value='{if isset($getDefaultIosJailbreak)}{$getDefaultiosJailbreak}{else}0{/if}' class="product_price"/>
 
                                                                 <ul>
@@ -610,7 +619,7 @@ description="Pumpic offers high-quality Cell Phone Tracking Software for a good 
                                                                 </ul>
                                                                 <div class="double_offer checkbox">
                                                                     <label>
-                                                                        <input type="checkbox" data-group="jailbreak" name="get-40off">
+                                                                        <input type="checkbox" data-group="jailbreak" name="jailbreak-40off">
                                                                         Get the 2nd plan with <span>40% OFF!</span>
                                                                     </label>
                                                                 </div>

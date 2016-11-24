@@ -98,7 +98,7 @@
                                     <li><i class="i-features-kik-chat"></i> <span onclick="window.location='http://{$domain}/monitor-kik-messenger.html'">Monitor Kik</span></li>
                                     <li><i class="i-features-monitor-snapchat"></i><span onclick="window.location='http://{$domain}/monitor-snapchat.html'">Monitor Snapchat</span> </li>
                                     <li><i class="i-features-sms-commands"></i> SMS Commands</li>
-                                    <li class="last-child-hidden"><img src="/images/icon-ph.png" class="img-ph" alt="">
+                                    <li class="last-child-hidden" style="padding-top: 16px;"><img src="/images/icon-ph.png" class="img-ph" alt="">
                                         <a href="/all-features.html">View All Features  <i class="icon-right-open"></i> </a> </li>
                                     {*<li class="hidden-mobile">&nbsp;</li>*}
                                 </ul>

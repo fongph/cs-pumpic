@@ -27,9 +27,15 @@
       line-height: 1.1;
       }
   }
+.double_offer.checkbox {
+  display: none;
+}
 @media (min-width: 768px) {
   .prod-icloud {
-    padding-top: 0;
+    padding-top: 60px;
+  }
+  .prod-icloud .pricep {
+    padding-top: 0px;
   }
   .prod-list-android .priceb, .prod-list-android .pricep {
     padding-top: 60px;
@@ -48,6 +54,18 @@
   }
 }
 @media (max-width: 767px) {
+  .double_offer.checkbox {
+    display: block;
+  }
+  .prod-list-android .double_offer.checkbox {
+    display: none;
+  }
+  .save__2plan {
+    display: none;
+  }
+  .save__2plan.android {
+    display: block;
+  }
   .prod-wrap {
     padding: 5px 20px;
     .prod-short-inf {
@@ -112,6 +130,9 @@
 
 }
 @media (max-width: 700px) {
+  .prod-list-android .double_offer.checkbox {
+    display: block;
+  }
   #loader {
     margin: 20px 0 40px;
   }
@@ -160,7 +181,6 @@
   }
   .table_title.free-label {
     padding: 10px;
-    border-bottom: none;
   }
   .free-label__headname {
     display: block;
@@ -170,7 +190,7 @@
     min-width: 275px;
   }
   .prod-list-android {
-    padding-top: 53px;
+   // padding-top: 53px;
     .save__2plan {
       top: 0;
     }
@@ -242,9 +262,9 @@
   }
 }
 @media (max-width: 462px) {
-  .prod-list-android {
-    padding-top: 65px;
-  }
+  //.prod-list-android {
+  //  padding-top: 65px;
+  //}
   .save__text {
     .limited-time {
       display: block;

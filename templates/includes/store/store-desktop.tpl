@@ -1,4 +1,4 @@
-    <div class="save__2plan">
+    <div class="save__2plan android">
         <div class="save__text label-touch">
             <input type="checkbox" id="android-40off-main" data-checkboxes="android-40off">
             <label for="android-40off-main">
@@ -103,8 +103,13 @@
                             </li>
                         {/foreach}
                     </ul>
-                    <input type="checkbox" data-group="android-prem" name="android-40off" class="hidden">
-
+                    </ul>
+                    <div class="double_offer checkbox">
+                        <label>
+                            <input type="checkbox" data-group="android-basic" name="android-40off">
+                            Get the 2nd plan with <span>40% OFF!</span>
+                        </label>
+                    </div>
                     <button class="btn btn-default ga-action-click"
                             ga-action ="click"
                             ga-category="store"
@@ -209,7 +214,7 @@
         <span class="free-label__item"><i class="icon-ok"></i>Sim card change alert</span>
     </div>
     <div class="clearfix" style="position: relative;">
-        <div class="save__2plan">
+        <div class="save__2plan android">
             <div class="save__text label-touch">
                 <input type="checkbox" name="android-40off" id="android-40off-main" data-checkboxes="android-40off">
                 <label for="android-40off-main">

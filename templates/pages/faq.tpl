@@ -2,7 +2,7 @@
 
     {include file='../includes/main/main-header.tpl'
     title="Frequently Asked Questions | Pumpic Help & Support"
-    description="Pumpic is an easy-to-use Cell Phone Tracking App. Get through our FAQ section to find answers to all questions. Feel free to contact our Support Team if you need help with Pumpic."
+    description="Pumpic is an easy-to-use cell phone tracking app. Get through FAQ section to find answers to all questions. Contact our Support Team if you need any help."
     }
 
     <body>

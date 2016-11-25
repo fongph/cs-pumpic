@@ -2,7 +2,7 @@
 {include file='../includes/main/main-header.tpl'
 
     title="Internet Safety for Children All Over USA"
-    description="Prevent your kids from dangers of the Internet. Keep kids safe and protected everywhere they go. Monitor calls, text messages, online chats, and social media. Track location and even more."
+    description="Prevent your kids from dangers of the Internet. Keep kids safe and protected. Monitor calls, text messages, online chats, social media; track location and more."
 }    
     
 <body>

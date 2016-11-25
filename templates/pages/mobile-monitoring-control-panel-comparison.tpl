@@ -1,7 +1,7 @@
 {include file='../includes/main/main-header.tpl'
 
 title="Pumpic Control Panel Comparison: Desktop vs. Mobile App"
-description="Learn the difference between the Standard Pumpic Control Panel and Pumpic Control Panel Mobile App. Monitor your kids on any computer and any device, in any browser or via a mobile app. With Pumpic, parental control becomes more convenient each day."
+description="Learn differences between Pumpic Standard and Mobile App Control Panel. Monitor kids via the web-interface or mobile app. Parental control can be convenient!"
 }
 
 <body>

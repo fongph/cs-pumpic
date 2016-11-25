@@ -2,7 +2,7 @@
 {include file='../includes/main/main-header.tpl'
 
     title="Child Mobile Phone Tracking in Australia"
-    description="Monitor your kids on a phone all over Australia. View calls, text messages, location, browsing history, social media, and even more. Track your child with Pumpic app in Australia."
+    description="Monitor your kids's phone all over Australia. View calls, text messages, location, Internet activity, and more. Track your child with Pumpic app in Australia."
 }    
     
 <body>

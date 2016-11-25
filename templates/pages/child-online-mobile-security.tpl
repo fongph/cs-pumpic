@@ -42,7 +42,7 @@
 {include file='../includes/main/main-header.tpl'
 
     title="Mobile Phone Security Measures"
-    description="How to protect children from online predators, cyberbullies, 18+ content, and identity theft. Pumpic gathered essential information on mobile phone safety practice. Learn more to keep kids safe."
+    description="How to protect kids from online predators, cyberbullies, 18+ content, and identity theft? Pumpic reviewed and handpicked the best mobile phone safety practices."
     metaTags="true"
 }    
     

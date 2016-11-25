@@ -4,7 +4,7 @@
 {include file='../includes/main/main-header.tpl'
 showRand="true"
 title="Phone Tracker Prices and Subscription Plans | Pumpic"
-description="Pumpic offers high-quality Cell Phone Tracking Software for a good price. Find out more about Pumpic cost and subscription plan types to choose the one suitable for your monitoring needs."
+description="Pumpic offers high-quality cell phone tracking software for a good price. Learn more about subscription plans. Choose the one that suits your monitoring needs."
 }
 
 <body>

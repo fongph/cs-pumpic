@@ -1,7 +1,7 @@
 {include file='../includes/main/main-header.tpl'
 
     title="iPod Parental Controls | Pumpic Mobile Monitoring"
-    description="Reliable iPod parental control app by Pumpic. Monitor children remotely. Provide comprehensive protection. Follow online activities and chats. Track location and set geo-fences."
+    description="Reliable iPod parental control app by Pumpic. Monitor and protect children remotely. Follow online activities and chats. Track location and set geo-fences."
 }    
     
 <body>

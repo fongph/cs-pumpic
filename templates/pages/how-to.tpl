@@ -1,7 +1,7 @@
 {strip}
 {include file='../includes/main/main-header.tpl'
     title="How does Pumpic phone monitoring app work?"
-    description="Pumpic is easy-to-use and quick-to-install Mobile Phone Monitoring Software. It will take you less than 5 minutes to get used to its functions. Learn more about how Pumpic works."
+    description="Pumpic is easy-to-use and quick-to-install mobile phone monitoring software. Our app is a piece of cake to get used to. Learn more about how Pumpic works."
 }
 
 <body>

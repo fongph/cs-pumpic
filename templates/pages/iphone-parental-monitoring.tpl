@@ -1,6 +1,6 @@
 {include file='../includes/main/main-header.tpl' 
     title="Ultimate iPhone Parental Control App for Apple iOS"
-    description="Pumpic is a tried and true app to monitor iPhone usage and online activity. Set parental control to keep your children safe. Monitor social media, calls and location remotely."
+    description="Pumpic is a tried and true app to monitor iPhone usage and online activity. Set parental control to monitor calls and location and keep your children safe."
 }    
     
 <body>

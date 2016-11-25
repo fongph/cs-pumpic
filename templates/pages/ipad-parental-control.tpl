@@ -1,7 +1,7 @@
 {include file='../includes/main/main-header.tpl'
 
     title="iPad Parental Control | Pumpic Monitoring Software"
-    description="Reliable parental monitoring for iPad. Track location, social media, instant messengers, and other online activities. Block applications. Set parental controls on iPad to protect your children."
+    description="Reliable parental monitoring for iPad. Track location, social media, instant messengers, etc. Block apps. Set parental controls on iPad - protect your children."
 }    
     
 <body>

@@ -99,7 +99,7 @@
     <?php  comments_template( '', true ); ?>
 </div>
 <div class="col-lg-4 col-md-4 col-sm-12">
-    <div class="feature_list">
+    <div class="feature_list" style="margin-top: 10px;">
         <div id="secondary" class="widget-area" role="complementary">
             <?php dynamic_sidebar( 'sidebar-below-banner' ); ?>
         </div>

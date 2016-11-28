@@ -61,11 +61,11 @@
                         
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-12">
-			<div class="feature_list">
-                            <div id="secondary" class="widget-area" role="complementary">
-                                <?php dynamic_sidebar( 'sidebar-below-banner' ); ?>
-                            </div>
-			</div>
+                    <div class="feature_list">
+                        <div id="secondary" class="widget-area" role="complementary">
+                            <?php dynamic_sidebar( 'sidebar-below-banner' ); ?>
+                        </div>
+                    </div>
                         <?php require_once '../../templates/includes/blog-banner-buy-home.tpl'; ?>
                         <div class="feature_list">
                             <div id="secondary" class="widget-area" role="complementary">

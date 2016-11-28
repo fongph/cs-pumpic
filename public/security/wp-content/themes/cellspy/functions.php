@@ -521,6 +521,16 @@ add_filter( 'wp_page_menu_args', 'cellspy_page_menu_args' );
  */
 function cellspy_widgets_init() {
         register_sidebar( array(
+		'name' => __( 'Below banner', 'cellspy' ),
+		'id' => 'sidebar-below-banner',
+		'description' => __( 'The create sidebar right', 'cellspy' ),
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">', // <aside id="%1$s" class="widget %2$s">
+		'after_widget' => '</aside>', // </aside>
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>',
+	) );
+
+        register_sidebar( array(
 		'name' => __( 'All pages right box', 'cellspy' ),
 		'id' => 'sidebar-main-right',
 		'description' => __( 'The create sidebar right', 'cellspy' ),

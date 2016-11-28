@@ -1,17 +1,17 @@
-
 <h2><a class="blog-link" href="/security/">Kids' Phone Safety Blog</a></h2>
-<div class="menu_category">
-    <ul>
-        <?php $args = array(
-            'show_option_all'    => false,
-            'style'              => 'list',
-            'show_option_none'   => __('No categories'),
-            'title_li'           => false,
-        );
-
-        wp_list_categories( $args );?>
-    </ul>
-</div>
+<p>&nbsp;</p>
+<!--<div class="menu_category">-->
+<!--    <ul>-->
+<!--        --><?php //$args = array(
+//            'show_option_all'    => false,
+//            'style'              => 'list',
+//            'show_option_none'   => __('No categories'),
+//            'title_li'           => false,
+//        );
+//
+//        wp_list_categories( $args );?>
+<!--    </ul>-->
+<!--</div>-->
 
 
 <div class="col-lg-8 col-md-8 col-sm-12">
@@ -99,11 +99,10 @@
     <?php  comments_template( '', true ); ?>
 </div>
 <div class="col-lg-4 col-md-4 col-sm-12">
-
+111
     <?php require_once '../../templates/includes/blog-banner-buy-post.tpl'; ?>
     <div class="feature_list">
         <div id="secondary" class="widget-area" role="complementary">
-
 
 
 

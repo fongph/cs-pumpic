@@ -98,7 +98,7 @@
                             
                         </div>
                         <div class="form-group">
-                            <input id="captcha" type="text" name="captcha" autocomplete="off" class="form-control text required captcha" value='' />
+                            <input id="captcha" type="text" name="captcha" autocomplete="off" class="form-control text required captcha" placeholder="Enter verification code" />
                             {if is_array($getOut.error) && $getOut.error.captcha}<label class="error show">{$getOut.error.captcha|escape}</label>{/if}
                         </div>       
                                 

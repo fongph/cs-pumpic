@@ -42,7 +42,7 @@
                 <div class="box-captcha-input text-in-box-free-trial">    
                     <span class="left">Text in the box:</span>
                     <div class="captcha-input left">
-                        <input id="captcha" type="text" name="captcha" autocomplete="off" class="text required captcha" />
+                        <input id="captcha" type="text" name="captcha" autocomplete="off" class="text required captcha"  placeholder="Enter verification code" />
                     </div>    
                 </div>    
             </div>

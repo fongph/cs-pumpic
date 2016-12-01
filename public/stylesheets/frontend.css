@@ -4385,17 +4385,28 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 .pagination > li {
   display: inline;
 }
+.pagination .title {
+  display: none;
+}
 .pagination > li > a,
 .pagination > li > span {
   position: relative;
   float: left;
-  padding: 6px 12px;
+  padding: 6px;
+  width: 38px;
+  display: inline-block;
   line-height: 1.42857143;
   text-decoration: none;
   color: #428bca;
   background-color: #ffffff;
   border: 1px solid #dddddd;
   margin-left: -1px;
+}
+@media (max-width: 400px) {
+  .pagination > li > a {
+    font-size: 12px;
+    width: 30px;
+  }
 }
 .pagination > li:first-child > a,
 .pagination > li:first-child > span {

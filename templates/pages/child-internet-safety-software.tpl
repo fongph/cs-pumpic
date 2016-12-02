@@ -149,7 +149,7 @@
             <h2>Advantages of Parental Monitoring Apps</h2>
             <div class="pt30 pb20">
                 <img class="img-align-right" alt="Children Internet safety software" title = "Set up Internet security tool easily" src="{$img}/landings/child-internet-safety-software_icon.png" width="207px" height="208px" />
-                <p>As we’ve already mentioned, modern teens hardly can live even a couple hours without looking up into their handheld devices. And while ensuring family safe browsing on your home PC is not a big problem, keeping track of what websites your kid visits on their smartphone or tablet is a lot harder. Moreover, as teens intensively use phones for texting and calls, a standard web filter would be not of much help here.</p>
+                <p>As we’ve already mentioned, modern teens hardly can live even a couple hours without looking up into their handheld devices. And while ensuring relatively riskless browsing on your home PC is not a big problem, keeping track of what websites your kid visits on their smartphone or tablet is a lot harder. Moreover, as teens intensively use phones for texting and calls, a standard web filter would be not of much help here.</p>
 				<p>There aren’t too many options how parents can set up the Internet protection on their children’s mobile devices. Firstly, they can use built-in iOS or Android safety tools (like “Restrictions” on iPhone). But onboard utilities often have fairly limited functionality. That’s why many parents prefer utilizing specially developed monitoring apps.</p>
 				<p>Here are five major advantages parental control apps like Pumpic have:</p>
 				<ul class="list-images">

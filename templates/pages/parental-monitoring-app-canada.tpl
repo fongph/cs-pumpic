@@ -126,7 +126,7 @@
         </div>
         <!-- END -->
 
-        <p class="text-center f-light">Online danger comprising cyberbullying, sexting, and child abuse is burning issues in Canada these days. In fact, Canadian kids of 13 years old have the ninth highest rate of bullying both offline and on the web compared to other countries. That’s why understanding possible danger, explaining it to kids, and applying parental control appropriately secures your loved ones and even saves their lives.</p>
+        <p class="text-center f-light">Online danger comprising cyberbullying, sexting, and child abuse is burning issues in Canada these days. In fact, Canadian kids of 13 years old have the ninth highest rate of bullying both offline and on the web compared to other countries. That’s why understanding possible danger, explaining it to kids, and applying parental monitoring appropriately secures your loved ones and even saves their lives.</p>
 {EndContent}
 		
 {Content 
@@ -223,7 +223,7 @@
                 <img src="{$img}/testimonials/canada/7.png" alt="" class="testimonial-photo">
                 <div class="testimonial-text">
                         <h4>John M. – Toronto, Ontario</h4>
-                        <p>“I’ve been looking for parental control app to monitor my son when at work. A friend of mine recommended Pumpic. He’s been using it for a while. I didn’t know I could track so many activities with one single app. Most apps allow location tracking or alike separately. Meanwhile Pumpic includes everything I need in one. I recommend Pumpic as a very useful parenting tool.”</p>
+                        <p>“I’ve been looking for reliable parental monitoring app to keep an eye on my son when at work. A friend of mine recommended Pumpic. He’s been using it for a while. I didn’t know I could track so many activities with one single app. Most apps allow location tracking or alike separately. Meanwhile Pumpic includes everything I need in one. I recommend Pumpic as a very useful parenting tool.”</p>
                 </div>
         </div>
         <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
@@ -277,7 +277,7 @@
                                 <img src="{$img}/testimonials/canada/7.png" alt="" class="testimonial-photo">
                                 <div class="testimonial-text">
                                         <h4>John M. – Toronto, Ontario</h4>
-                                        <p>“I’ve been looking for parental control app to monitor my son when at work. A friend of mine recommended Pumpic. He’s been using it for a while. I didn’t know I could track so many activities with one single app. Most apps allow location tracking or alike separately. Meanwhile Pumpic includes everything I need in one. I recommend Pumpic as a very useful parenting tool.”</p>
+                                        <p>“I’ve been looking for reliable parental monitoring app to keep an eye on my son when at work. A friend of mine recommended Pumpic. He’s been using it for a while. I didn’t know I could track so many activities with one single app. Most apps allow location tracking or alike separately. Meanwhile Pumpic includes everything I need in one. I recommend Pumpic as a very useful parenting tool.”</p>
                                 </div>
                             </div>
                         </div> <!-- .slide-->

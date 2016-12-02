@@ -179,7 +179,7 @@
     <div id="grid-images" class="row">
         <div class="col-lg-9 col-md-9 col-sm-9">
             <div class="pt30 pb20">
-                <p>Thankfully, parents can take the issue into their own hands by means of mobile phone monitoring software. Available in Australia Pumpic parental control app allows tracking online activities and text communication remotely. It lets parents avert Internet dangers in the making and secure child safety. </p>
+                <p>Thankfully, parents can take the issue into their own hands by means of mobile phone monitoring software. Available in Australia, Pumpic parental mobile monitoring app allows tracking online activities and text communication remotely. It lets parents avert Internet dangers in the making and secure child safety. </p>
                 <p>Parental control proved to be the most effective tool against online bullying and child abuse.</p>
             </div>
         </div>

@@ -177,7 +177,7 @@
         <div class="col-lg-9 col-md-9 col-sm-9">
             <div class="pt30 pb20">
                 <p>79% of information children learn about online safety they learn from their parents. The more you know, the more you can teach and thus, secure childproof online environment. If left without control the Internet may cause many perils your kids are not ready to face yet.</p>
-                <p>By means of Pumpic parental control app in the UK, you can take online issues under your own control and prevent your loved ones from dangers online reality brings.</p>
+                <p>By means of Pumpic mobile monitoring app in the UK, you can take online issues under your own control and prevent your loved ones from dangers online reality brings.</p>
             </div>
         </div>
         <div class="col-lg-3 col-md-3 col-sm-3 text-center">

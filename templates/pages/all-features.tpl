@@ -1,6 +1,6 @@
 {include file='../includes/main/main-header.tpl'
 
-    title="Professional mobile tracking app | Pumpic"
+    title="Features of mobile tracking app | Pumpic"
     description="Pumpic is an innovative solution, which takes Mobile Phone Monitoring on a reasonably new level. Find out more functions of Pumpic and evaluate the progress it made."
 }
 

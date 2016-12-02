@@ -40,7 +40,7 @@
             imgAlt = "Internet Filter for Android"
             imgAlign = "left"
             imgVerticalAlign = "bottom"
-			imgTitle = "Content filtering parental control tool"
+			imgTitle = "Reliable filtering tool for Android devices"
             textAlign = "left"
             title = "Best Internet Filter for Android </br> to Ensure Your Kid’s Safe Browsing"
 			titleSize = "25px"
@@ -102,7 +102,7 @@
         </div>
         <!-- END -->
 
-        <p>The statistics above persuasively demonstrates why a concerned parent should consider using content filtering parental control tools to stay aware of what their kids are up to while online. Pumpic monitoring app is an ultimate solution that among many other features allows tracking kids’ Internet activity, setting filters to prevent little ones from viewing 18+ content and blocking any website you don’t want your child to visit.</p>
+        <p>The statistics above persuasively demonstrates why a concerned parent should consider using reliable tools to filter out content in order to stay aware of what their kids are up to while online. Pumpic monitoring app is an ultimate solution that among many other features allows tracking kids’ Internet activity, setting filters to prevent little ones from viewing 18+ content and blocking any website you don’t want your child to visit.</p>
 		<p>Pumpic is a visible mobile software that has been designed for ethical and legal use only. It means that the app runs openly and doesn’t use hidden mode. We endorse parents who plan to install monitoring app on their kids’ smartphone or tablet to talk honestly to their children about the dangers they are exposed to online and what can be done to avert these perils. Only 61 percent of teens report having such conversation while over 90 percent of parents say they did talk to their teens about online safety.</p>
 		
 {EndContent}

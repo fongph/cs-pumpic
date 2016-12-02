@@ -1,7 +1,7 @@
 {include file='../includes/main/main-header.tpl'
 
     title="Browser Parental Control | Pumpic Monitoring Software"
-    description=""
+    description="Reliable parental control web browser is the key to ensuring a safe Internet experience for kids. Protect your child from online dangers with Pumpic app."
 }    
     
 <body>
@@ -42,8 +42,8 @@
             imgAlign = "left bottom"
             imgVerticalAlign = "center"
             textAlign = "left"
-            title = "Internet Monitoring Software <br />Parental Control Application"
-            description = "View browsing history and bookmarks. Block websites.<br />Reliable Internet monitoring for parents and children."
+            title = "Web Browser Parental Control<br/>Monitor Kids' Online Activity"
+            description = "View browsing history and bookmarks. Block websites.<br />Take advantage of reliable browser filter for a safer Internet surfing."
             promoBuyBlock = "no"
             planPackageBuy = "yes"
             block_video = "yes"
@@ -67,7 +67,7 @@
     blockBg='dark'}
 	
 	    <p class="text-center f-light">Internet is a great storage of information of all kinds. With its help any person can find anything he or she wants in a click. However, in addition to many benefits there is danger that sometimes is hidden from our sight. Our kids, they are most vulnerable to these online dangers. That’s why if handing them mobile devices and allowing access the web, you should do your best to take care of their <a class="a-default" href="/family-safe-browsing.html">safe browsing</a>.</p>
-		<p class="text-center f-light">Pumpic provides comprehensive Internet monitoring and reliable online security.</p>
+		<p class="text-center f-light">Pumpic provides comprehensive Web activity monitoring and reliable online security.</p>
         <!-- BLOCK STATISTICK -->
         {*<div class="block-statistick row">
             
@@ -117,7 +117,7 @@
         
 <div class="light">
         <div class="container">
-                <h2 class="text-center">Apply Internet Monitoring Software</h2>
+                <h2 class="text-center">Safeguard Your Children on the Web Simply and Reliably</h2>
                 <div class="row">
                         <div class="col-sm-4 col-md-4 col-lg-4">
                                 <div class="feature">
@@ -158,7 +158,7 @@
         
         {include file='../includes/content/features-table-new.tpl'
         title = "Many Useful Monitoring Features"
-        description = 'Pumpic lets you utilize remote mobile monitoring to the fullest. The app includes more than 24 parental control solutions that provide comprehensive protection comprising <a class="a-default" href="/internet-monitoring-software.html">Internet monitoring</a> and safety during daily activities on smartphone and tablets. Pumpic provides reliable security to all family on guard of your happiness.'
+        description = 'Pumpic lets you utilize remote mobile monitoring to the fullest. The app includes more than 24 parental control solutions that provide comprehensive protection comprising <a class="a-default" href="/internet-monitoring-software.html">monitoring Internet activity</a> and safety during daily routines on smartphone and tablets. Pumpic provides reliable security to all family on guard of your happiness.'
         blockBg="dark"
         android = "yes"
         } 
@@ -195,14 +195,14 @@
                             <img src="{$img}/testimonials/sarah-g-12.png" alt="" class="testimonial-photo">
                             <div class="testimonial-text">
                                     <h4>Sarah G. – mother of 12-year-old son</h4>
-                                    <p>“My sister recommended me Pumpic as a kind of safe browser for iPad I was going to present my son for a birthday. I tried it before giving him the device and was very surprised seeing with how many useful capabilities the app would provide me in addition. Locations, social media, app control, screen time limiting. All of these is a must for parents who really care.”</p>
+                                    <p>“Initially, I was looking for a stand-alone parental control browser for my son. But my sister recommended me Pumpic as a kind of more comprehensive solution. I tried it before giving him the device and was very surprised seeing with how many useful capabilities the app would provide me in addition. Locations, social media, app control, screen time limiting. All of these is a must for parents who really care.”</p>
                             </div>
                     </div>
                     <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
                             <img src="{$img}/testimonials/tomas-u-15.png" alt="" class="testimonial-photo">
                             <div class="testimonial-text">
                                     <h4>Tomas U. – father of 15-year-old daughter</h4>
-                                    <p>“I started thinking about iPhone Safari parental controls soon after I’d noticed how much time my daughter spends surfing the web on her cell phone. Pumpic showed me the way out. It’s amazing how many helpful options the app has. I can not only monitor her browsing activity, but also track calls, messages, camera shots, and even location. That’s a huge help for parents.”</p>
+                                    <p>“I started thinking about parental controls for a browser soon after I’d noticed how much time my daughter spends surfing the Web on her cell phone. Pumpic showed me the way out. It’s amazing how many helpful options the app has. I can not only monitor her browsing activity, but also track calls, messages, camera shots, and even location. That’s a huge help for parents.”</p>
                             </div>
                     </div>
                             

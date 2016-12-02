@@ -234,7 +234,7 @@
                             <img src="{$img}/testimonials/roger-g-13.png" alt="" class="testimonial-photo">
                             <div class="testimonial-text">
                                     <h4>Roger G. – father of 13-year-old son</h4>
-                                    <p>“I’ve been looking for a screen time parental control app on the Internet and found a review about Pumpic. I was really amazed how many features the app comprised. I decided to give it a try and now I use it systematically. I monitor my son’s online activities and block apps on Android phone, when he starts overusing it or plays games while doing homework. Works great for parents!”</p>
+                                    <p>“I’ve been looking for an app to manage my son's time on mobile and found a review about Pumpic. I was really amazed how many features the app comprised. I decided to give it a try and now I use it systematically. I monitor my son’s online activities and block apps on Android phone, when he starts overusing it or plays games while doing homework. Works great for parents!”</p>
                             </div>
                     </div>
                     <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">

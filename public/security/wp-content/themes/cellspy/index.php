@@ -10,19 +10,19 @@
             <div class="col-lg-10 col-lg-offset-1">
                 <div class="row">
                     <h1 class="text-center mt10 mb20"><a class="blog-link" href="/security/">Kids' Phone Safety Blog</a></h1>
-
-                    <div class="menu_category">
-                        <ul>
-                            <?php $args = array(
-                                'show_option_all'    => false,
-                                'style'              => 'list',
-                                'show_option_none'   => __('No categories'),
-                                'title_li'           => false,
-                            );
-
-                            wp_list_categories( $args );?>
-                        </ul>
-                    </div>
+<p>&nbsp;</p>
+<!--                    <div class="menu_category">-->
+<!--                        <ul>-->
+<!--                            --><?php //$args = array(
+//                                'show_option_all'    => false,
+//                                'style'              => 'list',
+//                                'show_option_none'   => __('No categories'),
+//                                'title_li'           => false,
+//                            );
+//
+//                            wp_list_categories( $args );?>
+<!--                        </ul>-->
+<!--                    </div>-->
                     
                     <div class="col-lg-8 col-md-8 col-sm-12">
                         
@@ -61,6 +61,11 @@
                         
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-12">
+                        <div class="feature_list" style="margin-top: 10px;">
+                        <div id="secondary" class="widget-area" role="complementary">
+                            <?php dynamic_sidebar( 'sidebar-below-banner' ); ?>
+                        </div>
+                    </div>
                         <?php require_once '../../templates/includes/blog-banner-buy-home.tpl'; ?>
                         <div class="feature_list">
                             <div id="secondary" class="widget-area" role="complementary">

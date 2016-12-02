@@ -23,7 +23,7 @@
         <span class="update-captcha"></span>
     </div>
     
-    <input id="captcha" type="text" name="captcha" autocomplete="off" class="text required captcha" />
+    <input id="captcha" type="text" name="captcha" autocomplete="off" class="text required captcha" placeholder="Enter verification code" />
     {if is_array($getOut._error) && $getOut._error.captcha}<label class="error show">{$getOut._error.captcha|escape}</label>{/if}
     
     <div class="button-sumbit clearfix">

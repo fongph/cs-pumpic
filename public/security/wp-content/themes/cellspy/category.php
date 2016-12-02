@@ -22,7 +22,7 @@
 <!--                    <div class="archive">-->
 <!--                        <span class="title">--><?php //printf( __( "All posts for '<i>%s</i>' category", 'cellspy' ), single_tag_title( '', false ) ); ?><!--</span>-->
 <!--                    </div>-->
-                        <div class="menu_category">
+                       <!-- <div class="menu_category">
                             <ul>
                                 <?php $args = array(
                                     'show_option_all'    => false,
@@ -33,7 +33,7 @@
 
                                 wp_list_categories( $args );?>
                             </ul>
-                        </div>
+                        </div>-->
 
                     <div class="col-lg-8 col-md-8 col-sm-12">
                         <?php
@@ -62,6 +62,11 @@
                     <?php endif; ?>
 
                     <div class="col-lg-4 col-md-4 col-sm-12">
+                        <div class="feature_list" style="margin-top: 10px;">
+                            <div id="secondary" class="widget-area" role="complementary">
+                                <?php dynamic_sidebar( 'sidebar-below-banner' ); ?>
+                            </div>
+                        </div>
                         <?php require_once '../../templates/includes/blog-banner-buy-category.tpl'; ?>
                         <div class="feature_list">
                             <div id="secondary" class="widget-area" role="complementary">

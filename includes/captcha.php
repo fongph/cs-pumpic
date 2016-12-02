@@ -16,7 +16,7 @@ $captcha->height = (isset($_GET['height'])) ? (int)$_GET['height'] : 48;
 // OPTIONAL Change configuration...
 // $captcha->wordsFile = dirname(__FILE__). "/resources/words/es.php";
 $captcha->session_var = $_SERVER['HTTP_HOST'];
-$captcha->imageFormat = 'png';
+$captcha->imageFormat = 'jpg';
 $captcha->lineWidth = 0;
 $captcha->scale = 3; 
 $captcha->blur = true;

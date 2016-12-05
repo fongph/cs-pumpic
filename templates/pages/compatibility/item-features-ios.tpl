@@ -12,6 +12,9 @@
                 title="View text content and supported attachments sent or received via SMS, MMS, and iMessages.">Text message history
             </li>
             <li class="mobile_tooltip _filter-feature" data-filter="jailbreak"
+                title="View text content sent or received via SMS, MMS, and iMessages.">Text message history
+            </li>
+            <li class="mobile_tooltip _filter-feature" data-filter="jailbreak"
                 title="Block specific numbers. Protect your children from chatting with strangers.<br />">SMS blocking
             </li>
             <li class="mobile_tooltip _filter-feature" data-filter="jailbreak"

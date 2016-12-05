@@ -931,7 +931,7 @@
                                     <ul>
                                         <li>
                                             <i class='i-list-features-sms only-mobile'></i>
-                                            <strong>SMS and MMS</strong>
+                                            <strong>SMS, MMS, iMessages</strong>
                                             <i class='i-list-features-sms only-pc'></i>
                                         </li>
                                     </ul>

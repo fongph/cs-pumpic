@@ -8,7 +8,7 @@
             <li class="mobile_tooltip _filter-feature" data-filter="jailbreak"
                 title="Put all unwelcome callers and message senders on the blocked list.<br />">Call blocking
             </li>
-            <li class="mobile_tooltip _filter-feature"
+            <li class="mobile_tooltip _filter-feature" data-filter="icloud"
                 title="View text content and supported attachments sent or received via SMS, MMS, and iMessages.">Text message history
             </li>
             <li class="mobile_tooltip _filter-feature" data-filter="jailbreak"

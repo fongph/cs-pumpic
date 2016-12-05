@@ -10,6 +10,11 @@
         margin-left: 0;
         line-height: 0.7;
     }
+    @media (max-width: 540px) {
+        .basic_wr .priceb {
+            padding-top: 0;
+        }
+    }
 </style>
     <!-- BLOCK GTM -->
     {include file='../includes/main/main-after-body.tpl'}
@@ -232,7 +237,7 @@
                                                         <div class="basic_fe reset-list media-sm-block">
                                                             <ul class="list_price-no-link list_price-no-link-inline">
 
-                                                                <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Text Messages <span>View text content of SMS, MMS, and iMessages sent or received.{*View sent and received messages.*}</span>
+                                                                <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Text Messages <span>View text content and supported attachments of SMS, MMS, and iMessages sent or received.</span>
                                                                 </li>
                                                                 <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Calls <span>Follow in- and outbound calls.</span>
                                                                 </li>

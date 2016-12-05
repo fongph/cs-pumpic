@@ -1,8 +1,15 @@
 <style>
     @media (max-width: 767px) {
-    .filter_fe .filter_icon {
-        display: none;
+        .filter_fe .filter_icon {
+            display: none;
+        }
     }
+    @media (min-width: 767px) {
+        .double_offer.checkbox {
+            display: none;
+        }
+    }
+
 </style>
 <div class="no_bg">
     <div class="container">
@@ -201,7 +208,7 @@
                                                         </li>
                                                         <li class="icloud-features__item">
                                                             <p class="icloud-features__name"><i class="icon-ok"></i>Text message history <span>(unlimited)</span></p>
-                                                            <p class="icloud-features__info m0">View text content sent or received via SMS, MMS, and iMessages.</p>
+                                                            <p class="icloud-features__info m0">View text content and supported attachments sent or received via SMS, MMS, and iMessages.</p>
                                                         </li>
                                                         <li class="icloud-features__item">
                                                             <p class="icloud-features__name"><i class="icon-ok"></i>WhatsApp</p>

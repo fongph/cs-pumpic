@@ -145,7 +145,7 @@
                                                             <div class="wr_pack_premium wr_icloud _single-pack-icloud"></div>
                                                             <div class="wr_pack_double_premium wr_icloud-double _double-pack-icloud"></div>
                                                             <div class="wr_price_big">
-                                                                <span></span><div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr icloud-price-per-month" >{$defaultIosiCloudPrice}</div></div><span>/ month</span>
+                                                                <span></span><div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr icloud-price-per-month" >{$defaultIosiCloudPrice}</div></div><span>/ mês</span>
                                                             </div>
                                                         </div>
                                                         <div class="list_price icloud-list_price">
@@ -369,7 +369,7 @@
                                                             <div class="wr_pack_basic android_basic_pack _single-pack-android-basic"></div>
                                                             <div class="wr_pack_double_basic android_basic_pack2 _double-pack-android-basic"></div>
                                                             <div class="wr_price_big">
-                                                                <span></span><div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr andr-basic-price-per-month">{$defaultAndriodBasicPrice}</div></div><span> / month</span>
+                                                                <span></span><div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr andr-basic-price-per-month">{$defaultAndriodBasicPrice}</div></div><span> / mês</span>
                                                             </div>
                                                         </div>
                                                         <div class="list_price">
@@ -382,7 +382,7 @@
                                                                             <label class="label_radio hover_label_radio {if $item.period == '12'}r_on{else}r_off{/if}">
                                                                                 <input class="data-price" data-target=".andr-basic-price-per-month" data-cur="usd" data-price-usd="{$item.price}" data-offer-price-usd="{$getProducts.androidBasicDouble[$key].price}" data-period="{$item.period}" data-product="{$item.id}" data-offer-product="{$getProducts.androidBasicDouble[$key].id}" data-group="android-basic"  name="optionsRadios" id="optionsRadios{$item.id}1" value="{$item.id}" type="radio"{if $item.period == '12'} checked="checked"{/if} />
                                                                                 <span class="sp">
-                                                                            <strong>{$item.period}</strong> {if $item.period == 1}month{else}months{/if}
+                                                                            <strong>{$item.period}</strong> {if $item.period == 1}mês{else}meses{/if}
                                                                         </span>
 
                                                                                 <div class="box-small-package">
@@ -427,7 +427,7 @@
                                                             <div class="wr_pack_premium android_prem_pack _single-pack-android-prem"></div>
                                                             <div class="wr_pack_double_premium android_prem_pack2 _double-pack-android-prem"></div>
                                                             <div class="wr_price_big">
-                                                                <span></span><div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr andr-premium-price-per-month">{$defaultAndroidPremiumPrice}</div></div><span>/ month</span>
+                                                                <span></span><div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr andr-premium-price-per-month">{$defaultAndroidPremiumPrice}</div></div><span>/ mês</span>
                                                             </div>
                                                         </div>
                                                         <div class="list_price">
@@ -440,7 +440,7 @@
                                                                             <label class="label_radio hover_label_radio {if $item.period == '12'}r_on{else}r_off{/if}">
                                                                                 <input class="data-price" data-target=".andr-premium-price-per-month" data-cur="usd" data-price-usd="{$item.price}" data-offer-price-usd="{$getProducts.androidPremiumDouble[$key].price}" data-period="{$item.period}" data-product="{$item.id}" data-offer-product="{$getProducts.androidPremiumDouble[$key].id}" data-group="android-prem"  name="optionsRadios" id="optionsRadios{$item.id}1" value="{$item.id}" type="radio"{if $item.period == '12'} checked="checked"{/if} />
                                                                                 <span class="sp">
-                                                                            <strong>{$item.period}</strong> {if $item.period == 1}month{else}months{/if}
+                                                                            <strong>{$item.period}</strong> {if $item.period == 1}mês{else}meses{/if}
                                                                         </span>
 
                                                                                 <div class="box-small-package">

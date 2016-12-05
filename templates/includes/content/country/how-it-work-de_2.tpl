@@ -7,7 +7,7 @@
                 <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
                     <h3 class="weight-normal"><i class="icons icon-buy"></i> Kaufen</h3>
                     <p>
-                        Kaufen Sie das Pumpic <b>Premium Abonnement</b> für 1, 3, 6 oder 12 Monate.
+                        Kaufen Sie das Pumpic <br><b>iOS (iCloud) Abonnement</b> für 1, 3, 6 oder 12 Monate.
                     </p>
                     <p>
                        Kurz nach Zahlungseingang erhalten Sie eine <b>E-Mail</b>.

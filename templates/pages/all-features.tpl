@@ -184,7 +184,7 @@
                                                 <a class="underline go_block_scroll" href="#sms-ios">Texts</a>
                                                 <div class="bth-info">
                                                     <ul>
-                                                        <li>SMS, MMS, iMessage text content</li>
+                                                        <li>SMS, MMS, iMessage text content and supported attachments</li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -936,7 +936,7 @@
                                         </li>
                                     </ul>
                                     <div class='block-info'>
-                                        <p>Monitor <b>sent, received</b>, and <b>deleted text</b> content of SMS, iMessages, and MMS. View data on both a sender and recipient.</p>
+                                        <p>Monitor <b>sent, received</b>, and <b>deleted text</b> content and supported attachments of SMS, iMessages, and MMS. View data on both a sender and recipient.</p>
                                         {*<ul>
                                             <li>Use Pumpic app to follow the entire call history of your</li>
                                             <li>child’s device. Protect your kids from mistrusted people.</li>

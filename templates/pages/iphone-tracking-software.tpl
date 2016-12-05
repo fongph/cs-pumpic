@@ -9,6 +9,11 @@
     .priceb,.pricep {
         margin-top: 0!important;
     }
+    @media (max-width: 540px) {
+        .basic_wr .priceb {
+            padding-top: 0;
+        }
+    }
 </style>
     <!-- BLOCK GTM -->
     {include file='../includes/main/main-after-body.tpl'}

@@ -259,11 +259,11 @@ span.text-success {
 
 .icloud-iphone-without-jailbreak-monitoring .dtable .wr_price_big, .iphone-with-jailbreak-monitoring .dtable .wr_price_big, .iphone-tracking-software .dtable .wr_price_big {
   position: static;
-  margin: 15px 0 0 0px;
+  margin: 10px 0 0 0px;
   height: auto;
   display: inline-block;
   float: none;
-  min-width: 190px;
+  //min-width: 190px;
 }
 
 .icloud-iphone-without-jailbreak-monitoring .dtable .wr_pack, .iphone-with-jailbreak-monitoring .dtable .wr_pack, .iphone-tracking-software .dtable .wr_pack {
@@ -615,7 +615,7 @@ th .table_title {
 }
 
 .icloud-iphone-without-jailbreak-monitoring .dtable, .iphone-with-jailbreak-monitoring .dtable, .iphone-tracking-software .dtable {
-  max-width: 280px;
+  max-width: 300px;
   margin: auto;
 }
 
@@ -838,7 +838,7 @@ th .table_title {
 
 @media only screen and (max-width: 400px) {
   .icloud-iphone-without-jailbreak-monitoring .dtable-cell .wr_price_big span, .iphone-with-jailbreak-monitoring .dtable-cell .wr_price_big span, .iphone-tracking-software .dtable-cell .wr_price_big span {
-    display: inline-block;
+    //display: inline-block;
     vertical-align: bottom;
   }
 }
@@ -1329,12 +1329,12 @@ th .table_title {
     border-left: none;
   }
   .pricing-icloud-solution .priceb > .dtable > .dtable-cell {
-    display: block;
+   // display: block;
     &:first-child {
       padding-bottom: 5px;
     }
     &:last-child {
-      padding-top: 0px;
+      //padding-top: 0px;
     }
   }
 }
@@ -1342,7 +1342,7 @@ th .table_title {
 .icloud-iphone-without-jailbreak-monitoring {
   .premium_wr .premium_fe .list_price-no-link li, .basic_wr .basic_fe .list_price-no-link li {
     min-height: 70px;
-    height: 70px;
+    //height: 70px;
   }
   .additional-benefits-item .list_price-no-link li {
     min-height: 120px !important;

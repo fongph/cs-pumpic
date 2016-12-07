@@ -308,6 +308,8 @@ class Compatibility {
             'tested' => $data['tested'],
             'features' => array(),
             'custom_text' => $data['custom_text'],
+            'meta_title' => $data['meta_title'],
+            'meta_description' => $data['meta_description'],
             'alies' => (isset( $data['alies'] ) and !empty($data['alies'])) ? $data['alies'] : false,
         );
 

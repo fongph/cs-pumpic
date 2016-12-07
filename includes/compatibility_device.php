@@ -38,8 +38,8 @@ if($phoneData){
     $smarty->assign('compatibilityDeviceUri', $_GET['model']);
     $smarty->assign('getSetting', array(
         '_item' => $phoneData,
-        'title' => "{$phoneData['name']} parental monitoring & tracking app", /* {$phoneData['name']} parent monitoring at Pumpic.com */
-        'description' => "Parental control software for {$phoneData['name']} monitors and blocks unsafe activity while allowing kids access to the Internet. Geo fencing allows you to be always aware of your child safety.",
+        'title' => "{$phoneData['meta_title']}", /* {$phoneData['name']} parent monitoring at Pumpic.com */
+        'description' => "{$phoneData['meta_description']} ",
         'api' => $config['api_device'],
     ));
     $smarty->display('compatibility/item.tpl', $cache_id); // $cache_id

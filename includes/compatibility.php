@@ -38,25 +38,8 @@ if(!$smarty->getTemplateVars('getUserInfo')) {
     }
 } 
 
-//$filename = dirname(dirname(__FILE__)).'/templates/pages/compatibility.tpl';
-//if(file_exists($filename)) {
-//    $LastModified_unix = (is_array($smarty->getTemplateVars('getUserInfo')) && isset($smarty->getTemplateVars('getUserInfo')['login'])) ? strtotime("now"):filemtime($filename); // время последнего изменения страницы
-//    $LastModified = gmdate("D, d M Y H:i:s \G\M\T", $LastModified_unix);
-//    $IfModifiedSince = false;
-//    if (isset($_ENV['HTTP_IF_MODIFIED_SINCE']))
-//        $IfModifiedSince = strtotime(substr($_ENV['HTTP_IF_MODIFIED_SINCE'], 5));  
-//    if (isset($_SERVER['HTTP_IF_MODIFIED_SINCE']))
-//        $IfModifiedSince = strtotime(substr($_SERVER['HTTP_IF_MODIFIED_SINCE'], 5));
-//    if ($IfModifiedSince && $IfModifiedSince >= $LastModified_unix) {
-//        header($_SERVER['SERVER_PROTOCOL'] . ' 304 Not Modified');
-//        exit;
-//    }
-//    header('Last-Modified: '. $LastModified);   
-//}
-
 $_mail = new Phpmail( $config['db_blog'] );
 
-// echo "<pre>"; var_dump( $smarty ); echo "</pre>";
 
  $smarty->caching = true;
  $smarty->compile_check = true;
@@ -68,7 +51,6 @@ $compatibility = new Compatibility(di()->get('dbPhones'));
 
 $currentPage = (isset($_GET['page']) and (int)$_GET['page']) ?: 0;
 
-//$res = $compatibility->getPhones(Compatibility::FIND_BY_QUERY, $currentPage, $_GET['query']);
 
 
 if(isAjax()){
@@ -81,15 +63,6 @@ if(isAjax()){
     }
     die(json_encode($res, true));
 }
-
-/*
-$phones = $compatibility->getPhones(Compatibility::FIND_ALL,$currentPage);
-$paginationList = paginationByCount($currentPage, ceil($phones['count'] / Compatibility::devicesPerPage()));
-
-$smarty->assign('phones', $phones['list'], false);
-$smarty->assign('currentPage', $currentPage, false);
-$smarty->assign('pages', $paginationList, false);
-*/
 
 $_result = array(
         'error' => false,
@@ -122,71 +95,8 @@ if(isset($_POST['submit']) and $_POST['submit']) {
     if($_result['success']) unset($_POST);
 }
 
-// clearCahce
-//if($smarty ->isCached('compatibility.tpl', 'compatibility_'.date("dmY", strtotime("now"))))
-//        $smarty -> clearCache('compatibility.tpl', 'compatibility_'.date("dmY", strtotime("now")));
-//
-//$cache_id = 'compatibility_'.date("dmY", strtotime("+1 day"));
-
-/*
-require_once 'lib/users/ManagerUser.php';
-$obj = new includes\lib\users\ManagerUser( array() );
-$user = false;
-
-if($obj->getUserIdByAuth()) {
-    $user = array();
-    $_user = $obj->getUser( $obj->getUserIdByAuth() );
-    $user['name'] = ($_user->getName()) ? $_user->getName() : false;
-    $user['login'] = ($_user->getLogin()) ? $_user->getLogin() : false;
-} 
-
-$cache_id = 'compatibility_start';
-if(is_array($user) && isset($user['login'])) {
-    $cache_id = 'compatibility_'.$user['name'].$user['login'];
-}
-$cache_id = md5($cache_id);
-if(is_array($user) || !$user ) {
-    $smarty->clearCache('compatibility.tpl', $cache_id);
-} 
-*/
-
-//$cache_id = 'compatibility_start';
-//if(is_array($smarty->getTemplateVars('getUserInfo')) && isset($smarty->getTemplateVars('getUserInfo')['login'])) {
-//    $cache_id = 'compatibility_'.$smarty->getTemplateVars('getUserInfo')['name'].$smarty->getTemplateVars('getUserInfo')['login'];
-//}
-//$cache_id = md5($cache_id);
-//if(is_array($user) || !$user ) {
-//    $smarty->clearCache('compatibility.tpl', $cache_id);
-//} 
-
-
-//$smarty->clearCache('compatibility.tpl');
-//$smarty->clearCache(null, 'main-compatibility-send-find-phone');
-//$smarty->clearCache(null, 'includes_main_main-top-menu');
-
-//$hash = md5($cache_id);
-//$endTime = strtotime("+1 day");
-//
-//$caheTime = explode('_', $cache_id);
-//
-//if(is_array($caheTime) and count($caheTime) > 0) {
-//    $hash = $caheTime[0];
-//    $endTime = $caheTime[1];
-//}
-
-//if(strtotime("now") > $endTime && $smarty ->isCached('compatibility.tpl', $hash.$endTime) 
-//        || is_array($smarty->getTemplateVars('getUserInfo'))) {
-//    $smarty->clearCache('compatibility.tpl', $hash.$endTime);
-//}
-
-// if($smarty ->isCached('compatibility.tpl', $cache_id))
-// $compatibility->getCategoriesCount();
-
-
 $cat_phones = $compatibility->getCategoryModels();
 $smarty->assign('phones', $cat_phones, false);
-//$cats = $compatibility->getCategories();
-//$smarty->assign('phones', $cats, false);
 $smarty->assign("cols_cats", 6);
 
 // domain

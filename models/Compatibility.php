@@ -106,10 +106,9 @@ class Compatibility {
                 path_big as b_img,
                 path_middle as m_img,
                 os,
-                os_ver as version,
-                gsm_module,
                 {$_fileds}
-                tested FROM `phones`
+                os_ver as version
+                 FROM `phones`
             {$whereQuery}
             {$groupBy}
             {$orderBy}
@@ -197,9 +196,6 @@ class Compatibility {
 
             ),
         );
-
-        if(isset($data['gsm_module']) and !$data['gsm_module'])
-            unset($groups['Calls & SMS']);
 
         // only this OS
         $os_iOS = array(

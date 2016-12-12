@@ -211,21 +211,6 @@
                                 {else}
                                     {include file='./item-features-android.tpl'}
                                 {/if}
-                                {*{foreach from=$getSetting._item.features key=name item=params}*}
-                                {*<ul class="{if $getSetting._item.features|@count < 5}option_list w25p{else}option_list{/if}">*}
-
-                                {*<li>*}
-                                {*<span>{$name}</span>*}
-                                {*<ul>*}
-                                {*{foreach from=$params key=alies item=value}*}
-                                {*if $value*}
-                                {*<li class="mobile_tooltip" title="{$value}"> {$alies}</li>*}
-                                {*/if*}
-                                {*{/foreach}*}
-                                {*</ul>*}
-                                {*</li>*}
-                                {*</ul>*}
-                                {*{/foreach}*}
                             </div>
                         </div>
 

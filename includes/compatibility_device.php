@@ -36,10 +36,12 @@ if($phoneData){
 
     $cache_id = 'compatibility_item_'.md5( $phoneData['rowid'].'-'.$phoneData['cdate'].'-'.$phoneData['alies'] );
     $smarty->assign('compatibilityDeviceUri', $_GET['model']);
+    $metaTitle = (empty($phoneData['meta_title'])) ? "{$phoneData['name']} parental monitoring & tracking app" : $phoneData['meta_title'];
+    $metaDesc = (empty($phoneData['meta_description'])) ? "Parental control software for {$phoneData['name']} monitors and blocks unsafe activity while allowing kids access to the Internet" : $phoneData['meta_description'];
     $smarty->assign('getSetting', array(
         '_item' => $phoneData,
-        'title' => "{$phoneData['name']} parental monitoring & tracking app", /* {$phoneData['name']} parent monitoring at Pumpic.com */
-        'description' => "Parental control software for {$phoneData['name']} monitors and blocks unsafe activity while allowing kids access to the Internet. Geo fencing allows you to be always aware of your child safety.",
+        'title' => $metaTitle, /* {$phoneData['name']} parent monitoring at Pumpic.com */
+        'description' => $metaDesc,
         'api' => $config['api_device'],
     ));
     $smarty->display('compatibility/item.tpl', $cache_id); // $cache_id

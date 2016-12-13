@@ -124,7 +124,8 @@
                                         {foreach from=$phone.models item=model key=mkey}
                                             
                                             <li>
-                                                {if $model.custom_text && count($model.features) > 0}
+                                               <!-- {*//{if $model.custom_text && count($model.features) > 0}  *}-->
+                                                {if $model.custom_text}
                                                     <a onClick="window.location.href = 'http://{$domain}/compatibility/{$model.alies}/'">{$model.name}</a>
                                                 {else}
                                                     <span>{$model.name}</span> 

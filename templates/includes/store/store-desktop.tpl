@@ -106,7 +106,7 @@
                     </ul>
                     <div class="double_offer checkbox">
                         <label>
-                            <input type="checkbox" data-group="android-basic" name="android-40off">
+                            <input type="checkbox" data-group="android-prem" name="android-40off">
                             Get the 2nd plan with <span>40% OFF!</span>
                         </label>
                     </div>

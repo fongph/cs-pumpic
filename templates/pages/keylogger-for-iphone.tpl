@@ -157,11 +157,11 @@
 			<p>For parents, knowing what their kid is up to is very important. With keystroke logger, iPhone gadget can be easily turned into a tracking device that reports all of the typing activities that take place on it.</p>
 			<p>Thus, you can use it to:</p>
 				<ul class="list-images">
-				<li><img src="/images/landings/mark.png" alt="Check Mark" style="left: -30px;" />Get the full log from any text messaging app and see inappropriate words your kids use.</li>
-				<li><img src="/images/landings/mark.png" alt="Check Mark" style="left: -30px;" />Obtain the log of all social network publications they make.</li>
-				<li><img src="/images/landings/mark.png" alt="Check Mark" style="left: -30px;" />Get an idea of the type of websites they visit.</li>
-				<li><img src="/images/landings/mark.png" alt="Check Mark" style="left: -30px;" />View passwords they set and change them if it’s needed.</li>
-				<li><img src="/images/landings/mark.png" alt="Check Mark" style="left: -30px;" />Protect your children from strangers, bullies, predators, and other digital threats.</li>
+				<li><img src="/images/landings/check-icon.png" alt="Check Mark" style="left: -30px;" />Get the full log from any text messaging app and see inappropriate words your kids use.</li>
+				<li><img src="/images/landings/check-icon.png" alt="Check Mark" style="left: -30px;" />Obtain the log of all social network publications they make.</li>
+				<li><img src="/images/landings/check-icon.png" alt="Check Mark" style="left: -30px;" />Get an idea of the type of websites they visit.</li>
+				<li><img src="/images/landings/check-icon.png" alt="Check Mark" style="left: -30px;" />View passwords they set and change them if it’s needed.</li>
+				<li><img src="/images/landings/check-icon.png" alt="Check Mark" style="left: -30px;" />Protect your children from strangers, bullies, predators, and other digital threats.</li>
 				</ul>
 				<p>It’s natural that kids tend to keep their private life secret from their parents and see any attempt to monitor their activity as an invasion of their privacy. At the same time, it means that if (or when) kids turn out to be in danger, parents might have no idea about the threat to avert or even prevent it.</p>
 				<p>So if you want to stay informed about your kids’ digital life even when you’re not nearby, protect them from online dangers, and track texts they type on iPhone – monitor keyboard of their devices with Pumpic parental control keylogger feature.</p>

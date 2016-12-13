@@ -153,19 +153,19 @@
                 <p>Teens are virtuosic texters. Parents know that their children will respond really fast when you text them. They simplify words, use acronyms and symbols to text more rapidly than almost any grown-up can. That is why most of kids’ and teens’ SMS are hard to interpret at the first sight. However, this tactic can be and is often used to hide the actual meaning from whoever may see their conversation.</p>
 				<p>Hence, you should learn at least basic slang words, terms, and acronyms to stay aware of what your kids are up to and prevent them from getting into trouble when it’s necessary. Here are several common codes every parent must familiarize himself with:</p>
 				<ul class="list-images">
-				<li><img src="/images/landings/mark.png" alt="Check Mark" style="left: -30px;" />CD9 – Code 9 – means Parents Are Around.</li>
-				<li><img src="/images/landings/mark.png" alt="Check Mark" style="left: -30px;" />GNOC – Get Naked on Cam (webcam).</li>
-				<li><img src="/images/landings/mark.png" alt="Check Mark" style="left: -30px;" />KPC – Keeping Parents Clueless.</li>
-				<li><img src="/images/landings/mark.png" alt="Check Mark" style="left: -30px;" />(L)MIRL – (Lets) Meet in Real Life.</li>
-				<li><img src="/images/landings/mark.png" alt="Check Mark" style="left: -30px;" />WTTP - Want to trade pictures?</li>
-				<li><img src="/images/landings/mark.png" alt="Check Mark" style="left: -30px;" />NIFOC – Naked in Front of Computer.</li>
-				<li><img src="/images/landings/mark.png" alt="Check Mark" style="left: -30px;" />TDTM – Talk Dirty To Me.</li>
-				<li><img src="/images/landings/mark.png" alt="Check Mark" style="left: -30px;" />Sugarpic – Sexy picture.</li>
-				<li><img src="/images/landings/mark.png" alt="Check Mark" style="left: -30px;" />ASLP - Ages, sex, location, picture.</li>
-				<li><img src="/images/landings/mark.png" alt="Check Mark" style="left: -30px;" />LHS – Let's Have Sex.</li>
-				<li><img src="/images/landings/mark.png" alt="Check Mark" style="left: -30px;" />CU46 – See You for Sex.</li>
-				<li><img src="/images/landings/mark.png" alt="Check Mark" style="left: -30px;" />420, Aunt Mary, bobby, boom, chira, Mary Jane - marijuana.</li>
-				<li><img src="/images/landings/mark.png" alt="Check Mark" style="left: -30px;" />A, black star, Elvis, golden dragon, pink robots, superman, twenty-five - LSD.</li>
+				<li><img src="/images/landings/check-icon.png" alt="Check Mark" style="left: -30px;" />CD9 – Code 9 – means Parents Are Around.</li>
+				<li><img src="/images/landings/check-icon.png" alt="Check Mark" style="left: -30px;" />GNOC – Get Naked on Cam (webcam).</li>
+				<li><img src="/images/landings/check-icon.png" alt="Check Mark" style="left: -30px;" />KPC – Keeping Parents Clueless.</li>
+				<li><img src="/images/landings/check-icon.png" alt="Check Mark" style="left: -30px;" />(L)MIRL – (Lets) Meet in Real Life.</li>
+				<li><img src="/images/landings/check-icon.png" alt="Check Mark" style="left: -30px;" />WTTP - Want to trade pictures?</li>
+				<li><img src="/images/landings/check-icon.png" alt="Check Mark" style="left: -30px;" />NIFOC – Naked in Front of Computer.</li>
+				<li><img src="/images/landings/check-icon.png" alt="Check Mark" style="left: -30px;" />TDTM – Talk Dirty To Me.</li>
+				<li><img src="/images/landings/check-icon.png" alt="Check Mark" style="left: -30px;" />Sugarpic – Sexy picture.</li>
+				<li><img src="/images/landings/check-icon.png" alt="Check Mark" style="left: -30px;" />ASLP - Ages, sex, location, picture.</li>
+				<li><img src="/images/landings/check-icon.png" alt="Check Mark" style="left: -30px;" />LHS – Let's Have Sex.</li>
+				<li><img src="/images/landings/check-icon.png" alt="Check Mark" style="left: -30px;" />CU46 – See You for Sex.</li>
+				<li><img src="/images/landings/check-icon.png" alt="Check Mark" style="left: -30px;" />420, Aunt Mary, bobby, boom, chira, Mary Jane - marijuana.</li>
+				<li><img src="/images/landings/check-icon.png" alt="Check Mark" style="left: -30px;" />A, black star, Elvis, golden dragon, pink robots, superman, twenty-five - LSD.</li>
 				<p> </p>
 				<p>This is just a tiny part of teen specific texting language. You can educate yourself more by visiting <a class="a-default" href="/learning-center/glossary-internet-terms.html" target="blank"> Glossary of Internet Terms</a> in our Learning Center. With this knowledge and Pumpic cell phone tracker, text messages your kid sends and receives will be completely visible and understandable to you.</p>
 				<p>Another thing regarding texting you might want to consider is a social impact has on teenagers. For example, a kid may get angry at friends who don’t respond immediately and continuously to messages, not taking into consideration that the addressee may be asleep or driving. Also, researchers warn that round-the-clock contact with friends and receiving multiple opinions on any topic may affect teens' decision-making skills since they may undermine teens’ self-confidence and ability to think things through on their own. Consider these points and talk to your kids about setting limits on texting.</p>

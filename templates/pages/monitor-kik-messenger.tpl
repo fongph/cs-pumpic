@@ -161,9 +161,9 @@
 			<p>Teens spend a lot of time communicating with peers via different messengers and share a lot of information. The need for control is becoming more urgent as ever. Thankfully, there are tracking apps, such as Pumpic, that allow not only to monitor Kik messages, but also to track conversations in Skype, Viber, Facebook, WhatsApp, and Snapchat.</p>
 <p><strong>Here are some convincing reasons why you would like to install a tracking app:</strong></p>
 				<ul class="list-images">
-				<li><img src="/images/landings/mark.png" alt="Check Mark" style="left: -30px;" />It provides a lot of useful functions – such software lets you oversee all activities that take place on a particular device.</li>
-				<li><img src="/images/landings/mark.png" alt="Check Mark" style="left: -30px;" />It is legal – you may not worry about installing the app as it is lawful to use parental controls to monitor children’s online experience.</li>
-				<li><img src="/images/landings/mark.png" alt="Check Mark" style="left: -30px;" />It is user-friendly – the app’s interface if very clear, so every parent will easily manage this kind of software. </li>
+				<li><img src="/images/landings/check-icon.png" alt="Check Mark" style="left: -30px;" />It provides a lot of useful functions – such software lets you oversee all activities that take place on a particular device.</li>
+				<li><img src="/images/landings/check-icon.png" alt="Check Mark" style="left: -30px;" />It is legal – you may not worry about installing the app as it is lawful to use parental controls to monitor children’s online experience.</li>
+				<li><img src="/images/landings/check-icon.png" alt="Check Mark" style="left: -30px;" />It is user-friendly – the app’s interface if very clear, so every parent will easily manage this kind of software. </li>
 				</ul>
 				<p>Once you install a monitoring app, you can take advantage of all the features it provides. You can check everything from your own board remotely. Pumpic will give the highest level of security to make sure your kid is protected from unpleasant experience.</p>
             </div>

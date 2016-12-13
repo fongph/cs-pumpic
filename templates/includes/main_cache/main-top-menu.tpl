@@ -12,7 +12,7 @@
                         </button>
                         <div itemscope itemtype="http://schema.org/Organization" class="logo">
                             <a href="{$domain_http}" itemprop="url">pumpic</a>
-                            <img itemprop="logo" src="../images/logo/logo.png" alt="pumpic" />
+                            <img itemprop="logo" src="../images/logo/pumpic-logo.png" alt="pumpic" />
                         </div>
                     </div>
                     {if ''|hasUser}

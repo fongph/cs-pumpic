@@ -159,9 +159,9 @@
 			<p>The main problem is that children easily share their personal data with peers, and even strangers, and don’t realize the possible consequences of oversharing information. That’s why your responsibility is to protect your kids, and one of the most trustworthy ways to do it is to use monitoring software.</p>
 			<p><strong>	Here are a few reasons why you would like to install monitoring application:</strong></p>
 				<ul class="list-images">
-				<li><img src="/images/landings/mark.png" alt="Check Mark" style="left: -30px;" />It is legal – downloading and using parental controls is absolutely lawful and don’t violate personal freedom. The app is designed to protect kids from negative results of the Internet usage.</li>
-				<li><img src="/images/landings/mark.png" alt="Check Mark" style="left: -30px;" />It is easy to use – to monitor all activities, you just need to go to your personal panel. There you’ll find all the information about the device usage.</li>
-				<li><img src="/images/landings/mark.png" alt="Check Mark" style="left: -30px;" />It has a lot of functions – take advantage of various features parental controls provide: track Viber calls, check messages, monitor location, set restrictions, etc.</li>
+				<li><img src="/images/landings/check-icon.png" alt="Check Mark" style="left: -30px;" />It is legal – downloading and using parental controls is absolutely lawful and don’t violate personal freedom. The app is designed to protect kids from negative results of the Internet usage.</li>
+				<li><img src="/images/landings/check-icon.png" alt="Check Mark" style="left: -30px;" />It is easy to use – to monitor all activities, you just need to go to your personal panel. There you’ll find all the information about the device usage.</li>
+				<li><img src="/images/landings/check-icon.png" alt="Check Mark" style="left: -30px;" />It has a lot of functions – take advantage of various features parental controls provide: track Viber calls, check messages, monitor location, set restrictions, etc.</li>
 				</ul>
 				<p>Tracking software will help you to be aware of your child’s life. You can check all the information you are interested in to be sure that your child is protected all the time.</p>
 			</div>

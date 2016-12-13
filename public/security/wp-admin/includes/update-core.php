@@ -603,7 +603,7 @@ $_old_files = array(
 // 'wp-admin/css/media.min.css',
 // 'wp-admin/css/farbtastic-rtl.min.css',
 'wp-admin/images/lock-2x.png',
-'wp-admin/images/lock.png',
+'wp-admin/images/lock-image.png',
 'wp-admin/js/theme-preview.js',
 'wp-admin/js/theme-install.min.js',
 'wp-admin/js/theme-install.js',

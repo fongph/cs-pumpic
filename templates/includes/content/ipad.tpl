@@ -19,7 +19,7 @@
                                         <!-- #{$foo} -->    
                                         <div class="slide">
                                             <div class="bgIpad {if isset($bgTab)}{$bgTab}{else}bgAndroid{/if}">
-                                                <img src="{$img}/slider_home/{$foo}.jpg" alt="{if isset($imgAlt)}{$imgAlt}{else}{$foo}.jpg{/if}">
+                                                <img src="{$img}/slider_home/{$foo}.jpg" alt="{if isset($imgAlt)}{$imgAlt}{else}{/if}">
                                             </div>
                                         </div>
                                         {/for} 

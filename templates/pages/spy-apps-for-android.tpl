@@ -155,11 +155,11 @@
                 <p>According to the Pew Research Center, parents monitor their children’s digital behavior in a number of ways. Discussing acceptable online behavior with teens and checking their social profiles isn't enough. That's why using parental monitoring software is a smart way to keep your child safe on the Internet.</p>
 				<p>Here are five main reasons to set up parental control app like Pumpic:</p>
 				<ul class="list-images">
-				<li><img src="/images/landings/mark.png" alt="Check Mark" class="lc-1" style="left: -29px;"/>It has diverse functions – some of the most useful protection measures are monitoring calls, text messages, online activities, blocking apps, websites as well as all inappropriate links.</li>
-				<li><img src="/images/landings/mark.png" alt="Check Mark" class="lc-1" style="left: -29px;"/>It is legal – parental controls are absolutely legal to use, unlike spying programs for Android. Monitoring software is allowed and you won't have any problems.</li>
-				<li><img src="/images/landings/mark.png" alt="Check Mark" class="lc-1" style="left: -29px;"/>Is it easy to use – a tracking app can be easily installed and you can monitor your child with the help of a simple Control Panel.</li>
-				<li><img src="/images/landings/mark.png" alt="Check Mark" class="lc-1" style="left: -29px;"/>It is convenient – you can monitor your kid's activities remotely from any browser and any device.</li>
-				<li><img src="/images/landings/mark.png" alt="Check Mark" class="lc-1" style="left: -29px;"/>It can prevent unacceptable online behavior and many dangers (cyberbullying, online predator attacks, sexting, identity theft etc.) </li>
+				<li><img src="/images/landings/check-icon.png" alt="Check Mark" class="lc-1" style="left: -29px;"/>It has diverse functions – some of the most useful protection measures are monitoring calls, text messages, online activities, blocking apps, websites as well as all inappropriate links.</li>
+				<li><img src="/images/landings/check-icon.png" alt="Check Mark" class="lc-1" style="left: -29px;"/>It is legal – parental controls are absolutely legal to use, unlike spying programs for Android. Monitoring software is allowed and you won't have any problems.</li>
+				<li><img src="/images/landings/check-icon.png" alt="Check Mark" class="lc-1" style="left: -29px;"/>Is it easy to use – a tracking app can be easily installed and you can monitor your child with the help of a simple Control Panel.</li>
+				<li><img src="/images/landings/check-icon.png" alt="Check Mark" class="lc-1" style="left: -29px;"/>It is convenient – you can monitor your kid's activities remotely from any browser and any device.</li>
+				<li><img src="/images/landings/check-icon.png" alt="Check Mark" class="lc-1" style="left: -29px;"/>It can prevent unacceptable online behavior and many dangers (cyberbullying, online predator attacks, sexting, identity theft etc.) </li>
 				<p>Keep in mind that to install a tracking app, you need to ensure that you own the target device or have obtained the owner's permission for monitoring.</p>
             </div>
         </div>
@@ -175,7 +175,7 @@
                 <div class="row">
                         <div class="col-sm-4 col-md-4 col-lg-4">
                                 <div class="feature">
-                                        <img src="{$img}/icons/icon-mobile-secure.png" alt="cell phone monitoring">
+                                        <img src="{$img}/icons/icon-mobile-secure.png" alt="remote mobile monitoring">
                                         <h3>Control cell phone use</h3>
                                         <ul class="feature_list">
                                                 <li>Check incoming and outgoing calls</li>
@@ -186,7 +186,7 @@
                         </div>
                         <div class="col-sm-4 col-md-4 col-lg-4">
                                 <div class="feature">
-                                        <img src="{$img}/icons/icon-limit-app.gif" alt="remote mobile monitoring">
+                                        <img src="{$img}/icons/icon-limit-app.gif" alt="supervise online activity">
                                         <h3>Monitor Internet activities</h3>
                                         <ul class="feature_list">
                                                 <li>Limit apps and block websites</li>

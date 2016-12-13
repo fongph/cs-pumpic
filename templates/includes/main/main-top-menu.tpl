@@ -13,7 +13,7 @@
                         <div itemscope itemtype="http://schema.org/Organization" class="logo">
                           <meta itemprop="name" content="Pumpic Parental Monitoring">
                             <a href="/" itemprop="url">pumpic
-                            <img itemprop="logo" src="http://{$domain}/images/logo/logo.svg" alt="pumpic" />
+                            <img itemprop="logo" src="http://{$domain}/images/logo/pumpic-logo.svg" alt="pumpic app logo" />
                             </a>
                         </div>
                     </div>

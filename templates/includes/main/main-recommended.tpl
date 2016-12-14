@@ -4,7 +4,7 @@
 <div class="recommended_links">
     <div class="title">In the News:</div>
     <div class="item">
-        <a class="b-o-hover item_link" href="http://www.lifehack.org/278272/top-6-apps-help-your-kids-learn-while-you-keep-them-safe" target="_blank" rel="nofollow"><img alt="" class="i-ios-hacker" src="/images/recommended/lifehack-logo.png" alt="pumpic on lifehack"></a>
+        <a class="b-o-hover item_link" href="http://www.lifehack.org/278272/top-6-apps-help-your-kids-learn-while-you-keep-them-safe" target="_blank" rel="nofollow"><img class="i-ios-hacker" src="/images/recommended/lifehack-logo.png" alt="pumpic on lifehack"></a>
         <a class="b-o-hover item_link" href="http://appadvice.com/appnn/2015/06/keep-your-family-secure-with-pumpic-mobile-monitoring" target="_blank" rel="nofollow"><img class="i-ios-hacker" src="/images/recommended/appadvice-logo.png" alt="pumpic on appadvice"></a>
         <a class="b-o-hover item_link" href="http://www.business.com/entrepreneurship/entrepreneurial-skills-you-should-teach-your-kids/" target="_blank" rel="nofollow"><img class="i-ios-hacker" src="/images/recommended/business-com-logo.png" alt="pumpic on business"></a>
         <a class="b-o-hover item_link" href="http://www.chicagotribune.com/suburbs/aurora-beacon-news/community/chi-ugc-article-parenting-methods-in-the-technology-era-how-2016-03-31-story.html" target="_blank" rel="nofollow"><img class="i-ios-hacker" src="/images/recommended/chicagotribune-logo.png" alt="pumpic on chicagotribune"></a>

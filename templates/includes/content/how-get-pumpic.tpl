@@ -6,7 +6,7 @@
             <div class="thumbs">
                 <div class="col-sm-12 col-md-4 clearfix">
                     <div class="thumbnail">
-                        <span class="img_thumb"><img src="images/thumb_1.png" height="184{*216*}" width="308{*360*}" alt="{if isset($imgAlt)}{$imgAlt}{/if}"></span>
+                        <span class="img_thumb"><img src="images/buy-premium-thumb.png" height="184{*216*}" width="308{*360*}" alt="pumpic parental control buy premium"></span>
                         <div class="caption how-to-step">
                             <h3>Pick a subscription plan</h3>
                             <p>Visit our <a class="text-green a-default" href="/store.html">Store</a>, check out available <b>subscription plans</b> and choose the one that meets your expectations and <b>monitoring preferences</b>.
@@ -16,7 +16,7 @@
                 </div>
                 <div class="col-sm-12 col-md-4 clearfix">
                     <div class="thumbnail">
-                        <span class="img_thumb"><img src="images/thumb_2_new.png" height="175{*206*}" width="147{*172*}" alt="{if isset($imgAlt)}{$imgAlt}{/if}"></span>
+                        <span class="img_thumb"><img src="images/pumpic-icon-thumb.png" height="175{*206*}" width="147{*172*}" alt="pumpic icon on mobile"></span>
                         <div class="caption how-to-step">
                             <h3>Set up</h3>
                             <p>Pumpic app installation process will take you no longer than <b>5 minutes</b>. Follow the guidelines in the subscription email to complete the setup.
@@ -27,7 +27,7 @@
                 </div>
                 <div class="col-sm-12 col-md-4 clearfix">
                     <div class="thumbnail">
-                        <span class="img_thumb"><img src="images/thumb_3_new.png" height="184{*216*}" width="308{*360*}" alt="{if isset($imgAlt)}{$imgAlt}{/if}"></span>
+                        <span class="img_thumb"><img src="images/stores-thumb.png" height="184{*216*}" width="308{*360*}" alt="pumpic stores"></span>
                         <div class="caption how-to-step">
                             <h3>Track remotely</h3>
                             <p>To see the data from the target device, access your Control Panel via <a href="http://cp.pumpic.com">cp.pumpic.com</a> or Mobile App for iOS & Android (has a <a href="/mobile-monitoring-control-panel-comparison.html">limited amount of features</a>!).

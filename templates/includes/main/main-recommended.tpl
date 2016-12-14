@@ -18,7 +18,7 @@
 
     <div class="recommended_member">
         <div class="title">Member of:</div>
-        <img class="ri-anti-bullying" src="/images/recommended/small/anti-bullying-alliance-logo.png" alt="">
+        <img class="ri-anti-bullying" src="/images/recommended/small/anti-bullying-alliance-logo.png" alt="pumpic on anti-bullying">
     </div>
 
 

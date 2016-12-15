@@ -19,8 +19,8 @@
 
             <section class="cpa-images">
 
-                <a href="https://play.google.com/store/apps/details?id=com.pumpic.mobile.monitoring" target="_blank" class="ga-action-click" ga-category="Mobile App Buttons" ga-action="click" ga-label="Android CP APP" ><img class="mobile-apps mobile-apps-app-store" src="/images/google-play-banner.png" alt="">
-                    <a href="https://itunes.apple.com/us/app/pumpic-control-panel/id1126835967" class="ga-action-click" ga-category="Mobile App Buttons" ga-action="click" ga-label="iOS CP APP" target="_blank"><img class="mobile-apps mobile-apps-google-play" src="/images/icon-app-store-black-banner.png" alt=""></a>
+                <a href="https://play.google.com/store/apps/details?id=com.pumpic.mobile.monitoring" target="_blank" class="ga-action-click" ga-category="Mobile App Buttons" ga-action="click" ga-label="Android CP APP" ><img class="mobile-apps mobile-apps-app-store" src="/images/google-play-banner.png" alt="pumpic at google play">
+                    <a href="https://itunes.apple.com/us/app/pumpic-control-panel/id1126835967" class="ga-action-click" ga-category="Mobile App Buttons" ga-action="click" ga-label="iOS CP APP" target="_blank"><img class="mobile-apps mobile-apps-google-play" src="/images/app-store-banner.png" alt="pumpic at app store"></a>
 
 
             </section>

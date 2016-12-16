@@ -88,8 +88,8 @@
         </script>
     </article>
     <?php get_sidebar('subscribe'); ?>
-    <?= fb_get_cat_related_posts() ?>
-
+    <?//= fb_get_cat_related_posts() ?>
+    <?php if ( function_exists( "get_yuzo_related_posts" ) ) { get_yuzo_related_posts(); } ?>
 
     <div class="should-keep">
         <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Children Safe") ) : ?>

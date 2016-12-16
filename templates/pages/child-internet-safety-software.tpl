@@ -102,7 +102,7 @@
     blockBg='light'}
 	
 	<p>Worrying about kids is the defining and inherent trait of being a parent. Educating children on the security issues, explaining how to stay safe in various situations, and taking measures to avert all possible dangers is the distinctive trait of being a really good parent. This is true not only for the real life but also for the digital one as it has become the inherent part of modern-day kids’ and teens’ lives.</p>
-	<p>The thing is that the Internet – despite all its values – can be a dangerous place for children of all ages. Cyberbullying, sexting, online predators, identity theft, objectionable content – this is not anywhere near the full list of perils that lie in wait for careless underage users online. That’s why the question is not whether to utilize child internet safety software, but what monitoring and protection software to utilize.</p>
+	<p>The thing is that the Internet – despite all its values – can be a dangerous place for children of all ages. Cyberbullying, sexting, online predators, identity theft, objectionable content – this is not anywhere near the full list of perils that lie in wait for careless underage users online. That’s why the question is not whether to utilize child internet safety software, but what monitoring and protection software to utilize. </p>
         
         <!-- BLOCK STATISTICK -->
         <div class="block-statistick row">

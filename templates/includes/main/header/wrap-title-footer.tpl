@@ -30,12 +30,12 @@
         
         {nocache} 
         <script>
-            {assign _hasUser 'false'}
-            {if ''|hasUser}{assign _hasUser 'true'}{/if}
-            
-            var UserLogin = '{UserLogin}',
-                _hasUser = '{$_hasUser}';
-                        
+            {*{assign _hasUser 'false'}*}
+            {*{if ''|hasUser}{assign _hasUser 'true'}{/if}*}
+            {**}
+            {*var UserLogin = '{UserLogin}',*}
+                {*_hasUser = '{$_hasUser}';*}
+                        {**}
         </script>
         {/nocache} 
         
@@ -43,8 +43,8 @@
 {/strip}
 {include file='../header/analytics-header.tpl'}	
 {strip}	
-   
-{getUserInfo}    
+   {**}
+{*{getUserInfo}    *}
     
 {if isset($test) && $test == 'true'}  
     {*_gaq.push(['_setDomainName', 'none']);

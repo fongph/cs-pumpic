@@ -5,6 +5,7 @@ $b_dir = dirname( $_inc ); // folder sites directory
 global $config, $smarty;
 
 require_once $_inc.'/functions.php';
+require_once $_inc.'/di_function.php';
 require_once $_inc.'/lib/class.phpmail.php';
 
 $_mail = new Phpmail( $config['db_blog'] );

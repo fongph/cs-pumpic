@@ -1,7 +1,7 @@
 {nocache}
-{if 1|isPhone}
+
 <!-- Phone stiky -->
-<div class="sticky {if isset($position)}{$position}{/if}">
+<div class="sticky visible-xs {if isset($position)}{$position}{/if}">
     <div class="phone-sticky in">
 
         <div id="b-p-sticky">
@@ -32,5 +32,5 @@
 
 </div>
 <!-- END -->
-{/if}
+
 {/nocache}

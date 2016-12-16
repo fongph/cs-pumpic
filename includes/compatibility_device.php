@@ -4,6 +4,9 @@
  * @var $config array
  * @var $urlParams array
  */
+$_inc = dirname(__FILE__); // includes
+
+require_once $_inc.'/di_function.php';
 
 smarty_function_getUserInfo(array(), $smarty);
 

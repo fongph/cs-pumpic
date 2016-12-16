@@ -8,6 +8,7 @@ $_inc = dirname(__FILE__); // includes
 $b_dir = dirname( $_inc ); // folder sites directory
 
 require_once $_inc.'/lib/SimpleCaptcha.php';
+require_once $_inc.'/di_function.php';
 
 $captcha = new SimpleCaptcha();
 $captcha->width = (isset($_GET['width'])) ? (int)$_GET['width'] : 317;

@@ -66,33 +66,33 @@
                                 <a href="/faq.html">Help & Contacts</a>
                             </li>
 
-                            {nocache}
-                                {if isset($show_control_panel_link) && $show_control_panel_link}
+                            {*{nocache}*}
+                                {*{if isset($show_control_panel_link) && $show_control_panel_link}*}
                                     <li>
-                                        {if ''|hasUser}
+                                        {*{if ''|hasUser}*}
                                             {*<a href="https://cp.{$domain}/">Control Panel</a>*}
+                                            {*<a href="https://cp.{$domain}/">Control Panel</a>*}
+                                        {*{else}*}
                                             <a href="https://cp.{$domain}/">Control Panel</a>
-                                        {else}
-                                            <a href="https://cp.{$domain}/">Sign in</a>
                                             {*<a href="{if ''|detectedDev}/login.html{else}#{/if}">Sign in</a>*}
-                                        {/if}
+                                        {*{/if}*}
 
                                     </li>
-                                {/if}
-                            {/nocache}
+                                {*{/if}*}
+                            {*{/nocache}*}
 
                             <li>
                                 <a href="http://demo.{$domain}{if isset($demoHref)}{$demoHref}{else}/setDevice/126?redirect_url=cp/calls{/if}" target="_blank"
                                    class="btn btn-sm btn-orange btn-success hidden-lg cp-login"> Demo</a>
                             </li>
 
-                            {nocache}
-                                {if $di->get('freeTrialLinks')->isAvailable()}
-                                    <li {if isset($topmenu_active) && $topmenu_active=='trial'} class="active"{/if}>
-                                        <span class="mobile-free-trial"><a href="/free-trial.html">Free Trial</a></span>
-                                    </li>
-                                {/if}
-                            {/nocache}
+                            {*{nocache}*}
+                                {*{if $di->get('freeTrialLinks')->isAvailable()}*}
+                                    {*<li {if isset($topmenu_active) && $topmenu_active=='trial'} class="active"{/if}>*}
+                                        {*<span class="mobile-free-trial"><a href="/free-trial.html">Free Trial</a></span>*}
+                                    {*</li>*}
+                                {*{/if}*}
+                            {*{/nocache}*}
 
                             {*if ''|hasUser}
                                 <li>

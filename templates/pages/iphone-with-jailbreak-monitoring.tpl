@@ -69,6 +69,11 @@
             .basic_h {
                 text-transform: none;
             }
+            @media (max-width: 540px) {
+                .basic_wr .priceb {
+                    padding-top: 0;
+                }
+            }
         </style>
         {*
             iCloudSolution = 'yes'

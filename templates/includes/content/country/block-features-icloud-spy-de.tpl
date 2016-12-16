@@ -137,8 +137,8 @@
                         <div id="c-f-block-info">
 
                             <section>
-                                <i class="c-icon-kik vertical-aligh-bottom"></i>
-                                <label class="vertical-aligh-bottom color-green">Schon bald!</label>
+                                <i class="i-list-features-kik-chat vertical-aligh-bottom" style="position: relative; top: -5px; float: left; width: 30px;"></i>
+                                <label class="vertical-aligh-bottom color-green">Kik</label>
                             </section>
                             <p>Kik Überwachung</p>
 

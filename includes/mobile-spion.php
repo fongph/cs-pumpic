@@ -3,6 +3,7 @@ $_inc = dirname(__FILE__); // includes
 $b_dir = dirname( $_inc ); // folder sites directory
 
 require_once $_inc.'/config.php';
+require_once $_inc.'/lib/Currency.php';
 require_once $_inc.'/lib/users/Order.php';
 $obj = new includes\lib\users\Order;
 
@@ -10,8 +11,8 @@ $obj = new includes\lib\users\Order;
 require_once 'smarty.config.php';
 
 /* list order */
-$products = $obj ->getProducts('first');
-    
+$products = $obj ->getProducts('second');
+
 /* form_order */
 $_request = (isset($_POST['price']) and !empty($_POST['price'])) ? $_POST['price']: false;
 if($_request['productID']) {
@@ -19,50 +20,61 @@ if($_request['productID']) {
 
     if($_request['productID'] and $obj -> getUserIdByAuth()) {
         // $_order ->unsetSession('pumpic_order'); // clear session
+
         $_url = $obj -> createOrder((int)$_request['productID']);
         if($_url) {
             $obj -> _redirect( $_url );
-        } 
+        }
         // create order
     } else if((int)$_request['productID']) {
         $obj -> _redirect('/buy.html?productID='.$_request['productID']);
-        
+
     }
 
-}
-
-// conver to evro
-if(is_array($products)) {
-    foreach ($products as $key => $productGroup) {
-        foreach($productGroup as $bkey => $bitem) {
-            $products[$key][$bkey]['price'] = round($obj->converting($bitem['price'], 'eur'), 2);
-        }
-    }
 }
 
 // default
-if(is_array($products)) { 
-    
-    // Basic
-    if(isset($products['basic'])) {
-        foreach($products['basic'] as $item) :
-            if($item['period'] == 12 && $item['id']) { 
-                $smarty->assign('getDefaultBasic', $item['id']);
-                $smarty->assign('getDefaultBasicMoth', round( $obj->converting( ($item['price']/12), 'eur'), 2));
-            }    
+if(is_array($products)) {
+    if(isset($products['iosiCloud'])) {
+        foreach($products['iosiCloud'] as $item) :
+            if ($item['period'] == 12 && $item['id']) {
+                $smarty->assign('defaultIosiCloudProduct', $item['id']);
+                $smarty->assign('defaultIosiCloudPrice', round($item['price'] / $item['period'], 2));
+            }
         endforeach;
     }
-    // Premium
-    if(isset($products['premium'])) {
-        foreach($products['premium'] as $item) :
-            if($item['period'] == 12 && $item['id']) {
-                $smarty->assign('getDefaultPremium', $item['id']);
-                $smarty->assign('getDefaultPremiumMoth', round( $obj->converting( ($item['price']/12), 'eur'), 2));
-            }    
+    if(isset($products['iosJailbreak'])) {
+        foreach($products['iosJailbreak'] as $item) :
+            if ($item['period'] == 12 && $item['id']) {
+                $smarty->assign('defaultJailbreakProduct', $item['id']);
+                $smarty->assign('defaultJailbreakPrice', round($item['price'] / $item['period'], 2));
+            }
+        endforeach;
+    }
+    // Basic
+    if(isset($products['androidBasic'])) {
+        foreach($products['androidBasic'] as $item) :
+            if ($item['period'] == 12 && $item['id']) {
+                $smarty->assign('defaultAndriodBasicProduct', $item['id']);
+                $smarty->assign('defaultAndriodBasicPrice', round($item['price'] / $item['period'], 2));
+            }
+        endforeach;
+    }
+    if(isset($products['androidPremium'])) {
+        foreach($products['androidPremium'] as $item) :
+            if ($item['period'] == 12 && $item['id']) {
+                $smarty->assign('defaultAndroidPremiumProduct', $item['id']);
+                $smarty->assign('defaultAndroidPremiumPrice', round($item['price'] / $item['period'], 2));
+            }
         endforeach;
     }
 }
 
+$_curr = system\Currency::getInstance();
+$_curr -> setFilter( ['iso' => ['USD','EUR','GBP','CAD','AUD'] ] );
+$_rates = $_curr -> getCurrencies();
+
+$smarty->assign('rates', json_encode($_rates));
 // init output params!
 $smarty->assign('getProducts', $products);
 // $smarty->assign('_ga', (isset($_COOKIE['_ga'])) ? trim( strtolower($_COOKIE['_ga']), 'ga') : '' );

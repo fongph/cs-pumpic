@@ -154,10 +154,10 @@
 			<p>It is natural when parents worry about their kids’ safety when they are away. With dedicated parental control app, you will know how to trace a smartphone and follow teens remotely wherever they go. Notably, 71% of juvenile crimes are committed by teenagers at times when they were supposed to be somewhere in another place, for example, at school or having extracurricular activities. Also, used wisely, phone tracking feature may help you build a trustful relationship with you children and prevent any possible wrongdoings or inappropriate choices.</p>
 			<p>With Pumpic tracking functionality, based on accurate GPS tracker, you will be able to:</p>
 				<ul class="list-images">
-				<li><img src="/images/landings/mark.png" alt="Check Mark" style="left: -30px;" />Keep track of your kid’s current GPS location to keep your peace of mind.</li>
-				<li><img src="/images/landings/mark.png" alt="Check Mark" style="left: -30px;" />Follow the entire route history – what places your kids visited and how they got there.</li>
-				<li><img src="/images/landings/mark.png" alt="Check Mark" style="left: -30px;" />Set geofences to define restricted and safety zones.</li>
-				<li><img src="/images/landings/mark.png" alt="Check Mark" style="left: -30px;" />Get alerts when kids leave the area where they are supposed to stay in.</li>
+				<li><img src="/images/landings/check-icon.png" alt="Check Mark" style="left: -30px;" />Keep track of your kid’s current GPS location to keep your peace of mind.</li>
+				<li><img src="/images/landings/check-icon.png" alt="Check Mark" style="left: -30px;" />Follow the entire route history – what places your kids visited and how they got there.</li>
+				<li><img src="/images/landings/check-icon.png" alt="Check Mark" style="left: -30px;" />Set geofences to define restricted and safety zones.</li>
+				<li><img src="/images/landings/check-icon.png" alt="Check Mark" style="left: -30px;" />Get alerts when kids leave the area where they are supposed to stay in.</li>
 				</ul>
 				<p>At the same time, when you don’t take a smartphone away from your kids, you can be sure that they could text updates back and forth while being out or call you if they’re lost. Moreover, they will be able to call for help in case of emergency. The last but not the least, they won’t feel isolated from their friends with smartphones, which is crucial for their psychological calmness.</p>
 				<p>Phone tracking will be helpful for parents' peace of mind as well. Monitoring your child’s location with the help of a cell phone is not only easy but also indispensable in the modern world.</p>

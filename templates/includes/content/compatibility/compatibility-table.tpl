@@ -122,7 +122,7 @@
                             {elseif isset($lang) && $lang == "de"}
 
                                 <div class="table-header">
-                                    <section><span class="title">Android <i class="fa fa-android"></i></span></section>
+                                    <section><span class="title"><i class="fa fa-android fa-lg"></i> Android</span></section>
                                 </div> <!-- .table-header -->
 
                                 <div class="table-body">
@@ -204,7 +204,7 @@
                             {elseif isset($lang) && $lang == "de"}
 
                                 <div class="table-header">
-                                    <section><span class="title">iOS <i class="fa fa-apple"></i></span></section>
+                                    <section><span class="title"> <i class="fa fa-unlock-alt fa-lg"></i> iOS (jailbreak)</span></section>
                                 </div> <!-- .table-header -->
 
                                 <div class="table-body">

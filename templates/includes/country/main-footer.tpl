@@ -41,7 +41,7 @@
                         <div class="col-lg-3 col-md-3 col-sm-3 col-lg-offset-1 col-md-offset-1 col-sm-offset-1">
                             <div>
                                 <h3>Kontakt</h3>
-                                <p>Kundenservice: <br /><img src="{$img}/country/support-email.png" width="169px" height="17px" /></p>
+                                <p>Kundenservice (nur English): <br /><img src="{$img}/country/support-email.png" width="169px" height="17px" /></p>
                             </div>
                         </div>
 

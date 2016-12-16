@@ -158,9 +158,9 @@
                 <p>Young people face a lot of risks every day and can easily provide strangers with personal details without realizing the real danger. Inappropriate communications, sharing personal data, online predators, child identity theft are those online dangers parents should concern most. 48% of adults have already installed monitoring controls to check their kids’ activities.</p>		
                 <p>More and more parents decide to set up tracking software, and not for reason. It is a great way to be confident that the child is secure. Here are the convincing benefits of monitoring apps for easy control:</p>				
 				<ul class="list-images">
-				<li><img src="/images/landings/mark.png" alt="Check Mark" class="lc-1" style="left: -29px;"/>They are easy to install – set up a parental control in a matter of minutes and watch over your child’s activities all the time.</li>
-				<li><img src="/images/landings/mark.png" alt="Check Mark" class="lc-1" style="left: -29px;"/>They have a lot of functions – you can follow the calls, watch messages, keep track of installed applications, view emails, notes, calendar, browsing history and much more.</li>
-				<li><img src="/images/landings/mark.png" alt="Check Mark" class="lc-1" style="left: -29px;"/>They are convenient – you need to install an app only once and then you can use it until you want.</li><p></p>
+				<li><img src="/images/landings/check-icon.png" alt="Check Mark" class="lc-1" style="left: -29px;"/>They are easy to install – set up a parental control in a matter of minutes and watch over your child’s activities all the time.</li>
+				<li><img src="/images/landings/check-icon.png" alt="Check Mark" class="lc-1" style="left: -29px;"/>They have a lot of functions – you can follow the calls, watch messages, keep track of installed applications, view emails, notes, calendar, browsing history and much more.</li>
+				<li><img src="/images/landings/check-icon.png" alt="Check Mark" class="lc-1" style="left: -29px;"/>They are convenient – you need to install an app only once and then you can use it until you want.</li><p></p>
 				<p>You will always know where your kid is and what he/she is doing at a particular moment. When you are late at work or cannot check yourself where your kid is, just use your control board to ensure that everything is good. Keep your family’s digital world secure, appropriate and safe with the tracking app like Pumpic.</p>
             </div>
         </div>

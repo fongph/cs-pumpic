@@ -10,6 +10,11 @@
         margin-left: 0;
         line-height: 0.7;
     }
+    @media (max-width: 540px) {
+        .basic_wr .priceb {
+            padding-top: 0;
+        }
+    }
 </style>
     <!-- BLOCK GTM -->
     {include file='../includes/main/main-after-body.tpl'}
@@ -232,7 +237,7 @@
                                                         <div class="basic_fe reset-list media-sm-block">
                                                             <ul class="list_price-no-link list_price-no-link-inline">
 
-                                                                <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Text Messages <span>View text content of SMS, MMS, and iMessages sent or received.{*View sent and received messages.*}</span>
+                                                                <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Text Messages <span>View text content and supported attachments of SMS, MMS, and iMessages sent or received.</span>
                                                                 </li>
                                                                 <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Calls <span>Follow in- and outbound calls.</span>
                                                                 </li>
@@ -437,15 +442,15 @@
 			<p>And even more! You can oversee kids’ communication over WhatsApp, Kik, and other messengers where children are highly exposed to cyberbullying and online predator attacks. Among iCloud Solution features, you will also find monitoring Calendar, Contacts, Photos, which completes the picture of your children’s mobile behavior and safety to the fullest.</p>
 			<p>To perform iPhone tracking of your kid’s device through iCloud the following requirements must be satisfied:</p>
 			<ul class="list-images">
-			   <li><img src="{$img}/landings/mark.png" alt="Check Mark" class="lc-1" style="left: -29px; height: auto; width: auto; background-size: contain;" />you must know the iCloud login and password;</li>
-               <li><img src="{$img}/landings/mark.png" alt="Check Mark" class="lc-1" style="left: -29px; height: auto; width: auto; background-size: contain;"/>backup must be enabled on the target device.</li>
-			   <li><img src="{$img}/landings/mark.png" alt="Check Mark" class="lc-1" style="left: -29px; height: auto; width: auto; background-size: contain;"/>two-step verification must be disabled on the target device.</li>
+			   <li><img src="{$img}/landings/check-icon.png" alt="Check Mark" class="lc-1" style="left: -29px; height: auto; width: auto; background-size: contain;" />you must know the iCloud login and password;</li>
+               <li><img src="{$img}/landings/check-icon.png" alt="Check Mark" class="lc-1" style="left: -29px; height: auto; width: auto; background-size: contain;"/>backup must be enabled on the target device.</li>
+			   <li><img src="{$img}/landings/check-icon.png" alt="Check Mark" class="lc-1" style="left: -29px; height: auto; width: auto; background-size: contain;"/>two-step verification must be disabled on the target device.</li>
 			</ul>
 			<p>For information to be successfully uploaded to your Control Panel, the backup must be performed under the following conditions:</p>
 			<ul class="list-images">
-			   <li><img src="{$img}/landings/mark.png" alt="Check Mark" class="lc-1" style="left: -29px; height: auto; width: auto; background-size: contain;" />the target device is connected to Wi-Fi;</li>
-               <li><img src="{$img}/landings/mark.png" alt="Check Mark" class="lc-1" style="left: -29px; height: auto; width: auto; background-size: contain;" />it is connected to the power source (charging);</li>
-			   <li><img src="{$img}/landings/mark.png" alt="Check Mark" class="lc-1" style="left: -29px; height: auto; width: auto; background-size: contain;" />the screen of the target device is locked. </li>
+			   <li><img src="{$img}/landings/check-icon.png" alt="Check Mark" class="lc-1" style="left: -29px; height: auto; width: auto; background-size: contain;" />the target device is connected to Wi-Fi;</li>
+               <li><img src="{$img}/landings/check-icon.png" alt="Check Mark" class="lc-1" style="left: -29px; height: auto; width: auto; background-size: contain;" />it is connected to the power source (charging);</li>
+			   <li><img src="{$img}/landings/check-icon.png" alt="Check Mark" class="lc-1" style="left: -29px; height: auto; width: auto; background-size: contain;" />the screen of the target device is locked. </li>
 			</ul>
 			<p>Pumpic iCloud Solution provides excellent opportunities for you to monitor and protect your children even if you don’t want to puzzle out how to jailbreak an iOS device, which is required by all other multi-featured parental control applications.</p>
             </div>

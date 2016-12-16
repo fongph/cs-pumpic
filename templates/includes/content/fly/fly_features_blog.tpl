@@ -2,15 +2,15 @@
     <div id="fly_features">
         <span class="fly_close close"></span>
         <div id="fly_top">
-            <h2 id="fly-features-h2">iCloud Monitoring<div class="br"></div>for iOS <img src="/images/fly_features/IOS10_logo.svg" width="20" height="20" alt=""><div class="br"></div>Without Jailbreak</h2>
+            <h2 id="fly-features-h2">iCloud Monitoring<div class="br"></div>for iOS <img src="/images/fly_features/ios10-icon.svg" width="20" height="20" alt=""><div class="br"></div>Without Jailbreak</h2>
             <p class="fly-label"></p>
-            <a class="features-button ga-action-click"  ga-category="Fly Banner"  ga-action="click" ga-label="iOS 10 iCloud Update" href="/icloud-iphone-without-jailbreak-monitoring.html">Start Monitoring</a>
+            <a class="features-button ga-action-click" ga-category="Fly Banner" ga-action="click" ga-label="iOS 10 iCloud Update" href="/icloud-iphone-without-jailbreak-monitoring.html">Start Monitoring</a>
         </div>
         <div class="fly-hr"></div>
 
         <div id="fly_bottom">
             <section class="cpa-section" style="padding-bottom: 4px;">
-                <img class="cpa-img" src="/images/cpa.png" alt="">
+                <img class="cpa-img" src="/images/cpa-icon.png" alt="">
                 <div class="mobile-apps-text">
                     Pumpic Control Panel
                 </div>
@@ -19,8 +19,8 @@
 
             <section class="cpa-images">
 
-                <a href="https://play.google.com/store/apps/details?id=com.pumpic.mobile.monitoring" target="_blank" class="ga-action-click" ga-category="Mobile App Buttons" ga-action="click" ga-label="Android CP APP" ><img class="mobile-apps mobile-apps-app-store" src="/images/google-play-banner.png" alt="">
-                    <a href="https://itunes.apple.com/us/app/pumpic-control-panel/id1126835967" class="ga-action-click" ga-category="Mobile App Buttons" ga-action="click" ga-label="iOS CP APP" target="_blank"><img class="mobile-apps mobile-apps-google-play" src="/images/icon-app-store-black-banner.png" alt=""></a>
+                <a href="https://play.google.com/store/apps/details?id=com.pumpic.mobile.monitoring" target="_blank" class="ga-action-click" ga-category="Mobile App Buttons" ga-action="click" ga-label="Android CP APP" ><img class="mobile-apps mobile-apps-app-store" src="/images/google-play-banner.png" alt="pumpic at google play">
+                    <a href="https://itunes.apple.com/us/app/pumpic-control-panel/id1126835967" class="ga-action-click" ga-category="Mobile App Buttons" ga-action="click" ga-label="iOS CP APP" target="_blank"><img class="mobile-apps mobile-apps-google-play" src="/images/app-store-banner.png" alt="pumpic at app store"></a>
 
 
             </section>

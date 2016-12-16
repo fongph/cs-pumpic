@@ -13,6 +13,12 @@ description="Pumpic offers high-quality cell phone tracking software for a good 
         .filter_fe .filter_icon {
             display: none;
         }
+    }
+    @media (min-width: 767px) {
+        .double_offer.checkbox {
+            display: none;
+        }
+    }
 </style>
 <!-- BLOCK GTM -->
 {include file='../includes/main/main-after-body.tpl'}
@@ -248,7 +254,7 @@ description="Pumpic offers high-quality cell phone tracking software for a good 
                                                             </li>
                                                             <li class="icloud-features__item">
                                                                 <p class="icloud-features__name"><i class="icon-ok"></i>Text message history <span>(unlimited)</span></p>
-                                                                <p class="icloud-features__info m0">View text content sent or received via SMS, MMS, and iMessages.</p>
+                                                                <p class="icloud-features__info m0">View text content and supported attachments sent or received via SMS, MMS, and iMessages.</p>
                                                             </li>
                                                             <li class="icloud-features__item">
                                                                 <p class="icloud-features__name"><i class="icon-ok"></i>WhatsApp</p>

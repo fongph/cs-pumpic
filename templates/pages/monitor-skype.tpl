@@ -157,11 +157,11 @@
 			<p>It will take about 5 minutes to install the parental control. You can easily monitor the Android or iOS smartphone or tablet once the application is set up. To check the information from the target device, you need to go to your personal panel and manage the usage of a phone or tablet. You can view logs, set restrictions, check subscriptions and much more.</p>
 <p><strong>There are so many features, but most parents take advantage of the following ones:</strong></p>
 				<ul class="list-images">
-				<li><img src="/images/landings/mark.png" alt="Check Mark" style="left: -30px;" />Parents may see who is calling via Skype</li>
-				<li><img src="/images/landings/mark.png" alt="Check Mark" style="left: -30px;" />Full access to shared media files</li>
-				<li><img src="/images/landings/mark.png" alt="Check Mark" style="left: -30px;" />Monitoring inappropriate conversations</li>
-				<li><img src="/images/landings/mark.png" alt="Check Mark" style="left: -30px;" />Checking the contact list with full names and numbers</li>
-				<li><img src="/images/landings/mark.png" alt="Check Mark" style="left: -30px;" />Security against information leaks</li>
+				<li><img src="/images/landings/check-icon.png" alt="Check Mark" style="left: -30px;" />Parents may see who is calling via Skype</li>
+				<li><img src="/images/landings/check-icon.png" alt="Check Mark" style="left: -30px;" />Full access to shared media files</li>
+				<li><img src="/images/landings/check-icon.png" alt="Check Mark" style="left: -30px;" />Monitoring inappropriate conversations</li>
+				<li><img src="/images/landings/check-icon.png" alt="Check Mark" style="left: -30px;" />Checking the contact list with full names and numbers</li>
+				<li><img src="/images/landings/check-icon.png" alt="Check Mark" style="left: -30px;" />Security against information leaks</li>
 				</ul>
 				<p>For a long time, it was not possible to monitor the Skype usage. Modern technologies give such a great opportunity to check all online activities, and you cannot miss a chance to take advantage of it. Your responsibility as a parent is to protect your kids from all the dangers and risks they are exposed to. Surely, you cannot monitor your kids’ behavior all the time yourself. They spend a significant amount of time at school, and with friends after classes, and the tracking software allows you check their activities and location remotely.</p>
                 <p>Parental controls are easy to install and use. They have a lot of functions and let check all the aspects of device usage. Now you can easily protect your children and be confident they are safe 24/7.</p>

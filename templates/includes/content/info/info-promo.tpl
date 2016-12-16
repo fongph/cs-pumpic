@@ -39,8 +39,8 @@
                                                 <div class="video-arrows-v2"></div>
                                                 <div class="box-hover">
                                                     <a class="youtube" href="{$block_video_src}" rel="nofollow">
-                                                        <img src="{$img}/video/button_shadows.png" class="video-buttons-v2" />
-                                                        <img src="{$img}/video/hover-video-button-play.png" class="hover-video-buttons" />
+                                                        <img src="{$img}/video/video-button.png" class="video-buttons-v2" />
+                                                        <img src="{$img}/video/shadowed-video-button.png" class="hover-video-buttons" />
                                                     </a>
                                                 </div>
                                             </div>
@@ -294,8 +294,8 @@
                                         <div class="mobile-video-arrows"></div>
                                         <div class="box-hover">
                                             <a class="youtube" href="{$block_video_src}" rel="nofollow">
-                                                <img src="{$img}/video/button_shadows.png" class="video-buttons-v2" />
-                                                <img src="{$img}/video/hover-video-button-play.png" class="hover-video-buttons" />
+                                                <img src="{$img}/video/video-button.png" class="video-buttons-v2" alt=""/>
+                                                <img src="{$img}/video/shadowed-video-button.png" class="hover-video-buttons" alt=""/>
                                             </a>
                                         </div>
                                     </div>
@@ -331,7 +331,7 @@
                                         <div class="mobile-block-video-button">
                                             <div class="mobile-video-arrows"></div>
                                             <a class="youtube" href="{$block_video_src}" rel="nofollow">
-                                                <img src="{$img}/video/m-video-button-play.png" class="mobile-video-buttons" />
+                                                <img src="{$img}/video/play-button.png" class="mobile-video-buttons" alt=""/>
                                             </a>
                                         </div>
                                     </div>
@@ -361,7 +361,7 @@
                                         <div class="mobile-video-arrows"></div>
                                         <a class="youtube" href="{$block_video_src}" rel="nofollow"
                                             id="openBtnVideo">
-                                            <img src="{$img}/video/m-video-button-play.png" class="mobile-video-buttons" />
+                                            <img src="{$img}/video/play-button .png" class="mobile-video-buttons" />
                                         </a>
 
                                     </div>

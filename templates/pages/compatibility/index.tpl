@@ -61,14 +61,6 @@
                                                                 <a href="#" class="text-succes search-category a-default" data-os="Android">View all supported Android devices</a>
                                                         </div>
                                                 </div>
-                                                {*<div class="col-sm-4 col-md-4">
-                                                        <div class="thumb">
-                                                                <span class="ico-left"><i class="icon-blackberry"></i></span>
-                                                                <span>OS:<strong> BlackBerry</strong></span>
-                                                                <span>Versions:<strong> 7.0 – 7.1</strong></span>
-                                                                <a href="#" class="text-succes search-category a-default" attr_os="blackberry">View all supported BlackBerry devices</a>
-                                                        </div>
-                                                </div>*}
                                         </div>
 
                                         <!-- #log -->
@@ -168,44 +160,6 @@
 
                                         </div>
 
-                                        {*<!-- search result -->
-                                        <div class="row">
-                                            <h2 class="result-title">Most popular smartphones</h2>
-                                            <div class="box-get-search-result clearfix">
-                                            {nocache}
-                                                {foreach from=$phones item=phone}
-                                                    <div class="col-sm-3 col-md-3 col-xs-6" id="search-result-item">
-                                                        <div class="thumbnail">
-                                                            <a class="img_thumb" href="/compatibility/{$phone.uri_name}/" target="_blank">
-                                                                <img height="202" width="90" alt="{$phone.name}" title="{$phone.name}" src="//{$api_device._domain}/{$api_device.path_img}/{$phone.m_img}">
-                                                            </a>
-                                                            <div class="caption">
-                                                                <h3><a href="/compatibility/{$phone.uri_name}/" target="_blank">{$phone.name}</a></h3>
-                                                                <span>OS: <strong>{$phone.os}</strong></span>
-                                                                <span>Versions: <strong>{$phone.version}</strong></span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                {/foreach}
-                                            {/nocache}
-                                            </div>
-                                            <div class="box-navigations">
-                                                <ul class="pagination">
-                                                {nocache}
-                                                    {foreach from=$pages item=page}
-                                                        {if $page === false}
-                                                            <li class="disabled"><span class="ellipse">…</span></li>
-                                                        {elseif $page == $currentPage}
-                                                            <li class="active"><span class="current">{$page+1}</span></li>
-                                                        {else}
-                                                            <li><a href="/compatibility.html{if $page}?page={$page}{/if}" class="page-link" href="#page={$page+1}">{$page+1}</a></li>
-                                                        {/if}
-                                                    {/foreach}
-                                                {/nocache}
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <!-- end -->*}
                                 </div>
                         </div>
                 </div>
@@ -219,12 +173,7 @@
 																													cache_id = "main-compatibility-send-find-phone"
 																													inputHidden = "true" }
 																													{/nocache}
-																													{*
-                                                            <form class="send_find_phone" method="POST" action="" name="send_find_phone">
-                                                                        <fieldset>
-                                                                                <legend>
-                                                                                    Can’t Find Your Device Here?<span>Let’s Check if it is Compatible:</span>
-                                                                                    {*CAN’T FIND YOUR DEVICE HERE?<span>LET’S CHECK IF IT IS COMPATIBLE:</span>*}
+
                                                                                 </legend>
 
                                                                                 <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3">

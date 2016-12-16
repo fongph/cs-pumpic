@@ -70,8 +70,8 @@
         <!-- CONTENT -->
 
         {include file='../includes/content/info/info-promo.tpl'
-            imgUrl = "header_banners/android-family-tracker_header.png"
-            imgAlt = "Android Family Tracker" 
+            imgUrl = "header_banners/android-family-tracker-header.png"
+            imgAlt = "android family tracker"
             imgAlign = "right"
             imgVerticalAlign = "bottom"
 			imgTitle = "Family tracker for Android devices"
@@ -105,7 +105,7 @@
     title="Knowing Your Family is OK is Priceless"
     blockBg='light'}
 	
-	<img class="app-icon-left" src="{$img}/landings/android-family-tracker_icon1.png" style="margin-top: 10px;" title="Family Phone Tracker" alt="Track phones of your family members">
+	<img class="app-icon-left" src="{$img}/landings/android-family-tracker-icon.png" style="margin-top: 10px;" title="Family Phone Tracker" alt="track phones of your family members">
 <p>Should you ask any mom or dad what their top priority is – and we bet you will hear “Ensuring my family’s safety” as the most common answer. But how can you assure that all of your close ones are secured at all times considering that you are busy at work, and your kids are in school? Family phone tracker might be a perfect solution to this issue.</p>
 <p>Your wife is not answering her phone, and you're afraid she may have had an accident? Your husband tells he’s going to be late because he has a lot of work to do in the office? Your kids tell you that they are at their friends’ house studying for their test? With family tracking tool, you can see where they are, anytime, as long as they have their phones with them.</p>
     
@@ -158,17 +158,17 @@
 			<p>One of such cases took place in Georgia, US, when parental monitoring app installed on a minor's smartphone turned out to be a crucial tool that provided police with the information needed to locate a missing boy. It all started when the SIM card was removed from his phone, and the kid disappeared for several days. The boy’s mother presumed he met with another person that was prohibited from seeing the child. She managed to confirm this fact by reviewing the GPS log of her son’s cell phone relocation in the days before he had disappeared. Just a few hour after she told the police about it, the boy was found by a patrol officer and brought to his anxious mother.</p>
 			<p><strong>This missing minor case fully demonstrates the major advantages of family tracking via mobile devices:</strong></p>
 				<ul class="list-images">
-				<li><img src="/images/landings/mark.png" alt="Check Mark" style="left: -30px;" />You don't need to buy a new gadget to monitor kids’ whereabouts – the cell or smart phone are perfectly good for this as children always carry them around 24/7.</li>
-				<li><img src="/images/landings/mark.png" alt="Check Mark" style="left: -30px;" />You can track others in real time directly from your smartphone or through a computer with an Internet connection.</li>
-				<li><img src="/images/landings/mark.png" alt="Check Mark" style="left: -30px;" />You can see the full log of entire route history – what places your kid, wife or husband visited and how they got there.</li>
-				<li><img src="/images/landings/mark.png" alt="Check Mark" style="left: -30px;" />With some tracking apps, you can set geofences and get alerts when a person leaves the area that he or she is supposed to stay in.</li>
+				<li><img src="/images/landings/check-icon.png" alt="Check Mark" style="left: -30px;" />You don't need to buy a new gadget to monitor kids’ whereabouts – the cell or smart phone are perfectly good for this as children always carry them around 24/7.</li>
+				<li><img src="/images/landings/check-icon.png" alt="Check Mark" style="left: -30px;" />You can track others in real time directly from your smartphone or through a computer with an Internet connection.</li>
+				<li><img src="/images/landings/check-icon.png" alt="Check Mark" style="left: -30px;" />You can see the full log of entire route history – what places your kid, wife or husband visited and how they got there.</li>
+				<li><img src="/images/landings/check-icon.png" alt="Check Mark" style="left: -30px;" />With some tracking apps, you can set geofences and get alerts when a person leaves the area that he or she is supposed to stay in.</li>
 				</ul>
 				<p>Eventually, knowing where you kids are will increase their safety and provide you with a peace of mind. Yet, the technology still has some drawbacks that you should know about. E.g., some tracking apps have workarounds that people who don’t want to be tracked can use. They can turn the phone off, switch on the airplane mode or simply leave the phone at home and not bring it with them. That’s why it is critical to talk frankly to the person you wish to track and explain that this is just a protective measure for their own good.</p>
 				<p>It is of particular importance to have such conversation with teens, because if you try to track your kids without them knowing, they might perceive it as an intrusion of their privacy. Take, for example, Pumpic: it is a visible app designed for ethical and legal use only. It runs openly and is not hidden from the owner of the device. Moreover, we urge you to obtain the owner’s permission to track her or his device before installing the app. You should explain your kids, parents or companions the difference between spying and monitoring and tell about the dangers that you want to avert by tracking their location.</p>
 			</div>
         </div>
         <div class="col-lg-3 col-md-3 col-sm-3 text-center">
-            <img  class="block-apps-pic" title="Case of Family Tracker Use" style="margin-top: 100px;" alt="GPS Tracking for Parental Controls" src="{$img}/landings/android-family-tracker_icon2.png" width="207px" height="208px" />
+            <img  class="block-apps-pic" title="Case of Family Tracker Use" style="margin-top: 100px;" alt="gps tracking for parental controls" src="{$img}/landings/check-location-icon.png" width="207px" height="208px" />
         </div>
     </div>    
 {EndContent}
@@ -234,21 +234,21 @@
                         <div class="slide">
                 
                     <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
-                            <img src="{$img}/testimonials/dale-b.png" alt="" class="testimonial-photo">
+                            <img src="{$img}/testimonials/dale-b.png" alt="pumpic testimonial from dale b" class="testimonial-photo">
                             <div class="testimonial-text">
                                     <h4>Dale B. – father of 14-year-old daughter</h4>
                                     <p>“I advocate giving teenagers – including my daughter, of course, - more freedom because often they have to make their own mistakes to learn the lesson. But that doesn’t spare me my parental duties to keep my kid safe. That’s why I’m using Pumpic to softly monitor her location from time to time. This app has tons of tracking options, yet for now, I don’t see a reason to monitor my daughter closer. It may change in the future but at the moment, I’m totally satisfied.”</p>
                             </div>
                     </div>
                     <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
-                            <img src="{$img}/testimonials/regina-p.png" alt="" class="testimonial-photo">
+                            <img src="{$img}/testimonials/regina-p.png" alt="pumpic testimonial from regina p" class="testimonial-photo">
                             <div class="testimonial-text">
                                     <h4>Regina P. – cares of 68-year-old father</h4>
                                     <p>“Although Pumpic is primarily meant to monitor children, I discovered that it suits perfectly to keep an eye on my senior father as he lives in another town and I can’t be around all the time. It’s good to know where he is at any moment and making it to the places he is heading. The app already had helped me out several times when I was coming to visit him, and he wasn’t at home. It took a minute to find out that dad went to the shop nearby. Thank you, Pumpic!”</p>
                             </div>
                     </div>
                     <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
-                            <img src="{$img}/testimonials/olivia-t.png" alt="" class="testimonial-photo">
+                            <img src="{$img}/testimonials/olivia-t.png" alt="pumpic testimonial from olivia t" class="testimonial-photo">
                             <div class="testimonial-text">
                                     <h4>Olivia T. – mother of tweens</h4>
                                     <p>“If you ask me, I’d say sign up! I have 2 tweens and Pumpic has helped me keep tabs on where they are. It is very accurate and updates quickly. I like that I’m able to view a history list with all the locations they've been to in a day at any moment. Of course, it cannot replace human touch, but this app is of a great parenting and teaching help. I’m really glad I’ve signed up and definitely recommend Pumpic to other concerned parents.”</p>

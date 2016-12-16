@@ -1,8 +1,15 @@
 <style>
     @media (max-width: 767px) {
-    .filter_fe .filter_icon {
-        display: none;
+        .filter_fe .filter_icon {
+            display: none;
+        }
     }
+    @media (min-width: 767px) {
+        .double_offer.checkbox {
+            display: none;
+        }
+    }
+
 </style>
 <div class="no_bg">
     <div class="container">
@@ -23,7 +30,7 @@
                                         <li id="filter-android" class="filter_item"><i class="fa fa-android filter_icon"></i> <b>Android</b> <span class="filter_version _version-hide-xs">{$ver_android_bot} - {$ver_android_up}</span>
                                             <div class="filter_version">26 features</div>
                                         </li>
-                                        <li id="filter-ios-jb" class="filter_item"><i class="fa fa-unlock-alt fa-lg filter_icon" style="line-height: 1;"></i> <b>iOS</b><span class="filter_version _version-hide-xs"> {$ver_ios_bot} - {$ver_jailbreak_up}</span><span class="filter_version"> (jailbreak)</span>
+                                        <li id="filter-ios-jb" class="filter_item"><i class="fa fa-unlock-alt filter_icon" style="line-height: 1;"></i> <b>iOS</b><span class="filter_version _version-hide-xs"> {$ver_ios_bot} - {$ver_jailbreak_up}</span><span class="filter_version"> (jailbreak)</span>
                                             <div class="filter_version">27 features</div>
                                         </li>
                                     </ul>
@@ -201,7 +208,7 @@
                                                         </li>
                                                         <li class="icloud-features__item">
                                                             <p class="icloud-features__name"><i class="icon-ok"></i>Text message history <span>(unlimited)</span></p>
-                                                            <p class="icloud-features__info m0">View text content sent or received via SMS, MMS, and iMessages.</p>
+                                                            <p class="icloud-features__info m0">View text content and supported attachments sent or received via SMS, MMS, and iMessages.</p>
                                                         </li>
                                                         <li class="icloud-features__item">
                                                             <p class="icloud-features__name"><i class="icon-ok"></i>WhatsApp</p>

@@ -38,8 +38,8 @@
         {* bg_famaly_427x254.png imgVerticalAlign = "bottom"*}
         <!-- CONTENT -->
         {include file='../includes/content/info/info-promo.tpl'
-            imgUrl = "header_banners/bg_header_home_page.png"
-            imgAlt = "Landing Mobile"
+            imgUrl = "header_banners/homepage-header.png"
+            imgAlt = "pumpic header"
             imgAlign = "left bottom"
             imgVerticalAlign = "center"
             textAlign = "left"

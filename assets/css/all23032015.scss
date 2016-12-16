@@ -1369,20 +1369,20 @@ th .table_title {
     background-position: 500px 1000px, 200px 400px, -100px 300px;
   }
 }
-//
-//.navbar {
-//  z-index: 2;
-//}
-//#snow {
-//  background:
-//          url('http://www.wearewebstars.dk/codepen/img/s1.png'),
-//          url('http://www.wearewebstars.dk/codepen/img//s2.png'),
-//          url('http://www.wearewebstars.dk/codepen/img//s3.png');
-//  height: 68px;
-//  left: 0;
-//  position: absolute;
-//  top: 0;
-//  width: 100%;
-//  z-index:1;
-//  animation: snow 10s linear infinite;
-//}
+
+.navbar {
+  z-index: 2;
+}
+#snow {
+  background:
+          url('http://www.wearewebstars.dk/codepen/img/s1.png'),
+          url('http://www.wearewebstars.dk/codepen/img//s2.png'),
+          url('http://www.wearewebstars.dk/codepen/img//s3.png');
+  height: 68px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index:1;
+  animation: snow 10s linear infinite;
+}

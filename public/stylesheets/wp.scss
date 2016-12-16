@@ -8061,10 +8061,10 @@ div.blockquate_bottom {
 
 .logo {
   float: left;
-  background: url(../images/logo/pumpic-logo.svg) no-repeat;
+  background: url(../images/logo/pumpic-logo-ny.svg) no-repeat;
   background-size: cover;
   width: 172px;
-  height: 44px;
+  height: 46px;
   overflow: hidden;
   text-indent: -9999px;
   a {
@@ -8072,7 +8072,34 @@ div.blockquate_bottom {
     height: 100%;
   }
 }
-
+//snow in header animation
+@keyframes snow {
+  0% {
+    background-position: 0px 0px, 0px 0px, 0px 0px;
+  }
+  50% {
+    background-position: 500px 500px, 100px 200px, -100px 150px;
+  }
+  100% {
+    background-position: 500px 1000px, 200px 400px, -100px 300px;
+  }
+}
+.navbar {
+  z-index: 2;
+}
+#snow {
+  background:
+          url('http://www.wearewebstars.dk/codepen/img/s1.png'),
+          url('http://www.wearewebstars.dk/codepen/img//s2.png'),
+          url('http://www.wearewebstars.dk/codepen/img//s3.png');
+  height: 68px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index:1;
+  animation: snow 10s linear infinite;
+}
 @media only screen and (max-width: 1199px) {
   .logo {
     margin-top: 7px;

@@ -4887,7 +4887,7 @@ div {
 }
 
 @media only screen and (max-width: 480px) {
-  #table-container, #block-table-header {
+  #table-container {
     display: block;
     margin: 0 auto;
   }
@@ -4909,7 +4909,7 @@ div {
 }
 
 @media (min-width: 468px) {
-  #table-container, #block-table-header {
+  #table-container {
     display: block;
     margin: 0 auto;
   }

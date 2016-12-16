@@ -323,7 +323,7 @@
             <tr>
                 {if in_array('bottom', $position) || in_array('bottom-only-mobile', $position)}
                     <td class='col-xs-sm-12 col-s-sm-12 col-sm-12 col-md-6 col-log-5'>
-                        <div class="col-xs-sm-8 col-s-sm-10 col-sm-10 visual-images-bottom mobile-version-inline model-center {if $block_video}box-video-constructors{/if}">
+                        <div class="col-xs-sm-8 col-s-sm-10 col-sm-8 visual-images-bottom mobile-version-inline model-center {if $block_video}box-video-constructors{/if}">
                             <div class="mobile-none">
                                 <img src="{$img}/{$imgUrl}" alt="{$imgAlt}" title="{$imgTitle}" class="visual-img-pc">
                                 {if isset($block_video) && $block_video == "yes" && isset($block_video_src) && $block_video_src != ""}

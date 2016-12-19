@@ -7,6 +7,7 @@ require_once $_inc.'/lib/users/ManagerUser.php';
 
 // smarty config
 require_once 'smarty.config.php';
+require_once $_inc.'/di_function.php';
 require_once $_inc.'/config.php';
 require_once $_inc.'/functions.php';
 

@@ -7,6 +7,7 @@ $_inc = dirname(__FILE__); // includes
 $b_dir = dirname( $_inc ); // folder sites directory
 
 require_once $_inc.'/config.php';
+require_once $_inc.'/di_function.php';
 require_once $_inc.'/lib/class.phpmail.php';
 
 $_mail = new Phpmail( $config['db_blog'] );

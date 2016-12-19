@@ -1,7 +1,6 @@
 <div class="sticky">
     {nocache}
-    {if 1|isPhone}
-    <div class="phone-sticky">
+    <div class="phone-sticky visible-xs">
         <div class="container">
             <div class="row">
                 <div class="col-lg-10 col-lg-offset-1">
@@ -16,6 +15,5 @@
             </div>    
         </div>
     </div>
-    {/if}
     {/nocache}
 </div>

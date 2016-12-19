@@ -16,13 +16,13 @@
 
     <div class="wrapper {*bg_bottom_images*} block-free-trial home-page">
         <!-- TOP MENU -->
+{*//    cache_id = "includes_main_main-top-menu"nocache*}
 
-	{include file='../includes/main/main-top-menu.tpl'
+        {include file='../includes/main/main-top-menu.tpl'
             topmenu_active='home'
             show_control_panel_link="1"
-            cache_id = "includes_main_main-top-menu"
-            nocache
-        }
+
+     }
 
 
 

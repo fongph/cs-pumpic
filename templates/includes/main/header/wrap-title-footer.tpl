@@ -19,8 +19,8 @@
         <!--[if IE 8]>
             <link href="{$cssMin}/ie8.css" rel="stylesheet">
         <![endif]-->
-        <script src="http://code.jquery.com/jquery-1.11.1.min.js?{style_cache data='2015-02-05'}"></script>
-        <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js?{style_cache data='2015-02-05'}"></script>
+        {*<script src="http://code.jquery.com/jquery-1.11.1.min.js?{style_cache data='2015-02-05'}"></script>*}
+        {*<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js?{style_cache data='2015-02-05'}"></script>*}
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 	<!--[if lt IE 9]>

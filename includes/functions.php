@@ -1,8 +1,4 @@
 <?php
-function di() {
-    global $di;
-    return $di ? $di : $di = require __DIR__ . '/di.php';
-}
 
 function dispatch($urlParams, $config){
     global $smarty;
@@ -845,25 +841,13 @@ function smarty_function_features_plans( $_plans = array() ) {
     echo $_html;
 }
 
-function smarty_function_getUserID() {
-    require_once 'lib/users/ManagerUser.php';
-    $obj = new includes\lib\users\ManagerUser( array() );
-    return ($obj->getUserIdByAuth()) ? $obj->getUserIdByAuth() : '';
-}
+//function smarty_function_getUserID() {
+////    require_once 'lib/users/ManagerUser.php';
+////    $obj = new includes\lib\users\ManagerUser( array() );
+////    return ($obj->getUserIdByAuth()) ? $obj->getUserIdByAuth() : '';
+//}
 
-function smarty_function_getUserInfo($params, $template) {
-    require_once 'lib/users/ManagerUser.php';
-    $obj = new includes\lib\users\ManagerUser( array() );
-    $user = array();
-    
-    if($obj->getUserIdByAuth()) {
-        $_user = $obj->getUser( $obj->getUserIdByAuth() );
-        $user['name'] = ($_user->getName()) ? $_user->getName() : false;
-        $user['login'] = ($_user->getLogin()) ? $_user->getLogin() : false;
-    } 
-    
-    $template->assign('getUserInfo', (count($user) > 0) ?  $user: false);   
-}
+
 
 
 function smarty_modifier_hasFbPixel() { 
@@ -877,28 +861,28 @@ function smarty_modifier_hasFbPixel() {
     return $_result;
 }
 
-// has user
-function smarty_modifier_hasUser() { // $params, $template
-//  $_result = false;
-    
-    require_once 'lib/users/ManagerUser.php';
-    $obj = new includes\lib\users\ManagerUser( array() );
-    $_result = false;
-    
-    if($obj -> getLoginUser()) {
-        $_result = true;
-    }
-    
-    return $_result;
-}
+//// has user
+//function smarty_modifier_hasUser() { // $params, $template
+////  $_result = false;
+//
+//    require_once 'lib/users/ManagerUser.php';
+//    $obj = new includes\lib\users\ManagerUser( array() );
+//    $_result = false;
+//
+//    if($obj -> getLoginUser()) {
+//        $_result = true;
+//    }
+//
+//    return $_result;
+//}
 
-function smarty_function_UserLogin() {
-    require_once 'lib/users/ManagerUser.php';
-    $obj = new includes\lib\users\ManagerUser( array() );
-    $_user = $obj -> getLoginUser();    
-    //return $smarty->assign('email', (isset($_user['login'])) ? $_user['login'] : '');
-    return (isset($_user['login'])) ? $_user['login'] : '';
-}
+//function smarty_function_UserLogin() {
+//    require_once 'lib/users/ManagerUser.php';
+//    $obj = new includes\lib\users\ManagerUser( array() );
+//    $_user = $obj -> getLoginUser();
+//    //return $smarty->assign('email', (isset($_user['login'])) ? $_user['login'] : '');
+//    return (isset($_user['login'])) ? $_user['login'] : '';
+//}
 
 // clear cookie popUp
 function _clearCookie() {
@@ -962,21 +946,13 @@ function hasAccess() {
     return $_result;
 }
 
-/* isPhone */
-function smarty_modifier_isPhone() { // $params, $template
-    // $params
-    require_once 'lib/users/ManagerUser.php';
-    $obj = new includes\lib\users\ManagerUser( array() );
-    $phone = $obj ->isPhone();
-    return ((int)$phone) ? $phone : '';
-}
 
 /* ------ // block Content --------- */
 function smarty_function_Content($params, $template) {
     $_style = (isset($params['blockBg'])) ? $params['blockBg'] : 'dark';
     $_title = (isset($params['title'])) ? $params['title'] : '';
     $_styleTitle = (isset($params['styleTitle'])) ? $params['styleTitle'] : 'h1';
-    
+
     $html = '<div id="block-content" class="'.$_style.'">
                     <div class="container">';
                     if(!empty($_title))
@@ -998,24 +974,24 @@ function smarty_function_getAddUrl($links, $get) {
 }
 
 function smarty_function_initBefore() {      
-    // initPages();
+     initPages();
 }
 
-function initPages() {    
-    
+function initPages() {
+
     $urlParams = getURI();
-    if(is_array($urlParams['uriArr']) 
+    if(is_array($urlParams['uriArr'])
             and count($urlParams['uriArr']) > 0
             and !in_array('login', $urlParams['uriArr'])) {
         // log Users note
-        require_once 'lib/users/ManagerUser.php';
-        $obj = new includes\lib\users\ManagerUser(array());
-        //if($userData = $obj -> getLoginUser()) {
-        $obj -> setNotice();
+//        require_once 'lib/users/ManagerUser.php';
+//        $obj = new includes\lib\users\ManagerUser(array());
+//        //if($userData = $obj -> getLoginUser()) {
+//        $obj -> setNotice();
         //}
-        
+
     }
-    
+
 }
 
 function smarty_modifier_matchtrue($value=null)

@@ -27,6 +27,8 @@ $filename = dirname(dirname(__FILE__)).'/templates/pages/compatibility/search.tp
     header('Last-Modified: '. $LastModified);   
 }*/
 require_once $_inc.'/functions.php';
+require_once $_inc.'/di_function.php';
+
 
  $smarty->caching = false;
  $smarty->compile_check = true;

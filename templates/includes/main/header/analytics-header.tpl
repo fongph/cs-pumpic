@@ -9,24 +9,24 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 })(window,document,'script','//www.google-analytics.com/analytics.js','ga'); 
 
 {/literal}
-{nocache}
-{if ''|hasUser}
-{literal}ga('create', 'UA-56492507-1', 'auto', {'allowLinker': true, 'userId': '{/literal}{getUserID}{literal}'});{/literal}
-{else}  
+{*{nocache}*}
+{*{if ''|hasUser}*}
+{*{literal}ga('create', 'UA-56492507-1', 'auto', {'allowLinker': true, 'userId': '{/literal}{getUserID}{literal}'});{/literal}*}
+{*{else}  *}
 {literal}ga('create', 'UA-56492507-1', 'auto', {'allowLinker': true});{/literal}
-{/if}
-{/nocache}
+{*{/if}*}
+{*{/nocache}*}
 {literal}   
 ga('require', 'linker');
 ga('linker:autoLink', ['pumpic.com','fastspring.com','demo.pumpic.com','cp.pumpic.com'], true, true);
 {/literal}
-{nocache}
+{*{nocache}*}
 {if $search_word}
 ga('send', 'pageview', '/compatibility/results?q={$search_word}');
 {else}
 ga('send', 'pageview');
 {/if}
-{/nocache}
+{*{/nocache}*}
 {literal}    
 </script>
 {/literal}

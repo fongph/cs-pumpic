@@ -2,7 +2,7 @@
 
 //$config
 $_inc = dirname(__FILE__); // includes
-
+require_once $_inc.'/di_function.php';
 require_once $_inc . '/lib/users/Order.php';
 $order = new includes\lib\users\Order;
 

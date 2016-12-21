@@ -2,6 +2,16 @@
 // ini_set('display_errors', 1);
 // error_reporting(-1);
 global $di;
+
+
+$_inc = dirname(__FILE__); // includes
+$b_dir = dirname( $_inc ); // folder sites directory
+
+require_once $_inc.'/config.php';
+require_once $_inc.'/di_function.php';
+require_once $_inc.'/lib/users/Order.php';
+$obj = new includes\lib\users\Order;
+
 /** @var $auth \System\Auth */
 $auth = $di->get('auth');
 if (!$auth->hasIdentity()) {
@@ -9,14 +19,6 @@ if (!$auth->hasIdentity()) {
     $stickBanner = $di->get('freeTrialLinks');
     $stickBanner->setAccessCookie(true);
 }
-
-$_inc = dirname(__FILE__); // includes
-$b_dir = dirname( $_inc ); // folder sites directory
-
-require_once $_inc.'/config.php';
-require_once $_inc.'/lib/users/Order.php';
-$obj = new includes\lib\users\Order;
-
 /* test mail */
 //require_once $_inc.'/lib/class.phpmail.php';
 //$_mail = new Phpmail();

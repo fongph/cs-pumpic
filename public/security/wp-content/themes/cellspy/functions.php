@@ -891,3 +891,88 @@ function cellspy_customize_preview_js() {
 	wp_enqueue_script( 'cellspy-customizer', get_template_directory_uri() . '/js/theme-customizer.js', array( 'customize-preview' ), '20130301', true );
 }
 add_action( 'customize_preview_init', 'cellspy_customize_preview_js' );
+
+function coupon_func( ) {
+	return '<div class="box-form-subscribe dark">
+                
+<form method="POST" action="http://pumpic.com/security-subscribe-form-mailChimp.html" name="subscribe-'.get_the_ID().'">
+
+    <input type="hidden" name="link" value="http://pumpic.us9.list-manage.com/subscribe?u=121503f636b81be9179c9f178&id=4fda74feb8" />
+
+    <div class="row">
+        <div class="col-s-sm-12 col-sm-3 col-md-3 col-lg-3">
+            <img class="image" src="http://pumpic.com/security/wp-content/uploads/2015/02/img-subscribe-1.png" alt="" />
+        </div>
+        <div class="col-s-sm-12 col-sm-12 col-md-12 col-lg-12">
+            <div class="visual-text">
+                <label class="title uppercase">Want to receive exclusive Pumpic coupons? </label>
+                <p class="description">Subscribe to be the first to get unique offers! </p>
+                <section>
+                    <div class="clearfix">
+                        <div class="block-input left">
+                            <input type="text" class="email required" name="MERGE0" value="" placeholder="Your email" />
+                        </div>
+                        <div class="block-button left">
+                            <button class="btn-green" name="submit">Subscribe</button>
+                        </div>
+                    </div>    
+                    <div class="block-error"></div>
+                </section>
+                
+                <label class="block-info">We’ll never share your email adress and you can opt out at any time, we promise.</label>
+                
+            </div>    
+        </div>
+    </div>
+
+</form>
+
+</div>';
+}
+add_shortcode( 'coupon_form', 'coupon_func' );
+function subscription_form_func( $atts ) {
+	extract(shortcode_atts(array(
+		'title'      => '',          // Plan title name
+		'link'		=> '',
+		'description' => '',
+		'button_text' => '',
+		'info'		 => '',
+
+	), $atts));
+	return '<div class="box-form-subscribe dark">
+                
+<form method="POST" action="http://pumpic.com/security-subscribe-form-mailChimp.html" name="subscribe-'.get_the_ID().'">
+
+    <input type="hidden" name="link" value="'.$link.'" />
+
+    <div class="row">
+        <div class="col-s-sm-12 col-sm-3 col-md-3 col-lg-3">
+            <img class="image" src="http://pumpic.com/security/wp-content/uploads/2015/02/img-subscribe-1.png" alt="" />
+        </div>
+        <div class="col-s-sm-12 col-sm-9 col-md-9 col-lg-9">Q
+            <div class="visual-text">
+                <label class="title uppercase">'.$title.'</label>
+                <p class="description">'.$description.'</p>
+                <section>
+                    <div class="clearfix">
+                        <div class="block-input left">
+                            <input type="text" class="email required" name="MERGE0" value="" placeholder="Your email" />
+                        </div>
+                        <div class="block-button left">
+                            <button class="btn-green" name="submit">'.$button_text.'</button>
+                        </div>
+                    </div>    
+                    <div class="block-error"></div>
+                </section>
+                
+                <label class="block-info">'.$info.'</label>
+                
+            </div>    
+        </div>
+    </div>
+
+</form>
+
+</div>';
+}
+add_shortcode( 'subscription_form', 'subscription_form_func' );

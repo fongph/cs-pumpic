@@ -4,6 +4,7 @@
 $_inc = dirname(__FILE__); // includes
 
 require_once $_inc . '/lib/users/Order.php';
+require_once $_inc.'/di_function.php';
 $order = new includes\lib\users\Order;
 $user_id = $order->getUserIdByAuth();
 $_request = (isset($_POST['price']) and ! empty($_POST['price'])) ? $_POST['price'] : false;

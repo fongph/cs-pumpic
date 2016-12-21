@@ -2,16 +2,18 @@
 $_inc = dirname(__FILE__); // includes
 $b_dir = dirname( $_inc ); // folder sites directory
 
-require_once $_inc.'/config.php';
-require_once $_inc.'/lib/CDb.php';
-require_once $_inc.'/lib/class.phpmail.php';
-
-$_pdo = new includes\lib\CDb();
-$_mail = new Phpmail();
 
 // smarty config
-require_once 'smarty.config.php';
+//require_once 'smarty.config.php';
+require_once $_inc.'/di_function.php';
 
+require_once $_inc.'/config.php';
+//require_once $_inc.'/lib/CDb.php';
+require_once $_inc.'/lib/class.phpmail.php';
+
+
+//$_pdo = new includes\lib\CDb();
+//$_mail = new Phpmail();
 //$smarty = new Smarty;
 //
 //// settings smarty

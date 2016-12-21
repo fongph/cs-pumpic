@@ -110,6 +110,6 @@
 
 {include file="$module"}
 
-{if (!isset($hideFreeTrialBanner) or !$hideFreeTrialBanner) and $di->get('freeTrialLinks')->isAvailable()}
-    {include file="$templatesDir/includes/content/fly/fly-free-trial.tpl"}
-{/if}
+{*{if (!isset($hideFreeTrialBanner) or !$hideFreeTrialBanner) and $di->get('freeTrialLinks')->isAvailable()}*}
+    {*{include file="$templatesDir/includes/content/fly/fly-free-trial.tpl"}*}
+{*{/if}*}

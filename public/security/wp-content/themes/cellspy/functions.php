@@ -1,4 +1,19 @@
 <?php
+function my_init()
+{
+	if (!is_admin())
+	{
+		wp_deregister_script('jquery');
+
+		// Load a copy of jQuery from the Google API CDN
+		// The last parameter set to TRUE states that it should be loaded
+		// in the footer.
+//		wp_register_script('jquery', 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js', FALSE, '1.11.0', TRUE);
+//
+//		wp_enqueue_script('jquery');
+	}
+}
+add_action('init', 'my_init');
 if ( function_exists( 'session_cache_limiter' ) ) :
     session_cache_limiter('public');
 endif;

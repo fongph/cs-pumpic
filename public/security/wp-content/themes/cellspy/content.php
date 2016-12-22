@@ -69,23 +69,6 @@
         </div>
         <meta itemprop="datePublished" content="<?php echo get_the_date();?>"/>
         <meta itemprop="dateModified" content="<?php echo get_the_modified_date(); ?>"/>
-        <script>
-            $('.share_list a').click(function(e){
-                e.preventDefault();
-                if(isset($(this).data('location')) && $(this).data('location').length) {
-
-                    var media = '';
-                    if(isset($(this).data('media')) && $(this).data('media').length)
-                        media = '&media='+$(this).data('media');
-
-                    window.open($(this).data('location') + encodeURIComponent(window.location) + media, 'Share', 'height=300,width=500');
-                }
-
-                //}
-                return false
-            });
-
-        </script>
     </article>
     <?php get_sidebar('subscribe'); ?>
     <?//= fb_get_cat_related_posts() ?>

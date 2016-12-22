@@ -5898,4 +5898,18 @@ $(document).ready(function(){
         });
     }
 });
-
+$(function () {
+	$('.share_list a').click(function(e){
+		e.preventDefault();
+		if(isset($(this).data('location')) && $(this).data('location').length) {
+			
+			var media = '';
+			if(isset($(this).data('media')) && $(this).data('media').length)
+				media = '&media='+$(this).data('media');
+			
+			window.open($(this).data('location') + encodeURIComponent(window.location) + media, 'Share', 'height=300,width=500');
+		}
+		
+		return false
+	});
+});

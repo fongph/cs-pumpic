@@ -1,10 +1,10 @@
 {strip}
- 
+
 {include file='../includes/main/main-header.tpl'
-    robots="no" 
+    robots="no"
     title="Page not Found"
-}    
-    
+}
+
 <body>
 <style>
     @media (min-width:993px) {
@@ -24,16 +24,16 @@
     <!-- END FLY BLOCKS-->
 	<div class="wrapper box-404">
 	{include file='../includes/main/main-top-menu.tpl'}
-        
 
-        
+
+
         {*
             Template: PHONE
             Переменные:
-                style (text): стиль блока Phone (blue|black). * - blue 
+                style (text): стиль блока Phone (blue|black). * - blue
         *}
         {include file='../includes/content/phone/block-phone.tpl'
-                 style="black"   
+                 style="black"
         }
         <!-- CONTENT -->
         <div class="very_easy bg-404" style="padding-top: 0;">
@@ -71,7 +71,7 @@
                                     </div>
                                     </div>
                                 </div>
-                                
+
                             </div>
                         </div>
                     </div>
@@ -83,12 +83,11 @@
         {*
             Template: FOOTER
             Переменные:
-                our_products (text): Включить выключить блок OUR PRODUCTS (no|yes). * - yes 
+                our_products (text): Включить выключить блок OUR PRODUCTS (no|yes). * - yes
         *}
         {include file='../includes/main/main-footer.tpl'}
 	</div>
 	{include file='../includes/main/main-analytics-footer.tpl'}
 </body>
 </html>
-{/strip}	
-	
+{/strip}

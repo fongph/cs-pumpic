@@ -56,12 +56,49 @@ description="Pumpic offers high-quality cell phone tracking software for a good 
     {**}
     {*{$getProducts.basicDouble|@debug_print_var}*}
 
-
+    <style>
+        .banner-store {
+            max-width: 782px;
+            margin: 0 auto;
+            background: url("http://www.wearewebstars.dk/codepen/img//s2.png"), linear-gradient(-54deg,#1d477d,#3594a2,#bb6884) no-repeat bottom;
+            background-size: 130px, 100%;
+            padding: 8px 0 0;
+            display: flex;
+            justify-content: space-around;
+        }
+        .banner-store .banner-text {
+            font-size: 15px;
+            color: #ffffff;
+            text-align: center;
+            max-width: 475px;
+        }
+        @media (max-width: 454px) {
+            .banner-store {
+                padding: 8px 8px 0;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .banner-store .image-left {
+                order: 1;
+            }
+            .banner-store .image-right {
+                order: 2;
+            }
+        }
+    </style>
     <div class="no_bg">
         <div class="container">
             <div class="row">
                 <div class="col-lg-10 col-lg-offset-1">
                     <div class="row">
+                        <div class="banner-store">
+                            <img src="/images/christmas-banner/santa_image.png" class="image-left" alt="santa icon">
+                            <div class="banner-text">
+                                This Christmas get <b>+1 FREE MONTH</b> with any first-time purchase.
+                                <b>On December 24 and 25 only</b>. Wishing you happy holidays!
+                            </div>
+                            <img src="/images/christmas-banner/tree_image.png" class="image-right" alt="christmas tree icon">
+                        </div>
                         <h1 class="h2 text-center">
                             Subscription Plans
                         </h1>
@@ -737,13 +774,9 @@ our_products (text): Включить выключить блок OUR PRODUCTS (
 *}
 {include file='../includes/main/main-footer.tpl'}
 </div>
-
 {include file='../includes/main/main-analytics-footer.tpl'
 emptyScript="true"}
-
-<script src="/javascripts/frontend.min.js?1423094400" data-delete="delete"></script>
-<script src="/javascripts/store-init.js"></script>
-
+<script src="/javascripts/frontend.min.js?1423094400" data-delete="delete"></script><script src="/javascripts/store-init.js"></script>
 </body>
 </html>
 

@@ -24,6 +24,7 @@ const path = {
     dev: {
         tpl: './templates/**/*.tpl',
         js: './assets/js/**/*.js',
+        js_wp: './public/javascripts/wp.js',
         sass: './assets/css/frontend.scss',
         sass_wp:'./public/stylesheets/wp.scss',
         sass_watch: './assets/css/**/*.scss',
@@ -116,6 +117,14 @@ gulp.task('js-dev', function() {
 gulp.task('js-min', function() {
     return gulp.src(path.dev.js)
         .pipe(concat('frontend.js'))
+        .pipe(rename({suffix: '.min'}))
+        .pipe(uglify({compress: true}))
+        .pipe(reload({stream: true}))
+        .pipe(gulp.dest(path.public.js));
+});
+
+gulp.task('js-min-wp', function() {
+    return gulp.src(path.dev.js_wp)
         .pipe(rename({suffix: '.min'}))
         .pipe(uglify({compress: true}))
         .pipe(reload({stream: true}))

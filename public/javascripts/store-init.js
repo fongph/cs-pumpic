@@ -16,21 +16,5 @@ $(document).ready(function(){
 				s.type = "text/javascript";
 				s.src = "/javascripts/frontend.min.js";
 				$("body").append(s);
-				if(deviceWidth < 700) {
-					var stickyHeader = function() {
-						var sticky = $('.save__2plan'),
-								parentOffset = $('thead'),
-								offset = parentOffset.offset().top + 50;
-						$(window).scroll(function(){
-							var scroll = $(window).scrollTop();
-							if (scroll >= offset) {
-								sticky.addClass('sticky');
-							} else {
-								sticky.removeClass('sticky');
-							}
-						});
-					}
-					stickyHeader();
-				};
-			});
+				});
 });

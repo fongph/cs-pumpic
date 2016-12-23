@@ -1,3 +1,53 @@
+<style>
+    #fly_features.christmass-banner {
+        background: url("/images/fly_features/christmas_banner_bg.jpg") no-repeat center;
+        -webkit-background-size: cover;
+        background-size: cover;
+        height: auto;
+        bottom: 0;
+        right: 0;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    .christmass-banner #fly-features-h2 {
+        max-width: 170px;
+        line-height: 20px;
+        font-weight: 400;
+    }
+    .christmass-banner .features-button {
+        font-weight: normal;
+    }
+    @media only screen and (max-width: 768px) {
+        #fly_features.christmass-banner {
+            background-image: url("/images/fly_features/christmas_banner_bg_xs.png"),linear-gradient(to left bottom,#204d84,#428685,#bb6884) ;
+            background-position: bottom;
+            background-repeat: no-repeat;
+            background-size: 100%;
+            padding: 32px 0 22px!important;
+        }
+        .christmass-banner #fly_top {
+            width: initial;
+            float: none;
+            margin: 0 0 10px;
+        }
+        .christmass-banner #fly-features-h2 {
+            max-width: 300px;
+        }
+    }
+</style>
+<div class="fly-features-v2 fly-features-v1">
+    <div id="fly_features" class="christmass-banner">
+        <span class="fly_close close"></span>
+        <div id="fly_top">
+            <h2 id="fly-features-h2">Lit up a Christmas <br> tree and grab your gift at the Pumpic Store on December, 24-25</h2>
+            <p class="fly-label"></p>
+            <a class="features-button ga-action-click"  ga-category="Fly Banner"  ga-action="click" ga-label="Christmas_campaign" href="/store.html">Check the Store</a>
+        </div>
+    </div>
+</div>
+
+
+<!--
 <div class="fly-features-v2 fly-features-v1">
     <div id="fly_features">
         <span class="fly_close close"></span>
@@ -29,7 +79,7 @@
     </div>
 </div>
 </div>
-
+-->
 
 <style>
     .mobile-apps-text{

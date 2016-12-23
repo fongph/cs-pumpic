@@ -1,19 +1,19 @@
-{include file='../includes/main/main-header.tpl' 
+{include file='../includes/main/main-header.tpl'
     title="Ultimate iPhone Parental Control App for Apple iOS"
     description="Pumpic is a tried and true app to monitor iPhone usage and online activity. Set parental control to monitor calls and location and keep your children safe."
-}    
-    
+}
+
 <body>
     <!-- BLOCK GTM -->
     {include file='../includes/main/main-after-body.tpl'}
     <!-- END BLOCK GTM -->
-    
+
     <!-- FLY BLOCKS -->
     {include file='../includes/content/fly/fly_blocks.tpl'}
     <!-- END FLY BLOCKS-->
-    
+
     <div class="wrapper iphone_parental_monitoring">
-	
+
 	<!-- TOP MENU -->
 	{include file='../includes/main/main-top-menu.tpl'
             storeHref = '/iphone-tracking-software.html '
@@ -21,18 +21,18 @@
             cache_id = "includes_main_main-top-menu"
             nocache
         }
-        
 
-        
+
+
         {*
             Template: PHONE
             Переменные:
-                style (text): стиль блока Phone (blue|black). * - blue 
+                style (text): стиль блока Phone (blue|black). * - blue
         *}
         {include file='../includes/content/phone/block-phone.tpl'
-                 style="blue"   
+                 style="blue"
         }
-        
+
     <!-- CONTENT -->
          {include file='../includes/content/info/info-promo.tpl'
             imgUrl = "landings/bg_iphone-parental-monitoring.png"
@@ -51,8 +51,8 @@
             Android = "no"
         }
          {* header_banners/bg_iphone-parental-monitoring.png *}
-         {*listText = "control mobile phone usage|monitor Internet activity|follow location and route history"*}    
-        
+         {*listText = "control mobile phone usage|monitor Internet activity|follow location and route history"*}
+
         {include file='../includes/content/plans.tpl'}
 
         {* Template: FLY BUTTONS
@@ -65,18 +65,18 @@
 
 
 
-{Content 
+{Content
     styleTitle="h2"
     title="Did You Know?"
     blockBg='dark'}
-       
+
         <p class="text-center f-light">
             Since iPhones hit the market in 2007, there have been over 500 million devices sold, and sales have continued to grow rapidly, as well as the number of Apple smartphones stolen. That’s why upgrading your kid’s device with an app to monitor iPhone is an essential security measure. With its help, you will easily locate, lock or wipe an iOS mobile phone remotely, if lost or stolen.
         </p>
-        
+
         <!-- BLOCK STATISTICK -->
         <div class="block-statistick row">
-            
+
             <div class="item col-s-sm-12 col-xs-sm-12 col-sm-4 col-md-4 col-lg-4">
                 <section>
                     <div><strong class="fz50 color-orange">44%</strong></div>
@@ -101,14 +101,14 @@
                     </span>
                 </section>
             </div>
-            
+
         </div>
         <!-- END -->
 
         <p class="text-center f-light">
             Nowadays, iPhones are probably the most popular cell phones worldwide. It is hard to find a person who would not like to have an ultramodern device by Apple. When it comes to kids and teenagers, iOS smartphones appear to be the top of the mind. To protect your child as well as an expensive gift, <a class="a-default" target="_blank" href="/how-to-setup-parental-controls-on-iphone.html">use iPhone monitoring software</a>:
         </p>
-        
+
         <!-- BLOCK LIST -->
         <div class="row pt15">
             <div class="padding-null col-sm-3 col-md-3 col-lg-3">
@@ -133,18 +133,18 @@
             </div>
         </div>
         <!-- END -->
-    
-    {*<p>Since iPhones have hit the market in 2007, there are over 500 million devices sold. And sale performance grows rapidly 
-    until now, as well as figures of Apple smartphones stolen. That’s why upgrading your kid’s device with an app to monitor 
-    iPhone is a must-have security measure. With its help, you will easily locate, lock or wipe an iOS mobile phone remotely, 
-    if lost or stolen.</p>   
+
+    {*<p>Since iPhones have hit the market in 2007, there are over 500 million devices sold. And sale performance grows rapidly
+    until now, as well as figures of Apple smartphones stolen. That’s why upgrading your kid’s device with an app to monitor
+    iPhone is a must-have security measure. With its help, you will easily locate, lock or wipe an iOS mobile phone remotely,
+    if lost or stolen.</p>
     <ul>
         <li>44% of lost iPhones were simply left in public places</li>
         <li>14% of stolen Apple devices were taken from a house or car</li>
         <li>11% of all stolen iOS smartphones were pickpocketed</li>
     </ul>
-    <p>Nowadays iPhones are probably the most popular cell phones worldwide. It is hard to find a person, who would not 
-    like to have an ultramodern device by Apple. When it comes to kids and teenagers, iOS smartphones appear 
+    <p>Nowadays iPhones are probably the most popular cell phones worldwide. It is hard to find a person, who would not
+    like to have an ultramodern device by Apple. When it comes to kids and teenagers, iOS smartphones appear
     to be the top of the mind. To protect your child as well as an expensive gift, use iPhone monitoring software:</p>
 
     <ul>
@@ -155,8 +155,8 @@
 
         {* Template: BLOCK IMAGE
             blockAlign (text): позиция блока с изображением. (left|center|right) *default: center
-            
-            imgUrl (text): путь к изображению. *ОБЯЗАТЕЛЬНОЕ ПОЛЕ 
+
+            imgUrl (text): путь к изображению. *ОБЯЗАТЕЛЬНОЕ ПОЛЕ
             imgAlt (text): подпись к изображению.
             // размер изображения
             imgWidth (text): ширина изображения *ОБЯЗАТЕЛЬНОЕ ПОЛЕ
@@ -168,13 +168,13 @@
                 blockAlign = 'center'
 
                 imgUrl = 'parental_control/bg_famaly_mobile.png'
-                imgAlt = 'Alt Test image 1'                
+                imgAlt = 'Alt Test image 1'
                 imgWidth = '537'
                 imgHeight = '312'
 
                 captionText = 'Caption test image 1 Caption test image 1 Caption test image 1 Caption test image 1'
         *}
-                        
+
 {EndContent}
 
 <div class="light">
@@ -216,26 +216,26 @@
                         </div>
                 </div>
         </div>
-</div>   
-                                        
+</div>
+
 {include file='../includes/content/features-table-new.tpl'
         title = "Parental Control Features by Pumpic"
         description = "Your children live their full lives, and mobile devices help them explore the world around. Photo and video shooting, remote communication, emailing, gaming, and social connections are some of the options these gadgets provide. Pumpic covers all spheres of your kids’ activity and enables you to take care of them remotely. The features listed below show the variety of iPhone parental control abilities, which will let you secure your children’s well-being."
         blockBg="dark"
         icloud = "yes"
 
-}                                        
-                                        
+}
+
 {*<div class="dark">
         <div class="container">
                 <h2 class="text-center">Parental Control Features by Pumpic</h2>
                 <div class="row">
-                    
+
                     <div id="table-container" class="table-col-3 table-md-col-3 table-sm-col-3">
-                        <article class="text-center">Your children live a full life and mobile devices help them explore it. Photo and video 
-                            shooting, distant communication, mailing, game playing and social connections are some of options these gadgets 
-                            provide. Pumpic covers all spheres of your kids’ activity and enables you to take care of them remotely. 
-                            The features listed below show the variety of iPhone parental control abilities, which will let you secure your 
+                        <article class="text-center">Your children live a full life and mobile devices help them explore it. Photo and video
+                            shooting, distant communication, mailing, game playing and social connections are some of options these gadgets
+                            provide. Pumpic covers all spheres of your kids’ activity and enables you to take care of them remotely.
+                            The features listed below show the variety of iPhone parental control abilities, which will let you secure your
                             children’s happiness.</article>
                         <section>
                             <div class="tab col-item-3 col-md-item-3 col-sm-item-3">
@@ -268,9 +268,9 @@
                                 </ul>
                             </div>
                         </section>
-                        
-                    </div>    
-                    
+
+                    </div>
+
                 </div>
         </div>
 </div>*}
@@ -282,14 +282,14 @@
 
         <div class="learn-more">
 
-{Content 
+{Content
     styleTitle="h2"
     title="Keep Your Eyes Open"
     blockBg='light'}
     <p>As a parent, you always take care of your kids and do your best to protect them from any possible danger. However, when they grow up and get stronger day by day, you become less and less engaged in their lives. Meanwhile, your children become more and more independent.</p>
     <p>Nevertheless, no matter how old and independent your kids are, they will always remain the same in your eyes. You will always try to be there when help is needed; provide support and assistance whatever it will take.</p>
     <p>To be at hand each and every moment, you give your kid a cell phone. From now on, this small device will define your communication and interaction. Also, it will open larger horizons for your little child; it will show him/her the world as it is or should be, and help explore it through online reality.</p>
-    
+
     <ul class="list-content">
         <li class="img-plus"><img src="{$img}/list/plus.png" width="30" height="29" alt="Mobile Phone Benefits">If you still hesitate whether to give your child a mobile phone or not, note that this step can bring many benefits:
             <ul class="list-green">
@@ -323,12 +323,12 @@
     <div class="container">
             <h2 class="text-center testimonial-title">iOS Monitoring Testimonials:</h2>
             <div class="row">
-                
+
                 <div class="bxSliders only-pc">
                         <!-- SLIDE #1 -->
                         <div class="slide">
-                
-                
+
+
                     <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
                             <img src="{$img}/testimonials/t_new_19.png" alt="" class="testimonial-photo">
                             <div class="testimonial-text">
@@ -350,12 +350,12 @@
                                     <p>“The app helped me find out that my son started smoking and sometimes drank beer with his friends. I am a single mom, and thus work days and nights to keep my son and little daughter. With Pumpic iPhone parental monitoring, text messages my son sends and receives are no longer a secret for me. I can read his SMS, his social media communication, know who calls him and why. That’s a great help for me. Thanks!”</p>
                             </div>
                     </div>
-                            
+
                         </div>
-                </div> 
-                <div class="bxSliderMobile"></div>            
-                            
-                            
+                </div>
+                <div class="bxSliderMobile"></div>
+
+
             </div>
     </div>
 </div>
@@ -382,37 +382,37 @@
         </style>
 
 
-        {include file='../includes/content/how-get-pumpic.tpl' 
+        {include file='../includes/content/how-get-pumpic.tpl'
              blockBg="light"
         }
 
 
         {*include file='../includes/content/banner-promo.tpl'*}
         {*{include file='../includes/content/banners/banner-promo-trial.tpl'}*}
-        
+
         {include file='../includes/content/banners/index.tpl'}
-        <!-- END CONTENT -->    
-        
+        <!-- END CONTENT -->
+
         <!-- RECOMMENDED -->
         {*
             Template: RECOMMENDED
-        *}    
+        *}
         {include file='../includes/main/main-recommended.tpl'}
-           
+
         <!-- FOOTER -->
         {*
             Template: FOOTER
             Переменные:
-                our_products (text): Включить выключить блок OUR PRODUCTS (no|yes). * - yes 
+                our_products (text): Включить выключить блок OUR PRODUCTS (no|yes). * - yes
         *}
         {include file='../includes/main/main-quick-link.tpl'
         blockBg="light"
         }
 
         {include file='../includes/main/main-footer.tpl'}
-                
+
     </div>
-      
+
     {include file='../includes/main/main-analytics-footer.tpl'}
 </body>
 </html>

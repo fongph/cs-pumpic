@@ -91,14 +91,14 @@ description="Pumpic offers high-quality cell phone tracking software for a good 
             <div class="row">
                 <div class="col-lg-10 col-lg-offset-1">
                     <div class="row">
-                        <div class="banner-store">
-                            <img src="/images/christmas-banner/santa_image.png" class="image-left" alt="santa icon">
-                            <div class="banner-text">
-                                This Christmas get <b>+1 FREE MONTH</b> with any first-time purchase.
-                                <b>On December 24 and 25 only</b>. Wishing you happy holidays!
-                            </div>
-                            <img src="/images/christmas-banner/tree_image.png" class="image-right" alt="christmas tree icon">
-                        </div>
+                        {*<div class="banner-store">*}
+                            {*<img src="/images/christmas-banner/santa_image.png" class="image-left" alt="santa icon">*}
+                            {*<div class="banner-text">*}
+                                {*This Christmas get <b>+1 FREE MONTH</b> with any first-time purchase.*}
+                                {*<b>On December 24 and 25 only</b>. Wishing you happy holidays!*}
+                            {*</div>*}
+                            {*<img src="/images/christmas-banner/tree_image.png" class="image-right" alt="christmas tree icon">*}
+                        {*</div>*}
                         <h1 class="h2 text-center">
                             Subscription Plans
                         </h1>

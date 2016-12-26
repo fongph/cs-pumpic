@@ -292,7 +292,8 @@ function cookie_init() {
 
 function copy_to_clipboard_init() {
     var client = new ZeroClipboard($(".copy-to-clipboard"));
-
+    
+    
     client.on("copy", function (event) {
         var clipboard = event.clipboardData;
         clipboard.setData("text/plain", $('.copy-this').val());

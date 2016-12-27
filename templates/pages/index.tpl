@@ -97,7 +97,7 @@
         </div>
         <!-- END -->
 
-        <p class="text-center f-light">Most threats children face today are closely associated with the use of mobile devices and the Internet. Our cell phone monitoring software helps parents avert all these dangers in the making and protects your little ones. Install the app on your kids’ phones and rest assured they are safe wherever they go. Pumpic is a reliable child tracking solution that each concerned parent should consider using. Keep your eyes open with the Pumpic parental controls.</p>
+        <p class="text-center f-light">Most threats children face today are closely associated with the use of mobile devices and the Internet. Our cell phone monitoring software helps parents avert all these dangers in the making and protects your little ones. Because our software is not linked to any cell phone carrier, you can benefit from it even outside the US or Canada as <a class="a-default" href="/pumpic-app-in-different-countries/">Pumpic app is available in different countries</a> around the globe. Install the app on your kids’ phones and rest assured they are safe wherever they or you go. Pumpic is a reliable child tracking solution that each concerned parent should consider using. Keep your eyes open with the Pumpic parental controls</p>
 
 		{EndContent}
 

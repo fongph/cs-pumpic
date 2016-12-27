@@ -1,4 +1,4 @@
-{include file='../includes/main/main-header.tpl'
+{include file='../../includes/main/main-header.tpl'
 
     title="Mobile Monitoring in Different Countries | Pumpic"
     description="Internet dangers know no borders; they threaten children around the globe. Pumpic mobile app monitoring lets you enhance your kid's safety wherever you live."
@@ -6,17 +6,17 @@
 
 <body>
     <!-- BLOCK GTM -->
-    {include file='../includes/main/main-after-body.tpl'}
+    {include file='../../includes/main/main-after-body.tpl'}
     <!-- END BLOCK GTM -->
 
     <!-- FLY BLOCKS -->
-    {include file='../includes/content/fly/fly_blocks.tpl'}
+    {include file='../../includes/content/fly/fly_blocks.tpl'}
     <!-- END FLY BLOCKS-->
 
     <div class="wrapper {*bg_bottom_images*} block-free-trial home-page">
         <!-- TOP MENU -->
 
-	{include file='../includes/main/main-top-menu.tpl'
+	{include file='../../includes/main/main-top-menu.tpl'
             topmenu_active='home'
             cache_id = "includes_main_main-top-menu"
             nocache
@@ -29,13 +29,13 @@
             Переменные:
                 style (text): стиль блока Phone (blue|black). * - blue
         *}
-        {include file='../includes/content/phone/block-phone.tpl'
+        {include file='../../includes/content/phone/block-phone.tpl'
                  style="blue"
         }
 
         {* bg_famaly_427x254.png imgVerticalAlign = "bottom"*}
         <!-- CONTENT -->
-        {include file='../includes/content/info/info-promo.tpl'
+        {include file='../../includes/content/info/info-promo.tpl'
             imgUrl = "header_banners/pumpic-app-in-different-countries_header.png"
             imgAlt = "Worldwide monitoring"
             imgAlign = "left bottom"
@@ -52,11 +52,11 @@
             Android = "no"
         } {* ?rel=0&wmode=transparent&fs=0&autoplay=1&modestbranding=1&autohide=1 *}
 
-        {include file='../includes/content/plans.tpl'}
+        {include file='../../includes/content/plans.tpl'}
 
         {* Template: FLY BUTTONS
         *}
-        {include file='../includes/content/fly/box-buttons.tpl'
+        {include file='../../includes/content/fly/box-buttons.tpl'
             buttonBuyNow = 'yes'
             buttonViewDemo = 'no'
             buttonFreeTrial = 'yes'
@@ -112,7 +112,7 @@
 		<p>Thus, Pumpic enables parents to notice warning signs of a problem (cyberbullying, sexting, online predator attack, etc.) and take necessary steps to shield their kids. Thanks to keeping parents' eyes open, the app helps them prevent or avert troubles or at least minimize their consequences.</p>
 {EndContent}
 
-        {include file='../includes/content/features-table-new.tpl'
+        {include file='../../includes/content/features-table-new.tpl'
         title = "With Pumpic Mobile App, Monitoring Is Easy and Comprehensive"
         description = "<p>Depending on a solution you choose (iCloud without jailbreak, iOS with jailbreak or Android), Pumpic offers from 11 up to 27 comprehensive monitoring features. With them, you are enabled to keep tabs on almost any activity taken on the monitored device. Whether it is communications, online chats, social media, browsing history or location tracking – Pumpic can collect information remotely and display it on a web-based dashboard. Please, check out the full list of the app's features and their correspondence with the offered solutions in the table below.</p>"
         blockBg="dark"
@@ -137,7 +137,7 @@
 
 {EndContent}
 
-		{include file='../includes/content/banners/index.tpl'}
+		{include file='../../includes/content/banners/index.tpl'}
 
 
 
@@ -149,7 +149,7 @@
         {*
             Template: RECOMMENDED
         *}
-        {include file='../includes/main/main-recommended.tpl'}
+        {include file='../../includes/main/main-recommended.tpl'}
 
         <!-- FOOTER -->
         {*
@@ -158,13 +158,13 @@
                 our_products (text): Включить выключить блок OUR PRODUCTS (no|yes). * - yes
         *}
 
-        {include file='../includes/main/main-quick-link.tpl'
+        {include file='../../includes/main/main-quick-link.tpl'
         blockBg="light"
         }
-        {include file='../includes/main/main-footer.tpl'}
+        {include file='../../includes/main/main-footer.tpl'}
 
     </div>
 
-    {include file='../includes/main/main-analytics-footer.tpl'}
+    {include file='../../includes/main/main-analytics-footer.tpl'}
 </body>
 </html>

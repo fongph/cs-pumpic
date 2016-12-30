@@ -864,6 +864,7 @@ hideJailbreak = true
         formBlck.append(lmBtn);
         formBlck.find('form').remove();
         $('#demo-banner-button').attr('href','#subscription');
+        $('.logo a').attr('href', '#');
     });
 </script>
 </body>

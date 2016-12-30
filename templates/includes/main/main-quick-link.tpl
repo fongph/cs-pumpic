@@ -14,6 +14,11 @@
                                                         <li>
                                                                 <a href="/store.html">Prices and subscription plans</a>
                                                         </li>
+                                                    {if $smarty.server.REQUEST_URI == '/'}
+                                                    <li>
+                                                        <a href="/employee-monitoring-software.html">Employee monitoring software solution</a>
+                                                    </li>
+                                                    {/if}
 
                                                         {*
                                                         <li>
@@ -31,6 +36,7 @@
                                                         <li>
                                                             <a href="/faq.html">Contact us</a>
                                                         </li>
+
                                                 </ul>
                                         </div>
                                 </div>

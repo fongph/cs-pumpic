@@ -34,10 +34,10 @@
                             <li data-toggle="tooltip" data-placement="top" title="Set specific zones and receive alerts once the target device leaves them or enters."><i class="icon-ok"></i> Geo-fences</li>
                             <li data-toggle="tooltip" data-placement="top" title="View contact list including names, addresses, numbers and emails."><i class="icon-ok"></i> Contacts</li>
                             <li data-toggle="tooltip" data-placement="top" title="Monitor scheduled dates and events."><i class="icon-ok"></i> Calendar</li>
-                            <li data-toggle="tooltip" data-placement="top" title="View all visited websites.<br><b>Root required starting from Adnroid 6.0</b>"><i class="icon-ok"></i> Browsing history</li>
-                            <li data-toggle="tooltip" data-placement="top" title="Block specific websites on a target device.<br><b>Root required starting from Adnroid 6.0</b>"><i class="icon-ok"></i> Websites blocking</li>
+                            <li data-toggle="tooltip" data-placement="top" title="View all visited websites.<br><b>Root required starting from Android 6.0</b>"><i class="icon-ok"></i> Browsing history</li>
+                            <li data-toggle="tooltip" data-placement="top" title="Block specific websites on a target device.<br><b>Root required starting from Android 6.0</b>"><i class="icon-ok"></i> Websites blocking</li>
 
-                            <li data-toggle="tooltip" data-placement="top" title="View all websites visited and bookmarked as preferred ones.<br><b>Root required starting from Adnroid 6.0</b>"><i class="icon-ok"></i> Bookmarks</li>
+                            <li data-toggle="tooltip" data-placement="top" title="View all websites visited and bookmarked as preferred ones.<br><b>Root required starting from Android 6.0</b>"><i class="icon-ok"></i> Bookmarks</li>
                             <li data-toggle="tooltip" data-placement="top" title="View all photos stored on a device."><i class="icon-ok"></i> Photos</li>
 
                             <li data-toggle="tooltip" data-placement="top" title="Monitor, block or set time limits on all applications (games, services etc.) downloaded on a device."><i class="icon-ok"></i> Applications Management</li>
@@ -145,10 +145,10 @@
                             <li data-toggle="tooltip" data-placement="top" title="Set specific zones and receive alerts once the target device leaves them or enters."><i class="icon-ok"></i> Geo-fences</li>
                             <li data-toggle="tooltip" data-placement="top" title="View contact list including names, addresses, numbers and emails."><i class="icon-ok"></i> Contacts</li>
                             <li data-toggle="tooltip" data-placement="top" title="Monitor scheduled dates and events."><i class="icon-ok"></i> Calendar</li>
-                            <li data-toggle="tooltip" data-placement="top" title="View all visited websites.<br><b>Root required starting from Adnroid 6.0</b>"><i class="icon-ok"></i> Browsing history</li>
-                            <li data-toggle="tooltip" data-placement="top" title="Block specific websites on a target device.<br><b>Root required starting from Adnroid 6.0</b>"><i class="icon-ok"></i> Websites blocking</li>
+                            <li data-toggle="tooltip" data-placement="top" title="View all visited websites.<br><b>Root required starting from Android 6.0</b>"><i class="icon-ok"></i> Browsing history</li>
+                            <li data-toggle="tooltip" data-placement="top" title="Block specific websites on a target device.<br><b>Root required starting from Android 6.0</b>"><i class="icon-ok"></i> Websites blocking</li>
 
-                            <li data-toggle="tooltip" data-placement="top" title="View all websites visited and bookmarked as preferred ones.<br><b>Root required starting from Adnroid 6.0</b>"><i class="icon-ok"></i> Bookmarks</li>
+                            <li data-toggle="tooltip" data-placement="top" title="View all websites visited and bookmarked as preferred ones.<br><b>Root required starting from Android 6.0</b>"><i class="icon-ok"></i> Bookmarks</li>
                             <li data-toggle="tooltip" data-placement="top" title="View all photos stored on a device."><i class="icon-ok"></i> Photos</li>
 
                             <li data-toggle="tooltip" data-placement="top" title="Monitor, block or set time limits on all applications (games, services etc.) downloaded on a device."><i class="icon-ok"></i> Applications Management</li>

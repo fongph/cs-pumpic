@@ -2,7 +2,7 @@
 global $config, $smarty;
 
 $smarty = new Smarty();
-$smarty->caching = true;
+$smarty->caching = false;
 $smarty->compile_check = true;
 $smarty->force_compile =  false;
 $smarty->debugging = false;

@@ -63,9 +63,9 @@
     <li><span>Browsing</span>
         <ul>
             <li class="mobile_tooltip"
-                title="View all websites that your kid visits. Available for Chrome and default browser only.</br> <b>Root required starting from Adnroid 6.0</b>">Browsing history</li>
-            <li class="mobile_tooltip" title="View all websites that your child visited and bookmarked.</br> <b>Root required starting from Adnroid 6.0</b>">Bookmarks</li>
-            <li class="mobile_tooltip" title="Block 18+ websites.</br> <b>Root required starting from Adnroid 6.0</b>">Website blocking</li>
+                title="View all websites that your kid visits. Available for Chrome and default browser only.</br> <b>Root required starting from Android 6.0</b>">Browsing history</li>
+            <li class="mobile_tooltip" title="View all websites that your child visited and bookmarked.</br> <b>Root required starting from Android 6.0</b>">Bookmarks</li>
+            <li class="mobile_tooltip" title="Block 18+ websites.</br> <b>Root required starting from Android 6.0</b>">Website blocking</li>
         </ul>
     </li>
 </ul>

@@ -150,7 +150,6 @@
         {include file='../includes/main/main-quick-link.tpl'
         blockBg="light"
         }
-
         {include file='../includes/main/main-footer.tpl'}
 
     </div>

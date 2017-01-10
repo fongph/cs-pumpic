@@ -90,7 +90,14 @@ $config = array(
 			// countrie
 				'parental-control-software.html' => 'parental-control-software.php',
 				'mobile-spion.html' => 'mobile-spion.php',
-				'espiao-movel.html' => 'espiao-movel.php'
+				'espiao-movel.html' => 'espiao-movel.php',
+
+            //legal
+                'tos.html' => 'legacy.php',
+                'tos-preview.html' => 'legacy.php',
+                'policy.html' => 'legacy.php',
+                'policy-preview.html' => 'legacy.php',
+                'tos-preview.txt' => 'legacy.php'
 		),
 		'db_phones' => array(
 				'host' => '188.40.64.2',

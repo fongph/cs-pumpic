@@ -1,5 +1,4 @@
 		<div class="header">
-            <div id="snow"></div>
             <div class="container">
 				<div class="row">
 					<div class="col-lg-10 col-lg-offset-1">

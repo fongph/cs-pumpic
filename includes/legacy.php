@@ -43,9 +43,15 @@ if($_SERVER['REQUEST_URI'] == '/tos.html') {
 
     if(file_exists($root_path.'/tos-preview.txt')) {
         $text = $tos->getLegal('tos', 'active');
-        file_put_contents('tos-preview.txt', strip_tags($text[0]));
+        file_put_contents('tos-preview.txt', $text[0]);
         header("Content-Type:text/plain");
-        echo strip_tags($text[0]);
+        $replace = array('</p>', '</h2>', '</ul>', '</li>', '</h3>', '</br>', '</h4>', '</h5>');
+        $text[0] = str_replace( '<h3>', '*', $text[0] );
+        $text[0] = str_replace( '</h3>', '*</h3>', $text[0] );
+        $text[0] = str_replace( '<li>', "\t". " - ", $text[0] );
+        $text[0] = str_replace( $replace, "\n", $text[0] );
+
+        echo strip_tags($text[0]) ;
     } else throw new PageNotFoundException;
 }
 

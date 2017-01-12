@@ -42,8 +42,22 @@ if($_SERVER['REQUEST_URI'] == '/tos.html') {
 } elseif ($_SERVER['REQUEST_URI'] == '/tos-preview.txt') {
 
     if(file_exists($root_path.'/tos-preview.txt')) {
-        $text = $tos->getLegal('tos', 'active');
+        $text = $tos->getLegal('tos', 'preview');
         file_put_contents('tos-preview.txt', $text[0]);
+        header("Content-Type:text/plain");
+        $replace = array('</p>', '</h2>', '</ul>', '</li>', '</h3>', '</br>', '</h4>', '</h5>');
+        $text[0] = str_replace( '<h3>', '*', $text[0] );
+        $text[0] = str_replace( '</h3>', '*</h3>', $text[0] );
+        $text[0] = str_replace( '<li>', "\t". " - ", $text[0] );
+        $text[0] = str_replace( $replace, "\n", $text[0] );
+
+        echo strip_tags($text[0]) ;
+    } else throw new PageNotFoundException;
+} elseif ($_SERVER['REQUEST_URI'] == '/tos.txt') {
+
+    if(file_exists($root_path.'/tos.txt')) {
+        $text = $tos->getLegal('tos', 'active');
+        file_put_contents('tos.txt', $text[0]);
         header("Content-Type:text/plain");
         $replace = array('</p>', '</h2>', '</ul>', '</li>', '</h3>', '</br>', '</h4>', '</h5>');
         $text[0] = str_replace( '<h3>', '*', $text[0] );

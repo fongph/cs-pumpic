@@ -97,7 +97,8 @@ $config = array(
                 'tos-preview.html' => 'legacy.php',
                 'policy.html' => 'legacy.php',
                 'policy-preview.html' => 'legacy.php',
-                'tos-preview.txt' => 'legacy.php'
+                'tos-preview.txt' => 'legacy.php',
+                'tos.txt' => 'legacy.php'
 		),
 		'db_phones' => array(
 				'host' => '188.40.64.2',

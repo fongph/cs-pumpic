@@ -1,6 +1,4 @@
 <div class="header">
-    <div id="snow"></div>
-
     <div class="container">
         <div class="row">
             <div class="col-lg-10 col-lg-offset-1">
@@ -15,7 +13,7 @@
                         <div itemscope itemtype="http://schema.org/Organization" class="logo">
                           <meta itemprop="name" content="Pumpic Parental Monitoring">
                             <a href="/" itemprop="url">pumpic
-                            <img itemprop="logo" src="http://{$domain}/images/logo/pumpic-logo-ny.svg" style="max-width: 96%;" alt="pumpic app logo" />
+                            <img itemprop="logo" src="http://{$domain}/images/logo/pumpic-logo.svg" style="max-width: 96%;" alt="pumpic app logo" />
                             </a>
                         </div>
                     </div>
@@ -105,7 +103,6 @@
                     <!-- /.navbar-collapse -->
                 </nav>
             </div>
-            {*<div id="snow"></div>*}
         </div>
     </div>
 

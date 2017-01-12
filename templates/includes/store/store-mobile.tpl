@@ -43,7 +43,7 @@
                             <li data-toggle="tooltip" data-placement="top" title="Monitor, block or set time limits on all applications (games, services etc.) downloaded on a device."><i class="icon-ok"></i> Applications Management</li>
                             <li data-toggle="tooltip" data-placement="top" title="View all videos stored on a device."><i class="icon-cancel"></i> Videos</li>
 
-                            <li data-toggle="tooltip" data-placement="top" title="View all the previouse data ever stored on a device."><i class="icon-cancel"></i> Historical data</li>
+                            <li data-toggle="tooltip" data-placement="top" title="View all the previous data ever stored on a device."><i class="icon-cancel"></i> Historical data</li>
                             <li data-toggle="tooltip" data-placement="top" title="Control devices remotely.<div class='br'><strong>Up to Android 4.4.4</strong></div>"><i class="icon-cancel"></i> SMS commands
                             </li>
                             <li data-toggle="tooltip" data-placement="top" title="View every keystroke typed on a target device.<br><b>Pumpic keyboard activation required</b>"><i class="icon-cancel"></i> Keylogger <i class="icon-info-circled"></i></li>
@@ -154,7 +154,7 @@
                             <li data-toggle="tooltip" data-placement="top" title="Monitor, block or set time limits on all applications (games, services etc.) downloaded on a device."><i class="icon-ok"></i> Applications Management</li>
                             <li data-toggle="tooltip" data-placement="top" title="View all videos stored on a device."><i class="icon-ok"></i> Videos</li>
 
-                            <li data-toggle="tooltip" data-placement="top" title="View all the previouse data ever stored on a device."><i class="icon-ok"></i> Historical data</li>
+                            <li data-toggle="tooltip" data-placement="top" title="View all the previous data ever stored on a device."><i class="icon-ok"></i> Historical data</li>
                             <li data-toggle="tooltip" data-placement="top" title="Control devices remotely.<div class='br'><strong>Up to Android 4.4.4</strong></div>"><i class="icon-ok"></i> SMS commands
                             </li>
                             <li data-toggle="tooltip" data-placement="top" title="View every keystroke typed on a target device.<br><b>Pumpic keyboard activation required</b>"><i class="icon-ok"></i> Keylogger <i class="icon-info-circled"></i></li>

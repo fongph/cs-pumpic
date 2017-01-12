@@ -329,7 +329,7 @@ description="Pumpic offers high-quality cell phone tracking software for a good 
                                                             </li>
                                                             <li class="icloud-features__item">
                                                                 <p class="icloud-features__name"><i class="icon-ok"></i>Historical data</p>
-                                                                <p class="icloud-features__info m0">View all the previouse data ever stored on a device.</p>
+                                                                <p class="icloud-features__info m0">View all the previous data ever stored on a device.</p>
                                                             </li>
                                                             <li class="icloud-features__item">
                                                                 <p class="icloud-features__name"><i class="icon-ok"></i>Location history</p>
@@ -536,7 +536,7 @@ description="Pumpic offers high-quality cell phone tracking software for a good 
                                                             </li>
                                                             <li class="icloud-features__item">
                                                                 <p class="icloud-features__name"><i class="icon-ok"></i>Historical data</p>
-                                                                <p class="icloud-features__info m0">View all the previouse data ever stored on a device.</p>
+                                                                <p class="icloud-features__info m0">View all the previous data ever stored on a device.</p>
                                                             </li>
                                                             <li class="icloud-features__item">
                                                                 <p class="icloud-features__name"><i class="icon-ok"></i>Location history</p>

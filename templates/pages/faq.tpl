@@ -41,7 +41,7 @@
                         <div class="row text-center">
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                 <h2>Contact Info</h2>
-                                <p class="text-justify">Feel free to visit out FAQ section below if you have basic questions about Pumpic installation, compatibility, billing process or technical issues.</p>
+                                <p class="text-justify">Feel free to visit our FAQ section below if you have basic questions about Pumpic installation, compatibility, billing process or technical issues.</p>
                                 <p class="text-justify">We are a team of talented designers and developers, who joined forces to introduce unique and user-friendly smartphone monitoring solutions. Pumpic app was created to help parents take care of their children and protect them by means of remote mobile tracking. The application runs on iOS and Android devices only.</p>
                                 <p class="text-justify">If you have any questions or suggestions, which will help improve our services, please feel free to contact us using the form below or via email.</p>
                                 <p>

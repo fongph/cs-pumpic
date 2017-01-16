@@ -17,6 +17,7 @@ class Phpmail extends Settings
     CONST MOBILEOPERATORS_START_ID = 1000000;
     CONST COMPATIBILITY_START_ID = 100000;
     CONST CONTACT_US_START_ID = 10000;
+    CONST EMPLOYEE_REQUEST_START_ID = 9999;
 
     CONST mail_support = 'support@pumpic.com';
     CONST mail_noreply = 'noreply@pumpic.com';
@@ -265,31 +266,44 @@ class Phpmail extends Settings
     /* Employee software mo Send mail*/
     public function _sendEmployeeRequest($params)
     {
-
         if(is_array($params) and count($params) > 0) {
 
             if(!$this -> validateEmail($params['email'])) {
                 $this -> _messange['error']['email'] = "Invalid email format";
             } elseif( isset($params['captcha']) and !$this ->_order-> validateCaptcha( $params['captcha'] ) ) {
                 $this -> _messange['error']['captcha'] = self::error_captcha;
+            } elseif(!isset($params['name']) or empty($params['name'])) {
+                $this -> _messange['error']['name'] = "The name field is empty";
+            } elseif(empty($params['type'])) {
+                $this -> _messange['error']['type'] = "The Question type field is empty";
             } else {
+                if ($opt_value = $this ->getOptionValue('employeeRequestUser') and $opt_value >= self::EMPLOYEE_REQUEST_START_ID) {
+                    $_uid = $opt_value + 1;
+                } else {
+                    $_uid = self::EMPLOYEE_REQUEST_START_ID;
+                }
 
-//                // sendMail Api
-                $_data = $this ->setData(self::mail_noreply, self::mail_support, 'FAQ_pumpic', $params['email'], array( //support@pumpic.com
-                   'name'           => $params['name'],
-                   'email'          => $params['email'],
-                   'question'       => strip_tags( htmlspecialchars( trim( $params['question'] ) ) ),
-                )) -> sendMAil();
+                $browserInfo = $this->getBrowser();
+               try {
+                $this->sender->sendSystemEmployeeRequest(self::mail_support, $params['name'], $params['email'], $params['type'], $params['description'], $_uid, $params['deviceCount'], $params['os-version'], $browserInfo);
+                $this->sender->sendEmployeeRequestUser($params['name'], $params['email'], $params['type'], $params['description'], $_uid, $params['deviceCount'], $params['os-version']);
 
-                if($_data === true) {
-                    $this -> _messange['success'] = self::FAQ_SUCCESS; // "Your email has been successfully sent";
-                } else
-                    $this -> _messange['error']['email'] = "Invalid email format"; // Invalid System Params
+                $eventManager = \EventManager\EventManager::getInstance();
+                $eventManager->emit('front-employee-request-completed', array(
+                    'email' => $params['email'],
+                    'name' => $params['name'],
+                    'seller' => 'pumpic.com'
+                ));
 
+                $this ->updateOptionValue('employeeRequestUser', $_uid);
 
+                $this -> _messange['success'] =  'Ticket #'. $_uid .' has been successfully sent.<br />
+                                                     Our support representative will contact you as soon as possible.';
+            } catch(\Exception $e) {
+                $this -> _messange['error'] = 'Something went wrong! Please contact support!';
             }
 
-
+            }
         }
 
         return $this -> _messange;

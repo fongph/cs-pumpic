@@ -4,9 +4,10 @@ $b_dir = dirname( $_inc ); // folder sites directory
 
 require_once $_inc.'/config.php';
 require_once $_inc.'/lib/Currency.php';
-require_once $_inc.'/lib/users/Order.php';
-require_once $_inc.'/functions.php';
+//require_once $_inc.'/lib/users/Order.php';
 require_once $_inc.'/di_function.php';
+require_once $_inc.'/functions.php';
+
 require_once $_inc.'/lib/class.phpmail.php';
 
 $obj = new includes\lib\users\Order;
@@ -142,7 +143,7 @@ if(isset($_SERVER['HTTP_X_REQUESTED_WITH']) && !empty($_SERVER['HTTP_X_REQUESTED
         $_result['error']['captcha'] = "Invalid CAPTCHA.";
 
     if (isset($_POST['type']) and empty($_POST['type']))
-        $_result['error']['type'] = "The field Question type is empty";
+        $_result['error']['type'] = "The Question type field is empty";
 
     if (isset($_POST['description']) and empty($_POST['description']))
         $_result['error']['description'] = "The Question field is empty";

@@ -4,6 +4,9 @@ Disallow: /login.html
 Disallow: /restore.html
 Disallow: /tos.txt
 Disallow: /toscpapp.txt
+Disallow: /tos-preview.txt
+Disallow: /tos-preview.html
+Disallow: /policy-preview.html
 
 Disallow: /wp-content
 Disallow: /store-mobile.html

@@ -848,7 +848,7 @@ description="Increase productivity, ensure legal safety and streamline workflow 
                                                       placeholder="Question*" aria-required="true"></textarea></div>
                     <div class="fatal-error"></div>
                     <p>Learn more from our <a class="go_block_scroll a-default"
-                                              href="http://pumpic.kolya:8900/faq.html#faq_frequently_asked_questions">FAQ</a>
+                                              href="http://pumpic.com/faq.html#faq_frequently_asked_questions">FAQ</a>
                         before submitting your question.</p>
                     <button class="btn-orange mod-center event-submit">Submit Ticket
                     </button>

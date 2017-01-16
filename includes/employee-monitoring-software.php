@@ -4,7 +4,6 @@ $b_dir = dirname( $_inc ); // folder sites directory
 
 require_once $_inc.'/config.php';
 require_once $_inc.'/lib/Currency.php';
-//require_once $_inc.'/lib/users/Order.php';
 require_once $_inc.'/functions.php';
 require_once $_inc.'/di_function.php';
 require_once $_inc.'/lib/class.phpmail.php';

@@ -348,7 +348,7 @@ description="Increase productivity, ensure legal safety and streamline workflow 
                                     <th>
                                         <div class="bulk-quote">
                                             <p class="bulk-quote__text">Need lower price for more devices?</p>
-                                            <a href="mailto:support@pumpic.com?subject=Estimate%20my%20price" class="btn btn-default ga-action-click" ga-label="employee monitoring software" ga-category="request quote button" ga-action="click">Request Bulk Quote</a>
+                                            <button class="btn btn-default ga-action-click" id="req_bulk_quote" ga-label="employee monitoring software" ga-category="request quote button" ga-action="click">Request Bulk Quote</button>
                                         </div>
                                         {*---ICLOUD---*}
                                         <div data-info-block="ios">
@@ -803,11 +803,11 @@ description="Increase productivity, ensure legal safety and streamline workflow 
 
 <div class="row">
     <div class="col-lg-10 col-lg-offset-1">
-        <div class="form">
+        <div class="form mt20">
         <form action="/employee-monitoring-software.html" class="form-faq" name="send-mail-contact-us" method="POST" novalidate="novalidate">
             <fieldset>
                 <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3"></div>
-                <legend class="uppercase" style="text-align: center">Send Your Questions to Us</legend>
+                <legend class="uppercase" id="contact-form" style="text-align: center">Send Your Questions to Us</legend>
                 <div class="col-lg-4 col-lg-offset-4 col-md-6 col-md-offset-3">
                     <span class="info"></span>
                     <div class="form-group"><input id="name" name="name" type="text" class="form-control text required"
@@ -927,10 +927,16 @@ hideJailbreak = true
         formBlck.find('form').remove();
         $('#demo-banner-button').attr('href','#subscription');
         $('.logo a').attr('href', '#');
-
         $('#type').on('change', function() {
             this.value === 'Bulk Quote Request' ? $('#number_of_devices').show() : $('#number_of_devices').hide();
         })
+
+        $('#req_bulk_quote').on('click', function () {
+            $('#type').val('Bulk Quote Request').change();
+            $('html, body').animate({
+                scrollTop: $("#contact-form").offset().top
+            }, 800);
+        });
     });
 </script>
 </body>

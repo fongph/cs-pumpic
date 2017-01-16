@@ -804,7 +804,7 @@ description="Increase productivity, ensure legal safety and streamline workflow 
 <div class="row m0">
     <div class="col-lg-10 col-lg-offset-1">
         <div class="form mt20">
-        <form action="/employee-monitoring-software.html" class="form-faq" name="send-mail-contact-us" method="POST" novalidate="novalidate">
+        <form action="/employee-monitoring-software.html" class="form-employee" name="send-mail-contact-us" method="POST" novalidate="novalidate">
             <fieldset>
                 <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3"></div>
                 <legend class="uppercase" id="contact-form" style="text-align: center">Send Your Questions to Us</legend>
@@ -836,9 +836,9 @@ description="Increase productivity, ensure legal safety and streamline workflow 
                         </select>
                     </div>
                     <div class="form-group form-box-captcha">
-                        <div class="box-captcha">
-                            <img src="/captcha.html?width=420&amp;height=44" id="img-captcha" style="width: 420px;">
-                            <span class="update-captcha" attr-width="427" attr-height="44"></span>
+                        <div class="box-captcha" style="min-width:100%;width: 100%;">
+                            <img src="/captcha.html?width=420&amp;height=44" id="img-captcha">
+                            <span class="update-captcha" attr-width="420" attr-height="44"></span>
                         </div>
                     </div>
                     <div class="form-group"><input id="captcha" type="text" name="captcha" autocomplete="off"
@@ -850,7 +850,7 @@ description="Increase productivity, ensure legal safety and streamline workflow 
                     <p>Learn more from our <a class="go_block_scroll a-default"
                                               href="http://pumpic.com/faq.html#faq_frequently_asked_questions">FAQ</a>
                         before submitting your question.</p>
-                    <button class="btn-orange mod-center event-submit">Submit Ticket
+                    <button class="btn-orange mod-center event-submit" style="padding: 13px 20px;">Submit Ticket
                     </button>
                 </div>
             </fieldset>

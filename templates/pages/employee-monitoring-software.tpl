@@ -799,6 +799,68 @@ description="Increase productivity, ensure legal safety and streamline workflow 
 </div>
 
 
+{* CONTACT-FORM*}
+
+<div class="row">
+    <div class="col-lg-10 col-lg-offset-1">
+        <div class="form">
+        <form action="/employee-monitoring-software.html" class="form-faq" name="send-mail-contact-us" method="POST" novalidate="novalidate">
+            <fieldset>
+                <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3"></div>
+                <legend class="uppercase" style="text-align: center">Send Your Questions to Us</legend>
+                <div class="col-lg-4 col-lg-offset-4 col-md-6 col-md-offset-3">
+                    <span class="info"></span>
+                    <div class="form-group"><input id="name" name="name" type="text" class="form-control text required"
+                                                   placeholder="Name*" value="" aria-required="true"></div>
+                    <div class="form-group"><input id="email" name="email" type="email"
+                                                   class="form-control text required" placeholder="Email*" value=""
+                                                   aria-required="true"></div>
+                    <div class="form-group">
+                        <select id="type" class="select" title="Question type*" name="type" style="display: none;">
+                            <option selected="" data-hidden="true" value="0">Question type*</option>
+                            <option value="Bulk Quote Request">Bulk Quote Request</option>
+                            <option value="General">General question</option>
+                            <option value="Technical">Technical question</option>
+                            <option value="Billing">Billing question</option>
+                        </select>
+                        <input id="wos" name="wos" type="hidden" class="form-control text required" placeholder="Wos*" value="Billing" aria-required="true" aria-invalid="false">
+                    </div>
+                    <div class="form-group" id="number_of_devices" style="display: none;">
+                        <input type="number" class="form-control number" name="deviceCount" id="deviceCount" placeholder="Number of devices (optional)"/>
+                    </div>
+                    <div class="form-group">
+                        <select id="os-version" class="select" title="Question type*" name="os-version" style="display: none;">
+                            <option selected="" data-hidden="true" value="0">OS Version (optional)</option>
+                            <option value="android">Android</option>
+                            <option value="iOS">iOS</option>
+                        </select>
+                    </div>
+                    <div class="form-group form-box-captcha">
+                        <div class="box-captcha">
+                            <img src="/captcha.html?width=420&amp;height=44" id="img-captcha" style="width: 427px;">
+                            <span class="update-captcha" attr-width="427" attr-height="44"></span>
+                        </div>
+                    </div>
+                    <div class="form-group"><input id="captcha" type="text" name="captcha" autocomplete="off"
+                                                   class="form-control text required captcha"
+                                                   placeholder="Enter verification code" aria-required="true"></div>
+                    <div class="form-group"><textarea id="description" rows="10" name="description" class="required"
+                                                      placeholder="Question*" aria-required="true"></textarea></div>
+                    <div class="fatal-error"></div>
+                    <p>Learn more from our <a class="go_block_scroll a-default"
+                                              href="http://pumpic.kolya:8900/faq.html#faq_frequently_asked_questions">FAQ</a>
+                        before submitting your question.</p>
+                    <button class="btn-orange mod-center event-submit">Submit Ticket
+                    </button>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+    </div>
+</div>
+
+{* CONTACT-FORM*}
+
 {include file='../includes/content/banners/index.tpl'
 hideJailbreak = true
 }
@@ -865,6 +927,10 @@ hideJailbreak = true
         formBlck.find('form').remove();
         $('#demo-banner-button').attr('href','#subscription');
         $('.logo a').attr('href', '#');
+
+        $('#type').on('change', function() {
+            this.value === 'Bulk Quote Request' ? $('#number_of_devices').show() : $('#number_of_devices').hide();
+        })
     });
 </script>
 </body>

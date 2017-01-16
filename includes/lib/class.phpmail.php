@@ -262,6 +262,40 @@ class Phpmail extends Settings
 
     }
 
+    /* Employee software mo Send mail*/
+    public function _sendEmployeeRequest($params)
+    {
+
+        if(is_array($params) and count($params) > 0) {
+
+            if(!$this -> validateEmail($params['email'])) {
+                $this -> _messange['error']['email'] = "Invalid email format";
+            } elseif( isset($params['captcha']) and !$this ->_order-> validateCaptcha( $params['captcha'] ) ) {
+                $this -> _messange['error']['captcha'] = self::error_captcha;
+            } else {
+
+//                // sendMail Api
+                $_data = $this ->setData(self::mail_noreply, self::mail_support, 'FAQ_pumpic', $params['email'], array( //support@pumpic.com
+                   'name'           => $params['name'],
+                   'email'          => $params['email'],
+                   'question'       => strip_tags( htmlspecialchars( trim( $params['question'] ) ) ),
+                )) -> sendMAil();
+
+                if($_data === true) {
+                    $this -> _messange['success'] = self::FAQ_SUCCESS; // "Your email has been successfully sent";
+                } else
+                    $this -> _messange['error']['email'] = "Invalid email format"; // Invalid System Params
+
+
+            }
+
+
+        }
+
+        return $this -> _messange;
+
+    }
+
 
     /* Faq Send mail
      * $params (array): GET or POST.

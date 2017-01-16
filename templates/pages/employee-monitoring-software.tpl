@@ -823,7 +823,7 @@ description="Increase productivity, ensure legal safety and streamline workflow 
                             <option value="Technical">Technical question</option>
                             <option value="Billing">Billing question</option>
                         </select>
-                        <input id="wos" name="wos" type="hidden" class="form-control text required" placeholder="Wos*" value="Billing" aria-required="true" aria-invalid="false">
+                        <input id="wos" name="wos" type="hidden" class="form-control text required" placeholder="Wos*" value="" aria-required="true" aria-invalid="false">
                     </div>
                     <div class="form-group" id="number_of_devices" style="display: none;">
                         <input type="number" class="form-control number" min="0" name="deviceCount" id="deviceCount" placeholder="Number of devices (optional)"/>

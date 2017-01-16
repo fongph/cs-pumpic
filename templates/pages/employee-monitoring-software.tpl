@@ -801,7 +801,7 @@ description="Increase productivity, ensure legal safety and streamline workflow 
 
 {* CONTACT-FORM*}
 
-<div class="row">
+<div class="row m0">
     <div class="col-lg-10 col-lg-offset-1">
         <div class="form mt20">
         <form action="/employee-monitoring-software.html" class="form-faq" name="send-mail-contact-us" method="POST" novalidate="novalidate">
@@ -826,7 +826,7 @@ description="Increase productivity, ensure legal safety and streamline workflow 
                         <input id="wos" name="wos" type="hidden" class="form-control text required" placeholder="Wos*" value="Billing" aria-required="true" aria-invalid="false">
                     </div>
                     <div class="form-group" id="number_of_devices" style="display: none;">
-                        <input type="number" class="form-control number" name="deviceCount" id="deviceCount" placeholder="Number of devices (optional)"/>
+                        <input type="number" class="form-control number" min="0" name="deviceCount" id="deviceCount" placeholder="Number of devices (optional)"/>
                     </div>
                     <div class="form-group">
                         <select id="os-version" class="select" title="Question type*" name="os-version" style="display: none;">
@@ -837,7 +837,7 @@ description="Increase productivity, ensure legal safety and streamline workflow 
                     </div>
                     <div class="form-group form-box-captcha">
                         <div class="box-captcha">
-                            <img src="/captcha.html?width=420&amp;height=44" id="img-captcha" style="width: 427px;">
+                            <img src="/captcha.html?width=420&amp;height=44" id="img-captcha" style="width: 420px;">
                             <span class="update-captcha" attr-width="427" attr-height="44"></span>
                         </div>
                     </div>

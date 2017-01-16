@@ -158,6 +158,7 @@ if(isset($_SERVER['HTTP_X_REQUESTED_WITH']) && !empty($_SERVER['HTTP_X_REQUESTED
 
     // init output params!
     $smarty->assign('getOut', $_result);
-}
 
-$smarty->display($b_dir. '/templates/pages/employee-monitoring-software.tpl');
+    $smarty->display($b_dir. '/templates/pages/employee-monitoring-software.tpl');
+
+}

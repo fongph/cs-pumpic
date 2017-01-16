@@ -1685,6 +1685,10 @@ $(document).ready(function () {
     });
     
     if ($('form.form-employee').length) {
+        $('form.form-employee').submit(function (e) {
+            console.log('prevent')
+            e.preventDefault();
+        })
         $('form.form-employee').validate({
             onfocusout: false,
             onkeyup: false,
@@ -1761,6 +1765,7 @@ $(document).ready(function () {
             
             
                 var _response = getAjaxForm('/employee-monitoring-software.html', _params);
+                console.log(_response)
                 if (_response.result) {
                 
                     var _res = _response.result;
@@ -1790,9 +1795,9 @@ $(document).ready(function () {
                     
                         // scrollTo block info
                         var target_top = $('form.form-employee span.info').offset().top;
-                        // $('html, body').animate({
-                        //     scrollTop: Math.ceil((target_top * $(window).outerHeight(true)) / $('html, body').height())
-                        // }, 'linear');
+                        $('html, body').animate({
+                            scrollTop: Math.ceil((target_top * $(window).outerHeight(true)) / $('html, body').height())
+                        }, 'linear');
                     
                         // google analitycs
                         ga('send', 'event', 'form', 'submit', 'contact-request-success');

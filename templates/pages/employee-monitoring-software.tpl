@@ -928,7 +928,9 @@ hideJailbreak = true
         $('#demo-banner-button').attr('href','#subscription');
         $('.logo a').attr('href', '#');
         $('#type').on('change', function() {
-            this.value === 'Bulk Quote Request' ? $('#number_of_devices').show() : $('#number_of_devices').hide();
+            var val = this.value
+            $('#wos').val(val)
+            val === 'Bulk Quote Request' ? $('#number_of_devices').show() : $('#number_of_devices').hide();
         })
 
         $('#req_bulk_quote').on('click', function () {

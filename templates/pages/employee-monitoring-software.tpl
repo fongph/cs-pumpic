@@ -804,7 +804,7 @@ description="Increase productivity, ensure legal safety and streamline workflow 
 <div class="row m0">
     <div class="col-lg-10 col-lg-offset-1">
         <div class="form mt20">
-        <form action="/employee-monitoring-software.html" class="form-employee" name="send-mail-employee-request" method="POST" novalidate="novalidate">
+        <form action="/employee-monitoring-software.html" class="form-faq" name="send-mail-contact-us" method="POST" novalidate="novalidate">
             <fieldset>
                 <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3"></div>
                 <legend class="uppercase" id="contact-form" style="text-align: center">Send Your Questions to Us</legend>

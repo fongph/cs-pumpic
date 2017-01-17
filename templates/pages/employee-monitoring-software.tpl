@@ -830,7 +830,7 @@ description="Increase productivity, ensure legal safety and streamline workflow 
                     </div>
                     <div class="form-group">
                         <select id="os-version" class="select" title="Question type*" name="os-version" style="display: none;">
-                            <option selected="" data-hidden="true" value="0">OS Version (optional)</option>
+                            <option selected="" data-hidden="true" value="">OS Version (optional)</option>
                             <option value="android">Android</option>
                             <option value="iOS">iOS</option>
                         </select>

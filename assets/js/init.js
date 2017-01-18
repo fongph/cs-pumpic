@@ -1683,6 +1683,140 @@ $(document).ready(function () {
             $form.trigger("reset");
         }
     });
+    
+    if ($('form.form-employee').length) {
+        $('form.form-employee').submit(function (e) {
+            e.preventDefault();
+        })
+        $('form.form-employee').validate({
+            onfocusout: false,
+            onkeyup: false,
+            onclick: true,
+            onsubmit: true,
+            focusInvalid: false,
+            focusCleanup: false,
+            debug: false,
+            ignore: "not:hidden",
+            name: {
+                required: true
+            },
+            description: {
+                required: true
+            },
+            wos: {
+                required: true
+            },
+            email: {
+                required: true,
+                email: true
+            },
+            captcha: {
+                required: true,
+            },
+            messages: {
+                captcha: "Invalid CAPTCHA.", // The CAPTCHA field is empty.
+                name: "The Name field is empty",
+                description: 'The Question field is empty',
+                wos: 'The Question type field is empty',
+                email: {
+                    required: "The Email field is empty",
+                    email: "Invalid email format"
+                },
+            },
+            errorClass: "invalid",
+            validClass: "success",
+            invalidHandler: function (event, validator) {
+                if ($('form.form-employee span.info').length)
+                    $('form.form-employee span.info').html(" ").hide();
+            
+                if ($('form.form-employee .fatal-error').length)
+                    $('form.form-employee .fatal-error').html(" ").hide();
+            
+                if ($('form.form-employee label.error, form.form-employee label.invalid').length)
+                    $('form.form-employee label.error, form.form-employee label.invalid').remove();
+            },
+            // управление ошибками
+            showErrors: function (errorMap, errorList) {
+                var _form = $('form.form-employee');
+                var msg = null;
+            
+                $.each(errorList, function (key, value) {
+                    if (value.element) {
+                        var name = _form.find(value.element).attr('name');
+                        // console.log( name );
+                        _form.find(value.element).after('<label id="' + name + '-error" for="' + name + '" class="invalid">' + value.message + '</label>');
+                        _form.find(value.element).next().show();
+                    }
+                });
+            },
+            submitHandler: function (form) {
+                if ($('form.form-employee span.info').length)
+                    $('form.form-employee span.info').html(" ").hide();
+            
+                if ($('form.form-employee .fatal-error').length)
+                    $('form.form-employee .fatal-error').html(" ").hide();
+            
+                if ($('form.form-employee label.error, form.form-employee label.invalid').length)
+                    $('form.form-employee label.error, form.form-employee label.invalid').remove();
+            
+                var $form = $(form);
+                var _params = parseQuery($form.serializeArray());
+            
+            
+                var _response = getAjaxForm('/employee-monitoring-software.html', _params);
+                if (_response.result) {
+                
+                    var _res = _response.result;
+                    if (_res.error) {
+                    
+                        if (typeof _res.error === 'object') {
+                            $.each(_res.error, function (name, text) {
+                                var _obj = $form.find('input[name="' + name + '"]');
+                                if (_obj.length) {
+                                    if (_obj.next('label').length)
+                                        _obj.next().html(text).show();
+                                    else
+                                        $('<label id="' + name + '-error" for="' + name + '" class="invalid">' + text + '</label>').insertAfter(_obj);
+                                }
+                            });
+                        } else {
+                            $('form.form-employee .fatal-error').html(_res.error);
+                        }
+                    
+                        reloadCaptcha($form.find('.box-captcha > img'), true); // reload captcha
+                        return false;
+                    } else if (_res.success) {
+                    
+                        $('form.form-employee span.info')
+                            .html(_res.success)
+                            .css({'display': 'inline-block'});
+                    
+                        // scrollTo block info
+                        var target_top = $('form.form-employee').offset().top;
+                        $('html, body').animate({
+                            scrollTop: target_top
+                        }, 'linear');
+                    
+                        // google analitycs
+                        ga('send', 'event', 'form', 'submit', 'contact-request-success');
+                    
+                    } else {
+                        $('form.form-employee .fatal-error').html('Your email was not sent');
+                        reloadCaptcha($form.find('.box-captcha > img'), true); // reload captcha
+                        return false;
+                    }
+                
+                } else {
+                    $('form.form-employee .fatal-error').html('Your email was not sent');
+                    reloadCaptcha($form.find('.box-captcha > img'), true); // reload captcha
+                    return false;
+                }
+            
+                reloadCaptcha($form.find('.box-captcha > img')); // reload captcha
+                $form.trigger("reset");
+            }
+        });
+    }
 
 
     // validate form

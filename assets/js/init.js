@@ -334,7 +334,7 @@ function hashchange_AfterInit() {
             $registration = $_popUp.find('#box-status-registration'),
             $trial_registration = $_popUp.find('#box-status-free-trial-registration');
     // init bPopUp
-    if (isset(_data['popUp']) && _hasUser == 'true') {
+    if (isset(_data['popUp'])) {
 
         if (_data['popUp'] == "auth") { // && !getCookie('popUp')
             // google analitycs

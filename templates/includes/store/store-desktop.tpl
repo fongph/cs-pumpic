@@ -332,4 +332,4 @@
             </div>
         </div>
     </div>
-    {*<script src='/public/javascripts/frontend.min.js'></script>*}
+    {*<script src='/public/javascripts/frontend-old.min.js'></script>*}

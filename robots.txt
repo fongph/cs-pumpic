@@ -1,7 +1,6 @@
 User-agent:*
 Disallow: */tag/*
 Disallow: /login.html
-Disallow: /restore.html
 Disallow: /tos.txt
 Disallow: /toscpapp.txt
 

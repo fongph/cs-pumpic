@@ -140,6 +140,27 @@
 
                                     </div>
                                 </div>
+                            {elseif isset($lang) && $lang == "fra"}
+
+                                <div class="table-header">
+                                    <section><span class="title"><i class="fa fa-android fa-lg"></i> Android</span></section>
+                                </div> <!-- .table-header -->
+
+                                <div class="table-body">
+                                    <div class="text-center">
+                                        {if isset($androidText)}<p>{$androidText}</p>{else}<p><b>Un rootage</b> est requis pour utiliser certaines extensions.</p>{/if}
+                                    </div>
+                                    <div>
+
+                                        <div class="div-table">
+                                            <div class="div-table-row">
+                                                <div class="div-table-column"><span>Smartphones et tablettes:</span></div>
+                                                <div class="div-table-column"><span class="color-green">Android {$ver_android_bot} - {$ver_android_up}</span></div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
 
                             {else}
 
@@ -216,6 +237,27 @@
                                         <div class="div-table">
                                             <div class="div-table-row">
                                                 <div class="div-table-column"><span>iPhones / iPads / iPods Touch:</span></div>
+                                                <div class="div-table-column"><span class="color-green">{if isset($versionIOS)}{$versionIOS}{else}iOS {$ver_ios_bot} - {$ver_jailbreak_up}{/if}</span></div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            {elseif isset($lang) && $lang == "fra"}
+
+                                <div class="table-header">
+                                    <section><span class="title"> <i class="fa fa-unlock-alt fa-lg"></i> iOS (jailbreak)</span></section>
+                                </div> <!-- .table-header -->
+
+                                <div class="table-body">
+                                    <div class="text-center">
+                                        {if isset($iosText)}<p>{$iosText}</p>{else}<p><b>Un jailbreak d'iOS</b> est nécessaire avant l'installation.</p>{/if}
+                                    </div>
+                                    <div>
+
+                                        <div class="div-table">
+                                            <div class="div-table-row">
+                                                <div class="div-table-column"><span>iPhone / iPad / iPod Touch:</span></div>
                                                 <div class="div-table-column"><span class="color-green">{if isset($versionIOS)}{$versionIOS}{else}iOS {$ver_ios_bot} - {$ver_jailbreak_up}{/if}</span></div>
                                             </div>
                                         </div>

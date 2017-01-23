@@ -450,7 +450,7 @@
                                 <div class="link_circle_italic2">
                                     <div class="style-links2">
                                         <span class="circle_ico2"></span>
-                                        <label>Certaines options de surveillance requiert  le rootage d'appareils Android. Le rootage peut être effectué à n'importe quel moment après l'installation. Veuillez lire le tableau ci-dessus et envisager chaque option avec précautions. Veuillez noter que l'application Pumpic est visible sur l'appareil visé puisqu'elle n'a été créée ni en tant que Logiciel Espion Android ni en tant qu'Application Espion Iphone. Cependant, l'application est protégée par un code secret et ne peut être supprimée ou modifiée sans votre permission.</label>
+                                        <label>Certaines options de surveillance requiert  le rootage d'appareils Android. Le rootage peut être effectué à n'importe quel moment après l'installation. Veuillez lire le tableau ci-dessus et envisager chaque option avec précautions. Veuillez noter que l'application Pumpic est visible sur l'appareil visé puisqu'elle n'a été créée en tant que Logiciel Espion Android. Cependant, l'application est protégée par un code secret et ne peut être supprimée ou modifiée sans votre permission.</label>
                                     </div>
                                 </div>
 

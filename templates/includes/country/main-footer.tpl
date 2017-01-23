@@ -46,6 +46,29 @@
                         </div>
 
                 </div>
+            {elseif isset($lang) && $lang == "fra"}
+                <div class="row">
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-lg-offset-1 col-md-offset-1 col-sm-offset-1">
+
+                            <h3>Avertissement</h3>
+                            <p>Pumpic est une application de contrôle parental unique pour téléphones portables et tablettes Android et iOS. Uniquement créé pour un usage éthique et légal; nous n'approuvons d'aucune manière le fait de l'utiliser pour espionner un téléphone portable. Pour installer l'application de surveillance, toute personne devra s'assurer qu'il ou elle est propriétaire de l'appareil avant l'installation, ou bien qu'il ou elle a obtenu la permission du propriétaire de traquer son appareil.</p>
+
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-lg-offset-1 col-md-offset-1 col-sm-offset-1">
+                            <div>
+                                <h3>À propos de la Compagnie Pumpic</h3>
+                                <p>Pumpic est un développeur de logiciels de surveillance mobile conçus pour le suivi à distance, le contrôle parental et la sécurité des enfants. Cette application protège vos informations personnelles et assure votre bonheur familial. Pumpic garde vos yeux ouvert.</p>
+                            </div>
+
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-lg-offset-1 col-md-offset-1 col-sm-offset-1">
+                            <div>
+                                <h3>Contacts</h3>
+                                <p>Assistance clientèle<br> (Anglophone uniquement): <br /><img src="{$img}/country/support-email.png" width="169px" height="17px" /></p>
+                            </div>
+                        </div>
+
+                </div>
             {else}
                 <div class="row">
                         <div class="col-lg-3 col-md-3 col-sm-3 col-lg-offset-1 col-md-offset-1 col-sm-offset-1">
@@ -95,7 +118,7 @@
         <div class="footer-text text-center">
             &copy;
             {year_now}
-            Pumpic — {if isset($lang) && $lang == "bra"}Todos os Direitos Reservados.{elseif isset($lang) && $lang == "de"}Alle Rechte Vorbehalten.{else}All Rights Reserved.{/if}
+            Pumpic — {if isset($lang) && $lang == "bra"}Todos os Direitos Reservados.{elseif isset($lang) && $lang == "de"}Alle Rechte Vorbehalten.{elseif $lang == "fra"}Tous droits réservés.{else}All Rights Reserved.{/if}
         </div>
     </div>
 </div>

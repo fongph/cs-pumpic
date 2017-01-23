@@ -26,6 +26,7 @@
                                     {if isset($language)}
                                         <div id="country-label">
                                             {if $language == "de"}<img src="{$img}/country/icon-available-germany.png" />{/if}
+                                            {if $language == "fra"}<img src="{$img}/country/pumpic-in-france.png" alt="Pumpic maintenant disponible en France" title="Logiciel de contrôle parental pour smartphones et tablettes"/>{/if}
                                             {if $language == "bra"}<img src="{$img}/country/icon-available-brazil.png" />{/if}
                                         </div>
                                     {/if}

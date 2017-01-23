@@ -49,7 +49,8 @@
                                             {if isset($lang) && $lang == "de"}
                                                 <label class="left">Control Panel auf Englisch</label><i class="lang-icon-{$language} right"></i>
                                             {elseif isset($lang) && $lang == "bra"}
-                                                <label class="left">Painel de Controle em Inglês</label><i class="lang-icon-{$language} right"></i>
+                                                <label class="left">Painel de Controle em Inglês</label><i class="lang-icon-{$language} right"></i>                                                     {elseif isset($lang) && $lang == "fra"}
+                                                <label class="left">Panneau de Contrôle en Anglais</label><i class="lang-icon-{$language} right"></i>
                                             {else}
                                                 <label class="left">Control Panel in English</label><i class="lang-icon-{$language} right"></i>
                                             {/if}    

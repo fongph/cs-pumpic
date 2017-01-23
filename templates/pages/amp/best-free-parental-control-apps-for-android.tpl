@@ -496,7 +496,7 @@
     <amp-analytics type="googleanalytics" id="analytics">
     <script type="application/json">
         {
-            "vars": {"account": "UA-56492507-1"{/literal}{if ''|hasUser}, "userId": "{getUserID}"{/if}{literal}},
+            "vars": {"account": "UA-56492507-1"{/literal}{literal}},
             "triggers": {
                 "trackPageview": {
                     "on": "visible",

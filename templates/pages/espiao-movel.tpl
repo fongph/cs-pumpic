@@ -65,7 +65,9 @@
             description = "Rastreia ligações, mensagens de texto, localizações e atividades online.<br />Mantenha seus olhos abertos. Agora disponível no Brasil."
             promoBuyBlock = "no"
             planPackageBuy = "yes"
-
+            planPackageBuyType = "link"
+            planPackageBuyClass = "anchor-menu-fly"
+            planPackageBuyUrl = "#store"
             block_video = "no"
             block_video_src = ""
 
@@ -126,7 +128,7 @@
         }
 
         <!-- BLOCK PRICING -->
-        <div class="dark c-f-border-top box-price-premium-v2">
+        <div class="dark c-f-border-top box-price-premium-v2" id="store">
             <div class="container">
 
                 <div class="row">
@@ -266,7 +268,7 @@
         }
         
         <!-- BLOCK PRICING -->
-        <div id="store" class="dark c-f-border-top box-price-premium-v1">
+        <div class="dark c-f-border-top box-price-premium-v1">
             <div class="container">
                 
                 <div class="row">

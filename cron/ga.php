@@ -55,7 +55,8 @@
         const GA_TYPE_REFERRAL  = 'referral';
         const GA_TYPE_ADWORDS   = 'paid search';
         const GA_TYPE_MEDIA     = 'media';
-        const GA_TYPE_AFFILIATE     = 'affiliate';
+        const GA_TYPE_AFFILIATE = 'affiliate';
+        const GA_TYPE_SYSTEM_EMAIL = 'system email';
         
         const API_TYPE = 'service';
         const NUMBER_ITEM = 100;
@@ -264,12 +265,17 @@
                         && preg_match('/^referral$/is', $source['rows']['ga:medium'][0])) {
                     $ga_type = self::GA_TYPE_REFERRAL;
                 }
-                //email
+                //system email
                 else if(strlen($source['rows']['ga:source'][0]) > 0 
+                        && preg_match('/^system$/is', $source['rows']['ga:medium'][0])) {
+                    $ga_type = self::GA_TYPE_SYSTEM_EMAIL;
+                }
+                //email
+                else if(strlen($source['rows']['ga:source'][0]) > 0
                         && preg_match('/^email$/is', $source['rows']['ga:medium'][0])) {
                     $ga_type = self::GA_TYPE_EMAIL;
                 }
-                //email
+                //affiliate
                 else if(strlen($source['rows']['ga:source'][0]) > 0 
                         && preg_match('/^affiliate$/is', $source['rows']['ga:medium'][0])) {
                     $ga_type = self::GA_TYPE_AFFILIATE;

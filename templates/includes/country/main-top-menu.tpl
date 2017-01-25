@@ -17,13 +17,13 @@
                         
                     <div class='box-cp pull-right mt3'>   
                         {if isset($lang) && $lang == "bra"}
-                            <a href="#store" class="btn btn-sm btn-red visible-lg cp-login anchor-menu-fly"> Comprar Agora</a>
+                            <a href="#store" ga-category="store link menu" ga-action="click" class="btn btn-sm btn-red visible-lg cp-login anchor-menu-fly ga-action-click" ga-label="Comprar Agora"> Comprar Agora</a>
                         {elseif isset($lang) && $lang == "de"}
-                            <a href="#store" class="btn btn-sm btn-red visible-lg cp-login anchor-menu-fly"> Jetzt kaufen</a>
+                            <a href="#store" ga-category="store link menu" ga-action="click" class="btn btn-sm btn-red visible-lg cp-login anchor-menu-fly ga-action-click" ga-label="Jetzt kaufen"> Jetzt kaufen</a>
                         {elseif isset($lang) && $lang == "fra"}
-                            <a href="#store" class="btn btn-sm btn-red visible-lg cp-login anchor-menu-fly"> Achetez Maintenant!</a>
+                            <a href="#store" ga-category="store link menu" ga-action="click" class="btn btn-sm btn-red visible-lg cp-login anchor-menu-fly ga-action-click" ga-label="Achetez Maintenant"> Achetez Maintenant!</a>
                         {else}
-                            <a href="#store" class="btn btn-sm btn-red visible-lg cp-login anchor-menu-fly"> Buy Now</a>
+                            <a href="#store" ga-category="store link menu" ga-action="click" class="btn btn-sm btn-red visible-lg cp-login anchor-menu-fly ga-action-click" ga-label="Buy Now"> Buy Now</a>
                         {/if}
                     </div>    
                         
@@ -89,12 +89,13 @@
                             <li>
                                 
                                 {if isset($lang) && $lang == "bra"}
-                                    <a href="#store" class="btn btn-sm btn-red hidden-lg cp-login anchor-menu-fly"> Comprar Agora</a>
+                                    <a href="#store" ga-category="store link menu" ga-action="click" class="btn btn-sm btn-red hidden-lg cp-login anchor-menu-fly ga-action-click" ga-label="Comprar Agora"> Comprar Agora</a>
                                 {elseif isset($lang) && $lang == "de"}
-                                    <a href="#store" class="btn btn-sm btn-red hidden-lg cp-login anchor-menu-fly"> Jetzt kaufen</a>                                                        {elseif isset($lang) && $lang == "fra"}
-                                    <a href="#store" class="btn btn-sm btn-red hidden-lg cp-login anchor-menu-fly"> Achetez Maintenant!</a>
+                                    <a href="#store" ga-category="store link menu" ga-action="click" class="btn btn-sm btn-red hidden-lg cp-login anchor-menu-fly ga-action-click" ga-label="Jetzt kaufen"> Jetzt kaufen</a>
+                                {elseif isset($lang) && $lang == "fra"}
+                                    <a href="#store" ga-category="store link menu" ga-action="click" class="btn btn-sm btn-red hidden-lg cp-login anchor-menu-fly ga-action-click" ga-label="Achetez Maintenant"> Achetez Maintenant!</a>
                                 {else}
-                                    <a href="#store" class="btn btn-sm btn-red hidden-lg cp-login anchor-menu-fly"> Buy Now</a>
+                                    <a href="#store" ga-category="store link menu" ga-action="click" class="btn btn-sm btn-red hidden-lg cp-login anchor-menu-fly ga-action-click" ga-label="Buy Now"> Buy Now</a>
                                 {/if}
                                 
                             </li>

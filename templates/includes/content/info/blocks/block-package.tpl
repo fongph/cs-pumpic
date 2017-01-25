@@ -30,24 +30,24 @@
                 {if isset($language) && $language == "bra"}
                     <a class="btn btn-default btn-red-link ga-action-click {if isset($planPackageBuyClass)}{$planPackageBuyClass}{/if}"
                        ga-action ="click"
-                       ga-category="premium"
+                       ga-category="store link header"
                        ga-label="Comprar Agora"
                        href='{if isset($planPackageBuyUrl) && $planPackageBuyUrl != ""}{$planPackageBuyUrl}{else}/store.html{/if}'>Comprar Agora</a>
                     {elseif isset($language) && $language == "de"}
                     <a class="btn btn-default btn-red-link ga-action-click {if isset($planPackageBuyClass)}{$planPackageBuyClass}{/if}"
                        ga-action ="click"
-                       ga-category="premium"
+                       ga-category="store link header"
                        ga-label="Jetzt kaufen"
                        href='{if isset($planPackageBuyUrl) && $planPackageBuyUrl != ""}{$planPackageBuyUrl}{else}/store.html{/if}'>Jetzt kaufen</a>                    {elseif isset($language) && $language == "fra"}
                     <a class="btn btn-default btn-red-link ga-action-click {if isset($planPackageBuyClass)}{$planPackageBuyClass}{/if}"
                        ga-action ="click"
-                       ga-category="premium"
+                       ga-category="store link header"
                        ga-label="Achetez Maintenant"
                        href='{if isset($planPackageBuyUrl) && $planPackageBuyUrl != ""}{$planPackageBuyUrl}{else}/store.html{/if}'>Achetez Maintenant!</a>
                     {else}
                 <a class="btn btn-default btn-red-link ga-action-click {if isset($planPackageBuyClass)}{$planPackageBuyClass}{/if}"
                    ga-action ="click"
-                   ga-category="premium"
+                   ga-category="store link header"
                    ga-label="Learn More"
                    href='{if isset($planPackageBuyUrl) && $planPackageBuyUrl != ""}{$planPackageBuyUrl}{else}/store.html{/if}'>Learn More{*Start Now!*}</a>
                 {/if}
@@ -60,7 +60,7 @@
                         name="price[submit]"
 
                         ga-action ="click"
-                        ga-category="premium"
+                        ga-category="store link header"
                         ga-label="Learn More"
                         > {if isset($language) && $language == "bra"}Comprar Agora{elseif isset($language) && $language == "de"}Jetzt kaufen{elseif isset($language) && $language == "fra"}Achetez Maintenant!{else}Learn More{/if}{*Start Now!*}</button>
             </form>

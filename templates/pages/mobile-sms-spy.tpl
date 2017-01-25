@@ -1,36 +1,36 @@
-{include file='../includes/main/main-header.tpl' 
+{include file='../includes/main/main-header.tpl'
     title="SMS Monitoring for Kids Protection, SMS Tracking App - Pumpic"
     description="SMS communication is more popular these days than making calls. That’s why it is reasonable for parents to use a text message spy app to monitor their kids’ activity."
-}    
-    
+}
+
 <body>
     <!-- BLOCK GTM -->
     {include file='../includes/main/main-after-body.tpl'}
     <!-- END BLOCK GTM -->
-    
+
     <!-- FLY BLOCKS -->
     {include file='../includes/content/fly/fly_blocks.tpl'}
     <!-- END FLY BLOCKS-->
-    
+
     <div class="wrapper mobile_sms_spy">
-	
+
 	<!-- TOP MENU -->
 	{include file='../includes/main/main-top-menu.tpl'
             cache_id = "includes_main_main-top-menu"
             nocache
         }
-        
 
-        
+
+
         {*
             Template: PHONE
             Переменные:
-                style (text): стиль блока Phone (blue|black). * - blue 
+                style (text): стиль блока Phone (blue|black). * - blue
         *}
         {include file='../includes/content/phone/block-phone.tpl'
-                 style="blue"   
+                 style="blue"
         }
-        
+
     <!-- CONTENT -->
          {include file='../includes/content/info/info-promo.tpl'
             imgUrl = "landings/bg_mobile_sms_spy_1.png"
@@ -43,14 +43,14 @@
             description = "Follow your kids’ text message communication.<br />Monitor text content of SMS, MMS, and iMessages."
             promoBuyBlock = "no"
             listText = "monitor SMS messages sent and received|control contacts, block misgiving senders|prevent children from bullies and online predators"
-            planPackageBuy = "yes"   
+            planPackageBuy = "yes"
             block_video = "yes"
             block_video_src = "https://www.youtube.com/embed/Atg0CbaytAY"
          }
         {* header_banners/bg_mobile_sms_spy.png *}
         {* ?rel=0&wmode=transparent&fs=0&autoplay=1&modestbranding=1&autohide=1 *}
-        {*listText = "monitor SMS messages sent and received|control contacts, block misgiving senders|prevent children from bullies and online predators"*}  
-        
+        {*listText = "monitor SMS messages sent and received|control contacts, block misgiving senders|prevent children from bullies and online predators"*}
+
         {include file='../includes/content/plans.tpl'}
 
         {* Template: FLY BUTTONS
@@ -63,20 +63,20 @@
 
 
 
-{Content 
+{Content
     styleTitle="h2"
     title="Did You Know?"
     blockBg='dark'}
-            
+
         <p class="text-center f-light">
-            Nowadays children spend more than 3 hours a day using smartphones for playing games, social media activity and chatting. 
-            Being a parent implies a huge responsibility to protect kids from misgiving people they might contact on the web. 
-            Reliable SMS <a class="a-default" href="/spy-apps-for-android.html">spy software</a> will help you secure your children.
+            Nowadays children spend more than 3 hours a day using smartphones for playing games, social media activity and chatting.
+            Being a parent implies a huge responsibility to protect kids from misgiving people they might contact on the web.
+            Reliable SMS spy software will help you secure your children.
         </p>
-        
+
         <!-- BLOCK STATISTICK -->
         <div class="block-statistick row">
-            
+
             <div class="item col-s-sm-12 col-xs-sm-12 col-sm-4 col-md-4 col-lg-4">
                 <section>
                     <div><strong class="fz50 color-orange">70%</strong></div>
@@ -101,15 +101,15 @@
                     </span>
                 </section>
             </div>
-            
+
         </div>
         <!-- END -->
 
         <p class="text-center f-light">
-            Pumpic parental text monitoring app was designed to help keep your children safe by tracking incoming and outgoing SMS. 
+            Pumpic parental text monitoring app was designed to help keep your children safe by tracking incoming and outgoing SMS.
             The app allows you to view saved and deleted messages, limit daily amount of sent SMS, as well as block specific contacts from reaching your kids in future:
         </p>
-        
+
         <!-- BLOCK LIST -->
         <div class="row pt15">
             <div class="padding-null col-sm-4 col-md-4 col-lg-4">
@@ -120,7 +120,7 @@
             <div class="padding-null col-sm-4 col-md-4 col-lg-4">
                 <ul class="block-list">
                     <li><i class="item-list-css-orange"></i> control contacts, block misgiving senders</li>
-                    
+
                 </ul>
             </div>
             <div class="padding-null col-sm-4 col-md-4 col-lg-4">
@@ -130,8 +130,8 @@
             </div>
         </div>
         <!-- END -->
-    
-    
+
+
         {*<p>Nowadays children spend more than 3 hours a day using smartphones for playing games, social media activity and chatting. Being a parent implies a huge responsibility to protect kids from misgiving people they might contact on the web. Reliable SMS spy software will help you secure your children.</p>
 
         <ul>
@@ -146,12 +146,12 @@
             <li>monitor SMS messages sent and received</li>
             <li>control contacts, block misgiving senders</li>
             <li>prevent children from bullies and online predators</li>
-        </ul>*}    
-        
+        </ul>*}
+
         {* Template: BLOCK IMAGE
             blockAlign (text): позиция блока с изображением. (left|center|right) *default: center
-            
-            imgUrl (text): путь к изображению. *ОБЯЗАТЕЛЬНОЕ ПОЛЕ 
+
+            imgUrl (text): путь к изображению. *ОБЯЗАТЕЛЬНОЕ ПОЛЕ
             imgAlt (text): подпись к изображению.
             // размер изображения
             imgWidth (text): ширина изображения *ОБЯЗАТЕЛЬНОЕ ПОЛЕ
@@ -163,13 +163,13 @@
                 blockAlign = 'center'
 
                 imgUrl = 'parental_control/bg_famaly_mobile.png'
-                imgAlt = 'Alt Test image 1'                
+                imgAlt = 'Alt Test image 1'
                 imgWidth = '537'
                 imgHeight = '312'
 
                 captionText = 'Caption test image 1 Caption test image 1 Caption test image 1 Caption test image 1'
         *}
-                        
+
 {EndContent}
 
 <div class="light">
@@ -211,30 +211,30 @@
                         </div>
                 </div>
         </div>
-</div>   
-                                        
+</div>
+
 {include file='../includes/content/features-table-new.tpl'
         title = "More of Pumpic Features"
-        description = "In a large variety of available software, it is rather a challenge to find a reliable app 
-                            for parents to monitor text messages on their kids’ cell phones. The very first thing to consider here is features 
-                            such an application offers. Except text message monitoring you will surely want to track your kids’ location, 
-                            online activity and control the time they spend playing games. Below is the entire list of functions Pumpic 
+        description = "In a large variety of available software, it is rather a challenge to find a reliable app
+                            for parents to monitor text messages on their kids’ cell phones. The very first thing to consider here is features
+                            such an application offers. Except text message monitoring you will surely want to track your kids’ location,
+                            online activity and control the time they spend playing games. Below is the entire list of functions Pumpic
                             provides to protect your kids and secure their happiness."
         blockBg="dark"
         icloud="yes"
         storeLink="yes"
 }
-                                        
+
 {*<div class="dark">
         <div class="container">
                 <h2 class="text-center">More of Pumpic Features</h2>
                 <div class="row">
-                    
+
                     <div id="table-container" class="table-col-3 table-md-col-3 table-sm-col-3">
-                        <article class="text-center">In a large variety of available software, it is rather a challenge to find a reliable app 
-                            for parents to monitor text messages on their kids’ cell phones. The very first thing to consider here is features 
-                            such an application offers. Except text message monitoring you will surely want to track your kids’ location, 
-                            online activity and control the time they spend playing games. Below is the entire list of functions Pumpic 
+                        <article class="text-center">In a large variety of available software, it is rather a challenge to find a reliable app
+                            for parents to monitor text messages on their kids’ cell phones. The very first thing to consider here is features
+                            such an application offers. Except text message monitoring you will surely want to track your kids’ location,
+                            online activity and control the time they spend playing games. Below is the entire list of functions Pumpic
                             provides to protect your kids and secure their happiness. </article>
                         <section>
                             <div class="tab col-item-3 col-md-item-3 col-sm-item-3">
@@ -267,14 +267,14 @@
                                 </ul>
                             </div>
                         </section>
-                        
-                    </div>    
-                    
+
+                    </div>
+
                 </div>
         </div>
 </div> *}
 
-{Content 
+{Content
     styleTitle="h2"
     title="Why to Follow Kids’ Text Messages"
     blockBg='light'}
@@ -294,17 +294,17 @@
         <li>find out if your kid uses bad words in his or her communication;</li>
         <li>prevent your kid from being involved in sexting (exchanging messages with sexual content, sometimes including inappropriate photos attached).</li>
     </ul>
-{EndContent}    
+{EndContent}
 
 <div class="dark">
     <div class="container">
             <h2 class="text-center testimonial-title">Pumpic SMS Monitoring Testimonials:</h2>
             <div class="row">
-                
+
                 <div class="bxSliders only-pc">
                         <!-- SLIDE #1 -->
                         <div class="slide">
-                
+
                     <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
                             <img src="{$img}/testimonials/testimonials_new_19.png" alt="" class="testimonial-photo">
                             <div class="testimonial-text">
@@ -326,15 +326,15 @@
                                     <p>“I installed Pumpic to keep track of my son, David (16). I am satisfied with the product, especially the function that allows me to see deleted messages. Sometimes, you just have to do it. I think it’s natural to protect your kids and Pumpic is one of the easiest ways.”</p>
                             </div>
                     </div>
-                            
+
                         </div>
                 </div>
-                <div class="bxSliderMobile"></div>            
-                            
+                <div class="bxSliderMobile"></div>
+
             </div>
     </div>
 </div>
-        {include file='../includes/content/how-get-pumpic.tpl' 
+        {include file='../includes/content/how-get-pumpic.tpl'
              blockBg="light"
         }
 
@@ -343,29 +343,29 @@
 
         {*include file='../includes/content/banner-promo.tpl'*}
         {*{include file='../includes/content/banners/banner-promo-trial.tpl'}*}
-        
-        <!-- END CONTENT -->   
-        
+
+        <!-- END CONTENT -->
+
         <!-- RECOMMENDED -->
         {*
             Template: RECOMMENDED
-        *}    
+        *}
         {include file='../includes/main/main-recommended.tpl'}
-           
+
         <!-- FOOTER -->
         {*
             Template: FOOTER
             Переменные:
-                our_products (text): Включить выключить блок OUR PRODUCTS (no|yes). * - yes 
+                our_products (text): Включить выключить блок OUR PRODUCTS (no|yes). * - yes
         *}
         {include file='../includes/main/main-quick-link.tpl'
         blockBg="light"
         }
 
         {include file='../includes/main/main-footer.tpl'}
-                
+
     </div>
-      
+
     {include file='../includes/main/main-analytics-footer.tpl'}
 </body>
 </html>

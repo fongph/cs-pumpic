@@ -810,11 +810,22 @@ description="Increase productivity, ensure legal safety and streamline workflow 
                 <legend class="uppercase" id="contact-form" style="text-align: center">Send Your Questions to Us</legend>
                 <div class="col-lg-4 col-lg-offset-4 col-md-6 col-md-offset-3">
                     <span class="info"></span>
-                    <div class="form-group"><input id="name" name="name" type="text" class="form-control text required"
-                                                   placeholder="Name*" value="" aria-required="true"></div>
-                    <div class="form-group"><input id="email" name="email" type="email"
-                                                   class="form-control text required" placeholder="Email*" value=""
-                                                   aria-required="true"></div>
+                    {if !isset($getUserInfo.name) || empty($getUserInfo.name)}
+                    <div class="form-group">
+                        <input id="name" name="name" type="text" class="form-control text required"
+                               placeholder="Name*" value="{if isset($smarty.post.name)}{$smarty.post.name}{/if}" aria-required="true">
+                    </div>
+                    {else}
+                        <input id="name" class="form-control required" type="hidden" name="name" value="{if isset($getUserInfo.name)}{$getUserInfo.name}{/if}">
+                    {/if}
+                    {if !isset($getUserInfo.login) || empty($getUserInfo.login)}
+                    <div class="form-group">
+                        <input id="email" name="email" type="email" class="form-control text required" placeholder="Email*"
+                               value="{if isset($smarty.post.email)}{$smarty.post.email}{/if}" aria-required="true">
+                    </div>
+                        {else}
+                        <input id="email" class="form-control required" type="hidden" name="email" value="{if isset($getUserInfo.login)}{$getUserInfo.login}{/if}">
+                    {/if}
                     <div class="form-group">
                         <select id="type" class="select" title="Question type*" name="type" style="display: none;">
                             <option selected="" data-hidden="true" value="0">Question type*</option>

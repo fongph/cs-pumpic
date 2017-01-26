@@ -6,6 +6,8 @@ Disallow: /toscpapp.txt
 Disallow: /tos-preview.txt
 Disallow: /tos-preview.html
 Disallow: /policy-preview.html
+Disallow: /direct-notice-preview.html
+Disallow: /direct-notice.html
 
 Disallow: /wp-content
 Disallow: /store-mobile.html

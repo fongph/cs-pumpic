@@ -37,8 +37,22 @@ if($_SERVER['REQUEST_URI'] == '/tos.html') {
 
     $text = $tos->getLegal('policy', 'preview');
     $smarty->assign('policy', $text[0]);
+    $smarty->assign('preview', '-preview');
+
 // init output params
     $smarty->display($b_dir.'/templates/pages/policy.tpl');
+}elseif ($_SERVER['REQUEST_URI'] == '/direct-notice.html') {
+
+    $text = $tos->getLegal('direct-notice', 'active');
+    $smarty->assign('directNotice', $text[0]);
+// init output params
+    $smarty->display($b_dir.'/templates/pages/direct-notice.tpl');
+} elseif ($_SERVER['REQUEST_URI'] == '/direct-notice-preview.html') {
+
+    $text = $tos->getLegal('direct-notice', 'preview');
+    $smarty->assign('directNotice', $text[0]);
+// init output params
+    $smarty->display($b_dir.'/templates/pages/direct-notice.tpl');
 } elseif ($_SERVER['REQUEST_URI'] == '/tos-preview.txt') {
 
     if(file_exists($root_path.'/tos-preview.txt')) {

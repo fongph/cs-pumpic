@@ -2,17 +2,17 @@
 
     title="Best Internet Content Filter for Android | Pumpic"
     description="The Internet carries many hidden dangers for children. Parental control apps for Android allow parents to prevent kids from viewing inappropriate content online."
-}    
-    
+}
+
 <body>
     <!-- BLOCK GTM -->
     {include file='../includes/main/main-after-body.tpl'}
     <!-- END BLOCK GTM -->
-    
+
     <!-- FLY BLOCKS -->
     {include file='../includes/content/fly/fly_blocks.tpl'}
     <!-- END FLY BLOCKS-->
-    
+
     <div class="wrapper {*bg_bottom_images*} block-free-trial home-page">
         <!-- TOP MENU -->
 
@@ -21,23 +21,23 @@
             cache_id = "includes_main_main-top-menu"
             nocache
         }
-        
 
-        
+
+
         {*
             Template: PHONE
             Переменные:
-                style (text): стиль блока Phone (blue|black). * - blue 
+                style (text): стиль блока Phone (blue|black). * - blue
         *}
         {include file='../includes/content/phone/block-phone.tpl'
-                 style="blue"   
+                 style="blue"
         }
-        
+
         {* bg_famaly_427x254.png imgVerticalAlign = "bottom"*}
         <!-- CONTENT -->
         {include file='../includes/content/info/info-promo.tpl'
             imgUrl = "header_banners/best-internet-filter-for-android_header.png"
-            imgAlt = "Internet Filter for Android"
+            imgAlt = "filter for android header"
             imgAlign = "left"
             imgVerticalAlign = "bottom"
 			imgTitle = "Reliable filtering tool for Android devices"
@@ -52,7 +52,7 @@
             Icloud = "no"
             Apple = "no"
         } {* ?rel=0&wmode=transparent&fs=0&autoplay=1&modestbranding=1&autohide=1 *}
-        
+
         {include file='../includes/content/plans.tpl'}
 
         {* Template: FLY BUTTONS
@@ -63,17 +63,17 @@
             buttonFreeTrial = 'yes'
         }
 
-{Content 
-    styleTitle="h2"    
+{Content
+    styleTitle="h2"
     title="Why Do You Need Child Internet Filter Software"
     blockBg='light'}
-	
+
 	<p>The World Wide Web is an infinite source of information, wisdom and fun. It also is a great environment to meet new people and find folks to share your interests. But at the same time, the Internet is a breeding ground for tons of inappropriate content and dozens of hidden dangers. Many of them threaten the most vulnerable group of Internet users – the kids.</p>
 	<p>Add the fact that nowadays 91 percent of teenagers (13 to 17 years old) access the Internet via various mobile devices - smartphones, tablets and other gadgets. This makes monitoring and controlling what kids view online even more difficult. Thus, they become exposed to the apparent and hidden Internet dangers – from cyberbullying to sexual content, from gambling to online predators. That is why a concerned parent can hardly be too careful when it comes to letting the child surf the Net these days.</p>
-        
+
         <!-- BLOCK STATISTICK -->
         <div class="block-statistick row">
-            
+
             <div class="item col-s-sm-12 col-xs-sm-12 col-sm-4 col-md-4 col-lg-4">
                 <section>
                     <div><strong class="fz50 color-orange">51%</strong></div>
@@ -98,24 +98,24 @@
                     </span>
                 </section>
             </div>
-            
+
         </div>
         <!-- END -->
 
         <p>The statistics above persuasively demonstrates why a concerned parent should consider using reliable tools to filter out content in order to stay aware of what their kids are up to while online. Pumpic monitoring app is an ultimate solution that among many other features allows tracking kids’ Internet activity, setting filters to prevent little ones from viewing 18+ content and blocking any website you don’t want your child to visit.</p>
 		<p>Pumpic is a visible mobile software that has been designed for ethical and legal use only. It means that the app runs openly and doesn’t use hidden mode. We endorse parents who plan to install monitoring app on their kids’ smartphone or tablet to talk honestly to their children about the dangers they are exposed to online and what can be done to avert these perils. Only 61 percent of teens report having such conversation while over 90 percent of parents say they did talk to their teens about online safety.</p>
-		
+
 {EndContent}
-		
-		{Content 
-    styleTitle="h2"    
+
+		{Content
+    styleTitle="h2"
     title="Ways to Set Up Content Filtering on Android"
     blockBg='dark'}
-	
+
 	    <p class="text-center f-light">Android-based smartphones and tablets are incredibly popular as a child’s first mobile device: they are relatively cheap, come in a huge variety of shapes and colors, and there is an enormous number of different free and paid apps in Google Play to fit any taste. The pitfall of handing Android device to a kid is its weak parental controls, which – unlike iOS on Apple products – have very limited functionality. That’s why third-party solutions are often not a whim but a must.</p>
 		<p class="text-center f-light">So before introducing your kid to the newly purchased Android gadget, make sure it is family-friendly ready and safety-enabled. Read about potential online risks, review the best Internet filtering options for Android, and choose the most efficient way to prevent your little ones from facing them. Regarding content restriction, you can select to install a separate Internet filter or a comprehensive parental control software.</p>
         <!-- BLOCK STATISTICK -->
-        
+
         <table class="table-statistick">
             <tr>
                 <td class="item col-s-sm-12 col-xs-sm-12 col-sm-12 col-md-4 col-lg-4 border-none">
@@ -125,7 +125,7 @@
                     </section>
                 </td>
                 <td class="item col-s-sm-12 col-xs-sm-12 col-sm-12 col-md-4 col-lg-4 border-none vertical-aligh-bottom text-center">
-                    <img class="statistick-images" alt="Filter inappropriate content with Pumpic" title = "Filter content to protect kids from online dangers" src="{$img}/landings/best-internet-filter-for-android_icon.png" style="margin-bottom: 70px;"/>
+                    <img class="statistick-images" alt="android internet content filter" title = "Filter content to protect kids from online dangers" src="{$img}/landings/best-internet-filter-for-android_icon.png" style="margin-bottom: 70px;"/>
                 </td>
                 <td class="item col-s-sm-12 col-xs-sm-12 col-sm-12 col-md-4 col-lg-4 border-none">
                     <section>
@@ -139,7 +139,7 @@
 
         <p class="text-center f-light">There are hundreds of parental control apps, and the statistics show that over the half of parents are already using some sort of child Internet filtering feature or software to manage their kids’ Internet use. No one says parenting in the XXI century is easy, but it’s your duty as a parent to choose the best way to protect your little ones from modern perils, be it online or offline. Pumpic allows you to ensure that children will get the most of their Android smartphones or tablets while staying safe and protected.</p>
 {EndContent}
-        
+
 <div class="light">
         <div class="container">
                 <h2 class="text-center">All-round Monitoring by Pumpic</h2>
@@ -180,82 +180,82 @@
                 </div>
         </div>
 </div>
-        
+
         {include file='../includes/content/features-table-new.tpl'
         title = "More Features, More Control, More Protection"
         description = "Thorough Internet content filtering is just one of over two dozen Pumpic’s exceptional features. All at once, they enable concerned parents to ensure their children’s safety via monitoring various spheres of their lives. With Pumpic parental control software for Android, you will quickly identify potential dangers and avert them at early stages, thus, making your kid’s mobile device usage a safe and pleasant experience."
         blockBg="dark"
             android = "yes"
             storeLinkText = "Go to Store"
-        } 
-        
+        }
+
         <div class="light">
     <div class="container">
             <h2 class="text-center testimonial-title">Over 10 000 Customers around the Globe Trust Us:</h2>
             <div class="row">
-                
+
                 <div class="bxSliders only-pc">
                         <!-- SLIDE #1 -->
                         <div class="slide">
-                
+
                     <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
-                            <img src="{$img}/testimonials/willard-w.png" alt="" class="testimonial-photo">
+                            <img src="{$img}/testimonials/willard-w.png" alt="pumpic testimonials willard w" class="testimonial-photo">
                             <div class="testimonial-text">
                                     <h4>Willard W. – father of 12-year-old son</h4>
                                     <p>“We presented our son a long-awaited Android tablet on his 12th birthday. First, my wife thought that a short talk and onboard parental controls would be enough to keep him away from inappropriate content online. You know what? Built-in controls suck because it’s very easy to pass over. After researching the topic and possible solutions, I decided to install Pumpic. IMHO, it’s a good investment.”</p>
                             </div>
                     </div>
                     <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
-                            <img src="{$img}/testimonials/judith-f.png" alt="" class="testimonial-photo">
+                            <img src="{$img}/testimonials/judith-f.png" alt="pumpic testimonials judith f" class="testimonial-photo">
                             <div class="testimonial-text">
                                     <h4>Judith F. – mother of 16-year-old son</h4>
                                     <p>“I have a boy. A 16-year-old boy. Parents who have boys of this age will understand me perfectly: this is a period of moving into adulthood, relentless curiosity and raging hormones. We have content filtering set up on our PC long ago. But controlling what he views on his smartphone was a real problem until I installed Pumpic. Now not only I can keep him away from explicit content, view call and text logs, but also keep track of his whereabouts. Great app!”</p>
                             </div>
                     </div>
                     <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
-                            <img src="{$img}/testimonials/ed-h.png" alt="" class="testimonial-photo">
+                            <img src="{$img}/testimonials/ed-h.png" alt="pumpic testimonials ed h" class="testimonial-photo">
                             <div class="testimonial-text">
                                     <h4>Ed H. – father of 17-year-old daughter</h4>
                                     <p>“A must-have. I won’t go into details, but the fact is that my girl joined some online community where, as I’ve heard on the news, several teenage members committed suicide. First, I hoped to talk her out of this. But, rephrasing the famous saying, you can get much further with a kind word and Pumpic than with a kind word alone. This app helped me to turn my daughter away from this dangerous community and ensure she’ll be just fine.”</p>
                             </div>
                     </div>
-                            
+
                         </div>
                 </div>
-                <div class="bxSliderMobile"></div>            
-                            
+                <div class="bxSliderMobile"></div>
+
             </div>
     </div>
-</div> 
-        
+</div>
+
 
 		{include file='../includes/content/banners/index.tpl'}
-		
 
-        
+
+
         {*{include file='../includes/content/banners/banner-promo-trial.tpl'}*}
-        
-        <!-- END CONTENT -->    
-           
+
+        <!-- END CONTENT -->
+
         <!-- RECOMMENDED -->
         {*
             Template: RECOMMENDED
-        *}    
+        *}
         {include file='../includes/main/main-recommended.tpl'}
-        
+
         <!-- FOOTER -->
         {*
             Template: FOOTER
             Переменные:
-                our_products (text): Включить выключить блок OUR PRODUCTS (no|yes). * - yes 
+                our_products (text): Включить выключить блок OUR PRODUCTS (no|yes). * - yes
         *}
         {include file='../includes/main/main-quick-link.tpl'
         blockBg="light"
         }
         {include file='../includes/main/main-footer.tpl'}
-                
+
     </div>
-       
+
     {include file='../includes/main/main-analytics-footer.tpl'}
 </body>
 </html>

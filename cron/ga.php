@@ -267,7 +267,7 @@
                 }
                 //system email
                 else if(strlen($source['rows']['ga:source'][0]) > 0 
-                        && preg_match('/^system$/is', $source['rows']['ga:medium'][0])) {
+                        && preg_match('/^system-email$/is', $source['rows']['ga:medium'][0])) {
                     $ga_type = self::GA_TYPE_SYSTEM_EMAIL;
                 }
                 //email

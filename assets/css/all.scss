@@ -5556,7 +5556,7 @@ div {
       margin-bottom: 4px;
     }
   }
-  input {
+  input:not([type="checkbox"]) {
     border: 1px solid #e8e8e8;
     background: #fff;
     padding: 5px;

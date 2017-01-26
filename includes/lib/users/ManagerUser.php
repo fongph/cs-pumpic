@@ -238,7 +238,8 @@ class ManagerUser extends Manager
         try {
             $user_id = $this -> createUserFreeTrial($params['siteId'], $params['email'], $params['name']);
             self::$_obj -> _respons['user_id'] = $user_id;
-            
+
+            $this->_saveUserLegacyConfirm($user_id);
             /*if((int)$user_id) {
                 
                 $_data = $this->getUserDataById( self::SITE_ID, (int)$user_id );
@@ -440,8 +441,17 @@ class ManagerUser extends Manager
         $show = $this -> _pdo-> query("SELECT `value` FROM `options` WHERE `name` = 'pumpic-phone-show' LIMIT 1") -> fetch();
         return (is_array($show) and count($show) > 0) ? $show['value'] : 0;
     }
-    
-    
+
+    public function _saveUserLegacyConfirm($userId)
+    {
+        $userId = (int) $userId;
+        $this->_pdo->exec("INSERT INTO users_acceptance (user_id,legal_id,legal_version_id)
+                                VALUES 
+                                ( {$userId}, (SELECT legal_id FROM legal_types WHERE `code` = 'tos') , (SELECT legal_version_id FROM legal_versions WHERE `status` = 'active' AND legal_id = (SELECT legal_id FROM legal_types WHERE `code` = 'tos'))),
+                                ( {$userId}, (SELECT legal_id FROM legal_types WHERE `code` = 'policy') , (SELECT legal_version_id FROM legal_versions WHERE `status` = 'active' AND legal_id = (SELECT legal_id FROM legal_types WHERE `code` = 'policy'))),
+                                ( {$userId}, (SELECT legal_id FROM legal_types WHERE `code` = 'direct-notice') , (SELECT legal_version_id FROM legal_versions WHERE `status` = 'active' AND legal_id = (SELECT legal_id FROM legal_types WHERE `code` = 'direct-notice')))");
+
+    }
     // 
     public function subscriptionFromMailChimp( $email ) {
         Manager::registerListeners( $this->_pdo );

@@ -46,6 +46,15 @@
                     </div>    
                 </div>    
             </div>
+            <div class="block-accept">
+                <section>
+                    Please, read our Legal Policies carefully. You must accept <a href="/tos.html" class="">Terms of Use</a>,
+                    <a href="/policy.html">Privacy Policy</a>, and <a href="#">Direct Notice</a> to proceed.
+                    <label class="legal-accept" for="tos-accept"><input id="tos-accept" class="required" type="checkbox" name="tos-accept" value="" /> I have read and accept the Terms of Use.</label>
+                    <label class="legal-accept"  for="policy-accept"><input id="policy-accept" class="required" type="checkbox" name="policy-accept" value="" /> I have read and accept the Privacy Policy.</label>
+                    <label class="legal-accept" for="direct-notice-accept"><input id="direct-notice-accept" class="required" type="checkbox" name="direct-notice-accept" value="" /> I have read and accept the Direct Notice.</label>
+                </section>
+            </div>
         </div>
     </div> <!-- step1 -->
 

@@ -11,6 +11,17 @@ $obj = new includes\lib\users\Order;
 // smarty config
 require_once 'smarty.config.php';
 
+
+
+$urls = array('/store', '/store-sub-same', '/store-sub-new');
+
+$url = $urls[array_rand($urls)];
+
+$redirectUrl = checkUrl($url, $urls, $config);
+var_dump($redirectUrl);die;
+//header("Location: {$config['domain']}{$redirectUrl}.html");
+//die();
+
 /* list order */
 $products = $obj ->getProducts('second');
 

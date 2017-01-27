@@ -121,17 +121,6 @@
                         <div id="c-f-block-info">
 
                             <section>
-                                <i class="c-icon-notes vertical-aligh-bottom"></i>
-                                <label class="vertical-aligh-bottom">Notes</label>
-                            </section>
-                            <p>Visualisez les <b>informations</b> importantes, les <b>listes de chose à faire</b> et les <b>idées</b> écrites via l'application Notes.</p>
-
-                        </div>
-                    </li>
-                    <li class="col-md-3 col-lg-3  ">
-                        <div id="c-f-block-info">
-
-                            <section>
                                 <i class="c-icon-location-geo-fences vertical-aligh-bottom"></i>
                                 <label class="vertical-aligh-bottom">Localisation<br> et Géo-repérage</label>
                             </section>
@@ -151,6 +140,7 @@
 
                         </div>
                     </li>
+                    <li class="col-md-3 col-lg-3 hidden-sm"></li>
                 </ul>
 
 

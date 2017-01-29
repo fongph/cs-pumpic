@@ -1013,18 +1013,18 @@ function smarty_function_robotsClose($params, $template) {
     $template->assign('robotClose', $_result);
 }
 
-function checkUrl($url, $urls, $config){
-    if(count($_SESSION['visited']) == count($urls)){
-        $_SESSION['visited'] = Array();
-    }
-    if(in_array($url, $_SESSION['visited'])){
-        $url = $urls[array_rand($urls)];
-        return checkUrl($url, $urls, $config);
-    }
-    else{
-        $_SESSION['visited'][] = $url;
-        return $url;
-    }
-}
+//function checkUrl($url, $urls, $config){
+//    if(count($_SESSION['visited']) == count($urls)){
+//        $_SESSION['visited'] = Array();
+//    }
+//    if(in_array($url, $_SESSION['visited'])){
+//        $url = $urls[array_rand($urls)];
+//        return checkUrl($url, $urls, $config);
+//    }
+//    else{
+//        $_SESSION['visited'][] = $url;
+//        return $url;
+//    }
+//}
 
 class PageNotFoundException extends Exception {}

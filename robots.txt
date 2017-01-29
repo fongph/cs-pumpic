@@ -7,7 +7,8 @@ Disallow: /toscpapp.txt
 Disallow: /wp-content
 Disallow: /store-mobile.html
 Disallow: /store-desktop.html
-Disallow: /store-new-version.html
+Disallow: /store-sub-new.html
+Disallow: /store-sub-same.html
 Disallow: /store-android.php
 Disallow: /wp-admin
 Disallow: /wp-includes

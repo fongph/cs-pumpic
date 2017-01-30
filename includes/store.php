@@ -18,7 +18,7 @@ $url = $clientsNumber % 3;
 $redirectUrl = $urls[$url];
 
 if ($redirectUrl != '/store'){
-    header("Location: http://localhost:8300".$redirectUrl.".html");
+    header("Location: http://pumpic.lena:8300".$redirectUrl.".html");
 }
 
 /* list order */
@@ -86,6 +86,7 @@ $_curr -> setFilter( ['iso' => ['USD','EUR','GBP','CAD','AUD'] ] );
 $_rates = $_curr -> getCurrencies();
 
 $smarty->assign('rates', json_encode($_rates));
+$smarty->assign('subPage', false);
 
 // init output params!
 $smarty->assign('getProducts', $products);

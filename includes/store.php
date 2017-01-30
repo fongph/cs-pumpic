@@ -10,7 +10,7 @@ $obj = new includes\lib\users\Order;
 
 // smarty config
 require_once 'smarty.config.php';
-$urls = array(0 =>'/store', 1=> '/store-sub-same', 2 =>'/store-sub-new');
+$urls = array(0 =>'/store', 1 => '/store-sub-same', 2 =>'/store-sub-new');
 $clientsNumber = $obj ->getStoreClientsCount();
 $obj->incrementStoreClientsCount();
 $url = $clientsNumber % 3;
@@ -86,7 +86,7 @@ $_curr -> setFilter( ['iso' => ['USD','EUR','GBP','CAD','AUD'] ] );
 $_rates = $_curr -> getCurrencies();
 
 $smarty->assign('rates', json_encode($_rates));
-$smarty->assign('subPage', false);
+$smarty->assign('showRobots', 'no');
 
 // init output params!
 $smarty->assign('getProducts', $products);

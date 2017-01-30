@@ -76,8 +76,7 @@ $_curr -> setFilter( ['iso' => ['USD','EUR','GBP','CAD','AUD'] ] );
 $_rates = $_curr -> getCurrencies();
 
 $smarty->assign('rates', json_encode($_rates));
-$smarty->assign('subPage', true);
-$smarty->assign('periodIcloud', true);
+$smarty->assign('subNew', true);
 
 
 // init output params!

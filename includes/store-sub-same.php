@@ -75,7 +75,7 @@ $_curr -> setFilter( ['iso' => ['USD','EUR','GBP','CAD','AUD'] ] );
 $_rates = $_curr -> getCurrencies();
 
 $smarty->assign('rates', json_encode($_rates));
-$smarty->assign('subPage', true);
+$smarty->assign('subSame', true);
 
 // init output params!
 $smarty->assign('getProducts', $products);

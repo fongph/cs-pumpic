@@ -1,14 +1,11 @@
 {*Order out="getProducts"*}
 {*formOrder post=$smarty.post*}
+{if $smarty.server.REQUEST_URI !== '/store.html'}{$robots='no'}{/if}
 
 {include file='../includes/main/main-header.tpl'
 showRand="true"
 title="Phone Tracker Prices and Subscription Plans | Pumpic"
-description="Pumpic offers high-quality cell phone tracking software for a good price. Learn more about subscription plans. Choose the one that suits your monitoring needs."
-}
-{if (isset($subPage) && $subPage === false) }
-   <meta name="robots" content="noindex, nofollow" >
-{/if}
+description="Pumpic offers high-quality cell phone tracking software for a good price. Learn more about subscription plans. Choose the one that suits your monitoring needs."}
 <body>
 <style>
     @media (max-width: 767px) {
@@ -122,7 +119,7 @@ description="Pumpic offers high-quality cell phone tracking software for a good 
                                                             <span class="prod-head__device tablet">iPad</span>
                                                             <span class="prod-head__device smart">iPod Touch</span>
                                                         </p>
-                                                        <p class="prod-head__price"><span>starting from </span><b>$6.99/</b><span> month</span></p>
+                                                        <p class="prod-head__price"><span>starting from </span><b>${if (isset($subSame) && $subSame === true)}8.32{elseif (isset($subNew) && $subNew === true)}6.24{else}6.99{/if}/</b><span> month</span></p>
                                                     </div>
                                                 </div>
                                             </div>

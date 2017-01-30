@@ -13,6 +13,9 @@
                 <!-- left table #1 -->
                 <!-- left table #1 -->
                 {if (!isset($onlyItem) || isset($onlyItem) && $onlyItem == "icloud") && !isset($lang)}
+                {if !isset($onlyItem)}
+                    <div class="col-md-2 col-lg-2"></div>
+                {/if}
                     <div class="{if !isset($onlyItem)}col-md-4 col-lg-4 padding-null{/if}">
 
                         <div id="block-compatibility-table" class="ios-table">

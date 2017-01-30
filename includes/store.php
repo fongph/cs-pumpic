@@ -18,7 +18,7 @@ $url = $clientsNumber % 3;
 $redirectUrl = $urls[$url];
 
 if ($redirectUrl != '/store'){
-    header("Location: http://pumpic.lena:8300".$redirectUrl.".html");
+    header("Location: //".$config['domain'].$redirectUrl.".html");
 }
 
 /* list order */

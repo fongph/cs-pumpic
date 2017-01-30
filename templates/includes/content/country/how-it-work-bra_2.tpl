@@ -7,7 +7,7 @@
                 <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
                     <h3 class="weight-normal"><i class="icons icon-buy"></i>  Comprar</h3>
                     <p>
-                        Compre a {if $version = "icloud"}<b>Inscrição iOS (Jailbreak)</b>{else}<b>Pumpic Android / Pumpic iOS (jailbreak)</b>{/if} da Pumpic para 1, 3, 6 ou 12 meses.
+                        Compre a <b>Inscrição iOS (iCloud)</b> da Pumpic para 1, 3, 6 ou 12 meses.
                     </p>
                     <p>
                         Logo após enviar o pagamento, você receberá <b>um e-mail</b>.

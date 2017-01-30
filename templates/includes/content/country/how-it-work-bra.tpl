@@ -7,7 +7,7 @@
                 <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
                     <h3 class="weight-normal"><i class="icons icon-buy"></i>  Comprar</h3>
                     <p>
-                        Compre o plano <b>Pumpic Android / Pumpic iOS (jailbreak)</b> por 1, 3, 6 ou 12 meses.
+                        Compre o plano <b>Pumpic Android</b> por 1, 3, 6 ou 12 meses.
                     </p>
                     <p>
                       Após a confirmação do pagamento, você receberá <b>um e-mail</b>. 

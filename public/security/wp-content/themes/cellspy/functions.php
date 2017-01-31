@@ -226,6 +226,12 @@ function getStaticUrl(){
 	
 }
 
+function getSchema(){
+	include('../../includes/config.php');
+	return $config['schema'];
+
+}
+
 function getVersionOS($version){
     include('../../includes/config.php');
     return (isset($config[ $version ])) ? $config[ $version ] : '';

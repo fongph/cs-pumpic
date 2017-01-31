@@ -259,6 +259,7 @@
         {include file='../includes/content/compatibility/compatibility-table.tpl'
             title="Compatibilidade"
             lang="bra"
+            onlyItem="android"
             blockBg="light" 
         }  {* no_bg bg-wite *}
         
@@ -275,87 +276,6 @@
                     <div class="col-lg-10 col-lg-offset-1">
                         <div class="row">
                             <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 pt20">
-                                <h2 class="text-center">Jailbreak solução</h2>
-                                {*JAILBREAK BUY BLOCK*}
-                                <table class="tb_pricing table-bordered pricing-second" style="margin-bottom: 50px;">
-                                    <thead>
-                                        <tr>
-                                            <th>
-                                                <div class="basic_wr row-pricing-panel w100 icloud-box">
-                                                    <div class="priceb border-none">
-                                                        <div class="buy-wrapper">
-                                                            <div class="wrapper_pack clearfix">
-                                                                <div class="wr_pack_premium wr_icloud_jb _single-pack-jailbreak"></div>
-                                                                <div class="wr_pack_double_premium wr_icloud_jb-double _double-pack-jailbreak"></div>
-                                                                <div class="wr_price_big">
-                                                                    <span></span><div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr jailbreak-price-per-month" >{$defaultPremiumPrice}</div></div><span>/ mês</span>
-                                                                </div>
-                                                            </div>
-                                                            <div class="list_price icloud-list_price">
-
-                                                                <form name="price_premium" method="POST" action="/buy.html" class="buy-form-with-offer" autocomplete="off" >
-
-                                                                    <input id='product_price_premium' type='hidden' name='price[productID]' value='{if isset($getDefaultIosJailbreak)}{$getDefaultiosJailbreak}{else}0{/if}' class="product_price"/>
-
-                                                                    <ul>
-                                                                        {foreach from=$getProducts.iosJailbreak key=key item=item}
-                                                                            <li>
-                                                                                <label class="label_radio hover_label_radio {if $item.period == '12'}r_on{else}r_off{/if}">
-                                                                                    <input class="data-price" data-target=".jailbreak-price-per-month" data-cur="usd" data-price-usd="{$item.price}" data-offer-price-usd="{$getProducts.iosJailbreakDouble[$key].price}" data-period="{$item.period}" data-product="{$item.id}" data-offer-product="{$getProducts.iosJailbreakDouble[$key].id}" data-group="jailbreak"  name="optionsRadios" id="optionsRadios{$item.id}1" value="{$item.id}" type="radio"{if $item.period == '12'} checked="checked"{/if} />
-                                                                                    <span class="sp">
-                                                                            <strong>{$item.period}</strong> {if $item.period == 1}mês{else}meses{/if}
-                                                                        </span>
-
-                                                                                    <div class="box-small-package">
-                                                                                        <div class="offer_old_price"><div class="box-currence strike__currence"><div class="symbol" attr-iso="usd">$</div><div class="curr">{$item.price * 2|string_format:"%.2f"}</div></div></div>
-                                                                                    </div>
-
-                                                                                    <div class="package_price">
-                                                                                        <strong>
-                                                                                            <div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr">{$item.price}</div></div>
-                                                                                        </strong>
-                                                                                    </div>
-                                                                                    <div class="package_offer_price">
-                                                                                        <strong>
-                                                                                            <div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr">{$getProducts.iosJailbreakDouble[$key].price}</div></div>
-                                                                                        </strong>
-                                                                                    </div>
-                                                                                </label>
-                                                                            </li>
-                                                                        {/foreach}
-                                                                    </ul>
-                                                                    <div class="double_offer checkbox">
-                                                                        <label>
-                                                                            <input type="checkbox" data-group="jailbreak" name="jailbreak-40off">
-                                                                            ¡Conseguir el 2do plano con un <br><span>40% de descuento!</span>
-                                                                        </label>
-                                                                    </div>
-                                                                    <button class="btn btn-default ga-action-click"
-                                                                            ga-action ="click"
-                                                                            ga-category="store"
-                                                                            ga-label="buy jailbreak"
-                                                                            value="true" type="submit" name="price[submit]">Comprar Agora</button>
-                                                                </form>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </th>
-                                        </tr>
-                                        
-                                        <tr>
-                                            <th>
-                                                <div class="table_header text-transform-none text-center">
-                                                    <div id="list-price-phones" class="wr_support_new_os">
-                                                        <i class="fa fa-unlock-alt fa-lg d_green"></i> iOS {$ver_ios_bot} - {$ver_jailbreak_up} (com jailbreak)
-                                                    </div>
-                                                </div>
-                                            </th>
-                                        </tr>
-                                        
-                                        
-                                    </thead>
-                                </table>
                                 {*ANDROID BUY BLOCK*}
                                 <h2 class="text-center">Android solução</h2>
                                 <table class="tb_pricing table-bordered pricing-second">
@@ -502,7 +422,7 @@
                                 <div class="link_circle_italic2">
                                     <div class="style-links2">
                                         <span class="circle_ico2"></span>
-                                        <label>O Apple iOS requer que seja feito jailbreak antes da instalação. Alguns recursos de monitoramento requerem acesso de root do Android. Por favor verifique a tabela acima e considere cada opção com cuidado. Note que o app Pumpic fica visível nos dispositivos onde serão instalados. Porém ele é protegido com uma chave secreta e não pode ser excluído ou modificado sem a sua permissão.</label>
+                                        <label>Alguns recursos de monitoramento requerem acesso de root do Android. Por favor verifique a tabela acima e considere cada opção com cuidado. Note que o app Pumpic fica visível nos dispositivos onde serão instalados. Porém ele é protegido com uma chave secreta e não pode ser excluído ou modificado sem a sua permissão.</label>
                                     </div>
                                 </div>
                                 

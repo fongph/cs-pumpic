@@ -40,6 +40,10 @@ customeStyle="
 }
 
 <body class="spy-sections">
+<!-- BLOCK GTM -->
+{include file='../includes/main/main-after-body.tpl'}
+<!-- END BLOCK GTM -->
+
 <!-- FLY BLOCKS -->
 {include file='../includes/content/fly/fly_blocks.tpl'}
 <!-- END FLY BLOCKS-->

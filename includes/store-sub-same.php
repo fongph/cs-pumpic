@@ -10,19 +10,8 @@ $obj = new includes\lib\users\Order;
 
 // smarty config
 require_once 'smarty.config.php';
-$urls = array(0 =>'/store', 1 => '/store-sub-same', 2 =>'/store-sub-new');
-$clientsNumber = $obj ->getStoreClientsCount();
-$obj->incrementStoreClientsCount();
-$url = $clientsNumber % 3;
-
-$redirectUrl = $urls[$url];
-
-if ($redirectUrl != '/store'){
-    header("Location: //".$config['domain'].$redirectUrl.".html");
-}
-
 /* list order */
-$products = $obj ->getProducts('second');
+$products = $obj ->getProducts('second-same');
 
 /* form_order */
 $_request = (isset($_POST['price']) and !empty($_POST['price'])) ? $_POST['price']: false;
@@ -86,7 +75,7 @@ $_curr -> setFilter( ['iso' => ['USD','EUR','GBP','CAD','AUD'] ] );
 $_rates = $_curr -> getCurrencies();
 
 $smarty->assign('rates', json_encode($_rates));
-$smarty->assign('showRobots', 'no');
+$smarty->assign('subSame', true);
 
 // init output params!
 $smarty->assign('getProducts', $products);

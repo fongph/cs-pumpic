@@ -17,7 +17,7 @@ use includes\lib\CDb as DB;
 
 require_once dirname( __FILE__ ).'/ManagerUser.php';
 
-class Order extends ManagerUser 
+class Order extends ManagerUser
 {
     
     const PRODUCT_TYPE = 'first';
@@ -288,7 +288,16 @@ class Order extends ManagerUser
     
     public function getProducts($namespace) 
     {
-        $plans = $this->_billing->getSiteProducts(self::SITE_ID, $namespace);
+        if ($namespace == 'second-same' || $namespace == 'second-new'){
+            $version = '';
+            switch ($namespace){
+                case 'second-same': $version = 'v2'; break;
+                case 'second-new': $version = 'v3'; break;
+            }
+            $plans = $this->_billing->getSiteProductsForABTest(self::SITE_ID, 'second', $namespace, $version);
+        } else {
+            $plans = $this->_billing->getSiteProducts(self::SITE_ID, $namespace);
+        }
 
         if(count($plans) > 0) {
             foreach($plans as $plan => $data) {
@@ -396,6 +405,18 @@ class Order extends ManagerUser
         }    
 
         return $result;
+    }
+
+    public function getStoreClientsCount()
+    {
+        return $this->_pdo->query("SELECT `value` as count FROM `options` WHERE `name` = 'pumpic-store-clients-count';")->fetchColumn();
+
+    }
+
+    public function incrementStoreClientsCount()
+    {
+        return $this->_pdo->exec("UPDATE `options` SET `value` = `value`+1 WHERE `name` = 'pumpic-store-clients-count';");
+
     }
     
 }

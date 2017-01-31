@@ -58,6 +58,8 @@ $config = array(
 				'free-trial.html'  => 'free_trial_registration.php',
 
 				'store.html'  => 'store.php',
+				'store-sub-same.html'  => 'store-sub-same.php',
+				'store-sub-new.html'  => 'store-sub-new.php',
 				'store-android.php'  => 'store-android.php',
 				'aging-parent-protection-app.html' => 'aging-parent-protection-app.php',
 				'iphone-tracking-software.html'   => 'iphone_tracking_software.php',
@@ -133,7 +135,7 @@ $config = array(
 		'ver_android_bot'       => '2.2',
 		'ver_ios_up'            => '9.1',
 		'ver_ios_bot'           => '6.0',
-		'ver_icloud_up'         => '10.2',
+		'ver_icloud_up'         => '10.2.1',
 		'ver_icloud_bot'        => '6.0',
 
 		'cron' => array(

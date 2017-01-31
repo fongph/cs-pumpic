@@ -10,15 +10,23 @@ $obj = new includes\lib\users\Order;
 
 // smarty config
 require_once 'smarty.config.php';
-$urls = array(0 =>'/store', 1 => '/store-sub-same', 2 =>'/store-sub-new');
-$clientsNumber = $obj ->getStoreClientsCount();
-$obj->incrementStoreClientsCount();
-$url = $clientsNumber % 3;
 
-$redirectUrl = $urls[$url];
+if (isset($_COOKIE['page'])){
+    $url = $_COOKIE['page'];
+    if ($url != '/store'){
+        header("Location: //".$config['domain'].$url.".html");
+    }
+} else {
+    $urls = array(0 =>'/store', 1 => '/store-sub-same', 2 =>'/store-sub-new');
+    $clientsNumber = $obj ->getStoreClientsCount();
+    $obj->incrementStoreClientsCount();
+    $url = $clientsNumber % 3;
+    $redirectUrl = $urls[$url];
+    setcookie("page", $redirectUrl);
+    if ($redirectUrl != '/store'){
+        header("Location: //".$config['domain'].$redirectUrl.".html");
+    }
 
-if ($redirectUrl != '/store'){
-    header("Location: http://pumpic.lena:8300".$redirectUrl.".html");
 }
 
 /* list order */

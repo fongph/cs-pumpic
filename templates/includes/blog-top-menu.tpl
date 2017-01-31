@@ -17,7 +17,7 @@
                     </div>
                                                         
                                                         <div class='box-cp pull-right'>   
-                                                            <a href="<?php echo $config['schema']; ?>demo.pumpic.com/setDevice/126?redirect_url=cp/calls" target="_blank" class="btn btn-sm btn-orange btn-success visible-lg cp-login">Demo</a>
+                                                            <a href="http://demo.pumpic.com/setDevice/126?redirect_url=cp/calls" target="_blank" class="btn btn-sm btn-orange btn-success visible-lg cp-login">Demo</a>
                                                         </div>
                                                         
                                                         <?php /* if (hasUser()) : ?>

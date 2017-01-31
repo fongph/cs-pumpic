@@ -157,7 +157,7 @@
                             </div>
 
                             <div class="clearfix"></div>
-                            <img src='{$schema}{$domain}/images/infographic/v2.png'
+                            <img src='/images/infographic/v2.png'
                                  width='540'
                                  alt='Mobile Phone Security Measures'
                                  id='the_img_link'>

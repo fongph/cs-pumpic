@@ -144,7 +144,7 @@
                         <div class="text-center">
                             <p><strong>Add this infographic to your website by copying and pasting the following embed code:</strong></p>
                             <textarea class="copy-this" style="margin: 0px; height: 200px; overflow-y: scroll;" readonly="readonly"><img src="{$schema}{$domain}/images/infographic/8-entrepreneurial-skills-you-should-teach-your-kids.png" width="720" height="4755" alt="8 Entrepreneurial Skills You Should Teach Your Kids" />
-<p><a href="{$schema}{domain}/entrepreneurial-skills-to-teach-your-child.html">8 Entrepreneurial Skills You Should Teach Your Kids [Infographic] by the team at Pumpic.</a></p></textarea>
+<p><a href="{$schema}{$domain}/entrepreneurial-skills-to-teach-your-child.html">8 Entrepreneurial Skills You Should Teach Your Kids [Infographic] by the team at Pumpic.</a></p></textarea>
                             
                             <div class="actions clearfix">
                                 <div class="col-mob-12 col-xs-6 col-sm-6 col-md-6 col-lg-6 padding-null">

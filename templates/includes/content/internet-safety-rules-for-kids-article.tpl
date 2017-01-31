@@ -1,7 +1,7 @@
 <ul class="share_list">
-    <li><a class="share-facebook" href="#" data-location="http://www.facebook.com/sharer/sharer.php?u="></a></li>
+    <li><a class="share-facebook" href="#" data-location="https://www.facebook.com/sharer/sharer.php?u="></a></li>
     <li><a class="share-google" href="#" data-location="https://plus.google.com/share?url="></a></li>
-    <li><a class="share-digg" href="#" data-location="http://digg.com/submit?url="></a></li>
+    <li><a class="share-digg" href="#" data-location="https://digg.com/submit?url="></a></li>
     <li><a class="share-twitter" href="#" data-location="https://twitter.com/share?url="></a></li>
     <li><a class="share-reddit" href="#" data-location="//www.reddit.com/submit?url="></a></li>
 </ul>
@@ -55,9 +55,9 @@
 
 
 <ul class="share_list">
-    <li><a class="share-facebook" href="#" data-location="http://www.facebook.com/sharer/sharer.php?u="></a></li>
+    <li><a class="share-facebook" href="#" data-location="https://www.facebook.com/sharer/sharer.php?u="></a></li>
     <li><a class="share-google" href="#" data-location="https://plus.google.com/share?url="></a></li>
-    <li><a class="share-digg" href="#" data-location="http://digg.com/submit?url="></a></li>
+    <li><a class="share-digg" href="#" data-location="https://digg.com/submit?url="></a></li>
     <li><a class="share-twitter" href="#" data-location="https://twitter.com/share?url="></a></li>
     <li><a class="share-reddit" href="#" data-location="//www.reddit.com/submit?url="></a></li>
 </ul>

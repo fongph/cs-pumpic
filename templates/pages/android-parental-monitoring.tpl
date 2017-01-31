@@ -239,7 +239,7 @@ title="Ultimate Android Parental Control App | Pumpic Monitoring Software"
                         <section>
                             <div class="tab col-item-3 col-md-item-3 col-sm-item-3">
                                 <ul>
-                                    <li><i class="i-features-sms"></i> <span onclick="window.location='http://{$domain}/mobile-sms-spy.html'">View SMS</span></li>
+                                    <li><i class="i-features-sms"></i> <span onclick="window.location='{$schema}{$domain}/mobile-sms-spy.html'">View SMS</span></li>
                                     <li><i class="i-features-cell-history"></i> View Call History</li>
                                     <li><i class="i-features-calendar"></i> View Calendar</li>
                                     <li><i class="i-features-contacts"></i> View Contacts</li>

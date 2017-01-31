@@ -1,10 +1,10 @@
 <ul class="share_list">
-    <li><a class="share-facebook" href="#" data-location="http://www.facebook.com/sharer/sharer.php?u="></a></li>
+    <li><a class="share-facebook" href="#" data-location="https://www.facebook.com/sharer/sharer.php?u="></a></li>
     <li><a class="share-google" href="#" data-location="https://plus.google.com/share?url="></a></li>
-    <li><a class="share-digg" href="#" data-location="http://digg.com/submit?url="></a></li>
+    <li><a class="share-digg" href="#" data-location="https://digg.com/submit?url="></a></li>
     <li><a class="share-twitter" href="#" data-location="https://twitter.com/share?url="></a></li>
     <li><a class="share-reddit" href="#" data-location="//www.reddit.com/submit?url="></a></li>
-    <li><a class="share-pinterest" href="#" data-location="http://pinterest.com/pin/create/link/?url=" data-media="http://{$domain}/images/infographic/how-to-manage-kids-screen-time.png"></a></li>
+    <li><a class="share-pinterest" href="#" data-location="https://pinterest.com/pin/create/link/?url=" data-media="{$schema}{$domain}/images/infographic/how-to-manage-kids-screen-time.png"></a></li>
 </ul>
 <article class="short">
   <h2>How much screen time is too much?</h2>
@@ -24,10 +24,10 @@
 </article>
 
 <ul class="share_list">
-    <li><a class="share-facebook" href="#" data-location="http://www.facebook.com/sharer/sharer.php?u="></a></li>
+    <li><a class="share-facebook" href="#" data-location="https://www.facebook.com/sharer/sharer.php?u="></a></li>
     <li><a class="share-google" href="#" data-location="https://plus.google.com/share?url="></a></li>
-    <li><a class="share-digg" href="#" data-location="http://digg.com/submit?url="></a></li>
+    <li><a class="share-digg" href="#" data-location="https://digg.com/submit?url="></a></li>
     <li><a class="share-twitter" href="#" data-location="https://twitter.com/share?url="></a></li>
     <li><a class="share-reddit" href="#" data-location="//www.reddit.com/submit?url="></a></li>
-    <li><a class="share-pinterest" href="#" data-location="http://pinterest.com/pin/create/link/?url=" data-media="http://{$domain}/images/infographic/how-to-manage-kids-screen-time.png"></a></li>
+    <li><a class="share-pinterest" href="#" data-location="https://pinterest.com/pin/create/link/?url=" data-media="{$schema}{$domain}/images/infographic/how-to-manage-kids-screen-time.png"></a></li>
 </ul>

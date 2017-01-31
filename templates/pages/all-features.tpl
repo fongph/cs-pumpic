@@ -5,6 +5,7 @@
 }
 
 <body>
+
     <!-- BLOCK GTM -->
     {include file='../includes/main/main-after-body.tpl'}
     <!-- END BLOCK GTM -->
@@ -258,7 +259,7 @@
                                 <ul>
                                     <li>
                                      <a class="btn-orange ga-action-click btn-view-demo" target="_blank"
-                                        href="http://demo.{$domain}/setDevice/126?redirect_url=cp/calls"
+                                        href="{$schema}demo.{$domain}/setDevice/126?redirect_url=cp/calls"
                                         ga-action ="click"
                                         ga-category="demo link"
                                         ga-label="all-features-icloud"
@@ -267,7 +268,7 @@
 
                                     <li>
                                       <a class="btn-red ga-action-click btn-buy-now"
-                                       href="http://{$domain}/store.html"
+                                       href="/store.html"
                                         ga-action ="click"
                                         ga-category="buy now"
                                         ga-label="all-features-icloud"
@@ -275,7 +276,7 @@
                                     </li>
                                     {*<li>
                                     <a class="btn-yellow ga-action-click btn-free-trial"
-                                       href="http://{$domain}/free-trial.html"
+                                       href="{$schema}{$domain}/free-trial.html"
                                         ga-action ="click"
                                         ga-category="techological"
                                         ga-label="trial"
@@ -477,7 +478,7 @@
                                 <ul>
                                     <li>
                                      <a class="btn-orange ga-action-click btn-view-demo" target="_blank"
-                                        href="http://demo.{$domain}/setDevice/125?redirect_url=cp/calls"
+                                        href="{$schema}demo.{$domain}/setDevice/125?redirect_url=cp/calls"
                                         ga-category="demo link"
                                         ga-action="click"
                                         ga-label="all-features-android"
@@ -486,7 +487,7 @@
 
                                     <li>
                                       <a class="btn-red ga-action-click btn-buy-now"
-                                       href="http://{$domain}/store.html#android"
+                                       href="/store.html#android"
                                          ga-category="buy now"
                                          ga-action="click"
                                          ga-label="all-features-android"
@@ -494,7 +495,7 @@
                                     </li>
                                     {*<li>
                                     <a class="btn-yellow ga-action-click btn-free-trial"
-                                       href="http://{$domain}/free-trial.html"
+                                       href="{$schema}{$domain}/free-trial.html"
                                         ga-action ="click"
                                         ga-category="techological"
                                         ga-label="trial"
@@ -696,7 +697,7 @@
                                 <ul>
                                     <li>
                                      <a class="btn-orange ga-action-click btn-view-demo" target="_blank"
-                                        href="http://demo.{$domain}/setDevice/5059?redirect_url=cp/calls"
+                                        href="{$schema}demo.{$domain}/setDevice/5059?redirect_url=cp/calls"
                                         ga-action ="click"
                                         ga-category="demo link"
                                         ga-label="all-features-jailbreak"
@@ -705,7 +706,7 @@
 
                                     <li>
                                       <a class="btn-red ga-action-click btn-buy-now"
-                                       href="http://{$domain}/store.html#jailbreak"
+                                       href="/store.html#jailbreak"
                                         ga-action ="click"
                                         ga-category="buy now"
                                         ga-label="all-features-jailbreak"
@@ -713,7 +714,7 @@
                                     </li>
                                     {*<li>
                                     <a class="btn-yellow ga-action-click btn-free-trial"
-                                       href="http://{$domain}/free-trial.html"
+                                       href="{$schema}{$domain}/free-trial.html"
                                         ga-action ="click"
                                         ga-category="techological"
                                         ga-label="trial"
@@ -915,7 +916,7 @@
                                     <div class='block-info'>
                                         <p>Follow <b>incoming</b> and <b>outgoing</b> call logs with precise contact data including <b>name</b>, <b>number</b>, <b>time</b> of the call and its <b>duration</b>. Find out who reaches the target phone, at what time and for how long.</p>
 
-                                        <div><a class="btn-orange ga-action-click" ga-action="click" ga-category="demo link" ga-label="all-features-icloud" target="_blank" href="http://demo.{$domain}/setDevice/126?redirect_url=cp/calls">View Demo</a></div>
+                                        <div><a class="btn-orange ga-action-click" ga-action="click" ga-category="demo link" ga-label="all-features-icloud" target="_blank" href="{$schema}demo.{$domain}/setDevice/126?redirect_url=cp/calls">View Demo</a></div>
 
                                     </div>
                                 </div>
@@ -944,7 +945,7 @@
                                             <li>the time when a call was received and duration of the </li>
                                             <li>conversation</li>
                                         </ul>*}
-                                        <div><a class="btn-orange ga-action-click" ga-action="click" ga-category="demo link" ga-label="all-features-icloud" target="_blank" href="http://demo.{$domain}/setDevice/126?redirect_url=cp/sms">View Demo</a></div>
+                                        <div><a class="btn-orange ga-action-click" ga-action="click" ga-category="demo link" ga-label="all-features-icloud" target="_blank" href="{$schema}demo.{$domain}/setDevice/126?redirect_url=cp/sms">View Demo</a></div>
 
                                     </div>
                                 </div>
@@ -988,7 +989,7 @@
                                             <li>Find your children by using GPS. The application identifies the current position together with the
                                                 precise route of recent movements.</li>
                                         </ul>*}
-                                        <div><a class="btn-orange ga-action-click" ga-action="click" ga-category="demo link" ga-label="all-features-icloud" target="_blank"  href="http://demo.{$domain}/setDevice/126?redirect_url=cp/locations">View Demo</a></div>
+                                        <div><a class="btn-orange ga-action-click" ga-action="click" ga-category="demo link" ga-label="all-features-icloud" target="_blank"  href="{$schema}demo.{$domain}/setDevice/126?redirect_url=cp/locations">View Demo</a></div>
 
                                     </div>
                                 </div>
@@ -1024,7 +1025,7 @@
                                             Monitor <b>Skype</b> <em>(up to iOS 8.4.1)</em> and <b>WhatsApp</b> calls.
                                         </p>
 
-                                        <div><a class="btn-orange ga-action-click" ga-action="click" ga-category="demo link" ga-label="all-features-icloud" target="_blank" href="http://demo.{$domain}/setDevice/126?redirect_url=cp/whatsapp">View Demo</a></div>
+                                        <div><a class="btn-orange ga-action-click" ga-action="click" ga-category="demo link" ga-label="all-features-icloud" target="_blank" href="{$schema}demo.{$domain}/setDevice/126?redirect_url=cp/whatsapp">View Demo</a></div>
 
                                     </div>
                                 </div>
@@ -1062,7 +1063,7 @@
                                     <div class='block-info'>
                                         <p>Monitor <b>browsing history</b> and view websites visited from the target device. Check <b>bookmarks</b> <em>(up to iOS 8.4.1)</em>.</p>
 
-                                        <div><a class="btn-orange ga-action-click" ga-action="click" ga-category="demo link" ga-label="all-features-icloud" target="_blank"  href="http://demo.{$domain}/setDevice/126?redirect_url=cp/browserHistory">View Demo</a></div>
+                                        <div><a class="btn-orange ga-action-click" ga-action="click" ga-category="demo link" ga-label="all-features-icloud" target="_blank"  href="{$schema}demo.{$domain}/setDevice/126?redirect_url=cp/browserHistory">View Demo</a></div>
 
                                     </div>
                                 </div>
@@ -1086,7 +1087,7 @@
                                     <div class='block-info'>
                                         <p>Monitor <b>browsing history</b> and view websites visited from the target device. Check <b>bookmarks</b>. <b>Block websites</b> containing inappropriate content.</p>
 
-                                        <div><a class="btn-orange ga-action-click" ga-action="click" ga-category="demo link" ga-label="all-features-icloud" href="http://demo.{$domain}/setDevice/125?redirect_url=cp/browserHistory">View Demo</a></div>
+                                        <div><a class="btn-orange ga-action-click" ga-action="click" ga-category="demo link" ga-label="all-features-icloud" href="{$schema}demo.{$domain}/setDevice/125?redirect_url=cp/browserHistory">View Demo</a></div>
 
                                     </div>
                                 </div>
@@ -1119,7 +1120,7 @@
                                     <div class='block-info'>
                                         <p>View each <b>photo</b> file <b>shot by the camera</b> of the target smartphone or <b>downloaded</b> from the Internet. Monitor all multimedia files stored on the target device.</p>
 
-                                        <div><a class="btn-orange ga-action-click" ga-action="click" ga-category="demo link" ga-label="all-features-icloud" target="_blank" href="http://demo.{$domain}/setDevice/126?redirect_url=cp/photos">View Demo</a></div>
+                                        <div><a class="btn-orange ga-action-click" ga-action="click" ga-category="demo link" ga-label="all-features-icloud" target="_blank" href="{$schema}demo.{$domain}/setDevice/126?redirect_url=cp/photos">View Demo</a></div>
 
                                     </div>
                                 </div>
@@ -1153,7 +1154,7 @@
                                     <div class='block-info'>
                                         <p>View <b>incoming</b>, <b>sent</b> and <b>deleted</b> emails. Find out precise communication data, including <b>names</b>, <b>addresses</b> and writing <b>time</b>. Monitor online correspondence, subscriptions and registrations.</p>
 
-                                        <div><a class="btn-orange ga-action-click" ga-action="click" ga-category="demo link" ga-label="all-features-icloud" href="http://demo.{$domain}/setDevice/125?redirect_url=cp/emails">View Demo</a></div>
+                                        <div><a class="btn-orange ga-action-click" ga-action="click" ga-category="demo link" ga-label="all-features-icloud" href="{$schema}demo.{$domain}/setDevice/125?redirect_url=cp/emails">View Demo</a></div>
 
                                     </div>
                                 </div>
@@ -1197,7 +1198,7 @@
                                     {*<div class='block-info'>*}
                                         {*<p>View Notes on iPhones, iPads, and iPods Touch. Find out <b>plans</b> and <b>intentions</b>. Follow <b>important information, to-do lists</b>, as well as written down <b>thoughts</b>.</p>*}
 
-                                        {*<div><a class="btn-orange ga-action-click" ga-action="click" ga-category="demo link" ga-label="all-features-icloud" target="_blank" href="http://demo.{$domain}/setDevice/125?redirect_url=cp/calendar">View Demo</a></div>*}
+                                        {*<div><a class="btn-orange ga-action-click" ga-action="click" ga-category="demo link" ga-label="all-features-icloud" target="_blank" href="{$schema}demo.{$domain}/setDevice/125?redirect_url=cp/calendar">View Demo</a></div>*}
                                         {**}
                                     {*</div>*}
                                 {*</div>*}
@@ -1246,7 +1247,7 @@
                                     <div class='block-info'>
                                         <p>View Notes on iPhones, iPads, and iPods Touch <em>(up to iOS 8.4.1)</em>. Find out <b>plans</b> and <b>intentions</b>. Follow <b>important information</b>, <b>to-do lists</b>, as well as written down <b>thoughts</b>.</p>
 
-                                        <div><a class="btn-orange ga-action-click" ga-action="click" ga-category="demo link" ga-label="all-features-icloud" href="http://demo.{$domain}/setDevice/126?redirect_url=cp/calendar">View Demo</a></div>
+                                        <div><a class="btn-orange ga-action-click" ga-action="click" ga-category="demo link" ga-label="all-features-icloud" href="{$schema}demo.{$domain}/setDevice/126?redirect_url=cp/calendar">View Demo</a></div>
 
                                     </div>
                                 </div>
@@ -1274,7 +1275,7 @@
                                     {*<div class='block-info'>*}
                                         {*<p>Keep track of <b>each keystroke typed</b> and every tap on the touchscreen of the target device. Follow <b>logins</b> and <b>passwords</b>, as well as texts written in the browser in <b>incognito mode</b>. Monitor typed messages <b>in any app</b>.</p>*}
 
-                                        {*<div><a class="btn-orange ga-action-click" ga-action="click" ga-category="demo link" ga-label="all-features-icloud" target="_blank"  href="http://demo.{$domain}/setDevice/125?redirect_url=cp/keylogger">View Demo</a></div>*}
+                                        {*<div><a class="btn-orange ga-action-click" ga-action="click" ga-category="demo link" ga-label="all-features-icloud" target="_blank"  href="{$schema}demo.{$domain}/setDevice/125?redirect_url=cp/keylogger">View Demo</a></div>*}
                                         {**}
                                     {*</div>*}
                                 {*</div>*}
@@ -1297,7 +1298,7 @@
                                     <div class='block-info'>
                                         <p>Keep track of <b>each keystroke typed</b> and every tap on the touchscreen of the target device. Follow <b>logins</b> and <b>passwords</b>, as well as words written in browser in <b>incognito mode</b>. Monitor texts written <b>in any app</b>.</p>
 
-                                        <div><a class="btn-orange ga-action-click" ga-action="click" ga-category="demo link" ga-label="all-features-icloud" href="http://demo.{$domain}/setDevice/125?redirect_url=cp/keylogger">View Demo</a></div>
+                                        <div><a class="btn-orange ga-action-click" ga-action="click" ga-category="demo link" ga-label="all-features-icloud" href="{$schema}demo.{$domain}/setDevice/125?redirect_url=cp/keylogger">View Demo</a></div>
 
                                     </div>
                                 </div>
@@ -1330,7 +1331,7 @@
                                     {*<div class='block-info'>*}
                                         {*<p>Control the target device remotely. <b>Lock</b> or <b>wipe</b> it out even <b>without Internet connection</b>. Manipulate the target smartphone or tablet <b>by sending command text messages</b>.</p>*}
 
-                                        {*<div><a class="btn-orange ga-action-click" ga-action="click" ga-category="demo link" ga-label="all-features-icloud" target="_blank"  href="http://demo.{$domain}/setDevice/125?redirect_url=cp/smsCommands">View Demo</a></div>*}
+                                        {*<div><a class="btn-orange ga-action-click" ga-action="click" ga-category="demo link" ga-label="all-features-icloud" target="_blank"  href="{$schema}demo.{$domain}/setDevice/125?redirect_url=cp/smsCommands">View Demo</a></div>*}
                                         {**}
                                     {*</div>*}
                                 {*</div>*}
@@ -1364,7 +1365,7 @@
                                     {*<div class='block-info'>*}
                                         {*<p>Define and <b>set specific zones</b> on the <b>map</b>. <b>Receive notifications</b>, once the target device <b>leaves</b> a safe territory or <b>enters a restricted area</b>.</p>*}
 
-                                        {*<div><a class="btn-orange ga-action-click" ga-action="click" ga-category="demo link" ga-label="all-features-icloud" target="_blank"  href="http://demo.{$domain}/setDevice/125?redirect_url=cp/locations">View Demo</a></div>*}
+                                        {*<div><a class="btn-orange ga-action-click" ga-action="click" ga-category="demo link" ga-label="all-features-icloud" target="_blank"  href="{$schema}demo.{$domain}/setDevice/125?redirect_url=cp/locations">View Demo</a></div>*}
                                         {**}
                                     {*</div>*}
                                 {*</div>*}
@@ -1400,7 +1401,7 @@
                                     <div class='block-info'>
                                         <p>Define and <b>set specific zones</b> on the <b>map</b>. <b>Receive notifications</b>, once the target device <b>leaves</b> or <b>enters</b> a restricted area.</p>
 
-                                        <div><a class="btn-orange ga-action-click" ga-action="click" ga-category="demo link" ga-label="all-features-icloud" href="http://demo.{$domain}/setDevice/125?redirect_url=cp/locations">View Demo</a></div>
+                                        <div><a class="btn-orange ga-action-click" ga-action="click" ga-category="demo link" ga-label="all-features-icloud" href="{$schema}demo.{$domain}/setDevice/125?redirect_url=cp/locations">View Demo</a></div>
 
                                     </div>
                                 </div>
@@ -1455,7 +1456,7 @@
                                             {*<li>WhatsApp</li>*}
                                             {*<li>Skype (up to iOS 8.4.1)</li>*}
                                         {*</ul>*}
-                                        {*<div><a class="btn-orange ga-action-click" ga-action="click" ga-category="demo link" ga-label="all-features-icloud" target="_blank"  href="http://demo.{$domain}/setDevice/126?redirect_url=cp/call">View Demo</a></div>*}
+                                        {*<div><a class="btn-orange ga-action-click" ga-action="click" ga-category="demo link" ga-label="all-features-icloud" target="_blank"  href="{$schema}demo.{$domain}/setDevice/126?redirect_url=cp/call">View Demo</a></div>*}
                                         {**}
                                     {*</div>*}
                                 {*</div>*}
@@ -1490,7 +1491,7 @@
                                             <li>WhatsApp</li>
                                             <li>Skype</li>
                                         </ul>
-                                        <div><a class="btn-orange ga-action-click" ga-action="click" ga-category="demo link" ga-label="all-features-icloud" href="http://demo.{$domain}/setDevice/126?redirect_url=cp/call">View Demo</a></div>
+                                        <div><a class="btn-orange ga-action-click" ga-action="click" ga-category="demo link" ga-label="all-features-icloud" href="{$schema}demo.{$domain}/setDevice/126?redirect_url=cp/call">View Demo</a></div>
 
                                     </div>
                                 </div>
@@ -1527,7 +1528,7 @@
                                             {*<li>Protect Pumpic app with a password from being removed</li>*}
                                             {*<li>Lock the target device and control its activity remotely</li>*}
                                         {*</ul>*}
-                                        {*<div><a class="btn-orange ga-action-click" ga-action="click" ga-category="demo link" ga-label="all-features-icloud" target="_blank"  href="http://demo.{$domain}/setDevice/125?redirect_url=cp/settings">View Demo</a></div>*}
+                                        {*<div><a class="btn-orange ga-action-click" ga-action="click" ga-category="demo link" ga-label="all-features-icloud" target="_blank"  href="{$schema}demo.{$domain}/setDevice/125?redirect_url=cp/settings">View Demo</a></div>*}
                                         {**}
                                     {*</div>*}
                                 {*</div>*}
@@ -1576,7 +1577,7 @@
                                             <li>Protect Pumpic app with a password from being removed</li>
                                             <li>Lock the target device and control its activity remotely</li>
                                         </ul>
-                                        <div><a class="btn-orange ga-action-click" ga-action="click" ga-category="demo link" ga-label="all-features-icloud" href="http://demo.{$domain}/setDevice/125?redirect_url=cp/settings">View Demo</a></div>
+                                        <div><a class="btn-orange ga-action-click" ga-action="click" ga-category="demo link" ga-label="all-features-icloud" href="{$schema}demo.{$domain}/setDevice/125?redirect_url=cp/settings">View Demo</a></div>
 
                                     </div>
                                 </div>
@@ -1597,7 +1598,7 @@
 
                                 <div class='box-all-features'>
                                     <a class='btn-red{*btn-green*} ga-action-click'
-                                       href='http://{$domain}/store.html'
+                                       href='/store.html'
                                        ga-category="store link"
                                        ga-action="click"
                                        ga-label="all-features-icloud">Try now!</a>
@@ -1723,7 +1724,7 @@
                                                 ga-category="demo link"
                                                 ga-action="click"
                                                 ga-label="all-features-android"
-                                                href="http://demo.{$domain}/setDevice/125?redirect_url=cp/calls">View Demo</a></div>
+                                                href="{$schema}demo.{$domain}/setDevice/125?redirect_url=cp/calls">View Demo</a></div>
 
                                     </div>
                                 </div>
@@ -1756,7 +1757,7 @@
                                                 target="_blank"
                                                 ga-category="demo link"
                                                 ga-action="click"
-                                                ga-label="all-features-android" href="http://demo.{$domain}/setDevice/125?redirect_url=cp/sms">View Demo</a></div>
+                                                ga-label="all-features-android" href="{$schema}demo.{$domain}/setDevice/125?redirect_url=cp/sms">View Demo</a></div>
 
                                     </div>
                                 </div>
@@ -1804,7 +1805,7 @@
                                                 target="_blank"
                                                 ga-category="demo link"
                                                 ga-action="click"
-                                                ga-label="all-features-android" href="http://demo.{$domain}/setDevice/125?redirect_url=cp/locations">View Demo</a></div>
+                                                ga-label="all-features-android" href="{$schema}demo.{$domain}/setDevice/125?redirect_url=cp/locations">View Demo</a></div>
                                     </div>
                                 </div>
 
@@ -1832,7 +1833,7 @@
                                                 ga-category="demo link"
                                                 ga-action="click"
                                                 ga-label="all-features-android"
-                                                href="http://demo.{$domain}/setDevice/125?redirect_url=cp/applications">View Demo</a></div>
+                                                href="{$schema}demo.{$domain}/setDevice/125?redirect_url=cp/applications">View Demo</a></div>
 
                                     </div>
                                 </div>
@@ -1869,7 +1870,7 @@
                                     <div class='block-info'>
                                         <p>View each <b>photo</b> or <b>video</b> shot <b>by the camera</b> of the target smartphone or <b>downloaded</b> from the Internet. Monitor all multimedia files stored on the target device.</p>
 
-                                        <div><a class="btn-orange" href="http://demo.{$domain}/setDevice/125?redirect_url=cp/photos">View Demo</a></div>
+                                        <div><a class="btn-orange" href="{$schema}demo.{$domain}/setDevice/125?redirect_url=cp/photos">View Demo</a></div>
 
                                     </div>
                                 </div>
@@ -1928,7 +1929,7 @@
                                                 ga-category="demo link"
                                                 ga-action="click"
                                                 ga-label="all-features-android"
-                                                href="http://demo.{$domain}/setDevice/125?redirect_url=cp/facebook">View Demo</a></div>
+                                                href="{$schema}demo.{$domain}/setDevice/125?redirect_url=cp/facebook">View Demo</a></div>
 
                                     </div>
                                 </div>
@@ -1955,7 +1956,7 @@
                                                 ga-category="demo link"
                                                 ga-action="click"
                                                 ga-label="all-features-android"
-                                                href="http://demo.{$domain}/setDevice/125?redirect_url=cp/instagram">View Demo</a></div>
+                                                href="{$schema}demo.{$domain}/setDevice/125?redirect_url=cp/instagram">View Demo</a></div>
 
                                     </div>
                                 </div>
@@ -2002,7 +2003,7 @@
                                                 ga-category="demo link"
                                                 ga-action="click"
                                                 ga-label="all-features-android"
-                                                href="http://demo.{$domain}/setDevice/125?redirect_url=cp/browserHistory">View Demo</a></div>
+                                                href="{$schema}demo.{$domain}/setDevice/125?redirect_url=cp/browserHistory">View Demo</a></div>
 
                                     </div>
                                 </div>
@@ -2031,7 +2032,7 @@
                                                 ga-category="demo link"
                                                 ga-action="click"
                                                 ga-label="all-features-android"
-                                                href="http://demo.{$domain}/setDevice/125?redirect_url=cp/browserHistory">View Demo</a></div>
+                                                href="{$schema}demo.{$domain}/setDevice/125?redirect_url=cp/browserHistory">View Demo</a></div>
 
                                     </div>
                                 </div>
@@ -2074,7 +2075,7 @@
                                                 ga-category="demo link"
                                                 ga-action="click"
                                                 ga-label="all-features-android"
-                                                href="http://demo.{$domain}/setDevice/125?redirect_url=cp/photos">View Demo</a></div>
+                                                href="{$schema}demo.{$domain}/setDevice/125?redirect_url=cp/photos">View Demo</a></div>
 
                                     </div>
                                 </div>
@@ -2116,7 +2117,7 @@
                                                 ga-category="demo link"
                                                 ga-action="click"
                                                 ga-label="all-features-android"
-                                                href="http://demo.{$domain}/setDevice/125?redirect_url=cp/photos">View Demo</a></div>
+                                                href="{$schema}demo.{$domain}/setDevice/125?redirect_url=cp/photos">View Demo</a></div>
 
                                      </div>
                                  </div>
@@ -2151,7 +2152,7 @@
                                                 ga-category="demo link"
                                                 ga-action="click"
                                                 ga-label="all-features-android"
-                                                href="http://demo.{$domain}/setDevice/125?redirect_url=cp/emails">View Demo</a></div>
+                                                href="{$schema}demo.{$domain}/setDevice/125?redirect_url=cp/emails">View Demo</a></div>
 
                                     </div>
                                 </div>
@@ -2180,7 +2181,7 @@
                                                 ga-category="demo link"
                                                 ga-action="click"
                                                 ga-label="all-features-android"
-                                                href="http://demo.{$domain}/setDevice/125?redirect_url=cp/emails">View Demo</a></div>
+                                                href="{$schema}demo.{$domain}/setDevice/125?redirect_url=cp/emails">View Demo</a></div>
 
                                     </div>
                                 </div>
@@ -2224,7 +2225,7 @@
                                                  ga-category="demo link"
                                                  ga-action="click"
                                                  ga-label="all-features-android"
-                                                  href="http://demo.{$domain}/setDevice/125?redirect_url=cp/calendar">View Demo</a></div>
+                                                  href="{$schema}demo.{$domain}/setDevice/125?redirect_url=cp/calendar">View Demo</a></div>
 
                                      </div>
                                  </div>
@@ -2276,7 +2277,7 @@
                                                 ga-category="demo link"
                                                 ga-action="click"
                                                 ga-label="all-features-android"
-                                                 href="http://demo.{$domain}/setDevice/125?redirect_url=cp/calendar">View Demo</a></div>
+                                                 href="{$schema}demo.{$domain}/setDevice/125?redirect_url=cp/calendar">View Demo</a></div>
 
                                     </div>
                                 </div>
@@ -2311,7 +2312,7 @@
                                                 ga-category="demo link"
                                                 ga-action="click"
                                                 ga-label="all-features-android"
-                                                target="_blank"  href="http://demo.{$domain}/setDevice/125?redirect_url=cp/keylogger">View Demo</a></div>
+                                                target="_blank"  href="{$schema}demo.{$domain}/setDevice/125?redirect_url=cp/keylogger">View Demo</a></div>
 
                                     </div>
                                 </div>
@@ -2340,7 +2341,7 @@
                                                 ga-category="demo link"
                                                 ga-action="click"
                                                 ga-label="all-features-android"
-                                                 href="http://demo.{$domain}/setDevice/125?redirect_url=cp/keylogger">View Demo</a></div>
+                                                 href="{$schema}demo.{$domain}/setDevice/125?redirect_url=cp/keylogger">View Demo</a></div>
 
                                     </div>
                                 </div>
@@ -2380,7 +2381,7 @@
                                                 ga-category="demo link"
                                                 ga-action="click"
                                                 ga-label="all-features-android"
-                                                href="http://demo.{$domain}/setDevice/125?redirect_url=cp/smsCommands">View Demo</a></div>
+                                                href="{$schema}demo.{$domain}/setDevice/125?redirect_url=cp/smsCommands">View Demo</a></div>
 
                                     </div>
                                 </div>
@@ -2425,7 +2426,7 @@
                                                 ga-category="demo link"
                                                 ga-action="click"
                                                 ga-label="all-features-android"
-                                                 href="http://demo.{$domain}/setDevice/125?redirect_url=cp/smsCommands">View Demo</a></div>
+                                                 href="{$schema}demo.{$domain}/setDevice/125?redirect_url=cp/smsCommands">View Demo</a></div>
 
                                     </div>
                                 </div>
@@ -2459,7 +2460,7 @@
                                                 ga-category="demo link"
                                                 ga-action="click"
                                                 ga-label="all-features-android"
-                                                 href="http://demo.{$domain}/setDevice/125?redirect_url=cp/instagram">View Demo</a></div>
+                                                 href="{$schema}demo.{$domain}/setDevice/125?redirect_url=cp/instagram">View Demo</a></div>
 
                                     </div>
                                 </div>
@@ -2490,7 +2491,7 @@
                                                 ga-category="demo link"
                                                 ga-action="click"
                                                 ga-label="all-features-android"
-                                                  href="http://demo.{$domain}/setDevice/125?redirect_url=cp/locations">View Demo</a></div>
+                                                  href="{$schema}demo.{$domain}/setDevice/125?redirect_url=cp/locations">View Demo</a></div>
 
                                     </div>
                                 </div>
@@ -2531,7 +2532,7 @@
                                                 ga-category="demo link"
                                                 ga-action="click"
                                                 ga-label="all-features-android"
-                                                href="http://demo.{$domain}/setDevice/125?redirect_url=cp/locations">View Demo</a></div>
+                                                href="{$schema}demo.{$domain}/setDevice/125?redirect_url=cp/locations">View Demo</a></div>
 
                                     </div>
                                 </div>
@@ -2565,7 +2566,7 @@
                                                 ga-category="demo link"
                                                 ga-action="click"
                                                 ga-label="all-features-android"
-                                                href="http://demo.{$domain}/setDevice/125?redirect_url=cp/settings">View Demo</a></div>
+                                                href="{$schema}demo.{$domain}/setDevice/125?redirect_url=cp/settings">View Demo</a></div>
 
                                     </div>
                                 </div>
@@ -2619,7 +2620,7 @@
                                                 ga-category="demo link"
                                                 ga-action="click"
                                                 ga-label="all-features-android"
-                                                href="http://demo.{$domain}/setDevice/125?redirect_url=cp/settings">View Demo</a></div>
+                                                href="{$schema}demo.{$domain}/setDevice/125?redirect_url=cp/settings">View Demo</a></div>
 
                                     </div>
                                 </div>
@@ -2643,7 +2644,7 @@
                                        ga-category="store link"
                                        ga-action="click"
                                        ga-label="all-features-android"
-                                       href='http://{$domain}/store.html#android' >Try now!</a>
+                                       href='/store.html#android' >Try now!</a>
                                 </div>
                                 {*<div class='box-line-solid only-pc'>
                                     <span class='box-solid-1'></span>
@@ -2763,7 +2764,7 @@
                                                 ga-category="demo link"
                                                 ga-action="click"
                                                 ga-label="all-features-jailbreak"
-                                                href="http://demo.{$domain}/setDevice/5059?redirect_url=cp/calls">View Demo</a></div>
+                                                href="{$schema}demo.{$domain}/setDevice/5059?redirect_url=cp/calls">View Demo</a></div>
 
                                     </div>
                                 </div>
@@ -2797,7 +2798,7 @@
                                                 ga-category="demo link"
                                                 ga-action="click"
                                                 ga-label="all-features-jailbreak"
-                                                href="http://demo.{$domain}/setDevice/5059?redirect_url=cp/sms">View Demo</a></div>
+                                                href="{$schema}demo.{$domain}/setDevice/5059?redirect_url=cp/sms">View Demo</a></div>
 
                                     </div>
                                 </div>
@@ -2846,7 +2847,7 @@
                                                 ga-category="demo link"
                                                 ga-action="click"
                                                 ga-label="all-features-jailbreak"
-                                                href="http://demo.{$domain}/setDevice/5059?redirect_url=cp/locations">View Demo</a></div>
+                                                href="{$schema}demo.{$domain}/setDevice/5059?redirect_url=cp/locations">View Demo</a></div>
 
                                     </div>
                                 </div>
@@ -2875,7 +2876,7 @@
                                                 ga-category="demo link"
                                                 ga-action="click"
                                                 ga-label="all-features-jailbreak"
-                                                 href="http://demo.{$domain}/setDevice/5059?redirect_url=cp/applications">View Demo</a></div>
+                                                 href="{$schema}demo.{$domain}/setDevice/5059?redirect_url=cp/applications">View Demo</a></div>
 
                                     </div>
                                 </div>
@@ -2917,7 +2918,7 @@
                                                 ga-category="demo link"
                                                 ga-action="click"
                                                 ga-label="all-features-jailbreak"
-                                                 href="http://demo.{$domain}/setDevice/125?redirect_url=cp/photos">View Demo</a></div>
+                                                 href="{$schema}demo.{$domain}/setDevice/125?redirect_url=cp/photos">View Demo</a></div>
 
                                     </div>
                                 </div>
@@ -2974,7 +2975,7 @@
                                                 ga-category="demo link"
                                                 ga-action="click"
                                                 ga-label="all-features-jailbreak"
-                                                 href="http://demo.{$domain}/setDevice/5059?redirect_url=cp/facebook">View Demo</a></div>
+                                                 href="{$schema}demo.{$domain}/setDevice/5059?redirect_url=cp/facebook">View Demo</a></div>
 
                                     </div>
                                 </div>
@@ -3001,7 +3002,7 @@
                                                 ga-category="demo link"
                                                 ga-action="click"
                                                 ga-label="all-features-jailbreak"
-                                                 href="http://demo.{$domain}/setDevice/5059?redirect_url=cp/instagram">View Demo</a></div>
+                                                 href="{$schema}demo.{$domain}/setDevice/5059?redirect_url=cp/instagram">View Demo</a></div>
 
                                     </div>
                                 </div>
@@ -3045,7 +3046,7 @@
                                                 ga-category="demo link"
                                                 ga-action="click"
                                                 ga-label="all-features-jailbreak"
-                                                href="http://demo.{$domain}/setDevice/5059?redirect_url=cp/browserHistory">View Demo</a></div>
+                                                href="{$schema}demo.{$domain}/setDevice/5059?redirect_url=cp/browserHistory">View Demo</a></div>
 
                                     </div>
                                 </div>
@@ -3069,7 +3070,7 @@
                                     <div class='block-info'>
                                         <p>Monitor <b>browsing history</b> and view websites visited from the target device. Check <b>bookmarks</b>. <b>Block websites</b> containing inappropriate content.</p>
 
-                                        <div><a class="btn-orange" href="http://demo.{$domain}/setDevice/5059?redirect_url=cp/browserHistory">View Demo</a></div>
+                                        <div><a class="btn-orange" href="{$schema}demo.{$domain}/setDevice/5059?redirect_url=cp/browserHistory">View Demo</a></div>
 
                                     </div>
                                 </div>
@@ -3112,7 +3113,7 @@
                                                 ga-category="demo link"
                                                 ga-action="click"
                                                 ga-label="all-features-jailbreak"
-                                                href="http://demo.{$domain}/setDevice/5059?redirect_url=cp/photos">View Demo</a></div>
+                                                href="{$schema}demo.{$domain}/setDevice/5059?redirect_url=cp/photos">View Demo</a></div>
 
                                     </div>
                                 </div>
@@ -3155,7 +3156,7 @@
                                                 ga-category="demo link"
                                                 ga-action="click"
                                                 ga-label="all-features-jailbreak"
-                                                 href="http://demo.{$domain}/setDevice/5059?redirect_url=cp/photos">View Demo</a></div>
+                                                 href="{$schema}demo.{$domain}/setDevice/5059?redirect_url=cp/photos">View Demo</a></div>
 
                                     </div>
                                 </div>
@@ -3189,7 +3190,7 @@
                                                 ga-category="demo link"
                                                 ga-action="click"
                                                 ga-label="all-features-jailbreak"
-                                                target="_blank"  href="http://demo.{$domain}/setDevice/5059?redirect_url=cp/emails">View Demo</a></div>
+                                                target="_blank"  href="{$schema}demo.{$domain}/setDevice/5059?redirect_url=cp/emails">View Demo</a></div>
 
                                     </div>
                                 </div>
@@ -3218,7 +3219,7 @@
                                                 ga-category="demo link"
                                                 ga-action="click"
                                                 ga-label="all-features-jailbreak"
-                                                 href="http://demo.{$domain}/setDevice/5059?redirect_url=cp/emails">View Demo</a></div>
+                                                 href="{$schema}demo.{$domain}/setDevice/5059?redirect_url=cp/emails">View Demo</a></div>
 
                                     </div>
                                 </div>
@@ -3267,7 +3268,7 @@
                                                 ga-category="demo link"
                                                 ga-action="click"
                                                 ga-label="all-features-jailbreak"
-                                                href="http://demo.{$domain}/setDevice/5059?redirect_url=cp/calendar">View Demo</a></div>
+                                                href="{$schema}demo.{$domain}/setDevice/5059?redirect_url=cp/calendar">View Demo</a></div>
 
                                     </div>
                                 </div>
@@ -3320,7 +3321,7 @@
                                                 ga-category="demo link"
                                                 ga-action="click"
                                                 ga-label="all-features-jailbreak"
-                                                 href="http://demo.{$domain}/setDevice/5059?redirect_url=cp/calendar">View Demo</a></div>
+                                                 href="{$schema}demo.{$domain}/setDevice/5059?redirect_url=cp/calendar">View Demo</a></div>
 
                                     </div>
                                 </div>
@@ -3354,7 +3355,7 @@
                                                 ga-category="demo link"
                                                 ga-action="click"
                                                 ga-label="all-features-jailbreak"
-                                                href="http://demo.{$domain}/setDevice/5059?redirect_url=cp/keylogger">View Demo</a></div>
+                                                href="{$schema}demo.{$domain}/setDevice/5059?redirect_url=cp/keylogger">View Demo</a></div>
 
                                     </div>
                                 </div>
@@ -3382,7 +3383,7 @@
                                                 ga-category="demo link"
                                                 ga-action="click"
                                                 ga-label="all-features-jailbreak"
-                                                 href="http://demo.{$domain}/setDevice/5059?redirect_url=cp/keylogger">View Demo</a></div>
+                                                 href="{$schema}demo.{$domain}/setDevice/5059?redirect_url=cp/keylogger">View Demo</a></div>
 
                                     </div>
                                 </div>
@@ -3421,7 +3422,7 @@
                                                 ga-category="demo link"
                                                 ga-action="click"
                                                 ga-label="all-features-jailbreak"
-                                                href="http://demo.{$domain}/setDevice/5059?redirect_url=cp/smsCommands">View Demo</a></div>
+                                                href="{$schema}demo.{$domain}/setDevice/5059?redirect_url=cp/smsCommands">View Demo</a></div>
 
                                     </div>
                                 </div>
@@ -3465,7 +3466,7 @@
                                                 ga-category="demo link"
                                                 ga-action="click"
                                                 ga-label="all-features-jailbreak"
-                                                 href="http://demo.{$domain}/setDevice/5059?redirect_url=cp/smsCommands">View Demo</a></div>
+                                                 href="{$schema}demo.{$domain}/setDevice/5059?redirect_url=cp/smsCommands">View Demo</a></div>
 
                                     </div>
                                 </div>
@@ -3499,7 +3500,7 @@
                                                 ga-category="demo link"
                                                 ga-action="click"
                                                 ga-label="all-features-jailbreak"
-                                                 target="_blank" href="http://demo.{$domain}/setDevice/5059?redirect_url=cp/instagram">View Demo</a></div>
+                                                 target="_blank" href="{$schema}demo.{$domain}/setDevice/5059?redirect_url=cp/instagram">View Demo</a></div>
 
                                     </div>
                                 </div>
@@ -3531,7 +3532,7 @@
                                                 ga-category="demo link"
                                                 ga-action="click"
                                                 ga-label="all-features-jailbreak"
-                                                  href="http://demo.{$domain}/setDevice/5059?redirect_url=cp/locations">View Demo</a></div>
+                                                  href="{$schema}demo.{$domain}/setDevice/5059?redirect_url=cp/locations">View Demo</a></div>
 
                                     </div>
                                 </div>
@@ -3573,7 +3574,7 @@
                                                 ga-category="demo link"
                                                 ga-action="click"
                                                 ga-label="all-features-jailbreak"
-                                                href="http://demo.{$domain}/setDevice/5059?redirect_url=cp/locations">View Demo</a></div>
+                                                href="{$schema}demo.{$domain}/setDevice/5059?redirect_url=cp/locations">View Demo</a></div>
 
                                     </div>
                                 </div>
@@ -3615,7 +3616,7 @@
                                                 ga-category="demo link"
                                                 ga-action="click"
                                                 ga-label="all-features-jailbreak"
-                                                 href="http://demo.{$domain}/setDevice/126?redirect_url=cp/call">View Demo</a></div>
+                                                 href="{$schema}demo.{$domain}/setDevice/126?redirect_url=cp/call">View Demo</a></div>
 
                                     </div>
                                 </div>
@@ -3657,7 +3658,7 @@
                                                 ga-category="demo link"
                                                 ga-action="click"
                                                 ga-label="all-features-jailbreak"
-                                                href="http://demo.{$domain}/setDevice/5059?redirect_url=cp/settings">View Demo</a></div>
+                                                href="{$schema}demo.{$domain}/setDevice/5059?redirect_url=cp/settings">View Demo</a></div>
 
                                     </div>
                                 </div>
@@ -3708,7 +3709,7 @@
                                                 ga-category="demo link"
                                                 ga-action="click"
                                                 ga-label="all-features-jailbreak"
-                                                  href="http://demo.{$domain}/setDevice/5059?redirect_url=cp/settings">View Demo</a></div>
+                                                  href="{$schema}demo.{$domain}/setDevice/5059?redirect_url=cp/settings">View Demo</a></div>
 
                                     </div>
                                 </div>
@@ -3731,7 +3732,7 @@
                                        ga-action="click"
                                        ga-category="store link"
                                        ga-label="all-features-jailbreak"
-                                       href='http://{$domain}/store.html#jailbreak' >Try now!</a>
+                                       href='/store.html#jailbreak' >Try now!</a>
                                 </div>
                                 {*<div class='box-line-solid only-pc'>
                                     <span class='box-solid-1'></span>

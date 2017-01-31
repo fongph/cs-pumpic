@@ -114,12 +114,12 @@
                             {if $getSetting._item.alies}
                                 <div class="breadcrumbs col-lg-12">
                                     <div class="h4">
-                                        <a class="underline" href="http://{$domain}/compatibility/">Compatibility</a>
+                                        <a class="underline" href="/compatibility/">Compatibility</a>
                                         <span class="arrows icon-right-open"></span>
                                     </div>
                                     <h1 class='h3'>
                                         {$getSetting._item.name}
-                                        {*<a href="http://{$domain}/compatibility/{$getSetting._item.alies}/">{$getSetting._item.name}</a>*}
+                                        {*<a href="{$schema}{$domain}/compatibility/{$getSetting._item.alies}/">{$getSetting._item.name}</a>*}
                                     </h1>
                                 </div>
                             {/if}
@@ -127,7 +127,7 @@
                                 <div class="thumbnail" style="margin-bottom: 40px;">
 
                                     <div class="img_thumb">
-                                        <img src="http://{$getSetting.api._domain}/{$getSetting.api.path_img}/{$getSetting._item.m_img}" height="202" width="90" alt="">
+                                        <img src="//{$getSetting.api._domain}/{$getSetting.api.path_img}/{$getSetting._item.m_img}" height="202" width="90" alt="">
                                     </div>
                                     {if $getSetting._item.os  == "iOS"}
                                     <div class="caption init-height">
@@ -178,9 +178,9 @@
                                             {/if}
                                         </p>
                                         <a {if $getSetting._item.os == "iOS"}
-                                            href="http://demo.{$domain}/setDevice/126?redirect_url=cp/calls"
+                                            href="{$schema}demo.{$domain}/setDevice/126?redirect_url=cp/calls"
                                         {else}
-                                            href="http://demo.{$domain}/setDevice/125?redirect_url=cp/calls"
+                                            href="{$schema}demo.{$domain}/setDevice/125?redirect_url=cp/calls"
                                         {/if}
                                                 style="margin-bottom:10px;"
                                                 id="demo-btn"

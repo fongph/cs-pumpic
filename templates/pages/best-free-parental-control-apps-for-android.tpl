@@ -2,7 +2,7 @@
 
     title="Best Free Parental Control Apps for Android | Pumpic"
     description="Check out a list of free parental control software for Android. Choose the best free parental control app for Android smartphones and tablets to protect your kids."
-    amp = "http://pumpic.com/amp/best-free-parental-control-apps-for-android.html"
+    amp = "{$schema}pumpic.com/amp/best-free-parental-control-apps-for-android.html"
     customeStyle="
         .block-child-location-tracking .ipad-text {
             padding: 10px 0;
@@ -109,7 +109,7 @@
             <div class="pt30 pb20">
                 <p>Smartphones and tablets connected to the Internet have become a trivial part of our world. Everyone’s got one. Meanwhile, many children find out how to use mobile devices before they can actually speak. And all these technologies go along kids’ lives, make them more curios, help to educate themselves, and very often expose them to danger.</p>
 				<p>Cyberbullies insult kids on social media; haunt and offend them on instant chats. This horrible issue is known to be a major suicide factor among teens. Online predators try to gain children’s confidence and make them swallow the hook. Sexting is becoming a normal way of communication, while exchanging nude photos – the best way to show one’s feelings. Moreover, the Internet is full of explicit sexuality, violence, and hate. Our kids have unlimited access to all of this. At any time. With one single click. On their smartphone and tablets. And parents don’t know.</p>
-				<p><a class="a-default" href="http://pumpic.com/android-parental-monitoring.html">Android parental monitoring applications</a> allow parents to bring the situation under control and protect their children. Pumpic is a good example of reliable protection in this case. Such software lets you follow kids’ activities on mobile devices as well as the Internet. Apply parental controls and see what your kids are texting, which websites they visit and people they talk to. Block undesired content inappropriate for kids. Block apps and other activities to prevent them from wasting time.</p>
+				<p><a class="a-default" href="/android-parental-monitoring.html">Android parental monitoring applications</a> allow parents to bring the situation under control and protect their children. Pumpic is a good example of reliable protection in this case. Such software lets you follow kids’ activities on mobile devices as well as the Internet. Apply parental controls and see what your kids are texting, which websites they visit and people they talk to. Block undesired content inappropriate for kids. Block apps and other activities to prevent them from wasting time.</p>
 				<p>Check out our list below and choose the best Android parental control app.</p>
             </div>
         </div>
@@ -127,7 +127,7 @@
         <div class="col-lg-12 col-md-12 col-sm-12">
             <h2 class="h3 text-left">Kids Place App Review</h3>
             <div class="pt30 pb20">
-                <img class="img-align-right" alt="kids place mobile screen' Location" src="{$img}/landings/free-android-parental-controls/kids-place-review.png" width="207px" height="208px" />
+                <img class="img-align-right" alt="kids place mobile screen" src="{$img}/landings/free-android-parental-controls/kids-place-review.png" width="207px" height="208px" />
                 <img class="app-icon-left" src="{$img}/landings/free-android-parental-controls/kids-place-review-logo.png" alt="kids place logo">
 			<p>Kids Place is parental controls that allow you to create childproof environment on Android smartphones and tablets. The app works as a separate user account, which lets parents specify particular apps and activities kids may use and lock the account with a password. It means that your children will not be able to access any other activities, but those authorized by parents.</p>
 			<p>The app can prevent your kids from buying and downloading new applications, receiving incoming calls, and using wireless signals. Kids Place also has built-in options for online content filtering. With it, you can restrict the access to inappropriate photos and video files. Importantly, there is a timer feature in the app that allows parents to control children’s screen time.</p>
@@ -180,7 +180,7 @@
             <h2 class="h3 text-left">Screen Time Labs Review</h3>
             <div class="pt30 pb20">
                 <img class="img-align-right" alt="screentime mobile screen" src="{$img}/landings/free-android-parental-controls/screen-time-review.png" width="207px" height="208px" />
-                <img class="app-icon-left" src="{$img}/landings/free-android-parental-controls/screen-time-review-logo.png" alt="">
+                <img class="app-icon-left" src="{$img}/landings/free-android-parental-controls/screen-time-review-logo.png" alt="screen time logo">
 			<p>The Screen Time app is designed for managing children’s time spent on smartphones and tablets. It allows parents to set various restrictions on kids’ devices as well as monitor browsing history and application downloads.</p>
 			<p>With this parental control, you will be able to set daily time limits on each application separately, block specific apps at bedtime or while your kids are at school. Thus, you can restrict access to social media so as to prevent your children from using them during their classes.</p>
 			<p>A time out feature lets parents block device activities with one single click on their own smartphones or tablets. The app also allows you to reward kids with bonus time on their mobile devices, if they show good task performance or improve their behavior. In addition, the Screen Time app lets review websites your kids visit, applications they download, as well as apps they use most of all.</p>
@@ -308,7 +308,7 @@
         <div class="col-lg-12 col-md-12 col-sm-12">
             <h2 class="h3 text-right">Kakatu Review</h3>
             <div class="pt30 pb20">
-                <img class="img-align-left" alt="kakatu screen" src="{$img}//landings/free-android-parental-controls/kakatu-review.png" width="207px" height="208px" />
+                <img class="img-align-left" alt="kakatu screen" src="{$img}/landings/free-android-parental-controls/kakatu-review.png" width="207px" height="208px" />
                 <img class="app-icon-right" src="{$img}/landings/free-android-parental-controls/kakatu-review-logo.png" alt="kakatu logo">
                 <p>This parental control software is designed to protect your children from excessive use of their smartphone and tablets, for safe Internet browsing and device control. It will also protect your own mobile device, if your kids have none, but you give them yours from time to time.</p>
 				<p>The Kakatu app features a timer to control how much time your kids spend playing games, surfing the Internet, using other applications, and provides you with reports on their activities. You can also set time schedules to prevent children from using devices at bed time or classes. The app allows you to specify at what time each application can be used.</p>
@@ -353,7 +353,7 @@
         <div class="container">
                 <h2 class="text-center">Pumpic Provides Reliable Protection</h2>
 				<p>Pumpic is a multifeature parental control application comprehensive enough to provide reliable protection for your children. The app covers all of your kids’ activities online and daily. It is a helping hand for careful parents for all of life emergencies.</p>
-                <p>Pumpic is a pay service and you won’t find it among Android monitoring software for free. However, it is one of the <a class="a-default" href="http://pumpic.com/reviews/">best parental controls</a> available online. When you buy Pumpic, you contribute to child safety. And Pumpic is worth the cost. After all, there is always free cheese in a mousetrap.</p>
+                <p>Pumpic is a pay service and you won’t find it among Android monitoring software for free. However, it is one of the <a class="a-default" href="/reviews/">best parental controls</a> available online. When you buy Pumpic, you contribute to child safety. And Pumpic is worth the cost. After all, there is always free cheese in a mousetrap.</p>
 				<div class="row">
                         <div class="col-sm-4 col-md-4 col-lg-4">
                                 <div class="feature">

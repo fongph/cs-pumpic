@@ -22,7 +22,7 @@
                     </div>
                 </div>
                 <div id="promo-item" class="promo-button col-sm-2 col-md-2 col-lg-2">
-                    <a href="http://{$domain}/store.html" 
+                    <a href="/store.html"
                        class="banner-v3-button btn btn-red ga-action-click" 
                        id="promo-footer-buy"
                         ga-action ="click"

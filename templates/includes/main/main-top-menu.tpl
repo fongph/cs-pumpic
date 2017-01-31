@@ -13,13 +13,13 @@
                         <div itemscope itemtype="http://schema.org/Organization" class="logo">
                           <meta itemprop="name" content="Pumpic Parental Monitoring">
                             <a href="/" itemprop="url">pumpic
-                            <img itemprop="logo" src="http://{$domain}/images/logo/pumpic-logo.svg" style="max-width: 96%;" alt="pumpic app logo" />
+                            <img itemprop="logo" src="/images/logo/pumpic-logo.svg" style="max-width: 96%;" alt="pumpic app logo" />
                             </a>
                         </div>
                     </div>
 
                      <div class='box-cp pull-right'>
-                        <a href="{if isset($demoHref)}http://demo.{$domain}{$demoHref}{else}{getDemoLink domain=$domain}{/if}" target="_blank" class="btn btn-sm btn-orange btn-success visible-lg cp-login">Demo</a>
+                        <a href="{if isset($demoHref)}{$schema}demo.{$domain}{$demoHref}{else}{getDemoLink domain=$domain}{/if}" target="_blank" class="btn btn-sm btn-orange btn-success visible-lg cp-login">Demo</a>
                     </div>
 
                     {*if ''|hasUser}
@@ -80,7 +80,7 @@
                             {*{/nocache}*}
 
                             <li>
-                                <a href="http://demo.{$domain}{if isset($demoHref)}{$demoHref}{else}/setDevice/126?redirect_url=cp/calls{/if}" target="_blank"
+                                <a href="{$schema}demo.{$domain}{if isset($demoHref)}{$demoHref}{else}/setDevice/126?redirect_url=cp/calls{/if}" target="_blank"
                                    class="btn btn-sm btn-orange btn-success hidden-lg cp-login"> Demo</a>
                             </li>
 

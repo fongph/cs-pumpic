@@ -112,7 +112,7 @@
     blockBg='dark'}
 
 	    <p class="text-center f-light">Android tablets are introduced in plenty of shapes, colors, and brands to fit any taste. Due to a relatively low price for many of available models, it is Android that your kids are likely to get as their first tablet. That’s why it is so important to consider its safety in children’s hands.</p>
-		<p class="text-center f-light">Before handing your kids a mobile device connected online, make sure you know of its potential risks and can prevent your little ones from facing them. Educate yourself first and teach your children how to behave securely on the Internet. Choose reliable software and learn <a class="a-default" href="http://pumpic.com/security/how-to-set-parental-controls-on-android-tablet/" target="_blanc">how to set parental controls on an Android tablet</a> before you allow your kids to use it.</p>
+		<p class="text-center f-light">Before handing your kids a mobile device connected online, make sure you know of its potential risks and can prevent your little ones from facing them. Educate yourself first and teach your children how to behave securely on the Internet. Choose reliable software and learn <a class="a-default" href="/security/how-to-set-parental-controls-on-android-tablet/" target="_blanc">how to set parental controls on an Android tablet</a> before you allow your kids to use it.</p>
         <!-- BLOCK STATISTICK -->
         {*<div class="block-statistick row">
 
@@ -232,7 +232,7 @@
                             </div>
                     </div>
                     <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
-                            <img src="{$img}/testimonials/miranda-p.png" alt="pumpic testimonial from  miranda p" class="testimonial-photo">
+                            <img src="{$img}/testimonials/miranda-p.png" alt="pumpic testimonial from miranda p" class="testimonial-photo">
                             <div class="testimonial-text">
                                     <h4>Miranda P. – mother of 14-year-old son</h4>
                                     <p>“When I decided to set parental controls on my son’s Android tablet I didn’t actually believe the app would do such a good job. My husband got a free trial and we though why not to give it a shot. We both were amazed with how helpful Pumpic could be. It shows just everything happening on my son’s tablet. Browsing history, Facebook, Instagram, Snapchat. The app logs all the data I need to protect him online. And location tracking option is irreplaceable.”</p>

@@ -60,7 +60,7 @@ description="Pumpic offers high-quality cell phone tracking software for a good 
         .banner-store {
             max-width: 782px;
             margin: 0 auto;
-            background: url("http://www.wearewebstars.dk/codepen/img//s2.png"), linear-gradient(-54deg,#1d477d,#3594a2,#bb6884) no-repeat bottom;
+            background: url("https://www.wearewebstars.dk/codepen/img//s2.png"), linear-gradient(-54deg,#1d477d,#3594a2,#bb6884) no-repeat bottom;
             background-size: 130px, 100%;
             padding: 8px 0 0;
             display: flex;

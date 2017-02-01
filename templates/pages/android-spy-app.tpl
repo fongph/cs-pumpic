@@ -194,7 +194,7 @@
         </div>
         <!-- END -->
 
-        <p>There are many companies providing you with an opportunity to secretly view remote activities of another person. You can check a list of the <a href="/best-spy-apps-for-android.html">best spy apps for Android</a> to know more about tracking apps and their features. The most know among them are mSpy, Mobile Spy, SpyEra, Phone Tracker, and MobiStealth. By the way, SMS spy is the most widespread kind of spying. SMS spy apps for Android allow monitoring incoming, outgoing, and even deleted messages.</p>
+        <p>There are many companies providing you with an opportunity to secretly view remote activities of another person. You can check a list of the best spy apps for Android to know more about tracking apps and their features. The most know among them are mSpy, Mobile Spy, SpyEra, Phone Tracker, and MobiStealth. By the way, SMS spy is the most widespread kind of spying. SMS spy apps for Android allow monitoring incoming, outgoing, and even deleted messages.</p>
 		<p>However, you should note that it is against the laws of most countries to spy on someone's device. Do doubt, it is illegal and unethical to use an SMS spy app for Android. Some advertisements make people believe that monitoring text messages and checking phone calls is normal, but in fact, it ignores legal requirements.</p>
 		
 {EndContent}

@@ -58,7 +58,7 @@
                                         ga-action ="click"
                                         ga-category="demo link"
                                         ga-label="aging-parent-protection-app" 
-                                       href="http://demo.{$domain}/setDevice/126?redirect_url=cp/calls" target="_blank">View Demo</a>
+                                       href="{$schema}demo.{$domain}/setDevice/126?redirect_url=cp/calls" target="_blank">View Demo</a>
                                         <a class="btn btn-red text-center ga-action-click" 
                                         ga-action ="click"
                                         ga-category="buy pumpic"

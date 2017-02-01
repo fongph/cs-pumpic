@@ -76,24 +76,7 @@
                         <div class="row">
                             <div class="h2 text-center">Compatibility</div>
                         </div>
-                        {if $getSetting._item.os  == "iOS"}
-                            <div class="row">
-                                <div class="col-sm-offset-3 col-sm-6">
-                                    <p style="font-size: 16px; color: #4d4f5b; text-align: center;">Choose your <i class="fa fa-apple filter_icon"></i> iOS solution type to see supported features</p>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-sm-offset-3 col-sm-6">
-                                    <div class="filter_fe" style="margin-bottom: 30px;">
-                                        <ul class="filter_list">
-                                            <li class="_filter-btn filter_item filter-active"><i class="fa fa-apple filter_icon"></i><b>iOS</b> <span class="filter_version"> (iCloud solution)</span></li>
-                                            <li class="_filter-btn filter_item"><i class="fa fa-unlock-alt filter_icon"></i><b>iOS</b> <span class="filter_version"> (jailbreak solution)</span></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
 
-                        {/if}
                         <!-- #log -->
                         <div class="row">
                             <div id="log"></div>
@@ -114,12 +97,12 @@
                             {if $getSetting._item.alies}
                                 <div class="breadcrumbs col-lg-12">
                                     <div class="h4">
-                                        <a class="underline" href="http://{$domain}/compatibility/">Compatibility</a>
+                                        <a class="underline" href="/compatibility/">Compatibility</a>
                                         <span class="arrows icon-right-open"></span>
                                     </div>
                                     <h1 class='h3'>
                                         {$getSetting._item.name}
-                                        {*<a href="http://{$domain}/compatibility/{$getSetting._item.alies}/">{$getSetting._item.name}</a>*}
+                                        {*<a href="{$schema}{$domain}/compatibility/{$getSetting._item.alies}/">{$getSetting._item.name}</a>*}
                                     </h1>
                                 </div>
                             {/if}
@@ -127,18 +110,10 @@
                                 <div class="thumbnail" style="margin-bottom: 40px;">
 
                                     <div class="img_thumb">
-                                        <img src="http://{$getSetting.api._domain}/{$getSetting.api.path_img}/{$getSetting._item.m_img}" height="202" width="90" alt="">
+                                        <img src="//{$getSetting.api._domain}/{$getSetting.api.path_img}/{$getSetting._item.m_img}" height="202" width="90" alt="">
                                     </div>
-                                    {if $getSetting._item.os  == "iOS"}
                                     <div class="caption init-height">
-                                        <section class="text-center" data-filter="jailbreak">
-
-                                            <span>OS: <strong>iOS (with jailbreak)  </strong></span>
-                                            <span >Versions:<strong> {$getSetting._item.version}</strong></span>
-
-                                        </section>
-                                        {elseif $getSetting._item.os  == "Android"}
-                                        <div class="caption init-height">
+                                        {if $getSetting._item.os  == "Android"}
                                             <section class="text-center">
 
                                                 <span>OS: <strong>{$getSetting._item.os}</strong></span>
@@ -149,22 +124,22 @@
 
                                         {if $getSetting._item.os  == "iOS"}
                                             {if $getSetting._item.name  == "Apple iPhone 4"}
-                                                <section class="text-center" data-filter="icloud">
-                                                    <span>OS: <strong>{if $getSetting._item.os  == "iOS"}iOS iCloud {else}{$getSetting._item.os}{/if} </strong></span>
+                                                <section class="text-center">
+                                                    <span>OS: <strong>{if $getSetting._item.os  == "iOS"}iOS {else}{$getSetting._item.os}{/if} </strong></span>
                                                     <span>Versions:<strong> {$ver_icloud_bot} - 7.1.2 </strong></span>
                                                 </section>
 
                                             {elseif $getSetting._item.name  == "Apple iPhone 3GS" || $getSetting._item.name  == "Apple iPod touch 4th"}
 
-                                                <section class="text-center" data-filter="icloud" style="padding-top: 7px">
-                                                    <span>OS: <strong>{if $getSetting._item.os  == "iOS"}iOS iCloud {else}{$getSetting._item.os}{/if} </strong></span>
+                                                <section class="text-center" style="padding-top: 7px">
+                                                    <span>OS: <strong>{if $getSetting._item.os  == "iOS"}iOS {else}{$getSetting._item.os}{/if} </strong></span>
                                                     <span>Versions:<strong> {$ver_icloud_bot} - 6.1.6 </strong></span>
                                                 </section>
 
                                             {else}
 
-                                                <section class="text-center" data-filter="icloud">
-                                                    <span>OS: <strong>{if $getSetting._item.os  == "iOS"}iOS iCloud {else}{$getSetting._item.os}{/if} </strong></span>
+                                                <section class="text-center">
+                                                    <span>OS: <strong>{if $getSetting._item.os  == "iOS"}iOS {else}{$getSetting._item.os}{/if} </strong></span>
                                                     <span>Versions:<strong> {$ver_icloud_bot} - {$ver_icloud_up}</strong></span>
                                                 </section>
                                             {/if}
@@ -173,14 +148,14 @@
                                     <div class="text-center">
                                         <p class="thumpnail_info">
                                             Have a look at the data you will be able to monitor on your
-                                            {if $getSetting._item.os == "iOS"} <span data-filter="jailbreak">jailbroken</span> {$getSetting._item.name}.
+                                            {if $getSetting._item.os == "iOS"} {$getSetting._item.name}.
                                             {else if $getSetting._item.os == "Android"} rooted {$getSetting._item.name}.
                                             {/if}
                                         </p>
                                         <a {if $getSetting._item.os == "iOS"}
-                                            href="http://demo.{$domain}/setDevice/126?redirect_url=cp/calls"
+                                            href="{$schema}demo.{$domain}/setDevice/126?redirect_url=cp/calls"
                                         {else}
-                                            href="http://demo.{$domain}/setDevice/125?redirect_url=cp/calls"
+                                            href="{$schema}demo.{$domain}/setDevice/125?redirect_url=cp/calls"
                                         {/if}
                                                 style="margin-bottom:10px;"
                                                 id="demo-btn"

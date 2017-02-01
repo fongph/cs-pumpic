@@ -37,7 +37,6 @@
                                     {if isset($block_video) && $block_video == "yes" && isset($block_video_src) && $block_video_src != ""}
                                         <div id="block-video">
                                             <div class="block-video-button">
-                                                <div class="video-arrows-v2"></div>
                                                 <div class="box-hover">
                                                     <a class="youtube" href="{$block_video_src}" rel="nofollow">
                                                         <img src="{$img}/video/video-button.png" class="video-buttons-v2" />
@@ -112,14 +111,6 @@
                                             {/if}
                                         {/if}
 
-                                        {if !isset($Apple) || $Apple != "no"}
-                                            {if isset($AppleVersion) && $Apple == 'yes'}
-                                                <li><i class="fa fa-unlock-alt fa-lg"></i> iOS ({$AppleVersion})</li>
-
-                                            {else}
-                                            <li><i class="fa fa-unlock-alt fa-lg"></i> iOS {$ver_ios_bot} - {if isset($jailbreak) && $jailbreak == "yes"}({$JailbreakVersion}){else}{$ver_jailbreak_up}{/if} (jailbreak)</li>
-                                            {/if}
-                                        {/if}
 
 
 
@@ -237,7 +228,7 @@
                                             <section>
                                                 <div class="member-yet">Not a Member Yet?</div>
                                                 <div>
-                                                    <a href="http://demo.pumpic.com/setDevice/126?redirect_url=cp/calls" class="btn btn-default btn-noy-yet">View demo</a>
+                                                    <a href="{$schema}demo.pumpic.com/setDevice/126?redirect_url=cp/calls" class="btn btn-default btn-noy-yet">View demo</a>
                                                     <a href="/store.html" class="btn btn-default">Buy Now</a>
                                                 </div>
                                             </section>

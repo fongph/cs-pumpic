@@ -119,17 +119,6 @@
                         <div id="c-f-block-info">
 
                             <section>
-                                <i class="c-icon-notes vertical-aligh-bottom"></i>
-                                <label class="vertical-aligh-bottom">Notizen</label>
-                            </section>
-                            <p>Zeigen Sie wichtige <b>Informationen</b>, <b>To-Do-Listen</b> und über die Notiz-App aufgeschriebene <b>Gedanken</b> an.</p>
-
-                        </div>
-                    </li>
-                    <li class="col-md-3 col-lg-3  ">
-                        <div id="c-f-block-info">
-
-                            <section>
                                 <i class="c-icon-location-geo-fences vertical-aligh-bottom"></i>
                                 <label class="vertical-aligh-bottom">Standort & Geo-Zäune</label>
                             </section>
@@ -149,8 +138,8 @@
 
                         </div>
                     </li>
+                    <li class="col-md-3 col-lg-3 hidden-sm"></li>
                 </ul>
-
 
 
             </div>

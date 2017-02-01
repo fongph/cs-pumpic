@@ -49,7 +49,7 @@
                             <div class="box-breadcrumbs left">
                                 <div class="{*container*}">
                                     <ul id="breadcrumbs">
-                                        <li><a class="color-green" href="http://{$domain}/learning-center/">Learning Center</a><span class="arrows icon-right-open"></span>{*<span class="arrows_green"></span>*}</li>
+                                        <li><a class="color-green" href="/learning-center/">Learning Center</a><span class="arrows icon-right-open"></span>{*<span class="arrows_green"></span>*}</li>
                                         <li><span>Glossary of Internet Terms</span></li>
                                     </ul>
                                 </div>

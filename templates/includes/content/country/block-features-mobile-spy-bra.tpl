@@ -122,17 +122,6 @@
                         <div id="c-f-block-info">
                             
                             <section>
-                                <i class="c-icon-notes vertical-aligh-bottom"></i>
-                                <label class="vertical-aligh-bottom">Notas</label>
-                            </section>
-                            <p>Veja <b>informações e listas de tarefas</b> importantes, e <b>anotações</b> escritas no app de Notas.</p>
-                        
-                        </div>
-                    </li>
-                    <li class="col-md-3 col-lg-3  ">
-                        <div id="c-f-block-info">
-                            
-                            <section>
                                 <i class="c-icon-location-geo-fences vertical-aligh-bottom"></i>
                                 <label class="vertical-aligh-bottom">Geolocalização <br class="only-pc" />e barreiras <br class="only-pc" />geográficas</label>
                             </section>
@@ -152,6 +141,7 @@
                         
                         </div>
                     </li>
+                    <li class="col-md-3 col-lg-3"></li>
                 </ul>
                 
                 

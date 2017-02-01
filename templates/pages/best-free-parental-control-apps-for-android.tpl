@@ -2,21 +2,21 @@
 
     title="Best Free Parental Control Apps for Android | Pumpic"
     description="Check out a list of free parental control software for Android. Choose the best free parental control app for Android smartphones and tablets to protect your kids."
-    amp = "http://pumpic.com/amp/best-free-parental-control-apps-for-android.html"
+    amp = "{$schema}pumpic.com/amp/best-free-parental-control-apps-for-android.html"
     customeStyle="
         .block-child-location-tracking .ipad-text {
             padding: 10px 0;
         }
 
 
-        
+
         @media only screen and (max-width: 480px) {
             .block-child-location-tracking .ipad-text {
                 padding: 10px 0px 50px 0px;
             }
         }
 
-        @media (min-width: 468px) { 
+        @media (min-width: 468px) {
             .block-child-location-tracking .ipad-text {
                 padding: 10px 0px 50px 0px;
             }
@@ -38,15 +38,19 @@
             .block-child-location-tracking .ipad-text {
               padding: 10px 0;
             }
-        } 
+        }
     "
-}    
-    
+}
+
 <body class="youtube-parental">
-    <!-- FLY BLOCKS -->
+<!-- BLOCK GTM -->
+{include file='../includes/main/main-after-body.tpl'}
+<!-- END BLOCK GTM -->
+
+<!-- FLY BLOCKS -->
     {include file='../includes/content/fly/fly_blocks.tpl'}
     <!-- END FLY BLOCKS-->
-    
+
     <div class="wrapper {*bg_bottom_images*} block-child-location-tracking home-page">
         <!-- TOP MENU -->
 
@@ -55,21 +59,21 @@
             nocache
         }
 
-        
+
         {*
             Template: PHONE
             Переменные:
-                style (text): стиль блока Phone (blue|black). * - blue 
+                style (text): стиль блока Phone (blue|black). * - blue
         *}
         {include file='../includes/content/phone/block-phone.tpl'
-                 style="blue"   
+                 style="blue"
         }
-        
+
         {* bg_famaly_427x254.png imgVerticalAlign = "bottom"*}
         <!-- CONTENT -->
         {include file='../includes/content/info/info-promo.tpl'
             imgUrl = "header_banners/best-free-parental-controls-for-android.png"
-            imgAlt = "Best Free Parental Controls for Android" 
+            imgAlt = "parental controls for android header"
             imgAlign = "left bottom"
             imgVerticalAlign = "center"
             textAlign = "left"
@@ -83,7 +87,7 @@
             Apple = "no"
             Icloud = "no"
         } {* ?rel=0&wmode=transparent&fs=0&autoplay=1&modestbranding=1&autohide=1 *}
-        
+
         {include file='../includes/content/plans.tpl'}
 
         {* Template: FLY BUTTONS
@@ -93,42 +97,42 @@
             buttonViewDemo = 'no'
             buttonFreeTrial = 'yes'
         }
-		
-        
+
+
         {*  styleTitle="h2"
     title="Follow Kids Remotely Wherever They Go" *}
-	
-{Content 
+
+{Content
     styleTitle=""
     title=""
     blockBg='dark'}
-    
+
     <div id="grid-images" class="row">
         <div class="col-lg-12 col-md-12 col-sm-12">
             <h2 class="h2 text-center">Why Parental Control Is Essential</h2>
             <div class="pt30 pb20">
                 <p>Smartphones and tablets connected to the Internet have become a trivial part of our world. Everyone’s got one. Meanwhile, many children find out how to use mobile devices before they can actually speak. And all these technologies go along kids’ lives, make them more curios, help to educate themselves, and very often expose them to danger.</p>
 				<p>Cyberbullies insult kids on social media; haunt and offend them on instant chats. This horrible issue is known to be a major suicide factor among teens. Online predators try to gain children’s confidence and make them swallow the hook. Sexting is becoming a normal way of communication, while exchanging nude photos – the best way to show one’s feelings. Moreover, the Internet is full of explicit sexuality, violence, and hate. Our kids have unlimited access to all of this. At any time. With one single click. On their smartphone and tablets. And parents don’t know.</p>
-				<p><a class="a-default" href="http://pumpic.com/android-parental-monitoring.html">Android parental monitoring applications</a> allow parents to bring the situation under control and protect their children. Pumpic is a good example of reliable protection in this case. Such software lets you follow kids’ activities on mobile devices as well as the Internet. Apply parental controls and see what your kids are texting, which websites they visit and people they talk to. Block undesired content inappropriate for kids. Block apps and other activities to prevent them from wasting time.</p>
+				<p><a class="a-default" href="/android-parental-monitoring.html">Android parental monitoring applications</a> allow parents to bring the situation under control and protect their children. Pumpic is a good example of reliable protection in this case. Such software lets you follow kids’ activities on mobile devices as well as the Internet. Apply parental controls and see what your kids are texting, which websites they visit and people they talk to. Block undesired content inappropriate for kids. Block apps and other activities to prevent them from wasting time.</p>
 				<p>Check out our list below and choose the best Android parental control app.</p>
             </div>
         </div>
-    </div>    
+    </div>
 {EndContent}
 
         <h2 class="h2 text-center" style="margin: 40px 0px 40px 0;">Reviews of Best Free Parental Controls for Android</h2>
 
-{Content 
+{Content
     styleTitle=""
     title=""
     blockBg='dark'}
-    
+
     <div id="grid-images" class="row">
         <div class="col-lg-12 col-md-12 col-sm-12">
             <h2 class="h3 text-left">Kids Place App Review</h3>
             <div class="pt30 pb20">
-                <img class="img-align-right" alt="Best Free Parental Controls for Android' Location" src="{$img}/landings/free-android-parental-controls/screenshot4.png" width="207px" height="208px" />
-                <img class="app-icon-left" src="{$img}/landings/free-android-parental-controls/Kids-Place.png" alt="">
+                <img class="img-align-right" alt="kids place mobile screen" src="{$img}/landings/free-android-parental-controls/kids-place-review.png" width="207px" height="208px" />
+                <img class="app-icon-left" src="{$img}/landings/free-android-parental-controls/kids-place-review-logo.png" alt="kids place logo">
 			<p>Kids Place is parental controls that allow you to create childproof environment on Android smartphones and tablets. The app works as a separate user account, which lets parents specify particular apps and activities kids may use and lock the account with a password. It means that your children will not be able to access any other activities, but those authorized by parents.</p>
 			<p>The app can prevent your kids from buying and downloading new applications, receiving incoming calls, and using wireless signals. Kids Place also has built-in options for online content filtering. With it, you can restrict the access to inappropriate photos and video files. Importantly, there is a timer feature in the app that allows parents to control children’s screen time.</p>
 			<p>Kids Place parental control is a free app. However, there are some additional premium features, which become available only after an in-app purchase. With a pay version, you will be able to run Kids Place in a background mode, block uninstallation of the app, use an option to always start on reboot, and set a customized title for a home screen.</p>
@@ -141,20 +145,20 @@
 			</ul>
             </div>
         </div>
-    </div>    
+    </div>
 {EndContent}
 
-{Content 
+{Content
     styleTitle=""
     title=""
     blockBg='light'}
-    
+
 
         <div class="col-lg-12 col-md-12 col-sm-12">
             <h2 class="h3 text-right">SecureTeen Review</h3>
             <div class="pt30 pb20">
-                <img class="img-align-left" alt="Best Free Parental Controls for Android" src="{$img}/landings/free-android-parental-controls/screenshot8.png" width="207px" height="208px" />
-                <img class="app-icon-right" src="{$img}/landings/free-android-parental-controls/SecureTeen.png" alt="">
+                <img class="img-align-left" alt="secureteen mobile screen" src="{$img}/landings/free-android-parental-controls/secureteen-review.png" width="207px" height="208px" />
+                <img class="app-icon-right" src="{$img}/landings/free-android-parental-controls/secureteen-review-logo.png" alt="secureteen logo">
                 <p>The app is a secure teen parental control that can help you protect your children online. It lets parents monitor online activities and even block some of them. In addition, SecureTeen logs sent and received text messages that can prevent children from bullying and sexting on the phone.</p>
 				<p>SecureTeen features Internet filtering that includes category blocking, keyword blocking, and a black list option. It also allows blocking other applications installed on your kid’s device. Social media monitoring is limited to Facebook and Instagram only. The app prevents children from watching pornography and comprises a safe search option to clean search results from inappropriate content.</p>
 				<p>Location tracking makes SecureTeen a useful helper for parents. With it, you will always know where you children are. In addition, remote control will let you monitor it all from your own computer as well as lock/unlock your kid’s device distantly. SecureTeen lets review browsing history. Thus, you will know which websites your children visit and control if your restrictions work.</p>
@@ -166,21 +170,21 @@
 				   <li>Location tracking lacks geo-fencing alerts. It means that if your child gets into a restricted area, where he or she is not allowed to be, leaves school or home, when not supposed to, you will find out about it only when run your computer, not when it actually happens.</li>
 			</ul>
             </div>
-    </div>    
-    
+    </div>
+
 {EndContent}
 
-{Content 
+{Content
     styleTitle=""
     title=""
     blockBg='dark'}
-    
+
     <div id="grid-images" class="row">
         <div class="col-lg-12 col-md-12 col-sm-12">
             <h2 class="h3 text-left">Screen Time Labs Review</h3>
             <div class="pt30 pb20">
-                <img class="img-align-right" alt="Best Free Parental Controls for Android" src="{$img}/landings/free-android-parental-controls/screenshot1.png" width="207px" height="208px" />
-                <img class="app-icon-left" src="{$img}/landings/free-android-parental-controls/Screen-Time.png" alt="">
+                <img class="img-align-right" alt="screentime mobile screen" src="{$img}/landings/free-android-parental-controls/screen-time-review.png" width="207px" height="208px" />
+                <img class="app-icon-left" src="{$img}/landings/free-android-parental-controls/screen-time-review-logo.png" alt="screen time logo">
 			<p>The Screen Time app is designed for managing children’s time spent on smartphones and tablets. It allows parents to set various restrictions on kids’ devices as well as monitor browsing history and application downloads.</p>
 			<p>With this parental control, you will be able to set daily time limits on each application separately, block specific apps at bedtime or while your kids are at school. Thus, you can restrict access to social media so as to prevent your children from using them during their classes.</p>
 			<p>A time out feature lets parents block device activities with one single click on their own smartphones or tablets. The app also allows you to reward kids with bonus time on their mobile devices, if they show good task performance or improve their behavior. In addition, the Screen Time app lets review websites your kids visit, applications they download, as well as apps they use most of all.</p>
@@ -193,10 +197,10 @@
 			</ul>
             </div>
         </div>
-    </div>    
+    </div>
 {EndContent}
 
-{Content 
+{Content
     styleTitle=""
     title=""
     blockBg='light'}
@@ -204,8 +208,8 @@
         <div class="col-lg-12 col-md-12 col-sm-12">
             <h2 class="h3 text-right">Abeona Review</h3>
             <div class="pt30 pb20">
-                <img class="img-align-left" alt="Best Free Parental Controls for Android" src="{$img}/landings/free-android-parental-controls/screenshot7.png" width="207px" height="208px" />
-                <img class="app-icon-right" src="{$img}/landings/free-android-parental-controls/Abeona.png" alt="">
+                <img class="img-align-left" alt="abeona mobile screen" src="{$img}/landings/free-android-parental-controls/abeona-review.png" width="207px" height="208px" />
+                <img class="app-icon-right" src="{$img}/landings/free-android-parental-controls/abeona-review-logo.png" alt="abeona logo">
                 <p>The software allows parents to monitor their kids on smartphones and tablets as well as block some mobile activities. It actually comes with two complementary applications: Abeona Parental Control installed on a parent’s device and Abeona Device Monitor installed on a child’s gadget.</p>
 				<p>The Abeona app provides parents with an opportunity to view call logs, track location, and set geofences, which notify you with an alert once your children leave or enter specified areas. The app will also show you applications being used currently as well as general time spend on each app. If you see that your kids spend too much time on any of apps you consider inappropriate, you can block them easily thanks to Abeona’s functionality.</p>
 				<p>When it comes to Internet use, the app allows parents to find out if their children are online or offline and follow websites they visit via Chrome.</p>
@@ -217,21 +221,21 @@
 				   <li>The app provides web history monitoring only via the Chrome browser. Meanwhile, your children are free to use other browsers and you will not even know what they are surfing.</li>
 			</ul>
             </div>
-    </div>    
-    
+    </div>
+
 {EndContent}
 
-{Content 
+{Content
     styleTitle=""
     title=""
     blockBg='dark'}
-    
+
     <div id="grid-images" class="row">
         <div class="col-lg-12 col-md-12 col-sm-12">
             <h2 class="h3 text-left">Parental Control Board Review</h3>
             <div class="pt30 pb20">
-                <img class="img-align-right" alt="Best Free Parental Controls for Android" src="{$img}/landings/free-android-parental-controls/screenshot2.png" width="207px" height="208px" />
-                <img class="app-icon-left" src="{$img}/landings/free-android-parental-controls/Parental-Control-Board.png" alt="">
+                <img class="img-align-right" alt="parental control board screen" src="{$img}/landings/free-android-parental-controls/parental-control-board-review.png" width="207px" height="208px" />
+                <img class="app-icon-left" src="{$img}/landings/free-android-parental-controls/parental-control-board-review-logo.png" alt="parental control board logo">
 			<p>The Parental Control Board app is designed for child protection, when it comes to cell phone use and online activities. It includes some useful features that will help you find out what your kids are doing on their smartphones and tablets, who calls and texts them, as well as where they are.</p>
 			<p>Among the features of the app, you will find location tracking and geo-fencing to prevent your children from visiting restricted areas as and be notified as soon as they leave or enter set up zones on the map. Parental Control Board will also let you view calls logs and text messages. In addition, you can block callers by phone numbers and message senders by keywords.</p>
 			<p>An application control feature allows parents to block specific apps and see how much time children spend playing, texting, surfing etc. Meanwhile, with help of a safe browsing mode you will be able to make sure your kids don’t look for inappropriate content on the web.</p>
@@ -246,10 +250,10 @@
 			</ul>
             </div>
         </div>
-    </div>    
+    </div>
 {EndContent}
 
-{Content 
+{Content
     styleTitle=""
     title=""
     blockBg='light'}
@@ -257,8 +261,8 @@
         <div class="col-lg-12 col-md-12 col-sm-12">
             <h2 class="h3 text-right">Norton Family Parental Control Review</h3>
             <div class="pt30 pb20">
-                <img class="img-align-left" alt="Best Free Parental Controls for Android" src="{$img}/landings/free-android-parental-controls/screenshot5.png" width="207px" height="208px" />
-                <img class="app-icon-right" src="{$img}/landings/free-android-parental-controls/Norton.png" alt="">
+                <img class="img-align-left" alt="norton mobile screen" src="{$img}/landings/free-android-parental-controls/norton-review.png" width="207px" height="208px" />
+                <img class="app-icon-right" src="{$img}/landings/free-android-parental-controls/norton-review-logo.png" alt="norton logo">
                 <p>A parental control application by Norton protects your children from dangers they may come across on the Internet. This software will prevent your kids from accessing inappropriate web content as well as wasting time on their smartphones and tablets.</p>
 				<p>The Norton Family Parental Control app comprises some useful features to monitor and secure children’s mobile activities. With it, you can view websites they visit and block you find misgiving. In addition, the app will send you notifications, if your kids decide to enter one of those websites you have blocked.</p>
 				<p>Among other childcare opportunities, the app allows tracking location on the map and following text conversations. The Norton parental control also has application management options. Thus, you can view downloaded apps, block timewasting ones, and check the amount of time your children spend with their mobile gadgets in hands.</p>
@@ -270,8 +274,8 @@
 				   <li>Doesn’t allow monitoring social media and online chats. All you can do is block these apps. But if you let your kids use one of them you will never know what they do there, and thus, have no opportunity to prevent online risks.</li>
 			</ul>
             </div>
-    </div>    
-    
+    </div>
+
 {EndContent}
 
 {Content
@@ -283,8 +287,8 @@
         <div class="col-lg-12 col-md-12 col-sm-12">
             <h2 class="h3 text-left">Qustodio Review</h3>
             <div class="pt30 pb20">
-                <img class="img-align-right" alt="Best Free Parental Controls for Android" src="{$img}/landings/free-android-parental-controls/screenshot3.png" width="207px" height="208px" />
-                <img class="app-icon-left" src="{$img}/landings/free-android-parental-controls/Qustodio.png" alt="">
+                <img class="img-align-right" alt="qustodio mobile screen" src="{$img}/landings/free-android-parental-controls/qustodio-review.png" width="207px" height="208px" />
+                <img class="app-icon-left" src="{$img}/landings/free-android-parental-controls/qustodio-review-logo.png" alt="qustodio logo">
 			<p>Qustodio introduces its parental control app as the most friendly and powerful solution for parental control. It is designed to protect children online and on the phone as well as to let you restrict activities and prevent kids from wasting their time.</p>
 			<p>The app allows parents to block misgiving web sources including pornography and gambling. It will also let you set limits on time your children spend on the Internet and social networks. In addition, the Qustodio app provides application control enabling parents to view downloaded software and block those apps they consider inappropriate.</p>
 			<p>With this parental control at your command, you will be able to track children’s location. Moreover, Qustodio lets review route history as far as 30 days back. The app also provides monitoring of call logs and SMS.</p>
@@ -297,10 +301,10 @@
 			</ul>
             </div>
         </div>
-    </div>    
+    </div>
 {EndContent}
 
-{Content 
+{Content
     styleTitle=""
     title=""
     blockBg='light'}
@@ -308,8 +312,8 @@
         <div class="col-lg-12 col-md-12 col-sm-12">
             <h2 class="h3 text-right">Kakatu Review</h3>
             <div class="pt30 pb20">
-                <img class="img-align-left" alt="Best Free Parental Controls for Android" src="{$img}//landings/free-android-parental-controls/screenshot6.png" width="207px" height="208px" />
-                <img class="app-icon-right" src="{$img}/landings/free-android-parental-controls/Kakatu.png" alt="">
+                <img class="img-align-left" alt="kakatu screen" src="{$img}/landings/free-android-parental-controls/kakatu-review.png" width="207px" height="208px" />
+                <img class="app-icon-right" src="{$img}/landings/free-android-parental-controls/kakatu-review-logo.png" alt="kakatu logo">
                 <p>This parental control software is designed to protect your children from excessive use of their smartphone and tablets, for safe Internet browsing and device control. It will also protect your own mobile device, if your kids have none, but you give them yours from time to time.</p>
 				<p>The Kakatu app features a timer to control how much time your kids spend playing games, surfing the Internet, using other applications, and provides you with reports on their activities. You can also set time schedules to prevent children from using devices at bed time or classes. The app allows you to specify at what time each application can be used.</p>
 				<p>Kakatu takes care of your kids online as well .Thus, you can block inappropriate content like pornography, violence, and horror. When it comes to cell phone use, the app lets you block incoming calls against undesirable contacts. Kakatu includes the Parent Mode and Kids Mode, which will secure your kids against accessing inappropriate content and activities on your own cell phone or tablet.</p>
@@ -320,21 +324,21 @@
 				   <li>Kakatu allows monitoring and blocking phone calls and avoids text messaging. However, modern children prefer texting to making calls. Thus, a major part of children’s cell phone activities remains without control.</li>
 			</ul>
             </div>
-    </div>    
-    
+    </div>
+
 {EndContent}
 
-{Content 
+{Content
     styleTitle=""
     title=""
     blockBg='dark'}
-    
+
     <div id="grid-images" class="row">
         <div class="col-lg-12 col-md-12 col-sm-12">
             <h2 class="h3 text-left">iWawa Review</h3>
             <div class="pt30 pb20">
-                <img class="img-align-right" alt="Best Free Parental Controls for Android" src="{$img}/landings/free-android-parental-controls/screenshot9.png" width="207px" height="208px" />
-                <img class="app-icon-left" src="{$img}/landings/free-android-parental-controls/Iwawa.png" alt="">
+                <img class="img-align-right" alt="iwawa screen" src="{$img}/landings/free-android-parental-controls/iwawa-review.png" width="207px" height="208px" />
+                <img class="app-icon-left" src="{$img}/landings/free-android-parental-controls/iwawa-review-logo.png" alt="iwawa logo">
 			<p>Parental monitoring by iWawa provides a way of making Android devices safer for children. With this app, parents should have no worries, when handing a smartphone or tablet to their little kids. Application use and web browsing remain under your control, meanwhile your children – under iWawa’s protection.</p>
 			<p>The functionality of the iWawa app let you choose from among applications that your children are allowed to use. If you let your kids access the Internet, you can also choose websites with appropriate content and block those containing data restricted for the underage.</p>
 			<p>In addition, iWawa feature a timer. You can create multiple user accounts for your kids and specify how much time each of the, can spend with smartphones in hands. You can also choose music and videos available for your kids’ access.</p>
@@ -346,14 +350,14 @@
 			</ul>
             </div>
         </div>
-    </div>    
+    </div>
 {EndContent}
-        
+
 <div class="light">
         <div class="container">
                 <h2 class="text-center">Pumpic Provides Reliable Protection</h2>
 				<p>Pumpic is a multifeature parental control application comprehensive enough to provide reliable protection for your children. The app covers all of your kids’ activities online and daily. It is a helping hand for careful parents for all of life emergencies.</p>
-                <p>Pumpic is a pay service and you won’t find it among Android monitoring software for free. However, it is one of the <a class="a-default" href="http://pumpic.com/reviews/">best parental controls</a> available online. When you buy Pumpic, you contribute to child safety. And Pumpic is worth the cost. After all, there is always free cheese in a mousetrap.</p>
+                <p>Pumpic is a pay service and you won’t find it among Android monitoring software for free. However, it is one of the <a class="a-default" href="/reviews/">best parental controls</a> available online. When you buy Pumpic, you contribute to child safety. And Pumpic is worth the cost. After all, there is always free cheese in a mousetrap.</p>
 				<div class="row">
                         <div class="col-sm-4 col-md-4 col-lg-4">
                                 <div class="feature">
@@ -391,7 +395,7 @@
                 </div>
         </div>
 </div>
-        
+
         {include file='../includes/content/features-table-new.tpl'
         title = "Over 24 Features for Child Safety "
         description = "Each and every feature the Pumpic app includes allows you to monitor various spheres of your children’s lives. All together, they show you a wide picture of what is going on with your kids, so as you could detect potential risks and avert them in the making."
@@ -409,75 +413,75 @@
         description = "Log in to your Control Panel and you will see all the information monitored on your kids’ devices. The Control Panel can be accessed via any browser on desktop computer, laptop, smartphone, or tablet. There, you can not only view the information, but also set limits, restrict some activities, as well as lock or wipe the target device remotely. Check out our Demo to see how it all works."
         textAlign = "left"
         }
-        
-        {* description = "Install the iPad parental control app on your kid’s tablet and start monitoring right away. Log in to your Control Panel and view all the information from the target device. It can be accessed from anywhere including desktop computers, laptops, smartphones, and tablets. In addition to data monitoring, the Control Panel allows you to set limits, block tablet activities, and lock the target device permanently."             
+
+        {* description = "Install the iPad parental control app on your kid’s tablet and start monitoring right away. Log in to your Control Panel and view all the information from the target device. It can be accessed from anywhere including desktop computers, laptops, smartphones, and tablets. In addition to data monitoring, the Control Panel allows you to set limits, block tablet activities, and lock the target device permanently."
         *}
-        
+
         <div class="dark">
     <div class="container">
             <h2 class="text-center testimonial-title">Trusted by Over 10 000 Customers Worldwide:</h2>
             <div class="row">
-                
+
                 <div class="bxSliders only-pc">
                         <!-- SLIDE #1 -->
                         <div class="slide">
-                
+
                     <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
-                            <img src="{$img}/testimonials/maria-o-12.png" alt="" class="testimonial-photo">
+                            <img src="{$img}/testimonials/maria-o.png" alt="pumpic testimonials maria o" class="testimonial-photo">
                             <div class="testimonial-text">
                                     <h4>Maria O. – mother of 12-year-old son</h4>
                                     <p>“I looked all over the web and tried to find relevant Android parental controls for free. But my friend gave me advice to try Pumpic. He showed me how it worked on his own mobile phone and I was really amazed how many kids’ activities he could actually track. I decided to give it a shot. I use it all the time. I’m very satisfied with the app.”</p>
                             </div>
                     </div>
                     <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
-                            <img src="{$img}/testimonials/michael-b-14.png" alt="" class="testimonial-photo">
+                            <img src="{$img}/testimonials/michael-b.png" alt="pumpic testimonials michael b" class="testimonial-photo">
                             <div class="testimonial-text">
                                     <h4>Michael B. – father of 14-year-old daughter</h4>
                                     <p>“My daughter is 14. This age is very dangerous for kids as they start getting more and more from their lives each day and life exposes them to dangers in return. I thought a parental app would be great safety solution. However, I couldn’t find any good one. All Android phone monitoring software free of charge turned out to be useless. Pumpic was and is my solution. It’s worth every dime I’ve spent for it.”</p>
                             </div>
                     </div>
                     <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
-                            <img src="{$img}/testimonials/peter-p-11.png" alt="" class="testimonial-photo">
+                            <img src="{$img}/testimonials/peter-p.png" alt="pumpic testimonials peter p" class="testimonial-photo">
                             <div class="testimonial-text">
                                     <h4>Peter P. – father of 11-year-old son</h4>
                                     <p>“I came across Pumpic in an online review as the best free Android parental control app. I couldn’t believe that a free app could have so many useful features. And it didn’t. As expected, Pumpic was a pay app. Still, I decided to try it and ordered a month plan. After a month of using it to monitor my son, I decided to prolong my plan for a year. Pumpic provides amazing monitoring. I can check literally everything on my kid’s phone. I’ll keep using it, until my son grows up.”</p>
                             </div>
                     </div>
-                            
+
                         </div>
                 </div>
-                <div class="bxSliderMobile"></div>            
-                            
+                <div class="bxSliderMobile"></div>
+
             </div>
     </div>
 </div>
 
 
-        
+
         {*{include file='../includes/content/banners/banner-promo-trial.tpl'}*}
-        
+
         {include file='../includes/content/banners/index.tpl'}
-        <!-- END CONTENT -->    
-           
+        <!-- END CONTENT -->
+
         <!-- RECOMMENDED -->
         {*
             Template: RECOMMENDED
-        *}    
+        *}
         {include file='../includes/main/main-recommended.tpl'}
-        
+
         <!-- FOOTER -->
         {*
             Template: FOOTER
             Переменные:
-                our_products (text): Включить выключить блок OUR PRODUCTS (no|yes). * - yes 
+                our_products (text): Включить выключить блок OUR PRODUCTS (no|yes). * - yes
         *}
         {include file='../includes/main/main-quick-link.tpl'
         blockBg="light"
         }
         {include file='../includes/main/main-footer.tpl'}
-                
+
     </div>
-       
+
     {include file='../includes/main/main-analytics-footer.tpl'}
 </body>
 </html>

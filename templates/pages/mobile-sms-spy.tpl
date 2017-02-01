@@ -71,7 +71,7 @@
         <p class="text-center f-light">
             Nowadays children spend more than 3 hours a day using smartphones for playing games, social media activity and chatting. 
             Being a parent implies a huge responsibility to protect kids from misgiving people they might contact on the web. 
-            Reliable SMS <a class="a-default" href="/spy-apps-for-android.html">spy software</a> will help you secure your children.
+            Reliable SMS spy software will help you secure your children.
         </p>
         
         <!-- BLOCK STATISTICK -->
@@ -239,7 +239,7 @@
                         <section>
                             <div class="tab col-item-3 col-md-item-3 col-sm-item-3">
                                 <ul>
-                                    <li><i class="i-features-sms"></i> <span onclick="window.location='http://{$domain}/mobile-sms-spy.html'">View SMS</span></li>
+                                    <li><i class="i-features-sms"></i> <span onclick="window.location='{$schema}{$domain}/mobile-sms-spy.html'">View SMS</span></li>
                                     <li><i class="i-features-cell-history"></i> View Call History</li>
                                     <li><i class="i-features-calendar"></i> View Calendar</li>
                                     <li><i class="i-features-contacts"></i> View Contacts</li>
@@ -288,7 +288,7 @@
     <ul>
         <li>find out if your kid is dating someone and prevent him or her from related threats (teenagers chat with their dates pretty often, and thus, SMS tracking will let you be in touch with the situation and take action, if needed);</li>
         <li>control whom your kids communicate with and prevent them from chatting with strangers or misgiving people (swindlers, bullies, and online predators often use text messages to contact their victims);</li>
-        <li><a href="http://pumpic.com/how-to-block-texts-on-android.html">block texts messages on Android</a> and iOs devices to prevent kids from seeing inappropriate content and communicating with strangers;</li>
+        <li><a href="/how-to-block-texts-on-android.html">block texts messages on Android</a> and iOs devices to prevent kids from seeing inappropriate content and communicating with strangers;</li>
 		<li>take immediate action, if find out that your kid contacts drug dealers or someone, who might be a bad company for him or her;</li>
         <li>find out if your kid is up to do something you would not approve, or is going to go anywhere you would not allow;</li>
         <li>find out if your kid uses bad words in his or her communication;</li>

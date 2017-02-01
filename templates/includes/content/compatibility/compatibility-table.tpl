@@ -13,6 +13,9 @@
                 <!-- left table #1 -->
                 <!-- left table #1 -->
                 {if (!isset($onlyItem) || isset($onlyItem) && $onlyItem == "icloud") && !isset($lang)}
+                {if !isset($onlyItem)}
+                    <div class="col-md-2 col-lg-2"></div>
+                {/if}
                     <div class="{if !isset($onlyItem)}col-md-4 col-lg-4 padding-null{/if}">
 
                         <div id="block-compatibility-table" class="ios-table">
@@ -195,105 +198,105 @@
                     </div>
                 {/if}
 
-                {if !isset($onlyItem) || isset($onlyItem) && $onlyItem == "ios"}
-                    <div class="{if !isset($onlyItem)}col-md-4 col-lg-4 padding-null{/if}">
+                {*{if !isset($onlyItem) || isset($onlyItem) && $onlyItem == "ios"}*}
+                    {*<div class="{if !isset($onlyItem)}col-md-4 col-lg-4 padding-null{/if}">*}
 
-                        <div id="block-compatibility-table" class="ios-table">
+                        {*<div id="block-compatibility-table" class="ios-table">*}
 
-                            {if isset($lang) && $lang == "bra"}
+                            {*{if isset($lang) && $lang == "bra"}*}
 
-                                <div class="table-header">
-                                    <section><span class="title"><i class="fa fa-unlock-alt fa-lg"></i> iOS (jailbreak)</span></section>
-                                </div> <!-- .table-header -->
+                                {*<div class="table-header">*}
+                                    {*<section><span class="title"><i class="fa fa-unlock-alt fa-lg"></i> iOS (jailbreak)</span></section>*}
+                                {*</div> <!-- .table-header -->*}
 
-                                <div class="table-body">
-                                    <div class="text-center">
-                                        {if isset($iosText)}<p>{$iosText}</p>{else}<p>É necessário ter um <b>jailbreak</b> antes da instalação</p>{/if}
-                                    </div>
-                                    <div>
+                                {*<div class="table-body">*}
+                                    {*<div class="text-center">*}
+                                        {*{if isset($iosText)}<p>{$iosText}</p>{else}<p>É necessário ter um <b>jailbreak</b> antes da instalação</p>{/if}*}
+                                    {*</div>*}
+                                    {*<div>*}
 
-                                        <div class="div-table">
-                                            <div class="div-table-row">
-                                                <div class="div-table-column"><span>iPhones / iPads / iPods Touch:</span></div>
-                                                <div class="div-table-column"><span class="color-green">{if isset($versionIOS)}{$versionIOS}{else}iOS {$ver_ios_bot} - {$ver_jailbreak_up}{/if}</span></div>
-                                            </div>
-                                        </div>
+                                        {*<div class="div-table">*}
+                                            {*<div class="div-table-row">*}
+                                                {*<div class="div-table-column"><span>iPhones / iPads / iPods Touch:</span></div>*}
+                                                {*<div class="div-table-column"><span class="color-green">{if isset($versionIOS)}{$versionIOS}{else}iOS {$ver_ios_bot} - {$ver_jailbreak_up}{/if}</span></div>*}
+                                            {*</div>*}
+                                        {*</div>*}
 
-                                    </div>
-                                </div>
+                                    {*</div>*}
+                                {*</div>*}
 
-                            {elseif isset($lang) && $lang == "de"}
+                            {*{elseif isset($lang) && $lang == "de"}*}
 
-                                <div class="table-header">
-                                    <section><span class="title"> <i class="fa fa-unlock-alt fa-lg"></i> iOS (jailbreak)</span></section>
-                                </div> <!-- .table-header -->
+                                {*<div class="table-header">*}
+                                    {*<section><span class="title"> <i class="fa fa-unlock-alt fa-lg"></i> iOS (jailbreak)</span></section>*}
+                                {*</div> <!-- .table-header -->*}
 
-                                <div class="table-body">
-                                    <div class="text-center">
-                                        {if isset($iosText)}<p>{$iosText}</p>{else}<p>Vor der Installation ist ein <b>Jailbreak</b> notwendig.</p>{/if}
-                                    </div>
-                                    <div>
+                                {*<div class="table-body">*}
+                                    {*<div class="text-center">*}
+                                        {*{if isset($iosText)}<p>{$iosText}</p>{else}<p>Vor der Installation ist ein <b>Jailbreak</b> notwendig.</p>{/if}*}
+                                    {*</div>*}
+                                    {*<div>*}
 
-                                        <div class="div-table">
-                                            <div class="div-table-row">
-                                                <div class="div-table-column"><span>iPhones / iPads / iPods Touch:</span></div>
-                                                <div class="div-table-column"><span class="color-green">{if isset($versionIOS)}{$versionIOS}{else}iOS {$ver_ios_bot} - {$ver_jailbreak_up}{/if}</span></div>
-                                            </div>
-                                        </div>
+                                        {*<div class="div-table">*}
+                                            {*<div class="div-table-row">*}
+                                                {*<div class="div-table-column"><span>iPhones / iPads / iPods Touch:</span></div>*}
+                                                {*<div class="div-table-column"><span class="color-green">{if isset($versionIOS)}{$versionIOS}{else}iOS {$ver_ios_bot} - {$ver_jailbreak_up}{/if}</span></div>*}
+                                            {*</div>*}
+                                        {*</div>*}
 
-                                    </div>
-                                </div>
-                            {elseif isset($lang) && $lang == "fra"}
+                                    {*</div>*}
+                                {*</div>*}
+                            {*{elseif isset($lang) && $lang == "fra"}*}
 
-                                <div class="table-header">
-                                    <section><span class="title"> <i class="fa fa-unlock-alt fa-lg"></i> iOS (jailbreak)</span></section>
-                                </div> <!-- .table-header -->
+                                {*<div class="table-header">*}
+                                    {*<section><span class="title"> <i class="fa fa-unlock-alt fa-lg"></i> iOS (jailbreak)</span></section>*}
+                                {*</div> <!-- .table-header -->*}
 
-                                <div class="table-body">
-                                    <div class="text-center">
-                                        {if isset($iosText)}<p>{$iosText}</p>{else}<p><b>Un jailbreak d'iOS</b> est nécessaire avant l'installation.</p>{/if}
-                                    </div>
-                                    <div>
+                                {*<div class="table-body">*}
+                                    {*<div class="text-center">*}
+                                        {*{if isset($iosText)}<p>{$iosText}</p>{else}<p><b>Un jailbreak d'iOS</b> est nécessaire avant l'installation.</p>{/if}*}
+                                    {*</div>*}
+                                    {*<div>*}
 
-                                        <div class="div-table">
-                                            <div class="div-table-row">
-                                                <div class="div-table-column"><span>iPhone / iPad / iPod Touch:</span></div>
-                                                <div class="div-table-column"><span class="color-green">{if isset($versionIOS)}{$versionIOS}{else}iOS {$ver_ios_bot} - {$ver_jailbreak_up}{/if}</span></div>
-                                            </div>
-                                        </div>
+                                        {*<div class="div-table">*}
+                                            {*<div class="div-table-row">*}
+                                                {*<div class="div-table-column"><span>iPhone / iPad / iPod Touch:</span></div>*}
+                                                {*<div class="div-table-column"><span class="color-green">{if isset($versionIOS)}{$versionIOS}{else}iOS {$ver_ios_bot} - {$ver_jailbreak_up}{/if}</span></div>*}
+                                            {*</div>*}
+                                        {*</div>*}
 
-                                    </div>
-                                </div>
+                                    {*</div>*}
+                                {*</div>*}
 
-                            {else}
+                            {*{else}*}
 
-                                <div class="table-header">
-                                    <section><span class="title">iOS <i class="fa fa-unlock-alt" style="position: relative;top: 4px;"></i> (jailbreak)</span></section>
-                                </div> <!-- .table-header -->
+                                {*<div class="table-header">*}
+                                    {*<section><span class="title">iOS <i class="fa fa-unlock-alt" style="position: relative;top: 4px;"></i> (jailbreak)</span></section>*}
+                                {*</div> <!-- .table-header -->*}
 
-                                <div class="table-body">
-                                    <div class="text-center">
-                                        <p>{if isset($iosText)}{$iosText}{else}Jailbreak is required before the installation{/if}</p>
-                                    </div>
-                                    <div>
+                                {*<div class="table-body">*}
+                                    {*<div class="text-center">*}
+                                        {*<p>{if isset($iosText)}{$iosText}{else}Jailbreak is required before the installation{/if}</p>*}
+                                    {*</div>*}
+                                    {*<div>*}
 
-                                        <div class="div-table">
-                                            <div class="div-table-row">
-                                                <div class="div-table-column"><span>iPhones / iPads / iPods Touch:</span></div>
-                                                <div class="div-table-column"><span class="color-green">iOS {$ver_ios_bot} - {$ver_jailbreak_up}</span></div>
-                                            </div>
-                                        </div>
+                                        {*<div class="div-table">*}
+                                            {*<div class="div-table-row">*}
+                                                {*<div class="div-table-column"><span>iPhones / iPads / iPods Touch:</span></div>*}
+                                                {*<div class="div-table-column"><span class="color-green">iOS {$ver_ios_bot} - {$ver_jailbreak_up}</span></div>*}
+                                            {*</div>*}
+                                        {*</div>*}
 
-                                    </div>
-                                </div>
+                                    {*</div>*}
+                                {*</div>*}
 
-                            {/if}
+                            {*{/if}*}
 
-                        </div>
+                        {*</div>*}
 
 
-                    </div>
-                {/if}
+                    {*</div>*}
+                {*{/if}*}
 
             </div>
 

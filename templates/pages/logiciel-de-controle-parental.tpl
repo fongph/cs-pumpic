@@ -41,7 +41,7 @@
     }
     <!-- END FLY BLOCKS-->
 
-    <div class="wrapper block-free-trial b-p-countries page-germany">
+    <div class="wrapper block-free-trial b-p-countries page-france">
         <!-- TOP MENU -->
 
 	{include file='../includes/country/main-top-menu.tpl'

@@ -6,14 +6,14 @@
         .block-child-location-tracking .ipad-text {
             padding: 10px 0;
         }
-        
+
         @media only screen and (max-width: 480px) {
             .block-child-location-tracking .ipad-text {
                 padding: 10px 0px 50px 0px;
             }
         }
 
-        @media (min-width: 468px) { 
+        @media (min-width: 468px) {
             .block-child-location-tracking .ipad-text {
                 padding: 10px 0px 50px 0px;
             }
@@ -35,15 +35,19 @@
             .block-child-location-tracking .ipad-text {
               padding: 10px 0;
             }
-        } 
+        }
     "
-}    
-    
+}
+
 <body>
+<!-- BLOCK GTM -->
+{include file='../includes/main/main-after-body.tpl'}
+<!-- END BLOCK GTM -->
+
     <!-- FLY BLOCKS -->
     {include file='../includes/content/fly/fly_blocks.tpl'}
     <!-- END FLY BLOCKS-->
-    
+
     <div class="wrapper {*bg_bottom_images*} block-child-location-tracking home-page">
         <!-- TOP MENU -->
 
@@ -53,22 +57,22 @@
         }
 
 
-        
+
         {*
             Template: PHONE
             Переменные:
-                style (text): стиль блока Phone (blue|black). * - blue 
+                style (text): стиль блока Phone (blue|black). * - blue
         *}
         {include file='../includes/content/phone/block-phone.tpl'
-                 style="blue"   
+                 style="blue"
         }
-        
+
         {* bg_famaly_427x254.png imgVerticalAlign = "bottom"*}
         <!-- CONTENT -->
 
         {include file='../includes/content/info/info-promo.tpl'
             imgUrl = "header_banners/cell-phone-text-tracker_header.png"
-            imgAlt = "Cell Phone Text Tracker" 
+            imgAlt = "header cell phone text tracker"
             imgAlign = "right"
             imgVerticalAlign = "bottom"
 			imgTitle = "Cell phone text tracking prevents dangerous contacts"
@@ -91,23 +95,23 @@
             buttonViewDemo = 'no'
             buttonFreeTrial = 'yes'
         }
-		
-        
+
+
         {*  styleTitle="h2"
     title="Follow Kids Remotely Wherever They Go" *}
-        
-{Content 
-    styleTitle="h2"    
+
+{Content
+    styleTitle="h2"
     title="Keeping the Kid under Control is a Part of Parenting"
     blockBg='light'}
-	
-	<img class="app-icon-left" src="{$img}/landings/cell-phone-text-tracker_icon1.png" style="margin-top: 5px;" alt="Track Texts on Cell Phone" title = "SMS and MMS monitoring keeps kids away from troubles">
+
+	<img class="app-icon-left" src="{$img}/landings/text-messages-tracker.png" style="margin-top: 5px;" alt="track text messages icon" title = "SMS and MMS monitoring keeps kids away from troubles">
 	<p>Modern-day parenting appears to have very little in common with what it was like, say, 20-30 years ago. One of the particular features of contemporary upbringing is providing children with maximum freedom and setting minimum restrictions. The idea behind this concept is to raise independent, unrestrained personality. But the other side of the story is that children start to behave wildly and do wrong things when there’s a lack of control – and they are not afraid of any consequences. Moreover, it’s a typical picture today when parents have a go at people who dare to correct or reprove their children rather than discipline their kids for acting out or wrongdoing. Eventually, there is a significant risk that without enough control a kid will become spoiled and grow up as a rather rude and selfish person. And parents will have no one to blame except themselves.</p>
 	<p>Thus, it’s parents’ direct responsibility to find a balance between being strict and being too lenient. Parental control apps can be of a great help providing parents with the information they need to praise and award or to condemn and punish their precious children. No one says you should follow them 24/7 and control their every move. But remotely <a class="a-default" href="/content-filtering-software.html">filtering content</a> they view, monitoring kids’ mobile devices, social media, calls and above all text messages can be a good solution to make sure that there are limits and consequences for unacceptable behavior.</p>
-        
+
         <!-- BLOCK STATISTICK -->
         <div class="block-statistick row">
-            
+
             <div class="item col-s-sm-12 col-xs-sm-12 col-sm-4 col-md-4 col-lg-4">
                 <section>
                     <div><strong class="fz50 color-orange">33%</strong></div>
@@ -132,20 +136,20 @@
                     </span>
                 </section>
             </div>
-            
+
         </div>
         <!-- END -->
 
         <p>Besides helping raise a responsible young people, monitoring their text messages enables parents to protect them even when kids themselves don’t know that they’re in danger. Pumpic parental control app lets you control contacts, block misgiving senders as well as prevent children from drug abuse, bullies, and online predators.</p>
 		<p>Another aspect of teen texting is that, when regularly practiced at bedtime, it may be hazardous to kid’s health. According to the study by Xue Ming, a professor of neuroscience and neurology at Rutgers New Jersey Medical School, late night texting affects the quality and amount of sleep resulting in negative impact on their level of alertness during the day.</p>
-		
+
 {EndContent}
-		
-{Content 
+
+{Content
     styleTitle=""
     title=""
     blockBg='dark'}
-    
+
     <div id="grid-images" class="row">
         <div class="col-lg-9 col-md-9 col-sm-9">
             <h2 class="h2 text-right-important">What Parents Should Know about Teens and Texting</h2>
@@ -172,18 +176,18 @@
             </div>
         </div>
         <div class="col-lg-3 col-md-3 col-sm-3 text-center">
-            <img alt="Track Texts to Prevent Danger" title = "Monitor texts to prevent sexting, bullying and other perils" src="{$img}/landings/cell-phone-text-tracker_icon2.png" style="margin-top: 175px;"/>
+            <img alt="teens text messages" title = "Monitor texts to prevent sexting, bullying and other perils" src="{$img}/landings/teen-messages.png" style="margin-top: 175px;"/>
         </div>
-    </div>    
+    </div>
 {EndContent}
-        
+
 <div class="light">
         <div class="container">
                 <h2 class="text-center">Protect Your Kids Through Cell Phone Text and SMS Tracking</h2>
                 <div class="row">
                         <div class="col-sm-4 col-md-4 col-lg-4">
                                 <div class="feature">
-                                        <img src="{$img}/icons/icon-monitor-text-messages.png" alt="monitor text messages">
+                                        <img src="{$img}/icons/icon-monitor-text-messages.png" alt="">
                                         <h3>Track text messages</h3>
                                         <ul class="feature_list">
                                                 <li>SMS, MMS, IM conversations</li>
@@ -194,7 +198,7 @@
                         </div>
                         <div class="col-sm-4 col-md-4 col-lg-4">
                                 <div class="feature">
-                                        <img src="{$img}/icons/icon-online-activity.png" alt="monitor online activity">										
+                                        <img src="{$img}/icons/icon-online-activity.png" alt="monitor online activity">
                                         <h3>Follow online activities</h3>
                                         <ul class="feature_list">
                                                 <li>Monitor IMs and chats</li>
@@ -217,84 +221,84 @@
                 </div>
         </div>
 </div>
-        
+
         {include file='../includes/content/features-table-new.tpl'
         title = "Benefit from Using All Pumpic Features"
         description = "There are dozens if not hundreds of tracking apps that enable parents to follow their kids’ activity remotely. But Pumpic’s 24 outstanding features (with text monitoring and <a class='a-default' href='/block-words.html'>keyword blocking</a> being one of their major functions) make it stand out from the crowd. This parental control app is designed to help keep your children safe both in digital and the real world. Take a look at the full list of Pumpic’s features – and see how easy you can provide all-round protection for your little ones."
         blockBg="dark"
             icloud = "yes"
             storeLinkText = "Start Tracking"
-        } 
-        
-        {* description = "Install the iPad parental control app on your kid’s tablet and start monitoring right away. Log in to your Control Panel and view all the information from the target device. It can be accessed from anywhere including desktop computers, laptops, smartphones, and tablets. In addition to data monitoring, the Control Panel allows you to set limits, block tablet activities, and lock the target device permanently."             
+        }
+
+        {* description = "Install the iPad parental control app on your kid’s tablet and start monitoring right away. Log in to your Control Panel and view all the information from the target device. It can be accessed from anywhere including desktop computers, laptops, smartphones, and tablets. In addition to data monitoring, the Control Panel allows you to set limits, block tablet activities, and lock the target device permanently."
         *}
-        
+
         <div class="light">
     <div class="container">
             <h2 class="text-center testimonial-title">Trusted by Over 10,000 Customers Globally:</h2>
             <div class="row">
-                
+
                 <div class="bxSliders only-pc">
                         <!-- SLIDE #1 -->
                         <div class="slide">
-                
+
                     <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
-                            <img src="{$img}/testimonials/rita-r.png" alt="" class="testimonial-photo">
+                            <img src="{$img}/testimonials/rita-r.png" alt="pumpic testimonials rita r" class="testimonial-photo">
                             <div class="testimonial-text">
                                     <h4>Rita R. – mother of 14-year-old daughter</h4>
                                     <p>“Pumpic is very easy to install, and its Control Panel is very straightforward. I have never been a tech-savvy person, but even I didn’t have any problems figuring out how everything works. I usually check out my daughter’s SMS, instant messengers, and location logs while having lunch at work. We’ve already had several serious talks about her behavior – thankfully, nothing too risky but it made me realize that I’m giving her too much freedom.”</p>
                             </div>
                     </div>
                     <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
-                            <img src="{$img}/testimonials/joel-a.png" alt="" class="testimonial-photo">
+                            <img src="{$img}/testimonials/joel-a.png" alt="pumpic testimonials joel a" class="testimonial-photo">
                             <div class="testimonial-text">
                                     <h4>Joel A. – father of 13-year-old daughter</h4>
                                     <p>“What can I say – good app. Had some tough times tweaking WhatsApp and Snapchat tracking on my daughter’s iPhone but after they updated the app it’s all working perfectly. Keep up the good work. Can’t imagine what should happen to make me regret the money I had spent on Pumpic. Knowing your kid is OK is worth much. Being able to protect her is priceless.”</p>
                             </div>
                     </div>
                     <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
-                            <img src="{$img}/testimonials/jessie-m.png" alt="" class="testimonial-photo">
+                            <img src="{$img}/testimonials/jessie-m.png" alt="pumpic testimonials jessie m" class="testimonial-photo">
                             <div class="testimonial-text">
                                     <h4>Jessie M. – mother of 14-year-old-son</h4>
                                     <p>“I tried out several parental monitoring apps (even hidden ones), stayed with Pumpic. Seems like they have the best price-quality ratio - their functionality is sometimes even wider than the more expensive solutions have. Especially, I like their comprehensive text tracking feature and reliable GPS location tracking. When we buy a smartphone for our younger son, we’ll definitely install Pumpic on it as well.”</p>
                             </div>
                     </div>
-                            
+
                         </div>
                 </div>
-                <div class="bxSliderMobile"></div>            
-                            
+                <div class="bxSliderMobile"></div>
+
             </div>
     </div>
 </div>
 
         {include file='../includes/content/banners/index.tpl'}
-        
 
-        
+
+
         {*{include file='../includes/content/banners/banner-promo-trial.tpl'}*}
-        
-        <!-- END CONTENT -->    
-           
+
+        <!-- END CONTENT -->
+
         <!-- RECOMMENDED -->
         {*
             Template: RECOMMENDED
-        *}    
+        *}
         {include file='../includes/main/main-recommended.tpl'}
-        
+
         <!-- FOOTER -->
         {*
             Template: FOOTER
             Переменные:
-                our_products (text): Включить выключить блок OUR PRODUCTS (no|yes). * - yes 
+                our_products (text): Включить выключить блок OUR PRODUCTS (no|yes). * - yes
         *}
         {include file='../includes/main/main-quick-link.tpl'
         blockBg="light"
         }
         {include file='../includes/main/main-footer.tpl'}
-                
+
     </div>
-       
+
     {include file='../includes/main/main-analytics-footer.tpl'}
 </body>
 </html>

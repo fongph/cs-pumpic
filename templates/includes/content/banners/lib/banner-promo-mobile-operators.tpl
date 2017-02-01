@@ -5,9 +5,6 @@
         <ul>
             <li><i class="fa fa-apple"></i> <b>IOS</b> {$ver_icloud_bot} - {$ver_icloud_up} (iCloud)</li>
             <li><i class="fa fa-android"></i> <b>Android</b> {$ver_android_bot} - {$ver_android_up}</li>
-            {if !isset($hideJailbreak)}
-            <li><i class="fa fa-unlock-alt fa-lg"></i> <b>IOS</b> {$ver_ios_bot} - {$ver_jailbreak_up} (jailbreak)</li>
-            {/if}
         </ul>
     </div>
     <div class="banner-arrow"></div>

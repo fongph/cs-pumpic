@@ -11,27 +11,8 @@ $obj = new includes\lib\users\Order;
 // smarty config
 require_once 'smarty.config.php';
 
-if (isset($_COOKIE['page'])){
-    $url = $_COOKIE['page'];
-    if ($url != '/store'){
-        header("Location: //".$config['domain'].$url.".html");
-    }
-} elseif (!isset($_COOKIE['page'])) {
-    setcookie('page', '', time()+365*24*60*60, '/', '.pumpic.com');
-    $urls = array(0 =>'/store', 1 => '/store-sub-same', 2 =>'/store-sub-new');
-    $clientsNumber = $obj ->getStoreClientsCount();
-    $obj->incrementStoreClientsCount();
-    $url = $clientsNumber % 3;
-    $redirectUrl = $urls[$url];
-    setcookie('page', $redirectUrl, time()+365*24*60*60, '/', '.pumpic.com');
-    if ($redirectUrl != '/store'){
-        header("Location: //".$config['domain'].$redirectUrl.".html");
-    }
-
-}
-
 /* list order */
-$products = $obj ->getProducts('second');
+$products = $obj ->getProducts('second-new');
 
 /* form_order */
 $_request = (isset($_POST['price']) and !empty($_POST['price'])) ? $_POST['price']: false;
@@ -57,7 +38,7 @@ if($_request['productID']) {
 if(is_array($products)) {
     if(isset($products['iosiCloud'])) {
         foreach($products['iosiCloud'] as $item) :
-            if ($item['period'] == 12 && $item['id']) {
+            if ($item['period'] == 24 && $item['id']) {
                 $smarty->assign('defaultIosiCloudProduct', $item['id']);
                 $smarty->assign('defaultIosiCloudPrice', round($item['price'] / $item['period'], 2));
             }
@@ -95,11 +76,13 @@ $_curr -> setFilter( ['iso' => ['USD','EUR','GBP','CAD','AUD'] ] );
 $_rates = $_curr -> getCurrencies();
 
 $smarty->assign('rates', json_encode($_rates));
-$smarty->assign('showRobots', 'no');
+$smarty->assign('subNew', true);
+
 
 // init output params!
 $smarty->assign('getProducts', $products);
-
+//echo '<pre>';
+//var_dump($products);die();
 $smarty->display($b_dir . '/templates/pages/store.tpl');
 
 

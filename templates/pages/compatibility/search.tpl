@@ -78,25 +78,24 @@
                                                                     {if $phone.name  == "Apple iPhone 4"}
                                                                         <section>
                                                                             <span><strong>{if $phone.os  == "iOS"}iOS{else}{$phone.os}{/if} </strong>
-                                                                                {if $phone.os == "iOS"}(iCloud) <b>{$ver_icloud_bot} -7.1.2</b>{/if}</span>
+                                                                                {if $phone.os == "iOS"} <b>{$ver_icloud_bot} -7.1.2</b>{/if}</span>
                                                                         </section>
 
                                                                     {elseif $phone.name  == "Apple iPhone 3GS" || $phone.name  == "Apple iPod touch 4th"}
 
                                                                         <section>
                                                                             <span><strong>{if $phone.os  == "iOS"}iOS{else}{$phone.os}{/if} </strong>
-                                                                                {if $phone.os == "iOS"}(iCloud) <b>{$ver_icloud_bot} - 6.1.6</b>{/if}</span>
+                                                                                {if $phone.os == "iOS"} <b>{$ver_icloud_bot} - 6.1.6</b>{/if}</span>
                                                                         </section>
 
                                                                     {else}
 
                                                                         <section>
-                                                                            <span><strong>{if $phone.os  == "iOS"}iOS{else}{$phone.os}{/if} </strong> {if $phone.os  == "iOS"}(iCloud) <b>{$ver_icloud_bot} - {$ver_icloud_up}</b>{/if}</span>
+                                                                            <span><strong>{if $phone.os  == "iOS"}iOS{else}{$phone.os}{/if} </strong> {if $phone.os  == "iOS"} <b>{$ver_icloud_bot} - {$ver_icloud_up}</b>{/if}</span>
                                                                         </section>
                                                                     {/if}
                                                                 {/if}
-                                                                {if $phone.os  == "iOS"}<span style="padding-top: 7px;"><strong>iOS</strong> (jailbreak) <b>{$phone.version}</b>
-                                                                    {else}
+                                                                {if $phone.os  != "iOS"}
                                                                     <span>
                                                                     <b>{$phone.os} {$ver_android_bot} - {$ver_android_up}</b>
                                                                     </span>
@@ -167,7 +166,7 @@
 
     <script type="text/javascript">
         {*var Devices = {
-            imgPath: 'http://{$api_device._domain}/{$api_device.path_img}/',
+            imgPath: '{$schema}pumpic.com{$api_device._domain}/{$api_device.path_img}/',
             $titleBlock:  $('.result-title'),
             $resBlock: $('.box-get-search-result'),
             $paginationBlock: $('.box-navigations'),

@@ -1,12 +1,11 @@
 {*Order out="getProducts"*}
 {*formOrder post=$smarty.post*}
+{if $smarty.server.REQUEST_URI !== '/store.html'}{$robots='no'}{/if}
 
 {include file='../includes/main/main-header.tpl'
 showRand="true"
 title="Phone Tracker Prices and Subscription Plans | Pumpic"
-description="Pumpic offers high-quality cell phone tracking software for a good price. Learn more about subscription plans. Choose the one that suits your monitoring needs."
-}
-
+description="Pumpic offers high-quality cell phone tracking software for a good price. Learn more about subscription plans. Choose the one that suits your monitoring needs."}
 <body>
 <style>
     @media (max-width: 767px) {
@@ -60,7 +59,7 @@ description="Pumpic offers high-quality cell phone tracking software for a good 
         .banner-store {
             max-width: 782px;
             margin: 0 auto;
-            background: url("http://www.wearewebstars.dk/codepen/img//s2.png"), linear-gradient(-54deg,#1d477d,#3594a2,#bb6884) no-repeat bottom;
+            background: url("https://www.wearewebstars.dk/codepen/img//s2.png"), linear-gradient(-54deg,#1d477d,#3594a2,#bb6884) no-repeat bottom;
             background-size: 130px, 100%;
             padding: 8px 0 0;
             display: flex;
@@ -105,9 +104,6 @@ description="Pumpic offers high-quality cell phone tracking software for a good 
                                             <li id="filter-android" class="filter_item"><i class="fa fa-android filter_icon"></i> <b>Android</b> <span class="filter_version _version-hide-xs">{$ver_android_bot} - {$ver_android_up}</span>
                                                 <div class="filter_version">26 features</div>
                                             </li>
-                                            <li id="filter-ios-jb" class="filter_item"><i class="fa fa-unlock-alt filter_icon" style="line-height: 1;"></i> <b>iOS</b><span class="filter_version _version-hide-xs"> {$ver_ios_bot} - {$ver_jailbreak_up}</span><span class="filter_version"> (jailbreak)</span>
-                                                <div class="filter_version">27 features</div>
-                                            </li>
                                         </ul>
                                     </div>
                                     <div class="prod-head clearfix">
@@ -123,7 +119,7 @@ description="Pumpic offers high-quality cell phone tracking software for a good 
                                                             <span class="prod-head__device tablet">iPad</span>
                                                             <span class="prod-head__device smart">iPod Touch</span>
                                                         </p>
-                                                        <p class="prod-head__price"><span>starting from </span><b>$6.99/</b><span> month</span></p>
+                                                        <p class="prod-head__price"><span>starting from </span><b>${if (isset($subSame) && $subSame === true)}8.32{elseif (isset($subNew) && $subNew === true)}6.24{else}6.99{/if}/</b><span> month</span></p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -165,32 +161,6 @@ description="Pumpic offers high-quality cell phone tracking software for a good 
                                             </div>
                                         </div>
                                         {*---LIST ANDROID---*}
-                                        {*---LIST-IOS-JB---*}
-                                        <div id="prod-list-ios-jb" style="display: none;">
-                                            <div class="col-sm-6 small-mobile-pd">
-                                                <div class="prod-wrap">
-                                                    <div class="prod-short-inf">
-                                                        <div class="prod-head__img"><img src="/images/jb-pack.png" alt="..."></div>
-                                                        <p class="prod-head__version"><i class="icon-apple filter_icon"></i><b>iOS {$ver_ios_bot} - {$ver_jailbreak_up}</b></p>
-                                                        <p>
-                                                            <span class="prod-head__device phone">iPhone</span>
-                                                            <span class="prod-head__device tablet">iPad</span>
-                                                            <span class="prod-head__device smart">iPod Touch</span>
-                                                        </p>
-                                                        <p class="prod-head__price"><span>starting from </span><b>$6.99/</b><span> month</span></p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-6">
-                                                <ul class="prod-list">
-                                                    <li><span>Extended iOS devices monitoring and control options</span></li>
-                                                    <li><span>Physical access and target device jailbreak are required</span></li>
-                                                    <li><span>The app is visible but password-protected</span></li>
-                                                </ul>
-                                                <a href="#jb-features-h" class="a-default prod-features hidden-xs">Show all 27 features</a>
-                                            </div>
-                                        </div>
-                                        {*---LIST-IOS-JB---*}
                                     </div>
                                     <div class="support_new_os"><div class="wr_support_new_os"><i class="icon-android d_green"></i> Android {$ver_android_bot} - {$ver_android_up}
                                             <i class="icon-apple d_green"></i> iOS {$ver_ios_bot} - {$ver_jailbreak_up} (with jailbreak)   <i class="icon-cloud d_green"></i>   iCloud iOS {$ver_icloud_up}</div></div>
@@ -264,8 +234,8 @@ description="Pumpic offers high-quality cell phone tracking software for a good 
                                                             </div>
                                                             <button class="btn btn-default ga-action-click"
                                                                     ga-action ="click"
-                                                                    ga-category="store"
-                                                                    ga-label="buy icloud"
+                                                                    ga-category="{if $smarty.server.REQUEST_URI !== '/store.html'}Split_test{else}store{/if}"
+                                                                    ga-label="{if $smarty.server.REQUEST_URI == '/store-sub-same.html'}buy_sub_same1{elseif $smarty.server.REQUEST_URI == '/store-sub-new.html'}buy_sub_new1{else}buy icloud{/if}"
                                                                     value="true" type="submit" name="price[submit]">Buy</button>
                                                         </form>
                                                         {*<div class="show_premium_features _icloud-f"><div class="show-f _icloud-f">Show features <i class="fa fa-chevron-down"></i></div><div class="hide-f _icloud-f" style="display: none;">Hide features  <i class="fa fa-chevron-up"></i></div></div>*}
@@ -394,8 +364,8 @@ description="Pumpic offers high-quality cell phone tracking software for a good 
                                                                 </div>
                                                                 <button class="btn btn-default ga-action-click"
                                                                         ga-action ="click"
-                                                                        ga-category="store"
-                                                                        ga-label="buy icloud"
+                                                                        ga-category="{if $smarty.server.REQUEST_URI !== '/store.html'}Split_test{else}store{/if}"
+                                                                        ga-label="{if $smarty.server.REQUEST_URI == '/store-sub-same.html'}buy_sub_same2{elseif $smarty.server.REQUEST_URI == '/store-sub-new.html'}buy_sub_new2{else}buy icloud{/if}"
                                                                         value="true" type="submit" name="price[submit]">Buy</button>
                                                             </form>
                                                             {*<div class="space_line">&nbsp;</div>*}
@@ -413,266 +383,7 @@ description="Pumpic offers high-quality cell phone tracking software for a good 
                                             {*{include file='../includes/store/store-desktop.tpl'} for debug*}
                                         </div>
                                         {* ---ANDROID---*}
-                                        {* ---JAILBREAK---*}
-                                        <div data-info-block="ios-jb" style="display: none;">
-                                            <div class="premium_wr prod-icloud">
-                                                <div class="pricep">
-                                                    <div class="buy-wrapper hidden-xs">
-                                                    <div class="wrapper_pack clearfix">
-                                                        <div class="wr_pack_premium wr_icloud_jb _single-pack-jailbreak"></div>
-                                                        <div class="wr_pack_double_premium wr_icloud_jb-double _double-pack-jailbreak"></div>
-                                                        <div class="wr_price_big">
-                                                            <span></span><div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr jailbreak-price-per-month" >{$defaultPremiumPrice}</div></div><span>/ month</span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="list_price icloud-list_price">
 
-                                                        <form name="price_premium" method="POST" action="/buy.html" class="buy-form-with-offer" autocomplete="off" >
-                                                            <div class="save__2plan">
-                                                                <div class="save__text label-touch">
-                                                                    <input type="checkbox" name="jailbreak-40off" id="jailbreak-40off-main" data-checkboxes="jailbreak-40off">
-                                                                    <label for="jailbreak-40off-main">
-                                                                    <span>Save 40%</span> on the 2nd plan. <div class="limited-time">Limited time offer!</label></div>
-                                                                </div>
-                                                            </div>
-                                                            <input id='product_price_premium' type='hidden' name='price[productID]' value='{if isset($getDefaultIosJailbreak)}{$getDefaultiosJailbreak}{else}0{/if}' class="product_price"/>
-
-                                                            <ul>
-                                                                {foreach from=$getProducts.iosJailbreak key=key item=item}
-                                                                    <li>
-                                                                        <label class="label_radio hover_label_radio {if $item.period == '12'}r_on{else}r_off{/if}">
-                                                                            <input class="data-price" data-target=".jailbreak-price-per-month" data-cur="usd" data-price-usd="{$item.price}" data-offer-price-usd="{$getProducts.iosJailbreakDouble[$key].price}" data-period="{$item.period}" data-product="{$item.id}" data-offer-product="{$getProducts.iosJailbreakDouble[$key].id}" data-group="jailbreak"  name="optionsRadios" id="optionsRadios{$item.id}1" value="{$item.id}" type="radio"{if $item.period == '12'} checked="checked"{/if} />
-                                                                            <span class="sp">
-                                                                            <strong>{$item.period}</strong> {if $item.period == 1}month{else}months{/if}
-                                                                        </span>
-
-                                                                            <div class="box-small-package">
-                                                                                <div class="offer_old_price"><div class="box-currence strike__currence"><div class="symbol" attr-iso="usd">$</div><div class="curr">{$item.price * 2|string_format:"%.2f"}</div></div></div>
-                                                                            </div>
-
-                                                                            <div class="package_price">
-                                                                                <strong>
-                                                                                    <div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr">{$item.price}</div></div>
-                                                                                </strong>
-                                                                            </div>
-                                                                            <div class="package_offer_price">
-                                                                                <strong>
-                                                                                    <div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr">{$getProducts.iosJailbreakDouble[$key].price}</div></div>
-                                                                                </strong>
-                                                                            </div>
-                                                                        </label>
-                                                                    </li>
-                                                                {/foreach}
-                                                            </ul>
-                                                            <div class="double_offer checkbox">
-                                                                <label>
-                                                                    <input type="checkbox" data-group="jailbreak" name="jailbreak-40off">
-                                                                    Get the 2nd plan with <span>40% OFF!</span>
-                                                                </label>
-                                                            </div>
-                                                            <button class="btn btn-default ga-action-click"
-                                                                    ga-action ="click"
-                                                                    ga-category="store"
-                                                                    ga-label="buy jailbreak"
-                                                                    value="true" type="submit" name="price[submit]">Buy</button>
-                                                        </form>
-                                                    </div>
-                                                </div>
-                                                    {*<div class="show_premium_features _jailbreak-f"><div class="show-f _jailbreak-f">Show features <i class="fa fa-chevron-down"></i></div><div class="hide-f _jailbreak-f" style="display: none;">Hide features  <i class="fa fa-chevron-up"></i></div></div>*}
-
-                                                    <div class="premium_fe _jailbreak-f">
-                                                        <div class="premium_h" style="text-transform: none;" id="jb-features-h">
-                                                            iOS Jailbreak monitoring features
-                                                        </div>
-                                                        <ul class="icloud-features m0">
-                                                            <li class="icloud-features__item">
-                                                                <p class="icloud-features__name"><i class="icon-ok"></i>Calls history</p>
-                                                                <p class="icloud-features__info m0">View detailed data on incoming/outgoing calls: name, phone number, time and duration.</p>
-                                                            </li>
-                                                            <li class="icloud-features__item">
-                                                                <p class="icloud-features__name"><i class="icon-ok"></i>Text message history</p>
-                                                                <p class="icloud-features__info m0">View text content sent or received via SMS, MMS, and iMessages.</p>
-                                                            </li>
-                                                            <li class="icloud-features__item">
-                                                                <p class="icloud-features__name"><i class="icon-ok"></i>WhatsApp</p>
-                                                                <p class="icloud-features__info m0">Track chats and calls on WhatsApp.</p>
-                                                            </li>
-                                                            <li class="icloud-features__item">
-                                                                <p class="icloud-features__name"><i class="icon-ok"></i>Calendar</p>
-                                                                <p class="icloud-features__info m0">Monitor scheduled dates and events.</p>
-                                                            </li>
-                                                            <li class="icloud-features__item">
-                                                                <p class="icloud-features__name"><i class="icon-ok"></i>Notes</p>
-                                                                <p class="icloud-features__info m0">Track Notes on the target iOS device.
-                                                                </p>
-                                                            </li>
-                                                            <li class="icloud-features__item">
-                                                                <p class="icloud-features__name"><i class="icon-ok"></i>Bookmarks</p>
-                                                                <p class="icloud-features__info m0">View all websites visited and bookmarked as preferred ones.</p>
-                                                            </li>
-                                                            <li class="icloud-features__item">
-                                                                <p class="icloud-features__name"><i class="icon-ok"></i>Browsing history</p>
-                                                                <p class="icloud-features__info m0">View all visited websites.</p>
-                                                            </li>
-                                                            <li class="icloud-features__item">
-                                                                <p class="icloud-features__name"><i class="icon-ok"></i>Photos</p>
-                                                                <p class="icloud-features__info m0">View all photos stored on a device.</p>
-                                                            </li>
-                                                            <li class="icloud-features__item">
-                                                                <p class="icloud-features__name"><i class="icon-ok"></i>Skype</p>
-                                                                <p class="icloud-features__info m0">Track chats and calls on Skype.</p>
-                                                            </li>
-                                                            <li class="icloud-features__item">
-                                                                <p class="icloud-features__name"><i class="icon-ok"></i>Kik</p>
-                                                                <p class="icloud-features__info m0">Track conversations via Kik.</p>
-                                                            </li>
-                                                            <li class="icloud-features__item">
-                                                                <p class="icloud-features__name"><i class="icon-ok"></i>Historical data</p>
-                                                                <p class="icloud-features__info m0">View all the previous data ever stored on a device.</p>
-                                                            </li>
-                                                            <li class="icloud-features__item">
-                                                                <p class="icloud-features__name"><i class="icon-ok"></i>Location history</p>
-                                                                <p class="icloud-features__info m0">Track current location as well as the entire route history. Map view available.</p>
-                                                            </li>
-                                                            <li class="icloud-features__item">
-                                                                <p class="icloud-features__name"><i class="icon-ok"></i>Contacts</p>
-                                                                <p class="icloud-features__info m0">View contact list including names, addresses, numbers and emails.</p>
-                                                            </li>
-                                                            <li class="icloud-features__item">
-                                                                <p class="icloud-features__name"><i class="icon-ok"></i>Calls blocking</p>
-                                                                <p class="icloud-features__info m0">Block calls from specific numbers.</p>
-                                                            </li>
-                                                            <li class="icloud-features__item">
-                                                                <p class="icloud-features__name"><i class="icon-ok"></i>SMS blocking</p>
-                                                                <p class="icloud-features__info m0">Block SMS from specific senders and/or containing specific keywords.</p>
-                                                            </li>
-                                                            <li class="icloud-features__item">
-                                                                <p class="icloud-features__name"><i class="icon-ok"></i>SMS limiting</p>
-                                                                <p class="icloud-features__info m0">Set a number of SMS a user can send daily.</p>
-                                                            </li>
-                                                            <li class="icloud-features__item">
-                                                                <p class="icloud-features__name"><i class="icon-ok"></i> Geo-fences</p>
-                                                                <p class="icloud-features__info m0">Set specific zones and receive alerts once the target device leaves them or enters.</p>
-                                                            </li>
-                                                            <li class="icloud-features__item">
-                                                                <p class="icloud-features__name"><i class="icon-ok"></i> Websites blocking</p>
-                                                                <p class="icloud-features__info m0">Block specific websites on a target device.</p>
-                                                            </li>
-                                                            <li class="icloud-features__item">
-                                                                <p class="icloud-features__name"><i class="icon-ok"></i> Emails</p>
-                                                                <p class="icloud-features__info m0">View all emails and detailed contact data.</p>
-                                                            </li>
-                                                            <li class="icloud-features__item">
-                                                                <p class="icloud-features__name"><i class="icon-ok"></i> Applications Management</p>
-                                                                <p class="icloud-features__info m0">Monitor, block or set time limits on all applications (games, services etc.) downloaded on a device.</p>
-                                                            </li>
-                                                            <li class="icloud-features__item">
-                                                                <p class="icloud-features__name"><i class="icon-ok"></i> Videos</p>
-                                                                <p class="icloud-features__info m0">View all videos stored on a device.</p>
-                                                            </li>
-                                                            <li class="icloud-features__item">
-                                                                <p class="icloud-features__name"><i class="icon-ok"></i>Viber</p>
-                                                                <p class="icloud-features__info m0">Track chats and calls on Viber.</p>
-                                                            </li>
-                                                            <li class="icloud-features__item">
-                                                                <p class="icloud-features__name"><i class="icon-ok"></i> Instagram</p>
-                                                                <p class="icloud-features__info m0">Monitor posted images and comments on Instagram.</p>
-                                                            </li>
-                                                            <li class="icloud-features__item">
-                                                                <p class="icloud-features__name"><i class="icon-ok"></i> Snapchat</p>
-                                                                <p class="icloud-features__info m0">Monitor Snapchat chat messages.</p>
-                                                            </li>
-                                                            <li class="icloud-features__item">
-                                                                <p class="icloud-features__name"><i class="icon-ok"></i> Facebook</p>
-                                                                <p class="icloud-features__info m0">Track chats and calls on Facebook.</p>
-                                                            </li>
-                                                            <li class="icloud-features__item">
-                                                                <p class="icloud-features__name"><i class="icon-ok"></i> SMS commands</p>
-                                                                <p class="icloud-features__info m0">Control devices remotely.</p>
-                                                            </li>
-                                                            <li class="icloud-features__item">
-                                                                <p class="icloud-features__name"><i class="icon-ok"></i> Keylogger</p>
-                                                                <p class="icloud-features__info m0">View every keystroke typed on a target device.</p>
-                                                            </li>
-                                                        </ul>
-                                                        <div class="table_title free-label">
-                                                            <h3 class="free-label__headname">FREE:</h3>
-                                                            <span class="free-label__item"><i class="icon-ok"></i>Remote control panel</span>
-                                                            <span class="free-label__item"><i class="icon-ok"></i>Remote device lock</span>
-                                                            <span class="free-label__item"><i class="icon-ok"></i>Sim card change alert</span>
-                                                        </div>
-                                                        {*<div class="show_premium_features _jailbreak-f"><div class="show-f _jailbreak-f">Show features <i class="fa fa-chevron-down"></i></div><div class="hide-f _jailbreak-f" style="display: none;">Hide features  <i class="fa fa-chevron-up"></i></div></div>*}
-
-                                                    </div>
-
-                                                    <div class="prod-icloud _jailbreak-f">
-                                                        <div class="wrapper_pack wrapper_pack2 clearfix">
-                                                            <div class="wr_pack_premium wr_icloud_jb _single-pack-jailbreak"></div>
-                                                            <div class="wr_pack_double_premium wr_icloud_jb-double _double-pack-jailbreak"></div>
-                                                            <div class="wr_price_big">
-                                                                <span></span><div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr jailbreak-price-per-month" >{$defaultPremiumPrice}</div></div><span>/ month</span>
-                                                            </div>
-                                                        </div>
-                                                        <div class="list_price icloud-list_price">
-                                                            <form name="price_premium" method="POST" action="/buy.html" class="buy-form-with-offer" autocomplete="off" >
-                                                                <div class="save__2plan">
-                                                                    <div class="save__text label-touch">
-                                                                        <input type="checkbox" name="jailbreak-40off" id="jailbreak-40off-main" data-checkboxes="jailbreak-40off">
-                                                                        <label for="jailbreak-40off-main">
-                                                                        <span>Save 40%</span> on the 2nd plan. <div class="limited-time">Limited time offer!</div>
-                                                                            </label>
-                                                                    </div>
-                                                                </div>
-                                                                <input id='product_price_premium' type='hidden' name='price[productID]' value='{if isset($getDefaultIosJailbreak)}{$getDefaultiosJailbreak}{else}0{/if}' class="product_price"/>
-
-                                                                <ul>
-                                                                    {foreach from=$getProducts.iosJailbreak key=key item=item}
-                                                                        <li>
-                                                                            <label class="label_radio hover_label_radio {if $item.period == '12'}r_on{else}r_off{/if}">
-                                                                                <input class="data-price" data-target=".jailbreak-price-per-month" data-cur="usd" data-price-usd="{$item.price}" data-offer-price-usd="{$getProducts.iosJailbreakDouble[$key].price}" data-period="{$item.period}" data-product="{$item.id}" data-offer-product="{$getProducts.iosJailbreakDouble[$key].id}" data-group="jailbreak"  name="optionsRadios" id="optionsRadios{$item.id}1" value="{$item.id}" type="radio"{if $item.period == '12'} checked="checked"{/if} />
-                                                                                <span class="sp">
-                                                                            <strong>{$item.period}</strong> {if $item.period == 1}month{else}months{/if}
-                                                                        </span>
-
-                                                                                <div class="box-small-package">
-                                                                                    <div class="offer_old_price"><div class="box-currence strike__currence"><div class="symbol" attr-iso="usd">$</div><div class="curr">{$item.price * 2|string_format:"%.2f"}</div></div></div>
-                                                                                </div>
-
-                                                                                <div class="package_price">
-                                                                                    <strong>
-                                                                                        <div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr">{$item.price}</div></div>
-                                                                                    </strong>
-                                                                                </div>
-                                                                                <div class="package_offer_price">
-                                                                                    <strong>
-                                                                                        <div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr">{$getProducts.iosJailbreakDouble[$key].price}</div></div>
-                                                                                    </strong>
-                                                                                </div>
-                                                                            </label>
-                                                                        </li>
-                                                                    {/foreach}
-                                                                </ul>
-                                                                <div class="double_offer checkbox">
-                                                                    <label>
-                                                                        <input type="checkbox" data-group="jailbreak" name="jailbreak-40off">
-                                                                        Get the 2nd plan with <span>40% OFF!</span>
-                                                                    </label>
-                                                                </div>
-                                                                <button class="btn btn-default ga-action-click"
-                                                                        ga-action ="click"
-                                                                        ga-category="store"
-                                                                        ga-label="buy jailbreak"
-                                                                        value="true" type="submit" name="price[submit]">Buy</button>
-                                                            </form>
-                                                            {*<div class="space_line">&nbsp;</div>*}
-                                                        </div>
-                                                    </div>
-
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                        {* ---JAILBREAK---*}
                                     </th>
                                 </tr>
                                 </thead>

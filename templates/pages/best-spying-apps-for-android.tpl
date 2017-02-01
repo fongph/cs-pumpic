@@ -6,14 +6,14 @@
         .block-child-location-tracking .ipad-text {
             padding: 10px 0;
         }
-        
+
         @media only screen and (max-width: 480px) {
             .block-child-location-tracking .ipad-text {
                 padding: 10px 0px 50px 0px;
             }
         }
 
-        @media (min-width: 468px) { 
+        @media (min-width: 468px) {
             .block-child-location-tracking .ipad-text {
                 padding: 10px 0px 50px 0px;
             }
@@ -37,15 +37,19 @@
             .block-child-location-tracking .ipad-text {
               padding: 10px 0;
             }
-        } 
+        }
     "
-}    
-    
+}
+
 <body>
-    <!-- FLY BLOCKS -->
+<!-- BLOCK GTM -->
+{include file='../includes/main/main-after-body.tpl'}
+<!-- END BLOCK GTM -->
+
+<!-- FLY BLOCKS -->
     {include file='../includes/content/fly/fly_blocks.tpl'}
     <!-- END FLY BLOCKS-->
-    
+
     <div class="wrapper {*bg_bottom_images*} block-child-location-tracking home-page">
         <!-- TOP MENU -->
 
@@ -55,16 +59,16 @@
         }
 
 
-        
+
         {*
             Template: PHONE
             Переменные:
-                style (text): стиль блока Phone (blue|black). * - blue 
+                style (text): стиль блока Phone (blue|black). * - blue
         *}
         {include file='../includes/content/phone/block-phone.tpl'
-                 style="blue"   
+                 style="blue"
         }
-        
+
         {* bg_famaly_427x254.png imgVerticalAlign = "bottom"*}
         <!-- CONTENT -->
 
@@ -99,23 +103,23 @@
             buttonViewDemo = 'no'
             buttonFreeTrial = 'yes'
         }
-		
-        
+
+
         {*  styleTitle="h2"
     title="Follow Kids Remotely Wherever They Go" *}
-        
-{Content 
-    styleTitle="h2"    
+
+{Content
+    styleTitle="h2"
     title="What Is the Alternative to Using a Spy App?"
     blockBg='light'}
-	
+
 	<img class="app-icon-left" src="{$img}/landings/best-spy-apps-for-android_2_01-04-2016.png" title="Definition of spy apps for Android" alt="android monitoring">
 	<p>According to the security company Lookout, 24% of Android phones scanned in the USA had the installed spying software. The apps attract people by various outstanding traits, and software providers do their best to improve the quality of their services. As a result, new monitoring features appear regularly making people install the spying apps.</p>
-	<p>When it comes to choosing to the best <a class="a-default" target="_blank" href="/spy-apps-for-android.html">Android cell phone spy software</a>, most people cannot make a final decision quickly. Easy Spy, Cell Tracker, mSpy, Mobile Stealth, Phone Sheriff are just a few possible options to install. With the help of spy apps, it is possible to follow the incoming and outgoing calls, track messages, check contacts, monitor browsing history, check social media, view photo and media files and much more. It seems that the functions of the best cell phone spy are unlimited.</p>
-        
+	<p>When it comes to choosing to the best Android cell phone spy software, most people cannot make a final decision quickly. Easy Spy, Cell Tracker, mSpy, Mobile Stealth, Phone Sheriff are just a few possible options to install. With the help of some of the best spy apps for Android, it is possible to follow the incoming and outgoing calls, track messages, check contacts, monitor browsing history, check social media, view photo and media files and much more. It seems that the functions of the best cell phone spy are unlimited.</p>
+
         <!-- BLOCK STATISTICK -->
         <div class="block-statistick row">
-            
+
             <div class="item col-s-sm-12 col-xs-sm-12 col-sm-4 col-md-4 col-lg-4">
                 <section>
                     <div><strong class="fz50 color-orange">97%</strong></div>
@@ -140,26 +144,26 @@
                     </span>
                 </section>
             </div>
-            
+
         </div>
         <!-- END -->
 
         <p>Studies have proven that today people are more open to share their personal information via social media networks. This fact makes jealous partners seriously consider using spy apps to follow all the activities of their spouse. Once you know how to install a spy app on Android, it becomes very easy to monitor the Facebook and Instagram activity, view all photos and video uploaded and even the comments posted below.</p>
-		<p>However, you should note that using the spy apps is not lawful as it violates the personal freedom and ignores all legal requirements of the most countries. But how to protect the loved one without breaking any regulations? The answer is simple: to use parental control apps such as Pumpic that are legal. Today  one third of parents successfully use tracking apps on their teen’s phone to protect their children.</p>
-		
+		<p>However, you should note that using the spy software for Android is not lawful as it violates the personal freedom and ignores all legal requirements of the most countries. But how to protect the loved one without breaking any regulations? The answer is simple: to use parental control apps such as Pumpic that are legal. Today  one third of parents successfully use tracking apps on their teen’s phone to protect their children.</p>
+
 {EndContent}
-		
-{Content 
+
+{Content
     styleTitle=""
     title=""
     blockBg='dark'}
-    
+
     <div id="grid-images" class="row">
         <div class="col-lg-9 col-md-9 col-sm-9">
             <h2 class="h2 text-right-important">Opportunities Parental Control Apps Provide</h2>
             <div class="pt30 pb20">
                 <p>Most troubles children have nowadays are caused by the unlimited use of smartphones. The devices give access to a lot of inappropriate information. The statistics is sad as 51% of children who go online have been cyberbullied. Moreover, most of them didn’t complain to their parents or inform teachers. According to a study by Yale University, bullied teens are 9% more likely to commit a suicide. If you want to protect your child and be sure that they are always safe, consider using parental control app like Pumpic.</p>
-				<p>Mobile monitoring software is a powerful tool that allows parents avert the potential danger before something bad has happened. Let’s look closer at the reasons why you should use parental tracking app.</p>	
+				<p>Mobile monitoring software is a powerful tool that allows parents avert the potential danger before something bad has happened. Let’s look closer at the reasons why you should use parental tracking app.</p>
 				<ul class="list-images">
 				<li><img src="/images/landings/check-icon.png" alt="Check Mark" class="lc-1" style="left: -29px;"/>It is legal – parental control apps are absolutely legitimate to use, unlike the best spyware for Android phones we’ve discussed above. Install the monitoring app on your child device and you may be sure that you don’t break any regulations.</li>
 				<li><img src="/images/landings/check-icon.png" alt="Check Mark" class="lc-1" style="left: -29px;"/>It has various functions – you can monitor your child’s location, block access to the 18+ content and inappropriate links, set limits on installing applications, follow the browsing history and much more.</li>
@@ -170,9 +174,9 @@
         <div class="col-lg-3 col-md-3 col-sm-3 text-center">
             <img  class="block-apps-pic" alt="parental controls" title="Features of parental controls" src="{$img}/landings/best-spy-apps-for-android_3_01-04-2016.png" width="207px" height="208px" />
         </div>
-    </div>    
+    </div>
 {EndContent}
-        
+
 <div class="light">
         <div class="container">
                 <h2 class="text-center">Install Parental Monitoring App on Your Android Device</h2>
@@ -213,23 +217,23 @@
                 </div>
         </div>
 </div>
-        
+
         {include file='../includes/content/features-table-new.tpl'
         title = "Outstanding Features for You as a Careful Parent"
         description = "Pumpic is a solution of all your worries concerning the safety of your child. It provides more than 24 notable features for the best protection. You can take care of your children remotely and always be sure that they are not bullied, offended, or harmed by inappropriate information found online. If you are a careful parent and we do know that you are, check the features that will help to prevent the possible dangers."
         blockBg="dark"
             android = "yes"
-        } 
-        
+        }
+
         <div class="light">
     <div class="container">
             <h2 class="text-center testimonial-title">Trusted by Over 10 000 Customers Worldwide:</h2>
             <div class="row">
-                
+
                 <div class="bxSliders only-pc">
                         <!-- SLIDE #1 -->
                         <div class="slide">
-                
+
                     <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
                             <img src="{$img}/testimonials/mary-n-14-1.png" alt="" class="testimonial-photo">
                             <div class="testimonial-text">
@@ -251,42 +255,42 @@
                                     <p>“My girls spend too much time in the Internet. They are constantly using Facebook and it’s hard to follow all they are looking for around the web. Thankfully, Pumpic helps me a lot. When I have a free minute I can check the current activities and even their location if they are not at home to be sure they are in safe. Thank you a lot for such an amazing opportunity to protect my daughters.”</p>
                             </div>
                     </div>
-                            
+
                         </div>
                 </div>
-                <div class="bxSliderMobile"></div>            
-                            
+                <div class="bxSliderMobile"></div>
+
             </div>
     </div>
 </div>
 
         {include file='../includes/content/banners/index.tpl'}
-        
 
-        
+
+
         {*{include file='../includes/content/banners/banner-promo-trial.tpl'}*}
-        
-        <!-- END CONTENT -->    
-           
+
+        <!-- END CONTENT -->
+
         <!-- RECOMMENDED -->
         {*
             Template: RECOMMENDED
-        *}    
+        *}
         {include file='../includes/main/main-recommended.tpl'}
-        
+
         <!-- FOOTER -->
         {*
             Template: FOOTER
             Переменные:
-                our_products (text): Включить выключить блок OUR PRODUCTS (no|yes). * - yes 
+                our_products (text): Включить выключить блок OUR PRODUCTS (no|yes). * - yes
         *}
         {include file='../includes/main/main-quick-link.tpl'
         blockBg="light"
         }
         {include file='../includes/main/main-footer.tpl'}
-                
+
     </div>
-       
+
     {include file='../includes/main/main-analytics-footer.tpl'}
 </body>
 </html>

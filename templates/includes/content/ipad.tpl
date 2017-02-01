@@ -72,7 +72,7 @@
                                     <ul>
                                         {if $showViewDemo eq "true"}
                                         <li>
-                                            <a href="http://demo.{$domain}/setDevice/125?redirect_url=cp/calls"
+                                            <a href="{$schema}demo.{$domain}/setDevice/125?redirect_url=cp/calls"
                                                class="btn-orange featured-link link-hl ga-action-click"
                                                target="_blank"
                                                 ga-action ="click"
@@ -82,7 +82,7 @@
                                         {/if}
                                         {if $showVisitStore eq "true"}
                                         <li>
-                                            <a href="http://{$domain}/store.html" 
+                                            <a href="/store.html"
                                                class="btn-fix-red{*btn-green*} ga-action-click"
                                                 ga-action ="click"
                                                 ga-category="store link"
@@ -92,7 +92,7 @@
                                         {/if}
                                         {if $showFreeTrial eq "true"}
                                         <li>
-                                            <a href="http://{$domain}/free-trial.html"
+                                            <a href="/free-trial.html"
                                                 class="btn btn-yellow ga-action-click"
                                                 ga-action ="click"
                                                 ga-category="free trial"

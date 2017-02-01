@@ -3,8 +3,7 @@
             <div class="thumb">
                     <span class="ico-left"><i class="icon-apple"></i></span>
                     <span>OS:<strong> iOS</strong></span>
-                    <span>iCloud solution: iOS {$ver_icloud_bot} - {$ver_icloud_up}</span>
-                    <span>Jailbreak solution: iOS {$ver_ios_bot} - {$ver_jailbreak_up}</span>
+                    <span>Versions: iOS {$ver_icloud_bot} - {$ver_icloud_up}</span>
                     <a href="/compatibility/ios-devices/"
                        class="text-succes search-category a-default" data-os="iOS">View list of iOS devices</a>
             </div>

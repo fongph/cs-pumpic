@@ -19,7 +19,7 @@
                         Folgen Sie der Anleitung in der E-Mail, um die <b>Installation</b> abzuschließen.
                     </p>
                     <p>
-                        Es wird nicht länger als 5 Minuten dauern. Bitte beachten Sie, dass vor der Installation <b>jailbreak</b> und <b>physischer Zugang</b> zum Zielgerät notwendig sind.
+                        Es wird nicht länger als 5 Minuten dauern. Bitte beachten Sie, dass vor der Installation <b>physischer Zugang</b> zum Zielgerät notwendig sind.
                     </p>
                 </div>
                 <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">

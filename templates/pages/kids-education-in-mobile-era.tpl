@@ -151,12 +151,12 @@
 
                             <div class="col-md-8 col-md-offset-2">
                                 <ul class="share_list share_list-infographic">
-                                    <li><a class="share-facebook" href="#" data-location="http://www.facebook.com/sharer/sharer.php?u="></a></li>
+                                    <li><a class="share-facebook" href="#" data-location="https://www.facebook.com/sharer/sharer.php?u="></a></li>
                                     <li><a class="share-google" href="#" data-location="https://plus.google.com/share?url="></a></li>
-                                    <li><a class="share-digg" href="#" data-location="http://digg.com/submit?url="></a></li>
+                                    <li><a class="share-digg" href="#" data-location="https://digg.com/submit?url="></a></li>
                                     <li><a class="share-twitter" href="#" data-location="https://twitter.com/share?url="></a></li>
                                     <li><a class="share-reddit" href="#" data-location="//www.reddit.com/submit?url="></a></li>
-                                    <li><a class="share-pinterest" href="#" data-location="http://pinterest.com/pin/create/link/?url=" data-media="http://{$domain}/images/infographic/kids-education-in-mobile-era/infographic.png"></a></li>
+                                    <li><a class="share-pinterest" href="#" data-location="https://pinterest.com/pin/create/link/?url=" data-media="{$schema}{$domain}/images/infographic/kids-education-in-mobile-era/infographic.png"></a></li>
                                 </ul>
 
 
@@ -164,30 +164,30 @@
                             </div>
 
                             <div class="clearfix"></div>
-                            <img src='http://{$domain}/images/infographic/kids-education-in-mobile-era/infographic.png'
+                            <img src='/images/infographic/kids-education-in-mobile-era/infographic.png'
                                  width='540'
                                  alt='How to Use Smartphones & Tablets to Boost Your Kid’s Education'
                                  id='the_img_link'>
-                            {*<a href='http://{$domain}/child-online-mobile-security.html' id='the_img_link'>
+                            {*<a href='{$schema}{$domain}/child-online-mobile-security.html' id='the_img_link'>
                                 <p>
-                                Mobile Phone Security Measures [Infographic] by the team at <a href='http://{$domain}/child-online-mobile-security.html'
+                                Mobile Phone Security Measures [Infographic] by the team at <a href='{$schema}{$domain}/child-online-mobile-security.html'
                                                                                                id='the_img_link'>Pumpic</a>
                                 </p>
                             </a>*}
                         </div>
                         <br /><br />
                         <ul class="share_list" style="max-width: 700px;">
-                            <li><a class="share-facebook" href="#" data-location="http://www.facebook.com/sharer/sharer.php?u="></a></li>
+                            <li><a class="share-facebook" href="#" data-location="https://www.facebook.com/sharer/sharer.php?u="></a></li>
                             <li><a class="share-google" href="#" data-location="https://plus.google.com/share?url="></a></li>
-                            <li><a class="share-digg" href="#" data-location="http://digg.com/submit?url="></a></li>
+                            <li><a class="share-digg" href="#" data-location="https://digg.com/submit?url="></a></li>
                             <li><a class="share-twitter" href="#" data-location="https://twitter.com/share?url="></a></li>
                             <li><a class="share-reddit" href="#" data-location="//www.reddit.com/submit?url="></a></li>
-                            <li><a class="share-pinterest" href="#" data-location="http://pinterest.com/pin/create/link/?url=" data-media="http://{$domain}/images/infographic/kids-education-in-mobile-era/infographic.png"></a></li>
+                            <li><a class="share-pinterest" href="#" data-location="https://mpinterest.com/pin/create/link/?url=" data-media="{$schema}{$domain}/images/infographic/kids-education-in-mobile-era/infographic.png"></a></li>
                         </ul>
                         <div class="text-center">
                             <p><strong>Add this infographic to your website by copying and pasting the following embed code:</strong></p>
-                            <textarea class="copy-this" style="margin: 0px; height: 200px; overflow-y: scroll;" readonly="readonly"><img src="http://{$domain}/images/infographic/kids-education-in-mobile-era/infographic.png" width="720" height="4956" alt="How to Use Smartphones & Tablets to Boost Your Kid’s Education" />
-<p><a href="http://{$domain}/kids-education-in-mobile-era.html">How to Use Smartphones & Tablets to Boost Your Kid’s Education [Infographic] by the team at Pumpic.</a></p></textarea>
+                            <textarea class="copy-this" style="margin: 0px; height: 200px; overflow-y: scroll;" readonly="readonly"><img src="{$schema}{$domain}/images/infographic/kids-education-in-mobile-era/infographic.png" width="720" height="4956" alt="How to Use Smartphones & Tablets to Boost Your Kid’s Education" />
+<p><a href="/kids-education-in-mobile-era.html">How to Use Smartphones & Tablets to Boost Your Kid’s Education [Infographic] by the team at Pumpic.</a></p></textarea>
 
                             <div class="actions clearfix">
                                 <div class="col-mob-12 col-xs-6 col-sm-6 col-md-6 col-lg-6 padding-null">

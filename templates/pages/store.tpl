@@ -59,7 +59,7 @@ description="Pumpic offers high-quality cell phone tracking software for a good 
         .banner-store {
             max-width: 782px;
             margin: 0 auto;
-            background: url("http://www.wearewebstars.dk/codepen/img//s2.png"), linear-gradient(-54deg, #1d477d, #3594a2, #bb6884) no-repeat bottom;
+            background: url("https://www.wearewebstars.dk/codepen/img//s2.png"), linear-gradient(-54deg,#1d477d,#3594a2,#bb6884) no-repeat bottom;
             background-size: 130px, 100%;
             padding: 8px 0 0;
             display: flex;
@@ -234,8 +234,8 @@ description="Pumpic offers high-quality cell phone tracking software for a good 
                                                             </div>
                                                             <button class="btn btn-default ga-action-click"
                                                                     ga-action ="click"
-                                                                    ga-category="store"
-                                                                    ga-label="buy icloud"
+                                                                    ga-category="{if $smarty.server.REQUEST_URI !== '/store.html'}Split_test{else}store{/if}"
+                                                                    ga-label="{if $smarty.server.REQUEST_URI == '/store-sub-same.html'}buy_sub_same1{elseif $smarty.server.REQUEST_URI == '/store-sub-new.html'}buy_sub_new1{else}buy icloud{/if}"
                                                                     value="true" type="submit" name="price[submit]">Buy</button>
                                                         </form>
                                                         {*<div class="show_premium_features _icloud-f"><div class="show-f _icloud-f">Show features <i class="fa fa-chevron-down"></i></div><div class="hide-f _icloud-f" style="display: none;">Hide features  <i class="fa fa-chevron-up"></i></div></div>*}
@@ -364,8 +364,8 @@ description="Pumpic offers high-quality cell phone tracking software for a good 
                                                                 </div>
                                                                 <button class="btn btn-default ga-action-click"
                                                                         ga-action ="click"
-                                                                        ga-category="store"
-                                                                        ga-label="buy icloud"
+                                                                        ga-category="{if $smarty.server.REQUEST_URI !== '/store.html'}Split_test{else}store{/if}"
+                                                                        ga-label="{if $smarty.server.REQUEST_URI == '/store-sub-same.html'}buy_sub_same2{elseif $smarty.server.REQUEST_URI == '/store-sub-new.html'}buy_sub_new2{else}buy icloud{/if}"
                                                                         value="true" type="submit" name="price[submit]">Buy</button>
                                                             </form>
                                                             {*<div class="space_line">&nbsp;</div>*}

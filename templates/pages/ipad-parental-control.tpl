@@ -66,7 +66,7 @@
     blockBg='dark'}
 	
 	    <p class="text-center f-light">The iPad is used extensively all over the world and not for entertainment only, but for educational purposes and even medically. The age of its user varies widely starting from newborns making their first taps on the touchscreen and up to seniors for whom the tablet becomes a window to the world.</p>
-		<p class="text-center f-light">Statistically, 40% of children use the iPad before they can say a word. Not a secret that modern mobile devices, especially those connected to the Internet, are a source of potential risks for kids of all ages. Thankfully, for parents there are two common ways on <a class="a-default" href="http://pumpic.com/security/how-to-set-parental-controls-on-ipad/" target="_blanc">how to set parental controls on iPad</a>.</p>
+		<p class="text-center f-light">Statistically, 40% of children use the iPad before they can say a word. Not a secret that modern mobile devices, especially those connected to the Internet, are a source of potential risks for kids of all ages. Thankfully, for parents there are two common ways on <a class="a-default" href="/security/how-to-set-parental-controls-on-ipad/" target="_blanc">how to set parental controls on iPad</a>.</p>
         
         <!-- BLOCK STATISTICK -->
         {*<div class="block-statistick row">

@@ -126,7 +126,7 @@
                                             <li>
                                                <!-- {*//{if $model.custom_text && count($model.features) > 0}  *}-->
                                                 {if $model.custom_text}
-                                                    <a onClick="window.location.href = 'http://{$domain}/compatibility/{$model.alies}/'">{$model.name}</a>
+                                                    <a onClick="window.location.href = '/compatibility/{$model.alies}/'">{$model.name}</a>
                                                 {else}
                                                     <span>{$model.name}</span> 
                                                 {/if}
@@ -169,7 +169,7 @@
                                         {foreach from=$phone.models item=model}
                                         <li>
                                             {if $model.custom_text && count($model.features) > 0}
-                                                <a href="http://{$domain}/compatibility/{$model.alies}/">{$model.name}</a>
+                                                <a href="/compatibility/{$model.alies}/">{$model.name}</a>
                                             {else}
                                                 <span>{$model.name}</span> 
                                             {/if}
@@ -196,7 +196,7 @@
                                             {foreach from=$phone.models item=model}
                                                 <li class="mobile_tooltip"> 
                                                     {if $model.custom_text && count($model.features) > 0}
-                                                        <a href="http://{$domain}/compatibility/{$model.alies}/">{$model.name}</a>
+                                                        <a href="{$schema}{$domain}/compatibility/{$model.alies}/">{$model.name}</a>
                                                     {else}
                                                         <label>{$model.name}</label> 
                                                     {/if}
@@ -254,7 +254,7 @@
     <script type="text/javascript">
 
         {*var Devices = {
-            imgPath: 'http://{$api_device._domain}/{$api_device.path_img}/',
+            imgPath: '{$schema}pumpic.com{$api_device._domain}/{$api_device.path_img}/',
             $titleBlock:  $('.result-title'),
             $resBlock: $('.box-get-search-result'),
             $paginationBlock: $('.box-navigations'),

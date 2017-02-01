@@ -3,7 +3,7 @@
 <head>
     <title>Best Free Parental Control Apps for Android | Pumpic</title>
     <meta charset="utf-8">
-    <link rel="canonical" href="http://pumpic.com/best-free-parental-control-apps-for-android.html">
+    <link rel="canonical" href="{$schema}pumpic.com/best-free-parental-control-apps-for-android.html">
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
 
     {literal}
@@ -56,7 +56,7 @@
                             <nav class="navbar" role="navigation">
 
                                 <div class="logo">
-                                    <a href="http://pumpic.com">pumpic</a>
+                                    <a href="{$schema}{$domain}">pumpic</a>
                                 </div>
 
 
@@ -66,7 +66,7 @@
                 </div>
             </div>
 
-            <a id="burger" href="http://www.fresnobee.com/news/local/education/article61889207.html#burgerMenu" tabindex="0">
+            <a id="burger" href="https://www.fresnobee.com/news/local/education/article61889207.html#burgerMenu" tabindex="0">
                 <span class="iconBar"></span>
                 <span class="iconBar"></span>
                 <span class="iconBar"></span>
@@ -169,7 +169,7 @@
                                 <div class="pt30 pb20">
                                     <p>Smartphones and tablets connected to the Internet have become a trivial part of our world. Everyone’s got one. Meanwhile, many children find out how to use mobile devices before they can actually speak. And all these technologies go along kids’ lives, make them more curios, help to educate themselves, and very often expose them to danger.</p>
                                     <p>Cyberbullies insult kids on social media; haunt and offend them on instant chats. This horrible issue is known to be a major suicide factor among teens. Online predators try to gain children’s confidence and make them swallow the hook. Sexting is becoming a normal way of communication, while exchanging nude photos – the best way to show one’s feelings. Moreover, the Internet is full of explicit sexuality, violence, and hate. Our kids have unlimited access to all of this. At any time. With one single click. On their smartphone and tablets. And parents don’t know.</p>
-                                    <p><a class="a-default" href="http://pumpic.com/android-parental-monitoring.html">Android parental monitoring applications</a> allow parents to bring the situation under control and protect their children. Pumpic is a good example of reliable protection in this case. Such software lets you follow kids’ activities on mobile devices as well as the Internet. Apply parental controls and see what your kids are texting, which websites they visit and people they talk to. Block undesired content inappropriate for kids. Block apps and other activities to prevent them from wasting time.</p>
+                                    <p><a class="a-default" href="{$schema}{$domain}/android-parental-monitoring.html">Android parental monitoring applications</a> allow parents to bring the situation under control and protect their children. Pumpic is a good example of reliable protection in this case. Such software lets you follow kids’ activities on mobile devices as well as the Internet. Apply parental controls and see what your kids are texting, which websites they visit and people they talk to. Block undesired content inappropriate for kids. Block apps and other activities to prevent them from wasting time.</p>
                                     <p>Check out our list below and choose the best Android parental control app.</p>
                                 </div>
                             </div>

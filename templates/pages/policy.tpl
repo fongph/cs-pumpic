@@ -90,7 +90,7 @@
                                                                                 <li>A client intended to use iCloud solution for monitoring the data that had been deleted from the target device before a backup was performed.</li>
                                                                                 <li>A customer didn’t know the app is visible to the user of the target phone.</li>
 										<li>A customer didn’t receive previous data from the target device because Pumpic had not been installed at that time.</li>
-										<li>The target device is run by an operating system (or its version), which is not specified on our <a href="http://pumpic.com/compatibility/" target="blank">Compatibility page</a>.</li>
+										<li>The target device is run by an operating system (or its version), which is not specified on our <a href="/compatibility/" target="blank">Compatibility page</a>.</li>
 										<li>A customer planned to use one Pumpic subscription plan on more than one target device.</li>
 										<li>Other personal reasons (“I’ve changed my mind”, “I’ve made a purchase by mistake”, etc.)</li>
 										<li>A customer is either unable or unwilling to jailbreak the target iOS device (iPhone, iPad, iPod Touch), or to use iCloud Solution. A refund is not issued if a jailbreak version is not yet available for the given iOS version.</li>

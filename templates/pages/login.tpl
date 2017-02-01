@@ -56,7 +56,7 @@
                                                 <div id='login-member-yet'>
                                                     <h2>Not a member yet?</h2>
                                                     <div class='block-buttons text-center'>
-                                                        <a href='http://{$domain}/store.html' class='btn btn-red'>Buy Now</a>
+                                                        <a href='/store.html' class='btn btn-red'>Buy Now</a>
                                                     </div>
                                                 </div>
                                             </div>

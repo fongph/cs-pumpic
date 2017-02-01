@@ -6,33 +6,33 @@
     "repositories": [
         {
             "type": "git",
-            "url": "git@bitbucket.org:boomersweb/cs-models.git"
+            "url": "git@gitlab.dizboard.com:pumpic/cs-models.git"
         },
         {
             "type": "git",
-            "url": "git@bitbucket.org:boomersweb/ip.git"
+            "url": "git@gitlab.dizboard.com:pumpic/ip.git"
         },
         {
             "type": "git",
-            "url": "git@bitbucket.org:boomersweb/cs-mail.git"
+            "url": "git@gitlab.dizboard.com:pumpic/cs-mail.git"
         }, 
         {
             "type": "git",
-            "url": "git@bitbucket.org:boomersweb/cs-settings.git"
+            "url": "git@gitlab.dizboard.com:pumpic/cs-settings.git"
         },
         {
             "type": "git",
-            "url": "git@bitbucket.org:boomersweb/cs-users.git"
-        },
-        
-        {
-            "type": "git",
-            "url": "git@bitbucket.org:boomersweb/cs-billing.git"
+            "url": "git@gitlab.dizboard.com:pumpic/cs-users.git"
         },
         
         {
             "type": "git",
-            "url": "git@bitbucket.org:boomersweb/seller.git"
+            "url": "git@gitlab.dizboard.com:pumpic/cs-billing.git"
+        },
+        
+        {
+            "type": "git",
+            "url": "git@gitlab.dizboard.com:pumpic/seller.git"
         }
     ],
     "require": {

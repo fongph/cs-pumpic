@@ -45,7 +45,7 @@
                         <div class="box-breadcrumbs">
                             <div class="container">
                                 <ul id="breadcrumbs">
-                                    <li><a class="color-green" href="http://{$domain}/learning-center/">Learning Center</a><span class="arrows icon-right-open"></span>{*<span class="arrows_green"></span>*}</li>
+                                    <li><a class="color-green" href="/learning-center/">Learning Center</a><span class="arrows icon-right-open"></span>{*<span class="arrows_green"></span>*}</li>
                                     <li><span>The Ultimate Internet Safety Guide</span></li>
                                 </ul>
                             </div>

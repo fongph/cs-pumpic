@@ -97,7 +97,7 @@
                         <div class="col-sm-10 col-md-10 col-lg-10 col-sm-offset-1 col-md-offset-1 col-lg-offset-1">
                                 <div class="share">
                                         <ul itemscope itemtype="https://schema.org/Organization" class="box-socials clearfix">
-                                          <link itemprop="url" href="http://pumpic.com">
+                                          <link itemprop="url" href="{$schema}pumpic.com">
                                             <li><a itemprop="sameAs" href="https://www.facebook.com/pumpicapp/" class="icons-social i-fb"></a></li>
                                             <li><a itemprop="sameAs" href="https://twitter.com/pumpic_com" class="icons-social i-tw"></a></li>
                                             <li><a itemprop="sameAs" href="https://www.youtube.com/user/pumpicapp" class="icons-social i-youtube"></a></li>

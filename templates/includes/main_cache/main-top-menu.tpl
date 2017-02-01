@@ -51,7 +51,7 @@
                                 <a href="/faq.html">FAQ</a>
                             </li>
                             <!--li>
-                                    <a href="http://demo.{$domain}/setDevice/125?redirect_url=cp/calls">Demo</a>
+                                    <a href="{$schema}demo.{$domain}/setDevice/125?redirect_url=cp/calls">Demo</a>
                             </li-->
                             <li>
                                 {if ''|hasUser}

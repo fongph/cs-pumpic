@@ -25,7 +25,7 @@
 {if isset($metaTags)}
 <meta property='og:title' content='{if isset($ogTitle)}{$ogTitle}{else}Mobile Phone Security Measures{/if}'>
 <meta property='og:description' content='{if isset($ogDesc)}{$ogDesc}{else}How to protect children from online predators, cyberbullies, 18+ content, and identity theft. Pumpic gathered essential information on mobile phone safety practice. Learn more to keep kids safe.{/if}'>
-<meta property='og:image' content='{if isset($ogImg)}http://{$domain}/{$ogImg}{else}http://pumpic.com/images/socials/social-icon.jpg{/if}'>
+<meta property='og:image' content='{if isset($ogImg)}{$schema}{$domain}/{$ogImg}{else}/images/socials/social-icon.jpg{/if}'>
 {/if}
 
 {if isset($customeStyle) && $customeStyle}<style type="text/css">{$customeStyle}</style>{/if}

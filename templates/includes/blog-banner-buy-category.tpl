@@ -5,8 +5,8 @@
         <p>We've introduced our new cell phone spying software to help you track you underage kids, 
             and increase your business safety.</p>
         <p class="text-center">
-            <a href="http://pumpic.com/store.html" class="btn btn-default" role="button">Buy NOW</a>
-            <a href="http://demo.pumpic.com/setDevice/126?redirect_url=cp/calls" class="btn btn-warning" role="button">View DEMO</a>
+            <a href="/store.html" class="btn btn-default" role="button">Buy NOW</a>
+            <a href="<?php echo $config['schema']; ?>demo.pumpic.com/setDevice/126?redirect_url=cp/calls" class="btn btn-warning" role="button">View DEMO</a>
         </p>
     </div> <!-- .caption -->
 </div>*/ ?>
@@ -17,7 +17,7 @@
             is your kid safe on-line?
         </p>
         <p class='buttons'>
-            <a href="http://pumpic.com/store.html" class="btn btn-default btn-banner-yellow ga-action-click" ga-category="blog" ga-action="click" ga-label="tell_me">Tell Me</a>
+            <a href="/store.html" class="btn btn-default btn-banner-yellow ga-action-click" ga-category="blog" ga-action="click" ga-label="tell_me">Tell Me</a>
         </p>
     </div> <!-- .caption -->
 </div>

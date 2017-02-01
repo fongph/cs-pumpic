@@ -6,11 +6,11 @@
 
 <div class="tab col-item-3 col-md-item-3 col-sm-item-3">
     <ul>
-        <li><i class="i-features-sms"></i> <span onclick="window.location='http://{$domain}/mobile-sms-spy.html'">Monitor SMS and MMS</span></li>
-        <li><i class="i-features-cell-history"></i> {if !in_array('call-monitoring-software', $_notVisible)}<span onclick="window.location='http://{$domain}/call-monitoring-software.html'">Monitor Calls History{else}Monitor Calls History{/if}</li>
+        <li><i class="i-features-sms"></i> <span onclick="window.location='/mobile-sms-spy.html'">Monitor SMS and MMS</span></li>
+        <li><i class="i-features-cell-history"></i> {if !in_array('call-monitoring-software', $_notVisible)}<span onclick="window.location='/call-monitoring-software.html'">Monitor Calls History{else}Monitor Calls History{/if}</li>
         <li><i class="i-features-calendar"></i> View Calendar</li>
         <li><i class="i-features-contacts"></i> View Contacts</li>
-        <li><i class="i-features-email"></i> <span onclick="window.location='http://{$domain}/email-monitoring-software.html'">View Emails</span></li>
+        <li><i class="i-features-email"></i> <span onclick="window.location='/email-monitoring-software.html'">View Emails</span></li>
         <li><i class="i-features-photos"></i> View Photos</li>
         <li><i class="i-features-videocam"></i> View Videos</li>
         <li><i class="i-features-remote-activity-control-v2"></i> Remote Control Panel</li>
@@ -20,14 +20,14 @@
 
 <div class="tab col-item-3 col-md-item-3 col-sm-item-3">
     <ul>
-        <li><i class="i-features-browser"></i> <span onclick="window.location='http://{$domain}/browser-parental-control.html'">Control Browser</span></li>
+        <li><i class="i-features-browser"></i> <span onclick="window.location='/browser-parental-control.html'">Control Browser</span></li>
         <li><i class="i-features-app"></i> Control Applications</li>
         <li><i class="i-features-view-bookmarks"></i> View Bookmarks</li>
         <li><i class="i-features-view-notes"></i> View Notes</li>
         <li><i class="i-features-block-device"></i> Block Device</li>
-        <li><i class="i-features-location"></i> {if !in_array('location-tracking', $_notVisible)}<span onclick="window.location='http://{$domain}/child-location-tracking.html'">Location Tracking</span>{else}Location Tracking{/if}</li>
-        <li><i class="i-features-geo-fences"></i> {if !in_array('geo-fences', $_notVisible)}<span onclick="window.location='http://{$domain}/gps-and-geofencing.html'">Geo-fences</span>{else}Geo-fences{/if}</li>
-        <li><i class="i-features-keyloger"></i> <span onclick="window.location='http://{$domain}/keylogging-software.html'">Keylogger</span></li>
+        <li><i class="i-features-location"></i> {if !in_array('location-tracking', $_notVisible)}<span onclick="window.location='/child-location-tracking.html'">Location Tracking</span>{else}Location Tracking{/if}</li>
+        <li><i class="i-features-geo-fences"></i> {if !in_array('geo-fences', $_notVisible)}<span onclick="window.location='/gps-and-geofencing.html'">Geo-fences</span>{else}Geo-fences{/if}</li>
+        <li><i class="i-features-keyloger"></i> <span onclick="window.location='/keylogging-software.html'">Keylogger</span></li>
         {*<li class="hidden-mobile">&nbsp;</li>*}
     </ul>
 </div>        
@@ -59,9 +59,9 @@
             
         {*<div class="tab col-item-3 col-md-item-3 col-sm-item-3">
             <ul>
-                <li><i class="i-features-sms"></i> <span onclick="window.location='http://{$domain}/mobile-sms-spy.html'">Monitor SMS</span></li>
+                <li><i class="i-features-sms"></i> <span onclick="window.location='{$schema}{$domain}/mobile-sms-spy.html'">Monitor SMS</span></li>
                 <li><i class="i-features-cell-history"></i> Monitor History</li>
-                <li><i class="i-features-email"></i> <span onclick="window.location='http://{$domain}/email-monitoring-software.html'">Monitor Emails</span></li>
+                <li><i class="i-features-email"></i> <span onclick="window.location='{$schema}{$domain}/email-monitoring-software.html'">Monitor Emails</span></li>
                 <li><i class="i-features-calendar"></i> View Calendar</li>
                 <li><i class="i-features-contacts"></i> View Contacts</li>
             </ul>
@@ -80,7 +80,7 @@
         <div class="tab col-item-3 col-md-item-3 col-sm-item-3">
             <ul>
                 <li><i class="i-features-location"></i> Location Tracking</li>
-                <li><i class="i-features-keyloger"></i> <span onclick="window.location='http://{$domain}/keylogging-software.html'">Keylogger</span></li>
+                <li><i class="i-features-keyloger"></i> <span onclick="window.location='{$schema}{$domain}/keylogging-software.html'">Keylogger</span></li>
                 <li><i class="i-features-sms-commands"></i> SMS Commands</li>
                 <li class="hidden-mobile"></li>
                 <li class="hidden-mobile"></li>

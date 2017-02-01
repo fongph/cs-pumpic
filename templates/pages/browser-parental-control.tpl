@@ -192,7 +192,7 @@
                             </div>
                     </div>
                     <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
-                            <img src="{$img}/testimonials/sarah-g.png" alt="pumpic testimonials from sarah-g" class="testimonial-photo">
+                            <img src="{$img}/testimonials/sarah-g.png" alt="pumpic testimonials sarah g" class="testimonial-photo">
                             <div class="testimonial-text">
                                     <h4>Sarah G. – mother of 12-year-old son</h4>
                                     <p>“Initially, I was looking for a stand-alone parental control browser for my son. But my sister recommended me Pumpic as a kind of more comprehensive solution. I tried it before giving him the device and was very surprised seeing with how many useful capabilities the app would provide me in addition. Locations, social media, app control, screen time limiting. All of these is a must for parents who really care.”</p>

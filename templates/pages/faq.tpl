@@ -36,7 +36,6 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-10 col-lg-offset-1">
-
                         <!-- ContactUs -->
                         <div class="row text-center">
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -104,14 +103,14 @@
                                                     <a id="what-is-pumpic-app" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse3">Is Pumpic parental monitoring stealth? Can the app be detected on the target device?</a>
                                                     <div id="collapse3" class="collapse">
                                                         <div>
-                                                            <p>Pumpic Android and iOS (with jailbreak) solutions need to be installed on the target devices and have visible applications, which means that their icons can be detected on the screen of the target device and viewed by a user. In addition, there are alerts, notifications, and badges that trace the operation of the app.</p>
-                                                            <p>However, if you choose <a class="text-link a-default" href="http://{$domain}/icloud-iphone-without-jailbreak-monitoring.html">iCloud solution</a> for iOS device monitoring, you will not need to install the app on the target device.</p>
+                                                            <p>Pumpic Android solution needs to be installed on the target device and has visible applications, which means that its icon can be detected on the screen of the target device and viewed by a user. In addition, there are alerts, notifications, and badges that trace the operation of the app.</p>
+                                                            <p>In turn, with the <a class="text-link a-default" href="/icloud-iphone-without-jailbreak-monitoring.html">iCloud solution</a> for iOS device monitoring, you will not need to install the app on the target device.</p>
 
                                                             <div class="box-faq-images">
-                                                                <div class="faq-img">
-                                                                    <img src="{$img}/faq/visible-ios.png" {*width="270px" height="479px"*} />
-                                                                    <p><i>The app is visible on the screen of jailbroken iOS devices</i></p>
-                                                                </div>
+                                                                {*<div class="faq-img">*}
+                                                                    {*<img src="{$img}/faq/visible-ios.png" *}{*width="270px" height="479px"*}{* />*}
+                                                                    {*<p><i>The app is visible on the screen of jailbroken iOS devices</i></p>*}
+                                                                {*</div>*}
                                                                 <div class="faq-img">
                                                                     <img src="{$img}/faq/arrow_right-form.png" {*width="270px" height="480px"*} />
                                                                     <p><i>The app is visible on the screen of Android devices</i></p>
@@ -150,10 +149,8 @@
                                                     <a id="start" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse6">Do I need to jailbreak/root the target device to install Pumpic?</a>
                                                     <div id="collapse6" class="collapse">
                                                         <div>
-                                                            <p><b>iOS:</b> The app can be used to monitor devices both with jailbreak and without. To track devices without jailbreak, you can use iCloud solution provided. Otherwise, the target device must be jailbroken. Please note that monitoring of jailbreak-free iOS devices (iCloud monitoring) is currently limited to the following features: Text Messages (SMS, MMS, and iMessages), Calls, Browsing History, Bookmarks (up to iOS 8.4.1), Location, Calendar, Contacts, Photos, Notes (up to iOS 8.4.1), Skype (up to iOS 8.4.1), Kik and WhatsApp.</p>
-                                                            <p><b>Android:</b> The target device requires rooting to get access to the following features: Email, Instant Messеngers and Social Networks monitoring.</p>
-                                                            {*<p>To install Pumpic, the target iOS device must be jailbroken.</p>
-                                                            <p>Android devices require rooting to get access to all the features of the app.</p>*}
+                                                          <p><strong>iOS:</strong> The app is meant to monitor devices without jailbreak. Please note that monitoring of jailbreak-free iOS devices (iCloud monitoring) is currently limited to the following features: Text Messages (SMS, MMS, and iMessages), Calls, Browsing History, Bookmarks (up to iOS 8.4.1), Location, Calendar, Contacts, Photos, Notes (up to iOS 8.4.1), Skype (up to iOS 8.4.1), Kik, and WhatsApp.</p>
+                                                          <p><b>Android:</b> The target device requires rooting to get access to the following features: Email, Instant Messеngers, and Social Networks monitoring. The majority of other features is available even without the root.</p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -163,7 +160,10 @@
                                                     <a id="start" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse7">Is physical access required or can I install the app remotely?</a>
                                                     <div id="collapse7" class="collapse">
                                                         <div>
-                                                            <p>Physical access is required to install the app on the target device. However, iCloud solution designed for monitoring iOS devices does not require jailbreak; physical access is not required as well unless you need to check iCloud or backup settings & perform a backup manually.</p>
+                                                          <p>iOS:</p>
+                                                          <p>iCloud solution setup may require physical access in case you need to check iCloud or backup settings and perform a backup manually.</p>
+                                                          <p>Android:</p>
+                                                          <p>Physical access is required to install the app on the target Android device whether you are rooting it or not.</p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -175,7 +175,7 @@
                                                     <a id="install" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse8">How to install Pumpic?</a>
                                                     <div id="collapse8" class="collapse">
                                                         <div>
-                                                            <p>Pumpic installation is very easy and stress-free. It will take you no longer than 5 minutes. Once you have made a purchase, follow the guidelines pointed in a subscription email to complete the setup. Note that physical access to the target device is required to install Android and iOS (Jailbreak) solutions and might be required to adjust settings or perform a backup manually if choose iCloud solution for monitoring iOS devices. If you run into difficulties, feel free to contact our Customer Support Team for help.</p>
+                                                            <p>Pumpic installation is very easy and stress-free. It will take you no longer than 5 minutes. Once you have made a purchase, follow the guidelines pointed in a subscription email to complete the setup. Note that physical access to the target device is required to install Android solution and might be needed to adjust settings or perform a backup manually while setting up iCloud monitoring on iOS devices. If you run into difficulties, feel free to contact our Customer Support Team for help.</p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -185,12 +185,14 @@
                                                     <a id="install" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse9">How to uninstall Pumpic?</a>
                                                     <div id="collapse9" class="collapse">
                                                         <div>
-                                                            <b>Uninstall the app on iOS:</b>
-                                                            <p>Go to Cydia > Sources > Click on Development API (http://ios.loadapps.org/) > All Packages > Updated > Modify > Remove > Uninstall will be completed > Go to the Cydia once again > Manage > Sources > Edit > Click on “remove” Next to the Developer’s Repo.</p>
-                                                            <p><b>Uninstall the app on Android:</b></p>
-                                                            <p>Go to Phone > Settings > Security > Device administrators > Uncheck the box next to the app > Get back to settings > Apps > com.pumpic > Uninstall.</p>
-                                                            <b>Uninstall within the app:</b>
-                                                            <p>Run Pumpic App > Enter your Secret Key to proceed to Settings > Tap button “Delete”. </p>
+                                                          <p><b>Stop iCloud monitoring on iOS:</b></p>
+                                                          <p>You do not need to uninstall anything as you don't install the app on the Apple device. To stop iCloud monitoring, you should unassign the target device via the Control Panel:</p>
+                                                          <p>Go to Control Panel > Device Settings > Press “Unassign Device” button.</p>
+                                                          <p>Please, note that this action cannot be undone. Your subscription will be deactivated, and you will not be able to use it any longer with any other device. All the data will be deleted from Control Panel immediately.</p>
+                                                          <p><b>Uninstall the app on Android:</b></p>
+                                                          <p>Go to Phone > Settings > Security > Device administrators > Uncheck the box next to the app > Get back to settings > Apps > com.pumpic > Uninstall.</p>
+                                                          <b>Uninstall within the app:</b>
+                                                          <p>Run Pumpic App > Enter your Secret Key to proceed to Settings > Tap button “Delete”. </p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -200,9 +202,10 @@
                                                     <a id="install" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse10">Can I install or uninstall the application remotely?</a>
                                                     <div id="collapse10" class="collapse">
                                                         <div>
-                                                            <p>Both installation and removal of Pumpic app is performed manually (unless you choose iCloud solution for monitoring iOS devices, which does not require installation at all). Please, make sure you have physical access to the target device before purchasing a subscription.</p>
-                                                            <p>Note that if you use iCloud solution designed for iOS devices without jailbreak, you do not need to install the app on the target device at all. At the same time, you do not need physical access to the target device, meanwhile all the data is monitored through iCloud backup.</p>
-                                                            <p>In this case, you will need to know iCloud login and password of the target device to connect it to your Control Panel.</p>
+                                                            <p>Both installation and removal of Pumpic Android app are performed manually. Please, make sure you have physical access to the target device before purchasing a subscription.</p>
+                                                            <p>If you use iCloud solution, you do not need to install the app on the target device at all. Hence, you do not need physical access to the target device as all the data is monitored through iCloud backup.</p>
+                                                            <p>In this case, you will need to know iCloud login and password of the target device to connect it to your Control Panel. If you wish to stop iCloud monitoring, you can do it via Control Panel too by unassigning the target device in the Settings.</p>
+                                                            <p>Note that "Unassign Device" action cannot be undone. Your subscription will be deactivated, and you will not be able to use it any longer with any other device. All the data will be deleted from Control Panel immediately.</p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -259,17 +262,6 @@
                                             </li>
                                             <li>
                                                 <div>                                                                                                <i class="plus"></i>
-                                                    <a id="install" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse15">How to jailbreak iOS?</a>
-                                                    <div id="collapse15" class="collapse">
-                                                        <div>
-                                                            <p>During the installation you will be provided with links to off-site sources, where you will find instructions on how to jailbreak iOS devices. Pumpic is not connected with such sources. Feel free to find relevant information on iOS jailbreak online on your own as well.</p>
-                                                            <p>If you do not want to jailbreak the target iPhone, iPad, or iPod Touch, you can use <a class="text-link a-default" href="http://{$domain}/icloud-iphone-without-jailbreak-monitoring.html">Pumpic iCloud solution</a>. With its help you will be able to control iPhone from another iPhone without a need to jailbreak any of them.</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div>                                                                                                <i class="plus"></i>
                                                     <a id="install" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse16">Is there any daily limit? How to find out if I have reached the limit on my plan?</a>
                                                     <div id="collapse16" class="collapse">
                                                         <div>
@@ -286,7 +278,7 @@
                                                     <a id="compatibility" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse17">What devices support Pumpic?</a>
                                                     <div id="collapse17" class="collapse">
                                                         <div>
-                                                            <p>Pumpic is supported by the majority of smartphones and tablets. To make sure your particular device model is compatible with the application, please visit our <a class="text-link a-default" target="_blank" href="http://{$domain}/compatibility/">Compatibility</a> page or contact our Customer Support Team.</p>
+                                                            <p>Pumpic is supported by the majority of smartphones and tablets. To make sure your particular device model is compatible with the application, please visit our <a class="text-link a-default" target="_blank" href="/compatibility/">Compatibility</a> page or contact our Customer Support Team.</p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -302,37 +294,6 @@
                                                             <p style="font-weight:bold;">Android</p>
                                                             <p>Settings &raquo; scroll down to the very bottom &raquo; About phone &raquo; Android version.<br>For example, “Android version: 5.1”
                                                             </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            {*
-<li>
-                                                <div>                                                                                                <i class="plus"></i>
-    <a id="compatibility" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse18">How to jailbreak iOS?</a>
-    <div id="collapse18" class="collapse">
-                                                        <div>
-        <p>Detailed instructions on how to jailbreak an iOS device can be found here. Note that all iOS devices have to be jailbroken before installing Pumpic.</p>
-        </div>
-                                                    </div>
-                                                </div>
-</li>*}
-                                            <li>
-                                                <div>                                                                                                <i class="plus"></i>
-                                                    <a id="compatibility" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse19">Does jailbreak void a warranty? Can I delete jailbreak from the target iOS device to restore my warranty?</a>
-                                                    <div id="collapse19" class="collapse">
-                                                        <div>
-                                                            <p>Yes, jailbreak voids iOS warranty. However, it is completely restorable. To recover your warranty you should either update your gadget to the latest iOS version or restore it to primary settings. If you are using Pumpic iOS (jailbreak) solution, please consider that in this case Pumpic will not function.</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div>                                                                                                <i class="plus"></i>
-                                                    <a id="compatibility" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse20">Is jailbreak visible while connected to iTunes or iCloud?</a>
-                                                    <div id="collapse20" class="collapse">
-                                                        <div>
-                                                            <p>Jailbreak is not visible while connected to iTunes or iCloud. You will be able to use both in regular mode even after jailbreaking your iOS device.</p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -411,7 +372,7 @@
                                                     <a id="billing" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse28">Is it possible to get a refund?</a>
                                                     <div id="collapse28" class="collapse">
                                                         <div>
-                                                            <p>Pumpic users can request a refund, if their reasons for doing so comply with our <a class="text-link a-default" target="_blank" href="http://{$domain}/policy.html#refund-policy">Refund Policy</a>. You can email your refund request to our Customer Support Team and explain in details why, in your opinion, you qualify for a refund. Our Customer Care will get back to you in the shortest time possible.</p>
+                                                            <p>Pumpic users can request a refund, if their reasons for doing so comply with our <a class="text-link a-default" target="_blank" href="/policy.html#refund-policy">Refund Policy</a>. You can email your refund request to our Customer Support Team and explain in details why, in your opinion, you qualify for a refund. Our Customer Care will get back to you in the shortest time possible.</p>
                                                         </div>
                                                     </div>
                                                 </div>

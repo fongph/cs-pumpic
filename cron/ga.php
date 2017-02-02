@@ -57,7 +57,8 @@
         const GA_TYPE_MEDIA     = 'media';
         const GA_TYPE_AFFILIATE = 'affiliate';
         const GA_TYPE_SYSTEM_EMAIL = 'system email';
-        
+        const GA_TYPE_APP_STORE = 'app store';
+
         const API_TYPE = 'service';
         const NUMBER_ITEM = 100;
         
@@ -264,6 +265,11 @@
                 else if(strlen($source['rows']['ga:source'][0]) > 0 
                         && preg_match('/^referral$/is', $source['rows']['ga:medium'][0])) {
                     $ga_type = self::GA_TYPE_REFERRAL;
+                }
+                // app store
+                else if(strlen($source['rows']['ga:source'][0]) > 0
+                        && preg_match('/^ioscpapp$/is', $source['rows']['ga:source'][0])) {
+                    $ga_type = self::GA_TYPE_APP_STORE;
                 }
                 //system email
                 else if(strlen($source['rows']['ga:source'][0]) > 0 

@@ -1,9 +1,10 @@
 {strip}
-    
+    {$robots='no'}
 {include file='../includes/main/main-header.tpl'
     title="Privacy Policy, Refunds, Terms & Conditions"
     description="Pumpic is a mobile phone monitoring application with the vast possibilities. Learn more about the app's usage legal policy. Pumpic is for legitimate use only."
-}    
+}
+
     
 <body>
     <!-- BLOCK GTM -->
@@ -36,6 +37,7 @@
 				<div class="row box-anchor">
 					<div class="col-lg-10 col-lg-offset-1">
 						<div class="row">
+                            <a href="/policy.html">Go to Legal Policies </a>
 							<div class="col-lg-12">
                                 {$tos}
 							</div>

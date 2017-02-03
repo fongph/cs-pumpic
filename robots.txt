@@ -2,6 +2,7 @@ User-agent:*
 Disallow: */tag/*
 Disallow: /login.html
 Disallow: /tos.txt
+Disallow: /tos.html
 Disallow: /toscpapp.txt
 Disallow: /tos-preview.txt
 Disallow: /tos-preview.html

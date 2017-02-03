@@ -74,7 +74,7 @@ if(isset($_POST['email']) and !$obj -> validateEmail($_POST['email'])) {
    $_result['_error'] = "Invalid email format.";
 } else if(isset($_POST['captcha']) and !$obj -> validateCaptcha( $_captcha )) {
     $_result['_error'] = "Invalid CAPTCHA.";
-} else if(!empty($_POST['email']) and $_sID and $obj -> validateCaptcha( $_captcha ) and $_tos and $_policy and $_notices ) {
+} else if(!empty($_POST['email']) and $_sID and $obj -> validateCaptcha( $_captcha )) {
 
     $_params = array(
         'siteId' => $_sID,

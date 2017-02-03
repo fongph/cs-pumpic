@@ -1912,26 +1912,29 @@ $(document).ready(function () {
             onsubmit: true,
             focusInvalid: false,
             focusCleanup: false,
-            messages: {
-                'captcha': "Invalid CAPTCHA.", // The CAPTCHA field is empty.
-                'name': {
-                    required: "The Name field is empty.",
-                },
-                'email': {
-                    required: "The Email field is empty.",
-                    email: "Invalid email format."
-                },
-                'tos-accept': {
-                    required: "You must agree to ALL Pumpic Legal Policies including Terms of Use, Privacy Policy, and Direct Notice in order to proceed. Please, tick all three checkboxes to complete the order.",
-                },
-                'policy-accept': {
-                    required: "You must agree to ALL Pumpic Legal Policies including Terms of Use, Privacy Policy, and Direct Notice in order to proceed. Please, tick all three checkboxes to complete the order.",
-                },
-                'direct-notice-accept': {
-                    required: "You must agree to ALL Pumpic Legal Policies including Terms of Use, Privacy Policy, and Direct Notice in order to proceed. Please, tick all three checkboxes to complete the order.",
-                },
-                errorClass: "error",
+            'name': {
+                required: true
             },
+            'email': {
+                required: true,
+                email: true
+            },
+            'tos-accept':{ required: true},
+            'policy-accept':{ required: true},
+            'direct-notice-accept':{ required: true},
+            messages: {
+            'captcha': "Invalid CAPTCHA.", // The CAPTCHA field is empty.
+            'name': "The Name field is empty.",
+            'email': {
+                required: "The Email field is empty.",
+                email: "Invalid email format."
+            },
+            'tos-accept':  "You must agree to ALL Pumpic Legal Policies including Terms of Use, Privacy Policy, and Direct Notice in order to proceed. Please, tick all three checkboxes to complete the order.",
+            'policy-accept': "You must agree to ALL Pumpic Legal Policies including Terms of Use, Privacy Policy, and Direct Notice in order to proceed. Please, tick all three checkboxes to complete the order.",
+            'direct-notice-accept': "You must agree to ALL Pumpic Legal Policies including Terms of Use, Privacy Policy, and Direct Notice in order to proceed. Please, tick all three checkboxes to complete the order."
+            },
+            errorClass: "error",
+            validClass: "success",
             invalidHandler: function (event, validator) {
                 if ($('form[name="free_trial_registration"] #block-fields label.error').length)
                     $('form[name="free_trial_registration"] #block-fields label.error').remove();
@@ -2619,6 +2622,7 @@ $(document).ready(function () {
             $('input[data-period=24]').each(function () {
                 $(this).attr('checked', 'checked');
             });
+
         }
         $('.buy-form-with-offer input[type=radio]:checked').each(function () {
 

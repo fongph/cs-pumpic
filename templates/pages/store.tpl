@@ -455,10 +455,7 @@ description="Pumpic offers high-quality cell phone tracking software for a good 
                     <img src="/images/google-play.png" alt="Pumpic Parental Monitoring on Google Play" alt="">
                 </div>
             </div>
-
         </div>
-
-
     </div>
 </div>
 <style>

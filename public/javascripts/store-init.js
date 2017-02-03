@@ -7,6 +7,7 @@ $(document).ready(function(){
 		});
 	});
 	var deviceWidth =  $(window).width();
+
 	$.get('/store-android.php', { deviceWidth: deviceWidth })
 			.done(function(data) {
 				$('#loader').fadeOut()

@@ -37,7 +37,9 @@
 				<div class="row box-anchor">
 					<div class="col-lg-10 col-lg-offset-1">
 						<div class="row">
-                            <a href="/policy.html">Go to Legal Policies </a>
+                            <div class="col-lg-12">
+                                <a href="/policy.html">Go to Legal Policies </a>
+                            </div>
 							<div class="col-lg-12">
                                 {$tos}
 							</div>

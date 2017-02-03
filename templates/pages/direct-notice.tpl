@@ -36,8 +36,11 @@
 				<div class="row box-anchor">
 					<div class="col-lg-10 col-lg-offset-1">
 						<div class="row">
-							<div class="col-lg-12">
+                            <div class="col-lg-12">
                                 <a href="/policy.html">Go to Legal Policies </a>
+                            </div>
+							<div class="col-lg-12">
+
                                 <h2 id="legal-policy">Direct Notice</h2>
                                 {$directNotice}
 

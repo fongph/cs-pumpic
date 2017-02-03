@@ -25,16 +25,12 @@
             <section>
                 <label for="email">Your Email*</label>
                 <input id="email" class="required" type="email" name="email" value="" />
-                {*<label class="error">Password will be send <br />to you your email</label>*}
-                <label class="info-email">The password will be sent to your email </label>
             </section>
             <section>
                 <label for="phone">Your Phone</label>
                 <input type="text" name="phone" value="" />
             </section>
             <div class="block-captcha">
-                <label>Enter the words below <br /><span>Can’t read the words below? <a class="a-update-captcha a-default" attr-width="250" attr-height="39" href="#">Try to refresh</a></span></label>
-
                 <div class="box-captcha clearfix">
                     <img src="/captcha.html?width=250&height=39" id="img-captcha">
                     <span class="update-captcha" attr-width="250" attr-height="39"></span>
@@ -45,6 +41,14 @@
                         <input id="captcha" type="text" name="captcha" autocomplete="off" class="text required captcha"  placeholder="Enter verification code" />
                     </div>    
                 </div>    
+            </div>
+            <div class="block-accept">
+                <section>
+                    Please, read our Legal Policies carefully. You must accept <a href="/policy.html" class="">Terms of Use</a>, <a href="/policy.html#privacy_policy">Privacy Policy</a>, and <a href="/direct-notice.html"">Direct Notice</a> to proceed.
+                    <label class="legal-accept" for="tos-accept"><input id="tos-accept" class="required" type="checkbox" name="tos-accept" value="" /> I have read and accept the Terms of Use.</label>
+                    <label class="legal-accept"  for="policy-accept"><input id="policy-accept" class="required" type="checkbox" name="policy-accept" value="" /> I have read and accept the Privacy Policy.</label>
+                    <label class="legal-accept" for="direct-notice-accept"><input id="direct-notice-accept" class="required" type="checkbox" name="direct-notice-accept" value="" /> I have read and accept the Direct Notice.</label>
+                </section>
             </div>
         </div>
     </div> <!-- step1 -->

@@ -1,10 +1,10 @@
 {strip}
-    
+    {$robots='no'}
 {include file='../includes/main/main-header.tpl'
     title="Privacy Policy, Refunds, Terms & Conditions"
     description="Pumpic is a mobile phone monitoring application with the vast possibilities. Learn more about the app's usage legal policy. Pumpic is for legitimate use only."
-}    
-    
+}
+
 <body>
     <!-- BLOCK GTM -->
     {include file='../includes/main/main-after-body.tpl'}
@@ -36,20 +36,13 @@
 				<div class="row box-anchor">
 					<div class="col-lg-10 col-lg-offset-1">
 						<div class="row">
+                            <div class="col-lg-12">
+                                <a href="/policy.html">Go to Legal Policies </a>
+                            </div>
 							<div class="col-lg-12">
-                                <h2 id="legal-policy">Legal Policies</h2>
 
-                                <ul>
-                                    <li><a href="/direct-notice{if ($preview)}{$preview}{/if}.html">Direct Notice</a></li>
-                                    <li><a href="/tos{if ($preview)}{$preview}{/if}.html">Term of Use</a></li>
-                                    <li><a href="/policy{if ($preview)}{$preview}{/if}.html#privacy_policy">Privacy Policy</a></li>
-                                </ul>
-                                <article>
-                                    <p class="text-justify">Please carefully read this end user license agreement (here and after "EULA") before purchasing or using Pumpic software. By purchasing, downloading, installing, logging in, or otherwise using the application as well as a cloud based monitoring solution (here and after iCloud solution), you agree to adhere to the terms of this license. If you do not accept the terms of this license, do not purchase, download, install, log in, or use Pumpic software, delete it as well as all of its related files from your device. This EULA is a legal agreement between you and the software provider. By purchasing, downloading, installing, logging in, or otherwise using the app or iCloud solution, you agree to be bound by the terms. </p>
-                                    <p class="text-justify">By accepting this agreement, you agree to install this software only on a device or devices owned by you and, for cloud-based or other monitoring that does not require installation on a device, to use it only in connection with an account, application, or program you have the legal right to access. You also agree to inform any person(s) who use(s) a device with the software installed and any other person with the right to access a monitored account of the presence of the software. Failure to comply may result in you breaking state and federal laws. You understand and agree that you shall be responsible for any legal costs incurred by the application provider resulting from your improper or illegal use of the software.</p>
-                                </article>
-
-                                    {$policy}
+                                <h2 id="legal-policy">Direct Notice</h2>
+                                {$directNotice}
 
                                 <div class="row_top_border">
                                     <h3 class="text-center">Contact Us{*CONTACT US*}</h3>

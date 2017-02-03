@@ -92,7 +92,19 @@ $config = array(
 				'parental-control-software.html' => 'parental-control-software.php',
 				'mobile-spion.html' => 'mobile-spion.php',
 				'espiao-movel.html' => 'espiao-movel.php',
-				'logiciel-de-controle-parental.html' => 'logiciel-de-controle-parental.php',
+                'logiciel-de-controle-parental.html' => 'logiciel-de-controle-parental.php',
+
+
+            //legal
+                'tos.html' => 'legacy.php',
+                'tos-preview.html' => 'legacy.php',
+                'policy.html' => 'legacy.php',
+                'policy-preview.html' => 'legacy.php',
+                'tos-preview.txt' => 'legacy.php',
+                'tos.txt' => 'legacy.php',
+                'direct-notice.html' => 'legacy.php',
+                'direct-notice-preview.html' => 'legacy.php'
+
 		),
 		'db_phones' => array(
 				'host' => '188.40.64.2',

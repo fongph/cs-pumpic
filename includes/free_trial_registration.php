@@ -66,10 +66,13 @@ $_phone = (isset($_POST['phone']) and !empty($_POST['phone'])) ? $_POST['phone']
 $_name = (isset($_POST['name']) and !empty($_POST['name'])) ? $_POST['name'] : false;
 $_captcha = (isset($_POST['captcha']) and !empty($_POST['captcha'])) ? $_POST['captcha'] : false;
 $_sID = (isset($_POST['site_id']) and !empty($_POST['site_id'])) ? $_POST['site_id'] : false;
+$_tos = (isset($_POST['tos-accept']) and !empty($_POST['tos-accept'])) ? $_POST['tos-accept'] : false;
+$_policy = (isset($_POST['policy-accept']) and !empty($_POST['policy-accept'])) ? $_POST['policy-accept'] : false;
+$_notices = (isset($_POST['direct-notice-accept']) and !empty($_POST['direct-notice-accept'])) ? $_POST['direct-notice-accept'] : false;
 
 if(isset($_POST['email']) and !$obj -> validateEmail($_POST['email'])) {
    $_result['_error'] = "Invalid email format.";
-} else if(isset($_POST['captcha']) and !$obj -> validateCaptcha( $_captcha )) { 
+} else if(isset($_POST['captcha']) and !$obj -> validateCaptcha( $_captcha )) {
     $_result['_error'] = "Invalid CAPTCHA.";
 } else if(!empty($_POST['email']) and $_sID and $obj -> validateCaptcha( $_captcha )) {
 
@@ -77,6 +80,9 @@ if(isset($_POST['email']) and !$obj -> validateEmail($_POST['email'])) {
         'siteId' => $_sID,
         'email' => $_POST['email'],
         'name' => $_name,
+        'tos' => $_tos,
+        'policy' => $_policy,
+        'notices' => $_notices,
     );
 
     $_respons = $obj->_initAfter($_params) -> CreateUsersFreeTrial -> respons;

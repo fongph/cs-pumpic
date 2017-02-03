@@ -18,7 +18,8 @@ $config = array(
 				'tpl_path_compile' => '../templates_c/',
 				'cache_path' => '../cache/'
 		),
-		'domain' => 'pumpic.com',
+        'schema' => 'http://',
+        'domain' => 'pumpic.com',
 		'domain_http' => 'http://pumpic.com',
 		'path_img' => '/images',
 		'path_js' => '/js',
@@ -57,6 +58,8 @@ $config = array(
 				'free-trial.html'  => 'free_trial_registration.php',
 
 				'store.html'  => 'store.php',
+				'store-sub-same.html'  => 'store-sub-same.php',
+				'store-sub-new.html'  => 'store-sub-new.php',
 				'store-android.php'  => 'store-android.php',
 				'aging-parent-protection-app.html' => 'aging-parent-protection-app.php',
 				'iphone-tracking-software.html'   => 'iphone_tracking_software.php',
@@ -89,7 +92,19 @@ $config = array(
 				'parental-control-software.html' => 'parental-control-software.php',
 				'mobile-spion.html' => 'mobile-spion.php',
 				'espiao-movel.html' => 'espiao-movel.php',
-				'logiciel-de-controle-parental.html' => 'logiciel-de-controle-parental.php',
+                'logiciel-de-controle-parental.html' => 'logiciel-de-controle-parental.php',
+
+
+            //legal
+                'tos.html' => 'legacy.php',
+                'tos-preview.html' => 'legacy.php',
+                'policy.html' => 'legacy.php',
+                'policy-preview.html' => 'legacy.php',
+                'tos-preview.txt' => 'legacy.php',
+                'tos.txt' => 'legacy.php',
+                'direct-notice.html' => 'legacy.php',
+                'direct-notice-preview.html' => 'legacy.php'
+
 		),
 		'db_phones' => array(
 				'host' => '188.40.64.2',

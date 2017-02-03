@@ -5523,7 +5523,7 @@ div {
 .order-free-trial-form {
   width: 100%;
   .header > span {
-    font-size: 23px;
+    font-size: 20px;
     font-weight: bold;
   }
 }
@@ -5556,7 +5556,7 @@ div {
       margin-bottom: 4px;
     }
   }
-  input {
+  input:not([type="checkbox"]) {
     border: 1px solid #e8e8e8;
     background: #fff;
     padding: 5px;
@@ -5592,7 +5592,7 @@ div {
     }
   }
   .block-captcha {
-    margin-top: 15px;
+    margin-top: 10px;
     > label {
       font-size: 14px;
       > span {
@@ -5637,8 +5637,9 @@ div {
 .img-credit-card {
   background: url('../images/icons/no-credit-card.png') no-repeat;
   display: inline-block;
-  width: 41px;
-  height: 38px;
+  width: 42px;
+  height: 35px;
+  background-size: cover;
 }
 
 #free_trial_registration {
@@ -5659,7 +5660,7 @@ div {
     }
   }
   .block-buttons {
-    margin-top: 11px;
+    margin-top: 2px;
     width: 100%;
     button.btn-orange {
       font-size: 23px;

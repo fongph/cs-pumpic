@@ -11,6 +11,25 @@ $obj = new includes\lib\users\Order;
 // smarty config
 require_once 'smarty.config.php';
 
+if (isset($_COOKIE['page'])){
+    $url = $_COOKIE['page'];
+    if ($url != '/store'){
+        header("Location: //".$config['domain'].$url.".html");
+    }
+} elseif (!isset($_COOKIE['page'])) {
+    setcookie('page', '', time()+365*24*60*60, '/', '.pumpic.com');
+    $urls = array(0 =>'/store', 1 => '/store-sub-same', 2 =>'/store-sub-new');
+    $clientsNumber = $obj ->getStoreClientsCount();
+    $obj->incrementStoreClientsCount();
+    $url = $clientsNumber % 3;
+    $redirectUrl = $urls[$url];
+    setcookie('page', $redirectUrl, time()+365*24*60*60, '/', '.pumpic.com');
+    if ($redirectUrl != '/store'){
+        header("Location: //".$config['domain'].$redirectUrl.".html");
+    }
+
+}
+
 /* list order */
 $products = $obj ->getProducts('second');
 
@@ -76,6 +95,7 @@ $_curr -> setFilter( ['iso' => ['USD','EUR','GBP','CAD','AUD'] ] );
 $_rates = $_curr -> getCurrencies();
 
 $smarty->assign('rates', json_encode($_rates));
+$smarty->assign('showRobots', 'no');
 
 // init output params!
 $smarty->assign('getProducts', $products);

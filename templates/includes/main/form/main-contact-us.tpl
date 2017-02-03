@@ -113,7 +113,7 @@
 
                         <div class="fatal-error"></div>
 
-                        <p>Learn more from our <a class="go_block_scroll a-default" href="http://{$domain}/faq.html#faq_frequently_asked_questions">FAQ</a> before submitting your question.{*before submitting an application.*}</p>
+                        <p>Learn more from our <a class="go_block_scroll a-default" href="/faq.html#faq_frequently_asked_questions">FAQ</a> before submitting your question.{*before submitting an application.*}</p>
                         <button class="btn-orange mod-center event-submit">Submit Ticket <!-- btn-warning <i class="icon-right-open"></i>-->
                         </button>
                 </div>

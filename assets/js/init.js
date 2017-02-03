@@ -1921,6 +1921,15 @@ $(document).ready(function () {
                     required: "The Email field is empty.",
                     email: "Invalid email format."
                 },
+                'tos-accept': {
+                    required: "You must agree to ALL Pumpic Legal Policies including Terms of Use, Privacy Policy, and Direct Notice in order to proceed. Please, tick all three checkboxes to complete the order.",
+                },
+                'policy-accept': {
+                    required: "You must agree to ALL Pumpic Legal Policies including Terms of Use, Privacy Policy, and Direct Notice in order to proceed. Please, tick all three checkboxes to complete the order.",
+                },
+                'direct-notice-accept': {
+                    required: "You must agree to ALL Pumpic Legal Policies including Terms of Use, Privacy Policy, and Direct Notice in order to proceed. Please, tick all three checkboxes to complete the order.",
+                },
                 errorClass: "error",
             },
             invalidHandler: function (event, validator) {
@@ -1937,9 +1946,16 @@ $(document).ready(function () {
                 var msg = null;
 
                 $.each(errorList, function (key, value) {
-                    // console.log(key, value);
+                    // console.log(value.element.id);
+
                     if (value.element) {
-                        fileds.find(value.element).after('<label class="error">' + value.message + '</label>').show();
+                        if (value.element.id == "tos-accept" || value.element.id == "policy-accept" || value.element.id == "direct-notice-accept"){
+                            fileds.find('.block-accept').next().remove();
+                            fileds.find('.block-accept').after('<label class="error">' + value.message + '</label>').show();
+                        } else{
+                            fileds.find(value.element).after('<label class="error">' + value.message + '</label>').show();
+
+                        }
                     }
                 });
             },
@@ -2490,12 +2506,13 @@ $(document).ready(function () {
 
         return false;
     });
-
     if ($('.buy-form-with-offer').size()) {
         var symbols = {usd: '$', eur: '€', gbp: '£', cad: '$', aud: '$'};
 
+
         var updateRadio = function (input) {
-            
+
+
             var $form = $(input).closest('form');
 
             var data = {
@@ -2543,23 +2560,22 @@ $(document).ready(function () {
             }
 
         };
-
         var updateCheckbox = function (input) {
             var data = $(input).data();
 
             var offerEnabled = $(input).is(":checked");
 
             var $checkboxes = $('.buy-form-with-offer').find('input[type=checkbox][data-group=' + data.group + ']');
- 
+
             $checkboxes.each(function () {
                 var $form = $(this).closest('form');
-                var radioWith12 = $form.find('input[type=radio][data-period=12]');
+                var radioWith12 = $form.find('input[type=radio][data-period=24]');
                     radioWith12.attr('checked', true)
-                
+
                 $(radioWith12).closest('form').find('input[type=radio]:checked').each(function () {
                     updateRadio(this);
                 });
-                
+
                 if (offerEnabled) {
                     if (!$(this).is(":checked")) {
                         $(this).prop('checked', offerEnabled);
@@ -2575,12 +2591,12 @@ $(document).ready(function () {
                     $form.find('.offer_old_price').show();
                     $form.find('.package_price').hide();
                     $form.find('.package_offer_price').show();
-                    
+
                 } else {
                     if ($(this).is(":checked")) {
                         $(this).prop('checked', offerEnabled);
                     }
-                    
+
                     //old store
                     // $('.wr_pack_double_' + data.group).hide();
                     // $('.wr_pack_' + data.group).show();
@@ -2599,8 +2615,13 @@ $(document).ready(function () {
                 updateRadio(this);
             });
         };
-
+        if ($('input[data-period=24]')){
+            $('input[data-period=24]').each(function () {
+                $(this).attr('checked', 'checked');
+            });
+        }
         $('.buy-form-with-offer input[type=radio]:checked').each(function () {
+
             updateRadio(this);
         });
 
@@ -2608,7 +2629,6 @@ $(document).ready(function () {
             if (e.target.tagName != 'INPUT') {
                 return;
             }
-
             var $input = $(this).find('input:first');
             updateRadio($input);
         });

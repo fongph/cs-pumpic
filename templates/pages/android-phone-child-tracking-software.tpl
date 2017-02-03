@@ -134,7 +134,7 @@
 	<ul class="list-images list-images-second">
         <li><img src="{$img}/landings/android-child-tracking.png" alt="child with smartphone" class="lc-3" />First of all, let’s consider cell phone use. Talking on the phone with strangers as well as text communication are potential risks children can be exposed to. A reliable Android app for tracking your kid’s phone will show you who calls them or writes SMS. And as soon as you see that any misbehavior happens, you can intervene and stop the danger.</li>
         <li><img src="{$img}/landings/android-parental-monitoring.png" alt="kid internet activity" class="lc-3" />Internet activity is another major risk. Cyberbullying keeps taking children’s lives away. Meanwhile, online predators seek for an opportunity to attack and abuse kids, who use online media irresponsibly. Tracking software reveals communication on social media to parents and let them keep an eye on online friends and strangers that may contact children.</li>
-        <li><img src="{$img}/landings/android-locator.png" alt="locating kids" class="lc-3" />Parents worry, when children go anywhere alone. Especially, when you don’t know for sure where they go. An Android <a class="a-default" href="http://pumpic.com/how-to-trace-cell-phones.html" target="blank">cell phone locator</a> tracks smartphones and tablets remotely showing exact whereabouts and route history. In addition, there is an option to set geo-fences and receive notifications, when kids leave or enter some specific areas. Thus, you can point ‘home’ or ‘school’ as safety zone and see, when a child comes back or leaves.</li>
+        <li><img src="{$img}/landings/android-locator.png" alt="locating kids" class="lc-3" />Parents worry, when children go anywhere alone. Especially, when you don’t know for sure where they go. An Android <a class="a-default" href="/how-to-trace-cell-phones.html" target="blank">cell phone locator</a> tracks smartphones and tablets remotely showing exact whereabouts and route history. In addition, there is an option to set geo-fences and receive notifications, when kids leave or enter some specific areas. Thus, you can point ‘home’ or ‘school’ as safety zone and see, when a child comes back or leaves.</li>
         <li style="margin-top: 45px!important;"><img src="{$img}/landings/android-app-block-distractions.png" alt="restrict mobile activities" class="lc-3-last" />Moreover, parental controls like Pumpic allow parents to restrict some activities on mobile phones and even block the target device, until children deserve to use it. Thus, you can block a phone for bedtime or when your kids do their homework so as to not distract them from what is important.</li>
     </ul>
     <br>
@@ -161,7 +161,7 @@
                         </div>
                         <div class="col-sm-4 col-md-4 col-lg-4">
                                 <div class="feature">
-                                        <img src="{$img}/icons/icon-track-kids.png" alt="remote mobile monitoring">
+                                        <img src="{$img}/icons/icon-track-kids.png" alt="">
                                         <h3>Keep track of location</h3>
                                         <ul class="feature_list">
                                                 <li>Track real time whereabouts</li>

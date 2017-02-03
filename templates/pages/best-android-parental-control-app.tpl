@@ -133,7 +133,7 @@
         <div class="col-lg-12 col-md-12 col-sm-12">
             <h2 class="h3 text-right">Techno-Parental Control Review</h3>
             <div class="pt30 pb20">
-                <img class="img-align-left" alt="Best Parental Control Software for Android Screenshot" src="{$img}/landings/best-android-parental-control-app/techno-parental-control-review.png" width="207px" height="208px" />
+                <img class="img-align-left" alt="techno parental control mobile screen" src="{$img}/landings/best-android-parental-control-app/techno-parental-control-review.png" width="207px" height="208px" />
                 <img class="app-icon-right" src="{$img}/landings/best-android-parental-control-app/techno-parental-control-review-logo.png" alt="techno parental control logo">
                 <p>Techno-Parental Control will allows you lock down your children’s devices remotely previously having warned them about it. For this purpose, the app features a secure website from where parents can send their warning alerts. The website is easily accessible from any Internet connected device.</p>
 				<p>Parental controls provided by the app let parents apply complete lock down of the target device. It means that you will be able to motivate your children do their homework or arrange other home affairs without any confrontation. Such option will also be useful to prevent kids from using their smartphones and tablets at school. You can actually use Techno-Parental Control any time you consider that device use is inappropriate.</p>

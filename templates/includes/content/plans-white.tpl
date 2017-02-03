@@ -11,7 +11,7 @@
                                 <div class="price">
                                         $11<sup>66</sup>/<sub>month</sub>
                                 </div>
-                                <a href="http://{$domain}/store.html" 
+                                <a href="/store.html"
                                    class="btn btn-default ga-action-click" 
                                    id="plans-block-buy-basic"
                                    ga-action ="click"
@@ -30,7 +30,7 @@
                                 <div class="price">
                                         $33<sup>33</sup>/<sub>month</sub>
                                 </div>
-                                <a href="http://{$domain}/store.html" 
+                                <a href="/store.html"
                                    class="btn btn-default ga-action-click" 
                                    id="plans-block-buy-premium"
                                    ga-action ="click"

@@ -55,7 +55,7 @@
                         <section class="_features-content">
                             <div class="tab col-item-3 col-md-item-3 col-sm-item-3 last">
                                 <ul>
-                                    <li><i class="i-features-sms"></i> <span onclick="window.location='http://{$domain}/mobile-sms-spy.html'">Monitor SMS and MMS</span>
+                                    <li><i class="i-features-sms"></i> <span onclick="window.location='/mobile-sms-spy.html'">Monitor SMS and MMS</span>
                                         <div class="os-label__wrapper">
                                             <div class="os-label label-black">
                                                 <i class="fa fa-apple"></i>IOS
@@ -68,7 +68,7 @@
                                             </div>
                                         </div>
                                     </li>
-                                    <li><i class="i-features-cell-history"></i> {if !in_array('call-monitoring-software', $_notVisible)}<span onclick="window.location='http://{$domain}/call-monitoring-software.html'">Monitor Calls History{else}Monitor Calls History{/if}
+                                    <li><i class="i-features-cell-history"></i> {if !in_array('call-monitoring-software', $_notVisible)}<span onclick="window.location='/call-monitoring-software.html'">Monitor Calls History{else}Monitor Calls History{/if}
                                         <div class="os-label__wrapper">
                                             <div class="os-label label-black">
                                                 <i class="fa fa-apple"></i>IOS
@@ -95,7 +95,7 @@
                                         </div>
 
                                     </li>
-                                    <li><i class="i-features-contacts"></i> <span onclick="window.location='http://{$domain}/monitor-phone-contacts.html'"> View Contacts</span>
+                                    <li><i class="i-features-contacts"></i> <span onclick="window.location='/monitor-phone-contacts.html'"> View Contacts</span>
                                         <div class="os-label__wrapper">
                                             <div class="os-label label-black">
                                                 <i class="fa fa-apple"></i>IOS
@@ -108,7 +108,7 @@
                                             </div>
                                         </div>
                                     </li>
-                                    <li><i class="i-features-email"></i> <span onclick="window.location='http://{$domain}/email-monitoring-software.html'">View Emails</span>
+                                    <li><i class="i-features-email"></i> <span onclick="window.location='/email-monitoring-software.html'">View Emails</span>
                                         <div class="os-label__wrapper">
                                             <div class="os-label label-green">
                                                 <i class="fa fa-android"></i>root
@@ -160,7 +160,7 @@
 
                             <div class="tab col-item-3 col-md-item-3 col-sm-item-3">
                                 <ul>
-                                    <li><i class="i-features-browser"></i> <span onclick="window.location='http://{$domain}/browser-parental-control.html'">Control Browser</span>
+                                    <li><i class="i-features-browser"></i> <span onclick="window.location='/browser-parental-control.html'">Control Browser</span>
                                         <div class="os-label__wrapper">
                                             <div class="os-label label-black">
                                                 <i class="fa fa-apple"></i>IOS
@@ -173,7 +173,7 @@
                                             </div>
                                         </div>
                                     </li>
-                                    <li><i class="i-features-app"></i> <span onclick="window.location='http://{$domain}/block-apps.html'">Control Applications</span>
+                                    <li><i class="i-features-app"></i> <span onclick="window.location='/block-apps.html'">Control Applications</span>
                                         <div class="os-label__wrapper">
                                             <div class="os-label label-green large">
                                                 <i class="fa fa-android"></i>
@@ -216,7 +216,7 @@
                                             </div>
                                         </div>
                                     </li>
-                                    <li><i class="i-features-location"></i> {if !in_array('location-tracking', $_notVisible)}<span onclick="window.location='http://{$domain}/child-location-tracking.html'">Location Tracking</span>{else}Location Tracking{/if}
+                                    <li><i class="i-features-location"></i> {if !in_array('location-tracking', $_notVisible)}<span onclick="window.location='/child-location-tracking.html'">Location Tracking</span>{else}Location Tracking{/if}
                                         <div class="os-label__wrapper">
                                             <div class="os-label label-black">
                                                 <i class="fa fa-apple"></i>IOS
@@ -229,7 +229,7 @@
                                             </div>
                                         </div>
                                     </li>
-                                    <li><i class="i-features-geo-fences"></i> {if !in_array('geo-fences', $_notVisible)}<span onclick="window.location='http://{$domain}/gps-and-geofencing.html'">Geo-fences</span>{else}Geo-fences{/if}
+                                    <li><i class="i-features-geo-fences"></i> {if !in_array('geo-fences', $_notVisible)}<span onclick="window.location='/gps-and-geofencing.html'">Geo-fences</span>{else}Geo-fences{/if}
                                         <div class="os-label__wrapper">
                                             <div class="os-label label-green large">
                                                 <i class="fa fa-android"></i>
@@ -239,7 +239,7 @@
                                             </div>
                                         </div>
                                     </li>
-                                    <li><i class="i-features-keyloger"></i> <span onclick="window.location='http://{$domain}/keylogging-software.html'">Keylogger</span>
+                                    <li><i class="i-features-keyloger"></i> <span onclick="window.location='/keylogging-software.html'">Keylogger</span>
                                         <div class="os-label__wrapper">
                                             <div class="os-label label-green large">
                                                 <i class="fa fa-android"></i>
@@ -255,7 +255,7 @@
 
                             <div class="tab col-item-3 col-md-item-3 col-sm-item-3">
                                 <ul>
-                                    <li><i class="i-features-monitor-viber-whatsapp"></i> <span onclick="window.location='http://{$domain}/whatsapp-monitoring.html'">Monitor WhatsApp</span>
+                                    <li><i class="i-features-monitor-viber-whatsapp"></i> <span onclick="window.location='/whatsapp-monitoring.html'">Monitor WhatsApp</span>
                                         <div class="os-label__wrapper">
                                             <div class="os-label label-black">
                                                 <i class="fa fa-apple"></i>IOS
@@ -268,7 +268,7 @@
                                             </div>
                                         </div>
                                     </li>
-                                    <li><i class="i-features-monitor-skype"></i> <span onclick="window.location='http://{$domain}/monitor-skype.html'">Monitor Skype</span>
+                                    <li><i class="i-features-monitor-skype"></i> <span onclick="window.location='/monitor-skype.html'">Monitor Skype</span>
                                         <div class="os-label__wrapper">
                                             <div class="os-label label-black">
                                                 <i class="fa fa-apple"></i>IOS
@@ -291,7 +291,7 @@
                                             </div>
                                         </div>
                                     </li>
-                                    <li><i class="i-features-monitor-viber-whatsapp"></i> <span onclick="window.location='http://{$domain}/monitor-viber.html'">Monitor Viber</span>
+                                    <li><i class="i-features-monitor-viber-whatsapp"></i> <span onclick="window.location='/monitor-viber.html'">Monitor Viber</span>
                                         <div class="os-label__wrapper">
                                             <div class="os-label label-green">
                                                 <i class="fa fa-android"></i>root
@@ -301,7 +301,7 @@
                                             </div>
                                         </div>
                                     </li>
-                                    <li><i class="i-features-monitor-instagram"></i> <span onclick="window.location='http://{$domain}/parental-control-for-instagram.html'">Monitor Instagram</span>
+                                    <li><i class="i-features-monitor-instagram"></i> <span onclick="window.location='/parental-control-for-instagram.html'">Monitor Instagram</span>
                                         <div class="os-label__wrapper">
                                             <div class="os-label label-green">
                                                 <i class="fa fa-android"></i>root
@@ -312,7 +312,7 @@
                                         </div>
                                     </li>
                                     {*<li><i class="i-features-remote-activity-control"></i> Remote Control Panel</li>*}
-                                    <li><i class="i-features-kik-chat"></i> <span onclick="window.location='http://{$domain}/monitor-kik-messenger.html'">Monitor Kik</span>
+                                    <li><i class="i-features-kik-chat"></i> <span onclick="window.location='/monitor-kik-messenger.html'">Monitor Kik</span>
                                         <div class="os-label__wrapper">
                                             <div class="os-label label-black">
                                                 <i class="fa fa-apple"></i>IOS
@@ -325,7 +325,7 @@
                                             </div>
                                         </div>
                                     </li>
-                                    <li><i class="i-features-monitor-snapchat"></i><span onclick="window.location='http://{$domain}/monitor-snapchat.html'">Monitor Snapchat</span>
+                                    <li><i class="i-features-monitor-snapchat"></i><span onclick="window.location='/monitor-snapchat.html'">Monitor Snapchat</span>
                                         <div class="os-label__wrapper">
                                             <div class="os-label label-green">
                                                 <i class="fa fa-android"></i>root

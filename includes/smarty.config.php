@@ -21,6 +21,7 @@ $smarty->registerPlugin("function","style_cache","cache_data");
 $smarty->assign("cssMin",$config['css_min']);
 $smarty->assign("jsMin",$config['js_min']);
 
+$smarty->assign("schema",$config['schema']);
 $smarty->assign("domain",$config['domain']);
 $smarty->assign("domain_http",$config['domain_http']);
 $smarty->assign("img",$config['path_img']);

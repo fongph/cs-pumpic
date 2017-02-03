@@ -2,12 +2,19 @@ User-agent:*
 Disallow: */tag/*
 Disallow: /login.html
 Disallow: /tos.txt
+Disallow: /tos.html
 Disallow: /toscpapp.txt
+Disallow: /tos-preview.txt
+Disallow: /tos-preview.html
+Disallow: /policy-preview.html
+Disallow: /direct-notice-preview.html
+Disallow: /direct-notice.html
 
 Disallow: /wp-content
 Disallow: /store-mobile.html
 Disallow: /store-desktop.html
-Disallow: /store-new-version.html
+Disallow: /store-sub-new.html
+Disallow: /store-sub-same.html
 Disallow: /store-android.php
 Disallow: /wp-admin
 Disallow: /wp-includes

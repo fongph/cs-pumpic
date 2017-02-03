@@ -118,7 +118,7 @@
 				   <li><img src="{$img}/landings/put-parental-controls-on-android/how-to-put-parental-controls-on-android-phone-6.png" alt="How to Set Parental Controls on Android" class="lc-1" />Now it’s time to start monitoring and protecting your loved ones. Enter your Control Panel. All the data from the target device will be transferred there soon after the setup. In your Control Panel, you will be able to check call logs, sent and received text messages, track location, and monitor online use. In addition, you can manipulate the target device remotely by setting restrictions, blocking certain activities etc.</li>
 				</ul>
                 <br>
-				<p>Hopefully, you will find all the information on how to put parental controls on an Android phone or <a class="a-default" href="http://pumpic.com/android-tablet-parental-control.html" target="_blank">Android tablet</a> above. Once again, in case of any assistance needed, feel free to apply to our Customer Support. Alternatively, you can learn more from our FAQ section in Help & Contacts.</p>
+				<p>Hopefully, you will find all the information on how to put parental controls on an Android phone or <a class="a-default" href="/android-tablet-parental-control.html" target="_blank">Android tablet</a> above. Once again, in case of any assistance needed, feel free to apply to our Customer Support. Alternatively, you can learn more from our FAQ section in Help & Contacts.</p>
             </div>
         </div>
     </div>    

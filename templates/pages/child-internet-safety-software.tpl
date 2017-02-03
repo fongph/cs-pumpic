@@ -157,11 +157,11 @@
 				<p>There aren’t too many options how parents can set up the Internet protection on their children’s mobile devices. Firstly, they can use built-in iOS or Android safety tools (like “Restrictions” on iPhone). But onboard utilities often have fairly limited functionality. That’s why many parents prefer utilizing specially developed monitoring apps.</p>
 				<p>Here are five major advantages parental control apps like Pumpic have:</p>
 				<ul class="list-images">
-				   <li><img src="{$img}/landings/check-icon.png" alt="Check Mark" class="lc-1" />It is <strong>convenient</strong> – you can keep track of your kid's activities and relocations remotely from any browser and any device at any given time.</li>
-				   <li><img src="{$img}/landings/check-icon.png" alt="Check Mark" class="lc-1" />It has a <strong>wide range of functions</strong> – besides web filtering, Pumpic monitors calls, SMS and IM messages, follows social media accounts, blocks apps, <a class="a-default" href="/cell-phone-tracker-app.html">tracks someone else's cell phone</a> and much more.</li>
-				   <li><img src="{$img}/landings/check-icon.png" alt="Check Mark" class="lc-1" />It is <strong>simple to use</strong> – the app is easily installed and set up. The straightforward interface won’t confuse you. With the help of the Control Panel, you can monitor your child’s every move and interaction in one place.</li>
-				   <li><img src="{$img}/landings/check-icon.png" alt="Check Mark" class="lc-1" />It <strong>enhances security</strong> – thanks to its multiple functions, the app prevents unacceptable online behavior and averts many digital dangers (sexting, cyberbullying, identity theft, online predators, etc.)</li>
-				   <li><img src="{$img}/landings/check-icon.png" alt="Check Mark" class="lc-1" />It is <strong>legal</strong> – parental control apps are absolutely legal to use to monitor underage children, unlike spyware programs that are used mainly by employers and jealous partners or spouses.</li>
+				   <li><img src="{$img}/landings/check-icon.png" alt="check mark" class="lc-1" />It is <strong>convenient</strong> – you can keep track of your kid's activities and relocations remotely from any browser and any device at any given time.</li>
+				   <li><img src="{$img}/landings/check-icon.png" alt="check mark" class="lc-1" />It has a <strong>wide range of functions</strong> – besides web filtering, Pumpic monitors calls, SMS and IM messages, follows social media accounts, blocks apps, <a class="a-default" href="/cell-phone-tracker-app.html">tracks someone else's cell phone</a> and much more.</li>
+				   <li><img src="{$img}/landings/check-icon.png" alt="check mark" class="lc-1" />It is <strong>simple to use</strong> – the app is easily installed and set up. The straightforward interface won’t confuse you. With the help of the Control Panel, you can monitor your child’s every move and interaction in one place.</li>
+				   <li><img src="{$img}/landings/check-icon.png" alt="check mark" class="lc-1" />It <strong>enhances security</strong> – thanks to its multiple functions, the app prevents unacceptable online behavior and averts many digital dangers (sexting, cyberbullying, identity theft, online predators, etc.)</li>
+				   <li><img src="{$img}/landings/check-icon.png" alt="check mark" class="lc-1" />It is <strong>legal</strong> – parental control apps are absolutely legal to use to monitor underage children, unlike spyware programs that are used mainly by employers and jealous partners or spouses.</li>
 				</ul>
 				<p>Considering the huge variety of functions that a comprehensive parental monitoring app provides, you can rest assured that you’ve taken whatever measures are necessary to child-proof the Internet. The only thing you can do to fix the result is to maintain trustworthy relations with your kids and teens. You should explain to them why you monitor their activities and keep talking to them regularly about proper behavior and ways not to get into troubles.</p>
             </div>
@@ -186,7 +186,7 @@
                         </div>
                         <div class="col-sm-4 col-md-4 col-lg-4">
                                 <div class="feature">
-                                        <img src="{$img}/icons/device-control-icon.png" alt="remote device control">
+                                        <img src="{$img}/icons/device-control-icon.png" alt="">
                                         <h3>Remote device control</h3>
                                         <ul class="feature_list">
                                                 <li>Handle onboard apps</li>

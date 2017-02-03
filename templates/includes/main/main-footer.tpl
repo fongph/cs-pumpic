@@ -60,7 +60,7 @@
                         <div class="col-sm-10 col-md-10 col-lg-10 col-sm-offset-1 col-md-offset-1 col-lg-offset-1">
                                 <div class="share">
                                     <ul itemscope itemtype="https://schema.org/Organization" class="box-socials clearfix">
-                                          <link itemprop="url" href="http://pumpic.com">
+                                          <link itemprop="url" href="{$schema}pumpic.com">
                                         {if isset($disableSocialLinks)}
                                         <li>
                                             {include file='../../includes/content/phone/block-phone-footer.tpl'}

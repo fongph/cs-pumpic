@@ -17,7 +17,7 @@ RUN apt-get update && apt-get install -y \
 ADD application.ini /usr/local/etc/php/conf.d/
 ADD browscap.ini /etc/browscap.ini
 
-RUN curl -sS https://getcomposer.org/installer | php
+RUN curl -sS https://raw.githubusercontent.com/composer/getcomposer.org/1b137f8bf6db3e79a38a5bc45324414a6b1f9df2/web/installer | php
 RUN mv composer.phar /usr/local/bin/composer
 RUN chmod +x /usr/local/bin/composer
 

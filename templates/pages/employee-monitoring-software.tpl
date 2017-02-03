@@ -859,7 +859,7 @@ description="Increase productivity, ensure legal safety and streamline workflow 
                                                       placeholder="Question*" aria-required="true"></textarea></div>
                     <div class="fatal-error"></div>
                     <p>Learn more from our <a class="go_block_scroll a-default"
-                                              href="http://pumpic.com/faq.html#faq_frequently_asked_questions">FAQ</a>
+                                              href="/faq.html#faq_frequently_asked_questions">FAQ</a>
                         before submitting your question.</p>
                     <button class="btn-orange mod-center event-submit" style="padding: 13px 20px;">Submit Ticket
                     </button>
@@ -903,7 +903,7 @@ hideJailbreak = true
             <div class="col-sm-3 col-md-3 col-lg-3">
                 <div class="share">
                     <ul itemscope="" itemtype="https://schema.org/Organization" class="box-socials clearfix">
-                        <link itemprop="url" href="http://pumpic.com">
+                        <link itemprop="url" href="{$schema}pumpic.com">
                         <li>
                             <div id="box-phone-footer" class="visible-xs">
                                 <div class="block-phone"><span class="p-number">(913) 717-6477</span></div>

@@ -119,7 +119,7 @@
                                     </p>
                                   </li>
                                   <li href="#" class="list-group-item pc-pb65 text-center">
-                                    <a href="http://{$domain}/icloud-iphone-without-jailbreak-monitoring.html" 
+                                    <a href="/icloud-iphone-without-jailbreak-monitoring.html"
                                        class="list-group-item-link a-default">Learn more<i class="icons ico-arrows"></i></a>
                                   </li>
                                 </ul>
@@ -234,7 +234,7 @@
                                         </p>
                                     </li>
                                     <li href="#" class="list-group-item pc-pb65 text-center">
-                                        <a href="http://{$domain}/iphone-with-jailbreak-monitoring.html"
+                                        <a href="/iphone-with-jailbreak-monitoring.html"
                                            class="list-group-item-link a-default">Learn more<i class="icons ico-arrows"></i></a>
                                     </li>
                                 </ul>

@@ -106,7 +106,7 @@ ul li
 	
 
 .desc-faq
-	max-width: 537px; 
+	max-width: 635px;
 	width 100%
 	text-align: center; 
 	margin: 24px auto; 
@@ -116,7 +116,7 @@ ul li
 	
 
 .answer
-	max-width 635px 
+	max-width 635px
 	width 100%
 	margin 0 auto
 
@@ -128,11 +128,15 @@ ul li
 	background: url("../../../img/plus.png") no-repeat left 26px;
 	padding: 21px 0 0 25px;
 	cursor: pointer;
-	
-.url_accordion .plus span:hover
-	font-weight: 500; 
+	&:hover
+		background: url("../../../img/plus_hov.png") no-repeat left 26px;
+		span
+			font-weight: 500;
 
-.url_accordion .minus
+
+
+
+.url_accordion .plus.minus
 	background: url("../../../img/minus.png") no-repeat left 32px;
 	padding: 21px 0 0 25px;
 	cursor: pointer;
@@ -143,11 +147,7 @@ ul li
 .url_accordion .plus .accordion__text
 	display none
 
-
-.url_accordion .minus .accordion__text
-	display block
-
-	
+//.url.container__middle
 
 
 
@@ -177,7 +177,7 @@ ul li
 footer
 	border-top: 1px solid #ebebeb;
 	padding: 20px 0 10px 0;
-	margin-top: 20px;	
+	margin-top: 50px;
 
 
 .footer_links
@@ -315,6 +315,10 @@ footer
 	vertical-align: middle;
 	width: 50%;
 
+@media (max-width: 1320px)
+	.first-col
+		padding-left: 25px
+
 
 .second-col
 	display: block;
@@ -326,20 +330,24 @@ footer
  
 	
 .second-col img
-	max-width: 730px;
-	width: 100%;
+	max-width: 680px;
+	position: relative;
+	float: right;
+	right: -180px;
+	bottom: -42px;
 
 	
 @media (max-height: 900px){
 	.second-col img{
-		max-width: 560px;
-	
+		max-width: 590px;
+		position: relative
+		right: -150px
 	}
 }
 
 @media (max-height: 750px){
 	.second-col img{
-		max-width: 500px;
+		max-width: 550px;
 	}
 }
    
@@ -355,7 +363,13 @@ footer
 
 .first__logo img
 	width: 200px;
-	
+@media (max-width: 1024px)
+	.first__logo img
+		width: 160px
+	.first__h2 h2
+		font-size: 50px
+
+
 .first__text	
 	color: #fff;
 	max-width: 387px;
@@ -370,6 +384,17 @@ footer
 	width: 272px;
 	height: 65px;
 	transition: all .25s;
+	&:hover
+		background-image: url(../../../img/google_hover.png);
+
+.nav__google-play
+	width: 142px
+	height: 34px
+	margin-left: 10px
+	display: block
+	margin-top: 18px
+	background: url(../../../img/google_normal.png) no-repeat
+	background-size: 142px 34px
 	&:hover
 		background-image: url(../../../img/google_hover.png);
 		transition: all .25s;
@@ -517,7 +542,7 @@ footer
 	}
 
 	.owl-carousel_1{
-		display none !important
+		//display none !important
 	}
 	
 	.menu_first{
@@ -639,8 +664,20 @@ footer
 	max-width 970px
 	width 100%
 	margin 0 auto
-	
-.container__middle .owl-controls	
+	position: relative
+	.fading-edge
+		position: absolute
+		z-index: 1
+		height: 30em
+		width: 20%
+		bottom: 0
+		&.left
+			box-shadow: inset 110px 0 105px -16px rgba(255,255,255,0.8)
+			left: 0
+		&.right
+			box-shadow: inset -110px 0 105px -16px rgba(255,255,255,0.8)
+			right: 0
+.container__middle .owl-controls
 	padding-top: 20px;
 	
 #fp-nav ul li .fp-tooltip
@@ -701,7 +738,20 @@ footer
 	background-color: #ff7f73;
 	
 .navbar-toggle .icon-bar
-	width: 26px;	
+	width: 26px;
+	transition: transform 0.2s ease-in, opacity 0.1s
+
+.navbar-toggle.navbar-opened .icon-bar
+	&:nth-child(3)
+		transform: rotate(-45deg);
+		position: relative;
+		top: -6px;
+	&:nth-child(1)
+		transform: rotate(45deg);
+		position: relative;
+		top: 6px;
+	&:nth-child(2)
+		opacity: 0
 
 .navbar-toggle
 	padding: 14px 5px;
@@ -722,18 +772,40 @@ footer
 	font-weight: 300;
 	color: #000;
 	font-size: 14px;
-	
+	position: relative
+	.navbar-default .navbar-nav>li>a
+	&:after
+		content: ''
+		position: absolute
+		bottom: -10px
+		left: 0
+		display: block
+		background-color: #fe8373
+		width: 100%
+		height: 2px
+		transform: scaleX(0)
+		transition: transform .2s ease-out
 .navbar-default .navbar-nav>li a:hover 
 	color: #fe8373;
+	&:after
+		transform: scaleX(1)
 
+@media (max-width: 767px) {
+	.navbar-default .navbar-nav>li>a:after {
+		display: none
+	}
+}
 // End Nav-Bar
 
 
 .middle__features
 	max-width: 970px;
-	margin: 46px auto;
+	margin: 46px auto 23px;
 	width: 100%;
 
+.divider
+	margin-bottom: 30px
+	border-bottom: 1px solid #ebebeb
 
 .middle__features .features__row 
 	width: 250px;
@@ -897,7 +969,7 @@ footer
  .btn-down 
 	position: absolute;
 	left: 50%;
-	bottom: 4.82456%;
+	bottom: 2.82456%;
 	width: 20px;
 	height: 34px;
 	padding: 4px 0;

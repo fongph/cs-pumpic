@@ -1,6 +1,6 @@
 {strip}
 	<!-- Bootstrap -->
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,300italic,400italic,600italic,700italic' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,300italic,400italic,600italic,700italic' rel='stylesheet' type='text/css'>
 	<link href="{$css}/bootstrap.min.css?{style_cache data='2015-02-05'}" rel="stylesheet">
 	<link href="{$css}/fontello.min.css?{style_cache data='2015-02-05'}" rel="stylesheet">
         <!-- lightbox style -->
@@ -27,7 +27,7 @@
 		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js?{style_cache data='2015-02-05'}"></script>
 	<![endif]-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js?{style_cache data='2015-02-05'}"></script>
-        <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js?{style_cache data='2015-02-05'}"></script>
+        <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js?{style_cache data='2015-02-05'}"></script>
 	<script src="{$js}/bootstrap.min.js?{style_cache data='2015-02-05'}"></script>
 	<script src="{$js}/fancy_checkbox.min.js?{style_cache data='2015-02-05'}"></script>
         <script src="{$js}/main.min.js?{style_cache data='2015-02-05'}"></script>

@@ -160,7 +160,7 @@
 				   <li><img src="{$img}/landings/check-icon.png" alt="Check Mark" class="lc-1" />Talk to your children, teach them Internet safety for teens, and explain potential risks they may face. Prevent them from meeting online strangers in real life and always inform parents, if they feel any kind of offence towards them.</li>
 				   <li><img src="{$img}/landings/check-icon.png" alt="Check Mark" class="lc-1" />Monitor browsing history and social networks for inappropriate content, cyberbullying, sexting, or any other misbehavior. Cell phone monitoring software for Android will be of help here. Thus, you will be able to keep track of online activities and avert probable dangers in the making.</li>
 				</ul>
-				<p>Never leave your children one on one with dangers coming from the Internet. Hold communication with them constantly. Show that you respect them, that they can trust you, and ask for a piece good of advice. Explain that if you do use <a class="a-default" href="http://pumpic.com/android-parental-monitoring.html" target="_blank">Android parental monitoring</a>, it is for the sake of their safety, not to restrict their freedom.</p>
+				<p>Never leave your children one on one with dangers coming from the Internet. Hold communication with them constantly. Show that you respect them, that they can trust you, and ask for a piece good of advice. Explain that if you do use <a class="a-default" href="/android-parental-monitoring.html" target="_blank">Android parental monitoring</a>, it is for the sake of their safety, not to restrict their freedom.</p>
 				<p>Remember, if a child cannot learn the way that you teach, you should teach the way that a child can learn.</p>
             </div>
         </div>

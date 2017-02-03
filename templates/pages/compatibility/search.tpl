@@ -166,7 +166,7 @@
 
     <script type="text/javascript">
         {*var Devices = {
-            imgPath: 'http://{$api_device._domain}/{$api_device.path_img}/',
+            imgPath: '{$schema}pumpic.com{$api_device._domain}/{$api_device.path_img}/',
             $titleBlock:  $('.result-title'),
             $resBlock: $('.box-get-search-result'),
             $paginationBlock: $('.box-navigations'),

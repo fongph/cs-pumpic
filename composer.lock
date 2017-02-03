@@ -4,15 +4,15 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "f42c6beecb219031773862f7808603bd",
+    "content-hash": "d6b2f94b751593b0a7a66a827d57c53f",
     "packages": [
         {
             "name": "boomers/cs-billing",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "git@bitbucket.org:boomersweb/cs-billing.git",
-                "reference": "a11eb260812478388876cb80fd5aaad538ceb8f3"
+                "url": "git@gitlab.dizboard.com:pumpic/cs-billing.git",
+                "reference": "1e9ca62ead5615d2c9aab9d8a54b5963f6cf3751"
             },
             "require": {
                 "boomers/cs-models": "dev-master",
@@ -31,14 +31,14 @@
             "license": [
                 "MIT"
             ],
-            "time": "2016-11-21 14:25:53"
+            "time": "2017-01-27 12:05:19"
         },
         {
             "name": "boomers/cs-mail",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "git@bitbucket.org:boomersweb/cs-mail.git",
+                "url": "git@gitlab.dizboard.com:pumpic/cs-mail.git",
                 "reference": "2450cdf2d156b8e30a757262f5be53dedd057682"
             },
             "require": {
@@ -64,8 +64,8 @@
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "git@bitbucket.org:boomersweb/cs-models.git",
-                "reference": "bb55aac329eeab66ecfd71e486d134841c9d98f7"
+                "url": "git@gitlab.dizboard.com:pumpic/cs-models.git",
+                "reference": "9fea83ec3ce9bcab810f0c3d7ad7f3a33d6608f1"
             },
             "require": {
                 "php": ">=5.4.0"
@@ -79,14 +79,14 @@
                     "CS\\Models\\": "src/"
                 }
             },
-            "time": "2016-11-24 15:17:01"
+            "time": "2017-02-02 10:54:40"
         },
         {
             "name": "boomers/cs-settings",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "git@bitbucket.org:boomersweb/cs-settings.git",
+                "url": "git@gitlab.dizboard.com:pumpic/cs-settings.git",
                 "reference": "2c58c83e621bd2636076d010164ce1901860f72b"
             },
             "require": {
@@ -105,7 +105,7 @@
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "git@bitbucket.org:boomersweb/cs-users.git",
+                "url": "git@gitlab.dizboard.com:pumpic/cs-users.git",
                 "reference": "dbf4d1ffeda3f06819eae393f73980d5ec46be60"
             },
             "require": {
@@ -137,7 +137,7 @@
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "git@bitbucket.org:boomersweb/ip.git",
+                "url": "git@gitlab.dizboard.com:pumpic/ip.git",
                 "reference": "e1dc30ca7f96a570f73127cfa09426330581ccf2"
             },
             "require": {
@@ -156,7 +156,7 @@
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "git@bitbucket.org:boomersweb/seller.git",
+                "url": "git@gitlab.dizboard.com:pumpic/seller.git",
                 "reference": "17d8d11d4009e12dc17f00780e04d3481eb3f638"
             },
             "require": {
@@ -1485,16 +1485,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "4.8.31",
+            "version": "4.8.34",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "98b2b39a520766bec663ff5b7ff1b729db9dbfe3"
+                "reference": "7eb45205d27edd94bd2b3614085ea158bd1e2bca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/98b2b39a520766bec663ff5b7ff1b729db9dbfe3",
-                "reference": "98b2b39a520766bec663ff5b7ff1b729db9dbfe3",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/7eb45205d27edd94bd2b3614085ea158bd1e2bca",
+                "reference": "7eb45205d27edd94bd2b3614085ea158bd1e2bca",
                 "shasum": ""
             },
             "require": {
@@ -1553,7 +1553,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2016-12-09T02:45:31+00:00"
+            "time": "2017-01-26T16:15:36+00:00"
         },
         {
             "name": "phpunit/phpunit-mock-objects",
@@ -1613,16 +1613,16 @@
         },
         {
             "name": "sebastian/comparator",
-            "version": "1.2.2",
+            "version": "1.2.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/comparator.git",
-                "reference": "6a1ed12e8b2409076ab22e3897126211ff8b1f7f"
+                "reference": "2b7424b55f5047b47ac6e5ccb20b2aea4011d9be"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/comparator/zipball/6a1ed12e8b2409076ab22e3897126211ff8b1f7f",
-                "reference": "6a1ed12e8b2409076ab22e3897126211ff8b1f7f",
+                "url": "https://api.github.com/repos/sebastianbergmann/comparator/zipball/2b7424b55f5047b47ac6e5ccb20b2aea4011d9be",
+                "reference": "2b7424b55f5047b47ac6e5ccb20b2aea4011d9be",
                 "shasum": ""
             },
             "require": {
@@ -1673,7 +1673,7 @@
                 "compare",
                 "equality"
             ],
-            "time": "2016-11-19T09:18:40+00:00"
+            "time": "2017-01-29T09:50:25+00:00"
         },
         {
             "name": "sebastian/diff",
@@ -2103,7 +2103,8 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
-        "php": ">=5.4.0"
+        "php": ">=5.4.0",
+        "ext-bcmath": "*"
     },
     "platform-dev": []
 }

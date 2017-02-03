@@ -12,7 +12,7 @@
             </a>
         </li>
         <li>
-            <a href="http://demo.{$domain}/setDevice/125?redirect_url=cp/calls" 
+            <a href="{$schema}demo.{$domain}/setDevice/125?redirect_url=cp/calls"
                class="featured-link link-hl ga-action-click" 
                id="plans-block-view-demo"
                ga-action ="click"

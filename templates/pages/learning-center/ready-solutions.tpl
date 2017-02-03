@@ -53,7 +53,7 @@
         <div class="box-breadcrumbs">
             <div class="container">
                 <ul id="breadcrumbs">
-                    <li><a class="color-green" href="http://{$domain}/learning-center/">Learning Center</a><span class="arrows icon-right-open"></span>{*<span class="arrows_green"></span>*}</li>
+                    <li><a class="color-green" href="/learning-center/">Learning Center</a><span class="arrows icon-right-open"></span>{*<span class="arrows_green"></span>*}</li>
                     <li><span>'Turn-key' Solutions for Parents</span></li>
                 </ul>
             </div>
@@ -142,11 +142,11 @@
                                         </ul>
                                     </td>
                                     <td class="col-lg-3 col-md-3 col-sm-3">
-                                        <p>All the functions that can help solve these issues are <a class="color-green {*bold*}" href="http://{$domain}/iphone-with-jailbreak-monitoring.html">introduced in Pumpic Basic</a>.</p> 
-                                        <p>If your primary goal is to track your kids’ location, you can use <a class="color-green {*bold*}" href="http://{$domain}/icloud-iphone-without-jailbreak-monitoring.html">Pumpic iCloud Solution</a> without a need to jailbreak the target device.</p>
+                                        <p>All the functions that can help solve these issues are <a class="color-green {*bold*}" href="/iphone-with-jailbreak-monitoring.html">introduced in Pumpic Basic</a>.</p>
+                                        <p>If your primary goal is to track your kids’ location, you can use <a class="color-green {*bold*}" href="/icloud-iphone-without-jailbreak-monitoring.html">Pumpic iCloud Solution</a> without a need to jailbreak the target device.</p>
                                     </td>
                                     <td class="col-lg-3 col-md-3 col-sm-3">
-                                        <p><a class="color-green {*bold*}" href="http://{$domain}/store.html">Pumpic Basic</a> is the best and most effective solution for these purposes.</p>
+                                        <p><a class="color-green {*bold*}" href="/store.html">Pumpic Basic</a> is the best and most effective solution for these purposes.</p>
                                     </td>
 
                                 </tr>
@@ -169,10 +169,10 @@
                                         </ul>
                                     </td>
                                     <td class="col-lg-3 col-md-3 col-sm-3">
-                                        <p><a class="color-green {*bold*}" href="http://{$domain}/icloud-iphone-without-jailbreak-monitoring.html">Pumpic Premium</a> is the best and most effective solution for these purposes.</p>
+                                        <p><a class="color-green {*bold*}" href="/icloud-iphone-without-jailbreak-monitoring.html">Pumpic Premium</a> is the best and most effective solution for these purposes.</p>
                                     </td>
                                     <td class="col-lg-3 col-md-3 col-sm-3">
-                                        <p><a class="color-green {*bold*}" href="http://{$domain}/store.html">Pumpic Premium</a> is the best and most effective solution for these purposes.</p>
+                                        <p><a class="color-green {*bold*}" href="/store.html">Pumpic Premium</a> is the best and most effective solution for these purposes.</p>
                                     </td>
 
                                 </tr>
@@ -195,10 +195,10 @@
                                         </ul>
                                     </td>
                                     <td class="col-lg-3 col-md-3 col-sm-3">
-                                        <p>Limitless and comprehensive protection comes with <a class="color-green {*bold*}" href="http://{$domain}/store.html">Pumpic Premium subscription</a>.</p>
+                                        <p>Limitless and comprehensive protection comes with <a class="color-green {*bold*}" href="/store.html">Pumpic Premium subscription</a>.</p>
                                     </td>
                                     <td class="col-lg-3 col-md-3 col-sm-3">
-                                        <p>Limitless and comprehensive protection comes with <a class="color-green {*bold*}" href="http://{$domain}/store.html">Pumpic Premium subscription</a>.</p>
+                                        <p>Limitless and comprehensive protection comes with <a class="color-green {*bold*}" href="/store.html">Pumpic Premium subscription</a>.</p>
                                     </td>
 
                                 </tr>
@@ -275,14 +275,14 @@
                                     <img src="{$img}/icons/icon-iphone.png" width="101px" height="64px" alt="Solutions for iPhones, iPads, and iPods Touch (iOS 6.0+)" />
                                 </div>   
                                 <div class="col-sm-12 col-xs-12 item event">
-                                    <p>All the functions that can help solve these issues are <a class="color-green {*bold*}" href="http://{$domain}/iphone-with-jailbreak-monitoring.html">introduced in Pumpic Basic</a>.</p> 
-                                    <p>If your primary goal is to track your kids’ location, you can use <a class="color-green {*bold*}" href="http://{$domain}/icloud-iphone-without-jailbreak-monitoring.html">Pumpic iCloud Solution</a> without a need to jailbreak the target device.</p>
+                                    <p>All the functions that can help solve these issues are <a class="color-green {*bold*}" href="/iphone-with-jailbreak-monitoring.html">introduced in Pumpic Basic</a>.</p>
+                                    <p>If your primary goal is to track your kids’ location, you can use <a class="color-green {*bold*}" href="/icloud-iphone-without-jailbreak-monitoring.html">Pumpic iCloud Solution</a> without a need to jailbreak the target device.</p>
                                 </div>  
                                 <div class="col-sm-12 col-xs-12 bg-black-2 text-center mt-hedaer item">
                                     <img src="{$img}/icons/icon-android.png" width="97px" height="51px" alt="Solutions for Android Phones and Tablets (Android 2.2+)" >
                                 </div>   
                                 <div class="col-sm-12 col-xs-12 item event">
-                                    <p><a class="color-green {*bold*}" href="http://{$domain}/store.html">Pumpic Basic</a> is the best and most effective solution for these purposes.</p>
+                                    <p><a class="color-green {*bold*}" href="/store.html">Pumpic Basic</a> is the best and most effective solution for these purposes.</p>
                                 </div>
                             </div>
                             <!-- end -->
@@ -314,13 +314,13 @@
                                     <img src="{$img}/icons/icon-iphone.png" width="101px" height="64px" alt="Solutions for iPhones, iPads, and iPods Touch (iOS 6.0+)" />
                                 </div>   
                                 <div class="col-sm-12 col-xs-12 item event">
-                                    <p><a class="color-green {*bold*}" href="http://{$domain}/icloud-iphone-without-jailbreak-monitoring.html">Pumpic Premium</a> is the best and most effective solution for these purposes.</p>
+                                    <p><a class="color-green {*bold*}" href="/icloud-iphone-without-jailbreak-monitoring.html">Pumpic Premium</a> is the best and most effective solution for these purposes.</p>
                                 </div>  
                                 <div class="col-sm-12 col-xs-12 bg-black-2 text-center mt-hedaer item">
                                     <img src="{$img}/icons/icon-android.png" width="97px" height="51px" alt="Solutions for Android Phones and Tablets (Android 2.2+)" />
                                 </div>   
                                 <div class="col-sm-12 col-xs-12 item event">
-                                    <p><a class="color-green {*bold*}" href="http://{$domain}/store.html">Pumpic Premium</a> is the best and most effective solution for these purposes.</p>
+                                    <p><a class="color-green {*bold*}" href="/store.html">Pumpic Premium</a> is the best and most effective solution for these purposes.</p>
                                 </div>
                             </div>
                             <!-- end -->
@@ -352,13 +352,13 @@
                                     <img src="{$img}/icons/icon-iphone.png" width="101px" height="64px" alt="Solutions for iPhones, iPads, and iPods Touch (iOS 6.0+)" />
                                 </div>   
                                 <div class="col-sm-12 col-xs-12 item event">
-                                    <p>Limitless and comprehensive protection comes with <a class="color-green {*bold*}" href="http://{$domain}/store.html">Pumpic Premium subscription</a>.</p>
+                                    <p>Limitless and comprehensive protection comes with <a class="color-green {*bold*}" href="/store.html">Pumpic Premium subscription</a>.</p>
                                 </div>  
                                 <div class="col-sm-12 col-xs-12 bg-black-2 text-center mt-hedaer item">
                                     <img src="{$img}/icons/icon-android.png" width="97px" height="51px" alt="Solutions for Android Phones and Tablets (Android 2.2+)" />
                                 </div>   
                                 <div class="col-sm-12 col-xs-12 item event">
-                                    <p>Limitless and comprehensive protection comes with <a class="color-green {*bold*}" href="http://{$domain}/store.html">Pumpic Premium subscription</a>.</p>
+                                    <p>Limitless and comprehensive protection comes with <a class="color-green {*bold*}" href="/store.html">Pumpic Premium subscription</a>.</p>
                                 </div>
                             </div>
                             <!-- end -->

@@ -6,37 +6,38 @@
     "repositories": [
         {
             "type": "git",
-            "url": "git@bitbucket.org:boomersweb/cs-models.git"
+            "url": "git@gitlab.dizboard.com:pumpic/cs-models.git"
         },
         {
             "type": "git",
-            "url": "git@bitbucket.org:boomersweb/ip.git"
+            "url": "git@gitlab.dizboard.com:pumpic/ip.git"
         },
         {
             "type": "git",
-            "url": "git@bitbucket.org:boomersweb/cs-mail.git"
+            "url": "git@gitlab.dizboard.com:pumpic/cs-mail.git"
         }, 
         {
             "type": "git",
-            "url": "git@bitbucket.org:boomersweb/cs-settings.git"
+            "url": "git@gitlab.dizboard.com:pumpic/cs-settings.git"
         },
         {
             "type": "git",
-            "url": "git@bitbucket.org:boomersweb/cs-users.git"
-        },
-        
-        {
-            "type": "git",
-            "url": "git@bitbucket.org:boomersweb/cs-billing.git"
+            "url": "git@gitlab.dizboard.com:pumpic/cs-users.git"
         },
         
         {
             "type": "git",
-            "url": "git@bitbucket.org:boomersweb/seller.git"
+            "url": "git@gitlab.dizboard.com:pumpic/cs-billing.git"
+        },
+        
+        {
+            "type": "git",
+            "url": "git@gitlab.dizboard.com:pumpic/seller.git"
         }
     ],
     "require": {
         "php": ">=5.4.0",
+        "ext-bcmath": "*",
         "symfony/options-resolver": "2.3.42",
         "rastor/system": "~0.5",
         "predis/predis": "~1.0",
@@ -47,7 +48,8 @@
         "boomers/cs-mail": "dev-master",
         "boomers/cs-settings": "dev-master",
         "boomers/cs-users": "dev-master",
-        "mobiledetect/mobiledetectlib": "^2.8"
+        "mobiledetect/mobiledetectlib": "^2.8",
+        "php-amqplib/php-amqplib": "^v2.6.3"
     },
     "require-dev": {
         "phpunit/phpunit": "4.*"

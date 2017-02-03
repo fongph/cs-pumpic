@@ -3939,4 +3939,7 @@ function get_avatar_data( $id_or_email, $args = null ) {
 	 *                            user email, WP_User object, WP_Post object, or WP_Comment object.
 	 */
 	return apply_filters( 'get_avatar_data', $args, $id_or_email );
+
 }
+
+add_action( 'template_redirect', 'rw_relative_urls' );

@@ -910,7 +910,7 @@ add_action( 'customize_preview_init', 'cellspy_customize_preview_js' );
 function coupon_func( ) {
 	return '<div class="box-form-subscribe dark">
                 
-<form method="POST" action="http://pumpic.com/security-subscribe-form-mailChimp.html" name="subscribe-'.get_the_ID().'">
+<form method="POST" action="/security-subscribe-form-mailChimp.html" name="subscribe-'.get_the_ID().'">
 
     <input type="hidden" name="link" value="http://pumpic.us9.list-manage.com/subscribe?u=121503f636b81be9179c9f178&id=4fda74feb8" />
 
@@ -956,13 +956,13 @@ function subscription_form_func( $atts ) {
 	), $atts));
 	return '<div class="box-form-subscribe dark">
                 
-<form method="POST" action="http://pumpic.com/security-subscribe-form-mailChimp.html" name="subscribe-'.get_the_ID().'">
+<form method="POST" action="/security-subscribe-form-mailChimp.html" name="subscribe-'.get_the_ID().'">
 
     <input type="hidden" name="link" value="'.$link.'" />
 
     <div class="row">
         <div class="col-s-sm-12 col-sm-3 col-md-3 col-lg-3">
-            <img class="image" src="http://pumpic.com/security/wp-content/uploads/2015/02/img-subscribe-1.png" alt="" />
+            <img class="image" src="/security/wp-content/uploads/2015/02/img-subscribe-1.png" alt="" />
         </div>
         <div class="col-s-sm-12 col-sm-9 col-md-9 col-lg-9">Q
             <div class="visual-text">

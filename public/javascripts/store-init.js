@@ -15,7 +15,7 @@ $(document).ready(function(){
 				$('script[data-delete=delete]').remove();
 				var s = document.createElement("script");
 				s.type = "text/javascript";
-				s.src = "/javascripts/frontend-old.min.js";
+				s.src = "/javascripts/frontend.min.js";
 				$("body").append(s);
 				});
 });

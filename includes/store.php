@@ -15,7 +15,6 @@ $url = $_COOKIE['page'];
 if (isset($_COOKIE['page']) && ($url == '/store-sub-same' || $url == '/store-sub-new')){
     setcookie('page', '', 1);
     setcookie('page', '');
-    header("Location: //".$config['domain']."/store.html");
 }
 
 if (isset($_COOKIE['page'])){

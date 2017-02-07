@@ -14,7 +14,7 @@ require_once 'smarty.config.php';
 if (isset($_COOKIE['page'])){
     $url = $_COOKIE['page'];
     if ($url == '/store-sub-same' || $url == '/store-sub-new'){
-        setcookie('page', '', time() - 3600);
+        setcookie('page', '', 1);
         header("Location: //".$config['domain'].$url.".html");
     } elseif ($url != '/store'){
         header("Location: //".$config['domain'].$url.".html");

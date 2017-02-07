@@ -17,13 +17,13 @@ if (isset($_COOKIE['page'])){
         header("Location: //".$config['domain'].$url.".html");
     }
 } elseif (!isset($_COOKIE['page'])) {
-    setcookie('page', '', time()+365*24*60*60, '/', '.pumpic.com');
-    $urls = array(0 =>'/store', 1 => '/store-sub-same', 2 =>'/store-sub-new');
+    $urls = array(0 =>'/store', 1 => '/store-sub-new-1', 2 =>'/store-sub-new-hyp1');
     $clientsNumber = $obj ->getStoreClientsCount();
     $obj->incrementStoreClientsCount();
     $url = $clientsNumber % 3;
     $redirectUrl = $urls[$url];
-    setcookie('page', $redirectUrl, time()+365*24*60*60, '/', '.pumpic.com');
+//    setcookie('page', $redirectUrl, time()+365*24*60*60, '/', '.pumpic.com');
+    setcookie('page', $redirectUrl);
     if ($redirectUrl != '/store'){
         header("Location: //".$config['domain'].$redirectUrl.".html");
     }

@@ -288,21 +288,21 @@ class Order extends ManagerUser
     
     public function getProducts($namespace) 
     {
-        if ($namespace == 'second-same' || $namespace == 'second-new'){
+        if ($namespace == 'second-new-hyp-1' || $namespace == 'second-new-1'){
             $version = '';
             switch ($namespace){
-                case 'second-same': $version = 'v2'; break;
-                case 'second-new': $version = 'v3'; break;
+                case 'second-new-1': $version = 'v4'; break;
+                case 'second-new-hyp-1': $version = 'v5'; break;
             }
             $plans = $this->_billing->getSiteProductsForABTest(self::SITE_ID, 'second', $namespace, $version);
         } else {
             $plans = $this->_billing->getSiteProducts(self::SITE_ID, $namespace);
         }
-
         if(count($plans) > 0) {
             foreach($plans as $plan => $data) {
                 $period = $this->_numbers($plan);
                 if (strpos($plan, 'ios-icloud-double') === 0) {
+                    if($period == 7) $period = 0.7;
                     self::$_data['iosiCloudDouble'][$period] = array_merge($data, ['period' => $period]);
                 }
                 elseif (strpos($plan, 'ios-jailbreak-double') === 0) {
@@ -315,6 +315,7 @@ class Order extends ManagerUser
                     self::$_data['androidPremiumDouble'][$period] = array_merge($data, ['period' => $period]);
                 }
                 elseif (strpos($plan, 'ios-icloud') === 0) {
+                    if($period == 7) $period = 0.7;
                     self::$_data['iosiCloud'][$period] = array_merge($data, ['period' => $period]);
                 }
                 elseif (strpos($plan, 'ios-jailbreak') === 0) {

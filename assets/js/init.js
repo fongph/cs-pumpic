@@ -2545,6 +2545,18 @@ $(document).ready(function () {
                 $(this).closest('label')
                         .addClass('r_on')
                         .removeClass('r_off');
+
+                var sp_period = $(this).parent('label').find('span.sp').text();
+                $("._period").each(function () {
+                    $(this).text('/ month');
+                });
+
+                if (sp_period.indexOf('day') !== -1){
+                    $("._period").each(function () {
+                        $(this).text('/ day');
+                    })
+                }
+
             });
 
             if (typeof data.target != 'undefined') {

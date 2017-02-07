@@ -11,7 +11,9 @@ $obj = new includes\lib\users\Order;
 // smarty config
 require_once 'smarty.config.php';
 /* list order */
-$products = $obj ->getProducts('second-same');
+
+$products = $obj ->getProducts('second-new-1');
+
 
 /* form_order */
 $_request = (isset($_POST['price']) and !empty($_POST['price'])) ? $_POST['price']: false;

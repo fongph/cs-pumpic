@@ -24,7 +24,7 @@ if (isset($_COOKIE['page']) && !empty($_COOKIE['page'])){
         header("Location: //".$config['domain'].$url.".html");
     }
 
-} else {
+} elseif (!isset($_COOKIE['page']) || empty($_COOKIE['page'])) {
     $urls = array(0 =>'/store', 1 => '/store-sub-new-1', 2 =>'/store-sub-new-hyp1');
     $clientsNumber = $obj ->getStoreClientsCount();
     $obj->incrementStoreClientsCount();

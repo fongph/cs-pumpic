@@ -119,7 +119,7 @@ description="Pumpic offers high-quality cell phone tracking software for a good 
                                                             <span class="prod-head__device tablet">iPad</span>
                                                             <span class="prod-head__device smart">iPod Touch</span>
                                                         </p>
-                                                        <p class="prod-head__price"><span>starting from </span><b>${if (isset($subSame) && $subSame === true)}8.32{elseif (isset($subNew) && $subNew === true)}6.24{else}6.99{/if}/</b><span> month</span></p>
+                                                        <p class="prod-head__price"><span>starting from </span><b>${if (isset($subSame) && $subSame === true)}6.66{elseif (isset($subNew) && $subNew === true)}12.49{else}6.99{/if}/</b><span> month</span></p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -185,7 +185,7 @@ description="Pumpic offers high-quality cell phone tracking software for a good 
                                                         <div class="wr_pack_premium wr_icloud _single-pack-icloud"></div>
                                                         <div class="wr_pack_double_premium wr_icloud-double _double-pack-icloud"></div>
                                                         <div class="wr_price_big">
-                                                            <span></span><div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr icloud-price-per-month" >{$defaultIosiCloudPrice}</div></div><span>/ month</span>
+                                                            <span></span><div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr icloud-price-per-month" >{$defaultIosiCloudPrice}</div></div><span class="_period">/ month</span>
                                                         </div>
                                                     </div>
                                                         <div class="list_price icloud-list_price">
@@ -201,11 +201,13 @@ description="Pumpic offers high-quality cell phone tracking software for a good 
                                                             <input id='product_price_icloud' type='hidden' name='price[productID]' value='{if isset($defaultIosiCloud)}{$defaultIosiCloud}{else}0{/if}' class="product_price"/>
                                                             <ul>
                                                                 {foreach from=$getProducts.iosiCloud key=key item=item}
+
+                                                                    {if $item.period == 0.7}{$item.period = 7}{/if}
                                                                     <li>
                                                                         <label class="label_radio hover_label_radio {if $item.period == '12'}r_on{else}r_off{/if}">
                                                                             <input class="data-price" data-target=".icloud-price-per-month" data-cur="usd" data-price-usd="{$item.price}" data-offer-price-usd="{$getProducts.iosiCloudDouble[$key].price}" data-period="{$item.period}" data-product="{$item.id}" data-offer-product="{$getProducts.iosiCloudDouble[$key].id}" data-group="icloud" name="optionsRadios" id="optionsRadios{$item.id}1" value="{$item.id}" type="radio"{if $item.period == '12'} checked="checked"{/if} />
                                                                             <span class="sp">
-                                                                            <strong>{$item.period}</strong> {if $item.period == 1}month{else}months{/if}
+                                                                            <strong>{$item.period}</strong> {if $item.period == 7}days{elseif $item.period == 1}month{else}months{/if}
                                                                         </span>
 
                                                                             <div class="box-small-package">
@@ -235,7 +237,7 @@ description="Pumpic offers high-quality cell phone tracking software for a good 
                                                             <button class="btn btn-default ga-action-click"
                                                                     ga-action ="click"
                                                                     ga-category="{if $smarty.server.REQUEST_URI !== '/store.html'}Split_test{else}store{/if}"
-                                                                    ga-label="{if $smarty.server.REQUEST_URI == '/store-sub-same.html'}buy_sub_same1{elseif $smarty.server.REQUEST_URI == '/store-sub-new.html'}buy_sub_new1{else}buy icloud{/if}"
+                                                                    ga-label="{if $smarty.server.REQUEST_URI == '/store-sub-new-1.html'}buy_sub_new-1{elseif $smarty.server.REQUEST_URI == '/store-sub-new-hyp1.html'}buy_sub_new-hyp1{else}buy icloud{/if}"
                                                                     value="true" type="submit" name="price[submit]">Buy</button>
                                                         </form>
                                                         {*<div class="show_premium_features _icloud-f"><div class="show-f _icloud-f">Show features <i class="fa fa-chevron-down"></i></div><div class="hide-f _icloud-f" style="display: none;">Hide features  <i class="fa fa-chevron-up"></i></div></div>*}
@@ -316,7 +318,7 @@ description="Pumpic offers high-quality cell phone tracking software for a good 
                                                             <div class="wr_pack_premium wr_icloud _single-pack-icloud"></div>
                                                             <div class="wr_pack_double_premium wr_icloud-double _double-pack-icloud"></div>
                                                             <div class="wr_price_big">
-                                                                <span></span><div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr icloud-price-per-month">{$defaultiCloudProduct}</div></div><span>/ month</span>
+                                                                <span></span><div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr icloud-price-per-month">{$defaultiCloudProduct}</div></div><span class="_period">/ month</span>
                                                             </div>
                                                         </div>
                                                         <div class="list_price icloud-list_price" id="foot_h4">
@@ -331,11 +333,12 @@ description="Pumpic offers high-quality cell phone tracking software for a good 
                                                                 <input id='product_price_premium' type='hidden' name='price[productID]' value='{if isset($defaultIosiCloud)}{$defaultIosiCloud}{else}0{/if}' class="product_price" />
                                                                 <ul>
                                                                     {foreach from=$getProducts.iosiCloud key=key item=item}
+                                                                        {if $item.period == 0.7}{$item.period = 7}{/if}
                                                                         <li>
                                                                             <label class="label_radio hover_label_radio {if $item.period == '12'}r_on{else}r_off{/if}">
                                                                                 <input class="data-price" data-target=".icloud-price-per-month" data-cur="usd" data-price-usd="{$item.price}" data-offer-price-usd="{$getProducts.iosiCloudDouble[$key].price}" data-period="{$item.period}" data-product="{$item.id}" data-offer-product="{$getProducts.iosiCloudDouble[$key].id}" data-group="icloud"  name="optionsRadios" id="optionsRadios{$item.id}2" value="{$item.id}" type="radio"{if $item.period == '12'} checked="checked"{/if} />
                                                                                 <span class="sp">
-                                                                            <strong>{$item.period}</strong> {if $item.period == 1}month{else}months{/if}
+                                                                            <strong>{$item.period}</strong> {if $item.period == 7}days{elseif $item.period == 1}month{else}months{/if}
                                                                         </span>
 
                                                                                 <div class="box-small-package">
@@ -365,7 +368,7 @@ description="Pumpic offers high-quality cell phone tracking software for a good 
                                                                 <button class="btn btn-default ga-action-click"
                                                                         ga-action ="click"
                                                                         ga-category="{if $smarty.server.REQUEST_URI !== '/store.html'}Split_test{else}store{/if}"
-                                                                        ga-label="{if $smarty.server.REQUEST_URI == '/store-sub-same.html'}buy_sub_same2{elseif $smarty.server.REQUEST_URI == '/store-sub-new.html'}buy_sub_new2{else}buy icloud{/if}"
+                                                                        ga-label="{if $smarty.server.REQUEST_URI == '/store-sub-new-1.html'}buy_sub_new-1{elseif $smarty.server.REQUEST_URI == '/store-sub-new-hyp1.html'}buy_sub_new-hyp1{else}buy icloud{/if}"
                                                                         value="true" type="submit" name="price[submit]">Buy</button>
                                                             </form>
                                                             {*<div class="space_line">&nbsp;</div>*}

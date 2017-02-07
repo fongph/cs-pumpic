@@ -368,7 +368,7 @@ description="Pumpic offers high-quality cell phone tracking software for a good 
                                                                 <button class="btn btn-default ga-action-click"
                                                                         ga-action ="click"
                                                                         ga-category="{if $smarty.server.REQUEST_URI !== '/store.html'}Split_test{else}store{/if}"
-                                                                        ga-label="{if $smarty.server.REQUEST_URI == '/store-sub-new-1.html'}buy_sub_new-1{elseif $smarty.server.REQUEST_URI == '/store-sub-new-hyp1.html'}buy_sub_new-hyp1{else}buy icloud{/if}"
+                                                                        ga-label="{if $smarty.server.REQUEST_URI == '/store-sub-new-1.html'}buy_sub_new-2{elseif $smarty.server.REQUEST_URI == '/store-sub-new-hyp1.html'}buy_sub_new-hyp2{else}buy icloud{/if}"
                                                                         value="true" type="submit" name="price[submit]">Buy</button>
                                                             </form>
                                                             {*<div class="space_line">&nbsp;</div>*}

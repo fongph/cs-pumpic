@@ -28,6 +28,9 @@ define('DB_PASSWORD', $config['db_blog']['password']);
 /** MySQL hostname */
 define('DB_HOST', $config['db_blog']['host']);
 
+/** Enable WP-cashing plugin */
+define('WP_CACHE', true);
+
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');
 

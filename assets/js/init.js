@@ -1906,9 +1906,9 @@ $(document).ready(function () {
     /* ------- form-free-trial-registration ------ */
     if ($('form[name="free_trial_registration"]').length) {
         $('form[name="free_trial_registration"]').validate({
-            onfocusout: false,
-            onkeyup: false,
-            onclick: true,
+            // onfocusout: false,
+            // onkeyup: false,
+            // onclick: true,
             onsubmit: true,
             focusInvalid: false,
             focusCleanup: false,

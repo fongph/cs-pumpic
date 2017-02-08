@@ -24,6 +24,10 @@ function dispatch($urlParams, $config){
     if(preg_match('/\/\?cat=(.*)/is', $_SERVER['REQUEST_URI'])) {
         header301( $config['domain_http'] );
     }
+    // 301 redirect
+    if(preg_match('/\/store-sub-same.html/is', $_SERVER['REQUEST_URI']) || preg_match('/\/store-sub-new.html/is', $_SERVER['REQUEST_URI'])) {
+        header301( '/store.html' );
+    }
 
     // 404 redirect
     if(preg_match('/\/compatibility\/\?page=(.*)/is', $_SERVER['REQUEST_URI']) ||  preg_match('/\/compatibility\/\?(.*)/is', $_SERVER['REQUEST_URI'])) {

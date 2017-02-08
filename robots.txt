@@ -13,8 +13,8 @@ Disallow: /direct-notice.html
 Disallow: /wp-content
 Disallow: /store-mobile.html
 Disallow: /store-desktop.html
-Disallow: /store-sub-new.html
-Disallow: /store-sub-same.html
+Disallow: /store-sub-new-1.html
+Disallow: /store-sub-new-hyp1.html
 Disallow: /store-android.php
 Disallow: /wp-admin
 Disallow: /wp-includes

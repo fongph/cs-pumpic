@@ -34,23 +34,23 @@
 							<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 								<ul class="nav navbar-nav">
 									<li>
-										<a href="<?php echo getStaticUrl();?>/">Home</a>
+										<a href="/">Home</a>
 									</li>
 									<li>
-										<a href="<?php echo getStaticUrl();?>/all-features.html">Features</a>
+										<a href="/all-features.html">Features</a>
 									</li> 
 									<li>
-										<a href="<?php echo getStaticUrl();?>/store.html">Store</a>
+										<a href="/store.html">Store</a>
 									</li>
                                                                         <li>
-										<a href="<?php echo getStaticUrl();?>/compatibility/">Compatibility</a>
+										<a href="/compatibility/">Compatibility</a>
 									</li>
 									
 									<?php /*<li>
-										<a href="<?php echo getStaticUrl();?>/how-to.html">How to</a>
+										<a href="/how-to.html">How to</a>
 									</li>  */ ?>
 									<li>
-										<a href="<?php echo getStaticUrl();?>/faq.html">Help & Contacts</a>
+										<a href="/faq.html">Help & Contacts</a>
 									</li>
                                                                         
                                                                         <?php /*

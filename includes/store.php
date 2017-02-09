@@ -11,12 +11,20 @@ $obj = new includes\lib\users\Order;
 // smarty config
 require_once 'smarty.config.php';
 
-if (isset($_COOKIE['page'])){
-    $url = $_COOKIE['page'];
-    if ($url != '/store'){
+$url = $_COOKIE['page'];
+
+if (isset($_COOKIE['page']) && $url == '/store-sub-same' || $url == '/store-sub-new'){
+    unset($_COOKIE['page']);
+    setcookie('page', null, -1, '/');
+}
+
+if (isset($_COOKIE['page']) && !empty($_COOKIE['page'])){
+
+  if ($url != '/store'){
         header("Location: //".$config['domain'].$url.".html");
     }
-} elseif (!isset($_COOKIE['page'])) {
+
+} elseif (!isset($_COOKIE['page']) || empty($_COOKIE['page'])) {
     $urls = array(0 =>'/store', 1 => '/store-sub-new-1', 2 =>'/store-sub-new-hyp1');
     $clientsNumber = $obj ->getStoreClientsCount();
     $obj->incrementStoreClientsCount();

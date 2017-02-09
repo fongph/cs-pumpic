@@ -97,7 +97,7 @@ else {
 
 ?>
 <script type="text/javascript">
-var disqus_url = '<?php echo get_permalink(); ?>';
+var disqus_url = '<?php echo $config['schema'].$config['domain'].get_permalink(); ?>';
 var disqus_identifier = '<?php echo dsq_identifier_for_post($post); ?>';
 var disqus_container_id = 'disqus_thread';
 var disqus_shortname = '<?php echo strtolower(get_option('disqus_forum_url')); ?>';

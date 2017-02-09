@@ -14,26 +14,25 @@ require_once 'smarty.config.php';
 
 /* list order */
 $tos = system\Legacy::getInstance();
-
-if($_SERVER['REQUEST_URI'] == '/tos.html') {
+if (strpos($_SERVER['REQUEST_URI'], '/tos.html') !== false ) {
     $text = $tos->getLegal('tos', 'active');
     $smarty->assign('tos', $text[0]);
 // init output params
     $smarty->display($b_dir.'/templates/pages/tos.tpl');
 
-} elseif ($_SERVER['REQUEST_URI'] == '/tos-preview.html') {
+} elseif (strpos($_SERVER['REQUEST_URI'], 'tos-preview.html') !== false) {
 
     $text = $tos->getLegal('tos', 'preview');
     $smarty->assign('tos', $text[0]);
 // init output params
     $smarty->display($b_dir.'/templates/pages/tos.tpl');
-} elseif ($_SERVER['REQUEST_URI'] == '/policy.html') {
+} elseif (strpos($_SERVER['REQUEST_URI'], '/policy.html') !== false) {
 
     $text = $tos->getLegal('policy', 'active');
     $smarty->assign('policy', $text[0]);
 // init output params
     $smarty->display($b_dir.'/templates/pages/policy.tpl');
-} elseif ($_SERVER['REQUEST_URI'] == '/policy-preview.html') {
+} elseif (strpos($_SERVER['REQUEST_URI'], '/policy-preview.html') !== false) {
 
     $text = $tos->getLegal('policy', 'preview');
     $smarty->assign('policy', $text[0]);
@@ -41,19 +40,19 @@ if($_SERVER['REQUEST_URI'] == '/tos.html') {
 
 // init output params
     $smarty->display($b_dir.'/templates/pages/policy.tpl');
-}elseif ($_SERVER['REQUEST_URI'] == '/direct-notice.html') {
+} elseif (strpos($_SERVER['REQUEST_URI'], '/direct-notice.html') !== false) {
 
     $text = $tos->getLegal('direct-notice', 'active');
     $smarty->assign('directNotice', $text[0]);
 // init output params
     $smarty->display($b_dir.'/templates/pages/direct-notice.tpl');
-} elseif ($_SERVER['REQUEST_URI'] == '/direct-notice-preview.html') {
+} elseif (strpos($_SERVER['REQUEST_URI'], '/direct-notice-preview.html') !==  false) {
 
     $text = $tos->getLegal('direct-notice', 'preview');
     $smarty->assign('directNotice', $text[0]);
 // init output params
     $smarty->display($b_dir.'/templates/pages/direct-notice.tpl');
-} elseif ($_SERVER['REQUEST_URI'] == '/tos-preview.txt') {
+} elseif (strpos($_SERVER['REQUEST_URI'], '/tos-preview.txt') !== false) {
 
     if(file_exists($root_path.'/tos-preview.txt')) {
         $text = $tos->getLegal('tos', 'preview');
@@ -67,7 +66,7 @@ if($_SERVER['REQUEST_URI'] == '/tos.html') {
 
         echo strip_tags($text[0]) ;
     } else throw new PageNotFoundException;
-} elseif ($_SERVER['REQUEST_URI'] == '/tos.txt') {
+} elseif (strpos($_SERVER['REQUEST_URI'], '/tos.txt') !== false) {
 
     if(file_exists($root_path.'/tos.txt')) {
         $text = $tos->getLegal('tos', 'active');

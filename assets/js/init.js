@@ -1906,9 +1906,9 @@ $(document).ready(function () {
     /* ------- form-free-trial-registration ------ */
     if ($('form[name="free_trial_registration"]').length) {
         $('form[name="free_trial_registration"]').validate({
-            onfocusout: false,
-            onkeyup: false,
-            onclick: true,
+            // onfocusout: false,
+            // onkeyup: false,
+            // onclick: true,
             onsubmit: true,
             focusInvalid: false,
             focusCleanup: false,
@@ -2585,12 +2585,12 @@ $(document).ready(function () {
             $checkboxes.each(function () {
                 var $form = $(this).closest('form');
                 var radioWith12 = $form.find('input[type=radio][data-period=24]');
-                    radioWith12.attr('checked', true)
+                    //radioWith12.attr('checked', true)
 
                 $(radioWith12).closest('form').find('input[type=radio]:checked').each(function () {
                     updateRadio(this);
                 });
-
+ 
                 if (offerEnabled) {
                     if (!$(this).is(":checked")) {
                         $(this).prop('checked', offerEnabled);
@@ -2630,14 +2630,12 @@ $(document).ready(function () {
                 updateRadio(this);
             });
         };
-        if ($('input[data-period=24]')){
-            $('input[data-period=24]').each(function () {
-                $(this).attr('checked', 'checked');
-            });
-
-        }
-        $('.buy-form-with-offer input[type=radio]:checked').each(function () {
-
+        // if ($('input[data-period=24]')){
+        //     $('input[data-period=24]').each(function () {
+        //         $(this).attr('checked', 'checked');
+        //     });
+        // }
+        $('.buy-form-with-offer input[type=radio]:last').each(function () {
             updateRadio(this);
         });
 

@@ -2636,8 +2636,7 @@ $(document).ready(function () {
             });
 
         }
-        $('.buy-form-with-offer input[type=radio]:checked').each(function () {
-
+        $('.buy-form-with-offer input[type=radio]:last').each(function () {
             updateRadio(this);
         });
 

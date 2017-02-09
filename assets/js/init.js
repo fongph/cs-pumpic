@@ -2585,12 +2585,12 @@ $(document).ready(function () {
             $checkboxes.each(function () {
                 var $form = $(this).closest('form');
                 var radioWith12 = $form.find('input[type=radio][data-period=24]');
-                    radioWith12.attr('checked', true)
+                    //radioWith12.attr('checked', true)
 
                 $(radioWith12).closest('form').find('input[type=radio]:checked').each(function () {
                     updateRadio(this);
                 });
-
+ 
                 if (offerEnabled) {
                     if (!$(this).is(":checked")) {
                         $(this).prop('checked', offerEnabled);
@@ -2630,12 +2630,11 @@ $(document).ready(function () {
                 updateRadio(this);
             });
         };
-        if ($('input[data-period=24]')){
-            $('input[data-period=24]').each(function () {
-                $(this).attr('checked', 'checked');
-            });
-
-        }
+        // if ($('input[data-period=24]')){
+        //     $('input[data-period=24]').each(function () {
+        //         $(this).attr('checked', 'checked');
+        //     });
+        // }
         $('.buy-form-with-offer input[type=radio]:last').each(function () {
             updateRadio(this);
         });

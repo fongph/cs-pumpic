@@ -81,7 +81,7 @@
                                                                         </li>
 
                                                                         <li>
-                                                                            <a href="<?php echo $config['schema']; ?>demo.pumpic.com/setDevice/126?redirect_url=cp/calls" target="_blank" class="btn btn-sm btn-orange btn-success hidden-lg cp-login{*btn btn-sm btn-orange btn-success hidden-lg cp-login*}"> Demo</a>
+                                                                            <a href="http://demo.pumpic.com/setDevice/126?redirect_url=cp/calls" target="_blank" class="btn btn-sm btn-orange btn-success hidden-lg cp-login"> Demo</a>
                                                                         </li>
 
                                                                         <?php if(di()->get('freeTrialLinks')->isAvailable()): ?>

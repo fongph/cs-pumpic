@@ -19,8 +19,8 @@
                         <span class="img_thumb"><img src="images/pumpic-icon-thumb.png" height="175{*206*}" width="147{*172*}" alt="pumpic icon on mobile"></span>
                         <div class="caption how-to-step">
                             <h3>Set up</h3>
-                            <p>Pumpic app installation process will take you no longer than <b>5 minutes</b>. Follow the guidelines in the subscription email to complete the setup.
-                                <span class="br"></span>Note that <b>physical access</b> to the <b>target device is required</b> for <b>Android</b> and <b>iOS monitoring</b>; at the same time, you don’t need it to launch <a class="a-default" href='/icloud-iphone-without-jailbreak-monitoring.html'>iCloud monitoring</a>.
+                            <p>Pumpic app setup process will take you no longer than <b>5 minutes</b>. Follow the guidelines in the email to complete the setup.
+                                <span class="br"></span>Note that <b>physical access  to the Android</b> target device is required before installation. It <b>may be</b> as well <b>needed</b> to launch iOS solution (<b><a class="a-default" href='/icloud-iphone-without-jailbreak-monitoring.html'>iCloud monitoring</a></b>) (check/adjust settings, turn Backup on).
                             </p>
                         </div>
                     </div>

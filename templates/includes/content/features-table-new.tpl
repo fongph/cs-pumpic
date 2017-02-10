@@ -40,15 +40,6 @@
                                         <span class="ft-table__os-version">{$ver_android_bot} - {$ver_android_up}</span>
                                         <div class="ft-table__descr">Some features require root</div>
                                     </li>
-                                    <li class="ft-table__item">
-                                        <div class="os-label label-gray">
-                                            <i class="fa fa-unlock-alt"></i>IOS
-                                        </div>
-                                        &mdash;
-                                        <span class="ft-table__os"><i class="fa fa-apple fa-lg"></i> IOS </span>
-                                        <span class="ft-table__os-version">{$ver_ios_bot} - {$ver_jailbreak_up}</span>
-                                        <div class="ft-table__descr">Jailbreak is required</div>
-                                    </li>
                                 </ul>
                             </div>
 
@@ -63,9 +54,6 @@
                                             <div class="os-label label-green large">
                                                 <i class="fa fa-android"></i>
                                             </div>
-                                            <div class="os-label label-gray">
-                                                <i class="fa fa-unlock-alt"></i>IOS
-                                            </div>
                                         </div>
                                     </li>
                                     <li><i class="i-features-cell-history"></i> {if !in_array('call-monitoring-software', $_notVisible)}<span onclick="window.location='/call-monitoring-software.html'">Monitor Calls History{else}Monitor Calls History{/if}
@@ -76,9 +64,6 @@
                                             <div class="os-label label-green large">
                                                 <i class="fa fa-android"></i>
                                             </div>
-                                            <div class="os-label label-gray">
-                                                <i class="fa fa-unlock-alt"></i>IOS
-                                            </div>
                                         </div>
                                     </li>
                                     <li><i class="i-features-calendar"></i> View Calendar
@@ -88,9 +73,6 @@
                                             </div>
                                             <div class="os-label label-green large">
                                                 <i class="fa fa-android"></i>
-                                            </div>
-                                            <div class="os-label label-gray">
-                                                <i class="fa fa-unlock-alt"></i>IOS
                                             </div>
                                         </div>
 
@@ -103,18 +85,12 @@
                                             <div class="os-label label-green large">
                                                 <i class="fa fa-android"></i>
                                             </div>
-                                            <div class="os-label label-gray">
-                                                <i class="fa fa-unlock-alt"></i>IOS
-                                            </div>
                                         </div>
                                     </li>
                                     <li><i class="i-features-email"></i> <span onclick="window.location='/email-monitoring-software.html'">View Emails</span>
                                         <div class="os-label__wrapper">
                                             <div class="os-label label-green">
                                                 <i class="fa fa-android"></i>root
-                                            </div>
-                                            <div class="os-label label-gray">
-                                                <i class="fa fa-unlock-alt"></i>IOS
                                             </div>
                                         </div>
                                     </li>
@@ -126,18 +102,12 @@
                                             <div class="os-label label-green large">
                                                 <i class="fa fa-android"></i>
                                             </div>
-                                            <div class="os-label label-gray">
-                                                <i class="fa fa-unlock-alt"></i>IOS
-                                            </div>
                                         </div>
                                     </li>
                                     <li><i class="i-features-videocam"></i> View Videos
                                         <div class="os-label__wrapper">
                                             <div class="os-label label-green large">
                                                 <i class="fa fa-android"></i>
-                                            </div>
-                                            <div class="os-label label-gray">
-                                                <i class="fa fa-unlock-alt"></i>IOS
                                             </div>
                                         </div>
                                     </li>
@@ -148,9 +118,6 @@
                                             </div>
                                             <div class="os-label label-green large">
                                                 <i class="fa fa-android"></i>
-                                            </div>
-                                            <div class="os-label label-gray">
-                                                <i class="fa fa-unlock-alt"></i>IOS
                                             </div>
                                         </div>
                                     </li>
@@ -168,18 +135,12 @@
                                             <div class="os-label label-green large">
                                                 <i class="fa fa-android"></i>
                                             </div>
-                                            <div class="os-label label-gray">
-                                                <i class="fa fa-unlock-alt"></i>IOS
-                                            </div>
                                         </div>
                                     </li>
                                     <li><i class="i-features-app"></i> <span onclick="window.location='/block-apps.html'">Control Applications</span>
                                         <div class="os-label__wrapper">
                                             <div class="os-label label-green large">
                                                 <i class="fa fa-android"></i>
-                                            </div>
-                                            <div class="os-label label-gray">
-                                                <i class="fa fa-unlock-alt"></i>IOS
                                             </div>
                                         </div>
                                     </li>
@@ -191,9 +152,6 @@
                                             <div class="os-label label-green large">
                                                 <i class="fa fa-android"></i>
                                             </div>
-                                            <div class="os-label label-gray">
-                                                <i class="fa fa-unlock-alt"></i>IOS
-                                            </div>
                                         </div>
                                     </li>
                                     <li><i class="i-features-view-notes"></i> View Notes
@@ -201,18 +159,12 @@
                                             <div class="os-label label-black">
                                                 <i class="fa fa-apple"></i>IOS
                                             </div>
-                                            <div class="os-label label-gray">
-                                                <i class="fa fa-unlock-alt"></i>IOS
-                                            </div>
                                         </div>
                                     </li>
                                     <li><i class="i-features-block-device"></i> Block Device
                                         <div class="os-label__wrapper">
                                             <div class="os-label label-green large">
                                                 <i class="fa fa-android"></i>
-                                            </div>
-                                            <div class="os-label label-gray">
-                                                <i class="fa fa-unlock-alt"></i>IOS
                                             </div>
                                         </div>
                                     </li>
@@ -224,18 +176,12 @@
                                             <div class="os-label label-green large">
                                                 <i class="fa fa-android"></i>
                                             </div>
-                                            <div class="os-label label-gray">
-                                                <i class="fa fa-unlock-alt"></i>IOS
-                                            </div>
                                         </div>
                                     </li>
                                     <li><i class="i-features-geo-fences"></i> {if !in_array('geo-fences', $_notVisible)}<span onclick="window.location='/gps-and-geofencing.html'">Geo-fences</span>{else}Geo-fences{/if}
                                         <div class="os-label__wrapper">
                                             <div class="os-label label-green large">
                                                 <i class="fa fa-android"></i>
-                                            </div>
-                                            <div class="os-label label-gray">
-                                                <i class="fa fa-unlock-alt"></i>IOS
                                             </div>
                                         </div>
                                     </li>
@@ -244,9 +190,7 @@
                                             <div class="os-label label-green large">
                                                 <i class="fa fa-android"></i>
                                             </div>
-                                            <div class="os-label label-gray">
-                                                <i class="fa fa-unlock-alt"></i>IOS
-                                            </div>
+
                                         </div>
                                     </li>
                                     {*<li class="hidden-mobile">&nbsp;</li>*}
@@ -263,9 +207,6 @@
                                             <div class="os-label label-green">
                                                 <i class="fa fa-android"></i>root
                                             </div>
-                                            <div class="os-label label-gray">
-                                                <i class="fa fa-unlock-alt"></i>IOS
-                                            </div>
                                         </div>
                                     </li>
                                     <li><i class="i-features-monitor-skype"></i> <span onclick="window.location='/monitor-skype.html'">Monitor Skype</span>
@@ -276,18 +217,12 @@
                                             <div class="os-label label-green">
                                                 <i class="fa fa-android"></i>root
                                             </div>
-                                            <div class="os-label label-gray">
-                                                <i class="fa fa-unlock-alt"></i>IOS
-                                            </div>
                                         </div>
                                     </li>
                                     <li><i class="i-features-social"></i> Monitor Facebook IM
                                         <div class="os-label__wrapper">
                                             <div class="os-label label-green">
                                                 <i class="fa fa-android"></i>root
-                                            </div>
-                                            <div class="os-label label-gray">
-                                                <i class="fa fa-unlock-alt"></i>IOS
                                             </div>
                                         </div>
                                     </li>
@@ -296,18 +231,12 @@
                                             <div class="os-label label-green">
                                                 <i class="fa fa-android"></i>root
                                             </div>
-                                            <div class="os-label label-gray">
-                                                <i class="fa fa-unlock-alt"></i>IOS
-                                            </div>
                                         </div>
                                     </li>
                                     <li><i class="i-features-monitor-instagram"></i> <span onclick="window.location='/parental-control-for-instagram.html'">Monitor Instagram</span>
                                         <div class="os-label__wrapper">
                                             <div class="os-label label-green">
                                                 <i class="fa fa-android"></i>root
-                                            </div>
-                                            <div class="os-label label-gray">
-                                                <i class="fa fa-unlock-alt"></i>IOS
                                             </div>
                                         </div>
                                     </li>
@@ -320,9 +249,6 @@
                                             <div class="os-label label-green">
                                                 <i class="fa fa-android"></i>root
                                             </div>
-                                            <div class="os-label label-gray">
-                                                <i class="fa fa-unlock-alt"></i>IOS
-                                            </div>
                                         </div>
                                     </li>
                                     <li><i class="i-features-monitor-snapchat"></i><span onclick="window.location='/monitor-snapchat.html'">Monitor Snapchat</span>
@@ -330,18 +256,12 @@
                                             <div class="os-label label-green">
                                                 <i class="fa fa-android"></i>root
                                             </div>
-                                            <div class="os-label label-gray">
-                                                <i class="fa fa-unlock-alt"></i>IOS
-                                            </div>
                                         </div>
                                     </li>
                                     <li><i class="i-features-sms-commands"></i> SMS Commands
                                         <div class="os-label__wrapper">
                                             <div class="os-label label-green large">
                                                 <i class="fa fa-android"></i>
-                                            </div>
-                                            <div class="os-label label-gray">
-                                                <i class="fa fa-unlock-alt"></i>IOS
                                             </div>
                                         </div>
                                     </li>

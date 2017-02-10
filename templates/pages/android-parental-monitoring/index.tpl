@@ -1,4 +1,4 @@
-{include file='../includes/main/main-header.tpl'
+{include file='../../includes/main/main-header.tpl'
 
 title="Ultimate Android Parental Control App | Pumpic Monitoring Software"
     description="Install Pumpic and forget all your worries. Our monitoring app is #1 choice to keep your child safe - over 20 features for reliable Android parental control."
@@ -6,17 +6,17 @@ title="Ultimate Android Parental Control App | Pumpic Monitoring Software"
     
 <body>
     <!-- BLOCK GTM -->
-    {include file='../includes/main/main-after-body.tpl'}
+    {include file='../../includes/main/main-after-body.tpl'}
     <!-- END BLOCK GTM -->
     
     <!-- FLY BLOCKS -->
-    {include file='../includes/content/fly/fly_blocks.tpl'}
+    {include file='../../includes/content/fly/fly_blocks.tpl'}
     <!-- END FLY BLOCKS-->
     
     <div class="wrapper android_parental_monitoring">
 	
 	<!-- TOP MENU -->
-	{include file='../includes/main/main-top-menu.tpl'
+	{include file='../../includes/main/main-top-menu.tpl'
             cache_id = "includes_main_main-top-menu"
             nocache
         }
@@ -28,12 +28,12 @@ title="Ultimate Android Parental Control App | Pumpic Monitoring Software"
             Переменные:
                 style (text): стиль блока Phone (blue|black). * - blue 
         *}
-        {include file='../includes/content/phone/block-phone.tpl'
+        {include file='../../includes/content/phone/block-phone.tpl'
                  style="blue"   
         }
         
     <!-- CONTENT -->
-         {include file='../includes/content/info/info-promo.tpl'
+         {include file='../../includes/content/info/info-promo.tpl'
             imgUrl = "header_banners/header-android-parental-monitoring.png"
             imgAlt = "android parental monitoring"
             imgAlign = "right"
@@ -53,11 +53,11 @@ title="Ultimate Android Parental Control App | Pumpic Monitoring Software"
           {* ?rel=0&wmode=transparent&fs=0&autoplay=1&modestbranding=1&autohide=1 *}
          {*listText = "control cell phone usage|follow online activity|track routes and location"*}    
         
-        {include file='../includes/content/plans.tpl'}
+        {include file='../../includes/content/plans.tpl'}
 
         {* Template: FLY BUTTONS
         *}
-        {include file='../includes/content/fly/box-buttons.tpl'
+        {include file='../../includes/content/fly/box-buttons.tpl'
             buttonBuyNow = 'yes'
             buttonViewDemo = 'no'
             buttonFreeTrial = 'yes'
@@ -135,7 +135,7 @@ title="Ultimate Android Parental Control App | Pumpic Monitoring Software"
             // Подпись к изображению
             captionText (text): подпись к изображению
         *}
-        {*include file='../includes/content/block/image.tpl'
+        {*include file='../../includes/content/block/image.tpl'
                 blockAlign = 'center'
 
                 imgUrl = 'parental_control/bg_famaly_mobile.png'
@@ -218,7 +218,7 @@ title="Ultimate Android Parental Control App | Pumpic Monitoring Software"
         </div>
 </div>   
                                         
-{include file='../includes/content/features-table-new.tpl'
+{include file='../../includes/content/features-table-new.tpl'
         title = "Over 24 Monitoring Features to Protect Your Kids"
         description = "Mobile technologies have introduced new opportunities to our children. It is rather hard to imagine the entire range of functions a single smartphone can fulfill. That’s why when it comes to features that an Android monitoring software should include, it is crucial to consider as many as possible. The list below reflects Pumpic monitoring abilities and particular mobile phone functions you will be able to cover by using the app. They will help you follow each and every aspect of your kids’ lives and all of their activities remotely."
         blockBg="light"
@@ -313,10 +313,10 @@ title="Ultimate Android Parental Control App | Pumpic Monitoring Software"
     </div>
 </div>
 
-        {include file='../includes/content/banners/index.tpl'}
+        {include file='../../includes/content/banners/index.tpl'}
 
-        {*include file='../includes/content/banner-promo.tpl'*}
-        {*{include file='../includes/content/banners/banner-promo-trial.tpl'}*}
+        {*include file='../../includes/content/banner-promo.tpl'*}
+        {*{include file='../../includes/content/banners/banner-promo-trial.tpl'}*}
         
         <!-- END CONTENT -->    
            
@@ -324,7 +324,7 @@ title="Ultimate Android Parental Control App | Pumpic Monitoring Software"
         {*
             Template: RECOMMENDED
         *}    
-        {include file='../includes/main/main-recommended.tpl'}
+        {include file='../../includes/main/main-recommended.tpl'}
         
         <!-- FOOTER -->
         {*
@@ -332,14 +332,14 @@ title="Ultimate Android Parental Control App | Pumpic Monitoring Software"
             Переменные:
                 our_products (text): Включить выключить блок OUR PRODUCTS (no|yes). * - yes 
         *}
-        {include file='../includes/main/main-quick-link.tpl'
+        {include file='../../includes/main/main-quick-link.tpl'
         blockBg="light"
         }
 
-        {include file='../includes/main/main-footer.tpl'}
+        {include file='../../includes/main/main-footer.tpl'}
                 
     </div>
       
-    {include file='../includes/main/main-analytics-footer.tpl'}
+    {include file='../../includes/main/main-analytics-footer.tpl'}
 </body>
 </html>

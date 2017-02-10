@@ -17,11 +17,20 @@ if (isset($_COOKIE['page']) && $url == '/store-sub-same' || $url == '/store-sub-
     unset($_COOKIE['page']);
     setcookie('page', null, -1, '/');
 }
+//var_dump($_SERVER['REQUEST_URI']);
+
+function preserve_qs() {
+    $queryString = str_replace ('/store.html', '', $_SERVER['REQUEST_URI']);
+    if (empty($queryString) && strpos($queryString, "?") === false) {
+        return "";
+    }
+    return $queryString;
+}
 
 if (isset($_COOKIE['page']) && !empty($_COOKIE['page'])){
 
   if ($url != '/store'){
-        header("Location: //".$config['domain'].$url.".html");
+        header("Location: //".$config['domain'].$url.".html" .  preserve_qs());
     }
 
 } elseif (!isset($_COOKIE['page']) || empty($_COOKIE['page'])) {
@@ -33,7 +42,7 @@ if (isset($_COOKIE['page']) && !empty($_COOKIE['page'])){
 //    setcookie('page', $redirectUrl, time()+365*24*60*60, '/', '.pumpic.com');
     setcookie('page', $redirectUrl);
     if ($redirectUrl != '/store'){
-        header("Location: //".$config['domain'].$redirectUrl.".html");
+        header("Location: //".$config['domain'].$redirectUrl.".html" .  preserve_qs());
     }
 
 }

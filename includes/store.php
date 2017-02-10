@@ -13,7 +13,7 @@ require_once 'smarty.config.php';
 
 $url = $_COOKIE['page'];
 
-if (isset($_COOKIE['page']) && $url == '/store-sub-same' || $url == '/store-sub-new'){
+if (isset($_COOKIE['page']) && $url == '/store-sub-same' || $url == '/store-sub-new' || $url == '/store-sub-new-hyp1'){
     unset($_COOKIE['page']);
     setcookie('page', null, -1, '/');
 }
@@ -25,10 +25,10 @@ if (isset($_COOKIE['page']) && !empty($_COOKIE['page'])){
     }
 
 } elseif (!isset($_COOKIE['page']) || empty($_COOKIE['page'])) {
-    $urls = array(0 =>'/store', 1 => '/store-sub-new-1', 2 =>'/store-sub-new-hyp1');
+    $urls = array(0 =>'/store', 1 => '/store-sub-new-1');
     $clientsNumber = $obj ->getStoreClientsCount();
     $obj->incrementStoreClientsCount();
-    $url = $clientsNumber % 3;
+    $url = $clientsNumber % 2;
     $redirectUrl = $urls[$url];
 //    setcookie('page', $redirectUrl, time()+365*24*60*60, '/', '.pumpic.com');
     setcookie('page', $redirectUrl);

@@ -152,7 +152,7 @@ class Phpmail extends Settings
 
                 $browserInfo = $this->getBrowser();
                 $userData = $this->_order->getUserDataEmail($params['email']);
-                if (!$userData && is_null($this->sender->getUserId())){
+                if ($userData && is_null($this->sender->getUserId())){
                     $this->sender->setUserId($userData['id']);
                 }
                 try {
@@ -206,7 +206,7 @@ class Phpmail extends Settings
                 $browserInfo = $this->getBrowser();
 
                 $userData = $this->_order->getUserDataEmail($params['email']);
-                if (!$userData && is_null($this->sender->getUserId())){
+                if ($userData && is_null($this->sender->getUserId())){
                     $this->sender->setUserId($userData['id']);
                 }
                 try {
@@ -291,7 +291,7 @@ class Phpmail extends Settings
 
                 $browserInfo = $this->getBrowser();
                 $userData = $this->_order->getUserDataEmail($params['email']);
-                if (!$userData && is_null($this->sender->getUserId())){
+                if ($userData && is_null($this->sender->getUserId())){
                     $this->sender->setUserId($userData['id']);
                 }
                try {
@@ -375,7 +375,7 @@ class Phpmail extends Settings
 
                 $params['os'] = (isset($params['wos']) and !empty($params['wos'])) ? $params['wos'] : $params['os'];
                 $userData = $this->_order->getUserDataEmail($params['email']);
-                if (!$userData && is_null($this->sender->getUserId())){
+                if ($userData && is_null($this->sender->getUserId())){
                     $this->sender->setUserId($userData['id']);
                 }
                 try {

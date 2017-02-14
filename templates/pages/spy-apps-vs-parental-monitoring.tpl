@@ -1,19 +1,19 @@
 {include file='../includes/main/main-header.tpl'
 
-title="Spy Apps for Android VS Parental Monitoring | Pumpic"
-description="What is the difference between cell phone spy software for android and a parental control app? Find a legal and reliable Android phone monitoring app for parents."
+title="Spy Apps VS Parental Monitoring | Pumpic"
+description="What is the difference between spyware and a cell phone parental controls software? Find a legal and reliable mobile phone monitoring app for parents."
 customeStyle="
         .block-child-location-tracking .ipad-text {
             padding: 10px 0;
         }
-        
+
         @media only screen and (max-width: 480px) {
             .block-child-location-tracking .ipad-text {
                 padding: 10px 0px 50px 0px;
             }
         }
 
-        @media (min-width: 468px) { 
+        @media (min-width: 468px) {
             .block-child-location-tracking .ipad-text {
                 padding: 10px 0px 50px 0px;
             }
@@ -35,7 +35,7 @@ customeStyle="
             .block-child-location-tracking .ipad-text {
               padding: 10px 0;
             }
-        } 
+        }
     "
 }
 
@@ -77,7 +77,7 @@ customeStyle="
     imgVerticalAlign = "center"
     textAlign = "left"
     title = "Android Phone Monitoring Apps<br />Parental Controls VS Spyware "
-    description = "Spy app for Android and parental controls: what's the difference?<br />Note: spying is illegal! Use reliable and lawful mobile monitoring apps."
+    description = "Hidden surveillance app and parental monitoring: what's the difference?<br />Note: spying is illegal! Use reliable and lawful mobile monitoring apps."
     descriptionSize = "12.5px"
     promoBuyBlock = "no"
     planPackageBuy = "yes"
@@ -108,33 +108,33 @@ title="Follow Kids Remotely Wherever They Go" *}
 
     <div id="grid-images" class="row">
         <div class="col-lg-12 col-md-12 col-sm-12">
-            <h2>Parental Control Software VS Spy App on Android </h2>
+            <h2>Parental Control Software VS Spy Apps</h2>
             <div class="pt30 pb20">
                 <img class="img-align-right" alt="Spy Apps for Android VS Parental Monitoring" src="{$img}/landings/spy-apps-vs-parental-monitoring-text.png" width="207px" height="208px" />
                 <p>In the whole amount of Android mobile monitoring software one may come across online, there are mainly two types of products – Spy Apps and Parental Monitoring Apps. What is the difference (if any), and what to choose? Here’s a little guide on Android phone spyware.</p>
-                <p>Finding a spy app on Android is rather easy, but downloading and installing one may cause some significant troubles later on. Such programs are illegal to use. Spy software is designed for discreetly keeping track of someone by installing this application on his or her phone. And a spy app for Android is undetectable. Needless to say that these apps are going against the rules and laws of civilized world, where everyone has the right for privacy.</p>
+                <p>Finding a spy app for Android undetectable by the standard smartphone utilities is today rather easy, but downloading and installing one may cause some significant troubles later on. Such programs are illegal to use. Spy software is designed for discreetly keeping track of someone by installing this application on his or her phone. Needless to say that these apps are going against the rules and laws of civilized world, where everyone has the right for privacy.</p>
                 <p>Cell phone parental controls software is a legal thing that allows parents to ensure their kids’ online security. This have become a real need due to the recent bullying and overall cybercrimes kids fall victims of. <a class="a-default" href="/android-parental-monitoring.html" >Such apps</a> can only be used by parents to monitor their children, and there is no chance of other ways one can use them.</p>
                 <p>Android parental controls applications differ in options and settings, so reading some reviews beforehand will help making the right choice. Be wise and use this type of software to protect your loved ones in the best and legal way.</p>
             </div>
         </div>
     </div>
     {EndContent}
-	
-{Content 
-    styleTitle="h2"    
+
+{Content
+    styleTitle="h2"
     title="Why Not Using Spy Apps"
     blockBg='light'}
-	
+
 	<img class="app-icon-left" src="{$img}/landings/why-not-using-spy-apps.png" alt="">
 	<p>Today parental control for smartphones and mobile devices is a must. This fact is hard to refute. According to statistics, the amount of time kids spend looking at their mobile devices grows rapidly. And about 24% of teens confess they are online almost constantly. Yet the question about what type of an app parents should use is an essential one to answer. There are plenty of apps facilitating your watching over a teen’s activities, but not everyone is a good choice.</p>
 	<p>Google Play pages are full of various applications on different topics. If you look at monitoring applications, two large groups are obvious. These are actual Android phone monitoring apps and spyware. With some of shared options and functions these apps may seem to be the same. But it is a lack of information that may get you to making a wrong decision. Here is a brief explanation for newbies in the industry. As well as reasons why using Android phone spyware is worse than a parental control app.</p>
 	<p>As long as Android is open OS, new apps for it appear every day. Android mobile spy software is popular, and numerous apps claim to provide the best results. Some of such applications are free for use, others ask for a price to be paid for information you get. But no matter which spyware you choose, it is all positioned as exactly spying on someone. And headers like ‘Catch Your Cheating Spouse with Spy App’ only prove the point.</p>
 	<p>Another point against spy software is its illegal status. It is not a secret that spying on people cannot be legal in any country. Even as general rules for personal issues are being different for every country. This is a part of reason spy applications work in disguise. Attentive readers also notice a disclaimer saying they have no responsibility towards a user. And if you use a spy application and get caught, you are on your own.</p>
 	<p>Android parental controls applications are absolutely legal, and even advised for usage. They were designed specifically for watching over underage children. Thus, apps can only be used by parents, and there is no chance for using these apps to meet other needs.</p>
-        
+
         <!-- BLOCK STATISTICK -->
         <div class="block-statistick row">
-            
+
             <div class="spy-items item col-s-sm-12 col-xs-sm-12 col-sm-4 col-md-4 col-lg-4">
                 <section>
                     <div><strong class="fz50 color-orange">20%</strong></div>
@@ -159,13 +159,13 @@ title="Follow Kids Remotely Wherever They Go" *}
                     </span>
                 </section>
             </div>
-            
+
         </div>
         <!-- END -->
 
         <p>Every responsible parent always ensures his or her kid’s safety in all spheres. And setting parenting controls on a mobile device you give your child is always the best idea. Safety of your beloved ones is not a field, where you can lean upon a chance.</p>
 		<p>Pumpic is one of parental control applications you should try out. It offers a number of features every parent would gladly use to protect a teen from cyberbullies and online predators. Last year the app was recognized as one of the best parental control apps. And there is about 10,000 parents, who confirm this status of the Pumpic app. It legally tracks your child’s activities and help making his or her phone a useful tool, not a distraction.</p>
-		
+
 {EndContent}
 
     <div class="dark">
@@ -229,7 +229,7 @@ title="Follow Kids Remotely Wherever They Go" *}
                             <img src="{$img}/testimonials/miranda-i-12.png" alt="" class="testimonial-photo">
                             <div class="testimonial-text">
                                 <h4>Miranda I. – mother of 12-year-old son</h4>
-                                <p>“I’ve been looking for cell phone spy software for Android to keep an eye on my son, when I’m at work. As I was searching through the web I found out that spyware was illegal due to human rights violation. At the same time, I found out about parental control apps legal and widely used by many parents all over the world. I chose Pumpic and keep using it as my parenting helper.”</p>
+                                <p>“I’ve been looking for mobile spyware to keep an eye on my son, when I’m at work. As I was searching through the web I found out that spyware was illegal due to human rights violation. At the same time, I found out about parental control apps legal and widely used by many parents all over the world. I chose Pumpic and keep using it as my parenting helper.”</p>
                             </div>
                         </div>
                         <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
@@ -256,7 +256,7 @@ title="Follow Kids Remotely Wherever They Go" *}
     </div>
 
 	{include file='../includes/content/banners/index.tpl'}
-	 
+
 
 
     {*{include file='../includes/content/banners/banner-promo-trial.tpl'}*}

@@ -2111,23 +2111,9 @@ $(document).ready(function () {
         }
     });
     
-		// switch features Jailbreak
-    $('.show_premium_features._jailbreak-f').on('tap', function(e) {
-        if(e.handled !== true) {
-            $('.premium_fe._jailbreak-f').css("margin-top", "10px");
-            $('.premium_fe._jailbreak-f').slideToggle();
-            $('.show-f._jailbreak-f').toggle()
-            if($('.hide-f._jailbreak-f').is(':visible')) {
-                scrollTo('div[data-info-block=ios-jb]', 'fast');
-            }
-            $('.hide-f._jailbreak-f').toggle()
-            $('.prod-icloud.prod-2.jailbreak-f').toggle()
-            e.handled = true;
-        }
-    });
     $("input[name='optionsRadios']").each(function () {
+        
         if (this.getAttribute("checked")) {
-
             $(this).parent('.label_radio').addClass('r_on');
             $(this).parent('.label_radio').removeClass('r_off');
             $(this).parents('form').children('.product_price').val($(this).val());
@@ -2527,11 +2513,11 @@ $(document).ready(function () {
             
             var offerEnabled = $form.find('input[type=checkbox][data-group=' + data.group + ']').is(':checked');
             var $options = $('.buy-form-with-offer').find('input[type=radio][data-group=' + data.group + '][data-period=' + data.period + ']');
-
+            
             $options.each(function () {
+                $(this).attr('checked', 'checked')
                 var optionData = $(this).data();
                 var $productField = $(this).closest('form').find('input.product_price');
-
                 if (offerEnabled) {
                     $productField.val(optionData.offerProduct);
                 } else {
@@ -2584,13 +2570,21 @@ $(document).ready(function () {
 
             $checkboxes.each(function () {
                 var $form = $(this).closest('form');
-                var radioWith12 = $form.find('input[type=radio][data-period=24]');
+                
+                if($form.find('input[type=radio][data-period=24]').length > 0) {
+                    var radioWith12 = $form.find('input[type=radio][data-period=24]');
+                } else {
+                    var radioWith12 = $form.find('input[type=radio][data-period=12]');
+                }
                     //radioWith12.attr('checked', true)
-
-                $(radioWith12).closest('form').find('input[type=radio]:checked').each(function () {
-                    updateRadio(this);
-                });
- 
+                var closestCheckedRadio = $(radioWith12).closest('form').find('input[type=radio]:checked');
+                if(closestCheckedRadio.length > 0) {
+                    closestCheckedRadio.each(function () {
+                        updateRadio(this);
+                    });
+                } else {
+                    updateRadio(radioWith12)
+                }
                 if (offerEnabled) {
                     if (!$(this).is(":checked")) {
                         $(this).prop('checked', offerEnabled);
@@ -2656,12 +2650,10 @@ $(document).ready(function () {
         var updateRadio = function (input) {
             var data = $(input).data();
             var $inputs = $('.buy-form').find('input[data-period=' + data.period + '][data-group=' + data.group + ']');
-
             $inputs.each(function () {
                 var $productField = $(this).closest('form').find('input.product_price');
 
                 $productField.val($(this).val());
-
                 $(this).closest('ul').find('label')
                         .removeClass('r_on')
                         .addClass('r_off');
@@ -2701,7 +2693,6 @@ $(document).ready(function () {
             $.each($inputs, function() {updateCheckbox(this)})
         });
     }
-    updateCheckboxes('jailbreak-40off');
     updateCheckboxes('android-40off');
     updateCheckboxes('icloud-40off');
     

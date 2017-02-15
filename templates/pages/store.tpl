@@ -250,11 +250,11 @@ description="Pumpic offers high-quality cell phone tracking software for a good 
                                                         </div>
                                                         <ul class="icloud-features m0">
                                                             <li class="icloud-features__item">
-                                                                <p class="icloud-features__name"><i class="icon-ok"></i>Calls history <span>(unlimited)</span></p>
+                                                                <p class="icloud-features__name"><i class="icon-ok"></i>Calls history</p>
                                                                 <p class="icloud-features__info m0">View detailed data on incoming/outgoing calls: name, phone number, time and duration.</p>
                                                             </li>
                                                             <li class="icloud-features__item">
-                                                                <p class="icloud-features__name"><i class="icon-ok"></i>Text message history <span>(unlimited)</span></p>
+                                                                <p class="icloud-features__name"><i class="icon-ok"></i>Text message history</p>
                                                                 <p class="icloud-features__info m0">View text content and supported attachments sent or received via SMS, MMS, and iMessages.</p>
                                                             </li>
                                                             <li class="icloud-features__item">

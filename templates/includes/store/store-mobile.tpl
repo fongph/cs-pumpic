@@ -135,9 +135,9 @@
             <div class="pricep" style="margin-top: 0px; padding: 0;">
                 <div class="premium_fe _android-f" style="margin-top: 0;">
                     <ul class="android-list-f">
-                            <li data-toggle="tooltip" data-placement="top" title="View detailed data on incoming/outgoing calls: name, phone number, time and duration."><i class="icon-ok"></i> Calls history <span>(unlimited)</span>
+                            <li data-toggle="tooltip" data-placement="top" title="View detailed data on incoming/outgoing calls: name, phone number, time and duration."><i class="icon-ok"></i> Calls history
                             </li>
-                            <li data-toggle="tooltip" data-placement="top" title="View text content sent or received via SMS, MMS.</div>"><i class="icon-ok"></i> Text message history <span>(unlimited)</span></li>
+                            <li data-toggle="tooltip" data-placement="top" title="View text content sent or received via SMS, MMS.</div>"><i class="icon-ok"></i> Text message history</li>
                             <li data-toggle="tooltip" data-placement="top" title="Block calls from specific numbers."><i class="icon-ok"></i> Calls blocking </li>
                             <li data-toggle="tooltip" data-placement="top" title="Block SMS from specific senders and/or containing specific keywords.</div><div class='br'><strong>Up to Android 4.4.4</strong></div>"><i class="icon-ok"></i> SMS blocking</li>
                             <li data-toggle="tooltip" data-placement="top" title="Set a number of SMS a user can send daily. <div class='br'><strong>Pumpic keyboard activation required</strong></div>"><i class="icon-ok"></i> SMS limiting <i class="icon-info-circled"></i></li>

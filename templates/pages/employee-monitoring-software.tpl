@@ -932,13 +932,13 @@ hideJailbreak = true
 {include file='../includes/main/main-analytics-footer.tpl'}
 <script>
     $(function () {
-       var lmBtn = '<a href="#subscription" class="btn btn-default ga-action-click" ga-action="click" ga-category="premium" ga-label="plan premium packahe" style="margin-top: 6px;"> Learn More</a>';
+        var lmBtn = '<a href="#subscription" class="btn btn-default ga-action-click" ga-action="click" ga-category="premium" ga-label="plan premium packahe" style="margin-top: 6px;"> Learn More</a>';
         var formBlck = $('#block-promo-buy .vertical-aligh-middle');
         formBlck.append(lmBtn);
         formBlck.find('form').remove();
-        $('#demo-banner-button').attr('href','#subscription');
+        $('#demo-banner-button').attr('href', '#subscription');
         $('.logo a').attr('href', '#');
-        $('#type').on('change', function() {
+        $('#type').on('change', function () {
             var val = this.value
             $('#wos').val(val)
             val === 'Bulk Quote Request' ? $('#number_of_devices').show() : $('#number_of_devices').hide();
@@ -950,6 +950,7 @@ hideJailbreak = true
                 scrollTop: $("#contact-form").offset().top
             }, 800);
         });
+        $('input:checkbox').prop('checked', false);
     });
 </script>
 </body>

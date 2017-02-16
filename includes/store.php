@@ -13,8 +13,8 @@ require_once 'smarty.config.php';
 
 $url = $_COOKIE['page'];
 
-$lastTestedPages = ['/store-sub-same', '/store-sub-new', '/store-sub-new-hyp1', '/store-sub-new-1'];
-if (isset($_COOKIE['page']) || in_array($url, $lastTestedPages)){
+$lastTestedPages = array('/store-sub-same', '/store-sub-new', '/store-sub-new-hyp1', '/store-sub-new-1');
+if (isset($_COOKIE['page']) && in_array($url, $lastTestedPages)){
     unset($_COOKIE['page']);
     setcookie('page', null, -1, '/');
 }
@@ -26,7 +26,7 @@ if (isset($_COOKIE['page']) && !empty($_COOKIE['page'])){
     }
 
 } elseif (!isset($_COOKIE['page']) || empty($_COOKIE['page'])) {
-    $urls = array(0 =>'/store', 1 => '/store-sub-new-2', 'store-sub-new-3');
+    $urls = array(0 =>'/store', 1 => '/store-sub-new-2', 2 => '/store-sub-new-3');
     $clientsNumber = $obj ->getStoreClientsCount();
     $obj->incrementStoreClientsCount();
     $url = $clientsNumber % 3;

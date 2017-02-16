@@ -25,7 +25,10 @@ function dispatch($urlParams, $config){
         header301( $config['domain_http'] );
     }
     // 301 redirect
-    if(preg_match('/\/store-sub-same.html/is', $_SERVER['REQUEST_URI']) || preg_match('/\/store-sub-new.html/is', $_SERVER['REQUEST_URI']) || preg_match('/\/store-sub-new-hyp1.html/is', $_SERVER['REQUEST_URI'])) {
+    if(preg_match('/\/store-sub-same.html/is', $_SERVER['REQUEST_URI'])
+        || preg_match('/\/store-sub-new.html/is', $_SERVER['REQUEST_URI'])
+        || preg_match('/\/store-sub-new-1.html/is', $_SERVER['REQUEST_URI'])
+        || preg_match('/\/store-sub-new-hyp1.html/is', $_SERVER['REQUEST_URI'])) {
         header301( '/store.html' );
     }
 

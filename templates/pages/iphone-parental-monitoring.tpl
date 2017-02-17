@@ -1,6 +1,7 @@
 {include file='../includes/main/main-header.tpl'
     title="Ultimate iPhone Parental Control App for Apple iOS"
     description="Pumpic is a tried and true app to monitor iPhone usage and online activity. Set parental control to monitor calls and location and keep your children safe."
+    amp = 'pumpic.com/amp/iphone-parental-monitoring.html'
 }
 
 <body>

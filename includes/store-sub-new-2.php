@@ -12,7 +12,7 @@ $obj = new includes\lib\users\Order;
 require_once 'smarty.config.php';
 /* list order */
 
-$products = $obj ->getProducts('second-new-1');
+$products = $obj ->getProducts('second-new-2');
 
 
 /* form_order */
@@ -45,14 +45,6 @@ if(is_array($products)) {
             }
         endforeach;
     }
-    if(isset($products['iosJailbreak'])) {
-        foreach($products['iosJailbreak'] as $item) :
-            if ($item['period'] == 12 && $item['id']) {
-                $smarty->assign('defaultJailbreakProduct', $item['id']);
-                $smarty->assign('defaultJailbreakPrice', round($item['price'] / $item['period'], 2));
-            }
-        endforeach;
-    }
     // Basic
     if(isset($products['androidBasic'])) {
         foreach($products['androidBasic'] as $item) :
@@ -77,7 +69,7 @@ $_curr -> setFilter( ['iso' => ['USD','EUR','GBP','CAD','AUD'] ] );
 $_rates = $_curr -> getCurrencies();
 
 $smarty->assign('rates', json_encode($_rates));
-$smarty->assign('subSame', true);
+$smarty->assign('subPage1', true);
 
 // init output params!
 $smarty->assign('getProducts', $products);

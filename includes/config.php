@@ -66,7 +66,7 @@ $config = array(
 				'iphone-with-jailbreak-monitoring.html' => 'iphone_with_jailbreak_monitoring.php',
 				'employee-monitoring-software.html' => 'employee-monitoring-software.php',
 				'icloud-iphone-without-jailbreak-monitoring.html' => 'icloud_iphone_without_jailbreak_monitoring.php',
-				'amp/icloud-iphone-without-jailbreak-monitoring.html' => 'icloud_iphone_without_jailbreak_monitoring.php',
+				//'amp/icloud-iphone-without-jailbreak-monitoring.html' => 'icloud_iphone_without_jailbreak_monitoring.php',
 				//'store-iframe-amp.html' => 'store-iframe-amp.php',
 
 			// opening-soon-thanks.html

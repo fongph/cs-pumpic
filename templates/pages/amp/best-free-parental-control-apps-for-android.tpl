@@ -509,7 +509,7 @@
                     "vars": {
                         "eventCategory": "AMP",
                         "eventAction": "click",
-                        "eventLabel": "LearnMore-AMP"
+                        "eventLabel": "LearnMore-best-free-parental-control-apps-for-android"
                     }
                 }
             }

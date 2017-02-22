@@ -18,9 +18,9 @@ $config = array(
 				'tpl_path_compile' => '../templates_c/',
 				'cache_path' => '../cache/'
 		),
-        'schema' => 'http://',
+        'schema' => 'https://',
         'domain' => 'pumpic.com',
-		'domain_http' => 'http://pumpic.com',
+		'domain_http' => 'https://pumpic.com',
 		'path_img' => '/images',
 		'path_js' => '/js',
 		'path_css' => '/css',

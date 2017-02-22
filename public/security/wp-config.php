@@ -85,5 +85,6 @@ if ( !defined('ABSPATH') )
 
 define('WP_HOME', 'http://'.$_SERVER['HTTP_HOST'].'/security/');
 define('WP_SITEURL', 'http://'.$_SERVER['HTTP_HOST'].'/security/');
+define('FORCE_SSL_ADMIN', true);
 /** Sets up WordPress vars and included files. */
 require_once(ABSPATH . 'wp-settings.php');

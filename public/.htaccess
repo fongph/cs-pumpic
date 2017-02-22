@@ -136,14 +136,14 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?lumb\.co.*$ [NC]
 RewriteRule .* - [F]
 
 RewriteCond %{HTTP_HOST} ^www\.pumpic\.com
-RewriteRule ^(.*)$ http://pumpic.com/$1 [NC,R=301,L]
+RewriteRule ^(.*)$ https://pumpic.com/$1 [NC,R=301,L]
 
 
 
 RewriteRule ^compatibility/samsung\-i9300\-galaxy\-s\-iii\-\(s3\)/$ compatibility/samsung-galaxy-s3/ [L,R=301]
 
 RewriteRule ^pricing\.html$ store\.html [L,R=301]
-RewriteRule ^index\.html$ http://pumpic.com/ [L,R=301]
+RewriteRule ^index\.html$ https://pumpic.com/ [L,R=301]
 RewriteRule ^login\.html$ https://cp.pumpic.com/ [L,R=301]
 RewriteRule ^features\.html$ all-features\.html [L,R=301]
 RewriteRule ^compatibility\.html$ compatibility/ [L,R=301]

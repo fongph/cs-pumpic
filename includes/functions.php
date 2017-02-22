@@ -96,7 +96,7 @@ function smarty_function_getDemoLink($params, $template) {
         $_id = 126; 
         $_get = " ";
     }
-    return "http://demo.{$domain}/setDevice/{$_id}{$_get}";
+    return "https://demo.{$domain}/setDevice/{$_id}{$_get}";
 }
 
 function getURI(){

@@ -262,7 +262,7 @@
                                                 </div>
                                             </div>
                                             <div class="list_price">
-                                                <form name="price_premium" method="POST" action="/buy.html" class="buy-form-with-offer" autocomplete="off">
+                                                <form name="price_premium" method="POST" action="#" class="buy-form-with-offer" autocomplete="off">
                                                     <input id='product_price_premium1' type='hidden' name='price[productID]' value='{if isset($getDefaultiosJailbreak)}{$getDefaultiosJailbreak}{else}0{/if}' class="product_price"/>
 
                                                     <ul>
@@ -299,11 +299,11 @@
                                                         </label>
                                                     </div>
 
-                                                    <button class="btn btn-default ga-action-click"
+                                                    <button class="btn btn-default ga-action-click disabled"
                                                             ga-action ="click"
                                                             ga-category="iphone-tracking-software"
                                                             ga-label="buy jailbreak"
-                                                            value="true" type="submit" name="price[submit]">Buy Now</button>
+                                                            value="true" type="submit" name="price[submit]">DISCONTINUED</button>
                                                     <!--   <div class="show_premium_features"><a href="#">Show Premium features</a>
                                                       </div> -->
                                                 </form>

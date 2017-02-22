@@ -3171,7 +3171,7 @@ fieldset[disabled] .btn {
 
 .btn-default {
   &.disabled, &[disabled] {
-    background-color: #ffffff;
+    //background-color: #ffffff;
     border-color: #cccccc;
   }
 }
@@ -3183,7 +3183,7 @@ fieldset[disabled] .btn-default {
 
 .btn-default {
   &.disabled:hover, &[disabled]:hover {
-    background-color: #ffffff;
+    //background-color: #ffffff;
     border-color: #cccccc;
   }
 }
@@ -3195,7 +3195,7 @@ fieldset[disabled] .btn-default:hover {
 
 .btn-default {
   &.disabled:focus, &[disabled]:focus {
-    background-color: #ffffff;
+    //background-color: #ffffff;
     border-color: #cccccc;
   }
 }
@@ -3207,7 +3207,7 @@ fieldset[disabled] .btn-default:focus {
 
 .btn-default {
   &.disabled:active, &[disabled]:active {
-    background-color: #ffffff;
+    //background-color: #ffffff;
     border-color: #cccccc;
   }
 }
@@ -3219,7 +3219,7 @@ fieldset[disabled] .btn-default:active {
 
 .btn-default {
   &.disabled.active, &[disabled].active {
-    background-color: #ffffff;
+    //background-color: #ffffff;
     border-color: #cccccc;
   }
 }

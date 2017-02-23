@@ -12,7 +12,7 @@ $obj = new includes\lib\users\Order;
 require_once 'smarty.config.php';
 /* list order */
 
-$products = $obj ->getProducts('second-new-2');
+$products = $obj ->getProducts('second-new-22');
 
 
 /* form_order */

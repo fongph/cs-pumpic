@@ -288,11 +288,11 @@ class Order extends ManagerUser
     
     public function getProducts($namespace) 
     {
-        if ($namespace == 'second-new-2' || $namespace == 'second-new-3'){
+        if ($namespace == 'second-main' || $namespace == 'second-main'){
             $version = '';
             switch ($namespace){
-                case 'second-new-2': $version = 'v6'; break;
-                case 'second-new-3': $version = 'v7'; break;
+                case 'second-new-22': $version = 'v8'; break;
+                case 'second-main': $version = 'v0'; break;
             }
             $plans = $this->_billing->getSiteProductsForABTest(self::SITE_ID, 'second', $namespace, $version);
         } else {

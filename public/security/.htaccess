@@ -19,7 +19,7 @@ RewriteEngine On
 RewriteBase /security/
 
 RewriteCond %{ENV:HTTPS} !=on
-RewriteRule ^.*$ https://%{SERVER_NAME}%{REQUEST_URI} [R=301,L]
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
 # BEGIN WordPress
 RewriteRule ^index\.php$ - [L]

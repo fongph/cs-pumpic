@@ -129,8 +129,8 @@
                                             </p>
 
                                             <ul class="compatibility compatibility-lg">
-                                                <li><i class="icon-android"></i> (2.2 - 6.0.1)</li>
-                                                <li><i class="icon-apple"></i> (6.0 - 10.2.1)</li>
+                                                <li><i class="icon-android"></i> ({$ver_android_bot} - {$ver_android_up})</li>
+                                                <li><i class="icon-apple"></i> ({$ver_icloud_bot} - {$ver_icloud_up})</li>
                                             </ul>
                                             <div class='mt10'>
                                                 <div id='block-promo-buy' class="bb-p-buy- banner-header-package">

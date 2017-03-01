@@ -18,7 +18,7 @@
                                     <ul class="compatibility compatibility-lg">
                                         {if $icloud != 'no'}
                                         <li>
-                                            <i class="icon-apple"></i> ({$ver_icloud_up} - {$ver_icloud_up})
+                                            <i class="icon-apple"></i> ({$ver_icloud_bot} - {$ver_icloud_up})
                                         </li>
                                         {/if}
                                         {if $android != 'no'}

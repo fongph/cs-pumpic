@@ -53,8 +53,8 @@
                     class="icon-android"></i></li>
         <li><i class="i-features-sms-commands"></i>SMS Commands<i class="icon-android"></i></li>
     </ul>
-    <div class="text-center features-btngroup"><a href="/all-features.html{if $android=true}#android{/if}" class="btn btn-gree" rel="nofollow"
+    <div class="text-center features-btngroup"><a href="/all-features.html{if $android==true}#android{/if}" class="btn btn-gree" rel="nofollow"
                                                   id="all-features-link">All Features</a>
-        <a href="/store.html{if $android=true}#android{/if}" class="btn btn-default" id="store-link" rel="nofollow">Start
+        <a href="/store.html{if $android==true}#android{/if}" class="btn btn-default" id="store-link" rel="nofollow">Start
             Monitoring</a></div>
 </div>

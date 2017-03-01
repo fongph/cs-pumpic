@@ -91,6 +91,7 @@
             WhatsApp, Viber, and Snapchat'
         description='Prevent your kids from cyberbullies and online predators.'
         icloud='no'
+        android='yes'
         }
 
         <div id="block-content" class="col-sm-12 dark">

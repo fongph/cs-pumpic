@@ -85,7 +85,11 @@
                                             </p>
 
                                             <ul class="compatibility compatibility-lg">
-                                                <li><i class="icon-android"></i> ({$ver_android_bot} - {$ver_android_up})
+                                                <li>
+                                                    <i class="icon-apple"></i> ({$ver_icloud_bot} - {$ver_icloud_up})
+                                                </li>
+                                                <li>
+                                                    <i class="icon-android"></i> ({$ver_android_bot} - {$ver_android_up})
                                                 </li>
                                             </ul>
                                             <div class='mt10'>
@@ -100,7 +104,7 @@
                                                         </div>
                                                     </section>
                                                     <section class="vertical-aligh-middle">
-                                                        <a class="btn btn-default" href="/store.html#android"
+                                                        <a class="btn btn-default" href="/store.html"
                                                            id="learn-more-link">Learn More</a>
                                                     </section>
                                                 </div>
@@ -261,9 +265,9 @@
                             class="icon-android"></i></li>
                 <li><i class="i-features-sms-commands"></i>SMS Commands<i class="icon-android"></i></li>
             </ul>
-            <div class="text-center features-btngroup"><a href="/all-features.html" class="btn btn-gree" rel="nofollow"
+            <div class="text-center features-btngroup"><a href="/all-features.html#android" class="btn btn-gree" rel="nofollow"
                                                           id="all-features-link">All Features</a>
-                <a href="/store.html" class="btn btn-default" id="store-link" rel="nofollow">Start
+                <a href="/store.html#android" class="btn btn-default" id="store-link" rel="nofollow">Start
                     Monitoring</a></div>
         </div>
 

@@ -357,9 +357,9 @@
                                         class="icon-android"></i></li>
                             <li><i class="i-features-sms-commands"></i>SMS Commands<i class="icon-android"></i></li>
                         </ul>
-                        <div class="text-center features-btngroup"><a href="/all-features.html" class="btn btn-gree"
+                        <div class="text-center features-btngroup"><a href="/all-features.html#android" class="btn btn-gree"
                                                                       rel="nofollow" id="all-features-link">All
-                                Features</a> <a href="/all-features.html" class="btn btn-default" id="store-link"
+                                Features</a> <a href="/store.html#android" class="btn btn-default" id="store-link"
                                                 rel="nofollow">Start Monitoring</a></div>
                     </div>
                 </div>

@@ -90,6 +90,7 @@
         description='View uploaded pictures, comments, and friends’ posts.
 Protect your kids on Instagram. Secure their online activities.'
         icloud='no'
+        android='yes'
         }
 
         <div id="block-content" class="dark">

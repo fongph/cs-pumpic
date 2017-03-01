@@ -2561,69 +2561,69 @@ $(document).ready(function () {
             }
 
         };
-        var updateCheckbox = function (input) {
-            var data = $(input).data();
-
-            var offerEnabled = $(input).is(":checked");
-
-            var $checkboxes = $('.buy-form-with-offer').find('input[type=checkbox][data-group=' + data.group + ']');
-
-            $checkboxes.each(function () {
-                var $form = $(this).closest('form');
-                
-                if($form.find('input[type=radio][data-period=24]').length > 0) {
-                    var radioWith12 = $form.find('input[type=radio][data-period=24]');
-                } else {
-                    var radioWith12 = $form.find('input[type=radio][data-period=12]');
-                }
-                    //radioWith12.attr('checked', true)
-                var closestCheckedRadio = $(radioWith12).closest('form').find('input[type=radio]:checked');
-                if(closestCheckedRadio.length > 0) {
-                    closestCheckedRadio.each(function () {
-                        updateRadio(this);
-                    });
-                } else {
-                    updateRadio(radioWith12)
-                }
-                if (offerEnabled) {
-                    if (!$(this).is(":checked")) {
-                        $(this).prop('checked', offerEnabled);
-                    }
-                    //old store1
-                    // $('.wr_pack_' + data.group).hide();
-                    // $('.wr_pack_double_' + data.group).show();
-                    // $form.find('.offer_old_price').show();
-                    // $form.find('.package_price').hide();
-                    // $form.find('.package_offer_price').show();
-                    $('._single-pack-' + data.group).hide();
-                    $('._double-pack-' + data.group).show();
-                    $form.find('.offer_old_price').show();
-                    $form.find('.package_price').hide();
-                    $form.find('.package_offer_price').show();
-
-                } else {
-                    if ($(this).is(":checked")) {
-                        $(this).prop('checked', offerEnabled);
-                    }
-
-                    //old store
-                    // $('.wr_pack_double_' + data.group).hide();
-                    // $('.wr_pack_' + data.group).show();
-                    // $form.find('.offer_old_price').hide();
-                    // $form.find('.package_offer_price').hide();
-                    // $form.find('.package_price').show();
-                    $('._double-pack-' + data.group).hide();
-                    $('._single-pack-' + data.group).show();
-                    $form.find('.offer_old_price').hide();
-                    $form.find('.package_offer_price').hide();
-                    $form.find('.package_price').show();
-                }
-            });
-
-            $(input).closest('form').find('input[type=radio]:checked').each(function () {
-                updateRadio(this);
-            });
-        };
+        // var updateCheckbox = function (input) {
+        //     var data = $(input).data();
+				//
+        //     var offerEnabled = $(input).is(":checked");
+				//
+        //     var $checkboxes = $('.buy-form-with-offer').find('input[type=checkbox][data-group=' + data.group + ']');
+				//
+        //     $checkboxes.each(function () {
+        //         var $form = $(this).closest('form');
+        //
+        //         if($form.find('input[type=radio][data-period=24]').length > 0) {
+        //             var radioWith12 = $form.find('input[type=radio][data-period=24]');
+        //         } else {
+        //             var radioWith12 = $form.find('input[type=radio][data-period=12]');
+        //         }
+        //             //radioWith12.attr('checked', true)
+        //         var closestCheckedRadio = $(radioWith12).closest('form').find('input[type=radio]:checked');
+        //         if(closestCheckedRadio.length > 0) {
+        //             closestCheckedRadio.each(function () {
+        //                 updateRadio(this);
+        //             });
+        //         } else {
+        //             updateRadio(radioWith12)
+        //         }
+        //         if (offerEnabled) {
+        //             if (!$(this).is(":checked")) {
+        //                 $(this).prop('checked', offerEnabled);
+        //             }
+        //             //old store1
+        //             // $('.wr_pack_' + data.group).hide();
+        //             // $('.wr_pack_double_' + data.group).show();
+        //             // $form.find('.offer_old_price').show();
+        //             // $form.find('.package_price').hide();
+        //             // $form.find('.package_offer_price').show();
+        //             $('._single-pack-' + data.group).hide();
+        //             $('._double-pack-' + data.group).show();
+        //             $form.find('.offer_old_price').show();
+        //             $form.find('.package_price').hide();
+        //             $form.find('.package_offer_price').show();
+				//
+        //         } else {
+        //             if ($(this).is(":checked")) {
+        //                 $(this).prop('checked', offerEnabled);
+        //             }
+				//
+        //             //old store
+        //             // $('.wr_pack_double_' + data.group).hide();
+        //             // $('.wr_pack_' + data.group).show();
+        //             // $form.find('.offer_old_price').hide();
+        //             // $form.find('.package_offer_price').hide();
+        //             // $form.find('.package_price').show();
+        //             $('._double-pack-' + data.group).hide();
+        //             $('._single-pack-' + data.group).show();
+        //             $form.find('.offer_old_price').hide();
+        //             $form.find('.package_offer_price').hide();
+        //             $form.find('.package_price').show();
+        //         }
+        //     });
+				//
+        //     $(input).closest('form').find('input[type=radio]:checked').each(function () {
+        //         updateRadio(this);
+        //     });
+        // };
         // if ($('input[data-period=24]')){
         //     $('input[data-period=24]').each(function () {
         //         $(this).attr('checked', 'checked');
@@ -2641,9 +2641,9 @@ $(document).ready(function () {
             updateRadio($input);
         });
 
-        $('.buy-form-with-offer input[type=checkbox]').change(function(){
-            updateCheckbox(this);
-        });
+        // $('.buy-form-with-offer input[type=checkbox]').change(function(){
+        //     updateCheckbox(this);
+        // });
     } else if ($('.buy-form').size()) {
         var symbols = {usd: '$', eur: '€', gbp: '£', cad: '$', aud: '$'};
 
@@ -2686,17 +2686,17 @@ $(document).ready(function () {
             updateRadio($(this).find('input:first'));
         });
     }
-    function updateCheckboxes(attrVal) {
-        $("input[data-checkboxes="+attrVal+"]").change(function(){
-            var $inputs = $("input[name="+attrVal+"]")
-            $inputs.attr('checked', this.checked);
-            $.each($inputs, function() {updateCheckbox(this)})
-        });
-    }
-    updateCheckboxes('android-40off');
-    updateCheckboxes('icloud-40off');
-    
-    if($('input[name=get-40off]')) {
-     updateCheckboxes('get-40off');
-    }
+    // function updateCheckboxes(attrVal) {
+    //     $("input[data-checkboxes="+attrVal+"]").change(function(){
+    //         var $inputs = $("input[name="+attrVal+"]")
+    //         $inputs.attr('checked', this.checked);
+    //         $.each($inputs, function() {updateCheckbox(this)})
+    //     });
+    // }
+    // updateCheckboxes('android-40off');
+    // updateCheckboxes('icloud-40off');
+    //
+    // if($('input[name=get-40off]')) {
+    //  updateCheckboxes('get-40off');
+    // }
 });

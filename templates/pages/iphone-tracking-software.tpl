@@ -133,7 +133,7 @@
                                                 <div class="dtable-cell">
                                                 <div class="wrapper_pack">
                                                     <div class="wr_pack_premium wr_icloud _single-pack-icloud" style="margin-top: 12px;"></div>
-                                                    <div class="wr_pack_double_premium wr_icloud-double _double-pack-icloud"></div>
+                                                    {*<div class="wr_pack_double_premium wr_icloud-double _double-pack-icloud"></div>*}
 
                                                 </div>
                                                 </div>
@@ -178,12 +178,6 @@
                                                             </li>
                                                         {/foreach}
                                                     </ul>
-                                                    <div class="double_offer checkbox">
-                                                        <label>
-                                                            <input type="checkbox" data-group="icloud" name="get-40off">
-                                                            Get the 2nd plan with <span>40% OFF!</span>
-                                                        </label>
-                                                    </div>
                                                     <button class="btn btn-default ga-action-click" 
                                                             ga-action ="click"
                                                             ga-category="iphone-tracking-software"
@@ -248,7 +242,7 @@
                                                 <div class="dtable-cell">
                                                     <div class="wrapper_pack">
                                                         <div class="wr_pack_premium wr_icloud_jb _single-pack-jailbreak" style="margin-top: 12px;"></div>
-                                                        <div class="wr_pack_double_premium wr_icloud_jb-double _double-pack-jailbreak"></div>
+                                                        {*<div class="wr_pack_double_premium wr_icloud_jb-double _double-pack-jailbreak"></div>*}
                                                     </div>
                                                 </div>
                                                 <div class="dtable-cell">
@@ -292,12 +286,6 @@
                                                             </li>
                                                         {/foreach}
                                                     </ul>
-                                                    <div class="double_offer checkbox">
-                                                        <label>
-                                                            <input type="checkbox" data-group="jailbreak" name="get-40off">
-                                                            Get the 2nd plan with <span>40% OFF!</span>
-                                                        </label>
-                                                    </div>
 
                                                     <button class="btn btn-default ga-action-click disabled"
                                                             ga-action ="click"

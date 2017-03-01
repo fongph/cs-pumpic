@@ -240,7 +240,7 @@
             <div class="amp">
                 <div class="row">
                         <div class="col-lg-12 col-md-12 col-sm-12">
-                            <h2 class="h3">Parental Control Features by Pumpic</h2>
+                            <h2 class="h3 text-center">Parental Control Features by Pumpic</h2>
                                 <p>Your children live their full lives, and mobile devices help them explore the world around. Photo and video shooting, remote communication, emailing, gaming, and social connections are some of the options these gadgets provide. Pumpic covers all spheres of your kids’ activity and enables you to take care of them remotely. The features listed below show the variety of iPhone parental control abilities, which will let you secure your children’s well-being.</p>
 
                             <table>
@@ -329,7 +329,7 @@
             <div class="amp"><div class="row">
                     <div id="grid-images" class="row">
                         <div class="col-lg-12 col-md-12 col-sm-12">
-                            <h2 class="h3">Keep Your Eyes Open</h2>
+                            <h2 class="h3 text-center">Keep Your Eyes Open</h2>
                             <div>
 
                                 <p>As a parent, you always take care of your kids and do your best to protect them from any possible danger. However, when they grow up and get stronger day by day, you become less and less engaged in their lives. Meanwhile, your children become more and more independent.</p>
@@ -466,15 +466,15 @@
         </div>
 
         <footer class="footer-background light">
-            <div class="col-lg-4 col-md-4 col-sm-4 col-lg-offset-1 col-md-offset-1 col-sm-offset-1">
+            <div class="col-sm-4">
                 <h3>DISCLAIMER</h3>
                 <p>Pumpic is a unique parental control tracking application for iOS and Android mobile phones and tablets. It is for ethical and legal use only. To install the tracking app, one should assure that he or she owns the device before installation, or has obtained the owner’s permission to track his or her device.</p>
 
             </div>
-            <div class="col-lg-3 col-md-3 col-sm-3 col-lg-offset-1 col-md-offset-1 col-sm-offset-1">
+            <div class="col-sm-4">
                 <div>
                     <h3>COMPANY</h3>
-                    <ul>
+                    <ul class="p0">
                         <li>
                             <a href="/policy.html">Legal Policies</a>
                         </li>
@@ -487,7 +487,7 @@
                 </div>
                 <div>
                     <h3>USEFUL INFO</h3>
-                    <ul>
+                    <ul class="p0">
                         <li>
                             <a href="/how-to-monitor-social-networks.html">How to Monitor Social Networks</a>
                         </li>
@@ -503,9 +503,9 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-3 col-sm-3">
+            <div class="col-sm-4">
                 <h3>OUR PRODUCTS</h3>
-                <ul>
+                <ul class="p0">
                     <li>
                         <a href="/android-parental-monitoring.html">Android Parental Control</a>
                     </li>
@@ -533,7 +533,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="col-sm-10 col-md-10 col-lg-10 col-sm-offset-1 col-md-offset-1 col-lg-offset-1">
+            <div class="col-sm-10col-sm-offset-1">
                 <div class="share">
                     <ul class="box-socials clearfix">
                         <li><a href="https://www.facebook.com/pumpicapp/" target="_blank" class="icons-social i-fb"></a></li>

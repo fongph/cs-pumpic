@@ -354,14 +354,6 @@ description="Increase productivity, ensure legal safety and streamline workflow 
                                         <div data-info-block="ios">
                                             <div class="premium_wr prod-icloud">
                                                 <div class="pricep" style="padding-bottom: 0;">
-                                                    <div class="save__2plan">
-                                                        <div class="save__text label-touch">
-                                                            <input type="checkbox" id="icloud-40off-main" data-checkboxes="get-40off">
-                                                            <label for="icloud-40off-main">
-                                                                <span>Save 40%</span> on the 2nd plan. <div class="limited-time">Limited time offer!</div>
-                                                            </label>
-                                                        </div>
-                                                    </div>
                                                     <div class="buy-wrapper">
                                                         <div class="wrapper_pack clearfix">
                                                             <div class="wr_pack_premium wr_icloud _single-pack-icloud"></div>
@@ -408,12 +400,6 @@ description="Increase productivity, ensure legal safety and streamline workflow 
                                                                         </li>
                                                                     {/foreach}
                                                                 </ul>
-                                                                <div class="double_offer checkbox">
-                                                                    <label>
-                                                                        <input type="checkbox" data-group="icloud" name="get-40off">
-                                                                        Get the 2nd plan with <span>40% OFF!</span>
-                                                                    </label>
-                                                                </div>
                                                                 <button class="btn btn-default ga-action-click"
                                                                         ga-action ="click"
                                                                         ga-category="buy button"
@@ -513,13 +499,6 @@ description="Increase productivity, ensure legal safety and streamline workflow 
                                                             <div class="list_price icloud-list_price">
 
                                                                 <form name="price_premium" method="POST" action="/buy.html" class="buy-form-with-offer" autocomplete="off" >
-                                                                    <div class="save__2plan">
-                                                                        <div class="save__text label-touch">
-                                                                            <input type="checkbox" name="android-40off" id="android-40off-main" data-checkboxes="android-40off">
-                                                                            <label for="android-40off-main">
-                                                                                <span>Save 40%</span> on the 2nd plan. <div class="limited-time">Limited time offer!</label></div>
-                                                                    </div>
-                                                            </div>
                                                             <input id='product_price_premium' type='hidden' name='price[productID]' value='{if isset($getDefaultAndroidPremium)}{$getDefaultAndroidPremium}{else}0{/if}' class="product_price"/>
 
                                                             <ul>
@@ -549,12 +528,6 @@ description="Increase productivity, ensure legal safety and streamline workflow 
                                                                     </li>
                                                                 {/foreach}
                                                             </ul>
-                                                            <div class="double_offer checkbox">
-                                                                <label>
-                                                                    <input type="checkbox" data-group="android-prem" name="android-40off">
-                                                                    Get the 2nd plan with <span>40% OFF!</span>
-                                                                </label>
-                                                            </div>
                                                             <button class="btn btn-default ga-action-click"
                                                                     ga-action ="click"
                                                                     ga-category="buy button"
@@ -950,7 +923,6 @@ hideJailbreak = true
                 scrollTop: $("#contact-form").offset().top
             }, 800);
         });
-        $('input:checkbox').prop('checked', false);
     });
 </script>
 </body>

@@ -4,12 +4,9 @@
             display: none;
         }
     }
-    @media (min-width: 767px) {
-        .double_offer.checkbox {
-            display: none;
-        }
+    .prod-icloud.prod-2 {
+        padding-bottom: 20px;
     }
-
 </style>
 <div class="no_bg">
     <div class="container">
@@ -98,14 +95,6 @@
                                     <div data-info-block="ios">
                                         <div class="premium_wr prod-icloud">
                                             <div class="pricep">
-                                                <div class="save__2plan">
-                                                    <div class="save__text label-touch">
-                                                        <input type="checkbox" id="icloud-40off-main" data-checkboxes="get-40off">
-                                                        <label for="icloud-40off-main">
-                                                            <span>Save 40%</span> on the 2nd plan. <div class="limited-time">Limited time offer!</div>
-                                                        </label>
-                                                    </div>
-                                                </div>
                                                 <div class="buy-wrapper hidden-xs">
                                                     <div class="wrapper_pack clearfix">
                                                         <div class="wr_pack_premium wr_icloud _single-pack-icloud"></div>
@@ -152,12 +141,6 @@
                                                                     </li>
                                                                 {/foreach}
                                                             </ul>
-                                                            <div class="double_offer checkbox">
-                                                                <label>
-                                                                    <input type="checkbox" data-group="icloud" name="get-40off">
-                                                                    Get the 2nd plan with <span>40% OFF!</span>
-                                                                </label>
-                                                            </div>
                                                             <button class="btn btn-default ga-action-click"
                                                                     ga-action ="click"
                                                                     ga-category="store"
@@ -247,13 +230,6 @@
                                                     </div>
                                                     <div class="list_price icloud-list_price" id="foot_h4">
                                                         <form name="price_premium_bottom" method="POST" action="/buy.html" class="buy-form-with-offer" autocomplete="off">
-                                                            <div class="save__2plan save__second" style="top: 0;">
-                                                                <div class="save__text label-touch">
-                                                                    <input type="checkbox" data-group="icloud" name="icloud-40off" id="icloud-40off-main" data-checkboxes="icloud-40off">
-                                                                    <label for="icloud-40off-main">
-                                                                        <span>Save 40%</span> on the 2nd plan. <div class="limited-time">Limited time offer!</div></label>
-                                                                </div>
-                                                            </div>
                                                             <input id='product_price_premium' type='hidden' name='price[productID]' value='{if isset($defaultIosiCloud)}{$defaultIosiCloud}{else}0{/if}' class="product_price" />
                                                             <ul>
                                                                 {foreach from=$getProducts.iosiCloud key=key item=item}
@@ -282,12 +258,6 @@
                                                                     </li>
                                                                 {/foreach}
                                                             </ul>
-                                                            <div class="double_offer checkbox">
-                                                                <label>
-                                                                    <input type="checkbox" data-group="icloud" name="get-40off">
-                                                                    Get the 2nd plan with <span>40% OFF!</span>
-                                                                </label>
-                                                            </div>
                                                             <button class="btn btn-default ga-action-click"
                                                                     ga-action ="click"
                                                                     ga-category="store"

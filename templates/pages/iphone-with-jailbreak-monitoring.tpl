@@ -165,7 +165,7 @@
                                                             </div>
                                                             
                                                             <div class="list_price">
-                                                                <form name="price_basic" method="POST" action="/buy.html" class="buy-form-with-offer" autocomplete="off">
+                                                                <form name="price_basic" method="POST" action="#" class="buy-form-with-offer" autocomplete="off">
                                                                     <input id='product_price_basic' type='hidden' name='price[productID]' value='{if isset($getDefaultiosJailbreak)}{$getDefaultiosJailbreak}{else}0{/if}' class="product_price" />
                                                 
                                                                     <ul>
@@ -195,17 +195,11 @@
                                                                         </li>
                                                                     {/foreach}
                                                                     </ul>
-                                                                    <div class="double_offer checkbox">
-                                                                        <label>
-                                                                            <input type="checkbox" data-group="jailbreak">
-                                                                            Get the 2nd plan with <span>40% OFF!</span>
-                                                                        </label>
-                                                                    </div>
-                                                                    <button class="btn btn-default ga-action-submit" 
+                                                                    <button class="btn btn-default disabled ga-action-submit"
                                                                             ga-action ="click"
                                                                             ga-category="iphone-with-jailbreak-monitoring"
                                                                             ga-label="buy jailbreak"
-                                                                            value="true" type="submit" name="price[submit]">Buy Now</button>
+                                                                            value="true" type="submit" name="price[submit]">DISCONTINUED</button>
                                                                     <!-- <div class="show_basic_features"><a href="#">Show Basic features</a>
                                                                     </div> -->
                                                                 </form>
@@ -260,7 +254,7 @@
                                                                 <div class="basic_wr padding-none-list-sm">
                                                                     <div class="priceb border-none">
                                                                         <div class="basic_fe basic_fe_mobile_block reset-list">
-                                                                            <ul class="list_price-no-link">
+                                                                            <ul class="list_price-no-link features-center">
                                                             
                                                                                 <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> Removal Protection <span>The app is protected with password. Thus, no one else but you can remove it.</span></li>
                                                                                 <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i> SMS Commands  <span>Sent text messages to manipulate the target device remotely, even without Internet connection:</span>
@@ -279,7 +273,7 @@
                                                                 <div class="basic_wr padding-none-list-sm bb-media-sm">
                                                                     <div class="pricep">
                                                                         <div class="basic_fe basic_fe_mobile_block reset-list">
-                                                                            <ul class="list_price-no-link">
+                                                                            <ul class="list_price-no-link features-center">
                                                             
                                                                                 <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i>Removal Protection <span>Control Panel can be accessed from any browser and any computer or mobile gadget (smartphones and tablets).</span></li>
                                                                                 <li data-toggle="tooltip" data-placement="top" title=""><i class="icon-ok"></i>SIM-Card Change Alert <span>In case a SIM-card on the target device is changed, you will receive an email notification.</span>
@@ -356,7 +350,7 @@
                                                         </div>
                                                                 
                                                         <div class="list_price">
-                                                            <form name="price_basic_bottom" method="POST" action="/buy.html" class="buy-form-with-offer" autocomplete="off">
+                                                            <form name="price_basic_bottom" method="POST" action="#" class="buy-form-with-offer" autocomplete="off">
                                                                 <input id='product_price_basic' type='hidden' name='price[productID]' value='{if isset($getDefaultBasic)}{$getDefaultBasic}{else}0{/if}' class="product_price" />
 
                                                                 <ul>
@@ -386,17 +380,11 @@
                                                                     </li>
                                                                 {/foreach}
                                                                 </ul>
-                                                                <div class="double_offer checkbox">
-                                                                    <label>
-                                                                        <input type="checkbox" data-group="jailbreak">
-                                                                        Get the 2nd plan with <span>40% OFF!</span>
-                                                                    </label>
-                                                                </div>
-                                                                <button class="btn btn-default ga-action-submit" 
+                                                                <button class="btn btn-default disabled ga-action-submit"
                                                                         ga-action ="click"
                                                                         ga-category="iphone-with-jailbreak-monitoring"
                                                                         ga-label="buy jailbreak"
-                                                                        value="true" type="submit" name="price[submit]">Buy Now</button>
+                                                                        value="true" type="submit" name="price[submit]">DISCONTINUED</button>
                                                                 <!-- <div class="show_basic_features"><a href="#">Show Basic features</a>
                                                                 </div> -->
                                                             </form>
@@ -550,6 +538,13 @@
     <style>
         .basic_wr .priceb, .premium_wr .pricep{
             margin-top: 0;
+        }
+
+        @media (max-width: 700px) {
+            .basic_wr .priceb {
+                margin-top: 0px;
+                padding-top: 0;
+            }
         }
     </style>
 </body>

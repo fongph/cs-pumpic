@@ -26,7 +26,7 @@
             <div id="fly_top">
                 <h2 id="fly-features-h2" class="text-yellow">NEW!</h2>
                 <p class="fly-label">iCloud monitoring</p>
-                <p><span class="fly-versions"><span class="icon-apple-fly"></span> iOS 6.0 - 10.2.1</span></p>
+                <p><span class="fly-versions"><span class="icon-apple-fly"></span> iOS {$ver_icloud_bot} - {$ver_icloud_up}</span></p>
                 <p class="text-yellow last">No Jailbreak Solution!</p>
                 <a class="features-button"  href="/icloud-iphone-without-jailbreak-monitoring.html">See Details</a>
             </div>
@@ -129,8 +129,8 @@
                                             </p>
 
                                             <ul class="compatibility compatibility-lg">
-                                                <li><i class="icon-android"></i> (2.2 - 6.0.1)</li>
-                                                <li><i class="icon-apple"></i> (6.0 - 10.2.1)</li>
+                                                <li><i class="icon-android"></i> ({$ver_android_bot} - {$ver_android_up})</li>
+                                                <li><i class="icon-apple"></i> ({$ver_icloud_bot} - {$ver_icloud_up})</li>
                                             </ul>
                                             <div class='mt10'>
                                                 <div id='block-promo-buy' class="bb-p-buy- banner-header-package">
@@ -167,6 +167,7 @@
                                 <h2 class="h2 text-center">Why Parental Control Is Essential</h2>
                                 <div class="pt30 pb20">
                                     <p>Smartphones and tablets connected to the Internet have become a trivial part of our world. Everyone’s got one. Meanwhile, many children find out how to use mobile devices before they can actually speak. And all these technologies go along kids’ lives, make them more curios, help to educate themselves, and very often expose them to danger.</p>
+                                    <div></div>
                                     <p>Cyberbullies insult kids on social media; haunt and offend them on instant chats. This horrible issue is known to be a major suicide factor among teens. Online predators try to gain children’s confidence and make them swallow the hook. Sexting is becoming a normal way of communication, while exchanging nude photos – the best way to show one’s feelings. Moreover, the Internet is full of explicit sexuality, violence, and hate. Our kids have unlimited access to all of this. At any time. With one single click. On their smartphone and tablets. And parents don’t know.</p>
                                     <p><a class="a-default" href="{$schema}{$domain}/android-parental-monitoring.html">Android parental monitoring applications</a> allow parents to bring the situation under control and protect their children. Pumpic is a good example of reliable protection in this case. Such software lets you follow kids’ activities on mobile devices as well as the Internet. Apply parental controls and see what your kids are texting, which websites they visit and people they talk to. Block undesired content inappropriate for kids. Block apps and other activities to prevent them from wasting time.</p>
                                     <p>Check out our list below and choose the best Android parental control app.</p>
@@ -508,7 +509,7 @@
                     "vars": {
                         "eventCategory": "AMP",
                         "eventAction": "click",
-                        "eventLabel": "LearnMore-AMP"
+                        "eventLabel": "LearnMore-best-free-parental-control-apps-for-android"
                     }
                 }
             }

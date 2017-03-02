@@ -14,6 +14,9 @@ Disallow: /wp-content
 Disallow: /store-mobile.html
 Disallow: /store-desktop.html
 Disallow: /store-sub-new-1.html
+Disallow: /store-sub-new-2.html
+Disallow: /store-sub-new-2202.html
+Disallow: /store-sub-new-3.html
 Disallow: /store-sub-new-hyp1.html
 Disallow: /store-android.php
 Disallow: /wp-admin
@@ -29,5 +32,5 @@ Allow: /wp-content/uploads/
 User-agent: Googlebot-Image
 Allow: /wp-content/uploads/
 
-Sitemap: http://pumpic.com/sitemap.xml
-Sitemap: http://pumpic.com/security/sitemap.xml
+Sitemap: https://pumpic.com/sitemap.xml
+Sitemap: https://pumpic.com/security/sitemap.xml

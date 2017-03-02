@@ -133,7 +133,7 @@
                                                 <div class="dtable-cell">
                                                 <div class="wrapper_pack">
                                                     <div class="wr_pack_premium wr_icloud _single-pack-icloud" style="margin-top: 12px;"></div>
-                                                    <div class="wr_pack_double_premium wr_icloud-double _double-pack-icloud"></div>
+                                                    {*<div class="wr_pack_double_premium wr_icloud-double _double-pack-icloud"></div>*}
 
                                                 </div>
                                                 </div>
@@ -178,12 +178,6 @@
                                                             </li>
                                                         {/foreach}
                                                     </ul>
-                                                    <div class="double_offer checkbox">
-                                                        <label>
-                                                            <input type="checkbox" data-group="icloud" name="get-40off">
-                                                            Get the 2nd plan with <span>40% OFF!</span>
-                                                        </label>
-                                                    </div>
                                                     <button class="btn btn-default ga-action-click" 
                                                             ga-action ="click"
                                                             ga-category="iphone-tracking-software"
@@ -248,7 +242,7 @@
                                                 <div class="dtable-cell">
                                                     <div class="wrapper_pack">
                                                         <div class="wr_pack_premium wr_icloud_jb _single-pack-jailbreak" style="margin-top: 12px;"></div>
-                                                        <div class="wr_pack_double_premium wr_icloud_jb-double _double-pack-jailbreak"></div>
+                                                        {*<div class="wr_pack_double_premium wr_icloud_jb-double _double-pack-jailbreak"></div>*}
                                                     </div>
                                                 </div>
                                                 <div class="dtable-cell">
@@ -262,7 +256,7 @@
                                                 </div>
                                             </div>
                                             <div class="list_price">
-                                                <form name="price_premium" method="POST" action="/buy.html" class="buy-form-with-offer" autocomplete="off">
+                                                <form name="price_premium" method="POST" action="#" class="buy-form-with-offer" autocomplete="off">
                                                     <input id='product_price_premium1' type='hidden' name='price[productID]' value='{if isset($getDefaultiosJailbreak)}{$getDefaultiosJailbreak}{else}0{/if}' class="product_price"/>
 
                                                     <ul>
@@ -292,18 +286,12 @@
                                                             </li>
                                                         {/foreach}
                                                     </ul>
-                                                    <div class="double_offer checkbox">
-                                                        <label>
-                                                            <input type="checkbox" data-group="jailbreak" name="get-40off">
-                                                            Get the 2nd plan with <span>40% OFF!</span>
-                                                        </label>
-                                                    </div>
 
-                                                    <button class="btn btn-default ga-action-click"
+                                                    <button class="btn btn-default ga-action-click disabled"
                                                             ga-action ="click"
                                                             ga-category="iphone-tracking-software"
                                                             ga-label="buy jailbreak"
-                                                            value="true" type="submit" name="price[submit]">Buy Now</button>
+                                                            value="true" type="submit" name="price[submit]">DISCONTINUED</button>
                                                     <!--   <div class="show_premium_features"><a href="#">Show Premium features</a>
                                                       </div> -->
                                                 </form>

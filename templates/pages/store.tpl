@@ -119,7 +119,7 @@ description="Pumpic offers high-quality cell phone tracking software for a good 
                                                             <span class="prod-head__device tablet">iPad</span>
                                                             <span class="prod-head__device smart">iPod Touch</span>
                                                         </p>
-                                                        <p class="prod-head__price"><span>starting from </span><b>${if (isset($subSame) && $subSame === true)}6.66{elseif (isset($subNew) && $subNew === true)}12.49{else}6.99{/if}/</b><span> month</span></p>
+                                                        <p class="prod-head__price"><span>starting from </span><b>${if (isset($subPage1) && $subPage1 === true)}7.49{elseif (isset($subPage2) && $subPage2 === true)}6.45{else}6.99{/if}/</b><span> month</span></p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -172,18 +172,10 @@ description="Pumpic offers high-quality cell phone tracking software for a good 
                                         <div data-info-block="ios">
                                             <div class="premium_wr prod-icloud">
                                                 <div class="pricep">
-                                                    <div class="save__2plan">
-                                                        <div class="save__text label-touch">
-                                                            <input type="checkbox" id="icloud-40off-main" data-checkboxes="get-40off">
-                                                            <label for="icloud-40off-main">
-                                                                <span>Save 40%</span> on the 2nd plan. <div class="limited-time">Limited time offer!</div>
-                                                            </label>
-                                                        </div>
-                                                    </div>
                                                     <div class="buy-wrapper hidden-xs">
                                                     <div class="wrapper_pack clearfix">
                                                         <div class="wr_pack_premium wr_icloud _single-pack-icloud"></div>
-                                                        <div class="wr_pack_double_premium wr_icloud-double _double-pack-icloud"></div>
+                                                        {*<div class="wr_pack_double_premium wr_icloud-double _double-pack-icloud"></div>*}
                                                         <div class="wr_price_big">
                                                             <span></span><div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr icloud-price-per-month" >{$defaultIosiCloudPrice}</div></div><span class="_period">/ month</span>
                                                         </div>
@@ -228,16 +220,10 @@ description="Pumpic offers high-quality cell phone tracking software for a good 
                                                                     </li>
                                                                 {/foreach}
                                                             </ul>
-                                                            <div class="double_offer checkbox">
-                                                                <label>
-                                                                    <input type="checkbox" data-group="icloud" name="get-40off">
-                                                                    Get the 2nd plan with <span>40% OFF!</span>
-                                                                </label>
-                                                            </div>
                                                             <button class="btn btn-default ga-action-click"
                                                                     ga-action ="click"
                                                                     ga-category="{if $smarty.server.REQUEST_URI !== '/store.html'}Split_test{else}store{/if}"
-                                                                    ga-label="{if $smarty.server.REQUEST_URI == '/store-sub-new-1.html'}buy_sub_new-1{elseif $smarty.server.REQUEST_URI == '/store-sub-new-hyp1.html'}buy_sub_new-hyp1{else}buy icloud{/if}"
+                                                                    ga-label="{if (isset($subPage1) && $subPage1 === true)}buy_sub_new-2202{elseif (isset($subPage2) && $subPage2 === true)}buy_sub_new-3{else}buy icloud{/if}"
                                                                     value="true" type="submit" name="price[submit]">Buy</button>
                                                         </form>
                                                         {*<div class="show_premium_features _icloud-f"><div class="show-f _icloud-f">Show features <i class="fa fa-chevron-down"></i></div><div class="hide-f _icloud-f" style="display: none;">Hide features  <i class="fa fa-chevron-up"></i></div></div>*}
@@ -250,11 +236,11 @@ description="Pumpic offers high-quality cell phone tracking software for a good 
                                                         </div>
                                                         <ul class="icloud-features m0">
                                                             <li class="icloud-features__item">
-                                                                <p class="icloud-features__name"><i class="icon-ok"></i>Calls history <span>(unlimited)</span></p>
+                                                                <p class="icloud-features__name"><i class="icon-ok"></i>Calls history</p>
                                                                 <p class="icloud-features__info m0">View detailed data on incoming/outgoing calls: name, phone number, time and duration.</p>
                                                             </li>
                                                             <li class="icloud-features__item">
-                                                                <p class="icloud-features__name"><i class="icon-ok"></i>Text message history <span>(unlimited)</span></p>
+                                                                <p class="icloud-features__name"><i class="icon-ok"></i>Text message history</p>
                                                                 <p class="icloud-features__info m0">View text content and supported attachments sent or received via SMS, MMS, and iMessages.</p>
                                                             </li>
                                                             <li class="icloud-features__item">
@@ -316,20 +302,13 @@ description="Pumpic offers high-quality cell phone tracking software for a good 
                                                     <div class="prod-icloud prod-2">
                                                         <div class="wrapper_pack wrapper_pack2 clearfix">
                                                             <div class="wr_pack_premium wr_icloud _single-pack-icloud"></div>
-                                                            <div class="wr_pack_double_premium wr_icloud-double _double-pack-icloud"></div>
+                                                            {*<div class="wr_pack_double_premium wr_icloud-double _double-pack-icloud"></div>*}
                                                             <div class="wr_price_big">
                                                                 <span></span><div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr icloud-price-per-month">{$defaultiCloudProduct}</div></div><span class="_period">/ month</span>
                                                             </div>
                                                         </div>
                                                         <div class="list_price icloud-list_price" id="foot_h4">
                                                             <form name="price_premium_bottom" method="POST" action="/buy.html" class="buy-form-with-offer" autocomplete="off">
-                                                                <div class="save__2plan save__second" style="top: 0;">
-                                                                    <div class="save__text label-touch">
-                                                                        <input type="checkbox" data-group="icloud" name="icloud-40off" id="icloud-40off-main" data-checkboxes="icloud-40off">
-                                                                        <label for="icloud-40off-main">
-                                                                        <span>Save 40%</span> on the 2nd plan. <div class="limited-time">Limited time offer!</div></label>
-                                                                    </div>
-                                                                </div>
                                                                 <input id='product_price_premium' type='hidden' name='price[productID]' value='{if isset($defaultIosiCloud)}{$defaultIosiCloud}{else}0{/if}' class="product_price" />
                                                                 <ul>
                                                                     {foreach from=$getProducts.iosiCloud key=key item=item}
@@ -359,16 +338,10 @@ description="Pumpic offers high-quality cell phone tracking software for a good 
                                                                         </li>
                                                                     {/foreach}
                                                                 </ul>
-                                                                <div class="double_offer checkbox">
-                                                                    <label>
-                                                                        <input type="checkbox" data-group="icloud" name="get-40off">
-                                                                        Get the 2nd plan with <span>40% OFF!</span>
-                                                                    </label>
-                                                                </div>
                                                                 <button class="btn btn-default ga-action-click"
                                                                         ga-action ="click"
                                                                         ga-category="{if $smarty.server.REQUEST_URI !== '/store.html'}Split_test{else}store{/if}"
-                                                                        ga-label="{if $smarty.server.REQUEST_URI == '/store-sub-new-1.html'}buy_sub_new-2{elseif $smarty.server.REQUEST_URI == '/store-sub-new-hyp1.html'}buy_sub_new-hyp2{else}buy icloud{/if}"
+                                                                        ga-label="{if (isset($subPage1) && $subPage1 === true)}buy_sub_new-2202-2{elseif (isset($subPage2) && $subPage2 === true)}buy_sub_new-33{else}buy icloud{/if}"
                                                                         value="true" type="submit" name="price[submit]">Buy</button>
                                                             </form>
                                                             {*<div class="space_line">&nbsp;</div>*}

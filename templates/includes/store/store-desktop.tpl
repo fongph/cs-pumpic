@@ -1,11 +1,3 @@
-    <div class="save__2plan android">
-        <div class="save__text label-touch">
-            <input type="checkbox" id="android-40off-main" data-checkboxes="android-40off">
-            <label for="android-40off-main">
-            <span>Save 40%</span> on the 2nd plan. <div class="limited-time">Limited time offer!</div>
-            </label>
-        </div>
-    </div>
     <div class="basic_wr">
         <div class="basic_h">
             Basic
@@ -13,7 +5,7 @@
         <div class="priceb">
             <div class="wrapper_pack clearfix">
                 <div class="wr_pack_basic android_basic_pack _single-pack-android-basic"></div>
-                <div class="wr_pack_double_basic android_basic_pack2 _double-pack-android-basic"></div>
+                {*<div class="wr_pack_double_basic android_basic_pack2 _double-pack-android-basic"></div>*}
                 <div class="wr_price_big">
                     <span></span><div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr andr-basic-price-per-month">{$defaultAndriodBasicPrice}</div></div><span> / month</span>
                 </div>
@@ -23,10 +15,10 @@
 
                     <input id='product_price_basic' type='hidden' name='price[productID]' value="{$defaultAndriodBasic}" class="product_price" />
                     <ul>
-                        {foreach from=$getProducts.androidBasic key=key item=item}
+                        {foreach from=$getProducts.androidBasic key=key item=item name=products}
                             <li>
                                 <label class="label_radio hover_label_radio {if $item.period == '12'}r_on{else}r_off{/if}">
-                                    <input class="data-price" data-target=".andr-basic-price-per-month" data-cur="usd" data-price-usd="{$item.price}" data-offer-price-usd="{$getProducts.androidBasicDouble[$key].price}" data-period="{$item.period}" data-product="{$item.id}" data-offer-product="{$getProducts.androidBasicDouble[$key].id}" data-group="android-basic"  name="optionsRadios" id="optionsRadios{$item.id}1" value="{$item.id}" type="radio" />
+                                    <input class="data-price" data-target=".andr-basic-price-per-month" data-cur="usd" data-price-usd="{$item.price}" data-offer-price-usd="{$getProducts.androidBasicDouble[$key].price}" data-period="{$item.period}" data-product="{$item.id}" data-offer-product="{$getProducts.androidBasicDouble[$key].id}" data-group="android-basic"  name="optionsRadios" id="optionsRadios{$item.id}1" value="{$item.id}" type="radio" {if $smarty.foreach.products.last}checked="checked"{/if} />
                                     <span class="sp">
                                                                             <strong>{$item.period}</strong> {if $item.period == 1}month{else}months{/if}
                                                                         </span>
@@ -49,7 +41,6 @@
                             </li>
                         {/foreach}
                     </ul>
-                    <input type="checkbox" data-group="android-basic" name="android-40off" class="hidden">
                     <button class="btn btn-default ga-action-click"
                             ga-action ="click"
                             ga-category="store"
@@ -67,7 +58,7 @@
         <div class="pricep">
             <div class="wrapper_pack clearfix">
                 <div class="wr_pack_premium android_prem_pack _single-pack-android-prem"></div>
-                <div class="wr_pack_double_premium android_prem_pack2 _double-pack-android-prem"></div>
+                {*<div class="wr_pack_double_premium android_prem_pack2 _double-pack-android-prem"></div>*}
                 <div class="wr_price_big">
                     <span></span><div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr andr-premium-price-per-month">{$defaultAndroidPremiumPrice}</div></div><span>/ month</span>
                 </div>
@@ -104,12 +95,6 @@
                         {/foreach}
                     </ul>
                     </ul>
-                    <div class="double_offer checkbox">
-                        <label>
-                            <input type="checkbox" data-group="android-prem" name="android-40off">
-                            Get the 2nd plan with <span>40% OFF!</span>
-                        </label>
-                    </div>
                     <button class="btn btn-default ga-action-click"
                             ga-action ="click"
                             ga-category="store"
@@ -214,14 +199,6 @@
         <span class="free-label__item"><i class="icon-ok"></i>Sim card change alert</span>
     </div>
     <div class="clearfix" style="position: relative;">
-        <div class="save__2plan android">
-            <div class="save__text label-touch">
-                <input type="checkbox" name="android-40off" id="android-40off-main" data-checkboxes="android-40off">
-                <label for="android-40off-main">
-                <span>Save 40%</span> on the 2nd plan. <div class="limited-time">Limited time offer!</div>
-                </label>
-            </div>
-        </div>
         <div class="basic_wr">
             <div class="basic_h" id="foot_h1">
                 Basic
@@ -241,10 +218,10 @@
                         <input id='product_price_basic' type='hidden' name='price[productID]' value="{$defaultAndroidBasicProduct}" class="product_price" />
 
                         <ul>
-                            {foreach from=$getProducts.androidBasic key=key item=item}
+                            {foreach from=$getProducts.androidBasic key=key item=item name=products}
                                 <li>
                                     <label class="label_radio hover_label_radio {if $item.period == '12'}r_on{else}r_off{/if}">
-                                        <input class="data-price" data-target=".andr-basic-price-per-month" data-cur="usd" data-price-usd="{$item.price}" data-offer-price-usd="{$getProducts.androidBasicDouble[$key].price}" data-period="{$item.period}" data-product="{$item.id}" data-offer-product="{$getProducts.androidBasicDouble[$key].id}" data-group="android-basic"  name="optionsRadios" id="optionsRadios{$item.id}2" value="{$item.id}" type="radio" />
+                                        <input class="data-price" data-target=".andr-basic-price-per-month" data-cur="usd" data-price-usd="{$item.price}" data-offer-price-usd="{$getProducts.androidBasicDouble[$key].price}" data-period="{$item.period}" data-product="{$item.id}" data-offer-product="{$getProducts.androidBasicDouble[$key].id}" data-group="android-basic"  name="optionsRadios" id="optionsRadios{$item.id}2" value="{$item.id}" type="radio" {if $smarty.foreach.products.last}checked="checked"{/if} />
                                         <span class="sp">
                                                                             <strong>{$item.period}</strong> {if $item.period == 1}month{else}months{/if}
                                                                         </span>
@@ -267,7 +244,6 @@
                                 </li>
                             {/foreach}
                         </ul>
-                        <input type="checkbox" data-group="android-basic" name="android-40off" class="hidden">
                         <button class="btn btn-default ga-action-click"
                                 ga-action ="click"
                                 ga-category="store"

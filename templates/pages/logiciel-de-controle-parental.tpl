@@ -195,12 +195,6 @@
                                                                         </li>
                                                                     {/foreach}
                                                                 </ul>
-                                                                <div class="double_offer checkbox">
-                                                                    <label>
-                                                                        <input type="checkbox" data-group="icloud" name="get-40off">
-                                                                        Économisez 40% <span>sur le 2ème achat!</span>
-                                                                    </label>
-                                                                </div>
                                                                 <button class="btn btn-default ga-action-click"
                                                                         ga-action ="click"
                                                                         ga-category="store"
@@ -353,12 +347,6 @@
                                                                     </li>
                                                                 {/foreach}
                                                             </ul>
-                                                            <div class="double_offer checkbox">
-                                                                <label>
-                                                                    <input type="checkbox" data-group="android-basic" name="android-40off">
-                                                                    Économisez 40% <span>sur le 2ème achat!</span>
-                                                                </label>
-                                                            </div>
                                                             <button class="btn btn-default ga-action-click"
                                                                     ga-action ="click"
                                                                     ga-category="store"
@@ -411,14 +399,7 @@
                                                                     </li>
                                                                 {/foreach}
                                                             </ul>
-                                                            </ul>
-                                                            <div class="double_offer checkbox">
 
-                                                                <label>
-                                                                    <input type="checkbox" data-group="android-prem" name="android-40off">
-                                                                    Économisez 40% <span>sur le 2ème achat!</span>
-                                                                </label>
-                                                            </div>
                                                             <button class="btn btn-default ga-action-click"
                                                                     ga-action ="click"
                                                                     ga-category="store"

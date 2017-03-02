@@ -5,17 +5,7 @@
     
 <body>
 <style>
-    .double_offer.checkbox {
-        display: block;
-        line-height: 1.6;
-    }
-    .double_offer label {
-        text-align: left;
-    }
-    .double_offer label input {
-        margin-top: 7px;
-    }
-    .premium_wr .pricep {
+ium_wr .pricep {
         margin-top: 0;
     }
     @media (max-width: 700px) {
@@ -145,7 +135,7 @@
                                                     <div class="buy-wrapper">
                                                         <div class="wrapper_pack clearfix">
                                                             <div class="wr_pack_premium wr_icloud _single-pack-icloud"></div>
-                                                            <div class="wr_pack_double_premium wr_icloud-double _double-pack-icloud"></div>
+                                                            {*<div class="wr_pack_double_premium wr_icloud-double _double-pack-icloud"></div>*}
                                                             <div class="wr_price_big">
                                                                 <span></span><div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr icloud-price-per-month" >{$defaultIosiCloudPrice}</div></div><span>/ mês</span>
                                                             </div>
@@ -188,12 +178,6 @@
                                                                         </li>
                                                                     {/foreach}
                                                                 </ul>
-                                                                <div class="double_offer checkbox">
-                                                                    <label>
-                                                                        <input type="checkbox" data-group="icloud" name="get-40off">
-                                                                        ¡Conseguir el 2do plano con un <br><span>40% de descuento!</span>
-                                                                    </label>
-                                                                </div>
                                                                 <button class="btn btn-default ga-action-click"
                                                                         ga-action ="click"
                                                                         ga-category="store"
@@ -289,7 +273,7 @@
                                                     <div class="priceb">
                                                         <div class="wrapper_pack clearfix"  style="margin-top: 0;">
                                                             <div class="wr_pack_basic android_basic_pack _single-pack-android-basic"></div>
-                                                            <div class="wr_pack_double_basic android_basic_pack2 _double-pack-android-basic"></div>
+                                                            {*<div class="wr_pack_double_basic android_basic_pack2 _double-pack-android-basic"></div>*}
                                                             <div class="wr_price_big">
                                                                 <span></span><div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr andr-basic-price-per-month">{$defaultAndriodBasicPrice}</div></div><span> / mês</span>
                                                             </div>
@@ -325,12 +309,6 @@
                                                                         </li>
                                                                     {/foreach}
                                                                 </ul>
-                                                                <div class="double_offer checkbox">
-                                                                    <label>
-                                                                        <input type="checkbox" data-group="android-basic" name="android-40off">
-                                                                        ¡Conseguir el 2do plano con un <br><span>40% de descuento!</span>
-                                                                    </label>
-                                                                </div>
                                                                 <button class="btn btn-default ga-action-click"
                                                                         ga-action ="click"
                                                                         ga-category="store"
@@ -347,7 +325,7 @@
                                                     <div class="pricep">
                                                         <div class="wrapper_pack clearfix" style="margin-top: 0;">
                                                             <div class="wr_pack_premium android_prem_pack _single-pack-android-prem"></div>
-                                                            <div class="wr_pack_double_premium android_prem_pack2 _double-pack-android-prem"></div>
+                                                            {*<div class="wr_pack_double_premium android_prem_pack2 _double-pack-android-prem"></div>*}
                                                             <div class="wr_price_big">
                                                                 <span></span><div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr andr-premium-price-per-month">{$defaultAndroidPremiumPrice}</div></div><span>/ mês</span>
                                                             </div>
@@ -384,13 +362,6 @@
                                                                     {/foreach}
                                                                 </ul>
                                                                 </ul>
-                                                                <div class="double_offer checkbox">
-
-                                                                    <label>
-                                                                        <input type="checkbox" data-group="android-prem" name="android-40off">
-                                                                        ¡Conseguir el 2do plano con un <br><span>40% de descuento!</span>
-                                                                    </label>
-                                                                </div>
                                                                 <button class="btn btn-default ga-action-click"
                                                                         ga-action ="click"
                                                                         ga-category="store"

@@ -65,7 +65,7 @@ if(isset($_SERVER['HTTP_X_REQUESTED_WITH']) && !empty($_SERVER['HTTP_X_REQUESTED
     if(isset($_POST['email']) and !$_mail->validateEmail($_POST['email'])) 
        $_result['error']['email'] = "The Email field is empty";
 
-    if(isset($_POST['captcha']) and !$_mail->validateCaptcha( $_POST['captcha'] )) 
+    if(isset($_POST['captcha']) and !$_mail->validateCaptcha( $_POST['captcha'] ))
         $_result['error']['captcha'] = "Invalid CAPTCHA.";
 
     if(isset($_POST['os']) and empty($_POST['os']))

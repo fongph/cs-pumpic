@@ -9,6 +9,10 @@ Deny from 54.186.60.77
 RewriteEngine on
 RewriteBase /
 
+RewriteCond %{SERVER_PORT} !^443$
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://pumpic.com/$1 [R=301,L]
+
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?semalt\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?buttons\-for\-website\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?buttons\-for\-your\-website\.com.*$ [NC,OR]
@@ -132,14 +136,14 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?lumb\.co.*$ [NC]
 RewriteRule .* - [F]
 
 RewriteCond %{HTTP_HOST} ^www\.pumpic\.com
-RewriteRule ^(.*)$ http://pumpic.com/$1 [NC,R=301,L]
+RewriteRule ^(.*)$ https://pumpic.com/$1 [NC,R=301,L]
 
 
 
 RewriteRule ^compatibility/samsung\-i9300\-galaxy\-s\-iii\-\(s3\)/$ compatibility/samsung-galaxy-s3/ [L,R=301]
 
 RewriteRule ^pricing\.html$ store\.html [L,R=301]
-RewriteRule ^index\.html$ http://pumpic.com/ [L,R=301]
+RewriteRule ^index\.html$ https://pumpic.com/ [L,R=301]
 RewriteRule ^login\.html$ https://cp.pumpic.com/ [L,R=301]
 RewriteRule ^features\.html$ all-features\.html [L,R=301]
 RewriteRule ^compatibility\.html$ compatibility/ [L,R=301]
@@ -148,6 +152,7 @@ RewriteRule ^pumpic-app-in-different-countries$ pumpic-app-in-different-countrie
 RewriteRule ^pumpic-app-in-different-countries/index\.html$ pumpic-app-in-different-countries/ [L,R=301]
 RewriteRule ^learning-center/ready\-solutions\.html$ learning-center/ready\-solutions/ [L,R=301]
 RewriteRule ^android-parental-monitoring\.html$ android-parental-monitoring/ [L,R=301]
+RewriteRule ^parental-control-on-youtube-android/$ parental-control-on-youtube-android\.html [L,R=301]
 RewriteRule ^limitly-parental-app/index\.html$ limitly-parental-app/ [L,R=301]
 RewriteRule ^internet-safety-rules-for-kids\.html\x25E2\x2580\x259D$ internet-safety-rules-for-kids\.html [L,R=301]
 

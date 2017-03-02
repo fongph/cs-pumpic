@@ -10,11 +10,11 @@ $obj = new includes\lib\users\Order;
 
 // smarty config
 require_once 'smarty.config.php';
+
 /* list order */
-
-$products = $obj ->getProducts('second-new-1');
-
-
+$products = $obj ->getProducts('second-new-3');
+//echo '<pre>';
+// var_dump($products);
 /* form_order */
 $_request = (isset($_POST['price']) and !empty($_POST['price'])) ? $_POST['price']: false;
 if($_request['productID']) {
@@ -39,17 +39,9 @@ if($_request['productID']) {
 if(is_array($products)) {
     if(isset($products['iosiCloud'])) {
         foreach($products['iosiCloud'] as $item) :
-            if ($item['period'] == 12 && $item['id']) {
+            if ($item['period'] == 24 && $item['id']) {
                 $smarty->assign('defaultIosiCloudProduct', $item['id']);
                 $smarty->assign('defaultIosiCloudPrice', round($item['price'] / $item['period'], 2));
-            }
-        endforeach;
-    }
-    if(isset($products['iosJailbreak'])) {
-        foreach($products['iosJailbreak'] as $item) :
-            if ($item['period'] == 12 && $item['id']) {
-                $smarty->assign('defaultJailbreakProduct', $item['id']);
-                $smarty->assign('defaultJailbreakPrice', round($item['price'] / $item['period'], 2));
             }
         endforeach;
     }
@@ -77,11 +69,13 @@ $_curr -> setFilter( ['iso' => ['USD','EUR','GBP','CAD','AUD'] ] );
 $_rates = $_curr -> getCurrencies();
 
 $smarty->assign('rates', json_encode($_rates));
-$smarty->assign('subSame', true);
+$smarty->assign('subPage2', true);
+
 
 // init output params!
 $smarty->assign('getProducts', $products);
-
+//echo '<pre>';
+//var_dump($products);die();
 $smarty->display($b_dir . '/templates/pages/store.tpl');
 
 

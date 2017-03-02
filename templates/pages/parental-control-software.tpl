@@ -70,6 +70,8 @@
             blockBg="light" 
             androidText = "<b>Rooting</b> is required to use some extended features"
             iosText = "<b>Jailbreak</b> is required before the installation"
+            onlyItem = "android"
+
         }  {* no_bg bg-wite *}
         
         <!-- BLOCK FEATURES -->
@@ -139,13 +141,7 @@
                                                                         </li>
                                                                     {/foreach}
                                                                 </ul>
-                                                                <div class="double_offer checkbox">
-                                                                    <label>
-                                                                        <input type="checkbox" data-group="premium">
-                                                                        Get the 2nd plan with <span>40% OFF!</span>
-                                                                    </label>
-                                                                </div>
-                                                                <button class="btn btn-default ga-action-submit mb20"
+                                                                <button class="btn btn-default ga-action-submit"
                                                                         ga-action ="click"
                                                                         ga-category="icloud-iphone-without-jailbreak-monitoring"
                                                                         ga-label="buy premium"
@@ -285,13 +281,7 @@
                                                                         </li>
                                                                     {/foreach}
                                                                 </ul>
-                                                                <div class="double_offer checkbox">
-                                                                    <label>
-                                                                        <input type="checkbox" data-group="premium">
-                                                                        Get the 2nd plan with <span>40% OFF!</span>
-                                                                    </label>
-                                                                </div>
-                                                                <button class="btn btn-default ga-action-submit mb20"
+                                                                <button class="btn btn-default ga-action-submit"
                                                                         ga-action ="click"
                                                                         ga-category="icloud-iphone-without-jailbreak-monitoring"
                                                                         ga-label="buy premium"

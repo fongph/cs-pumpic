@@ -2,6 +2,7 @@
 
     title="Instagram Monitoring App for Parents | Pumpic"
     description="Monitor uploaded pictures, comments, and friends posts on Instagram. Protect your children with reliable Instagram parental monitoring by Pumpic."
+    amp="{$schema}pumpic.com/amp/parental-control-for-instagram.html"
     customeStyle="
         .block-child-location-tracking .ipad-text {
             padding: 10px 0;

@@ -289,15 +289,9 @@
         <div id="block-content" class="dark">
             <div class="amp">
                 <div class="row">
-                    <div class="col-sm-12"><h2 class="h3">Over 24 Monitoring Features to Protect Your Kids</h2>
+                    <div class="col-sm-12"><h2 class="h3 text-center">Over 24 Monitoring Features to Protect Your Kids</h2>
                         <p>Mobile technologies have introduced new opportunities to our children. It is rather hard to imagine the entire range of functions a single smartphone can fulfill. That’s why when it comes to features that an Android monitoring software should include, it is crucial to consider as many as possible. The list below reflects Pumpic monitoring abilities and particular mobile phone functions you will be able to cover by using the app. They will help you follow each and every aspect of your kids’ lives and all of their activities remotely.</p>
-                        <table>
-                            <tbody>
-                            <tr>
-                                <td colspan="3">&nbsp;&nbsp;&nbsp;</td>
-                            </tr>
-                            </tbody>
-                        </table>
+
                         <ul class="table-container">
                             <li><i class="i-features-sms"></i><a class="no-link" href="/mobile-sms-spy.html">Monitor SMS
                                     and MMS</a><i class="icon-apple"></i><i class="icon-android"></i></li>

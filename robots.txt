@@ -17,6 +17,7 @@ Disallow: /store-sub-new-1.html
 Disallow: /store-sub-new-2.html
 Disallow: /store-sub-new-2202.html
 Disallow: /store-sub-new-3.html
+Disallow: /store-sub-new-0303.html
 Disallow: /store-sub-new-hyp1.html
 Disallow: /store-android.php
 Disallow: /wp-admin

@@ -58,7 +58,7 @@ $config = array(
 				'free-trial.html'  => 'free_trial_registration.php',
 
 				'store.html'  => 'store.php',
-				'store-sub-new-2202.html'  => 'store-sub-new-2202.php',
+				'store-sub-new-0303.html'  => 'store-sub-new-0303.php',
 				'store-android.php'  => 'store-android.php',
 				'aging-parent-protection-app.html' => 'aging-parent-protection-app.php',
 				'iphone-tracking-software.html'   => 'iphone_tracking_software.php',

@@ -361,13 +361,6 @@
     </div>
 </div>
 
-        <script>
-            $('.learn-more-link').click(function(e){
-                e.preventDefault();
-                $('.learn-more').toggle(300);
-            })
-        </script>
-
 
         <style>
             @media (max-width: 480px){
@@ -415,5 +408,11 @@
     </div>
 
     {include file='../includes/main/main-analytics-footer.tpl'}
+    <script>
+        $('.learn-more-link').click(function(e){
+            e.preventDefault();
+            $('.learn-more').toggle(300);
+        })
+    </script>
 </body>
 </html>

@@ -133,16 +133,9 @@
                                                 <li><i class="icon-apple"></i> ({$ver_icloud_bot} - {$ver_icloud_up})</li>
                                             </ul>
                                             <div class='mt10'>
-                                                <div id='block-promo-buy' class="bb-p-buy- banner-header-package">
-                                                    <section>
-                                                        <div class="new-icloud-feature">
-
-                                                            <div class="block-promo-sale"></div>
-                                                            <h2 class="block-promo-h2"><p class="text-yellow">Save 40%</p> on the 2nd plan.</h2>
-                                                        </div>
-                                                    </section>
+                                                <div>
                                                     <section class="vertical-aligh-middle">
-                                                        <a href="/store.html" id="learn-more-link"><button class="btn btn-default">Learn More</button></a>
+                                                        <a href="/store.html" id="view-pricing-link"><button class="btn btn-default">View Pricing</button></a>
                                                     </section>
                                                 </div>
                                             </div>
@@ -504,12 +497,12 @@
                 },
                 "learnMoreLink": {
                     "on": "click",
-                    "selector": "#learn-more-link",
+                    "selector": "#view-pricing-link",
                     "request": "event",
                     "vars": {
                         "eventCategory": "AMP",
                         "eventAction": "click",
-                        "eventLabel": "LearnMore-best-free-parental-control-apps-for-android"
+                        "eventLabel": "ViewPricing-best-free-parental-control-apps-for-android"
                     }
                 }
             }

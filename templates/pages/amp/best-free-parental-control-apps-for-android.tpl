@@ -38,7 +38,7 @@
                 </div>
                 <div class="fly-features_double-block">
 
-                    <a class="features-button" target="_blank" href="/store.html">Go to Store</a>
+                    <a class="features-button" target="_blank" href="/store.html#android">Go to Store</a>
                     <div class="fly_double_premium"></div>
 
                 </div>
@@ -82,7 +82,7 @@
                 <ul class="nav navbar-nav">
                     <li><a href="/">Home</a></li>
                     <li><a href="/all-features.html">Features</a></li>
-                    <li><a href="/store.html">Store</a></li>               <li><a href="/compatibility/">Compatibility</a>
+                    <li><a href="/store.html#android">Store</a></li>               <li><a href="/compatibility/">Compatibility</a>
                     </li>
                     <li><a href="/faq.html">Help &amp; Contacts</a></li>   <li><a href="/login.html">Sign in</a></li>
                 </ul>
@@ -135,7 +135,7 @@
                                             <div class='mt10'>
                                                 <div>
                                                     <section class="vertical-aligh-middle">
-                                                        <a href="/store.html" id="view-pricing-link"><button class="btn btn-default">View Pricing</button></a>
+                                                        <a href="/store.html#android" id="view-pricing-link"><button class="btn btn-default">View Pricing</button></a>
                                                     </section>
                                                 </div>
                                             </div>

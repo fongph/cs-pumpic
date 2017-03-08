@@ -78,7 +78,7 @@
             textAlign = "left"
             title = "Best Parental Control<br /> Software for Android"
             titleSize = "35px"
-            description = "Check popular and widely used Android market parental controls.<br />Use the best parental monitoring app. Choose Pumpic."
+            description = "Learn more about typical Android market parental controls out there.<br/>And see why you should choose Pumpic - best parental monitoring app."
             promoBuyBlock = "no"
             planPackageBuy = "yes"
             block_video = "yes"
@@ -108,78 +108,17 @@
     title=""
     blockBg='dark'}
 
-    <div id="grid-images" class="row">
-        <div class="col-lg-12 col-md-12 col-sm-12">
-            <h2 class="h3 text-left">Kidslox Review</h3>
-            <div class="pt30 pb20">
-                <img class="img-align-right" alt="kidslox mobile screen" src="{$img}/landings/best-android-parental-control-app/kidslox-review.png" width="207px" height="208px" />
-                <img class="app-icon-left" src="{$img}/landings/best-android-parental-control-app/kidslox-review-logo.png" alt="kidslox logo">
-			<p>The first parental control for Android to begin <a class='a-default' href='/reviews/'>our reviews</a> with is Kidslox. The app allows limiting screen time and blocking other applications on your children’s devices. With Kidslox, parents can block games and other entertainment apps, social media, and web browsers.</p>
-			<p>This parental control software will also let you specify schedules for using the target device as well as switch it from normal performance to restricted one. Kidslox is protected with a secret key. It means that your child will not be able to brake your limits or apply any other changes without your permission.</p>
-			<p>Kidslox will cost you $6.99. The main benefit of this parental control is also its disadvantage. The app allows blocking software activities, but is doesn’t provide any kind of monitoring. That’s why you will not be able to find out what is going on inside of e.g. social networks. Text message communication as well as visited web sources remain a secret for parents.</p>
-			<p>As soon as the application is downloaded and installed on the target device, a user can find all required support and assistance right from inside the Kidslox app. You should note that some of those who use this app complain of poor app performance and say that Kidslox very often fails to operate the way it is pointed out.  </p>
-            <p>Kidslox can prevent your children from using some particular applications by blocking them. However, there is nothing more available in the app for reliable security and all-round control.</p>
-			</div>
-        </div>
-    </div>
-{EndContent}
-
-{Content
-    styleTitle=""
-    title=""
-    blockBg='light'}
-
-
-        <div class="col-lg-12 col-md-12 col-sm-12">
-            <h2 class="h3 text-right">Techno-Parental Control Review</h3>
-            <div class="pt30 pb20">
-                <img class="img-align-left" alt="techno parental control mobile screen" src="{$img}/landings/best-android-parental-control-app/techno-parental-control-review.png" width="207px" height="208px" />
-                <img class="app-icon-right" src="{$img}/landings/best-android-parental-control-app/techno-parental-control-review-logo.png" alt="techno parental control logo">
-                <p>Techno-Parental Control will allows you lock down your children’s devices remotely previously having warned them about it. For this purpose, the app features a secure website from where parents can send their warning alerts. The website is easily accessible from any Internet connected device.</p>
-				<p>Parental controls provided by the app let parents apply complete lock down of the target device. It means that you will be able to motivate your children do their homework or arrange other home affairs without any confrontation. Such option will also be useful to prevent kids from using their smartphones and tablets at school. You can actually use Techno-Parental Control any time you consider that device use is inappropriate.</p>
-				<p>With Techno-Parental Control, you can set time limits on the target device to prevent your kids from using at some particular period. For example, you can set your limit from 9 pm to 9 am to not let your little one use his or her smartphone at bedtime. This option can be repeated automatically, so you will not need to set this particular restriction each time. In addition, you can unlock your restriction immediately remotely and at any time you need.</p>
-				<p>Techno-Parental Control costs $1.62. Meanwhile, its users admit that the app lacks many important features. Sure, you can use all this limits and lock down the target device. However, such kind of parental control is no different from taking your kid’s device away or putting a password on it.</p>
-            </div>
-    </div>
-
-{EndContent}
-
-{Content
-    styleTitle=""
-    title=""
-    blockBg='dark'}
-
-    <div id="grid-images" class="row">
-        <div class="col-lg-12 col-md-12 col-sm-12">
-            <h2 class="h3 text-left">Kid's Shell Review</h3>
-            <div class="pt30 pb20">
-                <img class="img-align-right" alt="kids shell mobile screen" src="{$img}/landings/best-android-parental-control-app/kids-shell-review.png" width="207px" height="208px" />
-                <img class="app-icon-left" src="{$img}/landings/best-android-parental-control-app/kids-shell-review-logo.png" alt="kids shell logo">
-			<p>This application is designed to make a parent’s smartphone or tablet safe for children. With help of Kids Shell, you can create a safe environment by selecting application that your kids are allowed to run on you device. Thus, your kid will not be able to call anyone, write a text message or open any app other than those approved.</p>
-			<p>By using Kid’s Shell, you can gather all application your children like in one secure place. He or she will not be able to click on ads and make in-app purchases. There is no opportunity for a kid to leave a shell, so you can rest assured that your restrictions work. The app is protected with a password for this purpose.</p>
-			<p>The app is free to install. However, the use of more extended features will cost you some extra money. In the PRO-version of Kid’s Shell, you will find a possibility to change wallpapers on the desktop, a built-in media player to let your child watch video from your device, an option to block incoming calls or allow them, timer control to specify limited periods for kids on your device. You will also be able to create separate folders and arrange everything, specify the number of workspaces, set quick-call contacts just in case, add widgets, and block Internet access.</p>
-			<p>Kid’s Shell seems to be really cool and easy-to-use, but its operation is far from comprehensive security. There are too many apps lacking that you can find in the table at the top of the page. Only all-round monitoring can ensure that your children are safe.</p>
-            </div>
-        </div>
-    </div>
-{EndContent}
-
-{Content
-    styleTitle=""
-    title=""
-    blockBg='light'}
-
 
         <div class="col-lg-12 col-md-12 col-sm-12">
             <h2 class="h3 text-right">Kids Zone Parental Controls Review</h3>
             <div class="pt30 pb20">
                 <img class="img-align-left" alt="kids zone mobile screen" src="{$img}/landings/best-android-parental-control-app/kids-zone-review.png" width="207px" height="208px" />
                 <img class="app-icon-right" src="{$img}/landings/best-android-parental-control-app/kids-zone-review-logo.png" alt="kids zone logo">
-                <p>The Kids Zone App allows creating a profile for your child on your smartphone or tablet. In the profile, you can choose application that you allows your child to use. In addition, you can select a unique wallpaper for your kid to enjoy his or her profile and set a secret password to prevent him or her from changing restrictions.</p>
-				<p>With help of Kids Zone, parents can prevent their children from using various phone activities and accessing restricted directories. You secure a separate kid zone applying app restrictions. This parental lock lets your kids safely use your device and enjoy playing games and other activities with no chance to get into trouble, face inappropriate content, or delete sensitive information from your cell phone.</p>
-				<p>The application also provides parents with an ability to apply time-outs. You can specify time during which your child can use your device. As soon as the time is over, your kid has no access to the gadget. To let your kid use the device again, you should rearrange limits.</p>
+                <p>The first parental control for Android to begin <a class='a-default' href='/reviews/'>our reviews</a> with is the Kids Zone App. It allows creating a profile for your child on your smartphone or tablet. In the profile, you can choose applications that you allow your child to use. In addition, you can select a unique wallpaper for your kid to enjoy his or her profile and set a secret password to prevent him or her from changing restrictions.</p>
+				<p>With the help of Kids Zone, parents can prevent their children from using various phone activities and accessing restricted directories. You secure a separate kid zone applying app restrictions. This parental lock lets your kids safely use your device and enjoy playing games and other activities with no chance to get into trouble, face inappropriate content, or delete sensitive information from your cell phone.</p>
+				<p>The application also provides parents with an ability to apply time-outs. You can specify the time during which your child can use your device. As soon as the time is over, your kid has no access to the gadget. To let your kid use the device again, you should rearrange limits.</p>
 				<p>Additionally, there are some other interesting features that the app provides. You can block making phone calls and sending text messages, accessing the Internet, and other device activities.</p>
-				<p>If you buy a PRO version of the app you will also be able to make individual profiles for each of your children. Moreover, a quick-to-call feature will become available to you. It means you will be able to quickly unlock the phone to take an incoming call.</p>
+				<p>If you buy a PRO version of the app, you will also be able to make individual profiles for each of your children. Moreover, a quick-to-call feature will become available to you. It means you will be able to quickly unlock the phone to take an incoming call.</p>
 				<p>Kids Zone is a good app, but many users point that it needs reasonable modifications to provide reliable security. Thus, you will need to get another application able to piece out a shortage of features Kids Zone lacks.</p>
             </div>
     </div>
@@ -189,7 +128,51 @@
 {Content
     styleTitle=""
     title=""
+    blockBg='light'}
+
+    <div id="grid-images" class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+            <h2 class="h3 text-left">Pumpic Review</h3>
+            <div class="pt30 pb20">
+                <img class="img-align-right" alt="kaspersky safe kids mobile screen" src="{$img}/landings/best-android-parental-control-app/pumpic-location-tracking.png" width="207px" height="208px" />
+                <img class="app-icon-left" src="{$img}/landings/best-android-parental-control-app/pumpic-mobile-monitoring-logo.png" style="margin-top: 15px;" alt="kaspersky safe kids logo">
+			<p>Pumpic parental monitoring app was designed to make a kid’s smartphone or tablet as safe to use as it is only possible. By utilizing Pumpic's comprehensive features, you can collect the most important information about your child's communications and online activity in one secure place – web-based Control Panel. The app is meant for ethical and legal monitoring, so its icon is visible on the phone's Applications dashboard. However, Pumpic is protected with a password, and thus, children cannot delete it or make any changes to the app's settings.</p>
+<p>Users can adopt either Pumpic Basic or Premium subscription, both compatible with Android 2.2-6.0.1. The only difference between them is the number of features. For the Basic subscription, it's 15, and for the Premium, it's 26 features.</p>
+<ul class="list-images">
+<li style="margin-left: 30px !important;"><img src="/images/landings/check-icon.png" alt="Check Mark" style="left: -30px;" />What's similar? With both solutions, you can view and/or block calls, SMS (<i>for the Basic, the monthly limit is 700 calls and 300 SMS</i>), visited websites, emails, photos, contacts, calendar. Applications management, location tracking, geofences setting are also available.</li>
+<li style="margin-left: 30px !important;"><img src="/images/landings/check-icon.png" alt="Check Mark" style="left: -30px;" />What's different? With the Premium, you can track unlimited calls and SMS, Skype, WhatsApp, Viber, Kik, Snapchat (text messages only) plus Instagram and Facebook. Apps and device management features are somewhat broader in the Premium subscription.</li>
+</ul>
+<p>Pumpic's functionality and reliability provide grounds to call it one of the best parental control software for Android available on the market. Among few drawbacks we can single out is that the root may be needed to take advantage of some monitoring features. Still, the app provides actionable insights to kids' digital lives and enables parents to protect their children from cyberbullying, sexting, online predators' attacks, objectionable content, and other online perils. At that, it is really cost-effective with the pricing starting at $5.33 per month for Basic and </br> $6.99 per month for Premium subscription.</p>
+<p>Altogether, these characteristics make Pumpic one of the apps that parents who decide to monitor their children should definitely try.</p>
+            </div>
+        </div>
+    </div>
+{EndContent}
+
+{Content
+    styleTitle=""
+    title=""
     blockBg='dark'}
+
+
+        <div class="col-lg-12 col-md-12 col-sm-12">
+            <h2 class="h3 text-right">My Mobile Watchdog Review</h3>
+            <div class="pt30 pb20">
+                <img class="img-align-left" alt="my mobile watchdog mobile screen" src="{$img}/landings/best-android-parental-control-app/my-mobile-watchdog-review.png" width="207px" height="208px" />
+                <img class="app-icon-right" src="{$img}/landings/best-android-parental-control-app/my-mobile-watchdog-review-logo.png" alt="my mobile watchdog logo">
+                <p>In the whole market of parental monitoring apps, My Mobile Watchdog is one of the best choices for those parents who want to have a whole number of options the manufacturer’s parental control misses in modern smartphones. This app allows parents to monitor all the activities on child’s phone, including its location track, and calls checks.</p>
+				<p>What is especially convenient about My Mobile Watchdog app is the opportunity to view the whole text messages history including the recently deleted ones and pictures that were sent inside them. This helps to prevent any sexting that is highly spread among teenagers. About 90% of teenagers have seen pornography on their mobile devices, but the app also allows blocking websites and view browser use history, so that you ensure the child is not getting any unneeded information.</p>
+				<p>If you are worried about your child doing dumb things with their phone, of that the device might become a distraction, the blocking option for disabling the use of the whole phone during certain period (like homework time), as well as blocking the use of camera would surely come in handy for you.</p>
+				<p>My Mobile Watchdog Android app is recommended by TV, radio and newspaper experts for those parents who care about their children security and wellbeing. It would at the same time protect the kid from the external threats like suspicious and dangerous people online.</p>
+            </div>
+    </div>
+
+{EndContent}
+
+{Content
+    styleTitle=""
+    title=""
+    blockBg='light'}
 
     <div id="grid-images" class="row">
         <div class="col-lg-12 col-md-12 col-sm-12">
@@ -199,31 +182,11 @@
                 <img class="app-icon-left" src="{$img}/landings/best-android-parental-control-app/kaspersky-safe-kids-review-logo.png" alt="kaspersky safe kids logo">
 			<p>The app allows parents to limit the time children spend on their smartphones and tablets. In addition, parents can restrict inappropriate applications, websites, and other information. Find out about children’s friends, social media posts, and track location.</p>
 			<p>Kaspersky parental control features a kid mode that protects children against adult websites and mobile apps. It also lets set this kid mode on the Internet. Geo-fencing allows tracking your children whereabouts and receiving alerts if they leave or enter specified areas on the map.</p>
-			<p>The main goal of the Kaspersky Safe Kids application is to help you set balance between your kids’ digital life and reality. With it, you will be able to manage children’s time and find the right one for work and fun. Thus, you will be sure they don’t waste their time, but spend it efficiently and know what it takes to deserve playing mobile games or surfing the Internet.</p>
-			<p>Internet use becomes safer too with Kaspersky Safe Kids. You can easily prevent them from accessing inappropriate materials and specify content children are allowed to see. The app seems to be really good, however some users complain that Kaspersky Safe Kids fails to work appropriately on some smartphone models, meanwhile, some parental control features require serious improvements.</p>
+			<p>The main goal of the Kaspersky Safe Kids application is to help you set the balance between your kids’ digital life and reality. With it, you will be able to manage children’s time and find the right one for work and fun. Thus, you will be sure they don’t waste their time, but spend it efficiently and know what it takes to deserve playing mobile games or surfing the Internet.</p>
+			<p>Internet use becomes safer too with Kaspersky Safe Kids. You can easily prevent them from accessing inappropriate materials and specify content children are allowed to see. The app seems to be really good; however, some users complain that Kaspersky Safe Kids fails to work appropriately on some smartphone models while some parental control features require serious improvements.</p>
             </div>
         </div>
     </div>
-{EndContent}
-
-{Content
-    styleTitle=""
-    title=""
-    blockBg='light'}
-
-
-        <div class="col-lg-12 col-md-12 col-sm-12">
-            <h2 class="h3 text-right">My Mobile Watchdog Review</h3>
-            <div class="pt30 pb20">
-                <img class="img-align-left" alt="my mobile watchdog mobile screen" src="{$img}/landings/best-android-parental-control-app/my-mobile-watchdog-review.png" width="207px" height="208px" />
-                <img class="app-icon-right" src="{$img}/landings/best-android-parental-control-app/my-mobile-watchdog-review-logo.png" alt="my mobile watchdog logo">
-                <p>In the whole market of parental monitoring apps My Mobile Watchdog is one of the best choices for those parents who want to have a whole number of options the manufacturer’s parental control misses in modern smartphones. This app allows parents monitoring all the activities at child’s phone, including its location track, and calls checks.</p>
-				<p>What is especially convenient about My Mobile Watchdog app is the opportunity to view the whole text messages history including the recently deleted ones and pictures that were sent in them. This helps preventing any sexting that is highly spread among teenagers. About 90% of teenagers have seen pornography on their mobile devices, but the app also allows blocking websites and view browser use history, so that you ensure the child is not getting any unneeded information.</p>
-				<p>If you are worried about your child doing dumb things with their phone, of that the device might become a distraction, the blocking option for disabling the use of the whole phone during certain period (like homework time), as well as blocking the use of camera would surely come in handy for you.</p>
-				<p>My Mobile Watchdog Android app is recommended by TV, radio and newspaper experts for those parents who care about their children security and wellbeing. It would at the same time protect kid from the external threats like suspicious and dangerous people online, as well as from himself.</p>
-            </div>
-    </div>
-
 {EndContent}
 
 {Content
@@ -231,34 +194,13 @@
     title=""
     blockBg='dark'}
 
-    <div id="grid-images" class="row">
-        <div class="col-lg-12 col-md-12 col-sm-12">
-            <h2 class="h3 text-left">Watchdog Task Manager Review</h3>
-            <div class="pt30 pb20">
-                <img class="img-align-right" alt="watchdog task manager mobile screen" src="{$img}/landings/best-android-parental-control-app/watchdog-task-manager-review.png" width="207px" height="208px" />
-                <img class="app-icon-left" src="{$img}/landings/best-android-parental-control-app/watchdog-task-manager-review-logo.png" alt="watchdog task manager logo">
-			<p>Sometimes the only remedy for a misbehaving app that would ‘eat’ the whole CPU is killing it with a relevant command – unless you have prepared for such emergency beforehand and installed Watchdog for Android.</p>
-			<p>Despite the general belief, having a lot of background apps running on the phone does nothing bad to it, unless the apps are actually making something that can be influencing the phone’s performance speed and eat the CPU. Moreover, on modern Android devices (and up from the 2.2 version) the kill command influences background apps but they restart immediately.</p>
-			<p>The latter is much more damaging to your phone and apps as well – with such a harsh interrupt of the work, you might prevent app from operating properly on your phone. The best idea would be leaving those apps run in the background and you would have a much better experience when you get back to using them.</p>
-			<p>Watchdog app is an alternative way for keeping a track of phone apps. It literally monitors the currently running apps and alerts about any of them behaving badly. If it comes to happen, you can then kill this only app without interrupting other.</p>
-			<p>Watchdog Android app has some additional features in the paid version, and that is a Blacklist for apps. This includes adding an app you expect to cause troubles into a 24/7 monitoring and set a CPU threshold for it – once the app goes over the % you limited it to, Watchdog would kill it immediately.</p>
-            </div>
-        </div>
-    </div>
-{EndContent}
-
-{Content
-    styleTitle=""
-    title=""
-    blockBg='light'}
-
 
         <div class="col-lg-12 col-md-12 col-sm-12">
             <h2 class="h3 text-right">Net Nanny Review</h3>
             <div class="pt30 pb20">
                 <img class="img-align-left" alt="net nanny mobile screen" src="{$img}/landings/best-android-parental-control-app/net-nanny-review.png" width="207px" height="208px" />
                 <img class="app-icon-right" src="{$img}/landings/best-android-parental-control-app/net-nanny-review-logo.png" alt="net nanny logo">
-                <p>For parents raising kids in modern day technology world their security is one of the biggest headaches to fight with every day. And due to all the risky content there is on the Internet the struggle of whether or not a teen (of even a child) should have a complete freedom in surfing the web is real. But with Net Nanny parents can finally relax and mind their own business, as kids would be safe and sound, and protected from all the inappropriate content.</p>
+                <p>For parents raising kids in modern day technology world, their security is one of the biggest headaches to fight with every day. And due to all the risky content there is on the Internet, the struggle of whether or not a teen (of even a child) should have complete freedom in surfing the web is real. But with Net Nanny, parents can finally relax and mind their own business, as kids would be safe and sound, and protected from all the inappropriate content.</p>
                 <p>Net Nanny application belongs to the large group of parental monitoring app, but at some points it differs from other ones you might choose. In fact, whenever someone announces they’ve launched Net Nanny alternative, most of the times it would lack a great part of Nanny functions and options.</p>
 				<p>Besides from becoming a child’s default browser working on the predefined user profile (which can be either chosen from default age-based ones, or created on your own), the Net Nanny Android app allows parents manage child’s phone settings and control apps they might or might not use on the phone.</p>
 				<p>From Net Nanny reviews you will learn about the whole amount of services it provides you with. Or you can try the fully functional trial version for 14 days, and get an annual subscription for $12.99 per device.</p>
@@ -270,7 +212,7 @@
 {Content
     styleTitle=""
     title=""
-    blockBg='dark'}
+    blockBg='light'}
 
     <div id="grid-images" class="row">
         <div class="col-lg-12 col-md-12 col-sm-12">
@@ -278,10 +220,10 @@
             <div class="pt30 pb20">
                 <img class="img-align-right" alt="bitdefender mobile screen" src="{$img}/landings/best-android-parental-control-app/bitdefender-review.png" width="207px" height="208px" />
                 <img class="app-icon-left" src="{$img}/landings/best-android-parental-control-app/bitdefender-review-logo.png" alt="bitdefender logo">
-			<p>Among the numerous parental control apps offered today Bitdefender is one of the little amount of those having a pretty decent Free version together with Premium one.</p>
-			<p>Thus, if you don’t need the extended rights and regulations you need to cast upon your child’ phone you may probably stick to Free version which currently includes the SMS and calls monitoring, tracking of all the website history and webpages your kid is viewing on the Internet. Going a bit further than others, the Bitdefender app actually allows you tracking the words and phrases your child is looking up on the Internet. You would as well control the apps that are used on your child’s phone, so blocking the distracting ones will not be hard.</p>
-			<p>For $29, 95 per year one may get a Premium subscription that also includes extended Free features (you would be able to block SMS and calls rather than just monitoring them) together with new features like Facebook monitoring, location tracking and time limiter that allows you restrict the time when the child can actually use the phone. This one would prevent the device from turning into a distraction.</p>
-			<p>MyBitdefender account you should get on installation of the app offers additional blocking rules and restrictions you might want to use for additional security – be sure to check all of them.</p>
+			<p>Among the numerous parental control apps offered today Bitdefender is one of few having a pretty decent Free version together with Premium one.</p>
+			<p>Thus, if you don’t need the extended rights and regulations you need to cast upon your child’ phone you may probably stick to a Free version which currently includes the SMS and calls monitoring, tracking of all the website history and web pages your kid is viewing on the Internet. Going a bit further than others, the Bitdefender app actually allows you to track the words and phrases your child is looking up on the Internet. You would as well control the apps that are used on your child’s phone, so blocking the distracting ones will not be hard.</p>
+			<p>For $29, 95 per year, one may get a Premium subscription that also includes extended Free features (you would be able to block SMS and calls rather than just monitoring them) together with new features like Facebook monitoring, location tracking and time limiter that allows you restrict the time when the child can actually use the phone. This one would prevent the device from turning into a distraction.</p>
+			<p>MyBitdefender account you should get upon the installation of the app offers additional blocking rules and restrictions you might want to use for additional security – be sure to check all of them.</p>
             </div>
         </div>
     </div>
@@ -290,7 +232,7 @@
 {Content
     styleTitle=""
     title=""
-    blockBg='light'}
+    blockBg='dark'}
 
 
         <div class="col-lg-12 col-md-12 col-sm-12">
@@ -299,10 +241,10 @@
                 <img class="img-align-left" alt="mcafee mobile screen" src="{$img}/landings/best-android-parental-control-app/mcafee-review.png" width="207px" height="208px" />
                 <img class="app-icon-right" src="{$img}/landings/best-android-parental-control-app/mcafee-review-logo.png" alt="mcafee logo">
                 <p>Some people say that modern day Internet is a sort of huge dispenser where every bit of information goes, and depending on what you are looking for it might turn to be full of garbage or a source of incredible and useful information. Do you want to be sure your kid would get into the second group of users?</p>
-				<p>If you are wondering about what is McAfee Family Protection and how it would help you forget about your kid’s Internet surfing dangers, the answer is simple – it is a high-level Parental Control over your child’s browsing. It basically takes care of all the inappropriate content and websites/webpages that content any information you might not want your child to see.</p>
-				<p>Providing specific filters and categories for various websites your kid might come across on the Internet, you may prevent him from seeing any of information and websites that can include content connected to ‘drugs’, ‘gambling’ or other dangers.</p>
-				<p>The McAfee Family Protection application works with Stock Browser and Google Chrome, and any other browser downloaded to the prone will be deleted by McAfee itself. Being a Device Admin application, McAfee Family Protection is hard to delete from phone unless you actually want it to be gone.</p>
-				<p>Currently the app is compatible with Android from 4.03 and up to 6.0 version. The trial version works for 30 days, which is much longer than other apps would normally work. Be sure to check the free version before you purchase the full one.</p>
+				<p>If you are wondering about what is McAfee Family Protection and how it would help you forget about your kid’s Internet surfing dangers, the answer is simple – it is a high-level Parental Control over your child’s browsing. It basically takes care of all the inappropriate content and websites/web pages that content any information you might not want your child to see.</p>
+				<p>Providing specific filters and categories for various websites your kid might come across on the Internet, you may prevent him from seeing any of information and websites that can include content connected to ‘drugs,’ ‘gambling’ or other dangers.</p>
+				<p>The McAfee Family Protection application works with Stock Browser and Google Chrome, and any other browser downloaded to the phone will be deleted by McAfee itself. Being a Device Admin application, McAfee Family Protection is hard to delete from phone unless you actually want it to be gone.</p>
+				<p>Currently, the app is compatible with Android from 4.03 and up to 6.0 version. The trial version works for 30 days, which is much longer than other apps would normally work. Be sure to check the free version before you purchase the full one.</p>
             </div>
     </div>
 
@@ -311,12 +253,12 @@
     {include file='../includes/content/features-table-new.tpl'
         title = "Pumpic Is More than 24 Monitoring Features "
         description = "Pumpic stands out among other Android parental control apps thanks to a large variety of useful features and smooth monitoring process. The application covers all spheres of your children’s lives. Thus, you can protect them both online and during daily activities with <a class='a-default' href='/android-parental-monitoring.html'>Pumpic parental monitoring for Android</a>."
-        blockBg="dark"
+        blockBg="light"
         android = "yes"
         storeLinkText = "Go to Store"
     }
 
-<div class="light">
+<div class="dark">
     <div class="container">
             <h2 class="text-center testimonial-title">Trusted by Over 10,000 Customers Worldwide:</h2>
             <div class="row">
@@ -343,7 +285,7 @@
                             <img src="{$img}/testimonials/nina-l.png" alt="pumpic testimonial from nina l" class="testimonial-photo">
                             <div class="testimonial-text">
                                     <h4>Nina L. – mother of 15-year-old son</h4>
-                                    <p>“If you are looking for a reliable parental tracking app, you are on the right track. Pumpic is a very helpful application. I work every day and sometimes come back home late. My son stays home alone and no one knows what kind of activities he is engaged in, when I’m not near. With Pumpic I can see it all and control it all. I know where he goes and where he’s been to. I can see every webpage he visits and control each word he types in. I’m sure he won’t get in trouble nor hang out with a bad company. Pumpic is a good opportunity for me to work hard and succeed in parenting. Sure such an app won’t replace you as a mother, but it will keep your child safe. What else could you ask for?!”</p>
+                                    <p>“If you are looking for a reliable parental tracking app, you are on the right track. Pumpic is a very helpful application. I work every day and sometimes come back home late. My son stays home alone, and no one knows what kind of activities he is engaged in when I’m not near. With Pumpic I can see it all and control it all. I know where he goes and where he’s been to. I can see every web page he visits and control each word he types in. I’m sure he won’t get in trouble nor hang out with a bad company. Pumpic is a good opportunity for me to work hard and succeed in parenting. Sure such an app won’t replace you as a mother, but it will keep your child safe. What else could you ask for?!”</p>
                             </div>
                     </div>
 

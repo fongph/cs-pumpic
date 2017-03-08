@@ -134,8 +134,8 @@
         <div class="col-lg-12 col-md-12 col-sm-12">
             <h2 class="h3 text-left">Pumpic Review</h3>
             <div class="pt30 pb20">
-                <img class="img-align-right" alt="kaspersky safe kids mobile screen" src="{$img}/landings/best-android-parental-control-app/pumpic-location-tracking.png" width="207px" height="208px" />
-                <img class="app-icon-left" src="{$img}/landings/best-android-parental-control-app/pumpic-mobile-monitoring-logo.png" style="margin-top: 15px;" alt="kaspersky safe kids logo">
+                <img class="img-align-right" alt="Pumpic mobile monitoring app screen" src="{$img}/landings/best-android-parental-control-app/pumpic-location-tracking.png" width="207px" height="208px" />
+                <img class="app-icon-left" src="{$img}/landings/best-android-parental-control-app/pumpic-mobile-monitoring-logo.png" style="margin-top: 15px;" alt="Pumpic logo">
 			<p>Pumpic parental monitoring app was designed to make a kid’s smartphone or tablet as safe to use as it is only possible. By utilizing Pumpic's comprehensive features, you can collect the most important information about your child's communications and online activity in one secure place – web-based Control Panel. The app is meant for ethical and legal monitoring, so its icon is visible on the phone's Applications dashboard. However, Pumpic is protected with a password, and thus, children cannot delete it or make any changes to the app's settings.</p>
 <p>Users can adopt either Pumpic Basic or Premium subscription, both compatible with Android 2.2-6.0.1. The only difference between them is the number of features. For the Basic subscription, it's 15, and for the Premium, it's 26 features.</p>
 <ul class="list-images">

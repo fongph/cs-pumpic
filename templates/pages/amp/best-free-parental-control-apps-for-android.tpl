@@ -130,7 +130,6 @@
 
                                             <ul class="compatibility compatibility-lg">
                                                 <li><i class="icon-android"></i> ({$ver_android_bot} - {$ver_android_up})</li>
-                                                <li><i class="icon-apple"></i> ({$ver_icloud_bot} - {$ver_icloud_up})</li>
                                             </ul>
                                             <div class='mt10'>
                                                 <div>

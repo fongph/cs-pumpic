@@ -98,7 +98,7 @@
                                                 <div>
                                                     <section class="vertical-aligh-middle">
                                                         <a class="btn btn-default" href="/store.html#android"
-                                                           id="view-pricing-link">View Prising</a>
+                                                           id="view-pricing-link">View Priсing</a>
                                                     </section>
                                                 </div>
                                             </div>

@@ -1562,9 +1562,6 @@ a:hover {
     padding-bottom: 1px
 }
 
-.ipad-text {
-    padding: 50px 0
-}
 
 .ipad-text p {
     margin-top: 1.3em;
@@ -1572,37 +1569,19 @@ a:hover {
     color: #4d4f5b;
     font-size: 15px
 }
-
-@media only screen and (max-width:480px) {
-    .ipad-text {
-        padding: 10px 0 50px
+.ipad-frame {
+    background: url(/images/slider_home/ipad.png) no-repeat;
+    background-size: 100% 100%;
+    width: 385px;
+    max-height: 297px;
+    padding: 35px 36px 31px 33px;
+    z-index: 10;
+}
+@media (max-width: 400px) {
+    .ipad-frame {
+        width: 295px;
     }
 }
-
-@media (min-width:468px) {
-    .ipad-text {
-        padding: 10px 0 50px
-    }
-}
-
-@media (min-width:768px) {
-    .ipad-text {
-        padding: 50px 0
-    }
-}
-
-@media (min-width:992px) {
-    .ipad-text {
-        padding: 50px 0
-    }
-}
-
-@media (min-width:1200px) {
-    .ipad-text {
-        padding: 50px 0
-    }
-}
-
 .testimonial-photo {
     float: left;
     width: 95px;
@@ -1809,6 +1788,10 @@ article {
 .ipad-text ul {
     margin: 0;
     padding: 0
+}
+
+.ipad-text ul {
+    text-align: center;
 }
 
 .box-socials li {
@@ -2424,12 +2407,12 @@ only screen and (max-device-width:480px) {
 
 .ipad-text ul li {
     list-style: none;
-    float: left;
+    display: inline-block;
     margin-right: 20px
 }
 
 .ipad-text ul li:last-child {
-    margin-right: 0
+    margin-right: 0;
 }
 
 .btn-fix-red {
@@ -2974,11 +2957,6 @@ only screen and (max-device-width:480px) {
     display: inline-block
 }
 
-.blockSlider {
-    margin: 0 25px;
-    padding: 10px 0 0
-}
-
 #slider-prev .bx-prev {
     padding-right: 10px;
     left: 0;
@@ -3001,16 +2979,6 @@ only screen and (max-device-width:480px) {
     height: 38px;
     text-indent: -9999px;
     z-index: 9
-}
-
-.boxes-slider {
-    max-width: 435px
-}
-
-@media (max-width:767px) {
-    .only-pc {
-        display: none
-    }
 }
 
 #fly_bottom div {
@@ -3683,4 +3651,7 @@ a {
     .features-btngroup .btn {
         margin-top: 5px
     }
+}
+.color-orange {
+    color: #f5ac43;
 }

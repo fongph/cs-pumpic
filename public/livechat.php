@@ -27,7 +27,7 @@ $inputData = file_get_contents('php://input');
 $data = json_decode($inputData, true);
 
 $logger->debug("Started");
-
+$logger->addInfo($inputData);
 if (isset($_GET['b28d30d3683bf925d1f02b65a65984b400f3bf41d87aa3fcaf2b13ca01d97650'])) {
     $eventData = null;
 
@@ -41,9 +41,12 @@ if (isset($_GET['b28d30d3683bf925d1f02b65a65984b400f3bf41d87aa3fcaf2b13ca01d9765
             );
         }
 
+        $email = isset($data['visitor']['email']) ?  $data['visitor']['email'] : '';
+        $name = isset($data['visitor']['name']) ? $data['visitor']['name'] : '';
+
         $eventData = array(
-            'email' => $data['visitor']['email'],
-            'name' => $data['visitor']['name'],
+            'email' => $email,
+            'name' => $name,
             'seller' => 'pumpic.com',
             'chat' => array(
                 'id' => $data['chat']['id'],

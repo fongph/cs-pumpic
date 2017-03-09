@@ -12,7 +12,7 @@ $obj = new includes\lib\users\Order;
 require_once 'smarty.config.php';
 
 /* list order */
-$products = $obj ->getProducts('first');
+$products = $obj ->getProducts('second');
     
 /* form_order */
 $_request = (isset($_POST['price']) and !empty($_POST['price'])) ? $_POST['price']: false;
@@ -34,20 +34,17 @@ if($_request['productID']) {
 }
 
 // default
-if(is_array($products)) { 
-    // Basic
-    if(isset($products['basic'])) {
-        foreach($products['basic'] as $item) :
-            if($item['period'] == 12 && $item['id']) $smarty->assign('getDefaultBasic', $item['id']);
-        endforeach;
-    }
-    // Premium
-    if(isset($products['premium'])) {
-        foreach($products['premium'] as $item) :
-            if($item['period'] == 12 && $item['id']) $smarty->assign('getDefaultPremium', $item['id']);
+if(is_array($products)) {
+    if(isset($products['iosiCloud'])) {
+        foreach($products['iosiCloud'] as $item) :
+            if ($item['period'] == 12 && $item['id']) {
+                $smarty->assign('defaultIosiCloudProduct', $item['id']);
+                $smarty->assign('defaultIosiCloudPrice', round($item['price'] / $item['period'], 2));
+            }
         endforeach;
     }
 }
+$smarty->assign('rates', json_encode($_rates));
 
 // init output params!
 $smarty->assign('getProducts', $products);

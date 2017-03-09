@@ -155,7 +155,7 @@ class Order extends ManagerUser
         $this -> _gateway->setStoreId( $this -> storeId )
                 ->setProductId($orderProduct->getReferenceNumber())
                 ->setReferenceData($order->getId() . '-' . $order->getHash())
-                ->setInstant();
+                ->setCheckout();
                 // ->setTestMode(); // не обязательно
         
         if($testMode) $this -> _gateway->setTestMode();
@@ -272,7 +272,7 @@ class Order extends ManagerUser
         $this -> _gateway->setStoreId( $this -> storeId )
                 ->setProductId($orderProduct->getReferenceNumber())
                 ->setReferenceData($order->getId() . '-' . $order->getHash())
-                ->setInstant();
+                ->setCheckout();
                 // ->setTestMode(); // не обязательно
 
         $response =$this -> _gateway->purchaseProduct()->send();

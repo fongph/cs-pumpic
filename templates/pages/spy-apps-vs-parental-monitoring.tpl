@@ -218,10 +218,10 @@ title="Follow Kids Remotely Wherever They Go" *}
         <div class="col-lg-12 col-md-12 col-sm-12">
             <h2>Dangers of Android Spyware and Ways to Deal with Them</h2>
             <div class="pt30 pb20">
-                <img class="img-align-left" alt="Spyware for Android" src="{$img}/landings/android-spyware-removal.png" width="207px" height="208px" />
+                <img class="img-align-right" alt="Spyware for Android" src="{$img}/landings/android-spyware-removal.png" width="207px" height="208px" />
                 <p>If you consider using spyware to track kid's activities on Android device, think again. The thing is, regardless all its advantages, Android is not even close to being a safe operational system. By trying to install an app with the spying functionality on your child's smartphone, you put him or her in jeopardy as many such applications can transfer collected data not only to you but also to a malicious person. Taking into account that today kids may possess more private and personal information on the phone than on a PC, you must do whatever it takes to protect your little ones.</p>
                 <p>If you suspect that somehow spyware found its way to your kid's Android device, pay attention to these main signs of their smartphone being tracked:</p>
-                <ul class="feature_list"; style="margin-left: 250px !important;">
+                <ul class="feature_list">
                     <li>Strange device behavior – it lights up or shuts down on its own, reboots randomly, makes unusual noises;</li>
                     <li>Fast power drain – the battery's life decreases significantly for no tangible reason;</li>
                     <li>High data usage – volumes of transferred data are unusually large.</li>

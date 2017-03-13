@@ -847,7 +847,9 @@
                                             </svg>
                                             <strong>Browser control</strong></li>
                                         <li>
-                                            <i class='i-list-features-star fa fa-star-o fa-2x' style="margin-left: -60px;"></i>
+                                            <svg width="31" height="31" class="features-icon i-list-features-svg">
+                                                <use xlink:href="/images/svg-icons.svg#bookmarks"></use>
+                                            </svg>
                                             <strong>Bookmarks</strong></li>
                                     </ul>
 

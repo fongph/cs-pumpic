@@ -8561,3 +8561,12 @@ ul.list_category li:first-child {
   vertical-align: middle;
   fill: #16a89e;
 }
+.vertical-center {
+  position: relative;
+  top: 50%;
+  transform: translate(0,-50%);
+}
+.i-list-features-svg {
+  width: initial!important;
+  height: initial!important;
+}

@@ -46,7 +46,11 @@
                         <section class="_features-content">
                             <div class="tab col-item-3 col-md-item-3 col-sm-item-3 last">
                                 <ul>
-                                    <li><i class="i-features-sms"></i> <span onclick="window.location='/mobile-sms-spy.html'">Monitor SMS and MMS</span>
+                                    <li>
+                                        <svg width="22" height="22" class="features-icon vertical-center mr5">
+                                            <use xlink:href="/images/svg-icons.svg#texts"></use>
+                                        </svg>
+                                        <span onclick="window.location='/mobile-sms-spy.html'">Monitor SMS and MMS</span>
                                         <div class="os-label__wrapper">
                                             <div class="os-label label-black">
                                                 <i class="fa fa-apple"></i>IOS
@@ -56,7 +60,11 @@
                                             </div>
                                         </div>
                                     </li>
-                                    <li><i class="i-features-cell-history"></i> {if !in_array('call-monitoring-software', $_notVisible)}<span onclick="window.location='/call-monitoring-software.html'">Monitor Calls History{else}Monitor Calls History{/if}
+                                    <li>
+                                        <svg width="22" height="21" class="features-icon vertical-center mr5">
+                                            <use xlink:href="/images/svg-icons.svg#calls"></use>
+                                        </svg>
+                                        {if !in_array('call-monitoring-software', $_notVisible)}<span onclick="window.location='/call-monitoring-software.html'">Monitor Calls History{else}Monitor Calls History{/if}
                                         <div class="os-label__wrapper">
                                             <div class="os-label label-black">
                                                 <i class="fa fa-apple"></i>IOS
@@ -66,7 +74,11 @@
                                             </div>
                                         </div>
                                     </li>
-                                    <li><i class="i-features-calendar"></i> View Calendar
+                                    <li>
+                                        <svg width="22" height="20" class="features-icon vertical-center mr5">
+                                            <use xlink:href="/images/svg-icons.svg#calendar"></use>
+                                        </svg>
+                                        View Calendar
                                         <div class="os-label__wrapper">
                                             <div class="os-label label-black">
                                                 <i class="fa fa-apple"></i>IOS
@@ -77,7 +89,11 @@
                                         </div>
 
                                     </li>
-                                    <li><i class="i-features-contacts"></i> <span onclick="window.location='/monitor-phone-contacts.html'"> View Contacts</span>
+                                    <li>
+                                        <svg width="22" height="22" class="features-icon vertical-center mr5">
+                                            <use xlink:href="/images/svg-icons.svg#contacts"></use>
+                                        </svg>
+                                        <span onclick="window.location='/monitor-phone-contacts.html'"> View Contacts</span>
                                         <div class="os-label__wrapper">
                                             <div class="os-label label-black">
                                                 <i class="fa fa-apple"></i>IOS
@@ -87,14 +103,22 @@
                                             </div>
                                         </div>
                                     </li>
-                                    <li><i class="i-features-email"></i> <span onclick="window.location='/email-monitoring-software.html'">View Emails</span>
+                                    <li>
+                                        <svg width="20" height="19" class="features-icon vertical-center mr5">
+                                            <use xlink:href="/images/svg-icons.svg#mail"></use>
+                                        </svg>
+                                        <span onclick="window.location='/email-monitoring-software.html'">View Emails</span>
                                         <div class="os-label__wrapper">
                                             <div class="os-label label-green">
                                                 <i class="fa fa-android"></i>root
                                             </div>
                                         </div>
                                     </li>
-                                    <li><i class="i-features-photos"></i> View Photos
+                                    <li>
+                                        <svg width="21" height="21" class="features-icon vertical-center mr5">
+                                            <use xlink:href="/images/svg-icons.svg#photos"></use>
+                                        </svg>
+                                        View Photos
                                         <div class="os-label__wrapper">
                                             <div class="os-label label-black">
                                                 <i class="fa fa-apple"></i>IOS
@@ -104,14 +128,22 @@
                                             </div>
                                         </div>
                                     </li>
-                                    <li><i class="i-features-videocam"></i> View Videos
+                                    <li>
+                                        <svg width="21" height="20" class="features-icon vertical-center mr5">
+                                            <use xlink:href="/images/svg-icons.svg#video"></use>
+                                        </svg>
+                                        View Videos
                                         <div class="os-label__wrapper">
                                             <div class="os-label label-green large">
                                                 <i class="fa fa-android"></i>
                                             </div>
                                         </div>
                                     </li>
-                                    <li><i class="i-features-remote-activity-control-v2"></i> Remote Control Panel
+                                    <li>
+                                        <svg width="22" height="22" class="features-icon vertical-center mr5">
+                                            <use xlink:href="/images/svg-icons.svg#remote"></use>
+                                        </svg>
+                                        Remote Control Panel
                                         <div class="os-label__wrapper">
                                             <div class="os-label label-black">
                                                 <i class="fa fa-apple"></i>IOS
@@ -127,7 +159,11 @@
 
                             <div class="tab col-item-3 col-md-item-3 col-sm-item-3">
                                 <ul>
-                                    <li><i class="i-features-browser"></i> <span onclick="window.location='/browser-parental-control.html'">Control Browser</span>
+                                    <li>
+                                        <svg width="20" height="20" class="features-icon vertical-center mr5">
+                                            <use xlink:href="/images/svg-icons.svg#browsers"></use>
+                                        </svg>
+                                        <span onclick="window.location='/browser-parental-control.html'">Control Browser</span>
                                         <div class="os-label__wrapper">
                                             <div class="os-label label-black">
                                                 <i class="fa fa-apple"></i>IOS
@@ -137,14 +173,20 @@
                                             </div>
                                         </div>
                                     </li>
-                                    <li><i class="i-features-app"></i> <span onclick="window.location='/block-apps.html'">Control Applications</span>
+                                    <li>
+                                        <svg width="22" height="22" class="features-icon vertical-center mr5">
+                                            <use xlink:href="/images/svg-icons.svg#application"></use>
+                                        </svg>
+                                        <span onclick="window.location='/block-apps.html'">Control Applications</span>
                                         <div class="os-label__wrapper">
                                             <div class="os-label label-green large">
                                                 <i class="fa fa-android"></i>
                                             </div>
                                         </div>
                                     </li>
-                                    <li><i class="i-features-view-bookmarks"></i> View Bookmarks
+                                    <li>
+                                        <i class="fa fa-star-o" style="font-size: 20px;color: #16a89e;margin-right: 8px;"></i>
+                                        View Bookmarks
                                         <div class="os-label__wrapper">
                                             <div class="os-label label-black">
                                                 <i class="fa fa-apple"></i>IOS
@@ -154,21 +196,33 @@
                                             </div>
                                         </div>
                                     </li>
-                                    <li><i class="i-features-view-notes"></i> View Notes
+                                    <li>
+                                        <svg width="20" height="20" class="features-icon vertical-center mr5">
+                                            <use xlink:href="/images/svg-icons.svg#notes"></use>
+                                        </svg>
+                                        View Notes
                                         <div class="os-label__wrapper">
                                             <div class="os-label label-black">
                                                 <i class="fa fa-apple"></i>IOS
                                             </div>
                                         </div>
                                     </li>
-                                    <li><i class="i-features-block-device"></i> Block Device
+                                    <li>
+                                        <svg width="20" height="20" class="features-icon vertical-center mr5">
+                                            <use xlink:href="/images/svg-icons.svg#lock"></use>
+                                        </svg>
+                                        Block Device
                                         <div class="os-label__wrapper">
                                             <div class="os-label label-green large">
                                                 <i class="fa fa-android"></i>
                                             </div>
                                         </div>
                                     </li>
-                                    <li><i class="i-features-location"></i> {if !in_array('location-tracking', $_notVisible)}<span onclick="window.location='/child-location-tracking.html'">Location Tracking</span>{else}Location Tracking{/if}
+                                    <li>
+                                        <svg width="20" height="20" class="features-icon vertical-center mr5">
+                                            <use xlink:href="/images/svg-icons.svg#location"></use>
+                                        </svg>
+                                        {if !in_array('location-tracking', $_notVisible)}<span onclick="window.location='/child-location-tracking.html'">Location Tracking</span>{else}Location Tracking{/if}
                                         <div class="os-label__wrapper">
                                             <div class="os-label label-black">
                                                 <i class="fa fa-apple"></i>IOS
@@ -178,14 +232,22 @@
                                             </div>
                                         </div>
                                     </li>
-                                    <li><i class="i-features-geo-fences"></i> {if !in_array('geo-fences', $_notVisible)}<span onclick="window.location='/gps-and-geofencing.html'">Geo-fences</span>{else}Geo-fences{/if}
+                                    <li>
+                                        <svg width="22" height="22" class="features-icon vertical-center mr5">
+                                            <use xlink:href="/images/svg-icons.svg#geo-fencing"></use>
+                                        </svg>
+                                        {if !in_array('geo-fences', $_notVisible)}<span onclick="window.location='/gps-and-geofencing.html'">Geo-fences</span>{else}Geo-fences{/if}
                                         <div class="os-label__wrapper">
                                             <div class="os-label label-green large">
                                                 <i class="fa fa-android"></i>
                                             </div>
                                         </div>
                                     </li>
-                                    <li><i class="i-features-keyloger"></i> <span onclick="window.location='/keylogging-software.html'">Keylogger</span>
+                                    <li>
+                                        <svg width="22" height="22" class="features-icon vertical-center mr5">
+                                            <use xlink:href="/images/svg-icons.svg#keylogger"></use>
+                                        </svg>
+                                        <span onclick="window.location='/keylogging-software.html'">Keylogger</span>
                                         <div class="os-label__wrapper">
                                             <div class="os-label label-green large">
                                                 <i class="fa fa-android"></i>
@@ -199,7 +261,11 @@
 
                             <div class="tab col-item-3 col-md-item-3 col-sm-item-3">
                                 <ul>
-                                    <li><i class="i-features-monitor-viber-whatsapp"></i> <span onclick="window.location='/whatsapp-monitoring.html'">Monitor WhatsApp</span>
+                                    <li>
+                                        <svg width="20" height="20" class="features-icon vertical-center mr5">
+                                            <use xlink:href="/images/svg-icons.svg#chats"></use>
+                                        </svg>
+                                        </i> <span onclick="window.location='/whatsapp-monitoring.html'">Monitor WhatsApp</span>
                                         <div class="os-label__wrapper">
                                             <div class="os-label label-black">
                                                 <i class="fa fa-apple"></i>IOS
@@ -209,7 +275,11 @@
                                             </div>
                                         </div>
                                     </li>
-                                    <li><i class="i-features-monitor-skype"></i> <span onclick="window.location='/monitor-skype.html'">Monitor Skype</span>
+                                    <li>
+                                        <svg width="20" height="20" class="features-icon vertical-center mr5">
+                                            <use xlink:href="/images/svg-icons.svg#skype"></use>
+                                        </svg>
+                                        <span onclick="window.location='/monitor-skype.html'">Monitor Skype</span>
                                         <div class="os-label__wrapper">
                                             <div class="os-label label-black">
                                                 <i class="fa fa-apple"></i>IOS
@@ -219,21 +289,33 @@
                                             </div>
                                         </div>
                                     </li>
-                                    <li><i class="i-features-social"></i> Monitor Facebook IM
+                                    <li>
+                                        <svg width="20" height="20" class="features-icon vertical-center mr5">
+                                            <use xlink:href="/images/svg-icons.svg#facebook"></use>
+                                        </svg>
+                                        Monitor Facebook IM
                                         <div class="os-label__wrapper">
                                             <div class="os-label label-green">
                                                 <i class="fa fa-android"></i>root
                                             </div>
                                         </div>
                                     </li>
-                                    <li><i class="i-features-monitor-viber-whatsapp"></i> <span onclick="window.location='/monitor-viber.html'">Monitor Viber</span>
+                                    <li>
+                                        <svg width="20" height="20" class="features-icon vertical-center mr5">
+                                            <use xlink:href="/images/svg-icons.svg#viber"></use>
+                                        </svg>
+                                        <span onclick="window.location='/monitor-viber.html'">Monitor Viber</span>
                                         <div class="os-label__wrapper">
                                             <div class="os-label label-green">
                                                 <i class="fa fa-android"></i>root
                                             </div>
                                         </div>
                                     </li>
-                                    <li><i class="i-features-monitor-instagram"></i> <span onclick="window.location='/parental-control-for-instagram.html'">Monitor Instagram</span>
+                                    <li>
+                                        <svg width="20" height="20" class="features-icon vertical-center mr5">
+                                            <use xlink:href="/images/svg-icons.svg#instagram"></use>
+                                        </svg>
+                                        <span onclick="window.location='/parental-control-for-instagram.html'">Monitor Instagram</span>
                                         <div class="os-label__wrapper">
                                             <div class="os-label label-green">
                                                 <i class="fa fa-android"></i>root
@@ -241,7 +323,11 @@
                                         </div>
                                     </li>
                                     {*<li><i class="i-features-remote-activity-control"></i> Remote Control Panel</li>*}
-                                    <li><i class="i-features-kik-chat"></i> <span onclick="window.location='/monitor-kik-messenger.html'">Monitor Kik</span>
+                                    <li>
+                                        <svg width="22" height="20" class="features-icon vertical-center mr5">
+                                            <use xlink:href="/images/svg-icons.svg#kik"></use>
+                                        </svg>
+                                        <span onclick="window.location='/monitor-kik-messenger.html'">Monitor Kik</span>
                                         <div class="os-label__wrapper">
                                             <div class="os-label label-black">
                                                 <i class="fa fa-apple"></i>IOS
@@ -251,14 +337,22 @@
                                             </div>
                                         </div>
                                     </li>
-                                    <li><i class="i-features-monitor-snapchat"></i><span onclick="window.location='/monitor-snapchat.html'">Monitor Snapchat</span>
+                                    <li>
+                                        <svg width="22" height="22" class="features-icon vertical-center mr5">
+                                            <use xlink:href="/images/svg-icons.svg#snapchat"></use>
+                                        </svg>
+                                        <span onclick="window.location='/monitor-snapchat.html'">Monitor Snapchat</span>
                                         <div class="os-label__wrapper">
                                             <div class="os-label label-green">
                                                 <i class="fa fa-android"></i>root
                                             </div>
                                         </div>
                                     </li>
-                                    <li><i class="i-features-sms-commands"></i> SMS Commands
+                                    <li>
+                                        <svg width="22" height="22" class="features-icon vertical-center mr5">
+                                            <use xlink:href="/images/svg-icons.svg#sms-commands"></use>
+                                        </svg>
+                                        SMS Commands
                                         <div class="os-label__wrapper">
                                             <div class="os-label label-green large">
                                                 <i class="fa fa-android"></i>

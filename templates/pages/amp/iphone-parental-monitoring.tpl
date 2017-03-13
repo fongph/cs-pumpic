@@ -123,7 +123,7 @@
 
                                     <div>
                                         <div class="visual-text block-text-left">
-                                            <h1 class="h1 title"> Parental Control Software or iPhone, iPad and iPod Touch</h1>
+                                            <h1 class="h1 title"> Parental Control Software for iPhone, iPad and iPod Touch</h1>
 
                                             <p class="header-info-descriptions" >
                                                 Keep track of your kids’ iOS devices remotely.

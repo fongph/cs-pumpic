@@ -14,7 +14,7 @@
                ga-action ="click"
                ga-category="premium"
                ga-label="plan premium packahe"
-               href="/iphone-tracking-software.html">View Pricing</a>
+               href="/store.html">View Pricing</a>
         </section>
     </div>
 </div>

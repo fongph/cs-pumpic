@@ -32,8 +32,8 @@ if (isset($_COOKIE['page']) && !empty($_COOKIE['page'])){
     $obj->incrementStoreClientsCount();
     $url = $clientsNumber % 2;
     $redirectUrl = $urls[$url];
-//    setcookie('page', $redirectUrl, time()+365*24*60*60, '/', '.pumpic.com');
-    setcookie('page', $redirectUrl);
+    setcookie('page', $redirectUrl, time()+365*24*60*60, '/');
+//    setcookie('page', $redirectUrl);
     if ($redirectUrl != '/store'){
         header("Location: //".$config['domain'].$redirectUrl.".html");
     }

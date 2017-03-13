@@ -1,7 +1,7 @@
 {include file='../includes/main/main-header.tpl'
 
-title="Spy Apps VS Parental Monitoring | Pumpic"
-description="What is the difference between spyware and a cell phone parental controls software? Find a legal and reliable mobile phone monitoring app for parents."
+title="Spy Apps for Android VS Parental Monitoring | Pumpic"
+description="What is the difference between Android phone and tablet spyware and ethical monitoring? Find a legal and reliable mobile phone monitoring app for parents."
 customeStyle="
         .block-child-location-tracking .ipad-text {
             padding: 10px 0;
@@ -76,7 +76,7 @@ customeStyle="
     imgAlign = "left bottom"
     imgVerticalAlign = "center"
     textAlign = "left"
-    title = "Android Phone Monitoring Apps<br />Parental Controls VS Spyware "
+    title = "Monitoring Android Devices<br />Parental Controls VS Spyware "
     description = "Hidden surveillance app and parental monitoring: what's the difference?<br />Note: spying is illegal! Use reliable and lawful mobile monitoring apps."
     descriptionSize = "12.5px"
     promoBuyBlock = "no"
@@ -111,10 +111,10 @@ title="Follow Kids Remotely Wherever They Go" *}
             <h2>Parental Control Software VS Spy Apps</h2>
             <div class="pt30 pb20">
                 <img class="img-align-right" alt="Spy Apps for Android VS Parental Monitoring" src="{$img}/landings/spy-apps-vs-parental-monitoring-text.png" width="207px" height="208px" />
-                <p>In the whole amount of Android mobile monitoring software one may come across online, there are mainly two types of products – Spy Apps and Parental Monitoring Apps. What is the difference (if any), and what to choose? Here’s a little guide on Android phone spyware.</p>
+                <p>In the whole amount of tracking software for handheld devices one may come across online, there are mainly two types of products – Spy Apps and Parental Monitoring Apps. What is the difference (if any), and what to choose? Here’s a little guide on Android phone spyware.</p>
                 <p>Finding a spy app for Android undetectable by the standard smartphone utilities is today rather easy, but downloading and installing one may cause some significant troubles later on. Such programs are illegal to use. Spy software is designed for discreetly keeping track of someone by installing this application on his or her phone. Needless to say that these apps are going against the rules and laws of civilized world, where everyone has the right for privacy.</p>
-                <p>Cell phone parental controls software is a legal thing that allows parents to ensure their kids’ online security. This have become a real need due to the recent bullying and overall cybercrimes kids fall victims of. <a class="a-default" href="/android-parental-monitoring.html" >Such apps</a> can only be used by parents to monitor their children, and there is no chance of other ways one can use them.</p>
-                <p>Android parental controls applications differ in options and settings, so reading some reviews beforehand will help making the right choice. Be wise and use this type of software to protect your loved ones in the best and legal way.</p>
+                <p>Gadget parental software is a legal thing that allows parents to ensure their kids’ online security. This have become a real need due to the recent bullying and overall cybercrimes kids fall victims of. <a class="a-default" href="/android-parental-monitoring.html" >Such apps</a> can only be used by parents to monitor their children, and there is no chance of other ways one can use them.</p>
+                <p>Designated parental apps differ in options and settings, so reading some reviews beforehand will help making the right choice. Be wise and use this type of software to protect your loved ones in the best and legal way.</p>
             </div>
         </div>
     </div>
@@ -127,10 +127,10 @@ title="Follow Kids Remotely Wherever They Go" *}
 
 	<img class="app-icon-left" src="{$img}/landings/why-not-using-spy-apps.png" alt="">
 	<p>Today parental control for smartphones and mobile devices is a must. This fact is hard to refute. According to statistics, the amount of time kids spend looking at their mobile devices grows rapidly. And about 24% of teens confess they are online almost constantly. Yet the question about what type of an app parents should use is an essential one to answer. There are plenty of apps facilitating your watching over a teen’s activities, but not everyone is a good choice.</p>
-	<p>Google Play pages are full of various applications on different topics. If you look at monitoring applications, two large groups are obvious. These are actual Android phone monitoring apps and spyware. With some of shared options and functions these apps may seem to be the same. But it is a lack of information that may get you to making a wrong decision. Here is a brief explanation for newbies in the industry. As well as reasons why using Android phone spyware is worse than a parental control app.</p>
+	<p>Google Play pages are full of various applications on different topics. If you look at monitoring applications, two large groups are obvious. These are actual monitoring apps for Android devices and spyware. With some of shared options and functions these apps may seem to be the same. But it is a lack of information that may get you to making a wrong decision. Here is a brief explanation for newbies in the industry. As well as reasons why using Android phone spyware is worse than a parental control app.</p>
 	<p>As long as Android is open OS, new apps for it appear every day. Android mobile spy software is popular, and numerous apps claim to provide the best results. Some of such applications are free for use, others ask for a price to be paid for information you get. But no matter which spyware you choose, it is all positioned as exactly spying on someone. And headers like ‘Catch Your Cheating Spouse with Spy App’ only prove the point.</p>
 	<p>Another point against spy software is its illegal status. It is not a secret that spying on people cannot be legal in any country. Even as general rules for personal issues are being different for every country. This is a part of reason spy applications work in disguise. Attentive readers also notice a disclaimer saying they have no responsibility towards a user. And if you use a spy application and get caught, you are on your own.</p>
-	<p>Android parental controls applications are absolutely legal, and even advised for usage. They were designed specifically for watching over underage children. Thus, apps can only be used by parents, and there is no chance for using these apps to meet other needs.</p>
+	<p>In turn, applications for ethical kids' monitoring are absolutely legal, and even advised for usage. They were designed specifically for watching over underage children. Thus, apps can only be used by parents, and there is no chance for using these apps to meet other needs.</p>
 
         <!-- BLOCK STATISTICK -->
         <div class="block-statistick row">
@@ -139,7 +139,7 @@ title="Follow Kids Remotely Wherever They Go" *}
                 <section>
                     <div><strong class="fz50 color-orange">20%</strong></div>
                     <span class="text-uppercase">
-                        teens share their cell phone numbers in a social media profile. Aren’t you worried about all the strangers that may cash in on your child? Proper Android mobile monitoring software will protect your child from unwanted communication. This guarantees kids are not distracted from everyday tasks or harmed any way.
+                        teens share their cell phone numbers in a social media profile. Aren’t you worried about all the strangers that may cash in on your child? Proper software will protect your child from unwanted communication. This guarantees kids are not distracted from everyday tasks or harmed any way.
                     </span>
                 </section>
             </div>
@@ -209,14 +209,39 @@ title="Follow Kids Remotely Wherever They Go" *}
         </div>
     </div>
 
+    {Content
+    styleTitle=""
+    title=""
+    blockBg='light'}
+
+    <div id="grid-images" class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+            <h2>Dangers of Android Spyware and Ways to Deal with Them</h2>
+            <div class="pt30 pb20">
+                <img class="img-align-right" alt="Spyware for Android" src="{$img}/landings/android-spyware-removal.png" width="207px" height="208px" />
+                <p>If you consider using spyware to track kid's activities on Android device, think again. The thing is, regardless all its advantages, Android is not even close to being a safe operational system. By trying to install an app with the spying functionality on your child's smartphone, you put him or her in jeopardy as many such applications can transfer collected data not only to you but also to a malicious person. Taking into account that today kids may possess more private and personal information on the phone than on a PC, you must do whatever it takes to protect your little ones.</p>
+                <p>If you suspect that somehow spyware found its way to your kid's Android device, pay attention to these main signs of their smartphone being tracked:</p>
+                <ul class="feature_list">
+                    <li>Strange device behavior – it lights up or shuts down on its own, reboots randomly, makes unusual noises;</li>
+                    <li>Fast power drain – the battery's life decreases significantly for no tangible reason;</li>
+                    <li>High data usage – volumes of transferred data are unusually large.</li>
+                </ul>
+                <p>Of course, even if you or your child happen to experience all of mentioned above, it still does not mean that the device is 100% tracked. But this should make rings in your head go off and induce you to more thorough checkup.</p>
+                <p>One of the surest ways to investigate the issue is to manually look through the list of the apps installed on your kid's device. If you see applications that you don't recall allowing to download or that have too many accesses they don't really need, pay the closest attention to them and remove. The thing is, you must have physical access to the device, which is not always possible. Another effective method to get rid of Android spyware is to perform a factory reset on the smartphone or tablet. The major disadvantage of this approach is that you'll erase everything else. Also, you can opt to install some anti-spyware app, but their efficiency is yet to be proved.</p>
+                <p>At the same time, with Pumpic Android monitoring solution, you can <b>remotely</b> check all apps installed on the target device. If any of them seems suspicious, you have the ability to limit its usage or entirely block it. Later, when you get a chance to hold the target phone or tablet in your hands, you can have a closer look at the dubious app and take a decision on whether remove or activate it again. Happily, until you do that, the problematic software will remain blocked, and your child will be protected.</p>
+            </div>
+        </div>
+    </div>
+    {EndContent}
+
     {include file='../includes/content/features-table-new.tpl'
     title = "Many Useful Features by Pumpic"
     description = "Pumpic is a reliable parental control app for an Android phone or tablet. It comprises more than 24 useful features to provide your children with comprehensive protection. The software allows you to monitor both online activities and everyday mobile phone use quickly and easily."
-    blockBg="light"
+    blockBg="dark"
         android = "yes"
     }
 
-    <div class="dark">
+    <div class="light">
         <div class="container">
             <h2 class="text-center testimonial-title">Trusted by Over 10,000 Customers Worldwide:</h2>
             <div class="row">

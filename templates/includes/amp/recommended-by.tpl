@@ -53,8 +53,8 @@
         <div class="recommended-col">
             <div class="recommended_links text-center">
                 <div class="title">Member of:</div>
-                <img class="ri-anti-bullying" src="/images/recommended/small/anti-bullying-alliance-logo.png"
-                     alt="pumpic on anti-bullying"></div>
+                <amp-img class="ri-anti-bullying" width="117" height="71" src="/images/recommended/small/anti-bullying-alliance-logo.png"
+                     alt="pumpic on anti-bullying"></amp-img></div>
         </div>
     </div>
 </div>

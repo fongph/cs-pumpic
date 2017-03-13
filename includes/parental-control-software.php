@@ -43,6 +43,14 @@ if(is_array($products)) {
             }
         endforeach;
     }
+    if(isset($products['androidPremium'])) {
+        foreach($products['androidPremium'] as $item) :
+            if ($item['period'] == 12 && $item['id']) {
+                $smarty->assign('defaultAndroidPremiumProduct', $item['id']);
+                $smarty->assign('defaultAndroidPremiumPrice', round($item['price'] / $item['period'], 2));
+            }
+        endforeach;
+    }
 }
 $smarty->assign('rates', json_encode($_rates));
 

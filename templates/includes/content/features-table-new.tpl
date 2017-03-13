@@ -185,7 +185,9 @@
                                         </div>
                                     </li>
                                     <li>
-                                        <i class="fa fa-star-o" style="font-size: 20px;color: #16a89e;margin-right: 8px;"></i>
+                                        <svg width="22" height="22" class="features-icon vertical-center mr5">
+                                            <use xlink:href="/images/svg-icons.svg#bookmarks"></use>
+                                        </svg>
                                         View Bookmarks
                                         <div class="os-label__wrapper">
                                             <div class="os-label label-black">

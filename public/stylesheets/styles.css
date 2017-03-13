@@ -36,6 +36,8 @@
 }
 
 .table-container li {
+    max-width: 250px;
+    margin: 0 auto;
     padding: 5px
 }
 
@@ -2179,7 +2181,6 @@ only screen and (max-device-width:480px) {
 .mobile-operations-banner {
     padding: 13px;
     margin-bottom: 0;
-    height: 123px;
     background-size: 100% 100%
 }
 
@@ -3231,32 +3232,40 @@ only screen and (max-device-width:480px) {
 .recommended_links {
     max-width: 760px;
     width: 100%;
-    margin: 0 35px 0 95px
 }
 .recommended_member {
     width: 100%;
     max-width: 180px
+}
+ul.item {
+    padding-left: 20px;
 }
 .recommended_links .title,
 .recommended_member .title {
     text-align: center;
     font-size: 21px;
     font-weight: 300;
-    padding-bottom: 15px
+    padding-bottom: 10px;
 }
 .recommended_member .ri-anti-bullying {
     display: block;
     margin: 20px auto auto
 }
-@media (max-width:992px) {
     #b-recommended-by .container {
         display: block;
         padding: 0
     }
 
     #b-recommended-by .item {
-        text-align: center;
-        margin: 0 auto
+        /*width: 50%;*/
+        text-align: left;
+        margin: 0 auto;
+        max-width: 230px;
+    }
+
+    #b-recommended-by .item li {
+        max-width: 200px;
+        margin: 0 auto;
     }
 
     .recommended_links {
@@ -3273,19 +3282,19 @@ only screen and (max-device-width:480px) {
         padding-top: 15px
     }
 
-    .item_link img {
-        margin: 15px
-    }
-
-    .recommended_member .ri-anti-bullying {
-        margin: 0
+@media (min-width: 500px){
+    .recommended-col {
+        width: 50%;
+        float: left;
     }
 }
-.item_link .huffington {
-    margin: 0 35px
+#b-recommended-by.quick-links .item {
+    max-width: 230px;
 }
-.item_link .business {
-    margin: 0 30px
+@media (max-width: 499px) {
+    #b-recommended-by .recommended_links:last-child .title {
+        margin-top: 10px;
+    }
 }
 @media (max-width:544px) {
     .item_link .business,
@@ -3295,17 +3304,6 @@ only screen and (max-device-width:480px) {
         width: 120px
     }
 
-    #b-recommended-by .item {
-        max-width: 500px
-    }
-}
-.b-o-hover {
-    opacity: .5;
-    -webkit-transition: all .1s;
-    transition: all .1s
-}
-.b-o-hover:hover {
-    opacity: 1
 }
 .padding-null {
     padding: 0;
@@ -3654,4 +3652,46 @@ a {
 }
 .color-orange {
     color: #f5ac43;
+}
+.mobile-operations-banner {
+    background: url(../images/bg-banner-small-mobile-operators.png);
+    background-size: 100% 100%;
+    padding: 10px;
+    text-align: center;
+}
+.mobile-operations-banner .title {
+    font-size: 20px;
+    text-align: center;
+}
+
+
+@media (min-width: 500px) {
+    .recommended-col {
+        width: 50%;
+        float: left
+    }
+}
+
+@media (max-width: 499px) {
+    #b-recommended-by .recommended_links:last-child .title {
+        margin-top: 10px
+    }
+}
+
+#b-recommended-by.quick-links .item {
+    max-width: 230px
+}
+
+ul.item {
+    padding-left: 20px
+}
+@media (min-width: 500px) {
+    #b-recommended-by .title.left {
+        text-align: left
+    }
+}
+@media (max-width: 500px) {
+    #b-recommended-by .item {
+        max-width: 130px;
+    }
 }

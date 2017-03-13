@@ -38,7 +38,7 @@ if (isset($_request['productID']) and $_productID = (int) $_request['productID']
     if (isset($_GET['_ga'])) {
         $_url .= (parse_url($_url, PHP_URL_QUERY) ? '&' : '?') . '_ga=' . $_GET['_ga'] ;
     }
-    
+
     $order->_redirect($_url);
 } else {
     if (isset($_GET['product'])) {

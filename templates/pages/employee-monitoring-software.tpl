@@ -359,7 +359,7 @@ description="Increase productivity, ensure legal safety and streamline workflow 
                                                             <div class="wr_pack_premium wr_icloud _single-pack-icloud"></div>
                                                             <div class="wr_pack_double_premium wr_icloud-double _double-pack-icloud"></div>
                                                             <div class="wr_price_big">
-                                                                <span></span><div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr icloud-price-per-month" >{$defaultIosiCloudPrice}</div></div><span>/ month</span>
+                                                                <span></span><div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr icloud-price-per-month" >6.99</div></div><span>/ month</span>
                                                             </div>
                                                         </div>
                                                         <div class="list_price icloud-list_price">
@@ -493,7 +493,7 @@ description="Increase productivity, ensure legal safety and streamline workflow 
                                                                 <div class="wr_pack_premium android_prem_pack _single-pack-android-prem"></div>
                                                                 <div class="wr_pack_double_premium android_prem_pack2 _double-pack-android-prem"></div>
                                                                 <div class="wr_price_big">
-                                                                    <span></span><div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr andr-premium-price-per-month" >{$defaultAndroidPremiumPrice}</div></div><span>/ month</span>
+                                                                    <span></span><div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr andr-premium-price-per-month" >6.99</div></div><span>/ month</span>
                                                                 </div>
                                                             </div>
                                                             <div class="list_price icloud-list_price">
@@ -905,8 +905,8 @@ hideJailbreak = true
 {include file='../includes/main/main-analytics-footer.tpl'}
 <script>
     $(function () {
-        var lmBtn = '<a href="#subscription" class="btn btn-default ga-action-click" ga-action="click" ga-category="premium" ga-label="plan premium packahe" style="margin-top: 6px;"> Learn More</a>';
-        var formBlck = $('#block-promo-buy .vertical-aligh-middle');
+        var lmBtn = '<a href="#subscription" class="btn btn-default ga-action-click" ga-action="click" ga-category="premium" ga-label="plan premium packahe" style="margin-top: 6px;"> View Pricing</a>';
+        var formBlck = $('#block-table-header .vertical-aligh-middle');
         formBlck.append(lmBtn);
         formBlck.find('form').remove();
         $('#demo-banner-button').attr('href', '#subscription');

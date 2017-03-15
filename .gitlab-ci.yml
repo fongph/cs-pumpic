@@ -9,3 +9,5 @@ deploy to dev server:
     - dev
   tags:
     - shell
+  when: manual    
+    

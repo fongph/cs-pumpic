@@ -100,8 +100,11 @@ description="Increase productivity, ensure legal safety and streamline workflow 
     title = "Employee Monitoring Software</br>One-Stop Solution for Your Business"
     titleSize = "25px"
     description = "Get actionable insights to boost productivity and cut costs.</br>Stay informed and increase data safety."
-    promoBuyBlock = "no"
+
     planPackageBuy = "yes"
+    planPackageBuyUrl = '#subscription'
+    planPackageBuyType = 'link'
+    planPackageBuyClass = 'go_block_scroll'
     block_video = "no"
     block_video_src = "https://www.youtube.com/embed/Atg0CbaytAY"
     Apple = "no"
@@ -354,20 +357,12 @@ description="Increase productivity, ensure legal safety and streamline workflow 
                                         <div data-info-block="ios">
                                             <div class="premium_wr prod-icloud">
                                                 <div class="pricep" style="padding-bottom: 0;">
-                                                    <div class="save__2plan">
-                                                        <div class="save__text label-touch">
-                                                            <input type="checkbox" id="icloud-40off-main" data-checkboxes="get-40off">
-                                                            <label for="icloud-40off-main">
-                                                                <span>Save 40%</span> on the 2nd plan. <div class="limited-time">Limited time offer!</div>
-                                                            </label>
-                                                        </div>
-                                                    </div>
                                                     <div class="buy-wrapper">
                                                         <div class="wrapper_pack clearfix">
                                                             <div class="wr_pack_premium wr_icloud _single-pack-icloud"></div>
                                                             <div class="wr_pack_double_premium wr_icloud-double _double-pack-icloud"></div>
                                                             <div class="wr_price_big">
-                                                                <span></span><div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr icloud-price-per-month" >{$defaultIosiCloudPrice}</div></div><span>/ month</span>
+                                                                <span></span><div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr icloud-price-per-month" >6.99</div></div><span>/ month</span>
                                                             </div>
                                                         </div>
                                                         <div class="list_price icloud-list_price">
@@ -408,12 +403,6 @@ description="Increase productivity, ensure legal safety and streamline workflow 
                                                                         </li>
                                                                     {/foreach}
                                                                 </ul>
-                                                                <div class="double_offer checkbox">
-                                                                    <label>
-                                                                        <input type="checkbox" data-group="icloud" name="get-40off">
-                                                                        Get the 2nd plan with <span>40% OFF!</span>
-                                                                    </label>
-                                                                </div>
                                                                 <button class="btn btn-default ga-action-click"
                                                                         ga-action ="click"
                                                                         ga-category="buy button"
@@ -507,19 +496,12 @@ description="Increase productivity, ensure legal safety and streamline workflow 
                                                                 <div class="wr_pack_premium android_prem_pack _single-pack-android-prem"></div>
                                                                 <div class="wr_pack_double_premium android_prem_pack2 _double-pack-android-prem"></div>
                                                                 <div class="wr_price_big">
-                                                                    <span></span><div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr andr-premium-price-per-month" >{$defaultAndroidPremiumPrice}</div></div><span>/ month</span>
+                                                                    <span></span><div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr andr-premium-price-per-month" >6.99</div></div><span>/ month</span>
                                                                 </div>
                                                             </div>
                                                             <div class="list_price icloud-list_price">
 
                                                                 <form name="price_premium" method="POST" action="/buy.html" class="buy-form-with-offer" autocomplete="off" >
-                                                                    <div class="save__2plan">
-                                                                        <div class="save__text label-touch">
-                                                                            <input type="checkbox" name="android-40off" id="android-40off-main" data-checkboxes="android-40off">
-                                                                            <label for="android-40off-main">
-                                                                                <span>Save 40%</span> on the 2nd plan. <div class="limited-time">Limited time offer!</label></div>
-                                                                    </div>
-                                                            </div>
                                                             <input id='product_price_premium' type='hidden' name='price[productID]' value='{if isset($getDefaultAndroidPremium)}{$getDefaultAndroidPremium}{else}0{/if}' class="product_price"/>
 
                                                             <ul>
@@ -549,12 +531,6 @@ description="Increase productivity, ensure legal safety and streamline workflow 
                                                                     </li>
                                                                 {/foreach}
                                                             </ul>
-                                                            <div class="double_offer checkbox">
-                                                                <label>
-                                                                    <input type="checkbox" data-group="android-prem" name="android-40off">
-                                                                    Get the 2nd plan with <span>40% OFF!</span>
-                                                                </label>
-                                                            </div>
                                                             <button class="btn btn-default ga-action-click"
                                                                     ga-action ="click"
                                                                     ga-category="buy button"
@@ -932,13 +908,13 @@ hideJailbreak = true
 {include file='../includes/main/main-analytics-footer.tpl'}
 <script>
     $(function () {
-       var lmBtn = '<a href="#subscription" class="btn btn-default ga-action-click" ga-action="click" ga-category="premium" ga-label="plan premium packahe" style="margin-top: 6px;"> Learn More</a>';
-        var formBlck = $('#block-promo-buy .vertical-aligh-middle');
-        formBlck.append(lmBtn);
-        formBlck.find('form').remove();
-        $('#demo-banner-button').attr('href','#subscription');
+//        var lmBtn = '<a href="#subscription" class="btn btn-default ga-action-click" ga-action="click" ga-category="premium" ga-label="plan premium packahe" style="margin-top: 6px;"> View Pricing</a>';
+//        var formBlck = $('#block-table-header .vertical-aligh-middle');
+//        formBlck.append(lmBtn);
+//        formBlck.find('form').remove();
+//        $('#demo-banner-button').attr('href', '#subscription');
         $('.logo a').attr('href', '#');
-        $('#type').on('change', function() {
+        $('#type').on('change', function () {
             var val = this.value
             $('#wos').val(val)
             val === 'Bulk Quote Request' ? $('#number_of_devices').show() : $('#number_of_devices').hide();

@@ -6,7 +6,7 @@
     margin: 0;
   }
 }
-
+ 
 form > table.pricing-second {
   margin: 0;
 }
@@ -298,7 +298,6 @@ form > table.pricing-second {
   border-right: 1px solid #dddddd;
   content: "";
   height: auto;
-  margin-top: 55px;
   padding-bottom: 30px;
 }
 
@@ -316,7 +315,6 @@ form > table.pricing-second {
   clear: both;
   content: "";
   height: auto;
-  margin-top: 55px;
   padding-bottom: 30px;
 }
 
@@ -464,7 +462,7 @@ form > table.pricing-second {
 
 .premium_wr {
   .premium_fe {
-    margin-top: 30px;
+    margin-top: 20px;
     width: 100%;
     ul {
       list-style-type: none;
@@ -967,7 +965,7 @@ form > table.pricing-second {
  }
  .wrapper_pack {
    max-width: 295px;
-   margin: 10px auto 0;
+   margin: 0 auto;
    //padding-top: 10px;
  }
  .wrapper_pack2 {

@@ -79,7 +79,7 @@
             textAlign = "left"
             title = "Best Free Android </br>Parental Control Apps"
             titleSize = "35px"
-            description = "Check out the reviews of free parental control software for Android.<br />Keep an eye on your kids remotely. Secure family happiness."
+            description = "Check out popular and widely used Android parental control software.<br/>Pick Pumpic - the best parental monitoring app."
             promoBuyBlock = "no"
             planPackageBuy = "yes"
             block_video = "yes"
@@ -113,8 +113,8 @@
             <div class="pt30 pb20">
                 <p>Smartphones and tablets connected to the Internet have become a trivial part of our world. Everyone’s got one. Meanwhile, many children find out how to use mobile devices before they can actually speak. And all these technologies go along kids’ lives, make them more curios, help to educate themselves, and very often expose them to danger.</p>
 				<p>Cyberbullies insult kids on social media; haunt and offend them on instant chats. This horrible issue is known to be a major suicide factor among teens. Online predators try to gain children’s confidence and make them swallow the hook. Sexting is becoming a normal way of communication, while exchanging nude photos – the best way to show one’s feelings. Moreover, the Internet is full of explicit sexuality, violence, and hate. Our kids have unlimited access to all of this. At any time. With one single click. On their smartphone and tablets. And parents don’t know.</p>
-				<p><a class="a-default" href="/android-parental-monitoring.html">Android parental monitoring applications</a> allow parents to bring the situation under control and protect their children. Pumpic is a good example of reliable protection in this case. Such software lets you follow kids’ activities on mobile devices as well as the Internet. Apply parental controls and see what your kids are texting, which websites they visit and people they talk to. Block undesired content inappropriate for kids. Block apps and other activities to prevent them from wasting time.</p>
-				<p>Check out our list below and choose the best Android parental control app.</p>
+				<p><a class="a-default" href="/android-parental-monitoring.html">Android parental monitoring applications</a> allow parents to bring the situation under control and protect their children. Pumpic is a good example of reliable protection in this case. Such software lets you follow kids’ activities on mobile devices as well as the Internet. Apply parental controls and see what your kids are texting, which websites they visit, and people they talk to. Prevent kids from seeing undesired content inappropriate for them. Block apps and other activities to prevent them from wasting time. Monitor their current location, check the entire routes history and set safe or restricted areas thanks to geofencing feature.</p>
+				<p>Check out the list below, compare the functionality of described solutions and see for yourself why choosing Pumpic - the best Android parental control app - is the right thing to do if you aim to comprehensively protect your little ones from digital perils.</p>
             </div>
         </div>
     </div>
@@ -153,22 +153,31 @@
     title=""
     blockBg='light'}
 
-
         <div class="col-lg-12 col-md-12 col-sm-12">
-            <h2 class="h3 text-right">SecureTeen Review</h3>
+            <h2 class="h3 text-right">Limitly Review</h3>
             <div class="pt30 pb20">
-                <img class="img-align-left" alt="secureteen mobile screen" src="{$img}/landings/free-android-parental-controls/secureteen-review.png" width="207px" height="208px" />
-                <img class="app-icon-right" src="{$img}/landings/free-android-parental-controls/secureteen-review-logo.png" alt="secureteen logo">
-                <p>The app is a secure teen parental control that can help you protect your children online. It lets parents monitor online activities and even block some of them. In addition, SecureTeen logs sent and received text messages that can prevent children from bullying and sexting on the phone.</p>
-				<p>SecureTeen features Internet filtering that includes category blocking, keyword blocking, and a black list option. It also allows blocking other applications installed on your kid’s device. Social media monitoring is limited to Facebook and Instagram only. The app prevents children from watching pornography and comprises a safe search option to clean search results from inappropriate content.</p>
-				<p>Location tracking makes SecureTeen a useful helper for parents. With it, you will always know where you children are. In addition, remote control will let you monitor it all from your own computer as well as lock/unlock your kid’s device distantly. SecureTeen lets review browsing history. Thus, you will know which websites your children visit and control if your restrictions work.</p>
-				<p>SecureTeen is free parental control software for Android smartphones and tablets. However, there is a pay version of the app, which has broader opportunities for $39.99 per 1 year for 3 devices.</p>
-				<p>There are some good features SecureTeen lacks to be really reliable, when it comes to child safety:</p>
-				<ul>
-			       <li>The app doesn’t cover any instant messengers used widely by children (Snapchat, WhatsApp, Kik etc.), which expose them to dangerous cyberbullying, online predator attacks, and sexting.</li>
-				   <li>There is no keylogger in addition to web history logging. Thus, as soon as your kids use the private browser mode, you will not be able to find out what is going on with them online.</li>
-				   <li>Location tracking lacks geo-fencing alerts. It means that if your child gets into a restricted area, where he or she is not allowed to be, leaves school or home, when not supposed to, you will find out about it only when run your computer, not when it actually happens.</li>
+                <img class="img-align-left" alt="Limitly screen time management app" src="{$img}/landings/free-android-parental-controls/limitly-apps-status.png" width="207px" height="208px" />
+                <img class="app-icon-right" src="{$img}/landings/free-android-parental-controls/limitly-logo.png" alt="Limitly App logo">
+                <p>Some people don’t think that not letting your child play football with friends until homework is done, is parental control. But it is. The same when you allow your son or daughter play computer games only one or two hours a day. Generally, parental control refers to a set of measures parents use to take care of their kids and prevent them from possible risks they may face every now and then.</p>
+				<p>That's exactly what Limitly is about. It is a screen time management app that allows to easily control device or applications usage. Basically, it prevents children from frittering away time with tablets and smartphones. With Limitly, parents are enabled to specify periods or the exact time when their kids can use handheld Android gadgets in general and peculiar applications in particular.</p>
+				<p><a class="a-default" href="/limitly-parental-app/">Limitly - Screen Time Parental Control App</a> provides parents with flexibility to manage their kids' on-screen time thanks to a broad range of features:</p>
+				<ul style="margin-left: 200px !important;">
+			     <li>Set schedule for specific apps usage;</li>
+				   <li>Limit the entire target device usage;</li>
+				   <li>Categorize apps by type and control their group limits as one application;</li>
+           <li>Automatically apply limits to the apps newly added to Categories;</li>
+           <li>Get full reports on which apps and how often your kid uses;</li>
+           <li>Customize messages that your child would see before a limit takes action;</li>
+           <li>Quarantine recently installed apps until an adult reviews them.</li>
 			</ul>
+				<p>As today parental control is closely connected to the issue of mobile gadgets use by kids, Limitly can be of great help here. It's especially helpful when parents need to keep their children focused – at school, while doing homework, at bedtime or during family events. Moreover, one shouldn't forget that limiting screen time can have a positive effect on kids' sleep and health.</p>
+        {*
+        <p>Among Limitly's drawbacks we can mark out the following:</p>
+				<ul>
+			     <li>The app only supports Android and is not compatible with iOS;</li>
+				   <li>Monitoring functionality is limited to reporting on which apps were used on the target device (for the sake of fairness, we must say that Limitly doesn't promote itself as parental monitoring solution, the parental control is the core).</li>
+			</ul>
+      *}
             </div>
     </div>
 
@@ -206,19 +215,19 @@
     blockBg='light'}
 
         <div class="col-lg-12 col-md-12 col-sm-12">
-            <h2 class="h3 text-right">Abeona Review</h3>
+            <h2 class="h3 text-right">Norton Family Parental Control Review</h3>
             <div class="pt30 pb20">
-                <img class="img-align-left" alt="abeona mobile screen" src="{$img}/landings/free-android-parental-controls/abeona-review.png" width="207px" height="208px" />
-                <img class="app-icon-right" src="{$img}/landings/free-android-parental-controls/abeona-review-logo.png" alt="abeona logo">
-                <p>The software allows parents to monitor their kids on smartphones and tablets as well as block some mobile activities. It actually comes with two complementary applications: Abeona Parental Control installed on a parent’s device and Abeona Device Monitor installed on a child’s gadget.</p>
-				<p>The Abeona app provides parents with an opportunity to view call logs, track location, and set geofences, which notify you with an alert once your children leave or enter specified areas. The app will also show you applications being used currently as well as general time spend on each app. If you see that your kids spend too much time on any of apps you consider inappropriate, you can block them easily thanks to Abeona’s functionality.</p>
-				<p>When it comes to Internet use, the app allows parents to find out if their children are online or offline and follow websites they visit via Chrome.</p>
-				<p>The app seems to be useful and reliable. However, when start using it, Abeona’s clients point on some reasonable glitches. Thus, in some cases the app doesn’t follow commands. When you try to block an app it may not work. Sometimes the app fails to open at all. Users also admit that children manage to pass over app blocking by repeatedly pressing on its icon.</p>
-				<p>In addition, there are some more substantial disadvantages that should be considered:</p>
+                <img class="img-align-left" alt="norton mobile screen" src="{$img}/landings/free-android-parental-controls/norton-review.png" width="207px" height="208px" />
+                <img class="app-icon-right" src="{$img}/landings/free-android-parental-controls/norton-review-logo.png" alt="norton logo">
+                <p>A parental control application by Norton protects your children from dangers they may come across on the Internet. This software will prevent your kids from accessing inappropriate web content as well as wasting time on their smartphones and tablets.</p>
+				<p>The Norton Family Parental Control app comprises some useful features to monitor and secure children’s mobile activities. With it, you can view websites they visit and block you find misgiving. In addition, the app will send you notifications, if your kids decide to enter one of those websites you have blocked.</p>
+				<p>Among other childcare opportunities, the app allows tracking location on the map and following text conversations. The Norton parental control also has application management options. Thus, you can view downloaded apps, block timewasting ones, and check the amount of time your children spend with their mobile gadgets in hands.</p>
+				<p>A free version of the app means that you can use Norton’s Premier package for 30 days with no charge. However, as soon as this free trial period is over, you will need to make a purchase. Otherwise, your parental control abilities will be limited to web site restriction and alerts.</p>
+				<p>Users admit some bugs and glitches appearing in the app after a month of usage. The app starts crashing and fails to support set up restrictions. Moreover, there are some other problems to be fixed:</p>
 				<ul>
-			       <li>Abeona doesn’t support old Android OS versions. The developers of the app admit it stating that old versions are not supposed to be supported at all due to technical reasons.</li>
-				   <li>Location tracking and geo-fences don’t work without Internet connection. Thus, if your children have no Wi-Fi around, you will not be able to find out where they are.</li>
-				   <li>The app provides web history monitoring only via the Chrome browser. Meanwhile, your children are free to use other browsers and you will not even know what they are surfing.</li>
+			       <li>Norton’s web history control works with a limited number of browsers. Thus, it doesn’t support many of them children can download to overcome parents’ restrictions easily.</li>
+				   <li>The app can’t monitor children’s activities in the incognito mode of browser. Kids can hide from parents what they are surfing by using this private mode.</li>
+				   <li>Doesn’t allow monitoring social media and online chats. All you can do is block these apps. But if you let your kids use one of them you will never know what they do there, and thus, have no opportunity to prevent online risks.</li>
 			</ul>
             </div>
     </div>
@@ -259,101 +268,26 @@
     blockBg='light'}
 
         <div class="col-lg-12 col-md-12 col-sm-12">
-            <h2 class="h3 text-right">Norton Family Parental Control Review</h3>
+            <h2 class="h3 text-right">Abeona Review</h3>
             <div class="pt30 pb20">
-                <img class="img-align-left" alt="norton mobile screen" src="{$img}/landings/free-android-parental-controls/norton-review.png" width="207px" height="208px" />
-                <img class="app-icon-right" src="{$img}/landings/free-android-parental-controls/norton-review-logo.png" alt="norton logo">
-                <p>A parental control application by Norton protects your children from dangers they may come across on the Internet. This software will prevent your kids from accessing inappropriate web content as well as wasting time on their smartphones and tablets.</p>
-				<p>The Norton Family Parental Control app comprises some useful features to monitor and secure children’s mobile activities. With it, you can view websites they visit and block you find misgiving. In addition, the app will send you notifications, if your kids decide to enter one of those websites you have blocked.</p>
-				<p>Among other childcare opportunities, the app allows tracking location on the map and following text conversations. The Norton parental control also has application management options. Thus, you can view downloaded apps, block timewasting ones, and check the amount of time your children spend with their mobile gadgets in hands.</p>
-				<p>A free version of the app means that you can use Norton’s Premier package for 30 days with no charge. However, as soon as this free trial period is over, you will need to make a purchase. Otherwise, your parental control abilities will be limited to web site restriction and alerts.</p>
-				<p>Users admit some bugs and glitches appearing in the app after a month of usage. The app starts crashing and fails to support set up restrictions. Moreover, there are some other problems to be fixed:</p>
+                <img class="img-align-left" alt="abeona mobile screen" src="{$img}/landings/free-android-parental-controls/abeona-review.png" width="207px" height="208px" />
+                <img class="app-icon-right" src="{$img}/landings/free-android-parental-controls/abeona-review-logo.png" alt="abeona logo">
+                <p>The software allows parents to monitor their kids on smartphones and tablets as well as block some mobile activities. It actually comes with two complementary applications: Abeona Parental Control installed on a parent’s device and Abeona Device Monitor installed on a child’s gadget.</p>
+				<p>The Abeona app provides parents with an opportunity to view call logs, track location, and set geofences, which notify you with an alert once your children leave or enter specified areas. The app will also show you applications being used currently as well as general time spend on each app. If you see that your kids spend too much time on any of apps you consider inappropriate, you can block them easily thanks to Abeona’s functionality.</p>
+				<p>When it comes to Internet use, the app allows parents to find out if their children are online or offline and follow websites they visit via Chrome.</p>
+				<p>The app seems to be useful and reliable. However, when start using it, Abeona’s clients point on some reasonable glitches. Thus, in some cases the app doesn’t follow commands. When you try to block an app it may not work. Sometimes the app fails to open at all. Users also admit that children manage to pass over app blocking by repeatedly pressing on its icon.</p>
+				<p>In addition, there are some more substantial disadvantages that should be considered:</p>
 				<ul>
-			       <li>Norton’s web history control works with a limited number of browsers. Thus, it doesn’t support many of them children can download to overcome parents’ restrictions easily.</li>
-				   <li>The app can’t monitor children’s activities in the incognito mode of browser. Kids can hide from parents what they are surfing by using this private mode.</li>
-				   <li>Doesn’t allow monitoring social media and online chats. All you can do is block these apps. But if you let your kids use one of them you will never know what they do there, and thus, have no opportunity to prevent online risks.</li>
+			       <li>Abeona doesn’t support old Android OS versions. The developers of the app admit it stating that old versions are not supposed to be supported at all due to technical reasons.</li>
+				   <li>Location tracking and geo-fences don’t work without Internet connection. Thus, if your children have no Wi-Fi around, you will not be able to find out where they are.</li>
+				   <li>The app provides web history monitoring only via the Chrome browser. Meanwhile, your children are free to use other browsers and you will not even know what they are surfing.</li>
 			</ul>
             </div>
     </div>
 
 {EndContent}
 
-{Content
-    styleTitle=""
-    title=""
-    blockBg='dark'}
-
-    <div id="grid-images" class="row">
-        <div class="col-lg-12 col-md-12 col-sm-12">
-            <h2 class="h3 text-left">Qustodio Review</h3>
-            <div class="pt30 pb20">
-                <img class="img-align-right" alt="qustodio mobile screen" src="{$img}/landings/free-android-parental-controls/qustodio-review.png" width="207px" height="208px" />
-                <img class="app-icon-left" src="{$img}/landings/free-android-parental-controls/qustodio-review-logo.png" alt="qustodio logo">
-			<p>Qustodio introduces its parental control app as the most friendly and powerful solution for parental control. It is designed to protect children online and on the phone as well as to let you restrict activities and prevent kids from wasting their time.</p>
-			<p>The app allows parents to block misgiving web sources including pornography and gambling. It will also let you set limits on time your children spend on the Internet and social networks. In addition, the Qustodio app provides application control enabling parents to view downloaded software and block those apps they consider inappropriate.</p>
-			<p>With this parental control at your command, you will be able to track children’s location. Moreover, Qustodio lets review route history as far as 30 days back. The app also provides monitoring of call logs and SMS.</p>
-			<p>There are clients, who complain of the app to consume too much of a battery. In addition, some children manage to find a way to disable Qustodio’s restrictions. The app sometimes fails to block set up content categories and kids can still access inappropriate sources.</p>
-			<p>A free version of the app is limited and cannot provide enough features for reliable protection. Among others, the Qustodio app has some issues concerned with functionality that should be improved to make its security really helpful:</p>
-			<ul>
-			   <li>The app lacks thorough social media monitoring, thought it allows blocking social apps and tracking time spent on them. Thus, you can either block these apps as such or let kids use them without any opportunity to monitor texting and protect from danger if needed.</li>
-			   <li>Location tracking lacks geo-fencing. It means you will know where your kids are, only when you run your control panel. Geo-fencing here would get you notified about kids’ movements.</li>
-			   <li>The app run the battery down, which is indicates its performance as doubtful one. Parental control apps of high quality are not supposed to use up the battery excessively.</li>
-			</ul>
-            </div>
-        </div>
-    </div>
-{EndContent}
-
-{Content
-    styleTitle=""
-    title=""
-    blockBg='light'}
-
-        <div class="col-lg-12 col-md-12 col-sm-12">
-            <h2 class="h3 text-right">Kakatu Review</h3>
-            <div class="pt30 pb20">
-                <img class="img-align-left" alt="kakatu screen" src="{$img}/landings/free-android-parental-controls/kakatu-review.png" width="207px" height="208px" />
-                <img class="app-icon-right" src="{$img}/landings/free-android-parental-controls/kakatu-review-logo.png" alt="kakatu logo">
-                <p>This parental control software is designed to protect your children from excessive use of their smartphone and tablets, for safe Internet browsing and device control. It will also protect your own mobile device, if your kids have none, but you give them yours from time to time.</p>
-				<p>The Kakatu app features a timer to control how much time your kids spend playing games, surfing the Internet, using other applications, and provides you with reports on their activities. You can also set time schedules to prevent children from using devices at bed time or classes. The app allows you to specify at what time each application can be used.</p>
-				<p>Kakatu takes care of your kids online as well .Thus, you can block inappropriate content like pornography, violence, and horror. When it comes to cell phone use, the app lets you block incoming calls against undesirable contacts. Kakatu includes the Parent Mode and Kids Mode, which will secure your kids against accessing inappropriate content and activities on your own cell phone or tablet.</p>
-				<p>Some users of Kakatu point that children can easily bypass its restrictions or even delete the app without parents knowing. At the same time, the Kakatu parental control has other issues that leave a lot to be desired:</p>
-				<ul>
-			       <li>The app doesn’t provide comprehensive browsing history control. You are not allowed to track the incognito mode and can only monitor online activities on the surface.</li>
-				   <li>Concerning social media tracking, parents can only view statistics on app usage, meanwhile communication with strangers, which is the main source of dangers if left unattended.</li>
-				   <li>Kakatu allows monitoring and blocking phone calls and avoids text messaging. However, modern children prefer texting to making calls. Thus, a major part of children’s cell phone activities remains without control.</li>
-			</ul>
-            </div>
-    </div>
-
-{EndContent}
-
-{Content
-    styleTitle=""
-    title=""
-    blockBg='dark'}
-
-    <div id="grid-images" class="row">
-        <div class="col-lg-12 col-md-12 col-sm-12">
-            <h2 class="h3 text-left">iWawa Review</h3>
-            <div class="pt30 pb20">
-                <img class="img-align-right" alt="iwawa screen" src="{$img}/landings/free-android-parental-controls/iwawa-review.png" width="207px" height="208px" />
-                <img class="app-icon-left" src="{$img}/landings/free-android-parental-controls/iwawa-review-logo.png" alt="iwawa logo">
-			<p>Parental monitoring by iWawa provides a way of making Android devices safer for children. With this app, parents should have no worries, when handing a smartphone or tablet to their little kids. Application use and web browsing remain under your control, meanwhile your children – under iWawa’s protection.</p>
-			<p>The functionality of the iWawa app let you choose from among applications that your children are allowed to use. If you let your kids access the Internet, you can also choose websites with appropriate content and block those containing data restricted for the underage.</p>
-			<p>In addition, iWawa feature a timer. You can create multiple user accounts for your kids and specify how much time each of the, can spend with smartphones in hands. You can also choose music and videos available for your kids’ access.</p>
-			<p>On one hand, iWawa looks good enough to be helpful for parents. On the other one, there are some disadvantages that should be considered:</p>
-			<ul>
-			   <li>The app has too poor functionality to help you control your children’s personal devices. Thus, it may be used only on your own device at times, when you give it to your kids.</li>
-			   <li>If you let your kids enter social networks, there is no opportunity to follow their activities inside social apps.</li>
-			   <li>iWawa provides only block/allow options. Thus, parents cannot monitor their children’s activities, but only restrict them.</li>
-			</ul>
-            </div>
-        </div>
-    </div>
-{EndContent}
-
-<div class="light">
+<div class="dark">
         <div class="container">
                 <h2 class="text-center">Pumpic Provides Reliable Protection</h2>
 				<p>Pumpic is a multifeature parental control application comprehensive enough to provide reliable protection for your children. The app covers all of your kids’ activities online and daily. It is a helping hand for careful parents for all of life emergencies.</p>
@@ -399,13 +333,13 @@
         {include file='../includes/content/features-table-new.tpl'
         title = "Over 24 Features for Child Safety "
         description = "Each and every feature the Pumpic app includes allows you to monitor various spheres of your children’s lives. All together, they show you a wide picture of what is going on with your kids, so as you could detect potential risks and avert them in the making."
-        blockBg="dark"
+        blockBg="light"
             android = "yes"
             storeLinkText = "Go to Store"
         }
 
         {include file='../includes/content/ipad.tpl'
-        blockBg="light"
+        blockBg="dark"
         bgTab = "bgIOS"
         imgUrl = "parental_control/ipad.png"
         imgAlt = "Android"
@@ -417,7 +351,7 @@
         {* description = "Install the iPad parental control app on your kid’s tablet and start monitoring right away. Log in to your Control Panel and view all the information from the target device. It can be accessed from anywhere including desktop computers, laptops, smartphones, and tablets. In addition to data monitoring, the Control Panel allows you to set limits, block tablet activities, and lock the target device permanently."
         *}
 
-        <div class="dark">
+        <div class="light">
     <div class="container">
             <h2 class="text-center testimonial-title">Trusted by Over 10 000 Customers Worldwide:</h2>
             <div class="row">

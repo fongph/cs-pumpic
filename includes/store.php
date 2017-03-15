@@ -13,7 +13,9 @@ require_once 'smarty.config.php';
 
 $url = $_COOKIE['page'];
 
-if (isset($_COOKIE['page']) && $url == '/store-sub-same' || $url == '/store-sub-new'){
+$lastTestedPages = array('/store-sub-same', '/store-sub-new', '/store-sub-new-hyp1', '/store-sub-new-1',
+                        '/store-sub-new-3', '/store-sub-new-2', '/store-sub-new-2202');
+if (isset($_COOKIE['page']) && in_array($url, $lastTestedPages)){
     unset($_COOKIE['page']);
     setcookie('page', null, -1, '/');
 }
@@ -34,13 +36,13 @@ if (isset($_COOKIE['page']) && !empty($_COOKIE['page'])){
     }
 
 } elseif (!isset($_COOKIE['page']) || empty($_COOKIE['page'])) {
-    $urls = array(0 =>'/store', 1 => '/store-sub-new-1', 2 =>'/store-sub-new-hyp1');
+    $urls = array(0 =>'/store', 1 => '/store-sub-new-0303');
     $clientsNumber = $obj ->getStoreClientsCount();
     $obj->incrementStoreClientsCount();
-    $url = $clientsNumber % 3;
+    $url = $clientsNumber % 2;
     $redirectUrl = $urls[$url];
-//    setcookie('page', $redirectUrl, time()+365*24*60*60, '/', '.pumpic.com');
-    setcookie('page', $redirectUrl);
+    setcookie('page', $redirectUrl, time()+365*24*60*60, '/');
+//    setcookie('page', $redirectUrl);
     if ($redirectUrl != '/store'){
         header("Location: //".$config['domain'].$redirectUrl.".html" .  preserve_qs());
     }
@@ -48,7 +50,7 @@ if (isset($_COOKIE['page']) && !empty($_COOKIE['page'])){
 }
 
 /* list order */
-$products = $obj ->getProducts('second');
+$products = $obj ->getProducts('second-main');
 
 /* form_order */
 $_request = (isset($_POST['price']) and !empty($_POST['price'])) ? $_POST['price']: false;
@@ -77,14 +79,6 @@ if(is_array($products)) {
             if ($item['period'] == 12 && $item['id']) {
                 $smarty->assign('defaultIosiCloudProduct', $item['id']);
                 $smarty->assign('defaultIosiCloudPrice', round($item['price'] / $item['period'], 2));
-            }
-        endforeach;
-    }
-    if(isset($products['iosJailbreak'])) {
-        foreach($products['iosJailbreak'] as $item) :
-            if ($item['period'] == 12 && $item['id']) {
-                $smarty->assign('defaultJailbreakProduct', $item['id']);
-                $smarty->assign('defaultJailbreakPrice', round($item['price'] / $item['period'], 2));
             }
         endforeach;
     }

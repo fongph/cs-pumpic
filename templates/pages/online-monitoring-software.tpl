@@ -102,7 +102,7 @@
         </div>
 </div>
      
-{include file='../includes/content/features-table.tpl' 
+{include file='../includes/content/features-table.tpl'
         blockBg="light"
 }                                        
 {*                                        

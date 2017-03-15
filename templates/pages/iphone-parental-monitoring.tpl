@@ -1,6 +1,7 @@
 {include file='../includes/main/main-header.tpl'
     title="Ultimate iPhone Parental Control App for Apple iOS"
     description="Pumpic is a tried and true app to monitor iPhone usage and online activity. Set parental control to monitor calls and location and keep your children safe."
+    amp = "`$schema`pumpic.com/amp/iphone-parental-monitoring.html"
 }
 
 <body>
@@ -360,13 +361,6 @@
     </div>
 </div>
 
-        <script>
-            $('.learn-more-link').click(function(e){
-                e.preventDefault();
-                $('.learn-more').toggle(300);
-            })
-        </script>
-
 
         <style>
             @media (max-width: 480px){
@@ -414,5 +408,11 @@
     </div>
 
     {include file='../includes/main/main-analytics-footer.tpl'}
+    <script>
+        $('.learn-more-link').click(function(e){
+            e.preventDefault();
+            $('.learn-more').toggle(300);
+        })
+    </script>
 </body>
 </html>

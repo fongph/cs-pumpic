@@ -1,4 +1,6 @@
 $(document).ready(function(){
+	$('input:checkbox').prop('checked', false);
+	
 	$(document).on('mouseover', '[data-toggle="tooltip"]', function () {
 		$('[data-toggle="tooltip"]').tooltip({
 			placement:'top',

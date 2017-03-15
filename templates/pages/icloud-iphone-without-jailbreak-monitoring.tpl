@@ -155,7 +155,7 @@
                                                             {*</div>*}
                                                                 <div style="width: 100px; display: inline-block; vertical-align: middle;">
                                                                 <div class="wr_pack_premium wr_icloud _single-pack-icloud"></div>
-                                                                <div class="wr_pack_double_premium wr_icloud-double _double-pack-icloud" style="margin-top: 9px;"></div>
+                                                                {*<div class="wr_pack_double_premium wr_icloud-double _double-pack-icloud" style="margin-top: 9px;"></div>*}
                                                                     </div>
                                                                 <div class="wr_price_big" style="vertical-align: middle;">
                                                                     <span></span>
@@ -198,12 +198,6 @@
                                                                         </li>
                                                                     {/foreach}
                                                                 </ul>
-                                                                <div class="double_offer checkbox">
-                                                                    <label>
-                                                                        <input type="checkbox" data-group="icloud">
-                                                                        Get the 2nd plan with <span>40% OFF!</span>
-                                                                    </label>
-                                                                </div>
                                                                 <button class="btn btn-default ga-action-submit"
                                                                         ga-action ="click"
                                                                         ga-category="icloud-iphone-without-jailbreak-monitoring"
@@ -310,7 +304,7 @@
                                                                 {*</div>*}
                                                                 <div style="width: 100px; display: inline-block; vertical-align: middle;">
                                                                     <div class="wr_pack_premium wr_icloud _single-pack-icloud"></div>
-                                                                    <div class="wr_pack_double_premium wr_icloud-double _double-pack-icloud" style="margin-top: 9px;"></div>
+                                                                    {*<div class="wr_pack_double_premium wr_icloud-double _double-pack-icloud" style="margin-top: 9px;"></div>*}
                                                                 </div>
                                                                 <div class="wr_price_big" style="vertical-align: middle;">
                                                                     <span></span>
@@ -353,12 +347,6 @@
                                                                         </li>
                                                                     {/foreach}
                                                                 </ul>
-                                                                <div class="double_offer checkbox">
-                                                                    <label>
-                                                                        <input type="checkbox" data-group="icloud">
-                                                                        Get the 2nd plan with <span>40% OFF!</span>
-                                                                    </label>
-                                                                </div>
                                                                 <button class="btn btn-default ga-action-submit"
                                                                         ga-action ="click"
                                                                         ga-category="icloud-iphone-without-jailbreak-monitoring"

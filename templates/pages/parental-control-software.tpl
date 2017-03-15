@@ -70,6 +70,8 @@
             blockBg="light" 
             androidText = "<b>Rooting</b> is required to use some extended features"
             iosText = "<b>Jailbreak</b> is required before the installation"
+            onlyItem = "android"
+
         }  {* no_bg bg-wite *}
         
         <!-- BLOCK FEATURES -->
@@ -110,16 +112,16 @@
                                                                  
                                                         <div class="list_price">
                                                             <form name="price_premium" method="POST" action="/buy.html" class="buy-form-with-offer" autocomplete="off">
-                                                                <input id='product_price_premium' type='hidden' name='price[productID]' value='{if isset($getDefaultPremium)}{$getDefaultPremium}{else}0{/if}' class="product_price" />
+                                                                <input id='product_price_premium' type='hidden' name='price[productID]' value='{if isset($defaultIosiCloud)}{$defaultIosiCloud}{else}0{/if}' class="product_price" />
                                                 
                                                                 <ul>
-                                                                    {foreach from=$getProducts.premium key=key item=item}
+                                                                    {foreach from=$getProducts.androidPremium key=key item=item}
                                                                         <li>
                                                                             <label class="label_radio hover_label_radio {if $item.period == '12'}r_on{else}r_off{/if}">
-                                                                                <input class="data-price" data-target=".premium-price-per-month" data-cur="usd" data-price-usd="{$item.price}" data-offer-price-usd="{$getProducts.premiumDouble[$key].price}" data-period="{$item.period}" data-product="{$item.id}" data-offer-product="{$getProducts.premiumDouble[$key].id}" data-group="premium"  name="optionsRadios" id="optionsRadios{$item.id}2" value="{$item.id}" type="radio"{if $item.period == '12'} checked="checked"{/if} />
+                                                                                <input class="data-price" data-target=".andr-premium-price-per-month" data-cur="usd" data-price-usd="{$item.price}" data-offer-price-usd="{$getProducts.androidPremiumDouble[$key].price}" data-period="{$item.period}" data-product="{$item.id}" data-offer-product="{$getProducts.androidPremiumDouble[$key].id}" data-group="android-prem"  name="optionsRadios" id="optionsRadios{$item.id}1" value="{$item.id}" type="radio"{if $item.period == '12'} checked="checked"{/if} />
                                                                                 <span class="sp">
-                                                                                    <strong>{$item.period}</strong> {if $item.period == 1}month{else}months{/if}
-                                                                                </span>
+                                                                            <strong>{$item.period}</strong> {if $item.period == 1}month{else}months{/if}
+                                                                        </span>
 
                                                                                 <div class="box-small-package">
                                                                                     <div class="offer_old_price"><div class="box-currence strike__currence"><div class="symbol" attr-iso="usd">$</div><div class="curr">{$item.price * 2|string_format:"%.2f"}</div></div></div>
@@ -132,24 +134,18 @@
                                                                                 </div>
                                                                                 <div class="package_offer_price">
                                                                                     <strong>
-                                                                                        <div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr">{$getProducts.premiumDouble[$key].price}</div></div>
+                                                                                        <div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr">{$getProducts.androidPremiumDouble[$key].price}</div></div>
                                                                                     </strong>
                                                                                 </div>
                                                                             </label>
                                                                         </li>
                                                                     {/foreach}
                                                                 </ul>
-                                                                <div class="double_offer checkbox">
-                                                                    <label>
-                                                                        <input type="checkbox" data-group="premium">
-                                                                        Get the 2nd plan with <span>40% OFF!</span>
-                                                                    </label>
-                                                                </div>
-                                                                <button class="btn btn-default ga-action-submit mb20"
+                                                                <button class="btn btn-default ga-action-submit"
                                                                         ga-action ="click"
-                                                                        ga-category="icloud-iphone-without-jailbreak-monitoring"
+                                                                        ga-category="parental-control-software"
                                                                         ga-label="buy premium"
-                                                                        ga-page="/icloud-iphone-without-jailbreak-monitoring.html"
+                                                                        ga-page="/parental-control-software.html"
                                                                         value="true" type="submit" name="price[submit]">Buy Now</button>
                                                             </form>
                                                         </div>
@@ -165,7 +161,6 @@
                                                 <div class="table_header text-transform-none text-center">
                                                     <div id="list-price-phones" class="wr_support_new_os">
                                                         <i class="icon-android d_green"></i> Android {$ver_android_bot} - {$ver_android_up}
-                                                        <i class="icon-apple d_green"></i> iOS {$ver_ios_bot} - {$ver_jailbreak_up} (with jailbreak)
                                                     </div>
                                                 </div>
                                             </th>
@@ -207,16 +202,22 @@
             blockBg="dark"
         } 
         
-         <!-- BLOCK COMPATIBILITY -->
+         {*<!-- BLOCK COMPATIBILITY -->*}
+        {*{include file='../includes/content/compatibility/compatibility-table.tpl'*}
+            {*title="Compatibility"*}
+            {*versionIOS="iOS {$ver_icloud_bot} - {$ver_icloud_up}"*}
+            {*androidText=""*}
+            {*iosText="iCloud password is required for the installation"*}
+            {*blockBg="light" *}
+            {*onlyItem="ios"*}
+            {*lang="bra"*}
+        {*} *}
         {include file='../includes/content/compatibility/compatibility-table.tpl'
-            title="Compatibility"
-            versionIOS="iOS {$ver_icloud_bot} - {$ver_icloud_up}"
-            androidText=""
-            iosText="iCloud password is required for the installation"
-            blockBg="light" 
-            onlyItem="ios"
-            lang="bra"
-        } 
+        blockBg="light"
+        onlyItem="icloud"
+
+        }
+
         
         <!-- BLOCK FEATURES -->
         {include file='../includes/content/country/block-features-icloud-spy-en.tpl'
@@ -242,7 +243,7 @@
                                                     <div class="priceb border-none">
                                                         <div class="dtable">
                                                             <div class="dtable-cell text-center">
-                                                                <div class="wr_pack_premium"></div>
+                                                                <div class="wr_pack_premium wr_icloud _single-pack-icloud"></div>
                                                                 <div class="wr_pack_double_premium"></div>
                                                                 <div class="wr_price_big">
                                                                     <span></span>
@@ -256,13 +257,13 @@
                                                                  
                                                         <div class="list_price">
                                                             <form name="price_premium" method="POST" action="/buy.html" class="buy-form-with-offer" autocomplete="off">
-                                                                <input id='product_price_premium' type='hidden' name='price[productID]' value='{if isset($getDefaultPremium)}{$getDefaultPremium}{else}0{/if}' class="product_price" />
+                                                                <input id='product_price_premium' type='hidden' name='price[productID]' value='{if isset($defaultIosiCloud)}{$defaultIosiCloud}{else}0{/if}' class="product_price" />
                                                 
                                                                 <ul>
-                                                                    {foreach from=$getProducts.premium key=key item=item}
+                                                                    {foreach from=$getProducts.iosiCloud key=key item=item}
                                                                         <li>
                                                                             <label class="label_radio hover_label_radio {if $item.period == '12'}r_on{else}r_off{/if}">
-                                                                                <input class="data-price" data-target=".premium-price-per-month" data-cur="usd" data-price-usd="{$item.price}" data-offer-price-usd="{$getProducts.premiumDouble[$key].price}" data-period="{$item.period}" data-product="{$item.id}" data-offer-product="{$getProducts.premiumDouble[$key].id}" data-group="premium"  name="optionsRadios" id="optionsRadios{$item.id}2" value="{$item.id}" type="radio"{if $item.period == '12'} checked="checked"{/if} />
+                                                                                <input class="data-price" data-target=".icloud-price-per-month" data-cur="usd" data-price-usd="{$item.price}" data-offer-price-usd="{$getProducts.iosiCloudDouble[$key].price}" data-period="{$item.period}" data-product="{$item.id}" data-offer-product="{$getProducts.iosiCloudDouble[$key].id}" data-group="icloud"  name="optionsRadios" id="optionsRadios{$item.id}1" value="{$item.id}" type="radio"{if $item.period == '12'} checked="checked"{/if} />
                                                                                 <span class="sp">
                                                                                     <strong>{$item.period}</strong> {if $item.period == 1}month{else}months{/if}
                                                                                 </span>
@@ -278,24 +279,18 @@
                                                                                 </div>
                                                                                 <div class="package_offer_price">
                                                                                     <strong>
-                                                                                        <div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr">{$getProducts.premiumDouble[$key].price}</div></div>
+                                                                                        <div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr">{$getProducts.iosiCloudDouble[$key].price}</div></div>
                                                                                     </strong>
                                                                                 </div>
                                                                             </label>
                                                                         </li>
                                                                     {/foreach}
                                                                 </ul>
-                                                                <div class="double_offer checkbox">
-                                                                    <label>
-                                                                        <input type="checkbox" data-group="premium">
-                                                                        Get the 2nd plan with <span>40% OFF!</span>
-                                                                    </label>
-                                                                </div>
-                                                                <button class="btn btn-default ga-action-submit mb20"
+                                                                <button class="btn btn-default ga-action-submit"
                                                                         ga-action ="click"
-                                                                        ga-category="icloud-iphone-without-jailbreak-monitoring"
+                                                                        ga-category="parental-control-software"
                                                                         ga-label="buy premium"
-                                                                        ga-page="/icloud-iphone-without-jailbreak-monitoring.html"
+                                                                        ga-page="/parental-control-software.html"
                                                                         value="true" type="submit" name="price[submit]">Buy Now</button>
                                                             </form>
                                                         </div>

@@ -18,9 +18,9 @@ $config = array(
 				'tpl_path_compile' => '../templates_c/',
 				'cache_path' => '../cache/'
 		),
-        'schema' => 'http://',
+        'schema' => 'https://',
         'domain' => 'pumpic.com',
-		'domain_http' => 'http://pumpic.com',
+		'domain_http' => 'https://pumpic.com',
 		'path_img' => '/images',
 		'path_js' => '/js',
 		'path_css' => '/css',
@@ -58,14 +58,15 @@ $config = array(
 				'free-trial.html'  => 'free_trial_registration.php',
 
 				'store.html'  => 'store.php',
-				'store-sub-new-1.html'  => 'store-sub-new-1.php',
-				'store-sub-new-hyp1.html'  => 'store-sub-new-hyp1.php',
+				'store-sub-new-0303.html'  => 'store-sub-new-0303.php',
 				'store-android.php'  => 'store-android.php',
 				'aging-parent-protection-app.html' => 'aging-parent-protection-app.php',
 				'iphone-tracking-software.html'   => 'iphone_tracking_software.php',
 				'iphone-with-jailbreak-monitoring.html' => 'iphone_with_jailbreak_monitoring.php',
 				'employee-monitoring-software.html' => 'employee-monitoring-software.php',
 				'icloud-iphone-without-jailbreak-monitoring.html' => 'icloud_iphone_without_jailbreak_monitoring.php',
+				//'amp/icloud-iphone-without-jailbreak-monitoring.html' => 'icloud_iphone_without_jailbreak_monitoring.php',
+				//'store-iframe-amp.html' => 'store-iframe-amp.php',
 
 			// opening-soon-thanks.html
 				'opening-soon-thanks.html' => 'opening-soon-thanks.php',

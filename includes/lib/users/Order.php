@@ -155,7 +155,7 @@ class Order extends ManagerUser
         $this -> _gateway->setStoreId( $this -> storeId )
                 ->setProductId($orderProduct->getReferenceNumber())
                 ->setReferenceData($order->getId() . '-' . $order->getHash())
-                ->setInstant();
+                ->setCheckout();
                 // ->setTestMode(); // не обязательно
         
         if($testMode) $this -> _gateway->setTestMode();
@@ -272,7 +272,7 @@ class Order extends ManagerUser
         $this -> _gateway->setStoreId( $this -> storeId )
                 ->setProductId($orderProduct->getReferenceNumber())
                 ->setReferenceData($order->getId() . '-' . $order->getHash())
-                ->setInstant();
+                ->setCheckout();
                 // ->setTestMode(); // не обязательно
 
         $response =$this -> _gateway->purchaseProduct()->send();
@@ -288,11 +288,11 @@ class Order extends ManagerUser
     
     public function getProducts($namespace) 
     {
-        if ($namespace == 'second-new-hyp-1' || $namespace == 'second-new-1'){
+        if ($namespace == 'second-main' || $namespace == 'second-new-3'){
             $version = '';
             switch ($namespace){
                 case 'second-new-1': $version = 'v4'; break;
-                case 'second-new-hyp-1': $version = 'v5'; break;
+                case 'second-main': $version = 'v0'; break;
             }
             $plans = $this->_billing->getSiteProductsForABTest(self::SITE_ID, 'second', $namespace, $version);
         } else {

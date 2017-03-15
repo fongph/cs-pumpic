@@ -25,12 +25,18 @@ function dispatch($urlParams, $config){
         header301( $config['domain_http'] );
     }
     // 301 redirect
-    if(preg_match('/\/store-sub-same.html/is', $_SERVER['REQUEST_URI']) || preg_match('/\/store-sub-new.html/is', $_SERVER['REQUEST_URI'])) {
+    if(preg_match('/\/store-sub-same.html/is', $_SERVER['REQUEST_URI'])
+        || preg_match('/\/store-sub-new.html/is', $_SERVER['REQUEST_URI'])
+        || preg_match('/\/store-sub-new-1.html/is', $_SERVER['REQUEST_URI'])
+        || preg_match('/\/store-sub-new-3.html/is', $_SERVER['REQUEST_URI'])
+        || preg_match('/\/store-sub-new-2.html/is', $_SERVER['REQUEST_URI'])
+        || preg_match('/\/store-sub-new-2202.html/is', $_SERVER['REQUEST_URI'])
+        || preg_match('/\/store-sub-new-hyp1.html/is', $_SERVER['REQUEST_URI'])) {
         header301( '/store.html' );
     }
 
     // 404 redirect
-    if(preg_match('/\/compatibility\/\?page=(.*)/is', $_SERVER['REQUEST_URI']) ||  preg_match('/\/compatibility\/\?(.*)/is', $_SERVER['REQUEST_URI'])) {
+    if(preg_match('/\/compatibility\/\?page=(.*)/is', $_SERVER['REQUEST_URI']) ||  preg_match('/\/compatibility\/\?(?!utm_)(.*)/is', $_SERVER['REQUEST_URI'])) {
         header404();
         $smarty->display('404.tpl');
         die;
@@ -92,7 +98,7 @@ function smarty_function_getDemoLink($params, $template) {
         $_id = 126; 
         $_get = " ";
     }
-    return "http://demo.{$domain}/setDevice/{$_id}{$_get}";
+    return "https://demo.{$domain}/setDevice/{$_id}{$_get}";
 }
 
 function getURI(){

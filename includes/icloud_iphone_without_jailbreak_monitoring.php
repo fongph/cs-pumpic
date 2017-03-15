@@ -78,5 +78,10 @@ $_rates = $_curr -> getCurrencies();
 $smarty->assign('rates', json_encode($_rates));
 // init output params!
 $smarty->assign('getProducts', $products);
+
+if ($_SERVER['REQUEST_URI'] === '/amp/icloud-iphone-without-jailbreak-monitoring.html') {
+    $smarty->display($b_dir . '/templates/pages/amp/icloud-iphone-without-jailbreak-monitoring.tpl');
+} else {
 // $smarty->assign('_ga', (isset($_COOKIE['_ga'])) ? trim( strtolower($_COOKIE['_ga']), 'ga') : '' );
 $smarty->display($b_dir.'/templates/pages/icloud-iphone-without-jailbreak-monitoring.tpl');
+}

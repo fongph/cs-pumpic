@@ -90,7 +90,10 @@
                                     <li class="i-l-features">
                                         <div class="row">
                                             <div class="col-sm-2 col-md-2 col-lg-2 padding-null features-icon">
-                                                <img class="model-center" src="{$img}/technological/header/icon/icon-call.png" width="27px" height="27px" />
+                                                <svg width="27" height="27" class="model-center">
+                                                    <use xlink:href="/images/svg-icons.svg#calls"></use>
+                                                </svg>
+                                                {*<img class="model-center" src="{$img}/technological/header/icon/icon-call.png" width="27px" height="27px" />*}
                                             </div>
                                             <div class="col-sm-10 col-md-10 col-lg-10 plr5 features-item">
                                                 <a class="underline go_block_scroll" href="#calls-ios">Calls</a>
@@ -107,7 +110,10 @@
                                     <li class="i-l-features">
                                         <div class="row">
                                             <div class="col-sm-2 col-md-2 col-lg-2 padding-null features-icon">
-                                                <img class="model-center" src="{$img}/technological/header/icon/icon-location-history.png" width="24px" height="31px" />
+                                                <svg width="24" height="31" class="model-center">
+                                                    <use xlink:href="/images/svg-icons.svg#location"></use>
+                                                </svg>
+                                                {*<img class="model-center" src="{$img}/technological/header/icon/icon-location-history.png" width="24px" height="31px" />*}
                                             </div>
                                             <div class="col-sm-10 col-md-10 col-lg-10 plr5 features-item">
                                                 <a class="underline go_block_scroll" href="#location-ios">Location History</a>
@@ -123,8 +129,9 @@
                                     <li class="i-l-features">
                                         <div class="row">
                                             <div class="col-sm-2 col-md-2 col-lg-2 padding-null features-icon">
-                                                <img class="model-center" src="{$img}/technological/header/icon/icon-whatsapp.png" width="28px" height="28px" />
-                                            </div>
+                                                <svg width="28" height="28" class="model-center">
+                                                    <use xlink:href="/images/svg-icons.svg#chats"></use>
+                                                </svg>                                            </div>
                                             <div class="col-sm-10 col-md-10 col-lg-10 plr5 features-item">
                                                 <a class="underline go_block_scroll" href="#social-ios">Online Chats</a>
                                                 <div class="bth-info">
@@ -139,8 +146,9 @@
                                     <li class="i-l-features">
                                         <div class="row">
                                             <div class="col-sm-2 col-md-2 col-lg-2 padding-null features-icon">
-                                                <img class="model-center" src="{$img}/technological/i-list-features-contacts.png" width="29px" height="20px" />
-                                            </div>
+                                                <svg width="28" height="28" class="model-center">
+                                                    <use xlink:href="/images/svg-icons.svg#contacts"></use>
+                                                </svg>                                            </div>
                                             <div class="col-sm-10 col-md-10 col-lg-10 plr5 features-item">
                                                 <a class="underline go_block_scroll" href="#organiser-ios">Contacts</a>
                                                 <div class="bth-info">
@@ -176,7 +184,9 @@
                                     <li class="i-l-features p-b-item-1 p-b-item-1-ios">
                                         <div class="row">
                                             <div class="col-sm-2 col-md-2 col-lg-2 padding-null features-icon">
-                                                <img class="model-center" src="{$img}/technological/header/icon/icon-sms.png" width="33px" height="29px" />
+                                                <svg width="31" height="31" class="model-center">
+                                                    <use xlink:href="/images/svg-icons.svg#texts"></use>
+                                                </svg>
                                             </div>
 
                                             <div class="col-sm-10 col-md-10 col-lg-10 plr5 features-item">
@@ -194,7 +204,9 @@
                                     <li class="i-l-features p-b-item-2 p-b-item-2-ios">
                                         <div class="row">
                                             <div class="col-sm-2 col-md-2 col-lg-2 padding-null features-icon">
-                                                <img class="model-center" src="{$img}/technological/header/icon/icon-photos.png" width="29px" height="24px" />
+                                                <svg width="28" height="24" class="model-center">
+                                                    <use xlink:href="/images/svg-icons.svg#photos"></use>
+                                                </svg>
                                             </div>
 
                                             <div class="col-sm-10 col-md-10 col-lg-10 plr5 features-item">
@@ -212,7 +224,9 @@
                                     <li class="i-l-features p-b-item-3 p-b-item-3-ios">
                                         <div class="row">
                                             <div class="col-sm-2 col-md-2 col-lg-2 padding-null features-icon">
-                                                <img class="model-center" src="{$img}/technological/header/icon/icon-browser.png" width="31px" height="31px" />
+                                                <svg width="31" height="31" class="model-center">
+                                                    <use xlink:href="/images/svg-icons.svg#browsers"></use>
+                                                </svg>
                                             </div>
 
                                             <div class="col-sm-10 col-md-10 col-lg-10 plr5 features-item">
@@ -231,7 +245,9 @@
                                     <li class="i-l-features">
                                         <div class="row">
                                             <div class="col-sm-2 col-md-2 col-lg-2 padding-null features-icon">
-                                                <img class="model-center" src="{$img}/technological/header/icon/icon-calendar.png" width="31px" height="31px" />
+                                                <svg width="31" height="31" class="model-center">
+                                                    <use xlink:href="/images/svg-icons.svg#calendar"></use>
+                                                </svg>
                                             </div>
 
                                             <div class="col-sm-10 col-md-10 col-lg-10 plr5 features-item">
@@ -301,7 +317,9 @@
                                     <li class="i-l-features i-l-features-jb">
                                         <div class="row">
                                             <div class="col-sm-2 col-md-2 col-lg-2 padding-null features-icon">
-                                                <img class="model-center" src="{$img}/technological/header/icon/icon-call.png" width="27px" height="27px" />
+                                                <svg width="31" height="31" class="model-center">
+                                                    <use xlink:href="/images/svg-icons.svg#calls"></use>
+                                                </svg>
                                             </div>
                                             <div class="col-sm-10 col-md-10 col-lg-10 plr5 features-item">
                                                 <a class="underline go_block_scroll" href="#calls-android">Calls</a>
@@ -319,7 +337,9 @@
                                     <li class="i-l-features i-l-features-jb ">
                                         <div class="row">
                                             <div class="col-sm-2 col-md-2 col-lg-2 padding-null features-icon">
-                                                <img class="model-center" src="{$img}/technological/header/icon/icon-location-history.png" width="24px" height="31px" />
+                                                <svg width="31" height="31" class="model-center">
+                                                    <use xlink:href="/images/svg-icons.svg#location"></use>
+                                                </svg>
                                             </div>
                                             <div class="col-sm-10 col-md-10 col-lg-10 plr5 features-item">
                                                 <a class="underline go_block_scroll" href="#location-android">Location & Geo-fences</a>
@@ -336,7 +356,9 @@
                                     <li class="i-l-features i-l-features-jb ">
                                         <div class="row">
                                             <div class="col-sm-2 col-md-2 col-lg-2 padding-null features-icon">
-                                                <img class="model-center" src="{$img}/technological/header/icon/icon-chat.png" width="13px" height="28px" />
+                                                <svg width="31" height="31" class="model-center">
+                                                    <use xlink:href="/images/svg-icons.svg#facebook"></use>
+                                                </svg>
                                             </div>
                                             <div class="col-sm-10 col-md-10 col-lg-10 plr5 features-item">
                                                 <a class="underline go_block_scroll" href="#social-android">Online Chats</a>
@@ -353,7 +375,9 @@
                                     <li class="i-l-features i-l-features-jb ">
                                         <div class="row">
                                             <div class="col-sm-2 col-md-2 col-lg-2 padding-null features-icon">
-                                                <img class="model-center" src="{$img}/technological/header/icon/icon-email.png" width="29px" height="20px" />
+                                                <svg width="31" height="28" class="model-center">
+                                                    <use xlink:href="/images/svg-icons.svg#mail"></use>
+                                                </svg>
                                             </div>
                                             <div class="col-sm-10 col-md-10 col-lg-10 plr5 features-item">
                                                 <a class="underline go_block_scroll" href="#email-android">Email</a>
@@ -391,7 +415,9 @@
                                     <li class="i-l-features p-b-item-1">
                                         <div class="row">
                                             <div class="col-sm-2 col-md-2 col-lg-2 padding-null features-icon">
-                                                <img class="model-center" src="{$img}/technological/header/icon/icon-sms.png" width="33px" height="29px" />
+                                                <svg width="31" height="31" class="model-center">
+                                                    <use xlink:href="/images/svg-icons.svg#texts"></use>
+                                                </svg>
                                             </div>
 
                                             <div class="col-sm-10 col-md-10 col-lg-10 plr5 features-item">
@@ -410,7 +436,9 @@
                                     <li class="i-l-features p-b-item-2">
                                         <div class="row">
                                             <div class="col-sm-2 col-md-2 col-lg-2 padding-null features-icon">
-                                                <img class="model-center" src="{$img}/technological/header/icon/icon-photos.png" width="29px" height="24px" />
+                                                <svg width="31" height="31" class="model-center">
+                                                    <use xlink:href="/images/svg-icons.svg#photos"></use>
+                                                </svg>
                                             </div>
 
                                             <div class="col-sm-10 col-md-10 col-lg-10 plr5 features-item">
@@ -429,7 +457,9 @@
                                     <li class="i-l-features p-b-item-3">
                                         <div class="row">
                                             <div class="col-sm-2 col-md-2 col-lg-2 padding-null features-icon">
-                                                <img class="model-center" src="{$img}/technological/header/icon/icon-browser.png" width="31px" height="31px" />
+                                                <svg width="31" height="31" class="model-center">
+                                                    <use xlink:href="/images/svg-icons.svg#browsers"></use>
+                                                </svg>
                                             </div>
 
                                             <div class="col-sm-10 col-md-10 col-lg-10 plr5 features-item">
@@ -449,7 +479,9 @@
                                     <li class="i-l-features">
                                         <div class="row">
                                             <div class="col-sm-2 col-md-2 col-lg-2 padding-null features-icon">
-                                                <img class="model-center" src="{$img}/technological/header/icon/icon-calendar.png" width="31px" height="31px" />
+                                                <svg width="31" height="31" class="model-center">
+                                                    <use xlink:href="/images/svg-icons.svg#calendar"></use>
+                                                </svg>
                                             </div>
 
                                             <div class="col-sm-10 col-md-10 col-lg-10 plr5 features-item">
@@ -527,18 +559,24 @@
                                     <div class="tab col-item-3 col-md-item-3 col-sm-item-3">
                                         <ul>
                                             <li {*class="text-uppercase"*}>
-                                                <i class="i-features-keyloger"></i>
+                                                <svg width="25" height="25" class="features-icon vertical-center mr5">
+                                                    <use xlink:href="/images/svg-icons.svg#keylogger"></use>
+                                                </svg>
                                                 <div>
                                                     Keylogger<br />
                                                     {*<span class="text-normal">(passwords, apps behaviour, incognito)</span>*}
                                                 </div>
                                             </li>
                                             <li>
-                                                <i class="i-features-reboot"></i>
+                                                <svg width="25" height="18" class="features-icon vertical-center mr5">
+                                                    <use xlink:href="/images/svg-icons.svg#reboot"></use>
+                                                </svg>
                                                 <div>Reboot Application{*REBOOT APPLICATION*}</div>
                                             </li>
                                             <li>
-                                                <i class="i-features-remote-activity-control"></i>
+                                                <svg width="25" height="25" class="features-icon vertical-center mr5">
+                                                    <use xlink:href="/images/svg-icons.svg#remote"></use>
+                                                </svg>
                                                 <div>Remote Activity Control{*Remote activity control*}</div>
                                             </li>
                                         </ul>
@@ -547,15 +585,21 @@
                                     <div class="tab col-item-3 col-md-item-3 col-sm-item-3">
                                         <ul>
                                             <li {*class="text-uppercase"*}>
-                                                <i class="i-features-sms-commands"></i>
+                                                <svg width="25" height="25" class="features-icon vertical-center mr5">
+                                                    <use xlink:href="/images/svg-icons.svg#sms-commands"></use>
+                                                </svg>
                                                 <div>SMS Commands</div>
                                             </li>
                                             <li>
-                                                <i class="i-features-reboot"></i>
+                                                <svg width="25" height="18" class="features-icon vertical-center mr5">
+                                                    <use xlink:href="/images/svg-icons.svg#reboot"></use>
+                                                </svg>
                                                 <div>Reboot Device{*REBOOT DEVICE*}</div>
                                             </li>
                                             <li>
-                                                <i class="i-features-remote-device-lock"></i>
+                                                <svg width="25" height="22" class="features-icon vertical-center mr5">
+                                                    <use xlink:href="/images/svg-icons.svg#lock"></use>
+                                                </svg>
                                                 <div>Remote Device Lock</div>
                                             </li>
                                         </ul>
@@ -564,87 +608,23 @@
                                     <div class="tab col-item-3 col-md-item-3 col-sm-item-3 last">
                                         <ul>
                                             <li>
-                                                <i class="i-features-sim-card"></i>
+                                                <svg width="25" height="25" class="features-icon vertical-center mr5">
+                                                    <use xlink:href="/images/svg-icons.svg#sim-change"></use>
+                                                </svg>
                                                 <div>SIM Change Notification{*SIM CHANGE <span class="text-normal">notification</span>*}</div>
                                             </li>
                                             <li>
-                                                <i class="i-features-removal-protection"></i>
+                                                <svg width="25" height="22" class="features-icon vertical-center mr5">
+                                                    <use xlink:href="/images/svg-icons.svg#removal"></use>
+                                                </svg>
                                                 <div>Removal Protection{*Removal protection*}</div>
                                             </li>
                                             <li class="other-feat-last">
                                                 <div class="other-feat-last-wrapper">
-                                                <i class="i-features-instant-location"></i>
-                                                <div>Instant Location{*Instant location*}</div>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </section>
-
-                            </div>
-
-                        </div>
-                </div>
-        </div>
-        <div class="dark _features-content" style="display: none;border-top: 1px solid  #e3e3e3;" data-feature="os-jailbreak">
-                <div class="container">
-                        <h2 class="text-center">Other Features</h2>
-                        <div class="row">
-
-                            <div id="table-container" class="table-col-8 table-sm-col-3">
-
-                                <section>
-                                    <div class="tab col-item-3 col-md-item-3 col-sm-item-3">
-                                        <ul>
-                                            <li {*class="text-uppercase"*}>
-                                                <i class="i-features-keyloger"></i>
-                                                <div>
-                                                    Keylogger<br />
-                                                    {*<span class="text-normal">(passwords, apps behaviour, incognito)</span>*}
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <i class="i-features-reboot"></i>
-                                                <div>Reboot Application{*REBOOT APPLICATION*}</div>
-                                            </li>
-                                            <li>
-                                                <i class="i-features-remote-activity-control"></i>
-                                                <div>Remote Activity Control{*Remote activity control*}</div>
-                                            </li>
-                                        </ul>
-                                    </div>
-
-                                    <div class="tab col-item-3 col-md-item-3 col-sm-item-3">
-                                        <ul>
-                                            <li {*class="text-uppercase"*}>
-                                                <i class="i-features-sms-commands"></i>
-                                                <div>SMS Commands</div>
-                                            </li>
-                                            <li>
-                                                <i class="i-features-reboot"></i>
-                                                <div>Reboot Device{*REBOOT DEVICE*}</div>
-                                            </li>
-                                            <li>
-                                                <i class="i-features-remote-device-lock"></i>
-                                                <div>Remote Device Lock</div>
-                                            </li>
-                                        </ul>
-                                    </div>
-
-                                    <div class="tab col-item-3 col-md-item-3 col-sm-item-3 last">
-                                        <ul>
-                                            <li>
-                                                <i class="i-features-sim-card"></i>
-                                                <div>SIM Change Notification{*SIM CHANGE <span class="text-normal">notification</span>*}</div>
-                                            </li>
-                                            <li>
-                                                <i class="i-features-removal-protection"></i>
-                                                <div>Removal Protection{*Removal protection*}</div>
-                                            </li>
-                                            <li class="other-feat-last">
-                                                <div class="other-feat-last-wrapper">
-                                                <i class="i-features-instant-location"></i>
-                                                <div>Instant Location{*Instant location*}</div>
+                                                    <svg width="25" height="25" class="features-icon vertical-center mr5">
+                                                        <use xlink:href="/images/svg-icons.svg#instant-location"></use>
+                                                    </svg>
+                                                    <div>Instant Location{*Instant location*}</div>
                                                 </div>
                                             </li>
                                         </ul>
@@ -688,7 +668,11 @@
 
                                 <div class='feature-item-info'>
                                     <ul>
-                                        <li><i class='i-list-features-call'></i><strong>Calls</strong></li>
+                                        <li>
+                                            <svg width="31" height="31" class="features-icon i-list-features-svg">
+                                                <use xlink:href="/images/svg-icons.svg#calls"></use>
+                                            </svg>
+                                            <strong>Calls</strong></li>
                                     </ul>
                                     <div class='block-info'>
                                         <p>Follow <b>incoming</b> and <b>outgoing</b> call logs with precise contact data including <b>name</b>, <b>number</b>, <b>time</b> of the call and its <b>duration</b>. Find out who reaches the target phone, at what time and for how long.</p>
@@ -708,9 +692,13 @@
                                 <div class='feature-item-info'>
                                     <ul>
                                         <li>
-                                            <i class='i-list-features-sms only-mobile'></i>
+                                            <svg width="31" height="31" class="features-icon i-list-features-svg only-mobile">
+                                                <use xlink:href="/images/svg-icons.svg#texts"></use>
+                                            </svg>
                                             <strong>SMS, MMS, iMessages</strong>
-                                            <i class='i-list-features-sms only-pc'></i>
+                                            <svg width="31" height="31" class="features-icon i-list-features-svg only-pc">
+                                                <use xlink:href="/images/svg-icons.svg#texts"></use>
+                                            </svg>
                                         </li>
                                     </ul>
                                     <div class='block-info'>
@@ -757,7 +745,11 @@
 
                                 <div class='feature-item-info'>
                                     <ul>
-                                        <li><i class="i-list-features-location-history"></i><strong> Location</strong></li>
+                                        <li>
+                                            <svg width="31" height="31" class="features-icon i-list-features-svg">
+                                                <use xlink:href="/images/svg-icons.svg#location"></use>
+                                            </svg>
+                                            <strong> Location</strong></li>
                                     </ul>
                                     <div class='block-info'>
                                         <p>Instantly <b>locate</b> the target device <b>on the map</b>. Keep track of current position as well as the <b>entire route history</b> by using GPS. Find the target device, if lost or stolen.</p>
@@ -781,16 +773,32 @@
 
                                 <div class='feature-item-info'>
                                     <ul>
-                                        <li><i class='i-list-features-skype only-mobile'></i>
+                                        <li>
+                                            <svg width="31" height="31" class="features-icon i-list-features-svg only-mobile">
+                                                <use xlink:href="/images/svg-icons.svg#skype"></use>
+                                            </svg>
                                             <strong>Skype</strong>
-                                            <i class='i-list-features-skype only-pc'></i></li>
-                                        <li><i class='i-list-features-whatsapp only-mobile'></i>
+                                            <svg width="31" height="31" class="features-icon i-list-features-svg only-pc">
+                                                <use xlink:href="/images/svg-icons.svg#skype"></use>
+                                            </svg>
+                                        </li>
+                                        <li>
+                                            <svg width="31" height="31" class="features-icon i-list-features-svg only-mobile">
+                                                <use xlink:href="/images/svg-icons.svg#chats"></use>
+                                            </svg>
                                             <strong>WhatsApp</strong>
-                                            <i class='i-list-features-whatsapp only-pc'></i>
+                                            <svg width="31" height="31" class="features-icon i-list-features-svg only-pc">
+                                                <use xlink:href="/images/svg-icons.svg#chats"></use>
+                                            </svg>
                                             </li>
-                                        <li><i class='i-list-features-kik-chat only-mobile'></i>
+                                        <li>
+                                            <svg width="31" height="31" class="features-icon i-list-features-svg only-mobile">
+                                                <use xlink:href="/images/svg-icons.svg#kik"></use>
+                                            </svg>
                                             <strong>Kik</strong>
-                                            <i class='i-list-features-kik-chat only-pc'></i>
+                                            <svg width="31" height="31" class="features-icon i-list-features-svg only-pc">
+                                                <use xlink:href="/images/svg-icons.svg#kik"></use>
+                                            </svg>
                                         </li>
                                     </ul>
 
@@ -833,8 +841,16 @@
                             <div class="item-feature-list div-table-column col-sm-12 col-md-4 col-lg-4 text-left">
                                 <div class='feature-item-info'>
                                     <ul>
-                                        <li><i class='i-list-features-browser'></i><strong>Browser control</strong></li>
-                                        <li><i class='i-list-features-star fa fa-star-o fa-2x'></i><strong>Bookmarks</strong></li>
+                                        <li>
+                                            <svg width="28" height="28" class="features-icon i-list-features-svg">
+                                                <use xlink:href="/images/svg-icons.svg#browsers"></use>
+                                            </svg>
+                                            <strong>Browser control</strong></li>
+                                        <li>
+                                            <svg width="31" height="31" class="features-icon i-list-features-svg">
+                                                <use xlink:href="/images/svg-icons.svg#bookmarks"></use>
+                                            </svg>
+                                            <strong>Bookmarks</strong></li>
                                     </ul>
 
                                     <div class='block-info'>
@@ -888,9 +904,13 @@
                                 <div class='feature-item-info'>
                                     <ul>
                                         <li>
-                                            <i class='i-list-features-photos only-mobile'></i>
+                                            <svg width="31" height="31" class="features-icon i-list-features-svg only-mobile">
+                                                <use xlink:href="/images/svg-icons.svg#photos"></use>
+                                            </svg>
                                             <strong>Photos</strong>
-                                            <i class='i-list-features-photos only-pc'></i>
+                                            <svg width="31" height="31" class="features-icon i-list-features-svg only-pc">
+                                                <use xlink:href="/images/svg-icons.svg#photos"></use>
+                                            </svg>
                                         </li>
                                     </ul>
 
@@ -1009,15 +1029,21 @@
                                 <div class='feature-item-info'>
                                     <ul>
                                         <li>
-                                            <i class='i-list-features-calendar'></i>
+                                            <svg width="31" height="31" class="features-icon i-list-features-svg">
+                                                <use xlink:href="/images/svg-icons.svg#calendar"></use>
+                                            </svg>
                                             <strong>Calendar</strong>
                                         </li>
                                         <li>
-                                            <i class='i-list-features-contacts'></i>
+                                            <svg width="31" height="31" class="features-icon i-list-features-svg">
+                                                <use xlink:href="/images/svg-icons.svg#contacts"></use>
+                                            </svg>
                                             <strong>Contacts</strong>
                                         </li>
                                         <li>
-                                            <i class='i-list-features-notes'></i>
+                                            <svg width="31" height="31" class="features-icon i-list-features-svg">
+                                                <use xlink:href="/images/svg-icons.svg#notes"></use>
+                                            </svg>
                                             <strong>Notes</strong>
                                         </li>
                                     </ul>
@@ -1491,7 +1517,11 @@
 
                                 <div class='feature-item-info'>
                                     <ul>
-                                        <li><i class='i-list-features-call'></i><strong>Calls</strong></li>
+                                        <li>
+                                            <svg width="31" height="31" class="features-icon i-list-features-svg">
+                                                <use xlink:href="/images/svg-icons.svg#calls"></use>
+                                            </svg>
+                                            <strong>Calls</strong></li>
                                     </ul>
                                     <div class='block-info'>
                                         <p>Follow <b>incoming</b> and <b>outgoing</b> call logs with precise contact data including <b>name</b>, <b>number</b>, <b>time</b> of the call and its <b>duration</b>. Find out who reaches the target phone, at what time and for how long.</p>
@@ -1516,9 +1546,13 @@
                                 <div class='feature-item-info'>
                                     <ul>
                                         <li>
-                                            <i class='i-list-features-sms only-mobile'></i>
+                                            <svg width="31" height="31" class="features-icon i-list-features-svg only-mobile">
+                                                <use xlink:href="/images/svg-icons.svg#texts"></use>
+                                            </svg>
                                             <strong>SMS and MMS</strong>
-                                            <i class='i-list-features-sms only-pc'></i>
+                                            <svg width="31" height="31" class="features-icon i-list-features-svg only-pc">
+                                                <use xlink:href="/images/svg-icons.svg#texts"></use>
+                                            </svg>
                                         </li>
                                     </ul>
                                     <div class='block-info'>
@@ -1569,7 +1603,11 @@
 
                                 <div class='feature-item-info'>
                                     <ul>
-                                        <li><i class="i-list-features-location-history"></i><strong> Location</strong></li>
+                                        <li>
+                                            <svg width="31" height="31" class="features-icon i-list-features-svg">
+                                                <use xlink:href="/images/svg-icons.svg#location"></use>
+                                            </svg>
+                                            <strong> Location</strong></li>
                                     </ul>
                                     <div class='block-info'>
                                         <p>Instantly <b>locate</b> the target device <b>on the map</b>. Keep track of current position as well as the <b>entire route history</b> by using GPS. Find the target device, if lost or stolen.</p>
@@ -1596,9 +1634,13 @@
                                 <div class='feature-item-info'>
                                     <ul>
                                         <li>
-                                            <i class='i-list-features-applications only-mobile'></i>
+                                            <svg width="31" height="31" class="features-icon i-list-features-svg only-mobile">
+                                                <use xlink:href="/images/svg-icons.svg#application"></use>
+                                            </svg>
                                             <strong>Applications</strong>
-                                            <i class='i-list-features-applications only-pc'></i>
+                                            <svg width="31" height="31" class="features-icon i-list-features-svg only-pc">
+                                                <use xlink:href="/images/svg-icons.svg#application"></use>
+                                            </svg>
                                         </li>
                                     </ul>
 
@@ -1678,12 +1720,36 @@
                             <div class="item-feature-list div-table-column col-sm-12 col-md-4 col-lg-4 text-left">
                                 <div class='feature-item-info'>
                                     <ul>
-                                        <li><i class='i-list-features-facebook'></i><strong>Facebook IM</strong></li>
-                                        <li><i class='i-list-features-viber'></i><strong>Viber</strong></li>
-                                        <li><i class='i-list-features-skype'></i><strong>Skype</strong></li>
-                                        <li><i class='i-list-features-snapchat'></i><strong>Snapchat</strong></li>
-                                        <li><i class='i-list-features-whatsapp'></i><strong>WhatsApp</strong></li>
-                                        <li><i class='i-list-features-kik-chat'></i><strong>Kik</strong></li>
+                                        <li>
+                                            <svg width="31" height="31" class="features-icon i-list-features-svg">
+                                                <use xlink:href="/images/svg-icons.svg#facebook"></use>
+                                            </svg>
+                                            <strong>Facebook IM</strong></li>
+                                        <li>
+                                            <svg width="31" height="31" class="features-icon i-list-features-svg">
+                                                <use xlink:href="/images/svg-icons.svg#viber"></use>
+                                            </svg>
+                                            <strong>Viber</strong></li>
+                                        <li>
+                                            <svg width="31" height="31" class="features-icon i-list-features-svg">
+                                                <use xlink:href="/images/svg-icons.svg#skype"></use>
+                                            </svg>
+                                            <strong>Skype</strong></li>
+                                        <li>
+                                            <svg width="31" height="31" class="features-icon i-list-features-svg">
+                                                <use xlink:href="/images/svg-icons.svg#snapchat"></use>
+                                            </svg>
+                                            <strong>Snapchat</strong></li>
+                                        <li>
+                                            <svg width="31" height="31" class="features-icon i-list-features-svg">
+                                                <use xlink:href="/images/svg-icons.svg#chats"></use>
+                                            </svg>
+                                            <strong>WhatsApp</strong></li>
+                                        <li>
+                                            <svg width="31" height="31" class="features-icon i-list-features-svg">
+                                                <use xlink:href="/images/svg-icons.svg#kik"></use>
+                                            </svg>
+                                            <strong>Kik</strong></li>
                                     </ul>
 
                                     <div class='block-info'>
@@ -1719,9 +1785,13 @@
                                 <div class='feature-item-info'>
                                     <ul>
                                         <li>
-                                            <i class='i-list-features-instagram only-mobile'></i>
+                                            <svg width="31" height="31" class="features-icon i-list-features-svg only-mobile">
+                                                <use xlink:href="/images/svg-icons.svg#instagram"></use>
+                                            </svg>
                                             <strong>Instagram</strong>
-                                            <i class='i-list-features-instagram only-pc'></i>
+                                            <svg width="31" height="31" class="features-icon i-list-features-svg only-pc">
+                                                <use xlink:href="/images/svg-icons.svg#instagram"></use>
+                                            </svg>
                                         </li>
                                     </ul>
 
@@ -1766,7 +1836,9 @@
                                 <div class='feature-item-info'>
                                     <ul>
                                         <li>
-                                            <i class='i-list-features-browser'></i>
+                                            <svg width="31" height="31" class="features-icon i-list-features-svg">
+                                                <use xlink:href="/images/svg-icons.svg#browsers"></use>
+                                            </svg>
                                             <strong>Browser control</strong>
                                         </li>
                                     </ul>
@@ -1833,14 +1905,22 @@
                                 <div class='feature-item-info'>
                                     <ul>
                                         <li>
-                                            <i class='i-list-features-photos only-mobile'></i>
+                                            <svg width="31" height="31" class="features-icon i-list-features-svg only-mobile">
+                                                <use xlink:href="/images/svg-icons.svg#photos"></use>
+                                            </svg>
                                             <strong>Photos</strong>
-                                            <i class='i-list-features-photos only-pc'></i>
+                                            <svg width="31" height="31" class="features-icon i-list-features-svg only-pc">
+                                                <use xlink:href="/images/svg-icons.svg#photos"></use>
+                                            </svg>
                                         </li>
                                         <li>
-                                            <i class='i-list-features-video only-mobile'></i>
+                                            <svg width="31" height="31" class="features-icon i-list-features-svg only-mobile">
+                                                <use xlink:href="/images/svg-icons.svg#video"></use>
+                                            </svg>
                                             <strong>Videos</strong>
-                                            <i class='i-list-features-video only-pc'></i>
+                                            <svg width="31" height="31" class="features-icon i-list-features-svg only-pc">
+                                                <use xlink:href="/images/svg-icons.svg#video"></use>
+                                            </svg>
                                         </li>
                                     </ul>
 
@@ -1917,7 +1997,11 @@
                             <div class="item-feature-list div-table-column col-sm-12 col-md-4 col-lg-4 text-left">
                                 <div class='feature-item-info'>
                                     <ul>
-                                        <li><i class='i-list-features-email'></i><strong>Email</strong></li>
+                                        <li>
+                                            <svg width="35" height="35" class="features-icon i-list-features-svg">
+                                                <use xlink:href="/images/svg-icons.svg#mail"></use>
+                                            </svg>
+                                            <strong>Email</strong></li>
                                     </ul>
 
                                     <div class='block-info'>
@@ -1983,14 +2067,22 @@
                                  <div class='feature-item-info'>
                                      <ul>
                                          <li>
-                                             <i class='i-list-features-calendar only-mobile'></i>
+                                             <svg width="31" height="31" class="features-icon i-list-features-svg only-mobile">
+                                                 <use xlink:href="/images/svg-icons.svg#calendar"></use>
+                                             </svg>
                                              <strong>Calendar</strong>
-                                             <i class='i-list-features-calendar only-pc'></i>
+                                             <svg width="31" height="31" class="features-icon i-list-features-svg only-pc">
+                                                 <use xlink:href="/images/svg-icons.svg#calendar"></use>
+                                             </svg>
                                          </li>
                                          <li>
-                                             <i class='i-list-features-contacts only-mobile'></i>
+                                             <svg width="31" height="31" class="features-icon i-list-features-svg only-mobile">
+                                                 <use xlink:href="/images/svg-icons.svg#contacts"></use>
+                                             </svg>
                                              <strong>Contacts</strong>
-                                             <i class='i-list-features-contacts only-pc'></i>
+                                             <svg width="31" height="31" class="features-icon i-list-features-svg only-pc">
+                                                 <use xlink:href="/images/svg-icons.svg#contacts"></use>
+                                             </svg>
                                          </li>
                                      </ul>
 
@@ -2077,7 +2169,11 @@
                             <div class="item-feature-list div-table-column col-sm-12 col-md-4 col-lg-4 text-left">
                                 <div class='feature-item-info'>
                                     <ul>
-                                        <li><i class='i-list-features-keylogger'></i><strong>Keylogger</strong></li>
+                                        <li>
+                                            <svg width="31" height="31" class="features-icon i-list-features-svg">
+                                                <use xlink:href="/images/svg-icons.svg#keylogger"></use>
+                                            </svg>
+                                            <strong>Keylogger</strong></li>
                                     </ul>
 
                                     <div class='block-info'>
@@ -2143,9 +2239,13 @@
                                 <div class='feature-item-info'>
                                     <ul>
                                         <li>
-                                            <i class='i-list-features-sms-command only-mobile'></i>
+                                            <svg width="31" height="31" class="features-icon i-list-features-svg only-mobile">
+                                                <use xlink:href="/images/svg-icons.svg#sms-commands"></use>
+                                            </svg>
                                             <strong>SMS commands</strong>
-                                            <i class='i-list-features-sms-command only-pc'></i>
+                                            <svg width="31" height="31" class="features-icon i-list-features-svg only-pc">
+                                                <use xlink:href="/images/svg-icons.svg#sms-commands"></use>
+                                            </svg>
                                         </li>
                                     </ul>
 
@@ -2299,7 +2399,11 @@
 
                                 <div class='feature-item-info'>
                                     <ul>
-                                        <li><i class='i-list-features-geo-fencing'></i><strong>Geo-fencing</strong></li>
+                                        <li>
+                                            <svg width="31" height="31" class="features-icon i-list-features-svg">
+                                                <use xlink:href="/images/svg-icons.svg#geo-fencing"></use>
+                                            </svg>
+                                            <strong>Geo-fencing</strong></li>
                                     </ul>
                                     <div class='block-info'>
                                         <p>Define and <b>set specific zones</b> on the <b>map</b>. <b>Receive notifications</b>, once the target device <b>leaves</b> a safe territory or <b>enters a restricted area</b>.</p>
@@ -2325,9 +2429,13 @@
                                 <div class='feature-item-info'>
                                     <ul>
                                         <li>
-                                            <i class='i-list-features-sim-change only-mobile'></i>
+                                            <svg width="31" height="31" class="features-icon i-list-features-svg only-mobile">
+                                                <use xlink:href="/images/svg-icons.svg#reboot"></use>
+                                            </svg>
                                             <strong>Other features</strong>
-                                            <i class='i-list-features-sim-change only-pc'></i>
+                                            <svg width="31" height="31" class="features-icon i-list-features-svg only-pc">
+                                                <use xlink:href="/images/svg-icons.svg#reboot"></use>
+                                            </svg>
                                         </li>
                                     </ul>
 

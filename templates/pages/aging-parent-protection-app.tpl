@@ -390,6 +390,7 @@
     <script src="/javascripts/store-init.js"></script>
 
     <style>
+
         .basic_wr .priceb, .premium_wr .pricep{
             margin-top: 0;
         }

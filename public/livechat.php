@@ -31,7 +31,7 @@ $logger->debug("Started");
 if (isset($_GET['b28d30d3683bf925d1f02b65a65984b400f3bf41d87aa3fcaf2b13ca01d97650'])) {
     $eventData = null;
 
-    if ($data['event_type'] === 'chat_ended') {
+    if ($data['event_type'] === 'chat_ended' && isset($data['visitor']['email'])) {
         $messages = array();
         foreach ($data['chat']['messages'] as $record) {
             $messages[] = array(
@@ -41,15 +41,16 @@ if (isset($_GET['b28d30d3683bf925d1f02b65a65984b400f3bf41d87aa3fcaf2b13ca01d9765
             );
         }
 
-        $eventData = array(
-            'email' => $data['visitor']['email'],
-            'name' => $data['visitor']['name'],
-            'seller' => 'pumpic.com',
-            'chat' => array(
-                'id' => $data['chat']['id'],
-                'messages' => $messages
-            )
-        );
+            $eventData = array(
+                'email' =>  $data['visitor']['email'],
+                'name' => $data['visitor']['name'],
+                'seller' => 'pumpic.com',
+                'chat' => array(
+                    'id' => $data['chat']['id'],
+                    'messages' => $messages
+                )
+            );
+
     } else if ($data['event_type'] === 'ticket_created') {
         $eventData = array(
             'email' => $data['ticket']['requester']['mail'],

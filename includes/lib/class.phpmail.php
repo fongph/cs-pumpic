@@ -134,7 +134,6 @@ class Phpmail extends Settings
      */
     public function _sendCompatibility($params)
     {
-
         if(is_array($params) and count($params) > 0) {
             if(!$this -> validateEmail($params['email'])) {
                 $this -> _messange['error']['email'] = self::error_email;
@@ -152,7 +151,10 @@ class Phpmail extends Settings
                 }
 
                 $browserInfo = $this->getBrowser();
-
+                $userData = $this->_order->getUserDataEmail($params['email']);
+                if ($userData && is_null($this->sender->getUserId())){
+                    $this->sender->setUserId($userData['id']);
+                }
                 try {
                     $this->sender->sendSystemCompatibility(self::mail_support, $params['name'], $params['email'], $params['device-model'], $params['os-version'], $_uid, $browserInfo);
                     $this->sender->sendCompatibility($params['name'], $params['email'], $params['device-model'], $params['os-version'], $_uid,  $browserInfo);
@@ -203,6 +205,10 @@ class Phpmail extends Settings
 
                 $browserInfo = $this->getBrowser();
 
+                $userData = $this->_order->getUserDataEmail($params['email']);
+                if ($userData && is_null($this->sender->getUserId())){
+                    $this->sender->setUserId($userData['id']);
+                }
                 try {
                     $this->sender->sendSystemMobileOperators(self::mail_support, $params['name'], $params['email'], $params['carrier'], $_uid, $browserInfo);
                     $this->sender->sendMobileOperators($params['name'], $params['email'], $params['carrier'], $_uid, $browserInfo);
@@ -284,6 +290,10 @@ class Phpmail extends Settings
                 }
 
                 $browserInfo = $this->getBrowser();
+                $userData = $this->_order->getUserDataEmail($params['email']);
+                if ($userData && is_null($this->sender->getUserId())){
+                    $this->sender->setUserId($userData['id']);
+                }
                try {
                 $this->sender->sendSystemEmployeeRequest(self::mail_support, $params['name'], $params['email'], $params['type'], $params['description'], $_uid, $params['deviceCount'], $params['os-version'], $browserInfo);
                 $this->sender->sendEmployeeRequestUser($params['name'], $params['email'], $params['type'], $params['description'], $_uid, $params['deviceCount'], $params['os-version']);
@@ -364,7 +374,10 @@ class Phpmail extends Settings
                 $browserInfo = $this->getBrowser();
 
                 $params['os'] = (isset($params['wos']) and !empty($params['wos'])) ? $params['wos'] : $params['os'];
-
+                $userData = $this->_order->getUserDataEmail($params['email']);
+                if ($userData && is_null($this->sender->getUserId())){
+                    $this->sender->setUserId($userData['id']);
+                }
                 try {
                     $this->sender->sendSystemContactUs(self::mail_support, $params['name'], $params['email'], $params['os'], $params['description'], $_uid, $browserInfo);
                     $this->sender->sendContactUs($params['email'], $params['name'], $params['os'], $params['description'], $_uid, $browserInfo);

@@ -1,0 +1,11 @@
+stages:
+  - deploy
+
+deploy to dev server:
+  stage: deploy
+  script:
+    - cd ~/ansible-playbooks && ansible-playbook -i ./hosts/prod cs-pumpic-deploy-dev.yml
+  only:
+    - dev
+  tags:
+    - shell

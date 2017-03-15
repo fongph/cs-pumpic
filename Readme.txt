@@ -25,4 +25,4 @@ terminal:
 > gulp dev
 
 Сборка проекта
-> gulp.
+> gulp

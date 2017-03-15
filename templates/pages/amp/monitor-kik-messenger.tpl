@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <link rel="canonical" href="{$schema}pumpic.com/monitor-kik-messenger.html">
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <meta name="description" content="Are you looking for a good way to monitor Kik app? We’ll provide with all information on how to view received and transmitted messages, media files and sketches." />
     {*<link rel="stylesheet" href="/stylesheets/styles.css">*}
     {literal}
         <script async custom-element="amp-analytics"

@@ -100,8 +100,11 @@ description="Increase productivity, ensure legal safety and streamline workflow 
     title = "Employee Monitoring Software</br>One-Stop Solution for Your Business"
     titleSize = "25px"
     description = "Get actionable insights to boost productivity and cut costs.</br>Stay informed and increase data safety."
-    promoBuyBlock = "no"
+
     planPackageBuy = "yes"
+    planPackageBuyUrl = '#subscription'
+    planPackageBuyType = 'link'
+    planPackageBuyClass = 'go_block_scroll'
     block_video = "no"
     block_video_src = "https://www.youtube.com/embed/Atg0CbaytAY"
     Apple = "no"
@@ -905,11 +908,11 @@ hideJailbreak = true
 {include file='../includes/main/main-analytics-footer.tpl'}
 <script>
     $(function () {
-        var lmBtn = '<a href="#subscription" class="btn btn-default ga-action-click" ga-action="click" ga-category="premium" ga-label="plan premium packahe" style="margin-top: 6px;"> View Pricing</a>';
-        var formBlck = $('#block-table-header .vertical-aligh-middle');
-        formBlck.append(lmBtn);
-        formBlck.find('form').remove();
-        $('#demo-banner-button').attr('href', '#subscription');
+//        var lmBtn = '<a href="#subscription" class="btn btn-default ga-action-click" ga-action="click" ga-category="premium" ga-label="plan premium packahe" style="margin-top: 6px;"> View Pricing</a>';
+//        var formBlck = $('#block-table-header .vertical-aligh-middle');
+//        formBlck.append(lmBtn);
+//        formBlck.find('form').remove();
+//        $('#demo-banner-button').attr('href', '#subscription');
         $('.logo a').attr('href', '#');
         $('#type').on('change', function () {
             var val = this.value

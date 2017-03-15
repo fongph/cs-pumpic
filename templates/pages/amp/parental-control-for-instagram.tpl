@@ -6,6 +6,7 @@
     <link rel="canonical" href="{$schema}pumpic.com/parental-control-for-instagram.html">
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
     {*<link rel="stylesheet" href="/stylesheets/styles.css">*}
+    <meta name="description" content="Monitor uploaded pictures, comments, and friends posts on Instagram. Protect your children with reliable Instagram parental monitoring by Pumpic." />
     {literal}
         <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
         <script async src="https://cdn.ampproject.org/v0.js"></script>

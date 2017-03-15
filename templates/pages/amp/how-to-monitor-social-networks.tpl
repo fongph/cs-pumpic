@@ -6,6 +6,7 @@
     <link rel="canonical" href="{$schema}pumpic.com/how-to-monitor-social-networks.html">
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
     {*<link rel="stylesheet" href="/stylesheets/styles.css">*}
+    <meta name="description" content="Most of dangers that kids face come from the Internet. That's why it is so important to know how to monitor social media your children use." />
     {literal}
         <script async custom-element="amp-analytics"
                 src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>

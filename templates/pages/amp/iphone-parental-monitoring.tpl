@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <link rel="canonical" href="{$schema}pumpic.com/iphone-parental-monitoring.html">
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <meta name="description" content="Pumpic is a tried and true app to monitor iPhone usage and online activity. Set parental control to monitor calls and location and keep your children safe." />
     {*<link rel="stylesheet" href="/stylesheets/styles.css">*}
     {literal}
         <style amp-custom>

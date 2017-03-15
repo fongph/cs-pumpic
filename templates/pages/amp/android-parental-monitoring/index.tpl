@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <link rel="canonical" href="{$schema}pumpic.com/android-parental-monitoring/">
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <meta name="description" content="Install Pumpic and forget all your worries. Our monitoring app is #1 choice to keep your child safe - over 20 features for reliable Android parental control." />
     {*<link rel="stylesheet" href="/stylesheets/styles.css">*}
     {literal}
     <style amp-custom>

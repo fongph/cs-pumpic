@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <link rel="canonical" href="{$schema}pumpic.com/mobile-sms-spy.html">
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <meta name="description" content="SMS communication is more popular these days than making calls. That’s why it is reasonable for parents to use a text message spy app to monitor their kids’ activity." />
     {*<link rel="stylesheet" href="/stylesheets/styles.css">*}
     {literal}
         <script async custom-element="amp-analytics"

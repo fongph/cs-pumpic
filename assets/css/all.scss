@@ -3716,6 +3716,10 @@ span {
   background: url('../images/img_support.png') no-repeat;
 }
 
+#img-support.limitly {
+  background: url('../images/img_support_limitly.png') no-repeat;
+  height: 19px;
+}
 #emai-support-v2 {
   position: relative;
   top: 4px;
@@ -8560,4 +8564,13 @@ ul.list_category li:first-child {
   display: inline-block;
   vertical-align: middle;
   fill: #16a89e;
+}
+.vertical-center {
+  position: relative;
+  top: 50%;
+  transform: translate(0,-50%);
+}
+.i-list-features-svg {
+  width: initial!important;
+  height: initial!important;
 }

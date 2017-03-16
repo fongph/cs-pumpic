@@ -1,6 +1,7 @@
 {include file='../includes/main/main-header.tpl'
     title="SMS Monitoring for Kids Protection, SMS Tracking App - Pumpic"
     description="SMS communication is more popular these days than making calls. That’s why it is reasonable for parents to use a text message spy app to monitor their kids’ activity."
+    amp="{$schema}pumpic.com/amp/mobile-sms-spy.html"
 }
 
 <body>

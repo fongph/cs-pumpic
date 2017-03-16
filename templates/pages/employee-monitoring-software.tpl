@@ -732,7 +732,33 @@ description="Increase productivity, ensure legal safety and streamline workflow 
     </div>
 </div>
 
-<div class="dark">
+{Content
+styleTitle=""
+title=""
+blockBg='dark'}
+
+<div id="grid-images" class="row">
+    <div class="col-lg-12 col-md-12 col-sm-12">
+        <h2>Employee Tracking: Tips & Best Practices</h2>
+        <div class="pt30 pb20">
+            <p>As shown above, using a designated software to track employees' activity or location is highly advisable to increase staff productivity and reduce security risks. But one must remember that employee monitoring – if performed improperly – may cause frictions between the organization and the workers. That's why getting yourself acquainted with the best practices of overseeing employees' mobile devices below is crucial to doing it the right way and achieve the most advantageous results.</p>
+            <div>
+                <img class="img-align-right" style="margin: 20px 0 30px 20px"; alt="Tracking employees" src="{$img}/landings/employee-tracking.png" width="207px" height="208px"/>
+                <ul class="list-images">
+                <li style="left: -30px;"><img src="/images/landings/check-icon.png" alt="Check Mark" style="left: -40px;"/><b>Let the staff know that they are being watched.</b> It is essential to clearly tell the employees that their activities are being overlooked with the help of digital tools, be it apps for phone/GPS tracking or programs to monitor PC/Mac usage. In some states, informing employees about surveillance is not required by law, but it is a decent way to treat people who keep your business running.</li>
+                <li style="left: -30px;"><img src="/images/landings/check-icon.png" alt="Check Mark" style="left: -40px;"/><b>Develop straightforward tracking policies.</b> When monitoring the staff, it is imperative to set up an array of clear and transparent arrangements. You should precisely clarify how monitoring is being performed and for what purposes. Ideally, all of this should be assembled in a formal document signed by the employees. When there are strict limits set for the company, the workers feel more protected and comfortable.</li>
+                <li style="left: -30px;"><img src="/images/landings/check-icon.png" alt="Check Mark" style="left: -40px;"/><b>Respect privacy – monitor, do not spy.</b> There is a huge contrast between ethical monitoring and all-round spying on employees. Ensure that you are gathering only the data concerning workers' performance, which is required to fulfill your business tasks. Do you really need to read employees' personal emails? Or their personal communications via instant messengers? Invading workers' privacy definitely won't contribute to maintaining a favorable and friendly environment. It would rather cause tension and conflicts.</li>
+                <li style="left: -30px;"><img src="/images/landings/check-icon.png" alt="Check Mark" style="left: -40px;"/><b>Block objectionable content.</b> As the old saying goes, prevention is better than treatment or the cure. This is totally true regarding watching the staff digitally. When you restrict access to undesired websites from the very start, you dramatically decrease the chance of employees distracting from their responsibilities. Plus, it allows to save time and resources later, when you need to analyze workers' web surfing data.</li>
+                <li style="left: -30px;"><img src="/images/landings/check-icon.png" alt="Check Mark" style="left: -40px;"/><b>Utilize specialized software to track the staff.</b> As you might have already know, there is an extensive variety of employee supervising applications and trackers. But not all of them will suit your requirements considering the reasons you observe staff activities and the goals you set for it – improving productivity, enhancing security or optimizing workflow. The last but not the least, it has to be non-intrusive.</li>
+                </ul>
+            </div>
+            <p>By following tips and hints described above and using Pumpic monitoring software, you'll get the ability to oversee and control your employees' activities on mobile devices in such a way that will benefit your business and won't deliver troubles to your staff.</p>
+        </div>
+    </div>
+</div>
+{EndContent}
+
+<div class="light">
     <div class="container">
         <h2 class="text-center testimonial-title">Made for Businesses. Trusted by Bosses. Worldwide</h2>
         <div class="row">

@@ -13,7 +13,7 @@ require_once 'smarty.config.php';
 
 /* list order */
 $products = $obj ->getProducts('second');
-    
+
 /* form_order */
 $_request = (isset($_POST['price']) and !empty($_POST['price'])) ? $_POST['price']: false;
 if($_request['productID']) {
@@ -24,11 +24,11 @@ if($_request['productID']) {
         $_url = $obj -> createOrder((int)$_request['productID']);
         if($_url) {
             $obj -> _redirect( $_url );
-        } 
+        }
         // create order
     } else if((int)$_request['productID']) {
         $obj -> _redirect('/buy.html?productID='.$_request['productID']);
-        
+
     }
 
 }
@@ -40,14 +40,6 @@ if(is_array($products)) {
             if ($item['period'] == 12 && $item['id']) {
                 $smarty->assign('defaultIosiCloudProduct', $item['id']);
                 $smarty->assign('defaultIosiCloudPrice', round($item['price'] / $item['period'], 2));
-            }
-        endforeach;
-    }
-    if(isset($products['androidPremium'])) {
-        foreach($products['androidPremium'] as $item) :
-            if ($item['period'] == 12 && $item['id']) {
-                $smarty->assign('defaultAndroidPremiumProduct', $item['id']);
-                $smarty->assign('defaultAndroidPremiumPrice', round($item['price'] / $item['period'], 2));
             }
         endforeach;
     }

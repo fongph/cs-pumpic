@@ -151,11 +151,11 @@ class Order extends ManagerUser
                 ->setProduct($this -> _billing -> getProduct($productId))
                 ->loadReferenceNumber()
                 ->save();
-
+// setInstant - show two page in fastpring ; setCheckout - show one page in fastspring
         $this -> _gateway->setStoreId( $this -> storeId )
                 ->setProductId($orderProduct->getReferenceNumber())
                 ->setReferenceData($order->getId() . '-' . $order->getHash())
-                ->setCheckout();
+                ->setInstant();
                 // ->setTestMode(); // не обязательно
         
         if($testMode) $this -> _gateway->setTestMode();

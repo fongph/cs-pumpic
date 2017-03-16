@@ -13,7 +13,7 @@ require_once 'smarty.config.php';
 
 /* list order */
 $products = $obj ->getProducts('second');
-    
+
 /* form_order */
 $_request = (isset($_POST['price']) and !empty($_POST['price'])) ? $_POST['price']: false;
 if($_request['productID']) {
@@ -24,11 +24,11 @@ if($_request['productID']) {
         $_url = $obj -> createOrder((int)$_request['productID']);
         if($_url) {
             $obj -> _redirect( $_url );
-        } 
+        }
         // create order
     } else if((int)$_request['productID']) {
         $obj -> _redirect('/buy.html?productID='.$_request['productID']);
-        
+
     }
 
 }
@@ -52,7 +52,6 @@ if(is_array($products)) {
         endforeach;
     }
 }
-$smarty->assign('rates', json_encode($_rates));
 
 // init output params!
 $smarty->assign('getProducts', $products);

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "d6b2f94b751593b0a7a66a827d57c53f",
+    "content-hash": "c4c045ef5b363cdb971f073218d1cab1",
     "packages": [
         {
             "name": "boomers/cs-billing",
@@ -39,7 +39,7 @@
             "source": {
                 "type": "git",
                 "url": "git@gitlab.dizboard.com:pumpic/cs-mail.git",
-                "reference": "2450cdf2d156b8e30a757262f5be53dedd057682"
+                "reference": "0958865193d4c7d6f7892df7de678f450990a48e"
             },
             "require": {
                 "guzzlehttp/guzzle": "~5.0",
@@ -57,7 +57,7 @@
             "license": [
                 "MIT"
             ],
-            "time": "2017-01-16 10:20:19"
+            "time": "2017-03-15 08:18:14"
         },
         {
             "name": "boomers/cs-models",
@@ -65,7 +65,7 @@
             "source": {
                 "type": "git",
                 "url": "git@gitlab.dizboard.com:pumpic/cs-models.git",
-                "reference": "9d51810992e9495128f18ffc105213cbbe5d1bf3"
+                "reference": "4af9f13a1a5dc9a8ac5ae78314cfb16c0010970a"
             },
             "require": {
                 "php": ">=5.4.0"
@@ -79,7 +79,7 @@
                     "CS\\Models\\": "src/"
                 }
             },
-            "time": "2017-02-06 13:29:35"
+            "time": "2017-03-15 08:20:13"
         },
         {
             "name": "boomers/cs-settings",
@@ -175,6 +175,64 @@
                 "MIT"
             ],
             "time": "2017-03-09 13:57:45"
+        },
+        {
+            "name": "filp/whoops",
+            "version": "1.1.10",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/filp/whoops.git",
+                "reference": "72538eeb70bbfb11964412a3d098d109efd012f7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/filp/whoops/zipball/72538eeb70bbfb11964412a3d098d109efd012f7",
+                "reference": "72538eeb70bbfb11964412a3d098d109efd012f7",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "0.9.*"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.2-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Whoops": "src/"
+                },
+                "classmap": [
+                    "src/deprecated"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Filipe Dobreira",
+                    "homepage": "https://github.com/filp",
+                    "role": "Developer"
+                }
+            ],
+            "description": "php error handling for cool kids",
+            "homepage": "https://github.com/filp/whoops",
+            "keywords": [
+                "error",
+                "exception",
+                "handling",
+                "library",
+                "silex-provider",
+                "whoops",
+                "zf2"
+            ],
+            "time": "2015-06-29T05:42:04+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
@@ -385,16 +443,16 @@
         },
         {
             "name": "monolog/monolog",
-            "version": "1.22.0",
+            "version": "1.22.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/monolog.git",
-                "reference": "bad29cb8d18ab0315e6c477751418a82c850d558"
+                "reference": "1e044bc4b34e91743943479f1be7a1d5eb93add0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/bad29cb8d18ab0315e6c477751418a82c850d558",
-                "reference": "bad29cb8d18ab0315e6c477751418a82c850d558",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/1e044bc4b34e91743943479f1be7a1d5eb93add0",
+                "reference": "1e044bc4b34e91743943479f1be7a1d5eb93add0",
                 "shasum": ""
             },
             "require": {
@@ -459,7 +517,7 @@
                 "logging",
                 "psr-3"
             ],
-            "time": "2016-11-26T00:15:39+00:00"
+            "time": "2017-03-13T07:08:03+00:00"
         },
         {
             "name": "php-amqplib/php-amqplib",
@@ -1931,7 +1989,7 @@
         },
         {
             "name": "symfony/yaml",
-            "version": "v3.2.5",
+            "version": "v3.2.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",

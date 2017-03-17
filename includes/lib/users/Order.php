@@ -288,12 +288,13 @@ class Order extends ManagerUser
     
     public function getProducts($namespace) 
     {
-        if ($namespace == 'second-main' || $namespace == 'second-new-3'){
+        if ($namespace == 'second-main' || $namespace == 'second-new-4' || $namespace == 'second-new-44' ||  $namespace == 'second-new-amp'){
             $version = '';
             switch ($namespace){
                 case 'second-new-4': $version = 'v9'; break;
                 case 'second-new-44': $version = 'v10'; break;
                 case 'second-main': $version = 'v0'; break;
+                case 'second-new-amp': $version = 'amp-1'; break;
             }
             $plans = $this->_billing->getSiteProductsForABTest(self::SITE_ID, 'second', $namespace, $version);
         } else {
@@ -418,6 +419,17 @@ class Order extends ManagerUser
     public function incrementStoreClientsCount()
     {
         return $this->_pdo->exec("UPDATE `options` SET `value` = `value`+1 WHERE `name` = 'pumpic-store-clients-count';");
+
+    }
+    public function getAmpStoreClientsCount()
+    {
+        return $this->_pdo->query("SELECT `value` as count FROM `options` WHERE `name` = 'pumpic-amp-store-clients-count';")->fetchColumn();
+
+    }
+
+    public function incrementAmpStoreClientsCount()
+    {
+        return $this->_pdo->exec("UPDATE `options` SET `value` = `value`+1 WHERE `name` = 'pumpic-amp-store-clients-count';");
 
     }
     

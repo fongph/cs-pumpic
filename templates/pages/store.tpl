@@ -309,8 +309,7 @@ description="Pumpic offers high-quality cell phone tracking software for a good 
                                                         </div>
                                                         <div class="list_price icloud-list_price" id="foot_h4">
                                                             <form name="price_premium_bottom" method="POST" action="/buy.html" class="buy-form-with-offer" autocomplete="off">
-                                                                <input id='product_price_premium' type='hidden' name='price[productID]' value='{if isset($defaultIosiCloud)}{$defaultIosiCloud}{else}0{/if}' class="product_price" />
-                                                                <ul>
+                                                                                                                                <ul>
                                                                     {foreach from=$getProducts.iosiCloud key=key item=item}
                                                                         {if $item.period == 0.7}{$item.period = 7}{/if}
                                                                         <li>

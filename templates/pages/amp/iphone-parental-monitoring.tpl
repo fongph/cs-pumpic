@@ -135,9 +135,12 @@
                                             </ul>
                                             <div class='mt10'>
                                                 <div>
-                                                    <section class="vertical-aligh-middle">
+                                                    <form name="price_amp" method="POST" action="/buy.html" class="buy-form-with-offer" autocomplete="off">
+                                                        <input id='product_price_premium' type='hidden' name='price[productID]' value='{if isset($defaultIosiCloud)}{$defaultIosiCloud}{else}0{/if}' class="product_price" />
+
+                                                        <section class="vertical-aligh-middle">
                                                         {if $ABtest == 'ABtest-1'}
-                                                        <a class="btn btn-default" href="/buy.html?product=pumpic-icloud-1m-amp-1" id="view-pricing-link">Buy Now - $29,95/mo</a>
+                                                        <button type="submit" class="btn btn-default" href="" id="view-pricing-link">Buy Now - $29,95/mo</button>
                                                     </section>
                                                         <div class="button-descr">Old price: <span>$40,00/mo</span></div>
                                                         {elseif $ABtest == 'ABtest-2'}
@@ -148,6 +151,7 @@
                                                         <a class="btn btn-default" href="/store.html" id="view-pricing-link">View Pricing</a>
                                                     </section>
                                                         {/if}
+                                                    </form>
                                                 </div>
                                             </div>
                                         </div>

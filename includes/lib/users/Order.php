@@ -291,7 +291,8 @@ class Order extends ManagerUser
         if ($namespace == 'second-main' || $namespace == 'second-new-3'){
             $version = '';
             switch ($namespace){
-                case 'second-new-1': $version = 'v4'; break;
+                case 'second-new-4': $version = 'v9'; break;
+                case 'second-new-44': $version = 'v10'; break;
                 case 'second-main': $version = 'v0'; break;
             }
             $plans = $this->_billing->getSiteProductsForABTest(self::SITE_ID, 'second', $namespace, $version);

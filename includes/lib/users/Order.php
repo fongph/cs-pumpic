@@ -432,5 +432,5 @@ class Order extends ManagerUser
         return $this->_pdo->exec("UPDATE `options` SET `value` = `value`+1 WHERE `name` = 'pumpic-amp-store-clients-count';");
 
     }
-    
+
 }

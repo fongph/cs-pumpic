@@ -288,7 +288,7 @@ class Order extends ManagerUser
     
     public function getProducts($namespace) 
     {
-        if ($namespace == 'second-main' || $namespace == 'second-new-3'){
+        if ($namespace == 'second-main' || $namespace == 'second-new-4' || $namespace == 'second-new-44'){
             $version = '';
             switch ($namespace){
                 case 'second-new-4': $version = 'v9'; break;

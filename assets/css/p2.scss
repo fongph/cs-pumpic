@@ -301,13 +301,6 @@ form > table.pricing-second {
   padding-bottom: 30px;
 }
 
-@media only screen and (max-width: 700px) {
-  .basic_wr .priceb, .premium_wr .pricep {
-    //margin-top: 0 !important;
-  }
-
-}
-
 .premium_wr .pricep {
   width: 100%;
   color: #fff;
@@ -315,7 +308,7 @@ form > table.pricing-second {
   clear: both;
   content: "";
   height: auto;
-  padding-bottom: 30px;
+  //padding-bottom: 30px;
 }
 
 .wr_pack {
@@ -462,7 +455,7 @@ form > table.pricing-second {
 
 .premium_wr {
   .premium_fe {
-    margin-top: 20px;
+    margin-top: 30px;
     width: 100%;
     ul {
       list-style-type: none;

@@ -50,7 +50,7 @@ if (isset($_request['productID']) and $_productID = (int) $_request['productID']
 
     $order->_redirect($_url);
 } elseif(!empty($_params['getParams'])){
-    $_url = $order->createOrder($_params['getParams']['productID']);
+    $_url = $order->createOrder((int) $_params['getParams']['productID']);
     $order->_redirect($_url);
 } else {
     if (isset($_GET['product'])) {

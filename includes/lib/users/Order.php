@@ -151,11 +151,21 @@ class Order extends ManagerUser
                 ->setProduct($this -> _billing -> getProduct($productId))
                 ->loadReferenceNumber()
                 ->save();
-// setInstant - show two page in fastpring ; setCheckout - show one page in fastspring
-        $this -> _gateway->setStoreId( $this -> storeId )
-                ->setProductId($orderProduct->getReferenceNumber())
-                ->setReferenceData($order->getId() . '-' . $order->getHash())
+
+        // setInstant - show two page in fastpring ; setCheckout - show one page in fastspring
+        $this -> _gateway
+            ->setStoreId( $this -> storeId )
+            ->setProductId($orderProduct->getReferenceNumber())
+            ->setReferenceData($order->getId() . '-' . $order->getHash());
+        //if AMP AB test go to checkout page on fastspring
+        if ($orderProduct->getProduct()->getNamespace() == 'second-new-amp'){
+            $this -> _gateway
+                ->setCheckout();
+        } else {
+            $this -> _gateway
                 ->setInstant();
+        }
+
                 // ->setTestMode(); // не обязательно
         
         if($testMode) $this -> _gateway->setTestMode();
@@ -272,10 +282,10 @@ class Order extends ManagerUser
         $this -> _gateway->setStoreId( $this -> storeId )
                 ->setProductId($orderProduct->getReferenceNumber())
                 ->setReferenceData($order->getId() . '-' . $order->getHash())
-                ->setCheckout();
+                ->setInstant();
                 // ->setTestMode(); // не обязательно
 
-        $response =$this -> _gateway->purchaseProduct()->send();
+        $response = $this -> _gateway->purchaseProduct()->send();
 
         $redirectUrl = $response->getRedirectUrl();
         
@@ -288,16 +298,15 @@ class Order extends ManagerUser
     
     public function getProducts($namespace) 
     {
-        if ($namespace == 'second-main' || $namespace == 'second-new-4' || $namespace == 'second-new-44' ||  $namespace == 'second-new-amp'){
+        if ($namespace == 'second-main' || $namespace == 'second-new-4' || $namespace == 'second-new-44'){
             $version = '';
             switch ($namespace){
                 case 'second-new-4': $version = 'v9'; break;
                 case 'second-new-44': $version = 'v10'; break;
                 case 'second-main': $version = 'v0'; break;
-                case 'second-new-amp': $version = 'amp-1'; break;
             }
             $plans = $this->_billing->getSiteProductsForABTest(self::SITE_ID, 'second', $namespace, $version);
-        } else {
+        }  else {
             $plans = $this->_billing->getSiteProducts(self::SITE_ID, $namespace);
         }
         if(count($plans) > 0) {

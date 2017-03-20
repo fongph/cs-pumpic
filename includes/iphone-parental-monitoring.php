@@ -18,10 +18,10 @@ if (isset($_COOKIE['amp']) && !empty($_COOKIE['amp'])){
     $smarty->assign('ABtest', $amp);
 
 } else {
-    $urls = array(0 =>'default', 1 => 'ABtest-1', 2 => 'ABtest-2');
+    $urls = array(0 => 'ABtest-1', 1 => 'ABtest-2');
     $clientsNumber = $obj ->getAmpStoreClientsCount();
     $obj->incrementAmpStoreClientsCount();
-    $url = $clientsNumber % 3;
+    $url = $clientsNumber % 2;
     $amp = $urls[$url];
     setcookie('amp', $amp, time()+365*24*60*60, '/');
     //get value ABtest
@@ -53,6 +53,7 @@ if($_request['productID']) {
 
 // default
 if(is_array($products)) {
+//    var_dump($products['iosiCloud']);
     if (isset($products['iosiCloud'])) {
         foreach ($products['iosiCloud'] as $item) :
             if ($item['period'] == 12 && $item['id']) {
@@ -63,4 +64,6 @@ if(is_array($products)) {
     }
 }
 
+// init output params!
+$smarty->assign('getProducts', $products);
 $smarty->display($b_dir . '/templates/pages/amp/iphone-parental-monitoring.tpl');

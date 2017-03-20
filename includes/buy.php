@@ -14,12 +14,7 @@ $_landing = (isset($_COOKIE['landing']) and ! empty($_COOKIE['landing'])) ? $_CO
 
 $order->setReferer($_referer);
 $order->setLanding($_landing);
-echo '<pre>';
-var_dump($_request);
-var_dump($_GET);
-var_dump($_SERVER['REQUEST_URI']);
-var_dump($_REQUEST);
-die();
+
 if (isset($_request['productID']) and $_productID = (int) $_request['productID']) {
     $_url = $order->createOrder($_productID);
 

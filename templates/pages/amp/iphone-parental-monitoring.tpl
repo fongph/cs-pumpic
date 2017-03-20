@@ -134,25 +134,30 @@
                                                 <li><i class="icon-apple"></i> ({$ver_icloud_bot} - {$ver_icloud_up})</li>
                                             </ul>
                                             <div class='mt10'>
+
                                                 <div>
                                                     <form name="price_amp" method="POST" action="/buy.html" class="buy-form-with-offer" autocomplete="off">
-                                                        <input id='product_price_premium' type='hidden' name='price[productID]' value='{if isset($defaultIosiCloud)}{$defaultIosiCloud}{else}0{/if}' class="product_price" />
+                                                        {foreach from=$getProducts.iosiCloud key=key item=item}
+                                                        <input id='product_price_premium' type='hidden' name='price[productID]' value='{$item.id}' class="product_price" />
+                                                        <input checked type='hidden' class="data-price" data-target=".icloud-price-per-month" data-cur="usd" data-price-usd="{$item.price}" data-offer-price-usd="{$getProducts.iosiCloudDouble[$key].price}" data-period="{$item.period}" data-product="{$item.id}" data-offer-product="{$getProducts.iosiCloudDouble[$key].id}" data-group="icloud" name="optionsRadios" id="optionsRadios{$item.id}1" value="{$item.id}" type="radio" />
+                                                        {/foreach}
 
                                                         <section class="vertical-aligh-middle">
                                                         {if $ABtest == 'ABtest-1'}
-                                                        <button type="submit" class="btn btn-default" href="" id="view-pricing-link">Buy Now - $29,95/mo</button>
+                                                        <button type="submit" value="true" name="price[submit]" class="btn btn-default" id="view-pricing-link">Buy Now - $29,95/mo</button>
                                                     </section>
                                                         <div class="button-descr">Old price: <span>$40,00/mo</span></div>
                                                         {elseif $ABtest == 'ABtest-2'}
-                                                        <a class="btn btn-default btn-arrow" href="/buy.html" id="view-pricing-link">Buy Now - $29,95</a>
+                                                        <button type="submit" class="btn btn-default btn-arrow" value="true" name="price[submit]" id="view-pricing-link">Buy Now - $29,95</button>
                                                     </section>
                                                         <div class="button-descr">1 month subscription</div>
                                                         {else}
-                                                        <a class="btn btn-default" href="/store.html" id="view-pricing-link">View Pricing</a>
+                                                        <button type="submit" class="btn btn-default" value="true" name="price[submit]" id="view-pricing-link">View Pricing</button>
                                                     </section>
                                                         {/if}
                                                     </form>
                                                 </div>
+
                                             </div>
                                         </div>
 

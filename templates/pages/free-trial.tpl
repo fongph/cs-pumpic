@@ -72,11 +72,11 @@
                                                                 <span>Avaliable on Apple & Android devices</span>
                                                                 <ul>
                                                                     <li>
-                                                                        <i class="os-icons apple"></i>
+                                                                        <i class="fa fa-apple"></i>
                                                                         iOS {$ver_icloud_bot} - {$ver_icloud_up} (iCloud)
                                                                     </li>
                                                                     <li> 
-                                                                        <i class="os-icons android"></i>
+                                                                        <i class="fa fa-android"></i>
                                                                         Android {$ver_android_bot} - {$ver_android_up}
                                                                     </li>
 

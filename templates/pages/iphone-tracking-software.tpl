@@ -86,7 +86,7 @@
                             <div class="list-group list-group-bg">
                                 <ul >
                                   <li href="#" class="list-group-item text-center">
-                                    <h4 class="list-group-item-heading"><i class="os-icons apple"></i> iOS <span style="font-size: 16px;">(iCloud Solution)</span></h4>
+                                    <h4 class="list-group-item-heading"><i class="fa fa-apple"></i> iOS <span style="font-size: 16px;">(iCloud Solution)</span></h4>
                                   </li>
                                   <li href="#" class="list-group-item">
                                     <p class="list-group-item-text">

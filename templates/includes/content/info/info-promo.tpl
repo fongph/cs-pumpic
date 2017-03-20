@@ -99,15 +99,15 @@
                                     <ul class="compatibility compatibility-lg">
 
                                         {if !isset($Icloud) || $Icloud != "no"}
-                                            {if isset($IcloudVersion) && $Icloud == 'yes'}<li><i class="os-icons apple"></i> iOS {$AppleIcloud} (iCloud)</li>
+                                            {if isset($IcloudVersion) && $Icloud == 'yes'}<li><i class="fa fa-apple"></i> iOS {$AppleIcloud} (iCloud)</li>
                                             {else}
-                                            <li><i class="os-icons apple"></i> iOS {$ver_icloud_bot} - {$ver_icloud_up} (iCloud)</li>
+                                            <li><i class="fa fa-apple"></i> iOS {$ver_icloud_bot} - {$ver_icloud_up} (iCloud)</li>
                                             {/if}
                                         {/if}
                                         {if !isset($Android) || $Android != "no"}
-                                            {if isset($AndroidVersion) && $Android == 'yes'}<li><i class="os-icons android"></i> Android {$AndroidVersion}</li>
+                                            {if isset($AndroidVersion) && $Android == 'yes'}<li><i class="fa fa-android"></i> Android {$AndroidVersion}</li>
                                             {else}
-                                            <li><i class="os-icons android"></i> Android {$ver_android_bot} - {$ver_android_up}</li>
+                                            <li><i class="fa fa-android"></i> Android {$ver_android_bot} - {$ver_android_up}</li>
                                             {/if}
                                         {/if}
 

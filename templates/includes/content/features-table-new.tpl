@@ -24,19 +24,19 @@
                                 <ul class="ft-table__list">
                                     <li class="ft-table__item">
                                         <div class="os-label label-black">
-                                            <i class="fa fa-apple"></i>IOS
+                                            <i class="os-icons apple"></i>IOS
                                         </div>
                                         &mdash;
-                                        <span class="ft-table__os"><i class="fa fa-apple fa-lg"></i> IOS </span>
+                                        <span class="ft-table__os"><i class="os-icons apple fa-lg"></i> IOS </span>
                                         <span class="ft-table__os-version">{$ver_icloud_bot} - {$ver_icloud_up}</span>
                                         <div class="ft-table__descr">iCloud password required</div>
                                     </li>
                                     <li class="ft-table__item">
                                         <div class="os-label label-green large">
-                                            <i class="fa fa-android"></i>
+                                            <i class="os-icons android"></i>
                                         </div>
                                         &mdash;
-                                        <span class="ft-table__os"><i class="fa fa-android fa-lg"></i> Android </span>
+                                        <span class="ft-table__os"><i class="os-icons android fa-lg"></i> Android </span>
                                         <span class="ft-table__os-version">{$ver_android_bot} - {$ver_android_up}</span>
                                         <div class="ft-table__descr">Some features require root</div>
                                     </li>
@@ -53,10 +53,10 @@
                                         <span onclick="window.location='/mobile-sms-spy.html'">Monitor SMS and MMS</span>
                                         <div class="os-label__wrapper">
                                             <div class="os-label label-black">
-                                                <i class="fa fa-apple"></i>IOS
+                                                <i class="os-icons apple"></i>IOS
                                             </div>
                                             <div class="os-label label-green large">
-                                                <i class="fa fa-android"></i>
+                                                <i class="os-icons android"></i>
                                             </div>
                                         </div>
                                     </li>
@@ -67,10 +67,10 @@
                                         {if !in_array('call-monitoring-software', $_notVisible)}<span onclick="window.location='/call-monitoring-software.html'">Monitor Calls History{else}Monitor Calls History{/if}
                                         <div class="os-label__wrapper">
                                             <div class="os-label label-black">
-                                                <i class="fa fa-apple"></i>IOS
+                                                <i class="os-icons apple"></i>IOS
                                             </div>
                                             <div class="os-label label-green large">
-                                                <i class="fa fa-android"></i>
+                                                <i class="os-icons android"></i>
                                             </div>
                                         </div>
                                     </li>
@@ -81,10 +81,10 @@
                                         View Calendar
                                         <div class="os-label__wrapper">
                                             <div class="os-label label-black">
-                                                <i class="fa fa-apple"></i>IOS
+                                                <i class="os-icons apple"></i>IOS
                                             </div>
                                             <div class="os-label label-green large">
-                                                <i class="fa fa-android"></i>
+                                                <i class="os-icons android"></i>
                                             </div>
                                         </div>
 
@@ -96,10 +96,10 @@
                                         <span onclick="window.location='/monitor-phone-contacts.html'"> View Contacts</span>
                                         <div class="os-label__wrapper">
                                             <div class="os-label label-black">
-                                                <i class="fa fa-apple"></i>IOS
+                                                <i class="os-icons apple"></i>IOS
                                             </div>
                                             <div class="os-label label-green large">
-                                                <i class="fa fa-android"></i>
+                                                <i class="os-icons android"></i>
                                             </div>
                                         </div>
                                     </li>
@@ -110,7 +110,7 @@
                                         <span onclick="window.location='/email-monitoring-software.html'">View Emails</span>
                                         <div class="os-label__wrapper">
                                             <div class="os-label label-green">
-                                                <i class="fa fa-android"></i>root
+                                                <i class="os-icons android"></i>root
                                             </div>
                                         </div>
                                     </li>
@@ -121,10 +121,10 @@
                                         View Photos
                                         <div class="os-label__wrapper">
                                             <div class="os-label label-black">
-                                                <i class="fa fa-apple"></i>IOS
+                                                <i class="os-icons apple"></i>IOS
                                             </div>
                                             <div class="os-label label-green large">
-                                                <i class="fa fa-android"></i>
+                                                <i class="os-icons android"></i>
                                             </div>
                                         </div>
                                     </li>
@@ -135,7 +135,7 @@
                                         View Videos
                                         <div class="os-label__wrapper">
                                             <div class="os-label label-green large">
-                                                <i class="fa fa-android"></i>
+                                                <i class="os-icons android"></i>
                                             </div>
                                         </div>
                                     </li>
@@ -146,10 +146,10 @@
                                         Remote Control Panel
                                         <div class="os-label__wrapper">
                                             <div class="os-label label-black">
-                                                <i class="fa fa-apple"></i>IOS
+                                                <i class="os-icons apple"></i>IOS
                                             </div>
                                             <div class="os-label label-green large">
-                                                <i class="fa fa-android"></i>
+                                                <i class="os-icons android"></i>
                                             </div>
                                         </div>
                                     </li>
@@ -166,10 +166,10 @@
                                         <span onclick="window.location='/browser-parental-control.html'">Control Browser</span>
                                         <div class="os-label__wrapper">
                                             <div class="os-label label-black">
-                                                <i class="fa fa-apple"></i>IOS
+                                                <i class="os-icons apple"></i>IOS
                                             </div>
                                             <div class="os-label label-green large">
-                                                <i class="fa fa-android"></i>
+                                                <i class="os-icons android"></i>
                                             </div>
                                         </div>
                                     </li>
@@ -180,7 +180,7 @@
                                         <span onclick="window.location='/block-apps.html'">Control Applications</span>
                                         <div class="os-label__wrapper">
                                             <div class="os-label label-green large">
-                                                <i class="fa fa-android"></i>
+                                                <i class="os-icons android"></i>
                                             </div>
                                         </div>
                                     </li>
@@ -191,10 +191,10 @@
                                         View Bookmarks
                                         <div class="os-label__wrapper">
                                             <div class="os-label label-black">
-                                                <i class="fa fa-apple"></i>IOS
+                                                <i class="os-icons apple"></i>IOS
                                             </div>
                                             <div class="os-label label-green large">
-                                                <i class="fa fa-android"></i>
+                                                <i class="os-icons android"></i>
                                             </div>
                                         </div>
                                     </li>
@@ -205,7 +205,7 @@
                                         View Notes
                                         <div class="os-label__wrapper">
                                             <div class="os-label label-black">
-                                                <i class="fa fa-apple"></i>IOS
+                                                <i class="os-icons apple"></i>IOS
                                             </div>
                                         </div>
                                     </li>
@@ -216,7 +216,7 @@
                                         Block Device
                                         <div class="os-label__wrapper">
                                             <div class="os-label label-green large">
-                                                <i class="fa fa-android"></i>
+                                                <i class="os-icons android"></i>
                                             </div>
                                         </div>
                                     </li>
@@ -227,10 +227,10 @@
                                         {if !in_array('location-tracking', $_notVisible)}<span onclick="window.location='/child-location-tracking.html'">Location Tracking</span>{else}Location Tracking{/if}
                                         <div class="os-label__wrapper">
                                             <div class="os-label label-black">
-                                                <i class="fa fa-apple"></i>IOS
+                                                <i class="os-icons apple"></i>IOS
                                             </div>
                                             <div class="os-label label-green large">
-                                                <i class="fa fa-android"></i>
+                                                <i class="os-icons android"></i>
                                             </div>
                                         </div>
                                     </li>
@@ -241,7 +241,7 @@
                                         {if !in_array('geo-fences', $_notVisible)}<span onclick="window.location='/gps-and-geofencing.html'">Geo-fences</span>{else}Geo-fences{/if}
                                         <div class="os-label__wrapper">
                                             <div class="os-label label-green large">
-                                                <i class="fa fa-android"></i>
+                                                <i class="os-icons android"></i>
                                             </div>
                                         </div>
                                     </li>
@@ -252,7 +252,7 @@
                                         <span onclick="window.location='/keylogging-software.html'">Keylogger</span>
                                         <div class="os-label__wrapper">
                                             <div class="os-label label-green large">
-                                                <i class="fa fa-android"></i>
+                                                <i class="os-icons android"></i>
                                             </div>
 
                                         </div>
@@ -270,10 +270,10 @@
                                         </i> <span onclick="window.location='/whatsapp-monitoring.html'">Monitor WhatsApp</span>
                                         <div class="os-label__wrapper">
                                             <div class="os-label label-black">
-                                                <i class="fa fa-apple"></i>IOS
+                                                <i class="os-icons apple"></i>IOS
                                             </div>
                                             <div class="os-label label-green">
-                                                <i class="fa fa-android"></i>root
+                                                <i class="os-icons android"></i>root
                                             </div>
                                         </div>
                                     </li>
@@ -284,10 +284,10 @@
                                         <span onclick="window.location='/monitor-skype.html'">Monitor Skype</span>
                                         <div class="os-label__wrapper">
                                             <div class="os-label label-black">
-                                                <i class="fa fa-apple"></i>IOS
+                                                <i class="os-icons apple"></i>IOS
                                             </div>
                                             <div class="os-label label-green">
-                                                <i class="fa fa-android"></i>root
+                                                <i class="os-icons android"></i>root
                                             </div>
                                         </div>
                                     </li>
@@ -298,7 +298,7 @@
                                         Monitor Facebook IM
                                         <div class="os-label__wrapper">
                                             <div class="os-label label-green">
-                                                <i class="fa fa-android"></i>root
+                                                <i class="os-icons android"></i>root
                                             </div>
                                         </div>
                                     </li>
@@ -309,7 +309,7 @@
                                         <span onclick="window.location='/monitor-viber.html'">Monitor Viber</span>
                                         <div class="os-label__wrapper">
                                             <div class="os-label label-green">
-                                                <i class="fa fa-android"></i>root
+                                                <i class="os-icons android"></i>root
                                             </div>
                                         </div>
                                     </li>
@@ -320,7 +320,7 @@
                                         <span onclick="window.location='/parental-control-for-instagram.html'">Monitor Instagram</span>
                                         <div class="os-label__wrapper">
                                             <div class="os-label label-green">
-                                                <i class="fa fa-android"></i>root
+                                                <i class="os-icons android"></i>root
                                             </div>
                                         </div>
                                     </li>
@@ -332,10 +332,10 @@
                                         <span onclick="window.location='/monitor-kik-messenger.html'">Monitor Kik</span>
                                         <div class="os-label__wrapper">
                                             <div class="os-label label-black">
-                                                <i class="fa fa-apple"></i>IOS
+                                                <i class="os-icons apple"></i>IOS
                                             </div>
                                             <div class="os-label label-green">
-                                                <i class="fa fa-android"></i>root
+                                                <i class="os-icons android"></i>root
                                             </div>
                                         </div>
                                     </li>
@@ -346,7 +346,7 @@
                                         <span onclick="window.location='/monitor-snapchat.html'">Monitor Snapchat</span>
                                         <div class="os-label__wrapper">
                                             <div class="os-label label-green">
-                                                <i class="fa fa-android"></i>root
+                                                <i class="os-icons android"></i>root
                                             </div>
                                         </div>
                                     </li>
@@ -357,7 +357,7 @@
                                         SMS Commands
                                         <div class="os-label__wrapper">
                                             <div class="os-label label-green large">
-                                                <i class="fa fa-android"></i>
+                                                <i class="os-icons android"></i>
                                             </div>
                                         </div>
                                     </li>

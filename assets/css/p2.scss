@@ -934,6 +934,9 @@ form > table.pricing-second {
      }
    }
  }
+.prod-head__version .os-icons {
+  margin-right: 3px;
+}
  .prod-list {
    padding-left: 0;
    text-align: left;
@@ -1417,13 +1420,8 @@ form > table.pricing-second {
   border-radius: 4px;
   display: inline-block;
   font-weight: 600;
-  .fa {
-    margin: 0 2px 0 0;
-    &.fa-apple,
-    &.fa-android {
-      position: relative;
-      top: -1px;
-    }
+  .os-icons {
+    margin-right: 2px;
   }
   &.label-black {
     background-color: #000;
@@ -1431,7 +1429,7 @@ form > table.pricing-second {
   &.large {
     width: 20px;
     line-height: 1.1;
-    .fa {
+    .os-icons {
       margin-right: 0;
     }
   }

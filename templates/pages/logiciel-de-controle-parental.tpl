@@ -108,7 +108,7 @@
                         <div class="">
                             <div id="block-compatibility-table" class="ios-table">
                                 <div class="table-header">
-                                    <section><span class="title"> <i class="fa fa-apple fa-lg"></i> iOS (iCloud)</span>
+                                    <section><span class="title"> <i class="os-icons apple fa-lg"></i> iOS (iCloud)</span>
                                     </section>
                                 </div>
                                 <div class="table-body">
@@ -154,7 +154,7 @@
                                                             <div class="wr_pack_premium wr_icloud _single-pack-icloud"></div>
                                                             <div class="wr_pack_double_premium wr_icloud-double _double-pack-icloud"></div>
                                                             <div class="wr_price_big">
-                                                                <span></span><div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr icloud-price-per-month" >{$defaultIosiCloudPrice}</div></div><span>/ mois</span>
+                                                                <span></span><div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr icloud-price-per-month" >{$defaultIosiCloudPrice - 0.01}</div></div><span>/ mois</span>
                                                             </div>
                                                         </div>
                                                         <div class="list_price icloud-list_price">
@@ -214,7 +214,7 @@
                                         <th>
                                             <div class="table_header text-transform-none text-center">
                                                 <div id="list-price-phones" class="wr_support_new_os">
-                                                    <i class="fa fa-apple d_green"></i> iOS {$ver_icloud_bot} - {$ver_icloud_up}
+                                                    <i class="os-icons apple d_green"></i> iOS {$ver_icloud_bot} - {$ver_icloud_up}
                                                 </div>
                                             </div>
                                         </th>
@@ -263,7 +263,7 @@
                         <div class="col-md-offset-4 col-md-4 col-lg-4 padding-null">
                             <div id="block-compatibility-table" class="android-table">
                                 <div class="table-header">
-                                    <section><span class="title"><i class="fa fa-android fa-lg"></i> Android</span>
+                                    <section><span class="title"><i class="os-icons android"></i> Android</span>
                                     </section>
                                 </div>
                                 <div class="table-body">
@@ -416,7 +416,7 @@
                                         <th>
                                             <div class="table_header text-transform-none text-center">
                                                 <div id="list-price-phones" class="wr_support_new_os">
-                                                    <i class="fa fa-android d_green"></i> Android {$ver_android_bot} - {$ver_android_up}
+                                                    <i class="os-icons android d_green"></i> Android {$ver_android_bot} - {$ver_android_up}
                                                 </div>
                                             </div>
                                         </th>

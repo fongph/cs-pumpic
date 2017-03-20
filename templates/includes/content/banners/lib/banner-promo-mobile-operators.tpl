@@ -3,8 +3,8 @@
     <div class="banner-text">
         <span>Smartphone Monitoring App</span>
         <ul>
-            <li><i class="fa fa-apple"></i> <b>IOS</b> {$ver_icloud_bot} - {$ver_icloud_up} (iCloud)</li>
-            <li><i class="fa fa-android"></i> <b>Android</b> {$ver_android_bot} - {$ver_android_up}</li>
+            <li><i class="os-icons apple"></i> <b>IOS</b> {$ver_icloud_bot} - {$ver_icloud_up} (iCloud)</li>
+            <li><i class="os-icons android"></i> <b>Android</b> {$ver_android_bot} - {$ver_android_up}</li>
         </ul>
     </div>
     <div class="banner-arrow"></div>

@@ -88,7 +88,7 @@ ium_wr .pricep {
                         <div class="">
                             <div id="block-compatibility-table" class="ios-table">
                                 <div class="table-header">
-                                    <section><span class="title"> <i class="fa fa-apple"></i> iOS (iCloud)</span>
+                                    <section><span class="title"> <i class="os-icons apple"></i> iOS (iCloud)</span>
                                     </section>
                                 </div>
                                 <div class="table-body">
@@ -197,7 +197,7 @@ ium_wr .pricep {
                                         <th>
                                             <div class="table_header text-transform-none text-center">
                                                 <div id="list-price-phones" class="wr_support_new_os">
-                                                    <i class="fa fa-apple d_green"></i> iOS {$ver_icloud_bot} - {$ver_icloud_up}
+                                                    <i class="os-icons apple d_green"></i> iOS {$ver_icloud_bot} - {$ver_icloud_up}
                                                 </div>
                                             </div>
                                         </th>
@@ -378,7 +378,7 @@ ium_wr .pricep {
                                             <th>
                                                 <div class="table_header text-transform-none text-center">
                                                     <div id="list-price-phones" class="wr_support_new_os">
-                                                        <i class="fa fa-android d_green"></i> Android {$ver_android_bot} - {$ver_android_up}
+                                                        <i class="os-icons android d_green"></i> Android {$ver_android_bot} - {$ver_android_up}
                                                     </div>
                                                 </div>
                                             </th>

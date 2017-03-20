@@ -278,10 +278,10 @@ description="Increase productivity, ensure legal safety and streamline workflow 
                                 <caption>
                                     <div class="filter_fe">
                                         <ul class="filter_list">
-                                            <li id="filter-ios" class="filter_item filter-active"><i class="fa fa-apple filter_icon"></i> <b>iOS</b> <span class="filter_version _version-hide-xs">{$ver_icloud_bot} - {$ver_icloud_up}</span><span class="filter_version"> (iCloud)</span>
+                                            <li id="filter-ios" class="filter_item filter-active"><i class="os-icons apple filter_icon"></i> <b>iOS</b> <span class="filter_version _version-hide-xs">{$ver_icloud_bot} - {$ver_icloud_up}</span><span class="filter_version"> (iCloud)</span>
                                                 <div class="filter_version">13 features</div>
                                             </li>
-                                            <li id="filter-android" class="filter_item"><i class="fa fa-android filter_icon"></i> <b>Android</b> <span class="filter_version _version-hide-xs">{$ver_android_bot} - {$ver_android_up}</span>
+                                            <li id="filter-android" class="filter_item"><i class="os-icons android filter_icon"></i> <b>Android</b> <span class="filter_version _version-hide-xs">{$ver_android_bot} - {$ver_android_up}</span>
                                                 <div class="filter_version">26 features</div>
                                             </li>
                                         </ul>

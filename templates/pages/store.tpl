@@ -18,6 +18,10 @@ description="Pumpic offers high-quality cell phone tracking software for a good 
             display: none;
         }
     }
+    i[class*="chevron"] {
+        font-size: inherit!important;
+        color: inherit!important;
+    }
 </style>
 <!-- BLOCK GTM -->
 {include file='../includes/main/main-after-body.tpl'}
@@ -98,10 +102,11 @@ description="Pumpic offers high-quality cell phone tracking software for a good 
                                 <caption>
                                     <div class="filter_fe">
                                         <ul class="filter_list">
-                                            <li id="filter-ios" class="filter_item filter-active"><i class="fa fa-apple filter_icon"></i> <b>iOS</b> <span class="filter_version _version-hide-xs">{$ver_icloud_bot} - {$ver_icloud_up}</span><span class="filter_version"> (iCloud)</span>
+                                            <li id="filter-ios" class="filter_item filter-active">
+                                                <i class="os-icons apple filter_icon"></i> <b>iOS</b> <span class="filter_version _version-hide-xs">{$ver_icloud_bot} - {$ver_icloud_up}</span><span class="filter_version"> (iCloud)</span>
                                                 <div class="filter_version">13 features</div>
                                             </li>
-                                            <li id="filter-android" class="filter_item"><i class="fa fa-android filter_icon"></i> <b>Android</b> <span class="filter_version _version-hide-xs">{$ver_android_bot} - {$ver_android_up}</span>
+                                            <li id="filter-android" class="filter_item"><i class="os-icons android filter_icon"></i> <b>Android</b> <span class="filter_version _version-hide-xs">{$ver_android_bot} - {$ver_android_up}</span>
                                                 <div class="filter_version">26 features</div>
                                             </li>
                                         </ul>
@@ -113,7 +118,7 @@ description="Pumpic offers high-quality cell phone tracking software for a good 
                                                 <div class="prod-wrap">
                                                     <div class="prod-short-inf">
                                                         <div class="prod-head__img"><img src="/images/icloud-pack.png" alt="..."></div>
-                                                        <p class="prod-head__version"><i class="icon-apple filter_icon"></i><b>iOS {$ver_icloud_bot} - {$ver_icloud_up}</b></p>
+                                                        <p class="prod-head__version"><i class="os-icons apple filter_icon"></i><b>iOS {$ver_icloud_bot} - {$ver_icloud_up}</b></p>
                                                         <p>
                                                             <span class="prod-head__device phone">iPhone</span>
                                                             <span class="prod-head__device tablet">iPad</span>
@@ -140,7 +145,7 @@ description="Pumpic offers high-quality cell phone tracking software for a good 
                                                 <div class="prod-wrap">
                                                     <div class="prod-short-inf">
                                                         <div class="prod-head__img"><img src="/images/android-pack.png" alt="..."></div>
-                                                        <p class="prod-head__version"><i class="icon-android filter_icon"></i><b>Android {$ver_android_bot} - {$ver_android_up}</b></p>
+                                                        <p class="prod-head__version"><i class="os-icons android filter_icon"></i><b>Android {$ver_android_bot} - {$ver_android_up}</b></p>
                                                         <p>
                                                             <span class="prod-head__device phone">Smartphone</span>
                                                             <span class="prod-head__device tablet">Tablet</span>

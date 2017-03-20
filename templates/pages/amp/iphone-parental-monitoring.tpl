@@ -16,6 +16,7 @@
         <script async custom-element="amp-analytics"
                 src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
         <script async src="https://cdn.ampproject.org/v0.js"></script>
+        <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
         <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
     {/literal}
 </head>
@@ -109,10 +110,6 @@
             <div id="logoBox"></div>
             <button id="burgerMask"></button>
         </div>
-
-
-
-
         <div class="visual box-banner-header bg_center_images">
             <div class="amp">
                 <div class="row">
@@ -136,25 +133,25 @@
                                             <div class='mt10'>
 
                                                 <div>
-                                                    <form name="price_amp" method="POST" action="/buy.html" class="buy-form-with-offer" autocomplete="off">
+                                                    <form name="price_amp" method="POST" target="_top" action-xhr="//{$domain}/amp/iphone-parental-monitoring.html" class="buy-form-with-offer" autocomplete="off">
                                                         {foreach from=$getProducts.iosiCloud key=key item=item}
-                                                        <input id='product_price_premium' type='hidden' name='price[productID]' value='{$item.id}' class="product_price" />
-                                                        <input checked type='hidden' class="data-price" data-target=".icloud-price-per-month" data-cur="usd" data-price-usd="{$item.price}" data-offer-price-usd="{$getProducts.iosiCloudDouble[$key].price}" data-period="{$item.period}" data-product="{$item.id}" data-offer-product="{$getProducts.iosiCloudDouble[$key].id}" data-group="icloud" name="optionsRadios" id="optionsRadios{$item.id}1" value="{$item.id}" type="radio" />
-                                                        {/foreach}
-
                                                         <section class="vertical-aligh-middle">
                                                         {if $ABtest == 'ABtest-1'}
-                                                        <button type="submit" value="true" name="price[submit]" class="btn btn-default" id="view-pricing-link">Buy Now - $29,95/mo</button>
+
+                                                        <a href="/buy.html?productID={$item.id}" class="btn btn-default" id="view-pricing-link">Buy Now - $29,95/mo</a>
                                                     </section>
                                                         <div class="button-descr">Old price: <span>$40,00/mo</span></div>
                                                         {elseif $ABtest == 'ABtest-2'}
-                                                        <button type="submit" class="btn btn-default btn-arrow" value="true" name="price[submit]" id="view-pricing-link">Buy Now - $29,95</button>
+                                                        <a href="/buy.html?productID={$item.id}" class="btn btn-default btn-arrow" id="view-pricing-link">Buy Now - $29,95</a>
                                                     </section>
                                                         <div class="button-descr">1 month subscription</div>
                                                         {else}
-                                                        <button type="submit" class="btn btn-default" value="true" name="price[submit]" id="view-pricing-link">View Pricing</button>
+                                                        <a class="btn btn-default" href="/buy.html?productID={$item.id}" id="view-pricing-link">View Pricing</a>
                                                     </section>
+
                                                         {/if}
+                                                        {/foreach}
+
                                                     </form>
                                                 </div>
 

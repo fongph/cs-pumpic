@@ -28,28 +28,10 @@ if (isset($_COOKIE['amp']) && !empty($_COOKIE['amp'])){
     $smarty->assign('ABtest', $amp);
 }
 
+
 /* list order */
 $products = $obj->getProducts('second-new-amp');
 
-/* form_order */
-$_request = (isset($_POST['price']) and !empty($_POST['price'])) ? $_POST['price']: false;
-if($_request['productID']) {
-    // $_order ->setSession('pumpic_order', array('productID' => (int)$_request['productID']));
-
-    if($_request['productID'] and $obj -> getUserIdByAuth()) {
-        // $_order ->unsetSession('pumpic_order'); // clear session
-
-        $_url = $obj -> createOrder((int)$_request['productID']);
-        if($_url) {
-            $obj -> _redirect( $_url );
-        }
-        // create order
-    } else if((int)$_request['productID']) {
-        $obj -> _redirect('/buy.html?productID='.$_request['productID']);
-
-    }
-
-}
 
 // default
 if(is_array($products)) {

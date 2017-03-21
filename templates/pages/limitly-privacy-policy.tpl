@@ -114,7 +114,7 @@
                                 <div class="row_top_border">
                                     <h3 class="text-center">Contact Us{*CONTACT US*}</h3>
                                     <p class="text-center">
-                                        If you have any questions regarding the aforementioned Refund Policy, Privacy Policy or<br/>any other questions on operation of this Site, please feel free to contact us via
+                                        If you have any questions regarding the aforementioned Privacy Policy, please feel free to contact us via
                                     </p>
                                     <p class="text-center text-success">
                                         <span id="img-support" class="limitly"></span>

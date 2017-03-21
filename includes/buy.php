@@ -11,7 +11,7 @@ $logger = new Monolog\Logger('logger');
 Monolog\ErrorHandler::register($logger);
 $logger->pushProcessor(new Monolog\Processor\WebProcessor());
 $logger->pushHandler(new Monolog\Handler\StreamHandler(__DIR__ . '/../logs/buy.log', Monolog\Logger::DEBUG));
-
+$logger->info('event');
 $order = new includes\lib\users\Order;
 $user_id = $order->getUserIdByAuth();
 $_request = (isset($_POST['price']) and ! empty($_POST['price'])) ? $_POST['price'] : false;

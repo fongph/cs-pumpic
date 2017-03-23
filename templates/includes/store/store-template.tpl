@@ -4,9 +4,9 @@
             display: none;
         }
     }
-    .prod-icloud.prod-2 {
-        padding-bottom: 20px;
-    }
+    /*.prod-icloud.prod-2 {*/
+        /*padding-bottom: 20px;*/
+    /*}*/
 </style>
 <div class="no_bg">
     <div class="container">

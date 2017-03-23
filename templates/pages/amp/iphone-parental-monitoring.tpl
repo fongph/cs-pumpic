@@ -16,6 +16,7 @@
         <script async custom-element="amp-analytics"
                 src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
         <script async src="https://cdn.ampproject.org/v0.js"></script>
+        <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
         <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
     {/literal}
 </head>
@@ -109,10 +110,6 @@
             <div id="logoBox"></div>
             <button id="burgerMask"></button>
         </div>
-
-
-
-
         <div class="visual box-banner-header bg_center_images">
             <div class="amp">
                 <div class="row">
@@ -134,21 +131,30 @@
                                                 <li><i class="icon-apple"></i> ({$ver_icloud_bot} - {$ver_icloud_up})</li>
                                             </ul>
                                             <div class='mt10'>
+
                                                 <div>
-                                                    <section class="vertical-aligh-middle">
+                                                    <form name="price_amp" method="POST" target="_top" action-xhr="//{$domain}/amp/iphone-parental-monitoring.html" class="buy-form-with-offer" autocomplete="off">
+                                                        {foreach from=$getProducts.iosiCloud key=key item=item}
+                                                        <section class="vertical-aligh-middle">
                                                         {if $ABtest == 'ABtest-1'}
-                                                        <a class="btn btn-default" href="/buy.html?product=pumpic-icloud-1m-amp-1" id="view-pricing-link">Buy Now - $29,95/mo</a>
+
+                                                        <a href="/buy.html?productID={$item.id}" class="btn btn-default" id="view-pricing-link">Buy Now - $29,95/mo</a>
                                                     </section>
                                                         <div class="button-descr">Old price: <span>$40,00/mo</span></div>
                                                         {elseif $ABtest == 'ABtest-2'}
-                                                        <a class="btn btn-default btn-arrow" href="/buy.html" id="view-pricing-link">Buy Now - $29,95</a>
+                                                        <a href="/buy.html?productID={$item.id}" class="btn btn-default btn-arrow" id="view-pricing-link">Buy Now - $29,95</a>
                                                     </section>
                                                         <div class="button-descr">1 month subscription</div>
                                                         {else}
-                                                        <a class="btn btn-default" href="/store.html" id="view-pricing-link">View Pricing</a>
+                                                        <a class="btn btn-default" href="/buy.html?productID={$item.id}" id="view-pricing-link">View Pricing</a>
                                                     </section>
+
                                                         {/if}
+                                                        {/foreach}
+
+                                                    </form>
                                                 </div>
+
                                             </div>
                                         </div>
 

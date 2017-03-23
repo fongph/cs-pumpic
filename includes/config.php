@@ -105,7 +105,10 @@ $config = array(
                 'tos-preview.txt' => 'legacy.php',
                 'tos.txt' => 'legacy.php',
                 'direct-notice.html' => 'legacy.php',
-                'direct-notice-preview.html' => 'legacy.php'
+                'direct-notice-preview.html' => 'legacy.php',
+
+            //amp
+                'amp/iphone-parental-monitoring.html' => 'iphone-parental-monitoring.php'
 
 		),
 		'db_phones' => array(

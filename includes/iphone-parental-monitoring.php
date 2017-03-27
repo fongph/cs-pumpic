@@ -11,22 +11,8 @@ $obj = new includes\lib\users\Order;
 // smarty config
 require_once 'smarty.config.php';
 
-
-if (isset($_COOKIE['amp']) && !empty($_COOKIE['amp'])){
-    //get value ABtest
-    $amp = $_COOKIE['amp'];
-    $smarty->assign('ABtest', $amp);
-
-} else {
-    $urls = array(0 => 'ABtest-1', 1 => 'ABtest-2');
-    $clientsNumber = $obj ->getAmpStoreClientsCount();
-    $obj->incrementAmpStoreClientsCount();
-    $url = $clientsNumber % 2;
-    $amp = $urls[$url];
-    setcookie('amp', $amp, time()+365*24*60*60, '/');
-    //get value ABtest
-    $smarty->assign('ABtest', $amp);
-}
+//get value ABtest
+$smarty->assign('ABtest', 'ABtest-2');
 
 
 /* list order */

@@ -275,7 +275,7 @@
     styleTitle="h2"
     title="Why to Follow Kids’ Text Messages"
     blockBg='light'}
-    <p>You will probably wonder, if hear that children most of all do not use their mobile phones to call each other. Instead, they use them to play games, search online, and chat via social media or SMS. In other words, modern kids prefer writing text messages to making calls. That's why some of the <a href="/best-spying-apps-for-android.html">best spying apps for Android</a> primarily focus on tracking texts.</p>
+    <p>You will probably wonder, if hear that children most of all do not use their mobile phones to call each other. Instead, they use them to play games, search online, and chat via social media or SMS. In other words, modern kids prefer writing text messages to making calls. That's why most of spying apps - be it for iOS or for Android - primarily focus on tracking texts.</p>
 
     <p>According to the recent statistics, more than 70% of teenagers use SMS to contact their friends. If you have a look at one of your kid’s SMS chat history, you will see that it more likely resembles a written down phone call than a message itself. It means that if you want to find out what your child talks about with his or her friend, you don’t need to record a call, you can simply read text messages. That’s why monitoring SMS is one of the best ways of keeping up with your kid’s affairs.</p>
 
@@ -285,7 +285,7 @@
     <ul>
         <li>find out if your kid is dating someone and prevent him or her from related threats (teenagers chat with their dates pretty often, and thus, SMS tracking will let you be in touch with the situation and take action, if needed);</li>
         <li>control whom your kids communicate with and prevent them from chatting with strangers or misgiving people (swindlers, bullies, and online predators often use text messages to contact their victims);</li>
-        <li><a href="/how-to-block-texts-on-android.html">block texts messages on Android</a> and iOs devices to prevent kids from seeing inappropriate content and communicating with strangers;</li>
+        <li>block texts messages on Android and iOS devices to prevent kids from seeing inappropriate content and communicating with strangers;</li>
 		<li>take immediate action, if find out that your kid contacts drug dealers or someone, who might be a bad company for him or her;</li>
         <li>find out if your kid is up to do something you would not approve, or is going to go anywhere you would not allow;</li>
         <li>find out if your kid uses bad words in his or her communication;</li>

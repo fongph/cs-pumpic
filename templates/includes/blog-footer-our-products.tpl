@@ -3,9 +3,6 @@
     <h3>OUR PRODUCTS</h3>
     <ul class="list_grey">
         <li>
-            <a href="/android-parental-monitoring/">Android Parental Control</a>
-        </li>
-        <li>
             <a href="/iphone-parental-monitoring.html">iPhone Parental Control</a>
         </li>
         <li>
@@ -20,9 +17,6 @@
         </li>
         <li>
             <a href="/ipod-parental-control.html">iPod Parental Controls</a>
-        </li>
-        <li>
-            <a href="/android-tablet-parental-control.html">Android Tablet Parental Control</a>
         </li>
         <li>
             <a href="/limitly-parental-app/">Screen Time Parental Control App</a>

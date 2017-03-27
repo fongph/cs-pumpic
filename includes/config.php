@@ -59,7 +59,6 @@ $config = array(
 
 				'store.html'  => 'store.php',
 				'store-sub-new-4.html'  => 'store-sub-new-4.php',
-				'store-sub-new-44.html'  => 'store-sub-new-44.php',
 				'store-android.php'  => 'store-android.php',
 				'aging-parent-protection-app.html' => 'aging-parent-protection-app.php',
 				'iphone-tracking-software.html'   => 'iphone_tracking_software.php',

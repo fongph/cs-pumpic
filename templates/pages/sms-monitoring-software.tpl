@@ -2,35 +2,35 @@
 
     title="Monitor Text Messages on Your Child's Phone with the Pumpic App"
     description="Track your kid's text messages with the Pumpic parental control app. Monitor, limit, or block texts on your child's phone, view deleted messages. Secure your child's text communication."
-}    
-    
+}
+
 <body>
     <!-- BLOCK GTM -->
     {include file='../includes/main/main-after-body.tpl'}
     <!-- END BLOCK GTM -->
-    
+
     <!-- FLY BLOCKS -->
     {include file='../includes/content/fly/fly_blocks.tpl'}
     <!-- END FLY BLOCKS-->
-    
+
     <div class="wrapper block-sms">
         <!-- TOP MENU -->
- 	{include file='../includes/main/main-top-menu.tpl' 
+ 	{include file='../includes/main/main-top-menu.tpl'
             cache_id = "includes_main_main-top-menu"
             nocache
         }
-        
 
-        
+
+
         {*
             Template: PHONE
             Переменные:
-                style (text): стиль блока Phone (blue|black). * - blue 
+                style (text): стиль блока Phone (blue|black). * - blue
         *}
         {include file='../includes/content/phone/block-phone.tpl'
-                 style="blue"   
-        }  
-        
+                 style="blue"
+        }
+
         <!-- CONTENT -->
         {include file='../includes/content/info/info-promo.tpl'
         imgUrl = "header_banners/bg-header-features_437x258.png"
@@ -45,9 +45,9 @@
         block_video = "yes"
         block_video_src = "https://www.youtube.com/embed/Atg0CbaytAY"
         }
-        
+
          {include file='../includes/content/plans.tpl' }
-            
+
          {* Template: FLY BUTTONS
         *}
         {include file='../includes/content/fly/box-buttons.tpl'
@@ -55,20 +55,20 @@
             buttonViewDemo = 'no'
             buttonFreeTrial = 'yes'
         }
-         
-{Content 
-    styleTitle="h2"    
+
+{Content
+    styleTitle="h2"
     title="Prevent Kids from Misgiving Texting and Dangers It Brings"
     blockBg='light'}
-	
+
 	<img class="app-icon-left" src="{$img}/landings/statistics-icon-sms.png" alt="Monitor Text Messages">
 	<p>A great number of parents today are worried about their kids’ online and texting habits. Another concern is whom they are texting with and on what topics. The latter is closely connected with the increased number of cyberbullying stories appearing across the world. Moreover, a dangerous sexting trend – when teens share nude and semi-nude pictures among peers – pops throughout the globe as well.</p>
 	<p>These two components make a great reason why all careful parents should revise their notion of kids’ privacy and switch to <a class="a-default" href="/cell-phone-text-tracker.html">text message monitoring</a>. Ensuring your beloved children are safe from a greater part of online dangers is priceless, and with the right technology it is also easy.</p>
 	<p>In fact, text message monitoring has been of huge interest for the last couple of years, and it is natural. According to studies, kids from 8 to 18 years old spend about 7 hours a day being online. And it is natural that you as a parent are concerned about what your child is doing on his or her phone, online, and in the real world. Especially when their kids aren’t always forthcoming with what’s going on in their lives.</p>
-        
+
         <!-- BLOCK STATISTICK -->
         <div class="block-statistick row">
-            
+
 			<div class="item col-s-sm-12 col-xs-sm-12 col-sm-4 col-md-4 col-lg-4">
                 <section>
                     <div><strong class="fz50 color-orange">30%</strong></div>
@@ -93,15 +93,15 @@
                     </span>
                 </section>
             </div>
-            
+
         </div>
         <!-- END -->
 
         <p>Looking over a child’s activities is essential and important task for a careful parent. And if there is any hint your kid might be in danger like sexting or bullying, it is the high time for you to opt for a decent SMS tracking application.</p>
-		<p>One of fair choices is the Pumpic app, which has been on the market for quite a while. It has a number of other functions besides SMS tracking: <a class="a-default" href="/how-to-block-texts-on-android.html">blocking text messages</a>, geofencing, location tracking, app control, and much more other useful ones. Pumpic allows SMS tracking without any access to the target phone. With Pumpic, you will always get a full report on your kid’s communication.</p>
+		<p>One of fair choices is the Pumpic app, which has been on the market for quite a while. It has a number of other functions besides SMS tracking: blocking messages, geofencing, location tracking, app control, and much more other useful ones. Pumpic allows SMS tracking without any access to the target phone. With Pumpic, you will always get a full report on your kid’s communication.</p>
 		
 {EndContent}
-		
+
         <div class="dark">
             <div class="container">
                 <h2 class="text-center">Text Message Tracking Protects Your Kids</h2>
@@ -192,26 +192,26 @@
 
         {*include file='../includes/content/banner-promo.tpl'*}
         {*{include file='../includes/content/banners/banner-promo-trial.tpl'}*}
-        
+
         {include file='../includes/content/banners/index.tpl'}
-        <!-- END CONTENT -->    
-           
+        <!-- END CONTENT -->
+
         <!-- RECOMMENDED -->
         {*
             Template: RECOMMENDED
-        *}    
+        *}
         {include file='../includes/main/main-recommended.tpl'}
-        
+
         <!-- FOOTER -->
         {*
             Template: FOOTER
             Переменные:
-                our_products (text): Включить выключить блок OUR PRODUCTS (no|yes). * - yes 
+                our_products (text): Включить выключить блок OUR PRODUCTS (no|yes). * - yes
         *}
         {include file='../includes/main/main-footer.tpl'}
-                
+
     </div>
-        
+
     {include file='../includes/main/main-analytics-footer.tpl'}
 </body>
 </html>

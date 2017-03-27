@@ -108,7 +108,7 @@
             <div class="pt30 pb20">
                 <p>Why is location tracking so essential, you may wonder? The answer is quite simple. When children go anywhere alone, without parents or adults to come along and protect if needed, they are most likely to be exposed to stranger danger, get lost, or get in trouble.</p>
                 <p>Statistically, 40% of parents are most concerned about their kids’ safety, when they are away from home. In other words, parents worry most of all, when they don’t know exactly where their children are.</p>
-                <p>With <a class="a-default" href="/android-phone-child-tracking-software.html" target="blank">Android phone tracking software for children</a> designed by Pumpic, you can find out your kids’ whereabouts in real time as soon as necessary.</p>
+                <p>With the gadget tracking software designed by Pumpic, you can find out your kids’ whereabouts in real time as soon as necessary.</p>
             </div>
         </div>
         <div class="col-lg-3 col-md-3 col-sm-3 text-center">
@@ -124,7 +124,7 @@
 
 	<img class="app-icon-left" src="{$img}/landings/statistics-icon-location.png" alt="statistics vs location icon">
 	<p>There is something in parenting that makes adults turn into paranoid beings waiting for everything on Earth 24/7 and seeing danger everywhere. But it is almost impossible to experience no stress about what might happen to a child, when you are not near. This might seem overwhelming for kids, but once they grow up and have their own offspring, they will get it all.</p>
-	<p>Even though for the last couple of years the number of crimes involving kidnapping has went down, about a half of teen parents are worried their kids might be kidnapped. In response to the parental concern, the market has boomed with <a class="a-default" href="/android-family-tracker.html">family tracking devices</a>. But once smartphones became widespread, a GPS tracking app for iPhone or Android has become a must-have.</p>
+	<p>Even though for the last couple of years the number of crimes involving kidnapping has went down, about a half of teen parents are worried their kids might be kidnapped. In response to the parental concern, the market has boomed with devices that keep track of all family members. But once smartphones became widespread, a GPS tracking app for iPhone or Android has become a must-have.</p>
 	<p>Can you put a price tag on the peace of mind and feeling of security, when it comes to child safety? Surely, not. And seeing all the notices on children missing is not helping us to calm down. But making the right choice for a kid phone tracking app will be a life changer for all the over-paranoid parents. The best way to make a good choice is looking through reviews and charts, and pay special attention to other features the app might offer. Even though you might look for a way to monitor child’s location, opting for other functions might help you feel calmer.</p>
 
         <!-- BLOCK STATISTICK -->

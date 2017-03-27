@@ -285,8 +285,8 @@
                                         use text messages to contact their victims);
                                     </li>
                                     <li>
-                                        <a href="/how-to-block-texts-on-android.html">block texts messages on Android</a>
-                                        and iOs devices to prevent kids from seeing inappropriate content and communicating with strangers;
+                                        block texts messages on Android
+                                        and iOS devices to prevent kids from seeing inappropriate content and communicating with strangers;
                                     </li>
                                     <li>
                                         take immediate action, if find out that your kid contacts drug dealers or someone, who might be a bad company for him or her;

@@ -287,7 +287,7 @@
         <div id="block-content" class="light col-sm-12">
             <div class="amp">
                 <div class="row">
-                    <div class="col-sm-12"><h2 class="h3 text-center">Ethical Issues of Parental Monitoring</h2>
+                    <div class="col-sm-12"><h2 class="h2 text-center">Ethical Issues of Parental Monitoring</h2>
                         <amp-img class="lc-1 img-align-left" height="95" width="100" layout="fixed" src="{$img}/landings/android-parental-monitoring-icon3.png" title="Ethical monitoring is better than snooping" alt="Monitoring or spying"></amp-img>
                         <p>Mobile technologies have introduced new opportunities to our children. It is rather hard to imagine the entire range of functions a single smartphone can fulfill. That’s why when it comes to features that an Android surveillance software should include, it is crucial to consider as many as possible. Pumpic's monitoring abilities and particular mobile phone functions will help you follow each and every aspect of your kids’ lives and all of their activities remotely.</p>
                         <p>Another aspect to consider when it comes to digital kids monitoring is the approach to the ethical side of the issue. On the one hand, parents can choose to surveil their child covertly; stated another way, they will obviously choose from some of the <a class="a-default" href="/best-spying-apps-for-android.html">best spying apps for Android</a> and snoop on their kids secretly. On the other hand, there is an ethical tracking when the kid is warned that he or she is being watched and certain rules of online behavior are agreed on with the child. In this <a class="a-default" href="/spy-apps-vs-parental-monitoring.html">rivalry between the spyware and parental monitoring apps</a>, Pumpic holds the view that the latter path is highly preferable. That's why our app for Android is visible on the target device. Check out all of Pumpic's features in the table below.</p>
@@ -298,7 +298,7 @@
         <div id="block-content" class="dark col-sm-12">
             <div class="amp">
                 <div class="row">
-                    <div class="col-sm-12"><h2 class="h3 text-center">Over 24 Monitoring Features to Protect Your Kids</h2>
+                    <div class="col-sm-12"><h2 class="h2 text-center">Over 24 Monitoring Features to Protect Your Kids</h2>
 
                         <ul class="table-container">
                             <li><i class="i-features-sms"></i><a class="no-link" href="/mobile-sms-spy.html">Monitor SMS

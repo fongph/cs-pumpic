@@ -1,7 +1,7 @@
 <!doctype html>
 <html amp>
 <head>
-    <title>Ultimate iPhone Parental Control App for Apple iOS</title>
+    <title>Ultimate Android Parental Control App | Pumpic Monitoring Software</title>
     <meta charset="utf-8">
     <link rel="canonical" href="{$schema}pumpic.com/android-parental-monitoring/">
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
@@ -128,14 +128,14 @@
                                 <table class="table">
                                     <tbody>
                                     <tr>
-                                        <th class="color-orange">44%</th>
-                                        <th class="color-orange">14%</th>
-                                        <th class="color-orange">11%</th>
+                                        <th class="color-orange">72%</th>
+                                        <th class="color-orange">23%</th>
+                                        <th class="color-orange">69%</th>
                                     </tr>
                                     <tr>
-                                        <td>lost iPhones were simply left in public places</td>
-                                        <td>stolen Apple devices were taken from a house or car</td>
-                                        <td>all stolen iOS smartphones were pickpocketed</td>
+                                        <td>hildren worldwide use smartphones, 33% of them are under 8 years old</td>
+                                        <td>teenagers report that they feel addicted to games on mobile devices</td>
+                                        <td>boys and girls under 18 have experienced cyberbullying on mobile phones</td>
                                     </tr>
                                     </tbody>
                                 </table>

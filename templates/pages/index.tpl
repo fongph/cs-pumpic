@@ -68,6 +68,7 @@
     title="Why Parental Controls Are Essential"
     blockBg='light'}
         <!-- BLOCK STATISTICK -->
+<p class="text-center f-light">Most threats children face today are closely associated with the use of mobile devices and the Internet. Our cell phone monitoring software helps parents avert all these dangers in the making and protects your little ones. Because our software is not linked to any cell phone carrier, you can benefit from it even outside the US or Canada as <a class="a-default" href="/pumpic-app-in-different-countries/">Pumpic app is available in different countries</a> around the globe. Install the app on your kids’ phones and rest assured they are safe wherever they or you go.</p>
         <div class="block-statistick row">
             <div class="item col-s-sm-12 col-xs-sm-12 col-sm-4 col-md-4 col-lg-4">
                 <section>
@@ -97,7 +98,8 @@
         </div>
         <!-- END -->
 
-        <p class="text-center f-light">Most threats children face today are closely associated with the use of mobile devices and the Internet. Our cell phone monitoring software helps parents avert all these dangers in the making and protects your little ones. Because our software is not linked to any cell phone carrier, you can benefit from it even outside the US or Canada as <a class="a-default" href="/pumpic-app-in-different-countries/">Pumpic app is available in different countries</a> around the globe. Install the app on your kids’ phones and rest assured they are safe wherever they or you go. Pumpic is a reliable child tracking solution that each concerned parent should consider using. Keep your eyes open with the Pumpic parental controls.</p>
+        <p class="text-center f-light">Pumpic is compatible with the two most wide-spread mobile operational systems – iOS and Android. As more and more parents choose Apple devices for their children, iPad, iPod and, of course, iPhone parental control solutions became a genuine necessity. Pumpic iOS monitoring works via iCloud and doesn't require jailbreak or app installation. In turn, the best manner to fix up comprehensive <a class="a-default" href="/android-parental-monitoring/">Android parental control</a> on smartphones and tablets is by installing a password-protected application. Although a wide range of features is available without root, it might be needed for even broader monitoring functionality.</p>
+        <p class="text-center f-light">Regardless which operational system the device you need to monitor runs on, Pumpic is a reliable child tracking solution that each concerned parent should consider using. Keep your eyes open with the Pumpic parental controls.</p>
 
 		{EndContent}
 

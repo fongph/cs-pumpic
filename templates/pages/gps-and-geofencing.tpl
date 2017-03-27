@@ -50,20 +50,20 @@
         {include file='../includes/content/plans.tpl' }
 
         {include file='../includes/content/secures-GPS.tpl' blockBg="dark"}
-		
-{Content 
-    styleTitle="h2"    
+
+{Content
+    styleTitle="h2"
     title="Geo-fencing and Location Tracking for Android and iOS"
     blockBg='light'}
-	
+
 	<img class="app-icon-left" src="{$img}/landings/statistics-icon-geofencing.png" alt="Geo-fencing">
 	<p>Parenting is not the easiest thing in the world, even though it is a rewarding status. And experienced parents would tell you sad truth – with years it does not become easier. They say ‘Small kids mean small troubles, and older kids are bigger troubles’. Hopefully, technologies that fill and shape our modern life can help us with parenting.</p>
 	<p>Do you remember a blessed and calm feeling you have when your toddler is safely playing in your secure home playpen, or in a sandbox outside? You know exactly where your child is and can be sure nothing bad will happen. As children grow up, you lose a chance to limit their boundaries, which is a natural thing. For growing up a separate personality, we all need a little freedom. But who says you cannot keep watch over your kids’ location and ensure they do not get where not supposed to with the <a class="a-default" href="/iphone-parental-monitoring.html" target="blank">help of geofence on their iPhone</a>?</p>
 	<p>More than half of teens today – 76% to be precise – have smartphones that accompany their every deed. The best way for you as a parent is to opt for geofence for Android or iPhone of your kid. Some suggest using geofences for their whole family – there is no price for a piece of mind, and knowing your beloved ones are safe where they are is a priceless thing.</p>
-        
+
         <!-- BLOCK STATISTICK -->
         <div class="block-statistick row">
-            
+
             <div class="item col-s-sm-12 col-xs-sm-12 col-sm-4 col-md-4 col-lg-4">
                 <section>
                     <div><strong class="fz50 color-orange">76%</strong></div>
@@ -88,20 +88,20 @@
                     </span>
                 </section>
             </div>
-            
+
         </div>
         <!-- END -->
 
         <p>Geofencing on iOS or Android is a simple and effective way of keeping an eye on kids’ whereabouts and ensure they are right where supposed to be. Using a geofence is not complicated. In fact, a geofence is a virtual boundary you set on a real-life location. Thus, if you know that your kid should go to a football training after classes, you can set geofences for this two places. As long as you are always notified when they enter or leave a preset geofence, you will be able to follow them.</p>
 		<p>The key to effective location tracking and geofencing is choosing the right application. The Pumpic app, for example, is one of a trusted by thousands of parents.</p>
-		
+
 {EndContent}
-		
+
         {include file='../includes/content/features-table-new.tpl'
         title = "Advanced Monitoring Solutions"
         description = "Pumpic always remains at least a step ahead of modern monitoring technologies providing reliable location tracking and geofencing for iPhone, iPad, iPod Touch, and Android smartphones and tablets.<br /><br />
         The app includes accurate GPS tracker, which allows you to set geo-fences and follow locations. Once the target device leaves safety zones or enter restricted areas, geofence reminders notify you instantly.<br /><br />
-        Pumpic is a multitask monitoring solution with wide variety of useful functions. Its iOS and <a class='a-default' href='/android-phone-child-tracking-software.html'>Android phone tracking software for children</a> is what every careful parent needs to secure family safety and comprehensive protection."
+        Pumpic is a multitask monitoring solution with wide variety of useful functions. Its reliable tracking features are what every careful parent needs to secure family safety and comprehensive protection."
         blockBg="dark"
         android = "yes"
         }

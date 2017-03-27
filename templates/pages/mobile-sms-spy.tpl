@@ -275,7 +275,7 @@
     styleTitle="h2"
     title="Why to Follow Kids’ Text Messages"
     blockBg='light'}
-    <p>You will probably wonder, if hear that children most of all do not use their mobile phones to call each other. Instead, they use them to play games, search online, and chat via social media or SMS. In other words, modern kids prefer writing text messages to making calls. That's why some of the <a href="/best-spying-apps-for-android.html">best spying apps for Android</a> primarily focus on tracking texts.</p>
+    <p>You will probably wonder, if hear that children most of all do not use their mobile phones to call each other. Instead, they use them to play games, search online, and chat via social media or SMS. In other words, modern kids prefer writing text messages to making calls. That's why most of spying apps - be it for iOS or for Android - primarily focus on tracking texts.</p>
 
     <p>According to the recent statistics, more than 70% of teenagers use SMS to contact their friends. If you have a look at one of your kid’s SMS chat history, you will see that it more likely resembles a written down phone call than a message itself. It means that if you want to find out what your child talks about with his or her friend, you don’t need to record a call, you can simply read text messages. That’s why monitoring SMS is one of the best ways of keeping up with your kid’s affairs.</p>
 

@@ -1,36 +1,36 @@
-{include file='../includes/main/main-header.tpl' 
+{include file='../includes/main/main-header.tpl'
     title="Keylogging Software: iPhone, Android Cell Phone Keylogger"
     description="Pumpic keylogger app tracks every button your kid presses. Monitor passwords and search box inputs, follow words your children type in via mobile phones. Use Pumpic keyboard tracker."
-}    
-    
+}
+
 <body>
     <!-- BLOCK GTM -->
     {include file='../includes/main/main-after-body.tpl'}
     <!-- END BLOCK GTM -->
-    
+
     <!-- FLY BLOCKS -->
     {include file='../includes/content/fly/fly_blocks.tpl'}
     <!-- END FLY BLOCKS-->
-    
+
     <div class="wrapper keylogging_software">
-	
+
 	<!-- TOP MENU -->
 	{include file='../includes/main/main-top-menu.tpl'
             cache_id = "includes_main_main-top-menu"
             nocache
         }
-        
 
-        
+
+
         {*
             Template: PHONE
             Переменные:
-                style (text): стиль блока Phone (blue|black). * - blue 
+                style (text): стиль блока Phone (blue|black). * - blue
         *}
         {include file='../includes/content/phone/block-phone.tpl'
-                 style="blue"   
+                 style="blue"
         }
-        
+
     <!-- CONTENT -->
          {include file='../includes/content/info/info-promo.tpl'
             imgUrl = "header_banners/bg_keylogger-software.png"
@@ -60,20 +60,20 @@
 
 
 
-{Content 
+{Content
     styleTitle="h2"
     title="Why is it essential to activate keylogger on your child's phone?"
     blockBg='dark'}
-               
+
         <p class="text-center f-light">
-            Children learn from not only their parents and schoolteachers. The majority of information they get, comes 
-        from the surrounding. That’s why to protect your kids from ambiguous knowledge, it is essential to follow their time 
+            Children learn from not only their parents and schoolteachers. The majority of information they get, comes
+        from the surrounding. That’s why to protect your kids from ambiguous knowledge, it is essential to follow their time
         spent online and filter incoming data.
         </p>
-        
+
         <!-- BLOCK STATISTICK -->
         <div class="block-statistick row">
-            
+
             <div class="item col-s-sm-12 col-xs-sm-12 col-sm-4 col-md-4 col-lg-4">
                 <section>
                     <div><strong class="fz50 color-orange">65%</strong></div>
@@ -94,7 +94,7 @@
                 <section>
                     <div>
                         <strong class="fz50 color-orange">1</strong>
-                        <span>in</span> 
+                        <span>in</span>
                         <strong class="fz50 color-orange">3</strong>
                     </div>
                     <span class="text-uppercase">
@@ -102,16 +102,16 @@
                     </span>
                 </section>
             </div>
-            
+
         </div>
         <!-- END -->
 
         <p class="text-center f-light">
-            More often than not kids tend to keep their private life secret from their parents. It means that if danger comes, 
-        there is a chance that you will not even know about it. Parental control software helps you monitor your children’s 
+            More often than not kids tend to keep their private life secret from their parents. It means that if danger comes,
+        there is a chance that you will not even know about it. Parental control software helps you monitor your children’s
         activity, when you are not nearby. It will secure your kid and avert danger:
         </p>
-        
+
         <!-- BLOCK LIST -->
         <div class="row pt15">
             <div class="padding-null col-sm-4 col-md-4 col-lg-4">
@@ -131,18 +131,18 @@
             </div>
         </div>
         <!-- END -->
-    
-    
-        {*<p>Children learn from not only their parents and schoolteachers. The majority of information they get, comes 
-        from the surrounding. That’s why to protect your kids from ambiguous knowledge, it is essential to follow their time 
-        spent online and filter incoming data.</p> 
+
+
+        {*<p>Children learn from not only their parents and schoolteachers. The majority of information they get, comes
+        from the surrounding. That’s why to protect your kids from ambiguous knowledge, it is essential to follow their time
+        spent online and filter incoming data.</p>
         <ul>
 		    <li>65% of all information children learn comes from the surrounding</li>
             <li>33% of teens have experienced threats online </li>
             <li>1 in 3 children reports about the abuse to a trusted adult</li>
 		</ul>
-        <p>More often than not kids tend to keep their private life secret from their parents. It means that if danger comes, 
-        there is a chance that you will not even know about it. Parental control software helps your monitor your children’s 
+        <p>More often than not kids tend to keep their private life secret from their parents. It means that if danger comes,
+        there is a chance that you will not even know about it. Parental control software helps your monitor your children’s
         activity, when you are not nearby. It will secure your kid and avert danger:</p>
 
         <ul>
@@ -153,8 +153,8 @@
 
         {* Template: BLOCK IMAGE
             blockAlign (text): позиция блока с изображением. (left|center|right) *default: center
-            
-            imgUrl (text): путь к изображению. *ОБЯЗАТЕЛЬНОЕ ПОЛЕ 
+
+            imgUrl (text): путь к изображению. *ОБЯЗАТЕЛЬНОЕ ПОЛЕ
             imgAlt (text): подпись к изображению.
             // размер изображения
             imgWidth (text): ширина изображения *ОБЯЗАТЕЛЬНОЕ ПОЛЕ
@@ -166,13 +166,13 @@
                 blockAlign = 'center'
 
                 imgUrl = 'parental_control/bg_famaly_mobile.png'
-                imgAlt = 'Alt Test image 1'                
+                imgAlt = 'Alt Test image 1'
                 imgWidth = '537'
                 imgHeight = '312'
 
                 captionText = 'Caption test image 1 Caption test image 1 Caption test image 1 Caption test image 1'
         *}
-                        
+
 {EndContent}
 
 <div class="light">
@@ -214,22 +214,22 @@
                         </div>
                 </div>
         </div>
-</div>   
-    
+</div>
+
 {include file='../includes/content/features-table-new.tpl'
         title = "Features"
         description = "Pumpic is reliable and feature-rich parental control software designed to protect kids by monitoring their mobile devices. Except for cell phone keylogger, the app lets you follow other aspects of your kid’s life. Taking into account that children and their smartphones are inseparable these days, Pumpic enables parents to monitor their kids’ activity constantly and remotely from any spot of the world."
         blockBg="dark"
         android = "yes"
         storeLinkText = "Start Tracking"
-}                                         
-  
-{Content 
+}
+
+{Content
     styleTitle="h2"
     title="How Keylogger Works"
     blockBg='light'}
-    <p>When it comes to keylogger software, parents usually get confused due to the obscurity of this function. Let’s shed some light on it to make everything fall into place, where it belongs.</p> 
-<p>When we talk about <a href="/android-keylogger.html">keylogger for Android</a> or <a href="/keylogger-for-iphone.html">iPhone keylogger</a>, we at the same time mean a keyboard tracker – a special program developed to capture button presses. With its help, a user can view personal text messages, passwords, credit card numbers, and literally everything that an owner of the target device types in.</p>
+    <p>When it comes to keylogger software, parents usually get confused due to the obscurity of this function. Let’s shed some light on it to make everything fall into place, where it belongs.</p>
+<p>When we talk about Android or <a href="/keylogger-for-iphone.html">iPhone keylogger</a>, we at the same time mean a keyboard tracker – a special program developed to capture button presses. With its help, a user can view personal text messages, passwords, credit card numbers, and literally everything that an owner of the target device types in.</p>
 <p>Thus, a keylogger app can help you monitor each tap on a touchscreen and every button your kid hits, while using his or her cell phone. After Pumpic keylogger activation you will be able to:</p>
 <ul>
 <li>Control if your kids use dirty language or any other words inappropriate for children;</li>
@@ -237,20 +237,20 @@
 <li>View passwords they set and change them, if the situation requires;</li>
 <li>Monitor all suspicious text messages to prevent inherent dangers or threats;</li>
 <li>Avert cyberbullying and contacts with online predators.</li>
-</ul> 
-<p>Such option as a keylogger allows providing your loved ones with all-round protection and preventing any possible danger, that modern world bears.</p> 
+</ul>
+<p>Such option as a keylogger allows providing your loved ones with all-round protection and preventing any possible danger, that modern world bears.</p>
 
-{EndContent}    
+{EndContent}
 
 <div class="dark">
     <div class="container">
             <h2 class="text-center testimonial-title">Testimonials:</h2>
             <div class="row">
-                
+
                 <div class="bxSliders only-pc">
                         <!-- SLIDE #1 -->
                         <div class="slide">
-                
+
                     <div class="bxItem col-sm-12 col-md-4 col-lg-4 col-xs-12">
                             <img src="{$img}/testimonials/keylogging_software/testimonials1.png" alt="" class="testimonial-photo">
                             <div class="testimonial-text">
@@ -272,25 +272,25 @@
                                     <p>“It is hard to overstate help that Pumpic provides. I work days and nights, meanwhile my son keeps wasting his time with his tablet in hands. Now the app lets me monitor his activity from work. I can follow him and know where he goes, I can see who calls him and monitor each button pushed. I can work without worries now.””</p>
                             </div>
                     </div>
-                            
+
                         </div>
                 </div>
-                <div class="bxSliderMobile"></div>            
-                            
+                <div class="bxSliderMobile"></div>
+
             </div>
     </div>
 </div>
-        {include file='../includes/content/how-get-pumpic.tpl' 
+        {include file='../includes/content/how-get-pumpic.tpl'
              blockBg="light"
         }
 
 
         {*include file='../includes/content/banner-promo.tpl'*}
         {*{include file='../includes/content/banners/banner-promo-trial.tpl'}*}
-        
+
         {include file='../includes/content/banners/index.tpl'}
-        <!-- END CONTENT -->    
-        
+        <!-- END CONTENT -->
+
         <!-- RECOMMENDED -->
         {*
             Template: RECOMMENDED
@@ -301,9 +301,9 @@
 
         {include file='../includes/main/main-footer.tpl'}
 
-                
+
     </div>
-      
+
     {include file='../includes/main/main-analytics-footer.tpl'}
 </body>
 </html>

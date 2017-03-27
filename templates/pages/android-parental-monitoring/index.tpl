@@ -71,9 +71,10 @@ amp = "{$schema}pumpic.com/amp/android-parental-monitoring/"
         title="Did You Know?"
         blockBg='light'}
 
-        <p>Using Android monitoring software to protect kids is an urgent necessity of the contemporary society. On one hand, technological progress has opened new doors for the evolution of humanity; on the other one, it has resulted in many dangers in return. And children are exposed to these risks much more than others. That’s why if handing them smartphones or tablets, you should know how to protect their mobile activities.</p>
-	    <p>Parental control apps allow you to monitor kids' pastime, restrict misgiving communication, and limit device usage. Pumpic proved to be among the most reliable applications for child safety. With it, you will always know what your kids are texting, who calls them, which websites they visit, as well as any content they see, send, or receive. You will always know where your children go and be notified as soon as they enter any restricted areas or leave safety zones (home, school, etc.) without your permission. Android parental monitoring by Pumpic will let you have no worries about your loved ones when you are not nearby.</p>
-		<p>The brief statistics below show how many children use smartphones and tablets as well as how many of them come across dangers related to these devices usage.</p>
+	<img class="app-icon-left" src="{$img}/landings/android-parental-monitoring-icon1.png" style="margin-top: 25px;" title="Track kids' smartphones and tablets on Android" alt="Android devices monitoring">
+    <p>Using Android monitoring software to protect kids is an urgent necessity of the contemporary society. On one hand, technological progress has opened new doors for the evolution of humanity; on the other one, it has resulted in many dangers in return. And children are exposed to these risks much more than others. That’s why if handing them smartphones or tablets, you should know how to protect their mobile activities.</p>
+	  <p>Parental control apps allow you to monitor kids' pastime, restrict misgiving communication, and limit device usage. Pumpic proved to be among the most reliable applications for child safety. With it, you will always know what your kids are texting, who calls them, which websites they visit, as well as any content they see, send, or receive. You will always know where your children go and be notified as soon as they enter any restricted areas or leave safety zones (home, school, etc.) without your permission. Android parental monitoring by Pumpic will let you have no worries about your loved ones when you are not nearby.</p>
+		<p>The brief statistics below show how many children use smartphones and tablets as well as how many of them come across dangers related to these devices usage. These figures indicate that with time the significance of <a class="a-default" href="/android-tablet-parental-control.html">Android tablet parental control</a> and smartphone monitoring software will only be rising.</p>
 
         <!-- BLOCK STATISTICK -->
         <div class="block-statistick row">
@@ -155,12 +156,15 @@ amp = "{$schema}pumpic.com/amp/android-parental-monitoring/"
     blockBg='dark'}
     		<p>As we’ve already mentioned, smartphones play a huge role in how modern kids and teens communicate with each other and interact with the world around them nowadays. Remarkably, according to Pew Research Center study, 57% of US teens have met new friends online, mostly via social media. Upon that, almost 80% of these relationships remain “virtual”, with only 20% of teens actually ever meeting these connections in real life.</p>
 			<p>Hence, knowing what exactly they use their devices for is crucial to ensure the most effective protection from apparent and hidden perils. Here are top-3 daily smartphone uses by kids that parents should pay closer attention to:</p>
+      <div>
+        	<img class="app-icon-right" src="{$img}/landings/android-parental-monitoring-icon2.png" style="margin-top: -10px;" title="Kids use smartphones and tablets mostly for texting" alt="Texting on a smartphone">
 				<ul class="list-images">
 				<li><img src="/images/landings/check-icon.png" alt="Check Mark" style="left: -30px;" /><strong>Texting.</strong> 55% of teens communicate via text messages every single day. It is clearly the dominant option with nothing else even coming somewhat close.</li>
 				<li><img src="/images/landings/check-icon.png" alt="Check Mark" style="left: -30px;" /><strong>Instant messaging.</strong> 27% of teens connect with friends via instant online chats and messengers like Snapchat, Facebook Messenger, Kik, WhatsApp, etc.</li>
 				<li><img src="/images/landings/check-icon.png" alt="Check Mark" style="left: -30px;" /><strong>Social media.</strong> 23% of teens keep in touch via social networks. They say social media helps them feel more connected to their friends’ lives. Also, this is a place where teens receive support from others during tough times.</li>
 				</ul>
-				<p>Considering the data above, the simple logic will make it pretty clear that most cyber dangers kids face come from the most popular device usage practices. That’s why concerned parents should consider monitoring their children smartphones and tablets and pay the paramount attention to text communication. Thankfully, Pumpic monitoring software provides exhaustive opportunity to keep an eye on with whom your kid interacts and what is he or she up to. Thus, preventing the child from any wrongdoing becomes a mere matter of skills.</p>
+      </div>
+				<p>Considering the data above, the simple logic will make it pretty clear that most cyber dangers kids face come from the most popular device usage practices. That’s why concerned parents should consider utilizing <a class="a-default" href="/android-phone-child-tracking-software.html">Android phone tracking software for children</a> and pay the paramount attention to text communication. Thankfully, Pumpic monitoring software provides exhaustive opportunity to keep an eye on with whom your kid interacts and what is he or she up to. Thus, preventing the child from any wrongdoing becomes a mere matter of skills.</p>
 				<p>At the same time, monitoring software is just a supplementary tool to facilitate your parental duties. Hence, we urge you to have a frank talk to your little ones about dangers and pitfalls they may encounter when being online. Read more about the most widespread digital hazards that lay in wait for the kids in the next chapter.</p>
 {EndContent}
 
@@ -223,8 +227,9 @@ amp = "{$schema}pumpic.com/amp/android-parental-monitoring/"
     styleTitle="h2"
     title="Ethical Issues of Parental Monitoring"
     blockBg='light'}
-    		<p>Mobile technologies have introduced new opportunities to our children. It is rather hard to imagine the entire range of functions a single smartphone can fulfill. That’s why when it comes to features that an Android surveillance software should include, it is crucial to consider as many as possible. Pumpic's monitoring abilities and particular mobile phone functions will help you follow each and every aspect of your kids’ lives and all of their activities remotely.</p>
-				<p>Another aspect to consider when it comes to digital kids monitoring is the approach to the ethical side of the issue. On the one hand, parents can choose to surveil their child covertly; stated another way, it's spying. On the other hand, there is an ethical tracking when the kid is warned that he or she is being watched and certain rules of online behavior are agreed on with the child. In this <a class="a-default" target="_blank" href="/spy-apps-vs-parental-monitoring.html">rivalry between the spyware and parental monitoring apps</a>, Pumpic holds the view that the latter path is highly preferable. That's why our app for Android is visible on the target device. Check out all of Pumpic's features in the table below.</p>
+        <img class="app-icon-left" src="{$img}/landings/android-parental-monitoring-icon3.png" style="margin-top: 30px;" title="Ethical monitoring is better than snooping" alt="Monitoring or spying">
+        <p>Mobile technologies have introduced new opportunities to our children. It is rather hard to imagine the entire range of functions a single smartphone can fulfill. That’s why when it comes to features that an Android surveillance software should include, it is crucial to consider as many as possible. Pumpic's monitoring abilities and particular mobile phone functions will help you follow each and every aspect of your kids’ lives and all of their activities remotely.</p>
+				<p>Another aspect to consider when it comes to digital kids monitoring is the approach to the ethical side of the issue. On the one hand, parents can choose to surveil their child covertly; stated another way, they will obviously choose from some of the <a class="a-default" href="/best-spying-apps-for-android.html">best spying apps for Android</a> and snoop on their kids secretly. On the other hand, there is an ethical tracking when the kid is warned that he or she is being watched and certain rules of online behavior are agreed on with the child. In this <a class="a-default" href="/spy-apps-vs-parental-monitoring.html">rivalry between the spyware and parental monitoring apps</a>, Pumpic holds the view that the latter path is highly preferable. That's why our app for Android is visible on the target device. Check out all of Pumpic's features in the table below.</p>
 {EndContent}
 
 {include file='../../includes/content/features-table-new.tpl'
@@ -283,7 +288,24 @@ amp = "{$schema}pumpic.com/amp/android-parental-monitoring/"
         </div>
 </div> *}
 
-<div class="light">
+{Content
+    styleTitle="h2"
+    title="All-Round Protection from Online and Offline Dangers"
+    blockBg='light'}
+    		<p>Eventually, making use of mobile monitoring apps like Pumpic is arguably the most effortless way of keeping tabs on your children's Internet activity on their gadgets. To make their kids' web experience as safe as possible, parents are enabled to check browsing history, bookmarks, block websites, and <a class="a-default" href="/best-internet-filter-for-android.html">filter content</a> that they consider to be inappropriate and objectionable. But it's not only the online pastime that you can take charge of thanks to Pumpic. With its built-in parental control features and location tracking function, you can:</p>
+        <div>
+        <img class="app-icon-right" src="{$img}/landings/android-parental-monitoring-icon4.png" style="margin-top: 40px;" title="Protect kids online and offline" alt="All-round child protection">
+				<ul class="list-images">
+				<li><img src="/images/landings/check-icon.png" alt="Check Mark" style="left: -30px;" /><strong>Block texts and calls.</strong> When you want to prevent undesired cell phone conversations of your kid, just add the corresponding phone number to the stop-list. In case with <a class="a-default" href="/how-to-block-texts-on-android.html">blocking text messages</a>, you can also suspend SMS with any words of your choice.</li>
+				<li><img src="/images/landings/check-icon.png" alt="Check Mark" style="left: -30px;" /><strong>Limit or lock apps.</strong> Pumpic enables parents to remotely manage preinstalled and downloaded apps on kid's Android device. You can either limit the app's time of daily usage or <a class="a-default" href="/how-to-lock-apps-on-android.html">block inappropriate apps</a> entirely – all right from the Control Panel dashboard.</li>
+				<li><img src="/images/landings/check-icon.png" alt="Check Mark" style="left: -30px;" /><strong>Check out every keystroke.</strong> A keylogger is a special software that lets parents see which buttons were pressed or tapped inside any app during a particular period. <a class="a-default" href="/android-keylogger.html">Keylogger for Android</a> allows to inspect what was typed in text messages, chats, social media or registration forms.</li>
+        <li><img src="/images/landings/check-icon.png" alt="Check Mark" style="left: -30px;" /><strong>Track location of family members.</strong> The popularity of <a class="a-default" href="/android-family-tracker.html">family tracking devices</a> made location tracking feature one of the most demanded features for any parental app. In Pumpic, this functionality is very reliable. Moreover, it's enhanced with the geofencing that allows to set safe and restricted areas for kids.</li>
+				</ul>
+      </div>
+				<p>As you can see, Pumpic takes care not only of the online aspect of your kid's safety, but also the offline providing the all-round protection for the child and peace of mind for the parents. At the same time, no monitoring or security app cannot do for your kid what you must do as a parent – provide warmth and guidance. That's why we urge you to always be there for your little ones and talk to them openly and sincerely.</p>
+{EndContent}
+
+<div class="dark">
     <div class="container">
             <h2 class="text-center testimonial-title">Trusted by Over 10,000 Customers Worldwide:</h2>
             <div class="row">

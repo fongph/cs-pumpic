@@ -39,10 +39,10 @@
 							<div class="col-lg-12">
                                 <h2 id="legal-policy">Legal Policies</h2>
 
-                                <ul>
+                                <ul class="feature_list">
                                     <li><a href="/direct-notice{if ($preview)}{$preview}{/if}.html">Direct Notice</a></li>
                                     <li><a href="/tos{if ($preview)}{$preview}{/if}.html">Term of Use</a></li>
-                                    <li><a href="/policy{if ($preview)}{$preview}{/if}.html#privacy_policy">Privacy Policy</a></li>
+                                    <li><a href="/policy{if ($preview)}{$preview}{/if}.html#privacy_policy">Privacy Policy & COPPA Notice</a></li>
                                 </ul>
                                 <article>
                                     <p class="text-justify">Please carefully read this end user license agreement (here and after "EULA") before purchasing or using Pumpic software. By purchasing, downloading, installing, logging in, or otherwise using the application as well as a cloud based monitoring solution (here and after iCloud solution), you agree to adhere to the terms of this license. If you do not accept the terms of this license, do not purchase, download, install, log in, or use Pumpic software, delete it as well as all of its related files from your device. This EULA is a legal agreement between you and the software provider. By purchasing, downloading, installing, logging in, or otherwise using the app or iCloud solution, you agree to be bound by the terms. </p>

@@ -12,7 +12,7 @@ $obj = new includes\lib\users\Order;
 require_once 'smarty.config.php';
 
 /* list order */
-$products = $obj ->getProducts('second-new-3');
+$products = $obj ->getProducts('second-new-4');
 //echo '<pre>';
 // var_dump($products);
 /* form_order */
@@ -69,7 +69,7 @@ $_curr -> setFilter( ['iso' => ['USD','EUR','GBP','CAD','AUD'] ] );
 $_rates = $_curr -> getCurrencies();
 
 $smarty->assign('rates', json_encode($_rates));
-$smarty->assign('subPage2', true);
+$smarty->assign('subPage1', true);
 
 
 // init output params!

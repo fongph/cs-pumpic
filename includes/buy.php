@@ -3,14 +3,23 @@
 //$config
 $_inc = dirname(__FILE__); // includes
 
+require __DIR__ . '/../vendor/autoload.php';
 require_once $_inc . '/lib/users/Order.php';
 require_once $_inc.'/di_function.php';
+
+$logger = new Monolog\Logger('logger');
+Monolog\ErrorHandler::register($logger);
+$logger->pushProcessor(new Monolog\Processor\WebProcessor());
+$logger->pushHandler(new Monolog\Handler\StreamHandler(__DIR__ . '/../logs/buy.log', Monolog\Logger::DEBUG));
+$logger->info('event');
 $order = new includes\lib\users\Order;
 $user_id = $order->getUserIdByAuth();
 $_request = (isset($_POST['price']) and ! empty($_POST['price'])) ? $_POST['price'] : false;
 
+
 $_referer = (isset($_COOKIE['orders_referer']) and ! empty($_COOKIE['orders_referer'])) ? $_COOKIE['orders_referer'] : "--"; // $_SERVER['HTTP_REFERER']
 $_landing = (isset($_COOKIE['landing']) and ! empty($_COOKIE['landing'])) ? $_COOKIE['landing'] : "--";
+$_params = getURI();
 
 $order->setReferer($_referer);
 $order->setLanding($_landing);
@@ -39,6 +48,9 @@ if (isset($_request['productID']) and $_productID = (int) $_request['productID']
         $_url .= (parse_url($_url, PHP_URL_QUERY) ? '&' : '?') . '_ga=' . $_GET['_ga'] ;
     }
 
+    $order->_redirect($_url);
+} elseif(!empty($_params['getParams']) && !empty($_params['getParams']['productID'])){
+    $_url = $order->createOrder((int) $_params['getParams']['productID']);
     $order->_redirect($_url);
 } else {
     if (isset($_GET['product'])) {
@@ -74,4 +86,4 @@ if (isset($_request['productID']) and $_productID = (int) $_request['productID']
         $order->_redirect('/');
     }
 }
-?>
+

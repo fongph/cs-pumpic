@@ -123,6 +123,9 @@
   }
 
 }
+.buy-form-with-offer {
+  margin-bottom: 20px;
+}
 @media (max-width: 700px) {
   .prod-list-android .double_offer.checkbox {
     display: block;
@@ -135,7 +138,6 @@
   //  display: none;
   //}
   .buy-form-with-offer {
-    margin-top: 10px;
     margin-bottom: 20px;
   }
   .premium_h {

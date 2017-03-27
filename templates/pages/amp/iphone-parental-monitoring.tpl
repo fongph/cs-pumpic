@@ -136,12 +136,7 @@
                                                     <form name="price_amp" method="POST" target="_top" action-xhr="//{$domain}/amp/iphone-parental-monitoring.html" class="buy-form-with-offer" autocomplete="off">
                                                         {foreach from=$getProducts.iosiCloud key=key item=item}
                                                         <section class="vertical-aligh-middle">
-                                                        {if $ABtest == 'ABtest-1'}
-
-                                                        <a href="/buy.html?productID={$item.id}" class="btn btn-default" id="view-pricing-link">Buy Now - $29,95/mo</a>
-                                                    </section>
-                                                        <div class="button-descr">Old price: <span>$40,00/mo</span></div>
-                                                        {elseif $ABtest == 'ABtest-2'}
+                                                        {if $ABtest == 'ABtest-2'}
                                                         <a href="/buy.html?productID={$item.id}" class="btn btn-default btn-arrow" id="view-pricing-link">Buy Now - $29,95</a>
                                                     </section>
                                                         <div class="button-descr">1 month subscription</div>

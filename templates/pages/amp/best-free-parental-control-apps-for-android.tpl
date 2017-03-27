@@ -136,7 +136,7 @@
                                     <p>Smartphones and tablets connected to the Internet have become a trivial part of our world. Everyone’s got one. Meanwhile, many children find out how to use mobile devices before they can actually speak. And all these technologies go along kids’ lives, make them more curios, help to educate themselves, and very often expose them to danger.</p>
                                     <div></div>
                                     <p>Cyberbullies insult kids on social media; haunt and offend them on instant chats. This horrible issue is known to be a major suicide factor among teens. Online predators try to gain children’s confidence and make them swallow the hook. Sexting is becoming a normal way of communication, while exchanging nude photos – the best way to show one’s feelings. Moreover, the Internet is full of explicit sexuality, violence, and hate. Our kids have unlimited access to all of this. At any time. With one single click. On their smartphone and tablets. And parents don’t know.</p>
-                                    <p><a class="a-default" href="/android-parental-monitoring.html">Android parental monitoring applications</a> allow parents to bring the situation under control and protect their children. Pumpic is a good example of reliable protection in this case. Such software lets you follow kids’ activities on mobile devices as well as the Internet. Apply parental controls and see what your kids are texting, which websites they visit, and people they talk to. Prevent kids from seeing undesired content inappropriate for them. Block apps and other activities to prevent them from wasting time. Monitor their current location, check the entire routes history and set safe or restricted areas thanks to geofencing feature.</p>
+                                    <p><a class="a-default" href="/android-parental-monitoring/">Android parental monitoring applications</a> allow parents to bring the situation under control and protect their children. Pumpic is a good example of reliable protection in this case. Such software lets you follow kids’ activities on mobile devices as well as the Internet. Apply parental controls and see what your kids are texting, which websites they visit, and people they talk to. Prevent kids from seeing undesired content inappropriate for them. Block apps and other activities to prevent them from wasting time. Monitor their current location, check the entire routes history and set safe or restricted areas thanks to geofencing feature.</p>
                                     <p>Check out the list below, compare the functionality of described solutions and see for yourself why choosing Pumpic - the best Android parental control app - is the right thing to do if you aim to comprehensively protect your little ones from digital perils.</p>
                                 </div>
                             </div>
@@ -417,7 +417,7 @@
                 <h3>OUR PRODUCTS</h3>
                 <ul>
                     <li>
-                        <a href="/android-parental-monitoring.html">Android Parental Control</a>
+                        <a href="/android-parental-monitoring/">Android Parental Control</a>
                     </li>
                     <li>
                         <a href="/iphone-parental-monitoring.html">iPhone Parental Control</a>

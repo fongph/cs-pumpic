@@ -202,7 +202,7 @@
         
         {include file='../includes/content/features-table-new.tpl'
             title = "More than 24 Features for Child Protection"
-            description = "Pumpic offers <a class='a-default' href='/android-parental-monitoring.html'>reliable monitoring solutions for Android</a> to keep your children safe and secure both online and during daily activities. Thus, you provide your loved ones with comprehensive protection with an ability to monitor every step they take on their smartphones and tablets. Take care of your kids remotely wherever you go with Pumpic parental control."
+            description = "Pumpic offers <a class='a-default' href='/android-parental-monitoring/'>reliable monitoring solutions for Android</a> to keep your children safe and secure both online and during daily activities. Thus, you provide your loved ones with comprehensive protection with an ability to monitor every step they take on their smartphones and tablets. Take care of your kids remotely wherever you go with Pumpic parental control."
             blockBg="light"
             android = "yes"
             storeLinkText = "Go to Store"

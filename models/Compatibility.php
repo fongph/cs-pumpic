@@ -200,7 +200,7 @@ class Compatibility {
         // only this OS
         $os_iOS = array(
             'Other features' => array(
-                'icloud_solution'   => '<strong>iCloud monitoring</strong> (without jailbreak up to iOS 10.2.1)',
+                'icloud_solution'   => '<strong>iCloud monitoring</strong> (without jailbreak up to iOS 10.3)',
             ),
         );
 

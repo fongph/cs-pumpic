@@ -669,9 +669,10 @@
                                 <div class='feature-item-info'>
                                     <ul>
                                         <li>
-                                            <svg width="31" height="31" class="features-icon i-list-features-svg">
-                                                <use xlink:href="/images/svg-icons.svg#calls"></use>
-                                            </svg>
+                                            <a href="/call-monitoring-software.html" style="cursor:default;"><img class="features-icon i-list-features-" src="{$img}/technological/header/icon/icon-call.png" style="width:25px;height:25px;top:4px;" alt="call monitoring for parents" title="tracking kids by their smartphones" /></a>
+                                            {*<svg width="31" height="31" class="features-icon i-list-features-svg">*}
+                                                {*<use xlink:href="/images/svg-icons.svg#calls"></use>*}
+                                            {*</svg>*}
                                             <strong>Calls</strong></li>
                                     </ul>
                                     <div class='block-info'>
@@ -692,13 +693,16 @@
                                 <div class='feature-item-info'>
                                     <ul>
                                         <li>
-                                            <svg width="31" height="31" class="features-icon i-list-features-svg only-mobile">
-                                                <use xlink:href="/images/svg-icons.svg#texts"></use>
-                                            </svg>
+                                            <a href="/mobile-sms-spy.html" class="only-mobile" style="cursor:default;"><img class="features-icon i-list-features-" src="{$img}/technological/header/icon/icon-sms.png" width="31px" height="31px" /></a>
+                                            {*<svg width="31" height="31" class="features-icon i-list-features-svg only-mobile">*}
+                                                {*<use xlink:href="/images/svg-icons.svg#texts"></use>*}
+                                            {*</svg>*}
                                             <strong>SMS, MMS, iMessages</strong>
-                                            <svg width="31" height="31" class="features-icon i-list-features-svg only-pc">
-                                                <use xlink:href="/images/svg-icons.svg#texts"></use>
-                                            </svg>
+                                            <a href="/mobile-sms-spy.html" class="only-pc" style="cursor:default;"><img class="features-icon i-list-features-" src="{$img}/technological/header/icon/icon-sms.png" style="width:30px;height:25px;top:4px;" alt="sms monitoring" title="kids and text tracking" /></a>
+
+                                            {*<svg width="31" height="31" class="features-icon i-list-features-svg only-pc">*}
+                                                {*<use xlink:href="/images/svg-icons.svg#texts"></use>*}
+                                            {*</svg>*}
                                         </li>
                                     </ul>
                                     <div class='block-info'>
@@ -746,9 +750,10 @@
                                 <div class='feature-item-info'>
                                     <ul>
                                         <li>
-                                            <svg width="31" height="31" class="features-icon i-list-features-svg">
-                                                <use xlink:href="/images/svg-icons.svg#location"></use>
-                                            </svg>
+                                            <a href="/gps-and-geofencing.html" style="cursor:default;"><img class="features-icon i-list-features-" src="{$img}/technological/header/icon/icon-location-history.png" style="width:21px;height:28px;top:4px;" alt="geofence feature" title="gps for knowing kids location" /></a>
+                                            {*<svg width="31" height="31" class="features-icon i-list-features-svg">*}
+                                                {*<use xlink:href="/images/svg-icons.svg#location"></use>*}
+                                            {*</svg>*}
                                             <strong> Location</strong></li>
                                     </ul>
                                     <div class='block-info'>
@@ -774,31 +779,37 @@
                                 <div class='feature-item-info'>
                                     <ul>
                                         <li>
-                                            <svg width="31" height="31" class="features-icon i-list-features-svg only-mobile">
-                                                <use xlink:href="/images/svg-icons.svg#skype"></use>
-                                            </svg>
+                                            <a href="/monitor-skype.html" class="only-mobile" style="cursor:default;"><img class="features-icon i-list-features-" src="{$img}/technological/i-list-features-skype.png" style="width:21px;height:21px;top:4px;" alt="monitor skype chats" title="skype calls can be viewed by parents" /></a>
+                                            {*<svg width="31" height="31" class="features-icon i-list-features-svg only-mobile">*}
+                                                {*<use xlink:href="/images/svg-icons.svg#skype"></use>*}
+                                            {*</svg>*}
                                             <strong>Skype</strong>
-                                            <svg width="31" height="31" class="features-icon i-list-features-svg only-pc">
-                                                <use xlink:href="/images/svg-icons.svg#skype"></use>
-                                            </svg>
+                                            {*<svg width="31" height="31" class="features-icon i-list-features-svg only-pc">*}
+                                                {*<use xlink:href="/images/svg-icons.svg#skype"></use>*}
+                                            {*</svg>*}
+                                            <a href="/monitor-skype.html" class="only-pc" style="cursor:default;"><img class="features-icon i-list-features-" src="{$img}/technological/i-list-features-skype.png" style="width:21px;height:21px;top:4px;" alt="monitor skype chats" title="skype calls can be viewed by parents" /></a>
                                         </li>
-                                        <li>
-                                            <svg width="31" height="31" class="features-icon i-list-features-svg only-mobile">
-                                                <use xlink:href="/images/svg-icons.svg#chats"></use>
-                                            </svg>
+                                        <li style="position: relative;">
+                                            {*<svg width="31" height="31" class="features-icon i-list-features-svg only-mobile">*}
+                                                {*<use xlink:href="/images/svg-icons.svg#chats"></use>*}
+                                            {*</svg>*}
+                                            <a href="/whatsapp-monitoring.html" class="only-mobile" style="cursor:default;"><img class="features-icon i-list-features-" src="{$img}/technological/i-list-features-whatsapp.png" style="width:20px;height:21px;top:4px;" alt="view whatsapp chats" title="parents should check kids whatsapp accounts" /></a>
                                             <strong>WhatsApp</strong>
-                                            <svg width="31" height="31" class="features-icon i-list-features-svg only-pc">
-                                                <use xlink:href="/images/svg-icons.svg#chats"></use>
-                                            </svg>
+                                            <a href="/whatsapp-monitoring.html" class="only-pc" style="cursor:default;"><img class="features-icon i-list-features-" src="{$img}/technological/i-list-features-whatsapp.png" style="width:20px;height:21px;top:4px;" alt="view whatsapp chats" title="parents should check kids whatsapp accounts" /></a>
+                                            {*<svg width="31" height="31" class="features-icon i-list-features-svg only-pc">*}
+                                                {*<use xlink:href="/images/svg-icons.svg#chats"></use>*}
+                                            {*</svg>*}
                                             </li>
-                                        <li>
-                                            <svg width="31" height="31" class="features-icon i-list-features-svg only-mobile">
-                                                <use xlink:href="/images/svg-icons.svg#kik"></use>
-                                            </svg>
+                                        <li style="position: relative;">
+                                            {*<svg width="31" height="31" class="features-icon i-list-features-svg only-mobile">*}
+                                                {*<use xlink:href="/images/svg-icons.svg#kik"></use>*}
+                                            {*</svg>*}
+                                            <a href="/monitor-kik-messenger.html" class="only-mobile" style="cursor:default;"><img class="features-icon i-list-features-" src="{$img}/technological/i-list-features-kik-chat.png" style="width:20px;height:21px;top:4px;" alt="kik messenger can be bad for kids" title="kik messenger can be bad for kids" /></a>
                                             <strong>Kik</strong>
-                                            <svg width="31" height="31" class="features-icon i-list-features-svg only-pc">
-                                                <use xlink:href="/images/svg-icons.svg#kik"></use>
-                                            </svg>
+                                            {*<svg width="31" height="31" class="features-icon i-list-features-svg only-pc">*}
+                                                {*<use xlink:href="/images/svg-icons.svg#kik"></use>*}
+                                            {*</svg>*}
+                                            <a href="/monitor-kik-messenger.html" class="only-pc" style="cursor:default;"><img class="features-icon i-list-features-" src="{$img}/technological/i-list-features-kik-chat.png" style="width:25px;height:18px;top:4px;" alt="monitor kik account" title="kik messenger can be bad for kids" /></a>
                                         </li>
                                     </ul>
 
@@ -841,13 +852,16 @@
                             <div class="item-feature-list div-table-column col-sm-12 col-md-4 col-lg-4 text-left">
                                 <div class='feature-item-info'>
                                     <ul>
-                                        <li>
-                                            <svg width="28" height="28" class="features-icon i-list-features-svg">
-                                                <use xlink:href="/images/svg-icons.svg#browsers"></use>
-                                            </svg>
+                                        <li style="position: relative;">
+                                            {*<svg width="28" height="28" class="features-icon i-list-features-svg">*}
+                                                {*<use xlink:href="/images/svg-icons.svg#browsers"></use>*}
+                                            {*</svg>*}
+                                            <a href="/browser-parental-control.html" class="only-pc" style="cursor:default;"><img class="features-icon i-list-features-" src="{$img}/technological/icon-browser.png" style="width:23px;height:23px;top:4px;" alt="view browser searches" title="keeping eye on kids browser" /></a>
                                             <strong>Browser control</strong></li>
+
                                         <li>
-                                            <svg width="31" height="31" class="features-icon i-list-features-svg">
+
+                                            <svg width="25" height="25" class="features-icon i-list-features-svg">
                                                 <use xlink:href="/images/svg-icons.svg#bookmarks"></use>
                                             </svg>
                                             <strong>Bookmarks</strong></li>
@@ -904,11 +918,11 @@
                                 <div class='feature-item-info'>
                                     <ul>
                                         <li>
-                                            <svg width="31" height="31" class="features-icon i-list-features-svg only-mobile">
+                                            <svg width="25" height="25" class="features-icon i-list-features-svg only-mobile">
                                                 <use xlink:href="/images/svg-icons.svg#photos"></use>
                                             </svg>
                                             <strong>Photos</strong>
-                                            <svg width="31" height="31" class="features-icon i-list-features-svg only-pc">
+                                            <svg width="25" height="25" class="features-icon i-list-features-svg only-pc">
                                                 <use xlink:href="/images/svg-icons.svg#photos"></use>
                                             </svg>
                                         </li>
@@ -1029,19 +1043,19 @@
                                 <div class='feature-item-info'>
                                     <ul>
                                         <li>
-                                            <svg width="31" height="31" class="features-icon i-list-features-svg">
+                                            <svg width="25" height="25" class="features-icon i-list-features-svg">
                                                 <use xlink:href="/images/svg-icons.svg#calendar"></use>
                                             </svg>
                                             <strong>Calendar</strong>
                                         </li>
                                         <li>
-                                            <svg width="31" height="31" class="features-icon i-list-features-svg">
+                                            <svg width="25" height="25" class="features-icon i-list-features-svg">
                                                 <use xlink:href="/images/svg-icons.svg#contacts"></use>
                                             </svg>
                                             <strong>Contacts</strong>
                                         </li>
                                         <li>
-                                            <svg width="31" height="31" class="features-icon i-list-features-svg">
+                                            <svg width="25" height="25" class="features-icon i-list-features-svg">
                                                 <use xlink:href="/images/svg-icons.svg#notes"></use>
                                             </svg>
                                             <strong>Notes</strong>

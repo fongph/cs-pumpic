@@ -65,12 +65,12 @@
                                         <svg width="22" height="22" class="features-icon vertical-center mr5">
                                             <use xlink:href="/images/svg-icons.svg#texts"></use>
                                         </svg>
-                                        <span onclick="window.location='/mobile-sms-spy.html'">Monitor SMS and MMS</span></li>
+                                        <span>Monitor SMS and MMS</span></li>
                                     <li>
                                         <svg width="22" height="22" class="features-icon vertical-center mr5">
                                             <use xlink:href="/images/svg-icons.svg#calls"></use>
                                         </svg>
-                                        </i> {if !in_array('call-monitoring-software', $_notVisible)}<span onclick="window.location='/call-monitoring-software.html'">Monitor Calls History</span>{else}Monitor Calls History{/if}</li>
+                                        </i>Monitor Calls History</li>
                                     <li>
                                         <svg width="22" height="22" class="features-icon vertical-center mr5">
                                             <use xlink:href="/images/svg-icons.svg#calendar"></use>
@@ -111,7 +111,7 @@
                                         <svg width="22" height="22" class="features-icon vertical-center mr5">
                                             <use xlink:href="/images/svg-icons.svg#browsers"></use>
                                         </svg>
-                                        <span onclick="window.location='/browser-parental-control.html'">Control Browser</span></li>
+                                        <span>Control Browser</span></li>
                                     <li>
                                         <svg width="22" height="22" class="features-icon vertical-center mr5">
                                             <use xlink:href="/images/svg-icons.svg#application"></use>
@@ -141,7 +141,7 @@
                                         <svg width="22" height="22" class="features-icon vertical-center mr5">
                                             <use xlink:href="/images/svg-icons.svg#geo-fencing"></use>
                                         </svg>
-                                        {if !in_array('geo-fences', $_notVisible)}<span onclick="window.location='/gps-and-geofencing.html'">Geo-fences</span>{else}Geo-fences{/if}</li>
+                                        Geo-fences</li>
                                     <li>
                                         <svg width="22" height="22" class="features-icon vertical-center mr5">
                                             <use xlink:href="/images/svg-icons.svg#keylogger"></use>
@@ -157,12 +157,12 @@
                                         <svg width="22" height="22" class="features-icon vertical-center mr5">
                                             <use xlink:href="/images/svg-icons.svg#chats"></use>
                                         </svg>
-                                        <span onclick="window.location='/whatsapp-monitoring.html'">Monitor WhatsApp</span></li>
+                                        <span>Monitor WhatsApp</span></li>
                                     <li>
                                         <svg width="22" height="22" class="features-icon vertical-center mr5">
                                             <use xlink:href="/images/svg-icons.svg#skype"></use>
                                         </svg>
-                                        <span onclick="window.location='/monitor-skype.html'">Monitor Skype</span></li>
+                                        <span>Monitor Skype</span></li>
                                     <li>
                                         <svg width="22" height="22" class="features-icon vertical-center mr5">
                                             <use xlink:href="/images/svg-icons.svg#facebook"></use>
@@ -183,7 +183,7 @@
                                         <svg width="22" height="22" class="features-icon vertical-center mr5">
                                             <use xlink:href="/images/svg-icons.svg#kik"></use>
                                         </svg>
-                                        <span onclick="window.location='/monitor-kik-messenger.html'">Monitor Kik</span></li>
+                                        <span>Monitor Kik</span></li>
                                     <li>
                                         <svg width="22" height="22" class="features-icon vertical-center mr5">
                                             <use xlink:href="/images/svg-icons.svg#snapchat"></use>

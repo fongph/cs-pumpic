@@ -134,18 +134,17 @@
 
                                                 <div>
                                                     <form name="price_amp" method="POST" target="_top" action-xhr="//{$domain}/amp/iphone-parental-monitoring.html" class="buy-form-with-offer" autocomplete="off">
-                                                        {foreach from=$getProducts.iosiCloud key=key item=item}
+                                                        {$product = $getProducts }
                                                         <section class="vertical-aligh-middle">
                                                         {if $ABtest == 'ABtest-2'}
-                                                        <a href="/buy.html?productID={$item.id}" class="btn btn-default btn-arrow" id="view-pricing-link">Buy Now - $29,95</a>
+                                                        <a href="/buy.html?productID={$product.id}" class="btn btn-default btn-arrow" id="view-pricing-link">Buy Now - $43,99</a>
                                                     </section>
-                                                        <div class="button-descr">1 month subscription</div>
+                                                        <div class="button-descr">3 month subscription</div>
                                                         {else}
-                                                        <a class="btn btn-default" href="/buy.html?productID={$item.id}" id="view-pricing-link">View Pricing</a>
+                                                        <a class="btn btn-default" href="/buy.html?productID={$product.id}" id="view-pricing-link">View Pricing</a>
                                                     </section>
 
                                                         {/if}
-                                                        {/foreach}
 
                                                     </form>
                                                 </div>

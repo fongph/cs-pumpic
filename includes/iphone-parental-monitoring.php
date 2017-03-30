@@ -21,17 +21,17 @@ $products = $obj->getProducts('second-new-amp');
 
 // default
 if(is_array($products)) {
-//    var_dump($products['iosiCloud']);
     if (isset($products['iosiCloud'])) {
         foreach ($products['iosiCloud'] as $item) :
-            if ($item['period'] == 12 && $item['id']) {
-                $smarty->assign('defaultIosiCloudProduct', $item['id']);
-                $smarty->assign('defaultIosiCloudPrice', round($item['price'] / $item['period'], 2));
+            if ($item['period'] == 3 && $item['id']) {
+                $product = $item;
+//                $smarty->assign('defaultIosiCloudProduct', $item['id']);
+//                $smarty->assign('defaultIosiCloudPrice', round($item['price'] / $item['period'], 2));
             }
         endforeach;
     }
 }
 
 // init output params!
-$smarty->assign('getProducts', $products);
+$smarty->assign('getProducts', $product);
 $smarty->display($b_dir . '/templates/pages/amp/iphone-parental-monitoring.tpl');

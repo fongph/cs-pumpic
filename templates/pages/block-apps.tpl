@@ -161,7 +161,7 @@
         </div>
         <!-- END -->
 
-        <p>If you look closer at iPhones and Androids, you will see that built-in parental controls for these two OS are implemented in a different way. As known, iPhones have better pre-installed features that include Family Sharing. But when it comes to broadening the features with control apps, you might come across troubles. Android is an opposite – it does not offer extra good controls at the standard package, but a <a class="a-default" href="/android-parental-monitoring.html" >reliable parental app</a> like Pumpic saves the day.</p>
+        <p>If you look closer at iPhones and Androids, you will see that built-in parental controls for these two OS are implemented in a different way. As known, iPhones have better pre-installed features that include Family Sharing. But when it comes to broadening the features with control apps, you might come across troubles. Android is an opposite – it does not offer extra good controls at the standard package, but a <a class="a-default" href="/android-parental-monitoring/" >reliable parental app</a> like Pumpic saves the day.</p>
 		<p>One of the best choices to block apps on Android and iPhone is using a trusted parental control application. Such choice is the Pumpic app that has been on the market for a long time. It offers plenty of features that every parent can use to their liking. With Pumpic, you can keep an eye on all the applications installed on your kid’s phone. Blocking and setting time limits for apps would help controlling screen time easily as ABC.</p>
 
 {EndContent}

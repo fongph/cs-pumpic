@@ -50,7 +50,7 @@
                                         <svg width="22" height="22" class="features-icon vertical-center mr5">
                                             <use xlink:href="/images/svg-icons.svg#texts"></use>
                                         </svg>
-                                        <span onclick="window.location='/mobile-sms-spy.html'">Monitor SMS and MMS</span>
+                                        <span>Monitor SMS and MMS</span>
                                         <div class="os-label__wrapper">
                                             <div class="os-label label-black">
                                                 <i class="fa fa-apple"></i>IOS
@@ -64,7 +64,7 @@
                                         <svg width="22" height="21" class="features-icon vertical-center mr5">
                                             <use xlink:href="/images/svg-icons.svg#calls"></use>
                                         </svg>
-                                        {if !in_array('call-monitoring-software', $_notVisible)}<span onclick="window.location='/call-monitoring-software.html'">Monitor Calls History{else}Monitor Calls History{/if}
+                                        Monitor Calls History
                                         <div class="os-label__wrapper">
                                             <div class="os-label label-black">
                                                 <i class="fa fa-apple"></i>IOS
@@ -163,7 +163,7 @@
                                         <svg width="20" height="20" class="features-icon vertical-center mr5">
                                             <use xlink:href="/images/svg-icons.svg#browsers"></use>
                                         </svg>
-                                        <span onclick="window.location='/browser-parental-control.html'">Control Browser</span>
+                                        <span>Control Browser</span>
                                         <div class="os-label__wrapper">
                                             <div class="os-label label-black">
                                                 <i class="fa fa-apple"></i>IOS
@@ -238,7 +238,7 @@
                                         <svg width="22" height="22" class="features-icon vertical-center mr5">
                                             <use xlink:href="/images/svg-icons.svg#geo-fencing"></use>
                                         </svg>
-                                        {if !in_array('geo-fences', $_notVisible)}<span onclick="window.location='/gps-and-geofencing.html'">Geo-fences</span>{else}Geo-fences{/if}
+                                       Geo-fences
                                         <div class="os-label__wrapper">
                                             <div class="os-label label-green large">
                                                 <i class="fa fa-android"></i>
@@ -267,7 +267,7 @@
                                         <svg width="20" height="20" class="features-icon vertical-center mr5">
                                             <use xlink:href="/images/svg-icons.svg#chats"></use>
                                         </svg>
-                                        </i> <span onclick="window.location='/whatsapp-monitoring.html'">Monitor WhatsApp</span>
+                                        </i> <span>Monitor WhatsApp</span>
                                         <div class="os-label__wrapper">
                                             <div class="os-label label-black">
                                                 <i class="fa fa-apple"></i>IOS
@@ -281,7 +281,7 @@
                                         <svg width="20" height="20" class="features-icon vertical-center mr5">
                                             <use xlink:href="/images/svg-icons.svg#skype"></use>
                                         </svg>
-                                        <span onclick="window.location='/monitor-skype.html'">Monitor Skype</span>
+                                        <span>Monitor Skype</span>
                                         <div class="os-label__wrapper">
                                             <div class="os-label label-black">
                                                 <i class="fa fa-apple"></i>IOS
@@ -329,7 +329,7 @@
                                         <svg width="22" height="20" class="features-icon vertical-center mr5">
                                             <use xlink:href="/images/svg-icons.svg#kik"></use>
                                         </svg>
-                                        <span onclick="window.location='/monitor-kik-messenger.html'">Monitor Kik</span>
+                                        <span>Monitor Kik</span>
                                         <div class="os-label__wrapper">
                                             <div class="os-label label-black">
                                                 <i class="fa fa-apple"></i>IOS

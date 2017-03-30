@@ -3,22 +3,21 @@
     <p>{$description}</p>
 
     <ul class="table-container">
-        <li><i class="i-features-sms"></i><a class="no-link" href="/mobile-sms-spy.html">Monitor SMS
-                and MMS</a><i class="icon-apple"></i><i class="icon-android"></i></li>
-        <li><i class="i-features-browser"></i><a class="no-link" href="/browser-parental-control.html">Control
-                Browser</a><i class="icon-apple"></i><i class="icon-android">root&nbsp;</i></li>
-        <li><i class="i-features-monitor-viber-whatsapp"></i><a class="no-link"
-                                                                href="/whatsapp-monitoring.html">Monitor
-                WhatsApp</a><i class="icon-apple"></i><i class="icon-android">root&nbsp;</i></li>
-        <li><i class="i-features-cell-history"></i><a class="no-link" href="/call-monitoring-software.html">Monitor
-                Calls History</a><i class="icon-apple"></i><i class="icon-android"></i></li>
+        <li><i class="i-features-sms"></i> Monitor SMS
+                and MMS<i class="icon-apple"></i><i class="icon-android"></i></li>
+        <li><i class="i-features-browser"></i> Control
+                Browser<i class="icon-apple"></i><i class="icon-android">root&nbsp;</i></li>
+        <li><i class="i-features-monitor-viber-whatsapp"></i> Monitor
+                WhatsApp<i class="icon-apple"></i><i class="icon-android">root&nbsp;</i></li>
+        <li><i class="i-features-cell-history"></i>Monitor
+                Calls History<i class="icon-apple"></i><i class="icon-android"></i></li>
         <li><i class="i-features-app"></i><a class="no-link" href="/block-apps.html">Control
                 Applications</a><i class="icon-android"></i></li>
-        <li><i class="i-features-monitor-skype"></i><a class="no-link" href="/monitor-skype.html">Monitor
-                Skype</a><i class="icon-apple"></i><i class="icon-android">root&nbsp;</i></li>
-        <li><i class="i-features-calendar"></i><a class="no-link" href="/call-monitoring-software.html"> View
+        <li><i class="i-features-monitor-skype"></i> Monitor
+                Skype<i class="icon-apple"></i><i class="icon-android">root&nbsp;</i></li>
+        <li><i class="i-features-calendar"></i> View
                 Calendar
-            </a><i class="icon-apple"></i><i class="icon-android"></i></li>
+            <i class="icon-apple"></i><i class="icon-android"></i></li>
         <li><i class="i-features-view-bookmarks"></i>View Bookmarks<i class="icon-apple"></i><i
                     class="icon-android">root&nbsp;</i></li>
         <li><i class="i-features-social"></i>Monitor Facebook IM<i class="icon-android">root&nbsp;</i></li>
@@ -48,8 +47,7 @@
                 Snapchat</a><i class="icon-android">root&nbsp;</i></li>
         <li><i class="i-features-remote-activity-control-v2"></i>Remote Control Panel<i
                     class="icon-apple"></i><i class="icon-android"></i></li>
-        <li><i class="i-features-geo-fences"></i><a class="no-link"
-                                                    href="/gps-and-geofencing.html">Geo-fences</a><i
+        <li><i class="i-features-geo-fences"></i> Geo-fences<i
                     class="icon-android"></i></li>
         <li><i class="i-features-sms-commands"></i>SMS Commands<i class="icon-android"></i></li>
     </ul>

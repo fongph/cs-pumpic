@@ -1,7 +1,7 @@
 <!doctype html>
 <html amp>
 <head>
-    <title>Ultimate iPhone Parental Control App for Apple iOS</title>
+    <title>Ultimate Android Parental Control App | Pumpic Monitoring Software</title>
     <meta charset="utf-8">
     <link rel="canonical" href="{$schema}pumpic.com/android-parental-monitoring/">
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
@@ -120,19 +120,22 @@
             <div class="amp">
                     <div id="grid-images" class="row">
                         <div class="col-s-sm-12"><h2 class="h2 text-center">Did You Know?</h2>
-                            <div class="pt30"><p> Using Android monitoring software to protect kids is an urgent necessity of the contemporary society. On one hand, technological progress has opened new doors for the evolution of humanity; on the other one, it has resulted in many dangers in return. And children are exposed to these risks much more than others. That’s why if handing them smartphones or tablets, you should know how to protect their mobile activities.</p>
+                            <div class="pt30">
+                                <amp-img class="lc-1 img-align-left" height="95" width="100" layout="fixed" src="{$img}/landings/android-parental-monitoring-icon1.png"title="Track kids' smartphones and tablets on Android" alt="Android devices monitoring"></amp-img>
+                                <p>Using Android monitoring software to protect kids is an urgent necessity of the contemporary society. On one hand, technological progress has opened new doors for the evolution of humanity; on the other one, it has resulted in many dangers in return. And children are exposed to these risks much more than others. That’s why if handing them smartphones or tablets, you should know how to protect their mobile activities.</p>
                                 <p>Parental control apps allow you to monitor kids' pastime, restrict misgiving communication, and limit device usage. Pumpic proved to be among the most reliable applications for child safety. With it, you will always know what your kids are texting, who calls them, which websites they visit, as well as any content they see, send, or receive. You will always know where your children go and be notified as soon as they enter any restricted areas or leave safety zones (home, school, etc.) without your permission. Android parental monitoring by Pumpic will let you have no worries about your loved ones when you are not nearby.</p>
+                                <p>The brief statistics below show how many children use smartphones and tablets as well as how many of them come across dangers related to these devices usage. These figures indicate that with time the significance of <a class="a-default" href="/android-tablet-parental-control.html">Android tablet parental control</a> and smartphone monitoring software will only be rising.</p>
                                 <table class="table">
                                     <tbody>
                                     <tr>
-                                        <th class="color-orange">44%</th>
-                                        <th class="color-orange">14%</th>
-                                        <th class="color-orange">11%</th>
+                                        <th class="color-orange">72%</th>
+                                        <th class="color-orange">23%</th>
+                                        <th class="color-orange">69%</th>
                                     </tr>
                                     <tr>
-                                        <td>lost iPhones were simply left in public places</td>
-                                        <td>stolen Apple devices were taken from a house or car</td>
-                                        <td>all stolen iOS smartphones were pickpocketed</td>
+                                        <td>hildren worldwide use smartphones, 33% of them are under 8 years old</td>
+                                        <td>teenagers report that they feel addicted to games on mobile devices</td>
+                                        <td>boys and girls under 18 have experienced cyberbullying on mobile phones</td>
                                     </tr>
                                     </tbody>
                                 </table>
@@ -155,6 +158,8 @@
                         <p>Hence, knowing what exactly they use their devices for is crucial to ensure the most
                             effective protection from apparent and hidden perils. Here are top-3 daily smartphone uses
                             by kids that parents should pay closer attention to:</p>
+                        <div class="clearfix">
+                        <amp-img class="lc-1 img-align-right" height="95" width="100" layout="fixed" src="{$img}/landings/android-parental-monitoring-icon2.png" style="margin-top: -10px;" title="Kids use smartphones and tablets mostly for texting" alt="Texting on a smartphone"></amp-img>
                         <ul class="list-default">
                             <li><strong>Texting.</strong>
                                 55% of teens communicate via text messages every single day. It is clearly the dominant
@@ -170,12 +175,8 @@
                                 where teens receive support from others during tough times.
                             </li>
                         </ul>
-                        <p>Considering the data above, the simple logic will make it pretty clear that most cyber
-                            dangers kids face come from the most popular device usage practices. That’s why concerned
-                            parents should consider monitoring their children smartphones and tablets and pay the
-                            paramount attention to text communication. Thankfully, Pumpic monitoring software provides
-                            exhaustive opportunity to keep an eye on with whom your kid interacts and what is he or she
-                            up to. Thus, preventing the child from any wrongdoing becomes a mere matter of skills.</p>
+                        </div>
+                        <p>Considering the data above, the simple logic will make it pretty clear that most cyber dangers kids face come from the most popular device usage practices. That’s why concerned parents should consider utilizing <a class="a-default" href="/android-phone-child-tracking-software.html">Android phone tracking software for children</a> and pay the paramount attention to text communication. Thankfully, Pumpic monitoring software provides exhaustive opportunity to keep an eye on with whom your kid interacts and what is he or she up to. Thus, preventing the child from any wrongdoing becomes a mere matter of skills.</p>
                         <p>At the same time, monitoring software is just a supplementary tool to facilitate your
                             parental duties. Hence, we urge you to have a frank talk to your little ones about dangers
                             and pitfalls they may encounter when being online. Read more about the most widespread
@@ -283,81 +284,75 @@
             </div>
         </div>
 
-        <div id="block-content" class="dark">
+        <div id="block-content" class="light col-sm-12">
             <div class="amp">
                 <div class="row">
-                    <div class="col-sm-12"><h2 class="h3 text-center">Over 24 Monitoring Features to Protect Your Kids</h2>
-                        <p>Mobile technologies have introduced new opportunities to our children. It is rather hard to imagine the entire range of functions a single smartphone can fulfill. That’s why when it comes to features that an Android monitoring software should include, it is crucial to consider as many as possible. The list below reflects Pumpic monitoring abilities and particular mobile phone functions you will be able to cover by using the app. They will help you follow each and every aspect of your kids’ lives and all of their activities remotely.</p>
-
-                        <ul class="table-container">
-                            <li><i class="i-features-sms"></i><a class="no-link" href="/mobile-sms-spy.html">Monitor SMS
-                                    and MMS</a><i class="icon-apple"></i><i class="icon-android"></i></li>
-                            <li><i class="i-features-browser"></i><a class="no-link"
-                                                                     href="/browser-parental-control.html">Control
-                                    Browser</a><i class="icon-apple"></i><i class="icon-android">root&nbsp;</i></li>
-                            <li><i class="i-features-monitor-viber-whatsapp"></i><a class="no-link"
-                                                                                    href="/whatsapp-monitoring.html">Monitor
-                                    WhatsApp</a><i class="icon-apple"></i><i class="icon-android">root&nbsp;</i></li>
-                            <li><i class="i-features-cell-history"></i><a class="no-link"
-                                                                          href="/call-monitoring-software.html">Monitor
-                                    Calls History</a><i class="icon-apple"></i><i class="icon-android"></i></li>
-                            <li><i class="i-features-app"></i><a class="no-link" href="/block-apps.html">Control
-                                    Applications</a><i class="icon-android"></i></li>
-                            <li><i class="i-features-monitor-skype"></i><a class="no-link" href="/monitor-skype.html">Monitor
-                                    Skype</a><i class="icon-apple"></i><i class="icon-android">root&nbsp;</i></li>
-                            <li><i class="i-features-calendar"></i><a class="no-link"
-                                                                      href="/call-monitoring-software.html"> View
-                                    Calendar
-                                </a><i class="icon-apple"></i><i class="icon-android"></i></li>
-                            <li><i class="i-features-view-bookmarks"></i>View Bookmarks<i class="icon-apple"></i><i
-                                        class="icon-android">root&nbsp;</i></li>
-                            <li><i class="i-features-social"></i>Monitor Facebook IM<i
-                                        class="icon-android">root&nbsp;</i></li>
-                            <li><i class="i-features-contacts"></i><a class="no-link"
-                                                                      href="/monitor-phone-contacts.html">View
-                                    Contacts<i class="icon-apple"></i><i class="icon-android"></i></a></li>
-                            <li><i class="i-features-view-notes"></i>View Notes<i class="icon-apple"></i></li>
-                            <li><i class="i-features-monitor-viber-whatsapp"></i><a class="no-link"
-                                                                                    href="/monitor-viber.html">Monitor
-                                    Viber</a><i class="icon-android">root&nbsp;</i></li>
-                        </ul>
-                        <ul class="table-container">
-                            <li><i class="i-features-email"></i><a class="no-link"
-                                                                   href="/email-monitoring-software.html">View
-                                    Emails</a><i class="icon-android">root&nbsp;</i></li>
-                            <li><i class="i-features-block-device"></i>Block Device<i class="icon-android"></i></li>
-                            <li><i class="i-features-monitor-instagram"></i><a class="no-link"
-                                                                               href="/parental-control-for-instagram.html">Monitor
-                                    Instagram</a><i class="icon-android">root&nbsp;</i></li>
-                            <li><i class="i-features-photos"></i>View Photos<i class="icon-apple"></i><i
-                                        class="icon-android"></i></li>
-                            <li><i class="i-features-location"></i><a class="no-link"
-                                                                      href="/child-location-tracking.html">Location
-                                    Tracking</a><i class="icon-apple"></i><i class="icon-android"></i></li>
-                            <li><i class="i-features-kik-chat"></i>Monitor Kik<i class="icon-apple"></i><i
-                                        class="icon-android">root&nbsp;</i></li>
-                            <li><i class="i-features-videocam"></i>View Videos<i class="icon-android"></i></li>
-                            <li><i class="i-features-keyloger"></i><a class="no-link" href="/keylogging-software.html">Keylogger</a><i
-                                        class="icon-android"></i></li>
-                            <li><i class="i-features-monitor-snapchat"></i><a class="no-link"
-                                                                              href="/monitor-snapchat.html">Monitor
-                                    Snapchat</a><i class="icon-android">root&nbsp;</i></li>
-                            <li><i class="i-features-remote-activity-control-v2"></i>Remote Control Panel<i
-                                        class="icon-apple"></i><i class="icon-android"></i></li>
-                            <li><i class="i-features-geo-fences"></i><a class="no-link" href="/gps-and-geofencing.html">Geo-fences</a><i
-                                        class="icon-android"></i></li>
-                            <li><i class="i-features-sms-commands"></i>SMS Commands<i class="icon-android"></i></li>
-                        </ul>
-                        <div class="text-center features-btngroup"><a href="/all-features.html#android" class="btn btn-gree"
-                                                                      rel="nofollow" id="all-features-link">All
-                                Features</a> <a href="/store.html#android" class="btn btn-default" id="store-link"
-                                                rel="nofollow">Start Monitoring</a></div>
+                    <div class="col-sm-12"><h2 class="h2 text-center">Ethical Issues of Parental Monitoring</h2>
+                        <amp-img class="lc-1 img-align-left" height="95" width="100" layout="fixed" src="{$img}/landings/android-parental-monitoring-icon3.png" title="Ethical monitoring is better than snooping" alt="Monitoring or spying"></amp-img>
+                        <p>Mobile technologies have introduced new opportunities to our children. It is rather hard to imagine the entire range of functions a single smartphone can fulfill. That’s why when it comes to features that an Android surveillance software should include, it is crucial to consider as many as possible. Pumpic's monitoring abilities and particular mobile phone functions will help you follow each and every aspect of your kids’ lives and all of their activities remotely.</p>
+                        <p>Another aspect to consider when it comes to digital kids monitoring is the approach to the ethical side of the issue. On the one hand, parents can choose to surveil their child covertly; stated another way, they will obviously choose from some of the <a class="a-default" href="/best-spying-apps-for-android.html">best spying apps for Android</a> and snoop on their kids secretly. On the other hand, there is an ethical tracking when the kid is warned that he or she is being watched and certain rules of online behavior are agreed on with the child. In this <a class="a-default" href="/spy-apps-vs-parental-monitoring.html">rivalry between the spyware and parental monitoring apps</a>, Pumpic holds the view that the latter path is highly preferable. That's why our app for Android is visible on the target device. Check out all of Pumpic's features in the table below.</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+
+        {include file='../../../includes/amp/features-table.tpl'
+        header='Over 24 Monitoring Features to Protect Your Kids'
+        description=''
+            theme='dark'
+        }
 
     </div>
+
+
+    <div id="block-content" class="light">
+<h2 class="h2 text-center">All-Round Protection from Online and Offline Dangers</h2>
+                <div class="col-sm-12"><p>Eventually, making use of mobile monitoring apps like
+                        Pumpic is arguably the most effortless way of keeping tabs on your children's Internet activity
+                        on their gadgets. To make their kids' web experience as safe as possible, parents are enabled to
+                        check browsing history, bookmarks, block websites, and <a class="a-default"
+                                                                                  href="/best-internet-filter-for-android.html">filter
+                            content</a> that they consider to be inappropriate and objectionable. But it's not only the
+                        online pastime that you can take charge of thanks to Pumpic. With its built-in parental control
+                        features and location tracking function, you can:</p>
+                    <div><amo-img class="lc-1 img-align-right" height="95" width="100" layout="fixed" src="/images/landings/android-parental-monitoring-icon4.png"
+                              title="Protect kids online and offline" alt="All-round child protection">
+                        <ul class="list-images">
+                            <li><strong>Block
+                                    texts and calls.</strong> When you want to prevent undesired cell phone
+                                conversations of your kid, just add the corresponding phone number to the stop-list. In
+                                case with <a class="a-default" href="/how-to-block-texts-on-android.html">blocking text
+                                    messages</a>, you can also suspend SMS with any words of your choice.
+                            </li>
+                            <li><strong>Limit
+                                    or lock apps.</strong> Pumpic enables parents to remotely manage preinstalled and
+                                downloaded apps on kid's Android device. You can either limit the app's time of daily
+                                usage or <a class="a-default" href="/how-to-lock-apps-on-android.html">block
+                                    inappropriate apps</a> entirely – all right from the Control Panel dashboard.
+                            </li>
+                            <li><strong>Check
+                                    out every keystroke.</strong> A keylogger is a special software that lets parents
+                                see which buttons were pressed or tapped inside any app during a particular period. <a
+                                        class="a-default" href="/android-keylogger.html">Keylogger for Android</a>
+                                allows to inspect what was typed in text messages, chats, social media or registration
+                                forms.
+                            </li>
+                            <li><strong>Track
+                                    location of family members.</strong> The popularity of <a class="a-default"
+                                                                                              href="/android-family-tracker.html">family
+                                    tracking devices</a> made location tracking feature one of the most demanded
+                                features for any parental app. In Pumpic, this functionality is very reliable. Moreover,
+                                it's enhanced with the geofencing that allows to set safe and restricted areas for kids.
+                            </li>
+                        </ul>
+                    </div>
+                    <p>As you can see, Pumpic takes care not only of the online aspect of your kid's safety, but also
+                        the offline providing the all-round protection for the child and peace of mind for the parents.
+                        At the same time, no monitoring or security app cannot do for your kid what you must do as a
+                        parent – provide warmth and guidance. That's why we urge you to always be there for your little
+                        ones and talk to them openly and sincerely.</p></div>
+    </div>
+
 
     <div class="clearfix"></div>
     {include file='../../../includes/amp/buy-now-banner.tpl'}
@@ -366,86 +361,7 @@
 
     {include file='../../../includes/amp/few-quick-links.tpl' theme='light'}
 
-    <footer class="footer-background dark">
-        <div class="col-sm-4">
-            <h3>DISCLAIMER</h3>
-            <p>Pumpic is a unique parental control tracking application for iOS and Android mobile phones and tablets. It is for ethical and legal use only. To install the tracking app, one should assure that he or she owns the device before installation, or has obtained the owner’s permission to track his or her device.</p>
-
-        </div>
-        <div class="col-sm-4">
-            <div>
-                <h3>COMPANY</h3>
-                <ul class="p0">
-                    <li>
-                        <a href="/policy.html">Legal Policies</a>
-                    </li>
-
-                    <li>
-                        <a href="/security/">Child Security Blog</a>
-                    </li>
-
-                </ul>
-            </div>
-            <div>
-                <h3>USEFUL INFO</h3>
-                <ul class="p0">
-                    <li>
-                        <a href="/how-to-monitor-social-networks.html">How to Monitor Social Networks</a>
-                    </li>
-                    <li>
-                        <a href="/infographics/">Pumpic Mobile Infographics</a>
-                    </li>
-                    <li>
-                        <a href="/reviews/">Best Mobile Trackers</a>
-                    </li>
-                    <li>
-                        <a href="/cell-phones-for-kids.html">Cell Phones for Kids</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="col-sm-4">
-            <h3>OUR PRODUCTS</h3>
-            <ul class="p0">
-                <li>
-                    <a href="/android-parental-monitoring.html">Android Parental Control</a>
-                </li>
-                <li>
-                    <a href="/iphone-parental-monitoring.html">iPhone Parental Control</a>
-                </li>
-                <li>
-                    <a href="/iphone-tracking-software.html">iPhone Tracking Software</a>
-                </li>
-                <li>
-                    <a href="/gps-wireless-tracking-phone.html">Wireless Phone Tracking</a>
-                </li>
-
-                <li>
-                    <a href="/ipad-parental-control.html">iPad Parental Control</a>
-                </li>
-                <li>
-                    <a href="/ipod-parental-control.html">iPod Parental Controls</a>
-                </li>
-                <li>
-                    <a href="/android-tablet-parental-control.html">Android Tablet Parental Control</a>
-                </li>
-                <li>
-                    <a href="/limitly-parental-app/">Screen Time Parental Control App</a>
-                </li>
-            </ul>
-        </div>
-        <div class="col-sm-10col-sm-offset-1">
-            <div class="share">
-                <ul class="box-socials clearfix">
-                    <li><a href="https://www.facebook.com/pumpicapp/" target="_blank" class="icons-social i-fb"></a></li>
-                    <li><a href="https://twitter.com/pumpic_com" target="_blank" class="icons-social i-tw"></a></li>
-                    <li><a href="https://www.youtube.com/user/pumpicapp" target="_blank" class="icons-social i-youtube"></a></li>
-                    <li><a href="https://plus.google.com/+Pumpic_com" target="_blank" class="icons-social i-google"></a></li>
-                </ul>
-
-            </div>
-        </div>
-    </footer>
+    {include file='../../../includes/amp/footer.tpl' theme='dark'}
 
 </main>
 {literal}

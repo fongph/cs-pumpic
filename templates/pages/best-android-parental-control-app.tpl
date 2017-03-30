@@ -252,7 +252,7 @@
 
     {include file='../includes/content/features-table-new.tpl'
         title = "Pumpic Is More than 24 Monitoring Features "
-        description = "Pumpic stands out among other Android parental control apps thanks to a large variety of useful features and smooth monitoring process. The application covers all spheres of your children’s lives. Thus, you can protect them both online and during daily activities with <a class='a-default' href='/android-parental-monitoring.html'>Pumpic parental monitoring for Android</a>."
+        description = "Pumpic stands out among other Android parental control apps thanks to a large variety of useful features and smooth monitoring process. The application covers all spheres of your children’s lives. Thus, you can protect them both online and during daily activities with <a class='a-default' href='/android-parental-monitoring/'>Pumpic parental monitoring for Android</a>."
         blockBg="light"
         android = "yes"
         storeLinkText = "Go to Store"

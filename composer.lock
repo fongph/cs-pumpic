@@ -39,7 +39,7 @@
             "source": {
                 "type": "git",
                 "url": "git@gitlab.dizboard.com:pumpic/cs-mail.git",
-                "reference": "0958865193d4c7d6f7892df7de678f450990a48e"
+                "reference": "726c9c20566357c3a8e38cfb5735028a7cbc06e4"
             },
             "require": {
                 "guzzlehttp/guzzle": "~5.0",
@@ -57,7 +57,7 @@
             "license": [
                 "MIT"
             ],
-            "time": "2017-03-15 08:18:14"
+            "time": "2017-03-23 08:30:34"
         },
         {
             "name": "boomers/cs-models",
@@ -65,7 +65,7 @@
             "source": {
                 "type": "git",
                 "url": "git@gitlab.dizboard.com:pumpic/cs-models.git",
-                "reference": "4af9f13a1a5dc9a8ac5ae78314cfb16c0010970a"
+                "reference": "1e498b74d78b83669f57d828e60b542bbe8824dd"
             },
             "require": {
                 "php": ">=5.4.0"
@@ -79,7 +79,7 @@
                     "CS\\Models\\": "src/"
                 }
             },
-            "time": "2017-03-15 08:20:13"
+            "time": "2017-03-16 14:10:09"
         },
         {
             "name": "boomers/cs-settings",
@@ -106,7 +106,7 @@
             "source": {
                 "type": "git",
                 "url": "git@gitlab.dizboard.com:pumpic/cs-users.git",
-                "reference": "26d7fd6d667093a13cd20e69681d7ab9f97ba458"
+                "reference": "c5e75f79805febc71df3d455f340d9d90ffea771"
             },
             "require": {
                 "boomers/cs-mail": "dev-master",
@@ -129,7 +129,7 @@
             "license": [
                 "MIT"
             ],
-            "time": "2017-02-13 09:35:12"
+            "time": "2017-03-16 17:32:03"
         },
         {
             "name": "boomers/ip",
@@ -389,24 +389,22 @@
         },
         {
             "name": "mobiledetect/mobiledetectlib",
-            "version": "2.8.24",
+            "version": "2.8.25",
             "source": {
                 "type": "git",
                 "url": "https://github.com/serbanghita/Mobile-Detect.git",
-                "reference": "cdf8f8efaf993bc687e78e4622f5eebd0b8b3bf3"
+                "reference": "f0896b5c7274d1450023b0b376240be902c3251c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/serbanghita/Mobile-Detect/zipball/cdf8f8efaf993bc687e78e4622f5eebd0b8b3bf3",
-                "reference": "cdf8f8efaf993bc687e78e4622f5eebd0b8b3bf3",
+                "url": "https://api.github.com/repos/serbanghita/Mobile-Detect/zipball/f0896b5c7274d1450023b0b376240be902c3251c",
+                "reference": "f0896b5c7274d1450023b0b376240be902c3251c",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.0.0"
             },
             "require-dev": {
-                "codeclimate/php-test-reporter": "dev-master",
-                "johnkary/phpunit-speedtrap": "~1.0@dev",
                 "phpunit/phpunit": "*"
             },
             "type": "library",
@@ -439,7 +437,7 @@
                 "mobile detector",
                 "php mobile detect"
             ],
-            "time": "2016-11-11T14:56:25+00:00"
+            "time": "2017-03-29T13:59:30+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -816,20 +814,23 @@
         },
         {
             "name": "react/promise",
-            "version": "v2.5.0",
+            "version": "v2.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/reactphp/promise.git",
-                "reference": "2760f3898b7e931aa71153852dcd48a75c9b95db"
+                "reference": "62785ae604c8d69725d693eb370e1d67e94c4053"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/reactphp/promise/zipball/2760f3898b7e931aa71153852dcd48a75c9b95db",
-                "reference": "2760f3898b7e931aa71153852dcd48a75c9b95db",
+                "url": "https://api.github.com/repos/reactphp/promise/zipball/62785ae604c8d69725d693eb370e1d67e94c4053",
+                "reference": "62785ae604c8d69725d693eb370e1d67e94c4053",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.8"
             },
             "type": "library",
             "autoload": {
@@ -855,7 +856,7 @@
                 "promise",
                 "promises"
             ],
-            "time": "2016-12-22T14:09:01+00:00"
+            "time": "2017-03-25T12:08:31+00:00"
         },
         {
             "name": "swarrot/swarrot",

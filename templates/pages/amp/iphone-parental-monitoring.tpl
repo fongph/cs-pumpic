@@ -134,23 +134,17 @@
 
                                                 <div>
                                                     <form name="price_amp" method="POST" target="_top" action-xhr="//{$domain}/amp/iphone-parental-monitoring.html" class="buy-form-with-offer" autocomplete="off">
-                                                        {foreach from=$getProducts.iosiCloud key=key item=item}
+                                                        {$product = $getProducts }
                                                         <section class="vertical-aligh-middle">
-                                                        {if $ABtest == 'ABtest-1'}
-
-                                                        <a href="/buy.html?productID={$item.id}" class="btn btn-default" id="view-pricing-link">Buy Now - $29,95/mo</a>
+                                                        {if $ABtest == 'ABtest-2'}
+                                                        <a href="/buy.html?productID={$product.id}" class="btn btn-default btn-arrow" id="view-pricing-link">Buy Now - $43,99</a>
                                                     </section>
-                                                        <div class="button-descr">Old price: <span>$40,00/mo</span></div>
-                                                        {elseif $ABtest == 'ABtest-2'}
-                                                        <a href="/buy.html?productID={$item.id}" class="btn btn-default btn-arrow" id="view-pricing-link">Buy Now - $29,95</a>
-                                                    </section>
-                                                        <div class="button-descr">1 month subscription</div>
+                                                        <div class="button-descr">3 month subscription</div>
                                                         {else}
-                                                        <a class="btn btn-default" href="/buy.html?productID={$item.id}" id="view-pricing-link">View Pricing</a>
+                                                        <a class="btn btn-default" href="/buy.html?productID={$product.id}" id="view-pricing-link">View Pricing</a>
                                                     </section>
 
                                                         {/if}
-                                                        {/foreach}
 
                                                     </form>
                                                 </div>
@@ -248,94 +242,11 @@
                 </div>
             </div>
         </div>
-        <div id="block-content" class="dark">
-            <div class="amp">
-                <div class="row">
-                        <div class="col-lg-12 col-md-12 col-sm-12">
-                            <h2 class="h3 text-center">Parental Control Features by Pumpic</h2>
-                                <p>Your children live their full lives, and mobile devices help them explore the world around. Photo and video shooting, remote communication, emailing, gaming, and social connections are some of the options these gadgets provide. Pumpic covers all spheres of your kids’ activity and enables you to take care of them remotely. The features listed below show the variety of iPhone parental control abilities, which will let you secure your children’s well-being.</p>
-
-                            <table>
-                                <tbody>
-                                <tr>
-                                    <td colspan="3">&nbsp;&nbsp;&nbsp;</td>
-                                </tr>
-                                </tbody>
-                                </table>
-                                <ul class="table-container">
-                                    <li><i class="i-features-sms"></i><a class="no-link"
-                                                href="/mobile-sms-spy.html">Monitor SMS and MMS</a><i
-                                                class="icon-apple"></i><i class="icon-android"></i></li>
-                                    <li><i class="i-features-browser"></i><a class="no-link"
-                                                href="/browser-parental-control.html">Control Browser</a><i
-                                                class="icon-apple"></i><i class="icon-android">root&nbsp;</i></li>
-                                    <li><i class="i-features-monitor-viber-whatsapp"></i><a class="no-link"
-                                                href="/whatsapp-monitoring.html">Monitor WhatsApp</a><i
-                                                class="icon-apple"></i><i class="icon-android">root&nbsp;</i></li>
-                                    <li><i class="i-features-cell-history"></i><a class="no-link"
-                                                href="/call-monitoring-software.html">Monitor Calls History</a><i
-                                                class="icon-apple"></i><i class="icon-android"></i></li>
-                                    <li><i class="i-features-app"></i><a class="no-link"
-                                                href="/block-apps.html">Control Applications</a><i
-                                                class="icon-android"></i></li>
-                                    <li><i class="i-features-monitor-skype"></i><a class="no-link"
-                                                href="/monitor-skype.html">Monitor Skype</a><i
-                                                class="icon-apple"></i><i class="icon-android">root&nbsp;</i></li>
-                                    <li><i class="i-features-calendar"></i><a class="no-link"
-                                                href="/call-monitoring-software.html"> View Calendar
-                                        </a><i class="icon-apple"></i><i class="icon-android"></i></li>
-                                    <li><i class="i-features-view-bookmarks"></i>View Bookmarks<i
-                                                class="icon-apple"></i><i class="icon-android">root&nbsp;</i></li>
-                                    <li><i class="i-features-social"></i>Monitor Facebook IM<i class="icon-android">root&nbsp;</i>
-                                    </li>
-                                    <li><i class="i-features-contacts"></i><a class="no-link"
-                                                href="/monitor-phone-contacts.html">View Contacts<i
-                                                    class="icon-apple"></i><i class="icon-android"></i></a></li>
-                                    <li><i class="i-features-view-notes"></i>View Notes<i class="icon-apple"></i></li>
-                                    <li><i class="i-features-monitor-viber-whatsapp"></i><a class="no-link"
-                                                href="/monitor-viber.html">Monitor Viber</a><i
-                                                class="icon-android">root&nbsp;</i></li>
-                                </ul>
-                                <ul class="table-container">
-                                    <li><i class="i-features-email"></i><a class="no-link"
-                                                href="/email-monitoring-software.html">View Emails</a><i
-                                                class="icon-android">root&nbsp;</i></li>
-                                    <li><i class="i-features-block-device"></i>Block Device<i class="icon-android"></i>
-                                    </li>
-                                    <li><i class="i-features-monitor-instagram"></i><a class="no-link"
-                                                href="/parental-control-for-instagram.html">Monitor Instagram</a><i
-                                                class="icon-android">root&nbsp;</i></li>
-                                    <li><i class="i-features-photos"></i>View Photos<i class="icon-apple"></i><i
-                                                class="icon-android"></i></li>
-                                    <li><i class="i-features-location"></i><a class="no-link"
-                                                href="/child-location-tracking.html">Location Tracking</a><i
-                                                class="icon-apple"></i><i class="icon-android"></i></li>
-                                    <li><i class="i-features-kik-chat"></i>Monitor Kik<i class="icon-apple"></i><i
-                                                class="icon-android">root&nbsp;</i></li>
-                                    <li><i class="i-features-videocam"></i>View Videos<i class="icon-android"></i></li>
-                                    <li><i class="i-features-keyloger"></i><a class="no-link"
-                                                href="/keylogging-software.html">Keylogger</a><i
-                                                class="icon-android"></i></li>
-                                    <li><i class="i-features-monitor-snapchat"></i><a class="no-link"
-                                                href="/monitor-snapchat.html">Monitor Snapchat</a><i
-                                                class="icon-android">root&nbsp;</i></li>
-                                    <li><i class="i-features-remote-activity-control-v2"></i>Remote Control Panel<i
-                                                class="icon-apple"></i><i class="icon-android"></i></li>
-                                    <li><i class="i-features-geo-fences"></i><a class="no-link"
-                                                href="/gps-and-geofencing.html">Geo-fences</a><i
-                                                class="icon-android"></i></li>
-                                    <li><i class="i-features-sms-commands"></i>SMS Commands<i class="icon-android"></i>
-                                    </li>
-                                </ul>
-                            <div class="text-center features-btngroup">
-                                <a href="/all-features.html" class="btn btn-gree" rel="nofollow" id="all-features-link">All Features</a>
-                                <a href="/store.html" class="btn btn-default" id="store-link" rel="nofollow">Start Monitoring</a>
-                            </div>
-
-                        </div>
-                </div>
-            </div>
-        </div>
+    {include file='../../includes/amp/features-table.tpl'
+        theme='dark'
+        header='Parental Control Features by Pumpic'
+        description='Your children live their full lives, and mobile devices help them explore the world around. Photo and video shooting, remote communication, emailing, gaming, and social connections are some of the options these gadgets provide. Pumpic covers all spheres of your kids’ activity and enables you to take care of them remotely. The features listed below show the variety of iPhone parental control abilities, which will let you secure your children’s well-being.'
+    }
 
         <div id="block-content" class="light">
             <div class="amp"><div class="row">
@@ -484,86 +395,7 @@
 
     {include file='../../includes/amp/few-quick-links.tpl' theme='light'}
 
-        <footer class="footer-background dark">
-            <div class="col-sm-4">
-                <h3>DISCLAIMER</h3>
-                <p>Pumpic is a unique parental control tracking application for iOS and Android mobile phones and tablets. It is for ethical and legal use only. To install the tracking app, one should assure that he or she owns the device before installation, or has obtained the owner’s permission to track his or her device.</p>
-
-            </div>
-            <div class="col-sm-4">
-                <div>
-                    <h3>COMPANY</h3>
-                    <ul class="p0">
-                        <li>
-                            <a href="/policy.html">Legal Policies</a>
-                        </li>
-
-                        <li>
-                            <a href="/security/">Child Security Blog</a>
-                        </li>
-
-                    </ul>
-                </div>
-                <div>
-                    <h3>USEFUL INFO</h3>
-                    <ul class="p0">
-                        <li>
-                            <a href="/how-to-monitor-social-networks.html">How to Monitor Social Networks</a>
-                        </li>
-                        <li>
-                            <a href="/infographics/">Pumpic Mobile Infographics</a>
-                        </li>
-                        <li>
-                            <a href="/reviews/">Best Mobile Trackers</a>
-                        </li>
-                        <li>
-                            <a href="/cell-phones-for-kids.html">Cell Phones for Kids</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <h3>OUR PRODUCTS</h3>
-                <ul class="p0">
-                    <li>
-                        <a href="/android-parental-monitoring.html">Android Parental Control</a>
-                    </li>
-                    <li>
-                        <a href="/iphone-parental-monitoring.html">iPhone Parental Control</a>
-                    </li>
-                    <li>
-                        <a href="/iphone-tracking-software.html">iPhone Tracking Software</a>
-                    </li>
-                    <li>
-                        <a href="/gps-wireless-tracking-phone.html">Wireless Phone Tracking</a>
-                    </li>
-
-                    <li>
-                        <a href="/ipad-parental-control.html">iPad Parental Control</a>
-                    </li>
-                    <li>
-                        <a href="/ipod-parental-control.html">iPod Parental Controls</a>
-                    </li>
-                    <li>
-                        <a href="/android-tablet-parental-control.html">Android Tablet Parental Control</a>
-                    </li>
-                    <li>
-                        <a href="/limitly-parental-app/">Screen Time Parental Control App</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-sm-10col-sm-offset-1">
-                <div class="share">
-                    <ul class="box-socials clearfix">
-                        <li><a href="https://www.facebook.com/pumpicapp/" target="_blank" class="icons-social i-fb"></a></li>
-                        <li><a href="https://twitter.com/pumpic_com" target="_blank" class="icons-social i-tw"></a></li>
-                        <li><a href="https://www.youtube.com/user/pumpicapp" target="_blank" class="icons-social i-youtube"></a></li>
-                        <li><a href="https://plus.google.com/+Pumpic_com" target="_blank" class="icons-social i-google"></a></li>
-                    </ul>
-
-                </div>
-            </div>
-        </footer>
+    {include file='../../includes/amp/footer.tpl' theme='dark'}
 
 </main>
 {if $ABtest == 'ABtest-1'}

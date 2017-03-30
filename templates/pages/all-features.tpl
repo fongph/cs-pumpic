@@ -861,7 +861,7 @@
 
                                         <li>
 
-                                            <svg width="25" height="25" class="features-icon i-list-features-svg">
+                                            <svg width="25" height="25" style="width:25px;" class="features-icon i-list-features-svg">
                                                 <use xlink:href="/images/svg-icons.svg#bookmarks"></use>
                                             </svg>
                                             <strong>Bookmarks</strong></li>
@@ -918,11 +918,11 @@
                                 <div class='feature-item-info'>
                                     <ul>
                                         <li>
-                                            <svg width="25" height="25" class="features-icon i-list-features-svg only-mobile">
+                                            <svg width="25" height="25" style="width:25px;" class="features-icon i-list-features-svg only-mobile">
                                                 <use xlink:href="/images/svg-icons.svg#photos"></use>
                                             </svg>
                                             <strong>Photos</strong>
-                                            <svg width="25" height="25" class="features-icon i-list-features-svg only-pc">
+                                            <svg width="25" height="25" style="width:25px;" class="features-icon i-list-features-svg only-pc">
                                                 <use xlink:href="/images/svg-icons.svg#photos"></use>
                                             </svg>
                                         </li>
@@ -1043,13 +1043,13 @@
                                 <div class='feature-item-info'>
                                     <ul>
                                         <li>
-                                            <svg width="25" height="25" class="features-icon i-list-features-svg">
+                                            <svg width="25" height="25" style="width:25px;" class="features-icon i-list-features-svg">
                                                 <use xlink:href="/images/svg-icons.svg#calendar"></use>
                                             </svg>
                                             <strong>Calendar</strong>
                                         </li>
                                         <li>
-                                            <svg width="25" height="25" class="features-icon i-list-features-svg">
+                                            <svg width="25" height="25" style="width:25px;" class="features-icon i-list-features-svg">
                                                 <use xlink:href="/images/svg-icons.svg#contacts"></use>
                                             </svg>
                                             <strong>Contacts</strong>

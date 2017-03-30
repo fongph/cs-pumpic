@@ -1055,7 +1055,7 @@
                                             <strong>Contacts</strong>
                                         </li>
                                         <li>
-                                            <svg width="25" height="25" class="features-icon i-list-features-svg">
+                                            <svg width="25" height="25" style="width:25px;" class="features-icon i-list-features-svg">
                                                 <use xlink:href="/images/svg-icons.svg#notes"></use>
                                             </svg>
                                             <strong>Notes</strong>

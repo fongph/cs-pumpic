@@ -1,6 +1,6 @@
 {include file='../includes/main/main-header.tpl'
 
-title="Spy Apps for Android VS Parental Monitoring | Pumpic"
+title="Spy Apps for Android VS Parental Phone Monitoring | Pumpic"
 description="What is the difference between Android phone and tablet spyware and ethical monitoring? Find a legal and reliable mobile phone monitoring app for parents."
 customeStyle="
         .block-child-location-tracking .ipad-text {
@@ -110,7 +110,7 @@ title="Follow Kids Remotely Wherever They Go" *}
         <div class="col-lg-12 col-md-12 col-sm-12">
             <h2>Parental Control Software VS Spy Apps</h2>
             <div class="pt30 pb20">
-                <img class="img-align-right" alt="Spy Apps for Android VS Parental Monitoring" src="{$img}/landings/spy-apps-vs-parental-monitoring-text.png" width="207px" height="208px" />
+                <img class="img-align-right" alt="Spy Software VS Monitoring Apps" title="There are various approaches to ensuring kids' safety online" src="{$img}/landings/spying-or-monitoring.png" width="207px" height="208px" />
                 <p>In the whole amount of tracking software for handheld devices one may come across online, there are mainly two types of products – Spy Apps and Parental Monitoring Apps. What is the difference (if any), and what to choose? Here’s a little guide on Android phone spyware.</p>
                 <p>Finding a spy app for Android undetectable by the standard smartphone utilities is today rather easy, but downloading and installing one may cause some significant troubles later on. Such programs are illegal to use. Spy software is designed for discreetly keeping track of someone by installing this application on his or her phone. Needless to say that these apps are going against the rules and laws of civilized world, where everyone has the right for privacy.</p>
                 <p>Gadget parental software is a legal thing that allows parents to ensure their kids’ online security. This have become a real need due to the recent bullying and overall cybercrimes kids fall victims of. <a class="a-default" href="/android-parental-monitoring/" >Such apps</a> can only be used by parents to monitor their children, and there is no chance of other ways one can use them.</p>
@@ -125,7 +125,7 @@ title="Follow Kids Remotely Wherever They Go" *}
     title="Why Not Using Spy Apps"
     blockBg='light'}
 
-	<img class="app-icon-left" src="{$img}/landings/why-not-using-spy-apps.png" alt="">
+	<img class="app-icon-left" src="{$img}/landings/why-not-using-spy-apps.png" alt="Say NO to snooping" title="There are plenty of reasons not to use spy apps">
 	<p>Today parental control for smartphones and mobile devices is a must. This fact is hard to refute. According to statistics, the amount of time kids spend looking at their mobile devices grows rapidly. And about 24% of teens confess they are online almost constantly. Yet the question about what type of an app parents should use is an essential one to answer. There are plenty of apps facilitating your watching over a teen’s activities, but not everyone is a good choice.</p>
 	<p>Google Play pages are full of various applications on different topics. If you look at monitoring applications, two large groups are obvious. These are actual monitoring apps for Android devices and spyware. With some of shared options and functions these apps may seem to be the same. But it is a lack of information that may get you to making a wrong decision. Here is a brief explanation for newbies in the industry. As well as reasons why using Android phone spyware is worse than a parental control app.</p>
 	<p>As long as Android is open OS, new apps for it appear every day. Android mobile spy software is popular, and numerous apps claim to provide the best results. Some of such applications are free for use, others ask for a price to be paid for information you get. But no matter which spyware you choose, it is all positioned as exactly spying on someone. And headers like ‘Catch Your Cheating Spouse with Spy App’ only prove the point.</p>

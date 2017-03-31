@@ -159,7 +159,7 @@
                             effective protection from apparent and hidden perils. Here are top-3 daily smartphone uses
                             by kids that parents should pay closer attention to:</p>
                         <div class="clearfix">
-                        <amp-img class="lc-1 img-align-right" height="95" width="100" layout="fixed" src="{$img}/landings/android-parental-monitoring-icon2.png" style="margin-top: -10px;" title="Kids use smartphones and tablets mostly for texting" alt="Texting on a smartphone"></amp-img>
+                        <amp-img class="lc-1 img-align-right" height="95" width="100" layout="fixed" src="{$img}/landings/android-parental-monitoring-icon2.png" title="Kids use smartphones and tablets mostly for texting" alt="Texting on a smartphone"></amp-img>
                         <ul class="list-default">
                             <li><strong>Texting.</strong>
                                 55% of teens communicate via text messages every single day. It is clearly the dominant
@@ -315,8 +315,8 @@
                             content</a> that they consider to be inappropriate and objectionable. But it's not only the
                         online pastime that you can take charge of thanks to Pumpic. With its built-in parental control
                         features and location tracking function, you can:</p>
-                    <div><amo-img class="lc-1 img-align-right" height="95" width="100" layout="fixed" src="/images/landings/android-parental-monitoring-icon4.png"
-                              title="Protect kids online and offline" alt="All-round child protection">
+                    <div><amp-img class="lc-1 img-align-right" height="95" width="100" layout="fixed" src="/images/landings/android-parental-monitoring-icon4.png"
+                              title="Protect kids online and offline" alt="All-round child protection"></amp-img>
                         <ul class="list-images">
                             <li><strong>Block
                                     texts and calls.</strong> When you want to prevent undesired cell phone

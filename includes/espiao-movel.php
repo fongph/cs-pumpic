@@ -13,43 +13,16 @@ $obj = new includes\lib\users\Order;
 require_once 'smarty.config.php';
 
 /* list order */
-$products = $obj ->getProducts('second');
+$products = $obj ->getProducts('second-landing');
 
-/* form_order */
-$_request = (isset($_POST['price']) and !empty($_POST['price'])) ? $_POST['price']: false;
-if($_request['productID']) {
-    // $_order ->setSession('pumpic_order', array('productID' => (int)$_request['productID']));
-
-    if($_request['productID'] and $obj -> getUserIdByAuth()) {
-        // $_order ->unsetSession('pumpic_order'); // clear session
-
-        $_url = $obj -> createOrder((int)$_request['productID']);
-        if($_url) {
-            $obj -> _redirect( $_url );
-        }
-        // create order
-    } else if((int)$_request['productID']) {
-        $obj -> _redirect('/buy.html?productID='.$_request['productID']);
-
-    }
-
-}
 
 // default
 if(is_array($products)) {
     if(isset($products['iosiCloud'])) {
         foreach($products['iosiCloud'] as $item) :
-            if ($item['period'] == 12 && $item['id']) {
+            if ($item['period'] == 24 && $item['id']) {
                 $smarty->assign('defaultIosiCloudProduct', $item['id']);
                 $smarty->assign('defaultIosiCloudPrice', round($item['price'] / $item['period'], 2));
-            }
-        endforeach;
-    }
-    if(isset($products['iosJailbreak'])) {
-        foreach($products['iosJailbreak'] as $item) :
-            if ($item['period'] == 12 && $item['id']) {
-                $smarty->assign('defaultJailbreakProduct', $item['id']);
-                $smarty->assign('defaultJailbreakPrice', round($item['price'] / $item['period'], 2));
             }
         endforeach;
     }

@@ -12,7 +12,7 @@ $obj = new includes\lib\users\Order;
 require_once 'smarty.config.php';
 
 /* list order */
-$products = $obj ->getProducts('second');
+$products = $obj ->getProducts('second-landing');
 
 /* form_order */
 $_request = (isset($_POST['price']) and !empty($_POST['price'])) ? $_POST['price']: false;
@@ -38,7 +38,7 @@ if($_request['productID']) {
 if(is_array($products)) {
     if(isset($products['iosiCloud'])) {
         foreach($products['iosiCloud'] as $item) :
-            if ($item['period'] == 12 && $item['id']) {
+            if ($item['period'] == 24 && $item['id']) {
                 $smarty->assign('defaultIosiCloudProduct', $item['id']);
                 $smarty->assign('defaultIosiCloudPrice', round($item['price'] / $item['period'], 2));
             }
@@ -52,23 +52,7 @@ if(is_array($products)) {
             }
         endforeach;
     }
-    // Basic
-    if(isset($products['androidBasic'])) {
-        foreach($products['androidBasic'] as $item) :
-            if ($item['period'] == 12 && $item['id']) {
-                $smarty->assign('defaultAndriodBasicProduct', $item['id']);
-                $smarty->assign('defaultAndriodBasicPrice', round($item['price'] / $item['period'], 2));
-            }
-        endforeach;
-    }
-    if(isset($products['androidPremium'])) {
-        foreach($products['androidPremium'] as $item) :
-            if ($item['period'] == 12 && $item['id']) {
-                $smarty->assign('defaultAndroidPremiumProduct', $item['id']);
-                $smarty->assign('defaultAndroidPremiumPrice', round($item['price'] / $item['period'], 2));
-            }
-        endforeach;
-    }
+
 
 }
 $_curr = system\Currency::getInstance();

@@ -11,46 +11,8 @@ $obj = new includes\lib\users\Order;
 // smarty config
 require_once 'smarty.config.php';
 
-$url = $_COOKIE['page'];
-
-$lastTestedPages = array('/store-sub-same', '/store-sub-new', '/store-sub-new-hyp1', '/store-sub-new-1',
-                        '/store-sub-new-3', '/store-sub-new-2', '/store-sub-new-2202', '/store-sub-new-0303', '/store-sub-new-44');
-if (isset($_COOKIE['page']) && in_array($url, $lastTestedPages)){
-    unset($_COOKIE['page']);
-    setcookie('page', null, -1, '/');
-}
-//var_dump($_SERVER['REQUEST_URI']);
-
-function preserve_qs() {
-    $queryString = str_replace ('/store.html', '', $_SERVER['REQUEST_URI']);
-    if (empty($queryString) && strpos($queryString, "?") === false) {
-        return "";
-    }
-    return $queryString;
-}
-
-if (isset($_COOKIE['page']) && !empty($_COOKIE['page'])){
-
-  if ($url != '/store'){
-        header("Location: //".$config['domain'].$url.".html" .  preserve_qs());
-    }
-
-} elseif (!isset($_COOKIE['page']) || empty($_COOKIE['page'])) {
-    $urls = array(0 =>'/store', 1 => '/store-sub-new-4');
-    $clientsNumber = $obj ->getStoreClientsCount();
-    $obj->incrementStoreClientsCount();
-    $url = $clientsNumber % 2;
-    $redirectUrl = $urls[$url];
-    setcookie('page', $redirectUrl, time()+365*24*60*60, '/');
-//    setcookie('page', $redirectUrl);
-    if ($redirectUrl != '/store'){
-        header("Location: //".$config['domain'].$redirectUrl.".html" .  preserve_qs());
-    }
-
-}
-
 /* list order */
-$products = $obj->getProducts('second-main');
+$products = $obj->getProducts('second-store');
 
 /* form_order */
 $_request = (isset($_POST['price']) and !empty($_POST['price'])) ? $_POST['price']: false;

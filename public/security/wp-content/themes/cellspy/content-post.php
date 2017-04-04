@@ -9,6 +9,7 @@
     </div>
     <p>
         <?php
+echo get_the_content();
         if(get_post_content()) {
             $content = preg_replace('#\[(.*)\](.*?)\[/(.*)?\]#si', '', get_post_content());
             $content = strip_tags($content);

@@ -121,10 +121,10 @@ $config = array(
 				)
 		),
 		'db_blog' => array(
-				'dbname'    => 'pumpic_blog',
-				'host'      => '188.40.64.2',
-				'username'      => 'pumpic_blog_user',
-				'password'  => '57ge8j9SNg9EkhryWA3KV9ZB9NUue6',
+				'dbname'    => 'pum_blog',
+				'host'      => '192.168.40.254',
+				'username'      => 'pum',
+				'password'  => 'p21599',
 		),
 
 		'db' => array(
@@ -163,6 +163,8 @@ if (is_file(__DIR__ . '/config.development.php')) {
 } else {
 	define('SITE_ID', 1);
 }
+
+$smarty = new stdClass();
 
 if ($config['environment'] == 'production') {
 	$smarty->caching = true;

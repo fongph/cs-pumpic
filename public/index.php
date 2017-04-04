@@ -11,6 +11,7 @@ if (php_sapi_name() == 'cli-server') {
     }
 }
 
+
 global $smarty, $config;
 date_default_timezone_set("UTC");
 // include __DIR__.'/scroogefrog_tcp.php';

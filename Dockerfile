@@ -22,7 +22,7 @@ ADD ./compose/browscap.ini /etc/browscap.ini
 RUN curl -sS https://raw.githubusercontent.com/composer/getcomposer.org/1b137f8bf6db3e79a38a5bc45324414a6b1f9df2/web/installer | php
 RUN mv composer.phar /usr/local/bin/composer
 RUN chmod +x /usr/local/bin/composer
-
 RUN mkdir /code && chown -R www-data:www-data /code
+COPY . /code
 
 WORKDIR /code

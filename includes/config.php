@@ -106,7 +106,7 @@ $config = array(
                 'direct-notice-preview.html' => 'legacy.php',
 
             //amp
-                'amp/iphone-parental-monitoring.html' => 'iphone-parental-monitoring.php'
+                //'amp/iphone-parental-monitoring.html' => 'iphone-parental-monitoring.php'
 
 		),
 		'db_phones' => array(

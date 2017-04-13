@@ -10,7 +10,7 @@
 									<span class="icon-bar"></span>
 									<span class="icon-bar"></span>
 								</button>
-                                <div class="logo">
+                                <div class="logo" style="background: url(/images/logo/logo-easter.png) no-repeat;-webkit-background-size: cover;background-size: contain;">
                                     <a href="<?php echo getStaticUrl();?>">pumpic</a>
                                 </div>
 

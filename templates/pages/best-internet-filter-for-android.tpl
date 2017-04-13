@@ -67,7 +67,7 @@
     styleTitle="h2"
     title="Why Do You Need Child Internet Filter Software"
     blockBg='light'}
-
+<img align="right" src="{$img}/landings/best-internet-filter-for-android-icon2.png" style="margin-top: -10px;" title="Filter Online Content" alt="Internet filter child protection">
 	<p>The World Wide Web is an infinite source of information, wisdom and fun. It also is a great environment to meet new people and find folks to share your interests. But at the same time, the Internet is a breeding ground for tons of inappropriate content and dozens of hidden dangers. Many of them threaten the most vulnerable group of Internet users – the kids.</p>
 	<p>Add the fact that nowadays 91 percent of teenagers (13 to 17 years old) access the Internet via various mobile devices - smartphones, tablets and other gadgets. This makes monitoring and controlling what kids view online even more difficult. Thus, they become exposed to the apparent and hidden Internet dangers – from cyberbullying to sexual content, from gambling to online predators. That is why a concerned parent can hardly be too careful when it comes to letting the child surf the Net these days.</p>
 

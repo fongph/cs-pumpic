@@ -58,7 +58,6 @@ $config = array(
 				'free-trial.html'  => 'free_trial_registration.php',
 
 				'store.html'  => 'store.php',
-				'store-sub-new-4.html'  => 'store-sub-new-4.php',
 				'store-android.php'  => 'store-android.php',
 				'aging-parent-protection-app.html' => 'aging-parent-protection-app.php',
 				'iphone-tracking-software.html'   => 'iphone_tracking_software.php',
@@ -107,7 +106,7 @@ $config = array(
                 'direct-notice-preview.html' => 'legacy.php',
 
             //amp
-                'amp/iphone-parental-monitoring.html' => 'iphone-parental-monitoring.php'
+                //'amp/iphone-parental-monitoring.html' => 'iphone-parental-monitoring.php'
 
 		),
 		'db_phones' => array(
@@ -151,7 +150,7 @@ $config = array(
 		'ver_android_bot'       => '2.2',
 		'ver_ios_up'            => '9.1',
 		'ver_ios_bot'           => '6.0',
-		'ver_icloud_up'         => '10.3',
+		'ver_icloud_up'         => '10.3.1',
 		'ver_icloud_bot'        => '6.0',
 
 		'cron' => array(

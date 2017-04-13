@@ -1,7 +1,5 @@
 {*Order out="getProducts"*}
 {*formOrder post=$smarty.post*}
-{if $smarty.server.REQUEST_URI !== '/store.html'}{$robots='no'}{/if}
-
 {include file='../includes/main/main-header.tpl'
 showRand="true"
 title="Phone Tracker Prices and Subscription Plans | Pumpic"
@@ -16,6 +14,41 @@ description="Pumpic offers high-quality cell phone tracking software for a good 
     @media (min-width: 767px) {
         .double_offer.checkbox {
             display: none;
+        }
+    }
+
+    .easter-banner {
+        background: url('/images/easter-banner/background.jpg') no-repeat center;
+        background-size: cover;
+        color: #ffffff;
+        padding: 2px 0 4px;
+        position: relative;
+    }
+    .easter-banner:after {
+        display: block;
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background:
+                url(/images/easter-banner/rabbit-left.png) no-repeat left 19px bottom -27px,
+                url(/images/easter-banner/rabbit-right.png) no-repeat right 10px bottom -27px;
+    }
+    .easter-banner p {
+        margin: 0 auto;
+        max-width: 590px;
+        width: 72%;
+        font-size: 18px;
+    }
+    @media screen and (max-width: 458px) {
+        .easter-banner p {
+            font-size: 15px;
+            width: 70%;
+        }
+        .easter-banner:after {
+            background-position: left 0 bottom -27px, right -27px bottom -23px;
         }
     }
 </style>
@@ -90,6 +123,9 @@ description="Pumpic offers high-quality cell phone tracking software for a good 
             <div class="row">
                 <div class="col-lg-10 col-lg-offset-1">
                     <div class="row">
+                        <div class="col-lg-10 col-md-10 col-lg-offset-1 col-md-offset-1 text-center" style="margin-bottom:20px">
+                        <div class="easter-banner"><p><b>On 15-16 April get +1 FREE MONTH</b> with any subscription.</p><p>Wishing you Happy Easter!</p></div>
+                        </div>
                         <h1 class="h2 text-center">
                             Subscription Plans
                         </h1>
@@ -119,7 +155,7 @@ description="Pumpic offers high-quality cell phone tracking software for a good 
                                                             <span class="prod-head__device tablet">iPad</span>
                                                             <span class="prod-head__device smart">iPod Touch</span>
                                                         </p>
-                                                        <p class="prod-head__price"><span>starting from </span><b>${if (isset($subPage1) && $subPage1 === true)}5.95{elseif (isset($subPage2) && $subPage2 === true)}5.95{else}6.99{/if}/</b><span> month</span></p>
+                                                        <p class="prod-head__price"><span>starting from </span><b>$5.95/</b><span> month</span></p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -194,12 +230,11 @@ description="Pumpic offers high-quality cell phone tracking software for a good 
                                                             <ul>
                                                                 {foreach from=$getProducts.iosiCloud key=key item=item}
 
-                                                                    {if $item.period == 0.7}{$item.period = 7}{/if}
                                                                     <li>
-                                                                        <label class="label_radio hover_label_radio {if $item.period == '12'}r_on{else}r_off{/if}">
+                                                                        <label class="label_radio hover_label_radio {if $item.period == '24'}r_on{else}r_off{/if}">
                                                                             <input class="data-price" data-target=".icloud-price-per-month" data-cur="usd" data-price-usd="{$item.price}" data-offer-price-usd="{$getProducts.iosiCloudDouble[$key].price}" data-period="{$item.period}" data-product="{$item.id}" data-offer-product="{$getProducts.iosiCloudDouble[$key].id}" data-group="icloud" name="optionsRadios" id="optionsRadios{$item.id}1" value="{$item.id}" type="radio" />
                                                                             <span class="sp">
-                                                                            <strong>{$item.period}</strong> {if $item.period == 7}days{elseif $item.period == 1}month{else}months{/if}
+                                                                            <strong>{$item.period}</strong> {if $item.period == 1}month{else}months{/if}
                                                                         </span>
 
                                                                             <div class="box-small-package">
@@ -222,8 +257,8 @@ description="Pumpic offers high-quality cell phone tracking software for a good 
                                                             </ul>
                                                             <button class="btn btn-default ga-action-click"
                                                                     ga-action ="click"
-                                                                    ga-category="{if $smarty.server.REQUEST_URI !== '/store.html'}Split_test{else}store{/if}"
-                                                                    ga-label="{if (isset($subPage1) && $subPage1 === true)}buy_sub_new-4-1{elseif (isset($subPage2) && $subPage2 === true)}buy_sub_new-44-1{else}buy icloud{/if}"
+                                                                    ga-category="store"
+                                                                    ga-label="buy icloud"
                                                                     value="true" type="submit" name="price[submit]">Buy</button>
                                                         </form>
                                                         {*<div class="show_premium_features _icloud-f"><div class="show-f _icloud-f">Show features <i class="fa fa-chevron-down"></i></div><div class="hide-f _icloud-f" style="display: none;">Hide features  <i class="fa fa-chevron-up"></i></div></div>*}
@@ -312,9 +347,8 @@ description="Pumpic offers high-quality cell phone tracking software for a good 
                                                                 <input id='product_price_icloud' type='hidden' name='price[productID]' value='{if isset($defaultIosiCloud)}{$defaultIosiCloud}{else}0{/if}' class="product_price"/>
                                                                 <ul>
                                                                     {foreach from=$getProducts.iosiCloud key=key item=item}
-                                                                        {if $item.period == 0.7}{$item.period = 7}{/if}
                                                                         <li>
-                                                                            <label class="label_radio hover_label_radio {if $item.period == '12'}r_on{else}r_off{/if}">
+                                                                            <label class="label_radio hover_label_radio {if $item.period == '24'}r_on{else}r_off{/if}">
                                                                                 <input class="data-price" data-target=".icloud-price-per-month" data-cur="usd" data-price-usd="{$item.price}" data-offer-price-usd="{$getProducts.iosiCloudDouble[$key].price}" data-period="{$item.period}" data-product="{$item.id}" data-offer-product="{$getProducts.iosiCloudDouble[$key].id}" data-group="icloud"  name="optionsRadios" id="optionsRadios{$item.id}2" value="{$item.id}" type="radio" />
                                                                                 <span class="sp">
                                                                             <strong>{$item.period}</strong> {if $item.period == 7}days{elseif $item.period == 1}month{else}months{/if}
@@ -340,8 +374,8 @@ description="Pumpic offers high-quality cell phone tracking software for a good 
                                                                 </ul>
                                                                 <button class="btn btn-default ga-action-click"
                                                                         ga-action ="click"
-                                                                        ga-category="{if $smarty.server.REQUEST_URI !== '/store.html'}Split_test{else}store{/if}"
-                                                                        ga-label="{if (isset($subPage1) && $subPage1 === true)}buy_sub_new-4-2{elseif (isset($subPage2) && $subPage2 === true)}buy_sub_new-44-2{else}buy icloud{/if}"
+                                                                        ga-category="store"
+                                                                        ga-label="buy icloud"
                                                                         value="true" type="submit" name="price[submit]">Buy</button>
                                                             </form>
                                                             {*<div class="space_line">&nbsp;</div>*}

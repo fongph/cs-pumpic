@@ -19,6 +19,50 @@ if ( function_exists( 'session_cache_limiter' ) ) :
 	session_cache_limiter('public');
 endif;
 
+
+//forward compatibility for Wordpress 4.7.x
+
+if(!function_exists('get_the_name')){
+    function get_the_name() {
+        $post = get_post();
+        return ! empty( $post ) ? $post->post_name : false;
+    }
+}
+
+if(!function_exists('get_post_content')){
+    function get_post_content() {
+        $post = get_post();
+        return ! empty( $post ) ? $post->post_content : false;
+    }
+}
+
+
+if(!function_exists('get_the_name')){
+    function get_the_name() {
+        $post = get_post();
+        return ! empty( $post ) ? $post->post_name : false;
+    }
+}
+
+if(!function_exists('the_ID')){
+    function the_ID() {
+        echo get_the_ID();
+    }
+}
+
+
+if(!function_exists('this_Slug')){
+    function this_Slug() {
+        return get_the_Slug();
+    }
+}
+
+//end forward compatibility
+
+
+
+
+
 function getUserID() {
 	require_once '../../includes/lib/users/ManagerUser.php';
 	$obj = new includes\lib\users\ManagerUser( array() );

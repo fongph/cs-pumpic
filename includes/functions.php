@@ -33,6 +33,7 @@ function dispatch($urlParams, $config){
         || preg_match('/\/store-sub-new-2202.html/is', $_SERVER['REQUEST_URI'])
         || preg_match('/\/store-sub-new-0303.html/is', $_SERVER['REQUEST_URI'])
         || preg_match('/\/store-sub-new-44.html/is', $_SERVER['REQUEST_URI'])
+        || preg_match('/\/store-sub-new-4.html/is', $_SERVER['REQUEST_URI'])
         || preg_match('/\/store-sub-new-hyp1.html/is', $_SERVER['REQUEST_URI'])) {
         header301( '/store.html' );
     }

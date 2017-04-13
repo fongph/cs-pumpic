@@ -141,7 +141,7 @@
                                                     </section>
                                                         <div class="button-descr">3 month subscription</div>
                                                         {else}
-                                                        <a class="btn btn-default" href="/buy.html?productID={$product.id}" id="view-pricing-link">View Pricing</a>
+                                                        <a class="btn btn-default" href="/store.html" id="view-pricing-link">View Pricing</a>
                                                     </section>
 
                                                         {/if}

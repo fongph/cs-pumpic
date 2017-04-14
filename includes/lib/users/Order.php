@@ -304,7 +304,7 @@ class Order extends ManagerUser
                 case 'second-store': $version = 'd0'; break;
                 case 'second-landing': $version = 'd1'; break;
             }
-            $plans = $this->_billing->getSiteProductsForABTest(self::SITE_ID, 'second', $namespace, $version);
+            $plans = $this->_billing->getSiteProductsWithVariousNamespace(self::SITE_ID, 'second', $namespace, $version);
         }  else {
             $plans = $this->_billing->getSiteProducts(self::SITE_ID, $namespace);
         }

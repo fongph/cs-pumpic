@@ -12,7 +12,7 @@
             "source": {
                 "type": "git",
                 "url": "git@gitlab.dizboard.com:pumpic/cs-billing.git",
-                "reference": "4ed45fa490a9561e5bc833697b4eaa0382bffdf1"
+                "reference": "462106bf93e092a05c3310f173a035229b67bc4d"
             },
             "require": {
                 "boomers/cs-models": "dev-master",
@@ -31,7 +31,7 @@
             "license": [
                 "MIT"
             ],
-            "time": "2017-02-07 10:49:10"
+            "time": "2017-04-14 07:59:08"
         },
         {
             "name": "boomers/cs-mail",
@@ -39,7 +39,7 @@
             "source": {
                 "type": "git",
                 "url": "git@gitlab.dizboard.com:pumpic/cs-mail.git",
-                "reference": "726c9c20566357c3a8e38cfb5735028a7cbc06e4"
+                "reference": "e8bd4f24a8d571eb0a33a7c9fe317fdc8179946b"
             },
             "require": {
                 "guzzlehttp/guzzle": "~5.0",
@@ -57,7 +57,7 @@
             "license": [
                 "MIT"
             ],
-            "time": "2017-03-23 08:30:34"
+            "time": "2017-04-07 11:46:52"
         },
         {
             "name": "boomers/cs-models",
@@ -65,7 +65,7 @@
             "source": {
                 "type": "git",
                 "url": "git@gitlab.dizboard.com:pumpic/cs-models.git",
-                "reference": "1e498b74d78b83669f57d828e60b542bbe8824dd"
+                "reference": "a621744df42bdafedd2faa1a3035c0a3d9b88fd9"
             },
             "require": {
                 "php": ">=5.4.0"
@@ -79,7 +79,7 @@
                     "CS\\Models\\": "src/"
                 }
             },
-            "time": "2017-03-16 14:10:09"
+            "time": "2017-04-03 11:22:36"
         },
         {
             "name": "boomers/cs-settings",
@@ -1990,16 +1990,16 @@
         },
         {
             "name": "symfony/yaml",
-            "version": "v3.2.6",
+            "version": "v3.2.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
-                "reference": "093e416ad096355149e265ea2e4cc1f9ee40ab1a"
+                "reference": "62b4cdb99d52cb1ff253c465eb1532a80cebb621"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/yaml/zipball/093e416ad096355149e265ea2e4cc1f9ee40ab1a",
-                "reference": "093e416ad096355149e265ea2e4cc1f9ee40ab1a",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/62b4cdb99d52cb1ff253c465eb1532a80cebb621",
+                "reference": "62b4cdb99d52cb1ff253c465eb1532a80cebb621",
                 "shasum": ""
             },
             "require": {
@@ -2041,7 +2041,7 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
-            "time": "2017-03-07T16:47:02+00:00"
+            "time": "2017-03-20T09:45:15+00:00"
         },
         {
             "name": "webmozart/assert",

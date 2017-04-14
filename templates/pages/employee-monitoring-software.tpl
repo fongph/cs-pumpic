@@ -97,7 +97,7 @@ description="Increase productivity, ensure legal safety and streamline workflow 
     imgVerticalAlign = "bottom"
     imgTitle = "Employee monitoring helps to increase staff productivity"
     textAlign = "left"
-    title = "Employee Monitoring Software</br>One-Stop Solution for Your Business"
+    title = "Employee Monitoring Software</br>Tracking Solution for Your Business"
     titleSize = "25px"
     description = "Get actionable insights to boost productivity and cut costs.</br>Stay informed and increase data safety."
 

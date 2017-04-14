@@ -16,6 +16,41 @@ description="Pumpic offers high-quality cell phone tracking software for a good 
             display: none;
         }
     }
+
+    .easter-banner {
+        background: url('/images/easter-banner/background.jpg') no-repeat center;
+        background-size: cover;
+        color: #ffffff;
+        padding: 2px 0 4px;
+        position: relative;
+    }
+    .easter-banner:after {
+        display: block;
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background:
+                url(/images/easter-banner/rabbit-left.png) no-repeat left 19px bottom -27px,
+                url(/images/easter-banner/rabbit-right.png) no-repeat right 10px bottom -27px;
+    }
+    .easter-banner p {
+        margin: 0 auto;
+        max-width: 590px;
+        width: 72%;
+        font-size: 18px;
+    }
+    @media screen and (max-width: 458px) {
+        .easter-banner p {
+            font-size: 15px;
+            width: 70%;
+        }
+        .easter-banner:after {
+            background-position: left 0 bottom -27px, right -27px bottom -23px;
+        }
+    }
 </style>
 <!-- BLOCK GTM -->
 {include file='../includes/main/main-after-body.tpl'}
@@ -88,6 +123,9 @@ description="Pumpic offers high-quality cell phone tracking software for a good 
             <div class="row">
                 <div class="col-lg-10 col-lg-offset-1">
                     <div class="row">
+                        <div class="col-lg-10 col-md-10 col-lg-offset-1 col-md-offset-1 text-center" style="margin-bottom:20px">
+                        <div class="easter-banner"><p><b>On 15-16 April get +1 FREE MONTH</b> with any subscription.</p><p>Wishing you Happy Easter!</p></div>
+                        </div>
                         <h1 class="h2 text-center">
                             Subscription Plans
                         </h1>

@@ -106,7 +106,7 @@ $config = array(
                 'direct-notice-preview.html' => 'legacy.php',
 
             //amp
-                'amp/iphone-parental-monitoring.html' => 'iphone-parental-monitoring.php'
+                //'amp/iphone-parental-monitoring.html' => 'iphone-parental-monitoring.php'
 
 		),
 		'db_phones' => array(
@@ -150,7 +150,7 @@ $config = array(
 		'ver_android_bot'       => '2.2',
 		'ver_ios_up'            => '9.1',
 		'ver_ios_bot'           => '6.0',
-		'ver_icloud_up'         => '10.3',
+		'ver_icloud_up'         => '10.3.1',
 		'ver_icloud_bot'        => '6.0',
 
 		'cron' => array(

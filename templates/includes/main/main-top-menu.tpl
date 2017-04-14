@@ -10,10 +10,10 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <div itemscope itemtype="https://schema.org/Organization" class="logo">
+                        <div itemscope itemtype="https://schema.org/Organization" class="logo" >
                           <meta itemprop="name" content="Pumpic Parental Monitoring">
                             <a href="/" itemprop="url">pumpic
-                            <img itemprop="logo" src="/images/logo/pumpic-logo.svg" style="max-width: 96%;" alt="pumpic app logo" />
+                            <img itemprop="logo" src="/images/logo/logo-easter.png" style="max-width: 96%;height: 100%;" alt="pumpic app logo" />
                             </a>
                         </div>
                     </div>

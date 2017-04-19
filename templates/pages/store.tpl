@@ -450,5 +450,32 @@ our_products (text): Включить выключить блок OUR PRODUCTS (
 {include file='../includes/main/main-analytics-footer.tpl'
 emptyScript="true"}
 <script src="/javascripts/frontend.min.js?1423094400" data-delete="delete"></script><script src="/javascripts/store-init.js"></script>
+{literal}
+<script>
+    var $buoop = {vs:{i:10,f:25,o:15,s:7,c:30},api:4,reminder:0,text:"Ouch! Seems like the version of your browser {brow_name}  is too old. To proceed, please,  <a{up_but}>Update it</a> or <a{ignore_but}>Ignore</a>"};
+    function $buo_f(){
+        var e = document.createElement("script");
+        e.src = "//browser-update.org/update.min.js";
+        document.body.appendChild(e);
+    };
+    try {document.addEventListener("DOMContentLoaded", $buo_f,false)}
+    catch(e){window.attachEvent("onload", $buo_f)}
+    (function() {var UA = window.navigator.userAgent;
+        if(
+        (UA.indexOf('Mobile Safari') !== -1 && UA.indexOf('Android ') !== -1 && UA.substr(UA.indexOf('Version/')+8, 1) < 4) ||
+        (UA.indexOf('Opera Mobi/') !== -1 && UA.substr(UA.indexOf('Opera/')+6, 2) === 12) ||
+        (UA.indexOf('IEMobile/10.0') !== -1)
+        ) {
+            return alert('Ouch! Seems like the version of your browser is too old. To proceed, please, update it.')
+        } else if (
+                (UA.indexOf('UC Browser') !== -1) ||
+                (/\bSilk\b/.test(navigator.userAgent)) ||
+                (/\bYaBrowser\b/.test(navigator.userAgent))
+        ) {
+            alert('Wow! It seems that you might have a problem with purchasing on our website while using your browser. To proceed without a problems, please, use one of these browsers: \nInternet Explorer version 11 \nFirefox version 24 or newer \nChrome version 22 or newer Safari version 6.2.8 or newer \nOpera version 11.6 or newer\niOS Safari 5 or newer \nAndroid Browser 5.0 or newer \nBlackberry Browser 7.1 or newer \nOpera Mobile 15 or newer \nInternet Explorer Mobile 11')
+        }
+    })()
+</script>
+{/literal}
 </body>
 </html>

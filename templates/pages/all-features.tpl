@@ -1057,10 +1057,11 @@
                                             {*</svg>*}
                                             <strong>Contacts</strong>
                                         </li>
-                                        <li>
-                                            <svg width="21" height="21" style="width:25px;" class="features-icon i-list-features-svg">
-                                                <use xlink:href="/images/svg-icons.svg#notes"></use>
-                                            </svg>
+                                        <li style="position: relative;">
+                                            <img class="features-icon i-list-features-" src="{$img}/technological/i-list-features-notes.png" style="width:21px;height:21px;top:4px;margin-left: -53px;" alt="" title="" />
+                                            {*<svg width="21" height="21" style="width:25px;" class="features-icon i-list-features-svg">*}
+                                                {*<use xlink:href="/images/svg-icons.svg#notes"></use>*}
+                                            {*</svg>*}
                                             <strong>Notes</strong>
                                         </li>
                                     </ul>
@@ -1740,10 +1741,11 @@
                             <div class="item-feature-list div-table-column col-sm-12 col-md-4 col-lg-4 text-left">
                                 <div class='feature-item-info'>
                                     <ul>
-                                        <li>
-                                            <svg width="21" height="21" class="features-icon i-list-features-svg">
-                                                <use xlink:href="/images/svg-icons.svg#facebook"></use>
-                                            </svg>
+                                        <li style="position: relative;">
+                                            <img class="features-icon i-list-features-" src="{$img}/technological/i-list-features-facebook.png" style="width:12px;height:22px;top:4px;" alt="" title="" />
+                                            {*<svg width="21" height="21" class="features-icon i-list-features-svg">*}
+                                                {*<use xlink:href="/images/svg-icons.svg#facebook"></use>*}
+                                            {*</svg>*}
                                             <strong>Facebook IM</strong></li>
                                         <li style="position: relative;">
                                             <a href="/monitor-viber.html" style="cursor:default;"><img class="features-icon i-list-features-" src="{$img}/technological/i-list-features-viber.png" style="width:21px;height:21px;top:4px;" alt="parental viber monitoring" title="track viber messages on smartphones" /></a>
@@ -1764,15 +1766,16 @@
                                             {*</svg>*}
                                             <strong>Snapchat</strong></li>
                                         <li style="position: relative;">
-
-                                            <svg width="21" height="21" class="features-icon i-list-features-svg">
-                                                <use xlink:href="/images/svg-icons.svg#chats"></use>
-                                            </svg>
+                                            <img class="features-icon i-list-features-" src="{$img}/technological/i-list-features-whatsapp.png" style="width:21px;height:21px;top:4px;" alt="" title="" />
+                                            {*<svg width="21" height="21" class="features-icon i-list-features-svg">*}
+                                                {*<use xlink:href="/images/svg-icons.svg#chats"></use>*}
+                                            {*</svg>*}
                                             <strong>WhatsApp</strong></li>
-                                        <li>
-                                            <svg width="21" height="21" class="features-icon i-list-features-svg">
-                                                <use xlink:href="/images/svg-icons.svg#kik"></use>
-                                            </svg>
+                                        <li style="position: relative;">
+                                            <img class="features-icon i-list-features-" src="{$img}/technological/i-list-features-kik-chat.png" style="width:25px;height:18px;top:4px;" alt="" title="" />
+                                            {*<svg width="21" height="21" class="features-icon i-list-features-svg">*}
+                                                {*<use xlink:href="/images/svg-icons.svg#kik"></use>*}
+                                            {*</svg>*}
                                             <strong>Kik</strong></li>
                                     </ul>
 
@@ -1862,9 +1865,10 @@
                                 <div class='feature-item-info'>
                                     <ul>
                                         <li>
-                                            <svg width="31" height="31" class="features-icon i-list-features-svg">
-                                                <use xlink:href="/images/svg-icons.svg#browsers"></use>
-                                            </svg>
+                                            <img class="features-icon i-list-features-" src="{$img}/technological/icon-browser.png" style="width:25px;height:25px;top:4px;" alt="" title="" />
+                                            {*<svg width="31" height="31" class="features-icon i-list-features-svg">*}
+                                                {*<use xlink:href="/images/svg-icons.svg#browsers"></use>*}
+                                            {*</svg>*}
                                             <strong>Browser control</strong>
                                         </li>
                                     </ul>
@@ -1931,22 +1935,26 @@
                                 <div class='feature-item-info'>
                                     <ul>
                                         <li>
-                                            <svg width="31" height="31" class="features-icon i-list-features-svg only-mobile">
-                                                <use xlink:href="/images/svg-icons.svg#photos"></use>
-                                            </svg>
+                                            <img class="features-icon i-list-features- only-mobile" src="{$img}/technological/i-list-features-photos.png" style="width:29px;height:24px;top:4px;" alt="" title="" />
+                                            {*<svg width="31" height="31" class="features-icon i-list-features-svg only-mobile">*}
+                                                {*<use xlink:href="/images/svg-icons.svg#photos"></use>*}
+                                            {*</svg>*}
                                             <strong>Photos</strong>
-                                            <svg width="31" height="31" class="features-icon i-list-features-svg only-pc">
-                                                <use xlink:href="/images/svg-icons.svg#photos"></use>
-                                            </svg>
+                                            <img class="features-icon i-list-features- only-pc" src="{$img}/technological/i-list-features-photos.png" style="width:29px;height:24px;top:4px;" alt="" title="" />
+                                            {*<svg width="31" height="31" class="features-icon i-list-features-svg only-pc">*}
+                                                {*<use xlink:href="/images/svg-icons.svg#photos"></use>*}
+                                            {*</svg>*}
                                         </li>
-                                        <li>
-                                            <svg width="31" height="31" class="features-icon i-list-features-svg only-mobile">
-                                                <use xlink:href="/images/svg-icons.svg#video"></use>
-                                            </svg>
+                                        <li style="position: relative;">
+                                            <img class="features-icon i-list-features- only-mobile" src="{$img}/technological/i-list-features-video.png" style="width:29px;height:20px;top:4px;" alt="" title="" />
+                                            {*<svg width="31" height="31" class="features-icon i-list-features-svg only-mobile">*}
+                                                {*<use xlink:href="/images/svg-icons.svg#video"></use>*}
+                                            {*</svg>*}
                                             <strong>Videos</strong>
-                                            <svg width="31" height="31" class="features-icon i-list-features-svg only-pc">
-                                                <use xlink:href="/images/svg-icons.svg#video"></use>
-                                            </svg>
+                                            <img class="features-icon i-list-features- only-pc" src="{$img}/technological/i-list-features-video.png" style="width:29px;height:20px;top:4px;" alt="" title="" />
+                                            {*<svg width="31" height="31" class="features-icon i-list-features-svg only-pc">*}
+                                                {*<use xlink:href="/images/svg-icons.svg#video"></use>*}
+                                            {*</svg>*}
                                         </li>
                                     </ul>
 
@@ -2093,23 +2101,27 @@
 
                                  <div class='feature-item-info'>
                                      <ul>
-                                         <li>
-                                             <svg width="31" height="31" class="features-icon i-list-features-svg only-mobile">
-                                                 <use xlink:href="/images/svg-icons.svg#calendar"></use>
-                                             </svg>
+                                         <li style="position: relative;">
+                                             <img class="features-icon i-list-features- only-mobile" src="{$img}/technological/i-list-features-calendar.png" style="width:28px;height:28px;top:4px;" alt="" title="" />
+                                             {*<svg width="31" height="31" class="features-icon i-list-features-svg only-mobile">*}
+                                                 {*<use xlink:href="/images/svg-icons.svg#calendar"></use>*}
+                                             {*</svg>*}
                                              <strong>Calendar</strong>
-                                             <svg width="31" height="31" class="features-icon i-list-features-svg only-pc">
-                                                 <use xlink:href="/images/svg-icons.svg#calendar"></use>
-                                             </svg>
+                                             {*<svg width="31" height="31" class="features-icon i-list-features-svg only-pc">*}
+                                                 {*<use xlink:href="/images/svg-icons.svg#calendar"></use>*}
+                                             {*</svg>*}
+                                             <img class="features-icon i-list-features- only-pc" src="{$img}/technological/i-list-features-calendar.png" style="width:28px;height:28px;top:4px;" alt="" title="" />
                                          </li>
-                                         <li>
-                                             <svg width="31" height="31" class="features-icon i-list-features-svg only-mobile">
-                                                 <use xlink:href="/images/svg-icons.svg#contacts"></use>
-                                             </svg>
+                                         <li style="position: relative;">
+                                             <img class="features-icon i-list-features- only-mobile" src="{$img}/technological/i-list-features-contacts.png" style="width:26px;height:26px;top:4px;" alt="" title="" />
+                                             {*<svg width="31" height="31" class="features-icon i-list-features-svg only-mobile">*}
+                                                 {*<use xlink:href="/images/svg-icons.svg#contacts"></use>*}
+                                             {*</svg>*}
                                              <strong>Contacts</strong>
-                                             <svg width="31" height="31" class="features-icon i-list-features-svg only-pc">
-                                                 <use xlink:href="/images/svg-icons.svg#contacts"></use>
-                                             </svg>
+                                             <img class="features-icon i-list-features- only-pc" src="{$img}/technological/i-list-features-contacts.png" style="width:26px;height:26px;top:4px;" alt="" title="" />
+                                             {*<svg width="31" height="31" class="features-icon i-list-features-svg only-pc">*}
+                                                 {*<use xlink:href="/images/svg-icons.svg#contacts"></use>*}
+                                             {*</svg>*}
                                          </li>
                                      </ul>
 

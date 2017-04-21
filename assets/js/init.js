@@ -24,7 +24,6 @@ if (typeof console === "undefined" || typeof console.log === "undefined") {
         'plan': false,
         'mobile': false
     }
-
     // detected method
     var methods = {
         init: function (options) {

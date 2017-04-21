@@ -1,5 +1,6 @@
 {*Order out="getProducts"*}
 {*formOrder post=$smarty.post*}
+{$robots='no'}
 {include file='../includes/main/main-header.tpl'
 showRand="true"
 title="Phone Tracker Prices and Subscription Plans | Pumpic"
@@ -199,9 +200,7 @@ description="Pumpic offers high-quality cell phone tracking software for a good 
                                                         </div>
                                                     </div>
                                                         <div class="list_price icloud-list_price">
-                                                        <form name="price_premium" method="POST" action="/buy.html"
-                                                              class="buy-form-with-offer" autocomplete="off"
-                                                        >
+                                                        <form name="price_premium" onsubmit="return false;" class="buy-form-with-offer" autocomplete="off">
                                                             {*<div class="save__2plan">*}
                                                                 {*<div class="save__text label-touch">*}
                                                                     {*<input type="checkbox" data-group="icloud" name="icloud-40off" id="icloud-40off-main" data-checkboxes="icloud-40off">*}
@@ -216,7 +215,7 @@ description="Pumpic offers high-quality cell phone tracking software for a good 
 
                                                                     <li>
                                                                         <label class="label_radio hover_label_radio {if $item.period == '24'}r_on{else}r_off{/if}">
-                                                                            <input class="data-price" data-target=".icloud-price-per-month" data-cur="usd" data-price-usd="{$item.price}" data-offer-price-usd="{$getProducts.iosiCloudDouble[$key].price}" data-period="{$item.period}" data-product="{$item.id}" data-offer-product="{$getProducts.iosiCloudDouble[$key].id}" data-group="icloud" name="optionsRadios" id="optionsRadios{$item.id}1" value="{$item.id}" type="radio" />
+                                                                            <input class="data-price" data-target=".icloud-price-per-month" data-cur="usd" data-price-usd="{$item.price}" data-offer-price-usd="{$getProducts.iosiCloudDouble[$key].price}" data-period="{$item.period}" data-product="{$item.path}" data-offer-product="{$getProducts.iosiCloudDouble[$key].id}" data-group="icloud" name="optionsRadios" id="optionsRadios{$item.id}1" value="{$item.id}" type="radio" />
                                                                             <span class="sp">
                                                                             <strong>{$item.period}</strong> {if $item.period == 1}month{else}months{/if}
                                                                         </span>
@@ -239,11 +238,16 @@ description="Pumpic offers high-quality cell phone tracking software for a good 
                                                                     </li>
                                                                 {/foreach}
                                                             </ul>
+
                                                             <button class="btn btn-default ga-action-click"
                                                                     ga-action ="click"
                                                                     ga-category="store"
                                                                     ga-label="buy icloud"
-                                                                    value="true" type="submit" name="price[submit]">Buy</button>
+                                                                    value="true" type="submit" name="price[submit]"
+                                                                    data-fsc-action="Checkout"
+                                                            >Buy</button>
+
+                                                            {*<a href="https://pumpic.onfastspring.com/pumpic-icloud-24m-s"> Buy 24 month</a>*}
                                                         </form>
                                                         {*<div class="show_premium_features _icloud-f"><div class="show-f _icloud-f">Show features <i class="fa fa-chevron-down"></i></div><div class="hide-f _icloud-f" style="display: none;">Hide features  <i class="fa fa-chevron-up"></i></div></div>*}
 
@@ -327,13 +331,13 @@ description="Pumpic offers high-quality cell phone tracking software for a good 
                                                             </div>
                                                         </div>
                                                         <div class="list_price icloud-list_price" id="foot_h4">
-                                                            <form name="price_premium_bottom" method="POST" action="/buy.html" class="buy-form-with-offer" autocomplete="off">
+                                                            <form name="price_premium_bottom" onsubmit="return false;" class="buy-form-with-offer" autocomplete="off">
                                                                 <input id='product_price_icloud' type='hidden' name='price[productID]' value='{if isset($defaultIosiCloud)}{$defaultIosiCloud}{else}0{/if}' class="product_price"/>
                                                                 <ul>
                                                                     {foreach from=$getProducts.iosiCloud key=key item=item}
                                                                         <li>
                                                                             <label class="label_radio hover_label_radio {if $item.period == '24'}r_on{else}r_off{/if}">
-                                                                                <input class="data-price" data-target=".icloud-price-per-month" data-cur="usd" data-price-usd="{$item.price}" data-offer-price-usd="{$getProducts.iosiCloudDouble[$key].price}" data-period="{$item.period}" data-product="{$item.id}" data-offer-product="{$getProducts.iosiCloudDouble[$key].id}" data-group="icloud"  name="optionsRadios" id="optionsRadios{$item.id}2" value="{$item.id}" type="radio" />
+                                                                                <input class="data-price" data-target=".icloud-price-per-month" data-cur="usd" data-price-usd="{$item.price}" data-offer-price-usd="{$getProducts.iosiCloudDouble[$key].price}" data-period="{$item.period}" data-product="{$item.path}" data-offer-product="{$getProducts.iosiCloudDouble[$key].id}" data-group="icloud"  name="optionsRadios" id="optionsRadios{$item.id}2" value="{$item.id}" type="radio" />
                                                                                 <span class="sp">
                                                                             <strong>{$item.period}</strong> {if $item.period == 7}days{elseif $item.period == 1}month{else}months{/if}
                                                                         </span>
@@ -356,11 +360,14 @@ description="Pumpic offers high-quality cell phone tracking software for a good 
                                                                         </li>
                                                                     {/foreach}
                                                                 </ul>
+
                                                                 <button class="btn btn-default ga-action-click"
                                                                         ga-action ="click"
                                                                         ga-category="store"
                                                                         ga-label="buy icloud"
-                                                                        value="true" type="submit" name="price[submit]">Buy</button>
+                                                                        value="true" type="submit" name="price[submit]"
+                                                                        data-fsc-action="Checkout"
+                                                                >Buy</button>
                                                             </form>
                                                             {*<div class="space_line">&nbsp;</div>*}
                                                         </div>
@@ -473,5 +480,22 @@ our_products (text): Включить выключить блок OUR PRODUCTS (
 {include file='../includes/main/main-analytics-footer.tpl'
 emptyScript="true"}
 <script src="/javascripts/frontend.min.js?1423094400" data-delete="delete"></script><script src="/javascripts/store-init.js"></script>
+
+    {literal}
+        <script>
+            //data-fsc-item-path-value
+            $(function () {
+//
+
+                $('.buy-form-with-offer').on('change', 'input.data-price', function () {
+                   var product = $(this).data('product');
+                   console.log(product);
+                    fastspring.builder.reset();
+                    fastspring.builder.update(product,1);
+               });
+            });
+        </script>
+    {/literal}
+
 </body>
 </html>

@@ -11,8 +11,17 @@ $obj = new includes\lib\users\Order;
 // smarty config
 require_once 'smarty.config.php';
 
+if (isset($_COOKIE['store']) && !empty($_COOKIE['store'])){
+    $namespace = $_COOKIE['store'];
+    //@TODO do something
+
+} elseif (!isset($_COOKIE['store']) || empty($_COOKIE['store'])) {
+  $namespace = getNamespace($obj);
+    //@TODO show needed page
+}
+
 /* list order */
-$products = $obj->getProducts('second-store');
+$products = $obj->getProducts($namespace);
 
 /* form_order */
 $_request = (isset($_POST['price']) and !empty($_POST['price'])) ? $_POST['price']: false;
@@ -38,8 +47,8 @@ if($_request['productID']) {
 if(is_array($products)) {
     if(isset($products['iosiCloud'])) {
         foreach($products['iosiCloud'] as $item) :
-            if ($item['period'] == 12 && $item['id']) {
-                $smarty->assign('defaultIosiCloudProduct', $item['id']);
+            if ($item['period'] == 24 && $item['id']) {
+                $smarty->assign('defaultIosiCloud', $item['id']);
                 $smarty->assign('defaultIosiCloudPrice', round($item['price'] / $item['period'], 2));
             }
         endforeach;
@@ -63,17 +72,30 @@ if(is_array($products)) {
     }
 
 }
-$_curr = system\Currency::getInstance();
-$_curr -> setFilter( ['iso' => ['USD','EUR','GBP','CAD','AUD'] ] );
-$_rates = $_curr -> getCurrencies();
 
-$smarty->assign('rates', json_encode($_rates));
-$smarty->assign('showRobots', 'no');
+
 
 // init output params!
 $smarty->assign('getProducts', $products);
+if ($namespace == 'third'){
+    $smarty->display($b_dir . '/templates/pages/store-ab-test.tpl');
+} else {
+    $smarty->display($b_dir . '/templates/pages/store.tpl');
 
-$smarty->display($b_dir . '/templates/pages/store.tpl');
+}
 
 
+
+function getNamespace($obj)
+{
+    $stores = array(0 =>'second-store', 1 => 'third');
+
+    $clientsNumber = $obj ->getStoreClientsCount();
+    $obj->incrementStoreClientsCount();
+    $store = $clientsNumber % 2;
+    $namespace = $stores[$store];
+    setcookie("store", $namespace, time()+365*24*60*60, '/');
+
+    return $namespace;
+}
 

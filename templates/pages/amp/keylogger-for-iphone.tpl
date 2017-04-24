@@ -208,7 +208,42 @@ Pumpic is reliable parental control software with wide range of impressive featu
         }
 
 
-                                                                                                                                                                         <div class="clearfix"></div>
+        <div id="block-content" class="light col-sm-12"><h2 class="h2 text-center reviews">Over 10 000 Happy and Grateful Customers Worldwide:</h2>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="feature">
+                        <div class="text-center">
+                            <amp-img src="/images/testimonials/Gerard-H.png" width="80" height="80" layout="fixed"
+                                     alt=""></amp-img>
+                        </div>
+                        <h4>Gerard H. – father of 17-year-old daughter</h4>
+                            <p>“Pumpic’s keylogger feature is a life-savior. I noticed that my girl became nervous and had rapid mood changes, but she never wanted to talk about what’s going on. I had no choice but to install a monitoring app on her iPhone. When looking through keystroke log with her Kik messages, I realized that one of her classmates bullied her. After I had talked to his parents, he stopped. My girl is OK now. Don’t even know how I could discover the problem without Pumpic.”</p>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="feature">
+                        <div class="text-center">
+                            <amp-img src="/images/testimonials/Aline-W.png" width="80" height="80" layout="fixed"
+                                     alt="monitor online activity"></amp-img>
+                        </div>
+                        <h4>Aline W. – mother of 14-year-old son</h4>
+                        <p>“I have a teen son – and he’s a real pain in the rear (oh, boys – what else can I say?). He was spending too much time with his iPhone. First, I thought he was playing online games or whatever teens play, but he didn’t want to show or talk about it. Looking through apps he used and browser history didn’t help – he was clearing it every day. With a keylogger, I was able to see even deleted website addresses he visited… Well, after that his dad and I had a long about birds and bees talk with him :) Thank you, Pumpic, you saved me a lot of nerve.”</p>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="feature">
+                        <div class="text-center">
+                            <amp-img src="/images/testimonials/Matthew-T.png" width="80" height="80" layout="fixed"
+                                     alt=""></amp-img>
+                        </div>
+                        <h4>Matthew T. – father of 15-year-old son</h4>
+                        <p>“Definitely worth the investment. I’ve looked through several parental monitoring apps and picked Pumpic for its simplicity and a wide range of features. It’s got all I need to track and control my reckless kid. Yes, it cost me a buck, but I’m not the one to scrimp on my offspring’s safety. I regularly use every one of Pumpic’s two dozen functions, with GPS tracker and keylogger being the most useful. Good app for good parents.”</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="clearfix"></div>
                                                                                                                                                                          {include file='../../includes/amp/buy-now-banner.tpl'}
                                                                                                                                                                          {include file='../../includes/amp/recommended-by.tpl'}
                                                                                                                                                                          {include file='../../includes/amp/few-quick-links.tpl' theme='light'}

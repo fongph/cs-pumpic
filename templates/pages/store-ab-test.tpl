@@ -12,15 +12,15 @@ description="Pumpic offers high-quality cell phone tracking software for a good 
         data-storefront="pumpic.test.onfastspring.com/popup-pumpic"
         {*data-data-callback="dataCallbackFunction"*}
         {*data-error-callback="errorCallback"*}
-        {*data-before-requests-callback="beforeRequestsCallbackFunction"*}
+        data-before-requests-callback="beforeRequestsCallbackFunction"
         {*data-after-requests-callback="afterRequestsCallbackFunction"*}
         {*data-before-markup-callback="beforeMarkupCallbackFunction"*}
         {*data-after-markup-callback="afterMarkupCallbackFunction"*}
-        {*data-decorate-callback="decorateURLFunction"*}
-        {*data-popup-event-received="popupEventReceived"*}
+        data-decorate-callback="decorateURLFunction"
+        data-popup-event-received="popupEventReceived"
         {*data-popup-webhook-received="popupWebhookReceived"*}
         {*data-popup-closed="onPopupClose"*}
-        {*data-debug="true"*}
+        data-debug="true"
         {*data-continuous="true"*}
 >
 </script>
@@ -483,6 +483,85 @@ emptyScript="true"}
 
     {literal}
         <script>
+            var QueryString = function () {
+                // This function is anonymous, is executed immediately and
+                // the return value is assigned to QueryString!
+                var query_string = {};
+                var query = window.location.search.substring(1);
+                var vars = query.split("&");
+                for (var i=0;i<vars.length;i++) {
+                    var pair = vars[i].split("=");
+                    // If first entry with this name
+                    if (typeof query_string[pair[0]] === "undefined") {
+                        query_string[pair[0]] = decodeURIComponent(pair[1]);
+                        // If second entry with this name
+                    } else if (typeof query_string[pair[0]] === "string") {
+                        var arr = [ query_string[pair[0]],decodeURIComponent(pair[1]) ];
+                        query_string[pair[0]] = arr;
+                        // If third or later entry with this name
+                    } else {
+                        query_string[pair[0]].push(decodeURIComponent(pair[1]));
+                    }
+                }
+                return query_string;
+            }();
+        </script>
+        <script>
+            $( document ).ready(function() {
+
+                //initialize  product before popup open
+                var product = $('input.data-price').data('product');
+                fastspring.builder.reset();
+                fastspring.builder.update(product,1);
+            })
+            function beforeRequestsCallbackFunction() {
+                console.log('beforeRequestsCallbackFunction');
+            }
+            function decorateURLFunction(url) {
+                var linkerParam = null;
+
+                ga(function() {
+                    var trackers = ga.getAll();
+                    trackers.forEach(function(tracker) {
+                        console.log(tracker.get('name'));
+                    });
+                    linkerParam = trackers[0].get('linkerParam');
+                });
+                console.log('URL ' + url + ' linkerParam ' + linkerParam)
+
+                return (linkerParam ? url + '?' + linkerParam : url);
+
+            }
+            function popupEventReceived(custom) {
+                console.log('popupEventReceived ' + custom.event);
+                if (custom.event == 'FSC-checkoutStep1'){
+                    var request = $.ajax({
+                    url: 'buy.html',
+                    type: 'POST',
+                    data: custom,
+                    success: function(order_referrer) {
+                        console.log('SUCCESS');
+                        console.log(order_referrer);
+                        var tags = {
+                            "orderReferrerCustom": order_referrer
+                        };
+                        fastspring.builder.push({'tags': tags});
+
+                    },
+                        error: function() {
+                            console.log('An error has occurred');
+                        }
+                    });
+                    request.done(function(msg) {
+                        console.log( msg );
+                    });
+
+                    request.fail(function(jqXHR, textStatus) {
+                        console.log( "Request failed: " + textStatus );
+                    });
+                }
+
+            }
             //data-fsc-item-path-value
             $(function () {
 //
@@ -492,8 +571,13 @@ emptyScript="true"}
                    console.log(product);
                     fastspring.builder.reset();
                     fastspring.builder.update(product,1);
-               });
+                });
+
+//                var object_;
+//                fastspring.builder.recognize({object_});
+//                console.log(object_)
             });
+
         </script>
     {/literal}
 

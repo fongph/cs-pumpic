@@ -174,8 +174,6 @@ class Order extends ManagerUser
 
         $redirectUrl = $response->getRedirectUrl();
         
-        
-        
         return $redirectUrl;
     } 
     
@@ -438,6 +436,13 @@ class Order extends ManagerUser
     public function incrementAmpStoreClientsCount()
     {
         return $this->_pdo->exec("UPDATE `options` SET `value` = `value`+1 WHERE `name` = 'pumpic-amp-store-clients-count';");
+
+    }
+
+    public function getProductByPath($path)
+    {
+        $path = $this->_pdo->quote($path);
+        return $this->_pdo->query("SELECT `id` FROM `products` WHERE `code_fastspring` = {$path};")->fetchColumn();
 
     }
 

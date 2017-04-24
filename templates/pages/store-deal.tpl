@@ -1,6 +1,5 @@
 {*Order out="getProducts"*}
 {*formOrder post=$smarty.post*}
-{$robots='no'}
 {include file='../includes/main/main-header.tpl'
 showRand="true"
 title="Phone Tracker Prices and Subscription Plans | Pumpic"

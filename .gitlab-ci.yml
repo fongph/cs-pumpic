@@ -3,6 +3,7 @@ stages:
 
 before_script:
   - apt-get update && apt-get install -qqy git unzip
+  - docker-php-ext-install bcmath
   - eval $(ssh-agent -s)
   - ssh-add <(echo "$SSH_PRIVATE_KEY")
   - mkdir -p ~/.ssh

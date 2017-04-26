@@ -10,7 +10,7 @@ build-test:
   script:
    - docker build -t deployer ~/deployer/.
   tags:
-   - docker 
+   - shell 
   
 deploy:
   stage: deploy

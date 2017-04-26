@@ -1,4 +1,4 @@
-image: deployer
+image: local/deployer
 
 stages:
   - deploy

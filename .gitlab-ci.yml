@@ -9,5 +9,5 @@ deploy:
   only:
     - master
   tags:
-    - docker
+    - shell
   when: manual

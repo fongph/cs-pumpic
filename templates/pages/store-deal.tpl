@@ -455,7 +455,7 @@ description="Pumpic offers high-quality cell phone tracking software for a good 
         transform: translate(-50%, -50%);
     }
     .discount-modal_content {
-        padding: 70px 0 60px;
+        padding: 20px 20px 50px;
         background-color: #ffffff;
         border-radius: 8px;
     }
@@ -468,17 +468,26 @@ description="Pumpic offers high-quality cell phone tracking software for a good 
         right: 3px;
     }
     .discount-modal_body h2 {
-        font-size: 23px;
+        font-size: 78px;
+        color: #2fbdbd;
+        font-weight: bold;
+        margin-bottom: 0;
+    }
+    .discount-modal_body .modal-subtitle {
+        font-size: 27px;
         font-weight: normal;
-        margin-bottom: 30px;
+        margin-bottom: 15px;
+        text-align: center;
+        color: #4d4f5b;
     }
 
     .discount-modal_code {
-        background-color: #2FBDBD;
         font-size: 44px;
         font-weight: bold;
         letter-spacing: 0.05em;
-        color: #ffffff;
+        color: #CF4757;
+        border-top: 1px solid #DBDCDE;
+        border-bottom: 1px solid #DBDCDE;
         text-align: center;
         padding: 15px 0;
     }
@@ -507,13 +516,14 @@ description="Pumpic offers high-quality cell phone tracking software for a good 
         <div class="discount-modal_content">
             <button type="button" class="close" data-dismiss="modal">&times;</button>
             <div class="discount-modal_body">
-                <h2>GET 10% OFF NOW!</h2>
+                <h2>WAIT!</h2>
+                <p class="modal-subtitle">Get 10% OFF now!</p>
                 <div class="discount-modal_code">10OFF4YOU</div>
                 <p class="discount-modal_text">Just copy the discount code above <br>
                     and enter it at the Checkout</p>
             </div>
             <div class="discount-modal_footer">
-                <button type="button" class="btn btn-default ga-action-click" ga-category="Store-exit-banner" ga-action="click" ga-label="10%-off" data-dismiss="modal">Get your 10% OFF</button>
+                <button type="button" class="btn btn-default ga-action-click" ga-category="Store-exit-banner" ga-action="click" ga-label="10%-off" data-dismiss="modal">Choose Your Plan</button>
             </div>
         </div>
 

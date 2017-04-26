@@ -1,16 +1,17 @@
-image: registry.pumpic.com/deployer
-
 stages:
   - deploy
 
 before_script:
+  - apt-get update && apt-get install -qqy git unzip
   - eval $(ssh-agent -s)
   - ssh-add <(echo "$SSH_PRIVATE_KEY")
   - mkdir -p ~/.ssh
   - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
+  - curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
 deploy:
   stage: deploy
+  image: php:7.0
   script:
     - composer update --no-dev --verbose --prefer-dist --optimize-autoloader --no-progress
     - ./vendor/boomers/deployer-recipes/dep deploy -vvvv

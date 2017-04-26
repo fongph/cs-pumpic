@@ -1,13 +1,6 @@
 stages:
   - deploy
   
-build-test:
-  stage: prepare
-  script:
-   - docker build -t deployer ~/deployer/.
-  tags:
-   - shell 
-
 deploy:
   stage: deploy
   script:
@@ -18,4 +11,3 @@ deploy:
   tags:
     - docker
   when: manual
-    

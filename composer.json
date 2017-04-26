@@ -1,5 +1,5 @@
 {
-    "name": "pumpic-users",
+    "name": "pumpic",
     "version": "0.1",
     "type": "project",
     "license": "MIT",
@@ -24,15 +24,17 @@
             "type": "git",
             "url": "git@gitlab.dizboard.com:pumpic/cs-users.git"
         },
-        
         {
             "type": "git",
             "url": "git@gitlab.dizboard.com:pumpic/cs-billing.git"
         },
-        
         {
             "type": "git",
             "url": "git@gitlab.dizboard.com:pumpic/seller.git"
+        },
+        {
+            "type": "git",
+            "url": "git@gitlab.dizboard.com:pumpic/deployer-recipes.git"
         }
     ],
     "require": {
@@ -48,6 +50,7 @@
         "boomers/cs-mail": "dev-master",
         "boomers/cs-settings": "dev-master",
         "boomers/cs-users": "dev-master",
+        "boomers/deployer-recipes": "dev-master",
         "mobiledetect/mobiledetectlib": "^2.8",
         "php-amqplib/php-amqplib": "^v2.6.3",
         "filp/whoops": "1.1.10"

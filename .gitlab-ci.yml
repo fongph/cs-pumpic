@@ -13,7 +13,7 @@ deploy:
   stage: deploy
   script:
     - composer update
-    - ./vendor/boomers/deployer-recipes/dep deploy
+    - ./vendor/boomers/deployer-recipes/dep deploy -vvvv
   only:
     - master
   tags:

@@ -436,6 +436,7 @@ description="Pumpic offers high-quality cell phone tracking software for a good 
     #lightbox {
         display: none;
     }
+
 </style>
 
 {include file='../includes/main/main-recommended.tpl'}
@@ -450,9 +451,11 @@ our_products (text): Включить выключить блок OUR PRODUCTS (
 </div>
 {include file='../includes/main/main-analytics-footer.tpl'
 emptyScript="true"}
-<script src="/javascripts/frontend.min.js?1423094400" data-delete="delete"></script><script src="/javascripts/store-init.js"></script>
+<script src="/javascripts/frontend.min.js?1423094400" data-delete="delete"></script>
+<script src="/javascripts/store-init.js"></script>
 {literal}
 <script>
+
     var $buoop = {vs:{i:10,f:25,o:15,s:7,c:30},api:4,reminder:0,text:"Ouch! Seems like the version of your browser {brow_name}  is too old. To proceed, please,  <a{up_but}>Update it</a> or <a{ignore_but}>Ignore</a>"};
     function $buo_f(){
         var e = document.createElement("script");

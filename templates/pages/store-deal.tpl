@@ -435,8 +435,90 @@ description="Pumpic offers high-quality cell phone tracking software for a good 
     #lightbox {
         display: none;
     }
+
+
+    @media (min-width: 500px) {
+        #discount-modal .modal-dialog {
+            width: 450px;
+        }
+    }
+    @media (max-width: 499px) {
+        #discount-modal .modal-dialog {
+            width: 95%;
+        }
+    }
+    #discount-modal .modal-dialog {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin: 0;
+        transform: translate(-50%, -50%);
+    }
+    .discount-modal_content {
+        padding: 70px 0 60px;
+        background-color: #ffffff;
+        border-radius: 8px;
+    }
+    .discount-modal_content .close {
+        font-weight: 300;
+        font-size: 35px;
+        margin-right: 14px;
+        position: absolute;
+        top: 10px;
+        right: 3px;
+    }
+    .discount-modal_body h2 {
+        font-size: 23px;
+        font-weight: normal;
+        margin-bottom: 30px;
+    }
+
+    .discount-modal_code {
+        background-color: #2FBDBD;
+        font-size: 44px;
+        font-weight: bold;
+        letter-spacing: 0.05em;
+        color: #ffffff;
+        text-align: center;
+        padding: 15px 0;
+    }
+    @media (max-width: 500px) {
+        .discount-modal_code {
+            font-size: 35px;
+        }
+    }
+    .discount-modal_text {
+        line-height: 2.3;
+        margin: 20px 0;
+        text-align: center;
+    }
+    .discount-modal_footer {
+        text-align: center;
+    }
+    .discount-modal_footer .btn {
+        font-weight: normal;
+        font-size: 22px;
+        padding: 8px 35px;
+    }
 </style>
 
+<div id="discount-modal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <div class="discount-modal_content">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <div class="discount-modal_body">
+                <h2>GET 10% OFF NOW!</h2>
+                <div class="discount-modal_code">10OFF4YOU</div>
+                <p class="discount-modal_text">Just copy the discount code above <br>
+                    and enter it at the Checkout</p>
+            </div>
+            <div class="discount-modal_footer">
+                <button type="button" class="btn btn-default ga-action-click" ga-category="Store-exit-banner" ga-action="click" ga-label="10%-off" data-dismiss="modal">Get your 10% OFF</button>
+            </div>
+        </div>
+
+    </div>
+</div>
 {include file='../includes/main/main-recommended.tpl'}
 
 <!-- FOOTER -->
@@ -452,6 +534,16 @@ emptyScript="true"}
 <script src="/javascripts/frontend.min.js?1423094400" data-delete="delete"></script><script src="/javascripts/store-init.js"></script>
 {literal}
 <script>
+    $(function () {
+        var modalWasShown = false;
+        $(document).mouseleave(function () {
+            if(!modalWasShown) {
+                $('#discount-modal').modal("show")
+                modalWasShown = true;
+            }
+        });
+    })
+
     var $buoop = {vs:{i:10,f:25,o:15,s:7,c:30},api:4,reminder:0,text:"Ouch! Seems like the version of your browser {brow_name}  is too old. To proceed, please,  <a{up_but}>Update it</a> or <a{ignore_but}>Ignore</a>"};
     function $buo_f(){
         var e = document.createElement("script");

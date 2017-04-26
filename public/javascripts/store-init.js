@@ -14,10 +14,10 @@ $(document).ready(function(){
 			.done(function(data) {
 				$('#loader').fadeOut()
 				$(".prod-list-android").html(data);
-				$('script[data-delete=delete]').remove();
-				var s = document.createElement("script");
-				s.type = "text/javascript";
-				s.src = "/javascripts/frontend.min.js";
-				$("body").append(s);
+				// $('script[data-delete=delete]').remove();
+				// var s = document.createElement("script");
+				// s.type = "text/javascript";
+				// s.src = "/javascripts/frontend.min.js";
+				// $("body").append(s);
 				});
 });

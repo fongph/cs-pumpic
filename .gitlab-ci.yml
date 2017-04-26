@@ -5,6 +5,7 @@ stages:
 
 before_script:
   - docker login -u $REGISTRY_USER -p $REGISTRY_PASSWORD registry.pumpic.com
+  - docker pull registry.pumpic.com/deployer
  
 deploy:
   stage: deploy

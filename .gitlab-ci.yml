@@ -12,7 +12,7 @@ before_script:
 deploy:
   stage: deploy
   script:
-    - composer update
+    - composer update --no-progress
     - ./vendor/boomers/deployer-recipes/dep deploy -vvvv
   only:
     - master

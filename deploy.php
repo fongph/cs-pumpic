@@ -1,10 +1,8 @@
 <?php
 
-var_dump($_ENV['PASSWORD']);
-
 require 'deploy/recipe.php';
 
-server('main', '148.251.64.1')
+server('main', '207.154.214.52')
     ->path('/var/www/pumpic/www/pumpic.com')
     ->user('app', $_ENV['PASSWORD']);
 

@@ -4,9 +4,10 @@ stages:
   - deploy
 
 before_script:
-  - docker login -u $REGISTRY_USER -p $REGISTRY_PASSWORD registry.pumpic.com
-  - docker pull registry.pumpic.com/deployer
- 
+  - eval $(ssh-agent -s)
+  - ssh-add <(echo "$SSH_PRIVATE_KEY")
+  - mkdir -p ~/.ssh
+
 deploy:
   stage: deploy
   script:

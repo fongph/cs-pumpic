@@ -1,9 +1,11 @@
+image: registry.pumpic.com/deployer
+
 stages:
   - deploy
-  
+
 before_script:
   - docker login -u $REGISTRY_USER -p $REGISTRY_PASSWORD registry.pumpic.com
-
+ 
 deploy:
   stage: deploy
   script:

@@ -1,5 +1,4 @@
 stages:
-  - prepare
   - deploy
   
 build-test:
@@ -18,6 +17,5 @@ deploy:
     - master
   tags:
     - docker
-  image: deployer
   when: manual
     

@@ -1,15 +1,19 @@
 image: php:7.0
 
 stages:
-  - deployer_setup
-
-deployer setup:
-  stage: deployer_setup
+  - deploy
+  
+before_script:
+- apt-get update && apt-get install -qqy git unzip
+- curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
+- curl -LsS http://codeception.com/codecept.phar -o /usr/local/bin/codecept
+- chmod a+x /usr/local/bin/codecept
+- composer install
+  
+deploy:
+  stage: deploy
   script:
-    - git clone git@gitlab.dizboard.com:pumpic/deployer-recipes.git
-    - cp ./deployer-recipes/dep /usr/local/bin/dep
-    - chmod +x /usr/local/bin/dep
-    - dep
+    - ./vendor/boomers/deployer-recipes/dep
   only:
     - master
   tags:

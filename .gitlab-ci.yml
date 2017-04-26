@@ -13,6 +13,6 @@ deploy:
   only:
     - master
   tags:
-    - deployer
+    - docker
   when: manual
     

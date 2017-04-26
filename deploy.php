@@ -4,7 +4,7 @@ require 'deploy/recipe.php';
 
 server('main', '148.251.64.1')
     ->path('/var/www/pumpic/www/pumpic.com')
-    ->user('pumpic', 'PA%*1Z)CqVq4#z58dgfg4');
+    ->user('app', $_ENV['PASSWORD']);
 
 set('repository', 'git@gitlab.dizboard.com:pumpic/cs-pumpic.git');
 set('new_dirs', ['templates_c', 'cache']);

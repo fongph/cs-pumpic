@@ -2,19 +2,17 @@ stages:
   - prepare
   - deploy
   
-before_script:
-- composer install
-
 build-test:
   stage: prepare
   script:
    - docker build -t deployer ~/deployer/.
   tags:
    - shell 
-  
+
 deploy:
   stage: deploy
   script:
+    - composer install
     - ./vendor/boomers/deployer-recipes/dep
   only:
     - master

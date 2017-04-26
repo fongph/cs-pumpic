@@ -12,7 +12,7 @@ before_script:
 deploy:
   stage: deploy
   script:
-    - composer install
+    - composer update
     - ./vendor/boomers/deployer-recipes/dep
   only:
     - master

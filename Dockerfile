@@ -23,5 +23,5 @@ RUN curl -sS https://raw.githubusercontent.com/composer/getcomposer.org/1b137f8b
 RUN mv composer.phar /usr/local/bin/composer
 RUN chmod +x /usr/local/bin/composer
 RUN mkdir /code && chown -R www-data:www-data /code
-RUN echo "Test"
+RUN echo "Test1"
 WORKDIR /code

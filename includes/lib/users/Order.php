@@ -170,7 +170,7 @@ class Order extends ManagerUser
         
         if($testMode) $this -> _gateway->setTestMode();
                 
-        $response =$this -> _gateway->purchaseProduct()->send();
+        $response = $this -> _gateway->purchaseProduct()->send();
 
         $redirectUrl = $response->getRedirectUrl();
         

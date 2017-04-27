@@ -10,14 +10,15 @@ description="Pumpic offers high-quality cell phone tracking software for a good 
         src="https://d1f8f9xcsvx3ha.cloudfront.net/sbl/0.7.3/fastspring-builder.min.js"
         type="text/javascript"
         data-storefront="pumpic.test.onfastspring.com/popup-pumpic"
-        {*data-data-callback="dataCallbackFunction"*}
+        data-data-callback="dataCallbackFunction"
         {*data-error-callback="errorCallback"*}
         data-before-requests-callback="beforeRequestsCallbackFunction"
         {*data-after-requests-callback="afterRequestsCallbackFunction"*}
         {*data-before-markup-callback="beforeMarkupCallbackFunction"*}
         {*data-after-markup-callback="afterMarkupCallbackFunction"*}
         data-decorate-callback="decorateURLFunction"
-        data-popup-event-received="popupEventReceived"
+        {*data-popup-event-received="popupEventReceived"*}
+        {*data-access-key="-BR1EJFYQBWQN0AWNQNS8G"*}
         {*data-popup-webhook-received="popupWebhookReceived"*}
         {*data-popup-closed="onPopupClose"*}
         data-debug="true"
@@ -510,12 +511,17 @@ emptyScript="true"}
             $( document ).ready(function() {
 
                 //initialize  product before popup open
-                var product = $('input.data-price').data('product');
+                var product = $('input.data-price[data-period="24"]').data('product');
+                console.log('PRODUCT ', product)
                 fastspring.builder.reset();
                 fastspring.builder.update(product,1);
             })
             function beforeRequestsCallbackFunction() {
                 console.log('beforeRequestsCallbackFunction');
+            }
+
+            function dataCallbackFunction(data_object) {
+                console.log('dataCallbackFunction', data_object);
             }
             function decorateURLFunction(url) {
                 var linkerParam = null;
@@ -532,36 +538,41 @@ emptyScript="true"}
                 return (linkerParam ? url + '?' + linkerParam : url);
 
             }
-            function popupEventReceived(custom) {
-                console.log('popupEventReceived ' + custom.event);
-                if (custom.event == 'FSC-checkoutStep1'){
-                    var request = $.ajax({
-                    url: 'buy.html',
-                    type: 'POST',
-                    data: custom,
-                    success: function(order_referrer) {
-                        console.log('SUCCESS');
-                        console.log(order_referrer);
-                        var tags = {
-                            "orderReferrerCustom": order_referrer
-                        };
-                        fastspring.builder.push({'tags': tags});
-
-                    },
-                        error: function() {
-                            console.log('An error has occurred');
-                        }
-                    });
-                    request.done(function(msg) {
-                        console.log( msg );
-                    });
-
-                    request.fail(function(jqXHR, textStatus) {
-                        console.log( "Request failed: " + textStatus );
-                    });
-                }
-
-            }
+            var tags = {};
+//            function popupEventReceived(custom) {
+//                console.log('popupEventReceived ' + custom.event);
+//                if (!$.isEmptyObject(tags)){
+//                    fastspring.builder.push({'tags': tags});
+//                    console.log('TAG!!')
+//                }
+//                if (custom.event == 'FSC-checkoutStep1'){
+//                    var request = $.ajax({
+//                    url: 'buy.html',
+//                    type: 'POST',
+//                    data: custom,
+//                    success: function(order_referrer) {
+//                        console.log('SUCCESS');
+//                        console.log(order_referrer);
+//                        tags = {
+//                            "orderReferrerCustom": order_referrer
+//                        };
+//                        fastspring.builder.push({'tags': tags});
+//                        console.log('TAGS');
+//                    },
+//                        error: function() {
+//                            console.log('An error has occurred');
+//                        }
+//                    });
+//                    request.done(function(msg) {
+//                        console.log( msg );
+//                    });
+//
+//                    request.fail(function(jqXHR, textStatus) {
+//                        console.log( "Request failed: " + textStatus );
+//                    });
+//                }
+//
+//            }
             //data-fsc-item-path-value
             $(function () {
 //

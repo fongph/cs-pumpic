@@ -11,18 +11,10 @@ description="Pumpic offers high-quality cell phone tracking software for a good 
         type="text/javascript"
         data-storefront="pumpic.test.onfastspring.com/popup-pumpic"
         data-data-callback="dataCallbackFunction"
-        {*data-error-callback="errorCallback"*}
         data-before-requests-callback="beforeRequestsCallbackFunction"
-        {*data-after-requests-callback="afterRequestsCallbackFunction"*}
-        {*data-before-markup-callback="beforeMarkupCallbackFunction"*}
-        {*data-after-markup-callback="afterMarkupCallbackFunction"*}
         data-decorate-callback="decorateURLFunction"
         data-popup-event-received="popupEventReceived"
-        {*data-access-key="-BR1EJFYQBWQN0AWNQNS8G"*}
-        {*data-popup-webhook-received="popupWebhookReceived"*}
-        {*data-popup-closed="onPopupClose"*}
         data-debug="true"
-        {*data-continuous="true"*}
 >
 </script>
 <body>
@@ -541,10 +533,10 @@ emptyScript="true"}
             var tags = {};
             function popupEventReceived(custom) {
                 console.log('popupEventReceived ' + custom.event);
-//                if (!$.isEmptyObject(tags)){
-//                    fastspring.builder.push({'tags': tags});
-//                    console.log('TAG!!')
-//                }
+                if (!$.isEmptyObject(tags)){
+                    fastspring.builder.push({'tags': tags});
+                    console.log('TAG!!')
+                }
                 if (custom.event == 'FSC-checkoutStep1'){
                     var request = $.ajax({
                     url: 'buy.html',
@@ -557,7 +549,7 @@ emptyScript="true"}
                             "orderReferrerCustom": order_referrer
                         };
 //                        fastspring.builder.push({'tags': tags});
-//                        fastspring.builder.tag("orderReferrerCustom",order_referrer);
+                        fastspring.builder.tag("orderReferrerCustom",order_referrer);
                         console.log('TAGS');
 
                     },
@@ -577,18 +569,12 @@ emptyScript="true"}
             }
             //data-fsc-item-path-value
             $(function () {
-//
-
                 $('.buy-form-with-offer').on('change', 'input.data-price', function () {
                    var product = $(this).data('product');
                    console.log(product);
                     fastspring.builder.reset();
                     fastspring.builder.update(product,1);
                 });
-
-//                var object_;
-//                fastspring.builder.recognize({object_});
-//                console.log(object_)
             });
 
         </script>

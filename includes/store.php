@@ -22,7 +22,8 @@ if (isset($_COOKIE['store']) && !empty($_COOKIE['store'])){
 
 /* list order */
 $products = $obj->getProducts($namespace);
-
+//echo '<pre>';
+//var_dump($products);
 /* form_order */
 $_request = (isset($_POST['price']) and !empty($_POST['price'])) ? $_POST['price']: false;
 if($_request['productID']) {

@@ -152,7 +152,7 @@ class generate_subscribe_form_widget extends WP_Widget
 		echo $before_widget;
                 $html = '<div class="box-form-subscribe '.$instance['type_form'].'">
                 
-                                <form method="POST" action="/security-subscribe-form-mailChimp.html" name="subscribe-'.get_the_ID().'">
+                                <form method="POST" action="https://pumpic.com/security-subscribe-form-mailChimp.html" name="subscribe-'.get_the_ID().'">
 
                                     <input type="hidden" name="link" value="'.$instance['link'].'" />
 

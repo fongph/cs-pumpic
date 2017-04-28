@@ -20,11 +20,9 @@
     <title><?php wp_title( '|', true, 'right' ); ?> <?php /* | Sign up for Pumpic Blog */ ?></title>
 
     <link rel="shortcut icon" type="image/png" href="<?php echo getStaticUrl();?>/images/favicon.png"/>
-    
     <?php wp_head(); ?>
-
     <!-- Bootstrap -->
-    <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,300italic,400italic,600italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,300italic,400italic,600italic,700italic' rel='stylesheet' type='text/css'>
     <link href="<?php echo getStaticUrl();?>/stylesheets/wp.min.css?<?= strtotime( '2015-02-05' ) ?>" rel="stylesheet">
     
     <?php /*<link href="<?php echo getStaticUrl();?>/css/bootstrap.css" rel="stylesheet">
@@ -47,6 +45,10 @@
             <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
             <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+<!--
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+-->
     
     <?php /*<script src="<?php echo getStaticUrl();?>/javascripts/wp.min.js?<?= strtotime( '2015-02-05' ) ?>"></script> */ ?>
     

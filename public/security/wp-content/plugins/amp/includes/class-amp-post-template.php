@@ -133,12 +133,12 @@ class AMP_Post_Template {
 			'publisher' => array(
 				'@type' => 'Organization',
 				'name' => $this->get( 'blog_name' ),
-                'logo' => array(
-                    '@type' => 'ImageObject',
-                    'url' => 'https://pumpic.com/images/logo/logo.png',
-                    'width' => 172,
-                    'height' => 44,
-                )
+				'logo' => array(
+					'@type' => 'ImageObject',
+                    			'url' => 'https://pumpic.com/images/logo/logo.png',
+                    			'width' => 172,
+                    			'height' => 44,
+                		)
 			),
 			'headline' => $post_title,
 			'datePublished' => date( 'c', $post_publish_timestamp ),

@@ -729,43 +729,43 @@ class Sexy_Author_Bio {
 
 			}
 
-		if ( $settings['author_links'] == "not_linked" ){ 
-			$html .= '<div class="pumpic-author-links" style=""><h3>About the Author</h3></div><div id="sab-gravatar"><span style="color:' . $settings['highlight_color'] . ';">';
-			if( !get_the_author_meta('avatar-url') ){
-				$html .= get_avatar( get_the_author_meta('ID'), $gravatar, '', get_the_author() );
+			if ( $settings['author_links'] == "not_linked" ){
+				$html .= '<div class="pumpic-author-links" style=""><h3>About the Author</h3></div><div id="sab-gravatar"><span style="color:' . $settings['highlight_color'] . ';">';
+				if( !get_the_author_meta('avatar-url') ){
+					$html .= get_avatar( get_the_author_meta('ID'), $gravatar, '', get_the_author() );
+				}else{
+					$html .= '<img alt="'.get_the_author().'" src="'.get_the_author_meta('avatar-url').'" />';
+				} /* add snippets */
+				$html .= '</span></div>'.$titleline.'<div id="sab-author"><span  itemprop="author" itemscope itemtype="https://schema.org/Person"><strong style="color:' . $settings['highlight_color'] . ';" itemprop="name">' . get_the_author() . '</strong></span></div><div id="sab-description">' . do_shortcode( nl2br( apply_filters( 'sexyauthorbio_author_description', get_the_author_meta( 'description' ) ) ) ) . '</div>';
+				$html .= '</div>';
 			}else{
-				$html .= '<img alt="'.get_the_author().'" src="'.get_the_author_meta('avatar-url').'" />';
-			} /* add snippets */
-			$html .= '</span></div>'.$titleline.'<div id="sab-author"><span  itemprop="author" itemscope itemtype="https://schema.org/Person"><strong style="color:' . $settings['highlight_color'] . ';" itemprop="name">' . get_the_author() . '</strong></span></div><div id="sab-description">' . do_shortcode( nl2br( apply_filters( 'sexyauthorbio_author_description', get_the_author_meta( 'description' ) ) ) ) . '</div>';
-			$html .= '</div>';
-		}else{
-			$html .= '<div id="sab-author"><span  itemprop="author" itemscope itemtype="https://schema.org/Person"><a rel="'.$nofollowshort.'author" href="' . $author_name_link . '" title="' . esc_attr( __( '', self::get_plugin_slug() ) . '' . get_the_author() ) .'" target="' . $settings['link_target'] . '" itemprop="name">' . get_the_author() . '</a></span></div><div id="sab-gravatar"><a '.$nofollow.'href="' . $author_avatar_link . '" target="' . $settings['link_target'] . '">';
-			if( !get_the_author_meta('avatar-url') ){
-				$html .= get_avatar( get_the_author_meta('ID'), $gravatar, '', get_the_author() );
-			}else{
-				$html .= '<img alt="'.get_the_author().'" src="'.get_the_author_meta('avatar-url').'" />';
-			}
-			$html .= '</a></div>'.$titleline.'<div id="sab-description">' . do_shortcode( nl2br( apply_filters( 'sexyauthorbio_author_description', get_the_author_meta( 'description' ) ) ) ) . '</div>';
-			
-			if($settings['icon_position'] == "bottom"){
-		
-				$html .= '<div id="sab-social-wrapper">';
+				$html .= '<div id="sab-author"><span  itemprop="author" itemscope itemtype="https://schema.org/Person"><a rel="'.$nofollowshort.'author" href="' . $author_name_link . '" title="' . esc_attr( __( '', self::get_plugin_slug() ) . '' . get_the_author() ) .'" target="' . $settings['link_target'] . '" itemprop="name">' . get_the_author() . '</a></span></div><div id="sab-gravatar"><a '.$nofollow.'href="' . $author_avatar_link . '" target="' . $settings['link_target'] . '">';
+				if( !get_the_author_meta('avatar-url') ){
+					$html .= get_avatar( get_the_author_meta('ID'), $gravatar, '', get_the_author() );
+				}else{
+					$html .= '<img alt="'.get_the_author().'" src="'.get_the_author_meta('avatar-url').'" />';
+				}
+				$html .= '</a></div>'.$titleline.'<div id="sab-description">' . do_shortcode( nl2br( apply_filters( 'sexyauthorbio_author_description', get_the_author_meta( 'description' ) ) ) ) . '</div>';
 
-				foreach ( array_reverse($social) as $network => $url ) {
-					if ( $url ){
-						$html .= '<a id="sab-'.$network.'" '.$nofollow.'href="' . $url . '" target="' . $settings['link_target'] . '"><img '.$fade.'id="sig-'.$network.'" alt="'.get_the_author().' on '.$network.'" src="'.plugins_url( $path, $plugin ).'/sexy-author-bio/public/assets/images/'.$iconset.'/'.$network.'.png"></a>';
+				if($settings['icon_position'] == "bottom"){
+
+					$html .= '<div id="sab-social-wrapper">';
+
+					foreach ( array_reverse($social) as $network => $url ) {
+						if ( $url ){
+							$html .= '<a id="sab-'.$network.'" '.$nofollow.'href="' . $url . '" target="' . $settings['link_target'] . '"><img '.$fade.'id="sig-'.$network.'" alt="'.get_the_author().' on '.$network.'" src="'.plugins_url( $path, $plugin ).'/sexy-author-bio/public/assets/images/'.$iconset.'/'.$network.'.png"></a>';
+						}
 					}
+
+					$html .= '</div>';
+
 				}
 
 				$html .= '</div>';
-
 			}
 
-			$html .= '</div>';
-		}
 
-
-		return $html;
+			return $html;
 
 		}
 

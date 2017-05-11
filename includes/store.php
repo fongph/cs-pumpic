@@ -10,37 +10,7 @@ $obj = new includes\lib\users\Order;
 
 // smarty config
 require_once 'smarty.config.php';
-$url = $_COOKIE['banner'];
 
-//var_dump($_SERVER['REQUEST_URI']);
-
-function preserve_qs() {
-    $queryString = str_replace ('/store.html', '', $_SERVER['REQUEST_URI']);
-    if (empty($queryString) && strpos($queryString, "?") === false) {
-        return "";
-    }
-    return $queryString;
-}
-
-if (isset($_COOKIE['banner']) && !empty($_COOKIE['banner'])){
-
-    if ($url != '/store'){
-        header("Location: //".$config['domain'].$url.".html" .  preserve_qs());
-    }
-
-} elseif (!isset($_COOKIE['page']) || empty($_COOKIE['page'])) {
-    $urls = array(0 =>'/store', 1 => '/store-deal');
-    $clientsNumber = $obj ->getStoreClientsCount();
-    $obj->incrementStoreClientsCount();
-    $url = $clientsNumber % 2;
-    $redirectUrl = $urls[$url];
-    setcookie('banner', $redirectUrl, time()+365*24*60*60, '/');
-//    setcookie('page', $redirectUrl);
-    if ($redirectUrl != '/store'){
-        header("Location: //".$config['domain'].$redirectUrl.".html" .  preserve_qs());
-    }
-
-}
 /* list order */
 $products = $obj->getProducts('second-store');
 

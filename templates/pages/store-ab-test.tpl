@@ -237,7 +237,7 @@ description="Pumpic offers high-quality cell phone tracking software for a good 
                                                                     ga-category="store"
                                                                     ga-label="buy icloud"
                                                                     value="true" type="submit" name="price[submit]"
-                                                                    data-fsc-action="Checkout"
+                                                                    data-fsc-item-path-value="{$defaultIosiCloudPath}" data-fsc-action="Add,Checkout"
                                                             >Buy</button>
 
                                                             {*<a href="https://pumpic.onfastspring.com/pumpic-icloud-24m-s"> Buy 24 month</a>*}
@@ -359,7 +359,7 @@ description="Pumpic offers high-quality cell phone tracking software for a good 
                                                                         ga-category="store"
                                                                         ga-label="buy icloud"
                                                                         value="true" type="submit" name="price[submit]"
-                                                                        data-fsc-action="Checkout"
+                                                                        data-fsc-item-path-value="{$defaultIosiCloudPath}" data-fsc-action="Add,Checkout"
                                                                 >Buy</button>
                                                             </form>
                                                             {*<div class="space_line">&nbsp;</div>*}
@@ -376,7 +376,7 @@ description="Pumpic offers high-quality cell phone tracking software for a good 
                                             {*<div id="loader"><img src="/images/loader.svg"></div>*}
                                             {*{include file='../includes/store/store-desktop.tpl'} for debug*}
 
-                                        {include file='../includes/store/store-desktop.tpl'}
+                                        {include file='../includes/store/store-desktop-ab-test.tpl'}
 
                                         </div>
                                         {* ---ANDROID---*}
@@ -505,9 +505,9 @@ emptyScript="true"}
                 //initialize  product before popup open
                 var product = $('input.data-price[data-period="24"]').data('product');
                 console.log('PRODUCT ', product)
-                fastspring.builder.reset();
-                fastspring.builder.update(product,1);
-            })
+//                fastspring.builder.reset();
+//                fastspring.builder.update(product,1);
+            });
             function beforeRequestsCallbackFunction() {
                 console.log('beforeRequestsCallbackFunction');
             }
@@ -531,51 +531,54 @@ emptyScript="true"}
 
             }
             var tags = {};
-            function popupEventReceived(custom) {
-                console.log('popupEventReceived ' + custom.event);
-                if (!$.isEmptyObject(tags)){
-                    fastspring.builder.push({'tags': tags});
-                    console.log('TAG!!')
-                }
-                if (custom.event == 'FSC-checkoutStep1'){
-                    var request = $.ajax({
-                    url: 'buy.html',
-                    type: 'POST',
-                    data: custom,
-                    success: function(order_referrer) {
-                        console.log('SUCCESS');
-                        console.log(order_referrer);
-                        tags = {
-                            "orderReferrerCustom": order_referrer
-                        };
-//                        fastspring.builder.push({'tags': tags});
-                        fastspring.builder.tag("orderReferrerCustom",order_referrer);
-                        console.log('TAGS');
-
-                    },
-                        error: function() {
-                            console.log('An error has occurred');
-                        }
-                    });
-                    request.done(function(msg) {
-                        console.log( msg );
-                    });
-
-                    request.fail(function(jqXHR, textStatus) {
-                        console.log( "Request failed: " + textStatus );
-                    });
-                }
-
-            }
+//            function popupEventReceived(custom) {
+//                console.log('popupEventReceived ' + custom.event);
+//                if (!$.isEmptyObject(tags)){
+//                    fastspring.builder.push({'tags': tags});
+//                    console.log('TAG!!')
+//                }
+//                if (custom.event == 'FSC-checkoutStep1'){
+//                    var request = $.ajax({
+//                    url: 'buy.html',
+//                    type: 'POST',
+//                    data: custom,
+//                    success: function(order_referrer) {
+//                        console.log('SUCCESS');
+//                        console.log(order_referrer);
+//                        tags = {
+//                            "orderReferrerCustom": order_referrer
+//                        };
+////                        fastspring.builder.push({'tags': tags});
+//                        fastspring.builder.tag("orderReferrerCustom",order_referrer);
+//                        console.log('TAGS');
+//
+//                    },
+//                        error: function() {
+//                            console.log('An error has occurred');
+//                        }
+//                    });
+//                    request.done(function(msg) {
+//                        console.log( msg );
+//                    });
+//
+//                    request.fail(function(jqXHR, textStatus) {
+//                        console.log( "Request failed: " + textStatus );
+//                    });
+//                }
+//
+//            }
             //data-fsc-item-path-value
             $(function () {
                 $('.buy-form-with-offer').on('change', 'input.data-price', function () {
                    var product = $(this).data('product');
                    console.log(product);
+                    $(this).closest('form').find('button').attr('data-fsc-action', 'Checkout');
                     fastspring.builder.reset();
                     fastspring.builder.update(product,1);
                 });
             });
+
+
 
         </script>
     {/literal}

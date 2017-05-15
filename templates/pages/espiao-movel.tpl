@@ -1,6 +1,12 @@
 {include file='../includes/main/main-header.tpl'
     title="Rastreador de celular | Pumpic"
     description="Pumpic rastreador de celular. Espiao movel e compativel com todos os dispositivos IOS e Android."
+    lang="pt-br"
+    langLinks='
+    <link rel="alternate" hreflang="en" href="https://pumpic.com/parental-control-software.html" />
+    <link rel="alternate" hreflang="de" href="https://pumpic.com/mobile-spion.html" />
+    <link rel="alternate" hreflang="pt-br" href="https://pumpic.com/espiao-movel.html" />
+    <link rel="alternate" hreflang="fr" href="https://pumpic.com/logiciel-de-controle-parental.html" />'
 }    
     
 <body>

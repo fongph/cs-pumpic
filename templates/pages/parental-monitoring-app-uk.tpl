@@ -3,6 +3,12 @@
 
     title="Mobile Phone Monitoring Software in UK"
     description="Reliable parental monitoring software in UK. Ensure child mobile security and online safety. Track calls, text messages, location, Internet activity, and more."
+    lang="en-gb"
+    langLinks='
+            <link rel="alternate" hreflang="en-au" href="https://pumpic.com/parental-monitoring-app-australia.html" />
+            <link rel="alternate" hreflang="en-us" href="https://pumpic.com/parental-monitoring-app-usa.html" />
+            <link rel="alternate" hreflang="en-ca" href="https://pumpic.com/parental-monitoring-app-canada.html" />
+            <link rel="alternate" hreflang="en-gb" href="https://pumpic.com/parental-monitoring-app-uk.html" />'
 }    
     
 <body>

@@ -1,6 +1,13 @@
 {include file='../includes/main/main-header.tpl'
     title="Logiciel de contrôle parental pour iPhone et Android | Pumpic"
     description="Gardez votre famille en sécurité avec Pumpic Logiciel espion portable. Visualisez les messages textes. Pistez les positions GPS. Suivez les activités en ligne."
+    lang="fr"
+    langLinks='
+        <link rel="alternate" hreflang="en" href="https://pumpic.com/parental-control-software.html" />
+        <link rel="alternate" hreflang="de" href="https://pumpic.com/mobile-spion.html" />
+        <link rel="alternate" hreflang="pt-br" href="https://pumpic.com/espiao-movel.html" />
+        <link rel="alternate" hreflang="fr" href="https://pumpic.com/logiciel-de-controle-parental.html" />
+        '
 }
 
 <body>

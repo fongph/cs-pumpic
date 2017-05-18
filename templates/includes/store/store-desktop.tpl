@@ -13,7 +13,7 @@
             <div class="list_price">
                 <form name="price_basic" method="POST" action="/buy.html" class="buy-form-with-offer" autocomplete="off">
 
-                    <input id='product_price_basic' type='hidden' name='price[productID]' value="{$defaultAndriodBasic}" class="product_price" />
+                    <input id='product_price_basic' type='hidden' name='price[productID]' value="{$defaultAndriodBasicProduct}" class="product_price" />
                     <ul>
                         {foreach from=$getProducts.androidBasic key=key item=item name=products}
                             <li>
@@ -215,7 +215,7 @@
                 </div>
                 <div class="list_price" id="foot_h2">
                     <form name="price_basic_bottom" method="POST" action="/buy.html" class="buy-form-with-offer" autocomplete="off">
-                        <input id='product_price_basic' type='hidden' name='price[productID]' value="{$defaultAndroidBasicProduct}" class="product_price" />
+                        <input id='product_price_basic' type='hidden' name='price[productID]' value="{$defaultAndriodBasicProduct}" class="product_price" />
 
                         <ul>
                             {foreach from=$getProducts.androidBasic key=key item=item name=products}

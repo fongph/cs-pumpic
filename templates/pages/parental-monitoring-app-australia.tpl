@@ -3,6 +3,13 @@
 
     title="Child Mobile Phone Tracking in Australia"
     description="Monitor your kids's phone all over Australia. View calls, text messages, location, Internet activity, and more. Track your child with Pumpic app in Australia."
+    lang="en-au"
+    langLinks='
+            <link rel="alternate" hreflang="en-au" href="https://pumpic.com/parental-monitoring-app-australia.html" />
+            <link rel="alternate" hreflang="en-us" href="https://pumpic.com/parental-monitoring-app-usa.html" />
+            <link rel="alternate" hreflang="en-ca" href="https://pumpic.com/parental-monitoring-app-canada.html" />
+            <link rel="alternate" hreflang="en-gb" href="https://pumpic.com/parental-monitoring-app-uk.html" />
+            '
 }    
     
 <body>

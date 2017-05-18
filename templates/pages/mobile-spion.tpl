@@ -1,6 +1,12 @@
 {include file='../includes/main/main-header.tpl'
     title="Mobile und iCloud Spion für iPhone und Android"
     description="Nach der Pumpic Installation werden sämtliche Daten des Zielgeräts and Ihr Control Panel gesendet. Dieses kann von Ihrem Browser oder jedem anderen Gerät, wie PCs, Smartphones und Tablets geöffnet werden. Im Control Panel können Sie nicht nur die Informationen einsehen, sondern auch Einschränkungen einrichten und spezifische Aktivitäten blockieren."
+    lang="de"
+    langLinks='
+<link rel="alternate" hreflang="en" href="https://pumpic.com/parental-control-software.html" />
+<link rel="alternate" hreflang="de" href="https://pumpic.com/mobile-spion.html" />
+<link rel="alternate" hreflang="pt-br" href="https://pumpic.com/espiao-movel.html" />
+<link rel="alternate" hreflang="fr" href="https://pumpic.com/logiciel-de-controle-parental.html" />'
 }    
     
 <body>

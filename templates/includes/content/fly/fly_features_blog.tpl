@@ -1,4 +1,4 @@
-<!--
+
 <div class="fly-features-v2 fly-features-v1">
     <div id="fly_features">
         <span class="fly_close close"></span>
@@ -30,13 +30,8 @@
     </div>
 </div>
 </div>
--->
-<div class="fly-features-v2 fly-features-v1">
-    <div id="fly_features" class="easter">
-        <span class="fly_close close"></span>
-        <div class="fly-easter-text">Find your Easter gift in the <a href="/store.html" class="ga-action-click" ga-category="Fly Banner" ga-action="click" ga-label="Easter_campaign"><b>Pumpic Store</b>!</a> The hunt starts on <b>April 15th.</b></div>
-    </div>
-</div>
+
+
 <style>
     .mobile-apps-text{
         float: right;
@@ -95,41 +90,6 @@
         .mobile-apps-google-play{
             width: 75px;
             right: 0;
-        }
-    }
-    @media only screen and (min-width: 525px) {
-
-        #fly_features.easter {
-            background: #a6779c;
-            background: url('/images/fly_features/easter-banner.png') no-repeat bottom right,
-            -moz-linear-gradient(45deg, #a6779c 0%, #a6779c 10%, #40b9bd 48%, #004d85 100%);
-            background: url('/images/fly_features/easter-banner.png') no-repeat bottom right,
-            -webkit-gradient(left bottom, right top, color-stop(0%, #a6779c), color-stop(10%, #a6779c), color-stop(48%, #40b9bd), color-stop(100%, #004d85));
-            background: url('/images/fly_features/easter-banner.png') no-repeat bottom right,
-            -webkit-linear-gradient(45deg, #a6779c 0%, #a6779c 10%, #40b9bd 48%, #004d85 100%);
-            background: url('/images/fly_features/easter-banner.png') no-repeat bottom right,
-            -o-linear-gradient(45deg, #a6779c 0%, #a6779c 10%, #40b9bd 48%, #004d85 100%);
-            background: url('/images/fly_features/easter-banner.png') no-repeat bottom right,
-            -ms-linear-gradient(45deg, #a6779c 0%, #a6779c 10%, #40b9bd 48%, #004d85 100%);
-            background: url('/images/fly_features/easter-banner.png') no-repeat bottom right,
-            linear-gradient(45deg, #a6779c 0%, #a6779c 10%, #40b9bd 48%, #004d85 100%);
-            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a6779c', endColorstr='#004d85', GradientType=1);
-            padding: 5px 0;
-        }
-    }
-    .easter .fly-easter-text {
-        font-size: 16px;
-        text-align: center;
-        margin-top: 20px;
-    }
-    .fly-easter-text a {
-        color: #ffffff;
-        text-decoration: underline;
-    }
-    @media only screen and (max-width: 768px) {
-        .easter .fly-easter-text {
-            margin: 20px auto;
-            max-width: 200px;
         }
     }
 </style>

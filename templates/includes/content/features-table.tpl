@@ -80,12 +80,13 @@
                                         <svg width="22" height="22" class="features-icon vertical-center mr5">
                                             <use xlink:href="/images/svg-icons.svg#contacts"></use>
                                         </svg>
-                                        <span onclick="window.location='/monitor-phone-contacts.html'"> View Contacts</span></li>
+                                         View Contacts</li>
                                     <li>
                                         <svg width="22" height="22" class="features-icon vertical-center mr5">
                                             <use xlink:href="/images/svg-icons.svg#mail"></use>
                                         </svg>
-                                        <span onclick="window.location='/email-monitoring-software.html'">View Emails</span></li>
+                                        View Emails
+                                    </li>
                                     <li>
                                         <svg width="22" height="22" class="features-icon vertical-center mr5">
                                             <use xlink:href="/images/svg-icons.svg#photos"></use>
@@ -116,7 +117,8 @@
                                         <svg width="22" height="22" class="features-icon vertical-center mr5">
                                             <use xlink:href="/images/svg-icons.svg#application"></use>
                                         </svg>
-                                        <span onclick="window.location='/block-apps.html'">Control Applications</span></li>
+                                        Control Applications
+                                    </li>
                                     <li>
                                         <svg width="22" height="22" class="features-icon vertical-center mr5">
                                             <use xlink:href="/images/svg-icons.svg#bookmarks"></use>
@@ -136,7 +138,8 @@
                                         <svg width="22" height="22" class="features-icon vertical-center mr5">
                                             <use xlink:href="/images/svg-icons.svg#location"></use>
                                         </svg>
-                                        {if !in_array('location-tracking', $_notVisible)}<span onclick="window.location='/child-location-tracking.html'">Location Tracking</span>{else}Location Tracking{/if}</li>
+                                       Location Tracking
+                                    </li>
                                     <li>
                                         <svg width="22" height="22" class="features-icon vertical-center mr5">
                                             <use xlink:href="/images/svg-icons.svg#geo-fencing"></use>
@@ -146,7 +149,7 @@
                                         <svg width="22" height="22" class="features-icon vertical-center mr5">
                                             <use xlink:href="/images/svg-icons.svg#keylogger"></use>
                                         </svg>
-                                        <span onclick="window.location='/keylogging-software.html'">Keylogger</span></li>
+                                        Keylogger</li>
                                     {*<li class="hidden-mobile">&nbsp;</li>*}
                                 </ul>
                             </div>
@@ -172,12 +175,14 @@
                                         <svg width="22" height="22" class="features-icon vertical-center mr5">
                                             <use xlink:href="/images/svg-icons.svg#viber"></use>
                                         </svg>
-                                        <span onclick="window.location='/monitor-viber.html'">Monitor Viber</span></li>
+                                        Monitor Viber
+                                    </li>
                                     <li>
                                         <svg width="22" height="22" class="features-icon vertical-center mr5">
                                             <use xlink:href="/images/svg-icons.svg#instagram"></use>
                                         </svg>
-                                        <span onclick="window.location='/parental-control-for-instagram.html'">Monitor Instagram</span></li>
+                                        Monitor Instagram
+                                    </li>
                                     {*<li><i class="i-features-remote-activity-control"></i> Remote Control Panel</li>*}
                                     <li>
                                         <svg width="22" height="22" class="features-icon vertical-center mr5">
@@ -188,7 +193,8 @@
                                         <svg width="22" height="22" class="features-icon vertical-center mr5">
                                             <use xlink:href="/images/svg-icons.svg#snapchat"></use>
                                         </svg>
-                                        <span onclick="window.location='/monitor-snapchat.html'">Monitor Snapchat</span> </li>
+                                        Monitor Snapchat
+                                    </li>
                                     <li>
                                         <svg width="22" height="22" class="features-icon vertical-center mr5">
                                             <use xlink:href="/images/svg-icons.svg#sms-commands"></use>

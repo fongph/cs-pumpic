@@ -3,6 +3,12 @@
 
     title="Internet Safety for Children All Over USA"
     description="Prevent your kids from dangers of the Internet. Keep kids safe and protected. Monitor calls, text messages, online chats, social media; track location and more."
+    lang="en-us"
+    langLinks='
+            <link rel="alternate" hreflang="en-au" href="https://pumpic.com/parental-monitoring-app-australia.html" />
+            <link rel="alternate" hreflang="en-us" href="https://pumpic.com/parental-monitoring-app-usa.html" />
+            <link rel="alternate" hreflang="en-ca" href="https://pumpic.com/parental-monitoring-app-canada.html" />
+            <link rel="alternate" hreflang="en-gb" href="https://pumpic.com/parental-monitoring-app-uk.html" />'
 }    
     
 <body>

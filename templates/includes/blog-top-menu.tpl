@@ -10,25 +10,25 @@
 									<span class="icon-bar"></span>
 									<span class="icon-bar"></span>
 								</button>
-                                <div class="logo" style="background: url(/images/logo/logo-easter.png) no-repeat;-webkit-background-size: cover;background-size: contain;">
+                                <div class="logo">
                                     <a href="<?php echo getStaticUrl();?>">pumpic</a>
                                 </div>
 
                     </div>
-                                                        
-                                                        <div class='box-cp pull-right'>   
+
+                                                        <div class='box-cp pull-right'>
                                                             <a href="https://demo.pumpic.com/setDevice/126?redirect_url=cp/calls" target="_blank" class="btn btn-sm btn-orange btn-success visible-lg cp-login">Demo</a>
                                                         </div>
-                                                        
+
                                                         <?php /* if (hasUser()) : ?>
-                                                            <div class='box-cp pull-right'>   
+                                                            <div class='box-cp pull-right'>
                                                                 <a href="<?php echo getStaticUrl();?>/logout.html" class="pull-right visible-lg cp-logout">Log Out</a>
                                                                 <a href="https://cp.pumpic.com/" class="btn btn-sm btn-success visible-lg cp-login"><i class="icon-lock"></i>Control Panel</a>
-                                                            </div>    
+                                                            </div>
                                                         <?php else: ?>
                                                             <a href="https://cp.pumpic.com/" class="btn btn-sm btn-success pull-right visible-lg cp-login"><i class="icon-lock"></i> Log In</a>
                                                         <?php endif; */ ?>
-                                                        
+
 							<!-- <a href="<?php echo getStaticUrl();?>/login.html" class="btn btn-sm btn-success pull-right visible-lg"><i class="icon-lock"></i> Log In</a> -->
 							<!-- Collect the nav links, forms, and other content for toggling -->
 							<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -38,45 +38,45 @@
 									</li>
 									<li>
 										<a href="/all-features.html">Features</a>
-									</li> 
+									</li>
 									<li>
 										<a href="/store.html">Store</a>
 									</li>
                                                                         <li>
 										<a href="/compatibility/">Compatibility</a>
 									</li>
-									
+
 									<?php /*<li>
 										<a href="/how-to.html">How to</a>
 									</li>  */ ?>
 									<li>
 										<a href="/faq.html">Help & Contacts</a>
 									</li>
-                                                                        
+
                                                                         <?php /*
                                                                         <li>
                                                                             <a target="_blank" href="<?php echo $config['schema']; ?>demo.pumpic.com/setDevice/126?redirect_url=cp/calls">Demo</a>
                                                                         </li>
 
                                                                         */ ?>
-                                                                        
+
                                                                         <?php /*
                                                                         <li>
-                                                                            <?php if (hasUser()) : ?> 
+                                                                            <?php if (hasUser()) : ?>
                                                                                 <a href="https://cp.pumpic.com/" class="btn btn-sm btn-success hidden-lg cp-login"><i class="icon-lock"></i> Control Panel</a>
                                                                             <?php else: ?>
                                                                                 <a href="https://cp.pumpic.com/" class="btn btn-sm btn-success hidden-lg cp-login"><i class="icon-lock"></i> Log In</a>
-                                                                            <?php endif; ?>   
+                                                                            <?php endif; ?>
 
                                                                         </li>
                                                                         */ ?>
-                                                                        
+
                                                                         <li>
                                                                             <?php if (hasUser()) : ?>
                                                                                 <a href="https://cp.pumpic.com/">Control Panel</a>
                                                                             <?php else: ?>
                                                                                 <a href="https://cp.pumpic.com/">Sign in</a>
-                                                                            <?php endif; ?>   
+                                                                            <?php endif; ?>
 
                                                                         </li>
 
@@ -89,14 +89,14 @@
                                                                             <a href="/free-trial.html">Free Trial</a>
                                                                         </li>
                                                                         <?php endif; ?>
-                                                                        
+
                                                                         <?php /* if (hasUser()) : ?>
                                                                             <li>
                                                                                 <a href="<?php echo getStaticUrl();?>/logout.html" class="hidden-lg cp-logout">Log Out</a>
 
                                                                             </li>
                                                                         <?php endif; */ ?>
-                                                                        
+
 									<!-- <li>
 										<a href="<?php echo getStaticUrl();?>/login.html" class="btn btn-sm btn-success hidden-lg"><i class="icon-lock"></i> Log In</a>
 									</li> -->

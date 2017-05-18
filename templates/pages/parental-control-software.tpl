@@ -1,7 +1,12 @@
 {include file='../includes/main/main-header.tpl'
-robots="no"
 title="Secure Parental Control Monitoring App | Pumpic"
 description="Pumpic is a secure parental control app that protects your children from cyberbullying, adult content, online predators, and other threats. Keeping children safe is so easy with Pumpic!"
+    langLinks='
+    <link rel="alternate" hreflang="en" href="https://pumpic.com/parental-control-software.html" />
+    <link rel="alternate" hreflang="de" href="https://pumpic.com/mobile-spion.html" />
+    <link rel="alternate" hreflang="pt-br" href="https://pumpic.com/espiao-movel.html" />
+    <link rel="alternate" hreflang="fr" href="https://pumpic.com/logiciel-de-controle-parental.html" />
+'
 }
 
 <body>

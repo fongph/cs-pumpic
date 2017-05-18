@@ -11,8 +11,8 @@
                 WhatsApp<i class="icon-apple"></i><i class="icon-android">root&nbsp;</i></li>
         <li><i class="i-features-cell-history"></i>Monitor
                 Calls History<i class="icon-apple"></i><i class="icon-android"></i></li>
-        <li><i class="i-features-app"></i><a class="no-link" href="/block-apps.html">Control
-                Applications</a><i class="icon-android"></i></li>
+        <li><i class="i-features-app"></i>Control
+                Applications<i class="icon-android"></i></li>
         <li><i class="i-features-monitor-skype"></i> Monitor
                 Skype<i class="icon-apple"></i><i class="icon-android">root&nbsp;</i></li>
         <li><i class="i-features-calendar"></i> View
@@ -21,30 +21,29 @@
         <li><i class="i-features-view-bookmarks"></i>View Bookmarks<i class="icon-apple"></i><i
                     class="icon-android">root&nbsp;</i></li>
         <li><i class="i-features-social"></i>Monitor Facebook IM<i class="icon-android">root&nbsp;</i></li>
-        <li><i class="i-features-contacts"></i><a class="no-link" href="/monitor-phone-contacts.html">View
-                Contacts<i class="icon-apple"></i><i class="icon-android"></i></a></li>
+        <li><i class="i-features-contacts"></i>View
+                Contacts<i class="icon-apple"></i><i class="icon-android"></i></li>
         <li><i class="i-features-view-notes"></i>View Notes<i class="icon-apple"></i></li>
-        <li><i class="i-features-monitor-viber-whatsapp"></i><a class="no-link" href="/monitor-viber.html">Monitor
-                Viber</a><i class="icon-android">root&nbsp;</i></li>
+        <li><i class="i-features-monitor-viber-whatsapp"></i>Monitor
+                Viber<i class="icon-android">root&nbsp;</i></li>
     </ul>
     <ul class="table-container">
-        <li><i class="i-features-email"></i><a class="no-link" href="/email-monitoring-software.html">View
-                Emails</a><i class="icon-android">root&nbsp;</i></li>
+        <li><i class="i-features-email"></i>View
+                Emails<i class="icon-android">root&nbsp;</i></li>
         <li><i class="i-features-block-device"></i>Block Device<i class="icon-android"></i></li>
-        <li><i class="i-features-monitor-instagram"></i><a class="no-link"
-                                                           href="/parental-control-for-instagram.html">Monitor
-                Instagram</a><i class="icon-android">root&nbsp;</i></li>
+        <li><i class="i-features-monitor-instagram"></i>Monitor
+                Instagram<i class="icon-android">root&nbsp;</i></li>
         <li><i class="i-features-photos"></i>View Photos<i class="icon-apple"></i><i class="icon-android"></i>
         </li>
-        <li><i class="i-features-location"></i><a class="no-link" href="/child-location-tracking.html">Location
-                Tracking</a><i class="icon-apple"></i><i class="icon-android"></i></li>
+        <li><i class="i-features-location"></i>Location
+                Tracking<i class="icon-apple"></i><i class="icon-android"></i></li>
         <li><i class="i-features-kik-chat"></i>Monitor Kik<i class="icon-apple"></i><i class="icon-android">root&nbsp;</i>
         </li>
         <li><i class="i-features-videocam"></i>View Videos<i class="icon-android"></i></li>
-        <li><i class="i-features-keyloger"></i><a class="no-link" href="/keylogging-software.html">Keylogger</a><i
+        <li><i class="i-features-keyloger"></i>Keylogger<i
                     class="icon-android"></i></li>
-        <li><i class="i-features-monitor-snapchat"></i><a class="no-link" href="/monitor-snapchat.html">Monitor
-                Snapchat</a><i class="icon-android">root&nbsp;</i></li>
+        <li><i class="i-features-monitor-snapchat"></i>Monitor
+                Snapchat<i class="icon-android">root&nbsp;</i></li>
         <li><i class="i-features-remote-activity-control-v2"></i>Remote Control Panel<i
                     class="icon-apple"></i><i class="icon-android"></i></li>
         <li><i class="i-features-geo-fences"></i> Geo-fences<i

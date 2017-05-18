@@ -239,7 +239,7 @@
     </div>
 </div>
 
-        {include file='../includes/content/banners/index.tpl'}
+        {include file='../includes/content/banners/index.tpl' androidUrl="yes"}
 
 
 

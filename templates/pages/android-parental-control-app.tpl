@@ -200,7 +200,9 @@ title="Android Parental Control App for Ultimate Monitoring | Pumpic"
     </div>
 </div>
 
-        {include file='../includes/content/banners/index.tpl'}
+        {include file='../includes/content/banners/index.tpl'
+            androidUrl="yes"
+        }
 
 
         {*include file='../includes/content/banner-promo.tpl'*}

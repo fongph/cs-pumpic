@@ -13,6 +13,6 @@
            ga-action ="click"
             ga-category="banner"
             ga-label="buy now"
-           id="demo-banner-button">Buy Now</a>
+           id="ppc-banner-button">Buy Now</a>
     </div>
 </div>

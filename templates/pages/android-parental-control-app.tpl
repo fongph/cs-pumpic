@@ -10,7 +10,7 @@ title="Android Parental Control App for Ultimate Monitoring | Pumpic"
     <!-- END BLOCK GTM -->
 
     <!-- FLY BLOCKS -->
-    {include file='../includes/content/fly/fly_blocks.tpl'}
+    {include file='../includes/content/fly/fly_blocks.tpl' visibleFlyFeatures=false}
     <!-- END FLY BLOCKS-->
 
     <div class="wrapper android_parental_monitoring">

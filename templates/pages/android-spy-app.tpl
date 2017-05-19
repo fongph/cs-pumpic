@@ -46,7 +46,7 @@
 
 
     <!-- FLY BLOCKS -->
-    {include file='../includes/content/fly/fly_blocks.tpl'}
+    {include file='../includes/content/fly/fly_blocks.tpl' visibleFlyFeatures=false}
     <!-- END FLY BLOCKS-->
 
     <div class="wrapper {*bg_bottom_images*} block-child-location-tracking home-page">

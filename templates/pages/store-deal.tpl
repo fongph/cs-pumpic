@@ -1,29 +1,9 @@
 {*Order out="getProducts"*}
 {*formOrder post=$smarty.post*}
-{$robots='no'}
 {include file='../includes/main/main-header.tpl'
 showRand="true"
 title="Phone Tracker Prices and Subscription Plans | Pumpic"
 description="Pumpic offers high-quality cell phone tracking software for a good price. Learn more about subscription plans. Choose the one that suits your monitoring needs."}
-<script
-        id="fsc-api"
-        src="https://d1f8f9xcsvx3ha.cloudfront.net/sbl/0.7.3/fastspring-builder.min.js"
-        type="text/javascript"
-        data-storefront="pumpic.test.onfastspring.com/popup-pumpic"
-        {*data-data-callback="dataCallbackFunction"*}
-        {*data-error-callback="errorCallback"*}
-        {*data-before-requests-callback="beforeRequestsCallbackFunction"*}
-        {*data-after-requests-callback="afterRequestsCallbackFunction"*}
-        {*data-before-markup-callback="beforeMarkupCallbackFunction"*}
-        {*data-after-markup-callback="afterMarkupCallbackFunction"*}
-        {*data-decorate-callback="decorateURLFunction"*}
-        {*data-popup-event-received="popupEventReceived"*}
-        {*data-popup-webhook-received="popupWebhookReceived"*}
-        {*data-popup-closed="onPopupClose"*}
-        {*data-debug="true"*}
-        {*data-continuous="true"*}
->
-</script>
 <body>
 <style>
     @media (max-width: 767px) {
@@ -200,9 +180,7 @@ description="Pumpic offers high-quality cell phone tracking software for a good 
                                                         </div>
                                                     </div>
                                                         <div class="list_price icloud-list_price">
-                                                        <form name="price_premium" method="POST" action="/buy.html"
-                                                              class="buy-form-with-offer" autocomplete="off"
-                                                        >
+                                                        <form name="price_premium" method="POST" action="/buy.html" class="buy-form-with-offer" autocomplete="off" >
                                                             {*<div class="save__2plan">*}
                                                                 {*<div class="save__text label-touch">*}
                                                                     {*<input type="checkbox" data-group="icloud" name="icloud-40off" id="icloud-40off-main" data-checkboxes="icloud-40off">*}
@@ -211,7 +189,7 @@ description="Pumpic offers high-quality cell phone tracking software for a good 
                                                                     {*</label>*}
                                                                 {*</div>*}
                                                             {*</div>*}
-                                                            <input id='product_price_icloud' type='hidden' name="price[productID]" value='{if isset($defaultIosiCloud)}{$defaultIosiCloud}{else}0{/if}' class="product_price"/>
+                                                            <input id='product_price_icloud' type='hidden' name='price[productID]' value='{if isset($defaultIosiCloud)}{$defaultIosiCloud}{else}0{/if}' class="product_price"/>
                                                             <ul>
                                                                 {foreach from=$getProducts.iosiCloud key=key item=item}
 
@@ -324,7 +302,7 @@ description="Pumpic offers high-quality cell phone tracking software for a good 
                                                             <div class="wr_pack_premium wr_icloud _single-pack-icloud"></div>
                                                             {*<div class="wr_pack_double_premium wr_icloud-double _double-pack-icloud"></div>*}
                                                             <div class="wr_price_big">
-                                                                <span></span><div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr icloud-price-per-month">{$defaultIosiCloudPrice}</div></div><span class="_period">/ month</span>
+                                                                <span></span><div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr icloud-price-per-month">{$defaultiCloudProduct}</div></div><span class="_period">/ month</span>
                                                             </div>
                                                         </div>
                                                         <div class="list_price icloud-list_price" id="foot_h4">
@@ -374,13 +352,11 @@ description="Pumpic offers high-quality cell phone tracking software for a good 
 
                                         <div class="prod-list-android clearfix" data-info-block="android" style="display: none;">
                                         {* ANDROID AJAX LOADING*}
-                                            {*<div id="loader"><img src="/images/loader.svg"></div>*}
+                                            <div id="loader"><img src="/images/loader.svg"></div>
                                             {*{include file='../includes/store/store-desktop.tpl'} for debug*}
-
-                                        {include file='../includes/store/store-desktop.tpl'}
-
                                         </div>
                                         {* ---ANDROID---*}
+
                                     </th>
                                 </tr>
                                 </thead>
@@ -460,8 +436,99 @@ description="Pumpic offers high-quality cell phone tracking software for a good 
         display: none;
     }
 
+
+    @media (min-width: 500px) {
+        #discount-modal .modal-dialog {
+            width: 450px;
+        }
+    }
+    @media (max-width: 499px) {
+        #discount-modal .modal-dialog {
+            width: 95%;
+        }
+    }
+    #discount-modal .modal-dialog {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin: 0;
+        transform: translate(-50%, -50%);
+    }
+    .discount-modal_content {
+        padding: 20px 20px 50px;
+        background-color: #ffffff;
+        border-radius: 8px;
+    }
+    .discount-modal_content .close {
+        font-weight: 300;
+        font-size: 35px;
+        margin-right: 14px;
+        position: absolute;
+        top: 10px;
+        right: 3px;
+    }
+    .discount-modal_body h2 {
+        font-size: 78px;
+        color: #2fbdbd;
+        font-weight: bold;
+        margin-bottom: 0;
+    }
+    .discount-modal_body .modal-subtitle {
+        font-size: 27px;
+        font-weight: normal;
+        margin-bottom: 15px;
+        text-align: center;
+        color: #4d4f5b;
+    }
+
+    .discount-modal_code {
+        font-size: 44px;
+        font-weight: bold;
+        letter-spacing: 0.05em;
+        color: #CF4757;
+        border-top: 1px solid #DBDCDE;
+        border-bottom: 1px solid #DBDCDE;
+        text-align: center;
+        padding: 15px 0;
+    }
+    @media (max-width: 500px) {
+        .discount-modal_code {
+            font-size: 35px;
+        }
+    }
+    .discount-modal_text {
+        line-height: 2.3;
+        margin: 20px 0;
+        text-align: center;
+    }
+    .discount-modal_footer {
+        text-align: center;
+    }
+    .discount-modal_footer .btn {
+        font-weight: normal;
+        font-size: 22px;
+        padding: 8px 35px;
+    }
 </style>
 
+<div id="discount-modal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <div class="discount-modal_content">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <div class="discount-modal_body">
+                <h2>WAIT!</h2>
+                <p class="modal-subtitle">Get 10% OFF now!</p>
+                <div class="discount-modal_code">10OFF4YOU</div>
+                <p class="discount-modal_text">Just copy the discount code above <br>
+                    and enter it at the Checkout</p>
+            </div>
+            <div class="discount-modal_footer">
+                <button type="button" class="btn btn-default ga-action-click" ga-category="Store-exit-banner" ga-action="click" ga-label="10%-off" data-dismiss="modal">Choose Your Plan</button>
+            </div>
+        </div>
+
+    </div>
+</div>
 {include file='../includes/main/main-recommended.tpl'}
 
 <!-- FOOTER -->
@@ -474,10 +541,18 @@ our_products (text): Включить выключить блок OUR PRODUCTS (
 </div>
 {include file='../includes/main/main-analytics-footer.tpl'
 emptyScript="true"}
-<script src="/javascripts/frontend.min.js?1423094400" data-delete="delete"></script>
-<script src="/javascripts/store-init.js"></script>
+<script src="/javascripts/frontend.min.js?1423094400" data-delete="delete"></script><script src="/javascripts/store-init.js"></script>
 {literal}
 <script>
+    $(function () {
+        var modalWasShown = false;
+        $(document).mouseleave(function () {
+            if(!modalWasShown) {
+                $('#discount-modal').modal("show")
+                modalWasShown = true;
+            }
+        });
+    })
 
     var $buoop = {vs:{i:10,f:25,o:15,s:7,c:30},api:4,reminder:0,text:"Ouch! Seems like the version of your browser {brow_name}  is too old. To proceed, please,  <a{up_but}>Update it</a> or <a{ignore_but}>Ignore</a>"};
     function $buo_f(){

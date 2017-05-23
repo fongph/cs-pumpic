@@ -317,7 +317,7 @@
                                     <li class="i-l-features i-l-features-jb">
                                         <div class="row">
                                             <div class="col-sm-2 col-md-2 col-lg-2 padding-null features-icon">
-                                                <svg width="31" height="31" class="model-center">
+                                                <svg width="27" height="27" class="model-center">
                                                     <use xlink:href="/images/svg-icons.svg#calls"></use>
                                                 </svg>
                                             </div>
@@ -669,7 +669,7 @@
                                 <div class='feature-item-info'>
                                     <ul>
                                         <li>
-                                            <a href="/call-monitoring-software.html" style="cursor:default;"><img class="features-icon i-list-features-" src="{$img}/technological/header/icon/icon-call.png" style="width:25px;height:25px;top:4px;" alt="call monitoring for parents" title="tracking kids by their smartphones" /></a>
+                                            <a href="/call-monitoring-software.html" style="cursor:default;"><img class="features-icon i-list-features-" src="{$img}/technological/header/icon/icon-call.png" style="width:27px;height:27px;top:4px;" alt="call monitoring for parents" title="tracking kids by their smartphones" /></a>
                                             {*<svg width="31" height="31" class="features-icon i-list-features-svg">*}
                                                 {*<use xlink:href="/images/svg-icons.svg#calls"></use>*}
                                             {*</svg>*}
@@ -1536,7 +1536,7 @@
                                 <div class='feature-item-info'>
                                     <ul>
                                         <li>
-                                            <svg width="31" height="31" class="features-icon i-list-features-svg">
+                                            <svg width="27" height="27" class="features-icon i-list-features-svg">
                                                 <use xlink:href="/images/svg-icons.svg#calls"></use>
                                             </svg>
                                             <strong>Calls</strong></li>
@@ -1812,12 +1812,12 @@
                                 <div class='feature-item-info'>
                                     <ul>
                                         <li style="position: relative;">
-                                            <a href="/parental-control-for-instagram.html" class="only-mobile" style="cursor:default;"><img class="features-icon i-list-features-" src="{$img}/technological/i-list-features-instagram.png" style="width:21px;height:21px;top:4px;" alt="instagram monitoring app" title="how to monitor instagram activity" /></a>
+                                            <a href="/parental-control-for-instagram.html" class="only-mobile" style="cursor:default;"><img class="features-icon i-list-features-" src="{$img}/technological/i-list-features-instagram.png" style="width:27px;height:27px;top:4px;" alt="instagram monitoring app" title="how to monitor instagram activity" /></a>
                                             {*<svg width="31" height="31" class="features-icon i-list-features-svg only-mobile">*}
                                                 {*<use xlink:href="/images/svg-icons.svg#instagram"></use>*}
                                             {*</svg>*}
                                             <strong>Instagram</strong>
-                                            <a href="/parental-control-for-instagram.html" class="only-pc" style="cursor:default;"><img class="features-icon i-list-features-" src="{$img}/technological/i-list-features-instagram.png" style="width:21px;height:21px;top:4px;" alt="instagram monitoring app" title="how to monitor instagram activity" /></a>
+                                            <a href="/parental-control-for-instagram.html" class="only-pc" style="cursor:default;"><img class="features-icon i-list-features-" src="{$img}/technological/i-list-features-instagram.png" style="width:27px;height:27px;top:4px;" alt="instagram monitoring app" title="how to monitor instagram activity" /></a>
                                             {*<svg width="31" height="31" class="features-icon i-list-features-svg only-pc">*}
                                                 {*<use xlink:href="/images/svg-icons.svg#instagram"></use>*}
                                             {*</svg>*}
@@ -2440,7 +2440,7 @@
                                 <div class='feature-item-info'>
                                     <ul>
                                         <li>
-                                            <svg width="31" height="31" class="features-icon i-list-features-svg">
+                                            <svg width="27" height="27" class="features-icon i-list-features-svg">
                                                 <use xlink:href="/images/svg-icons.svg#geo-fencing"></use>
                                             </svg>
                                             <strong>Geo-fencing</strong></li>
@@ -2469,11 +2469,11 @@
                                 <div class='feature-item-info'>
                                     <ul>
                                         <li>
-                                            <svg width="31" height="31" class="features-icon i-list-features-svg only-mobile">
+                                            <svg width="27" height="27" class="features-icon i-list-features-svg only-mobile">
                                                 <use xlink:href="/images/svg-icons.svg#reboot"></use>
                                             </svg>
                                             <strong>Other features</strong>
-                                            <svg width="31" height="31" class="features-icon i-list-features-svg only-pc">
+                                            <svg width="27" height="27" class="features-icon i-list-features-svg only-pc">
                                                 <use xlink:href="/images/svg-icons.svg#reboot"></use>
                                             </svg>
                                         </li>

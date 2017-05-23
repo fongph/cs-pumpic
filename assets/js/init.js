@@ -2639,7 +2639,23 @@ $(document).ready(function () {
             var $input = $(this).find('input:first');
             updateRadio($input);
         });
-
+        
+        // initialize radio buttons when android tab finishes its loading
+        if($('.prod-list-android')) {
+            $(document).ajaxComplete(function() {
+                $('.buy-form-with-offer input[type=radio]:last').each(function () {
+                    updateRadio(this);
+                });
+        
+                $('.buy-form-with-offer label').has('input[type=radio]').on('click', function (e) {
+                    if (e.target.tagName != 'INPUT') {
+                        return;
+                    }
+                    var $input = $(this).find('input:first');
+                    updateRadio($input);
+                });
+            })
+        }
         // $('.buy-form-with-offer input[type=checkbox]').change(function(){
         //     updateCheckbox(this);
         // });

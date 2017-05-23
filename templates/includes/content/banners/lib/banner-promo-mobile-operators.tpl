@@ -9,10 +9,10 @@
     </div>
     <div class="banner-arrow"></div>
     <div class="button-holder">
-        <a href="/store.html" class="banner-btn ga-action-click" 
+        <a href="{if isset($androidUrl) && $androidUrl == "yes"}/store.html#android{else}/store.html{/if}" class="banner-btn ga-action-click"
            ga-action ="click"
             ga-category="banner"
             ga-label="buy now"
-           id="demo-banner-button">Buy Now</a>
+           id="ppc-banner-button">Buy Now</a>
     </div>
 </div>

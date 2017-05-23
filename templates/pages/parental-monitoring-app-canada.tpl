@@ -3,6 +3,12 @@
 
     title="Parental Monitoring App in Canada"
     description="Enjoy reliable kid tracking in Canada. Track location, calls, text messages, online activity, etc. Use child phone monitoring all over Canada and abroad."
+    lang="en-ca"
+    langLinks='
+            <link rel="alternate" hreflang="en-au" href="https://pumpic.com/parental-monitoring-app-australia.html" />
+            <link rel="alternate" hreflang="en-us" href="https://pumpic.com/parental-monitoring-app-usa.html" />
+            <link rel="alternate" hreflang="en-ca" href="https://pumpic.com/parental-monitoring-app-canada.html" />
+            <link rel="alternate" hreflang="en-gb" href="https://pumpic.com/parental-monitoring-app-uk.html" />'
 }    
     
 <body>

@@ -30,7 +30,7 @@
                                     <div class='mt10'>
                                         <div>
                                             <section class="vertical-aligh-middle">
-                                                <a class="btn btn-default" href="/store.html{if isset($android)}#android{/if}"
+                                                <a class="btn btn-default" href="/store.html{if isset($android) && ($android != 'no')}#android{/if}"
                                                    id="view-pricing-link">View Pricing</a>
                                             </section>
                                         </div>

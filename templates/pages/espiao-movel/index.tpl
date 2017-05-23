@@ -1,6 +1,12 @@
-{include file='../includes/main/main-header.tpl'
+{include file='../../includes/main/main-header.tpl'
     title="Rastreador de celular | Pumpic"
     description="Pumpic rastreador de celular. Espiao movel e compativel com todos os dispositivos IOS e Android."
+    lang="pt-br"
+    langLinks='
+    <link rel="alternate" hreflang="en" href="https://pumpic.com/parental-control-software.html" />
+    <link rel="alternate" hreflang="de" href="https://pumpic.com/mobile-spion.html" />
+    <link rel="alternate" hreflang="pt-br" href="https://pumpic.com/espiao-movel.html" />
+    <link rel="alternate" hreflang="fr" href="https://pumpic.com/logiciel-de-controle-parental.html" />'
 }    
     
 <body>
@@ -16,11 +22,11 @@ ium_wr .pricep {
     }
 </style>
     <!-- BLOCK GTM -->
-    {include file='../includes/main/main-after-body.tpl'}
+    {include file='../../includes/main/main-after-body.tpl'}
     <!-- END BLOCK GTM -->
     
     <!-- FLY BLOCKS -->
-    {include file='../includes/content/fly/fly_blocks.tpl'
+    {include file='../../includes/content/fly/fly_blocks.tpl'
         visibleFlyFeatures="no"
     }
     <!-- END FLY BLOCKS-->
@@ -28,7 +34,7 @@ ium_wr .pricep {
     <div class="wrapper block-free-trial b-p-countries page-espiao">
         <!-- TOP MENU -->
 
-	{include file='../includes/country/main-top-menu.tpl'
+	{include file='../../includes/country/main-top-menu.tpl'
             lang="bra"
             topmenu_active='home'
             cache_id = "includes_main_main-top-menu"
@@ -38,7 +44,7 @@ ium_wr .pricep {
 
 
         <!-- BLOCK HEADER -->
-        {include file='../includes/content/info/info-promo.tpl'
+        {include file='../../includes/content/info/info-promo.tpl'
             infoBlockMobile="no"
 
             collg="7"
@@ -66,7 +72,7 @@ ium_wr .pricep {
 
 
         <!-- BLOCK TITLE -->
-        {include file='../includes/content/country/title.tpl'
+        {include file='../../includes/content/country/title.tpl'
         hook="icloud-spy"
         blockBg="light"
         icon="true"
@@ -75,7 +81,7 @@ ium_wr .pricep {
         }
 
         <!-- BLOCK HOW-IT-WORK -->
-        {include file='../includes/content/country/how-it-work-bra_2.tpl'
+        {include file='../../includes/content/country/how-it-work-bra_2.tpl'
         blockBg="dark"
         version = "icloud"
         }
@@ -113,7 +119,7 @@ ium_wr .pricep {
         </div>
 
         <!-- BLOCK FEATURES -->
-        {include file='../includes/content/country/block-features-icloud-spy-bra.tpl'
+        {include file='../../includes/content/country/block-features-icloud-spy-bra.tpl'
         title="Recursos"
         }
 
@@ -226,7 +232,7 @@ ium_wr .pricep {
 
 
         <!-- BLOCK TITLE -->
-        {include file='../includes/content/country/title.tpl'
+        {include file='../../includes/content/country/title.tpl'
             hook="mobile-spy"
             blockBg="light"
             icon="false"
@@ -235,12 +241,12 @@ ium_wr .pricep {
         }
 
         <!-- BLOCK HOW-IT-WORK -->
-        {include file='../includes/content/country/how-it-work-bra.tpl'
+        {include file='../../includes/content/country/how-it-work-bra.tpl'
                 blockBg="dark"
         }
         
         <!-- BLOCK COMPATIBILITY -->
-        {include file='../includes/content/compatibility/compatibility-table.tpl'
+        {include file='../../includes/content/compatibility/compatibility-table.tpl'
             title="Compatibilidade"
             lang="bra"
             onlyItem="android"
@@ -248,7 +254,7 @@ ium_wr .pricep {
         }  {* no_bg bg-wite *}
         
         <!-- BLOCK FEATURES -->
-        {include file='../includes/content/country/block-features-mobile-spy-bra.tpl'
+        {include file='../../includes/content/country/block-features-mobile-spy-bra.tpl'
             title="Recursos"
         }
         
@@ -406,7 +412,7 @@ ium_wr .pricep {
         </div>    
         
 
-        {include file='../includes/content/ipad.tpl' 
+        {include file='../../includes/content/ipad.tpl' 
                 hook="ipad"
                 blockBg="light"
                 imgUrl = "parental_control/ipad.png"
@@ -427,13 +433,13 @@ ium_wr .pricep {
             Переменные:
                 our_products (text): Включить выключить блок OUR PRODUCTS (no|yes). * - yes 
         *}
-        {include file='../includes/country/main-footer.tpl'
+        {include file='../../includes/country/main-footer.tpl'
             lang="bra"
         }
                 
     </div>
        
-    {include file='../includes/main/main-analytics-footer.tpl'}
+    {include file='../../includes/main/main-analytics-footer.tpl'}
 
     <style>
 

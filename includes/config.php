@@ -82,7 +82,7 @@ $config = array(
 				'compatibility/ios-devices'       => 'compatibility_search.php',
 
 			// security
-				'security-subscribe-form-mailChimp.html' => 'security-subscribe-form-mailChimp.php',
+				'security-subscribe-form-mailChimp.php' => 'security-subscribe-form-mailChimp.php',
 
 				'learning-center/ready-solutions'       => 'ready-solutions.php',
 

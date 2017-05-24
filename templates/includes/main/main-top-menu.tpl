@@ -5,11 +5,13 @@
                 <nav class="navbar" role="navigation">
                     <!-- Brand and toggle get grouped for better mobile display -->
                     <div class="navbar-header">
+                        {if !isset($navbarHidden) && $navbarHidden != 'yes'}
                         <button type="button" class="navbar-toggle collapsed btn-success" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
+                        {/if}
                         <div itemscope itemtype="https://schema.org/Organization" class="logo" >
                           <meta itemprop="name" content="Pumpic Parental Monitoring">
                             <a href="/" itemprop="url">pumpic

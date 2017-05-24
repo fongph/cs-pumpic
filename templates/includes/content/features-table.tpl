@@ -200,8 +200,14 @@
                                             <use xlink:href="/images/svg-icons.svg#sms-commands"></use>
                                         </svg>
                                         SMS Commands</li>
+                                    {if isset($androidButton) && $androidButton == 'yes'}
+                                        <li class="last-child-hidden" style="text-align:center;background-color: #CF4857;"><a style="font-weight:bold;display: block;padding-top:8px;font-size: 16px;color: #ffffff!important;" href="/store.html#android">Buy Now
+                                            </a>
+                                        </li>
+                                        {else}
                                     <li class="last-child-hidden" style="padding-top: 16px;"><img src="/images/hashtag-icon.png" class="img-ph" alt="hashtag symbol">
                                         <a href="/all-features.html">View All Features  <i class="icon-right-open"></i> </a> </li>
+                                    {/if}
                                     {*<li class="hidden-mobile">&nbsp;</li>*}
                                 </ul>
                             </div>

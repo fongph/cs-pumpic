@@ -206,11 +206,18 @@
                                 </ul>
                             </div>
                         </section>
-
+                        {if isset($androidButton) && $androidButton == 'yes'}
+                        <p class="button-more-detailes text-center">
+                            <i class="fa fa-warning" style="color: #f8cd50;"></i> Note: ROOT is required for some features. <a href="/store.html#android">Check the details on Store</a>
+                        </p>
+                        <div class="text-center button-more-detailes">
+                            <a href="/store.html#android" class="btn btn-default" rel="nofollow">Buy Now</a>
+                        </div>
+                        {else}
                         <div class="text-center button-more-detailes">
                             <a href="/all-features.html" class="btn-gree" rel="nofollow">More Details</a>
                         </div>
-
+                        {/if}
                     </div>
                 </div>
         </div>
@@ -219,6 +226,12 @@
 
 <style>
 
+    .button-more-detailes {
+        margin-top: 20px;
+    }
+    .button-more-detailes .btn.btn-default {
+        padding: 10px 75px;
+    }
     .img-ph{
         vertical-align: bottom;
         margin: 0px 8px 0px 6px;

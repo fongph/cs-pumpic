@@ -54,6 +54,7 @@
 
 	{include file='../includes/main/main-top-menu.tpl'
             cache_id = "includes_main_main-top-menu"
+            navbarHidden="yes"
             nocache
         }
 
@@ -74,9 +75,9 @@
         {include file='../includes/content/info/info-promo.tpl'
             imgUrl = "header_banners/header-spyapps-for-android.png"
             imgAlt = "Spy Apps for Android Phones"
-            imgAlign = "right bottom"
+            imgAlign = "left"
             imgVerticalAlign = "center"
-            textAlign = "right"
+            textAlign = "left"
             title = "Why Spy When You Can<br/> Monitor Android Device Legally?"
             titleSize = "25px"
             description = "Remotely track calls, messages, online activity, locations,<br/> multimedia, and more on target Android smartphone or tablet."
@@ -149,6 +150,7 @@
         title = "Awesome Monitoring Features"
         description = "Pumpic provides impressive monitoring opportunities with more than 24 outstanding features. The app allows you to view, track, and block mobile activities. Prevent your children from inappropriate content viewing and sharing. Monitor all the files stored on the target device. No need to spy anymore, now you can monitor Android devices legally."
         blockBg="dark"
+        androidButton="yes"
         }
 
         {* description = "Install the iPad parental control app on your kid’s tablet and start monitoring right away. Log in to your Control Panel and view all the information from the target device. It can be accessed from anywhere including desktop computers, laptops, smartphones, and tablets. In addition to data monitoring, the Control Panel allows you to set limits, block tablet activities, and lock the target device permanently."

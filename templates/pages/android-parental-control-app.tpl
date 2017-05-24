@@ -18,6 +18,7 @@ title="Android Parental Control App for Ultimate Monitoring | Pumpic"
 	<!-- TOP MENU -->
 	{include file='../includes/main/main-top-menu.tpl'
             cache_id = "includes_main_main-top-menu"
+            navbarHidden="yes"
             nocache
         }
 
@@ -36,9 +37,9 @@ title="Android Parental Control App for Ultimate Monitoring | Pumpic"
          {include file='../includes/content/info/info-promo.tpl'
             imgUrl = "header_banners/header-android-parental-monitoring.png"
             imgAlt = "android parental monitoring"
-            imgAlign = "right"
+            imgAlign = "left"
             imgVerticalAlign = "bottom"
-            textAlign = "right"
+            textAlign = "left"
             title = "Monitor Your Child's Android Device<br/>with the Best Tracking Software"
             titleSize = "25px"
             description = "Control is an inherent part of parenting.<br/>Track your kid’s phone or tablet to stay aware."
@@ -46,7 +47,7 @@ title="Android Parental Control App for Ultimate Monitoring | Pumpic"
             listText = "control cell phone usage|follow online activity|track routes and location"
             planPackageBuy = "yes"
             planPackageBuyUrl = "/store.html#android"
-            block_video = "yes"
+            block_video = "no"
             block_video_src = "https://www.youtube.com/embed/Atg0CbaytAY"
             infoBlockMobile = "yes"
             Icloud = "no"
@@ -110,6 +111,7 @@ title="Android Parental Control App for Ultimate Monitoring | Pumpic"
         title = "Over 24 Monitoring Features to Protect Your Kids"
         description = "Mobile technologies have introduced new opportunities to our children. It is rather hard to imagine the entire range of functions a single cell phone, smartphone or tablet can fulfill. That’s why when it comes to features that an Android parental control app should include, it is crucial to consider as many as possible. The list below reflects Pumpic monitoring abilities in general and specific mobile phone functions you will be able to cover by using the app in particular. The special focus is made on keeping an eye on texting activities, as it is the most popular use of phones by teens. With Pumpic, you can easily check on SMS, Facebook messages, Skype, Viber, WhatsApp, and Kik. All in all, our parental control software for Android will help you follow each and every aspect of your kids’ lives and all of their activities remotely."
         blockBg="light"
+        androidButton="yes"
 }
 
 {*<div class="dark">

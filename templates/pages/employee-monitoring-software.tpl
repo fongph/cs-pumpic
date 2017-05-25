@@ -1,6 +1,6 @@
 {include file='../includes/main/main-header.tpl'
 
-title="Best Employee Monitoring Software | Pumpic"
+title="Best Employee Monitoring and Tracking Software | Pumpic"
 description="Increase productivity, ensure legal safety and streamline workflow by surveilling company's staff. Monitor employee Internet usage, communications, and location."
 }
 

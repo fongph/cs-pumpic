@@ -14,7 +14,7 @@ description="Pumpic offers high-quality cell phone tracking software for a good 
         data-before-requests-callback="beforeRequestsCallbackFunction"
         data-decorate-callback="decorateURLFunction"
         data-popup-event-received="popupEventReceived"
-        data-debug="true"
+        {*data-debug="true"*}
 >
 </script>
 <body>

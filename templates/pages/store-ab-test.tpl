@@ -237,7 +237,7 @@ description="Pumpic offers high-quality cell phone tracking software for a good 
                                                                     ga-category="store"
                                                                     ga-label="buy icloud"
                                                                     value="true" type="submit" name="price[submit]"
-                                                                    data-fsc-item-path-value="{$defaultIosiCloudPath}" data-fsc-action="Add,Checkout"
+                                                                    data-fsc-item-path-value="{$defaultIosiCloudPath}" onclick="fastspring.builder.reset();" data-fsc-action="Add,Checkout"
                                                             >Buy</button>
 
                                                             {*<a href="https://pumpic.onfastspring.com/pumpic-icloud-24m-s"> Buy 24 month</a>*}
@@ -359,7 +359,7 @@ description="Pumpic offers high-quality cell phone tracking software for a good 
                                                                         ga-category="store"
                                                                         ga-label="buy icloud"
                                                                         value="true" type="submit" name="price[submit]"
-                                                                        data-fsc-item-path-value="{$defaultIosiCloudPath}" data-fsc-action="Add,Checkout"
+                                                                        data-fsc-item-path-value="{$defaultIosiCloudPath}" onclick="fastspring.builder.reset();" data-fsc-action="Add,Checkout"
                                                                 >Buy</button>
                                                             </form>
                                                             {*<div class="space_line">&nbsp;</div>*}
@@ -573,9 +573,13 @@ emptyScript="true"}
                    var product = $(this).data('product');
                    console.log(product);
                     $(this).closest('form').find('button').attr('data-fsc-action', 'Checkout');
+                    var ga_label = $(this).closest('form').find('button').attr('ga-label');
+                    $('body').find('button[ga-label="'+ga_label+'"]').attr('data-fsc-action', 'Checkout');
+                    $('body').find('button[ga-label="'+ga_label+'"]').removeAttr('onclick');
                     fastspring.builder.reset();
                     fastspring.builder.update(product,1);
                 });
+
             });
 
 

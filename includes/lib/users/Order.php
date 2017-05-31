@@ -304,8 +304,8 @@ class Order extends ManagerUser
             }
             if ($namespace == 'third-store' || $namespace == 'third-landing')
                 $plans = $this->_billing->getSiteProductsWithVariousNamespace(self::SITE_ID, 'third', $namespace, $version);
-//            else
-//                $plans = $this->_billing->getSiteProductsWithVariousNamespace(self::SITE_ID, 'second', $namespace, $version);
+            else
+                $plans = $this->_billing->getSiteProductsWithVariousNamespace(self::SITE_ID, 'second', $namespace, $version);
 
         }  else {
             $plans = $this->_billing->getSiteProducts(self::SITE_ID, $namespace);

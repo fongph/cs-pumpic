@@ -46,7 +46,7 @@
                             ga-category="store"
                             ga-label="buy android basic"
                             value="true" type="submit" name="price[submit]"
-                            data-fsc-item-path-value="{$defaultAndriodBasicPath}"  data-fsc-action="Add,Checkout">Buy Basic</button>
+                            data-fsc-item-path-value="{$defaultAndriodBasicPath}" onclick="fastspring.builder.reset();" data-fsc-action="Add,Checkout">Buy Basic</button>
                     <div class="show_basic_features"><a href="#">Show Basic features</a></div>
                 </form>
             </div>
@@ -101,7 +101,7 @@
                             ga-category="store"
                             ga-label="buy android premium"
                             value="true" type="submit" name="price[submit]"
-                            data-fsc-item-path-value="{$defaultAndroidPremiumPath}"  data-fsc-action="Add,Checkout"
+                            data-fsc-item-path-value="{$defaultAndroidPremiumPath}" onclick="fastspring.builder.reset();" data-fsc-action="Add,Checkout"
                     >Buy Premium</button>
                     <div class="show_premium_features"><a href="#">Show Premium features</a></div>
                 </form>
@@ -252,7 +252,7 @@
                                 ga-category="store"
                                 ga-label="buy android basic"
                                 value="true" type="submit" name="price[submit]"
-                                data-fsc-item-path-value="{$defaultAndriodBasicPath}"  data-fsc-action="Add,Checkout">Buy Basic</button>
+                                data-fsc-item-path-value="{$defaultAndriodBasicPath}" data-fsc-item-quantity="1" onclick="fastspring.builder.reset();" data-fsc-action="Add,Checkout">Buy Basic</button>
                     </form>
                 </div>
             </div>
@@ -307,7 +307,7 @@
                                 ga-category="store"
                                 ga-label="buy android premium"
                                 value="true" type="submit" name="price[submit]"
-                                data-fsc-item-path-value="{$defaultAndroidPremiumPath}"  data-fsc-action="Add,Checkout">Buy Premium</button>
+                                data-fsc-item-path-value="{$defaultAndroidPremiumPath}" onclick="fastspring.builder.reset();" data-fsc-action="Add,Checkout">Buy Premium</button>
                     </form>
                 </div>
             </div>

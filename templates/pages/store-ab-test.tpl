@@ -532,43 +532,7 @@ emptyScript="true"}
                 return (linkerParam ? url + '?' + linkerParam : url);
 
             }
-            var tags = {};
-//            function popupEventReceived(custom) {
-//                console.log('popupEventReceived ' + custom.event);
-//                if (!$.isEmptyObject(tags)){
-//                    fastspring.builder.push({'tags': tags});
-//                    console.log('TAG!!')
-//                }
-//                if (custom.event == 'FSC-checkoutStep1'){
-//                    var request = $.ajax({
-//                    url: 'buy.html',
-//                    type: 'POST',
-//                    data: custom,
-//                    success: function(order_referrer) {
-//                        console.log('SUCCESS');
-//                        console.log(order_referrer);
-//                        tags = {
-//                            "orderReferrerCustom": order_referrer
-//                        };
-////                        fastspring.builder.push({'tags': tags});
-//                        fastspring.builder.tag("orderReferrerCustom",order_referrer);
-//                        console.log('TAGS');
-//
-//                    },
-//                        error: function() {
-//                            console.log('An error has occurred');
-//                        }
-//                    });
-//                    request.done(function(msg) {
-//                        console.log( msg );
-//                    });
-//
-//                    request.fail(function(jqXHR, textStatus) {
-//                        console.log( "Request failed: " + textStatus );
-//                    });
-//                }
-//
-//            }
+
             //data-fsc-item-path-value
             $(function () {
                 $('.buy-form-with-offer').on('change', 'input.data-price', function () {

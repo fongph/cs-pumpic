@@ -14,22 +14,25 @@ $(document).ready(function(){
 			.done(function(data) {
 				$('#loader').fadeOut()
 				$(".prod-list-android").html(data);
+                ab_test();
 				// $('script[data-delete=delete]').remove();
 				// var s = document.createElement("script");
 				// s.type = "text/javascript";
 				// s.src = "/javascripts/frontend.min.js";
 				// $("body").append(s);
 				});
-
-        $('.buy-form-with-offer').on('change', 'input.data-price', function () {
-            var product = $(this).data('product');
-            console.log(product);
-            $(this).closest('form').find('button').attr('data-fsc-action', 'Checkout');
-            var ga_label = $(this).closest('form').find('button').attr('ga-label');
-            $('body').find('button[ga-label="'+ga_label+'"]').attr('data-fsc-action', 'Checkout');
-            $('body').find('button[ga-label="'+ga_label+'"]').removeAttr('onclick');
-            fastspring.builder.reset();
-            fastspring.builder.update(product,1);
-        });
-
 });
+
+function ab_test() {
+    $('.buy-form-with-offer').on('change', 'input.data-price', function () {
+        var product = $(this).data('product');
+        console.log(product);
+        $(this).closest('form').find('button').attr('data-fsc-action', 'Checkout');
+        var ga_label = $(this).closest('form').find('button').attr('ga-label');
+        $('body').find('button[ga-label="'+ga_label+'"]').attr('data-fsc-action', 'Checkout');
+        $('body').find('button[ga-label="'+ga_label+'"]').removeAttr('onclick');
+        fastspring.builder.reset();
+        fastspring.builder.update(product,1);
+    });
+
+}

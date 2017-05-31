@@ -24,12 +24,44 @@ $_params = getURI();
 $order->setReferer($_referer);
 $order->setLanding($_landing);
 
-if (isset($_request['productID']) and $_productID = (int) $_request['productID']) {
+if (($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest') {
+    $data = $_POST;
+    $productPath = $data['ecommerce']['checkout']['products'][0]['id'];
+    $_productID = $order->getProductByPath($productPath);
+
+    $_url = $order->createOrder($_productID);
+    $orderCreated = explode("=", parse_url($_url)['query'])[1];
+    echo $orderCreated; die;
+
+//    $_utm = '';
+//    if(isset($_GET['utm_source']) || isset($_GET['utm_medium']) || isset($_GET['utm_campaign']) || isset($_GET['utm_term'])) {
+//
+//        if(!empty($_GET['utm_source']))
+//            $_utm .= 'utm_source='.$_GET['utm_source'].'&';
+//        if(!empty($_GET['utm_medium']))
+//            $_utm .= 'utm_medium='.$_GET['utm_medium'].'&';
+//        if(!empty($_GET['utm_campaign']))
+//            $_utm .= 'utm_campaign='.$_GET['utm_campaign'].'&';
+//        if(!empty($_GET['utm_term']))
+//            $_utm .= 'utm_term='.$_GET['utm_term'].'&';
+//
+//        $_url .= (parse_url($_url, PHP_URL_QUERY) ? '&' : '?') . trim($_utm, '&');
+//
+//    }
+//
+//    $_url .= (parse_url($_url, PHP_URL_QUERY) ? '&' : '?') . 'sessionOption=new&member=new';
+//    if (isset($_GET['_ga'])) {
+//        $_url .= (parse_url($_url, PHP_URL_QUERY) ? '&' : '?') . '_ga=' . $_GET['_ga'] ;
+//    }
+//
+//    $order->_redirect($_url);
+
+} elseif (isset($_request['productID']) and $_productID = (int) $_request['productID']) {
     $_url = $order->createOrder($_productID);
 
     $_utm = '';
     if(isset($_GET['utm_source']) || isset($_GET['utm_medium']) || isset($_GET['utm_campaign']) || isset($_GET['utm_term'])) {
-    
+
         if(!empty($_GET['utm_source']))
             $_utm .= 'utm_source='.$_GET['utm_source'].'&';
         if(!empty($_GET['utm_medium']))
@@ -40,9 +72,9 @@ if (isset($_request['productID']) and $_productID = (int) $_request['productID']
             $_utm .= 'utm_term='.$_GET['utm_term'].'&';
 
         $_url .= (parse_url($_url, PHP_URL_QUERY) ? '&' : '?') . trim($_utm, '&');
-    
+
     }
-    
+
     $_url .= (parse_url($_url, PHP_URL_QUERY) ? '&' : '?') . 'sessionOption=new&member=new';
     if (isset($_GET['_ga'])) {
         $_url .= (parse_url($_url, PHP_URL_QUERY) ? '&' : '?') . '_ga=' . $_GET['_ga'] ;

@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-
+mjvfjv
 	<div class="very_easy">
     <div class="container">
         <div class="row">
@@ -19,10 +19,11 @@
                     <?php if ( have_posts() ) : ?>
                     
                     <h1 class="text-center mt10 mb20"><a class="blog-link" href="/security/">Kids' Phone Safety Blog</a></h1>
+<p>&nbsp;</p>
 <!--                    <div class="archive">-->
 <!--                        <span class="title">--><?php //printf( __( "All posts for '<i>%s</i>' category", 'cellspy' ), single_tag_title( '', false ) ); ?><!--</span>-->
 <!--                    </div>-->
-                       <!-- <div class="menu_category">
+                        <!--div class="menu_category">
                             <ul>
                                 <?php $args = array(
                                     'show_option_all'    => false,
@@ -33,7 +34,7 @@
 
                                 wp_list_categories( $args );?>
                             </ul>
-                        </div>-->
+                        </div-->
 
                     <div class="col-lg-8 col-md-8 col-sm-12">
                         <?php

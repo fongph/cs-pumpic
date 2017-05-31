@@ -38,8 +38,7 @@ class SimpleWpMapBuilder {
             $this->pattern = ($this->xml ? 'Y-m-d\TH:i:sP' : 'Y-m-d H:i');
             $this->other = $this->getOtherPages();
             $this->setUpBlockedUrls();
-            //commented for unshowing last updated data
-//            $this->setLastUpdated();
+            $this->setLastUpdated();
             $this->generateContent();
             $this->mergeAndPrint();
         }
@@ -54,7 +53,7 @@ class SimpleWpMapBuilder {
                     if (!is_int($option['date'])) { // fix for old versions of the plugin when date was stored in clear text
                         $option['date'] = strtotime($option['date']);
                     }
-                    $xml .= $this->getXml(esc_url($option['url']), date($this->pattern, $option['date']));
+                    $xml .= $this->getXml(esc_url($option['url']), get_the_modified_date($this->pattern, $option['date']));
                 }
             }
         }
@@ -84,9 +83,9 @@ class SimpleWpMapBuilder {
     // Returns xml or html
     public function getXml ($link, $date) {
         if ($this->xml) {
-            return "<url>\n\t<loc>$link</loc>\n\t\n</url>\n";
+            return "<url>\n\t<loc>$link</loc>\n\t<lastmod>$date</lastmod>\n</url>\n";
         } else {
-            return "<li><a href=\"$link\"><span class=\"link\">$link</span></a></li>";
+            return "<li><a href=\"$link\"><span class=\"link\">$link</span><span class=\"date\">$date</span></a></li>";
         }
     }
 
@@ -101,7 +100,6 @@ class SimpleWpMapBuilder {
                 $link = esc_url(get_permalink());
                 $date = get_the_modified_date($this->pattern);
                 $this->getCategoriesTagsAndAuthor($date);
-
                 if (!$this->isBlockedUrl($link)) {
                     if (!$this->home && $link === $this->homeUrl) {
                         $this->home = $this->getXml($link, $date);
@@ -162,7 +160,7 @@ class SimpleWpMapBuilder {
             require_once 'simpleWpMapOptions.php'; $ops = new SimpleWpMapOptions(); $orderArray = $ops->migrateFromOld();
         }
         if (!$this->home) {
-            $this->home = $this->getXml($this->homeUrl, date($this->pattern));
+            $this->home = $this->getXml($this->homeUrl, get_the_date($this->pattern));
         }
 
         $str = '';

@@ -9,5 +9,5 @@ function amp_frontend_add_canonical() {
 	}
 
 	$amp_url = amp_get_permalink( get_queried_object_id() );
-	printf( '<link rel="amphtml" href="%s">', esc_url( $amp_url ) );
+	printf( '<link rel="amphtml" href="%s" />', esc_url( $amp_url ) );
 }

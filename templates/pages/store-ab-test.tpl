@@ -9,7 +9,7 @@ description="Pumpic offers high-quality cell phone tracking software for a good 
         id="fsc-api"
         src="https://d1f8f9xcsvx3ha.cloudfront.net/sbl/0.7.3/fastspring-builder.min.js"
         type="text/javascript"
-        data-storefront="pumpic.test.onfastspring.com/popup-pumpic"
+        data-storefront="pumpic.onfastspring.com/popup-pumpic"
         data-data-callback="dataCallbackFunction"
         data-before-requests-callback="beforeRequestsCallbackFunction"
         data-decorate-callback="decorateURLFunction"
@@ -373,10 +373,11 @@ description="Pumpic offers high-quality cell phone tracking software for a good 
 
                                         <div class="prod-list-android clearfix" data-info-block="android" style="display: none;">
                                         {* ANDROID AJAX LOADING*}
-                                            {*<div id="loader"><img src="/images/loader.svg"></div>*}
+                                            <div id="loader"><img src="/images/loader.svg"></div>
                                             {*{include file='../includes/store/store-desktop.tpl'} for debug*}
 
-                                        {include file='../includes/store/store-desktop-ab-test.tpl'}
+                                        {*{include file='../includes/store/store-desktop-ab-test.tpl'}*}
+                                        {*{include file='../includes/store/store-mobile-ab-test.tpl'}*}
 
                                         </div>
                                         {* ---ANDROID---*}
@@ -472,7 +473,8 @@ our_products (text): Включить выключить блок OUR PRODUCTS (
 </div>
 {include file='../includes/main/main-analytics-footer.tpl'
 emptyScript="true"}
-<script src="/javascripts/frontend.min.js?1423094400" data-delete="delete"></script><script src="/javascripts/store-init.js"></script>
+<script src="/javascripts/frontend.min.js?1423094400" data-delete="delete"></script>
+<script src="/javascripts/store-init-ab-test.js"></script>
 
     {literal}
         <script>

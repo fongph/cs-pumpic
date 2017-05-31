@@ -6,26 +6,21 @@ require_once $_inc.'/config.php';
 require_once $_inc.'/lib/Currency.php';
 require_once $_inc.'/lib/users/Order.php';
 require_once $_inc.'/di_function.php';
+
 $obj = new includes\lib\users\Order;
 
 // smarty config
 require_once 'smarty.config.php';
 
-//if (isset($_COOKIE['store']) && !empty($_COOKIE['store'])){
-//    $namespace = $_COOKIE['store'];
-//    //@TODO do something
-//
-//} elseif (!isset($_COOKIE['store']) || empty($_COOKIE['store'])) {
-//  $namespace = getNamespace($obj);
-//    //@TODO show needed page
-//}
+$smarty = new Smarty();
+$smarty->compile_check = true;
+$smarty->debugging = false;
+$smarty->force_compile = 1;
 
-$namespace = 'second-store';
-/* list order */
-$products = $obj->getProducts($namespace);
-//echo '<pre>';
-//var_dump($products);
-/* form_order */
+
+    /* list order */
+    $products = $obj ->getProducts('third');
+
 $_request = (isset($_POST['price']) and !empty($_POST['price'])) ? $_POST['price']: false;
 if($_request['productID']) {
     // $_order ->setSession('pumpic_order', array('productID' => (int)$_request['productID']));
@@ -79,28 +74,26 @@ if(is_array($products)) {
 }
 
 
+$_curr = system\Currency::getInstance();
+    $_curr -> setFilter( ['iso' => ['USD','EUR','GBP','CAD','AUD'] ] );
+    $_rates = $_curr -> getCurrencies();
+
+    $smarty->assign('rates', json_encode($_rates));
 
 // init output params!
 $smarty->assign('getProducts', $products);
-if ($namespace == 'third'){
-    $smarty->display($b_dir . '/templates/pages/store-ab-test.tpl');
-} else {
-    $smarty->display($b_dir . '/templates/pages/store.tpl');
 
-}
+$device = $_GET['deviceWidth'];
+
+    if ($device < 700) {
+        $smarty->display( $b_dir.'/templates/includes/store/store-mobile-ab-test.tpl' );
+    } elseif ($device > 700){
+        $smarty->display($b_dir.'/templates/includes/store/store-desktop-ab-test.tpl');
+    }
 
 
 
-//function getNamespace($obj)
-//{
-//    $stores = array(0 =>'second-store', 1 => 'third');
-//
-//    $clientsNumber = $obj ->getStoreClientsCount();
-//    $obj->incrementStoreClientsCount();
-//    $store = $clientsNumber % 2;
-//    $namespace = $stores[$store];
-//    setcookie("store", $namespace, time()+365*24*60*60, '/');
-//
-//    return $namespace;
-//}
+
+
+
 

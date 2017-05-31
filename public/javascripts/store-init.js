@@ -20,15 +20,4 @@ $(document).ready(function(){
 				// s.src = "/javascripts/frontend.min.js";
 				// $("body").append(s);
 				});
-
-	$.get('/store-android-ab-test.php', { deviceWidth: deviceWidth })
-			.done(function(data) {
-				$('#loader').fadeOut()
-				$(".prod-list-android").html(data);
-				// $('script[data-delete=delete]').remove();
-				// var s = document.createElement("script");
-				// s.type = "text/javascript";
-				// s.src = "/javascripts/frontend.min.js";
-				// $("body").append(s);
-				});
 });

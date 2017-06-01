@@ -235,7 +235,7 @@ description="Pumpic offers high-quality cell phone tracking software for a good 
                                                             <button class="btn btn-default ga-action-click"
                                                                     ga-action ="click"
                                                                     ga-category="store"
-                                                                    ga-label="buy icloud"
+                                                                    ga-label="buy-icloud-test-checkout"
                                                                     value="true" type="submit" name="price[submit]"
                                                                     data-fsc-item-path-value="{$defaultIosiCloudPath}" onclick="fastspring.builder.reset();" data-fsc-action="Add,Checkout"
                                                             >Buy</button>
@@ -357,7 +357,7 @@ description="Pumpic offers high-quality cell phone tracking software for a good 
                                                                 <button class="btn btn-default ga-action-click"
                                                                         ga-action ="click"
                                                                         ga-category="store"
-                                                                        ga-label="buy icloud"
+                                                                        ga-label="buy-icloud-test-checkout"
                                                                         value="true" type="submit" name="price[submit]"
                                                                         data-fsc-item-path-value="{$defaultIosiCloudPath}" onclick="fastspring.builder.reset();" data-fsc-action="Add,Checkout"
                                                                 >Buy</button>
@@ -531,6 +531,10 @@ emptyScript="true"}
 
                 return (linkerParam ? url + '?' + linkerParam : url);
 
+            }
+            function popupEventReceived(custom) {
+                console.log(custom)
+                return custom;
             }
 
             //data-fsc-item-path-value

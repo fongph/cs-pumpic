@@ -5,7 +5,7 @@
 				<div class="col-lg-10 col-lg-offset-1">
 					<div class="row">
 						<h1 class="text-center mt10 mb20"><a class="blog-link" href="/security/">Kids' Phone Safety Blog</a></h1>
-
+<p>&nbsp;</p>
 <!--						<div class="archive">-->
 <!--							<span class="title">--><?php //printf( __( "Search Results for '<i>%s</i>'", 'cellspy' ), '<span>' . get_search_query() . '</span>' ); ?><!--</span>-->
 <!--						</div>-->
@@ -46,11 +46,11 @@
 						</div>
 
 						<div class="col-lg-4 col-md-4 col-sm-12">
-                                               		<div class="feature_list" style="margin-top: 10px;">
-                            					<div id="secondary" class="widget-area" role="complementary">
-                                					<?php dynamic_sidebar( 'sidebar-below-banner' ); ?>
-                            					</div>
-                        				</div>
+                        <div class="feature_list" style="margin-top: 10px;">
+                            <div id="secondary" class="widget-area" role="complementary">
+                                <?php dynamic_sidebar( 'sidebar-below-banner' ); ?>
+                            </div>
+                        </div>
 							<?php require_once '../../templates/includes/blog-banner-buy-home.tpl'; ?>
 
 							<div class="feature_list">

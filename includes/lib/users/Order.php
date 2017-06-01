@@ -170,11 +170,9 @@ class Order extends ManagerUser
         
         if($testMode) $this -> _gateway->setTestMode();
                 
-        $response =$this -> _gateway->purchaseProduct()->send();
+        $response = $this -> _gateway->purchaseProduct()->send();
 
         $redirectUrl = $response->getRedirectUrl();
-        
-        
         
         return $redirectUrl;
     } 
@@ -298,13 +296,17 @@ class Order extends ManagerUser
     
     public function getProducts($namespace) 
     {
-        if ($namespace == 'second-store' || $namespace == 'second-landing'){
+        if (in_array($namespace, ['second-store', 'second-landing'] )){
             $version = '';
             switch ($namespace){
                 case 'second-store': $version = 'd0'; break;
                 case 'second-landing': $version = 'd1'; break;
             }
-            $plans = $this->_billing->getSiteProductsWithVariousNamespace(self::SITE_ID, 'second', $namespace, $version);
+            if ($namespace == 'third-store' || $namespace == 'third-landing')
+                $plans = $this->_billing->getSiteProductsWithVariousNamespace(self::SITE_ID, 'third', $namespace, $version);
+            else
+                $plans = $this->_billing->getSiteProductsWithVariousNamespace(self::SITE_ID, 'second', $namespace, $version);
+
         }  else {
             $plans = $this->_billing->getSiteProducts(self::SITE_ID, $namespace);
         }
@@ -438,6 +440,13 @@ class Order extends ManagerUser
     public function incrementAmpStoreClientsCount()
     {
         return $this->_pdo->exec("UPDATE `options` SET `value` = `value`+1 WHERE `name` = 'pumpic-amp-store-clients-count';");
+
+    }
+
+    public function getProductByPath($path)
+    {
+        $path = $this->_pdo->quote($path);
+        return $this->_pdo->query("SELECT `id` FROM `products` WHERE `code_fastspring` = {$path};")->fetchColumn();
 
     }
 

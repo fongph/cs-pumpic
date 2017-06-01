@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "c4c045ef5b363cdb971f073218d1cab1",
+    "content-hash": "93a2eb4f976bed7029930fe635f15079",
     "packages": [
         {
             "name": "boomers/cs-billing",
@@ -12,7 +12,7 @@
             "source": {
                 "type": "git",
                 "url": "git@gitlab.dizboard.com:pumpic/cs-billing.git",
-                "reference": "462106bf93e092a05c3310f173a035229b67bc4d"
+                "reference": "959f1e5ba232aac660bdbf114412f271beed6140"
             },
             "require": {
                 "boomers/cs-models": "dev-master",
@@ -31,7 +31,7 @@
             "license": [
                 "MIT"
             ],
-            "time": "2017-04-14 07:59:08"
+            "time": "2017-05-24 08:54:42"
         },
         {
             "name": "boomers/cs-mail",
@@ -65,7 +65,7 @@
             "source": {
                 "type": "git",
                 "url": "git@gitlab.dizboard.com:pumpic/cs-models.git",
-                "reference": "a621744df42bdafedd2faa1a3035c0a3d9b88fd9"
+                "reference": "5b7072ff237f1e2276d5979b8a8b44624b380b92"
             },
             "require": {
                 "php": ">=5.4.0"
@@ -79,7 +79,7 @@
                     "CS\\Models\\": "src/"
                 }
             },
-            "time": "2017-04-03 11:22:36"
+            "time": "2017-05-18 09:37:40"
         },
         {
             "name": "boomers/cs-settings",
@@ -87,7 +87,7 @@
             "source": {
                 "type": "git",
                 "url": "git@gitlab.dizboard.com:pumpic/cs-settings.git",
-                "reference": "6263af370df96d4bdb732f788d543e06a339cd8d"
+                "reference": "be3d39f790e61d5296086bfdb799e2987677d226"
             },
             "require": {
                 "php": ">=5.4.0"
@@ -98,7 +98,7 @@
                     "CS\\Settings\\": "src/"
                 }
             },
-            "time": "2017-02-22 12:36:15"
+            "time": "2017-05-16 08:01:49"
         },
         {
             "name": "boomers/cs-users",
@@ -132,6 +132,25 @@
             "time": "2017-03-16 17:32:03"
         },
         {
+            "name": "boomers/deployer-recipes",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "git@gitlab.dizboard.com:pumpic/deployer-recipes.git",
+                "reference": "d10c3ab30990e9fbdf8207120885c4194e9322b7"
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/default.php"
+                ]
+            },
+            "time": "2017-03-17 08:25:54"
+        },
+        {
             "name": "boomers/ip",
             "version": "dev-master",
             "source": {
@@ -156,7 +175,7 @@
             "source": {
                 "type": "git",
                 "url": "git@gitlab.dizboard.com:pumpic/seller.git",
-                "reference": "e697ea314bc9d3314ae5e2013fbfa42214030b2a"
+                "reference": "0b3630b23b5b30731a6c86c3aace3c1fcb9dbf90"
             },
             "require": {
                 "guzzlehttp/guzzle": "~5.0",
@@ -174,7 +193,7 @@
             "license": [
                 "MIT"
             ],
-            "time": "2017-03-09 13:57:45"
+            "time": "2017-05-30 13:06:13"
         },
         {
             "name": "filp/whoops",
@@ -729,16 +748,16 @@
         },
         {
             "name": "rastor/jira-client",
-            "version": "0.3.16",
+            "version": "0.3.17",
             "source": {
                 "type": "git",
                 "url": "https://github.com/oRastor/jira-client.git",
-                "reference": "a3d9835012ca5a902ac377437b0438be6f8667f8"
+                "reference": "6c2b14143f976e4b5c907506b1378ae6903769a9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/oRastor/jira-client/zipball/a3d9835012ca5a902ac377437b0438be6f8667f8",
-                "reference": "a3d9835012ca5a902ac377437b0438be6f8667f8",
+                "url": "https://api.github.com/repos/oRastor/jira-client/zipball/6c2b14143f976e4b5c907506b1378ae6903769a9",
+                "reference": "6c2b14143f976e4b5c907506b1378ae6903769a9",
                 "shasum": ""
             },
             "require": {
@@ -767,7 +786,7 @@
                 "jira",
                 "rest"
             ],
-            "time": "2017-03-01T08:53:29+00:00"
+            "time": "2017-05-19T16:07:12+00:00"
         },
         {
             "name": "rastor/system",
@@ -1682,23 +1701,23 @@
         },
         {
             "name": "sebastian/diff",
-            "version": "1.4.1",
+            "version": "1.4.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/diff.git",
-                "reference": "13edfd8706462032c2f52b4b862974dd46b71c9e"
+                "reference": "7f066a26a962dbe58ddea9f72a4e82874a3975a4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/diff/zipball/13edfd8706462032c2f52b4b862974dd46b71c9e",
-                "reference": "13edfd8706462032c2f52b4b862974dd46b71c9e",
+                "url": "https://api.github.com/repos/sebastianbergmann/diff/zipball/7f066a26a962dbe58ddea9f72a4e82874a3975a4",
+                "reference": "7f066a26a962dbe58ddea9f72a4e82874a3975a4",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.3"
+                "php": "^5.3.3 || ^7.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "~4.8"
+                "phpunit/phpunit": "^4.8.35 || ^5.7 || ^6.0"
             },
             "type": "library",
             "extra": {
@@ -1730,7 +1749,7 @@
             "keywords": [
                 "diff"
             ],
-            "time": "2015-12-08T07:14:41+00:00"
+            "time": "2017-05-22T07:24:03+00:00"
         },
         {
             "name": "sebastian/environment",
@@ -1990,16 +2009,16 @@
         },
         {
             "name": "symfony/yaml",
-            "version": "v3.2.7",
+            "version": "v3.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
-                "reference": "62b4cdb99d52cb1ff253c465eb1532a80cebb621"
+                "reference": "885db865f6b2b918404a1fae28f9ac640f71f994"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/yaml/zipball/62b4cdb99d52cb1ff253c465eb1532a80cebb621",
-                "reference": "62b4cdb99d52cb1ff253c465eb1532a80cebb621",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/885db865f6b2b918404a1fae28f9ac640f71f994",
+                "reference": "885db865f6b2b918404a1fae28f9ac640f71f994",
                 "shasum": ""
             },
             "require": {
@@ -2014,7 +2033,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.2-dev"
+                    "dev-master": "3.3-dev"
                 }
             },
             "autoload": {
@@ -2041,7 +2060,7 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
-            "time": "2017-03-20T09:45:15+00:00"
+            "time": "2017-05-28T10:56:20+00:00"
         },
         {
             "name": "webmozart/assert",
@@ -2103,7 +2122,8 @@
         "boomers/cs-billing": 20,
         "boomers/cs-mail": 20,
         "boomers/cs-settings": 20,
-        "boomers/cs-users": 20
+        "boomers/cs-users": 20,
+        "boomers/deployer-recipes": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

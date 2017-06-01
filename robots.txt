@@ -13,6 +13,7 @@ Disallow: /direct-notice.html
 Disallow: /wp-content
 Disallow: /store-mobile.html
 Disallow: /store-desktop.html
+Disallow: /store-new-checkout.html
 Disallow: /store-sub-new-1.html
 Disallow: /store-sub-new-2.html
 Disallow: /store-sub-new-2202.html
@@ -23,6 +24,8 @@ Disallow: /store-sub-new-4.html
 Disallow: /store-sub-new-44.html
 Disallow: /store-sub-new-hyp1.html
 Disallow: /store-android.php
+Disallow: /store-android-ab-test.php
+Disallow: /store-android-ab-test.php
 Disallow: /wp-admin
 Disallow: /wp-includes
 Disallow: /security/tag/

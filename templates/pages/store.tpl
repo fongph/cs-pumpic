@@ -5,6 +5,25 @@
 showRand="true"
 title="Phone Tracker Prices and Subscription Plans | Pumpic"
 description="Pumpic offers high-quality cell phone tracking software for a good price. Learn more about subscription plans. Choose the one that suits your monitoring needs."}
+<script
+        id="fsc-api"
+        src="https://d1f8f9xcsvx3ha.cloudfront.net/sbl/0.7.3/fastspring-builder.min.js"
+        type="text/javascript"
+        data-storefront="pumpic.test.onfastspring.com/popup-pumpic"
+        {*data-data-callback="dataCallbackFunction"*}
+        {*data-error-callback="errorCallback"*}
+        {*data-before-requests-callback="beforeRequestsCallbackFunction"*}
+        {*data-after-requests-callback="afterRequestsCallbackFunction"*}
+        {*data-before-markup-callback="beforeMarkupCallbackFunction"*}
+        {*data-after-markup-callback="afterMarkupCallbackFunction"*}
+        {*data-decorate-callback="decorateURLFunction"*}
+        {*data-popup-event-received="popupEventReceived"*}
+        {*data-popup-webhook-received="popupWebhookReceived"*}
+        {*data-popup-closed="onPopupClose"*}
+        {*data-debug="true"*}
+        {*data-continuous="true"*}
+>
+</script>
 <body>
 <style>
     @media (max-width: 767px) {
@@ -181,7 +200,9 @@ description="Pumpic offers high-quality cell phone tracking software for a good 
                                                         </div>
                                                     </div>
                                                         <div class="list_price icloud-list_price">
-                                                        <form name="price_premium" method="POST" action="/buy.html" class="buy-form-with-offer" autocomplete="off" >
+                                                        <form name="price_premium" method="POST" action="/buy.html"
+                                                              class="buy-form-with-offer" autocomplete="off"
+                                                        >
                                                             {*<div class="save__2plan">*}
                                                                 {*<div class="save__text label-touch">*}
                                                                     {*<input type="checkbox" data-group="icloud" name="icloud-40off" id="icloud-40off-main" data-checkboxes="icloud-40off">*}
@@ -190,7 +211,7 @@ description="Pumpic offers high-quality cell phone tracking software for a good 
                                                                     {*</label>*}
                                                                 {*</div>*}
                                                             {*</div>*}
-                                                            <input id='product_price_icloud' type='hidden' name='price[productID]' value='{if isset($defaultIosiCloud)}{$defaultIosiCloud}{else}0{/if}' class="product_price"/>
+                                                            <input id='product_price_icloud' type='hidden' name="price[productID]" value='{if isset($defaultIosiCloud)}{$defaultIosiCloud}{else}0{/if}' class="product_price"/>
                                                             <ul>
                                                                 {foreach from=$getProducts.iosiCloud key=key item=item}
 
@@ -303,7 +324,7 @@ description="Pumpic offers high-quality cell phone tracking software for a good 
                                                             <div class="wr_pack_premium wr_icloud _single-pack-icloud"></div>
                                                             {*<div class="wr_pack_double_premium wr_icloud-double _double-pack-icloud"></div>*}
                                                             <div class="wr_price_big">
-                                                                <span></span><div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr icloud-price-per-month">{$defaultiCloudProduct}</div></div><span class="_period">/ month</span>
+                                                                <span></span><div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr icloud-price-per-month">{$defaultIosiCloudPrice}</div></div><span class="_period">/ month</span>
                                                             </div>
                                                         </div>
                                                         <div class="list_price icloud-list_price" id="foot_h4">
@@ -353,11 +374,13 @@ description="Pumpic offers high-quality cell phone tracking software for a good 
 
                                         <div class="prod-list-android clearfix" data-info-block="android" style="display: none;">
                                         {* ANDROID AJAX LOADING*}
-                                            <div id="loader"><img src="/images/loader.svg"></div>
+                                            {*<div id="loader"><img src="/images/loader.svg"></div>*}
                                             {*{include file='../includes/store/store-desktop.tpl'} for debug*}
+
+                                        {include file='../includes/store/store-desktop.tpl'}
+
                                         </div>
                                         {* ---ANDROID---*}
-
                                     </th>
                                 </tr>
                                 </thead>

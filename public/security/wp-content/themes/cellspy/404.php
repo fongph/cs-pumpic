@@ -20,8 +20,7 @@ get_header(); ?>
                             <img class="img-404" src="<?php echo getStaticUrl();?>/images/404/img-404.png" />
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-lg-offset-1 col-lg-10 col-md-12 col-sm-12">
+                    <div class="row">                            <div class="col-lg-offset-1 col-lg-10 col-md-12 col-sm-12">
                             <p class="heading-404">The page you're looking for is not here. But with Pumpic, you will always be able to find your kid if he/she has a smartphone!</p>
                             <div class="row">
 

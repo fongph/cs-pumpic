@@ -8574,3 +8574,118 @@ ul.list_category li:first-child {
   width: initial!important;
   height: initial!important;
 }
+
+.bg-android-exit-banner {
+  width: 520px;
+  height: 480px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+  border-radius: 10px 10px 15px 15px;
+  background-color: #ffffff;
+  padding: 15px;
+  font-family: "Open Sans";
+  top:200px;
+}
+.block-android-exit-banner {
+  display: block;
+  padding: 10px;
+}
+
+.header-android-exit-banner {
+  color: #16a89e;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 30px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.left-col-android-exit-banner {
+  position: relative;
+  bottom: 60px;
+}
+.right-col-android-exit-banner {
+  padding: 0;
+  position: relative;
+  top: 10px;
+  right: 20px;
+}
+.currency-android-exit-banner {
+  width: 28px;
+  height: 57px;
+  color: #ffb321;
+  font-size: 68px;
+  font-weight: 300;
+  position: relative;
+  bottom: 85px;
+}
+
+.action-price-android-exit-banner {
+  width: 200px;
+  height: 131px;
+  color: #ffb321;
+  font-size: 182px;
+  font-weight: 700;
+}
+
+.action-cents-android-exit-banner{
+  color: #ffb321;
+  font-size: 68px;
+}
+
+.product-name-android-exit-banner {
+  opacity: 0.8;
+  color: #4d4f5b;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 30px;
+}
+
+.prev-price-android-exit-banner {
+  opacity: 0.7;
+  color: #4d4f5b;
+  font-size: 45px;
+  font-weight: 300;
+  position: relative;
+  right: 130px;
+  padding: 20px;
+  background-image: url(../images/android-exit-banner/cross.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.btn-buy-android-exit-banner {
+  width: 340px;
+  height: 60px;
+  box-shadow: 4px 7px 20px rgba(0, 60, 56, 0.35);
+  border-radius: 5px;
+  background-color: #16a89e;
+}
+.btn-buy-android-exit-banner:hover {
+  opacity: 0.7;
+  color: #fff;
+  text-decoration: none;
+  background-color: #16a89e;
+
+}
+
+.icon-close-android-exit-banner {
+  width: 17px;
+  height: 17px;
+  background-image: url('../images/android-exit-banner/ic-close.png') ;
+  background-repeat:no-repeat;
+  background-size:contain;
+  background-position:center;
+  opacity: 0.7;
+}
+.text-buy-android-exit-banner {
+  width: 153px;
+  height: 22px;
+  color: #ffffff;
+  font-family: "Open Sans";
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+
+

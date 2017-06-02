@@ -27,12 +27,12 @@ function ab_test() {
     $('.buy-form-with-offer').on('change', 'input.data-price', function () {
         var product = $(this).data('product');
         console.log(product);
-        $(this).closest('form').find('button').attr('data-fsc-action', 'Checkout');
+        $(this).closest('form').find('button').attr('data-fsc-action', 'Add, Checkout');
         var ga_label = $(this).closest('form').find('button').attr('ga-label');
-        $('body').find('button[ga-label="'+ga_label+'"]').attr('data-fsc-action', 'Checkout');
-        $('body').find('button[ga-label="'+ga_label+'"]').removeAttr('onclick');
+        $('body').find('button[ga-label="'+ga_label+'"]').attr('data-fsc-action', 'Add, Checkout');
+        $('body').find('button[ga-label="'+ga_label+'"]').attr('data-fsc-item-path-value', product);
         fastspring.builder.reset();
         fastspring.builder.update(product,1);
-    });
 
+    });
 }

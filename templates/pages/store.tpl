@@ -5,25 +5,7 @@
 showRand="true"
 title="Phone Tracker Prices and Subscription Plans | Pumpic"
 description="Pumpic offers high-quality cell phone tracking software for a good price. Learn more about subscription plans. Choose the one that suits your monitoring needs."}
-<script
-        id="fsc-api"
-        src="https://d1f8f9xcsvx3ha.cloudfront.net/sbl/0.7.3/fastspring-builder.min.js"
-        type="text/javascript"
-        data-storefront="pumpic.test.onfastspring.com/popup-pumpic"
-        {*data-data-callback="dataCallbackFunction"*}
-        {*data-error-callback="errorCallback"*}
-        {*data-before-requests-callback="beforeRequestsCallbackFunction"*}
-        {*data-after-requests-callback="afterRequestsCallbackFunction"*}
-        {*data-before-markup-callback="beforeMarkupCallbackFunction"*}
-        {*data-after-markup-callback="afterMarkupCallbackFunction"*}
-        {*data-decorate-callback="decorateURLFunction"*}
-        {*data-popup-event-received="popupEventReceived"*}
-        {*data-popup-webhook-received="popupWebhookReceived"*}
-        {*data-popup-closed="onPopupClose"*}
-        {*data-debug="true"*}
-        {*data-continuous="true"*}
->
-</script>
+
 <body>
 <style>
     @media (max-width: 767px) {
@@ -474,8 +456,8 @@ our_products (text): Включить выключить блок OUR PRODUCTS (
 </div>
 {include file='../includes/main/main-analytics-footer.tpl'
 emptyScript="true"}
-<script src="/javascripts/frontend.min.js?1423094400" data-delete="delete"></script>
-<script src="/javascripts/store-init.js"></script>
+<script src="/javascripts/frontend.min.js?1423094400" data-delete="delete"></script><script src="/javascripts/store-init.js"></script>
+
 {literal}
 <script>
 

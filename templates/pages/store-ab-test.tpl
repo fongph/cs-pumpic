@@ -473,8 +473,7 @@ our_products (text): Включить выключить блок OUR PRODUCTS (
 </div>
 {include file='../includes/main/main-analytics-footer.tpl'
 emptyScript="true"}
-<script src="/javascripts/frontend.min.js?1423094400" data-delete="delete"></script>
-<script src="/javascripts/store-init-ab-test.js"></script>
+<script src="/javascripts/frontend.min.js?1423094400" data-delete="delete"></script><script src="/javascripts/store-init-ab-test.js"></script>
 
     {literal}
         <script>

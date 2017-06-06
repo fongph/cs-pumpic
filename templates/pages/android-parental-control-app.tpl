@@ -266,7 +266,7 @@ title="Android Parental Control App for Ultimate Monitoring | Pumpic"
                         onOpen: function () {
 
                             // google analitycs
-                            ga('send', 'event', 'trial', 'popup', 'exit-banner-android');
+                            ga('send', 'event', 'parental-control-app', 'popup', 'Anroid-exit-banner');
                             setCookie('android-exit-banner-app', 'android-parental-control-app')
 
                         },

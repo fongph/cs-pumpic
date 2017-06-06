@@ -302,7 +302,7 @@
                         onOpen: function () {
 
                             // google analitycs
-                            ga('send', 'event', 'trial', 'popup', 'exit-banner-android');
+                            ga('send', 'event', 'spy-app', 'popup', 'Anroid-exit-banner');
                             setCookie('android-exit-banner', 'spy-app')
 
                         },

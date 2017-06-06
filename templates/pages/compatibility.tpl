@@ -2,38 +2,38 @@
 
     title="Smartphones compatibility with monitoring software"
     description="Ensure the phone you want to track is mentioned in the Compatibility list and OS Requirements. If it meets the requirements, you can install pumpic monitoring app."
-} 
+}
 
 <body>
     <!-- BLOCK GTM -->
     {include file='../includes/main/main-after-body.tpl'}
     <!-- END BLOCK GTM -->
-    
+
     <!-- FLY BLOCKS -->
     {include file='../includes/content/fly/fly_blocks.tpl'}
     <!-- END FLY BLOCKS-->
-    
+
 	<div class="wrapper">
-        {nocache}    
-            {include file='../includes/main/main-top-menu.tpl' 
+        {nocache}
+            {include file='../includes/main/main-top-menu.tpl'
                     topmenu_active="compatibility"
                     show_control_panel_link="1"
-            }	
-            
+            }
+
             {* cache_id = "includes_main_main-top-menu"
                     nocache   *}
-            
-        {/nocache}
-        
 
-        
+        {/nocache}
+
+
+
         {*
             Template: PHONE
             Переменные:
-                style (text): стиль блока Phone (blue|black). * - blue 
+                style (text): стиль блока Phone (blue|black). * - blue
         *}
         {include file='../includes/content/phone/block-phone.tpl'
-                 style="black"   
+                 style="black"
         }
 
 
@@ -47,8 +47,8 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-12 pb20 intro-compatibility">
-                        <span>Pumpic is compatible with the majority of mobile devices. Operating systems supported: <b>Android (smartphones and tablets)</b> starting from the <b>2.2</b> version, 
-                            <b>iOS (iPhone, iPad, iPod Touch)</b> starting from the <b>6.0</b> version. This page contains a partial list of devices compatible with the Pumpic app.</span>
+                        <span>Pumpic is compatible with the majority of mobile devices. Operating systems supported: <b>Android (smartphones and tablets)</b> starting from the <b>2.2</b> version,
+                            <b>iOS (iPhone, iPad, iPod Touch)</b> starting from the <b>6.0</b> version. Please, note that Pumpic will work properly only with devices that have an implanted active SIM card. This page contains a partial list of devices compatible with the Pumpic app.</span>
                     </div>
                 </div>
 
@@ -70,7 +70,7 @@
                     <div class="block-info-compatibility">
                         <h2>Popular models supported</h2>
                         <span>sorted in alphabetical order{*sorted by popularity*}</span>
-                    </div>    
+                    </div>
                 </div>
 
                 <!-- #log -->
@@ -82,39 +82,39 @@
                 <!-- BLOCK NEW LIST COMPATIBILYTI -->
                 <div class='row'>
                     <div class="block-compatibility col-lg-12 col-md-12 col-sm-12">
-                        
+
                         <!-- // template-1 -->
                         <div id="temp-1">
                             {*nocache*}
                             <div class="bc-header">
-                                
+
                             <div id="tabs" class="bc-tabs" data-tabs="tabs">
                                 <section>
                                 {foreach from=$phones item=phone key=key}
                                     {assign 'iteration' $key + 1}
-                                
+
                                     <div data-cat-id="{$phone.cat_id}" class="item-tab {if $key == 0}active{/if}">
                                         <a href="#{$phone.cat_id}" data-toggle="tab">{$phone.cat_name}</a>
                                     </div>
                                     {*<div class="item-tab"><a href="#orange" data-toggle="tab">Orange</a></div>*}
-                                
-                                {if $iteration % $cols_cats == 0}     
+
+                                {if $iteration % $cols_cats == 0}
                                     </section><section>
                                 {/if}
-                                
-                                
+
+
                                 {* if $iteration < 2}  {/if *}
-                                
+
                                 {*<section>
                                     <div class="item-tab"><a href="#black" data-toggle="tab">Black</a></div>
                                     <div class="item-tab"><a href="#test" data-toggle="tab">Test</a></div>
                                 </section>*}
-                                {/foreach} 
+                                {/foreach}
                                 </section>
                             </div> <!-- #tabs -->
-                                
+
                             </div>
-                            
+
                             <div id="tab-content" class="tab-content bc-body">
                                 {foreach from=$phones item=phone key=key}
                                 <div class="tab-pane {if $key == 0}active{/if}" data-cat-id="{$phone.cat_id}">
@@ -122,37 +122,37 @@
                                         {assign var=miteration value=1}
                                         {assign var=mtd value=3}
                                         {foreach from=$phone.models item=model key=mkey}
-                                            
+
                                             <li>
                                                <!-- {*//{if $model.custom_text && count($model.features) > 0}  *}-->
                                                 {if $model.custom_text}
                                                     <a onClick="window.location.href = '/compatibility/{$model.alies}/'">{$model.name}</a>
                                                 {else}
-                                                    <span>{$model.name}</span> 
+                                                    <span>{$model.name}</span>
                                                 {/if}
                                             </li>
-                                            {if $miteration % $phone.count == 0}     
+                                            {if $miteration % $phone.count == 0}
                                                 </ul></td><td><ul>
-                                                {assign var=mtd value=$mtd-1}        
+                                                {assign var=mtd value=$mtd-1}
                                             {/if}
-                                            
+
                                             {assign var=miteration value=$miteration+1}
-                                            
+
                                         {/foreach}
-                                        
+
                                     </ul></td>
-                                      
-                                    {if $mtd} 
+
+                                    {if $mtd}
                                         {for $foo=1 to $mtd}
                                             <td></td>
                                         {/for}
                                     {/if}
-                                        
+
                                         </tr></table>
-                                        
-                                </div>  
+
+                                </div>
                                 {/foreach}
-                                
+
                                 <div class="clear"></div>
                             </div>
                             {*/nocache*}
@@ -160,7 +160,7 @@
                         <!-- end -->
                         <!-- // template-2 -->
                         <div id="temp-2">
-                            
+
                             <ul>
                                 {foreach from=$phones item=phone key=key}
                                 <li data-cat-id="{$phone.cat_id}" class="{if $key == 0}active{/if}">
@@ -171,7 +171,7 @@
                                             {if $model.custom_text && count($model.features) > 0}
                                                 <a href="/compatibility/{$model.alies}/">{$model.name}</a>
                                             {else}
-                                                <span>{$model.name}</span> 
+                                                <span>{$model.name}</span>
                                             {/if}
                                         </li>
                                         {/foreach}
@@ -179,12 +179,12 @@
                                 </li>
                                 {/foreach}
                             </ul>
-                            
+
                         </div> <!-- #temp-2 -->
-                        
-                        
+
+
                     </div>
-                    
+
                     {*<div class="box-get-search-result clearfix">
                     {nocache}
                         <div class="col-sm-12 col-md-12 col-lg-12">
@@ -194,11 +194,11 @@
                                     <li><span>{$phone.cat_name}</span>
                                         <ul>
                                             {foreach from=$phone.models item=model}
-                                                <li class="mobile_tooltip"> 
+                                                <li class="mobile_tooltip">
                                                     {if $model.custom_text && count($model.features) > 0}
                                                         <a href="{$schema}{$domain}/compatibility/{$model.alies}/">{$model.name}</a>
                                                     {else}
-                                                        <label>{$model.name}</label> 
+                                                        <label>{$model.name}</label>
                                                     {/if}
                                                 </li>
                                             {/foreach}
@@ -207,12 +207,12 @@
                                     </li>
                                 </ul>
 
-                                {if $iteration % $cols == 0}     
+                                {if $iteration % $cols == 0}
                                     </div><div class="col-sm-12 col-md-12 col-lg-12">
                                 {/if}
 
-                            {/foreach} 
-                        </div>    
+                            {/foreach}
+                        </div>
                     {/nocache}
                     </div>
                     <div class="box-navigations">
@@ -233,19 +233,19 @@
                             {include file='../includes/main/form/main-compatibility-send-find-phone.tpl'}
                             {* cache_id = "main-compatibility-send-find-phone"
                                 nocache *}
-                        {/nocache}    
+                        {/nocache}
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
-    
+
 	<!-- FOOTER -->
         {*
             Template: FOOTER
             Переменные:
-                our_products (text): Включить выключить блок OUR PRODUCTS (no|yes). * - yes 
+                our_products (text): Включить выключить блок OUR PRODUCTS (no|yes). * - yes
         *}
         {include file='../includes/main/main-footer.tpl'}
 	</div>
@@ -317,8 +317,8 @@
             Devices.search(request, params);
             return false;
         }); *}
-        
-        
+
+
         var $searchForm = $('.form-search');
         $searchForm.validate({
             rules: {
@@ -340,8 +340,8 @@
                 var $form = $(form);
                 $form.submit();
                 return false;
-        
-                
+
+
                 //var searchStr = $searchForm.find('input[name="device-model"]').val();
                 //Devices.search({ query: searchStr }, { title: 'Search results for "' + searchStr + '"'});
                 //return false;

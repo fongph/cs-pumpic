@@ -278,7 +278,7 @@
                                                     <a id="compatibility" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse17">What devices support Pumpic?</a>
                                                     <div id="collapse17" class="collapse">
                                                         <div>
-                                                            <p>Pumpic is supported by the majority of smartphones and tablets. To make sure your particular device model is compatible with the application, please visit our <a class="text-link a-default" target="_blank" href="/compatibility/">Compatibility</a> page or contact our Customer Support Team.</p>
+                                                            <p>Pumpic is supported by the majority of smartphones and tablets. Please, note that Pumpic will work properly only with devices that have an implanted active SIM card. To make sure your particular device model is compatible with the application, please visit our <a class="text-link a-default" target="_blank" href="/compatibility/">Compatibility</a> page or contact our Customer Support Team.</p>
                                                         </div>
                                                     </div>
                                                 </div>

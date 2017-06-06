@@ -58,7 +58,7 @@ $config = array(
 				'free-trial.html'  => 'free_trial_registration.php',
 
 				'store.html'  => 'store.php',
-				'store-new-checkout.html'  => 'store-new-checkout.php',
+				'store-new.html'  => 'store-new-checkout.php',
 				'store-android.php'  => 'store-android.php',
 				'store-android-ab-test.php'  => 'store-android-ab-test.php',
 				'aging-parent-protection-app.html' => 'aging-parent-protection-app.php',

@@ -10,15 +10,7 @@ $obj = new includes\lib\users\Order;
 
 // smarty config
 require_once 'smarty.config.php';
-//
-//if (isset($_COOKIE['store']) && !empty($_COOKIE['store'])){
-//    $namespace = $_COOKIE['store'];
-//    //@TODO do something
-//
-//} elseif (!isset($_COOKIE['store']) || empty($_COOKIE['store'])) {
-//  $namespace = getNamespace($obj);
-//    //@TODO show needed page
-//}
+
 $namespace = 'third';
 /* list order */
 $products = $obj->getProducts($namespace);
@@ -81,25 +73,7 @@ if(is_array($products)) {
 
 // init output params!
 $smarty->assign('getProducts', $products);
-//if ($namespace == 'third'){
-    $smarty->display($b_dir . '/templates/pages/store-ab-test.tpl');
-//} else {
-//    $smarty->display($b_dir . '/templates/pages/store.tpl');
-//
-//}
 
+$smarty->display($b_dir . '/templates/pages/store-ab-test.tpl');
 
-
-//function getNamespace($obj)
-//{
-//    $stores = array(0 =>'second-store', 1 => 'third');
-//
-//    $clientsNumber = $obj ->getStoreClientsCount();
-//    $obj->incrementStoreClientsCount();
-//    $store = $clientsNumber % 2;
-//    $namespace = $stores[$store];
-//    setcookie("store", $namespace, time()+365*24*60*60, '/');
-//
-//    return $namespace;
-//}
 

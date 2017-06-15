@@ -99,7 +99,7 @@
                         ga-category="store"
                         ga-label="buy-android-basic-test-checkout"
                         value="true" type="submit" name="price[submit]"
-                        data-fsc-item-path-value="{$defaultAndriodBasicPath}" onclick="fastspring.builder.reset();" data-fsc-action="Add,Checkout">Buy Basic</button>
+                        data-fsc-item-path-value="{$defaultAndriodBasicPath}" onclick="buyOnClick(this);" data-fsc-action="Add,Checkout">Buy Basic</button>
             </form>
         </div>
     </div>
@@ -204,7 +204,7 @@
                         ga-category="store"
                         ga-label="buy-android-premium-test-checkout"
                         value="true" type="submit" name="price[submit]"
-                        data-fsc-item-path-value="{$defaultAndroidPremiumPath}" onclick="fastspring.builder.reset();" data-fsc-action="Add,Checkout"
+                        data-fsc-item-path-value="{$defaultAndroidPremiumPath}" onclick="buyOnClick(this);" data-fsc-action="Add,Checkout"
                 >Buy Premium</button>
             </form>
         </div>

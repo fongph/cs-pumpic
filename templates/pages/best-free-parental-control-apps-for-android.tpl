@@ -417,5 +417,13 @@
     </div>
 
     {include file='../includes/main/main-analytics-footer.tpl'}
+
+    {include file='../includes/content/banners/lib/banner-promo-android-exit-new-client.tpl'
+        gaCategory='Anroid-exit-banner'
+        gaLabel='parental-apps-android'
+        cookieName='android-exit-banner-paretnal-apps'
+        cookieValue='parental-apps-android'
+        cookieSession=true
+    }
 </body>
 </html>

@@ -93,6 +93,8 @@ $smarty->display($b_dir . '/templates/pages/store.tpl');
 
 function getNamespace($obj)
 {
+    return 'second-store';
+    
     $stores = array(0 =>'second-store', 1 => 'third');
 
     $clientsNumber = $obj ->getStoreClientsCount();

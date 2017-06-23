@@ -13,9 +13,9 @@ require_once 'smarty.config.php';
 
 if (isset($_COOKIE['store'])){
     $store = $_COOKIE['store'];
-    if ($store == 'third'){
-        header("Location: //".$config['domain']."/store-new.html");
-    }
+//    if ($store == 'third'){
+//        header("Location: //".$config['domain']."/store-new.html");
+//    }
 } else {
    $store_next = getNamespace($obj);
     setcookie("store", $store_next);

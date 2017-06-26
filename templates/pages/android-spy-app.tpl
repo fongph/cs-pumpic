@@ -275,6 +275,7 @@
     gaLabel='spy-app'
     cookieName='android-exit-banner'
     cookieValue='spy-app'
+    cookieSession=false
     }
 </body>
 </html>

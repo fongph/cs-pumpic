@@ -22,8 +22,8 @@
                 if (cookie == '{$cookieValue}') {
                     return false;
                 }
-                $trial_registration =  $('.box-popUp').append($banner).find('#exit-banner-android');
-                $trial_registration.bPopup({
+                $exit_banner =  $('.box-popUp').append($banner).find('#exit-banner-android');
+                $exit_banner.bPopup({
                     modalClose: true,
                     opacity: 0.6,
                     follow: [false, false],
@@ -32,7 +32,7 @@
 
                         // google analitycs
                         ga('send', 'event', '{$gaLabel}', 'popup', '{$gaCategory}');
-                        if ({$cookieSession}){
+                        if (isset({$cookieSession})){
                             $.cookie('{$cookieName}', '{$cookieValue}');
 
                         } else {

@@ -51,6 +51,7 @@ $config = array(
 				'captcha.html'  => 'captcha.php',
 				'logout.html' => 'logout.php',
 				'buy.html' => 'buy.php',
+				'store-new-ga.html' => 'store-new-ga.php',
 
 				'login.html'  => 'login.php',
 

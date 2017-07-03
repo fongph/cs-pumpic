@@ -15,6 +15,7 @@ Disallow: /store-mobile.html
 Disallow: /store-desktop.html
 Disallow: /store-new-checkout.html
 Disallow: /store-new.html
+Disallow: /store-new-ga.html
 Disallow: /store-sub-new-1.html
 Disallow: /store-sub-new-2.html
 Disallow: /store-sub-new-2202.html

@@ -454,7 +454,7 @@ class Order extends ManagerUser
     {
         $order_reference = $this->_pdo->quote($order_reference);
 
-        $id = $this->_pdo->query("select ord.`id` from orders ord where ord.reference_number = {$order_reference} and ord.payment_method = 'fastspring-contextual';")->fetchColumn();
+        $id = $this->_pdo->query("select ord.`id` as `id` from orders ord where ord.reference_number = {$order_reference} and ord.payment_method = 'fastspring-contextual';")->fetchColumn();
 
         $order = $order = $this -> _billing -> getOrder($id);
 

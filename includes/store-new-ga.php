@@ -35,7 +35,7 @@ if (($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED
     $order->setReferer($orders_referrer);
     $order->setLanding($landing);
 
-   $id =  $order->getOrderForNewCheckout($order_referrer);
+   $id = $order->getOrderForNewCheckout($order_referrer);
 
 
 }

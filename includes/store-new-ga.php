@@ -22,20 +22,37 @@ $logger->info('event');
 
 if (($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest') {
     $data = $_POST;
-    $logger->info('POST' , ['order_reference' => $data['order_reference_from_store'],
-        'landing' => $data['landing'],
-        'orders_referer' => $data['orders_referer']]);
 
-    $order_referrer = $data['order_reference_from_store'];
-    $landing = $data['landing'];
-    $orders_referrer = $data['orders_referer'];
+    if (isset($landing)){
+        $landing = $data['landing'];
+        $order->setLanding($landing);
+        $logger->info('landing', ['landing' => $data['landing']]);
+    }
 
-    $order = new includes\lib\users\Order;
+    if (isset($orders_referrer)){
+        $orders_referrer = $data['orders_referrer'];
+        $order->setReferer($orders_referrer);
+        $logger->info('orders_referrer', ['orders_referrer' => $data['orders_referrer']]);
 
-    $order->setReferer($orders_referrer);
-    $order->setLanding($landing);
+    }
 
-   $id = $order->getOrderForNewCheckout($order_referrer);
+
+
+    if (isset($order_referrer)){
+        $order_referrer = $data['order_reference_from_store'];
+
+        $logger->info('order_reference', ['order_reference' => $data['order_reference_from_store']]);
+
+        $order = new includes\lib\users\Order;
+
+        $id = $order->getOrderForNewCheckout($order_referrer);
+
+    }
+
+
+
+
+
 
 
 }

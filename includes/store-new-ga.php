@@ -6,10 +6,10 @@
  * Time: 15:23
  */
 
-header('Access-Control-Allow-Origin: https://cloudfront.net');
-header('Access-Control-Allow-Origin: https://d2kl989519khzp.cloudfront.net/');
-header('Access-Control-Allow-Methods: GET,POST,PUT,DELETE,OPTIONS');
-header('Access-Control-Allow-Headers: Content-Type');
+
+header('Access-Control-Allow-Origin: https://d2kl989519khzp.cloudfront.net');
+header('Access-Control-Allow-Methods: GET,POST');
+header('Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, X-Requested-With');
 
 //$config
 $_inc = dirname(__FILE__); // includes
@@ -49,9 +49,6 @@ if (isset($headers['X-Requested-With']) && strtolower($headers['X-Requested-With
         $id = $order->getOrderForNewCheckout($order_referrer);
 
         $logger->info('order_reference', ['order_reference' => $data['order_reference_from_store']]);
-
-
-
     }
 }
 exit;

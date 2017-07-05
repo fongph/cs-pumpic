@@ -6,6 +6,11 @@
  * Time: 15:23
  */
 
+header('Access-Control-Allow-Origin: https://cloudfront.net');
+header('Access-Control-Allow-Origin: https://d2kl989519khzp.cloudfront.net/');
+header('Access-Control-Allow-Methods: GET,POST,PUT,DELETE,OPTIONS');
+header('Access-Control-Allow-Headers: Content-Type');
+
 //$config
 $_inc = dirname(__FILE__); // includes
 
@@ -20,39 +25,33 @@ $logger->pushHandler(new Monolog\Handler\StreamHandler(__DIR__ . '/../logs/store
 
 $logger->info('event');
 
-if (($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest') {
+
+if (isset($headers['X-Requested-With']) && strtolower($headers['X-Requested-With']) == 'xmlhttprequest') {
     $data = $_POST;
 
-    if (isset($landing)){
-        $landing = $data['landing'];
-        $order->setLanding($landing);
-        $logger->info('landing', ['landing' => $data['landing']]);
-    }
+    if (isset($data['order_reference_from_store'])){
 
-    if (isset($orders_referrer)){
-        $orders_referrer = $data['orders_referrer'];
-        $order->setReferer($orders_referrer);
-        $logger->info('orders_referrer', ['orders_referrer' => $data['orders_referrer']]);
-
-    }
-
-
-
-    if (isset($order_referrer)){
         $order_referrer = $data['order_reference_from_store'];
+        $order = new includes\lib\users\Order;
+
+        if (isset($data['landing'])){
+            $landing = $data['landing'];
+            $order->setLanding($landing);
+            $logger->info('landing', ['landing' => $data['landing']]);
+        }
+
+        if (isset($data['orders_referer'])){
+            $orders_referrer = $data['orders_referer'];
+            $order->setReferer($orders_referrer);
+            $logger->info('orders_referrer', ['orders_referrer' => $data['orders_referrer']]);
+
+        }
+        $id = $order->getOrderForNewCheckout($order_referrer);
 
         $logger->info('order_reference', ['order_reference' => $data['order_reference_from_store']]);
 
-        $order = new includes\lib\users\Order;
 
-        $id = $order->getOrderForNewCheckout($order_referrer);
 
     }
-
-
-
-
-
-
-
 }
+exit;

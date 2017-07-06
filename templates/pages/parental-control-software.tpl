@@ -117,12 +117,12 @@ visibleFlyFeatures="no"
 
                                                 <div class="list_price">
                                                     <form name="price_premium" method="POST" action="/buy.html" class="buy-form-with-offer" autocomplete="off">
-                                                        <input id='product_price_premium' type='hidden' name='price[productID]' value='{if isset($defaultIosiCloud)}{$defaultIosiCloud}{else}0{/if}' class="product_price" />
+                                                        <input id='product_price_premium' type='hidden' name='price[productID]' value='{if isset($getDefaultAndroidPremium)}{$getDefaultAndroidPremium}{else}0{/if}' class="product_price" />
 
                                                         <ul>
                                                             {foreach from=$getProducts.androidPremium key=key item=item}
                                                                 <li>
-                                                                    <label class="label_radio hover_label_radio {if $item.period == '12'}r_on{else}r_off{/if}">
+                                                                    <label class="label_radio hover_label_radio {if $item.period == '12'}r_on{else}r_off{/if} ">
                                                                         <input class="data-price" data-target=".premium-price-per-month" data-cur="usd" data-price-usd="{$item.price}" data-offer-price-usd="{$getProducts.androidPremiumDouble[$key].price}" data-period="{$item.period}" data-product="{$item.id}" data-offer-product="{$getProducts.androidPremiumDouble[$key].id}" data-group="icloud"  name="optionsRadios" id="optionsRadios{$item.id}1" value="{$item.id}" type="radio"{if $item.period == '12'} checked="checked"{/if} />
                                                                         <span class="sp">
                                                                                     <strong>{$item.period}</strong> {if $item.period == 1}month{else}months{/if}
@@ -373,5 +373,18 @@ visibleFlyFeatures="no"
 
 
 {include file='../includes/main/main-analytics-footer.tpl'}
+<script>
+    $(document).ready(function () {
+
+        $('input[data-period="12"]').closest('ul').find('label')
+                .removeClass('r_on')
+                .addClass('r_off');
+
+        $('input[data-period="12"]').closest('label')
+                .addClass('r_on')
+                .removeClass('r_off');
+    })
+
+</script>
 </body>
 </html>

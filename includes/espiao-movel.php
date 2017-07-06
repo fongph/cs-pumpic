@@ -20,9 +20,13 @@ $products = $obj ->getProducts('second-landing');
 if(is_array($products)) {
     if(isset($products['iosiCloud'])) {
         foreach($products['iosiCloud'] as $item) :
-            if ($item['period'] == 24 && $item['id']) {
+            if ($item['period'] == 6 && $item['id']) {
                 $smarty->assign('defaultIosiCloudProduct', $item['id']);
                 $smarty->assign('defaultIosiCloudPrice', round($item['price'] / $item['period'], 2));
+            }
+            if ($item['period'] == 12 || $item['period'] == 24) {
+                $itemNumber = array_search($item, $products['iosiCloud']);
+                unset($products['iosiCloud'][$itemNumber]);
             }
         endforeach;
     }
@@ -53,4 +57,4 @@ $smarty->assign('rates', json_encode($_rates));
 // init output params!
 $smarty->assign('getProducts', $products);
 // $smarty->assign('_ga', (isset($_COOKIE['_ga'])) ? trim( strtolower($_COOKIE['_ga']), 'ga') : '' );
-$smarty->display($b_dir.'/templates/pages/espiao-movel.tpl');
+$smarty->display($b_dir.'/templates/pages/espiao-movel/index.tpl');

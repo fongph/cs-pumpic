@@ -147,7 +147,7 @@ description="Pumpic offers high-quality cell phone tracking software for a good 
                                                             <span class="prod-head__device smart">iPod Touch</span>
                                                         </p>
                                                         <p class="prod-head__price">
-                                                            <span>starting from </span><b>$5.95/</b><span> month</span>
+                                                            <span>starting from </span><b>$12.95/</b><span> month</span>
                                                         </p>
                                                     </div>
                                                 </div>
@@ -255,7 +255,7 @@ description="Pumpic offers high-quality cell phone tracking software for a good 
                                                                 <ul>
                                                                     {foreach from=$getProducts.iosiCloud key=key item=item}
                                                                         <li>
-                                                                            <label class="label_radio hover_label_radio {if $item.period == '24'}r_on{else}r_off{/if}">
+                                                                            <label class="label_radio hover_label_radio {if $item.period == '6'}r_on{else}r_off{/if}">
                                                                                 <input class="data-price"
                                                                                        data-target=".icloud-price-per-month"
                                                                                        data-cur="usd"
@@ -448,7 +448,7 @@ description="Pumpic offers high-quality cell phone tracking software for a good 
                                                                 <ul>
                                                                     {foreach from=$getProducts.iosiCloud key=key item=item}
                                                                         <li>
-                                                                            <label class="label_radio hover_label_radio {if $item.period == '24'}r_on{else}r_off{/if}">
+                                                                            <label class="label_radio hover_label_radio {if $item.period == '6'}r_on{else}r_off{/if}">
                                                                                 <input class="data-price"
                                                                                        data-target=".icloud-price-per-month"
                                                                                        data-cur="usd"
@@ -661,7 +661,7 @@ emptyScript="true"}
             
 
             //initialize  product before popup open
-            var product = $('input.data-price[data-period="24"]').data('product');
+            var product = $('input.data-price[data-period="6"]').data('product');
         });
         function beforeRequestsCallbackFunction() {
            return this;

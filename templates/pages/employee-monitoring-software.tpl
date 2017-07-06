@@ -299,7 +299,7 @@ description="Increase productivity, ensure legal safety and streamline workflow 
                                                             <span class="prod-head__device tablet">iPad</span>
                                                             <span class="prod-head__device smart">iPod Touch</span>
                                                         </p>
-                                                        <p class="prod-head__price"><span>starting from </span><b>$5.95/</b><span> month</span></p>
+                                                        <p class="prod-head__price"><span>starting from </span><b>$12.95/</b><span> month</span></p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -362,7 +362,7 @@ description="Increase productivity, ensure legal safety and streamline workflow 
                                                             <div class="wr_pack_premium wr_icloud _single-pack-icloud"></div>
                                                             <div class="wr_pack_double_premium wr_icloud-double _double-pack-icloud"></div>
                                                             <div class="wr_price_big">
-                                                                <span></span><div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr icloud-price-per-month" >5.95</div></div><span>/ month</span>
+                                                                <span></span><div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr icloud-price-per-month" >12.95</div></div><span>/ month</span>
                                                             </div>
                                                         </div>
                                                         <div class="list_price icloud-list_price">
@@ -379,8 +379,8 @@ description="Increase productivity, ensure legal safety and streamline workflow 
                                                                 <ul>
                                                                     {foreach from=$getProducts.iosiCloud key=key item=item}
                                                                         <li>
-                                                                            <label class="label_radio hover_label_radio {if $item.period == '24'}r_on{else}r_off{/if}">
-                                                                                <input class="data-price" data-target=".icloud-price-per-month" data-cur="usd" data-price-usd="{$item.price}" data-offer-price-usd="{$getProducts.iosiCloudDouble[$key].price}" data-period="{$item.period}" data-product="{$item.id}" data-offer-product="{$getProducts.iosiCloudDouble[$key].id}" data-group="icloud" name="optionsRadios" id="optionsRadios{$item.id}1" value="{$item.id}" type="radio"{if $item.period == '24'} checked="checked"{/if} />
+                                                                            <label class="label_radio hover_label_radio {if $item.period == '6'}r_on{else}r_off{/if}">
+                                                                                <input class="data-price" data-target=".icloud-price-per-month" data-cur="usd" data-price-usd="{$item.price}" data-offer-price-usd="{$getProducts.iosiCloudDouble[$key].price}" data-period="{$item.period}" data-product="{$item.id}" data-offer-product="{$getProducts.iosiCloudDouble[$key].id}" data-group="icloud" name="optionsRadios" id="optionsRadios{$item.id}1" value="{$item.id}" type="radio"{if $item.period == '6'} checked="checked"{/if} />
                                                                                 <span class="sp">
                                                                             <strong>{$item.period}</strong> {if $item.period == 1}month{else}months{/if}
                                                                         </span>

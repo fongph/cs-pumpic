@@ -49,6 +49,10 @@ $smarty->force_compile = 1;
                     $smarty->assign('defaultIosiCloudProduct', $item['id']);
                     $smarty->assign('defaultIosiCloudPrice', round($item['price'] / $item['period'], 2));
                 }
+                if ($item['period'] == 12 || $item['period'] == 24) {
+                    $itemNumber = array_search($item, $products['iosiCloud']);
+                    unset($products['iosiCloud'][$itemNumber]);
+                }
             endforeach;
         }
         if(isset($products['iosJailbreak'])) {

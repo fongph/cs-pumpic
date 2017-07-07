@@ -57,4 +57,4 @@ $smarty->assign('rates', json_encode($_rates));
 // init output params!
 $smarty->assign('getProducts', $products);
 // $smarty->assign('_ga', (isset($_COOKIE['_ga'])) ? trim( strtolower($_COOKIE['_ga']), 'ga') : '' );
-$smarty->display($b_dir.'/templates/pages/espiao-movel/index.tpl');
+$smarty->display($b_dir.'/templates/pages/espiao-movel.tpl');

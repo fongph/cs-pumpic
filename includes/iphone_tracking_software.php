@@ -54,6 +54,10 @@ if(is_array($products)) {
                 $smarty->assign('defaultJailbreakProduct', $item['id']);
                 $smarty->assign('defaultJailbreakPrice', round($item['price'] / $item['period'], 2));
             }
+            if ($item['period'] == 3 || $item['period'] == 12) {
+                $itemNumber = array_search($item, $products['iosJailbreak']);
+                unset($products['iosJailbreak'][$itemNumber]);
+            }
         endforeach;
     }
 

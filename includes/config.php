@@ -93,9 +93,9 @@ $config = array(
 
 			// country
 				'parental-control-software.html' => 'parental-control-software.php',
-				'mobile-spion.html' => 'mobile-spion.php',
-				'espiao-movel.html' => 'espiao-movel.php',
-                'logiciel-de-controle-parental.html' => 'logiciel-de-controle-parental.php',
+				'mobile-spion' => 'mobile-spion.php',
+				'espiao-movel' => 'espiao-movel.php',
+                'logiciel-de-controle-parental' => 'logiciel-de-controle-parental.php',
 
 
             //legal

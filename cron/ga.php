@@ -274,7 +274,7 @@
                 }
                 // amp  project
                 else if(strlen($source['rows']['ga:source'][0]) > 0
-                        && preg_match('/^pumpic-com.cdn.ampproject.org$/is', $source['rows']['ga:source'][0])) {
+                        && preg_match('/amp/is', $source['rows']['ga:source'][0])) {
                     $ga_type = self::GA_TYPE_AMP_PROJECT;
                 }
                 //system email

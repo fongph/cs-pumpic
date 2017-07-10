@@ -53,7 +53,8 @@ if (($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED
             'email' => $email,
             'orderReference' => $order_reference,
             'landing' => $landing,
-            'referrer' => $referrer
+            'referrer' => $referrer,
+            'ip' =>  IP::getRealIP()
         ));
 
         $logger->info('billing-order-ga-source');

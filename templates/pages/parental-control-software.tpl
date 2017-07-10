@@ -380,6 +380,12 @@ visibleFlyFeatures="no"
                 .removeClass('r_on')
                 .addClass('r_off');
 
+        $('input[data-period="12"]').closest('ul').find('input')
+                .removeAttr('checked');
+        $('#product_price_premium').val($('input[data-period="12"]').val())
+
+        $('input[data-period="12"]').attr('checked', 'checked');
+
         $('input[data-period="12"]').closest('label')
                 .addClass('r_on')
                 .removeClass('r_off');

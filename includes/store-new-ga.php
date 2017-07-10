@@ -7,7 +7,7 @@
  */
 
 
-header('Access-Control-Allow-Origin: https://d2kl989519khzp.cloudfront.net');
+header('Access-Control-Allow-Origin: https://pumpic.com');
 header('Access-Control-Allow-Methods: GET,POST');
 header('Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, X-Requested-With');
 

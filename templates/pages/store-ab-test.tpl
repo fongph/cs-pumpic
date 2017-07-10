@@ -664,7 +664,6 @@ emptyScript="true"}
             var product = $('input.data-price[data-period="6"]').data('product');
         });
         function beforeRequestsCallbackFunction() {
-           return this;
         }
 
         // GA event send
@@ -681,7 +680,6 @@ emptyScript="true"}
         // GA event send
 
         function dataCallbackFunction(data_object) {
-            console.log('dataCallbackFunction', data_object);
         }
         function decorateURLFunction(url) {
             var linkerParam = null;
@@ -689,23 +687,62 @@ emptyScript="true"}
             ga(function () {
                 var trackers = ga.getAll();
                 trackers.forEach(function (tracker) {
-                    console.log(tracker.get('name'));
                 });
                 linkerParam = trackers[0].get('linkerParam');
             });
-            console.log('URL ' + url + ' linkerParam ' + linkerParam)
+
 
             return (linkerParam ? url + '?' + linkerParam : url);
         }
 
-        function popupEventReceived(custom) {
-            return custom;
+        function popupEventReceived(event) {
+
+            if (isset(event.ecommerce.purchase.actionField.id)){
+
+               var order_reference_from_store =  event.ecommerce.purchase.actionField.id;
+               var orders_referer = getCookie('orders_referer');
+               var landing = getCookie('landing');
+
+               setTimeout(function (
+               ) {
+                   var http = new XMLHttpRequest();
+                   var url = "https://pumpic.com/store-new-ga.html";
+                   var params = "order_reference_from_store="+order_reference_from_store +"&landing=" + landing + "&orders_referer=" + orders_referer;
+                   http.open("POST", url, true);
+
+                   //Send the proper header information along with the request
+                   http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+                   http.setRequestHeader("X-Requested-With", "XMLHttpRequest");
+
+
+                   http.onreadystatechange = function() {//Call a function when the state changes.
+                       if(http.readyState == 4 && http.status == 200) {
+                       }
+                   }
+                   http.send(params);
+
+               } , 60000);
+
+               return true;
+           }
+
         }
+
+        function getCookie(name) {
+            var nameEQ = name + "=";
+            var ca = document.cookie.split(';');
+            for(var i=0;i < ca.length;i++) {
+                var c = ca[i];
+                while (c.charAt(0)==' ') c = c.substring(1,c.length);
+                if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+            }
+            return '--';
+        }
+
         //data-fsc-item-path-value
         $(function () {
             $('.buy-form-with-offer').on('change', 'input.data-price', function () {
                 var product = $(this).data('product');
-                console.log(product);
 
                 $(this).closest('form').find('button').attr('data-fsc-action', 'Add, Checkout');
                 var ga_label = $(this).closest('form').find('button').attr('ga-label');

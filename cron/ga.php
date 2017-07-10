@@ -258,17 +258,17 @@
                     $ga_type = self::GA_TYPE_DIRECT;
                 }
 
-                // amp  project
-                else if(strlen($source['rows']['ga:source'][0]) > 0
-                    && preg_match('/amp/is', $source['rows']['ga:source'][0])) {
-                    $ga_type = self::GA_TYPE_AMP_PROJECT;
-                }
-
                 // organic
                 else if(strlen($source['rows']['ga:source'][0]) > 0 
                         && preg_match('/^organic$/is', $source['rows']['ga:medium'][0])) {
                     $ga_type = self::GA_TYPE_ORGANIC;
                 }
+                // amp  project
+                else if(strlen($source['rows']['ga:source'][0]) > 0
+                    && preg_match('/^pumpic-com.cdn.ampproject.org$/is', $source['rows']['ga:source'][0])) {
+                    $ga_type = self::GA_TYPE_AMP_PROJECT;
+                }
+
                 // referral
                 else if(strlen($source['rows']['ga:source'][0]) > 0 
                         && preg_match('/^referral$/is', $source['rows']['ga:medium'][0])) {

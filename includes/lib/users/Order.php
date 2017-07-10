@@ -450,27 +450,4 @@ class Order extends ManagerUser
 
     }
 
-    public function getOrderForNewCheckout($order_reference)
-    {
-        $order_reference = $this->_pdo->quote($order_reference);
-
-        $id = $this->_pdo->query("select ord.`id` as `id` from orders ord where ord.reference_number = {$order_reference} and ord.payment_method = 'fastspring-contextual';")->fetchColumn();
-
-        $order = $order = $this -> _billing -> getOrder($id);
-
-        // save referer and landing
-        if($this ->getReferer() and $this ->getLanding()) {
-            $referer = $this -> _billing -> getReferer();
-            $referer -> setOrder($order)
-                ->setReferer( $this ->getReferer() )
-                ->setLanding( $this ->getLanding() )
-                ->save();
-        }
-
-        $this -> unsetReferer();
-        $this -> unsetLanding();
-
-        return true;
-    }
-
 }

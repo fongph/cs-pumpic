@@ -32,31 +32,22 @@ if (($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED
 
     if (isset($data['order_reference_from_store'])){
 
-        $order_referrer = $data['order_reference_from_store'];
-        $order = new includes\lib\users\Order;
+        $order_reference = $data['order_reference_from_store'];
 
-        if (isset($data['landing'])){
-            $landing = $data['landing'];
-            $order->setLanding($landing);
-            $logger->info('landing', ['landing' => $data['landing']]);
-        }
+        $referrer = isset($data['orders_referer']) ? $data['orders_referer'] : '--';
+        $landing = isset($data['landing']) ? $data['landing'] : '--';
 
-        if (isset($data['orders_referer'])){
-            $orders_referrer = $data['orders_referer'];
-            $order->setReferer($orders_referrer);
-            $logger->info('orders_referrer', ['orders_referrer' => $data['orders_referrer']]);
+        $logger->info('orders_referrer', ['orders_referrer' => $referrer]);
+        $logger->info('landing', ['landing' => $landing]);
 
-        }
+        $eventManager = EventManager\EventManager::getInstance();
+        $eventManager->emit('billing-order-ga-source', array(
+            'orderReference' => $order_reference,
+            'landing' => $landing,
+            'referrer' => $referrer
+        ));
 
-        $logger->info('sleep');
-
-        sleep(60);
-
-        $logger->info('wake up');
-
-        $id = $order->getOrderForNewCheckout($order_referrer);
-
-        $logger->info('order_reference', ['order_reference' => $data['order_reference_from_store']]);
+        $logger->info('billing-order-ga-source');
     }
 }
 exit;

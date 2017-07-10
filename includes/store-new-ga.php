@@ -36,8 +36,8 @@ if (($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED
 
         $order_reference = $data['order_reference_from_store'];
 
-        $referrer = isset($data['orders_referer']) ? $data['orders_referer'] : '--';
-        $landing = isset($data['landing']) ? $data['landing'] : '--';
+        $referrer = (isset($data['orders_referer']) && $data['orders_referer'] != 'false') ? $data['orders_referer'] : '--';
+        $landing = (isset($data['landing']) && $data['landing'] != 'false') ? $data['landing'] : '--';
 
         $logger->info('orders_referrer', ['orders_referrer' => $referrer]);
         $logger->info('landing', ['landing' => $landing]);

@@ -249,7 +249,9 @@
         public function updateOrderGoogleSource($order_id, Array $source ) {
             
             $ga_type = self::GA_TYPE_DEFAULT; // false
-            if(isset($source['rows']['ga:source'][0], $source['rows']['ga:medium'][0]) 
+            echo $source['rows']['ga:source'][0];
+            echo $source['rows']['ga:medium'][0];
+            if(isset($source['rows']['ga:source'][0], $source['rows']['ga:medium'][0])
                     && $source['rows']['ga:source'][0] != NULL && $source['rows']['ga:medium'][0] != NULL) {
             
                 // direct

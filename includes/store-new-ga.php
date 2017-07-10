@@ -15,8 +15,9 @@ header('Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers
 $_inc = dirname(__FILE__); // includes
 
 require __DIR__ . '/../vendor/autoload.php';
-require_once $_inc . '/lib/users/Order.php';
+require __DIR__ . '/../includes/di.php';
 require_once $_inc.'/di_function.php';
+
 
 $logger = new Monolog\Logger('logger');
 Monolog\ErrorHandler::register($logger);
@@ -25,6 +26,7 @@ $logger->pushHandler(new Monolog\Handler\StreamHandler(__DIR__ . '/../logs/store
 
 $logger->info('event');
 
+CS\Users\UsersManager::registerListeners($di->get('db'));
 
 if (($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest') {
 
@@ -40,8 +42,15 @@ if (($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED
         $logger->info('orders_referrer', ['orders_referrer' => $referrer]);
         $logger->info('landing', ['landing' => $landing]);
 
-        $eventManager = EventManager\EventManager::getInstance();
+        $accountInfo = getEmailByOrderReference($order_reference);
+
+        $email = $accountInfo['accounts'][0]['contact']['email'];
+        $logger->info('email', ['email' => $email]);
+
+        $eventManager = \EventManager\EventManager::getInstance();
+
         $eventManager->emit('billing-order-ga-source', array(
+            'email' => $email,
             'orderReference' => $order_reference,
             'landing' => $landing,
             'referrer' => $referrer
@@ -50,4 +59,26 @@ if (($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED
         $logger->info('billing-order-ga-source');
     }
 }
+
+function getEmailByOrderReference($reference){
+
+    $url = 'https://api.fastspring.com/accounts?orderReference='. $reference;
+
+    $client = new \GuzzleHttp\Client();
+
+    $createdRequest = $client->createRequest('GET', $url, [
+        'headers' => array(
+            'Cache-control' => 'no-cache',
+            'Authorization' => 'Basic NElFRUZFTTBRSVdYMFZBV1BOX0Y2QTpRN2ZERW0xMFFEQ2hnWXNBWEVzUW1n'
+        )
+    ]);
+
+    $response = $client->send($createdRequest);
+
+    $data = $response->getBody()->getContents();
+
+    return json_decode($data, true);
+
+}
+
 exit;

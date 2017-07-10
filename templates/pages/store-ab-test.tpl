@@ -632,30 +632,7 @@ emptyScript="true"}
 <script src="/javascripts/store-init-ab-test.js"></script>
 
 {literal}
-    <script>
-        var QueryString = function () {
-            // This function is anonymous, is executed immediately and
-            // the return value is assigned to QueryString!
-            var query_string = {};
-            var query = window.location.search.substring(1);
-            var vars = query.split("&");
-            for (var i = 0; i < vars.length; i++) {
-                var pair = vars[i].split("=");
-                // If first entry with this name
-                if (typeof query_string[pair[0]] === "undefined") {
-                    query_string[pair[0]] = decodeURIComponent(pair[1]);
-                    // If second entry with this name
-                } else if (typeof query_string[pair[0]] === "string") {
-                    var arr = [query_string[pair[0]], decodeURIComponent(pair[1])];
-                    query_string[pair[0]] = arr;
-                    // If third or later entry with this name
-                } else {
-                    query_string[pair[0]].push(decodeURIComponent(pair[1]));
-                }
-            }
-            return query_string;
-        }();
-    </script>
+
     <script>
         $(document).ready(function () {
             
@@ -703,25 +680,21 @@ emptyScript="true"}
                var orders_referer = getCookie('orders_referer');
                var landing = getCookie('landing');
 
-               setTimeout(function (
-               ) {
-                   var http = new XMLHttpRequest();
-                   var url = "https://pumpic.com/store-new-ga.html";
-                   var params = "order_reference_from_store="+order_reference_from_store +"&landing=" + landing + "&orders_referer=" + orders_referer;
-                   http.open("POST", url, true);
+               var http = new XMLHttpRequest();
+               var url = "https://pumpic.com/store-new-ga.html";
+               var params = "order_reference_from_store="+order_reference_from_store +"&landing=" + landing + "&orders_referer=" + orders_referer;
+               http.open("POST", url, true);
 
-                   //Send the proper header information along with the request
-                   http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-                   http.setRequestHeader("X-Requested-With", "XMLHttpRequest");
+               //Send the proper header information along with the request
+               http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+               http.setRequestHeader("X-Requested-With", "XMLHttpRequest");
 
 
-                   http.onreadystatechange = function() {//Call a function when the state changes.
-                       if(http.readyState == 4 && http.status == 200) {
-                       }
+               http.onreadystatechange = function() {//Call a function when the state changes.
+                   if(http.readyState == 4 && http.status == 200) {
                    }
-                   http.send(params);
-
-               } , 60000);
+               }
+               http.send(params);
 
                return true;
            }

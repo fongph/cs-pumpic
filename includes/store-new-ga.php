@@ -47,6 +47,13 @@ if (($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED
             $logger->info('orders_referrer', ['orders_referrer' => $data['orders_referrer']]);
 
         }
+
+        $logger->info('sleep');
+
+        sleep(60);
+
+        $logger->info('wake up');
+
         $id = $order->getOrderForNewCheckout($order_referrer);
 
         $logger->info('order_reference', ['order_reference' => $data['order_reference_from_store']]);

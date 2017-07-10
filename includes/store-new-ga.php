@@ -26,7 +26,8 @@ $logger->pushHandler(new Monolog\Handler\StreamHandler(__DIR__ . '/../logs/store
 $logger->info('event');
 
 
-if (isset($headers['X-Requested-With']) && strtolower($headers['X-Requested-With']) == 'xmlhttprequest') {
+if (($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest') {
+
     $data = $_POST;
 
     if (isset($data['order_reference_from_store'])){

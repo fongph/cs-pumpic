@@ -256,7 +256,14 @@
                 if(preg_match('/^\(direct\)$/is', $source['rows']['ga:source'][0]) 
                         && preg_match('/^\(none\)$/is', $source['rows']['ga:medium'][0])) {
                     $ga_type = self::GA_TYPE_DIRECT;
-                } 
+                }
+
+                // amp  project
+                else if(strlen($source['rows']['ga:source'][0]) > 0
+                    && preg_match('/amp/is', $source['rows']['ga:source'][0])) {
+                    $ga_type = self::GA_TYPE_AMP_PROJECT;
+                }
+
                 // organic
                 else if(strlen($source['rows']['ga:source'][0]) > 0 
                         && preg_match('/^organic$/is', $source['rows']['ga:medium'][0])) {
@@ -272,11 +279,7 @@
                         && preg_match('/^ioscpapp$/is', $source['rows']['ga:source'][0])) {
                     $ga_type = self::GA_TYPE_APP_STORE;
                 }
-                // amp  project
-                else if(strlen($source['rows']['ga:source'][0]) > 0
-                        && preg_match('/amp/is', $source['rows']['ga:source'][0])) {
-                    $ga_type = self::GA_TYPE_AMP_PROJECT;
-                }
+
                 //system email
                 else if(strlen($source['rows']['ga:source'][0]) > 0 
                         && preg_match('/^system-email$/is', $source['rows']['ga:medium'][0])) {

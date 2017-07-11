@@ -36,7 +36,8 @@
 
     date_default_timezone_set("UTC");
     session_start();
-    
+
+
 //    set_error_handler(function($errno, $errstr, $errfile, $errline) {
 //        throw new \ErrorException($errstr, 0, $errno, $errfile, $errline);
 //    });
@@ -249,8 +250,7 @@
         public function updateOrderGoogleSource($order_id, Array $source ) {
             
             $ga_type = self::GA_TYPE_DEFAULT; // false
-            echo $source['rows']['ga:source'][0];
-            echo $source['rows']['ga:medium'][0];
+
             if(isset($source['rows']['ga:source'][0], $source['rows']['ga:medium'][0])
                     && $source['rows']['ga:source'][0] != NULL && $source['rows']['ga:medium'][0] != NULL) {
             
@@ -333,7 +333,15 @@
         }
         
     }
-    
+
+
+    $logger = new \Monolog\Logger('logger');
+    \Monolog\ErrorHandler::register($logger);
+    $logger->pushProcessor(new \Monolog\Processor\WebProcessor());
+    $logger->pushHandler(new \Monolog\Handler\StreamHandler(__DIR__ . '/../logs/ga-source.log', \Monolog\Logger::DEBUG));
+
+    $logger->info('event started');
+
     /**
      * getResult in GA.
      */
@@ -344,11 +352,22 @@
 
     if(is_array($orders) and count($orders) > 0) {
         foreach($orders as $key => $order):
-            
+
+            $logger->info('order', [
+                $key,
+                $order
+            ]);
+
             // settings
             $ga ->setStartData( $ga ->converUTC( date('Y-m-d H:i:s', $order['created_at']) ) );
             $ga ->setEndData( $ga ->converUTC( date('Y-m-d H:i:s', strtotime('+1 days', $order['created_at'])) ) );
             $ga ->setTransactionID( trim( $order['reference_number'] ) );
+
+            $sources = (array) $ga->getTransactions();
+            $logger->info('sources & mediums', [
+                'source' => $sources['rows']['ga:source'][0],
+                'medium' => $sources['rows']['ga:medium'][0]
+            ]);
 
             // results
             $ga ->updateOrderGoogleSource( $order['id'], $ga ->getTransactions() );
@@ -358,3 +377,4 @@
     
     // save Logs
     $ga ->saveLogs();
+    $logger->info('event end');

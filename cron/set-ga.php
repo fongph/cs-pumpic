@@ -211,7 +211,9 @@ class GetGA extends GoogleAnalyticsAPI
                                              `status` = 'completed'
                                             AND `reference_number` != '' 
                                             AND `test` = 0
-                                            AND `payment_method` = 'fastspring-contextual'
+                                            AND `payment_method` = 'fastspring'
+                                            AND `ga_source` IN (4,5)
+                                            AND created_at > '2017-05-30 00:00:00'
                                             ")
                 ->fetchAll()) != false) {
             return $data;
@@ -243,8 +245,7 @@ class GetGA extends GoogleAnalyticsAPI
             }
             // amp  project
             else if(strlen($source['rows']['ga:source'][0]) > 0
-                && preg_match('/^pumpic-com.cdn.ampproject.org$/is', $source['rows']['ga:source'][0])
-                && preg_match('/^referral$/is', $source['rows']['ga:medium'][0])) {
+                && preg_match('/^pumpic-com.cdn.ampproject.org$/is', $source['rows']['ga:source'][0])) {
                 $ga_type = self::GA_TYPE_AMP_PROJECT;
             }
 
@@ -338,13 +339,13 @@ $logger = new \Monolog\Logger('logger');
 $logger->pushProcessor(new \Monolog\Processor\WebProcessor());
 $logger->pushHandler(new \Monolog\Handler\StreamHandler(__DIR__ . '/../logs/set-ga.log', \Monolog\Logger::DEBUG));
 
-$logger->info('event started');
 
 
 $orders = $ga ->getOredrsCompleted( 'completed' );
 
 if(is_array($orders) and count($orders) > 0) {
     foreach($orders as $key => $order):
+        $logger->info('event started');
 
         $logger->info('order', [
             $key,
@@ -359,21 +360,23 @@ if(is_array($orders) and count($orders) > 0) {
         $sources = (array) $ga->getTransactions();
 
         $logger->info('fullReferrer & landingPagePath', [
+            'source' => $sources['rows']['ga:source'][0],
+            'medium' => $sources['rows']['ga:medium'][0],
             'fullReferrer' => $sources['rows']['ga:fullReferrer'][0],
             'landingPagePath' => $sources['rows']['ga:landingPagePath'][0]
         ]);
 
-        $google_source = ['direct', '(direct)', 'email', 'ioscpapp', 'paid search', 'organic', 'referral', 'media', 'remarketing', 'affiliate', 'organic (monitorphones)', 'app store', 'social', 'system email', 'amp-project', 'google'];
+//        $google_source = ['direct', '(direct)', 'email', 'ioscpapp', 'paid search', 'organic', 'referral', 'media', 'remarketing', 'affiliate', 'organic (monitorphones)', 'app store', 'social', 'system email', 'amp-project', 'google'];
 
-        $landing = is_null($sources['rows']['ga:landingPagePath'][0]) ? '--' :  $sources['rows']['ga:landingPagePath'][0];
-        $ref_origin = is_null($sources['rows']['ga:fullReferrer'][0]) ? '--' : $sources['rows']['ga:fullReferrer'][0] ;
-        $referrer = !in_array($sources['rows']['ga:fullReferrer'][0], $google_source) ? $ref_origin : '--';
-        $ga->saveGaSources($order['id'], $landing, $referrer);
+//        $landing = is_null($sources['rows']['ga:landingPagePath'][0]) ? '--' :  $sources['rows']['ga:landingPagePath'][0];
+//        $ref_origin = is_null($sources['rows']['ga:fullReferrer'][0]) ? '--' : $sources['rows']['ga:fullReferrer'][0] ;
+//        $referrer = !in_array($sources['rows']['ga:fullReferrer'][0], $google_source) ? $ref_origin : '--';
+////        $ga->saveGaSources($order['id'], $landing, $referrer);
 
         // results
         $ga ->updateOrderGoogleSource( $order['id'], $ga ->getTransactions() );
+        $logger->info('event end');
 
     endforeach;
 }
-$logger->info('event end');
 //var_dump($pageViews['dataTable']);

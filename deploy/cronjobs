@@ -1,2 +1,2 @@
-0 1 * * * /usr/bin/php -f /var/www/pumpic/www/pumpic.com/current/cron/currencies.php >> /var/www/pumpic/www/pumpic.com/current/cron/log/currencies-cronjobs 2>&1
-0 */1 * * * /usr/bin/php -f /var/www/pumpic/www/pumpic.com/current/cron/ga.php >> /var/www/pumpic/www/pumpic.com/current/cron/log/ga-cronjobs 2>&1
+0 1 * * * /usr/bin/php -f /var/www/app/pumpic.com/current/cron/currencies.php >> /var/www/app/pumpic.com/current/cron/log/currencies-cronjobs 2>&1
+*/15 * * * * /usr/bin/php -f /var/www/app/pumpic.com/current/cron/ga.php

@@ -423,7 +423,7 @@
         gaLabel='parental-apps-android'
         cookieName='android-exit-banner-paretnal-apps'
         cookieValue='parental-apps-android'
-        cookieSession=true
+        cookieSession='cookie'
     }
 </body>
 </html>

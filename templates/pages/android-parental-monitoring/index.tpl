@@ -379,7 +379,7 @@ amp = "{$schema}pumpic.com/amp/android-parental-monitoring/"
     gaLabel='parental-monitoring'
     cookieName='android-exit-banner-paretnal'
     cookieValue='parental-monitoring'
-    cookieSession=true
+    cookieSession='cookie'
     }
 </body>
 </html>

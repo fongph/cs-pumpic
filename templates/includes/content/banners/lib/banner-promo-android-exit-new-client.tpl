@@ -22,6 +22,8 @@
                 if (cookie == '{$cookieValue}') {
                     return false;
                 }
+                console.log('{$cookieSession}');
+
                 $exit_banner =  $('.box-popUp').append($banner).find('#exit-banner-android');
                 $exit_banner.bPopup({
                     modalClose: true,
@@ -32,11 +34,13 @@
 
                         // google analitycs
                         ga('send', 'event', '{$gaLabel}', 'popup', '{$gaCategory}');
-                        if (isset({$cookieSession})){
+                        if ( '{$cookieSession}' == 'cookie'){
                             $.cookie('{$cookieName}', '{$cookieValue}');
+                            console.log('here')
 
                         } else {
-                            setCookie('{$cookieName}', '{$cookieValue}')
+                            setCookie('{$cookieName}', '{$cookieValue}');
+                            console.log('here1')
 
                         }
 

@@ -18,7 +18,7 @@ if (isset($_COOKIE['store'])){
     }
 } else {
    $store_next = getNamespace($obj);
-    setcookie("store", $store_next);
+
     if ($store_next == 'third'){
         header("Location: //".$config['domain']."/store-new.html");
     }

@@ -2,8 +2,9 @@
     showRand="true"
     title="iPhone parental control software | Pumpic"
     description="Pumpic Apple iOS monitoring app for iPhones, iPads, and iPods Touch. View calls and text messages. Track GPS location. Follow social media and online activity remotely."
-}    
-    
+}
+{include file='../includes/main/header/store-checkout.tpl'}
+
 <body>
 <style>
     .priceb,.pricep {
@@ -148,14 +149,26 @@
                                                 </div>
                                             </div>         
                                             <div class="list_price">
-                                                <form name="price_premium_bottom" method="POST" action="/buy.html" class="buy-form-with-offer" autocomplete="off">
+                                                <form name="price_premium_bottom" onsubmit="return false;" class="buy-form-with-offer" autocomplete="off">
                                                     <input id='product_price_premium2' type='hidden' name='price[productID]' value='{if isset($defaultIosiCloud)}{$defaultIosiCloud}{else}0{/if}' class="product_price"/>
                                     
                                                     <ul>
                                                         {foreach from=$getProducts.iosiCloud key=key item=item}
                                                             <li>
                                                                 <label class="label_radio hover_label_radio {if $item.period == '6'}r_on{else}r_off{/if}">
-                                                                    <input class="data-price" data-target="#icloud-price-per-month" data-cur="usd" data-price-usd="{$item.price}" data-offer-price-usd="{$getProducts.iosiCloudDouble[$key].price}" data-period="{$item.period}" data-product="{$item.id}" data-offer-product="{$getProducts.iosiCloudDouble[$key].id}" data-group="icloud"  name="optionsRadios" id="optionsRadios{$item.id}2" value="{$item.id}" type="radio"{if $item.period == '6'} checked="checked"{/if} />
+                                                                    <input class="data-price"
+                                                                           data-target="#icloud-price-per-month"
+                                                                           data-cur="usd"
+                                                                           data-price-usd="{$item.price}"
+                                                                           data-offer-price-usd="{$getProducts.iosiCloudDouble[$key].price}"
+                                                                           data-period="{$item.period}"
+                                                                           data-product="{$item.path}"
+                                                                           data-offer-product="{$getProducts.iosiCloudDouble[$key].id}"
+                                                                           data-group="icloud"
+                                                                           name="optionsRadios"
+                                                                           id="optionsRadios{$item.id}2"
+                                                                           value="{$item.id}"
+                                                                           type="radio"{if $item.period == '6'} checked="checked"{/if} />
                                                                     <span class="sp">
                                                                         <strong>{$item.period}</strong> {if $item.period == 1}month{else}months{/if}
                                                                     </span>
@@ -182,7 +195,11 @@
                                                             ga-action ="click"
                                                             ga-category="iphone-tracking-software"
                                                             ga-label="buy icloud"
-                                                            value="true" type="submit" name="price[submit]">Buy Now</button>
+                                                            value="true" type="submit" name="price[submit]"
+                                                            data-fsc-item-path-value="{$defaultIosiCloudPath}"
+                                                            onclick="buyOnClick(this);"
+                                                            data-fsc-action="Add,Checkout"
+                                                    >Buy Now</button>
                                                     <!-- <div class="show_basic_features"><a href="#">Show Basic features</a>
                                                     </div> -->
                                                 </form>

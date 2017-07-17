@@ -11,14 +11,14 @@
                 </div>
             </div>
             <div class="list_price">
-                <form name="price_basic" method="POST" onsubmit="return false;" class="buy-form-with-offer" autocomplete="off">
+                <form name="price_basic" method="POST" action="/buy.html" class="buy-form-with-offer" autocomplete="off">
 
-                    <input id='product_price_basic' type='hidden' name='price[productID]' value="{$defaultAndriodBasic}" class="product_price" />
+                    <input id='product_price_basic' type='hidden' name='price[productID]' value="{$defaultAndriodBasicProduct}" class="product_price" />
                     <ul>
                         {foreach from=$getProducts.androidBasic key=key item=item name=products}
                             <li>
                                 <label class="label_radio hover_label_radio {if $item.period == '12'}r_on{else}r_off{/if}">
-                                    <input class="data-price" data-target=".andr-basic-price-per-month" data-cur="usd" data-price-usd="{$item.price}" data-offer-price-usd="{$getProducts.androidBasicDouble[$key].price}" data-period="{$item.period}" data-product="{$item.path}" data-offer-product="{$getProducts.androidBasicDouble[$key].id}" data-group="android-basic"  name="optionsRadios" id="optionsRadios{$item.id}1" value="{$item.id}" type="radio" {if $smarty.foreach.products.last}checked="checked"{/if} />
+                                    <input class="data-price" data-target=".andr-basic-price-per-month" data-cur="usd" data-price-usd="{$item.price}" data-offer-price-usd="{$getProducts.androidBasicDouble[$key].price}" data-period="{$item.period}" data-product="{$item.id}" data-offer-product="{$getProducts.androidBasicDouble[$key].id}" data-group="android-basic"  name="optionsRadios" id="optionsRadios{$item.id}1" value="{$item.id}" type="radio" {if $smarty.foreach.products.last}checked="checked"{/if} />
                                     <span class="sp">
                                                                             <strong>{$item.period}</strong> {if $item.period == 1}month{else}months{/if}
                                                                         </span>
@@ -44,9 +44,8 @@
                     <button class="btn btn-default ga-action-click"
                             ga-action ="click"
                             ga-category="store"
-                            ga-label="buy-android-basic-test-checkout"
-                            value="true" type="submit" name="price[submit]"
-                            data-fsc-item-path-value="{$defaultAndriodBasicPath}" onclick="buyOnClick(this);" data-fsc-action="Add,Checkout">Buy Basic</button>
+                            ga-label="buy android basic"
+                            value="true" type="submit" name="price[submit]">Buy Basic</button>
                     <div class="show_basic_features"><a href="#">Show Basic features</a></div>
                 </form>
             </div>
@@ -65,14 +64,14 @@
                 </div>
             </div>
             <div class="list_price">
-                <form name="price_premium" method="POST"  onsubmit="return false;" class="buy-form-with-offer" autocomplete="off">
+                <form name="price_premium" method="POST" action="/buy.html" class="buy-form-with-offer" autocomplete="off">
                     <input id='product_price_premium' type='hidden' name='price[productID]' value='{if isset($getDefaultAndroidPremium)}{$getDefaultAndroidPremium}{else}0{/if}' class="product_price"/>
 
                     <ul>
                         {foreach from=$getProducts.androidPremium key=key item=item}
                             <li>
                                 <label class="label_radio hover_label_radio {if $item.period == '12'}r_on{else}r_off{/if}">
-                                    <input class="data-price" data-target=".andr-premium-price-per-month" data-cur="usd" data-price-usd="{$item.price}" data-offer-price-usd="{$getProducts.androidPremiumDouble[$key].price}" data-period="{$item.period}" data-product="{$item.path}" data-offer-product="{$getProducts.androidPremiumDouble[$key].id}" data-group="android-prem"  name="optionsRadios" id="optionsRadios{$item.id}1" value="{$item.id}" type="radio" />
+                                    <input class="data-price" data-target=".andr-premium-price-per-month" data-cur="usd" data-price-usd="{$item.price}" data-offer-price-usd="{$getProducts.androidPremiumDouble[$key].price}" data-period="{$item.period}" data-product="{$item.id}" data-offer-product="{$getProducts.androidPremiumDouble[$key].id}" data-group="android-prem"  name="optionsRadios" id="optionsRadios{$item.id}1" value="{$item.id}" type="radio" />
                                     <span class="sp">
                                                                             <strong>{$item.period}</strong> {if $item.period == 1}month{else}months{/if}
                                                                         </span>
@@ -99,10 +98,8 @@
                     <button class="btn btn-default ga-action-click"
                             ga-action ="click"
                             ga-category="store"
-                            ga-label="buy-android-premium-test-checkout"
-                            value="true" type="submit" name="price[submit]"
-                            data-fsc-item-path-value="{$defaultAndroidPremiumPath}" onclick="buyOnClick(this);" data-fsc-action="Add,Checkout"
-                    >Buy Premium</button>
+                            ga-label="buy android premium"
+                            value="true" type="submit" name="price[submit]">Buy Premium</button>
                     <div class="show_premium_features"><a href="#">Show Premium features</a></div>
                 </form>
             </div>
@@ -217,14 +214,14 @@
                     </div>
                 </div>
                 <div class="list_price" id="foot_h2">
-                    <form name="price_basic_bottom" method="POST" onsubmit="return false;"  class="buy-form-with-offer" autocomplete="off">
-                        <input id='product_price_basic' type='hidden' name='price[productID]' value="{$defaultAndroidBasicProduct}" class="product_price" />
+                    <form name="price_basic_bottom" method="POST" action="/buy.html" class="buy-form-with-offer" autocomplete="off">
+                        <input id='product_price_basic' type='hidden' name='price[productID]' value="{$defaultAndriodBasicProduct}" class="product_price" />
 
                         <ul>
                             {foreach from=$getProducts.androidBasic key=key item=item name=products}
                                 <li>
                                     <label class="label_radio hover_label_radio {if $item.period == '12'}r_on{else}r_off{/if}">
-                                        <input class="data-price" data-target=".andr-basic-price-per-month" data-cur="usd" data-price-usd="{$item.price}" data-offer-price-usd="{$getProducts.androidBasicDouble[$key].price}" data-period="{$item.period}" data-product="{$item.path}" data-offer-product="{$getProducts.androidBasicDouble[$key].id}" data-group="android-basic"  name="optionsRadios" id="optionsRadios{$item.id}2" value="{$item.id}" type="radio" {if $smarty.foreach.products.last}checked="checked"{/if} />
+                                        <input class="data-price" data-target=".andr-basic-price-per-month" data-cur="usd" data-price-usd="{$item.price}" data-offer-price-usd="{$getProducts.androidBasicDouble[$key].price}" data-period="{$item.period}" data-product="{$item.id}" data-offer-product="{$getProducts.androidBasicDouble[$key].id}" data-group="android-basic"  name="optionsRadios" id="optionsRadios{$item.id}2" value="{$item.id}" type="radio" {if $smarty.foreach.products.last}checked="checked"{/if} />
                                         <span class="sp">
                                                                             <strong>{$item.period}</strong> {if $item.period == 1}month{else}months{/if}
                                                                         </span>
@@ -250,9 +247,8 @@
                         <button class="btn btn-default ga-action-click"
                                 ga-action ="click"
                                 ga-category="store"
-                                ga-label="buy-android-basic-test-checkout"
-                                value="true" type="submit" name="price[submit]"
-                                data-fsc-item-path-value="{$defaultAndriodBasicPath}" data-fsc-item-quantity="1" onclick="buyOnClick(this);" data-fsc-action="Add,Checkout">Buy Basic</button>
+                                ga-label="buy android basic"
+                                value="true" type="submit" name="price[submit]">Buy Basic</button>
                     </form>
                 </div>
             </div>
@@ -271,14 +267,14 @@
                     </div>
                 </div>
                 <div class="list_price" id="foot_h4">
-                    <form name="price_premium_bottom" method="POST" onsubmit="return false;" class="buy-form-with-offer" autocomplete="off">
+                    <form name="price_premium_bottom" method="POST" action="/buy.html" class="buy-form-with-offer" autocomplete="off">
                         <input id='product_price_premium' type='hidden' name='price[productID]' value='{if isset($getDefaultAndroidPremium)}{$getDefaultAndroidPremium}{else}0{/if}' class="product_price" />
 
                         <ul>
                             {foreach from=$getProducts.androidPremium key=key item=item}
                                 <li>
                                     <label class="label_radio hover_label_radio {if $item.period == '12'}r_on{else}r_off{/if}">
-                                        <input class="data-price" data-target=".andr-premium-price-per-month" data-cur="usd" data-price-usd="{$item.price}" data-offer-price-usd="{$getProducts.androidPremiumDouble[$key].price}" data-period="{$item.period}" data-product="{$item.path}" data-offer-product="{$getProducts.androidPremiumDouble[$key].id}" data-group="android-prem"  name="optionsRadios" id="optionsRadios{$item.id}2" value="{$item.id}" type="radio" />
+                                        <input class="data-price" data-target=".andr-premium-price-per-month" data-cur="usd" data-price-usd="{$item.price}" data-offer-price-usd="{$getProducts.androidPremiumDouble[$key].price}" data-period="{$item.period}" data-product="{$item.id}" data-offer-product="{$getProducts.androidPremiumDouble[$key].id}" data-group="android-prem"  name="optionsRadios" id="optionsRadios{$item.id}2" value="{$item.id}" type="radio" />
                                         <span class="sp">
                                                                             <strong>{$item.period}</strong> {if $item.period == 1}month{else}months{/if}
                                                                         </span>
@@ -305,9 +301,8 @@
                         <button class="btn btn-default ga-action-click"
                                 ga-action ="click"
                                 ga-category="store"
-                                ga-label="buy-android-premium-test-checkout"
-                                value="true" type="submit" name="price[submit]"
-                                data-fsc-item-path-value="{$defaultAndroidPremiumPath}" onclick="buyOnClick(this);" data-fsc-action="Add,Checkout">Buy Premium</button>
+                                ga-label="buy android premium"
+                                value="true" type="submit" name="price[submit]">Buy Premium</button>
                     </form>
                 </div>
             </div>

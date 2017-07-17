@@ -1,22 +1,11 @@
 {*Order out="getProducts"*}
 {*formOrder post=$smarty.post*}
-{$robots='no'}
+
 {include file='../includes/main/main-header.tpl'
 showRand="true"
 title="Phone Tracker Prices and Subscription Plans | Pumpic"
 description="Pumpic offers high-quality cell phone tracking software for a good price. Learn more about subscription plans. Choose the one that suits your monitoring needs."}
-<script
-        id="fsc-api"
-        src="https://d1f8f9xcsvx3ha.cloudfront.net/sbl/0.7.3/fastspring-builder.min.js"
-        type="text/javascript"
-        data-storefront="pumpic.onfastspring.com/popup-pumpic"
-        data-data-callback="dataCallbackFunction"
-        data-before-requests-callback="beforeRequestsCallbackFunction"
-        data-decorate-callback="decorateURLFunction"
-        data-popup-event-received="popupEventReceived"
-        {*data-debug="true"*}
->
-</script>
+{include file='../includes/main/header/store-checkout.tpl'}
 <body>
 <style>
     @media (max-width: 767px) {
@@ -311,7 +300,7 @@ description="Pumpic offers high-quality cell phone tracking software for a good 
                                                                 <button class="btn btn-default ga-action-click"
                                                                         ga-action="click"
                                                                         ga-category="store"
-                                                                        ga-label="buy-icloud-test-checkout"
+                                                                        ga-label="buy icloud"
                                                                         value="true" type="submit" name="price[submit]"
                                                                         data-fsc-item-path-value="{$defaultIosiCloudPath}"
                                                                         onclick="buyOnClick(this);"
@@ -504,7 +493,7 @@ description="Pumpic offers high-quality cell phone tracking software for a good 
                                                                 <button class="btn btn-default ga-action-click"
                                                                         ga-action="click"
                                                                         ga-category="store"
-                                                                        ga-label="buy-icloud-test-checkout"
+                                                                        ga-label="buy icloud"
                                                                         value="true" type="submit" name="price[submit]"
                                                                         data-fsc-item-path-value="{$defaultIosiCloudPath}"
                                                                         onclick="buyOnClick(this);"
@@ -629,108 +618,9 @@ our_products (text): Включить выключить блок OUR PRODUCTS (
 {include file='../includes/main/main-analytics-footer.tpl'
 emptyScript="true"}
 <script src="/javascripts/frontend.min.js?1423094400" data-delete="delete"></script>
-<script src="/javascripts/store-init-ab-test.js"></script>
-
-{literal}
-
-    <script>
-        $(document).ready(function () {
-            
-
-            //initialize  product before popup open
-            var product = $('input.data-price[data-period="6"]').data('product');
-        });
-        function beforeRequestsCallbackFunction() {
-        }
-
-        // GA event send
-        function buyOnClick(button) {
-            fastspring.builder.reset();
-            var _ga_action = ($(button).attr('ga-action')) ? $(button).attr('ga-action') : false,
-                _ga_category = ($(button).attr('ga-category')) ? $(button).attr('ga-category') : false,
-                _ga_label = ($(button).attr('ga-label')) ? $.trim($(button).attr('ga-label').toLowerCase()).replace(/\s/g, '-') : false;
-
-            if (_ga_action && _ga_category && _ga_label) {
-                ga('send', 'event', _ga_category, _ga_action, _ga_label);
-            }
-        }
-        // GA event send
-
-        function dataCallbackFunction(data_object) {
-        }
-        function decorateURLFunction(url) {
-            var linkerParam = null;
-
-            ga(function () {
-                var trackers = ga.getAll();
-                trackers.forEach(function (tracker) {
-                });
-                linkerParam = trackers[0].get('linkerParam');
-            });
+<script src="/javascripts/store-init.js"></script>
 
 
-            return (linkerParam ? url + '?' + linkerParam : url);
-        }
-
-        function popupEventReceived(event) {
-
-            if (isset(event.ecommerce.purchase.actionField.id)){
-
-               var order_reference_from_store =  event.ecommerce.purchase.actionField.id;
-               var orders_referer = getCookie('orders_referer');
-               var landing = getCookie('landing');
-
-               var http = new XMLHttpRequest();
-               var url = "https://pumpic.com/store-new-ga.html";
-               var params = "order_reference_from_store="+order_reference_from_store +"&landing=" + landing + "&orders_referer=" + orders_referer;
-               http.open("POST", url, true);
-
-               //Send the proper header information along with the request
-               http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-               http.setRequestHeader("X-Requested-With", "XMLHttpRequest");
-
-
-               http.onreadystatechange = function() {//Call a function when the state changes.
-                   if(http.readyState == 4 && http.status == 200) {
-                   }
-               }
-               http.send(params);
-
-               return true;
-           }
-
-        }
-
-        function getCookie(name) {
-            var nameEQ = name + "=";
-            var ca = document.cookie.split(';');
-            for(var i=0;i < ca.length;i++) {
-                var c = ca[i];
-                while (c.charAt(0)==' ') c = c.substring(1,c.length);
-                if (c.indexOf(nameEQ) == 0) return (c.substring(nameEQ.length,c.length) == true) ? c.substring(nameEQ.length,c.length) : '--';
-            }
-            return '--';
-        }
-
-        //data-fsc-item-path-value
-        $(function () {
-            $('.buy-form-with-offer').on('change', 'input.data-price', function () {
-                var product = $(this).data('product');
-
-                $(this).closest('form').find('button').attr('data-fsc-action', 'Add, Checkout');
-                var ga_label = $(this).closest('form').find('button').attr('ga-label');
-                $('body').find('button[ga-label="' + ga_label + '"]').attr('data-fsc-action', 'Add, Checkout');
-                $('body').find('button[ga-label="' + ga_label + '"]').attr('data-fsc-item-path-value', product);
-                fastspring.builder.reset();
-                fastspring.builder.update(product, 1);
-
-            });
-
-
-        });
-
-    </script>
-{/literal}
 
 </body>
 </html>

@@ -42,7 +42,7 @@
                                                         <span class="prod-head__device tablet">iPad</span>
                                                         <span class="prod-head__device smart">iPod Touch</span>
                                                     </p>
-                                                    <p class="prod-head__price"><span>starting from </span><b>$6.99/</b><span> month</span></p>
+                                                    <p class="prod-head__price"><span>starting from </span><b>$12.95/</b><span> month</span></p>
                                                 </div>
                                             </div>
                                         </div>
@@ -104,7 +104,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="list_price icloud-list_price">
-                                                        <form name="price_premium" method="POST" action="/buy.html" class="buy-form-with-offer" autocomplete="off" >
+                                                        <form name="price_premium" onsubmit="return false;" class="buy-form-with-offer" autocomplete="off" >
                                                             {*<div class="save__2plan">*}
                                                             {*<div class="save__text label-touch">*}
                                                             {*<input type="checkbox" data-group="icloud" name="icloud-40off" id="icloud-40off-main" data-checkboxes="icloud-40off">*}
@@ -117,8 +117,20 @@
                                                             <ul>
                                                                 {foreach from=$getProducts.iosiCloud key=key item=item}
                                                                     <li>
-                                                                        <label class="label_radio hover_label_radio {if $item.period == '12'}r_on{else}r_off{/if}">
-                                                                            <input class="data-price" data-target=".icloud-price-per-month" data-cur="usd" data-price-usd="{$item.price}" data-offer-price-usd="{$getProducts.iosiCloudDouble[$key].price}" data-period="{$item.period}" data-product="{$item.id}" data-offer-product="{$getProducts.iosiCloudDouble[$key].id}" data-group="icloud" name="optionsRadios" id="optionsRadios{$item.id}1" value="{$item.id}" type="radio" />
+                                                                        <label class="label_radio hover_label_radio {if $item.period == '6'}r_on{else}r_off{/if}">
+                                                                            <input class="data-price"
+                                                                                   data-target=".icloud-price-per-month"
+                                                                                   data-cur="usd"
+                                                                                   data-price-usd="{$item.price}"
+                                                                                   data-offer-price-usd="{$getProducts.iosiCloudDouble[$key].price}"
+                                                                                   data-period="{$item.period}"
+                                                                                   data-product="{$item.path}"
+                                                                                   data-offer-product="{$getProducts.iosiCloudDouble[$key].id}"
+                                                                                   data-group="icloud"
+                                                                                   name="optionsRadios"
+                                                                                   id="optionsRadios{$item.id}1"
+                                                                                   value="{$item.id}"
+                                                                                   type="radio" />
                                                                             <span class="sp">
                                                                             <strong>{$item.period}</strong> {if $item.period == 1}month{else}months{/if}
                                                                         </span>
@@ -145,7 +157,11 @@
                                                                     ga-action ="click"
                                                                     ga-category="store"
                                                                     ga-label="buy icloud"
-                                                                    value="true" type="submit" name="price[submit]">Buy</button>
+                                                                    value="true" type="submit" name="price[submit]"
+                                                                    data-fsc-item-path-value="{$defaultIosiCloudPath}"
+                                                                    onclick="buyOnClick(this);"
+                                                                    data-fsc-action="Add,Checkout"
+                                                            >Buy</button>
                                                         </form>
                                                         {*<div class="show_premium_features _icloud-f"><div class="show-f _icloud-f">Show features <i class="fa fa-chevron-down"></i></div><div class="hide-f _icloud-f" style="display: none;">Hide features  <i class="fa fa-chevron-up"></i></div></div>*}
 
@@ -225,17 +241,29 @@
                                                         <div class="wr_pack_premium wr_icloud _single-pack-icloud"></div>
                                                         <div class="wr_pack_double_premium wr_icloud-double _double-pack-icloud"></div>
                                                         <div class="wr_price_big">
-                                                            <span></span><div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr icloud-price-per-month">{$defaultiCloudProduct}</div></div><span>/ month</span>
+                                                            <span></span><div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr icloud-price-per-month">{$defaultIosiCloudPrice}</div></div><span>/ month</span>
                                                         </div>
                                                     </div>
                                                     <div class="list_price icloud-list_price" id="foot_h4">
-                                                        <form name="price_premium_bottom" method="POST" action="/buy.html" class="buy-form-with-offer" autocomplete="off">
+                                                        <form name="price_premium_bottom" onsubmit="return false;" class="buy-form-with-offer" autocomplete="off">
                                                             <input id='product_price_premium' type='hidden' name='price[productID]' value='{if isset($defaultIosiCloud)}{$defaultIosiCloud}{else}0{/if}' class="product_price" />
                                                             <ul>
                                                                 {foreach from=$getProducts.iosiCloud key=key item=item}
                                                                     <li>
-                                                                        <label class="label_radio hover_label_radio {if $item.period == '12'}r_on{else}r_off{/if}">
-                                                                            <input class="data-price" data-target=".icloud-price-per-month" data-cur="usd" data-price-usd="{$item.price}" data-offer-price-usd="{$getProducts.iosiCloudDouble[$key].price}" data-period="{$item.period}" data-product="{$item.id}" data-offer-product="{$getProducts.iosiCloudDouble[$key].id}" data-group="icloud"  name="optionsRadios" id="optionsRadios{$item.id}2" value="{$item.id}" type="radio" />
+                                                                        <label class="label_radio hover_label_radio {if $item.period == '6'}r_on{else}r_off{/if}">
+                                                                            <input class="data-price"
+                                                                                   data-target=".icloud-price-per-month"
+                                                                                   data-cur="usd"
+                                                                                   data-price-usd="{$item.price}"
+                                                                                   data-offer-price-usd="{$getProducts.iosiCloudDouble[$key].price}"
+                                                                                   data-period="{$item.period}"
+                                                                                   data-product="{$item.path}"
+                                                                                   data-offer-product="{$getProducts.iosiCloudDouble[$key].id}"
+                                                                                   data-group="icloud"
+                                                                                   name="optionsRadios"
+                                                                                   id="optionsRadios{$item.id}2"
+                                                                                   value="{$item.id}"
+                                                                                   type="radio" />
                                                                             <span class="sp">
                                                                             <strong>{$item.period}</strong> {if $item.period == 1}month{else}months{/if}
                                                                         </span>
@@ -262,7 +290,11 @@
                                                                     ga-action ="click"
                                                                     ga-category="store"
                                                                     ga-label="buy icloud"
-                                                                    value="true" type="submit" name="price[submit]">Buy</button>
+                                                                    value="true" type="submit" name="price[submit]"
+                                                                    data-fsc-item-path-value="{$defaultIosiCloudPath}"
+                                                                    onclick="buyOnClick(this);"
+                                                                    data-fsc-action="Add,Checkout"
+                                                            >Buy</button>
                                                         </form>
                                                         {*<div class="space_line">&nbsp;</div>*}
                                                     </div>
@@ -275,8 +307,11 @@
 
                                     <div class="prod-list-android clearfix" data-info-block="android" style="display: none;">
                                         {* ANDROID AJAX LOADING*}
-                                        {*{include file='../includes/store/store-desktop.tpl'} for debug*}
+                                        {include file='../../includes/store/store-desktop.tpl'}
+                                    {*for debug*}
                                     </div>
+                                    {*{include file='../../includes/store/store-desktop.tpl'}*}
+
                                     {* ---ANDROID---*}
                                 </th>
                             </tr>

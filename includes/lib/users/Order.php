@@ -302,12 +302,15 @@ class Order extends ManagerUser
                 case 'second-store': $version = 'd0'; break;
                 case 'second-landing': $version = 'd1'; break;
             }
-            if ($namespace == 'third-store' || $namespace == 'third-landing')
-                $plans = $this->_billing->getSiteProductsWithVariousNamespace(self::SITE_ID, 'third', $namespace, $version);
-            else
-                $plans = $this->_billing->getSiteProductsWithVariousNamespace(self::SITE_ID, 'second', $namespace, $version);
 
-        }  else {
+            $plans = $this->_billing->getSiteProductsWithVariousNamespace(self::SITE_ID, 'second', $namespace, $version);
+
+        }  elseif ($namespace == 'third-jail') {
+           $namespace = 'third';
+           $version = 's';
+
+            $plans = $this->_billing->getSiteProductsWithVariousNamespace(self::SITE_ID, 'second', $namespace, $version);
+        } else {
             $plans = $this->_billing->getSiteProducts(self::SITE_ID, $namespace);
         }
         if(count($plans) > 0) {

@@ -12,7 +12,7 @@ $obj = new includes\lib\users\Order;
 require_once 'smarty.config.php';
 
 /* list order */
-$products = $obj ->getProducts('second-landing');
+$products = $obj ->getProducts('third');
 
 /* form_order */
 $_request = (isset($_POST['price']) and !empty($_POST['price'])) ? $_POST['price']: false;
@@ -41,7 +41,8 @@ if(is_array($products)) {
     if(isset($products['iosiCloud'])) {
         foreach($products['iosiCloud'] as $item) {
             if ($item['period'] == 12 && $item['id']) {
-                $smarty->assign('defaultIosiCloudProduct', $item['id']);
+                $smarty->assign('defaultIosiCloud', $item['id']);
+                $smarty->assign('defaultIosiCloudPath', $item['path']);
                 $smarty->assign('defaultIosiCloudPrice', round($item['price'] / $item['period'], 2));
             }
              if ($item['period'] == 12 || $item['period'] == 24) {
@@ -53,7 +54,8 @@ if(is_array($products)) {
     if(isset($products['androidPremium'])) {
         foreach($products['androidPremium'] as $item) {
             if ($item['period'] == 12 && $item['id']) {
-                $smarty->assign('defaultAndroidPremiumProduct', $item['id']);
+                $smarty->assign('defaultAndroidPremium', $item['id']);
+                $smarty->assign('defaultAndroidPremiumPath', $item['path']);
                 $smarty->assign('defaultAndroidPremiumPrice', round($item['price'] / $item['period'], 2));
             }
         }

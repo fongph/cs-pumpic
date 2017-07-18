@@ -65,7 +65,7 @@
                 </div>
             </div>
             <div class="list_price">
-                <form name="price_premium" method="POST"  onsubmit="return false;" class="buy-form-with-offer" autocomplete="off">
+                <form name="price_premium" method="POST" onsubmit="return false;" class="buy-form-with-offer" autocomplete="off">
                     <input id='product_price_premium' type='hidden' name='price[productID]' value='{if isset($getDefaultAndroidPremium)}{$getDefaultAndroidPremium}{else}0{/if}' class="product_price"/>
 
                     <ul>
@@ -217,7 +217,7 @@
                     </div>
                 </div>
                 <div class="list_price" id="foot_h2">
-                    <form name="price_basic_bottom" method="POST" onsubmit="return false;"  class="buy-form-with-offer" autocomplete="off">
+                    <form name="price_basic_bottom" onsubmit="return false;" class="buy-form-with-offer" autocomplete="off">
                         <input id='product_price_basic' type='hidden' name='price[productID]' value="{$defaultAndroidBasicProduct}" class="product_price" />
 
                         <ul>
@@ -252,7 +252,8 @@
                                 ga-category="store"
                                 ga-label="buy-android-basic-test-checkout"
                                 value="true" type="submit" name="price[submit]"
-                                data-fsc-item-path-value="{$defaultAndriodBasicPath}" data-fsc-item-quantity="1" onclick="buyOnClick(this);" data-fsc-action="Add,Checkout">Buy Basic</button>
+                                data-fsc-item-path-value="{$defaultAndriodBasicPath}" data-fsc-item-quantity="1" onclick="buyOnClick(this);" data-fsc-action="Add,Checkout"
+                        >Buy Basic</button>
                     </form>
                 </div>
             </div>
@@ -271,7 +272,7 @@
                     </div>
                 </div>
                 <div class="list_price" id="foot_h4">
-                    <form name="price_premium_bottom" method="POST" onsubmit="return false;" class="buy-form-with-offer" autocomplete="off">
+                    <form name="price_premium_bottom" onsubmit="return false;" class="buy-form-with-offer" autocomplete="off">
                         <input id='product_price_premium' type='hidden' name='price[productID]' value='{if isset($getDefaultAndroidPremium)}{$getDefaultAndroidPremium}{else}0{/if}' class="product_price" />
 
                         <ul>
@@ -307,7 +308,8 @@
                                 ga-category="store"
                                 ga-label="buy-android-premium-test-checkout"
                                 value="true" type="submit" name="price[submit]"
-                                data-fsc-item-path-value="{$defaultAndroidPremiumPath}" onclick="buyOnClick(this);" data-fsc-action="Add,Checkout">Buy Premium</button>
+                                data-fsc-item-path-value="{$defaultAndroidPremiumPath}" onclick="buyOnClick(this);" data-fsc-action="Add,Checkout"
+                        >Buy Premium</button>
                     </form>
                 </div>
             </div>

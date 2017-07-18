@@ -27,6 +27,7 @@ function dispatch($urlParams, $config){
     // 301 redirect
     if(preg_match('/\/store-sub-same.html/is', $_SERVER['REQUEST_URI'])
         || preg_match('/\/store-sub-new.html/is', $_SERVER['REQUEST_URI'])
+        || preg_match('/\/store-new.html/is', $_SERVER['REQUEST_URI'])
         || preg_match('/\/store-sub-new-1.html/is', $_SERVER['REQUEST_URI'])
         || preg_match('/\/store-sub-new-3.html/is', $_SERVER['REQUEST_URI'])
         || preg_match('/\/store-sub-new-2.html/is', $_SERVER['REQUEST_URI'])

@@ -7,8 +7,8 @@
     <link rel="alternate" hreflang="de" href="https://pumpic.com/mobile-spion.html" />
     <link rel="alternate" hreflang="pt-br" href="https://pumpic.com/espiao-movel.html" />
     <link rel="alternate" hreflang="fr" href="https://pumpic.com/logiciel-de-controle-parental.html" />'
-}    
-    
+}
+{include file='../includes/main/header/store-checkout.tpl'}
 <body>
 <style>
 ium_wr .pricep {
@@ -147,7 +147,7 @@ ium_wr .pricep {
                                                             </div>
                                                         </div>
                                                         <div class="list_price icloud-list_price">
-                                                            <form name="price_premium" method="POST" action="/buy.html" class="buy-form-with-offer" autocomplete="off" >
+                                                            <form name="price_premium" onsubmit="return false;" class="buy-form-with-offer" autocomplete="off" >
                                                                 {*<div class="save__2plan">*}
                                                                 {*<div class="save__text label-touch">*}
                                                                 {*<input type="checkbox" data-group="icloud" name="icloud-40off" id="icloud-40off-main" data-checkboxes="icloud-40off">*}
@@ -161,7 +161,7 @@ ium_wr .pricep {
                                                                     {foreach from=$getProducts.iosiCloud key=key item=item}
                                                                         <li>
                                                                             <label class="label_radio hover_label_radio {if $item.period == '6'}r_on{else}r_off{/if}">
-                                                                                <input class="data-price" data-target=".icloud-price-per-month" data-cur="usd" data-price-usd="{$item.price}" data-offer-price-usd="{$getProducts.iosiCloudDouble[$key].price}" data-period="{$item.period}" data-product="{$item.id}" data-offer-product="{$getProducts.iosiCloudDouble[$key].id}" data-group="icloud" name="optionsRadios" id="optionsRadios{$item.id}1" value="{$item.id}" type="radio"{if $item.period == '6'} checked="checked"{/if} />
+                                                                                <input class="data-price" data-target=".icloud-price-per-month" data-cur="usd" data-price-usd="{$item.price}" data-offer-price-usd="{$getProducts.iosiCloudDouble[$key].price}" data-period="{$item.period}" data-product="{$item.path}" data-offer-product="{$getProducts.iosiCloudDouble[$key].id}" data-group="icloud" name="optionsRadios" id="optionsRadios{$item.id}1" value="{$item.id}" type="radio"{if $item.period == '6'} checked="checked"{/if} />
                                                                                 <span class="sp">
                                                                             <strong>{$item.period}</strong> {if $item.period == 1}mês{else}meses{/if}
                                                                         </span>
@@ -188,7 +188,11 @@ ium_wr .pricep {
                                                                         ga-action ="click"
                                                                         ga-category="store"
                                                                         ga-label="buy icloud"
-                                                                        value="true" type="submit" name="price[submit]">Comprar Agora</button>
+                                                                        value="true" type="submit" name="price[submit]"
+                                                                        data-fsc-item-path-value="{$defaultIosiCloudPath}"
+                                                                        onclick="buyOnClick(this);"
+                                                                        data-fsc-action="Add,Checkout"
+                                                                >Comprar Agora</button>
                                                             </form>
                                                             {*<div class="show_premium_features _icloud-f"><div class="show-f _icloud-f">Show features <i class="fa fa-chevron-down"></i></div><div class="hide-f _icloud-f" style="display: none;">Hide features  <i class="fa fa-chevron-up"></i></div></div>*}
 
@@ -285,14 +289,14 @@ ium_wr .pricep {
                                                             </div>
                                                         </div>
                                                         <div class="list_price">
-                                                            <form name="price_basic" method="POST" action="/buy.html" class="buy-form-with-offer" autocomplete="off">
+                                                            <form name="price_basic" onsubmit="return false;" class="buy-form-with-offer" autocomplete="off">
 
                                                                 <input id='product_price_basic' type='hidden' name='price[productID]' value="{$defaultAndriodBasic}" class="product_price" />
                                                                 <ul>
                                                                     {foreach from=$getProducts.androidBasic key=key item=item}
                                                                         <li>
                                                                             <label class="label_radio hover_label_radio {if $item.period == '12'}r_on{else}r_off{/if}">
-                                                                                <input class="data-price" data-target=".andr-basic-price-per-month" data-cur="usd" data-price-usd="{$item.price}" data-offer-price-usd="{$getProducts.androidBasicDouble[$key].price}" data-period="{$item.period}" data-product="{$item.id}" data-offer-product="{$getProducts.androidBasicDouble[$key].id}" data-group="android-basic"  name="optionsRadios" id="optionsRadios{$item.id}1" value="{$item.id}" type="radio"{if $item.period == '12'} checked="checked"{/if} />
+                                                                                <input class="data-price" data-target=".andr-basic-price-per-month" data-cur="usd" data-price-usd="{$item.price}" data-offer-price-usd="{$getProducts.androidBasicDouble[$key].price}" data-period="{$item.period}" data-product="{$item.path}" data-offer-product="{$getProducts.androidBasicDouble[$key].id}" data-group="android-basic"  name="optionsRadios" id="optionsRadios{$item.id}1" value="{$item.id}" type="radio"{if $item.period == '12'} checked="checked"{/if} />
                                                                                 <span class="sp">
                                                                             <strong>{$item.period}</strong> {if $item.period == 1}mês{else}meses{/if}
                                                                         </span>
@@ -319,7 +323,9 @@ ium_wr .pricep {
                                                                         ga-action ="click"
                                                                         ga-category="store"
                                                                         ga-label="buy android basic"
-                                                                        value="true" type="submit" name="price[submit]">Comprar Agora</button>
+                                                                        value="true" type="submit" name="price[submit]"
+                                                                        data-fsc-item-path-value="{$defaultAndriodBasicPath}" data-fsc-item-quantity="1" onclick="buyOnClick(this);" data-fsc-action="Add,Checkout"
+                                                                >Comprar Agora</button>
                                                             </form>
                                                         </div>
                                                     </div>
@@ -337,7 +343,7 @@ ium_wr .pricep {
                                                             </div>
                                                         </div>
                                                         <div class="list_price">
-                                                            <form name="price_premium" method="POST" action="/buy.html" class="buy-form-with-offer" autocomplete="off">
+                                                            <form name="price_premium" onsubmit="return false;" class="buy-form-with-offer" autocomplete="off">
                                                                 <input id='product_price_premium' type='hidden' name='price[productID]' value='{if isset($getDefaultAndroidPremium)}{$getDefaultAndroidPremium}{else}0{/if}' class="product_price"/>
 
                                                                 <ul>
@@ -372,7 +378,9 @@ ium_wr .pricep {
                                                                         ga-action ="click"
                                                                         ga-category="store"
                                                                         ga-label="buy android premium"
-                                                                        value="true" type="submit" name="price[submit]">Comprar Agora</button>
+                                                                        value="true" type="submit" name="price[submit]"
+                                                                        data-fsc-item-path-value="{$defaultAndroidPremiumPath}" onclick="buyOnClick(this);" data-fsc-action="Add,Checkout"
+                                                                >Comprar Agora</button>
                                                             </form>
                                                         </div>
                                                     </div>

@@ -40,7 +40,7 @@ if($_request['productID']) {
 if(is_array($products)) {
     if(isset($products['iosiCloud'])) {
         foreach($products['iosiCloud'] as $item) {
-            if ($item['period'] == 12 && $item['id']) {
+            if ($item['period'] == 6 && $item['id']) {
                 $smarty->assign('defaultIosiCloud', $item['id']);
                 $smarty->assign('defaultIosiCloudPath', $item['path']);
                 $smarty->assign('defaultIosiCloudPrice', round($item['price'] / $item['period'], 2));

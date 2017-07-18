@@ -42,9 +42,9 @@ function popupEventReceived(event) {
         var order_reference_from_store =  event.ecommerce.purchase.actionField.id;
         var orders_referer = getCookie('orders_referer');
         var landing = getCookie('landing');
-
         var http = new XMLHttpRequest();
         var url = "https://pumpic.com/store-new-ga.html";
+        // var url = "/store-new-ga.html";
         var params = "order_reference_from_store="+order_reference_from_store +"&landing=" + landing + "&orders_referer=" + orders_referer;
         http.open("POST", url, true);
 
@@ -62,15 +62,22 @@ function popupEventReceived(event) {
 
 }
 
-function getCookie(name) {
+function getCookieGa(name) {
     var nameEQ = name + "=";
     var ca = document.cookie.split(';');
+    console.log(ca)
+
     for(var i=0;i < ca.length;i++) {
         var c = ca[i];
         while (c.charAt(0)==' ') c = c.substring(1,c.length);
+        console.log(c.substring(nameEQ.length,c.length))
+        console.log(c.indexOf(nameEQ))
+        console.log(c)
+        console.log(c.substring(nameEQ.length,c.length) == true)
+
         if (c.indexOf(nameEQ) == 0) return (c.substring(nameEQ.length,c.length) == true) ? c.substring(nameEQ.length,c.length) : '--';
     }
-    return '--';
+    // return '--';
 }
 
 //data-fsc-item-path-value

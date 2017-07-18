@@ -117,7 +117,7 @@ visibleFlyFeatures="no"
 
                                                 <div class="list_price">
                                                     <form name="price_premium" onsubmit="return false;" class="buy-form-with-offer" autocomplete="off">
-                                                        <input id='product_price_premium' type='hidden' name='price[productID]' value='{if isset($getDefaultAndroidPremium)}{$getDefaultAndroidPremium}{else}0{/if}' class="product_price" />
+                                                        <input id='product_price_premium' type='hidden' name='price[productID]' value='{if isset($defaultAndroidPremium)}{$defaultAndroidPremium}{else}0{/if}' class="product_price" />
 
                                                         <ul>
                                                             {foreach from=$getProducts.androidPremium key=key item=item}
@@ -262,8 +262,8 @@ visibleFlyFeatures="no"
                                                 </div>
 
                                                 <div class="list_price">
-                                                    <form name="price_premium" onsubmit="return false;" class="buy-form-with-offer" autocomplete="off">
-                                                        <input id='product_price_premium' type='hidden' name='price[productID]' value='{if isset($defaultIosiCloud)}{$defaultIosiCloud}{else}0{/if}' class="product_price" />
+                                                    <form name="price_basic" onsubmit="return false;" class="buy-form-with-offer" autocomplete="off">
+                                                        <input id='product_price_basic' type='hidden' name='price[productID]' value='{if isset($defaultIosiCloud)}{$defaultIosiCloud}{else}0{/if}' class="product_price" />
 
                                                         <ul>
                                                             {foreach from=$getProducts.iosiCloud key=key item=item}
@@ -295,7 +295,7 @@ visibleFlyFeatures="no"
                                                         <button class="btn btn-default ga-action-submit"
                                                                 ga-action ="click"
                                                                 ga-category="parental-control-software"
-                                                                ga-label="buy premium"
+                                                                ga-label="buy icloud"
                                                                 ga-page="/parental-control-software.html"
                                                                 value="true" type="submit" name="price[submit]"
                                                                 data-fsc-item-path-value="{$defaultIosiCloudPath}"

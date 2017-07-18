@@ -307,10 +307,9 @@
 
                                     <div class="prod-list-android clearfix" data-info-block="android" style="display: none;">
                                         {* ANDROID AJAX LOADING*}
-                                        {include file='../../includes/store/store-desktop.tpl'}
+                                        {*{include file='../../includes/store/store-desktop.tpl'}*}
                                     {*for debug*}
                                     </div>
-                                    {*{include file='../../includes/store/store-desktop.tpl'}*}
 
                                     {* ---ANDROID---*}
                                 </th>

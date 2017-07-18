@@ -10,7 +10,7 @@ $(document).ready(function(){
     });
     var deviceWidth =  $(window).width();
 
-    $.get('/store-android-ab-test.php', { deviceWidth: deviceWidth })
+    $.get('/store-android.php', { deviceWidth: deviceWidth })
         .done(function(data) {
             $('#loader').fadeOut()
             $(".prod-list-android").html(data);

@@ -44,7 +44,7 @@
                     <button class="btn btn-default ga-action-click"
                             ga-action ="click"
                             ga-category="store"
-                            ga-label="buy-android-basic-test-checkout"
+                            ga-label="buy basic"
                             value="true" type="submit" name="price[submit]"
                             data-fsc-item-path-value="{$defaultAndriodBasicPath}" onclick="buyOnClick(this);" data-fsc-action="Add,Checkout">Buy Basic</button>
                     <div class="show_basic_features"><a href="#">Show Basic features</a></div>
@@ -99,7 +99,7 @@
                     <button class="btn btn-default ga-action-click"
                             ga-action ="click"
                             ga-category="store"
-                            ga-label="buy-android-premium-test-checkout"
+                            ga-label="buy premium"
                             value="true" type="submit" name="price[submit]"
                             data-fsc-item-path-value="{$defaultAndroidPremiumPath}" onclick="buyOnClick(this);" data-fsc-action="Add,Checkout"
                     >Buy Premium</button>
@@ -250,7 +250,7 @@
                         <button class="btn btn-default ga-action-click"
                                 ga-action ="click"
                                 ga-category="store"
-                                ga-label="buy-android-basic-test-checkout"
+                                ga-label="buy basic"
                                 value="true" type="submit" name="price[submit]"
                                 data-fsc-item-path-value="{$defaultAndriodBasicPath}" data-fsc-item-quantity="1" onclick="buyOnClick(this);" data-fsc-action="Add,Checkout"
                         >Buy Basic</button>
@@ -306,7 +306,7 @@
                         <button class="btn btn-default ga-action-click"
                                 ga-action ="click"
                                 ga-category="store"
-                                ga-label="buy-android-premium-test-checkout"
+                                ga-label="buy premium"
                                 value="true" type="submit" name="price[submit]"
                                 data-fsc-item-path-value="{$defaultAndroidPremiumPath}" onclick="buyOnClick(this);" data-fsc-action="Add,Checkout"
                         >Buy Premium</button>

@@ -27,7 +27,6 @@ Disallow: /store-sub-new-44.html
 Disallow: /store-sub-new-hyp1.html
 Disallow: /store-android.php
 Disallow: /store-android-ab-test.php
-Disallow: /store-android-ab-test.php
 Disallow: /wp-admin
 Disallow: /wp-includes
 Disallow: /security/tag/

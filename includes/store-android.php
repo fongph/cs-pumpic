@@ -59,6 +59,10 @@ if(is_array($products)) {
                 $smarty->assign('defaultAndriodBasicPath', $item['path']);
                 $smarty->assign('defaultAndriodBasicPrice', round($item['price'] / $item['period'], 2));
             }
+            if ($item['period'] == 6 || $item['period'] == 12) {
+                $itemNumber = array_search($item, $products['androidBasic']);
+                unset($products['androidBasic'][$itemNumber]);
+            }
         endforeach;
     }
     if(isset($products['androidPremium'])) {
@@ -67,6 +71,10 @@ if(is_array($products)) {
                 $smarty->assign('defaultAndroidPremium', $item['id']);
                 $smarty->assign('defaultAndroidPremiumPath', $item['path']);
                 $smarty->assign('defaultAndroidPremiumPrice', round($item['price'] / $item['period'], 2));
+            }
+            if ($item['period'] == 6 || $item['period'] == 12) {
+                $itemNumber = array_search($item, $products['androidPremium']);
+                unset($products['androidPremium'][$itemNumber]);
             }
         endforeach;
     }

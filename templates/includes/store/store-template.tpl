@@ -68,7 +68,7 @@
                                                         <span class="prod-head__device phone">Smartphone</span>
                                                         <span class="prod-head__device tablet">Tablet</span>
                                                     </p>
-                                                    <p class="prod-head__price"><span>starting from </span><b>$5.33/</b><span> month</span></p>
+                                                    <p class="prod-head__price"><span>starting from </span><b>$11.33/</b><span> month</span></p>
                                                 </div>
                                             </div>
                                         </div>

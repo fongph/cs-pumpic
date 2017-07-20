@@ -109,7 +109,7 @@ visibleFlyFeatures="no"
                                                             <span></span>
                                                             <div class="box-currence">
                                                                 <div class="symbol" attr-iso="usd">$</div>
-                                                                <div class="curr premium-price-per-month">6.99</div>
+                                                                <div class="curr premium-price-per-month">14.66</div>
                                                             </div><span> / month</span>
                                                         </div>
                                                     </div>
@@ -122,8 +122,8 @@ visibleFlyFeatures="no"
                                                         <ul>
                                                             {foreach from=$getProducts.androidPremium key=key item=item}
                                                                 <li>
-                                                                    <label class="label_radio hover_label_radio {if $item.period == '12'}r_on{else}r_off{/if} ">
-                                                                        <input class="data-price" data-target=".premium-price-per-month" data-cur="usd" data-price-usd="{$item.price}" data-offer-price-usd="{$getProducts.androidPremiumDouble[$key].price}" data-period="{$item.period}" data-product="{$item.path}" data-offer-product="{$getProducts.androidPremiumDouble[$key].id}" data-group="android-prem"  name="optionsRadios" id="optionsRadios{$item.id}1" value="{$item.id}" type="radio"{if $item.period == '12'} checked="checked"{/if} />
+                                                                    <label class="label_radio hover_label_radio {if $item.period == '3'}r_on{else}r_off{/if} ">
+                                                                        <input class="data-price" data-target=".premium-price-per-month" data-cur="usd" data-price-usd="{$item.price}" data-offer-price-usd="{$getProducts.androidPremiumDouble[$key].price}" data-period="{$item.period}" data-product="{$item.path}" data-offer-product="{$getProducts.androidPremiumDouble[$key].id}" data-group="android-prem"  name="optionsRadios" id="optionsRadios{$item.id}1" value="{$item.id}" type="radio"{if $item.period == '3'} checked="checked"{/if} />
                                                                         <span class="sp">
                                                                                     <strong>{$item.period}</strong> {if $item.period == 1}month{else}months{/if}
                                                                                 </span>
@@ -382,17 +382,17 @@ visibleFlyFeatures="no"
 <script>
     $(document).ready(function () {
 
-        $('input[data-period="12"]').closest('ul').find('label')
+        $('input[data-period="3"]').closest('ul').find('label')
                 .removeClass('r_on')
                 .addClass('r_off');
 
-        $('input[data-period="12"]').closest('ul').find('input')
+        $('input[data-period="3"]').closest('ul').find('input')
                 .removeAttr('checked');
-        $('#product_price_premium').val($('input[data-period="12"]').val())
+        $('#product_price_premium').val($('input[data-period="3"]').val())
 
-        $('input[data-period="12"]').attr('checked', 'checked');
+        $('input[data-period="3"]').attr('checked', 'checked');
 
-        $('input[data-period="12"]').closest('label')
+        $('input[data-period="3"]').closest('label')
                 .addClass('r_on')
                 .removeClass('r_off');
     })

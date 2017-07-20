@@ -173,7 +173,7 @@ description="Pumpic offers high-quality cell phone tracking software for a good 
                                                             <span class="prod-head__device tablet">Tablet</span>
                                                         </p>
                                                         <p class="prod-head__price">
-                                                            <span>starting from </span><b>$5.33/</b><span> month</span>
+                                                            <span>starting from </span><b>$11.33/</b><span> month</span>
                                                         </p>
                                                     </div>
                                                 </div>
@@ -513,8 +513,8 @@ description="Pumpic offers high-quality cell phone tracking software for a good 
                                         <div class="prod-list-android clearfix" data-info-block="android"
                                              style="display: none;">
                                             {* ANDROID AJAX LOADING*}
-                                            <div id="loader"><img src="/images/loader.svg"></div>
-                                            {*{include file='../includes/store/store-desktop.tpl'}*}
+                                            {*<div id="loader"><img src="/images/loader.svg"></div>*}
+                                            {include file='../includes/store/store-desktop.tpl'}
                                             {*for debug*}
 
 

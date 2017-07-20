@@ -53,10 +53,14 @@ if(is_array($products)) {
     }
     if(isset($products['androidPremium'])) {
         foreach($products['androidPremium'] as $item) {
-            if ($item['period'] == 12 && $item['id']) {
+            if ($item['period'] == 3 && $item['id']) {
                 $smarty->assign('defaultAndroidPremium', $item['id']);
                 $smarty->assign('defaultAndroidPremiumPath', $item['path']);
                 $smarty->assign('defaultAndroidPremiumPrice', round($item['price'] / $item['period'], 2));
+            }
+            if ($item['period'] == 6 || $item['period'] == 12) {
+                $itemNumber = array_search($item, $products['androidPremium']);
+                unset($products['androidPremium'][$itemNumber]);
             }
         }
     }

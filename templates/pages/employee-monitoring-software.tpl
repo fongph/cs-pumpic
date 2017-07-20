@@ -326,7 +326,7 @@ description="Increase productivity, ensure legal safety and streamline workflow 
                                                             <span class="prod-head__device phone">Smartphone</span>
                                                             <span class="prod-head__device tablet">Tablet</span>
                                                         </p>
-                                                        <p class="prod-head__price"><span>starting from </span><b>$6.99/</b><span> month</span></p>
+                                                        <p class="prod-head__price"><span>starting from </span><b>$14.66/</b><span> month</span></p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -525,8 +525,8 @@ description="Increase productivity, ensure legal safety and streamline workflow 
                                                             <ul>
                                                                 {foreach from=$getProducts.androidPremium key=key item=item}
                                                                     <li>
-                                                                        <label class="label_radio hover_label_radio {if $item.period == '12'}r_on{else}r_off{/if}">
-                                                                            <input class="data-price" data-target=".andr-premium-price-per-month" data-cur="usd" data-price-usd="{$item.price}" data-offer-price-usd="{$getProducts.androidPremiumDouble[$key].price}" data-period="{$item.period}" data-product="{$item.path}" data-offer-product="{$getProducts.androidPremiumDouble[$key].id}" data-group="android-prem"  name="optionsRadios" id="optionsRadios{$item.id}1" value="{$item.id}" type="radio"{if $item.period == '12'} checked="checked"{/if} />
+                                                                        <label class="label_radio hover_label_radio {if $item.period == '3'}r_on{else}r_off{/if}">
+                                                                            <input class="data-price" data-target=".andr-premium-price-per-month" data-cur="usd" data-price-usd="{$item.price}" data-offer-price-usd="{$getProducts.androidPremiumDouble[$key].price}" data-period="{$item.period}" data-product="{$item.path}" data-offer-product="{$getProducts.androidPremiumDouble[$key].id}" data-group="android-prem"  name="optionsRadios" id="optionsRadios{$item.id}1" value="{$item.id}" type="radio"{if $item.period == '3'} checked="checked"{/if} />
                                                                             <span class="sp">
                                                                             <strong>{$item.period}</strong> {if $item.period == 1}month{else}months{/if}
                                                                         </span>

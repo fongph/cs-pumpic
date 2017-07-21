@@ -270,12 +270,5 @@
 
     {include file='../includes/main/main-analytics-footer.tpl'}
 
-    {include file='../includes/content/banners/lib/banner-promo-android-exit-new-client.tpl'
-    gaCategory='Anroid-exit-banner'
-    gaLabel='spy-app'
-    cookieName='android-exit-banner'
-    cookieValue='spy-app'
-    cookieSession='no'
-    }
 </body>
 </html>

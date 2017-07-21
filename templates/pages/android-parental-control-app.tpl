@@ -234,13 +234,6 @@ title="Android Parental Control App for Ultimate Monitoring | Pumpic"
     </div>
 
     {include file='../includes/main/main-analytics-footer.tpl'}
-    {include file='../includes/content/banners/lib/banner-promo-android-exit-new-client.tpl'
-        gaCategory='Anroid-exit-banner'
-        gaLabel='parental-control-app'
-        cookieName='android-exit-banner-app'
-        cookieValue='android-parental-control-app'
-        cookieSession='no'
-    }
 
 </body>
 </html>

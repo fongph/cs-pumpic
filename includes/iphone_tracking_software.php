@@ -12,7 +12,9 @@ $obj = new includes\lib\users\Order;
 require_once 'smarty.config.php';
 
 /* list order */
-$products = $obj ->getProducts('third-jail');
+$products = $obj->getProducts('third', 'third-store','third-jail');
+$productsICloud = $obj->getProducts('third', 'third-store');
+
 
 /* form_order */
 $_request = (isset($_POST['price']) and !empty($_POST['price'])) ? $_POST['price']: false;
@@ -36,35 +38,51 @@ if($_request['productID']) {
 
 // default
 if(is_array($products)) {
-    if(isset($products['iosiCloud'])) {
-        foreach($products['iosiCloud'] as $item) :
-            if ($item['period'] == 6 && $item['id']) {
-                $smarty->assign('defaultIosiCloud', $item['id']);
-                $smarty->assign('defaultIosiCloudPath', $item['path']);
-                $smarty->assign('defaultIosiCloudPrice', round($item['price'] / $item['period'], 2));
-            }
-            if ($item['period'] == 12 || $item['period'] == 24) {
-                $itemNumber = array_search($item, $products['iosiCloud']);
-                unset($products['iosiCloud'][$itemNumber]);
-            }
-        endforeach;
-    }
+
     if(isset($products['iosJailbreak'])) {
         foreach($products['iosJailbreak'] as $item) :
-            if ($item['period'] == 12 && $item['id']) {
+            if ($item['period'] == 6 && $item['id']) {
                 $smarty->assign('defaultJailbreakProduct', $item['id']);
                 $smarty->assign('defaultJailbreakPrice', round($item['price'] / $item['period'], 2));
             }
-            if ($item['period'] == 3 || $item['period'] == 12) {
+            if ($item['period'] > 6) {
                 $itemNumber = array_search($item, $products['iosJailbreak']);
                 unset($products['iosJailbreak'][$itemNumber]);
             }
         endforeach;
     }
 
+}// default
+if(is_array($productsICloud)) {
 
+    if(isset($productsICloud['iosiCloud'])) {
+        foreach($productsICloud['iosiCloud'] as $item) :
+            if ($item['period'] == 3 && $item['id']) {
+                $smarty->assign('defaultIosiCloud', $item['id']);
+                $smarty->assign('defaultIosiCloudPath', $item['path']);
+                $smarty->assign('defaultIosiCloudPrice', round($item['price'] / $item['period'], 2));
+            }
+            if ($item['period'] >= 6) {
+                $itemNumber = array_search($item, $productsICloud['iosiCloud']);
+                unset($productsICloud['iosiCloud'][$itemNumber]);
+            }
+        endforeach;
+    }
+    if(isset($productsICloud['iosJailbreak'])) {
+        foreach($productsICloud['iosJailbreak'] as $item) :
+            if ($item['period'] == 6 && $item['id']) {
+                $smarty->assign('defaultJailbreakProduct', $item['id']);
+                $smarty->assign('defaultJailbreakPrice', round($item['price'] / $item['period'], 2));
+            }
+            if ($item['period'] > 6) {
+                $itemNumber = array_search($item, $productsICloud['iosJailbreak']);
+                unset($productsICloud['iosJailbreak'][$itemNumber]);
+            }
+        endforeach;
+    }
 }
 
+$products = array_merge($products, $productsICloud);
 // init output params!
 $smarty->assign('getProducts', $products);
 // $smarty->assign('_ga', (isset($_COOKIE['_ga'])) ? trim( strtolower($_COOKIE['_ga']), 'ga') : '' );

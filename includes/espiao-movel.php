@@ -13,24 +13,21 @@ $obj = new includes\lib\users\Order;
 require_once 'smarty.config.php';
 
 /* list order */
-$products = $obj ->getProducts('third');
-
+$products = $obj->getProducts('third', 'third-store');
 
 // default
 if(is_array($products)) {
-    if(isset($products['iosiCloud'])) {
-        foreach($products['iosiCloud'] as $item) :
-            if ($item['period'] == 6 && $item['id']) {
+    if (isset($products['iosiCloud'])) {
+        foreach ($products['iosiCloud'] as $item) {
+            if ($item['period'] == 3 && $item['id']) {
                 $smarty->assign('defaultIosiCloud', $item['id']);
                 $smarty->assign('defaultIosiCloudPath', $item['path']);
                 $smarty->assign('defaultIosiCloudPrice', round($item['price'] / $item['period'], 2));
             }
-            if ($item['period'] == 12 || $item['period'] == 24) {
-                $itemNumber = array_search($item, $products['iosiCloud']);
-                unset($products['iosiCloud'][$itemNumber]);
-            }
-        endforeach;
+
+        }
     }
+
     // Basic
     if(isset($products['androidBasic'])) {
         foreach($products['androidBasic'] as $item) :
@@ -39,10 +36,7 @@ if(is_array($products)) {
                 $smarty->assign('defaultAndriodBasicPath', $item['path']);
                 $smarty->assign('defaultAndriodBasicPrice', round($item['price'] / $item['period'], 2));
             }
-            if ($item['period'] == 6 || $item['period'] == 12) {
-                $itemNumber = array_search($item, $products['androidBasic']);
-                unset($products['androidBasic'][$itemNumber]);
-            }
+
         endforeach;
     }
     if(isset($products['androidPremium'])) {
@@ -52,13 +46,12 @@ if(is_array($products)) {
                 $smarty->assign('defaultAndroidPremiumPath', $item['path']);
                 $smarty->assign('defaultAndroidPremiumPrice', round($item['price'] / $item['period'], 2));
             }
-            if ($item['period'] == 6 || $item['period'] == 12) {
-                $itemNumber = array_search($item, $products['androidPremium']);
-                unset($products['androidPremium'][$itemNumber]);
-            }
+
         endforeach;
     }
+
 }
+
 
 // init output params!
 $smarty->assign('getProducts', $products);

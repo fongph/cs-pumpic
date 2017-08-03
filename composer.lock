@@ -13,7 +13,7 @@
             "source": {
                 "type": "git",
                 "url": "git@gitlab.dizboard.com:pumpic/cs-billing.git",
-                "reference": "b866f31e7e220a9785708bba7c7c6a2b45b80dfd"
+                "reference": "52144492214b4f70bd974940d871a50d101dc78e"
             },
             "require": {
                 "boomers/cs-models": "dev-master",
@@ -32,7 +32,7 @@
             "license": [
                 "MIT"
             ],
-            "time": "2017-07-18 15:19:25"
+            "time": "2017-08-03 08:43:58"
         },
         {
             "name": "boomers/cs-mail",
@@ -40,7 +40,7 @@
             "source": {
                 "type": "git",
                 "url": "git@gitlab.dizboard.com:pumpic/cs-mail.git",
-                "reference": "e8bd4f24a8d571eb0a33a7c9fe317fdc8179946b"
+                "reference": "779dc01e4eea8a6209038d4ff3bb6c1280f5e49c"
             },
             "require": {
                 "guzzlehttp/guzzle": "~5.0",
@@ -58,7 +58,7 @@
             "license": [
                 "MIT"
             ],
-            "time": "2017-04-07 11:46:52"
+            "time": "2017-08-01 09:56:12"
         },
         {
             "name": "boomers/cs-models",
@@ -176,7 +176,7 @@
             "source": {
                 "type": "git",
                 "url": "git@gitlab.dizboard.com:pumpic/seller.git",
-                "reference": "0b3630b23b5b30731a6c86c3aace3c1fcb9dbf90"
+                "reference": "f147440dc977550a1ac9ee701d4283159d73d7a9"
             },
             "require": {
                 "guzzlehttp/guzzle": "~5.0",
@@ -194,7 +194,7 @@
             "license": [
                 "MIT"
             ],
-            "time": "2017-05-30 13:06:13"
+            "time": "2017-08-01 13:39:45"
         },
         {
             "name": "filp/whoops",
@@ -749,16 +749,16 @@
         },
         {
             "name": "rastor/jira-client",
-            "version": "0.3.17",
+            "version": "0.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/oRastor/jira-client.git",
-                "reference": "6c2b14143f976e4b5c907506b1378ae6903769a9"
+                "reference": "6a486a0772f2afa2996c02a50dedc8aa20d5830f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/oRastor/jira-client/zipball/6c2b14143f976e4b5c907506b1378ae6903769a9",
-                "reference": "6c2b14143f976e4b5c907506b1378ae6903769a9",
+                "url": "https://api.github.com/repos/oRastor/jira-client/zipball/6a486a0772f2afa2996c02a50dedc8aa20d5830f",
+                "reference": "6a486a0772f2afa2996c02a50dedc8aa20d5830f",
                 "shasum": ""
             },
             "require": {
@@ -787,7 +787,7 @@
                 "jira",
                 "rest"
             ],
-            "time": "2017-05-19 16:07:12"
+            "time": "2017-07-28 06:43:52"
         },
         {
             "name": "rastor/system",
@@ -999,32 +999,32 @@
     "packages-dev": [
         {
             "name": "doctrine/instantiator",
-            "version": "1.0.5",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/instantiator.git",
-                "reference": "8e884e78f9f0eb1329e445619e04456e64d8051d"
+                "reference": "185b8868aa9bf7159f5f953ed5afb2d7fcdc3bda"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/instantiator/zipball/8e884e78f9f0eb1329e445619e04456e64d8051d",
-                "reference": "8e884e78f9f0eb1329e445619e04456e64d8051d",
+                "url": "https://api.github.com/repos/doctrine/instantiator/zipball/185b8868aa9bf7159f5f953ed5afb2d7fcdc3bda",
+                "reference": "185b8868aa9bf7159f5f953ed5afb2d7fcdc3bda",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3,<8.0-DEV"
+                "php": "^7.1"
             },
             "require-dev": {
                 "athletic/athletic": "~0.1.8",
                 "ext-pdo": "*",
                 "ext-phar": "*",
-                "phpunit/phpunit": "~4.0",
-                "squizlabs/php_codesniffer": "~2.0"
+                "phpunit/phpunit": "^6.2.3",
+                "squizlabs/php_codesniffer": "^3.0.2"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.0.x-dev"
+                    "dev-master": "1.2.x-dev"
                 }
             },
             "autoload": {
@@ -1049,7 +1049,7 @@
                 "constructor",
                 "instantiate"
             ],
-            "time": "2015-06-14 21:17:01"
+            "time": "2017-07-22 11:58:36"
         },
         {
             "name": "phpdocumentor/reflection-common",
@@ -2010,16 +2010,16 @@
         },
         {
             "name": "symfony/yaml",
-            "version": "v3.3.5",
+            "version": "v3.3.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
-                "reference": "1f93a8d19b8241617f5074a123e282575b821df8"
+                "reference": "ddc23324e6cfe066f3dd34a37ff494fa80b617ed"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/yaml/zipball/1f93a8d19b8241617f5074a123e282575b821df8",
-                "reference": "1f93a8d19b8241617f5074a123e282575b821df8",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/ddc23324e6cfe066f3dd34a37ff494fa80b617ed",
+                "reference": "ddc23324e6cfe066f3dd34a37ff494fa80b617ed",
                 "shasum": ""
             },
             "require": {
@@ -2061,7 +2061,7 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
-            "time": "2017-06-15 12:58:50"
+            "time": "2017-07-23 12:43:26"
         },
         {
             "name": "webmozart/assert",

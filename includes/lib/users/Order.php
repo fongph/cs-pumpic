@@ -294,43 +294,22 @@ class Order extends ManagerUser
         return $a['period'] > $b['period'];
     }
     
-    public function getProducts($namespace) 
+    public function getProducts($namespaceAndroid, $namespaceICloud, $namespaceJail = '')
     {
-        if (in_array($namespace, ['second-store', 'second-landing'] )){
-            $version = '';
-            switch ($namespace){
-                case 'second-store': $version = 'd0'; break;
-                case 'second-landing': $version = 'd1'; break;
-            }
-
+       if ($namespaceJail == 'third-jail') {
+            $namespace = 'third';
+            $version = 's';
             $plans = $this->_billing->getSiteProductsWithVariousNamespace(self::SITE_ID, 'second', $namespace, $version);
 
-        }  elseif ($namespace == 'third-jail') {
-           $namespace = 'third';
-           $version = 's';
 
-            $plans = $this->_billing->getSiteProductsWithVariousNamespace(self::SITE_ID, 'second', $namespace, $version);
-        } else {
-            $plans = $this->_billing->getSiteProducts(self::SITE_ID, $namespace);
+       } else {
+            $plans = $this->_billing->getSiteProducts(self::SITE_ID, $namespaceAndroid, $namespaceICloud);
         }
+
         if(count($plans) > 0) {
             foreach($plans as $plan => $data) {
                 $period = $this->_numbers($plan);
-                if (strpos($plan, 'ios-icloud-double') === 0) {
-                    if($period == 7) $period = 0.7;
-                    self::$_data['iosiCloudDouble'][$period] = array_merge($data, ['period' => $period]);
-                }
-                elseif (strpos($plan, 'ios-jailbreak-double') === 0) {
-                    self::$_data['iosJailbreakDouble'][$period] = array_merge($data, ['period' => $period]);
-                }
-                elseif (strpos($plan, 'android-basic-double') === 0) {
-                    self::$_data['androidBasicDouble'][$period] = array_merge($data, ['period' => $period]);
-                }
-                elseif (strpos($plan, 'android-premium-double') === 0) {
-                    self::$_data['androidPremiumDouble'][$period] = array_merge($data, ['period' => $period]);
-                }
-                elseif (strpos($plan, 'ios-icloud') === 0) {
-                    if($period == 7) $period = 0.7;
+                if (strpos($plan, 'ios-icloud') === 0) {
                     self::$_data['iosiCloud'][$period] = array_merge($data, ['period' => $period]);
                 }
                 elseif (strpos($plan, 'ios-jailbreak') === 0) {
@@ -342,15 +321,6 @@ class Order extends ManagerUser
                 elseif (strpos($plan, 'android-premium') === 0) {
                     self::$_data['androidPremium'][$period] = array_merge($data, ['period' => $period]);
                 }
-                elseif (strpos($plan, 'premium-double') === 0) {
-                    self::$_data['premiumDouble'][$period] = array_merge($data, ['period' => $period]);
-                } elseif (strpos($plan, 'basic-double') === 0) {
-                    self::$_data['basicDouble'][$period] = array_merge($data, ['period' => $period]);
-                } elseif (strpos($plan, 'premium') === 0) {
-                    self::$_data['premium'][$period] = array_merge($data, ['period' => $period]);
-                } elseif (strpos($plan, 'basic') === 0) {
-                    self::$_data['basic'][$period] = array_merge($data, ['period' => $period]);
-                }
             }
         }
 
@@ -359,9 +329,7 @@ class Order extends ManagerUser
             uasort($value, array('self', 'sortPeriods'));
             self::$_data[$key] = $value;
         }
-//        var_dump(self::$_data);
-//        die();
-        
+
         return self::$_data;
     }
     

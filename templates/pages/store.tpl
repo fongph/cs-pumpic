@@ -136,7 +136,7 @@ description="Pumpic offers high-quality cell phone tracking software for a good 
                                                             <span class="prod-head__device smart">iPod Touch</span>
                                                         </p>
                                                         <p class="prod-head__price">
-                                                            <span>starting from </span><b>$12.95/</b><span> month</span>
+                                                            <span>starting from </span><b>$23.33/</b><span> month</span>
                                                         </p>
                                                     </div>
                                                 </div>
@@ -244,7 +244,7 @@ description="Pumpic offers high-quality cell phone tracking software for a good 
                                                                 <ul>
                                                                     {foreach from=$getProducts.iosiCloud key=key item=item}
                                                                         <li>
-                                                                            <label class="label_radio hover_label_radio {if $item.period == '6'}r_on{else}r_off{/if}">
+                                                                            <label class="label_radio hover_label_radio {if $item.period == '3'}r_on{else}r_off{/if}">
                                                                                 <input class="data-price"
                                                                                        data-target=".icloud-price-per-month"
                                                                                        data-cur="usd"
@@ -437,7 +437,7 @@ description="Pumpic offers high-quality cell phone tracking software for a good 
                                                                 <ul>
                                                                     {foreach from=$getProducts.iosiCloud key=key item=item}
                                                                         <li>
-                                                                            <label class="label_radio hover_label_radio {if $item.period == '6'}r_on{else}r_off{/if}">
+                                                                            <label class="label_radio hover_label_radio {if $item.period == '3'}r_on{else}r_off{/if}">
                                                                                 <input class="data-price"
                                                                                        data-target=".icloud-price-per-month"
                                                                                        data-cur="usd"
@@ -514,7 +514,7 @@ description="Pumpic offers high-quality cell phone tracking software for a good 
                                              style="display: none;">
                                             {* ANDROID AJAX LOADING*}
                                             {*<div id="loader"><img src="/images/loader.svg"></div>*}
-                                            {*{include file='../includes/store/store-desktop.tpl'}*}
+                                            {include file='../includes/store/store-desktop.tpl'}
                                             {*for debug*}
 
 

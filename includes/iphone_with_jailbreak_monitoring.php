@@ -13,7 +13,7 @@ require_once 'smarty.config.php';
 
 /* list order */
 
-$products = $obj ->getProducts('third', 'third-store','third-jail');
+$products = $obj ->getProducts('third', 'third-landing','third-jail');
 
 /* form_order */
 $_request = (isset($_POST['price']) and !empty($_POST['price'])) ? $_POST['price']: false;

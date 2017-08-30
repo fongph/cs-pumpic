@@ -18,22 +18,6 @@ function buyOnClick(button) {
         ga('send', 'event', _ga_category, _ga_action, _ga_label);
     }
 }
-// GA event send
-
-
-function decorateURLFunction(url) {
-    var linkerParam = null;
-
-    ga(function () {
-        var trackers = ga.getAll();
-        trackers.forEach(function (tracker) {
-        });
-        linkerParam = trackers[0].get('linkerParam');
-    });
-
-
-    return (linkerParam ? url + '?' + linkerParam : url);
-}
 
 function popupEventReceived(event) {
 

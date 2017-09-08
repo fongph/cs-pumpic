@@ -19,6 +19,24 @@ function buyOnClick(button) {
     }
 }
 
+// GA event send
+
+
+function decorateURLFunction(url) {
+    var linkerParam = null;
+
+    ga(function () {
+        var trackers = ga.getAll();
+        trackers.forEach(function (tracker) {
+        });
+        linkerParam = trackers[0].get('linkerParam');
+    });
+
+
+    return (linkerParam ? url + '?' + linkerParam : url);
+}
+
+
 function popupEventReceived(event) {
 
     if (isset(event.ecommerce.purchase.actionField.id)){

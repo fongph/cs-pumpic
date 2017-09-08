@@ -5,6 +5,7 @@
         data-storefront="pumpic.onfastspring.com/popup-pumpic"
         data-data-callback="dataCallbackFunction"
         data-before-requests-callback="beforeRequestsCallbackFunction"
+        data-decorate-callback="decorateURLFunction"
         data-popup-event-received="popupEventReceived"
         {*data-debug="true"*}
 >

@@ -18,7 +18,7 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 {*{/nocache}*}
 {literal}   
 ga('require', 'linker');
-ga('linker:autoLink', ['pumpic.com','fastspring.com','demo.pumpic.com','cp.pumpic.com'], true, true);
+ga('linker:autoLink', ['pumpic.com','fastspring.com', 'onfastspring.com','demo.pumpic.com','cp.pumpic.com'], true, true);
 {/literal}
 {*{nocache}*}
 {if $search_word}

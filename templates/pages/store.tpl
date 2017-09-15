@@ -514,7 +514,7 @@ description="Pumpic offers high-quality cell phone tracking software for a good 
                                              style="display: none;">
                                             {* ANDROID AJAX LOADING*}
                                             <div id="loader"><img src="/images/loader.svg"></div>
-                                            {include file='../includes/store/store-desktop.tpl'}
+                                            {*{include file='../includes/store/store-desktop.tpl'}*}
                                             {*for debug*}
 
 

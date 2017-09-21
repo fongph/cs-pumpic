@@ -35,6 +35,10 @@
         {
             "type": "git",
             "url": "git@gitlab.dizboard.com:pumpic/deployer-recipes.git"
+        },
+        {
+            "type": "git",
+            "url": "git@gitlab.dizboard.com:pumpic/jira-client.git"
         }
     ],
     "require": {
@@ -49,6 +53,7 @@
         "boomers/cs-billing": "dev-master",
         "boomers/cs-mail": "dev-master",
         "boomers/cs-settings": "dev-master",
+        "boomers/jira-client": "dev-master",
         "boomers/cs-users": "dev-master",
         "boomers/deployer-recipes": "dev-master",
         "mobiledetect/mobiledetectlib": "^2.8",

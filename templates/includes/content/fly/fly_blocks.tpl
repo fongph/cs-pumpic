@@ -6,7 +6,7 @@
 
 <!-- FLY BLOCK -->
 {if !isset($visibleFlyFeatures) || $visibleFlyFeatures == "yes"}
-    {include file='./fly_features_v2.tpl'}
+    {include file='./fly_features_sale.tpl'}
 {/if}
 <!-- END FLY BLOCK -->
 

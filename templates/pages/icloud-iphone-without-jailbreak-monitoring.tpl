@@ -21,6 +21,10 @@
     <!-- END BLOCK GTM -->
 
     <!-- FLY BLOCKS -->
+    {include file='../includes/content/fly/fly_blocks.tpl'}
+    <!-- END FLY BLOCKS-->
+
+    <!-- FLY BLOCKS -->
     {include file='../includes/main/main-button-help.tpl'}
     {include file='../includes/main/main-button-goup.tpl'}
     <!-- END FLY BLOCKS-->

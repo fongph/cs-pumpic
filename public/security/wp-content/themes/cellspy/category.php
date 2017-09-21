@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-mjvfjv
+
 	<div class="very_easy">
     <div class="container">
         <div class="row">

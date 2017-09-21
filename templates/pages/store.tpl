@@ -75,7 +75,55 @@ description="Pumpic offers high-quality cell phone tracking software for a good 
             max-width: 475px;
         }
 
-        @media (max-width: 454px) {
+        .banner-store-sale{
+           top: -30px;
+           display: flex;
+           position: absolute;
+
+        }
+        .banner-store-sale-text{
+            position: relative;
+            color: #fff;
+            text-align: center;
+            font-size: 20px;
+            top: -10px;
+
+        }
+        @media (max-width: 768px) {
+            .banner-store-sale-text {
+                top: -25px;
+            }
+            .banner-store-sale {
+                margin-left: -15px;
+            }
+        }
+        @media only screen and (max-width: 325px) {
+
+            .banner-store-sale-text{
+                top: -20px;
+                font-size: 16px;
+            }
+            .banner-store-sale{
+                height: 70px;
+                margin-left: -15px;
+
+            }
+        }
+        @media only screen and (max-width: 365px) and (min-width: 325px){
+
+            .banner-store-sale-text{
+                top: -20px;
+                font-size: 16px;
+                line-height: 25px;
+            }
+            .banner-store-sale{
+                height: 70px;
+                margin-left: -15px;
+
+            }
+        }
+
+        @media only screen and (max-width: 454px ) and (min-width: 365px) {
             .banner-store {
                 padding: 8px 8px 0;
                 flex-wrap: wrap;
@@ -89,13 +137,31 @@ description="Pumpic offers high-quality cell phone tracking software for a good 
             .banner-store .image-right {
                 order: 2;
             }
+            .banner-store-sale{
+                height: 70px;
+                margin-left: -15px;
+
+            }
+            .banner-store-sale-text {
+                top: -20px;
+                font-size: 18px;
+                line-height: 25px;
+            }
+
+
         }
     </style>
     <div class="no_bg">
         <div class="container">
+           
             <div class="row">
                 <div class="col-lg-10 col-lg-offset-1">
+
                     <div class="row">
+                        <div class="col-lg-10 col-md-10 col-lg-offset-1 col-md-offset-1">
+                            <img class="banner-store-sale" src="{$img}/store/sale_store.png" alt="">
+                            <h4 class="banner-store-sale-text">Until September 25 <b>get +1 FREE Month</b> <span class="hidden-md hidden-lg"><br></span>with any purchase!</h4>
+                        </div>
                         <h1 class="h2 text-center">
                             Subscription Plans
                         </h1>

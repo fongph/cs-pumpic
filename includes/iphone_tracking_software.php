@@ -57,12 +57,12 @@ if(is_array($productsICloud)) {
 
     if(isset($productsICloud['iosiCloud'])) {
         foreach($productsICloud['iosiCloud'] as $item) :
-            if ($item['period'] == 3 && $item['id']) {
+            if ($item['period'] == 6 && $item['id']) {
                 $smarty->assign('defaultIosiCloud', $item['id']);
                 $smarty->assign('defaultIosiCloudPath', $item['path']);
                 $smarty->assign('defaultIosiCloudPrice', round($item['price'] / $item['period'], 2));
             }
-            if ($item['period'] >= 6) {
+            if ($item['period'] > 6 || $item['period'] == 2) {
                 $itemNumber = array_search($item, $productsICloud['iosiCloud']);
                 unset($productsICloud['iosiCloud'][$itemNumber]);
             }

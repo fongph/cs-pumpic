@@ -89,7 +89,7 @@
 
 
 <?php
-include_once('../../templates/includes/content/fly/fly_features_blog_sale.tpl');
+include_once('../../templates/includes/content/fly/fly_features_blog.tpl');
 ?>
 
 <div class="wrapper">

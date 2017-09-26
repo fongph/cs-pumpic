@@ -19,7 +19,7 @@ $products = $obj->getProducts('third', 'third-landing');
 if(is_array($products)) {
     if (isset($products['iosiCloud'])) {
         foreach ($products['iosiCloud'] as $item) {
-            if ($item['period'] == 3 && $item['id']) {
+            if ($item['period'] == 6 && $item['id']) {
                 $smarty->assign('defaultIosiCloud', $item['id']);
                 $smarty->assign('defaultIosiCloudPath', $item['path']);
                 $smarty->assign('defaultIosiCloudPrice', round($item['price'] / $item['period'], 2));
@@ -31,7 +31,7 @@ if(is_array($products)) {
     // Basic
     if(isset($products['androidBasic'])) {
         foreach($products['androidBasic'] as $item) :
-            if ($item['period'] == 3 && $item['id']) {
+            if ($item['period'] == 6 && $item['id']) {
                 $smarty->assign('defaultAndriodBasic', $item['id']);
                 $smarty->assign('defaultAndriodBasicPath', $item['path']);
                 $smarty->assign('defaultAndriodBasicPrice', round($item['price'] / $item['period'], 2));
@@ -41,7 +41,7 @@ if(is_array($products)) {
     }
     if(isset($products['androidPremium'])) {
         foreach($products['androidPremium'] as $item) :
-            if ($item['period'] == 3 && $item['id']) {
+            if ($item['period'] == 6 && $item['id']) {
                 $smarty->assign('defaultAndroidPremium', $item['id']);
                 $smarty->assign('defaultAndroidPremiumPath', $item['path']);
                 $smarty->assign('defaultAndroidPremiumPrice', round($item['price'] / $item['period'], 2));

@@ -13,7 +13,7 @@
             "source": {
                 "type": "git",
                 "url": "git@gitlab.dizboard.com:pumpic/cs-billing.git",
-                "reference": "1844fb50c6e70a9d2e776dcd057e6cb3aa4f3859"
+                "reference": "e4bd075690ccf00b7d3d971f0512344e00e2a92b"
             },
             "require": {
                 "boomers/cs-models": "dev-master",
@@ -32,7 +32,7 @@
             "license": [
                 "MIT"
             ],
-            "time": "2017-08-11 13:51:10"
+            "time": "2017-09-25 13:35:52"
         },
         {
             "name": "boomers/cs-mail",

@@ -29,7 +29,7 @@
         {* Template: BLOCK 'FLY_FEATURES v1' *}
         {include file='../includes/content/fly/fly_features.tpl'}
         {* Template: BLOCK 'FLY_FEATURES v2' *}
-        {include file='../includes/content/fly/fly_features_sale.tpl'}
+        {include file='../includes/content/fly/fly_features_v2.tpl'}
         {* Template: BLOCK 'FLY_BUTTONS' *}
         {include file='../includes/content/fly/box-buttons.tpl'}
         {* Template: BLOCK 'FLY_DISCOUNT' *}

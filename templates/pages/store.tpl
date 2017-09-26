@@ -57,100 +57,6 @@ description="Pumpic offers high-quality cell phone tracking software for a good 
     {**}
     {*{$getProducts.basicDouble|@debug_print_var}*}
 
-    <style>
-        .banner-store {
-            max-width: 782px;
-            margin: 0 auto;
-            background: url("https://www.wearewebstars.dk/codepen/img//s2.png"), linear-gradient(-54deg, #1d477d, #3594a2, #bb6884) no-repeat bottom;
-            background-size: 130px, 100%;
-            padding: 8px 0 0;
-            display: flex;
-            justify-content: space-around;
-        }
-
-        .banner-store .banner-text {
-            font-size: 15px;
-            color: #ffffff;
-            text-align: center;
-            max-width: 475px;
-        }
-
-        .banner-store-sale{
-           top: -30px;
-           display: flex;
-           position: absolute;
-
-        }
-        .banner-store-sale-text{
-            position: relative;
-            color: #fff;
-            text-align: center;
-            font-size: 20px;
-            top: -10px;
-
-        }
-        @media (max-width: 768px) {
-            .banner-store-sale-text {
-                top: -25px;
-            }
-            .banner-store-sale {
-                margin-left: -15px;
-            }
-        }
-        @media only screen and (max-width: 325px) {
-
-            .banner-store-sale-text{
-                top: -20px;
-                font-size: 16px;
-            }
-            .banner-store-sale{
-                height: 70px;
-                margin-left: -15px;
-
-            }
-        }
-        @media only screen and (max-width: 365px) and (min-width: 325px){
-
-            .banner-store-sale-text{
-                top: -20px;
-                font-size: 16px;
-                line-height: 25px;
-            }
-            .banner-store-sale{
-                height: 70px;
-                margin-left: -15px;
-
-            }
-        }
-
-        @media only screen and (max-width: 454px ) and (min-width: 365px) {
-            .banner-store {
-                padding: 8px 8px 0;
-                flex-wrap: wrap;
-                justify-content: center;
-            }
-
-            .banner-store .image-left {
-                order: 1;
-            }
-
-            .banner-store .image-right {
-                order: 2;
-            }
-            .banner-store-sale{
-                height: 70px;
-                margin-left: -15px;
-
-            }
-            .banner-store-sale-text {
-                top: -20px;
-                font-size: 18px;
-                line-height: 25px;
-            }
-
-
-        }
-    </style>
     <div class="no_bg">
         <div class="container">
            
@@ -158,10 +64,6 @@ description="Pumpic offers high-quality cell phone tracking software for a good 
                 <div class="col-lg-10 col-lg-offset-1">
 
                     <div class="row">
-                        <div class="col-lg-10 col-md-10 col-lg-offset-1 col-md-offset-1">
-                            <img class="banner-store-sale" src="{$img}/store/sale_store.png" alt="">
-                            <h4 class="banner-store-sale-text">Until September 25 <b>get +1 FREE Month</b> <span class="hidden-md hidden-lg"><br></span>with any purchase!</h4>
-                        </div>
                         <h1 class="h2 text-center">
                             Subscription Plans
                         </h1>
@@ -202,12 +104,13 @@ description="Pumpic offers high-quality cell phone tracking software for a good 
                                                             <span class="prod-head__device smart">iPod Touch</span>
                                                         </p>
                                                         <p class="prod-head__price">
-                                                            <span>starting from </span><b>$23.33/</b><span> month</span>
+                                                            <span>starting from </span><b>$12.95/</b><span> month</span>
                                                         </p>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="col-sm-6">
+                                                <ul class="prod-list">
                                                 <ul class="prod-list">
                                                     <li><span>Monitor iPhone, iPad, iPod Touch without jailbreak</span>
                                                     </li>
@@ -239,7 +142,7 @@ description="Pumpic offers high-quality cell phone tracking software for a good 
                                                             <span class="prod-head__device tablet">Tablet</span>
                                                         </p>
                                                         <p class="prod-head__price">
-                                                            <span>starting from </span><b>$11.33/</b><span> month</span>
+                                                            <span>starting from </span><b>$7.33/</b><span> month</span>
                                                         </p>
                                                     </div>
                                                 </div>
@@ -310,7 +213,7 @@ description="Pumpic offers high-quality cell phone tracking software for a good 
                                                                 <ul>
                                                                     {foreach from=$getProducts.iosiCloud key=key item=item}
                                                                         <li>
-                                                                            <label class="label_radio hover_label_radio {if $item.period == '3'}r_on{else}r_off{/if}">
+                                                                            <label class="label_radio hover_label_radio {if $item.period == '6'}r_on{else}r_off{/if}">
                                                                                 <input class="data-price"
                                                                                        data-target=".icloud-price-per-month"
                                                                                        data-cur="usd"
@@ -503,7 +406,7 @@ description="Pumpic offers high-quality cell phone tracking software for a good 
                                                                 <ul>
                                                                     {foreach from=$getProducts.iosiCloud key=key item=item}
                                                                         <li>
-                                                                            <label class="label_radio hover_label_radio {if $item.period == '3'}r_on{else}r_off{/if}">
+                                                                            <label class="label_radio hover_label_radio {if $item.period == '6'}r_on{else}r_off{/if}">
                                                                                 <input class="data-price"
                                                                                        data-target=".icloud-price-per-month"
                                                                                        data-cur="usd"

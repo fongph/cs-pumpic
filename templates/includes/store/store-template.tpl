@@ -42,7 +42,7 @@
                                                         <span class="prod-head__device tablet">iPad</span>
                                                         <span class="prod-head__device smart">iPod Touch</span>
                                                     </p>
-                                                    <p class="prod-head__price"><span>starting from </span><b>$23.33/</b><span> month</span></p>
+                                                    <p class="prod-head__price"><span>starting from </span><b>$12.95/</b><span> month</span></p>
                                                 </div>
                                             </div>
                                         </div>
@@ -68,7 +68,7 @@
                                                         <span class="prod-head__device phone">Smartphone</span>
                                                         <span class="prod-head__device tablet">Tablet</span>
                                                     </p>
-                                                    <p class="prod-head__price"><span>starting from </span><b>$11.33/</b><span> month</span></p>
+                                                    <p class="prod-head__price"><span>starting from </span><b>$7.33/</b><span> month</span></p>
                                                 </div>
                                             </div>
                                         </div>
@@ -117,7 +117,7 @@
                                                             <ul>
                                                                 {foreach from=$getProducts.iosiCloud key=key item=item}
                                                                     <li>
-                                                                        <label class="label_radio hover_label_radio {if $item.period == '3'}r_on{else}r_off{/if}">
+                                                                        <label class="label_radio hover_label_radio {if $item.period == '6'}r_on{else}r_off{/if}">
                                                                             <input class="data-price"
                                                                                    data-target=".icloud-price-per-month"
                                                                                    data-cur="usd"
@@ -250,7 +250,7 @@
                                                             <ul>
                                                                 {foreach from=$getProducts.iosiCloud key=key item=item}
                                                                     <li>
-                                                                        <label class="label_radio hover_label_radio {if $item.period == '3'}r_on{else}r_off{/if}">
+                                                                        <label class="label_radio hover_label_radio {if $item.period == '6'}r_on{else}r_off{/if}">
                                                                             <input class="data-price"
                                                                                    data-target=".icloud-price-per-month"
                                                                                    data-cur="usd"

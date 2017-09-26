@@ -104,7 +104,7 @@ description="Pumpic offers high-quality cell phone tracking software for a good 
                                                             <span class="prod-head__device smart">iPod Touch</span>
                                                         </p>
                                                         <p class="prod-head__price">
-                                                            <span>starting from </span><b>$12.95/</b><span> month</span>
+                                                            <span>starting from </span><b>$14.55/</b><span> month</span>
                                                         </p>
                                                     </div>
                                                 </div>

@@ -300,7 +300,7 @@ description="Increase productivity, ensure legal safety and streamline workflow 
                                                             <span class="prod-head__device tablet">iPad</span>
                                                             <span class="prod-head__device smart">iPod Touch</span>
                                                         </p>
-                                                        <p class="prod-head__price"><span>starting from </span><b>$12.95/</b><span> month</span></p>
+                                                        <p class="prod-head__price"><span>starting from </span><b>$14.55/</b><span> month</span></p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -363,7 +363,7 @@ description="Increase productivity, ensure legal safety and streamline workflow 
                                                             <div class="wr_pack_premium wr_icloud _single-pack-icloud"></div>
                                                             <div class="wr_pack_double_premium wr_icloud-double _double-pack-icloud"></div>
                                                             <div class="wr_price_big">
-                                                                <span></span><div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr icloud-price-per-month" >12.95</div></div><span>/ month</span>
+                                                                <span></span><div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr icloud-price-per-month" >14.55</div></div><span>/ month</span>
                                                             </div>
                                                         </div>
                                                         <div class="list_price icloud-list_price">

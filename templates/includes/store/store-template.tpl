@@ -42,7 +42,7 @@
                                                         <span class="prod-head__device tablet">iPad</span>
                                                         <span class="prod-head__device smart">iPod Touch</span>
                                                     </p>
-                                                    <p class="prod-head__price"><span>starting from </span><b>$12.95/</b><span> month</span></p>
+                                                    <p class="prod-head__price"><span>starting from </span><b>$14.55/</b><span> month</span></p>
                                                 </div>
                                             </div>
                                         </div>

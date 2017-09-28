@@ -11,31 +11,43 @@ $obj = new includes\lib\users\Order;
 // smarty config
 require_once 'smarty.config.php';
 
-//get value ABtest
-$smarty->assign('ABtest', 'ABtest-2');
+$products = $obj->getProducts('third', 'third-landing');
 
+/* form_order */
+$_request = (isset($_POST['price']) and !empty($_POST['price'])) ? $_POST['price']: false;
+if($_request['productID']) {
+    // $_order ->setSession('pumpic_order', array('productID' => (int)$_request['productID']));
 
-/* list order */
-$products = $obj->getProducts('second-new-amp');
+    if($_request['productID'] and $obj -> getUserIdByAuth()) {
+        // $_order ->unsetSession('pumpic_order'); // clear session
 
+        $_url = $obj -> createOrder((int)$_request['productID']);
+        if($_url) {
+            $obj -> _redirect( $_url );
+        }
+        // create order
+    } else if((int)$_request['productID']) {
+        $obj -> _redirect('/buy.html?productID='.$_request['productID']);
+
+    }
+
+}
 
 // default
 if(is_array($products)) {
     if (isset($products['iosiCloud'])) {
-        foreach ($products['iosiCloud'] as $item) :
-            if ($item['period'] == 3 && $item['id']) {
-                $product = $item;
-//                $smarty->assign('defaultIosiCloudProduct', $item['id']);
-//                $smarty->assign('defaultIosiCloudPrice', round($item['price'] / $item['period'], 2));
+        foreach ($products['iosiCloud'] as $item) {
+            if ($item['period'] == 6 && $item['id']) {
+                $smarty->assign('defaultIosiCloud', $item['id']);
+                $smarty->assign('defaultIosiCloudPath', $item['path']);
+                $smarty->assign('defaultIosiCloudPrice', round($item['price'] / $item['period'], 2));
             }
-            if ($item['period'] == 12 || $item['period'] == 24) {
-                $itemNumber = array_search($item, $products['iosiCloud']);
-                unset($products['iosiCloud'][$itemNumber]);
-            }
-        endforeach;
-    }
-}
 
+        }
+    }
+
+
+}
 // init output params!
-$smarty->assign('getProducts', $product);
-$smarty->display($b_dir . '/templates/pages/amp/iphone-parental-monitoring.tpl');
+$smarty->assign('getProducts', $products);
+$smarty->display($b_dir . '/templates/pages/iphone-parental-monitoring.tpl');

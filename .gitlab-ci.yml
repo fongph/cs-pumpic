@@ -16,8 +16,8 @@ deploy:
   script:
     - composer update --no-dev --verbose --prefer-dist --optimize-autoloader --no-progress
     - ./vendor/boomers/deployer-recipes/dep deploy -vvvv
-    - sudo /usr/sbin/service nginx reload
-    - sudo /usr/sbin/service php5-fpm reload
+    - /usr/bin/sudo /usr/sbin/service nginx reload
+    - /usr/sbin/sudo /usr/sbin/service php5-fpm reload
   only:
     - master
   tags:

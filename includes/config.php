@@ -67,10 +67,6 @@ $config = array(
 				'icloud-iphone-without-jailbreak-monitoring.html' => 'icloud_iphone_without_jailbreak_monitoring.php',
                 'iphone-parental-monitoring.html' => 'iphone-parental-monitoring.php',
 
-            //'amp/icloud-iphone-without-jailbreak-monitoring.html' => 'icloud_iphone_without_jailbreak_monitoring.php',
-
-				//'store-iframe-amp.html' => 'store-iframe-amp.php',
-
 			// opening-soon-thanks.html
 				'opening-soon-thanks.html' => 'opening-soon-thanks.php',
 			// detected rtegion

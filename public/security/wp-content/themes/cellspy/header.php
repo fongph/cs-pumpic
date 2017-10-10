@@ -89,8 +89,17 @@
 
 
 <?php
-include_once('../../templates/includes/content/fly/fly_features_blog.tpl');
+global $post;
+$post_slug = $post->post_name;
+if ($post_slug == 'how-to-track-browser-history-on-android') {
+    include_once('../../templates/includes/content/fly/fly_features_blog_android.tpl');
+
+} else {
+    include_once('../../templates/includes/content/fly/fly_features_blog.tpl');
+
+}
 ?>
+
 
 <div class="wrapper">
 

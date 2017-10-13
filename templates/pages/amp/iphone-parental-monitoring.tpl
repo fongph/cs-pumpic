@@ -139,8 +139,16 @@
                  display: block;
              }
             .store-background {background-color: #f9f7ee;
-                padding-bottom: 10px;}
-
+                padding-bottom: 10px;
+            }
+                i.center {
+                    display: inline-block;
+                    height: 16px;
+                    background: url('/images/line-store-amp.png') no-repeat;
+                }
+            span.min{
+                font-size: 10px;
+            }
         </style>
     {/literal}
     {literal}
@@ -426,19 +434,24 @@
                                 data-fsc-item-path-value="pumpic-icloud-1m-s" open-button
                                 data-fsc-action="Add, Checkout">
                             <span class="left">1 month — $39.99</span>
-                            <span class="right">Buy</span>
+                            <span class="right"><i class="center"></i> Buy</span>
                         </button>
                         <button class="btn btn-default btn-store ga-action-click" open-button
                                          data-fsc-item-path-value="pumpic-icloud-3m-s"
                                          data-fsc-action="Add, Checkout">
-                            <span class="left">3 months — $23.33 /mo  Total: $69.99 </span>
-                            <span class="right"> Buy</span>
+                            <span class="left text-center">3 months — $23.33 /mo<br>
+                                <span class="min">Total: $69.99</span>
+                            </span>
+                            <span class="right text-center"><i class="center"></i> Buy</span>
                         </button>
                         <button class="btn btn-default btn-store ga-action-click" open-button
                                          data-fsc-item-path-value="pumpic-icloud-6m-s"
                                 data-fsc-action="Add, Checkout">
-                            <span class="left">6 months — $14.55 /mo  Total: $87.30 </span>
-                            <span class="right"> Buy </span> 
+                            <span class="left">6 months — $14.55 /mo <br>
+                                <span class="min">  Total: $87.30</span>
+                            </span>
+
+                            <span class="right"> <i class="center"></i> Buy </span> 
                         </button>
                     </div>
                     </amp-app-banner>

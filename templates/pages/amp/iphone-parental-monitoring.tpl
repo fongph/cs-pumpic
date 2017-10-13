@@ -35,7 +35,18 @@
         <script async custom-element="amp-analytics"
                 src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
         <script async src="https://cdn.ampproject.org/v0.js"></script>
+
         <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
+        <script async
+                id="fsc-api"
+                src="https://d1f8f9xcsvx3ha.cloudfront.net/sbl/0.7.3/fastspring-builder.min.js"
+                type="text/javascript"
+                data-storefront="pumpic.onfastspring.com/popup-pumpic"
+                data-data-callback="dataCallbackFunction"
+                data-before-requests-callback="beforeRequestsCallbackFunction"
+                data-decorate-callback="decorateURLFunction"
+                data-popup-event-received="popupEventReceived">
+        </script>
         <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
     {/literal}
 </head>

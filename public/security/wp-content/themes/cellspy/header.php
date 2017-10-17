@@ -22,8 +22,8 @@
     <link rel="shortcut icon" type="image/png" href="<?php echo getStaticUrl();?>/images/favicon.png"/>
     <?php wp_head(); ?>
     <!-- Bootstrap -->
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,300italic,400italic,600italic,700italic' rel='stylesheet' type='text/css'>
-    <link href="<?php echo getStaticUrl();?>/stylesheets/wp.min.css?<?= strtotime( '2015-02-05' ) ?>" rel="stylesheet">
+<!--    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,300italic,400italic,600italic,700italic' rel='stylesheet' type='text/css'>-->
+    <link href="<?php echo getStaticUrl();?>/stylesheets/wp.min.css?<?= strtotime( '2017-10-05' ) ?>" rel="stylesheet">
     
     <?php /*<link href="<?php echo getStaticUrl();?>/css/bootstrap.css" rel="stylesheet">
     <link href="<?php echo getStaticUrl();?>/css/fontello.css" rel="stylesheet">

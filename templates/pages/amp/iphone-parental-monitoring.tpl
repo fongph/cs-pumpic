@@ -632,7 +632,7 @@
 <amp-analytics type="googleanalytics" id="analytics">
     <script type="application/json">
         {
-            "vars": {"account": "UA-56492507-1"{/literal}{literal}},
+            "vars": {"account": "UA-56492507-1"},
             "triggers": {
                 "trackPageview": {
                     "on": "visible",

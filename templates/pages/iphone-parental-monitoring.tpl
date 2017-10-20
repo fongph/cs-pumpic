@@ -1,5 +1,5 @@
 {include file='../includes/main/main-header.tpl'
-    title="Ultimate iPhone Parental Control App for Apple iOS"
+    title="Ultimate iPhone Parental Controls App for Apple iOS"
     description="Pumpic is a tried and true app to monitor iPhone usage and online activity. Set parental control to monitor calls and location and keep your children safe."
     amp = "`$schema`pumpic.com/amp/iphone-parental-monitoring.html"
 }
@@ -43,8 +43,8 @@
             imgVerticalAlign = "bottom"
             collg = "7"
             textAlign = "right"
-            title = "Parental Control Software<br/>for iPhone, iPad<br/>and iPod Touch"
-            description = "Keep track of your kids’ iOS devices remotely."
+            title = "Parental Control App<br/>for iPhone, iPad<br/>and iPod Touch"
+            description = "The best way for keeping track of your kids’ online activities,texting, calls, and location on iOS devices."
             promoBuyBlock = "no"
             listText = "control mobile phone usage|monitor Internet activity|follow location and route history"
             planPackageIphoneParental = "yes"
@@ -69,11 +69,15 @@
 
 {Content
     styleTitle="h2"
-    title="Did You Know?"
+    title="The Rise of iPhones Parental Monitoring"
     blockBg='dark'}
 
         <p class="text-center f-light">
-            Since iPhones hit the market in 2007, there have been over 500 million devices sold, and sales have continued to grow rapidly, as well as the number of Apple smartphones stolen. That’s why upgrading your kid’s device with an app to monitor iPhone is an essential security measure. With its help, you will easily locate, lock or wipe an iOS mobile phone remotely, if lost or stolen.
+            Since iPhones hit the market in 2007, there have been over 500 million devices sold, and sales have continued to grow rapidly. The first iPhone tracking software came as an attempted solution to the problem of the rising number of Apple smartphones thefts. Over time, iPhones won hearts of the younger generation and widely spread among teenagers across the US. This led to parents starting to ask themselves "Is there a way I can keep an eye on my child's smartphone usage?" Concurrently, the wave of tragic cyberbullying-related accidents with kids swept through the media. The demand for parenting apps that would allow keeping tabs on children's mobile devices activity sparked off the rise of a wide range of such utilities, both free and paid.
+        </p>
+
+        <p class="text-center f-light">
+            Upgrading your kid’s device with an app to track iPhone became an essential security measure. With the help of the best monitoring applications, parents can easily follow communications (including calls, text and online messages), locate, lock or wipe an iOS mobile phone remotely. As the number of children and teens owning a smartphone steadily strains after 100%, the question how to control their activity on mobile only gets to the top of agenda for parents and child safety organizations.
         </p>
 
         <!-- BLOCK STATISTICK -->
@@ -81,25 +85,25 @@
 
             <div class="item col-s-sm-12 col-xs-sm-12 col-sm-4 col-md-4 col-lg-4">
                 <section>
-                    <div><strong class="fz50 color-orange">44%</strong></div>
+                    <div><strong class="fz50 color-orange">Almost 90%</strong></div>
                     <span class="text-uppercase">
-                        lost iPhones were simply left in public places
+                        US children aged 12 to 17 own or have access to a smartphone (eMarketer survey "US Teens: How Smartphones Fit into (and Disrupt) Their Daily Lives," 2016)
                     </span>
                 </section>
             </div>
             <div class="item col-s-sm-12 col-xs-sm-12 col-sm-4 col-md-4 col-lg-4">
                 <section>
-                    <div><strong class="fz50 color-orange">14%</strong></div>
+                    <div><strong class="fz50 color-orange">Over 75%</strong></div>
                     <span class="text-uppercase">
-                        stolen Apple devices were taken from a house or car
+                        American teenagers already have an iPhone, and 81% plan their next device to be iPhone (according to Piper Jaffray’s 2017 Taking Stock with Teens study)
                     </span>
                 </section>
             </div>
             <div class="item col-s-sm-12 col-xs-sm-12 col-sm-4 col-md-4 col-lg-4">
                 <section>
-                    <div><strong class="fz50 color-orange">11%</strong></div>
+                    <div><strong class="fz50 color-orange">Only 39%</strong></div>
                     <span class="text-uppercase">
-                        all stolen iOS smartphones were pickpocketed
+                        Parents in the US use parental controls for their kids' activity on mobile (Pew Research Center, "Parents, Teens and Digital Monitoring" report, 2016)
                     </span>
                 </section>
             </div>
@@ -108,7 +112,7 @@
         <!-- END -->
 
         <p class="text-center f-light">
-            Nowadays, iPhones are probably the most popular cell phones worldwide. It is hard to find a person who would not like to have an ultramodern device by Apple. When it comes to kids and teenagers, iOS smartphones appear to be the top of the mind. To protect your child as well as an expensive gift, <a class="a-default" target="_blank" href="/how-to-setup-parental-controls-on-iphone.html">use iPhone monitoring software</a>:
+            As you can see from the statistics above, nowadays iPhones are the most popular cell phones worldwide. It is hard to find a person who would not like to have an ultramodern device by Apple. When it comes to kids and teenagers, iOS smartphones appear to be the top of the mind. To protect your child as well as an expensive gift, <a class="a-default" target="_blank" href="/how-to-setup-parental-controls-on-iphone.html">use iPhone monitoring software</a>:
         </p>
 
         <!-- BLOCK LIST -->
@@ -541,8 +545,8 @@
 </div>
 <!-- END BLOCK PRICE AND FEATURES -->
 {include file='../includes/content/features-table-new.tpl'
-        title = "Parental Control Features by Pumpic"
-        description = "Your children live their full lives, and mobile devices help them explore the world around. Photo and video shooting, remote communication, emailing, gaming, and social connections are some of the options these gadgets provide. Pumpic covers all spheres of your kids’ activity and enables you to take care of them remotely. The features listed below show the variety of iPhone parental control abilities, which will let you secure your children’s well-being."
+        title = "iPhone Parental Control Features by Pumpic"
+        description = "Your children live their full lives, and mobile devices with built-in Internet browser help them explore the world around for all it's worth. Photo and video shooting, remote communication, texting, emailing, gaming, and social connections are some of the options these gadgets provide. Pumpic covers all spheres of your kids’ activity and enables you to take care of them remotely or instantly lock the device if it's lost or stolen. The features listed below show the variety of monitoring and supervising abilities, which will let you track what your kid is up to and secure your children’s well-being. No app will set parent's mind free from worries about their child, but Pumpic will empower you to better protect your little loved ones."
         blockBg="dark"
         icloud = "yes"
 
@@ -606,11 +610,10 @@
 
 {Content
     styleTitle="h2"
-    title="Keep Your Eyes Open"
+    title="Why You Need Parental Control Software for iPhone?"
     blockBg='light'}
-    <p>As a parent, you always take care of your kids and do your best to protect them from any possible danger. However, when they grow up and get stronger day by day, you become less and less engaged in their lives. Meanwhile, your children become more and more independent.</p>
-    <p>Nevertheless, no matter how old and independent your kids are, they will always remain the same in your eyes. You will always try to be there when help is needed; provide support and assistance whatever it will take.</p>
-    <p>To be at hand each and every moment, you give your kid a cell phone. From now on, this small device will define your communication and interaction. Also, it will open larger horizons for your little child; it will show him/her the world as it is or should be, and help explore it through online reality.</p>
+    <p>Parents always take care of your kids and do their best to protect them from any possible danger. However, when they grow up and get stronger day by day, you become less and less engaged in their lives. Meanwhile, your children become more and more independent. You don't want to spy on them; but, for example, tracking their location is a necessary security measure these days. After all, no matter how old, independent, and free your kids are, they will always remain the same in your eyes. You will still try to be there when help is needed; provide support and assistance whatever it will take. That's called parenting.</p>
+    <p>To be at hand each and every moment, you give your kid a cell or a smartphone (iOS or Android). From now on, this small device with calling, texting, and Internet surfing capabilities will define your communication and interaction. Also, it will open larger horizons for your little child; it will show him/her the world as it is or should be, and help explore it through online reality.</p>
 
     <ul class="list-content">
         <li class="img-plus"><img src="{$img}/list/plus.png" width="30" height="29" alt="Mobile Phone Benefits">If you still hesitate whether to give your child a mobile phone or not, note that this step can bring many benefits:

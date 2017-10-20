@@ -1,7 +1,7 @@
 <!doctype html>
 <html amp>
 <head>
-    <title>Ultimate iPhone Parental Control App for Apple iOS</title>
+    <title>Ultimate iPhone Parental Controls App for Apple iOS</title>
     <meta charset="utf-8">
     <link rel="canonical" href="{$schema}pumpic.com/iphone-parental-monitoring.html">
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
@@ -97,10 +97,11 @@
 
                                     <div>
                                         <div class="visual-text block-text-left">
-                                            <h1 class="h1 title"> Parental Control Software for iPhone, iPad and iPod Touch</h1>
+                                            <h1 class="h1 title"> Parental Control App for iPhone, iPad and iPod Touch</h1>
 
                                             <p class="header-info-descriptions" >
-                                                Keep track of your kids’ iOS devices remotely.
+                                                The best way for keeping track of your kids’ online activities,
+                                                texting, calls, and location on iOS devices.
                                             </p>
 
                                             <ul class="compatibility compatibility-lg">
@@ -144,22 +145,24 @@
                 <div class="row">
                     <div id="grid-images" class="row">
                         <div class="col-lg-12 col-md-12 col-sm-12">
-                            <h2 class="h2 text-center">Did You Know?</h2>
+                            <h2 class="h2 text-center">The Rise of iPhones Parental Monitoring</h2>
                             <div class="pt30">
-                                <p> Since iPhones hit the market in 2007, there have been over 500 million devices sold, and sales have continued to grow rapidly, as well as the number of Apple smartphones stolen. That’s why upgrading your kid’s device with an app to monitor iPhone is an essential security measure. With its help, you will easily locate, lock or wipe an iOS mobile phone remotely, if lost or stolen.</p>
+                                <p> Since iPhones hit the market in 2007, there have been over 500 million devices sold, and sales have continued to grow rapidly. The first iPhone tracking software came as an attempted solution to the problem of the rising number of Apple smartphones thefts. Over time, iPhones won hearts of the younger generation and widely spread among teenagers across the US. This led to parents starting to ask themselves "Is there a way I can keep an eye on my child's smartphone usage?" Concurrently, the wave of tragic cyberbullying-related accidents with kids swept through the media. The demand for parenting apps that would allow keeping tabs on children's mobile devices activity sparked off the rise of a wide range of such utilities, both free and paid.</p>
+                                <p>Upgrading your kid’s device with an app to track iPhone became an essential security measure. With the help of the best monitoring applications, parents can easily follow communications (including calls, text and online messages), locate, lock or wipe an iOS mobile phone remotely. As the number of children and teens owning a smartphone steadily strains after 100%, the question how to control their activity on mobile only gets to the top of agenda for parents and child safety organizations.
+                                </p>
                                 <table class="table">
                                     <tr>
-                                        <th class="color-orange">44%</th>
-                                        <th class="color-orange">14%</th>
-                                        <th class="color-orange">11%</th>
+                                        <th class="color-orange">Almost 90%</th>
+                                        <th class="color-orange">Over 75%</th>
+                                        <th class="color-orange">Only 39%</th>
                                     </tr>
                                     <tr>
-                                        <td>lost iPhones were simply left in public places</td>
-                                        <td>stolen Apple devices were taken from a house or car</td>
-                                        <td>all stolen iOS smartphones were pickpocketed</td>
+                                        <td>US children aged 12 to 17 own or have access to a smartphone (eMarketer survey "US Teens: How Smartphones Fit into (and Disrupt) Their Daily Lives," 2016)</td>
+                                        <td>American teenagers already have an iPhone, and 81% plan their next device to be iPhone (according to Piper Jaffray’s 2017 Taking Stock with Teens study)</td>
+                                        <td>Parents in the US use parental controls for their kids' activity on mobile (Pew Research Center, "Parents, Teens and Digital Monitoring" report, 2016)</td>
                                     </tr>
                                 </table>
-                                <p>Nowadays, iPhones are probably the most popular cell phones worldwide. It is hard to find a person who would not like to have an ultramodern device by Apple. When it comes to kids and teenagers, iOS smartphones appear to be the top of the mind. To protect your child as well as an expensive gift, <a class="a-default" target="_blank" href="/how-to-setup-parental-controls-on-iphone.html">use iPhone monitoring software</a>:</p>
+                                <p>As you can see from the statistics above, nowadays iPhones are the most popular cell phones worldwide. It is hard to find a person who would not like to have an ultramodern device by Apple. When it comes to kids and teenagers, iOS smartphones appear to be the top of the mind. To protect your child as well as an expensive gift, <a class="a-default" target="_blank" href="/how-to-setup-parental-controls-on-iphone.html">use iPhone monitoring software</a>:</p>
                                 <div class="pt15">
                                     <ul class="feature_list">
                                         <li><i class="item-list-css-orange"></i> control mobile phone usage</li>
@@ -539,21 +542,20 @@
 
     {include file='../../includes/amp/features-table.tpl'
     theme='dark'
-    header='Parental Control Features by Pumpic'
-    description='Your children live their full lives, and mobile devices help them explore the world around. Photo and video shooting, remote communication, emailing, gaming, and social connections are some of the options these gadgets provide. Pumpic covers all spheres of your kids’ activity and enables you to take care of them remotely. The features listed below show the variety of iPhone parental control abilities, which will let you secure your children’s well-being.'
+    header='iPhone Parental Control Features by Pumpic'
+    description='Your children live their full lives, and mobile devices with built-in Internet browser help them explore the world around for all it\'s worth. Photo and video shooting, remote communication, texting, emailing, gaming, and social connections are some of the options these gadgets provide. Pumpic covers all spheres of your kids’ activity and enables you to take care of them remotely or instantly lock the device if it\'s lost or stolen. The features listed below show the variety of monitoring and supervising abilities, which will let you track what your kid is up to and secure your children\’s well-being. No app will set parent\'s mind free from worries about their child, but Pumpic will empower you to better protect your little loved ones.'
     }
 
     <div id="block-content" class="light">
         <div class="amp"><div class="row">
                 <div id="grid-images" class="row">
                     <div class="col-lg-12 col-md-12 col-sm-12">
-                        <h2 class="h3 text-center">Keep Your Eyes Open</h2>
+                        <h2 class="h3 text-center">Why You Need Parental Control Software for iPhone?</h2>
                         <div>
 
-                            <p>As a parent, you always take care of your kids and do your best to protect them from any possible danger. However, when they grow up and get stronger day by day, you become less and less engaged in their lives. Meanwhile, your children become more and more independent.</p>
+                            <p>Parents always take care of your kids and do their best to protect them from any possible danger. However, when they grow up and get stronger day by day, you become less and less engaged in their lives. Meanwhile, your children become more and more independent. You don't want to spy on them; but, for example, tracking their location is a necessary security measure these days. After all, no matter how old, independent, and free your kids are, they will always remain the same in your eyes. You will still try to be there when help is needed; provide support and assistance whatever it will take. That's called parenting.</p>
 
-                            <p>Nevertheless, no matter how old and independent your kids are, they will always remain the same in your eyes. You will always try to be there when help is needed; provide support and assistance whatever it will take.</p>
-                            <p>To be at hand each and every moment, you give your kid a cell phone. From now on, this small device will define your communication and interaction. Also, it will open larger horizons for your little child; it will show him/her the world as it is or should be, and help explore it through online reality.</p>
+                            <p>To be at hand each and every moment, you give your kid a cell or a smartphone (iOS or Android). From now on, this small device with calling, texting, and Internet surfing capabilities will define your communication and interaction. Also, it will open larger horizons for your little child; it will show him/her the world as it is or should be, and help explore it through online reality.</p>
                             <ul class="list-content">
                                 <li class="img-plus">
                                     <amp-img src="/images/list/plus.png" alt="Mobile Phone Benefits"

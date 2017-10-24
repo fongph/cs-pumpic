@@ -27,7 +27,7 @@ $logger->pushHandler(new Monolog\Handler\StreamHandler(__DIR__ . '/../logs/store
 
 $logger->info('event');
 
-CS\Users\UsersManager::registerListeners($di->get('db'));
+CS\Users\UsersManager::registerListeners($di->get('db'), CS\Settings\GlobalSettings::getQueueConfig());
 
 if (($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest') {
 

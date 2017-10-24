@@ -107,7 +107,7 @@
             "source": {
                 "type": "git",
                 "url": "git@gitlab.dizboard.com:pumpic/cs-users.git",
-                "reference": "60b6f4e51abd0c224ee11219465a0bc511ce6579"
+                "reference": "bee130380050dea61e63bea90bb04e4d3ade8d89"
             },
             "require": {
                 "boomers/cs-mail": "dev-master",
@@ -132,7 +132,7 @@
             "license": [
                 "MIT"
             ],
-            "time": "2017-10-23 15:09:11"
+            "time": "2017-10-24 11:58:43"
         },
         {
             "name": "boomers/deployer-recipes",

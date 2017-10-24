@@ -65,7 +65,7 @@ $di->setShared('mailSender', function() use ($di) {
         $mailSender->setUserId($authData['id']);
     }
     
-    \CS\Users\UsersManager::registerListeners($di['db'], CS\Settings\GlobalSettings::getQueueConfig());
+    \CS\Users\UsersManager::registerListeners($di['db']);
 
     return $mailSender->setLocale('en-US')
         ->setSiteId(SITE_ID);

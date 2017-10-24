@@ -21,7 +21,7 @@ $whoops->pushHandler(new \Whoops\Handler\CallbackHandler(function($exception, $i
 
 $whoops->register();
 
-CS\Users\UsersManager::registerListeners($di->get('db'), CS\Settings\GlobalSettings::getQueueConfig());
+CS\Users\UsersManager::registerListeners($di->get('db'));
 
 $inputData = file_get_contents('php://input');
 $data = json_decode($inputData, true);

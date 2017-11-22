@@ -19,6 +19,9 @@ description="Pumpic offers high-quality cell phone tracking software for a good 
             display: none;
         }
     }
+    .box-currence, ._period {
+        color:#cf4757;
+    }
 
 </style>
 <!-- BLOCK GTM -->
@@ -439,7 +442,7 @@ description="Pumpic offers high-quality cell phone tracking software for a good 
                                                                                             <div class="symbol"
                                                                                                  attr-iso="usd">$
                                                                                             </div>
-                                                                                            <div class="curr">{$item.price}</div>
+                                                                                            <div class="curr">{$item.price * 0.15|string_format:"%.2f"}</div>
                                                                                         </div>
                                                                                     </strong>
                                                                                 </div>

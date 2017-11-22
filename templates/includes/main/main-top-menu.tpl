@@ -126,6 +126,7 @@
         .banner-container{
             position: fixed;
             width: 100%;
+            z-index: 999;
             display: none;
         }
         .banner-container:hover{

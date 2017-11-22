@@ -672,3 +672,13 @@
         return g
     }()
 }).call(this);
+
+var headerHeight = $('.header').height();
+window.onscroll = function() {
+    if ($('#banner').offset().top > headerHeight){
+        $('#banner').css('top', '0')
+    }
+    else{
+        $('#banner').css('top', headerHeight + 'px')
+    }   
+}

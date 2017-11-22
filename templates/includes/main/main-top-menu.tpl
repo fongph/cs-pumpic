@@ -126,7 +126,9 @@
         .banner-container{
             position: fixed;
             width: 100%;
+            z-index: 999;
             display: none;
+            transition: all .3s ease;
         }
         .banner-container:hover{
             text-decoration: none;
@@ -165,14 +167,33 @@
         .banner-text{
             margin-right: 12px;
         }
+        .phantom{
+            width: 100%;
+            height: 80px;
+            opacity: 0;
+        }
         @media(min-width:1024px){
             .banner-container{
                 display: block;
             }
         }
+        @media(max-width:1024px){
+            .phantom{
+                height: 0;
+            }
+        }
     </style>
-    <a href='/store.html' class="banner-container"
+    {if $url !== '/store.html'}<a href='/store.html' class="banner-container" id="banner"
        ga-action="click" ga-category="Timer" ga-label="sale">
+        {else}
+        <a href='javascript:void(0)' class="banner-container" id="banner"
+        ga-action="click" ga-category="Timer" ga-label="sale">
+            <style>
+                a.banner-container:hover{
+                    cursor: default;
+                }
+            </style>
+            {/if}
         <div class="banner">
             <img src="{$img}/img1.png" alt="" class="left-img">
             <div class="banner-text">
@@ -189,7 +210,6 @@
                     _t.src = "/javascripts/timer.js";
                     var _f = function(_k) {
                         var l = new MegaTimer(_id, {
-
                             "view": [1, 1, 1, 1],
                             "type": {
                                 "currentType": "1",
@@ -241,8 +261,10 @@
                     var _h = document.head || document.getElementsByTagName("head")[0];
                     _h.appendChild(_t);
                 }).call(this);
+
             </script>
         </div>
-    </a>
+        </a>
+
 
 </div>

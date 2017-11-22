@@ -75,6 +75,8 @@ if(is_array($products)) {
 
 // init output params!
 $smarty->assign('getProducts', $products);
+$smarty->assign('url', $_SERVER['REQUEST_URI']);
+//var_dump( $_SERVER['REQUEST_URI']);
 
 $smarty->display($b_dir . '/templates/pages/store.tpl');
 

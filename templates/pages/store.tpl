@@ -48,8 +48,6 @@ description="Pumpic offers high-quality cell phone tracking software for a good 
     }
 
 
-
-
     {*{foreach from=$getProducts.premium-double key=key item=_item}*}
     {**}
     {*{/foreach}*}
@@ -58,8 +56,9 @@ description="Pumpic offers high-quality cell phone tracking software for a good 
     {*{$getProducts.basicDouble|@debug_print_var}*}
 
     <div class="no_bg">
+
         <div class="container">
-           
+
             <div class="row">
                 <div class="col-lg-10 col-lg-offset-1">
 

@@ -76,5 +76,3 @@ echo 'mtime = '.$time;
 //initPages();
 //dispatch(getURI(),$config);
 
-
-?>

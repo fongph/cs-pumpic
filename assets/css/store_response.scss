@@ -146,10 +146,14 @@
   .icloud-features {
     padding: 0 10px 10px!important;
   }
+
   .prod-wrap {
     max-width: 350px;
     margin: 0 auto;
     padding: 0 10px;
+    .price_prod {
+      height: auto;
+    }
     .prod-short-inf {
       width: 100%;
       float: none;

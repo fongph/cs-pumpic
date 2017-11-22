@@ -43,12 +43,18 @@ if($_request['productID']) {
 // default
 if(is_array($products)) {
     if (isset($products['iosiCloud'])) {
+
         foreach ($products['iosiCloud'] as $item) {
+
             if ($item['period'] == 6 && $item['id']) {
+
                 $smarty->assign('defaultIosiCloud', $item['id']);
                 $smarty->assign('defaultIosiCloudPath', $item['path']);
-                $smarty->assign('defaultIosiCloudPrice', round($item['price'] / $item['period'], 2));
+                $smarty->assign('defaultIosiCloudPrice', round( round($item['price'] - $item['price']*0.15, 2) / $item['period'], 2));
+
             }
+            $products['iosiCloud'][$item['period']]['discount'] = round($item['price'] - $item['price']*0.15, 2);
+
 
         }
     }
@@ -57,20 +63,26 @@ if(is_array($products)) {
     if(isset($products['androidBasic'])) {
         foreach($products['androidBasic'] as $item) :
             if ($item['period'] == 6 && $item['id']) {
+
                 $smarty->assign('defaultAndriodBasic', $item['id']);
                 $smarty->assign('defaultAndriodBasicPath', $item['path']);
-                $smarty->assign('defaultAndriodBasicPrice', round($item['price'] / $item['period'], 2));
+                $smarty->assign('defaultAndriodBasicPrice', round( round($item['price'] - $item['price']*0.15, 2) / $item['period'], 2));
             }
+            $products['androidBasic'][$item['period']]['discount'] = round($item['price'] - $item['price']*0.15, 2);
+
 
         endforeach;
     }
     if(isset($products['androidPremium'])) {
         foreach($products['androidPremium'] as $item) :
             if ($item['period'] == 6 && $item['id']) {
+
                 $smarty->assign('defaultAndroidPremium', $item['id']);
                 $smarty->assign('defaultAndroidPremiumPath', $item['path']);
-                $smarty->assign('defaultAndroidPremiumPrice', round($item['price'] / $item['period'], 2));
+                $smarty->assign('defaultAndroidPremiumPrice', round( round($item['price'] - $item['price']*0.15, 2)/ $item['period'], 2));
             }
+            $products['androidPremium'][$item['period']]['discount'] = round($item['price'] - $item['price']*0.15, 2);
+
 
         endforeach;
     }

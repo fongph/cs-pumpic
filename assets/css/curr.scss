@@ -1,5 +1,5 @@
 .box-currence {
-  display: inline;
+  display: inline-flex;
 }
 
 .strike__currence .curr {
@@ -62,3 +62,66 @@
 .flag-eur {
   background-position: -70px 0px;
 }
+
+// Ios prices
+
+.subscription_wrap {
+  border: none;
+  background: #f0f0f0;
+  &__text {
+    padding: 10px 0;
+    p {
+      margin-bottom: 0;
+      font-weight: bold;
+      b {
+        color: #cf4657;
+      }
+    }
+  }
+}
+
+.color_red {
+  color: #cf4657;
+}
+
+.price_pack {
+  width: auto;
+}
+
+.price_prod {
+  height: auto;
+}
+
+.price_label {
+  width: auto;
+}
+
+.price_list {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  li {
+    width: 33%;
+    display: flex;
+    justify-content: flex-start;
+  }
+  &__old {
+    display: inline-block;
+    position: relative;
+    left: 20px;
+    color: gray;
+    font-weight: 100;
+    &:before {
+      position: absolute;
+      content: '';
+      width: 100%;
+      height: 1px;
+      background-color: gray;
+      top: 18px;
+      left: 0;
+      transform: rotate(170deg);
+    }
+  }
+}
+
+

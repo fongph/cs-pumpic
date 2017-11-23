@@ -113,8 +113,9 @@
     <style>
         .banner{
             display: flex;
+            align-items: center;
             background-color: black;
-            background-image: url({$img}/img2.png);
+            /* background-image: url(../img/img2.png); */
             background-size: contain;
             background-repeat: no-repeat;
             background-position: right;
@@ -122,13 +123,13 @@
             width: 980px;
             height: 80px;
             margin: 0 auto;
+            z-index:999;
         }
         .banner-container{
             position: fixed;
             width: 100%;
-            z-index: 999;
             display: none;
-            transition: all .3s ease;
+            z-index: 1;
         }
         .banner-container:hover{
             text-decoration: none;
@@ -153,20 +154,39 @@
             align-items: center;
         }
         .left-img{
-            margin-right: 25px;
+            margin-right: 0;
         }
         .banner-title{
             font-size: 50px;
             line-height: 50px;
+            font-weight: 900;
             margin: 0;
         }
         .banner-subtitle{
             font-size: 23px;
+            font-weight: 900;
             margin: 0;
         }
         .banner-text{
-            margin-right: 12px;
+            margin: 0 15px;
         }
+        .banner-btn{
+            width: 140px;
+            height: 40px;
+            border-radius: 5px;
+            background-color: #cf4857;
+            line-height: 40px;
+            vertical-align: middle;
+            text-align: center;
+            margin-left: 15px;
+            font-weight: 700;
+            font-size: 23px;
+            transition: all .3s ease;
+        }
+        .banner-btn:hover{
+            background-color:#bd3f4d;
+        }
+
         .phantom{
             width: 100%;
             height: 80px;
@@ -183,6 +203,7 @@
             }
         }
     </style>
+
     {if $url !== '/store.html'}<a href='/store.html' class="banner-container" id="banner"
        ga-action="click" ga-category="Timer" ga-label="sale">
         {else}
@@ -199,7 +220,7 @@
             <div class="banner-text">
 
                 <div class="banner-title">SALE</div>
-                <div class="banner-subtitle">STARTS IN:</div>
+                <div class="banner-subtitle">ENDS IN:</div>
             </div>
             <script>
                 (function() {
@@ -216,7 +237,7 @@
                                 "params": {
                                     "usertime": true,
                                     "tz": "-5",
-                                    "utc": 1511395200000
+                                    "utc": 1511827200000
                                 }
                             },
                             "design": {
@@ -261,8 +282,9 @@
                     var _h = document.head || document.getElementsByTagName("head")[0];
                     _h.appendChild(_t);
                 }).call(this);
-
             </script>
+            <span class="banner-btn"> SAVE NOW </span>
+        </div>
         </div>
         </a>
 

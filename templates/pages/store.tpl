@@ -491,8 +491,8 @@ description="Pumpic offers high-quality cell phone tracking software for a good 
                                         <div class="prod-list-android clearfix" data-info-block="android"
                                              style="display: none;">
                                             {* ANDROID AJAX LOADING*}
-                                            {*<div id="loader"><img src="/images/loader.svg"></div>*}
-                                            {include file='../includes/store/store-mobile.tpl'}
+                                            <div id="loader"><img src="/images/loader.svg"></div>
+                                            {*{include file='../includes/store/store-mobile.tpl'}*}
                                             {*for debug*}
 
 

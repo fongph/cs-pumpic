@@ -2,7 +2,7 @@
     <div id="fly_features">
         <div class="fly_features_black_friday">
             <span class="fly_close close"></span>
-            <a href="/store.html" class="mobile-banner fixed-bottom">
+            <a href="/store.html" class="mobile-banner fixed-bottom"  ga-action="click" ga-category="Timer" ga-label="sale">
                 <div class="banner-mobile_text">
                     Hurry & Nab
                     <div class="strong">

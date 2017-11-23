@@ -116,3 +116,8 @@
         <?php if(di()->get('freeTrialLinks')->isAvailable()): ?>
         <?php include(dirname(__FILE__).'/content/fly/fly-free-trial.tpl'); ?>
         <?php endif; ?>
+        <script>
+            $(document).ready(function () {
+                $('.container').eq( 1 ).prepend('<div class="phantom"></div>');
+            })
+        </script>

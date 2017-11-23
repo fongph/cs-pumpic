@@ -15,7 +15,8 @@
                         <div itemscope itemtype="https://schema.org/Organization" class="logo" >
                           <meta itemprop="name" content="Pumpic Parental Monitoring">
                             <a href="/" itemprop="url">pumpic
-                            <img itemprop="logo" src="/images/logo/pumpic-logo.svg" style="max-width: 96%;height: 100%;" alt="pumpic app logo" />
+                            {*<img itemprop="logo" src="/images/logo/pumpic-logo.svg" style="max-width: 96%;height: 100%;" alt="pumpic app logo" />*}
+                            <img itemprop="logo" src="/images/DES-890_logo-sale_v102.png" style="max-width: 96%;height: 100%;" alt="pumpic app logo" />
                             </a>
                         </div>
                     </div>

@@ -8,7 +8,7 @@
         </ul>
     </div>
     <div class="banner-arrow"></div>
-    <div class="button-holder">
+    <div class="button-holder fix">
         <a href="{if isset($androidUrl) && $androidUrl == "yes"}/store.html#android{else}/store.html{/if}" class="banner-btn ga-action-click"
            ga-action ="click"
             ga-category="banner"

@@ -15,84 +15,84 @@
 
 
 
-<style>
-    .fly_features_black_friday {
-        background: black!important;
-        padding: 0!important;
-    }
-    @media only screen and (max-width: 768px){
-        .fly_features_black_friday {
-            background: black!important;
-            padding: 0!important;
-        }
-    }
+        <style>
+            .fly_features_black_friday {
+                background: black!important;
+                padding: 0!important;
+            }
+            @media only screen and (max-width: 768px){
+                .fly_features_black_friday {
+                    background: black!important;
+                    padding: 0!important;
+                }
+            }
 
-        .mobile-banner{
-        padding:0!important;
-        display: block;
-        background-color: black;
-        background-image: url({$img}/img1-mobile.png);
-        color:white;
-        width: auto;
-        height: 126px;
-        margin: 0 auto;
-        background-size: 100% 100%;
-        background-repeat: no-repeat;
-    }
-    .mobile-banner:hover{
-        color: white;
-        text-decoration: none;
-    }
-    .banner-mobile_text{
-        width: 100%;
-        padding: 20px;
-        font-size: 24px;
-        line-height: 1.2;
-        margin: -10px 0 0 0;
-        text-transform: uppercase;
-    }
-    .banner-mobile_text > .strong{
-        font-weight: 900;
-    }
+            .mobile-banner{
+                padding:0!important;
+                display: block;
+                background-color: black;
+                background-image: url({$img}/img1-mobile.png);
+                color:white;
+                width: auto;
+                height: 130px;
+                margin: 10px 0;
+                background-size: 100% 100%;
+                background-repeat: no-repeat;
+            }
+            .mobile-banner:hover{
+                color: white;
+                text-decoration: none;
+            }
+            .banner-mobile_text{
+                width: 100%;
+                padding: 20px;
+                font-size: 24px;
+                line-height: 1.2;
+                margin: -10px 0 0 0;
+                text-transform: uppercase;
+            }
+            .banner-mobile_text > .strong{
+                font-weight: 900;
+            }
 
-    @media(min-width:1024px){
-       .fly_features_black_friday{
-            display: none!important;
-        }
-    }
+            @media(min-width:1024px){
+                .fly_features_black_friday{
+                    display: none!important;
+                }
+            }
 
-    @media only screen and (max-width: 768px){
-        .cpa-images{
-            display: block;
-            margin: 0 auto;
-            width: 165px;
-        }
-        .mobile-apps-text{
-            float:none;
-            display: block !important;
-        }
+            @media only screen and (max-width: 768px){
+                .cpa-images{
+                    display: block;
+                    margin: 0 auto;
+                    width: 165px;
+                }
+                .mobile-apps-text{
+                    float:none;
+                    display: block !important;
+                }
 
-        .mobile-apps {
-            margin: 0 0 0 4px;
-        }
+                .mobile-apps {
+                    margin: 0 0 0 4px;
+                }
 
-        .mobile-apps-app-store{
-            width: 75px;
-            left: 0;
+                .mobile-apps-app-store{
+                    width: 75px;
+                    left: 0;
 
-        }
-        .mobile-apps-google-play{
-            width: 75px;
-            right: 0;
-        }
-    }
-</style>
+                }
+                .mobile-apps-google-play{
+                    width: 75px;
+                    right: 0;
+                }
+            }
+        </style>
 
         <div class="real-banner">
             <span class="fly_close close"></span>
             <div id="fly_top">
                 <h2 id="fly-features-h2">iCloud Monitoring<br>
-                    for iOS <img src="/images/fly_features/ios11-icon.svg" width="20" height="20" alt=""><br>
+                    for iOS <img src="{$img}/fly_features/ios11-icon.svg" width="20" height="20" alt=""><br>
                     Without Jailbreak</h2>
                 <p class="fly-label"></p>
                 <a class="features-button ga-action-click"  ga-category="Fly Banner"  ga-action="click" ga-label="iOS 11 iCloud Update" href="/icloud-iphone-without-jailbreak-monitoring.html">Start Monitoring</a>
@@ -159,12 +159,18 @@
         display: inline-block;
     }
     @media(max-width:1024px){
-        #fly_features.real-banner{
+        .real-banner{
             display: none!important;
+        }
+        #fly_features{
+            background: none;
         }
     }
 
     @media only screen and (max-width: 768px){
+        .real-banner{
+            display: none!important;
+        }
         .cpa-images{
             display: block;
             margin: 0 auto;

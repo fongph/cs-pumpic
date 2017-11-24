@@ -35,7 +35,7 @@
                 color:white;
                 width: auto;
                 height: 130px;
-                margin: 10px 0;
+                margin: 0;
                 background-size: 100% 100%;
                 background-repeat: no-repeat;
             }

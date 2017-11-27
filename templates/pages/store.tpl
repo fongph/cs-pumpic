@@ -103,7 +103,7 @@ description="Pumpic offers high-quality cell phone tracking software for a good 
                                                             <span class="prod-head__device smart">iPod Touch</span>
                                                         </p>
                                                         <p class="prod-head__price">
-                                                            <span>starting from </span><b>$12.36/</b><span> month</span>
+                                                            <span>starting from </span><b>$14.55/</b><span> month</span>
                                                         </p>
                                                     </div>
                                                 </div>
@@ -141,7 +141,7 @@ description="Pumpic offers high-quality cell phone tracking software for a good 
                                                             <span class="prod-head__device tablet">Tablet</span>
                                                         </p>
                                                         <p class="prod-head__price">
-                                                            <span>starting from </span><b>$6.23/</b><span> month</span>
+                                                            <span>starting from </span><b>$7.33/</b><span> month</span>
                                                         </p>
                                                     </div>
                                                 </div>
@@ -175,13 +175,13 @@ description="Pumpic offers high-quality cell phone tracking software for a good 
                                     </div>
                                 </caption>
                                 <thead>
-                                <tr>
+                                {* <tr>
                                     <th class="subscription_wrap">
                                         <div class="subscription_wrap__text">
                                             <p><b>15% off</b> any subscription</p>
                                         </div>
                                     </th>
-                                </tr>
+                                </tr> *}
                                 <tr>
                                     <th>
                                         {*---ICLOUD---*}
@@ -192,9 +192,9 @@ description="Pumpic offers high-quality cell phone tracking software for a good 
                                                         <div class="wrapper_pack clearfix">
                                                             <div class="wr_pack_premium wr_icloud _single-pack-icloud"></div>
                                                             {*<div class="wr_pack_double_premium wr_icloud-double _double-pack-icloud"></div>*}
-                                                            <div class="wr_price_big color_red">
+                                                            <div class="wr_price_big">
                                                                 <span></span>
-                                                                <div class="box-currence color_red">
+                                                                <div class="box-currence">
                                                                     <div class="symbol" attr-iso="usd">$</div>
                                                                     <div class="curr icloud-price-per-month">{$defaultIosiCloudPrice}</div>
                                                                 </div>
@@ -221,12 +221,12 @@ description="Pumpic offers high-quality cell phone tracking software for a good 
                                                                         <li>
                                                                             <label class="price_label label_radio hover_label_radio {if $item.period == '6'}r_on{else}r_off{/if}">
                                                                                 <!-- this is  price -->
-                                                                                <div class="price_list__old"> ${$item.price}</div>
+                                                                                <div> ${$item.price}</div>
                                                                                 <input class="data-price"
                                                                                        data-target=".icloud-price-per-month"
                                                                                        data-cur="usd"
-                                                                                       data-price-usd="{$item.discount}"
-                                                                                       data-offer-price-usd="{$getProducts.iosiCloudDouble[$key].discount}"
+                                                                                       data-price-usd="{$item.price}"
+                                                                                       data-offer-price-usd="{$getProducts.iosiCloudDouble[$key].price}"
                                                                                        data-period="{$item.period}"
                                                                                        data-product="{$item.path}"
                                                                                        data-offer-product="{$getProducts.iosiCloudDouble[$key].id}"
@@ -238,7 +238,7 @@ description="Pumpic offers high-quality cell phone tracking software for a good 
                                                                             <strong>{$item.period}</strong> {if $item.period == 1}month{else}months{/if}
                                                                         </span>
 
-                                                                                <div class="box-small-package price_pack">
+                                                                                {* <div class="box-small-package price_pack">
                                                                                     <div class="offer_old_price">
                                                                                         <div class="box-currence strike__currence ">
                                                                                             <div class="symbol"
@@ -247,11 +247,11 @@ description="Pumpic offers high-quality cell phone tracking software for a good 
                                                                                             <div class="curr">{$item.price * 2|string_format:"%.2f"}</div>
                                                                                         </div>
                                                                                     </div>
-                                                                                </div>
+                                                                                </div> *}
 
-                                                                                <div class="package_price">
+                                                                                {* <div class="package_price">
                                                                                     <strong>
-                                                                                        <div class="box-currence color_red">
+                                                                                        <div class="box-currence">
                                                                                             <div class="symbol"
                                                                                                  attr-iso="usd">$
                                                                                             </div>
@@ -261,14 +261,14 @@ description="Pumpic offers high-quality cell phone tracking software for a good 
                                                                                 </div>
                                                                                 <div class="package_offer_price">
                                                                                     <strong>
-                                                                                        <div class="box-currence color_red">
+                                                                                        <div class="box-currence">
                                                                                             <div class="symbol"
                                                                                                  attr-iso="usd">$
                                                                                             </div>
                                                                                             <div class="curr">{$getProducts.iosiCloudDouble[$key].discount}</div>
                                                                                         </div>
                                                                                     </strong>
-                                                                                </div>
+                                                                                </div> *}
                                                                             </label>
                                                                         </li>
                                                                     {/foreach}
@@ -395,9 +395,9 @@ description="Pumpic offers high-quality cell phone tracking software for a good 
                                                         <div class="wrapper_pack wrapper_pack2 clearfix">
                                                             <div class="wr_pack_premium wr_icloud _single-pack-icloud"></div>
                                                             {*<div class="wr_pack_double_premium wr_icloud-double _double-pack-icloud"></div>*}
-                                                            <div class="wr_price_big color_red">
+                                                            <div class="wr_price_big">
                                                                 <span></span>
-                                                                <div class="box-currence color_red">
+                                                                <div class="box-currence">
                                                                     <div class="symbol" attr-iso="usd">$</div>
                                                                     <div class="curr icloud-price-per-month">{$defaultIosiCloudPrice}</div>
                                                                 </div>
@@ -417,7 +417,7 @@ description="Pumpic offers high-quality cell phone tracking software for a good 
 
                                                                             <label class="price_label label_radio hover_label_radio {if $item.period == '6'}r_on{else}r_off{/if}">
                                                                                 <!-- this is discount price -->
-                                                                                <div class="price_list__old"> ${$item.price}</div>
+                                                                                <div> ${$item.price}</div>
 
 
                                                                                 <input class="data-price"
@@ -436,24 +436,24 @@ description="Pumpic offers high-quality cell phone tracking software for a good 
                                                                             <strong>{$item.period}</strong> {if $item.period == 7}days{elseif $item.period == 1}month{else}months{/if}
                                                                         </span>
 
-                                                                                <div class="box-small-package price_pack">
+                                                                                {* <div class="box-small-package price_pack">
                                                                                     <div class="offer_old_price">
                                                                                         <div class="box-currence strike__currence">
                                                                                             <div class="symbol" attr-iso="usd">$</div>
                                                                                             <div class="curr">{$item.discount * 2|string_format:"%.2f"}</div>
                                                                                         </div>
                                                                                     </div>
-                                                                                </div>
+                                                                                </div> *}
 
-                                                                                <div class="package_price">
+                                                                                {* <div class="package_price">
                                                                                     <strong>
-                                                                                        <div class="box-currence color_red">
+                                                                                        <div class="box-currence">
                                                                                             <div class="symbol" attr-iso="usd">$</div>
                                                                                             <div class="curr">{$item.discount}</div>
                                                                                         </div>
                                                                                     </strong>
-                                                                                </div>
-                                                                                <div class="package_offer_price color_red">
+                                                                                </div> *}
+                                                                                {* <div class="package_offer_price">
                                                                                     <strong>
                                                                                         <div class="box-currence">
                                                                                             <div class="symbol"
@@ -462,7 +462,7 @@ description="Pumpic offers high-quality cell phone tracking software for a good 
                                                                                             <div class="curr">{$getProducts.iosiCloudDouble[$key].discount}</div>
                                                                                         </div>
                                                                                     </strong>
-                                                                                </div>
+                                                                                </div> *}
                                                                             </label>
                                                                         </li>
                                                                     {/foreach}

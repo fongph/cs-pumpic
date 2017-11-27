@@ -94,6 +94,9 @@
 
 .price_label {
   width: auto;
+  div{
+    display: inline-block;
+  }
 }
 
 .price_list {
@@ -104,6 +107,9 @@
     width: 33%;
     display: flex;
     justify-content: flex-start;
+    div{
+      display: inline-block;
+    }
   }
   &__old {
     display: inline-block;
@@ -123,5 +129,3 @@
     }
   }
 }
-
-

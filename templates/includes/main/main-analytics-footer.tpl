@@ -7,9 +7,9 @@
 {/if}
 
 
-<script>
+{* <script>
     $(document).ready(function () {
         $('.container').eq( 1 ).prepend('<div class="phantom"></div>');
     })
-</script>
+</script> *}
 {*<script type="text/javascript" src="https://cdn.ywxi.net/js/1.js" async></script>*}

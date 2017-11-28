@@ -16,7 +16,7 @@
     <div class="mt10">
         <div>
             <section class="vertical-aligh-middle">
-                <a href="/store.html{if storeAndroid=="yes" }#android{/if}" id="banner-buy-now" class="btn btn-default" id="banner-buynow-link">
+                <a href="/store.html{if storeAndroid=="yes" }#android{/if}" class="btn btn-default" id="banner-buynow-link">
                     Buy Now
                 </a>
             </section>

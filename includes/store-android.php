@@ -50,7 +50,7 @@ if(is_array($products)) {
 
                 $smarty->assign('defaultIosiCloud', $item['id']);
                 $smarty->assign('defaultIosiCloudPath', $item['path']);
-                $smarty->assign('defaultIosiCloudPrice',  round($item['price'] / $item['period'], 2);
+                $smarty->assign('defaultIosiCloudPrice',  round($item['price'] / $item['period'], 2));
                 // $smarty->assign('defaultIosiCloudPrice', round( round($item['price'] - $item['price']*0.15, 2) / $item['period'], 2));
 
             }
@@ -68,7 +68,7 @@ if(is_array($products)) {
                 $smarty->assign('defaultAndriodBasic', $item['id']);
                 $smarty->assign('defaultAndriodBasicPath', $item['path']);
                 $smarty->assign('defaultIosiCloudPrice', $item['price'];
-                $smarty->assign('defaultAndriodBasicPrice', round( $item['price']  / $item['period'], 2);
+                $smarty->assign('defaultAndriodBasicPrice', round( $item['price']  / $item['period'], 2));
                 // $smarty->assign('defaultAndriodBasicPrice', round( round($item['price'] - $item['price']*0.15, 2) / $item['period'], 2));
             }
             $products['androidBasic'][$item['period']]['discount'] = round($item['price'] - $item['price']*0.15, 2);
@@ -82,7 +82,7 @@ if(is_array($products)) {
 
                 $smarty->assign('defaultAndroidPremium', $item['id']);
                 $smarty->assign('defaultAndroidPremiumPath', $item['path']);
-                $smarty->assign('defaultAndroidPremiumPrice', round($item['price'] / $item['period'], 2);
+                $smarty->assign('defaultAndroidPremiumPrice', round($item['price'] / $item['period'], 2));
                 // $smarty->assign('defaultAndroidPremiumPrice', round( round($item['price'] - $item['price']*0.15, 2)/ $item['period'], 2));
             }
             $products['androidPremium'][$item['period']]['discount'] = round($item['price'] - $item['price']*0.15, 2);

@@ -18,24 +18,24 @@
                         {foreach from=$getProducts.androidBasic key=key item=item name=products}
                             <li class="android_list">
                                 <label class="price_label label_radio hover_label_radio {if $item.period == '6'}r_on{else}r_off{/if}">
-                                    <div class="price_list__old"> ${$item.price}</div>
-                                    <input class="data-price" data-target=".andr-basic-price-per-month" data-cur="usd" data-price-usd="{$item.discount}" data-offer-price-usd="{$getProducts.androidBasicDouble[$key].discount}" data-period="{$item.period}" data-product="{$item.path}" data-offer-product="{$getProducts.androidBasicDouble[$key].id}" data-group="android-basic"  name="optionsRadios" id="optionsRadios{$item.id}1" value="{$item.id}" type="radio" {if $smarty.foreach.products.last}checked="checked"{/if} />
+                                    <div> ${$item.price}</div>
+                                    <input class="data-price" data-target=".andr-basic-price-per-month" data-cur="usd" data-price-usd="{$item.price}" data-offer-price-usd="{$getProducts.androidBasicDouble[$key].price}" data-period="{$item.period}" data-product="{$item.path}" data-offer-product="{$getProducts.androidBasicDouble[$key].id}" data-group="android-basic"  name="optionsRadios" id="optionsRadios{$item.id}1" value="{$item.id}" type="radio" {if $smarty.foreach.products.last}checked="checked"{/if} />
                                     <span class="sp">
                                                                             <strong>{$item.period}</strong> {if $item.period == 1}month{else}months{/if}
                                                                         </span>
 
                                     <div class="box-small-package price_pack">
-                                        <div class="offer_old_price"><div class="box-currence strike__currence"><div class="symbol" attr-iso="usd">$</div><div class="curr">{$item.price * 2|string_format:"%.2f"}</div></div></div>
+                                        <div><div class="box-currence strike__currence"><div class="symbol" attr-iso="usd">$</div><div class="curr">{$item.price * 2|string_format:"%.2f"}</div></div></div>
                                     </div>
 
-                                    <div class="package_price">
+                                    {* <div class="package_price">
                                         <strong>
                                             <div class="box-currence color_red"><div class="symbol" attr-iso="usd">$</div><div class="curr">{$item.discount}</div></div>
                                         </strong>
-                                    </div>
+                                    </div> *}
                                     <div class="package_offer_price">
                                         <strong>
-                                            <div class="box-currence color_red"><div class="symbol" attr-iso="usd">$</div><div class="curr">{$getProducts.androidBasicDouble[$key].discount}</div></div>
+                                            <div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr">{$getProducts.androidBasicDouble[$key].price}</div></div>
                                         </strong>
                                     </div>
                                 </label>
@@ -73,17 +73,17 @@
                         {foreach from=$getProducts.androidPremium key=key item=item}
                             <li>
                                 <label class="label_radio hover_label_radio {if $item.period == '6'}r_on{else}r_off{/if}">
-                                    <div class="price_list__old"> ${$item.price}</div>
-                                    <input class="data-price" data-target=".andr-premium-price-per-month" data-cur="usd" data-price-usd="{$item.discount}" data-offer-price-usd="{$getProducts.androidPremiumDouble[$key].discount}" data-period="{$item.period}" data-product="{$item.path}" data-offer-product="{$getProducts.androidPremiumDouble[$key].id}" data-group="android-prem"  name="optionsRadios" id="optionsRadios{$item.id}1" value="{$item.id}" type="radio" />
+                                    <div> ${$item.price}</div>
+                                    <input class="data-price" data-target=".andr-premium-price-per-month" data-cur="usd" data-price-usd="{$item.price}" data-offer-price-usd="{$getProducts.androidPremiumDouble[$key].price}" data-period="{$item.period}" data-product="{$item.path}" data-offer-product="{$getProducts.androidPremiumDouble[$key].id}" data-group="android-prem"  name="optionsRadios" id="optionsRadios{$item.id}1" value="{$item.id}" type="radio" />
                                     <span class="sp">
                                                                             <strong>{$item.period}</strong> {if $item.period == 1}month{else}months{/if}
                                                                         </span>
 
                                     <div class="box-small-package price_pack">
-                                        <div class="offer_old_price"><div class="box-currence strike__currence"><div class="symbol" attr-iso="usd">$</div><div class="curr">{$item.price * 2|string_format:"%.2f"}</div></div></div>
+                                        <div class=""><div class="box-currence strike__currence"><div class="symbol" attr-iso="usd">$</div><div class="curr">{$item.price * 2|string_format:"%.2f"}</div></div></div>
                                     </div>
 
-                                    <div class="package_price">
+                                    {* <div class="package_price">
                                         <strong>
                                             <div class="box-currence color_red"><div class="symbol" attr-iso="usd">$</div><div class="curr">{$item.discount}</div></div>
                                         </strong>
@@ -92,7 +92,7 @@
                                         <strong>
                                             <div class="box-currence color_red"><div class="symbol" attr-iso="usd">$</div><div class="curr">{$getProducts.androidPremiumDouble[$key].discount}</div></div>
                                         </strong>
-                                    </div>
+                                    </div> *}
                                 </label>
                             </li>
                         {/foreach}

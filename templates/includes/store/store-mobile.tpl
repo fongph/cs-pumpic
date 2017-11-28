@@ -7,8 +7,8 @@
         <div class="wrapper_pack clearfix">
             <div class="wr_pack_basic android_basic_pack _single-pack-android-basic"></div>
             {*<div class="wr_pack_double_basic android_basic_pack2 _double-pack-android-basic"></div>*}
-            <div class="wr_price_big color_red">
-                <span></span><div class="box-currence color_red"><div class="symbol" attr-iso="usd">$</div><div class="curr andr-basic-price-per-month">{$defaultAndriodBasicPrice}</div></div><span> / month</span>
+            <div class="wr_price_big">
+                <span></span><div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr andr-basic-price-per-month">{$defaultAndriodBasicPrice}</div></div><span> / month</span>
             </div>
         </div>
         <div class="show_basic_features _android-f"><div class="show-f _android-f" style="display: none;">Show Basic features <i class="fa fa-chevron-down"></i></div><div class="hide-f _android-f">Hide Basic features  <i class="fa fa-chevron-up"></i></div></div>
@@ -71,27 +71,27 @@
                     {foreach from=$getProducts.androidBasic key=key item=item name=products}
                         <li class="android_list">
                             <label class="price_label label_radio hover_label_radio {if $item.period == '6'}r_on{else}r_off{/if}">
-                                <div class="price_list__old"> ${$item.price}</div>
+                                <div class="curr"> ${$item.price}</div>
 
                                 <input class="data-price" data-target=".andr-basic-price-per-month" data-cur="usd" data-price-usd="{$item.discount}" data-offer-price-usd="{$getProducts.androidBasicDouble[$key].discount}" data-period="{$item.period}" data-product="{$item.path}" data-offer-product="{$getProducts.androidBasicDouble[$key].id}" data-group="android-basic"  name="optionsRadios" id="optionsRadios{$item.id}1" value="{$item.id}" type="radio" {if $smarty.foreach.products.last}checked="checked"{/if} />
                                 <span class="sp">
                                                                             <strong>{$item.period}</strong> {if $item.period == 1}month{else}months{/if}
                                                                         </span>
 
-                                <div class="box-small-package price_pack">
+                                {* <div class="box-small-package price_pack">
                                     <div class="offer_old_price"><div class="box-currence strike__currence"><div class="symbol" attr-iso="usd">$</div><div class="curr">{$item.discount * 2|string_format:"%.2f"}</div></div></div>
                                 </div>
 
                                 <div class="package_price">
                                     <strong>
-                                        <div class="box-currence color_red"><div class="symbol" attr-iso="usd">$</div><div class="curr">{$item.discount}</div></div>
+                                        <div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr">{$item.discount}</div></div>
                                     </strong>
                                 </div>
                                 <div class="package_offer_price">
                                     <strong>
-                                        <div class="box-currence color_red"><div class="symbol" attr-iso="usd">$</div><div class="curr">{$getProducts.androidBasicDouble[$key].discount}</div></div>
+                                        <div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr">{$getProducts.androidBasicDouble[$key].discount}</div></div>
                                     </strong>
-                                </div>
+                                </div> *}
                             </label>
                         </li>
                     {/foreach}
@@ -114,8 +114,8 @@
         <div class="wrapper_pack clearfix">
             <div class="wr_pack_premium android_prem_pack _single-pack-android-prem"></div>
             <div class="wr_pack_double_premium android_prem_pack2 _double-pack-android-prem"></div>
-            <div class="wr_price_big color_red">
-                <span></span><div class="box-currence color_red"><div class="symbol" attr-iso="usd">$</div><div class="curr andr-premium-price-per-month">{$defaultAndroidPremiumPrice}</div></div><span>/ month</span>
+            <div class="wr_price_big">
+                <span></span><div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr andr-premium-price-per-month">{$defaultAndroidPremiumPrice}</div></div><span>/ month</span>
             </div>
         </div>
         <div class="show_premium_features _android-f"><div class="show-f _android-f" style="display: none;">Show Premium features <i class="fa fa-chevron-down"></i></div><div class="hide-f _android-f"">Hide Premium features  <i class="fa fa-chevron-up"></i></div></div>
@@ -178,27 +178,27 @@
                     {foreach from=$getProducts.androidPremium key=key item=item name=products}
                         <li>
                             <label class="label_radio hover_label_radio {if $item.period == '6'}r_on{else}r_off{/if}">
-                                <div class="price_list__old"> ${$item.price}</div>
+                                <div class="curr"> ${$item.price}</div>
 
                                 <input class="data-price" data-target=".andr-premium-price-per-month" data-cur="usd" data-price-usd="{$item.price}" data-offer-price-usd="{$getProducts.androidPremiumDouble[$key].price}" data-period="{$item.period}" data-product="{$item.path}" data-offer-product="{$getProducts.androidPremiumDouble[$key].id}" data-group="android-prem"  name="optionsRadios" id="optionsRadios{$item.id}1" value="{$item.id}" type="radio" {if $smarty.foreach.products.last}checked="checked"{/if} />
                                 <span class="sp">
                                                                             <strong>{$item.period}</strong> {if $item.period == 1}month{else}months{/if}
                                                                         </span>
 
-                                <div class="box-small-package price_pack">
+                                {* <div class="box-small-package price_pack">
                                     <div class="offer_old_price"><div class="box-currence strike__currence"><div class="symbol" attr-iso="usd">$</div><div class="curr">{$item.price * 2|string_format:"%.2f"}</div></div></div>
                                 </div>
 
                                 <div class="package_price">
                                     <strong>
-                                        <div class="box-currence color_red"><div class="symbol" attr-iso="usd">$</div><div class="curr">{$item.price}</div></div>
+                                        <div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr">{$item.price}</div></div>
                                     </strong>
                                 </div>
                                 <div class="package_offer_price">
                                     <strong>
-                                        <div class="box-currence color_red"><div class="symbol" attr-iso="usd">$</div><div class="curr">{$getProducts.androidPremiumDouble[$key].price}</div></div>
+                                        <div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr">{$getProducts.androidPremiumDouble[$key].price}</div></div>
                                     </strong>
-                                </div>
+                                </div> *}
                             </label>
                         </li>
                     {/foreach}

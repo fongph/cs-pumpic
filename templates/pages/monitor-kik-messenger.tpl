@@ -2,7 +2,6 @@
 
     title="Kik Messenger Monitoring for Android and iOS devices | Pumpic"
     description="Are you looking for a good way to monitor Kik app? We’ll provide with all information on how to view received and transmitted messages, media files and sketches."
-    amp="https://pumpic.com/amp/monitor-kik-messenger.html"
     customeStyle="
         .block-child-location-tracking .ipad-text {
             padding: 10px 0;

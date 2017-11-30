@@ -24,9 +24,21 @@ function dispatch($urlParams, $config){
     if(preg_match('/\/\?cat=(.*)/is', $_SERVER['REQUEST_URI'])) {
         header301( $config['domain_http'] );
     }
-
+    //removing amp pages
     if(preg_match('/\/amp\/parental-control-for-instagram.html/is', $_SERVER['REQUEST_URI'])){
         header301( '/parental-control-for-instagram.html' );
+    }
+    if(preg_match('/\/amp\/mobile-sms-spy.html/is', $_SERVER['REQUEST_URI'])){
+        header301( '/mobile-sms-spy.html' );
+    }
+    if(preg_match('/\/amp\/monitor-kik-messenger.html/is', $_SERVER['REQUEST_URI'])){
+        header301( '/monitor-kik-messenger.html' );
+    }
+    if(preg_match('/\/amp\/best-free-parental-control-apps-for-android.html/is', $_SERVER['REQUEST_URI'])){
+        header301( '/best-free-parental-control-apps-for-android.html' );
+    }
+    if(preg_match('/\/amp\/how-to-monitor-social-networks.html/is', $_SERVER['REQUEST_URI'])){
+        header301( '/how-to-monitor-social-networks.html' );
     }
     
     // 301 redirect

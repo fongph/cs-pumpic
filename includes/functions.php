@@ -25,9 +25,9 @@ function dispatch($urlParams, $config){
         header301( $config['domain_http'] );
     }
 
-    // if(preg_match('/\/amp\/parental-control-for-instagram.html/is', $_SERVER['REQUEST_URI']){
-    //     header301( '/parental-control-for-instagram.html' );
-    // }
+    if(preg_match('/\/amp\/parental-control-for-instagram.html/is', $_SERVER['REQUEST_URI'])){
+        header301( '/parental-control-for-instagram.html' );
+    }
     
     // 301 redirect
     if(preg_match('/\/store-sub-same.html/is', $_SERVER['REQUEST_URI'])

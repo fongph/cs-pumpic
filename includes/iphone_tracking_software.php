@@ -41,11 +41,11 @@ if(is_array($products)) {
 
     if(isset($products['iosJailbreak'])) {
         foreach($products['iosJailbreak'] as $item) :
-            if ($item['period'] == 6 && $item['id']) {
+            if ($item['period'] == 1 && $item['id']) {
                 $smarty->assign('defaultJailbreakProduct', $item['id']);
-                $smarty->assign('defaultJailbreakPrice', round($item['price'] / $item['period'], 2));
+                $smarty->assign('defaultJailbreakPrice', $item['price']);
             }
-            if ($item['period'] > 6) {
+            else {
                 $itemNumber = array_search($item, $products['iosJailbreak']);
                 unset($products['iosJailbreak'][$itemNumber]);
             }
@@ -57,12 +57,12 @@ if(is_array($productsICloud)) {
 
     if(isset($productsICloud['iosiCloud'])) {
         foreach($productsICloud['iosiCloud'] as $item) :
-            if ($item['period'] == 6 && $item['id']) {
+            if ($item['period'] == 1 && $item['id']) {
                 $smarty->assign('defaultIosiCloud', $item['id']);
                 $smarty->assign('defaultIosiCloudPath', $item['path']);
-                $smarty->assign('defaultIosiCloudPrice', round($item['price'] / $item['period'], 2));
+                $smarty->assign('defaultIosiCloudPrice', $item['price']);
             }
-            if ($item['period'] > 6 || $item['period'] == 2) {
+           else {
                 $itemNumber = array_search($item, $productsICloud['iosiCloud']);
                 unset($productsICloud['iosiCloud'][$itemNumber]);
             }
@@ -70,11 +70,11 @@ if(is_array($productsICloud)) {
     }
     if(isset($productsICloud['iosJailbreak'])) {
         foreach($productsICloud['iosJailbreak'] as $item) :
-            if ($item['period'] == 6 && $item['id']) {
+            if ($item['period'] == 1 && $item['id']) {
                 $smarty->assign('defaultJailbreakProduct', $item['id']);
-                $smarty->assign('defaultJailbreakPrice', round($item['price'] / $item['period'], 2));
+                $smarty->assign('defaultJailbreakPrice', $item['price']);
             }
-            if ($item['period'] > 6) {
+           else {
                 $itemNumber = array_search($item, $productsICloud['iosJailbreak']);
                 unset($productsICloud['iosJailbreak'][$itemNumber]);
             }

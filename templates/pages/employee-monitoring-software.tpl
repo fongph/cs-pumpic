@@ -300,7 +300,7 @@ description="Increase productivity, ensure legal safety and streamline workflow 
                                                             <span class="prod-head__device tablet">iPad</span>
                                                             <span class="prod-head__device smart">iPod Touch</span>
                                                         </p>
-                                                        <p class="prod-head__price"><span>starting from </span><b>$14.55/</b><span> month</span></p>
+                                                        <p class="prod-head__price"><span>starting from </span><b>$39.99/</b><span> month</span></p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -363,7 +363,7 @@ description="Increase productivity, ensure legal safety and streamline workflow 
                                                             <div class="wr_pack_premium wr_icloud _single-pack-icloud"></div>
                                                             <div class="wr_pack_double_premium wr_icloud-double _double-pack-icloud"></div>
                                                             <div class="wr_price_big">
-                                                                <span></span><div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr icloud-price-per-month" >14.55</div></div><span>/ month</span>
+                                                                <span></span><div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr icloud-price-per-month" >39.99</div></div><span>/ month</span>
                                                             </div>
                                                         </div>
                                                         <div class="list_price icloud-list_price">
@@ -380,7 +380,7 @@ description="Increase productivity, ensure legal safety and streamline workflow 
                                                                 <ul>
                                                                     {foreach from=$getProducts.iosiCloud key=key item=item}
                                                                         <li>
-                                                                            <label class="label_radio hover_label_radio {if $item.period == '6'}r_on{else}r_off{/if}">
+                                                                            <label class="label_radio hover_label_radio {if $item.period == '1'}r_on{else}r_off{/if}">
                                                                                 <input class="data-price"
                                                                                        data-target=".icloud-price-per-month"
                                                                                        data-cur="usd"
@@ -393,7 +393,7 @@ description="Increase productivity, ensure legal safety and streamline workflow 
                                                                                        name="optionsRadios"
                                                                                        id="optionsRadios{$item.id}1"
                                                                                        value="{$item.id}"
-                                                                                       type="radio"{if $item.period == '6'}
+                                                                                       type="radio"{if $item.period == '1'}
                                                                                     checked="checked"{/if} />
                                                                                 <span class="sp">
                                                                             <strong>{$item.period}</strong> {if $item.period == 1}month{else}months{/if}
@@ -525,8 +525,8 @@ description="Increase productivity, ensure legal safety and streamline workflow 
                                                             <ul>
                                                                 {foreach from=$getProducts.androidPremium key=key item=item}
                                                                     <li>
-                                                                        <label class="label_radio hover_label_radio {if $item.period == '6'}r_on{else}r_off{/if}">
-                                                                            <input class="data-price" data-target=".andr-premium-price-per-month" data-cur="usd" data-price-usd="{$item.price}" data-offer-price-usd="{$getProducts.androidPremiumDouble[$key].price}" data-period="{$item.period}" data-product="{$item.path}" data-offer-product="{$getProducts.androidPremiumDouble[$key].id}" data-group="android-prem"  name="optionsRadios" id="optionsRadios{$item.id}1" value="{$item.id}" type="radio"{if $item.period == '6'} checked="checked"{/if} />
+                                                                        <label class="label_radio hover_label_radio {if $item.period == '1'}r_on{else}r_off{/if}">
+                                                                            <input class="data-price" data-target=".andr-premium-price-per-month" data-cur="usd" data-price-usd="{$item.price}" data-offer-price-usd="{$getProducts.androidPremiumDouble[$key].price}" data-period="{$item.period}" data-product="{$item.path}" data-offer-product="{$getProducts.androidPremiumDouble[$key].id}" data-group="android-prem"  name="optionsRadios" id="optionsRadios{$item.id}1" value="{$item.id}" type="radio"{if $item.period == '1'} checked="checked"{/if} />
                                                                             <span class="sp">
                                                                             <strong>{$item.period}</strong> {if $item.period == 1}month{else}months{/if}
                                                                         </span>

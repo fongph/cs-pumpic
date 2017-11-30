@@ -39,11 +39,11 @@ if($_request['productID']) {
 if(is_array($products)) {
     if(isset($products['iosiCloud'])) {
         foreach($products['iosiCloud'] as $item) :
-            if ($item['period'] == 12 && $item['id']) {
+            if ($item['period'] == 1 && $item['id']) {
                 $smarty->assign('defaultIosiCloudProduct', $item['id']);
-                $smarty->assign('defaultIosiCloudPrice', round($item['price'] / $item['period'], 2));
+                $smarty->assign('defaultIosiCloudPrice', $item['price'] );
             }
-            if ($item['period'] == 12 || $item['period'] == 24) {
+            else{
                 $itemNumber = array_search($item, $products['iosiCloud']);
                 unset($products['iosiCloud'][$itemNumber]);
             }
@@ -52,17 +52,25 @@ if(is_array($products)) {
     // Basic
     if(isset($products['androidBasic'])) {
         foreach($products['androidBasic'] as $item) :
-            if ($item['period'] == 12 && $item['id']) {
+            if ($item['period'] == 1 && $item['id']) {
                 $smarty->assign('defaultAndriodBasicProduct', $item['id']);
-                $smarty->assign('defaultAndriodBasicPrice', round($item['price'] / $item['period'], 2));
+                $smarty->assign('defaultAndriodBasicPrice', $item['price']);
+            }
+            else{
+                $itemNumber = array_search($item, $products['androidBasic']);
+                unset($products['androidBasic'][$itemNumber]);
             }
         endforeach;
     }
     if(isset($products['androidPremium'])) {
         foreach($products['androidPremium'] as $item) :
-            if ($item['period'] == 12 && $item['id']) {
+            if ($item['period'] == 1 && $item['id']) {
                 $smarty->assign('defaultAndroidPremiumProduct', $item['id']);
-                $smarty->assign('defaultAndroidPremiumPrice', round($item['price'] / $item['period'], 2));
+                $smarty->assign('defaultAndroidPremiumPrice', $item['price']);
+            }
+            else{
+                $itemNumber = array_search($item, $products['androidPremium']);
+                unset($products['androidPremium'][$itemNumber]);
             }
         endforeach;
     }

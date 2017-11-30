@@ -11377,7 +11377,7 @@ form > table.pricing-first:after {
   font-size: 16px;
 }
 
-.label_check:before, .label_radio:before {
+/* .label_check:before, .label_radio:before {
   content: ' ';
   display: inline-block;
   height: 16px;
@@ -11388,7 +11388,7 @@ form > table.pricing-first:after {
   left: 0;
   margin-top: -8px;
   background: url(../images/ico-label.png) no-repeat;
-}
+} */
 
 .label_radio:before {
   background-position: 0 0;

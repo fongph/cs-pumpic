@@ -160,8 +160,8 @@ ium_wr .pricep {
                                                                 <ul>
                                                                     {foreach from=$getProducts.iosiCloud key=key item=item}
                                                                         <li>
-                                                                            <label class="label_radio hover_label_radio {if $item.period == '6'}r_on{else}r_off{/if}">
-                                                                                <input class="data-price" data-target=".icloud-price-per-month" data-cur="usd" data-price-usd="{$item.price}" data-offer-price-usd="{$getProducts.iosiCloudDouble[$key].price}" data-period="{$item.period}" data-product="{$item.path}" data-offer-product="{$getProducts.iosiCloudDouble[$key].id}" data-group="icloud" name="optionsRadios" id="optionsRadios{$item.id}1" value="{$item.id}" type="radio"{if $item.period == '6'} checked="checked"{/if} />
+                                                                            <label class="label_radio hover_label_radio {if $item.period == '1'}r_on{else}r_off{/if}">
+                                                                                <input class="data-price" data-target=".icloud-price-per-month" data-cur="usd" data-price-usd="{$item.price}" data-offer-price-usd="{$getProducts.iosiCloudDouble[$key].price}" data-period="{$item.period}" data-product="{$item.path}" data-offer-product="{$getProducts.iosiCloudDouble[$key].id}" data-group="icloud" name="optionsRadios" id="optionsRadios{$item.id}1" value="{$item.id}" type="radio"{if $item.period == '1'} checked="checked"{/if} />
                                                                                 <span class="sp">
                                                                             <strong>{$item.period}</strong> {if $item.period == 1}mês{else}meses{/if}
                                                                         </span>
@@ -295,8 +295,8 @@ ium_wr .pricep {
                                                                 <ul>
                                                                     {foreach from=$getProducts.androidBasic key=key item=item}
                                                                         <li>
-                                                                            <label class="label_radio hover_label_radio {if $item.period == '6'}r_on{else}r_off{/if}">
-                                                                                <input class="data-price" data-target=".andr-basic-price-per-month" data-cur="usd" data-price-usd="{$item.price}" data-offer-price-usd="{$getProducts.androidBasicDouble[$key].price}" data-period="{$item.period}" data-product="{$item.path}" data-offer-product="{$getProducts.androidBasicDouble[$key].id}" data-group="android-basic"  name="optionsRadios" id="optionsRadios{$item.id}1" value="{$item.id}" type="radio"{if $item.period == '6'} checked="checked"{/if} />
+                                                                            <label class="label_radio hover_label_radio {if $item.period == '1'}r_on{else}r_off{/if}">
+                                                                                <input class="data-price" data-target=".andr-basic-price-per-month" data-cur="usd" data-price-usd="{$item.price}" data-offer-price-usd="{$getProducts.androidBasicDouble[$key].price}" data-period="{$item.period}" data-product="{$item.path}" data-offer-product="{$getProducts.androidBasicDouble[$key].id}" data-group="android-basic"  name="optionsRadios" id="optionsRadios{$item.id}1" value="{$item.id}" type="radio"{if $item.period == '1'} checked="checked"{/if} />
                                                                                 <span class="sp">
                                                                             <strong>{$item.period}</strong> {if $item.period == 1}mês{else}meses{/if}
                                                                         </span>
@@ -349,8 +349,8 @@ ium_wr .pricep {
                                                                 <ul>
                                                                     {foreach from=$getProducts.androidPremium key=key item=item}
                                                                         <li>
-                                                                            <label class="label_radio hover_label_radio {if $item.period == '6'}r_on{else}r_off{/if}">
-                                                                                <input class="data-price" data-target=".andr-premium-price-per-month" data-cur="usd" data-price-usd="{$item.price}" data-offer-price-usd="{$getProducts.androidPremiumDouble[$key].price}" data-period="{$item.period}" data-product="{$item.path}" data-offer-product="{$getProducts.androidPremiumDouble[$key].id}" data-group="android-prem"  name="optionsRadios" id="optionsRadios{$item.id}1" value="{$item.id}" type="radio"{if $item.period == '6'} checked="checked"{/if} />
+                                                                            <label class="label_radio hover_label_radio {if $item.period == '1'}r_on{else}r_off{/if}">
+                                                                                <input class="data-price" data-target=".andr-premium-price-per-month" data-cur="usd" data-price-usd="{$item.price}" data-offer-price-usd="{$getProducts.androidPremiumDouble[$key].price}" data-period="{$item.period}" data-product="{$item.path}" data-offer-product="{$getProducts.androidPremiumDouble[$key].id}" data-group="android-prem"  name="optionsRadios" id="optionsRadios{$item.id}1" value="{$item.id}" type="radio"{if $item.period == '1'} checked="checked"{/if} />
                                                                                 <span class="sp">
                                                                             <strong>{$item.period}</strong> {if $item.period == 1}mês{else}meses{/if}
                                                                         </span>

@@ -3019,32 +3019,32 @@ form > table.pricing-first {
   font-size: 16px;
 }
 
-.label_check:before {
-  content: ' ';
-  display: inline-block;
-  height: 16px;
-  width: 16px;
-  font-size: 16px;
-  position: absolute;
-  top: 50%;
-  left: 0;
-  margin-top: -8px;
-  background: url(../images/ico-label.png) no-repeat;
-}
+// .label_check:before {
+//   content: ' ';
+//   display: inline-block;
+//   height: 16px;
+//   width: 16px;
+//   font-size: 16px;
+//   position: absolute;
+//   top: 50%;
+//   left: 0;
+//   margin-top: -8px;
+//   background: url(../images/ico-label.png) no-repeat;
+// }
 
-.label_radio:before {
-  content: ' ';
-  display: inline-block;
-  height: 16px;
-  width: 16px;
-  font-size: 16px;
-  position: absolute;
-  top: 50%;
-  left: 0;
-  margin-top: -8px;
-  background: url(../images/ico-label.png) no-repeat;
-  background-position: 0 0;
-}
+// .label_radio:before {
+//   content: ' ';
+//   display: inline-block;
+//   height: 16px;
+//   width: 16px;
+//   font-size: 16px;
+//   position: absolute;
+//   top: 50%;
+//   left: 0;
+//   margin-top: -8px;
+//   background: url(../images/ico-label.png) no-repeat;
+//   background-position: 0 0;
+// }
 
 .label_check:before {
   background-position: 0 -25px;

@@ -216,7 +216,7 @@ description="Pumpic offers high-quality cell phone tracking software for a good 
                                                                        name="price[productID]"
                                                                        value='{if isset($defaultIosiCloud)}{$defaultIosiCloud}{else}0{/if}'
                                                                        class="product_price"/>
-                                                                <ul class="price_list">
+                                                                <ul class="price_list hidden">
                                                                     {foreach from=$getProducts.iosiCloud key=key item=item}
                                                                         <li>
                                                                             <label class="price_label label_radio hover_label_radio {if $item.period == '1'}r_on{else}r_off{/if}">
@@ -411,7 +411,7 @@ description="Pumpic offers high-quality cell phone tracking software for a good 
                                                                        name='price[productID]'
                                                                        value='{if isset($defaultIosiCloud)}{$defaultIosiCloud}{else}0{/if}'
                                                                        class="product_price"/>
-                                                                <ul>
+                                                                <ul class="hidden">
                                                                     {foreach from=$getProducts.iosiCloud key=key item=item}
                                                                         <li>
 

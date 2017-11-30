@@ -67,7 +67,7 @@
             <form name="price_basic" method="POST" onsubmit="return false;"  class="buy-form-with-offer" autocomplete="off">
 
                 <input id='product_price_basic' type='hidden' name='price[productID]' value="{$defaultAndriodBasic}" class="product_price" />
-                <ul class="price_list">
+                <ul class="price_list hidden">
                     {foreach from=$getProducts.androidBasic key=key item=item name=products}
                         <li class="android_list">
                             <label class="price_label label_radio hover_label_radio {if $item.period == '1'}r_on{else}r_off{/if}">
@@ -174,7 +174,7 @@
             <form name="price_premium" method="POST" onsubmit="return false;"  class="buy-form-with-offer" autocomplete="off">
                 <input id='product_price_premium' type='hidden' name='price[productID]' value='{if isset($getDefaultAndroidPremium)}{$getDefaultAndroidPremium}{else}0{/if}' class="product_price"/>
 
-                <ul>
+                <ul class="hidden">
                     {foreach from=$getProducts.androidPremium key=key item=item name=products}
                         <li>
                             <label class="label_radio hover_label_radio {if $item.period == '1'}r_on{else}r_off{/if}">

@@ -114,7 +114,7 @@
                                                             {*</div>*}
                                                             {*</div>*}
                                                             <input id='product_price_icloud' type='hidden' name='price[productID]' value='{if isset($defaultIosiCloud)}{$defaultIosiCloud}{else}0{/if}' class="product_price"/>
-                                                            <ul>
+                                                            <ul class="hidden">
                                                                 {foreach from=$getProducts.iosiCloud key=key item=item}
                                                                     <li>
                                                                         <label class="label_radio hover_label_radio {if $item.period == '1'}r_on{else}r_off{/if}">
@@ -247,7 +247,7 @@
                                                     <div class="list_price icloud-list_price" id="foot_h4">
                                                         <form name="price_premium_bottom" onsubmit="return false;" class="buy-form-with-offer" autocomplete="off">
                                                             <input id='product_price_premium' type='hidden' name='price[productID]' value='{if isset($defaultIosiCloud)}{$defaultIosiCloud}{else}0{/if}' class="product_price" />
-                                                            <ul>
+                                                            <ul class="hidden">
                                                                 {foreach from=$getProducts.iosiCloud key=key item=item}
                                                                     <li>
                                                                         <label class="label_radio hover_label_radio {if $item.period == '1'}r_on{else}r_off{/if}">

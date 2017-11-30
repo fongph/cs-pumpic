@@ -157,7 +157,7 @@ ium_wr .pricep {
                                                                 {*</div>*}
                                                                 {*</div>*}
                                                                 <input id='product_price_icloud' type='hidden' name='price[productID]' value='{if isset($defaultIosiCloud)}{$defaultIosiCloud}{else}0{/if}' class="product_price"/>
-                                                                <ul>
+                                                                <ul class="hidden">
                                                                     {foreach from=$getProducts.iosiCloud key=key item=item}
                                                                         <li>
                                                                             <label class="label_radio hover_label_radio {if $item.period == '1'}r_on{else}r_off{/if}">
@@ -292,7 +292,7 @@ ium_wr .pricep {
                                                             <form name="price_basic" onsubmit="return false;" class="buy-form-with-offer" autocomplete="off">
 
                                                                 <input id='product_price_basic' type='hidden' name='price[productID]' value="{$defaultAndriodBasic}" class="product_price" />
-                                                                <ul>
+                                                                <ul class="hidden">
                                                                     {foreach from=$getProducts.androidBasic key=key item=item}
                                                                         <li>
                                                                             <label class="label_radio hover_label_radio {if $item.period == '1'}r_on{else}r_off{/if}">
@@ -346,7 +346,7 @@ ium_wr .pricep {
                                                             <form name="price_premium" onsubmit="return false;" class="buy-form-with-offer" autocomplete="off">
                                                                 <input id='product_price_premium' type='hidden' name='price[productID]' value='{if isset($getDefaultAndroidPremium)}{$getDefaultAndroidPremium}{else}0{/if}' class="product_price"/>
 
-                                                                <ul>
+                                                                <ul class="hidden">
                                                                     {foreach from=$getProducts.androidPremium key=key item=item}
                                                                         <li>
                                                                             <label class="label_radio hover_label_radio {if $item.period == '1'}r_on{else}r_off{/if}">

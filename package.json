@@ -20,6 +20,7 @@
     "gulp-uglify": "^1.5.3",
     "gulp-uncss": "^1.0.5",
     "imagemin-pngquant": "^5.0.0",
+    "node-sass": "^4.7.2",
     "process-nextick-args": "^1.0.7"
   },
   "devDependencies": {

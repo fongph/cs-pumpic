@@ -6,7 +6,13 @@
 
 <!-- FLY BLOCK -->
 {if !isset($visibleFlyFeatures) || $visibleFlyFeatures == "yes"}
-    {include file='./fly_features_v2.tpl'}
+    {if $smarty.server.REQUEST_URI|strstr:'reviews'}
+    {* {if (strpos($_SERVER['REQUEST_URI'], 'reviews') !== false)} *}
+        {include file='./fly_features_v3.tpl'}
+    {else}
+        {include file='./fly_features_v2.tpl'}
+    {/if}
+    {* {include file='./fly_features_v2.tpl'} *}
     {* {include file='./fly_features_v2_friday.tpl'} *}
 {/if}
 <!-- END FLY BLOCK -->

@@ -1,6 +1,6 @@
 <div class="fly-features-v2 fly-features-v1">
     <div id="fly_features">
-        <div class="fly_features_black_friday">
+        {* <div class="fly_features_black_friday">
             <span class="fly_close close"></span>
             <a href="/store.html" class="mobile-banner fixed-bottom"  ga-action="click" ga-category="Timer" ga-label="sale">
                 <div class="banner-mobile_text">
@@ -11,11 +11,11 @@
                     Any Purchase!
                 </div>
             </a>
-        </div>
+        </div> *}
 
 
 
-        <style>
+        {* <style>
             .fly_features_black_friday {
                 background: black!important;
                 padding: 0!important;
@@ -86,7 +86,7 @@
                     right: 0;
                 }
             }
-        </style>
+        </style> *}
 
         <div class="real-banner">
             <span class="fly_close close"></span>

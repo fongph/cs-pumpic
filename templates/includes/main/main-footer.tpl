@@ -122,6 +122,7 @@
 {/if}
 
 {include file="$module"}
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,300italic,400italic,600italic,700italic' rel='stylesheet' type='text/css'>
 
 {*{if (!isset($hideFreeTrialBanner) or !$hideFreeTrialBanner) and $di->get('freeTrialLinks')->isAvailable()}*}
     {*{include file="$templatesDir/includes/content/fly/fly-free-trial.tpl"}*}

@@ -36,6 +36,9 @@
 
 
 <style>
+    #fly_bottom{
+        font-size: 14px;
+    }
     .mobile-apps-text{
         float: right;
         font-size: 14px;
@@ -52,6 +55,7 @@
     .mobile-apps{
         float: left;
         position: relative;
+        width: 49%;
     }
 
     .mobile-apps-app-store {
@@ -69,6 +73,7 @@
         padding-top: 5px;
         text-align: center;
         display: inline-block;
+        margin: 0 -5px;
     }
     @media(max-width:1024px){
         .real-banner{

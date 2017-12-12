@@ -40,6 +40,15 @@ function dispatch($urlParams, $config){
     if(preg_match('/\/amp\/how-to-monitor-social-networks.html/is', $_SERVER['REQUEST_URI'])){
         header301( '/how-to-monitor-social-networks.html' );
     }
+    if(preg_match('/\/amp\/android-parental-monitoring/is', $_SERVER['REQUEST_URI'])){
+        header301( '/android-parental-monitoring' );
+    }
+    if(preg_match('/\/amp\/iphone-parental-monitoring.html/is', $_SERVER['REQUEST_URI'])){
+        header301( '/iphone-parental-monitoring.html' );
+    }
+    if(preg_match('/\/amp\/keylogger-for-iphone.html/is', $_SERVER['REQUEST_URI'])){
+        header301( '/keylogger-for-iphone.html' );
+    }
     
     // 301 redirect
     if(preg_match('/\/store-sub-same.html/is', $_SERVER['REQUEST_URI'])

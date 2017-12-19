@@ -558,7 +558,7 @@ description="Pumpic offers high-quality cell phone tracking software for a good 
         </div>
         <!-- block upgrade include-->
 
-        <div class="hr-grey"></div>
+        {* <div class="hr-grey"></div>
 
         <div class="container">
             <div class="apps-store col-xs-12 col-sm-12 col-md-7">
@@ -574,7 +574,7 @@ description="Pumpic offers high-quality cell phone tracking software for a good 
                     <img src="/images/google-play.png" alt="Pumpic Parental Monitoring on Google Play" alt="">
                 </div>
             </div>
-        </div>
+        </div> *}
     </div>
 </div>
 <style>

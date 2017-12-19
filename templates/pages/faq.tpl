@@ -463,7 +463,7 @@
                                                     </div>
                                                 </div>
                                             </li>
-                                            <li>
+                                            {* <li>
                                                 <div>                                                                                                <i class="plus"></i>
                                                     <a id="other" href="javascript:void(0)" data-toggle="collapse" data-target="#collapse37">Do you have a smartphone app for your Control Panel?</a>
                                                     <div id="collapse37" class="collapse">
@@ -473,7 +473,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </li>
+                                            </li> *}
                                         </ul>
                                     </div>
                                 </div>

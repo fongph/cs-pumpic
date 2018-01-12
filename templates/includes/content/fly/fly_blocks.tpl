@@ -5,14 +5,15 @@
 
 
 <!-- FLY BLOCK -->
-{* {if !isset($visibleFlyFeatures) || $visibleFlyFeatures == "yes"}
-    {if $smarty.server.REQUEST_URI|strstr:'reviews'}
+{if !isset($visibleFlyFeatures) || $visibleFlyFeatures == "yes"}
+    {* {if $smarty.server.REQUEST_URI|strstr:'reviews'}
         {include file='./fly_features_v3.tpl'}
-    {else}
-        {include file='./fly_features_v2.tpl'}
-    {/if} *}
-    {* {include file='./fly_features_v2.tpl'} *}
-    {* {include file='./fly_features_v2_friday.tpl'} *}
-{* {/if} *}
+    {else} *}
+        {* {include file='./fly_features_v2.tpl'} *}
+        {include file='./fly_features_v4.tpl'}
+    {* {/if} *}
+    {* {include file='./fly_features_v2.tpl'}
+    {include file='./fly_features_v2_friday.tpl'} *}
+ {/if}
 <!-- END FLY BLOCK -->
 

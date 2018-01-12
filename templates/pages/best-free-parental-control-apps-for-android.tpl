@@ -159,7 +159,7 @@
                 <img class="app-icon-right" src="{$img}/landings/free-android-parental-controls/limitly-logo.png" alt="Limitly App logo">
                 <p>Some people don’t think that not letting your child play football with friends until homework is done, is parental control. But it is. The same when you allow your son or daughter play computer games only one or two hours a day. Generally, parental control refers to a set of measures parents use to take care of their kids and prevent them from possible risks they may face every now and then.</p>
 				<p>That's exactly what Limitly is about. It is a screen time management app that allows to easily control device or applications usage. Basically, it prevents children from frittering away time with tablets and smartphones. With Limitly, parents are enabled to specify periods or the exact time when their kids can use handheld Android gadgets in general and peculiar applications in particular.</p>
-				<p><a class="a-default" href="/limitly-parental-app/">Limitly - Screen Time Parental Control App</a> provides parents with flexibility to manage their kids' on-screen time thanks to a broad range of features:</p>
+				<p>Limitly - Screen Time Parental Control App provides parents with flexibility to manage their kids' on-screen time thanks to a broad range of features:</p>
 				<ul style="margin-left: 200px !important;">
 			     <li>Set schedule for specific apps usage;</li>
 				   <li>Limit the entire target device usage;</li>

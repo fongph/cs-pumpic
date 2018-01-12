@@ -126,7 +126,38 @@ ium_wr .pricep {
         <!-- BLOCK PRICING -->
         <div class="dark c-f-border-top box-price-premium-v2" id="store">
             <div class="container">
-
+                <div class="row pt40 pb20">
+                    <div class="col-lg-10 col-md-10 col-lg-offset-1 col-md-offset-1">
+                        <div class="row">
+                            <div class="col-lg-10 col-md-10 col-lg-offset-1 col-md-offset-1">
+                                <div class="notice">
+                                    <h2 class="notice-title">
+                                        <svg 
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                                            width="22px" height="22px">
+                                            <path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
+                                            d="M11.000,1.000 C16.523,1.000 21.000,5.477 21.000,11.000 C21.000,16.523 16.523,21.000 11.000,21.000 C5.477,21.000 1.000,16.523 1.000,11.000 C1.000,5.477 5.477,1.000 11.000,1.000 Z"/>
+                                            <path fill-rule="evenodd"  fill="rgb(239, 171, 55)"
+                                            d="M11.000,0.200 C5.036,0.200 0.200,5.036 0.200,11.000 C0.200,16.964 5.036,21.800 11.000,21.800 C16.964,21.800 21.800,16.964 21.800,11.000 C21.800,5.036 16.964,0.200 11.000,0.200 ZM11.000,17.894 C10.156,17.894 9.578,17.244 9.578,16.400 C9.578,15.532 10.180,14.906 11.000,14.906 C11.867,14.906 12.422,15.532 12.422,16.400 C12.422,17.244 11.867,17.894 11.000,17.894 ZM11.560,12.188 C11.344,12.921 10.667,12.935 10.441,12.188 C10.181,11.329 9.257,8.062 9.257,5.941 C9.257,3.142 12.759,3.128 12.759,5.941 C12.758,8.075 11.784,11.426 11.560,12.188 Z"/>
+                                        </svg>
+                                        Important notice
+                                    </h2>
+                                    
+                                    <div class="notice-text">
+                                        We are excited to announce that Pumpic.com website has been acquired by WebWatcher (Awareness Technologies).
+                                    </div>
+                                    <ul class="notice-list">
+                                        <li>If you are a new client, visit 
+                                            <a href="https://www.webwatcher.com/" class="notice-link">https://www.webwatcher.com/</a>                    
+                                                to check available monitoring options for Android and iOS devices.</li>
+                                        <li>If you are existing Pumpic.com customer with an active subscription, please, check your email for instructions or contact WebWatcher Support.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="row">
                     <div class="col-lg-10 col-lg-offset-1">
                         <div class="row">
@@ -190,7 +221,8 @@ ium_wr .pricep {
                                                                         ga-label="buy icloud"
                                                                         value="true" type="submit" name="price[submit]"
                                                                         data-fsc-item-path-value="{$defaultIosiCloudPath}"
-                                                                        onclick="buyOnClick(this);"
+                                                                        {* onclick="buyOnClick(this);" *}
+                                                                        onclick="window.location.href='/store.html'"
                                                                         data-fsc-action="Add,Checkout"
                                                                 >Comprar Agora</button>
                                                             </form>
@@ -324,7 +356,11 @@ ium_wr .pricep {
                                                                         ga-category="store"
                                                                         ga-label="buy android basic"
                                                                         value="true" type="submit" name="price[submit]"
-                                                                        data-fsc-item-path-value="{$defaultAndriodBasicPath}" data-fsc-item-quantity="1" onclick="buyOnClick(this);" data-fsc-action="Add,Checkout"
+                                                                        data-fsc-item-path-value="{$defaultAndriodBasicPath}" 
+                                                                        data-fsc-item-quantity="1" 
+                                                                        {* onclick="buyOnClick(this);"  *}
+                                                                        onclick="window.location.href='/store.html'"
+                                                                        data-fsc-action="Add,Checkout"
                                                                 >Comprar Agora</button>
                                                             </form>
                                                         </div>
@@ -379,7 +415,10 @@ ium_wr .pricep {
                                                                         ga-category="store"
                                                                         ga-label="buy android premium"
                                                                         value="true" type="submit" name="price[submit]"
-                                                                        data-fsc-item-path-value="{$defaultAndroidPremiumPath}" onclick="buyOnClick(this);" data-fsc-action="Add,Checkout"
+                                                                        data-fsc-item-path-value="{$defaultAndroidPremiumPath}" 
+                                                                        {* onclick="buyOnClick(this);"  *}
+                                                                        onclick="window.location.href='/store.html'"
+                                                                        data-fsc-action="Add,Checkout"
                                                                 >Comprar Agora</button>
                                                             </form>
                                                         </div>

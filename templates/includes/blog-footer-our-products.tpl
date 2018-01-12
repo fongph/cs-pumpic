@@ -18,9 +18,6 @@
         <li>
             <a href="/ipod-parental-control.html">iPod Parental Controls</a>
         </li>
-        <li>
-            <a href="/limitly-parental-app/">Screen Time Parental Control App</a>
-        </li>
         <?php /*
         <li>
             <a href="/reviews/">Best Mobile Trackers</a>

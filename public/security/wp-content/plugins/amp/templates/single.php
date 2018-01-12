@@ -194,9 +194,6 @@
 			<li>
 				<a href="/android-tablet-parental-control.html">Android Tablet Parental Control</a>
 			</li>
-			<li>
-				<a href="/limitly-parental-app/">Screen Time Parental Control App</a>
-			</li>
 		</ul>
 	</div>
 		<div class="col-sm-10 col-md-10 col-lg-10 col-sm-offset-1 col-md-offset-1 col-lg-offset-1">

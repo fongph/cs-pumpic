@@ -1524,3 +1524,18 @@ form > table.pricing-second {
     margin-bottom: 5px;
   }
 }
+
+.notice {
+  border: 1px solid #16a89e;
+  border-radius: 5px;
+  padding: 20px 15px;
+  font-size: 13px; }
+
+.notice-title {
+  margin: 0 0 5px;
+  text-transform: uppercase;
+  font-weight: normal;
+  text-align: left; }
+
+.notice-link {
+  color: #16a89e; }

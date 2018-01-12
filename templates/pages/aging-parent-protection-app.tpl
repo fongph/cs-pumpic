@@ -11,8 +11,11 @@
     <!-- END BLOCK GTM -->
 
     <!-- FLY BLOCKS -->
-    {include file='../includes/content/fly/fly_blocks.tpl'}
+    {include file='../includes/content/fly/fly_blocks.tpl'
+    visibleFlyFeatures="no"
+    }
     <!-- END FLY BLOCKS-->
+
 
     <div class="wrapper {*box-bottom-images*} prevent-online-dangers protect-your-little-kids">
         <!-- TOP MENU -->

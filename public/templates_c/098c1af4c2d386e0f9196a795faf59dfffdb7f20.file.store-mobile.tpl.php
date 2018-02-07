@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2017-11-24 13:23:27
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2018-02-07 11:16:00
          compiled from "/code/templates/includes/store/store-mobile.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:8317583185a181d4fc3e725-46217079%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:13527683685a7adff0236223-45352376%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '098c1af4c2d386e0f9196a795faf59dfffdb7f20' => 
     array (
       0 => '/code/templates/includes/store/store-mobile.tpl',
-      1 => 1511394796,
+      1 => 1518001614,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '8317583185a181d4fc3e725-46217079',
+  'nocache_hash' => '13527683685a7adff0236223-45352376',
   'function' => 
   array (
   ),
@@ -29,9 +29,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.21-dev',
-  'unifunc' => 'content_5a181d4fd6c715_94829338',
+  'unifunc' => 'content_5a7adff03077e0_23635864',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5a181d4fd6c715_94829338')) {function content_5a181d4fd6c715_94829338($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_5a7adff03077e0_23635864')) {function content_5a7adff03077e0_23635864($_smarty_tpl) {?>
 <div class="basic_wr">
     <div class="basic_h">
         Basic
@@ -40,8 +40,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
         <div class="wrapper_pack clearfix">
             <div class="wr_pack_basic android_basic_pack _single-pack-android-basic"></div>
             
-            <div class="wr_price_big color_red">
-                <span></span><div class="box-currence color_red"><div class="symbol" attr-iso="usd">$</div><div class="curr andr-basic-price-per-month"><?php echo $_smarty_tpl->tpl_vars['defaultAndriodBasicPrice']->value;?>
+            <div class="wr_price_big">
+                <span></span><div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr andr-basic-price-per-month"><?php echo $_smarty_tpl->tpl_vars['defaultAndriodBasicPrice']->value;?>
 </div></div><span> / month</span>
             </div>
         </div>
@@ -102,7 +102,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 
                 <input id='product_price_basic' type='hidden' name='price[productID]' value="<?php echo $_smarty_tpl->tpl_vars['defaultAndriodBasic']->value;?>
 " class="product_price" />
-                <ul class="price_list">
+                <ul class="price_list hidden">
                     <?php  $_smarty_tpl->tpl_vars['item'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['item']->_loop = false;
  $_smarty_tpl->tpl_vars['key'] = new Smarty_Variable;
  $_from = $_smarty_tpl->tpl_vars['getProducts']->value['androidBasic']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
@@ -116,12 +116,12 @@ $_smarty_tpl->tpl_vars['item']->_loop = true;
  $_smarty_tpl->tpl_vars['smarty']->value['foreach']['products']['last'] = $_smarty_tpl->tpl_vars['item']->last;
 ?>
                         <li class="android_list">
-                            <label class="price_label label_radio hover_label_radio <?php if ($_smarty_tpl->tpl_vars['item']->value['period']=='6') {?>r_on<?php } else { ?>r_off<?php }?>">
-                                <div class="price_list__old"> $<?php echo $_smarty_tpl->tpl_vars['item']->value['price'];?>
+                            <label class="price_label label_radio hover_label_radio <?php if ($_smarty_tpl->tpl_vars['item']->value['period']=='1') {?>r_on<?php } else { ?>r_off<?php }?>">
+                                <div class="curr"> $<?php echo $_smarty_tpl->tpl_vars['item']->value['price'];?>
 </div>
 
-                                <input class="data-price" data-target=".andr-basic-price-per-month" data-cur="usd" data-price-usd="<?php echo $_smarty_tpl->tpl_vars['item']->value['discount'];?>
-" data-offer-price-usd="<?php echo $_smarty_tpl->tpl_vars['getProducts']->value['androidBasicDouble'][$_smarty_tpl->tpl_vars['key']->value]['discount'];?>
+                                <input class="data-price" data-target=".andr-basic-price-per-month" data-cur="usd" data-price-usd="<?php echo $_smarty_tpl->tpl_vars['item']->value['price'];?>
+" data-offer-price-usd="<?php echo $_smarty_tpl->tpl_vars['getProducts']->value['androidBasicDouble'][$_smarty_tpl->tpl_vars['key']->value]['price'];?>
 " data-period="<?php echo $_smarty_tpl->tpl_vars['item']->value['period'];?>
 " data-product="<?php echo $_smarty_tpl->tpl_vars['item']->value['path'];?>
 " data-offer-product="<?php echo $_smarty_tpl->tpl_vars['getProducts']->value['androidBasicDouble'][$_smarty_tpl->tpl_vars['key']->value]['id'];?>
@@ -133,23 +133,7 @@ $_smarty_tpl->tpl_vars['item']->_loop = true;
 </strong> <?php if ($_smarty_tpl->tpl_vars['item']->value['period']==1) {?>month<?php } else { ?>months<?php }?>
                                                                         </span>
 
-                                <div class="box-small-package price_pack">
-                                    <div class="offer_old_price"><div class="box-currence strike__currence"><div class="symbol" attr-iso="usd">$</div><div class="curr"><?php echo $_smarty_tpl->tpl_vars['item']->value['discount']*sprintf("%.2f",2);?>
-</div></div></div>
-                                </div>
-
-                                <div class="package_price">
-                                    <strong>
-                                        <div class="box-currence color_red"><div class="symbol" attr-iso="usd">$</div><div class="curr"><?php echo $_smarty_tpl->tpl_vars['item']->value['discount'];?>
-</div></div>
-                                    </strong>
-                                </div>
-                                <div class="package_offer_price">
-                                    <strong>
-                                        <div class="box-currence color_red"><div class="symbol" attr-iso="usd">$</div><div class="curr"><?php echo $_smarty_tpl->tpl_vars['getProducts']->value['androidBasicDouble'][$_smarty_tpl->tpl_vars['key']->value]['discount'];?>
-</div></div>
-                                    </strong>
-                                </div>
+                                
                             </label>
                         </li>
                     <?php } ?>
@@ -160,7 +144,12 @@ $_smarty_tpl->tpl_vars['item']->_loop = true;
                         ga-label="buy basic"
                         value="true" type="submit" name="price[submit]"
                         data-fsc-item-path-value="<?php echo $_smarty_tpl->tpl_vars['defaultAndriodBasicPath']->value;?>
-" onclick="buyOnClick(this);" data-fsc-action="Add,Checkout">Buy Basic</button>
+" onclick="buyOnClick(this);" data-fsc-action="Add,Checkout"
+                        disabled>
+                        
+                        Out of Stock
+                        </button>
+                        <p class="out-of-stock">Until 02.12.2018 </p>
             </form>
         </div>
     </div>
@@ -173,8 +162,8 @@ $_smarty_tpl->tpl_vars['item']->_loop = true;
         <div class="wrapper_pack clearfix">
             <div class="wr_pack_premium android_prem_pack _single-pack-android-prem"></div>
             <div class="wr_pack_double_premium android_prem_pack2 _double-pack-android-prem"></div>
-            <div class="wr_price_big color_red">
-                <span></span><div class="box-currence color_red"><div class="symbol" attr-iso="usd">$</div><div class="curr andr-premium-price-per-month"><?php echo $_smarty_tpl->tpl_vars['defaultAndroidPremiumPrice']->value;?>
+            <div class="wr_price_big">
+                <span></span><div class="box-currence"><div class="symbol" attr-iso="usd">$</div><div class="curr andr-premium-price-per-month"><?php echo $_smarty_tpl->tpl_vars['defaultAndroidPremiumPrice']->value;?>
 </div></div><span>/ month</span>
             </div>
         </div>
@@ -236,7 +225,7 @@ $_smarty_tpl->tpl_vars['item']->_loop = true;
 echo $_smarty_tpl->tpl_vars['getDefaultAndroidPremium']->value;
 } else { ?>0<?php }?>' class="product_price"/>
 
-                <ul>
+                <ul class="hidden">
                     <?php  $_smarty_tpl->tpl_vars['item'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['item']->_loop = false;
  $_smarty_tpl->tpl_vars['key'] = new Smarty_Variable;
  $_from = $_smarty_tpl->tpl_vars['getProducts']->value['androidPremium']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
@@ -250,8 +239,8 @@ $_smarty_tpl->tpl_vars['item']->_loop = true;
  $_smarty_tpl->tpl_vars['smarty']->value['foreach']['products']['last'] = $_smarty_tpl->tpl_vars['item']->last;
 ?>
                         <li>
-                            <label class="label_radio hover_label_radio <?php if ($_smarty_tpl->tpl_vars['item']->value['period']=='6') {?>r_on<?php } else { ?>r_off<?php }?>">
-                                <div class="price_list__old"> $<?php echo $_smarty_tpl->tpl_vars['item']->value['price'];?>
+                            <label class="label_radio hover_label_radio <?php if ($_smarty_tpl->tpl_vars['item']->value['period']=='1') {?>r_on<?php } else { ?>r_off<?php }?>">
+                                <div class="curr"> $<?php echo $_smarty_tpl->tpl_vars['item']->value['price'];?>
 </div>
 
                                 <input class="data-price" data-target=".andr-premium-price-per-month" data-cur="usd" data-price-usd="<?php echo $_smarty_tpl->tpl_vars['item']->value['price'];?>
@@ -267,23 +256,7 @@ $_smarty_tpl->tpl_vars['item']->_loop = true;
 </strong> <?php if ($_smarty_tpl->tpl_vars['item']->value['period']==1) {?>month<?php } else { ?>months<?php }?>
                                                                         </span>
 
-                                <div class="box-small-package price_pack">
-                                    <div class="offer_old_price"><div class="box-currence strike__currence"><div class="symbol" attr-iso="usd">$</div><div class="curr"><?php echo $_smarty_tpl->tpl_vars['item']->value['price']*sprintf("%.2f",2);?>
-</div></div></div>
-                                </div>
-
-                                <div class="package_price">
-                                    <strong>
-                                        <div class="box-currence color_red"><div class="symbol" attr-iso="usd">$</div><div class="curr"><?php echo $_smarty_tpl->tpl_vars['item']->value['price'];?>
-</div></div>
-                                    </strong>
-                                </div>
-                                <div class="package_offer_price">
-                                    <strong>
-                                        <div class="box-currence color_red"><div class="symbol" attr-iso="usd">$</div><div class="curr"><?php echo $_smarty_tpl->tpl_vars['getProducts']->value['androidPremiumDouble'][$_smarty_tpl->tpl_vars['key']->value]['price'];?>
-</div></div>
-                                    </strong>
-                                </div>
+                                
                             </label>
                         </li>
                     <?php } ?>
@@ -295,7 +268,11 @@ $_smarty_tpl->tpl_vars['item']->_loop = true;
                         value="true" type="submit" name="price[submit]"
                         data-fsc-item-path-value="<?php echo $_smarty_tpl->tpl_vars['defaultAndroidPremiumPath']->value;?>
 " onclick="buyOnClick(this);" data-fsc-action="Add,Checkout"
-                >Buy Premium</button>
+                        disabled>
+                
+                Out of Stock
+                </button>
+                <p class="out-of-stock">Until 02.12.2018 </p>
             </form>
         </div>
     </div>

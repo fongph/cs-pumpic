@@ -153,7 +153,12 @@ visibleFlyFeatures="no"
                                                                 ga-page="/parental-control-software.html"
                                                                 value="true" type="submit" name="price[submit]"
                                                                 data-fsc-item-path-value="{$defaultAndroidPremiumPath}" onclick="buyOnClick(this);" data-fsc-action="Add,Checkout"
-                                                        >Buy Now</button>
+                                                                disabled
+                                                        >
+                                                        {* Buy Now *}
+                                                        Out of Stock
+                                                        </button>
+                                                        <p class="out-of-stock">Until 02.12.2018 </p>
                                                     </form>
                                                 </div>
                                             </div>
@@ -301,7 +306,12 @@ visibleFlyFeatures="no"
                                                                 data-fsc-item-path-value="{$defaultIosiCloudPath}"
                                                                 onclick="buyOnClick(this);"
                                                                 data-fsc-action="Add,Checkout"
-                                                        >Buy Now</button>
+                                                                disabled
+                                                        >
+                                                        {* Buy Now *}
+                                                        Out of Stock
+                                                        </button>
+                                                        <p class="out-of-stock">Until 02.12.2018 </p>
                                                     </form>
                                                 </div>
                                             </div>

@@ -47,7 +47,12 @@
                             ga-category="store"
                             ga-label="buy basic"
                             value="true" type="submit" name="price[submit]"
-                            data-fsc-item-path-value="{$defaultAndriodBasicPath}" onclick="buyOnClick(this);" data-fsc-action="Add,Checkout">Buy Basic</button>
+                            data-fsc-item-path-value="{$defaultAndriodBasicPath}" onclick="buyOnClick(this);" data-fsc-action="Add,Checkout"
+                            disabled>
+                            {* Buy Basic *}
+                            Out of Stock
+                            </button>
+                            <p class="out-of-stock">Until 02.12.2018 </p>
                     <div class="show_basic_features"><a href="#">Show Basic features</a></div>
                 </form>
             </div>
@@ -104,7 +109,11 @@
                             ga-label="buy premium"
                             value="true" type="submit" name="price[submit]"
                             data-fsc-item-path-value="{$defaultAndroidPremiumPath}" onclick="buyOnClick(this);" data-fsc-action="Add,Checkout"
-                    >Buy Premium</button>
+                            disabled>
+                    {* Buy Premium *}
+                    Out of Stock
+                    </button>
+                    <p class="out-of-stock">Until 02.12.2018 </p>
                     <div class="show_premium_features"><a href="#">Show Premium features</a></div>
                 </form>
             </div>
@@ -256,7 +265,11 @@
                                 ga-label="buy basic"
                                 value="true" type="submit" name="price[submit]"
                                 data-fsc-item-path-value="{$defaultAndriodBasicPath}" data-fsc-item-quantity="1" onclick="buyOnClick(this);" data-fsc-action="Add,Checkout"
-                        >Buy Basic</button>
+                                disabled>
+                        {* Buy Basic *}
+                        Out of Stock
+                        </button>
+                        <p class="out-of-stock">Until 02.12.2018 </p>
                     </form>
                 </div>
             </div>
@@ -313,7 +326,11 @@
                                 ga-label="buy premium"
                                 value="true" type="submit" name="price[submit]"
                                 data-fsc-item-path-value="{$defaultAndroidPremiumPath}" onclick="buyOnClick(this);" data-fsc-action="Add,Checkout"
-                        >Buy Premium</button>
+                                disabled>
+                        {* Buy Premium *}
+                        Out of Stock
+                        </button>
+                        <p class="out-of-stock">Until 02.12.2018 </p>
                     </form>
                 </div>
             </div>

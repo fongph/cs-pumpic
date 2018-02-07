@@ -1417,13 +1417,13 @@
                             <div class="item item-buttom div-table-column col-sm-12 col-md-4 col-lg-4 text-right"></div>
                             <div class="item item-buttom div-table-column col-sm-12 col-md-3 col-lg-2 text-center">
 
-                                <div class='box-all-features'>
-                                    <a class='btn-red{*btn-green*} ga-action-click'
-                                       href='/store.html'
+                                {* <div class='box-all-features'> *}
+                                    {* <a class='btn-redbtn-green ga-action-click' *}
+                                       {* href='/store.html'
                                        ga-category="store link"
                                        ga-action="click"
                                        ga-label="all-features-icloud">Try now!</a>
-                                </div>
+                                </div> *}
                                 {*<div class='box-line-solid only-pc'>
                                     <span class='box-solid-1'></span>
                                 </div>*}
@@ -2564,13 +2564,13 @@
                             <div class="item item-buttom div-table-column col-sm-12 col-md-4 col-lg-4 text-right"></div>
                             <div class="item item-buttom div-table-column col-sm-12 col-md-3 col-lg-2 text-center">
 
-                                <div class='box-all-features'>
-                                    <a class='btn-red{*btn-green*} ga-action-click'
-                                       ga-category="store link"
+                                {* <div class='box-all-features'> *}
+                                    {* <a class='btn-redbtn-green ga-action-click' *}
+                                       {* ga-category="store link"
                                        ga-action="click"
                                        ga-label="all-features-android"
-                                       href='/store.html#android' >Try now!</a>
-                                </div>
+                                       href='/store.html#android' >Try now!</a> *}
+                                {* </div> *}
                                 {*<div class='box-line-solid only-pc'>
                                     <span class='box-solid-1'></span>
                                 </div>*}
@@ -3651,14 +3651,14 @@
                             <div class="item item-buttom div-table-column col-sm-12 col-md-4 col-lg-4 text-right"></div>
                             <div class="item item-buttom div-table-column col-sm-12 col-md-3 col-lg-2 text-center">
 
-                                <div class='box-all-features'>
-                                    <a class='btn-red{*btn-green*} ga-action-click'
-                                       target="_blank"
+                                {* <div class='box-all-features'> *}
+                                    {* <a class='btn-redbtn-green ga-action-click' *}
+                                       {* target="_blank"
                                        ga-action="click"
                                        ga-category="store link"
                                        ga-label="all-features-jailbreak"
                                        href='/store.html#jailbreak' >Try now!</a>
-                                </div>
+                                </div> *}
                                 {*<div class='box-line-solid only-pc'>
                                     <span class='box-solid-1'></span>
                                 </div>*}

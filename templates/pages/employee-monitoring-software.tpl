@@ -326,7 +326,7 @@ description="Increase productivity, ensure legal safety and streamline workflow 
                                                             <span class="prod-head__device phone">Smartphone</span>
                                                             <span class="prod-head__device tablet">Tablet</span>
                                                         </p>
-                                                        <p class="prod-head__price"><span>starting from </span><b>$8.99/</b><span> month</span></p>
+                                                        <p class="prod-head__price"><span>starting from </span><b>$33.99/</b><span> month</span></p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -425,12 +425,12 @@ description="Increase productivity, ensure legal safety and streamline workflow 
                                                                         data-fsc-item-path-value="{$defaultIosiCloudPath}"
                                                                         onclick="buyOnClick(this);"
                                                                         data-fsc-action="Add,Checkout"
-                                                                        disabled
+                                                                        {* disabled *}
                                                                 >
-                                                                {* Buy *}
-                                                                Out of Stock
+                                                                Buy
+                                                                {* Out of Stock *}
                                                                 </button>
-                                                                <p class="out-of-stock">Until 02.12.2018 </p>
+                                                                {* <p class="out-of-stock">Until 02.12.2018 </p> *}
                                                                 </button>
                                                             </form>
                                                             {*<div class="show_premium_features _icloud-f"><div class="show-f _icloud-f">Show features <i class="fa fa-chevron-down"></i></div><div class="hide-f _icloud-f" style="display: none;">Hide features  <i class="fa fa-chevron-up"></i></div></div>*}
@@ -561,12 +561,12 @@ description="Increase productivity, ensure legal safety and streamline workflow 
                                                                     ga-label="Android subscription"
                                                                     value="true" type="submit" name="price[submit]"
                                                                     data-fsc-item-path-value="{$defaultAndroidPremiumPath}" onclick="buyOnClick(this);" data-fsc-action="Add,Checkout"
-                                                                    disabled
+                                                                    {* disabled *}
                                                             >
-                                                            {* Buy *}
-                                                            Out of Stock
+                                                            Buy
+                                                            {* Out of Stock *}
                                                             </button>
-                                                            <p class="out-of-stock">Until 02.12.2018 </p>
+                                                            {* <p class="out-of-stock">Until 02.12.2018 </p> *}
                                                             </form>
                                                         </div>
                                                     </div>

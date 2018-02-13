@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2018-02-07 11:16:00
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2018-02-13 12:19:40
          compiled from "/code/templates/includes/store/store-mobile.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:13527683685a7adff0236223-45352376%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:10711103835a82d7dc521831-91134821%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '098c1af4c2d386e0f9196a795faf59dfffdb7f20' => 
     array (
       0 => '/code/templates/includes/store/store-mobile.tpl',
-      1 => 1518001614,
+      1 => 1518524361,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '13527683685a7adff0236223-45352376',
+  'nocache_hash' => '10711103835a82d7dc521831-91134821',
   'function' => 
   array (
   ),
@@ -29,9 +29,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.21-dev',
-  'unifunc' => 'content_5a7adff03077e0_23635864',
+  'unifunc' => 'content_5a82d7dc629564_67182716',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5a7adff03077e0_23635864')) {function content_5a7adff03077e0_23635864($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_5a82d7dc629564_67182716')) {function content_5a82d7dc629564_67182716($_smarty_tpl) {?>
 <div class="basic_wr">
     <div class="basic_h">
         Basic
@@ -145,11 +145,12 @@ $_smarty_tpl->tpl_vars['item']->_loop = true;
                         value="true" type="submit" name="price[submit]"
                         data-fsc-item-path-value="<?php echo $_smarty_tpl->tpl_vars['defaultAndriodBasicPath']->value;?>
 " onclick="buyOnClick(this);" data-fsc-action="Add,Checkout"
-                        disabled>
                         
-                        Out of Stock
+                        >
+                        Buy Basic
+                        
                         </button>
-                        <p class="out-of-stock">Until 02.12.2018 </p>
+                        
             </form>
         </div>
     </div>
@@ -268,11 +269,12 @@ $_smarty_tpl->tpl_vars['item']->_loop = true;
                         value="true" type="submit" name="price[submit]"
                         data-fsc-item-path-value="<?php echo $_smarty_tpl->tpl_vars['defaultAndroidPremiumPath']->value;?>
 " onclick="buyOnClick(this);" data-fsc-action="Add,Checkout"
-                        disabled>
+                        
+                        >
+                Buy Premium
                 
-                Out of Stock
                 </button>
-                <p class="out-of-stock">Until 02.12.2018 </p>
+                
             </form>
         </div>
     </div>

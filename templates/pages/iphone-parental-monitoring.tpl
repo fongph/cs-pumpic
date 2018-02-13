@@ -313,11 +313,12 @@ description="Pumpic is a tried and true app to monitor iPhone usage and online a
                                                                 data-fsc-item-path-value="{$defaultIosiCloudPath}"
                                                                 onclick="buyOnClick(this);"
                                                                 data-fsc-action="Add,Checkout"
-                                                                disabled>
-                                                        {* Buy Now *}
-                                                        Out of Stock
+                                                                {* disabled *}
+                                                                > 
+                                                        Buy Now
+                                                        {* Out of Stock *}
                                                         </button>
-                                                        <p class="out-of-stock">Until 02.12.2018 </p>
+                                                        {* <p class="out-of-stock">Until 02.12.2018 </p> *}
                                                         <!-- <div class="show_basic_features"><a href="#">Show Basic features</a>
                                                         </div> -->
                                                     </form>
@@ -484,12 +485,12 @@ description="Pumpic is a tried and true app to monitor iPhone usage and online a
                                                                 data-fsc-item-path-value="{$defaultIosiCloudPath}"
                                                                 onclick="buyOnClick(this);"
                                                                 data-fsc-action="Add,Checkout"
-                                                                disabled
+                                                                {* disabled *}
                                                         >
-                                                        {* Buy Now *}
-                                                        Out of Stock
+                                                        Buy Now
+                                                        {* Out of Stock *}
                                                         </button>
-                                                        <p class="out-of-stock">Until 02.12.2018 </p>
+                                                        {* <p class="out-of-stock">Until 02.12.2018 </p> *}
                                                         <!-- <div class="show_basic_features"><a href="#">Show Basic features</a>
                                                         </div> -->
                                                     </form>

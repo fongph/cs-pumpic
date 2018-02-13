@@ -109,7 +109,7 @@ visibleFlyFeatures="no"
                                                             <span></span>
                                                             <div class="box-currence">
                                                                 <div class="symbol" attr-iso="usd">$</div>
-                                                                <div class="curr premium-price-per-month">8.99</div>
+                                                                <div class="curr premium-price-per-month">33.99</div>
                                                             </div><span> / month</span>
                                                         </div>
                                                     </div>
@@ -153,12 +153,12 @@ visibleFlyFeatures="no"
                                                                 ga-page="/parental-control-software.html"
                                                                 value="true" type="submit" name="price[submit]"
                                                                 data-fsc-item-path-value="{$defaultAndroidPremiumPath}" onclick="buyOnClick(this);" data-fsc-action="Add,Checkout"
-                                                                disabled
+                                                                {* disabled *}
                                                         >
-                                                        {* Buy Now *}
-                                                        Out of Stock
+                                                        Buy Now
+                                                        {* Out of Stock *}
                                                         </button>
-                                                        <p class="out-of-stock">Until 02.12.2018 </p>
+                                                        {* <p class="out-of-stock">Until 02.12.2018 </p> *}
                                                     </form>
                                                 </div>
                                             </div>
@@ -306,12 +306,12 @@ visibleFlyFeatures="no"
                                                                 data-fsc-item-path-value="{$defaultIosiCloudPath}"
                                                                 onclick="buyOnClick(this);"
                                                                 data-fsc-action="Add,Checkout"
-                                                                disabled
+                                                                {* disabled *}
                                                         >
-                                                        {* Buy Now *}
-                                                        Out of Stock
+                                                        Buy Now
+                                                        {* Out of Stock *}
                                                         </button>
-                                                        <p class="out-of-stock">Until 02.12.2018 </p>
+                                                        {* <p class="out-of-stock">Until 02.12.2018 </p> *}
                                                     </form>
                                                 </div>
                                             </div>

@@ -161,11 +161,11 @@
                                                                     data-fsc-item-path-value="{$defaultIosiCloudPath}"
                                                                     onclick="buyOnClick(this);"
                                                                     data-fsc-action="Add,Checkout"
-                                                                    disabled>
-                                                            {* Buy *}
-                                                            Out of Stock
+                                                                    {* disabled *} >
+                                                            Buy
+                                                            {* Out of Stock *}
                                                             </button>
-                                                            <p class="out-of-stock">Until 02.12.2018 </p>
+                                                            {* <p class="out-of-stock">Until 02.12.2018 </p> *}
                                                         </form>
                                                         {*<div class="show_premium_features _icloud-f"><div class="show-f _icloud-f">Show features <i class="fa fa-chevron-down"></i></div><div class="hide-f _icloud-f" style="display: none;">Hide features  <i class="fa fa-chevron-up"></i></div></div>*}
 
@@ -298,11 +298,11 @@
                                                                     data-fsc-item-path-value="{$defaultIosiCloudPath}"
                                                                     onclick="buyOnClick(this);"
                                                                     data-fsc-action="Add,Checkout"
-                                                                    disabled>
-                                                            {* Buy *}
-                                                            Out of Stock
+                                                                    {* disabled *} >
+                                                            Buy
+                                                            {* Out of Stock *}
                                                             </button>
-                                                            <p class="out-of-stock">Until 02.12.2018 </p>
+                                                            {* <p class="out-of-stock">Until 02.12.2018 </p> *}
                                                         </form>
                                                         {*<div class="space_line">&nbsp;</div>*}
                                                     </div>

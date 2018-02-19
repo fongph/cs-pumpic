@@ -26,7 +26,7 @@
         <p class="fly-text">
           We are excited to announce that Pumpic has been acquired by WebWatcher. <br/>
           Please
-            <a href="https://www.webwatcher.com/" class="fly-link">Click Here</a> 
+            <a href="https://webwatcher.com/freetrial/3/index3.html" class="fly-link">Click Here</a> 
             to try WebWatcher for free.
         </p>
     </div>

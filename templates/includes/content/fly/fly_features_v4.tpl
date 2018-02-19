@@ -24,9 +24,10 @@
             </h2>
         </div>
         <p class="fly-text">
-            We are excited to announce that Pumpic.com website has been acquired by WebWatcher (Awareness Technologies). Please, visit 
-            <a href="https://www.webwatcher.com/" class="fly-link">https://www.webwatcher.com/</a> 
-            to check available monitoring options for Android and iOS devices.
+          We are excited to announce that Pumpic has been acquired by WebWatcher. <br/>
+          Please
+            <a href="https://www.webwatcher.com/" class="fly-link">Click Here</a> 
+            to try WebWatcher for free.
         </p>
     </div>
 </div>
